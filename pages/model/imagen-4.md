@@ -6,7 +6,7 @@
 
 Google · closed weights
 
-**score 55.6** ±2.3 · #34 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 59.1** ±1.9 · #34 of 105 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1129.1    56.0   2026-09-24   92% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   50.3%    51.5   2026-05-27    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1129.1    59.5   2026-09-24   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   50.3%    55.8   2026-05-27    6% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 55.6
+                        weighted average                        = 59.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

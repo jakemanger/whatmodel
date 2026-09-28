@@ -6,7 +6,7 @@
 
 StepFun · released 2025-07
 
-**score 39.5** ±7.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.0** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>  69.2%    36.7   2025-12-01   79% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                21% ▇▇▇
-                        weighted average                = 39.5
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>  69.2%    42.8   2025-12-01   83% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                17% ▇▇
+                        weighted average                = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

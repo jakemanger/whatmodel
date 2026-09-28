@@ -19260,5 +19260,757 @@
         "reported_label": "granite-4.0-350m"
       }
     ]
+  },
+  {
+    "id": "sd-1-1",
+    "name": "Stable Diffusion v1.1",
+    "provider": "CompVis",
+    "category": "image",
+    "released": "2022-08",
+    "open_weights": true,
+    "license": "creativeml-openrail-m",
+    "params_b": 0.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-1', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/CompVis/stable-diffusion-v1-1",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "SD v1.1"
+      },
+      {
+        "source": "https://arxiv.org/html/2303.11897v3#A2.T4",
+        "reported_label": "Stable Diffusion v1.1"
+      }
+    ],
+    "identity_note": "CompVis/stable-diffusion-v1-1 checkpoint. params_b = 860M UNet (github.com/CompVis/stable-diffusion README); memory is the site's params x 2 bytes x 1.2 + 0.5 estimate."
+  },
+  {
+    "id": "sd-1-2",
+    "name": "Stable Diffusion v1.2",
+    "provider": "CompVis",
+    "category": "image",
+    "released": "2022-08",
+    "open_weights": true,
+    "license": "creativeml-openrail-m",
+    "params_b": 0.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-2', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/CompVis/stable-diffusion-v1-2",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "SD v1.2"
+      },
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "SD v1.2"
+      }
+    ],
+    "identity_note": "CompVis/stable-diffusion-v1-2 checkpoint; 860M UNet per the CompVis README."
+  },
+  {
+    "id": "sd-1-4",
+    "name": "Stable Diffusion v1.4",
+    "provider": "CompVis",
+    "category": "image",
+    "released": "2022-08",
+    "open_weights": true,
+    "license": "creativeml-openrail-m",
+    "params_b": 0.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/CompVis/stable-diffusion-v1-4",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "SD v1.4"
+      },
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "Stable Diffusion v1.4"
+      },
+      {
+        "source": "https://arxiv.org/html/2408.14339v1#A4.T8",
+        "reported_label": "SD v1.4 = https://huggingface.co/CompVis/stable-diffusion-v1-4"
+      }
+    ],
+    "identity_note": "CompVis/stable-diffusion-v1-4 checkpoint; 860M UNet per the CompVis README."
+  },
+  {
+    "id": "sd-2-0",
+    "name": "Stable Diffusion v2.0",
+    "provider": "Stability AI",
+    "category": "image",
+    "released": "2022-11",
+    "open_weights": true,
+    "license": "openrail++",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "SD v2.0",
+        "setting": "default 768x768 (stabilityai/stable-diffusion-2, Appendix C.2)"
+      },
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "Stable Diffusion v2.0",
+        "setting": "512x512, DDIM 50 steps, CFG 7.5 (arXiv 2306.09341v2 App. D); 768-v vs 512-base checkpoint not stated"
+      }
+    ],
+    "identity_note": "Release-level identity, following the existing sd-2-1 precedent. No local command: Stability AI's official stabilityai/stable-diffusion-2 repository now returns 401; the only copies are unaffiliated community mirrors, which are not linked."
+  },
+  {
+    "id": "deepfloyd-if-m",
+    "name": "IF-M",
+    "provider": "DeepFloyd",
+    "category": "image",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "deepfloyd-if-license",
+    "params_b": 0.4,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16 + model CPU offload (stages I+II, 256px)",
+          "gb": 14,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c \"import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-M-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-M-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://github.com/deep-floyd/IF",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "IF-M",
+        "setting": "IF-I-M + IF-II-M stages, 256x256, no stage III (GenEval App. C.2)"
+      }
+    ],
+    "identity_note": "DeepFloyd/IF-I-M-v1.0 (400M) with IF-II-M-v1.0 (450M) per the DeepFloyd IF model zoo. Memory estimate: the IF README states the whole pipeline runs with model CPU offload in as little as 14 GB VRAM (T5-XXL text encoder dominates); gated licence acceptance required."
+  },
+  {
+    "id": "deepfloyd-if-l",
+    "name": "IF-L",
+    "provider": "DeepFloyd",
+    "category": "image",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "deepfloyd-if-license",
+    "params_b": 0.9,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16 + model CPU offload (stages I+II, 256px)",
+          "gb": 14,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c \"import torch; from diffusers import DiffusionPipeline; s1=DiffusionPipeline.from_pretrained('DeepFloyd/IF-I-L-v1.0', variant='fp16', torch_dtype=torch.float16); s1.enable_model_cpu_offload(); s2=DiffusionPipeline.from_pretrained('DeepFloyd/IF-II-L-v1.0', text_encoder=None, variant='fp16', torch_dtype=torch.float16); s2.enable_model_cpu_offload(); e,n=s1.encode_prompt('a cat holding a sign'); i=s1(prompt_embeds=e, negative_prompt_embeds=n, output_type='pt').images; s2(image=i, prompt_embeds=e, negative_prompt_embeds=n, output_type='pil').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://github.com/deep-floyd/IF",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "IF-L",
+        "setting": "IF-I-L + IF-II-L stages, 256x256, no stage III (GenEval App. C.2)"
+      }
+    ],
+    "identity_note": "DeepFloyd/IF-I-L-v1.0 (900M) with IF-II-L-v1.0 (1.2B) per the DeepFloyd IF model zoo; memory as for IF-M (estimate)."
+  },
+  {
+    "id": "dreamlike-photoreal-2-0",
+    "name": "Dreamlike Photoreal 2.0",
+    "provider": "Dreamlike.art",
+    "category": "image",
+    "released": "2023-01",
+    "open_weights": true,
+    "license": "dreamlike-modified-creativeml-openrail-m",
+    "params_b": 0.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('dreamlike-art/dreamlike-photoreal-2.0', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "Dreamlike Photoreal 2.0"
+      }
+    ],
+    "identity_note": "dreamlike-art/dreamlike-photoreal-2.0 (Stable Diffusion 1.5 fine-tune); 0.86B = UNet parameter count shown for the repository's safetensors on Hugging Face. Modified CreativeML OpenRAIL-M restricts hosting it as a service."
+  },
+  {
+    "id": "sdxl-0-9",
+    "name": "Stable Diffusion XL 0.9 (base)",
+    "provider": "Stability AI",
+    "category": "image",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "sdxl-0.9-research",
+    "params_b": 3.5,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 8.9,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-0.9', torch_dtype=torch.float16, use_safetensors=True).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://stability.ai/news-updates/sdxl-09-stable-diffusion",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "SDXL Base 0.9",
+        "setting": "added to the benchmark 2023-07-27 per the README news; generation settings not stated"
+      }
+    ],
+    "identity_note": "stabilityai/stable-diffusion-xl-base-0.9 (gated, non-commercial research licence). Stability's announcement: 3.5B-parameter base model; minimum 8 GB VRAM (RTX 20-series). The separate 'SDXL Refiner 0.9' benchmark row (base+refiner pipeline) is not mapped to this model."
+  },
+  {
+    "id": "openjourney",
+    "name": "Openjourney",
+    "provider": "PromptHero",
+    "category": "image",
+    "released": "2022-11",
+    "open_weights": true,
+    "license": "creativeml-openrail-m",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('prompthero/openjourney', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/prompthero/openjourney",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "Openjourney"
+      },
+      {
+        "source": "https://arxiv.org/html/2310.01596v4#S5.T4",
+        "reported_label": "OpenJourney (reference: huggingface.co/prompthero/openjourney)"
+      },
+      {
+        "source": "https://github.com/TIGER-AI-Lab/GenAI-Arena/blob/52bd73144e215161c8c8b990f9b0b46a3adc380a/arena_elo/generation_model_info.json",
+        "reported_label": "OpenJourney -> https://huggingface.co/prompthero/openjourney"
+      }
+    ],
+    "identity_note": "prompthero/openjourney (v1; Stable Diffusion 1.5 fine-tune on Midjourney images), not openjourney-v4. No parameter count published; memory estimated as for SD 1.x (0.86B UNet)."
+  },
+  {
+    "id": "dall-e-2",
+    "name": "DALL·E 2",
+    "provider": "OpenAI",
+    "category": "image",
+    "released": "2022-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "DALL·E 2",
+        "setting": "official API (arXiv 2306.09341v2 App. D)"
+      },
+      {
+        "source": "https://arxiv.org/html/2310.01596v4#S5.T4",
+        "reported_label": "Dalle-2"
+      }
+    ],
+    "identity_note": "OpenAI API model dall-e-2. OpenAI's deprecations page lists dall-e-2 shut down on 2026-05-12 (announced 2025-11-14), so api is null; kept to anchor the fit."
+  },
+  {
+    "id": "versatile-diffusion",
+    "name": "Versatile Diffusion v1.0",
+    "provider": "SHI Labs",
+    "category": "image",
+    "released": "2022-11",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "Versatile Diffusion",
+        "setting": "official model, DPM-Solver 25 steps, CFG 7.5"
+      }
+    ],
+    "identity_note": "shi-labs/versatile-diffusion (V1.0). Comparison-only: its diffusers pipelines are deprecated upstream and no parameter/memory figure is published, so no command is listed."
+  },
+  {
+    "id": "cogview2",
+    "name": "CogView2",
+    "provider": "THUDM",
+    "category": "image",
+    "released": "2022-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "CogView2",
+        "setting": "512x512, default hyper-parameters, style set per category"
+      }
+    ],
+    "identity_note": "THUDM/CogView2 (hierarchical 6B-9B-9B transformer per its README). Comparison-only: runs only through the SwissArmyTransformer research code; no single copy-pasteable command or memory figure."
+  },
+  {
+    "id": "ldm-text2im-large",
+    "name": "Latent Diffusion text2img-large (LDM-KL-8-G, LAION-400M)",
+    "provider": "CompVis",
+    "category": "image",
+    "released": "2022-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.45,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 7.5,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('CompVis/ldm-text2im-large-256').to('cuda'); p(['a cat holding a sign'], num_inference_steps=50, eta=0.3, guidance_scale=6).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/CompVis/ldm-text2im-large-256",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "Latent Diffusion",
+        "setting": "official LDM model, DPM-Solver 25 steps, eta 0.3, CFG 6.0"
+      }
+    ],
+    "identity_note": "The only officially released CompVis text-to-image LDM: the 1.45B LAION-400M model (latent-diffusion README, April 2022), packaged as CompVis/ldm-text2im-large-256."
+  },
+  {
+    "id": "vq-diffusion-ithq",
+    "name": "VQ-Diffusion (ITHQ)",
+    "provider": "Microsoft",
+    "category": "image",
+    "released": "2022-11",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "VQ-Diffusion",
+        "setting": "https://huggingface.co/microsoft/vq-diffusion-ithq, 256x256, CFG 5.0, 100 steps (arXiv 2306.09341v2 App. D footnote)"
+      }
+    ],
+    "identity_note": "microsoft/vq-diffusion-ithq; released month = Hugging Face release. Comparison-only: VQDiffusionPipeline is deprecated upstream and no memory figure is published."
+  },
+  {
+    "id": "glide-filtered",
+    "name": "GLIDE (filtered)",
+    "provider": "OpenAI",
+    "category": "image",
+    "released": "2021-12",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark",
+        "reported_label": "GLIDE",
+        "setting": "official mini-glide (filtered) model, 256x256, CFG 3.0, 27 DDIM steps"
+      }
+    ],
+    "identity_note": "openai/glide-text2im small filtered-data model. Comparison-only: the official code runs from notebooks, with no single command or published memory figure."
+  },
+  {
+    "id": "playground-v2",
+    "name": "Playground v2 (1024px aesthetic)",
+    "provider": "Playground",
+    "category": "image",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "playground-v2-community",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 8.9,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2-1024px-aesthetic', torch_dtype=torch.float16, use_safetensors=True, add_watermarker=False, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=3.0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.04485v3#S3.T5",
+        "reported_label": "Playground V2"
+      },
+      {
+        "source": "https://github.com/TIGER-AI-Lab/GenAI-Arena/blob/52bd73144e215161c8c8b990f9b0b46a3adc380a/arena_elo/generation_model_info.json",
+        "reported_label": "Playground v2 -> https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic"
+      }
+    ],
+    "identity_note": "playgroundai/playground-v2-1024px-aesthetic. No parameter count on the card; memory estimated as for SDXL 1.0 (same SDXL-architecture UNet)."
+  },
+  {
+    "id": "stable-cascade",
+    "name": "Stable Cascade",
+    "provider": "Stability AI",
+    "category": "image",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "stable-cascade-nc-community",
+    "params_b": 5.1,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 prior + fp16 decoder, model CPU offload",
+          "gb": 12.7,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableCascadePriorPipeline, StableCascadeDecoderPipeline; pr=StableCascadePriorPipeline.from_pretrained('stabilityai/stable-cascade-prior', variant='bf16', torch_dtype=torch.bfloat16); de=StableCascadeDecoderPipeline.from_pretrained('stabilityai/stable-cascade', variant='bf16', torch_dtype=torch.float16); pr.enable_model_cpu_offload(); o=pr(prompt='a cat holding a sign', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=20); de.enable_model_cpu_offload(); de(image_embeddings=o.image_embeddings.to(torch.float16), prompt='a cat holding a sign', guidance_scale=0.0, num_inference_steps=10, output_type='pil').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/stabilityai/stable-cascade",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.04485v3#S3.T5",
+        "reported_label": "StableCascade",
+        "setting": "20+10 steps (Table 2)"
+      },
+      {
+        "source": "https://github.com/TIGER-AI-Lab/GenAI-Arena/blob/52bd73144e215161c8c8b990f9b0b46a3adc380a/arena_elo/generation_model_info.json",
+        "reported_label": "StableCascade -> https://huggingface.co/stabilityai/stable-cascade"
+      }
+    ],
+    "identity_note": "stabilityai/stable-cascade + stable-cascade-prior (Wuerstchen v3). params_b 5.1 = 3.6B Stage C + 1.5B Stage B, the recommended large variants per the model card."
+  },
+  {
+    "id": "sdxl-lightning-4-step",
+    "name": "SDXL-Lightning (4-step UNet)",
+    "provider": "ByteDance",
+    "category": "image",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "openrail++",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 8.9,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch --with safetensors python -c \"import torch; from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler; from huggingface_hub import hf_hub_download; from safetensors.torch import load_file; b='stabilityai/stable-diffusion-xl-base-1.0'; u=UNet2DConditionModel.from_config(b, subfolder='unet').to('cuda', torch.float16); u.load_state_dict(load_file(hf_hub_download('ByteDance/SDXL-Lightning', 'sdxl_lightning_4step_unet.safetensors'), device='cuda')); p=StableDiffusionXLPipeline.from_pretrained(b, unet=u, torch_dtype=torch.float16, variant='fp16').to('cuda'); p.scheduler=EulerDiscreteScheduler.from_config(p.scheduler.config, timestep_spacing='trailing'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ByteDance/SDXL-Lightning",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.04485v3#S3.T5",
+        "reported_label": "SDXL-Lightning",
+        "setting": "4 steps, 1024x1024 (Table 2)"
+      },
+      {
+        "source": "https://github.com/TIGER-AI-Lab/GenAI-Arena/blob/52bd73144e215161c8c8b990f9b0b46a3adc380a/arena_elo/generation_model_info.json",
+        "reported_label": "SDXLLightning -> https://huggingface.co/ByteDance/SDXL-Lightning"
+      }
+    ],
+    "identity_note": "ByteDance/SDXL-Lightning sdxl_lightning_4step_unet.safetensors on SDXL 1.0 base (the 1/2/8-step checkpoints are distinct and not mapped). Memory estimated as for SDXL 1.0."
+  },
+  {
+    "id": "sdxl-turbo",
+    "name": "SDXL-Turbo",
+    "provider": "Stability AI",
+    "category": "image",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "sai-nc-community",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 8.9,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('stabilityai/sdxl-turbo', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=1, guidance_scale=0.0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/stabilityai/sdxl-turbo",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.04485v3#S3.T5",
+        "reported_label": "SDXL-Turbo"
+      },
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "SDXL-Turbo"
+      },
+      {
+        "source": "https://arxiv.org/html/2408.14339v1#A4.T8",
+        "reported_label": "SDXL Turbo = https://huggingface.co/stabilityai/sdxl-turbo"
+      }
+    ],
+    "identity_note": "stabilityai/sdxl-turbo (distilled from SDXL 1.0). Memory estimated as for SDXL 1.0."
+  },
+  {
+    "id": "lcm-dreamshaper-v7",
+    "name": "LCM Dreamshaper v7",
+    "provider": "SimianLuo (LCM authors)",
+    "category": "image",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 4.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('SimianLuo/LCM_Dreamshaper_v7').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=4, guidance_scale=8.0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.04485v3#S3.T5",
+        "reported_label": "LCM",
+        "setting": "4 steps, 512x512 (Table 2 describes it as 'SD-2.1 + Consistency Distillation', which conflicts with the registry)"
+      },
+      {
+        "source": "https://github.com/TIGER-AI-Lab/GenAI-Arena/blob/52bd73144e215161c8c8b990f9b0b46a3adc380a/arena_elo/generation_model_info.json",
+        "reported_label": "LCM -> https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7"
+      }
+    ],
+    "identity_note": "Latent consistency model distilled from Dreamshaper v7 (an SD 1.5 fine-tune); identity taken from the arena's own model registry. Memory estimated from the SD 1.x 860M UNet in fp32 (the card's default precision)."
+  },
+  {
+    "id": "midjourney-v6",
+    "name": "Midjourney V6",
+    "provider": "Midjourney",
+    "category": "image",
+    "released": "2023-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment",
+        "reported_label": "Midjourney-v6",
+        "setting": "April 2024 product version (V6.1 was released July 2024)"
+      }
+    ],
+    "identity_note": "Midjourney --v 6 (V6.0). Midjourney offers no public API or weights; comparison-only."
+  },
+  {
+    "id": "midjourney-v6-1",
+    "name": "Midjourney V6.1",
+    "provider": "Midjourney",
+    "category": "image",
+    "released": "2024-07",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "Midjourney v6.1"
+      }
+    ],
+    "identity_note": "Midjourney --v 6.1. No public API or weights; comparison-only."
+  },
+  {
+    "id": "kolors",
+    "name": "Kolors",
+    "provider": "Kuaishou (Kolors team)",
+    "category": "image",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "kolors-model-license",
+    "params_b": 2.6,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 21.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c \"import torch; from diffusers import KolorsPipeline; p=KolorsPipeline.from_pretrained('Kwai-Kolors/Kolors-diffusers', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=5.0, num_inference_steps=50).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Kwai-Kolors/Kolors-diffusers",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment",
+        "reported_label": "Kolors (own model; Chinese prompts)"
+      },
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "Kolors"
+      }
+    ],
+    "identity_note": "Kwai-Kolors/Kolors 1.0 (not Kolors 2.x). 2.6B U-Net per the Kolors technical report Table 4; memory estimate adds the ChatGLM3-6B text encoder (~6.2B). Code is Apache-2.0; weights are under the separate Kolors model licence (free for academic use, commercial use after registration)."
+  },
+  {
+    "id": "ssd-1b",
+    "name": "SSD-1B",
+    "provider": "Segmind",
+    "category": "image",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 3.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionXLPipeline; p=StableDiffusionXLPipeline.from_pretrained('segmind/SSD-1B', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p(prompt='a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/segmind/SSD-1B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "SSD1B"
+      }
+    ],
+    "identity_note": "segmind/SSD-1B, a 1.3B-parameter distilled SDXL (model card)."
+  },
+  {
+    "id": "lcm-sdxl",
+    "name": "LCM-SDXL",
+    "provider": "latent-consistency",
+    "category": "image",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "openrail++",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 8.9,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import UNet2DConditionModel, DiffusionPipeline, LCMScheduler; u=UNet2DConditionModel.from_pretrained('latent-consistency/lcm-sdxl', torch_dtype=torch.float16, variant='fp16'); p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', unet=u, torch_dtype=torch.float16, variant='fp16'); p.scheduler=LCMScheduler.from_config(p.scheduler.config); p.to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=8.0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/latent-consistency/lcm-sdxl",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "LCM-SDXL"
+      }
+    ],
+    "identity_note": "latent-consistency/lcm-sdxl full UNet distillation (not the LCM-LoRA). Memory estimated as for SDXL 1.0."
+  },
+  {
+    "id": "lcm-ssd-1b",
+    "name": "LCM-SSD-1B",
+    "provider": "latent-consistency",
+    "category": "image",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "openrail++",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 3.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import UNet2DConditionModel, DiffusionPipeline, LCMScheduler; u=UNet2DConditionModel.from_pretrained('latent-consistency/lcm-ssd-1b', torch_dtype=torch.float16, variant='fp16'); p=DiffusionPipeline.from_pretrained('segmind/SSD-1B', unet=u, torch_dtype=torch.float16, variant='fp16'); p.scheduler=LCMScheduler.from_config(p.scheduler.config); p.to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/latent-consistency/lcm-ssd-1b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2412.18150v2#S9.T10",
+        "reported_label": "LCM-SSD1B"
+      }
+    ],
+    "identity_note": "latent-consistency/lcm-ssd-1b (LCM distillation of SSD-1B). Memory estimated as for SSD-1B (1.3B)."
   }
 ]

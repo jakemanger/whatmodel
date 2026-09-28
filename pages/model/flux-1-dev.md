@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · flux-dev-nc
 
-**score 35.1** ±1.7 · #76 of 87 · from 5 benchmark results across 5 sources
+**score 41.7** ±1.5 · #76 of 105 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,18 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           969.4    36.4   2026-09-24   46% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       54.9%    32.4   2026-07-01   21% ▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  76.2%    35.1   2026-08-25   11% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  50.0%    33.3   2026-06-02   11% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  72.6%    34.5   2026-07-12   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           969.4    42.9   2026-09-24   51% ▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       54.9%    39.3   2026-07-01   19% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  76.2%    41.3   2026-08-25   11% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  72.6%    41.1   2026-07-12   10% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  50.0%    39.7   2026-06-02    7% ▇
 prior                   pull toward the middle                   49.9                 1% ▇
-                        weighted average                       = 35.1
+                        weighted average                       = 41.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 ## How to run it
 
@@ -37,14 +37,14 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 <pre>
 version                                  needs  score
-bf16 · nvidia only                     ~29.3GB   35.1
-fp8 (layerwise casting) · nvidia only   ~7.7GB   35.1
-bnb-8bit · nvidia only                 ~14.9GB   35.1
-nf4 (bnb-4bit) · nvidia only            ~7.7GB   35.1
-gguf-q8_0                              ~14.9GB   35.1
-gguf-q4_0                               ~7.7GB   35.1
-mlx-4bit · mac only                     ~7.7GB   35.1
-bf16 · mac only                        ~29.3GB   35.1
+bf16 · nvidia only                     ~29.3GB   41.7
+fp8 (layerwise casting) · nvidia only   ~7.7GB   41.7
+bnb-8bit · nvidia only                 ~14.9GB   41.7
+nf4 (bnb-4bit) · nvidia only            ~7.7GB   41.7
+gguf-q8_0                              ~14.9GB   41.7
+gguf-q4_0                               ~7.7GB   41.7
+mlx-4bit · mac only                     ~7.7GB   41.7
+bf16 · mac only                        ~29.3GB   41.7
 </pre>
 
 ```sh

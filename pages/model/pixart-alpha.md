@@ -6,7 +6,7 @@
 
 PixArt (Huawei Noah's Ark Lab et al.)
 
-**score 33.1** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.5** ±2.3 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -15,15 +15,17 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  47.0%    31.3   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 33.1
+source                  test                             score  implies  date        weight
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1052.0    36.4   2024-06-04   46% ▇▇▇▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>   37.0%    31.9   2024-08-26   33% ▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   47.0%    37.6   2026-06-02   19% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 35.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 ## How to run it
 

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · proprietary
 
-**score 84.4** ±1.9 · #3 of 87 · from 5 benchmark results across 4 sources
+**score 83.5** ±1.6 · #3 of 105 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1383.0    87.3   2026-09-24   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1461.2    83.7   2026-09-22   17% ▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   78.6%    76.7   2026-06-09    8% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   66.4%    78.6   2026-06-05    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1383.0    85.9   2026-09-24   65% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1461.2    82.9   2026-09-22   16% ▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   78.6%    77.1   2026-06-09    8% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   66.4%    78.7   2026-06-05    5% ▇
 <a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   64.7%    77.3   2026-05-27    4% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 84.4
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 83.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

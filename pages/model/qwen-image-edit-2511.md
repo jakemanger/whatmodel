@@ -6,7 +6,7 @@
 
 Alibaba · Apache 2.0
 
-**score 52.5** ±3.2 · #49 of 87 · from 3 benchmark results across 3 sources
+**score 56.3** ±2.7 · #50 of 105 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                          score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1234.7    53.8   2026-09-22   44% ▇▇▇▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.8%    49.3   2026-05-13   34% ▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1038.0    55.7   2026-03-30   18% ▇▇
-prior                   pull toward the middle                 49.9                 4% ▇
-                        weighted average                     = 52.5
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1234.7    57.6   2026-09-22   45% ▇▇▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.8%    53.7   2026-05-13   34% ▇▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1038.0    59.2   2026-03-30   18% ▇▇
+prior                   pull toward the middle                 49.9                 3% ▇
+                        weighted average                     = 56.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

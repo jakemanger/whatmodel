@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-10 · 8.1B params · stabilityai-community
 
-**score 33.1** ±1.7 · #79 of 87 · from 4 benchmark results across 4 sources
+**score 39.9** ±1.5 · #80 of 105 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           938.3    32.6   2026-09-24   47% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       55.2%    32.6   2026-07-01   21% ▇▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  15.9%    35.5   2026-05-14   19% ▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  46.0%    30.7   2026-06-02   11% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           938.3    39.7   2026-09-24   53% ▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       55.2%    39.4   2026-07-01   20% ▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  15.9%    41.5   2026-05-14   19% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  46.0%    37.0   2026-06-02    8% ▇
 prior                   pull toward the middle                   49.9                 1% ▇
-                        weighted average                       = 33.1
+                        weighted average                       = 39.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ api (Replicate) · $0.065/image · [replicate.com](https://replicate.com/stabili
 
 <pre>
 version                          needs  score
-bf16 · nvidia only            ~19.94GB   33.1
-fp8 (TensorRT) · nvidia only   ~5.36GB   33.1
+bf16 · nvidia only            ~19.94GB   39.9
+fp8 (TensorRT) · nvidia only   ~5.36GB   39.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · closed weights
 
-**score 61.6** ±5.8 · #18 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 64.1** ±5.0 · #18 of 105 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  51.5%    62.5   2026-06-05   48% ▇▇▇▇▇▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  57.8%    64.8   2026-05-27   38% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                14% ▇▇
-                        weighted average                       = 61.6
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  51.5%    65.0   2026-06-05   49% ▇▇▇▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  57.8%    66.8   2026-05-27   40% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 64.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

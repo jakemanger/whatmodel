@@ -6,7 +6,7 @@
 
 Playground
 
-**score 31.4** ±2.9 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.0** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -15,16 +15,20 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       50.5%    29.8   2026-07-01   64% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  49.0%    32.6   2026-06-02   32% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 31.4
+source                  test                               score  implies  date        weight
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          50.5%    37.0   2026-07-01   25% ▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>    1150.0    43.1   2024-06-04   23% ▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.20 / 5    38.1   2024-12-25   19% ▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     46.0%    37.1   2024-08-26   16% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     49.0%    39.0   2026-06-02   10% ▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.37 / 5    38.5   2024-11-13    6% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 39.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Kwai-Kolors/Kolors repository README ([Apache-2.0](../../licenses/visual-kolors-readme.txt))</sub>
 
 ## How to run it
 

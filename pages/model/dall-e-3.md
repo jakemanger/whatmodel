@@ -6,7 +6,7 @@
 
 OpenAI · closed weights
 
-**score 36.3** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 43.3** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -15,17 +15,21 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           967.8    36.2   2026-09-24   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  72.2%    34.1   2026-07-12   16% ▇▇
-                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>  81.0%    46.9   2026-07-12    2% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 36.3
+source                  test                               score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>              967.8    42.8   2026-09-24   49% ▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.63 / 5    45.4   2024-12-25   13% ▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     61.0%    45.7   2024-08-26   12% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>     72.2%    40.7   2026-07-12   10% ▇
+                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>     81.0%    51.9   2026-07-12    1% ▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>     76.0%    43.5   2024-03-10    9% ▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.32 / 5    37.5   2024-11-13    4% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · Kwai-Kolors/Kolors repository README ([Apache-2.0](../../licenses/visual-kolors-readme.txt))</sub>
 
 ## How to run it
 

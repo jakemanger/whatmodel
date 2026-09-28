@@ -6,7 +6,7 @@
 
 Meituan
 
-**score 45.1** ±4.7 · #66 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.8** ±4.1 · #67 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    44.6   2026-08-25   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 45.1
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    49.8   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 49.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

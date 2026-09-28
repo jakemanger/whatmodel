@@ -6,7 +6,7 @@
 
 DeepFloyd
 
-**score 31.8** ±5.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.3** ±1.9 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -15,15 +15,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="visual-geneval"></a>djghosh13/geneval rep…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                 61.0%    29.6   2023-10-17   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle           49.9                11% ▇
-                        weighted average               = 31.8
+source                  test                               score  implies  date        weight
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                            61.0%    34.4   2023-10-17   24% ▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.77 / 5    31.1   2024-12-25   23% ▇▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     38.0%    32.5   2024-08-26   20% ▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>     27.3%    29.6   2024-02-21   16% ▇▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>     59.0%    31.6   2024-03-10   16% ▇▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 32.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: djghosh13/geneval repository README results ([MIT](../../licenses/visual-geneval.txt))</sub>
+<sub>Licences: GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt))</sub>
 
 ## How to run it
 

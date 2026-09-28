@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-07 · 3.5B params · openrail++
 
-**score 23.4** ±3.2 · #86 of 87 · from 3 benchmark results across 3 sources
+**score 32.5** ±1.6 · #90 of 105 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -15,17 +15,21 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  64.0%    22.1   2026-03-29   39% ▇▇▇▇▇
-<a name="visual-geneval"></a>djghosh13/geneval rep…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                         55.0%    25.6   2023-10-17   35% ▇▇▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  15.7%    16.7   2026-06-09   22% ▇▇▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 23.4
+source                  test                               score  implies  date        weight
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>    1001.0    33.0   2024-06-04   21% ▇▇
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                            55.0%    30.6   2023-10-17   17% ▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.99 / 5    34.7   2024-12-25   17% ▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     43.0%    35.4   2024-08-26   15% ▇▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>     64.0%    30.4   2026-03-29   12% ▇
+<a name="visual-imagenhub"></a>ImagenHub: Standardiz…  <a href="https://arxiv.org/html/2310.01596v4#S5.T4">ImagenHub text-guided generat…</a>     59.0%    31.6   2024-03-10   11% ▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>     15.7%    26.3   2026-06-09    7% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 32.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · djghosh13/geneval repository README results ([MIT](../../licenses/visual-geneval.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · GenEval authors' results: djghosh13/geneval README and arXiv 2310.11513v1 ([MIT (README); CC-BY-4.0 (arXiv 2310.11513v1)](../../licenses/visual-geneval.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · ImagenHub: Standardizing the evaluation of conditional image generation models ([CC-BY-4.0](../../licenses/visual-imagenhub.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
 
 ## How to run it
 
@@ -35,8 +39,8 @@ api (Together AI) · $0.0019/image · [together.ai](https://www.together.ai/mode
 
 <pre>
 version                                  needs  score
-fp16 · nvidia only                      ~8.9GB   23.4
-fp16 + model CPU offload · nvidia only  ~8.9GB   23.4
+fp16 · nvidia only                      ~8.9GB   32.5
+fp16 + model CPU offload · nvidia only  ~8.9GB   32.5
 </pre>
 
 ```sh

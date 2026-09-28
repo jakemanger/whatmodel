@@ -6,7 +6,7 @@
 
 Luma AI · closed weights
 
-**score 63.9** ±2.1 · #15 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.1** ±1.8 · #15 of 105 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1189.1    63.4   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1333.6    66.9   2026-09-22   20% ▇▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 63.9
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1189.1    65.8   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1333.6    68.6   2026-09-22   20% ▇▇
+prior                   pull toward the middle            49.9                 1% ▇
+                        weighted average                = 66.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
