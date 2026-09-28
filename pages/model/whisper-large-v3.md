@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-11 · 1.55B params · apache-2.0
 
-**score 58.1** ±0.8 · #32 of 110 · from 49 benchmark results across 20 sources
+**score 59.0** ±0.8 · #31 of 112 · from 50 benchmark results across 21 sources
 
 ## How the score was worked out
 
@@ -14,62 +14,63 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       3.7%    59.7   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             11.6%    59.1   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 13.1%    58.8   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.8%    58.6   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     10.9%    58.6   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              3.1%    57.4   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.9%    58.8   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       9.6%    55.3   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  13.1%    58.2   2025-07-17    2% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          4.0%    57.3   2025-07-17    2% ▇
-<a name="card2-qwen-qwen3-asr-1-7b"></a>Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>              9.8%    59.9   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>   9.9%    54.9   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   9.9%    55.9   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   4.9%    58.2   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        5.1%    52.6   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>   6.8%    54.1   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER</a>       4.0%    57.1   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>      12.0%    54.7   2026-01-30    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER</a>       1.5%    58.6   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>  19.1%    52.1   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   4.1%    51.8   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>  12.9%    47.9   2026-01-30    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>          4.1%    54.6   2026-01-30    1% ▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.2   2026-03-26    4% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.8%    58.1   2026-03-26    4% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.7%    58.9   2026-03-26    3% ▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  21.2%    61.1   2025-11-18    3% ▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  20.0%    61.7   2025-11-18    3% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3.json">LibriSpeech test-clean WER</a>       1.8%    58.1   2026-09-15    5% ▇
-<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  14.7%    62.0   2026-06-27    2% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  57.9%    56.0   2026-06-27    2% ▇
-                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  16.3%    63.9   2026-06-27    1% ▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  87.6%    60.1   2026-05-15    2% ▇
-                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   5.8%    64.1   2026-05-15    2% ▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  30.7%    60.3   2026-08-24    2% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>   8.8%    62.3   2026-08-24    2% ▇
-<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  10.7%    59.0   2026-05-19    3% ▇
-<a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>   8.8%    60.8   2026-08-03    2% ▇
-                        <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     48.4%    50.8   2026-08-03    1% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  36.9%    59.8   2025-01-12    3% ▇
-<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   8.3%    58.5   2025-10-27    3% ▇
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  30.7%    51.5   2026-09-24    2% ▇
-<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  71.2%    60.8   2026-09-10    2% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  14.4%    60.6   2026-08-18    2% ▇
-<a name="speech-stt-ru-shmyrev-espeech-mit"></a>Russian ASR Leaderboa…  <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. S…</a>  15.4%    58.1   2026-05-07    2% ▇
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  12.8%    60.3   2026-09-25    2% ▇
-<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   6.0%    61.4   2026-08-17    1% ▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   5.7%    53.0   2026-03-19    1% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.1%    69.0   2026-08-15    1% ▇
-prior                   pull toward the middle                   49.7                 0% ▇
-                        weighted average                       = 58.1
+<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       3.7%    60.7   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             11.6%    60.1   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 13.1%    59.8   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.8%    59.6   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     10.9%    59.6   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              3.1%    58.4   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.9%    59.8   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       9.6%    56.3   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  13.1%    59.1   2025-07-17    2% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          4.0%    58.3   2025-07-17    2% ▇
+<a name="card2-qwen-qwen3-asr-1-7b"></a>Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>              9.8%    60.7   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>   9.9%    55.6   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   9.9%    56.6   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   4.9%    58.9   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER</a>       4.0%    57.8   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        5.1%    53.3   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>      12.0%    55.4   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>   6.8%    54.7   2026-01-30    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER</a>       1.5%    59.3   2026-01-30    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   4.1%    52.5   2026-01-30    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>  19.1%    52.6   2026-01-30    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>          4.1%    55.4   2026-01-30    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>  12.9%    48.5   2026-01-30    1% ▇
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  20.0%    63.1   2025-11-18    5% ▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  21.2%    62.8   2025-11-18    5% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.3   2026-03-26    4% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.7%    59.4   2026-03-26    3% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.8%    58.2   2026-03-26    3% ▇
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  14.7%    62.9   2026-06-27    2% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  57.9%    56.8   2026-06-27    2% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  16.3%    64.8   2026-06-27    2% ▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  87.6%    61.9   2026-05-15    2% ▇
+                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   5.8%    64.0   2026-05-15    2% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3.json">LibriSpeech test-clean WER</a>       1.8%    58.8   2026-09-15    4% ▇
+<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   8.3%    59.8   2025-10-27    3% ▇
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  10.7%    59.8   2026-05-19    3% ▇
+<a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>   8.8%    61.7   2026-08-03    2% ▇
+                        <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     48.4%    51.5   2026-08-03    1% ▇
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  30.7%    52.9   2026-09-24    3% ▇
+<a name="speech-stt-liteasr-report-ccby"></a>LiteASR                 <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  10.1%    56.3   2025-02-27    2% ▇
+<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  71.2%    61.9   2026-09-10    2% ▇
+<a name="speech-stt-ru-shmyrev-espeech-mit"></a>Russian ASR Leaderboa…  <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. S…</a>  15.4%    58.8   2026-05-07    2% ▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   6.0%    64.9   2026-08-17    2% ▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>   8.8%    66.5   2026-08-24    1% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  30.7%    63.7   2026-08-24    1% ▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   5.7%    52.8   2026-03-19    1% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  12.8%    60.2   2026-09-25    1% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  10.1%    75.4   2026-08-15    0% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  36.9%    52.9   2025-01-12    0% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  14.4%    64.2   2026-08-18    0% ▇
+prior                   pull toward the middle                   49.6                 0% ▇
+                        weighted average                       = 59.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Qwen/Qwen3-ASR-1.7B model card ([Apache-2.0](../../licenses/Qwen--Qwen3-ASR-1.7B.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · BOTNOI Thai telephony ASR report ([CC BY 4.0](../../licenses/speech-stt-botnoi-thai-report.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Russian ASR Leaderboard ([MIT](../../licenses/speech-stt-ru-shmyrev-espeech-mit.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
+<sub>Licences: Mistral AI ([CC BY 4.0](../../licenses/report-2507.13264v1.txt)) · Qwen/Qwen3-ASR-1.7B model card ([Apache-2.0](../../licenses/Qwen--Qwen3-ASR-1.7B.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · BOTNOI Thai telephony ASR report ([CC BY 4.0](../../licenses/speech-stt-botnoi-thai-report.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · LiteASR ([CC BY 4.0](../../licenses/speech-stt-liteasr-report-ccby.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt)) · Russian ASR Leaderboard ([MIT](../../licenses/speech-stt-ru-shmyrev-espeech-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Picovoice speech-to-text-benchmark · English batch-engine WER ([Apache-2.0](../../licenses/speech-stt-picovoice-apache.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
 ## How to run it
 
@@ -79,9 +80,9 @@ api (Groq) · $0.0018/audio min · [console.groq.com](https://console.groq.com/d
 
 <pre>
 version               needs  score
-fp16                ~4.22GB   58.1
-fp16 · mac only     ~4.22GB   58.1
-fp16 · nvidia only  ~4.22GB   58.1
+fp16                ~4.22GB   59.0
+fp16 · mac only     ~4.22GB   59.0
+fp16 · nvidia only  ~4.22GB   59.0
 </pre>
 
 ```sh

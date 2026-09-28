@@ -6,7 +6,7 @@ The open data, scoring code and bench script behind [whatmodel.sh](https://whatm
 
 **llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md)
 
-updated 2026-09-28 23:22 UTC · 404 models · scores combine 271 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-09-28 23:34 UTC · 404 models · scores combine 271 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
 
 These studies cover separate model sets. Scores compare models within the selected set only: **LMArena (text) · 577 models** · [ARC Challenge · 48 models](https://whatmodel.sh/?set=arc-challenge) · [BIG-Bench Hard · 5 models](https://whatmodel.sh/?set=bbh%40paper-2210.11416v5)
 

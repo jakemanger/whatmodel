@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2024-12 · 0.5B params · apache-2.0
 
-**score 52.2** ±1.3 · comparison only: no current run option verified · from 21 benchmark results across 6 sources
+**score 54.3** ±1.2 · comparison only: no current run option verified · from 23 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,34 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.3%    56.0   2026-06-15    7% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      6.3%    53.2   2026-06-15    7% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.6%    51.7   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     71.0%    56.7   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.95 / 5    59.6   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     65.9%    50.7   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     60.3%    52.9   2026-06-15    4% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.53 / 5    54.8   2026-06-15    3% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>     11.0%    47.6   2026-06-15    1% ▇
-<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.01 / 5    53.1   2025-09-29    6% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.14 / 5    55.2   2025-09-29    5% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  3.97 / 5    50.2   2025-09-29    5% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  3.38 / 5    46.8   2025-09-29    5% ▇
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>     75.4%    49.9   2025-07-20    5% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    51.6   2025-07-20    5% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>     64.1%    47.5   2025-07-20    4% ▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>      3.4%    45.0   2025-07-20    3% ▇
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-en · Whisper la…</a>      3.2%    50.5   2025-12-08    8% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-zh · Paraformer…</a>      1.3%    55.0   2025-12-08    6% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     60.0%    54.7   2026-05-24    4% ▇
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.07 / 5    45.4   2025-10-15    3% ▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.3%    57.9   2026-06-15    7% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      6.3%    55.2   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.6%    53.8   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     71.0%    58.6   2026-06-15    4% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.95 / 5    61.4   2026-06-15    4% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     65.9%    52.9   2026-06-15    4% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     60.3%    54.8   2026-06-15    3% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.53 / 5    56.7   2026-06-15    3% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>     11.0%    49.9   2026-06-15    1% ▇
+<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.01 / 5    55.4   2025-09-29    5% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  3.38 / 5    49.2   2025-09-29    5% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.14 / 5    57.5   2025-09-29    4% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  3.97 / 5    52.4   2025-09-29    4% ▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-en · Whisper la…</a>      3.2%    53.1   2025-12-08   10% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md">Seed-TTS test-zh · Paraformer…</a>      1.3%    57.0   2025-12-08    8% ▇
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>      1.6%    53.8   2025-07-20    5% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>     75.4%    52.6   2025-07-20    5% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>     64.1%    49.8   2025-07-20    4% ▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>      3.4%    46.9   2025-07-20    4% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     60.0%    57.4   2026-05-24    2% ▇
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.07 / 5    47.1   2025-10-15    2% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.43 / 5    65.0   2026-03-15    1% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.24 / 5    43.1   2026-03-15    1% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 52.2
+                        weighted average                          = 54.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning ([CC BY 4.0](../../licenses/speech-voxcpm-report-ccby.txt)) · DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt))</sub>
+<sub>Licences: Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning ([CC BY 4.0](../../licenses/speech-voxcpm-report-ccby.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis ([CC BY-SA 4.0](../../licenses/speech-dmospeech2-report-bysa.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
 ## How to run it
 

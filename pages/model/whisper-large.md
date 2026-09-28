@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 1.55B params · apache-2.0
 
-**score 52.8** ±2.3 · #61 of 110 · from 3 benchmark results across 2 sources
+**score 52.5** ±2.4 · #61 of 112 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -15,22 +15,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.9%    52.8   2026-03-26   31% ▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.4%    57.1   2026-03-26   27% ▇▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">LibriSpeech test-clean WER</a>       2.7%    50.1   2026-09-15   40% ▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 2% ▇
-                        weighted average                       = 52.8
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.4%    57.5   2026-03-26   25% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json">LibriSpeech test-clean WER</a>       2.7%    49.6   2026-09-15   36% ▇▇▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  30.6%    53.6   2023-09-30    3% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    44.1   2025-01-12    3% ▇
+prior                   pull toward the middle                   49.6                 2% ▇
+                        weighted average                       = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp16     ~4.22GB   52.8
-fp32     ~7.94GB   52.8
+fp16     ~4.22GB   52.5
+fp32     ~7.94GB   52.5
 </pre>
 
 ```sh

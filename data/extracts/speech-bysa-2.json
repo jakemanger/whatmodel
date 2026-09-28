@@ -360,7 +360,8 @@
     "hierspeechpp-libritts960",
     "xtts-v2",
     "yourtts",
-    "voicecraft-830m"
+    "voicecraft-830m",
+    "dmospeech-2"
   ],
   "results": [
     {
@@ -1840,6 +1841,72 @@
       "identity_sources": [
         "https://huggingface.co/pyp1/VoiceCraft",
         "https://github.com/jasonppy/VoiceCraft"
+      ]
+    },
+    {
+      "model": "dmospeech-2",
+      "bench": "seed-tts-en-whisper-v3-wer",
+      "score": 0.01752,
+      "raw_value": 1.752,
+      "scale_divisor": 100,
+      "source": "https://arxiv.org/html/2507.14988v1",
+      "source_id": "speech-dmospeech2-report-bysa",
+      "by": "lab",
+      "date": "2025-07-20",
+      "note": "Table 2, row 'DMOSpeech 2 (Student-Only, 4 steps)', column Seed-TTS-en WER = 1.752; the authors' own model: student with the GRPO RL-optimised duration predictor, 4 sampling steps (the configuration Table 1 calls 'DMOSpeech 2 (4 steps)' and uses as the CMOS anchor). Released as yl4579/DMOSpeech2 (model_85000.pt + model_1500.pt). The Teacher-Guided 16-step sampling setting of the same release scores 1.738 and is not used. Whisper-large-v3 (EN) / Paraformer-zh (ZH), WavLM-large speaker-verification SIM-o; resampled to 24 kHz. CC BY-SA 4.0 (share-alike).",
+      "source_model_label": "DMOSpeech 2 (Student-Only, 4 steps)",
+      "identity_sources": [
+        "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910",
+        "https://github.com/yl4579/DMOSpeech2"
+      ]
+    },
+    {
+      "model": "dmospeech-2",
+      "bench": "seed-tts-en-wavlm-sim",
+      "score": 0.698,
+      "raw_value": 0.698,
+      "source": "https://arxiv.org/html/2507.14988v1",
+      "source_id": "speech-dmospeech2-report-bysa",
+      "by": "lab",
+      "date": "2025-07-20",
+      "note": "Table 2, row 'DMOSpeech 2 (Student-Only, 4 steps)', column Seed-TTS-en SIM = 0.698; the authors' own model: student with the GRPO RL-optimised duration predictor, 4 sampling steps (the configuration Table 1 calls 'DMOSpeech 2 (4 steps)' and uses as the CMOS anchor). Released as yl4579/DMOSpeech2 (model_85000.pt + model_1500.pt). The Teacher-Guided 16-step sampling setting of the same release scores 0.699 and is not used. Whisper-large-v3 (EN) / Paraformer-zh (ZH), WavLM-large speaker-verification SIM-o; resampled to 24 kHz. CC BY-SA 4.0 (share-alike).",
+      "source_model_label": "DMOSpeech 2 (Student-Only, 4 steps)",
+      "identity_sources": [
+        "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910",
+        "https://github.com/yl4579/DMOSpeech2"
+      ]
+    },
+    {
+      "model": "dmospeech-2",
+      "bench": "seed-tts-zh-paraformer-cer",
+      "score": 0.01527,
+      "raw_value": 1.527,
+      "scale_divisor": 100,
+      "source": "https://arxiv.org/html/2507.14988v1",
+      "source_id": "speech-dmospeech2-report-bysa",
+      "by": "lab",
+      "date": "2025-07-20",
+      "note": "Table 2, row 'DMOSpeech 2 (Student-Only, 4 steps)', column Seed-TTS-zh CER = 1.527; the authors' own model: student with the GRPO RL-optimised duration predictor, 4 sampling steps (the configuration Table 1 calls 'DMOSpeech 2 (4 steps)' and uses as the CMOS anchor). Released as yl4579/DMOSpeech2 (model_85000.pt + model_1500.pt). The Teacher-Guided 16-step sampling setting of the same release scores 1.468 and is not used. Whisper-large-v3 (EN) / Paraformer-zh (ZH), WavLM-large speaker-verification SIM-o; resampled to 24 kHz. CC BY-SA 4.0 (share-alike).",
+      "source_model_label": "DMOSpeech 2 (Student-Only, 4 steps)",
+      "identity_sources": [
+        "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910",
+        "https://github.com/yl4579/DMOSpeech2"
+      ]
+    },
+    {
+      "model": "dmospeech-2",
+      "bench": "seed-tts-zh-wavlm-sim",
+      "score": 0.76,
+      "raw_value": 0.76,
+      "source": "https://arxiv.org/html/2507.14988v1",
+      "source_id": "speech-dmospeech2-report-bysa",
+      "by": "lab",
+      "date": "2025-07-20",
+      "note": "Table 2, row 'DMOSpeech 2 (Student-Only, 4 steps)', column Seed-TTS-zh SIM = 0.76; the authors' own model: student with the GRPO RL-optimised duration predictor, 4 sampling steps (the configuration Table 1 calls 'DMOSpeech 2 (4 steps)' and uses as the CMOS anchor). Released as yl4579/DMOSpeech2 (model_85000.pt + model_1500.pt). The Teacher-Guided 16-step sampling setting of the same release scores 0.760 and is not used. Whisper-large-v3 (EN) / Paraformer-zh (ZH), WavLM-large speaker-verification SIM-o; resampled to 24 kHz. CC BY-SA 4.0 (share-alike).",
+      "source_model_label": "DMOSpeech 2 (Student-Only, 4 steps)",
+      "identity_sources": [
+        "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910",
+        "https://github.com/yl4579/DMOSpeech2"
       ]
     }
   ]

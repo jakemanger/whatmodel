@@ -6,23 +6,26 @@
 
 OpenMOSS · released 2026-05 · 8.49B params · apache-2.0
 
-**score 52.9** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.8** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper la…</a>   2.7%    53.3   2026-08-03   54% ▇▇▇▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer…</a>   1.5%    52.8   2026-08-03   41% ▇▇▇▇▇
-prior            pull toward the middle                   49.9                 4% ▇
-                 weighted average                       = 52.9
+source                  test                            score  implies  date        weight
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper la…</a>   2.7%    55.6   2026-08-03   35% ▇▇▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer…</a>   1.5%    55.1   2026-08-03   27% ▇▇▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   1.7%    57.9   2026-06-04   18% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>   3.8%    69.1   2026-06-04    9% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>   6.1%    65.4   2026-06-04    8% ▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 57.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt))</sub>
+<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt))</sub>
 
 ## How to run it
 

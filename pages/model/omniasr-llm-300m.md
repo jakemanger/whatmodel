@@ -6,28 +6,30 @@
 
 Meta · released 2025-11 · 1.63B params · apache-2.0
 
-**score 45.0** ±4.0 · #88 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.0** ±4.2 · #83 of 112 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                       score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>   9.3%    44.7   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle              49.7                 6% ▇
-                      weighted average                  = 45.0
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        9.3%    43.5   2026-03-26   74% ▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  22.1%    49.7   2026-08-15   10% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  33.0%    59.7   2025-11-13    9% ▇
+prior                   pull toward the middle                   49.6                 7% ▇
+                        weighted average                       = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-bf16     ~4.41GB   45.0
+bf16     ~4.41GB   46.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 0.81B params · cc-by-4.0
 
-**score 60.3** ±2.6 · #20 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.7** ±1.9 · #17 of 112 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">LibriSpeech test-clean WER</a>       1.6%    60.2   2026-09-15   55% ▇▇▇▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.3%    61.1   2026-03-26   43% ▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 3% ▇
-                        weighted average                       = 60.3
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  19.1%    63.6   2025-11-18   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  23.8%    61.1   2025-11-18   27% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json">LibriSpeech test-clean WER</a>       1.6%    61.2   2026-09-15   22% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.3%    61.2   2026-03-26   19% ▇▇
+prior                   pull toward the middle                   49.6                 1% ▇
+                        weighted average                       = 61.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~4.39GB   60.3
+fp32 · nvidia only  ~4.39GB   61.7
 </pre>
 
 ```sh

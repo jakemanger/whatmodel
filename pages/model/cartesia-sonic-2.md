@@ -6,7 +6,7 @@
 
 Cartesia · released 2025-03 · proprietary
 
-**score 61.7** ±3.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.2** ±2.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1185.1    62.1   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 61.7
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1185.1    61.6   2026-09-25   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 61.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

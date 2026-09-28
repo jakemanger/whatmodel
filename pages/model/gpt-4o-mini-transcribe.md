@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 57.0** ±1.5 · #39 of 110 · from 14 benchmark results across 2 sources
+**score 57.9** ±1.5 · #35 of 112 · from 14 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       4.7%    56.2   2025-07-17    8% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             14.8%    55.4   2025-07-17    8% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 17.3%    54.6   2025-07-17    8% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.9%    58.0   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     11.3%    57.9   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              4.5%    52.6   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>  10.1%    58.5   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       7.3%    59.4   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.3%    59.2   2025-07-17    7% ▇
-                  <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          3.2%    60.6   2025-07-17    7% ▇
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  12.8%    56.0   2026-02-11    7% ▇
-                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.9%    57.9   2026-02-11    7% ▇
-                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.0%    56.4   2026-02-11    7% ▇
-                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   8.0%    57.2   2026-02-11    7% ▇
-prior             pull toward the middle                   49.7                 1% ▇
-                  weighted average                       = 57.0
+<a name="report-2507.13264v1"></a>Mistral AI        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       4.7%    57.1   2025-07-17    8% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             14.8%    56.4   2025-07-17    8% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 17.3%    55.6   2025-07-17    8% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.9%    59.0   2025-07-17    7% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     11.3%    58.9   2025-07-17    7% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              4.5%    53.6   2025-07-17    7% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>  10.1%    59.5   2025-07-17    7% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       7.3%    60.4   2025-07-17    7% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.3%    60.2   2025-07-17    7% ▇
+                  <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER</a>          3.2%    61.6   2025-07-17    7% ▇
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  12.8%    56.6   2026-02-11    7% ▇
+                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.9%    58.4   2026-02-11    7% ▇
+                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.0%    57.1   2026-02-11    7% ▇
+                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   8.0%    57.7   2026-02-11    6% ▇
+prior             pull toward the middle                   49.6                 1% ▇
+                  weighted average                       = 57.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

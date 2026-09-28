@@ -6,7 +6,7 @@
 
 SpeechBrain · released 2022-06 · 0.32B params · apache-2.0
 
-**score 31.5** ±3.9 · #97 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.5** ±4.2 · #99 of 112 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  14.3%    30.4   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 6% ▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  14.3%    30.2   2026-03-26   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.6                 7% ▇
                       weighted average                       = 31.5
 </pre>
 

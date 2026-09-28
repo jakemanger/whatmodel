@@ -6,28 +6,29 @@
 
 IBM · released 2025-06 · 8.65B params · apache-2.0
 
-**score 63.9** ±3.9 · #6 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.1** ±4.0 · #14 of 112 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.7%    64.8   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 63.9
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.7%    64.9   2026-03-26   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  23.7%    37.5   2026-08-18    7% ▇
+prior                   pull toward the middle                   49.6                 6% ▇
+                        weighted average                       = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~21.26GB   63.9
+bf16 · nvidia only  ~21.26GB   62.1
 </pre>
 
 ```sh

@@ -6,22 +6,24 @@
 
 Plachtaa (community) · released 2023-08 · mit
 
-**score 38.7** ±5.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.6** ±4.6 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  90.1%    37.2   2025-04-09   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 38.7
+source                  test                               score  implies  date        weight
+<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>     90.1%    31.4   2025-04-09   63% ▇▇▇▇▇▇▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.07 / 5    13.9   2026-03-15   16% ▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.86 / 5    26.5   2026-03-15   12% ▇
+prior                   pull toward the middle                      49.9                 9% ▇
+                        weighted average                          = 29.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt))</sub>
+<sub>Licences: ClonEval · Open Voice Cloning Leaderboard ([Apache-2.0](../../licenses/speech-cloneval-space-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
 ## How to run it
 

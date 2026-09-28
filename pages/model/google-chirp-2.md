@@ -6,22 +6,26 @@
 
 Google · proprietary
 
-**score 60.0** ±3.9 · #24 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.8** ±2.5 · #28 of 112 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    60.7   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 60.0
+source                  test                            score  implies  date        weight
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.3%    58.7   2026-07-19   15% ▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.3%    64.6   2026-07-19   14% ▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  12.7%    60.1   2026-07-19   11% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    60.8   2026-03-26   33% ▇▇▇▇
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  21.9%    57.6   2026-09-24   25% ▇▇▇
+prior                   pull toward the middle                   49.6                 2% ▇
+                        weighted average                       = 59.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt))</sub>
 
 ## How to run it
 

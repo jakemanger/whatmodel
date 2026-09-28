@@ -6,23 +6,24 @@
 
 Rev · proprietary
 
-**score 55.3** ±2.9 · #48 of 110 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.0** ±2.9 · #53 of 112 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.0%    52.8   2026-03-26   51% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.8%    58.6   2026-03-26   45% ▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 3% ▇
-                      weighted average                       = 55.3
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.0%    52.8   2026-03-26   43% ▇▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.8%    59.2   2026-03-26   34% ▇▇▇▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   4.4%    48.1   2026-07-19   19% ▇▇
+prior                   pull toward the middle                   49.6                 3% ▇
+                        weighted average                       = 54.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt))</sub>
 
 ## How to run it
 

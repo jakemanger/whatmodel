@@ -6,7 +6,7 @@
 
 Hugging Face (Parler-TTS) · released 2024-04 · 0.647B params · apache-2.0
 
-**score 47.8** ±13.9 · #36 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.9** ±14.0 · #38 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.6%    39.8   2025-04-25   21% ▇▇▇
-prior                   pull toward the middle                   49.9                79% ▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 47.8
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.6%    40.3   2025-04-25   21% ▇▇
+prior                   pull toward the middle                   49.9                79% ▇▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 47.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version    needs  score
-fp32     ~2.59GB   47.8
+fp32     ~2.59GB   47.9
 </pre>
 
 ```sh

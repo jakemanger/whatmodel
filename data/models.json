@@ -33119,5 +33119,147 @@
         "reported_label": "o3-pro (high)"
       }
     ]
+  },
+  {
+    "id": "seamless-m4t-v2-large",
+    "name": "SeamlessM4T v2 Large",
+    "provider": "Meta",
+    "category": "stt",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 2.31,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Exact checkpoint facebook/seamless-m4t-v2-large (SeamlessM4T v2, the multitask speech/text translation model used in its ASR mode, target language = source language). Distinct from SeamlessM4T Large v1 (facebook/seamless-m4t-large) and the Medium model. Weights CC-BY-NC-4.0. Params: HF safetensors total 2,309,249,669 (card: 2.3B). released: HF repo created 2023-11-29 with the Seamless release. No local command added: the card documents only Python API usage.",
+    "identity_sources": [
+      "https://huggingface.co/facebook/seamless-m4t-v2-large/tree/5f8cc790b19fc3f67a61c105133b20b34e3dcb76"
+    ]
+  },
+  {
+    "id": "cohere-transcribe-arabic-07-2026",
+    "name": "Cohere Transcribe Arabic (07-2026)",
+    "provider": "Cohere",
+    "category": "stt",
+    "released": "2026-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.07,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Exact checkpoint CohereLabs/cohere-transcribe-arabic-07-2026 (gated HF repo, Apache-2.0), Cohere's Arabic-focused Transcribe model; distinct from the general cohere-transcribe-03-2026. Params: HF safetensors total 2,065,804,048. released: the model name's 07-2026 version date (HF repo created 2026-06-18). No local command added (gated repo; not verified here).",
+    "identity_sources": [
+      "https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026/tree/c3e911b42149bf7a1e53d5cef9878aee87515a23"
+    ]
+  },
+  {
+    "id": "nemotron-3-5-asr-streaming-0-6b",
+    "name": "Nemotron 3.5 ASR Streaming 0.6B",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2026-05",
+    "open_weights": true,
+    "license": "openmdw-1.1",
+    "params_b": 0.64,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Exact checkpoint nvidia/nemotron-3.5-asr-streaming-0.6b (NeMo library per HF; streaming-capable multilingual ASR covering 32 locales per the transcribe.cpp catalog; licence OpenMDW-1.1 per that catalog, HF 'other'). Params: HF safetensors total 637,997,088. released: HF repo creation month (2026-05-15). No local command added (not verified here).",
+    "identity_sources": [
+      "https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/ea30d66debe3740a08b573244286791d423d6b3e"
+    ]
+  },
+  {
+    "id": "vosk-small-en-us-0-15",
+    "name": "Vosk small en-us 0.15",
+    "provider": "Alpha Cephei (Vosk)",
+    "category": "stt",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "kaldi",
+          "gb": 0.3,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uvx --from vosk vosk-transcriber -n vosk-model-small-en-us-0.15 -i audio.wav -o out.txt",
+          "source": "https://github.com/alphacep/vosk-api/blob/05adbfcc0df27a1535913c6accd4b7fc60ffd59d/python/vosk/transcriber/cli.py",
+          "note": "vosk-transcriber downloads the named model (40M download). Memory from the Vosk models page guidance (small models 'require about 300Mb of memory in runtime'; big models 'require up to 16Gb in memory'), labelled estimated. Command tested here with the small model on a 16 kHz mono clip."
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "Exact Vosk (Kaldi-based) English model 'vosk-model-small-en-us-0.15' from alphacephei.com/vosk/models (listed 40M, Apache 2.0; page's own WER 9.85 (librispeech test-clean) 10.38 (tedlium)). Kaldi TDNN-style offline/streaming recogniser, the landmark pre-neural-end-to-end open ASR stack. released: not stated on the models page (left unset).",
+    "identity_sources": [
+      "https://alphacephei.com/vosk/models",
+      "https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/engine.py"
+    ]
+  },
+  {
+    "id": "vosk-en-us-0-22",
+    "name": "Vosk en-us 0.22",
+    "provider": "Alpha Cephei (Vosk)",
+    "category": "stt",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "kaldi",
+          "gb": 16,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uvx --from vosk vosk-transcriber -n vosk-model-en-us-0.22 -i audio.wav -o out.txt",
+          "source": "https://github.com/alphacep/vosk-api/blob/05adbfcc0df27a1535913c6accd4b7fc60ffd59d/python/vosk/transcriber/cli.py",
+          "note": "vosk-transcriber downloads the named model (1.8G download). Memory from the Vosk models page guidance (small models 'require about 300Mb of memory in runtime'; big models 'require up to 16Gb in memory'), labelled estimated. Command tested here with the small model on a 16 kHz mono clip."
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "Exact Vosk (Kaldi-based) English model 'vosk-model-en-us-0.22' from alphacephei.com/vosk/models (listed 1.8G, Apache 2.0; page's own WER 5.69 (librispeech test-clean) 6.05 (tedlium) 29.78 (callcenter)). Kaldi TDNN-style offline/streaming recogniser, the landmark pre-neural-end-to-end open ASR stack. released: not stated on the models page (left unset).",
+    "identity_sources": [
+      "https://alphacephei.com/vosk/models",
+      "https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/engine.py"
+    ]
+  },
+  {
+    "id": "dmospeech-2",
+    "name": "DMOSpeech 2",
+    "provider": "Columbia University / NewsBreak (Yinghao Aaron Li, Xilin Jiang et al.)",
+    "category": "tts",
+    "released": "2025-07",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.3,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "yl4579/DMOSpeech2 release @b2db04b (created 2025-07-21, the day after arXiv:2507.14988v1): model_85000.pt (DMD2-distilled student, bundles the F5-TTS-architecture teacher the authors trained themselves for 2M steps, used only for teacher-guided sampling) and model_1500.pt (GRPO-finetuned duration predictor). params_b is the paper's 0.3B for the student-only configuration. Card licence MIT. Not F5-TTS: the teacher is the authors' own training run, not a SWivid checkpoint. No copy-pasteable CLI (demo notebook only).",
+    "identity_sources": [
+      "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910",
+      "https://huggingface.co/yl4579/DMOSpeech2/blob/b2db04bf6fd5147c487149fe173576eec179f910/README.md",
+      "https://github.com/yl4579/DMOSpeech2",
+      "https://arxiv.org/abs/2507.14988v1"
+    ]
+  },
+  {
+    "id": "simple-tts",
+    "name": "Simple-TTS",
+    "provider": "ASAPP Research (Justin Lovelace et al.)",
+    "category": "tts",
+    "released": "2023-10",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "asappresearch/simple-tts official checkpoint (README \"Model Checkpoint\": ckpt.tar.gz, U-ViT latent diffusion trained 200k steps on MLS English; the only released checkpoint). Code dump 2023-10-31 (paper: Lovelace et al., ICLR 2024). The repository has no licence file, so no weight licence is recorded.",
+    "identity_sources": [
+      "https://github.com/asappresearch/simple-tts/blob/25eb8be644c3dd5243f88b51dea315da62faf0f6/README.md"
+    ]
   }
 ]

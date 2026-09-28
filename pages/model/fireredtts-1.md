@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2024-09 · apache-2.0
 
-**score 31.7** ±2.3 · comparison only: no current run option verified · from 7 benchmark results across 2 sources
+**score 31.6** ±2.3 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     46.0%    27.8   2024-10-09   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     47.0%    28.0   2024-10-09   19% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.8%    32.4   2024-10-09   17% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     63.0%    30.4   2024-10-09   15% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.7%    38.6   2024-10-09    9% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.5%    41.6   2024-10-09    7% ▇
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  2.36 / 5    30.6   2025-10-15    9% ▇
+<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     46.0%    28.6   2024-10-09   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     47.0%    28.8   2024-10-09   19% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.8%    33.3   2024-10-09   15% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     63.0%    31.1   2024-10-09   14% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.7%    39.7   2024-10-09    8% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.5%    43.1   2024-10-09    6% ▇
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  2.36 / 5    31.4   2025-10-15    8% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.61 / 5    30.3   2026-03-15    4% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.42 / 5    11.3   2026-03-15    3% ▇
 prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 31.7
+                        weighted average                          = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt))</sub>
+<sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation ([CC BY 4.0](../../licenses/speech-distar-report-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
 ## How to run it
 

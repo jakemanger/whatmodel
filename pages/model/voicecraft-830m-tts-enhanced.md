@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-04 · coqui-public-model-license
 
-**score 31.4** ±5.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.3** ±5.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    26.2   2024-10-20   48% ▇▇▇▇▇▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    33.0   2024-10-20   42% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 31.4
+<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    24.6   2024-10-20   43% ▇▇▇▇▇
+                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    32.2   2024-10-20   43% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                13% ▇▇
+                        weighted average                       = 31.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

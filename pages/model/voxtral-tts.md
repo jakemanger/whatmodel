@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 74.6** ±3.0 · #1 of 46 · from 4 benchmark results across 1 source
+**score 73.9** ±3.1 · #1 of 46 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source       test                            score  implies  date        weight
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    78.3   2026-04-06   34% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    78.8   2026-04-06   34% ▇▇▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    69.4   2026-04-06   15% ▇▇
-             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    68.0   2026-04-06   13% ▇▇
+<a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    77.6   2026-04-06   34% ▇▇▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    78.1   2026-04-06   33% ▇▇▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    68.7   2026-04-06   16% ▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    67.4   2026-04-06   13% ▇▇
 prior        pull toward the middle                   49.9                 4% ▇
-             weighted average                       = 74.6
+             weighted average                       = 73.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ api (Mistral AI) · $16.00/M chars · [docs.mistral.ai](https://docs.mistral.ai/
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~10.1GB   74.6
-bf16 · mac only     ~10.1GB   74.6
+bf16 · nvidia only  ~10.1GB   73.9
+bf16 · mac only     ~10.1GB   73.9
 </pre>
 
 ```sh

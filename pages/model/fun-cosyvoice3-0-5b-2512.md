@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2025-12 · 0.5B params · apache-2.0
 
-**score 56.6** ±1.7 · comparison only: no current run option verified · from 11 benchmark results across 2 sources
+**score 58.5** ±1.5 · comparison only: no current run option verified · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,24 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.8%    55.5   2026-06-15   13% ▇▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      5.0%    57.0   2026-06-15   12% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.5%    52.5   2026-06-15    9% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     74.0%    59.6   2026-06-15    8% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.98 / 5    60.4   2026-06-15    7% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     69.8%    54.7   2026-06-15    7% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     64.7%    57.0   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.58 / 5    56.0   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      4.4%    63.4   2026-06-15    3% ▇
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-en · Whisper la…</a>      2.1%    56.6   2025-12-17   15% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-zh · Paraformer…</a>      1.1%    56.6   2025-12-17   12% ▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>             10.8%    57.4   2026-06-15   11% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      5.0%    58.9   2026-06-15   10% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.5%    54.6   2026-06-15    7% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     74.0%    61.4   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.98 / 5    62.2   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     69.8%    56.8   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     64.7%    58.8   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.58 / 5    57.9   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      4.4%    65.0   2026-06-15    2% ▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-en · Whisper la…</a>      2.1%    58.5   2025-12-17   16% ▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md">Seed-TTS test-zh · Paraformer…</a>      1.1%    58.5   2025-12-17   12% ▇
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      7.8%    58.4   2026-07-27   12% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 56.6
+                        weighted average                          = 58.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt))</sub>
+<sub>Licences: Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt))</sub>
 
 ## How to run it
 

@@ -6,7 +6,7 @@
 
 Korea University (Sang-Hoon Lee et al.) · released 2023-11 · 0.097B params · mit
 
-**score 40.6** ±5.0 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 37.5** ±4.6 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    41.6   2024-09-16   83% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    18.0   2024-09-16    5% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%    -7.5   2024-09-16    1% ▇
-prior                   pull toward the middle                      49.9                10% ▇
-                        weighted average                          = 40.6
+<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    39.3   2024-09-16   79% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    20.6   2024-09-16    9% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%     9.5   2024-09-16    3% ▇
+prior                   pull toward the middle                      49.9                 9% ▇
+                        weighted average                          = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-07 · proprietary
 
-**score 62.1** ±3.9 · #12 of 110 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.0** ±3.9 · #10 of 112 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source          test                            score  implies  date        weight
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench  <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  89.3%    62.6   2026-09-01   52% ▇▇▇▇▇▇
-                <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.1%    63.2   2026-09-01   42% ▇▇▇▇▇
-prior           pull toward the middle                   49.7                 6% ▇
-                weighted average                       = 62.1
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench  <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  89.3%    64.4   2026-09-01   49% ▇▇▇▇▇▇
+                <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.1%    63.1   2026-09-01   45% ▇▇▇▇▇
+prior           pull toward the middle                   49.6                 6% ▇
+                weighted average                       = 63.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

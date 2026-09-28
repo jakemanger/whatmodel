@@ -6,7 +6,7 @@
 
 KRAFTON · released 2026-04 · 0.3B params · cc-by-nc-4.0
 
-**score 57.5** ±2.0 · comparison only: no current run option verified · from 9 benchmark results across 1 source
+**score 59.4** ±2.0 · comparison only: no current run option verified · from 9 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER (lab)</a>        7.3%    60.0   2026-06-15   18% ▇▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      4.6%    58.2   2026-06-15   17% ▇▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      1.9%    56.8   2026-06-15   12% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     73.0%    58.6   2026-06-15   11% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.77 / 5    55.1   2026-06-15   10% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     68.7%    53.6   2026-06-15   10% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     62.3%    54.7   2026-06-15    9% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.60 / 5    56.5   2026-06-15    8% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      2.9%    70.2   2026-06-15    4% ▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER (lab)</a>        7.3%    61.8   2026-06-15   19% ▇▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      4.6%    60.0   2026-06-15   16% ▇▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      1.9%    58.8   2026-06-15   12% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     73.0%    60.5   2026-06-15   11% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.77 / 5    57.0   2026-06-15   10% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     68.7%    55.7   2026-06-15   10% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     62.3%    56.6   2026-06-15    9% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.60 / 5    58.4   2026-06-15    8% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      2.9%    71.5   2026-06-15    4% ▇
 prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 57.5
+                        weighted average                          = 59.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

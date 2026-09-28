@@ -6,7 +6,7 @@
 
 Meta · released 2020-10 · 0.32B params · apache-2.0
 
-**score 17.8** ±3.9 · #99 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 18.0** ±3.9 · #102 of 112 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  21.3%    15.2   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.5%    31.6   2024-12-09    4% ▇
-prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 17.8
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  21.3%    14.9   2026-03-26   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200        <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  61.1%    19.6   2023-09-30    8% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.5%    30.7   2024-12-09    4% ▇
+prior                 pull toward the middle                   49.6                 6% ▇
+                      weighted average                       = 18.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   17.8
+fp32     ~2.04GB   18.0
 </pre>
 
 ```sh

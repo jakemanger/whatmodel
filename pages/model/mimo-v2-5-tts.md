@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  27.5%    45.7   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  27.5%    45.8   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                  pull toward the middle                   49.9                 6% ▇
                        weighted average                       = 46.0
 </pre>

@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2025-06 · 0.123B params · apache-2.0
 
-**score 52.3** ±6.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.2** ±7.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    52.7   2026-05-24   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                15% ▇▇
-                        weighted average                       = 52.3
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    55.3   2026-05-24   80% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                20% ▇▇
+                        weighted average                       = 54.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

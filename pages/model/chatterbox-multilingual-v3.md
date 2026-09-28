@@ -6,7 +6,7 @@
 
 Resemble AI · released 2026-04 · 0.5B params · mit
 
-**score 52.3** ±10.1 · #31 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±10.5 · #31 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1043.3    54.0   2026-09-24   58% ▇▇▇▇▇▇▇
-prior             pull toward the middle                    49.9                42% ▇▇▇▇▇
-                  weighted average                        = 52.3
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1043.3    53.2   2026-09-24   55% ▇▇▇▇▇▇▇
+prior             pull toward the middle                    49.9                45% ▇▇▇▇▇
+                  weighted average                        = 51.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior             pull toward the middle                    49.9                
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~3.2GB   52.3
+fp32 · nvidia only  ~3.2GB   51.7
 </pre>
 
 ```sh

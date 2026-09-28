@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.32B params · apache-2.0
 
-**score 15.3** ±3.9 · #101 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 15.3** ±4.1 · #104 of 112 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    12.7   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    24.9   2024-12-09    4% ▇
-prior                 pull toward the middle                   49.7                 6% ▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    12.4   2026-03-26   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    23.9   2024-12-09    4% ▇
+prior                 pull toward the middle                   49.6                 6% ▇
                       weighted average                       = 15.3
 </pre>
 

@@ -6,7 +6,7 @@
 
 Deepgram · released 2025-02 · proprietary
 
-**score 60.1** ±1.5 · #23 of 110 · from 14 benchmark results across 9 sources
+**score 60.8** ±1.6 · #20 of 112 · from 14 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.9%    61.2   2026-07-19   12% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  16.1%    56.3   2026-07-19    8% ▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.5%    55.0   2026-07-19    3% ▇
-<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>   8.9%    61.3   2026-08-07    7% ▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   7.1%    62.2   2026-08-07    7% ▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   6.6%    56.3   2026-08-07    6% ▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  90.9%    65.3   2026-05-15    8% ▇
-                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   8.2%    58.2   2026-05-15    7% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.5%    59.2   2026-07-16   11% ▇
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  10.1%    66.2   2026-09-24    8% ▇
-<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  15.3%    59.4   2025-12-12    7% ▇
-<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  46.6%    60.1   2026-06-27    6% ▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   7.5%    51.1   2026-07-05    4% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  14.1%    63.0   2026-08-15    4% ▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 60.1
+<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>   8.9%    62.0   2026-08-07    8% ▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   7.1%    62.9   2026-08-07    8% ▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   6.6%    56.9   2026-08-07    7% ▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.5%    57.5   2026-07-19    6% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.9%    60.5   2026-07-19    6% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  16.1%    54.0   2026-07-19    5% ▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  90.9%    67.2   2026-05-15    9% ▇
+                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   8.2%    58.2   2026-05-15    8% ▇
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  10.1%    68.1   2026-09-24   11% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.5%    59.8   2026-07-16   10% ▇
+<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  15.3%    60.2   2025-12-12    7% ▇
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  46.6%    61.0   2026-06-27    7% ▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   7.5%    51.9   2026-07-05    5% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  14.1%    64.5   2026-08-15    2% ▇
+prior                   pull toward the middle                   49.6                 1% ▇
+                        weighted average                       = 60.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · Russian STT benchmark by domain ([MIT](../../licenses/speech-stt-ru-mit.txt)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · Argmax OpenBench · open reproducible speech benchmarks ([MIT](../../licenses/speech-stt-openbench-mit.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
+<sub>Licences: Russian STT benchmark by domain ([MIT](../../licenses/speech-stt-ru-mit.txt)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Argmax OpenBench · open reproducible speech benchmarks ([MIT](../../licenses/speech-stt-openbench-mit.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
 
 <details><summary>Not counted (2)</summary>
 

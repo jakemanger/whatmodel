@@ -6,7 +6,7 @@
 
 Resemble AI · released 2025-05 · 0.5B params · mit
 
-**score 49.0** ±5.2 · #33 of 46 · from 4 benchmark results across 2 sources
+**score 49.4** ±5.2 · #35 of 46 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    44.6   2025-08-10   39% ▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    59.1   2025-08-10   14% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    49.9   2026-03-15   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    48.6   2026-03-15   15% ▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    44.0   2025-08-10   39% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    57.9   2025-08-10   15% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    54.3   2026-03-15   20% ▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    47.9   2026-03-15   15% ▇▇
 prior                   pull toward the middle                      49.9                11% ▇
-                        weighted average                          = 49.0
+                        weighted average                          = 49.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resem
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~2.9GB   49.0
-fp32 · mac only     ~2.9GB   49.0
+fp32 · nvidia only  ~2.9GB   49.4
+fp32 · mac only     ~2.9GB   49.4
 </pre>
 
 ```sh

@@ -6,28 +6,30 @@
 
 Nyra Health · released 2024-08 · 1.61B params · cc-by-nc-4.0
 
-**score 58.7** ±3.9 · #31 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±2.2 · #75 of 112 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    59.3   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 58.7
+source                 test                            score  implies  date        weight
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  79.3%    46.8   2025-11-18   38% ▇▇▇▇▇
+                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  66.2%    46.2   2025-11-18   35% ▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    59.3   2026-03-26   25% ▇▇▇
+prior                  pull toward the middle                   49.6                 2% ▇
+                       weighted average                       = 49.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp16     ~4.36GB   58.7
+fp16     ~4.36GB   49.7
 </pre>
 
 ```sh

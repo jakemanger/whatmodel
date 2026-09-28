@@ -9549,7 +9549,9 @@
       "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.en.json",
       "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json",
       "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.en.json",
-      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json"
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json"
     ],
     "exact": true,
     "name": "transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports",
@@ -10216,7 +10218,8 @@
       "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md",
       "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md",
       "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md",
-      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md"
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md"
     ],
     "exact": true,
     "name": "UltraEval-Audio (OpenBMB) · TTS replication results",
@@ -10483,5 +10486,59 @@
     "checked": "2026-09-28",
     "icon": "huggingface.co",
     "attribution": "ibm-granite. ibm-granite/granite-3.3-8b-instruct model card. Source: https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+  },
+  {
+    "id": "speech-stt-afrispeech200-report-ccby",
+    "match": [
+      "arxiv.org/html/2310.00274v1"
+    ],
+    "exact": true,
+    "name": "AfriSpeech-200 (arXiv:2310.00274v1) · zero-shot WER of open ASR models on African-accented English",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2310.00274v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-stt-afrispeech200-report-ccby.txt",
+    "attribution": "Tobi Olatunji, Tejumade Afonja, Aditya Yadavalli, Chris Chinenye Emezue, Sahib Singh, Bonaventure F. P. Dossou, Joanne Osuchukwu, Salomey Osei, Atnafu Lambebo Tonja, Naome Etori, Clinton Mbataku, 'AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and General Domain ASR', arXiv:2310.00274v1 (2023), CC BY 4.0. Table 4 test-set WER of open-source checkpoints transcribed by script. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2310.00274v1 links http://creativecommons.org/licenses/by/4.0/ and the HTML states 'License: CC BY 4.0' (the AfriSpeech-200 dataset itself is CC BY-NC-SA 4.0; only the paper's numbers are used). §4: the authors 'evaluate multiple SOTA pre-trained models' on the new benchmark; Table 4 lists each HF checkpoint with its own LibriSpeech and AfriSpeech runs, and 'Missing values indicate incomplete or failed experiments' — the authors' own runs. Commercial API rows are unversioned and not used."
+  },
+  {
+    "id": "speech-stt-liteasr-report-ccby",
+    "match": [
+      "arxiv.org/html/2502.20583v2"
+    ],
+    "exact": true,
+    "name": "LiteASR (arXiv:2502.20583v2) · ESB WER of Whisper and LiteASR-compressed encoders",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2502.20583v2",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-stt-liteasr-report-ccby.txt",
+    "attribution": "Keisuke Kamahori, Jungo Kasai, Noriyuki Kojima, Baris Kasikci, 'LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation', arXiv:2502.20583v2, CC BY 4.0. Table 1 ESB average WER transcribed by script, percent divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2502.20583v2 links http://creativecommons.org/licenses/by/4.0/ and the HTML states 'License: CC BY 4.0'. Table 1 reports the authors' own ESB evaluation of the original Whisper large-v3, large-v3-turbo and medium checkpoints and of their compressed variants (released as efficient-speech/lite-whisper-*); the values differ from leaderboard numbers, so they are not copied."
+  },
+  {
+    "id": "speech-zstts-eval-casanova-mit",
+    "match": [
+      "github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/XTTS_v2.0.2/metrics.csv",
+      "github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/YourTTS_original/metrics.csv",
+      "github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/Tortoise_num_autoregressive_samples_256_diffusion_iterations_200/metrics.csv",
+      "github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv"
+    ],
+    "exact": true,
+    "name": "ZS-TTS-Evaluation (Edresson Casanova) · zero-shot TTS metrics of XTTS, YourTTS, TorToiSe and StyleTTS 2",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-zstts-eval-casanova-mit.txt",
+    "attribution": "ZS-TTS-Evaluation, Copyright (c) 2024 Edresson Casanova, MIT (https://github.com/Edresson/ZS-TTS-Evaluation). English CER (divided by 100) and ECAPA2 SECS transcribed by script from the committed metrics.csv files. No endorsement.",
+    "icon": "github.com",
+    "quote": "Repository root LICENSE at a9086e4: 'MIT License / Copyright (c) 2024 Edresson Casanova / Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction'; the metrics.csv files are committed repository files produced by the repository's eval_TTS.py over each system's committed generated audio (README: 'This repository gathers our efforts to evaluate/compare the current Zero-shot Multi-speaker TTS (ZS-TTS) systems using objective metrics'). Only the numerical metrics are reused; no audio."
   }
 ]

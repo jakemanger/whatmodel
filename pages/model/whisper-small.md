@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.244B params · apache-2.0
 
-**score 45.8** ±3.4 · #85 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.4** ±2.1 · #80 of 112 · from 11 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">LibriSpeech test-clean WER</a>       3.3%    45.8   2026-09-15   92% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  12.3%    39.0   2024-12-09    3% ▇
-prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 45.8
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json">LibriSpeech test-clean WER</a>       3.3%    44.6   2026-09-15   27% ▇▇▇
+<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>  16.4%    48.5   2025-10-27   21% ▇▇▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   4.1%    55.1   2026-07-19   10% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  14.9%    56.0   2026-07-19    8% ▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  26.0%    41.9   2026-08-17   12% ▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  20.3%    42.6   2026-08-24    6% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  47.4%    45.2   2026-08-24    3% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  21.7%    43.4   2026-09-25    5% ▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  39.1%    41.6   2023-09-30    2% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  55.1%    28.2   2025-01-12    2% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  12.3%    38.1   2024-12-09    1% ▇
+prior                   pull toward the middle                   49.6                 2% ▇
+                        weighted average                       = 46.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version   needs  score
-fp16     ~1.1GB   45.8
-fp32     ~1.7GB   45.8
+fp16     ~1.1GB   46.4
+fp32     ~1.7GB   46.4
 </pre>
 
 ```sh

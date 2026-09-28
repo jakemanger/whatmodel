@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 46.2** ±5.5 · #39 of 46 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.7** ±5.9 · #36 of 46 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    43.2   2026-05-24   69% ▇▇▇▇▇▇▇▇
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    55.0   2026-09-25   18% ▇▇
-prior                   pull toward the middle                      49.9                12% ▇
-                        weighted average                          = 46.2
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    44.7   2026-05-24   58% ▇▇▇▇▇▇▇
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    56.0   2026-09-25   28% ▇▇▇
+prior                   pull toward the middle                      49.9                14% ▇▇
+                        weighted average                          = 48.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.98GB   46.2
+bf16 · nvidia only  ~6.98GB   48.7
 </pre>
 
 ```sh

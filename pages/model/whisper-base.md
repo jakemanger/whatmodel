@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.074B params · apache-2.0
 
-**score 37.1** ±3.4 · #93 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.9** ±2.8 · #98 of 112 · from 6 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.json">LibriSpeech test-clean WER</a>       5.1%    36.6   2026-09-15   92% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.3%    32.8   2024-12-09    3% ▇
-prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 37.1
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.json">LibriSpeech test-clean WER</a>       5.1%    34.1   2026-09-15   48% ▇▇▇▇▇▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  45.9%    32.8   2026-08-17   21% ▇▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  33.8%    27.7   2026-08-24   11% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  64.1%    32.2   2026-08-24    6% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  34.5%    28.4   2026-09-25    9% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.3%    31.9   2024-12-09    2% ▇
+prior                   pull toward the middle                   49.6                 3% ▇
+                        weighted average                       = 32.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version   needs  score
-fp16     ~0.7GB   37.1
-fp32     ~0.9GB   37.1
+fp16     ~0.7GB   32.9
+fp32     ~0.9GB   32.9
 </pre>
 
 ```sh

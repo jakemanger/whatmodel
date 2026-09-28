@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.07B params · cc-by-4.0
 
-**score 58.1** ±1.9 · #33 of 110 · from 5 benchmark results across 3 sources
+**score 59.2** ±1.8 · #29 of 112 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.8   2026-03-26   21% ▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.7%    54.1   2026-03-26   19% ▇▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.6%    58.1   2025-11-18   16% ▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  26.8%    57.8   2025-11-18   16% ▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>       1.5%    62.3   2026-09-15   27% ▇▇▇
-prior                   pull toward the middle                   49.7                 1% ▇
-                        weighted average                       = 58.1
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  26.8%    59.7   2025-11-18   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.6%    60.1   2025-11-18   24% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.9   2026-03-26   17% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.7%    54.3   2026-03-26   13% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>       1.5%    63.5   2026-09-15   19% ▇▇
+prior                   pull toward the middle                   49.6                 1% ▇
+                        weighted average                       = 59.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
 <details><summary>Not counted (9)</summary>
 
@@ -48,7 +48,7 @@ nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.64GB   58.1
+fp32 · nvidia only  ~5.64GB   59.2
 </pre>
 
 ```sh

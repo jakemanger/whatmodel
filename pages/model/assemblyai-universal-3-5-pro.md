@@ -6,7 +6,7 @@
 
 AssemblyAI · released 2026-07 · proprietary
 
-**score 64.2** ±3.1 · #5 of 110 · from 3 benchmark results across 1 source
+**score 64.8** ±3.9 · #5 of 112 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   1.9%    66.0   2026-07-19   50% ▇▇▇▇▇▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  10.4%    63.5   2026-07-19   33% ▇▇▇▇
-                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.6%    63.1   2026-07-19   13% ▇▇
-prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 64.2
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.6%    64.8   2026-07-19   35% ▇▇▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   1.9%    67.4   2026-07-19   33% ▇▇▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  10.4%    65.0   2026-07-19   25% ▇▇▇
+prior                   pull toward the middle                   49.6                 6% ▇
+                        weighted average                       = 64.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

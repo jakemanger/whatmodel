@@ -6,7 +6,7 @@
 
 Hugging Face (Distil-Whisper) · released 2025-03 · 0.76B params · mit
 
-**score 58.7** ±2.0 · #29 of 110 · from 5 benchmark results across 3 sources
+**score 60.4** ±1.8 · #23 of 112 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    56.4   2026-03-26   24% ▇▇▇
-                       <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.7%    56.4   2026-03-26   21% ▇▇▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.3%    60.3   2025-11-18   18% ▇▇
-                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.0%    63.1   2025-11-18   18% ▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench      <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.7%    59.0   2026-07-16   18% ▇▇
-prior                  pull toward the middle                   49.7                 2% ▇
-                       weighted average                       = 58.7
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.0%    64.3   2025-11-18   28% ▇▇▇
+                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.3%    62.1   2025-11-18   25% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    56.4   2026-03-26   18% ▇▇
+                       <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.7%    56.7   2026-03-26   14% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench      <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.7%    59.6   2026-07-16   13% ▇▇
+prior                  pull toward the middle                   49.6                 1% ▇
+                       weighted average                       = 60.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 <details><summary>Not counted (12)</summary>
 
@@ -51,7 +51,7 @@ distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~2.32GB   58.7
+fp16 · nvidia only  ~2.32GB   60.4
 </pre>
 
 ```sh

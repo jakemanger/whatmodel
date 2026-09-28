@@ -6,7 +6,7 @@
 
 Cartesia · proprietary
 
-**score 62.7** ±1.7 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
+**score 62.5** ±1.7 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.77 / 5    61.4   2026-06-25   17% ▇▇
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.77 / 5    61.5   2026-06-25   17% ▇▇
                         <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.6%    65.6   2026-06-25   11% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      3.6%    65.9   2026-06-25    9% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.18 / 5    60.6   2026-06-25    8% ▇
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1198.8    63.3   2026-09-25   33% ▇▇▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.37 / 5    62.3   2026-07-16   12% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.53 / 5    60.8   2026-07-16    9% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.53 / 5    54.7   2026-07-16    1% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      3.6%    65.9   2026-06-25   10% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.18 / 5    60.8   2026-06-25    9% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1198.8    62.7   2026-09-25   33% ▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.37 / 5    61.7   2026-07-16   11% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.53 / 5    60.3   2026-07-16    8% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.53 / 5    54.9   2026-07-16    1% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 62.7
+                        weighted average                          = 62.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

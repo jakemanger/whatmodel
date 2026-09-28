@@ -6,7 +6,7 @@
 
 Hugging Face (Parler-TTS) · released 2024-08 · 2.33B params · apache-2.0
 
-**score 21.6** ±2.7 · #45 of 46 · from 4 benchmark results across 3 sources
+**score 23.1** ±2.6 · #45 of 46 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.93 / 5    22.5   2025-05-11   77% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.39 / 5    13.7   2025-05-11   11% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     79.5%     9.0   2025-05-15    8% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.9%    56.5   2025-04-25    1% ▇
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.93 / 5    23.5   2025-05-11   73% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.39 / 5    14.2   2025-05-11    9% ▇
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     45.7%    28.0   2025-06-19    8% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     79.5%     9.5   2025-05-15    7% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.9%    57.0   2025-04-25    1% ▇
 prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 21.6
+                        weighted average                          = 23.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
+<sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~9.33GB   21.6
+fp32     ~9.33GB   23.1
 </pre>
 
 ```sh

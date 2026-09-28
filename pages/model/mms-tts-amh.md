@@ -6,7 +6,7 @@
 
 Meta
 
-**score 50.0** ±15.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±15.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    81.6   2026-08-12    0% ▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    81.3   2026-08-12    0% ▇
 prior                   pull toward the middle                   49.9               100% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 50.0
 </pre>

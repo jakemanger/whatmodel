@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.039B params · apache-2.0
 
-**score 34.8** ±2.5 · #96 of 110 · from 4 benchmark results across 4 sources
+**score 33.9** ±2.5 · #97 of 112 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.en.json">LibriSpeech test-clean WER</a>       5.8%    33.9   2026-09-15   47% ▇▇▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  12.8%    34.7   2026-03-26   37% ▇▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  12.7%    36.0   2026-03-19   12% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.7%    30.5   2024-12-09    2% ▇
-prior                   pull toward the middle                   49.7                 2% ▇
-                        weighted average                       = 34.8
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.en.json">LibriSpeech test-clean WER</a>       5.8%    31.0   2026-09-15   38% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  12.8%    34.6   2026-03-26   33% ▇▇▇▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  22.4%    37.2   2026-03-19   15% ▇▇
+                        <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  12.7%    34.8   2026-03-19   10% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.7%    29.5   2024-12-09    2% ▇
+prior                   pull toward the middle                   49.6                 2% ▇
+                        weighted average                       = 33.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +31,8 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp16     ~0.59GB   34.8
-fp32     ~0.69GB   34.8
+fp16     ~0.59GB   33.9
+fp32     ~0.69GB   33.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Sesame · released 2025-03
 
-**score 32.9** ±4.3 · #44 of 46 · from 8 benchmark results across 4 sources
+**score 32.2** ±4.4 · #44 of 46 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     67.3%    43.7   2025-03-23   12% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     65.2%    35.0   2025-03-23    9% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      8.5%    24.4   2025-03-23    8% ▇
-                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      1.9%    27.0   2025-03-23    8% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     13.4%    30.9   2025-08-10   26% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       32.3%    13.9   2025-08-10   10% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.38 / 5    30.5   2025-05-29   14% ▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.44 / 5    49.8   2026-07-16    6% ▇
-prior                   pull toward the middle                      49.9                 7% ▇
-                        weighted average                          = 32.9
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     13.4%    30.7   2025-08-10   28% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       32.3%    14.6   2025-08-10   11% ▇
+<a name="speech-balacoon-baselines-apache"></a>balacoon speech_gen_b…  <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>     67.3%    43.3   2025-03-23   11% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>     65.2%    33.9   2025-03-23    9% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml">balacoon zero-shot TTS · VCTK…</a>      1.9%    24.3   2025-03-23    6% ▇
+                        <a href="https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml">balacoon zero-shot TTS · DAPS…</a>      8.5%    21.2   2025-03-23    6% ▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.38 / 5    30.3   2025-05-29   17% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.44 / 5    49.9   2026-07-16    6% ▇
+prior                   pull toward the middle                      49.9                 8% ▇
+                        weighted average                          = 32.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
+<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · balacoon speech\_gen\_baselines · zero-shot TTS metrics ([Apache-2.0](../../licenses/speech-balacoon-baselines-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 

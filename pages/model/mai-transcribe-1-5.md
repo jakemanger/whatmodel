@@ -6,7 +6,7 @@
 
 Microsoft AI · closed weights
 
-**score 62.1** ±6.9 · #13 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.8** ±6.9 · #11 of 112 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   3.6%    65.0   2026-07-05   81% ▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                19% ▇▇
-                      weighted average                       = 62.1
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   3.6%    65.8   2026-07-05   82% ▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.6                18% ▇▇
+                      weighted average                       = 62.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

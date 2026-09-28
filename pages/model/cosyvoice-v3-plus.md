@@ -6,7 +6,7 @@
 
 Alibaba Cloud · closed weights
 
-**score 57.4** ±3.8 · #26 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.4** ±3.8 · #27 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

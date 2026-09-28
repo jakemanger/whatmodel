@@ -6,7 +6,7 @@
 
 MGM-Omni (CUHK) · released 2025-09 · 2.15B params · apache-2.0
 
-**score 49.1** ±6.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.9** ±2.6 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  54.0%    48.9   2026-05-24   85% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                15% ▇▇
-                        weighted average                       = 49.1
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-en · Whisper la…</a>   2.5%    56.4   2025-11-27   49% ▇▇▇▇▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/MGM-Omni.md">Seed-TTS test-zh · Paraformer…</a>   1.3%    57.1   2025-11-27   37% ▇▇▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  54.0%    51.0   2026-05-24   11% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 55.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
+<sub>Licences: UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
 ## How to run it
 

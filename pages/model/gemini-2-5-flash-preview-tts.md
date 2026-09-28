@@ -6,7 +6,7 @@
 
 Google · closed weights
 
-**score 74.9** ±2.6 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
+**score 72.9** ±2.7 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>     85.4%    76.8   2025-06-19   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     88.7%    79.3   2025-06-19   24% ▇▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.66 / 5    68.4   2026-07-16   13% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.64 / 5    70.4   2026-07-16   13% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.44 / 5    68.6   2026-07-16    6% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     75.6%    86.1   2025-08-10    9% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       10.4%    70.2   2025-08-10    3% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.64 / 5    69.4   2026-07-16   17% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.66 / 5    67.5   2026-07-16   17% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.44 / 5    67.5   2026-07-16    8% ▇
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>     85.4%    75.1   2025-06-19   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     88.7%    83.3   2025-06-19    9% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     75.6%    84.4   2025-08-10   10% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       10.4%    68.6   2025-08-10    4% ▇
 prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 74.9
+                        weighted average                          = 72.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
+<sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
 ## How to run it
 

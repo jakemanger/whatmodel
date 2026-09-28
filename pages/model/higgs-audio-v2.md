@@ -6,7 +6,7 @@
 
 Boson AI
 
-**score 52.8** ±2.8 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 52.7** ±3.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>  49.9%    52.2   2026-06-04   30% ▇▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>  21.2%    55.8   2026-06-04   18% ▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   2.1%    53.9   2026-06-04   17% ▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  56.0%    50.8   2026-05-24   18% ▇▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  38.9%    57.0   2025-08-10   11% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER …</a>  19.4%    39.3   2025-08-10    4% ▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 52.8
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   2.1%    55.0   2026-06-04   33% ▇▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>  49.9%    48.5   2026-06-04   16% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>  21.2%    53.7   2026-06-04   15% ▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  38.9%    56.1   2025-08-10   13% ▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER …</a>  19.4%    39.0   2025-08-10    5% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  56.0%    53.1   2026-05-24   15% ▇▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 52.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
+<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
 ## How to run it
 

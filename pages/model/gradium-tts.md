@@ -6,7 +6,7 @@
 
 Gradium · released 2025-12 · proprietary
 
-**score 53.7** ±3.0 · #30 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.3** ±2.9 · #30 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1089.8    53.9   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 53.7
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1089.8    53.4   2026-09-25   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 53.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

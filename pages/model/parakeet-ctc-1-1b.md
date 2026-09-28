@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.06B params · cc-by-4.0
 
-**score 56.8** ±2.3 · #41 of 110 · from 3 benchmark results across 2 sources
+**score 57.0** ±2.5 · #38 of 112 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.4   2026-03-26   31% ▇▇▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.3%    57.4   2026-03-26   27% ▇▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">LibriSpeech test-clean WER</a>       1.8%    57.7   2026-09-15   40% ▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 2% ▇
-                        weighted average                       = 56.8
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.5   2026-03-26   33% ▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.3%    57.8   2026-03-26   26% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json">LibriSpeech test-clean WER</a>       1.8%    58.3   2026-09-15   38% ▇▇▇▇▇
+prior                   pull toward the middle                   49.6                 2% ▇
+                        weighted average                       = 57.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.59GB   56.8
+fp32 · nvidia only  ~5.59GB   57.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 MyShell · released 2024-01 · mit
 
-**score 50.1** ±13.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±14.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  87.1%    50.7   2025-04-25   21% ▇▇▇
-prior                   pull toward the middle                   49.9                79% ▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 50.1
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  87.1%    51.2   2025-04-25   21% ▇▇
+prior                   pull toward the middle                   49.9                79% ▇▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 50.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

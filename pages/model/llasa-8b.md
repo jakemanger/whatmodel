@@ -6,7 +6,7 @@
 
 HKUST Audio · released 2025-01 · 8.57B params · cc-by-nc-4.0
 
-**score 43.1** ±2.5 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
+**score 45.2** ±2.3 · comparison only: no current run option verified · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  67.1%    43.4   2025-07-20   20% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   4.2%    38.6   2025-07-20   17% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  59.4%    44.1   2025-07-20   16% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   4.0%    42.1   2025-07-20   12% ▇
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>   3.6%    45.7   2026-06-15   19% ▇▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>  58.1%    43.3   2026-06-15   15% ▇▇
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   4.2%    41.1   2025-07-20   19% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  67.1%    45.9   2025-07-20   19% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  59.4%    46.4   2025-07-20   16% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   4.0%    44.1   2025-07-20   13% ▇▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>   3.6%    47.9   2026-06-15   17% ▇▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>  58.1%    45.6   2026-06-15   14% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 43.1
+                        weighted average                       = 45.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 OuteAI · released 2024-11 · 0.5B params · cc-by-nc-4.0
 
-**score 36.1** ±5.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.1** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    34.2   2025-04-09   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    28.5   2025-04-09   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 36.1
+                        weighted average                       = 31.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
