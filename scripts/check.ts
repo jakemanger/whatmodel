@@ -124,6 +124,7 @@ for (const cat of CATEGORY_IDS) {
     // Leave-one-out: hide each result, refit, predict it back.
     const errs = { acc: [] as number[], err: [] as number[], elo: [] as number[] };
     const zs: [number, number][] = [];
+    const zsWeighted: [number, number][] = []; // without series whose fitted a sits at the 0.05 floor
     for (let i = 0; i < cells.length; i++) {
       const c = cells[i];
       const b = bench.get(c.bench)!;
@@ -133,6 +134,7 @@ for (const cat of CATEGORY_IDS) {
       if (yhat === undefined) continue;
       const p = f.params.get(c.key)!;
       zs.push([(c.y - p.d) / p.a, (yhat - p.d) / p.a]);
+      if (p.a > 0.05 + 1e-9) zsWeighted.push(zs[zs.length - 1]);
       errs[b.kind].push(Math.abs(fromLatent(yhat, b) - fromLatent(c.y, b)) * (b.kind === "elo" ? 1 : 100));
     }
 
@@ -140,6 +142,9 @@ for (const cat of CATEGORY_IDS) {
     for (const [k, p] of [...f.params].sort((x, y) => y[1].a - x[1].a))
       console.log(`  ${k.padEnd(34)} n=${String(p.n).padStart(3)}  a=${p.a.toFixed(2).padStart(5)}  noise=${p.sigma.toFixed(2)}`);
     if (zs.length > 2) console.log(`  leave-one-out: r = ${corr(zs).toFixed(3)} (n=${zs.length})`);
+    // Dividing by a floor-level a inflates those residuals ~20x, so one such series can swamp r.
+    if (zsWeighted.length > 2 && zsWeighted.length < zs.length)
+      console.log(`  leave-one-out without floor-weight series (a = 0.05): r = ${corr(zsWeighted).toFixed(3)} (n=${zsWeighted.length})`);
     for (const [kind, values] of Object.entries(errs)) {
       if (!values.length) continue;
       values.sort((a, b) => a - b);
