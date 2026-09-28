@@ -7,6 +7,29 @@ the AI models you can run on your hardware: LLMs, image, video, text-to-speech a
 curl "whatmodel.sh/?ram=32&gpu=apple"
 ```
 
+Fill in your machine automatically:
+
+```sh
+curl "whatmodel.sh/?mac=$(sysctl -n hw.memsize)"                                                   # mac
+curl -G whatmodel.sh/ -d max=0 --data-urlencode "mac=$(sysctl -n hw.memsize machdep.cpu.brand_string)"   # mac, exact chip, local only
+curl "whatmodel.sh/?ram=$(awk '/MemT/{print $2}' /proc/meminfo)&vram=$(nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits 2>/dev/null)"   # linux
+curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&vram=$(nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits 2>$null)"   # windows
+```
+
+| Parameter | Meaning |
+|---|---|
+| `ram`, `vram` | GB, or raw bytes / kB / MiB as the OS reports them |
+| `gpu` | `apple`, `card` (NVIDIA, AMD or Intel graphics card) or `none` |
+| `mac` | bytes, optionally followed by a newline and the chip name; implies Apple Silicon |
+| `nv` | `nvidia-smi --query-gpu=name,memory.total --format=csv,noheader` output |
+| `hw` | exact chip or card id from `data/hardware.json` |
+| `max` | highest price in the category's unit (LLMs: $ per 1M tokens, blended 3:1 in:out); `0` = local only |
+| `sort`, `dir` | `score`, `where`, `speed`, `ram` or `context`; `asc` or `desc` |
+| `set` | connected comparison set ID, listed in the page and JSON response; scores across separate sets are not comparable |
+| `all=1`, `n=40`, `format=json`, `color=1` | show models that don't fit, row limit, JSON, ANSI colour |
+
+Other categories live at `/image`, `/video`, `/tts` and `/stt`.
+
 The same leaderboard runs from this repo:
 
 ```sh
