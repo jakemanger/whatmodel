@@ -1,0 +1,26 @@
+name: pages
+# Keeps README.md and pages/ in step with the data after every merge, so pull requests
+# (including bench submissions) only need to change data/.
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+concurrency: pages
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run pages
+      - name: Commit the regenerated pages
+        run: |
+          git add -A README.md pages
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Regenerate pages"
+          git push

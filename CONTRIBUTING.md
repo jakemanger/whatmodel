@@ -22,7 +22,9 @@ number.
 3. See what changed on the leaderboard: `npm run board -- "ram=32&gpu=apple"`.
 4. Open a pull request. The template asks for a source link per number.
 
-Every pull request is reviewed before it's merged. CI runs the same checks.
+Every pull request is reviewed before it's merged. CI runs the same checks. You don't need to update
+`README.md` or `pages/`: they're regenerated from the data after each merge (`npm run pages` if you want to
+preview them).
 
 ## Which sources are allowed
 
