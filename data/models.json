@@ -16353,5 +16353,2912 @@
       "https://docs.cloud.google.com/speech-to-text/v2/docs/transcription-model"
     ],
     "identity_note": "Original Google Cloud Speech-to-Text model 'chirp' (USM-based first generation; leaderboard entry google/chirp). Distinct from chirp_2 and chirp_3. The current STT v2 transcription-model list (observed 2026-09-28) names only chirp_3, chirp_2 and telephony, so api is null."
+  },
+  {
+    "id": "gpt-4-0314",
+    "name": "GPT-4 (0314)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2023-03",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-03-14). Dated API snapshot gpt-4-0314. OpenAI deprecations page: shut down 2026-03-26.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4-0314"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4-0613",
+    "name": "GPT-4 (0613)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2023-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 8.192,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4",
+    "context_note": "OpenAI model page for gpt-4 (default snapshot gpt-4-0613): 8,192 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4",
+      "provider": "OpenAI",
+      "price_in": 30,
+      "price_out": 60,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-4",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-4' whose default snapshot is gpt-4-0613: input $30, output $60; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-06-13). Dated API snapshot gpt-4-0613 (default snapshot of 'gpt-4'). OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "gpt-4-0613"
+      }
+    ]
+  },
+  {
+    "id": "gpt-3-5-turbo-1106",
+    "name": "GPT-3.5 Turbo (1106)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-11-06). Dated API snapshot gpt-3.5-turbo-1106. OpenAI deprecations page: shutdown date 2026-09-28, so treated as retired.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-3.5-turbo-1106"
+      }
+    ]
+  },
+  {
+    "id": "gpt-3-5-turbo-0125",
+    "name": "GPT-3.5 Turbo (0125)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 16.385,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+    "context_note": "OpenAI model page for gpt-3.5-turbo (default snapshot gpt-3.5-turbo-0125): 16,385 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+      "provider": "OpenAI",
+      "price_in": 0.5,
+      "price_out": 1.5,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-3.5-turbo' whose default snapshot is gpt-3.5-turbo-0125: input $0.5, output $1.5; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-01-25). Dated API snapshot gpt-3.5-turbo-0125 (default snapshot of 'gpt-3.5-turbo'). OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "gpt-3.5-turbo-0125"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4-1106-preview",
+    "name": "GPT-4 Turbo Preview (1106)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-11-06). Dated API snapshot gpt-4-1106-preview. OpenAI deprecations page lists it as shut down on 2026-03-26 (it also appears in the 2026-04-22 table for October 23, 2026; treated as retired).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4-1106-preview"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4-0125-preview",
+    "name": "GPT-4 Turbo Preview (0125)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-01-25). Dated API snapshot gpt-4-0125-preview. OpenAI deprecations page: shut down 2026-03-26. Epoch model_metadata groups it under 'GPT-4 Turbo (Nov 2023)'; kept distinct from gpt-4-1106-preview because the snapshot differs.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4-0125-preview"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4-turbo-2024-04-09",
+    "name": "GPT-4 Turbo (2024-04-09)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 128,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4-turbo",
+    "context_note": "OpenAI model page for gpt-4-turbo (default snapshot gpt-4-turbo-2024-04-09): 128,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4-turbo",
+      "provider": "OpenAI",
+      "price_in": 10,
+      "price_out": 30,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-4-turbo",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-4-turbo' whose default snapshot is gpt-4-turbo-2024-04-09: input $10, output $30; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-04-09). Dated API snapshot gpt-4-turbo-2024-04-09. OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4-turbo",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "gpt-4-turbo-2024-04-09"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-2024-05-13",
+    "name": "GPT-4o (2024-05-13)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "provider": "OpenAI"
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-05-13). Dated API snapshot gpt-4o-2024-05-13 (not the default gpt-4o snapshot; the model page price is not stated per snapshot, so no price). OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4o",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4o-2024-05-13"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-2024-08-06",
+    "name": "GPT-4o (2024-08-06)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-08",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 128,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4o",
+    "context_note": "OpenAI model page for gpt-4o (default snapshot gpt-4o-2024-08-06): 128,000 context window, 16,384 max output. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "provider": "OpenAI",
+      "price_in": 2.5,
+      "price_out": 10,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-4o' whose default snapshot is gpt-4o-2024-08-06: input $2.5, output $10; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-08-06). Dated API snapshot gpt-4o-2024-08-06 (default snapshot of 'gpt-4o'). No shutdown listed on the deprecations page.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4o"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "gpt-4o-2024-08-06"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-2024-11-20",
+    "name": "GPT-4o (2024-11-20)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o",
+      "provider": "OpenAI"
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-11-20). Dated API snapshot gpt-4o-2024-11-20, listed among gpt-4o snapshots; not the default snapshot, so no price is attached.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4o"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4o-2024-11-20"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4o-mini-2024-07-18",
+    "name": "GPT-4o mini (2024-07-18)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-07",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 128,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+    "context_note": "OpenAI model page for gpt-4o-mini (default snapshot gpt-4o-mini-2024-07-18): 128,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+      "provider": "OpenAI",
+      "price_in": 0.15,
+      "price_out": 0.6,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-4o-mini' whose default snapshot is gpt-4o-mini-2024-07-18: input $0.15, output $0.6; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-07-18). Dated API snapshot gpt-4o-mini-2024-07-18 (the only gpt-4o-mini snapshot).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4o-mini"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "gpt-4o-mini-2024-07-18"
+      }
+    ]
+  },
+  {
+    "id": "o1-preview",
+    "name": "o1-preview",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-09-12). Epoch label o1-preview-2024-09-12 (the only o1-preview snapshot). OpenAI deprecations page: o1-preview removed 2025-07-28.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "o1-preview-2024-09-12"
+      }
+    ]
+  },
+  {
+    "id": "o1-mini",
+    "name": "o1-mini",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-09-12). Epoch label o1-mini-2024-09-12 (the only o1-mini snapshot). OpenAI deprecations page: o1-mini removed 2025-10-27. Reasoning effort is an API setting of the same checkpoint (recorded per result).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "o1-mini-2024-09-12_high"
+      }
+    ]
+  },
+  {
+    "id": "o1-2024-12-17",
+    "name": "o1 (2024-12-17)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 200,
+    "context_source": "https://developers.openai.com/api/docs/models/o1",
+    "context_note": "OpenAI model page for o1 (default snapshot o1-2024-12-17): 200,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/o1",
+      "provider": "OpenAI",
+      "price_in": 15,
+      "price_out": 60,
+      "price_source": "https://developers.openai.com/api/docs/models/o1",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'o1' whose default snapshot is o1-2024-12-17: input $15, output $60; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-12-17). Dated API snapshot o1-2024-12-17; distinct from o1-preview. Reasoning effort recorded per result. OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/o1",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "o1-2024-12-17_high"
+      }
+    ]
+  },
+  {
+    "id": "o3-mini",
+    "name": "o3-mini",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 200,
+    "context_source": "https://developers.openai.com/api/docs/models/o3-mini",
+    "context_note": "OpenAI model page for o3-mini (default snapshot o3-mini-2025-01-31): 200,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/o3-mini",
+      "provider": "OpenAI",
+      "price_in": 1.1,
+      "price_out": 4.4,
+      "price_source": "https://developers.openai.com/api/docs/models/o3-mini",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'o3-mini' whose default snapshot is o3-mini-2025-01-31: input $1.1, output $4.4; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-01-31). Epoch label o3-mini-2025-01-31 (the only o3-mini snapshot). Reasoning effort recorded per result. OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/o3-mini",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "o3-mini-2025-01-31_high"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4-5-preview-2025-02-27",
+    "name": "GPT-4.5 Preview",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-02-27). Dated API snapshot gpt-4.5-preview-2025-02-27. OpenAI deprecations page: gpt-4.5-preview removed 2025-07-14.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4.5-preview-2025-02-27"
+      }
+    ]
+  },
+  {
+    "id": "gpt-4-1-nano-2025-04-14",
+    "name": "GPT-4.1 nano",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 1047.576,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+    "context_note": "OpenAI model page for gpt-4.1-nano (default snapshot gpt-4.1-nano-2025-04-14): 1,047,576 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+      "provider": "OpenAI",
+      "price_in": 0.1,
+      "price_out": 0.4,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-4.1-nano' whose default snapshot is gpt-4.1-nano-2025-04-14: input $0.1, output $0.4; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-14). Dated API snapshot gpt-4.1-nano-2025-04-14 (the only snapshot); sibling of gpt-4-1 / gpt-4-1-mini. OpenAI's deprecations page schedules its shutdown for October 23, 2026 (announced 2026-04-22).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gpt-4.1-nano-2025-04-14"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5-pro",
+    "name": "GPT-5 Pro",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-10",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 400,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+    "context_note": "OpenAI model page for gpt-5-pro (default snapshot gpt-5-pro-2025-10-06): 400,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+      "provider": "OpenAI",
+      "price_in": 15,
+      "price_out": 120,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-5-pro' whose default snapshot is gpt-5-pro-2025-10-06: input $15, output $120; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-10-07). Epoch label gpt-5-pro-2025-10-06 (default and only snapshot). Distinct from gpt-5 and later Pro models. OpenAI deprecations page schedules shutdown for December 11, 2026.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-5-pro",
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+        "reported_label": "gpt-5-pro-2025-10-06_high"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5-2-pro",
+    "name": "GPT-5.2 Pro",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2025-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 400,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+    "context_note": "OpenAI model page for gpt-5.2-pro (default snapshot gpt-5.2-pro-2025-12-11): 400,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+      "provider": "OpenAI",
+      "price_in": 21,
+      "price_out": 168,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-5.2-pro' whose default snapshot is gpt-5.2-pro-2025-12-11: input $21, output $168; cached-input, Batch and other tiers excluded. Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-12-11). Epoch label gpt-5.2-pro-2025-12-11 (default and only snapshot). Distinct from gpt-5-2.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-5.2-pro"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+        "reported_label": "gpt-5.2-pro-2025-12-11_xhigh"
+      }
+    ]
+  },
+  {
+    "id": "gpt-5-4-pro",
+    "name": "GPT-5.4 Pro",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2026-03",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 1050,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+    "context_note": "OpenAI model page for gpt-5.4-pro (default snapshot gpt-5.4-pro-2026-03-05): 1,050,000 context window. Observed 2026-09-28.",
+    "api": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+      "provider": "OpenAI",
+      "price_in": 30,
+      "price_out": 180,
+      "price_source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+      "price_note": "USD per 1M tokens, OpenAI API standard processing, model page 'gpt-5.4-pro' whose default snapshot is gpt-5.4-pro-2026-03-05: input $30, output $180; cached-input, Batch and other tiers excluded. Prompts over 272K input tokens are billed at 2x input and 1.5x output (excluded). Currency: USD. OpenAI official model page, observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2026-03-05). Epoch label gpt-5.4-pro-2026-03-05 (default and only snapshot). Distinct from gpt-5-4.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/models/gpt-5.4-pro"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "gpt-5.4-pro-2026-03-05_xhigh"
+      }
+    ]
+  },
+  {
+    "id": "claude-2-0",
+    "name": "Claude 2.0",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-07-11). API model claude-2.0. Anthropic model deprecations page: retired July 21, 2025.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-2.0"
+      }
+    ]
+  },
+  {
+    "id": "claude-2-1",
+    "name": "Claude 2.1",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-11-21). API model claude-2.1. Anthropic model deprecations page: retired July 21, 2025.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-2.1"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-opus-20240229",
+    "name": "Claude 3 Opus",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-02-29). Dated API snapshot claude-3-opus-20240229. Anthropic model deprecations page: retired January 5, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "claude-3-opus-20240229"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-sonnet-20240229",
+    "name": "Claude 3 Sonnet",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-02-29). Dated API snapshot claude-3-sonnet-20240229. Anthropic model deprecations page: retired July 21, 2025.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-3-sonnet-20240229"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-haiku-20240307",
+    "name": "Claude 3 Haiku",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2024-03",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-03-07). Dated API snapshot claude-3-haiku-20240307. Anthropic model deprecations page: retired April 20, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-3-haiku-20240307"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-5-sonnet-20240620",
+    "name": "Claude 3.5 Sonnet (2024-06-20)",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-06-20). Dated API snapshot claude-3-5-sonnet-20240620; distinct from the 20241022 snapshot. Anthropic model deprecations page: retired October 28, 2025.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-3-5-sonnet-20240620"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-5-sonnet-20241022",
+    "name": "Claude 3.5 Sonnet (2024-10-22)",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2024-10",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-10-22). Dated API snapshot claude-3-5-sonnet-20241022; distinct from the 20240620 snapshot. Anthropic model deprecations page: retired October 28, 2025.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-3-5-sonnet-20241022"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-5-haiku-20241022",
+    "name": "Claude 3.5 Haiku",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2024-10",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-10-22). Dated API snapshot claude-3-5-haiku-20241022. Anthropic model deprecations page: retired February 19, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-3-5-haiku-20241022"
+      }
+    ]
+  },
+  {
+    "id": "claude-3-7-sonnet-20250219",
+    "name": "Claude 3.7 Sonnet",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-02-24). Dated API snapshot claude-3-7-sonnet-20250219. Extended-thinking budgets (Epoch suffixes such as _64K) are API settings of the same checkpoint and are recorded per result. Anthropic model deprecations page: retired February 19, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-3-7-sonnet-20250219_64K"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+        "reported_label": "claude-3-7-sonnet-20250219"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-20250514",
+    "name": "Claude Opus 4",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2025-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-05-22). Dated API snapshot claude-opus-4-20250514; distinct from Opus 4.1/4.5. Thinking budgets recorded per result. Anthropic model deprecations page: retired June 15, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-opus-4-20250514_16K"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+        "reported_label": "claude-opus-4-20250514"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+        "reported_label": "claude-opus-4-20250514_27K"
+      }
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-20250514",
+    "name": "Claude Sonnet 4",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2025-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-05-22). Dated API snapshot claude-sonnet-4-20250514; distinct from Sonnet 4.5/4.6. Thinking budgets recorded per result. Anthropic model deprecations page: retired June 15, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-sonnet-4-20250514_59K"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+        "reported_label": "claude-sonnet-4-20250514"
+      }
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-20250805",
+    "name": "Claude Opus 4.1",
+    "provider": "Anthropic",
+    "category": "llm",
+    "released": "2025-08",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-08-05). Dated API snapshot claude-opus-4-1-20250805. Thinking budgets recorded per result. Anthropic model deprecations page: retired August 5, 2026.",
+    "identity_sources": [
+      "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "claude-opus-4-1-20250805"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+        "reported_label": "claude-opus-4-1-20250805_32K"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "claude-opus-4-1-20250805_27K"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+        "reported_label": "claude-opus-4-1-20250805_24K"
+      }
+    ]
+  },
+  {
+    "id": "gemini-1-0-pro-001",
+    "name": "Gemini 1.0 Pro (001)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2023-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-12-13). API model gemini-1.0-pro-001. Not listed on the current Gemini API models or deprecations pages (observed 2026-09-28).",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-1.0-pro-001"
+      }
+    ]
+  },
+  {
+    "id": "gemini-1-5-pro-001",
+    "name": "Gemini 1.5 Pro (001)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-05-14). Stable API version gemini-1.5-pro-001 (May 2024); distinct from -002. Gemini API changelog, September 29, 2025: Gemini 1.5 models shut down.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-1.5-pro-001"
+      }
+    ]
+  },
+  {
+    "id": "gemini-1-5-pro-002",
+    "name": "Gemini 1.5 Pro (002)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-09-24). Stable API version gemini-1.5-pro-002 (September 2024); distinct from -001. Gemini API changelog, September 29, 2025: Gemini 1.5 models shut down.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-1.5-pro-002"
+      }
+    ]
+  },
+  {
+    "id": "gemini-1-5-flash-001",
+    "name": "Gemini 1.5 Flash (001)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-05-23). Stable API version gemini-1.5-flash-001 (May 2024); distinct from -002. Gemini API changelog, September 29, 2025: Gemini 1.5 models shut down.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-1.5-flash-001"
+      }
+    ]
+  },
+  {
+    "id": "gemini-1-5-flash-002",
+    "name": "Gemini 1.5 Flash (002)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-09-24). Stable API version gemini-1.5-flash-002 (September 2024); distinct from -001. Gemini API changelog, September 29, 2025: Gemini 1.5 models shut down.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-1.5-flash-002"
+      }
+    ]
+  },
+  {
+    "id": "gemini-1-5-flash-8b-001",
+    "name": "Gemini 1.5 Flash-8B (001)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-10",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-10-03). Stable API version gemini-1.5-flash-8b-001. Gemini API changelog, September 29, 2025: gemini-1.5-flash-8b shut down.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-1.5-flash-8b-001"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-0-flash-thinking-exp-01-21",
+    "name": "Gemini 2.0 Flash Thinking Experimental (01-21)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-01-21). Experimental API model gemini-2.0-flash-thinking-exp-01-21; distinct from gemini-2.0-flash-001. Listed as shut down in the Gemini API changelog.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-2.0-flash-thinking-exp-01-21"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-0-flash-001",
+    "name": "Gemini 2.0 Flash (001)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-02-05). Stable API version gemini-2.0-flash-001. Gemini API deprecations page: shutdown date June 1, 2026.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-2.0-flash-001"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-0-pro-exp-02-05",
+    "name": "Gemini 2.0 Pro Experimental (02-05)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-02-05). Experimental API model gemini-2.0-pro-exp-02-05. Listed as shut down in the Gemini API changelog.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-2.0-pro-exp-02-05"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-5-pro-exp-03-25",
+    "name": "Gemini 2.5 Pro Experimental (03-25)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-03",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-03-25). Experimental API model gemini-2.5-pro-exp-03-25; kept separate from gemini-2.5-pro-preview-03-25 (different API id; no source in hand states they are the same checkpoint) and from GA gemini-2-5-pro. Gemini API changelog: shut down.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-2.5-pro-exp-03-25"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-5-pro-preview-05-06",
+    "name": "Gemini 2.5 Pro Preview (05-06)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-05-06). Preview API model gemini-2.5-pro-preview-05-06. Gemini API deprecations page: shutdown date December 2, 2025.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-2.5-pro-preview-05-06"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-5-pro-preview-06-05",
+    "name": "Gemini 2.5 Pro Preview (06-05)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-06-05). Preview API model gemini-2.5-pro-preview-06-05. Gemini API deprecations page: shutdown date December 2, 2025.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemini-2.5-pro-preview-06-05"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-5-flash-preview-04-17",
+    "name": "Gemini 2.5 Flash Preview (04-17)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-17). Preview API model gemini-2.5-flash-preview-04-17; distinct from GA gemini-2-5-flash. Gemini API changelog announced its deprecation for July 15, 2025; not listed as available.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+        "reported_label": "gemini-2.5-flash-preview-04-17"
+      }
+    ]
+  },
+  {
+    "id": "gemini-2-5-flash-preview-05-20",
+    "name": "Gemini 2.5 Flash Preview (05-20)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2025-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-05-20). Preview API model gemini-2.5-flash-preview-05-20; distinct from GA gemini-2-5-flash. Gemini API deprecations page: shutdown date November 18, 2025.",
+    "identity_sources": [
+      "https://ai.google.dev/gemini-api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+        "reported_label": "gemini-2.5-flash-preview-05-20"
+      }
+    ]
+  },
+  {
+    "id": "gemma-2-9b",
+    "name": "Gemma 2 9B IT",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 9.24,
+    "active_b": 9.24,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 6.04,
+          "cmd": "ollama run gemma2:9b",
+          "source": "https://ollama.com/library/gemma2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 11.59,
+          "cmd": "ollama run gemma2:9b-instruct-q8_0",
+          "source": "https://ollama.com/library/gemma2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/google/gemma-2-9b-it",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-06-24). Instruction-tuned checkpoint google/gemma-2-9b-it (not the PT base; distinct from Gemma 3). 9,241,705,984 parameters (safetensors metadata). ollama gemma2:9b = 9b-instruct-q4_0 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/google/gemma-2-9b-it/blob/11c9b309abf73637e4b6f9a3fa1e92e615547819/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemma-2-9b-it"
+      }
+    ]
+  },
+  {
+    "id": "gemma-2-27b",
+    "name": "Gemma 2 27B IT",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 27.23,
+    "active_b": 27.23,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 16.84,
+          "cmd": "ollama run gemma2:27b",
+          "source": "https://ollama.com/library/gemma2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 33.18,
+          "cmd": "ollama run gemma2:27b-instruct-q8_0",
+          "source": "https://ollama.com/library/gemma2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/google/gemma-2-27b-it",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-06-24). Instruction-tuned checkpoint google/gemma-2-27b-it. 27,227,128,320 parameters (safetensors metadata). ollama gemma2:27b = 27b-instruct-q4_0 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/google/gemma-2-27b-it/blob/aaf20e6b9f4c0fcf043f6fb2a2068419086d77b0/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "gemma-2-27b-it"
+      }
+    ]
+  },
+  {
+    "id": "llama-2-7b-chat",
+    "name": "Llama 2 7B Chat",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 4.54,
+          "cmd": "ollama run llama2:7b-chat",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 8.59,
+          "cmd": "ollama run llama2:7b-chat-q8_0",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/meta-llama/Llama-2-7b-chat-hf",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-07-18). Chat checkpoint Llama-2-7b-chat (not the base model). 6,738,417,664 parameters (safetensors metadata of the -hf repo).",
+    "identity_sources": [
+      "https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/blob/f5db02db724555f92da89c216ac04704f23d4590/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "llama-2-7b-chat"
+      }
+    ]
+  },
+  {
+    "id": "llama-2-13b-chat",
+    "name": "Llama 2 13B Chat",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13.02,
+    "active_b": 13.02,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 8.31,
+          "cmd": "ollama run llama2:13b-chat",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 16.12,
+          "cmd": "ollama run llama2:13b-chat-q8_0",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/meta-llama/Llama-2-13b-chat-hf",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-07-18). Chat checkpoint Llama-2-13b-chat. 13,015,866,880 parameters (safetensors metadata of the -hf repo).",
+    "identity_sources": [
+      "https://huggingface.co/meta-llama/Llama-2-13b-chat-hf/blob/a2cb7a712bb6e5e736ca7f8cd98167f81a0b5bd8/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "Llama-2-13b-chat"
+      }
+    ]
+  },
+  {
+    "id": "llama-2-70b-chat",
+    "name": "Llama 2 70B Chat",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 68.98,
+    "active_b": 68.98,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 41.89,
+          "cmd": "ollama run llama2:70b-chat",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 83.28,
+          "cmd": "ollama run llama2:70b-chat-q8_0",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/meta-llama/Llama-2-70b-chat-hf",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-07-18). Chat checkpoint; Epoch label 'Llama-2-70b-chat-hf' is the Hugging Face-format release of the same weights. 68,976,653,312 parameters (safetensors metadata).",
+    "identity_sources": [
+      "https://huggingface.co/meta-llama/Llama-2-70b-chat-hf/blob/e9149a12809580e8602995856f8098ce973d1080/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Llama-2-70b-chat-hf"
+      }
+    ]
+  },
+  {
+    "id": "llama-3-8b",
+    "name": "Llama 3 8B Instruct",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "llama3",
+    "params_b": 8.03,
+    "active_b": 8.03,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 5.32,
+          "cmd": "ollama run llama3:8b",
+          "source": "https://ollama.com/library/llama3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 10.14,
+          "cmd": "ollama run llama3:8b-instruct-q8_0",
+          "source": "https://ollama.com/library/llama3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-04-18). Original Llama 3 (April 2024) instruct checkpoint Meta-Llama-3-8B-Instruct; distinct from Llama 3.1 8B. 8,030,261,248 parameters (safetensors metadata). ollama llama3:8b = 8b-instruct-q4_0 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "Meta-Llama-3-8B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "llama-3-70b",
+    "name": "Llama 3 70B Instruct",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "llama3",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 42.83,
+          "cmd": "ollama run llama3:70b",
+          "source": "https://ollama.com/library/llama3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 85.16,
+          "cmd": "ollama run llama3:70b-instruct-q8_0",
+          "source": "https://ollama.com/library/llama3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-04-18). Original Llama 3 (April 2024) instruct checkpoint Meta-Llama-3-70B-Instruct; distinct from Llama 3.1/3.3 70B. 70,553,706,496 parameters (safetensors metadata). ollama llama3:70b = 70b-instruct-q4_0 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct/blob/50fd307e57011801c7833c87efa1984ddf2db42f/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Meta-Llama-3-70B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "llama-3-2-90b-vision",
+    "name": "Llama 3.2 90B Vision Instruct",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "llama3.2",
+    "params_b": 88.59,
+    "active_b": 88.59,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 53.65,
+          "cmd": "ollama run llama3.2-vision:90b",
+          "source": "https://ollama.com/library/llama3.2-vision/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 106.81,
+          "cmd": "ollama run llama3.2-vision:90b-instruct-q8_0",
+          "source": "https://ollama.com/library/llama3.2-vision/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-09-24). Vision-language instruct checkpoint Llama-3.2-90B-Vision-Instruct (text benchmarks here). 88,593,355,323 parameters (safetensors metadata, includes the vision adapter).",
+    "identity_sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct/blob/e305d2a43a4adc6987308fe7d896fb8ec5f1a5d8/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Llama-3.2-90B-Vision-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "hermes-2-theta-llama-3-70b",
+    "name": "Hermes 2 Theta Llama-3 70B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "llama3",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q4_k_m",
+          "gb": 42.83,
+          "cmd": "llama-server -hf NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF:Q4_K_M",
+          "source": "https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B-GGUF/tree/main",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-06-20). Nous Research / Arcee AI merge on Llama 3 70B; exact checkpoint NousResearch/Hermes-2-Theta-Llama-3-70B. 70,553,706,496 parameters (safetensors metadata). GGUF size is the official Q4_K_M file (42.52 GB).",
+    "identity_sources": [
+      "https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B/blob/8948247fa83f3f970ad24b3394d5656507642922/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Hermes-2-Theta-Llama-3-70B"
+      }
+    ]
+  },
+  {
+    "id": "llama-3-1-tulu-3-70b-dpo",
+    "name": "Llama 3.1 Tulu 3 70B DPO",
+    "provider": "Ai2",
+    "category": "llm",
+    "released": "2024-11",
+    "open_weights": true,
+    "license": "llama3.1",
+    "params_b": 70.55,
+    "active_b": 70.55,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 169.82,
+          "cmd": "vllm serve allenai/Llama-3.1-Tulu-3-70B-DPO",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-11-21). Intermediate DPO checkpoint allenai/Llama-3.1-Tulu-3-70B-DPO; not the final Tulu 3 70B (RLVR) release (arena 'llama-3.1-tulu-3-70b', ollama tulu3:70b). 70,553,837,568 parameters; safetensors total 141.11 GB.",
+    "identity_sources": [
+      "https://huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO/blob/2dab5183da9252bedf6039a0b09c86b9ca4d0ba9/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Llama-3.1-Tulu-3-70B-DPO"
+      }
+    ]
+  },
+  {
+    "id": "mistral-7b-instruct-v0-3",
+    "name": "Mistral 7B Instruct v0.3",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.25,
+    "active_b": 7.25,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.85,
+          "cmd": "ollama run mistral:7b-instruct-v0.3-q4_K_M",
+          "source": "https://ollama.com/library/mistral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.2,
+          "cmd": "ollama run mistral:7b-instruct-v0.3-q8_0",
+          "source": "https://ollama.com/library/mistral/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-05-27). Exact checkpoint Mistral-7B-Instruct-v0.3. The API alias 'open-mistral-7b' is not merged (Mistral lists it as versions 0.2 and 0.3). 7,248,023,552 parameters (safetensors metadata).",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/blob/c170c708c41dac9275d15a8fff4eca08d52bab71/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "Mistral-7B-Instruct-v0.3"
+      }
+    ]
+  },
+  {
+    "id": "mixtral-8x7b-instruct-v0-1",
+    "name": "Mixtral 8x7B Instruct v0.1",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 46.7,
+    "active_b": 12.9,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 28.52,
+          "cmd": "ollama run mixtral:8x7b",
+          "source": "https://ollama.com/library/mixtral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 28.52,
+          "cmd": "ollama run mixtral:8x7b-instruct-v0.1-q4_K_M",
+          "source": "https://ollama.com/library/mixtral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 56.54,
+          "cmd": "ollama run mixtral:8x7b-instruct-v0.1-q8_0",
+          "source": "https://ollama.com/library/mixtral/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-12-11). Exact checkpoint Mixtral-8x7B-Instruct-v0.1 (the API alias open-mixtral-8x7b is a separate Epoch run and is not pooled). 46.7B total / 12.9B per token (Mistral, 'Mixtral of experts'); 46,702,792,704 parameters in safetensors metadata.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1/blob/eba92302a2861cdc0098cc54bc9f17cb2c47eb61/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Mixtral-8x7B-Instruct-v0.1"
+      }
+    ]
+  },
+  {
+    "id": "mistral-nemo-instruct-2407",
+    "name": "Mistral NeMo Instruct (2407)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 12.25,
+    "active_b": 12.25,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 7.85,
+          "cmd": "ollama run mistral-nemo:12b",
+          "source": "https://ollama.com/library/mistral-nemo/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 7.85,
+          "cmd": "ollama run mistral-nemo:12b-instruct-2407-q4_K_M",
+          "source": "https://ollama.com/library/mistral-nemo/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 15.2,
+          "cmd": "ollama run mistral-nemo:12b-instruct-2407-q8_0",
+          "source": "https://ollama.com/library/mistral-nemo/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-07-18). Epoch label is the Mistral API id open-mistral-nemo-2407, which Mistral's legacy-models table lists as 'Mistral Nemo 12B' version 24.07 (deprecated 5/22/2026, retired 7/31/2026). Same release as open weights Mistral-Nemo-Instruct-2407 (12,247,782,400 parameters).",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/blob/04d8a90549d23fc6bd7f642064003592df51e9b3/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "open-mistral-nemo-2407"
+      }
+    ]
+  },
+  {
+    "id": "mistral-large-2402",
+    "name": "Mistral Large (2402)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-02-26). API model mistral-large-2402 ('Mistral Large 1.0', version 24.02 in Mistral's legacy-models table; retired 6/16/2025). No open weights.",
+    "identity_sources": [
+      "https://docs.mistral.ai/models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "mistral-large-2402"
+      }
+    ]
+  },
+  {
+    "id": "mistral-large-2407",
+    "name": "Mistral Large 2 (2407)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "mistral-research",
+    "params_b": 122.61,
+    "active_b": 122.61,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 74.07,
+          "cmd": "ollama run mistral-large:123b-instruct-2407-q4_K_M",
+          "source": "https://ollama.com/library/mistral-large/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 147.63,
+          "cmd": "ollama run mistral-large:123b-instruct-2407-q8_0",
+          "source": "https://ollama.com/library/mistral-large/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-07-24). API id mistral-large-2407 ('Mistral Large 2.0', version 24.07; retired 3/30/2025); weights Mistral-Large-Instruct-2407 under the Mistral Research License. Distinct from mistral-large-2 (2411). 122,610,069,504 parameters. Note: ollama mistral-large:123b now points to the 2411 build, so the 2407 tags are pinned explicitly.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407/blob/a286006d554cb37a61d13c7ae61bc90cc1d372fc/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "mistral-large-2407"
+      }
+    ]
+  },
+  {
+    "id": "ministral-3b-2410",
+    "name": "Ministral 3B (2410)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2024-10",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-10-16). API model ministral-3b-2410 ('Ministral 3B', version 24.10; retired 12/31/2025); Epoch model_metadata: 'API access'. Distinct from Ministral 3 3B (2512).",
+    "identity_sources": [
+      "https://docs.mistral.ai/models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "ministral-3b-2410"
+      }
+    ]
+  },
+  {
+    "id": "ministral-8b-2410",
+    "name": "Ministral 8B (2410)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "mistral-research",
+    "params_b": 8.02,
+    "active_b": 8.02,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 19.75,
+          "cmd": "vllm serve mistralai/Ministral-8B-Instruct-2410 --tokenizer_mode mistral --config_format mistral --load_format mistral",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-10-16). API id ministral-8b-2410 ('Ministral 8B', 24.10; retired 12/31/2025); weights Ministral-8B-Instruct-2410 under the Mistral Research License (non-commercial). Distinct from Ministral 3 8B (2512). 8,019,808,256 parameters; command from the model card; size is consolidated.safetensors (16.04 GB).",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "ministral-8b-2410"
+      }
+    ]
+  },
+  {
+    "id": "mistral-small-3",
+    "name": "Mistral Small 3 24B (2501)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-01",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 23.57,
+    "active_b": 23.57,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 14.64,
+          "cmd": "ollama run mistral-small:24b-instruct-2501-q4_K_M",
+          "source": "https://ollama.com/library/mistral-small/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 28.78,
+          "cmd": "ollama run mistral-small:24b-instruct-2501-q8_0",
+          "source": "https://ollama.com/library/mistral-small/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-01-25, 2025-01-30). Mistral Small 3 (version 25.01). Epoch labels 'mistral-small-2501' (Mistral API id; 'Mistral Small 3.0' 25.01 in Mistral's legacy table, retired 11/30/2025) and 'mistral-small-3-2501' both sit in model_metadata group 'Mistral Small 3' and name the same 2501 release, so the selection rule is applied across both labels. Distinct from mistral-small-3-2 (2506). 23,572,403,200 parameters.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501/blob/9527884be6e5616bdd54de542f9ae13384489724/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "mistral-small-3-2501"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+        "reported_label": "mistral-small-2501"
+      }
+    ]
+  },
+  {
+    "id": "mistral-small-3-1",
+    "name": "Mistral Small 3.1 24B (2503)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 24.01,
+    "active_b": 24.01,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 14.91,
+          "cmd": "ollama run mistral-small3.1:24b",
+          "source": "https://ollama.com/library/mistral-small3.1/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 29.31,
+          "cmd": "ollama run mistral-small3.1:24b-instruct-2503-q8_0",
+          "source": "https://ollama.com/library/mistral-small3.1/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-03-17). Mistral Small 3.1 (version 25.03). Epoch labels 'mistral-small-2503' (Mistral API id; retired 11/30/2025) and 'mistral-small-3.1-2503' are both model_metadata group 'Mistral Small 3.1'; the selection rule is applied across both. 24,011,361,280 parameters (includes the vision encoder).",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "mistral-small-3.1-2503"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+        "reported_label": "mistral-small-2503"
+      }
+    ]
+  },
+  {
+    "id": "mistral-medium-2505",
+    "name": "Mistral Medium 3 (2505)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-05",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-05-07). API model mistral-medium-2505 ('Mistral Medium 3', version 25.05; deprecated 5/22/2026, retired 8/31/2026 per Mistral's legacy-models table). Distinct from mistral-medium-3-5.",
+    "identity_sources": [
+      "https://docs.mistral.ai/models"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "mistral-medium-2505"
+      }
+    ]
+  },
+  {
+    "id": "magistral-small-2506",
+    "name": "Magistral Small 1.0 (2506)",
+    "provider": "Mistral",
+    "category": "llm",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 23.57,
+    "active_b": 23.57,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 14.64,
+          "cmd": "ollama run magistral:24b-small-2506-q4_K_M",
+          "source": "https://ollama.com/library/magistral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 28.78,
+          "cmd": "ollama run magistral:24b-small-2506-q8_0",
+          "source": "https://ollama.com/library/magistral/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/mistralai/Magistral-Small-2506",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-06-10). Magistral Small 1.0 (version 25.06; API id retired 11/30/2025); distinct from magistral-small-2509 (1.2). 23,572,403,200 parameters.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Magistral-Small-2506/blob/ad2fce5b4113139e1877dcadfd826c9262ad8e8c/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "magistral-small-2506"
+      }
+    ]
+  },
+  {
+    "id": "qwen1-5-72b-chat",
+    "name": "Qwen1.5 72B Chat",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "tongyi-qianwen",
+    "params_b": 72.29,
+    "active_b": 72.29,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 43.87,
+          "cmd": "ollama run qwen:72b-chat",
+          "source": "https://ollama.com/library/qwen/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 87.25,
+          "cmd": "ollama run qwen:72b-chat-v1.5-q8_0",
+          "source": "https://ollama.com/library/qwen/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-02-04). Chat checkpoint Qwen1.5-72B-Chat. 72,287,920,128 parameters. ollama qwen:72b-chat = 72b-chat-v1.5-q4_0 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen1.5-72B-Chat/blob/a9435b56d61aa68714fd7b83d6cc3e698a42c8ba/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen1.5-72b-chat"
+      }
+    ]
+  },
+  {
+    "id": "qwen1-5-32b-chat",
+    "name": "Qwen1.5 32B Chat",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "tongyi-qianwen",
+    "params_b": 32.51,
+    "active_b": 32.51,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 20.01,
+          "cmd": "ollama run qwen:32b-chat",
+          "source": "https://ollama.com/library/qwen/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 39.51,
+          "cmd": "ollama run qwen:32b-chat-v1.5-q8_0",
+          "source": "https://ollama.com/library/qwen/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/Qwen/Qwen1.5-32B-Chat",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-04-03). Chat checkpoint Qwen1.5-32B-Chat. 32,512,218,112 parameters. ollama qwen:32b-chat = 32b-chat-v1.5-q4_0 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen1.5-32B-Chat/blob/0997b012af6ddd5465d40465a8415535b2f06cfc/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen1.5-32b-chat"
+      }
+    ]
+  },
+  {
+    "id": "qwen2-72b",
+    "name": "Qwen2 72B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "tongyi-qianwen",
+    "params_b": 72.71,
+    "active_b": 72.71,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 44.13,
+          "cmd": "ollama run qwen2:72b-instruct",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 87.75,
+          "cmd": "ollama run qwen2:72b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-72B-Instruct",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-06-07). Instruct checkpoint Qwen2-72B-Instruct; distinct from Qwen2.5 72B. 72,706,203,648 parameters.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2-72B-Instruct/blob/c867f763ef53f2ea9d9b31ee8501273dedd391eb/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen2-72b-instruct"
+      }
+    ]
+  },
+  {
+    "id": "qwen-turbo-2024-11-01",
+    "name": "Qwen Turbo (2024-11-01)",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-11-01). Dated API snapshot qwen-turbo-2024-11-01. Not listed on Model Studio's text-generation or pricing pages (observed 2026-09-28), so api is null.",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen-turbo-2024-11-01"
+      }
+    ]
+  },
+  {
+    "id": "qwen-max-2025-01-25",
+    "name": "Qwen2.5-Max (2025-01-25)",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-01-25). Dated API snapshot qwen-max-2025-01-25 (Epoch display 'Qwen2.5-Max'). Not listed on Model Studio's text-generation or pricing pages (observed 2026-09-28), so api is null. Distinct from arena's 'qwen-max-0919'.",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen-max-2025-01-25"
+      }
+    ]
+  },
+  {
+    "id": "qwen-plus-2025-01-25",
+    "name": "Qwen Plus (2025-01-25)",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.4,
+      "price_out": 1.2,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), dated snapshot qwen-plus-2025-01-25, no tiered pricing, non-thinking output: input $0.4, output $1.2. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-01-25). Dated API snapshot qwen-plus-2025-01-25 (arena label 'qwen-plus-0125' is probably the same snapshot; not asserted here). Listed on Model Studio's pricing page (observed 2026-09-28).",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen-plus-2025-01-25"
+      }
+    ]
+  },
+  {
+    "id": "qwq-32b",
+    "name": "QwQ-32B",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 32.76,
+    "active_b": 32.76,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20.16,
+          "cmd": "ollama run qwq:32b",
+          "source": "https://ollama.com/library/qwq/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 39.81,
+          "cmd": "ollama run qwq:32b-q8_0",
+          "source": "https://ollama.com/library/qwq/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/Qwen/QwQ-32B",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-03-05). Release checkpoint Qwen/QwQ-32B (March 2025); not QwQ-32B-Preview. 32,763,876,352 parameters. ollama qwq:32b = 32b-q4_K_M (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/QwQ-32B/blob/976055f8c83f394f35dbd3ab09a285a984907bd0/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "QwQ-32B"
+      }
+    ]
+  },
+  {
+    "id": "qwq-plus",
+    "name": "QwQ-Plus",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 128,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "context_note": "Alibaba Cloud Model Studio text-generation models table: qwq-plus context 128k (stated rounded). Observed 2026-09-28.",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.8,
+      "price_out": 2.4,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), qwq-plus, single tier: input $0.8, output $2.4. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-08). API model qwq-plus (Epoch run 2025-04-11). Not asserted to equal the open-weights QwQ-32B.",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwq-plus"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-30b-a3b",
+    "name": "Qwen3 30B-A3B (Apr 2025, hybrid)",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 30.5,
+    "active_b": 3.3,
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.2,
+      "price_out": 0.8,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), qwen3-30b-a3b (hybrid; non-thinking output price; thinking-mode output is $2.4), single tier: input $0.2, output $0.8. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 18.8,
+          "cmd": "ollama run qwen3:30b-a3b-q4_K_M",
+          "source": "https://ollama.com/library/qwen3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 37.1,
+          "cmd": "ollama run qwen3:30b-a3b-q8_0",
+          "source": "https://ollama.com/library/qwen3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-29). Original April 2025 hybrid-thinking checkpoint Qwen/Qwen3-30B-A3B; distinct from the 2507 Instruct/Thinking checkpoints. Default (thinking) runs are used; '_none' runs only where no default run exists. Card: 30.5B total, 3.3B activated. Beware: ollama qwen3:30b and qwen3:30b-a3b now point to the Thinking-2507 build, so the original tags are pinned explicitly (40K context).",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "Qwen3-30B-A3B"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-4b",
+    "name": "Qwen3 4B",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 4.02,
+    "active_b": 4.02,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.91,
+          "cmd": "ollama run qwen3:4b-q4_K_M",
+          "source": "https://ollama.com/library/qwen3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 5.32,
+          "cmd": "ollama run qwen3:4b-q8_0",
+          "source": "https://ollama.com/library/qwen3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-4B",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-29). Original April 2025 hybrid-thinking checkpoint Qwen/Qwen3-4B; distinct from qwen3-4b-instruct-2507 / -thinking-2507. Default (thinking) runs used where present; the chess result is the only published run ('qwen3-4b_none'). 4,022,468,096 parameters. ollama qwen3:4b now points to the Thinking-2507 build, so the original tags are pinned explicitly.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "qwen3-4b_none"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "qwen3-4b"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-max-2025-09-23",
+    "name": "Qwen3-Max (2025-09-23)",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2025-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 1.2,
+      "price_out": 6,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), dated snapshot qwen3-max-2025-09-23 (non-thinking mode only), 0<Token<=32K input tier (32K-128K and 128K-256K tiers are higher): input $1.2, output $6. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-09-24). Dated API snapshot qwen3-max-2025-09-23 (Epoch display 'Qwen3-Max-Instruct'); distinct from qwen3-max-2026-01-23 and qwen3-max-preview. Listed as a qwen3-max snapshot on Model Studio (observed 2026-09-28).",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "qwen3-max-2025-09-23"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-5-plus",
+    "name": "Qwen3.5 Plus",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 1000,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "context_note": "Alibaba Cloud Model Studio text-generation models table: qwen3.5-plus context 1M (stated rounded). Observed 2026-09-28.",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.4,
+      "price_out": 2.4,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), qwen3.5-plus (currently equivalent to qwen3.5-plus-2026-02-15), 0<Token<=256K input tier (256K-1M tier $0.5/$3 excluded): input $0.4, output $2.4. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2026-02-16). API model qwen3.5-plus; Epoch model_metadata: 'Qwen 3.5 Plus (hosted 397B-A17B)'. Kept distinct from open-weights qwen3-5-397b-a17b (hosted product with its own context/tools, following the qwen3-6-plus precedent). Model Studio pricing says the alias is currently equivalent to qwen3.5-plus-2026-02-15. Default (thinking) runs used; '_none' runs not mixed in.",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "qwen3.5-plus"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-5-flash",
+    "name": "Qwen3.5 Flash",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 1000,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "context_note": "Alibaba Cloud Model Studio text-generation models table: qwen3.5-flash context 1M (stated rounded). Observed 2026-09-28.",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 0.1,
+      "price_out": 0.4,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), qwen3.5-flash (currently equivalent to qwen3.5-flash-2026-02-23), 0<Token<=1M single tier: input $0.1, output $0.4. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2026-02-25). API model qwen3.5-flash; Epoch model_metadata: 'Qwen 3.5 Flash (hosted 35B-A3B)'. Kept distinct from open-weights qwen3-5-35b-a3b (hosted product, qwen3-6-flash precedent). Default (thinking) runs used; '_none' runs not mixed in.",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "qwen3.5-flash"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-6-max-preview",
+    "name": "Qwen3.6 Max Preview",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2026-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "context_k": 256,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "context_note": "Alibaba Cloud Model Studio text-generation models table: qwen3.6-max-preview context 256k (stated rounded). Observed 2026-09-28.",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "provider": "Alibaba Cloud Model Studio",
+      "price_in": 1.3,
+      "price_out": 7.8,
+      "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "price_note": "USD per 1M tokens, Singapore (International), qwen3.6-max-preview, 0<Token<=128K input tier (128K-256K tier $2/$12 excluded): input $1.3, output $7.8. Batch and context-cache discounts, higher tiers and free quota excluded. Observed 2026-09-28."
+    },
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2026-04-20). API model qwen3.6-max-preview (preview); distinct from Qwen3.7 Max and Qwen3.8 Max. Default runs used; the mystery-games result is the only published run ('_none').",
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "qwen3.6-max-preview"
+      },
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+        "reported_label": "qwen3.6-max-preview_none"
+      }
+    ]
+  },
+  {
+    "id": "grok-2-1212",
+    "name": "Grok 2 (1212)",
+    "provider": "SpaceXAI (xAI)",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-12-12). Dated API model grok-2-1212. Not listed on xAI's current models page (observed 2026-09-28).",
+    "identity_sources": [
+      "https://docs.x.ai/developers/models.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "grok-2-1212"
+      }
+    ]
+  },
+  {
+    "id": "grok-3-beta",
+    "name": "Grok 3 Beta",
+    "provider": "SpaceXAI (xAI)",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-09). API model grok-3-beta; distinct from arena's 'grok-3-preview-02-24'. Not listed on xAI's current models page (observed 2026-09-28).",
+    "identity_sources": [
+      "https://docs.x.ai/developers/models.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "grok-3-beta"
+      }
+    ]
+  },
+  {
+    "id": "grok-3-mini-beta",
+    "name": "Grok 3 Mini Beta",
+    "provider": "SpaceXAI (xAI)",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-04-09). API model grok-3-mini-beta; reasoning effort recorded per result. Not listed on xAI's current models page (observed 2026-09-28).",
+    "identity_sources": [
+      "https://docs.x.ai/developers/models.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "grok-3-mini-beta_high"
+      }
+    ]
+  },
+  {
+    "id": "grok-4-0709",
+    "name": "Grok 4 (0709)",
+    "provider": "SpaceXAI (xAI)",
+    "category": "llm",
+    "released": "2025-07",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-07-09). Dated API model grok-4-0709; distinct from grok-4-1-fast-reasoning, grok-4-20 and later. Not listed on xAI's current models page (observed 2026-09-28). Epoch's gpqa/otis rows for this version have no run start time or logs and rounded values, so only the chess run is used.",
+    "identity_sources": [
+      "https://docs.x.ai/developers/models.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "grok-4-0709"
+      }
+    ]
+  },
+  {
+    "id": "yi-34b-chat",
+    "name": "Yi 34B Chat",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 34.39,
+    "active_b": 34.39,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21.13,
+          "cmd": "ollama run yi:34b-chat-q4_K_M",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 41.77,
+          "cmd": "ollama run yi:34b-chat-q8_0",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/01-ai/Yi-34B-Chat",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-11-22). Original Yi-34B-Chat (November 2023); distinct from Yi-1.5-34B-Chat. 34,388,917,248 parameters. Note ollama yi:34b-chat now points to v1.5; the non-v1.5 quant tags are the original (their licence layer differs from the v1.5 tags).",
+    "identity_sources": [
+      "https://huggingface.co/01-ai/Yi-34B-Chat/blob/cf02cb50f2a03dead2fe205766a1c5598a90bf80/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Yi-34B-Chat"
+      }
+    ]
+  },
+  {
+    "id": "yi-1-5-34b-chat",
+    "name": "Yi 1.5 34B Chat",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 34.39,
+    "active_b": 34.39,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21.13,
+          "cmd": "ollama run yi:34b-chat-v1.5-q4_K_M",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 41.77,
+          "cmd": "ollama run yi:34b-chat-v1.5-q8_0",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/01-ai/Yi-1.5-34B-Chat",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-05-13). Yi-1.5-34B-Chat (May 2024). 34,388,917,248 parameters.",
+    "identity_sources": [
+      "https://huggingface.co/01-ai/Yi-1.5-34B-Chat/blob/fa4ffba162f20948bf77c2a30eca952bf0812b7f/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Yi-1.5-34B-Chat"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-llm-67b-chat",
+    "name": "DeepSeek LLM 67B Chat",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 67,
+    "active_b": 67,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 40.7,
+          "cmd": "ollama run deepseek-llm:67b-chat",
+          "source": "https://ollama.com/library/deepseek-llm/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q4_k_m",
+          "gb": 40.7,
+          "cmd": "ollama run deepseek-llm:67b-chat-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-llm/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2023-11-29). Chat checkpoint deepseek-llm-67b-chat (November 2023). 67B parameters per the model name/card (no safetensors metadata).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat/blob/79648bef7658bb824e4630740f6e1484c1b0620b/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "deepseek-llm-67b-chat"
+      }
+    ]
+  },
+  {
+    "id": "dbrx-instruct",
+    "name": "DBRX Instruct",
+    "provider": "Databricks",
+    "category": "llm",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "databricks-open-model",
+    "params_b": 132,
+    "active_b": 36,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 79.7,
+          "cmd": "ollama run dbrx:132b",
+          "source": "https://ollama.com/library/dbrx/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 158.9,
+          "cmd": "ollama run dbrx:132b-instruct-q8_0",
+          "source": "https://ollama.com/library/dbrx/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-03-27). DBRX Instruct (March 2024). 132B total, 36B active parameters and the Databricks Open Model License per the ollama library page/licence layer; the original Hugging Face repo databricks/dbrx-instruct is no longer publicly accessible (HTTP 401, observed 2026-09-28).",
+    "identity_sources": [
+      "https://ollama.com/library/dbrx"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "dbrx-instruct"
+      }
+    ]
+  },
+  {
+    "id": "wizardlm-2-8x22b",
+    "name": "WizardLM-2 8x22B",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 141,
+    "active_b": 39,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 85.1,
+          "cmd": "ollama run wizardlm2:8x22b",
+          "source": "https://ollama.com/library/wizardlm2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 169.7,
+          "cmd": "ollama run wizardlm2:8x22b-q8_0",
+          "source": "https://ollama.com/library/wizardlm2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-04-15). WizardLM-2 8x22B (April 2024), a fine-tune of Mixtral 8x22B. 141B parameters and Apache-2.0 per the ollama model page/licence layer; 39B active is the Mixtral 8x22B figure (Mistral: '39B active parameters out of 141B'). Microsoft's Hugging Face repo is no longer publicly accessible (HTTP 401, observed 2026-09-28).",
+    "identity_sources": [
+      "https://ollama.com/library/wizardlm2:8x22b",
+      "https://mistral.ai/news/mixtral-8x22b"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "WizardLM-2-8x22B"
+      }
+    ]
+  },
+  {
+    "id": "phi-3-medium-128k-instruct",
+    "name": "Phi-3 Medium 128K Instruct",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 13.96,
+    "active_b": 13.96,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 8.88,
+          "cmd": "ollama run phi3:medium-128k",
+          "source": "https://ollama.com/library/phi3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 17.25,
+          "cmd": "ollama run phi3:14b-medium-128k-instruct-q8_0",
+          "source": "https://ollama.com/library/phi3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-04-23). Exact checkpoint Phi-3-medium-128k-instruct (not the 4k variant). The Hugging Face repo has no weight updates after the May 2024 upload (commit history). 13,960,238,080 parameters.",
+    "identity_sources": [
+      "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct/blob/a088b37c71d441ab6d862bb3fcfe6165b3014702/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Phi-3-medium-128k-instruct"
+      }
+    ]
+  },
+  {
+    "id": "eurus-2-7b-prime",
+    "name": "Eurus-2-7B-PRIME",
+    "provider": "PRIME-RL",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 37.08,
+          "cmd": "vllm serve PRIME-RL/Eurus-2-7B-PRIME",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2024-12-31). PRIME RL checkpoint (Qwen2.5-Math-7B base) from Tsinghua/UIUC et al. 7,615,616,512 parameters stored in FP32 (30.46 GB safetensors).",
+    "identity_sources": [
+      "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+        "reported_label": "Eurus-2-7B-PRIME"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-0-1b",
+    "name": "Granite 4.0 1B",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.63,
+    "active_b": 1.63,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 4.41,
+          "cmd": "ollama run granite4:1b",
+          "source": "https://ollama.com/library/granite4/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-4.0-1b",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-10-28). Dense Granite 4.0 1B (Nano family, October 2025); distinct from the hybrid granite-4.0-h-1b (ollama granite4:1b-h). 1,631,750,144 parameters. ollama granite4:1b = 1b-bf16 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-4.0-1b/blob/6a7381ba1f54d684ff508d991aeb7dc580157103/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "granite-4.0-1b"
+      }
+    ]
+  },
+  {
+    "id": "granite-4-0-350m",
+    "name": "Granite 4.0 350M",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.352,
+    "active_b": 0.352,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 1.34,
+          "cmd": "ollama run granite4:350m",
+          "source": "https://ollama.com/library/granite4/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-4.0-350m",
+    "identity_note": "Comparison model from the Epoch AI internal-evaluation CSVs (Epoch release date 2025-10-28). Dense Granite 4.0 350M (Nano family, October 2025); distinct from granite-4.0-h-350m. 352,379,904 parameters. ollama granite4:350m = 350m-bf16 (same digest).",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-4.0-350m/blob/bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+        "reported_label": "granite-4.0-350m"
+      }
+    ]
   }
 ]

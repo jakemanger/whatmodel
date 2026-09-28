@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 53.1** ±3.6 · #97 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.8** ±3.5 · #107 of 257 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1347.3    53.3   2026-09-24   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               50.0                 6% ▇
-                        weighted average                   = 53.1
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1347.3    57.1   2026-09-24   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle               50.0                 5% ▇
+                        weighted average                   = 56.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

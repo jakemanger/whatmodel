@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 36.0** ±4.1 · #171 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.5** ±4.0 · #189 of 257 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.2    36.9   2026-09-13   66% ▇▇▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   55.0%    29.8   2026-09-19   27% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.2    41.5   2026-09-13   68% ▇▇▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   55.0%    34.9   2026-09-19   24% ▇▇▇
 prior                   pull toward the middle                    50.0                 7% ▇
-                        weighted average                        = 36.0
+                        weighted average                        = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,8 +48,8 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/mod
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.21GB   36.0
-8-bit q8_0    ~9.92GB   36.0
+4-bit q4_k_m  ~5.21GB   40.5
+8-bit q8_0    ~9.92GB   40.5
 </pre>
 
 ```sh

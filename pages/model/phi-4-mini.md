@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-02 · 3.84B params · mit
 
-**score 22.0** ±2.0 · #199 of 205 · from 7 benchmark results across 5 sources
+**score 28.0** ±2.1 · #239 of 257 · from 7 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.5%    21.0                23% ▇▇▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      42.8%    24.6                22% ▇▇▇
-                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  25.3%    20.3                18% ▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  50.8%    24.1   2025-03-03   13% ▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  43.4%    12.2   2026-08-11   10% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.5%    24.6   2025-05-01    8% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  24.5%    21.0   2025-04-28    5% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      42.8%    31.0                22% ▇▇▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.5%    27.6                22% ▇▇▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  25.3%    26.8                17% ▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  50.8%    28.9   2025-03-03   13% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  43.4%    17.5   2026-08-11   10% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.5%    30.1   2025-05-01    9% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  24.5%    26.9   2025-04-28    6% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 22.0
+                        weighted average                       = 28.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -71,8 +71,8 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~2.8GB   22.0
-8-bit q8_0    ~5.11GB   22.0
+4-bit q4_k_m   ~2.8GB   28.0
+8-bit q8_0    ~5.11GB   28.0
 </pre>
 
 ```sh

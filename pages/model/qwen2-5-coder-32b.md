@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 32.8B params · apache-2.0
 
-**score 37.7** ±1.9 · #163 of 205 · from 5 benchmark results across 5 sources
+**score 41.4** ±2.1 · #184 of 257 · from 5 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   16.4%    37.3   2024-12-26   35% ▇▇▇▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   41.6%    39.7   2024-12-26   34% ▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1270.5    28.3   2026-09-13   15% ▇▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   34.1%    41.4   2026-08-31    9% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   66.8%    43.5   2025-01-14    6% ▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   41.6%    42.7   2024-12-26   46% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1270.5    33.3   2026-09-13   19% ▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   16.4%    39.7   2024-12-26   13% ▇▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   34.1%    45.1   2026-08-31   12% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   66.8%    47.3   2025-01-14    9% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 37.7
+                        weighted average                        = 41.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>
+<sub>Licences: LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
@@ -35,8 +35,8 @@ api (Cloudflare) · $0.74/M blended · $0.66 in / $1 out per 1M tokens · [devel
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~20.18GB   37.7
-8-bit q8_0    ~39.86GB   37.7
+4-bit q4_k_m  ~20.18GB   41.4
+8-bit q8_0    ~39.86GB   41.4
 </pre>
 
 ```sh

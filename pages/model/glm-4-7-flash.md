@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 
-**score 41.5** ±2.2 · #146 of 205 · from 7 benchmark results across 4 sources
+**score 46.8** ±2.0 · #152 of 257 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     60.5%    45.6   2026-08-30   16% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         58.3%    47.1   2026-08-30   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    29.2   2026-08-28    5% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   14.9%    31.1   2026-09-07   18% ▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   83.1%    40.5   2026-09-07   12% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1366.3    46.0   2026-09-13   19% ▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1151.3    42.1   2026-05-10   14% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         58.3%    52.7   2026-08-30   23% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     60.5%    49.6   2026-08-30   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    33.2   2026-08-28    4% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   14.9%    37.4   2026-09-07   17% ▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   83.1%    46.1   2026-09-07   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1366.3    50.1   2026-09-13   17% ▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1151.3    46.5   2026-05-10   13% ▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 41.5
+                        weighted average                        = 46.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,7 +52,7 @@ api (Z.AI) · $0.0000/M blended · $0 in / $0 out per 1M tokens · [docs.z.ai](h
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.22GB   41.5
+4-bit q4_k_m  ~19.22GB   46.8
 </pre>
 
 ```sh

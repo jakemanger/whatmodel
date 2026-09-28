@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 45.5** ±3.8 · #134 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.3** ±3.5 · #141 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  38.5%    46.6   2026-09-07   56% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    43.2   2026-09-07   37% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 45.5
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  38.5%    51.5   2026-09-07   55% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    48.6   2026-09-07   39% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 50.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,8 +47,8 @@ api (Novita AI) · $0.12/M blended · $0.07 in / $0.27 out per 1M tokens · [nov
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~18.8GB   45.5
-8-bit q8_0    ~37.1GB   45.5
+4-bit q4_k_m  ~18.8GB   50.3
+8-bit q8_0    ~37.1GB   50.3
 </pre>
 
 ```sh

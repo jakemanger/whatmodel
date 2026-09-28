@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 8B params (4.5B active) · apache-2.0
 
-**score 42.2** ±0.9 · #144 of 205 · from 23 benchmark results across 5 sources
+**score 48.4** ±0.9 · #149 of 257 · from 23 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,36 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              58.6%    43.1   2026-07-02    8% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 42.5%    39.6   2026-07-02    7% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  33.1%    41.9   2026-07-02    7% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               59.5%    40.9   2026-07-02    6% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   44.0%    40.2   2026-07-02    6% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  52.0%    42.6   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    25.4%    42.2   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            52.0%    43.1   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>        8.0%    43.7   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             28.7%    40.3   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            70.0%    38.2   2026-07-02    5% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  52.6%    40.6   2026-07-02    4% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    96.7%    45.7   2026-07-02    4% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>            18.4%    41.9   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     76.6%    43.3   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             67.1%    49.3   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   24.0%    40.8   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  69.4%    41.9   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        18.1%    48.7   2026-07-02    2% ▇
-<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        42.2%    44.1   2026-07-20    7% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  59.0%    34.7   2026-09-19    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.2%    44.9   2026-04-08    1% ▇
-<a name="paper-2609.00654v1"></a>SciTrue: Reliable Sci…  <a href="https://arxiv.org/html/2609.00654v1">NTCIR SciClaimEval Subtask 1 …</a>  52.6%    45.0   2026-09-01    1% ▇
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              58.6%    49.4   2026-07-02    8% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  33.1%    48.3   2026-07-02    7% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 42.5%    46.0   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               59.5%    47.3   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   44.0%    46.7   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            52.0%    49.4   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            70.0%    44.9   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>        8.0%    50.0   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  52.0%    48.9   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    25.4%    48.5   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             28.7%    46.3   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  52.6%    47.1   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     76.6%    49.6   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    96.7%    51.8   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   24.0%    47.3   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  69.4%    48.4   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>            18.4%    48.1   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             67.1%    55.3   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        18.1%    54.6   2026-07-02    2% ▇
+<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        42.2%    50.3   2026-07-20    6% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  59.0%    39.6   2026-09-19    1% ▇
+<a name="paper-2609.00654v1"></a>SciTrue: Reliable Sci…  <a href="https://arxiv.org/html/2609.00654v1">NTCIR SciClaimEval Subtask 1 …</a>  52.6%    49.9   2026-09-01    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.2%    49.8   2026-04-08    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 42.2
+                        weighted average                       = 48.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task ([CC BY 4.0](../../licenses/paper-2609.00654v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SciTrue: Reliable Scientific Claim Validation with Frontier and Open Language Models at the NTCIR SciClaimEval Task ([CC BY 4.0](../../licenses/paper-2609.00654v1-CC-BY-4.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
@@ -51,8 +51,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~5.3GB   42.2
-4-bit QAT qat  ~5.3GB   42.2
+4-bit q4_k_m   ~5.3GB   48.4
+4-bit QAT qat  ~5.3GB   48.4
 </pre>
 
 ```sh

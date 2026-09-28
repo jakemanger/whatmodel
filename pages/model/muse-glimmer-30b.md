@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · 29.8B params · apache-2.0
 
-**score 56.0** ±2.7 · #77 of 205 · from 3 benchmark results across 2 sources
+**score 59.5** ±2.6 · #88 of 257 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1359.6    54.1   2026-09-24   52% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1427.2    57.2   2026-09-13   29% ▇▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    61.2   2026-08-11   17% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1359.6    57.9   2026-09-24   53% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1427.2    60.8   2026-09-13   29% ▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    64.6   2026-08-11   15% ▇▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 56.0
+                        weighted average                        = 59.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -58,8 +58,8 @@ api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [f
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~18.38GB   56.0
-8-bit q8_0    ~36.26GB   56.0
+4-bit q4_k_m  ~18.38GB   59.5
+8-bit q8_0    ~36.26GB   59.5
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · closed weights
 
-**score 50.4** ±2.2 · #111 of 205 · from 8 benchmark results across 7 sources
+**score 54.7** ±2.1 · #119 of 257 · from 8 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1409.7    54.0   2026-09-13   19% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1215.0    52.7   2026-09-13   10% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   16.9%    49.2   2026-01-17   26% ▇▇▇
-<a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   41.1%    53.1   2026-07-29   16% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   85.6%    53.6   2025-09-01    9% ▇
-<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   41.6%    35.5   2026-09-25    8% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   56.2%    54.7   2025-12-16    6% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   38.0%    42.5   2025-11-18    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1409.7    57.7   2026-09-13   19% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1215.0    56.9   2026-09-13   10% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   16.9%    53.7   2026-01-17   23% ▇▇▇
+<a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   41.1%    57.2   2026-07-29   19% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   85.6%    57.9   2025-09-01    9% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   41.6%    39.6   2026-09-25    7% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   56.2%    59.2   2025-12-16    6% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   38.0%    46.4   2025-11-18    5% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 50.4
+                        weighted average                        = 54.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

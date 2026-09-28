@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-12 · 671B params (37B active) · deepseek
 
-**score 42.1** ±1.2 · #145 of 205 · from 14 benchmark results across 9 sources
+**score 43.7** ±0.6 · #171 of 257 · from 14 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -14,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>               59.1%    43.4   2026-09-25   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                   90.2%    35.4   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                  39.2%    30.0   2026-09-25    4% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     64.9%    38.0   2025-01-27   12% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     56.5%    43.6   2025-01-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         15.8%    33.7   2025-02-25    5% ▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   48.9%    43.4   2024-12-26   13% ▇▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   42.1%    42.6                11% ▇
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-chat-v3_openai_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   88.6%    41.3   2024-12-26    8% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   58.5%    51.1   2024-12-28    4% ▇
-                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   87.2%    54.0   2024-12-28    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1358.4    44.5   2026-09-13    6% ▇
-<a name="scicode-readme-leaderboard"></a>SciCode leaderboard     <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (offici…</a>    3.1%    47.6   2025-02-01    6% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   80.5%    48.2   2026-08-11    3% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 42.1
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     64.9%    43.0   2025-01-27   75% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         15.8%    41.3   2025-02-25    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     56.5%    47.8   2025-01-27    1% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>               59.1%    48.4   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                   90.2%    41.0   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                  39.2%    36.4   2026-09-25    2% ▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   48.9%    46.1   2024-12-26    4% ▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   42.1%    45.8                 3% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/deepseek-chat-v3_openai_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   88.6%    44.7   2024-12-26    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1358.4    48.7   2026-09-13    2% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   58.5%    54.5   2024-12-28    1% ▇
+                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   87.2%    57.1   2024-12-28    1% ▇
+<a name="scicode-readme-leaderboard"></a>SciCode leaderboard     <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (offici…</a>    3.1%    50.3   2025-02-01    1% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   80.5%    52.1   2026-08-11    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
 <details><summary>Not counted (16)</summary>
 
@@ -68,7 +68,7 @@ api (Deep Infra) · $0.46/M blended · $0.32 in / $0.89 out per 1M tokens · [de
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~403.1GB   42.1
+4-bit q4_k_m  ~403.1GB   43.7
 </pre>
 
 ```sh

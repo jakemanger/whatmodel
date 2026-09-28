@@ -7042,7 +7042,18 @@
     "id": "first-party-openai",
     "name": "OpenAI official pricing and model documentation",
     "match": [
-      "developers.openai.com/api/docs/models/gpt-5.5-pro"
+      "developers.openai.com/api/docs/models/gpt-5.5-pro",
+      "developers.openai.com/api/docs/models/gpt-4",
+      "developers.openai.com/api/docs/models/gpt-3.5-turbo",
+      "developers.openai.com/api/docs/models/gpt-4-turbo",
+      "developers.openai.com/api/docs/models/gpt-4o",
+      "developers.openai.com/api/docs/models/gpt-4o-mini",
+      "developers.openai.com/api/docs/models/o1",
+      "developers.openai.com/api/docs/models/o3-mini",
+      "developers.openai.com/api/docs/models/gpt-4.1-nano",
+      "developers.openai.com/api/docs/models/gpt-5-pro",
+      "developers.openai.com/api/docs/models/gpt-5.2-pro",
+      "developers.openai.com/api/docs/models/gpt-5.4-pro"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",

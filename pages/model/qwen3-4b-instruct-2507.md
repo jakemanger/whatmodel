@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
-**score 39.0** ±2.8 · #155 of 205 · from 6 benchmark results across 4 sources
+**score 45.3** ±2.6 · #159 of 257 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    45.8%    37.9   2026-08-28   27% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        52.2%    45.4   2026-08-28   25% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            4.0%    29.2   2026-08-28    8% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.7%    35.1   2025-08-30   16% ▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  35.7%    37.7   2025-12-16   10% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.1%    37.2   2025-09-04   10% ▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 39.0
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        52.2%    51.3   2026-08-28   39% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    45.8%    42.6   2026-08-28   20% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            4.0%    33.2   2026-08-28    6% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.7%    40.2   2025-08-30   14% ▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  35.7%    42.9   2025-12-16    9% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.1%    42.4   2025-09-04    9% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 45.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -67,8 +67,8 @@ Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.91GB   39.0
-8-bit q8_0    ~5.32GB   39.0
+4-bit q4_k_m  ~2.91GB   45.3
+8-bit q8_0    ~5.32GB   45.3
 </pre>
 
 ```sh

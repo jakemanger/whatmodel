@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 3.21B params · llama3.2
 
-**score 18.0** ±1.6 · #201 of 205 · from 10 benchmark results across 9 sources
+**score 23.1** ±1.5 · #246 of 257 · from 10 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    4.3%    19.8   2026-09-25   28% ▇▇▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>    7.4%    20.0                18% ▇▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   19.1%    13.0   2026-04-06   13% ▇▇
-                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   15.0%    21.1   2025-09-30    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1166.5     9.2   2026-09-13   10% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   46.5%    21.2   2025-03-02    8% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   40.0%     9.2   2026-08-11    6% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   64.8%    22.6   2024-12-03    5% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   21.9%    23.9   2025-12-16    3% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   22.9%    17.9   2025-04-28    3% ▇
+<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    4.3%    24.9   2026-09-25   28% ▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   19.1%    19.0   2026-04-06   17% ▇▇
+                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   15.0%    26.0   2025-09-30    4% ▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>    7.4%    24.8                19% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1166.5    15.0   2026-09-13   10% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   46.5%    26.2   2025-03-02    7% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   40.0%    14.6   2026-08-11    5% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   64.8%    28.3   2024-12-03    5% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   21.9%    29.7   2025-12-16    3% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   22.9%    23.9   2025-04-28    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 18.0
+                        weighted average                        = 23.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
@@ -40,8 +40,8 @@ api (Cloudflare) · $0.12/M blended · $0.051 in / $0.335 out per 1M tokens · [
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.43GB   18.0
-8-bit q8_0    ~4.35GB   18.0
+4-bit q4_k_m  ~2.43GB   23.1
+8-bit q8_0    ~4.35GB   23.1
 </pre>
 
 ```sh

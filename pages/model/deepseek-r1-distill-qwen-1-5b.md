@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.78B params · mit
 
-**score 24.2** ±1.8 · #193 of 205 · from 8 benchmark results across 3 sources
+**score 31.6** ±1.6 · #228 of 257 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              33.8%    21.4   2026-09-25   28% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  16.9%    22.0   2026-09-25   22% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  83.9%    26.6   2026-09-25   13% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 28.9%    23.7   2026-09-25    9% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    33.6%    28.1   2026-08-28   10% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        21.4%    36.1   2026-08-28   10% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    29.2   2026-08-28    3% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  14.3%    -2.4   2025-04-28    4% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  16.9%    28.8   2026-09-25   21% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              33.8%    27.4   2026-09-25   20% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  83.9%    32.9   2026-09-25   14% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 28.9%    30.7   2026-09-25   14% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        21.4%    43.4   2026-08-28   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    33.6%    33.5   2026-08-28    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    33.2   2026-08-28    3% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  14.3%     4.6   2025-04-28    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 24.2
+                        weighted average                       = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.57GB   24.2
-8-bit q8_0    ~2.64GB   24.2
+4-bit q4_k_m  ~1.57GB   31.6
+8-bit q8_0    ~2.64GB   31.6
 </pre>
 
 ```sh

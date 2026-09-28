@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-08 · 753B params (40B active) · glm-5.3-license
 
-**score 66.0** ±1.1 · #27 of 205 · from 11 benchmark results across 3 sources
+**score 69.0** ±1.1 · #29 of 257 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        68.8%    66.9   2026-08-25   38% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           29.3%    65.3   2026-08-25   22% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     90.9%    64.4   2026-08-24    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         91.1%    60.3   2026-08-24    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                41.0%    62.7   2026-08-28    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     33.0%    68.9   2026-08-30    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            21.0%    63.0   2026-08-24    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1621.8    71.1   2026-09-24    9% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1483.0    67.5   2026-09-13    5% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   69.7%    62.4   2026-09-07    5% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   93.9%    61.6   2026-09-07    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        68.8%    70.0   2026-08-25   36% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           29.3%    68.7   2026-08-25   26% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         91.1%    63.9   2026-08-24    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     90.9%    66.9   2026-08-24    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                41.0%    65.6   2026-08-28    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            21.0%    66.7   2026-08-24    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     33.0%    75.0   2026-08-30    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1621.8    74.0   2026-09-24    9% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1483.0    70.6   2026-09-13    5% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   69.7%    66.0   2026-09-07    5% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   93.9%    65.2   2026-09-07    4% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 66.0
+                        weighted average                        = 69.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,8 +41,8 @@ api (Z.AI) · $2.15/M blended · $1.4 in / $4.4 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~452.3GB   66.0
-2-bit ud-q2_k_xl  ~226.4GB   66.0
+4-bit ud-q4_k_xl  ~452.3GB   69.0
+2-bit ud-q2_k_xl  ~226.4GB   69.0
 </pre>
 
 ```sh

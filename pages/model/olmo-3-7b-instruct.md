@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 23.5** ±1.4 · #196 of 205 · from 15 benchmark results across 2 sources
+**score 28.2** ±1.3 · #238 of 257 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                 44.3%    24.1   2026-09-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                 32.5%    19.7   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                77.2%    28.5   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>            71.2%    23.7   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>           64.4%    22.3   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  32.3%    24.3   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>  40.9%    24.8   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  85.6%    27.1   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     14.1%    24.3   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                32.9%    14.3   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                      69.1%    22.1   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          29.5%    10.2   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>  40.4%    24.9   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     60.2%    29.2   2026-09-25    3% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.0%    23.1   2026-05-02    7% ▇
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                 44.3%    29.0   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                 32.5%    24.6   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                77.2%    33.3   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>            71.2%    28.5   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>           64.4%    27.0   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  32.3%    28.9   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  85.6%    31.9   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>  40.9%    29.4   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     14.1%    29.0   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                32.9%    19.4   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                      69.1%    27.0   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          29.5%    15.4   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>  40.4%    29.7   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     60.2%    33.8   2026-09-25    3% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.0%    28.3   2026-05-02    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 23.5
+                        weighted average                       = 28.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -54,8 +54,8 @@ allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Inst
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.88GB   23.5
-8-bit q8_0    ~9.26GB   23.5
+4-bit q4_k_m  ~4.88GB   28.2
+8-bit q8_0    ~9.26GB   28.2
 </pre>
 
 ```sh

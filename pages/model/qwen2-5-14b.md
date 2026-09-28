@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 14.8B params · apache-2.0
 
-**score 36.6** ±2.4 · #169 of 205 · from 6 benchmark results across 6 sources
+**score 40.7** ±2.4 · #188 of 257 · from 6 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-14B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  82.5%    34.7   2024-10-19   33% ▇▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  69.6%    37.4   2025-03-01   19% ▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  70.9%    37.0   2026-08-11   14% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  79.0%    41.6   2024-09-18   12% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  36.9%    37.4   2025-10-01   10% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  55.6%    30.5   2026-09-19   10% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-14B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  82.5%    38.6   2024-10-19   37% ▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  69.6%    41.1   2025-03-01   18% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  70.9%    41.3   2026-08-11   13% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  79.0%    46.4   2024-09-18   12% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  36.9%    42.1   2025-10-01    9% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  55.6%    35.5   2026-09-19    9% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 36.6
+                        weighted average                       = 40.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,8 +48,8 @@ microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.38GB   36.6
-8-bit q8_0    ~18.26GB   36.6
+4-bit q4_k_m   ~9.38GB   40.7
+8-bit q8_0    ~18.26GB   40.7
 </pre>
 
 ```sh

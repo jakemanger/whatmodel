@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · closed weights
 
-**score 68.0** ±2.4 · #19 of 205 · from 4 benchmark results across 2 sources
+**score 70.8** ±2.5 · #22 of 257 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1534.4    65.4   2026-09-24   43% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1499.6    70.5   2026-09-13   24% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1291.5    71.0   2026-09-13   12% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                60.3%    71.6   2026-08-27   18% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1534.4    68.6   2026-09-24   47% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1499.6    73.5   2026-09-13   25% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1291.5    73.8   2026-09-13   14% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                60.3%    75.9   2026-08-27   10% ▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 68.0
+                        weighted average                        = 70.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

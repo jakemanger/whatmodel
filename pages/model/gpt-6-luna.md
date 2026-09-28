@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 66.5** ±2.2 · #24 of 205 · from 3 benchmark results across 3 sources
+**score 69.5** ±2.1 · #27 of 257 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       28.3%    65.0   2026-09-23   55% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1593.2    69.3   2026-09-24   35% ▇▇▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   57.1%    69.9   2026-09-22    8% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       28.3%    68.0   2026-09-23   55% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1593.2    72.2   2026-09-24   35% ▇▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   57.1%    73.0   2026-09-22    8% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 66.5
+                        weighted average                        = 69.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

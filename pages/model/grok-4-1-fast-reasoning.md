@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 56.0** ±2.5 · #79 of 205 · from 3 benchmark results across 1 source
+**score 59.3** ±2.5 · #90 of 257 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  53.3%    54.8   2026-09-11   35% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    53.8   2026-09-11   33% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  50.0%    60.6   2026-09-11   29% ▇▇▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  53.3%    58.4   2026-09-11   36% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    57.2   2026-09-11   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  50.0%    64.3   2026-09-11   26% ▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 56.0
+                        weighted average                       = 59.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

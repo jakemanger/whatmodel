@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 24.1** ±2.4 · #194 of 205 · from 4 benchmark results across 4 sources
+**score 28.6** ±2.3 · #235 of 257 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    5.5%    22.2   2026-09-25   62% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1240.6    22.8   2026-09-13   23% ▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   22.3%    24.3   2025-12-16    7% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   82.9%    40.8   2025-07-02    5% ▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 24.1
+<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    5.5%    27.1   2026-09-25   65% ▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1240.6    28.0   2026-09-13   22% ▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   22.3%    30.0   2025-12-16    7% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   82.9%    44.8   2025-07-02    3% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 28.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

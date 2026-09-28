@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 53.5** ±1.6 · #95 of 205 · from 5 benchmark results across 1 source
+**score 58.0** ±1.5 · #100 of 257 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                          score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>     19.3%    51.8   2026-08-29   74% ▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  82.3%    57.1   2026-08-07    8% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    57.3   2026-08-07    8% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  15.0%    60.1   2026-08-28    7% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         23.0%    64.3   2026-08-07    2% ▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>     19.3%    56.9   2026-08-29   74% ▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    61.4   2026-08-07   14% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  82.3%    60.3   2026-08-07    7% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         23.0%    68.0   2026-08-07    2% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  15.0%    61.5   2026-08-28    2% ▇
 prior     pull toward the middle                 50.0                 1% ▇
-          weighted average                     = 53.5
+          weighted average                     = 58.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

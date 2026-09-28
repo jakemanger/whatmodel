@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · MIT; underlying Llama 3.3 licence applies to weights
 
-**score 46.2** ±1.5 · #128 of 205 · from 9 benchmark results across 4 sources
+**score 52.3** ±0.7 · #130 of 257 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              65.2%    47.3   2026-09-25   21% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  57.5%    46.5   2026-09-25   17% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.5%    45.0   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 70.0%    47.5   2026-09-25    7% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    89.9%    48.7   2025-03-10   18% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    55.7%    43.2   2025-03-10    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        51.4%    45.2   2025-03-07    7% ▇
-<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>  59.7%    39.6   2025-01-31    7% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.8%    45.8   2025-04-28    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 46.2
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    89.9%    52.6   2025-03-10   84% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        51.4%    51.1   2025-03-07    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    55.7%    47.5   2025-03-10    1% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  57.5%    51.8   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              65.2%    52.2   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.5%    49.8   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 70.0%    52.1   2026-09-25    2% ▇
+<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>  59.7%    43.4   2025-01-31    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.8%    50.6   2025-04-28    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 52.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 

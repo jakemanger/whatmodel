@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · 2.27B params · apache-2.0
 
-**score 33.7** ±1.0 · #179 of 205 · from 22 benchmark results across 4 sources
+**score 38.4** ±1.0 · #201 of 257 · from 22 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,30 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-qwen--qwen3.5-2b"></a>Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFEval (aggregation unspecifi…</a>  78.6%    35.4   2026-03-02    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">GPQA (subset unspecified) (la…</a>  51.6%    36.8   2026-03-02    5% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PolyMATH (lab)</a>                  26.1%    33.8   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">C-Eval (lab)</a>                    73.2%    33.7   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-Redux (lab)</a>                79.6%    34.1   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MAXIFE (lab)</a>                    60.6%    34.2   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">WMT24++ (lab)</a>                   45.8%    33.3   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SuperGPQA (lab)</a>                 37.5%    33.4   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFBench (aggregation unspecif…</a>  41.3%    35.9   2026-03-02    4% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MultiChallenge (lab)</a>            33.7%    33.5   2026-03-02    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMLU (lab)</a>                     63.1%    33.1   2026-03-02    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-ProX (lab)</a>                 52.3%    32.2   2026-03-02    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">INCLUDE (lab)</a>                   55.4%    31.9   2026-03-02    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">LongBench v2 (lab)</a>              38.7%    34.3   2026-03-02    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Global PIQA (lab)</a>               69.3%    32.0   2026-03-02    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">NOVA-63 (lab)</a>                   46.4%    30.5   2026-03-02    2% ▇
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>   4.2%    35.3   2026-09-07   21% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   1.9%    27.8   2026-09-11   14% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  10.6%    37.7   2026-09-11    5% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>   2.8%    41.9   2026-08-25    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    29.2   2026-08-28    1% ▇
-<a name="libra-leaderboard"></a>ai-forever LIBRA lead…  <a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/Qwen_Qwen3.5-2B.json">LIBRA Mini (Russian long cont…</a>  37.4%    29.6   2026-06-08    0% ▇
+<a name="card-qwen--qwen3.5-2b"></a>Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFEval (aggregation unspecifi…</a>  78.6%    40.4   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">GPQA (subset unspecified) (la…</a>  51.6%    41.8   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PolyMATH (lab)</a>                  26.1%    38.7   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">C-Eval (lab)</a>                    73.2%    38.7   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-Redux (lab)</a>                79.6%    39.0   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MAXIFE (lab)</a>                    60.6%    39.2   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">WMT24++ (lab)</a>                   45.8%    38.3   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SuperGPQA (lab)</a>                 37.5%    38.3   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMLU (lab)</a>                     63.1%    38.1   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MultiChallenge (lab)</a>            33.7%    38.4   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFBench (aggregation unspecif…</a>  41.3%    40.9   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-ProX (lab)</a>                 52.3%    37.2   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">INCLUDE (lab)</a>                   55.4%    36.8   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">LongBench v2 (lab)</a>              38.7%    39.3   2026-03-02    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Global PIQA (lab)</a>               69.3%    37.0   2026-03-02    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">NOVA-63 (lab)</a>                   46.4%    35.5   2026-03-02    2% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>   4.2%    39.7   2026-09-07   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>   1.9%    32.6   2026-09-11   15% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  10.6%    42.1   2026-09-11    5% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>   2.8%    45.9   2026-08-25    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    33.2   2026-08-28    1% ▇
+<a name="libra-leaderboard"></a>ai-forever LIBRA lead…  <a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/Qwen_Qwen3.5-2B.json">LIBRA Mini (Russian long cont…</a>  37.4%    35.1   2026-06-08    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 33.7
+                        weighted average                       = 38.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -94,9 +94,9 @@ Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/1
 
 <pre>
 download                       size  score
-8-bit q8_0                  ~3.22GB   33.7
-4-bit q4_k_m                ~1.86GB   33.7
-4-bit mlx-mxfp8 · mac only  ~1.86GB   33.7
+8-bit q8_0                  ~3.22GB   38.4
+4-bit q4_k_m                ~1.86GB   38.4
+4-bit mlx-mxfp8 · mac only  ~1.86GB   38.4
 </pre>
 
 ```sh

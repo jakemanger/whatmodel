@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-04 · closed weights
 
-**score 59.0** ±1.1 · #55 of 205 · from 11 benchmark results across 3 sources
+**score 63.1** ±1.1 · #61 of 257 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        42.8%    59.5   2026-06-17   37% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           14.6%    61.5   2026-06-17   21% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     88.8%    62.2   2026-06-17    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         93.3%    62.4   2026-06-17    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                33.2%    58.9   2026-08-27    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            25.0%    65.5   2026-06-17    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1357.0    53.9   2026-09-24    9% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1442.7    60.0   2026-09-13    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1193.2    63.5   2026-08-24    3% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1243.2    59.4   2026-09-13    3% ▇
-<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    4.3%    51.2   2026-06-11    9% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        42.8%    63.7   2026-06-17   34% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           14.6%    65.3   2026-06-17   25% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         93.3%    65.7   2026-06-17    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     88.8%    65.0   2026-06-17    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                33.2%    61.1   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            25.0%    69.2   2026-06-17    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1357.0    57.7   2026-09-24    9% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1442.7    63.5   2026-09-13    5% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1193.2    66.7   2026-08-24    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1243.2    63.1   2026-09-13    3% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    4.3%    54.6   2026-06-11    8% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 59.0
+                        weighted average                        = 63.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

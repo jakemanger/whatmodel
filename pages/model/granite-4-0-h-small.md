@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 33.7** ±3.5 · #180 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 38.2** ±3.5 · #203 of 257 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1285.5    31.1   2026-09-13   49% ▇▇▇▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   44.5%    34.6   2026-05-02   46% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1285.5    35.9   2026-09-13   50% ▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   44.5%    39.4   2026-05-02   44% ▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 33.7
+                        weighted average                        = 38.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -61,7 +61,7 @@ api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [rep
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.82GB   33.7
+4-bit q4_k_m  ~19.82GB   38.2
 </pre>
 
 ```sh

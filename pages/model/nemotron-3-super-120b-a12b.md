@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
-**score 50.0** ±2.2 · #113 of 205 · from 4 benchmark results across 2 sources
+**score 53.6** ±2.2 · #126 of 257 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    52.1   2026-09-11   28% ▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    52.7   2026-09-11   27% ▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    48.4   2026-09-11   23% ▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1360.5    44.9   2026-09-13   19% ▇▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    55.8   2026-09-11   29% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    56.2   2026-09-11   28% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    52.0   2026-09-11   21% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1360.5    49.1   2026-09-13   20% ▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 50.0
+                        weighted average                        = 53.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -57,7 +57,7 @@ api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens ·
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~72.86GB   50.0
+4-bit q4_k_m  ~72.86GB   53.6
 </pre>
 
 ```sh

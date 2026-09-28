@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 14.8B params · mit
 
-**score 43.6** ±1.6 · #137 of 205 · from 9 benchmark results across 3 sources
+**score 50.5** ±0.7 · #139 of 257 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              59.1%    43.4   2026-09-25   23% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  53.1%    44.2   2026-09-25   18% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  93.9%    43.3   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 69.7%    47.3   2026-09-25    7% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    87.1%    46.9   2025-03-11   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    44.7%    37.2   2025-03-10    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        50.6%    45.0   2026-08-28    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            1.0%    29.2   2026-08-28    2% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.3%    37.5   2025-04-28    3% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 43.6
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    87.1%    50.9   2025-03-11   84% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        50.6%    50.9   2026-08-28    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    44.7%    41.9   2025-03-10    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            1.0%    33.2   2026-08-28    0% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  53.1%    49.6   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              59.1%    48.4   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  93.9%    48.3   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 69.7%    51.9   2026-09-25    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.3%    42.7   2025-04-28    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 50.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
@@ -37,8 +37,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.38GB   43.6
-8-bit q8_0    ~18.26GB   43.6
+4-bit q4_k_m   ~9.38GB   50.5
+8-bit q8_0    ~18.26GB   50.5
 </pre>
 
 ```sh

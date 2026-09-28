@@ -6,7 +6,7 @@
 
 Meta · released 2026-07 · closed weights
 
-**score 65.7** ±1.6 · #28 of 205 · from 7 benchmark results across 3 sources
+**score 68.6** ±1.5 · #31 of 257 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>   56.9%    63.3   2026-09-07   49% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>   50.6%    72.0   2026-08-25    5% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1542.4    66.0   2026-09-24   18% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1492.6    69.2   2026-09-13   10% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1281.2    68.6   2026-09-13    5% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1479.5    70.0   2026-09-13    4% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                57.8%    70.4   2026-08-31    8% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>   56.9%    66.4   2026-09-07   52% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>   50.6%    74.8   2026-08-25    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1542.4    69.1   2026-09-24   18% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1492.6    72.3   2026-09-13   10% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1281.2    71.5   2026-09-13    6% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1479.5    72.7   2026-09-13    4% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                57.8%    74.5   2026-08-31    4% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 65.7
+                        weighted average                        = 68.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

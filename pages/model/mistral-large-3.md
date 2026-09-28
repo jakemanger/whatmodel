@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
-**score 47.4** ±2.3 · #123 of 205 · from 5 benchmark results across 2 sources
+**score 51.6** ±2.2 · #131 of 257 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1228.6    45.6   2026-09-24   37% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.0    54.6   2026-09-13   20% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1201.3    49.4   2026-09-13   11% ▇
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   54.0%    44.5   2026-09-25   16% ▇▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    43.4   2026-09-25   15% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1228.6    49.9   2026-09-24   37% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1413.0    58.3   2026-09-13   20% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1201.3    53.9   2026-09-13   11% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   54.0%    48.9   2026-09-25   15% ▇▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    47.9   2026-09-25   14% ▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 47.4
+                        weighted average                        = 51.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,9 +46,9 @@ api (Mistral AI) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~405.5GB   47.4
-2-bit ud-q2_k_xl     ~203GB   47.4
-1-bit ud-iq1_s    ~101.75GB   47.4
+4-bit ud-q4_k_xl   ~405.5GB   51.6
+2-bit ud-q2_k_xl     ~203GB   51.6
+1-bit ud-iq1_s    ~101.75GB   51.6
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Tencent · released 2026-07 · 299B params (21B active) · apache-2.0
 
-**score 62.8** ±2.9 · #42 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.0** ±2.8 · #46 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1509.2    63.8   2026-09-24   62% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1455.8    62.5   2026-09-13   34% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1509.2    67.1   2026-09-24   63% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1455.8    65.8   2026-09-13   34% ▇▇▇▇
 prior                   pull toward the middle               50.0                 4% ▇
-                        weighted average                   = 62.8
+                        weighted average                   = 66.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -67,8 +67,8 @@ api (Deep Infra) · $0.23/M blended · $0.13 in / $0.53 out per 1M tokens · [de
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~179.9GB   62.8
-2-bit iq2_m    ~90.2GB   62.8
+4-bit q4_k_m  ~179.9GB   66.0
+2-bit iq2_m    ~90.2GB   66.0
 </pre>
 
 ```sh

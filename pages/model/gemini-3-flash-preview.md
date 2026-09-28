@@ -6,7 +6,7 @@
 
 Google · released 2025-12 · closed weights
 
-**score 58.7** ±2.5 · #60 of 205 · from 3 benchmark results across 2 sources
+**score 65.7** ±1.1 · #47 of 257 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  58.2%    57.8   2026-09-11   35% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  43.4%    55.7   2026-09-11   29% ▇▇▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC-AGI-2 public evaluation s…</a>  34.0%    63.0   2026-06-04   33% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 58.7
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       51.2%    65.7   2026-06-11   35% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          17.1%    66.0   2026-06-11   26% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        95.6%    68.1   2026-08-06    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              75.4%    65.7   2026-02-18    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    89.4%    65.5   2026-08-06    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               66.8%    79.6   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           40.0%    76.3   2026-08-06    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>    20.0%    67.1   2026-08-05    1% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  58.2%    61.4   2026-09-11    7% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  43.4%    59.4   2026-09-11    5% ▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC-AGI-2 public evaluation s…</a>  34.0%    66.6   2026-06-04    7% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 65.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt))</sub>
 
 ## How to run it
 

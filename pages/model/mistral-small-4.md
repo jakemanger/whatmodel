@@ -6,7 +6,7 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 46.3** ±3.5 · #127 of 205 · from 3 benchmark results across 2 sources
+**score 50.8** ±3.5 · #134 of 257 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    48.3   2026-09-25   38% ▇▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    49.9   2026-09-25   36% ▇▇▇▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    35.6   2026-04-04   21% ▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 46.3
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    52.7   2026-09-25   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    54.2   2026-09-25   37% ▇▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    40.3   2026-04-04   19% ▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 50.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,8 +47,8 @@ api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.m
 
 <pre>
 download             size  score
-4-bit ud-q4_k_m   ~71.9GB   46.3
-2-bit ud-q2_k_xl  ~36.2GB   46.3
+4-bit ud-q4_k_m   ~71.9GB   50.8
+2-bit ud-q2_k_xl  ~36.2GB   50.8
 </pre>
 
 ```sh

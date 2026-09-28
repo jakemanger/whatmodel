@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7.62B params · mit
 
-**score 36.9** ±2.0 · #166 of 205 · from 5 benchmark results across 2 sources
+**score 42.6** ±1.9 · #177 of 257 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              49.1%    36.6   2026-09-25   36% ▇▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  37.6%    36.0   2026-09-25   28% ▇▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  92.8%    40.6   2026-09-25   17% ▇▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 55.5%    39.0   2026-09-25   12% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  25.3%    22.4   2025-04-28    5% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  37.6%    42.0   2026-09-25   28% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              49.1%    41.9   2026-09-25   27% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  92.8%    45.7   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 55.5%    44.4   2026-09-25   19% ▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  25.3%    28.2   2025-04-28    5% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 36.9
+                        weighted average                       = 42.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.07GB   36.9
-8-bit q8_0    ~9.64GB   36.9
+4-bit q4_k_m  ~5.07GB   42.6
+8-bit q8_0    ~9.64GB   42.6
 </pre>
 
 ```sh

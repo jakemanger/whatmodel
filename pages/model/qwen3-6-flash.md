@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 52.1** ±1.5 · #105 of 205 · from 6 benchmark results across 1 source
+**score 56.8** ±1.5 · #108 of 257 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                          score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>     17.2%    50.8   2026-08-29   68% ▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  83.3%    57.8   2026-08-07    8% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      84.4%    56.1   2026-08-07    7% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             15.9%    48.0   2026-08-27    7% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  12.0%    56.0   2026-08-27    6% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         20.0%    62.3   2026-08-07    2% ▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>     17.2%    56.1   2026-08-29   71% ▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      84.4%    60.3   2026-08-07   13% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  83.3%    60.9   2026-08-07    7% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             15.9%    48.4   2026-08-27    4% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         20.0%    66.1   2026-08-07    2% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  12.0%    55.2   2026-08-27    2% ▇
 prior     pull toward the middle                 50.0                 1% ▇
-          weighted average                     = 52.1
+          weighted average                     = 56.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

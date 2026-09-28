@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 66.5** ±1.1 · #25 of 205 · from 8 benchmark results across 2 sources
+**score 70.0** ±1.1 · #24 of 257 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                         score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>    65.6%    65.9   2026-09-02   39% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       34.1%    66.3   2026-09-02   22% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.0%    61.0   2026-09-10   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 92.3%    66.1   2026-09-02    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    100.0%    80.1   2026-09-02    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>            47.3%    65.6   2026-09-02    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>        40.0%    72.7   2026-09-02    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>   1660.6    73.6   2026-09-24    9% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>    65.6%    69.2   2026-09-02   36% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       34.1%    69.5   2026-09-02   27% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.0%    64.2   2026-09-10   14% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    100.0%    80.7   2026-09-02    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 92.3%    68.5   2026-09-02    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>            47.3%    68.9   2026-09-02    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>        40.0%    76.3   2026-09-02    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>   1660.6    76.4   2026-09-24    9% ▇
 prior                   pull toward the middle                50.0                 1% ▇
-                        weighted average                    = 66.5
+                        weighted average                    = 70.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

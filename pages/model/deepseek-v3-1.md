@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-08 · 685B params (37B active) · mit
 
-**score 57.8** ±1.7 · #64 of 205 · from 11 benchmark results across 5 sources
+**score 61.3** ±1.7 · #71 of 257 · from 11 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-deepseek-ai-deepseek-v3-1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">LiveCodeBench 2024-08–2025-05…</a>   74.8%    58.8   2025-09-05   12% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">AIME 2024 (lab)</a>                  93.1%    61.1   2025-09-05   12% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Aider polyglot (225 exercises…</a>   76.3%    58.6   2025-09-05   11% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">HMMT 2025 (edition unspecifie…</a>   84.2%    61.8   2025-09-05   11% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">MMLU-Redux (lab)</a>                 93.7%    55.6   2025-09-05    8% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">SWE-bench Multilingual (lab)</a>     54.5%    63.1   2025-09-05    7% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Terminal-Bench (pre-2.0) with…</a>   31.3%    70.0   2025-09-05    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1416.0    55.1   2026-09-13   11% ▇
-<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   30.8%    58.8   2026-06-17   11% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   80.5%    48.3   2026-08-11    7% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   82.6%    47.6   2025-09-01    6% ▇
+<a name="card2-deepseek-ai-deepseek-v3-1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">AIME 2024 (lab)</a>                  93.1%    64.1   2025-09-05   15% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">HMMT 2025 (edition unspecifie…</a>   84.2%    64.8   2025-09-05   14% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">LiveCodeBench 2024-08–2025-05…</a>   74.8%    62.0   2025-09-05   13% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Aider polyglot (225 exercises…</a>   76.3%    61.9   2025-09-05   10% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">MMLU-Redux (lab)</a>                 93.7%    58.8   2025-09-05    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">SWE-bench Multilingual (lab)</a>     54.5%    67.3   2025-09-05    5% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1/blob/c0781d039fb7a1ba2abc4add0bdc293e92d2b8db/README.md">Terminal-Bench (pre-2.0) with…</a>   31.3%    76.5   2025-09-05    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1416.0    58.8   2026-09-13   12% ▇
+<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   30.8%    62.3   2026-06-17   10% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   80.5%    52.2   2026-08-11    6% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   82.6%    52.2   2025-09-01    6% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 57.8
+                        weighted average                        = 61.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -57,9 +57,9 @@ api (Deep Infra) · $0.42/M blended · $0.25 in / $0.95 out per 1M tokens · [de
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~411.5GB   57.8
-2-bit ud-q2_k_xl     ~206GB   57.8
-1-bit ud-iq1_s    ~103.25GB   57.8
+4-bit ud-q4_k_xl   ~411.5GB   61.3
+2-bit ud-q2_k_xl     ~206GB   61.3
+1-bit ud-iq1_s    ~103.25GB   61.3
 </pre>
 
 ```sh

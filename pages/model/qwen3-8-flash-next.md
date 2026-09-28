@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 180B params (6B active) · qwen-community-1.0
 
-**score 68.7** ±3.4 · #15 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 71.8** ±3.2 · #16 of 257 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1636.3    72.1   2026-09-24   81% ▇▇▇▇▇▇▇▇▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   46.9%    56.0   2026-09-22   14% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1636.3    74.9   2026-09-24   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   46.9%    60.3   2026-09-22   13% ▇▇
 prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 68.7
+                        weighted average                        = 71.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~108.5GB   68.7
-2-bit ud-q2_k_xl   ~54.5GB   68.7
+4-bit q4_k_m      ~108.5GB   71.8
+2-bit ud-q2_k_xl   ~54.5GB   71.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2025-11 · closed weights
 
-**score 60.4** ±2.7 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 64.7** ±1.9 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   62.0%    60.3   2026-09-11   41% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   51.1%    61.4   2026-09-11   34% ▇▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1307.1    60.9   2026-05-10   21% ▇▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 60.4
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         91.4%    64.1   2025-11-19   21% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               72.9%    63.6   2026-02-13   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     92.6%    68.9   2025-11-19   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            31.0%    72.4   2025-12-08    3% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   62.0%    63.8   2026-09-11   21% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   51.1%    65.1   2026-09-11   15% ▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1307.1    64.3   2026-05-10   11% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 64.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>
 
 ## How to run it
 

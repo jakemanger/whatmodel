@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 106B params (12B active) · mit
 
-**score 46.8** ±3.3 · #124 of 205 · from 3 benchmark results across 3 sources
+**score 50.8** ±3.3 · #133 of 257 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.2    47.2   2026-09-13   43% ▇▇▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    45.7   2026-05-02   41% ▇▇▇▇▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    47.5   2025-11-18   11% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.2    51.3   2026-09-13   45% ▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    50.1   2026-05-02   39% ▇▇▇▇▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    51.5   2025-11-18   11% ▇
 prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 46.8
+                        weighted average                        = 50.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -59,8 +59,8 @@ api (Z.AI) · $0.43/M blended · $0.2 in / $1.1 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download             size  score
-4-bit ud-q4_k_xl  ~64.1GB   46.8
-2-bit ud-q2_k_xl  ~32.3GB   46.8
+4-bit ud-q4_k_xl  ~64.1GB   50.8
+2-bit ud-q2_k_xl  ~32.3GB   50.8
 </pre>
 
 ```sh

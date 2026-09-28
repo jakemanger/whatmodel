@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 46.0** ±4.8 · #129 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±4.6 · #145 of 257 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1363.9    45.5   2026-09-13   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1363.9    49.7   2026-09-13   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                10% ▇
-                        weighted average                = 46.0
+                        weighted average                = 49.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

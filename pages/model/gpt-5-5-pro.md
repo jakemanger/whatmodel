@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 74.5** ±1.5 · #7 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 76.7** ±1.4 · #8 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                       score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  87.7%    74.9   2026-06-12   63% ▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     78.0%    74.5   2026-06-12   36% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  87.7%    77.0   2026-06-12   57% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     78.0%    76.8   2026-06-12   42% ▇▇▇▇▇
 prior     pull toward the middle              50.0                 1% ▇
-          weighted average                  = 74.5
+          weighted average                  = 76.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

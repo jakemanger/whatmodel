@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 33.9** ±2.7 · #178 of 205 · from 4 benchmark results across 4 sources
+**score 38.6** ±2.7 · #198 of 257 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1314.2    36.4   2026-09-13   29% ▇▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    42.3   2026-05-02   27% ▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   45.8%    20.8   2026-03-26   23% ▇▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   64.9%    31.1   2026-08-11   17% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1314.2    41.0   2026-09-13   31% ▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    46.8   2026-05-02   27% ▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   45.8%    25.8   2026-03-26   22% ▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   64.9%    35.7   2026-08-11   16% ▇▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 33.9
+                        weighted average                        = 38.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -56,8 +56,8 @@ api (Deep Infra) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [de
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.46GB   33.9
-8-bit q8_0    ~38.42GB   33.9
+4-bit q4_k_m  ~19.46GB   38.6
+8-bit q8_0    ~38.42GB   38.6
 </pre>
 
 ```sh

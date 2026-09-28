@@ -6,7 +6,7 @@
 
 Z.ai · closed weights
 
-**score 56.0** ±2.6 · #78 of 205 · from 4 benchmark results across 1 source
+**score 59.6** ±2.5 · #86 of 257 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1400.3    56.7   2026-09-24   47% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1432.7    58.2   2026-09-13   26% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1228.3    55.9   2026-09-13   14% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1400.1    47.8   2026-09-13   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1400.3    60.4   2026-09-24   47% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1432.7    61.7   2026-09-13   25% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1228.3    59.9   2026-09-13   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1400.1    52.8   2026-09-13   11% ▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 56.0
+                        weighted average                        = 59.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -103966,5 +103966,3015 @@
     "date": "2026-03-26",
     "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 14.92846154 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-300M",
     "source_id": "open-asr"
+  },
+  {
+    "model": "claude-2-0",
+    "bench": "gpqa-diamond",
+    "score": 0.3465909090909091,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-2.0'; run id mTa4f52zsEuxdrPy7WfQvX; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.025076255983551475.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-2-0",
+    "bench": "math-level-5",
+    "score": 0.1172583081570997,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-2.0'; run id Gs4vxvDD5wmrSvyTkqx2YV; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006595670913969979.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-2-0",
+    "bench": "otis-mock-aime",
+    "score": 0.025,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-2.0'; run id 7LLTmqs4LC5GLVfJEqJWSC; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015179897658722631.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-2-1",
+    "bench": "gpqa-diamond",
+    "score": 0.32954545454545453,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-2.1'; run id eMAisrJd7fAUHPfcPWXeXo; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02324885083265289.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-2-1",
+    "bench": "otis-mock-aime",
+    "score": 0.019444444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-2.1'; run id 2vg9qw9pd8zSyRMu9YNiVm; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010477515876628662.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "gpqa-diamond",
+    "score": 0.3813131313131313,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-03-12",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-5-haiku-20241022'; run id JpLxrpvthx7A75sbaHZ9Et; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026351515390511556.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "math-level-5",
+    "score": 0.46355740181268884,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-03-12",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-5-haiku-20241022'; run id GSvi9Zf5aK3t5TfCPqNRHy; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011611728105526228.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "otis-mock-aime",
+    "score": 0.043055555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-5-haiku-20241022'; run id cqhrR5KnwpcuAVpHkZGQFd; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.016237638827815495.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "gpqa-diamond",
+    "score": 0.5404040404040404,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-5-sonnet-20240620'; run id 78Wpvp8WDByAcQRBas72cs; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027528555453348653.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "math-level-5",
+    "score": 0.5168051359516617,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-5-sonnet-20240620'; run id H42HJG29bwqzaMewTMsmky; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0116250120233614.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "otis-mock-aime",
+    "score": 0.06527777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-5-sonnet-20240620'; run id 2xNPhKLsiWLHQBLLDGU4VJ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.022293131815660016.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "bench": "gpqa-diamond",
+    "score": 0.553030303030303,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-5-sonnet-20241022'; run id JCCVcVLz3J4TQXSU67hMJZ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.028208090147078847.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "bench": "math-level-5",
+    "score": 0.5694864048338368,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-5-sonnet-20241022'; run id AjroyuZECXLtMTwnzaMHtX; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011091284283577038.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "bench": "otis-mock-aime",
+    "score": 0.08472222222222223,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-5-sonnet-20241022'; run id geVVaRWxuprKUqnW2VzvCa; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026363956855902478.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "gpqa-diamond",
+    "score": 0.7973484848484849,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-05-26",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-7-sonnet-20250219_64K'; run id 2t26VSNdsAE5pefQEMP25x; effort 64K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026506883123060064.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "math-level-5",
+    "score": 0.9116314199395771,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-03-13",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-7-sonnet-20250219_64K'; run id epCyFNTf6vyUi5Dby7GeTq; effort 64K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007803306377082018.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "otis-mock-aime",
+    "score": 0.5777777777777777,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-13",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-7-sonnet-20250219_64K'; run id QW3FUBn5qtAFEX4oQuzEAV; effort 64K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07446027270295805.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "swe-bench-verified",
+    "score": 0.609504132231405,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-02-04",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'claude-3-7-sonnet-20250219'; run id cnM8U6moeqrp74wnXRj2Jj; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.022198466971122266. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "gpqa-diamond",
+    "score": 0.3630050505050505,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-haiku-20240307'; run id T3FWdCCWBryVjxwTcoY5bK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024180910672074975.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "math-level-5",
+    "score": 0.1487915407854985,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-haiku-20240307'; run id QSnWVKUVj9six4jYj4HJD9; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007229965913719499.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "otis-mock-aime",
+    "score": 0.018055555555555554,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-haiku-20240307'; run id ThMd6DNDTtyWxhPcb9Kq4y; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008098544298396251.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "epoch-chess",
+    "score": 0.05,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-07-15",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'claude-3-opus-20240229'; run id QHfG7caFexs6vKJfmYsVBp; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.021904291355759033.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "gpqa-diamond",
+    "score": 0.4715909090909091,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-opus-20240229'; run id hTnDa4gn8RYduCEYqoNywe; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026395393956533515.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "math-level-5",
+    "score": 0.37481117824773413,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-opus-20240229'; run id 6SNzvpd6kXXxqpJoaHsSDd; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01058728426376393.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "otis-mock-aime",
+    "score": 0.04722222222222222,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-opus-20240229'; run id mYb9MGQD39RS8VdDyMqujr; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.019579258477123922.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "simpleqa-verified",
+    "score": 0.126,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-31",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'claude-3-opus-20240229'; run id NxVp4VF8uQbL5S6hx6HFRB; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010499249222407964.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "gpqa-diamond",
+    "score": 0.4059343434343434,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-3-sonnet-20240229'; run id QLejPZXhjX6SQCQgzjNvCG; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023920223491748827.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "math-level-5",
+    "score": 0.18174093655589124,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-3-sonnet-20240229'; run id FD2ztfjFUeqGyrtF8yuCUB; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007981817344047291.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "otis-mock-aime",
+    "score": 0.025,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-3-sonnet-20240229'; run id AeRCEiG87bMFpxbxbmjCyn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01950297827553939.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "epoch-chess",
+    "score": 0.07,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-07-20",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805'; run id cb9qw7m5zpPWKqRDLB4ktU; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02564323999762428.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "epoch-ebr",
+    "score": 0.079365,
+    "source": "https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv",
+    "by": "independent",
+    "date": "2026-06-25",
+    "note": "Epoch AI internal evaluation; file ebr_bench.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805'; run id NMncsmkDVG6ZmNufPxNs2m; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.024390243902439025,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-06-11",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805_32K'; run id 9zT72xRR6wZhiwraJTNPyz; effort 32K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024390243902439022.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "frontiermath",
+    "score": 0.12631578947368421,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-06-11",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805_32K'; run id 5eRkmXCURH2pRbhJoukfnC; effort 32K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0197127354633578.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "gpqa-diamond",
+    "score": 0.7676767676767676,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-08-05",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805_27K'; run id 3obcsGCfuwYeEm9wRyqzPg; effort 27K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.030088629490217445.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "epoch-mystery-games",
+    "score": 0.21,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-07-25",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805_24K'; run id 2AbeCjy9w4KJWKhbKjtFTJ; effort 24K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.040936018074033236.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "otis-mock-aime",
+    "score": 0.6888888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-08-05",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805_27K'; run id UH9RY8MCAotDgFocHKA4j6; effort 27K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06979205927323111.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "swe-bench-verified",
+    "score": 0.7334710743801653,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-02-11",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-1-20250805'; run id cA6Mq67yaynLhY8F5kes3c; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.020118245554677085. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "gpqa-diamond",
+    "score": 0.7626262626262627,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-05-22",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-20250514_16K'; run id CtxFusPxCraL3EeRJu2c5k; effort 16K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03031371053819892.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "math-level-5",
+    "score": 0.850453172205438,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-05-22",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-20250514'; run id YbrpPbWuYAXNqbSfU4so7f; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009804690367660946.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "otis-mock-aime",
+    "score": 0.6444444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-05-28",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-20250514_27K'; run id VrRccga4uRVuCjNp637MeY; effort 27K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0721639236343101.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "swe-bench-verified",
+    "score": 0.7066115702479339,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-02-06",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'claude-opus-4-20250514'; run id RbcvuVChvxK6SMQbPK8iRn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02071754535128056. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "gpqa-diamond",
+    "score": 0.7918781725888325,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-05-26",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'claude-sonnet-4-20250514_59K'; run id J9wjcQqKJ7hCSYnnoa5E9i; effort 59K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02674821434321096.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "math-level-5",
+    "score": 0.8436555891238671,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-05-22",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'claude-sonnet-4-20250514'; run id dZLNhNKQVUgnB5ygAEUCcT; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00998490304339695.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "otis-mock-aime",
+    "score": 0.6888888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-05-23",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-sonnet-4-20250514_59K'; run id g8qaq3s2TJqfvrskHYmapM; effort 59K; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06979205927323111.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "dbrx-instruct",
+    "bench": "gpqa-diamond",
+    "score": 0.32891414141414144,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'dbrx-instruct'; run id TTa3hu7PgRxHgizVreZsdJ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03256944333564935.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "dbrx-instruct",
+    "bench": "math-level-5",
+    "score": 0.11650302114803625,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'dbrx-instruct'; run id PMbefrjykQmTBpABMa7FJi; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007355853708151387.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'deepseek-llm-67b-chat'; run id 3t8aBtMCF3Z24rUH9qJePk; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "gpqa-diamond",
+    "score": 0.24621212121212122,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'deepseek-llm-67b-chat'; run id 82RTgqgiC2UuM5M37L3WWM; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.013623351950761947.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "math-level-5",
+    "score": 0.06391616314199396,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'deepseek-llm-67b-chat'; run id Cm4UkgA5TtmzQegrq3rbvm; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004016844149550666.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "otis-mock-aime",
+    "score": 0.008333333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'deepseek-llm-67b-chat'; run id Y5rC5REnP83Q7mAoMtjiRq; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004700633956814719.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "eurus-2-7b-prime",
+    "bench": "gpqa-diamond",
+    "score": 0.3390151515151515,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Eurus-2-7B-PRIME'; run id RJm4u2vXF6PUmThJGzAfHE; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02107317439394748.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-0-pro-001",
+    "bench": "gpqa-diamond",
+    "score": 0.33964646464646464,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-1.0-pro-001'; run id ibpS8bs4z3wD3Hb6F3kpdV; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.020110933405176737.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-0-pro-001",
+    "bench": "math-level-5",
+    "score": 0.11244335347432025,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-1.0-pro-001'; run id iUdecHq9vU5utytzgTXzqY; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.005990949270731778.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-0-pro-001",
+    "bench": "otis-mock-aime",
+    "score": 0.011111111111111112,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-1.0-pro-001'; run id NpJvYQDcmwbGgS5MzZUPUg; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006054026310473157.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "gpqa-diamond",
+    "score": 0.40372474747474746,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-001'; run id Hc2ycMP6DyCZxCPjKbZFQU; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023852475604024478.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "math-level-5",
+    "score": 0.2512273413897281,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-001'; run id CPpd4hqQHtZ5pUejBELwKb; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009456393246526343.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "otis-mock-aime",
+    "score": 0.03888888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-001'; run id U9GVBhYjRzU55YVjna5mMT; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014363726487520755.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "gpqa-diamond",
+    "score": 0.47316919191919193,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-002'; run id PCLvrs4TEBtqQqcYeU8pAG; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027737408277040958.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "math-level-5",
+    "score": 0.6186744712990937,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-002'; run id kDnfjYKQpnLGEjuhBc9AvM; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01120122127580226.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "otis-mock-aime",
+    "score": 0.1625,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-002'; run id QdGZ2m52PWt3EkLPbcoRwz; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04111375571619442.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-8b-001",
+    "bench": "gpqa-diamond",
+    "score": 0.32954545454545453,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-03-12",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-8b-001'; run id gFT36W4KU3wggLQ9nNCctg; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02416551116211757.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-flash-8b-001",
+    "bench": "otis-mock-aime",
+    "score": 0.04583333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-flash-8b-001'; run id jGY5Ee5P9dyStA4Fw5Pa6q; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.020100756305184247.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "gpqa-diamond",
+    "score": 0.4586489898989899,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-pro-001'; run id PKdqpKZ9tqDWyWJ7GksBWz; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02617295639558329.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "math-level-5",
+    "score": 0.4074773413897281,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-pro-001'; run id PxLmyq7PFfARAuqxg5oPtE; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010574902459145802.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "otis-mock-aime",
+    "score": 0.06805555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-pro-001'; run id 3S6fjGAMKWKK3zcdxkmh9H; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01893034295514878.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "gpqa-diamond",
+    "score": 0.5722853535353535,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-pro-002'; run id 9TrLEEw8TvsyugyCjwvUvD; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027959709636504244.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "math-level-5",
+    "score": 0.7039274924471299,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-pro-002'; run id QyqLmgcJpeDMsnQyaaJVkR; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010174893415515739.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "otis-mock-aime",
+    "score": 0.23055555555555557,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-1.5-pro-002'; run id fhCdyX9uUS4WPtjLiVdBdK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05186782011216038.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "gpqa-diamond",
+    "score": 0.6414141414141414,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-06",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-flash-001'; run id fbszwTApm3f28z5VA6oXBK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027395618179027574.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "math-level-5",
+    "score": 0.8216578549848943,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-06",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-flash-001'; run id SqwGZz2UfTmbvPiw2rq3LH; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008734081505176936.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "otis-mock-aime",
+    "score": 0.3111111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-flash-001'; run id ZnGSRrKbiEnuju4kk4sgVb; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06311218144454454.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-flash-thinking-exp-01-21",
+    "bench": "gpqa-diamond",
+    "score": 0.5707070707070707,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-06",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-flash-thinking-exp-01-21'; run id ag9w2w4xa47ghZaWt5oZey; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03526552724601199.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-flash-thinking-exp-01-21",
+    "bench": "otis-mock-aime",
+    "score": 0.5777777777777777,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-flash-thinking-exp-01-21'; run id cXz2gsCmGYSvQ6Ey4LDiN7; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07446027270295805.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-pro-exp-02-05",
+    "bench": "gpqa-diamond",
+    "score": 0.6565656565656566,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-pro-exp-02-05'; run id g5YE7G6DXb45EH4HxEdiht; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03383201223244441.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-0-pro-exp-02-05",
+    "bench": "math-level-5",
+    "score": 0.8345921450151057,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-06",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-2.0-pro-exp-02-05'; run id fvDt6HaHV5d3gSEuavixsv; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01021492751504924.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-5-flash-preview-04-17",
+    "bench": "otis-mock-aime",
+    "score": 0.7305555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-22",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-2.5-flash-preview-04-17'; run id KpZYG5nvdJ6QYweLz6dn5a; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05532781604070319.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-5-flash-preview-05-20",
+    "bench": "otis-mock-aime",
+    "score": 0.7083333333333334,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-05-20",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-2.5-flash-preview-05-20'; run id 9e62UjoHQbcZD2xjgfRkdK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05715807427254223.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-5-pro-exp-03-25",
+    "bench": "gpqa-diamond",
+    "score": 0.8383838383838383,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-03-31",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-2.5-pro-exp-03-25'; run id WKjzEQdfnBHnYeZoKeCWnB; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02622591986362927.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-5-pro-preview-05-06",
+    "bench": "gpqa-diamond",
+    "score": 0.6666666666666666,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-06-03",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-2.5-pro-preview-05-06'; run id TT66gGiVoeYLGQMCESPrEG; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.033586181457325226.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-5-pro-preview-05-06",
+    "bench": "math-level-5",
+    "score": 0.9590256797583081,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-05-08",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemini-2.5-pro-preview-05-06'; run id Mi8LCxmduKukxazAtmuhqg; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004221388011004008.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-2-5-pro-preview-06-05",
+    "bench": "gpqa-diamond",
+    "score": 0.8484848484848485,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-06-05",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-2.5-pro-preview-06-05'; run id Q4qTzHnjLyiCCRvNpXioUq; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02554565042660364.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "epoch-chess",
+    "score": 0.4,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-06",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview_high'; run id HVtbACyemDaTPW5XUDC6Jf; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0492365963917331.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.17073170731707318,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-06-11",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview'; run id ZczEhu69FQ9Cnns8NT6ew4; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05949419959829497.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "frontiermath",
+    "score": 0.512280701754386,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-06-11",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview'; run id EtgrDq6ei6kZe8K7QbXUe3; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02966059084324674.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.8939393939393939,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-06",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview_high'; run id gVdraDT3pXmaExP9VbqME4; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.021938047738853106.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "epoch-mystery-games",
+    "score": 0.2,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-05",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview_high'; run id MvdunHkVURna3JuyDjhzEc; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04020151261036849.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "otis-mock-aime",
+    "score": 0.9555555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-06",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview_high'; run id a4uE6KgMhGSUjcnemRnbkA; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.031067790907534743.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "simpleqa-verified",
+    "score": 0.668,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview_high'; run id 7cc6cDCXjsPjtKt36bbeMR; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014899597242811567.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "swe-bench-verified",
+    "score": 0.7541322314049587,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-02-18",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'gemini-3-flash-preview'; run id jxoyMNmTnYirjLJN6wRNmG; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.019593002139508684. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "epoch-chess",
+    "score": 0.31,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2025-12-08",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gemini-3-pro-preview'; run id Ey65gb5LG3RdtZxMweDfAU; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04648231987117317.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.9261363636363636,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-11-19",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemini-3-pro-preview'; run id Cg54udQGcTCnfDGX2qePLZ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.016526963574741.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "otis-mock-aime",
+    "score": 0.9138888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-11-19",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemini-3-pro-preview'; run id 4QM4h7ndQiDRL2anjKeddK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03658872186755414.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "swe-bench-verified",
+    "score": 0.7293388429752066,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-02-13",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'gemini-3-pro-preview'; run id 5XdYZBG5Wy8DUMRqcYv4fn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02021641171153417. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-2-27b",
+    "bench": "gpqa-diamond",
+    "score": 0.3648989898989899,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemma-2-27b-it'; run id ZUJxsJDpHnLXxNiDcvj22W; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023897884428691632.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-2-27b",
+    "bench": "math-level-5",
+    "score": 0.2788897280966767,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemma-2-27b-it'; run id PM3GCQcVK7t2MujNp4F4kH; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009939474306804167.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-2-27b",
+    "bench": "otis-mock-aime",
+    "score": 0.013888888888888888,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemma-2-27b-it'; run id jD6rJdvfNPErKEz9qkpssj; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00907862525871088.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-2-9b",
+    "bench": "gpqa-diamond",
+    "score": 0.2746212121212121,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gemma-2-9b-it'; run id fQjoHKyUEPAuwdrBGfL8SG; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023032467954778795.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-2-9b",
+    "bench": "math-level-5",
+    "score": 0.2100641993957704,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gemma-2-9b-it'; run id Hdcqs42VnPNVBquXttexhq; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008990724846256171.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gemma-2-9b",
+    "bench": "otis-mock-aime",
+    "score": 0.005555555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gemma-2-9b-it'; run id WNE7cveVN8rsi7DmsFsFVy; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.003883473863441843.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-0125'; run id JWmZHq9PfAKgNpJJ7FqpGb; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "frontiermath",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-0125'; run id FNaBAvmeTiRRFDW63KemZ7; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "gpqa-diamond",
+    "score": 0.27178030303030304,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-0125'; run id eZaQhpbhbzbo3sbKGS5Efa; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01953579968788737.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "math-level-5",
+    "score": 0.1163141993957704,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-0125'; run id 9tSgxGV3nzhTBpq7GcX7yx; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.005543945913851348.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "epoch-mystery-games",
+    "score": 0.03,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-0125'; run id UfmijCsx59sZ8xpcbcWDms; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01714466079977653.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "otis-mock-aime",
+    "score": 0.022222222222222223,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-0125'; run id 7ZVhkukwaRXU2Sx2ttibPF; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.022222222222222223.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-1106",
+    "bench": "gpqa-diamond",
+    "score": 0.2803030303030303,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-1106'; run id enhRcQmfN6RFB2zu7R3Uxr; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.018720372561004013.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-3-5-turbo-1106",
+    "bench": "math-level-5",
+    "score": 0.15889350453172205,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-3.5-turbo-1106'; run id cJWh887zSiTtnxm9XAJVkr; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006959408516001194.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0125-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.42266414141414144,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4-0125-preview'; run id 4j3WRhhruXrfaq9Jki3NDc; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026795949166711065.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0125-preview",
+    "bench": "math-level-5",
+    "score": 0.3541351963746224,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4-0125-preview'; run id c4V7sc8TUNJ8wQKRhuA2Rv; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010855237562085883.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0314",
+    "bench": "gpqa-diamond",
+    "score": 0.3573232323232323,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-10-23",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4-0314'; run id FkbLkW5ed8rnZGFJMevDFn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02363099375599328.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0314",
+    "bench": "otis-mock-aime",
+    "score": 0.005555555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-10-22",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4-0314'; run id cLTgetxaaTCZoA9vwY4SdL; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.003883473863441843.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "epoch-chess",
+    "score": 0.04,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-4-0613'; run id QWSuwo8dwFP8QiSGbjQ33G; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01969463855669324.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "gpqa-diamond",
+    "score": 0.30650252525252525,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4-0613'; run id fu7pWqbSC4MUBdwv3GFNa5; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02337322948270623.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "math-level-5",
+    "score": 0.22970166163141995,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4-0613'; run id WsSrH8oHBm7m7vq9yTRqSC; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008465534027077483.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "epoch-mystery-games",
+    "score": 0.12,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-4-0613'; run id CvujZuqfj5r7qsa52Smyx9; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.032659863237109045.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "otis-mock-aime",
+    "score": 0.011111111111111112,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-10-23",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4-0613'; run id hGVxg4EhSSJSCdH88m9soq; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.005362818328685681.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "gpqa-diamond",
+    "score": 0.48926767676767674,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-04-14",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4.1-nano-2025-04-14'; run id azWfeFPP6zSocuQX3JYBU5; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024849734950435368.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "math-level-5",
+    "score": 0.6999622356495468,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-04-14",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4.1-nano-2025-04-14'; run id K4TfMXsaPd4Z46zFmiV4Rf; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010231591350302844.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "otis-mock-aime",
+    "score": 0.28888888888888886,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-14",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4.1-nano-2025-04-14'; run id 3qLHwibDhgtWEbKGwxUYVa; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05970019560922746.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "simpleqa-verified",
+    "score": 0.06,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-31",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'gpt-4.1-nano-2025-04-14'; run id A4JEeJR5LQfLR3Hb8z7kL2; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007513751157474971.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-1106-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.4236111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4-1106-preview'; run id AWewipyfSQb8hXtS8d4fNL; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024076142618301676.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-1106-preview",
+    "bench": "math-level-5",
+    "score": 0.40020770392749244,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4-1106-preview'; run id VBStRVGFi47EVz2pn33xu4; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010538794632397387.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "gpqa-diamond",
+    "score": 0.6868686868686869,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4.5-preview-2025-02-27'; run id dodibSv7pk8GtqeMy4YLQg; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.033042050878136546.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "math-level-5",
+    "score": 0.7862537764350453,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-28",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4.5-preview-2025-02-27'; run id japqZFi3FS7um32EHG6wwW; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011270694428136297.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "otis-mock-aime",
+    "score": 0.37777777777777777,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-28",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4.5-preview-2025-02-27'; run id 9DCJMt7YsTMDenTdX4Db6V; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07309112127323451.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "epoch-chess",
+    "score": 0.06,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-07-15",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-4-turbo-2024-04-09'; run id gDyWKGy2wyoMhb2Jh3NQcE; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023868325657594204.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "frontiermath",
+    "score": 0.007017543859649123,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-4-turbo-2024-04-09'; run id bC2dbN4x2GWWmnnfseKxgQ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004953408961963604.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "gpqa-diamond",
+    "score": 0.4659090909090909,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4-turbo-2024-04-09'; run id TaCoN7eyPQEfDWXqs2MpcF; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026576883332580552.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "math-level-5",
+    "score": 0.46733383685800606,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4-turbo-2024-04-09'; run id AZAJomaSEfZtqYqXUre9fS; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01142825893039598.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "otis-mock-aime",
+    "score": 0.06666666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-27",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4-turbo-2024-04-09'; run id MZABVPEY8VCPAyCZ4iir68; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024034381938205007.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "gpqa-diamond",
+    "score": 0.4889520202020202,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-05-13'; run id Y59q8WbEDp2HH8oovyJCj9; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026254109873371994.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "math-level-5",
+    "score": 0.5104796072507553,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-05-13'; run id Uqsvq9TAGoqD2xpKfhHBmS; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01120841984218505.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "otis-mock-aime",
+    "score": 0.0625,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-05-13'; run id 9cCn5aW522cTRxJSE69crm; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023249986423369555.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "epoch-chess",
+    "score": 0.13,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-07-15",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-08-06'; run id g2FXXomRgJgYN4y2wBXBjW; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03379976689896311.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "frontiermath",
+    "score": 0.0035087719298245615,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-08-06'; run id ikS95CXY2foitnUPDKwNJn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0035087719298245615.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "gpqa-diamond",
+    "score": 0.49210858585858586,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-08-06'; run id fairJpL9VekDBKxYHG9ZoG; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.025999270277271707.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "math-level-5",
+    "score": 0.5327605740181269,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-08-06'; run id ZQgz8AGm4KHin9MFupLu58; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01122129021441016.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "otis-mock-aime",
+    "score": 0.06388888888888888,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-08-06'; run id mBUKqiVQsqXd3qmdtKP5UP; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.025630380139261548.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "simpleqa-verified",
+    "score": 0.26,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-31",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-08-06'; run id bDFqfWxMG7gLDq4Mz8PRTP; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01387777332977422.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-11-20",
+    "bench": "gpqa-diamond",
+    "score": 0.4788510101010101,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-05",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-11-20'; run id gULKGqAe9nG9syxmYMtkhi; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026336972178726107.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-11-20",
+    "bench": "math-level-5",
+    "score": 0.49773413897280966,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-05",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-11-20'; run id D3G2BKGnh6YSvw4bEYSdiY; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011102819618096572.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-11-20",
+    "bench": "otis-mock-aime",
+    "score": 0.0625,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-11-20'; run id buNVL2TWcdVgxAcMfVE8xJ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024165360466267546.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-2024-11-20",
+    "bench": "swe-bench-verified",
+    "score": 0.30991735537190085,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-02-11",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'gpt-4o-2024-11-20'; run id PncXWJm7ZCY3qv982pKoRy; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.021042625979133336. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-07-15",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id Q3eZqReiCfGFdTUSSJtFS5; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "frontiermath",
+    "score": 0.007017543859649123,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id 6XhtKr59amKko65T7RUB2a; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004953408961963604.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "gpqa-diamond",
+    "score": 0.37720959595959597,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id L9yfwZC3snsKZshBXTaXjc; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024068925424620136.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "math-level-5",
+    "score": 0.5263406344410876,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id 5iyKgWVhAmNwrA5rNL7MbW; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011275275696871733.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "epoch-mystery-games",
+    "score": 0.12,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id mbviVfQ7Bh7wHSCDDmrt7u; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03265986323710904.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "otis-mock-aime",
+    "score": 0.06944444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-07-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id MPJkYPEMsQrowqtecK3mmz; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0273963714244758.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "simpleqa-verified",
+    "score": 0.083,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-31",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'gpt-4o-mini-2024-07-18'; run id DLr586bZUHpghAf8m3GRSm; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008728527206074758.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-2-pro",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.46,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-06-13",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'gpt-5.2-pro-2025-12-11_xhigh'; run id oALBfwNc7dcNSDJSSBJXYe; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07789619230571372.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-2-pro",
+    "bench": "frontiermath",
+    "score": 0.74,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-06-13",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-5.2-pro-2025-12-11_xhigh'; run id dMJenf5xYWu7Pwn2U6w4dW; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026349537704451795.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-4-pro",
+    "bench": "epoch-chess",
+    "score": 0.586,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-03-19",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'gpt-5.4-pro-2026-03-05_xhigh'; run id gpt-5-4-pro-chess-cloud-run; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-4-pro",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.5853658536585366,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-06-13",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'gpt-5.4-pro-2026-03-05_xhigh'; run id W6b3C8AeNC7CAFs5DQma8N; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07789619230571372.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-4-pro",
+    "bench": "frontiermath",
+    "score": 0.8245614035087719,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-06-13",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-5.4-pro-2026-03-05_xhigh'; run id ZFVa8dw7oiir6PhcF8XZMo; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.022569134425265196.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-4-pro",
+    "bench": "gpqa-diamond",
+    "score": 0.946,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-03-20",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'gpt-5.4-pro-2026-03-05_xhigh'; run id gpt-5-4-pro-gpqa-cloud-run; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.016.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-4-pro",
+    "bench": "simpleqa-verified",
+    "score": 0.463,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'gpt-5.4-pro-2026-03-05_xhigh'; run id RfSJbuuuMkeVHQj7xrth4u; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015775927227262426.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-pro",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0.1951219512195122,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-06-12",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'gpt-5-pro-2025-10-06_high'; run id HfDahF4ZXTN6bjfDFwcHTU; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06265967111543964.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "gpt-5-pro",
+    "bench": "frontiermath",
+    "score": 0.5578947368421052,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-06-12",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'gpt-5-pro-2025-10-06_high'; run id TFDQUeRKbWiEodRQRrKdpy; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.029469977528223976.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "granite-4-0-1b",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'granite-4.0-1b'; run id kCXMdn7EZfSYojajBfEYyr; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "granite-4-0-1b",
+    "bench": "gpqa-diamond",
+    "score": 0.2398989898989899,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'granite-4.0-1b'; run id oWiE4CniV7k5adL5wDh5r8; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01619451031298072.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "granite-4-0-1b",
+    "bench": "otis-mock-aime",
+    "score": 0.008333333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'granite-4.0-1b'; run id PiFfhBoFbnaoqX5z2gVvra; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004700633956814717.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "granite-4-0-350m",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'granite-4.0-350m'; run id QRSncCDfDRedDyS3bH6oXq; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "granite-4-0-350m",
+    "bench": "gpqa-diamond",
+    "score": 0.11237373737373738,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'granite-4.0-350m'; run id F6xZSehzKjpybEh8JkGwni; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009083571075486867.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "granite-4-0-350m",
+    "bench": "otis-mock-aime",
+    "score": 0.002777777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'granite-4.0-350m'; run id aQYiADNH3qVzZkWUmQn6nZ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.002777777777777778.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-2-1212",
+    "bench": "gpqa-diamond",
+    "score": 0.5378787878787878,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'grok-2-1212'; run id 83DRJD4FvjwqU9eStRaNiU; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027066342316607196.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-2-1212",
+    "bench": "math-level-5",
+    "score": 0.6351963746223565,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-17",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'grok-2-1212'; run id Kpck3pLw3veM5Mt7WZAb8G; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01323438169590836.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-2-1212",
+    "bench": "otis-mock-aime",
+    "score": 0.11527777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'grok-2-1212'; run id PpSVDb67Ucbxpcd8JQv5ii; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03382424700930314.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-3-beta",
+    "bench": "gpqa-diamond",
+    "score": 0.7575757575757576,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-05-26",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'grok-3-beta'; run id FQ8Ykq4JWRSXnyF9rbmLc7; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026863078746340353.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-3-beta",
+    "bench": "math-level-5",
+    "score": 0.8874622356495468,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-04-10",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'grok-3-beta'; run id i9eqMbaVTDDuCxWxzGHxyU; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008688487093324447.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-3-beta",
+    "bench": "otis-mock-aime",
+    "score": 0.5555555555555556,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-10",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'grok-3-beta'; run id DKTzh9kSoipZGkDsC4NGf3; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07491109582924914.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-3-mini-beta",
+    "bench": "gpqa-diamond",
+    "score": 0.7550505050505051,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-05-26",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'grok-3-mini-beta_high'; run id JFZMWFVGNi5R5TdZrvQUFw; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027675521820041432.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-3-mini-beta",
+    "bench": "math-level-5",
+    "score": 0.8806646525679759,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-04-10",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'grok-3-mini-beta_high'; run id HMm8XaDBr4CQdMFddasEWb; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008912712785411623.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-3-mini-beta",
+    "bench": "otis-mock-aime",
+    "score": 0.7777777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-10",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'grok-3-mini-beta_high'; run id fPtize44vDPcDAzMFuAurw; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06267511942419625.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "grok-4-0709",
+    "bench": "epoch-chess",
+    "score": 0.28,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-01-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'grok-4-0709'; run id gTh3CHLgfBDhvJCwobjju6; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04512608598542129.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "hermes-2-theta-llama-3-70b",
+    "bench": "gpqa-diamond",
+    "score": 0.3746843434343434,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Hermes-2-Theta-Llama-3-70B'; run id DHdeZNynu4VtRp2VGkCGvd; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024803009993948306.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "hermes-2-theta-llama-3-70b",
+    "bench": "math-level-5",
+    "score": 0.22686933534743203,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Hermes-2-Theta-Llama-3-70B'; run id ZAVTwsDqrvbWbqSgeNdXFd; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008127708089237323.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "hermes-2-theta-llama-3-70b",
+    "bench": "otis-mock-aime",
+    "score": 0.025,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-01",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Hermes-2-Theta-Llama-3-70B'; run id 63MnE4e4AXvbQ585MaWTFv; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.012309149097933271.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-2-13b-chat",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'Llama-2-13b-chat'; run id Z6uni62AdCNgrsxETZP9uN; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "gpqa-diamond",
+    "score": 0.26325757575757575,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Llama-2-70b-chat-hf'; run id evPjJw9SKqq3TieSdxrSQn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.019901808558284103. Epoch label 'Llama-2-70b-chat-hf' is the Hugging Face-format release of Llama 2 70B Chat.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "math-level-5",
+    "score": 0.032854984894259816,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Llama-2-70b-chat-hf'; run id 4bkXhqCNoe6RpTe9taJ7kR; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00254222977415661. Epoch label 'Llama-2-70b-chat-hf' is the Hugging Face-format release of Llama 2 70B Chat.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "otis-mock-aime",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Llama-2-70b-chat-hf'; run id NLk2oE4rzSFihPzF95peHr; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0. Epoch label 'Llama-2-70b-chat-hf' is the Hugging Face-format release of Llama 2 70B Chat.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-2-7b-chat",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'llama-2-7b-chat'; run id c8jPtpQkXnKFXG6hAKfsH6; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-1-tulu-3-70b-dpo",
+    "bench": "gpqa-diamond",
+    "score": 0.46275252525252525,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Llama-3.1-Tulu-3-70B-DPO'; run id 5JgivNDZp2D7Lc7cpDhS28; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02405836362093961.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-1-tulu-3-70b-dpo",
+    "bench": "math-level-5",
+    "score": 0.426642749244713,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Llama-3.1-Tulu-3-70B-DPO'; run id Hf2ESooSteQK99yFjhFm8t; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010405854683575872.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-1-tulu-3-70b-dpo",
+    "bench": "otis-mock-aime",
+    "score": 0.044444444444444446,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Llama-3.1-Tulu-3-70B-DPO'; run id FGcofc566CradiNmHUGqVB; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01827278031830863.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-2-90b-vision",
+    "bench": "gpqa-diamond",
+    "score": 0.41035353535353536,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Llama-3.2-90B-Vision-Instruct'; run id 9SSHEP95FYVZvHDdoHSRy3; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.022948341091025694.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-2-90b-vision",
+    "bench": "math-level-5",
+    "score": 0.39435422960725075,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Llama-3.2-90B-Vision-Instruct'; run id iHRmwxsh8M3FGun8x5mxkt; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010293053094701802.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-2-90b-vision",
+    "bench": "otis-mock-aime",
+    "score": 0.02638888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Llama-3.2-90B-Vision-Instruct'; run id LHRL6nQJZXGJmYppR7kbGw; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00941990275434065.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-70b",
+    "bench": "gpqa-diamond",
+    "score": 0.40561868686868685,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-70B-Instruct'; run id jrvutCoFFG4KxYtU7REdpe; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.026224849492112068.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-70b",
+    "bench": "math-level-5",
+    "score": 0.225547583081571,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-70B-Instruct'; run id dekbZbU3BtiQZNKG8Txaax; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008257639939780867.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-70b",
+    "bench": "otis-mock-aime",
+    "score": 0.043055555555555555,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-70B-Instruct'; run id 6RD3A6J432TZzxrKYRxph2; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02192429710598427.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-8B-Instruct'; run id DQKgb3kZnm32FxHpQudBkf; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "gpqa-diamond",
+    "score": 0.26073232323232326,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-8B-Instruct'; run id iT3BBFWjsZk2rKHKeJDsM8; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01703043361773576.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "math-level-5",
+    "score": 0.0612726586102719,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-8B-Instruct'; run id BURdKU7mhUX4YMPUDoFsed; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0037433164863856527.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "otis-mock-aime",
+    "score": 0.019444444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Meta-Llama-3-8B-Instruct'; run id CAcNPzYBEu39HFWPmuUEeP; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010477515876628662.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "magistral-small-2506",
+    "bench": "gpqa-diamond",
+    "score": 0.5606060606060606,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-06",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'magistral-small-2506'; run id dwGLob8Vhrwx4Wn376jVmt; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0353608594752948.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "magistral-small-2506",
+    "bench": "otis-mock-aime",
+    "score": 0.3,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-06",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'magistral-small-2506'; run id hmZPoiHBpqufv9r7ujiK8V; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05924610544247621.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "ministral-3b-2410",
+    "bench": "gpqa-diamond",
+    "score": 0.25252525252525254,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'ministral-3b-2410'; run id bJV4D8SEo9zMJPEYTTXJNZ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.019305614722797293.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "ministral-3b-2410",
+    "bench": "math-level-5",
+    "score": 0.14444864048338368,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'ministral-3b-2410'; run id YNhHxRT9Ee2uEWWJh9RXuP; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007446287617112978.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "ministral-8b-2410",
+    "bench": "gpqa-diamond",
+    "score": 0.27146464646464646,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'ministral-8b-2410'; run id DGEzZA6nvTne4MEGSuo3Tm; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.020863706671553732.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "ministral-8b-2410",
+    "bench": "math-level-5",
+    "score": 0.14935800604229607,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'ministral-8b-2410'; run id hqdiKcvEPSRyvenUVB9qxM; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007454534670584494.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-3",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'Mistral-7B-Instruct-v0.3'; run id MkjPqUsNbNWjua7cP32apa; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-3",
+    "bench": "gpqa-diamond",
+    "score": 0.1518308080808081,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Mistral-7B-Instruct-v0.3'; run id YbQkMPC2GtNLhxqTEhhVsa; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010148891037227303.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-3",
+    "bench": "math-level-5",
+    "score": 0.03597054380664653,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Mistral-7B-Instruct-v0.3'; run id 6xHApTdQAWM9e5oCvKYS3W; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.002666943446495743.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-3",
+    "bench": "otis-mock-aime",
+    "score": 0.002777777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Mistral-7B-Instruct-v0.3'; run id j6Mo25oV9Y9jdGxCMHZfpU; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.002777777777777778.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-large-2402",
+    "bench": "gpqa-diamond",
+    "score": 0.38762626262626265,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'mistral-large-2402'; run id dDeREdDJ5bVyci3APZxzWb; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024776598535417284.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-large-2402",
+    "bench": "math-level-5",
+    "score": 0.24461858006042297,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'mistral-large-2402'; run id gypQecfFNK2x4pNGDtGMDv; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00892334786643176.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-large-2402",
+    "bench": "otis-mock-aime",
+    "score": 0.019444444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'mistral-large-2402'; run id ZVHvk3GTPUNTgjc5w3vkhW; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00948945749721607.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-large-2407",
+    "bench": "gpqa-diamond",
+    "score": 0.49021464646464646,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'mistral-large-2407'; run id ZQPNnicTuhuscJvni85PFY; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.025918840988656967.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-large-2407",
+    "bench": "math-level-5",
+    "score": 0.4481684290030212,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'mistral-large-2407'; run id div9uE9eovqykqx883kSpE; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010703488686415494.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-large-2407",
+    "bench": "otis-mock-aime",
+    "score": 0.08472222222222223,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-25",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'mistral-large-2407'; run id bHLfPfZj8HgD9Gef75NtrM; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024742642797709363.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-medium-2505",
+    "bench": "gpqa-diamond",
+    "score": 0.5953282828282829,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-05-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'mistral-medium-2505'; run id FNMbfvEEm9PRnrJnrqk2PH; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02824697229654645.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-medium-2505",
+    "bench": "math-level-5",
+    "score": 0.8162764350453172,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-05-07",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'mistral-medium-2505'; run id LNUnvvrDra89Vhdc9bzdCy; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.00899565165100951.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-medium-2505",
+    "bench": "otis-mock-aime",
+    "score": 0.32222222222222224,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-05-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'mistral-medium-2505'; run id QWw65xeTn8x42SymMsVREN; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05965611798482264.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-nemo-instruct-2407",
+    "bench": "gpqa-diamond",
+    "score": 0.2989267676767677,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'open-mistral-nemo-2407'; run id XCSWtbDquA7FUiWfd7kh9q; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02096191098761666. Epoch label is the Mistral API id open-mistral-nemo-2407 (Mistral legacy-models table: 'Mistral Nemo 12B', version 24.07).",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-nemo-instruct-2407",
+    "bench": "math-level-5",
+    "score": 0.1082892749244713,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'open-mistral-nemo-2407'; run id 9qCrggpoq8FjQWVQhHaGBT; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006092598712054613. Epoch label is the Mistral API id open-mistral-nemo-2407 (Mistral legacy-models table: 'Mistral Nemo 12B', version 24.07).",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "epoch-chess",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'mistral-small-3-2501'; run id iBTrxsUHM7E4MwPnCjqETD; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0. Epoch labels 'mistral-small-2501' (Mistral API id, 'Mistral Small 3.0' 25.01) and 'mistral-small-3-2501' are both model_metadata group 'Mistral Small 3' and name the same 2501 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "gpqa-diamond",
+    "score": 0.47285353535353536,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'mistral-small-3-2501'; run id YJPwhEJa6qQWB23HQjByxt; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027888880246470463. Epoch labels 'mistral-small-2501' (Mistral API id, 'Mistral Small 3.0' 25.01) and 'mistral-small-3-2501' are both model_metadata group 'Mistral Small 3' and name the same 2501 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "math-level-5",
+    "score": 0.4481684290030212,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-30",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'mistral-small-2501'; run id NbsnvBsMoMizozbPZY8LLb; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010854927233993669. Epoch labels 'mistral-small-2501' (Mistral API id, 'Mistral Small 3.0' 25.01) and 'mistral-small-3-2501' are both model_metadata group 'Mistral Small 3' and name the same 2501 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "otis-mock-aime",
+    "score": 0.06666666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'mistral-small-3-2501'; run id LEBmfabfasGXFwRwhN9j35; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02682716849943299. Epoch labels 'mistral-small-2501' (Mistral API id, 'Mistral Small 3.0' 25.01) and 'mistral-small-3-2501' are both model_metadata group 'Mistral Small 3' and name the same 2501 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "epoch-chess",
+    "score": 0.01,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'mistral-small-3.1-2503'; run id F7SuanDZYsPw66mJ6Vpu4C; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009999999999999998. Epoch labels 'mistral-small-2503' (Mistral API id, 'Mistral Small 3.1' 25.03) and 'mistral-small-3.1-2503' are both model_metadata group 'Mistral Small 3.1' and name the same 2503 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "gpqa-diamond",
+    "score": 0.41919191919191917,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'mistral-small-3.1-2503'; run id DvbGrBaybHM3UhJwWhE3LR; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02348827340432996. Epoch labels 'mistral-small-2503' (Mistral API id, 'Mistral Small 3.1' 25.03) and 'mistral-small-3.1-2503' are both model_metadata group 'Mistral Small 3.1' and name the same 2503 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "math-level-5",
+    "score": 0.4677114803625378,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-03-18",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'mistral-small-2503'; run id Kas7Y5PBsT7Li5Wm6Y8mj8; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011995700377965737. Epoch labels 'mistral-small-2503' (Mistral API id, 'Mistral Small 3.1' 25.03) and 'mistral-small-3.1-2503' are both model_metadata group 'Mistral Small 3.1' and name the same 2503 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "otis-mock-aime",
+    "score": 0.03888888888888889,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'mistral-small-3.1-2503'; run id nNZHFNyHgfv3uzPAxspaPT; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01529498571765449. Epoch labels 'mistral-small-2503' (Mistral API id, 'Mistral Small 3.1' 25.03) and 'mistral-small-3.1-2503' are both model_metadata group 'Mistral Small 3.1' and name the same 2503 release; the selection rule is applied across both labels.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "gpqa-diamond",
+    "score": 0.3058712121212121,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Mixtral-8x7B-Instruct-v0.1'; run id Sn2qbB2HiySe7NcG28jnyM; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01937059603941351.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "math-level-5",
+    "score": 0.09290030211480363,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Mixtral-8x7B-Instruct-v0.1'; run id 4PTATufH2ra3guNeLwT9p9; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.005102464546317853.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "epoch-chess",
+    "score": 0.15,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'o1-2024-12-17_high'; run id oZ2GUFDoLA9sDdyefwgHPE; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.035887028128263665.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "frontiermath",
+    "score": 0.14736842105263157,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'o1-2024-12-17_high'; run id NMJhDtxtyQJCHQ4EApr9LM; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.021034091168852485.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "gpqa-diamond",
+    "score": 0.7676767676767676,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-13",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'o1-2024-12-17_high'; run id NAkCFiFiDSN3NXMj7HMvMS; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.030088629490217445.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "math-level-5",
+    "score": 0.947129909365559,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-13",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'o1-2024-12-17_high'; run id jVXtRkTBDnqH8p4sjVUbgN; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006152192005965586.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "otis-mock-aime",
+    "score": 0.7333333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-07-15",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'o1-2024-12-17_high'; run id AEQDjKHZzrVUubU42ZUZwA; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06666666666666667.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "simpleqa-verified",
+    "score": 0.411,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-31",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'o1-2024-12-17_high'; run id LQfu4ngArcgMEyQZxuR7r4; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01556667341859915.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-mini",
+    "bench": "gpqa-diamond",
+    "score": 0.6237373737373737,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-13",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'o1-mini-2024-09-12_high'; run id X2gKewiGPZx5DLFEddUUqW; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027427723511230753.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-mini",
+    "bench": "math-level-5",
+    "score": 0.8918051359516617,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-13",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'o1-mini-2024-09-12_high'; run id 4DWnpJowAfeQDHc2xDNy2C; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006802820166065648.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-mini",
+    "bench": "otis-mock-aime",
+    "score": 0.46944444444444444,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-06",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'o1-mini-2024-09-12_high'; run id 9zhPZLvNeUPQ7JBSpTwKPp; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06456873681038247.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.5031565656565656,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'o1-preview-2024-09-12'; run id 7CkADTsoNbDd88uqYbqfwj; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.028257821072909393.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-preview",
+    "bench": "math-level-5",
+    "score": 0.8164652567975831,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'o1-preview-2024-09-12'; run id 8Uu6XsSJCKwcwhXDt8vgzq; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010642608258161584.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o1-preview",
+    "bench": "otis-mock-aime",
+    "score": 0.3111111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-03-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'o1-preview-2024-09-12'; run id Cprjaj9JQ9MY5NCXqeQR5H; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0697920592732311.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "epoch-chess",
+    "score": 0.17,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2025-12-08",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id 52bwKmNetKXPAGYaBjdgCB; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.03775251680686369.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "frontiermath-tier-4-v2",
+    "score": 0,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+    "by": "independent",
+    "date": "2026-06-11",
+    "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id iR3Ut7aYEtz8dTYQFzq7rG; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "frontiermath",
+    "score": 0.18596491228070175,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-06-11",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id mRJaJyBY2M2GGdbdMmT6iq; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023087552563757593.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "gpqa-diamond",
+    "score": 0.7702020202020202,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-02-13",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id MzsTvCEEfEpzn4WvxYdJkX; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.025855332698878485.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "math-level-5",
+    "score": 0.9648791540785498,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-02-13",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id 3VDhPT5WvzjJZkRc36Kuvi; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004265263461984669.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "epoch-mystery-games",
+    "score": 0.07,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id JSmdEXGULNBJ7PfSoVoa7W; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02564323999762428.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "otis-mock-aime",
+    "score": 0.7694444444444445,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-02-27",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id Mjx6vYbgAb2DHXK8xcupX8; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05239762076828802.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "simpleqa-verified",
+    "score": 0.153,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-31",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'o3-mini-2025-01-31_high'; run id UCba4H3NNtUiWXMisWnh9g; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011389500459665504.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "phi-3-medium-128k-instruct",
+    "bench": "gpqa-diamond",
+    "score": 0.2758838383838384,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-31",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Phi-3-medium-128k-instruct'; run id bDS2AGEf3AywbVcdDyAKZK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.016117685500292727.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "phi-3-medium-128k-instruct",
+    "bench": "math-level-5",
+    "score": 0.17560422960725075,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-31",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Phi-3-medium-128k-instruct'; run id njA86GC9DzSXyiZWtUxXiD; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.007295657661098519.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-max-2025-01-25",
+    "bench": "gpqa-diamond",
+    "score": 0.5612373737373737,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-04-01",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen-max-2025-01-25'; run id GBf7rqHkGGzfX87V37F9mH; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027858831475709448.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-max-2025-01-25",
+    "bench": "math-level-5",
+    "score": 0.6718277945619335,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-04-01",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'qwen-max-2025-01-25'; run id GFZDNH95TnVegNrEtmUT2Q; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011143967442882196.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-max-2025-01-25",
+    "bench": "otis-mock-aime",
+    "score": 0.16111111111111112,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-01",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen-max-2025-01-25'; run id PZt4Yb9bpXVPDoPi4uTxwK; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04102194808229969.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-plus-2025-01-25",
+    "bench": "gpqa-diamond",
+    "score": 0.4810606060606061,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-04-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen-plus-2025-01-25'; run id QtraMoKiQRRpZc9txpFAYF; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027144936812277986.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-plus-2025-01-25",
+    "bench": "math-level-5",
+    "score": 0.6527567975830816,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-04-07",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'qwen-plus-2025-01-25'; run id J3WoEpLKAJZWGGpyBVCCCn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011334654774046507.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-plus-2025-01-25",
+    "bench": "otis-mock-aime",
+    "score": 0.17777777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen-plus-2025-01-25'; run id AULNJG2C75JBP6uaiAgj3P; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04360797453817489.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-turbo-2024-11-01",
+    "bench": "gpqa-diamond",
+    "score": 0.41792929292929293,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-04-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen-turbo-2024-11-01'; run id 9Ke5At9bYuf56SmKJJ7Sz7; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02617727508870251.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-turbo-2024-11-01",
+    "bench": "math-level-5",
+    "score": 0.5623111782477341,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-04-07",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'qwen-turbo-2024-11-01'; run id jWV936hYKg6rYcPEynzEEt; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011364630947550552.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen-turbo-2024-11-01",
+    "bench": "otis-mock-aime",
+    "score": 0.06111111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-04-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen-turbo-2024-11-01'; run id G5gxbTH33S7LXA29o5fgmv; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.022340279838327228.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen1-5-32b-chat",
+    "bench": "gpqa-diamond",
+    "score": 0.307449494949495,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen1.5-32b-chat'; run id 9K6c9b6v9zQrQYtw827BDn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.020200517973424446.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen1-5-72b-chat",
+    "bench": "gpqa-diamond",
+    "score": 0.2881944444444444,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen1.5-72b-chat'; run id NeqeQSxHmdUNLk9Ytpo6qo; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01993691228122493.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen2-72b",
+    "bench": "gpqa-diamond",
+    "score": 0.4078282828282828,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen2-72b-instruct'; run id Pex6SpYJX8ZPySncfNNy7H; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02574288051254005.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen2-72b",
+    "bench": "math-level-5",
+    "score": 0.39067220543806647,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'qwen2-72b-instruct'; run id 9mWoY9fM2ifKvDg3xaug6h; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.010317258861464411.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-30b-a3b",
+    "bench": "epoch-chess",
+    "score": 0.04,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'Qwen3-30B-A3B'; run id JCwFm63cUipLHBfM6BdssQ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.019694638556693237.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-30b-a3b",
+    "bench": "gpqa-diamond",
+    "score": 0.6167929292929293,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Qwen3-30B-A3B'; run id BnX67AoZzgVbHgaM8F8Brz; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.029727711361608088.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-30b-a3b",
+    "bench": "otis-mock-aime",
+    "score": 0.6277777777777778,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'Qwen3-30B-A3B'; run id XfjRkSyP4ub4gDsWcgS7KY; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.062118645754659016.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-4b",
+    "bench": "epoch-chess",
+    "score": 0.01,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3-4b_none'; run id 3mCgC7byPaZ3zzPM98bY5A; effort none; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.009999999999999998.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-4b",
+    "bench": "gpqa-diamond",
+    "score": 0.5233585858585859,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen3-4b'; run id G3dinPvwrci2Nu3m9pby2i; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.030102242301033352.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "epoch-chess",
+    "score": 0.21,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3.5-flash'; run id dWndu92zERWxzbpNa4BdJy; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.040936018074033236.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "frontiermath",
+    "score": 0.09473684210526316,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'qwen3.5-flash'; run id 6XZAenohp9pCgQ3gVeUAi8; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.017377516319276178.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "gpqa-diamond",
+    "score": 0.8232323232323232,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen3.5-flash'; run id S7wbot7JR53BAjM8F9gaws; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.027178752639044908.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "epoch-mystery-games",
+    "score": 0.2,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3.5-flash'; run id b9csPZ2c9CAsRXmzzfVoEW; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04020151261036849.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "otis-mock-aime",
+    "score": 0.8444444444444444,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen3.5-flash'; run id awDKyKbPXRzBVZzfdQucef; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05463890236888291.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "simpleqa-verified",
+    "score": 0.2032032032032032,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'qwen3.5-flash'; run id K8zTckSXLKLesoLBv24TWc; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.012737194890497593.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "epoch-chess",
+    "score": 0.22,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3.5-plus'; run id UgqBt5cFjsC96ALwiTFCPR; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04163331998932266.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "gpqa-diamond",
+    "score": 0.8484848484848485,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen3.5-plus'; run id mGXYSUNCMisvaRzhQp6g2L; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.025545650426603637.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "epoch-mystery-games",
+    "score": 0.16,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-05",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3.5-plus'; run id kCQr6ARwJyUfkwWqKAfuDX; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.036845294917747066.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "otis-mock-aime",
+    "score": 0.8666666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen3.5-plus'; run id cFbntXuxUtfreULvt7vEt7; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.051247074319053836.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "simpleqa-verified",
+    "score": 0.2535070140280561,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'qwen3.5-plus'; run id jrawnM2wHFbVfJFJsap4kS; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.013777178222916077.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "epoch-chess",
+    "score": 0.2,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3.6-max-preview'; run id i5cWL9DPrmhvacKyYf8gxE; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04020151261036849.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "gpqa-diamond",
+    "score": 0.8737373737373737,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen3.6-max-preview'; run id Jv2hJvjpvA8xJW3Bzv7bfw; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023664359402880177.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "epoch-mystery-games",
+    "score": 0.19,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3.6-max-preview_none'; run id mbySBWyYrKdtd7joxHyBdq; effort none; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.039427724440366255.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "otis-mock-aime",
+    "score": 0.9111111111111111,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-07",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen3.6-max-preview'; run id EfJpx5HztMmL5EQSwsyqMe; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04290254662948546.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "simpleqa-verified",
+    "score": 0.5200400801603207,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'qwen3.6-max-preview'; run id iyPiR8GUuyNNA6Fssziq32; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015822434816352416.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "swe-bench-verified",
+    "score": 0.7665289256198347,
+    "source": "https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv",
+    "by": "independent",
+    "date": "2026-05-28",
+    "note": "Epoch AI internal evaluation; file swe_bench_verified.csv; snapshot 2026-09-25; exact model version 'qwen3.6-max-preview'; run id FkDMVLdEnJDR5PyUCT6BNQ; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01924895909142592. Epoch agent scaffold, not a bare-model coding result.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "epoch-chess",
+    "score": 0.04,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2025-12-10",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id Wfe5udNStR4yt4eoqgZ8hY; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01969463855669324.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "frontiermath",
+    "score": 0.18947368421052632,
+    "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+    "by": "independent",
+    "date": "2026-08-30",
+    "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id NrTH3EYHjp4hPdxgpCPGTX; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023254062737737245.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "gpqa-diamond",
+    "score": 0.726010101010101,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-10-06",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id 46RCssznDADYeg8MuSgvsj; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02734528103171235.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "math-level-5",
+    "score": 0.9712990936555891,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-10-09",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id f2vxirYMpXwkaZxb4ywnYM; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.004200694815744905.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "epoch-mystery-games",
+    "score": 0.05,
+    "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id SfzmmHYZjuvWnvoYWit58g; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.021904291355759033.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "otis-mock-aime",
+    "score": 0.7333333333333333,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2025-10-06",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id ULeuPtwp3ZoyuXQYuuQ82i; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.059139451700829515.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "simpleqa-verified",
+    "score": 0.4874874874874875,
+    "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+    "by": "independent",
+    "date": "2026-08-27",
+    "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'qwen3-max-2025-09-23'; run id fXG2GPt5F25tHRTPhAoZ4K; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01582226675546796.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwq-32b",
+    "bench": "epoch-chess",
+    "score": 0.05,
+    "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'QwQ-32B'; run id eppmTJxSfs9jxpT8N7nNTY; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.021904291355759033.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwq-32b",
+    "bench": "gpqa-diamond",
+    "score": 0.6534090909090909,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'QwQ-32B'; run id PUXMxQiRY6XaG6NjwsEDLy; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0281399081227253.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwq-32b",
+    "bench": "otis-mock-aime",
+    "score": 0.5916666666666667,
+    "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+    "by": "independent",
+    "date": "2026-08-28",
+    "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'QwQ-32B'; run id 2xMn6dbY9mw4pmkh8Tz9Gn; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06348963965431165.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "qwq-plus",
+    "bench": "gpqa-diamond",
+    "score": 0.6540404040404041,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-04-11",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'qwq-plus'; run id PtxHF8BH8WuNdNfDnutGBb; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.028469238770829935.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "wizardlm-2-8x22b",
+    "bench": "gpqa-diamond",
+    "score": 0.43434343434343436,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'WizardLM-2-8x22B'; run id MQJA3RUjsQzSubGJiukZ7A; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.023232093333444247.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "wizardlm-2-8x22b",
+    "bench": "math-level-5",
+    "score": 0.25736404833836857,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'WizardLM-2-8x22B'; run id 4bAYQuh4heJoTNhapVZLNB; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008719521575190186.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "yi-1-5-34b-chat",
+    "bench": "gpqa-diamond",
+    "score": 0.319760101010101,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Yi-1.5-34B-Chat'; run id Jwi8JTeeTxJuJY8qidxngw; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.020005291661900883.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "yi-1-5-34b-chat",
+    "bench": "math-level-5",
+    "score": 0.2548149546827795,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Yi-1.5-34B-Chat'; run id bH5kVfLE53CxY3qWmB9C5K; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.008772368987739622.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "yi-34b-chat",
+    "bench": "gpqa-diamond",
+    "score": 0.14741161616161616,
+    "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-09-25; exact model version 'Yi-34B-Chat'; run id WxMpEBcTf8qPFPz4BrF86B; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.011372823721448395.",
+    "source_id": "epoch-internal"
+  },
+  {
+    "model": "yi-34b-chat",
+    "bench": "math-level-5",
+    "score": 0.05145392749244713,
+    "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
+    "by": "independent",
+    "date": "2025-01-27",
+    "note": "Epoch AI internal evaluation; file math_level_5.csv; snapshot 2026-09-25; exact model version 'Yi-34B-Chat'; run id nzy4SGSeKGzQSKJLWExKpV; effort default; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0033693214361751756.",
+    "source_id": "epoch-internal"
   }
 ]

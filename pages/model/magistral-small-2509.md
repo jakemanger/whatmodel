@@ -6,7 +6,7 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 37.6** ±3.2 · #164 of 205 · from 4 benchmark results across 2 sources
+**score 43.3** ±2.9 · #174 of 257 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    47.6%    38.9   2026-08-30   35% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        28.1%    38.5   2026-08-30   32% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    29.2   2026-08-30   10% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  32.3%    34.7   2026-04-03   18% ▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 37.6
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        28.1%    45.5   2026-08-30   50% ▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    47.6%    43.5   2026-08-30   25% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    33.2   2026-08-30    8% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  32.3%    39.3   2026-04-03   13% ▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,8 +48,8 @@ api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~14.9GB   37.6
-8-bit gguf-q8_0    ~29.3GB   37.6
+4-bit gguf-q4_k_m  ~14.9GB   43.3
+8-bit gguf-q8_0    ~29.3GB   43.3
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 1B params · gemma
 
-**score 5.9** ±1.1 · #203 of 205 · from 25 benchmark results across 8 sources
+**score 14.0** ±1.0 · #254 of 257 · from 25 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -14,38 +14,38 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GPQA Diamond (lab)</a>              19.2%     2.4   2026-09-25    9% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   1.9%     3.9   2026-09-25    8% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMLU-Pro (lab)</a>                  14.7%     3.0   2026-09-25    7% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             6.4%     3.6   2026-09-25    7% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                     62.8%     5.1   2026-09-25    6% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            39.1%     4.0   2026-09-25    6% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                 41.5%     6.1   2026-09-25    5% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MATH (subset unspecified) (la…</a>  48.0%     6.5   2026-09-25    4% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                      35.2%     6.8   2026-09-25    4% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>           36.4%     5.7   2026-09-25    4% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>          34.2%     8.2   2026-09-25    3% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   2.2%     9.7   2026-09-25    2% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  80.2%    14.5   2026-09-25    2% ▇
-<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>  21.9%     3.6   2025-07-04    6% ▇
-                        <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>  21.4%     5.9   2025-07-04    5% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    19.9%    -1.2   2026-08-28    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         1.1%    14.3   2026-08-28    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    29.2   2026-08-28    1% ▇
-<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                      38.8%     8.5   2025-03-25    3% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro av…</a>   7.2%    11.4   2025-03-25    2% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>            35.9%    12.8   2025-03-25    1% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  54.2%    10.9   2025-04-04    2% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  37.5%     9.0   2026-09-19    2% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   7.2%    -2.3   2025-12-16    1% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  15.7%     1.6   2025-04-28    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                        = 5.9
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GPQA Diamond (lab)</a>              19.2%    10.3   2026-09-25    8% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   1.9%    11.8   2026-09-25    8% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMLU-Pro (lab)</a>                  14.7%    10.9   2026-09-25    7% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             6.4%    11.4   2026-09-25    7% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                     62.8%    13.0   2026-09-25    6% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                 41.5%    14.1   2026-09-25    5% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            39.1%    11.4   2026-09-25    5% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MATH (subset unspecified) (la…</a>  48.0%    14.4   2026-09-25    5% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                      35.2%    14.7   2026-09-25    4% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>          34.2%    16.1   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>           36.4%    13.6   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   2.2%    17.7   2026-09-25    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  80.2%    21.8   2026-09-25    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         1.1%    24.9   2026-08-28    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    19.9%     6.5   2026-08-28    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    33.2   2026-08-28    1% ▇
+<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>  21.4%    13.9   2025-07-04    5% ▇
+                        <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>  21.9%    10.5   2025-07-04    4% ▇
+<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                      38.8%    16.5   2025-03-25    3% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro av…</a>   7.2%    19.2   2025-03-25    2% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>            35.9%    20.7   2025-03-25    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  54.2%    17.1   2025-04-04    2% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  37.5%    14.7   2026-09-19    2% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   7.2%     4.5   2025-12-16    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  15.7%     8.4   2025-04-28    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 14.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
@@ -53,8 +53,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~1.1GB    5.9
-4-bit QAT qat  ~1.1GB    5.9
+4-bit q4_k_m   ~1.1GB   14.0
+4-bit QAT qat  ~1.1GB   14.0
 </pre>
 
 ```sh

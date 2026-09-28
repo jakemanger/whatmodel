@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 24B params · apache-2.0
 
-**score 40.4** ±1.9 · #150 of 205 · from 11 benchmark results across 7 sources
+**score 45.1** ±1.8 · #163 of 257 · from 11 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     49.1%    39.8   2026-08-28   12% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         30.3%    39.3   2026-08-30   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             1.0%    29.2   2026-08-30    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1356.7    44.2   2026-09-13   14% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1139.7    34.6   2026-09-13    8% ▇
-<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   49.1%    41.4   2026-09-25   11% ▇
-                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   34.0%    40.9   2026-09-25   11% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1162.3    43.5   2026-05-10   11% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   76.5%    43.2   2026-08-11    8% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   37.1%    39.0   2025-12-16    5% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   26.0%    31.3   2025-11-18    4% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 40.4
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         30.3%    46.1   2026-08-30   19% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     49.1%    44.3   2026-08-28   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             1.0%    33.2   2026-08-30    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1356.7    48.4   2026-09-13   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1139.7    40.3   2026-09-13    8% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   49.1%    45.9   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   34.0%    45.4   2026-09-25   10% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1162.3    47.8   2026-05-10   10% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   76.5%    47.3   2026-08-11    7% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   37.1%    44.1   2025-12-16    4% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   26.0%    35.0   2025-11-18    3% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 45.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -62,8 +62,8 @@ api (DeepInfra) · $0.11/M blended · $0.075 in / $0.2 out per 1M tokens · [dee
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~14.9GB   40.4
-8-bit q8_0    ~29.3GB   40.4
+4-bit q4_k_m  ~14.9GB   45.1
+8-bit q8_0    ~29.3GB   45.1
 </pre>
 
 ```sh

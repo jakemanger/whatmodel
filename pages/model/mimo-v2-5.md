@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 58.9** ±2.2 · #56 of 205 · from 4 benchmark results across 2 sources
+**score 62.3** ±2.1 · #65 of 257 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.2    59.1   2026-09-24   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1433.6    58.4   2026-09-13   19% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1233.2    57.0   2026-09-13   10% ▇
-<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    60.0   2026-06-11   35% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.2    62.7   2026-09-24   36% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1433.6    61.9   2026-09-13   19% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1233.2    60.9   2026-09-13   11% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    63.3   2026-06-11   32% ▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 58.9
+                        weighted average                        = 62.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -49,8 +49,8 @@ api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [n
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~186.5GB   58.9
-2-bit ud-q2_k_xl   ~93.5GB   58.9
+4-bit ud-q4_k_xl  ~186.5GB   62.3
+2-bit ud-q2_k_xl   ~93.5GB   62.3
 </pre>
 
 ```sh

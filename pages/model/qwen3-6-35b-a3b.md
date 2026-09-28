@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · 35.5B params (3B active) · apache-2.0
 
-**score 53.7** ±0.8 · #93 of 205 · from 28 benchmark results across 6 sources
+**score 57.6** ±0.8 · #101 of 257 · from 28 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,36 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>  27.1%    52.9   2026-09-07   14% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>  33.8%    57.7   2026-09-11    9% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  37.5%    54.9   2026-09-11    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>   3.4%    43.6   2026-08-25    1% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       17.5%    51.0   2026-08-29   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    83.8%    58.2   2026-08-07    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        86.7%    57.3   2026-08-07    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>    22.0%    64.8   2026-08-27    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           26.0%    66.1   2026-08-07    1% ▇
-<a name="card-qwen--qwen3.6-27b"></a>Qwen/Qwen3.6-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">NL2Repo (lab)</a>                   29.4%    53.9   2026-04-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval average score (lab)</a>   68.7%    54.8   2026-04-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwe…</a>  49.5%    54.0   2026-04-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">HMMT February 2026 (lab)</a>        83.6%    53.4   2026-04-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">QwenClawBench (Qwen internal)…</a>  52.6%    55.2   2026-04-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval Pass^3 (lab)</a>          50.0%    54.4   2026-04-22    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">AIME 2026 (lab)</a>                 92.7%    53.7   2026-04-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Multilingual (lab)</a>    67.2%    53.3   2026-04-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">IMO-AnswerBench (lab)</a>           78.9%    53.8   2026-04-22    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SkillsBench 78-task subset (O…</a>  28.7%    52.2   2026-04-22    2% ▇
-<a name="card-qwen--qwen3.6-35b-a3b"></a>Qwen/Qwen3.6-35B-A3B …  <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (lab)</a>    62.8%    52.1   2026-04-16    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">τ³-bench (lab)</a>                  67.2%    52.6   2026-04-16    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">WideSearch (lab)</a>                60.1%    52.1   2026-04-16    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">Toolathlon (Tool Decathlon) (…</a>  26.9%    51.7   2026-04-16    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCPMark (lab)</a>                   37.0%    55.7   2026-04-16    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">VitaBench (lab)</a>                 35.6%    53.4   2026-04-16    2% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  50.0%    52.3   2026-09-07    3% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  89.8%    51.2   2026-09-07    2% ▇
-<a name="paper-2609.00654v1"></a>SciTrue: Reliable Sci…  <a href="https://arxiv.org/html/2609.00654v1">NTCIR SciClaimEval Subtask 1 …</a>  66.2%    62.6   2026-09-01    1% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>  27.1%    56.5   2026-09-07   14% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>  33.8%    61.1   2026-09-11   10% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  37.5%    58.4   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>   3.4%    47.5   2026-08-25    1% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       17.5%    56.2   2026-08-29   20% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        86.7%    61.4   2026-08-07    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    83.8%    61.2   2026-08-07    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>           26.0%    69.8   2026-08-07    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>    22.0%    68.7   2026-08-27    1% ▇
+<a name="card-qwen--qwen3.6-27b"></a>Qwen/Qwen3.6-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">NL2Repo (lab)</a>                   29.4%    57.7   2026-04-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval average score (lab)</a>   68.7%    58.7   2026-04-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwe…</a>  49.5%    57.8   2026-04-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval Pass^3 (lab)</a>          50.0%    58.2   2026-04-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">HMMT February 2026 (lab)</a>        83.6%    57.2   2026-04-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">QwenClawBench (Qwen internal)…</a>  52.6%    59.0   2026-04-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">AIME 2026 (lab)</a>                 92.7%    57.5   2026-04-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Multilingual (lab)</a>    67.2%    57.1   2026-04-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SkillsBench 78-task subset (O…</a>  28.7%    56.1   2026-04-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">IMO-AnswerBench (lab)</a>           78.9%    57.6   2026-04-22    2% ▇
+<a name="card-qwen--qwen3.6-35b-a3b"></a>Qwen/Qwen3.6-35B-A3B …  <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCPMark (lab)</a>                   37.0%    59.2   2026-04-16    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">MCP-Atlas (public set) (lab)</a>    62.8%    55.6   2026-04-16    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">τ³-bench (lab)</a>                  67.2%    56.1   2026-04-16    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">WideSearch (lab)</a>                60.1%    55.6   2026-04-16    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">Toolathlon (Tool Decathlon) (…</a>  26.9%    55.2   2026-04-16    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/README.md">VitaBench (lab)</a>                 35.6%    56.9   2026-04-16    2% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  50.0%    56.7   2026-09-07    3% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  89.8%    55.8   2026-09-07    2% ▇
+<a name="paper-2609.00654v1"></a>SciTrue: Reliable Sci…  <a href="https://arxiv.org/html/2609.00654v1">NTCIR SciClaimEval Subtask 1 …</a>  66.2%    66.0   2026-09-01    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 53.7
+                        weighted average                       = 57.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -104,7 +104,7 @@ api (Deep Infra) · $0.31/M blended · $0.1 in / $0.95 out per 1M tokens · [dee
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~21.8GB   53.7
+4-bit q4_k_m  ~21.8GB   57.6
 </pre>
 
 ```sh

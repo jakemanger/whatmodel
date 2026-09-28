@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-09 · 357B params (32B active) · mit
 
-**score 54.4** ±2.2 · #88 of 205 · from 5 benchmark results across 4 sources
+**score 58.3** ±2.2 · #98 of 257 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1340.6    52.9   2026-09-24   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.7    56.7   2026-09-13   19% ▇▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    53.3   2026-01-17   26% ▇▇▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    50.8   2025-11-19   12% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    69.1   2025-12-16    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1340.6    56.7   2026-09-24   37% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.7    60.3   2026-09-13   20% ▇▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    57.6   2026-01-17   25% ▇▇▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    54.2   2025-11-19    9% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    73.1   2025-12-16    6% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 54.4
+                        weighted average                        = 58.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -64,9 +64,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~214.7GB   54.4
-2-bit ud-q2_k_xl  ~107.6GB   54.4
-1-bit ud-iq1_s    ~54.05GB   54.4
+4-bit ud-q4_k_xl  ~214.7GB   58.3
+2-bit ud-q2_k_xl  ~107.6GB   58.3
+1-bit ud-iq1_s    ~54.05GB   58.3
 </pre>
 
 ```sh

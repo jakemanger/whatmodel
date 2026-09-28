@@ -6,7 +6,7 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 25.5** ±3.6 · #190 of 205 · from 3 benchmark results across 3 sources
+**score 30.4** ±3.6 · #231 of 257 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.5%    23.7   2026-05-02   47% ▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.5%    25.9   2025-07-08   25% ▇▇▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  16.2%    22.4   2025-09-30   22% ▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.5%    28.8   2026-05-02   48% ▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.5%    31.4   2025-07-08   26% ▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  16.2%    27.3   2025-09-30   20% ▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 25.5
+                        weighted average                       = 30.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -58,8 +58,8 @@ HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~2.35GB   25.5
-8-bit gguf-q8_0     ~4.2GB   25.5
+4-bit gguf-q4_k_m  ~2.35GB   30.4
+8-bit gguf-q8_0     ~4.2GB   30.4
 </pre>
 
 ```sh

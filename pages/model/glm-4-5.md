@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 53.5** ±3.0 · #94 of 205 · from 3 benchmark results across 3 sources
+**score 57.0** ±3.0 · #105 of 257 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1411.3    54.3   2026-09-13   35% ▇▇▇▇
-<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   25.7%    54.7   2026-06-17   34% ▇▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1229.2    51.5   2026-05-10   27% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1411.3    58.0   2026-09-13   38% ▇▇▇▇▇
+<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   25.7%    58.2   2026-06-17   30% ▇▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1229.2    55.4   2026-05-10   28% ▇▇▇
 prior                   pull toward the middle                    50.0                 4% ▇
-                        weighted average                        = 53.5
+                        weighted average                        = 57.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -62,9 +62,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~213.5GB   53.5
-2-bit ud-q2_k_xl    ~107GB   53.5
-1-bit ud-iq1_s    ~53.75GB   53.5
+4-bit ud-q4_k_xl  ~213.5GB   57.0
+2-bit ud-q2_k_xl    ~107GB   57.0
+1-bit ud-iq1_s    ~53.75GB   57.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 3.4B params · apache-2.0
 
-**score 22.7** ±3.6 · #197 of 205 · from 3 benchmark results across 1 source
+**score 30.0** ±3.1 · #232 of 257 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              28.3%    18.7   2026-08-30   43% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.8%    20.9   2026-08-30   39% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    29.2   2026-08-30   12% ▇
-prior     pull toward the middle             50.0                 6% ▇
-          weighted average                 = 22.7
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.8%    30.5   2026-08-30   57% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              28.3%    24.9   2026-08-30   29% ▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    33.2   2026-08-30    9% ▇
+prior     pull toward the middle             50.0                 4% ▇
+          weighted average                 = 30.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -60,7 +60,7 @@ ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.54GB   22.7
+4-bit q4_k_m  ~2.54GB   30.0
 </pre>
 
 ```sh
