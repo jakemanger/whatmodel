@@ -6,6 +6,7 @@ import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { sourceOf } from "../lib/sources.ts";
+import { csvTables } from "../lib/csv.ts";
 
 const files = ["models", "results", "benchmarks", "sources", "speeds", "quant", "provenance", "meta", "api-speed", "bench"];
 const load = (name: string) => JSON.parse(readFileSync(new URL(`../data/${name}.json`, import.meta.url), "utf8"));
@@ -34,11 +35,15 @@ const clean = (value: unknown): unknown => {
 const extra = readdirSync(extractsPath).filter((f) => f.endsWith(".json") && !files.includes(f.slice(0, -5)));
 for (const file of extra) data[file.slice(0, -5)] = JSON.parse(readFileSync(new URL(file, extractsPath), "utf8"));
 const exported = [...files, ...extra.map((f) => f.slice(0, -5))];
-const manifest = exported.map((name) => {
-  const text = JSON.stringify(clean(data[name]), null, 2) + "\n";
-  writeFileSync(new URL(`${name}.json`, publicPath), text);
-  return { file: `${name}.json`, bytes: Buffer.byteLength(text), sha256: createHash("sha256").update(text).digest("hex") };
-});
+const write = (file: string, text: string) => {
+  writeFileSync(new URL(file, publicPath), text);
+  return { file, bytes: Buffer.byteLength(text), sha256: createHash("sha256").update(text).digest("hex") };
+};
+const csv = Object.entries(csvTables(data.bench));
+const manifest = [
+  ...exported.map((name) => write(`${name}.json`, JSON.stringify(clean(data[name]), null, 2) + "\n")),
+  ...csv.map(([file, text]) => write(file, text)),
+];
 writeFileSync(new URL("manifest.json", publicPath), JSON.stringify({
   updated: data.meta.updated,
   license: "CC-BY-SA-4.0",
@@ -47,4 +52,4 @@ writeFileSync(new URL("manifest.json", publicPath), JSON.stringify({
   changes: "Selected model configurations, identifier mapping, transcription, unit conversions and documented aggregations. Derived leaderboard scores are calculated separately.",
   files: manifest,
 }, null, 2) + "\n");
-console.log(`Exported ${exported.length} reviewed data files and manifest.`);
+console.log(`Exported ${exported.length} reviewed data files, ${csv.length} CSV tables and manifest.`);
