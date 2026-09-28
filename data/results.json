@@ -102876,5 +102876,1095 @@
       3.985,
       4.135
     ]
+  },
+  {
+    "model": "zoom-scribe-v1",
+    "bench": "open-asr-wer",
+    "score": 0.0547,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 5.47%; entry zoom/scribe_v1; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "granite-4-0-1b-speech",
+    "bench": "open-asr-wer",
+    "score": 0.0552,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 5.52%; entry ibm-granite/granite-4.0-1b-speech; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "granite-speech-3-3-8b",
+    "bench": "open-asr-wer",
+    "score": 0.0574,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 5.74%; entry ibm-granite/granite-speech-3.3-8b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "granite-speech-3-3-2b",
+    "bench": "open-asr-wer",
+    "score": 0.06,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6%; entry ibm-granite/granite-speech-3.3-2b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "phi-4-multimodal-instruct",
+    "bench": "open-asr-wer",
+    "score": 0.0602,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.02%; entry microsoft/Phi-4-multimodal-instruct; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "assemblyai-universal-3-pro",
+    "bench": "open-asr-wer",
+    "score": 0.0621,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.21%; entry assemblyai/universal-3-pro; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "aquavoice-avalon-v1-en",
+    "bench": "open-asr-wer",
+    "score": 0.0624,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.24%; entry aquavoice/avalon-v1-en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "canary-1b-flash",
+    "bench": "open-asr-wer",
+    "score": 0.0635,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.35%; entry nvidia/canary-1b-flash; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "google-chirp-2",
+    "bench": "open-asr-wer",
+    "score": 0.0642,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.42%; entry google/chirp_2; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "qwen3-asr-0-6b",
+    "bench": "open-asr-wer",
+    "score": 0.0642,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.42%; entry Qwen/Qwen3-ASR-0.6B; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "canary-1b",
+    "bench": "open-asr-wer",
+    "score": 0.065038,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.50375%; entry nvidia/canary-1b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "moonshine-streaming-medium",
+    "bench": "open-asr-wer",
+    "score": 0.0666,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.66%; entry usefulsensors/moonshine-streaming-medium; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "crisperwhisper",
+    "bench": "open-asr-wer",
+    "score": 0.0667,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.67%; entry nyrahealth/CrisperWhisper; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "zipformer-transducer-xl-290m",
+    "bench": "open-asr-wer",
+    "score": 0.0679,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "lab",
+    "date": "2026-05-13",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.79%; entry soundsgoodai/Zipformer-transducer-XL-290M; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default; row added after the 26 March snapshot by the model maker's submission (commit 6a4f34c, PR #155 'Add SoundsgoodAI Zipformer XL submission', with its own soundsgoodai/run_eval.py), hence by=lab and date = commit date",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "elevenlabs-scribe-v1",
+    "bench": "open-asr-wer",
+    "score": 0.0688,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 6.88%; entry elevenlabs/scribe_v1; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-tdt-1-1b",
+    "bench": "open-asr-wer",
+    "score": 0.07015,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.015%; entry nvidia/parakeet-tdt-1.1b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "glm-asr-nano-2512",
+    "bench": "open-asr-wer",
+    "score": 0.0703,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.03%; entry zai-org/GLM-ASR-Nano-2512; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "canary-180m-flash",
+    "bench": "open-asr-wer",
+    "score": 0.0712,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.12%; entry nvidia/canary-180m-flash; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default; CAUTION: this row's 8 per-set WER columns average 6.94%, not 7.12% - the published 'Avg. WER' is used as for every other row",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "revai-fusion",
+    "bench": "open-asr-wer",
+    "score": 0.0712,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.12%; entry revai/fusion; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "lite-whisper-large-v3-acc",
+    "bench": "open-asr-wer",
+    "score": 0.0723,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.23%; entry efficient-speech/lite-whisper-large-v3-acc; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-ctc-1-1b",
+    "bench": "open-asr-wer",
+    "score": 0.073988,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.39875%; entry nvidia/parakeet-ctc-1.1b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "owsm-ctc-v4-1b",
+    "bench": "open-asr-wer",
+    "score": 0.0742,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.42%; entry espnet/owsm_ctc_v4_1B; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "lite-whisper-large-v3",
+    "bench": "open-asr-wer",
+    "score": 0.0743,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.43%; entry efficient-speech/lite-whisper-large-v3; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-tdt-ctc-110m",
+    "bench": "open-asr-wer",
+    "score": 0.0749,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.49%; entry nvidia/parakeet-tdt_ctc-110m; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-rnnt-0-6b",
+    "bench": "open-asr-wer",
+    "score": 0.07495,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.495%; entry nvidia/parakeet-rnnt-0.6b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "open-asr-wer",
+    "score": 0.075175,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.5175%; entry distil-whisper/distil-large-v3; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-ctc-0-6b",
+    "bench": "open-asr-wer",
+    "score": 0.0769,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.69%; entry nvidia/parakeet-ctc-0.6b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "vibevoice-asr-hf",
+    "bench": "open-asr-wer",
+    "score": 0.0777,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.77%; entry microsoft/VibeVoice-ASR-HF; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "lite-whisper-large-v3-turbo-acc",
+    "bench": "open-asr-wer",
+    "score": 0.0777,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.77%; entry efficient-speech/lite-whisper-large-v3-turbo-acc; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default; CAUTION: this row's 8 per-set WER columns average 7.52%, not 7.77% - the published 'Avg. WER' is used as for every other row",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-large-v2",
+    "bench": "open-asr-wer",
+    "score": 0.07835,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.835%; entry openai/whisper-large-v2; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "moonshine-streaming-small",
+    "bench": "open-asr-wer",
+    "score": 0.0784,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.84%; entry usefulsensors/moonshine-streaming-small; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "open-asr-wer",
+    "score": 0.079212,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.92125%; entry distil-whisper/distil-large-v2; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-large",
+    "bench": "open-asr-wer",
+    "score": 0.079425,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.9425%; entry openai/whisper-large; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "revai-machine",
+    "bench": "open-asr-wer",
+    "score": 0.0795,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 7.95%; entry revai/machine; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-medium-en",
+    "bench": "open-asr-wer",
+    "score": 0.0809,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.09%; entry openai/whisper-medium.en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "owsm-ctc-v3-1-1b",
+    "bench": "open-asr-wer",
+    "score": 0.0812,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.12%; entry espnet/owsm_ctc_v3.1_1B; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-7b-v2",
+    "bench": "open-asr-wer",
+    "score": 0.0814,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.14%; entry facebook/omniASR-LLM-7B-v2; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "lite-whisper-large-v3-fast",
+    "bench": "open-asr-wer",
+    "score": 0.0816,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.16%; entry efficient-speech/lite-whisper-large-v3-fast; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "owsm-ctc-v3-2-ft-1b",
+    "bench": "open-asr-wer",
+    "score": 0.0825,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.25%; entry espnet/owsm_ctc_v3.2_ft_1B; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "google-chirp",
+    "bench": "open-asr-wer",
+    "score": 0.0829,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.29%; entry google/chirp; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-ctc-large",
+    "bench": "open-asr-wer",
+    "score": 0.083188,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.31875%; entry nvidia/stt_en_conformer_ctc_large; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "speechbrain-asr-conformer-largescaleasr",
+    "bench": "open-asr-wer",
+    "score": 0.0848,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.48%; entry speechbrain/asr-conformer-largescaleasr; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "ultravox-v0-6-llama-3-1-8b",
+    "bench": "open-asr-wer",
+    "score": 0.0852,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.52%; entry ultravox/fixie-ai-ultravox-v0_6-llama-3_1-8b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-small-en",
+    "bench": "open-asr-wer",
+    "score": 0.085675,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.5675%; entry distil-whisper/distil-small.en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-small-en",
+    "bench": "open-asr-wer",
+    "score": 0.0859,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.59%; entry openai/whisper-small.en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-medium-en",
+    "bench": "open-asr-wer",
+    "score": 0.08765,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.765%; entry distil-whisper/distil-medium.en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-fastconformer-ctc-large",
+    "bench": "open-asr-wer",
+    "score": 0.08965,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 8.965%; entry nvidia/stt_en_fastconformer_ctc_large; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-fastconformer-transducer-large",
+    "bench": "open-asr-wer",
+    "score": 0.090575,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 9.0575%; entry nvidia/stt_en_fastconformer_transducer_large; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "moonshine-base",
+    "bench": "open-asr-wer",
+    "score": 0.0999,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 9.99%; entry usefulsensors/moonshine-base; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-transducer-small",
+    "bench": "open-asr-wer",
+    "score": 0.102575,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 10.2575%; entry nvidia/stt_en_conformer_transducer_small; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-base-en",
+    "bench": "open-asr-wer",
+    "score": 0.103175,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 10.3175%; entry openai/whisper-base.en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "abr-asr-19m-v2-en",
+    "bench": "open-asr-wer",
+    "score": 0.1061,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 10.61%; entry abr-ai/asr-19m-v2-en-32b; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-7b-v2",
+    "bench": "open-asr-wer",
+    "score": 0.1065,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 10.65%; entry facebook/omniASR-CTC-7B-v2; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-ctc-small",
+    "bench": "open-asr-wer",
+    "score": 0.111587,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 11.15875%; entry nvidia/stt_en_conformer_ctc_small; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "moonshine-streaming-tiny",
+    "bench": "open-asr-wer",
+    "score": 0.12,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 12%; entry usefulsensors/moonshine-streaming-tiny; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "moonshine-tiny",
+    "bench": "open-asr-wer",
+    "score": 0.1265,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 12.65%; entry usefulsensors/moonshine-tiny; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-tiny-en",
+    "bench": "open-asr-wer",
+    "score": 0.128063,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 12.80625%; entry openai/whisper-tiny.en; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "speechbrain-asr-wav2vec2-librispeech",
+    "bench": "open-asr-wer",
+    "score": 0.143475,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 14.3475%; entry speechbrain/asr-wav2vec2-librispeech; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "wav2vec2-large-960h-lv60-self",
+    "bench": "open-asr-wer",
+    "score": 0.212725,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 21.2725%; entry facebook/wav2vec2-large-960h-lv60-self; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "mms-1b-all",
+    "bench": "open-asr-wer",
+    "score": 0.225388,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 22.53875%; entry facebook/mms-1b-all; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "hubert-xlarge-ls960-ft",
+    "bench": "open-asr-wer",
+    "score": 0.225475,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 22.5475%; entry facebook/hubert-xlarge-ls960-ft; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "hubert-large-ls960-ft",
+    "bench": "open-asr-wer",
+    "score": 0.226938,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 22.69375%; entry facebook/hubert-large-ls960-ft; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "wav2vec2-large-robust-ft-libri-960h",
+    "bench": "open-asr-wer",
+    "score": 0.229312,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 22.93125%; entry facebook/wav2vec2-large-robust-ft-libri-960h; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "data2vec-audio-large-960h",
+    "bench": "open-asr-wer",
+    "score": 0.2321,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 23.21%; entry facebook/data2vec-audio-large-960h; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "wav2vec2-conformer-rope-large-960h-ft",
+    "bench": "open-asr-wer",
+    "score": 0.232838,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 23.28375%; entry facebook/wav2vec2-conformer-rope-large-960h-ft; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "wav2vec2-conformer-rel-pos-large-960h-ft",
+    "bench": "open-asr-wer",
+    "score": 0.232913,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 23.29125%; entry facebook/wav2vec2-conformer-rel-pos-large-960h-ft; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "wav2vec2-large-960h",
+    "bench": "open-asr-wer",
+    "score": 0.267725,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 26.7725%; entry facebook/wav2vec2-large-960h; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "data2vec-audio-base-960h",
+    "bench": "open-asr-wer",
+    "score": 0.283025,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 28.3025%; entry facebook/data2vec-audio-base-960h; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "wav2vec2-base-960h",
+    "bench": "open-asr-wer",
+    "score": 0.294025,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 29.4025%; entry facebook/wav2vec2-base-960h; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "mms-1b-fl102",
+    "bench": "open-asr-wer",
+    "score": 0.397963,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_shortform.csv @ 16743c6 (committed 2026-05-22; README: 'CSV results as of 26 March 2026'); column 'Avg. WER' = 39.79625%; entry facebook/mms-1b-fl102; mean of 8 public short-form sets (AMI, Earnings22, Gigaspeech, LS clean, LS other, SPGISpeech, Tedlium, Voxpopuli) - older mix than the current Space default",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "elevenlabs-scribe-v1",
+    "bench": "open-asr-longform-wer",
+    "score": 0.058967,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 5.896666667 (mean of long-form earnings21 6.35, earnings22 9.03, tedlium 2.31); entry elevenlabs/scribe_v1",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "assemblyai-universal-3-pro",
+    "bench": "open-asr-longform-wer",
+    "score": 0.068433,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 6.843333333 (mean of long-form earnings21 7.62, earnings22 10.59, tedlium 2.32); entry assembly/universal-3-pro",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "revai-fusion",
+    "bench": "open-asr-longform-wer",
+    "score": 0.085167,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 8.516666667 (mean of long-form earnings21 7.56, earnings22 15.47, tedlium 2.52); entry revai/fusion",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "revai-machine",
+    "bench": "open-asr-longform-wer",
+    "score": 0.087567,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 8.756666667 (mean of long-form earnings21 7.63, earnings22 15.72, tedlium 2.92); entry revai/machine",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-large-v3",
+    "bench": "open-asr-longform-wer",
+    "score": 0.0984,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 9.84 (mean of long-form earnings21 10.58, earnings22 14.98, tedlium 3.96); entry distil-whisper/distil-large-v3",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-large",
+    "bench": "open-asr-longform-wer",
+    "score": 0.0941,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 9.41 (mean of long-form earnings21 10.66, earnings22 14.11, tedlium 3.46); entry openai/whisper-large",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "whisper-large-v2",
+    "bench": "open-asr-longform-wer",
+    "score": 0.094467,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 9.446666667 (mean of long-form earnings21 10.9, earnings22 14.24, tedlium 3.2); entry openai/whisper-large-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-ctc-1-1b",
+    "bench": "open-asr-longform-wer",
+    "score": 0.092767,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 9.276666667 (mean of long-form earnings21 10.14, earnings22 14.46, tedlium 3.23); entry nvidia/parakeet-ctc-1.1b",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "google-chirp",
+    "bench": "open-asr-longform-wer",
+    "score": 0.1154,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 11.54 (mean of long-form earnings21 14.29, earnings22 14.81, tedlium 5.52); entry google/chirp",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-ctc-0-6b",
+    "bench": "open-asr-longform-wer",
+    "score": 0.097733,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 9.773333333 (mean of long-form earnings21 10.79, earnings22 14.97, tedlium 3.56); entry nvidia/parakeet-ctc-0.6b",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-transducer-small",
+    "bench": "open-asr-longform-wer",
+    "score": 0.137433,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 13.74333333 (mean of long-form earnings21 15.05, earnings22 20.72, tedlium 5.46); entry nvidia/stt_en_conformer_transducer_small",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-ctc-large",
+    "bench": "open-asr-longform-wer",
+    "score": 0.111,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 11.1 (mean of long-form earnings21 12.11, earnings22 17.51, tedlium 3.68); entry nvidia/stt_en_conformer_ctc_large",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-rnnt-0-6b",
+    "bench": "open-asr-longform-wer",
+    "score": 0.095033,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 9.503333333 (mean of long-form earnings21 11.13, earnings22 14.14, tedlium 3.24); entry nvidia/parakeet-rnnt-0.6b",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "parakeet-tdt-1-1b",
+    "bench": "open-asr-longform-wer",
+    "score": 0.101867,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 10.18666667 (mean of long-form earnings21 11.57, earnings22 14.98, tedlium 4.01); entry nvidia/parakeet-tdt-1.1b",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-large-v2",
+    "bench": "open-asr-longform-wer",
+    "score": 0.146867,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 14.68666667 (mean of long-form earnings21 14.97, earnings22 19.24, tedlium 9.85); entry distil-whisper/distil-large-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-ctc-small",
+    "bench": "open-asr-longform-wer",
+    "score": 0.152833,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 15.28333333 (mean of long-form earnings21 16.44, earnings22 23.15, tedlium 6.26); entry nvidia/stt_en_conformer_ctc_small",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-fastconformer-ctc-large",
+    "bench": "open-asr-longform-wer",
+    "score": 0.155233,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 15.52333333 (mean of long-form earnings21 17.02, earnings22 24.29, tedlium 5.26); entry nvidia/stt_en_fastconformer_ctc_large",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-conformer-transducer-large",
+    "bench": "open-asr-longform-wer",
+    "score": 0.153967,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 15.39666667 (mean of long-form earnings21 17.26, earnings22 23.69, tedlium 5.24); entry nvidia/stt_en_conformer_transducer_large",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "stt-en-fastconformer-transducer-large",
+    "bench": "open-asr-longform-wer",
+    "score": 0.162867,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 16.28666667 (mean of long-form earnings21 18.15, earnings22 25.3, tedlium 5.41); entry nvidia/stt_en_fastconformer_transducer_large",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "distil-medium-en",
+    "bench": "open-asr-longform-wer",
+    "score": 0.1896,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/en_longform.csv @ 090df12 (2026-03-26); column 'Avg (without CORAAL)' = 18.96 (mean of long-form earnings21 19.48, earnings22 24.82, tedlium 12.58); entry distil-whisper/distil-medium.en",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "assemblyai-universal-3-pro",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.032315,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 3.231538462 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry assembly/universal-3-pro",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-7b-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.0439,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 4.39 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-7B-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "phi-4-multimodal-instruct",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.044077,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 4.407692308 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry microsoft/Phi-4-multimodal-instruct",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-7b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.046838,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 4.683846154 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-7B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-7b-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.058415,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 5.841538462 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-7B-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-3b-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.0594,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 5.94 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-3B-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-1b-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.060892,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 6.089230769 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-1B-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-3b-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.061654,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 6.165384615 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-3B-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-7b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.061777,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 6.177692308 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-7B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-3b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.062569,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 6.256923077 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-3B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-1b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.0667,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 6.67 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-1B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-3b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.0705,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 7.05 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-3B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-1b-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.079638,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 7.963846154 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-1B-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "qwen3-asr-0-6b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.082377,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 8.237692308 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry Qwen/Qwen3-ASR-0.6B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-300m-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.084231,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 8.423076923 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-300M-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-1b",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.087015,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 8.701538462 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-1B",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-llm-300m",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.092538,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 9.253846154 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-LLM-300M",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-300m-v2",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.143438,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 14.34384615 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-300M-v2",
+    "source_id": "open-asr"
+  },
+  {
+    "model": "omniasr-ctc-300m",
+    "bench": "open-asr-multilingual-wer",
+    "score": 0.149285,
+    "source": "https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv",
+    "by": "independent",
+    "date": "2026-03-26",
+    "note": "Open ASR Leaderboard results CSV, github.com/huggingface/open_asr_leaderboard (Apache-2.0); scripts/data/multilingual.csv @ 090df12 (2026-03-26); column 'Avg' = 14.92846154 (mean over 13 sets: CoVoST2/MLS/FLEURS for de, fr, it, es, pt); entry facebook/omniASR-CTC-300M",
+    "source_id": "open-asr"
   }
 ]

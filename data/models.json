@@ -14187,6 +14187,2171 @@
       "https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py",
       "https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json"
     ],
-    "identity_note": "Open-weights Qwen/Qwen3-ASR-0.6B (Apache-2.0, released 2026-01-28), the smaller sibling of catalogue qwen3-asr-1-7b. Proposed comparison-only model: evaluated by exact HF id on the Elm Arabic board and the Persian Triple Threat board, where it is the third model bridging the gap closer gemini-3-5-transcribe."
+    "identity_note": "Open-weights Qwen/Qwen3-ASR-0.6B (Apache-2.0, released 2026-01-28), the smaller sibling of catalogue qwen3-asr-1-7b. Proposed comparison-only model: evaluated by exact HF id on the Elm Arabic board and the Persian Triple Threat board, where it is the third model bridging the gap closer gemini-3-5-transcribe.",
+    "released": "2026-01",
+    "params_b": 0.94,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 2.76,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "cmd": "uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-0.6B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000",
+          "source": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B"
+        }
+      ]
+    }
+  },
+  {
+    "category": "stt",
+    "id": "whisper-large-v2",
+    "name": "Whisper large-v2",
+    "provider": "OpenAI",
+    "released": "2022-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.55,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 4.22,
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model large-v2",
+          "source": "https://github.com/openai/whisper",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 7.94,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-large-v2')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-large-v2",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-large-v2/tree/ae4642769ce2ad8fc292556ccea8e901f1530655"
+    ],
+    "identity_note": "Exact checkpoint openai/whisper-large-v2 (openai-whisper name 'large-v2'). Params from the Whisper README size table. Licence as declared on the HF card."
+  },
+  {
+    "category": "stt",
+    "id": "whisper-large",
+    "name": "Whisper large (v1)",
+    "provider": "OpenAI",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.55,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 4.22,
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model large-v1",
+          "source": "https://github.com/openai/whisper",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 7.94,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-large')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-large",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-large/tree/4ef9b41f0d4fe232daafdb5f76bb1dd8b23e01d7"
+    ],
+    "identity_note": "Exact checkpoint openai/whisper-large (openai-whisper name 'large-v1'; the HF repo openai/whisper-large is the original v1 large model, distinct from large-v2 and large-v3). Params from the Whisper README size table. Licence as declared on the HF card."
+  },
+  {
+    "category": "stt",
+    "id": "whisper-medium-en",
+    "name": "Whisper medium.en",
+    "provider": "OpenAI",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.769,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.35,
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model medium.en",
+          "source": "https://github.com/openai/whisper",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 4.19,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-medium.en')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-medium.en",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-medium.en/tree/2e98eb6279edf5095af0c8dedb36bdec0acd172b"
+    ],
+    "identity_note": "Exact checkpoint openai/whisper-medium.en (openai-whisper name 'medium.en'). Params from the Whisper README size table. Licence as declared on the HF card."
+  },
+  {
+    "category": "stt",
+    "id": "whisper-small-en",
+    "name": "Whisper small.en",
+    "provider": "OpenAI",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.244,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 1.09,
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model small.en",
+          "source": "https://github.com/openai/whisper",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 1.67,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-small.en')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-small.en",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-small.en/tree/e8727524f962ee844a7319d92be39ac1bd25655a"
+    ],
+    "identity_note": "Exact checkpoint openai/whisper-small.en (openai-whisper name 'small.en'). Params from the Whisper README size table. Licence as declared on the HF card."
+  },
+  {
+    "category": "stt",
+    "id": "whisper-base-en",
+    "name": "Whisper base.en",
+    "provider": "OpenAI",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.074,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.68,
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model base.en",
+          "source": "https://github.com/openai/whisper",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 0.86,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-base.en')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-base.en",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-base.en/tree/911407f4214e0e1d82085af863093ec0b66f9cd6"
+    ],
+    "identity_note": "Exact checkpoint openai/whisper-base.en (openai-whisper name 'base.en'). Params from the Whisper README size table. Licence as declared on the HF card."
+  },
+  {
+    "category": "stt",
+    "id": "whisper-tiny-en",
+    "name": "Whisper tiny.en",
+    "provider": "OpenAI",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.039,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.59,
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model tiny.en",
+          "source": "https://github.com/openai/whisper",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 0.69,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-tiny.en')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-tiny.en",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-tiny.en/tree/87c7102498dcde7456f24cfd30239ca606ed9063"
+    ],
+    "identity_note": "Exact checkpoint openai/whisper-tiny.en (openai-whisper name 'tiny.en'). Params from the Whisper README size table. Licence as declared on the HF card."
+  },
+  {
+    "category": "stt",
+    "id": "distil-large-v3",
+    "name": "Distil-Whisper distil-large-v3",
+    "provider": "Hugging Face (Distil-Whisper)",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.76,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.32,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-large-v3')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/distil-whisper/distil-large-v3",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/distil-whisper/distil-large-v3/tree/8031d2e6ce6631b7fc45629dddfc00271116d981"
+    ],
+    "identity_note": "Exact checkpoint distil-whisper/distil-large-v3; distinct from catalogue distil-large-v3-5. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "distil-large-v2",
+    "name": "Distil-Whisper distil-large-v2",
+    "provider": "Hugging Face (Distil-Whisper)",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.76,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.32,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-large-v2')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/distil-whisper/distil-large-v2",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/distil-whisper/distil-large-v2/tree/97d2c8f9cae1b0f6c8fc2e173495ee4cedc05843"
+    ],
+    "identity_note": "Exact checkpoint distil-whisper/distil-large-v2; distinct from catalogue distil-large-v3-5. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "distil-medium-en",
+    "name": "Distil-Whisper distil-medium.en",
+    "provider": "Hugging Face (Distil-Whisper)",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.39,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 1.44,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-medium.en')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/distil-whisper/distil-medium.en",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/distil-whisper/distil-medium.en/tree/6e61418885eaf4d5cc9f64e508e80ac5b4c052b7"
+    ],
+    "identity_note": "Exact checkpoint distil-whisper/distil-medium.en; distinct from catalogue distil-large-v3-5. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "distil-small-en",
+    "name": "Distil-Whisper distil-small.en",
+    "provider": "Hugging Face (Distil-Whisper)",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.17,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.91,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='distil-whisper/distil-small.en')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/distil-whisper/distil-small.en",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/distil-whisper/distil-small.en/tree/9e4a67ca4569c30be43a3fe7fba1621e504f0093"
+    ],
+    "identity_note": "Exact checkpoint distil-whisper/distil-small.en; distinct from catalogue distil-large-v3-5. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "canary-1b-flash",
+    "name": "Canary-1B-Flash",
+    "provider": "NVIDIA",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.81,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 4.39,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-flash').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/canary-1b-flash",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/canary-1b-flash/tree/2b6e4d2dacb11cc1b1724de31bb48fe68c26c12e"
+    ],
+    "identity_note": "Exact checkpoint nvidia/canary-1b-flash (NeMo). Params: HF safetensors total (card text says 883M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "canary-1b",
+    "name": "Canary-1B",
+    "provider": "NVIDIA",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 1,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.3,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/canary-1b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/canary-1b/tree/1698acf1700ed316ffce1cb42d79437c7e360cfa"
+    ],
+    "identity_note": "Exact checkpoint nvidia/canary-1b (NeMo). Original 2024 Canary-1B; distinct from catalogue canary-1b-v2 and canary-1b-flash. Weights CC-BY-NC-4.0. Params: card ('1 billion'). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "canary-180m-flash",
+    "name": "Canary-180M-Flash",
+    "provider": "NVIDIA",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.182,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.37,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-180m-flash').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/canary-180m-flash",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/canary-180m-flash/tree/b12ab418510d093e83890178fd0e8b0d0f7918a6"
+    ],
+    "identity_note": "Exact checkpoint nvidia/canary-180m-flash (NeMo). Params: card (182M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "parakeet-tdt-1-1b",
+    "name": "Parakeet TDT 1.1B",
+    "provider": "NVIDIA",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 1.1,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.78,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-1.1b').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/parakeet-tdt-1.1b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-tdt-1.1b/tree/53276c6469d1f17a1352e30c4d11be3d0d7e9575"
+    ],
+    "identity_note": "Exact checkpoint nvidia/parakeet-tdt-1.1b (NeMo). Params: card (~1.1B). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "parakeet-ctc-1-1b",
+    "name": "Parakeet CTC 1.1B",
+    "provider": "NVIDIA",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 1.06,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.59,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-ctc-1.1b').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/parakeet-ctc-1.1b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-ctc-1.1b/tree/20e63a0fed6aedba145b74b826dbd41df0941730"
+    ],
+    "identity_note": "Exact checkpoint nvidia/parakeet-ctc-1.1b (NeMo). Params: HF safetensors total. released aligned with catalogue sibling parakeet-rnnt-1-1b (repo created 2023-12-28)."
+  },
+  {
+    "category": "stt",
+    "id": "parakeet-ctc-0-6b",
+    "name": "Parakeet CTC 0.6B",
+    "provider": "NVIDIA",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.61,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.43,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-ctc-0.6b').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/parakeet-ctc-0.6b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-ctc-0.6b/tree/ad09ba1cc62743fbc9814de5d2016fca9096485a"
+    ],
+    "identity_note": "Exact checkpoint nvidia/parakeet-ctc-0.6b (NeMo). Params: HF safetensors total. released aligned with catalogue sibling parakeet-rnnt-1-1b (repo created 2023-12-28)."
+  },
+  {
+    "category": "stt",
+    "id": "parakeet-rnnt-0-6b",
+    "name": "Parakeet RNNT 0.6B",
+    "provider": "NVIDIA",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.62,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.48,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-0.6b').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/parakeet-rnnt-0.6b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-rnnt-0.6b/tree/1b6b548f70b93d2410c3d13cc0654cab300f06ef"
+    ],
+    "identity_note": "Exact checkpoint nvidia/parakeet-rnnt-0.6b (NeMo). Params: HF safetensors total. released aligned with catalogue sibling parakeet-rnnt-1-1b (repo created 2023-12-28)."
+  },
+  {
+    "category": "stt",
+    "id": "parakeet-tdt-ctc-110m",
+    "name": "Parakeet TDT-CTC 110M",
+    "provider": "NVIDIA",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.114,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.05,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt_ctc-110m').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/parakeet-tdt_ctc-110m",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/parakeet-tdt_ctc-110m/tree/431a349f3051ab85c22b9b7a2741b5fe77065665"
+    ],
+    "identity_note": "Exact checkpoint nvidia/parakeet-tdt_ctc-110m (NeMo). Params: card (~114M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "stt-en-conformer-ctc-large",
+    "name": "STT En Conformer-CTC Large",
+    "provider": "NVIDIA",
+    "released": "2022-04",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.12,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.08,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/stt_en_conformer_ctc_large').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/stt_en_conformer_ctc_large",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/stt_en_conformer_ctc_large/tree/5f18b90411b9fdfc9b52b8caf636f204491afb01"
+    ],
+    "identity_note": "Exact checkpoint nvidia/stt_en_conformer_ctc_large (NeMo). Params: card (~120M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "stt-en-conformer-ctc-small",
+    "name": "STT En Conformer-CTC Small",
+    "provider": "NVIDIA",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.013,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.56,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/stt_en_conformer_ctc_small').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/stt_en_conformer_ctc_small",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/stt_en_conformer_ctc_small/tree/e5b9941cc1b0b8a08c29b31a111c674f3040a80f"
+    ],
+    "identity_note": "Exact checkpoint nvidia/stt_en_conformer_ctc_small (NeMo). Params: card (~13M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "stt-en-conformer-transducer-large",
+    "name": "STT En Conformer-Transducer Large",
+    "provider": "NVIDIA",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.12,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.08,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/stt_en_conformer_transducer_large').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/stt_en_conformer_transducer_large",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/stt_en_conformer_transducer_large/tree/a40623d1796368b64a9433bce3bcd75fce379a7b"
+    ],
+    "identity_note": "Exact checkpoint nvidia/stt_en_conformer_transducer_large (NeMo). Params: card (~120M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "stt-en-fastconformer-ctc-large",
+    "name": "STT En FastConformer-CTC Large",
+    "provider": "NVIDIA",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.115,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.05,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/stt_en_fastconformer_ctc_large').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/stt_en_fastconformer_ctc_large",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/stt_en_fastconformer_ctc_large/tree/5a84a7a3bee8d9bd414c6719ddfea7bc723e3961"
+    ],
+    "identity_note": "Exact checkpoint nvidia/stt_en_fastconformer_ctc_large (NeMo). Params: card (~115M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "stt-en-fastconformer-transducer-large",
+    "name": "STT En FastConformer-Transducer Large",
+    "provider": "NVIDIA",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.114,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.05,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/stt_en_fastconformer_transducer_large').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/nvidia/stt_en_fastconformer_transducer_large",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nvidia/stt_en_fastconformer_transducer_large/tree/24a0e16aa9ebfb00b61300514c89cd84a4950021"
+    ],
+    "identity_note": "Exact checkpoint nvidia/stt_en_fastconformer_transducer_large (NeMo). Params: card (~114M). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "stt-en-conformer-transducer-small",
+    "name": "STT En Conformer-Transducer Small",
+    "provider": "NVIDIA",
+    "released": "2021-09",
+    "open_weights": true,
+    "license": "ngc-terms-of-use",
+    "params_b": 0.014,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.57,
+          "cmd": "uvx --with 'nemo_toolkit[asr]' python -c \"import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('stt_en_conformer_transducer_small').transcribe(['audio.wav']))\"",
+          "platform": "nvidia",
+          "source": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_conformer_transducer_small",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_conformer_transducer_small"
+    ],
+    "identity_note": "NeMo NGC model stt_en_conformer_transducer_small (no Hugging Face repo; the CSV entry 'nvidia/stt_en_conformer_transducer_small' is its NeMo pretrained name). NGC latest version 1.6.0, created 2021-09-16; licence: NGC Terms of Use. Params: NGC description (~14M)."
+  },
+  {
+    "category": "stt",
+    "id": "granite-4-0-1b-speech",
+    "name": "Granite 4.0 1B Speech",
+    "provider": "IBM",
+    "released": "2026-03",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.31,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 6.04,
+          "cmd": "vllm serve ibm-granite/granite-4.0-1b-speech --max-model-len 2048",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ibm-granite/granite-4.0-1b-speech",
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "gb": 6.04,
+          "cmd": "uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-4.0-1b-speech --audio audio.wav --output-path transcript",
+          "platform": "mac",
+          "source": "https://huggingface.co/ibm-granite/granite-4.0-1b-speech",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-4.0-1b-speech/tree/bd87ab862416353633ea431fe49b1614003623c5"
+    ],
+    "identity_note": "Exact checkpoint ibm-granite/granite-4.0-1b-speech; distinct from catalogue granite-speech-4-1-2b and granite-speech-5-0-470m-turboctc. Card 'Release Date: March 6, 2026'. Params: HF safetensors total (2,313,207,132 BF16)."
+  },
+  {
+    "category": "stt",
+    "id": "granite-speech-3-3-8b",
+    "name": "Granite Speech 3.3 8B",
+    "provider": "IBM",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.65,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 21.26,
+          "cmd": "vllm serve ibm-granite/granite-speech-3.3-8b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-8b --max-lora-rank 64",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ibm-granite/granite-speech-3.3-8b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-speech-3.3-8b/tree/5670dcfae4a296e6993ac53eb25f638c6aaa54d0"
+    ],
+    "identity_note": "Exact checkpoint ibm-granite/granite-speech-3.3-8b (current revision 3.3.2; card 'Release Date: June 19, 2025'; repo first created 2025-04). Params: HF safetensors total. vLLM flags from the card (speech LoRA)."
+  },
+  {
+    "category": "stt",
+    "id": "granite-speech-3-3-2b",
+    "name": "Granite Speech 3.3 2B",
+    "provider": "IBM",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 3.01,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 7.72,
+          "cmd": "vllm serve ibm-granite/granite-speech-3.3-2b --max-model-len 2048 --enable-lora --lora-modules speech=ibm-granite/granite-speech-3.3-2b --max-lora-rank 64",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ibm-granite/granite-speech-3.3-2b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-speech-3.3-2b/tree/4ac2f02f413c6169ae8c0ccc217115a366e552d7"
+    ],
+    "identity_note": "Exact checkpoint ibm-granite/granite-speech-3.3-2b (current revision 3.3.2; card 'Release Date: June 19, 2025'; repo first created 2025-04). Params: HF safetensors total. vLLM flags from the card (speech LoRA)."
+  },
+  {
+    "category": "stt",
+    "id": "phi-4-multimodal-instruct",
+    "name": "Phi-4-multimodal-instruct",
+    "provider": "Microsoft",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 5.57,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 13.87,
+          "cmd": "vllm serve microsoft/Phi-4-multimodal-instruct --trust-remote-code --max-model-len 12800 --enable-lora --max-lora-rank 320 --limit-mm-per-prompt '{\"audio\":1}' --lora-modules speech=$(hf download microsoft/Phi-4-multimodal-instruct)/speech-lora",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/tree/93f923e1a7727d1c4f446756212d9d3e8fcc5d81"
+    ],
+    "identity_note": "Exact checkpoint microsoft/Phi-4-multimodal-instruct (5.6B multimodal model; ASR uses its speech-lora folder). Distinct from catalogue LLMs phi-4, phi-4-mini. Params: HF safetensors total. Serve command combines the card's vLLM server flags with the speech-lora path used in vLLM's audio example."
+  },
+  {
+    "category": "stt",
+    "id": "vibevoice-asr-hf",
+    "name": "VibeVoice-ASR-HF",
+    "provider": "Microsoft",
+    "released": "2026-03",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 8.33,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 20.49,
+          "cmd": "uv run --with transformers --with torch --with accelerate python -c \"from transformers import AutoProcessor, VibeVoiceAsrForConditionalGeneration as M; r='microsoft/VibeVoice-ASR-HF'; p=AutoProcessor.from_pretrained(r); m=M.from_pretrained(r, device_map='auto'); i=p.apply_transcription_request(audio='audio.wav').to(m.device, m.dtype); o=m.generate(**i); print(p.decode(o[:, i['input_ids'].shape[1]:], return_format='transcription_only')[0])\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/microsoft/VibeVoice-ASR-HF",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/microsoft/VibeVoice-ASR-HF/tree/f22241c2062b3b25272bf117397e03d73381037a"
+    ],
+    "identity_note": "Exact checkpoint microsoft/VibeVoice-ASR-HF (Transformers-native release, transformers>=5.3); not the TTS model vibevoice-1-5b. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "moonshine-streaming-medium",
+    "name": "Moonshine Streaming Medium",
+    "provider": "Useful Sensors (Moonshine AI)",
+    "released": "2026-01",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.27,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.8,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-medium'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))\"",
+          "source": "https://huggingface.co/moonshine-ai/moonshine-streaming-medium",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/moonshine-ai/moonshine-streaming-medium/tree/57b843633a8c183cadf6699ffa761377a933a866"
+    ],
+    "identity_note": "Exact checkpoint moonshine-ai/moonshine-streaming-medium (CSV entry 'usefulsensors/moonshine-streaming-medium'; the Hub redirects the old UsefulSensors org name). Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "moonshine-streaming-small",
+    "name": "Moonshine Streaming Small",
+    "provider": "Useful Sensors (Moonshine AI)",
+    "released": "2026-01",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.14,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.17,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-small'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))\"",
+          "source": "https://huggingface.co/moonshine-ai/moonshine-streaming-small",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/moonshine-ai/moonshine-streaming-small/tree/2c036506f23a09c18df5a50057599ba6d9280999"
+    ],
+    "identity_note": "Exact checkpoint moonshine-ai/moonshine-streaming-small (CSV entry 'usefulsensors/moonshine-streaming-small'; the Hub redirects the old UsefulSensors org name). Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "moonshine-streaming-tiny",
+    "name": "Moonshine Streaming Tiny",
+    "provider": "Useful Sensors (Moonshine AI)",
+    "released": "2026-01",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.044,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.71,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa; from transformers import MoonshineStreamingForConditionalGeneration as M, AutoProcessor as P; r='moonshine-ai/moonshine-streaming-tiny'; m=M.from_pretrained(r); p=P.from_pretrained(r); i=p(librosa.load('audio.wav', sr=16000)[0], return_tensors='pt', sampling_rate=16000); print(p.decode(m.generate(**i, max_length=int(i.attention_mask.sum()*6.5/16000))[0], skip_special_tokens=True))\"",
+          "source": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny/tree/f8e9dfd8c562c257c151a907b7b7f2fe8ff8511a"
+    ],
+    "identity_note": "Exact checkpoint moonshine-ai/moonshine-streaming-tiny (CSV entry 'usefulsensors/moonshine-streaming-tiny'; the Hub redirects the old UsefulSensors org name). Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "moonshine-base",
+    "name": "Moonshine Base",
+    "provider": "Useful Sensors (Moonshine AI)",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.062,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.8,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='moonshine-ai/moonshine-base')('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/moonshine-ai/moonshine-base",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/moonshine-ai/moonshine-base/tree/7a73d8d55ac0ba2ef3ae761593f6784b51f96dcf"
+    ],
+    "identity_note": "Exact checkpoint moonshine-ai/moonshine-base (CSV entry 'usefulsensors/moonshine-base'; the Hub redirects the old UsefulSensors org name). Params: HF safetensors total. released: card 'Release date: October 2024'."
+  },
+  {
+    "category": "stt",
+    "id": "moonshine-tiny",
+    "name": "Moonshine Tiny",
+    "provider": "Useful Sensors (Moonshine AI)",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.027,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.63,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='moonshine-ai/moonshine-tiny')('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/moonshine-ai/moonshine-tiny",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/moonshine-ai/moonshine-tiny/tree/390624ed33d594443aa4aa221f5b9f283b545b5a"
+    ],
+    "identity_note": "Exact checkpoint moonshine-ai/moonshine-tiny (CSV entry 'usefulsensors/moonshine-tiny'; the Hub redirects the old UsefulSensors org name). Params: HF safetensors total. released: card 'Release date: October 2024'."
+  },
+  {
+    "category": "stt",
+    "id": "lite-whisper-large-v3-acc",
+    "name": "LiteWhisper large-v3-acc",
+    "provider": "Efficient-Speech (LiteASR)",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.4,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 3.86,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-acc', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/efficient-speech/lite-whisper-large-v3-acc",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/efficient-speech/lite-whisper-large-v3-acc/tree/6db26332dfdb267e5eb28c20e745fd4eb7419279"
+    ],
+    "identity_note": "Exact checkpoint efficient-speech/lite-whisper-large-v3-acc (low-rank compressed Whisper encoder; custom code, trust_remote_code). Params: HF safetensors total. released: HF repo creation month. Command follows the card snippet (processor from openai/whisper-large-v3)."
+  },
+  {
+    "category": "stt",
+    "id": "lite-whisper-large-v3",
+    "name": "LiteWhisper large-v3",
+    "provider": "Efficient-Speech (LiteASR)",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.35,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 3.74,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/efficient-speech/lite-whisper-large-v3",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/efficient-speech/lite-whisper-large-v3/tree/0803b28629fde98068427ff451e9d7ab1f9b98fa"
+    ],
+    "identity_note": "Exact checkpoint efficient-speech/lite-whisper-large-v3 (low-rank compressed Whisper encoder; custom code, trust_remote_code). Params: HF safetensors total. released: HF repo creation month. Command follows the card snippet (processor from openai/whisper-large-v3)."
+  },
+  {
+    "category": "stt",
+    "id": "lite-whisper-large-v3-fast",
+    "name": "LiteWhisper large-v3-fast",
+    "provider": "Efficient-Speech (LiteASR)",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.28,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 3.57,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-fast', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/efficient-speech/lite-whisper-large-v3-fast/tree/8b07a8f6ca8d91ea205e329b96a24161af49e1ef"
+    ],
+    "identity_note": "Exact checkpoint efficient-speech/lite-whisper-large-v3-fast (low-rank compressed Whisper encoder; custom code, trust_remote_code). Params: HF safetensors total. released: HF repo creation month. Command follows the card snippet (processor from openai/whisper-large-v3)."
+  },
+  {
+    "category": "stt",
+    "id": "lite-whisper-large-v3-turbo-acc",
+    "name": "LiteWhisper large-v3-turbo-acc",
+    "provider": "Efficient-Speech (LiteASR)",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.66,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.08,
+          "cmd": "uv run --with transformers --with torch --with librosa python -c \"import librosa, torch; from transformers import AutoProcessor, AutoModel; m=AutoModel.from_pretrained('efficient-speech/lite-whisper-large-v3-turbo-acc', trust_remote_code=True).to(torch.float16).to('cuda'); p=AutoProcessor.from_pretrained('openai/whisper-large-v3'); f=p(librosa.load('audio.wav', sr=16000)[0], sampling_rate=16000, return_tensors='pt').input_features.to(torch.float16).to('cuda'); print(p.batch_decode(m.generate(f), skip_special_tokens=True)[0])\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-acc",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/efficient-speech/lite-whisper-large-v3-turbo-acc/tree/ef2c0dd768cc9832a8a5a3397ab7218c838fea66"
+    ],
+    "identity_note": "Exact checkpoint efficient-speech/lite-whisper-large-v3-turbo-acc (low-rank compressed Whisper encoder; custom code, trust_remote_code). Params: HF safetensors total. released: HF repo creation month. Command follows the card snippet (processor from openai/whisper-large-v3)."
+  },
+  {
+    "category": "stt",
+    "id": "owsm-ctc-v4-1b",
+    "name": "OWSM-CTC v4 1B",
+    "provider": "ESPnet (CMU WAVLab)",
+    "released": "2025-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 1.01,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.35,
+          "cmd": "uv run --python 3.12 --with espnet --with espnet_model_zoo --with librosa python -c \"from espnet2.bin.s2t_inference import Speech2Text; s=Speech2Text.from_pretrained('espnet/owsm_ctc_v4_1B', device='cuda', lang_sym='<eng>', task_sym='<asr>'); print(' '.join(t for _, _, t in s.decode_long('audio.wav', batch_size=16)))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/espnet/owsm_ctc_v4_1B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/espnet/owsm_ctc_v4_1B/tree/5f526a73d919afd1bf51ab425909c8ab18801670"
+    ],
+    "identity_note": "Exact checkpoint espnet/owsm_ctc_v4_1B. Params derived from the fp32 weight file (4045987222 bytes / 4 = 1.011B; card gives only '1B'). released: HF repo creation month. Command follows the card's Speech2Text.decode_long example (espnet needs Python 3.12-3.13)."
+  },
+  {
+    "category": "stt",
+    "id": "owsm-ctc-v3-1-1b",
+    "name": "OWSM-CTC v3.1 1B",
+    "provider": "ESPnet (CMU WAVLab)",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 1.01,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.35,
+          "cmd": "uv run --python 3.12 --with espnet --with espnet_model_zoo --with librosa python -c \"from espnet2.bin.s2t_inference import Speech2Text; s=Speech2Text.from_pretrained('espnet/owsm_ctc_v3.1_1B', device='cuda', lang_sym='<eng>', task_sym='<asr>'); print(' '.join(t for _, _, t in s.decode_long('audio.wav', batch_size=16)))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/espnet/owsm_ctc_v3.1_1B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/espnet/owsm_ctc_v3.1_1B/tree/a49128ba5812bb6a139791cc93a778856364c04c"
+    ],
+    "identity_note": "Exact checkpoint espnet/owsm_ctc_v3.1_1B. Params derived from the fp32 weight file (4020771173 bytes / 4 = 1.005B; card gives only '1B'). released: HF repo creation month. Command follows the card's Speech2Text.decode_long example (espnet needs Python 3.12-3.13)."
+  },
+  {
+    "category": "stt",
+    "id": "owsm-ctc-v3-2-ft-1b",
+    "name": "OWSM-CTC v3.2 ft 1B",
+    "provider": "ESPnet (CMU WAVLab)",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 1.01,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.35,
+          "cmd": "uv run --python 3.12 --with espnet --with espnet_model_zoo --with librosa python -c \"from espnet2.bin.s2t_inference import Speech2Text; s=Speech2Text.from_pretrained('espnet/owsm_ctc_v3.2_ft_1B', device='cuda', lang_sym='<eng>', task_sym='<asr>'); print(' '.join(t for _, _, t in s.decode_long('audio.wav', batch_size=16)))\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/espnet/owsm_ctc_v3.2_ft_1B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/espnet/owsm_ctc_v3.2_ft_1B/tree/d16a56fc769f6656a4e844ef8b134e4539b92e66"
+    ],
+    "identity_note": "Exact checkpoint espnet/owsm_ctc_v3.2_ft_1B. Params derived from the fp32 weight file (4020755920 bytes / 4 = 1.005B; card gives only '1B'). released: HF repo creation month. Command follows the card's Speech2Text.decode_long example (espnet needs Python 3.12-3.13)."
+  },
+  {
+    "category": "stt",
+    "id": "speechbrain-asr-conformer-largescaleasr",
+    "name": "SpeechBrain Conformer (LargeScaleASR / Loquacious)",
+    "provider": "SpeechBrain",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.48,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.8,
+          "cmd": "uv run --with speechbrain python -c \"from speechbrain.inference.ASR import EncoderDecoderASR as A; print(A.from_hparams(source='speechbrain/asr-conformer-loquacious', savedir='pretrained_models/asr-conformer-loquacious').transcribe_file('audio.wav'))\"",
+          "source": "https://huggingface.co/speechbrain/asr-conformer-loquacious",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/speechbrain/asr-conformer-loquacious/tree/42106e67e454ae361ca2d8311a7a807d5f95a3b9"
+    ],
+    "identity_note": "CSV entry 'speechbrain/asr-conformer-largescaleasr' now redirects to speechbrain/asr-conformer-loquacious (dataset renamed LargeScaleASR -> Loquacious Set; weights unchanged since 2025-02, later commits are README only). Params: card '#params 480M'."
+  },
+  {
+    "category": "stt",
+    "id": "speechbrain-asr-wav2vec2-librispeech",
+    "name": "SpeechBrain wav2vec2 CTC (LibriSpeech)",
+    "provider": "SpeechBrain",
+    "released": "2022-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.32,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.04,
+          "cmd": "uv run --with speechbrain --with transformers python -c \"from speechbrain.inference.ASR import EncoderASR as A; print(A.from_hparams(source='speechbrain/asr-wav2vec2-librispeech', savedir='pretrained_models/asr-wav2vec2-librispeech').transcribe_file('audio.wav'))\"",
+          "source": "https://huggingface.co/speechbrain/asr-wav2vec2-librispeech",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/tree/356e347b73885161e8996d9a79b6588dc8bf9f9b"
+    ],
+    "identity_note": "Exact checkpoint speechbrain/asr-wav2vec2-librispeech. Params derived from fp32 weight files (wav2vec2.ckpt 1,261,920,693 + asr.ckpt 8,526,821 bytes / 4 = 0.318B). released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "wav2vec2-large-960h-lv60-self",
+    "name": "wav2vec 2.0 Large 960h LV-60 self-training",
+    "provider": "Meta",
+    "released": "2020-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.32,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.04,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-960h-lv60-self', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self/tree/54074b1c16f4de6a5ad59affb4caa8f2ea03a119"
+    ],
+    "identity_note": "Exact checkpoint facebook/wav2vec2-large-960h-lv60-self (CTC fine-tuned on LibriSpeech 960h). Params: fp32 pytorch_model.bin 1,262,055,246 bytes / 4; released: arXiv 2010.11430v1 month (self-training paper)."
+  },
+  {
+    "category": "stt",
+    "id": "wav2vec2-large-960h",
+    "name": "wav2vec 2.0 Large 960h",
+    "provider": "Meta",
+    "released": "2020-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.32,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.04,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-960h', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/wav2vec2-large-960h",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/wav2vec2-large-960h/tree/bdeaacdf88f7a155f50a2704bc967aa81fbbb2ab"
+    ],
+    "identity_note": "Exact checkpoint facebook/wav2vec2-large-960h (CTC fine-tuned on LibriSpeech 960h). Params: fp32 pytorch_model.bin 1,262,009,187 bytes / 4; released: arXiv 2006.11477v1 month."
+  },
+  {
+    "category": "stt",
+    "id": "wav2vec2-base-960h",
+    "name": "wav2vec 2.0 Base 960h",
+    "provider": "Meta",
+    "released": "2020-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.094,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.95,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-base-960h', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/wav2vec2-base-960h",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/wav2vec2-base-960h/tree/22aad52d435eb6dbaf354bdad9b0da84ce7d6156"
+    ],
+    "identity_note": "Exact checkpoint facebook/wav2vec2-base-960h (CTC fine-tuned on LibriSpeech 960h). Params: HF safetensors total; released: arXiv 2006.11477v1 month."
+  },
+  {
+    "category": "stt",
+    "id": "wav2vec2-large-robust-ft-libri-960h",
+    "name": "wav2vec 2.0 Large Robust (LibriSpeech 960h ft)",
+    "provider": "Meta",
+    "released": "2021-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.32,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.04,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-large-robust-ft-libri-960h', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/tree/5d28473cc25ef7b338c9f731fe55626c4b082f58"
+    ],
+    "identity_note": "Exact checkpoint facebook/wav2vec2-large-robust-ft-libri-960h (CTC fine-tuned on LibriSpeech 960h). Params: HF safetensors total; released: arXiv 2104.01027v1 month."
+  },
+  {
+    "category": "stt",
+    "id": "wav2vec2-conformer-rope-large-960h-ft",
+    "name": "wav2vec 2.0 Conformer RoPE Large 960h",
+    "provider": "Meta",
+    "released": "2022-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.59,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.33,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-conformer-rope-large-960h-ft', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/wav2vec2-conformer-rope-large-960h-ft/tree/6b36ef01c6443c67ae7ed0822876d091ab50e4aa"
+    ],
+    "identity_note": "Exact checkpoint facebook/wav2vec2-conformer-rope-large-960h-ft (CTC fine-tuned on LibriSpeech 960h). Params: HF safetensors total; released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "wav2vec2-conformer-rel-pos-large-960h-ft",
+    "name": "wav2vec 2.0 Conformer Rel-Pos Large 960h",
+    "provider": "Meta",
+    "released": "2022-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.62,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.48,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/wav2vec2-conformer-rel-pos-large-960h-ft', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/wav2vec2-conformer-rel-pos-large-960h-ft/tree/ca7f36f527f234b3cd4f05ecee30361f971e8e33"
+    ],
+    "identity_note": "Exact checkpoint facebook/wav2vec2-conformer-rel-pos-large-960h-ft (CTC fine-tuned on LibriSpeech 960h). Params: fp32 pytorch_model.bin 2,474,878,081 bytes / 4; released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "hubert-xlarge-ls960-ft",
+    "name": "HuBERT X-Large (LibriSpeech 960h ft)",
+    "provider": "Meta",
+    "released": "2021-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.96,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.11,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/hubert-xlarge-ls960-ft', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/hubert-xlarge-ls960-ft",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/hubert-xlarge-ls960-ft/tree/86a09e67e0c8d074533992379242405825516eca"
+    ],
+    "identity_note": "Exact checkpoint facebook/hubert-xlarge-ls960-ft (CTC fine-tuned on LibriSpeech 960h). Params: HF safetensors total; released: arXiv 2106.07447v1 month."
+  },
+  {
+    "category": "stt",
+    "id": "hubert-large-ls960-ft",
+    "name": "HuBERT Large (LibriSpeech 960h ft)",
+    "provider": "Meta",
+    "released": "2021-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.32,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.04,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/hubert-large-ls960-ft', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/hubert-large-ls960-ft",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/hubert-large-ls960-ft/tree/ece5fabbf034c1073acae96d5401b25be96709d8"
+    ],
+    "identity_note": "Exact checkpoint facebook/hubert-large-ls960-ft (CTC fine-tuned on LibriSpeech 960h). Params: fp32 pytorch_model.bin 1,262,057,559 bytes / 4; released: arXiv 2106.07447v1 month."
+  },
+  {
+    "category": "stt",
+    "id": "data2vec-audio-large-960h",
+    "name": "data2vec Audio Large 960h",
+    "provider": "Meta",
+    "released": "2022-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.31,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.99,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/data2vec-audio-large-960h', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/data2vec-audio-large-960h",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/data2vec-audio-large-960h/tree/27aba26eed532b86dcd0f17284a0307de4b51f39"
+    ],
+    "identity_note": "Exact checkpoint facebook/data2vec-audio-large-960h (CTC fine-tuned on LibriSpeech 960h). Params: fp32 pytorch_model.bin 1,253,377,393 bytes / 4; released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "data2vec-audio-base-960h",
+    "name": "data2vec Audio Base 960h",
+    "provider": "Meta",
+    "released": "2022-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.093,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.95,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/data2vec-audio-base-960h', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/data2vec-audio-base-960h",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/data2vec-audio-base-960h/tree/32331f3123e703528918aa688a9a38232d58c872"
+    ],
+    "identity_note": "Exact checkpoint facebook/data2vec-audio-base-960h (CTC fine-tuned on LibriSpeech 960h). Params: fp32 pytorch_model.bin 372,850,161 bytes / 4; released: arXiv 2202.03555v1 month."
+  },
+  {
+    "category": "stt",
+    "id": "mms-1b-all",
+    "name": "MMS-1B-all",
+    "provider": "Meta",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 0.96,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.11,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/mms-1b-all', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/mms-1b-all",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/mms-1b-all/tree/3d33597edbdaaba14a8e858e2c8caa76e3cec0cd"
+    ],
+    "identity_note": "Exact checkpoint facebook/mms-1b-all (default English adapter, as the card's example). Weights CC-BY-NC-4.0. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "mms-1b-fl102",
+    "name": "MMS-1B-FL102",
+    "provider": "Meta",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 0.96,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.11,
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='facebook/mms-1b-fl102', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/facebook/mms-1b-fl102",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/mms-1b-fl102/tree/d483345545bea550895b1aa0c6ba40236b9f1e22"
+    ],
+    "identity_note": "Exact checkpoint facebook/mms-1b-fl102 (default English adapter, as the card's example). Weights CC-BY-NC-4.0. Params: HF safetensors total. released: HF repo creation month."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-7b-v2",
+    "name": "Omnilingual ASR LLM 7B v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 19.22,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_7B_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_LLM_7B_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-LLM-7B-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-LLM-7B-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-3b-v2",
+    "name": "Omnilingual ASR LLM 3B v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 4.38,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 11.01,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_3B_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_LLM_3B_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-LLM-3B-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-LLM-3B-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-1b-v2",
+    "name": "Omnilingual ASR LLM 1B v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.28,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 5.97,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_1B_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_LLM_1B_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-LLM-1B-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-LLM-1B-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-300m-v2",
+    "name": "Omnilingual ASR LLM 300M v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.63,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 4.41,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_300M_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_LLM_300M_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-LLM-300M-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-LLM-300M-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-7b-v2",
+    "name": "Omnilingual ASR CTC 7B v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.5,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 16.1,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_7B_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_CTC_7B_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-CTC-7B-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-CTC-7B-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-3b-v2",
+    "name": "Omnilingual ASR CTC 3B v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 3.08,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 7.89,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_3B_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_CTC_3B_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-CTC-3B-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-CTC-3B-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-1b-v2",
+    "name": "Omnilingual ASR CTC 1B v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.98,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 2.85,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_1B_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_CTC_1B_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-CTC-1B-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-CTC-1B-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-300m-v2",
+    "name": "Omnilingual ASR CTC 300M v2",
+    "provider": "Meta",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.33,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 1.29,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_300M_v2').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://github.com/facebookresearch/omnilingual-asr",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://github.com/facebookresearch/omnilingual-asr/blob/81f51e224ce9e74b02cc2a3eaf21b2d91d743455/README.md"
+    ],
+    "identity_note": "Omnilingual ASR model card 'omniASR_CTC_300M_v2' (checkpoint https://dl.fbaipublicfiles.com/mms/omniASR-CTC-300M-v2.pt, listed in src/omnilingual_asr/cards/models/rc_models_v2.yaml @ 81f51e2; 'December 2025 Update'). Not on Hugging Face; the CSV entry 'facebook/omniASR-CTC-300M-v2' is the leaderboard's label. Distinct from the v1 checkpoint of the same size. Params: README table. Needs libsndfile (README)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-7b",
+    "name": "Omnilingual ASR LLM 7B",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 19.22,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_7B').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-LLM-7B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-LLM-7B/tree/4b0bada258b398cb7e6c5b3a6ed5448fb914385b"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-LLM-7B (fairseq2 card 'omniASR_LLM_7B', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-3b",
+    "name": "Omnilingual ASR LLM 3B",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 4.38,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 11.01,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_3B').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-LLM-3B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-LLM-3B/tree/6f2fdb7c44d71339f21b6178132438f30ae45f9c"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-LLM-3B (fairseq2 card 'omniASR_LLM_3B', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-1b",
+    "name": "Omnilingual ASR LLM 1B",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.28,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 5.97,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_1B').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-LLM-1B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-LLM-1B/tree/532aac896b39ca9e06b6aed0a223a94a5fd5f0ff"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-LLM-1B (fairseq2 card 'omniASR_LLM_1B', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-llm-300m",
+    "name": "Omnilingual ASR LLM 300M",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.63,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 4.41,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_LLM_300M').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-LLM-300M",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-LLM-300M/tree/bf1698a8f6979db673a8bb5f059d03b82d5c7376"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-LLM-300M (fairseq2 card 'omniASR_LLM_300M', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-7b",
+    "name": "Omnilingual ASR CTC 7B",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.5,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 16.1,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_7B').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-CTC-7B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-CTC-7B/tree/b25c5a800c2fce25cf8e460fca2a28c41217b5ac"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-CTC-7B (fairseq2 card 'omniASR_CTC_7B', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-3b",
+    "name": "Omnilingual ASR CTC 3B",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 3.08,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 7.89,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_3B').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-CTC-3B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-CTC-3B/tree/3f12f4cbf4a22e96be2274e6af61e05ab3652f89"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-CTC-3B (fairseq2 card 'omniASR_CTC_3B', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-1b",
+    "name": "Omnilingual ASR CTC 1B",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.98,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 2.85,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_1B').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-CTC-1B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-CTC-1B/tree/8c22e3ffdaa4aab6431b128b84b991a7d9c2515c"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-CTC-1B (fairseq2 card 'omniASR_CTC_1B', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "omniasr-ctc-300m",
+    "name": "Omnilingual ASR CTC 300M",
+    "provider": "Meta",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.33,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 1.29,
+          "cmd": "uv run --python 3.12 --with omnilingual-asr python -c \"from omnilingual_asr.models.inference.pipeline import ASRInferencePipeline as P; print(P(model_card='omniASR_CTC_300M').transcribe(['audio.wav'], batch_size=1))\"",
+          "source": "https://huggingface.co/facebook/omniASR-CTC-300M",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/facebook/omniASR-CTC-300M/tree/8e35f0cc28fa6099e0c14d56db85ce0423baa691"
+    ],
+    "identity_note": "Exact checkpoint facebook/omniASR-CTC-300M (fairseq2 card 'omniASR_CTC_300M', first Omnilingual ASR release, Nov 2025); distinct from its '_v2' successor. Params: card table. Needs libsndfile (card)."
+  },
+  {
+    "category": "stt",
+    "id": "crisperwhisper",
+    "name": "CrisperWhisper",
+    "provider": "Nyra Health",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 1.61,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 4.36,
+          "cmd": "uv run --with 'transformers @ git+https://github.com/nyrahealth/transformers.git@crisper_whisper' --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='nyrahealth/CrisperWhisper', chunk_length_s=30)('audio.wav')['text'])\"",
+          "source": "https://huggingface.co/nyralabs/CrisperWhisper",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/nyralabs/CrisperWhisper/tree/5a513ffabb3429bb61da3521c4e24fbd33ec3e7c"
+    ],
+    "identity_note": "CrisperWhisper v1 (CSV entry 'nyrahealth/CrisperWhisper', now redirected to nyralabs/CrisperWhisper). Card marks v1 deprecated/superseded by CrisperWhisper 2.0 (a different checkpoint, not merged). Weights CC-BY-NC-4.0. Params: HF safetensors total. Command uses the custom transformers fork the card requires."
+  },
+  {
+    "category": "stt",
+    "id": "glm-asr-nano-2512",
+    "name": "GLM-ASR-Nano-2512",
+    "provider": "Z.ai",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 2.26,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 5.92,
+          "cmd": "uv run --with transformers --with torch --with accelerate python -c \"from transformers import AutoModelForSeq2SeqLM, AutoProcessor; r='zai-org/GLM-ASR-Nano-2512'; p=AutoProcessor.from_pretrained(r); m=AutoModelForSeq2SeqLM.from_pretrained(r, dtype='auto', device_map='auto'); i=p.apply_transcription_request('audio.wav').to(m.device, dtype=m.dtype); o=m.generate(**i, do_sample=False, max_new_tokens=500); print(p.batch_decode(o[:, i.input_ids.shape[1]:], skip_special_tokens=True)[0])\"",
+          "source": "https://huggingface.co/zai-org/GLM-ASR-Nano-2512",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/zai-org/GLM-ASR-Nano-2512/tree/61ba4e0b3309b6656edea3e93e419f7bd5c61957"
+    ],
+    "identity_note": "Exact checkpoint zai-org/GLM-ASR-Nano-2512. Params: HF safetensors total 2,257,843,200 (card text says 1.5B). released: HF repo creation month. Command follows the card's basic Transformers example."
+  },
+  {
+    "category": "stt",
+    "id": "zipformer-transducer-xl-290m",
+    "name": "Zipformer Transducer XL 290M",
+    "provider": "SoundsGood AI",
+    "released": "2026-05",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 0.288,
+    "api": null,
+    "local": null,
+    "identity_sources": [
+      "https://huggingface.co/soundsgoodai/Zipformer-transducer-XL-290M/tree/fcf07aebee7fc98d1d8f9685ab2f345f14e881e5"
+    ],
+    "identity_note": "Exact checkpoint soundsgoodai/Zipformer-transducer-XL-290M (k2/Icefall). Weights CC-BY-NC-4.0. Params: card (288M). No local variant: the card's usage needs an Icefall checkout plus k2 and 20+ architecture flags, not a single copy-pasteable command."
+  },
+  {
+    "category": "stt",
+    "id": "ultravox-v0-6-llama-3-1-8b",
+    "name": "Ultravox v0.6 (Llama 3.1 8B)",
+    "provider": "Fixie.ai (Ultravox)",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "identity_sources": [
+      "https://huggingface.co/fixie-ai/ultravox-v0_6-llama-3_1-8b/tree/9db56c13737ad34e962d8be02d0df5075ec0a9da"
+    ],
+    "identity_note": "Exact checkpoint fixie-ai/ultravox-v0_6-llama-3_1-8b (CSV label 'ultravox/fixie-ai-ultravox-v0_6-llama-3_1-8b'). The repo holds 0.69B params (Whisper-large-v3-turbo encoder + projector); the Llama-3.1-8B-Instruct backbone (Llama 3.1 licence, gated) is loaded separately, so no total params_b is given. No local variant: the card offers only a chat-style trust_remote_code pipeline, not a verified transcription command."
+  },
+  {
+    "category": "stt",
+    "id": "abr-asr-19m-v2-en",
+    "name": "ABR asr-19m-v2-en",
+    "provider": "Applied Brain Research",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "applied-brain-research-open-license",
+    "params_b": 0.019,
+    "api": null,
+    "local": null,
+    "identity_sources": [
+      "https://huggingface.co/abr-ai/niagara-19m-batch.en/tree/dab6545337495482f2fc05455432a7a05c88d3cc"
+    ],
+    "identity_note": "State-space ASR model; CSV entry 'abr-ai/asr-19m-v2-en-32b'. The repo was renamed (now abr-ai/niagara-19m-batch.en) and replaced with a 'New model version' on 2026-04-07, after this evaluation. The evaluated checkpoint is the one at revision dab6545 (2026-03-25), whose card model-index repeats these leaderboard WERs (AMI 18.76, Earnings22 13.53). No local variant: current downloads give the newer checkpoint. Params: card (19M)."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "zoom-scribe-v1",
+    "name": "Zoom Scribe v1",
+    "provider": "Zoom",
+    "api": {
+      "url": "https://developers.zoom.us/docs/ai-services/scribe/",
+      "provider": "Zoom"
+    },
+    "identity_sources": [
+      "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/api/providers/zoom_provider.py"
+    ],
+    "identity_note": "Zoom Scribe API (POST https://api.zoom.us/v2/aiservices/scribe/transcribe) as run by the leaderboard's zoom_provider.py, which sets experimental_feature {model_pro: true}. The public API names no model version; 'scribe_v1' is the leaderboard label."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "assemblyai-universal-3-pro",
+    "name": "Universal-3 Pro",
+    "provider": "AssemblyAI",
+    "released": "2026-02",
+    "api": null,
+    "identity_sources": [
+      "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/api/providers/assemblyai_provider.py",
+      "https://www.assemblyai.com/blog/introducing-universal-3-pro"
+    ],
+    "identity_note": "AssemblyAI speech_models=['universal-3-pro'] (leaderboard assemblyai_provider.py; short-form entry 'assemblyai/universal-3-pro', long-form/multilingual entry 'assembly/universal-3-pro'). Announced 2026-02-03. Distinct from catalogue assemblyai-universal-3-5-pro. AssemblyAI retired Universal-3 Pro (routing switch 2026-09-02; models page observed 2026-09-28 lists only universal-3-5-pro and universal-2), so api is null."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "aquavoice-avalon-v1-en",
+    "name": "Avalon v1 (en)",
+    "provider": "Aqua Voice",
+    "released": "2025-08",
+    "api": null,
+    "identity_sources": [
+      "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/api/providers/aquavoice_provider.py",
+      "https://aquavoice.com/blog/introducing-avalon"
+    ],
+    "identity_note": "Aqua Voice API model 'avalon-v1-en' (leaderboard aquavoice_provider.py). Launched 2025-08-22. The Avalon API page (observed 2026-09-28) documents only 'avalon-v1.5', a newer model, so api is null."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "elevenlabs-scribe-v1",
+    "name": "Scribe v1",
+    "provider": "ElevenLabs",
+    "released": "2025-02",
+    "api": null,
+    "identity_sources": [
+      "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/api/providers/elevenlabs_provider.py",
+      "https://elevenlabs.io/docs/changelog/2025/2/25"
+    ],
+    "identity_note": "ElevenLabs model_id 'scribe_v1' (launched 2025-02-25). Distinct from catalogue elevenlabs-scribe-v2. The ElevenLabs models page (observed 2026-09-28) lists scribe_v1 under deprecated models ('outclassed by v2'), so api is null."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "revai-machine",
+    "name": "Rev AI Machine (Reverb ASR)",
+    "provider": "Rev",
+    "api": {
+      "url": "https://docs.rev.ai/api/asynchronous/transcribers/",
+      "provider": "Rev"
+    },
+    "identity_sources": [
+      "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/api/providers/revai_provider.py",
+      "https://docs.rev.ai/api/asynchronous/transcribers/"
+    ],
+    "identity_note": "Rev AI async API transcriber='machine' (leaderboard revai_provider.py), which Rev documents as its Reverb ASR model. An unversioned service tier, like catalogue speechmatics-enhanced; release month unknown."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "revai-fusion",
+    "name": "Rev AI Fusion (Whisper Fusion)",
+    "provider": "Rev",
+    "released": "2024-01",
+    "api": null,
+    "identity_sources": [
+      "https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/api/providers/revai_provider.py",
+      "https://docs.rev.ai/api/asynchronous/changelog"
+    ],
+    "identity_note": "Rev AI async API transcriber='fusion' (Whisper Fusion; added 2024-01 per Rev's changelog). Rev deprecated the fusion option on 2026-08-20, so api is null."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "google-chirp-2",
+    "name": "Chirp 2",
+    "provider": "Google",
+    "api": {
+      "url": "https://cloud.google.com/speech-to-text/pricing",
+      "provider": "Google Cloud"
+    },
+    "identity_sources": [
+      "https://docs.cloud.google.com/speech-to-text/docs/models/chirp-2"
+    ],
+    "identity_note": "Google Cloud Speech-to-Text v2 model 'chirp_2' (leaderboard entry google/chirp_2). Distinct from catalogue google-chirp-3 and from the original 'chirp'. Google updated the GA chirp_2 model on 2024-10-07; the leaderboard does not state which date it was run, so no release month is given."
+  },
+  {
+    "category": "stt",
+    "open_weights": false,
+    "license": "proprietary",
+    "local": null,
+    "id": "google-chirp",
+    "name": "Chirp",
+    "provider": "Google",
+    "api": null,
+    "identity_sources": [
+      "https://docs.cloud.google.com/speech-to-text/v2/docs/transcription-model"
+    ],
+    "identity_note": "Original Google Cloud Speech-to-Text model 'chirp' (USM-based first generation; leaderboard entry google/chirp). Distinct from chirp_2 and chirp_3. The current STT v2 transcription-model list (observed 2026-09-28) names only chirp_3, chirp_2 and telephony, so api is null."
   }
 ]
