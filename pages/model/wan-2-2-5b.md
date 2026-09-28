@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 5B params · apache-2.0
 
-**score 47.2** ±7.5 · #33 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±7.0 · #41 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.4%    46.5   2026-08-10   77% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                23% ▇▇▇
-                        weighted average                       = 47.2
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.4%    50.1   2026-08-10   79% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                21% ▇▇
+                        weighted average                       = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,9 +39,9 @@ api  · price unknown · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~12.5GB   47.2
-q8 · mac only        ~6.5GB   47.2
-bf16 · mac only     ~12.5GB   47.2
+bf16 · nvidia only  ~12.5GB   50.0
+q8 · mac only        ~6.5GB   50.0
+bf16 · mac only     ~12.5GB   50.0
 </pre>
 
 ```sh

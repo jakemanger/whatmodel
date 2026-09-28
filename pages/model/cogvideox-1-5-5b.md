@@ -6,23 +6,26 @@
 
 Zhipu AI (THUDM) · released 2024-11
 
-**score 33.1** ±4.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 33.6** ±2.4 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>  80.3%    30.1   2025-04-21   59% ▇▇▇▇▇▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.6%    33.5   2026-08-10   31% ▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 33.1
+source                  test                                    score  implies  date        weight
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>          50.6%    31.7   2025-05-17   36% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>          49.7%    30.7   2025-05-17   26% ▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          80.3%    36.5   2025-04-21   13% ▇▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  894.05 / 1608    35.7   2026-05-15   13% ▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>          38.6%    37.9   2026-08-10   10% ▇
+prior                   pull toward the middle                           49.9                 2% ▇
+                        weighted average                               = 33.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
+<sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 

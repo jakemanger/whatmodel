@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2026-02 · proprietary
 
-**score 65.5** ±6.4 · #11 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 68.7** ±5.5 · #11 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    68.7   2026-08-26   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                17% ▇▇
-                        weighted average                       = 65.5
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    71.5   2026-08-26   87% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                13% ▇▇
+                        weighted average                       = 68.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

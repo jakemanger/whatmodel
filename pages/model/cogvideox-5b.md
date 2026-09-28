@@ -6,24 +6,27 @@
 
 Zhipu AI (THUDM) · released 2024-08 · 5B params · cogvideox
 
-**score 32.4** ±3.6 · #49 of 54 · from 3 benchmark results across 2 sources
+**score 41.6** ±1.8 · #49 of 70 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  25.0%    32.3   2026-01-30   61% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  49.0%    32.4   2026-01-30   32% ▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                74.8%     0.2   2026-04-22    2% ▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 32.4
+source                  test                                score  implies  date        weight
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>       39.6%    44.1   2026-01-30   25% ▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>      25.0%    42.6   2026-01-30   20% ▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>      49.0%    41.9   2026-01-30    8% ▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>     1125.6    40.4   2025-03-22   32% ▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   7.31 / 10    38.6   2025-02-28   13% ▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                    74.8%    17.5   2026-04-22    1% ▇
+prior                   pull toward the middle                       49.9                 1% ▇
+                        weighted average                           = 41.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
+<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
@@ -31,7 +34,7 @@ api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/cogvideox-5b
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~12.5GB   32.4
+bf16 · nvidia only  ~12.5GB   41.6
 </pre>
 
 ```sh

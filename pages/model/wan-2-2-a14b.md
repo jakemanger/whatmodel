@@ -6,24 +6,25 @@
 
 Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
-**score 37.8** ±2.3 · #45 of 54 · from 3 benchmark results across 2 sources
+**score 46.8** ±1.8 · #45 of 70 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1131.6    36.9   2026-09-22   56% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1170.2    36.4   2026-09-22   32% ▇▇▇▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1518.0    45.5   2026-05-06    9% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 37.8
+source                  test                                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    46.3   2026-09-22   52% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    45.9   2026-09-22   32% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    52.7   2026-05-06    8% ▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    47.3   2026-05-15    7% ▇
+prior                   pull toward the middle                            49.9                 1% ▇
+                        weighted average                                = 46.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt))</sub>
 
 ## How to run it
 
@@ -33,8 +34,8 @@ api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~65.3GB   37.8
-bf16 · mac only     ~65.3GB   37.8
+bf16 · nvidia only  ~65.3GB   46.8
+bf16 · mac only     ~65.3GB   46.8
 </pre>
 
 ```sh

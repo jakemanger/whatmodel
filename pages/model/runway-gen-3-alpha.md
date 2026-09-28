@@ -6,22 +6,25 @@
 
 Runway · closed weights
 
-**score 28.7** ±5.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.3** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  50.6%    26.2   2025-04-21   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 28.7
+source                  test                             score  implies  date        weight
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   59.2%    37.1   2025-05-17   35% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   55.7%    35.0   2025-05-17   26% ▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>   50.6%    35.0   2025-04-21   22% ▇▇▇
+<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1000.0    43.2   2025-05-05   15% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 37.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
+<sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt)) · SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>
 
 ## How to run it
 

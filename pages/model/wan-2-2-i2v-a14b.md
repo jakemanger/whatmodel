@@ -6,7 +6,7 @@
 
 Alibaba
 
-**score 49.2** ±5.7 · #26 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 53.5** ±5.0 · #29 of 70 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  21.6%    46.6   2026-08-26   64% ▇▇▇▇▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  32.2%    56.0   2026-06-17   22% ▇▇▇
-prior                   pull toward the middle                   49.9                13% ▇▇
-                        weighted average                       = 49.2
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  21.6%    52.1   2026-08-26   70% ▇▇▇▇▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  32.2%    60.4   2026-06-17   19% ▇▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 53.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

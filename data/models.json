@@ -20152,5 +20152,757 @@
     ],
     "identity_note": "Multilingual medium checkpoint (openai/whisper-medium@abdf7c3). Hugging Face mirror created 2022-09-26 with the Whisper release (arXiv 2212.04356). Multilingual checkpoint (openai-whisper name 'medium'), distinct from the English-only medium.en. Params from the Whisper README size table.",
     "recovered_original": false
+  },
+  {
+    "id": "allegro",
+    "name": "Allegro",
+    "provider": "Rhymes AI",
+    "category": "video",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.8,
+    "active_b": 2.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 9.3,
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/rhymes-ai/Allegro",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/rhymes-ai/Allegro",
+          "cmd": "python -c \"import torch;from diffusers import AutoencoderKLAllegro,AllegroPipeline;from diffusers.utils import export_to_video;v=AutoencoderKLAllegro.from_pretrained('rhymes-ai/Allegro',subfolder='vae',torch_dtype=torch.float32);p=AllegroPipeline.from_pretrained('rhymes-ai/Allegro',vae=v,torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_tiling();export_to_video(p('A seaside harbor with bright sunlight and sparkling seawater, with many boats in the water',guidance_scale=7.5,max_sequence_length=512,num_inference_steps=100).frames[0],'allegro.mp4',fps=15)\"",
+          "note": "Card: 2.8B-parameter VideoDiT; 'uses 9.3 GB of GPU memory in BF16 mode with CPU offloading' (27.5 GB without)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "Allegro",
+        "note": "VideoGenHub arena infermodels/allegro.py: rhymes-ai/Allegro (20 inference steps instead of the default 100)"
+      },
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "Allegro [ 78 ]",
+        "note": "Table 7 github.com/rhymes-ai/Allegro, 1280x720, 88 frames, 15 fps (Allegro T2V defaults)"
+      }
+    ]
+  },
+  {
+    "id": "cogvideox-2b",
+    "name": "CogVideoX-2B",
+    "provider": "Zhipu AI (THUDM)",
+    "category": "video",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2,
+    "active_b": 2,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 5.3,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://huggingface.co/THUDM/CogVideoX-2b",
+          "cmd": "python -c \"import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-2b',torch_dtype=torch.float16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)\""
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "CogVideoX-2B",
+        "note": "VideoGenHub arena infermodels/cogvideox.py default weight THUDM/CogVideoX-2b"
+      },
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "CogVideoX-2B",
+        "note": "row links THUDM/CogVideo; paper lists CogVideoX-2B"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "CogVideoX-2B [ 81 ]",
+        "note": "Appendix: official CogVideoX (2B per Tables 3-4), 720x480, 48 frames at 8 fps"
+      }
+    ]
+  },
+  {
+    "id": "cogvideox-5b-i2v",
+    "name": "CogVideoX-5B-I2V",
+    "provider": "Zhipu AI (THUDM)",
+    "category": "video",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "cogvideox",
+    "params_b": 5,
+    "active_b": 5,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 12.5,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://huggingface.co/THUDM/CogVideoX-5b-I2V",
+          "cmd": "python -c \"import torch;from diffusers import CogVideoXImageToVideoPipeline;from diffusers.utils import export_to_video,load_image;p=CogVideoXImageToVideoPipeline.from_pretrained('THUDM/CogVideoX-5b-I2V',torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_tiling();p.vae.enable_slicing();export_to_video(p(prompt='A little girl is riding a bicycle at high speed. Focused, detailed, realistic.',image=load_image('input.jpg'),num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)\"",
+          "note": "Image-to-video: needs an input.jpg first frame."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "CogVideoX-I2V [ 56 ]",
+        "note": "CogVideoX-5B I2V (Section 4); cfg 6.0, 50-step DDIM (Appendix 8.3)"
+      }
+    ]
+  },
+  {
+    "id": "hotshot-xl",
+    "name": "Hotshot-XL",
+    "provider": "Hotshot",
+    "category": "video",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "openrail++",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 10,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/hotshotco/Hotshot-XL/blob/cc01f7f82acff985a45f6214152c4a0ba033759f/README.md",
+          "cmd": "git clone https://github.com/hotshotco/Hotshot-XL && cd Hotshot-XL && pip install -r requirements.txt && python inference.py --prompt=\"a bulldog in the captains chair of a spaceship, hd, high quality\" --output=\"output.gif\"",
+          "note": "Text-to-GIF temporal layers on SDXL (1 s at 8 fps). Memory estimated: about 7.9 GB of fp16 weights (SDXL UNet, text encoders, VAE, 0.47 GB temporal layers) x 1.2 + 0.5 GB; no official VRAM figure."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "Hotshot-XL [ 83 ]",
+        "note": "Table 7 github.com/hotshotco/Hotshot-XL, 672x384, 8 frames, 8 fps"
+      }
+    ]
+  },
+  {
+    "id": "kling-1-0",
+    "name": "Kling 1.0",
+    "provider": "Kuaishou (Kling AI)",
+    "category": "video",
+    "released": "2024-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "First Kling release (public testing from June 2024 per Kuaishou's 10 June 2024 release); mode not stated in the evaluations used.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "KeLing [ 33 ]",
+        "note": "Kuaishou Kling (KeLing) as reported in v1 (26 Jun 2024), i.e. the June 2024 Kling 1.0 launch; repository leaderboard label 'KeLing (20240610)'"
+      }
+    ]
+  },
+  {
+    "id": "lavie",
+    "name": "LaVie (base T2V)",
+    "provider": "Shanghai AI Lab (Vchitect)",
+    "category": "video",
+    "released": "2023-09",
+    "open_weights": true,
+    "license": "lavie-weights",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 4.9,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/Vchitect/LaVie/blob/6ce851e98be2ad2ddb7df177ab31f18194b0ceff/README.md",
+          "cmd": "git clone https://github.com/Vchitect/LaVie && cd LaVie && hf download Vchitect/LaVie lavie_base.pt --local-dir pretrained_models && hf download CompVis/stable-diffusion-v1-4 --local-dir pretrained_models/stable-diffusion-v1-4 && cd base && python pipelines/sample.py --config configs/sample.yaml",
+          "note": "README: base T2V step outputs 16 frames at 320x512; code Apache-2.0, weights 'fully open for academic research and also allow free commercial usage' on application. Memory estimated from the 3.64 GB lavie_base.pt checkpoint x 1.2 + 0.5 GB (no parameter count or VRAM figure published)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "LaVie",
+        "note": "VideoGenHub infermodels/lavie.py: Vchitect/LaVie lavie_base.pt"
+      },
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "LaVIE",
+        "note": "row links LaVie paper; Appendix K: 320x512 (LaVie base)"
+      },
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "Lavie [ 82 ]",
+        "note": "Table 7 github.com/Vchitect/LaVie, 512x320, 16 frames, 8 fps (LaVie base)"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "LaVie [ 71 ]",
+        "note": "Appendix: official LaVie base model without interpolation/super-resolution, 512x320, 16 frames"
+      }
+    ]
+  },
+  {
+    "id": "ltx-video-0-9",
+    "name": "LTX-Video 0.9 (2B)",
+    "provider": "Lightricks",
+    "category": "video",
+    "released": "2024-11",
+    "open_weights": true,
+    "license": "ltxv-rail-m",
+    "params_b": 2,
+    "active_b": 2,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 5.3,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/huggingface/diffusers/blob/e68092a4718a775568fae009e50162425eefbb1e/docs/source/en/api/pipelines/ltx_video.md",
+          "cmd": "python -c \"import torch;from diffusers import AutoencoderKLLTXVideo,LTXPipeline,LTXVideoTransformer3DModel;from diffusers.utils import export_to_video;u='https://huggingface.co/Lightricks/LTX-Video/ltx-video-2b-v0.9.safetensors';t=LTXVideoTransformer3DModel.from_single_file(u,torch_dtype=torch.bfloat16);v=AutoencoderKLLTXVideo.from_single_file(u,torch_dtype=torch.bfloat16);p=LTXPipeline.from_pretrained('Lightricks/LTX-Video',transformer=t,vae=v,torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();export_to_video(p(prompt='A woman with long brown hair walks through a sunlit forest, cinematic',width=704,height=480,num_frames=121,num_inference_steps=50).frames[0],'ltx.mp4',fps=24)\"",
+          "note": "Loads the original 0.9 checkpoint (ltx-video-2b-v0.9.safetensors, RAIL-M licence dated 22 Nov 2024) with diffusers single-file loading as documented at the pinned diffusers commit; later 0.9.x releases are different checkpoints."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "LTXVideo",
+        "note": "VideoGenHub arena infermodels/ltxvideo.py (added 2024-11-23): Lightricks/LTX-Video unet/vae/scheduler layout of the original 0.9 release"
+      }
+    ]
+  },
+  {
+    "id": "luma-dream-machine-1-0",
+    "name": "Luma Dream Machine 1.0",
+    "provider": "Luma AI",
+    "category": "video",
+    "released": "2024-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Dream Machine as launched 12 June 2024; superseded by 1.5 (Aug 2024), 1.6 (Sep 2024) and Ray 2. Not in Luma's current API (ray-2, ray-flash-2).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "Dream Machine [ 46 ]",
+        "note": "Luma Dream Machine as reported in v1 (26 Jun 2024), i.e. the June 2024 launch model; repository leaderboard label 'Dream Machine (20240610)'"
+      }
+    ]
+  },
+  {
+    "id": "luma-dream-machine-1-6",
+    "name": "Luma Dream Machine 1.6",
+    "provider": "Luma AI",
+    "category": "video",
+    "released": "2024-09",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Dream Machine 1.6 (announced 4 Sep 2024 with camera motion); labelled 'luma-1.6' by WorldModelBench. Not in Luma's current API (ray-2, ray-flash-2).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "Luma [ 35 ]",
+        "note": "luma-1.6 (Section 4 model list), i.e. Luma Dream Machine 1.6 (Sep 2024)"
+      }
+    ]
+  },
+  {
+    "id": "lumiere-t2v",
+    "name": "Lumiere (T2V)",
+    "provider": "Google",
+    "category": "video",
+    "released": "2024-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Google research model (arXiv 2401.12945); never offered as a product or API. The text-to-image-to-video (T2I2V) variant is a separate pipeline and is not merged.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "Lumiere-T2V",
+        "note": "Google Lumiere text-to-video (closed; generated by the Lumiere authors per paper); Appendix K: 1024x1024, 80 frames"
+      }
+    ]
+  },
+  {
+    "id": "modelscope-t2v-1-7b",
+    "name": "ModelScope T2V 1.7B",
+    "provider": "Alibaba DAMO Academy",
+    "category": "video",
+    "released": "2023-03",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 1.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 4.6,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ali-vilab/text-to-video-ms-1.7b",
+          "cmd": "python -c \"import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('ali-vilab/text-to-video-ms-1.7b',torch_dtype=torch.float16,variant='fp16');p.enable_model_cpu_offload();export_to_video(p('Spiderman is surfing',num_inference_steps=25).frames[0],'modelscope.mp4')\"",
+          "note": "Card: 'overall model parameters are about 1.7 billion'; memory estimated as params x 2 bytes x 1.2 + 0.5 GB (card: up to 25 s fits under 16 GB with attention/VAE slicing)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "ModelScope",
+        "note": "VideoGenHub infermodels/modelscope.py: ali-vilab/modelscope-damo-text-to-video-synthesis"
+      },
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "ModelScope [ 88 ]",
+        "note": "Table 7 github.com/modelscope/modelscope, cites ModelScope T2V report [88], 256x256, 16 frames, 8 fps"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "ModelScopeT2V [ 68 ]",
+        "note": "Appendix: official ModelScopeT2V HuggingFace model, 256x256, 16 frames at 8 fps"
+      }
+    ]
+  },
+  {
+    "id": "open-sora-1-1",
+    "name": "Open-Sora 1.1",
+    "provider": "HPC-AI Tech",
+    "category": "video",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.7,
+    "active_b": 0.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 13.5,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/hpcaitech/Open-Sora/blob/17cce908b22283acc3c946816c81f46dd442a453/README.md",
+          "cmd": "git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-1/inference/sample.py --prompt \"A beautiful sunset over the city\" --num-frames 32 --image-size 480 854",
+          "note": "README at tag v1.2.0: Open-Sora 1.1 is 700M parameters; the v1.1 inference config loads hpcai-tech/OpenSora-STDiT-v2-stage3 (the final stage-3 checkpoint) with the DeepFloyd T5-XXL text encoder. Memory estimated as (0.7B STDiT2 + 4.7B T5-XXL) x 2 bytes x 1.2 + 0.5 GB; no official figure."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "OpenSora 1.1 [ 90 ]",
+        "note": "Appendix: Open-Sora 1.1 stage-3 checkpoint, 512x512, 48 frames at 24 fps"
+      }
+    ]
+  },
+  {
+    "id": "open-sora-1-2",
+    "name": "Open-Sora 1.2",
+    "provider": "HPC-AI Tech",
+    "category": "video",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.1,
+    "active_b": 1.1,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 39,
+          "gb_estimated": true,
+          "gb_source": "https://github.com/hpcaitech/Open-Sora/blob/17cce908b22283acc3c946816c81f46dd442a453/README.md",
+          "platform": "nvidia",
+          "source": "https://github.com/hpcaitech/Open-Sora/blob/17cce908b22283acc3c946816c81f46dd442a453/README.md",
+          "cmd": "git clone https://github.com/hpcaitech/Open-Sora && cd Open-Sora && git checkout v1.2.0 && pip install -v . && python scripts/inference.py configs/opensora-v1-2/inference/sample.py --num-frames 4s --resolution 720p --aspect-ratio 9:16 --prompt \"a beautiful waterfall\"",
+          "note": "README at tag v1.2.0: 1.1B diffusion model (hpcai-tech/OpenSora-STDiT-v3) + 384M VAE; peak memory on an 80 GB H100 is 39 GB for 720p 4 s (27 GB at 360p 2 s)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "OpenSora v1.2",
+        "note": "VideoGenHub infermodels/opensora_12.py: hpcai-tech/OpenSora-STDiT-v3 + OpenSora-VAE-v1.2"
+      },
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "OpenSora-T2V [ 62 ]",
+        "note": "OpenSora-v1.2 T2V (Section 4); 720p, 4 s, 9:16, 30 steps (Appendix 8.3)"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "OpenSora 1.2 [ 90 ]",
+        "note": "Appendix: Open-Sora 1.2, 1280x720, 96 frames at 24 fps"
+      }
+    ]
+  },
+  {
+    "id": "open-sora-plan-1-3",
+    "name": "Open-Sora Plan v1.3 (T2V)",
+    "provider": "Peking University (PKU-YuanGroup)",
+    "category": "video",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 2.7,
+    "active_b": 2.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 24,
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/LanguageBind/Open-Sora-Plan-v1.3.0",
+          "platform": "nvidia",
+          "source": "https://github.com/PKU-YuanGroup/Open-Sora-Plan/blob/c41050ae06ef35dd9da531d29431dbea6e53a9d9/docs/T2V.md",
+          "cmd": "git clone https://github.com/PKU-YuanGroup/Open-Sora-Plan && cd Open-Sora-Plan && git checkout v1.3.1 && pip install -e . && hf download LanguageBind/Open-Sora-Plan-v1.3.0 --include 'any93x640x640/*' 'vae/*' --local-dir osp13 && hf download google/mt5-xxl --local-dir mt5-xxl && torchrun --nnodes=1 --nproc_per_node 1 -m opensora.sample.sample --model_path osp13/any93x640x640 --version v1_3 --num_frames 93 --height 352 --width 640 --text_encoder_name_1 mt5-xxl --text_prompt examples/sora.txt --ae WFVAEModel_D8_4x8x8 --ae_path osp13/vae --save_img_path ./samples --fps 18 --guidance_scale 7.5 --num_sampling_steps 100 --max_sequence_length 512 --sample_method EulerAncestralDiscrete --seed 1234 --num_samples_per_prompt 1 --rescale_betas_zero_snr --prediction_type v_prediction --save_memory",
+          "note": "Flags from scripts/text_condition/gpu/sample_t2v_v1_3.sh at tag v1.3.1 with its placeholder paths replaced by the downloaded folders; HF card: '24G VRAM Inferencing' with --save_memory. 2.7B size from the Open-Sora Plan report (arXiv 2412.00131v1, Table 8)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "OpenSoraPlan-T2V [ 28 ]",
+        "note": "OpenSora-Plan-v1.3 T2V (Section 4); fps 18, cfg 7.5, 100 steps, 352x640 (Appendix 8.3)"
+      }
+    ]
+  },
+  {
+    "id": "open-sora-plan-1-3-i2v",
+    "name": "Open-Sora Plan v1.3 (I2V)",
+    "provider": "Peking University (PKU-YuanGroup)",
+    "category": "video",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 24,
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/LanguageBind/Open-Sora-Plan-v1.3.0",
+          "platform": "nvidia",
+          "source": "https://github.com/PKU-YuanGroup/Open-Sora-Plan/blob/c41050ae06ef35dd9da531d29431dbea6e53a9d9/docs/I2V.md",
+          "cmd": "git clone https://github.com/PKU-YuanGroup/Open-Sora-Plan && cd Open-Sora-Plan && git checkout v1.3.1 && pip install -e . && hf download LanguageBind/Open-Sora-Plan-v1.3.0 --include 'any93x640x640_i2v/*' 'vae/*' --local-dir osp13 && hf download google/mt5-xxl --local-dir mt5-xxl && torchrun --nnodes=1 --nproc_per_node 1 -m opensora.sample.sample --model_type inpaint --model_path osp13/any93x640x640_i2v --version v1_3 --num_frames 93 --height 352 --width 640 --crop_for_hw --text_encoder_name_1 mt5-xxl --text_prompt examples/cond_prompt.txt --conditional_pixel_values_path examples/cond_pix_path.txt --ae WFVAEModel_D8_4x8x8 --ae_path osp13/vae --save_img_path ./samples --fps 18 --guidance_scale 7.5 --num_sampling_steps 100 --max_sequence_length 512 --sample_method EulerAncestralDiscrete --seed 1234 --num_samples_per_prompt 1 --rescale_betas_zero_snr --prediction_type v_prediction --save_memory",
+          "note": "Separate I2V checkpoint (any93x640x640_i2v) of the v1.3.0 release; flags from scripts/text_condition/gpu/sample_inpaint_v1_3.sh at tag v1.3.1 with placeholder paths replaced. Memory per the HF card's 24 GB --save_memory guidance (stated for T2V)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "OpenSora-Plan-I2V [ 28 ]",
+        "note": "OpenSora-Plan-v1.3 I2V (Section 4); fps 18, cfg 7.5, 100 steps, 352x640"
+      }
+    ]
+  },
+  {
+    "id": "pandora",
+    "name": "Pandora (world model)",
+    "provider": "Maitrix.org (MBZUAI / UC San Diego)",
+    "category": "video",
+    "released": "2024-05",
+    "open_weights": false,
+    "license": "apache-2.0",
+    "api": null,
+    "identity_note": "Checkpoint maitrix-org/Pandora was released 2024-05-23 but the README now says the weights are hidden 'due to data license issue' and the Hugging Face repo is access-restricted, so no local command is listed.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "Pandora [ 53 ]",
+        "note": "Pandora official checkpoint, default settings, 50 DDIM steps (Appendix 8.3)"
+      }
+    ]
+  },
+  {
+    "id": "pika-1-0",
+    "name": "Pika 1.0",
+    "provider": "Pika",
+    "category": "video",
+    "released": "2023-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Pika 1.0 launched 28 Nov 2023 (TechCrunch); superseded by Pika 1.5 (Oct 2024). Rows are from evaluations dated no later than June 2024.",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "Pika",
+        "note": "VideoPhy v1 (arXiv 2406.03520v1, 5 Jun 2024) already reports Pika at 19.7% (same cell), i.e. the Pika 1.0 era product (Pika 1.5 launched Oct 2024); Appendix K: 640x1088, 72 frames"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "Pika-2.0 [ 34 ]",
+        "note": "printed 'Pika-2.0' in v1 (26 Jun 2024) and v2, but Pika 2.0 was released in Dec 2024 and Pika 1.5 in Oct 2024; the authors' repository leaderboard (results_ChronoMagic-Bench-150.csv) labels the same row 'Pika-1.0 (20240610)'"
+      }
+    ]
+  },
+  {
+    "id": "pyramid-flow-sd3",
+    "name": "Pyramid Flow (SD3)",
+    "provider": "Peking University / Kuaishou",
+    "category": "video",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "stabilityai-ai-community",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 8,
+          "gb_estimated": true,
+          "gb_source": "https://github.com/jy0205/Pyramid-Flow/blob/a012faa1dc4d71301a7a153c7f9554c081947ea2/README.md",
+          "platform": "nvidia",
+          "source": "https://github.com/jy0205/Pyramid-Flow/blob/a012faa1dc4d71301a7a153c7f9554c081947ea2/README.md",
+          "cmd": "git clone https://github.com/jy0205/Pyramid-Flow && cd Pyramid-Flow && pip install -r requirements.txt && python -c \"import torch;from huggingface_hub import snapshot_download;from pyramid_dit import PyramidDiTForVideoGeneration;from diffusers.utils import export_to_video;snapshot_download('rain1011/pyramid-flow-sd3',local_dir='pyramid-flow-sd3');m=PyramidDiTForVideoGeneration('pyramid-flow-sd3',model_name='pyramid_mmdit',model_dtype='bf16',model_variant='diffusion_transformer_768p');m.vae.enable_tiling();m.enable_sequential_cpu_offload();torch.set_grad_enabled(False);torch.autocast('cuda',dtype=torch.bfloat16).__enter__();export_to_video(m.generate(prompt='A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style',num_inference_steps=[20,20,20],video_num_inference_steps=[10,10,10],height=768,width=1280,temp=16,guidance_scale=9.0,video_guidance_scale=5.0,output_type='pil',save_memory=True),'pyramid.mp4',fps=24)\"",
+          "note": "README: model.enable_sequential_cpu_offload() 'allows inference with less than 8GB of GPU memory'. SD3-based 768p checkpoint (model_name pyramid_mmdit), not the later pyramid-miniflux. Weights under the Stability AI Community licence (SD3 Medium derivative)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "Pyramid Flow",
+        "note": "VideoGenHub arena infermodels/pyramid_flow.py: rain1011/pyramid-flow-sd3, model_variant diffusion_transformer_768p, 1280x768 (file unchanged since 2024-10-19)"
+      }
+    ]
+  },
+  {
+    "id": "runway-gen-2",
+    "name": "Runway Gen-2",
+    "provider": "Runway",
+    "category": "video",
+    "released": "2023-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Introduced March 2023, public release June 2023; not offered in Runway's current API (Gen-3 Alpha Turbo and later).",
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "Gen-2 (Runway)",
+        "note": "Gen-2 (Runway) evaluated in VideoPhy v1 (Jun 2024); Appendix K: 720x1280, 32 frames"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "Gen-2 [ 58 ]",
+        "note": "Runway Gen-2; already evaluated in v1 (26 Jun 2024); the authors' repository leaderboard labels it 'Gen-2 (20240610)'"
+      }
+    ]
+  },
+  {
+    "id": "seaweed-7b",
+    "name": "Seaweed-7B",
+    "provider": "ByteDance Seed",
+    "category": "video",
+    "released": "2025-04",
+    "open_weights": false,
+    "license": "proprietary",
+    "params_b": 7,
+    "active_b": 7,
+    "api": null,
+    "identity_note": "Research model described in arXiv 2504.08685 (7B parameters, 11 Apr 2025); no public weights or API.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2504.08685v2#S4.T3",
+        "reported_label": "Seaweed-7B",
+        "note": "authors' own model (7B)"
+      }
+    ]
+  },
+  {
+    "id": "t2v-turbo-v2",
+    "name": "T2V-Turbo-v2",
+    "provider": "UC Santa Barbara",
+    "category": "video",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": {
+      "url": "https://replicate.com/chenxwh/t2v-turbo-v2",
+      "provider": "Replicate",
+      "price_note": "Price unknown. Run/API page linked from the authors' README; compute-time pricing is not converted to output-unit pricing."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 9.4,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
+          "cmd": "git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0",
+          "note": "Replaces the VideoCrafter2 UNet (5.66 GB unet_mg.pt); memory estimated as for VideoCrafter2 (7.40 GB model.ckpt x 1.2 + 0.5 GB)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2502.20694v1#S3.T3",
+        "reported_label": "T2VTurbo [ 32 ]",
+        "note": "T2VTurbo-v2 (Section 4); 4 steps, cfg 7.5, 16 frames at 16 fps (Appendix 8.3)"
+      }
+    ]
+  },
+  {
+    "id": "t2v-turbo-vc2",
+    "name": "T2V-Turbo (VC2)",
+    "provider": "UC Santa Barbara",
+    "category": "video",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 9.4,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
+          "cmd": "git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-VC2 unet_lora.pt --local-dir t2v-turbo-vc2 && python app.py --unet_dir t2v-turbo-vc2/unet_lora.pt --base_model_dir vc2/model.ckpt --version v1",
+          "note": "4-step consistency-distilled LoRA on VideoCrafter2 (local Gradio demo per README). Memory estimated as for VideoCrafter2 (7.40 GB model.ckpt x 1.2 + 0.5 GB) plus a 0.47 GB LoRA. HF card licence cc-by-4.0; the VideoCrafter2 base is Apache-2.0."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "T2V-Turbo",
+        "note": "Space registry fal_T2VTurbo_text2video -> fal endpoint 't2v-turbo'; earlier VideoGenHub path loads jiachenli-ucsb/T2V-Turbo-VC2"
+      }
+    ]
+  },
+  {
+    "id": "videocrafter2",
+    "name": "VideoCrafter2",
+    "provider": "Tencent AI Lab",
+    "category": "video",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 9.4,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "source": "https://github.com/AILab-CVC/VideoCrafter/blob/f6c7f7f28f71d3069a9ee0e002d2f4b019eb78f6/README.md",
+          "cmd": "git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir checkpoints/base_512_v2 && sh scripts/run_text2video.sh",
+          "note": "README: put VideoCrafter2 model.ckpt in checkpoints/base_512_v2/ and run scripts/run_text2video.sh (512x320). Memory estimated from the 7.40 GB model.ckpt x 1.2 + 0.5 GB."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv",
+        "reported_label": "VideoCrafter2",
+        "note": "VideoGenHub infermodels/videocrafter.py: VideoCrafter/VideoCrafter2 model.ckpt"
+      },
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "VideoCrafter2",
+        "note": "row links VideoCrafter2 paper; Appendix K: 320x512"
+      },
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-",
+        "reported_label": "VideoCrafter2"
+      },
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "VideoCrafter2 [ 79 ]",
+        "note": "Table 7 github.com/AILab-CVC/VideoCrafter, cites VideoCrafter2 paper [79], 512x320, 16 frames"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "VideoCrafter2 [ 11 ]",
+        "note": "Appendix: official VideoCrafter2, 512x320, 20 frames at 10 fps"
+      }
+    ]
+  },
+  {
+    "id": "vidu-1-5",
+    "name": "Vidu 1.5",
+    "provider": "ShengShu (Vidu)",
+    "category": "video",
+    "released": "2024-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "identity_note": "Released 13 Nov 2024 (PR Newswire). Vidu's current text-to-video API accepts viduq3-turbo, viduq3-pro, viduq2 and viduq1 only.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "Vidu1.5 [ 39 ]",
+        "note": "Table 7 label 'Vidu1.5' (ref [39], vidu.studio, accessed 2025-03-08), 688x384, 60 frames, 16 fps"
+      }
+    ]
+  },
+  {
+    "id": "zeroscope-v2-576w",
+    "name": "ZeroScope v2 576w",
+    "provider": "cerspense",
+    "category": "video",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 7.9,
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/cerspense/zeroscope_v2_576w",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/cerspense/zeroscope_v2_576w",
+          "cmd": "python -c \"import torch;from diffusers import DiffusionPipeline;from diffusers.utils import export_to_video;p=DiffusionPipeline.from_pretrained('cerspense/zeroscope_v2_576w',torch_dtype=torch.float16);p.enable_model_cpu_offload();export_to_video(p('Darth Vader is surfing on waves',num_inference_steps=40,height=320,width=576,num_frames=24).frames[0],'zeroscope.mp4')\"",
+          "note": "Card: 'uses 7.9gb of vram when rendering 30 frames at 576x320'. ModelScope-based fine-tune (no separate parameter count published)."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-",
+        "reported_label": "ZeroScope",
+        "note": "row links huggingface.co/cerspense/zeroscope_v2_576w; Appendix K: 320x576"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.18522v2#S5.T4",
+        "reported_label": "ZeroScope [ 64 ]",
+        "note": "Appendix: ZeroScope_v2_576w, 576x320, 24 frames at 8 fps"
+      }
+    ]
   }
 ]

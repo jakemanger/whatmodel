@@ -6,24 +6,26 @@
 
 Genmo · released 2024-10 · 10B params · apache-2.0
 
-**score 24.3** ±2.6 · #52 of 54 · from 3 benchmark results across 3 sources
+**score 37.4** ±1.7 · #52 of 70 · from 5 benchmark results across 5 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1006.6    22.3   2026-09-22   70% ▇▇▇▇▇▇▇▇
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>   41.0%    27.0   2026-01-30   16% ▇▇
-<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>   34.0%    26.7   2025-05-01   11% ▇
-prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 24.3
+source                  test                                score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                      1006.6    34.8   2026-09-22   46% ▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>     1121.3    40.1   2025-03-22   28% ▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   7.62 / 10    41.6   2025-02-28   11% ▇
+<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>      34.0%    38.5   2025-05-01    7% ▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>      41.0%    34.6   2026-01-30    7% ▇
+prior                   pull toward the middle                       49.9                 1% ▇
+                        weighted average                           = 37.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenAI-Arena ([MIT](../../licenses/video-genai-arena-space.txt)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt))</sub>
 
 ## How to run it
 
@@ -33,8 +35,8 @@ api (Replicate) · price unknown · [replicate.com](https://replicate.com/genmoa
 
 <pre>
 version                  needs  score
-bf16 · nvidia only     ~24.5GB   24.3
-default · nvidia only   ~6.5GB   24.3
+bf16 · nvidia only     ~24.5GB   37.4
+default · nvidia only   ~6.5GB   37.4
 </pre>
 
 ```sh

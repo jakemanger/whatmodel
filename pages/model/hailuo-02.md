@@ -6,7 +6,7 @@
 
 MiniMax · closed weights
 
-**score 61.6** ±6.1 · #17 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 65.5** ±5.2 · #17 of 70 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>  37.5%    65.5   2025-11-20   78% ▇▇▇▇▇▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                85.8%    44.6   2026-04-22    7% ▇
-prior                   pull toward the middle                   49.9                15% ▇▇
-                        weighted average                       = 61.6
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>  37.5%    69.1   2025-11-20   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                85.8%    51.7   2026-04-22    8% ▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 65.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

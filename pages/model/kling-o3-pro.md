@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 58.2** ±5.8 · #20 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.1** ±4.9 · #20 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>        1255.3    59.5   2026-08-27   86% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                14% ▇▇
-                        weighted average                = 58.2
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>        1255.3    63.5   2026-08-27   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                10% ▇
+                        weighted average                = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

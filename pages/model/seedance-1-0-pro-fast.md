@@ -6,7 +6,7 @@
 
 ByteDance · closed weights
 
-**score 58.7** ±12.9 · #19 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.6** ±11.6 · #21 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        91.1%    77.6   2026-04-22   32% ▇▇▇▇
-prior                   pull toward the middle           49.9                68% ▇▇▇▇▇▇▇▇
-                        weighted average               = 58.7
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        91.1%    77.0   2026-04-22   43% ▇▇▇▇▇
+prior                   pull toward the middle           49.9                57% ▇▇▇▇▇▇▇
+                        weighted average               = 61.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6793,7 +6793,7 @@
     "license_url": "/licenses/visual-videophy-readme.txt",
     "attribution": "VideoPhy and VideoPhy-2 authors (Hritik Bansal et al.), github.com/Hritikbansal/videophy at commit 01d366c979e4a82875852adbf427ccc036e7373a, MIT License, Copyright (c) 2024 Hritikbansal. Extracted leaderboard cells printed in the repository README files; percentages divided by 100; model labels mapped to the exact linked checkpoints. No values estimated or rerun. No endorsement.",
     "quote": "MIT License ... Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies ...",
-    "scope": "Only the benchmark authors' own leaderboard cells printed in the MIT-licensed README files at this commit (VideoPhy-2 human leaderboard 'All' column; VideoPhy-1 automatic leaderboard 'Avg.' column). Papers (arXiv non-exclusive) and HF datasets are not the licence basis. Sora (60-prompt UI subset) and models without a catalogue identity omitted.",
+    "scope": "Only the benchmark authors' own leaderboard cells printed in the MIT-licensed README files at this commit (VideoPhy-2 human leaderboard 'All' column; VideoPhy-1 automatic leaderboard 'Avg.' column; VideoPhy-1 human leaderboard 'SA=1, PC=1' joint column). Papers (arXiv non-exclusive) and HF datasets are not the licence basis. Sora (60-prompt UI subset) and models without a catalogue identity omitted.",
     "icon": "github.com"
   },
   {
@@ -9533,5 +9533,113 @@
     "attribution": "Picovoice speech-to-text-benchmark (https://github.com/Picovoice/speech-to-text-benchmark), Apache License 2.0. English batch-engine 'Average' WER for the Whisper rows transcribed by script from README.md at 43e7689, percent divided by 100; retain the Apache-2.0 notice. No endorsement.",
     "icon": "github.com",
     "quote": "Root LICENSE at the pinned commit is the Apache License, Version 2.0: 'Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works'. README.md (with the results tables) is a committed file of the Work; no separate data licence or carve-out."
+  },
+  {
+    "id": "video-genai-arena-space",
+    "match": [
+      "huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv"
+    ],
+    "exact": true,
+    "name": "GenAI-Arena (TIGER-Lab) text-to-video leaderboard",
+    "kind": "leaderboard",
+    "license": "MIT",
+    "terms_url": "https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/README.md",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-genai-arena-space.txt",
+    "attribution": "GenAI-Arena by TIGER-Lab (Dongfu Jiang, Max Ku, Tianle Li, Yuansheng Ni, Shizhuo Sun, Rongqi Fan, Wenhu Chen; arXiv:2406.04485), Hugging Face Space TIGER-Lab/GenAI-Arena at revision 4197b3a, MIT (Space card). Selected rows of the committed text-to-video leaderboard CSV (anonymous-vote Elo, rounded to 0.1); catalogue IDs mapped via the Space's model registry and VideoGenHub. No endorsement.",
+    "icon": "huggingface.co",
+    "quote": "Space card README.md at the pinned revision declares 'license: mit'; arena_elo/results/20250322/video_generation_leaderboard.csv (and the identical results/latest copy) are committed in the same Space repository with no other licence statement. The Space's own arena_elo scripts compute the Elo from votes collected by the platform; the paper (arXiv 2406.04485, CC BY 4.0) describes the same leaderboard.",
+    "scope": "Text-to-video leaderboard CSV only (snapshot 2025-03-22). Rows whose model identity cannot be tied to one checkpoint (fal SVD/AnimateDiff pipelines, Open-Sora 1.1 stage-2) are not imported."
+  },
+  {
+    "id": "video-love-aigve60k",
+    "match": [
+      "arxiv.org/html/2505.12098v1"
+    ],
+    "exact": true,
+    "name": "LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation (AIGVE-60K)",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-love-aigve60k.txt",
+    "attribution": "Jiarui Wang, Huiyu Duan, Ziheng Jia, Yu Zhao, Woo Yi Yang, Zicheng Zhang, Zijian Chen, Juntong Wang et al. (Shanghai Jiao Tong University). LOVE / AIGVE-60K, arXiv:2505.12098v1, CC BY 4.0. Extracted the Overall column of Tables 8 and 9 (human perception and correspondence MOS) for models with an identifiable release; values divided by 100. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2505.12098v1 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0); the HTML of v1 states 'License: CC BY 4.0'.",
+    "scope": "Authors' own generation of 58,500 videos from 30 T2V models and own subjective study. Only human MOS tables (8, 9); the LOVE metric's automatic scores and task accuracy (Table 10) are not imported. Unversioned commercial products and ambiguous open checkpoints omitted."
+  },
+  {
+    "id": "video-worldmodelbench",
+    "match": [
+      "arxiv.org/html/2502.20694v1"
+    ],
+    "exact": true,
+    "name": "WorldModelBench: Judging Video Generation Models As World Models",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-worldmodelbench.txt",
+    "attribution": "Dacheng Li, Yunhao Fang, Yukang Chen, Shuo Yang, Shiyi Cao, Justin Wong, Michael Luo, Xiaolong Wang, Hongxu Yin, Joseph E. Gonzalez, Ion Stoica, Song Han, Yao Lu. WorldModelBench, arXiv:2502.20694v1, CC BY 4.0. Extracted Table 3 human-annotation Total scores for models with an identifiable checkpoint/release; divided by 10. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2502.20694v1 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0); the HTML of v1 states 'License: CC BY 4.0'.",
+    "scope": "Authors' own generations (settings in Appendix 8.3) and own human annotation (67K labels). Table 3 Total only; judge-model scores (Table 9), Elo figure and Hard subset not imported. Kling (mode), MiniMax (version), Runway ('runway-3.0'), Mochi-official and the Open-Sora 1.2 I2V duplicate omitted."
+  },
+  {
+    "id": "video-seaweed-7b",
+    "match": [
+      "arxiv.org/html/2504.08685v2"
+    ],
+    "exact": true,
+    "name": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-seaweed-7b.txt",
+    "attribution": "Team Seawead (ByteDance Seed): Ceyuan Yang, Zhijie Lin, Yang Zhao, Shanchuan Lin, Zhibei Ma, Haoyuan Guo, Hao Chen et al. Seaweed-7B, arXiv:2504.08685v2, CC BY 4.0. Extracted Table 3 image-to-video Elo (MagicArena human evaluation); model labels mapped only where the release/mode is identifiable. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2504.08685v2 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0) for this version (v1 and v2 both CC BY 4.0).",
+    "scope": "ByteDance's own MagicArena human pairwise evaluation reported in the report (Table 3, I2V). Seaweed-7B row is lab; Wan 2.1 and HunyuanVideo rows omitted (hosted API vs open checkpoint unclear). T2V Elo appears only in a figure and is not imported."
+  },
+  {
+    "id": "video-videoverse",
+    "match": [
+      "arxiv.org/html/2510.08398v4"
+    ],
+    "exact": true,
+    "name": "VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos?",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-videoverse.txt",
+    "attribution": "Zeqing Wang, Xinyu Wei, Bairui Li, Zhen Guo, Jinrui Zhang, Hongyang Wei, Keze Wang, Lei Zhang (Sun Yat-sen University, Hong Kong Polytechnic University, Tsinghua University). VideoVerse, arXiv:2510.08398v4, CC BY 4.0. Extracted Table 1 Overall points divided by the 1,608 evaluation items; model labels mapped per Appendix D. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2510.08398v4 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0) (v1-v4 all CC BY 4.0); the HTML of v4 states 'License: CC BY 4.0'.",
+    "scope": "Authors' own generations (open models on A800; Veo-3-fast and Sora-2 standard via official APIs) and own Gemini 2.5 Pro evaluation. Table 1 Overall only. SkyReels-V2 (checkpoint), Wan2.1-14B (linked checkpoint is I2V), MiniMax-Hailuo (version) and the 10 s CogVideoX1.5 setting omitted."
+  },
+  {
+    "id": "video-chronomagic-bench",
+    "match": [
+      "arxiv.org/html/2406.18522v2"
+    ],
+    "exact": true,
+    "name": "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-chronomagic-bench.txt",
+    "attribution": "Shenghai Yuan, Jinfa Huang, Yongqi Xu, Yaoyang Liu, Shaofeng Zhang, Yujun Shi, Ruijie Zhu, Xinhua Cheng, Jiebo Luo, Li Yuan (Peking University, University of Rochester). ChronoMagic-Bench, arXiv:2406.18522v2, CC BY 4.0. Extracted the GPT4o-MTScore column of Table 4 (ChronoMagic-Bench-150) for models with an identifiable release; 1-5 values divided by 5. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2406.18522v2 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0) for this version (v1 and v2 both CC BY 4.0).",
+    "scope": "Authors' own generations and own GPT-4o scoring on the 150-prompt subset (Table 4). The self-submission leaderboard (GitHub CSV / HF Space) is not used. Zero-shot/distilled pipelines, the authors' own models (MagicTime, Open-Sora Plan) and rows whose checkpoint is not identifiable (AnimateDiff V3 base, Latte vs Latte-1, EasyAnimate V3 '720P') omitted."
   }
 ]

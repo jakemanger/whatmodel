@@ -6,22 +6,23 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 43.6** ±5.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.8** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  68.0%    42.9   2025-04-21   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 43.6
+source                  test                             score  implies  date        weight
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>   68.0%    49.6   2025-04-21   57% ▇▇▇▇▇▇▇
+<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1065.0    50.1   2025-05-05   36% ▇▇▇▇
+prior                   pull toward the middle                    49.9                 6% ▇
+                        weighted average                        = 49.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model ([CC-BY-4.0](../../licenses/video-seaweed-7b.txt))</sub>
 
 ## How to run it
 

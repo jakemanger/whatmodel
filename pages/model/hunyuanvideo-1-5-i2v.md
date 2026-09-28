@@ -6,7 +6,7 @@
 
 Tencent
 
-**score 47.5** ±5.7 · #31 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.8** ±5.0 · #35 of 70 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    43.4   2026-08-26   64% ▇▇▇▇▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    57.9   2026-06-17   22% ▇▇▇
-prior                   pull toward the middle                   49.9                13% ▇▇
-                        weighted average                       = 47.5
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    49.3   2026-08-26   70% ▇▇▇▇▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    62.2   2026-06-17   19% ▇▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

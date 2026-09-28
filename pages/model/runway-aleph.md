@@ -6,7 +6,7 @@
 
 Runway · closed weights
 
-**score 49.8** ±5.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.8** ±4.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>        1182.2    49.7   2026-08-27   86% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                14% ▇▇
-                        weighted average                = 49.8
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>        1182.2    55.4   2026-08-27   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                10% ▇
+                        weighted average                = 54.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

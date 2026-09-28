@@ -6,7 +6,7 @@
 
 Shengshu · closed weights
 
-**score 54.6** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.9** ±6.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  877.6    55.5   2026-09-25   84% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                16% ▇▇
-                        weighted average                       = 54.6
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  877.6    58.2   2026-09-25   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                15% ▇▇
+                        weighted average                       = 56.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
