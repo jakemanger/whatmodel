@@ -1,0 +1,36 @@
+Source: EleutherAI GPT-Neo 2.7B model card (Hugging Face)
+Pinned publication: https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md
+Licence: MIT — reviewed 2026-09-28
+
+ATTRIBUTION AND CHANGE NOTICE
+EleutherAI (Sid Black, Leo Gao, Phil Wang, Connor Leahy, Stella Biderman), GPT-Neo 2.7B model card, huggingface.co/EleutherAI/gpt-neo-2.7B (revision e24fa291132763e59f4a5422741b424fb5d59056). MIT.
+Changes: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.
+
+SCOPE OF REUSE
+'Physical and Scientific Reasoning' table, MathQA and PubMedQA columns for GPT-Neo 1.3B, GPT-2 1.5B, GPT-Neo 2.7B, GPT-3 Ada. Linguistic-reasoning and PIQA columns not imported (overlap the GPT-J card's harness runs).
+
+The repository declares `license: mit` in its model-card metadata at the pinned revision and contains no separate LICENSE file naming a copyright holder; the copyright holders are the card's authors (EleutherAI / GPT-Neo authors as cited in the card). The standard MIT License text follows.
+
+Licensed material is provided as-is and as-available, without warranties; see the licence below.
+
+
+==================== FULL LICENCE TEXT ====================
+
+MIT License
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.

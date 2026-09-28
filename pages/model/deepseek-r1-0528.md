@@ -8,6 +8,8 @@ DeepSeek · released 2025-05 · 685B params (37B active) · mit
 
 **score 59.4** ±0.6 · #89 of 257 · from 14 benchmark results across 5 sources
 
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

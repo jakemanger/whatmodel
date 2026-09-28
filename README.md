@@ -6,7 +6,9 @@ The open data, scoring code and bench script behind [whatmodel.sh](https://whatm
 
 **llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md)
 
-updated 2026-09-28 17:51 UTC · 257 models · scores combine 257 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-09-28 17:55 UTC · 257 models · scores combine 257 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+
+These studies cover separate model sets. Scores compare models within the selected set only: **GPQA Diamond · 304 models** · [ARC Challenge · 48 models](https://whatmodel.sh/?set=arc-challenge) · [BIG-Bench Hard · 5 models](https://whatmodel.sh/?set=bbh%40paper-2210.11416v5)
 
 Run `curl "whatmodel.sh/?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh` for this list in your terminal.
 
@@ -404,13 +406,13 @@ Ranked on today's scale, so # is where each would place in the list above.
 
 </details>
 
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 257 of 322 catalogue models ranked here · [sources and licences](pages/method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 257 of 390 catalogue models ranked here · [sources and licences](pages/method.md#sources)
 
-<details><summary>Models without a score (18)</summary>
+<details><summary>Models without a score (33)</summary>
 
-Raw results, insufficient overlap for an overall score: [LongCat 2.0 (1.6T-A48B)](pages/model/longcat-2-0.md) · [ERNIE 4.5 300B-A47B](pages/model/ernie-4-5-300b-a47b.md) · [Ling 3.0 Flash (124B-A5B)](pages/model/ling-3-0-flash.md) · [Devstral Small 2 24B](pages/model/devstral-small-2.md) · [EXAONE 4.0 32B](pages/model/exaone-4-0-32b.md) · [EXAONE 4.0 1.2B](pages/model/exaone-4-0-1-2b.md) · [Nemotron Nano 9B v2](pages/model/nemotron-nano-9b-v2.md) · [Nemotron 3 Nano 4B](pages/model/nemotron-3-nano-4b.md) · [Nemotron Cascade 2 30B-A3B](pages/model/nemotron-cascade-2-30b-a3b.md) · [LFM2 24B-A2B](pages/model/lfm2-24b-a2b.md) · [LFM2.5 8B-A1B](pages/model/lfm2-5-8b-a1b.md) · [LFM2.5 1.2B Thinking](pages/model/lfm2-5-1-2b-thinking.md) · [Apriel 1.6 15B Thinker](pages/model/apriel-1-6-15b-thinker.md) · [Falcon-H1R 7B](pages/model/falcon-h1r-7b.md) · [K2 Horizon 7B](pages/model/k2-horizon-7b.md)
+Raw results, insufficient overlap for an overall score: [LongCat 2.0 (1.6T-A48B)](pages/model/longcat-2-0.md) · [ERNIE 4.5 300B-A47B](pages/model/ernie-4-5-300b-a47b.md) · [Ling 3.0 Flash (124B-A5B)](pages/model/ling-3-0-flash.md) · [Devstral Small 2 24B](pages/model/devstral-small-2.md) · [EXAONE 4.0 32B](pages/model/exaone-4-0-32b.md) · [EXAONE 4.0 1.2B](pages/model/exaone-4-0-1-2b.md) · [Nemotron Nano 9B v2](pages/model/nemotron-nano-9b-v2.md) · [Nemotron 3 Nano 4B](pages/model/nemotron-3-nano-4b.md) · [Nemotron Cascade 2 30B-A3B](pages/model/nemotron-cascade-2-30b-a3b.md) · [LFM2 24B-A2B](pages/model/lfm2-24b-a2b.md) · [LFM2.5 8B-A1B](pages/model/lfm2-5-8b-a1b.md) · [LFM2.5 1.2B Thinking](pages/model/lfm2-5-1-2b-thinking.md) · [Apriel 1.6 15B Thinker](pages/model/apriel-1-6-15b-thinker.md) · [Falcon-H1R 7B](pages/model/falcon-h1r-7b.md) · [K2 Horizon 7B](pages/model/k2-horizon-7b.md) · [GPT-3 text-davinci-001](pages/model/text-davinci-001.md) · [Phi-1 (1.3B)](pages/model/phi-1.md)
 
-No reviewed benchmark results yet: Grok Build 0.1 · Command A+ (05-2026) · EXAONE 4.5 33B
+No reviewed benchmark results yet: Grok Build 0.1 · Command A+ (05-2026) · EXAONE 4.5 33B · GPT-1 (openai-gpt) · GPT-Neo 125M · Llama 2 70B (base) · T5 Small · T5 Base · T5 Large · OLMo 7B Twin 2T · Phi-2 (2.7B) · Falcon 40B (base) · StableLM-Base-Alpha 3B · StableLM-Base-Alpha 7B · StableLM-3B-4E1T · RedPajama-INCITE Base 3B v1
 
 </details>
 

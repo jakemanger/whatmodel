@@ -9641,5 +9641,243 @@
     "icon": "arxiv.org",
     "quote": "arXiv abstract page for 2406.18522v2 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0) for this version (v1 and v2 both CC BY 4.0).",
     "scope": "Authors' own generations and own GPT-4o scoring on the 150-prompt subset (Table 4). The self-submission leaderboard (GitHub CSV / HF Space) is not used. Zero-shot/distilled pipelines, the authors' own models (MagicTime, Open-Sora Plan) and rows whose checkpoint is not identifiable (AnimateDiff V3 base, Latte vs Latte-1, EasyAnimate V3 '720P') omitted."
+  },
+  {
+    "id": "eleutherai-gpt-j-6b-card",
+    "name": "EleutherAI GPT-J-6B model card — EleutherAI lm-evaluation-harness runs",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "terms_url": "https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md",
+    "license_url": "/licenses/eleutherai-gpt-j-6b-card-Apache-2.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "EleutherAI, GPT-J-6B model card (huggingface.co/EleutherAI/gpt-j-6b), Apache-2.0. Selected EleutherAI-run evaluation cells; percentages divided by 100. No endorsement.",
+    "quote": "Model-card YAML at the pinned revision: `license: apache-2.0`. Table footnote: '* Evaluation numbers reported by their respective authors. All other numbers are provided by running lm-evaluation-harness either with released weights or with API access.' Only non-* rows are used.",
+    "scope": "Non-* rows of the 'Evaluation results' table (8 models x 4 zero-shot tasks).",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "eleutherai-gpt-neo-2-7b-card",
+    "name": "EleutherAI GPT-Neo 2.7B model card — EleutherAI evaluation-harness runs",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "terms_url": "https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md",
+    "license_url": "/licenses/eleutherai-gpt-neo-2-7b-card-MIT.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "EleutherAI, GPT-Neo 2.7B model card (huggingface.co/EleutherAI/gpt-neo-2.7B), MIT. Selected evaluation cells; percentages divided by 100. No endorsement.",
+    "quote": "Model-card YAML at the pinned revision: `license: mit`. Card: 'All evaluations were done using our evaluation harness.'",
+    "scope": "MathQA and PubMedQA cells (4 models).",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2204.06745v1",
+    "name": "GPT-NeoX-20B: An Open-Source Autoregressive Language Model — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2204.06745v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2204.06745v1",
+    "license_url": "/licenses/paper-2204.06745v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Sid Black, Stella Biderman, Eric Hallahan et al. (2022). GPT-NeoX-20B: An Open-Source Autoregressive Language Model. arXiv:2204.06745v1. https://arxiv.org/abs/2204.06745v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2204.06745v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Appendix D Table 2 (zero-shot natural-language tasks for GPT-J-6B, GPT-NeoX-20B and the GPT-3 API models Ada/Babbage/Curie/DaVinci), tasks LAMBADA, HellaSwag, WinoGrande, SciQ, PIQA, TriviaQA, ARC Easy/Challenge, OpenBookQA. The authors ran every column with the EleutherAI harness (GPT-3 via the OpenAI API). FairSeq tables, five-shot tables, ANLI/WSC/LogiQA/PROST/QA4MRE/HeadQA rows and Hendrycks/arithmetic tables not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2304.01373v2",
+    "name": "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2304.01373v2"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "terms_url": "https://arxiv.org/abs/2304.01373v2",
+    "license_url": "/licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Stella Biderman, Hailey Schoelkopf, Quentin Anthony et al. (2023). Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. arXiv:2304.01373v2. https://arxiv.org/abs/2304.01373v2\nCC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2304.01373v2 links the licence 'http://creativecommons.org/licenses/by-sa/4.0/' in its licence field, and the HTML version header states 'License: CC BY-SA 4.0'. Share-alike: rows adapted from this paper must be offered under CC BY-SA 4.0 (see adapted_data_file).",
+    "scope": "Appendix G zero-shot tables: Table 7 (fully-trained standard Pythia suite), Table 15 (BLOOM 560M-3B) and Table 16 (OPT 125M-66B); rows LAMBADA (OpenAI), PIQA, WinoGrande, ARC-Easy, ARC-Challenge, SciQ. The paper states the authors 'run all evaluations ourselves instead of copying claimed results from previous papers'. Deduplicated-suite, 93k-step and five-shot tables and the WSC/LogiQA rows not imported.",
+    "icon": "arxiv.org",
+    "adapter_license": "CC-BY-SA-4.0",
+    "publication_requirement": "Share-alike: retain attribution, change notice and licence when displaying or serving these rows; adapted rows must be offered under CC BY-SA 4.0.",
+    "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "adapted_data_file": "/data/llm-new-bysa.json"
+  },
+  {
+    "id": "paper-2402.00838v4",
+    "name": "OLMo: Accelerating the Science of Language Models — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2402.00838v4"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2402.00838v4",
+    "license_url": "/licenses/paper-2402.00838v4-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Dirk Groeneveld, Iz Beltagy, Pete Walsh et al. (2024). OLMo: Accelerating the Science of Language Models. arXiv:2402.00838v4. https://arxiv.org/abs/2402.00838v4\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2402.00838v4 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 3 (zero-shot, 8 core tasks: ARC Challenge/Easy, BoolQ, HellaSwag, OpenBookQA, PIQA, SciQ, WinoGrande) for OLMo-1B, OLMo-7B and the baselines Pythia 1B, Falcon-7B, LLaMA 7B, Llama 2 7B, MPT-7B, Pythia 6.9B, RPJ-INCITE-7B; the paper states it uses 'our fixed evaluation pipeline to compare results against publicly available models' (Catwalk, rank classification). StableLM 1.6B and TinyLlama 1.1B rows, the avg. column and Table 7 not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2309.05463v1",
+    "name": "Textbooks Are All You Need II: phi-1.5 technical report — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2309.05463v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2309.05463v1",
+    "license_url": "/licenses/paper-2309.05463v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Yuanzhi Li, Sébastien Bubeck, Ronen Eldan, Allie Del Giorno, Suriya Gunasekar, Yin Tat Lee (2023). Textbooks Are All You Need II: phi-1.5 technical report. arXiv:2309.05463v1. https://arxiv.org/abs/2309.05463v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2309.05463v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 2 (WinoGrande, ARC-Easy, ARC-Challenge, BoolQ, SIQA) and Table 3 (PIQA, HellaSwag, OpenbookQA) zero-shot accuracies, LM-Eval Harness, for phi-1.5 and the re-run baselines Llama2-7B, Llama-7B, MPT-7B, Falcon-7B, Falcon-rw-1.3B, OPT-1.3B, GPT-Neo-2.7B, GPT2-XL-1.5B (Figure 1 caption: 'the numbers are from our own evaluation pipeline, to ensure consistency between models'). Vicuna-13B and unreleased phi-1.5-web rows, the MMLU and SQUAD columns of Table 3 and Table 4 (math/code; contains copied rows) not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2302.13971v1",
+    "name": "LLaMA: Open and Efficient Foundation Language Models — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2302.13971v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2302.13971v1",
+    "license_url": "/licenses/paper-2302.13971v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Hugo Touvron, Thibaut Lavril, Gautier Izacard et al. (2023). LLaMA: Open and Efficient Foundation Language Models. arXiv:2302.13971v1. https://arxiv.org/abs/2302.13971v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2302.13971v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "LLaMA 7B/13B/33B/65B rows only (Meta's own measurements of its own models): Table 3 zero-shot common-sense tasks, Table 7 MATH and GSM8k (single-sample columns, not maj1@k), Table 8 HumanEval and MBPP pass@1, Table 9 MMLU five-shot average. Rows for GPT-3, Gopher, Chinchilla, PaLM, Minerva, LaMDA and GPT-NeoX in these tables are copied from other papers and are not imported; NaturalQuestions, TriviaQA, RACE and bias/toxicity tables not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2211.05100v4",
+    "name": "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2211.05100v4"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2211.05100v4",
+    "license_url": "/licenses/paper-2211.05100v4-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "BigScience Workshop (2023). BLOOM: A 176B-Parameter Open-Access Multilingual Language Model. arXiv:2211.05100v4. https://arxiv.org/abs/2211.05100v4\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2211.05100v4 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 9 (HumanEval) pass@1 column for the pretrained BLOOM models 560M-176B only (BigScience's own measurements). The caption states non-BLOOM rows (GPT-Neo, GPT-J, GPT-NeoX, Codex) come from prior work, so they are not imported; BLOOMZ rows and pass@10/100 not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2210.11416v5",
+    "name": "Scaling Instruction-Finetuned Language Models — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2210.11416v5"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2210.11416v5",
+    "license_url": "/licenses/paper-2210.11416v5-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Hyung Won Chung, Le Hou, Shayne Longpre et al. (2022). Scaling Instruction-Finetuned Language Models. arXiv:2210.11416v5. https://arxiv.org/abs/2210.11416v5\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2210.11416v5 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 5 Flan-T5 Small/Base/Large/XL/XXL rows, MMLU 'Direct' (five-shot) and BBH 'Direct' (three-shot) columns (Google's own evaluation of its released Flan-T5 checkpoints). T5 rows (LM-adapted T5, not the original T5 checkpoints), PaLM/Flan-PaLM/U-PaLM rows, CoT, TyDiQA and MGSM columns not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2306.11644v2",
+    "name": "Textbooks Are All You Need — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2306.11644v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2306.11644v2",
+    "license_url": "/licenses/paper-2306.11644v2-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Suriya Gunasekar, Yi Zhang, Jyoti Aneja et al. (2023). Textbooks Are All You Need. arXiv:2306.11644v2. https://arxiv.org/abs/2306.11644v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2306.11644v2 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 1 phi-1 row only (Microsoft's own HumanEval and MBPP pass@1 for its model). All other rows are self-reported scores of other models copied by the authors and are not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2312.06281v2",
+    "name": "EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2312.06281v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2312.06281v2",
+    "license_url": "/licenses/paper-2312.06281v2-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Samuel J. Paech (2024). EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models. arXiv:2312.06281v2. https://arxiv.org/abs/2312.06281v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2312.06281v2 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 1 (EQ-Bench v1 scores, author's own runs), row 'OpenAI text-davinci-001' only in this batch. text-davinci-002/003 are held back because Table 1 and Table 6 disagree with Tables 3-5 about which of the two scored 43.73 vs 39.44; Curie/ADA used a simplified prompt (Section 4.1) and Babbage failed. The chat-model rows are valid author runs and are listed in the lane report for the lane that owns those models.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2310.06825v1",
+    "name": "Mistral 7B — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2310.06825v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2310.06825v1",
+    "license_url": "/licenses/paper-2310.06825v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Albert Q. Jiang, Alexandre Sablayrolles, Arthur Mensch et al. (2023). Mistral 7B. arXiv:2310.06825v1. https://arxiv.org/abs/2310.06825v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2310.06825v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 2 rows 'LLaMA 2 7B' (pretrained), 'LLaMA 2 13B' (pretrained) and 'Mistral 7B' (pretrained); the paper says 'All models were re-evaluated on all metrics with our evaluation pipeline'. Columns MMLU (5-shot), HellaSwag, WinoGrande, PIQA, ARC-e, ARC-c (0-shot), TriviaQA (5-shot), HumanEval (0-shot), MBPP (3-shot), MATH (4-shot, maj@4), GSM8K (8-shot, maj@8). Code-Llama 7B row (fine-tuned, outside this batch), NaturalQuestions column, Table 3 (chat models) and figures not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "acl-2021-emnlp-main-564",
+    "name": "Surface Form Competition (Holtzman et al., EMNLP 2021) — authors' own GPT-2 runs",
+    "kind": "paper",
+    "match": [
+      "aclanthology.org/2021.emnlp-main.564.pdf"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://aclanthology.org/2021.emnlp-main.564/",
+    "license_url": "/licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Ari Holtzman, Peter West, Vered Shwartz, Yejin Choi and Luke Zettlemoyer; ©2021 Association for Computational Linguistics. Surface Form Competition: Why the Highest Probability Answer Isn’t Always Right. Proceedings of EMNLP 2021, pages 7038–7051.\nSource: https://aclanthology.org/2021.emnlp-main.564.pdf\nLicence: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "ACL Anthology landing page footer for 2021.emnlp-main.564: 'Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License.' The paper (EMNLP 2021) is an ACL publication; Section 4.1: 'We use GPT-2 via the HuggingFace Transformers library ... We do not finetune any models'.",
+    "scope": "Appendix A, Table 6 ('Multiple Choice Accuracy on GPT-2'), 'LM' scoring column (standard unnormalised conditional log-probability) for the four released GPT-2 models 125M/350M/760M/1.6B, rows COPA, StoryCloze, HellaSwag, ARC-Easy, ARC-Challenge, OpenBookQA, CommonsenseQA. The authors ran GPT-2 themselves via Hugging Face Transformers (Section 4.1). Unc/Avg/PMI_DC/CC columns, RACE-M/H, BoolQ, RTE, CB, SST-2/5, AG News, TREC rows, and Table 5 (GPT-3 API models labelled only by assumed parameter counts 2.7B/6.7B/13B/175B, so their exact API identities are not established) not imported.",
+    "icon": "arxiv.org"
   }
 ]

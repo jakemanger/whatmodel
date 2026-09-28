@@ -8,6 +8,8 @@ Tencent · released 2026-07 · 299B params (21B active) · apache-2.0
 
 **score 66.0** ±2.8 · #46 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

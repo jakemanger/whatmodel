@@ -8,6 +8,8 @@ StepFun · released 2026-02 · 196B params (11B active) · apache-2.0
 
 **score 59.1** ±1.3 · #91 of 257 · from 10 benchmark results across 2 sources
 
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

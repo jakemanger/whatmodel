@@ -77,6 +77,28 @@
       "icon": "arxiv.org",
       "adapter_license": "CC-BY-SA-4.0",
       "publication_requirement": "Share-alike: retain attribution, change notice and licence when displaying or serving these rows; adapted rows must be offered under CC BY-SA 4.0."
+    },
+    {
+      "id": "paper-2304.01373v2",
+      "name": "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling — authors' own runs",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2304.01373v2"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "terms_url": "https://arxiv.org/abs/2304.01373v2",
+      "license_url": "/licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt",
+      "verdict": "allowed",
+      "checked": "2026-09-28",
+      "attribution": "Stella Biderman, Hailey Schoelkopf, Quentin Anthony et al. (2023). Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. arXiv:2304.01373v2. https://arxiv.org/abs/2304.01373v2\nCC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+      "quote": "The arXiv abstract page for 2304.01373v2 links the licence 'http://creativecommons.org/licenses/by-sa/4.0/' in its licence field, and the HTML version header states 'License: CC BY-SA 4.0'. Share-alike: rows adapted from this paper must be offered under CC BY-SA 4.0 (see adapted_data_file).",
+      "scope": "Appendix G zero-shot tables: Table 7 (fully-trained standard Pythia suite), Table 15 (BLOOM 560M-3B) and Table 16 (OPT 125M-66B); rows LAMBADA (OpenAI), PIQA, WinoGrande, ARC-Easy, ARC-Challenge, SciQ. The paper states the authors 'run all evaluations ourselves instead of copying claimed results from previous papers'. Deduplicated-suite, 93k-step and five-shot tables and the WSC/LogiQA rows not imported.",
+      "icon": "arxiv.org",
+      "adapter_license": "CC-BY-SA-4.0",
+      "publication_requirement": "Share-alike: retain attribution, change notice and licence when displaying or serving these rows; adapted rows must be offered under CC BY-SA 4.0.",
+      "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_data_file": "/data/llm-new-bysa.json"
     }
   ],
   "benchmarks": [
@@ -235,6 +257,57 @@
       "category": "llm",
       "url": "https://arxiv.org/html/2602.17831v2",
       "description": "Elo from match-level outcomes of 90 pairwise duels in which models propose and solve programming puzzles (Table 1, TTG Elo). Pool of 10 frontier models; highest thinking/reasoning mode enabled."
+    },
+    {
+      "id": "lambada-openai",
+      "name": "LAMBADA (OpenAI version), last-word accuracy",
+      "kind": "acc",
+      "chance": 0,
+      "category": "llm",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness/blob/v0.0.1/lm_eval/tasks/lambada.py",
+      "description": "Zero-shot last-word prediction accuracy on the 5,153-passage OpenAI-detokenised LAMBADA test file used by GPT-2/GPT-3 and the EleutherAI harness (task 'lambada' in harness v0, later 'lambada_openai'). Not the original LAMBADA 'standard' split and not perplexity."
+    },
+    {
+      "id": "piqa",
+      "name": "PIQA",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "description": "Physical commonsense question-answering accuracy."
+    },
+    {
+      "id": "winogrande",
+      "name": "WinoGrande",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "description": "Pronoun/coreference reasoning accuracy."
+    },
+    {
+      "id": "arc-easy",
+      "name": "ARC Easy",
+      "kind": "acc",
+      "chance": 0.25,
+      "category": "llm",
+      "url": "https://allenai.org/data/arc",
+      "description": "AI2 Reasoning Challenge, Easy set (4-option science questions). Accuracy; not ARC Challenge. Shots and likelihood normalisation are source-specific and recorded per result."
+    },
+    {
+      "id": "arc-challenge",
+      "name": "ARC Challenge",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "description": "Accuracy on ARC Challenge; not ARC Easy."
+    },
+    {
+      "id": "sciq",
+      "name": "SciQ",
+      "kind": "acc",
+      "chance": 0.25,
+      "category": "llm",
+      "url": "https://allenai.org/data/sciq",
+      "description": "SciQ 4-option science exam questions (with support passage in the EleutherAI harness formulation). Accuracy; shots/normalisation recorded per result."
     }
   ],
   "models": [
@@ -287,7 +360,27 @@
     "qwen3-6-35b-a3b",
     "qwen3-8-2-4t-a95b",
     "step-3-5-flash",
-    "step-3-7-flash"
+    "step-3-7-flash",
+    "pythia-70m",
+    "pythia-160m",
+    "pythia-410m",
+    "pythia-1b",
+    "pythia-1-4b",
+    "pythia-2-8b",
+    "pythia-6-9b",
+    "pythia-12b",
+    "bloom-560m",
+    "bloom-1b1",
+    "bloom-1b7",
+    "bloom-3b",
+    "opt-125m",
+    "opt-350m",
+    "opt-1-3b",
+    "opt-2-7b",
+    "opt-6-7b",
+    "opt-13b",
+    "opt-30b",
+    "opt-66b"
   ],
   "results": [
     {
@@ -5017,6 +5110,2286 @@
       "by": "independent",
       "date": "2026-05-15",
       "note": "The Token Games (arXiv:2602.17831v2, CC BY-SA 4.0) Table 1, row 'claude-haiku-4-5', TTG Elo = 1000. All models run in default settings with the highest thinking/reasoning mode enabled. Authors' own duels; other columns of Table 1 are copied leaderboard values and were not imported."
+    },
+    {
+      "model": "pythia-70m",
+      "bench": "lambada-openai",
+      "score": 0.185,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '70M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "70M",
+        "raw_value": "0.185±0.005",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-160m",
+      "bench": "lambada-openai",
+      "score": 0.328,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '160M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "160M",
+        "raw_value": "0.328±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-410m",
+      "bench": "lambada-openai",
+      "score": 0.516,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '410M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "410M",
+        "raw_value": "0.516±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "bench": "lambada-openai",
+      "score": 0.562,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "1B",
+        "raw_value": "0.562±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-70m",
+      "bench": "piqa",
+      "score": 0.595,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '70M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "70M",
+        "raw_value": "0.595±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-160m",
+      "bench": "piqa",
+      "score": 0.627,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '160M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "160M",
+        "raw_value": "0.627±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-410m",
+      "bench": "piqa",
+      "score": 0.668,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '410M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "410M",
+        "raw_value": "0.668±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "bench": "piqa",
+      "score": 0.707,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "1B",
+        "raw_value": "0.707±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-70m",
+      "bench": "winogrande",
+      "score": 0.528,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '70M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "70M",
+        "raw_value": "0.528±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-160m",
+      "bench": "winogrande",
+      "score": 0.531,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '160M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "160M",
+        "raw_value": "0.531±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-410m",
+      "bench": "winogrande",
+      "score": 0.537,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '410M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "410M",
+        "raw_value": "0.537±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "bench": "winogrande",
+      "score": 0.537,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "1B",
+        "raw_value": "0.537±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-70m",
+      "bench": "arc-easy",
+      "score": 0.374,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '70M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "70M",
+        "raw_value": "0.374±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-160m",
+      "bench": "arc-easy",
+      "score": 0.435,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '160M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "160M",
+        "raw_value": "0.435±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-410m",
+      "bench": "arc-easy",
+      "score": 0.521,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '410M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "410M",
+        "raw_value": "0.521±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "bench": "arc-easy",
+      "score": 0.569,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "1B",
+        "raw_value": "0.569±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-70m",
+      "bench": "arc-challenge",
+      "score": 0.181,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '70M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "70M",
+        "raw_value": "0.181±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-160m",
+      "bench": "arc-challenge",
+      "score": 0.188,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '160M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "160M",
+        "raw_value": "0.188±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-410m",
+      "bench": "arc-challenge",
+      "score": 0.213,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '410M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "410M",
+        "raw_value": "0.213±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "bench": "arc-challenge",
+      "score": 0.244,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "1B",
+        "raw_value": "0.244±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-70m",
+      "bench": "sciq",
+      "score": 0.601,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '70M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "70M",
+        "raw_value": "0.601±0.015",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-160m",
+      "bench": "sciq",
+      "score": 0.741,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '160M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "160M",
+        "raw_value": "0.741±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-410m",
+      "bench": "sciq",
+      "score": 0.811,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '410M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "410M",
+        "raw_value": "0.811±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1b",
+      "bench": "sciq",
+      "score": 0.84,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "1B",
+        "raw_value": "0.840±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1-4b",
+      "bench": "lambada-openai",
+      "score": 0.616,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '1.4B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "1.4B",
+        "raw_value": "0.616±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-2-8b",
+      "bench": "lambada-openai",
+      "score": 0.647,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '2.8B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "2.8B",
+        "raw_value": "0.647±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-6-9b",
+      "bench": "lambada-openai",
+      "score": 0.673,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '6.9B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "6.9B",
+        "raw_value": "0.673±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-12b",
+      "bench": "lambada-openai",
+      "score": 0.705,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'Lambada (OpenAI)', column '12B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "12B",
+        "raw_value": "0.705±0.006",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1-4b",
+      "bench": "piqa",
+      "score": 0.711,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '1.4B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "1.4B",
+        "raw_value": "0.711±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-2-8b",
+      "bench": "piqa",
+      "score": 0.739,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '2.8B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "2.8B",
+        "raw_value": "0.739±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-6-9b",
+      "bench": "piqa",
+      "score": 0.752,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '6.9B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "6.9B",
+        "raw_value": "0.752±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-12b",
+      "bench": "piqa",
+      "score": 0.76,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'PIQA', column '12B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "PIQA",
+        "column_label": "12B",
+        "raw_value": "0.760±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1-4b",
+      "bench": "winogrande",
+      "score": 0.573,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '1.4B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "1.4B",
+        "raw_value": "0.573±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-2-8b",
+      "bench": "winogrande",
+      "score": 0.594,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '2.8B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "2.8B",
+        "raw_value": "0.594±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-6-9b",
+      "bench": "winogrande",
+      "score": 0.609,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '6.9B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "6.9B",
+        "raw_value": "0.609±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-12b",
+      "bench": "winogrande",
+      "score": 0.639,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'WinoGrande', column '12B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "WinoGrande",
+        "column_label": "12B",
+        "raw_value": "0.639±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1-4b",
+      "bench": "arc-easy",
+      "score": 0.606,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '1.4B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "1.4B",
+        "raw_value": "0.606±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-2-8b",
+      "bench": "arc-easy",
+      "score": 0.644,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '2.8B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "2.8B",
+        "raw_value": "0.644±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-6-9b",
+      "bench": "arc-easy",
+      "score": 0.673,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '6.9B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "6.9B",
+        "raw_value": "0.673±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-12b",
+      "bench": "arc-easy",
+      "score": 0.702,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Easy', column '12B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Easy",
+        "column_label": "12B",
+        "raw_value": "0.702±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1-4b",
+      "bench": "arc-challenge",
+      "score": 0.26,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '1.4B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "1.4B",
+        "raw_value": "0.260±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-2-8b",
+      "bench": "arc-challenge",
+      "score": 0.295,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '2.8B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "2.8B",
+        "raw_value": "0.295±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-6-9b",
+      "bench": "arc-challenge",
+      "score": 0.313,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '6.9B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "6.9B",
+        "raw_value": "0.313±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-12b",
+      "bench": "arc-challenge",
+      "score": 0.318,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'ARC - Challenge', column '12B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "ARC - Challenge",
+        "column_label": "12B",
+        "raw_value": "0.318±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-1-4b",
+      "bench": "sciq",
+      "score": 0.865,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '1.4B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "1.4B",
+        "raw_value": "0.865±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-2-8b",
+      "bench": "sciq",
+      "score": 0.882,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '2.8B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "2.8B",
+        "raw_value": "0.882±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-6-9b",
+      "bench": "sciq",
+      "score": 0.897,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '6.9B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "6.9B",
+        "raw_value": "0.897±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "pythia-12b",
+      "bench": "sciq",
+      "score": 0.902,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "lab",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 7, row 'SciQ', column '12B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. Final checkpoint of the standard (non-deduplicated) Pythia model. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 7",
+        "row_label": "SciQ",
+        "column_label": "12B",
+        "raw_value": "0.902±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-560m",
+      "bench": "lambada-openai",
+      "score": 0.341,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'Lambada (OpenAI)', column '560M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "560M",
+        "raw_value": "0.341±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b1",
+      "bench": "lambada-openai",
+      "score": 0.426,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'Lambada (OpenAI)', column '1.1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "1.1B",
+        "raw_value": "0.426±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b7",
+      "bench": "lambada-openai",
+      "score": 0.462,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'Lambada (OpenAI)', column '1.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "1.7B",
+        "raw_value": "0.462±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-3b",
+      "bench": "lambada-openai",
+      "score": 0.518,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'Lambada (OpenAI)', column '3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "3B",
+        "raw_value": "0.518±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-560m",
+      "bench": "piqa",
+      "score": 0.637,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'PIQA', column '560M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "PIQA",
+        "column_label": "560M",
+        "raw_value": "0.637±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b1",
+      "bench": "piqa",
+      "score": 0.672,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'PIQA', column '1.1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "PIQA",
+        "column_label": "1.1B",
+        "raw_value": "0.672±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b7",
+      "bench": "piqa",
+      "score": 0.686,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'PIQA', column '1.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "PIQA",
+        "column_label": "1.7B",
+        "raw_value": "0.686±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-3b",
+      "bench": "piqa",
+      "score": 0.708,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'PIQA', column '3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "PIQA",
+        "column_label": "3B",
+        "raw_value": "0.708±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-560m",
+      "bench": "winogrande",
+      "score": 0.504,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'WinoGrande', column '560M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "WinoGrande",
+        "column_label": "560M",
+        "raw_value": "0.504±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b1",
+      "bench": "winogrande",
+      "score": 0.547,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'WinoGrande', column '1.1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "WinoGrande",
+        "column_label": "1.1B",
+        "raw_value": "0.547±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b7",
+      "bench": "winogrande",
+      "score": 0.572,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'WinoGrande', column '1.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "WinoGrande",
+        "column_label": "1.7B",
+        "raw_value": "0.572±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-3b",
+      "bench": "winogrande",
+      "score": 0.586,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'WinoGrande', column '3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "WinoGrande",
+        "column_label": "3B",
+        "raw_value": "0.586±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-560m",
+      "bench": "arc-easy",
+      "score": 0.476,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC - Easy', column '560M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC - Easy",
+        "column_label": "560M",
+        "raw_value": "0.476±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b1",
+      "bench": "arc-easy",
+      "score": 0.515,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC - Easy', column '1.1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC - Easy",
+        "column_label": "1.1B",
+        "raw_value": "0.515±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b7",
+      "bench": "arc-easy",
+      "score": 0.562,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC - Easy', column '1.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC - Easy",
+        "column_label": "1.7B",
+        "raw_value": "0.562±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-3b",
+      "bench": "arc-easy",
+      "score": 0.594,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC - Easy', column '3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC - Easy",
+        "column_label": "3B",
+        "raw_value": "0.594±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-560m",
+      "bench": "arc-challenge",
+      "score": 0.221,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC — Challenge', column '560M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC — Challenge",
+        "column_label": "560M",
+        "raw_value": "0.221±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b1",
+      "bench": "arc-challenge",
+      "score": 0.236,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC — Challenge', column '1.1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC — Challenge",
+        "column_label": "1.1B",
+        "raw_value": "0.236±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b7",
+      "bench": "arc-challenge",
+      "score": 0.238,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC — Challenge', column '1.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC — Challenge",
+        "column_label": "1.7B",
+        "raw_value": "0.238±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-3b",
+      "bench": "arc-challenge",
+      "score": 0.28,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'ARC — Challenge', column '3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "ARC — Challenge",
+        "column_label": "3B",
+        "raw_value": "0.280±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-560m",
+      "bench": "sciq",
+      "score": 0.804,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'SciQ', column '560M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "SciQ",
+        "column_label": "560M",
+        "raw_value": "0.804±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b1",
+      "bench": "sciq",
+      "score": 0.833,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'SciQ', column '1.1B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "SciQ",
+        "column_label": "1.1B",
+        "raw_value": "0.833±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-1b7",
+      "bench": "sciq",
+      "score": 0.851,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'SciQ', column '1.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "SciQ",
+        "column_label": "1.7B",
+        "raw_value": "0.851±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "bloom-3b",
+      "bench": "sciq",
+      "score": 0.891,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 15, row 'SciQ', column '3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "SciQ",
+        "column_label": "3B",
+        "raw_value": "0.891±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-125m",
+      "bench": "lambada-openai",
+      "score": 0.379,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '125M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "125M",
+        "raw_value": "0.379±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-350m",
+      "bench": "lambada-openai",
+      "score": 0.452,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '350M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "350M",
+        "raw_value": "0.452±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-1-3b",
+      "bench": "lambada-openai",
+      "score": 0.579,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '1.3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "1.3B",
+        "raw_value": "0.579±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-2-7b",
+      "bench": "lambada-openai",
+      "score": 0.636,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '2.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "2.7B",
+        "raw_value": "0.636±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-125m",
+      "bench": "piqa",
+      "score": 0.63,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '125M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "125M",
+        "raw_value": "0.630±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-350m",
+      "bench": "piqa",
+      "score": 0.644,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '350M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "350M",
+        "raw_value": "0.644±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-1-3b",
+      "bench": "piqa",
+      "score": 0.717,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '1.3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "1.3B",
+        "raw_value": "0.717±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-2-7b",
+      "bench": "piqa",
+      "score": 0.739,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '2.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "2.7B",
+        "raw_value": "0.739±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-125m",
+      "bench": "winogrande",
+      "score": 0.503,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '125M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "125M",
+        "raw_value": "0.503±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-350m",
+      "bench": "winogrande",
+      "score": 0.523,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '350M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "350M",
+        "raw_value": "0.523±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-1-3b",
+      "bench": "winogrande",
+      "score": 0.597,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '1.3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "1.3B",
+        "raw_value": "0.597±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-2-7b",
+      "bench": "winogrande",
+      "score": 0.61,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '2.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "2.7B",
+        "raw_value": "0.610±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-125m",
+      "bench": "arc-easy",
+      "score": 0.435,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '125M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "125M",
+        "raw_value": "0.435±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-350m",
+      "bench": "arc-easy",
+      "score": 0.44,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '350M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "350M",
+        "raw_value": "0.440±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-1-3b",
+      "bench": "arc-easy",
+      "score": 0.57,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '1.3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "1.3B",
+        "raw_value": "0.570±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-2-7b",
+      "bench": "arc-easy",
+      "score": 0.608,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '2.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "2.7B",
+        "raw_value": "0.608±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-125m",
+      "bench": "arc-challenge",
+      "score": 0.189,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '125M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "125M",
+        "raw_value": "0.189±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-350m",
+      "bench": "arc-challenge",
+      "score": 0.207,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '350M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "350M",
+        "raw_value": "0.207±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-1-3b",
+      "bench": "arc-challenge",
+      "score": 0.231,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '1.3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "1.3B",
+        "raw_value": "0.231±0.012",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-2-7b",
+      "bench": "arc-challenge",
+      "score": 0.268,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '2.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "2.7B",
+        "raw_value": "0.268±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-125m",
+      "bench": "sciq",
+      "score": 0.751,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '125M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "125M",
+        "raw_value": "0.751±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-350m",
+      "bench": "sciq",
+      "score": 0.748,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '350M' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "350M",
+        "raw_value": "0.748±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-1-3b",
+      "bench": "sciq",
+      "score": 0.845,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '1.3B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "1.3B",
+        "raw_value": "0.845±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-2-7b",
+      "bench": "sciq",
+      "score": 0.858,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '2.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "2.7B",
+        "raw_value": "0.858±0.011",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-6-7b",
+      "bench": "lambada-openai",
+      "score": 0.677,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '6.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "6.7B",
+        "raw_value": "0.677±0.007",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-13b",
+      "bench": "lambada-openai",
+      "score": 0.686,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '13B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "13B",
+        "raw_value": "0.686±0.006",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-30b",
+      "bench": "lambada-openai",
+      "score": 0.715,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '30B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "30B",
+        "raw_value": "0.715±0.006",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-66b",
+      "bench": "lambada-openai",
+      "score": 0.739,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'Lambada (OpenAI)', column '66B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. LAMBADA (OpenAI) = OpenAI detokenised test file. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "Lambada (OpenAI)",
+        "column_label": "66B",
+        "raw_value": "0.739±0.006",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-6-7b",
+      "bench": "piqa",
+      "score": 0.763,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '6.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "6.7B",
+        "raw_value": "0.763±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-13b",
+      "bench": "piqa",
+      "score": 0.76,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '13B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "13B",
+        "raw_value": "0.760±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-30b",
+      "bench": "piqa",
+      "score": 0.776,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '30B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "30B",
+        "raw_value": "0.776±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-66b",
+      "bench": "piqa",
+      "score": 0.788,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'PIQA', column '66B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "PIQA",
+        "column_label": "66B",
+        "raw_value": "0.788±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-6-7b",
+      "bench": "winogrande",
+      "score": 0.653,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '6.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "6.7B",
+        "raw_value": "0.653±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-13b",
+      "bench": "winogrande",
+      "score": 0.652,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '13B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "13B",
+        "raw_value": "0.652±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-30b",
+      "bench": "winogrande",
+      "score": 0.682,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '30B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "30B",
+        "raw_value": "0.682±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-66b",
+      "bench": "winogrande",
+      "score": 0.687,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'WinoGrande', column '66B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "WinoGrande",
+        "column_label": "66B",
+        "raw_value": "0.687±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-6-7b",
+      "bench": "arc-easy",
+      "score": 0.656,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '6.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "6.7B",
+        "raw_value": "0.656±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-13b",
+      "bench": "arc-easy",
+      "score": 0.671,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '13B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "13B",
+        "raw_value": "0.671±0.010",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-30b",
+      "bench": "arc-easy",
+      "score": 0.7,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '30B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "30B",
+        "raw_value": "0.700±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-66b",
+      "bench": "arc-easy",
+      "score": 0.717,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC - Easy', column '66B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC - Easy",
+        "column_label": "66B",
+        "raw_value": "0.717±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-6-7b",
+      "bench": "arc-challenge",
+      "score": 0.305,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '6.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "6.7B",
+        "raw_value": "0.305±0.013",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-13b",
+      "bench": "arc-challenge",
+      "score": 0.329,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '13B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "13B",
+        "raw_value": "0.329±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-30b",
+      "bench": "arc-challenge",
+      "score": 0.346,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '30B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "30B",
+        "raw_value": "0.346±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-66b",
+      "bench": "arc-challenge",
+      "score": 0.372,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'ARC — Challenge', column '66B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "ARC — Challenge",
+        "column_label": "66B",
+        "raw_value": "0.372±0.014",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-6-7b",
+      "bench": "sciq",
+      "score": 0.901,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '6.7B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "6.7B",
+        "raw_value": "0.901±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-13b",
+      "bench": "sciq",
+      "score": 0.908,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '13B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "13B",
+        "raw_value": "0.908±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-30b",
+      "bench": "sciq",
+      "score": 0.911,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '30B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "30B",
+        "raw_value": "0.911±0.009",
+        "scale_divisor": 1
+      }
+    },
+    {
+      "model": "opt-66b",
+      "bench": "sciq",
+      "score": 0.926,
+      "source": "https://arxiv.org/html/2304.01373v2",
+      "source_id": "paper-2304.01373v2",
+      "by": "independent",
+      "date": "2023-05-31",
+      "mode": "base",
+      "note": "Pythia paper (arXiv:2304.01373v2) Appendix G, Table 16, row 'SciQ', column '66B' (value before ±). EleutherAI LM Evaluation Harness, zero-shot; the authors ran all evaluations themselves. ",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 16",
+        "row_label": "SciQ",
+        "column_label": "66B",
+        "raw_value": "0.926±0.008",
+        "scale_divisor": 1
+      }
     }
   ]
 }

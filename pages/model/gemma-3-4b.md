@@ -8,6 +8,8 @@ Google · released 2025-03 · 4.3B params · gemma
 
 **score 32.9** ±0.9 · #221 of 257 · from 36 benchmark results across 11 sources
 
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

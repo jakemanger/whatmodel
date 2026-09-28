@@ -8,6 +8,8 @@ Alibaba · released 2026-03 · 2.27B params · apache-2.0
 
 **score 38.4** ±1.0 · #201 of 257 · from 22 benchmark results across 4 sources
 
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

@@ -20904,5 +20904,1602 @@
         "note": "Appendix: ZeroScope_v2_576w, 576x320, 24 frames at 8 fps"
       }
     ]
+  },
+  {
+    "id": "gpt-1",
+    "name": "GPT-1 (openai-gpt)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2018-06",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.117,
+    "active_b": 0.117,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.48,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/openai-community/openai-gpt/tree/1e0d4f3028acbffb47fe933cea64619c5ec1a002",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/openai-community/openai-gpt",
+    "identity_note": "The original 12-layer, 512-token-context GPT (Radford et al. 2018), as hosted in openai-community/openai-gpt. Size from OpenAI's GPT-2 paper (117M; same as the smallest GPT-2 configuration)."
+  },
+  {
+    "id": "gpt-2-small",
+    "name": "GPT-2 Small (124M)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2019-02",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.124,
+    "active_b": 0.124,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.55,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/openai-community/gpt2/tree/607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/openai-community/gpt2",
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2 (formerly the root-namespace 'gpt2' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+  },
+  {
+    "id": "gpt-2-medium",
+    "name": "GPT-2 Medium (355M)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2019-05",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.355,
+    "active_b": 0.355,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.52,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-medium')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/openai-community/gpt2-medium/tree/6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/openai-community/gpt2-medium",
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-medium (formerly the root-namespace 'gpt2-medium' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+  },
+  {
+    "id": "gpt-2-large",
+    "name": "GPT-2 Large (774M)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2019-08",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.774,
+    "active_b": 0.774,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.25,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-large')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/openai-community/gpt2-large/tree/32b71b12589c2f8d625668d2335a01cac3249519",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/openai-community/gpt2-large",
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-large (formerly the root-namespace 'gpt2-large' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+  },
+  {
+    "id": "gpt-2-xl",
+    "name": "GPT-2 XL (1.5B)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2019-11",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 1.558,
+    "active_b": 1.558,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 6.43,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='openai-community/gpt2-xl')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/openai-community/gpt2-xl/tree/15ea56dee5df4983c59b2538573817e1667135e2",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/openai-community/gpt2-xl",
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-xl (formerly the root-namespace 'gpt2-xl' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+  },
+  {
+    "id": "gpt-3-ada",
+    "name": "GPT-3 ada (API base model)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2020-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "The original OpenAI API base model 'ada' (2020-2023), retired by OpenAI in January 2024. Not the 2023 replacement babbage-002/davinci-002 and not the InstructGPT 'text-' models. OpenAI never officially published its parameter count, so params_b is omitted."
+  },
+  {
+    "id": "gpt-3-babbage",
+    "name": "GPT-3 babbage (API base model)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2020-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "The original OpenAI API base model 'babbage' (2020-2023), retired by OpenAI in January 2024. Not the 2023 replacement babbage-002/davinci-002 and not the InstructGPT 'text-' models. OpenAI never officially published its parameter count, so params_b is omitted."
+  },
+  {
+    "id": "gpt-3-curie",
+    "name": "GPT-3 curie (API base model)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2020-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "The original OpenAI API base model 'curie' (2020-2023), retired by OpenAI in January 2024. Not the 2023 replacement babbage-002/davinci-002 and not the InstructGPT 'text-' models. OpenAI never officially published its parameter count, so params_b is omitted."
+  },
+  {
+    "id": "gpt-3-davinci",
+    "name": "GPT-3 davinci (API base model)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2020-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "The original OpenAI API base model 'davinci' (2020-2023), retired by OpenAI in January 2024. Not the 2023 replacement babbage-002/davinci-002 and not the InstructGPT 'text-' models. OpenAI never officially published its parameter count, so params_b is omitted."
+  },
+  {
+    "id": "text-davinci-001",
+    "name": "GPT-3 text-davinci-001",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2022-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "OpenAI InstructGPT-series completion model 'text-davinci-001'; retired by OpenAI in January 2024. Not text-davinci-002/003 and not the base davinci."
+  },
+  {
+    "id": "gpt-neo-125m",
+    "name": "GPT-Neo 125M",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2021-03",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.125,
+    "active_b": 0.125,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.53,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/gpt-neo-125m/tree/21def0189f5705e2521767faed922f1f15e7d7db",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-neo-125m"
+  },
+  {
+    "id": "gpt-neo-1-3b",
+    "name": "GPT-Neo 1.3B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2021-03",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 1.3,
+    "active_b": 1.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 5.31,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-1.3B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/gpt-neo-1.3B/tree/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-neo-1.3B"
+  },
+  {
+    "id": "gpt-neo-2-7b",
+    "name": "GPT-Neo 2.7B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2021-03",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 2.7,
+    "active_b": 2.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 10.67,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-2.7B')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/gpt-neo-2.7B/tree/e24fa291132763e59f4a5422741b424fb5d59056",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-neo-2.7B"
+  },
+  {
+    "id": "gpt-j-6b",
+    "name": "GPT-J 6B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2021-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.05,
+    "active_b": 6.05,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 12.11,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-j-6b', torch_dtype='auto', device_map='auto', revision='float16')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16",
+          "gb_estimated": true,
+          "note": "Official float16 branch of the repo (12.1 GB); main branch holds the same weights in fp32 (24.2 GB)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-j-6b"
+  },
+  {
+    "id": "gpt-neox-20b",
+    "name": "GPT-NeoX-20B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2022-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 20.55,
+    "active_b": 20.55,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 41.29,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neox-20b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/gpt-neox-20b/tree/c292233c833e336628618a88a648727eb3dff0a7",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-neox-20b"
+  },
+  {
+    "id": "pythia-70m",
+    "name": "Pythia 70M",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.0704,
+    "active_b": 0.0704,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.17,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-70m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-70m/tree/a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-70m",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-160m",
+    "name": "Pythia 160M",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.162,
+    "active_b": 0.162,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.37,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-160m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-160m/tree/50f5173d932e8e61f858120bcb800b97af589f46",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-160m",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-410m",
+    "name": "Pythia 410M",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.405,
+    "active_b": 0.405,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.91,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-410m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-410m/tree/9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-410m",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-1b",
+    "name": "Pythia 1B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.01,
+    "active_b": 1.01,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.09,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-1b/tree/f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-1b",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-1-4b",
+    "name": "Pythia 1.4B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.41,
+    "active_b": 1.41,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.93,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-1.4b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-1.4b/tree/fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-1.4b",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-2-8b",
+    "name": "Pythia 2.8B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.78,
+    "active_b": 2.78,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 5.68,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-2.8b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-2.8b/tree/2a259cdd96a4beb1cdf467512e3904197345f6a9",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-2.8b",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-6-9b",
+    "name": "Pythia 6.9B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.86,
+    "active_b": 6.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 13.85,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-6.9b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-6.9b/tree/c0e3eee36dc47af0c49f361c74cfe459c09f7f23",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-6.9b",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "pythia-12b",
+    "name": "Pythia 12B",
+    "provider": "EleutherAI",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 11.8,
+    "active_b": 11.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 23.84,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/pythia-12b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/EleutherAI/pythia-12b/tree/bb1e3e710cdf6b524461d543cfb5ba773f0a81b6",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/EleutherAI/pythia-12b",
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+  },
+  {
+    "id": "opt-125m",
+    "name": "OPT-125M",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 0.125,
+    "active_b": 0.125,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.25,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-125m/tree/27dcfa74d334bc871f3234de431e71c6eeba5dd6",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-125m",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-350m",
+    "name": "OPT-350M",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 0.35,
+    "active_b": 0.35,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 0.66,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-350m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-350m/tree/08ab08cc4b72ff5593870b5d527cf4230323703c",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-350m",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-1-3b",
+    "name": "OPT-1.3B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 1.3,
+    "active_b": 1.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.63,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-1.3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-1.3b/tree/3f5c25d0bc631cb57ac65913f76e22c2dfb61d62",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-1.3b",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-2-7b",
+    "name": "OPT-2.7B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 2.7,
+    "active_b": 2.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 5.3,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-2.7b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-2.7b/tree/905a4b602cda5c501f1b3a2650a4152680238254",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-2.7b",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-6-7b",
+    "name": "OPT-6.7B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 6.7,
+    "active_b": 6.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 13.32,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-6.7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-6.7b/tree/a45aa65bbeb77c1558bc99bedc6779195462dab0",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-6.7b",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-13b",
+    "name": "OPT-13B (13 billion parameters)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 13,
+    "active_b": 13,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 25.71,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-13b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-13b/tree/e515202d1e7750da62d245fbccb2723b9c1790f5",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-13b",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-30b",
+    "name": "OPT-30B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 30,
+    "active_b": 30,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 59.95,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-30b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-30b/tree/ceea0a90ac0f6fae7c2c34bcb40477438c152546",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-30b",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "opt-66b",
+    "name": "OPT-66B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2022-05",
+    "open_weights": true,
+    "license": "opt-175b-license-noncommercial",
+    "params_b": 66,
+    "active_b": 66,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 132.37,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='facebook/opt-66b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/facebook/opt-66b/tree/7259969061237fe940036d22bea0fd349e4485e9",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/facebook/opt-66b",
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+  },
+  {
+    "id": "llama-7b",
+    "name": "LLaMA 7B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "llama-1-noncommercial-research",
+    "params_b": 6.7,
+    "active_b": 6.7,
+    "api": null,
+    "local": null,
+    "identity_note": "Original LLaMA (v1) base model (Touvron et al. 2023), released by Meta to approved researchers under a non-commercial licence; no official public download exists, so no run command is listed (community re-uploads such as huggyllama/* are unofficial)."
+  },
+  {
+    "id": "llama-13b",
+    "name": "LLaMA 13B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "llama-1-noncommercial-research",
+    "params_b": 13,
+    "active_b": 13,
+    "api": null,
+    "local": null,
+    "identity_note": "Original LLaMA (v1) base model (Touvron et al. 2023), released by Meta to approved researchers under a non-commercial licence; no official public download exists, so no run command is listed (community re-uploads such as huggyllama/* are unofficial)."
+  },
+  {
+    "id": "llama-33b",
+    "name": "LLaMA 33B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "llama-1-noncommercial-research",
+    "params_b": 32.5,
+    "active_b": 32.5,
+    "api": null,
+    "local": null,
+    "identity_note": "Original LLaMA (v1) base model (Touvron et al. 2023), released by Meta to approved researchers under a non-commercial licence; no official public download exists, so no run command is listed (community re-uploads such as huggyllama/* are unofficial). Meta's paper calls it 33B; the weights were distributed (and are widely mirrored) as 'llama-30b'."
+  },
+  {
+    "id": "llama-65b",
+    "name": "LLaMA 65B",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "llama-1-noncommercial-research",
+    "params_b": 65.2,
+    "active_b": 65.2,
+    "api": null,
+    "local": null,
+    "identity_note": "Original LLaMA (v1) base model (Touvron et al. 2023), released by Meta to approved researchers under a non-commercial licence; no official public download exists, so no run command is listed (community re-uploads such as huggyllama/* are unofficial)."
+  },
+  {
+    "id": "llama-2-7b",
+    "name": "Llama 2 7B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 3.8,
+          "cmd": "ollama run llama2:7b-text",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
+    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model."
+  },
+  {
+    "id": "llama-2-13b",
+    "name": "Llama 2 13B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13,
+    "active_b": 13,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 7.4,
+          "cmd": "ollama run llama2:13b-text",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/meta-llama/Llama-2-13b-hf",
+    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model."
+  },
+  {
+    "id": "llama-2-70b",
+    "name": "Llama 2 70B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 69,
+    "active_b": 69,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 39,
+          "cmd": "ollama run llama2:70b-text",
+          "source": "https://ollama.com/library/llama2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/meta-llama/Llama-2-70b-hf",
+    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model."
+  },
+  {
+    "id": "mistral-7b-v0-1",
+    "name": "Mistral 7B v0.1 (base)",
+    "provider": "Mistral AI",
+    "category": "llm",
+    "released": "2023-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.24,
+    "active_b": 7.24,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 14.48,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='mistralai/Mistral-7B-v0.1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/mistralai/Mistral-7B-v0.1/tree/27d67f1b5f57dc0953326b2601d68371d40ea8da",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
+    "identity_note": "Pretrained Mistral-7B-v0.1 base model; not Mistral 7B Instruct and not v0.2/v0.3."
+  },
+  {
+    "id": "bloom-560m",
+    "name": "BLOOM 560M",
+    "provider": "BigScience",
+    "category": "llm",
+    "released": "2022-07",
+    "open_weights": true,
+    "license": "bigscience-bloom-rail-1.0",
+    "params_b": 0.559,
+    "active_b": 0.559,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 1.12,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-560m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/bigscience/bloom-560m/tree/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigscience/bloom-560m",
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+  },
+  {
+    "id": "bloom-1b1",
+    "name": "BLOOM 1.1B",
+    "provider": "BigScience",
+    "category": "llm",
+    "released": "2022-07",
+    "open_weights": true,
+    "license": "bigscience-bloom-rail-1.0",
+    "params_b": 1.07,
+    "active_b": 1.07,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.13,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/bigscience/bloom-1b1/tree/eb3dd7399312f5f94fd13f41d2f318117d3eb1e4",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigscience/bloom-1b1",
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+  },
+  {
+    "id": "bloom-1b7",
+    "name": "BLOOM 1.7B",
+    "provider": "BigScience",
+    "category": "llm",
+    "released": "2022-07",
+    "open_weights": true,
+    "license": "bigscience-bloom-rail-1.0",
+    "params_b": 1.72,
+    "active_b": 1.72,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 3.44,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-1b7')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/bigscience/bloom-1b7/tree/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigscience/bloom-1b7",
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+  },
+  {
+    "id": "bloom-3b",
+    "name": "BLOOM 3B",
+    "provider": "BigScience",
+    "category": "llm",
+    "released": "2022-07",
+    "open_weights": true,
+    "license": "bigscience-bloom-rail-1.0",
+    "params_b": 3,
+    "active_b": 3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 6.01,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/bigscience/bloom-3b/tree/52bc5b43010b4844513826b8be3f78c7344c37d7",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigscience/bloom-3b",
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+  },
+  {
+    "id": "bloom-7b1",
+    "name": "BLOOM 7.1B",
+    "provider": "BigScience",
+    "category": "llm",
+    "released": "2022-07",
+    "open_weights": true,
+    "license": "bigscience-bloom-rail-1.0",
+    "params_b": 7.07,
+    "active_b": 7.07,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 14.14,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom-7b1', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/bigscience/bloom-7b1/tree/6232703e399354503377bf59dfbb8397fd569e4a",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigscience/bloom-7b1",
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+  },
+  {
+    "id": "bloom",
+    "name": "BLOOM 176B",
+    "provider": "BigScience",
+    "category": "llm",
+    "released": "2022-07",
+    "open_weights": true,
+    "license": "bigscience-bloom-rail-1.0",
+    "params_b": 176.2,
+    "active_b": 176.2,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 352.49,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='bigscience/bloom', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/bigscience/bloom/tree/7f10a99ce7c08f03c7719a586cb2cbda1433ac05",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigscience/bloom",
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+  },
+  {
+    "id": "t5-small",
+    "name": "T5 Small",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2019-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.061,
+    "active_b": 0.061,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.24,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-small')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google-t5/t5-small/tree/df1b051c49625cf57a3d0d8d3863ed4d13564fe4",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google-t5/t5-small",
+    "identity_note": "Original T5 (Raffel et al. 2019) encoder-decoder checkpoint (multi-task pre-trained mixture), not T5 v1.1 and not the LM-adapted T5."
+  },
+  {
+    "id": "t5-base",
+    "name": "T5 Base",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2019-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.223,
+    "active_b": 0.223,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.89,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-base')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google-t5/t5-base/tree/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google-t5/t5-base",
+    "identity_note": "Original T5 (Raffel et al. 2019) encoder-decoder checkpoint (multi-task pre-trained mixture), not T5 v1.1 and not the LM-adapted T5."
+  },
+  {
+    "id": "t5-large",
+    "name": "T5 Large",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2019-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.738,
+    "active_b": 0.738,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.95,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google-t5/t5-large')('translate English to German: The house is wonderful.', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google-t5/t5-large/tree/150ebc2c4b72291e770f58e6057481c8d2ed331a",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google-t5/t5-large",
+    "identity_note": "Original T5 (Raffel et al. 2019) encoder-decoder checkpoint (multi-task pre-trained mixture), not T5 v1.1 and not the LM-adapted T5."
+  },
+  {
+    "id": "flan-t5-small",
+    "name": "Flan-T5 Small",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2022-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.077,
+    "active_b": 0.077,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.31,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-small')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google/flan-t5-small/tree/0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/flan-t5-small",
+    "identity_note": "Instruction-finetuned T5 v1.1 LM-adapted checkpoint released with Chung et al. 2022."
+  },
+  {
+    "id": "flan-t5-base",
+    "name": "Flan-T5 Base",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2022-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.248,
+    "active_b": 0.248,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 0.99,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-base')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google/flan-t5-base/tree/7bcac572ce56db69c1ea7c8af255c5d7c9672fc2",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/flan-t5-base",
+    "identity_note": "Instruction-finetuned T5 v1.1 LM-adapted checkpoint released with Chung et al. 2022."
+  },
+  {
+    "id": "flan-t5-large",
+    "name": "Flan-T5 Large",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2022-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.783,
+    "active_b": 0.783,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.13,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-large')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google/flan-t5-large/tree/0613663d0d48ea86ba8cb3d7a44f0f65dc596a2a",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/flan-t5-large",
+    "identity_note": "Instruction-finetuned T5 v1.1 LM-adapted checkpoint released with Chung et al. 2022."
+  },
+  {
+    "id": "flan-t5-xl",
+    "name": "Flan-T5 XL",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2022-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.85,
+    "active_b": 2.85,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 11.4,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google/flan-t5-xl/tree/7d6315df2c2fb742f0f5b556879d730926ca9001",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/flan-t5-xl",
+    "identity_note": "Instruction-finetuned T5 v1.1 LM-adapted checkpoint released with Chung et al. 2022."
+  },
+  {
+    "id": "flan-t5-xxl",
+    "name": "Flan-T5 XXL",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2022-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 11.3,
+    "active_b": 11.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 45.07,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text2text-generation', model='google/flan-t5-xxl', torch_dtype='auto', device_map='auto')('Answer the question: what is the capital of France?', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/google/flan-t5-xxl/tree/ae7c9136adc7555eeccc78cdd960dfd60fb346ce",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/flan-t5-xxl",
+    "identity_note": "Instruction-finetuned T5 v1.1 LM-adapted checkpoint released with Chung et al. 2022."
+  },
+  {
+    "id": "olmo-1b",
+    "name": "OLMo 1B",
+    "provider": "Allen Institute for AI",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.18,
+    "active_b": 1.18,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 4.71,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-1B-hf')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/allenai/OLMo-1B-hf/tree/aee7752d9c08ee4775e9b0091426d8410e8f6a89",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/allenai/OLMo-1B-hf",
+    "identity_note": "OLMo 1B (Feb 2024, 3T tokens), main checkpoint of allenai/OLMo-1B; the -hf repo is AI2's Transformers-format conversion of the same weights."
+  },
+  {
+    "id": "olmo-7b",
+    "name": "OLMo 7B",
+    "provider": "Allen Institute for AI",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.89,
+    "active_b": 6.89,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 27.55,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/allenai/OLMo-7B-hf/tree/11fb3186a2e4f681edea621fa8b4345147a9db6a",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/allenai/OLMo-7B-hf",
+    "identity_note": "OLMo 7B (Feb 2024), main (annealed, ~2.46T-token) checkpoint of allenai/OLMo-7B; the -hf repo is AI2's Transformers-format conversion of the same weights. Not OLMo-7B-0424/0724 or OLMo 2."
+  },
+  {
+    "id": "olmo-7b-twin-2t",
+    "name": "OLMo 7B Twin 2T",
+    "provider": "Allen Institute for AI",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.89,
+    "active_b": 6.89,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 27.55,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-Twin-2T-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/tree/838af31020e1ebe5d627c9888e090b1fe4d2576e",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf",
+    "identity_note": "OLMo 7B Twin 2T (trained on LUMI/AMD hardware to 2T tokens); the -hf repo is AI2's Transformers-format conversion."
+  },
+  {
+    "id": "phi-1",
+    "name": "Phi-1 (1.3B)",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2023-09",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 1.42,
+    "active_b": 1.42,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.84,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1')('def fibonacci(n):', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/microsoft/phi-1/tree/d4c0adcb065e84e00ca814e35cba3012ea9841ab",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/phi-1",
+    "identity_note": "Phi-1 1.3B Python code model (Gunasekar et al. 2023), base model."
+  },
+  {
+    "id": "phi-1-5",
+    "name": "Phi-1.5 (1.3B)",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2023-09",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 1.42,
+    "active_b": 1.42,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.84,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1_5')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/microsoft/phi-1_5/tree/77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/phi-1_5",
+    "identity_note": "Phi-1.5 1.3B base model (Li et al. 2023); not instruction-tuned. Not the unreleased phi-1.5-web variants."
+  },
+  {
+    "id": "phi-2",
+    "name": "Phi-2 (2.7B)",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 2.78,
+    "active_b": 2.78,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 1.6,
+          "cmd": "ollama run phi:2.7b",
+          "source": "https://ollama.com/library/phi/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp16",
+          "gb": 5.56,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-2')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/microsoft/phi-2/tree/810d367871c1d460086d9f82db8696f2e0a0fcd0",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/phi-2",
+    "identity_note": "Phi-2 2.7B base model (December 2023); not Phi-3."
+  },
+  {
+    "id": "falcon-7b",
+    "name": "Falcon 7B (base)",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.22,
+    "active_b": 7.22,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 4.2,
+          "cmd": "ollama run falcon:7b-text",
+          "source": "https://ollama.com/library/falcon/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "gb": 14.43,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/tiiuae/falcon-7b/tree/ec89142b67d748a1865ea4451372db8313ada0d8",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/falcon-7b",
+    "identity_note": "Pretrained Falcon-7B (not falcon-7b-instruct)."
+  },
+  {
+    "id": "falcon-40b",
+    "name": "Falcon 40B (base)",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 41.8,
+    "active_b": 41.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0",
+          "gb": 24,
+          "cmd": "ollama run falcon:40b-text",
+          "source": "https://ollama.com/library/falcon/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "bf16",
+          "gb": 83.67,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-40b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/tiiuae/falcon-40b/tree/05ab2ee8d6b593bdbab17d728de5c028a7a94d83",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/falcon-40b",
+    "identity_note": "Pretrained Falcon-40B (not falcon-40b-instruct)."
+  },
+  {
+    "id": "falcon-rw-1b",
+    "name": "Falcon-RW 1B",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.3,
+    "active_b": 1.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 2.62,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-rw-1b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/tiiuae/falcon-rw-1b/tree/e4b9872bb803165eb22f0a867d4e6a64d34fce19",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/falcon-rw-1b",
+    "identity_note": "Falcon-RW-1B, 1.3B-parameter model trained on 350B tokens of RefinedWeb only (the phi-1.5 paper labels it 'Falcon-rw-1.3B')."
+  },
+  {
+    "id": "mpt-7b",
+    "name": "MPT-7B (base)",
+    "provider": "MosaicML",
+    "category": "llm",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.7,
+    "active_b": 6.7,
+    "api": null,
+    "local": null,
+    "identity_note": "MosaicML's pretrained MPT base model (not -instruct/-chat). The official mosaicml/mpt-* repositories no longer resolve on Hugging Face (HTTP 401 on 2026-09-28), so no run command is listed."
+  },
+  {
+    "id": "stablelm-base-alpha-3b",
+    "name": "StableLM-Base-Alpha 3B",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "cc-by-sa-4.0",
+    "params_b": 3.6,
+    "active_b": 3.6,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 14.82,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/stabilityai/stablelm-base-alpha-3b/tree/819657db42861818efac86e8ca60f673fa912ef8",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-base-alpha-3b",
+    "identity_note": "First StableLM alpha base release (April 2023), not the -v2 re-release."
+  },
+  {
+    "id": "stablelm-base-alpha-7b",
+    "name": "StableLM-Base-Alpha 7B",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "cc-by-sa-4.0",
+    "params_b": 7.9,
+    "active_b": 7.9,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 31.74,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/stabilityai/stablelm-base-alpha-7b/tree/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-base-alpha-7b",
+    "identity_note": "First StableLM alpha base release (April 2023), not the -v2 re-release."
+  },
+  {
+    "id": "stablelm-3b-4e1t",
+    "name": "StableLM-3B-4E1T",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2023-09",
+    "open_weights": true,
+    "license": "cc-by-sa-4.0",
+    "params_b": 2.8,
+    "active_b": 2.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 5.59,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-3b-4e1t')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/stabilityai/stablelm-3b-4e1t/tree/fa4a6a92fca83c3b4223a3c9bf792887090ebfba",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stablelm-3b-4e1t",
+    "identity_note": "3B base model trained on 1T tokens for 4 epochs; not StableLM Zephyr or StableLM 2."
+  },
+  {
+    "id": "redpajama-incite-7b-base",
+    "name": "RedPajama-INCITE 7B Base",
+    "provider": "Together",
+    "category": "llm",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.9,
+    "active_b": 6.9,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 13.85,
+          "cmd": "uv run --with torch --with 'transformers<5' --with accelerate python -c \"from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-7B-Base', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/tree/78f7e482443971f4873ba3239f0ac810a367833b",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base",
+    "identity_note": "Base model (not -Chat/-Instruct). The OLMo paper labels it 'RPJ-INCITE-7B'."
+  },
+  {
+    "id": "redpajama-incite-base-3b-v1",
+    "name": "RedPajama-INCITE Base 3B v1",
+    "provider": "Together",
+    "category": "llm",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.8,
+    "active_b": 2.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 5.69,
+          "cmd": "uv run --with torch --with 'transformers<5' python -c \"from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-Base-3B-v1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])\"",
+          "source": "https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/tree/094fbdd0c911feb485ce55de1952ab2e75277e1e",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1",
+    "identity_note": "Base model (not -Chat/-Instruct)."
   }
 ]

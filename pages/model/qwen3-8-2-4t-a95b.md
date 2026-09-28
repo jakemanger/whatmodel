@@ -8,6 +8,8 @@ Alibaba · released 2026-08 · 2400B params (95B active) · qwen3.8-max-license
 
 **score 72.2** ±0.9 · #15 of 257 · from 17 benchmark results across 5 sources
 
+Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
