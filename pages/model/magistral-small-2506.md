@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 52.8** ±2.8 · #166 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.2** ±2.8 · #169 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              56.1%    53.5   2026-08-06   54% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  30.0%    52.1   2026-08-06   42% ▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              56.1%    55.0   2026-08-06   53% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  30.0%    53.6   2026-08-06   44% ▇▇▇▇▇
 prior     pull toward the middle             50.0                 3% ▇
-          weighted average                 = 52.8
+          weighted average                 = 54.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior     pull toward the middle             50.0                 3% ▇
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~14.64GB   52.8
-8-bit q8_0    ~28.78GB   52.8
+4-bit q4_k_m  ~14.64GB   54.2
+8-bit q8_0    ~28.78GB   54.2
 </pre>
 
 ```sh

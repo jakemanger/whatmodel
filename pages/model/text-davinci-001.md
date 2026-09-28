@@ -4,13 +4,29 @@
 
 # GPT-3 text-davinci-001
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+OpenAI · released 2022-01 · proprietary
+
+**score 16.3** ±3.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-EQ-Bench v1 (60 questions, paper …   15.2%  independent  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench: An Emotional Intell…</a>
+source                  test                            score  implies  date        weight
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  15.2%    14.3   2024-01-03   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 16.3
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/text-davinci-001)
+## How to run it
+
+no current API or local download verified
+
+[interactive version](https://whatmodel.sh/model/text-davinci-001) · [JSON](https://whatmodel.sh/api?format=json&all=1)

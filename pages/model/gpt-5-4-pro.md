@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 73.8** ±1.2 · #11 of 329 · from 5 benchmark results across 1 source
+**score 75.1** ±1.1 · #11 of 361 · from 5 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                       score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  82.5%    74.4   2026-06-13   54% ▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     58.5%    73.8   2026-06-13   29% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               94.6%    72.4   2026-03-20   10% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>          46.3%    69.5   2026-08-27    5% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      58.6%    83.6   2026-03-19    2% ▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  82.5%    75.7   2026-06-13   54% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     58.5%    75.1   2026-06-13   31% ▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               94.6%    73.8   2026-03-20    9% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>          46.3%    70.9   2026-08-27    4% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      58.6%    84.7   2026-03-19    1% ▇
 prior     pull toward the middle              50.0                 1% ▇
-          weighted average                  = 73.8
+          weighted average                  = 75.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

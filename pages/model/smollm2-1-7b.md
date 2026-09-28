@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 23.9** ±2.2 · #322 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.7** ±2.5 · #349 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1114.4    23.4   2026-09-13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 23.9
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1114.4    26.0   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                 3% ▇
+                        weighted average                = 26.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle            50.0                 2
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.53GB   23.9
-8-bit q8_0    ~2.55GB   23.9
+4-bit q4_k_m  ~1.53GB   26.7
+8-bit q8_0    ~2.55GB   26.7
 </pre>
 
 ```sh

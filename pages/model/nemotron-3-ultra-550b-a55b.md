@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 63.7** ±1.7 · #79 of 329 · from 5 benchmark results across 2 sources
+**score 65.2** ±1.8 · #78 of 361 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1425.6    63.0   2026-09-13   57% ▇▇▇▇▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   85.4%    65.0   2026-08-10   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       86.7%    64.6   2026-08-10   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   20.0%    68.4   2026-08-27    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          12.0%    61.3   2026-08-10    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1425.6    64.5   2026-09-13   50% ▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   85.4%    66.4   2026-08-10   22% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       86.7%    66.0   2026-08-10   18% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   20.0%    69.8   2026-08-27    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          12.0%    62.8   2026-08-10    4% ▇
 prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 63.7
+                        weighted average                      = 65.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -61,9 +61,9 @@ api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [doc
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~330.5GB   63.7
-2-bit ud-q2_k_xl  ~165.5GB   63.7
-1-bit ud-iq1_m       ~83GB   63.7
+4-bit ud-q4_k_xl  ~330.5GB   65.2
+2-bit ud-q2_k_xl  ~165.5GB   65.2
+1-bit ud-iq1_m       ~83GB   65.2
 </pre>
 
 ```sh

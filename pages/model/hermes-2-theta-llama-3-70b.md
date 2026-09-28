@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 41.7** ±1.8 · #244 of 329 · from 3 benchmark results across 1 source
+**score 43.3** ±1.8 · #245 of 361 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              22.7%    40.9   2025-01-27   58% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    45.2   2025-01-27   23% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    38.9   2025-04-01   18% ▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              22.7%    42.7   2025-01-27   60% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    46.8   2025-01-27   21% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    40.6   2025-04-01   17% ▇▇
 prior     pull toward the middle             50.0                 1% ▇
-          weighted average                 = 41.7
+          weighted average                 = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior     pull toward the middle             50.0                 1% ▇
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~42.83GB   41.7
+4-bit gguf-q4_k_m  ~42.83GB   43.3
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 43.2** ±3.5 · #233 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.6** ±3.3 · #238 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  26.2%    42.8   2024-12-26   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  26.2%    44.3   2024-12-26   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 43.2
+                        weighted average                       = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.07GB   43.2
-8-bit q8_0    ~9.64GB   43.2
+4-bit q4_k_m  ~5.07GB   44.6
+8-bit q8_0    ~9.64GB   44.6
 </pre>
 
 ```sh

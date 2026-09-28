@@ -4,7 +4,7 @@
 
 [llm](../README.md) · **image** · [video](video.md) · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-09-28 22:50 UTC · 111 models · scores combine 27 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
+updated 2026-09-28 22:55 UTC · 111 models · scores combine 27 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
 
 These studies cover separate model sets. Scores compare models within the selected set only: **LMArena text-to-image · 157 models** · [CVTG-2K word accuracy · 3 models](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow)
 

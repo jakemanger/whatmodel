@@ -6,7 +6,7 @@
 
 Databricks · released 2024-03 · 132B params (36B active) · databricks-open-model
 
-**score 38.4** ±2.0 · #257 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.0** ±1.9 · #263 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            11.7%    36.8   2025-01-27   71% ▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            32.9%    41.7   2025-01-27   27% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            11.7%    38.6   2025-01-27   73% ▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            32.9%    43.4   2025-01-27   26% ▇▇▇
 prior     pull toward the middle           50.0                 2% ▇
-          weighted average               = 38.4
+          weighted average               = 40.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior     pull toward the middle           50.0                 2% ▇
 
 <pre>
 download        size  score
-4-bit q4_0   ~79.7GB   38.4
-8-bit q8_0  ~158.9GB   38.4
+4-bit q4_0   ~79.7GB   40.0
+8-bit q8_0  ~158.9GB   40.0
 </pre>
 
 ```sh

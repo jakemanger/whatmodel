@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-06 · 33B params · non-commercial
 
-**score 31.2** ±2.2 · #293 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.0** ±1.4 · #332 of 361 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -15,22 +15,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) compar
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1172.6    30.8   2026-09-13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 31.2
+source                  test                             score  implies  date        weight
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>    8.6%    29.6   2024-11-14   56% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1172.6    33.2   2026-09-13   29% ▇▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   36.5%    30.6   2024-01-03   14% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 31.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~20.3GB   31.2
-8-bit q8_0    ~40.1GB   31.2
+4-bit q4_k_m  ~20.3GB   31.0
+8-bit q8_0    ~40.1GB   31.0
 </pre>
 
 ```sh

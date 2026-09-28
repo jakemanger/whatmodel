@@ -99,6 +99,28 @@
       "publication_requirement": "Share-alike: retain attribution, change notice and licence when displaying or serving these rows; adapted rows must be offered under CC BY-SA 4.0.",
       "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "adapted_data_file": "/data/llm-new-bysa.json"
+    },
+    {
+      "id": "paper-2402.19173v1",
+      "name": "StarCoder 2 and The Stack v2: The Next Generation — authors' own runs",
+      "kind": "paper",
+      "match": [
+        "arxiv.org/html/2402.19173v1"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "terms_url": "https://arxiv.org/abs/2402.19173v1",
+      "license_url": "/licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt",
+      "verdict": "allowed",
+      "checked": "2026-09-28",
+      "attribution": "Anton Lozhkov, Raymond Li, Loubna Ben Allal et al. (BigCode, 2024). StarCoder 2 and The Stack v2: The Next Generation. arXiv:2402.19173v1. https://arxiv.org/abs/2402.19173v1\nCC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+      "quote": "The arXiv abstract page for 2402.19173v1 links the licence 'http://creativecommons.org/licenses/by-sa/4.0/' in its licence field, and the HTML version header states 'License: CC BY-SA 4.0'. Share-alike: rows adapted from this paper must be offered under CC BY-SA 4.0 (see adapted_data_file).",
+      "scope": "Section 7 base-model comparisons run by the BigCode authors: Table 9 HumanEval and MBPP pass@1 (greedy, EvalPlus framework), Table 11 DS-1000 overall (completion, 40 samples, T=0.2), Table 14 GSM8K (PAL, 8-shot), Table 15 CRUXEval pass@1 for the StarCoder2 rows only. Not imported: HumanEval+/MBPP+ (same generations re-scored), MultiPL-E (no printed average), Table 13 CanItEdit and Table 16 FIM (captions say other models' results are taken from other papers), Table 15 baseline rows (identical to the CRUXEval authors' published values, so treated as copied).",
+      "icon": "arxiv.org",
+      "adapter_license": "CC-BY-SA-4.0",
+      "publication_requirement": "Share-alike: retain attribution, change notice and licence when displaying or serving these rows; adapted rows must be offered under CC BY-SA 4.0.",
+      "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_data_file": "/data/llm-new-bysa.json"
     }
   ],
   "benchmarks": [
@@ -308,6 +330,56 @@
       "category": "llm",
       "url": "https://allenai.org/data/sciq",
       "description": "SciQ 4-option science exam questions (with support passage in the EleutherAI harness formulation). Accuracy; shots/normalisation recorded per result."
+    },
+    {
+      "id": "humaneval",
+      "name": "HumanEval",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md",
+      "description": "Original HumanEval pass@1; distinct from HumanEval+."
+    },
+    {
+      "id": "mbpp",
+      "name": "MBPP",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://ai.google.dev/gemma/docs/gemma-3n/model_card",
+      "description": "Original MBPP pass@1; not MBPP+ expanded test suite."
+    },
+    {
+      "id": "ds-1000",
+      "name": "DS-1000",
+      "kind": "acc",
+      "chance": 0,
+      "category": "llm",
+      "url": "https://arxiv.org/html/2402.19173v1",
+      "description": "DS-1000 data-science code generation (1,000 problems over NumPy, Pandas, Matplotlib, PyTorch, SciPy, Scikit-Learn, TensorFlow); overall pass@1, completion format unless the note says otherwise."
+    },
+    {
+      "id": "gsm8k",
+      "name": "GSM8K",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md",
+      "description": "Grade-school mathematics accuracy; shots and CoT setup in result notes."
+    },
+    {
+      "id": "cruxeval-i",
+      "name": "CRUXEval-I",
+      "kind": "acc",
+      "chance": 0,
+      "category": "llm",
+      "url": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/README.md",
+      "description": "CRUXEval input prediction: given a short Python function and an output, produce an input that yields it (800 problems); pass@1, direct prediction without chain-of-thought unless the note says otherwise. Companion of cruxeval-o."
+    },
+    {
+      "id": "cruxeval-o",
+      "name": "CRUXEval-O",
+      "kind": "acc",
+      "category": "llm",
+      "description": "CRUXEval output prediction pass@1. Link: first pinned publisher document in this batch that reports it.",
+      "url": "https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md"
     }
   ],
   "models": [
@@ -380,7 +452,20 @@
     "opt-6-7b",
     "opt-13b",
     "opt-30b",
-    "opt-66b"
+    "opt-66b",
+    "starcoderbase-3b",
+    "deepseek-coder-1-3b-base",
+    "stable-code-3b",
+    "starcoder2-3b",
+    "starcoderbase-7b",
+    "codellama-7b",
+    "deepseek-coder-6-7b-base",
+    "starcoder2-7b",
+    "starcoderbase",
+    "codellama-13b",
+    "starcoder2-15b",
+    "codellama-34b",
+    "deepseek-coder-33b-base"
   ],
   "results": [
     {
@@ -7389,6 +7474,1108 @@
         "column_label": "66B",
         "raw_value": "0.926±0.008",
         "scale_divisor": 1
+      }
+    },
+    {
+      "model": "starcoderbase-3b",
+      "bench": "humaneval",
+      "score": 0.213,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoderBase-3B', column 'HumanEval' = 21.3. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoderBase-3B",
+        "column_label": "HumanEval",
+        "raw_value": "21.3",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-3b",
+      "bench": "mbpp",
+      "score": 0.426,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoderBase-3B', column 'MBPP' = 42.6. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoderBase-3B",
+        "column_label": "MBPP",
+        "raw_value": "42.6",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-1-3b-base",
+      "bench": "humaneval",
+      "score": 0.287,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'DeepSeekCoder-1.3B', column 'HumanEval' = 28.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "DeepSeekCoder-1.3B",
+        "column_label": "HumanEval",
+        "raw_value": "28.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-1-3b-base",
+      "bench": "mbpp",
+      "score": 0.554,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'DeepSeekCoder-1.3B', column 'MBPP' = 55.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "DeepSeekCoder-1.3B",
+        "column_label": "MBPP",
+        "raw_value": "55.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "stable-code-3b",
+      "bench": "humaneval",
+      "score": 0.287,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StableCode-3B', column 'HumanEval' = 28.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StableCode-3B",
+        "column_label": "HumanEval",
+        "raw_value": "28.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "stable-code-3b",
+      "bench": "mbpp",
+      "score": 0.531,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StableCode-3B', column 'MBPP' = 53.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StableCode-3B",
+        "column_label": "MBPP",
+        "raw_value": "53.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-3b",
+      "bench": "humaneval",
+      "score": 0.317,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoder2-3B', column 'HumanEval' = 31.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoder2-3B",
+        "column_label": "HumanEval",
+        "raw_value": "31.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-3b",
+      "bench": "mbpp",
+      "score": 0.574,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoder2-3B', column 'MBPP' = 57.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoder2-3B",
+        "column_label": "MBPP",
+        "raw_value": "57.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-7b",
+      "bench": "humaneval",
+      "score": 0.305,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoderBase-7B', column 'HumanEval' = 30.5. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoderBase-7B",
+        "column_label": "HumanEval",
+        "raw_value": "30.5",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-7b",
+      "bench": "mbpp",
+      "score": 0.474,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoderBase-7B', column 'MBPP' = 47.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoderBase-7B",
+        "column_label": "MBPP",
+        "raw_value": "47.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-7b",
+      "bench": "humaneval",
+      "score": 0.335,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'CodeLlama-7B', column 'HumanEval' = 33.5. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "CodeLlama-7B",
+        "column_label": "HumanEval",
+        "raw_value": "33.5",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-7b",
+      "bench": "mbpp",
+      "score": 0.521,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'CodeLlama-7B', column 'MBPP' = 52.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "CodeLlama-7B",
+        "column_label": "MBPP",
+        "raw_value": "52.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-6-7b-base",
+      "bench": "humaneval",
+      "score": 0.476,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'DeepSeekCoder-6.7B', column 'HumanEval' = 47.6. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "DeepSeekCoder-6.7B",
+        "column_label": "HumanEval",
+        "raw_value": "47.6",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-6-7b-base",
+      "bench": "mbpp",
+      "score": 0.702,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'DeepSeekCoder-6.7B', column 'MBPP' = 70.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "DeepSeekCoder-6.7B",
+        "column_label": "MBPP",
+        "raw_value": "70.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-7b",
+      "bench": "humaneval",
+      "score": 0.354,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoder2-7B', column 'HumanEval' = 35.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoder2-7B",
+        "column_label": "HumanEval",
+        "raw_value": "35.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-7b",
+      "bench": "mbpp",
+      "score": 0.544,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoder2-7B', column 'MBPP' = 54.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoder2-7B",
+        "column_label": "MBPP",
+        "raw_value": "54.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase",
+      "bench": "humaneval",
+      "score": 0.293,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoderBase-15B', column 'HumanEval' = 29.3. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoderBase-15B",
+        "column_label": "HumanEval",
+        "raw_value": "29.3",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase",
+      "bench": "mbpp",
+      "score": 0.506,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoderBase-15B', column 'MBPP' = 50.6. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoderBase-15B",
+        "column_label": "MBPP",
+        "raw_value": "50.6",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-13b",
+      "bench": "humaneval",
+      "score": 0.378,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'CodeLlama-13B', column 'HumanEval' = 37.8. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "CodeLlama-13B",
+        "column_label": "HumanEval",
+        "raw_value": "37.8",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-13b",
+      "bench": "mbpp",
+      "score": 0.624,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'CodeLlama-13B', column 'MBPP' = 62.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "CodeLlama-13B",
+        "column_label": "MBPP",
+        "raw_value": "62.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-15b",
+      "bench": "humaneval",
+      "score": 0.463,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoder2-15B', column 'HumanEval' = 46.3. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoder2-15B",
+        "column_label": "HumanEval",
+        "raw_value": "46.3",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-15b",
+      "bench": "mbpp",
+      "score": 0.662,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'StarCoder2-15B', column 'MBPP' = 66.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "StarCoder2-15B",
+        "column_label": "MBPP",
+        "raw_value": "66.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-34b",
+      "bench": "humaneval",
+      "score": 0.482,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'CodeLlama-34B', column 'HumanEval' = 48.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "CodeLlama-34B",
+        "column_label": "HumanEval",
+        "raw_value": "48.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-34b",
+      "bench": "mbpp",
+      "score": 0.654,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'CodeLlama-34B', column 'MBPP' = 65.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "CodeLlama-34B",
+        "column_label": "MBPP",
+        "raw_value": "65.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-33b-base",
+      "bench": "humaneval",
+      "score": 0.543,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'DeepSeekCoder-33B', column 'HumanEval' = 54.3. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus framework, all 164 problems. HumanEval+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "DeepSeekCoder-33B",
+        "column_label": "HumanEval",
+        "raw_value": "54.3",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-33b-base",
+      "bench": "mbpp",
+      "score": 0.732,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 9 'Pass@1 on HumanEval(+) and MBPP(+)', row 'DeepSeekCoder-33B', column 'MBPP' = 73.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Greedy decoding, pass@1, EvalPlus's 399-problem sanitized MBPP subset. MBPP+ (same generations re-scored) not imported.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 9",
+        "row_label": "DeepSeekCoder-33B",
+        "column_label": "MBPP",
+        "raw_value": "73.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-3b",
+      "bench": "ds-1000",
+      "score": 0.142,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StarCoderBase-3B', column 'Overall' = 14.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StarCoderBase-3B",
+        "column_label": "Overall",
+        "raw_value": "14.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "stable-code-3b",
+      "bench": "ds-1000",
+      "score": 0.227,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StableCode-3B', column 'Overall' = 22.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StableCode-3B",
+        "column_label": "Overall",
+        "raw_value": "22.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-1-3b-base",
+      "bench": "ds-1000",
+      "score": 0.162,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'DeepSeekCoder-1.3B', column 'Overall' = 16.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "DeepSeekCoder-1.3B",
+        "column_label": "Overall",
+        "raw_value": "16.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-3b",
+      "bench": "ds-1000",
+      "score": 0.25,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StarCoder2-3B', column 'Overall' = 25.0. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StarCoder2-3B",
+        "column_label": "Overall",
+        "raw_value": "25.0",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-7b",
+      "bench": "ds-1000",
+      "score": 0.191,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StarCoderBase-7B', column 'Overall' = 19.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StarCoderBase-7B",
+        "column_label": "Overall",
+        "raw_value": "19.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-6-7b-base",
+      "bench": "ds-1000",
+      "score": 0.289,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'DeepSeekCoder-6.7B', column 'Overall' = 28.9. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "DeepSeekCoder-6.7B",
+        "column_label": "Overall",
+        "raw_value": "28.9",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-7b",
+      "bench": "ds-1000",
+      "score": 0.215,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'CodeLlama-7B', column 'Overall' = 21.5. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "CodeLlama-7B",
+        "column_label": "Overall",
+        "raw_value": "21.5",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-7b",
+      "bench": "ds-1000",
+      "score": 0.278,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StarCoder2-7B', column 'Overall' = 27.8. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StarCoder2-7B",
+        "column_label": "Overall",
+        "raw_value": "27.8",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase",
+      "bench": "ds-1000",
+      "score": 0.238,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StarCoderBase-15B', column 'Overall' = 23.8. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StarCoderBase-15B",
+        "column_label": "Overall",
+        "raw_value": "23.8",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-13b",
+      "bench": "ds-1000",
+      "score": 0.251,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'CodeLlama-13B', column 'Overall' = 25.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "CodeLlama-13B",
+        "column_label": "Overall",
+        "raw_value": "25.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-15b",
+      "bench": "ds-1000",
+      "score": 0.338,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'StarCoder2-15B', column 'Overall' = 33.8. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "StarCoder2-15B",
+        "column_label": "Overall",
+        "raw_value": "33.8",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-33b-base",
+      "bench": "ds-1000",
+      "score": 0.402,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'DeepSeekCoder-33B', column 'Overall' = 40.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "DeepSeekCoder-33B",
+        "column_label": "Overall",
+        "raw_value": "40.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-34b",
+      "bench": "ds-1000",
+      "score": 0.343,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 11 'Performance of open-access models on DS-1000', row 'CodeLlama-34B', column 'Overall' = 34.3. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. Completion format, temperature 0.2, top-p 0.95, mean pass@1 over 40 samples, all 1,000 problems.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 11",
+        "row_label": "CodeLlama-34B",
+        "column_label": "Overall",
+        "raw_value": "34.3",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-3b",
+      "bench": "gsm8k",
+      "score": 0.08,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StarCoderBase-3B', column 'GSM8K (PAL)' = 8.0. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StarCoderBase-3B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "8.0",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-1-3b-base",
+      "bench": "gsm8k",
+      "score": 0.126,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'DeepSeekCoder-1.3B', column 'GSM8K (PAL)' = 12.6. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "DeepSeekCoder-1.3B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "12.6",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "stable-code-3b",
+      "bench": "gsm8k",
+      "score": 0.397,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StableCode-3B', column 'GSM8K (PAL)' = 39.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StableCode-3B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "39.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-3b",
+      "bench": "gsm8k",
+      "score": 0.277,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StarCoder2-3B', column 'GSM8K (PAL)' = 27.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StarCoder2-3B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "27.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase-7b",
+      "bench": "gsm8k",
+      "score": 0.149,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StarCoderBase-7B', column 'GSM8K (PAL)' = 14.9. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StarCoderBase-7B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "14.9",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-6-7b-base",
+      "bench": "gsm8k",
+      "score": 0.419,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'DeepSeekCoder-6.7B', column 'GSM8K (PAL)' = 41.9. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "DeepSeekCoder-6.7B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "41.9",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-7b",
+      "bench": "gsm8k",
+      "score": 0.27,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'CodeLlama-7B', column 'GSM8K (PAL)' = 27.0. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "CodeLlama-7B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "27.0",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-7b",
+      "bench": "gsm8k",
+      "score": 0.404,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StarCoder2-7B', column 'GSM8K (PAL)' = 40.4. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StarCoder2-7B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "40.4",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoderbase",
+      "bench": "gsm8k",
+      "score": 0.215,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StarCoderBase-15B', column 'GSM8K (PAL)' = 21.5. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StarCoderBase-15B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "21.5",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-13b",
+      "bench": "gsm8k",
+      "score": 0.381,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'CodeLlama-13B', column 'GSM8K (PAL)' = 38.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "CodeLlama-13B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "38.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-15b",
+      "bench": "gsm8k",
+      "score": 0.651,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'StarCoder2-15B', column 'GSM8K (PAL)' = 65.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "StarCoder2-15B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "65.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "codellama-34b",
+      "bench": "gsm8k",
+      "score": 0.542,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'CodeLlama-34B', column 'GSM8K (PAL)' = 54.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "CodeLlama-34B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "54.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "deepseek-coder-33b-base",
+      "bench": "gsm8k",
+      "score": 0.587,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "independent",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 14 '8-shot accuracy on the GSM8K math-reasoning benchmark', row 'DeepSeekCoder-33B', column 'GSM8K (PAL)' = 58.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. PAL (program-aided) prompting, 8-shot, greedy decoding.",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 14",
+        "row_label": "DeepSeekCoder-33B",
+        "column_label": "GSM8K (PAL)",
+        "raw_value": "58.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-3b",
+      "bench": "cruxeval-i",
+      "score": 0.327,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 15 'Accuracy on the CRUXEval benchmark', row 'StarCoder2-3B', column 'CRUXEval-I Pass@1' = 32.7. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. CRUXEval direct prediction, pass@1 (CRUXEval protocol).",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "StarCoder2-3B",
+        "column_label": "CRUXEval-I Pass@1",
+        "raw_value": "32.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-3b",
+      "bench": "cruxeval-o",
+      "score": 0.342,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 15 'Accuracy on the CRUXEval benchmark', row 'StarCoder2-3B', column 'CRUXEval-O Pass@1' = 34.2. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. CRUXEval direct prediction, pass@1 (CRUXEval protocol).",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "StarCoder2-3B",
+        "column_label": "CRUXEval-O Pass@1",
+        "raw_value": "34.2",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-7b",
+      "bench": "cruxeval-i",
+      "score": 0.346,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 15 'Accuracy on the CRUXEval benchmark', row 'StarCoder2-7B', column 'CRUXEval-I Pass@1' = 34.6. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. CRUXEval direct prediction, pass@1 (CRUXEval protocol).",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "StarCoder2-7B",
+        "column_label": "CRUXEval-I Pass@1",
+        "raw_value": "34.6",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-7b",
+      "bench": "cruxeval-o",
+      "score": 0.36,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 15 'Accuracy on the CRUXEval benchmark', row 'StarCoder2-7B', column 'CRUXEval-O Pass@1' = 36.0. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. CRUXEval direct prediction, pass@1 (CRUXEval protocol).",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "StarCoder2-7B",
+        "column_label": "CRUXEval-O Pass@1",
+        "raw_value": "36.0",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-15b",
+      "bench": "cruxeval-i",
+      "score": 0.481,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 15 'Accuracy on the CRUXEval benchmark', row 'StarCoder2-15B', column 'CRUXEval-I Pass@1' = 48.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. CRUXEval direct prediction, pass@1 (CRUXEval protocol).",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "StarCoder2-15B",
+        "column_label": "CRUXEval-I Pass@1",
+        "raw_value": "48.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "starcoder2-15b",
+      "bench": "cruxeval-o",
+      "score": 0.471,
+      "source": "https://arxiv.org/html/2402.19173v1",
+      "source_id": "paper-2402.19173v1",
+      "by": "lab",
+      "date": "2024-02-29",
+      "mode": "base",
+      "note": "StarCoder 2 paper (arXiv:2402.19173v1, BigCode) Table 15 'Accuracy on the CRUXEval benchmark', row 'StarCoder2-15B', column 'CRUXEval-O Pass@1' = 47.1. Section 7: 'We evaluate the StarCoder2 models ... and compare them to ... StableCode, Code Llama, DeepSeekCoder, and original StarCoder' (base models only); tables that reuse other papers' numbers say so in their captions (CanItEdit, FIM) and are not used. CRUXEval direct prediction, pass@1 (CRUXEval protocol).",
+      "evidence": {
+        "kind": "table",
+        "table": "Table 15",
+        "row_label": "StarCoder2-15B",
+        "column_label": "CRUXEval-O Pass@1",
+        "raw_value": "47.1",
+        "scale_divisor": 100
       }
     }
   ]

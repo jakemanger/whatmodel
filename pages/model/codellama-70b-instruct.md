@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 24.5** ±2.2 · #318 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.4** ±0.9 · #271 of 361 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -15,22 +15,27 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) compar
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1118.9    23.9   2026-09-13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 24.5
+source                  test                             score  implies  date        weight
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                47.7%    41.4   2024-03-28   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        66.5%    40.3   2024-03-28   27% ▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    41.6   2024-05-07   18% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    39.5   2024-01-31    8% ▇
+                        <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    45.3   2024-01-31    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1118.9    26.6   2026-09-13   13% ▇▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 39.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~41.9GB   24.5
-8-bit q8_0    ~83.3GB   24.5
+4-bit q4_k_m  ~41.9GB   39.4
+8-bit q8_0    ~83.3GB   39.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 54.2** ±2.6 · #158 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.7** ±2.5 · #157 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1194.1    54.4   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1194.1    55.9   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               50.0                 3% ▇
-                        weighted average                   = 54.2
+                        weighted average                   = 55.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle               50.0               
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~74.3GB   54.2
-8-bit q8_0    ~148.1GB   54.2
+4-bit q4_k_m   ~74.3GB   55.7
+8-bit q8_0    ~148.1GB   55.7
 </pre>
 
 ```sh

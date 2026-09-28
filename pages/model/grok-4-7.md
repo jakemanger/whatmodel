@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-09 · closed weights
 
-**score 70.3** ±1.9 · #32 of 329 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 71.7** ±1.9 · #31 of 361 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                         score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>   1632.3    74.6   2026-09-24   53% ▇▇▇▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.8%    66.0   2026-09-24   46% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>   1632.3    75.9   2026-09-24   54% ▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.8%    67.4   2026-09-24   45% ▇▇▇▇▇
 prior                   pull toward the middle                50.0                 2% ▇
-                        weighted average                    = 70.3
+                        weighted average                    = 71.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

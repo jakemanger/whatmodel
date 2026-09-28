@@ -6,7 +6,7 @@
 
 Meta · released 2024-09 · 88.59B params · llama3.2
 
-**score 43.2** ±1.6 · #234 of 329 · from 4 benchmark results across 2 sources
+**score 44.8** ±1.5 · #235 of 361 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     39.4%    45.1   2025-01-27   44% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     41.0%    47.2   2025-01-27   17% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          2.6%    39.2   2025-02-25   13% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1032.5    38.7   2026-09-13   24% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     39.4%    46.7   2025-01-27   46% ▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     41.0%    48.8   2025-01-27   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          2.6%    40.9   2025-02-25   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1032.5    40.4   2026-09-13   23% ▇▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 43.2
+                        weighted average                        = 44.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download           size  score
-4-bit q4_k_m   ~53.65GB   43.2
-8-bit q8_0    ~106.81GB   43.2
+4-bit q4_k_m   ~53.65GB   44.8
+8-bit q8_0    ~106.81GB   44.8
 </pre>
 
 ```sh

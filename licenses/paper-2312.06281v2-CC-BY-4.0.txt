@@ -8,7 +8,7 @@ CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 Changes: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.
 
 SCOPE OF REUSE
-Table 1 (EQ-Bench v1 scores, author's own runs), row 'OpenAI text-davinci-001' only in this batch. text-davinci-002/003 are held back because Table 1 and Table 6 disagree with Tables 3-5 about which of the two scored 43.73 vs 39.44; Curie/ADA used a simplified prompt (Section 4.1) and Babbage failed. The chat-model rows are valid author runs and are listed in the lane report for the lane that owns those models.
+Table 1 (EQ-Bench v1 scores, author's own runs; Section 4.1 headline table), used consistently for every row. Rows: OpenAI text-davinci-001 (old-llm lane) and, in the chat-code lane, gpt-4-0613, gpt-4-0314, gpt-3.5-turbo-0613 ('gpt-3.5-0613'), gpt-3.5-turbo-0301, text-davinci-003, text-davinci-002, Llama-2-70b/13b/7b-chat, Yi-34B-Chat, Qwen-14B-Chat, openchat_3.5, vicuna-33b-v1.3, Koala 13B. Table 1 is preferred over the appendix correlation Tables 3-5, which print different values for several models (e.g. gpt-4-0314 60.73 vs 53.39) and swap text-davinci-002/003; Table 6 repeat runs agree with Table 1. Not imported: 'Anthropic Claude2' (snapshot not named), Curie/ADA (simplified prompt, historical set), Babbage (fail), community fine-tunes and Qwen-72B-Chat (not in the catalogue).
 
 Licensed material is provided as-is and as-available, without warranties; see the licence below.
 

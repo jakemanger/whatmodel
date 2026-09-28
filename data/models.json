@@ -29760,5 +29760,1907 @@
       }
     ],
     "identity_note": "Alibaba Cloud Model Studio API model wan2.1-i2v-turbo (formerly wanx2.1-i2v-turbo) (image-to-video; 480P or 720P, 3-5 s per the image-to-video API reference; released 2025-02-27); international release date from Model Studio's 'newly released models' page (https://www.alibabacloud.com/help/en/model-studio/newly-released-models, observed 2026-09-29). Commercial API tier; not assumed identical to any open Wan checkpoint. No price recorded (no approved price_source read for this tier)."
+  },
+  {
+    "id": "codegemma-2b",
+    "name": "CodeGemma 2B (v1.0)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 2.51,
+    "active_b": 2.51,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.6,
+          "cmd": "ollama run codegemma:2b-code-q4_K_M",
+          "source": "https://ollama.com/library/codegemma/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.7,
+          "cmd": "ollama run codegemma:2b-code-q8_0",
+          "source": "https://ollama.com/library/codegemma/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/codegemma-2b",
+    "identity_note": "Maker repo google/codegemma-2b @e7583ed: licence tag gemma. 2,506,172,416 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-03: month the maker's Hugging Face repo was created (createdAt 2024-03-21). Pretrained CodeGemma 2B, original April 2024 release; CodeGemma 1.1 is separate. Ollama tags codegemma:2b-code-q4_K_M, codegemma:2b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/google/codegemma-2b/blob/e7583edabd3dd48a9c705974a9456852f1205ab1/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeGemma-2B"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.11409v2",
+        "reported_label": "2B-PT"
+      }
+    ]
+  },
+  {
+    "id": "codegemma-7b",
+    "name": "CodeGemma 7B (v1.0)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 8.54,
+    "active_b": 8.54,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.3,
+          "cmd": "ollama run codegemma:7b-code-q4_K_M",
+          "source": "https://ollama.com/library/codegemma/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.1,
+          "cmd": "ollama run codegemma:7b-code-q8_0",
+          "source": "https://ollama.com/library/codegemma/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/codegemma-7b",
+    "identity_note": "Maker repo google/codegemma-7b @2ec9700: licence tag gemma. 8,537,680,896 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-03: month the maker's Hugging Face repo was created (createdAt 2024-03-21). Pretrained CodeGemma 7B; not the instruction-tuned model. Ollama tags codegemma:7b-code-q4_K_M, codegemma:7b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/google/codegemma-7b/blob/2ec970089fe8f083d10d1ce6bac30538ac4badaa/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeGemma-7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.11409v2",
+        "reported_label": "7B-PT"
+      }
+    ]
+  },
+  {
+    "id": "codegemma-7b-it",
+    "name": "CodeGemma 7B IT (v1.0)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 8.54,
+    "active_b": 8.54,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.3,
+          "cmd": "ollama run codegemma:7b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/codegemma/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.1,
+          "cmd": "ollama run codegemma:7b-instruct-q8_0",
+          "source": "https://ollama.com/library/codegemma/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/codegemma-7b-it",
+    "identity_note": "Maker repo google/codegemma-7b-it @078cdc5: licence tag gemma. 8,537,680,896 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-03: month the maker's Hugging Face repo was created (createdAt 2024-03-21). Instruction-tuned CodeGemma 7B, original release; codegemma-1.1-7b-it is separate. Ollama tags codegemma:7b-instruct-q4_K_M, codegemma:7b-instruct-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/google/codegemma-7b-it/blob/078cdc51070553d1636d645c9a238f3b0914459a/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeGemma-7B-IT"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.11409v2",
+        "reported_label": "7B-IT"
+      }
+    ]
+  },
+  {
+    "id": "codellama-13b",
+    "name": "Code Llama 13B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13.02,
+    "active_b": 13.02,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 7.9,
+          "cmd": "ollama run codellama:13b-code-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 14,
+          "cmd": "ollama run codellama:13b-code-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-13b-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-13b-hf @8da65ff: licence tag llama2. 13,016,028,160 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Pretrained Code Llama; not the Python or Instruct variant. Ollama tags codellama:13b-code-q4_K_M, codellama:13b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-13b-hf/blob/8da65ff4ee20f74ecd107ca9d54f9f121b279860/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama 13B"
+      },
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "CodeLlama-13B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeLlama-13B"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "codellama-13b"
+      }
+    ]
+  },
+  {
+    "id": "codellama-13b-instruct",
+    "name": "Code Llama 13B Instruct",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13.02,
+    "active_b": 13.02,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 7.9,
+          "cmd": "ollama run codellama:13b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 14,
+          "cmd": "ollama run codellama:13b-instruct-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-13b-Instruct-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-13b-Instruct-hf @7457954: licence tag llama2. 13,016,028,160 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Ollama tags codellama:13b-instruct-q4_K_M, codellama:13b-instruct-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-13b-Instruct-hf/blob/745795438019e47e4dad1347a0093e11deee4c68/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama - Instruct 13B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "CodeLlama-Inst 13b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeLlama-13B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "codellama-13b-python",
+    "name": "Code Llama 13B Python",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13.02,
+    "active_b": 13.02,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 7.9,
+          "cmd": "ollama run codellama:13b-python-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 14,
+          "cmd": "ollama run codellama:13b-python-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-13b-Python-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-13b-Python-hf @bced388: licence tag llama2. 13,015,864,320 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Python-specialised Code Llama; not instruction-tuned. Ollama tags codellama:13b-python-q4_K_M, codellama:13b-python-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-13b-Python-hf/blob/bced38894a8c7198df0486bc444c203f3159d266/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama - Python 13B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "CodeLlama 13b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "codellama-python-13b"
+      }
+    ]
+  },
+  {
+    "id": "codellama-34b",
+    "name": "Code Llama 34B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 33.74,
+    "active_b": 33.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run codellama:34b-code-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "cmd": "ollama run codellama:34b-code-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-34b-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-34b-hf @6008b96: licence tag llama2. 33,743,970,304 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Pretrained Code Llama; not the Python or Instruct variant. Ollama tags codellama:34b-code-q4_K_M, codellama:34b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-34b-hf/blob/6008b9656730b71c7d19a15370c7ff6d2902f4ef/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama 34B"
+      },
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "CodeLlama-34B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeLlama-34B"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "codellama-34b"
+      }
+    ]
+  },
+  {
+    "id": "codellama-34b-python",
+    "name": "Code Llama 34B Python",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 33.74,
+    "active_b": 33.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run codellama:34b-python-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "cmd": "ollama run codellama:34b-python-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-34b-Python-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-34b-Python-hf @7daa5d7: licence tag llama2. 33,743,970,304 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Python-specialised Code Llama; not instruction-tuned. Ollama tags codellama:34b-python-q4_K_M, codellama:34b-python-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-34b-Python-hf/blob/7daa5d7ae0be52aea6c5523df2c887853f1e7035/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama - Python 34B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "CodeLlama 34b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "codellama-python-34b"
+      }
+    ]
+  },
+  {
+    "id": "codellama-70b",
+    "name": "Code Llama 70B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 68.98,
+    "active_b": 68.98,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 41,
+          "cmd": "ollama run codellama:70b-code-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 73,
+          "cmd": "ollama run codellama:70b-code-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-70b-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-70b-hf @cc11b0f: licence tag llama2. 68,976,910,336 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-01: month the maker's Hugging Face repo was created (createdAt 2024-01-29). Pretrained Code Llama 70B (January 2024 release); not the Python or Instruct variant. Ollama tags codellama:70b-code-q4_K_M, codellama:70b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-70b-hf/blob/cc11b0f79c8a072bd1e1f32ec280e1ff8ec018f6/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama 70B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeLlama-70B"
+      }
+    ]
+  },
+  {
+    "id": "codellama-70b-python",
+    "name": "Code Llama 70B Python",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 68.98,
+    "active_b": 68.98,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 41,
+          "cmd": "ollama run codellama:70b-python-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 73,
+          "cmd": "ollama run codellama:70b-python-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-70b-Python-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-70b-Python-hf @e037619: licence tag llama2. 68,976,910,336 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-01: month the maker's Hugging Face repo was created (createdAt 2024-01-29). Python-specialised Code Llama 70B; not instruction-tuned. Ollama tags codellama:70b-python-q4_K_M, codellama:70b-python-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-70b-Python-hf/blob/e037619532ec8449a01ecd5b253d065ac81637b6/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama - Python 70B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "CodeLlama 70b"
+      }
+    ]
+  },
+  {
+    "id": "codellama-7b",
+    "name": "Code Llama 7B (base)",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.1,
+          "cmd": "ollama run codellama:7b-code-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.2,
+          "cmd": "ollama run codellama:7b-code-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-7b-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-7b-hf @6c284d1: licence tag llama2. 6,738,546,688 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Pretrained Code Llama; not the Python or Instruct variant. Ollama tags codellama:7b-code-q4_K_M, codellama:7b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-7b-hf/blob/6c284d1468fe6c413cf56183e69b194dcfa27fe6/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama 7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "CodeLlama-7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeLlama-7B"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "codellama-7b"
+      }
+    ]
+  },
+  {
+    "id": "codellama-7b-instruct",
+    "name": "Code Llama 7B Instruct",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.1,
+          "cmd": "ollama run codellama:7b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.2,
+          "cmd": "ollama run codellama:7b-instruct-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-7b-Instruct-hf @22cb240: licence tag llama2. 6,738,546,688 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Ollama tags codellama:7b-instruct-q4_K_M, codellama:7b-instruct-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf/blob/22cb240e0292b0b5ab4c17ccd97aa3a2f799cbed/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama - Instruct 7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "CodeLlama-Inst 7b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "CodeLlama-7B-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "codellama-7b-python",
+    "name": "Code Llama 7B Python",
+    "provider": "Meta",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.1,
+          "cmd": "ollama run codellama:7b-python-q4_K_M",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.2,
+          "cmd": "ollama run codellama:7b-python-q8_0",
+          "source": "https://ollama.com/library/codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/codellama/CodeLlama-7b-Python-hf",
+    "identity_note": "Maker repo codellama/CodeLlama-7b-Python-hf @d4178f5: licence tag llama2. 6,738,415,616 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-24). Python-specialised Code Llama (further trained on 100B Python tokens); not instruction-tuned. Ollama tags codellama:7b-python-q4_K_M, codellama:7b-python-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/codellama/CodeLlama-7b-Python-hf/blob/d4178f5d2eead875e627ec487b23679266319b7f/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2308.12950v3",
+        "reported_label": "Code Llama - Python 7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "CodeLlama 7b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "codellama-python-7b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-1-3b-base",
+    "name": "DeepSeek-Coder 1.3B Base",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 1.3,
+    "active_b": 1.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.874,
+          "cmd": "ollama run deepseek-coder:1.3b-base-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.4,
+          "cmd": "ollama run deepseek-coder:1.3b-base-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base",
+    "identity_note": "Maker repo deepseek-ai/deepseek-coder-1.3b-base @c919139: licence tag other (deepseek-license). Parameters: nominal size from the model name (no safetensors metadata in the repo) (dense, so active = total). Released 2023-10: month the maker's Hugging Face repo was created (createdAt 2023-10-28). DeepSeek-Coder v1 (Nov 2023) base model. Ollama tags deepseek-coder:1.3b-base-q4_K_M, deepseek-coder:1.3b-base-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base/blob/c919139c3a9b4070729c8b2cca4847ab29ca8d94/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "DeepSeekCoder-1.3B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker 1.3b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "deepseek-base-1.3b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-1-3b-instruct",
+    "name": "DeepSeek-Coder 1.3B Instruct",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 1.35,
+    "active_b": 1.35,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.874,
+          "cmd": "ollama run deepseek-coder:1.3b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.4,
+          "cmd": "ollama run deepseek-coder:1.3b-instruct-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct",
+    "identity_note": "Maker repo deepseek-ai/deepseek-coder-1.3b-instruct @e063262: licence tag other (deepseek). 1,346,471,936 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-10: month the maker's Hugging Face repo was created (createdAt 2023-10-29). DeepSeek-Coder v1 instruct model. Ollama tags deepseek-coder:1.3b-instruct-q4_K_M, deepseek-coder:1.3b-instruct-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct/blob/e063262dac8366fc1f28a4da0ff3c50ea66259ca/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker-Inst 1.3b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "deepseek-instruct-1.3b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-33b-base",
+    "name": "DeepSeek-Coder 33B Base",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 33.34,
+    "active_b": 33.34,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run deepseek-coder:33b-base-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 35,
+          "cmd": "ollama run deepseek-coder:33b-base-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-33b-base",
+    "identity_note": "Maker repo deepseek-ai/deepseek-coder-33b-base @45c85ca: licence tag other (deepseek-license). 33,342,991,360 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-10: month the maker's Hugging Face repo was created (createdAt 2023-10-28). DeepSeek-Coder v1 base model. Ollama tags deepseek-coder:33b-base-q4_K_M, deepseek-coder:33b-base-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/blob/45c85cadf3720ef3e85a492e24fd4b8c5d21d8ac/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "DeepSeekCoder-33B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker 33b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "deepseek-base-33b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-33b-instruct",
+    "name": "DeepSeek-Coder 33B Instruct",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 33.34,
+    "active_b": 33.34,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run deepseek-coder:33b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 35,
+          "cmd": "ollama run deepseek-coder:33b-instruct-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct",
+    "identity_note": "Maker repo deepseek-ai/deepseek-coder-33b-instruct @61dc97b: licence tag other (deepseek). 33,342,991,360 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-11: month the maker's Hugging Face repo was created (createdAt 2023-11-01). DeepSeek-Coder v1 instruct model; not DeepSeek-Coder-V2. Ollama tags deepseek-coder:33b-instruct-q4_K_M, deepseek-coder:33b-instruct-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct/blob/61dc97b922b13995e7f83b7c8397701dbf9cfd4c/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker-Inst 33b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "deepseek-instruct-33b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-6-7b-base",
+    "name": "DeepSeek-Coder 6.7B Base",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.1,
+          "cmd": "ollama run deepseek-coder:6.7b-base-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.2,
+          "cmd": "ollama run deepseek-coder:6.7b-base-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base",
+    "identity_note": "Maker repo deepseek-ai/deepseek-coder-6.7b-base @ce2207a: licence tag other (deepseek-license). 6,740,512,768 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-10: month the maker's Hugging Face repo was created (createdAt 2023-10-23). DeepSeek-Coder v1 base model. Ollama tags deepseek-coder:6.7b-base-q4_K_M, deepseek-coder:6.7b-base-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base/blob/ce2207a8bfef3ee92bd7dd4cc31c52cfa0046912/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "DeepSeekCoder-6.7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker 6.7b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "deepseek-base-6.7b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-6-7b-instruct",
+    "name": "DeepSeek-Coder 6.7B Instruct",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2023-10",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.1,
+          "cmd": "ollama run deepseek-coder:6.7b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.2,
+          "cmd": "ollama run deepseek-coder:6.7b-instruct-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct",
+    "identity_note": "Maker repo deepseek-ai/deepseek-coder-6.7b-instruct @e5d64ad: licence tag other (deepseek). 6,740,512,768 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-10: month the maker's Hugging Face repo was created (createdAt 2023-10-29). DeepSeek-Coder v1 instruct model. Ollama tags deepseek-coder:6.7b-instruct-q4_K_M, deepseek-coder:6.7b-instruct-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/blob/e5d64addd26a6a1db0f9b863abf6ee3141936807/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker-Inst 6.7b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "deepseek-instruct-6.7b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-7b-base-v1-5",
+    "name": "DeepSeek-Coder 7B Base v1.5",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 6.91,
+    "active_b": 6.91,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-7b-base-v1.5",
+    "identity_note": "Comparison-only. Maker repo deepseek-ai/deepseek-coder-7b-base-v1.5 @98f0904: licence tag other (deepseek-license). 6,910,365,696 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-01: month the maker's Hugging Face repo was created (createdAt 2024-01-25). DeepSeek-Coder v1.5 base (continued pretraining from DeepSeek-LLM 7B).",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-7b-base-v1.5/blob/98f0904cee2237e235f10408ae12292037b21dac/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker-1.5 7b"
+      }
+    ]
+  },
+  {
+    "id": "deepseek-coder-7b-instruct-v1-5",
+    "name": "DeepSeek-Coder 7B Instruct v1.5",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 6.91,
+    "active_b": 6.91,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+    "identity_note": "Comparison-only. Maker repo deepseek-ai/deepseek-coder-7b-instruct-v1.5 @2a050a4: licence tag other (deepseek). 6,910,365,696 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-01: month the maker's Hugging Face repo was created (createdAt 2024-01-25). DeepSeek-Coder v1.5 instruct.",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5/blob/2a050a4c59d687a85324d32e147517992117ed30/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "DeepSeeker-1.5-Inst 7b"
+      }
+    ]
+  },
+  {
+    "id": "gemma-2b-base",
+    "name": "Gemma 2B (base)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 2.51,
+    "active_b": 2.51,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.8,
+          "cmd": "ollama run gemma:2b-text-q4_K_M",
+          "source": "https://ollama.com/library/gemma/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.7,
+          "cmd": "ollama run gemma:2b-text-q8_0",
+          "source": "https://ollama.com/library/gemma/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/gemma-2b",
+    "identity_note": "Maker repo google/gemma-2b @9cf48e5: licence tag gemma. 2,506,172,416 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-02: month the maker's Hugging Face repo was created (createdAt 2024-02-08). Pretrained Gemma 1.0 2B; the catalogue's gemma-2b is the instruction-tuned Gemma 2B IT. Ollama tags gemma:2b-text-q4_K_M, gemma:2b-text-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/google/gemma-2b/blob/9cf48e52b224239de00d483ec8eb84fb8d0f3a3a/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "Gemma 2b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Gemma-2B"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.11409v2",
+        "reported_label": "Gemma 2B PT"
+      }
+    ]
+  },
+  {
+    "id": "gemma-7b-base",
+    "name": "Gemma 7B (base)",
+    "provider": "Google",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "gemma",
+    "params_b": 8.54,
+    "active_b": 8.54,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.5,
+          "cmd": "ollama run gemma:7b-text-q4_K_M",
+          "source": "https://ollama.com/library/gemma/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.1,
+          "cmd": "ollama run gemma:7b-text-q8_0",
+          "source": "https://ollama.com/library/gemma/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/google/gemma-7b",
+    "identity_note": "Maker repo google/gemma-7b @ff6768d: licence tag gemma. 8,537,680,896 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-02: month the maker's Hugging Face repo was created (createdAt 2024-02-08). Pretrained Gemma 1.0 7B; the catalogue's gemma-7b is the instruction-tuned Gemma 7B IT. Ollama tags gemma:7b-text-q4_K_M, gemma:7b-text-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/google/gemma-7b/blob/ff6768d9368919a1f025a54f9f5aa0ee591730bb/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "Gemma 7b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Gemma-7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2406.11409v2",
+        "reported_label": "Gemma 7B PT"
+      }
+    ]
+  },
+  {
+    "id": "gpt-3-5-turbo-0301",
+    "name": "GPT-3.5 Turbo (0301)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2023-03",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. Dated API snapshot gpt-3.5-turbo-0301, the first ChatGPT API model. Listed as shut down on OpenAI's deprecations page, so no current API. Release month from the snapshot date in the model name.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2312.06281v2",
+        "reported_label": "OpenAI gpt-3.5-turbo-0301"
+      },
+      {
+        "source": "https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md",
+        "reported_label": "gpt-3.5-turbo-0301"
+      }
+    ]
+  },
+  {
+    "id": "gpt-3-5-turbo-0613",
+    "name": "GPT-3.5 Turbo (0613)",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2023-06",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. Dated API snapshot gpt-3.5-turbo-0613 (4K context; not gpt-3.5-turbo-16k-0613). OpenAI's deprecations page lists its shutdown on 2024-09-13, so no current API. Release month from the snapshot date in the model name.",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2312.06281v2",
+        "reported_label": "OpenAI gpt-3.5-0613"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "gpt-3.5-turbo-0613"
+      },
+      {
+        "source": "https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md",
+        "reported_label": "gpt-3.5-turbo-0613"
+      }
+    ]
+  },
+  {
+    "id": "granite-20b-code-base-8k",
+    "name": "Granite 20B Code Base (8K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 20.07,
+    "active_b": 20.07,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-20b-code-base-8k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-20b-code-base-8k @8bbfb1d: licence tag apache-2.0. 20,066,993,152 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-21). May 2024 Granite Code release; not r1.1.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-20b-code-base-8k/blob/8bbfb1d3e7a3b2f3b3f7bdbcb558f8dfca6cd8fa/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-20B-Code-Base"
+      }
+    ]
+  },
+  {
+    "id": "granite-20b-code-instruct-8k",
+    "name": "Granite 20B Code Instruct (8K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 20.07,
+    "active_b": 20.07,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-20b-code-instruct-8k @03d2f36: licence tag apache-2.0. 20,066,993,152 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-26). May 2024 Granite Code release; not r1.1.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-20b-code-instruct-8k/blob/03d2f3664ed0059eac4d35797b43fb52d551bb5b/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-20B-Code-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "granite-34b-code-base-8k",
+    "name": "Granite 34B Code Base (8K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 33.72,
+    "active_b": 33.72,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-34b-code-base-8k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-34b-code-base-8k @291a64f: licence tag apache-2.0. 33,715,603,456 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-21). May 2024 Granite Code release.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-34b-code-base-8k/blob/291a64f1033cfb63f0d4dc6bf0352522a2ab7539/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-34B-Code-Base"
+      }
+    ]
+  },
+  {
+    "id": "granite-34b-code-instruct-8k",
+    "name": "Granite 34B Code Instruct (8K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 33.72,
+    "active_b": 33.72,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-34b-code-instruct-8k @4bdfb58: licence tag apache-2.0. 33,715,603,456 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-26). May 2024 Granite Code release.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-34b-code-instruct-8k/blob/4bdfb589ebd261be0942a00dd239175d9d65bc47/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-34B-Code-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "granite-3b-code-base-2k",
+    "name": "Granite 3B Code Base (2K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 3.48,
+    "active_b": 3.48,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3b-code-base-2k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-3b-code-base-2k @b67f3da: licence tag apache-2.0. 3,482,503,680 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-23). May 2024 Granite Code release evaluated in arXiv 2405.04324 (repo later suffixed -2k); not the 128K variant.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-3b-code-base-2k/blob/b67f3dabc0b6d00ae477bd76732c7f3458a2caf3/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-3B-Code-Base"
+      }
+    ]
+  },
+  {
+    "id": "granite-3b-code-instruct-2k",
+    "name": "Granite 3B Code Instruct (2K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 3.48,
+    "active_b": 3.48,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3b-code-instruct-2k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-3b-code-instruct-2k @7bba6a5: licence tag apache-2.0. 3,482,503,680 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-26). May 2024 Granite Code release; not the 128K variant.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-3b-code-instruct-2k/blob/7bba6a5cc837e53ded2c92209e256d48f4c25f00/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-3b-Code-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "granite-8b-code-base-4k",
+    "name": "Granite 8B Code Base (4K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.05,
+    "active_b": 8.05,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-8b-code-base-4k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-8b-code-base-4k @d21e874: licence tag apache-2.0. 8,054,910,976 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-21). May 2024 Granite Code release (repo later suffixed -4k); not the 128K variant.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-8b-code-base-4k/blob/d21e874b592aebc1a355d203e932d9055574b685/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-8B-Code-Base"
+      }
+    ]
+  },
+  {
+    "id": "granite-8b-code-instruct-4k",
+    "name": "Granite 8B Code Instruct (4K)",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.05,
+    "active_b": 8.05,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k",
+    "identity_note": "Comparison-only. Maker repo ibm-granite/granite-8b-code-instruct-4k @b996987: licence tag apache-2.0. 8,054,910,976 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-04: month the maker's Hugging Face repo was created (createdAt 2024-04-26). May 2024 Granite Code release; not the 128K variant.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-8b-code-instruct-4k/blob/b996987fb31d62d4cb4a19adad1f06ee8a3d6109/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Granite-8b-Code-Instruct"
+      }
+    ]
+  },
+  {
+    "id": "magicoder-s-ds-6-7b",
+    "name": "Magicoder-S-DS 6.7B",
+    "provider": "UIUC (ise-uiuc)",
+    "category": "llm",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 6.74,
+    "active_b": 6.74,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B",
+    "identity_note": "Comparison-only. Maker repo ise-uiuc/Magicoder-S-DS-6.7B @b3ed7cb: licence tag other (deepseek). 6,740,512,768 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-12: month the maker's Hugging Face repo was created (createdAt 2023-12-03). OSS-Instruct + Evol-Instruct fine-tune of DeepSeek-Coder 6.7B base; not Magicoder-DS or the CodeLlama-based -CL variants.",
+    "identity_sources": [
+      "https://huggingface.co/ise-uiuc/Magicoder-S-DS-6.7B/blob/b3ed7cb1578a3643ceaf2ebf996a3d8e85f75d8f/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "Magicoder-s-DS 6.7b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "magicoder-ds-7b"
+      }
+    ]
+  },
+  {
+    "id": "mixtral-8x7b-v0-1",
+    "name": "Mixtral 8x7B v0.1 (base)",
+    "provider": "Mistral AI",
+    "category": "llm",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 46.7,
+    "active_b": 12.9,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 28,
+          "cmd": "ollama run mixtral:8x7b-text-v0.1-q4_K_M",
+          "source": "https://ollama.com/library/mixtral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 50,
+          "cmd": "ollama run mixtral:8x7b-text-v0.1-q8_0",
+          "source": "https://ollama.com/library/mixtral/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Mixtral-8x7B-v0.1",
+    "identity_note": "Maker repo mistralai/Mixtral-8x7B-v0.1 @fc7ac94: licence tag apache-2.0. 46,702,792,704 parameters from the Hugging Face safetensors metadata; active 12.9B per the Mixtral paper (2 of 8 experts). Released 2023-12: month the maker's Hugging Face repo was created (createdAt 2023-12-01). Pretrained Mixtral 8x7B; not Mixtral 8x7B Instruct. 46.7B total / 12.9B active parameters (sparse MoE, 2 of 8 experts). Ollama tags mixtral:8x7b-text-v0.1-q4_K_M, mixtral:8x7b-text-v0.1-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mixtral-8x7B-v0.1/blob/fc7ac94680e38d7348cfa806e51218e6273104b0/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "Mixtral-8x7B-v0.1"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "mixtral-8x7b"
+      }
+    ]
+  },
+  {
+    "id": "phind-codellama-34b-v2",
+    "name": "Phind CodeLlama 34B v2",
+    "provider": "Phind",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 34,
+    "active_b": 34,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run phind-codellama:34b-v2-q4_K_M",
+          "source": "https://ollama.com/library/phind-codellama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "cmd": "ollama run phind-codellama:34b-v2-q8_0",
+          "source": "https://ollama.com/library/phind-codellama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Phind/Phind-CodeLlama-34B-v2",
+    "identity_note": "Maker repo Phind/Phind-CodeLlama-34B-v2 @949f61e: licence tag llama2. Parameters: nominal size from the model name (no safetensors metadata in the repo) (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-28). Instruction fine-tune of Code Llama 34B (v2); not v1 or the -Python variant. Ollama tags phind-codellama:34b-v2-q4_K_M, phind-codellama:34b-v2-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/Phind/Phind-CodeLlama-34B-v2/blob/949f61e203f91b412efe8f679c798f09f0ff4b0c/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "Phind-CodeLlama-2 34b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "phind"
+      }
+    ]
+  },
+  {
+    "id": "stable-code-3b",
+    "name": "Stable Code 3B",
+    "provider": "Stability AI",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "stability-ai-community",
+    "params_b": 2.8,
+    "active_b": 2.8,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.7,
+          "cmd": "ollama run stable-code:3b-code-q4_K_M",
+          "source": "https://ollama.com/library/stable-code/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 3,
+          "cmd": "ollama run stable-code:3b-code-q8_0",
+          "source": "https://ollama.com/library/stable-code/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/stabilityai/stable-code-3b",
+    "identity_note": "Maker repo stabilityai/stable-code-3b @5cee3fa: licence tag other. 2,795,443,200 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-01: month the maker's Hugging Face repo was created (createdAt 2024-01-09). Base completion model; not stable-code-instruct-3b. Ollama tags stable-code:3b-code-q4_K_M, stable-code:3b-code-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/stabilityai/stable-code-3b/blob/5cee3fa2905e7a03c4a1b0bc02f39da7ceaa6cb5/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StableCode-3B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "stable-code 3b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StableCode-3B"
+      }
+    ]
+  },
+  {
+    "id": "starcoder",
+    "name": "StarCoder 15.5B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 15.82,
+    "active_b": 15.82,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/bigcode/starcoder",
+    "identity_note": "Comparison-only. Maker repo bigcode/starcoder @827cd77: licence tag bigcode-openrail-m. 15,819,446,272 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-04: month the maker's Hugging Face repo was created (createdAt 2023-04-24). StarCoder = StarCoderBase further trained on Python; not StarCoderBase and not StarCoder2.",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoder/blob/827cd7721231872c152e3faef5cae1b22964ed58/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "StarCoder 15b"
+      }
+    ]
+  },
+  {
+    "id": "starcoder2-15b",
+    "name": "StarCoder2 15B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 15.96,
+    "active_b": 15.96,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 9.9,
+          "cmd": "ollama run starcoder2:15b-q4_K_M",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 17,
+          "cmd": "ollama run starcoder2:15b-q8_0",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigcode/starcoder2-15b",
+    "identity_note": "Maker repo bigcode/starcoder2-15b @46d4474: licence tag bigcode-openrail-m. 15,957,889,024 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-02: month the maker's Hugging Face repo was created (createdAt 2024-02-20). Base model; not StarCoder2-15B-Instruct. Ollama tags starcoder2:15b-q4_K_M, starcoder2:15b-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoder2-15b/blob/46d44742909c03ac8cee08eb03fdebce02e193ec/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StarCoder2-15B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "StarCoder2 15b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StarCoder2-15B"
+      }
+    ]
+  },
+  {
+    "id": "starcoder2-3b",
+    "name": "StarCoder2 3B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 3.03,
+    "active_b": 3.03,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.8,
+          "cmd": "ollama run starcoder2:3b-q4_K_M",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 3.2,
+          "cmd": "ollama run starcoder2:3b-q8_0",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigcode/starcoder2-3b",
+    "identity_note": "Maker repo bigcode/starcoder2-3b @733247c: licence tag bigcode-openrail-m. 3,030,371,328 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-02: stated above. Base model. Released 2024-02 with the StarCoder 2 paper (HF repo created earlier, 2023-11-29). Ollama tags starcoder2:3b-q4_K_M, starcoder2:3b-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoder2-3b/blob/733247c55e3f73af49ce8e9c7949bf14af205928/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StarCoder2-3B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "StarCoder2 3b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StarCoder2-3B"
+      }
+    ]
+  },
+  {
+    "id": "starcoder2-7b",
+    "name": "StarCoder2 7B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 7.17,
+    "active_b": 7.17,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.4,
+          "cmd": "ollama run starcoder2:7b-q4_K_M",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.6,
+          "cmd": "ollama run starcoder2:7b-q8_0",
+          "source": "https://ollama.com/library/starcoder2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/bigcode/starcoder2-7b",
+    "identity_note": "Maker repo bigcode/starcoder2-7b @bb9afde: licence tag bigcode-openrail-m. 7,173,923,840 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-02: month the maker's Hugging Face repo was created (createdAt 2024-02-20). Base model. Ollama tags starcoder2:7b-q4_K_M, starcoder2:7b-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoder2-7b/blob/bb9afde76d7945da5745592525db122d4d729eb1/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StarCoder2-7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "StarCoder2 7b"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StarCoder2-7B"
+      }
+    ]
+  },
+  {
+    "id": "starcoderbase",
+    "name": "StarCoderBase 15.5B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 15.5,
+    "active_b": 15.5,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/bigcode/starcoderbase",
+    "identity_note": "Comparison-only. Maker repo bigcode/starcoderbase @88ec578: licence tag bigcode-openrail-m. Parameters: nominal size from the model name (no safetensors metadata in the repo) (dense, so active = total). Released 2023-05: month the maker's Hugging Face repo was created (createdAt 2023-05-03). StarCoderBase 15.5B (May 2023), trained on 80+ languages; the Python-fine-tuned StarCoder is a separate id (starcoder).",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoderbase/blob/88ec5781ad071a9d9e925cd28f327dea22eb5188/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StarCoderBase-15B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StarCoderBase-15B"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "starcoderbase-16b"
+      }
+    ]
+  },
+  {
+    "id": "starcoderbase-3b",
+    "name": "StarCoderBase 3B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 3,
+    "active_b": 3,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/bigcode/starcoderbase-3b",
+    "identity_note": "Comparison-only. Maker repo bigcode/starcoderbase-3b @e1c5ef4: licence tag bigcode-openrail-m. Parameters: nominal size from the model name (no safetensors metadata in the repo) (dense, so active = total). Released 2023-06: month the maker's Hugging Face repo was created (createdAt 2023-06-30). StarCoderBase (2023) 3B; not StarCoder2.",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoderbase-3b/blob/e1c5ef4ebb97afa0db09ec3e520f0487ca350bbe/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StarCoderBase-3B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StarCoderBase-3B"
+      }
+    ]
+  },
+  {
+    "id": "starcoderbase-7b",
+    "name": "StarCoderBase 7B",
+    "provider": "BigCode",
+    "category": "llm",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "bigcode-openrail-m",
+    "params_b": 7.53,
+    "active_b": 7.53,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/bigcode/starcoderbase-7b",
+    "identity_note": "Comparison-only. Maker repo bigcode/starcoderbase-7b @94e20e9: licence tag bigcode-openrail-m. 7,528,589,824 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2023-07: month the maker's Hugging Face repo was created (createdAt 2023-07-26). StarCoderBase (2023) 7B; not StarCoder2.",
+    "identity_sources": [
+      "https://huggingface.co/bigcode/starcoderbase-7b/blob/94e20e98e189b1d6dccd56e932667bd85cc7c393/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2402.19173v1",
+        "reported_label": "StarCoderBase-7B"
+      },
+      {
+        "source": "https://arxiv.org/html/2405.04324v1",
+        "reported_label": "StarCoderBase-7B"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "starcoderbase-7b"
+      }
+    ]
+  },
+  {
+    "id": "text-davinci-002",
+    "name": "GPT-3.5 text-davinci-002",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2022-03",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. OpenAI completions model text-davinci-002 (InstructGPT-era GPT-3.5). OpenAI's deprecations page lists its shutdown on 2024-01-04. Release month from the snapshot date in the model name (text-davinci-002: March 2022 API release; text-davinci-003: 2022-11-28).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2312.06281v2",
+        "reported_label": "OpenAI text-davinci-002"
+      }
+    ]
+  },
+  {
+    "id": "text-davinci-003",
+    "name": "GPT-3.5 text-davinci-003",
+    "provider": "OpenAI",
+    "category": "llm",
+    "released": "2022-11",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": null,
+    "local": null,
+    "identity_note": "Comparison-only. OpenAI completions model text-davinci-003. OpenAI's deprecations page lists its shutdown on 2024-01-04. Release month from the snapshot date in the model name (text-davinci-002: March 2022 API release; text-davinci-003: 2022-11-28).",
+    "identity_sources": [
+      "https://developers.openai.com/api/docs/deprecations"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2312.06281v2",
+        "reported_label": "OpenAI text-davinci-003"
+      }
+    ]
+  },
+  {
+    "id": "wizardcoder-33b-v1-1",
+    "name": "WizardCoder 33B V1.1",
+    "provider": "WizardLM",
+    "category": "llm",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "msft-research",
+    "params_b": 33.34,
+    "active_b": 33.34,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run wizardcoder:33b-v1.1-q4_K_M",
+          "source": "https://ollama.com/library/wizardcoder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 35,
+          "cmd": "ollama run wizardcoder:33b-v1.1-q8_0",
+          "source": "https://ollama.com/library/wizardcoder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/WizardLM/WizardCoder-33B-V1.1",
+    "identity_note": "Maker repo WizardLM/WizardCoder-33B-V1.1 @22d03e1: licence tag None. 33,342,991,360 parameters from the Hugging Face safetensors metadata (dense, so active = total). Released 2024-01: month the maker's Hugging Face repo was created (createdAt 2024-01-04). Fine-tune of DeepSeek-Coder 33B base (Jan 2024). The maker card lists its licence as MSFTResearch (link to the WizardMath LICENSE); repo now served under WizardLMTeam/. Ollama tags wizardcoder:33b-v1.1-q4_K_M, wizardcoder:33b-v1.1-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/WizardLM/WizardCoder-33B-V1.1/blob/22d03e16bd052cec88228e17e832f851391e3565/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "WizardCoder-1.1 33b"
+      }
+    ]
+  },
+  {
+    "id": "wizardcoder-python-13b-v1-0",
+    "name": "WizardCoder Python 13B V1.0",
+    "provider": "WizardLM",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 13,
+    "active_b": 13,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 7.9,
+          "cmd": "ollama run wizardcoder:13b-python-q4_K_M",
+          "source": "https://ollama.com/library/wizardcoder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 14,
+          "cmd": "ollama run wizardcoder:13b-python-q8_0",
+          "source": "https://ollama.com/library/wizardcoder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0",
+    "identity_note": "Maker repo WizardLM/WizardCoder-Python-13B-V1.0 @5ac6748: licence tag llama2. Parameters: nominal size from the model name (no safetensors metadata in the repo) (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-26). Evol-Instruct fine-tune of Code Llama 13B Python. Ollama tags wizardcoder:13b-python-q4_K_M, wizardcoder:13b-python-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "wizard-13b"
+      }
+    ]
+  },
+  {
+    "id": "wizardcoder-python-34b-v1-0",
+    "name": "WizardCoder Python 34B V1.0",
+    "provider": "WizardLM",
+    "category": "llm",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "llama2",
+    "params_b": 34,
+    "active_b": 34,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 20,
+          "cmd": "ollama run wizardcoder:34b-python-q4_K_M",
+          "source": "https://ollama.com/library/wizardcoder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 36,
+          "cmd": "ollama run wizardcoder:34b-python-q8_0",
+          "source": "https://ollama.com/library/wizardcoder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0",
+    "identity_note": "Maker repo WizardLM/WizardCoder-Python-34B-V1.0 @897fc6d: licence tag llama2. Parameters: nominal size from the model name (no safetensors metadata in the repo) (dense, so active = total). Released 2023-08: month the maker's Hugging Face repo was created (createdAt 2023-08-26). Evol-Instruct fine-tune of Code Llama 34B Python. Ollama tags wizardcoder:34b-python-q4_K_M, wizardcoder:34b-python-q8_0 (sizes as listed on the tags page, observed 2026-09-29).",
+    "identity_sources": [
+      "https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/blob/897fc6d9e12136c68c441b2350d015902c144b20/README.md"
+    ],
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2403.19114v1",
+        "reported_label": "WizardCoder 34b"
+      },
+      {
+        "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
+        "reported_label": "wizard-34b"
+      }
+    ]
   }
 ]

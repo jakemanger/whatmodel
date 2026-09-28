@@ -6,7 +6,7 @@
 
 Upstage · released 2023-12 · 10.7B params · cc-by-nc-4.0
 
-**score 28.6** ±2.2 · #306 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.2** ±2.5 · #329 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1152.1    28.2   2026-09-13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 28.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1152.1    30.7   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                 3% ▇
+                        weighted average                = 31.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle            50.0                 2
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~6.92GB   28.6
-8-bit q8_0    ~13.34GB   28.6
+4-bit q4_k_m   ~6.92GB   31.2
+8-bit q8_0    ~13.34GB   31.2
 </pre>
 
 ```sh

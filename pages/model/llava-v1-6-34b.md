@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 30.8** ±3.1 · #295 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.5** ±3.1 · #320 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  964.5    30.0   2026-09-13   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  964.5    31.7   2026-09-13   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 30.8
+                        weighted average                       = 32.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   30.8
-8-bit q8_0    ~42.26GB   30.8
+4-bit q4_k_m  ~21.38GB   32.5
+8-bit q8_0    ~42.26GB   32.5
 </pre>
 
 ```sh

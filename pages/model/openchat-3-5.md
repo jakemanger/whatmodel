@@ -6,7 +6,7 @@
 
 OpenChat · released 2023-10 · 7B params · apache-2.0
 
-**score 32.5** ±2.2 · #285 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.7** ±2.1 · #313 of 361 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -15,22 +15,23 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) compar
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1182.7    32.1   2026-09-13   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 32.5
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1182.7    34.5   2026-09-13   67% ▇▇▇▇▇▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   37.1%    31.0   2024-01-03   31% ▇▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.7GB   32.5
-8-bit q8_0    ~8.9GB   32.5
+4-bit q4_k_m  ~4.7GB   33.7
+8-bit q8_0    ~8.9GB   33.7
 </pre>
 
 ```sh

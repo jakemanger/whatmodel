@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-11 · 1000B params (32B active) · modified-mit
 
-**score 63.0** ±1.3 · #89 of 329 · from 7 benchmark results across 4 sources
+**score 64.3** ±1.3 · #89 of 361 · from 7 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1430.1    63.6   2026-09-13   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1322.9    60.3   2026-09-24   24% ▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     84.2%    64.4   2025-11-11   12% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         83.1%    63.3   2025-11-13    9% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    68.1   2025-12-10    2% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   35.7%    64.8   2026-01-17   11% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   70.7%    63.7   2025-11-09    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1322.9    61.7   2026-09-24   28% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1430.1    65.1   2026-09-13   28% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     84.2%    65.8   2025-11-11   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         83.1%    64.7   2025-11-13   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    69.5   2025-12-10    2% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   35.7%    66.3   2026-01-17   12% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   70.7%    65.1   2025-11-09    7% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 63.0
+                        weighted average                        = 64.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,9 +39,9 @@ api (Amazon Bedrock) · $1.07/M blended · $0.6 in / $2.5 out per 1M tokens · [
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~600.5GB   63.0
-2-bit ud-q2_k_xl  ~300.5GB   63.0
-1-bit ud-iq1_s    ~150.5GB   63.0
+4-bit ud-q4_k_xl  ~600.5GB   64.3
+2-bit ud-q2_k_xl  ~300.5GB   64.3
+1-bit ud-iq1_s    ~150.5GB   64.3
 </pre>
 
 ```sh

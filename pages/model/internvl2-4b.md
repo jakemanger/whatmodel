@@ -6,7 +6,7 @@
 
 Shanghai AI Laboratory (OpenGVLab) · released 2024-07 · 4.15B params · mit
 
-**score 30.1** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.8** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  958.5    29.2   2026-09-13   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  958.5    30.9   2026-09-13   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 30.1
+                        weighted average                       = 31.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

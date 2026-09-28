@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 30.5B params (3.3B active) · apache-2.0
 
-**score 52.3** ±1.7 · #172 of 329 · from 4 benchmark results across 2 sources
+**score 54.3** ±1.8 · #167 of 361 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1326.9    50.4   2026-09-13   59% ▇▇▇▇▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               61.7%    55.4   2026-08-30   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   62.8%    58.4   2026-08-28   16% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       4.0%    39.1   2026-08-30    3% ▇
-prior                   pull toward the middle              50.0                 1% ▇
-                        weighted average                  = 52.3
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1326.9    52.3   2026-09-13   52% ▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               61.7%    57.0   2026-08-30   23% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   62.8%    59.9   2026-08-28   19% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       4.0%    40.9   2026-08-30    4% ▇
+prior                   pull toward the middle              50.0                 2% ▇
+                        weighted average                  = 54.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ api (Alibaba Cloud Model Studio) · $0.35/M blended · $0.2 in / $0.8 out per 1M
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~18.8GB   52.3
-8-bit q8_0    ~37.1GB   52.3
+4-bit q4_k_m  ~18.8GB   54.3
+8-bit q8_0    ~37.1GB   54.3
 </pre>
 
 ```sh

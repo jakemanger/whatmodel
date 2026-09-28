@@ -6,7 +6,7 @@
 
 Thinking Machines · released 2026-07 · 975B params (41B active) · apache-2.0
 
-**score 64.4** ±0.9 · #71 of 329 · from 8 benchmark results across 2 sources
+**score 65.8** ±0.9 · #72 of 361 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,16 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   33.3%    64.0   2026-08-06   34% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       4.9%    63.1   2026-08-06   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                88.3%    66.7   2026-08-05    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    88.9%    65.6   2026-08-05    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           40.3%    67.0   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    68.7   2026-08-05    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1440.1    64.9   2026-09-13   18% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1411.5    64.4   2026-09-24   13% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   33.3%    65.6   2026-08-06   37% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       4.9%    64.5   2026-08-06   21% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                88.3%    68.2   2026-08-05    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    88.9%    67.0   2026-08-05    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           40.3%    68.5   2026-08-27    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    70.1   2026-08-05    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1411.5    65.8   2026-09-24   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1440.1    66.3   2026-09-13   13% ▇▇
 prior                   pull toward the middle               50.0                 0% ▇
-                        weighted average                   = 64.4
+                        weighted average                   = 65.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -68,9 +68,9 @@ api (Deep Infra) · $1.72/M blended · $0.95 in / $4.05 out per 1M tokens · [de
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~585.5GB   64.4
-2-bit ud-q2_k_xl     ~293GB   64.4
-1-bit ud-iq1_s    ~146.75GB   64.4
+4-bit ud-q4_k_xl   ~585.5GB   65.8
+2-bit ud-q2_k_xl     ~293GB   65.8
+1-bit ud-iq1_s    ~146.75GB   65.8
 </pre>
 
 ```sh

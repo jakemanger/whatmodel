@@ -6,7 +6,7 @@
 
 Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
-**score 73.3** ±2.6 · #13 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.6** ±2.5 · #13 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1619.4    74.0   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1619.4    75.3   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               50.0                 3% ▇
-                        weighted average                   = 73.3
+                        weighted average                   = 74.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

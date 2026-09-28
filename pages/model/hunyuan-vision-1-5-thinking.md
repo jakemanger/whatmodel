@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · closed weights
 
-**score 57.6** ±1.8 · #132 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.8** ±2.0 · #134 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1395.1    59.1   2026-09-13   66% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1156.0    54.6   2026-09-13   32% ▇▇▇▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 57.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1395.1    60.7   2026-09-13   60% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1156.0    56.1   2026-09-13   38% ▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 58.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

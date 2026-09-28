@@ -4,20 +4,50 @@
 
 # Phi-1 (1.3B)
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Microsoft · released 2023-09 · 1.42B params · mit
+
+**score 16.6** ±3.6 · #360 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test       result  reported by  source
-HumanEval   50.6%  lab          <a href="https://arxiv.org/html/2306.11644v2">Textbooks Are All You Need</a>
-MBPP        55.5%  lab          <a href="https://arxiv.org/html/2306.11644v2">Textbooks Are All You Need</a>
+source                  test                    score  implies  date        weight
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              13.1%    11.5   2024-01-03   49% ▇▇▇▇▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              21.7%    17.8   2024-01-03   45% ▇▇▇▇▇
+prior                   pull toward the middle           50.0                 6% ▇
+                        weighted average               = 16.6
 </pre>
 
-<sub>Licences: Textbooks Are All You Need ([CC BY 4.0](../../licenses/paper-2306.11644v2-CC-BY-4.0.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test       score  why
+Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">HumanEval</a>  50.6%  too few models have it yet
+Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>       55.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
+<pre>
+download       size  score
+4-bit fp16  ~2.84GB   16.6
+</pre>
+
 ```sh
+# 4-bit fp16
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='microsoft/phi-1')('def fibonacci(n):', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/phi-1)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/phi-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

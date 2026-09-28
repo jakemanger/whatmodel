@@ -6,7 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 43.1** ±3.7 · #237 of 329 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.6** ±3.7 · #239 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    42.6   2025-01-27   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    44.2   2025-01-27   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior     pull toward the middle           50.0                 6% ▇
-          weighted average               = 43.1
+          weighted average               = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior     pull toward the middle           50.0                 6% ▇
 
 <pre>
 download                      size  score
-4-bit fp32 · nvidia only  ~37.08GB   43.1
+4-bit fp32 · nvidia only  ~37.08GB   44.6
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 38.4** ±2.5 · #256 of 329 · from 4 benchmark results across 2 sources
+**score 40.5** ±2.5 · #261 of 361 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     9.3%    21.2   2026-08-28   44% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    54.8   2026-08-28   34% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    39.1   2026-08-28    7% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.9%    51.7   2025-07-22   12% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     9.3%    22.9   2026-08-28   43% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    56.4   2026-08-28   35% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    40.9   2026-08-28    7% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.9%    53.2   2025-07-22   12% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 38.4
+                        weighted average                       = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -49,8 +49,8 @@ api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [no
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.41GB   38.4
-8-bit q8_0    ~10.33GB   38.4
+4-bit q4_k_m   ~5.41GB   40.5
+8-bit q8_0    ~10.33GB   40.5
 </pre>
 
 ```sh

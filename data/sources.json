@@ -9841,7 +9841,7 @@
     "checked": "2026-09-28",
     "attribution": "Samuel J. Paech (2024). EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models. arXiv:2312.06281v2. https://arxiv.org/abs/2312.06281v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
     "quote": "The arXiv abstract page for 2312.06281v2 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
-    "scope": "Table 1 (EQ-Bench v1 scores, author's own runs), row 'OpenAI text-davinci-001' only in this batch. text-davinci-002/003 are held back because Table 1 and Table 6 disagree with Tables 3-5 about which of the two scored 43.73 vs 39.44; Curie/ADA used a simplified prompt (Section 4.1) and Babbage failed. The chat-model rows are valid author runs and are listed in the lane report for the lane that owns those models.",
+    "scope": "Table 1 (EQ-Bench v1 scores, author's own runs; Section 4.1 headline table), used consistently for every row. Rows: OpenAI text-davinci-001 (old-llm lane) and, in the chat-code lane, gpt-4-0613, gpt-4-0314, gpt-3.5-turbo-0613 ('gpt-3.5-0613'), gpt-3.5-turbo-0301, text-davinci-003, text-davinci-002, Llama-2-70b/13b/7b-chat, Yi-34B-Chat, Qwen-14B-Chat, openchat_3.5, vicuna-33b-v1.3, Koala 13B. Table 1 is preferred over the appendix correlation Tables 3-5, which print different values for several models (e.g. gpt-4-0314 60.73 vs 53.39) and swap text-davinci-002/003; Table 6 repeat runs agree with Table 1. Not imported: 'Anthropic Claude2' (snapshot not named), Curie/ADA (simplified prompt, historical set), Babbage (fail), community fine-tunes and Qwen-72B-Chat (not in the catalogue).",
     "icon": "arxiv.org"
   },
   {
@@ -10237,5 +10237,135 @@
     "icon": "arxiv.org",
     "quote": "arXiv abstract page for 2605.10434v1 links \"Rights to this article\" to http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0). Appendix R also states the released WorldReasonBench/WorldRewardBench assets will be CC-BY 4.0; only numbers printed in the CC BY paper are used.",
     "scope": "Only the authors' own expert human preference ranking: Table 4 (S4.T4) 'Human Elo' (Bradley-Terry with Davidson ties over ~6K expert preference pairs from 15 trained annotators, WorldRewardBench). Judge Elo, QA accuracy and Score_PR columns (Qwen3.5-27B automatic metrics) are not used. Withheld: Kling (version/tier not stated), UniVideo (not in catalogue, one row), Sora2-12s (second duration of the same Sora 2 model; the 8-second setting is used)."
+  },
+  {
+    "id": "paper-2403.19114v1",
+    "name": "Top Leaderboard Ranking = Top Coding Proficiency, Always? EvoEval: Evolving Coding Benchmarks via LLM — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2403.19114v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2403.19114v1",
+    "license_url": "/licenses/paper-2403.19114v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Chunqiu Steven Xia, Yinlin Deng, Lingming Zhang (2024). Top Leaderboard Ranking = Top Coding Proficiency, Always? EvoEval: Evolving Coding Benchmarks via LLM. arXiv:2403.19114v1. https://arxiv.org/abs/2403.19114v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2403.19114v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 2 (pass@1 on HumanEval and the EvoEval overall column) with model identities from Table 5; the authors 'evaluate 51 popular state-of-the-art LLMs' themselves with greedy decoding (Section 4, Appendix A). Imported: HumanEval pass@1 and the printed EvoEval overall score. Not imported: bracketed HumanEval+ values (same generations re-scored), the five sub-benchmark columns separately, rows with unnamed API snapshots (gemini-1.0-pro), models outside the catalogue (text-bison-001, XwinCoder, Code Millenials, Speechless-CL, Magicoder-S-CL, Qwen-7B-Chat), Mistral-7B-v0.1 base (historical comparison set).",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2402.19173v1",
+    "name": "StarCoder 2 and The Stack v2: The Next Generation — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2402.19173v1"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "terms_url": "https://arxiv.org/abs/2402.19173v1",
+    "license_url": "/licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Anton Lozhkov, Raymond Li, Loubna Ben Allal et al. (BigCode, 2024). StarCoder 2 and The Stack v2: The Next Generation. arXiv:2402.19173v1. https://arxiv.org/abs/2402.19173v1\nCC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2402.19173v1 links the licence 'http://creativecommons.org/licenses/by-sa/4.0/' in its licence field, and the HTML version header states 'License: CC BY-SA 4.0'. Share-alike: rows adapted from this paper must be offered under CC BY-SA 4.0 (see adapted_data_file).",
+    "scope": "Section 7 base-model comparisons run by the BigCode authors: Table 9 HumanEval and MBPP pass@1 (greedy, EvalPlus framework), Table 11 DS-1000 overall (completion, 40 samples, T=0.2), Table 14 GSM8K (PAL, 8-shot), Table 15 CRUXEval pass@1 for the StarCoder2 rows only. Not imported: HumanEval+/MBPP+ (same generations re-scored), MultiPL-E (no printed average), Table 13 CanItEdit and Table 16 FIM (captions say other models' results are taken from other papers), Table 15 baseline rows (identical to the CRUXEval authors' published values, so treated as copied).",
+    "icon": "arxiv.org",
+    "adapter_license": "CC-BY-SA-4.0",
+    "publication_requirement": "Share-alike: retain attribution, change notice and licence when displaying or serving these rows; adapted rows must be offered under CC BY-SA 4.0.",
+    "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "adapted_data_file": "/data/llm-new-bysa.json"
+  },
+  {
+    "id": "paper-2405.04324v1",
+    "name": "Granite Code Models: A Family of Open Foundation Models for Code Intelligence — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2405.04324v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2405.04324v1",
+    "license_url": "/licenses/paper-2405.04324v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Mayank Mishra, Matt Stallone, Gaoyuan Zhang et al. (IBM, 2024). Granite Code Models: A Family of Open Foundation Models for Code Intelligence. arXiv:2405.04324v1. https://arxiv.org/abs/2405.04324v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2405.04324v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Section 6: 'For all the benchmarks, we evaluate the baseline models (including ours) using the same script and environment for fair comparison.' Imported: Table 3 HumanEvalSynthesize 6-language average (base and instruct), Table 5 MBPP (base), Table 14 CRUXEval-I/O pass@1 (base), Table 15 MATH and GSM8K chain-of-thought (base). Not imported: MBPP+ (re-scoring), DS-1000 Table 7 (several baseline rows identical to the StarCoder 2 paper), Llama-3-70B base (authors flag a failed Python run inside the average), models outside the catalogue with a single evaluator (Mistral-7B-v0.2 base, Mixtral-8x22B base, Llama-3-8B base, OctoCoder, Llemma), other tables.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2308.12950v3",
+    "name": "Code Llama: Open Foundation Models for Code — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2308.12950v3"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2308.12950v3",
+    "license_url": "/licenses/paper-2308.12950v3-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Baptiste Rozière, Jonas Gehring, Fabian Gloeckle et al. (Meta, 2024). Code Llama: Open Foundation Models for Code. arXiv:2308.12950v3. https://arxiv.org/abs/2308.12950v3\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2308.12950v3 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 2 rows for Meta's own Code Llama, Code Llama - Python and Code Llama - Instruct 7B/13B/34B/70B: HumanEval pass@1 (zero-shot, greedy) and MBPP pass@1 (3-shot, greedy). Not imported: rows for other models (caption: 'Results for other models as provided by' other papers), Llama 2 base rows (historical comparison set / bridge caution), Unnatural Code Llama (unreleased).",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2406.11409v2",
+    "name": "CodeGemma: Open Code Models Based on Gemma — authors' own runs",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2406.11409v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2406.11409v2",
+    "license_url": "/licenses/paper-2406.11409v2-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "CodeGemma Team, Heri Zhao, Jeffrey Hui et al. (Google, 2024). CodeGemma: Open Code Models Based on Gemma. arXiv:2406.11409v2. https://arxiv.org/abs/2406.11409v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2406.11409v2 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
+    "scope": "Table 3 HumanEval and MBPP for Google's own CodeGemma 2B PT, 7B PT, 7B IT and Gemma 2B/7B PT (v1.0 checkpoints). Not imported: CodeGemma 1.1 rows (would be new single-evaluator models), Table 5 (collected from other papers), other tables.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "arena-hard-auto-readme-v0-1",
+    "name": "Arena-Hard-Auto v0.1 leaderboard (repository README, pre-v2)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/LICENSE",
+    "license_url": "/licenses/arena-hard-auto-v0-1-Apache-2.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "LMArena / Arena-Hard-Auto authors (Tianle Li, Wei-Lin Chiang et al.), github.com/lmarena/arena-hard-auto, Apache-2.0. Selected rows of the Arena-Hard-Auto v0.1 README leaderboard without style control; percentages converted to fractions; catalogue IDs mapped. No endorsement.",
+    "quote": "Root LICENSE in the same pinned repository commit (3071ef95d9) is the Apache License 2.0; the v0.1 leaderboard tables are part of the repository README (documentation) with no separate licence. Same reuse basis as the already-approved arena-hard-auto-readme-v2 entry. The lmarena.ai / arena.ai websites are not used.",
+    "scope": "README section 'Leaderboard' ('The following leaderboard has no style control', Updated: 11/14 = 2024-11-14): Arena-Hard-Auto v0.1 win rate vs gpt-4-0314, GPT-4-Turbo judge. The style-control table is not imported (same answers and judgments, different aggregation). Baseline gpt-4-0314 (50 by construction), unnamed snapshots and unreleased/system entries are not imported.",
+    "icon": "github.com"
+  },
+  {
+    "id": "cruxeval-published-results",
+    "name": "CRUXEval published evaluation results (authors' generations and scores)",
+    "kind": "dataset",
+    "match": [
+      "github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "terms_url": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/LICENSE",
+    "license_url": "/licenses/cruxeval-published-results-MIT.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Alex Gu, Baptiste Rozière, Hugh Leather, Armando Solar-Lezama, Gabriel Synnaeve, Sida I. Wang (Meta AI). CRUXEval, github.com/facebookresearch/cruxeval, MIT. Selected pass@1 fields from samples/evaluation_results.zip; percentages divided by 100; catalogue IDs mapped. No endorsement.",
+    "quote": "README at commit 190faf16d1: 'CRUXEval is MIT licensed, as found in the LICENSE file.' and 'We also open-source generations and outputs for the models we display on the leaderboard ... To access the scored versions of the generations run unzip evaluation_results.zip.' The zip is committed in the same repository (added in the initial commit 10d71b4, 2024-01-03). The CRUXEval paper itself (arXiv 2401.03065) is under the default arXiv licence and is not used; the separate leaderboard website is not used.",
+    "scope": "samples/evaluation_results.zip members *_temp0.2_input.json and *_temp0.2_output.json (direct prediction, no chain-of-thought), field pass_at_1. Model identities from inference/scripts/run_input_prediction.sh and openai/openai_run.py in the same commit. Not imported: temperature-0.8 / pass@5 and +cot members, codetulu-2-34b (not in the catalogue), Mistral-7B-v0.1 and phi-1.5 (historical comparison set).",
+    "icon": "github.com"
   }
 ]

@@ -6,7 +6,7 @@
 
 Mistral · released 2024-05 · 7.25B params · apache-2.0
 
-**score 29.1** ±1.8 · #303 of 329 · from 4 benchmark results across 1 source
+**score 31.0** ±1.7 · #331 of 361 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               3.6%    30.3   2025-01-27   56% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              15.2%    21.2   2025-01-27   22% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.3%    31.6   2026-08-30   17% ▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    39.1   2026-08-30    3% ▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               3.6%    32.1   2025-01-27   58% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              15.2%    22.9   2025-01-27   20% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.3%    33.3   2026-08-30   17% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    40.9   2026-08-30    3% ▇
 prior     pull toward the middle             50.0                 1% ▇
-          weighted average                 = 29.1
+          weighted average                 = 31.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior     pull toward the middle             50.0                 1% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   29.1
-8-bit q8_0     ~9.2GB   29.1
+4-bit q4_k_m  ~4.85GB   31.0
+8-bit q8_0     ~9.2GB   31.0
 </pre>
 
 ```sh

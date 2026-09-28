@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 49.2** ±3.1 · #194 of 329 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.7** ±3.1 · #197 of 361 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  47.6%    48.3   2026-05-02   56% ▇▇▇▇▇▇▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  55.1%    50.4   2026-09-25   39% ▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  47.6%    49.9   2026-05-02   57% ▇▇▇▇▇▇▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  55.1%    51.9   2026-09-25   39% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 49.2
+                        weighted average                       = 50.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mi
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~8.84GB   49.2
-8-bit q8_0    ~17.18GB   49.2
+4-bit q4_k_m   ~8.84GB   50.7
+8-bit q8_0    ~17.18GB   50.7
 </pre>
 
 ```sh
