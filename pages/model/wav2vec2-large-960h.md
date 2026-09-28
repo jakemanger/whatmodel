@@ -6,7 +6,7 @@
 
 Meta · released 2020-06 · 0.32B params · apache-2.0
 
-**score 8.7** ±4.0 · #102 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 9.1** ±3.9 · #107 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  26.8%     5.9   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  26.8%     6.3   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  16.5%    15.6   2024-12-09    4% ▇
 prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                        = 8.7
+                      weighted average                        = 9.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~2.04GB    8.7
+fp32     ~2.04GB    9.1
 </pre>
 
 ```sh

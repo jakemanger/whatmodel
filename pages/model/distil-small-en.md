@@ -6,7 +6,7 @@
 
 Hugging Face (Distil-Whisper) · released 2023-12 · 0.17B params · mit
 
-**score 49.9** ±4.0 · #73 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.9** ±3.9 · #75 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.6%    49.9   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.6%    50.0   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 6% ▇
                       weighted average                       = 49.9
 </pre>

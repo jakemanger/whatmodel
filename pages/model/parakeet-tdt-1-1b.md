@@ -6,29 +6,30 @@
 
 NVIDIA · released 2024-01 · 1.1B params · cc-by-4.0
 
-**score 56.0** ±2.8 · #40 of 105 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.9** ±2.3 · #28 of 110 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.2%    55.3   2026-03-26   52% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    57.4   2026-03-26   45% ▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 3% ▇
-                      weighted average                       = 56.0
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    57.4   2026-03-26   31% ▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.2%    55.3   2026-03-26   27% ▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">LibriSpeech test-clean WER</a>       1.4%    63.0   2026-09-15   40% ▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 2% ▇
+                        weighted average                       = 58.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.78GB   56.0
+fp32 · nvidia only  ~5.78GB   58.9
 </pre>
 
 ```sh

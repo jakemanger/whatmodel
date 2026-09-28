@@ -6,7 +6,7 @@
 
 Efficient-Speech (LiteASR) · released 2025-02 · 0.66B params · apache-2.0
 
-**score 53.3** ±4.0 · #56 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.4** ±3.9 · #57 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.8%    53.6   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 53.3
+                      weighted average                       = 53.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~2.08GB   53.3
+fp16 · nvidia only  ~2.08GB   53.4
 </pre>
 
 ```sh

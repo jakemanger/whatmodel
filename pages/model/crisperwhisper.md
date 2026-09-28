@@ -6,7 +6,7 @@
 
 Nyra Health · released 2024-08 · 1.61B params · cc-by-nc-4.0
 
-**score 58.7** ±4.0 · #28 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.7** ±3.9 · #31 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

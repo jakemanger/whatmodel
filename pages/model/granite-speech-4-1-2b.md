@@ -6,7 +6,7 @@
 
 IBM · released 2026-04 · 2.31B params · apache-2.0
 
-**score 58.9** ±4.8 · #26 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.5** ±2.9 · #10 of 110 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,14 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  73.5%    59.8   2026-09-10   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                 9% ▇
-                        weighted average                       = 58.9
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json">LibriSpeech test-clean WER</a>       1.3%    64.1   2026-09-15   66% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  73.5%    60.3   2026-09-10   30% ▇▇▇▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 62.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt))</sub>
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -36,8 +37,8 @@ IBM Granite Speech 4.…  <a href="https://huggingface.co/ibm-granite/granite-sp
 
 <pre>
 version               needs  score
-bf16 · mac only     ~6.04GB   58.9
-bf16 · nvidia only  ~6.04GB   58.9
+bf16 · mac only     ~6.04GB   62.5
+bf16 · nvidia only  ~6.04GB   62.5
 </pre>
 
 ```sh

@@ -6,25 +6,26 @@
 
 NVIDIA · released 2024-01 · 1.07B params · cc-by-4.0
 
-**score 56.1** ±2.1 · #39 of 105 · from 4 benchmark results across 2 sources
+**score 58.1** ±1.9 · #33 of 110 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.7%    54.1   2026-03-26   30% ▇▇▇▇
-                       <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.8   2026-03-26   26% ▇▇▇
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  26.8%    57.1   2025-11-18   24% ▇▇▇
-                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.6%    57.4   2025-11-18   19% ▇▇
-prior                  pull toward the middle                   49.7                 2% ▇
-                       weighted average                       = 56.1
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.8   2026-03-26   21% ▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.7%    54.1   2026-03-26   19% ▇▇
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.6%    58.1   2025-11-18   16% ▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  26.8%    57.8   2025-11-18   16% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json">LibriSpeech test-clean WER</a>       1.5%    62.3   2026-09-15   27% ▇▇▇
+prior                   pull toward the middle                   49.7                 1% ▇
+                        weighted average                       = 58.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
 
 <details><summary>Not counted (9)</summary>
 
@@ -34,7 +35,7 @@ nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test…</a>   5.8%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, …</a>  14.1%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER</a>             10.0%  too few models have it yet
-nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-clean WER</a>       1.5%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-clean WER</a>       1.5%  another source's result is used
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER</a>       2.5%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER</a>              3.1%  too few models have it yet
 nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form)</a>   3.9%  too few models have it yet
@@ -47,7 +48,7 @@ nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.64GB   56.1
+fp32 · nvidia only  ~5.64GB   58.1
 </pre>
 
 ```sh

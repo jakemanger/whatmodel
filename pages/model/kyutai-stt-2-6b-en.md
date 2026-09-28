@@ -6,7 +6,7 @@
 
 Kyutai · released 2025-06 · 2.6B params · cc-by-4.0
 
-**score 58.4** ±2.9 · #30 of 105 · from 3 benchmark results across 2 sources
+**score 58.9** ±2.8 · #27 of 110 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    56.5   2026-02-11   25% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    56.7   2026-02-11   25% ▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    60.8   2026-03-26   47% ▇▇▇▇▇▇
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    57.5   2026-02-11   25% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    57.7   2026-02-11   24% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    60.8   2026-03-26   48% ▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 3% ▇
-                      weighted average                       = 58.4
+                      weighted average                       = 58.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.74GB   58.4
-bf16 · mac only     ~6.74GB   58.4
+bf16 · nvidia only  ~6.74GB   58.9
+bf16 · mac only     ~6.74GB   58.9
 </pre>
 
 ```sh

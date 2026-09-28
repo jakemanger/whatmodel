@@ -6,7 +6,7 @@
 
 IBM · released 2025-06 · 3.01B params · apache-2.0
 
-**score 62.3** ±4.0 · #10 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.4** ±3.9 · #11 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    63.2   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 62.3
+                      weighted average                       = 62.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~7.72GB   62.3
+bf16 · nvidia only  ~7.72GB   62.4
 </pre>
 
 ```sh

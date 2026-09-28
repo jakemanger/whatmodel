@@ -20012,5 +20012,145 @@
       }
     ],
     "identity_note": "latent-consistency/lcm-ssd-1b (LCM distillation of SSD-1B). Memory estimated as for SSD-1B (1.3B)."
+  },
+  {
+    "id": "whisper-tiny",
+    "name": "Whisper tiny",
+    "provider": "OpenAI",
+    "category": "stt",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.039,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model tiny",
+          "source": "https://github.com/openai/whisper",
+          "gb": 0.6,
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-tiny')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-tiny",
+          "gb": 0.7,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-tiny",
+      "https://github.com/openai/whisper"
+    ],
+    "identity_note": "Multilingual tiny checkpoint (openai/whisper-tiny@169d4a4). Hugging Face mirror created 2022-09-26 with the Whisper release (arXiv 2212.04356). Multilingual checkpoint (openai-whisper name 'tiny'), distinct from the English-only tiny.en. Params from the Whisper README size table.",
+    "recovered_original": false
+  },
+  {
+    "id": "whisper-base",
+    "name": "Whisper base",
+    "provider": "OpenAI",
+    "category": "stt",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.074,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model base",
+          "source": "https://github.com/openai/whisper",
+          "gb": 0.7,
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-base')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-base",
+          "gb": 0.9,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-base",
+      "https://github.com/openai/whisper"
+    ],
+    "identity_note": "Multilingual base checkpoint (openai/whisper-base@e37978b). Hugging Face mirror created 2022-09-26 with the Whisper release (arXiv 2212.04356). Multilingual checkpoint (openai-whisper name 'base'), distinct from the English-only base.en. Params from the Whisper README size table.",
+    "recovered_original": false
+  },
+  {
+    "id": "whisper-small",
+    "name": "Whisper small",
+    "provider": "OpenAI",
+    "category": "stt",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.244,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model small",
+          "source": "https://github.com/openai/whisper",
+          "gb": 1.1,
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-small')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-small",
+          "gb": 1.7,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-small",
+      "https://github.com/openai/whisper"
+    ],
+    "identity_note": "Multilingual small checkpoint (openai/whisper-small@973afd2). Hugging Face mirror created 2022-09-26 with the Whisper release (arXiv 2212.04356). Multilingual checkpoint (openai-whisper name 'small'), distinct from the English-only small.en. Params from the Whisper README size table.",
+    "recovered_original": false
+  },
+  {
+    "id": "whisper-medium",
+    "name": "Whisper medium",
+    "provider": "OpenAI",
+    "category": "stt",
+    "released": "2022-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.769,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "cmd": "uvx --from openai-whisper whisper audio.mp3 --model medium",
+          "source": "https://github.com/openai/whisper",
+          "gb": 2.3,
+          "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "cmd": "uv run --with transformers --with torch python -c \"from transformers import pipeline; print(pipeline('automatic-speech-recognition', model='openai/whisper-medium')('audio.wav', return_timestamps=True)['text'])\"",
+          "source": "https://huggingface.co/openai/whisper-medium",
+          "gb": 4.2,
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_sources": [
+      "https://huggingface.co/openai/whisper-medium",
+      "https://github.com/openai/whisper"
+    ],
+    "identity_note": "Multilingual medium checkpoint (openai/whisper-medium@abdf7c3). Hugging Face mirror created 2022-09-26 with the Whisper release (arXiv 2212.04356). Multilingual checkpoint (openai-whisper name 'medium'), distinct from the English-only medium.en. Params from the Whisper README size table.",
+    "recovered_original": false
   }
 ]

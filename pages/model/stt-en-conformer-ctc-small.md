@@ -6,7 +6,7 @@
 
 NVIDIA · released 2023-06 · 0.013B params · cc-by-4.0
 
-**score 43.7** ±2.8 · #86 of 105 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.1** ±2.9 · #89 of 110 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.3%    46.6   2026-03-26   52% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  11.2%    39.9   2026-03-26   45% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  11.2%    40.0   2026-03-26   51% ▇▇▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.3%    46.2   2026-03-26   45% ▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 3% ▇
-                      weighted average                       = 43.7
+                      weighted average                       = 43.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~0.56GB   43.7
+fp32 · nvidia only  ~0.56GB   43.1
 </pre>
 
 ```sh

@@ -4,19 +4,46 @@
 
 # Granite Speech 5.0 470M TurboCTC
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+IBM · released 2026-08 · 0.47B params · apache-2.0
+
+**score 63.0** ±3.5 · #9 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-Granite 5.0 report · Open ASR pub…    5.7%  lab          <a href="https://arxiv.org/html/2609.20104v1">Design of the IBM Granite 5.0…</a>
+source                  test                        score  implies  date        weight
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json">LibriSpeech test-clean WER</a>   1.3%    63.7   2026-09-15   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle               49.7                 5% ▇
+                        weighted average                   = 63.0
 </pre>
 
-<sub>Licences: Design of the IBM Granite 5.0 TurboCTC ASR Model ([CC BY-SA 4.0](../../licenses/speech-stt-granite5-report-bysa.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports ([MIT](../../licenses/speech-stt-transcribecpp-mit.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+Design of the IBM Gra…  <a href="https://arxiv.org/html/2609.20104v1">Granite 5.0 report · Open ASR…</a>   5.7%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
+<pre>
+version            needs  score
+bf16 · mac only  ~1.63GB   63.0
+</pre>
+
 ```sh
+# bf16 · mac only
 uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-5.0-470m-turboctc --audio audio.wav --output-path out
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/granite-speech-5-0-470m-turboctc)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/granite-speech-5-0-470m-turboctc) · [JSON](https://whatmodel.sh/api?format=json&all=1)

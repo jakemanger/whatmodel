@@ -8202,11 +8202,11 @@
     "license": "Apache-2.0",
     "license_url": "/licenses/Qwen--Qwen3-ASR-1.7B.txt",
     "terms_url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md",
-    "quote": "README front-matter declares 'license: apache-2.0'. No root LICENSE file at this revision; standard Apache-2.0 text supplied. Selected own-lab result cells in the pinned README only; linked blogs, images hosted elsewhere and competitor columns are not used.",
+    "quote": "README front-matter declares 'license: apache-2.0'. No root LICENSE file at this revision; standard Apache-2.0 text supplied. Result cells in the pinned README's 'ASR Benchmarks on Public Datasets' table: the Qwen3-ASR-1.7B and -0.6B columns, plus the GPT-4o-Transcribe and Whisper-large-v3 columns, which the Qwen3-ASR Technical Report (arXiv:2601.21337v2, CC BY 4.0, Table 3, identical values) states the authors ran themselves. Gemini-2.5-Pro, Doubao-ASR and the copied FunASR-MLT-Nano column are not used.",
     "verdict": "allowed",
     "checked": "2026-09-26",
     "icon": "huggingface.co",
-    "attribution": "Qwen Team, Alibaba. Qwen/Qwen3-ASR-1.7B model card. Source: https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Qwen Team, Alibaba. Qwen/Qwen3-ASR-1.7B model card. Source: https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md. Licence: Apache-2.0. Changes: selected Qwen-run numerical cells (own models and re-run baselines) transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
   },
   {
     "id": "card2-qwen-qwen3-tts-12hz-1-7b-base",
@@ -8525,11 +8525,11 @@
     "license": "CC BY 4.0",
     "license_url": "/licenses/report-2507.13264v1.txt",
     "terms_url": "https://arxiv.org/abs/2507.13264v1",
-    "quote": "arXiv abstract page for 2507.13264v1 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Only the authors' own-model result cells are used; baseline/competitor columns are excluded.",
+    "quote": "arXiv abstract page for 2507.13264v1 states the article licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Own-model result cells are used, plus the Whisper large-v3 and GPT-4o mini Transcribe baseline rows of Tables 3 and 4, which Mistral ran itself ('During evaluation of Voxtral and other models...'; its own E21/E22 10-minute eval sets). Gemini 2.5 Flash, the unversioned 'ElevenLabs Scribe' and the API-only Voxtral Mini Transcribe rows are excluded.",
     "verdict": "allowed",
     "checked": "2026-09-26",
     "icon": "arxiv.org",
-    "attribution": "Mistral AI. Voxtral. arXiv:2507.13264v1. CC BY 4.0. Source: https://arxiv.org/html/2507.13264v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    "attribution": "Mistral AI. Voxtral. arXiv:2507.13264v1. CC BY 4.0. Source: https://arxiv.org/html/2507.13264v1. Changes: selected own-model and Mistral-run baseline numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
   },
   {
     "id": "report-2511.22699v5",
@@ -9444,5 +9444,94 @@
     "icon": "arxiv.org",
     "quote": "arXiv abs page for 2408.14339v1 links \"Rights to this article\" to http://creativecommons.org/licenses/by/4.0/; the HTML header reads \"License: CC BY 4.0 arXiv:2408.14339v1\".",
     "scope": "Benchmark authors' own runs (Table 4; Table 8 Hugging Face checkpoints; GPT-4o grader; 300 prompts per k). Only the k=2 column is imported; other k levels are correlated tracks of the same experiment."
+  },
+  {
+    "id": "speech-stt-transcribecpp-mit",
+    "match": [
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-flash.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b-v2.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-1b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-03-2026.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-4.0-1b-speech.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-4.1-2b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-speech-5.0-470m-turboctc.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-base.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-small.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-tiny.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-tiny.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-0.6b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-ctc-1.1b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-0.6b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-rnnt-1.1b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v2.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-0.6b-v3.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt_ctc-110m.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-0.6b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/qwen3-asr-1.7b.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-3b-2507.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-mini-4b-realtime-2602.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v2.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3-turbo.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large-v3.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-large.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-medium.en.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-medium.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.en.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-small.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.en.json",
+      "github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json"
+    ],
+    "exact": true,
+    "name": "transcribe.cpp model catalog · LibriSpeech test-clean WER of validated full-precision ports",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-stt-transcribecpp-mit.txt",
+    "attribution": "transcribe.cpp, Copyright (c) 2026 The transcribe.cpp authors, MIT (https://github.com/handy-computer/transcribe.cpp). LibriSpeech test-clean corpus WER of the F32 / native-BF16 / F16 tier transcribed by script from the committed catalog/*.json at c1fee50, percent divided by 100; retain the MIT notice. No endorsement.",
+    "icon": "github.com",
+    "quote": "Root LICENSE at the pinned commit (MIT): 'Copyright (c) 2026 The transcribe.cpp authors. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies...'. README: 'transcribe.cpp is MIT-licensed' and 'catalog/ is the source of truth for model metadata, accuracy, and performance'. The catalog JSON files are committed repository files; THIRD-PARTY-LICENSES.md lists only ggml and miniz (both MIT); no separate data licence or carve-out."
+  },
+  {
+    "id": "speech-stt-srb-report",
+    "match": [
+      "arxiv.org/html/2403.07937v3"
+    ],
+    "exact": true,
+    "name": "Speech Robust Bench (arXiv:2403.07937v3) · clean-speech WER of 25+ open ASR models",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2403.07937v3",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-stt-srb-report.txt",
+    "attribution": "Muhammad A. Shah, David Solans, Mikko A. Heikkilä, Bhiksha Raj, Nicolas Kourtellis, 'Speech Robust Bench: A Robustness Benchmark For Speech Recognition', arXiv:2403.07937v3 (9 Dec 2024), CC BY 4.0. Table 7 clean-speech WER (LibriSpeech, TEDLIUM) transcribed by script, percent divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2403.07937v3 links http://creativecommons.org/licenses/by/4.0/ and the HTML states 'License: CC BY 4.0'. §4.1: 'For English, we evaluate Whisper ... Wav2Vec-2.0 ... HuBERT ... Nvidia Canary ... Nvidia Parakeet RNN-T and CTC ... MMS ... We used the Huggingface implementations where available'; Table 5 names each checkpoint. All rows are the authors' own runs."
+  },
+  {
+    "id": "speech-stt-picovoice-apache",
+    "match": [
+      "github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md"
+    ],
+    "exact": true,
+    "name": "Picovoice speech-to-text-benchmark · English batch-engine WER (README)",
+    "kind": "leaderboard",
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-stt-picovoice-apache.txt",
+    "attribution": "Picovoice speech-to-text-benchmark (https://github.com/Picovoice/speech-to-text-benchmark), Apache License 2.0. English batch-engine 'Average' WER for the Whisper rows transcribed by script from README.md at 43e7689, percent divided by 100; retain the Apache-2.0 notice. No endorsement.",
+    "icon": "github.com",
+    "quote": "Root LICENSE at the pinned commit is the Apache License, Version 2.0: 'Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works'. README.md (with the results tables) is a committed file of the Work; no separate data licence or carve-out."
   }
 ]

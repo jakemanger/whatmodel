@@ -6,7 +6,7 @@
 
 Soniox · released 2026-06 · proprietary
 
-**score 66.6** ±5.7 · #1 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.1** ±5.0 · #1 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   8.1%    69.0   2026-09-24   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                12% ▇
-                        weighted average                       = 66.6
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   8.1%    69.0   2026-09-24   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                10% ▇
+                        weighted average                       = 67.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

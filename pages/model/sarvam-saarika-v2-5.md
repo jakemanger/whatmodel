@@ -6,7 +6,7 @@
 
 Sarvam AI · closed weights
 
-**score 68.7** ±5.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.1** ±5.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   6.9%    71.4   2026-09-24   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.7                12% ▇
-                        weighted average                       = 68.7
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   6.9%    71.2   2026-09-24   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                10% ▇
+                        weighted average                       = 69.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

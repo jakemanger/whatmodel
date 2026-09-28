@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 2.26B params · mit
 
-**score 56.8** ±4.0 · #36 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.9** ±3.9 · #40 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    57.3   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 56.8
+                      weighted average                       = 56.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version    needs  score
-bf16     ~5.92GB   56.8
+bf16     ~5.92GB   56.9
 </pre>
 
 ```sh

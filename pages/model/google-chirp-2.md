@@ -6,7 +6,7 @@
 
 Google · proprietary
 
-**score 60.0** ±4.0 · #21 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.0** ±3.9 · #24 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

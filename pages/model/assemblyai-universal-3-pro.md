@@ -6,7 +6,7 @@
 
 AssemblyAI · released 2026-02 · proprietary
 
-**score 63.4** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 63.6** ±2.4 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.2%    65.2   2026-03-26   36% ▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.8%    63.6   2026-03-26   33% ▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.2%    61.9   2026-03-26   29% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.2%    61.9   2026-03-26   35% ▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.2%    65.8   2026-03-26   33% ▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.8%    64.0   2026-03-26   31% ▇▇▇▇
 prior                 pull toward the middle                   49.7                 2% ▇
-                      weighted average                       = 63.4
+                      weighted average                       = 63.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

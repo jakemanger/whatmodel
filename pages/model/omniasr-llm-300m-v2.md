@@ -6,7 +6,7 @@
 
 Meta · released 2025-12 · 1.63B params · apache-2.0
 
-**score 47.1** ±3.6 · #78 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.9** ±4.0 · #80 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                       score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>   8.4%    46.9   2026-03-26   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle              49.7                 5% ▇
-                      weighted average                  = 47.1
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>   8.4%    46.7   2026-03-26   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle              49.7                 6% ▇
+                      weighted average                  = 46.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                 pull toward the middle              49.7                 5
 
 <pre>
 version    needs  score
-bf16     ~4.41GB   47.1
+bf16     ~4.41GB   46.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2022-09 · 0.12B params · cc-by-4.0
 
-**score 46.6** ±3.8 · #79 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.3** ±4.2 · #82 of 110 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.4%    46.5   2026-03-26   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 5% ▇
-                      weighted average                       = 46.6
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.4%    46.0   2026-03-26   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.7                 7% ▇
+                      weighted average                       = 46.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~1.08GB   46.6
+fp32 · nvidia only  ~1.08GB   46.3
 </pre>
 
 ```sh
