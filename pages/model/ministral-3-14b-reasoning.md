@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · apache-2.0
 
-**score 50.3** ±3.9 · #201 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.2** ±3.8 · #202 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    50.4   2026-05-02   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    51.3   2026-05-02   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 50.3
+                        weighted average                       = 51.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,7 +43,7 @@ mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-
 
 <pre>
 download        size  score
-4-bit q4_k_m  8.24GB   50.3
+4-bit q4_k_m  8.24GB   51.2
 </pre>
 
 ```sh

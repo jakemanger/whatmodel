@@ -882,7 +882,129 @@
       },
       "data_license": "CC-BY-SA-4.0",
       "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "deepseek-coder-1-3b-instruct",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.065,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'DSCoder-1.3b-Ins'; model_name=deepseek-ai/deepseek-coder-1.3b-instruct; link https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=6.4857881137%; website rounding=6.5%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "deepseek-coder-6-7b-instruct",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.179,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'DSCoder-6.7b-Ins'; model_name=deepseek-ai/deepseek-coder-6.7b-instruct; link https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=17.8811369509%; website rounding=17.9%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "deepseek-coder-33b-instruct",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.219,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'DSCoder-33b-Ins'; model_name=deepseek-ai/deepseek-coder-33b-instruct; link https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=21.8604651163%; website rounding=21.9%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "deepseek-coder-v2-lite-instruct",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.206,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'DeepSeek-Coder-V2-Lite-Instruct'; model_name=deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct; link https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=20.5684754522%; website rounding=20.6%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "deepseek-v2-lite-chat",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.036,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'DeepSeek-V2-Lite-Chat'; model_name=deepseek-ai/DeepSeek-V2-Lite-Chat; link https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=3.5917312661%; website rounding=3.6%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "llama-3-8b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.133,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'LLama3-8b-Ins'; model_name=meta-llama/Meta-Llama-3-8B-Instruct; link https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=13.3333333333%; website rounding=13.3%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "llama-3-70b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.243,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'LLama3-70b-Ins'; model_name=meta-llama/Meta-Llama-3-70B-Instruct; link https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=24.3152454780%; website rounding=24.3%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "qwen2-72b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.253,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen2-Ins-72B'; model_name=Qwen/Qwen2-72B-Instruct; link https://huggingface.co/Qwen/Qwen2-72B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=25.3488372093%; website rounding=25.3%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "yi-coder-9b-chat",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.235,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Yi-Coder-9B-Chat'; model_name=01-ai/Yi-Coder-9B-Chat; link https://huggingface.co/01-ai/Yi-Coder-9B-Chat. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=23.5400516796%; website rounding=23.5%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "mixtral-8x7b-instruct-v0-1",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.122,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Mixtral-8x7B-Ins'; model_name=open-mixtral-8x7b; link https://mistral.ai/news/mixtral-8x7b/. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=12.1705426357%; website rounding=12.2%; divided by 100. Mistral API id open-mixtral-8x7b serves the open-weight Mixtral-8x7B-Instruct-v0.1 checkpoint. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
+    },
+    {
+      "model": "mixtral-8x22b-instruct-v0-1",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.237,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Mixtral-8x22B-Ins'; model_name=open-mixtral-8x22b; link https://mistral.ai/news/mixtral-8x22b/. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=23.7467700258%; website rounding=23.7%; divided by 100. Mistral API id open-mixtral-8x22b serves the open-weight Mixtral-8x22B-Instruct-v0.1 checkpoint. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
     }
   ],
-  "models": []
+  "models": [
+    "deepseek-coder-1-3b-instruct",
+    "deepseek-coder-6-7b-instruct",
+    "deepseek-coder-33b-instruct",
+    "deepseek-coder-v2-lite-instruct",
+    "deepseek-v2-lite-chat",
+    "llama-3-8b",
+    "llama-3-70b",
+    "qwen2-72b",
+    "yi-coder-9b-chat",
+    "mixtral-8x7b-instruct-v0-1",
+    "mixtral-8x22b-instruct-v0-1"
+  ]
 }

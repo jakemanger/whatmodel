@@ -6,7 +6,7 @@
 
 IBM · released 2024-10 · 2.63B params · apache-2.0
 
-**score 31.7** ±2.5 · #325 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.0** ±2.6 · #354 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1156.3    31.2   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1156.3    32.4   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 31.7
+                        weighted average                = 33.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.08GB   31.7
-8-bit q8_0    ~3.66GB   31.7
+4-bit q4_k_m  ~2.08GB   33.0
+8-bit q8_0    ~3.66GB   33.0
 </pre>
 
 ```sh

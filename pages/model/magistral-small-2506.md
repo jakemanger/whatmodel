@@ -6,7 +6,7 @@
 
 Mistral · released 2025-06 · 23.57B params · apache-2.0
 
-**score 54.2** ±2.8 · #169 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.5** ±2.4 · #178 of 400 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -15,23 +15,25 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) compar
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              56.1%    55.0   2026-08-06   53% ▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  30.0%    53.6   2026-08-06   44% ▇▇▇▇▇
-prior     pull toward the middle             50.0                 3% ▇
-          weighted average                 = 54.2
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    56.1%    56.0   2026-08-06   39% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        30.0%    54.6   2026-08-06   34% ▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  37.6%    54.1   2025-07-22   13% ▇▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>  16.0%    40.8   2025-11-18   11% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 53.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~14.64GB   54.2
-8-bit q8_0    ~28.78GB   54.2
+4-bit q4_k_m  ~14.64GB   53.5
+8-bit q8_0    ~28.78GB   53.5
 </pre>
 
 ```sh

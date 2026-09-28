@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 45.3** ±1.9 · #232 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.3** ±1.9 · #236 of 400 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            25.7%    43.5   2025-01-27   73% ▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            43.4%    50.0   2025-01-27   26% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            25.7%    44.7   2025-01-27   74% ▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            43.4%    51.1   2025-01-27   24% ▇▇▇
 prior     pull toward the middle           50.0                 2% ▇
-          weighted average               = 45.3
+          weighted average               = 46.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior     pull toward the middle           50.0                 2% ▇
 
 <pre>
 download        size  score
-4-bit q4_0   ~85.1GB   45.3
-8-bit q8_0  ~169.7GB   45.3
+4-bit q4_0   ~85.1GB   46.3
+8-bit q8_0  ~169.7GB   46.3
 </pre>
 
 ```sh

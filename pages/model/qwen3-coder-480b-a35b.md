@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 60.1** ±1.5 · #127 of 361 · from 4 benchmark results across 3 sources
+**score 60.9** ±1.6 · #127 of 400 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1273.8    59.5   2026-09-24   37% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1387.5    59.8   2026-09-13   37% ▇▇▇▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   23.9%    61.9   2026-01-17   15% ▇▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   61.2%    61.7   2025-11-02   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1273.8    60.3   2026-09-24   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1387.5    60.7   2026-09-13   35% ▇▇▇▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   23.9%    62.8   2026-01-17   15% ▇▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   61.2%    62.5   2025-11-02   10% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 60.1
+                        weighted average                        = 60.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -51,9 +51,9 @@ api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [nov
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~288.5GB   60.1
-2-bit ud-q2_k_xl  ~144.5GB   60.1
-1-bit ud-iq1_m     ~72.5GB   60.1
+4-bit q4_k_m      ~288.5GB   60.9
+2-bit ud-q2_k_xl  ~144.5GB   60.9
+1-bit ud-iq1_m     ~72.5GB   60.9
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 35.2** ±1.8 · #300 of 361 · from 3 benchmark results across 2 sources
+**score 36.5** ±1.8 · #324 of 400 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    34.9   2024-05-07   74% ▇▇▇▇▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      39.3%    35.2   2024-01-03   13% ▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      40.5%    35.3   2024-01-03   12% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 35.2
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    36.3   2024-05-07   71% ▇▇▇▇▇▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      39.3%    36.2   2024-01-03   14% ▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      40.5%    36.3   2024-01-03   13% ▇▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 36.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~28GB   35.2
-8-bit q8_0    ~50GB   35.2
+4-bit q4_k_m  ~28GB   36.5
+8-bit q8_0    ~50GB   36.5
 </pre>
 
 ```sh

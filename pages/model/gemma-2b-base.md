@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 22.5** ±1.0 · #357 of 361 · from 5 benchmark results across 3 sources
+**score 23.4** ±1.0 · #392 of 400 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    22.2   2024-03-28   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    23.8   2024-03-28   34% ▇▇▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    20.9   2024-05-07   22% ▇▇▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    20.6   2024-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    21.2   2024-06-19    5% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    23.4   2024-03-28   35% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    24.9   2024-03-28   30% ▇▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    21.8   2024-05-07   24% ▇▇▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    21.7   2024-06-19    6% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    22.4   2024-06-19    5% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 22.5
+                        weighted average                       = 23.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.8GB   22.5
-8-bit q8_0    ~2.7GB   22.5
+4-bit q4_k_m  ~1.8GB   23.4
+8-bit q8_0    ~2.7GB   23.4
 </pre>
 
 ```sh

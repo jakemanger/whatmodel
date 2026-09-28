@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 35.6** ±1.8 · #294 of 361 · from 3 benchmark results across 2 sources
+**score 36.8** ±1.7 · #319 of 400 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.6%    34.1   2024-05-07   67% ▇▇▇▇▇▇▇▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    35.3   2024-06-19   16% ▇▇
-                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    40.6   2024-06-19   16% ▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.6%    35.5   2024-05-07   68% ▇▇▇▇▇▇▇▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    36.6   2024-06-19   16% ▇▇
+                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    41.8   2024-06-19   15% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 35.6
+                        weighted average                       = 36.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.3GB   35.6
-8-bit q8_0    ~9.1GB   35.6
+4-bit q4_k_m  ~5.3GB   36.8
+8-bit q8_0    ~9.1GB   36.8
 </pre>
 
 ```sh

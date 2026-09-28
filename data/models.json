@@ -31662,5 +31662,1338 @@
         "reported_label": "wizard-34b"
       }
     ]
+  },
+  {
+    "id": "qwen2-5-0-5b",
+    "name": "Qwen2.5 0.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.49,
+    "active_b": 0.49,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.79,
+          "cmd": "ollama run qwen2.5:0.5b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2.5/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.09,
+          "cmd": "ollama run qwen2.5:0.5b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2.5/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2.5-0.5B-Instruct @7ae5576: licence tag apache-2.0. 494,032,768 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-16). Ollama tags qwen2.5:0.5b-instruct-q4_K_M, qwen2.5:0.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/README.md"
+    ]
+  },
+  {
+    "id": "qwen2-5-1-5b",
+    "name": "Qwen2.5 1.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.54,
+    "active_b": 1.54,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.42,
+          "cmd": "ollama run qwen2.5:1.5b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2.5/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.35,
+          "cmd": "ollama run qwen2.5:1.5b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2.5/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2.5-1.5B-Instruct @989aa79: licence tag apache-2.0. 1,543,714,304 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-17). Ollama tags qwen2.5:1.5b-instruct-q4_K_M, qwen2.5:1.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/README.md"
+    ]
+  },
+  {
+    "id": "qwen2-5-3b",
+    "name": "Qwen2.5 3B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "qwen-research",
+    "params_b": 3.09,
+    "active_b": 3.09,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.35,
+          "cmd": "ollama run qwen2.5:3b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2.5/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 4.21,
+          "cmd": "ollama run qwen2.5:3b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2.5/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2.5-3B-Instruct @aa8e725: licence tag other (qwen-research). 3,085,938,688 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-17). Ollama tags qwen2.5:3b-instruct-q4_K_M, qwen2.5:3b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/aa8e72537993ba99e69dfaafa59ed015b17504d1/README.md"
+    ]
+  },
+  {
+    "id": "qwen2-0-5b",
+    "name": "Qwen2 0.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.49,
+    "active_b": 0.49,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 0.79,
+          "cmd": "ollama run qwen2:0.5b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.09,
+          "cmd": "ollama run qwen2:0.5b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2-0.5B-Instruct @c540970: licence tag apache-2.0. 494,032,768 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-03). Ollama tags qwen2:0.5b-instruct-q4_K_M, qwen2:0.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md"
+    ]
+  },
+  {
+    "id": "qwen2-1-5b",
+    "name": "Qwen2 1.5B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.54,
+    "active_b": 1.54,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.42,
+          "cmd": "ollama run qwen2:1.5b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.35,
+          "cmd": "ollama run qwen2:1.5b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2-1.5B-Instruct @ba1cf18: licence tag apache-2.0. 1,543,714,304 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-03). Ollama tags qwen2:1.5b-instruct-q4_K_M, qwen2:1.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct/blob/ba1cf1846d7df0a0591d6c00649f57e798519da8/README.md"
+    ]
+  },
+  {
+    "id": "qwen2-7b",
+    "name": "Qwen2 7B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.07,
+          "cmd": "ollama run qwen2:7b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.64,
+          "cmd": "ollama run qwen2:7b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2-7B-Instruct @f2826a0: licence tag apache-2.0. 7,615,616,512 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-04). Ollama tags qwen2:7b-instruct-q4_K_M, qwen2:7b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2-7B-Instruct/blob/f2826a00ceef68f0f2b946d945ecc0477ce4450c/README.md"
+    ]
+  },
+  {
+    "id": "qwen2-5-coder-14b",
+    "name": "Qwen2.5 Coder 14B Instruct",
+    "provider": "Alibaba",
+    "category": "llm",
+    "released": "2024-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 14.77,
+    "active_b": 14.77,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 9.36,
+          "cmd": "ollama run qwen2.5-coder:14b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/qwen2.5-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 18.22,
+          "cmd": "ollama run qwen2.5-coder:14b-instruct-q8_0",
+          "source": "https://ollama.com/library/qwen2.5-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct",
+    "identity_note": "Maker repo Qwen/Qwen2.5-Coder-14B-Instruct @aedcc2d: licence tag apache-2.0. 14,770,033,664 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-11: month the maker's Hugging Face repo was created (createdAt 2024-11-06). Ollama tags qwen2.5-coder:14b-instruct-q4_K_M, qwen2.5-coder:14b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/blob/aedcc2d42b622764e023cf882b6652e646b95671/README.md"
+    ]
+  },
+  {
+    "id": "phi-3-5-mini-instruct",
+    "name": "Phi-3.5-mini-instruct",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 3.82,
+    "active_b": 3.82,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.79,
+          "cmd": "ollama run phi3.5:3.8b-mini-instruct-q4_K_M",
+          "source": "https://ollama.com/library/phi3.5/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 5.08,
+          "cmd": "ollama run phi3.5:3.8b-mini-instruct-q8_0",
+          "source": "https://ollama.com/library/phi3.5/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+    "identity_note": "Maker repo microsoft/Phi-3.5-mini-instruct @2fe1924: licence tag mit. 3,821,079,552 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-08: month the maker's Hugging Face repo was created (createdAt 2024-08-16). Ollama tags phi3.5:3.8b-mini-instruct-q4_K_M, phi3.5:3.8b-mini-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/2fe192450127e6a83f7441aef6e3ca586c338b77/README.md"
+    ]
+  },
+  {
+    "id": "phi-3-5-moe-instruct",
+    "name": "Phi-3.5-MoE-instruct",
+    "provider": "Microsoft",
+    "category": "llm",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 41.87,
+    "active_b": 6.6,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 100.99,
+          "cmd": "vllm serve microsoft/Phi-3.5-MoE-instruct",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+    "identity_note": "Maker repo microsoft/Phi-3.5-MoE-instruct @4368845: licence tag mit. 41,873,153,344 parameters from the Hugging Face safetensors metadata. Mixture-of-experts: pinned README: 'Phi-3.5-MoE has 16x3.8B parameters with 6.6B active parameters when using 2 experts'. Released 2024-08: month the maker's Hugging Face repo was created (createdAt 2024-08-17).",
+    "identity_sources": [
+      "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct/blob/43688451b462a3351d8580625ebe1931adb3986d/README.md"
+    ]
+  },
+  {
+    "id": "tinyllama-1-1b-chat-v1-0",
+    "name": "TinyLlama 1.1B Chat v1.0",
+    "provider": "TinyLlama",
+    "category": "llm",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.1,
+    "active_b": 1.1,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.16,
+          "cmd": "ollama run tinyllama:1.1b-chat-v1-q4_K_M",
+          "source": "https://ollama.com/library/tinyllama/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 1.82,
+          "cmd": "ollama run tinyllama:1.1b-chat-v1-q8_0",
+          "source": "https://ollama.com/library/tinyllama/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "identity_note": "Maker repo TinyLlama/TinyLlama-1.1B-Chat-v1.0 @fe8a4ea: licence tag apache-2.0. 1,100,048,384 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2023-12: month the maker's Hugging Face repo was created (createdAt 2023-12-30). Ollama tags tinyllama:1.1b-chat-v1-q4_K_M, tinyllama:1.1b-chat-v1-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/blob/fe8a4ea1ffedaf415f4da2f062534de366a451e6/README.md"
+    ]
+  },
+  {
+    "id": "mistral-small-2409",
+    "name": "Mistral Small Instruct 22B (2409)",
+    "provider": "Mistral AI",
+    "category": "llm",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "mistral-research",
+    "params_b": 22.25,
+    "active_b": 22.25,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 13.85,
+          "cmd": "ollama run mistral-small:22b-instruct-2409-q4_K_M",
+          "source": "https://ollama.com/library/mistral-small/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 27.2,
+          "cmd": "ollama run mistral-small:22b-instruct-2409-q8_0",
+          "source": "https://ollama.com/library/mistral-small/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Mistral-Small-Instruct-2409",
+    "identity_note": "Maker repo mistralai/Mistral-Small-Instruct-2409 @4600506: licence tag other (mrl). 22,247,282,688 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-17). Ollama tags mistral-small:22b-instruct-2409-q4_K_M, mistral-small:22b-instruct-2409-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mistral-Small-Instruct-2409/blob/4600506f6b13c7ef89e61a54263f4c9bf483de30/README.md"
+    ]
+  },
+  {
+    "id": "codestral-22b-v0-1",
+    "name": "Codestral 22B v0.1",
+    "provider": "Mistral AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "mnpl",
+    "params_b": 22.25,
+    "active_b": 22.25,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 13.85,
+          "cmd": "ollama run codestral:22b-v0.1-q4_K_M",
+          "source": "https://ollama.com/library/codestral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 27.2,
+          "cmd": "ollama run codestral:22b-v0.1-q8_0",
+          "source": "https://ollama.com/library/codestral/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Codestral-22B-v0.1",
+    "identity_note": "Maker repo mistralai/Codestral-22B-v0.1 @28b1c1a: licence tag other (mnpl). 22,247,282,688 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-29). Ollama tags codestral:22b-v0.1-q4_K_M, codestral:22b-v0.1-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Codestral-22B-v0.1/blob/28b1c1a51dabe9d86ca8c41420ada1984632498f/README.md"
+    ]
+  },
+  {
+    "id": "mathstral-7b-v0-1",
+    "name": "Mathstral 7B v0.1",
+    "provider": "Mistral AI",
+    "category": "llm",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.25,
+    "active_b": 7.25,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.85,
+          "cmd": "ollama run mathstral:7b-v0.1-q4_K_M",
+          "source": "https://ollama.com/library/mathstral/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.2,
+          "cmd": "ollama run mathstral:7b-v0.1-q8_0",
+          "source": "https://ollama.com/library/mathstral/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/mistralai/Mathstral-7B-v0.1",
+    "identity_note": "Maker repo mistralai/Mathstral-7B-v0.1 @ec3a484: licence tag apache-2.0. 7,248,023,552 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-07: month the maker's Hugging Face repo was created (createdAt 2024-07-16). Ollama tags mathstral:7b-v0.1-q4_K_M, mathstral:7b-v0.1-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md"
+    ]
+  },
+  {
+    "id": "yi-1-5-6b-chat",
+    "name": "Yi 1.5 6B Chat",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 6.06,
+    "active_b": 6.06,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.14,
+          "cmd": "ollama run yi:6b-chat-v1.5-q4_K_M",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 7.77,
+          "cmd": "ollama run yi:6b-chat-v1.5-q8_0",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/01-ai/Yi-1.5-6B-Chat",
+    "identity_note": "Maker repo 01-ai/Yi-1.5-6B-Chat @771924d: licence tag apache-2.0. 6,061,035,520 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-11). Ollama tags yi:6b-chat-v1.5-q4_K_M, yi:6b-chat-v1.5-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/01-ai/Yi-1.5-6B-Chat/blob/771924d1c83d67527d665913415d7086f11ea9c0/README.md"
+    ]
+  },
+  {
+    "id": "yi-1-5-9b-chat",
+    "name": "Yi 1.5 9B Chat",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.83,
+    "active_b": 8.83,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.8,
+          "cmd": "ollama run yi:9b-chat-v1.5-q4_K_M",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 11.1,
+          "cmd": "ollama run yi:9b-chat-v1.5-q8_0",
+          "source": "https://ollama.com/library/yi/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/01-ai/Yi-1.5-9B-Chat",
+    "identity_note": "Maker repo 01-ai/Yi-1.5-9B-Chat @1a0fc69: licence tag apache-2.0. 8,829,407,232 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-10). Ollama tags yi:9b-chat-v1.5-q4_K_M, yi:9b-chat-v1.5-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/01-ai/Yi-1.5-9B-Chat/blob/1a0fc698cf883c4f5c325f026ca79f0ebd9955a5/README.md"
+    ]
+  },
+  {
+    "id": "yi-coder-9b-chat",
+    "name": "Yi-Coder 9B Chat",
+    "provider": "01.AI",
+    "category": "llm",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.83,
+    "active_b": 8.83,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.8,
+          "cmd": "ollama run yi-coder:9b-chat-q4_K_M",
+          "source": "https://ollama.com/library/yi-coder/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 11.1,
+          "cmd": "ollama run yi-coder:9b-chat-q8_0",
+          "source": "https://ollama.com/library/yi-coder/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/01-ai/Yi-Coder-9B-Chat",
+    "identity_note": "Maker repo 01-ai/Yi-Coder-9B-Chat @356a1f8: licence tag apache-2.0. 8,829,407,232 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-08: month the maker's Hugging Face repo was created (createdAt 2024-08-21). Ollama tags yi-coder:9b-chat-q4_K_M, yi-coder:9b-chat-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/01-ai/Yi-Coder-9B-Chat/blob/356a1f8d4e4a606d0b879e54191ca809918576b8/README.md"
+    ]
+  },
+  {
+    "id": "glm-4-9b-chat",
+    "name": "GLM-4 9B Chat",
+    "provider": "Zhipu AI (Z.ai)",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "glm-4",
+    "params_b": 9.4,
+    "active_b": 9.4,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6.14,
+          "cmd": "ollama run glm4:9b-chat-q4_K_M",
+          "source": "https://ollama.com/library/glm4/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 11.78,
+          "cmd": "ollama run glm4:9b-chat-q8_0",
+          "source": "https://ollama.com/library/glm4/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/zai-org/glm-4-9b-chat",
+    "identity_note": "Maker repo zai-org/glm-4-9b-chat @bd8234f: licence tag other (glm-4). 9,399,951,392 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-04). The repo was previously published as THUDM/glm-4-9b-chat (the Hugging Face API redirects that id here); leaderboard rows may use the old id. Ollama tags glm4:9b-chat-q4_K_M, glm4:9b-chat-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/zai-org/glm-4-9b-chat/blob/bd8234fe5e0c09c48637a92abb0c797cb5fa0e73/README.md"
+    ]
+  },
+  {
+    "id": "internlm2-5-7b-chat",
+    "name": "InternLM2.5 7B Chat",
+    "provider": "Shanghai AI Laboratory (InternLM)",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "other",
+    "params_b": 7.74,
+    "active_b": 7.74,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.14,
+          "cmd": "ollama run internlm2:7b-chat-v2.5-q4_K_M",
+          "source": "https://ollama.com/library/internlm2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.79,
+          "cmd": "ollama run internlm2:7b-chat-v2.5-q8_0",
+          "source": "https://ollama.com/library/internlm2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/internlm/internlm2_5-7b-chat",
+    "identity_note": "Maker repo internlm/internlm2_5-7b-chat @eb72b54: licence tag other. 7,737,708,544 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-27). Ollama tags internlm2:7b-chat-v2.5-q4_K_M, internlm2:7b-chat-v2.5-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/internlm/internlm2_5-7b-chat/blob/eb72b541689b0432dade0435feb339b89fdd39ff/README.md"
+    ]
+  },
+  {
+    "id": "hermes-3-llama-3-1-8b",
+    "name": "Hermes 3 Llama 3.1 8B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "llama3",
+    "params_b": 8.03,
+    "active_b": 8.03,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.32,
+          "cmd": "ollama run hermes3:8b-llama3.1-q4_K_M",
+          "source": "https://ollama.com/library/hermes3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 10.14,
+          "cmd": "ollama run hermes3:8b-llama3.1-q8_0",
+          "source": "https://ollama.com/library/hermes3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B",
+    "identity_note": "Maker repo NousResearch/Hermes-3-Llama-3.1-8B @896ea44: licence tag llama3. 8,030,261,248 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-07: month the maker's Hugging Face repo was created (createdAt 2024-07-28). Ollama tags hermes3:8b-llama3.1-q4_K_M, hermes3:8b-llama3.1-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B/blob/896ea440e5a9e6070e3d8a2774daf2b481ab425b/README.md"
+    ]
+  },
+  {
+    "id": "hermes-3-llama-3-2-3b",
+    "name": "Hermes 3 Llama 3.2 3B",
+    "provider": "Nous Research",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "llama3",
+    "params_b": 3.21,
+    "active_b": 3.21,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.43,
+          "cmd": "ollama run hermes3:3b-llama3.2-q4_K_M",
+          "source": "https://ollama.com/library/hermes3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 4.35,
+          "cmd": "ollama run hermes3:3b-llama3.2-q8_0",
+          "source": "https://ollama.com/library/hermes3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B",
+    "identity_note": "Maker repo NousResearch/Hermes-3-Llama-3.2-3B @7f1a6be: licence tag llama3. 3,212,749,824 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-03). Ollama tags hermes3:3b-llama3.2-q4_K_M, hermes3:3b-llama3.2-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B/blob/7f1a6bec8cdce6551014fd5bbeb4cd8c0f1fbeab/README.md"
+    ]
+  },
+  {
+    "id": "aya-23-8b",
+    "name": "Aya 23 8B",
+    "provider": "Cohere For AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 8.03,
+    "active_b": 8.03,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.32,
+          "cmd": "ollama run aya:8b-23-q4_K_M",
+          "source": "https://ollama.com/library/aya/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 10.14,
+          "cmd": "ollama run aya:8b-23-q8_0",
+          "source": "https://ollama.com/library/aya/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/CohereLabs/aya-23-8B",
+    "identity_note": "Maker repo CohereLabs/aya-23-8B @89da1a0: licence tag cc-by-nc-4.0. 8,028,033,024 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-19). The repo was previously published as CohereForAI/aya-23-8B (the Hugging Face API redirects that id here); leaderboard rows may use the old id. Ollama tags aya:8b-23-q4_K_M, aya:8b-23-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/CohereLabs/aya-23-8B/blob/89da1a0ed02d6130f93ae0ffdbedb63b760c0471/README.md"
+    ]
+  },
+  {
+    "id": "aya-23-35b",
+    "name": "Aya 23 35B",
+    "provider": "Cohere For AI",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 34.98,
+    "active_b": 34.98,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 21.49,
+          "cmd": "ollama run aya:35b-23-q4_K_M",
+          "source": "https://ollama.com/library/aya/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 42.48,
+          "cmd": "ollama run aya:35b-23-q8_0",
+          "source": "https://ollama.com/library/aya/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/CohereLabs/aya-23-35B",
+    "identity_note": "Maker repo CohereLabs/aya-23-35B @ce62acc: licence tag cc-by-nc-4.0. 34,980,831,232 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-19). The repo was previously published as CohereForAI/aya-23-35B (the Hugging Face API redirects that id here); leaderboard rows may use the old id. Ollama tags aya:35b-23-q4_K_M, aya:35b-23-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/CohereLabs/aya-23-35B/blob/ce62acc9f088f423460cd42cd799f5cc53cc7c99/README.md"
+    ]
+  },
+  {
+    "id": "falcon3-1b",
+    "name": "Falcon3 1B Instruct",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "falcon-llm",
+    "params_b": 1.67,
+    "active_b": 1.67,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.5,
+          "cmd": "ollama run falcon3:1b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 2.5,
+          "cmd": "ollama run falcon3:1b-instruct-q8_0",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct",
+    "identity_note": "Maker repo tiiuae/Falcon3-1B-Instruct @28ba225: licence tag other (falcon-llm-license). 1,669,408,768 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-14). Ollama tags falcon3:1b-instruct-q4_K_M, falcon3:1b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/blob/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md"
+    ]
+  },
+  {
+    "id": "falcon3-3b",
+    "name": "Falcon3 3B Instruct",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "falcon-llm",
+    "params_b": 3.23,
+    "active_b": 3.23,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.44,
+          "cmd": "ollama run falcon3:3b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 4.38,
+          "cmd": "ollama run falcon3:3b-instruct-q8_0",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct",
+    "identity_note": "Maker repo tiiuae/Falcon3-3B-Instruct @411bb94: licence tag other (falcon-llm-license). 3,227,655,168 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-14). Ollama tags falcon3:3b-instruct-q4_K_M, falcon3:3b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/blob/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md"
+    ]
+  },
+  {
+    "id": "falcon3-7b",
+    "name": "Falcon3 7B Instruct",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2024-11",
+    "open_weights": true,
+    "license": "falcon-llm",
+    "params_b": 7.46,
+    "active_b": 7.46,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.98,
+          "cmd": "ollama run falcon3:7b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.45,
+          "cmd": "ollama run falcon3:7b-instruct-q8_0",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct",
+    "identity_note": "Maker repo tiiuae/Falcon3-7B-Instruct @1e57a0e: licence tag other (falcon-llm-license). 7,455,550,464 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-11: month the maker's Hugging Face repo was created (createdAt 2024-11-29). Ollama tags falcon3:7b-instruct-q4_K_M, falcon3:7b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/blob/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md"
+    ]
+  },
+  {
+    "id": "falcon3-10b",
+    "name": "Falcon3 10B Instruct",
+    "provider": "TII",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "falcon-llm",
+    "params_b": 10.31,
+    "active_b": 10.31,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 6.69,
+          "cmd": "ollama run falcon3:10b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 12.87,
+          "cmd": "ollama run falcon3:10b-instruct-q8_0",
+          "source": "https://ollama.com/library/falcon3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct",
+    "identity_note": "Maker repo tiiuae/Falcon3-10B-Instruct @8799bc6: licence tag other (falcon-llm-license). 10,305,653,760 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-14). Ollama tags falcon3:10b-instruct-q4_K_M, falcon3:10b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/tiiuae/Falcon3-10B-Instruct/blob/8799bc6aec0152757221dc6b272d824642db6202/README.md"
+    ]
+  },
+  {
+    "id": "olmo-2-7b",
+    "name": "OLMo 2 7B Instruct (1124)",
+    "provider": "Allen Institute for AI",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.3,
+    "active_b": 7.3,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 4.88,
+          "cmd": "ollama run olmo2:7b-1124-instruct-q4_K_M",
+          "source": "https://ollama.com/library/olmo2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 9.26,
+          "cmd": "ollama run olmo2:7b-1124-instruct-q8_0",
+          "source": "https://ollama.com/library/olmo2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct",
+    "identity_note": "Maker repo allenai/OLMo-2-1124-7B-Instruct @470b1fb: licence tag apache-2.0. 7,298,617,344 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-18). Ollama tags olmo2:7b-1124-instruct-q4_K_M, olmo2:7b-1124-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/README.md"
+    ]
+  },
+  {
+    "id": "olmo-2-13b",
+    "name": "OLMo 2 13B Instruct (1124)",
+    "provider": "Allen Institute for AI",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 13.72,
+    "active_b": 13.72,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 8.73,
+          "cmd": "ollama run olmo2:13b-1124-instruct-q4_K_M",
+          "source": "https://ollama.com/library/olmo2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 16.96,
+          "cmd": "ollama run olmo2:13b-1124-instruct-q8_0",
+          "source": "https://ollama.com/library/olmo2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+    "identity_note": "Maker repo allenai/OLMo-2-1124-13B-Instruct @3a5c85b: licence tag apache-2.0. 13,716,198,400 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-18). Ollama tags olmo2:13b-1124-instruct-q4_K_M, olmo2:13b-1124-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct/blob/3a5c85baefbb1896a54d56fe2e76c0395627ddf4/README.md"
+    ]
+  },
+  {
+    "id": "olmo-2-1b",
+    "name": "OLMo 2 1B Instruct (0425)",
+    "provider": "Allen Institute for AI",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.48,
+    "active_b": 1.48,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 4.05,
+          "cmd": "vllm serve allenai/OLMo-2-0425-1B-Instruct",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct",
+    "identity_note": "Maker repo allenai/OLMo-2-0425-1B-Instruct @48d788e: licence tag apache-2.0. 1,484,916,736 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-04: month the maker's Hugging Face repo was created (createdAt 2025-04-29).",
+    "identity_sources": [
+      "https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct/blob/48d788eca847d4d7548f375ad03d3c9312f6139e/README.md"
+    ]
+  },
+  {
+    "id": "cogito-v1-preview-llama-3b",
+    "name": "Cogito v1 Preview Llama 3B",
+    "provider": "Deep Cogito",
+    "category": "llm",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "llama3.2",
+    "params_b": 3.61,
+    "active_b": 3.61,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.67,
+          "cmd": "ollama run cogito:3b-v1-preview-llama-q4_K_M",
+          "source": "https://ollama.com/library/cogito/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 4.83,
+          "cmd": "ollama run cogito:3b-v1-preview-llama-q8_0",
+          "source": "https://ollama.com/library/cogito/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B",
+    "identity_note": "Maker repo deepcogito/cogito-v1-preview-llama-3B @5a0ad6f: licence tag llama3.2. 3,606,752,256 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-03: month the maker's Hugging Face repo was created (createdAt 2025-03-31). Ollama tags cogito:3b-v1-preview-llama-q4_K_M, cogito:3b-v1-preview-llama-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B/blob/5a0ad6f39500e9af65e727f15d5554352933ed65/README.md"
+    ]
+  },
+  {
+    "id": "cogito-v1-preview-llama-8b",
+    "name": "Cogito v1 Preview Llama 8B",
+    "provider": "Deep Cogito",
+    "category": "llm",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "llama3.1",
+    "params_b": 8.03,
+    "active_b": 8.03,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.32,
+          "cmd": "ollama run cogito:8b-v1-preview-llama-q4_K_M",
+          "source": "https://ollama.com/library/cogito/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 10.14,
+          "cmd": "ollama run cogito:8b-v1-preview-llama-q8_0",
+          "source": "https://ollama.com/library/cogito/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B",
+    "identity_note": "Maker repo deepcogito/cogito-v1-preview-llama-8B @64c4236: licence tag llama3.1. 8,030,261,248 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-03: month the maker's Hugging Face repo was created (createdAt 2025-03-31). Ollama tags cogito:8b-v1-preview-llama-q4_K_M, cogito:8b-v1-preview-llama-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B/blob/64c42369b3f322fbffb277bfff146551dd2823cc/README.md"
+    ]
+  },
+  {
+    "id": "exaone-3-5-2-4b",
+    "name": "EXAONE 3.5 2.4B Instruct",
+    "provider": "LG AI Research",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "exaone",
+    "params_b": 2.41,
+    "active_b": 2.41,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 1.95,
+          "cmd": "ollama run exaone3.5:2.4b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/exaone3.5/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 3.39,
+          "cmd": "ollama run exaone3.5:2.4b-instruct-q8_0",
+          "source": "https://ollama.com/library/exaone3.5/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "identity_note": "Maker repo LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct @ccce25b: licence tag other (exaone). 2,405,327,360 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-01). Ollama tags exaone3.5:2.4b-instruct-q4_K_M, exaone3.5:2.4b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md"
+    ]
+  },
+  {
+    "id": "granite-3-2-8b",
+    "name": "Granite 3.2 8B Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.17,
+    "active_b": 8.17,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.4,
+          "cmd": "ollama run granite3.2:8b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/granite3.2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 10.3,
+          "cmd": "ollama run granite3.2:8b-instruct-q8_0",
+          "source": "https://ollama.com/library/granite3.2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct",
+    "identity_note": "Maker repo ibm-granite/granite-3.2-8b-instruct @610d8c6: licence tag apache-2.0. 8,170,848,256 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-02: month the maker's Hugging Face repo was created (createdAt 2025-02-17). Ollama tags granite3.2:8b-instruct-q4_K_M, granite3.2:8b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct/blob/610d8c6ee9c84ce51f6dfd7bc5c0215d95d49695/README.md"
+    ]
+  },
+  {
+    "id": "deepseek-coder-v2-lite-instruct",
+    "name": "DeepSeek-Coder-V2 Lite Instruct (16B-A2.4B)",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 15.71,
+    "active_b": 2.4,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 9.93,
+          "cmd": "ollama run deepseek-coder-v2:16b-lite-instruct-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-coder-v2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 19.35,
+          "cmd": "ollama run deepseek-coder-v2:16b-lite-instruct-q8_0",
+          "source": "https://ollama.com/library/deepseek-coder-v2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "identity_note": "Maker repo deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct @e434a23: licence tag other (deepseek-license). 15,706,484,224 parameters from the Hugging Face safetensors metadata. Mixture-of-experts: pinned README: 'DeepSeek-Coder-V2 with 16B and 236B parameters ... which has actived parameters of only 2.4B and 21B'. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-14). Ollama tags deepseek-coder-v2:16b-lite-instruct-q4_K_M, deepseek-coder-v2:16b-lite-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/blob/e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11/README.md"
+    ]
+  },
+  {
+    "id": "deepseek-v2-lite-chat",
+    "name": "DeepSeek-V2 Lite Chat (16B-A2.4B)",
+    "provider": "DeepSeek",
+    "category": "llm",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "deepseek",
+    "params_b": 15.71,
+    "active_b": 2.4,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 9.93,
+          "cmd": "ollama run deepseek-v2:16b-lite-chat-q4_K_M",
+          "source": "https://ollama.com/library/deepseek-v2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 19.35,
+          "cmd": "ollama run deepseek-v2:16b-lite-chat-q8_0",
+          "source": "https://ollama.com/library/deepseek-v2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat",
+    "identity_note": "Maker repo deepseek-ai/DeepSeek-V2-Lite-Chat @8586474: licence tag other (deepseek). 15,706,484,224 parameters from the Hugging Face safetensors metadata. Mixture-of-experts: pinned README: 'DeepSeek-V2-Lite comprises 15.7B total parameters, of which 2.4B are activated for each token'. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-15). Ollama tags deepseek-v2:16b-lite-chat-q4_K_M, deepseek-v2:16b-lite-chat-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md"
+    ]
+  },
+  {
+    "id": "openthinker3-7b",
+    "name": "OpenThinker3 7B",
+    "provider": "Open Thoughts",
+    "category": "llm",
+    "released": "2025-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 18.79,
+          "cmd": "vllm serve open-thoughts/OpenThinker3-7B",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/open-thoughts/OpenThinker3-7B",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/open-thoughts/OpenThinker3-7B",
+    "identity_note": "Maker repo open-thoughts/OpenThinker3-7B @864fb9a: licence tag apache-2.0. 7,615,616,512 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-05: month the maker's Hugging Face repo was created (createdAt 2025-05-27).",
+    "identity_sources": [
+      "https://huggingface.co/open-thoughts/OpenThinker3-7B/blob/864fb9aefbb91f257c4911e4b9f85a6986f8eab2/README.md"
+    ]
+  },
+  {
+    "id": "granite-3-2-2b",
+    "name": "Granite 3.2 2B Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.53,
+    "active_b": 2.53,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.02,
+          "cmd": "ollama run granite3.2:2b-instruct-q4_K_M",
+          "source": "https://ollama.com/library/granite3.2/tags",
+          "gb_estimated": true
+        },
+        {
+          "quant": "q8_0",
+          "gb": 3.54,
+          "cmd": "ollama run granite3.2:2b-instruct-q8_0",
+          "source": "https://ollama.com/library/granite3.2/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.2-2b-instruct",
+    "identity_note": "Maker repo ibm-granite/granite-3.2-2b-instruct @641593c: licence tag apache-2.0. 2,533,531,648 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-02: month the maker's Hugging Face repo was created (createdAt 2025-02-17). Ollama tags granite3.2:2b-instruct-q4_K_M, granite3.2:2b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-3.2-2b-instruct/blob/641593c3b25bec0b1efe9f0f7d7a67f7243f86a3/README.md"
+    ]
+  },
+  {
+    "id": "granite-3-3-2b",
+    "name": "Granite 3.3 2B Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.53,
+    "active_b": 2.53,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 2.02,
+          "cmd": "ollama run granite3.3:2b",
+          "source": "https://ollama.com/library/granite3.3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
+    "identity_note": "Maker repo ibm-granite/granite-3.3-2b-instruct @707f574: licence tag apache-2.0. 2,533,539,840 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-04: month the maker's Hugging Face repo was created (createdAt 2025-04-09). Ollama tags granite3.3:2b are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count. The granite3.3 tags page lists only 2b (1.5GB) and 8b (4.9GB) builds, sizes consistent with 4-bit Q4_K_M; quant inferred from size.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md"
+    ]
+  },
+  {
+    "id": "granite-3-3-8b",
+    "name": "Granite 3.3 8B Instruct",
+    "provider": "IBM",
+    "category": "llm",
+    "released": "2025-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.17,
+    "active_b": 8.17,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k_m",
+          "gb": 5.4,
+          "cmd": "ollama run granite3.3:8b",
+          "source": "https://ollama.com/library/granite3.3/tags",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+    "identity_note": "Maker repo ibm-granite/granite-3.3-8b-instruct @51dd4bc: licence tag apache-2.0. 8,170,864,640 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-04: month the maker's Hugging Face repo was created (createdAt 2025-04-09). Ollama tags granite3.3:8b are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count. The granite3.3 tags page lists only 2b (1.5GB) and 8b (4.9GB) builds, sizes consistent with 4-bit Q4_K_M; quant inferred from size.",
+    "identity_sources": [
+      "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md"
+    ]
   }
 ]

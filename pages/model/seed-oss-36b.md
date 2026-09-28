@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 60.5** ±2.7 · #123 of 361 · from 3 benchmark results across 1 source
+**score 61.4** ±2.6 · #123 of 400 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              71.5%    60.4   2026-08-30   49% ▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  67.5%    60.8   2026-08-28   40% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>     13.0%    63.9   2026-08-28    8% ▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              71.5%    61.3   2026-08-30   48% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  67.5%    61.7   2026-08-28   41% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>     13.0%    64.8   2026-08-28    8% ▇
 prior     pull toward the middle             50.0                 3% ▇
-          weighted average                 = 60.5
+          weighted average                 = 61.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -59,8 +59,8 @@ ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OS
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~22.22GB   60.5
-8-bit gguf-q8_0    ~43.94GB   60.5
+4-bit gguf-q4_k_m  ~22.22GB   61.4
+8-bit gguf-q8_0    ~43.94GB   61.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2025-04 · proprietary
 
-**score 61.2** ±4.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.0** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  73.1%    62.0   2025-04-22   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  73.1%    62.9   2025-04-22   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior     pull toward the middle             50.0                 7% ▇
-          weighted average                 = 61.2
+          weighted average                 = 62.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

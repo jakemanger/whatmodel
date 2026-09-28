@@ -6,7 +6,7 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 47.2** ±2.1 · #225 of 361 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.2** ±2.2 · #226 of 400 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1285.5    47.2   2026-09-13   70% ▇▇▇▇▇▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   44.5%    47.0   2026-05-02   28% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1285.5    48.3   2026-09-13   68% ▇▇▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   44.5%    48.0   2026-05-02   30% ▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 47.2
+                        weighted average                        = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -63,7 +63,7 @@ api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [rep
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.82GB   47.2
+4-bit q4_k_m  ~19.82GB   48.2
 </pre>
 
 ```sh

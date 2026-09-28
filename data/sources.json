@@ -10367,5 +10367,58 @@
     "quote": "README at commit 190faf16d1: 'CRUXEval is MIT licensed, as found in the LICENSE file.' and 'We also open-source generations and outputs for the models we display on the leaderboard ... To access the scored versions of the generations run unzip evaluation_results.zip.' The zip is committed in the same repository (added in the initial commit 10d71b4, 2024-01-03). The CRUXEval paper itself (arXiv 2401.03065) is under the default arXiv licence and is not used; the separate leaderboard website is not used.",
     "scope": "samples/evaluation_results.zip members *_temp0.2_input.json and *_temp0.2_output.json (direct prediction, no chain-of-thought), field pass_at_1. Model identities from inference/scripts/run_input_prediction.sh and openai/openai_run.py in the same commit. Not imported: temperature-0.8 / pass@5 and +cot members, codetulu-2-34b (not in the catalogue), Mistral-7B-v0.1 and phi-1.5 (historical comparison set).",
     "icon": "github.com"
+  },
+  {
+    "id": "paper-2501.00656v3",
+    "name": "2 OLMo 2 Furious (Team OLMo, Ai2) — authors' own evaluations of OLMo 2 Instruct and peer instruct models",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2501.00656v3"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2501.00656v3",
+    "license_url": "/licenses/paper-2501.00656v3-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Team OLMo, Pete Walsh, Luca Soldaini, Dirk Groeneveld et al. (2024-2025). 2 OLMo 2 Furious. arXiv:2501.00656v3. https://arxiv.org/abs/2501.00656v3\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2501.00656v3 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field (evidence cached in the lane folder).",
+    "scope": "Table 7 (OLMo 2 Instruct 1B/7B/13B/32B 'relative to peer open weight models'; caption: 'All models in this table are the instruction tuned variants'): columns AE2, BBH, GSM8K, IFE, MATH, MMLU, PQA, TQA for GPT-3.5 Turbo 0125, GPT-4o mini 0724, Gemma 3 1B/27B, Llama 3.2 1B, Qwen 2.5 1.5B/7B/14B/32B/72B, Ministral 8B 2410, Llama 3.1 8B/70B, Llama 3.3 70B, Tulu 3 8B, Gemma 2 9B/27B, QwQ 32B, SmolLM2 1.7B and OLMo 2 1B/7B/13B/32B. The paper evaluates these instruct models 'from the same evaluation suite used by Lambert et al. (2024)' (Tülu 3 / OLMES instruct suite, settings in Table 21) and describes running QwQ 32B itself with its recommended sampling. Average, FLOP, Safety and DROP columns (DROP is format-sensitive: Qwen 2.5 72B 34.2 vs 7B 54.4), the Mistral Small 24B row (version not stated), OLMo 1B 0724 / OLMo 7B 0424 rows, base-model tables (6, 9, 22) and ablation tables not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2502.02737v1",
+    "name": "SmolLM2 paper (Hugging Face) — authors' own instruct-model evaluations",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2502.02737v1"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2502.02737v1",
+    "license_url": "/licenses/paper-2502.02737v1-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "attribution": "Loubna Ben Allal, Anton Lozhkov, Elie Bakouch et al. (2025). SmolLM2: When Smol Goes Big -- Data-Centric Training of a Small Language Model. arXiv:2502.02737v1. https://arxiv.org/abs/2502.02737v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
+    "quote": "The arXiv abstract page for 2502.02737v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field (evidence cached in the lane folder).",
+    "scope": "Table 5 (1-2B instruction-tuned models: SmolLM2-1.7B-Instruct, Llama3.2-1B-Instruct, Qwen2.5-1.5B-Instruct): rows IFEval (Average), BBH (3-shot), HellaSwag, PIQA, GSM8K (5-shot), MATH (4-shot), HumanEval. §5.4: 'We evaluate the final instruct version of SmolLM2 and compare it with the instruct variants of Qwen2.5-1.5B and Llama3.2-1B'; evaluations use lighteval. MT-Bench, OpenRewrite-Eval, ARC and MMLU-Pro (lighteval MCF variant) rows, base-model and ablation tables not imported.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "card2-ibm-granite-granite-3-3-8b-instruct",
+    "name": "ibm-granite/granite-3.3-8b-instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "/licenses/ibm-granite--granite-3.3-8b-instruct.txt",
+    "terms_url": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md",
+    "quote": "README front-matter at the pinned revision declares 'license: apache-2.0'; no root LICENSE file; grant clause: 'each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work ...'. Selected own-lab result cells (Granite 3.1/3.2/3.3 2B and 8B Instruct rows of the 'Evaluation Results' tables) in the pinned README only; competitor rows (Llama-3.1-8B-Instruct, Qwen-2.5-7B-Instruct, DeepSeek-R1 distills), linked blogs and images are not used.",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "icon": "huggingface.co",
+    "attribution": "ibm-granite. ibm-granite/granite-3.3-8b-instruct model card. Source: https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md. Licence: Apache-2.0. Changes: selected own-lab numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
   }
 ]

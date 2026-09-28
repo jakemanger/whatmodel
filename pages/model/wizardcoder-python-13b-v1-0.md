@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 13B params · llama2
 
-**score 35.4** ±3.6 · #297 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±3.3 · #327 of 400 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    33.2   2024-01-03   49% ▇▇▇▇▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              41.3%    35.9   2024-01-03   45% ▇▇▇▇▇
-prior                   pull toward the middle           50.0                 6% ▇
-                        weighted average               = 35.4
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              36.5%    34.4   2024-01-03   50% ▇▇▇▇▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              41.3%    36.9   2024-01-03   45% ▇▇▇▇▇
+prior                   pull toward the middle           50.0                 5% ▇
+                        weighted average               = 36.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle           50.0                 6%
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~7.9GB   35.4
-8-bit q8_0     ~14GB   35.4
+4-bit q4_k_m  ~7.9GB   36.3
+8-bit q8_0     ~14GB   36.3
 </pre>
 
 ```sh

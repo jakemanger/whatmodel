@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 35.7** ±1.3 · #292 of 361 · from 8 benchmark results across 2 sources
+**score 37.0** ±1.3 · #314 of 400 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,16 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.5%    34.1   2024-05-07   37% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      42.6%    35.1   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      43.9%    36.1   2024-05-07   13% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            53.0%    39.0   2024-05-07   11% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            21.8%    38.9   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           49.0%    38.1   2024-05-07    3% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      56.2%    36.5   2024-06-19    9% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 44.5%    34.6   2024-06-19    9% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.5%    35.4   2024-05-07   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      42.6%    36.4   2024-05-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      43.9%    37.5   2024-05-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            53.0%    40.3   2024-05-07   10% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            21.8%    40.1   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           49.0%    39.3   2024-05-07    3% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      56.2%    37.7   2024-06-19    9% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 44.5%    35.8   2024-06-19    9% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 35.7
+                        weighted average                       = 37.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.3GB   35.7
-8-bit q8_0    ~9.1GB   35.7
+4-bit q4_k_m  ~5.3GB   37.0
+8-bit q8_0    ~9.1GB   37.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 52.2** ±2.1 · #182 of 361 · from 3 benchmark results across 3 sources
+**score 52.7** ±2.1 · #184 of 400 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.5    54.9   2026-09-13   68% ▇▇▇▇▇▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    53.2   2026-05-10   23% ▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   10.0%    23.0   2025-12-16    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.5    55.8   2026-09-13   65% ▇▇▇▇▇▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    54.1   2026-05-10   25% ▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   10.0%    24.6   2025-12-16    8% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 52.2
+                        weighted average                        = 52.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -49,8 +49,8 @@ NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">MATH-500</a>              
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~152.3GB   52.2
-2-bit ud-q2_k_xl   ~76.4GB   52.2
+4-bit ud-q4_k_xl  ~152.3GB   52.7
+2-bit ud-q2_k_xl   ~76.4GB   52.7
 </pre>
 
 ```sh

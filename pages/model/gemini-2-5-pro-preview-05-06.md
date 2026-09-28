@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 63.2** ±1.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.0** ±1.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            95.9%    65.1   2025-05-08   73% ▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            66.7%    58.7   2025-06-03   26% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            95.9%    65.7   2025-05-08   74% ▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            66.7%    59.6   2025-06-03   24% ▇▇▇
 prior     pull toward the middle           50.0                 2% ▇
-          weighted average               = 63.2
+          weighted average               = 64.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

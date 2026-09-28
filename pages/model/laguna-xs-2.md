@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 60.5** ±2.5 · #124 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.3** ±2.5 · #124 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1302.2    60.8   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1302.2    61.6   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               50.0                 3% ▇
-                        weighted average                   = 60.5
+                        weighted average                   = 61.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,7 +43,7 @@ Poolside                <a href="https://arxiv.org/html/2605.27605v1">Terminal-B
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  66.89GB   60.5
+16-bit bf16 · nvidia only  66.89GB   61.3
 </pre>
 
 ```sh

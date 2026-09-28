@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-01 · proprietary
 
-**score 16.3** ±3.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 16.6** ±3.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  15.2%    14.3   2024-01-03   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  15.2%    14.5   2024-01-03   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 16.3
+                        weighted average                       = 16.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

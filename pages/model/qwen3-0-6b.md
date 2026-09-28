@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 0.75B params · apache-2.0
 
-**score 21.5** ±1.4 · #358 of 361 · from 14 benchmark results across 6 sources
+**score 23.6** ±1.4 · #391 of 400 · from 14 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,27 +16,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       11.2%    18.2   2026-09-25   16% ▇▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       15.2%    21.2   2026-09-25   12% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      14.8%    15.1   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  41.5%    19.8   2026-09-25   10% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  62.3%    20.2   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      29.8%    25.2   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            55.8%    24.2   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                34.4%    26.3   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       27.2%    24.5   2026-09-25    4% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  50.3%    24.3   2025-05-01    7% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   1.6%    10.5   2025-10-02    6% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.3%    25.5   2026-09-19    5% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    29.7   2025-06-03    4% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  23.9%    40.6   2025-12-16    3% ▇
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       11.2%    20.0   2026-09-25   15% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       15.2%    23.0   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  41.5%    21.6   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      14.8%    16.9   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  62.3%    22.0   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      29.8%    27.0   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            55.8%    26.0   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                34.4%    28.1   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       27.2%    26.3   2026-09-25    4% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.3%    27.8   2026-09-19    7% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  50.3%    21.4   2025-05-01    5% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   1.6%    17.1   2025-10-02    5% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  20.4%    29.6   2025-06-03    4% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  23.9%    42.0   2025-12-16    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 21.5
+                        weighted average                       = 23.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -44,8 +44,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~0.95GB   21.5
-8-bit q8_0     ~1.4GB   21.5
+4-bit q4_k_m  ~0.95GB   23.6
+8-bit q8_0     ~1.4GB   23.6
 </pre>
 
 ```sh

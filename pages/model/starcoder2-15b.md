@@ -6,7 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 35.2** ±0.8 · #301 of 361 · from 12 benchmark results across 3 sources
+**score 36.5** ±0.8 · #325 of 400 · from 12 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,20 +16,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    32.9   2024-03-28   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    32.9   2024-03-28   21% ▇▇▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 46.3%    35.8   2024-02-29    8% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    36.1   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    35.2   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    41.1   2024-02-29    5% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    37.4   2024-02-29    2% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    36.5   2024-02-29    2% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    35.3   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    38.1   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    38.0   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    37.8   2024-05-07    4% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    34.0   2024-03-28   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    34.0   2024-03-28   18% ▇▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 46.3%    37.1   2024-02-29    8% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    37.4   2024-02-29    7% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    36.4   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    42.3   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    38.6   2024-02-29    2% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    37.7   2024-02-29    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    36.7   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    39.4   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    39.3   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    39.2   2024-05-07    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 35.2
+                        weighted average                       = 36.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,8 +40,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~9.9GB   35.2
-8-bit q8_0     ~17GB   35.2
+4-bit q4_k_m  ~9.9GB   36.5
+8-bit q8_0     ~17GB   36.5
 </pre>
 
 ```sh

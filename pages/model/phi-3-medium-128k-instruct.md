@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-04 · 13.96B params · mit
 
-**score 39.8** ±1.9 · #264 of 361 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.3** ±1.8 · #282 of 400 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -15,23 +15,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) compar
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            17.6%    41.0   2025-01-31   73% ▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            27.6%    35.7   2025-01-31   26% ▇▇▇
-prior     pull toward the middle           50.0                 2% ▇
-          weighted average               = 39.8
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    17.6%    42.3   2025-01-31   68% ▇▇▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    27.6%    37.0   2025-01-31   22% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.7%    43.1   2024-05-21    9% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 41.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit q4_0   ~8.88GB   39.8
-8-bit q8_0  ~17.25GB   39.8
+4-bit q4_0   ~8.88GB   41.3
+8-bit q8_0  ~17.25GB   41.3
 </pre>
 
 ```sh

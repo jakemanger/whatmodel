@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 34.0** ±1.2 · #312 of 361 · from 4 benchmark results across 2 sources
+**score 35.0** ±1.2 · #338 of 400 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    34.3   2024-03-28   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    34.5   2024-03-28   45% ▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    29.7   2024-01-03    5% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    29.5   2024-01-03    5% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    35.4   2024-03-28   47% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    35.6   2024-03-28   40% ▇▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    31.0   2024-01-03    6% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    30.7   2024-01-03    6% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 34.0
+                        weighted average               = 35.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit q4_0   ~1.6GB   34.0
-4-bit fp16  ~5.56GB   34.0
+4-bit q4_0   ~1.6GB   35.0
+4-bit fp16  ~5.56GB   35.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 57.3** ±1.9 · #147 of 361 · from 3 benchmark results across 2 sources
+**score 58.4** ±2.0 · #146 of 400 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1351.5    55.4   2026-09-13   59% ▇▇▇▇▇▇▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    62.3   2026-09-07   24% ▇▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    57.5   2026-09-07   16% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1351.5    56.3   2026-09-13   55% ▇▇▇▇▇▇▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    63.2   2026-09-07   26% ▇▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    58.6   2026-09-07   18% ▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 57.3
+                        weighted average                        = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,9 +35,9 @@ api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [
 
 <pre>
 download                        size  score
-4-bit q4_k_m                ~19.46GB   57.3
-8-bit q8_0                  ~38.42GB   57.3
-4-bit mlx-nvfp4 · mac only  ~19.46GB   57.3
+4-bit q4_k_m                ~19.46GB   58.4
+8-bit q8_0                  ~38.42GB   58.4
+4-bit mlx-nvfp4 · mac only  ~19.46GB   58.4
 </pre>
 
 ```sh

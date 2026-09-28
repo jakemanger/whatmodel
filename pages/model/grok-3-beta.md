@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-04 · proprietary
 
-**score 59.7** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 60.6** ±1.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              88.7%    59.5   2025-04-10   60% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              75.8%    62.0   2025-05-26   21% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  55.6%    58.5   2025-04-10   17% ▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              88.7%    60.3   2025-04-10   62% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              75.8%    62.9   2025-05-26   20% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  55.6%    59.4   2025-04-10   17% ▇▇
 prior     pull toward the middle             50.0                 1% ▇
-          weighted average                 = 59.7
+          weighted average                 = 60.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

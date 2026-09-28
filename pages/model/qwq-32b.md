@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
-**score 55.1** ±1.8 · #162 of 361 · from 4 benchmark results across 2 sources
+**score 58.6** ±1.3 · #141 of 400 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -15,25 +15,31 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) compar
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                       score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1335.8    53.4   2026-09-13   52% ▇▇▇▇▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               65.3%    58.2   2026-08-28   23% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   59.2%    59.2   2026-08-28   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       5.0%    40.9   2026-08-28    4% ▇
-prior                   pull toward the middle              50.0                 2% ▇
-                        weighted average                  = 55.1
+source                  test                             score  implies  date        weight
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             88.4%    56.6   2025-10-08   18% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   89.6%    60.3   2025-10-08   14% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            95.5%    59.9   2025-10-08    8% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   82.4%    67.8   2025-10-08    6% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        98.1%    82.0   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        85.8%    53.2   2025-10-08    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1335.8    54.4   2026-09-13   23% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     65.3%    59.2   2026-08-28   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         59.2%    60.1   2026-08-28   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             5.0%    42.0   2026-08-28    2% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 58.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~20.16GB   55.1
-8-bit q8_0    ~39.81GB   55.1
+4-bit q4_k_m  ~20.16GB   58.6
+8-bit q8_0    ~39.81GB   58.6
 </pre>
 
 ```sh

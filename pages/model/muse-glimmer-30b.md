@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · 29.8B params · apache-2.0
 
-**score 64.5** ±1.7 · #87 of 361 · from 3 benchmark results across 2 sources
+**score 65.2** ±1.7 · #87 of 400 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1359.6    63.4   2026-09-24   43% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1427.2    64.7   2026-09-13   43% ▇▇▇▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    68.6   2026-08-11   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1359.6    64.2   2026-09-24   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1427.2    65.6   2026-09-13   40% ▇▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    68.6   2026-08-11   14% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.5
+                        weighted average                        = 65.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -60,8 +60,8 @@ api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [f
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~18.38GB   64.5
-8-bit q8_0    ~36.26GB   64.5
+4-bit q4_k_m  ~18.38GB   65.2
+8-bit q8_0    ~36.26GB   65.2
 </pre>
 
 ```sh

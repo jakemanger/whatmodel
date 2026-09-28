@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md)
 
-updated 2026-09-28 22:55 UTC · 46 models · scores combine 81 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-09-28 23:09 UTC · 46 models · scores combine 81 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
 Run `curl "whatmodel.sh/tts?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/tts` for this list in your terminal.
 

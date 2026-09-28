@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 54.2** ±2.5 · #168 of 361 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.1** ±2.6 · #168 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1343.1    54.3   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1343.1    55.3   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 54.2
+                        weighted average                = 55.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download             size  score
-4-bit ud-q4_k_xl  ~29.9GB   54.2
-2-bit ud-q2_k_xl  ~15.2GB   54.2
+4-bit ud-q4_k_xl  ~29.9GB   55.1
+2-bit ud-q2_k_xl  ~15.2GB   55.1
 </pre>
 
 ```sh
