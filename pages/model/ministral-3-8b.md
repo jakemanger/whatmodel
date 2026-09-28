@@ -6,9 +6,9 @@
 
 Mistral · released 2025-12 · 8.92B params · apache-2.0
 
-**score 41.7** ±3.5 · #182 of 257 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.6** ±3.1 · #219 of 329 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  50.9%    42.9   2026-09-25   50% ▇▇▇▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  44.4%    39.3   2026-05-02   45% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 41.7
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  44.4%    45.3   2026-05-02   56% ▇▇▇▇▇▇▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  50.9%    48.1   2026-09-25   39% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 46.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -43,8 +43,8 @@ api (Mistral) · $0.15/M blended · $0.15 in / $0.15 out per 1M tokens · [docs.
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.85GB   41.7
-8-bit q8_0    ~11.2GB   41.7
+4-bit q4_k_m  ~5.85GB   46.6
+8-bit q8_0    ~11.2GB   46.6
 </pre>
 
 ```sh

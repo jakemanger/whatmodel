@@ -6,9 +6,9 @@
 
 Anthropic · released 2026-09 · closed weights
 
-**score 86.6** ±1.9 · #1 of 257 · from 4 benchmark results across 3 sources
+**score 84.1** ±1.6 · #1 of 329 · from 4 benchmark results across 3 sources
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       83.3%    89.2   2026-09-22   43% ▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                71.4%    86.0   2026-09-22   23% ▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1818.4    86.1   2026-09-24   27% ▇▇▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   70.9%    82.4   2026-09-22    6% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 86.6
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       83.3%    87.2   2026-09-22   31% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                71.4%    84.0   2026-09-22   24% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1818.4    83.1   2026-09-24   36% ▇▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   70.9%    80.5   2026-09-22    8% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 84.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

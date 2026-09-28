@@ -6,9 +6,9 @@
 
 Alibaba · released 2024-11 · proprietary
 
-**score 40.6** ±0.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 47.5** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              56.2%    40.7   2025-04-07   95% ▇▇▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   6.1%    35.3   2025-04-07    3% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              41.8%    40.2   2025-04-07    1% ▇
-prior     pull toward the middle             50.0                 0% ▇
-          weighted average                 = 40.6
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              56.2%    48.6   2025-04-07   58% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              41.8%    47.6   2025-04-07   23% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   6.1%    43.3   2025-04-07   18% ▇▇
+prior     pull toward the middle             50.0                 1% ▇
+          weighted average                 = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

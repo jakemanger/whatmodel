@@ -6,9 +6,9 @@
 
 IBM · released 2026-04 · 8.79B params · apache-2.0
 
-**score 45.0** ±2.8 · #165 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.5** ±1.7 · #180 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1191.5    47.6   2026-09-24   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1306.0    39.5   2026-09-13   34% ▇▇▇▇
-prior                   pull toward the middle               50.0                 4% ▇
-                        weighted average                   = 45.0
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1306.0    47.8   2026-09-13   58% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1191.5    54.3   2026-09-24   41% ▇▇▇▇▇
+prior                   pull toward the middle               50.0                 1% ▇
+                        weighted average                   = 50.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

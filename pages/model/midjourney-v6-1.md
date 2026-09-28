@@ -6,7 +6,7 @@
 
 Midjourney · released 2024-07 · proprietary
 
-**score 40.8** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.6** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.33 / 5    40.2   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.33 / 5    40.0   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                 6% ▇
-                        weighted average                          = 40.8
+                        weighted average                          = 40.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

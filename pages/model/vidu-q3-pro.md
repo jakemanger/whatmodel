@@ -6,7 +6,7 @@
 
 ShengShu (Vidu) · released 2026-01 · proprietary
 
-**score 63.8** ±2.5 · #18 of 70 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 64.0** ±2.5 · #17 of 70 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1363.1    65.3   2026-09-22   61% ▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>   987.0    62.1   2026-09-25   36% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1363.1    65.5   2026-09-22   62% ▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>   987.0    62.3   2026-09-25   35% ▇▇▇▇
 prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 63.8
+                        weighted average                        = 64.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

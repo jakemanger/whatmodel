@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-08 · 5B params · cogvideox
 
-**score 41.6** ±1.8 · #49 of 70 · from 6 benchmark results across 4 sources
+**score 41.5** ±1.8 · #49 of 70 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -19,9 +19,9 @@ source                  test                                score  implies  date
                         <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>      49.0%    41.9   2026-01-30    8% ▇
 <a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>     1125.6    40.4   2025-03-22   32% ▇▇▇▇
 <a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   7.31 / 10    38.6   2025-02-28   13% ▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                    74.8%    17.5   2026-04-22    1% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                    74.8%    22.4   2026-04-22    2% ▇
 prior                   pull toward the middle                       49.9                 1% ▇
-                        weighted average                           = 41.6
+                        weighted average                           = 41.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/cogvideox-5b
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~12.5GB   41.6
+bf16 · nvidia only  ~12.5GB   41.5
 </pre>
 
 ```sh

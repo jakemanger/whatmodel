@@ -6,7 +6,7 @@
 
 Tencent
 
-**score 41.8** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.9** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    41.0   2025-04-21   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 41.8
+                        weighted average                       = 41.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

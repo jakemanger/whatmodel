@@ -6,9 +6,9 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 54.6** ±2.6 · #120 of 257 · from 3 benchmark results across 1 source
+**score 60.6** ±1.5 · #114 of 329 · from 3 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1264.5    52.1   2026-09-24   53% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.3    60.6   2026-09-13   28% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1199.0    53.4   2026-09-13   16% ▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 54.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1426.3    63.1   2026-09-13   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1264.5    57.6   2026-09-24   32% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1199.0    60.1   2026-09-13   22% ▇▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 60.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ api (Mistral AI) · $3.00/M blended · $1.5 in / $7.5 out per 1M tokens · [docs
 
 <pre>
 download             size  score
-4-bit q4_k_m      ~77.3GB   54.6
-2-bit ud-q2_k_xl  ~38.9GB   54.6
+4-bit q4_k_m      ~77.3GB   60.6
+2-bit ud-q2_k_xl  ~38.9GB   60.6
 </pre>
 
 ```sh

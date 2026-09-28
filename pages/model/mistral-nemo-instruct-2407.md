@@ -6,9 +6,9 @@
 
 Mistral · released 2024-07 · 12.25B params · apache-2.0
 
-**score 26.4** ±0.7 · #243 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.2** ±2.0 · #268 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            10.8%    26.4   2025-01-27   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            29.9%    28.4   2025-01-27    2% ▇
-prior     pull toward the middle           50.0                 0% ▇
-          weighted average               = 26.4
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            10.8%    36.4   2025-01-27   71% ▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            29.9%    38.3   2025-01-27   27% ▇▇▇
+prior     pull toward the middle           50.0                 2% ▇
+          weighted average               = 37.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,9 +30,9 @@ prior     pull toward the middle           50.0                 0% ▇
 
 <pre>
 download         size  score
-4-bit q4_0    ~7.85GB   26.4
-4-bit q4_k_m  ~7.85GB   26.4
-8-bit q8_0    ~15.2GB   26.4
+4-bit q4_0    ~7.85GB   37.2
+4-bit q4_k_m  ~7.85GB   37.2
+8-bit q8_0    ~15.2GB   37.2
 </pre>
 
 ```sh

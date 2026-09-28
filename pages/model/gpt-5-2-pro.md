@@ -6,9 +6,9 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 71.3** ±1.4 · #19 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 71.9** ±1.3 · #19 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                       score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  74.0%    71.5   2026-06-13   57% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     46.0%    71.4   2026-06-13   42% ▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  74.0%    72.1   2026-06-13   64% ▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     46.0%    72.1   2026-06-13   35% ▇▇▇▇
 prior     pull toward the middle              50.0                 1% ▇
-          weighted average                  = 71.3
+          weighted average                  = 71.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

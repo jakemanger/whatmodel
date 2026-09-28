@@ -6,31 +6,32 @@
 
 Alibaba · released 2024-02 · 72.29B params · tongyi-qianwen
 
-**score 29.3** ±5.4 · #234 of 257 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.2** ±1.9 · #260 of 329 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            28.8%    26.2   2025-01-27   87% ▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                13% ▇▇
-          weighted average               = 29.3
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1233.2    38.5   2026-09-13   73% ▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>             28.8%    36.6   2025-01-27   25% ▇▇▇
+prior                   pull toward the middle            50.0                 2% ▇
+                        weighted average                = 38.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit q4_0  ~43.87GB   29.3
-8-bit q8_0  ~87.25GB   29.3
+4-bit q4_0  ~43.87GB   38.2
+8-bit q8_0  ~87.25GB   38.2
 </pre>
 
 ```sh

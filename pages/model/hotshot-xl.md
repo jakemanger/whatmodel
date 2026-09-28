@@ -6,7 +6,7 @@
 
 Hotshot · released 2023-10 · openrail++
 
-**score 28.6** ±3.0 · #67 of 70 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.7** ±3.0 · #67 of 70 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  42.7%    26.7   2025-05-17   56% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  47.8%    29.2   2025-05-17   41% ▇▇▇▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  42.7%    26.8   2025-05-17   56% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  47.8%    29.3   2025-05-17   41% ▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 28.6
+                        weighted average                       = 28.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~10GB   28.6
+fp16 · nvidia only  ~10GB   28.7
 </pre>
 
 ```sh

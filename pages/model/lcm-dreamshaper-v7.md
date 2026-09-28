@@ -6,7 +6,7 @@
 
 SimianLuo (LCM authors) · released 2023-10 · mit
 
-**score 21.9** ±3.4 · #105 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.6** ±3.4 · #108 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  817.0    20.4   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  817.0    20.2   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 21.9
+                        weighted average                       = 21.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~4.6GB   21.9
+fp32 · nvidia only  ~4.6GB   21.6
 </pre>
 
 ```sh

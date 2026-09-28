@@ -6,9 +6,9 @@
 
 Google · released 2025-03 · proprietary
 
-**score 59.8** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.3** ±3.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            83.8%    61.2   2025-03-31   87% ▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                13% ▇▇
-          weighted average               = 59.8
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            83.8%    64.2   2025-03-31   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior     pull toward the middle           50.0                 6% ▇
+          weighted average               = 63.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

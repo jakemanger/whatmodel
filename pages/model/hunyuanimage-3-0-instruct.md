@@ -6,7 +6,7 @@
 
 Tencent · tencent-hunyuan-community
 
-**score 64.1** ±3.9 · #19 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.1** ±3.9 · #20 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1302.4    65.1   2026-09-22   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1302.4    65.1   2026-09-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 6% ▇
                         weighted average                = 64.1
 </pre>
 

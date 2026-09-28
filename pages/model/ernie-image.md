@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 57.6** ±4.1 · #44 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.4** ±4.2 · #45 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    58.2   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    58.0   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 57.6
+                        weighted average                       = 57.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,8 +46,8 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 <pre>
 version                      needs  score
-bf16 · nvidia only         ~19.7GB   57.6
-gguf-q4_k_m · nvidia only   ~5.3GB   57.6
+bf16 · nvidia only         ~19.7GB   57.4
+gguf-q4_k_m · nvidia only   ~5.3GB   57.4
 </pre>
 
 ```sh

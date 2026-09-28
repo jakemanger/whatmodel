@@ -6,7 +6,7 @@
 
 Meta · released 2026-07 · proprietary
 
-**score 74.7** ±1.8 · #6 of 105 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.8** ±1.8 · #6 of 108 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -19,7 +19,7 @@ source                  test                     score  implies  date        wei
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1276.0    74.8   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1402.1    76.3   2026-09-22   20% ▇▇
 prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 74.7
+                        weighted average                = 74.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

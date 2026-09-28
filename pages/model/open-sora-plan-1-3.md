@@ -6,7 +6,7 @@
 
 Peking University (PKU-YuanGroup) · released 2024-10 · 2.7B params · mit
 
-**score 42.4** ±4.8 · #48 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.3** ±4.8 · #48 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                               score  implies  date        weight
 <a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  7.61 / 10    41.5   2025-02-28   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                10% ▇
-                        weighted average                          = 42.4
+                        weighted average                          = 42.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version             needs  score
-bf16 · nvidia only  ~24GB   42.4
+bf16 · nvidia only  ~24GB   42.3
 </pre>
 
 ```sh

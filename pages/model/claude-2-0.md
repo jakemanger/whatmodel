@@ -6,9 +6,9 @@
 
 Anthropic · released 2023-07 · proprietary
 
-**score 27.1** ±0.7 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 38.8** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              11.7%    26.9   2025-01-27   95% ▇▇▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    29.9   2025-03-07    3% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              34.7%    34.6   2025-01-27    1% ▇
-prior     pull toward the middle             50.0                 0% ▇
-          weighted average                 = 27.1
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              11.7%    36.8   2025-01-27   58% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              34.7%    43.2   2025-01-27   23% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    38.9   2025-03-07   18% ▇▇
+prior     pull toward the middle             50.0                 1% ▇
+          weighted average                 = 38.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

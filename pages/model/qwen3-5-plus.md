@@ -6,9 +6,9 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 60.9** ±2.8 · #76 of 257 · from 5 benchmark results across 1 source
+**score 63.8** ±2.3 · #76 of 329 · from 5 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                          score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    61.4   2026-08-07   46% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  84.8%    61.9   2026-08-07   24% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             25.4%    56.1   2026-08-27   13% ▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         22.0%    67.4   2026-08-07    7% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  16.0%    62.9   2026-08-05    6% ▇
-prior     pull toward the middle                 50.0                 4% ▇
-          weighted average                     = 60.9
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  84.8%    64.7   2026-08-07   37% ▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    64.6   2026-08-07   29% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             25.4%    60.2   2026-08-27   18% ▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  16.0%    65.3   2026-08-05    8% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         22.0%    69.3   2026-08-07    6% ▇
+prior     pull toward the middle                 50.0                 2% ▇
+          weighted average                     = 63.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

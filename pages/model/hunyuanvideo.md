@@ -6,7 +6,7 @@
 
 Tencent · released 2024-12 · 13B params · tencent-hunyuan-community
 
-**score 36.8** ±2.4 · #53 of 70 · from 5 benchmark results across 3 sources
+**score 36.8** ±2.4 · #54 of 70 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                    score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>          17.2%    36.3   2026-01-30   37% ▇▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>          17.2%    36.4   2026-01-30   37% ▇▇▇▇
                         <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>          35.0%    28.8   2026-01-30   14% ▇▇
 <a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>          56.4%    39.9   2025-04-21   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          82.7%    39.5   2025-04-21   13% ▇▇
+                        <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          82.7%    39.6   2025-04-21   13% ▇▇
 <a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  898.07 / 1608    36.0   2026-05-15   13% ▇▇
 prior                   pull toward the middle                           49.9                 2% ▇
                         weighted average                               = 36.8

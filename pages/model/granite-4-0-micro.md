@@ -6,9 +6,9 @@
 
 IBM · released 2025-09 · 3.4B params · apache-2.0
 
-**score 30.0** ±3.1 · #232 of 257 · from 3 benchmark results across 1 source
+**score 37.8** ±2.7 · #264 of 329 · from 3 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.8%    30.5   2026-08-30   57% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              28.3%    24.9   2026-08-30   29% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    33.2   2026-08-30    9% ▇
-prior     pull toward the middle             50.0                 4% ▇
-          weighted average                 = 30.0
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              28.3%    35.6   2026-08-30   50% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.8%    39.4   2026-08-30   39% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    39.1   2026-08-30    8% ▇
+prior     pull toward the middle             50.0                 3% ▇
+          weighted average                 = 37.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -62,7 +62,7 @@ ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.54GB   30.0
+4-bit q4_k_m  ~2.54GB   37.8
 </pre>
 
 ```sh

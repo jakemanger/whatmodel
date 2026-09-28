@@ -6,31 +6,32 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 38.6** ±8.5 · #199 of 257 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.9** ±2.1 · #321 of 329 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>    0.0%    33.2   2026-08-30   68% ▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                32% ▇▇▇▇
-          weighted average               = 38.6
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1107.7    22.5   2026-09-13   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>     0.0%    39.1   2026-08-30    5% ▇
+prior                   pull toward the middle            50.0                 2% ▇
+                        weighted average                = 23.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download       size  score
-4-bit q4_0  ~4.54GB   38.6
-8-bit q8_0  ~8.59GB   38.6
+4-bit q4_0  ~4.54GB   23.9
+8-bit q8_0  ~8.59GB   23.9
 </pre>
 
 ```sh

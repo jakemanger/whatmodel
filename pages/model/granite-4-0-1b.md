@@ -6,9 +6,9 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 20.4** ±3.1 · #250 of 257 · from 3 benchmark results across 1 source
+**score 28.3** ±2.7 · #307 of 329 · from 3 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.8%    23.1   2026-08-30   57% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              24.0%     6.5   2026-08-28   29% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    33.2   2026-08-30    9% ▇
-prior     pull toward the middle             50.0                 4% ▇
-          weighted average                 = 20.4
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              24.0%    21.2   2026-08-28   50% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.8%    33.4   2026-08-30   39% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    39.1   2026-08-30    8% ▇
+prior     pull toward the middle             50.0                 3% ▇
+          weighted average                 = 28.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior     pull toward the middle             50.0                 4% ▇
 
 <pre>
 download        size  score
-16-bit bf16  ~4.41GB   20.4
+16-bit bf16  ~4.41GB   28.3
 </pre>
 
 ```sh

@@ -6,9 +6,9 @@
 
 Alibaba · released 2025-04 · 4.02B params · apache-2.0
 
-**score 43.6** ±4.8 · #173 of 257 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.3** ±3.4 · #182 of 329 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            52.3%    45.9   2026-08-28   68% ▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>    1.0%    33.2   2026-08-28   22% ▇▇▇
-prior     pull toward the middle           50.0                10% ▇
-          weighted average               = 43.6
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            52.3%    52.1   2026-08-28   82% ▇▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>    1.0%    39.1   2026-08-28   13% ▇▇
+prior     pull toward the middle           50.0                 5% ▇
+          weighted average               = 50.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior     pull toward the middle           50.0                10% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.91GB   43.6
-8-bit q8_0    ~5.32GB   43.6
+4-bit q4_k_m  ~2.91GB   50.3
+8-bit q8_0    ~5.32GB   50.3
 </pre>
 
 ```sh

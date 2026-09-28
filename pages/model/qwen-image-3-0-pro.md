@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-07 · proprietary
 
-**score 72.3** ±2.0 · #11 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 72.3** ±2.0 · #11 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 

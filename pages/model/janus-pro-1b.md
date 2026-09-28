@@ -6,7 +6,7 @@
 
 DeepSeek
 
-**score 24.8** ±5.0 · #102 of 105 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.5** ±5.0 · #105 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    21.8   2026-06-02   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    21.5   2026-06-02   89% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 24.8
+                        weighted average                       = 24.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

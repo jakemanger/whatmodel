@@ -6,9 +6,9 @@
 
 Anthropic · released 2023-11 · proprietary
 
-**score 30.9** ±3.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.3** ±2.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   1.9%    28.4   2025-03-07   63% ▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              33.0%    32.8   2025-01-27   32% ▇▇▇▇
-prior     pull toward the middle             50.0                 5% ▇
-          weighted average                 = 30.9
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              33.0%    41.8   2025-01-27   54% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   1.9%    37.7   2025-03-07   42% ▇▇▇▇▇
+prior     pull toward the middle             50.0                 3% ▇
+          weighted average                 = 40.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

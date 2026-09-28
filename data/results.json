@@ -129976,5 +129976,3205 @@
       "https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/registry/evaluator/seed_tts_eval.yaml"
     ],
     "scale_divisor": 100
+  },
+  {
+    "model": "vicuna-7b-v1-5",
+    "bench": "lmarena-text",
+    "score": 1115,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"vicuna-7b\"; 6,923 votes; 95% CI 1105.8-1124.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "vicuna-13b-v1-5",
+    "bench": "lmarena-text",
+    "score": 1141.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"vicuna-13b\"; 19,367 votes; 95% CI 1134.5-1147.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "vicuna-33b-v1-3",
+    "bench": "lmarena-text",
+    "score": 1172.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"vicuna-33b\"; 22,479 votes; 95% CI 1166.4-1178.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "fastchat-t5-3b",
+    "bench": "lmarena-text",
+    "score": 992.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"fastchat-t5-3b\"; 4,203 votes; 95% CI 979.9-1004.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "alpaca-13b",
+    "bench": "lmarena-text",
+    "score": 1069.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"alpaca-13b\"; 5,745 votes; 95% CI 1058.3-1081.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "koala-13b",
+    "bench": "lmarena-text",
+    "score": 1070.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"koala-13b\"; 6,965 votes; 95% CI 1060.7-1080.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "oasst-sft-4-pythia-12b",
+    "bench": "lmarena-text",
+    "score": 1023.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"oasst-pythia-12b\"; 6,310 votes; 95% CI 1012.3-1033.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt4all-13b-snoozy",
+    "bench": "lmarena-text",
+    "score": 1067.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt4all-13b-snoozy\"; 1,743 votes; 95% CI 1052.1-1082.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "guanaco-33b",
+    "bench": "lmarena-text",
+    "score": 1127.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"guanaco-33b\"; 2,921 votes; 95% CI 1115.1-1139.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "rwkv-4-raven-14b",
+    "bench": "lmarena-text",
+    "score": 1042,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"RWKV-4-Raven-14B\"; 4,845 votes; 95% CI 1030.6-1053.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "stablelm-tuned-alpha-7b",
+    "bench": "lmarena-text",
+    "score": 952.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"stablelm-tuned-alpha-7b\"; 3,287 votes; 95% CI 940.2-965.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "dolly-v2-12b",
+    "bench": "lmarena-text",
+    "score": 982,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"dolly-v2-12b\"; 3,412 votes; 95% CI 968.5-995.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mpt-7b-chat",
+    "bench": "lmarena-text",
+    "score": 1063,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mpt-7b-chat\"; 3,924 votes; 95% CI 1051.1-1074.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mpt-30b-chat",
+    "bench": "lmarena-text",
+    "score": 1150.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mpt-30b-chat\"; 2,572 votes; 95% CI 1138.2-1162.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "falcon-180b-chat",
+    "bench": "lmarena-text",
+    "score": 1147.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"falcon-180b-chat\"; 1,295 votes; 95% CI 1130.7-1164.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "dolphin-2-2-1-mistral-7b",
+    "bench": "lmarena-text",
+    "score": 1152,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"dolphin-2.2.1-mistral-7b\"; 1,679 votes; 95% CI 1136.7-1167.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "openhermes-2-5-mistral-7b",
+    "bench": "lmarena-text",
+    "score": 1175.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"openhermes-2.5-mistral-7b\"; 5,006 votes; 95% CI 1165.2-1186.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nous-hermes-2-mixtral-8x7b-dpo",
+    "bench": "lmarena-text",
+    "score": 1164.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"nous-hermes-2-mixtral-8x7b-dpo\"; 3,777 votes; 95% CI 1152.3-1176.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "openchat-3-5",
+    "bench": "lmarena-text",
+    "score": 1182.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"openchat-3.5\"; 7,968 votes; 95% CI 1173.0-1192.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "openchat-3-5-0106",
+    "bench": "lmarena-text",
+    "score": 1182.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"openchat-3.5-0106\"; 12,637 votes; 95% CI 1174.4-1190.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "starling-lm-7b-alpha",
+    "bench": "lmarena-text",
+    "score": 1167.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"starling-lm-7b-alpha\"; 10,224 votes; 95% CI 1159.1-1175.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "starling-lm-7b-beta",
+    "bench": "lmarena-text",
+    "score": 1170.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"starling-lm-7b-beta\"; 16,056 votes; 95% CI 1163.4-1178.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "zephyr-7b-alpha",
+    "bench": "lmarena-text",
+    "score": 1126.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"zephyr-7b-alpha\"; 1,785 votes; 95% CI 1111.1-1142.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "zephyr-7b-beta",
+    "bench": "lmarena-text",
+    "score": 1130.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"zephyr-7b-beta\"; 11,118 votes; 95% CI 1121.7-1139.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "zephyr-orpo-141b-a35b",
+    "bench": "lmarena-text",
+    "score": 1212.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"zephyr-orpo-141b-A35b-v0.1\"; 4,652 votes; 95% CI 1201.9-1223.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "stripedhyena-nous-7b",
+    "bench": "lmarena-text",
+    "score": 1121.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"stripedhyena-nous-7b\"; 5,182 votes; 95% CI 1110.3-1132.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "solar-10-7b-instruct",
+    "bench": "lmarena-text",
+    "score": 1152.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"solar-10.7b-instruct-v1.0\"; 4,155 votes; 95% CI 1139.0-1165.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "smollm2-1-7b",
+    "bench": "lmarena-text",
+    "score": 1114.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"smollm2-1.7b-instruct\"; 2,199 votes; 95% CI 1100.0-1128.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "snowflake-arctic-instruct",
+    "bench": "lmarena-text",
+    "score": 1179.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"snowflake-arctic-instruct\"; 32,832 votes; 95% CI 1173.8-1185.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-2-9b-simpo",
+    "bench": "lmarena-text",
+    "score": 1280.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-2-9b-it-simpo\"; 10,072 votes; 95% CI 1273.2-1287.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "athene-70b",
+    "bench": "lmarena-text",
+    "score": 1306.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"athene-70b-0725\"; 19,621 votes; 95% CI 1300.7-1312.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "athene-v2-chat",
+    "bench": "lmarena-text",
+    "score": 1314.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"athene-v2-chat\"; 24,739 votes; 95% CI 1309.5-1318.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "tulu-2-dpo-70b",
+    "bench": "lmarena-text",
+    "score": 1177.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"tulu-2-dpo-70b\"; 6,535 votes; 95% CI 1167.6-1187.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "internlm2-5-20b-chat",
+    "bench": "lmarena-text",
+    "score": 1190.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"internlm2_5-20b-chat\"; 9,901 votes; 95% CI 1183.4-1197.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "chatglm-6b",
+    "bench": "lmarena-text",
+    "score": 995.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"chatglm-6b\"; 4,914 votes; 95% CI 983.0-1008.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "chatglm2-6b",
+    "bench": "lmarena-text",
+    "score": 1024.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"chatglm2-6b\"; 2,658 votes; 95% CI 1010.8-1038.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "chatglm3-6b",
+    "bench": "lmarena-text",
+    "score": 1056.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"chatglm3-6b\"; 4,658 votes; 95% CI 1044.6-1067.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "cogvlm2-llama3-chat-19b",
+    "bench": "lmarena-vision",
+    "score": 964,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'cogvlm2-llama3-chat-19b'; 1991 votes; published 95% interval 948.8–979.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-14b-chat",
+    "bench": "lmarena-text",
+    "score": 1139,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen-14b-chat\"; 4,964 votes; 95% CI 1128.0-1149.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen1-5-4b-chat",
+    "bench": "lmarena-text",
+    "score": 1090.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen1.5-4b-chat\"; 7,597 votes; 95% CI 1081.4-1100.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen1-5-7b-chat",
+    "bench": "lmarena-text",
+    "score": 1143.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen1.5-7b-chat\"; 4,737 votes; 95% CI 1133.7-1153.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen1-5-14b-chat",
+    "bench": "lmarena-text",
+    "score": 1190.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen1.5-14b-chat\"; 17,839 votes; 95% CI 1183.7-1197.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen1-5-32b-chat",
+    "bench": "lmarena-text",
+    "score": 1203.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen1.5-32b-chat\"; 21,741 votes; 95% CI 1197.6-1209.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen1-5-72b-chat",
+    "bench": "lmarena-text",
+    "score": 1233.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen1.5-72b-chat\"; 39,302 votes; 95% CI 1228.0-1238.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen1-5-110b-chat",
+    "bench": "lmarena-text",
+    "score": 1233.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen1.5-110b-chat\"; 26,195 votes; 95% CI 1228.3-1239.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen2-72b",
+    "bench": "lmarena-text",
+    "score": 1261.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen2-72b-instruct\"; 37,325 votes; 95% CI 1256.6-1266.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwq-32b",
+    "bench": "lmarena-text",
+    "score": 1335.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwq-32b\"; 25,090 votes; 95% CI 1331.3-1340.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwq-32b-preview",
+    "bench": "lmarena-text",
+    "score": 1154.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwq-32b-preview\"; 3,231 votes; 95% CI 1142.7-1165.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-30b-a3b",
+    "bench": "lmarena-text",
+    "score": 1326.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3-30b-a3b\"; 26,089 votes; 95% CI 1322.1-1331.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen2-vl-7b",
+    "bench": "lmarena-vision",
+    "score": 1031.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen2-vl-7b-instruct'; 5766 votes; published 95% interval 1020.7–1041.8; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen2-vl-72b",
+    "bench": "lmarena-vision",
+    "score": 1085.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen2-vl-72b'; 5937 votes; published 95% interval 1075.1–1095.3; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen2-5-vl-32b",
+    "bench": "lmarena-vision",
+    "score": 1118.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen2.5-vl-32b-instruct'; 1490 votes; published 95% interval 1103.4–1134.4; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen2-5-vl-72b",
+    "bench": "lmarena-vision",
+    "score": 1121.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen2.5-vl-72b-instruct'; 3768 votes; published 95% interval 1110.7–1132.3; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-1-tulu-3-8b",
+    "bench": "lmarena-text",
+    "score": 1220.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3.1-tulu-3-8b\"; 2,896 votes; 95% CI 1209.7-1231.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-1-tulu-3-70b",
+    "bench": "lmarena-text",
+    "score": 1285.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3.1-tulu-3-70b\"; 2,846 votes; 95% CI 1275.5-1296.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "olmo-2-32b",
+    "bench": "lmarena-text",
+    "score": 1251.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"olmo-2-0325-32b-instruct\"; 3,334 votes; 95% CI 1240.7-1262.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "olmo-7b-instruct",
+    "bench": "lmarena-text",
+    "score": 1073.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"olmo-7b-instruct\"; 6,328 votes; 95% CI 1062.3-1084.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "molmo-7b-d",
+    "bench": "lmarena-vision",
+    "score": 994.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'molmo-7b-d-0924'; 2815 votes; published 95% interval 980.3–1007.8; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "molmo-72b",
+    "bench": "lmarena-vision",
+    "score": 1045.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'molmo-72b-0924'; 3048 votes; published 95% interval 1032.1–1058.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-2b",
+    "bench": "lmarena-text",
+    "score": 1093.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-2b-it\"; 4,780 votes; 95% CI 1081.8-1104.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-7b",
+    "bench": "lmarena-text",
+    "score": 1137.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-7b-it\"; 8,925 votes; 95% CI 1127.9-1146.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-1-1-2b",
+    "bench": "lmarena-text",
+    "score": 1116.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-1.1-2b-it\"; 10,854 votes; 95% CI 1108.6-1124.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-1-1-7b",
+    "bench": "lmarena-text",
+    "score": 1182.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-1.1-7b-it\"; 23,893 votes; 95% CI 1176.1-1188.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-2-2b",
+    "bench": "lmarena-text",
+    "score": 1199.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-2-2b-it\"; 46,616 votes; 95% CI 1195.8-1204.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-2-9b",
+    "bench": "lmarena-text",
+    "score": 1266.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-2-9b-it\"; 54,611 votes; 95% CI 1262.9-1270.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemma-2-27b",
+    "bench": "lmarena-text",
+    "score": 1289.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemma-2-27b-it\"; 75,754 votes; 95% CI 1285.8-1292.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "granite-3-0-2b",
+    "bench": "lmarena-text",
+    "score": 1156.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"granite-3.0-2b-instruct\"; 6,837 votes; 95% CI 1148.0-1164.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "granite-3-0-8b",
+    "bench": "lmarena-text",
+    "score": 1182.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"granite-3.0-8b-instruct\"; 6,638 votes; 95% CI 1174.1-1191.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "granite-3-1-2b",
+    "bench": "lmarena-text",
+    "score": 1178.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"granite-3.1-2b-instruct\"; 3,188 votes; 95% CI 1167.4-1189.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "granite-3-1-8b",
+    "bench": "lmarena-text",
+    "score": 1208.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"granite-3.1-8b-instruct\"; 3,090 votes; 95% CI 1197.1-1219.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-2-7b-chat",
+    "bench": "lmarena-text",
+    "score": 1107.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-2-7b-chat\"; 14,148 votes; 95% CI 1100.7-1114.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-2-13b-chat",
+    "bench": "lmarena-text",
+    "score": 1141.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-2-13b-chat\"; 19,174 votes; 95% CI 1134.5-1147.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "lmarena-text",
+    "score": 1170.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-2-70b-chat\"; 38,492 votes; 95% CI 1164.9-1175.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "lmarena-text",
+    "score": 1223.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3-8b-instruct\"; 104,642 votes; 95% CI 1219.6-1227.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-70b",
+    "bench": "lmarena-text",
+    "score": 1276.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3-70b-instruct\"; 156,876 votes; 95% CI 1272.7-1279.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "codellama-34b-instruct",
+    "bench": "lmarena-text",
+    "score": 1136.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"codellama-34b-instruct\"; 7,366 votes; 95% CI 1127.7-1145.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "codellama-70b-instruct",
+    "bench": "lmarena-text",
+    "score": 1118.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"codellama-70b-instruct\"; 1,143 votes; 95% CI 1100.8-1137.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-2-11b-vision",
+    "bench": "lmarena-vision",
+    "score": 992.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'llama-3.2-vision-11b-instruct'; 4817 votes; published 95% interval 981.6–1004.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-2-90b-vision",
+    "bench": "lmarena-vision",
+    "score": 1032.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'llama-3.2-vision-90b-instruct'; 8682 votes; published 95% interval 1023.3–1041.7; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-mini-4k-instruct",
+    "bench": "lmarena-text",
+    "score": 1127.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"phi-3-mini-4k-instruct\"; 20,118 votes; 95% CI 1121.5-1134.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-mini-4k-instruct-june-2024",
+    "bench": "lmarena-text",
+    "score": 1142.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"phi-3-mini-4k-instruct-june-2024\"; 12,297 votes; 95% CI 1136.4-1149.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-mini-128k-instruct",
+    "bench": "lmarena-text",
+    "score": 1129.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"phi-3-mini-128k-instruct\"; 20,685 votes; 95% CI 1122.1-1136.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-small-8k-instruct",
+    "bench": "lmarena-text",
+    "score": 1170.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"phi-3-small-8k-instruct\"; 17,766 votes; 95% CI 1164.9-1176.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-medium-4k-instruct",
+    "bench": "lmarena-text",
+    "score": 1197.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"phi-3-medium-4k-instruct\"; 25,055 votes; 95% CI 1192.5-1202.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-vision-128k-instruct",
+    "bench": "lmarena-vision",
+    "score": 881.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'phi-3-vision-128k-instruct'; 1401 votes; published 95% interval 863.1–900.4; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "phi-3-5-vision-instruct",
+    "bench": "lmarena-vision",
+    "score": 920.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'phi-3.5-vision-instruct'; 2592 votes; published 95% interval 904.4–936.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "wizardlm-13b-v1-2",
+    "bench": "lmarena-text",
+    "score": 1149.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"wizardlm-13b\"; 7,044 votes; 95% CI 1140.0-1158.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "wizardlm-70b-v1-0",
+    "bench": "lmarena-text",
+    "score": 1184.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"wizardlm-70b\"; 8,214 votes; 95% CI 1175.0-1193.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-1-nemotron-51b",
+    "bench": "lmarena-text",
+    "score": 1286.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3.1-nemotron-51b-instruct\"; 3,749 votes; 95% CI 1276.4-1296.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-1-nemotron-70b",
+    "bench": "lmarena-text",
+    "score": 1298.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3.1-nemotron-70b-instruct\"; 7,140 votes; 95% CI 1290.9-1306.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama-3-3-nemotron-super-49b-v1",
+    "bench": "lmarena-text",
+    "score": 1327.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama-3.3-nemotron-49b-super-v1\"; 2,218 votes; 95% CI 1315.6-1339.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llama2-70b-steerlm-chat",
+    "bench": "lmarena-text",
+    "score": 1154.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"llama2-70b-steerlm-chat\"; 3,585 votes; 95% CI 1141.8-1167.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nemotron-4-340b-instruct",
+    "bench": "lmarena-text",
+    "score": 1276.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"nemotron-4-340b-instruct\"; 19,659 votes; 95% CI 1271.6-1282.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "internvl2-4b",
+    "bench": "lmarena-vision",
+    "score": 958.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'internvl2-4b'; 3703 votes; published 95% interval 945.9–971.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "internvl2-26b",
+    "bench": "lmarena-vision",
+    "score": 1025.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'internvl2-26b'; 5148 votes; published 95% interval 1012.2–1037.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llava-onevision-qwen2-72b-ov",
+    "bench": "lmarena-vision",
+    "score": 978.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'llava-onevision-qwen2-72b-ov'; 1321 votes; published 95% interval 960.6–997.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "llava-v1-6-34b",
+    "bench": "lmarena-vision",
+    "score": 964.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'llava-v1.6-34b'; 4531 votes; published 95% interval 952.3–976.8; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "minicpm-v-2-6",
+    "bench": "lmarena-vision",
+    "score": 963.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'minicpm-v-2_6'; 1987 votes; published 95% interval 947.3–979.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-1",
+    "bench": "lmarena-text",
+    "score": 1110,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-7b-instruct\"; 8,977 votes; 95% CI 1100.7-1119.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-2",
+    "bench": "lmarena-text",
+    "score": 1149.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-7b-instruct-v0.2\"; 19,402 votes; 95% CI 1142.5-1155.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "lmarena-text",
+    "score": 1196.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mixtral-8x7b-instruct-v0.1\"; 73,503 votes; 95% CI 1192.6-1201.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mixtral-8x22b-instruct-v0-1",
+    "bench": "lmarena-text",
+    "score": 1229.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mixtral-8x22b-instruct-v0.1\"; 51,416 votes; 95% CI 1224.7-1233.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "lmarena-text",
+    "score": 1274.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-small-24b-instruct-2501\"; 14,681 votes; 95% CI 1268.3-1280.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "lmarena-text",
+    "score": 1303.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-small-3.1-24b-instruct-2503\"; 32,618 votes; 95% CI 1298.5-1307.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "lmarena-vision",
+    "score": 1127.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'mistral-small-3.1-24b-instruct-2503'; 28542 votes; published 95% interval 1118.9–1136.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ministral-8b-2410",
+    "bench": "lmarena-text",
+    "score": 1237.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"ministral-8b-2410\"; 4,781 votes; 95% CI 1228.4-1246.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "pixtral-12b",
+    "bench": "lmarena-vision",
+    "score": 1025.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'pixtral-12b-2409'; 7511 votes; published 95% interval 1015.9–1034.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "pixtral-large",
+    "bench": "lmarena-vision",
+    "score": 1095.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'pixtral-large-2411'; 5423 votes; published 95% interval 1086.0–1104.6; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-large-2407",
+    "bench": "lmarena-text",
+    "score": 1314.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-large-2407\"; 45,459 votes; 95% CI 1310.3-1318.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "command-r-03-2024",
+    "bench": "lmarena-text",
+    "score": 1226.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"command-r\"; 54,036 votes; 95% CI 1221.8-1231.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "command-r-08-2024",
+    "bench": "lmarena-text",
+    "score": 1250.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"command-r-08-2024\"; 10,140 votes; 95% CI 1243.5-1256.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "command-r-plus-04-2024",
+    "bench": "lmarena-text",
+    "score": 1261.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"command-r-plus\"; 77,554 votes; 95% CI 1257.2-1265.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "command-r-plus-08-2024",
+    "bench": "lmarena-text",
+    "score": 1276.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"command-r-plus-08-2024\"; 9,866 votes; 95% CI 1269.5-1282.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "aya-expanse-8b",
+    "bench": "lmarena-text",
+    "score": 1222.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"c4ai-aya-expanse-8b\"; 9,818 votes; 95% CI 1215.9-1229.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "aya-expanse-32b",
+    "bench": "lmarena-text",
+    "score": 1267,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"c4ai-aya-expanse-32b\"; 27,124 votes; 95% CI 1262.1-1271.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "aya-vision-32b",
+    "bench": "lmarena-vision",
+    "score": 1000.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'c4ai-aya-vision-32b'; 847 votes; published 95% interval 978.1–1022.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-3-5-turbo-0125",
+    "bench": "lmarena-text",
+    "score": 1225.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-3.5-turbo-0125\"; 66,207 votes; 95% CI 1220.5-1229.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-3-5-turbo-1106",
+    "bench": "lmarena-text",
+    "score": 1203.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-3.5-turbo-1106\"; 16,619 votes; 95% CI 1195.0-1212.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-0314",
+    "bench": "lmarena-text",
+    "score": 1287.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4-0314\"; 54,173 votes; 95% CI 1282.7-1292.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "lmarena-text",
+    "score": 1275.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4-0613\"; 88,723 votes; 95% CI 1271.8-1279.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-1106-preview",
+    "bench": "lmarena-text",
+    "score": 1312.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4-1106-preview\"; 100,105 votes; 95% CI 1308.7-1316.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-0125-preview",
+    "bench": "lmarena-text",
+    "score": 1313,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4-0125-preview\"; 93,439 votes; 95% CI 1308.9-1317.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "lmarena-text",
+    "score": 1324.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4-turbo-2024-04-09\"; 98,114 votes; 95% CI 1320.3-1328.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "lmarena-vision",
+    "score": 1112.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-4-turbo-2024-04-09'; 13391 votes; published 95% interval 1100.6–1123.7; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "lmarena-text",
+    "score": 1345.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4o-2024-05-13\"; 112,881 votes; 95% CI 1342.5-1349.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "lmarena-vision",
+    "score": 1162.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-4o-2024-05-13'; 23273 votes; published 95% interval 1153.4–1170.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "lmarena-text",
+    "score": 1335.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4o-2024-08-06\"; 45,499 votes; 95% CI 1331.1-1339.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "lmarena-vision",
+    "score": 1118.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-4o-2024-08-06'; 3376 votes; published 95% interval 1106.7–1131.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "lmarena-text",
+    "score": 1317.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4o-mini-2024-07-18\"; 68,697 votes; 95% CI 1314.0-1321.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "lmarena-vision",
+    "score": 1097.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-4o-mini-2024-07-18'; 17341 votes; published 95% interval 1089.4–1105.8; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "chatgpt-4o-latest-20250326",
+    "bench": "lmarena-text",
+    "score": 1443.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"chatgpt-4o-latest-20250326\"; 80,677 votes; 95% CI 1440.3-1445.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "chatgpt-4o-latest-20250326",
+    "bench": "lmarena-vision",
+    "score": 1239.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'chatgpt-4o-latest-20250326'; 23057 votes; published 95% interval 1234.4–1245.5; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "lmarena-text",
+    "score": 1322.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4.1-nano-2025-04-14\"; 6,103 votes; 95% CI 1314.5-1329.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "lmarena-vision",
+    "score": 1088.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-4.1-nano-2025-04-14'; 1211 votes; published 95% interval 1070.6–1107.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "lmarena-text",
+    "score": 1444.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-4.5-preview-2025-02-27\"; 14,547 votes; 95% CI 1438.9-1450.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "lmarena-vision",
+    "score": 1225.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-4.5-preview-2025-02-27'; 2925 votes; published 95% interval 1213.9–1237.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "lmarena-text",
+    "score": 1402.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"o1-2024-12-17\"; 27,807 votes; 95% CI 1397.7-1406.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "lmarena-vision",
+    "score": 1193,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'o1-2024-12-17'; 3694 votes; published 95% interval 1182.3–1203.7; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "o1-mini",
+    "bench": "lmarena-text",
+    "score": 1336.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"o1-mini\"; 51,981 votes; 95% CI 1333.1-1340.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "o1-preview",
+    "bench": "lmarena-text",
+    "score": 1388.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"o1-preview\"; 31,122 votes; 95% CI 1383.4-1393.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "lmarena-text",
+    "score": 1363.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"o3-mini-high\"; 18,589 votes; 95% CI 1358.2-1368.7; reasoning_effort high entry (same model, adjustable low/medium/high effort); 'o3-mini' scores 1347.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-5-2-chat-latest-20260210",
+    "bench": "lmarena-text",
+    "score": 1476.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gpt-5.2-chat-latest-20260210\"; 34,176 votes; 95% CI 1472.1-1480.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-5-2-chat-latest-20260210",
+    "bench": "lmarena-vision",
+    "score": 1278.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gpt-5.2-chat-latest-20260210'; 15432 votes; published 95% interval 1271.6–1285.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-5-1-codex",
+    "bench": "lmarena-webdev",
+    "score": 1336,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"gpt-5.1-codex\"; 4,865 votes; 95% CI 1324.3-1347.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-5-1-codex-mini",
+    "bench": "lmarena-webdev",
+    "score": 1244,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"gpt-5.1-codex-mini\"; 1,133 votes; 95% CI 1221.7-1266.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-5-2-codex",
+    "bench": "lmarena-webdev",
+    "score": 1338.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"gpt-5.2-codex\"; 6,402 votes; 95% CI 1329.7-1347.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "lmarena-text",
+    "score": 1321.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-opus-20240229\"; 194,909 votes; 95% CI 1318.8-1325.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "lmarena-vision",
+    "score": 1062,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-opus-20240229'; 15565 votes; published 95% interval 1051.6–1072.4; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "lmarena-text",
+    "score": 1281.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-sonnet-20240229\"; 109,284 votes; 95% CI 1277.1-1285.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "lmarena-vision",
+    "score": 1016.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-sonnet-20240229'; 12314 votes; published 95% interval 1005.3–1028.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "lmarena-text",
+    "score": 1261.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-haiku-20240307\"; 117,701 votes; 95% CI 1257.6-1265.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "lmarena-vision",
+    "score": 1000.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-haiku-20240307'; 13380 votes; published 95% interval 988.1–1012.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "lmarena-text",
+    "score": 1343,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-5-sonnet-20240620\"; 82,419 votes; 95% CI 1339.5-1346.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "lmarena-vision",
+    "score": 1145.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-5-sonnet-20240620'; 21624 votes; published 95% interval 1135.3–1155.4; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "bench": "lmarena-text",
+    "score": 1374,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-5-sonnet-20241022\"; 87,694 votes; 95% CI 1370.8-1377.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "bench": "lmarena-vision",
+    "score": 1161.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-5-sonnet-20241022'; 10377 votes; published 95% interval 1153.2–1169.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "lmarena-text",
+    "score": 1324.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-5-haiku-20241022\"; 68,964 votes; 95% CI 1321.0-1327.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "lmarena-vision",
+    "score": 1127,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-5-haiku-20241022'; 1400 votes; published 95% interval 1111.0–1143.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "lmarena-text",
+    "score": 1388.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-3-7-sonnet-20250219-thinking-32k\"; 38,081 votes; 95% CI 1383.9-1392.3; extended-thinking entry; 'claude-3-7-sonnet-20250219' scores 1372.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "lmarena-vision",
+    "score": 1192.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-3-7-sonnet-20250219-thinking-32k'; 1439 votes; published 95% interval 1177.4–1208.4; Elo rounded to one decimal. Extended-thinking entry; 'claude-3-7-sonnet-20250219' scores 1175.3.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "lmarena-text",
+    "score": 1400.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-sonnet-4-20250514-thinking-32k\"; 33,944 votes; 95% CI 1396.5-1405.4; extended-thinking entry; 'claude-sonnet-4-20250514' scores 1390.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "lmarena-vision",
+    "score": 1206.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-sonnet-4-20250514-thinking-32k'; 1145 votes; published 95% interval 1189.2–1223.0; Elo rounded to one decimal. Extended-thinking entry; 'claude-sonnet-4-20250514' scores 1187.8.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "lmarena-text",
+    "score": 1426,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-opus-4-20250514-thinking-16k\"; 35,735 votes; 95% CI 1421.6-1430.4; extended-thinking entry; 'claude-opus-4-20250514' scores 1413.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "lmarena-vision",
+    "score": 1207,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'claude-opus-4-20250514-thinking-16k'; 1292 votes; published 95% interval 1191.0–1223.1; Elo rounded to one decimal. Extended-thinking entry; 'claude-opus-4-20250514' scores 1188.4.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "lmarena-search",
+    "score": 1150.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'claude-opus-4-search'; 31037 votes; published 95% interval 1145.1–1156.1; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "lmarena-text",
+    "score": 1449.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"claude-opus-4-1-20250805-thinking-16k\"; 48,811 votes; 95% CI 1446.4-1453.3; extended-thinking entry; 'claude-opus-4-1-20250805' scores 1447.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "lmarena-webdev",
+    "score": 1389.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"claude-opus-4-1-20250805\"; 6,771 votes; 95% CI 1378.2-1400.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "lmarena-search",
+    "score": 1167.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'claude-opus-4-1-search'; 76933 votes; published 95% interval 1162.1–1172.1; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-0-pro-001",
+    "bench": "lmarena-text",
+    "score": 1236.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-pro-dev-api\"; 18,354 votes; 95% CI 1229.1-1243.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "lmarena-text",
+    "score": 1323.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-1.5-pro-001\"; 79,138 votes; 95% CI 1319.8-1327.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "lmarena-vision",
+    "score": 1119.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-1.5-pro-001'; 16734 votes; published 95% interval 1108.3–1131.5; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "lmarena-text",
+    "score": 1351.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-1.5-pro-002\"; 55,606 votes; 95% CI 1347.7-1354.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "lmarena-vision",
+    "score": 1179.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-1.5-pro-002'; 8902 votes; published 95% interval 1170.4–1188.5; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "lmarena-text",
+    "score": 1286.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-1.5-flash-001\"; 62,833 votes; 95% CI 1281.8-1290.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "lmarena-vision",
+    "score": 1060,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-1.5-flash-001'; 13260 votes; published 95% interval 1048.1–1071.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "lmarena-text",
+    "score": 1309.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-1.5-flash-002\"; 34,902 votes; 95% CI 1304.8-1313.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "lmarena-vision",
+    "score": 1141.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-1.5-flash-002'; 7241 votes; published 95% interval 1131.3–1151.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-flash-8b-001",
+    "bench": "lmarena-text",
+    "score": 1258.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-1.5-flash-8b-001\"; 35,558 votes; 95% CI 1254.2-1262.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-1-5-flash-8b-001",
+    "bench": "lmarena-vision",
+    "score": 1071.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-1.5-flash-8b-001'; 6243 votes; published 95% interval 1060.9–1082.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "lmarena-text",
+    "score": 1359.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-2.0-flash-001\"; 43,351 votes; 95% CI 1356.1-1363.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "lmarena-vision",
+    "score": 1171.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-2.0-flash-001'; 10119 votes; published 95% interval 1164.7–1179.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-0-flash-lite-preview-02-05",
+    "bench": "lmarena-text",
+    "score": 1353.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-2.0-flash-lite-preview-02-05\"; 24,955 votes; 95% CI 1349.1-1357.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-0-flash-lite-preview-02-05",
+    "bench": "lmarena-vision",
+    "score": 1136.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-2.0-flash-lite-preview-02-05'; 3991 votes; published 95% interval 1125.8–1146.6; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-5-flash-preview-09-2025",
+    "bench": "lmarena-text",
+    "score": 1403.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-2.5-flash-preview-09-2025\"; 32,364 votes; 95% CI 1399.5-1407.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-5-flash-preview-09-2025",
+    "bench": "lmarena-vision",
+    "score": 1229.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-2.5-flash-preview-09-2025'; 4723 votes; published 95% interval 1219.4–1239.3; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-5-flash-lite-preview-09-2025",
+    "bench": "lmarena-text",
+    "score": 1379.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-2.5-flash-lite-preview-09-2025-no-thinking\"; 46,382 votes; 95% CI 1376.1-1383.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-2-5-flash-lite-preview-09-2025",
+    "bench": "lmarena-vision",
+    "score": 1173,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-2.5-flash-lite-preview-09-2025-no-thinking'; 4779 votes; published 95% interval 1163.3–1182.7; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "palm-2-chat-bison",
+    "bench": "lmarena-text",
+    "score": 1138.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"palm-2\"; 8,554 votes; 95% CI 1129.4-1148.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-2-0813",
+    "bench": "lmarena-text",
+    "score": 1335.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-2-2024-08-13\"; 63,498 votes; 95% CI 1331.8-1339.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-2-mini-0813",
+    "bench": "lmarena-text",
+    "score": 1308.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-2-mini-2024-08-13\"; 52,567 votes; 95% CI 1304.6-1312.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-3-preview-02-24",
+    "bench": "lmarena-text",
+    "score": 1411.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-3-preview-02-24\"; 32,414 votes; 95% CI 1407.2-1415.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-3-mini-beta",
+    "bench": "lmarena-text",
+    "score": 1363.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-3-mini-high\"; 15,536 votes; 95% CI 1358.0-1369.0; reasoning_effort high entry; 'grok-3-mini-beta' scores 1357.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-0709",
+    "bench": "lmarena-text",
+    "score": 1411,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-4-0709\"; 39,297 votes; 95% CI 1407.1-1415.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-0709",
+    "bench": "lmarena-vision",
+    "score": 1183.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'grok-4-0709'; 30167 votes; published 95% interval 1176.1–1190.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-0709",
+    "bench": "lmarena-search",
+    "score": 1121.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'grok-4-search'; 19108 votes; published 95% interval 1115.4–1127.6; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "lmarena-text",
+    "score": 1404.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-4-fast-reasoning\"; 17,975 votes; 95% CI 1399.5-1409.7; reasoning entry; 'grok-4-fast-chat' scores 1418.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "lmarena-webdev",
+    "score": 1161.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"grok-4-fast-reasoning\"; 732 votes; 95% CI 1134.1-1189.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "lmarena-search",
+    "score": 1160.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'grok-4-fast-search'; 41794 votes; published 95% interval 1155.5–1165.1; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-1",
+    "bench": "lmarena-text",
+    "score": 1465.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-4.1-thinking\"; 64,152 votes; 95% CI 1462.2-1468.7; thinking entry; 'grok-4.1' scores 1459.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-1",
+    "bench": "lmarena-webdev",
+    "score": 1211,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"grok-4.1-thinking\"; 939 votes; 95% CI 1185.9-1236.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-20-multi-agent-0309",
+    "bench": "lmarena-text",
+    "score": 1470.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-4.20-multi-agent-beta-0309\"; 60,777 votes; 95% CI 1466.4-1473.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-20-multi-agent-0309",
+    "bench": "lmarena-vision",
+    "score": 1250.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'grok-4.20-multi-agent-beta-0309'; 22925 votes; published 95% interval 1244.2–1257.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-20-multi-agent-0309",
+    "bench": "lmarena-search",
+    "score": 1204.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'grok-4.20-multi-agent-beta-0309'; 109553 votes; published 95% interval 1199.5–1210.3; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-code-fast-1",
+    "bench": "lmarena-webdev",
+    "score": 1165.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"grok-code-fast-1\"; 783 votes; 95% CI 1136.9-1193.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nova-lite",
+    "bench": "lmarena-text",
+    "score": 1260.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"amazon-nova-lite-v1.0\"; 19,372 votes; 95% CI 1255.1-1265.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nova-lite",
+    "bench": "lmarena-vision",
+    "score": 1019,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'amazon-nova-lite-v1.0'; 1854 votes; published 95% interval 1004.0–1034.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nova-pro",
+    "bench": "lmarena-text",
+    "score": 1290,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"amazon-nova-pro-v1.0\"; 24,745 votes; 95% CI 1285.4-1294.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "nova-pro",
+    "bench": "lmarena-vision",
+    "score": 1019.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'amazon-nova-pro-v1.0'; 2335 votes; published 95% interval 1005.3–1032.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-medium-2312",
+    "bench": "lmarena-text",
+    "score": 1222.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-medium\"; 34,550 votes; 95% CI 1217.0-1227.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-large-2402",
+    "bench": "lmarena-text",
+    "score": 1242.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-large-2402\"; 62,436 votes; 95% CI 1237.5-1247.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-medium-2505",
+    "bench": "lmarena-text",
+    "score": 1387.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-medium-2505\"; 32,662 votes; 95% CI 1382.7-1392.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-medium-2505",
+    "bench": "lmarena-vision",
+    "score": 1155.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'mistral-medium-2505'; 10826 votes; published 95% interval 1146.9–1163.5; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-medium-3-1",
+    "bench": "lmarena-text",
+    "score": 1408.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mistral-medium-2508\"; 92,697 votes; 95% CI 1406.0-1411.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mistral-medium-3-1",
+    "bench": "lmarena-vision",
+    "score": 1159,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'mistral-medium-2508'; 41260 votes; published 95% interval 1152.7–1165.3; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "magistral-medium-2506",
+    "bench": "lmarena-text",
+    "score": 1304.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"magistral-medium-2506\"; 11,468 votes; 95% CI 1298.2-1311.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "devstral-medium-2507",
+    "bench": "lmarena-webdev",
+    "score": 1081.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"devstral-medium-2507\"; 831 votes; 95% CI 1050.4-1112.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-max-2024-09-19",
+    "bench": "lmarena-text",
+    "score": 1318,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen-max-0919\"; 16,478 votes; 95% CI 1312.3-1323.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-plus-2025-01-25",
+    "bench": "lmarena-text",
+    "score": 1345.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen-plus-0125\"; 5,819 votes; 95% CI 1337.6-1354.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-max-2025-01-25",
+    "bench": "lmarena-text",
+    "score": 1373.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen2.5-max\"; 32,417 votes; 95% CI 1369.8-1378.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-plus-2024-11-27",
+    "bench": "lmarena-text",
+    "score": 1314.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen2.5-plus-1127\"; 10,187 votes; 95% CI 1308.3-1321.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-max-preview",
+    "bench": "lmarena-text",
+    "score": 1434.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3-max-preview\"; 27,194 votes; 95% CI 1430.2-1439.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-max-2025-09-23",
+    "bench": "lmarena-text",
+    "score": 1423.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3-max-2025-09-23\"; 8,939 votes; 95% CI 1417.2-1430.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "lmarena-text",
+    "score": 1396.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3.5-flash\"; 58,193 votes; 95% CI 1393.0-1400.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "lmarena-webdev",
+    "score": 1238.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"qwen3.5-flash\"; 1,272 votes; 95% CI 1218.8-1259.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-5-max-preview",
+    "bench": "lmarena-text",
+    "score": 1465.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3.5-max-preview\"; 21,476 votes; 95% CI 1460.3-1470.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "lmarena-text",
+    "score": 1460,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3.6-max-preview\"; 5,186 votes; 95% CI 1451.6-1468.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-6-max-preview",
+    "bench": "lmarena-webdev",
+    "score": 1478.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"qwen3.6-max-preview\"; 2,598 votes; 95% CI 1466.0-1491.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-vl-max-2024-11-19",
+    "bench": "lmarena-vision",
+    "score": 1085.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen-vl-max-1119'; 1422 votes; published 95% interval 1069.1–1101.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-vl-max-2025-08-13",
+    "bench": "lmarena-vision",
+    "score": 1184.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen-vl-max-2025-08-13'; 3179 votes; published 95% interval 1172.8–1197.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-image-2-0-pro-2026-06-22",
+    "bench": "lmarena-image",
+    "score": 1191.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "text_to_image, category overall, split latest (published 2026-09-24); entry \"qwen-image-2.0-pro-2026-06-22\"; 13,123 votes; 95% CI 1185.8-1197.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen-image-2-0-pro-2026-06-22",
+    "bench": "lmarena-image-edit",
+    "score": 1303.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "image_edit, category overall, split latest (published 2026-09-22); entry \"qwen-image-2.0-pro-2026-06-22\"; 50,807 votes; 95% CI 1299.0-1308.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "glm-4-0520",
+    "bench": "lmarena-text",
+    "score": 1273.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"glm-4-0520\"; 9,788 votes; 95% CI 1266.2-1280.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "glm-4-plus",
+    "bench": "lmarena-text",
+    "score": 1319.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"glm-4-plus\"; 26,126 votes; 95% CI 1314.4-1324.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-large-2025-02-10",
+    "bench": "lmarena-text",
+    "score": 1326.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-large-2025-02-10\"; 3,738 votes; 95% CI 1316.5-1336.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-standard-2025-02-10",
+    "bench": "lmarena-text",
+    "score": 1311.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-standard-2025-02-10\"; 3,904 votes; 95% CI 1301.5-1320.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-t1-20250711",
+    "bench": "lmarena-text",
+    "score": 1387.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-t1-20250711\"; 4,580 votes; 95% CI 1378.7-1396.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-turbos-20250226",
+    "bench": "lmarena-text",
+    "score": 1348.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-turbos-20250226\"; 2,220 votes; 95% CI 1337.1-1360.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-turbos-20250416",
+    "bench": "lmarena-text",
+    "score": 1382.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-turbos-20250416\"; 10,586 votes; 95% CI 1376.1-1389.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-large-vision",
+    "bench": "lmarena-text",
+    "score": 1294.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-large-vision\"; 5,259 votes; 95% CI 1284.9-1303.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-large-vision",
+    "bench": "lmarena-vision",
+    "score": 1148.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'hunyuan-large-vision'; 1275 votes; published 95% interval 1132.3–1165.4; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-standard-vision-2024-12-31",
+    "bench": "lmarena-vision",
+    "score": 1042.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'hunyuan-standard-vision-2024-12-31'; 809 votes; published 95% interval 1021.2–1063.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-vision-1-5-thinking",
+    "bench": "lmarena-text",
+    "score": 1395.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-vision-1.5-thinking\"; 2,171 votes; 95% CI 1382.8-1407.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hunyuan-vision-1-5-thinking",
+    "bench": "lmarena-vision",
+    "score": 1156,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'hunyuan-vision-1.5-thinking'; 2433 votes; published 95% interval 1143.7–1168.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ernie-5-0-0110",
+    "bench": "lmarena-text",
+    "score": 1446.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"ernie-5.0-0110\"; 34,860 votes; 95% CI 1442.1-1450.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ernie-5-0-preview-1022",
+    "bench": "lmarena-text",
+    "score": 1418.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"ernie-5.0-preview-1022\"; 4,663 votes; 95% CI 1410.0-1427.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ernie-5-0-preview-1203",
+    "bench": "lmarena-text",
+    "score": 1448.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"ernie-5.0-preview-1203\"; 9,561 votes; 95% CI 1442.3-1455.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ernie-5-0-preview-1220",
+    "bench": "lmarena-vision",
+    "score": 1218.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'ernie-5.0-preview-1220'; 3229 votes; published 95% interval 1207.4–1230.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "step-1v-32k",
+    "bench": "lmarena-vision",
+    "score": 1064.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'step-1v-32k'; 1534 votes; published 95% interval 1047.6–1081.1; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "seed-2-1-pro-preview",
+    "bench": "lmarena-webdev",
+    "score": 1518.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"seed-2.1-pro-preview\"; 11,310 votes; 95% CI 1512.3-1525.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "kat-coder-pro-v1",
+    "bench": "lmarena-webdev",
+    "score": 1254.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"KAT-Coder-Pro-V1\"; 1,457 votes; 95% CI 1234.6-1274.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "longcat-flash-chat-2602-exp",
+    "bench": "lmarena-text",
+    "score": 1435.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"longcat-flash-chat-2602-exp\"; 27,962 votes; 95% CI 1430.9-1440.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mimo-v2-pro",
+    "bench": "lmarena-text",
+    "score": 1448.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"mimo-v2-pro\"; 24,365 votes; 95% CI 1443.7-1453.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mimo-v2-pro",
+    "bench": "lmarena-webdev",
+    "score": 1433.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"mimo-v2-pro\"; 6,983 votes; 95% CI 1425.4-1441.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "reka-core-20240904",
+    "bench": "lmarena-text",
+    "score": 1287.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"reka-core-20240904\"; 7,312 votes; 95% CI 1280.7-1295.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "reka-flash-20240904",
+    "bench": "lmarena-text",
+    "score": 1272.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"reka-flash-20240904\"; 7,536 votes; 95% CI 1265.1-1279.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "reka-flash-21b-20240226",
+    "bench": "lmarena-text",
+    "score": 1226.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"reka-flash-21b-20240226\"; 24,806 votes; 95% CI 1220.6-1232.5; plain entry; the '-online' entry is the same model with web search; 'reka-flash-21b-20240226-online' scores 1233.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "yi-lightning",
+    "bench": "lmarena-text",
+    "score": 1328.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"yi-lightning\"; 27,332 votes; 95% CI 1323.3-1333.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "yi-vision",
+    "bench": "lmarena-vision",
+    "score": 1002.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'yi-vision'; 1219 votes; published 95% interval 984.4–1020.7; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "sonar-pro",
+    "bench": "lmarena-search",
+    "score": 1142.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'ppl-sonar-pro-high'; 28519 votes; published 95% interval 1137.1–1148.7; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation. Perplexity Sonar Pro with search_context_size high.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "sonar-reasoning-pro",
+    "bench": "lmarena-search",
+    "score": 1138.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'ppl-sonar-reasoning-pro-high'; 29055 votes; published 95% interval 1132.2–1144.0; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation. Perplexity Sonar Reasoning Pro with search_context_size high.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "p-image",
+    "bench": "lmarena-image",
+    "score": 1033.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "text_to_image, category overall, split latest (published 2026-09-24); entry \"p-image\"; 109,782 votes; 95% CI 1029.7-1036.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "p-image-edit",
+    "bench": "lmarena-image-edit",
+    "score": 1210.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "image_edit, category overall, split latest (published 2026-09-22); entry \"p-image-edit\"; 336,653 votes; 95% CI 1207.5-1213.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-instruct",
+    "bench": "lmarena-text",
+    "score": 1414.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3-vl-235b-a22b-instruct\"; 11,219 votes; 95% CI 1407.5-1420.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-instruct",
+    "bench": "lmarena-vision",
+    "score": 1214.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen3-vl-235b-a22b-instruct'; 12250 votes; published 95% interval 1207.6–1221.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-thinking",
+    "bench": "lmarena-text",
+    "score": 1395.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"qwen3-vl-235b-a22b-thinking\"; 7,780 votes; 95% CI 1388.3-1402.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "qwen3-vl-235b-a22b-thinking",
+    "bench": "lmarena-vision",
+    "score": 1187.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'qwen3-vl-235b-a22b-thinking'; 2389 votes; published 95% interval 1175.2–1199.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "glm-4-5v",
+    "bench": "lmarena-text",
+    "score": 1352.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"glm-4.5v\"; 4,817 votes; 95% CI 1344.1-1361.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "glm-4-5v",
+    "bench": "lmarena-vision",
+    "score": 1153.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'glm-4.5v'; 3255 votes; published 95% interval 1141.8–1165.3; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "glm-4-6v",
+    "bench": "lmarena-text",
+    "score": 1378.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"glm-4.6v\"; 2,762 votes; 95% CI 1367.1-1389.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "glm-4-6v",
+    "bench": "lmarena-vision",
+    "score": 1161,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'glm-4.6v'; 2352 votes; published 95% interval 1147.0–1175.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "molmo-2-8b",
+    "bench": "lmarena-text",
+    "score": 1328,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"molmo-2-8b\"; 791 votes; 95% CI 1306.6-1349.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "molmo-2-8b",
+    "bench": "lmarena-vision",
+    "score": 1107.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'molmo-2-8b'; 1134 votes; published 95% interval 1086.8–1127.5; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "olmo-3-32b-think",
+    "bench": "lmarena-text",
+    "score": 1306.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"olmo-3-32b-think\"; 5,682 votes; 95% CI 1298.4-1315.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "olmo-3-1-32b-instruct",
+    "bench": "lmarena-text",
+    "score": 1330,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"olmo-3.1-32b-instruct\"; 11,452 votes; 95% CI 1323.7-1336.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "intellect-3",
+    "bench": "lmarena-text",
+    "score": 1356.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"intellect-3\"; 5,279 votes; 95% CI 1347.9-1364.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ling-flash-2-0",
+    "bench": "lmarena-text",
+    "score": 1344,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"ling-flash-2.0\"; 6,850 votes; 95% CI 1336.7-1351.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "ring-flash-2-0",
+    "bench": "lmarena-text",
+    "score": 1320.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"ring-flash-2.0\"; 6,899 votes; 95% CI 1313.6-1328.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "step-3",
+    "bench": "lmarena-text",
+    "score": 1349.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"step-3\"; 6,273 votes; 95% CI 1341.9-1356.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "step-3",
+    "bench": "lmarena-vision",
+    "score": 1145,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'step-3'; 3209 votes; published 95% interval 1133.0–1156.9; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "kimi-k2-0905",
+    "bench": "lmarena-text",
+    "score": 1418.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"kimi-k2-0905-preview\"; 11,568 votes; 95% CI 1411.5-1424.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "lmarena-text",
+    "score": 1184.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-llm-67b-chat\"; 4,932 votes; 95% CI 1173.1-1196.1",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-coder-v2",
+    "bench": "lmarena-text",
+    "score": 1265.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-coder-v2\"; 15,147 votes; 95% CI 1258.8-1271.4",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v2-5",
+    "bench": "lmarena-text",
+    "score": 1307.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-v2.5\"; 24,572 votes; 95% CI 1302.4-1311.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v2-5-1210",
+    "bench": "lmarena-text",
+    "score": 1323.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-v2.5-1210\"; 6,795 votes; 95% CI 1315.0-1331.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v3-1-terminus",
+    "bench": "lmarena-text",
+    "score": 1417.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-v3.1-terminus-thinking\"; 3,369 votes; 95% CI 1407.3-1427.5; thinking entry (one hybrid checkpoint); 'deepseek-v3.1-terminus' scores 1414.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v3-2-exp",
+    "bench": "lmarena-text",
+    "score": 1425.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-v3.2-exp-thinking\"; 8,905 votes; 95% CI 1418.7-1431.9; thinking entry (one hybrid checkpoint); 'deepseek-v3.2-exp' scores 1422.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v3-2-exp",
+    "bench": "lmarena-webdev",
+    "score": 1271.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"deepseek-v3.2-exp\"; 3,867 votes; 95% CI 1258.0-1285.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v4-pro-preview",
+    "bench": "lmarena-text",
+    "score": 1457.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-v4-pro\"; 54,130 votes; 95% CI 1453.3-1461.3; plain entry (first listed 2026-04-23, the April Preview checkpoint); the '-high-preview' entry, first listed 2026-08-02 before the 0813 GA, is most plausibly the same Preview at high effort; 'deepseek-v4-pro-high-preview' scores 1454.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v4-pro-preview",
+    "bench": "lmarena-webdev",
+    "score": 1445.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"deepseek-v4-pro\"; 13,179 votes; 95% CI 1439.0-1452.0; plain entry (first listed 2026-04-23, the April Preview checkpoint); the '-high-preview' entry, first listed 2026-08-02 before the 0813 GA, is most plausibly the same Preview at high effort; 'deepseek-v4-pro-high-preview' scores 1463.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v4-flash-preview",
+    "bench": "lmarena-text",
+    "score": 1435.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"deepseek-v4-flash\"; 48,887 votes; 95% CI 1431.4-1439.7; plain entry (first listed 2026-04-23, the April Preview checkpoint); the '-high-preview' entry, first listed 2026-07-31/08-02 alongside the 0731 release, is most plausibly the same Preview at high effort; 'deepseek-v4-flash-high-preview' scores 1437.9",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v4-flash-preview",
+    "bench": "lmarena-webdev",
+    "score": 1430.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"deepseek-v4-flash-high-preview\"; 9,497 votes; 95% CI 1423.6-1437.9; only webdev entry for the Preview; inferred to be the April Preview at high effort (first listed 2026-07-31 next to the separate non-preview 'deepseek-v4-flash-high')",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "devstral-2",
+    "bench": "lmarena-webdev",
+    "score": 1194.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"devstral-2\"; 1,146 votes; 95% CI 1172.9-1215.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "jamba-1-5-large",
+    "bench": "lmarena-text",
+    "score": 1289.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"jamba-1.5-large\"; 8,662 votes; 95% CI 1282.0-1296.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "jamba-1-5-mini",
+    "bench": "lmarena-text",
+    "score": 1239.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"jamba-1.5-mini\"; 8,858 votes; 95% CI 1232.3-1246.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "trinity-large-preview",
+    "bench": "lmarena-text",
+    "score": 1378.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"trinity-large-preview\"; 29,742 votes; 95% CI 1374.1-1382.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "trinity-large-thinking",
+    "bench": "lmarena-text",
+    "score": 1369,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"trinity-large-thinking\"; 28,967 votes; 95% CI 1364.3-1373.6",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "trinity-large-thinking",
+    "bench": "lmarena-webdev",
+    "score": 1236.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"trinity-large-thinking\"; 1,303 votes; 95% CI 1216.2-1257.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hy3-preview",
+    "bench": "lmarena-text",
+    "score": 1412.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"hunyuan-hy3-preview\"; 6,614 votes; 95% CI 1405.2-1420.2",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hy3-preview",
+    "bench": "lmarena-webdev",
+    "score": 1356.9,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"hunyuan-hy3-preview\"; 1,398 votes; 95% CI 1339.3-1374.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hy4-preview",
+    "bench": "lmarena-webdev",
+    "score": 1631.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"hy4-preview\"; 4,443 votes; 95% CI 1621.2-1641.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "mimo-v2-6-pro",
+    "bench": "lmarena-webdev",
+    "score": 1619.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"mimo-v2.6-pro\"; 2,156 votes; 95% CI 1605.8-1633.0",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "lmarena-text",
+    "score": 1485.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-3-pro\"; 40,654 votes; 95% CI 1481.6-1489.3; arena lists Gemini 3 Pro without '-preview'; first listed 2025-11-16 (Gemini 3 Pro launched as gemini-3-pro-preview; no other Gemini 3 Pro checkpoint)",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "lmarena-vision",
+    "score": 1288.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-3-pro'; 12995 votes; published 95% interval 1281.1–1296.2; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "lmarena-webdev",
+    "score": 1438.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"gemini-3-pro\"; 13,574 votes; 95% CI 1430.3-1447.4; arena lists Gemini 3 Pro without '-preview'; first listed 2025-11-16",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "lmarena-document",
+    "score": 1451.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset document_style_control, category overall; exact entry 'gemini-3-pro'; 10769 votes; published 95% interval 1442.1–1460.0; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "lmarena-search",
+    "score": 1201.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'gemini-3-pro-grounding'; 37024 votes; published 95% interval 1195.8–1206.9; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "lmarena-text",
+    "score": 1473.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"gemini-3-flash\"; 30,225 votes; 95% CI 1469.3-1478.1; default-thinking entry; 'gemini-3-flash (thinking-minimal)' scores 1458.3; arena lists Gemini 3 Flash without '-preview'; first listed 2025-12-16 (launched as gemini-3-flash-preview)",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "lmarena-vision",
+    "score": 1272.4,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'gemini-3-flash'; 36679 votes; published 95% interval 1266.9–1277.8; Elo rounded to one decimal. Default-thinking entry; 'gemini-3-flash (thinking-minimal)' scores 1259.8.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "lmarena-webdev",
+    "score": 1438,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"gemini-3-flash\"; 10,461 votes; 95% CI 1429.2-1446.7; default-thinking entry; 'gemini-3-flash (thinking-minimal)' scores 1382.9; arena lists Gemini 3 Flash without '-preview'; first listed 2025-12-16",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "lmarena-document",
+    "score": 1439.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset document_style_control, category overall; exact entry 'gemini-3-flash'; 7158 votes; published 95% interval 1429.8–1448.5; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "lmarena-search",
+    "score": 1191.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'gemini-3-flash-grounding'; 149334 votes; published 95% interval 1186.5–1196.2; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "lmarena-text",
+    "score": 1430.3,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"grok-4-1-fast-reasoning\"; 55,363 votes; 95% CI 1427.0-1433.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "lmarena-vision",
+    "score": 1194.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "Arena dataset vision_style_control, category overall; exact entry 'grok-4-1-fast-reasoning'; 12485 votes; published 95% interval 1187.3–1201.7; Elo rounded to one decimal.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "lmarena-webdev",
+    "score": 1240.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"grok-4-1-fast-reasoning\"; 5,314 votes; 95% CI 1229.3-1251.8",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "lmarena-search",
+    "score": 1194.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-08-24",
+    "note": "Arena dataset search_style_control, category overall; exact entry 'grok-4-1-fast-search'; 81507 votes; published 95% interval 1189.0–1199.4; Elo rounded to one decimal. Search/grounding system configuration, includes retrieval tools; not a bare-model factuality evaluation.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "deepseek-v4-flash",
+    "bench": "lmarena-webdev",
+    "score": 1579.2,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-24",
+    "note": "webdev (Code Arena), category overall, split latest (published 2026-09-24); entry \"deepseek-v4-flash-high\"; 4,724 votes; 95% CI 1569.7-1588.7; entry first listed 2026-07-31, the day DeepSeek-V4-Flash-0731 weights were published and began serving as deepseek-v4-flash; no '-preview' suffix (the April Preview is listed separately as 'deepseek-v4-flash-high-preview'); 'high' = reasoning effort",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "yi-34b-chat",
+    "bench": "lmarena-text",
+    "score": 1183.5,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"yi-34b-chat\"; 15,483 votes; 95% CI 1176.6-1190.3",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "yi-1-5-34b-chat",
+    "bench": "lmarena-text",
+    "score": 1212.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-13",
+    "note": "text_style_control (style control, the arena.ai default), category overall, split latest (published 2026-09-13); entry \"yi-1.5-34b-chat\"; 24,146 votes; 95% CI 1207.6-1217.7",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hailuo-02",
+    "bench": "lmarena-video",
+    "score": 1181.1,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "text_to_video, category overall, split latest (published 2026-09-22); entry \"hailuo-02-standard\"; 9,379 votes; 95% CI 1169.0-1193.2; standard-tier entry; MiniMax documents one model, MiniMax-Hailuo-02, with 512P / 768P (default) / 1080P resolution options, and the Arena tiers are settings of it; 'hailuo-02-pro' scores 1198.5",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "hailuo-02",
+    "bench": "lmarena-video-i2v",
+    "score": 1223.7,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "image_to_video, category overall, split latest (published 2026-09-22); entry \"hailuo-02-standard\"; 21,785 votes; 95% CI 1214.2-1233.3; standard-tier entry; MiniMax documents one model, MiniMax-Hailuo-02, with 512P / 768P (default) / 1080P resolution options, and the Arena tiers are settings of it; 'hailuo-02-pro' scores 1228.6; 'hailuo-02-fast' scores 1193.9",
+    "source_id": "lmarena-dataset"
   }
 ]

@@ -6,9 +6,9 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 37.4** ±0.7 · #208 of 257 · from 3 benchmark results across 1 source
+**score 46.0** ±1.8 · #221 of 329 · from 3 benchmark results across 1 source
 
-Score within the [GPQA Diamond](https://whatmodel.sh/?set=gpqa-diamond) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              42.7%    37.4   2025-01-27   95% ▇▇▇▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   4.4%    33.4   2025-03-07    3% ▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              46.3%    42.8   2025-01-27    1% ▇
-prior     pull toward the middle             50.0                 0% ▇
-          weighted average                 = 37.4
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              42.7%    45.8   2025-01-27   58% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              46.3%    49.7   2025-01-27   23% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   4.4%    41.8   2025-03-07   18% ▇▇
+prior     pull toward the middle             50.0                 1% ▇
+          weighted average                 = 46.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior     pull toward the middle             50.0                 0% ▇
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~169.82GB   37.4
+16-bit bf16 · nvidia only  ~169.82GB   46.0
 </pre>
 
 ```sh
