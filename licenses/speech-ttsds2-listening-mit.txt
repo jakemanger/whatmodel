@@ -1,0 +1,15 @@
+TTSDS2 listening test results (ttsds/listening_test) / Christoph Minixhofer and co-authors. MIT.
+Source: https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv
+Licence declaration: https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/README.md (card metadata "license: mit")
+Changes: per-system means of the published MOS and SMOS ratings, averaged over the four domains (Clean, Noisy, Wild, Kids) and normalised (x-1)/4. No audio used. No endorsement.
+The dataset card declares MIT without a separate LICENSE file; the notice below reproduces the MIT text with the author's copyright line as used in the TTSDS2 pipeline repository (https://github.com/ttsds/daisy/blob/941e9cc4ea66ff1f0b15de63aa353ab7abd576f1/LICENSE.txt).
+
+MIT License
+
+Copyright (c) 2025-present Christoph Minixhofer <christoph.minixhofer@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -6,7 +6,7 @@
 
 ElevenLabs · closed weights
 
-**score 56.0** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±9.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.37 / 5    56.9   2026-09-25   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                12% ▇
-                        weighted average                          = 56.0
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.37 / 5    52.9   2026-09-25   60% ▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                40% ▇▇▇▇▇
+                        weighted average                          = 51.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

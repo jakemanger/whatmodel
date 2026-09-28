@@ -6,7 +6,7 @@
 
 Resemble AI · released 2025-05 · 0.5B params · mit
 
-**score 42.4** ±4.1 · #32 of 36 · from 4 benchmark results across 2 sources
+**score 49.0** ±5.2 · #33 of 46 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    41.4   2025-08-10   59% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    51.0   2025-08-10   19% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    32.7   2026-03-15   11% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    33.5   2026-03-15    5% ▇
-prior                   pull toward the middle                      49.9                 7% ▇
-                        weighted average                          = 42.4
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    44.6   2025-08-10   39% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    59.1   2025-08-10   14% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    49.9   2026-03-15   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    48.6   2026-03-15   15% ▇▇
+prior                   pull toward the middle                      49.9                11% ▇
+                        weighted average                          = 49.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resem
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~2.9GB   42.4
-fp32 · mac only     ~2.9GB   42.4
+fp32 · nvidia only  ~2.9GB   49.0
+fp32 · mac only     ~2.9GB   49.0
 </pre>
 
 ```sh

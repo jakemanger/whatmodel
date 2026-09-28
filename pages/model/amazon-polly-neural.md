@@ -6,7 +6,7 @@
 
 Amazon Web Services · closed weights
 
-**score 37.8** ±3.8 · #33 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 43.8** ±3.8 · #40 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  24.4%    37.0   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  24.4%    43.4   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                  pull toward the middle                   49.9                 6% ▇
-                       weighted average                       = 37.8
+                       weighted average                       = 43.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

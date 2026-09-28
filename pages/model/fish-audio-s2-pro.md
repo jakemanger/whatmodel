@@ -6,7 +6,7 @@
 
 Fish Audio · released 2026-03 · 4.56B params · fish-audio-research-license
 
-**score 56.4** ±1.7 · #15 of 36 · from 12 benchmark results across 4 sources
+**score 62.1** ±1.5 · #19 of 46 · from 15 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,32 +14,35 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.71 / 5    53.8   2026-06-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.9%    56.9   2026-06-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      4.5%    55.8   2026-06-25   12% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.21 / 5    54.4   2026-06-25   11% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.34 / 5    54.3   2026-07-16   10% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.53 / 5    53.6   2026-07-16    7% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.48 / 5    59.1   2026-07-16    6% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.50 / 5    42.3   2026-07-16    1% ▇
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.6%    61.2   2026-06-04   15% ▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      5.1%    64.8   2026-06-04    4% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.3%    52.8   2026-06-04    1% ▇
-<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    55.7   2026-06-22    5% ▇
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.71 / 5    60.6   2026-06-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.9%    63.8   2026-06-25    8% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      4.5%    62.6   2026-06-25    7% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.21 / 5    61.1   2026-06-25    6% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.34 / 5    61.8   2026-07-16    9% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.53 / 5    60.8   2026-07-16    7% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.48 / 5    66.5   2026-07-16    5% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.50 / 5    53.1   2026-07-16    1% ▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-en · Whisper la…</a>      1.8%    58.8   2026-04-01   12% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md">Seed-TTS test-zh · Paraformer…</a>      1.0%    57.9   2026-04-01    9% ▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      5.1%    69.8   2026-06-04    9% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.6%    69.3   2026-06-04    5% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.3%    61.4   2026-06-04    5% ▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    61.7   2026-06-22    4% ▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1057.4    57.7   2026-09-24    1% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 56.4
+                        weighted average                          = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt))</sub>
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
 <details><summary>Not counted (4)</summary>
 
 <pre>
 source                  test                            score  why
-Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.0%  too few models have it yet
-Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%  too few models have it yet
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.0%  another source's result is used
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%  another source's result is used
 Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncate…</a>   4.4%  too few models have it yet
 Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncate…</a>   5.9%  too few models have it yet
 </pre>
@@ -54,7 +57,7 @@ api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~11.44GB   56.4
+bf16 · nvidia only  ~11.44GB   62.1
 </pre>
 
 ```sh

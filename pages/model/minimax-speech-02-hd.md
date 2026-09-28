@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-03 · proprietary
 
-**score 57.0** ±2.5 · #12 of 36 · from 3 benchmark results across 2 sources
+**score 66.8** ±2.7 · #7 of 46 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    59.6   2026-09-25   69% ▇▇▇▇▇▇▇▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    48.7   2025-08-10   22% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    59.2   2025-08-10    7% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    68.7   2026-09-25   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    55.4   2025-08-10   11% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    71.8   2025-08-10    4% ▇
 prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 57.0
+                        weighted average                        = 66.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

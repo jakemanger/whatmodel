@@ -6,7 +6,7 @@
 
 Fish Audio · released 2026-06 · proprietary
 
-**score 57.6** ±3.0 · #10 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.3** ±3.0 · #8 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1240.1    57.8   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1240.1    66.9   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 57.6
+                        weighted average                        = 66.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

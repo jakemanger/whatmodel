@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2023-08 · proprietary
 
-**score 44.6** ±3.4 · #30 of 36 · from 3 benchmark results across 2 sources
+**score 50.7** ±5.7 · #32 of 46 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     33.6%    47.0   2025-08-10   40% ▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       11.2%    55.9   2025-08-10   13% ▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.55 / 5    38.2   2025-05-29   42% ▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 5% ▇
-                        weighted average                          = 44.6
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     33.6%    52.8   2025-08-10   46% ▇▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       11.2%    66.6   2025-08-10   17% ▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.55 / 5    36.3   2025-05-29   24% ▇▇▇
+prior                   pull toward the middle                      49.9                13% ▇▇
+                        weighted average                          = 50.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

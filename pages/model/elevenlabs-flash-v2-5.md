@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2024-12 · proprietary
 
-**score 56.3** ±1.9 · #16 of 36 · from 7 benchmark results across 3 sources
+**score 65.4** ±1.9 · #10 of 46 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>     1191.0    53.6   2026-09-25   39% ▇▇▇▇▇
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      41.3%    56.5   2026-04-06   13% ▇▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>      53.8%    56.8   2026-04-06   13% ▇▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>       1.6%    62.6   2026-04-06    6% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>       0.9%    63.7   2026-04-06    5% ▇
-<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.12 / 2    58.1   2026-09-13   12% ▇
-                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>   0.16 / 2    57.1   2026-09-13   11% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>     1191.0    62.6   2026-09-25   38% ▇▇▇▇▇
+<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      41.3%    65.8   2026-04-06   13% ▇▇
+                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>      53.8%    66.1   2026-04-06   13% ▇▇
+                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>       1.6%    71.8   2026-04-06    6% ▇
+                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>       0.9%    72.9   2026-04-06    5% ▇
+<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.12 / 2    67.4   2026-09-13   13% ▇▇
+                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>   0.16 / 2    66.5   2026-09-13   12% ▇
 prior                   pull toward the middle                       49.9                 1% ▇
-                        weighted average                           = 56.3
+                        weighted average                           = 65.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

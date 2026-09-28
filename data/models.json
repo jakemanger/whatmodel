@@ -22501,5 +22501,921 @@
     },
     "model_repo": "https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1",
     "identity_note": "Base model (not -Chat/-Instruct)."
+  },
+  {
+    "id": "parler-tts-large-v1",
+    "name": "Parler-TTS Large v1",
+    "provider": "Hugging Face (Parler-TTS)",
+    "category": "tts",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.33,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 9.33,
+          "cmd": "pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c \"import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d='cuda:0' if torch.cuda.is_available() else 'cpu'; m=ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler-tts-large-v1').to(d); t=AutoTokenizer.from_pretrained('parler-tts/parler-tts-large-v1'); g=m.generate(input_ids=t('A female speaker delivers a slightly expressive speech with a very clear recording.', return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hello, world!', return_tensors='pt').input_ids.to(d)); sf.write('out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)\"",
+          "platform": "any",
+          "source": "https://github.com/huggingface/parler-tts/blob/d108732cd57788ec86bc857d99a6cabd66663d68/README.md",
+          "gb_source": "https://huggingface.co/parler-tts/parler-tts-large-v1/tree/50cb4b874c83902f930d7c2e753224c15654f11e",
+          "note": "README usage snippet with the Large v1 checkpoint; gb is the fp32 safetensors weight size (4.98 + 4.35 GB), not a measured runtime peak.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "parler-tts/parler-tts-large-v1 (description-prompted TTS; 2,333,013,362 parameters per HF safetensors metadata). TTSDS2 ran it through a voice-cloning modification of the codebase.",
+    "identity_sources": [
+      "https://huggingface.co/parler-tts/parler-tts-large-v1/tree/50cb4b874c83902f930d7c2e753224c15654f11e"
+    ]
+  },
+  {
+    "id": "parler-tts-mini-v0-1",
+    "name": "Parler-TTS Mini v0.1",
+    "provider": "Hugging Face (Parler-TTS)",
+    "category": "tts",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.647,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 2.59,
+          "cmd": "pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c \"import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d='cuda:0' if torch.cuda.is_available() else 'cpu'; m=ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler_tts_mini_v0.1').to(d); t=AutoTokenizer.from_pretrained('parler-tts/parler_tts_mini_v0.1'); g=m.generate(input_ids=t('A female speaker delivers a slightly expressive speech with a very clear recording.', return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hello, world!', return_tensors='pt').input_ids.to(d)); sf.write('out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)\"",
+          "platform": "any",
+          "source": "https://github.com/huggingface/parler-tts/blob/d108732cd57788ec86bc857d99a6cabd66663d68/README.md",
+          "gb_source": "https://huggingface.co/parler-tts/parler_tts_mini_v0.1/tree/e02fd18e77d38b49a85c7a9a85189a64b8472544",
+          "note": "README usage snippet with the v0.1 Mini checkpoint; gb is the fp32 model.safetensors size (2.59 GB), not a measured runtime peak.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "parler-tts/parler_tts_mini_v0.1 (647,027,186 parameters per HF safetensors metadata). Distinct from Parler-TTS Mini v1/v1.1.",
+    "identity_sources": [
+      "https://huggingface.co/parler-tts/parler_tts_mini_v0.1/tree/e02fd18e77d38b49a85c7a9a85189a64b8472544"
+    ]
+  },
+  {
+    "id": "pheme-300m",
+    "name": "Pheme 300M",
+    "provider": "PolyAI",
+    "category": "tts",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.3,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "PolyAI/pheme, which the Pheme README describes as 'the larger version (300M)' (the 100M variant is PolyAI/pheme_small). Repository licence CC-BY-4.0.",
+    "identity_sources": [
+      "https://huggingface.co/PolyAI/pheme/tree/e6f63888b4bbec4c248cdd046e224fb0b6c797c6",
+      "https://github.com/PolyAI-LDN/pheme"
+    ]
+  },
+  {
+    "id": "styletts-2-libritts",
+    "name": "StyleTTS 2 (LibriTTS)",
+    "provider": "Yinghao Aaron Li et al. (Columbia University)",
+    "category": "tts",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "styletts2-pretrained-model-terms",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "yl4579/StyleTTS2-LibriTTS, the multi-speaker zero-shot checkpoint (the LJSpeech checkpoint is a separate single-speaker model). Code MIT; pre-trained models carry a use condition (listeners must be told samples are synthetic unless the voice owner consents).",
+    "identity_sources": [
+      "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/tree/3aa7ba7f8f275ec13dce21682a61494c35089e2a",
+      "https://github.com/yl4579/StyleTTS2"
+    ]
+  },
+  {
+    "id": "fish-speech-1-2",
+    "name": "Fish Speech 1.2",
+    "provider": "Fish Audio",
+    "category": "tts",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "cc-by-nc-sa-4.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "fishaudio/fish-speech-1.2 (base 1.2 release, not 1.2-SFT, 1.4 or 1.5).",
+    "identity_sources": [
+      "https://huggingface.co/fishaudio/fish-speech-1.2/tree/ef257fd7165af434a0e4dcd483c7c78cce72576f"
+    ]
+  },
+  {
+    "id": "fish-speech-1-5",
+    "name": "Fish Speech 1.5",
+    "provider": "Fish Audio",
+    "category": "tts",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "cc-by-nc-sa-4.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "fishaudio/fish-speech-1.5 (model.pth + firefly-gan-vq-fsq-8x1024-21hz decoder). Predecessor of OpenAudio S1; distinct from Fish Speech 1.2/1.4 and from OpenAudio S1/S1-mini.",
+    "identity_sources": [
+      "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c"
+    ]
+  },
+  {
+    "id": "amphion-valle-librilight-6k",
+    "name": "Amphion VALL-E (LibriLight 6k)",
+    "provider": "Amphion (CUHK-Shenzhen)",
+    "category": "tts",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "amphion/valle_librilight_6k: Amphion's open reproduction of VALL-E (v1 recipe) trained on 6k hours of Libri-Light. Microsoft's original VALL-E was never released.",
+    "identity_sources": [
+      "https://huggingface.co/amphion/valle_librilight_6k/tree/73979654834196d13f4cc78fb5a90043c1868bdc"
+    ]
+  },
+  {
+    "id": "amphion-valle-v2",
+    "name": "Amphion VALL-E v2 recipe (MLS)",
+    "provider": "Amphion (CUHK-Shenzhen)",
+    "category": "tts",
+    "released": "2024-06",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "amphion/valle (valle_ar_mls_196000.bin + valle_nar_mls_164000.bin with SpeechTokenizer): Amphion's VALL-E v2-recipe reproduction. Not Microsoft's VALL-E 2 (unreleased). Card has no licence tag; Amphion repository is MIT.",
+    "identity_sources": [
+      "https://huggingface.co/amphion/valle/tree/f609fdac0d76f275f2008f01ca98ff02c1fd4b64",
+      "https://github.com/open-mmlab/Amphion"
+    ]
+  },
+  {
+    "id": "amphion-naturalspeech2",
+    "name": "Amphion NaturalSpeech 2 (LibriTTS)",
+    "provider": "Amphion (CUHK-Shenzhen)",
+    "category": "tts",
+    "released": "2023-12",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "amphion/naturalspeech2_libritts: Amphion's reproduction of NaturalSpeech 2 trained on LibriTTS. Microsoft's original NaturalSpeech 2 was never released.",
+    "identity_sources": [
+      "https://huggingface.co/amphion/naturalspeech2_libritts/tree/12d88cd539fa1829f01febd8f7d4d71d940d6538"
+    ]
+  },
+  {
+    "id": "openvoice-v1",
+    "name": "OpenVoice V1",
+    "provider": "MyShell",
+    "category": "tts",
+    "released": "2024-01",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "myshell-ai/OpenVoice (V1). Distinct from OpenVoice V2 (myshell-ai/OpenVoiceV2, MeloTTS base speakers).",
+    "identity_sources": [
+      "https://huggingface.co/myshell-ai/OpenVoice/tree/c70fc8b939bd1d8213994ff7c88e32be39708271"
+    ]
+  },
+  {
+    "id": "vokan",
+    "name": "Vokan",
+    "provider": "ShoukanLabs",
+    "category": "tts",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "ShoukanLabs/Vokan, a StyleTTS 2 fine-tune.",
+    "identity_sources": [
+      "https://huggingface.co/ShoukanLabs/Vokan/tree/0d5fcee1a9575e6568cadebb93a319c873b6dce1"
+    ]
+  },
+  {
+    "id": "bark",
+    "name": "Bark",
+    "provider": "Suno",
+    "category": "tts",
+    "released": "2023-04",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 12,
+          "cmd": "pip install git+https://github.com/suno-ai/bark.git && python -m bark --text \"Hello, my name is Suno.\" --output_filename example.wav",
+          "platform": "nvidia",
+          "source": "https://github.com/suno-ai/bark/blob/f4f32d4cd480dfec1c245d258174bc9bde3c2148/README.md",
+          "note": "README: 'The full version of Bark requires around 12GB of VRAM to hold everything on GPU at the same time'; smaller cards work with CPU offload, and SUNO_USE_SMALL_MODELS=True selects the separate small models (not this entry).",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "suno/bark full-size models (text/coarse/fine). The small models (SUNO_USE_SMALL_MODELS) are a different checkpoint and are not mapped here.",
+    "identity_sources": [
+      "https://huggingface.co/suno/bark/tree/70a8a7d34168586dc5d028fa9666aceade177992",
+      "https://github.com/suno-ai/bark/blob/f4f32d4cd480dfec1c245d258174bc9bde3c2148/README.md"
+    ]
+  },
+  {
+    "id": "f5-tts-base",
+    "name": "F5-TTS Base (v0)",
+    "provider": "SWivid (SJTU X-LANCE)",
+    "category": "tts",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.35,
+          "cmd": "pip install f5-tts && f5-tts_infer-cli --model F5TTS_Base --gen_text \"Hello, world.\"",
+          "platform": "any",
+          "source": "https://github.com/SWivid/F5-TTS/blob/283252563dbf91be625e0c27926acfaac449186c/src/f5_tts/infer/infer_cli.py",
+          "gb_source": "https://huggingface.co/SWivid/F5-TTS/tree/84e5a410d9cead4de2f847e7c9369a6440bdfaca/F5TTS_Base",
+          "note": "--model F5TTS_Base loads hf://SWivid/F5-TTS/F5TTS_Base/model_1200000.safetensors (infer_cli.py override for previous models) and the packaged example reference voice; gb is that checkpoint's size (1.35 GB); the Vocos vocoder and activations add to it.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "SWivid/F5-TTS F5TTS_Base/model_1200000.safetensors, the original (v0) Base release. Distinct from F5TTS_v1_Base (2025-03).",
+    "identity_sources": [
+      "https://huggingface.co/SWivid/F5-TTS/tree/84e5a410d9cead4de2f847e7c9369a6440bdfaca/F5TTS_Base"
+    ]
+  },
+  {
+    "id": "e2-tts-base",
+    "name": "E2 TTS Base (F5-TTS reproduction)",
+    "provider": "SWivid (SJTU X-LANCE)",
+    "category": "tts",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.33,
+          "cmd": "pip install f5-tts && f5-tts_infer-cli --model E2TTS_Base --gen_text \"Hello, world.\"",
+          "platform": "any",
+          "source": "https://github.com/SWivid/F5-TTS/blob/283252563dbf91be625e0c27926acfaac449186c/src/f5_tts/infer/infer_cli.py",
+          "gb_source": "https://huggingface.co/SWivid/E2-TTS/tree/851141880b5ca38050025e98dfdee27dc553f86e/E2TTS_Base",
+          "note": "--model E2TTS_Base loads hf://SWivid/E2-TTS/E2TTS_Base/model_1200000.safetensors; gb is that checkpoint's size (1.33 GB), actual use is higher.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "SWivid/E2-TTS E2TTS_Base/model_1200000.safetensors: the F5-TTS authors' reproduction of Microsoft's E2 TTS (the Microsoft model was never released).",
+    "identity_sources": [
+      "https://huggingface.co/SWivid/E2-TTS/tree/851141880b5ca38050025e98dfdee27dc553f86e/E2TTS_Base"
+    ]
+  },
+  {
+    "id": "maskgct",
+    "name": "MaskGCT",
+    "provider": "Amphion (CUHK-Shenzhen)",
+    "category": "tts",
+    "released": "2024-10",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 6.6,
+          "cmd": "git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && pip install -r models/tts/maskgct/requirements.txt && python -m models.tts.maskgct.maskgct_inference",
+          "platform": "nvidia",
+          "source": "https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md",
+          "gb_source": "https://huggingface.co/amphion/MaskGCT/tree/265c6cef07625665d0c28d2faafb1415562379dc",
+          "note": "Needs espeak-ng installed first (README). gb is the summed size of the MaskGCT checkpoints (codecs, T2S, both S2A models, ~6.6 GB); the script also downloads facebook/w2v-bert-2.0, so real use is higher.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "amphion/MaskGCT (semantic and acoustic codecs, T2S model, 1-layer and full S2A models).",
+    "identity_sources": [
+      "https://huggingface.co/amphion/MaskGCT/tree/265c6cef07625665d0c28d2faafb1415562379dc"
+    ]
+  },
+  {
+    "id": "amphion-vevo",
+    "name": "Vevo (Amphion)",
+    "provider": "Amphion (CUHK-Shenzhen)",
+    "category": "tts",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "amphion/Vevo (vq8192 tokenizer, PhoneToVq8192 AR model, Vq8192ToMels flow matching, vocoder), the ICLR 2025 Vevo 1.0 release; distinct from Vevo1.5 and Vevo2.",
+    "identity_sources": [
+      "https://huggingface.co/amphion/Vevo/tree/7edf4640c400c20542aa39c45b63f60e6c7baba0"
+    ]
+  },
+  {
+    "id": "whisperspeech-v1-95-medium",
+    "name": "WhisperSpeech v1.95 Medium (7-language)",
+    "provider": "Collabora",
+    "category": "tts",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "WhisperSpeech t2s-v1.95-medium-7lang.model + s2a-v1.95-medium-7lang.model (collabora/whisperspeech, now WhisperSpeech/WhisperSpeech; files committed 2024-05-14). Other WhisperSpeech sizes/versions are separate checkpoints.",
+    "identity_sources": [
+      "https://huggingface.co/WhisperSpeech/WhisperSpeech/tree/0f05dcab0838f1afc061063d432c2664901a5eef"
+    ]
+  },
+  {
+    "id": "hierspeechpp-v1-1",
+    "name": "HierSpeech++ v1.1",
+    "provider": "Korea University (Sang-Hoon Lee et al.)",
+    "category": "tts",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "HierSpeech++ Large v1.1 (hierspeechpp_v1.1_ckpt.pth, English/Korean, epoch 200, released 2023-11-20) with the LibriTTS-960 text-to-vec model. Distinct from Large v1 (paper version) and the LibriTTS-460/960 checkpoints.",
+    "identity_sources": [
+      "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+      "https://drive.google.com/file/d/1xMfhg4qeehGO0RN-zxq-hAnW-omXmpdq/view"
+    ]
+  },
+  {
+    "id": "gpt-sovits-v2",
+    "name": "GPT-SoVITS v2",
+    "provider": "RVC-Boss",
+    "category": "tts",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "lj1995/GPT-SoVITS gsv-v2final-pretrained (s2G2333k.pth + s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt), zero-shot (no fine-tuning). Distinct from v1, v3, v4 and v2Pro.",
+    "identity_sources": [
+      "https://huggingface.co/lj1995/GPT-SoVITS/tree/336b2ec4e8d4ac74740798dd40af44e74659ecaf/gsv-v2final-pretrained"
+    ]
+  },
+  {
+    "id": "speecht5-tts",
+    "name": "SpeechT5 TTS",
+    "provider": "Microsoft",
+    "category": "tts",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "microsoft/speecht5_tts with microsoft/speecht5_hifigan, conditioned on a speaker x-vector (speechbrain/spkrec-xvect-voxceleb) from the reference clip.",
+    "identity_sources": [
+      "https://huggingface.co/microsoft/speecht5_tts/tree/30fcde30f19b87502b8435427b5f5068e401d5f6"
+    ]
+  },
+  {
+    "id": "f5-tts-v1-base",
+    "name": "F5-TTS v1 Base",
+    "provider": "SWivid (SJTU X-LANCE)",
+    "category": "tts",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 1.35,
+          "cmd": "pip install f5-tts && f5-tts_infer-cli --model F5TTS_v1_Base --gen_text \"Hello, world.\"",
+          "platform": "any",
+          "source": "https://github.com/SWivid/F5-TTS/blob/283252563dbf91be625e0c27926acfaac449186c/README.md",
+          "gb_source": "https://huggingface.co/SWivid/F5-TTS/tree/84e5a410d9cead4de2f847e7c9369a6440bdfaca/F5TTS_v1_Base",
+          "note": "README CLI example (uses the packaged example reference voice when --ref_audio is omitted). gb is the F5TTS_v1_Base/model_1250000.safetensors size (1.35 GB); the Vocos vocoder and activations add to it.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "SWivid/F5-TTS F5TTS_v1_Base/model_1250000.safetensors (committed 2025-03-12). Distinct from the original F5TTS_Base (v0, 1.2M updates).",
+    "identity_sources": [
+      "https://huggingface.co/SWivid/F5-TTS/tree/84e5a410d9cead4de2f847e7c9369a6440bdfaca/F5TTS_v1_Base"
+    ]
+  },
+  {
+    "id": "cosyvoice-300m",
+    "name": "CosyVoice-300M",
+    "provider": "Alibaba (FunAudioLLM)",
+    "category": "tts",
+    "released": "2024-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.3,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "FunAudioLLM/CosyVoice-300M (mirrored as model-scope/CosyVoice-300M), the zero-shot base checkpoint; not CosyVoice-300M-SFT/-Instruct or CosyVoice 2/3.",
+    "identity_sources": [
+      "https://huggingface.co/FunAudioLLM/CosyVoice-300M/tree/24c40509c3c5ea6fe06b5f8790ff99e3714a6bee",
+      "https://huggingface.co/model-scope/CosyVoice-300M"
+    ]
+  },
+  {
+    "id": "cosyvoice2-0-5b",
+    "name": "CosyVoice2-0.5B",
+    "provider": "Alibaba (FunAudioLLM)",
+    "category": "tts",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.5,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "FunAudioLLM/CosyVoice2-0.5B, the only released CosyVoice 2 checkpoint. Distinct from CosyVoice-300M, Fun-CosyVoice3-0.5B and the hosted CosyVoice v3 Plus API (cosyvoice-v3-plus).",
+    "identity_sources": [
+      "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/tree/eec1ae6c79877dbd9379285cf8789c9e0879293d"
+    ]
+  },
+  {
+    "id": "fireredtts-1",
+    "name": "FireRedTTS (v1)",
+    "provider": "FireRedTeam (Xiaohongshu)",
+    "category": "tts",
+    "released": "2024-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "FireRedTeam/FireRedTTS (2024 foundation model). Distinct from FireRedTTS-1S and FireRedTTS-2.",
+    "identity_sources": [
+      "https://huggingface.co/FireRedTeam/FireRedTTS/tree/2447325dc4dade22b945c22284e8db0223125a07",
+      "https://github.com/FireRedTeam/FireRedTTS"
+    ]
+  },
+  {
+    "id": "indextts",
+    "name": "IndexTTS (v1)",
+    "provider": "IndexTeam (bilibili)",
+    "category": "tts",
+    "released": "2025-03",
+    "open_weights": true,
+    "license": "bilibili-model-use-license",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "IndexTeam/Index-TTS, the first release. Distinct from IndexTTS-1.5 and IndexTTS-2 (existing id indextts-2). HF card metadata says apache-2.0, while the index-tts repository is released under the bilibili Model Use License Agreement.",
+    "identity_sources": [
+      "https://huggingface.co/IndexTeam/Index-TTS/tree/146f5cbb46b9c98ba1075ecf9d4b6cc4ad6b7f18",
+      "https://github.com/index-tts/index-tts"
+    ]
+  },
+  {
+    "id": "spark-tts-0-5b",
+    "name": "Spark-TTS 0.5B",
+    "provider": "SparkAudio",
+    "category": "tts",
+    "released": "2025-02",
+    "open_weights": true,
+    "license": "cc-by-nc-sa-4.0",
+    "params_b": 0.5,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "SparkAudio/Spark-TTS-0.5B (Qwen2.5-0.5B-based LLM + BiCodec).",
+    "identity_sources": [
+      "https://huggingface.co/SparkAudio/Spark-TTS-0.5B/tree/642071559bfc6346c2359d19dcb6be3f9dd8a05d"
+    ]
+  },
+  {
+    "id": "llasa-8b",
+    "name": "Llasa-8B",
+    "provider": "HKUST Audio",
+    "category": "tts",
+    "released": "2025-01",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 8.57,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "HKUSTAudio/Llasa-8B (8,567,197,696 parameters per HF safetensors metadata) with the XCodec2 decoder. Distinct from Llasa-1B/3B.",
+    "identity_sources": [
+      "https://huggingface.co/HKUSTAudio/Llasa-8B/tree/2a8339e387348a5cad5160b978a6f364fa06ad74"
+    ]
+  },
+  {
+    "id": "hierspeechpp-libritts960",
+    "name": "HierSpeech++ (LibriTTS-960)",
+    "provider": "Korea University (Sang-Hoon Lee et al.)",
+    "category": "tts",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.097,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "HierSpeech++ checkpoint trained on LibriTTS train-960 (README checkpoint table: 97M parameters, 555 h, 2,311 speakers). Distinct from the LibriTTS-460 and the Large v1/v1.1 English-Korean checkpoints (hierspeechpp-v1-1).",
+    "identity_sources": [
+      "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md"
+    ]
+  },
+  {
+    "id": "yourtts",
+    "name": "YourTTS",
+    "provider": "Coqui / Edresson Casanova et al.",
+    "category": "tts",
+    "released": "2021-12",
+    "open_weights": true,
+    "license": "cc-by-nc-nd-4.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "The released YourTTS checkpoint (github.com/Edresson/YourTTS; Coqui TTS model tts_models/multilingual/multi-dataset/your_tts). The repository states: 'All the released checkpoints are licensed under CC BY-NC-ND 4.0'.",
+    "identity_sources": [
+      "https://github.com/Edresson/YourTTS"
+    ]
+  },
+  {
+    "id": "voicecraft-830m",
+    "name": "VoiceCraft 830M (giga830M)",
+    "provider": "Puyuan Peng et al. (UT Austin)",
+    "category": "tts",
+    "released": "2024-03",
+    "open_weights": true,
+    "license": "coqui-public-model-license",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "pyp1/VoiceCraft giga830M.pth (committed 2024-03-28; mirrored as pyp1/VoiceCraft_giga830M), the original 830M GigaSpeech checkpoint evaluated in the paper. Distinct from 830M_TTSEnhanced (voicecraft-830m-tts-enhanced) and the 330M checkpoints. GitHub README: weights under the Coqui Public Model License 1.0.0; code CC BY-NC-SA 4.0.",
+    "identity_sources": [
+      "https://huggingface.co/pyp1/VoiceCraft/tree/52b0f909d652ea016966804767320f13ede39abd",
+      "https://huggingface.co/pyp1/VoiceCraft_giga830M/tree/472414217688325adc0143884bc5c7ce3b6eb427",
+      "https://github.com/jasonppy/VoiceCraft"
+    ]
+  },
+  {
+    "id": "voxcpm-0-5b",
+    "name": "VoxCPM 0.5B",
+    "provider": "OpenBMB",
+    "category": "tts",
+    "released": "2025-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 5,
+          "cmd": "pip install voxcpm && voxcpm design --text \"Hello, world.\" --hf-model-id openbmb/VoxCPM-0.5B --output out.wav",
+          "platform": "nvidia",
+          "source": "https://github.com/OpenBMB/VoxCPM/blob/f772e498a45fbb5fb8e13fbf9b9c48be9fe33e69/README.md",
+          "note": "README model table: VoxCPM-0.5B VRAM ~5 GB. The CLI defaults to openbmb/VoxCPM2, so --hf-model-id selects this checkpoint (src/voxcpm/cli.py).",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "openbmb/VoxCPM-0.5B, the September 2025 release. Distinct from VoxCPM1.5 and the existing voxcpm2.",
+    "identity_sources": [
+      "https://huggingface.co/openbmb/VoxCPM-0.5B/tree/b2e656f7524303fdaf84591c75bbb87203d7c98d"
+    ]
+  },
+  {
+    "id": "zipvoice",
+    "name": "ZipVoice",
+    "provider": "k2-fsa (Xiaomi)",
+    "category": "tts",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.123,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "k2-fsa/ZipVoice model 'zipvoice' (123M parameters per README), not zipvoice_distill or ZipVoice-Dialog. Licence from the GitHub repository; the HF card states none.",
+    "identity_sources": [
+      "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b",
+      "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/README.md"
+    ]
+  },
+  {
+    "id": "mgm-omni-tts-2b-0927",
+    "name": "MGM-Omni-TTS 2B (0927)",
+    "provider": "MGM-Omni (CUHK)",
+    "category": "tts",
+    "released": "2025-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 2.15,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "wcy1122/MGM-Omni-TTS-2B-0927 (2,151,311,872 parameters per HF safetensors metadata).",
+    "identity_sources": [
+      "https://huggingface.co/wcy1122/MGM-Omni-TTS-2B-0927/tree/95e96b4a160a4e00a2d45852800eef2e4798fd8e"
+    ]
+  },
+  {
+    "id": "omnivoice",
+    "name": "OmniVoice",
+    "provider": "k2-fsa (Xiaomi)",
+    "category": "tts",
+    "released": "2026-03",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 0.61,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.26,
+          "cmd": "pip install omnivoice && omnivoice-infer --model k2-fsa/OmniVoice --text \"This is a test for text to speech.\" --output hello.wav",
+          "platform": "any",
+          "source": "https://github.com/k2-fsa/OmniVoice/blob/08be0b4ccbac3e13e374e86fbfead4b4cac343e2/README.md",
+          "gb_source": "https://huggingface.co/k2-fsa/OmniVoice/tree/c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+          "note": "README 'Auto Voice' CLI example. gb is the summed checkpoint size (model 2.45 GB + audio tokenizer 0.81 GB); README reports it tested on a 4 GB Intel Arc A310.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "k2-fsa/OmniVoice (Qwen3-0.6B based; 612,577,288 parameters per HF safetensors metadata). Code Apache-2.0; README: 'The pre-trained model is licensed under the CC-BY-NC due to constraints from its training data'.",
+    "identity_sources": [
+      "https://huggingface.co/k2-fsa/OmniVoice/tree/c5fdb5ccb189668d56333f77ba2629f4cd7535f4"
+    ]
+  },
+  {
+    "id": "wayu-paxa-tts-edge",
+    "name": "Wayu-Paxa-TTS-Edge",
+    "provider": "Wayu Research / Paxa Labs",
+    "category": "tts",
+    "released": "2026-08",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "wayu-ai/wayu-paxa-tts-edge, fixed-voice Thai TTS described in arXiv:2609.03502v1.",
+    "identity_sources": [
+      "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/tree/8196688df56a8d08ccfa186505343adff412ab6b",
+      "https://arxiv.org/abs/2609.03502v1"
+    ]
+  },
+  {
+    "id": "fun-cosyvoice3-0-5b-2512",
+    "name": "Fun-CosyVoice3-0.5B-2512",
+    "provider": "Alibaba (FunAudioLLM)",
+    "category": "tts",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.5,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512, the only released CosyVoice 3 weights (the 1.5B model is not open). Default llm.pt assumed where a source says 'default settings'; the repo also ships an optional RL-tuned llm.rl.pt. Distinct from CosyVoice2-0.5B and the hosted CosyVoice v3 Plus API.",
+    "identity_sources": [
+      "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512/tree/29e01c4e8d000f4bcd70751be16fa94bf3d85a18"
+    ]
+  },
+  {
+    "id": "raon-opentts-0-3b",
+    "name": "Raon-OpenTTS-0.3B",
+    "provider": "KRAFTON",
+    "category": "tts",
+    "released": "2026-04",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 0.3,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "KRAFTON/Raon-OpenTTS-0.3B, trained only on open speech data (arXiv:2605.20830).",
+    "identity_sources": [
+      "https://huggingface.co/KRAFTON/Raon-OpenTTS-0.3B/tree/37ed4d706720d8a5f0c6427de34e8ddac8d0ba9e",
+      "https://arxiv.org/abs/2605.20830v2"
+    ]
+  },
+  {
+    "id": "raon-opentts-1b",
+    "name": "Raon-OpenTTS-1B",
+    "provider": "KRAFTON",
+    "category": "tts",
+    "released": "2026-05",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 1,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "KRAFTON/Raon-OpenTTS-1B, trained only on open speech data (arXiv:2605.20830).",
+    "identity_sources": [
+      "https://huggingface.co/KRAFTON/Raon-OpenTTS-1B/tree/42dcf596fca22ecdec0a7555a3e2179ef7548971",
+      "https://arxiv.org/abs/2605.20830v2"
+    ]
+  },
+  {
+    "id": "outetts-0-2-500m",
+    "name": "OuteTTS 0.2 500M",
+    "provider": "OuteAI",
+    "category": "tts",
+    "released": "2024-11",
+    "open_weights": true,
+    "license": "cc-by-nc-4.0",
+    "params_b": 0.5,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "OuteAI/OuteTTS-0.2-500M (499,193,728 parameters per HF safetensors metadata). Distinct from OuteTTS 0.1, 0.3 and Llama-OuteTTS 1.0.",
+    "identity_sources": [
+      "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/tree/71d6994ffa92c066628d83db99f1298516ece592"
+    ]
+  },
+  {
+    "id": "vall-e-x-plachtaa",
+    "name": "VALL-E X (Plachtaa open implementation)",
+    "provider": "Plachtaa (community)",
+    "category": "tts",
+    "released": "2023-08",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Community reimplementation of Microsoft's VALL-E X at github.com/Plachtaa/VALL-E-X (vallex-checkpoint.pt); ClonEval names it as the open-source implementation it ran. Microsoft's VALL-E X was never released.",
+    "identity_sources": [
+      "https://github.com/Plachtaa/VALL-E-X",
+      "https://arxiv.org/abs/2504.20581v3"
+    ]
+  },
+  {
+    "id": "vits-vctk",
+    "name": "VITS (VCTK multi-speaker)",
+    "provider": "Kakao Enterprise (Jaehyeon Kim et al.)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "jaywalnut310/vits official VCTK multi-speaker checkpoint (pretrained_vctk.pth), the landmark 2021 end-to-end VITS model. Distinct from the LJSpeech checkpoint and from Coqui/Piper VITS derivatives.",
+    "identity_sources": [
+      "https://github.com/jaywalnut310/vits",
+      "https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md"
+    ]
+  },
+  {
+    "id": "supertonic-3",
+    "name": "Supertonic 3",
+    "provider": "Supertone",
+    "category": "tts",
+    "released": "2026-05",
+    "open_weights": true,
+    "license": "openrail-m",
+    "params_b": 0.099,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Supertone/supertonic-3 (on-device ONNX TTS, 31 languages, 'about 99M parameters across the public ONNX assets' per card). Model OpenRAIL-M; sample code MIT.",
+    "identity_sources": [
+      "https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323"
+    ]
+  },
+  {
+    "id": "chatterbox-multilingual-v3",
+    "name": "Chatterbox Multilingual V3",
+    "provider": "Resemble AI",
+    "category": "tts",
+    "released": "2026-04",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.5,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 3.2,
+          "cmd": "pip install chatterbox-tts && python -c \"import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cuda', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ResembleAI/chatterbox/blob/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/README.md",
+          "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "note": "Card 'Multilingual Quickstart' with t3_model='v3'. gb is the t3_mtl23ls_v3 (2.14 GB) plus s3gen_v3 (1.06 GB) safetensors size, not a measured peak.",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "recovered_original": false,
+    "identity_note": "ResembleAI/chatterbox t3_mtl23ls_v3 + s3gen_v3 (Chatterbox Multilingual V3, 0.5B, 23 languages; files committed 2026-04/06). Distinct from the original English Chatterbox (id chatterbox) and Multilingual V2.",
+    "identity_sources": [
+      "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18"
+    ]
+  },
+  {
+    "id": "qwen3-tts-12hz-0-6b-base",
+    "name": "Qwen3-TTS 12Hz 0.6B Base",
+    "provider": "Alibaba (Qwen)",
+    "category": "tts",
+    "released": "2026-01",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.6,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "Qwen/Qwen3-TTS-12Hz-0.6B-Base, the 0.6B reference-audio cloning checkpoint. Distinct from the 1.7B Base (qwen3-tts-12hz-1-7b-base) and the CustomVoice/VoiceDesign checkpoints.",
+    "identity_sources": [
+      "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc"
+    ]
+  },
+  {
+    "id": "moss-tts-v1-5",
+    "name": "MOSS-TTS v1.5 (8B)",
+    "provider": "OpenMOSS",
+    "category": "tts",
+    "released": "2026-05",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 8.49,
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "OpenMOSS-Team/MOSS-TTS-v1.5 (MossTTSDelay-8B; 8,489,841,664 parameters per HF safetensors metadata). Distinct from MOSS-TTSD dialogue models.",
+    "identity_sources": [
+      "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/tree/cdd3b911b1585e3f2dbc7775ef10f9926f58850a"
+    ]
+  },
+  {
+    "id": "fireredtts3-base",
+    "name": "FireRedTTS3 (base)",
+    "provider": "FireRedTeam (Xiaohongshu)",
+    "category": "tts",
+    "released": "2026-08",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "FireRedTeam/FireRedTTS3 run in its base (zero-shot cloning) mode. Distinct from FireRedTTS (v1), FireRedTTS-1S and FireRedTTS-2.",
+    "identity_sources": [
+      "https://huggingface.co/FireRedTeam/FireRedTTS3/tree/dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610"
+    ]
+  },
+  {
+    "id": "voicecraft-830m-tts-enhanced",
+    "name": "VoiceCraft 830M TTSEnhanced",
+    "provider": "Puyuan Peng et al. (UT Austin)",
+    "category": "tts",
+    "released": "2024-04",
+    "open_weights": true,
+    "license": "coqui-public-model-license",
+    "api": null,
+    "local": null,
+    "recovered_original": false,
+    "identity_note": "pyp1/VoiceCraft 830M_TTSEnhanced.pth (committed 2024-04-27), the TTS-finetuned 830M checkpoint. Distinct from giga830M (voicecraft-830m). GitHub README: weights under the Coqui Public Model License 1.0.0 (HF card tag says cc-by-nc-sa-4.0).",
+    "identity_sources": [
+      "https://huggingface.co/pyp1/VoiceCraft/tree/52b0f909d652ea016966804767320f13ede39abd",
+      "https://github.com/jasonppy/VoiceCraft"
+    ]
   }
 ]

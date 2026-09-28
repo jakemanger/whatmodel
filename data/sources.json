@@ -9879,5 +9879,327 @@
     "quote": "ACL Anthology landing page footer for 2021.emnlp-main.564: 'Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License.' The paper (EMNLP 2021) is an ACL publication; Section 4.1: 'We use GPT-2 via the HuggingFace Transformers library ... We do not finetune any models'.",
     "scope": "Appendix A, Table 6 ('Multiple Choice Accuracy on GPT-2'), 'LM' scoring column (standard unnormalised conditional log-probability) for the four released GPT-2 models 125M/350M/760M/1.6B, rows COPA, StoryCloze, HellaSwag, ARC-Easy, ARC-Challenge, OpenBookQA, CommonsenseQA. The authors ran GPT-2 themselves via Hugging Face Transformers (Section 4.1). Unc/Avg/PMI_DC/CC columns, RACE-M/H, BoolQ, RTE, CB, SST-2/5, AG News, TREC rows, and Table 5 (GPT-3 API models labelled only by assumed parameter counts 2.7B/6.7B/13B/175B, so their exact API identities are not established) not imported.",
     "icon": "arxiv.org"
+  },
+  {
+    "id": "speech-f5tts-report-ccby",
+    "match": [
+      "arxiv.org/html/2410.06885v1"
+    ],
+    "exact": true,
+    "name": "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching (arXiv:2410.06885v1)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2410.06885v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-f5tts-report-ccby.txt",
+    "attribution": "Yushen Chen et al. (SJTU / X-LANCE); 'F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching'; arXiv:2410.06885v1, CC BY 4.0. Changes: Tables 1-2: WER and SIM-o for the authors' F5-TTS and reproduced E2 TTS and their re-runs of CosyVoice-300M and FireRedTTS (rows marked * as copied are excluded); percentages divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v1 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Sec. 5: 'We report the average score of three random seed generation results with our model and open-sourced baselines'; Appendix A: FireRedTTS and CosyVoice 'We use the official code and pre-trained checkpoint' (github.com/FireRedTeam/FireRedTTS, huggingface.co/model-scope/CosyVoice-300M); Table 2 caption: '* denotes scores reported in baseline papers' (those rows excluded)."
+  },
+  {
+    "id": "speech-distar-report-ccby",
+    "match": [
+      "arxiv.org/html/2510.12210v2"
+    ],
+    "exact": true,
+    "name": "DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation (arXiv:2510.12210v2)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2510.12210v2",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-distar-report-ccby.txt",
+    "attribution": "DiSTAR authors (arXiv:2510.12210v2); 'DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation'; arXiv:2510.12210v2, CC BY 4.0. Changes: Table 1 WER/SIM/UTMOS and Table 2 SMOS for re-run open baselines only (IndexTTS, E2 TTS, F5-TTS v1, CosyVoice 2, FireRedTTS); DiTAR rows copied from its paper and the authors' unreleased DiSTAR models excluded; WER divided by 100, MOS normalised (x-1)/4. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v2 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Appendix E lists each open baseline with 'We use the official code and pre-trained checkpoint' (CosyVoice2-0.5B, IndexTeam/Index-TTS, SWivid/F5-TTS, FireRedTeam/FireRedTTS) or 'the unofficial implementation and pre-trained checkpoint' (SWivid/E2-TTS); Table 1 caption marks only DiTAR as '⧫ scores reported in DiTAR paper' (excluded)."
+  },
+  {
+    "id": "speech-dmospeech2-report-bysa",
+    "match": [
+      "arxiv.org/html/2507.14988v1"
+    ],
+    "exact": true,
+    "name": "DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis (arXiv:2507.14988v1)",
+    "kind": "paper",
+    "license": "CC BY-SA 4.0",
+    "terms_url": "https://arxiv.org/abs/2507.14988v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-dmospeech2-report-bysa.txt",
+    "attribution": "Yinghao Aaron Li et al.; 'DMOSpeech 2: Reinforcement Learning for Duration Prediction in Metric-Optimized Speech Synthesis'; arXiv:2507.14988v1, CC BY-SA 4.0. Changes: Table 2 Seed-TTS test-en/test-zh WER/CER and SIM for four re-run open baselines (CosyVoice 2, Spark-TTS, MaskGCT, LLaSA-8B); the authors' own F5-TTS teacher and DMOSpeech 2 rows excluded; error rates divided by 100. Share-alike: adapted rows remain CC BY-SA 4.0. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v1 abs page links http://creativecommons.org/licenses/by-sa/4.0/ and the HTML header reads 'License: CC BY-SA 4.0'. Table 2 caption: 'All samples from baseline models were synthesized using the official checkpoints released by the authors.'"
+  },
+  {
+    "id": "speech-stylettszs-report-bysa",
+    "match": [
+      "arxiv.org/html/2409.10058v1"
+    ],
+    "exact": true,
+    "name": "StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion (arXiv:2409.10058v1)",
+    "kind": "paper",
+    "license": "CC BY-SA 4.0",
+    "terms_url": "https://arxiv.org/abs/2409.10058v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-stylettszs-report-bysa.txt",
+    "attribution": "Yinghao Aaron Li et al.; 'StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion'; arXiv:2409.10058v1, CC BY-SA 4.0. Changes: Table II MOS-N, MOS-S and WER for the three public LibriTTS baselines (StyleTTS 2 LibriTTS, HierSpeech++ LibriTTS-960, XTTS-v2); the authors' StyleTTS-ZS rows and Table I (samples obtained from other authors) excluded; MOS normalised (x-1)/4, WER divided by 100. Share-alike: adapted rows remain CC BY-SA 4.0. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v1 abs page links http://creativecommons.org/licenses/by-sa/4.0/ and the HTML header reads 'License: CC BY-SA 4.0'. Sec. IV-B: 'Official checkpoints trained on LibriTTS were used for all baseline models'; Appendix B-A: StyleTTS 2 'with the LibriTTS checkpoint at https://huggingface.co/yl4579/StyleTTS2-LibriTTS', HierSpeech++ 'with the LibriTTS-train-960 checkpoint', XTTSv2 'publicly available at https://huggingface.co/coqui/XTTS-v2 and we synthesized 40 samples'."
+  },
+  {
+    "id": "speech-ditto-tts-report-ccby",
+    "match": [
+      "arxiv.org/html/2406.11427v2"
+    ],
+    "exact": true,
+    "name": "DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors (arXiv:2406.11427v2)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2406.11427v2",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-ditto-tts-report-ccby.txt",
+    "attribution": "Keon Lee et al. (KRAFTON); 'DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors'; arXiv:2406.11427v2, CC BY 4.0. Changes: English cross-sentence WER and SIM-o for re-run open checkpoints YourTTS (Table 2) and StyleTTS 2 / XTTS-v2 (Table 11); rows marked * (copied) and the authors' unreleased DiTTo models excluded; WER divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v2 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Appendix A.4: 'We use open-sourced checkpoints of YourTTS (github.com/Edresson/YourTTS), Simple-TTS, StyleTTS 2 (github.com/yl4579/StyleTTS2), XTTS-v2 (huggingface.co/coqui/XTTS-v2)'; for StyleTTS 2 and XTTS-v2 'For objective evaluation, we use samples generated from the model checkpoints'. Tables mark copied scores with an asterisk (excluded)."
+  },
+  {
+    "id": "speech-voicecraft-report-bysa",
+    "match": [
+      "arxiv.org/html/2403.16973v3"
+    ],
+    "exact": true,
+    "name": "VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild (arXiv:2403.16973v3)",
+    "kind": "paper",
+    "license": "CC BY-SA 4.0",
+    "terms_url": "https://arxiv.org/abs/2403.16973v3",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-voicecraft-report-bysa.txt",
+    "attribution": "Puyuan Peng et al.; 'VoiceCraft: Zero-Shot Speech Editing and Text-to-Speech in the Wild'; arXiv:2403.16973v3, CC BY-SA 4.0. Changes: Table 6 zero-shot TTS WER, SIM and total naturalness MOS for VoiceCraft 830M, XTTS v2 and YourTTS; the authors' retrained VALL-E and FluentSpeech baselines excluded; WER divided by 100, MOS normalised (x-1)/4. Share-alike: adapted rows remain CC BY-SA 4.0. (v1/v2 of this paper are CC BY-NC-SA and are not used.) No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v3 abs page links http://creativecommons.org/licenses/by-sa/4.0/ and the HTML header reads 'License: CC BY-SA 4.0' (v1 and v2 are CC BY-NC-SA 4.0, so only v3 is cited). The zero-shot TTS set is the authors' own 250 prompt-transcript pairs from LibriTTS and GigaSpeech YouTube (Sec. 5.1), so every row was generated by the authors; XTTS v2 is cited to huggingface.co/coqui/XTTS-v2."
+  },
+  {
+    "id": "speech-voxcpm-report-ccby",
+    "match": [
+      "arxiv.org/html/2509.24650v1"
+    ],
+    "exact": true,
+    "name": "VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning (arXiv:2509.24650v1)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2509.24650v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-voxcpm-report-ccby.txt",
+    "attribution": "OpenBMB / ModelBest VoxCPM team; 'VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning'; arXiv:2509.24650v1, CC BY 4.0. Changes: Table 5 listening-test N-MOS and S-MOS (ZH, EN) for VoxCPM, MaskGCT, CosyVoice 2 and IndexTTS 2, plus the authors' own VoxCPM Seed-TTS-eval row from Table 3; Table 3/4 baseline rows (mix of re-runs and copied values, not distinguishable) and the unreleased VoxCPM-Emilia excluded; MOS normalised (x-1)/4, error rates divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v1 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Sec. 4.1: 'Subjective evaluation involved Mean Opinion Score (MOS) tests rated by 20 native speakers on naturalness (N-MOS) and speaker similarity (S-MOS) using 5-point scales' — listening-test ratings require the authors to generate every system's audio. Objective baselines are 'obtained using official implementations with default settings, or as reported in their original papers' and are therefore not used."
+  },
+  {
+    "id": "speech-spark-tts-report-ccby",
+    "match": [
+      "arxiv.org/html/2503.01710v1"
+    ],
+    "exact": true,
+    "name": "Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens (arXiv:2503.01710v1)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2503.01710v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-spark-tts-report-ccby.txt",
+    "attribution": "Xinsheng Wang et al. (SparkAudio); 'Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens'; arXiv:2503.01710v1, CC BY 4.0. Changes: Table 4 Spark-TTS own row (Seed-TTS test-zh CER/SIM, test-en WER/SIM); all baseline rows match values published in earlier papers and are excluded; error rates divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v1 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Only the authors' own Spark-TTS row is used; baseline rows in Table 4 reproduce values from the cited papers and are excluded."
+  },
+  {
+    "id": "speech-raon-opentts-report-ccby",
+    "match": [
+      "arxiv.org/html/2605.20830v2"
+    ],
+    "exact": true,
+    "name": "Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech (arXiv:2605.20830v2)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2605.20830v2",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-raon-opentts-report-ccby.txt",
+    "attribution": "KRAFTON Raon-OpenTTS team; 'Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech'; arXiv:2605.20830v2, CC BY 4.0. Changes: Tables 1, 5, 6 and 8: Seed-TTS test-en WER/SIM, CV3-EN WER, CV3-Hard-EN WER/SIM/DNSMOS, Raon-OpenTTS-Eval overall WER/SIM and overall human SMOS for re-run open-weight baselines and the authors' released Raon-OpenTTS 0.3B/1B; closed-weight rows (Seed-TTS, CosyVoice 3 1.5B) reported from other papers, the unpinned F5-TTS (v0 vs v1) and Voxtral TTS rows, CMOS and per-condition splits excluded; WER divided by 100, MOS normalised (x-1)/4. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "v2 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Sec. 4.3: 'For all open-weight baseline models, we use their officially released checkpoints and follow the default or recommended inference settings provided by the authors, without additional tuning. For CosyVoice 3, we use the officially released 0.5B checkpoint, as the 1.5B variant is not available as open weights. For closed-weight models, we report the evaluation results as published by the original authors' (closed-weight rows excluded)."
+  },
+  {
+    "id": "speech-rvcbench-ccby",
+    "match": [
+      "arxiv.org/html/2602.00443v2"
+    ],
+    "exact": true,
+    "name": "RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models (arXiv:2602.00443v2)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2602.00443v2",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-rvcbench-ccby.txt",
+    "attribution": "Ruinan Jin, Xinting Liao, Hanlin Yu, Deval Pandya, Xiaoxiao Li; 'RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models'; arXiv:2602.00443v2, CC BY 4.0. Changes: selected LibriTTS clean-condition SIM and WER cells from Table 13 for eleven systems; SIM kept as raw cosine, WER kept as printed fraction. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "The v2 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. §3.1/Appendix C: the authors ran all 18 open-source voice-cloning models themselves through their toolkit (SpeechBrain ECAPA SIM, Whisper-medium WER, 1000-sample bootstrap); Table 13 is their own measurement. Model identities taken from the CC0-licensed RVCBench GitHub configs."
+  },
+  {
+    "id": "speech-wayu-thai-tts-ccby",
+    "match": [
+      "arxiv.org/html/2609.03502v1"
+    ],
+    "exact": true,
+    "name": "Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech (Wayu Research / Paxa Labs / Typhoon; arXiv:2609.03502v1)",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2609.03502v1",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-wayu-thai-tts-ccby.txt",
+    "attribution": "Kunat Pipatanakul, Potsawee Manakul, Warit Sirichotedumrong, Sittipong Sripaisarnmongkol, Pakorn Nathong, Phatrasek Jirabovonvisut; 'Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech'; arXiv:2609.03502v1, CC BY 4.0. Changes: Table 8 Thai CER and Challenge-Set keyword accuracy for three systems, divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "quote": "The v1 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. The authors synthesised the evaluation audio with every system themselves ('We use only the transcripts and synthesize all evaluation audio', §3.1.1), including Gemini 3.1 Flash TTS via the gemini-3.1-flash-tts-preview API and the OmniVoice teacher."
+  },
+  {
+    "id": "speech-cloneval-space-apache",
+    "match": [
+      "huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv"
+    ],
+    "exact": true,
+    "name": "ClonEval · Open Voice Cloning Leaderboard (AMU)",
+    "kind": "leaderboard",
+    "license": "Apache-2.0",
+    "terms_url": "https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/README.md",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-cloneval-space-apache.txt",
+    "attribution": "Open Voice Cloning Leaderboard / ClonEval, Iwona Christop, Tomasz Kuczyński and Marek Kubis (Adam Mickiewicz University), Hugging Face Space amu-cai/Open_Voice_Cloning_Leaderboard, Apache-2.0. Selected LibriSpeech test-clean WavLM similarity rows; catalogue IDs mapped. No endorsement.",
+    "icon": "huggingface.co",
+    "quote": "Space card README.md at the pinned revision declares 'license: apache-2.0'; results.csv (all per-dataset/per-emotion WavLM and acoustic-feature similarities) is committed in the same Space repository and read locally by src/process_leaderboard_data.py (data_path='results.csv'). pages/about.md: the authors generate samples with each voice cloning model and average WavLM speaker-embedding cosine similarity. The ClonEval arXiv paper carries the default arXiv licence and is used only for identity."
+  },
+  {
+    "id": "speech-arabic-tts-arena-apache",
+    "match": [
+      "huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json"
+    ],
+    "exact": true,
+    "name": "Arabic TTS Arena (Navid AI) · leaderboard snapshot 2026-09-24",
+    "kind": "leaderboard",
+    "license": "Apache-2.0",
+    "terms_url": "https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/README.md",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-arabic-tts-arena-apache.txt",
+    "attribution": "Arabic TTS Arena by Navid AI, Hugging Face Space Navid-AI/Arabic-TTS-Arena, Apache-2.0. Overall elo of active models from the pinned leaderboard.json; catalogue IDs mapped. No endorsement.",
+    "icon": "huggingface.co",
+    "quote": "Space card README.md at the pinned revision declares 'license: apache-2.0'; leaderboard.json (ratings, CIs, battle counts, per-dialect cells; last_updated 2026-09-24T00:01:34Z, total_votes 8647) is committed in the same Space repository (daily 'Upload leaderboard.json' commits) and read by app.py as LEADERBOARD_FILE."
+  },
+  {
+    "id": "speech-balacoon-baselines-apache",
+    "match": [
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/qwen3_tts/vctk/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/qwen3_tts/daps_celeb/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/vctk/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/sesame/daps_celeb/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/vctk/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/xtts/daps_celeb/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/vctk/metrics.yaml",
+      "huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/zero-tts/zonos/daps_celeb/metrics.yaml"
+    ],
+    "exact": true,
+    "name": "balacoon speech_gen_baselines · zero-shot TTS metrics (VCTK, DAPS-celeb)",
+    "kind": "dataset",
+    "license": "Apache-2.0",
+    "terms_url": "https://huggingface.co/datasets/balacoon/speech_gen_baselines/blob/e14eac6aa6752aa68cb7b7ebfc379d51a1a085fd/README.md",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-balacoon-baselines-apache.txt",
+    "attribution": "balacoon/speech_gen_baselines (Hugging Face dataset, Apache-2.0), evaluated with balacoon/speech_gen_eval (MIT) on balacoon/speech_gen_eval_testsets. Selected whisperv3_cer, utmos_mos and redimnet_secs values; UTMOS normalized (x-1)/4. No endorsement.",
+    "icon": "huggingface.co",
+    "quote": "Dataset card front matter: 'license: apache-2.0'; README: 'This dataset contains synthetic samples and evaluation results for various speech generation systems... Evaluation is done via speech_gen_eval.' metrics.yaml files are committed in the dataset. Generation notebooks in the MIT speech_gen_eval repo pin checkpoints (Qwen/Qwen3-TTS-12Hz-1.7B-Base, xtts_v2, Zyphra/Zonos-v0.1-transformer)."
+  },
+  {
+    "id": "speech-amphion-maskgct-mit",
+    "match": [
+      "github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md"
+    ],
+    "exact": true,
+    "name": "Amphion MaskGCT README · zero-shot TTS results table",
+    "kind": "first-party",
+    "license": "MIT",
+    "terms_url": "https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-amphion-maskgct-mit.txt",
+    "attribution": "Copyright (c) 2023 Amphion. MaskGCT README (open-mmlab/Amphion), MIT License. Selected WER values for MaskGCT and the re-run XTTS-v2, VoiceCraft and CosyVoice baselines, percent divided by 100. No endorsement.",
+    "icon": "github.com",
+    "quote": "Repository root LICENSE is the MIT License ('Copyright (c) 2023 Amphion'), covering files in the repository including models/tts/maskgct/README.md. Provenance of rows from the MaskGCT paper (arXiv:2409.00750v3, default arXiv licence, identity only) Appendix D: XTTS-v2, VoiceCraft (830M_TTSEnhanced.pth) and CosyVoice (CosyVoice-300M) 'We use the official code and pre-trained checkpoint'; NaturalSpeech 3 and VoiceBox objective scores are copied ('We report the scores ... obtained from Ju et al.') and VALL-E is an Amphion reproduction — those rows are not imported."
+  },
+  {
+    "id": "speech-ultraeval-audio-apache",
+    "match": [
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice2.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/CosyVoice3.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/fishaudio-s2-pro.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md",
+      "github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md"
+    ],
+    "exact": true,
+    "name": "UltraEval-Audio (OpenBMB) · TTS replication results",
+    "kind": "dataset",
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-ultraeval-audio-apache.txt",
+    "attribution": "UltraEval-Audio by OpenBMB, Apache License 2.0. Selected reproduced Seed-TTS-Eval test-en WER / test-zh CER values from replication/*.md, percent divided by 100; official values in parentheses not used. No endorsement.",
+    "icon": "github.com",
+    "quote": "Repository root LICENSE is the Apache License, Version 2.0; the replication/*.md result documents are committed files of the repository. Each document states 'Performance format: reproduced_result(official_result)' — only the reproduced (first) value, measured by OpenBMB with the committed eval_cli commands, is used. VoxCPM/VoxCPM2 rows are OpenBMB's own models (by=lab)."
+  },
+  {
+    "id": "speech-ttsds2-listening-mit",
+    "match": [
+      "huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv"
+    ],
+    "exact": true,
+    "name": "TTSDS2 listening test results (ttsds/listening_test)",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/README.md",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-ttsds2-listening-mit.txt",
+    "attribution": "TTSDS2 listening test results by Christoph Minixhofer et al. (huggingface.co/datasets/ttsds/listening_test), MIT. Changes: per-system MOS and SMOS means over the Clean/Noisy/Wild/Kids domains computed from the published individual ratings and normalised (x-1)/4. No audio used. No endorsement.",
+    "icon": "huggingface.co",
+    "quote": "Dataset card front matter at the pinned revision: 'license: mit'; card text: 'This dataset contains all 11,000+ ratings collected for 20 synthetic speech systems for the TTSDS2 study ... The scores are MOS (Mean Opinion Score), CMOS (Comparative Mean Opinion Score) and SMOS (Speaker Similarity Mean Opinion Score).' The ratings file subjective_results.csv is part of that dataset. The accompanying paper (arXiv:2506.19441) is under the default arXiv licence and is used only to confirm system identity and that our aggregation reproduces its Table 2."
+  },
+  {
+    "id": "speech-ttsds2-multilingual-mit",
+    "match": [
+      "huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv",
+      "huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv"
+    ],
+    "exact": true,
+    "name": "TTSDS2 multilingual benchmark results (ttsds/leaderboard_data)",
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/README.md",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/speech-ttsds2-multilingual-mit.txt",
+    "attribution": "TTSDS2 multilingual benchmark results by Christoph Minixhofer et al. (huggingface.co/datasets/ttsds/leaderboard_data), MIT. Changes: English and Chinese OVERALL scores selected and divided by 100. No audio used. No endorsement.",
+    "icon": "huggingface.co",
+    "quote": "Dataset card at the pinned revision is exactly '---\\nlicense: mit\\n---'; the result CSVs under ttsds/ are files of that dataset. Only the aggregated result files are used; the dataset's YouTube-derived audio is not downloaded or redistributed. The ttsdsbenchmark.com website and the ttsds/website repository (no licence) are not used."
   }
 ]

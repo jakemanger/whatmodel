@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 37.1** ±8.6 · #34 of 36 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.9** ±7.5 · #35 of 46 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    36.2   2026-03-15   50% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    20.6   2026-03-15   20% ▇▇
-prior                   pull toward the middle                      49.9                30% ▇▇▇▇
-                        weighted average                          = 37.1
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    52.9   2026-03-15   46% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    38.9   2026-03-15   31% ▇▇▇▇
+prior                   pull toward the middle                      49.9                23% ▇▇▇
+                        weighted average                          = 47.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-gui
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~1.7GB   37.1
+bf16 · nvidia only  ~1.7GB   47.9
 </pre>
 
 ```sh

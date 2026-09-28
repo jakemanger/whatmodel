@@ -6,7 +6,7 @@
 
 Speechify · released 2026-07 · proprietary
 
-**score 60.8** ±3.0 · #4 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.6** ±3.0 · #2 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1279.2    61.2   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1279.2    70.3   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 60.8
+                        weighted average                        = 69.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

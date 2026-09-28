@@ -6,7 +6,7 @@
 
 Inworld · proprietary
 
-**score 56.5** ±3.0 · #14 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.2** ±3.0 · #11 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1227.3    56.7   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1227.3    65.8   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 56.5
+                        weighted average                        = 65.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

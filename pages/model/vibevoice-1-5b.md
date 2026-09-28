@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 56.9** ±5.4 · #13 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.2** ±5.5 · #39 of 46 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    57.9   2026-09-25   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    43.2   2026-05-24   69% ▇▇▇▇▇▇▇▇
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    55.0   2026-09-25   18% ▇▇
 prior                   pull toward the middle                      49.9                12% ▇
-                        weighted average                          = 56.9
+                        weighted average                          = 46.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Microsoft VibeVoice own subjective evaluation figure ([MIT](../../licenses/speech-followup-NOTICES.txt))</sub>
+<sub>Licences: RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt)) · Microsoft VibeVoice own subjective evaluation figure ([MIT](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.98GB   56.9
+bf16 · nvidia only  ~6.98GB   46.2
 </pre>
 
 ```sh

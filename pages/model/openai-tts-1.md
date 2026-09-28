@@ -6,7 +6,7 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 53.1** ±3.3 · #22 of 36 · from 3 benchmark results across 1 source
+**score 60.3** ±3.3 · #24 of 46 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source             test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    54.1   2026-07-16   39% ▇▇▇▇▇
-                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.16 / 5    53.2   2026-07-16   29% ▇▇▇
-                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    52.1   2026-07-16   27% ▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    61.6   2026-07-16   43% ▇▇▇▇▇
+                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    59.4   2026-07-16   31% ▇▇▇▇
+                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.16 / 5    61.1   2026-07-16   21% ▇▇▇
 prior              pull toward the middle                      49.9                 4% ▇
-                   weighted average                          = 53.1
+                   weighted average                          = 60.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
