@@ -9,7 +9,7 @@ import type { Category, Hardware, Model, Scored, Specs, SpeedUnit, Variant } fro
 // CUDA-only commands need an NVIDIA card (or one whose make we don't know).
 const isNvidia = (s: Specs) => s.gpu === "card" && (!s.hw || s.hw.kind === "nvidia");
 
-export type Where = "local" | "local-slow" | "api" | "none";
+export type Where = "local" | "local-slow" | "api" | "none" | "retired";
 
 // measured: on this exact hardware (or an API's measured speed). scaled: measured on other
 // hardware of the same kind, scaled by memory bandwidth. estimated: from the calibrated formula.
@@ -66,14 +66,16 @@ type Opts = {
   gFor?: (m: Model, v: Variant) => { g: number; label: string }; // score of a quantized variant
   speedFor?: (m: Model, v: Variant, s: Specs, fastGb: number) => RowSpeed | null;
   thinBelow?: number; // results needed to not be "thin": 3, or fewer in categories with fewer benchmarks
+  retired?: boolean; // also list models with no API or weights left, for history
 };
 
-export function rank(models: Model[], scores: Map<string, Scored>, { specs, max = null, gFor, speedFor, thinBelow = 3 }: Opts): Row[] {
+export function rank(models: Model[], scores: Map<string, Scored>, { specs, max = null, gFor, speedFor, thinBelow = 3, retired = false }: Opts): Row[] {
   const mem = specs ? usable(specs) : null;
   const rows = models.flatMap((m) => {
     const s = scores.get(m.id);
-    // Retired models (no API, no weights) still anchor the fit but can't be run, so aren't listed.
-    if (!s || (!m.api && !m.local?.variants.length)) return [];
+    // Retired models (no API, no weights) still anchor the fit but can't be run, so they're listed only on request.
+    const gone = !m.api && !m.local?.variants.length;
+    if (!s || (gone && !retired)) return [];
     const cat = catOf(m);
     const variants = (m.local?.variants ?? []).filter((v) => runsOn(v, specs)).sort((x, y) => y.gb - x.gb);
     const smallest = variants.at(-1);
@@ -99,6 +101,7 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     else if (api) [run, cmd] = ["api", api.url];
     else if (pick) [run, cmd, chosen] = ["local-slow", pick.cmd, pick];
     else if (!mem && smallest) [run, cmd] = ["local", smallest.cmd]; // no specs: show the model as benchmarked
+    if (gone) run = "retired";
 
     const apiSpeed: RowSpeed | null =
       run !== "api" || !m.api ? null

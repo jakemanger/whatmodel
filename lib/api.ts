@@ -4,6 +4,7 @@ import { parseMax, parseSort, parseSpecs, rank, sortRows, usable } from "./fit.t
 import { DISCLOSURE, sponsor, toText } from "./format.ts";
 import { chartsFor, chartToText } from "./chart.ts";
 import { SOURCES } from "./sources.ts";
+import { retiredCount } from "./views.ts";
 
 // The leaderboard as text or JSON. `cat` comes from the path (/api/image) or ?cat=.
 export function leaderboard(req: Request, c: string | null) {
@@ -14,7 +15,7 @@ export function leaderboard(req: Request, c: string | null) {
   const max = parseMax(q);
   const comparison = comparisonFor(cat, q.get("set"));
   const alternatives = comparisonSets[cat].map(({ id, label, models }) => ({ id, label, models: models.length }));
-  const ranked = rank(modelsIn(cat), comparison?.fit.scores ?? new Map(), { specs, max, gFor, speedFor, thinBelow: 3 });
+  const ranked = rank(modelsIn(cat), comparison?.fit.scores ?? new Map(), { specs, max, gFor, speedFor, thinBelow: 3, retired: q.has("retired") });
   const { sort, dir } = parseSort(q, ranked);
   const rows = sortRows(ranked, sort, dir);
   const all = q.has("all");
@@ -65,6 +66,7 @@ export function leaderboard(req: Request, c: string | null) {
     benches: benchesUsed(cat, comparison?.id),
     comparison: alternatives.length > 1 ? { selected: comparison?.id, sets: alternatives } : undefined,
     updated: updatedLabel,
+    retiredCount: retiredCount(modelsIn(cat), comparison?.fit.scores),
   });
   // ?chart=1 draws the plots under the title line.
   const lines = text.split("\n");

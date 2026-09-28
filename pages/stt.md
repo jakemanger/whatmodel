@@ -193,11 +193,31 @@ curl.exe "whatmodel.sh/stt?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
 105  <a href="model/mms-1b-fl102.md">MMS-1B-FL102</a>                -6±4*  local                  ~5.1GB  uv run --with trans…
 </pre>
 
+<details><summary>Retired models (12): no current API or download</summary>
+
+Ranked on today's scale, so # is where each would place in the list above.
+
+<pre>
+ #  model                       score  where
+ 1  <a href="model/sarvam-saarika-v2-5.md">Saarika v2.5</a>                69±6*  retired
+ 9  <a href="model/assemblyai-universal-3-pro.md">Universal-3 Pro</a>             63±2   retired
+13  <a href="model/elevenlabs-scribe-v1.md">Scribe v1</a>                   62±3*  retired
+17  <a href="model/aquavoice-avalon-v1-en.md">Avalon v1 (en)</a>              61±4*  retired
+29  <a href="model/qwen-audio-3-0-asr.md">Qwen-Audio-3.0-ASR</a>          59±4*  retired
+37  <a href="model/zipformer-transducer-xl-290m.md">Zipformer Transducer XL 2…</a>  58±4*  retired
+40  <a href="model/revai-fusion.md">Rev AI Fusion (Whisper Fu…</a>  58±3*  retired
+41  <a href="model/tencent-hy-asr-3-0-preview.md">Tencent Hy-ASR-3.0-preview</a>  58±4*  retired
+45  <a href="model/fun-asr-flash.md">Fun-ASR-Flash</a>               57±4*  retired
+74  <a href="model/google-chirp.md">Chirp</a>                       52±3*  retired
+82  <a href="model/ultravox-v0-6-llama-3-1-8b.md">Ultravox v0.6 (Llama 3.1 …</a>  50±4*  retired
+99  <a href="model/abr-asr-19m-v2-en.md">ABR asr-19m-v2-en</a>           42±4*  retired
+</pre>
+
+</details>
+
 \* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 105 of 121 catalogue models ranked here · [sources and licences](method.md#sources)
 
-<details><summary>Models outside this leaderboard (16 models)</summary>
-
-No current run option verified: [Qwen-Audio-3.0-ASR](model/qwen-audio-3-0-asr.md) · [Fun-ASR-Flash](model/fun-asr-flash.md) · [Tencent Hy-ASR-3.0-preview](model/tencent-hy-asr-3-0-preview.md) · [Saarika v2.5](model/sarvam-saarika-v2-5.md) · [Zipformer Transducer XL 290M](model/zipformer-transducer-xl-290m.md) · [Ultravox v0.6 (Llama 3.1 8B)](model/ultravox-v0-6-llama-3-1-8b.md) · [ABR asr-19m-v2-en](model/abr-asr-19m-v2-en.md) · [Universal-3 Pro](model/assemblyai-universal-3-pro.md) · [Avalon v1 (en)](model/aquavoice-avalon-v1-en.md) · [Scribe v1](model/elevenlabs-scribe-v1.md) · [Rev AI Fusion (Whisper Fusion)](model/revai-fusion.md) · [Chirp](model/google-chirp.md)
+<details><summary>Models without a score (4)</summary>
 
 Raw results, insufficient overlap for an overall score: [Grok Voice Transcribe 2.0](model/grok-voice-transcribe-2.md) · [Granite Speech 5.0 470M TurboCTC](model/granite-speech-5-0-470m-turboctc.md)
 

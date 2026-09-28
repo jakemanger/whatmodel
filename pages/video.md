@@ -142,11 +142,43 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 54  <a href="model/pika-2-2.md">Pika 2.2</a>                     21±2   api $0.040/sec            <a href="https://fal.ai/models/fal-ai/pika/v2.2/text-to-video">fal.ai</a>
 </pre>
 
+<details><summary>Retired models (24): no current API or download</summary>
+
+Ranked on today's scale, so # is where each would place in the list above.
+
+<pre>
+ #  model                       score  where
+ 9  <a href="model/muse-video.md">Muse Video</a>                  74±3*  retired
+10  <a href="model/hidream-o1-video-1-0.md">HiDream-O1-Video 1.0</a>        71±4*  retired
+14  <a href="model/sora-2-pro.md">Sora 2 Pro</a>                  64±3*  retired
+20  <a href="model/sora-2.md">Sora 2</a>                      62±2   retired
+22  <a href="model/veo-3-fast.md">Veo 3 Fast</a>                  60±2*  retired
+23  <a href="model/veo-3.md">Veo 3</a>                       59±2*  retired
+28  <a href="model/vidu-q3.md">Vidu Q3</a>                     55±6*  retired
+33  <a href="model/runway-aleph.md">Runway Aleph</a>                50±6*  retired
+38  <a href="model/cosmos3-nano.md">Cosmos3-Nano</a>                49±6*  retired
+48  <a href="model/luma-ray-3.md">Ray 3</a>                       45±2   retired
+51  <a href="model/vidu-q2-pro.md">Vidu Q2 Pro</a>                 44±4*  retired
+52  <a href="model/kling-1-6-pro.md">Kling 1.6 (Pro mode)</a>        44±5*  retired
+53  <a href="model/runway-gen-4.md">Runway Gen-4</a>                44±5*  retired
+57  <a href="model/veo-2.md">Veo 2</a>                       39±2*  retired
+61  <a href="model/seedance-1-0-lite.md">Seedance 1.0 Lite</a>           37±2   retired
+64  <a href="model/kling-1-6-std.md">Kling 1.6 (Standard mode)</a>   36±5*  retired
+65  <a href="model/hunyuanvideo-i2v.md">HunyuanVideo-I2V</a>            36±5*  retired
+66  <a href="model/kandinsky-5-0-t2v-lite.md">Kandinsky 5.0 T2V Lite</a>      35±3*  retired
+67  <a href="model/open-sora-2-0.md">Open-Sora 2.0</a>               34±6*  retired
+68  <a href="model/cogvideox-1-5-5b.md">CogVideoX1.5-5B</a>             33±5*  retired
+69  <a href="model/cosmos-1-0-diffusion-7b-text2world.md">Cosmos-1.0-Diffusion-7B-T…</a>  33±4*  retired
+72  <a href="model/luma-ray-2.md">Ray 2</a>                       29±2   retired
+73  <a href="model/sora.md">Sora (original, 2024)</a>       29±3*  retired
+74  <a href="model/runway-gen-3-alpha.md">Runway Gen-3 Alpha</a>          29±5*  retired
+</pre>
+
+</details>
+
 \* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 54 of 79 catalogue models ranked here · [sources and licences](method.md#sources)
 
-<details><summary>Models outside this leaderboard (25 models)</summary>
-
-No current run option verified: [Veo 3](model/veo-3.md) · [Sora 2](model/sora-2.md) · [Sora 2 Pro](model/sora-2-pro.md) · [Ray 3](model/luma-ray-3.md) · [Vidu Q3](model/vidu-q3.md) · [Cosmos3-Nano](model/cosmos3-nano.md) · [Muse Video](model/muse-video.md) · [HiDream-O1-Video 1.0](model/hidream-o1-video-1-0.md) · [Veo 3 Fast](model/veo-3-fast.md) · [Seedance 1.0 Lite](model/seedance-1-0-lite.md) · [Kandinsky 5.0 T2V Lite](model/kandinsky-5-0-t2v-lite.md) · [Veo 2](model/veo-2.md) · [Sora (original, 2024)](model/sora.md) · [Ray 2](model/luma-ray-2.md) · [Vidu Q2 Pro](model/vidu-q2-pro.md) · [Runway Aleph](model/runway-aleph.md) · [CogVideoX1.5-5B](model/cogvideox-1-5-5b.md) · [Runway Gen-3 Alpha](model/runway-gen-3-alpha.md) · [Kling 1.6 (Standard mode)](model/kling-1-6-std.md) · [Open-Sora 2.0](model/open-sora-2-0.md) · [HunyuanVideo-I2V](model/hunyuanvideo-i2v.md) · [Kling 1.6 (Pro mode)](model/kling-1-6-pro.md) · [Runway Gen-4](model/runway-gen-4.md) · [Cosmos-1.0-Diffusion-7B-Text2World](model/cosmos-1-0-diffusion-7b-text2world.md)
+<details><summary>Models without a score (1)</summary>
 
 No reviewed benchmark results yet: LTX-2.5
 

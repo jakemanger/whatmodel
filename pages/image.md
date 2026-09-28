@@ -195,11 +195,62 @@ curl.exe "whatmodel.sh/image?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 105  <a href="model/lcm-dreamshaper-v7.md">LCM Dreamshaper v7</a>          22±3*  local              ~4.6GB  uv run --with diffu…
 </pre>
 
+<details><summary>Retired models (43): no current API or download</summary>
+
+Ranked on today's scale, so # is where each would place in the list above.
+
+<pre>
+  #  model                       score  where
+  4  <a href="model/mai-image-2-6.md">MAI-Image-2.6</a>               80±2*  retired
+ 12  <a href="model/mai-image-2-5.md">MAI-Image-2.5</a>               73±2*  retired
+ 16  <a href="model/qwen-image-2-1.md">Qwen-Image-2.1</a>              70±2*  retired
+ 20  <a href="model/mai-image-2.md">MAI-Image-2</a>                 65±2*  retired
+ 30  <a href="model/reve-v1-5.md">Reve V1.5</a>                   62±2*  retired
+ 38  <a href="model/reve-v1-1.md">Reve V1.1</a>                   60±4*  retired
+ 40  <a href="model/emu3-5-image.md">Emu3.5-Image</a>                60±4*  retired
+ 55  <a href="model/reve-v1.md">Reve V1</a>                     57±4*  retired
+ 59  <a href="model/emu3-5.md">Emu3.5</a>                      56±4*  retired
+ 60  <a href="model/mai-image-1.md">MAI-Image-1</a>                 56±2*  retired
+ 65  <a href="model/seedream-3-0.md">Seedream 3.0</a>                55±2*  retired
+ 68  <a href="model/reve-v1-1-fast.md">Reve V1.1 Fast</a>              54±4*  retired
+ 71  <a href="model/reve-edit-fast.md">Reve Edit Fast</a>              53±4*  retired
+ 74  <a href="model/step1x-edit-v1-2.md">Step1X-Edit v1.2</a>            52±4*  retired
+ 75  <a href="model/imagen-3.md">Imagen 3 (imagen-3.0-gene…</a>  52±2*  retired
+ 83  <a href="model/seededit-3-0.md">SeedEdit 3.0</a>                49±3*  retired
+ 92  <a href="model/step1x-edit-v1-1.md">Step1X-Edit v1.1</a>            44±6*  retired
+ 93  <a href="model/uniworld-v1.md">UniWorld-V1</a>                 44±5*  retired
+ 94  <a href="model/metaquery-xl.md">MetaQuery-XL</a>                44±5*  retired
+ 95  <a href="model/midjourney-v6.md">Midjourney V6</a>               44±6*  retired
+ 96  <a href="model/dall-e-3.md">DALL·E 3</a>                    43±1   retired
+ 97  <a href="model/gemini-2-0-flash-image.md">Gemini 2.0 Flash Image Ge…</a>  43±2*  retired
+100  <a href="model/midjourney-v6-1.md">Midjourney V6.1</a>             41±4*  retired
+104  <a href="model/blip3o-next-grpo-text-3b.md">BLIP3o-NEXT-GRPO-Text-3B</a>    39±3*  retired
+105  <a href="model/playground-v2-5.md">Playground v2.5</a>             39±2   retired
+108  <a href="model/show-o2-7b.md">Show-o2 7B</a>                  38±3*  retired
+109  <a href="model/midjourney-v7.md">Midjourney V7</a>               38±4*  retired
+113  <a href="model/show-o2-1-5b-hq.md">Show-o2 1.5B-HQ</a>             37±3*  retired
+117  <a href="model/pixart-alpha.md">PixArt-α (PixArt-XL-2-102…</a>  36±2   retired
+118  <a href="model/blip3o-8b.md">BLIP3-o 8B</a>                  35±3*  retired
+120  <a href="model/emu3.md">Emu3</a>                        34±2   retired
+121  <a href="model/show-o-demo-512.md">Show-o (show-o-demo-512)</a>    34±3*  retired
+123  <a href="model/deepfloyd-if-xl.md">IF-XL</a>                       32±2   retired
+130  <a href="model/versatile-diffusion.md">Versatile Diffusion v1.0</a>    31±4*  retired
+131  <a href="model/cogview2.md">CogView2</a>                    31±4*  retired
+135  <a href="model/dall-e-2.md">DALL·E 2</a>                    30±3*  retired
+136  <a href="model/sd-2-0.md">Stable Diffusion v2.0</a>       29±3*  retired
+137  <a href="model/vq-diffusion-ithq.md">VQ-Diffusion (ITHQ)</a>         29±4*  retired
+138  <a href="model/vila-u-7b-256.md">VILA-U 7B (256px)</a>           29±5*  retired
+139  <a href="model/glide-filtered.md">GLIDE (filtered)</a>            28±4*  retired
+140  <a href="model/sd-2-1.md">Stable Diffusion v2.1</a>       27±2   retired
+144  <a href="model/sd-1-5.md">Stable Diffusion v1.5</a>       24±2   retired
+147  <a href="model/janus-1-3b.md">Janus-1.3B</a>                  22±5*  retired
+</pre>
+
+</details>
+
 \* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 105 of 154 catalogue models ranked here · [sources and licences](method.md#sources)
 
-<details><summary>Models outside this leaderboard (46 models)</summary>
-
-No current run option verified: [MAI-Image-2.6](model/mai-image-2-6.md) · [Stable Diffusion v1.5](model/sd-1-5.md) · [Stable Diffusion v2.1](model/sd-2-1.md) · [IF-XL](model/deepfloyd-if-xl.md) · [MAI-Image-2.5](model/mai-image-2-5.md) · [Qwen-Image-2.1](model/qwen-image-2-1.md) · [SeedEdit 3.0](model/seededit-3-0.md) · [Gemini 2.0 Flash Image Generation (preview)](model/gemini-2-0-flash-image.md) · [Reve V1.1](model/reve-v1-1.md) · [Reve V1](model/reve-v1.md) · [Reve V1.1 Fast](model/reve-v1-1-fast.md) · [Reve Edit Fast](model/reve-edit-fast.md) · [MAI-Image-2](model/mai-image-2.md) · [MAI-Image-1](model/mai-image-1.md) · [Reve V1.5](model/reve-v1-5.md) · [Seedream 3.0](model/seedream-3-0.md) · [Imagen 3 (imagen-3.0-generate-002)](model/imagen-3.md) · [DALL·E 3](model/dall-e-3.md) · [Show-o2 7B](model/show-o2-7b.md) · [Show-o2 1.5B-HQ](model/show-o2-1-5b-hq.md) · [BLIP3o-NEXT-GRPO-Text-3B](model/blip3o-next-grpo-text-3b.md) · [BLIP3-o 8B](model/blip3o-8b.md) · [Emu3](model/emu3.md) · [Playground v2.5](model/playground-v2-5.md) · [Show-o (show-o-demo-512)](model/show-o-demo-512.md) · [Emu3.5](model/emu3-5.md) · [Emu3.5-Image](model/emu3-5-image.md) · [Midjourney V7](model/midjourney-v7.md) · [PixArt-α (PixArt-XL-2-1024-MS)](model/pixart-alpha.md) · [Janus-1.3B](model/janus-1-3b.md) · [VILA-U 7B (256px)](model/vila-u-7b-256.md) · [UniWorld-V1](model/uniworld-v1.md) · [MetaQuery-XL](model/metaquery-xl.md) · [Step1X-Edit v1.1](model/step1x-edit-v1-1.md) · [Step1X-Edit v1.2](model/step1x-edit-v1-2.md) · [Stable Diffusion v2.0](model/sd-2-0.md) · [DALL·E 2](model/dall-e-2.md) · [Versatile Diffusion v1.0](model/versatile-diffusion.md) · [CogView2](model/cogview2.md) · [VQ-Diffusion (ITHQ)](model/vq-diffusion-ithq.md) · [GLIDE (filtered)](model/glide-filtered.md) · [Midjourney V6](model/midjourney-v6.md) · [Midjourney V6.1](model/midjourney-v6-1.md)
+<details><summary>Models without a score (3)</summary>
 
 Raw results, insufficient overlap for an overall score: [ERNIE-Image-Turbo](model/ernie-image-turbo.md) · [LLaDA-Image](model/llada-image.md) · [LLaDA-Image-Turbo](model/llada-image-turbo.md)
 

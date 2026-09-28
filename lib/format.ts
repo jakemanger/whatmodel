@@ -33,7 +33,7 @@ export const detectExact = (host: string, path = "/") => ({
 // The curl command for a set of picks, keeping only params the API understands.
 export function curlFor(host: string, path: string, q: URLSearchParams) {
   const keep = new URLSearchParams();
-  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "set", "chart"]) {
+  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "set", "chart"]) {
     const v = q.get(k);
     if (v) keep.set(k, v);
   }
@@ -50,6 +50,7 @@ export function whereLabel(r: Row) {
   if (r.where === "local") return "local";
   if (r.where === "local-slow") return "local (slow)";
   if (r.where === "api") return `api ${r.price === null ? "price unknown" : price(r.price, r.category)}`;
+  if (r.where === "retired") return "retired";
   const why = [r.need_gb !== null && `needs ${r.need_gb}GB`, r.over_budget && (r.price === null ? "price unknown" : price(r.price, r.category))].filter(Boolean);
   return `✗ ${why.join(" or ")}`;
 }
@@ -80,7 +81,9 @@ export function describeSpecs(s: Specs) {
 }
 
 type Opts = { color: boolean; base: string; limit: number; all: boolean; benches: number; updated: string; cat: Category;
-  comparison?: { selected?: string; sets: { id: string; label: string; models: number }[] } };
+  comparison?: { selected?: string; sets: { id: string; label: string; models: number }[] };
+  retiredCount?: number; // scored models with no API or weights left, listed with ?retired=1
+};
 
 export function toText(rows: Row[], specs: Specs | null, max: number | null, o: Opts) {
   const c = (code: string, s: string) => (o.color ? `\x1b[${code}m${s}\x1b[0m` : s);
@@ -126,17 +129,18 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
     const run = whereLabel(r).padEnd(18);
     const color = r.where === "local" ? "32" : r.where === "api" ? "36" : r.where === "local-slow" ? "33" : "2";
     const line = `  ${String(r.rank).padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${r.cmd ?? ""}`;
-    out.push(r.where === "none" ? c("2", line) : line);
+    out.push(r.where === "none" || r.where === "retired" ? c("2", line) : line);
   }
   out.push("");
   if (!o.all && hidden > 0) out.push(c("2", `  + ${hidden} more models don't fit your machine or budget (?all=1)`));
+  if (o.retiredCount && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} retired models with no current API or download (?retired=1)`));
   if (shown.some((r) => r.thin)) out.push(c("2", `  * new or thinly tested: ranked on too few benchmark results`));
   if (shown.some((r) => r.speed && r.speed.how !== "measured")) out.push(c("2", `  ~speed: measured on other hardware, or estimated. send your chip/GPU name for exact matches: ${host}/method#speed`));
   out.push(c("2", `  RAM is estimated; listed context is a provider ceiling, not a promise that it fits.`));
   out.push(c("2", `  sources and licences: ${host}/method#sources`));
   out.push(c("2", `  score = one number combining ${o.benches} benchmarks (50 = average model, ± = uncertainty) · ${host}/method`));
   out.push(c("2", `  other lists: ${["/", "/image", "/video", "/tts", "/stt"].filter((p) => p !== path).map((p) => host + p).join("  ")}`));
-  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1`));
+  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1  ?retired=1`));
   if (sponsor) out.push(`  ${c("35", "sponsor:")} ${sponsor.text} — ${sponsor.url}`);
   out.push(c("2", `  estimates from public sources; may be wrong or out of date. review commands before running. ${host}/terms`));
   out.push("");

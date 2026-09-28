@@ -347,11 +347,66 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 257  <a href="pages/model/gemma-3-270m.md">Gemma 3 270M IT</a>              1±3   local              ~2.2GB      32k  ollama run gemma3:2…
 </pre>
 
+<details><summary>Retired models (47): no current API or download</summary>
+
+Ranked on today's scale, so # is where each would place in the list above.
+
+<pre>
+  #  model                       score  where    context
+ 40  <a href="pages/model/muse-spark.md">Muse Spark</a>                  67±2   retired
+ 45  <a href="pages/model/ernie-5-1.md">ERNIE 5.1</a>                   66±4*  retired
+ 53  <a href="pages/model/gemini-3-pro-preview.md">Gemini 3 Pro (Preview)</a>      65±2   retired       1M
+ 57  <a href="pages/model/grok-4-0709.md">Grok 4 (0709)</a>               64±9*  retired
+ 83  <a href="pages/model/gemini-2-5-pro-preview-06-05.md">Gemini 2.5 Pro Preview (0…</a>  60±5*  retired
+ 90  <a href="pages/model/gemini-2-5-pro-exp-03-25.md">Gemini 2.5 Pro Experiment…</a>  60±5*  retired
+ 91  <a href="pages/model/gpt-5-5-instant.md">GPT-5.5 Instant</a>             60±1   retired
+ 98  <a href="pages/model/mimo-v2-omni.md">MiMo-V2-Omni</a>                59±4*  retired     262k
+105  <a href="pages/model/gemini-2-5-pro-preview-05-06.md">Gemini 2.5 Pro Preview (0…</a>  58±1*  retired
+118  <a href="pages/model/claude-opus-4-1-20250805.md">Claude Opus 4.1</a>             57±1   retired
+122  <a href="pages/model/gemini-2-5-flash-preview-04-17.md">Gemini 2.5 Flash Preview …</a>  56±4*  retired
+128  <a href="pages/model/gemini-2-5-flash-preview-05-20.md">Gemini 2.5 Flash Preview …</a>  55±4*  retired
+139  <a href="pages/model/claude-3-7-sonnet-20250219.md">Claude 3.7 Sonnet</a>           54±1   retired
+144  <a href="pages/model/o1-mini.md">o1-mini</a>                     52±1   retired
+145  <a href="pages/model/grok-3-beta.md">Grok 3 Beta</a>                 52±1   retired
+146  <a href="pages/model/grok-3-mini-beta.md">Grok 3 Mini Beta</a>            52±1   retired
+149  <a href="pages/model/gemini-2-0-flash-thinking-exp-01-21.md">Gemini 2.0 Flash Thinking…</a>  51±3*  retired
+159  <a href="pages/model/claude-opus-4-20250514.md">Claude Opus 4</a>               50±1   retired
+163  <a href="pages/model/claude-sonnet-4-20250514.md">Claude Sonnet 4</a>             50±1   retired
+166  <a href="pages/model/gemini-2-0-pro-exp-02-05.md">Gemini 2.0 Pro Experiment…</a>  49±1*  retired
+169  <a href="pages/model/gemini-2-0-flash-001.md">Gemini 2.0 Flash (001)</a>      49±1   retired
+171  <a href="pages/model/mistral-medium-2505.md">Mistral Medium 3 (2505)</a>     48±1   retired
+172  <a href="pages/model/o1-preview.md">o1-preview</a>                  48±1   retired
+174  <a href="pages/model/gpt-4-5-preview-2025-02-27.md">GPT-4.5 Preview</a>             47±1   retired
+190  <a href="pages/model/gemini-1-5-pro-002.md">Gemini 1.5 Pro (002)</a>        45±1   retired
+198  <a href="pages/model/qwen-max-2025-01-25.md">Qwen2.5-Max (2025-01-25)</a>    44±1   retired
+204  <a href="pages/model/grok-2-1212.md">Grok 2 (1212)</a>               43±1   retired
+206  <a href="pages/model/gemini-1-5-flash-002.md">Gemini 1.5 Flash (002)</a>      42±1   retired
+216  <a href="pages/model/claude-3-5-sonnet-20241022.md">Claude 3.5 Sonnet (2024-1…</a>  41±1   retired
+218  <a href="pages/model/qwen-turbo-2024-11-01.md">Qwen Turbo (2024-11-01)</a>     41±1   retired
+222  <a href="pages/model/claude-3-5-sonnet-20240620.md">Claude 3.5 Sonnet (2024-0…</a>  40±1   retired
+235  <a href="pages/model/claude-3-5-haiku-20241022.md">Claude 3.5 Haiku</a>            38±1   retired
+241  <a href="pages/model/gemini-1-5-pro-001.md">Gemini 1.5 Pro (001)</a>        37±1   retired
+242  <a href="pages/model/gpt-4-1106-preview.md">GPT-4 Turbo Preview (1106)</a>  37±1*  retired
+247  <a href="pages/model/claude-3-opus-20240229.md">Claude 3 Opus</a>               36±1   retired
+249  <a href="pages/model/gpt-4-0125-preview.md">GPT-4 Turbo Preview (0125)</a>  36±1*  retired
+253  <a href="pages/model/gemini-1-5-flash-8b-001.md">Gemini 1.5 Flash-8B (001)</a>   34±3*  retired
+260  <a href="pages/model/gemini-1-5-flash-001.md">Gemini 1.5 Flash (001)</a>      33±1   retired
+263  <a href="pages/model/mistral-large-2402.md">Mistral Large (2402)</a>        32±1   retired
+269  <a href="pages/model/claude-2-1.md">Claude 2.1</a>                  31±3*  retired
+272  <a href="pages/model/claude-3-sonnet-20240229.md">Claude 3 Sonnet</a>             30±1   retired
+276  <a href="pages/model/gpt-3-5-turbo-1106.md">GPT-3.5 Turbo (1106)</a>        29±1*  retired
+277  <a href="pages/model/claude-3-haiku-20240307.md">Claude 3 Haiku</a>              29±1   retired
+282  <a href="pages/model/ministral-3b-2410.md">Ministral 3B (2410)</a>         28±1*  retired
+286  <a href="pages/model/gpt-4-0314.md">GPT-4 (0314)</a>                27±3*  retired
+287  <a href="pages/model/claude-2-0.md">Claude 2.0</a>                  27±1   retired
+289  <a href="pages/model/gemini-1-0-pro-001.md">Gemini 1.0 Pro (001)</a>        27±1   retired
+</pre>
+
+</details>
+
 \* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 257 of 322 catalogue models ranked here · [sources and licences](pages/method.md#sources)
 
-<details><summary>Models outside this leaderboard (65 models)</summary>
-
-No current run option verified: [GPT-5.5 Instant](pages/model/gpt-5-5-instant.md) · [ERNIE 5.1](pages/model/ernie-5-1.md) · [MiMo-V2-Omni](pages/model/mimo-v2-omni.md) · [Muse Spark](pages/model/muse-spark.md) · [Gemini 3 Pro (Preview)](pages/model/gemini-3-pro-preview.md) · [GPT-4 (0314)](pages/model/gpt-4-0314.md) · [GPT-3.5 Turbo (1106)](pages/model/gpt-3-5-turbo-1106.md) · [GPT-4 Turbo Preview (1106)](pages/model/gpt-4-1106-preview.md) · [GPT-4 Turbo Preview (0125)](pages/model/gpt-4-0125-preview.md) · [o1-preview](pages/model/o1-preview.md) · [o1-mini](pages/model/o1-mini.md) · [GPT-4.5 Preview](pages/model/gpt-4-5-preview-2025-02-27.md) · [Claude 2.0](pages/model/claude-2-0.md) · [Claude 2.1](pages/model/claude-2-1.md) · [Claude 3 Opus](pages/model/claude-3-opus-20240229.md) · [Claude 3 Sonnet](pages/model/claude-3-sonnet-20240229.md) · [Claude 3 Haiku](pages/model/claude-3-haiku-20240307.md) · [Claude 3.5 Sonnet (2024-06-20)](pages/model/claude-3-5-sonnet-20240620.md) · [Claude 3.5 Sonnet (2024-10-22)](pages/model/claude-3-5-sonnet-20241022.md) · [Claude 3.5 Haiku](pages/model/claude-3-5-haiku-20241022.md) · [Claude 3.7 Sonnet](pages/model/claude-3-7-sonnet-20250219.md) · [Claude Opus 4](pages/model/claude-opus-4-20250514.md) · [Claude Sonnet 4](pages/model/claude-sonnet-4-20250514.md) · [Claude Opus 4.1](pages/model/claude-opus-4-1-20250805.md) · [Gemini 1.0 Pro (001)](pages/model/gemini-1-0-pro-001.md) · [Gemini 1.5 Pro (001)](pages/model/gemini-1-5-pro-001.md) · [Gemini 1.5 Pro (002)](pages/model/gemini-1-5-pro-002.md) · [Gemini 1.5 Flash (001)](pages/model/gemini-1-5-flash-001.md) · [Gemini 1.5 Flash (002)](pages/model/gemini-1-5-flash-002.md) · [Gemini 1.5 Flash-8B (001)](pages/model/gemini-1-5-flash-8b-001.md) · [Gemini 2.0 Flash Thinking Experimental (01-21)](pages/model/gemini-2-0-flash-thinking-exp-01-21.md) · [Gemini 2.0 Flash (001)](pages/model/gemini-2-0-flash-001.md) · [Gemini 2.0 Pro Experimental (02-05)](pages/model/gemini-2-0-pro-exp-02-05.md) · [Gemini 2.5 Pro Experimental (03-25)](pages/model/gemini-2-5-pro-exp-03-25.md) · [Gemini 2.5 Pro Preview (05-06)](pages/model/gemini-2-5-pro-preview-05-06.md) · [Gemini 2.5 Pro Preview (06-05)](pages/model/gemini-2-5-pro-preview-06-05.md) · [Gemini 2.5 Flash Preview (04-17)](pages/model/gemini-2-5-flash-preview-04-17.md) · [Gemini 2.5 Flash Preview (05-20)](pages/model/gemini-2-5-flash-preview-05-20.md) · [Mistral Large (2402)](pages/model/mistral-large-2402.md) · [Ministral 3B (2410)](pages/model/ministral-3b-2410.md) · [Mistral Medium 3 (2505)](pages/model/mistral-medium-2505.md) · [Qwen Turbo (2024-11-01)](pages/model/qwen-turbo-2024-11-01.md) · [Qwen2.5-Max (2025-01-25)](pages/model/qwen-max-2025-01-25.md) · [Grok 2 (1212)](pages/model/grok-2-1212.md) · [Grok 3 Beta](pages/model/grok-3-beta.md) · [Grok 3 Mini Beta](pages/model/grok-3-mini-beta.md) · [Grok 4 (0709)](pages/model/grok-4-0709.md)
+<details><summary>Models without a score (18)</summary>
 
 Raw results, insufficient overlap for an overall score: [LongCat 2.0 (1.6T-A48B)](pages/model/longcat-2-0.md) · [ERNIE 4.5 300B-A47B](pages/model/ernie-4-5-300b-a47b.md) · [Ling 3.0 Flash (124B-A5B)](pages/model/ling-3-0-flash.md) · [Devstral Small 2 24B](pages/model/devstral-small-2.md) · [EXAONE 4.0 32B](pages/model/exaone-4-0-32b.md) · [EXAONE 4.0 1.2B](pages/model/exaone-4-0-1-2b.md) · [Nemotron Nano 9B v2](pages/model/nemotron-nano-9b-v2.md) · [Nemotron 3 Nano 4B](pages/model/nemotron-3-nano-4b.md) · [Nemotron Cascade 2 30B-A3B](pages/model/nemotron-cascade-2-30b-a3b.md) · [LFM2 24B-A2B](pages/model/lfm2-24b-a2b.md) · [LFM2.5 8B-A1B](pages/model/lfm2-5-8b-a1b.md) · [LFM2.5 1.2B Thinking](pages/model/lfm2-5-1-2b-thinking.md) · [Apriel 1.6 15B Thinker](pages/model/apriel-1-6-15b-thinker.md) · [Falcon-H1R 7B](pages/model/falcon-h1r-7b.md) · [K2 Horizon 7B](pages/model/k2-horizon-7b.md)
 

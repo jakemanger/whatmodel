@@ -124,11 +124,45 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
 36  <a href="model/sesame-csm-1b.md">Sesame CSM-1B</a>               33±3   api $7.00/M chars          <a href="https://deepinfra.com/sesame/csm-1b">deepinfra.com</a>
 </pre>
 
+<details><summary>Retired models (26): no current API or download</summary>
+
+Ranked on today's scale, so # is where each would place in the list above.
+
+<pre>
+ #  model                       score  where
+ 1  <a href="model/seed-tts-2-0-standard.md">Seed TTS 2.0 Standard</a>       80±4*  retired
+ 2  <a href="model/azure-neural-tts-xiaoxiao.md">Azure Neural TTS Xiaoxiao</a>   68±4*  retired
+ 3  <a href="model/azure-ameha-neural.md">Azure Ameha Neural</a>          66±7*  retired
+ 5  <a href="model/gemini-2-5-flash-preview-tts.md">Gemini 2.5 Flash Preview …</a>  65±2   retired
+ 6  <a href="model/azure-mekdes-neural.md">Azure Mekdes Neural</a>         64±7*  retired
+ 7  <a href="model/addis-voice-2.md">Addis Voice 2</a>               63±7*  retired
+ 8  <a href="model/gemini-2-5-pro-preview-tts.md">Gemini 2.5 Pro Preview TTS</a>  63±2   retired
+14  <a href="model/mms-tts-amh.md">MMS TTS Amharic</a>             59±7*  retired
+19  <a href="model/qwen3-tts-12hz-1-7b-base.md">Qwen3-TTS 12Hz 1.7B Base</a>    57±2   retired
+26  <a href="model/elevenlabs-v3-alpha.md">ElevenLabs v3 Alpha</a>         56±5*  retired
+29  <a href="model/cartesia-sonic-3-5.md">Sonic 3.5</a>                   55±2   retired
+32  <a href="model/voxcpm2.md">VoxCPM2</a>                     54±2   retired
+35  <a href="model/cartesia-sonic-2.md">Sonic 2</a>                     53±3*  retired
+38  <a href="model/gpt-4o-mini-tts.md">GPT-4o mini TTS</a>             52±2   retired
+41  <a href="model/zonos2-8b.md">ZONOS2 8B</a>                   49±2   retired
+42  <a href="model/dots-tts-soar.md">dots.tts SOAR 2B</a>            49±3   retired
+45  <a href="model/neuphonic-neu-hq.md">Neuphonic neu_hq</a>            46±3*  retired
+48  <a href="model/higgs-audio-v2.md">Higgs Audio V2</a>              44±3   retired
+50  <a href="model/kyutai-tts-1-6b-en-fr.md">Kyutai TTS 1.6B en/fr</a>       43±5*  retired
+52  <a href="model/mimo-v2-5-tts.md">MiMo v2.5 TTS</a>               40±4*  retired
+56  <a href="model/cartesia-sonic.md">Sonic (1)</a>                   35±3*  retired
+58  <a href="model/indextts-2.md">IndexTTS-2</a>                  24±3   retired
+59  <a href="model/openvoice-v2.md">OpenVoice V2</a>                10±6*  retired
+60  <a href="model/tortoise-tts-v2.md">Tortoise TTS v2</a>              9±3   retired
+61  <a href="model/xtts-v2.md">XTTS v2</a>                      6±3   retired
+62  <a href="model/metavoice-1b-v0-1.md">MetaVoice 1B v0.1</a>           -1±3   retired
+</pre>
+
+</details>
+
 \* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 36 of 76 catalogue models ranked here · [sources and licences](method.md#sources)
 
-<details><summary>Models outside this leaderboard (40 models)</summary>
-
-No current run option verified: [XTTS v2](model/xtts-v2.md) · [OpenVoice V2](model/openvoice-v2.md) · [MetaVoice 1B v0.1](model/metavoice-1b-v0-1.md) · [Tortoise TTS v2](model/tortoise-tts-v2.md) · [Gemini 2.5 Flash Preview TTS](model/gemini-2-5-flash-preview-tts.md) · [Gemini 2.5 Pro Preview TTS](model/gemini-2-5-pro-preview-tts.md) · [Higgs Audio V2](model/higgs-audio-v2.md) · [GPT-4o mini TTS](model/gpt-4o-mini-tts.md) · [Kyutai TTS 1.6B en/fr](model/kyutai-tts-1-6b-en-fr.md) · [dots.tts SOAR 2B](model/dots-tts-soar.md) · [Seed TTS 2.0 Standard](model/seed-tts-2-0-standard.md) · [Azure Neural TTS Xiaoxiao](model/azure-neural-tts-xiaoxiao.md) · [MiMo v2.5 TTS](model/mimo-v2-5-tts.md) · [Addis Voice 2](model/addis-voice-2.md) · [Azure Ameha Neural](model/azure-ameha-neural.md) · [Azure Mekdes Neural](model/azure-mekdes-neural.md) · [MMS TTS Amharic](model/mms-tts-amh.md) · [ElevenLabs v3 Alpha](model/elevenlabs-v3-alpha.md) · [Sonic 3.5](model/cartesia-sonic-3-5.md) · [Qwen3-TTS 12Hz 1.7B Base](model/qwen3-tts-12hz-1-7b-base.md) · [VoxCPM2](model/voxcpm2.md) · [ZONOS2 8B](model/zonos2-8b.md) · [IndexTTS-2](model/indextts-2.md) · [Sonic 2](model/cartesia-sonic-2.md) · [Sonic (1)](model/cartesia-sonic.md) · [Neuphonic neu\_hq](model/neuphonic-neu-hq.md)
+<details><summary>Models without a score (14)</summary>
 
 Raw results, insufficient overlap for an overall score: [Eleven Turbo v2.5](model/elevenlabs-turbo-v2-5.md) · [OpenAudio S1](model/openaudio-s1.md)
 

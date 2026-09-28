@@ -17,7 +17,8 @@ export function boardView(cat: Category, q: URLSearchParams) {
   const max = parseMax(q);
   const list = modelsIn(cat);
   const comparison = comparisonFor(cat, q.get("set"));
-  const ranked = rank(list, comparison?.fit.scores ?? new Map(), { specs, max, gFor, speedFor, thinBelow: 3 });
+  const retired = q.has("retired");
+  const ranked = rank(list, comparison?.fit.scores ?? new Map(), { specs, max, gFor, speedFor, thinBelow: 3, retired });
   const { sort, dir } = parseSort(q, ranked);
   const rows = sortRows(ranked, sort, dir);
   const all = q.has("all");
@@ -25,6 +26,8 @@ export function boardView(cat: Category, q: URLSearchParams) {
   return {
     cat, specs, max, models: list, comparison, sets: comparisonSets[cat], ranked, rows, sort, dir, all, shown,
     hidden: rows.length - shown.length,
+    retired,
+    retiredCount: retiredCount(list, comparison?.fit.scores),
     benches: benchesUsed(cat, comparison?.id),
     // Catalogue models the leaderboard can't rank, and why.
     outside: {
@@ -35,6 +38,10 @@ export function boardView(cat: Category, q: URLSearchParams) {
   };
 }
 export type BoardView = ReturnType<typeof boardView>;
+
+// Scored models that can no longer be run: no API and no weights. They anchor the fit and are listed on request.
+export const retiredCount = (list: Model[], scores?: Map<string, Scored>) =>
+  list.filter((m) => scores?.has(m.id) && !m.api && !m.local?.variants.length).length;
 
 // Models with a page: anything with at least one reviewed result.
 export const pageModels = () => models.filter((m) => results.some((r) => r.model === m.id));

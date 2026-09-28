@@ -76,6 +76,22 @@ const MACHINES: [string, string][] = [
   ["16GB, no graphics card", "ram=16&gpu=none"],
 ];
 
+function boardTable(from: string, cat: Category, rows: BoardView["shown"]) {
+  return pre(
+    [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 21 }, { head: "speed", right: true },
+      { head: "RAM", right: true }, { head: "context", right: true }, { head: "get it", max: 20 }],
+    rows.map((r) => [
+      String(r.rank),
+      { text: displayName(r), href: rel(from, files.model(r.id)) },
+      `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}`,
+      whereLabel(r),
+      speedLabel(r.speed),
+      r.mem_gb !== null ? `~${r.mem_gb < 10 ? r.mem_gb : Math.round(r.mem_gb)}GB` : "",
+      cat === "llm" ? contextLabel(r.context_k) : "",
+      !r.cmd ? "" : r.cmd.startsWith("http") ? { text: hostOf(r.cmd), href: r.cmd } : r.cmd,
+    ]));
+}
+
 export function boardMarkdown(v: BoardView, intro = ""): string {
   const { cat } = v;
   const from = files.board(cat);
@@ -105,31 +121,25 @@ export function boardMarkdown(v: BoardView, intro = ""): string {
     if (charts.length) out.push(`<details><summary>Full charts: score vs price and memory</summary>\n\n` +
       charts.map(({ title, chart }) => chartBlock(title, chart)).join("\n\n") + `\n\n</details>`);
 
-    out.push(pre(
-      [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 21 }, { head: "speed", right: true },
-        { head: "RAM", right: true }, { head: "context", right: true }, { head: "get it", max: 20 }],
-      v.shown.map((r) => [
-        String(r.rank),
-        { text: displayName(r), href: rel(from, files.model(r.id)) },
-        `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}`,
-        whereLabel(r),
-        speedLabel(r.speed),
-        r.mem_gb !== null ? `~${r.mem_gb < 10 ? r.mem_gb : Math.round(r.mem_gb)}GB` : "",
-        cat === "llm" ? contextLabel(r.context_k) : "",
-        !r.cmd ? "" : r.cmd.startsWith("http") ? { text: hostOf(r.cmd), href: r.cmd } : r.cmd,
-      ])));
+    out.push(boardTable(from, cat, v.shown));
     if (v.hidden > 0) out.push(`\\+ ${v.hidden} more don't fit your machine or budget · [show them](${SITE}${path}?all=1)`);
   }
 
-  const { comparisonOnly, unscored, withoutResults } = v.outside;
+  // Models nobody can run any more, ranked where they'd stand today: the history of the board.
+  if (v.retiredCount) {
+    const gone = boardView(cat, new URLSearchParams("retired=1")).shown.filter((r) => r.where === "retired");
+    out.push(`<details><summary>Retired models (${gone.length}): no current API or download</summary>\n\n` +
+      `Ranked on today's scale, so # is where each would place in the list above.\n\n${boardTable(from, cat, gone)}\n\n</details>`);
+  }
+
+  const { unscored, withoutResults } = v.outside;
   out.push(`\\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models ranked here · [sources and licences](${rel(from, files.method)}#sources)`);
-  if (comparisonOnly.length || unscored.length || withoutResults.length) {
+  if (unscored.length || withoutResults.length) {
     const parts = [
-      comparisonOnly.length && `No current run option verified: ${modelLinks(from, comparisonOnly)}`,
       unscored.length && `Raw results, insufficient overlap for an overall score: ${modelLinks(from, unscored)}`,
       withoutResults.length && `No reviewed benchmark results yet: ${withoutResults.map((m) => text(m.name)).join(" · ")}`,
     ].filter(Boolean);
-    out.push(`<details><summary>Models outside this leaderboard (${comparisonOnly.length + unscored.length + withoutResults.length} models)</summary>\n\n${parts.join("\n\n")}\n\n</details>`);
+    out.push(`<details><summary>Models without a score (${unscored.length + withoutResults.length})</summary>\n\n${parts.join("\n\n")}\n\n</details>`);
   }
   return out.join("\n\n") + "\n";
 }
