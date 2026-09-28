@@ -6,7 +6,7 @@
 
 Google · released 2024-01 · proprietary
 
-**score 23.6** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.8** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    9.0%    21.2   2026-01-30   74% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  33.0%    26.8   2026-01-30   22% ▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    9.0%    22.4   2026-01-30   73% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  33.0%    27.9   2026-01-30   23% ▇▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 23.6
+                        weighted average                       = 24.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

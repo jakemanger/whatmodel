@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 54.4** ±1.7 · #56 of 108 · from 4 benchmark results across 4 sources
+**score 55.2** ±1.6 · #57 of 111 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1083.9    54.7   2026-09-24   70% ▇▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    52.0   2026-08-25   15% ▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   54.1%    57.7   2026-06-09    8% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    53.6   2026-06-05    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1083.9    55.5   2026-09-24   69% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    52.9   2026-08-25   15% ▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   54.1%    58.1   2026-06-09    9% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    53.0   2026-06-05    6% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 54.4
+                        weighted average                        = 55.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -53,8 +53,8 @@ api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~14.9GB   54.4
-gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~3.2GB   54.4
+bf16 · nvidia only                        ~14.9GB   55.2
+gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~3.2GB   55.2
 </pre>
 
 ```sh

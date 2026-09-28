@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-11
 
-**score 33.6** ±2.4 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
+**score 33.7** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                    score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>          50.6%    31.7   2025-05-17   36% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>          49.7%    30.7   2025-05-17   26% ▇▇▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  894.05 / 1608    35.8   2026-05-15   13% ▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          80.3%    36.5   2025-04-21   13% ▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>          38.6%    38.0   2026-08-10   10% ▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>          50.6%    32.8   2025-05-17   42% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>          49.7%    31.2   2025-05-17   26% ▇▇▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  894.05 / 1608    36.2   2026-05-15   12% ▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          80.3%    37.0   2025-04-21   11% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>          38.6%    34.1   2026-08-10    7% ▇
 prior                   pull toward the middle                           49.9                 2% ▇
-                        weighted average                               = 33.6
+                        weighted average                               = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

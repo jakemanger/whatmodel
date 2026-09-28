@@ -6,7 +6,7 @@
 
 Stability AI
 
-**score 37.7** ±2.3 · #86 of 108 · from 3 benchmark results across 3 sources
+**score 38.8** ±2.2 · #88 of 111 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          52.1%    37.6   2026-07-01   46% ▇▇▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.27 / 5    39.0   2024-12-25   34% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     42.0%    33.9   2026-06-02   18% ▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          52.1%    38.8   2026-07-01   46% ▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.27 / 5    40.4   2024-12-25   33% ▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     42.0%    34.7   2026-06-02   19% ▇▇
 prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 37.7
+                        weighted average                          = 38.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

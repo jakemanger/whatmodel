@@ -6,7 +6,7 @@
 
 Tencent
 
-**score 52.0** ±5.0 · #34 of 70 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.1** ±2.7 · #43 of 76 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    49.3   2026-08-26   69% ▇▇▇▇▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    62.1   2026-06-17   20% ▇▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 52.0
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  911.0    47.7   2026-05-11   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    46.4   2026-08-26   17% ▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    61.2   2026-06-17    4% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 48.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
+<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
 ## How to run it
 

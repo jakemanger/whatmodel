@@ -6,7 +6,7 @@
 
 Luma AI · closed weights
 
-**score 40.3** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 40.9** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1065.4    40.3   2026-09-22   46% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1108.5    39.8   2026-09-22   28% ▇▇▇
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   20.3%    39.0   2026-01-30   17% ▇▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1003.0    43.7   2025-05-05    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1065.4    40.8   2026-09-22   46% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1108.5    40.3   2026-09-22   28% ▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   20.3%    39.8   2026-01-30   17% ▇▇
+<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1003.0    44.2   2025-05-05    7% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 40.3
+                        weighted average                        = 40.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

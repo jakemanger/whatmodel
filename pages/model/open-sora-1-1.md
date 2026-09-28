@@ -6,7 +6,7 @@
 
 HPC-AI Tech · released 2024-04 · 0.7B params · apache-2.0
 
-**score 29.9** ±6.3 · #65 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 30.7** ±6.0 · #69 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  51.4%    26.0   2024-10-01   83% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                17% ▇▇
-                        weighted average                       = 29.9
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  51.4%    27.1   2024-10-01   84% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                16% ▇▇
+                        weighted average                       = 30.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~13.5GB   29.9
+bf16 · nvidia only  ~13.5GB   30.7
 </pre>
 
 ```sh

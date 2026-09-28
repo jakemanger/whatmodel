@@ -6,7 +6,7 @@
 
 Alibaba DAMO Academy · released 2023-03 · 1.7B params · cc-by-nc-4.0
 
-**score 24.2** ±2.1 · #70 of 70 · from 4 benchmark results across 3 sources
+**score 25.4** ±2.0 · #75 of 76 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  38.0%    23.8   2025-05-17   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  43.7%    26.3   2025-05-17   19% ▇▇
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  830.4    19.9   2025-03-22   43% ▇▇▇▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  60.2%    35.7   2024-10-01    9% ▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  38.0%    25.3   2025-05-17   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  43.7%    26.7   2025-05-17   20% ▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  830.4    21.1   2025-03-22   38% ▇▇▇▇▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  60.2%    36.5   2024-10-01    9% ▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 24.2
+                        weighted average                       = 25.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~4.6GB   24.2
+fp16 · nvidia only  ~4.6GB   25.4
 </pre>
 
 ```sh

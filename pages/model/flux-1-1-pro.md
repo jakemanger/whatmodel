@@ -6,7 +6,7 @@
 
 Black Forest Labs · closed weights
 
-**score 46.5** ±1.8 · #76 of 108 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.8** ±1.7 · #77 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1015.6    47.5   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.47 / 5    42.4   2024-12-25   21% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1015.6    48.8   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.47 / 5    43.7   2024-12-25   20% ▇▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 46.5
+                        weighted average                          = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

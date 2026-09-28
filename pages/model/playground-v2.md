@@ -6,7 +6,7 @@
 
 Playground · released 2023-12 · playground-v2-community
 
-**score 40.0** ±3.4 · #82 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.2** ±3.4 · #83 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1101.0    39.5   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1101.0    40.7   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 5% ▇
-                        weighted average                        = 40.0
+                        weighted average                        = 41.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~8.9GB   40.0
+fp16 · nvidia only  ~8.9GB   41.2
 </pre>
 
 ```sh

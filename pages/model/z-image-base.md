@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI)
 
-**score 55.3** ±4.2 · #52 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.1** ±4.0 · #52 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    55.7   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    56.5   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 55.3
+                        weighted average                       = 56.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

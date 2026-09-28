@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-06 · 3.5B params · sdxl-0.9-research
 
-**score 31.5** ±4.5 · #98 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.3** ±3.5 · #94 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    29.8   2024-02-21   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 31.5
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    31.7   2024-02-21   49% ▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  43.0%    35.4   2026-06-02   46% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 34.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+<sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 ## How to run it
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~8.9GB   31.5
+fp16 · nvidia only  ~8.9GB   34.3
 </pre>
 
 ```sh

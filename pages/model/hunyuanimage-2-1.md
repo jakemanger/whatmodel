@@ -6,7 +6,7 @@
 
 Tencent
 
-**score 54.1** ±5.6 · #59 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±5.2 · #59 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    54.7   2026-06-09   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                13% ▇▇
-                        weighted average                       = 54.1
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    55.3   2026-06-09   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                12% ▇
+                        weighted average                       = 54.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

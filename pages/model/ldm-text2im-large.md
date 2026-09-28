@@ -6,7 +6,7 @@
 
 CompVis · released 2022-04 · 1.45B params · apache-2.0
 
-**score 29.8** ±4.5 · #102 of 108 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.6** ±4.7 · #101 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.8%    28.0   2024-02-21   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 29.8
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.8%    29.7   2024-02-21   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~7.5GB   29.8
+fp32 · nvidia only  ~7.5GB   31.6
 </pre>
 
 ```sh

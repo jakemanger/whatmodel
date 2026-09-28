@@ -6,7 +6,7 @@
 
 MIT Han Lab / NVIDIA
 
-**score 28.3** ±5.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.0** ±4.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    25.7   2026-06-02   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 28.3
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    26.7   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 29.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

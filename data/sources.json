@@ -1702,7 +1702,7 @@
     "license_url": "/licenses/visual-vgi.txt",
     "attribution": "Xuan He , Cong Wei , Yuhao Cheng , Linrui Ma , Yuxuan Zhang , Zuojun Li , Yuhao Wen , Jize Jiang , Zeyi Liu , Yuren Hao , Songcheng Cai , Keming Wu , Penghui Du , Kai Zou , Rui Yang , Chenkai Sun , Ke Yang , Ping Nie , Kelsey R Allen , Chenglong Wang , Michel Galley , Jianfeng Gao , ChengXiang Zhai. Extracted selected measured table values; percentages divided by 100 where specified; model labels mapped only to the stated model version. No values estimated or rerun. Source: https://arxiv.org/html/2608.19583v3. No endorsement; provided as-is.",
     "quote": "Only the retained original measurements and accompanying documentation inside this licensed artifact. No permission inferred for copied third-party comparison rows, external websites, model weights, generated media or dataset inputs.",
-    "scope": "Original I2V evaluation, not full-instance coverage. Appendix B.1 resolves Wan2.2-A14B; MiniMax conflict is quarantined.",
+    "scope": "Original I2V evaluation, not full-instance coverage. Appendix B.1 resolves Wan2.2-I2V-A14B. MiniMax-H3 row included (sweep-visual 2026-09-29): in the pinned v3 HTML, Table 2's 'Open Source' header (colspan 3) covers Mnx-H3, HY1.5 and Wan2.2, matching Table 10's Open Source block (960×544, no price), so the commercial/open label conflict noted earlier is not present in v3.",
     "icon": "arxiv.org"
   },
   {
@@ -6684,7 +6684,7 @@
     "license_url": "/licenses/visual-fepbench.txt",
     "attribution": "Yifan Chang, Jiaxin Ai, Jianwen Sun, Yuandong Pu, Siqi Luo, Liangliang Zhao, Yuchen Ren, Minghao Liu, Yunfei Yu, Yu Qiao, Kaipeng Zhang, Yihao Liu (Shanghai AI Laboratory, Shanghai Innovation Institute, ZODA et al.). FEPBench, arXiv:2606.05949v2, dedicated to the public domain under CC0 1.0 (credit given as courtesy). Extracted Table 2 IF (instruction faithfulness) means; model labels mapped only to the stated release. No values estimated or rerun.",
     "quote": "arXiv abstract page for 2606.05949v2 links http://creativecommons.org/publicdomain/zero/1.0/ (CC0 1.0 public domain dedication) for this version.",
-    "scope": "Authors' own generation and GPT-5.4 atom-level scoring of nine T2I models (Table 2). Only the IF mean is imported; RE and SP means are other dimensions of the same experiment and are not imported. Seedream 5.0 (tier unstated) and Ovis-Image (not in catalogue) omitted. The benchmark's reference figures are NC-licensed journal material and are not used.",
+    "scope": "Authors' own generation and GPT-5.4 atom-level scoring of nine T2I models (Table 2). Only the IF mean is imported; RE and SP means are other dimensions of the same experiment and are not imported. 'Seedream 5.0' is mapped to Seedream 5.0 Lite because the row's reference [3] is 'Seedream 5.0 Lite' (https://seed.bytedance.com/en/seedream5_0_lite, accessed 2026-05-06); 'Ovis-Image' is mapped to Ovis-Image-7B (reference [26], the only public checkpoint). The benchmark's reference figures are NC-licensed journal material and are not used.",
     "icon": "arxiv.org"
   },
   {
@@ -6937,7 +6937,7 @@
     "license_url": "/licenses/visual-imagenworld.txt",
     "attribution": "Samin Mahdizadeh Sani, Max Ku, Nima Jamali, Matina Mahdizadeh Sani, Paria Khoshtab, Wei-Chieh Sun, Parnian Fazel, Zhi Rui Tam, Thomas Chong, Edisy Kin Wai Chan, Donald Wai Tong Tsang, Chiao-Wei Hsu, Ting Wai Lam, Ho Yin Sam Ng, Chiafeng Chu, Chak-Wing Mak, Keming Wu, Hiu Tung Wong, Yik Chun Ho, Chi Ruan, Zhuofeng Li, I-Sheng Fang, Shih-Ying Yeh, Ho Kei Cheng, Ping Nie, Wenhu Chen (University of Waterloo et al.). arXiv:2603.27862v1, CC BY 4.0. Extracted Table 3 human-annotated overall (TIG and TIE); model labels mapped only to the stated release. No values estimated or rerun. No endorsement; provided as-is.",
     "quote": "arXiv abstract page for 2603.27862v1 links the licence http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0); HTML header reads 'License: CC BY 4.0 arXiv:2603.27862v1'.",
-    "scope": "Authors' own generation (paper/official default configurations, seed 42 for open models, closed models via API) and three-annotator human ratings; Table 3 O_Human for the TIG and TIE tasks only. Omitted: Gemini 2.0 Flash (exp vs preview-image-generation not stated), Step1X-Edit (version unstated), Janus Pro (size unstated), UNO, Infinity, IC-Edit, InstructPix2Pix (not in catalogue); reference-image tasks and VLM columns not imported.",
+    "scope": "Authors' own generation (paper/official default configurations, seed 42 for open models, closed models via API) and three-annotator human ratings; Table 3 O_Human for the TIG and TIE tasks only. InstructPix2Pix TIE row added 2026-09-29 (Table 2 cites Brooks et al. 2023; single public checkpoint timbrooks/instruct-pix2pix). Omitted: Gemini 2.0 Flash (exp vs preview-image-generation not stated), Step1X-Edit (version unstated), Janus Pro (size unstated), Infinity (2B vs 8B unstated), IC-Edit (LoRA variant unstated), UNO (subject-driven model, not added); reference-image tasks and VLM columns not imported.",
     "icon": "arxiv.org"
   },
   {
@@ -10201,5 +10201,41 @@
     "attribution": "TTSDS2 multilingual benchmark results by Christoph Minixhofer et al. (huggingface.co/datasets/ttsds/leaderboard_data), MIT. Changes: English and Chinese OVERALL scores selected and divided by 100. No audio used. No endorsement.",
     "icon": "huggingface.co",
     "quote": "Dataset card at the pinned revision is exactly '---\\nlicense: mit\\n---'; the result CSVs under ttsds/ are files of that dataset. Only the aggregated result files are used; the dataset's YouTube-derived audio is not downloaded or redistributed. The ttsdsbenchmark.com website and the ttsds/website repository (no licence) are not used."
+  },
+  {
+    "id": "visual-geckonum",
+    "match": [
+      "arxiv.org/html/2406.14774v3"
+    ],
+    "exact": true,
+    "name": "Evaluating Numerical Reasoning in Text-to-Image Models (GeckoNum, arXiv v3)",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/visual-geckonum.txt",
+    "attribution": "Ivana Kajić, Olivia Wiles, Isabela Albuquerque, Matthias Bauer, Su Wang, Jordi Pont-Tuset, Aida Nematzadeh (Google DeepMind). Evaluating Numerical Reasoning in Text-to-Image Models, arXiv:2406.14774v3 (6 Feb 2025), CC BY 4.0. Extracted Table 2 Task 1 human-annotated accuracy for selected publicly released models; labels mapped only to the stated model version. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2406.14774v3 links \"Rights to this article\" to http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0).",
+    "scope": "Only the authors' own human-annotated evaluation: Table 2 (S5.T2) Task 1 'Exact Number Generation' accuracy (five annotators per image, five seeds per prompt). Tasks 2-3, prompt-type breakdowns and auto-metric tables are not used. Withheld: Imagen-A/B/C/D and Muse-A/B (internal unreleased Google versions, lab), SD3 (no reference; API vs Medium not stated), Midjourney v6 (row first appears after v1 of June 2024; V6.0 vs V6.1 not stated)."
+  },
+  {
+    "id": "video-worldreasonbench",
+    "match": [
+      "arxiv.org/html/2605.10434v1"
+    ],
+    "exact": true,
+    "name": "WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors (arXiv v1)",
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-09-28",
+    "license_url": "/licenses/video-worldreasonbench.txt",
+    "attribution": "Keming Wu, Yijing Cui, Wenhan Xue, Qijie Wang, Xuan Luo, Zhiyuan Feng, Zuhao Yang, Sudong Wang, Sicong Jiang, Haowei Zhu, Zihan Wang, Ping Nie, Wenhu Chen, Bin Wang. WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors, arXiv:2605.10434v1 (11 May 2026), CC BY 4.0. Extracted the Table 4 Human Elo column for selected generators; model labels mapped only to the stated model/release. No values estimated or rerun. No endorsement; provided as-is.",
+    "icon": "arxiv.org",
+    "quote": "arXiv abstract page for 2605.10434v1 links \"Rights to this article\" to http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0). Appendix R also states the released WorldReasonBench/WorldRewardBench assets will be CC-BY 4.0; only numbers printed in the CC BY paper are used.",
+    "scope": "Only the authors' own expert human preference ranking: Table 4 (S4.T4) 'Human Elo' (Bradley-Terry with Davidson ties over ~6K expert preference pairs from 15 trained annotators, WorldRewardBench). Judge Elo, QA accuracy and Score_PR columns (Qwen3.5-27B automatic metrics) are not used. Withheld: Kling (version/tier not stated), UniVideo (not in catalogue, one row), Sora2-12s (second duration of the same Sora 2 model; the 8-second setting is used)."
   }
 ]

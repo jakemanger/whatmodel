@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-12 · 20B params · apache-2.0
 
-**score 57.0** ±1.6 · #48 of 108 · from 4 benchmark results across 4 sources
+**score 57.7** ±1.6 · #48 of 111 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1125.4    59.0   2026-09-24   64% ▇▇▇▇▇▇▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   35.3%    51.5   2026-05-14   23% ▇▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   53.2%    57.0   2026-06-09    7% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   52.1%    58.3   2026-05-27    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1125.4    59.7   2026-09-24   64% ▇▇▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   35.3%    52.3   2026-05-14   23% ▇▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   53.2%    57.5   2026-06-09    8% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   52.1%    58.8   2026-05-27    5% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 57.0
+                        weighted average                        = 57.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,7 +36,7 @@ api (Replicate) · $0.020/image · [replicate.com](https://replicate.com/qwen/qw
 
 <pre>
 version                                     needs  score
-gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~12.5GB   57.0
+gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~12.5GB   57.7
 </pre>
 
 ```sh

@@ -275,7 +275,8 @@
           "reported_label": "MetaQuery-XL"
         }
       ]
-    }
+    },
+    "sdxl-0-9"
   ],
   "results": [
     {
@@ -972,6 +973,43 @@
         ],
         "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
         "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "sdxl-0-9",
+      "bench": "wise-wiscore-overall",
+      "score": 0.43,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "SD-XL-base-0.9; Table 1 (S4.T1); Overall 0.43. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Checkpoint stable-diffusion-xl-base-0.9 (Sec. 4.1 model list). Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "SD-XL-base-0.9",
+        "table": "S4.T1",
+        "reported_value": "0.43",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "SD-XL-base-0.9",
+          "0.43",
+          "0.48",
+          "0.47",
+          "0.44",
+          "0.45",
+          "0.27",
+          "0.43"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1 (\"stable-diffusion-xl-base-0.9 (Podell et al., 2023)\"; \"we use SD to denote stable-diffusion\"); no seed value, resolution or sampler beyond 'official default configurations' claimed.",
         "original_measurement_verified": true,
         "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
         "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"

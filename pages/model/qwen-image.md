@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 20B params · apache-2.0
 
-**score 51.5** ±1.4 · #64 of 108 · from 7 benchmark results across 7 sources
+**score 52.5** ±1.3 · #64 of 111 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    51.9   2026-09-24   46% ▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    46.1   2026-07-01   17% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    55.1   2026-08-25   10% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    57.9   2026-07-12    9% ▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    51.2   2026-03-29    9% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    47.9   2026-06-02    7% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   49.2%    54.2   2026-05-27    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    52.9   2026-09-24   46% ▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    47.2   2026-07-01   16% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    55.9   2026-08-25   10% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    58.6   2026-07-12    9% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    52.4   2026-03-29    9% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    48.4   2026-06-02    7% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   49.2%    54.8   2026-05-27    3% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 51.5
+                        weighted average                        = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,11 +52,11 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/qwen/qw
 
 <pre>
 version                                     needs  score
-nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   51.5
-nf4 + model CPU offload · nvidia only     ~12.5GB   51.5
-fp8_e4m3fn (ComfyUI) · nvidia only        ~12.5GB   51.5
-gguf-q4_k_s · nvidia only                 ~12.5GB   51.5
-fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   51.5
+nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   52.5
+nf4 + model CPU offload · nvidia only     ~12.5GB   52.5
+fp8_e4m3fn (ComfyUI) · nvidia only        ~12.5GB   52.5
+gguf-q4_k_s · nvidia only                 ~12.5GB   52.5
+fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   52.5
 </pre>
 
 ```sh

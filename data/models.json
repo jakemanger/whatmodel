@@ -29453,5 +29453,312 @@
         "reported_label": "mimo-v2.6-pro"
       }
     ]
+  },
+  {
+    "id": "instructpix2pix",
+    "name": "InstructPix2Pix",
+    "provider": "UC Berkeley (Brooks, Holynski, Efros)",
+    "category": "image",
+    "released": "2023-01",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionInstructPix2PixPipeline; from diffusers.utils import load_image; p=StableDiffusionInstructPix2PixPipeline.from_pretrained('timbrooks/instruct-pix2pix', torch_dtype=torch.float16, safety_checker=None).to('cuda'); p('turn him into cyborg', image=load_image('https://raw.githubusercontent.com/timothybrooks/instruct-pix2pix/main/imgs/example.jpg'), num_inference_steps=10, image_guidance_scale=1).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/timbrooks/instruct-pix2pix/blob/31519b5cb02a7fd89b906d88731cd4d6a7bbf88d/README.md",
+          "gb_estimated": true,
+          "note": "Command follows the model card's diffusers example (same prompt, input image, 10 steps, image_guidance_scale 1); not executed here. Memory estimated as for SD 1.x (0.86B UNet); the card states no parameter count."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2512.02790v1#S6.T4",
+        "reported_label": "Instruct-Pix2Pix [4]",
+        "note": "[4] Brooks, Holynski, Efros, InstructPix2Pix: Learning to follow image editing instructions, CVPR 2023"
+      },
+      {
+        "source": "https://arxiv.org/html/2603.27862v1#S5.T3",
+        "reported_label": "InstructPix2Pix",
+        "note": "Table 2: InstructPix2Pix (Brooks et al., 2023b), Diffusion, TIE only"
+      },
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "InstructPix2Pix Brooks et al. (2023)",
+        "note": "App. D: UNet-based model built upon Stable Diffusion"
+      }
+    ],
+    "identity_note": "timbrooks/instruct-pix2pix (instruct-pix2pix-00-22000), the only public InstructPix2Pix checkpoint; Stable Diffusion v1.5-based image editor (0.86B UNet as in SD 1.x). HF card licence MIT. Memory estimated as for SD 1.x. Not MagicBrush (a separate fine-tune)."
+  },
+  {
+    "id": "ovis-image-7b",
+    "name": "Ovis-Image-7B",
+    "provider": "Alibaba (AIDC-AI)",
+    "category": "image",
+    "released": "2025-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16",
+          "gb": 20,
+          "cmd": "uv run --with 'diffusers>=0.36.0' --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import OvisImagePipeline; p=OvisImagePipeline.from_pretrained('ATH-MaaS/Ovis-Image-7B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', negative_prompt='', num_inference_steps=50, guidance_scale=5.0).images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/ATH-MaaS/Ovis-Image-7B/blob/41be1c5821a92c970d63d7eb595a2fd3fe32b22e/README.md",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2606.05949v2#S4.T2",
+        "reported_label": "Ovis-Image",
+        "note": "ref [26] Ovis-Image Technical Report, arXiv 2511.22982; Table 6: open-source, 50 steps, guidance 5.0"
+      }
+    ],
+    "identity_note": "Ovis-Image-7B (HF AIDC-AI/Ovis-Image-7B, now served as ATH-MaaS/Ovis-Image-7B), the only public Ovis-Image checkpoint; card: 7B diffusion model plus Ovis2.5-2B text encoder ('2B+7B'), Apache-2.0, diffusers OvisImagePipeline (diffusers>=0.36.0). Memory estimated from 9B parameters at bf16 plus VAE; no VRAM figure published."
+  },
+  {
+    "id": "sd-1-3",
+    "name": "Stable Diffusion v1.3",
+    "provider": "CompVis",
+    "category": "image",
+    "released": "2022-08",
+    "open_weights": true,
+    "license": "creativeml-openrail-m",
+    "params_b": 0.86,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 2.6,
+          "cmd": "uv run --with diffusers --with transformers --with accelerate --with torch python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-3', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/CompVis/stable-diffusion-v1-3",
+          "gb_estimated": true
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2310.11513v1#A1.T3",
+        "reported_label": "SD v1.3",
+        "note": "Sec. 5.1: 'all versions of Stable Diffusion (SD) v1 and v2'; App. Table 3 lists SD v1.1-v1.5 separately"
+      }
+    ],
+    "identity_note": "CompVis/stable-diffusion-v1-3 checkpoint (HF repo created 2022-08-18, revision 159f26f); 860M UNet per the CompVis README; memory is the site's params x 2 bytes x 1.2 + 0.5 estimate, as for the other SD v1.x entries."
+  },
+  {
+    "id": "lumina-dimoo",
+    "name": "Lumina-DiMOO",
+    "provider": "Alpha-VLLM (Shanghai AI Lab)",
+    "category": "image",
+    "released": "2025-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "Lumina-DiMOO Xin et al. (2025)",
+        "note": "App. D: omni discrete diffusion unified model"
+      }
+    ],
+    "identity_note": "Alpha-VLLM/Lumina-DiMOO (single released checkpoint; HF revision f014549, created 2025-09-09, Apache-2.0; technical report arXiv 2510.06308). Unified discrete-diffusion model for generation, editing and understanding. No local command recorded (runs through the authors' repository scripts)."
+  },
+  {
+    "id": "onecat-3b",
+    "name": "OneCAT-3B",
+    "provider": "Meituan (OneCAT team)",
+    "category": "image",
+    "released": "2025-09",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "OneCAT Li et al. (2025a)",
+        "note": "App. D: autoregressive unified model"
+      }
+    ],
+    "identity_note": "onecat-ai/OneCAT-3B (the only released OneCAT checkpoint; HF revision a67e66a, created 2025-09-06, Apache-2.0; report arXiv 2509.03498; contact address at meituan.com). Decoder-only autoregressive unified understanding/generation/editing model. No local command recorded."
+  },
+  {
+    "id": "chronoedit-14b",
+    "name": "ChronoEdit-14B",
+    "provider": "NVIDIA",
+    "category": "image",
+    "released": "2025-10",
+    "open_weights": true,
+    "license": "nvidia-open-model",
+    "params_b": 14,
+    "api": null,
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+        "reported_label": "ChronoEdit Wu et al. (2025c)"
+      }
+    ],
+    "identity_note": "nvidia/ChronoEdit-14B (also published as nvidia/ChronoEdit-14B-Diffusers, same weights; card at revision 26b33e0: ~1.4e10 parameters, released on Hugging Face 2025-10-29, governed by the NVIDIA Open Model License). The optional 8-step distillation LoRA is a separate add-on and is not implied. No local command recorded."
+  },
+  {
+    "id": "nova-0-6b-t2v",
+    "name": "NOVA-0.6B T2V",
+    "provider": "BAAI",
+    "category": "video",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.6,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 9.3,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "gb_source": "https://huggingface.co/BAAI/nova-d48w1024-osp480/tree/1e66007b8ad15409cb2094950d1c99173a533099",
+          "source": "https://github.com/baaivision/NOVA/blob/63c5a724fc4e264e229a95c893184434f00c9413/README.md",
+          "cmd": "git clone https://github.com/baaivision/NOVA && cd NOVA && pip install diffusers transformers accelerate imageio-ffmpeg omegaconf wandb && pip install . && python -c \"import torch; from diffnext.pipelines import NOVAPipeline; from diffnext.utils import export_to_video; p=NOVAPipeline.from_pretrained('BAAI/nova-d48w1024-osp480', torch_dtype=torch.float16, trust_remote_code=True).to('cuda'); export_to_video(p('Many spotted jellyfish pulsating under water.', max_latent_length=9).frames[0], 'nova.mp4', fps=12)\"",
+          "note": "Install and text-to-video quickstart from the README at the pinned commit (33 frames, 768x480, 12 fps). Memory estimated: 7.33 GB of fp16 weights in the HF repo (transformer 1.29 GB, text encoder 5.56 GB, VAE 0.48 GB) x 1.2 + 0.5 GB; no official VRAM figure (README offers enable_model_cpu_offload for OOM). Command not executed."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "NOVA [ 87 ]",
+        "note": "Table 7 github.com/baaivision/NOVA, cites NOVA paper [87] (arXiv 2412.14169), 768x480, 33 frames, 12 fps (no variable-setting dagger); NOVA's only text-to-video checkpoint is BAAI/nova-d48w1024-osp480 (NOVA-0.6B, 33x768x480, exported at fps=12 in the README quickstart)"
+      }
+    ],
+    "identity_note": "BAAI/nova-d48w1024-osp480 (NOVA-0.6B text-to-video, 33x768x480; README 'Text to Video' model table), Apache-2.0 (repo and HF card). Not the NOVA text-to-image checkpoints (sd512/sdxl1024) and not BAAI's later URSA."
+  },
+  {
+    "id": "lvdm-t2v",
+    "name": "LVDM (text-to-video)",
+    "provider": "HKUST / Tencent AI Lab",
+    "category": "video",
+    "released": "2023-05",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 6.1,
+          "gb_estimated": true,
+          "platform": "nvidia",
+          "gb_source": "https://huggingface.co/Yingqing/LVDM/tree/d9efae7397f6f8568abe170cf30c5e0941290e95",
+          "source": "https://github.com/YingqingHe/LVDM/blob/d251dccfbf6352826f5c5681abd86e87ed7e6371/README.md",
+          "cmd": "git clone https://github.com/YingqingHe/LVDM && cd LVDM && conda create -y -n lvdm python=3.8.5 && conda run -n lvdm pip install -r requirements.txt && mkdir -p models/t2v && wget -O models/t2v/model.ckpt https://huggingface.co/Yingqing/LVDM/resolve/main/lvdm_short/t2v.ckpt && conda run -n lvdm bash shellscripts/sample_lvdm_text2video.sh",
+          "note": "Environment, checkpoint download and sampling script from the README at the pinned commit (16 frames at 256x256, saved at 8 fps). Memory estimated: 4.66 GB t2v.ckpt x 1.2 + 0.5 GB; the CLIP text encoder is fetched separately; no official VRAM figure. Command not executed."
+        }
+      ]
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2505.12098v1#A6.T8",
+        "reported_label": "LVDM [ 91 ]",
+        "note": "Table 7 github.com/YingqingHe/LVDM, cites the LVDM paper [91] (arXiv 2211.13221), 256x256, 16 frames, 8 fps (no dagger); LVDM's only text-to-video checkpoint is lvdm_short/t2v.ckpt (configs/lvdm_short/text2video.yaml: 32x32 latent = 256x256, video_length 16; sample_text2video.py save_fps 8)"
+      }
+    ],
+    "identity_note": "Yingqing/LVDM lvdm_short/t2v.ckpt, the text-to-video checkpoint released with the LVDM code (He et al., arXiv 2211.13221); the other LVDM checkpoints are unconditional sky/taichi/UCF models. Code MIT; the HF weights repo states no separate licence. Not VideoCrafter."
+  },
+  {
+    "id": "wan-2-2-i2v-plus",
+    "name": "Wan 2.2 I2V Plus",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2025-07",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference",
+      "provider": "Alibaba Cloud Model Studio"
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.17792v2#S4.T3",
+        "reported_label": "Wan2.2-Plus † / Wan2.2-I2V-Plus",
+        "note": "image-to-video; 480P or 1080P, fixed 5 s per the image-to-video API reference; released 2025-07-28"
+      }
+    ],
+    "identity_note": "Alibaba Cloud Model Studio API model wan2.2-i2v-plus (image-to-video; 480P or 1080P, fixed 5 s per the image-to-video API reference; released 2025-07-28); international release date from Model Studio's 'newly released models' page (https://www.alibabacloud.com/help/en/model-studio/newly-released-models, observed 2026-09-29). Commercial API tier; not assumed identical to any open Wan checkpoint. No price recorded (no approved price_source read for this tier)."
+  },
+  {
+    "id": "wan-2-2-i2v-flash",
+    "name": "Wan 2.2 I2V Flash",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2025-08",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference",
+      "provider": "Alibaba Cloud Model Studio"
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.17792v2#S4.T3",
+        "reported_label": "Wan2.2-Flash † / Wan2.2-I2V-Flash",
+        "note": "image-to-video; 480P or 720P, fixed 5 s per the image-to-video API reference; released 2025-08-15"
+      }
+    ],
+    "identity_note": "Alibaba Cloud Model Studio API model wan2.2-i2v-flash (image-to-video; 480P or 720P, fixed 5 s per the image-to-video API reference; released 2025-08-15); international release date from Model Studio's 'newly released models' page (https://www.alibabacloud.com/help/en/model-studio/newly-released-models, observed 2026-09-29). Commercial API tier; not assumed identical to any open Wan checkpoint. No price recorded (no approved price_source read for this tier)."
+  },
+  {
+    "id": "wan-2-1-i2v-plus",
+    "name": "Wan 2.1 I2V Plus",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2025-01",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference",
+      "provider": "Alibaba Cloud Model Studio"
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.17792v2#S4.T3",
+        "reported_label": "Wan2.1-Plus †",
+        "note": "image-to-video; 720P, fixed 5 s per the image-to-video API reference; released 2025-01-20"
+      }
+    ],
+    "identity_note": "Alibaba Cloud Model Studio API model wan2.1-i2v-plus (formerly wanx2.1-i2v-plus) (image-to-video; 720P, fixed 5 s per the image-to-video API reference; released 2025-01-20); international release date from Model Studio's 'newly released models' page (https://www.alibabacloud.com/help/en/model-studio/newly-released-models, observed 2026-09-29). Commercial API tier; not assumed identical to any open Wan checkpoint. No price recorded (no approved price_source read for this tier)."
+  },
+  {
+    "id": "wan-2-1-i2v-turbo",
+    "name": "Wan 2.1 I2V Turbo",
+    "provider": "Alibaba",
+    "category": "video",
+    "released": "2025-02",
+    "open_weights": false,
+    "license": "proprietary",
+    "api": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference",
+      "provider": "Alibaba Cloud Model Studio"
+    },
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2511.17792v2#S4.T3",
+        "reported_label": "Wan2.1-Turbo †",
+        "note": "image-to-video; 480P or 720P, 3-5 s per the image-to-video API reference; released 2025-02-27"
+      }
+    ],
+    "identity_note": "Alibaba Cloud Model Studio API model wan2.1-i2v-turbo (formerly wanx2.1-i2v-turbo) (image-to-video; 480P or 720P, 3-5 s per the image-to-video API reference; released 2025-02-27); international release date from Model Studio's 'newly released models' page (https://www.alibabacloud.com/help/en/model-studio/newly-released-models, observed 2026-09-29). Commercial API tier; not assumed identical to any open Wan checkpoint. No price recorded (no approved price_source read for this tier)."
   }
 ]

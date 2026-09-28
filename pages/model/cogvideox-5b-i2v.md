@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2024-09 · 5B params · cogvideox
 
-**score 35.2** ±4.8 · #56 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.0** ±4.7 · #59 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.75 / 10    33.6   2025-02-28   90% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.75 / 10    34.5   2025-02-28   90% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                      49.9                10% ▇
-                        weighted average                          = 35.2
+                        weighted average                          = 36.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~12.5GB   35.2
+bf16 · nvidia only  ~12.5GB   36.0
 </pre>
 
 ```sh

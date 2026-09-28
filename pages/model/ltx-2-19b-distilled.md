@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-01
 
-**score 47.0** ±7.0 · #44 of 70 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.8** ±7.5 · #49 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    46.2   2026-08-10   79% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                21% ▇▇
-                        weighted average                       = 47.0
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    43.2   2026-08-10   76% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                24% ▇▇▇
+                        weighted average                       = 44.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

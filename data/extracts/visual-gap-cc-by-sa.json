@@ -123,7 +123,39 @@
         ]
       },
       "licensed_artifact": "/data/visual-gap-cc-by-sa.json"
+    },
+    {
+      "model": "wan-2-1-1-3b",
+      "bench": "vbench-t2v-total",
+      "score": 0.8328,
+      "source": "https://arxiv.org/pdf/2505.16864v2#page=8",
+      "source_id": "visual-gap-jenga",
+      "source_group": "visual-gap-jenga:vbench-t2v-total",
+      "evaluation_run_group": "visual-gap-jenga:wan21-1-3b-standard",
+      "evaluator": "Jenga authors (CUHK / HKUST / Kuaishou / SmartMore)",
+      "by": "independent",
+      "date": "2025-11-22",
+      "note": "Original Wan2.1 T2V 1.3B baseline rerun by Jenga authors: Table 2(b) row 'Wan2.1-1.3B [13]', 50 NFE, VBench 83.28% (same value in appendix Tables 4 and 6); latent size RS=[20, 30, 52] per Table 4; original full-set VBench prompts, fixed seed per prompt (seed value undisclosed). No Jenga/TeaCache acceleration rows; CFG, precision, FPS and checkpoint revision not reported.",
+      "data_license": "CC-BY-SA-4.0",
+      "evidence": {
+        "source_model_label": "Wan2.1-1.3B [13]",
+        "table": "Table 2(b), PDF page 8",
+        "reported_value": "83.28",
+        "divisor": 100,
+        "measurement_origin": "explicit independent rerun / original evaluator measurement",
+        "original_measurement_verified": true,
+        "evaluator_relationship": "evaluator is not the evaluated checkpoint's model author",
+        "date_basis": "Source publication/version date, not an asserted generation date.",
+        "model_identity_scope": "Exact named release/checkpoint family and baseline variant as reported; source does not pin a checkpoint revision/hash.",
+        "source_artifact_sha256": "81e5fc73bd50f88bba235bea55358e82e9b8e1ebf9e1d24710aa3b0c672d33e3",
+        "task": "text-to-video",
+        "steps": 50,
+        "prompt_format": "standard/original"
+      },
+      "licensed_artifact": "/data/visual-gap-cc-by-sa.json"
     }
   ],
-  "models": []
+  "models": [
+    "wan-2-1-1-3b"
+  ]
 }
