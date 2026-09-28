@@ -50,6 +50,7 @@ export type Result = {
   by: "independent" | "lab";
   date?: string;
   note?: string;
+  source_id?: string; // the data/sources.json entry the source URL falls under
 };
 
 // kind "acc": score is a 0-1 fraction, `chance` is the guessing rate.

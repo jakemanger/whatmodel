@@ -69,7 +69,7 @@ for (const file of files) {
       if (haveResults.get(resultKey(r)) !== r.score) throw new Error(`Conflicting result ${resultKey(r)}; review and replace explicitly`);
       continue;
     }
-    results.push(r);
+    results.push(r.source_id ? r : { ...r, source_id: sourceId(r.source) }); // every row names its ledger entry
     haveResults.set(resultKey(r), r.score);
     log.results++;
   }
