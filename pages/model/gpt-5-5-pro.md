@@ -6,30 +6,29 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 74.5** ±1.5
-
-#7 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.5** ±1.5 · #7 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 87.7% | 74.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 63% | 2026-06-12 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 78.0% | 74.5 | ▇▇▇▇▇▇▇▇▇▇▇ 36% | 2026-06-12 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 74.5** |  |  |
+<pre>
+source    test                       score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  87.7%    74.9   2026-06-12   63% ▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     78.0%    74.5   2026-06-12   36% ▇▇▇▇
+prior     pull toward the middle              50.0                 1% ▇
+          weighted average                  = 74.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (OpenAI) · $67.50/M blended · $30 in / $180 out per 1M tokens · [developers.openai.com ↗](https://developers.openai.com/api/docs/models/gpt-5.5-pro)
+api (OpenAI) · $67.50/M blended · $30 in / $180 out per 1M tokens · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-5.5-pro)
 
-[price source](https://developers.openai.com/api/docs/models/gpt-5.5-pro) · USD per 1M tokens, OpenAI API standard processing for gpt-5.5-pro (Responses API; also Batch): input $30.00, output $180.00; no cached-input discount; Batch API pricing and the 10% regional-processing (data residency) uplift excluded. Currency: USD. OpenAI official model page, observed 2026-09-25.
-
-[context specification source](https://developers.openai.com/api/docs/models/gpt-5.5-pro) · OpenAI model page for gpt-5.5-pro: 1,050,000 context window, 128,000 max output tokens. Observed 2026-09-25.
+<sub>[price source](https://developers.openai.com/api/docs/models/gpt-5.5-pro): USD per 1M tokens, OpenAI API standard processing for gpt-5.5-pro (Responses API; also Batch): input $30.00, output $180.00; no cached-input discount; Batch API pricing and the 10% regional-processing (data residency) uplift excluded. Currency: USD. OpenAI official model page, observed 2026-09-25. · [context source](https://developers.openai.com/api/docs/models/gpt-5.5-pro): OpenAI model page for gpt-5.5-pro: 1,050,000 context window, 128,000 max output tokens. Observed 2026-09-25.</sub>
 
 no verified local download listed
 

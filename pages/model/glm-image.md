@@ -6,9 +6,7 @@
 
 Z.ai · released 2026-01 · 16B params · mit
 
-**score 42.9** ±2.0
-
-#69 of 87 · from 4 benchmark results across 4 sources
+**score 42.9** ±2.0 · #69 of 87 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,51 +14,66 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1012.0 | 41.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 69% | 2026-09-24 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 83.9% | 44.6 | ▇▇▇▇▇ 17% | 2026-08-25 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 979.0 | 46.1 | ▇▇ 7% | 2026-03-30 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 48.2% | 47.9 | ▇ 5% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 42.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1012.0    41.6   2026-09-24   69% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   83.9%    44.6   2026-08-25   17% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      979.0    46.1   2026-03-30    7% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   48.2%    47.9   2026-05-27    5% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 42.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (6)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| zai-org/GLM-Image — committed benchmark documentation | [CVTG-2K word accuracy](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md) | 91.2% | too few models have this result to calibrate it yet |
-| zai-org/GLM-Image — committed benchmark documentation | [LongText-Bench (EN)](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md) | 95.2% | too few models have this result to calibrate it yet |
-| zai-org/GLM-Image — committed benchmark documentation | [LongText-Bench (CN)](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md) | 97.9% | too few models have this result to calibrate it yet |
-| zai-org/GLM-Image — committed benchmark documentation | [OneIG-Bench (EN)](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md) | 52.8% | too few models have this result to calibrate it yet |
-| zai-org/GLM-Image — committed benchmark documentation | [OneIG-Bench (CN)](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md) | 51.1% | too few models have this result to calibrate it yet |
-| zai-org/GLM-Image — committed benchmark documentation | [DPG-Bench](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md) | 84.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source             test                   score  why
+zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">CVTG-2K word accuracy</a>  91.2%  too few models have it yet
+zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">LongText-Bench (EN)</a>    95.2%  too few models have it yet
+zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">LongText-Bench (CN)</a>    97.9%  too few models have it yet
+zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">OneIG-Bench (EN)</a>       52.8%  too few models have it yet
+zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">OneIG-Bench (CN)</a>       51.1%  too few models have it yet
+zai-org/GLM-Image  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md">DPG-Bench</a>              84.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Z.ai) · $0.015/image · [docs.z.ai ↗](https://docs.z.ai/guides/image/glm-image)
+api (Z.ai) · $0.015/image · [docs.z.ai](https://docs.z.ai/guides/image/glm-image)
 
-[price source](https://docs.z.ai/guides/overview/pricing) · USD per generated image on the Z.ai API (all Z.ai list prices in USD). Product: Z.ai image generation API. API model: glm-image. Settings: one image; recommended sizes such as 1280×1280. Price basis: published list rate. Currency: USD. Z.ai official pricing page, observed 2026-09-25.
+<sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per generated image on the Z.ai API (all Z.ai list prices in USD). Product: Z.ai image generation API. API model: glm-image. Settings: one image; recommended sizes such as 1280×1280. Price basis: published list rate. Currency: USD. Z.ai official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-image.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-image.toml)
+<pre>
+version                                   needs  score
+bf16 · nvidia only                      ~38.9GB   42.9
+bf16 (model cpu offload) · nvidia only  ~38.9GB   42.9
+</pre>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~38.9GB | 42.9 | `uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16, device_map='cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"` |
-| bf16 (model cpu offload) · nvidia only | ~38.9GB | 42.9 | `uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"` |
+```sh
+# bf16 · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16, device_map='cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
+# bf16 (model cpu offload) · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with git+https://github.com/huggingface/transformers --with accelerate --with torch python -c "import torch; from diffusers.pipelines.glm_image import GlmImagePipeline; p=GlmImagePipeline.from_pretrained('zai-org/GLM-Image', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=1.5).images[0].save('out.png')"
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA H100 |  | 252.59 s/image | diffusers · 2048×2048; text-to-image; batch size 1; fixed prompt ~1000 tokens · Exact end-to-end timing. Dtype and H100 memory capacity not specified by this table. | [source ↗](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md#L174) |
-| NVIDIA H100 |  | 64.34 s/image | diffusers · 1024×1024; text-to-image; batch size 1; fixed prompt ~1000 tokens · Exact end-to-end timing. Dtype and H100 memory capacity not specified by this table. | [source ↗](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md#L175) |
-| NVIDIA H100 |  | 27.3 s/image | diffusers · 512×512; text-to-image; batch size 1; fixed prompt ~1000 tokens · Exact end-to-end timing. Dtype and H100 memory capacity not specified by this table. | [source ↗](https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md#L177) |
+<pre>
+hardware     precision           speed  engine and settings
+NVIDIA H100  undefined  <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md#L174">252.59 s/image</a>  diffusers · 2048×2048; text-to-im…
+NVIDIA H100  undefined   <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md#L175">64.34 s/image</a>  diffusers · 1024×1024; text-to-im…
+NVIDIA H100  undefined    <a href="https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md#L177">27.3 s/image</a>  diffusers · 512×512; text-to-imag…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/glm-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

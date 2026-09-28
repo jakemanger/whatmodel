@@ -6,108 +6,123 @@
 
 Alibaba · released 2026-03 · 0.87B params · apache-2.0
 
-**score 20.5** ±1.4
-
-#200 of 205 · from 17 benchmark results across 2 sources
+**score 20.5** ±1.4 · #200 of 205 · from 17 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-qwen--qwen3.5-2b"></a><img src="../../icons/huggingface.co.png" width="14" alt="Qwen/Qwen3.5-2B model card"> Qwen/Qwen3.5-2B model card | [IFEval (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 44.0% | 16.7 | ▇▇ 8% | 2026-03-02 |
-|  | [GPQA (subset unspecified)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 11.9% | 14.8 | ▇▇ 8% | 2026-03-02 |
-|  | [PolyMATH](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 8.2% | 16.5 | ▇▇ 7% | 2026-03-02 |
-|  | [C-Eval](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 50.5% | 19.6 | ▇▇ 7% | 2026-03-02 |
-|  | [MMLU-Redux](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 59.5% | 20.0 | ▇▇ 7% | 2026-03-02 |
-|  | [MAXIFE](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 39.2% | 21.1 | ▇▇ 6% | 2026-03-02 |
-|  | [WMT24++](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 27.2% | 20.9 | ▇▇ 6% | 2026-03-02 |
-|  | [SuperGPQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 21.3% | 21.1 | ▇▇ 6% | 2026-03-02 |
-|  | [IFBench (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 21.0% | 21.5 | ▇▇ 6% | 2026-03-02 |
-|  | [MultiChallenge](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 18.9% | 21.4 | ▇▇ 6% | 2026-03-02 |
-|  | [MMMLU](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 44.3% | 21.2 | ▇▇ 6% | 2026-03-02 |
-|  | [MMLU-ProX](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 34.6% | 20.9 | ▇▇ 6% | 2026-03-02 |
-|  | [INCLUDE](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 40.6% | 22.1 | ▇▇ 5% | 2026-03-02 |
-|  | [LongBench v2](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 26.1% | 24.4 | ▇ 4% | 2026-03-02 |
-|  | [Global PIQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 59.4% | 24.4 | ▇ 4% | 2026-03-02 |
-|  | [NOVA-63](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 42.4% | 27.3 | ▇ 3% | 2026-03-02 |
-| <a name="libra-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="ai-forever LIBRA leaderboard (Russian long-context benchmark)"> ai-forever LIBRA leaderboard (Russian long-context benchmark) | [LIBRA Mini (Russian long context, May 2026 version)](https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/Qwen_Qwen3.5-0.8B.json) | 35.5% | 24.8 | ▇ 1% | 2026-06-08 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 20.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-qwen--qwen3.5-2b"></a>Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFEval (aggregation unspecifi…</a>  44.0%    16.7   2026-03-02    8% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">GPQA (subset unspecified) (la…</a>  11.9%    14.8   2026-03-02    8% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PolyMATH (lab)</a>                   8.2%    16.5   2026-03-02    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">C-Eval (lab)</a>                    50.5%    19.6   2026-03-02    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-Redux (lab)</a>                59.5%    20.0   2026-03-02    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MAXIFE (lab)</a>                    39.2%    21.1   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">WMT24++ (lab)</a>                   27.2%    20.9   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SuperGPQA (lab)</a>                 21.3%    21.1   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFBench (aggregation unspecif…</a>  21.0%    21.5   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MultiChallenge (lab)</a>            18.9%    21.4   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMLU (lab)</a>                     44.3%    21.2   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-ProX (lab)</a>                 34.6%    20.9   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">INCLUDE (lab)</a>                   40.6%    22.1   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">LongBench v2 (lab)</a>              26.1%    24.4   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Global PIQA (lab)</a>               59.4%    24.4   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">NOVA-63 (lab)</a>                   42.4%    27.3   2026-03-02    3% ▇
+<a name="libra-leaderboard"></a>ai-forever LIBRA lead…  <a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/Qwen_Qwen3.5-0.8B.json">LIBRA Mini (Russian long cont…</a>  35.5%    24.8   2026-06-08    1% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 20.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (34)
+<sub>Licences: Qwen/Qwen3.5-2B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-2B.txt)) · ai-forever LIBRA leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3.5-0.8B model card | [MMLU-Pro](https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/README.md) | 42.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [AI2D test](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 69.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [BFCL V4 (December 2025 archive)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 25.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [CC-OCR](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 63.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [CharXiv (reasoning questions)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 41.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [CountBench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 77.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [DynaMath](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 49.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [EmbSpatial-Bench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 68.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [ERQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 34.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [HallusionBench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 53.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [LVBench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 45.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MathVista (testmini)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 62.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MedXPertQA MM](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 17.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MLVU](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 65.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMBench-EN dev v1.1](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 69.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMLongBench-Doc](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 33.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMMU (val)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 49.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMMU Pro](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 31.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMStar](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 58.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMVU](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 34.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MVBench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 55.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [OCRBench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 74.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [OmniDocBench 1.5 overall (higher is better)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 61.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [PMC-VQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 40.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [RealWorldQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 63.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [RefSpatial-Bench](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 23.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [SimpleVQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 31.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [SLAKE](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 62.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [τ²-bench aggregate](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 11.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [Video-MME (with subtitles)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 63.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [Video-MME (without subtitles)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 57.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [VideoMMMU](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 44.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [VLMs Are Blind](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 59.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [ZEROBench subquestions](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 12.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (34)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3.5-0.8B mod…  <a href="https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/README.md">MMLU-Pro</a>                        42.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">AI2D test</a>                       69.9%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">BFCL V4 (December 2025 archiv…</a>  25.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">CC-OCR</a>                          63.2%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">CharXiv (reasoning questions)</a>   41.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">CountBench</a>                      77.0%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">DynaMath</a>                        49.9%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">EmbSpatial-Bench</a>                68.6%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">ERQA</a>                            34.5%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HallusionBench</a>                  53.1%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">LVBench</a>                         45.1%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MathVista (testmini)</a>            62.2%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MedXPertQA MM</a>                   17.1%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MLVU</a>                            65.6%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMBench-EN dev v1.1</a>             69.9%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLongBench-Doc</a>                 33.6%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMU (val)</a>                      49.0%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMU Pro</a>                        31.2%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMStar</a>                          58.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMVU</a>                            34.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MVBench</a>                         55.8%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">OCRBench</a>                        74.5%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">OmniDocBench 1.5 overall (hig…</a>  61.0%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PMC-VQA</a>                         40.4%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">RealWorldQA</a>                     63.4%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">RefSpatial-Bench</a>                23.5%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SimpleVQA</a>                       31.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SLAKE</a>                           62.6%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">τ²-bench aggregate</a>              11.6%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Video-MME (with subtitles)</a>      63.8%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Video-MME (without subtitles)</a>   57.7%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">VideoMMMU</a>                       44.3%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">VLMs Are Blind</a>                  59.4%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">ZEROBench subquestions</a>          12.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/README.md) · Native context from the official model card. Longer extended settings are not used for this value.
+<sub>[context source](https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/README.md): Native context from the official model card. Longer extended settings are not used for this value.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 8-bit q8\_0 | ~1.54GB | 20.5 | `ollama run qwen3.5:0.8b` |
-| 4-bit mlx-mxfp8 · mac only | ~1.02GB | 20.5 | `ollama run qwen3.5:0.8b-mlx` |
+<pre>
+download                       size  score
+8-bit q8_0                  ~1.54GB   20.5
+4-bit mlx-mxfp8 · mac only  ~1.02GB   20.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 8-bit q8_0
+ollama run qwen3.5:0.8b
+# 4-bit mlx-mxfp8 · mac only
+ollama run qwen3.5:0.8b-mlx
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 113.4 tok/s | omlx (MLX; SSD prefix cache, in-memory tier disabled; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab4) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 105.5 tok/s | llama.cpp server (Metal; --parallel 4 slots; build not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab4) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 100.9 tok/s | vllm-metal (Metal; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab4) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 95.3 tok/s | vllm-mlx (MLX; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab4) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 93.9 tok/s | mlx\_lm server (MLX; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab4) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 77 tok/s | omlx (MLX; SSD prefix cache, in-memory tier disabled; version not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab3) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 76.2 tok/s | vllm-metal (Metal; version not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab3) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 67.6 tok/s | vllm-mlx (MLX; version not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab3) |
-| Apple M5 Pro (64GB; CPU/GPU core counts not stated) | BF16 (paper's main-track/fidelity protocol; Appendix E caption does not restate dtype) | 66.9 tok/s | llama.cpp server (Metal; --parallel 4 slots; build not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench harness (benchmark commit 616aa51c); 100 prompts per level after 3 warmup requests; closed loop at concurrency 1 (one request in flight); temperature 0, non-thinking generation; output throughput = total generated tokens / measured sweep wall time, so it includes prefill/TTFT and HTTP overhead (not a pure decode rate) · Concurrency-1 cell; 100/100 requests succeeded. Appendix E speed tables do not restate dtype; the paper's main track and cross-model fidelity protocol are BF16. | [source ↗](https://arxiv.org/html/2609.19169v1#A5.tab3) |
-| NVIDIA DGX Spark (GB10) | BF16 | 106.5 tok/s | llama.cpp (CUDA build, GGUF BF16 weights; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench DGX Spark reference track (--platform dgxspark); identical prompts and concurrency grid as the Apple track; n=100 per level; concurrency 1; output throughput = generated tokens / sweep wall time (includes prefill); runs of 2026-07-03 to 2026-07-05 · Chat split, concurrency 1. | [source ↗](https://arxiv.org/html/2609.19169v1#A7.tab1) |
-| NVIDIA DGX Spark (GB10) | BF16 | 77.5 tok/s | llama.cpp (CUDA build, GGUF BF16 weights; version not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench DGX Spark reference track (--platform dgxspark); identical prompts and concurrency grid as the Apple track; n=100 per level; concurrency 1; output throughput = generated tokens / sweep wall time (includes prefill); runs of 2026-07-03 to 2026-07-05 · Agent split, concurrency 1. | [source ↗](https://arxiv.org/html/2609.19169v1#A7.tab1) |
-| NVIDIA DGX Spark (GB10) | BF16 | 94.2 tok/s | vLLM (CUDA, Safetensors BF16; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench DGX Spark reference track (--platform dgxspark); identical prompts and concurrency grid as the Apple track; n=100 per level; concurrency 1; output throughput = generated tokens / sweep wall time (includes prefill); runs of 2026-07-03 to 2026-07-05 · Chat split, concurrency 1. | [source ↗](https://arxiv.org/html/2609.19169v1#A7.tab1) |
-| NVIDIA DGX Spark (GB10) | BF16 | 73.4 tok/s | vLLM (CUDA, Safetensors BF16; version not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench DGX Spark reference track (--platform dgxspark); identical prompts and concurrency grid as the Apple track; n=100 per level; concurrency 1; output throughput = generated tokens / sweep wall time (includes prefill); runs of 2026-07-03 to 2026-07-05 · Agent split, concurrency 1. | [source ↗](https://arxiv.org/html/2609.19169v1#A7.tab1) |
-| NVIDIA DGX Spark (GB10) | BF16 | 95 tok/s | SGLang (CUDA, Safetensors BF16; version not stated) · chat split (OpenOrca + CNN/DailyMail, 21-3.5K input tokens); SiliconBench DGX Spark reference track (--platform dgxspark); identical prompts and concurrency grid as the Apple track; n=100 per level; concurrency 1; output throughput = generated tokens / sweep wall time (includes prefill); runs of 2026-07-03 to 2026-07-05 · Chat split, concurrency 1. | [source ↗](https://arxiv.org/html/2609.19169v1#A7.tab1) |
-| NVIDIA DGX Spark (GB10) | BF16 | 79.4 tok/s | SGLang (CUDA, Safetensors BF16; version not stated) · agent split (BFCL V3, Hermes, ClawsBench; 0.3K-8.9K input tokens; agent context raised to 16384 for llama.cpp/ollama/vllm-metal); SiliconBench DGX Spark reference track (--platform dgxspark); identical prompts and concurrency grid as the Apple track; n=100 per level; concurrency 1; output throughput = generated tokens / sweep wall time (includes prefill); runs of 2026-07-03 to 2026-07-05 · Agent split, concurrency 1. | [source ↗](https://arxiv.org/html/2609.19169v1#A7.tab1) |
+<pre>
+hardware                      precision               speed  engine and settings
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…  <a href="https://arxiv.org/html/2609.19169v1#A5.tab4">113.4 tok/s</a>  omlx (MLX; SSD prefix cache, in-m…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…  <a href="https://arxiv.org/html/2609.19169v1#A5.tab4">105.5 tok/s</a>  llama.cpp server (Metal; --parall…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…  <a href="https://arxiv.org/html/2609.19169v1#A5.tab4">100.9 tok/s</a>  vllm-metal (Metal; version not st…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…   <a href="https://arxiv.org/html/2609.19169v1#A5.tab4">95.3 tok/s</a>  vllm-mlx (MLX; version not stated…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…   <a href="https://arxiv.org/html/2609.19169v1#A5.tab4">93.9 tok/s</a>  mlx_lm server (MLX; version not s…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…     <a href="https://arxiv.org/html/2609.19169v1#A5.tab3">77 tok/s</a>  omlx (MLX; SSD prefix cache, in-m…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…   <a href="https://arxiv.org/html/2609.19169v1#A5.tab3">76.2 tok/s</a>  vllm-metal (Metal; version not st…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…   <a href="https://arxiv.org/html/2609.19169v1#A5.tab3">67.6 tok/s</a>  vllm-mlx (MLX; version not stated…
+Apple M5 Pro (64GB; CPU/GPU…  BF16 (paper's m…   <a href="https://arxiv.org/html/2609.19169v1#A5.tab3">66.9 tok/s</a>  llama.cpp server (Metal; --parall…
+NVIDIA DGX Spark (GB10)       BF16              <a href="https://arxiv.org/html/2609.19169v1#A7.tab1">106.5 tok/s</a>  llama.cpp (CUDA build, GGUF BF16 …
+NVIDIA DGX Spark (GB10)       BF16               <a href="https://arxiv.org/html/2609.19169v1#A7.tab1">77.5 tok/s</a>  llama.cpp (CUDA build, GGUF BF16 …
+NVIDIA DGX Spark (GB10)       BF16               <a href="https://arxiv.org/html/2609.19169v1#A7.tab1">94.2 tok/s</a>  vLLM (CUDA, Safetensors BF16; ver…
+NVIDIA DGX Spark (GB10)       BF16               <a href="https://arxiv.org/html/2609.19169v1#A7.tab1">73.4 tok/s</a>  vLLM (CUDA, Safetensors BF16; ver…
+NVIDIA DGX Spark (GB10)       BF16                 <a href="https://arxiv.org/html/2609.19169v1#A7.tab1">95 tok/s</a>  SGLang (CUDA, Safetensors BF16; v…
+NVIDIA DGX Spark (GB10)       BF16               <a href="https://arxiv.org/html/2609.19169v1#A7.tab1">79.4 tok/s</a>  SGLang (CUDA, Safetensors BF16; v…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-5-0-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

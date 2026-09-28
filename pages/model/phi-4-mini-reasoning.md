@@ -6,37 +6,39 @@
 
 Microsoft · released 2025-04 · mit
 
-**score 24.0** ±7.7
-
-#195 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.0** ±7.7 · #195 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 21.3% | 14.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 74% | 2025-04-28 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇▇▇▇▇▇ 26% |  |
-|  | **weighted average** |  | **= 24.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    14.6   2025-04-28   74% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                26% ▇▇▇
+                        weighted average                       = 24.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (3)
+<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| microsoft/Phi-4-mini-reasoning model card | [AIME 2024](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md) | 57.5% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-reasoning model card | [MATH-500](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md) | 94.6% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-reasoning model card | [GPQA Diamond](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md) | 52.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test          score  why
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">AIME 2024</a>     57.5%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">MATH-500</a>      94.6%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md">GPQA Diamond</a>  52.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [azure.microsoft.com ↗](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
+api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
 
-[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft) · USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini-reasoning' (GA), 128K context: input $0.075, output $0.30, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25.
-
-[context specification source](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md) · Microsoft official model card: Phi-4-mini-reasoning context length 128K tokens (stated rounded). Observed 2026-09-25.
+<sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini-reasoning' (GA), 128K context: input $0.075, output $0.30, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md): Microsoft official model card: Phi-4-mini-reasoning context length 128K tokens (stated rounded). Observed 2026-09-25.</sub>
 
 no verified local download listed
 

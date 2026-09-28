@@ -6,28 +6,29 @@
 
 OpenAI · released 2026-05 · closed weights
 
-**score 55.4** ±1.3
-
-comparison only: no current run option verified · from 8 benchmark results across 2 sources
+**score 55.4** ±1.3 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 26.3% | 54.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 48% | 2026-08-02 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 2.4% | 53.2 | ▇▇▇▇▇▇▇▇ 27% | 2026-08-02 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 82.5% | 57.3 | ▇▇ 5% | 2026-08-02 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 68.1% | 49.9 | ▇ 5% | 2026-08-02 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 12.0% | 54.5 | ▇ 2% | 2026-08-02 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1473.8 | 65.8 | ▇▇ 6% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1277.9 | 67.8 | ▇ 3% | 2026-09-13 |
-|  | [Arena document (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet) | 1460.3 | 64.6 | ▇ 2% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 55.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        26.3%    54.5   2026-08-02   48% ▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            2.4%    53.2   2026-08-02   27% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     82.5%    57.3   2026-08-02    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         68.1%    49.9   2026-08-02    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    54.5   2026-08-02    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1473.8    65.8   2026-09-13    6% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1277.9    67.8   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1460.3    64.6   2026-09-13    2% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 55.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

@@ -6,60 +6,75 @@
 
 NVIDIA · released 2025-08 · 0.98B params · cc-by-4.0
 
-**score 52.2** ±3.3
-
-#23 of 28 · from 4 benchmark results across 3 sources
+**score 52.2** ±3.3 · #23 of 28 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-megaasr-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS)"> Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS) ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) | [Mega-ASR adverse-condition suite · mean WER (CHiME-4, VOiCES, NOIZEUS)](https://arxiv.org/html/2605.19833v1) | 11.8% | 52.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-05-19 |
-| <a name="speech-stt-cl-spanish-asr-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard – Chilean Spanish (idsudd / Alonso Astroza)"> Open ASR Leaderboard – Chilean Spanish (idsudd / Alonso Astroza) | [Open ASR Leaderboard – Chilean Spanish · 3-dataset average WER](https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv) | 9.8% | 52.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 45% | 2025-10-27 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 4.6% | 50.5 | ▇ 3% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 7.1% | 36.9 | ▇ 1% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇ 5% |  |
-|  | **weighted average** |  | **= 52.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  11.8%    52.7   2026-05-19   47% ▇▇▇▇▇▇
+<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   9.8%    52.3   2025-10-27   45% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.6%    50.5   2026-03-26    3% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    36.9   2026-03-26    1% ▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 52.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (12)
+<sub>Licences: Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| nvidia/canary-1b-v2 model card | [AMI WER (Open ASR / ESB test split)](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 16.0% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [CoVoST 2 source speech, 13 languages, mean ASR WER (NVIDIA set)](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 8.8% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [Earnings-22 long-form WER](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 13.8% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [Earnings-22 WER (short-form, Open ASR / ESB test split)](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 11.8% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [FLEURS 25 European languages, mean WER (NVIDIA set)](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 8.4% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [GigaSpeech test WER](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 10.8% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [LibriSpeech test-clean WER](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 2.2% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [LibriSpeech test-other WER](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 3.6% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [Multilingual LibriSpeech 6 languages, mean WER (NVIDIA set)](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 7.3% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [SPGISpeech test WER](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 2.3% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [TED-LIUM test WER (short-form)](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 4.3% | too few models have this result to calibrate it yet |
-| nvidia/canary-1b-v2 model card | [VoxPopuli English test WER](https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md) | 6.3% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (12)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">AMI WER (Open ASR / ESB test …</a>  16.0%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">CoVoST 2 source speech, 13 la…</a>   8.8%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 long-form WER</a>       13.8%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Earnings-22 WER (short-form, …</a>  11.8%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">FLEURS 25 European languages,…</a>   8.4%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">GigaSpeech test WER</a>             10.8%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-clean WER</a>       2.2%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">LibriSpeech test-other WER</a>       3.6%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">Multilingual LibriSpeech 6 la…</a>   7.3%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">SPGISpeech test WER</a>              2.3%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">TED-LIUM test WER (short-form)</a>   4.3%  too few models have it yet
+nvidia/canary-1b-v2 m…  <a href="https://huggingface.co/nvidia/canary-1b-v2/blob/d455706339a6b32e1aa40f82c713a482a0c938e2/README.md">VoxPopuli English test WER</a>       6.3%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| onnx-fp32 | ~5.2GB | 52.2 | `uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-canary-1b-v2 audio.wav` |
-| fp32 · nvidia only | ~5.2GB | 52.2 | `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-v2').transcribe(['audio.wav']))"` |
+<pre>
+version              needs  score
+onnx-fp32           ~5.2GB   52.2
+fp32 · nvidia only  ~5.2GB   52.2
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# onnx-fp32
+uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-canary-1b-v2 audio.wav
+# fp32 · nvidia only
+uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/canary-1b-v2').transcribe(['audio.wav']))"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen 7 9800X3D | onnx-default (precision not stated in table) | 8.3 x-realtime | ONNX Runtime CPUExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L101) |
-| AMD Ryzen 7 9800X3D | onnx-int8 | 14.9 x-realtime | ONNX Runtime CPUExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L101) |
-| NVIDIA GeForce RTX 5070 Ti | onnx-default (precision not stated in table) | 35.7 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L113) |
-| NVIDIA T4 | onnx-default (precision not stated in table) | 21.4 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L113) |
+<pre>
+hardware                    precision                   speed  engine and settings
+AMD Ryzen 7 9800X3D         onnx-default (p…   <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L101">8.3 x-realtime</a>  ONNX Runtime CPUExecutionProvider…
+AMD Ryzen 7 9800X3D         onnx-int8         <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L101">14.9 x-realtime</a>  ONNX Runtime CPUExecutionProvider…
+NVIDIA GeForce RTX 5070 Ti  onnx-default (p…  <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L113">35.7 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+NVIDIA T4                   onnx-default (p…  <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L113">21.4 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/canary-1b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

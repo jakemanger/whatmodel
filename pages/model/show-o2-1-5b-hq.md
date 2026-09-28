@@ -6,9 +6,7 @@
 
 Show Lab, NUS
 
-**score 31.0** ±3.7
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.0** ±3.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +14,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 10.1% | 29.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-05-14 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 31.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  10.1%    29.9   2026-05-14   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 31.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt))</sub>
 
 ## How to run it
 

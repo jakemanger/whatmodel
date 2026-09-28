@@ -6,61 +6,73 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 58.5** ±2.6
-
-#61 of 205 · from 5 benchmark results across 2 sources
+**score 58.5** ±2.6 · #61 of 205 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 85.4% | 59.3 | ▇▇▇▇▇▇▇ 23% | 2026-08-10 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 86.7% | 57.3 | ▇▇▇▇▇▇ 21% | 2026-08-10 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 20.0% | 63.8 | ▇▇▇▇▇▇ 19% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 12.0% | 54.5 | ▇▇ 7% | 2026-08-10 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1425.6 | 56.9 | ▇▇▇▇▇▇▇▇ 27% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 58.5** |  |  |
+<pre>
+source                  test                           score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   85.4%    59.3   2026-08-10   23% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       86.7%    57.3   2026-08-10   21% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   20.0%    63.8   2026-08-27   19% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          12.0%    54.5   2026-08-10    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1425.6    56.9   2026-09-13   27% ▇▇▇
+prior                   pull toward the middle                  50.0                 3% ▇
+                        weighted average                      = 58.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (16)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| NVIDIA — Nemotron 3 Ultra technical report | [BrowseComp](https://arxiv.org/html/2606.15007v1) | 44.4% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [GPQA (subset unspecified)](https://arxiv.org/html/2606.15007v1) | 87.0% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [Humanity's Last Exam](https://arxiv.org/html/2606.15007v1) | 26.7% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [Humanity's Last Exam with tools](https://arxiv.org/html/2606.15007v1) | 37.4% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [IFBench prompt-level (loose)](https://arxiv.org/html/2606.15007v1) | 81.7% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [IMO-AnswerBench](https://arxiv.org/html/2606.15007v1) | 88.6% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [LiveCodeBench v6 (window unspecified)](https://arxiv.org/html/2606.15007v1) | 89.0% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [LongBench v2](https://arxiv.org/html/2606.15007v1) | 61.9% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [MMLU-Pro](https://arxiv.org/html/2606.15007v1) | 86.8% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [MMLU-ProX](https://arxiv.org/html/2606.15007v1) | 83.0% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [MultiChallenge](https://arxiv.org/html/2606.15007v1) | 63.8% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [SciCode subproblems](https://arxiv.org/html/2606.15007v1) | 44.6% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [SWE-bench Multilingual](https://arxiv.org/html/2606.15007v1) | 67.7% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [SWE-bench Verified](https://arxiv.org/html/2606.15007v1) | 70.7% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [τ³-bench](https://arxiv.org/html/2606.15007v1) | 70.9% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Ultra technical report | [Terminal-Bench 2.1](https://arxiv.org/html/2606.15007v1) | 56.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (16)</summary>
+
+<pre>
+source  test                            score  why
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">BrowseComp</a>                      44.4%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">GPQA (subset unspecified)</a>       87.0%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam</a>            26.7%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">Humanity's Last Exam with too…</a>  37.4%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">IFBench prompt-level (loose)</a>    81.7%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">IMO-AnswerBench</a>                 88.6%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">LiveCodeBench v6 (window unsp…</a>  89.0%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">LongBench v2</a>                    61.9%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">MMLU-Pro</a>                        86.8%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">MMLU-ProX</a>                       83.0%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">MultiChallenge</a>                  63.8%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">SciCode subproblems</a>             44.6%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Multilingual</a>          67.7%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">SWE-bench Verified</a>              70.7%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">τ³-bench</a>                        70.9%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2606.15007v1">Terminal-Bench 2.1</a>              56.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [docs.together.ai ↗](https://docs.together.ai/docs/serverless-models)
+api (Together AI) · $1.35/M blended · $0.6 in / $3.6 out per 1M tokens · [docs.together.ai](https://docs.together.ai/docs/serverless-models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/nvidia/nemotron-3-ultra-550b-a55b.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/nvidia/nemotron-3-ultra-550b-a55b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-ultra-550b-a55b.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-ultra-550b-a55b.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~330.5GB   58.5
+2-bit ud-q2_k_xl  ~165.5GB   58.5
+1-bit ud-iq1_m       ~83GB   58.5
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~330.5GB | 58.5 | `llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~165.5GB | 58.5 | `llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL` |
-| 1-bit ud-iq1\_m | ~83GB | 58.5 | `llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_m
+llama-server -hf unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF:UD-IQ1_M
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/nemotron-3-ultra-550b-a55b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

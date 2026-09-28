@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-08 · 20B params · apache-2.0
 
-**score 46.3** ±1.6
-
-#63 of 87 · from 7 benchmark results across 7 sources
+**score 46.3** ±1.6 · #63 of 87 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,44 +14,64 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1056.8 | 47.1 | ▇▇▇▇▇▇▇▇▇▇▇▇ 41% | 2026-09-24 |
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 67.5% | 40.3 | ▇▇▇▇▇▇ 19% | 2026-07-01 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 87.7% | 50.7 | ▇▇▇ 10% | 2026-08-25 |
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 62.0% | 41.4 | ▇▇▇ 9% | 2026-06-02 |
-| <a name="visual-imagenworld"></a><img src="../../icons/arxiv.org.png" width="14" alt="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) | [ImagenWorld text-guided generation (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 87.0% | 45.8 | ▇▇▇ 9% | 2026-03-29 |
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 87.0% | 54.1 | ▇▇▇ 8% | 2026-07-12 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) lab-reported | 49.2% | 49.7 | ▇ 3% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 46.3** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    47.1   2026-09-24   41% ▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    40.3   2026-07-01   19% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    50.7   2026-08-25   10% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    41.4   2026-06-02    9% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    45.8   2026-03-29    9% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    54.1   2026-07-12    8% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   49.2%    49.7   2026-05-27    3% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 46.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (5)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen-Image model card | [DPG-Bench](https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md) | 88.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen-Image model card | [LongText-Bench (CN)](https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md) | 94.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen-Image model card | [LongText-Bench (EN)](https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md) | 94.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen-Image model card | [OneIG-Bench (CN)](https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md) | 54.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen-Image model card | [OneIG-Bench (EN)](https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md) | 53.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (5)</summary>
+
+<pre>
+source                  test                 score  why
+Qwen/Qwen-Image model…  <a href="https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md">DPG-Bench</a>            88.3%  too few models have it yet
+Qwen/Qwen-Image model…  <a href="https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md">LongText-Bench (CN)</a>  94.6%  too few models have it yet
+Qwen/Qwen-Image model…  <a href="https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md">LongText-Bench (EN)</a>  94.3%  too few models have it yet
+Qwen/Qwen-Image model…  <a href="https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md">OneIG-Bench (CN)</a>     54.8%  too few models have it yet
+Qwen/Qwen-Image model…  <a href="https://huggingface.co/Qwen/Qwen-Image/blob/75e0b4be04f60ec59a75f475837eced720f823b6/README.md">OneIG-Bench (EN)</a>     53.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Replicate) · $0.025/image · [replicate.com ↗](https://replicate.com/qwen/qwen-image)
+api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/qwen/qwen-image)
 
-[price source](https://replicate.com/qwen/qwen-image) · USD per output image on Replicate's qwen/qwen-image model (billing: per output image; hardware time not added). The page's current version is served from replicate-pruna/qwen-image (Pruna-optimized deployment). Product: Replicate model API. API model: qwen/qwen-image. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/qwen/qwen-image): USD per output image on Replicate's qwen/qwen-image model (billing: per output image; hardware time not added). The page's current version is served from replicate-pruna/qwen-image (Pruna-optimized deployment). Product: Replicate model API. API model: qwen/qwen-image. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| nf4 (bitsandbytes 4-bit transformer + text encoder) · nvidia only | ~12.5GB | 46.3 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"` |
-| nf4 + model CPU offload · nvidia only | ~12.5GB | 46.3 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p.enable_model_cpu_offload(); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"` |
-| fp8\_e4m3fn (ComfyUI) · nvidia only | ~12.5GB | 46.3 | `sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v -H 1024 -W 1024 --diffusion-fa --flow-shift 3` |
-| gguf-q4\_k\_s · nvidia only | ~12.5GB | 46.3 | `sd-cli --diffusion-model models/qwen-image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3` |
-| fp8 onload + disk/CPU offload (DiffSynth-Studio VRAM management) · nvidia only | ~12.5GB | 46.3 | `git clone https://github.com/modelscope/DiffSynth-Studio.git && cd DiffSynth-Studio && pip install -e . && python examples/qwen_image/model_inference_low_vram/Qwen-Image.py` |
+<pre>
+version                                     needs  score
+nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   46.3
+nf4 + model CPU offload · nvidia only     ~12.5GB   46.3
+fp8_e4m3fn (ComfyUI) · nvidia only        ~12.5GB   46.3
+gguf-q4_k_s · nvidia only                 ~12.5GB   46.3
+fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   46.3
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# nf4 (bitsandbytes 4-bit transformer + text encoder) · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"
+# nf4 + model CPU offload · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import DiffusionPipeline; from diffusers.quantizers import PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder']); p=DiffusionPipeline.from_pretrained('Qwen/Qwen-Image', torch_dtype=torch.bfloat16, quantization_config=q, device_map='cuda'); p.enable_model_cpu_offload(); p('a cat holding a sign', negative_prompt=' ', num_inference_steps=50, true_cfg_scale=4.0).images[0].save('out.png')"
+# fp8_e4m3fn (ComfyUI) · nvidia only
+sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v -H 1024 -W 1024 --diffusion-fa --flow-shift 3
+# gguf-q4_k_s · nvidia only
+sd-cli --diffusion-model models/qwen-image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
+# fp8 onload + disk/CPU offload (DiffSynth-Studio VRAM management) · nvidia only
+git clone https://github.com/modelscope/DiffSynth-Studio.git && cd DiffSynth-Studio && pip install -e . && python examples/qwen_image/model_inference_low_vram/Qwen-Image.py
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

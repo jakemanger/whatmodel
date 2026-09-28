@@ -6,9 +6,7 @@
 
 Show Lab, NUS
 
-**score 26.5** ±3.5
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.5** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +14,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 42.8% | 25.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 95% | 2026-07-01 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 26.5** |  |  |
+<pre>
+source                  test                       score  implies  date        weight
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>  42.8%    25.2   2026-07-01   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle              49.9                 5% ▇
+                        weighted average                  = 26.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt))</sub>
 
 ## How to run it
 

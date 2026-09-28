@@ -6,28 +6,29 @@
 
 Black Forest Labs · closed weights
 
-**score 77.9** ±2.6
-
-#3 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 77.9** ±2.6 · #3 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1493.1 | 79.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 70% | 2026-09-22 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1265.0 | 77.7 | ▇▇▇▇▇▇▇▇ 27% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 77.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1493.1    79.0   2026-09-22   70% ▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1265.0    77.7   2026-09-25   27% ▇▇▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 77.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt))</sub>
 
 ## How to run it
 
-api (Black Forest Labs) · $0.17/sec · [docs.bfl.ai ↗](https://docs.bfl.ai/flux_3/flux3_video)
+api (Black Forest Labs) · $0.17/sec · [docs.bfl.ai](https://docs.bfl.ai/flux_3/flux3_video)
 
-[price source](https://docs.bfl.ai/quick_start/pricing) · USD per second of output video, text-to-video full render at the hd resolution class (default; 1280×704 at 16:9), with synchronized audio. Product: BFL API FLUX 3 video. API model: FLUX 3 t2v. Price basis: published per-second rate; 1 credit = $0.01. fhd $0.29/s, qhd $0.40/s, uhd $0.80/s; draft mode $0.06/s. HD dimensions from BFL's FLUX 3 video docs. Currency: USD. Black Forest Labs API pricing page, observed 2026-09-25.
+<sub>[price source](https://docs.bfl.ai/quick_start/pricing): USD per second of output video, text-to-video full render at the hd resolution class (default; 1280×704 at 16:9), with synchronized audio. Product: BFL API FLUX 3 video. API model: FLUX 3 t2v. Price basis: published per-second rate; 1 credit = $0.01. fhd $0.29/s, qhd $0.40/s, uhd $0.80/s; draft mode $0.06/s. HD dimensions from BFL's FLUX 3 video docs. Currency: USD. Black Forest Labs API pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

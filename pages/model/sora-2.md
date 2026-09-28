@@ -6,27 +6,28 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 62.0** ±2.3
-
-comparison only: no current run option verified · from 7 benchmark results across 7 sources
+**score 62.0** ±2.3 · comparison only: no current run option verified · from 7 benchmark results across 7 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1342.6 | 61.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 57% | 2026-09-22 |
-| <a name="visual-v-reasonbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models"> V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) | [V-ReasonBench (average pass@5)](https://arxiv.org/html/2511.16668v1#S3.T2) | 43.9% | 69.7 | ▇▇▇ 11% | 2025-11-20 |
-| <a name="visual-vgi"></a><img src="../../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models"> VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) | [VGI-Bench visual reasoning (I2V)](https://arxiv.org/html/2608.19583v3#S3.T2) | 36.7% | 62.3 | ▇▇▇ 11% | 2026-08-26 |
-| <a name="visual-vwg-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench)"> From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) | [VWG-Bench think-with-video reasoning (overall)](https://arxiv.org/html/2609.11242v1#S4.T2) | 68.8% | 65.2 | ▇▇ 7% | 2026-09-10 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 53.6% | 63.9 | ▇▇ 7% | 2026-08-10 |
-| <a name="visual-physics-verified"></a><img src="../../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified"> Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt)) | [Physics-IQ Verified (I2V, best-practice prompts)](https://arxiv.org/html/2606.18943v1#A5.T4) | 26.5% | 46.7 | ▇ 4% | 2026-06-17 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 86.1% | 46.2 | ▇ 1% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 62.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1342.6    61.5   2026-09-22   57% ▇▇▇▇▇▇▇
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   43.9%    69.7   2025-11-20   11% ▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.7%    62.3   2026-08-26   11% ▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>   68.8%    65.2   2026-09-10    7% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   53.6%    63.9   2026-08-10    7% ▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>   26.5%    46.7   2026-06-17    4% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 86.1%    46.2   2026-04-22    1% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 62.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 

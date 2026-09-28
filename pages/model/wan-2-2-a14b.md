@@ -6,45 +6,57 @@
 
 Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
-**score 37.8** ±2.3
-
-#45 of 54 · from 3 benchmark results across 2 sources
+**score 37.8** ±2.3 · #45 of 54 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1131.6 | 36.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 56% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1170.2 | 36.4 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-09-22 |
-| <a name="visual-worldjen"></a><img src="../../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models"> WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) | [WorldJen human preference (Bradley-Terry)](https://arxiv.org/html/2605.03475v2#S5.T1) | 1518.0 | 45.5 | ▇▇▇ 9% | 2026-05-06 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 37.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1131.6    36.9   2026-09-22   56% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1170.2    36.4   2026-09-22   32% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1518.0    45.5   2026-05-06    9% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 37.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.080/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video)
+api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video) · USD per video second at 720p on fal.ai. Product: fal Wan 2.2 A14B text-to-video endpoint. API model: fal-ai/wan/v2.2-a14b/text-to-video. Settings: resolution=720p. fal counts video seconds at 16 frames per second (the endpoint's default frame rate). 580p $0.06, 480p $0.04 per video second. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video): USD per video second at 720p on fal.ai. Product: fal Wan 2.2 A14B text-to-video endpoint. API model: fal-ai/wan/v2.2-a14b/text-to-video. Settings: resolution=720p. fal counts video seconds at 16 frames per second (the endpoint's default frame rate). 580p $0.06, 480p $0.04 per video second. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~65.3GB | 37.8 | `python generate.py --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --offload_model True --convert_model_dtype --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."` |
-| bf16 · mac only | ~65.3GB | 37.8 | `rapid-mlx serve wan2.2-t2v-a14b-bf16` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~65.3GB   37.8
+bf16 · mac only     ~65.3GB   37.8
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+python generate.py --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --offload_model True --convert_model_dtype --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage."
+# bf16 · mac only
+rapid-mlx serve wan2.2-t2v-a14b-bf16
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA H100/H800 | bf16 (--convert\_model\_dtype; shared config) | 1041.5 s/video | Wan reference implementation · T2V-A14B; 720P; 1 GPU; --offload\_model True; no prompt extension; --convert\_model\_dtype; mean after warmup · PNG time column manually visually verified. Combined GPU labels preserved; no claim that the run was specifically the H100 rather than H800. CPU model offload is explicit in settings; not misclassified as no offload. | [source ↗](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png) |
-| NVIDIA H100/H800 | bf16 (--convert\_model\_dtype; shared config) | 326.9 s/video | Wan reference implementation · T2V-A14B; 480P; 1 GPU; --offload\_model True; no prompt extension; --convert\_model\_dtype; mean after warmup · PNG time column manually visually verified. Combined GPU labels preserved; no claim that the run was specifically the H100 rather than H800. CPU model offload is explicit in settings; not misclassified as no offload. | [source ↗](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png) |
-| NVIDIA A100/A800 | bf16 (--convert\_model\_dtype; shared config) | 2735.7 s/video | Wan reference implementation · T2V-A14B; 720P; 1 GPU; --offload\_model True; no prompt extension; --convert\_model\_dtype; mean after warmup · PNG time column manually visually verified. Combined GPU labels preserved; no claim that the run was specifically the H100 rather than H800. CPU model offload is explicit in settings; not misclassified as no offload. | [source ↗](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png) |
+<pre>
+hardware          precision                  speed  engine and settings
+NVIDIA H100/H800  bf16 (--convert…  <a href="https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png">1041.5 s/video</a>  Wan reference implementation · T2…
+NVIDIA H100/H800  bf16 (--convert…   <a href="https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png">326.9 s/video</a>  Wan reference implementation · T2…
+NVIDIA A100/A800  bf16 (--convert…  <a href="https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png">2735.7 s/video</a>  Wan reference implementation · T2…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/wan-2-2-a14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

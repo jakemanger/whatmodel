@@ -6,57 +6,72 @@
 
 Alibaba · released 2024-09 · 14.8B params · apache-2.0
 
-**score 36.6** ±2.4
-
-#169 of 205 · from 6 benchmark results across 6 sources
+**score 36.6** ±2.4 · #169 of 205 · from 6 benchmark results across 6 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="evalplus-published-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="EvalPlus / EvalPerf published evaluation runs"> EvalPlus / EvalPerf published evaluation runs | [EvalPerf correctness (118 tasks, 20240328)](https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-14B-Instruct_vllm_temp_1.0_evalperf_results.brief.json) | 82.5% | 34.7 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2024-10-19 |
-| <a name="speakleash-polish-eq-bench"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash Polish EQ-Bench leaderboard"> SpeakLeash Polish EQ-Bench leaderboard | [Polish EQ-Bench v2 (SpeakLeash)](https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv) | 69.6% | 37.4 | ▇▇▇▇▇▇ 19% | 2025-03-01 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 70.9% | 37.0 | ▇▇▇▇ 14% | 2026-08-11 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 79.0% | 41.6 | ▇▇▇▇ 12% | 2024-09-18 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 36.9% | 37.4 | ▇▇▇ 10% | 2025-10-01 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 55.6% | 30.5 | ▇▇▇ 10% | 2026-09-19 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 36.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-14B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  82.5%    34.7   2024-10-19   33% ▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  69.6%    37.4   2025-03-01   19% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  70.9%    37.0   2026-08-11   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  79.0%    41.6   2024-09-18   12% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  36.9%    37.4   2025-10-01   10% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  55.6%    30.5   2026-09-19   10% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 36.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (6)
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| microsoft/phi-4 model card | [MMLU](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 79.9% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [GPQA (subset unspecified)](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 42.9% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [MGSM](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 79.6% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [MATH (subset unspecified)](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 75.6% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [HumanEval](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 72.1% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [SimpleQA](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 5.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source                  test                       score  why
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU</a>                       79.9%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified)</a>  42.9%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MGSM</a>                       79.6%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified)</a>  75.6%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval</a>                  72.1%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA</a>                    5.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8/README.md) · Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens. This does not promise the same limit on every hosted API.
+<sub>[context source](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8/README.md): Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens. This does not promise the same limit on every hosted API.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~9.38GB | 36.6 | `ollama run qwen2.5:14b` |
-| 8-bit q8\_0 | ~18.26GB | 36.6 | `ollama run qwen2.5:14b-instruct-q8_0` |
+<pre>
+download          size  score
+4-bit q4_k_m   ~9.38GB   36.6
+8-bit q8_0    ~18.26GB   36.6
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run qwen2.5:14b
+# 8-bit q8_0
+ollama run qwen2.5:14b-instruct-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; algorithm not stated, llm-compressor) | GSM8K — published row 'GSM-8K (5-shot, strict-match)' (OpenLLM v1 section); lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 4096, add\_bos\_token) | 0.836 → 0.855 | 102.4% | [source ↗](https://huggingface.co/RedHatAI/Qwen2.5-14B-Instruct-quantized.w8a8/blob/a9d77c2a8d0706cebcc7a5dcdd8221c2bda0ca6d/README.md#L122) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; algorithm not stated, llm-compressor) | OpenLLM v1 average of 6 tasks (MMLU (5-shot); ARC Challenge (25-shot); GSM-8K (5-shot, strict-match); Hellaswag (10-shot); Winogrande (5-shot); TruthfulQA (0-shot, mc2)) as published; lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 4096, add\_bos\_token) | 0.778 → 0.781 | 100.4% | [source ↗](https://huggingface.co/RedHatAI/Qwen2.5-14B-Instruct-quantized.w8a8/blob/a9d77c2a8d0706cebcc7a5dcdd8221c2bda0ca6d/README.md#L162) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; algorithm not stated, llm-compressor) | MMLU — published row 'MMLU (5-shot)' (OpenLLM v1 section); lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 4096, add\_bos\_token) | 0.799 → 0.797 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen2.5-14B-Instruct-quantized.w8a8/blob/a9d77c2a8d0706cebcc7a5dcdd8221c2bda0ca6d/README.md#L102) |
+<pre>
+precision                       test                                full → quantized    kept
+INT8 W8A8 (weights INT8 per-c…  GSM8K — published row 'GSM-8K (5-…     0.836 → 0.855  <a href="https://huggingface.co/RedHatAI/Qwen2.5-14B-Instruct-quantized.w8a8/blob/a9d77c2a8d0706cebcc7a5dcdd8221c2bda0ca6d/README.md#L122">102.4%</a>
+INT8 W8A8 (weights INT8 per-c…  OpenLLM v1 average of 6 tasks (MM…     0.778 → 0.781  <a href="https://huggingface.co/RedHatAI/Qwen2.5-14B-Instruct-quantized.w8a8/blob/a9d77c2a8d0706cebcc7a5dcdd8221c2bda0ca6d/README.md#L162">100.4%</a>
+INT8 W8A8 (weights INT8 per-c…  MMLU — published row 'MMLU (5-sho…     0.799 → 0.797   <a href="https://huggingface.co/RedHatAI/Qwen2.5-14B-Instruct-quantized.w8a8/blob/a9d77c2a8d0706cebcc7a5dcdd8221c2bda0ca6d/README.md#L102">99.8%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen2-5-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

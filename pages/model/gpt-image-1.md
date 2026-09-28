@@ -6,9 +6,7 @@
 
 OpenAI · released 2025-04 · proprietary
 
-**score 54.4** ±1.4
-
-#40 of 87 · from 11 benchmark results across 8 sources
+**score 54.4** ±1.4 · #40 of 87 · from 11 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,29 +14,32 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1115.7 | 54.4 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1138.9 | 41.2 | ▇▇▇ 9% | 2026-09-22 |
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 86.3% | 56.6 | ▇▇▇▇▇ 15% | 2026-07-01 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 62.2% | 59.0 | ▇▇▇▇ 14% | 2026-05-14 |
-| <a name="visual-imagenworld"></a><img src="../../icons/arxiv.org.png" width="14" alt="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) | [ImagenWorld text-guided generation (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 91.0% | 53.2 | ▇▇ 7% | 2026-03-29 |
-|  | [ImagenWorld text-guided editing (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 82.0% | 50.8 | ▇ 4% | 2026-03-29 |
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 86.1% | 52.5 | ▇▇ 7% | 2026-07-12 |
-|  | [GenAI-Bench (VQAScore overall)](https://arxiv.org/html/2506.02161v3#S4.T3) | 85.0% | 57.7 | ▇ 1% | 2026-07-12 |
-| <a name="visual-gebench"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEBench: Benchmarking Image Generation Models as GUI Environments"> GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) | [GEBench GUI state generation (English GE-Score)](https://arxiv.org/html/2602.09007v2#S3.T1) | 55.6% | 63.4 | ▇ 4% | 2026-02-10 |
-| <a name="visual-unicbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits"> UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) | [UnicBench (EN, overall)](https://arxiv.org/html/2512.02790v1#S6.T4) | 83.5% | 59.1 | ▇ 3% | 2025-12-01 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 54.1% | 58.1 | ▇ 2% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 54.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1115.7    54.4   2026-09-24   34% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1138.9    41.2   2026-09-22    9% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        86.3%    56.6   2026-07-01   15% ▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   62.2%    59.0   2026-05-14   14% ▇▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   91.0%    53.2   2026-03-29    7% ▇
+                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>   82.0%    50.8   2026-03-29    4% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   86.1%    52.5   2026-07-12    7% ▇
+                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>   85.0%    57.7   2026-07-12    1% ▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   55.6%    63.4   2026-02-10    4% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          83.5%    59.1   2025-12-01    3% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   54.1%    58.1   2026-05-27    2% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 54.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $0.042/image · [developers.openai.com ↗](https://developers.openai.com/api/docs/models/gpt-image-1)
+api (OpenAI) · $0.042/image · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-image-1)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD for one generated 1024×1024 medium-quality image. Output-only published price; input text/image token charges are additional. Scheduled deprecation 2026-10-23. Product: Image generation API. API model: gpt-image-1. Settings: quality=medium, width=1024, height=1024, n=1. Price basis: generated image output component. Additional/excluded charges: input text/image tokens. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD for one generated 1024×1024 medium-quality image. Output-only published price; input text/image token charges are additional. Scheduled deprecation 2026-10-23. Product: Image generation API. API model: gpt-image-1. Settings: quality=medium, width=1024, height=1024, n=1. Price basis: generated image output component. Additional/excluded charges: input text/image tokens. Currency: USD.</sub>
 
 no verified local download listed
 

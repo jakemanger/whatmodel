@@ -6,56 +6,55 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 62.6** ±0.8
-
-#43 of 205 · from 28 benchmark results across 13 sources
+**score 62.6** ±0.8 · #43 of 205 · from 28 benchmark results across 13 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 55.4% | 63.0 | ▇▇▇▇▇▇ 21% | 2026-06-10 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 22.0% | 63.6 | ▇▇▇ 12% | 2026-06-11 |
-|  | [EBR-bench (Epoch)](https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv) | 12.7% | 64.3 | ▇▇ 7% | 2026-06-29 |
-|  | [MATH level 5](https://epoch.ai/data/benchmark_data.zip#math_level_5.csv) | 98.1% | 60.8 | ▇▇ 5% | 2025-10-29 |
-|  | [SWE-bench Verified](https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv) | 73.6% | 61.4 | ▇ 5% | 2026-02-06 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 86.2% | 59.9 | ▇ 2% | 2025-10-29 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 91.4% | 60.6 | ▇ 2% | 2025-10-29 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 50.1% | 66.9 | ▇ 2% | 2026-08-27 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 23.0% | 65.3 | ▇ 2% | 2026-08-05 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 37.0% | 71.4 | ▇ 1% | 2025-12-08 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1420.0 | 58.0 | ▇ 5% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1434.7 | 58.6 | ▇ 3% | 2026-09-13 |
-|  | [Arena search systems (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet) | 1182.9 | 61.6 | ▇ 2% | 2026-08-24 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1211.0 | 51.7 | ▇ 1% | 2026-09-13 |
-| <a name="aider-polyglot-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Aider polyglot benchmark runs"> Aider polyglot benchmark runs | [Aider polyglot (225 exercises, two attempts)](https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml) | 88.0% | 64.0 | ▇▇ 6% | 2025-08-23 |
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 78.8% | 68.3 | ▇ 3% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 94.4% | 63.0 | ▇ 2% | 2026-09-07 |
-| <a name="paper-2601.11868v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials"> Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) | [Terminal-Bench 2.0 with Terminus 2 agent (benchmark authors' runs)](https://arxiv.org/html/2601.11868v1) | 35.2% | 57.8 | ▇ 4% | 2026-01-17 |
-| <a name="servicenow-browsergym-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="ServiceNow BrowserGym leaderboard (AgentLab GenericAgent runs)"> ServiceNow BrowserGym leaderboard (AgentLab GenericAgent runs) | [BrowserGym WorkArena-L2 (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json) | 69.4% | 69.9 | ▇ 2% | 2025-08-07 |
-|  | [BrowserGym MiniWoB (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/miniwob.json) | 71.5% | 56.0 | ▇ 1% | 2025-08-07 |
-| <a name="paper-2605.09063v3"></a><img src="../../icons/arxiv.org.png" width="14" alt="Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs — authors' own model runs"> Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs — authors' own model runs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) | [SOOHAK Challenge (340 problems, Avg@3)](https://arxiv.org/html/2605.09063v3) | 26.4% | 70.8 | ▇ 2% | 2026-05-19 |
-|  | [SOOHAK-Mini (702 problems, Avg@3)](https://arxiv.org/html/2605.09063v3) | 72.2% | 67.0 | ▇ 1% | 2026-05-19 |
-| <a name="zai-rpc-bench-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="RPC-Bench leaderboard (Z.ai research paper comprehension)"> RPC-Bench leaderboard (Z.ai research paper comprehension) | [RPC-Bench overall, text input (Z.ai)](https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json) | 37.5% | 63.6 | ▇ 3% | 2026-06-17 |
-| <a name="paper-2604.18584v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval — authors' own model runs"> MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval — authors' own model runs ([CC BY 4.0](../../licenses/paper-2604.18584v2-CC-BY-4.0.txt)) | [MathNet-Solve-Test micro-average accuracy (6,400 olympiad problems)](https://arxiv.org/html/2604.18584v2) | 69.3% | 67.0 | ▇ 2% | 2026-07-29 |
-| <a name="webapp1k-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="WebApp1K models leaderboard (onekq-ai)"> WebApp1K models leaderboard (onekq-ai) | [WebApp1K-Duo-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv) | 79.4% | 61.0 | ▇ 2% | 2025-09-17 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 83.4% | 49.3 | ▇ 1% | 2025-09-01 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 84.3% | 67.5 | ▇ 1% | 2025-11-29 |
-| <a name="amazon-tau2-verified"></a><img src="../../icons/huggingface.co.png" width="14" alt="Amazon AGI — τ²-Bench-Verified"> Amazon AGI — τ²-Bench-Verified | [τ²-Bench-Verified (GPT-5.1 user)](https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md) | 79.9% | 63.8 | ▇ 1% | 2026-09-25 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 62.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        55.4%    63.0   2026-06-10   21% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           22.0%    63.6   2026-06-11   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                12.7%    64.3   2026-06-29    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     98.1%    60.8   2025-10-29    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               73.6%    61.4   2026-02-06    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     86.2%    59.9   2025-10-29    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         91.4%    60.6   2025-10-29    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                50.1%    66.9   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     23.0%    65.3   2026-08-05    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            37.0%    71.4   2025-12-08    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1420.0    58.0   2026-09-24    5% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1434.7    58.6   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1182.9    61.6   2026-08-24    2% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1211.0    51.7   2026-09-13    1% ▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   88.0%    64.0   2025-08-23    6% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   78.8%    68.3   2026-09-07    3% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   94.4%    63.0   2026-09-07    2% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   35.2%    57.8   2026-01-17    4% ▇
+<a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>   69.4%    69.9   2025-08-07    2% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5/miniwob.json">BrowserGym MiniWoB (AgentLab …</a>   71.5%    56.0   2025-08-07    1% ▇
+<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   26.4%    70.8   2026-05-19    2% ▇
+                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   72.2%    67.0   2026-05-19    1% ▇
+<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   37.5%    63.6   2026-06-17    3% ▇
+<a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   69.3%    67.0   2026-07-29    2% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   79.4%    61.0   2025-09-17    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   83.4%    49.3   2025-09-01    1% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   84.3%    67.5   2025-11-29    1% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   79.9%    63.8   2026-09-25    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 62.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · RPC-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval ([CC BY 4.0](../../licenses/paper-2604.18584v2-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $3.44/M blended · $1.25 in / $10 out per 1M tokens · [platform.openai.com ↗](https://platform.openai.com/docs/models)
+api (OpenAI) · $3.44/M blended · $1.25 in / $10 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.toml)
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.toml)</sub>
 
 no verified local download listed
 

@@ -6,36 +6,35 @@
 
 Alibaba · released 2026-09 · closed weights
 
-**score 66.5** ±1.1
-
-#25 of 205 · from 8 benchmark results across 2 sources
+**score 66.5** ±1.1 · #25 of 205 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 65.6% | 65.9 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-09-02 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 34.1% | 66.3 | ▇▇▇▇▇▇▇ 22% | 2026-09-02 |
-|  | [Furniture Assembly (Epoch)](https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv) | 20.0% | 61.0 | ▇▇▇▇▇ 15% | 2026-09-10 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 92.3% | 66.1 | ▇ 4% | 2026-09-02 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 100.0% | 80.1 | ▇ 4% | 2026-09-02 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 47.3% | 65.6 | ▇ 4% | 2026-09-02 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 40.0% | 72.7 | ▇ 1% | 2026-09-02 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1660.6 | 73.6 | ▇▇▇ 9% | 2026-09-24 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 66.5** |  |  |
+<pre>
+source                  test                         score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>    65.6%    65.9   2026-09-02   39% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       34.1%    66.3   2026-09-02   22% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>   20.0%    61.0   2026-09-10   15% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                 92.3%    66.1   2026-09-02    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    100.0%    80.1   2026-09-02    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>            47.3%    65.6   2026-09-02    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>        40.0%    72.7   2026-09-02    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>   1660.6    73.6   2026-09-24    9% ▇
+prior                   pull toward the middle                50.0                 1% ▇
+                        weighted average                    = 66.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $3.00/M blended · $2 in / $6 out per 1M tokens · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
+api (Alibaba Cloud Model Studio) · $3.00/M blended · $2 in / $6 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per 1M tokens, Singapore (International), dated snapshot qwen3.8-max-0902, thinking and non-thinking modes, 0\<Token\<=1M (single tier): input $2, output $6. Context-cache discount and free quota excluded; China (Beijing)/Global deployments ($1.65/$4.951) not used, following the International convention of other Alibaba rows. Observed 2026-09-25.
-
-[context specification source](https://www.alibabacloud.com/help/en/model-studio/text-generation-model) · Alibaba Cloud Model Studio text-generation models table: qwen3.8-max-0902 context 1M (stated rounded). Observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), dated snapshot qwen3.8-max-0902, thinking and non-thinking modes, 0\<Token\<=1M (single tier): input $2, output $6. Context-cache discount and free quota excluded; China (Beijing)/Global deployments ($1.65/$4.951) not used, following the International convention of other Alibaba rows. Observed 2026-09-25. · [context source](https://www.alibabacloud.com/help/en/model-studio/text-generation-model): Alibaba Cloud Model Studio text-generation models table: qwen3.8-max-0902 context 1M (stated rounded). Observed 2026-09-25.</sub>
 
 no verified local download listed
 

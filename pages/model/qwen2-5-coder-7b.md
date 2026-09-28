@@ -6,44 +6,56 @@
 
 Alibaba · released 2024-09 · 7.62B params · apache-2.0
 
-**score 31.9** ±3.3
-
-#183 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.9** ±3.3 · #183 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="livecodebench-website-20241226"></a><img src="../../icons/huggingface.co.png" width="14" alt="LiveCodeBench official website results (2024-12-26)"> LiveCodeBench official website results (2024-12-26) ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) | [LiveCodeBench official (Jan 1–Nov 1, 2024)](https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json) | 26.2% | 31.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 95% | 2024-12-26 |
-| prior | pull toward the middle |  | 50.0 | ▇ 5% |  |
-|  | **weighted average** |  | **= 31.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>  26.2%    31.0   2024-12-26   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 31.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/c03e6d358207e414f1eca0bb1891e29f1db0e242/README.md) · Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens. This does not promise the same limit on every hosted API.
+<sub>[context source](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/c03e6d358207e414f1eca0bb1891e29f1db0e242/README.md): Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens. This does not promise the same limit on every hosted API.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~5.07GB | 31.9 | `ollama run qwen2.5-coder:7b` |
-| 8-bit q8\_0 | ~9.64GB | 31.9 | `ollama run qwen2.5-coder:7b-instruct-q8_0` |
+<pre>
+download         size  score
+4-bit q4_k_m  ~5.07GB   31.9
+8-bit q8_0    ~9.64GB   31.9
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run qwen2.5-coder:7b
+# 8-bit q8_0
+ollama run qwen2.5-coder:7b-instruct-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| AQLM 4-bit | BigCodeBench (Python) pass@1 | 0.41 → 0.41 | 100.0% | [source ↗](https://arxiv.org/html/2607.14181v1#S5.T4) |
-| AWQ 4-bit | BigCodeBench (Python) pass@1 | 0.41 → 0.41 | 100.0% | [source ↗](https://arxiv.org/html/2607.14181v1#S5.T4) |
-| bitsandbytes NF4 (double quantization) | BigCodeBench (Python) pass@1 | 0.41 → 0.39 | 95.1% | [source ↗](https://arxiv.org/html/2607.14181v1#S5.T4) |
-| GGUF Q4\_K\_M | BigCodeBench (Python) pass@1 | 0.41 → 0.4 | 97.6% | [source ↗](https://arxiv.org/html/2607.14181v1#S5.T4) |
-| GPTQ 4-bit | BigCodeBench (Python) pass@1 | 0.41 → 0.41 | 100.0% | [source ↗](https://arxiv.org/html/2607.14181v1#S5.T4) |
-| QuIP# 4-bit | BigCodeBench (Python) pass@1 | 0.41 → 0.32 | 78.0% | [source ↗](https://arxiv.org/html/2607.14181v1#S5.T4) |
+<pre>
+precision                       test                          full → quantized    kept
+AQLM 4-bit                      BigCodeBench (Python) pass@1       0.41 → 0.41  <a href="https://arxiv.org/html/2607.14181v1#S5.T4">100.0%</a>
+AWQ 4-bit                       BigCodeBench (Python) pass@1       0.41 → 0.41  <a href="https://arxiv.org/html/2607.14181v1#S5.T4">100.0%</a>
+bitsandbytes NF4 (double quan…  BigCodeBench (Python) pass@1       0.41 → 0.39   <a href="https://arxiv.org/html/2607.14181v1#S5.T4">95.1%</a>
+GGUF Q4_K_M                     BigCodeBench (Python) pass@1        0.41 → 0.4   <a href="https://arxiv.org/html/2607.14181v1#S5.T4">97.6%</a>
+GPTQ 4-bit                      BigCodeBench (Python) pass@1       0.41 → 0.41  <a href="https://arxiv.org/html/2607.14181v1#S5.T4">100.0%</a>
+QuIP# 4-bit                     BigCodeBench (Python) pass@1       0.41 → 0.32   <a href="https://arxiv.org/html/2607.14181v1#S5.T4">78.0%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen2-5-coder-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,31 +6,32 @@
 
 Alibaba · released 2026-08 · proprietary
 
-**score 76.5** ±2.0
-
-#4 of 54 · from 5 benchmark results across 3 sources
+**score 76.5** ±2.0 · #4 of 54 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1476.3 | 77.1 | ▇▇▇▇▇▇▇▇▇▇▇▇ 41% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1479.8 | 75.8 | ▇▇▇▇▇▇▇ 24% | 2026-09-22 |
-|  | [Arena video edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet) | 1414.1 | 80.6 | ▇▇▇ 10% | 2026-08-27 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1183.0 | 71.7 | ▇▇▇▇▇ 16% | 2026-09-25 |
-| <a name="visual-rapid-camera"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings"> Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) | [Rapidata camera movement (I2V)](https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard) | 1249.2 | 84.6 | ▇▇▇ 9% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 76.5** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1476.3    77.1   2026-09-22   41% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1479.8    75.8   2026-09-22   24% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1414.1    80.6   2026-08-27   10% ▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1183.0    71.7   2026-09-25   16% ▇▇
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  1249.2    84.6   2026-09-25    9% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 76.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.10/sec · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.10/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per second of output video, 720P, International deployment (Singapore) list price. Product: Model Studio Wan 3.0 video generation. API model: wan3.0-video (not wan3.0-video-prime, $0.14/s at 720P). Settings: resolution=720P, text-to-video (no input video). Price basis: published list price; a limited-time 30% discount was shown and is not applied. Wan 3.0 bills input video duration too (billable duration = input + output), so video-to-video costs more. 480P $0.05/s, 1080P $0.2/s. Chinese-mainland and other regions list different USD rates. Free quota excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25. Replaces the held Replicate route (conflicting README).
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 720P, International deployment (Singapore) list price. Product: Model Studio Wan 3.0 video generation. API model: wan3.0-video (not wan3.0-video-prime, $0.14/s at 720P). Settings: resolution=720P, text-to-video (no input video). Price basis: published list price; a limited-time 30% discount was shown and is not applied. Wan 3.0 bills input video duration too (billable duration = input + output), so video-to-video costs more. 480P $0.05/s, 1080P $0.2/s. Chinese-mainland and other regions list different USD rates. Free quota excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25. Replaces the held Replicate route (conflicting README).</sub>
 
 no verified local download listed
 

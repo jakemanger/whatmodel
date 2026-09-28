@@ -6,26 +6,27 @@
 
 Coqui · released 2023-11 · coqui-public-model-license
 
-**score 5.7** ±3.0
-
-comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 5.7** ±3.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-sap-voicerecon-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="An Evaluation Framework for TTS Voice Reconstruction (SAP dysarthric speakers; arXiv:2606.21343v1)"> An Evaluation Framework for TTS Voice Reconstruction (SAP dysarthric speakers; arXiv:2606.21343v1) ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) | [SAP voice reconstruction · human BWS reconstruction preference](https://arxiv.org/html/2606.21343v1) | 776.1 | -1.6 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-06-19 |
-|  | [SAP voice reconstruction · WER of reconstructed speech (Whisper turbo)](https://arxiv.org/html/2606.21343v1) | 17.3% | 8.4 | ▇▇▇▇▇▇ 19% | 2026-06-19 |
-|  | [SAP voice reconstruction · TTSDS dual-reference distributional score](https://arxiv.org/html/2606.21343v1) | 83.5% | 7.6 | ▇▇▇ 9% | 2026-06-19 |
-| <a name="speech-ttsds-v1-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="TTSDS v1 published results"> TTSDS v1 published results | [TTSDS v1 · default four-factor score](https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv) | 87.3% | 6.0 | ▇▇▇▇▇▇▇▇ 26% | 2025-04-25 |
-| <a name="speech-codecmos-accent-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1)"> CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1) ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) | [CodecMOS-Accent VCTK voice clone · human naturalness MOS (S-NAT)](https://arxiv.org/html/2603.14328v1) | 3.84 / 5 | 14.1 | ▇▇ 6% | 2026-03-15 |
-|  | [CodecMOS-Accent VCTK voice clone · human speaker-similarity MOS (S-SPK-SIM)](https://arxiv.org/html/2603.14328v1) | 3.69 / 5 | -6.3 | ▇ 2% | 2026-03-15 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 5.7** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     776.1    -1.6   2026-06-19   34% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     17.3%     8.4   2026-06-19   19% ▇▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     83.5%     7.6   2026-06-19    9% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     87.3%     6.0   2025-04-25   26% ▇▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.84 / 5    14.1   2026-03-15    6% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.69 / 5    -6.3   2026-03-15    2% ▇
+prior                   pull toward the middle                      49.9                 4% ▇
+                        weighted average                           = 5.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
 ## How to run it
 

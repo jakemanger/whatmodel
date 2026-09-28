@@ -6,51 +6,63 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 50.6** ±2.3
-
-#110 of 205 · from 4 benchmark results across 3 sources
+**score 50.6** ±2.3 · #110 of 205 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1273.8 | 48.5 | ▇▇▇▇▇▇▇▇▇▇▇ 36% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1387.5 | 49.9 | ▇▇▇▇▇▇ 20% | 2026-09-13 |
-| <a name="paper-2601.11868v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials"> Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) | [Terminal-Bench 2.0 with Terminus 2 agent (benchmark authors' runs)](https://arxiv.org/html/2601.11868v1) | 23.9% | 53.0 | ▇▇▇▇▇▇▇▇ 28% | 2026-01-17 |
-| <a name="webapp1k-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="WebApp1K models leaderboard (onekq-ai)"> WebApp1K models leaderboard (onekq-ai) | [WebApp1K-Duo-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv) | 61.2% | 52.2 | ▇▇▇▇ 13% | 2025-11-02 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 50.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1273.8    48.5   2026-09-24   36% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1387.5    49.9   2026-09-13   20% ▇▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   23.9%    53.0   2026-01-17   28% ▇▇▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   61.2%    52.2   2025-11-02   13% ▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 50.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (7)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [Aider polyglot (225 exercises, two attempts)](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 61.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [BFCL v3](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 68.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [SWE-bench Live](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 26.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [SWE-bench Multilingual](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 54.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [SWE-bench Verified](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 69.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [τ-bench Airline](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 60.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-Coder-480B-A35B-Instruct model card | [τ-bench Retail](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md) | 77.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (7)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">Aider polyglot (225 exercises…</a>  61.8%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">BFCL v3</a>                         68.7%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Live</a>                  26.3%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Multilingual</a>          54.7%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Verified</a>              69.6%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">τ-bench Airline</a>                 60.0%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">τ-bench Retail</a>                  77.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [novita.ai ↗](https://novita.ai/models)
+api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [novita.ai](https://novita.ai/models)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output. Model endpoint qwen/qwen3-coder-480b-a35b-instruct.  Product: Serverless chat completions. API model: qwen/qwen3-coder-480b-a35b-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint qwen/qwen3-coder-480b-a35b-instruct.  Product: Serverless chat completions. API model: qwen/qwen3-coder-480b-a35b-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download              size  score
+4-bit q4_k_m      ~288.5GB   50.6
+2-bit ud-q2_k_xl  ~144.5GB   50.6
+1-bit ud-iq1_m     ~72.5GB   50.6
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~288.5GB | 50.6 | `ollama run qwen3-coder:480b` |
-| 2-bit ud-q2\_k\_xl | ~144.5GB | 50.6 | `llama-server -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL` |
-| 1-bit ud-iq1\_m | ~72.5GB | 50.6 | `llama-server -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M` |
+```sh
+# 4-bit q4_k_m
+ollama run qwen3-coder:480b
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_m
+llama-server -hf unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF:UD-IQ1_M
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-coder-480b-a35b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

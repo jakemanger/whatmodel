@@ -6,28 +6,29 @@
 
 Smallest.ai · proprietary
 
-**score 47.6** ±2.8
-
-#27 of 36 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.6** ±2.8 · #27 of 36 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1111.5 | 46.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 87% | 2026-09-25 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Expressiveness (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.30 / 5 | 55.6 | ▇▇▇ 9% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 47.6** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1111.5    46.6   2026-09-25   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.30 / 5    55.6   2026-07-16    9% ▇
+prior                   pull toward the middle                      49.9                 3% ▇
+                        weighted average                          = 47.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (Smallest.ai) · $17.50/M chars · [smallest.ai ↗](https://smallest.ai/pricing)
+api (Smallest.ai) · $17.50/M chars · [smallest.ai](https://smallest.ai/pricing)
 
-[price source](https://smallest.ai/pricing/models) · USD per 1M characters: Smallest.ai lists Lightning v3.1 (not Pro) at approximately $0.175 per 10,000 characters, pay as you go (x100). Product: Lightning text-to-speech API. API model: lightning\_v3.1. Settings: pay-as-you-go. Price basis: published (approximate) list rate, per-10K to per-1M scaling only. Exclusions: Lightning v3.1 Pro (~$0.195/10K), enterprise/custom pricing. Currency: USD. Smallest.ai official model pricing page, observed 2026-09-25.
+<sub>[price source](https://smallest.ai/pricing/models): USD per 1M characters: Smallest.ai lists Lightning v3.1 (not Pro) at approximately $0.175 per 10,000 characters, pay as you go (x100). Product: Lightning text-to-speech API. API model: lightning\_v3.1. Settings: pay-as-you-go. Price basis: published (approximate) list rate, per-10K to per-1M scaling only. Exclusions: Lightning v3.1 Pro (~$0.195/10K), enterprise/custom pricing. Currency: USD. Smallest.ai official model pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

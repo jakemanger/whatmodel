@@ -6,37 +6,36 @@
 
 Meta · released 2026-09 · closed weights
 
-**score 69.4** ±1.2
-
-#13 of 205 · from 9 benchmark results across 2 sources
+**score 69.4** ±1.2 · #13 of 205 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 74.0% | 68.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 44% | 2026-09-18 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 46.3% | 68.5 | ▇▇▇▇▇▇▇ 24% | 2026-09-18 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 99.2% | 76.7 | ▇ 4% | 2026-09-17 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 25.0% | 66.1 | ▇ 4% | 2026-09-18 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 38.0% | 71.8 | ▇ 1% | 2026-09-18 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1658.2 | 73.5 | ▇▇▇ 10% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1493.1 | 69.3 | ▇▇ 6% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1294.1 | 71.7 | ▇ 3% | 2026-09-13 |
-|  | [Arena document (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet) | 1467.9 | 66.7 | ▇ 2% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 69.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        74.0%    68.6   2026-09-18   44% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           46.3%    68.5   2026-09-18   24% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         99.2%    76.7   2026-09-17    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     25.0%    66.1   2026-09-18    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            38.0%    71.8   2026-09-18    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1658.2    73.5   2026-09-24   10% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1493.1    69.3   2026-09-13    6% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1294.1    71.7   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1467.9    66.7   2026-09-13    2% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 69.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Meta) · $2.00/M blended · $1.25 in / $4.25 out per 1M tokens · [dev.meta.ai ↗](https://dev.meta.ai/docs/pricing-rate-limits)
+api (Meta) · $2.00/M blended · $1.25 in / $4.25 out per 1M tokens · [dev.meta.ai](https://dev.meta.ai/docs/pricing-rate-limits)
 
-[price source](https://dev.meta.ai/docs/pricing-rate-limits) · USD per 1M tokens, Meta Developer Platform Standard tier (prompts not used for training) for muse-spark-1.3; cached input $0.15/1M and the cheaper Contributor tier (muse-spark-1.3-contributor, data used for training) excluded; web-search grounding billed separately; page states no long-context premium. Currency: USD. Meta official pricing page, observed 2026-09-25.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/muse-spark-1.3.toml)
+<sub>[price source](https://dev.meta.ai/docs/pricing-rate-limits): USD per 1M tokens, Meta Developer Platform Standard tier (prompts not used for training) for muse-spark-1.3; cached input $0.15/1M and the cheaper Contributor tier (muse-spark-1.3-contributor, data used for training) excluded; web-search grounding billed separately; page states no long-context premium. Currency: USD. Meta official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/muse-spark-1.3.toml)</sub>
 
 no verified local download listed
 

@@ -6,23 +6,24 @@
 
 Luma AI · released 2025-09 · proprietary
 
-**score 45.0** ±2.4
-
-comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 45.0** ±2.4 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1206.2 | 45.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 61% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1225.9 | 43.5 | ▇▇▇▇▇▇▇▇▇▇▇ 35% | 2026-09-22 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 87.7% | 55.0 | ▇ 1% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 45.0** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1206.2    45.6   2026-09-22   61% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1225.9    43.5   2026-09-22   35% ▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         87.7%    55.0   2026-04-22    1% ▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 45.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 

@@ -6,21 +6,22 @@
 
 Shengshu · closed weights
 
-**score 54.6** ±6.2
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±6.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-rapid-camera"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings"> Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) | [Rapidata camera movement (I2V)](https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard) | 877.6 | 55.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 84% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇ 16% |  |
-|  | **weighted average** |  | **= 54.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  877.6    55.5   2026-09-25   84% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                16% ▇▇
+                        weighted average                       = 54.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt))</sub>
 
 ## How to run it
 

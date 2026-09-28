@@ -6,42 +6,54 @@
 
 Google · released 2025-08 · 0.27B params · gemma
 
-**score -5.7** ±3.3
-
-#205 of 205 · from 3 benchmark results across 2 sources
+**score -5.7** ±3.3 · #205 of 205 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="gap-google-gemma3"></a><img src="../../icons/huggingface.co.png" width="14" alt="Google DeepMind Gemma 3 270M IT model card"> Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) | [BIG-Bench Hard](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 26.7% | -3.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 55% | 2026-09-25 |
-|  | [IFEval (aggregation unspecified)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 51.2% | -11.0 | ▇▇▇▇▇ 18% | 2026-09-25 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 28.2% | -18.3 | ▇▇▇▇▇▇▇ 22% | 2025-08-30 |
-| prior | pull toward the middle |  | 50.0 | ▇ 5% |  |
-|  | **weighted average** |  | **= -5.7** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>            26.7%    -3.9   2026-09-25   55% ▇▇▇▇▇▇▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  51.2%   -11.0   2026-09-25   18% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%   -18.3   2025-08-30   22% ▇▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = -5.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (4)
+<sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Google DeepMind Gemma 3 270M IT model card | [HellaSwag](https://ai.google.dev/gemma/docs/core/model_card_3) | 37.7% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3 270M IT model card | [PIQA](https://ai.google.dev/gemma/docs/core/model_card_3) | 66.2% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3 270M IT model card | [ARC Challenge](https://ai.google.dev/gemma/docs/core/model_card_3) | 28.2% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3 270M IT model card | [WinoGrande](https://ai.google.dev/gemma/docs/core/model_card_3) | 52.3% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source                  test           score  why
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HellaSwag</a>      37.7%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">PIQA</a>           66.2%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ARC Challenge</a>  28.2%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">WinoGrande</a>     52.3%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://ai.google.dev/gemma/docs/core/model_card_3) · Publisher advertises 32K total context, shared between input and output. Stored as the stated rounded 32K; no unsupported 32,768-token precision inferred.
+<sub>[context source](https://ai.google.dev/gemma/docs/core/model_card_3): Publisher advertises 32K total context, shared between input and output. Stored as the stated rounded 32K; no unsupported 32,768-token precision inferred.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 8-bit q8\_0 | ~0.82GB | -5.7 | `ollama run gemma3:270m` |
-| 4-bit QAT qat | ~0.66GB | -5.7 | `ollama run gemma3:270m-it-qat` |
+<pre>
+download          size  score
+8-bit q8_0     ~0.82GB   -5.7
+4-bit QAT qat  ~0.66GB   -5.7
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 8-bit q8_0
+ollama run gemma3:270m
+# 4-bit QAT qat
+ollama run gemma3:270m-it-qat
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gemma-3-270m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

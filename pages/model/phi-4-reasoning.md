@@ -6,67 +6,80 @@
 
 Microsoft · released 2025-04 · 14.7B params · mit
 
-**score 40.0** ±4.9
-
-#153 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.0** ±4.9 · #153 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 48.1% | 38.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 89% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 40.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    38.8   2026-05-02   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                11% ▇
+                        weighted average                       = 40.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (16)
+<sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| microsoft/Phi-4-reasoning model card | [MMLU-Pro](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 74.3% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [AIME 2024](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 75.3% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [AIME 2025](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 62.9% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [Arena-Hard (version/judge unspecified)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 73.3% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [FlenQA (3K-token subset)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 97.7% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [GPQA Diamond](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 65.8% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [HumanEval+](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 92.9% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [IFEval strict (prompt/instruction level unspecified)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 83.4% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [LiveCodeBench (Aug 1, 2024–Feb 1, 2025)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 53.8% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [Omni-MATH](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 76.6% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-reasoning Technical Report | [AIME 2024](https://arxiv.org/html/2504.21318v1) | 74.6% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-reasoning Technical Report | [AIME 2025](https://arxiv.org/html/2504.21318v1) | 63.1% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-reasoning Technical Report | [GPQA Diamond](https://arxiv.org/html/2504.21318v1) | 67.1% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-reasoning Technical Report | [HMMT February 2025](https://arxiv.org/html/2504.21318v1) | 43.8% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-reasoning Technical Report | [IFEval (aggregation unspecified)](https://arxiv.org/html/2504.21318v1) | 83.4% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-reasoning Technical Report | [LiveCodeBench 2024-08 to 2025-01 (version not stated)](https://arxiv.org/html/2504.21318v1) | 53.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (16)</summary>
+
+<pre>
+source                  test                            score  why
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro</a>                        74.3%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2024</a>                       75.3%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">AIME 2025</a>                       62.9%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>  73.3%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset)</a>        97.7%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">GPQA Diamond</a>                    65.8%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+</a>                      92.9%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>  83.4%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">LiveCodeBench (Aug 1, 2024–Fe…</a>  53.8%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Omni-MATH</a>                       76.6%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2504.21318v1">AIME 2024</a>                       74.6%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2504.21318v1">AIME 2025</a>                       63.1%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2504.21318v1">GPQA Diamond</a>                    67.1%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2504.21318v1">HMMT February 2025</a>              43.8%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2504.21318v1">IFEval (aggregation unspecifi…</a>  83.4%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2504.21318v1">LiveCodeBench 2024-08 to 2025…</a>  53.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens · [azure.microsoft.com ↗](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
+api (Microsoft Azure) · $0.22/M blended · $0.125 in / $0.5 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
 
-[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft) · USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-reasoning' (GA; not Phi-4-reasoning-plus), 32K context: input $0.125, output $0.50, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25.
+<sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-reasoning' (GA; not Phi-4-reasoning-plus), 32K context: input $0.125, output $0.50, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/config.json): Configured context for Phi-4-reasoning, not Phi-4-reasoning-plus or base Phi-4. Card advertises 32K; configuration resolves exact tokens.</sub>
 
-[context specification source](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/config.json) · Configured context for Phi-4-reasoning, not Phi-4-reasoning-plus or base Phi-4. Card advertises 32K; configuration resolves exact tokens.
+<pre>
+download          size  score
+4-bit q4_k_m   ~9.32GB   40.0
+8-bit q8_0    ~18.14GB   40.0
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~9.32GB | 40.0 | `ollama run phi4-reasoning:14b` |
-| 8-bit q8\_0 | ~18.14GB | 40.0 | `ollama run phi4-reasoning:14b-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run phi4-reasoning:14b
+# 8-bit q8_0
+ollama run phi4-reasoning:14b-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | AIME 2025 (lighteval, vLLM, reasoning parser) | 0.613 → 0.646 | 105.4% | [source ↗](https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L212) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | GPQA Diamond (lighteval, vLLM) | 0.646 → 0.665 | 102.9% | [source ↗](https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L222) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | MMLU-Pro 0-shot chat (lm-evaluation-harness \`mmlu\_pro\_chat\`, vLLM) | 0.765 → 0.768 | 100.5% | [source ↗](https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L242) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | MATH-500 (lighteval, vLLM) | 0.9 → 0.886 | 98.4% | [source ↗](https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L232) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 W8A8 dynamic (weights sym…  AIME 2025 (lighteval, vLLM, reaso…     0.613 → 0.646  <a href="https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L212">105.4%</a>
+FP8 W8A8 dynamic (weights sym…  GPQA Diamond (lighteval, vLLM)         0.646 → 0.665  <a href="https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L222">102.9%</a>
+FP8 W8A8 dynamic (weights sym…  MMLU-Pro 0-shot chat (lm-evaluati…     0.765 → 0.768  <a href="https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L242">100.5%</a>
+FP8 W8A8 dynamic (weights sym…  MATH-500 (lighteval, vLLM)               0.9 → 0.886   <a href="https://huggingface.co/RedHatAI/Phi-4-reasoning-FP8-dynamic/blob/10256f614f546d20fddd470592e55e59e6a6e2e4/README.md#L232">98.4%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/phi-4-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

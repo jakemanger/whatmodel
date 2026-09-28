@@ -6,34 +6,35 @@
 
 Google · released 2025-10 · proprietary
 
-**score 63.1** ±1.8
-
-#14 of 54 · from 8 benchmark results across 7 sources
+**score 63.1** ±1.8 · #14 of 54 · from 8 benchmark results across 7 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1364.2 | 64.0 | ▇▇▇▇▇▇▇▇▇▇▇ 35% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1398.1 | 65.4 | ▇▇▇▇▇▇ 20% | 2026-09-22 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1077.0 | 63.9 | ▇▇▇▇ 13% | 2026-09-25 |
-| <a name="visual-rapid-camera"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings"> Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) | [Rapidata camera movement (I2V)](https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard) | 917.9 | 58.6 | ▇▇ 7% | 2026-09-25 |
-| <a name="visual-v-reasonbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models"> V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) | [V-ReasonBench (average pass@5)](https://arxiv.org/html/2511.16668v1#S3.T2) | 24.3% | 55.4 | ▇▇ 7% | 2025-11-20 |
-| <a name="visual-vgi"></a><img src="../../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models"> VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) | [VGI-Bench visual reasoning (I2V)](https://arxiv.org/html/2608.19583v3#S3.T2) | 32.0% | 57.9 | ▇▇ 7% | 2026-08-26 |
-| <a name="visual-vwg-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench)"> From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) | [VWG-Bench think-with-video reasoning (overall)](https://arxiv.org/html/2609.11242v1#S4.T2) | 71.0% | 68.3 | ▇ 4% | 2026-09-10 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 56.0% | 68.2 | ▇ 4% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 63.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1364.2    64.0   2026-09-22   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1398.1    65.4   2026-09-22   20% ▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1077.0    63.9   2026-09-25   13% ▇▇
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>   917.9    58.6   2026-09-25    7% ▇
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   24.3%    55.4   2025-11-20    7% ▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   32.0%    57.9   2026-08-26    7% ▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>   71.0%    68.3   2026-09-10    4% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   56.0%    68.2   2026-08-10    4% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 63.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 
-api (Google) · $0.40/sec · [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing)
+api (Google) · $0.40/sec · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
-[price source](https://ai.google.dev/gemini-api/docs/pricing) · USD per generated video second at 720p WITH audio on Gemini Developer API. Only successfully generated videos billed; other resolutions differ. Product: Gemini Developer API. API model: veo-3.1-generate-preview. Settings: resolution=720p, audio=yes, tier=paid. Price basis: per second of successfully generated output. Currency: USD.
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per generated video second at 720p WITH audio on Gemini Developer API. Only successfully generated videos billed; other resolutions differ. Product: Gemini Developer API. API model: veo-3.1-generate-preview. Settings: resolution=720p, audio=yes, tier=paid. Price basis: per second of successfully generated output. Currency: USD.</sub>
 
 no verified local download listed
 

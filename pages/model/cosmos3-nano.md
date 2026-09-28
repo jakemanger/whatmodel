@@ -6,22 +6,23 @@
 
 NVIDIA
 
-**score 48.6** ±6.4
-
-comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.6** ±6.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 44.6% | 46.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 55% | 2026-08-10 |
-| <a name="visual-physics-verified"></a><img src="../../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified"> Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt)) | [Physics-IQ Verified (I2V, best-practice prompts)](https://arxiv.org/html/2606.18943v1#A5.T4) | 29.1% | 51.1 | ▇▇▇▇▇▇▇▇▇ 28% | 2026-06-17 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇ 17% |  |
-|  | **weighted average** |  | **= 48.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.6%    46.9   2026-08-10   55% ▇▇▇▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    51.1   2026-06-17   28% ▇▇▇
+prior                   pull toward the middle                   49.9                17% ▇▇
+                        weighted average                       = 48.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
 ## How to run it
 

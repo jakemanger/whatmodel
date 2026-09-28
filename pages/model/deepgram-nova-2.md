@@ -6,36 +6,40 @@
 
 Deepgram · closed weights
 
-**score 55.5** ±3.2
-
-#17 of 28 · from 3 benchmark results across 1 source
+**score 55.5** ±3.2 · #17 of 28 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-ru-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Russian STT benchmark by domain"> Russian STT benchmark by domain | [Russian STT · rulibrispeech corpus WER](https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md) | 10.2% | 54.7 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-08-07 |
-|  | [Russian STT · podlodka corpus WER (20-clip pilot)](https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md) | 9.3% | 53.8 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-08-07 |
-|  | [Russian STT · fleurs corpus WER](https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md) | 4.0% | 59.1 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-08-07 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 55.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.2%    54.7   2026-08-07   34% ▇▇▇▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    53.8   2026-08-07   33% ▇▇▇▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   4.0%    59.1   2026-08-07   29% ▇▇▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 55.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Russian STT benchmark by domain ([MIT](../../licenses/speech-stt-ru-mit.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Live voice-memo STT pilot | [Voice memos · RU 10-clip pilot median WER](https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv) | 21.4% | too few models have this result to calibrate it yet |
-| Live voice-memo STT pilot | [Voice memos · EN 10-clip pilot median WER](https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv) | 20.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+Live voice-memo STT p…  <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · RU 10-clip pilo…</a>  21.4%  too few models have it yet
+Live voice-memo STT p…  <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · EN 10-clip pilo…</a>  20.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Deepgram) · $0.0058/audio min · [deepgram.com ↗](https://deepgram.com/pricing)
+api (Deepgram) · $0.0058/audio min · [deepgram.com](https://deepgram.com/pricing)
 
-[price source](https://deepgram.com/pricing) · USD per input audio minute: Deepgram states Nova-2 remains available at unchanged rates, 'Nova-2 streaming at $0.35/hour' (÷60). This is the only Nova-2 rate on the page (streaming); a separate pre-recorded Nova-2 rate is not published there. Product: Deepgram STT API. API model: nova-2. Settings: pay-as-you-go, streaming. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: Growth-plan discount (~12.5%), add-ons. Currency: USD. Deepgram official pricing page, observed 2026-09-25.
+<sub>[price source](https://deepgram.com/pricing): USD per input audio minute: Deepgram states Nova-2 remains available at unchanged rates, 'Nova-2 streaming at $0.35/hour' (÷60). This is the only Nova-2 rate on the page (streaming); a separate pre-recorded Nova-2 rate is not published there. Product: Deepgram STT API. API model: nova-2. Settings: pay-as-you-go, streaming. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: Growth-plan discount (~12.5%), add-ons. Currency: USD. Deepgram official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

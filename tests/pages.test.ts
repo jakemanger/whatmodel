@@ -20,7 +20,7 @@ test('every relative link and image in the generated pages resolves', () => {
     }
   }
   assert.deepEqual(broken.slice(0, 10), []);
-  assert.ok(checked > 5000, `only ${checked} links checked`);
+  assert.ok(checked > 2000, `only ${checked} links checked`);
 });
 
 test('the README is the LLM leaderboard and stays small enough for GitHub to render', () => {

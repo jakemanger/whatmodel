@@ -6,9 +6,7 @@
 
 Alibaba · Apache 2.0
 
-**score 52.5** ±3.2
-
-#49 of 87 · from 3 benchmark results across 3 sources
+**score 52.5** ±3.2 · #49 of 87 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,21 +14,24 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1234.7 | 53.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 44% | 2026-09-22 |
-| <a name="visual-edit-compass"></a><img src="../../icons/arxiv.org.png" width="14" alt="Edit-Compass &amp; EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling"> Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) | [Edit-Compass (EN, overall)](https://arxiv.org/html/2605.13062v1#S4.T3) | 53.8% | 49.3 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-05-13 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 1038.0 | 55.7 | ▇▇▇▇▇ 18% | 2026-03-30 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 52.5** |  |  |
+<pre>
+source                  test                          score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1234.7    53.8   2026-09-22   44% ▇▇▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.8%    49.3   2026-05-13   34% ▇▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1038.0    55.7   2026-03-30   18% ▇▇
+prior                   pull toward the middle                 49.9                 4% ▇
+                        weighted average                     = 52.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.030/image · [fal.ai ↗](https://fal.ai/models/fal-ai/qwen-image-edit-2511)
+api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image-edit-2511)
 
-[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2511) · USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2511 (fal describes it as the endpoint for Qwen's Image Editing 2511 model). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2511): USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2511 (fal describes it as the endpoint for Qwen's Image Editing 2511 model). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

@@ -6,38 +6,47 @@
 
 NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
-**score 48.2** ±3.1
-
-#120 of 205 · from 3 benchmark results across 2 sources
+**score 48.2** ±3.1 · #120 of 205 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 52.9% | 53.7 | ▇▇▇▇▇▇▇▇▇▇▇ 35% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 87.7% | 47.4 | ▇▇▇▇▇▇▇ 23% | 2026-09-07 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1351.5 | 43.3 | ▇▇▇▇▇▇▇▇▇▇▇ 37% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 4% |  |
-|  | **weighted average** |  | **= 48.2** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.9%    53.7   2026-09-07   35% ▇▇▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   87.7%    47.4   2026-09-07   23% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1351.5    43.3   2026-09-13   37% ▇▇▇▇
+prior                   pull toward the middle                    50.0                 4% ▇
+                        weighted average                        = 48.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [fireworks.ai ↗](https://fireworks.ai/docs/)
+api (Fireworks AI) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [fireworks.ai](https://fireworks.ai/docs/)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/fireworks-ai/models/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/fireworks-ai/models/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3.5-lightning.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3.5-lightning.toml)
+<pre>
+download                        size  score
+4-bit q4_k_m                ~19.46GB   48.2
+8-bit q8_0                  ~38.42GB   48.2
+4-bit mlx-nvfp4 · mac only  ~19.46GB   48.2
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~19.46GB | 48.2 | `ollama run nemotron-3.5-lightning:30b` |
-| 8-bit q8\_0 | ~38.42GB | 48.2 | `ollama run nemotron-3.5-lightning:30b-a3b-q8_0` |
-| 4-bit mlx-nvfp4 · mac only | ~19.46GB | 48.2 | `ollama run nemotron-3.5-lightning:30b-a3b-mlx` |
+```sh
+# 4-bit q4_k_m
+ollama run nemotron-3.5-lightning:30b
+# 8-bit q8_0
+ollama run nemotron-3.5-lightning:30b-a3b-q8_0
+# 4-bit mlx-nvfp4 · mac only
+ollama run nemotron-3.5-lightning:30b-a3b-mlx
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/nemotron-3-5-lightning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

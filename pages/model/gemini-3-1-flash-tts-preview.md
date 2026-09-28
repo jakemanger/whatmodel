@@ -6,35 +6,36 @@
 
 Google · closed weights
 
-**score 61.8** ±1.9
-
-#2 of 36 · from 9 benchmark results across 4 sources
+**score 61.8** ±1.9 · #2 of 36 · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-zonos2-report-bysa"></a><img src="../../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results)"> ZONOS2 Technical Report (ZTTS1-Eval results) ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) | [ZTTS1-Eval in-the-wild · 10-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 3.51 / 5 | 65.1 | ▇▇▇▇▇▇ 19% | 2026-06-25 |
-|  | [ZTTS1-Eval in-the-wild · 10-language mean WER](https://arxiv.org/html/2606.24320v2) | 2.6% | 58.6 | ▇▇▇▇▇ 18% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER](https://arxiv.org/html/2606.24320v2) | 4.0% | 57.5 | ▇▇▇▇▇ 15% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 3.55 / 5 | 60.9 | ▇▇▇▇ 14% | 2026-06-25 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Acting / Role-Fit (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.97 / 5 | 68.1 | ▇▇▇ 10% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Reliability (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.82 / 5 | 62.8 | ▇▇ 7% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Expressiveness (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.64 / 5 | 65.2 | ▇ 4% | 2026-07-16 |
-| <a name="speech-ztts1-eval-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra)"> ZTTS1-Eval results snapshot (Zyphra) | [ZTTS1-Eval · FLEURS-R English TTSDS2 prosody](https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md) | 87.6% | 55.9 | ▇▇ 6% | 2026-06-22 |
-| <a name="speech-amharic-addis-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="Addis AI Amharic TTS benchmark"> Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Amharic TTS · 87-prompt CER (Chirp 3 judge)](https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json) | 2.9% | 70.5 | ▇▇ 6% | 2026-08-12 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 61.8** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  3.51 / 5    65.1   2026-06-25   19% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.6%    58.6   2026-06-25   18% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      4.0%    57.5   2026-06-25   15% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.55 / 5    60.9   2026-06-25   14% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.97 / 5    68.1   2026-07-16   10% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.82 / 5    62.8   2026-07-16    7% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.64 / 5    65.2   2026-07-16    4% ▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.6%    55.9   2026-06-22    6% ▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>      2.9%    70.5   2026-08-12    6% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 61.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt)) · Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $50.00/M chars · [fal.ai ↗](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts)
+api (fal.ai) · $50.00/M chars · [fal.ai](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts)
 
-[price source](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts) · USD per 1M input characters: fal prices its Gemini 3.1 Flash TTS endpoint (fal-ai/gemini-3.1-flash-tts; input schema: 'Input for Gemini 3.1 Flash TTS preview speech generation') at $0.05 per 1000 characters (x1000; endpoint billing record: billing\_unit 1000 characters, partner API). Google's own Gemini API prices this model per token only, which is not converted. Product: fal text-to-speech endpoint (Google partner API). API model: fal-ai/gemini-3.1-flash-tts (Gemini 3.1 Flash TTS preview). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts): USD per 1M input characters: fal prices its Gemini 3.1 Flash TTS endpoint (fal-ai/gemini-3.1-flash-tts; input schema: 'Input for Gemini 3.1 Flash TTS preview speech generation') at $0.05 per 1000 characters (x1000; endpoint billing record: billing\_unit 1000 characters, partner API). Google's own Gemini API prices this model per token only, which is not converted. Product: fal text-to-speech endpoint (Google partner API). API model: fal-ai/gemini-3.1-flash-tts (Gemini 3.1 Flash TTS preview). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

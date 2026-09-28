@@ -6,9 +6,7 @@
 
 Meituan
 
-**score 45.1** ±4.7
-
-#66 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.1** ±4.7 · #66 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,28 +14,34 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 83.9% | 44.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 91% | 2026-08-25 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 9% |  |
-|  | **weighted average** |  | **= 45.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    44.6   2026-08-25   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 45.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (4)
+<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Meituan LongCat — LongCat-Image technical report | [CVTG-2K word accuracy](https://arxiv.org/html/2512.07584v1) | 86.6% | too few models have this result to calibrate it yet |
-| Meituan LongCat — LongCat-Image technical report | [DPG-Bench](https://arxiv.org/html/2512.07584v1) | 86.8% | too few models have this result to calibrate it yet |
-| Meituan LongCat — LongCat-Image technical report | [GenEval](https://arxiv.org/html/2512.07584v1) | 87.0% | too few models have this result to calibrate it yet |
-| Meituan LongCat — LongCat-Image technical report | [WISE overall (model publisher's run)](https://arxiv.org/html/2512.07584v1) | 65.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source           test                            score  why
+Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">CVTG-2K word accuracy</a>           86.6%  too few models have it yet
+Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">DPG-Bench</a>                       86.8%  too few models have it yet
+Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">GenEval</a>                         87.0%  too few models have it yet
+Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">WISE overall (model publisher…</a>  65.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (fal.ai) · $0.13/image · [fal.ai ↗](https://fal.ai/models/fal-ai/longcat-image)
+api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-image)
 
-[price source](https://fal.ai/models/fal-ai/longcat-image) · USD for one 1-megapixel output: fal bills this endpoint $0.13 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/longcat-image (LongCat Image, 6B). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/longcat-image): USD for one 1-megapixel output: fal bills this endpoint $0.13 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/longcat-image (LongCat Image, 6B). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

@@ -6,43 +6,50 @@
 
 MiniMax · released 2026-06 · 428B params (23B active) · minimax-community
 
-**score 57.5** ±1.9
-
-#67 of 205 · from 9 benchmark results across 3 sources
+**score 57.5** ±1.9 · #67 of 205 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1485.1 | 62.2 | ▇▇▇▇▇▇▇▇ 27% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1441.3 | 59.8 | ▇▇▇▇ 15% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1236.6 | 57.9 | ▇▇ 8% | 2026-09-13 |
-|  | [Arena document (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet) | 1433.0 | 57.0 | ▇▇ 5% | 2026-09-13 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 90.9% | 64.4 | ▇▇▇▇ 12% | 2026-08-10 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 71.1% | 50.8 | ▇▇▇ 11% | 2026-08-10 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 7.0% | 46.2 | ▇▇▇ 10% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 14.0% | 57.0 | ▇ 4% | 2026-08-10 |
-| <a name="mideind-icelandic-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Miðeind Icelandic LLM Leaderboard"> Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) | [Icelandic LLM Leaderboard average (Miðeind, Sept 2026 suite)](https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json) | 31.3% | 52.5 | ▇▇ 6% | 2026-09-07 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 57.5** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1485.1    62.2   2026-09-24   27% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1441.3    59.8   2026-09-13   15% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1236.6    57.9   2026-09-13    8% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1433.0    57.0   2026-09-13    5% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     90.9%    64.4   2026-08-10   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         71.1%    50.8   2026-08-10   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      7.0%    46.2   2026-08-27   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            14.0%    57.0   2026-08-10    4% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   31.3%    52.5   2026-09-07    6% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 57.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-api (Deep Infra) · $0.49/M blended · $0.28 in / $1.1 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/models)
+api (Deep Infra) · $0.49/M blended · $0.28 in / $1.1 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/MiniMaxAI/MiniMax-M3.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/MiniMaxAI/MiniMax-M3.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M3.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M3.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_m   ~257.3GB   57.5
+2-bit ud-q2_k_xl  ~128.9GB   57.5
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_m | ~257.3GB | 57.5 | `llama-server -hf unsloth/MiniMax-M3-GGUF:UD-Q4_K_M` |
-| 2-bit ud-q2\_k\_xl | ~128.9GB | 57.5 | `llama-server -hf unsloth/MiniMax-M3-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit ud-q4_k_m
+llama-server -hf unsloth/MiniMax-M3-GGUF:UD-Q4_K_M
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/MiniMax-M3-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/minimax-m3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,38 +6,45 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 49.9** ±2.2
-
-#115 of 205 · from 4 benchmark results across 3 sources
+**score 49.9** ±2.2 · #115 of 205 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1297.8 | 50.1 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1345.9 | 42.2 | ▇▇▇▇▇▇ 19% | 2026-09-13 |
-| <a name="paper-2601.11868v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials"> Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) | [Terminal-Bench 2.0 with Terminus 2 agent (benchmark authors' runs)](https://arxiv.org/html/2601.11868v1) | 30.0% | 55.7 | ▇▇▇▇▇▇▇▇ 26% | 2026-01-17 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 57.1% | 49.2 | ▇▇▇▇▇ 18% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 49.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1297.8    50.1   2026-09-24   34% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1345.9    42.2   2026-09-13   19% ▇▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   30.0%    55.7   2026-01-17   26% ▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   57.1%    49.2   2026-05-02   18% ▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 49.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-api (Amazon Bedrock) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [docs.aws.amazon.com ↗](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
+api (Amazon Bedrock) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/minimax.minimax-m2.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/minimax.minimax-m2.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~138.5GB   49.9
+2-bit ud-q2_k_xl   ~69.5GB   49.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~138.5GB | 49.9 | `llama-server -hf unsloth/MiniMax-M2-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~69.5GB | 49.9 | `llama-server -hf unsloth/MiniMax-M2-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/MiniMax-M2-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/MiniMax-M2-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/minimax-m2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

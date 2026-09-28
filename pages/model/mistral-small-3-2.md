@@ -6,76 +6,89 @@
 
 Mistral · released 2025-06 · 24B params · apache-2.0
 
-**score 40.4** ±1.9
-
-#150 of 205 · from 11 benchmark results across 7 sources
+**score 40.4** ±1.9 · #150 of 205 · from 11 benchmark results across 7 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 49.1% | 39.8 | ▇▇▇▇ 12% | 2026-08-28 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 30.3% | 39.3 | ▇▇▇ 11% | 2026-08-30 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 1.0% | 29.2 | ▇ 4% | 2026-08-30 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1356.7 | 44.2 | ▇▇▇▇ 14% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1139.7 | 34.6 | ▇▇ 8% | 2026-09-13 |
-| <a name="card-mistralai-mistral-small-4-119b-2603"></a><img src="../../icons/huggingface.co.png" width="14" alt="mistralai/Mistral-Small-4-119B-2603 model card"> mistralai/Mistral-Small-4-119B-2603 model card | [MMMU Pro](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) lab-reported | 49.1% | 41.4 | ▇▇▇ 11% | 2026-09-25 |
-|  | [IFBench (aggregation unspecified)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) lab-reported | 34.0% | 40.9 | ▇▇▇ 11% | 2026-09-25 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1162.3 | 43.5 | ▇▇▇ 11% | 2026-05-10 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 76.5% | 43.2 | ▇▇▇ 8% | 2026-08-11 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 37.1% | 39.0 | ▇ 5% | 2025-12-16 |
-| <a name="galileo-agent-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Galileo Agent Leaderboard (v1 and v2 results)"> Galileo Agent Leaderboard (v1 and v2 results) | [Galileo Agent Leaderboard v2 (action completion)](https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv) | 26.0% | 31.3 | ▇ 4% | 2025-11-18 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 40.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     49.1%    39.8   2026-08-28   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         30.3%    39.3   2026-08-30   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             1.0%    29.2   2026-08-30    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1356.7    44.2   2026-09-13   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1139.7    34.6   2026-09-13    8% ▇
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   49.1%    41.4   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   34.0%    40.9   2026-09-25   11% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1162.3    43.5   2026-05-10   11% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   76.5%    43.2   2026-08-11    8% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   37.1%    39.0   2025-12-16    5% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   26.0%    31.3   2025-11-18    4% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 40.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (13)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [Arena-Hard v2 aggregate](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 43.1% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [ChartQA](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 87.4% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [DocVQA](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 94.9% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [GPQA Diamond](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 46.1% | too few results from this source to calibrate it; another source's number for this test is used |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [GPQA Main](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 44.2% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [HumanEval+ pass@5](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 92.9% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [MATH (subset unspecified)](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 69.4% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [MBPP+ pass@5](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 78.3% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [MMLU](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 80.5% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [MMLU-Pro](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 69.1% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [MMMU (val)](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 62.5% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [SimpleQA](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 12.1% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 model card | [WildBench v2](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md) | 65.3% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (13)</summary>
+
+<pre>
+source                  test                       score  why
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">Arena-Hard v2 aggregate</a>    43.1%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">ChartQA</a>                    87.4%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">DocVQA</a>                     94.9%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">GPQA Diamond</a>               46.1%  another source's result is used
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">GPQA Main</a>                  44.2%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">HumanEval+ pass@5</a>          92.9%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MATH (subset unspecified)</a>  69.4%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MBPP+ pass@5</a>               78.3%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU</a>                       80.5%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMLU-Pro</a>                   69.1%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">MMMU (val)</a>                 62.5%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">SimpleQA</a>                   12.1%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md">WildBench v2</a>               65.3%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.11/M blended · $0.075 in / $0.2 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/mistralai/Mistral-Small-3.2-24B-Instruct-2506)
+api (DeepInfra) · $0.11/M blended · $0.075 in / $0.2 out per 1M tokens · [deepinfra.com](https://deepinfra.com/mistralai/Mistral-Small-3.2-24B-Instruct-2506)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: mistralai/Mistral-Small-3.2-24B-Instruct-2506. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: mistralai/Mistral-Small-3.2-24B-Instruct-2506. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download         size  score
+4-bit q4_k_m  ~14.9GB   40.4
+8-bit q8_0    ~29.3GB   40.4
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~14.9GB | 40.4 | `ollama run mistral-small3.2:24b` |
-| 8-bit q8\_0 | ~29.3GB | 40.4 | `ollama run mistral-small3.2:24b-instruct-2506-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run mistral-small3.2:24b
+# 8-bit q8_0
+ollama run mistral-small3.2:24b-instruct-2506-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| NVFP4 (FP4 weights and activations, tensor-group size 16; SmoothQuant + QuantizationModifier via llm-compressor) | IFEval 0-shot (OpenLLM v2 config) | 0.841 → 0.844 | 100.4% | [source ↗](https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L280) |
-| NVFP4 (FP4 weights and activations, tensor-group size 16; SmoothQuant + QuantizationModifier via llm-compressor) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.782 → 0.768 | 98.1% | [source ↗](https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L255) |
-| NVFP4 (FP4 weights and activations, tensor-group size 16; SmoothQuant + QuantizationModifier via llm-compressor) | MMLU (OpenLLM v1 config, lm-evaluation-harness) | 0.811 → 0.794 | 98.0% | [source ↗](https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L237) |
-| NVFP4 (FP4 weights and activations, tensor-group size 16; SmoothQuant + QuantizationModifier via llm-compressor) | OpenLLM v2 average of 6 tasks (IFEval, BBH, MATH-Hard, GPQA, MuSR, MMLU-Pro; lm-evaluation-harness \`leaderboard\`, chat template, vLLM; values exactly as published, per-task normalisation not stated) | 0.525 → 0.512 | 97.7% | [source ↗](https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L298) |
-| NVFP4 (FP4 weights and activations, tensor-group size 16; SmoothQuant + QuantizationModifier via llm-compressor) | GSM8K (OpenLLM v1 config, lm-evaluation-harness) | 0.896 → 0.871 | 97.2% | [source ↗](https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L225) |
-| NVFP4 (FP4 weights and activations, tensor-group size 16; SmoothQuant + QuantizationModifier via llm-compressor) | MMLU-Pro 5-shot (OpenLLM v2 config) | 0.508 → 0.484 | 95.3% | [source ↗](https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L268) |
+<pre>
+precision                       test                                full → quantized    kept
+NVFP4 (FP4 weights and activa…  IFEval 0-shot (OpenLLM v2 config)      0.841 → 0.844  <a href="https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L280">100.4%</a>
+NVFP4 (FP4 weights and activa…  OpenLLM v1 average of 6 tasks (AR…     0.782 → 0.768   <a href="https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L255">98.1%</a>
+NVFP4 (FP4 weights and activa…  MMLU (OpenLLM v1 config, lm-evalu…     0.811 → 0.794   <a href="https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L237">98.0%</a>
+NVFP4 (FP4 weights and activa…  OpenLLM v2 average of 6 tasks (IF…     0.525 → 0.512   <a href="https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L298">97.7%</a>
+NVFP4 (FP4 weights and activa…  GSM8K (OpenLLM v1 config, lm-eval…     0.896 → 0.871   <a href="https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L225">97.2%</a>
+NVFP4 (FP4 weights and activa…  MMLU-Pro 5-shot (OpenLLM v2 confi…     0.508 → 0.484   <a href="https://huggingface.co/RedHatAI/Mistral-Small-3.2-24B-Instruct-2506-NVFP4/blob/5102662a785ad4f2c47eb54624bf3132ee620a58/README.md#L268">95.3%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/mistral-small-3-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,21 +6,22 @@
 
 Xiaomi MiMo · closed weights
 
-**score 40.0** ±3.8
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.0** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-cn-news-tts-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1"> CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [CN-NewsTTS v0.1 · strict pronunciation accuracy](https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv) | 27.5% | 39.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 40.0** |  |  |
+<pre>
+source                 test                            score  implies  date        weight
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  27.5%    39.4   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   49.9                 6% ▇
+                       weighted average                       = 40.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

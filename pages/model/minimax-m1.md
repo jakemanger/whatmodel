@@ -6,48 +6,50 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 46.0** ±4.8
-
-#129 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.0** ±4.8 · #129 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1363.9 | 45.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 90% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 46.0** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1363.9    45.5   2026-09-13   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                10% ▇
+                        weighted average                = 46.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (14)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| MiniMaxAI/MiniMax-M1-80k model card | [AIME 2025](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 76.9% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [GPQA Diamond](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 70.0% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [MMLU-Pro](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 81.1% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [SWE-bench Verified](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 56.0% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [AIME 2024](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 86.0% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [Humanity's Last Exam](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 8.4% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [LiveCodeBench 2024-08–2025-05 (version unstated)](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 65.0% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [LongBench v2](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 61.5% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [MATH-500](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 96.8% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [MultiChallenge](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 44.7% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [SimpleQA](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 18.5% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [τ-bench Airline (GPT-4.1 user)](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 62.0% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [τ-bench Retail (GPT-4.1 user)](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 63.5% | too few models have this result to calibrate it yet |
-| MiniMaxAI/MiniMax-M1-80k model card | [ZebraLogic](https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md) | 86.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (14)</summary>
+
+<pre>
+source                  test                            score  why
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025</a>                       76.9%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond</a>                    70.0%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro</a>                        81.1%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified</a>              56.0%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024</a>                       86.0%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam</a>             8.4%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LiveCodeBench 2024-08–2025-05…</a>  65.0%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2</a>                    61.5%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500</a>                        96.8%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge</a>                  44.7%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA</a>                        18.5%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Airline (GPT-4.1 user)</a>  62.0%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">τ-bench Retail (GPT-4.1 user)</a>   63.5%  too few models have it yet
+MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic</a>                      86.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Novita AI) · $0.96/M blended · $0.55 in / $2.2 out per 1M tokens · [novita.ai ↗](https://novita.ai/models)
+api (Novita AI) · $0.96/M blended · $0.55 in / $2.2 out per 1M tokens · [novita.ai](https://novita.ai/models)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output. Model endpoint minimaxai/minimax-m1-80k.  Product: Serverless chat completions. API model: minimaxai/minimax-m1-80k. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
-
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint minimaxai/minimax-m1-80k.  Product: Serverless chat completions. API model: minimaxai/minimax-m1-80k. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
 no verified local download listed
 

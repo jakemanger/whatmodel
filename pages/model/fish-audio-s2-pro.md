@@ -6,52 +6,62 @@
 
 Fish Audio · released 2026-03 · 4.56B params · fish-audio-research-license
 
-**score 56.4** ±1.7
-
-#15 of 36 · from 12 benchmark results across 4 sources
+**score 56.4** ±1.7 · #15 of 36 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-zonos2-report-bysa"></a><img src="../../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results)"> ZONOS2 Technical Report (ZTTS1-Eval results) ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) | [ZTTS1-Eval in-the-wild · 10-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 2.71 / 5 | 53.8 | ▇▇▇▇ 14% | 2026-06-25 |
-|  | [ZTTS1-Eval in-the-wild · 10-language mean WER](https://arxiv.org/html/2606.24320v2) | 2.9% | 56.9 | ▇▇▇▇ 14% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER](https://arxiv.org/html/2606.24320v2) | 4.5% | 55.8 | ▇▇▇▇ 12% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 3.21 / 5 | 54.4 | ▇▇▇ 11% | 2026-06-25 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Acoustic Quality (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.34 / 5 | 54.3 | ▇▇▇ 10% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Voice Identity (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.53 / 5 | 53.6 | ▇▇ 7% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Language Code-Switching (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.48 / 5 | 59.1 | ▇▇ 6% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Long-Form Stability (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.50 / 5 | 42.3 | ▇ 1% | 2026-07-16 |
-| <a name="speech-higgs3-sglang-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution)"> Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) | [CV3-Eval multilingual voice clone · 9-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 4.6% | 61.2 | ▇▇▇▇▇ 15% | 2026-06-04 |
-|  | [MiniMax multilingual test set · 23-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 5.1% | 64.8 | ▇ 4% | 2026-06-04 |
-|  | [Seed-TTS-Eval · test-en/test-zh macro mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 1.3% | 52.8 | ▇ 1% | 2026-06-04 |
-| <a name="speech-ztts1-eval-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra)"> ZTTS1-Eval results snapshot (Zyphra) | [ZTTS1-Eval · FLEURS-R English TTSDS2 prosody](https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md) | 87.5% | 55.7 | ▇ 5% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 56.4** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.71 / 5    53.8   2026-06-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.9%    56.9   2026-06-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      4.5%    55.8   2026-06-25   12% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.21 / 5    54.4   2026-06-25   11% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.34 / 5    54.3   2026-07-16   10% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.53 / 5    53.6   2026-07-16    7% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.48 / 5    59.1   2026-07-16    6% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.50 / 5    42.3   2026-07-16    1% ▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.6%    61.2   2026-06-04   15% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      5.1%    64.8   2026-06-04    4% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.3%    52.8   2026-06-04    1% ▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    55.7   2026-06-22    5% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 56.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (4)
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Fish Audio S2 Technical Report | [Seed-TTS test-en · Whisper large-v3 WER](https://arxiv.org/html/2603.08823v2) | 1.0% | too few models have this result to calibrate it yet |
-| Fish Audio S2 Technical Report | [Seed-TTS test-zh · Paraformer CER](https://arxiv.org/html/2603.08823v2) | 0.5% | too few models have this result to calibrate it yet |
-| Fish Audio S2 Technical Report | [Long-TTS-Eval · Fish truncated English WER](https://arxiv.org/html/2603.08823v2) | 4.4% | too few models have this result to calibrate it yet |
-| Fish Audio S2 Technical Report | [Long-TTS-Eval · Fish truncated Chinese CER](https://arxiv.org/html/2603.08823v2) | 5.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source                  test                            score  why
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.0%  too few models have it yet
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%  too few models have it yet
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncate…</a>   4.4%  too few models have it yet
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncate…</a>   5.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Fish Audio) · $15.00/M chars · [docs.fish.audio ↗](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
+api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
-[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits) · Fish Audio lists s2-pro at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s2-pro. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.
+<sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): Fish Audio lists s2-pro at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s2-pro. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~11.44GB | 56.4 | `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text 'Hello world' && python fish_speech/models/dac/inference.py -i codes_0.npy` |
+<pre>
+version                needs  score
+bf16 · nvidia only  ~11.44GB   56.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text 'Hello world' && python fish_speech/models/dac/inference.py -i codes_0.npy
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/fish-audio-s2-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

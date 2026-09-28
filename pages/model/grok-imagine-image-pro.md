@@ -6,9 +6,7 @@
 
 SpaceXAI (xAI) · closed weights
 
-**score 60.2** ±2.4
-
-#21 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 60.2** ±2.4 · #21 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1162.2 | 60.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 96% | 2026-09-24 |
-| <a name="visual-tecci"></a><img src="../../icons/arxiv.org.png" width="14" alt="TECCI: Tricky Edits of Collected and Curated Images"> TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt)) | [TECCI human overall success rate (IRCS+GGIS)](https://arxiv.org/html/2606.01213v1#S4.T2) | 20.0% | 75.7 | ▇ 2% | 2026-05-31 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 60.2** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1162.2    60.1   2026-09-24   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>   20.0%    75.7   2026-05-31    2% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 60.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
 
 ## How to run it
 
-api (xAI) · $0.050/image · [docs.x.ai ↗](https://docs.x.ai/developers/models/grok-imagine-image-quality.md)
+api (xAI) · $0.050/image · [docs.x.ai](https://docs.x.ai/developers/models/grok-imagine-image-quality.md)
 
-[price source](https://docs.x.ai/developers/models.md) · USD per generated image on the xAI API (output $0.05 per image). Product: xAI API image generation. API model: grok-imagine-image-quality; xAI's model page lists grok-imagine-image-pro as an alias of this model (with grok-imagine-image-quality-20260403 and -latest). Settings: one image. Price basis: published per-image list rate. xAI's pages show no end date; LiteLLM @c19ce71 records a 2026-11-02 deprecation date for this model (not confirmed on an xAI page). Currency: USD. xAI official models and pricing page, observed 2026-09-26.
+<sub>[price source](https://docs.x.ai/developers/models.md): USD per generated image on the xAI API (output $0.05 per image). Product: xAI API image generation. API model: grok-imagine-image-quality; xAI's model page lists grok-imagine-image-pro as an alias of this model (with grok-imagine-image-quality-20260403 and -latest). Settings: one image. Price basis: published per-image list rate. xAI's pages show no end date; LiteLLM @c19ce71 records a 2026-11-02 deprecation date for this model (not confirmed on an xAI page). Currency: USD. xAI official models and pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

@@ -6,47 +6,64 @@
 
 Alibaba · released 2025-07 · 5B params · apache-2.0
 
-**score 47.2** ±7.5
-
-#33 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.2** ±7.5 · #33 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 44.4% | 46.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 77% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇ 23% |  |
-|  | **weighted average** |  | **= 47.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.4%    46.5   2026-08-10   77% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                23% ▇▇▇
+                        weighted average                       = 47.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| MobileWan: Closing the Quality Gap for Mobile Video Diffusion | [VBench T2V total (MobileWan 480p ablation)](https://arxiv.org/html/2607.06173v1#A1.T10) | 81.3% | too few models have this result to calibrate it yet |
-| Target-Bench: Can Video World Models Achieve Mapless Path Planning with Semantic Targets? | [Target-Bench v2 (VGGT planning score, I2V)](https://arxiv.org/html/2511.17792v2#S4.T3) | 8.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+MobileWan: Closing th…  <a href="https://arxiv.org/html/2607.06173v1#A1.T10">VBench T2V total (MobileWan 4…</a>  81.3%  too few models have it yet
+Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>   8.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api  · price unknown · [fal.ai ↗](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video)
+api  · price unknown · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video)
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~12.5GB | 47.2 | `python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage"` |
-| q8 · mac only | ~6.5GB | 47.2 | `rapid-mlx serve wan2.2-ti2v-5b-q8` |
-| bf16 · mac only | ~12.5GB | 47.2 | `rapid-mlx serve wan2.2-ti2v-5b-bf16` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~12.5GB   47.2
+q8 · mac only        ~6.5GB   47.2
+bf16 · mac only     ~12.5GB   47.2
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --prompt "Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage"
+# q8 · mac only
+rapid-mlx serve wan2.2-ti2v-5b-q8
+# bf16 · mac only
+rapid-mlx serve wan2.2-ti2v-5b-bf16
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA 4090 | bf16 (--convert\_model\_dtype; shared config) | 534.7 s/video | Wan reference implementation · TI2V-5B T2V; 720P; 1 GPU; --offload\_model True; no prompt extension; --convert\_model\_dtype; --t5\_cpu; mean after warmup · PNG time column manually visually verified. Combined GPU labels preserved; no claim that the run was specifically the H100 rather than H800. CPU model offload is explicit in settings; not misclassified as no offload. | [source ↗](https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png) |
+<pre>
+hardware     precision                 speed  engine and settings
+NVIDIA 4090  bf16 (--convert…  <a href="https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/assets/comp_effic.png">534.7 s/video</a>  Wan reference implementation · TI…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/wan-2-2-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

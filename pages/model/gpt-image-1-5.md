@@ -6,9 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 68.9** ±1.7
-
-#13 of 87 · from 8 benchmark results across 7 sources
+**score 68.9** ±1.7 · #13 of 87 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,26 +14,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1238.5 | 69.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 48% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1369.8 | 71.6 | ▇▇▇▇ 12% | 2026-09-22 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 81.5% | 69.6 | ▇▇▇▇▇▇ 20% | 2026-05-14 |
-| <a name="visual-gebench"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEBench: Benchmarking Image Generation Models as GUI Environments"> GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) | [GEBench GUI state generation (English GE-Score)](https://arxiv.org/html/2602.09007v2#S3.T1) | 63.2% | 70.7 | ▇▇ 5% | 2026-02-10 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 1071.0 | 61.1 | ▇▇ 5% | 2026-03-30 |
-| <a name="visual-fepbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench)"> Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench) ([CC0-1.0](../../licenses/visual-fepbench.txt)) | [FEPBench instruction faithfulness](https://arxiv.org/html/2606.05949v2#S4.T2) | 59.8% | 71.2 | ▇ 4% | 2026-06-05 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 59.7% | 68.0 | ▇ 3% | 2026-05-27 |
-| <a name="visual-tecci"></a><img src="../../icons/arxiv.org.png" width="14" alt="TECCI: Tricky Edits of Collected and Curated Images"> TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt)) | [TECCI human overall success rate (IRCS+GGIS)](https://arxiv.org/html/2606.01213v1#S4.T2) | 5.7% | 34.6 | ▇ 1% | 2026-05-31 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 68.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1238.5    69.5   2026-09-24   48% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1369.8    71.6   2026-09-22   12% ▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   81.5%    69.6   2026-05-14   20% ▇▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   63.2%    70.7   2026-02-10    5% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1071.0    61.1   2026-03-30    5% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   59.8%    71.2   2026-06-05    4% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   59.7%    68.0   2026-05-27    3% ▇
+<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>    5.7%    34.6   2026-05-31    1% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 68.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $0.034/image · [developers.openai.com ↗](https://developers.openai.com/api/docs/models/gpt-image-1.5)
+api (OpenAI) · $0.034/image · [developers.openai.com](https://developers.openai.com/api/docs/models/gpt-image-1.5)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD for one generated 1024×1024 medium-quality image. Output-only published price; input text/image token charges are additional. Scheduled deprecation 2026-12-01. Product: Image generation API. API model: gpt-image-1.5. Settings: quality=medium, width=1024, height=1024, n=1. Price basis: generated image output component. Additional/excluded charges: input text/image tokens. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD for one generated 1024×1024 medium-quality image. Output-only published price; input text/image token charges are additional. Scheduled deprecation 2026-12-01. Product: Image generation API. API model: gpt-image-1.5. Settings: quality=medium, width=1024, height=1024, n=1. Price basis: generated image output component. Additional/excluded charges: input text/image tokens. Currency: USD.</sub>
 
 no verified local download listed
 

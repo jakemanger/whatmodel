@@ -6,13 +6,16 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| Thunder-KoNUBench symbol 0-shot | 26.5% | [Thunder-KoNUBench: A Corpus-Aligned Benchmark for Korean Negation Understanding](https://aclanthology.org/2026.findings-acl.324.pdf) · independent · Table16 (publication p6511, PDFpage21), zero-shot symbol accuracy using LM Evaluation Harness, BF16 (AppendixF). Scores are original checkpoint runs before benchmark fine-tuning; thinking toggle/chat-template details not specified for logit-based evaluation. Only zero-shot symbol condition selected. Cloze figures conflict between Table16 and Table23 and are excluded; selected symbol values agree after rounding. Review date is not the evaluation-run date. |
+<pre>
+test                             result  reported by  source
+Thunder-KoNUBench symbol 0-shot   26.5%  independent  <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench: A Corpus-A…</a>
+</pre>
+
+<sub>Licences: Thunder-KoNUBench: A Corpus-Aligned Benchmark for Korean Negation Understanding ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B/blob/3abf2810673c7c0778df64a73c2d52eab32d91c4/README.md) · LG AI Research official model card: EXAONE 4.0 1.2B context length 65,536 tokens. Observed 2026-09-25.
+<sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B/blob/3abf2810673c7c0778df64a73c2d52eab32d91c4/README.md): LG AI Research official model card: EXAONE 4.0 1.2B context length 65,536 tokens. Observed 2026-09-25.</sub>
 
 ```sh
 llama-server -hf LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF:Q4_K_M

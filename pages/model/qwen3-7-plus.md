@@ -6,54 +6,56 @@
 
 Alibaba · released 2026-06 · closed weights
 
-**score 59.2** ±1.2
-
-#54 of 205 · from 13 benchmark results across 3 sources
+**score 59.2** ±1.2 · #54 of 205 · from 13 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 34.4% | 57.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-08-29 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 87.9% | 61.4 | ▇▇ 5% | 2026-08-07 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 93.3% | 62.4 | ▇ 5% | 2026-08-07 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 17.0% | 61.8 | ▇ 4% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 24.0% | 64.9 | ▇ 1% | 2026-08-07 |
-| <a name="card-qwen--qwen3.8-27b"></a><img src="../../icons/huggingface.co.png" width="14" alt="Qwen/Qwen3.8-27B model card"> Qwen/Qwen3.8-27B model card | [WebArena-Verified](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) lab-reported | 55.3% | 59.2 | ▇▇ 6% | 2026-08-14 |
-|  | [OSWorld-Verified](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) lab-reported | 73.3% | 58.8 | ▇▇ 6% | 2026-08-14 |
-|  | [Terminal-Bench 2.1](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) lab-reported | 64.0% | 57.9 | ▇▇ 5% | 2026-08-14 |
-|  | [IFBench (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) lab-reported | 79.1% | 62.3 | ▇▇ 5% | 2026-08-14 |
-|  | [OmniDocBench 1.5 overall (higher is better)](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) lab-reported | 91.4% | 61.2 | ▇ 5% | 2026-08-14 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1455.6 | 62.4 | ▇▇ 6% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1262.7 | 64.1 | ▇ 3% | 2026-09-13 |
-|  | [Arena document (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet) | 1452.5 | 62.4 | ▇ 2% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 59.2** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        34.4%    57.1   2026-08-29   46% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     87.9%    61.4   2026-08-07    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         93.3%    62.4   2026-08-07    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     17.0%    61.8   2026-08-28    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            24.0%    64.9   2026-08-07    1% ▇
+<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>          55.3%    59.2   2026-08-14    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>           73.3%    58.8   2026-08-14    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>         64.0%    57.9   2026-08-14    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">IFBench (aggregation unspecif…</a>   79.1%    62.3   2026-08-14    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OmniDocBench 1.5 overall (hig…</a>   91.4%    61.2   2026-08-14    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1455.6    62.4   2026-09-13    6% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1262.7    64.1   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1452.5    62.4   2026-09-13    2% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 59.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (8)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen/Qwen3.8-27B model card ([apache-2.0](../../licenses/Qwen--Qwen3.8-27B.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3.8-27B model card | [AndroidWorld](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 81.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.8-27B model card | [ERQA](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 69.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.8-27B model card | [GPQA Diamond](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 90.3% | too few results from this source to calibrate it; another source's number for this test is used |
-| Qwen/Qwen3.8-27B model card | [Humanity's Last Exam](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 34.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.8-27B model card | [LiveCodeBench v6 (window unspecified)](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 89.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.8-27B model card | [NL2Repo](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 41.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.8-27B model card | [RealWorldQA](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 86.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.8-27B model card | [SWE-bench Pro public set, Qwen-refined](https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md) | 57.6% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (8)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">AndroidWorld</a>                    81.0%  too few models have it yet
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">ERQA</a>                            69.8%  too few models have it yet
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">GPQA Diamond</a>                    90.3%  another source's result is used
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Humanity's Last Exam</a>            34.7%  too few models have it yet
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">LiveCodeBench v6 (window unsp…</a>  89.6%  too few models have it yet
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo</a>                         41.1%  too few models have it yet
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">RealWorldQA</a>                     86.9%  too few models have it yet
+Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>  57.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.70/M blended · $0.4 in / $1.6 out per 1M tokens · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/models)
+api (Alibaba Cloud Model Studio) · $0.70/M blended · $0.4 in / $1.6 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/models)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per 1M tokens, Singapore (International), qwen3.7-plus, ≤256K input tier list price (a limited-time 20% discount is also advertised and not applied); 256K–1M input tier priced higher. Observed 2026-09-25.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.7-plus.toml)
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), qwen3.7-plus, ≤256K input tier list price (a limited-time 20% discount is also advertised and not applied); 256K–1M input tier priced higher. Observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.7-plus.toml)</sub>
 
 no verified local download listed
 

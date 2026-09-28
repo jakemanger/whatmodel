@@ -6,27 +6,28 @@
 
 Gradium · released 2025-12 · proprietary
 
-**score 44.9** ±3.0
-
-#29 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.9** ±3.0 · #29 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1089.8 | 44.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 96% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 44.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1089.8    44.7   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 4% ▇
+                        weighted average                        = 44.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
-api (Gradium) · $38.00/M chars · [docs.gradium.ai ↗](https://docs.gradium.ai/api-reference/endpoint/tts-post)
+api (Gradium) · $38.00/M chars · [docs.gradium.ai](https://docs.gradium.ai/api-reference/endpoint/tts-post)
 
-[price source](https://gradium.ai/pricing) · USD per 1M characters: Gradium states Text-to-Speech uses 1 credit / character and sells additional credits at $3.8 per 100k on the L plan ($1,615/month; lowest published self-serve rate), $4.0 M, $5.0 S, $6.9 XS (x10). Gradium's TTS API has a single default model (model\_name 'default'); credits are not model-specific. Product: Gradium text-to-speech API. API model: default Gradium TTS (Vapi id gradiumtts). Settings: L-plan usage-based rate. Price basis: vendor USD-per-credit rate x vendor-stated 1 credit per character. Exclusions: monthly plan fee, included credits, voice cloning. Currency: USD. Gradium official pricing page, observed 2026-09-25.
+<sub>[price source](https://gradium.ai/pricing): USD per 1M characters: Gradium states Text-to-Speech uses 1 credit / character and sells additional credits at $3.8 per 100k on the L plan ($1,615/month; lowest published self-serve rate), $4.0 M, $5.0 S, $6.9 XS (x10). Gradium's TTS API has a single default model (model\_name 'default'); credits are not model-specific. Product: Gradium text-to-speech API. API model: default Gradium TTS (Vapi id gradiumtts). Settings: L-plan usage-based rate. Price basis: vendor USD-per-credit rate x vendor-stated 1 credit per character. Exclusions: monthly plan fee, included credits, voice cloning. Currency: USD. Gradium official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

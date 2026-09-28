@@ -6,69 +6,82 @@
 
 Meta · released 2026-08 · 29.8B params · apache-2.0
 
-**score 56.0** ±2.7
-
-#77 of 205 · from 3 benchmark results across 2 sources
+**score 56.0** ±2.7 · #77 of 205 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1359.6 | 54.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 52% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1427.2 | 57.2 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-09-13 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 88.3% | 61.2 | ▇▇▇▇▇ 17% | 2026-08-11 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 56.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1359.6    54.1   2026-09-24   52% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1427.2    57.2   2026-09-13   29% ▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   88.3%    61.2   2026-08-11   17% ▇▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 56.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (17)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [AIME 2026](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 94.7% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [CharXiv (reasoning questions)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 78.8% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [DeepSearchQA](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 74.6% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [Gaia2](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 43.3% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [IFBench (aggregation unspecified)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 77.0% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [MCP-Atlas (public set)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 75.5% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [MMMU Pro](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 74.0% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [OmniDocBench 1.5 overall (higher is better)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 75.8% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [OSWorld-Verified](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 65.9% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [SciCode (level unspecified)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 43.6% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [ScreenSpot-Pro](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 75.4% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [SkillsBench (with skills)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 44.3% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [SWE-bench Pro (split unspecified)](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 51.2% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [SWE-bench Verified](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 76.0% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [τ³-bench Banking](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 23.5% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [Terminal-Bench 2.1](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 51.7% | too few models have this result to calibrate it yet |
-| meta-models/Muse-Glimmer-30B model card (local speed table) | [WildClawBench](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md) | 47.6% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (17)</summary>
+
+<pre>
+source                  test                            score  why
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">AIME 2026</a>                       94.7%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">CharXiv (reasoning questions)</a>   78.8%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">DeepSearchQA</a>                    74.6%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">Gaia2</a>                           43.3%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">IFBench (aggregation unspecif…</a>  77.0%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">MCP-Atlas (public set)</a>          75.5%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">MMMU Pro</a>                        74.0%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OmniDocBench 1.5 overall (hig…</a>  75.8%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">OSWorld-Verified</a>                65.9%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SciCode (level unspecified)</a>     43.6%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">ScreenSpot-Pro</a>                  75.4%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SkillsBench (with skills)</a>       44.3%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Pro (split unspecif…</a>  51.2%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">SWE-bench Verified</a>              76.0%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">τ³-bench Banking</a>                23.5%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">Terminal-Bench 2.1</a>              51.7%  too few models have it yet
+meta-models/Muse-Glim…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md">WildClawBench</a>                   47.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [fireworks.ai ↗](https://fireworks.ai/docs/)
+api (Fireworks AI) · $0.64/M blended · $0.35 in / $1.5 out per 1M tokens · [fireworks.ai](https://fireworks.ai/docs/)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/fireworks-ai/models/accounts/fireworks/models/muse-glimmer-30b.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/fireworks-ai/models/accounts/fireworks/models/muse-glimmer-30b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/muse-glimmer-30b.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/muse-glimmer-30b.toml)
+<pre>
+download          size  score
+4-bit q4_k_m  ~18.38GB   56.0
+8-bit q8_0    ~36.26GB   56.0
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~18.38GB | 56.0 | `ollama run muse-glimmer:30b` |
-| 8-bit q8\_0 | ~36.26GB | 56.0 | `ollama run muse-glimmer:30b-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run muse-glimmer:30b
+# 8-bit q8_0
+ollama run muse-glimmer:30b-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA GeForce RTX 5090 (host CPU/RAM not stated) | K-Quant-17GB (Meta ~4-bit K-quant build of the language model; exact file/format not identified) | 74.9 tok/s | llama.cpp (version not stated) · batch size 1; greedy decoding; no speculative decoding; prompt set, prompt/output lengths and context depth not stated · Published single-stream decode rate without speculation. Engine versions and whether the value is a mean over the prompt set are not stated. Card: "M4/M5 measurements were done using ExecuTorch, and RTX using llama.cpp." | [source ↗](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md#L80) |
-| Apple M4 Max (MacBook; GPU core count and unified memory not specified) | K-Quant-17GB (Meta ~4-bit K-quant build of the language model; exact file/format not identified) | 23.7 tok/s | ExecuTorch (version not stated) · batch size 1; greedy decoding; no speculative decoding; prompt set, prompt/output lengths and context depth not stated · Published single-stream decode rate without speculation. Engine versions and whether the value is a mean over the prompt set are not stated. Card: "M4/M5 measurements were done using ExecuTorch, and RTX using llama.cpp." | [source ↗](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md#L81) |
-| Apple M5 Max (MacBook; GPU core count and unified memory not specified) | K-Quant-17GB (Meta ~4-bit K-quant build of the language model; exact file/format not identified) | 26.6 tok/s | ExecuTorch (version not stated) · batch size 1; greedy decoding; no speculative decoding; prompt set, prompt/output lengths and context depth not stated · Published single-stream decode rate without speculation. Engine versions and whether the value is a mean over the prompt set are not stated. Card: "M4/M5 measurements were done using ExecuTorch, and RTX using llama.cpp." | [source ↗](https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md#L82) |
+<pre>
+hardware                      precision              speed  engine and settings
+NVIDIA GeForce RTX 5090       K-Quant-17GB (M…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md#L80">74.9 tok/s</a>  llama.cpp (version not stated) · …
+Apple M4 Max (MacBook; GPU …  K-Quant-17GB (M…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md#L81">23.7 tok/s</a>  ExecuTorch (version not stated) ·…
+Apple M5 Max (MacBook; GPU …  K-Quant-17GB (M…  <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/README.md#L82">26.6 tok/s</a>  ExecuTorch (version not stated) ·…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/muse-glimmer-30b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

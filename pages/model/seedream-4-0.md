@@ -6,9 +6,7 @@
 
 ByteDance Seed · released 2025-09 · proprietary
 
-**score 56.7** ±1.7
-
-#32 of 87 · from 6 benchmark results across 5 sources
+**score 56.7** ±1.7 · #32 of 87 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,24 +14,27 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1140.0 | 57.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 51% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1270.5 | 58.6 | ▇▇▇▇ 13% | 2026-09-22 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 53.2% | 55.0 | ▇▇▇▇▇▇ 21% | 2026-05-14 |
-| <a name="visual-gebench"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEBench: Benchmarking Image Generation Models as GUI Environments"> GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) | [GEBench GUI state generation (English GE-Score)](https://arxiv.org/html/2602.09007v2#S3.T1) | 46.5% | 54.7 | ▇▇ 6% | 2026-02-10 |
-| <a name="visual-unicbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits"> UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) | [UnicBench (EN, overall)](https://arxiv.org/html/2512.02790v1#S6.T4) | 80.4% | 53.3 | ▇ 5% | 2025-12-01 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 56.2% | 61.9 | ▇ 3% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 56.7** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1140.0    57.4   2026-09-24   51% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1270.5    58.6   2026-09-22   13% ▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   53.2%    55.0   2026-05-14   21% ▇▇▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   46.5%    54.7   2026-02-10    6% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          80.4%    53.3   2025-12-01    5% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   56.2%    61.9   2026-05-27    3% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 56.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (DeepInfra) · $0.040/image · [deepinfra.com ↗](https://deepinfra.com/ByteDance/Seedream-4)
+api (DeepInfra) · $0.040/image · [deepinfra.com](https://deepinfra.com/ByteDance/Seedream-4)
 
-[price source](https://deepinfra.com/ByteDance/Seedream-4) · USD per generated image on DeepInfra; the page lists one flat per-image rate (default size 2K; 1K/4K and explicit sizes accepted). Product: DeepInfra text-to-image. API model: ByteDance/Seedream-4. Settings: n=1, text-to-image. Price basis: published list rate. Currency: USD. Not the BytePlus ModelArk direct tariff. DeepInfra official model page, observed 2026-09-25.
+<sub>[price source](https://deepinfra.com/ByteDance/Seedream-4): USD per generated image on DeepInfra; the page lists one flat per-image rate (default size 2K; 1K/4K and explicit sizes accepted). Product: DeepInfra text-to-image. API model: ByteDance/Seedream-4. Settings: n=1, text-to-image. Price basis: published list rate. Currency: USD. Not the BytePlus ModelArk direct tariff. DeepInfra official model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

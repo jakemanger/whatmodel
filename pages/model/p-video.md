@@ -6,29 +6,30 @@
 
 Pruna · closed weights
 
-**score 45.8** ±2.4
-
-#38 of 54 · from 3 benchmark results across 2 sources
+**score 45.8** ±2.4 · #38 of 54 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1207.3 | 45.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 59% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1243.6 | 45.8 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-09-22 |
-| <a name="visual-physics-verified"></a><img src="../../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified"> Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt)) | [Physics-IQ Verified (I2V, best-practice prompts)](https://arxiv.org/html/2606.18943v1#A5.T4) | 25.3% | 44.6 | ▇ 4% | 2026-06-17 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 45.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1207.3    45.7   2026-09-22   59% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1243.6    45.8   2026-09-22   34% ▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>   25.3%    44.6   2026-06-17    4% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 45.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.020/sec · [replicate.com ↗](https://replicate.com/prunaai/p-video)
+api (Replicate) · $0.020/sec · [replicate.com](https://replicate.com/prunaai/p-video)
 
-[price source](https://replicate.com/prunaai/p-video) · USD per second of output video, 720p standard (draft mode off). Product: Replicate model prunaai/p-video (Pruna's official model on Replicate). Price basis: Replicate per-output-second tariff (not hardware time). 720p draft $0.005/s; 1080p $0.04/s standard, $0.01/s draft. The page notes paid pricing resumes after an extended free launch period; the listed paid rate is recorded. Currency: USD. Replicate model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/prunaai/p-video): USD per second of output video, 720p standard (draft mode off). Product: Replicate model prunaai/p-video (Pruna's official model on Replicate). Price basis: Replicate per-output-second tariff (not hardware time). 720p draft $0.005/s; 1080p $0.04/s standard, $0.01/s draft. The page notes paid pricing resumes after an extended free launch period; the listed paid rate is recorded. Currency: USD. Replicate model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

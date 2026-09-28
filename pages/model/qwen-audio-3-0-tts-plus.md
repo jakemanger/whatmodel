@@ -6,37 +6,41 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 58.4** ±2.5
-
-#8 of 36 · from 4 benchmark results across 1 source
+**score 58.4** ±2.5 · #8 of 36 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-qwen-audio3-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report"> Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) | [CV3-Eval multilingual voice clone · 9-language mean error](https://arxiv.org/html/2607.23938v1) lab-reported | 4.7% | 58.8 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-07-27 |
-|  | [CV3-Eval hard-en · WER](https://arxiv.org/html/2607.23938v1) lab-reported | 6.7% | 57.2 | ▇▇▇▇▇▇▇▇▇ 28% | 2026-07-27 |
-|  | [CV3-Eval protocol, 7 added languages · mean WER (Qwen-Audio 3.0 extension)](https://arxiv.org/html/2607.23938v1) lab-reported | 3.1% | 59.6 | ▇▇▇▇▇▇ 19% | 2026-07-27 |
-|  | [CV3-Eval hard-zh · CER](https://arxiv.org/html/2607.23938v1) lab-reported | 7.4% | 59.5 | ▇▇▇▇▇ 17% | 2026-07-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 58.4** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.7%    58.8   2026-07-27   33% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>     6.7%    57.2   2026-07-27   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   3.1%    59.6   2026-07-27   19% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>     7.4%    59.5   2026-07-27   17% ▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 58.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen-Audio-3.0-TTS technical report | [Seed-TTS test-zh · Paraformer CER](https://arxiv.org/html/2607.23938v1) | 0.8% | too few models have this result to calibrate it yet |
-| Qwen-Audio-3.0-TTS technical report | [Seed-TTS test-en · Whisper large-v3 WER](https://arxiv.org/html/2607.23938v1) | 1.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-zh · Paraformer…</a>   0.8%  too few models have it yet
+Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">Seed-TTS test-en · Whisper la…</a>   1.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $20.00/M chars · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $20.00/M chars · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per 1M characters: Model Studio lists qwen-audio-3.0-tts-plus at $0.2 per 10,000 input characters, International (Singapore) deployment; output not billed (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: qwen-audio-3.0-tts-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; Mainland China deployment lists $0.19253 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M characters: Model Studio lists qwen-audio-3.0-tts-plus at $0.2 per 10,000 input characters, International (Singapore) deployment; output not billed (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: qwen-audio-3.0-tts-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; Mainland China deployment lists $0.19253 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

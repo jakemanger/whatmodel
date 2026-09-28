@@ -6,29 +6,30 @@
 
 IndexTeam (bilibili)
 
-**score 23.8** ±2.5
-
-comparison only: no current run option verified · from 9 benchmark results across 4 sources
+**score 23.8** ±2.5 · comparison only: no current run option verified · from 9 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-higgs3-sglang-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution)"> Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) | [CV3-Eval multilingual voice clone · 9-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 129.3% | 20.9 | ▇▇▇▇▇▇▇▇▇▇ 35% | 2026-06-04 |
-|  | [MiniMax multilingual test set · 23-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 112.9% | 25.3 | ▇▇▇ 9% | 2026-06-04 |
-|  | [Seed-TTS-Eval · test-en/test-zh macro mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 1.6% | 43.9 | ▇ 2% | 2026-06-04 |
-| <a name="speech-sap-voicerecon-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="An Evaluation Framework for TTS Voice Reconstruction (SAP dysarthric speakers; arXiv:2606.21343v1)"> An Evaluation Framework for TTS Voice Reconstruction (SAP dysarthric speakers; arXiv:2606.21343v1) ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) | [SAP voice reconstruction · human BWS reconstruction preference](https://arxiv.org/html/2606.21343v1) | 1167.3 | 26.7 | ▇▇▇▇▇▇▇ 25% | 2026-06-19 |
-|  | [SAP voice reconstruction · WER of reconstructed speech (Whisper turbo)](https://arxiv.org/html/2606.21343v1) | 9.9% | 18.1 | ▇▇▇▇ 14% | 2026-06-19 |
-|  | [SAP voice reconstruction · TTSDS dual-reference distributional score](https://arxiv.org/html/2606.21343v1) | 86.1% | 13.2 | ▇▇ 6% | 2026-06-19 |
-| <a name="speech-codecmos-accent-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1)"> CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1) ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) | [CodecMOS-Accent VCTK voice clone · human naturalness MOS (S-NAT)](https://arxiv.org/html/2603.14328v1) | 3.98 / 5 | 20.2 | ▇ 4% | 2026-03-15 |
-|  | [CodecMOS-Accent VCTK voice clone · human speaker-similarity MOS (S-SPK-SIM)](https://arxiv.org/html/2603.14328v1) | 4.53 / 5 | 51.8 | ▇ 2% | 2026-03-15 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Long-Form Stability (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.52 / 5 | 43.8 | ▇ 1% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 23.8** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>    129.3%    20.9   2026-06-04   35% ▇▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>    112.9%    25.3   2026-06-04    9% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.6%    43.9   2026-06-04    2% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>    1167.3    26.7   2026-06-19   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>      9.9%    18.1   2026-06-19   14% ▇▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     86.1%    13.2   2026-06-19    6% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.98 / 5    20.2   2026-03-15    4% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.53 / 5    51.8   2026-03-15    2% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.52 / 5    43.8   2026-07-16    1% ▇
+prior                   pull toward the middle                      49.9                 3% ▇
+                        weighted average                          = 23.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 

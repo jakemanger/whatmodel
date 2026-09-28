@@ -6,48 +6,47 @@
 
 OpenAI · released 2025-11 · closed weights
 
-**score 60.0** ±1.1
-
-#51 of 205 · from 20 benchmark results across 8 sources
+**score 60.0** ±1.1 · #51 of 205 · from 20 benchmark results across 8 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [SWE-bench Verified](https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv) | 68.0% | 57.5 | ▇▇▇ 9% | 2026-02-18 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 87.6% | 61.1 | ▇ 4% | 2025-11-13 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 88.6% | 58.5 | ▇ 4% | 2025-11-13 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 48.0% | 65.9 | ▇ 4% | 2026-08-27 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 16.0% | 61.0 | ▇ 4% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 32.0% | 69.2 | ▇ 1% | 2025-12-08 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1391.7 | 56.2 | ▇▇▇ 9% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1455.1 | 62.3 | ▇▇ 5% | 2026-09-13 |
-|  | [Arena search systems (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet) | 1183.2 | 61.7 | ▇ 3% | 2026-08-24 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1250.1 | 61.1 | ▇ 3% | 2026-09-13 |
-|  | [Arena document (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet) | 1415.8 | 52.2 | ▇ 2% | 2026-09-13 |
-| <a name="korean-personal-benchmark-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Daekeun Kim Korean LLM benchmark runs"> Daekeun Kim Korean LLM benchmark runs | [HAE-RAE 1.0 (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 90.6% | 62.5 | ▇▇ 7% |  |
-|  | [CLIcK Korean (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 89.8% | 63.3 | ▇▇ 7% |  |
-|  | [KMMLU-HARD (Daekeun Kim, zero-shot)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 72.8% | 64.0 | ▇▇ 6% |  |
-| <a name="arcprize-model-baseline-outputs"></a><img src="../../icons/huggingface.co.png" width="14" alt="ARC Prize Foundation model_baseline outputs on ARC-AGI-1/2 public evaluation sets"> ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets | [ARC-AGI-1 public evaluation set (ARC Prize model\_baseline, pass@2)](https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-1-2025-11-13-thinking-high/results.json) | 77.1% | 57.2 | ▇▇▇ 9% | 2026-06-04 |
-|  | [ARC-AGI-2 public evaluation set (ARC Prize model\_baseline, pass@2)](https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-1-2025-11-13-thinking-high/results.json) | 18.3% | 58.3 | ▇▇ 7% | 2026-06-04 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 63.9% | 57.5 | ▇ 5% | 2026-05-02 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1314.4 | 61.7 | ▇ 4% | 2026-05-10 |
-| <a name="webapp1k-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="WebApp1K models leaderboard (onekq-ai)"> WebApp1K models leaderboard (onekq-ai) | [WebApp1K-Duo-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv) | 76.5% | 59.4 | ▇ 3% | 2025-11-21 |
-| <a name="amazon-tau2-verified"></a><img src="../../icons/huggingface.co.png" width="14" alt="Amazon AGI — τ²-Bench-Verified"> Amazon AGI — τ²-Bench-Verified | [τ²-Bench-Verified (GPT-5.1 user)](https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md) | 76.8% | 60.8 | ▇ 2% | 2026-09-25 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 60.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               68.0%    57.5   2026-02-18    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     87.6%    61.1   2025-11-13    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.6%    58.5   2025-11-13    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                48.0%    65.9   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     16.0%    61.0   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            32.0%    69.2   2025-12-08    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1391.7    56.2   2026-09-24    9% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1455.1    62.3   2026-09-13    5% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1183.2    61.7   2026-08-24    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1250.1    61.1   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1415.8    52.2   2026-09-13    2% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        90.6%    62.5                 7% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       89.8%    63.3                 7% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   72.8%    64.0                 6% ▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-1-2025-11-13-thinking-high/results.json">ARC-AGI-1 public evaluation s…</a>   77.1%    57.2   2026-06-04    9% ▇
+                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-1-2025-11-13-thinking-high/results.json">ARC-AGI-2 public evaluation s…</a>   18.3%    58.3   2026-06-04    7% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   63.9%    57.5   2026-05-02    5% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1314.4    61.7   2026-05-10    4% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   76.5%    59.4   2025-11-21    3% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   76.8%    60.8   2026-09-25    2% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 60.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $3.44/M blended · $1.25 in / $10 out per 1M tokens · [platform.openai.com ↗](https://platform.openai.com/docs/models)
+api (OpenAI) · $3.44/M blended · $1.25 in / $10 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.1.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.1.toml)
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.1.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.1.toml)</sub>
 
 no verified local download listed
 

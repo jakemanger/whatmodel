@@ -6,27 +6,28 @@
 
 xAI · released 2026-04 · proprietary
 
-**score 60.1** ±3.0
-
-#5 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.1** ±3.0 · #5 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1271.0 | 60.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 96% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 60.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1271.0    60.5   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 4% ▇
+                        weighted average                        = 60.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
-api (xAI) · $15.00/M chars · [docs.x.ai ↗](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech)
+api (xAI) · $15.00/M chars · [docs.x.ai](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech)
 
-[price source](https://docs.x.ai/developers/models.md) · USD per 1M input characters: xAI Voice Pricing lists Text to Speech at $15.00 / 1M chars. The xAI TTS REST endpoint (POST /v1/tts) takes no model parameter, so this single published rate covers it. Product: xAI Text to Speech API. API model: xAI TTS (REST /v1/tts, no model id). Settings: REST. Price basis: published list rate. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.
+<sub>[price source](https://docs.x.ai/developers/models.md): USD per 1M input characters: xAI Voice Pricing lists Text to Speech at $15.00 / 1M chars. The xAI TTS REST endpoint (POST /v1/tts) takes no model parameter, so this single published rate covers it. Product: xAI Text to Speech API. API model: xAI TTS (REST /v1/tts, no model id). Settings: REST. Price basis: published list rate. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.</sub>
 
 no verified local download listed
 

@@ -6,29 +6,30 @@
 
 OpenBMB · apache-2.0
 
-**score 53.9** ±1.7
-
-comparison only: no current run option verified · from 9 benchmark results across 3 sources
+**score 53.9** ±1.7 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-zonos2-report-bysa"></a><img src="../../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results)"> ZONOS2 Technical Report (ZTTS1-Eval results) ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) | [ZTTS1-Eval in-the-wild · 10-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 2.40 / 5 | 49.3 | ▇▇▇▇ 15% | 2026-06-25 |
-|  | [ZTTS1-Eval in-the-wild · 10-language mean WER](https://arxiv.org/html/2606.24320v2) | 3.6% | 54.0 | ▇▇▇▇ 14% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER](https://arxiv.org/html/2606.24320v2) | 5.1% | 54.1 | ▇▇▇▇ 12% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 3.07 / 5 | 52.0 | ▇▇▇ 11% | 2026-06-25 |
-| <a name="speech-qwen-audio3-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report"> Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) | [CV3-Eval multilingual voice clone · 9-language mean error](https://arxiv.org/html/2607.23938v1) | 6.2% | 54.9 | ▇▇▇▇ 14% | 2026-07-27 |
-|  | [CV3-Eval hard-en · WER](https://arxiv.org/html/2607.23938v1) | 7.5% | 55.5 | ▇▇▇▇ 12% | 2026-07-27 |
-|  | [CV3-Eval protocol, 7 added languages · mean WER (Qwen-Audio 3.0 extension)](https://arxiv.org/html/2607.23938v1) | 4.2% | 55.0 | ▇▇ 8% | 2026-07-27 |
-|  | [CV3-Eval hard-zh · CER](https://arxiv.org/html/2607.23938v1) | 8.1% | 58.0 | ▇▇ 8% | 2026-07-27 |
-| <a name="speech-ztts1-eval-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra)"> ZTTS1-Eval results snapshot (Zyphra) | [ZTTS1-Eval · FLEURS-R English TTSDS2 prosody](https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md) | 88.6% | 57.9 | ▇ 5% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 53.9** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    49.3   2026-06-25   15% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      3.6%    54.0   2026-06-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      5.1%    54.1   2026-06-25   12% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.07 / 5    52.0   2026-06-25   11% ▇
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      6.2%    54.9   2026-07-27   14% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              7.5%    55.5   2026-07-27   12% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      4.2%    55.0   2026-07-27    8% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              8.1%    58.0   2026-07-27    8% ▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     88.6%    57.9   2026-06-22    5% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 53.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt))</sub>
 
 ## How to run it
 

@@ -6,9 +6,7 @@
 
 Alibaba (Tongyi-MAI)
 
-**score 51.2** ±4.7
-
-#52 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.2** ±4.7 · #52 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,33 +14,39 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 88.1% | 51.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 91% | 2026-08-25 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 9% |  |
-|  | **weighted average** |  | **= 51.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  88.1%    51.4   2026-08-25   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 51.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (9)
+<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [CVTG-2K word accuracy](https://arxiv.org/html/2511.22699v5) | 86.7% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [DPG-Bench](https://arxiv.org/html/2511.22699v5) | 88.1% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [GenEval](https://arxiv.org/html/2511.22699v5) | 84.0% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [LongText-Bench (CN)](https://arxiv.org/html/2511.22699v5) | 93.6% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [LongText-Bench (EN)](https://arxiv.org/html/2511.22699v5) | 93.5% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [OneIG-Bench (CN)](https://arxiv.org/html/2511.22699v5) | 53.5% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [OneIG-Bench (EN)](https://arxiv.org/html/2511.22699v5) | 54.6% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [TIIF-Bench testmini (long prompts)](https://arxiv.org/html/2511.22699v5) | 83.0% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [TIIF-Bench testmini (short prompts)](https://arxiv.org/html/2511.22699v5) | 80.2% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source      test                            score  why
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy</a>           86.7%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench</a>                       88.1%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">GenEval</a>                         84.0%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN)</a>             93.6%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN)</a>             93.5%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN)</a>                53.5%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN)</a>                54.6%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  83.0%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  80.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (fal.ai) · $0.010/image · [fal.ai ↗](https://fal.ai/models/fal-ai/z-image/base)
+api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/z-image/base)
 
-[price source](https://fal.ai/models/fal-ai/z-image/base) · USD for one 1-megapixel output: fal bills this endpoint $0.01 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/z-image/base (fal: 'the foundation model of the Z-Image family'; the Turbo endpoints are separate). Settings: 1 MP output, one image, no LoRA. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio sells only z-image-turbo. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/z-image/base): USD for one 1-megapixel output: fal bills this endpoint $0.01 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/z-image/base (fal: 'the foundation model of the Z-Image family'; the Turbo endpoints are separate). Settings: 1 MP output, one image, no LoRA. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio sells only z-image-turbo. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

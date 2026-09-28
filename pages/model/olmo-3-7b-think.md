@@ -6,52 +6,64 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 34.3** ±1.4
-
-#177 of 205 · from 15 benchmark results across 2 sources
+**score 34.3** ±1.4 · #177 of 205 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="report-2512.13961v2"></a><img src="../../icons/huggingface.co.png" width="14" alt="Olmo 3"> Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) | [AIME 2024](https://arxiv.org/html/2512.13961v2) lab-reported | 71.6% | 36.2 | ▇▇▇▇ 14% | 2026-09-25 |
-|  | [AIME 2025](https://arxiv.org/html/2512.13961v2) lab-reported | 64.6% | 35.5 | ▇▇▇ 10% | 2026-09-25 |
-|  | [HumanEval+](https://arxiv.org/html/2512.13961v2) lab-reported | 89.9% | 37.3 | ▇▇▇ 10% | 2026-09-25 |
-|  | [BIG-Bench Hard](https://arxiv.org/html/2512.13961v2) lab-reported | 86.6% | 36.9 | ▇▇▇ 8% | 2026-09-25 |
-|  | [AGIEval English](https://arxiv.org/html/2512.13961v2) lab-reported | 81.5% | 34.4 | ▇▇ 8% | 2026-09-25 |
-|  | [IFBench (aggregation unspecified)](https://arxiv.org/html/2512.13961v2) lab-reported | 41.6% | 29.8 | ▇▇ 6% | 2026-09-25 |
-|  | [AlpacaEval 2 length-controlled](https://arxiv.org/html/2512.13961v2) lab-reported | 52.1% | 31.6 | ▇▇ 6% | 2026-09-25 |
-|  | [IFEval (aggregation unspecified)](https://arxiv.org/html/2512.13961v2) lab-reported | 88.2% | 30.7 | ▇▇ 6% | 2026-09-25 |
-|  | [PopQA](https://arxiv.org/html/2512.13961v2) lab-reported | 23.7% | 34.4 | ▇▇ 6% | 2026-09-25 |
-|  | [ZebraLogic](https://arxiv.org/html/2512.13961v2) lab-reported | 66.5% | 34.8 | ▇ 5% | 2026-09-25 |
-|  | [MMLU](https://arxiv.org/html/2512.13961v2) lab-reported | 77.8% | 30.9 | ▇ 4% | 2026-09-25 |
-|  | [LiveCodeBench v3](https://arxiv.org/html/2512.13961v2) lab-reported | 75.2% | 38.0 | ▇ 3% | 2026-09-25 |
-|  | [GPQA (subset unspecified)](https://arxiv.org/html/2512.13961v2) lab-reported | 46.2% | 30.3 | ▇ 3% | 2026-09-25 |
-|  | [MBPP+](https://arxiv.org/html/2512.13961v2) lab-reported | 64.7% | 33.2 | ▇ 3% | 2026-09-25 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 41.3% | 30.8 | ▇▇ 7% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 34.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                 71.6%    36.2   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                 64.6%    35.5   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                89.9%    37.3   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>            86.6%    36.9   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>           81.5%    34.4   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  41.6%    29.8   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>  52.1%    31.6   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  88.2%    30.7   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     23.7%    34.4   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                66.5%    34.8   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                      77.8%    30.9   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          75.2%    38.0   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>  46.2%    30.3   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     64.7%    33.2   2026-09-25    3% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  41.3%    30.8   2026-05-02    7% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 34.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| allenai/Olmo-3-7B-Think model card | [MATH (subset unspecified)](https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md) | 95.1% | too few models have this result to calibrate it yet |
-| allenai/Olmo-3-7B-Think model card | [OMEGA (math generalisation)](https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md) | 37.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                         score  why
+allenai/Olmo-3-7B-Thi…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">MATH (subset unspecified)</a>    95.1%  too few models have it yet
+allenai/Olmo-3-7B-Thi…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/README.md">OMEGA (math generalisation)</a>  37.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/config.json) · Official configured context with bundled YaRN factor 8 and original positions 8,192. Not a claim of a larger extrapolated limit.
+<sub>[context source](https://huggingface.co/allenai/Olmo-3-7B-Think/blob/d97e442d7cc678210054dbcc9b440894d62c89a4/config.json): Official configured context with bundled YaRN factor 8 and original positions 8,192. Not a claim of a larger extrapolated limit.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~4.88GB | 34.3 | `ollama run olmo-3:7b-think` |
-| 8-bit q8\_0 | ~9.26GB | 34.3 | `ollama run olmo-3:7b-think-q8_0` |
+<pre>
+download         size  score
+4-bit q4_k_m  ~4.88GB   34.3
+8-bit q8_0    ~9.26GB   34.3
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run olmo-3:7b-think
+# 8-bit q8_0
+ollama run olmo-3:7b-think-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/olmo-3-7b-think) · [JSON](https://whatmodel.sh/api?format=json&all=1)

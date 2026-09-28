@@ -6,9 +6,7 @@
 
 Meituan
 
-**score 49.0** ±4.2
-
-#58 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.0** ±4.2 · #58 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,27 +14,33 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-edit-compass"></a><img src="../../icons/arxiv.org.png" width="14" alt="Edit-Compass &amp; EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling"> Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) | [Edit-Compass (EN, overall)](https://arxiv.org/html/2605.13062v1#S4.T3) | 53.0% | 48.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 61% | 2026-05-13 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 1001.0 | 49.7 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-03-30 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 7% |  |
-|  | **weighted average** |  | **= 49.0** |  |  |
+<pre>
+source                  test                          score  implies  date        weight
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.0%    48.5   2026-05-13   61% ▇▇▇▇▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1001.0    49.7   2026-03-30   32% ▇▇▇▇
+prior                   pull toward the middle                 49.9                 7% ▇
+                        weighted average                     = 49.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Meituan LongCat — LongCat-Image technical report | [GEdit-Bench-EN overall (G\_O, GPT-4.1 judge)](https://arxiv.org/html/2512.07584v1) | 76.4% | too few models have this result to calibrate it yet |
-| Meituan LongCat — LongCat-Image technical report | [ImgEdit-Bench overall (GPT-4.1 judge)](https://arxiv.org/html/2512.07584v1) | 90.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source           test                            score  why
+Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">GEdit-Bench-EN overall (G_O, …</a>  76.4%  too few models have it yet
+Meituan LongCat  <a href="https://arxiv.org/html/2512.07584v1">ImgEdit-Bench overall (GPT-4.…</a>  90.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (fal.ai) · $0.15/image · [fal.ai ↗](https://fal.ai/models/fal-ai/longcat-image/edit)
+api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-image/edit)
 
-[price source](https://fal.ai/models/fal-ai/longcat-image/edit) · USD for one 1-megapixel output: fal bills this endpoint $0.15 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/longcat-image/edit (LongCat Image Edit). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/longcat-image/edit): USD for one 1-megapixel output: fal bills this endpoint $0.15 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/longcat-image/edit (LongCat Image Edit). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

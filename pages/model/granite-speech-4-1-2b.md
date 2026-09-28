@@ -6,35 +6,47 @@
 
 IBM · released 2026-04 · 2.31B params · apache-2.0
 
-**score 55.0** ±4.6
-
-#18 of 28 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±4.6 · #18 of 28 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-yoruba-cs-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Switch-aware evaluation of ASR on English-Yoruba code-switched speech (arXiv:2609.11786v1)"> Switch-aware evaluation of ASR on English-Yoruba code-switched speech (arXiv:2609.11786v1) ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt)) | [AfriCodeSwitch English-Yoruba code-switched speech · WER (cap2000)](https://arxiv.org/html/2609.11786v1) | 73.5% | 55.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 91% | 2026-09-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 9% |  |
-|  | **weighted average** |  | **= 55.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  73.5%    55.4   2026-09-10   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 55.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| IBM Granite Speech 4.1 own punctuation evaluation | [Granite Speech · LScln punctuation error](https://huggingface.co/ibm-granite/granite-speech-4.1-2b/blob/de575db64086f84fdc79da4932d1076e965bc546/README.md) | 25.7% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+IBM Granite Speech 4.…  <a href="https://huggingface.co/ibm-granite/granite-speech-4.1-2b/blob/de575db64086f84fdc79da4932d1076e965bc546/README.md">Granite Speech · LScln punctu…</a>  25.7%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · mac only | ~6.04GB | 55.0 | `uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-4.1-2b --audio audio.wav --output-path transcript` |
-| bf16 · nvidia only | ~6.04GB | 55.0 | `vllm serve ibm-granite/granite-speech-4.1-2b --max-model-len 2048` |
+<pre>
+version               needs  score
+bf16 · mac only     ~6.04GB   55.0
+bf16 · nvidia only  ~6.04GB   55.0
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · mac only
+uvx --from mlx-audio mlx_audio.stt.generate --model ibm-granite/granite-speech-4.1-2b --audio audio.wav --output-path transcript
+# bf16 · nvidia only
+vllm serve ibm-granite/granite-speech-4.1-2b --max-model-len 2048
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/granite-speech-4-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,18 +6,21 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| AIME 2025 | 78.5% | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · lab-reported · BF16 checkpoint, Reasoning-On section, NeMo-Skills. IFEVAL-Prompt 87.9 retained; overlapping instruction-level 92.0 not also added. Strict/loose and GPQA/LCB subset/window are not stated. Row: AIME25. Review date is not the evaluation-run date. |
-| MATH-500 | 95.4% | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · lab-reported · BF16 checkpoint, Reasoning-On section, NeMo-Skills. IFEVAL-Prompt 87.9 retained; overlapping instruction-level 92.0 not also added. Strict/loose and GPQA/LCB subset/window are not stated. Row: MATH500. Review date is not the evaluation-run date. |
-| GPQA (subset unspecified) | 53.2% | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · lab-reported · BF16 checkpoint, Reasoning-On section, NeMo-Skills. IFEVAL-Prompt 87.9 retained; overlapping instruction-level 92.0 not also added. Strict/loose and GPQA/LCB subset/window are not stated. Row: GPQA. Review date is not the evaluation-run date. |
-| LiveCodeBench (version unspecified) | 51.8% | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · lab-reported · BF16 checkpoint, Reasoning-On section, NeMo-Skills. IFEVAL-Prompt 87.9 retained; overlapping instruction-level 92.0 not also added. Strict/loose and GPQA/LCB subset/window are not stated. Row: LCB. Review date is not the evaluation-run date. |
-| BFCL v3 | 61.1% | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · lab-reported · BF16 checkpoint, Reasoning-On section, NeMo-Skills. IFEVAL-Prompt 87.9 retained; overlapping instruction-level 92.0 not also added. Strict/loose and GPQA/LCB subset/window are not stated. Row: BFCL v3. Review date is not the evaluation-run date. |
-| IFEval prompt-level (strictness unspecified) | 87.9% | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · lab-reported · BF16 checkpoint, Reasoning-On section, NeMo-Skills. IFEVAL-Prompt 87.9 retained; overlapping instruction-level 92.0 not also added. Strict/loose and GPQA/LCB subset/window are not stated. Row: IFEVAL-Prompt. Review date is not the evaluation-run date. |
+<pre>
+test                                result  reported by  source
+AIME 2025                            78.5%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+MATH-500                             95.4%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+GPQA (subset unspecified)            53.2%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+LiveCodeBench (version unspecifie…   51.8%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+BFCL v3                              61.1%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+IFEval prompt-level (strictness u…   87.9%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+</pre>
+
+<sub>Licences: nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card ([NVIDIA Nemotron Open Model License (2025-12-15)](../../licenses/card-nvidia-nvidia-nemotron-3-nano-4b-bf16.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md) · NVIDIA official model card: "Context length up to 262K"; the card's serving example uses --max-model-len 262144, which gives the exact token count. Observed 2026-09-25.
+<sub>[context source](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md): NVIDIA official model card: "Context length up to 262K"; the card's serving example uses --max-model-len 262144, which gives the exact token count. Observed 2026-09-25.</sub>
 
 ```sh
 ollama run nemotron-3-nano:4b

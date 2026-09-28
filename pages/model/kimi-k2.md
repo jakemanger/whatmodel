@@ -6,41 +6,50 @@
 
 Moonshot AI · released 2025-07 · 1000B params (32B active) · modified-mit
 
-**score 53.9** ±2.2
-
-#91 of 205 · from 6 benchmark results across 6 sources
+**score 53.9** ±2.2 · #91 of 205 · from 6 benchmark results across 6 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="aider-polyglot-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Aider polyglot benchmark runs"> Aider polyglot benchmark runs | [Aider polyglot (225 exercises, two attempts)](https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml) | 59.1% | 52.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 44% | 2025-07-17 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1417.8 | 55.5 | ▇▇▇▇▇▇ 19% | 2026-09-13 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1311.0 | 61.3 | ▇▇▇▇ 14% | 2026-05-10 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 81.8% | 46.4 | ▇▇▇ 9% | 2025-09-01 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 59.1% | 57.0 | ▇▇ 6% | 2025-12-16 |
-| <a name="galileo-agent-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Galileo Agent Leaderboard (v1 and v2 results)"> Galileo Agent Leaderboard (v1 and v2 results) | [Galileo Agent Leaderboard v2 (action completion)](https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv) | 53.0% | 54.8 | ▇▇ 5% | 2025-11-18 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 53.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   59.1%    52.0   2025-07-17   44% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1417.8    55.5   2026-09-13   19% ▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1311.0    61.3   2026-05-10   14% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   81.8%    46.4   2025-09-01    9% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   59.1%    57.0   2025-12-16    6% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   53.0%    54.8   2025-11-18    5% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 53.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-api (Novita AI) · $1.00/M blended · $0.57 in / $2.3 out per 1M tokens · [novita.ai ↗](https://novita.ai/models)
+api (Novita AI) · $1.00/M blended · $0.57 in / $2.3 out per 1M tokens · [novita.ai](https://novita.ai/models)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output. Model endpoint moonshotai/kimi-k2-instruct. July 2025 Kimi K2 Instruct endpoint; not K2-0905 or K2 Thinking.  Product: Serverless chat completions. API model: moonshotai/kimi-k2-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint moonshotai/kimi-k2-instruct. July 2025 Kimi K2 Instruct endpoint; not K2-0905 or K2 Thinking.  Product: Serverless chat completions. API model: moonshotai/kimi-k2-instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~600.5GB   53.9
+2-bit ud-q2_k_xl  ~300.5GB   53.9
+1-bit ud-iq1_s    ~150.5GB   53.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~600.5GB | 53.9 | `llama-server -hf unsloth/Kimi-K2-Instruct-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~300.5GB | 53.9 | `llama-server -hf unsloth/Kimi-K2-Instruct-GGUF:UD-Q2_K_XL` |
-| 1-bit ud-iq1\_s | ~150.5GB | 53.9 | `llama-server -hf unsloth/Kimi-K2-Instruct-GGUF:UD-IQ1_S` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/Kimi-K2-Instruct-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Kimi-K2-Instruct-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_s
+llama-server -hf unsloth/Kimi-K2-Instruct-GGUF:UD-IQ1_S
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/kimi-k2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

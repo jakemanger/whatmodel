@@ -6,39 +6,49 @@
 
 Mistral · released 2025-12 · apache-2.0
 
-**score 28.6** ±4.9
-
-#188 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.6** ±4.9 · #188 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 37.4% | 26.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 89% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 28.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  37.4%    26.1   2026-05-02   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                11% ▇
+                        weighted average                       = 28.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (4)
+<sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| mistralai/Ministral-3-3B-Reasoning-2512 model card | [AIME 2025](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md) | 72.1% | too few models have this result to calibrate it yet |
-| mistralai/Ministral-3-3B-Reasoning-2512 model card | [AIME 2024](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md) | 77.5% | too few models have this result to calibrate it yet |
-| mistralai/Ministral-3-3B-Reasoning-2512 model card | [GPQA Diamond](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md) | 53.4% | too few models have this result to calibrate it yet |
-| mistralai/Ministral-3-3B-Reasoning-2512 model card | [LiveCodeBench (version unspecified)](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md) | 54.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source                  test                            score  why
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2025</a>                       72.1%  too few models have it yet
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">AIME 2024</a>                       77.5%  too few models have it yet
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">GPQA Diamond</a>                    53.4%  too few models have it yet
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md">LiveCodeBench (version unspec…</a>  54.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md) · Mistral official model card: "Supports a 256k context window"; the card's serving notes give the default --max-model-len 262144 (exact tokens). Reasoning-2512 checkpoint. Observed 2026-09-25.
+<sub>[context source](https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md): Mistral official model card: "Supports a 256k context window"; the card's serving notes give the default --max-model-len 262144 (exact tokens). Reasoning-2512 checkpoint. Observed 2026-09-25.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | 2.15GB | 28.6 | `llama-server -hf mistralai/Ministral-3-3B-Reasoning-2512-GGUF:Q4_K_M` |
+<pre>
+download        size  score
+4-bit q4_k_m  2.15GB   28.6
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+llama-server -hf mistralai/Ministral-3-3B-Reasoning-2512-GGUF:Q4_K_M
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/ministral-3-3b-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

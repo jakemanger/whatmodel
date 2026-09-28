@@ -6,59 +6,71 @@
 
 Google · released 2026-06 · 11.9B params · apache-2.0
 
-**score 53.0** ±0.9
-
-#98 of 205 · from 21 benchmark results across 2 sources
+**score 53.0** ±0.9 · #98 of 205 · from 21 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="gemma4-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Gemma Team — Gemma 4 Technical Report"> Gemma Team — Gemma 4 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 78.8% | 54.5 | ▇▇▇ 9% | 2026-07-02 |
-|  | [AIME 2026](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 77.5% | 52.6 | ▇▇ 8% | 2026-07-02 |
-|  | [Big Bench Extra Hard micro avg](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 53.0% | 51.0 | ▇▇ 7% | 2026-07-02 |
-|  | [MATH-Vision](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 79.7% | 53.6 | ▇▇ 6% | 2026-07-02 |
-|  | [IFBench](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 74.0% | 56.4 | ▇▇ 6% | 2026-07-02 |
-|  | [LiveCodeBench v6 (Feb–May 2025)](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 72.0% | 53.2 | ▇▇ 6% | 2026-07-02 |
-|  | [MRCR v2 8-needle, 128k](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 43.4% | 51.9 | ▇▇ 5% | 2026-07-02 |
-|  | [Tau2 – airline](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 75.0% | 56.0 | ▇▇ 5% | 2026-07-02 |
-|  | [Terminal Bench Hard](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 18.0% | 53.8 | ▇▇ 5% | 2026-07-02 |
-|  | [MedXPertQA MM](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 48.7% | 51.9 | ▇ 5% | 2026-07-02 |
-|  | [InfographicVQA](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 88.4% | 54.0 | ▇ 5% | 2026-07-02 |
-|  | [MMMU Pro](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 69.1% | 51.9 | ▇ 4% | 2026-07-02 |
-|  | [IFEval](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 97.2% | 48.0 | ▇ 4% | 2026-07-02 |
-|  | [Tau2 – telecom](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 54.4% | 56.4 | ▇ 3% | 2026-07-02 |
-|  | [MMMLU](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 83.4% | 50.8 | ▇ 3% | 2026-07-02 |
-|  | [Tau2 – retail](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 77.6% | 53.4 | ▇ 3% | 2026-07-02 |
-|  | [SciCode](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 38.0% | 53.0 | ▇ 3% | 2026-07-02 |
-|  | [MMLU-Pro](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 77.2% | 49.3 | ▇ 3% | 2026-07-02 |
-|  | [HLE](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 5.2% | 46.9 | ▇ 2% | 2026-07-02 |
-|  | [OmniDocBench 1.5 ↓](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 16.4% | 50.8 | ▇ 2% | 2026-07-02 |
-| <a name="card2-google-gemma-4-31b-it"></a><img src="../../icons/huggingface.co.png" width="14" alt="google/gemma-4-31B-it model card"> google/gemma-4-31B-it model card | [τ²-bench aggregate](https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md) lab-reported | 69.0% | 55.3 | ▇▇ 7% | 2026-07-20 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 53.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              78.8%    54.5   2026-07-02    9% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 77.5%    52.6   2026-07-02    8% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  53.0%    51.0   2026-07-02    7% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               79.7%    53.6   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   74.0%    56.4   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  72.0%    53.2   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    43.4%    51.9   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            75.0%    56.0   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>       18.0%    53.8   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             48.7%    51.9   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            88.4%    54.0   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  69.1%    51.9   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    97.2%    48.0   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>            54.4%    56.4   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     83.4%    50.8   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             77.6%    53.4   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   38.0%    53.0   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  77.2%    49.3   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                        5.2%    46.9   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        16.4%    50.8   2026-07-02    2% ▇
+<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        69.0%    55.3   2026-07-20    7% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 53.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/google/gemma-4-12b-it.toml) · model catalogue context ceiling (not a promise by a hosted API)
+<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/google/gemma-4-12b-it.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~7.64GB | 53.0 | `ollama run gemma4:12b` |
-| 4-bit QAT qat | ~7.64GB | 53.0 | `ollama run gemma4:12b-it-qat` |
+<pre>
+download          size  score
+4-bit q4_k_m   ~7.64GB   53.0
+4-bit QAT qat  ~7.64GB   53.0
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run gemma4:12b
+# 4-bit QAT qat
+ollama run gemma4:12b-it-qat
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S iGPU; Beelink GTR9 Pro 128GB | Gemma QAT GGUF UD-Q4\_K\_XL | 29.34 tok/s | llama.cpp ac4cddeb0 (build\_number 9592 as recorded), Vulkan (RADV) · llama-bench; tg128; 128 generated tokens; context depth 0; n\_prompt=0 row; n\_batch=2048; n\_ubatch=512; flash\_attn=1; type\_k=f16; type\_v=f16; n\_gpu\_layers=999; threads=16; one sequence; file label r10 repetitions · Author's own llama-bench CSV row (avg\_ts mean over repetitions, stddev\_ts retained). GPU string as recorded: Radeon 8060S Graphics (RADV STRIX\_HALO). Unified memory; the guide reports ~124GiB OS-visible. Kernel/Mesa/power profile per the run folder notes. Not prompt processing or multi-request throughput. Curated in the guide's data/benchmarks.csv line 31 (2026-06-11, measured-local): Current Google Gemma 4 QAT direct route on upstream llama.cpp; useful current-model evidence, but not a speed candidate versus Qwen/LFM MoE rows. | [source ↗](https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-11/latest-llamacpp-ac4cddeb-vulkan-clean/gemma-4-12b-it-qat-udq4kxl-r10.csv#L3) |
+<pre>
+hardware                      precision               speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  Gemma QAT GGUF …  <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-11/latest-llamacpp-ac4cddeb-vulkan-clean/gemma-4-12b-it-qat-udq4kxl-r10.csv#L3">29.34 tok/s</a>  llama.cpp ac4cddeb0 (build_number…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gemma-4-12b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

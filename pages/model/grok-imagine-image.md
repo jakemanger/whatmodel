@@ -6,9 +6,7 @@
 
 SpaceXAI (xAI) · closed weights
 
-**score 61.9** ±2.1
-
-#17 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.9** ±2.1 · #17 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1170.3 | 61.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 78% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1329.2 | 66.3 | ▇▇▇▇▇▇ 20% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 61.9** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1170.3    61.1   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1329.2    66.3   2026-09-22   20% ▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 61.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (xAI) · $0.020/image · [docs.x.ai ↗](https://docs.x.ai/developers/models/grok-imagine-image.md)
+api (xAI) · $0.020/image · [docs.x.ai](https://docs.x.ai/developers/models/grok-imagine-image.md)
 
-[price source](https://docs.x.ai/developers/models.md) · USD per generated image on the xAI API (output $0.02 per image). Product: xAI API image generation. API model: grok-imagine-image (alias grok-imagine-image-2026-03-02). Settings: one image. Price basis: published per-image list rate. grok-imagine-image-2.0 ($0.04) and grok-imagine-image-quality ($0.05) are separate models. Currency: USD. xAI official models and pricing page, observed 2026-09-26.
+<sub>[price source](https://docs.x.ai/developers/models.md): USD per generated image on the xAI API (output $0.02 per image). Product: xAI API image generation. API model: grok-imagine-image (alias grok-imagine-image-2026-03-02). Settings: one image. Price basis: published per-image list rate. grok-imagine-image-2.0 ($0.04) and grok-imagine-image-quality ($0.05) are separate models. Currency: USD. xAI official models and pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

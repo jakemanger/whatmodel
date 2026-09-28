@@ -6,30 +6,31 @@
 
 Sesame · released 2025-03
 
-**score 33.0** ±3.4
-
-#36 of 36 · from 4 benchmark results across 3 sources
+**score 33.0** ±3.4 · #36 of 36 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 13.4% | 32.1 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 32.3% | 21.7 | ▇▇▇▇ 13% | 2025-08-10 |
-| <a name="speech-emergent-v1-paper-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS"> EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) | [EmergentTTS · v1 paper automatic MOS (WV-MOS)](https://arxiv.org/html/2505.23009v1) | 3.38 / 5 | 35.2 | ▇▇▇▇▇▇▇▇▇▇▇▇ 41% | 2025-05-29 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Long-Form Stability (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.44 / 5 | 37.9 | ▇ 2% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 5% |  |
-|  | **weighted average** |  | **= 33.0** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     13.4%    32.1   2025-08-10   39% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       32.3%    21.7   2025-08-10   13% ▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.38 / 5    35.2   2025-05-29   41% ▇▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.44 / 5    37.9   2026-07-16    2% ▇
+prior                   pull toward the middle                      49.9                 5% ▇
+                        weighted average                          = 33.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (DeepInfra) · $7.00/M chars · [deepinfra.com ↗](https://deepinfra.com/sesame/csm-1b)
+api (DeepInfra) · $7.00/M chars · [deepinfra.com](https://deepinfra.com/sesame/csm-1b)
 
-[price source](https://deepinfra.com/sesame/csm-1b) · USD per 1M input characters: DeepInfra lists sesame/csm-1b at $7.00 / 1M characters (page pricing data: input\_character\_length billing; not deprecated in DeepInfra's catalogue). Product: DeepInfra hosted inference (text to speech). API model: sesame/csm-1b (Sesame CSM 1B checkpoint). Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.
+<sub>[price source](https://deepinfra.com/sesame/csm-1b): USD per 1M input characters: DeepInfra lists sesame/csm-1b at $7.00 / 1M characters (page pricing data: input\_character\_length billing; not deprecated in DeepInfra's catalogue). Product: DeepInfra hosted inference (text to speech). API model: sesame/csm-1b (Sesame CSM 1B checkpoint). Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

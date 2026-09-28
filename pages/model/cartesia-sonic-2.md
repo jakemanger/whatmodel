@@ -6,21 +6,22 @@
 
 Cartesia · released 2025-03 · proprietary
 
-**score 52.9** ±3.0
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±3.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1185.1 | 53.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 96% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 52.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1185.1    53.0   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 4% ▇
+                        weighted average                        = 52.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 

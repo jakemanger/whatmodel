@@ -6,9 +6,7 @@
 
 Google · closed weights
 
-**score 55.6** ±2.3
-
-#34 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.6** ±2.3 · #34 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1129.1 | 56.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 92% | 2026-09-24 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 50.3% | 51.5 | ▇▇ 6% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 55.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1129.1    56.0   2026-09-24   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   50.3%    51.5   2026-05-27    6% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 55.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Google Cloud) · $0.040/image · [cloud.google.com ↗](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing)
+api (Google Cloud) · $0.040/image · [cloud.google.com](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing)
 
-[price source](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing) · USD per generated image, Imagen 4 (standard; Imagen 4 Fast $0.02, Ultra $0.06) text-to-image on Google Cloud generative AI (Vertex AI / Gemini Enterprise Agent Platform) pricing. Product: Google Cloud generative AI image generation. API model: Imagen 4. Settings: text prompt, one image. Price basis: published list rate. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.
+<sub>[price source](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing): USD per generated image, Imagen 4 (standard; Imagen 4 Fast $0.02, Ultra $0.06) text-to-image on Google Cloud generative AI (Vertex AI / Gemini Enterprise Agent Platform) pricing. Product: Google Cloud generative AI image generation. API model: Imagen 4. Settings: text prompt, one image. Price basis: published list rate. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

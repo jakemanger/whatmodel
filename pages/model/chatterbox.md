@@ -6,44 +6,56 @@
 
 Resemble AI · released 2025-05 · 0.5B params · mit
 
-**score 42.4** ±4.1
-
-#32 of 36 · from 4 benchmark results across 2 sources
+**score 42.4** ±4.1 · #32 of 36 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 24.5% | 41.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 59% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 13.1% | 51.0 | ▇▇▇▇▇▇ 19% | 2025-08-10 |
-| <a name="speech-codecmos-accent-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1)"> CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1) ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) | [CodecMOS-Accent VCTK voice clone · human naturalness MOS (S-NAT)](https://arxiv.org/html/2603.14328v1) | 4.23 / 5 | 32.7 | ▇▇▇ 11% | 2026-03-15 |
-|  | [CodecMOS-Accent VCTK voice clone · human speaker-similarity MOS (S-SPK-SIM)](https://arxiv.org/html/2603.14328v1) | 4.33 / 5 | 33.5 | ▇ 5% | 2026-03-15 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 7% |  |
-|  | **weighted average** |  | **= 42.4** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    41.4   2025-08-10   59% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    51.0   2025-08-10   19% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    32.7   2026-03-15   11% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    33.5   2026-03-15    5% ▇
+prior                   pull toward the middle                      49.9                 7% ▇
+                        weighted average                          = 42.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $25.00/M chars · [replicate.com ↗](https://replicate.com/resemble-ai/chatterbox)
+api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resemble-ai/chatterbox)
 
-[price source](https://replicate.com/resemble-ai/chatterbox) · USD per 1M input characters: Replicate's resemble-ai/chatterbox model page bills $0.025 per thousand input characters (x1000). Resemble's own pricing page lists no per-character TTS rate. Product: Replicate hosted model (official resemble-ai account). API model: resemble-ai/chatterbox. Settings: standard. Price basis: published per-unit billing, not hardware time. Exclusions: taxes. Currency: USD. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/resemble-ai/chatterbox): USD per 1M input characters: Replicate's resemble-ai/chatterbox model page bills $0.025 per thousand input characters (x1000). Resemble's own pricing page lists no per-character TTS rate. Product: Replicate hosted model (official resemble-ai account). API model: resemble-ai/chatterbox. Settings: standard. Price basis: published per-unit billing, not hardware time. Exclusions: taxes. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| fp32 · nvidia only | ~2.9GB | 42.4 | `pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cuda'); ta.save('out.wav', m.generate('Hello world'), m.sr)"` |
-| fp32 · mac only | ~2.9GB | 42.4 | `pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"` |
+<pre>
+version              needs  score
+fp32 · nvidia only  ~2.9GB   42.4
+fp32 · mac only     ~2.9GB   42.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# fp32 · nvidia only
+pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cuda'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
+# fp32 · mac only
+pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA RTX 4090 |  | 2.004008 x-realtime | chatterbox-streaming fork · Linux; streaming example; first chunk latency 0.472s; 5.840s audio; 2.915s generation · Quantization/dtype not specified in benchmark claim. Reciprocal of published rounded RTF 0.499; extra decimal places do not imply additional measurement precision. | [source ↗](https://github.com/davidbrowne17/chatterbox-streaming/blob/41222d1b4f496426fdd6b8cd2e1915fb315e6ff4/README.md#L135) |
+<pre>
+hardware         precision                speed  engine and settings
+NVIDIA RTX 4090  undefined  <a href="https://github.com/davidbrowne17/chatterbox-streaming/blob/41222d1b4f496426fdd6b8cd2e1915fb315e6ff4/README.md#L135">2.004008 x-realtime</a>  chatterbox-streaming fork · Linux…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/chatterbox) · [JSON](https://whatmodel.sh/api?format=json&all=1)

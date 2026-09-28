@@ -6,67 +6,75 @@
 
 DeepSeek · released 2026-08 · 1600B params (49B active) · mit
 
-**score 66.8** ±0.9
-
-#23 of 205 · from 26 benchmark results across 5 sources
+**score 66.8** ±0.9 · #23 of 205 · from 26 benchmark results across 5 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 64.6% | 65.6 | ▇▇▇▇▇▇▇ 24% | 2026-08-19 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 26.8% | 64.8 | ▇▇▇▇ 13% | 2026-08-19 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 91.7% | 65.3 | ▇ 3% | 2026-08-18 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 98.6% | 73.2 | ▇ 2% | 2026-08-18 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 52.9% | 68.2 | ▇ 2% | 2026-08-27 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 43.0% | 71.7 | ▇ 2% | 2026-08-19 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 47.0% | 75.5 | ▇ 1% | 2026-08-18 |
-| <a name="card2-deepseek-ai-deepseek-v4-1-flash"></a><img src="../../icons/huggingface.co.png" width="14" alt="deepseek-ai/DeepSeek-V4.1-Flash model card"> deepseek-ai/DeepSeek-V4.1-Flash model card | [Terminal-Bench 3.0](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 11.8% | 65.0 | ▇ 3% | 2026-09-10 |
-|  | [DeepSWE v1.1 (resolved)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 62.7% | 66.7 | ▇ 3% | 2026-09-10 |
-|  | [Terminal-Bench 4.0](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 12.4% | 65.6 | ▇ 3% | 2026-09-10 |
-|  | [CyberGym](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 83.3% | 67.7 | ▇ 3% | 2026-09-10 |
-|  | [AutomationBench (DeepSeek V4.1 card)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 43.2% | 66.4 | ▇ 3% | 2026-09-10 |
-|  | [Terminal-Bench 2.1](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 87.9% | 68.3 | ▇ 3% | 2026-09-10 |
-|  | [SEC-Bench Pro (pass@1)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 56.4% | 71.0 | ▇ 3% | 2026-09-10 |
-|  | [ExploitGym (pass@1)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 5.4% | 67.5 | ▇ 3% | 2026-09-10 |
-|  | [Humanity's Last Exam with tools](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 60.0% | 68.5 | ▇ 3% | 2026-09-10 |
-|  | [NL2Repo](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 61.5% | 68.6 | ▇ 2% | 2026-09-10 |
-|  | [Agents' Last Exam (pass@1, official scaffold)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 25.7% | 66.1 | ▇ 2% | 2026-09-10 |
-|  | [MathArena Apex (pass@1)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 65.3% | 69.1 | ▇ 2% | 2026-09-10 |
-|  | [GPQA Diamond](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 92.4% | 70.7 | ▇ 2% | 2026-09-10 |
-|  | [Humanity's Last Exam](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) lab-reported | 42.7% | 69.7 | ▇ 2% | 2026-09-10 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1580.5 | 68.4 | ▇▇ 6% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1463.4 | 63.9 | ▇ 3% | 2026-09-13 |
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 82.2% | 70.9 | ▇ 3% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 92.6% | 57.7 | ▇ 2% | 2026-09-07 |
-| <a name="mideind-icelandic-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Miðeind Icelandic LLM Leaderboard"> Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) | [Icelandic LLM Leaderboard average (Miðeind, Sept 2026 suite)](https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json) | 51.2% | 66.0 | ▇ 1% | 2026-09-08 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 66.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        64.6%    65.6   2026-08-19   24% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           26.8%    64.8   2026-08-19   13% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     91.7%    65.3   2026-08-18    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         98.6%    73.2   2026-08-18    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                52.9%    68.2   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     43.0%    71.7   2026-08-19    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            47.0%    75.5   2026-08-18    1% ▇
+<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>         11.8%    65.0   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>    62.7%    66.7   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>         12.4%    65.6   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                   83.3%    67.7   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.…</a>   43.2%    66.4   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>         87.9%    68.3   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>     56.4%    71.0   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ExploitGym (pass@1) (lab)</a>         5.4%    67.5   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam with too…</a>   60.0%    68.5   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                    61.5%    68.6   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, of…</a>   25.7%    66.1   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">MathArena Apex (pass@1) (lab)</a>    65.3%    69.1   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">GPQA Diamond (lab)</a>               92.4%    70.7   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam (lab)</a>       42.7%    69.7   2026-09-10    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1580.5    68.4   2026-09-24    6% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1463.4    63.9   2026-09-13    3% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   82.2%    70.9   2026-09-07    3% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   92.6%    57.7   2026-09-07    2% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   51.2%    66.0   2026-09-08    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 66.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (3)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · deepseek-ai/DeepSeek-V4.1-Flash model card ([MIT](../../licenses/deepseek-ai--DeepSeek-V4.1-Flash.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| deepseek-ai/DeepSeek-V4.1-Flash model card | [ProgramBench (Almost@1)](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md) | 15.5% | too few models have this result to calibrate it yet |
-| deepseek-ai/DeepSeek-V4-Pro-0813 model card | [AutomationBench (Public)](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md) | 31.8% | too few models have this result to calibrate it yet |
-| deepseek-ai/DeepSeek-V4-Pro-0813 model card | [Toolathlon-Verified](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md) | 74.1% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test                      score  why
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ProgramBench (Almost@1)</a>   15.5%  too few models have it yet
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">AutomationBench (Public)</a>  31.8%  too few models have it yet
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/README.md">Toolathlon-Verified</a>       74.1%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Deep Infra) · $1.63/M blended · $1.3 in / $2.6 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/models)
+api (Deep Infra) · $1.63/M blended · $1.3 in / $2.6 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/deepseek-ai/DeepSeek-V4-Pro.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/deepseek-ai/DeepSeek-V4-Pro.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-v4-pro.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-v4-pro.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~960.5GB   66.8
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~960.5GB | 66.8 | `llama-server -hf unsloth/DeepSeek-V4-Pro-0813-GGUF:UD-Q4_K_XL` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/DeepSeek-V4-Pro-0813-GGUF:UD-Q4_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/deepseek-v4-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

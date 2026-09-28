@@ -6,31 +6,40 @@
 
 NVIDIA · released 2025-07 · 49B params · nvidia-open-model
 
-**score 42.5** ±4.8
-
-#141 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.5** ±4.8 · #141 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1343.1 | 41.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 90% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 42.5** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1343.1    41.7   2026-09-13   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            50.0                10% ▇
+                        weighted average                = 42.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.3-nemotron-super-49b-v1.5.toml)
+<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.3-nemotron-super-49b-v1.5.toml)</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~29.9GB | 42.5 | `llama-server -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~15.2GB | 42.5 | `llama-server -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL` |
+<pre>
+download             size  score
+4-bit ud-q4_k_xl  ~29.9GB   42.5
+2-bit ud-q2_k_xl  ~15.2GB   42.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Llama-3_3-Nemotron-Super-49B-v1_5-GGUF:UD-Q2_K_XL
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/llama-3-3-nemotron-super-49b-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

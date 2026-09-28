@@ -6,36 +6,43 @@
 
 Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
-**score 41.8** ±2.2
-
-#43 of 54 · from 5 benchmark results across 4 sources
+**score 41.8** ±2.2 · #43 of 54 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1168.8 | 41.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 52% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1197.8 | 40.0 | ▇▇▇▇▇▇▇▇▇ 30% | 2026-09-22 |
-| <a name="visual-worldjen"></a><img src="../../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models"> WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) | [WorldJen human preference (Bradley-Terry)](https://arxiv.org/html/2605.03475v2#S5.T1) | 1462.0 | 38.3 | ▇▇▇ 9% | 2026-05-06 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 46.8% | 51.3 | ▇▇ 7% | 2026-08-10 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 91.1% | 77.6 | ▇ 1% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 41.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1168.8    41.2   2026-09-22   52% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1197.8    40.0   2026-09-22   30% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1462.0    38.3   2026-05-06    9% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   46.8%    51.3   2026-08-10    7% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 91.1%    77.6   2026-04-22    1% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 41.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.075/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video)
+api (fal.ai) · $0.075/sec · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video) · USD per second of generated video, 480p (the only resolution offered on this endpoint). Product: fal HunyuanVideo 1.5 text-to-video endpoint. API model: fal-ai/hunyuan-video-v1.5/text-to-video. Price basis: the page's endpoint billing record states billing\_unit=seconds, price=0.075, and the sibling image-to-video page states "$0.075 per second"; the page's prose says "0.075 cents/s", which is taken as a typo for $0.075/s on the strength of the billing record. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video): USD per second of generated video, 480p (the only resolution offered on this endpoint). Product: fal HunyuanVideo 1.5 text-to-video endpoint. API model: fal-ai/hunyuan-video-v1.5/text-to-video. Price basis: the page's endpoint billing record states billing\_unit=seconds, price=0.075, and the sibling image-to-video page states "$0.075 per second"; the page's prose says "0.075 cents/s", which is taken as a typo for $0.075/s on the strength of the billing record. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~20.42GB | 41.8 | `torchrun --nproc_per_node=1 generate.py --prompt "A cat walks on the grass, realistic style." --resolution 480p --rewrite false --model_path ./ckpts` |
+<pre>
+version                needs  score
+bf16 · nvidia only  ~20.42GB   41.8
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+torchrun --nproc_per_node=1 generate.py --prompt "A cat walks on the grass, realistic style." --resolution 480p --rewrite false --model_path ./ckpts
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

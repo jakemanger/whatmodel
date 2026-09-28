@@ -6,78 +6,94 @@
 
 NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
-**score 33.9** ±2.7
-
-#178 of 205 · from 4 benchmark results across 4 sources
+**score 33.9** ±2.7 · #178 of 205 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1314.2 | 36.4 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-09-13 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 51.1% | 42.3 | ▇▇▇▇▇▇▇▇ 27% | 2026-05-02 |
-| <a name="speakleash-polish-eq-bench"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash Polish EQ-Bench leaderboard"> SpeakLeash Polish EQ-Bench leaderboard | [Polish EQ-Bench v2 (SpeakLeash)](https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv) | 45.8% | 20.8 | ▇▇▇▇▇▇▇ 23% | 2026-03-26 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 64.9% | 31.1 | ▇▇▇▇▇ 17% | 2026-08-11 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 33.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1314.2    36.4   2026-09-13   29% ▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    42.3   2026-05-02   27% ▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   45.8%    20.8   2026-03-26   23% ▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   64.9%    31.1   2026-08-11   17% ▇▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 33.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (14)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [MMLU-Pro](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 78.3% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [AIME 2025](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 89.1% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [GPQA (subset unspecified)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 73.0% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [SciCode subproblems](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 33.3% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [Humanity's Last Exam](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 10.6% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [τ²-bench aggregate](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 49.0% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [BFCL V4 (December 2025 archive)](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 53.8% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [IFBench prompt-level](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 71.5% | too few models have this result to calibrate it yet |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 model card | [Arena-Hard v2 aggregate](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md) | 67.7% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Nano technical report | [Humanity's Last Exam with tools](https://arxiv.org/html/2512.20848v1) | 15.5% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Nano technical report | [LiveCodeBench v6 (Aug 2024–May 2025)](https://arxiv.org/html/2512.20848v1) | 68.3% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Nano technical report | [miniF2F (pass@1)](https://arxiv.org/html/2512.20848v1) | 50.0% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Nano technical report | [MMLU-ProX](https://arxiv.org/html/2512.20848v1) | 59.5% | too few models have this result to calibrate it yet |
-| NVIDIA — Nemotron 3 Nano technical report | [MultiChallenge](https://arxiv.org/html/2512.20848v1) | 38.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (14)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">MMLU-Pro</a>                        78.3%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">AIME 2025</a>                       89.1%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">GPQA (subset unspecified)</a>       73.0%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">SciCode subproblems</a>             33.3%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">Humanity's Last Exam</a>            10.6%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">τ²-bench aggregate</a>              49.0%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">BFCL V4 (December 2025 archiv…</a>  53.8%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">IFBench prompt-level</a>            71.5%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md">Arena-Hard v2 aggregate</a>         67.7%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">Humanity's Last Exam with too…</a>  15.5%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">LiveCodeBench v6 (Aug 2024–Ma…</a>  68.3%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">miniF2F (pass@1)</a>                50.0%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">MMLU-ProX</a>                       59.5%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.20848v1">MultiChallenge</a>                  38.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Deep Infra) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/models)
+api (Deep Infra) · $0.088/M blended · $0.05 in / $0.2 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/nvidia/Nemotron-3-Nano-30B-A3B.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/nvidia/Nemotron-3-Nano-30B-A3B.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-nano-30b-a3b.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-3-nano-30b-a3b.toml)
+<pre>
+download          size  score
+4-bit q4_k_m  ~19.46GB   33.9
+8-bit q8_0    ~38.42GB   33.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~19.46GB | 33.9 | `ollama run nemotron-3-nano:30b` |
-| 8-bit q8\_0 | ~38.42GB | 33.9 | `ollama run nemotron-3-nano:30b-a3b-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run nemotron-3-nano:30b
+# 8-bit q8_0
+ollama run nemotron-3-nano:30b-a3b-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S iGPU; Beelink GTR9 Pro 128GB | IQ4\_XS | 75.97 tok/s | llama.cpp 2016bf2 (build\_number 1 as recorded), Vulkan (RADV) · llama-bench; tg128; 128 generated tokens; context depth 0; n\_prompt=0 row; n\_batch=2048; n\_ubatch=512; flash\_attn=-1; type\_k=f16; type\_v=f16; n\_gpu\_layers=-1; threads=16; one sequence; file label r5 repetitions · Author's own llama-bench CSV row (avg\_ts mean over repetitions, stddev\_ts retained). GPU string as recorded: Radeon 8060S Graphics (RADV STRIX\_HALO). Unified memory; the guide reports ~124GiB OS-visible. Kernel/Mesa/power profile per the run folder notes. Not prompt processing or multi-request throughput. Curated in the guide's data/benchmarks.csv line 37 (2026-06-05, measured-local): Latest/int-dot practical NVIDIA 30B-class route after the Nemotron 3 release; current-model scout, not a top speed headline. | [source ↗](https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-05/latest-llamacpp-intdot-regression/nemotron-3-nano-30b-a3b-iq4xs-b2016bf2-r5.csv#L3) |
+<pre>
+hardware                      precision        speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  IQ4_XS     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-05/latest-llamacpp-intdot-regression/nemotron-3-nano-30b-a3b-iq4xs-b2016bf2-r5.csv#L3">75.97 tok/s</a>  llama.cpp 2016bf2 (build_number 1…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| NVFP4 PTQ (post-training, W4A4 FP4) | GPQA-Diamond accuracy (NVIDIA evaluation settings) | 0.73 → 0.716 | 98.1% | [source ↗](https://arxiv.org/html/2601.20088v3#S3.T3) |
-| NVFP4 PTQ (post-training, W4A4 FP4) | LiveCodeBench v5 accuracy (NVIDIA evaluation settings) | 0.721 → 0.689 | 95.6% | [source ↗](https://arxiv.org/html/2601.20088v3#S3.T3) |
-| NVFP4 PTQ (post-training, W4A4 FP4) | AIME 2025 accuracy (NVIDIA evaluation settings) | 0.891 → 0.85 | 95.4% | [source ↗](https://arxiv.org/html/2601.20088v3#S3.T3) |
-| NVFP4 QAD (quantization-aware distillation) | GPQA-Diamond accuracy (NVIDIA evaluation settings) | 0.73 → 0.727 | 99.6% | [source ↗](https://arxiv.org/html/2601.20088v3#S3.T3) |
-| NVFP4 QAD (quantization-aware distillation) | AIME 2025 accuracy (NVIDIA evaluation settings) | 0.891 → 0.879 | 98.7% | [source ↗](https://arxiv.org/html/2601.20088v3#S3.T3) |
-| NVFP4 QAD (quantization-aware distillation) | LiveCodeBench v5 accuracy (NVIDIA evaluation settings) | 0.721 → 0.689 | 95.6% | [source ↗](https://arxiv.org/html/2601.20088v3#S3.T3) |
+<pre>
+precision                       test                                full → quantized   kept
+NVFP4 PTQ (post-training, W4A…  GPQA-Diamond accuracy (NVIDIA eva…      0.73 → 0.716  <a href="https://arxiv.org/html/2601.20088v3#S3.T3">98.1%</a>
+NVFP4 PTQ (post-training, W4A…  LiveCodeBench v5 accuracy (NVIDIA…     0.721 → 0.689  <a href="https://arxiv.org/html/2601.20088v3#S3.T3">95.6%</a>
+NVFP4 PTQ (post-training, W4A…  AIME 2025 accuracy (NVIDIA evalua…      0.891 → 0.85  <a href="https://arxiv.org/html/2601.20088v3#S3.T3">95.4%</a>
+NVFP4 QAD (quantization-aware…  GPQA-Diamond accuracy (NVIDIA eva…      0.73 → 0.727  <a href="https://arxiv.org/html/2601.20088v3#S3.T3">99.6%</a>
+NVFP4 QAD (quantization-aware…  AIME 2025 accuracy (NVIDIA evalua…     0.891 → 0.879  <a href="https://arxiv.org/html/2601.20088v3#S3.T3">98.7%</a>
+NVFP4 QAD (quantization-aware…  LiveCodeBench v5 accuracy (NVIDIA…     0.721 → 0.689  <a href="https://arxiv.org/html/2601.20088v3#S3.T3">95.6%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/nemotron-3-nano-30b-a3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

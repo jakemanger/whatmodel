@@ -6,32 +6,31 @@
 
 Z.ai · closed weights
 
-**score 56.0** ±2.6
-
-#78 of 205 · from 4 benchmark results across 1 source
+**score 56.0** ±2.6 · #78 of 205 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1400.3 | 56.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1432.7 | 58.2 | ▇▇▇▇▇▇▇▇ 26% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1228.3 | 55.9 | ▇▇▇▇ 14% | 2026-09-13 |
-|  | [Arena document (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet) | 1400.1 | 47.8 | ▇▇▇ 10% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 56.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1400.3    56.7   2026-09-24   47% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1432.7    58.2   2026-09-13   26% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1228.3    55.9   2026-09-13   14% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1400.1    47.8   2026-09-13   10% ▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 56.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (SiliconFlow) · $1.90/M blended · $1.2 in / $4 out per 1M tokens · [www.siliconflow.com ↗](https://www.siliconflow.com/models/glm-5v-turbo)
+api (SiliconFlow) · $1.90/M blended · $1.2 in / $4 out per 1M tokens · [siliconflow.com](https://www.siliconflow.com/models/glm-5v-turbo)
 
-[price source](https://www.siliconflow.com/models/glm-5v-turbo) · USD per 1M tokens, SiliconFlow serverless pay-as-you-go, model zai-org/GLM-5V-Turbo (page state 'Available'; SiliconFlow names Z.ai as the model provider; served in FP8): input $1.20, output $4.00; cache-read input $0.24 excluded. Z.ai's own pricing page no longer lists GLM-5V-Turbo (its Vision Models table shows GLM-4.6V, GLM-OCR, GLM-4.6V-FlashX, GLM-4.5V and GLM-4.6V-Flash only); the same $1.20/$4.00 appears for Z.ai in models.dev @a668908. Not a Z.ai direct tariff. Currency: USD. SiliconFlow official model page, observed 2026-09-26.
-
-[context specification source](https://docs.z.ai/guides/vlm/glm-5v-turbo.md) · Z.ai GLM-5V-Turbo model guide: Context Length 200K (stated rounded), Maximum Output Tokens 128K. Observed 2026-09-25.
+<sub>[price source](https://www.siliconflow.com/models/glm-5v-turbo): USD per 1M tokens, SiliconFlow serverless pay-as-you-go, model zai-org/GLM-5V-Turbo (page state 'Available'; SiliconFlow names Z.ai as the model provider; served in FP8): input $1.20, output $4.00; cache-read input $0.24 excluded. Z.ai's own pricing page no longer lists GLM-5V-Turbo (its Vision Models table shows GLM-4.6V, GLM-OCR, GLM-4.6V-FlashX, GLM-4.5V and GLM-4.6V-Flash only); the same $1.20/$4.00 appears for Z.ai in models.dev @a668908. Not a Z.ai direct tariff. Currency: USD. SiliconFlow official model page, observed 2026-09-26. · [context source](https://docs.z.ai/guides/vlm/glm-5v-turbo.md): Z.ai GLM-5V-Turbo model guide: Context Length 200K (stated rounded), Maximum Output Tokens 128K. Observed 2026-09-25.</sub>
 
 no verified local download listed
 

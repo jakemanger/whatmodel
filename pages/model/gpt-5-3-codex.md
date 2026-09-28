@@ -6,29 +6,28 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 61.5** ±3.8
-
-#47 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.5** ±3.8 · #47 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [SWE-bench Verified](https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv) | 74.8% | 62.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-02-25 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 61.5** |  |  |
+<pre>
+source    test                    score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      74.8%    62.3   2026-02-25   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior     pull toward the middle           50.0                 6% ▇
+          weighted average               = 61.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (OpenAI) · $4.81/M blended · $1.75 in / $14 out per 1M tokens · [platform.openai.com ↗](https://platform.openai.com/docs/models)
+api (OpenAI) · $4.81/M blended · $1.75 in / $14 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.3-codex.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.3-codex.toml)
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5.3-codex.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5.3-codex.toml)</sub>
 
 no verified local download listed
 

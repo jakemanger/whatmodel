@@ -6,9 +6,7 @@
 
 Stability AI · released 2023-07 · 3.5B params · openrail++
 
-**score 23.4** ±3.2
-
-#86 of 87 · from 3 benchmark results across 3 sources
+**score 23.4** ±3.2 · #86 of 87 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,38 +14,52 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-imagenworld"></a><img src="../../icons/arxiv.org.png" width="14" alt="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) | [ImagenWorld text-guided generation (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 64.0% | 22.1 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-03-29 |
-| <a name="visual-geneval"></a><img src="../../icons/huggingface.co.png" width="14" alt="djghosh13/geneval repository README results"> djghosh13/geneval repository README results | [GenEval](https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md) | 55.0% | 25.6 | ▇▇▇▇▇▇▇▇▇▇ 35% | 2023-10-17 |
-| <a name="visual-imagetime"></a><img src="../../icons/arxiv.org.png" width="14" alt="Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency"> Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) | [ImageTime (prompt-only, overall)](https://arxiv.org/html/2606.10620v1#S5.T5) | 15.7% | 16.7 | ▇▇▇▇▇▇▇ 22% | 2026-06-09 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 23.4** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  64.0%    22.1   2026-03-29   39% ▇▇▇▇▇
+<a name="visual-geneval"></a>djghosh13/geneval rep…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                         55.0%    25.6   2023-10-17   35% ▇▇▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  15.7%    16.7   2026-06-09   22% ▇▇▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 23.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · djghosh13/geneval repository README results ([MIT](../../licenses/visual-geneval.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
 
 ## How to run it
 
-api (Together AI) · $0.0019/image · [www.together.ai ↗](https://www.together.ai/models/sd-xl)
+api (Together AI) · $0.0019/image · [together.ai](https://www.together.ai/models/sd-xl)
 
-[price source](https://www.together.ai/models/sd-xl) · USD for one 1-megapixel output: Together bills stabilityai/stable-diffusion-xl-base-1.0 at $0.0019 per output megapixel (price = rate × 1 MP; a 1024×1024 image is ~1.05 MP). Together states prices include default steps and extra steps cost more; the default step count for SD XL is not listed. Product: Together AI serverless image generation. API model: stabilityai/stable-diffusion-xl-base-1.0. Settings: 1 MP output, n=1, default steps. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Replaces a Replicate link whose SDXL endpoint is billed by hardware time only. Together AI official model page, observed 2026-09-25.
+<sub>[price source](https://www.together.ai/models/sd-xl): USD for one 1-megapixel output: Together bills stabilityai/stable-diffusion-xl-base-1.0 at $0.0019 per output megapixel (price = rate × 1 MP; a 1024×1024 image is ~1.05 MP). Together states prices include default steps and extra steps cost more; the default step count for SD XL is not listed. Product: Together AI serverless image generation. API model: stabilityai/stable-diffusion-xl-base-1.0. Settings: 1 MP output, n=1, default steps. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Replaces a Replicate link whose SDXL endpoint is billed by hardware time only. Together AI official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| fp16 · nvidia only | ~8.9GB | 23.4 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p('a cat holding a sign').images[0].save('out.png')"` |
-| fp16 + model CPU offload · nvidia only | ~8.9GB | 23.4 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16'); p.enable_model_cpu_offload(); p('a cat holding a sign').images[0].save('out.png')"` |
+<pre>
+version                                  needs  score
+fp16 · nvidia only                      ~8.9GB   23.4
+fp16 + model CPU offload · nvidia only  ~8.9GB   23.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# fp16 · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+# fp16 + model CPU offload · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16'); p.enable_model_cpu_offload(); p('a cat holding a sign').images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| MacBook Pro (M1 Max) | fp16 | 46 s/image | Core ML StableDiffusion Swift pipeline · 1024x1024; 20 steps; classifier-free guidance; UNet batch=2; CPU\_AND\_GPU; ORIGINAL attention; median of 3 end-to-end runs · Apple and Hugging Face July 2023 benchmark on public OS betas. UNet batch=2 implements guidance, not two output images. | [source ↗](https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L134) |
-| MacBook Pro (M2 Max) | fp16 | 37 s/image | Core ML StableDiffusion Swift pipeline · 1024x1024; 20 steps; classifier-free guidance; UNet batch=2; CPU\_AND\_GPU; ORIGINAL attention; median of 3 end-to-end runs · Apple and Hugging Face July 2023 benchmark on public OS betas. UNet batch=2 implements guidance, not two output images. | [source ↗](https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L135) |
-| Mac Studio (M1 Ultra) | fp16 | 25 s/image | Core ML StableDiffusion Swift pipeline · 1024x1024; 20 steps; classifier-free guidance; UNet batch=2; CPU\_AND\_GPU; ORIGINAL attention; median of 3 end-to-end runs · Apple and Hugging Face July 2023 benchmark on public OS betas. UNet batch=2 implements guidance, not two output images. | [source ↗](https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L136) |
-| Mac Studio (M2 Ultra) | fp16 | 20 s/image | Core ML StableDiffusion Swift pipeline · 1024x1024; 20 steps; classifier-free guidance; UNet batch=2; CPU\_AND\_GPU; ORIGINAL attention; median of 3 end-to-end runs · Apple and Hugging Face July 2023 benchmark on public OS betas. UNet batch=2 implements guidance, not two output images. | [source ↗](https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L137) |
+<pre>
+hardware               precision       speed  engine and settings
+MacBook Pro (M1 Max)   fp16       <a href="https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L134">46 s/image</a>  Core ML StableDiffusion Swift pip…
+MacBook Pro (M2 Max)   fp16       <a href="https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L135">37 s/image</a>  Core ML StableDiffusion Swift pip…
+Mac Studio (M1 Ultra)  fp16       <a href="https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L136">25 s/image</a>  Core ML StableDiffusion Swift pip…
+Mac Studio (M2 Ultra)  fp16       <a href="https://github.com/apple/ml-stable-diffusion/blob/ea2805dc1945be20561c77e5f6d1d9a5a637cda2/README.md#L137">20 s/image</a>  Core ML StableDiffusion Swift pip…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/sdxl) · [JSON](https://whatmodel.sh/api?format=json&all=1)

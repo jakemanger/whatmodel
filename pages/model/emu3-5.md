@@ -6,9 +6,7 @@
 
 BAAI
 
-**score 51.9** ±5.1
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.9** ±5.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +14,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 85.9% | 52.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 89% | 2026-07-12 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 51.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  85.9%    52.1   2026-07-12   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 51.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
 
 ## How to run it
 

@@ -50,6 +50,13 @@ export function resultLabel(r: Result) {
 export const benchName = (id: string) => benchmarkById.get(id)?.name ?? id;
 export const shareBar = (share: number) => "▇".repeat(Math.max(1, Math.round(share * 30)));
 
+// Why a published result doesn't count toward the score.
+const UNUSED = {
+  untracked: "not a tracked benchmark",
+  "other-source": "too few results from this source to calibrate it; another source's number for this test is used",
+  sparse: "too few models have this result to calibrate it yet",
+};
+
 export type ScoreRow = { r: Result; g: number; share: number; avg: number };
 export type ModelView =
   | { kind: "raw"; model: Model; raw: Result[] }
@@ -64,7 +71,7 @@ export type ModelView =
       sources: SourceSummary[];
       set: ComparisonSet | undefined; // named only when the category has several sets
       groups: { id: string; share: number; rows: ScoreRow[] }[]; // by source, biggest influence first
-      unused: { r: Result; why: string }[];
+      unused: { r: Result; reason: "untracked" | "other-source" | "sparse"; why: string }[];
       variants: { v: Variant; label: string; g: number }[];
       measured: Speed[];
       quant: QuantFinding[];
@@ -104,14 +111,10 @@ export function modelView(id: string): ModelView | null {
   const usedBench = new Set(explain.parts.map((p) => p.cell.bench));
   const unused = results
     .filter((r) => r.model === id && !used.has(r))
-    .map((r) => ({
-      r,
-      why: !benchmarkById.has(r.bench)
-        ? "not a tracked benchmark"
-        : usedBench.has(r.bench)
-          ? "too few results from this source to calibrate it; another source's number for this test is used"
-          : "too few models have this result to calibrate it yet",
-    }));
+    .map((r) => {
+      const reason = !benchmarkById.has(r.bench) ? "untracked" as const : usedBench.has(r.bench) ? "other-source" as const : "sparse" as const;
+      return { r, reason, why: UNUSED[reason] };
+    });
 
   return {
     kind: "scored", model, cat, score, explain,

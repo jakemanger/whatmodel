@@ -6,9 +6,7 @@
 
 OpenAI · released 2026-09 · proprietary
 
-**score 91.5** ±2.1
-
-#1 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 91.5** ±2.1 · #1 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1423.6 | 92.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 78% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1526.0 | 92.2 | ▇▇▇▇▇▇ 20% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 91.5** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1423.6    92.3   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1526.0    92.2   2026-09-22   20% ▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 91.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.013/image · [fal.ai ↗](https://fal.ai/models/openai/gpt-image-2.5/sunburst/text-to-image)
+api (fal.ai) · $0.013/image · [fal.ai](https://fal.ai/models/openai/gpt-image-2.5/sunburst/text-to-image)
 
-[price source](https://fal.ai/models/openai/gpt-image-2.5/sunburst/text-to-image) · USD per generated image, 1024×1024 medium quality: fal's per-size/per-quality table for ChatGPT Images 2.5 on this endpoint lists 1024×1024 at low $0.00588, medium $0.01317, high $0.05268, xhigh $0.09366, max $0.21072 (fal default quality is high). Product: fal.ai proxy of the OpenAI image model. API model: openai/gpt-image-2.5/sunburst/text-to-image (OpenAI gpt-image-2.5-sunburst). Settings: 1024×1024, quality=medium, num\_images=1. Price basis: fal's own published per-image figure (fal bills tokens underneath at $5/1M text input and $8/$30 per 1M image input/output tokens; fal states longer or more complex prompts cost more, so input text tokens are additional). Not an OpenAI direct tariff (OpenAI publishes token prices only). Currency: USD. fal.ai official model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/openai/gpt-image-2.5/sunburst/text-to-image): USD per generated image, 1024×1024 medium quality: fal's per-size/per-quality table for ChatGPT Images 2.5 on this endpoint lists 1024×1024 at low $0.00588, medium $0.01317, high $0.05268, xhigh $0.09366, max $0.21072 (fal default quality is high). Product: fal.ai proxy of the OpenAI image model. API model: openai/gpt-image-2.5/sunburst/text-to-image (OpenAI gpt-image-2.5-sunburst). Settings: 1024×1024, quality=medium, num\_images=1. Price basis: fal's own published per-image figure (fal bills tokens underneath at $5/1M text input and $8/$30 per 1M image input/output tokens; fal states longer or more complex prompts cost more, so input text tokens are additional). Not an OpenAI direct tariff (OpenAI publishes token prices only). Currency: USD. fal.ai official model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

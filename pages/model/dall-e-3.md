@@ -6,9 +6,7 @@
 
 OpenAI · closed weights
 
-**score 36.3** ±2.2
-
-comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 36.3** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,15 +14,18 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 967.8 | 36.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 80% | 2026-09-24 |
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 72.2% | 34.1 | ▇▇▇▇▇ 16% | 2026-07-12 |
-|  | [GenAI-Bench (VQAScore overall)](https://arxiv.org/html/2506.02161v3#S4.T3) | 81.0% | 46.9 | ▇ 2% | 2026-07-12 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 36.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           967.8    36.2   2026-09-24   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  72.2%    34.1   2026-07-12   16% ▇▇
+                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>  81.0%    46.9   2026-07-12    2% ▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 36.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
 
 ## How to run it
 

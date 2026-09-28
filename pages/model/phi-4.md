@@ -6,86 +6,99 @@
 
 Microsoft · released 2024-12 · 14.7B params · mit
 
-**score 33.1** ±1.5
-
-#182 of 205 · from 14 benchmark results across 9 sources
+**score 33.1** ±1.5 · #182 of 205 · from 14 benchmark results across 9 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="korean-personal-benchmark-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Daekeun Kim Korean LLM benchmark runs"> Daekeun Kim Korean LLM benchmark runs | [HAE-RAE 1.0 (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 59.2% | 30.9 | ▇▇▇▇ 12% |  |
-|  | [CLIcK Korean (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 59.2% | 35.0 | ▇▇▇ 11% |  |
-|  | [KMMLU-HARD (Daekeun Kim, zero-shot)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 24.2% | 20.3 | ▇▇▇ 9% |  |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [MATH level 5](https://epoch.ai/data/benchmark_data.zip#math_level_5.csv) | 64.9% | 38.1 | ▇▇▇▇▇ 17% | 2025-01-31 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 56.1% | 43.4 | ▇▇ 7% | 2025-01-31 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 13.8% | 32.6 | ▇▇ 7% | 2025-02-25 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 1.0% | 29.2 | ▇ 2% | 2026-08-28 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1256.1 | 25.7 | ▇▇▇ 9% | 2026-09-13 |
-| <a name="speakleash-polish-eq-bench"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash Polish EQ-Bench leaderboard"> SpeakLeash Polish EQ-Bench leaderboard | [Polish EQ-Bench v2 (SpeakLeash)](https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv) | 64.4% | 33.4 | ▇▇ 7% | 2025-03-01 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 66.1% | 32.2 | ▇▇ 5% | 2026-08-11 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 76.1% | 37.1 | ▇ 4% | 2025-01-29 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 30.0% | 33.2 | ▇ 4% | 2025-12-19 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 28.8% | 31.3 | ▇ 3% | 2025-12-16 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 36.1% | 40.4 | ▇ 3% | 2025-04-28 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 33.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        59.2%    30.9                12% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       59.2%    35.0                11% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   24.2%    20.3                 9% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     64.9%    38.1   2025-01-31   17% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     56.1%    43.4   2025-01-31    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         13.8%    32.6   2025-02-25    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             1.0%    29.2   2026-08-28    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1256.1    25.7   2026-09-13    9% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   64.4%    33.4   2025-03-01    7% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   66.1%    32.2   2026-08-11    5% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   76.1%    37.1   2025-01-29    4% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   30.0%    33.2   2025-12-19    4% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   28.8%    31.3   2025-12-16    3% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   36.1%    40.4   2025-04-28    3% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 33.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (17)
+<sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| microsoft/phi-4 model card | [MMLU](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 84.8% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [GPQA (subset unspecified)](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 56.1% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [MGSM](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 80.6% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [MATH (subset unspecified)](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 80.4% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [HumanEval](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 82.6% | too few models have this result to calibrate it yet |
-| microsoft/phi-4 model card | [SimpleQA](https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md) | 3.0% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [Arena-Hard (version/judge unspecified)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 68.1% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [FlenQA (3K-token subset)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 82.0% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [HumanEval+](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 83.5% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [IFEval strict (prompt/instruction level unspecified)](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 62.3% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-reasoning model card | [MMLU-Pro](https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md) | 71.5% | too few models have this result to calibrate it yet |
-| Microsoft Research — Phi-4 Technical Report | [Arena-Hard (version/judge unspecified)](https://arxiv.org/html/2412.08905v1) | 75.4% | too few models have this result to calibrate it yet |
-| Microsoft Research — Phi-4 Technical Report | [HumanEval+](https://arxiv.org/html/2412.08905v1) | 82.8% | too few models have this result to calibrate it yet |
-| Microsoft Research — Phi-4 Technical Report | [IFEval (aggregation unspecified)](https://arxiv.org/html/2412.08905v1) | 63.0% | too few models have this result to calibrate it yet |
-| Microsoft Research — Phi-4 Technical Report | [LiveBench (release not stated)](https://arxiv.org/html/2412.08905v1) | 47.6% | too few models have this result to calibrate it yet |
-| Microsoft Research — Phi-4 Technical Report | [MMLU-Pro](https://arxiv.org/html/2412.08905v1) | 70.4% | too few models have this result to calibrate it yet |
-| Microsoft Research — Phi-4 Technical Report | [DROP F1, 3-shot (simple-evals)](https://arxiv.org/html/2412.08905v1) | 75.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (17)</summary>
+
+<pre>
+source                  test                            score  why
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MMLU</a>                            84.8%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">GPQA (subset unspecified)</a>       56.1%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MGSM</a>                            80.6%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">MATH (subset unspecified)</a>       80.4%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval</a>                       82.6%  too few models have it yet
+microsoft/phi-4 model…  <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">SimpleQA</a>                         3.0%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">Arena-Hard (version/judge uns…</a>  68.1%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">FlenQA (3K-token subset)</a>        82.0%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">HumanEval+</a>                      83.5%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">IFEval strict (prompt/instruc…</a>  62.3%  too few models have it yet
+microsoft/Phi-4-reaso…  <a href="https://huggingface.co/microsoft/Phi-4-reasoning/blob/1de18ec97600877ce63dbf60c73b998da99f0195/README.md">MMLU-Pro</a>                        71.5%  too few models have it yet
+Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">Arena-Hard (version/judge uns…</a>  75.4%  too few models have it yet
+Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">HumanEval+</a>                      82.8%  too few models have it yet
+Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">IFEval (aggregation unspecifi…</a>  63.0%  too few models have it yet
+Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">LiveBench (release not stated)</a>  47.6%  too few models have it yet
+Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">MMLU-Pro</a>                        70.4%  too few models have it yet
+Microsoft Research      <a href="https://arxiv.org/html/2412.08905v1">DROP F1, 3-shot (simple-evals)</a>  75.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.088/M blended · $0.07 in / $0.14 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/microsoft/phi-4)
+api (DeepInfra) · $0.088/M blended · $0.07 in / $0.14 out per 1M tokens · [deepinfra.com](https://deepinfra.com/microsoft/phi-4)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: microsoft/phi-4. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: microsoft/phi-4. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download          size  score
+4-bit q4_k_m   ~9.32GB   33.1
+8-bit q8_0    ~18.14GB   33.1
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~9.32GB | 33.1 | `ollama run phi4:14b` |
-| 8-bit q8\_0 | ~18.14GB | 33.1 | `ollama run phi4:14b-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run phi4:14b
+# 8-bit q8_0
+ollama run phi4:14b-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | GSM8K 5-shot strict-match (lm-evaluation-harness \`openllm\`, vLLM) | 0.901 → 0.907 | 100.7% | [source ↗](https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/blob/8f62f4b85ccc1c7fda9f178976c1162f37e43651/README.md#L357) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | MMLU 5-shot (lm-evaluation-harness \`openllm\`, vLLM) | 0.803 → 0.803 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/blob/8f62f4b85ccc1c7fda9f178976c1162f37e43651/README.md#L337) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.765 → 0.765 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/blob/8f62f4b85ccc1c7fda9f178976c1162f37e43651/README.md#L397) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; GPTQ) | GSM8K 5-shot strict-match (lm-evaluation-harness \`openllm\`, vLLM) | 0.901 → 0.897 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/phi-4-quantized.w4a16/blob/e05cd2e17a849b824c85d6acdec3f62be9cd24c1/README.md#L372) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; GPTQ) | MMLU 5-shot (lm-evaluation-harness \`openllm\`, vLLM) | 0.803 → 0.799 | 99.5% | [source ↗](https://huggingface.co/RedHatAI/phi-4-quantized.w4a16/blob/e05cd2e17a849b824c85d6acdec3f62be9cd24c1/README.md#L352) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; GPTQ) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.765 → 0.76 | 99.3% | [source ↗](https://huggingface.co/RedHatAI/phi-4-quantized.w4a16/blob/e05cd2e17a849b824c85d6acdec3f62be9cd24c1/README.md#L412) |
-| INT8 W8A8 (weights static per-channel, activations dynamic per-token; SmoothQuant + GPTQ) | GSM8K 5-shot strict-match (lm-evaluation-harness \`openllm\`, vLLM) | 0.901 → 0.903 | 100.3% | [source ↗](https://huggingface.co/RedHatAI/phi-4-quantized.w8a8/blob/47ae81515aec82176f334e02506eea10dacfddca/README.md#L384) |
-| INT8 W8A8 (weights static per-channel, activations dynamic per-token; SmoothQuant + GPTQ) | MMLU 5-shot (lm-evaluation-harness \`openllm\`, vLLM) | 0.803 → 0.804 | 100.1% | [source ↗](https://huggingface.co/RedHatAI/phi-4-quantized.w8a8/blob/47ae81515aec82176f334e02506eea10dacfddca/README.md#L364) |
-| INT8 W8A8 (weights static per-channel, activations dynamic per-token; SmoothQuant + GPTQ) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.765 → 0.763 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/phi-4-quantized.w8a8/blob/47ae81515aec82176f334e02506eea10dacfddca/README.md#L424) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 W8A8 dynamic (weights sym…  GSM8K 5-shot strict-match (lm-eva…     0.901 → 0.907  <a href="https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/blob/8f62f4b85ccc1c7fda9f178976c1162f37e43651/README.md#L357">100.7%</a>
+FP8 W8A8 dynamic (weights sym…  MMLU 5-shot (lm-evaluation-harnes…     0.803 → 0.803  <a href="https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/blob/8f62f4b85ccc1c7fda9f178976c1162f37e43651/README.md#L337">100.0%</a>
+FP8 W8A8 dynamic (weights sym…  OpenLLM v1 average of 6 tasks (AR…     0.765 → 0.765   <a href="https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/blob/8f62f4b85ccc1c7fda9f178976c1162f37e43651/README.md#L397">99.9%</a>
+INT4 W4A16 (weights only, sym…  GSM8K 5-shot strict-match (lm-eva…     0.901 → 0.897   <a href="https://huggingface.co/RedHatAI/phi-4-quantized.w4a16/blob/e05cd2e17a849b824c85d6acdec3f62be9cd24c1/README.md#L372">99.6%</a>
+INT4 W4A16 (weights only, sym…  MMLU 5-shot (lm-evaluation-harnes…     0.803 → 0.799   <a href="https://huggingface.co/RedHatAI/phi-4-quantized.w4a16/blob/e05cd2e17a849b824c85d6acdec3f62be9cd24c1/README.md#L352">99.5%</a>
+INT4 W4A16 (weights only, sym…  OpenLLM v1 average of 6 tasks (AR…      0.765 → 0.76   <a href="https://huggingface.co/RedHatAI/phi-4-quantized.w4a16/blob/e05cd2e17a849b824c85d6acdec3f62be9cd24c1/README.md#L412">99.3%</a>
+INT8 W8A8 (weights static per…  GSM8K 5-shot strict-match (lm-eva…     0.901 → 0.903  <a href="https://huggingface.co/RedHatAI/phi-4-quantized.w8a8/blob/47ae81515aec82176f334e02506eea10dacfddca/README.md#L384">100.3%</a>
+INT8 W8A8 (weights static per…  MMLU 5-shot (lm-evaluation-harnes…     0.803 → 0.804  <a href="https://huggingface.co/RedHatAI/phi-4-quantized.w8a8/blob/47ae81515aec82176f334e02506eea10dacfddca/README.md#L364">100.1%</a>
+INT8 W8A8 (weights static per…  OpenLLM v1 average of 6 tasks (AR…     0.765 → 0.763   <a href="https://huggingface.co/RedHatAI/phi-4-quantized.w8a8/blob/47ae81515aec82176f334e02506eea10dacfddca/README.md#L424">99.8%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/phi-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

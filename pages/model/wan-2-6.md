@@ -6,31 +6,32 @@
 
 Alibaba · closed weights
 
-**score 57.8** ±2.1
-
-#21 of 54 · from 5 benchmark results across 4 sources
+**score 57.8** ±2.1 · #21 of 54 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1326.7 | 59.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1309.5 | 54.2 | ▇▇▇▇▇▇▇▇ 27% | 2026-09-22 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1023.0 | 60.0 | ▇▇▇▇▇ 18% | 2026-09-25 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 50.4% | 58.1 | ▇▇ 6% | 2026-08-10 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 84.8% | 39.6 | ▇ 1% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 57.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1326.7    59.6   2026-09-22   47% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1309.5    54.2   2026-09-22   27% ▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1023.0    60.0   2026-09-25   18% ▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   50.4%    58.1   2026-08-10    6% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 84.8%    39.6   2026-04-22    1% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 57.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.10/sec · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.10/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio Wan text-to-video. API model: wan2.6-t2v. Settings: resolution=720P. Price basis: published list price; only output is billed. 1080P $0.15/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio Wan text-to-video. API model: wan2.6-t2v. Settings: resolution=720P. Price basis: published list price; only output is billed. 1080P $0.15/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

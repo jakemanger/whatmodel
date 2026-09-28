@@ -6,23 +6,24 @@
 
 Luma AI · closed weights
 
-**score 29.2** ±2.1
-
-comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 29.2** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1065.4 | 29.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 48% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1108.5 | 28.6 | ▇▇▇▇▇▇▇▇ 28% | 2026-09-22 |
-| <a name="visual-videophy-readme"></a><img src="../../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards"> VideoPhy / VideoPhy-2 official repository leaderboards | [VideoPhy-2 (human, joint SA & PC)](https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-) | 20.3% | 28.3 | ▇▇▇▇▇▇ 22% | 2026-01-30 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 29.2** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1065.4    29.1   2026-09-22   48% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1108.5    28.6   2026-09-22   28% ▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>   20.3%    28.3   2026-01-30   22% ▇▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 29.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt))</sub>
 
 ## How to run it
 

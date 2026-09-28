@@ -6,55 +6,65 @@
 
 Meta · released 2025-04 · 109B params (17B active) · llama-4
 
-**score 35.7** ±1.7
-
-#173 of 205 · from 12 benchmark results across 9 sources
+**score 35.7** ±1.7 · #173 of 205 · from 12 benchmark results across 9 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [MATH level 5](https://epoch.ai/data/benchmark_data.zip#math_level_5.csv) | 62.3% | 37.3 | ▇▇▇▇▇▇▇ 23% | 2025-04-08 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 51.8% | 41.3 | ▇▇▇ 10% | 2025-04-08 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 7.8% | 28.3 | ▇▇▇ 9% | 2025-04-08 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1321.5 | 37.7 | ▇▇▇▇ 12% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1127.2 | 31.6 | ▇▇ 6% | 2026-09-13 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 993.6 | 23.2 | ▇▇▇ 9% | 2026-05-10 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 75.0% | 41.4 | ▇▇ 7% | 2026-08-11 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 78.7% | 41.0 | ▇▇ 6% | 2025-04-05 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 69.0% | 47.4 | ▇ 5% | 2026-09-19 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 28.1% | 30.6 | ▇ 4% | 2025-12-16 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 35.1% | 38.8 | ▇ 4% | 2025-04-28 |
-| <a name="galileo-agent-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Galileo Agent Leaderboard (v1 and v2 results)"> Galileo Agent Leaderboard (v1 and v2 results) | [Galileo Agent Leaderboard v1 (tool selection quality)](https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv) | 62.9% | 15.7 | ▇ 2% | 2025-07-02 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 35.7** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     62.3%    37.3   2025-04-08   23% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     51.8%    41.3   2025-04-08   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          7.8%    28.3   2025-04-08    9% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1321.5    37.7   2026-09-13   12% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1127.2    31.6   2026-09-13    6% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>   993.6    23.2   2026-05-10    9% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   75.0%    41.4   2026-08-11    7% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   78.7%    41.0   2025-04-05    6% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   69.0%    47.4   2026-09-19    5% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   28.1%    30.6   2025-12-16    4% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   35.1%    38.8   2025-04-28    4% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   62.9%    15.7   2025-07-02    2% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 35.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/meta-llama/Llama-4-Scout-17B-16E-Instruct)
+api (DeepInfra) · $0.15/M blended · $0.1 in / $0.3 out per 1M tokens · [deepinfra.com](https://deepinfra.com/meta-llama/Llama-4-Scout-17B-16E-Instruct)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: meta-llama/Llama-4-Scout-17B-16E-Instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: meta-llama/Llama-4-Scout-17B-16E-Instruct. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download             size  score
+4-bit q4_k_m      ~65.9GB   35.7
+2-bit ud-q2_k_xl  ~33.2GB   35.7
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~65.9GB | 35.7 | `ollama run llama4:scout` |
-| 2-bit ud-q2\_k\_xl | ~33.2GB | 35.7 | `llama-server -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit q4_k_m
+ollama run llama4:scout
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S iGPU; Beelink GTR9 Pro 128GB | Q4\_K\_M | 18.32 tok/s | llama.cpp b8933, Vulkan (RADV) · llama-bench pp512/tg128 as tabulated (tg\_tps column = tg128 generation); exact flags not retained in a raw CSV for this historical row · Historical row sourced by the guide to its own BENCHMARKS.md/README.md; no raw CSV retained. Row date 2026-04-26, status measured-local, kernel 6.19.4, driver stack 26.0.2-26.0.6. Author note: 109B parameters on one mini PC | [source ↗](https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/benchmarks.csv#L75) |
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S; pre-production Framework Desktop 128GB LPDDR5x-8000 | UD-Q4\_K\_XL | 19.78 tok/s | llama.cpp 83bc2f288 (commit from system\_info.json), backend vulkan · llama-bench tg128 (128 generated tokens, empty context); backend variant 'llama.cpp-vulkan'; flags: defaults; mmap disabled per the guide; value = bold best tg128 in this model's Benchmark Results table · Author's own sweep; README value 19.784728 rounded to 2 decimals. Kernel 6.16.0-1-mainline; system\_info timestamp 2025-08-05T09:07:01.852368Z; CPU string 'AMD RYZEN AI MAX+ 395 w/ Radeon 8060S'. Pre-production hardware and BIOS per the README. | [source ↗](https://github.com/lhl/strix-halo-testing/blob/5ee14b5b0ecfbd16b7fd0aa41a91581c32b33b61/llm-bench/Llama-4-Scout-17B-16E-Instruct-UD-Q4_K_XL/README.md#L12) |
+<pre>
+hardware                      precision         speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  Q4_K_M      <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/benchmarks.csv#L75">18.32 tok/s</a>  llama.cpp b8933, Vulkan (RADV) · …
+AMD Ryzen AI Max+ 395 (Stri…  UD-Q4_K_XL  <a href="https://github.com/lhl/strix-halo-testing/blob/5ee14b5b0ecfbd16b7fd0aa41a91581c32b33b61/llm-bench/Llama-4-Scout-17B-16E-Instruct-UD-Q4_K_XL/README.md#L12">19.78 tok/s</a>  llama.cpp 83bc2f288 (commit from …
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/llama-4-scout) · [JSON](https://whatmodel.sh/api?format=json&all=1)

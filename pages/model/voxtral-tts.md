@@ -6,36 +6,45 @@
 
 Mistral · released 2026-03 · 4B params · cc-by-nc-4.0
 
-**score 65.7** ±3.1
-
-#1 of 36 · from 4 benchmark results across 1 source
+**score 65.7** ±3.1 · #1 of 36 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-voxtral-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Voxtral TTS"> Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Seed-TTS · report split unspecified, speaker similarity](https://arxiv.org/html/2603.25551v2) lab-reported | 62.8% | 69.1 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-04-06 |
-|  | [MiniMax TTS · 9-language speaker similarity](https://arxiv.org/html/2603.25551v2) lab-reported | 74.3% | 69.6 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-04-06 |
-|  | [MiniMax TTS · 9-language WER (Voxtral ASR)](https://arxiv.org/html/2603.25551v2) lab-reported | 1.9% | 60.2 | ▇▇▇▇▇ 16% | 2026-04-06 |
-|  | [Seed-TTS · report split unspecified (Voxtral ASR)](https://arxiv.org/html/2603.25551v2) lab-reported | 1.2% | 58.8 | ▇▇▇▇ 13% | 2026-04-06 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 65.7** |  |  |
+<pre>
+source       test                            score  implies  date        weight
+<a name="speech-voxtral-tts-report"></a>Voxtral TTS  <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>  62.8%    69.1   2026-04-06   34% ▇▇▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>  74.3%    69.6   2026-04-06   33% ▇▇▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>   1.9%    60.2   2026-04-06   16% ▇▇
+             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>   1.2%    58.8   2026-04-06   13% ▇▇
+prior        pull toward the middle                   49.9                 4% ▇
+             weighted average                       = 65.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Mistral AI) · $16.00/M chars · [docs.mistral.ai ↗](https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03)
+api (Mistral AI) · $16.00/M chars · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M input characters for Voxtral TTS March 2026 (voxtral-mini-tts-2603). Product: La Plateforme text-to-speech. API model: voxtral-mini-tts-2603. Settings: endpoint=/v1/audio/speech. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters for Voxtral TTS March 2026 (voxtral-mini-tts-2603). Product: La Plateforme text-to-speech. API model: voxtral-mini-tts-2603. Settings: endpoint=/v1/audio/speech. Price basis: published rate. Currency: USD.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~10.1GB | 65.7 | `uv pip install -U vllm vllm-omni && vllm serve mistralai/Voxtral-4B-TTS-2603 --omni` |
-| bf16 · mac only | ~10.1GB | 65.7 | `pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Voxtral-4B-TTS-2603-mlx-bf16 --text 'Hello, world!' --voice casual_male` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~10.1GB   65.7
+bf16 · mac only     ~10.1GB   65.7
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv pip install -U vllm vllm-omni && vllm serve mistralai/Voxtral-4B-TTS-2603 --omni
+# bf16 · mac only
+pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Voxtral-4B-TTS-2603-mlx-bf16 --text 'Hello, world!' --voice casual_male
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/voxtral-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

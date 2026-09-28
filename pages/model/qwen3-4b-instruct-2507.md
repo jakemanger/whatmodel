@@ -6,105 +6,123 @@
 
 Alibaba · released 2025-08 · 4.02B params · apache-2.0
 
-**score 39.0** ±2.8
-
-#155 of 205 · from 6 benchmark results across 4 sources
+**score 39.0** ±2.8 · #155 of 205 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 45.8% | 37.9 | ▇▇▇▇▇▇▇▇ 27% | 2026-08-28 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 52.2% | 45.4 | ▇▇▇▇▇▇▇ 25% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 4.0% | 29.2 | ▇▇ 8% | 2026-08-28 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 74.7% | 35.1 | ▇▇▇▇▇ 16% | 2025-08-30 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 35.7% | 37.7 | ▇▇▇ 10% | 2025-12-16 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 34.1% | 37.2 | ▇▇▇ 10% | 2025-09-04 |
-| prior | pull toward the middle |  | 50.0 | ▇ 4% |  |
-|  | **weighted average** |  | **= 39.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    45.8%    37.9   2026-08-28   27% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        52.2%    45.4   2026-08-28   25% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            4.0%    29.2   2026-08-28    8% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.7%    35.1   2025-08-30   16% ▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  35.7%    37.7   2025-12-16   10% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  34.1%    37.2   2025-09-04   10% ▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 39.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (25)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3-4B-Instruct-2507 model card | [MMLU-Pro](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 69.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [AIME 2025](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 47.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [LiveCodeBench v6 (Feb–May 2025)](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 35.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [Aider polyglot (225 exercises, two attempts)](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 12.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [Arena-Hard v2 aggregate](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 43.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [BFCL v3](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 61.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [Creative Writing v3](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 83.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [GPQA (subset unspecified)](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 62.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [HMMT 2025 (edition unspecified)](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 31.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [IFEval (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 83.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [INCLUDE](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 60.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [LiveBench 2024-11-25](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 63.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [MMLU-ProX](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 61.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [MMLU-Redux](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 84.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [Multi-IF (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 69.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [MultiPL-E](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 76.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [PolyMATH](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 31.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [SuperGPQA](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 42.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [τ-bench Airline](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 32.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [τ-bench Retail](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 48.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [τ²-bench Airline](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 24.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [τ²-bench Retail](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 40.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [τ²-bench Telecom](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 13.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [WritingBench](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 83.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-4B-Instruct-2507 model card | [ZebraLogic](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) | 80.2% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (25)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MMLU-Pro</a>                        69.6%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">AIME 2025</a>                       47.4%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">LiveCodeBench v6 (Feb–May 202…</a>  35.1%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Aider polyglot (225 exercises…</a>  12.9%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Arena-Hard v2 aggregate</a>         43.4%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">BFCL v3</a>                         61.9%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Creative Writing v3</a>             83.5%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">GPQA (subset unspecified)</a>       62.0%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">HMMT 2025 (edition unspecifie…</a>  31.0%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">IFEval (aggregation unspecifi…</a>  83.4%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">INCLUDE</a>                         60.1%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">LiveBench 2024-11-25</a>            63.0%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MMLU-ProX</a>                       61.6%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MMLU-Redux</a>                      84.2%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">Multi-IF (aggregation unspeci…</a>  69.0%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MultiPL-E</a>                       76.8%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">PolyMATH</a>                        31.1%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">SuperGPQA</a>                       42.8%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Airline</a>                 32.0%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ-bench Retail</a>                  48.7%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Airline</a>                24.0%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Retail</a>                 40.4%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">τ²-bench Telecom</a>                13.2%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">WritingBench</a>                    83.4%  too few models have it yet
+Qwen/Qwen3-4B-Instruc…  <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">ZebraLogic</a>                      80.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md) · Native context for this exact July 2025 model version.
+<sub>[context source](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md): Native context for this exact July 2025 model version.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~2.91GB | 39.0 | `ollama run qwen3:4b-instruct` |
-| 8-bit q8\_0 | ~5.32GB | 39.0 | `ollama run qwen3:4b-instruct-2507-q8_0` |
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.91GB   39.0
+8-bit q8_0    ~5.32GB   39.0
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run qwen3:4b-instruct
+# 8-bit q8_0
+ollama run qwen3:4b-instruct-2507-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | bf16 (unquantized Qwen/ repo) | 52.47 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L31) |
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | MLX 8-bit affine quantization (q8, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-8bit) | 86.907 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L32) |
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | MLX 6-bit affine quantization (q6, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-6bit) | 104.68 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L33) |
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | MLX 5-bit affine quantization (q5 g32, group size 32; mlx-community/Qwen3-4B-Instruct-2507-5bit-g32) | 110.29 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L34) |
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | MLX 5-bit affine quantization (q5, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-5bit) | 116.39 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L35) |
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | MLX 4-bit affine quantization (q4 g32, group size 32; mlx-community/Qwen3-4B-Instruct-2507-4bit-g32) | 126 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L36) |
-| Apple M4 Max (64GB; CPU/GPU core count not stated) | MLX 4-bit affine quantization (q4, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-4bit) | 134.52 tok/s | mlx-lm 0.28.2, mlx 0.29.2.dev20251008+85a8824a8, macOS 26.1 · mlx\_lm.benchmark -p 2048 -g 128; 'Generation (128) tok/sec' column: decode throughput for 128 generated tokens after a 2048-token prompt; batch size not stated beyond the documented command · Published generation column; the separate Prompt (2048) tok/sec column is prompt processing and is not recorded as generation speed. Memory GB column retained as peak\_memory\_gb as printed. M4 Max core count is not stated; only the 64GB configuration is. | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L37) |
+<pre>
+hardware                      precision                speed  engine and settings
+Apple M4 Max (64GB; CPU/GPU…  bf16 (unquantiz…   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L31">52.47 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+Apple M4 Max (64GB; CPU/GPU…  MLX 8-bit affin…  <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L32">86.907 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+Apple M4 Max (64GB; CPU/GPU…  MLX 6-bit affin…  <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L33">104.68 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+Apple M4 Max (64GB; CPU/GPU…  MLX 5-bit affin…  <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L34">110.29 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+Apple M4 Max (64GB; CPU/GPU…  MLX 5-bit affin…  <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L35">116.39 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+Apple M4 Max (64GB; CPU/GPU…  MLX 4-bit affin…     <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L36">126 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+Apple M4 Max (64GB; CPU/GPU…  MLX 4-bit affin…  <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L37">134.52 tok/s</a>  mlx-lm 0.28.2, mlx 0.29.2.dev2025…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | GSM8K-Platinum — published row 'GSM8k Platinum (5-shot)'; lm-evaluation-harness task gsm8k\_platinum\_cot\_llama via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.956 → 0.961 | 100.5% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L205) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | MATH-500 — published row 'Math 500'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.843 → 0.842 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L209) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | IFEval — published row 'IfEval'; lm-evaluation-harness task ifeval via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.89 → 0.886 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L208) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | MMLU (CoT) — published row 'MMLU-CoT (5-shot)'; lm-evaluation-harness task mmlu\_cot\_llama via vLLM server (command not found in card) | 0.775 → 0.768 | 99.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L206) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | MMLU-Pro — published row 'MMLU-Pro (5-shot)'; lm-evaluation-harness task mmlu\_pro\_chat via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.701 → 0.689 | 98.3% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L207) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | GSM8K-Platinum — published row 'GSM8k Platinum (5-shot)'; lm-evaluation-harness task gsm8k\_platinum\_cot\_llama via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.956 → 0.957 | 100.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L224) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | IFEval — published row 'IfEval'; lm-evaluation-harness task ifeval via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.89 → 0.89 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L227) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | GPQA Diamond — published row 'GPQA diamond'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.452 → 0.452 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L229) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | MMLU-Pro — published row 'MMLU-Pro (5-shot)'; lm-evaluation-harness task mmlu\_pro\_chat via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.701 → 0.7 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L226) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | MMLU (CoT) — published row 'MMLU-CoT (5-shot)'; lm-evaluation-harness task mmlu\_cot\_llama via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.775 → 0.77 | 99.3% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L225) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | MATH-500 — published row 'Math 500'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.843 → 0.836 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L230) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | AIME 2025 — published row 'AIME 2025'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.476 → 0.467 | 98.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L228) |
-| MLX 4-bit affine quantization (q4 g32, group size 32; mlx-community/Qwen3-4B-Instruct-2507-4bit-g32) | MMLU-Pro (mlx\_lm.evaluate --task mmlu\_pro; lm-evaluation-harness task defaults, shots not stated in document) | 0.64 → 0.615 | 96.0% | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L36) |
-| MLX 4-bit affine quantization (q4, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-4bit) | MMLU-Pro (mlx\_lm.evaluate --task mmlu\_pro; lm-evaluation-harness task defaults, shots not stated in document) | 0.64 → 0.607 | 94.8% | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L37) |
-| MLX 5-bit affine quantization (q5 g32, group size 32; mlx-community/Qwen3-4B-Instruct-2507-5bit-g32) | MMLU-Pro (mlx\_lm.evaluate --task mmlu\_pro; lm-evaluation-harness task defaults, shots not stated in document) | 0.64 → 0.632 | 98.6% | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L34) |
-| MLX 5-bit affine quantization (q5, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-5bit) | MMLU-Pro (mlx\_lm.evaluate --task mmlu\_pro; lm-evaluation-harness task defaults, shots not stated in document) | 0.64 → 0.624 | 97.4% | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L35) |
-| MLX 6-bit affine quantization (q6, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-6bit) | MMLU-Pro (mlx\_lm.evaluate --task mmlu\_pro; lm-evaluation-harness task defaults, shots not stated in document) | 0.64 → 0.635 | 99.2% | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L33) |
-| MLX 8-bit affine quantization (q8, group size not stated (mlx-lm default); mlx-community/Qwen3-4B-Instruct-2507-8bit) | MMLU-Pro (mlx\_lm.evaluate --task mmlu\_pro; lm-evaluation-harness task defaults, shots not stated in document) | 0.64 → 0.638 | 99.7% | [source ↗](https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L32) |
+<pre>
+precision                       test                                full → quantized    kept
+INT4 W4A16 (weight-only INT4,…  GSM8K-Platinum — published row 'G…     0.956 → 0.961  <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L205">100.5%</a>
+INT4 W4A16 (weight-only INT4,…  MATH-500 — published row 'Math 50…     0.843 → 0.842   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L209">99.8%</a>
+INT4 W4A16 (weight-only INT4,…  IFEval — published row 'IfEval'; …      0.89 → 0.886   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L208">99.6%</a>
+INT4 W4A16 (weight-only INT4,…  MMLU (CoT) — published row 'MMLU-…     0.775 → 0.768   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L206">99.1%</a>
+INT4 W4A16 (weight-only INT4,…  MMLU-Pro — published row 'MMLU-Pr…     0.701 → 0.689   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w4a16/blob/5d4fde88f26ef2577a3e660db6304eaa6cbe99a1/README.md#L207">98.3%</a>
+INT8 W8A8 (weights INT8 per-c…  GSM8K-Platinum — published row 'G…     0.956 → 0.957  <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L224">100.1%</a>
+INT8 W8A8 (weights INT8 per-c…  IFEval — published row 'IfEval'; …       0.89 → 0.89  <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L227">100.0%</a>
+INT8 W8A8 (weights INT8 per-c…  GPQA Diamond — published row 'GPQ…     0.452 → 0.452  <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L229">100.0%</a>
+INT8 W8A8 (weights INT8 per-c…  MMLU-Pro — published row 'MMLU-Pr…       0.701 → 0.7   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L226">99.8%</a>
+INT8 W8A8 (weights INT8 per-c…  MMLU (CoT) — published row 'MMLU-…      0.775 → 0.77   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L225">99.3%</a>
+INT8 W8A8 (weights INT8 per-c…  MATH-500 — published row 'Math 50…     0.843 → 0.836   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L230">99.2%</a>
+INT8 W8A8 (weights INT8 per-c…  AIME 2025 — published row 'AIME 2…     0.476 → 0.467   <a href="https://huggingface.co/RedHatAI/Qwen3-4B-Instruct-2507-quantized.w8a8/blob/31ec5013b3319d7ba82b2a354d6e48b376204dd3/README.md#L228">98.0%</a>
+MLX 4-bit affine quantization…  MMLU-Pro (mlx_lm.evaluate --task …      0.64 → 0.615   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L36">96.0%</a>
+MLX 4-bit affine quantization…  MMLU-Pro (mlx_lm.evaluate --task …      0.64 → 0.607   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L37">94.8%</a>
+MLX 5-bit affine quantization…  MMLU-Pro (mlx_lm.evaluate --task …      0.64 → 0.632   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L34">98.6%</a>
+MLX 5-bit affine quantization…  MMLU-Pro (mlx_lm.evaluate --task …      0.64 → 0.624   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L35">97.4%</a>
+MLX 6-bit affine quantization…  MMLU-Pro (mlx_lm.evaluate --task …      0.64 → 0.635   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L33">99.2%</a>
+MLX 8-bit affine quantization…  MMLU-Pro (mlx_lm.evaluate --task …      0.64 → 0.638   <a href="https://github.com/ml-explore/mlx-lm/blob/87b7b583a697537aa68f47130b40884700b5f55f/mlx_lm/BENCHMARKS.md#L32">99.7%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-4b-instruct-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

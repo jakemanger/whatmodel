@@ -6,27 +6,28 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 51.8** ±5.8
-
-#25 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.8** ±5.8 · #25 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Voice Identity (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.46 / 5 | 52.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 86% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 14% |  |
-|  | **weighted average** |  | **= 51.8** |  |  |
+<pre>
+source             test                               score  implies  date        weight
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    52.1   2026-07-16   86% ▇▇▇▇▇▇▇▇▇▇
+prior              pull toward the middle                      49.9                14% ▇▇
+                   weighted average                          = 51.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $30.00/M chars · [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing)
+api (OpenAI) · $30.00/M chars · [developers.openai.com](https://developers.openai.com/api/docs/pricing)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M input characters, direct character tariff; not derived from tokens. Product: Audio speech API. API model: tts-1-hd. Settings: endpoint=/v1/audio/speech, tier=standard. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters, direct character tariff; not derived from tokens. Product: Audio speech API. API model: tts-1-hd. Settings: endpoint=/v1/audio/speech, tier=standard. Price basis: published rate. Currency: USD.</sub>
 
 no verified local download listed
 

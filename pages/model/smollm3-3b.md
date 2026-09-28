@@ -6,72 +6,87 @@
 
 Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
-**score 25.5** ±3.6
-
-#190 of 205 · from 3 benchmark results across 3 sources
+**score 25.5** ±3.6 · #190 of 205 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 35.5% | 23.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-05-02 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 67.5% | 25.9 | ▇▇▇▇▇▇▇▇ 25% | 2025-07-08 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 16.2% | 22.4 | ▇▇▇▇▇▇▇ 22% | 2025-09-30 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 25.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.5%    23.7   2026-05-02   47% ▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  67.5%    25.9   2025-07-08   25% ▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  16.2%    22.4   2025-09-30   22% ▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 25.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (19)
+<sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [MMLU](https://arxiv.org/html/2511.23404v1) | 59.8% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [MMLU-Pro](https://arxiv.org/html/2511.23404v1) | 23.9% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [GPQA Diamond](https://arxiv.org/html/2511.23404v1) | 26.3% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [IFEval mean of four measures](https://arxiv.org/html/2511.23404v1) | 72.4% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [IFBench (aggregation unspecified)](https://arxiv.org/html/2511.23404v1) | 17.9% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [Multi-IF three-turn average](https://arxiv.org/html/2511.23404v1) | 58.9% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [GSM8K loose substring accuracy](https://arxiv.org/html/2511.23404v1) | 81.1% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [GSM-Plus](https://arxiv.org/html/2511.23404v1) | 58.9% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [MATH-500](https://arxiv.org/html/2511.23404v1) | 73.6% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [MMMLU seven languages (Liquid)](https://arxiv.org/html/2511.23404v1) | 50.0% | too few models have this result to calibrate it yet |
-| LFM2 Technical Report — Liquid AI own SmolLM3 evaluation | [MGSM six languages, loose (Liquid)](https://arxiv.org/html/2511.23404v1) | 68.7% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [AIME 2025](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 36.7% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [BFCL (version not stated)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 88.8% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [Global-MMLU](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 64.1% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [GPQA Diamond](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 41.7% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [GSM-Plus](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 83.4% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [IFEval (aggregation unspecified)](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 71.2% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [LiveCodeBench v4](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 30.0% | too few models have this result to calibrate it yet |
-| HuggingFaceTB/SmolLM3-3B model card (Evaluation section) | [MixEval-Hard](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation) | 30.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (19)</summary>
+
+<pre>
+source                  test                            score  why
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MMLU</a>                            59.8%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MMLU-Pro</a>                        23.9%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">GPQA Diamond</a>                    26.3%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">IFEval mean of four measures</a>    72.4%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">IFBench (aggregation unspecif…</a>  17.9%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">Multi-IF three-turn average</a>     58.9%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">GSM8K loose substring accuracy</a>  81.1%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">GSM-Plus</a>                        58.9%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MATH-500</a>                        73.6%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MMMLU seven languages (Liquid)</a>  50.0%  too few models have it yet
+LFM2 Technical Report   <a href="https://arxiv.org/html/2511.23404v1">MGSM six languages, loose (Li…</a>  68.7%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">AIME 2025</a>                       36.7%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">BFCL (version not stated)</a>       88.8%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">Global-MMLU</a>                     64.1%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">GPQA Diamond</a>                    41.7%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">GSM-Plus</a>                        83.4%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">IFEval (aggregation unspecifi…</a>  71.2%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">LiveCodeBench v4</a>                30.0%  too few models have it yet
+HuggingFaceTB/SmolLM3…  <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md#evaluation">MixEval-Hard</a>                    30.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md) · Default configured context. Longer YaRN extrapolation settings are excluded from this baseline.
+<sub>[context source](https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md): Default configured context. Longer YaRN extrapolation settings are excluded from this baseline.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit gguf-q4\_k\_m | ~2.35GB | 25.5 | `llama-server -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M` |
-| 8-bit gguf-q8\_0 | ~4.2GB | 25.5 | `llama-server -hf ggml-org/SmolLM3-3B-GGUF:Q8_0` |
+<pre>
+download              size  score
+4-bit gguf-q4_k_m  ~2.35GB   25.5
+8-bit gguf-q8_0     ~4.2GB   25.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit gguf-q4_k_m
+llama-server -hf ggml-org/SmolLM3-3B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
+llama-server -hf ggml-org/SmolLM3-3B-GGUF:Q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | AIME 2024 pass@1 (64 samples; LightEval, vLLM) | 0.453 → 0.475 | 104.8% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L176) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | Reasoning average of 3 tasks (AIME 2024 pass@1 over 64 samples, MATH-500 pass@1 over 4, GPQA Diamond pass@1 over 8; LightEval, vLLM) | 0.586 → 0.589 | 100.5% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L206) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | GPQA Diamond pass@1 (8 samples; LightEval, vLLM) | 0.412 → 0.409 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L196) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | MATH-500 pass@1 (4 samples; LightEval, vLLM) | 0.893 → 0.883 | 98.9% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L186) |
-| INT4 W4A16 (weights only, group size 128; GPTQ) | GPQA Diamond pass@1 (8 samples; LightEval, vLLM) | 0.412 → 0.419 | 101.6% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L267) |
-| INT4 W4A16 (weights only, group size 128; GPTQ) | MATH-500 pass@1 (4 samples; LightEval, vLLM) | 0.893 → 0.875 | 98.0% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L257) |
-| INT4 W4A16 (weights only, group size 128; GPTQ) | Reasoning average of 3 tasks (AIME 2024 pass@1 over 64 samples, MATH-500 pass@1 over 4, GPQA Diamond pass@1 over 8; LightEval, vLLM) | 0.586 → 0.562 | 95.9% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L277) |
-| INT4 W4A16 (weights only, group size 128; GPTQ) | AIME 2024 pass@1 (64 samples; LightEval, vLLM) | 0.453 → 0.393 | 86.7% | [source ↗](https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L247) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 W8A8 dynamic (weights sym…  AIME 2024 pass@1 (64 samples; Lig…     0.453 → 0.475  <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L176">104.8%</a>
+FP8 W8A8 dynamic (weights sym…  Reasoning average of 3 tasks (AIM…     0.586 → 0.589  <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L206">100.5%</a>
+FP8 W8A8 dynamic (weights sym…  GPQA Diamond pass@1 (8 samples; L…     0.412 → 0.409   <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L196">99.2%</a>
+FP8 W8A8 dynamic (weights sym…  MATH-500 pass@1 (4 samples; Light…     0.893 → 0.883   <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-FP8-dynamic/blob/01a88bc017932dbe4c7f0a4fc1db0bb72a7ab084/README.md#L186">98.9%</a>
+INT4 W4A16 (weights only, gro…  GPQA Diamond pass@1 (8 samples; L…     0.412 → 0.419  <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L267">101.6%</a>
+INT4 W4A16 (weights only, gro…  MATH-500 pass@1 (4 samples; Light…     0.893 → 0.875   <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L257">98.0%</a>
+INT4 W4A16 (weights only, gro…  Reasoning average of 3 tasks (AIM…     0.586 → 0.562   <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L277">95.9%</a>
+INT4 W4A16 (weights only, gro…  AIME 2024 pass@1 (64 samples; Lig…     0.453 → 0.393   <a href="https://huggingface.co/RedHatAI/SmolLM3-3B-quantized.w4a16/blob/8d782c9fd7495f5d2add92b395d218b906e67678/README.md#L247">86.7%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/smollm3-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

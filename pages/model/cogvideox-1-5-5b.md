@@ -6,22 +6,23 @@
 
 Zhipu AI (THUDM) · released 2024-11
 
-**score 33.1** ±4.8
-
-comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 33.1** ±4.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-skyreels-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model"> SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) | [VBench T2V total (long-prompt version, SkyReels-V2 runs)](https://arxiv.org/html/2504.13074v3#S5.T6) | 80.3% | 30.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 59% | 2025-04-21 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 38.6% | 33.5 | ▇▇▇▇▇▇▇▇▇ 31% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 33.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>  80.3%    30.1   2025-04-21   59% ▇▇▇▇▇▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.6%    33.5   2026-08-10   31% ▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 33.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 

@@ -6,31 +6,32 @@
 
 Google · released 2026-05 · proprietary
 
-**score 78.0** ±2.0
-
-#2 of 54 · from 5 benchmark results across 3 sources
+**score 78.0** ±2.0 · #2 of 54 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1512.9 | 81.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 42% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1464.8 | 73.9 | ▇▇▇▇▇▇▇ 24% | 2026-09-22 |
-|  | [Arena video edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet) | 1366.6 | 74.3 | ▇▇▇ 10% | 2026-08-27 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1286.0 | 79.3 | ▇▇▇▇▇ 16% | 2026-09-25 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 63.6% | 81.5 | ▇▇ 5% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 78.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1512.9    81.3   2026-09-22   42% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1464.8    73.9   2026-09-22   24% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1366.6    74.3   2026-08-27   10% ▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1286.0    79.3   2026-09-25   16% ▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   63.6%    81.5   2026-08-10    5% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 78.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 
-api (Google) · $0.10/sec · [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing)
+api (Google) · $0.10/sec · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
-[price source](https://ai.google.dev/gemini-api/docs/pricing) · USD per generated second of 720p video (with audio) on the Gemini Developer API, paid Standard tier. Product: Gemini Developer API. API model: gemini-omni-flash-preview (Gemini Omni Flash Preview; the GA successor gemini-omni-1.1-flash has the same rate). Price basis: Google bills $17.50 per 1M video output tokens and itself states the conversion of 5,792 tokens per second of 720p video ("effective price of approximately $0.10 per second"); 5,792 × $17.50/1M = $0.10136. Input tokens ($1.50/1M) and text output ($9.00/1M) are additional; other resolutions use other token rates. Currency: USD. Google Gemini API pricing page (last updated 2026-09-24), observed 2026-09-25.
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per generated second of 720p video (with audio) on the Gemini Developer API, paid Standard tier. Product: Gemini Developer API. API model: gemini-omni-flash-preview (Gemini Omni Flash Preview; the GA successor gemini-omni-1.1-flash has the same rate). Price basis: Google bills $17.50 per 1M video output tokens and itself states the conversion of 5,792 tokens per second of 720p video ("effective price of approximately $0.10 per second"); 5,792 × $17.50/1M = $0.10136. Input tokens ($1.50/1M) and text output ($9.00/1M) are additional; other resolutions use other token rates. Currency: USD. Google Gemini API pricing page (last updated 2026-09-24), observed 2026-09-25.</sub>
 
 no verified local download listed
 

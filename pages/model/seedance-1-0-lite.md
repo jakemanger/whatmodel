@@ -6,23 +6,24 @@
 
 ByteDance Seed · closed weights
 
-**score 36.7** ±2.3
-
-comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 36.7** ±2.3 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1112.6 | 34.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 55% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1185.3 | 38.4 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-09-22 |
-| <a name="visual-v-reasonbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models"> V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) | [V-ReasonBench (average pass@5)](https://arxiv.org/html/2511.16668v1#S3.T2) | 10.7% | 39.6 | ▇▇▇ 11% | 2025-11-20 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 36.7** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1112.6    34.6   2026-09-22   55% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1185.3    38.4   2026-09-22   32% ▇▇▇▇
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>   10.7%    39.6   2025-11-20   11% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 36.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt))</sub>
 
 ## How to run it
 

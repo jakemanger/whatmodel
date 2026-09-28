@@ -6,84 +6,94 @@
 
 DeepSeek · released 2025-01 · 32.8B params · mit
 
-**score 43.6** ±1.7
-
-#138 of 205 · from 10 benchmark results across 4 sources
+**score 43.6** ±1.7 · #138 of 205 · from 10 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-deepseek-ai--deepseek-r1"></a><img src="../../icons/huggingface.co.png" width="14" alt="deepseek-ai/DeepSeek-R1 model card"> deepseek-ai/DeepSeek-R1 model card | [GPQA Diamond](https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md) lab-reported | 62.1% | 45.3 | ▇▇▇▇▇▇▇ 25% | 2026-09-25 |
-|  | [LiveCodeBench (version unspecified)](https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md) lab-reported | 57.2% | 46.3 | ▇▇▇▇▇▇ 19% | 2026-09-25 |
-|  | [MATH-500](https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md) lab-reported | 94.3% | 44.4 | ▇▇▇ 11% | 2026-09-25 |
-|  | [AIME 2024](https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md) lab-reported | 72.6% | 49.2 | ▇▇ 8% | 2026-09-25 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 64.1% | 47.3 | ▇▇▇ 9% | 2026-08-28 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 55.6% | 46.3 | ▇▇▇ 8% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 1.0% | 29.2 | ▇ 3% | 2026-08-28 |
-| <a name="webapp1k-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="WebApp1K models leaderboard (onekq-ai)"> WebApp1K models leaderboard (onekq-ai) | [WebApp1K-Duo-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv) | 8.7% | 24.4 | ▇▇ 7% | 2025-03-11 |
-|  | [WebApp1K-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv) | 32.3% | 31.2 | ▇ 4% | 2025-03-12 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 39.8% | 45.8 | ▇ 3% | 2025-04-28 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 43.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>              62.1%    45.3   2026-09-25   25% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>  57.2%    46.3   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                  94.3%    44.4   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (lab)</a>                 72.6%    49.2   2026-09-25    8% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    64.1%    47.3   2026-08-28    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        55.6%    46.3   2026-08-28    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            1.0%    29.2   2026-08-28    3% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   8.7%    24.4   2025-03-11    7% ▇
+                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>  32.3%    31.2   2025-03-12    4% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  39.8%    45.8   2025-04-28    3% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 43.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
-api (Cloudflare) · $1.59/M blended · $0.497 in / $4.881 out per 1M tokens · [developers.cloudflare.com ↗](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+api (Cloudflare) · $1.59/M blended · $0.497 in / $4.881 out per 1M tokens · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
-[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx) · Workers AI published marginal USD per 1M tokens after free allocation. Workers plan fees excluded; billed in Neurons. Published USD rates are rounded. Product: Workers AI. API model: @cf/deepseek-ai/deepseek-r1-distill-qwen-32b. Settings: plan=Workers Paid, free allocation=excluded, billing=published marginal USD rates; service bills Neurons. Currency: USD.
+<sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Workers AI published marginal USD per 1M tokens after free allocation. Workers plan fees excluded; billed in Neurons. Published USD rates are rounded. Product: Workers AI. API model: @cf/deepseek-ai/deepseek-r1-distill-qwen-32b. Settings: plan=Workers Paid, free allocation=excluded, billing=published marginal USD rates; service bills Neurons. Currency: USD. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-r1-distill-qwen-32b.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-r1-distill-qwen-32b.toml)
+<pre>
+download          size  score
+4-bit q4_k_m  ~20.18GB   43.6
+8-bit q8_0    ~39.86GB   43.6
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~20.18GB | 43.6 | `ollama run deepseek-r1:32b` |
-| 8-bit q8\_0 | ~39.86GB | 43.6 | `ollama run deepseek-r1:32b-qwen-distill-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run deepseek-r1:32b
+# 8-bit q8_0
+ollama run deepseek-r1:32b-qwen-distill-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| AWQ 4-bit (AutoAWQ; vLLM) | AIME 2024 accuracy (mean of 3 passes; vLLM, T=0.6, top-p 0.95, 32768 max tokens) | 0.644 → 0.678 | 105.3% | [source ↗](https://arxiv.org/html/2504.02010v3#S3.T1) |
-| AWQ 4-bit (AutoAWQ; vLLM) | Average of AIME 2024, FOLIO and Temporal accuracy (published 'Avg'; 3 passes each; vLLM, T=0.6, top-p 0.95, 32768 max tokens) | 0.822 → 0.831 | 101.1% | [source ↗](https://arxiv.org/html/2504.02010v3#S3.T1) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | MATH-500 pass@1 | 0.951 → 0.953 | 100.2% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L161) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | GSM8K 5-shot strict-match (lm-evaluation-harness, vLLM) | 0.827 → 0.826 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L186) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | OpenLLM v2 average of 6 tasks (IFEval, BBH, MATH-Hard, GPQA, MuSR, MMLU-Pro; lm-evaluation-harness \`leaderboard\`, chat template, vLLM; values exactly as published, per-task normalisation not stated) | 0.369 → 0.369 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L259) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | MMLU 5-shot acc (lm-evaluation-harness, vLLM) | 0.811 → 0.81 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L198) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.745 → 0.744 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L216) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | MMLU-Pro 5-shot (OpenLLM v2 config; value as published, normalisation not stated) | 0.498 → 0.494 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L253) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | Reasoning average of 3 tasks (AIME 2024 pass@1, MATH-500 pass@1, GPQA Diamond pass@1) | 0.763 → 0.755 | 99.0% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L173) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | AIME 2024 pass@1 | 0.698 → 0.685 | 98.2% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L155) |
-| FP8 W8A8 dynamic (FP8 weights symmetric per-channel, FP8 activations dynamic per-token; llm-compressor FP8\_DYNAMIC) | GPQA Diamond pass@1 | 0.64 → 0.629 | 98.2% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L167) |
-| GPTQ 3-bit (vLLM) | Average of AIME 2024, FOLIO and Temporal accuracy (published 'Avg'; 3 passes each; vLLM, T=0.6, top-p 0.95, 32768 max tokens) | 0.822 → 0.725 | 88.2% | [source ↗](https://arxiv.org/html/2504.02010v3#S3.T1) |
-| GPTQ 3-bit (vLLM) | AIME 2024 accuracy (mean of 3 passes; vLLM, T=0.6, top-p 0.95, 32768 max tokens) | 0.644 → 0.444 | 68.9% | [source ↗](https://arxiv.org/html/2504.02010v3#S3.T1) |
-| GPTQ 4-bit (vLLM) | AIME 2024 accuracy (mean of 3 passes; vLLM, T=0.6, top-p 0.95, 32768 max tokens) | 0.644 → 0.689 | 107.0% | [source ↗](https://arxiv.org/html/2504.02010v3#S3.T1) |
-| GPTQ 4-bit (vLLM) | Average of AIME 2024, FOLIO and Temporal accuracy (published 'Avg'; 3 passes each; vLLM, T=0.6, top-p 0.95, 32768 max tokens) | 0.822 → 0.83 | 101.0% | [source ↗](https://arxiv.org/html/2504.02010v3#S3.T1) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | GSM8K 5-shot strict-match (lm-evaluation-harness, vLLM) | 0.827 → 0.844 | 102.0% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L201) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | MATH-500 pass@1 | 0.951 → 0.95 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L176) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.745 → 0.743 | 99.7% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L231) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | MMLU 5-shot acc (lm-evaluation-harness, vLLM) | 0.811 → 0.809 | 99.7% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L213) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | GPQA Diamond pass@1 | 0.64 → 0.638 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L182) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | Reasoning average of 3 tasks (AIME 2024 pass@1, MATH-500 pass@1, GPQA Diamond pass@1) | 0.763 → 0.759 | 99.4% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L188) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | AIME 2024 pass@1 | 0.698 → 0.688 | 98.7% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L170) |
-| INT4 W4A16 (weights only, symmetric per-group, group size 128; card states GPTQ via llm-compressor) | MMLU-Pro 5-shot (OpenLLM v2 config; value as published, normalisation not stated) | 0.498 → 0.484 | 97.2% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L268) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | GSM8K 5-shot strict-match (lm-evaluation-harness, vLLM) | 0.827 → 0.839 | 101.4% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L205) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | GPQA Diamond pass@1 | 0.64 → 0.647 | 101.1% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L186) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | OpenLLM v2 average of 6 tasks (IFEval, BBH, MATH-Hard, GPQA, MuSR, MMLU-Pro; lm-evaluation-harness \`leaderboard\`, chat template, vLLM; values exactly as published, per-task normalisation not stated) | 0.369 → 0.37 | 100.2% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L278) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.745 → 0.745 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L235) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | MATH-500 pass@1 | 0.951 → 0.95 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L180) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | MMLU 5-shot acc (lm-evaluation-harness, vLLM) | 0.811 → 0.809 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L217) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | Reasoning average of 3 tasks (AIME 2024 pass@1, MATH-500 pass@1, GPQA Diamond pass@1) | 0.763 → 0.76 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L192) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | MMLU-Pro 5-shot (OpenLLM v2 config; value as published, normalisation not stated) | 0.498 → 0.491 | 98.6% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L272) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | IFEval 0-shot instruction-level strict acc (OpenLLM v2 config, chat template) | 0.429 → 0.419 | 97.8% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L242) |
-| INT8 W8A8 (weights symmetric per-channel, activations symmetric per-token; SmoothQuant + GPTQ via llm-compressor) | AIME 2024 pass@1 | 0.698 → 0.682 | 97.7% | [source ↗](https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L174) |
+<pre>
+precision                       test                                full → quantized    kept
+AWQ 4-bit (AutoAWQ; vLLM)       AIME 2024 accuracy (mean of 3 pas…     0.644 → 0.678  <a href="https://arxiv.org/html/2504.02010v3#S3.T1">105.3%</a>
+AWQ 4-bit (AutoAWQ; vLLM)       Average of AIME 2024, FOLIO and T…     0.822 → 0.831  <a href="https://arxiv.org/html/2504.02010v3#S3.T1">101.1%</a>
+FP8 W8A8 dynamic (FP8 weights…  MATH-500 pass@1                        0.951 → 0.953  <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L161">100.2%</a>
+FP8 W8A8 dynamic (FP8 weights…  GSM8K 5-shot strict-match (lm-eva…     0.827 → 0.826   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L186">99.9%</a>
+FP8 W8A8 dynamic (FP8 weights…  OpenLLM v2 average of 6 tasks (IF…     0.369 → 0.369   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L259">99.8%</a>
+FP8 W8A8 dynamic (FP8 weights…  MMLU 5-shot acc (lm-evaluation-ha…      0.811 → 0.81   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L198">99.8%</a>
+FP8 W8A8 dynamic (FP8 weights…  OpenLLM v1 average of 6 tasks (AR…     0.745 → 0.744   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L216">99.8%</a>
+FP8 W8A8 dynamic (FP8 weights…  MMLU-Pro 5-shot (OpenLLM v2 confi…     0.498 → 0.494   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L253">99.2%</a>
+FP8 W8A8 dynamic (FP8 weights…  Reasoning average of 3 tasks (AIM…     0.763 → 0.755   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L173">99.0%</a>
+FP8 W8A8 dynamic (FP8 weights…  AIME 2024 pass@1                       0.698 → 0.685   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L155">98.2%</a>
+FP8 W8A8 dynamic (FP8 weights…  GPQA Diamond pass@1                     0.64 → 0.629   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic/blob/e702fff1b22be372c8893745aa9a13cf1a5d0d8e/README.md#L167">98.2%</a>
+GPTQ 3-bit (vLLM)               Average of AIME 2024, FOLIO and T…     0.822 → 0.725   <a href="https://arxiv.org/html/2504.02010v3#S3.T1">88.2%</a>
+GPTQ 3-bit (vLLM)               AIME 2024 accuracy (mean of 3 pas…     0.644 → 0.444   <a href="https://arxiv.org/html/2504.02010v3#S3.T1">68.9%</a>
+GPTQ 4-bit (vLLM)               AIME 2024 accuracy (mean of 3 pas…     0.644 → 0.689  <a href="https://arxiv.org/html/2504.02010v3#S3.T1">107.0%</a>
+GPTQ 4-bit (vLLM)               Average of AIME 2024, FOLIO and T…      0.822 → 0.83  <a href="https://arxiv.org/html/2504.02010v3#S3.T1">101.0%</a>
+INT4 W4A16 (weights only, sym…  GSM8K 5-shot strict-match (lm-eva…     0.827 → 0.844  <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L201">102.0%</a>
+INT4 W4A16 (weights only, sym…  MATH-500 pass@1                         0.951 → 0.95   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L176">99.9%</a>
+INT4 W4A16 (weights only, sym…  OpenLLM v1 average of 6 tasks (AR…     0.745 → 0.743   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L231">99.7%</a>
+INT4 W4A16 (weights only, sym…  MMLU 5-shot acc (lm-evaluation-ha…     0.811 → 0.809   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L213">99.7%</a>
+INT4 W4A16 (weights only, sym…  GPQA Diamond pass@1                     0.64 → 0.638   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L182">99.6%</a>
+INT4 W4A16 (weights only, sym…  Reasoning average of 3 tasks (AIM…     0.763 → 0.759   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L188">99.4%</a>
+INT4 W4A16 (weights only, sym…  AIME 2024 pass@1                       0.698 → 0.688   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L170">98.7%</a>
+INT4 W4A16 (weights only, sym…  MMLU-Pro 5-shot (OpenLLM v2 confi…     0.498 → 0.484   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16/blob/f3572d23e9bc8dc194f361cfaf9ab73383e9125a/README.md#L268">97.2%</a>
+INT8 W8A8 (weights symmetric …  GSM8K 5-shot strict-match (lm-eva…     0.827 → 0.839  <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L205">101.4%</a>
+INT8 W8A8 (weights symmetric …  GPQA Diamond pass@1                     0.64 → 0.647  <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L186">101.1%</a>
+INT8 W8A8 (weights symmetric …  OpenLLM v2 average of 6 tasks (IF…      0.369 → 0.37  <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L278">100.2%</a>
+INT8 W8A8 (weights symmetric …  OpenLLM v1 average of 6 tasks (AR…     0.745 → 0.745  <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L235">100.0%</a>
+INT8 W8A8 (weights symmetric …  MATH-500 pass@1                         0.951 → 0.95   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L180">99.9%</a>
+INT8 W8A8 (weights symmetric …  MMLU 5-shot acc (lm-evaluation-ha…     0.811 → 0.809   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L217">99.8%</a>
+INT8 W8A8 (weights symmetric …  Reasoning average of 3 tasks (AIM…      0.763 → 0.76   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L192">99.6%</a>
+INT8 W8A8 (weights symmetric …  MMLU-Pro 5-shot (OpenLLM v2 confi…     0.498 → 0.491   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L272">98.6%</a>
+INT8 W8A8 (weights symmetric …  IFEval 0-shot instruction-level s…     0.429 → 0.419   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L242">97.8%</a>
+INT8 W8A8 (weights symmetric …  AIME 2024 pass@1                       0.698 → 0.682   <a href="https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8/blob/bfc01211470299398548c5d6ff8ca2e48dc9a3dc/README.md#L174">97.7%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/deepseek-r1-distill-qwen-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

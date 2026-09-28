@@ -6,37 +6,47 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 37.1** ±8.6
-
-#34 of 36 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.1** ±8.6 · #34 of 36 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-codecmos-accent-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1)"> CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1) ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) | [CodecMOS-Accent VCTK voice clone · human naturalness MOS (S-NAT)](https://arxiv.org/html/2603.14328v1) | 4.29 / 5 | 36.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 50% | 2026-03-15 |
-|  | [CodecMOS-Accent VCTK voice clone · human speaker-similarity MOS (S-SPK-SIM)](https://arxiv.org/html/2603.14328v1) | 4.16 / 5 | 20.6 | ▇▇▇▇▇▇ 20% | 2026-03-15 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇▇▇ 30% |  |
-|  | **weighted average** |  | **= 37.1** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    36.2   2026-03-15   50% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    20.6   2026-03-15   20% ▇▇
+prior                   pull toward the middle                      49.9                30% ▇▇▇▇
+                        weighted average                          = 37.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| LEMAS multilingual audio suite report | [LEMAS multilingual TTS eval · 9-language mean WER](https://arxiv.org/html/2601.04233v1) | 12.3% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS multilingual TTS eval ·…</a>  12.3%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api  · price unknown · [docs.fish.audio ↗](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
+api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~1.7GB | 37.1 | `git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s1-mini --local-dir checkpoints/s1-mini && python fish_speech/models/text2semantic/inference.py --text 'Hello world' --checkpoint-path checkpoints/s1-mini && python fish_speech/models/dac/inference.py -i codes_0.npy --checkpoint-path checkpoints/s1-mini/codec.pth` |
+<pre>
+version              needs  score
+bf16 · nvidia only  ~1.7GB   37.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s1-mini --local-dir checkpoints/s1-mini && python fish_speech/models/text2semantic/inference.py --text 'Hello world' --checkpoint-path checkpoints/s1-mini && python fish_speech/models/dac/inference.py -i codes_0.npy --checkpoint-path checkpoints/s1-mini/codec.pth
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/openaudio-s1-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

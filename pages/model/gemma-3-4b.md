@@ -6,94 +6,109 @@
 
 Google · released 2025-03 · 4.3B params · gemma
 
-**score 25.6** ±0.9
-
-#189 of 205 · from 36 benchmark results across 11 sources
+**score 25.6** ±0.9 · #189 of 205 · from 36 benchmark results across 11 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="gap-google-gemma3"></a><img src="../../icons/huggingface.co.png" width="14" alt="Google DeepMind Gemma 3 270M IT model card"> Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) | [GPQA Diamond](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 30.8% | 26.8 | ▇▇ 6% | 2026-09-25 |
-|  | [LiveCodeBench (version unspecified)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 12.6% | 25.7 | ▇▇ 6% | 2026-09-25 |
-|  | [MMLU-Pro](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 43.6% | 27.6 | ▇▇ 5% | 2026-09-25 |
-|  | [BIRD-SQL (dev)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 36.3% | 28.0 | ▇ 5% | 2026-09-25 |
-|  | [GSM8K](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 89.2% | 24.9 | ▇ 4% | 2026-09-25 |
-|  | [BIG-Bench Hard](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 72.2% | 23.5 | ▇ 4% | 2026-09-25 |
-|  | [HumanEval](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 71.3% | 23.2 | ▇ 4% | 2026-09-25 |
-|  | [MATH (subset unspecified)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 75.6% | 24.4 | ▇ 3% | 2026-09-25 |
-|  | [DocVQA](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 75.8% | 24.7 | ▇ 3% | 2026-09-25 |
-|  | [MathVista (testmini)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 50.0% | 25.6 | ▇ 3% | 2026-09-25 |
-|  | [MMMU (val)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 48.8% | 26.3 | ▇ 3% | 2026-09-25 |
-|  | [MBPP](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 63.2% | 26.1 | ▇ 3% | 2026-09-25 |
-|  | [FACTS Grounding](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 70.1% | 29.0 | ▇ 3% | 2026-09-25 |
-|  | [ChartQA](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 68.8% | 27.5 | ▇ 2% | 2026-09-25 |
-|  | [Global-MMLU-Lite](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 54.5% | 22.3 | ▇ 2% | 2026-09-25 |
-|  | [TextVQA](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 57.8% | 27.9 | ▇ 2% | 2026-09-25 |
-|  | [SimpleQA](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 4.0% | 21.4 | ▇ 2% | 2026-09-25 |
-|  | [IFEval (aggregation unspecified)](https://ai.google.dev/gemma/docs/core/model_card_3) lab-reported | 90.2% | 29.9 | ▇ 1% | 2026-09-25 |
-| <a name="report-2503.19786v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Gemma Team — Gemma 3 Technical Report"> Gemma Team — Gemma 3 Technical Report ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) | [AI2D test](https://arxiv.org/html/2503.19786v1) lab-reported | 74.8% | 25.9 | ▇ 3% | 2025-03-25 |
-|  | [RULER 128k](https://arxiv.org/html/2503.19786v1) lab-reported | 46.8% | 25.9 | ▇ 3% | 2025-03-25 |
-|  | [VQAv2 (val)](https://arxiv.org/html/2503.19786v1) lab-reported | 62.4% | 27.5 | ▇ 2% | 2025-03-25 |
-|  | [MMLU](https://arxiv.org/html/2503.19786v1) lab-reported | 58.1% | 22.3 | ▇ 2% | 2025-03-25 |
-|  | [Big Bench Extra Hard micro avg](https://arxiv.org/html/2503.19786v1) lab-reported | 11.0% | 22.1 | ▇ 1% | 2025-03-25 |
-|  | [WMT24++ (chrF)](https://arxiv.org/html/2503.19786v1) lab-reported | 46.8% | 25.4 | ▇ 1% | 2025-03-25 |
-| <a name="mimic-cdm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="MIMIC Clinical Decision Making leaderboard"> MIMIC Clinical Decision Making leaderboard | [MIMIC-CDM full information (4 pathologies)](https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json) | 69.4% | 29.4 | ▇ 4% | 2025-07-04 |
-|  | [MIMIC-CDM clinical decision making (4 pathologies)](https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json) | 50.8% | 24.9 | ▇ 4% | 2025-07-04 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 23.2% | -1.2 | ▇ 3% | 2026-08-28 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 7.5% | 28.0 | ▇ 2% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 0.0% | 29.2 | ▇ 1% | 2026-08-28 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1303.1 | 34.3 | ▇ 3% | 2026-09-13 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 32.1% | 19.4 | ▇ 3% | 2026-05-02 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1118.2 | 38.2 | ▇ 2% | 2026-05-10 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 67.3% | 25.6 | ▇ 2% | 2025-04-04 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 49.1% | 22.9 | ▇ 1% | 2026-09-19 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 19.6% | 21.0 | ▇ 1% | 2025-12-16 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 28.6% | 28.2 | ▇ 1% | 2025-04-28 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 25.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GPQA Diamond (lab)</a>               30.8%    26.8   2026-09-25    6% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   12.6%    25.7   2026-09-25    6% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMLU-Pro (lab)</a>                   43.6%    27.6   2026-09-25    5% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             36.3%    28.0   2026-09-25    5% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                      89.2%    24.9   2026-09-25    4% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>             72.2%    23.5   2026-09-25    4% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                  71.3%    23.2   2026-09-25    4% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MATH (subset unspecified) (la…</a>   75.6%    24.4   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     75.8%    24.7   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>       50.0%    25.6   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                 48.8%    26.3   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                       63.2%    26.1   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>            70.1%    29.0   2026-09-25    3% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                    68.8%    27.5   2026-09-25    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>           54.5%    22.3   2026-09-25    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    57.8%    27.9   2026-09-25    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                    4.0%    21.4   2026-09-25    2% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>   90.2%    29.9   2026-09-25    1% ▇
+<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">AI2D test (lab)</a>                  74.8%    25.9   2025-03-25    3% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">RULER 128k (lab)</a>                 46.8%    25.9   2025-03-25    3% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                62.4%    27.5   2025-03-25    2% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                       58.1%    22.3   2025-03-25    2% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro av…</a>   11.0%    22.1   2025-03-25    1% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>             46.8%    25.4   2025-03-25    1% ▇
+<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   69.4%    29.4   2025-07-04    4% ▇
+                        <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>   50.8%    24.9   2025-07-04    4% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     23.2%    -1.2   2026-08-28    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          7.5%    28.0   2026-08-28    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    29.2   2026-08-28    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1303.1    34.3   2026-09-13    3% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   32.1%    19.4   2026-05-02    3% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1118.2    38.2   2026-05-10    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   67.3%    25.6   2025-04-04    2% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   49.1%    22.9   2026-09-19    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   19.6%    21.0   2025-12-16    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   28.6%    28.2   2025-04-28    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 25.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: Google DeepMind Gemma 3 270M IT model card ([CC-BY-4.0](../../licenses/cards-final-NOTICE.txt)) · Gemma Team ([CC BY 4.0](../../licenses/report-2503.19786v1.txt)) · MIMIC Clinical Decision Making leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Google DeepMind Gemma 3 270M IT model card | [InfographicVQA](https://ai.google.dev/gemma/docs/core/model_card_3) | 50.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test            score  why
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">InfographicVQA</a>  50.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.063/M blended · $0.05 in / $0.1 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/google/gemma-3-4b-it)
+api (DeepInfra) · $0.063/M blended · $0.05 in / $0.1 out per 1M tokens · [deepinfra.com](https://deepinfra.com/google/gemma-3-4b-it)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: google/gemma-3-4b-it. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: google/gemma-3-4b-it. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download          size  score
+4-bit q4_k_m   ~3.08GB   25.6
+4-bit QAT qat  ~3.08GB   25.6
+8-bit q8_0     ~5.66GB   25.6
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~3.08GB | 25.6 | `ollama run gemma3:4b` |
-| 4-bit QAT qat | ~3.08GB | 25.6 | `ollama run gemma3:4b-it-qat` |
-| 8-bit q8\_0 | ~5.66GB | 25.6 | `ollama run gemma3:4b-it-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run gemma3:4b
+# 4-bit QAT qat
+ollama run gemma3:4b-it-qat
+# 8-bit q8_0
+ollama run gemma3:4b-it-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA DGX Spark (GB10) | QAT Q4\_0 | 81.05 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32; 32 generated tokens; context depth 0; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L253) |
-| NVIDIA DGX Spark (GB10) | QAT Q4\_0 | 76.37 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d4096; 32 generated tokens; context depth 4096; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L255) |
-| NVIDIA DGX Spark (GB10) | QAT Q4\_0 | 62.28 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d32768; 32 generated tokens; context depth 32768; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L261) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | QAT Q4\_0 | 134.28 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32; 32 generated tokens; context depth 0; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L240) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | QAT Q4\_0 | 133.11 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d4096; 32 generated tokens; context depth 4096; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L242) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | QAT Q4\_0 | 113.14 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d32768; 32 generated tokens; context depth 32768; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L248) |
-| NVIDIA DGX Spark (GB10) | QAT Q4\_0 | 71.61 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d8192; 32 generated tokens; context depth 8192; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L257) |
-| NVIDIA DGX Spark (GB10) | QAT Q4\_0 | 70.89 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d16384; 32 generated tokens; context depth 16384; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L259) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | QAT Q4\_0 | 125.85 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d8192; 32 generated tokens; context depth 8192; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L244) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | QAT Q4\_0 | 125 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d16384; 32 generated tokens; context depth 16384; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L246) |
+<pre>
+hardware                      precision         speed  engine and settings
+NVIDIA DGX Spark (GB10)       QAT Q4_0    <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L253">81.05 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       QAT Q4_0    <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L255">76.37 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       QAT Q4_0    <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L261">62.28 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+Apple M2 Ultra (GPU core co…  QAT Q4_0   <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L240">134.28 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  QAT Q4_0   <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L242">133.11 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  QAT Q4_0   <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L248">113.14 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+NVIDIA DGX Spark (GB10)       QAT Q4_0    <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L257">71.61 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       QAT Q4_0    <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L259">70.89 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+Apple M2 Ultra (GPU core co…  QAT Q4_0   <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L244">125.85 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  QAT Q4_0      <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L246">125 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gemma-3-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

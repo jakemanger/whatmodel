@@ -6,9 +6,7 @@
 
 Black Forest Labs · released 2025-12 · proprietary
 
-**score 59.2** ±1.8
-
-#22 of 87 · from 4 benchmark results across 3 sources
+**score 59.2** ±1.8 · #22 of 87 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,22 +14,25 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1162.1 | 60.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 57% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1261.9 | 57.4 | ▇▇▇▇ 15% | 2026-09-22 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 61.6% | 58.7 | ▇▇▇▇▇▇▇ 23% | 2026-05-14 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 55.3% | 60.3 | ▇ 4% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 59.2** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1162.1    60.1   2026-09-24   57% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1261.9    57.4   2026-09-22   15% ▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   61.6%    58.7   2026-05-14   23% ▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   55.3%    60.3   2026-05-27    4% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 59.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Black Forest Labs) · $0.070/image · [docs.bfl.ai ↗](https://docs.bfl.ai/quick_start/pricing)
+api (Black Forest Labs) · $0.070/image · [docs.bfl.ai](https://docs.bfl.ai/quick_start/pricing)
 
-[price source](https://bfl.ai/pricing) · USD for a text-to-image output of up to 1 megapixel (the first-megapixel rate; each additional output megapixel adds $0.03). Matches the "from $0.07" text-to-image figure in the BFL API docs (1 credit = $0.01). Product: BFL API. API model: flux-2-max. Settings: output \<=1 MP (e.g. 1024×1024), no input images, single image. Price basis: published first-megapixel list rate. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-25.
+<sub>[price source](https://bfl.ai/pricing): USD for a text-to-image output of up to 1 megapixel (the first-megapixel rate; each additional output megapixel adds $0.03). Matches the "from $0.07" text-to-image figure in the BFL API docs (1 credit = $0.01). Product: BFL API. API model: flux-2-max. Settings: output \<=1 MP (e.g. 1024×1024), no input images, single image. Price basis: published first-megapixel list rate. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

@@ -6,101 +6,116 @@
 
 Alibaba · released 2025-04 · 2.03B params · apache-2.0
 
-**score 29.1** ±1.2
-
-#186 of 205 · from 23 benchmark results across 6 sources
+**score 29.1** ±1.2 · #186 of 205 · from 23 benchmark results across 6 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-qwen--qwen3.5-2b"></a><img src="../../icons/huggingface.co.png" width="14" alt="Qwen/Qwen3.5-2B model card"> Qwen/Qwen3.5-2B model card | [IFEval (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 72.5% | 31.4 | ▇▇ 7% | 2026-03-02 |
-|  | [GPQA (subset unspecified)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 40.1% | 31.9 | ▇▇ 7% | 2026-03-02 |
-|  | [PolyMATH](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 25.2% | 33.2 | ▇▇ 6% | 2026-03-02 |
-|  | [C-Eval](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 68.1% | 30.2 | ▇▇ 6% | 2026-03-02 |
-|  | [MMLU-Redux](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 73.9% | 29.5 | ▇▇ 6% | 2026-03-02 |
-|  | [MAXIFE](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 50.7% | 28.2 | ▇▇ 5% | 2026-03-02 |
-|  | [WMT24++](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 39.3% | 29.3 | ▇▇ 5% | 2026-03-02 |
-|  | [SuperGPQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 31.2% | 29.0 | ▇▇ 5% | 2026-03-02 |
-|  | [IFBench (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 26.7% | 26.1 | ▇ 5% | 2026-03-02 |
-|  | [MultiChallenge](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 27.2% | 28.7 | ▇ 5% | 2026-03-02 |
-|  | [MMMLU](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 57.0% | 29.2 | ▇ 5% | 2026-03-02 |
-|  | [MMLU-ProX](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 49.4% | 30.4 | ▇ 5% | 2026-03-02 |
-|  | [INCLUDE](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 51.8% | 29.5 | ▇ 4% | 2026-03-02 |
-|  | [LongBench v2](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 26.5% | 24.8 | ▇ 4% | 2026-03-02 |
-|  | [Global PIQA](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 63.1% | 27.1 | ▇ 4% | 2026-03-02 |
-|  | [NOVA-63](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) lab-reported | 40.3% | 25.6 | ▇ 2% | 2026-03-02 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 38.0% | 32.5 | ▇ 5% | 2026-08-28 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 8.1% | 28.5 | ▇ 5% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 0.0% | 29.2 | ▇ 1% | 2026-08-28 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 68.1% | 26.6 | ▇ 3% | 2025-05-01 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 41.3% | 13.7 | ▇ 2% | 2026-09-19 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 28.4% | 30.9 | ▇ 2% | 2025-12-16 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 26.3% | 24.2 | ▇ 2% | 2025-06-03 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 29.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-qwen--qwen3.5-2b"></a>Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFEval (aggregation unspecifi…</a>  72.5%    31.4   2026-03-02    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">GPQA (subset unspecified) (la…</a>  40.1%    31.9   2026-03-02    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">PolyMATH (lab)</a>                  25.2%    33.2   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">C-Eval (lab)</a>                    68.1%    30.2   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-Redux (lab)</a>                73.9%    29.5   2026-03-02    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MAXIFE (lab)</a>                    50.7%    28.2   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">WMT24++ (lab)</a>                   39.3%    29.3   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">SuperGPQA (lab)</a>                 31.2%    29.0   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">IFBench (aggregation unspecif…</a>  26.7%    26.1   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MultiChallenge (lab)</a>            27.2%    28.7   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMMLU (lab)</a>                     57.0%    29.2   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-ProX (lab)</a>                 49.4%    30.4   2026-03-02    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">INCLUDE (lab)</a>                   51.8%    29.5   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">LongBench v2 (lab)</a>              26.5%    24.8   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">Global PIQA (lab)</a>               63.1%    27.1   2026-03-02    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">NOVA-63 (lab)</a>                   40.3%    25.6   2026-03-02    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    38.0%    32.5   2026-08-28    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         8.1%    28.5   2026-08-28    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    29.2   2026-08-28    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.1%    26.6   2025-05-01    3% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  41.3%    13.7   2026-09-19    2% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  28.4%    30.9   2025-12-16    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  26.3%    24.2   2025-06-03    2% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 29.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (3)
+<sub>Licences: Qwen/Qwen3.5-2B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-2B.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3.5-2B model card | [HMMT February 2025](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 10.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [HMMT November 2025](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 8.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3.5-2B model card | [MMLU-Pro](https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md) | 56.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test                score  why
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT February 2025</a>  10.2%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">HMMT November 2025</a>   8.9%  too few models have it yet
+Qwen/Qwen3.5-2B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/README.md">MMLU-Pro</a>            56.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md) · Native/default model-card context. Any YaRN extension must be configured separately; hosted provider limits may differ.
+<sub>[context source](https://huggingface.co/Qwen/Qwen3-1.7B/blob/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/README.md): Native/default model-card context. Any YaRN extension must be configured separately; hosted provider limits may differ.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~1.72GB | 29.1 | `ollama run qwen3:1.7b` |
-| 8-bit q8\_0 | ~2.94GB | 29.1 | `ollama run qwen3:1.7b-q8_0` |
+<pre>
+download         size  score
+4-bit q4_k_m  ~1.72GB   29.1
+8-bit q8_0    ~2.94GB   29.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run qwen3:1.7b
+# 8-bit q8_0
+ollama run qwen3:1.7b-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| AutoRound 2-bit (group size 32; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.729 → 0.401 | 55.0% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T4) |
-| AutoRound 2-bit (group size 32; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.554 → 0.302 | 54.4% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T3) |
-| AutoRound 4-bit (group size 128; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.729 → 0.718 | 98.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| AutoRound 4-bit (group size 128; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.554 → 0.531 | 95.8% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| AWQ 4-bit (AutoAWQ, zero point, group size 128) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.729 → 0.715 | 98.1% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| AWQ 4-bit (AutoAWQ, zero point, group size 128) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.554 → 0.523 | 94.4% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| bitsandbytes NF4 (Transformers integration, nested/double quantization) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.729 → 0.721 | 98.9% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| bitsandbytes NF4 (Transformers integration, nested/double quantization) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.554 → 0.529 | 95.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | GPQA Diamond — published row 'GPQA diamond' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.384 → 0.389 | 101.3% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L411) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | AIME 2025 — published row 'AIME 2025' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.323 → 0.323 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L401) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | OpenLLM v1 average of 6 tasks (MMLU (5-shot); ARC Challenge (25-shot); GSM-8K (5-shot, strict-match); Hellaswag (10-shot); Winogrande (5-shot); TruthfulQA (0-shot, mc2)) as published; lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 8192, chat template, few-shot as multiturn) | 0.498 → 0.491 | 98.6% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L295) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | MMLU — published row 'MMLU (5-shot)' (OpenLLM v1 section); lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 8192, chat template, few-shot as multiturn) | 0.568 → 0.56 | 98.6% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L235) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | OpenLLM v2 average of 6 tasks (MMLU-Pro (5-shot); IFEval (0-shot); BBH (3-shot); Math-lvl-5 (4-shot); GPQA (0-shot); MuSR (0-shot)) as published; lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 16384, chat template, few-shot as multiturn); per-task scale (raw vs Open LLM Leaderboard-normalized) not stated in card | 0.243 → 0.233 | 95.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L367) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | GSM8K — published row 'GSM-8K (5-shot, strict-match)' (OpenLLM v1 section); lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 8192, chat template, few-shot as multiturn) | 0.437 → 0.415 | 95.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L255) |
-| FP8 dynamic (weights FP8 per-channel static, activations FP8 per-token dynamic; llm-compressor QuantizationModifier) | AIME 2024 — published row 'AIME 2024' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.44 → 0.401 | 91.2% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L391) |
-| GGUF Q2\_K with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.729 → 0.63 | 86.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T4) |
-| GGUF Q2\_K with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.554 → 0.449 | 81.0% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T3) |
-| GGUF Q4\_K\_M with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.729 → 0.725 | 99.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| GGUF Q4\_K\_M with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.554 → 0.547 | 98.8% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| GPTQ INT8 (w8, group\_size 128, sym, desc\_act=false; GPTQModel 2.2.0; checkpoint Qwen/Qwen3-1.7B-GPTQ-Int8) | MMLU-Redux, thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.739 → 0.749 | 101.4% | [source ↗](https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L278) |
-| GPTQ INT8 (w8, group\_size 128, sym, desc\_act=false; GPTQModel 2.2.0; checkpoint Qwen/Qwen3-1.7B-GPTQ-Int8) | LiveBench 2024-11-25, non-thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.356 → 0.355 | 99.7% | [source ↗](https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L280) |
-| GPTQ INT8 (w8, group\_size 128, sym, desc\_act=false; GPTQModel 2.2.0; checkpoint Qwen/Qwen3-1.7B-GPTQ-Int8) | GPQA (subset not stated in card), non-thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.286 → 0.283 | 99.0% | [source ↗](https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L280) |
-| GPTQ INT8 (w8, group\_size 128, sym, desc\_act=false; GPTQModel 2.2.0; checkpoint Qwen/Qwen3-1.7B-GPTQ-Int8) | MMLU-Redux, non-thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.644 → 0.63 | 97.8% | [source ↗](https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L280) |
-| GPTQ INT8 (w8, group\_size 128, sym, desc\_act=false; GPTQModel 2.2.0; checkpoint Qwen/Qwen3-1.7B-GPTQ-Int8) | GPQA (subset not stated in card), thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.401 → 0.391 | 97.5% | [source ↗](https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L278) |
-| GPTQ INT8 (w8, group\_size 128, sym, desc\_act=false; GPTQModel 2.2.0; checkpoint Qwen/Qwen3-1.7B-GPTQ-Int8) | LiveBench 2024-11-25, thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.511 → 0.498 | 97.5% | [source ↗](https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L278) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | MMLU — published row 'MMLU (5-shot)' (OpenLLM v1 section); lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 8192, chat template, few-shot as multiturn) | 0.568 → 0.551 | 97.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L260) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | OpenLLM v1 average of 6 tasks (MMLU (5-shot); ARC Challenge (25-shot); GSM-8K (5-shot, strict-match); Hellaswag (10-shot); Winogrande (5-shot); TruthfulQA (0-shot, mc2)) as published; lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 8192, chat template, few-shot as multiturn) | 0.498 → 0.468 | 94.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L320) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | OpenLLM v2 average of 6 tasks (MMLU-Pro (5-shot); IFEval (0-shot); BBH (3-shot); Math-lvl-5 (4-shot); GPQA (0-shot); MuSR (0-shot)) as published; lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 16384, chat template, few-shot as multiturn); per-task scale (raw vs Open LLM Leaderboard-normalized) not stated in card | 0.243 → 0.224 | 92.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L392) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | GPQA Diamond — published row 'GPQA diamond' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.384 → 0.348 | 90.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L436) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | AIME 2025 — published row 'AIME 2025' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.323 → 0.282 | 87.4% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L426) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | LiveCodeBench — published row 'LiveCodeBench' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.334 → 0.264 | 78.9% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L456) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | AIME 2024 — published row 'AIME 2024' (Reasoning section); lighteval + vLLM, temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32768 | 0.44 → 0.321 | 73.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L416) |
-| INT4 W4A16 (weight-only INT4, asymmetric, group 64; GPTQ, llm-compressor) | GSM8K — published row 'GSM-8K (5-shot, strict-match)' (OpenLLM v1 section); lm-evaluation-harness + vLLM (backend vllm, max\_model\_len 8192, chat template, few-shot as multiturn) | 0.437 → 0.306 | 70.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L280) |
+<pre>
+precision                       test                                full → quantized    kept
+AutoRound 2-bit (group size 3…  WMT24++ X-&gt;English COMET (wmt22-c…     0.729 → 0.401   <a href="https://arxiv.org/html/2508.20893v1#S4.T4">55.0%</a>
+AutoRound 2-bit (group size 3…  WMT24++ English-&gt;X COMET (wmt22-c…     0.554 → 0.302   <a href="https://arxiv.org/html/2508.20893v1#S4.T3">54.4%</a>
+AutoRound 4-bit (group size 1…  WMT24++ X-&gt;English COMET (wmt22-c…     0.729 → 0.718   <a href="https://arxiv.org/html/2508.20893v1#S4.T2">98.5%</a>
+AutoRound 4-bit (group size 1…  WMT24++ English-&gt;X COMET (wmt22-c…     0.554 → 0.531   <a href="https://arxiv.org/html/2508.20893v1#S4.T1">95.8%</a>
+AWQ 4-bit (AutoAWQ, zero poin…  WMT24++ X-&gt;English COMET (wmt22-c…     0.729 → 0.715   <a href="https://arxiv.org/html/2508.20893v1#S4.T2">98.1%</a>
+AWQ 4-bit (AutoAWQ, zero poin…  WMT24++ English-&gt;X COMET (wmt22-c…     0.554 → 0.523   <a href="https://arxiv.org/html/2508.20893v1#S4.T1">94.4%</a>
+bitsandbytes NF4 (Transformer…  WMT24++ X-&gt;English COMET (wmt22-c…     0.729 → 0.721   <a href="https://arxiv.org/html/2508.20893v1#S4.T2">98.9%</a>
+bitsandbytes NF4 (Transformer…  WMT24++ English-&gt;X COMET (wmt22-c…     0.554 → 0.529   <a href="https://arxiv.org/html/2508.20893v1#S4.T1">95.5%</a>
+FP8 dynamic (weights FP8 per-…  GPQA Diamond — published row 'GPQ…     0.384 → 0.389  <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L411">101.3%</a>
+FP8 dynamic (weights FP8 per-…  AIME 2025 — published row 'AIME 2…     0.323 → 0.323  <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L401">100.0%</a>
+FP8 dynamic (weights FP8 per-…  OpenLLM v1 average of 6 tasks (MM…     0.498 → 0.491   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L295">98.6%</a>
+FP8 dynamic (weights FP8 per-…  MMLU — published row 'MMLU (5-sho…      0.568 → 0.56   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L235">98.6%</a>
+FP8 dynamic (weights FP8 per-…  OpenLLM v2 average of 6 tasks (MM…     0.243 → 0.233   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L367">95.8%</a>
+FP8 dynamic (weights FP8 per-…  GSM8K — published row 'GSM-8K (5-…     0.437 → 0.415   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L255">95.0%</a>
+FP8 dynamic (weights FP8 per-…  AIME 2024 — published row 'AIME 2…      0.44 → 0.401   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-FP8-dynamic/blob/e776dcc126bb25d3d5af2b619acaad8a94332a86/README.md#L391">91.2%</a>
+GGUF Q2_K with imatrix (llama…  WMT24++ X-&gt;English COMET (wmt22-c…      0.729 → 0.63   <a href="https://arxiv.org/html/2508.20893v1#S4.T4">86.5%</a>
+GGUF Q2_K with imatrix (llama…  WMT24++ English-&gt;X COMET (wmt22-c…     0.554 → 0.449   <a href="https://arxiv.org/html/2508.20893v1#S4.T3">81.0%</a>
+GGUF Q4_K_M with imatrix (lla…  WMT24++ X-&gt;English COMET (wmt22-c…     0.729 → 0.725   <a href="https://arxiv.org/html/2508.20893v1#S4.T2">99.5%</a>
+GGUF Q4_K_M with imatrix (lla…  WMT24++ English-&gt;X COMET (wmt22-c…     0.554 → 0.547   <a href="https://arxiv.org/html/2508.20893v1#S4.T1">98.8%</a>
+GPTQ INT8 (w8, group_size 128…  MMLU-Redux, thinking mode (Qwen-r…     0.739 → 0.749  <a href="https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L278">101.4%</a>
+GPTQ INT8 (w8, group_size 128…  LiveBench 2024-11-25, non-thinkin…     0.356 → 0.355   <a href="https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L280">99.7%</a>
+GPTQ INT8 (w8, group_size 128…  GPQA (subset not stated in card),…     0.286 → 0.283   <a href="https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L280">99.0%</a>
+GPTQ INT8 (w8, group_size 128…  MMLU-Redux, non-thinking mode (Qw…      0.644 → 0.63   <a href="https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L280">97.8%</a>
+GPTQ INT8 (w8, group_size 128…  GPQA (subset not stated in card),…     0.401 → 0.391   <a href="https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L278">97.5%</a>
+GPTQ INT8 (w8, group_size 128…  LiveBench 2024-11-25, thinking mo…     0.511 → 0.498   <a href="https://huggingface.co/Qwen/Qwen3-1.7B-GPTQ-Int8/blob/382fed3fa21d1a7e837b42a500564a0c4be4f060/README.md#L278">97.5%</a>
+INT4 W4A16 (weight-only INT4,…  MMLU — published row 'MMLU (5-sho…     0.568 → 0.551   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L260">97.0%</a>
+INT4 W4A16 (weight-only INT4,…  OpenLLM v1 average of 6 tasks (MM…     0.498 → 0.468   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L320">94.0%</a>
+INT4 W4A16 (weight-only INT4,…  OpenLLM v2 average of 6 tasks (MM…     0.243 → 0.224   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L392">92.1%</a>
+INT4 W4A16 (weight-only INT4,…  GPQA Diamond — published row 'GPQ…     0.384 → 0.348   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L436">90.8%</a>
+INT4 W4A16 (weight-only INT4,…  AIME 2025 — published row 'AIME 2…     0.323 → 0.282   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L426">87.4%</a>
+INT4 W4A16 (weight-only INT4,…  LiveCodeBench — published row 'Li…     0.334 → 0.264   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L456">78.9%</a>
+INT4 W4A16 (weight-only INT4,…  AIME 2024 — published row 'AIME 2…      0.44 → 0.321   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L416">73.0%</a>
+INT4 W4A16 (weight-only INT4,…  GSM8K — published row 'GSM-8K (5-…     0.437 → 0.306   <a href="https://huggingface.co/RedHatAI/Qwen3-1.7B-quantized.w4a16/blob/f8467681051842a5be10a8478d8cfdc5facb0af3/README.md#L280">70.1%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

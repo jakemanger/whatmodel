@@ -6,13 +6,16 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| τ²-bench Retail | 66.7% | [ServiceNow-AI/Apriel-1.6-15b-Thinker model card](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md) · lab-reported · Apriel-1.6-15B-Thinker own internal evaluation, outside AA Index v3. All evaluations begin with Here are my reasoning steps:\\n per card. Temperature0.6 is a recommendation, not an asserted per-task log. Token limit, task scaffold/simulator versions and Multi-IF aggregation unspecified. The card’s copied Apriel1.5 citation is not used to relabel this1.6 result. Review date is not the evaluation-run date. |
-| τ²-bench Airline | 58.0% | [ServiceNow-AI/Apriel-1.6-15b-Thinker model card](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md) · lab-reported · Apriel-1.6-15B-Thinker own internal evaluation, outside AA Index v3. All evaluations begin with Here are my reasoning steps:\\n per card. Temperature0.6 is a recommendation, not an asserted per-task log. Token limit, task scaffold/simulator versions and Multi-IF aggregation unspecified. The card’s copied Apriel1.5 citation is not used to relabel this1.6 result. Review date is not the evaluation-run date. |
-| Multi-IF (aggregation unspecified) | 83.3% | [ServiceNow-AI/Apriel-1.6-15b-Thinker model card](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md) · lab-reported · Apriel-1.6-15B-Thinker own internal evaluation, outside AA Index v3. All evaluations begin with Here are my reasoning steps:\\n per card. Temperature0.6 is a recommendation, not an asserted per-task log. Token limit, task scaffold/simulator versions and Multi-IF aggregation unspecified. The card’s copied Apriel1.5 citation is not used to relabel this1.6 result. Review date is not the evaluation-run date. |
-| SWE-bench Verified | 23.0% | [ServiceNow-AI/Apriel-1.6-15b-Thinker model card](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md) · lab-reported · Apriel-1.6-15B-Thinker own internal evaluation, outside AA Index v3. All evaluations begin with Here are my reasoning steps:\\n per card. Temperature0.6 is a recommendation, not an asserted per-task log. Token limit, task scaffold/simulator versions and Multi-IF aggregation unspecified. The card’s copied Apriel1.5 citation is not used to relabel this1.6 result. Review date is not the evaluation-run date. |
-| Aider polyglot (225 exercises, two attempts) | 37.7% | [ServiceNow-AI/Apriel-1.6-15b-Thinker model card](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md) · lab-reported · Apriel-1.6-15B-Thinker own internal evaluation, outside AA Index v3. All evaluations begin with Here are my reasoning steps:\\n per card. Temperature0.6 is a recommendation, not an asserted per-task log. Token limit, task scaffold/simulator versions and Multi-IF aggregation unspecified. The card’s copied Apriel1.5 citation is not used to relabel this1.6 result. Review date is not the evaluation-run date. |
+<pre>
+test                                result  reported by  source
+τ²-bench Retail                      66.7%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
+τ²-bench Airline                     58.0%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
+Multi-IF (aggregation unspecified)   83.3%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
+SWE-bench Verified                   23.0%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
+Aider polyglot (225 exercises, tw…   37.7%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
+</pre>
+
+<sub>Licences: ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>
 
 ## How to run it
 

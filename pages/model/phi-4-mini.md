@@ -6,81 +6,94 @@
 
 Microsoft · released 2025-02 · 3.84B params · mit
 
-**score 22.0** ±2.0
-
-#199 of 205 · from 7 benchmark results across 5 sources
+**score 22.0** ±2.0 · #199 of 205 · from 7 benchmark results across 5 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="korean-personal-benchmark-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Daekeun Kim Korean LLM benchmark runs"> Daekeun Kim Korean LLM benchmark runs | [HAE-RAE 1.0 (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 44.5% | 21.0 | ▇▇▇▇▇▇▇ 23% |  |
-|  | [CLIcK Korean (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 42.8% | 24.6 | ▇▇▇▇▇▇ 22% |  |
-|  | [KMMLU-HARD (Daekeun Kim, zero-shot)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 25.3% | 20.3 | ▇▇▇▇▇ 18% |  |
-| <a name="speakleash-polish-eq-bench"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash Polish EQ-Bench leaderboard"> SpeakLeash Polish EQ-Bench leaderboard | [Polish EQ-Bench v2 (SpeakLeash)](https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv) | 50.8% | 24.1 | ▇▇▇▇ 13% | 2025-03-03 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 43.4% | 12.2 | ▇▇▇ 10% | 2026-08-11 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 66.5% | 24.6 | ▇▇ 8% | 2025-05-01 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 24.5% | 21.0 | ▇▇ 5% | 2025-04-28 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 22.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>       44.5%    21.0                23% ▇▇▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>      42.8%    24.6                22% ▇▇▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  25.3%    20.3                18% ▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  50.8%    24.1   2025-03-03   13% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  43.4%    12.2   2026-08-11   10% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  66.5%    24.6   2025-05-01    8% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  24.5%    21.0   2025-04-28    5% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 22.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (26)
+<sub>Licences: Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| microsoft/Phi-4-mini-instruct model card | [BIG-Bench Hard](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 70.4% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [MMLU](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 67.3% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [MMLU-Pro](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 52.8% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [ARC Challenge](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 83.7% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [BoolQ](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 81.2% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [GPQA (subset unspecified)](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 25.2% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [HellaSwag](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 69.1% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [OpenBookQA](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 79.2% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [PIQA](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 77.6% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [Social IQA](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 72.5% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [TruthfulQA MC2](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 66.4% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [WinoGrande](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 67.0% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [Multilingual MMLU (Microsoft)](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 49.3% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [MGSM](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 63.9% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [GSM8K](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 88.6% | too few models have this result to calibrate it yet |
-| microsoft/Phi-4-mini-instruct model card | [MATH](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md) | 64.0% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [BFCL (version not stated)](https://arxiv.org/html/2503.01743v2) | 70.3% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [BigCodeBench (Complete)](https://arxiv.org/html/2503.01743v2) | 43.0% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [BigCodeBench (Instruct)](https://arxiv.org/html/2503.01743v2) | 33.8% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [GPQA Diamond](https://arxiv.org/html/2503.01743v2) | 36.9% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [HumanEval](https://arxiv.org/html/2503.01743v2) | 74.4% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [HumanEval+](https://arxiv.org/html/2503.01743v2) | 68.3% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [IFEval (aggregation unspecified)](https://arxiv.org/html/2503.01743v2) | 70.1% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [MATH-500](https://arxiv.org/html/2503.01743v2) | 71.8% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [MBPP](https://arxiv.org/html/2503.01743v2) | 65.3% | too few models have this result to calibrate it yet |
-| Microsoft — Phi-4-Mini Technical Report | [MBPP+](https://arxiv.org/html/2503.01743v2) | 63.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (26)</summary>
+
+<pre>
+source                  test                            score  why
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                  70.4%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                            67.3%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU-Pro</a>                        52.8%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge</a>                   83.7%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BoolQ</a>                           81.2%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified)</a>       25.2%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag</a>                       69.1%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">OpenBookQA</a>                      79.2%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA</a>                            77.6%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Social IQA</a>                      72.5%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2</a>                  66.4%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande</a>                      67.0%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">Multilingual MMLU (Microsoft)</a>   49.3%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MGSM</a>                            63.9%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GSM8K</a>                           88.6%  too few models have it yet
+microsoft/Phi-4-mini-…  <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                            64.0%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">BFCL (version not stated)</a>       70.3%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Complete)</a>         43.0%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">BigCodeBench (Instruct)</a>         33.8%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">GPQA Diamond</a>                    36.9%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">HumanEval</a>                       74.4%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">HumanEval+</a>                      68.3%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">IFEval (aggregation unspecifi…</a>  70.1%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">MATH-500</a>                        71.8%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">MBPP</a>                            65.3%  too few models have it yet
+Microsoft               <a href="https://arxiv.org/html/2503.01743v2">MBPP+</a>                           63.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [azure.microsoft.com ↗](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
+api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft)
 
-[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft) · USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini' (Azure model id Phi-4-mini-instruct, GA), 128K context: input $0.075, output $0.30, region US East. Fine-tuned hosting/training rates excluded. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25.
+<sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini' (Azure model id Phi-4-mini-instruct, GA), 128K context: input $0.075, output $0.30, region US East. Fine-tuned hosting/training rates excluded. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/microsoft/phi-4-mini.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/microsoft/phi-4-mini.toml) · model catalogue context ceiling (not a promise by a hosted API)
+<pre>
+download         size  score
+4-bit q4_k_m   ~2.8GB   22.0
+8-bit q8_0    ~5.11GB   22.0
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~2.8GB | 22.0 | `ollama run phi4-mini:3.8b` |
-| 8-bit q8\_0 | ~5.11GB | 22.0 | `ollama run phi4-mini:3.8b-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run phi4-mini:3.8b
+# 8-bit q8_0
+ollama run phi4-mini:3.8b-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | MMLU with chain-of-thought prompting (lm-evaluation-harness, vLLM) | 0.67 → 0.67 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/Phi-4-mini-instruct-FP8-dynamic/blob/5450d52149bf44e81cbbd30b2f02762947845bb3/README.md#L279) |
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token) | MMLU-Pro (lm-evaluation-harness, vLLM) | 0.468 → 0.456 | 97.5% | [source ↗](https://huggingface.co/RedHatAI/Phi-4-mini-instruct-FP8-dynamic/blob/5450d52149bf44e81cbbd30b2f02762947845bb3/README.md#L289) |
+<pre>
+precision                       test                                full → quantized   kept
+FP8 W8A8 dynamic (weights sym…  MMLU with chain-of-thought prompt…       0.67 → 0.67  <a href="https://huggingface.co/RedHatAI/Phi-4-mini-instruct-FP8-dynamic/blob/5450d52149bf44e81cbbd30b2f02762947845bb3/README.md#L279">99.9%</a>
+FP8 W8A8 dynamic (weights sym…  MMLU-Pro (lm-evaluation-harness, …     0.468 → 0.456  <a href="https://huggingface.co/RedHatAI/Phi-4-mini-instruct-FP8-dynamic/blob/5450d52149bf44e81cbbd30b2f02762947845bb3/README.md#L289">97.5%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/phi-4-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

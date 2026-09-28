@@ -6,47 +6,51 @@
 
 Deepgram · released 2025-02 · proprietary
 
-**score 55.8** ±1.5
-
-#14 of 28 · from 14 benchmark results across 9 sources
+**score 55.8** ±1.5 · #14 of 28 · from 14 benchmark results across 9 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-verli-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="verliapp/stt-benchmark · independent STT accuracy benchmark"> verliapp/stt-benchmark · independent STT accuracy benchmark | [verli STT benchmark · SPGISpeech 1,200-clip sample WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json) | 2.9% | 56.3 | ▇▇▇▇ 15% | 2026-07-19 |
-|  | [verli STT benchmark · Earnings-22 WER (2,741 utt.)](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json) | 16.1% | 51.1 | ▇▇ 7% | 2026-07-19 |
-|  | [verli STT benchmark · LibriSpeech test-clean WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json) | 2.5% | 48.9 | ▇ 2% | 2026-07-19 |
-| <a name="speech-stt-ru-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Russian STT benchmark by domain"> Russian STT benchmark by domain | [Russian STT · rulibrispeech corpus WER](https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md) | 8.9% | 56.8 | ▇▇ 8% | 2026-08-07 |
-|  | [Russian STT · podlodka corpus WER (20-clip pilot)](https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md) | 7.1% | 57.7 | ▇▇ 7% | 2026-08-07 |
-|  | [Russian STT · fleurs corpus WER](https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md) | 6.6% | 51.9 | ▇▇ 6% | 2026-08-07 |
-| <a name="speech-stt-voicecodebench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="VoiceCodeBench (arXiv:2608.28916v2) · structured-token recovery ASR benchmark"> VoiceCodeBench (arXiv:2608.28916v2) · structured-token recovery ASR benchmark ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) | [VoiceCodeBench · batch canonical token/entity match (CTEM)](https://arxiv.org/html/2608.28916v2) | 90.9% | 60.8 | ▇▇▇ 9% | 2026-05-15 |
-|  | [VoiceCodeBench · batch WER (300 English workplace segments)](https://arxiv.org/html/2608.28916v2) | 8.2% | 54.2 | ▇▇▇ 9% | 2026-05-15 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ ASR · 4 real-world English sets, mean WER](https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg) | 9.5% | 54.7 | ▇▇▇ 12% | 2026-07-16 |
-| <a name="speech-stt-openbench-mit"></a><img src="../../icons/github.com.png" width="14" alt="Argmax OpenBench · open reproducible speech benchmarks (BENCHMARKS.md)"> Argmax OpenBench · open reproducible speech benchmarks (BENCHMARKS.md) | [Argmax OpenBench · earnings22-keywords WER (no keyword prompting)](https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md) | 15.3% | 55.5 | ▇▇ 8% | 2025-12-12 |
-| <a name="speech-stt-bangla-riverborn-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Bangla Speech-to-Text Benchmark v1.0 (Riverborn)"> Bangla Speech-to-Text Benchmark v1.0 (Riverborn) | [Bangla STT benchmark · BanSpeech 1,001-clip batch CER](https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv) | 10.1% | 61.7 | ▇▇ 6% | 2026-09-24 |
-| <a name="speech-stt-quranic-asr-lb-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Quranic ASR Leaderboard (Quran-Lab, held-out recitation set)"> Quranic ASR Leaderboard (Quran-Lab, held-out recitation set) | [Quranic ASR Leaderboard · held-out recitation (600 clips) overall WER](https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json) | 14.1% | 58.1 | ▇▇ 6% | 2026-08-15 |
-| <a name="speech-gigaspeechbench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark"> GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GigaSpeechBench · 7 Arabic dialect WER mean](https://arxiv.org/html/2606.28884v1) | 46.6% | 55.2 | ▇ 5% | 2026-06-27 |
-| <a name="speech-stt-koedesk-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="koedesk STT Bench v1 (Track A, FLEURS first-200)"> koedesk STT Bench v1 (Track A, FLEURS first-200) ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) | [koedesk FLEURS first-200 · 9-language headline error mean](https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json) | 7.5% | 3.8 | ▇ 0% | 2026-07-05 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 55.8** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.9%    56.3   2026-07-19   15% ▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  16.1%    51.1   2026-07-19    7% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.5%    48.9   2026-07-19    2% ▇
+<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>   8.9%    56.8   2026-08-07    8% ▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   7.1%    57.7   2026-08-07    7% ▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   6.6%    51.9   2026-08-07    6% ▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  90.9%    60.8   2026-05-15    9% ▇
+                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   8.2%    54.2   2026-05-15    9% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.5%    54.7   2026-07-16   12% ▇
+<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  15.3%    55.5   2025-12-12    8% ▇
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  10.1%    61.7   2026-09-24    6% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  14.1%    58.1   2026-08-15    6% ▇
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  46.6%    55.2   2026-06-27    5% ▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   7.5%     3.8   2026-07-05    0% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 55.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · Russian STT benchmark by domain ([MIT](../../licenses/speech-stt-ru-mit.txt)) · VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Argmax OpenBench · open reproducible speech benchmarks ([MIT](../../licenses/speech-stt-openbench-mit.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Live voice-memo STT pilot | [Voice memos · RU 10-clip pilot median WER](https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv) | 31.0% | too few models have this result to calibrate it yet |
-| Live voice-memo STT pilot | [Voice memos · EN 10-clip pilot median WER](https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv) | 23.6% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+Live voice-memo STT p…  <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · RU 10-clip pilo…</a>  31.0%  too few models have it yet
+Live voice-memo STT p…  <a href="https://github.com/Smolevich/stt-benchmarks/blob/b6349a817a84cb0d74369b02ea951f1d6112f4f2/results/summary.csv">Voice memos · EN 10-clip pilo…</a>  23.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Cloudflare) · $0.0052/audio min · [developers.cloudflare.com ↗](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+api (Cloudflare) · $0.0052/audio min · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
-[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx) · Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/deepgram/nova-3. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD.
+<sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/deepgram/nova-3. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD.</sub>
 
 no verified local download listed
 

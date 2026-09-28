@@ -6,29 +6,30 @@
 
 Kuaishou · closed weights
 
-**score 47.3** ±5.0
-
-#32 of 54 · from 3 benchmark results across 3 sources
+**score 47.3** ±5.0 · #32 of 54 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-v-reasonbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models"> V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) | [V-ReasonBench (average pass@5)](https://arxiv.org/html/2511.16668v1#S3.T2) | 11.3% | 40.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 52% | 2025-11-20 |
-| <a name="visual-vwg-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench)"> From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) | [VWG-Bench think-with-video reasoning (overall)](https://arxiv.org/html/2609.11242v1#S4.T2) lab-reported | 59.4% | 52.9 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-09-10 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 90.8% | 75.3 | ▇ 5% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 47.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>  11.3%    40.6   2025-11-20   52% ▇▇▇▇▇▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  59.4%    52.9   2026-09-10   33% ▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                90.8%    75.3   2026-04-22    5% ▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 47.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.070/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video)
+api (fal.ai) · $0.070/sec · [fal.ai](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video) · USD per second of generated video on fal.ai. Product: fal Kling 2.5 Turbo Pro text-to-video endpoint. API model: fal-ai/kling-video/v2.5-turbo/pro/text-to-video. Price basis: fal prices a 5-s video at $0.35 and each additional second at $0.07, i.e. $0.07 per output second. Kling's own developer pricing page does not list a per-model price for V2.5 Turbo. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video): USD per second of generated video on fal.ai. Product: fal Kling 2.5 Turbo Pro text-to-video endpoint. API model: fal-ai/kling-video/v2.5-turbo/pro/text-to-video. Price basis: fal prices a 5-s video at $0.35 and each additional second at $0.07, i.e. $0.07 per output second. Kling's own developer pricing page does not list a per-model price for V2.5 Turbo. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

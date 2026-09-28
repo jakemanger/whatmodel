@@ -6,28 +6,29 @@
 
 OpenAI · released 2026-07 · proprietary
 
-**score 58.1** ±3.5
-
-#4 of 28 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.1** ±3.5 · #4 of 28 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-voicecodebench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="VoiceCodeBench (arXiv:2608.28916v2) · structured-token recovery ASR benchmark"> VoiceCodeBench (arXiv:2608.28916v2) · structured-token recovery ASR benchmark ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) | [VoiceCodeBench · batch canonical token/entity match (CTEM)](https://arxiv.org/html/2608.28916v2) | 89.3% | 58.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 49% | 2026-09-01 |
-|  | [VoiceCodeBench · batch WER (300 English workplace segments)](https://arxiv.org/html/2608.28916v2) | 6.1% | 58.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-09-01 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 58.1** |  |  |
+<pre>
+source          test                            score  implies  date        weight
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench  <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  89.3%    58.2   2026-09-01   49% ▇▇▇▇▇▇
+                <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.1%    58.7   2026-09-01   46% ▇▇▇▇▇▇
+prior           pull toward the middle                   49.9                 5% ▇
+                weighted average                       = 58.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $0.0045/audio min · [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing)
+api (OpenAI) · $0.0045/audio min · [developers.openai.com](https://developers.openai.com/api/docs/pricing)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per input audio minute. Exact endpoint gpt-transcribe. Product: Audio transcription. API model: gpt-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute. Exact endpoint gpt-transcribe. Product: Audio transcription. API model: gpt-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: published rate. Currency: USD.</sub>
 
 no verified local download listed
 

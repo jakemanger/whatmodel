@@ -6,48 +6,58 @@
 
 Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
-**score 46.3** ±3.5
-
-#127 of 205 · from 3 benchmark results across 2 sources
+**score 46.3** ±3.5 · #127 of 205 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-mistralai-mistral-small-4-119b-2603"></a><img src="../../icons/huggingface.co.png" width="14" alt="mistralai/Mistral-Small-4-119B-2603 model card"> mistralai/Mistral-Small-4-119B-2603 model card | [MMMU Pro](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) lab-reported | 60.0% | 48.3 | ▇▇▇▇▇▇▇▇▇▇▇ 38% | 2026-09-25 |
-|  | [IFBench (aggregation unspecified)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) lab-reported | 48.0% | 49.9 | ▇▇▇▇▇▇▇▇▇▇▇ 36% | 2026-09-25 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 33.9% | 35.6 | ▇▇▇▇▇▇ 21% | 2026-04-04 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 46.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-mistralai-mistral-small-4-119b-2603"></a>mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                  60.0%    48.3   2026-09-25   38% ▇▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>  48.0%    49.9   2026-09-25   36% ▇▇▇▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  33.9%    35.6   2026-04-04   21% ▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 46.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (6)
+<sub>Licences: mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| mistralai/Mistral-Small-4-119B-2603 model card | [AIME 2025](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 83.8% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [LiveCodeBench (version unspecified)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 63.6% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [GPQA Diamond](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 71.2% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [MMLU-Pro](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 78.0% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [Arena-Hard (version/judge unspecified)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 58.3% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [COLLIE (constrained text generation)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 62.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source                  test                            score  why
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">AIME 2025</a>                       83.8%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  63.6%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">GPQA Diamond</a>                    71.2%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMLU-Pro</a>                        78.0%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>  58.3%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  62.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.mistral.ai ↗](https://docs.mistral.ai/models/mistral-small-4-0-26-03)
+api (Mistral) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/mistral-small-4-0-26-03)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens. Mistral standard synchronous API; model mistral-small-2603. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. Mistral standard synchronous API; model mistral-small-2603. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): Mistral API maximum input tokens from exact catalogue record mistral/mistral-small-2603; not the legacy max\_tokens field.</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · Mistral API maximum input tokens from exact catalogue record mistral/mistral-small-2603; not the legacy max\_tokens field.
+<pre>
+download             size  score
+4-bit ud-q4_k_m   ~71.9GB   46.3
+2-bit ud-q2_k_xl  ~36.2GB   46.3
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_m | ~71.9GB | 46.3 | `llama-server -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M` |
-| 2-bit ud-q2\_k\_xl | ~36.2GB | 46.3 | `llama-server -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit ud-q4_k_m
+llama-server -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q4_K_M
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Mistral-Small-4-119B-2603-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/mistral-small-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

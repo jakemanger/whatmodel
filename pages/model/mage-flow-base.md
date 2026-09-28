@@ -6,9 +6,7 @@
 
 Microsoft
 
-**score 31.5** ±16.6
-
-comparison only: no current run option verified · from 9 benchmark results across 1 source
+**score 31.5** ±16.6 · comparison only: no current run option verified · from 9 benchmark results across 1 source
 
 Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow) comparison set only.
 
@@ -16,21 +14,24 @@ Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-mage-flow"></a><img src="../../icons/arxiv.org.png" width="14" alt="Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing"> Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing ([CC-BY-4.0](../../licenses/visual-mage-flow.txt)) | [GenEval](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 79.0% | 4.6 | ▇▇▇▇▇▇▇ 24% | 2026-07-22 |
-|  | [LongText-Bench (EN)](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 90.4% | 26.3 | ▇▇▇▇▇ 16% | 2026-07-22 |
-|  | [CVTG-2K word accuracy](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 85.1% | 27.9 | ▇▇▇ 11% | 2026-07-22 |
-|  | [LongText-Bench (CN)](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 79.2% | 37.5 | ▇▇▇ 8% | 2026-07-22 |
-|  | [TIIF-Bench testmini (long prompts)](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 83.2% | 40.2 | ▇▇ 7% | 2026-07-22 |
-|  | [DPG-Bench](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 86.3% | 52.7 | ▇▇ 5% | 2026-07-22 |
-|  | [OneIG-Bench (CN)](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 50.9% | 55.5 | ▇▇ 5% | 2026-07-22 |
-|  | [TIIF-Bench testmini (short prompts)](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 82.5% | 46.5 | ▇ 5% | 2026-07-22 |
-|  | [OneIG-Bench (EN)](https://arxiv.org/html/2607.19064v2#S6.T8) lab-reported | 54.2% | 56.3 | ▇ 5% | 2026-07-22 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇▇ 13% |  |
-|  | **weighted average** |  | **= 31.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-mage-flow"></a>Mage-Flow: An Efficie…  <a href="https://arxiv.org/html/2607.19064v2#S6.T8">GenEval (lab)</a>                   79.0%     4.6   2026-07-22   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (EN) (lab)</a>       90.4%    26.3   2026-07-22   16% ▇▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">CVTG-2K word accuracy (lab)</a>     85.1%    27.9   2026-07-22   11% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">LongText-Bench (CN) (lab)</a>       79.2%    37.5   2026-07-22    8% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (long pro…</a>  83.2%    40.2   2026-07-22    7% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">DPG-Bench (lab)</a>                 86.3%    52.7   2026-07-22    5% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (CN) (lab)</a>          50.9%    55.5   2026-07-22    5% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">TIIF-Bench testmini (short pr…</a>  82.5%    46.5   2026-07-22    5% ▇
+                        <a href="https://arxiv.org/html/2607.19064v2#S6.T8">OneIG-Bench (EN) (lab)</a>          54.2%    56.3   2026-07-22    5% ▇
+prior                   pull toward the middle                   50.0                13% ▇▇
+                        weighted average                       = 31.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing ([CC-BY-4.0](../../licenses/visual-mage-flow.txt))</sub>
 
 ## How to run it
 

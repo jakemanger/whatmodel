@@ -6,27 +6,28 @@
 
 Runway · closed weights
 
-**score 23.2** ±3.9
-
-#53 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 23.2** ±3.9 · #53 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1052.3 | 21.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 23.2** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1052.3    21.4   2026-09-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 6% ▇
+                        weighted average                = 23.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Runway) · $0.050/sec · [docs.dev.runwayml.com ↗](https://docs.dev.runwayml.com/guides/models)
+api (Runway) · $0.050/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/models)
 
-[price source](https://docs.dev.runwayml.com/guides/pricing) · USD per second of generated video: Runway lists gen4\_turbo at 5 credits per second; credits cost $0.01 each. Runway states one per-second rate for the model (no resolution tiers are listed). Product: Runway developer API video generation (image-to-video; gen4\_turbo takes an image input). API model: gen4\_turbo. Settings: standard mp4 output. Price basis: 5 credits × $0.01 per credit; sales tax excluded. Currency: USD. Runway official API pricing page, observed 2026-09-26.
+<sub>[price source](https://docs.dev.runwayml.com/guides/pricing): USD per second of generated video: Runway lists gen4\_turbo at 5 credits per second; credits cost $0.01 each. Runway states one per-second rate for the model (no resolution tiers are listed). Product: Runway developer API video generation (image-to-video; gen4\_turbo takes an image input). API model: gen4\_turbo. Settings: standard mp4 output. Price basis: 5 credits × $0.01 per credit; sales tax excluded. Currency: USD. Runway official API pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

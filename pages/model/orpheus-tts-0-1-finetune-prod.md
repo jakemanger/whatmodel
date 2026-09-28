@@ -6,29 +6,30 @@
 
 Canopy Labs · released 2025-03
 
-**score 43.4** ±3.4
-
-#31 of 36 · from 3 benchmark results across 2 sources
+**score 43.4** ±3.4 · #31 of 36 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 29.4% | 44.5 | ▇▇▇▇▇▇▇▇▇▇▇▇ 40% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 17.7% | 41.2 | ▇▇▇▇ 13% | 2025-08-10 |
-| <a name="speech-emergent-v1-paper-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS"> EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) | [EmergentTTS · v1 paper automatic MOS (WV-MOS)](https://arxiv.org/html/2505.23009v1) | 3.76 / 5 | 42.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 42% | 2025-05-29 |
-| prior | pull toward the middle |  | 49.9 | ▇ 5% |  |
-|  | **weighted average** |  | **= 43.4** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     29.4%    44.5   2025-08-10   40% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       17.7%    41.2   2025-08-10   13% ▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.76 / 5    42.2   2025-05-29   42% ▇▇▇▇▇
+prior                   pull toward the middle                      49.9                 5% ▇
+                        weighted average                          = 43.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>
 
 ## How to run it
 
-api (Together AI) · $15.00/M chars · [docs.together.ai ↗](https://docs.together.ai/docs/serverless/models)
+api (Together AI) · $15.00/M chars · [docs.together.ai](https://docs.together.ai/docs/serverless/models)
 
-[price source](https://docs.together.ai/docs/serverless/models.md) · USD per 1M input characters: Together's serverless model list gives Canopy Labs Orpheus 3B, API model canopylabs/orpheus-3b-0.1-ft, at $15.00 per 1M chars. Identity: the Hugging Face repo canopylabs/orpheus-tts-0.1-finetune-prod redirects to canopylabs/orpheus-3b-0.1-ft (same repo id), so this is the same checkpoint. Product: Together serverless text-to-speech. API model: canopylabs/orpheus-3b-0.1-ft. Settings: standard. Price basis: published list rate. Exclusions: DeepInfra lists the same checkpoint at $7.00/1M characters (smaller host, not used). Currency: USD. Together official docs, observed 2026-09-25.
+<sub>[price source](https://docs.together.ai/docs/serverless/models.md): USD per 1M input characters: Together's serverless model list gives Canopy Labs Orpheus 3B, API model canopylabs/orpheus-3b-0.1-ft, at $15.00 per 1M chars. Identity: the Hugging Face repo canopylabs/orpheus-tts-0.1-finetune-prod redirects to canopylabs/orpheus-3b-0.1-ft (same repo id), so this is the same checkpoint. Product: Together serverless text-to-speech. API model: canopylabs/orpheus-3b-0.1-ft. Settings: standard. Price basis: published list rate. Exclusions: DeepInfra lists the same checkpoint at $7.00/1M characters (smaller host, not used). Currency: USD. Together official docs, observed 2026-09-25.</sub>
 
 no verified local download listed
 

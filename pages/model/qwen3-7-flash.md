@@ -6,33 +6,32 @@
 
 Alibaba · released 2026-07 · closed weights
 
-**score 53.5** ±1.6
-
-#95 of 205 · from 5 benchmark results across 1 source
+**score 53.5** ±1.6 · #95 of 205 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 19.3% | 51.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 74% | 2026-08-29 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 82.3% | 57.1 | ▇▇ 8% | 2026-08-07 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 86.7% | 57.3 | ▇▇ 8% | 2026-08-07 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 15.0% | 60.1 | ▇▇ 7% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 23.0% | 64.3 | ▇ 2% | 2026-08-07 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 53.5** |  |  |
+<pre>
+source    test                          score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>     19.3%    51.8   2026-08-29   74% ▇▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  82.3%    57.1   2026-08-07    8% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    57.3   2026-08-07    8% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  15.0%    60.1   2026-08-28    7% ▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         23.0%    64.3   2026-08-07    2% ▇
+prior     pull toward the middle                 50.0                 1% ▇
+          weighted average                     = 53.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.055/M blended · $0.03 in / $0.13 out per 1M tokens · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
+api (Alibaba Cloud Model Studio) · $0.055/M blended · $0.03 in / $0.13 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per 1M tokens, Singapore (International), qwen3.7-flash (currently equivalent to qwen3.7-flash-2026-07-15), 0\<Token\<=32K input tier: input $0.030, output $0.130; the 32K-256K ($0.100/$0.400) and 256K-1M ($0.200/$0.800) tiers are priced higher. Batch (50%) and context-cache discounts and free quota excluded. Observed 2026-09-25.
-
-[context specification source](https://www.alibabacloud.com/help/en/model-studio/text-generation-model) · Alibaba Cloud Model Studio text-generation models table: qwen3.7-flash context 1M (stated rounded). Observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), qwen3.7-flash (currently equivalent to qwen3.7-flash-2026-07-15), 0\<Token\<=32K input tier: input $0.030, output $0.130; the 32K-256K ($0.100/$0.400) and 256K-1M ($0.200/$0.800) tiers are priced higher. Batch (50%) and context-cache discounts and free quota excluded. Observed 2026-09-25. · [context source](https://www.alibabacloud.com/help/en/model-studio/text-generation-model): Alibaba Cloud Model Studio text-generation models table: qwen3.7-flash context 1M (stated rounded). Observed 2026-09-25.</sub>
 
 no verified local download listed
 

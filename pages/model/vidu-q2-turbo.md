@@ -6,27 +6,28 @@
 
 ShengShu (Vidu) · closed weights
 
-**score 46.0** ±3.9
-
-#37 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.0** ±3.9 · #37 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1243.6 | 45.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 46.0** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1243.6    45.8   2026-09-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 6% ▇
+                        weighted average                = 46.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.050/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo)
+api (fal.ai) · $0.050/sec · [fal.ai](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo)
 
-[price source](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo) · USD per second of generated video at 720p on fal.ai: fal states 'For 720p each video second will cost $0.05' (1080p: $0.20 per request plus $0.05 per video second). Product: fal Vidu Q2 Turbo image-to-video endpoint. API model: fal-ai/vidu/q2/image-to-video/turbo. Settings: resolution=720p, image-to-video. Price basis: per-second rate printed by fal. Vidu's own API prices Q2-turbo 720P per task (starts at $0.04, $0.05 at 2 s, then +$0.05/s), which has no single per-second figure. Currency: USD. Not a Vidu direct tariff. fal.ai model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo): USD per second of generated video at 720p on fal.ai: fal states 'For 720p each video second will cost $0.05' (1080p: $0.20 per request plus $0.05 per video second). Product: fal Vidu Q2 Turbo image-to-video endpoint. API model: fal-ai/vidu/q2/image-to-video/turbo. Settings: resolution=720p, image-to-video. Price basis: per-second rate printed by fal. Vidu's own API prices Q2-turbo 720P per task (starts at $0.04, $0.05 at 2 s, then +$0.05/s), which has no single per-second figure. Currency: USD. Not a Vidu direct tariff. fal.ai model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

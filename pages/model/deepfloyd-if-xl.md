@@ -6,9 +6,7 @@
 
 DeepFloyd
 
-**score 31.8** ±5.2
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 31.8** ±5.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +14,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-geneval"></a><img src="../../icons/huggingface.co.png" width="14" alt="djghosh13/geneval repository README results"> djghosh13/geneval repository README results | [GenEval](https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md) | 61.0% | 29.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 89% | 2023-10-17 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 31.8** |  |  |
+<pre>
+source                  test                    score  implies  date        weight
+<a name="visual-geneval"></a>djghosh13/geneval rep…  <a href="https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md">GenEval</a>                 61.0%    29.6   2023-10-17   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle           49.9                11% ▇
+                        weighted average               = 31.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: djghosh13/geneval repository README results ([MIT](../../licenses/visual-geneval.txt))</sub>
 
 ## How to run it
 

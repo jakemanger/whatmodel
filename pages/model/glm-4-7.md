@@ -6,70 +6,82 @@
 
 Z.ai · released 2025-12 · 357B params (32B active) · mit
 
-**score 56.9** ±1.8
-
-#70 of 205 · from 9 benchmark results across 5 sources
+**score 56.9** ±1.8 · #70 of 205 · from 9 benchmark results across 5 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1434.7 | 59.0 | ▇▇▇▇▇▇▇ 22% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1441.7 | 59.9 | ▇▇▇▇ 12% | 2026-09-13 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 83.3% | 57.8 | ▇▇▇ 10% | 2026-01-29 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 83.3% | 55.5 | ▇▇▇ 9% | 2026-01-29 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 32.2% | 58.4 | ▇▇▇ 9% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 6.0% | 36.4 | ▇ 3% | 2026-01-29 |
-| <a name="zai-rpc-bench-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="RPC-Bench leaderboard (Z.ai research paper comprehension)"> RPC-Bench leaderboard (Z.ai research paper comprehension) | [RPC-Bench overall, text input (Z.ai)](https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json) lab-reported | 28.8% | 57.3 | ▇▇▇ 12% | 2026-06-17 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 62.0% | 55.1 | ▇▇▇ 11% | 2026-05-02 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1271.3 | 56.6 | ▇▇▇ 9% | 2026-05-10 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 56.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1434.7    59.0   2026-09-24   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1441.7    59.9   2026-09-13   12% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     83.3%    57.8   2026-01-29   10% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         83.3%    55.5   2026-01-29    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                32.2%    58.4   2026-08-27    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             6.0%    36.4   2026-01-29    3% ▇
+<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   28.8%    57.3   2026-06-17   12% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   62.0%    55.1   2026-05-02   11% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1271.3    56.6   2026-05-10    9% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 56.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (21)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RPC-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| zai-org/GLM-4.7 model card | [AIME 2025](https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md) | 95.7% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7 model card | [HMMT February 2025](https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md) | 97.1% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7 model card | [LiveCodeBench v6 (window unspecified)](https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md) | 84.9% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7 model card | [MMLU-Pro](https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md) | 84.3% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [AIME 2026 I](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 92.9% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [BrowseComp with context management](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 67.5% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [BrowseComp-ZH](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 66.6% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [CyberGym](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 23.5% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [MCP-Atlas (public set)](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 52.0% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [SWE-bench Multilingual](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 66.7% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [SWE-bench Verified](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 73.8% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [τ²-bench aggregate](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 87.4% | too few models have this result to calibrate it yet |
-| zai-org/GLM-5 model card | [Terminal-Bench 2.0](https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md) | 41.0% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [BrowseComp](https://arxiv.org/html/2602.15763v2) | 52.0% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [GPQA Diamond](https://arxiv.org/html/2602.15763v2) | 85.7% | too few results from this source to calibrate it; another source's number for this test is used |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [Humanity's Last Exam](https://arxiv.org/html/2602.15763v2) | 24.8% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [Humanity's Last Exam with tools](https://arxiv.org/html/2602.15763v2) | 42.8% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [HMMT November 2025](https://arxiv.org/html/2602.15763v2) | 93.5% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [IMO-AnswerBench](https://arxiv.org/html/2602.15763v2) | 82.0% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [LongBench v2](https://arxiv.org/html/2602.15763v2) | 59.1% | too few models have this result to calibrate it yet |
-| GLM-5 Team (Zhipu AI) — GLM-5 technical report | [Toolathlon (Tool Decathlon)](https://arxiv.org/html/2602.15763v2) | 23.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (21)</summary>
+
+<pre>
+source                  test                            score  why
+zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025</a>                       95.7%  too few models have it yet
+zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025</a>              97.1%  too few models have it yet
+zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>  84.9%  too few models have it yet
+zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro</a>                        84.3%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">AIME 2026 I</a>                     92.9%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp with context manag…</a>  67.5%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">BrowseComp-ZH</a>                   66.6%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">CyberGym</a>                        23.5%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">MCP-Atlas (public set)</a>          52.0%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Multilingual</a>          66.7%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">SWE-bench Verified</a>              73.8%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate</a>              87.4%  too few models have it yet
+zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">Terminal-Bench 2.0</a>              41.0%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">BrowseComp</a>                      52.0%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">GPQA Diamond</a>                    85.7%  another source's result is used
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam</a>            24.8%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with too…</a>  42.8%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025</a>              93.5%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench</a>                 82.0%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">LongBench v2</a>                    59.1%  too few models have it yet
+GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">Toolathlon (Tool Decathlon)</a>     23.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai ↗](https://docs.z.ai/guides/overview/pricing)
+api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/overview/pricing)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.7.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.7.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.7.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.7.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~214.7GB   56.9
+2-bit ud-q2_k_xl  ~107.6GB   56.9
+1-bit ud-iq1_s    ~54.05GB   56.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~214.7GB | 56.9 | `llama-server -hf unsloth/GLM-4.7-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~107.6GB | 56.9 | `llama-server -hf unsloth/GLM-4.7-GGUF:UD-Q2_K_XL` |
-| 1-bit ud-iq1\_s | ~54.05GB | 56.9 | `llama-server -hf unsloth/GLM-4.7-GGUF:UD-IQ1_S` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/GLM-4.7-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/GLM-4.7-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_s
+llama-server -hf unsloth/GLM-4.7-GGUF:UD-IQ1_S
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/glm-4-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

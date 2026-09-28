@@ -6,28 +6,29 @@
 
 ByteDance Seed · closed weights
 
-**score 46.0** ±2.4
-
-#36 of 54 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.0** ±2.4 · #36 of 54 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1190.9 | 43.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 62% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1273.0 | 49.5 | ▇▇▇▇▇▇▇▇▇▇▇ 36% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 46.0** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1190.9    43.8   2026-09-22   62% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1273.0    49.5   2026-09-22   36% ▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 46.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (BytePlus ModelArk) · $0.052/sec · [docs.byteplus.com ↗](https://docs.byteplus.com/en/docs/ModelArk/1544106)
+api (BytePlus ModelArk) · $0.052/sec · [docs.byteplus.com](https://docs.byteplus.com/en/docs/ModelArk/1544106)
 
-[price source](https://docs.byteplus.com/en/docs/ModelArk/1544106) · USD per second of 720p video, derived from BytePlus's own price example for Seedance 1.0 Pro: a 720p 16:9 (1248×704) 24 fps 5-second video (102,960 tokens) costs $0.26 (÷ 5 = $0.052). Product: BytePlus ModelArk video generation (online inference). API model: seedance-1-0-pro-250528. Settings: resolution=720p, ratio=16:9, duration=5 s, no input video. Price basis: provider-printed per-video example; underlying billing is $2.5 per 1M video tokens (offline inference $1.25), and BytePlus labels the examples as estimates (actual tokens per usage.completion\_tokens). Other examples: 10-s 720p 16:9 $0.51; 5-s 480p $0.12; 5-s 1080p $0.61. Only successfully generated videos are billed. Currency: USD. BytePlus official pricing page, observed 2026-09-26.
+<sub>[price source](https://docs.byteplus.com/en/docs/ModelArk/1544106): USD per second of 720p video, derived from BytePlus's own price example for Seedance 1.0 Pro: a 720p 16:9 (1248×704) 24 fps 5-second video (102,960 tokens) costs $0.26 (÷ 5 = $0.052). Product: BytePlus ModelArk video generation (online inference). API model: seedance-1-0-pro-250528. Settings: resolution=720p, ratio=16:9, duration=5 s, no input video. Price basis: provider-printed per-video example; underlying billing is $2.5 per 1M video tokens (offline inference $1.25), and BytePlus labels the examples as estimates (actual tokens per usage.completion\_tokens). Other examples: 10-s 720p 16:9 $0.51; 5-s 480p $0.12; 5-s 1080p $0.61. Only successfully generated videos are billed. Currency: USD. BytePlus official pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

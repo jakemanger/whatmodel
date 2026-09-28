@@ -6,29 +6,30 @@
 
 MiniMax · released 2025-03 · proprietary
 
-**score 57.0** ±2.5
-
-#12 of 36 · from 3 benchmark results across 2 sources
+**score 57.0** ±2.5 · #12 of 36 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1260.7 | 59.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 69% | 2026-09-25 |
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 36.8% | 48.7 | ▇▇▇▇▇▇▇ 22% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 10.1% | 59.2 | ▇▇ 7% | 2025-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 57.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    59.6   2026-09-25   69% ▇▇▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    48.7   2025-08-10   22% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    59.2   2025-08-10    7% ▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 57.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
 ## How to run it
 
-api (MiniMax) · $100.00/M chars · [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/pricing-paygo.md)
+api (MiniMax) · $100.00/M chars · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M input characters, HD model. No tokens-to-characters conversion. Product: Pay-as-you-go text-to-audio. API model: speech-02-hd. Settings: mode=T2A, quality=HD. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters, HD model. No tokens-to-characters conversion. Product: Pay-as-you-go text-to-audio. API model: speech-02-hd. Settings: mode=T2A, quality=HD. Price basis: published rate. Currency: USD.</sub>
 
 no verified local download listed
 

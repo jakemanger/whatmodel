@@ -6,53 +6,65 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 41.1** ±1.3
-
-#148 of 205 · from 16 benchmark results across 3 sources
+**score 41.1** ±1.3 · #148 of 205 · from 16 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="report-2512.13961v2"></a><img src="../../icons/huggingface.co.png" width="14" alt="Olmo 3"> Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) | [AIME 2024](https://arxiv.org/html/2512.13961v2) lab-reported | 80.6% | 41.4 | ▇▇▇▇ 13% | 2026-09-25 |
-|  | [AIME 2025](https://arxiv.org/html/2512.13961v2) lab-reported | 78.1% | 43.4 | ▇▇▇ 9% | 2026-09-25 |
-|  | [HumanEval+](https://arxiv.org/html/2512.13961v2) lab-reported | 91.5% | 39.0 | ▇▇▇ 9% | 2026-09-25 |
-|  | [BIG-Bench Hard](https://arxiv.org/html/2512.13961v2) lab-reported | 88.6% | 39.5 | ▇▇ 8% | 2026-09-25 |
-|  | [AGIEval English](https://arxiv.org/html/2512.13961v2) lab-reported | 88.8% | 42.3 | ▇▇ 7% | 2026-09-25 |
-|  | [IFBench (aggregation unspecified)](https://arxiv.org/html/2512.13961v2) lab-reported | 68.1% | 44.9 | ▇▇ 6% | 2026-09-25 |
-|  | [AlpacaEval 2 length-controlled](https://arxiv.org/html/2512.13961v2) lab-reported | 69.1% | 42.6 | ▇▇ 6% | 2026-09-25 |
-|  | [IFEval (aggregation unspecified)](https://arxiv.org/html/2512.13961v2) lab-reported | 93.8% | 41.9 | ▇▇ 6% | 2026-09-25 |
-|  | [PopQA](https://arxiv.org/html/2512.13961v2) lab-reported | 30.9% | 40.2 | ▇▇ 5% | 2026-09-25 |
-|  | [ZebraLogic](https://arxiv.org/html/2512.13961v2) lab-reported | 80.1% | 45.2 | ▇ 4% | 2026-09-25 |
-|  | [MMLU](https://arxiv.org/html/2512.13961v2) lab-reported | 86.4% | 42.5 | ▇ 4% | 2026-09-25 |
-|  | [LiveCodeBench v3](https://arxiv.org/html/2512.13961v2) lab-reported | 83.3% | 45.0 | ▇ 3% | 2026-09-25 |
-|  | [GPQA (subset unspecified)](https://arxiv.org/html/2512.13961v2) lab-reported | 56.7% | 40.1 | ▇ 3% | 2026-09-25 |
-|  | [MBPP+](https://arxiv.org/html/2512.13961v2) lab-reported | 68.3% | 36.6 | ▇ 3% | 2026-09-25 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1285.5 | 31.1 | ▇▇ 7% | 2026-09-13 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 50.7% | 41.7 | ▇▇ 6% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 41.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  80.6%    41.4   2026-09-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  78.1%    43.4   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 91.5%    39.0   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             88.6%    39.5   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            88.8%    42.3   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   68.1%    44.9   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   69.1%    42.6   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   93.8%    41.9   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      30.9%    40.2   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                 80.1%    45.2   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       86.4%    42.5   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           83.3%    45.0   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   56.7%    40.1   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                      68.3%    36.6   2026-09-25    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1285.5    31.1   2026-09-13    7% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.7%    41.7   2026-05-02    6% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 41.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| allenai/Olmo-3.1-32B-Think model card | [MATH (subset unspecified)](https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md) | 96.2% | too few models have this result to calibrate it yet |
-| allenai/Olmo-3.1-32B-Think model card | [OMEGA (math generalisation)](https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md) | 53.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                         score  why
+allenai/Olmo-3.1-32B-…  <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">MATH (subset unspecified)</a>    96.2%  too few models have it yet
+allenai/Olmo-3.1-32B-…  <a href="https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/README.md">OMEGA (math generalisation)</a>  53.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/config.json) · Official configured context with bundled YaRN factor 8 and original positions 8,192. Not a claim of a larger extrapolated limit.
+<sub>[context source](https://huggingface.co/allenai/Olmo-3.1-32B-Think/blob/832c3f543499af8fe68b88359501de9cb7840544/config.json): Official configured context with bundled YaRN factor 8 and original positions 8,192. Not a claim of a larger extrapolated limit.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~19.82GB | 41.1 | `ollama run olmo-3.1:32b-think` |
-| 8-bit q8\_0 | ~39.14GB | 41.1 | `ollama run olmo-3.1:32b-think-q8_0` |
+<pre>
+download          size  score
+4-bit q4_k_m  ~19.82GB   41.1
+8-bit q8_0    ~39.14GB   41.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run olmo-3.1:32b-think
+# 8-bit q8_0
+ollama run olmo-3.1:32b-think-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/olmo-3-1-32b-think) · [JSON](https://whatmodel.sh/api?format=json&all=1)

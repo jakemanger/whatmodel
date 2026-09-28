@@ -6,29 +6,30 @@
 
 SpaceXAI (xAI) · released 2025-11 · closed weights
 
-**score 56.0** ±2.5
-
-#79 of 205 · from 3 benchmark results across 1 source
+**score 56.0** ±2.5 · #79 of 205 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="matharena-arxiv-outputs-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets"> MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) | [MathArena ArXivMath January 2026 (23 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet) | 53.3% | 54.8 | ▇▇▇▇▇▇▇▇▇▇▇ 35% | 2026-09-11 |
-|  | [MathArena ArXivMath February 2026 (32 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet) | 32.0% | 53.8 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-09-11 |
-|  | [MathArena ArXivMath December 2025 (17 problems)](https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet) | 50.0% | 60.6 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-09-11 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 56.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  53.3%    54.8   2026-09-11   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    53.8   2026-09-11   33% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  50.0%    60.6   2026-09-11   29% ▇▇▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 56.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt))</sub>
 
 ## How to run it
 
-api (Microsoft Azure) · $0.28/M blended · $0.2 in / $0.5 out per 1M tokens · [azure.microsoft.com ↗](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok)
+api (Microsoft Azure) · $0.28/M blended · $0.2 in / $0.5 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok)
 
-[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok) · USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (xAI Grok table), 'Grok 4.1 Fast Global': input $0.20, output $0.50, region US East. The Azure model id is grok-4-1-fast-reasoning, version 1, GA, with no retirement date on Azure's schedule; the same row covers grok-4-1-fast-non-reasoning. Azure lists a 128,000-token input limit for this deployment. xAI's own price table no longer lists grok-4-1-fast-reasoning, and Google Cloud shut its Vertex endpoint down on 2026-08-20. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-26.
+<sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (xAI Grok table), 'Grok 4.1 Fast Global': input $0.20, output $0.50, region US East. The Azure model id is grok-4-1-fast-reasoning, version 1, GA, with no retirement date on Azure's schedule; the same row covers grok-4-1-fast-non-reasoning. Azure lists a 128,000-token input limit for this deployment. xAI's own price table no longer lists grok-4-1-fast-reasoning, and Google Cloud shut its Vertex endpoint down on 2026-08-20. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-26.</sub>
 
 no verified local download listed
 

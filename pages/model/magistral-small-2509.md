@@ -6,49 +6,59 @@
 
 Mistral · released 2025-09 · 24B params · apache-2.0
 
-**score 37.6** ±3.2
-
-#164 of 205 · from 4 benchmark results across 2 sources
+**score 37.6** ±3.2 · #164 of 205 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 47.6% | 38.9 | ▇▇▇▇▇▇▇▇▇▇▇ 35% | 2026-08-30 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 28.1% | 38.5 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-08-30 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 3.0% | 29.2 | ▇▇▇ 10% | 2026-08-30 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 32.3% | 34.7 | ▇▇▇▇▇ 18% | 2026-04-03 |
-| prior | pull toward the middle |  | 50.0 | ▇ 5% |  |
-|  | **weighted average** |  | **= 37.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    47.6%    38.9   2026-08-30   35% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        28.1%    38.5   2026-08-30   32% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    29.2   2026-08-30   10% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  32.3%    34.7   2026-04-03   18% ▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 37.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (6)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| mistralai/Magistral-Small-2509 model card | [AIME 2024](https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md) | 86.1% | too few models have this result to calibrate it yet |
-| mistralai/Magistral-Small-2509 model card | [AIME 2025](https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md) | 77.3% | too few models have this result to calibrate it yet |
-| mistralai/Magistral-Small-2509 model card | [GPQA Diamond](https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md) | 70.1% | too few results from this source to calibrate it; another source's number for this test is used |
-| mistralai/Magistral-Small-2509 model card | [LiveCodeBench v5 (window unspecified)](https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md) | 70.9% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [COLLIE (constrained text generation)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 60.3% | too few models have this result to calibrate it yet |
-| mistralai/Mistral-Small-4-119B-2603 model card | [LiveCodeBench (version unspecified)](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md) | 60.7% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source                  test                            score  why
+mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2024</a>                       86.1%  too few models have it yet
+mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">AIME 2025</a>                       77.3%  too few models have it yet
+mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">GPQA Diamond</a>                    70.1%  another source's result is used
+mistralai/Magistral-S…  <a href="https://huggingface.co/mistralai/Magistral-Small-2509/blob/a31cc96ab10cf19bc42c628fedf1e359e0853c49/README.md">LiveCodeBench v5 (window unsp…</a>  70.9%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">COLLIE (constrained text gene…</a>  60.3%  too few models have it yet
+mistralai/Mistral-Sma…  <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">LiveCodeBench (version unspec…</a>  60.7%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs.aws.amazon.com ↗](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
+api (Amazon Bedrock) · $0.75/M blended · $0.5 in / $1.5 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/mistral.magistral-small-2509.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/mistral.magistral-small-2509.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/magistral-small-2509.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/magistral-small-2509.toml)
+<pre>
+download              size  score
+4-bit gguf-q4_k_m  ~14.9GB   37.6
+8-bit gguf-q8_0    ~29.3GB   37.6
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit gguf-q4\_k\_m | ~14.9GB | 37.6 | `llama-server -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M` |
-| 8-bit gguf-q8\_0 | ~29.3GB | 37.6 | `llama-server -hf mistralai/Magistral-Small-2509-GGUF:Q8_0` |
+```sh
+# 4-bit gguf-q4_k_m
+llama-server -hf mistralai/Magistral-Small-2509-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
+llama-server -hf mistralai/Magistral-Small-2509-GGUF:Q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/magistral-small-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)

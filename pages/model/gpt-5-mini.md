@@ -6,52 +6,51 @@
 
 OpenAI · released 2025-08 · closed weights
 
-**score 57.4** ±0.9
-
-#69 of 205 · from 24 benchmark results across 10 sources
+**score 57.4** ±0.9 · #69 of 205 · from 24 benchmark results across 10 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 46.7% | 60.6 | ▇▇▇▇▇▇▇ 25% | 2026-06-12 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 12.2% | 60.6 | ▇▇▇▇ 14% | 2026-06-12 |
-|  | [MATH level 5](https://epoch.ai/data/benchmark_data.zip#math_level_5.csv) | 97.8% | 59.8 | ▇▇ 6% | 2025-10-30 |
-|  | [SWE-bench Verified](https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv) | 64.7% | 55.4 | ▇▇ 6% | 2026-02-01 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 75.0% | 52.8 | ▇ 3% | 2025-10-30 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 86.7% | 57.3 | ▇ 3% | 2025-10-30 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 21.6% | 52.2 | ▇ 3% | 2026-08-10 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 5.0% | 46.2 | ▇ 2% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 30.0% | 68.2 | ▇ 1% | 2026-08-07 |
-| <a name="korean-personal-benchmark-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Daekeun Kim Korean LLM benchmark runs"> Daekeun Kim Korean LLM benchmark runs | [HAE-RAE 1.0 (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 84.4% | 52.7 | ▇ 5% |  |
-|  | [CLIcK Korean (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 82.2% | 53.1 | ▇ 4% |  |
-|  | [KMMLU-HARD (Daekeun Kim, zero-shot)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 60.6% | 59.0 | ▇ 4% |  |
-| <a name="servicenow-browsergym-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="ServiceNow BrowserGym leaderboard (AgentLab GenericAgent runs)"> ServiceNow BrowserGym leaderboard (AgentLab GenericAgent runs) | [BrowserGym WorkArena-L2 (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json) | 47.7% | 62.8 | ▇ 2% | 2025-08-07 |
-|  | [BrowserGym WorkArena-L1 (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json) | 60.6% | 57.9 | ▇ 2% | 2025-08-07 |
-|  | [BrowserGym MiniWoB (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json) | 71.0% | 55.2 | ▇ 1% | 2025-08-07 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1389.6 | 50.3 | ▇ 3% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1182.7 | 44.9 | ▇ 2% | 2026-09-13 |
-| <a name="paper-2601.11868v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials"> Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) | [Terminal-Bench 2.0 with Terminus 2 agent (benchmark authors' runs)](https://arxiv.org/html/2601.11868v1) | 24.0% | 53.0 | ▇ 5% | 2026-01-17 |
-| <a name="paper-2605.09063v3"></a><img src="../../icons/arxiv.org.png" width="14" alt="Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs — authors' own model runs"> Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs — authors' own model runs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) | [SOOHAK Challenge (340 problems, Avg@3)](https://arxiv.org/html/2605.09063v3) | 18.8% | 64.5 | ▇ 2% | 2026-05-19 |
-|  | [SOOHAK-Mini (702 problems, Avg@3)](https://arxiv.org/html/2605.09063v3) | 67.1% | 62.4 | ▇ 1% | 2026-05-19 |
-| <a name="paper-2604.18584v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval — authors' own model runs"> MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval — authors' own model runs ([CC BY 4.0](../../licenses/paper-2604.18584v2-CC-BY-4.0.txt)) | [MathNet-Solve-Test micro-average accuracy (6,400 olympiad problems)](https://arxiv.org/html/2604.18584v2) | 57.0% | 60.7 | ▇ 3% | 2026-07-29 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 83.9% | 50.1 | ▇ 2% | 2025-09-01 |
-| <a name="amazon-tau2-verified"></a><img src="../../icons/huggingface.co.png" width="14" alt="Amazon AGI — τ²-Bench-Verified"> Amazon AGI — τ²-Bench-Verified | [τ²-Bench-Verified (GPT-5.1 user)](https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md) | 69.8% | 54.9 | ▇ 1% | 2026-09-25 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 55.5% | 54.1 | ▇ 1% | 2025-12-16 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 57.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        46.7%    60.6   2026-06-12   25% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           12.2%    60.6   2026-06-12   14% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     97.8%    59.8   2025-10-30    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               64.7%    55.4   2026-02-01    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.0%    52.8   2025-10-30    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.7%    57.3   2025-10-30    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                21.6%    52.2   2026-08-10    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      5.0%    46.2   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            30.0%    68.2   2026-08-07    1% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        84.4%    52.7                 5% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       82.2%    53.1                 4% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   60.6%    59.0                 4% ▇
+<a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>   47.7%    62.8   2025-08-07    2% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/workarena-l1.json">BrowserGym WorkArena-L1 (Agen…</a>   60.6%    57.9   2025-08-07    2% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-5-mini/miniwob.json">BrowserGym MiniWoB (AgentLab …</a>   71.0%    55.2   2025-08-07    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1389.6    50.3   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1182.7    44.9   2026-09-13    2% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.0%    53.0   2026-01-17    5% ▇
+<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   18.8%    64.5   2026-05-19    2% ▇
+                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   67.1%    62.4   2026-05-19    1% ▇
+<a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   57.0%    60.7   2026-07-29    3% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   83.9%    50.1   2025-09-01    2% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   69.8%    54.9   2026-09-25    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   55.5%    54.1   2025-12-16    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 57.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval ([CC BY 4.0](../../licenses/paper-2604.18584v2-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Amazon AGI ([MIT](../../licenses/tau2-verified-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $0.69/M blended · $0.25 in / $2 out per 1M tokens · [platform.openai.com ↗](https://platform.openai.com/docs/models)
+api (OpenAI) · $0.69/M blended · $0.25 in / $2 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5-mini.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5-mini.toml)
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-5-mini.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-5-mini.toml)</sub>
 
 no verified local download listed
 

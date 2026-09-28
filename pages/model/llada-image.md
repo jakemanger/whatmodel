@@ -6,9 +6,12 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| GenEval | 85.0% | [LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes](https://arxiv.org/html/2609.03796v1#S5.T7) · lab-reported · LLaDA-Image; S5.T7; own-model lab result; adapted row licensed CC-BY-SA-4.0 in visual-cc-by-sa.json. |
-| DPG-Bench | 87.5% | [LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes](https://arxiv.org/html/2609.03796v1#S5.T8) · lab-reported · LLaDA-Image; S5.T8; own-model lab result; adapted row licensed CC-BY-SA-4.0 in visual-cc-by-sa.json. |
+<pre>
+test       result  reported by  source
+GenEval     85.0%  lab          <a href="https://arxiv.org/html/2609.03796v1#S5.T7">LLaDA-Image: Building Strong …</a>
+DPG-Bench   87.5%  lab          <a href="https://arxiv.org/html/2609.03796v1#S5.T8">LLaDA-Image: Building Strong …</a>
+</pre>
+
+<sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt))</sub>
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/llada-image)

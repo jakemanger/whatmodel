@@ -6,30 +6,31 @@
 
 Cartesia · released 2025-10 · proprietary
 
-**score 54.2** ±2.2
-
-#20 of 36 · from 4 benchmark results across 3 sources
+**score 54.2** ±2.2 · #20 of 36 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1185.7 | 53.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 53% | 2026-09-25 |
-| <a name="speech-rime-alpha-bench-ccby"></a><img src="../../icons/github.com.png" width="14" alt="Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference"> Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) | [Rime SupportBench · paired human preference vs Rime Coda (US English)](https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json) | -0.20 / 2 | 56.9 | ▇▇▇▇▇ 16% | 2026-09-13 |
-|  | [Rime ContentBench · paired human preference vs Rime Coda (US English)](https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json) | -0.20 / 2 | 51.3 | ▇▇▇▇ 15% | 2026-09-13 |
-| <a name="speech-voicefirst-indic-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages (arXiv:2604.21481v2)"> Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages (arXiv:2604.21481v2) ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) | [Voice-First Nation · 10 Indian languages overall pairwise preference (Bradley–Terry)](https://arxiv.org/html/2604.21481v2) | 1050.8 | 58.9 | ▇▇▇▇▇ 15% | 2026-04-23 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 54.2** |  |  |
+<pre>
+source                  test                                score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>     1185.7    53.1   2026-09-25   53% ▇▇▇▇▇▇
+<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.20 / 2    56.9   2026-09-13   16% ▇▇
+                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>  -0.20 / 2    51.3   2026-09-13   15% ▇▇
+<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>     1050.8    58.9   2026-04-23   15% ▇▇
+prior                   pull toward the middle                       49.9                 2% ▇
+                        weighted average                           = 54.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt))</sub>
 
 ## How to run it
 
-api (Together AI) · $65.00/M chars · [www.together.ai ↗](https://www.together.ai/models/cartesia-sonic-3)
+api (Together AI) · $65.00/M chars · [together.ai](https://www.together.ai/models/cartesia-sonic-3)
 
-[price source](https://docs.together.ai/docs/serverless/models.md) · USD per 1M input characters: Together's serverless model list gives Cartesia Sonic 3, API model cartesia/sonic-3, at $65.00 per 1M chars (the Together pricing page also lists 'Cartesia Sonic-3 $65.00' per 1M characters). Cartesia's own pricing page prices credits and names only Sonic-3.6, so Together's per-model rate is used. Product: Together serverless text-to-speech. API model: cartesia/sonic-3. Settings: standard. Price basis: published list rate. Currency: USD. Together official docs, observed 2026-09-25.
+<sub>[price source](https://docs.together.ai/docs/serverless/models.md): USD per 1M input characters: Together's serverless model list gives Cartesia Sonic 3, API model cartesia/sonic-3, at $65.00 per 1M chars (the Together pricing page also lists 'Cartesia Sonic-3 $65.00' per 1M characters). Cartesia's own pricing page prices credits and names only Sonic-3.6, so Together's per-model rate is used. Product: Together serverless text-to-speech. API model: cartesia/sonic-3. Settings: standard. Price basis: published list rate. Currency: USD. Together official docs, observed 2026-09-25.</sub>
 
 no verified local download listed
 

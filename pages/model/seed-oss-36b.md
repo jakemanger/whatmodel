@@ -6,56 +6,68 @@
 
 ByteDance Seed · released 2025-08 · 36.2B params · apache-2.0
 
-**score 51.0** ±3.6
-
-#108 of 205 · from 3 benchmark results across 1 source
+**score 51.0** ±3.6 · #108 of 205 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 71.5% | 51.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 43% | 2026-08-30 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 67.5% | 49.7 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 13.0% | 55.8 | ▇▇▇▇ 12% | 2026-08-28 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 51.0** |  |  |
+<pre>
+source    test                      score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              71.5%    51.0   2026-08-30   43% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>  67.5%    49.7   2026-08-28   39% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>     13.0%    55.8   2026-08-28   12% ▇
+prior     pull toward the middle             50.0                 6% ▇
+          weighted average                 = 51.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (18)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [MMLU-Pro](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 82.7% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [AIME 2025](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 84.7% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [Humanity's Last Exam](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 10.1% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [LiveCodeBench v6 (Feb–May 2025)](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 67.4% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [SWE-bench Verified](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 56.0% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [AIME 2024](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 91.7% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [BeyondAIME](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 65.0% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [GPQA Diamond](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 71.4% | too few results from this source to calibrate it; another source's number for this test is used |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [IFEval (aggregation unspecified)](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 85.8% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [KOR-Bench](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 70.6% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [MMLU](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 87.4% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [MMMLU](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 78.4% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [Multi-SWE-bench (scaffold per note)](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 17.0% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [RULER 128k](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 94.6% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [SimpleQA](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 9.7% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [SuperGPQA](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 55.7% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [τ-bench Airline](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 46.0% | too few models have this result to calibrate it yet |
-| ByteDance-Seed/Seed-OSS-36B-Instruct model card | [τ-bench Retail](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md) | 70.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (18)</summary>
+
+<pre>
+source                  test                            score  why
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU-Pro</a>                        82.7%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2025</a>                       84.7%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Humanity's Last Exam</a>            10.1%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">LiveCodeBench v6 (Feb–May 202…</a>  67.4%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SWE-bench Verified</a>              56.0%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">AIME 2024</a>                       91.7%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">BeyondAIME</a>                      65.0%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">GPQA Diamond</a>                    71.4%  another source's result is used
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">IFEval (aggregation unspecifi…</a>  85.8%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">KOR-Bench</a>                       70.6%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMLU</a>                            87.4%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">MMMLU</a>                           78.4%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">Multi-SWE-bench (scaffold per…</a>  17.0%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">RULER 128k</a>                      94.6%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SimpleQA</a>                         9.7%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">SuperGPQA</a>                       55.7%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Airline</a>                 46.0%  too few models have it yet
+ByteDance-Seed/Seed-O…  <a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">τ-bench Retail</a>                  70.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/config.json) · Native long context: card advertises 512K; pinned configuration supplies the exact 524,288 token value.
+<sub>[context source](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/config.json): Native long context: card advertises 512K; pinned configuration supplies the exact 524,288 token value.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit gguf-q4\_k\_m | ~22.22GB | 51.0 | `llama-server -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q4_K_M` |
-| 8-bit gguf-q8\_0 | ~43.94GB | 51.0 | `llama-server -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q8_0` |
+<pre>
+download               size  score
+4-bit gguf-q4_k_m  ~22.22GB   51.0
+8-bit gguf-q8_0    ~43.94GB   51.0
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit gguf-q4_k_m
+llama-server -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
+llama-server -hf unsloth/Seed-OSS-36B-Instruct-GGUF:Q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/seed-oss-36b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

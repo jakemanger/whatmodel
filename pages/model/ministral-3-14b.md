@@ -6,57 +6,70 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 40.2** ±3.5
-
-#151 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.2** ±3.5 · #151 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-mistralai-ministral-3-14b-instruct-2512"></a><img src="../../icons/huggingface.co.png" width="14" alt="mistralai/Ministral-3-14B-Instruct-2512 model card"> mistralai/Ministral-3-14B-Instruct-2512 model card | [Arena-Hard (version/judge unspecified)](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md) lab-reported | 55.1% | 41.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 50% | 2026-09-25 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 47.6% | 38.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 45% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 40.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  55.1%    41.0   2026-09-25   50% ▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  47.6%    38.2   2026-05-02   45% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 40.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| mistralai/Ministral-3-14B-Instruct-2512 model card | [MATH (subset unspecified)](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md) | 90.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                       score  why
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">MATH (subset unspecified)</a>  90.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mistral.ai ↗](https://docs.mistral.ai/models/ministral-3-14b-25-12)
+api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/ministral-3-14b-25-12)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens. Mistral standard synchronous API; model ministral-14b-2512. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. Mistral standard synchronous API; model ministral-14b-2512. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded. · [context source](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/config.json): Official Instruct-2512 model configuration; card corroborates 256K. For 3B this replaces a missing value using the first-party record, not LiteLLM’s conflicting 131,072 entry.</sub>
 
-[context specification source](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/config.json) · Official Instruct-2512 model configuration; card corroborates 256K. For 3B this replaces a missing value using the first-party record, not LiteLLM’s conflicting 131,072 entry.
+<pre>
+download          size  score
+4-bit q4_k_m   ~8.84GB   40.2
+8-bit q8_0    ~17.18GB   40.2
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~8.84GB | 40.2 | `ollama run ministral-3:14b` |
-| 8-bit q8\_0 | ~17.18GB | 40.2 | `ollama run ministral-3:14b-instruct-2512-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run ministral-3:14b
+# 8-bit q8_0
+ollama run ministral-3:14b-instruct-2512-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights per-channel, activations per-token; llm-compressor) | GPQA Diamond (lighteval, vLLM, temperature 0.15) | 0.586 → 0.662 | 112.9% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L245) |
-| FP8 W8A8 dynamic (weights per-channel, activations per-token; llm-compressor) | Reasoning average of 3 tasks (AIME 2025, GPQA Diamond, and a third task labelled "Math-lvl-5" in the table but run with lighteval \`math\_500\` per the card commands) | 0.613 → 0.619 | 100.9% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L265) |
-| FP8 W8A8 dynamic (weights per-channel, activations per-token; llm-compressor) | IFEval 0-shot (lm-evaluation-harness, chat template, vLLM) | 0.773 → 0.769 | 99.4% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L223) |
-| FP8 W8A8 dynamic (weights per-channel, activations per-token; llm-compressor) | AIME 2025 (lighteval, vLLM, temperature 0.15) | 0.367 → 0.3 | 81.8% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L235) |
-| NVFP4 (FP4 weights and activations, llm-compressor NVFP4 scheme) | GPQA Diamond (lighteval, vLLM, temperature 0.15) | 0.586 → 0.609 | 104.0% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L230) |
-| NVFP4 (FP4 weights and activations, llm-compressor NVFP4 scheme) | Reasoning average of 3 tasks (AIME 2025, GPQA Diamond, and a third task labelled "Math-lvl-5" in the table but run with lighteval \`math\_500\` per the card commands) | 0.613 → 0.598 | 97.5% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L250) |
-| NVFP4 (FP4 weights and activations, llm-compressor NVFP4 scheme) | AIME 2025 (lighteval, vLLM, temperature 0.15) | 0.367 → 0.325 | 88.6% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L220) |
-| NVFP4 (FP4 weights and activations, llm-compressor NVFP4 scheme) | IFEval 0-shot (lm-evaluation-harness, chat template, vLLM) | 0.773 → 0.635 | 82.2% | [source ↗](https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L208) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 W8A8 dynamic (weights per…  GPQA Diamond (lighteval, vLLM, te…     0.586 → 0.662  <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L245">112.9%</a>
+FP8 W8A8 dynamic (weights per…  Reasoning average of 3 tasks (AIM…     0.613 → 0.619  <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L265">100.9%</a>
+FP8 W8A8 dynamic (weights per…  IFEval 0-shot (lm-evaluation-harn…     0.773 → 0.769   <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L223">99.4%</a>
+FP8 W8A8 dynamic (weights per…  AIME 2025 (lighteval, vLLM, tempe…       0.367 → 0.3   <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-FP8-dynamic/blob/c5d7753e839c659e04906bcfce7eb6ea50d6d18c/README.md#L235">81.8%</a>
+NVFP4 (FP4 weights and activa…  GPQA Diamond (lighteval, vLLM, te…     0.586 → 0.609  <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L230">104.0%</a>
+NVFP4 (FP4 weights and activa…  Reasoning average of 3 tasks (AIM…     0.613 → 0.598   <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L250">97.5%</a>
+NVFP4 (FP4 weights and activa…  AIME 2025 (lighteval, vLLM, tempe…     0.367 → 0.325   <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L220">88.6%</a>
+NVFP4 (FP4 weights and activa…  IFEval 0-shot (lm-evaluation-harn…     0.773 → 0.635   <a href="https://huggingface.co/RedHatAI/Ministral-3-14B-Instruct-2512-NVFP4/blob/ae31e2b3d5aca78b8721e071291d7feed5a87dad/README.md#L208">82.2%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/ministral-3-14b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

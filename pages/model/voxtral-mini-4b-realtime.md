@@ -6,38 +6,47 @@
 
 Mistral · released 2026-02 · 4.43B params · apache-2.0
 
-**score 9.4** ±2.6
-
-#28 of 28 · from 6 benchmark results across 2 sources
+**score 9.4** ±2.6 · #28 of 28 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-voxtral-realtime-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Voxtral Realtime"> Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Voxtral report · English short-form 10-set WER](https://arxiv.org/html/2602.11298v1) lab-reported | 8.5% | 8.8 | ▇▇▇▇▇▇▇ 24% | 2026-02-11 |
-|  | [Voxtral report · English long-form 4-set WER](https://arxiv.org/html/2602.11298v1) lab-reported | 7.7% | 9.6 | ▇▇▇▇▇▇▇ 24% | 2026-02-11 |
-|  | [Voxtral report · Common Voice 12-language error rate](https://arxiv.org/html/2602.11298v1) lab-reported | 15.2% | 5.7 | ▇▇▇▇▇▇▇ 23% | 2026-02-11 |
-|  | [Voxtral report · FLEURS 13-language error rate](https://arxiv.org/html/2602.11298v1) lab-reported | 8.7% | 7.2 | ▇▇▇▇▇▇▇ 23% | 2026-02-11 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 6.3% | 29.4 | ▇ 2% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 7.7% | 24.5 | ▇ 0% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 9.4** |  |  |
+<pre>
+source                test                            score  implies  date        weight
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.5%     8.8   2026-02-11   24% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%     9.6   2026-02-11   24% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  15.2%     5.7   2026-02-11   23% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.7%     7.2   2026-02-11   23% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        6.3%    29.4   2026-03-26    2% ▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.7%    24.5   2026-03-26    0% ▇
+prior                 pull toward the middle                   49.9                 3% ▇
+                      weighted average                        = 9.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-api (Mistral AI) · $0.0060/audio min · [docs.mistral.ai ↗](https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02)
+api (Mistral AI) · $0.0060/audio min · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per input audio minute. Realtime 2602; not batch Voxtral Mini Transcribe V2. Product: Audio transcription. API model: voxtral-mini-transcribe-realtime-2602. Settings: endpoint=/v1/audio/transcriptions, streaming=yes. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute. Realtime 2602; not batch Voxtral Mini Transcribe V2. Product: Audio transcription. API model: voxtral-mini-transcribe-realtime-2602. Settings: endpoint=/v1/audio/transcriptions, streaming=yes. Price basis: published rate. Currency: USD.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~11.13GB | 9.4 | `VLLM_DISABLE_COMPILE_CACHE=1 vllm serve mistralai/Voxtral-Mini-4B-Realtime-2602 --compilation_config '{"cudagraph_mode": "PIECEWISE"}'` |
-| 4bit · mac only | ~3.16GB | 9.4 | `uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-4B-Realtime-2602-4bit --audio audio.wav --output-path out` |
+<pre>
+version                needs  score
+bf16 · nvidia only  ~11.13GB    9.4
+4bit · mac only      ~3.16GB    9.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+VLLM_DISABLE_COMPILE_CACHE=1 vllm serve mistralai/Voxtral-Mini-4B-Realtime-2602 --compilation_config '{"cudagraph_mode": "PIECEWISE"}'
+# 4bit · mac only
+uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-4B-Realtime-2602-4bit --audio audio.wav --output-path out
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/voxtral-mini-4b-realtime) · [JSON](https://whatmodel.sh/api?format=json&all=1)

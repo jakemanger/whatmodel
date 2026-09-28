@@ -6,28 +6,29 @@
 
 MiniMax · closed weights
 
-**score 61.6** ±6.1
-
-#17 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.6** ±6.1 · #17 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-v-reasonbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models"> V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) | [V-ReasonBench (average pass@5)](https://arxiv.org/html/2511.16668v1#S3.T2) | 37.5% | 65.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 78% | 2025-11-20 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 85.8% | 44.6 | ▇▇ 7% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇ 15% |  |
-|  | **weighted average** |  | **= 61.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>  37.5%    65.5   2025-11-20   78% ▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                85.8%    44.6   2026-04-22    7% ▇
+prior                   pull toward the middle                   49.9                15% ▇▇
+                        weighted average                       = 61.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models ([CC-BY-4.0](../../licenses/visual-v-reasonbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (MiniMax) · $0.047/sec · [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/pricing-paygo.md)
+api (MiniMax) · $0.047/sec · [platform.minimax.io](https://platform.minimax.io/docs/guides/pricing-paygo.md)
 
-[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md) · USD per second of output video, 768P, derived from MiniMax's pay-as-you-go price of $0.28 per 768P 6-second video (÷ 6). Product: MiniMax video generation (listed under Legacy Models). API model: MiniMax-Hailuo-02. Settings: resolution=768P, duration=6 s. 10-s 768P $0.56 ($0.056/s); 6-s 1080P $0.49; 6-s 512P $0.10. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25.
+<sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per second of output video, 768P, derived from MiniMax's pay-as-you-go price of $0.28 per 768P 6-second video (÷ 6). Product: MiniMax video generation (listed under Legacy Models). API model: MiniMax-Hailuo-02. Settings: resolution=768P, duration=6 s. 10-s 768P $0.56 ($0.056/s); 6-s 1080P $0.49; 6-s 512P $0.10. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

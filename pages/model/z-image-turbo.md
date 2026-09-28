@@ -6,9 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 50.1** ±2.0
-
-#56 of 87 · from 4 benchmark results across 4 sources
+**score 50.1** ±2.0 · #56 of 87 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,42 +14,56 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1083.9 | 50.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 68% | 2026-09-24 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 85.7% | 47.2 | ▇▇▇▇▇ 17% | 2026-08-25 |
-| <a name="visual-imagetime"></a><img src="../../icons/arxiv.org.png" width="14" alt="Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency"> Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) | [ImageTime (prompt-only, overall)](https://arxiv.org/html/2606.10620v1#S5.T5) | 54.1% | 53.9 | ▇▇ 8% | 2026-06-09 |
-| <a name="visual-fepbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench)"> Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench) ([CC0-1.0](../../licenses/visual-fepbench.txt)) | [FEPBench instruction faithfulness](https://arxiv.org/html/2606.05949v2#S4.T2) | 39.0% | 49.3 | ▇▇ 6% | 2026-06-05 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 50.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1083.9    50.5   2026-09-24   68% ▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    47.2   2026-08-25   17% ▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   54.1%    53.9   2026-06-09    8% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    49.3   2026-06-05    6% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 50.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (9)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [CVTG-2K word accuracy](https://arxiv.org/html/2511.22699v5) | 85.9% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [DPG-Bench](https://arxiv.org/html/2511.22699v5) | 84.9% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [GenEval](https://arxiv.org/html/2511.22699v5) | 82.0% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [LongText-Bench (CN)](https://arxiv.org/html/2511.22699v5) | 92.6% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [LongText-Bench (EN)](https://arxiv.org/html/2511.22699v5) | 91.7% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [OneIG-Bench (CN)](https://arxiv.org/html/2511.22699v5) | 50.7% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [OneIG-Bench (EN)](https://arxiv.org/html/2511.22699v5) | 52.8% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [TIIF-Bench testmini (long prompts)](https://arxiv.org/html/2511.22699v5) | 80.0% | too few models have this result to calibrate it yet |
-| Tongyi-MAI (Alibaba) — Z-Image technical report | [TIIF-Bench testmini (short prompts)](https://arxiv.org/html/2511.22699v5) | 77.7% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source      test                            score  why
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy</a>           85.9%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench</a>                       84.9%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">GenEval</a>                         82.0%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN)</a>             92.6%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN)</a>             91.7%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN)</a>                50.7%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN)</a>                52.8%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  80.0%  too few models have it yet
+Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  77.7%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com ↗](https://replicate.com/prunaai/z-image-turbo)
+api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://replicate.com/prunaai/z-image-turbo)
 
-[price source](https://replicate.com/prunaai/z-image-turbo) · USD per output image up to 1 MP (1,000,000 pixels) on Replicate, as stated on the model page (target resolution 1; billed $5 per 1,000 output megapixels). Up to 0.5 MP costs $0.0025 and up to 2 MP $0.01. PrunaAI optimized serving. Product: Replicate model API. API model: prunaai/z-image-turbo. Settings: target resolution=1 MP, one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/prunaai/z-image-turbo): USD per output image up to 1 MP (1,000,000 pixels) on Replicate, as stated on the model page (target resolution 1; billed $5 per 1,000 output megapixels). Up to 0.5 MP costs $0.0025 and up to 2 MP $0.01. PrunaAI optimized serving. Product: Replicate model API. API model: prunaai/z-image-turbo. Settings: target resolution=1 MP, one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~14.9GB | 50.1 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ZImagePipeline; p=ZImagePipeline.from_pretrained('Tongyi-MAI/Z-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=9, guidance_scale=0.0).images[0].save('out.png')"` |
-| gguf-q3\_k (+ Qwen3-4B Q4\_K\_M text encoder) | ~3.2GB | 50.1 | `sd-cli --diffusion-model models/z_image_turbo-Q3_K.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p 'a cat holding a sign' --cfg-scale 1.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 1024 --steps 8` |
+<pre>
+version                                     needs  score
+bf16 · nvidia only                        ~14.9GB   50.1
+gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~3.2GB   50.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ZImagePipeline; p=ZImagePipeline.from_pretrained('Tongyi-MAI/Z-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=9, guidance_scale=0.0).images[0].save('out.png')"
+# gguf-q3_k (+ Qwen3-4B Q4_K_M text encoder)
+sd-cli --diffusion-model models/z_image_turbo-Q3_K.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p 'a cat holding a sign' --cfg-scale 1.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 1024 --steps 8
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/z-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

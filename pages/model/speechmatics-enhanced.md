@@ -6,34 +6,35 @@
 
 Speechmatics · released 2023-03 · proprietary
 
-**score 56.2** ±2.0
-
-#10 of 28 · from 8 benchmark results across 4 sources
+**score 56.2** ±2.0 · #10 of 28 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-verli-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="verliapp/stt-benchmark · independent STT accuracy benchmark"> verliapp/stt-benchmark · independent STT accuracy benchmark | [verli STT benchmark · SPGISpeech 1,200-clip sample WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json) | 3.0% | 56.0 | ▇▇▇▇▇▇▇▇ 25% | 2026-07-19 |
-|  | [verli STT benchmark · Earnings-22 WER (2,741 utt.)](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json) | 12.3% | 55.9 | ▇▇▇▇ 12% | 2026-07-19 |
-|  | [verli STT benchmark · LibriSpeech test-clean WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json) | 2.2% | 51.4 | ▇ 4% | 2026-07-19 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 7.0% | 59.4 | ▇▇▇▇▇▇▇▇ 27% | 2026-03-26 |
-|  | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 4.3% | 54.9 | ▇ 1% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 6.9% | 42.9 | ▇ 0% | 2026-03-26 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ ASR · 4 real-world English sets, mean WER](https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg) | 9.0% | 55.5 | ▇▇▇▇▇▇ 20% | 2026-07-16 |
-| <a name="speech-stt-quranic-asr-lb-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Quranic ASR Leaderboard (Quran-Lab, held-out recitation set)"> Quranic ASR Leaderboard (Quran-Lab, held-out recitation set) | [Quranic ASR Leaderboard · held-out recitation (600 clips) overall WER](https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json) | 19.5% | 53.2 | ▇▇▇ 10% | 2026-08-15 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 56.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   3.0%    56.0   2026-07-19   25% ▇▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  12.3%    55.9   2026-07-19   12% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   2.2%    51.4   2026-07-19    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   7.0%    59.4   2026-03-26   27% ▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.3%    54.9   2026-03-26    1% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.9%    42.9   2026-03-26    0% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.0%    55.5   2026-07-16   20% ▇▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  19.5%    53.2   2026-08-15   10% ▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 56.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
 
 ## How to run it
 
-api (Speechmatics) · $0.0067/audio min · [www.speechmatics.com ↗](https://www.speechmatics.com/pricing)
+api (Speechmatics) · $0.0067/audio min · [speechmatics.com](https://www.speechmatics.com/pricing)
 
-[price source](https://www.speechmatics.com/pricing) · USD per input audio minute: Speechmatics Pro plan (no commitment) lists Batch Enhanced at $0.40/hr (÷60). Product: Speechmatics batch speech-to-text. API model: enhanced operating point. Settings: Pro plan, batch. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: 20% volume discount over 500 hr/month, real-time Enhanced ($0.43/hr), bolt-ons. Currency: USD. Speechmatics official pricing page, observed 2026-09-25.
+<sub>[price source](https://www.speechmatics.com/pricing): USD per input audio minute: Speechmatics Pro plan (no commitment) lists Batch Enhanced at $0.40/hr (÷60). Product: Speechmatics batch speech-to-text. API model: enhanced operating point. Settings: Pro plan, batch. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: 20% volume discount over 500 hr/month, real-time Enhanced ($0.43/hr), bolt-ons. Currency: USD. Speechmatics official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

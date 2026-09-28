@@ -6,31 +6,40 @@
 
 Kyutai · released 2025-06 · 2.6B params · cc-by-4.0
 
-**score 12.1** ±3.6
-
-#26 of 28 · from 3 benchmark results across 2 sources
+**score 12.1** ±3.6 · #26 of 28 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-voxtral-realtime-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Voxtral Realtime"> Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Voxtral report · English short-form 10-set WER](https://arxiv.org/html/2602.11298v1) | 8.1% | 9.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-02-11 |
-|  | [Voxtral report · English long-form 4-set WER](https://arxiv.org/html/2602.11298v1) | 7.7% | 9.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-02-11 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 6.4% | 56.1 | ▇ 1% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 12.1** |  |  |
+<pre>
+source                test                            score  implies  date        weight
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%     9.4   2026-02-11   47% ▇▇▇▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%     9.6   2026-02-11   47% ▇▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    56.1   2026-03-26    1% ▇
+prior                 pull toward the middle                   49.9                 5% ▇
+                      weighted average                       = 12.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~6.74GB | 12.1 | `uvx --with moshi python -m moshi.run_inference --hf-repo kyutai/stt-2.6b-en audio.mp3` |
-| bf16 · mac only | ~6.74GB | 12.1 | `uvx --with moshi-mlx python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3 --temp 0` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~6.74GB   12.1
+bf16 · mac only     ~6.74GB   12.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uvx --with moshi python -m moshi.run_inference --hf-repo kyutai/stt-2.6b-en audio.mp3
+# bf16 · mac only
+uvx --with moshi-mlx python -m moshi_mlx.run_inference --hf-repo kyutai/stt-2.6b-en-mlx audio.mp3 --temp 0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/kyutai-stt-2-6b-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

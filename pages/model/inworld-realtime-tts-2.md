@@ -6,32 +6,33 @@
 
 Inworld · released 2026-08 · proprietary
 
-**score 54.4** ±1.7
-
-#19 of 36 · from 6 benchmark results across 3 sources
+**score 54.4** ±1.7 · #19 of 36 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-zonos2-report-bysa"></a><img src="../../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results)"> ZONOS2 Technical Report (ZTTS1-Eval results) ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) | [ZTTS1-Eval in-the-wild · 10-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 2.81 / 5 | 55.2 | ▇▇▇▇▇ 16% | 2026-06-25 |
-|  | [ZTTS1-Eval in-the-wild · 10-language mean WER](https://arxiv.org/html/2606.24320v2) | 3.8% | 53.4 | ▇▇▇▇ 15% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER](https://arxiv.org/html/2606.24320v2) | 4.5% | 55.9 | ▇▇▇▇ 13% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 3.18 / 5 | 54.1 | ▇▇▇ 12% | 2026-06-25 |
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1197.8 | 54.2 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-09-25 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Acoustic Quality (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.33 / 5 | 54.1 | ▇▇▇ 11% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 54.4** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.81 / 5    55.2   2026-06-25   16% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      3.8%    53.4   2026-06-25   15% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      4.5%    55.9   2026-06-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.18 / 5    54.1   2026-06-25   12% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1197.8    54.2   2026-09-25   33% ▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    54.1   2026-07-16   11% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 54.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $25.00/M chars · [replicate.com ↗](https://replicate.com/inworld/realtime-tts-2)
+api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/inworld/realtime-tts-2)
 
-[price source](https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2) · USD per 1M input characters. Realtime TTS 2.0, standard hosted endpoint. Character billing, not a token conversion. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.
+<sub>[price source](https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2): USD per 1M input characters. Realtime TTS 2.0, standard hosted endpoint. Character billing, not a token conversion. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/inworld--realtime-tts-2; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.</sub>
 
 no verified local download listed
 

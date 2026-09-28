@@ -6,9 +6,7 @@
 
 DeepSeek
 
-**score 25.2** ±2.9
-
-#85 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 25.2** ±2.9 · #85 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,27 +14,33 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 42.3% | 24.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 64% | 2026-07-01 |
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 35.0% | 23.1 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-06-02 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 25.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    24.9   2026-07-01   64% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    23.1   2026-06-02   32% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 25.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| DeepSeek-AI — Janus-Pro technical report | [DPG-Bench](https://arxiv.org/html/2501.17811v1) | 84.2% | too few models have this result to calibrate it yet |
-| DeepSeek-AI — Janus-Pro technical report | [GenEval](https://arxiv.org/html/2501.17811v1) | 80.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source       test       score  why
+DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench</a>  84.2%  too few models have it yet
+DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">GenEval</a>    80.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.0020/image · [deepinfra.com ↗](https://deepinfra.com/deepseek-ai/Janus-Pro-7B)
+api (DeepInfra) · $0.0020/image · [deepinfra.com](https://deepinfra.com/deepseek-ai/Janus-Pro-7B)
 
-[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-7B) · USD per generated image on DeepInfra (model page header '$0.002 / image'; catalogue pricing type image\_units at 0.2 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-7B. Settings: default output size (Janus-Pro generates at its native resolution), one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff (DeepSeek's own API serves no image generation). DeepInfra official model page, observed 2026-09-26.
+<sub>[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-7B): USD per generated image on DeepInfra (model page header '$0.002 / image'; catalogue pricing type image\_units at 0.2 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-7B. Settings: default output size (Janus-Pro generates at its native resolution), one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff (DeepSeek's own API serves no image generation). DeepInfra official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

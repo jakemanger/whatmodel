@@ -6,28 +6,29 @@
 
 MiniMax · closed weights
 
-**score 36.5** ±3.6
-
-#48 of 54 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.5** ±3.6 · #48 of 54 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-skyreels-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model"> SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) | [SkyReels-Bench I2V (human rating)](https://arxiv.org/html/2504.13074v3#S6.T7) | 61.0% | 37.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 48% | 2025-04-21 |
-|  | [SkyReels-Bench T2V (human rating)](https://arxiv.org/html/2504.13074v3#S5.T5) | 60.0% | 34.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2025-04-21 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 36.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  61.0%    37.3   2025-04-21   48% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  60.0%    34.2   2025-04-21   46% ▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 36.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.083/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video)
+api (fal.ai) · $0.083/sec · [fal.ai](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video)
 
-[price source](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video) · USD per second of 720p video, derived from fal's $0.50 per video for MiniMax Video 01 image-to-video, whose page states Resolution 1280x720 (720p), 25 fps, Video Duration 6 sec (÷ 6 = $0.083333). Product: fal partner API (MiniMax Hailuo AI Video 01). API model: fal-ai/minimax/video-01/image-to-video. Settings: 720p, 6 s, one video. Price basis: published per-video price ÷ the duration fal states. MiniMax's own pay-as-you-go page no longer lists video-01 (only Hailuo-02/2.3 as legacy). Currency: USD. Not a MiniMax direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video): USD per second of 720p video, derived from fal's $0.50 per video for MiniMax Video 01 image-to-video, whose page states Resolution 1280x720 (720p), 25 fps, Video Duration 6 sec (÷ 6 = $0.083333). Product: fal partner API (MiniMax Hailuo AI Video 01). API model: fal-ai/minimax/video-01/image-to-video. Settings: 720p, 6 s, one video. Price basis: published per-video price ÷ the duration fal states. MiniMax's own pay-as-you-go page no longer lists video-01 (only Hailuo-02/2.3 as legacy). Currency: USD. Not a MiniMax direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

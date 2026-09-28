@@ -6,30 +6,37 @@
 
 Lightricks · released 2025-10 · 19B params · ltx-2-community
 
-**score 38.4** ±2.3
-
-#44 of 54 · from 3 benchmark results across 2 sources
+**score 38.4** ±2.3 · #44 of 54 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1154.1 | 39.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 56% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1159.4 | 35.1 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-09-22 |
-| <a name="visual-worldjen"></a><img src="../../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models"> WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) | [WorldJen human preference (Bradley-Terry)](https://arxiv.org/html/2605.03475v2#S5.T1) | 1479.0 | 40.5 | ▇▇▇ 9% | 2026-05-06 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 38.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1154.1    39.5   2026-09-22   56% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1159.4    35.1   2026-09-22   32% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1479.0    40.5   2026-05-06    9% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 38.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt))</sub>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · mac only | ~46.1GB | 38.4 | `uv run mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768` |
+<pre>
+version            needs  score
+bf16 · mac only  ~46.1GB   38.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · mac only
+uv run mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/ltx-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

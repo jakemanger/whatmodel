@@ -6,9 +6,7 @@
 
 Recraft · closed weights
 
-**score 52.4** ±2.4
-
-#50 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.4** ±2.4 · #50 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1100.4 | 52.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 52.4** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1100.4    52.5   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 52.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Recraft) · $0.0070/image · [www.recraft.ai ↗](https://www.recraft.ai/docs/api-reference/pricing)
+api (Recraft) · $0.0070/image · [recraft.ai](https://www.recraft.ai/docs/api-reference/pricing)
 
-[price source](https://www.recraft.ai/docs/api-reference/pricing) · USD per generated raster image, Recraft V4.1 Flash. Billed as 7 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V4.1 Flash. Settings: raster, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26.
+<sub>[price source](https://www.recraft.ai/docs/api-reference/pricing): USD per generated raster image, Recraft V4.1 Flash. Billed as 7 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V4.1 Flash. Settings: raster, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

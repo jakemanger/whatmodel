@@ -6,25 +6,26 @@
 
 Boson AI
 
-**score 43.7** ±2.9
-
-comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 43.7** ±2.9 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-higgs3-sglang-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution)"> Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) | [CV3-Eval multilingual voice clone · 9-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) lab-reported | 21.2% | 43.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 45% | 2026-06-04 |
-|  | [MiniMax multilingual test set · 23-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) lab-reported | 49.9% | 36.0 | ▇▇▇▇ 12% | 2026-06-04 |
-|  | [Seed-TTS-Eval · test-en/test-zh macro mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) lab-reported | 2.1% | 32.9 | ▇ 2% | 2026-06-04 |
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) lab-reported | 38.9% | 49.8 | ▇▇▇▇▇▇▇▇▇ 28% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) lab-reported | 19.4% | 38.2 | ▇▇▇ 9% | 2025-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 43.7** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>  21.2%    43.1   2026-06-04   45% ▇▇▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>  49.9%    36.0   2026-06-04   12% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   2.1%    32.9   2026-06-04    2% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  38.9%    49.8   2025-08-10   28% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER …</a>  19.4%    38.2   2025-08-10    9% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 43.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
 ## How to run it
 

@@ -6,27 +6,28 @@
 
 ByteDance · closed weights
 
-**score 58.7** ±12.9
-
-#19 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.7** ±12.9 · #19 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 91.1% | 77.6 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 68% |  |
-|  | **weighted average** |  | **= 58.7** |  |  |
+<pre>
+source                  test                    score  implies  date        weight
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        91.1%    77.6   2026-04-22   32% ▇▇▇▇
+prior                   pull toward the middle           49.9                68% ▇▇▇▇▇▇▇▇
+                        weighted average               = 58.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.049/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video)
+api (fal.ai) · $0.049/sec · [fal.ai](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video) · USD per second, 1080p, derived from fal's own figure that a 1080p 5-second video costs roughly $0.245 (÷ 5); provider-published approximation. Product: fal Seedance 1.0 Pro Fast text-to-video endpoint. API model: fal-ai/bytedance/seedance/v1/pro/fast/text-to-video. Underlying billing is $1 per 1M video tokens; no per-second figure is printed for other resolutions, so none is derived. Not the BytePlus direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video): USD per second, 1080p, derived from fal's own figure that a 1080p 5-second video costs roughly $0.245 (÷ 5); provider-published approximation. Product: fal Seedance 1.0 Pro Fast text-to-video endpoint. API model: fal-ai/bytedance/seedance/v1/pro/fast/text-to-video. Underlying billing is $1 per 1M video tokens; no per-second figure is printed for other resolutions, so none is derived. Not the BytePlus direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

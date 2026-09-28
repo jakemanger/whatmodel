@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-12 · 20B params · apache-2.0
 
-**score 53.1** ±1.9
-
-#47 of 87 · from 4 benchmark results across 4 sources
+**score 53.1** ±1.9 · #47 of 87 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,27 +14,36 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1125.4 | 55.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 62% | 2026-09-24 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 35.3% | 47.0 | ▇▇▇▇▇▇▇▇ 25% | 2026-05-14 |
-| <a name="visual-imagetime"></a><img src="../../icons/arxiv.org.png" width="14" alt="Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency"> Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) | [ImageTime (prompt-only, overall)](https://arxiv.org/html/2606.10620v1#S5.T5) | 53.2% | 53.1 | ▇▇ 8% | 2026-06-09 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) lab-reported | 52.1% | 54.6 | ▇ 4% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 53.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1125.4    55.6   2026-09-24   62% ▇▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   35.3%    47.0   2026-05-14   25% ▇▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   53.2%    53.1   2026-06-09    8% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   52.1%    54.6   2026-05-27    4% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 53.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.020/image · [replicate.com ↗](https://replicate.com/qwen/qwen-image-2512)
+api (Replicate) · $0.020/image · [replicate.com](https://replicate.com/qwen/qwen-image-2512)
 
-[price source](https://replicate.com/qwen/qwen-image-2512) · USD per output image on Replicate's qwen/qwen-image-2512 model (billing: per output image; hardware time not added). Current version served from replicate-pruna/qwen-image-2512 (Pruna-optimized deployment). Product: Replicate model API. API model: qwen/qwen-image-2512. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/qwen/qwen-image-2512): USD per output image on Replicate's qwen/qwen-image-2512 model (billing: per output image; hardware time not added). Current version served from replicate-pruna/qwen-image-2512 (Pruna-optimized deployment). Product: Replicate model API. API model: qwen/qwen-image-2512. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| gguf-q4\_k\_m (Unsloth) + Qwen2.5-VL Q4\_K\_XL | ~12.5GB | 53.1 | `sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png` |
+<pre>
+version                                     needs  score
+gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~12.5GB   53.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K_XL
+sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen-image-2512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

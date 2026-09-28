@@ -6,27 +6,28 @@
 
 Kuaishou (Kling AI) · released 2026-02 · proprietary
 
-**score 65.5** ±6.4
-
-#11 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.5** ±6.4 · #11 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-vgi"></a><img src="../../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models"> VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) | [VGI-Bench visual reasoning (I2V)](https://arxiv.org/html/2608.19583v3#S3.T2) | 44.0% | 68.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 83% | 2026-08-26 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇ 17% |  |
-|  | **weighted average** |  | **= 65.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    68.7   2026-08-26   83% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                17% ▇▇
+                        weighted average                       = 65.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt))</sub>
 
 ## How to run it
 
-api (Kling AI) · $0.084/sec · [kling.ai ↗](https://kling.ai/dev/pricing)
+api (Kling AI) · $0.084/sec · [kling.ai](https://kling.ai/dev/pricing)
 
-[price source](https://kling.ai/dev/pricing) · USD per second of generated video, 720P without native audio, Kling developer API list price. Product: Kling Video Generation API. API model: Kling 3.0. Settings: resolution=720P, native audio=off. Price basis: 0.6 units/s × $0.14 per unit (list price); Kling prints $0.084/s. With native audio 720P $0.126/s; 1080P $0.112/s without / $0.168/s with audio; 4K $0.42/s. Kling 3.0 Turbo and Omni excluded. Prepaid resource packages. Currency: USD. Kling AI developer pricing page, observed 2026-09-25.
+<sub>[price source](https://kling.ai/dev/pricing): USD per second of generated video, 720P without native audio, Kling developer API list price. Product: Kling Video Generation API. API model: Kling 3.0. Settings: resolution=720P, native audio=off. Price basis: 0.6 units/s × $0.14 per unit (list price); Kling prints $0.084/s. With native audio 720P $0.126/s; 1080P $0.112/s without / $0.168/s with audio; 4K $0.42/s. Kling 3.0 Turbo and Omni excluded. Prepaid resource packages. Currency: USD. Kling AI developer pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

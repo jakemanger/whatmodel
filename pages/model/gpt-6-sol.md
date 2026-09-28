@@ -6,32 +6,31 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 75.9** ±1.8
-
-#4 of 205 · from 4 benchmark results across 3 sources
+**score 75.9** ±1.8 · #4 of 205 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Furniture Assembly (Epoch)](https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv) | 58.3% | 75.9 | ▇▇▇▇▇▇▇▇▇▇▇ 38% | 2026-09-23 |
-|  | [EBR-bench (Epoch)](https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv) | 53.3% | 77.7 | ▇▇▇▇▇▇▇▇▇ 31% | 2026-09-22 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1685.9 | 75.3 | ▇▇▇▇▇▇▇ 24% | 2026-09-24 |
-| <a name="mideind-icelandic-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Miðeind Icelandic LLM Leaderboard"> Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt)) | [Icelandic LLM Leaderboard average (Miðeind, Sept 2026 suite)](https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json) | 65.6% | 75.8 | ▇▇ 6% | 2026-09-22 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 75.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       58.3%    75.9   2026-09-23   38% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                53.3%    77.7   2026-09-22   31% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1685.9    75.3   2026-09-24   24% ▇▇▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   65.6%    75.8   2026-09-22    6% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 75.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Miðeind Icelandic LLM Leaderboard ([CC BY 4.0](../../licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $4.00/M blended · $2 in / $10 out per 1M tokens · [platform.openai.com ↗](https://platform.openai.com/docs/models)
+api (OpenAI) · $4.00/M blended · $2 in / $10 out per 1M tokens · [platform.openai.com](https://platform.openai.com/docs/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-6-sol.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-6-sol.toml)
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/openai/models/gpt-6-sol.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-6-sol.toml)</sub>
 
 no verified local download listed
 

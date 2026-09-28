@@ -6,9 +6,7 @@
 
 Tencent
 
-**score 50.3** ±6.3
-
-#55 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.3** ±6.3 · #55 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-imagetime"></a><img src="../../icons/arxiv.org.png" width="14" alt="Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency"> Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) | [ImageTime (prompt-only, overall)](https://arxiv.org/html/2606.10620v1#S5.T5) | 49.8% | 50.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 84% | 2026-06-09 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇ 16% |  |
-|  | **weighted average** |  | **= 50.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    50.4   2026-06-09   84% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                16% ▇▇
+                        weighted average                       = 50.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.10/image · [fal.ai ↗](https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image)
+api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image)
 
-[price source](https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image) · USD for one 1-megapixel output: fal bills this endpoint $0.1 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v2.1/text-to-image (Hunyuan Image 2.1). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image): USD for one 1-megapixel output: fal bills this endpoint $0.1 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v2.1/text-to-image (Hunyuan Image 2.1). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

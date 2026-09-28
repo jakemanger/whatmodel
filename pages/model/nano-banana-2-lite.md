@@ -6,9 +6,7 @@
 
 Google · proprietary
 
-**score 69.2** ±2.1
-
-#12 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.2** ±2.1 · #12 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1250.0 | 70.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 78% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1314.4 | 64.3 | ▇▇▇▇▇▇ 20% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 69.2** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1250.0    70.9   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1314.4    64.3   2026-09-22   20% ▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 69.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Google) · $0.034/image · [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing)
+api (Google) · $0.034/image · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
-[price source](https://ai.google.dev/gemini-api/docs/pricing) · USD per 1K (1024×1024) generated image on the Gemini Developer API Standard paid tier: image output is $30 per 1M tokens and Google states a 1K output image consumes 1,120 tokens, 'equivalent to $0.0336 per image' (Batch: $0.0168). Input tokens and text/thinking output ($0.25 and $1.50 per 1M) are additional. Product: Gemini Developer API. API model: gemini-3.1-flash-lite-image. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published per-image equivalent of the image-output rate. Currency: USD. Google Gemini API official pricing page, observed 2026-09-25.
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per 1K (1024×1024) generated image on the Gemini Developer API Standard paid tier: image output is $30 per 1M tokens and Google states a 1K output image consumes 1,120 tokens, 'equivalent to $0.0336 per image' (Batch: $0.0168). Input tokens and text/thinking output ($0.25 and $1.50 per 1M) are additional. Product: Gemini Developer API. API model: gemini-3.1-flash-lite-image. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published per-image equivalent of the image-output rate. Currency: USD. Google Gemini API official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

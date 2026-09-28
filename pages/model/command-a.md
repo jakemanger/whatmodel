@@ -6,60 +6,70 @@
 
 Cohere · released 2025-03 · 111B params · cc-by-nc-4.0
 
-**score 45.7** ±3.7
-
-#132 of 205 · from 3 benchmark results across 3 sources
+**score 45.7** ±3.7 · #132 of 205 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1353.6 | 43.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 54% | 2026-09-13 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 70.0% | 48.8 | ▇▇▇▇▇▇▇ 22% | 2026-09-19 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 46.5% | 46.8 | ▇▇▇▇▇ 17% | 2025-12-16 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 45.7** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1353.6    43.6   2026-09-13   54% ▇▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   70.0%    48.8   2026-09-19   22% ▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   46.5%    46.8   2025-12-16   17% ▇▇
+prior                   pull toward the middle                    50.0                 6% ▇
+                        weighted average                        = 45.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (18)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Cohere — Command A technical report | [Aider polyglot (225 exercises, two attempts)](https://arxiv.org/pdf/2504.00698v2) | 14.7% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [AIME 2024](https://arxiv.org/pdf/2504.00698v2) | 23.3% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [BigCodeBench (Instruct)](https://arxiv.org/pdf/2504.00698v2) | 45.4% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [BIRD-SQL (dev)](https://arxiv.org/pdf/2504.00698v2) | 59.5% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [IFEval strict, mean of prompt and instruction level](https://arxiv.org/pdf/2504.00698v2) | 90.9% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [InFoBench](https://arxiv.org/pdf/2504.00698v2) | 94.9% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [LiveCodeBench v5 (Oct 2024–Feb 2025)](https://arxiv.org/pdf/2504.00698v2) | 26.9% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [LongBench v2](https://arxiv.org/pdf/2504.00698v2) | 43.4% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [MATH](https://arxiv.org/pdf/2504.00698v2) | 80.0% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [MBPP+](https://arxiv.org/pdf/2504.00698v2) | 86.2% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [MMLU-Pro](https://arxiv.org/pdf/2504.00698v2) | 69.6% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [RepoQA (32K, threshold 0.8)](https://arxiv.org/pdf/2504.00698v2) | 92.6% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [RULER 128k](https://arxiv.org/pdf/2504.00698v2) | 90.0% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [GPQA Diamond (simple-evals)](https://arxiv.org/pdf/2504.00698v2) | 50.8% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [MMLU (simple-evals, zero-shot CoT)](https://arxiv.org/pdf/2504.00698v2) | 85.5% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [SWE-bench Verified](https://arxiv.org/pdf/2504.00698v2) | 26.8% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [τ-bench Airline](https://arxiv.org/pdf/2504.00698v2) | 45.3% | too few models have this result to calibrate it yet |
-| Cohere — Command A technical report | [τ-bench Retail](https://arxiv.org/pdf/2504.00698v2) | 60.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (18)</summary>
+
+<pre>
+source  test                            score  why
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">Aider polyglot (225 exercises…</a>  14.7%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">AIME 2024</a>                       23.3%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">BigCodeBench (Instruct)</a>         45.4%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">BIRD-SQL (dev)</a>                  59.5%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">IFEval strict, mean of prompt…</a>  90.9%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">InFoBench</a>                       94.9%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">LiveCodeBench v5 (Oct 2024–Fe…</a>  26.9%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">LongBench v2</a>                    43.4%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">MATH</a>                            80.0%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">MBPP+</a>                           86.2%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">MMLU-Pro</a>                        69.6%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">RepoQA (32K, threshold 0.8)</a>     92.6%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">RULER 128k</a>                      90.0%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">GPQA Diamond (simple-evals)</a>     50.8%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">MMLU (simple-evals, zero-shot…</a>  85.5%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">SWE-bench Verified</a>              26.8%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Airline</a>                 45.3%  too few models have it yet
+Cohere  <a href="https://arxiv.org/pdf/2504.00698v2">τ-bench Retail</a>                  60.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Microsoft Azure) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [azure.microsoft.com ↗](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere)
+api (Microsoft Azure) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere)
 
-[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere) · USD per 1M tokens, Azure AI Foundry Models pay-as-you-go, 'Cohere Command A Global' (Azure model id cohere-command-a, version 1, GA with no retirement date on Azure's schedule): input $2.50, output $10.00, region US East. Cohere's own pricing page lists no Command A per-token rate. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25.
+<sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go, 'Cohere Command A Global' (Azure model id cohere-command-a, version 1, GA with no retirement date on Azure's schedule): input $2.50, output $10.00, region US East. Cohere's own pricing page lists no Command A per-token rate. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://docs.cohere.com/docs/models): Cohere API model table: command-a-03-2025 context length 256k (stated rounded), maximum output 8k tokens. Observed 2026-09-25.</sub>
 
-[context specification source](https://docs.cohere.com/docs/models) · Cohere API model table: command-a-03-2025 context length 256k (stated rounded), maximum output 8k tokens. Observed 2026-09-25.
+<pre>
+download         size  score
+4-bit q4_k_m  ~67.1GB   45.7
+2-bit q2_k    ~33.8GB   45.7
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~67.1GB | 45.7 | `ollama run command-a:111b` |
-| 2-bit q2\_k | ~33.8GB | 45.7 | `llama-server -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K` |
+```sh
+# 4-bit q4_k_m
+ollama run command-a:111b
+# 2-bit q2_k
+llama-server -hf unsloth/c4ai-command-a-03-2025-GGUF:Q2_K
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/command-a) · [JSON](https://whatmodel.sh/api?format=json&all=1)

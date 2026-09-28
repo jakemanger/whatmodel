@@ -6,36 +6,45 @@
 
 Boson AI · released 2026-06 · 4B params · boson-higgs-audio-v3-research-nc
 
-**score 61.7** ±3.2
-
-#3 of 36 · from 4 benchmark results across 2 sources
+**score 61.7** ±3.2 · #3 of 36 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-higgs3-sglang-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution)"> Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) | [CV3-Eval multilingual voice clone · 9-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) lab-reported | 4.4% | 61.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 56% | 2026-06-04 |
-|  | [MiniMax multilingual test set · 23-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) lab-reported | 2.7% | 72.1 | ▇▇▇▇ 15% | 2026-06-04 |
-|  | [Seed-TTS-Eval · test-en/test-zh macro mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) lab-reported | 1.1% | 59.3 | ▇ 3% | 2026-06-04 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Language Code-Switching (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.38 / 5 | 57.1 | ▇▇▇▇▇▇▇ 22% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 61.7** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.4%    61.6   2026-06-04   56% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      2.7%    72.1   2026-06-04   15% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.1%    59.3   2026-06-04    3% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.38 / 5    57.1   2026-07-16   22% ▇▇▇
+prior                   pull toward the middle                      49.9                 4% ▇
+                        weighted average                          = 61.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (Boson AI) · $15.00/M chars · [docs.boson.ai ↗](https://docs.boson.ai)
+api (Boson AI) · $15.00/M chars · [docs.boson.ai](https://docs.boson.ai)
 
-[price source](https://docs.boson.ai/pricing.md) · USD per 1M characters: Boson AI lists Higgs TTS 3 text input at $0.015 / 1K characters; generated audio free (x1000). Prepaid usage-based credits. Product: Boson API. API model: Higgs TTS 3. Settings: standard. Price basis: published list rate. Exclusions: taxes. Currency: USD. Boson AI official pricing docs, observed 2026-09-25.
+<sub>[price source](https://docs.boson.ai/pricing.md): USD per 1M characters: Boson AI lists Higgs TTS 3 text input at $0.015 / 1K characters; generated audio free (x1000). Prepaid usage-based credits. Product: Boson API. API model: Higgs TTS 3. Settings: standard. Price basis: published list rate. Exclusions: taxes. Currency: USD. Boson AI official pricing docs, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~10.1GB | 61.7 | `hf download bosonai/higgs-audio-v3-tts-4b && sgl-omni serve --model-path bosonai/higgs-audio-v3-tts-4b --port 8000` |
-| bf16 · mac only | ~10.1GB | 61.7 | `pip install mlx-audio && mlx_audio.tts.generate --model bosonai/higgs-audio-v3-tts-4b --text 'Hello, world!'` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~10.1GB   61.7
+bf16 · mac only     ~10.1GB   61.7
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+hf download bosonai/higgs-audio-v3-tts-4b && sgl-omni serve --model-path bosonai/higgs-audio-v3-tts-4b --port 8000
+# bf16 · mac only
+pip install mlx-audio && mlx_audio.tts.generate --model bosonai/higgs-audio-v3-tts-4b --text 'Hello, world!'
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/higgs-audio-v3-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

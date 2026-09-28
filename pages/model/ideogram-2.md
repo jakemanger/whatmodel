@@ -6,9 +6,7 @@
 
 Ideogram · closed weights
 
-**score 42.0** ±2.4
-
-#72 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.0** ±2.4 · #72 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1013.4 | 41.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 42.0** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1013.4    41.8   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 42.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.080/image · [replicate.com ↗](https://replicate.com/ideogram-ai/ideogram-v2)
+api (Replicate) · $0.080/image · [replicate.com](https://replicate.com/ideogram-ai/ideogram-v2)
 
-[price source](https://replicate.com/ideogram-ai/ideogram-v2) · USD per output image on Replicate's official ideogram-ai/ideogram-v2 model (billing: $0.08 per output image, "or around 12 images for $1"; hardware time not added). Product: Replicate model API. API model: ideogram-ai/ideogram-v2 (Ideogram 2.0, not the Turbo variant). Settings: one output image. Price basis: published list rate. fal's fal-ai/ideogram/v2 also bills $0.08 per image. Ideogram's own API still serves V\_2 through its legacy /generate endpoint, but its API pricing page did not render a price. Currency: USD. Not an Ideogram direct tariff. Replicate official model page, observed 2026-09-26.
+<sub>[price source](https://replicate.com/ideogram-ai/ideogram-v2): USD per output image on Replicate's official ideogram-ai/ideogram-v2 model (billing: $0.08 per output image, "or around 12 images for $1"; hardware time not added). Product: Replicate model API. API model: ideogram-ai/ideogram-v2 (Ideogram 2.0, not the Turbo variant). Settings: one output image. Price basis: published list rate. fal's fal-ai/ideogram/v2 also bills $0.08 per image. Ideogram's own API still serves V\_2 through its legacy /generate endpoint, but its API pricing page did not render a price. Currency: USD. Not an Ideogram direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

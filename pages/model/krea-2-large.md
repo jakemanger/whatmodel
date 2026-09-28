@@ -6,9 +6,7 @@
 
 Krea · proprietary
 
-**score 53.6** ±2.4
-
-#45 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.6** ±2.4 · #45 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1109.8 | 53.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 53.6** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1109.8    53.7   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 53.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Krea) · $0.060/image · [www.krea.ai ↗](https://www.krea.ai/docs/developers/krea-2/overview.md)
+api (Krea) · $0.060/image · [krea.ai](https://www.krea.ai/docs/developers/krea-2/overview.md)
 
-[price source](https://www.krea.ai/docs/developers/krea-2/overview.md) · USD per generated image, Krea 2 Large text-to-image on the Krea API: fixed per-generation price $0.060 (with style references $0.065, with moodboards $0.070). Product: Krea API. API model: krea-2/large (POST /generate/image/krea/krea-2/large). Settings: resolution=1K (the only resolution offered), no style references or moodboards, one image. Price basis: published fixed list price. Paid from a prepaid USD API balance. Currency: USD. Krea official API documentation, observed 2026-09-25.
+<sub>[price source](https://www.krea.ai/docs/developers/krea-2/overview.md): USD per generated image, Krea 2 Large text-to-image on the Krea API: fixed per-generation price $0.060 (with style references $0.065, with moodboards $0.070). Product: Krea API. API model: krea-2/large (POST /generate/image/krea/krea-2/large). Settings: resolution=1K (the only resolution offered), no style references or moodboards, one image. Price basis: published fixed list price. Paid from a prepaid USD API balance. Currency: USD. Krea official API documentation, observed 2026-09-25.</sub>
 
 no verified local download listed
 

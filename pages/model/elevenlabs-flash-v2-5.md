@@ -6,33 +6,34 @@
 
 ElevenLabs · released 2024-12 · proprietary
 
-**score 56.3** ±1.9
-
-#16 of 36 · from 7 benchmark results across 3 sources
+**score 56.3** ±1.9 · #16 of 36 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1191.0 | 53.6 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-09-25 |
-| <a name="speech-voxtral-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Voxtral TTS"> Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Seed-TTS · report split unspecified, speaker similarity](https://arxiv.org/html/2603.25551v2) | 41.3% | 56.5 | ▇▇▇▇ 13% | 2026-04-06 |
-|  | [MiniMax TTS · 9-language speaker similarity](https://arxiv.org/html/2603.25551v2) | 53.8% | 56.8 | ▇▇▇▇ 13% | 2026-04-06 |
-|  | [MiniMax TTS · 9-language WER (Voxtral ASR)](https://arxiv.org/html/2603.25551v2) | 1.6% | 62.6 | ▇▇ 6% | 2026-04-06 |
-|  | [Seed-TTS · report split unspecified (Voxtral ASR)](https://arxiv.org/html/2603.25551v2) | 0.9% | 63.7 | ▇▇ 5% | 2026-04-06 |
-| <a name="speech-rime-alpha-bench-ccby"></a><img src="../../icons/github.com.png" width="14" alt="Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference"> Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) | [Rime SupportBench · paired human preference vs Rime Coda (US English)](https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json) | -0.12 / 2 | 58.1 | ▇▇▇ 12% | 2026-09-13 |
-|  | [Rime ContentBench · paired human preference vs Rime Coda (US English)](https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json) | 0.16 / 2 | 57.1 | ▇▇▇ 11% | 2026-09-13 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 56.3** |  |  |
+<pre>
+source                  test                                score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>     1191.0    53.6   2026-09-25   39% ▇▇▇▇▇
+<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      41.3%    56.5   2026-04-06   13% ▇▇
+                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>      53.8%    56.8   2026-04-06   13% ▇▇
+                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>       1.6%    62.6   2026-04-06    6% ▇
+                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>       0.9%    63.7   2026-04-06    5% ▇
+<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.12 / 2    58.1   2026-09-13   12% ▇
+                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>   0.16 / 2    57.1   2026-09-13   11% ▇
+prior                   pull toward the middle                       49.9                 1% ▇
+                        weighted average                           = 56.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt))</sub>
 
 ## How to run it
 
-api (ElevenLabs) · $50.00/M chars · [elevenlabs.io ↗](https://elevenlabs.io/pricing/api)
+api (ElevenLabs) · $50.00/M chars · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
-[price source](https://elevenlabs.io/pricing/api) · USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000). Product: ElevenAPI text to speech. API model: eleven\_flash\_v2\_5. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25.
+<sub>[price source](https://elevenlabs.io/pricing/api): USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000). Product: ElevenAPI text to speech. API model: eleven\_flash\_v2\_5. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

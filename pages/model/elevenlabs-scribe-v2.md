@@ -6,42 +6,43 @@
 
 ElevenLabs · released 2026-01 · proprietary
 
-**score 60.2** ±1.5
-
-#2 of 28 · from 16 benchmark results across 10 sources
+**score 60.2** ±1.5 · #2 of 28 · from 16 benchmark results across 10 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-voicecodebench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="VoiceCodeBench (arXiv:2608.28916v2) · structured-token recovery ASR benchmark"> VoiceCodeBench (arXiv:2608.28916v2) · structured-token recovery ASR benchmark ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) | [VoiceCodeBench · batch canonical token/entity match (CTEM)](https://arxiv.org/html/2608.28916v2) | 91.6% | 62.0 | ▇▇▇ 9% | 2026-05-15 |
-|  | [VoiceCodeBench · batch WER (300 English workplace segments)](https://arxiv.org/html/2608.28916v2) | 6.9% | 56.9 | ▇▇ 8% | 2026-05-15 |
-| <a name="speech-gigaspeechbench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark"> GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GigaSpeechBench · 6 English accents WER mean](https://arxiv.org/html/2606.28884v1) | 21.9% | 54.0 | ▇▇ 6% | 2026-06-27 |
-|  | [GigaSpeechBench · 12 English domains entity B-WER mean](https://arxiv.org/html/2606.28884v1) | 16.2% | 55.3 | ▇▇ 6% | 2026-06-27 |
-|  | [GigaSpeechBench · 7 Arabic dialect WER mean](https://arxiv.org/html/2606.28884v1) | 41.1% | 57.9 | ▇ 4% | 2026-06-27 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 6.2% | 61.1 | ▇▇▇▇ 15% | 2026-03-26 |
-|  | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 2.7% | 84.7 | ▇ 1% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 5.8% | 72.0 | ▇ 0% | 2026-03-26 |
-| <a name="speech-stt-persian-triple-threat-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Persian ASR Triple Threat Leaderboard (Reza2kn)"> Persian ASR Triple Threat Leaderboard (Reza2kn) | [Persian ASR Triple Threat · VisualEars6669 + FLEURS-fa equal-weight WER](https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json) | 4.1% | 63.2 | ▇▇▇ 12% | 2026-08-25 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ ASR · 4 real-world English sets, mean WER](https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg) | 6.7% | 60.0 | ▇▇▇ 11% | 2026-07-16 |
-| <a name="speech-stt-botnoi-thai-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="BOTNOI Thai telephony ASR report (arXiv:2608.24916v1) · baseline CERs"> BOTNOI Thai telephony ASR report (arXiv:2608.24916v1) · baseline CERs ([CC BY 4.0](../../licenses/speech-stt-botnoi-thai-report.txt)) | [BOTNOI report · FLEURS Thai CER](https://arxiv.org/html/2608.24916v1) | 6.2% | 61.8 | ▇▇ 7% | 2026-08-03 |
-|  | [BOTNOI Thai telephony · CER](https://arxiv.org/html/2608.24916v1) | 19.7% | 60.4 | ▇ 4% | 2026-08-03 |
-| <a name="speech-stt-openbench-mit"></a><img src="../../icons/github.com.png" width="14" alt="Argmax OpenBench · open reproducible speech benchmarks (BENCHMARKS.md)"> Argmax OpenBench · open reproducible speech benchmarks (BENCHMARKS.md) | [Argmax OpenBench · earnings22-keywords WER (no keyword prompting)](https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md) | 10.5% | 61.1 | ▇▇ 7% | 2026-01-14 |
-| <a name="speech-stt-quranic-asr-lb-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Quranic ASR Leaderboard (Quran-Lab, held-out recitation set)"> Quranic ASR Leaderboard (Quran-Lab, held-out recitation set) | [Quranic ASR Leaderboard · held-out recitation (600 clips) overall WER](https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json) | 12.5% | 60.0 | ▇▇ 5% | 2026-08-15 |
-| <a name="speech-stt-perle-cs-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Benchmarking Commercial ASR Systems on Code-Switching Speech (arXiv:2605.19069v3)"> Benchmarking Commercial ASR Systems on Code-Switching Speech (arXiv:2605.19069v3) ([CC BY 4.0](../../licenses/speech-stt-perle-cs-report.txt)) | [Perle code-switching benchmark · 4-pair mean WER](https://arxiv.org/pdf/2605.19069v3) | 13.2% | 65.7 | ▇ 4% | 2026-05-22 |
-| <a name="speech-stt-koedesk-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="koedesk STT Bench v1 (Track A, FLEURS first-200)"> koedesk STT Bench v1 (Track A, FLEURS first-200) ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) | [koedesk FLEURS first-200 · 9-language headline error mean](https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json) | 3.9% | 61.8 | ▇ 0% | 2026-07-05 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 60.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench          <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  91.6%    62.0   2026-05-15    9% ▇
+                        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.9%    56.9   2026-05-15    8% ▇
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  21.9%    54.0   2026-06-27    6% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  16.2%    55.3   2026-06-27    6% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  41.1%    57.9   2026-06-27    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.2%    61.1   2026-03-26   15% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        2.7%    84.7   2026-03-26    1% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.8%    72.0   2026-03-26    0% ▇
+<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat · V…</a>   4.1%    63.2   2026-08-25   12% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   6.7%    60.0   2026-07-16   11% ▇
+<a name="speech-stt-botnoi-thai-report"></a>BOTNOI Thai telephony…  <a href="https://arxiv.org/html/2608.24916v1">BOTNOI report · FLEURS Thai C…</a>   6.2%    61.8   2026-08-03    7% ▇
+                        <a href="https://arxiv.org/html/2608.24916v1">BOTNOI Thai telephony · CER</a>     19.7%    60.4   2026-08-03    4% ▇
+<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  10.5%    61.1   2026-01-14    7% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  12.5%    60.0   2026-08-15    5% ▇
+<a name="speech-stt-perle-cs-report"></a>Benchmarking Commerci…  <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmar…</a>  13.2%    65.7   2026-05-22    4% ▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   3.9%    61.8   2026-07-05    0% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 60.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: VoiceCodeBench ([CC BY 4.0](../../licenses/speech-stt-voicecodebench-report.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Persian ASR Triple Threat Leaderboard ([Apache-2.0](../../licenses/speech-stt-persian-triple-threat-apache.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · BOTNOI Thai telephony ASR report ([CC BY 4.0](../../licenses/speech-stt-botnoi-thai-report.txt)) · Argmax OpenBench · open reproducible speech benchmarks ([MIT](../../licenses/speech-stt-openbench-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Benchmarking Commercial ASR Systems on Code-Switching Speech ([CC BY 4.0](../../licenses/speech-stt-perle-cs-report.txt)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 
 ## How to run it
 
-api (ElevenLabs) · $0.0037/audio min · [elevenlabs.io ↗](https://elevenlabs.io/pricing/api)
+api (ElevenLabs) · $0.0037/audio min · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per input audio minute, converted from the rounded LiteLLM per-second rate. File transcription; published tariff $0.22/hour. Not Scribe Realtime or Medical. Product: Batch/file speech transcription. API model: scribe\_v2. Settings: streaming=no, minimum billed seconds=not specified. Price basis: rounded catalogue rate (not a new estimate of speech length). Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute, converted from the rounded LiteLLM per-second rate. File transcription; published tariff $0.22/hour. Not Scribe Realtime or Medical. Product: Batch/file speech transcription. API model: scribe\_v2. Settings: streaming=no, minimum billed seconds=not specified. Price basis: rounded catalogue rate (not a new estimate of speech length). Currency: USD.</sub>
 
 no verified local download listed
 

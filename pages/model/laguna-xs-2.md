@@ -6,39 +6,49 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 50.4** ±3.6
-
-#112 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.4** ±3.6 · #112 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1302.2 | 50.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-09-24 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 50.4** |  |  |
+<pre>
+source                  test                        score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1302.2    50.4   2026-09-24   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle               50.0                 6% ▇
+                        weighted average                   = 50.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (4)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| poolside/Laguna-XS.2 model card | [SWE-bench Pro](https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/README.md#benchmark-results) | 46.3% | too few models have this result to calibrate it yet |
-| Poolside — Laguna M.1/XS.2 Technical Report | [SWE-bench Multilingual](https://arxiv.org/html/2605.27605v1) | 57.7% | too few models have this result to calibrate it yet |
-| Poolside — Laguna M.1/XS.2 Technical Report | [SWE-bench Verified](https://arxiv.org/html/2605.27605v1) | 69.9% | too few models have this result to calibrate it yet |
-| Poolside — Laguna M.1/XS.2 Technical Report | [Terminal-Bench 2.0](https://arxiv.org/html/2605.27605v1) | 35.7% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source                  test                    score  why
+poolside/Laguna-XS.2 …  <a href="https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/README.md#benchmark-results">SWE-bench Pro</a>           46.3%  too few models have it yet
+Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual</a>  57.7%  too few models have it yet
+Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified</a>      69.9%  too few models have it yet
+Poolside                <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0</a>      35.7%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/README.md) · Poolside official model card (poolside/Laguna-XS.2, pinned): 'Context window: 262,144 tokens'. Observed 2026-09-25.
+<sub>[context source](https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/README.md): Poolside official model card (poolside/Laguna-XS.2, pinned): 'Context window: 262,144 tokens'. Observed 2026-09-25.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 16-bit bf16 · nvidia only | 66.89GB | 50.4 | `vllm serve poolside/Laguna-XS.2 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice` |
+<pre>
+download                      size  score
+16-bit bf16 · nvidia only  66.89GB   50.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 16-bit bf16 · nvidia only
+vllm serve poolside/Laguna-XS.2 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/laguna-xs-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

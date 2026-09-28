@@ -6,73 +6,84 @@
 
 Z.ai · released 2026-01 · 31.2B params (3B active) · mit
 
-**score 41.5** ±2.2
-
-#146 of 205 · from 7 benchmark results across 4 sources
+**score 41.5** ±2.2 · #146 of 205 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 60.5% | 45.6 | ▇▇▇▇▇ 16% | 2026-08-30 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 58.3% | 47.1 | ▇▇▇▇ 15% | 2026-08-30 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 0.0% | 29.2 | ▇ 5% | 2026-08-28 |
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 14.9% | 31.1 | ▇▇▇▇▇ 18% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 83.1% | 40.5 | ▇▇▇▇ 12% | 2026-09-07 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1366.3 | 46.0 | ▇▇▇▇▇▇ 19% | 2026-09-13 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1151.3 | 42.1 | ▇▇▇▇ 14% | 2026-05-10 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 41.5** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     60.5%    45.6   2026-08-30   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         58.3%    47.1   2026-08-30   15% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    29.2   2026-08-28    5% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   14.9%    31.1   2026-09-07   18% ▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   83.1%    40.5   2026-09-07   12% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1366.3    46.0   2026-09-13   19% ▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1151.3    42.1   2026-05-10   14% ▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 41.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (7)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| zai-org/GLM-4.7-Flash model card | [AIME 2025](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 91.6% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7-Flash model card | [BrowseComp](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 42.8% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7-Flash model card | [GPQA (subset unspecified)](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 75.2% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7-Flash model card | [Humanity's Last Exam](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 14.4% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7-Flash model card | [LiveCodeBench v6 (window unspecified)](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 64.0% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7-Flash model card | [SWE-bench Verified](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 59.2% | too few models have this result to calibrate it yet |
-| zai-org/GLM-4.7-Flash model card | [τ²-bench aggregate](https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md) | 79.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (7)</summary>
+
+<pre>
+source                  test                            score  why
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">AIME 2025</a>                       91.6%  too few models have it yet
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">BrowseComp</a>                      42.8%  too few models have it yet
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">GPQA (subset unspecified)</a>       75.2%  too few models have it yet
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">Humanity's Last Exam</a>            14.4%  too few models have it yet
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">LiveCodeBench v6 (window unsp…</a>  64.0%  too few models have it yet
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">SWE-bench Verified</a>              59.2%  too few models have it yet
+zai-org/GLM-4.7-Flash…  <a href="https://huggingface.co/zai-org/GLM-4.7-Flash/blob/7dd20894a642a0aa287e9827cb1a1f7f91386b67/README.md">τ²-bench aggregate</a>              79.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Z.AI) · $0.0000/M blended · $0 in / $0 out per 1M tokens · [docs.z.ai ↗](https://docs.z.ai/guides/overview/pricing)
+api (Z.AI) · $0.0000/M blended · $0 in / $0 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/overview/pricing)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.7-flash.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-4.7-flash.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.7-flash.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/zhipuai/glm-4.7-flash.toml)
+<pre>
+download          size  score
+4-bit q4_k_m  ~19.22GB   41.5
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~19.22GB | 41.5 | `ollama run glm-4.7-flash:q4_K_M` |
+```sh
+# 4-bit q4_k_m
+ollama run glm-4.7-flash:q4_K_M
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA DGX Spark (GB10) | Q8\_0 | 48.68 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32; 32 generated tokens; context depth 0; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L301) |
-| NVIDIA DGX Spark (GB10) | Q8\_0 | 44.62 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d4096; 32 generated tokens; context depth 4096; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L303) |
-| NVIDIA DGX Spark (GB10) | Q8\_0 | 32.65 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d32768; 32 generated tokens; context depth 32768; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L309) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | Q8\_0 | 59.58 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32; 32 generated tokens; context depth 0; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L288) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | Q8\_0 | 47.44 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d4096; 32 generated tokens; context depth 4096; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L290) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | Q8\_0 | 21.81 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d32768; 32 generated tokens; context depth 32768; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L296) |
-| NVIDIA DGX Spark (GB10) | Q8\_0 | 42.59 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d8192; 32 generated tokens; context depth 8192; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L305) |
-| NVIDIA DGX Spark (GB10) | Q8\_0 | 38.72 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d16384; 32 generated tokens; context depth 16384; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L307) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | Q8\_0 | 40.2 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d8192; 32 generated tokens; context depth 8192; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L292) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | Q8\_0 | 31.5 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d16384; 32 generated tokens; context depth 16384; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L294) |
-| NVIDIA GeForce RTX 5090 (32GB; host CPU/RAM not stated) | GGUF Q6\_K\_XL (Unsloth repository) | 151.3 tok/s | llama.cpp (GGUF; version not stated) · Offload column: 0%; prompt-length variant not stated in Table 5 (study prompts ~16/~300/~496 tokens); fixed 256 output tokens, greedy decoding, fixed seed; two untimed warm-up generations; mean of three timed runs; generation throughput measured strictly during the decode phase · Model fully resident in GPU/unified memory as published. | [source ↗](https://arxiv.org/html/2605.00519v2#S4.T5) |
-| Apple M4 Pro (14-core CPU / 20-core GPU, 64GB) | MLX 4-bit | 53.6 tok/s | MLX v0.30.6 (macOS 26 Tahoe) · Offload column: 0%; prompt-length variant not stated in Table 5 (study prompts ~16/~300/~496 tokens); fixed 256 output tokens, greedy decoding, fixed seed; two untimed warm-up generations; mean of three timed runs; generation throughput measured strictly during the decode phase · Model fully resident in GPU/unified memory as published. | [source ↗](https://arxiv.org/html/2605.00519v2#S4.T5) |
-| Apple M3 Ultra (28-core CPU / 60-core GPU, 96GB) | MLX 4-bit | 55 tok/s | MLX v0.30.6 (macOS 26 Tahoe) · Offload column: 0%; prompt-length variant not stated in Table 5 (study prompts ~16/~300/~496 tokens); fixed 256 output tokens, greedy decoding, fixed seed; two untimed warm-up generations; mean of three timed runs; generation throughput measured strictly during the decode phase · Model fully resident in GPU/unified memory as published. | [source ↗](https://arxiv.org/html/2605.00519v2#S4.T5) |
-| Apple M2 Max (12-core CPU / 38-core GPU, 32GB) | MLX 4-bit | 39.7 tok/s | MLX v0.30.6 (macOS 26 Tahoe) · Offload column: 0%; prompt-length variant not stated in Table 5 (study prompts ~16/~300/~496 tokens); fixed 256 output tokens, greedy decoding, fixed seed; two untimed warm-up generations; mean of three timed runs; generation throughput measured strictly during the decode phase · Model fully resident in GPU/unified memory as published. | [source ↗](https://arxiv.org/html/2605.00519v2#S4.T5) |
+<pre>
+hardware                      precision               speed  engine and settings
+NVIDIA DGX Spark (GB10)       Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L301">48.68 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L303">44.62 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L309">32.65 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+Apple M2 Ultra (GPU core co…  Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L288">59.58 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L290">47.44 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L296">21.81 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+NVIDIA DGX Spark (GB10)       Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L305">42.59 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       Q8_0              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L307">38.72 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+Apple M2 Ultra (GPU core co…  Q8_0               <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L292">40.2 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  Q8_0               <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L294">31.5 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+NVIDIA GeForce RTX 5090       GGUF Q6_K_XL (U…  <a href="https://arxiv.org/html/2605.00519v2#S4.T5">151.3 tok/s</a>  llama.cpp (GGUF; version not stat…
+Apple M4 Pro (14-core CPU /…  MLX 4-bit          <a href="https://arxiv.org/html/2605.00519v2#S4.T5">53.6 tok/s</a>  MLX v0.30.6 (macOS 26 Tahoe) · Of…
+Apple M3 Ultra (28-core CPU…  MLX 4-bit            <a href="https://arxiv.org/html/2605.00519v2#S4.T5">55 tok/s</a>  MLX v0.30.6 (macOS 26 Tahoe) · Of…
+Apple M2 Max (12-core CPU /…  MLX 4-bit          <a href="https://arxiv.org/html/2605.00519v2#S4.T5">39.7 tok/s</a>  MLX v0.30.6 (macOS 26 Tahoe) · Of…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/glm-4-7-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

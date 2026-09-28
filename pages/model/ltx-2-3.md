@@ -6,27 +6,28 @@
 
 Lightricks · released 2026-03
 
-**score 37.0** ±7.5
-
-#46 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.0** ±7.5 · #46 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 38.4% | 33.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 77% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇ 23% |  |
-|  | **weighted average** |  | **= 37.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.4%    33.0   2026-08-10   77% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                23% ▇▇▇
+                        weighted average                       = 37.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 
-api (Lightricks (LTX API)) · $0.040/sec · [docs.ltx.io ↗](https://docs.ltx.io/pricing.md)
+api (Lightricks (LTX API)) · $0.040/sec · [docs.ltx.io](https://docs.ltx.io/pricing.md)
 
-[price source](https://docs.ltx.io/pricing.md) · USD per second of generated video, LTX API text-to-video, LTX-2.3 pro model at 1280x720. Product: LTX API v2/text-to-video. API model: ltx-2-3-pro. Settings: resolution=1280x720, tier=pro (same tier as the ltx-2-5 row). Price basis: published cost per second of output video. ltx-2-3-fast $0.03/s at 720p; pro 1080p $0.08/s, 1440p $0.16/s, 2160p $0.32/s (image-to-video the same; audio-to-video pro 720p $0.06/s). fal's partner endpoint fal-ai/ltx-2.3/text-to-video starts at 1080p ($0.08/s) and is not used. Currency: USD. LTX API pricing documentation, observed 2026-09-26.
+<sub>[price source](https://docs.ltx.io/pricing.md): USD per second of generated video, LTX API text-to-video, LTX-2.3 pro model at 1280x720. Product: LTX API v2/text-to-video. API model: ltx-2-3-pro. Settings: resolution=1280x720, tier=pro (same tier as the ltx-2-5 row). Price basis: published cost per second of output video. ltx-2-3-fast $0.03/s at 720p; pro 1080p $0.08/s, 1440p $0.16/s, 2160p $0.32/s (image-to-video the same; audio-to-video pro 720p $0.06/s). fal's partner endpoint fal-ai/ltx-2.3/text-to-video starts at 1080p ($0.08/s) and is not used. Currency: USD. LTX API pricing documentation, observed 2026-09-26.</sub>
 
 no verified local download listed
 

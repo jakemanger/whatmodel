@@ -6,49 +6,51 @@
 
 StepFun · released 2026-05 · 198B params (11B active) · apache-2.0
 
-**score 56.9** ±1.2
-
-#72 of 205 · from 10 benchmark results across 1 source
+**score 56.9** ±1.2 · #72 of 205 · from 10 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="matharena-arxiv-outputs-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets"> MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) | [MathArena ArXivMath June 2026 (48 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet) | 30.6% | 54.3 | ▇▇▇▇▇▇▇▇ 28% | 2026-09-07 |
-|  | [MathArena ArXivMath April 2026 (40 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet) | 35.8% | 58.6 | ▇▇▇▇▇▇ 19% | 2026-09-11 |
-|  | [MathArena ArXivMath March 2026 (30 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet) | 45.0% | 56.5 | ▇▇▇▇ 13% | 2026-09-11 |
-|  | [MathArena BrokenArXiv May 2026 (50 problems)](https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet) | 8.5% | 57.3 | ▇▇▇ 10% | 2026-06-23 |
-|  | [MathArena ArXivMath February 2026 (32 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet) | 32.0% | 53.8 | ▇▇ 8% | 2026-09-11 |
-|  | [MathArena ArXivMath May 2026 (40 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet) | 46.7% | 58.9 | ▇▇ 7% | 2026-09-11 |
-|  | [MathArena BrokenArXiv April 2026 (61 problems)](https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet) | 18.9% | 62.3 | ▇▇ 6% | 2026-09-11 |
-|  | [MathArena BrokenArXiv March 2026 (56 problems)](https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet) | 10.7% | 59.8 | ▇ 3% | 2026-09-11 |
-|  | [MathArena BrokenArXiv June 2026 (54 problems)](https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet) | 15.7% | 57.7 | ▇ 3% | 2026-08-25 |
-|  | [MathArena BrokenArXiv February 2026 (31 problems)](https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet) | 12.1% | 62.2 | ▇ 2% | 2026-09-11 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 56.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>  30.6%    54.3   2026-09-07   28% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>  35.8%    58.6   2026-09-11   19% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>  45.0%    56.5   2026-09-11   13% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>   8.5%    57.3   2026-06-23   10% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    53.8   2026-09-11    8% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  46.7%    58.9   2026-09-11    7% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>  18.9%    62.3   2026-09-11    6% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>  10.7%    59.8   2026-09-11    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>  15.7%    57.7   2026-08-25    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>  12.1%    62.2   2026-09-11    2% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 56.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (6)
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| stepfun-ai/Step-3.7-Flash model card | [SWE-bench Pro (split unspecified)](https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md) | 56.3% | too few models have this result to calibrate it yet |
-| stepfun-ai/Step-3.7-Flash model card | [Terminal-Bench 2.1](https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md) | 59.5% | too few models have this result to calibrate it yet |
-| stepfun-ai/Step-3.7-Flash model card | [Toolathlon (Tool Decathlon)](https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md) | 49.5% | too few models have this result to calibrate it yet |
-| stepfun-ai/Step-3.7-Flash model card | [SimpleVQA with tools (search)](https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md) | 79.2% | too few models have this result to calibrate it yet |
-| stepfun-ai/Step-3.7-Flash model card | [V\* Bench with Python tool](https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md) | 95.3% | too few models have this result to calibrate it yet |
-| stepfun-ai/Step-3.7-Flash model card | [ClawEval 1.1 (metric unspecified)](https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md) | 67.1% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source                  test                            score  why
+stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">SWE-bench Pro (split unspecif…</a>  56.3%  too few models have it yet
+stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Terminal-Bench 2.1</a>              59.5%  too few models have it yet
+stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">Toolathlon (Tool Decathlon)</a>     49.5%  too few models have it yet
+stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">SimpleVQA with tools (search)</a>   79.2%  too few models have it yet
+stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">V* Bench with Python tool</a>       95.3%  too few models have it yet
+stepfun-ai/Step-3.7-F…  <a href="https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md">ClawEval 1.1 (metric unspecif…</a>  67.1%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platform.stepfun.ai ↗](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md)
+api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platform.stepfun.ai](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md)
 
-[price source](https://platform.stepfun.ai/docs/en/guides/pricing/details.md) · USD per 1M tokens, StepFun Open Platform (international), step-3.7-flash (Multimodal Reasoning Models table): input on cache miss $0.20, output $1.15 (output includes reasoning). Cache-hit input ($0.04/1M) excluded. Currency: USD. StepFun official pricing page, observed 2026-09-26.
-
-[context specification source](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md) · StepFun official model page, step-3.7-flash: 'Context length 256K tokens' (a rounded figure; models.dev @a668908 gives 256,000). Observed 2026-09-26.
+<sub>[price source](https://platform.stepfun.ai/docs/en/guides/pricing/details.md): USD per 1M tokens, StepFun Open Platform (international), step-3.7-flash (Multimodal Reasoning Models table): input on cache miss $0.20, output $1.15 (output includes reasoning). Cache-hit input ($0.04/1M) excluded. Currency: USD. StepFun official pricing page, observed 2026-09-26. · [context source](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md): StepFun official model page, step-3.7-flash: 'Context length 256K tokens' (a rounded figure; models.dev @a668908 gives 256,000). Observed 2026-09-26.</sub>
 
 no verified local download listed
 

@@ -6,50 +6,60 @@
 
 Xiaomi · released 2026-04 · 310B params (15B active) · mit
 
-**score 58.9** ±2.2
-
-#56 of 205 · from 4 benchmark results across 2 sources
+**score 58.9** ±2.2 · #56 of 205 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1437.2 | 59.1 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1433.6 | 58.4 | ▇▇▇▇▇▇ 19% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1233.2 | 57.0 | ▇▇▇ 10% | 2026-09-13 |
-| <a name="paper-2606.05405v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="Agents' Last Exam — authors' own fixed-harness model comparison"> Agents' Last Exam — authors' own fixed-harness model comparison ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) | [Agents' Last Exam overall full-pass rate (fixed OpenClaw + GUI-as-Tool)](https://arxiv.org/html/2606.05405v2) | 8.6% | 60.0 | ▇▇▇▇▇▇▇▇▇▇ 35% | 2026-06-11 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 58.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1437.2    59.1   2026-09-24   34% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1433.6    58.4   2026-09-13   19% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1233.2    57.0   2026-09-13   10% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    60.0   2026-06-11   35% ▇▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 58.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (7)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| XiaomiMiMo/MiMo-V2.5 model card | [CharXiv (reasoning questions)](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 81.0% | too few models have this result to calibrate it yet |
-| XiaomiMiMo/MiMo-V2.5 model card | [Daily-Omni](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 83.5% | too few models have this result to calibrate it yet |
-| XiaomiMiMo/MiMo-V2.5 model card | [HR-Bench 4K](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 88.5% | too few models have this result to calibrate it yet |
-| XiaomiMiMo/MiMo-V2.5 model card | [MMMU Pro](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 77.9% | too few models have this result to calibrate it yet |
-| XiaomiMiMo/MiMo-V2.5 model card | [SWE-bench Pro (split unspecified)](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 56.1% | too few models have this result to calibrate it yet |
-| XiaomiMiMo/MiMo-V2.5 model card | [Terminal-Bench 2.0](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 65.8% | too few models have this result to calibrate it yet |
-| XiaomiMiMo/MiMo-V2.5 model card | [Video-Holmes](https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md) | 64.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (7)</summary>
+
+<pre>
+source                  test                            score  why
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">CharXiv (reasoning questions)</a>   81.0%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Daily-Omni</a>                      83.5%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">HR-Bench 4K</a>                     88.5%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">MMMU Pro</a>                        77.9%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">SWE-bench Pro (split unspecif…</a>  56.1%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Terminal-Bench 2.0</a>              65.8%  too few models have it yet
+XiaomiMiMo/MiMo-V2.5 …  <a href="https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/README.md">Video-Holmes</a>                    64.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [novita.ai ↗](https://novita.ai/models/llm/xiaomimimo-mimo-v2.5)
+api (Novita AI) · $0.21/M blended · $0.168 in / $0.336 out per 1M tokens · [novita.ai](https://novita.ai/models/llm/xiaomimimo-mimo-v2.5)
 
-[price source](https://novita.ai/pricing) · USD per 1M tokens, Novita AI serverless chat completions, model xiaomimimo/mimo-v2.5 (status active; 1M context): input $0.168, output $0.336; cache read $0.0034 excluded. Xiaomi's own API lists mimo-v2.5 at $0.14/$0.28 (overseas, cache miss) but marks it 'to be deprecated' on 2026-10-21. Currency: USD. Novita AI official pricing page, observed 2026-09-25.
+<sub>[price source](https://novita.ai/pricing): USD per 1M tokens, Novita AI serverless chat completions, model xiaomimimo/mimo-v2.5 (status active; 1M context): input $0.168, output $0.336; cache read $0.0034 excluded. Xiaomi's own API lists mimo-v2.5 at $0.14/$0.28 (overseas, cache miss) but marks it 'to be deprecated' on 2026-10-21. Currency: USD. Novita AI official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xiaomi/mimo-v2.5.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xiaomi/mimo-v2.5.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~186.5GB   58.9
+2-bit ud-q2_k_xl   ~93.5GB   58.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~186.5GB | 58.9 | `llama-server -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~93.5GB | 58.9 | `llama-server -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/MiMo-V2.5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/MiMo-V2.5-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/mimo-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,86 +6,97 @@
 
 IBM · released 2025-09 · 32.2B params (9B active) · apache-2.0
 
-**score 33.7** ±3.5
-
-#180 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 33.7** ±3.5 · #180 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1285.5 | 31.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 49% | 2026-09-13 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 44.5% | 34.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 33.7** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1285.5    31.1   2026-09-13   49% ▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   44.5%    34.6   2026-05-02   46% ▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 5% ▇
+                        weighted average                        = 33.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (21)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| ibm-granite/granite-4.0-h-small model card | [BIG-Bench Hard](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 81.6% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [BFCL v3](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 64.7% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [BigCodeBench](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 46.2% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [CRUXEval-O](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 50.2% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [DeepMind Mathematics](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 59.3% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [GPQA (subset unspecified)](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 40.6% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [GSM-Symbolic](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 87.4% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [GSM8K](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 87.3% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [HumanEval](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 88.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [HumanEval+](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 83.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [IFEval instruction-level strict](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 89.9% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [IFEval prompt-level strict](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 85.2% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [INCLUDE](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 64.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MBPP](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 84.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MBPP+](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 71.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MGSM, 5 languages (en, es, fr, ja, zh)](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 38.7% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [Minerva MATH](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 74.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MMLU](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 78.4% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MMLU-Pro](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 55.5% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MMMLU](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 69.7% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MultiPL-E](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 57.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (21)</summary>
+
+<pre>
+source                  test                            score  why
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard</a>                  81.6%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BFCL v3</a>                         64.7%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench</a>                    46.2%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O</a>                      50.2%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics</a>            59.3%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified)</a>       40.6%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic</a>                    87.4%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K</a>                           87.3%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval</a>                       88.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+</a>                      83.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval instruction-level stri…</a>  89.9%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval prompt-level strict</a>      85.2%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE</a>                         64.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP</a>                            84.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+</a>                           71.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr…</a>  38.7%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH</a>                    74.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU</a>                            78.4%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro</a>                        55.5%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU</a>                           69.7%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E</a>                       57.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [replicate.com ↗](https://replicate.com/ibm-granite/granite-4.0-h-small)
+api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [replicate.com](https://replicate.com/ibm-granite/granite-4.0-h-small)
 
-[price source](https://replicate.com/ibm-granite/granite-4.0-h-small) · USD per 1M tokens, Replicate official model ibm-granite/granite-4.0-h-small, billed per input/output token (billing table on the model page; A100 80GB backing hardware not billed separately for this official model). Currency: USD. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/ibm-granite/granite-4.0-h-small): USD per 1M tokens, Replicate official model ibm-granite/granite-4.0-h-small, billed per input/output token (billing table on the model page; A100 80GB backing hardware not billed separately for this official model). Currency: USD. Replicate official model page, observed 2026-09-25. · [context source](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/config.json): Configured sequence length, corroborated by the official card architecture table. Dense Micro and hybrid H-Small are distinct models.</sub>
 
-[context specification source](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/config.json) · Configured sequence length, corroborated by the official card architecture table. Dense Micro and hybrid H-Small are distinct models.
+<pre>
+download          size  score
+4-bit q4_k_m  ~19.82GB   33.7
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~19.82GB | 33.7 | `ollama run granite4:small-h` |
+```sh
+# 4-bit q4_k_m
+ollama run granite4:small-h
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 (IBM official ibm-granite/granite-4.0-h-small-FP8 checkpoint; recipe not described in this card) | GSM8K 5-shot strict-match (lm-evaluation-harness, vLLM) | 0.852 → 0.853 | 100.1% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L262) |
-| FP8 (IBM official ibm-granite/granite-4.0-h-small-FP8 checkpoint; recipe not described in this card) | MMLU 5-shot acc (lm-evaluation-harness, vLLM) | 0.771 → 0.772 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L276) |
-| FP8 (IBM official ibm-granite/granite-4.0-h-small-FP8 checkpoint; recipe not described in this card) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.766 → 0.766 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L297) |
-| FP8 (IBM official ibm-granite/granite-4.0-h-small-FP8 checkpoint; recipe not described in this card) | IFEval 0-shot instruction-level strict acc (OpenLLM v2 config) | 0.875 → 0.872 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L306) |
-| FP8 (IBM official ibm-granite/granite-4.0-h-small-FP8 checkpoint; recipe not described in this card) | MMLU-Pro 5-shot (OpenLLM v2 config; value as published) | 0.48 → 0.476 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L341) |
-| FP8 (IBM official ibm-granite/granite-4.0-h-small-FP8 checkpoint; recipe not described in this card) | OpenLLM v2 average of 6 tasks (IFEval, BBH, MATH-Hard, GPQA, MuSR, MMLU-Pro; lm-evaluation-harness \`leaderboard\`, chat template, vLLM; values exactly as published, per-task normalisation not stated) | 0.542 → 0.536 | 98.8% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L348) |
-| FP8 block-wise (llm-compressor FP8\_BLOCK) | GSM8K 5-shot strict-match (lm-evaluation-harness, vLLM) | 0.852 → 0.855 | 100.4% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L246) |
-| FP8 block-wise (llm-compressor FP8\_BLOCK) | MMLU 5-shot acc (lm-evaluation-harness, vLLM) | 0.771 → 0.772 | 100.1% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L260) |
-| FP8 block-wise (llm-compressor FP8\_BLOCK) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.766 → 0.766 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L281) |
-| FP8 block-wise (llm-compressor FP8\_BLOCK) | MMLU-Pro 5-shot (OpenLLM v2 config; value as published) | 0.48 → 0.479 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L325) |
-| FP8 block-wise (llm-compressor FP8\_BLOCK) | IFEval 0-shot instruction-level strict acc (OpenLLM v2 config) | 0.875 → 0.867 | 99.0% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L290) |
-| FP8 block-wise (llm-compressor FP8\_BLOCK) | OpenLLM v2 average of 6 tasks (IFEval, BBH, MATH-Hard, GPQA, MuSR, MMLU-Pro; lm-evaluation-harness \`leaderboard\`, chat template, vLLM; values exactly as published, per-task normalisation not stated) | 0.542 → 0.533 | 98.4% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L332) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC) | MMLU 5-shot acc (lm-evaluation-harness, vLLM) | 0.771 → 0.772 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L278) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC) | IFEval 0-shot instruction-level strict acc (OpenLLM v2 config) | 0.875 → 0.874 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L308) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC) | OpenLLM v1 average of 6 tasks (ARC-Challenge 25-shot, GSM8K 5-shot, HellaSwag 10-shot, MMLU 5-shot, TruthfulQA MC2 0-shot, Winogrande 5-shot; lm-evaluation-harness \`openllm\`, vLLM) | 0.766 → 0.765 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L299) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC) | GSM8K 5-shot strict-match (lm-evaluation-harness, vLLM) | 0.852 → 0.848 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L264) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC) | MMLU-Pro 5-shot (OpenLLM v2 config; value as published) | 0.48 → 0.476 | 99.1% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L343) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC) | OpenLLM v2 average of 6 tasks (IFEval, BBH, MATH-Hard, GPQA, MuSR, MMLU-Pro; lm-evaluation-harness \`leaderboard\`, chat template, vLLM; values exactly as published, per-task normalisation not stated) | 0.542 → 0.53 | 97.8% | [source ↗](https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L350) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 (IBM official ibm-granite…  GSM8K 5-shot strict-match (lm-eva…     0.852 → 0.853  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L262">100.1%</a>
+FP8 (IBM official ibm-granite…  MMLU 5-shot acc (lm-evaluation-ha…     0.771 → 0.772  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L276">100.0%</a>
+FP8 (IBM official ibm-granite…  OpenLLM v1 average of 6 tasks (AR…     0.766 → 0.766  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L297">100.0%</a>
+FP8 (IBM official ibm-granite…  IFEval 0-shot instruction-level s…     0.875 → 0.872   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L306">99.6%</a>
+FP8 (IBM official ibm-granite…  MMLU-Pro 5-shot (OpenLLM v2 confi…      0.48 → 0.476   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L341">99.2%</a>
+FP8 (IBM official ibm-granite…  OpenLLM v2 average of 6 tasks (IF…     0.542 → 0.536   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L348">98.8%</a>
+FP8 block-wise (llm-compresso…  GSM8K 5-shot strict-match (lm-eva…     0.852 → 0.855  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L246">100.4%</a>
+FP8 block-wise (llm-compresso…  MMLU 5-shot acc (lm-evaluation-ha…     0.771 → 0.772  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L260">100.1%</a>
+FP8 block-wise (llm-compresso…  OpenLLM v1 average of 6 tasks (AR…     0.766 → 0.766  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L281">100.0%</a>
+FP8 block-wise (llm-compresso…  MMLU-Pro 5-shot (OpenLLM v2 confi…      0.48 → 0.479   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L325">99.9%</a>
+FP8 block-wise (llm-compresso…  IFEval 0-shot instruction-level s…     0.875 → 0.867   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L290">99.0%</a>
+FP8 block-wise (llm-compresso…  OpenLLM v2 average of 6 tasks (IF…     0.542 → 0.533   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-block/blob/d65f13db6dee2495b3c8e32339cca3e616534e23/README.md#L332">98.4%</a>
+FP8 dynamic (llm-compressor F…  MMLU 5-shot acc (lm-evaluation-ha…     0.771 → 0.772  <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L278">100.0%</a>
+FP8 dynamic (llm-compressor F…  IFEval 0-shot instruction-level s…     0.875 → 0.874   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L308">99.9%</a>
+FP8 dynamic (llm-compressor F…  OpenLLM v1 average of 6 tasks (AR…     0.766 → 0.765   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L299">99.9%</a>
+FP8 dynamic (llm-compressor F…  GSM8K 5-shot strict-match (lm-eva…     0.852 → 0.848   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L264">99.6%</a>
+FP8 dynamic (llm-compressor F…  MMLU-Pro 5-shot (OpenLLM v2 confi…      0.48 → 0.476   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L343">99.1%</a>
+FP8 dynamic (llm-compressor F…  OpenLLM v2 average of 6 tasks (IF…      0.542 → 0.53   <a href="https://huggingface.co/RedHatAI/granite-4.0-h-small-FP8-dynamic/blob/440b960193f3e871ebf74f942e630fbbd5012602/README.md#L350">97.8%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/granite-4-0-h-small) · [JSON](https://whatmodel.sh/api?format=json&all=1)

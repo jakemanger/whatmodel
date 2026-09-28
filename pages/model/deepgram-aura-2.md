@@ -6,32 +6,33 @@
 
 Deepgram · closed weights
 
-**score 52.2** ±2.4
-
-#24 of 36 · from 6 benchmark results across 4 sources
+**score 52.2** ±2.4 · #24 of 36 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-rime-alpha-bench-ccby"></a><img src="../../icons/github.com.png" width="14" alt="Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference"> Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) | [Rime SupportBench · paired human preference vs Rime Coda (US English)](https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json) | -0.37 / 2 | 54.4 | ▇▇▇▇▇▇ 19% | 2026-09-13 |
-|  | [Rime ContentBench · paired human preference vs Rime Coda (US English)](https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json) | 0.15 / 2 | 57.0 | ▇▇▇▇▇ 18% | 2026-09-13 |
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 25.8% | 42.3 | ▇▇▇▇▇▇ 20% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 16.8% | 42.8 | ▇▇ 6% | 2025-08-10 |
-| <a name="speech-emergent-v1-paper-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS"> EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) | [EmergentTTS · v1 paper automatic MOS (WV-MOS)](https://arxiv.org/html/2505.23009v1) | 4.33 / 5 | 55.8 | ▇▇▇▇▇▇ 21% | 2025-05-29 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Reliability (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.60 / 5 | 57.6 | ▇▇▇▇ 12% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 52.2** |  |  |
+<pre>
+source                  test                                score  implies  date        weight
+<a name="speech-rime-alpha-bench-ccby"></a>Rime Alpha TTS Benchm…  <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/supportbench/supportbench_results.json">Rime SupportBench · paired hu…</a>  -0.37 / 2    54.4   2026-09-13   19% ▇▇
+                        <a href="https://github.com/rimelabs/alpha-tts-benchmark/blob/46c080779bf27b23ca2840dab7c2d7f19a945fa7/results/contentbench/contentbench_results.json">Rime ContentBench · paired hu…</a>   0.15 / 2    57.0   2026-09-13   18% ▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      25.8%    42.3   2025-08-10   20% ▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>        16.8%    42.8   2025-08-10    6% ▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>   4.33 / 5    55.8   2025-05-29   21% ▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>   3.60 / 5    57.6   2026-07-16   12% ▇
+prior                   pull toward the middle                       49.9                 2% ▇
+                        weighted average                           = 52.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference ([CC BY 4.0](../../licenses/speech-rime-alpha-bench-ccby.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (Deepgram) · $30.00/M chars · [deepgram.com ↗](https://deepgram.com/pricing)
+api (Deepgram) · $30.00/M chars · [deepgram.com](https://deepgram.com/pricing)
 
-[price source](https://deepgram.com/pricing) · USD per 1M input characters: Deepgram lists Aura-2 text-to-speech at $0.030 per 1k characters, pay as you go (x1000); Growth plan $0.027 per 1k. Product: Deepgram TTS API. API model: aura-2. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: Growth-plan prepay discount. Currency: USD. Deepgram official pricing page, observed 2026-09-25.
+<sub>[price source](https://deepgram.com/pricing): USD per 1M input characters: Deepgram lists Aura-2 text-to-speech at $0.030 per 1k characters, pay as you go (x1000); Growth plan $0.027 per 1k. Product: Deepgram TTS API. API model: aura-2. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: Growth-plan prepay discount. Currency: USD. Deepgram official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

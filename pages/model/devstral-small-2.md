@@ -6,15 +6,18 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| SWE-bench Verified | 68.0% | [mistralai/Devstral-Small-2-24B-Instruct-2512 model card](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md) · lab-reported · Own Devstral Small 2 24B Instruct-2512 row; release identifies FP8. Competitor rows are explicitly based on publicly reported values and are not imported. The card recommends Mistral Vibe and lists other supported agents but does not tie this table to a specific scaffold or exact decoding configuration; neither is assumed. Review date is not the evaluation-run date. |
-| SWE-bench Multilingual | 55.7% | [mistralai/Devstral-Small-2-24B-Instruct-2512 model card](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md) · lab-reported · Own Devstral Small 2 24B Instruct-2512 row; release identifies FP8. Competitor rows are explicitly based on publicly reported values and are not imported. The card recommends Mistral Vibe and lists other supported agents but does not tie this table to a specific scaffold or exact decoding configuration; neither is assumed. Review date is not the evaluation-run date. |
-| Terminal-Bench 2.0 | 22.5% | [mistralai/Devstral-Small-2-24B-Instruct-2512 model card](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md) · lab-reported · Own Devstral Small 2 24B Instruct-2512 row; release identifies FP8. Competitor rows are explicitly based on publicly reported values and are not imported. The card recommends Mistral Vibe and lists other supported agents but does not tie this table to a specific scaffold or exact decoding configuration; neither is assumed. Review date is not the evaluation-run date. |
+<pre>
+test                    result  reported by  source
+SWE-bench Verified       68.0%  lab          <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24…</a>
+SWE-bench Multilingual   55.7%  lab          <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24…</a>
+Terminal-Bench 2.0       22.5%  lab          <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24…</a>
+</pre>
+
+<sub>Licences: mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/devstral-small-2.toml) · model catalogue context ceiling (not a promise by a hosted API)
+<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/devstral-small-2.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
 ```sh
 ollama run devstral-small-2:24b

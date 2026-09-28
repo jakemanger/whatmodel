@@ -6,64 +6,81 @@
 
 NVIDIA · released 2025-05 · 0.6B params · cc-by-4.0
 
-**score 57.3** ±1.8
-
-#6 of 28 · from 7 benchmark results across 4 sources
+**score 57.3** ±1.8 · #6 of 28 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-afrispeech-multibench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite"> AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) | [AfriSpeech-MultiBench · Parliament (legal domain) WER](https://arxiv.org/html/2511.14255v1) | 18.4% | 58.1 | ▇▇▇▇▇▇ 20% | 2025-11-18 |
-|  | [AfriSpeech-MultiBench · 7-region African-accent mean WER](https://arxiv.org/html/2511.14255v1) | 22.5% | 55.6 | ▇▇▇▇ 15% | 2025-11-18 |
-| <a name="speech-stt-verli-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="verliapp/stt-benchmark · independent STT accuracy benchmark"> verliapp/stt-benchmark · independent STT accuracy benchmark | [verli STT benchmark · SPGISpeech 1,200-clip sample WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json) | 2.0% | 60.2 | ▇▇▇▇▇▇ 20% | 2026-07-19 |
-|  | [verli STT benchmark · Earnings-22 WER (2,741 utt.)](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json) | 11.2% | 57.5 | ▇▇▇ 9% | 2026-07-19 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 9.0% | 55.5 | ▇▇▇▇▇▇ 21% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 6.0% | 65.7 | ▇ 0% | 2026-03-26 |
-| <a name="speech-stt-yoruba-cs-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Switch-aware evaluation of ASR on English-Yoruba code-switched speech (arXiv:2609.11786v1)"> Switch-aware evaluation of ASR on English-Yoruba code-switched speech (arXiv:2609.11786v1) ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt)) | [AfriCodeSwitch English-Yoruba code-switched speech · WER (cap2000)](https://arxiv.org/html/2609.11786v1) | 66.1% | 57.1 | ▇▇▇▇ 14% | 2026-09-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 57.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.4%    58.1   2025-11-18   20% ▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.5%    55.6   2025-11-18   15% ▇▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   2.0%    60.2   2026-07-19   20% ▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  11.2%    57.5   2026-07-19    9% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.0%    55.5   2026-03-26   21% ▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.0%    65.7   2026-03-26    0% ▇
+<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  66.1%    57.1   2026-09-10   14% ▇▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 57.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (8)
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| nvidia/parakeet-tdt-0.6b-v2 model card | [AMI WER (Open ASR / ESB test split)](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 11.2% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [Earnings-22 WER (short-form, Open ASR / ESB test split)](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 11.2% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [GigaSpeech test WER](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 9.7% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [LibriSpeech test-clean WER](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 1.7% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [LibriSpeech test-other WER](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 3.2% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [SPGISpeech test WER](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 2.2% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [TED-LIUM test WER (short-form)](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 3.4% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-tdt-0.6b-v2 model card | [VoxPopuli English test WER](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md) | 5.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (8)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">AMI WER (Open ASR / ESB test …</a>  11.2%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">Earnings-22 WER (short-form, …</a>  11.2%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">GigaSpeech test WER</a>              9.7%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">LibriSpeech test-clean WER</a>       1.7%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">LibriSpeech test-other WER</a>       3.2%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">SPGISpeech test WER</a>              2.2%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">TED-LIUM test WER (short-form)</a>   3.4%  too few models have it yet
+nvidia/parakeet-tdt-0…  <a href="https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2/blob/ae9ad07059c7c739ffaf932226a8fe64ae2620b0/README.md">VoxPopuli English test WER</a>       5.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · mac only | ~1.94GB | 57.3 | `uvx parakeet-mlx audio.mp3 --model mlx-community/parakeet-tdt-0.6b-v2` |
-| fp32 · nvidia only | ~3.38GB | 57.3 | `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v2').transcribe(['audio.wav']))"` |
-| onnx-fp32 | ~3.38GB | 57.3 | `uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v2 audio.wav` |
+<pre>
+version               needs  score
+bf16 · mac only     ~1.94GB   57.3
+fp32 · nvidia only  ~3.38GB   57.3
+onnx-fp32           ~3.38GB   57.3
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · mac only
+uvx parakeet-mlx audio.mp3 --model mlx-community/parakeet-tdt-0.6b-v2
+# fp32 · nvidia only
+uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-tdt-0.6b-v2').transcribe(['audio.wav']))"
+# onnx-fp32
+uvx --from 'onnx-asr[cpu,hub]' onnx-asr nemo-parakeet-tdt-0.6b-v2 audio.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen 7 9800X3D | onnx-default (precision not stated in table) | 36.8 x-realtime | ONNX Runtime CPUExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L99) |
-| AMD Ryzen 7 9800X3D | onnx-int8 | 30.5 x-realtime | ONNX Runtime CPUExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L99) |
-| NVIDIA GeForce RTX 5070 Ti | onnx-default (precision not stated in table) | 88.7 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L111) |
-| NVIDIA T4 | onnx-default (precision not stated in table) | 57.6 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L111) |
-| NVIDIA GeForce RTX 5070 Ti | TensorRT default precision | 298.3 x-realtime | ONNX Runtime TensorrtExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123) |
-| NVIDIA GeForce RTX 5070 Ti | TensorRT fp16 enabled | 329.2 x-realtime | ONNX Runtime TensorrtExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123) |
-| NVIDIA T4 | TensorRT default precision | 96 x-realtime | ONNX Runtime TensorrtExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123) |
-| NVIDIA T4 | TensorRT fp16 enabled | 237.2 x-realtime | ONNX Runtime TensorrtExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123) |
+<pre>
+hardware                    precision                    speed  engine and settings
+AMD Ryzen 7 9800X3D         onnx-default (p…   <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L99">36.8 x-realtime</a>  ONNX Runtime CPUExecutionProvider…
+AMD Ryzen 7 9800X3D         onnx-int8          <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L99">30.5 x-realtime</a>  ONNX Runtime CPUExecutionProvider…
+NVIDIA GeForce RTX 5070 Ti  onnx-default (p…   <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L111">88.7 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+NVIDIA T4                   onnx-default (p…   <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L111">57.6 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+NVIDIA GeForce RTX 5070 Ti  TensorRT defaul…  <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123">298.3 x-realtime</a>  ONNX Runtime TensorrtExecutionPro…
+NVIDIA GeForce RTX 5070 Ti  TensorRT fp16 e…  <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123">329.2 x-realtime</a>  ONNX Runtime TensorrtExecutionPro…
+NVIDIA T4                   TensorRT defaul…     <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123">96 x-realtime</a>  ONNX Runtime TensorrtExecutionPro…
+NVIDIA T4                   TensorRT fp16 e…  <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L123">237.2 x-realtime</a>  ONNX Runtime TensorrtExecutionPro…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/parakeet-tdt-0-6b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,31 +6,30 @@
 
 Google · released 2025-12 · closed weights
 
-**score 58.7** ±2.5
-
-#60 of 205 · from 3 benchmark results across 2 sources
+**score 58.7** ±2.5 · #60 of 205 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="matharena-arxiv-outputs-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets"> MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) | [MathArena ArXivMath January 2026 (23 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet) | 58.2% | 57.8 | ▇▇▇▇▇▇▇▇▇▇▇ 35% | 2026-09-11 |
-|  | [MathArena ArXivMath December 2025 (17 problems)](https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet) | 43.4% | 55.7 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-09-11 |
-| <a name="arcprize-model-baseline-outputs"></a><img src="../../icons/huggingface.co.png" width="14" alt="ARC Prize Foundation model_baseline outputs on ARC-AGI-1/2 public evaluation sets"> ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets | [ARC-AGI-2 public evaluation set (ARC Prize model\_baseline, pass@2)](https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json) | 34.0% | 63.0 | ▇▇▇▇▇▇▇▇▇▇ 33% | 2026-06-04 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 58.7** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  58.2%    57.8   2026-09-11   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  43.4%    55.7   2026-09-11   29% ▇▇▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gemini-3-flash-preview-thinking-high/results.json">ARC-AGI-2 public evaluation s…</a>  34.0%    63.0   2026-06-04   33% ▇▇▇▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 58.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt))</sub>
 
 ## How to run it
 
-api (Google) · $1.13/M blended · $0.5 in / $3 out per 1M tokens · [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview)
+api (Google) · $1.13/M blended · $0.5 in / $3 out per 1M tokens · [ai.google.dev](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview)
 
-[price source](https://ai.google.dev/gemini-api/docs/pricing) · USD per 1M tokens, Gemini Developer API Standard paid tier, gemini-3-flash-preview (Gemini 3 Flash Preview, which Google calls 'our legacy Flash model'; the deprecations table lists 'No shutdown date announced'): input $0.50 (text/image/video), output $3.00 (including thinking tokens). Audio input ($1.00), context caching, Batch and Flex ($0.25 in / $1.50 out) and the free tier are excluded. Currency: USD. Google Gemini API official pricing page, observed 2026-09-26.
-
-[context specification source](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview) · Gemini Developer API model page, gemini-3-flash-preview: input token limit 1,048,576 (the 65,536-token output limit is separate). Observed 2026-09-26.
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): USD per 1M tokens, Gemini Developer API Standard paid tier, gemini-3-flash-preview (Gemini 3 Flash Preview, which Google calls 'our legacy Flash model'; the deprecations table lists 'No shutdown date announced'): input $0.50 (text/image/video), output $3.00 (including thinking tokens). Audio input ($1.00), context caching, Batch and Flex ($0.25 in / $1.50 out) and the free tier are excluded. Currency: USD. Google Gemini API official pricing page, observed 2026-09-26. · [context source](https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview): Gemini Developer API model page, gemini-3-flash-preview: input token limit 1,048,576 (the 65,536-token output limit is separate). Observed 2026-09-26.</sub>
 
 no verified local download listed
 

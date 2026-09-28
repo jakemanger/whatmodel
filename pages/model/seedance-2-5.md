@@ -6,30 +6,31 @@
 
 ByteDance · closed weights
 
-**score 76.3** ±2.1
-
-#5 of 54 · from 4 benchmark results across 2 sources
+**score 76.3** ±2.1 · #5 of 54 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1473.9 | 76.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 45% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1477.4 | 75.5 | ▇▇▇▇▇▇▇▇ 26% | 2026-09-22 |
-|  | [Arena video edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet) | 1409.8 | 80.1 | ▇▇▇ 11% | 2026-08-27 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1247.0 | 76.4 | ▇▇▇▇▇ 17% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 76.3** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1473.9    76.8   2026-09-22   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1477.4    75.5   2026-09-22   26% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1409.8    80.1   2026-08-27   11% ▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1247.0    76.4   2026-09-25   17% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 76.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt))</sub>
 
 ## How to run it
 
-api (Runway) · $0.30/sec · [docs.dev.runwayml.com ↗](https://docs.dev.runwayml.com/guides/pricing)
+api (Runway) · $0.30/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/pricing)
 
-[price source](https://docs.dev.runwayml.com/guides/pricing) · USD per second of output video, 720p, on the Runway developer API. Product: Runway API video generation. API model: seedance2\_5 (Seedance 2.5). Settings: resolution=720p, no input/reference video. Price basis: 30 credits per output second × $0.01 per credit. Input and reference video add 15 credits/s; 80-credit minimum per generation; 480p 20 credits/s, 1080p 68 credits/s. BytePlus bills Seedance per token and prints no exact per-second rate; fal lists roughly $0.4730/s at 720p. Sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-09-25.
+<sub>[price source](https://docs.dev.runwayml.com/guides/pricing): USD per second of output video, 720p, on the Runway developer API. Product: Runway API video generation. API model: seedance2\_5 (Seedance 2.5). Settings: resolution=720p, no input/reference video. Price basis: 30 credits per output second × $0.01 per credit. Input and reference video add 15 credits/s; 80-credit minimum per generation; 480p 20 credits/s, 1080p 68 credits/s. BytePlus bills Seedance per token and prints no exact per-second rate; fal lists roughly $0.4730/s at 720p. Sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-09-25.</sub>
 
 no verified local download listed
 

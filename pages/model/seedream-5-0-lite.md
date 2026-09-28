@@ -6,9 +6,7 @@
 
 ByteDance Seed · closed weights
 
-**score 59.1** ±2.0
-
-#24 of 87 · from 4 benchmark results across 3 sources
+**score 59.1** ±2.0 · #24 of 87 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,22 +14,25 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1138.1 | 57.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 70% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1294.4 | 61.7 | ▇▇▇▇▇ 18% | 2026-09-22 |
-| <a name="visual-imagetime"></a><img src="../../icons/arxiv.org.png" width="14" alt="Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency"> Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) | [ImageTime (prompt-only, overall)](https://arxiv.org/html/2606.10620v1#S5.T5) | 71.6% | 69.2 | ▇▇▇ 9% | 2026-06-09 |
-| <a name="visual-tecci"></a><img src="../../icons/arxiv.org.png" width="14" alt="TECCI: Tricky Edits of Collected and Curated Images"> TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt)) | [TECCI human overall success rate (IRCS+GGIS)](https://arxiv.org/html/2606.01213v1#S4.T2) | 16.7% | 69.3 | ▇ 1% | 2026-05-31 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 59.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1138.1    57.1   2026-09-24   70% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1294.4    61.7   2026-09-22   18% ▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   71.6%    69.2   2026-06-09    9% ▇
+<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>   16.7%    69.3   2026-05-31    1% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 59.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
 
 ## How to run it
 
-api (BytePlus ModelArk) · $0.035/image · [docs.byteplus.com ↗](https://docs.byteplus.com/en/docs/ModelArk/1544106)
+api (BytePlus ModelArk) · $0.035/image · [docs.byteplus.com](https://docs.byteplus.com/en/docs/ModelArk/1544106)
 
-[price source](https://docs.byteplus.com/en/docs/ModelArk/1544106) · USD per output image on BytePlus ModelArk; input images free; images not output (e.g. content moderation) are not billed; sequential generation billed per generated image. Product: BytePlus ModelArk image generation. API model: seedream-5-0-lite-260128. Settings: n=1. Price basis: published list rate. Currency: USD. BytePlus official pricing page, observed 2026-09-26.
+<sub>[price source](https://docs.byteplus.com/en/docs/ModelArk/1544106): USD per output image on BytePlus ModelArk; input images free; images not output (e.g. content moderation) are not billed; sequential generation billed per generated image. Product: BytePlus ModelArk image generation. API model: seedream-5-0-lite-260128. Settings: n=1. Price basis: published list rate. Currency: USD. BytePlus official pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

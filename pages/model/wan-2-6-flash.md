@@ -6,27 +6,28 @@
 
 Alibaba · closed weights
 
-**score 48.8** ±7.5
-
-#29 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.8** ±7.5 · #29 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-vwg-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench)"> From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) | [VWG-Bench think-with-video reasoning (overall)](https://arxiv.org/html/2609.11242v1#S4.T2) | 56.0% | 48.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 77% | 2026-09-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇ 23% |  |
-|  | **weighted average** |  | **= 48.8** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  56.0%    48.5   2026-09-10   77% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                23% ▇▇▇
+                        weighted average                       = 48.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.025/sec · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.025/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per second of output video, 720P silent video (audio=false), International deployment (Singapore). Product: Model Studio Wan image-to-video (first frame). API model: wan2.6-i2v-flash (Model Studio's only Wan 2.6 Flash video model). Settings: resolution=720P, audio=false. Price basis: published list price; only output is billed. With audio (audio=true) 720P $0.05/s; 1080P $0.0375/s silent, $0.075/s with audio. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-26.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 720P silent video (audio=false), International deployment (Singapore). Product: Model Studio Wan image-to-video (first frame). API model: wan2.6-i2v-flash (Model Studio's only Wan 2.6 Flash video model). Settings: resolution=720P, audio=false. Price basis: published list price; only output is billed. With audio (audio=true) 720P $0.05/s; 1080P $0.0375/s silent, $0.075/s with audio. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

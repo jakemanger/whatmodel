@@ -6,56 +6,63 @@
 
 Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
-**score 36.2** ±0.9
-
-#170 of 205 · from 22 benchmark results across 4 sources
+**score 36.2** ±0.9 · #170 of 205 · from 22 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="gemma4-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Gemma Team — Gemma 4 Technical Report"> Gemma Team — Gemma 4 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 43.4% | 33.9 | ▇▇▇ 9% | 2026-07-02 |
-|  | [AIME 2026](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 37.5% | 37.9 | ▇▇ 8% | 2026-07-02 |
-|  | [Big Bench Extra Hard micro avg](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 21.9% | 35.7 | ▇▇ 7% | 2026-07-02 |
-|  | [MATH-Vision](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 52.4% | 37.2 | ▇▇ 6% | 2026-07-02 |
-|  | [IFBench](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 38.0% | 37.1 | ▇▇ 6% | 2026-07-02 |
-|  | [LiveCodeBench v6 (Feb–May 2025)](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 44.0% | 38.7 | ▇▇ 6% | 2026-07-02 |
-|  | [MRCR v2 8-needle, 128k](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 19.1% | 37.8 | ▇▇ 5% | 2026-07-02 |
-|  | [Tau2 – airline](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 31.0% | 32.0 | ▇▇ 5% | 2026-07-02 |
-|  | [Terminal Bench Hard](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 3.0% | 32.5 | ▇▇ 5% | 2026-07-02 |
-|  | [MedXPertQA MM](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 23.5% | 36.6 | ▇ 5% | 2026-07-02 |
-|  | [InfographicVQA](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 63.9% | 34.5 | ▇ 5% | 2026-07-02 |
-|  | [MMMU Pro](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 44.2% | 35.1 | ▇ 4% | 2026-07-02 |
-|  | [IFEval](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 94.6% | 38.8 | ▇ 4% | 2026-07-02 |
-|  | [Tau2 – telecom](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 19.7% | 42.6 | ▇ 3% | 2026-07-02 |
-|  | [MMMLU](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 67.4% | 35.2 | ▇ 3% | 2026-07-02 |
-|  | [Tau2 – retail](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 34.6% | 38.7 | ▇ 3% | 2026-07-02 |
-|  | [SciCode](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 21.0% | 37.6 | ▇ 3% | 2026-07-02 |
-|  | [MMLU-Pro](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 60.0% | 34.1 | ▇ 3% | 2026-07-02 |
-|  | [OmniDocBench 1.5 ↓](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 29.0% | 38.7 | ▇ 2% | 2026-07-02 |
-| <a name="card2-google-gemma-4-31b-it"></a><img src="../../icons/huggingface.co.png" width="14" alt="google/gemma-4-31B-it model card"> google/gemma-4-31B-it model card | [τ²-bench aggregate](https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md) lab-reported | 24.5% | 35.9 | ▇▇ 7% | 2026-07-20 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 50.5% | 24.6 | ▇ 1% | 2026-09-19 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 32.7% | 35.1 | ▇ 1% | 2026-04-08 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 36.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              43.4%    33.9   2026-07-02    9% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 37.5%    37.9   2026-07-02    8% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  21.9%    35.7   2026-07-02    7% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               52.4%    37.2   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                   38.0%    37.1   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>  44.0%    38.7   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>    19.1%    37.8   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            31.0%    32.0   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>        3.0%    32.5   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>             23.5%    36.6   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            63.9%    34.5   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  44.2%    35.1   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    94.6%    38.8   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>            19.7%    42.6   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     67.4%    35.2   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             34.6%    38.7   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   21.0%    37.6   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  60.0%    34.1   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        29.0%    38.7   2026-07-02    2% ▇
+<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        24.5%    35.9   2026-07-20    7% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.5%    24.6   2026-09-19    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  32.7%    35.1   2026-04-08    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 36.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
-api (Amazon Bedrock) · $0.050/M blended · $0.04 in / $0.08 out per 1M tokens · [docs.aws.amazon.com ↗](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-e2b.html)
+api (Amazon Bedrock) · $0.050/M blended · $0.04 in / $0.08 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-e2b.html)
 
-[price source](https://aws.amazon.com/bedrock/pricing) · USD per 1M tokens, Amazon Bedrock on-demand Gemma 4 E2B, US East (N. Virginia)/Ohio and US West (Oregon); Frankfurt and other regions priced higher. Currency: USD. Amazon Bedrock official pricing page, observed 2026-09-25.
+<sub>[price source](https://aws.amazon.com/bedrock/pricing): USD per 1M tokens, Amazon Bedrock on-demand Gemma 4 E2B, US East (N. Virginia)/Ohio and US West (Oregon); Frankfurt and other regions priced higher. Currency: USD. Amazon Bedrock official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/google/gemma-4-E2B-it.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/google/gemma-4-E2B-it.toml) · model catalogue context ceiling (not a promise by a hosted API)
+<pre>
+download          size  score
+4-bit q4_k_m   ~3.56GB   36.2
+4-bit QAT qat  ~3.56GB   36.2
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~3.56GB | 36.2 | `ollama run gemma4:e2b` |
-| 4-bit QAT qat | ~3.56GB | 36.2 | `ollama run gemma4:e2b-it-qat` |
+```sh
+# 4-bit q4_k_m
+ollama run gemma4:e2b
+# 4-bit QAT qat
+ollama run gemma4:e2b-it-qat
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gemma-4-e2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

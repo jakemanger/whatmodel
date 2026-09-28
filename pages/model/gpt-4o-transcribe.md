@@ -6,40 +6,41 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 46.0** ±1.5
-
-#24 of 28 · from 14 benchmark results across 8 sources
+**score 46.0** ±1.5 · #24 of 28 · from 14 benchmark results across 8 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-afrispeech-multibench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite"> AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) | [AfriSpeech-MultiBench · Parliament (legal domain) WER](https://arxiv.org/html/2511.14255v1) | 64.4% | 41.9 | ▇▇▇▇ 14% | 2025-11-18 |
-|  | [AfriSpeech-MultiBench · 7-region African-accent mean WER](https://arxiv.org/html/2511.14255v1) | 38.9% | 46.7 | ▇▇▇ 10% | 2025-11-18 |
-| <a name="speech-stt-verli-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="verliapp/stt-benchmark · independent STT accuracy benchmark"> verliapp/stt-benchmark · independent STT accuracy benchmark | [verli STT benchmark · SPGISpeech 1,200-clip sample WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json) | 9.5% | 42.6 | ▇▇▇▇ 14% | 2026-07-19 |
-|  | [verli STT benchmark · Earnings-22 WER (2,741 utt.)](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json) | 18.6% | 48.6 | ▇▇ 7% | 2026-07-19 |
-|  | [verli STT benchmark · LibriSpeech test-clean WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json) | 1.5% | 59.4 | ▇ 2% | 2026-07-19 |
-| <a name="speech-gigaspeechbench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark"> GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GigaSpeechBench · 6 English accents WER mean](https://arxiv.org/html/2606.28884v1) | 39.9% | 44.4 | ▇▇ 6% | 2026-06-27 |
-|  | [GigaSpeechBench · 12 English domains entity B-WER mean](https://arxiv.org/html/2606.28884v1) | 24.8% | 47.7 | ▇▇ 6% | 2026-06-27 |
-|  | [GigaSpeechBench · 7 Arabic dialect WER mean](https://arxiv.org/html/2606.28884v1) | 50.5% | 53.5 | ▇ 4% | 2026-06-27 |
-| <a name="speech-stt-qwen-audio3-asr-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-ASR Technical Report (arXiv:2609.07549v2)"> Qwen-Audio-3.0-ASR Technical Report (arXiv:2609.07549v2) ([CC BY 4.0](../../licenses/speech-stt-qwen-audio3-asr-report.txt)) | [Qwen-Audio-3.0-ASR report · Chinese 4-set CER mean (own API runs)](https://arxiv.org/html/2609.07549v2) | 6.6% | 42.9 | ▇▇▇ 9% | 2026-09-09 |
-|  | [Qwen-Audio-3.0-ASR report · English 3-set WER mean (own API runs)](https://arxiv.org/html/2609.07549v2) | 3.7% | 48.8 | ▇▇ 6% | 2026-09-09 |
-| <a name="speech-stt-megaasr-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS)"> Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS) ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) | [Mega-ASR adverse-condition suite · mean WER (CHiME-4, VOiCES, NOIZEUS)](https://arxiv.org/html/2605.19833v1) | 17.3% | 46.8 | ▇▇▇ 9% | 2026-05-19 |
-| <a name="speech-stt-bangla-riverborn-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Bangla Speech-to-Text Benchmark v1.0 (Riverborn)"> Bangla Speech-to-Text Benchmark v1.0 (Riverborn) | [Bangla STT benchmark · BanSpeech 1,001-clip batch CER](https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv) | 28.7% | 46.9 | ▇▇ 6% | 2026-09-24 |
-| <a name="speech-stt-perle-cs-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Benchmarking Commercial ASR Systems on Code-Switching Speech (arXiv:2605.19069v3)"> Benchmarking Commercial ASR Systems on Code-Switching Speech (arXiv:2605.19069v3) ([CC BY 4.0](../../licenses/speech-stt-perle-cs-report.txt)) | [Perle code-switching benchmark · 4-pair mean WER](https://arxiv.org/pdf/2605.19069v3) | 38.6% | 48.7 | ▇ 4% | 2026-05-22 |
-| <a name="speech-stt-koedesk-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="koedesk STT Bench v1 (Track A, FLEURS first-200)"> koedesk STT Bench v1 (Track A, FLEURS first-200) ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) | [koedesk FLEURS first-200 · 9-language headline error mean](https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json) | 4.0% | 59.2 | ▇ 0% | 2026-07-05 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 46.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  64.4%    41.9   2025-11-18   14% ▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  38.9%    46.7   2025-11-18   10% ▇
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   9.5%    42.6   2026-07-19   14% ▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  18.6%    48.6   2026-07-19    7% ▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.5%    59.4   2026-07-19    2% ▇
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  39.9%    44.4   2026-06-27    6% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  24.8%    47.7   2026-06-27    6% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  50.5%    53.5   2026-06-27    4% ▇
+<a name="speech-stt-qwen-audio3-asr-report"></a>Qwen-Audio-3.0-ASR Te…  <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · C…</a>   6.6%    42.9   2026-09-09    9% ▇
+                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   3.7%    48.8   2026-09-09    6% ▇
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  17.3%    46.8   2026-05-19    9% ▇
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>  28.7%    46.9   2026-09-24    6% ▇
+<a name="speech-stt-perle-cs-report"></a>Benchmarking Commerci…  <a href="https://arxiv.org/pdf/2605.19069v3">Perle code-switching benchmar…</a>  38.6%    48.7   2026-05-22    4% ▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1    <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   4.0%    59.2   2026-07-05    0% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 46.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt)) · GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Audio-3.0-ASR Technical Report ([CC BY 4.0](../../licenses/speech-stt-qwen-audio3-asr-report.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt)) · Benchmarking Commercial ASR Systems on Code-Switching Speech ([CC BY 4.0](../../licenses/speech-stt-perle-cs-report.txt)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $0.0060/audio min · [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing)
+api (OpenAI) · $0.0060/audio min · [developers.openai.com](https://developers.openai.com/api/docs/pricing)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · Provider-published estimated cost per audio minute; underlying billing uses audio/text tokens. Exact endpoint gpt-4o-transcribe. Product: Audio transcription. API model: gpt-4o-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: provider-published estimate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): Provider-published estimated cost per audio minute; underlying billing uses audio/text tokens. Exact endpoint gpt-4o-transcribe. Product: Audio transcription. API model: gpt-4o-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: provider-published estimate. Currency: USD.</sub>
 
 no verified local download listed
 

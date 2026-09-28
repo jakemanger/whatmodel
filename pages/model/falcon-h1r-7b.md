@@ -6,22 +6,25 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| AIME 2024 | 88.1% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| AIME 2025 | 83.1% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| HMMT 2025 (edition unspecified) | 64.9% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| MATH-500 | 97.4% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| LiveCodeBench v6 (window unspecified) | 68.6% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| GPQA Diamond | 61.3% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| MMLU-Pro | 72.1% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| Humanity's Last Exam | 11.1% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| IFBench (aggregation unspecified) | 53.4% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · Own Falcon-H1R-7B row, regular sampling (not DeepConf test-time scaling). Table 3: AIME/HMMT 16 responses and 65536 tokens; GPQA 5/32768; LCB v6 3/65536; MMLU-Pro 3/32768; HLE 1/65536. No AA-starred comparison cells imported. Review date is not the evaluation-run date. |
-| SciCode main problems | 3.9% | [Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling](https://arxiv.org/html/2601.02346v1) · lab-reported · SciCode main-problem score only (3.9); source also lists 28.3 subproblems, deliberately not imported. Table 3: one response, 65536 max tokens. Review date is not the evaluation-run date. |
+<pre>
+test                                result  reported by  source
+AIME 2024                            88.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+AIME 2025                            83.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+HMMT 2025 (edition unspecified)      64.9%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+MATH-500                             97.4%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+LiveCodeBench v6 (window unspecif…   68.6%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+GPQA Diamond                         61.3%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+MMLU-Pro                             72.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+Humanity's Last Exam                 11.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+IFBench (aggregation unspecified)    53.4%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+SciCode main problems                 3.9%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+</pre>
+
+<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/tiiuae/Falcon-H1R-7B/blob/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json) · TII official configuration: max\_position\_embeddings 262144; the official card's vLLM notes state the default --max-model-len is 262144. Configured maximum, not a benchmarked long-context claim. Observed 2026-09-25.
+<sub>[context source](https://huggingface.co/tiiuae/Falcon-H1R-7B/blob/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json): TII official configuration: max\_position\_embeddings 262144; the official card's vLLM notes state the default --max-model-len is 262144. Configured maximum, not a benchmarked long-context claim. Observed 2026-09-25.</sub>
 
 ```sh
 llama-server -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M

@@ -6,30 +6,31 @@
 
 Kuaishou (Kling AI) · released 2025-12 · proprietary
 
-**score 51.2** ±2.1
-
-#24 of 54 · from 4 benchmark results across 3 sources
+**score 51.2** ±2.1 · #24 of 54 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1216.2 | 46.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1294.0 | 52.2 | ▇▇▇▇▇▇▇▇ 27% | 2026-09-22 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1034.0 | 60.8 | ▇▇▇▇▇ 18% | 2026-09-25 |
-| <a name="visual-worldjen"></a><img src="../../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models"> WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) | [WorldJen human preference (Bradley-Terry)](https://arxiv.org/html/2605.03475v2#S5.T1) | 1572.0 | 52.4 | ▇▇ 8% | 2026-05-06 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 51.2** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1216.2    46.7   2026-09-22   46% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1294.0    52.2   2026-09-22   27% ▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1034.0    60.8   2026-09-25   18% ▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1572.0    52.4   2026-05-06    8% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 51.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.070/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video)
+api (fal.ai) · $0.070/sec · [fal.ai](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video) · USD per second of generated video on fal.ai, audio off. Product: fal Kling 2.6 Pro text-to-video endpoint. API model: fal-ai/kling-video/v2.6/pro/text-to-video. Settings: generate\_audio=false (the endpoint default is true, which costs $0.14/s). Price basis: per-second rate printed by fal. Not the Kling direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video): USD per second of generated video on fal.ai, audio off. Product: fal Kling 2.6 Pro text-to-video endpoint. API model: fal-ai/kling-video/v2.6/pro/text-to-video. Settings: generate\_audio=false (the endpoint default is true, which costs $0.14/s). Price basis: per-second rate printed by fal. Not the Kling direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

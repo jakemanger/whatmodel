@@ -6,9 +6,7 @@
 
 PixArt (Huawei Noah's Ark Lab et al.)
 
-**score 33.1** ±4.8
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.1** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +14,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 47.0% | 31.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 90% | 2026-06-02 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 33.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  47.0%    31.3   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 33.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 ## How to run it
 

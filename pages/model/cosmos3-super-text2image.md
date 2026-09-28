@@ -6,9 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 58.6** ±2.4
-
-#26 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.6** ±2.4 · #26 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1151.8 | 58.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 58.6** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1151.8    58.8   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 58.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~154.1GB | 58.6 | `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with torchvision --with av --with imageio --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super-Text2Image', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=3.0); p(prompt='a cat holding a sign', negative_prompt='', num_frames=1, height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).video[0].save('out.png')"` |
+<pre>
+version                needs  score
+bf16 · nvidia only  ~154.1GB   58.6
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with torchvision --with av --with imageio --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Super-Text2Image', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=3.0); p(prompt='a cat holding a sign', negative_prompt='', num_frames=1, height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).video[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/cosmos3-super-text2image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,9 +6,7 @@
 
 HiDream
 
-**score 39.0** ±2.6
-
-#75 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.0** ±2.6 · #75 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 64.2% | 38.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 51% | 2026-07-01 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 21.2% | 39.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-05-14 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 39.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       64.2%    38.1   2026-07-01   51% ▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  21.2%    39.3   2026-05-14   46% ▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 39.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.050/image · [fal.ai ↗](https://fal.ai/models/fal-ai/hidream-i1-full)
+api (fal.ai) · $0.050/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-i1-full)
 
-[price source](https://fal.ai/models/fal-ai/hidream-i1-full) · USD for one 1-megapixel output: fal bills this endpoint $0.05 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-i1-full (HiDream I1 Full, 17B; the dev and fast endpoints are separate). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/hidream-i1-full): USD for one 1-megapixel output: fal bills this endpoint $0.05 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-i1-full (HiDream I1 Full, 17B; the dev and fast endpoints are separate). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

@@ -6,21 +6,22 @@
 
 MyShell
 
-**score 9.8** ±5.5
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 9.8** ±5.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-ttsds-v1-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="TTSDS v1 published results"> TTSDS v1 published results | [TTSDS v1 · default four-factor score](https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv) | 86.2% | 4.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 88% | 2025-04-25 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 12% |  |
-|  | **weighted average** |  | **= 9.8** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  86.2%     4.3   2025-04-25   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                12% ▇
+                        weighted average                        = 9.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
 ## How to run it
 

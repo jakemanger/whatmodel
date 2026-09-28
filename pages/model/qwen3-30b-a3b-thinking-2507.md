@@ -6,105 +6,118 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 45.9** ±0.8
-
-#130 of 205 · from 43 benchmark results across 6 sources
+**score 45.9** ±0.8 · #130 of 205 · from 43 benchmark results across 6 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-qwen--qwen3-next-80b-a3b-thinking"></a><img src="../../icons/huggingface.co.png" width="14" alt="Qwen/Qwen3-Next-80B-A3B-Thinking model card"> Qwen/Qwen3-Next-80B-A3B-Thinking model card | [τ²-bench Retail](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 58.8% | 45.5 | ▇ 3% | 2026-09-25 |
-|  | [Arena-Hard v2 aggregate](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 56.0% | 44.2 | ▇ 3% | 2026-09-25 |
-|  | [GPQA (subset unspecified)](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 73.4% | 46.1 | ▇ 3% | 2026-09-25 |
-|  | [HMMT 2025 (edition unspecified)](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 71.4% | 47.5 | ▇ 3% | 2026-09-25 |
-|  | [τ²-bench Telecom](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 26.3% | 41.8 | ▇ 3% | 2026-09-25 |
-|  | [WritingBench](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 85.0% | 48.1 | ▇ 3% | 2026-09-25 |
-|  | [PolyMATH](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 52.6% | 46.6 | ▇ 3% | 2026-09-25 |
-|  | [SuperGPQA](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 56.8% | 46.0 | ▇ 2% | 2026-09-25 |
-|  | [INCLUDE](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 74.4% | 45.2 | ▇ 2% | 2026-09-25 |
-|  | [OJBench](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 25.1% | 45.4 | ▇ 2% | 2026-09-25 |
-|  | [MMLU-Redux](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 91.4% | 45.8 | ▇ 2% | 2026-09-25 |
-|  | [Multi-IF (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 76.4% | 47.0 | ▇ 2% | 2026-09-25 |
-|  | [MMLU-ProX](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 76.4% | 46.3 | ▇ 2% | 2026-09-25 |
-|  | [τ-bench Retail](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 67.8% | 49.6 | ▇ 2% | 2026-09-25 |
-|  | [τ²-bench Airline](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 58.0% | 49.1 | ▇ 2% | 2026-09-25 |
-|  | [τ-bench Airline](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 48.0% | 50.7 | ▇ 2% | 2026-09-25 |
-|  | [LiveBench 2024-11-25](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 76.8% | 47.6 | ▇ 2% | 2026-09-25 |
-|  | [IFEval (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 88.9% | 49.4 | ▇ 2% | 2026-09-25 |
-|  | [BFCL v3](https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md) lab-reported | 72.4% | 48.2 | ▇ 2% | 2026-09-25 |
-| <a name="card-qwen--qwen3.5-9b"></a><img src="../../icons/huggingface.co.png" width="14" alt="Qwen/Qwen3.5-9B model card"> Qwen/Qwen3.5-9B model card | [Global PIQA](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 80.2% | 46.1 | ▇ 3% | 2026-03-02 |
-|  | [MMLU-ProX](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 69.1% | 44.8 | ▇ 3% | 2026-03-02 |
-|  | [MMMLU](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 78.4% | 46.6 | ▇ 3% | 2026-03-02 |
-|  | [MultiChallenge](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 46.5% | 45.1 | ▇ 3% | 2026-03-02 |
-|  | [HMMT November 2025](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 73.8% | 43.3 | ▇ 3% | 2026-03-02 |
-|  | [MAXIFE](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 77.4% | 45.3 | ▇ 3% | 2026-03-02 |
-|  | [C-Eval](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 87.4% | 47.0 | ▇ 3% | 2026-03-02 |
-|  | [IFBench (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 51.5% | 42.8 | ▇ 3% | 2026-03-02 |
-|  | [NOVA-63](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 52.5% | 46.5 | ▇ 3% | 2026-03-02 |
-|  | [LongBench v2](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 44.8% | 44.6 | ▇ 3% | 2026-03-02 |
-|  | [VitaBench](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 14.1% | 39.1 | ▇ 2% | 2026-03-02 |
-|  | [BFCL V4 (December 2025 archive)](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 42.4% | 41.8 | ▇ 2% | 2026-03-02 |
-|  | [HMMT February 2025](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 63.1% | 40.1 | ▇ 2% | 2026-03-02 |
-|  | [WMT24++](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 69.3% | 49.3 | ▇ 2% | 2026-03-02 |
-|  | [τ²-bench aggregate](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 41.9% | 33.0 | ▇ 1% | 2026-03-02 |
-|  | [DeepPlanning](https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md) lab-reported | 4.9% | 44.8 | ▇ 0% | 2026-03-02 |
-| <a name="matharena-arxiv-outputs-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets"> MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) | [MathArena ArXivMath January 2026 (23 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet) | 39.1% | 46.0 | ▇ 4% | 2026-09-11 |
-|  | [MathArena ArXivMath February 2026 (32 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet) | 22.7% | 46.8 | ▇ 4% | 2026-09-11 |
-|  | [MathArena ArXivMath December 2025 (17 problems)](https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet) | 27.9% | 43.4 | ▇ 3% | 2026-09-11 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 70.1% | 50.2 | ▇ 2% | 2026-08-30 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 70.3% | 50.6 | ▇ 2% | 2026-08-30 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 8.0% | 46.4 | ▇ 1% | 2026-08-30 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 55.9% | 47.8 | ▇ 2% | 2026-05-02 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 41.8% | 48.8 | ▇ 1% | 2025-09-04 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 45.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-qwen--qwen3-next-80b-a3b-thinking"></a>Qwen/Qwen3-Next-80B-A…  <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ²-bench Retail (lab)</a>           58.8%    45.5   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">Arena-Hard v2 aggregate (lab)</a>   56.0%    44.2   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">GPQA (subset unspecified) (la…</a>  73.4%    46.1   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">HMMT 2025 (edition unspecifie…</a>  71.4%    47.5   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ²-bench Telecom (lab)</a>          26.3%    41.8   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">WritingBench (lab)</a>              85.0%    48.1   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">PolyMATH (lab)</a>                  52.6%    46.6   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">SuperGPQA (lab)</a>                 56.8%    46.0   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">INCLUDE (lab)</a>                   74.4%    45.2   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">OJBench (lab)</a>                   25.1%    45.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">MMLU-Redux (lab)</a>                91.4%    45.8   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">Multi-IF (aggregation unspeci…</a>  76.4%    47.0   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">MMLU-ProX (lab)</a>                 76.4%    46.3   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ-bench Retail (lab)</a>            67.8%    49.6   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ²-bench Airline (lab)</a>          58.0%    49.1   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">τ-bench Airline (lab)</a>           48.0%    50.7   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">LiveBench 2024-11-25 (lab)</a>      76.8%    47.6   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">IFEval (aggregation unspecifi…</a>  88.9%    49.4   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/e502dd4100cc68c0de57643fd4317ec93a128670/README.md">BFCL v3 (lab)</a>                   72.4%    48.2   2026-09-25    2% ▇
+<a name="card-qwen--qwen3.5-9b"></a>Qwen/Qwen3.5-9B model…  <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">Global PIQA (lab)</a>               80.2%    46.1   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">MMLU-ProX (lab)</a>                 69.1%    44.8   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">MMMLU (lab)</a>                     78.4%    46.6   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">MultiChallenge (lab)</a>            46.5%    45.1   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">HMMT November 2025 (lab)</a>        73.8%    43.3   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">MAXIFE (lab)</a>                    77.4%    45.3   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">C-Eval (lab)</a>                    87.4%    47.0   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">IFBench (aggregation unspecif…</a>  51.5%    42.8   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">NOVA-63 (lab)</a>                   52.5%    46.5   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">LongBench v2 (lab)</a>              44.8%    44.6   2026-03-02    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">VitaBench (lab)</a>                 14.1%    39.1   2026-03-02    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">BFCL V4 (December 2025 archiv…</a>  42.4%    41.8   2026-03-02    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">HMMT February 2025 (lab)</a>        63.1%    40.1   2026-03-02    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">WMT24++ (lab)</a>                   69.3%    49.3   2026-03-02    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">τ²-bench aggregate (lab)</a>        41.9%    33.0   2026-03-02    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/README.md">DeepPlanning (lab)</a>               4.9%    44.8   2026-03-02    0% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>  39.1%    46.0   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  22.7%    46.8   2026-09-11    4% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>  27.9%    43.4   2026-09-11    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    70.1%    50.2   2026-08-30    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        70.3%    50.6   2026-08-30    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            8.0%    46.4   2026-08-30    1% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  55.9%    47.8   2026-05-02    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  41.8%    48.8   2025-09-04    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 45.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (4)
+<sub>Licences: Qwen/Qwen3-Next-80B-A3B-Thinking model card ([apache-2.0](../../licenses/Qwen--Qwen3-Next-80B-A3B-Thinking.txt)) · Qwen/Qwen3.5-9B model card ([apache-2.0](../../licenses/Qwen--Qwen3.5-9B.txt)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3-30B-A3B-Thinking-2507 model card | [MMLU-Pro](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md) | 80.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-30B-A3B-Thinking-2507 model card | [AIME 2025](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md) | 85.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-30B-A3B-Thinking-2507 model card | [LiveCodeBench v6 (Feb–May 2025)](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md) | 66.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-30B-A3B-Thinking-2507 model card | [Creative Writing v3](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md) | 84.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (4)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3-30B-A3B-Th…  <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md">MMLU-Pro</a>                        80.9%  too few models have it yet
+Qwen/Qwen3-30B-A3B-Th…  <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md">AIME 2025</a>                       85.0%  too few models have it yet
+Qwen/Qwen3-30B-A3B-Th…  <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md">LiveCodeBench v6 (Feb–May 202…</a>  66.0%  too few models have it yet
+Qwen/Qwen3-30B-A3B-Th…  <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md">Creative Writing v3</a>             84.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.75/M blended · $0.2 in / $2.4 out per 1M tokens · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.75/M blended · $0.2 in / $2.4 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), qwen3-30b-a3b-thinking-2507 (thinking mode only; output = chain of thought + answer). Chinese-mainland/Global deployments priced differently; free quota, batch and context-cache discounts excluded. Currency: USD. Alibaba Cloud official Model Studio pricing page, observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Alibaba Cloud Model Studio, Singapore (International deployment scope), qwen3-30b-a3b-thinking-2507 (thinking mode only; output = chain of thought + answer). Chinese-mainland/Global deployments priced differently; free quota, batch and context-cache discounts excluded. Currency: USD. Alibaba Cloud official Model Studio pricing page, observed 2026-09-25. · [context source](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md): Native context for this exact July 2025 model version.</sub>
 
-[context specification source](https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/144afc2f379b542fdd4e85a1fcd5e1f79112d95d/README.md) · Native context for this exact July 2025 model version.
+<pre>
+download         size  score
+4-bit q4_k_m  ~18.8GB   45.9
+8-bit q8_0    ~37.1GB   45.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~18.8GB | 45.9 | `ollama run qwen3:30b` |
-| 8-bit q8\_0 | ~37.1GB | 45.9 | `ollama run qwen3:30b-a3b-thinking-2507-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run qwen3:30b
+# 8-bit q8_0
+ollama run qwen3:30b-a3b-thinking-2507-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | MATH-500 — published row 'Math 500'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.907 → 0.931 | 102.6% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L211) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | IFEval — published row 'IfEval (0-shot)'; lm-evaluation-harness task ifeval via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.901 → 0.903 | 100.2% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L208) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | GPQA Diamond — published row 'GPQA diamond'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.715 → 0.716 | 100.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L210) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | MMLU-Pro — published row 'MMLU-Pro (0-shot)'; lm-evaluation-harness task mmlu\_pro\_chat via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.807 → 0.791 | 98.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L207) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | AIME 2025 — published row 'AIME 2025'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.867 → 0.833 | 96.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L209) |
-| INT4 W4A16 (weight-only INT4, symmetric, group 128; GPTQ, llm-compressor) | GSM8K-Platinum — published row 'GSM8k Platinum (0-shot)'; lm-evaluation-harness task gsm8k\_platinum\_cot\_llama via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.856 → 0.727 | 84.9% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L206) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | GPQA Diamond — published row 'GPQA diamond'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.715 → 0.724 | 101.3% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L220) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | IFEval — published row 'IfEval (0-shot)'; lm-evaluation-harness task ifeval via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.901 → 0.901 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L218) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | MMLU-Pro — published row 'MMLU-Pro (0-shot)'; lm-evaluation-harness task mmlu\_pro\_chat via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.807 → 0.807 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L217) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | MATH-500 — published row 'Math 500'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.907 → 0.906 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L221) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | GSM8K-Platinum — published row 'GSM8k Platinum (0-shot)'; lm-evaluation-harness task gsm8k\_platinum\_cot\_llama via vLLM OpenAI-compatible server (backend local-chat-completions, chat template, --num\_fewshot 0, gen\_kwargs do\_sample=True,temperature=0.6,top\_p=0.95,top\_k=20,min\_p=0.0,max\_gen\_toks=64000) | 0.856 → 0.838 | 98.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L216) |
-| INT8 W8A8 (weights INT8 per-channel, activations INT8 per-token dynamic; SmoothQuant+GPTQ, llm-compressor) | AIME 2025 — published row 'AIME 2025'; lighteval (litellm endpoint to vLLM server), temperature 0.6, top\_p 0.95, top\_k 20, max\_new\_tokens 32000 | 0.867 → 0.842 | 97.1% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L219) |
+<pre>
+precision                       test                                full → quantized    kept
+INT4 W4A16 (weight-only INT4,…  MATH-500 — published row 'Math 50…     0.907 → 0.931  <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L211">102.6%</a>
+INT4 W4A16 (weight-only INT4,…  IFEval — published row 'IfEval (0…     0.901 → 0.903  <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L208">100.2%</a>
+INT4 W4A16 (weight-only INT4,…  GPQA Diamond — published row 'GPQ…     0.715 → 0.716  <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L210">100.1%</a>
+INT4 W4A16 (weight-only INT4,…  MMLU-Pro — published row 'MMLU-Pr…     0.807 → 0.791   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L207">98.0%</a>
+INT4 W4A16 (weight-only INT4,…  AIME 2025 — published row 'AIME 2…     0.867 → 0.833   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L209">96.1%</a>
+INT4 W4A16 (weight-only INT4,…  GSM8K-Platinum — published row 'G…     0.856 → 0.727   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w4a16/blob/98ffbaed9192e305240ff9fb6647ac1ea0abb467/README.md#L206">84.9%</a>
+INT8 W8A8 (weights INT8 per-c…  GPQA Diamond — published row 'GPQ…     0.715 → 0.724  <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L220">101.3%</a>
+INT8 W8A8 (weights INT8 per-c…  IFEval — published row 'IfEval (0…     0.901 → 0.901  <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L218">100.0%</a>
+INT8 W8A8 (weights INT8 per-c…  MMLU-Pro — published row 'MMLU-Pr…     0.807 → 0.807   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L217">99.9%</a>
+INT8 W8A8 (weights INT8 per-c…  MATH-500 — published row 'Math 50…     0.907 → 0.906   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L221">99.9%</a>
+INT8 W8A8 (weights INT8 per-c…  GSM8K-Platinum — published row 'G…     0.856 → 0.838   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L216">98.0%</a>
+INT8 W8A8 (weights INT8 per-c…  AIME 2025 — published row 'AIME 2…     0.867 → 0.842   <a href="https://huggingface.co/RedHatAI/Qwen3-30B-A3B-Thinking-2507-quantized.w8a8/blob/fb485fe24f99380b6f480ac767f671cd5c740908/README.md#L219">97.1%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-30b-a3b-thinking-2507) · [JSON](https://whatmodel.sh/api?format=json&all=1)

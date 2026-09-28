@@ -6,32 +6,36 @@
 
 Zyphra · 8B params (0.9B active) · apache-2.0
 
-**score 49.0** ±2.2
-
-comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 49.0** ±2.2 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-zonos2-report-bysa"></a><img src="../../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results)"> ZONOS2 Technical Report (ZTTS1-Eval results) ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) | [ZTTS1-Eval in-the-wild · 10-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) lab-reported | 2.40 / 5 | 49.4 | ▇▇▇▇▇▇▇▇ 26% | 2026-06-25 |
-|  | [ZTTS1-Eval in-the-wild · 10-language mean WER](https://arxiv.org/html/2606.24320v2) lab-reported | 6.1% | 46.4 | ▇▇▇▇▇▇▇ 24% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER](https://arxiv.org/html/2606.24320v2) lab-reported | 9.3% | 45.1 | ▇▇▇▇▇▇ 21% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) lab-reported | 3.13 / 5 | 53.1 | ▇▇▇▇▇▇ 19% | 2026-06-25 |
-| <a name="speech-ztts1-eval-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra)"> ZTTS1-Eval results snapshot (Zyphra) | [ZTTS1-Eval · FLEURS-R English TTSDS2 prosody](https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md) lab-reported | 87.5% | 55.5 | ▇▇ 8% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 49.0** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    49.4   2026-06-25   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    46.4   2026-06-25   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    45.1   2026-06-25   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    53.1   2026-06-25   19% ▇▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    55.5   2026-06-22    8% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
+                        weighted average                          = 49.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| ZONOS2 Technical Report (ZTTS1-Eval results) | [Seed-TTS test-en · Whisper large-v3 WER](https://arxiv.org/html/2606.24320v2) | 2.1% | too few models have this result to calibrate it yet |
-| ZONOS2 Technical Report (ZTTS1-Eval results) | [Seed-TTS test-zh · Paraformer CER](https://arxiv.org/html/2606.24320v2) | 2.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">Seed-TTS test-en · Whisper la…</a>   2.1%  too few models have it yet
+ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">Seed-TTS test-zh · Paraformer…</a>   2.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

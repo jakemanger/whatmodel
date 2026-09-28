@@ -6,9 +6,7 @@
 
 Alibaba · closed weights
 
-**score 61.6** ±5.8
-
-#18 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.6** ±5.8 · #18 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-fepbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench)"> Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench) ([CC0-1.0](../../licenses/visual-fepbench.txt)) | [FEPBench instruction faithfulness](https://arxiv.org/html/2606.05949v2#S4.T2) | 51.5% | 62.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 48% | 2026-06-05 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) lab-reported | 57.8% | 64.8 | ▇▇▇▇▇▇▇▇▇▇▇ 38% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 14% |  |
-|  | **weighted average** |  | **= 61.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  51.5%    62.5   2026-06-05   48% ▇▇▇▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  57.8%    64.8   2026-05-27   38% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                14% ▇▇
+                        weighted average                       = 61.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.075/image · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.075/image · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per output image, Singapore (international) deployment; all listed qwen-image-2.0-pro snapshots (2026-03-03, 2026-04-22, 2026-06-22) have the same rate; Beijing lists $0.071676. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: qwen-image-2.0-pro. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per output image, Singapore (international) deployment; all listed qwen-image-2.0-pro snapshots (2026-03-03, 2026-04-22, 2026-06-22) have the same rate; Beijing lists $0.071676. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: qwen-image-2.0-pro. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

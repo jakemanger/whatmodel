@@ -6,9 +6,7 @@
 
 Black Forest Labs · closed weights
 
-**score 47.2** ±2.1
-
-#61 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.2** ±2.1 · #61 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,20 +14,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1058.7 | 47.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 78% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1176.3 | 46.2 | ▇▇▇▇▇▇ 20% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 47.2** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1058.7    47.4   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1176.3    46.2   2026-09-22   20% ▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 47.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Black Forest Labs) · $0.040/image · [docs.bfl.ai ↗](https://docs.bfl.ai/quick_start/pricing)
+api (Black Forest Labs) · $0.040/image · [docs.bfl.ai](https://docs.bfl.ai/quick_start/pricing)
 
-[price source](https://bfl.ai/pricing) · USD per generated image, flat: BFL lists FLUX.1 Kontext \[pro\] at $0.04 per image (4 credits at $0.01), for text-to-image and image editing alike. Product: BFL API. API model: flux-kontext-pro. Settings: one image. Price basis: published per-image list rate. BFL's docs list FLUX.1 Kontext under "Legacy Models" / "FLUX.1 Models (Previous Generation)"; it is still sold and no end date is published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26.
+<sub>[price source](https://bfl.ai/pricing): USD per generated image, flat: BFL lists FLUX.1 Kontext \[pro\] at $0.04 per image (4 credits at $0.01), for text-to-image and image editing alike. Product: BFL API. API model: flux-kontext-pro. Settings: one image. Price basis: published per-image list rate. BFL's docs list FLUX.1 Kontext under "Legacy Models" / "FLUX.1 Models (Previous Generation)"; it is still sold and no end date is published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

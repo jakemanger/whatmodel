@@ -6,17 +6,20 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| Seed-TTS test-en · Whisper large-v3 WER | 1.1% | [Fish Audio S2 Technical Report](https://arxiv.org/html/2603.08823v2) · lab-reported · Table 1, test-en; Fish Audio S1. Self-reported Fish Audio comparison. |
-| Seed-TTS test-zh · Paraformer CER | 0.5% | [Fish Audio S2 Technical Report](https://arxiv.org/html/2603.08823v2) · lab-reported · Table 1, test-zh; Fish Audio S1. Chinese character metric under source WER heading. |
-| Long-TTS-Eval · Fish truncated English WER | 6.3% | [Fish Audio S2 Technical Report](https://arxiv.org/html/2603.08823v2) · lab-reported · Table 4, English WER; Fish Audio S1. See section 6.1.3 for modified length distribution. |
-| Long-TTS-Eval · Fish truncated Chinese CER | 6.4% | [Fish Audio S2 Technical Report](https://arxiv.org/html/2603.08823v2) · lab-reported · Table 4, Chinese CER; Fish Audio S1. See section 6.1.3 for modified length distribution. |
+<pre>
+test                                result  reported by  source
+Seed-TTS test-en · Whisper large-…    1.1%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
+Seed-TTS test-zh · Paraformer CER     0.5%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
+Long-TTS-Eval · Fish truncated En…    6.3%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
+Long-TTS-Eval · Fish truncated Ch…    6.4%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
+</pre>
+
+<sub>Licences: Fish Audio S2 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Fish Audio) · $15.00/M chars · [docs.fish.audio ↗](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
+api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
-[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits) · Fish Audio lists s1 at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s1. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.
+<sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): Fish Audio lists s1 at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s1. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.</sub>
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/openaudio-s1)

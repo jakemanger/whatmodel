@@ -6,9 +6,7 @@
 
 Krea · released 2026-06 · 12B params · krea-2-community-license
 
-**score 53.9** ±2.4
-
-#43 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.9** ±2.4 · #43 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1112.9 | 54.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 53.9** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1112.9    54.0   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 53.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Krea) · $0.015/image · [www.krea.ai ↗](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md)
+api (Krea) · $0.015/image · [krea.ai](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md)
 
-[price source](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md) · USD per generated image, Krea 2 Turbo text-to-image on the Krea API: fixed price $0.015 (style references $0.0175, moodboards $0.02). Product: Krea API. API model: Krea 2 Turbo (POST /generate/image/krea/krea-2/medium-turbo). Settings: resolution=1K (the only option), no references, one image. Price basis: published fixed list price. Identity: the open-weights card (krea/Krea-2-Turbo) describes Turbo as the post-trained, distilled release checkpoint with 'Open-weight release and Krea-hosted product integrations'; fal also serves the open weights (fal-ai/krea-2/turbo) at $0.008 per megapixel. Currency: USD. Krea official API documentation, observed 2026-09-25.
+<sub>[price source](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md): USD per generated image, Krea 2 Turbo text-to-image on the Krea API: fixed price $0.015 (style references $0.0175, moodboards $0.02). Product: Krea API. API model: Krea 2 Turbo (POST /generate/image/krea/krea-2/medium-turbo). Settings: resolution=1K (the only option), no references, one image. Price basis: published fixed list price. Identity: the open-weights card (krea/Krea-2-Turbo) describes Turbo as the post-trained, distilled release checkpoint with 'Open-weight release and Krea-hosted product integrations'; fal also serves the open weights (fal-ai/krea-2/turbo) at $0.008 per megapixel. Currency: USD. Krea official API documentation, observed 2026-09-25.</sub>
 
 no verified local download listed
 

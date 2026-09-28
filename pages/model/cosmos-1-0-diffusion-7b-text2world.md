@@ -6,21 +6,22 @@
 
 NVIDIA
 
-**score 33.0** ±4.4
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.0** ±4.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-videophy-readme"></a><img src="../../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards"> VideoPhy / VideoPhy-2 official repository leaderboards | [VideoPhy-2 (human, joint SA & PC)](https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-) | 24.1% | 31.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 92% | 2026-01-30 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 8% |  |
-|  | **weighted average** |  | **= 33.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    31.6   2026-01-30   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 8% ▇
+                        weighted average                       = 33.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt))</sub>
 
 ## How to run it
 

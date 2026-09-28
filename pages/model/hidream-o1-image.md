@@ -6,9 +6,7 @@
 
 HiDream · released 2026-05 · 8B params · mit
 
-**score 53.3** ±2.2
-
-#46 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 53.3** ±2.2 · #46 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,33 +14,47 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1115.8 | 54.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 79% | 2026-09-24 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 86.8% | 49.1 | ▇▇▇▇▇▇ 19% | 2026-08-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 53.3** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1115.8    54.4   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   86.8%    49.1   2026-08-25   19% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 53.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| HiDream-ai/HiDream-O1-Image repository README results | [GenEval](https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md) | 90.0% | too few models have this result to calibrate it yet |
-| HiDream-ai/HiDream-O1-Image repository README results | [DPG-Bench](https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md) | 89.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test       score  why
+HiDream-ai/HiDream-O1…  <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">GenEval</a>    90.0%  too few models have it yet
+HiDream-ai/HiDream-O1…  <a href="https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md">DPG-Bench</a>  89.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (fal.ai) · $0.010/image · [fal.ai ↗](https://fal.ai/models/fal-ai/hidream-o1-image)
+api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-o1-image)
 
-[price source](https://fal.ai/models/fal-ai/hidream-o1-image) · USD for one 1-megapixel output: fal bills this endpoint $0.01 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs up to ~2K cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-o1-image (full model: 50 denoising steps and guidance 5.0 by default; the separate /dev endpoint is not used). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/hidream-o1-image): USD for one 1-megapixel output: fal bills this endpoint $0.01 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs up to ~2K cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-o1-image (full model: 50 denoising steps and guidance 5.0 by default; the separate /dev endpoint is not used). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~19.7GB | 53.3 | `git clone https://github.com/HiDream-ai/HiDream-O1-Image && cd HiDream-O1-Image && uvx --from huggingface_hub hf download HiDream-ai/HiDream-O1-Image --local-dir ckpt && uv run --with-requirements requirements.txt python inference.py --model_path ckpt --prompt "a cat holding a sign" --output_image out.png` |
-| fp8 · nvidia only | ~5.3GB | 53.3 | `cd ComfyUI/custom_nodes && git clone https://github.com/Saganaki22/HiDream_O1-ComfyUI && pip install -r HiDream_O1-ComfyUI/requirements.txt && hf download drbaph/HiDream-O1-Image-FP8 --local-dir ../models/diffusion_models/HiDream-O1-Image-fp8  # then load the node's workflow in ComfyUI` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~19.7GB   53.3
+fp8 · nvidia only    ~5.3GB   53.3
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+git clone https://github.com/HiDream-ai/HiDream-O1-Image && cd HiDream-O1-Image && uvx --from huggingface_hub hf download HiDream-ai/HiDream-O1-Image --local-dir ckpt && uv run --with-requirements requirements.txt python inference.py --model_path ckpt --prompt "a cat holding a sign" --output_image out.png
+# fp8 · nvidia only
+cd ComfyUI/custom_nodes && git clone https://github.com/Saganaki22/HiDream_O1-ComfyUI && pip install -r HiDream_O1-ComfyUI/requirements.txt && hf download drbaph/HiDream-O1-Image-FP8 --local-dir ../models/diffusion_models/HiDream-O1-Image-fp8  # then load the node's workflow in ComfyUI
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/hidream-o1-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

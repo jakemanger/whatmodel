@@ -6,28 +6,35 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 56.9** ±5.4
-
-#13 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.9** ±5.4 · #13 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vibevoice-mit-figure"></a><img src="../../icons/huggingface.co.png" width="14" alt="Microsoft VibeVoice own subjective evaluation figure"> Microsoft VibeVoice own subjective evaluation figure | [VibeVoice podcast · preference MOS (MIT figure)](https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg) lab-reported | 3.43 / 5 | 57.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 88% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 12% |  |
-|  | **weighted average** |  | **= 56.9** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    57.9   2026-09-25   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                12% ▇
+                        weighted average                          = 56.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Microsoft VibeVoice own subjective evaluation figure ([MIT](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~6.98GB | 56.9 | `git clone https://github.com/vibevoice-community/VibeVoice && cd VibeVoice && pip install -e . && python demo/inference_from_file.py --model_path vibevoice/VibeVoice-1.5B --txt_path demo/text_examples/1p_abs.txt --speaker_names Alice` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~6.98GB   56.9
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+git clone https://github.com/vibevoice-community/VibeVoice && cd VibeVoice && pip install -e . && python demo/inference_from_file.py --model_path vibevoice/VibeVoice-1.5B --txt_path demo/text_examples/1p_abs.txt --speaker_names Alice
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/vibevoice-1-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

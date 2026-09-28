@@ -6,9 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 50.0** ±1.9
-
-#57 of 87 · from 4 benchmark results across 3 sources
+**score 50.0** ±1.9 · #57 of 87 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,28 +14,39 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1070.2 | 48.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 61% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1224.5 | 52.5 | ▇▇▇▇▇ 16% | 2026-09-22 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 87.1% | 49.5 | ▇▇▇▇▇ 15% | 2026-08-25 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 1039.0 | 55.9 | ▇▇ 6% | 2026-03-30 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 50.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1070.2    48.8   2026-09-24   61% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.5    52.5   2026-09-22   16% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.1%    49.5   2026-08-25   15% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1039.0    55.9   2026-03-30    6% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 50.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
 ## How to run it
 
-api (Cloudflare) · $0.015/image · [developers.cloudflare.com ↗](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
-[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx) · Cloudflare Workers AI; USD0.015 for first MP (explicitly 1024×1024 in source); no input-image MP. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-klein-9b. Settings: width=1024, height=1024, input images=0. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD.
+<sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI; USD0.015 for first MP (explicitly 1024×1024 in source); no input-image MP. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-klein-9b. Settings: width=1024, height=1024, input images=0. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 (cpu offload) · nvidia only | ~22.1GB | 50.0 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"` |
-| mlx-qint8 (Flux2CLI, Swift) · mac only | ~11.3GB | 50.0 | `./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8` |
+<pre>
+version                                   needs  score
+bf16 (cpu offload) · nvidia only        ~22.1GB   50.0
+mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   50.0
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 (cpu offload) · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
+# mlx-qint8 (Flux2CLI, Swift) · mac only
+./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/flux-2-klein-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

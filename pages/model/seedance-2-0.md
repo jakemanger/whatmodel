@@ -6,33 +6,34 @@
 
 ByteDance Seed · released 2026-03 · proprietary
 
-**score 75.4** ±1.9
-
-#7 of 54 · from 7 benchmark results across 5 sources
+**score 75.4** ±1.9 · #7 of 54 · from 7 benchmark results across 5 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1479.2 | 77.4 | ▇▇▇▇▇▇▇▇▇▇▇ 37% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1474.6 | 75.2 | ▇▇▇▇▇▇ 22% | 2026-09-22 |
-|  | [Arena video edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet) | 1364.6 | 74.0 | ▇▇▇ 9% | 2026-08-27 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1268.0 | 77.9 | ▇▇▇▇ 14% | 2026-09-25 |
-| <a name="visual-vgi"></a><img src="../../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models"> VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) | [VGI-Bench visual reasoning (I2V)](https://arxiv.org/html/2608.19583v3#S3.T2) | 51.0% | 74.6 | ▇▇ 7% | 2026-08-26 |
-| <a name="visual-vwg-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench)"> From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) | [VWG-Bench think-with-video reasoning (overall)](https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3) | 70.4% | 67.4 | ▇ 5% | 2026-09-10 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 58.8% | 73.1 | ▇ 5% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 75.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1479.2    77.4   2026-09-22   37% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1474.6    75.2   2026-09-22   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1364.6    74.0   2026-08-27    9% ▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1268.0    77.9   2026-09-25   14% ▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   51.0%    74.6   2026-08-26    7% ▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3">VWG-Bench think-with-video re…</a>   70.4%    67.4   2026-09-10    5% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   58.8%    73.1   2026-08-10    5% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 75.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.30/sec · [fal.ai ↗](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)
+api (fal.ai) · $0.30/sec · [fal.ai](https://fal.ai/models/bytedance/seedance-2.0/text-to-video)
 
-[price source](https://fal.ai/models/bytedance/seedance-2.0/text-to-video) · USD per second of generated 720p video on fal.ai (standard, not fast tier). Product: fal Seedance 2.0 text-to-video endpoint. API model: bytedance/seedance-2.0/text-to-video. Settings: resolution=720p (endpoint default), audio on or off (fal states the cost is the same either way). Price basis: per-second figure printed by fal; fal bills $0.014 per 1,000 tokens underneath. 1080p $0.682/s; fast tier 720p $0.2419/s. Not the BytePlus direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/bytedance/seedance-2.0/text-to-video): USD per second of generated 720p video on fal.ai (standard, not fast tier). Product: fal Seedance 2.0 text-to-video endpoint. API model: bytedance/seedance-2.0/text-to-video. Settings: resolution=720p (endpoint default), audio on or off (fal states the cost is the same either way). Price basis: per-second figure printed by fal; fal bills $0.014 per 1,000 tokens underneath. 1080p $0.682/s; fast tier 720p $0.2419/s. Not the BytePlus direct tariff. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

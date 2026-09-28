@@ -6,39 +6,38 @@
 
 Alibaba · released 2026-04 · closed weights
 
-**score 58.8** ±1.2
-
-#59 of 205 · from 11 benchmark results across 4 sources
+**score 58.8** ±1.2 · #59 of 205 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 38.2% | 58.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 42% | 2026-08-30 |
-|  | [SWE-bench Verified](https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv) | 57.9% | 51.3 | ▇▇▇ 9% | 2026-05-14 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 88.4% | 61.8 | ▇ 5% | 2026-08-07 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 93.3% | 62.4 | ▇ 4% | 2026-08-07 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 44.1% | 64.2 | ▇ 4% | 2026-08-27 |
-|  | [Mystery Game Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv) | 12.0% | 56.0 | ▇ 4% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 17.0% | 59.9 | ▇ 1% | 2026-08-07 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1460.5 | 60.6 | ▇▇▇ 10% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1443.3 | 60.2 | ▇▇ 6% | 2026-09-13 |
-| <a name="paper-2606.05405v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="Agents' Last Exam — authors' own fixed-harness model comparison"> Agents' Last Exam — authors' own fixed-harness model comparison ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) | [Agents' Last Exam overall full-pass rate (fixed OpenClaw + GUI-as-Tool)](https://arxiv.org/html/2606.05405v2) | 8.6% | 60.0 | ▇▇▇ 10% | 2026-06-11 |
-| <a name="paper-2605.08498v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs — authors' own model runs"> MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs — authors' own model runs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt)) | [MathConstraint full release, no tools (329 instances)](https://arxiv.org/html/2605.08498v1) | 47.4% | 65.9 | ▇ 3% | 2026-05-08 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 58.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        38.2%    58.2   2026-08-30   42% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               57.9%    51.3   2026-05-14    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     88.4%    61.8   2026-08-07    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         93.3%    62.4   2026-08-07    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                44.1%    64.2   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     12.0%    56.0   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            17.0%    59.9   2026-08-07    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1460.5    60.6   2026-09-24   10% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1443.3    60.2   2026-09-13    6% ▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    8.6%    60.0   2026-06-11   10% ▇
+<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   47.4%    65.9   2026-05-08    3% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 58.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-api (Together AI) · $1.13/M blended · $0.5 in / $3 out per 1M tokens · [docs.together.ai ↗](https://docs.together.ai/docs/serverless-models)
+api (Together AI) · $1.13/M blended · $0.5 in / $3 out per 1M tokens · [docs.together.ai](https://docs.together.ai/docs/serverless-models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/Qwen/Qwen3.6-Plus.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.6-plus.toml)
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/togetherai/models/Qwen/Qwen3.6-Plus.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3.6-plus.toml)</sub>
 
 no verified local download listed
 

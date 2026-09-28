@@ -6,21 +6,22 @@
 
 HPC-AI Tech
 
-**score 34.0** ±5.8
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.0** ±5.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-skyreels-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model"> SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) | [VBench T2V total (long-prompt version, SkyReels-V2 runs)](https://arxiv.org/html/2504.13074v3#S5.T6) | 81.5% | 31.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 86% | 2025-04-21 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 14% |  |
-|  | **weighted average** |  | **= 34.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>  81.5%    31.5   2025-04-21   86% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                14% ▇▇
+                        weighted average                       = 34.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 
 ## How to run it
 

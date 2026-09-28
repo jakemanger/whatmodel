@@ -6,21 +6,22 @@
 
 Runway · closed weights
 
-**score 28.7** ±5.1
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 28.7** ±5.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-skyreels-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model"> SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) | [SkyReels-Bench T2V (human rating)](https://arxiv.org/html/2504.13074v3#S5.T5) | 50.6% | 26.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 89% | 2025-04-21 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 28.7** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  50.6%    26.2   2025-04-21   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 28.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
 
 ## How to run it
 

@@ -6,9 +6,7 @@
 
 Ideogram · released 2026-06 · 9.3B params · ideogram-4-nc
 
-**score 65.0** ±2.4
-
-#14 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.0** ±2.4 · #14 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,25 +14,36 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1204.8 | 65.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 65.0** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1204.8    65.4   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 65.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Together AI) · $0.060/image · [www.together.ai ↗](https://www.together.ai/models/ideogram-40)
+api (Together AI) · $0.060/image · [together.ai](https://www.together.ai/models/ideogram-40)
 
-[price source](https://www.together.ai/models/ideogram-40) · USD per generated image on Together AI serverless (endpoint ideogram/ideogram-4.0, released June 2, 2026). Together's pricing overview notes displayed prices refer to the lowest resolution settings, so higher resolutions may cost more. Product: Together AI serverless image generation. API model: ideogram/ideogram-4.0. Settings: default/lowest resolution, n=1. Price basis: published list rate. Currency: USD. Not Ideogram's own API tariff (not shown in its fetched pricing HTML). Together AI official model page, observed 2026-09-25.
+<sub>[price source](https://www.together.ai/models/ideogram-40): USD per generated image on Together AI serverless (endpoint ideogram/ideogram-4.0, released June 2, 2026). Together's pricing overview notes displayed prices refer to the lowest resolution settings, so higher resolutions may cost more. Product: Together AI serverless image generation. API model: ideogram/ideogram-4.0. Settings: default/lowest resolution, n=1. Price basis: published list rate. Currency: USD. Not Ideogram's own API tariff (not shown in its fetched pricing HTML). Together AI official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| nf4 · nvidia only | ~6.08GB | 65.0 | `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"` |
-| mlx-q4 · mac only | ~6.08GB | 65.0 | `uvx --from mflux mflux-save --model ideogram-4-fp8 -q 4 --path ideogram-4-mflux-q4 && uvx --from mflux mflux-generate-ideogram4 --model ideogram-4-mflux-q4 --prompt-file caption.json --width 1024 --height 1024 --preset V4_DEFAULT_20` |
+<pre>
+version              needs  score
+nf4 · nvidia only  ~6.08GB   65.0
+mlx-q4 · mac only  ~6.08GB   65.0
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# nf4 · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"
+# mlx-q4 · mac only
+uvx --from mflux mflux-save --model ideogram-4-fp8 -q 4 --path ideogram-4-mflux-q4 && uvx --from mflux mflux-generate-ideogram4 --model ideogram-4-mflux-q4 --prompt-file caption.json --width 1024 --height 1024 --preset V4_DEFAULT_20
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/ideogram-4) · [JSON](https://whatmodel.sh/api?format=json&all=1)

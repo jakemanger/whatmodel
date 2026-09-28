@@ -6,27 +6,28 @@
 
 Amazon Web Services · closed weights
 
-**score 37.8** ±3.8
-
-#33 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.8** ±3.8 · #33 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-cn-news-tts-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1"> CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [CN-NewsTTS v0.1 · strict pronunciation accuracy](https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv) | 24.4% | 37.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 37.8** |  |  |
+<pre>
+source                 test                            score  implies  date        weight
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  24.4%    37.0   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   49.9                 6% ▇
+                       weighted average                       = 37.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Amazon Web Services) · $16.00/M chars · [aws.amazon.com ↗](https://aws.amazon.com/polly/pricing)
+api (Amazon Web Services) · $16.00/M chars · [aws.amazon.com](https://aws.amazon.com/polly/pricing)
 
-[price source](https://aws.amazon.com/polly/pricing) · USD per 1M characters: Amazon Polly Neural voices are priced at $16.00 per 1 million characters (outside the free tier). Product: Amazon Polly. API model: engine=neural. Settings: standard AWS regions. Price basis: published list rate. Exclusions: free tier, GovCloud ($19.20). Currency: USD. AWS official pricing page, observed 2026-09-25.
+<sub>[price source](https://aws.amazon.com/polly/pricing): USD per 1M characters: Amazon Polly Neural voices are priced at $16.00 per 1 million characters (outside the free tier). Product: Amazon Polly. API model: engine=neural. Settings: standard AWS regions. Price basis: published list rate. Exclusions: free tier, GovCloud ($19.20). Currency: USD. AWS official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

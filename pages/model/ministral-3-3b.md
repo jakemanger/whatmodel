@@ -6,42 +6,52 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 28.8** ±3.5
-
-#187 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 28.8** ±3.5 · #187 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="card-mistralai-ministral-3-14b-instruct-2512"></a><img src="../../icons/huggingface.co.png" width="14" alt="mistralai/Ministral-3-14B-Instruct-2512 model card"> mistralai/Ministral-3-14B-Instruct-2512 model card | [Arena-Hard (version/judge unspecified)](https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md) lab-reported | 30.5% | 26.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 50% | 2026-09-25 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 39.3% | 28.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 45% | 2026-05-02 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 28.8** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  30.5%    26.9   2026-09-25   50% ▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  39.3%    28.4   2026-05-02   45% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 28.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| mistralai/Ministral-3-3B-Instruct-2512 model card | [MATH (subset unspecified)](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md) | 83.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                       score  why
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md">MATH (subset unspecified)</a>  83.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Mistral) · $0.10/M blended · $0.1 in / $0.1 out per 1M tokens · [docs.mistral.ai ↗](https://docs.mistral.ai/models/ministral-3-3b-25-12)
+api (Mistral) · $0.10/M blended · $0.1 in / $0.1 out per 1M tokens · [docs.mistral.ai](https://docs.mistral.ai/models/ministral-3-3b-25-12)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens. Mistral standard synchronous API; model ministral-3b-2512. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens. Mistral standard synchronous API; model ministral-3b-2512. Uncached input; output includes generated reasoning where billed.  Batch, cache storage, tools and other modalities excluded. · [context source](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/config.json): Official Instruct-2512 model configuration; card corroborates 256K. For 3B this replaces a missing value using the first-party record, not LiteLLM’s conflicting 131,072 entry.</sub>
 
-[context specification source](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/config.json) · Official Instruct-2512 model configuration; card corroborates 256K. For 3B this replaces a missing value using the first-party record, not LiteLLM’s conflicting 131,072 entry.
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.81GB   28.8
+8-bit q8_0    ~5.12GB   28.8
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~2.81GB | 28.8 | `ollama run ministral-3:3b` |
-| 8-bit q8\_0 | ~5.12GB | 28.8 | `ollama run ministral-3:3b-instruct-2512-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run ministral-3:3b
+# 8-bit q8_0
+ollama run ministral-3:3b-instruct-2512-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/ministral-3-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

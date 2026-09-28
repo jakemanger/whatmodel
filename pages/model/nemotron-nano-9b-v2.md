@@ -6,23 +6,24 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| AIME 2025 | 72.1% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: AIME25. Review date is not the evaluation-run date. |
-| MATH-500 | 97.8% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: MATH500. Review date is not the evaluation-run date. |
-| GPQA (subset unspecified) | 64.0% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: GPQA. Review date is not the evaluation-run date. |
-| LiveCodeBench (version unspecified) | 71.1% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: LCB. Review date is not the evaluation-run date. |
-| BFCL v3 | 66.9% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: BFCL v3. Review date is not the evaluation-run date. |
-| IFEval instruction-level strict | 90.3% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: IFEval (Instruction Strict). Review date is not the evaluation-run date. |
-| Humanity's Last Exam | 6.5% | [nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md) · lab-reported · Reasoning-On evaluation using NeMo-Skills. The card abbreviates GPQA and LCB; no subset/window inferred. Full licence includes documentation and permits commercial reuse. Row: HLE. Review date is not the evaluation-run date. |
+<pre>
+test                                result  reported by  source
+AIME 2025                            72.1%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+MATH-500                             97.8%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+GPQA (subset unspecified)            64.0%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+LiveCodeBench (version unspecifie…   71.1%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+BFCL v3                              66.9%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+IFEval instruction-level strict      90.3%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+Humanity's Last Exam                  6.5%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+</pre>
+
+<sub>Licences: nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card ([NVIDIA Open Model License (2025-10-24)](../../licenses/card-nvidia-nvidia-nemotron-nano-9b-v2.txt))</sub>
 
 ## How to run it
 
-api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.23 out per 1M tokens · [docs.aws.amazon.com ↗](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nvidia-nemotron-nano-9b-v2.html)
+api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.23 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nvidia-nemotron-nano-9b-v2.html)
 
-[price source](https://aws.amazon.com/bedrock/pricing) · USD per 1M tokens, Amazon Bedrock on-demand 'NVIDIA Nemotron Nano 2' (Bedrock model ID nvidia.nemotron-nano-9b-v2; the separate 'Nano 2 VL' row is the 12B VL model), US East (N. Virginia)/Ohio and US West (Oregon). GovCloud rates excluded. Currency: USD. Amazon Bedrock official pricing page, observed 2026-09-25.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-nano-9b-v2.toml) · model catalogue context ceiling (not a promise by a hosted API)
+<sub>[price source](https://aws.amazon.com/bedrock/pricing): USD per 1M tokens, Amazon Bedrock on-demand 'NVIDIA Nemotron Nano 2' (Bedrock model ID nvidia.nemotron-nano-9b-v2; the separate 'Nano 2 VL' row is the 12B VL model), US East (N. Virginia)/Ohio and US West (Oregon). GovCloud rates excluded. Currency: USD. Amazon Bedrock official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-nano-9b-v2.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
 ```sh
 llama-server -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q4_K_M

@@ -6,58 +6,68 @@
 
 IBM · released 2025-09 · 3.4B params · apache-2.0
 
-**score 22.7** ±3.6
-
-#197 of 205 · from 3 benchmark results across 1 source
+**score 22.7** ±3.6 · #197 of 205 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 28.3% | 18.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 43% | 2026-08-30 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 2.8% | 20.9 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-08-30 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 0.0% | 29.2 | ▇▇▇▇ 12% | 2026-08-30 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 22.7** |  |  |
+<pre>
+source    test                      score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              28.3%    18.7   2026-08-30   43% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.8%    20.9   2026-08-30   39% ▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    29.2   2026-08-30   12% ▇
+prior     pull toward the middle             50.0                 6% ▇
+          weighted average                 = 22.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (21)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| ibm-granite/granite-4.0-h-small model card | [BIG-Bench Hard](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 72.5% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [BFCL v3](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 60.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [BigCodeBench](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 39.2% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [CRUXEval-O](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 41.5% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [DeepMind Mathematics](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 44.6% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [GPQA (subset unspecified)](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 30.1% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [GSM-Symbolic](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 79.8% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [GSM8K](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 85.5% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [HumanEval](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 80.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [HumanEval+](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 72.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [IFEval instruction-level strict](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 85.5% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [IFEval prompt-level strict](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 79.1% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [INCLUDE](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 51.6% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MBPP](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 72.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MBPP+](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 64.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MGSM, 5 languages (en, es, fr, ja, zh)](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 28.6% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [Minerva MATH](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 62.1% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MMLU](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 66.0% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MMLU-Pro](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 44.5% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MMMLU](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 55.1% | too few models have this result to calibrate it yet |
-| ibm-granite/granite-4.0-h-small model card | [MultiPL-E](https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md) | 49.2% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (21)</summary>
+
+<pre>
+source                  test                            score  why
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BIG-Bench Hard</a>                  72.5%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BFCL v3</a>                         60.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">BigCodeBench</a>                    39.2%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O</a>                      41.5%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">DeepMind Mathematics</a>            44.6%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GPQA (subset unspecified)</a>       30.1%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM-Symbolic</a>                    79.8%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">GSM8K</a>                           85.5%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval</a>                       80.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">HumanEval+</a>                      72.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval instruction-level stri…</a>  85.5%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">IFEval prompt-level strict</a>      79.1%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">INCLUDE</a>                         51.6%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP</a>                            72.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MBPP+</a>                           64.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MGSM, 5 languages (en, es, fr…</a>  28.6%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">Minerva MATH</a>                    62.1%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU</a>                            66.0%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMLU-Pro</a>                        44.5%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MMMLU</a>                           55.1%  too few models have it yet
+ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">MultiPL-E</a>                       49.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://huggingface.co/ibm-granite/granite-4.0-micro/blob/56111ae135df9c53a78c99028e7bc24035a9e979/config.json) · Configured sequence length, corroborated by the official card architecture table. Dense Micro and hybrid H-Small are distinct models.
+<sub>[context source](https://huggingface.co/ibm-granite/granite-4.0-micro/blob/56111ae135df9c53a78c99028e7bc24035a9e979/config.json): Configured sequence length, corroborated by the official card architecture table. Dense Micro and hybrid H-Small are distinct models.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~2.54GB | 22.7 | `ollama run granite4:micro` |
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.54GB   22.7
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run granite4:micro
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/granite-4-0-micro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

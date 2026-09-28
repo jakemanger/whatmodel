@@ -6,46 +6,58 @@
 
 NVIDIA · released 2025-04 · 253B params · nvidia-open-model
 
-**score 36.8** ±3.4
-
-#168 of 205 · from 3 benchmark results across 3 sources
+**score 36.8** ±3.4 · #168 of 205 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1347.5 | 42.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-09-13 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1139.8 | 40.8 | ▇▇▇▇▇▇▇▇▇▇ 35% | 2026-05-10 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 10.0% | 5.1 | ▇▇▇▇ 15% | 2025-12-16 |
-| prior | pull toward the middle |  | 50.0 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 36.8** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.5    42.5   2026-09-13   46% ▇▇▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    40.8   2026-05-10   35% ▇▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   10.0%     5.1   2025-12-16   15% ▇▇
+prior                   pull toward the middle                    50.0                 5% ▇
+                        weighted average                        = 36.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (8)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [AIME 2024](https://arxiv.org/html/2505.00949v5) | 80.8% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [AIME 2025](https://arxiv.org/html/2505.00949v5) | 72.5% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [Arena-Hard (version/judge unspecified)](https://arxiv.org/html/2505.00949v5) | 87.0% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [BFCL v2 Live](https://arxiv.org/html/2505.00949v5) | 74.1% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [GPQA Diamond](https://arxiv.org/html/2505.00949v5) | 76.0% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [IFEval (aggregation unspecified)](https://arxiv.org/html/2505.00949v5) | 88.9% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [LiveCodeBench 2024-08 to 2025-02 (version not stated)](https://arxiv.org/html/2505.00949v5) | 66.3% | too few models have this result to calibrate it yet |
-| NVIDIA — Llama-Nemotron: Efficient Reasoning Models | [MATH-500](https://arxiv.org/html/2505.00949v5) | 97.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (8)</summary>
+
+<pre>
+source  test                            score  why
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">AIME 2024</a>                       80.8%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">AIME 2025</a>                       72.5%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>  87.0%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">BFCL v2 Live</a>                    74.1%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond</a>                    76.0%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>  88.9%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2025…</a>  66.3%  too few models have it yet
+NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">MATH-500</a>                        97.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.1-nemotron-ultra-253b.toml)
+<sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/llama-3.1-nemotron-ultra-253b.toml)</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~152.3GB | 36.8 | `llama-server -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~76.4GB | 36.8 | `llama-server -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL` |
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~152.3GB   36.8
+2-bit ud-q2_k_xl   ~76.4GB   36.8
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Llama-3_1-Nemotron-Ultra-253B-v1-GGUF:UD-Q2_K_XL
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/llama-3-1-nemotron-ultra-253b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

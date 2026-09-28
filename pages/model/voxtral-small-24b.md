@@ -6,57 +6,70 @@
 
 Mistral · released 2025-07 · 24.3B params · apache-2.0
 
-**score 56.1** ±4.0
-
-#11 of 28 · from 4 benchmark results across 3 sources
+**score 56.1** ±4.0 · #11 of 28 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-sap-dysarthric-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2)"> Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2) ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) | [Speech Accessibility Project dysarthric speech · zero-shot WER (rated subset, N=11,218)](https://arxiv.org/html/2605.02782v2) | 13.9% | 56.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 67% | 2026-08-18 |
-| <a name="speech-stt-arabic-oual-elm-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Universal Arabic ASR Leaderboard (Elm Research Center)"> Open Universal Arabic ASR Leaderboard (Elm Research Center) | [Open Universal Arabic ASR Leaderboard · 6-test-set average WER](https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py) | 34.5% | 55.4 | ▇▇▇▇▇▇ 22% | 2025-09-22 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 3.7% | 64.5 | ▇ 4% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 6.6% | 50.2 | ▇ 1% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 7% |  |
-|  | **weighted average** |  | **= 56.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  13.9%    56.5   2026-08-18   67% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  34.5%    55.4   2025-09-22   22% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.7%    64.5   2026-03-26    4% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.6%    50.2   2026-03-26    1% ▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 56.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (9)
+<sub>Licences: Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Mistral AI — Voxtral technical report | [CHiME-4 WER](https://arxiv.org/html/2507.13264v1) | 9.6% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [Earnings-21 10-minute long-form WER](https://arxiv.org/html/2507.13264v1) | 9.6% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [Earnings-22 10-minute long-form WER](https://arxiv.org/html/2507.13264v1) | 12.5% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [GigaSpeech test WER](https://arxiv.org/html/2507.13264v1) | 10.3% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [LibriSpeech test-clean WER](https://arxiv.org/html/2507.13264v1) | 1.5% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [LibriSpeech test-other WER](https://arxiv.org/html/2507.13264v1) | 3.1% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [SPGISpeech test WER](https://arxiv.org/html/2507.13264v1) | 1.9% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [SwitchBoard WER](https://arxiv.org/html/2507.13264v1) | 11.1% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [VoxPopuli English test WER](https://arxiv.org/html/2507.13264v1) | 6.6% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source      test                            score  why
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                      9.6%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.5%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             10.3%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.5%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       3.1%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              1.9%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 11.1%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       6.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Mistral AI) · $0.0040/audio min · [docs.mistral.ai ↗](https://docs.mistral.ai/getting-started/models/models_overview/)
+api (Mistral AI) · $0.0040/audio min · [docs.mistral.ai](https://docs.mistral.ai/getting-started/models/models_overview/)
 
-[price source](https://mistral.ai/pricing/api) · USD per input audio minute: Mistral lists Voxtral Small audio input at $0.004 per minute on /v1/chat/completions; transcript output is billed separately as output tokens ($0.4 / M tokens), text input $0.1 / M. Docs list Voxtral Small v25.07 as the current audio model. Product: Mistral API. API model: voxtral-small (25.07). Settings: standard (non-batch). Price basis: published audio-input component. Exclusions: output/text tokens, regional endpoint surcharge. Currency: USD. Mistral official API pricing page, observed 2026-09-25.
+<sub>[price source](https://mistral.ai/pricing/api): USD per input audio minute: Mistral lists Voxtral Small audio input at $0.004 per minute on /v1/chat/completions; transcript output is billed separately as output tokens ($0.4 / M tokens), text input $0.1 / M. Docs list Voxtral Small v25.07 as the current audio model. Product: Mistral API. API model: voxtral-small (25.07). Settings: standard (non-batch). Price basis: published audio-input component. Exclusions: output/text tokens, regional endpoint surcharge. Currency: USD. Mistral official API pricing page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~58.82GB | 56.1 | `vllm serve mistralai/Voxtral-Small-24B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral --tensor-parallel-size 2 --tool-call-parser mistral --enable-auto-tool-choice` |
+<pre>
+version                needs  score
+bf16 · nvidia only  ~58.82GB   56.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+vllm serve mistralai/Voxtral-Small-24B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral --tensor-parallel-size 2 --tool-call-parser mistral --enable-auto-tool-choice
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token; llm-compressor FP8\_DYNAMIC) | FLEURS English transcription WER | 0.0345 → 0.0343 | 100.6% | [source ↗](https://huggingface.co/RedHatAI/Voxtral-Small-24B-2507-FP8-dynamic/blob/a5dba05c66c6f06ec358dbf6531087a858ab141d/README.md#L254) |
+<pre>
+precision                       test                              full → quantized    kept
+FP8 W8A8 dynamic (weights sym…  FLEURS English transcription WER   0.0345 → 0.0343  <a href="https://huggingface.co/RedHatAI/Voxtral-Small-24B-2507-FP8-dynamic/blob/a5dba05c66c6f06ec358dbf6531087a858ab141d/README.md#L254">100.6%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/voxtral-small-24b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

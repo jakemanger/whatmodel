@@ -6,9 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab)
 
-**score 34.9** ±5.1
-
-#77 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.9** ±5.1 · #77 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 71.2% | 33.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 89% | 2026-07-12 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 34.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  71.2%    33.1   2026-07-12   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 34.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.075/image · [fal.ai ↗](https://fal.ai/models/fal-ai/lumina-image/v2)
+api (fal.ai) · $0.075/image · [fal.ai](https://fal.ai/models/fal-ai/lumina-image/v2)
 
-[price source](https://fal.ai/models/fal-ai/lumina-image/v2) · USD for one 1-megapixel output: fal bills fal-ai/lumina-image/v2 (Lumina Image 2.0) $0.075 per output megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/lumina-image/v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not an Alpha-VLLM direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/lumina-image/v2): USD for one 1-megapixel output: fal bills fal-ai/lumina-image/v2 (Lumina Image 2.0) $0.075 per output megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/lumina-image/v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not an Alpha-VLLM direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

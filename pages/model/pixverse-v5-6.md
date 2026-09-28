@@ -6,29 +6,30 @@
 
 PixVerse · released 2026-02 · proprietary
 
-**score 51.3** ±2.2
-
-#23 of 54 · from 3 benchmark results across 2 sources
+**score 51.3** ±2.2 · #23 of 54 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1239.7 | 49.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 50% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1299.3 | 52.9 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-09-22 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 942.0 | 54.0 | ▇▇▇▇▇▇ 19% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 51.3** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1239.7    49.5   2026-09-22   50% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1299.3    52.9   2026-09-22   29% ▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>   942.0    54.0   2026-09-25   19% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 51.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt))</sub>
 
 ## How to run it
 
-api (PixVerse) · $0.045/sec · [docs.platform.pixverse.ai ↗](https://docs.platform.pixverse.ai/model-pricing-796039m0)
+api (PixVerse) · $0.045/sec · [docs.platform.pixverse.ai](https://docs.platform.pixverse.ai/model-pricing-796039m0)
 
-[price source](https://docs.platform.pixverse.ai/model-pricing-796039m0) · USD per second of generated video, 720p, 5-second single clip, no audio. Product: PixVerse platform API video generation. API model: V5.6. Price basis: 45 credits per 5-s 720p clip × $0.005 per credit (pay-as-you-go credit purchase: $10 = 2,000 credits) ÷ 5 s. With audio: 80 credits per 5-s clip ($0.08/s). 8-s and 10-s clips have different per-second rates; membership credit rates differ. Currency: USD. PixVerse platform model pricing page, observed 2026-09-25.
+<sub>[price source](https://docs.platform.pixverse.ai/model-pricing-796039m0): USD per second of generated video, 720p, 5-second single clip, no audio. Product: PixVerse platform API video generation. API model: V5.6. Price basis: 45 credits per 5-s 720p clip × $0.005 per credit (pay-as-you-go credit purchase: $10 = 2,000 credits) ÷ 5 s. With audio: 80 credits per 5-s clip ($0.08/s). 8-s and 10-s clips have different per-second rates; membership credit rates differ. Currency: USD. PixVerse platform model pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

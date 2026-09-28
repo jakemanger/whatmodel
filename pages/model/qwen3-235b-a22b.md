@@ -6,99 +6,112 @@
 
 Alibaba · released 2025-04 · 235B params (22B active) · apache-2.0
 
-**score 47.9** ±1.4
-
-#122 of 205 · from 11 benchmark results across 9 sources
+**score 47.9** ±1.4 · #122 of 205 · from 11 benchmark results across 9 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="arena-hard-auto-readme-v2"></a><img src="../../icons/github.com.png" width="14" alt="Arena-Hard-Auto v2.0-Preview leaderboard (repository README)"> Arena-Hard-Auto v2.0-Preview leaderboard (repository README) | [Arena-Hard v2.0 hard prompts (style control, Gemini-2.5 judge)](https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md) | 58.4% | 50.4 | ▇▇▇▇▇▇▇ 22% | 2025-05-01 |
-|  | [Arena-Hard v2.0 creative writing (GPT-4.1 + Gemini-2.5 judges)](https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md) | 73.5% | 55.4 | ▇ 3% | 2025-05-01 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [MATH level 5](https://epoch.ai/data/benchmark_data.zip#math_level_5.csv) | 68.9% | 39.3 | ▇▇▇▇▇ 16% | 2025-06-03 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 70.7% | 50.5 | ▇▇ 7% | 2025-06-03 |
-| <a name="aider-polyglot-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Aider polyglot benchmark runs"> Aider polyglot benchmark runs | [Aider polyglot (225 exercises, two attempts)](https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml) | 59.6% | 52.2 | ▇▇▇▇▇▇ 19% | 2025-05-09 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1374.9 | 47.6 | ▇▇ 8% | 2026-09-13 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1215.9 | 49.9 | ▇▇ 6% | 2026-05-10 |
-| <a name="livecodebench-website-20250801"></a><img src="../../icons/huggingface.co.png" width="14" alt="LiveCodeBench official website results (2025-08-01)"> LiveCodeBench official website results (2025-08-01) ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) | [LiveCodeBench official (Aug 1, 2024–May 1, 2025)](https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json) | 65.9% | 47.9 | ▇▇ 6% | 2025-08-01 |
-| <a name="webapp1k-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="WebApp1K models leaderboard (onekq-ai)"> WebApp1K models leaderboard (onekq-ai) | [WebApp1K-Duo-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv) | 32.9% | 40.6 | ▇▇ 5% | 2025-05-01 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 78.2% | 45.3 | ▇ 5% | 2026-08-11 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 41.6% | 48.5 | ▇ 3% | 2025-06-03 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 47.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   58.4%    50.4   2025-05-01   22% ▇▇▇
+                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   73.5%    55.4   2025-05-01    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     68.9%    39.3   2025-06-03   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     70.7%    50.5   2025-06-03    7% ▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   59.6%    52.2   2025-05-09   19% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1374.9    47.6   2026-09-13    8% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1215.9    49.9   2026-05-10    6% ▇
+<a name="livecodebench-website-20250801"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1…</a>   65.9%    47.9   2025-08-01    6% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   32.9%    40.6   2025-05-01    5% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   78.2%    45.3   2026-08-11    5% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   41.6%    48.5   2025-06-03    3% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 47.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (24)
+<sub>Licences: Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [AIME 2025](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 81.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [Arena-Hard v2 aggregate](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 61.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [BFCL v3](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 70.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [Creative Writing v3](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 84.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [GPQA (subset unspecified)](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 71.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [Humanity's Last Exam](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 11.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [HMMT 2025 (edition unspecified)](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 62.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [IFEval (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 83.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [INCLUDE](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 78.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [LiveBench 2024-11-25](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 77.1% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [LiveCodeBench v6 (Feb–May 2025)](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 55.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [MMLU-Pro](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 82.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [MMLU-ProX](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 80.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [MMLU-Redux](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 92.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [Multi-IF (aggregation unspecified)](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 71.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [OJBench](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 25.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [PolyMATH](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 54.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [SuperGPQA](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 60.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [τ-bench Airline](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 26.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [τ-bench Retail](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 54.8% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [τ²-bench Airline](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 30.0% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [τ²-bench Retail](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 40.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [τ²-bench Telecom](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 21.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-235B-A22B-Thinking-2507 model card | [WritingBench](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md) | 80.3% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (24)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">AIME 2025</a>                       81.5%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Arena-Hard v2 aggregate</a>         61.5%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">BFCL v3</a>                         70.8%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Creative Writing v3</a>             84.6%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">GPQA (subset unspecified)</a>       71.1%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Humanity's Last Exam</a>            11.8%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">HMMT 2025 (edition unspecifie…</a>  62.5%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">IFEval (aggregation unspecifi…</a>  83.4%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">INCLUDE</a>                         78.7%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">LiveBench 2024-11-25</a>            77.1%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">LiveCodeBench v6 (Feb–May 202…</a>  55.7%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">MMLU-Pro</a>                        82.8%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">MMLU-ProX</a>                       80.0%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">MMLU-Redux</a>                      92.7%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">Multi-IF (aggregation unspeci…</a>  71.9%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">OJBench</a>                         25.6%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">PolyMATH</a>                        54.7%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">SuperGPQA</a>                       60.7%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">τ-bench Airline</a>                 26.0%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">τ-bench Retail</a>                  54.8%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">τ²-bench Airline</a>                30.0%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">τ²-bench Retail</a>                 40.4%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">τ²-bench Telecom</a>                21.9%  too few models have it yet
+Qwen/Qwen3-235B-A22B-…  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">WritingBench</a>                    80.3%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Alibaba) · $1.22/M blended · $0.7 in / $2.8 out per 1M tokens · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/models)
+api (Alibaba) · $1.22/M blended · $0.7 in / $2.8 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/alibaba/models/qwen3-235b-a22b.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/alibaba/models/qwen3-235b-a22b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3-235b-a22b.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/alibaba/qwen3-235b-a22b.toml)
+<pre>
+download              size  score
+4-bit q4_k_m      ~141.5GB   47.9
+2-bit ud-q2_k_xl     ~71GB   47.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~141.5GB | 47.9 | `ollama run qwen3:235b-a22b-q4_K_M` |
-| 2-bit ud-q2\_k\_xl | ~71GB | 47.9 | `llama-server -hf unsloth/Qwen3-235B-A22B-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit q4_k_m
+ollama run qwen3:235b-a22b-q4_K_M
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Qwen3-235B-A22B-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (E4M3; weights static per-channel, activations dynamic per-token; llm-compressor FP8\_DYNAMIC, compressed-tensors); lm\_head and MoE router gates unquantized | GSM8K 5-shot strict-match (OpenLLM v1 configuration; lm-evaluation-harness, vLLM) | 0.742 → 0.75 | 101.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-FP8-dynamic/blob/627b08fd72c21c3e0565d87764adce2d87427afc/README.md#L181) |
-| FP8 W8A8 dynamic (E4M3; weights static per-channel, activations dynamic per-token; llm-compressor FP8\_DYNAMIC, compressed-tensors); lm\_head and MoE router gates unquantized | OpenLLM v1 average (6 tasks: MMLU 5-shot, ARC-Challenge 25-shot, GSM8K 5-shot strict-match, HellaSwag 10-shot, Winogrande 5-shot, TruthfulQA mc2 0-shot; lm-evaluation-harness, vLLM) | 0.738 → 0.738 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-FP8-dynamic/blob/627b08fd72c21c3e0565d87764adce2d87427afc/README.md#L221) |
-| FP8 W8A8 dynamic (E4M3; weights static per-channel, activations dynamic per-token; llm-compressor FP8\_DYNAMIC, compressed-tensors); lm\_head and MoE router gates unquantized | MMLU 5-shot (OpenLLM v1 configuration; lm-evaluation-harness, vLLM) | 0.848 → 0.846 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-FP8-dynamic/blob/627b08fd72c21c3e0565d87764adce2d87427afc/README.md#L161) |
-| GPTQ INT4 (w4, group\_size 128, sym, desc\_act=false; checkpoint Qwen/Qwen3-235B-A22B-GPTQ-Int4) | GPQA (subset not stated in card), thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.711 → 0.719 | 101.1% | [source ↗](https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L275) |
-| GPTQ INT4 (w4, group\_size 128, sym, desc\_act=false; checkpoint Qwen/Qwen3-235B-A22B-GPTQ-Int4) | GPQA (subset not stated in card), non-thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.629 → 0.628 | 99.8% | [source ↗](https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L277) |
-| GPTQ INT4 (w4, group\_size 128, sym, desc\_act=false; checkpoint Qwen/Qwen3-235B-A22B-GPTQ-Int4) | MMLU-Redux, non-thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.892 → 0.89 | 99.8% | [source ↗](https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L277) |
-| GPTQ INT4 (w4, group\_size 128, sym, desc\_act=false; checkpoint Qwen/Qwen3-235B-A22B-GPTQ-Int4) | MMLU-Redux, thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.927 → 0.92 | 99.2% | [source ↗](https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L275) |
-| GPTQ INT4 (w4, group\_size 128, sym, desc\_act=false; checkpoint Qwen/Qwen3-235B-A22B-GPTQ-Int4) | LiveBench 2024-11-25, non-thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.625 → 0.611 | 97.8% | [source ↗](https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L277) |
-| GPTQ INT4 (w4, group\_size 128, sym, desc\_act=false; checkpoint Qwen/Qwen3-235B-A22B-GPTQ-Int4) | LiveBench 2024-11-25, thinking mode (Qwen-reported in quantized model card; harness, sampling and number of runs not stated) | 0.771 → 0.751 | 97.4% | [source ↗](https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L275) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | GSM8K (OpenLLM v1 configuration, 5-shot; lm-evaluation-harness, vLLM) | 0.851 → 0.864 | 101.5% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L201) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | IFEval (OpenLLM v2 leaderboard configuration; lm-evaluation-harness, vLLM) | 0.882 → 0.882 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L257) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | OpenLLM v1 average (6 tasks: arc\_challenge, gsm8k, hellaswag, mmlu, truthfulqa\_mc2, winogrande; lm-evaluation-harness (neuralmagic fork), vLLM) | 0.788 → 0.787 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L231) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | OpenLLM v2 average as published (5 tasks listed: BBH, MMLU-Pro, MuSR, IFEval, GPQA; Math-Hard not included; lm-evaluation-harness, vLLM) | 0.565 → 0.564 | 99.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L269) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | MMLU-Pro (OpenLLM v2 leaderboard configuration, 5-shot; lm-evaluation-harness, vLLM) | 0.582 → 0.58 | 99.6% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L245) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | MMLU (OpenLLM v1 configuration, 5-shot; lm-evaluation-harness, vLLM) | 0.864 → 0.858 | 99.3% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L213) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | MATH-500 0-shot (lighteval, vLLM) | 0.95 → 0.942 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L282) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | Reasoning average (2 tasks: GPQA Diamond 0-shot, MATH-500 0-shot; lighteval, vLLM) | 0.836 → 0.817 | 97.7% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L288) |
-| NVFP4 W4A4 (FP4 E2M1 weights and activations, group 16; llm-compressor QuantizationModifier NVFP4, compressed-tensors); lm\_head, self-attention projections and MoE router gates left unquantized | GPQA Diamond 0-shot (lighteval, vLLM) | 0.722 → 0.692 | 95.8% | [source ↗](https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L276) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 W8A8 dynamic (E4M3; weigh…  GSM8K 5-shot strict-match (OpenLL…      0.742 → 0.75  <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-FP8-dynamic/blob/627b08fd72c21c3e0565d87764adce2d87427afc/README.md#L181">101.0%</a>
+FP8 W8A8 dynamic (E4M3; weigh…  OpenLLM v1 average (6 tasks: MMLU…     0.738 → 0.738  <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-FP8-dynamic/blob/627b08fd72c21c3e0565d87764adce2d87427afc/README.md#L221">100.0%</a>
+FP8 W8A8 dynamic (E4M3; weigh…  MMLU 5-shot (OpenLLM v1 configura…     0.848 → 0.846   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-FP8-dynamic/blob/627b08fd72c21c3e0565d87764adce2d87427afc/README.md#L161">99.8%</a>
+GPTQ INT4 (w4, group_size 128…  GPQA (subset not stated in card),…     0.711 → 0.719  <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L275">101.1%</a>
+GPTQ INT4 (w4, group_size 128…  GPQA (subset not stated in card),…     0.629 → 0.628   <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L277">99.8%</a>
+GPTQ INT4 (w4, group_size 128…  MMLU-Redux, non-thinking mode (Qw…      0.892 → 0.89   <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L277">99.8%</a>
+GPTQ INT4 (w4, group_size 128…  MMLU-Redux, thinking mode (Qwen-r…      0.927 → 0.92   <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L275">99.2%</a>
+GPTQ INT4 (w4, group_size 128…  LiveBench 2024-11-25, non-thinkin…     0.625 → 0.611   <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L277">97.8%</a>
+GPTQ INT4 (w4, group_size 128…  LiveBench 2024-11-25, thinking mo…     0.771 → 0.751   <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-GPTQ-Int4/blob/dff138951f3898772fc0d795a4b5b30f417577f4/README.md#L275">97.4%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  GSM8K (OpenLLM v1 configuration, …     0.851 → 0.864  <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L201">101.5%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  IFEval (OpenLLM v2 leaderboard co…     0.882 → 0.882  <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L257">100.0%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  OpenLLM v1 average (6 tasks: arc_…     0.788 → 0.787   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L231">99.9%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  OpenLLM v2 average as published (…     0.565 → 0.564   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L269">99.8%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  MMLU-Pro (OpenLLM v2 leaderboard …      0.582 → 0.58   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L245">99.6%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  MMLU (OpenLLM v1 configuration, 5…     0.864 → 0.858   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L213">99.3%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  MATH-500 0-shot (lighteval, vLLM)       0.95 → 0.942   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L282">99.2%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  Reasoning average (2 tasks: GPQA …     0.836 → 0.817   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L288">97.7%</a>
+NVFP4 W4A4 (FP4 E2M1 weights …  GPQA Diamond 0-shot (lighteval, v…     0.722 → 0.692   <a href="https://huggingface.co/RedHatAI/Qwen3-235B-A22B-NVFP4/blob/1b32bc2de6af4465acc7cbafa9d842a15d07457a/README.md#L276">95.8%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-235b-a22b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

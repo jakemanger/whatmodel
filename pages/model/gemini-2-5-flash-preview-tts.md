@@ -6,27 +6,28 @@
 
 Google · closed weights
 
-**score 65.0** ±2.3
-
-comparison only: no current run option verified · from 7 benchmark results across 3 sources
+**score 65.0** ±2.3 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-instructttseval-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="InstructTTSEval: instruction-following TTS benchmark (arXiv:2506.16381v1)"> InstructTTSEval: instruction-following TTS benchmark (arXiv:2506.16381v1) ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) | [InstructTTSEval ZH · mean instruction-following score (APS, DSD, RP)](https://arxiv.org/html/2506.16381v1) | 85.4% | 67.2 | ▇▇▇▇▇▇▇ 22% | 2025-06-19 |
-|  | [InstructTTSEval EN · mean instruction-following score (APS, DSD, RP)](https://arxiv.org/html/2506.16381v1) | 88.7% | 69.5 | ▇▇▇▇▇▇ 20% | 2025-06-19 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Acting / Role-Fit (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.64 / 5 | 61.5 | ▇▇▇▇ 14% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Reliability (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.66 / 5 | 59.0 | ▇▇▇ 11% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Expressiveness (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.44 / 5 | 59.5 | ▇▇ 6% | 2026-07-16 |
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 75.6% | 69.5 | ▇▇▇▇▇▇ 18% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 10.4% | 58.2 | ▇▇ 6% | 2025-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 65.0** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>     85.4%    67.2   2025-06-19   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     88.7%    69.5   2025-06-19   20% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.64 / 5    61.5   2026-07-16   14% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.66 / 5    59.0   2026-07-16   11% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.44 / 5    59.5   2026-07-16    6% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     75.6%    69.5   2025-08-10   18% ▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       10.4%    58.2   2025-08-10    6% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
+                        weighted average                          = 65.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: InstructTTSEval: instruction-following TTS benchmark ([CC BY 4.0](../../licenses/speech-instructttseval-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
 ## How to run it
 

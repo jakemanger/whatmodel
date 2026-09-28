@@ -6,21 +6,22 @@
 
 Microsoft · closed weights
 
-**score 66.0** ±7.1
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.0** ±7.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-amharic-addis-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="Addis AI Amharic TTS benchmark"> Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Amharic TTS · 87-prompt CER (Chirp 3 judge)](https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json) | 3.0% | 70.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 80% | 2026-08-12 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇ 20% |  |
-|  | **weighted average** |  | **= 66.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   3.0%    70.1   2026-08-12   80% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                20% ▇▇
+                        weighted average                       = 66.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 

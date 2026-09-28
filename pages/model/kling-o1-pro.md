@@ -6,28 +6,29 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 46.7** ±2.7
-
-#34 of 54 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.7** ±2.7 · #34 of 54 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1204.6 | 45.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 78% | 2026-09-22 |
-|  | [Arena video edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet) | 1197.3 | 51.8 | ▇▇▇▇▇▇ 19% | 2026-08-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 46.7** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1204.6    45.4   2026-09-22   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>        1197.3    51.8   2026-08-27   19% ▇▇
+prior                   pull toward the middle            49.9                 3% ▇
+                        weighted average                = 46.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.11/sec · [replicate.com ↗](https://replicate.com/kwaivgi/kling-o1)
+api (Replicate) · $0.11/sec · [replicate.com](https://replicate.com/kwaivgi/kling-o1)
 
-[price source](https://replicate.com/kwaivgi/kling-o1) · USD per second of output video on Replicate's official kwaivgi/kling-o1 model, pro mode without video input. Other variants: std $0.084/s, std with video input $0.126/s, pro with video input (e.g. video editing) $0.168/s. Replicate does not state the output resolution per mode. Product: Replicate model API. API model: kwaivgi/kling-o1. Settings: mode=pro (the default), text prompt, no reference or edit video. Price basis: published per-second-of-output list rate. Kling's own developer pricing page lists no Kling O1 video price. Currency: USD. Not a Kling direct tariff. Replicate official model page, observed 2026-09-26.
+<sub>[price source](https://replicate.com/kwaivgi/kling-o1): USD per second of output video on Replicate's official kwaivgi/kling-o1 model, pro mode without video input. Other variants: std $0.084/s, std with video input $0.126/s, pro with video input (e.g. video editing) $0.168/s. Replicate does not state the output resolution per mode. Product: Replicate model API. API model: kwaivgi/kling-o1. Settings: mode=pro (the default), text prompt, no reference or edit video. Price basis: published per-second-of-output list rate. Kling's own developer pricing page lists no Kling O1 video price. Currency: USD. Not a Kling direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

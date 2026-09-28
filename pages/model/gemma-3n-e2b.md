@@ -6,47 +6,59 @@
 
 Google · released 2025-06 · 5.44B params (2B active) · gemma
 
-**score 22.5** ±5.0
-
-#198 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 22.5** ±5.0 · #198 of 205 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 56.3% | 13.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 49% | 2025-07-15 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 52.0% | 26.3 | ▇▇▇▇▇▇▇▇▇▇▇▇ 40% | 2026-09-19 |
-| prior | pull toward the middle |  | 50.0 | ▇▇▇ 11% |  |
-|  | **weighted average** |  | **= 22.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  56.3%    13.2   2025-07-15   49% ▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  52.0%    26.3   2026-09-19   40% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                11% ▇
+                        weighted average                       = 22.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (10)
+<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Google DeepMind Gemma 3n E2B IT model card | [MGSM](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 53.1% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [Global-MMLU](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 55.1% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [GPQA Diamond (Google RelaxedAccuracy/accuracy)](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 24.8% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [LiveCodeBench v5 (window unspecified)](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 18.6% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [Codegolf v2.2](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 11.0% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [AIME 2025](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 6.7% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [MMLU](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 60.1% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [MBPP](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 56.6% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [HumanEval](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 66.5% | too few models have this result to calibrate it yet |
-| Google DeepMind Gemma 3n E2B IT model card | [MMLU-Pro](https://ai.google.dev/gemma/docs/gemma-3n/model_card) | 40.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (10)</summary>
+
+<pre>
+source                  test                            score  why
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM</a>                            53.1%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU</a>                     55.1%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">GPQA Diamond (Google RelaxedA…</a>  24.8%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">LiveCodeBench v5 (window unsp…</a>  18.6%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Codegolf v2.2</a>                   11.0%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025</a>                        6.7%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU</a>                            60.1%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP</a>                            56.6%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval</a>                       66.5%  too few models have it yet
+Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro</a>                        40.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-[context specification source](https://ai.google.dev/gemma/docs/gemma-3n/model_card) · Publisher advertises 32K total context, shared between input and output. Stored as the stated rounded 32K; no unsupported 32,768-token precision inferred.
+<sub>[context source](https://ai.google.dev/gemma/docs/gemma-3n/model_card): Publisher advertises 32K total context, shared between input and output. Stored as the stated rounded 32K; no unsupported 32,768-token precision inferred.</sub>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~3.76GB | 22.5 | `ollama run gemma3n:e2b` |
-| 8-bit q8\_0 | ~7.03GB | 22.5 | `ollama run gemma3n:e2b-it-q8_0` |
+<pre>
+download         size  score
+4-bit q4_k_m  ~3.76GB   22.5
+8-bit q8_0    ~7.03GB   22.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 4-bit q4_k_m
+ollama run gemma3n:e2b
+# 8-bit q8_0
+ollama run gemma3n:e2b-it-q8_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gemma-3n-e2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,29 +6,30 @@
 
 AssemblyAI · released 2026-07 · proprietary
 
-**score 59.8** ±3.1
-
-#3 of 28 · from 3 benchmark results across 1 source
+**score 59.8** ±3.1 · #3 of 28 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-verli-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="verliapp/stt-benchmark · independent STT accuracy benchmark"> verliapp/stt-benchmark · independent STT accuracy benchmark | [verli STT benchmark · SPGISpeech 1,200-clip sample WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json) | 1.9% | 61.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 59% | 2026-07-19 |
-|  | [verli STT benchmark · Earnings-22 WER (2,741 utt.)](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json) | 10.4% | 58.8 | ▇▇▇▇▇▇▇▇ 28% | 2026-07-19 |
-|  | [verli STT benchmark · LibriSpeech test-clean WER](https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json) | 1.6% | 58.4 | ▇▇▇ 9% | 2026-07-19 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 59.8** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-verli-mit"></a>verliapp/stt-benchmar…  <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_spgispeech.json">verli STT benchmark · SPGISpe…</a>   1.9%    61.1   2026-07-19   59% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_earnings22.json">verli STT benchmark · Earning…</a>  10.4%    58.8   2026-07-19   28% ▇▇▇
+                        <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSp…</a>   1.6%    58.4   2026-07-19    9% ▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 59.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: verliapp/stt-benchmark · independent STT accuracy benchmark ([MIT](../../licenses/speech-stt-verli-mit.txt))</sub>
 
 ## How to run it
 
-api (AssemblyAI) · $0.0035/audio min · [www.assemblyai.com ↗](https://www.assemblyai.com/pricing)
+api (AssemblyAI) · $0.0035/audio min · [assemblyai.com](https://www.assemblyai.com/pricing)
 
-[price source](https://www.assemblyai.com/pricing) · USD per input audio minute: AssemblyAI lists Universal-3.5 Pro (async pre-recorded) at $0.21/hr pay as you go (÷60). Product: AssemblyAI async speech-to-text API. API model: universal-3.5-pro. Settings: pay-as-you-go, async. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons (keyterms/prompting $0.05/hr, diarization $0.02/hr, etc.), Realtime/Sync APIs. Currency: USD. AssemblyAI official pricing page, observed 2026-09-25.
+<sub>[price source](https://www.assemblyai.com/pricing): USD per input audio minute: AssemblyAI lists Universal-3.5 Pro (async pre-recorded) at $0.21/hr pay as you go (÷60). Product: AssemblyAI async speech-to-text API. API model: universal-3.5-pro. Settings: pay-as-you-go, async. Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: add-ons (keyterms/prompting $0.05/hr, diarization $0.02/hr, etc.), Realtime/Sync APIs. Currency: USD. AssemblyAI official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

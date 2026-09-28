@@ -6,27 +6,28 @@
 
 Inworld · proprietary
 
-**score 56.5** ±3.0
-
-#14 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.5** ±3.0 · #14 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-vapi-humanness-20260925"></a><img src="../../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings"> The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) | [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://humannessindex.vapi.ai/api/models) | 1227.3 | 56.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 96% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 56.5** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1227.3    56.7   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 4% ▇
+                        weighted average                        = 56.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $10.00/M chars · [fal.ai ↗](https://fal.ai/models/fal-ai/inworld-tts)
+api (fal.ai) · $10.00/M chars · [fal.ai](https://fal.ai/models/fal-ai/inworld-tts)
 
-[price source](https://fal.ai/models/fal-ai/inworld-tts) · USD per 1M input characters: fal prices its 'Text to Speech Endpoint for Inworld's TTS-1.5 Max' (fal-ai/inworld-tts) at $0.01 per 1000 characters (x1000; endpoint billing record: billing\_unit 1000 characters, price 0.01). Inworld's own pricing page lists only TTS-2 models, and Inworld's docs mark inworld-tts-1.5-max as deprecated (not recommended for new projects) but not discontinued. Product: fal text-to-speech endpoint. API model: fal-ai/inworld-tts (Inworld TTS-1.5 Max). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: DeepInfra lists inworld-ai/realtime-tts-1.5-max (its replacement id for inworld-tts-1.5-max) at $50.00/1M characters. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/inworld-tts): USD per 1M input characters: fal prices its 'Text to Speech Endpoint for Inworld's TTS-1.5 Max' (fal-ai/inworld-tts) at $0.01 per 1000 characters (x1000; endpoint billing record: billing\_unit 1000 characters, price 0.01). Inworld's own pricing page lists only TTS-2 models, and Inworld's docs mark inworld-tts-1.5-max as deprecated (not recommended for new projects) but not discontinued. Product: fal text-to-speech endpoint. API model: fal-ai/inworld-tts (Inworld TTS-1.5 Max). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: DeepInfra lists inworld-ai/realtime-tts-1.5-max (its replacement id for inworld-tts-1.5-max) at $50.00/1M characters. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

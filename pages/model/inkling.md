@@ -6,68 +6,80 @@
 
 Thinking Machines · released 2026-07 · 975B params (41B active) · apache-2.0
 
-**score 57.5** ±1.2
-
-#68 of 205 · from 8 benchmark results across 2 sources
+**score 57.5** ±1.2 · #68 of 205 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [FrontierMath tiers 1–3 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv) | 33.3% | 56.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 43% | 2026-08-06 |
-|  | [FrontierMath tier 4 v2](https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv) | 4.9% | 56.3 | ▇▇▇▇▇▇▇ 24% | 2026-08-06 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 88.3% | 61.7 | ▇ 5% | 2026-08-05 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 88.9% | 58.7 | ▇ 4% | 2026-08-05 |
-|  | [SimpleQA Verified](https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv) | 40.3% | 62.4 | ▇ 4% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 21.0% | 63.0 | ▇ 1% | 2026-08-05 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1411.5 | 57.5 | ▇▇▇ 10% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1440.1 | 59.6 | ▇▇ 6% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 57.5** |  |  |
+<pre>
+source                  test                        score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   33.3%    56.8   2026-08-06   43% ▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>       4.9%    56.3   2026-08-06   24% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                88.3%    61.7   2026-08-05    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    88.9%    58.7   2026-08-05    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           40.3%    62.4   2026-08-27    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    63.0   2026-08-05    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1411.5    57.5   2026-09-24   10% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1440.1    59.6   2026-09-13    6% ▇
+prior                   pull toward the middle               50.0                 1% ▇
+                        weighted average                   = 57.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (20)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| thinkingmachines/Inkling-Small model card | [AIME 2026](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 97.1% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [BrowseComp with context management](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 77.1% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [CharXiv (reasoning questions)](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 78.1% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [CritPt](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 5.4% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [Global-MMLU-Lite](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 88.7% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [GPQA Diamond](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 87.2% | too few results from this source to calibrate it; another source's number for this test is used |
-| thinkingmachines/Inkling-Small model card | [Humanity's Last Exam](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 29.7% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [Humanity's Last Exam with tools](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 46.0% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [HMMT February 2026](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 86.3% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [IFBench (aggregation unspecified)](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 79.8% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [MCP-Atlas (public set)](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 78.8% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [MMAU](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 77.2% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [MMMU Pro](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 73.5% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [SciCode (level unspecified)](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 46.1% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [SimpleQA Verified](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 43.9% | too few results from this source to calibrate it; another source's number for this test is used |
-| thinkingmachines/Inkling-Small model card | [SWE-bench Pro](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 54.3% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [SWE-bench Verified](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 77.6% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [τ³-bench Banking](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 23.7% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [Terminal-Bench 2.1](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 63.8% | too few models have this result to calibrate it yet |
-| thinkingmachines/Inkling-Small model card | [Toolathlon-Verified](https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md) | 45.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (20)</summary>
+
+<pre>
+source                  test                            score  why
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">AIME 2026</a>                       97.1%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">BrowseComp with context manag…</a>  77.1%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CharXiv (reasoning questions)</a>   78.1%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CritPt</a>                           5.4%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Global-MMLU-Lite</a>                88.7%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">GPQA Diamond</a>                    87.2%  another source's result is used
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam</a>            29.7%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam with too…</a>  46.0%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">HMMT February 2026</a>              86.3%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">IFBench (aggregation unspecif…</a>  79.8%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MCP-Atlas (public set)</a>          78.8%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMAU</a>                            77.2%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">MMMU Pro</a>                        73.5%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SciCode (level unspecified)</a>     46.1%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SimpleQA Verified</a>               43.9%  another source's result is used
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro</a>                   54.3%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified</a>              77.6%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">τ³-bench Banking</a>                23.7%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1</a>              63.8%  too few models have it yet
+thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified</a>             45.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Deep Infra) · $1.72/M blended · $0.95 in / $4.05 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/models)
+api (Deep Infra) · $1.72/M blended · $0.95 in / $4.05 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/thinkingmachines/Inkling.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/thinkingmachines/Inkling.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/thinkingmachines/inkling.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/thinkingmachines/inkling.toml)
+<pre>
+download               size  score
+4-bit ud-q4_k_xl   ~585.5GB   57.5
+2-bit ud-q2_k_xl     ~293GB   57.5
+1-bit ud-iq1_s    ~146.75GB   57.5
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~585.5GB | 57.5 | `llama-server -hf unsloth/inkling-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~293GB | 57.5 | `llama-server -hf unsloth/inkling-GGUF:UD-Q2_K_XL` |
-| 1-bit ud-iq1\_s | ~146.75GB | 57.5 | `llama-server -hf unsloth/inkling-GGUF:UD-IQ1_S` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/inkling-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/inkling-GGUF:UD-Q2_K_XL
+# 1-bit ud-iq1_s
+llama-server -hf unsloth/inkling-GGUF:UD-IQ1_S
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/inkling) · [JSON](https://whatmodel.sh/api?format=json&all=1)

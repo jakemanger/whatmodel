@@ -6,39 +6,46 @@
 
 MiniMax · released 2026-02 · 230B params (10B active) · modified-mit
 
-**score 51.9** ±2.0
-
-#106 of 205 · from 5 benchmark results across 3 sources
+**score 51.9** ±2.0 · #106 of 205 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="arcprize-model-baseline-outputs"></a><img src="../../icons/huggingface.co.png" width="14" alt="ARC Prize Foundation model_baseline outputs on ARC-AGI-1/2 public evaluation sets"> ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets | [ARC-AGI-1 public evaluation set (ARC Prize model\_baseline, pass@2)](https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5) | 59.1% | 51.1 | ▇▇▇▇▇▇▇▇ 26% | 2026-06-04 |
-|  | [ARC-AGI-2 public evaluation set (ARC Prize model\_baseline, pass@2)](https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/minimax-m2.5) | 5.4% | 50.6 | ▇▇▇▇▇▇ 21% | 2026-06-04 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1384.1 | 55.7 | ▇▇▇▇▇▇▇▇ 27% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1390.3 | 50.4 | ▇▇▇▇▇ 15% | 2026-09-13 |
-| <a name="paper-2608.30248v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation — authors' own model runs"> DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation — authors' own model runs ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) | [DSEffi-Bench Pass (1,000 data-science tasks, greedy)](https://arxiv.org/html/2608.30248v1) | 42.8% | 48.7 | ▇▇▇ 9% | 2026-08-31 |
-| prior | pull toward the middle |  | 50.0 | ▇ 2% |  |
-|  | **weighted average** |  | **= 51.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5">ARC-AGI-1 public evaluation s…</a>   59.1%    51.1   2026-06-04   26% ▇▇▇
+                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/minimax-m2.5">ARC-AGI-2 public evaluation s…</a>    5.4%    50.6   2026-06-04   21% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1384.1    55.7   2026-09-24   27% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1390.3    50.4   2026-09-13   15% ▇▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   42.8%    48.7   2026-08-31    9% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 51.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/text-generation)
+api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platform.minimax.io](https://platform.minimax.io/docs/guides/text-generation)
 
-[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md) · USD per 1M tokens, MiniMax Open Platform pay-as-you-go, MiniMax-M2.5 (listed under 'Legacy Models'): input $0.3, output $1.2. Prompt-cache read $0.03 and write $0.375, and MiniMax-M2.5-highspeed ($0.6/$2.4) excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25.
+<sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per 1M tokens, MiniMax Open Platform pay-as-you-go, MiniMax-M2.5 (listed under 'Legacy Models'): input $0.3, output $1.2. Prompt-cache read $0.03 and write $0.375, and MiniMax-M2.5-highspeed ($0.6/$2.4) excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.5.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.5.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~138.5GB   51.9
+2-bit ud-q2_k_xl   ~69.5GB   51.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~138.5GB | 51.9 | `llama-server -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~69.5GB | 51.9 | `llama-server -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/MiniMax-M2.5-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/MiniMax-M2.5-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/minimax-m2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

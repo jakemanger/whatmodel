@@ -6,32 +6,39 @@
 
 Zyphra · released 2025-02 · 1.6B params · apache-2.0
 
-**score 35.5** ±3.4
-
-#35 of 36 · from 3 benchmark results across 2 sources
+**score 35.5** ±3.4 · #35 of 36 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-emergent-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard"> EmergentTTS-Eval six-category leaderboard | [EmergentTTS · 6-category preference](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 14.1% | 32.9 | ▇▇▇▇▇▇▇▇▇▇▇▇ 40% | 2025-08-10 |
-|  | [EmergentTTS · 6-category WER](https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md) | 19.1% | 38.7 | ▇▇▇▇ 13% | 2025-08-10 |
-| <a name="speech-emergent-v1-paper-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS"> EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt)) | [EmergentTTS · v1 paper automatic MOS (WV-MOS)](https://arxiv.org/html/2505.23009v1) | 3.39 / 5 | 35.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 42% | 2025-05-29 |
-| prior | pull toward the middle |  | 49.9 | ▇ 5% |  |
-|  | **weighted average** |  | **= 35.5** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     14.1%    32.9   2025-08-10   40% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       19.1%    38.7   2025-08-10   13% ▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.39 / 5    35.4   2025-05-29   42% ▇▇▇▇▇
+prior                   pull toward the middle                      49.9                 5% ▇
+                        weighted average                          = 35.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt)) · EmergentTTS-Eval v1 paper ([CC BY 4.0](../../licenses/speech-emergent-v1-paper-ccby.txt))</sub>
 
 ## How to run it
 
-api  · price unknown · [zyphra.com ↗](https://zyphra.com)
+api  · price unknown · [zyphra.com](https://zyphra.com)
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~4.34GB | 35.5 | `git clone https://github.com/Zyphra/Zonos && cd Zonos && uv sync && uv pip install -e . && uv run sample.py` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~4.34GB   35.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+git clone https://github.com/Zyphra/Zonos && cd Zonos && uv sync && uv pip install -e . && uv run sample.py
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/zonos-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

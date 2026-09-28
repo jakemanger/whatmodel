@@ -6,22 +6,23 @@
 
 Alibaba (Qwen) · apache-2.0
 
-**score 39.3** ±3.8
-
-comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.3** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-persian-triple-threat-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Persian ASR Triple Threat Leaderboard (Reza2kn)"> Persian ASR Triple Threat Leaderboard (Reza2kn) | [Persian ASR Triple Threat · VisualEars6669 + FLEURS-fa equal-weight WER](https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json) | 52.2% | 35.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 75% | 2026-07-06 |
-| <a name="speech-stt-arabic-oual-elm-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Universal Arabic ASR Leaderboard (Elm Research Center)"> Open Universal Arabic ASR Leaderboard (Elm Research Center) | [Open Universal Arabic ASR Leaderboard · 6-test-set average WER](https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py) | 42.2% | 49.9 | ▇▇▇▇▇▇ 19% | 2026-01-30 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 39.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/results.json">Persian ASR Triple Threat · V…</a>  52.2%    35.7   2026-07-06   75% ▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.2%    49.9   2026-01-30   19% ▇▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 39.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Persian ASR Triple Threat Leaderboard ([Apache-2.0](../../licenses/speech-stt-persian-triple-threat-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 

@@ -6,9 +6,7 @@
 
 Tencent · released 2025-09 · 80B params · tencent-hunyuan-community
 
-**score 57.5** ±2.2
-
-#29 of 87 · from 3 benchmark results across 3 sources
+**score 57.5** ±2.2 · #29 of 87 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,27 +14,38 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1149.5 | 58.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 85% | 2026-09-24 |
-| <a name="visual-fepbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench)"> Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench) ([CC0-1.0](../../licenses/visual-fepbench.txt)) | [FEPBench instruction faithfulness](https://arxiv.org/html/2606.05949v2#S4.T2) | 41.0% | 51.5 | ▇▇ 7% | 2026-06-05 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 50.8% | 52.5 | ▇▇ 6% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 57.5** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1149.5    58.6   2026-09-24   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   41.0%    51.5   2026-06-05    7% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   50.8%    52.5   2026-05-27    6% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 57.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Replicate (PrunaAI optimized)) · $0.080/image · [replicate.com ↗](https://replicate.com/tencent/hunyuan-image-3)
+api (Replicate (PrunaAI optimized)) · $0.080/image · [replicate.com](https://replicate.com/tencent/hunyuan-image-3)
 
-[price source](https://replicate.com/tencent/hunyuan-image-3) · USD per output image on Replicate's tencent/hunyuan-image-3 model (billing: per output image; hardware time not added). Current version served from replicate-pruna/hunyuan-image-3 (PrunaAI optimized). Product: Replicate model API. API model: tencent/hunyuan-image-3. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/tencent/hunyuan-image-3): USD per output image on Replicate's tencent/hunyuan-image-3 model (billing: per output image; hardware time not added). Current version served from replicate-pruna/hunyuan-image-3 (PrunaAI optimized). Product: Replicate model API. API model: tencent/hunyuan-image-3. Settings: one output image. Price basis: published list rate. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 (official, multi-GPU) · nvidia only | ~192.5GB | 57.5 | `git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0 --local-dir ./HunyuanImage-3 && python3 run_image_gen.py --model-id ./HunyuanImage-3 --verbose 1 --prompt "a cat holding a sign" --bot-task image --image-size "1024x1024" --save ./image.png --rewrite 0` |
-| nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) · nvidia only | ~48.5GB | 57.5 | `hf download EricRollei/HunyuanImage-3-NF4-v2 --local-dir ./HunyuanImage-3-NF4 && uv run --with transformers --with accelerate --with torch --with bitsandbytes python -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-NF4', trust_remote_code=True, device_map='auto'); m.load_tokenizer('./HunyuanImage-3-NF4'); m.generate_image(prompt='a cat holding a sign', stream=True).save('out.png')"` |
+<pre>
+version                                      needs  score
+bf16 (official, multi-GPU) · nvidia only  ~192.5GB   57.5
+nf4 (community, EricRollei/HunyuanImage…   ~48.5GB   57.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 (official, multi-GPU) · nvidia only
+git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0 --local-dir ./HunyuanImage-3 && python3 run_image_gen.py --model-id ./HunyuanImage-3 --verbose 1 --prompt "a cat holding a sign" --bot-task image --image-size "1024x1024" --save ./image.png --rewrite 0
+# nf4 (community, EricRollei/HunyuanImage-3-NF4-v2) · nvidia only
+hf download EricRollei/HunyuanImage-3-NF4-v2 --local-dir ./HunyuanImage-3-NF4 && uv run --with transformers --with accelerate --with torch --with bitsandbytes python -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-NF4', trust_remote_code=True, device_map='auto'); m.load_tokenizer('./HunyuanImage-3-NF4'); m.generate_image(prompt='a cat holding a sign', stream=True).save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

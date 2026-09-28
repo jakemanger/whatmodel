@@ -6,118 +6,125 @@
 
 updated 2026-09-26 03:10 UTC · 36 models · scores combine 40 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
-## For your machine
+Run `curl "whatmodel.sh/tts?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/tts` for this list in your terminal.
 
-This list shows every model with a way to run it. To see what fits your machine, run the command for your OS, or pick one of the common machines below on the site.
+<details><summary>Linux, Windows and common machines</summary>
 
 ```sh
-curl "whatmodel.sh/tts?mac=$(sysctl -n hw.memsize)"   # Mac
 curl "whatmodel.sh/tts?ram=$(awk '/MemT/{print $2}' /proc/meminfo)&vram=$(nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits 2>/dev/null || cat /sys/class/drm/card*/device/mem_info_vram_total 2>/dev/null | sort -n | tail -1)"   # Linux
 curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&vram=$(nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits 2>$null)"   # Windows
 ```
 
 [16GB Mac](https://whatmodel.sh/tts?ram=16&gpu=apple) · [32GB Mac](https://whatmodel.sh/tts?ram=32&gpu=apple) · [64GB Mac](https://whatmodel.sh/tts?ram=64&gpu=apple) · [128GB Mac](https://whatmodel.sh/tts?ram=128&gpu=apple) · [12GB graphics card](https://whatmodel.sh/tts?ram=32&gpu=card&vram=12) · [24GB graphics card](https://whatmodel.sh/tts?ram=64&gpu=card&vram=24) · [16GB, no graphics card](https://whatmodel.sh/tts?ram=16&gpu=none)
 
-Run `curl whatmodel.sh/tts` to get this list in your terminal (add `?format=json` for agents).
-
-## Leaderboard
-
-<details><summary>score vs API price (USD per 1M characters, log)</summary>
+</details>
 
 ```text
-  score vs API price (USD per 1M characters, log)   ● open weights  ◆ API only  ─┘ best for the price
+  score vs API price
+       │                                   Higgs Audio V3 TTS ● Voxtral TTS (4B)
+    60 ┤ · · · · ··· · · · · · · · ·Simba 3.2·◆───────◇──────●┘· ◇ · · ·◇· · · ·◇· ◇ · · · ◇ ·
+       │  ●───────────────────────────────────┘              ◇ ◇     ◇  ◇       ◇  ◇◇
+    40 ┤ · · · · ··· · · · · · · · · · · · · · · · · ··· · · ∘◇· · · ∘ · · ◇ · · · · · · · ◇ ·
+       │                                         ∘
+       └──────────┬───────────────────────────────────┬────────────────────────────────────┬──
+                 $1                                  $10                                 $100
+```
+
+<details><summary>Full charts: score vs price and memory</summary>
+
+```text
+  score vs API price (USD per 1M characters, log)
+  ● open weights  ◆ API only  ─┘ best for the price
        │
-       │        ·                             ·     ● Voxtral TTS (4B)     ·
-       │                                            Higgs Audio V3 TTS
-       │        ·                      ◆─Simba 3.2─●┘             ◇        ·
-    60 ┤ · · · · · · · · · · · · · · · │ · · · · · ◇ · · · ·◇· · · · ◇ · · · ·
-       │        ·                      │      ◇    ◇  ◇                    ◇
-       │                               │           ∘     ◇        ◇
-       │        ·                      │      ·    ◇        ◇     ◇  ◇◇    ·
-       │                               │                  ◇ ◇
-    50 ┤ · · · ··· · · · · · · · · · · │ · · ··· · · · · · · · · · · · · · · ·
-       │  ●─Kokoro 82M v1.0────────────┘             ◇
-       │        ·                             ·                ◇           ◇
-       │                                           ∘     ∘
-    40 ┤ · · · ··· · · · · · · · · · · · · · ··· · · · · · · · · · · · · · · ·
-       │                                            ◇
-       │        ·                             ·                            ·
-       │                                 ∘
-       │        ·                             ·                            ·
-       └────────┬─────────────────────────────┬────────────────────────────┬──
-               $1                            $10                         $100
+       │          ·                                   ·       ● Voxtral TTS (4B)           ·
+       │                                                      Higgs Audio V3 TTS
+       │          ·                           ◆─Simba 3.2────●┘                 ◇          ·
+    60 ┤ · · · · · · · · · · · · · · · · · · ·│· · · · · · · ◇ · · · · ·◇· · · · · ◇ · · · · ·
+       │          ·                           │       ◇      ◇   ◇                         ◇
+       │                                      │              ∘       ◇          ◇
+       │          ·                           │       ·      ◇          ◇       ◇  ◇◇      ·
+       │                                      │                      ◇  ◇
+    50 ┤ · · · · ··· · · · · · · · · · · · · ·│· · · ··· · · · · · · · · · · · · · · · · · · ·
+       │  ●─Kokoro 82M v1.0───────────────────┘                ◇
+       │          ·                                   ·                    ◇               ◇
+       │                                                     ∘       ∘
+    40 ┤ · · · · ··· · · · · · · · · · · · · · · · · ··· · · · · · · · · · · · · · · · · · · ·
+       │                                                      ◇
+       │          ·                                   ·                                    ·
+       │                                         ∘
+       │          ·                                   ·                                    ·
+       └──────────┬───────────────────────────────────┬────────────────────────────────────┬──
+                 $1                                  $10                                 $100
+```
+
+```text
+  score vs memory to run it (GB, log)
+  ─┘ best for the memory
+       │
+       │  ·                       ·                             ·     Voxtral TTS (4B) ●
+       │                                                                               │
+       │  ·                       ·                             ·                      ∘
+    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · ·
+       │  ·                       ·                             ·           VibeVoice 1.5B
+       │                                                                   ●───────────┘   ∘
+       │  ·                       ·                             ·          │           ·
+       │                                                                   │
+    50 ┤ ··· · · · · · · · · · · ··· · · · · · · · · · · · · · ··· · · · · │ · · · · · · · · ·
+       │  ●─Kokoro 82M v1.0────────────────────────────────────────────────┘
+       │  ·                       ·                             ·                      ·
+       │
+       │  ·                       ·            ∘                ·                      ·
+    40 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+       │  ·                       ·                             ·                      ·
+       │                          ∘                      ∘
+       │  ·                       ·                             ·                      ·
+       └──┬───────────────────────┬─────────────────────────────┬──────────────────────┬──────
+         1GB                     2GB                           5GB                   10GB
 ```
 
 </details>
 
-<details><summary>score vs memory to run it (GB, log)</summary>
+<pre>
+ #  model                       score  where                 RAM  get it
+ 1  <a href="model/voxtral-tts.md">Voxtral TTS (4B)</a>            66±3   api $16.00/M chars         <a href="https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03">docs.mistral.ai</a>
+ 2  <a href="model/gemini-3-1-flash-tts-preview.md">Gemini 3.1 Flash TTS Prev…</a>  62±2   api $50.00/M chars         <a href="https://fal.ai/models/fal-ai/gemini-3.1-flash-tts">fal.ai</a>
+ 3  <a href="model/higgs-audio-v3-tts.md">Higgs Audio V3 TTS</a>          62±3   api $15.00/M chars         <a href="https://docs.boson.ai">docs.boson.ai</a>
+ 4  <a href="model/speechify-simba-3-2.md">Simba 3.2</a>                   61±3*  api $6.00/M chars          <a href="https://speechify.ai/pricing">speechify.ai</a>
+ 5  <a href="model/xai-grok-tts.md">Grok TTS</a>                    60±3*  api $15.00/M chars         <a href="https://docs.x.ai/developers/model-capabilities/audio/text-to-speech">docs.x.ai</a>
+ 6  <a href="model/minimax-speech-2-8-turbo.md">MiniMax Speech 2.8 Turbo</a>    60±3*  api $60.00/M chars         <a href="https://platform.minimax.io/docs/pricing/overview">platform.minimax.io</a>
+ 7  <a href="model/google-chirp-3-hd.md">Chirp 3: HD</a>                 59±4*  api $30.00/M chars         <a href="https://cloud.google.com/text-to-speech/pricing">cloud.google.com</a>
+ 8  <a href="model/qwen-audio-3-0-tts-plus.md">Qwen-Audio-3.0-TTS-Plus</a>     58±3   api $20.00/M chars         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+ 9  <a href="model/elevenlabs-v3.md">Eleven v3</a>                   58±1   api $100.00/M chars        <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+10  <a href="model/fish-audio-s2-1-pro.md">Fish Audio S2.1 Pro</a>         58±3*  api $15.00/M chars         <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+11  <a href="model/minimax-speech-2-8-hd.md">MiniMax Speech 2.8 HD</a>       57±2   api $100.00/M chars        <a href="https://platform.minimax.io/docs/pricing/overview">platform.minimax.io</a>
+12  <a href="model/minimax-speech-02-hd.md">MiniMax Speech-02-HD</a>        57±3   api $100.00/M chars        <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+13  <a href="model/vibevoice-1-5b.md">VibeVoice 1.5B</a>              57±5*  local                ~7GB  git clone https://g…
+14  <a href="model/inworld-tts-1-5-max.md">Inworld TTS-1.5 Max</a>         57±3*  api $10.00/M chars         <a href="https://fal.ai/models/fal-ai/inworld-tts">fal.ai</a>
+15  <a href="model/fish-audio-s2-pro.md">Fish Audio S2 Pro</a>           56±2   api $15.00/M chars         <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+16  <a href="model/elevenlabs-flash-v2-5.md">Eleven Flash v2.5</a>           56±2   api $50.00/M chars         <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+17  <a href="model/elevenlabs-turbo-v2.md">Eleven Turbo v2</a>             56±3*  api $50.00/M chars         <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+18  <a href="model/elevenlabs-flash-v2.md">Eleven Flash v2</a>             56±3*  api $50.00/M chars         <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+19  <a href="model/inworld-realtime-tts-2.md">Inworld Realtime TTS-2</a>      54±2   api $25.00/M chars         <a href="https://replicate.com/inworld/realtime-tts-2">replicate.com</a>
+20  <a href="model/cartesia-sonic-3.md">Sonic 3</a>                     54±2   api $65.00/M chars         <a href="https://www.together.ai/models/cartesia-sonic-3">together.ai</a>
+21  <a href="model/minimax-speech-02-turbo.md">MiniMax Speech-02-Turbo</a>     54±3*  api $60.00/M chars         <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+22  <a href="model/openai-tts-1.md">TTS-1</a>                       53±3   api $15.00/M chars         <a href="https://developers.openai.com/api/docs/pricing">developers.openai.c…</a>
+23  <a href="model/hume-octave.md">Octave TTS (Octave 1)</a>       53±3   api $50.00/M chars         <a href="https://www.hume.ai/pricing">hume.ai</a>
+24  <a href="model/deepgram-aura-2.md">Deepgram Aura 2</a>             52±2   api $30.00/M chars         <a href="https://deepgram.com/pricing">deepgram.com</a>
+25  <a href="model/openai-tts-1-hd.md">TTS-1 HD</a>                    52±6*  api $30.00/M chars         <a href="https://developers.openai.com/api/docs/pricing">developers.openai.c…</a>
+26  <a href="model/cosyvoice-v3-plus.md">CosyVoice v3 Plus</a>           52±4*  api $26.00/M chars         <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+27  <a href="model/smallest-lightning-v3-1.md">Lightning v3.1</a>              48±3*  api $17.50/M chars         <a href="https://smallest.ai/pricing">smallest.ai</a>
+28  <a href="model/kokoro-82m.md">Kokoro 82M v1.0</a>             47±4   api $0.62/M chars          <a href="https://deepinfra.com/hexgrad/Kokoro-82M">deepinfra.com</a>
+29  <a href="model/gradium-tts.md">Gradium TTS</a>                 45±3*  api $38.00/M chars         <a href="https://docs.gradium.ai/api-reference/endpoint/tts-post">docs.gradium.ai</a>
+30  <a href="model/elevenlabs-multilingual-v2.md">Eleven Multilingual v2</a>      45±3   api $100.00/M chars        <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+31  <a href="model/orpheus-tts-0-1-finetune-prod.md">Orpheus TTS 3B 0.1 (finet…</a>  43±3   api $15.00/M chars         <a href="https://docs.together.ai/docs/serverless/models">docs.together.ai</a>
+32  <a href="model/chatterbox.md">Chatterbox</a>                  42±4   api $25.00/M chars         <a href="https://replicate.com/resemble-ai/chatterbox">replicate.com</a>
+33  <a href="model/amazon-polly-neural.md">Amazon Polly Neural</a>         38±4*  api $16.00/M chars         <a href="https://aws.amazon.com/polly/pricing">aws.amazon.com</a>
+34  <a href="model/openaudio-s1-mini.md">OpenAudio S1 Mini</a>           37±9*  api price unknown          <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+35  <a href="model/zonos-v0-1.md">Zonos v0.1</a>                  36±3   api price unknown          <a href="https://zyphra.com">zyphra.com</a>
+36  <a href="model/sesame-csm-1b.md">Sesame CSM-1B</a>               33±3   api $7.00/M chars          <a href="https://deepinfra.com/sesame/csm-1b">deepinfra.com</a>
+</pre>
 
-```text
-  score vs memory to run it (GB, log)   ─┘ best for the memory
-       │
-       │  ·                  ·                        ·Voxtral TTS (4B) ●
-       │                                                                │
-       │  ·                  ·                        ·                 ∘
-    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·│· · ·
-       │  ·                  ·                        ·                 │
-       │                                        VibeVoice 1.5B ●────────┘  ∘
-       │  ·                  ·                        ·        │        ·
-       │                                                       │
-    50 ┤ ··· · · · · · · · · · · · · · · · · · · · · ··· · · · │ · · · ··· · ·
-       │  ●─Kokoro 82M v1.0────────────────────────────────────┘
-       │  ·                  ·                        ·                 ·
-       │
-       │  ·                  ·          ∘             ·                 ·
-    40 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │  ·                  ·                        ·                 ·
-       │                     ∘                  ∘
-       │  ·                  ·                        ·                 ·
-       └──┬──────────────────┬────────────────────────┬─────────────────┬─────
-         1GB                2GB                      5GB              10GB
-```
-
-</details>
-
-| # | model | score | where | speed | RAM | get it | sources |
-|---:|---|---:|---|---:|---:|---|---|
-| 1 | [Voxtral TTS (4B)](model/voxtral-tts.md) <sub>Mistral</sub> | 66 ±3 | api $16.00/M chars |  |  | [docs.mistral.ai ↗](https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03) | <a href="model/voxtral-tts.md#speech-voxtral-tts-report"><img src="../icons/arxiv.org.png" width="14" alt="Voxtral TTS (lab) 96%"></a> |
-| 2 | [Gemini 3.1 Flash TTS Preview](model/gemini-3-1-flash-tts-preview.md) <sub>Google</sub> | 62 ±2 | api $50.00/M chars |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/gemini-3.1-flash-tts) | <a href="model/gemini-3-1-flash-tts-preview.md#speech-zonos2-report-bysa"><img src="../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results) 66%"></a> <a href="model/gemini-3-1-flash-tts-preview.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 21%"></a> <a href="model/gemini-3-1-flash-tts-preview.md#speech-ztts1-eval-apache"><img src="../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra) 6%"></a> <a href="model/gemini-3-1-flash-tts-preview.md#speech-amharic-addis-bysa"><img src="../icons/huggingface.co.png" width="14" alt="Addis AI Amharic TTS benchmark 6%"></a> |
-| 3 | [Higgs Audio V3 TTS](model/higgs-audio-v3-tts.md) <sub>Boson AI</sub> | 62 ±3 | api $15.00/M chars |  |  | [docs.boson.ai ↗](https://docs.boson.ai) | <a href="model/higgs-audio-v3-tts.md#speech-higgs3-sglang-apache"><img src="../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) (lab) 74%"></a> <a href="model/higgs-audio-v3-tts.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 22%"></a> |
-| 4 | [Simba 3.2](model/speechify-simba-3-2.md) <sub>Speechify</sub> | 61 ±3\* | api $6.00/M chars |  |  | [speechify.ai ↗](https://speechify.ai/pricing) | <a href="model/speechify-simba-3-2.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 5 | [Grok TTS](model/xai-grok-tts.md) <sub>xAI</sub> | 60 ±3\* | api $15.00/M chars |  |  | [docs.x.ai ↗](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech) | <a href="model/xai-grok-tts.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 6 | [MiniMax Speech 2.8 Turbo](model/minimax-speech-2-8-turbo.md) <sub>MiniMax</sub> | 60 ±3\* | api $60.00/M chars |  |  | [platform.minimax.io ↗](https://platform.minimax.io/docs/pricing/overview) | <a href="model/minimax-speech-2-8-turbo.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 7 | [Chirp 3: HD](model/google-chirp-3-hd.md) <sub>Google</sub> | 59 ±4\* | api $30.00/M chars |  |  | [cloud.google.com ↗](https://cloud.google.com/text-to-speech/pricing) | <a href="model/google-chirp-3-hd.md#speech-cn-news-tts-ccby"><img src="../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1 94%"></a> |
-| 8 | [Qwen-Audio-3.0-TTS-Plus](model/qwen-audio-3-0-tts-plus.md) <sub>Alibaba</sub> | 58 ±3 | api $20.00/M chars |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/qwen-audio-3-0-tts-plus.md#speech-qwen-audio3-tts-report"><img src="../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report (lab) 97%"></a> |
-| 9 | [Eleven v3](model/elevenlabs-v3.md) <sub>ElevenLabs</sub> | 58 ±1 | api $100.00/M chars |  |  | [elevenlabs.io ↗](https://elevenlabs.io/pricing/api) | <a href="model/elevenlabs-v3.md#speech-zonos2-report-bysa"><img src="../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results) 29%"></a> <a href="model/elevenlabs-v3.md#speech-qwen-audio3-tts-report"><img src="../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report 24%"></a> <a href="model/elevenlabs-v3.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 17%"></a> <a href="model/elevenlabs-v3.md#speech-voxtral-tts-report"><img src="../icons/arxiv.org.png" width="14" alt="Voxtral TTS 16%"></a> [+3](model/elevenlabs-v3.md) |
-| 10 | [Fish Audio S2.1 Pro](model/fish-audio-s2-1-pro.md) <sub>Fish Audio</sub> | 58 ±3\* | api $15.00/M chars |  |  | [docs.fish.audio ↗](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits) | <a href="model/fish-audio-s2-1-pro.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 11 | [MiniMax Speech 2.8 HD](model/minimax-speech-2-8-hd.md) <sub>MiniMax</sub> | 57 ±2 | api $100.00/M chars |  |  | [platform.minimax.io ↗](https://platform.minimax.io/docs/pricing/overview) | <a href="model/minimax-speech-2-8-hd.md#speech-qwen-audio3-tts-report"><img src="../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report 60%"></a> <a href="model/minimax-speech-2-8-hd.md#speech-cn-news-tts-ccby"><img src="../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1 25%"></a> <a href="model/minimax-speech-2-8-hd.md#speech-voicefirst-indic-ccby"><img src="../icons/arxiv.org.png" width="14" alt="Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages (arXiv:2604.21481v2) 13%"></a> |
-| 12 | [MiniMax Speech-02-HD](model/minimax-speech-02-hd.md) <sub>MiniMax</sub> | 57 ±3 | api $100.00/M chars |  |  | [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/pricing-paygo.md) | <a href="model/minimax-speech-02-hd.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 69%"></a> <a href="model/minimax-speech-02-hd.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 29%"></a> |
-| 13 | [VibeVoice 1.5B](model/vibevoice-1-5b.md) <sub>Microsoft</sub> | 57 ±5\* | local |  | ~7GB | `git clone https://github.com/vibevoice-community/VibeVoice && cd VibeVoice && pip install -e . && python demo/inference_from_file.py --model_path vibevoice/VibeVoice-1.5B --txt_path demo/text_examples/1p_abs.txt --speaker_names Alice` | <a href="model/vibevoice-1-5b.md#speech-vibevoice-mit-figure"><img src="../icons/huggingface.co.png" width="14" alt="Microsoft VibeVoice own subjective evaluation figure (lab) 88%"></a> |
-| 14 | [Inworld TTS-1.5 Max](model/inworld-tts-1-5-max.md) <sub>Inworld</sub> | 57 ±3\* | api $10.00/M chars |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/inworld-tts) | <a href="model/inworld-tts-1-5-max.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 15 | [Fish Audio S2 Pro](model/fish-audio-s2-pro.md) <sub>Fish Audio</sub> | 56 ±2 | api $15.00/M chars |  |  | [docs.fish.audio ↗](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits) | <a href="model/fish-audio-s2-pro.md#speech-zonos2-report-bysa"><img src="../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results) 50%"></a> <a href="model/fish-audio-s2-pro.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 24%"></a> <a href="model/fish-audio-s2-pro.md#speech-higgs3-sglang-apache"><img src="../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) 20%"></a> <a href="model/fish-audio-s2-pro.md#speech-ztts1-eval-apache"><img src="../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra) 5%"></a> |
-| 16 | [Eleven Flash v2.5](model/elevenlabs-flash-v2-5.md) <sub>ElevenLabs</sub> | 56 ±2 | api $50.00/M chars |  |  | [elevenlabs.io ↗](https://elevenlabs.io/pricing/api) | <a href="model/elevenlabs-flash-v2-5.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 39%"></a> <a href="model/elevenlabs-flash-v2-5.md#speech-voxtral-tts-report"><img src="../icons/arxiv.org.png" width="14" alt="Voxtral TTS 37%"></a> <a href="model/elevenlabs-flash-v2-5.md#speech-rime-alpha-bench-ccby"><img src="../icons/github.com.png" width="14" alt="Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference 23%"></a> |
-| 17 | [Eleven Turbo v2](model/elevenlabs-turbo-v2.md) <sub>ElevenLabs</sub> | 56 ±3\* | api $50.00/M chars |  |  | [elevenlabs.io ↗](https://elevenlabs.io/pricing/api) | <a href="model/elevenlabs-turbo-v2.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 18 | [Eleven Flash v2](model/elevenlabs-flash-v2.md) <sub>ElevenLabs</sub> | 56 ±3\* | api $50.00/M chars |  |  | [elevenlabs.io ↗](https://elevenlabs.io/pricing/api) | <a href="model/elevenlabs-flash-v2.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 19 | [Inworld Realtime TTS-2](model/inworld-realtime-tts-2.md) <sub>Inworld</sub> | 54 ±2 | api $25.00/M chars |  |  | [replicate.com ↗](https://replicate.com/inworld/realtime-tts-2) | <a href="model/inworld-realtime-tts-2.md#speech-zonos2-report-bysa"><img src="../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results) 55%"></a> <a href="model/inworld-realtime-tts-2.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 33%"></a> <a href="model/inworld-realtime-tts-2.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 11%"></a> |
-| 20 | [Sonic 3](model/cartesia-sonic-3.md) <sub>Cartesia</sub> | 54 ±2 | api $65.00/M chars |  |  | [www.together.ai ↗](https://www.together.ai/models/cartesia-sonic-3) | <a href="model/cartesia-sonic-3.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 53%"></a> <a href="model/cartesia-sonic-3.md#speech-rime-alpha-bench-ccby"><img src="../icons/github.com.png" width="14" alt="Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference 30%"></a> <a href="model/cartesia-sonic-3.md#speech-voicefirst-indic-ccby"><img src="../icons/arxiv.org.png" width="14" alt="Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages (arXiv:2604.21481v2) 15%"></a> |
-| 21 | [MiniMax Speech-02-Turbo](model/minimax-speech-02-turbo.md) <sub>MiniMax</sub> | 54 ±3\* | api $60.00/M chars |  |  | [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/pricing-paygo.md) | <a href="model/minimax-speech-02-turbo.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 22 | [TTS-1](model/openai-tts-1.md) <sub>OpenAI</sub> | 53 ±3 | api $15.00/M chars |  |  | [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing) | <a href="model/openai-tts-1.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 96%"></a> |
-| 23 | [Octave TTS (Octave 1)](model/hume-octave.md) <sub>Hume AI</sub> | 53 ±3 | api $50.00/M chars |  |  | [www.hume.ai ↗](https://www.hume.ai/pricing) | <a href="model/hume-octave.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 37%"></a> <a href="model/hume-octave.md#speech-instructttseval-ccby"><img src="../icons/arxiv.org.png" width="14" alt="InstructTTSEval: instruction-following TTS benchmark (arXiv:2506.16381v1) 31%"></a> <a href="model/hume-octave.md#speech-emergent-v1-paper-ccby"><img src="../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS 29%"></a> |
-| 24 | [Deepgram Aura 2](model/deepgram-aura-2.md) <sub>Deepgram</sub> | 52 ±2 | api $30.00/M chars |  |  | [deepgram.com ↗](https://deepgram.com/pricing) | <a href="model/deepgram-aura-2.md#speech-rime-alpha-bench-ccby"><img src="../icons/github.com.png" width="14" alt="Rime Alpha TTS Benchmark v1.0.0 · SupportBench and ContentBench paired human preference 37%"></a> <a href="model/deepgram-aura-2.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 27%"></a> <a href="model/deepgram-aura-2.md#speech-emergent-v1-paper-ccby"><img src="../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS 21%"></a> <a href="model/deepgram-aura-2.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 12%"></a> |
-| 25 | [TTS-1 HD](model/openai-tts-1-hd.md) <sub>OpenAI</sub> | 52 ±6\* | api $30.00/M chars |  |  | [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing) | <a href="model/openai-tts-1-hd.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 86%"></a> |
-| 26 | [CosyVoice v3 Plus](model/cosyvoice-v3-plus.md) <sub>Alibaba Cloud</sub> | 52 ±4\* | api $26.00/M chars |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/cosyvoice-v3-plus.md#speech-cn-news-tts-ccby"><img src="../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1 94%"></a> |
-| 27 | [Lightning v3.1](model/smallest-lightning-v3-1.md) <sub>Smallest.ai</sub> | 48 ±3\* | api $17.50/M chars |  |  | [smallest.ai ↗](https://smallest.ai/pricing) | <a href="model/smallest-lightning-v3-1.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 87%"></a> <a href="model/smallest-lightning-v3-1.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 9%"></a> |
-| 28 | [Kokoro 82M v1.0](model/kokoro-82m.md) <sub>hexgrad</sub> | 47 ±4 | api $0.62/M chars |  |  | [deepinfra.com ↗](https://deepinfra.com/hexgrad/Kokoro-82M) | <a href="model/kokoro-82m.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 59%"></a> <a href="model/kokoro-82m.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 35%"></a> |
-| 29 | [Gradium TTS](model/gradium-tts.md) <sub>Gradium</sub> | 45 ±3\* | api $38.00/M chars |  |  | [docs.gradium.ai ↗](https://docs.gradium.ai/api-reference/endpoint/tts-post) | <a href="model/gradium-tts.md#speech-vapi-humanness-20260925"><img src="../icons/huggingface.co.png" width="14" alt="The Humanness Index by Vapi · September 2026 public standings 96%"></a> |
-| 30 | [Eleven Multilingual v2](model/elevenlabs-multilingual-v2.md) <sub>ElevenLabs</sub> | 45 ±3 | api $100.00/M chars |  |  | [elevenlabs.io ↗](https://elevenlabs.io/pricing/api) | <a href="model/elevenlabs-multilingual-v2.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 53%"></a> <a href="model/elevenlabs-multilingual-v2.md#speech-emergent-v1-paper-ccby"><img src="../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS 42%"></a> |
-| 31 | [Orpheus TTS 3B 0.1 (finetune-prod)](model/orpheus-tts-0-1-finetune-prod.md) <sub>Canopy Labs</sub> | 43 ±3 | api $15.00/M chars |  |  | [docs.together.ai ↗](https://docs.together.ai/docs/serverless/models) | <a href="model/orpheus-tts-0-1-finetune-prod.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 53%"></a> <a href="model/orpheus-tts-0-1-finetune-prod.md#speech-emergent-v1-paper-ccby"><img src="../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS 42%"></a> |
-| 32 | [Chatterbox](model/chatterbox.md) <sub>Resemble AI</sub> | 42 ±4 | api $25.00/M chars |  |  | [replicate.com ↗](https://replicate.com/resemble-ai/chatterbox) | <a href="model/chatterbox.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 77%"></a> <a href="model/chatterbox.md#speech-codecmos-accent-ccby"><img src="../icons/arxiv.org.png" width="14" alt="CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1) 16%"></a> |
-| 33 | [Amazon Polly Neural](model/amazon-polly-neural.md) <sub>Amazon Web Services</sub> | 38 ±4\* | api $16.00/M chars |  |  | [aws.amazon.com ↗](https://aws.amazon.com/polly/pricing) | <a href="model/amazon-polly-neural.md#speech-cn-news-tts-ccby"><img src="../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1 94%"></a> |
-| 34 | [OpenAudio S1 Mini](model/openaudio-s1-mini.md) <sub>Fish Audio</sub> | 37 ±9\* | api price unknown |  |  | [docs.fish.audio ↗](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits) | <a href="model/openaudio-s1-mini.md#speech-codecmos-accent-ccby"><img src="../icons/arxiv.org.png" width="14" alt="CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents (arXiv:2603.14328v1) 70%"></a> |
-| 35 | [Zonos v0.1](model/zonos-v0-1.md) <sub>Zyphra</sub> | 36 ±3 | api price unknown |  |  | [zyphra.com ↗](https://zyphra.com) | <a href="model/zonos-v0-1.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 53%"></a> <a href="model/zonos-v0-1.md#speech-emergent-v1-paper-ccby"><img src="../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS 42%"></a> |
-| 36 | [Sesame CSM-1B](model/sesame-csm-1b.md) <sub>Sesame</sub> | 33 ±3 | api $7.00/M chars |  |  | [deepinfra.com ↗](https://deepinfra.com/sesame/csm-1b) | <a href="model/sesame-csm-1b.md#speech-emergent-apache"><img src="../icons/huggingface.co.png" width="14" alt="EmergentTTS-Eval six-category leaderboard 52%"></a> <a href="model/sesame-csm-1b.md#speech-emergent-v1-paper-ccby"><img src="../icons/arxiv.org.png" width="14" alt="EmergentTTS-Eval v1 paper (arXiv:2505.23009v1) · Table 1 automatic MOS 41%"></a> <a href="model/sesame-csm-1b.md#speech-rw-voice-eq-report"><img src="../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI) 2%"></a> |
-
-36 of 76 catalogue models ranked here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 36 of 76 catalogue models ranked here · [sources and licences](method.md#sources)
 
 <details><summary>Models outside this leaderboard (40 models)</summary>
 
@@ -128,5 +135,3 @@ Raw results, insufficient overlap for an overall score: [Eleven Turbo v2.5](mode
 No reviewed benchmark results yet: Sonic 3.6 · Gemini 3.8 Flash TTS · Gemini 3.8 Flash-Lite TTS · Eleven v3 Conversational · MiniMax Speech 2.6 HD · Lightning v3.1 Pro · Octave 2 · Azure HD 2.5 · Polly Generative · Magpie TTS Multilingual 357M · Maya1 · Breeze TTS 2
 
 </details>
-
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory

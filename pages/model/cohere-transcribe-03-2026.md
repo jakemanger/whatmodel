@@ -6,37 +6,44 @@
 
 Cohere · released 2026-03 · 2.07B params · apache-2.0
 
-**score 57.1** ±2.5
-
-#7 of 28 · from 6 benchmark results across 4 sources
+**score 57.1** ±2.5 · #7 of 28 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 7.9% | 57.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇ 43% | 2026-03-26 |
-|  | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 3.8% | 62.3 | ▇ 2% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 5.4% | 84.4 | ▇ 0% | 2026-03-26 |
-| <a name="speech-stt-sap-dysarthric-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2)"> Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2) ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) | [Speech Accessibility Project dysarthric speech · zero-shot WER (rated subset, N=11,218)](https://arxiv.org/html/2605.02782v2) | 14.5% | 55.9 | ▇▇▇▇▇▇▇▇ 28% | 2026-08-18 |
-| <a name="speech-stt-quranic-asr-lb-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Quranic ASR Leaderboard (Quran-Lab, held-out recitation set)"> Quranic ASR Leaderboard (Quran-Lab, held-out recitation set) | [Quranic ASR Leaderboard · held-out recitation (600 clips) overall WER](https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json) | 15.2% | 57.0 | ▇▇▇▇▇ 16% | 2026-08-15 |
-| <a name="speech-stt-arabic-oual-elm-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Universal Arabic ASR Leaderboard (Elm Research Center)"> Open Universal Arabic ASR Leaderboard (Elm Research Center) | [Open Universal Arabic ASR Leaderboard · 6-test-set average WER](https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py) | 30.7% | 58.5 | ▇▇▇ 9% | 2026-04-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 57.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   7.9%    57.6   2026-03-26   43% ▇▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.8%    62.3   2026-03-26    2% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.4%    84.4   2026-03-26    0% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  14.5%    55.9   2026-08-18   28% ▇▇▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  15.2%    57.0   2026-08-15   16% ▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  30.7%    58.5   2026-04-16    9% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 57.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.0042/audio min · [fal.ai ↗](https://fal.ai/models/fal-ai/cohere-transcribe)
+api (fal.ai) · $0.0042/audio min · [fal.ai](https://fal.ai/models/fal-ai/cohere-transcribe)
 
-[price source](https://fal.ai/models/fal-ai/cohere-transcribe) · USD per input audio minute: fal prices Cohere Transcribe (fal-ai/cohere-transcribe) at $0.00006944444 per second (x60 = $0.0041667/min; endpoint billing record: billing\_unit seconds). Cohere's docs give Cohere Transcribe's model name as cohere-transcribe-03-2026 (its only general Transcribe model; Cohere Transcribe Arabic is separate). Cohere's own API bills Transcribe per token, which is not converted. Product: fal speech-to-text endpoint. API model: fal-ai/cohere-transcribe. Settings: standard. Price basis: published list rate, per-second to per-minute scaling only. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/cohere-transcribe): USD per input audio minute: fal prices Cohere Transcribe (fal-ai/cohere-transcribe) at $0.00006944444 per second (x60 = $0.0041667/min; endpoint billing record: billing\_unit seconds). Cohere's docs give Cohere Transcribe's model name as cohere-transcribe-03-2026 (its only general Transcribe model; Cohere Transcribe Arabic is separate). Cohere's own API bills Transcribe per token, which is not converted. Product: fal speech-to-text endpoint. API model: fal-ai/cohere-transcribe. Settings: standard. Price basis: published list rate, per-second to per-minute scaling only. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~5.47GB | 57.1 | `vllm serve CohereLabs/cohere-transcribe-03-2026 --trust-remote-code` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~5.47GB   57.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+vllm serve CohereLabs/cohere-transcribe-03-2026 --trust-remote-code
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/cohere-transcribe-03-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

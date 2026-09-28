@@ -6,9 +6,7 @@
 
 Black Forest Labs · released 2025-11 · 32B params · flux-dev-nc
 
-**score 54.6** ±1.5
-
-#39 of 87 · from 8 benchmark results across 7 sources
+**score 54.6** ±1.5 · #39 of 87 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,33 +14,46 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1145.6 | 58.1 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1225.8 | 52.7 | ▇▇▇ 10% | 2026-09-22 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 42.3% | 50.2 | ▇▇▇▇▇ 16% | 2026-05-14 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 89.5% | 54.1 | ▇▇▇ 10% | 2026-08-25 |
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 87.2% | 54.5 | ▇▇ 8% | 2026-07-12 |
-| <a name="visual-edit-compass"></a><img src="../../icons/arxiv.org.png" width="14" alt="Edit-Compass &amp; EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling"> Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) | [Edit-Compass (EN, overall)](https://arxiv.org/html/2605.13062v1#S4.T3) | 52.2% | 47.7 | ▇▇ 8% | 2026-05-13 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 1006.0 | 50.5 | ▇ 4% | 2026-03-30 |
-| <a name="visual-fepbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench)"> Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models (FEPBench) ([CC0-1.0](../../licenses/visual-fepbench.txt)) | [FEPBench instruction faithfulness](https://arxiv.org/html/2606.05949v2#S4.T2) | 53.1% | 64.1 | ▇ 3% | 2026-06-05 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 54.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1145.6    58.1   2026-09-24   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1225.8    52.7   2026-09-22   10% ▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   42.3%    50.2   2026-05-14   16% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   89.5%    54.1   2026-08-25   10% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.2%    54.5   2026-07-12    8% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       52.2%    47.7   2026-05-13    8% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1006.0    50.5   2026-03-30    4% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   53.1%    64.1   2026-06-05    3% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 54.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
 
 ## How to run it
 
-api (Cloudflare) · $0.046/image · [developers.cloudflare.com ↗](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+api (Cloudflare) · $0.046/image · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
-[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx) · Cloudflare Workers AI; 4 output tiles × 28 steps × USD0.00041/output tile/step; zero input-image tiles. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-dev. Settings: width=1024, height=1024, steps=28, input images=0, output tiles=4. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD.
+<sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI; 4 output tiles × 28 steps × USD0.00041/output tile/step; zero input-image tiles. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-dev. Settings: width=1024, height=1024, steps=28, input images=0, output tiles=4. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 (cpu offload) · nvidia only | ~77.3GB | 54.6 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('black-forest-labs/FLUX.2-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"` |
-| nf4 (bnb-4bit DiT + text encoder) · nvidia only | ~19.7GB | 54.6 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('diffusers/FLUX.2-dev-bnb-4bit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"` |
-| mlx-int4 (Flux2CLI, Swift) · mac only | ~19.7GB | 54.6 | `./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4` |
+<pre>
+version                                     needs  score
+bf16 (cpu offload) · nvidia only          ~77.3GB   54.6
+nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   54.6
+mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   54.6
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 (cpu offload) · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('black-forest-labs/FLUX.2-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
+# nf4 (bnb-4bit DiT + text encoder) · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('diffusers/FLUX.2-dev-bnb-4bit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
+# mlx-int4 (Flux2CLI, Swift) · mac only
+./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/flux-2-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,30 +6,34 @@
 
 dots.tts
 
-**score 48.7** ±2.8
-
-comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 48.7** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-qwen-audio3-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report"> Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) | [CV3-Eval multilingual voice clone · 9-language mean error](https://arxiv.org/html/2607.23938v1) | 10.6% | 47.2 | ▇▇▇▇▇▇▇▇▇▇▇▇ 41% | 2026-07-27 |
-|  | [CV3-Eval hard-en · WER](https://arxiv.org/html/2607.23938v1) | 11.7% | 48.7 | ▇▇▇▇▇▇▇▇▇▇ 35% | 2026-07-27 |
-|  | [CV3-Eval hard-zh · CER](https://arxiv.org/html/2607.23938v1) | 11.8% | 51.5 | ▇▇▇▇▇▇ 21% | 2026-07-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 48.7** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>  10.6%    47.2   2026-07-27   41% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    48.7   2026-07-27   35% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    51.5   2026-07-27   21% ▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 48.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| dots.tts Technical Report | [Seed-TTS test-en · Whisper large-v3 WER](https://arxiv.org/html/2606.07080v2) | 1.3% | too few models have this result to calibrate it yet |
-| dots.tts Technical Report | [Seed-TTS test-zh · Paraformer CER](https://arxiv.org/html/2606.07080v2) | 0.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-en · Whisper la…</a>   1.3%  too few models have it yet
+dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS test-zh · Paraformer…</a>   0.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

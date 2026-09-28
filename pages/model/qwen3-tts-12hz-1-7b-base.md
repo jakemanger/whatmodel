@@ -6,38 +6,42 @@
 
 Alibaba (Qwen) · 1.7B params · apache-2.0
 
-**score 57.2** ±1.6
-
-comparison only: no current run option verified · from 11 benchmark results across 4 sources
+**score 57.2** ±1.6 · comparison only: no current run option verified · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-zonos2-report-bysa"></a><img src="../../icons/arxiv.org.png" width="14" alt="ZONOS2 Technical Report (ZTTS1-Eval results)"> ZONOS2 Technical Report (ZTTS1-Eval results) ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) | [ZTTS1-Eval in-the-wild · 10-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 2.91 / 5 | 56.6 | ▇▇▇▇ 13% | 2026-06-25 |
-|  | [ZTTS1-Eval in-the-wild · 10-language mean WER](https://arxiv.org/html/2606.24320v2) | 2.3% | 60.2 | ▇▇▇▇ 12% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER](https://arxiv.org/html/2606.24320v2) | 2.9% | 62.1 | ▇▇▇ 11% | 2026-06-25 |
-|  | [ZTTS1-Eval Clean (FLEURS-R) · 9-language mean MSR-UTMOS](https://arxiv.org/html/2606.24320v2) | 3.61 / 5 | 61.9 | ▇▇▇ 10% | 2026-06-25 |
-| <a name="speech-qwen-audio3-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report"> Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) | [CV3-Eval multilingual voice clone · 9-language mean error](https://arxiv.org/html/2607.23938v1) lab-reported | 5.1% | 57.6 | ▇▇▇▇ 13% | 2026-07-27 |
-|  | [CV3-Eval hard-en · WER](https://arxiv.org/html/2607.23938v1) lab-reported | 6.5% | 57.6 | ▇▇▇ 11% | 2026-07-27 |
-|  | [CV3-Eval hard-zh · CER](https://arxiv.org/html/2607.23938v1) lab-reported | 11.2% | 52.3 | ▇▇ 7% | 2026-07-27 |
-| <a name="speech-higgs3-sglang-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution)"> Higgs Audio v3 comparison tables in SGLang-Omni cookbook (Boson AI contribution) | [CV3-Eval multilingual voice clone · 9-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 7.7% | 55.2 | ▇▇▇▇ 14% | 2026-06-04 |
-|  | [MiniMax multilingual test set · 23-language mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 27.4% | 43.8 | ▇ 4% | 2026-06-04 |
-|  | [Seed-TTS-Eval · test-en/test-zh macro mean error](https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md) | 1.3% | 53.1 | ▇ 1% | 2026-06-04 |
-| <a name="speech-ztts1-eval-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="ZTTS1-Eval results snapshot (Zyphra)"> ZTTS1-Eval results snapshot (Zyphra) | [ZTTS1-Eval · FLEURS-R English TTSDS2 prosody](https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md) | 86.9% | 54.4 | ▇ 4% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 57.2** |  |  |
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.91 / 5    56.6   2026-06-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.3%    60.2   2026-06-25   12% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      2.9%    62.1   2026-06-25   11% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.61 / 5    61.9   2026-06-25   10% ▇
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      5.1%    57.6   2026-07-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>        6.5%    57.6   2026-07-27   11% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>       11.2%    52.3   2026-07-27    7% ▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      7.7%    55.2   2026-06-04   14% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>     27.4%    43.8   2026-06-04    4% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.3%    53.1   2026-06-04    1% ▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     86.9%    54.4   2026-06-22    4% ▇
+prior                   pull toward the middle                      49.9                 1% ▇
+                        weighted average                          = 57.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · ZTTS1-Eval results snapshot ([Apache-2.0](../../licenses/speech-ztts1-eval-apache.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base model card | [Seed-TTS test-en WER (transcriber not stated)](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md) | 1.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base model card | [Seed-TTS test-zh error rate (transcriber not stated)](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md) | 0.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3-TTS-12Hz-1…  <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-en WER (transcr…</a>   1.2%  too few models have it yet
+Qwen/Qwen3-TTS-12Hz-1…  <a href="https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/blob/fd4b254389122332181a7c3db7f27e918eec64e3/README.md">Seed-TTS test-zh error rate (…</a>   0.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

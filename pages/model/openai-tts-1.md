@@ -6,29 +6,30 @@
 
 OpenAI · released 2023-11 · proprietary
 
-**score 53.1** ±3.3
-
-#22 of 36 · from 3 benchmark results across 1 source
+**score 53.1** ±3.3 · #22 of 36 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ TTS · Acoustic Quality (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.33 / 5 | 54.1 | ▇▇▇▇▇▇▇▇▇▇▇▇ 39% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Acting / Role-Fit (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.16 / 5 | 53.2 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-07-16 |
-|  | [RW-Voice-EQ TTS · Voice Identity (human)](https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg) | 3.46 / 5 | 52.1 | ▇▇▇▇▇▇▇▇ 27% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 4% |  |
-|  | **weighted average** |  | **= 53.1** |  |  |
+<pre>
+source             test                               score  implies  date        weight
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench  <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acoustic Qu…</a>  3.33 / 5    54.1   2026-07-16   39% ▇▇▇▇▇
+                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.16 / 5    53.2   2026-07-16   29% ▇▇▇
+                   <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.46 / 5    52.1   2026-07-16   27% ▇▇▇
+prior              pull toward the middle                      49.9                 4% ▇
+                   weighted average                          = 53.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
-api (OpenAI) · $15.00/M chars · [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing)
+api (OpenAI) · $15.00/M chars · [developers.openai.com](https://developers.openai.com/api/docs/pricing)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M input characters, direct character tariff; not derived from tokens. Product: Audio speech API. API model: tts-1. Settings: endpoint=/v1/audio/speech, tier=standard. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M input characters, direct character tariff; not derived from tokens. Product: Audio speech API. API model: tts-1. Settings: endpoint=/v1/audio/speech, tier=standard. Price basis: published rate. Currency: USD.</sub>
 
 no verified local download listed
 

@@ -6,9 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 32.2** ±2.9
-
-#80 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 32.2** ±2.9 · #80 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,34 +14,52 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 57.6% | 34.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 64% | 2026-07-01 |
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 40.0% | 26.6 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-06-02 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 32.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    34.0   2026-07-01   64% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    26.6   2026-06-02   32% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 32.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Breaking the Accuracy-Speed Barrier: How MXFP4/6 Quantization Revolutionizes Image and Video Generation | [GenEval](https://github.com/ROCm/rocm-blogs/blob/b3bf907bd73c596c49c77b1d178c7c41bcd2713c/blogs/artificial-intelligence/mxfp-t2i-t2v/README.md#flux1-schnell-benchmark) | 67.7% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test     score  why
+Breaking the Accuracy…  <a href="https://github.com/ROCm/rocm-blogs/blob/b3bf907bd73c596c49c77b1d178c7c41bcd2713c/blogs/artificial-intelligence/mxfp-t2i-t2v/README.md#flux1-schnell-benchmark">GenEval</a>  67.7%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Replicate) · $0.0030/image · [replicate.com ↗](https://replicate.com/black-forest-labs/flux-schnell)
+api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-forest-labs/flux-schnell)
 
-[price source](https://bertrande.com/en/ai/replicate/black-forest-labs--flux-schnell) · USD per output image. Text-to-image; one output image, standard FLUX.1 schnell endpoint. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/black-forest-labs--flux-schnell; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.
+<sub>[price source](https://bertrande.com/en/ai/replicate/black-forest-labs--flux-schnell): USD per output image. Text-to-image; one output image, standard FLUX.1 schnell endpoint. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/black-forest-labs--flux-schnell; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~29.3GB | 32.2 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-schnell', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0.0, max_sequence_length=256).images[0].save('out.png')"` |
-| gguf-q8\_0 | ~14.9GB | 32.2 | `sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu` |
-| mlx-4bit · mac only | ~7.7GB | 32.2 | `uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2 -q 4` |
-| bf16 · mac only | ~29.3GB | 32.2 | `uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2` |
+<pre>
+version                needs  score
+bf16 · nvidia only   ~29.3GB   32.2
+gguf-q8_0            ~14.9GB   32.2
+mlx-4bit · mac only   ~7.7GB   32.2
+bf16 · mac only      ~29.3GB   32.2
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-schnell', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0.0, max_sequence_length=256).images[0].save('out.png')"
+# gguf-q8_0
+sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu
+# mlx-4bit · mac only
+uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2 -q 4
+# bf16 · mac only
+uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/flux-1-schnell) · [JSON](https://whatmodel.sh/api?format=json&all=1)

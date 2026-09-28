@@ -6,28 +6,29 @@
 
 Runway · released 2025-12 · proprietary
 
-**score 50.0** ±2.8
-
-#25 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.0** ±2.8 · #25 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1224.7 | 47.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 81% | 2026-09-22 |
-| <a name="visual-vgi"></a><img src="../../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models"> VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) | [VGI-Bench visual reasoning (I2V)](https://arxiv.org/html/2608.19583v3#S3.T2) | 36.6% | 62.2 | ▇▇▇▇▇ 15% | 2026-08-26 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 50.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1224.7    47.7   2026-09-22   81% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.6%    62.2   2026-08-26   15% ▇▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 50.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt))</sub>
 
 ## How to run it
 
-api (Runway) · $0.12/sec · [docs.dev.runwayml.com ↗](https://docs.dev.runwayml.com/guides/pricing/)
+api (Runway) · $0.12/sec · [docs.dev.runwayml.com](https://docs.dev.runwayml.com/guides/pricing/)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per generated second, standard Gen-4.5 output. 12 credits × USD0.01/credit; professional/HDR format surcharges and sales tax excluded. Product: Runway developer API. API model: gen4.5. Settings: output format=standard, prores=no, hdr=no. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per generated second, standard Gen-4.5 output. 12 credits × USD0.01/credit; professional/HDR format surcharges and sales tax excluded. Product: Runway developer API. API model: gen4.5. Settings: output format=standard, prores=no, hdr=no. Price basis: published rate. Currency: USD.</sub>
 
 no verified local download listed
 

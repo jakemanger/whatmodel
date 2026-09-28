@@ -6,19 +6,22 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| GenEval | 86.7% | [ERNIE-Image model repository evaluation tables](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) · lab-reported · ERNIE-Image-Turbo (w/o PE); evaluation; Without prompt enhancer (PE); no substitution with w/PE scores 0.8728/0.8510. |
-| OneIG-Bench (EN) | 53.4% | [ERNIE-Image model repository evaluation tables](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) · lab-reported · ERNIE-Image-Turbo (w/o PE); evaluation; OneIG-EN; without prompt enhancer (PE). |
-| LongText-Bench (CN) | 96.8% | [ERNIE-Image model repository evaluation tables](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) · lab-reported · Baidu's own evaluation in the pinned ERNIE-Image card, row without prompt enhancer (w/o PE), matching the existing ERNIE-Image rows from this source. Already fractional. |
-| LongText-Bench (EN) | 96.0% | [ERNIE-Image model repository evaluation tables](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) · lab-reported · Baidu's own evaluation in the pinned ERNIE-Image card, row without prompt enhancer (w/o PE), matching the existing ERNIE-Image rows from this source. Already fractional. |
-| OneIG-Bench (CN) | 50.6% | [ERNIE-Image model repository evaluation tables](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) · lab-reported · Baidu's own evaluation in the pinned ERNIE-Image card, row without prompt enhancer (w/o PE), matching the existing ERNIE-Image rows from this source. Already fractional. OneIG-ZH (Chinese split) Overall. |
+<pre>
+test                 result  reported by  source
+GenEval               86.7%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
+OneIG-Bench (EN)      53.4%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
+LongText-Bench (CN)   96.8%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
+LongText-Bench (EN)   96.0%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
+OneIG-Bench (CN)      50.6%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
+</pre>
+
+<sub>Licences: ERNIE-Image model repository evaluation tables ([Apache-2.0](../../licenses/visual-ernie-image.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.010/image · [fal.ai ↗](https://fal.ai/models/fal-ai/ernie-image/turbo)
+api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-image/turbo)
 
-[price source](https://fal.ai/models/fal-ai/ernie-image/turbo) · USD for one 1-megapixel output: fal bills this endpoint $0.01 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image (Turbo, 8 steps default). API model: fal-ai/ernie-image/turbo. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/ernie-image/turbo): USD for one 1-megapixel output: fal bills this endpoint $0.01 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image (Turbo, 8 steps default). API model: fal-ai/ernie-image/turbo. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
 ```sh
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=8, guidance_scale=1.0).images[0].save('out.png')"

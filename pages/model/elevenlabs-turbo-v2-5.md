@@ -6,14 +6,17 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| Vapi Humanness · historical Elo, 2026-06-10 | 1234.2 | [The Humanness Index by Vapi · June 2026 production export](https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json) · independent · Exact registry model ID. Retired from live sampling 2026-07-23, so only its actual June 10 production export is used. Historical production export; 98 battles, not a fabricated local seed. |
+<pre>
+test                                result  reported by  source
+Vapi Humanness · historical Elo, …  1234.2  independent  <a href="https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json">The Humanness Index by Vapi ·…</a>
+</pre>
+
+<sub>Licences: The Humanness Index by Vapi · June 2026 production export ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 
-api (ElevenLabs) · $50.00/M chars · [elevenlabs.io ↗](https://elevenlabs.io/pricing/api)
+api (ElevenLabs) · $50.00/M chars · [elevenlabs.io](https://elevenlabs.io/pricing/api)
 
-[price source](https://elevenlabs.io/pricing/api) · USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000). Product: ElevenAPI text to speech. API model: eleven\_turbo\_v2\_5. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25.
+<sub>[price source](https://elevenlabs.io/pricing/api): USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000). Product: ElevenAPI text to speech. API model: eleven\_turbo\_v2\_5. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25.</sub>
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/elevenlabs-turbo-v2-5)

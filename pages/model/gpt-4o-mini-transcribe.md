@@ -6,30 +6,31 @@
 
 OpenAI · released 2025-03 · proprietary
 
-**score 10.1** ±2.7
-
-#27 of 28 · from 4 benchmark results across 1 source
+**score 10.1** ±2.7 · #27 of 28 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-voxtral-realtime-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Voxtral Realtime"> Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Voxtral report · English short-form 10-set WER](https://arxiv.org/html/2602.11298v1) | 7.9% | 9.8 | ▇▇▇▇▇▇▇▇ 25% | 2026-02-11 |
-|  | [Voxtral report · English long-form 4-set WER](https://arxiv.org/html/2602.11298v1) | 8.0% | 9.1 | ▇▇▇▇▇▇▇ 25% | 2026-02-11 |
-|  | [Voxtral report · Common Voice 12-language error rate](https://arxiv.org/html/2602.11298v1) | 12.8% | 8.1 | ▇▇▇▇▇▇▇ 24% | 2026-02-11 |
-|  | [Voxtral report · FLEURS 13-language error rate](https://arxiv.org/html/2602.11298v1) | 8.0% | 8.5 | ▇▇▇▇▇▇▇ 24% | 2026-02-11 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 10.1** |  |  |
+<pre>
+source            test                            score  implies  date        weight
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.9%     9.8   2026-02-11   25% ▇▇▇
+                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   8.0%     9.1   2026-02-11   25% ▇▇▇
+                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>  12.8%     8.1   2026-02-11   24% ▇▇▇
+                  <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   8.0%     8.5   2026-02-11   24% ▇▇▇
+prior             pull toward the middle                   49.9                 3% ▇
+                  weighted average                       = 10.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (OpenAI) · $0.0030/audio min · [developers.openai.com ↗](https://developers.openai.com/api/docs/pricing)
+api (OpenAI) · $0.0030/audio min · [developers.openai.com](https://developers.openai.com/api/docs/pricing)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · Provider-published estimated cost per audio minute; underlying billing uses audio/text tokens. Exact endpoint gpt-4o-mini-transcribe. Product: Audio transcription. API model: gpt-4o-mini-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: provider-published estimate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): Provider-published estimated cost per audio minute; underlying billing uses audio/text tokens. Exact endpoint gpt-4o-mini-transcribe. Product: Audio transcription. API model: gpt-4o-mini-transcribe. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: provider-published estimate. Currency: USD.</sub>
 
 no verified local download listed
 

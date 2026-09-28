@@ -6,32 +6,39 @@
 
 Zhipu AI (THUDM) · released 2024-08 · 5B params · cogvideox
 
-**score 32.4** ±3.6
-
-#49 of 54 · from 3 benchmark results across 2 sources
+**score 32.4** ±3.6 · #49 of 54 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-videophy-readme"></a><img src="../../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards"> VideoPhy / VideoPhy-2 official repository leaderboards | [VideoPhy-2 (human, joint SA & PC)](https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-) | 25.0% | 32.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 61% | 2026-01-30 |
-|  | [VideoPhy (auto-evaluator average)](https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-) | 49.0% | 32.4 | ▇▇▇▇▇▇▇▇▇ 32% | 2026-01-30 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 74.8% | 0.2 | ▇ 2% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 5% |  |
-|  | **weighted average** |  | **= 32.4** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  25.0%    32.3   2026-01-30   61% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  49.0%    32.4   2026-01-30   32% ▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                74.8%     0.2   2026-04-22    2% ▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 32.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (fal) · price unknown · [fal.ai ↗](https://fal.ai/models/fal-ai/cogvideox-5b)
+api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/cogvideox-5b)
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~12.5GB | 32.4 | `python -c "import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-5b',torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"` |
+<pre>
+version               needs  score
+bf16 · nvidia only  ~12.5GB   32.4
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+python -c "import torch;from diffusers import CogVideoXPipeline;from diffusers.utils import export_to_video;p=CogVideoXPipeline.from_pretrained('THUDM/CogVideoX-5b',torch_dtype=torch.bfloat16);p.enable_sequential_cpu_offload();p.vae.enable_slicing();p.vae.enable_tiling();export_to_video(p(prompt='A panda playing a tiny guitar in a bamboo forest',num_inference_steps=50,num_frames=49,guidance_scale=6).frames[0],'output.mp4',fps=8)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/cogvideox-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

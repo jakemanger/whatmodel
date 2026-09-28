@@ -6,21 +6,22 @@
 
 Sarvam AI · closed weights
 
-**score 64.7** ±5.7
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.7** ±5.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-bangla-riverborn-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Bangla Speech-to-Text Benchmark v1.0 (Riverborn)"> Bangla Speech-to-Text Benchmark v1.0 (Riverborn) | [Bangla STT benchmark · BanSpeech 1,001-clip batch CER](https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv) | 6.9% | 67.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 86% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 14% |  |
-|  | **weighted average** |  | **= 64.7** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   6.9%    67.0   2026-09-24   86% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                14% ▇▇
+                        weighted average                       = 64.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Bangla Speech-to-Text Benchmark v1.0 ([MIT](../../licenses/speech-stt-bangla-riverborn-mit.txt))</sub>
 
 ## How to run it
 

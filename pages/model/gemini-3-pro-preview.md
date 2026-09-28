@@ -6,27 +6,28 @@
 
 Google · released 2025-11 · closed weights
 
-**score 60.4** ±2.7
-
-comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 60.4** ±2.7 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="matharena-arxiv-outputs-bysa"></a><img src="../../icons/huggingface.co.png" width="14" alt="MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets"> MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) | [MathArena ArXivMath January 2026 (23 problems)](https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet) | 62.0% | 60.3 | ▇▇▇▇▇▇▇▇▇▇▇▇ 41% | 2026-09-11 |
-|  | [MathArena ArXivMath December 2025 (17 problems)](https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet) | 51.1% | 61.4 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-09-11 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1307.1 | 60.9 | ▇▇▇▇▇▇ 21% | 2026-05-10 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 60.4** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   62.0%    60.3   2026-09-11   41% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   51.1%    61.4   2026-09-11   34% ▇▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1307.1    60.9   2026-05-10   21% ▇▇▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 60.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt))</sub>
 
 ## How to run it
 
-[context specification source](https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-preview) · Gemini Developer API model page, gemini-3-pro-preview: input token limit 1,048,576 (the 65,536-token output limit is separate). The same page says the model was shut down on March 9, 2026; the limit is recorded as a model fact. Observed 2026-09-26.
+<sub>[context source](https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-preview): Gemini Developer API model page, gemini-3-pro-preview: input token limit 1,048,576 (the 65,536-token output limit is separate). The same page says the model was shut down on March 9, 2026; the limit is recorded as a model fact. Observed 2026-09-26.</sub>
 
 no current API or local download verified
 

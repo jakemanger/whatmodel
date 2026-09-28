@@ -6,94 +6,107 @@
 
 Meta · released 2024-07 · 8.03B params · llama3.1
 
-**score 24.6** ±0.9
-
-#192 of 205 · from 29 benchmark results across 19 sources
+**score 24.6** ±0.9 · #192 of 205 · from 29 benchmark results across 19 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="zeroeval-published-results"></a><img src="../../icons/huggingface.co.png" width="14" alt="WildEval ZeroEval published results"> WildEval ZeroEval published results | [ZebraLogic (ZeroEval, 1,000 puzzles)](https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json) | 12.8% | 26.2 | ▇▇ 6% |  |
-|  | [CRUXEval (ZeroEval, 800 problems)](https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json) | 39.9% | 22.0 | ▇▇ 6% |  |
-|  | [MMLU-Redux (ZeroEval, 2,778 questions)](https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json) | 67.2% | 22.7 | ▇▇ 5% |  |
-|  | [GSM8K (ZeroEval, zero-shot)](https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json) | 84.0% | 21.1 | ▇ 4% |  |
-| <a name="korean-personal-benchmark-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="Daekeun Kim Korean LLM benchmark runs"> Daekeun Kim Korean LLM benchmark runs | [HAE-RAE 1.0 (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 53.9% | 27.3 | ▇ 5% |  |
-|  | [CLIcK Korean (Daekeun Kim)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 47.8% | 27.8 | ▇ 5% |  |
-|  | [KMMLU-HARD (Daekeun Kim, zero-shot)](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md) | 24.0% | 20.3 | ▇ 4% |  |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [MATH level 5](https://epoch.ai/data/benchmark_data.zip#math_level_5.csv) | 22.9% | 25.6 | ▇▇ 7% | 2025-01-27 |
-|  | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 27.0% | 13.9 | ▇ 3% | 2026-08-27 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 1.7% | 17.3 | ▇ 3% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 0.0% | 29.2 | ▇ 1% | 2026-08-27 |
-| <a name="massive-agents-paper"></a><img src="../../icons/arxiv.org.png" width="14" alt="MASSIVE-Agents — Kulkarni et al. (2025)"> MASSIVE-Agents — Kulkarni et al. (2025) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [MASSIVE-Agents AST (10k, zero-shot)](https://aclanthology.org/2025.findings-emnlp.1099.pdf) | 9.1% | 27.1 | ▇▇▇ 9% | 2026-09-25 |
-| <a name="livecodebench-website-20241226"></a><img src="../../icons/huggingface.co.png" width="14" alt="LiveCodeBench official website results (2024-12-26)"> LiveCodeBench official website results (2024-12-26) ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) | [LiveCodeBench official (Jan 1–Nov 1, 2024)](https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json) | 16.1% | 23.2 | ▇▇ 8% | 2024-12-26 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [Arabic IFEval prompt-level (Inception)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl) | 41.6% | 28.0 | ▇ 4% | 2026-04-06 |
-|  | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 24.9% | 29.7 | ▇ 1% | 2025-09-29 |
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 8.2% | 22.8 | ▇ 3% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 78.7% | 35.1 | ▇ 2% | 2026-09-07 |
-| <a name="evalplus-published-runs"></a><img src="../../icons/huggingface.co.png" width="14" alt="EvalPlus / EvalPerf published evaluation runs"> EvalPlus / EvalPerf published evaluation runs | [EvalPerf correctness (118 tasks, 20240328)](https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Llama-3.1-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json) | 64.3% | 21.8 | ▇ 5% | 2024-10-19 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1211.1 | 17.4 | ▇ 3% | 2026-09-13 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 39.7% | 28.8 | ▇ 3% | 2026-05-02 |
-| <a name="judgemark-v2-results"></a><img src="../../icons/github.com.png" width="14" alt="Judgemark v2 results (EQ-Bench)"> Judgemark v2 results (EQ-Bench) | [Judgemark v2 (LLM-as-judge for creative writing)](https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv) | 35.7% | 23.4 | ▇ 2% | 2025-01-31 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 60.2% | 26.8 | ▇ 2% | 2026-08-11 |
-| <a name="open-pt-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Portuguese LLM Leaderboard (archived)"> Open Portuguese LLM Leaderboard (archived) | [Open PT-LLM Leaderboard average (9 Portuguese tasks)](https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz) | 70.2% | 29.2 | ▇ 2% | 2024-07-23 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 50.3% | 24.4 | ▇ 1% | 2026-09-19 |
-| <a name="webapp1k-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="WebApp1K models leaderboard (onekq-ai)"> WebApp1K models leaderboard (onekq-ai) | [WebApp1K-React pass@1 (onekq-ai)](https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv) | 25.1% | 28.2 | ▇ 1% | 2024-08-17 |
-| <a name="bfcl-result-archive-v4"></a><img src="../../icons/huggingface.co.png" width="14" alt="Berkeley Function Calling Leaderboard result archive"> Berkeley Function Calling Leaderboard result archive | [BFCL V4 (December 2025 archive)](https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv) | 25.8% | 28.2 | ▇ 1% | 2025-12-16 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 29.0% | 29.0 | ▇ 1% | 2025-04-28 |
-| <a name="galileo-agent-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Galileo Agent Leaderboard (v1 and v2 results)"> Galileo Agent Leaderboard (v1 and v2 results) | [Galileo Agent Leaderboard v1 (tool selection quality)](https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv) | 67.8% | 20.9 | ▇ 1% | 2025-07-02 |
-| <a name="libra-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="ai-forever LIBRA leaderboard (Russian long-context benchmark)"> ai-forever LIBRA leaderboard (Russian long-context benchmark) | [LIBRA Mini (Russian long context, May 2026 version)](https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/meta-llama_Llama-3.1-8B-Instruct.json) | 43.9% | 45.7 | ▇ 0% | 2026-06-08 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 24.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   12.8%    26.2                 6% ▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>   39.9%    22.0                 6% ▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>   67.2%    22.7                 5% ▇
+                        <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/gsm.summary.json">GSM8K (ZeroEval, zero-shot)</a>      84.0%    21.1                 4% ▇
+<a name="korean-personal-benchmark-runs"></a>Daekeun Kim Korean LL…  <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">HAE-RAE 1.0 (Daekeun Kim)</a>        53.9%    27.3                 5% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>       47.8%    27.8                 5% ▇
+                        <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>   24.0%    20.3                 4% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     22.9%    25.6   2025-01-27    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     27.0%    13.9   2026-08-27    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          1.7%    17.3   2026-08-27    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    29.2   2026-08-27    1% ▇
+<a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>    9.1%    27.1   2026-09-25    9% ▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   16.1%    23.2   2024-12-26    8% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   41.6%    28.0   2026-04-06    4% ▇
+                        <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   24.9%    29.7   2025-09-29    1% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>    8.2%    22.8   2026-09-07    3% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   78.7%    35.1   2026-09-07    2% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/meta-llama--Llama-3.1-8B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>   64.3%    21.8   2024-10-19    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1211.1    17.4   2026-09-13    3% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   39.7%    28.8   2026-05-02    3% ▇
+<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>   35.7%    23.4   2025-01-31    2% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   60.2%    26.8   2026-08-11    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.2%    29.2   2024-07-23    2% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   50.3%    24.4   2026-09-19    1% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   25.1%    28.2   2024-08-17    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   25.8%    28.2   2025-12-16    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   29.0%    29.0   2025-04-28    1% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   67.8%    20.9   2025-07-02    1% ▇
+<a name="libra-leaderboard"></a>ai-forever LIBRA lead…  <a href="https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard/blob/f5b4b2a59131f86a74af400036ff31b0aae74794/results/meta-llama_Llama-3.1-8B-Instruct.json">LIBRA Mini (Russian long cont…</a>   43.9%    45.7   2026-06-08    0% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 24.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · Daekeun Kim Korean LLM benchmark runs ([MIT](../../licenses/korean-personal-benchmark-runs-MIT.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · ai-forever LIBRA leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| MMLU-Pro author-released evaluation runs | [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Meta-Llama-3_1-8B-Instruct_5shots.zip) | 44.2% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test      score  why
+MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Meta-Llama-3_1-8B-Instruct_5shots.zip">MMLU-Pro</a>  44.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Amazon Bedrock) · $0.22/M blended · $0.22 in / $0.22 out per 1M tokens · [docs.aws.amazon.com ↗](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
+api (Amazon Bedrock) · $0.22/M blended · $0.22 in / $0.22 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/meta.llama3-1-8b-instruct-v1:0.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/amazon-bedrock/models/meta.llama3-1-8b-instruct-v1:0.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/llama-3.1-8b-instruct.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meta/llama-3.1-8b-instruct.toml) · model catalogue context ceiling (not a promise by a hosted API)
+<pre>
+download          size  score
+4-bit q4_k_m   ~5.32GB   24.6
+8-bit q8_0    ~10.14GB   24.6
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~5.32GB | 24.6 | `ollama run llama3.1:8b` |
-| 8-bit q8\_0 | ~10.14GB | 24.6 | `ollama run llama3.1:8b-instruct-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run llama3.1:8b
+# 8-bit q8_0
+ollama run llama3.1:8b-instruct-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| AutoRound 2-bit (group size 32; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.737 → 0.466 | 63.2% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T4) |
-| AutoRound 2-bit (group size 32; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.694 → 0.357 | 51.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T3) |
-| AutoRound 4-bit (group size 128; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.694 → 0.68 | 98.1% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| AutoRound 4-bit (group size 128; 512 calibration samples, seqlen 4096, 512 iterations) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.737 → 0.704 | 95.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| AWQ 4-bit (AutoAWQ, zero point, group size 128) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.694 → 0.676 | 97.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| AWQ 4-bit (AutoAWQ, zero point, group size 128) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.737 → 0.709 | 96.1% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| bitsandbytes NF4 (Transformers integration, nested/double quantization) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.694 → 0.681 | 98.1% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| bitsandbytes NF4 (Transformers integration, nested/double quantization) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.737 → 0.7 | 94.9% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| GGUF Q2\_K with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.737 → 0.697 | 94.5% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T4) |
-| GGUF Q2\_K with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.694 → 0.556 | 80.2% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T3) |
-| GGUF Q4\_K\_M with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ English-\>X COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.694 → 0.683 | 98.4% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T1) |
-| GGUF Q4\_K\_M with imatrix (llama.cpp; imatrix from 20k WikiText samples) | WMT24++ X-\>English COMET (wmt22-comet-da), unweighted mean over 6 language pairs (ja\_JP, fr\_FR, pl\_PL, bn\_IN, ml\_IN, zu\_ZA); greedy decoding | 0.737 → 0.723 | 98.0% | [source ↗](https://arxiv.org/html/2508.20893v1#S4.T2) |
-| MXFP4 via AutoRound 'OPT-RNT(-1,1)  (Our's default)' (iters 0; scheme as defined by auto-round; activation handling not restated in this table) | Average of 11 lm-eval tasks (ARC-c, ARC-e, BoolQ, HellaSwag, LAMBADA, MMLU, OBQA, PIQA, TruthfulQA, WinoGrande, GSM8K strict) | 0.652 → 0.591 | 90.7% | [source ↗](https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L14) |
-| MXFP4 via AutoRound 'OPT-RTN(-2,-1,1,2)' (iters 0; scheme as defined by auto-round; activation handling not restated in this table) | Average of 11 lm-eval tasks (ARC-c, ARC-e, BoolQ, HellaSwag, LAMBADA, MMLU, OBQA, PIQA, TruthfulQA, WinoGrande, GSM8K strict) | 0.652 → 0.585 | 89.7% | [source ↗](https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L13) |
-| MXFP4 via AutoRound 'orig-RTN' (iters 0; scheme as defined by auto-round; activation handling not restated in this table) | Average of 11 lm-eval tasks (ARC-c, ARC-e, BoolQ, HellaSwag, LAMBADA, MMLU, OBQA, PIQA, TruthfulQA, WinoGrande, GSM8K strict) | 0.652 → 0.572 | 87.8% | [source ↗](https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L12) |
-| NVFP4 via AutoRound 'opt-rtn' (iters 0; scheme as defined by auto-round; activation handling not restated in this table) | Average of 11 lm-eval tasks (ARC-c, ARC-e, BoolQ, HellaSwag, LAMBADA, MMLU, OBQA, PIQA, TruthfulQA, WinoGrande, GSM8K strict) | 0.652 → 0.639 | 98.1% | [source ↗](https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L26) |
-| NVFP4 via AutoRound 'RTN' (iters 0; scheme as defined by auto-round; activation handling not restated in this table) | Average of 11 lm-eval tasks (ARC-c, ARC-e, BoolQ, HellaSwag, LAMBADA, MMLU, OBQA, PIQA, TruthfulQA, WinoGrande, GSM8K strict) | 0.652 → 0.626 | 96.1% | [source ↗](https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L25) |
-| ONNX INT4 AWQ (NVIDIA ModelOpt-Windows v0.19.0, quantizing the FP16 ONNX model) | MMLU 5-shot (ModelOpt-Windows accuracy\_benchmark; onnxruntime-genai-directml 0.4, transformers 4.44) | 0.684 → 0.661 | 96.6% | [source ↗](https://github.com/NVIDIA/TensorRT-Model-Optimizer/blob/ed7e87953c1a3ed6a21c8bf6eac90565fa6b7a36/examples/windows/Benchmark.md#L39) |
+<pre>
+precision                       test                                full → quantized   kept
+AutoRound 2-bit (group size 3…  WMT24++ X-&gt;English COMET (wmt22-c…     0.737 → 0.466  <a href="https://arxiv.org/html/2508.20893v1#S4.T4">63.2%</a>
+AutoRound 2-bit (group size 3…  WMT24++ English-&gt;X COMET (wmt22-c…     0.694 → 0.357  <a href="https://arxiv.org/html/2508.20893v1#S4.T3">51.5%</a>
+AutoRound 4-bit (group size 1…  WMT24++ English-&gt;X COMET (wmt22-c…      0.694 → 0.68  <a href="https://arxiv.org/html/2508.20893v1#S4.T1">98.1%</a>
+AutoRound 4-bit (group size 1…  WMT24++ X-&gt;English COMET (wmt22-c…     0.737 → 0.704  <a href="https://arxiv.org/html/2508.20893v1#S4.T2">95.5%</a>
+AWQ 4-bit (AutoAWQ, zero poin…  WMT24++ English-&gt;X COMET (wmt22-c…     0.694 → 0.676  <a href="https://arxiv.org/html/2508.20893v1#S4.T1">97.5%</a>
+AWQ 4-bit (AutoAWQ, zero poin…  WMT24++ X-&gt;English COMET (wmt22-c…     0.737 → 0.709  <a href="https://arxiv.org/html/2508.20893v1#S4.T2">96.1%</a>
+bitsandbytes NF4 (Transformer…  WMT24++ English-&gt;X COMET (wmt22-c…     0.694 → 0.681  <a href="https://arxiv.org/html/2508.20893v1#S4.T1">98.1%</a>
+bitsandbytes NF4 (Transformer…  WMT24++ X-&gt;English COMET (wmt22-c…       0.737 → 0.7  <a href="https://arxiv.org/html/2508.20893v1#S4.T2">94.9%</a>
+GGUF Q2_K with imatrix (llama…  WMT24++ X-&gt;English COMET (wmt22-c…     0.737 → 0.697  <a href="https://arxiv.org/html/2508.20893v1#S4.T4">94.5%</a>
+GGUF Q2_K with imatrix (llama…  WMT24++ English-&gt;X COMET (wmt22-c…     0.694 → 0.556  <a href="https://arxiv.org/html/2508.20893v1#S4.T3">80.2%</a>
+GGUF Q4_K_M with imatrix (lla…  WMT24++ English-&gt;X COMET (wmt22-c…     0.694 → 0.683  <a href="https://arxiv.org/html/2508.20893v1#S4.T1">98.4%</a>
+GGUF Q4_K_M with imatrix (lla…  WMT24++ X-&gt;English COMET (wmt22-c…     0.737 → 0.723  <a href="https://arxiv.org/html/2508.20893v1#S4.T2">98.0%</a>
+MXFP4 via AutoRound 'OPT-RNT(…  Average of 11 lm-eval tasks (ARC-…     0.652 → 0.591  <a href="https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L14">90.7%</a>
+MXFP4 via AutoRound 'OPT-RTN(…  Average of 11 lm-eval tasks (ARC-…     0.652 → 0.585  <a href="https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L13">89.7%</a>
+MXFP4 via AutoRound 'orig-RTN…  Average of 11 lm-eval tasks (ARC-…     0.652 → 0.572  <a href="https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L12">87.8%</a>
+NVFP4 via AutoRound 'opt-rtn'…  Average of 11 lm-eval tasks (ARC-…     0.652 → 0.639  <a href="https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L26">98.1%</a>
+NVFP4 via AutoRound 'RTN' (it…  Average of 11 lm-eval tasks (ARC-…     0.652 → 0.626  <a href="https://github.com/intel/auto-round/blob/a4f01f8584a69f4af8376239a5fa51331a6747be/docs/opt_rtn.md#L25">96.1%</a>
+ONNX INT4 AWQ (NVIDIA ModelOp…  MMLU 5-shot (ModelOpt-Windows acc…     0.684 → 0.661  <a href="https://github.com/NVIDIA/TensorRT-Model-Optimizer/blob/ed7e87953c1a3ed6a21c8bf6eac90565fa6b7a36/examples/windows/Benchmark.md#L39">96.6%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/llama-3-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

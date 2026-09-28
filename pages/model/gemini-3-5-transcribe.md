@@ -6,27 +6,28 @@
 
 Google · released 2026-08 · proprietary
 
-**score 58.1** ±4.2
-
-#5 of 28 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.1** ±4.2 · #5 of 28 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-persian-triple-threat-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Persian ASR Triple Threat Leaderboard (Reza2kn)"> Persian ASR Triple Threat Leaderboard (Reza2kn) | [Persian ASR Triple Threat · VisualEars6669 + FLEURS-fa equal-weight WER](https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json) | 6.4% | 58.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 93% | 2026-08-28 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 7% |  |
-|  | **weighted average** |  | **= 58.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-persian-triple-threat-apache"></a>Persian ASR Triple Th…  <a href="https://huggingface.co/spaces/Reza2kn/PersianASR-TrippleThreat/blob/63e7e3f8b3754a92d6c0ac2a9db84344cf7e49bb/gemini35_transcribe_scores.json">Persian ASR Triple Threat · V…</a>   6.4%    58.7   2026-08-28   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 58.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Persian ASR Triple Threat Leaderboard ([Apache-2.0](../../licenses/speech-stt-persian-triple-threat-apache.txt))</sub>
 
 ## How to run it
 
-api (Google) · $0.0050/audio min · [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing)
+api (Google) · $0.0050/audio min · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
-[price source](https://ai.google.dev/gemini-api/docs/pricing) · Provider-published estimated cost per audio minute: Google lists gemini-3.5-transcribe at $2.00/1M audio input tokens or $0.003/min and $12.00/1M text output tokens or $0.002/min, with 'an effective blended rate of ~$0.005 per min for Transcribe'; underlying billing is per token. Product: Gemini Developer API. API model: gemini-3.5-transcribe. Settings: Standard paid tier. Price basis: vendor-published per-minute estimate (25 audio tokens/s, 175 text tokens/min). Exclusions: free tier, Transcribe Live. Currency: USD. Google Gemini API pricing page (CC BY 4.0), observed 2026-09-25.
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): Provider-published estimated cost per audio minute: Google lists gemini-3.5-transcribe at $2.00/1M audio input tokens or $0.003/min and $12.00/1M text output tokens or $0.002/min, with 'an effective blended rate of ~$0.005 per min for Transcribe'; underlying billing is per token. Product: Gemini Developer API. API model: gemini-3.5-transcribe. Settings: Standard paid tier. Price basis: vendor-published per-minute estimate (25 audio tokens/s, 175 text tokens/min). Exclusions: free tier, Transcribe Live. Currency: USD. Google Gemini API pricing page (CC BY 4.0), observed 2026-09-25.</sub>
 
 no verified local download listed
 

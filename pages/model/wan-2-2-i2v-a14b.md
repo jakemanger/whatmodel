@@ -6,28 +6,29 @@
 
 Alibaba
 
-**score 49.2** ±5.7
-
-#26 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.2** ±5.7 · #26 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-vgi"></a><img src="../../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models"> VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) | [VGI-Bench visual reasoning (I2V)](https://arxiv.org/html/2608.19583v3#S3.T2) | 21.6% | 46.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 64% | 2026-08-26 |
-| <a name="visual-physics-verified"></a><img src="../../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified"> Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt)) | [Physics-IQ Verified (I2V, best-practice prompts)](https://arxiv.org/html/2606.18943v1#A5.T4) | 32.2% | 56.0 | ▇▇▇▇▇▇▇ 22% | 2026-06-17 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇ 13% |  |
-|  | **weighted average** |  | **= 49.2** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  21.6%    46.6   2026-08-26   64% ▇▇▇▇▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  32.2%    56.0   2026-06-17   22% ▇▇▇
+prior                   pull toward the middle                   49.9                13% ▇▇
+                        weighted average                       = 49.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.080/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video)
+api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video)
 
-[price source](https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video) · USD per video second at 720p on fal.ai. Product: fal Wan 2.2 A14B image-to-video endpoint. API model: fal-ai/wan/v2.2-a14b/image-to-video. Settings: resolution=720p. fal counts video seconds at 16 frames per second. 580p $0.06, 480p $0.04 per video second. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video): USD per video second at 720p on fal.ai. Product: fal Wan 2.2 A14B image-to-video endpoint. API model: fal-ai/wan/v2.2-a14b/image-to-video. Settings: resolution=720p. fal counts video seconds at 16 frames per second. 580p $0.06, 480p $0.04 per video second. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

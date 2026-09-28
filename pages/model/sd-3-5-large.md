@@ -6,9 +6,7 @@
 
 Stability AI · released 2024-10 · 8.1B params · stabilityai-community
 
-**score 33.1** ±1.7
-
-#79 of 87 · from 4 benchmark results across 4 sources
+**score 33.1** ±1.7 · #79 of 87 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,28 +14,39 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 938.3 | 32.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 47% | 2026-09-24 |
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 55.2% | 32.6 | ▇▇▇▇▇▇ 21% | 2026-07-01 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 15.9% | 35.5 | ▇▇▇▇▇▇ 19% | 2026-05-14 |
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 46.0% | 30.7 | ▇▇▇ 11% | 2026-06-02 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 33.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           938.3    32.6   2026-09-24   47% ▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       55.2%    32.6   2026-07-01   21% ▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  15.9%    35.5   2026-05-14   19% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  46.0%    30.7   2026-06-02   11% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 33.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.065/image · [replicate.com ↗](https://replicate.com/stability-ai/stable-diffusion-3.5-large)
+api (Replicate) · $0.065/image · [replicate.com](https://replicate.com/stability-ai/stable-diffusion-3.5-large)
 
-[price source](https://replicate.com/stability-ai/stable-diffusion-3.5-large) · USD per output image on Replicate's stability-ai/stable-diffusion-3.5-large model (billing: per output image; hardware time not added). Product: Replicate model API. API model: stability-ai/stable-diffusion-3.5-large. Settings: one output image. Price basis: published list rate. Currency: USD. Not a Stability AI direct API tariff. Replicate official model page, observed 2026-09-25.
+<sub>[price source](https://replicate.com/stability-ai/stable-diffusion-3.5-large): USD per output image on Replicate's stability-ai/stable-diffusion-3.5-large model (billing: per output image; hardware time not added). Product: Replicate model API. API model: stability-ai/stable-diffusion-3.5-large. Settings: one output image. Price basis: published list rate. Currency: USD. Not a Stability AI direct API tariff. Replicate official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~19.94GB | 33.1 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-large', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=28, guidance_scale=3.5).images[0].save('out.png')"` |
-| fp8 (TensorRT) · nvidia only | ~5.36GB | 33.1 | `git clone https://github.com/NVIDIA/TensorRT.git && cd TensorRT && git checkout release/sd35 && docker run --rm --gpus all -e HF_TOKEN -v $PWD:/workspace nvcr.io/nvidia/pytorch:25.01-py3 bash -c "cd /workspace/demo/Diffusion && source setup.sh && python3 demo_txt2img_sd35.py 'a cat holding a sign' --version=3.5-large --fp8 --denoising-steps=30 --guidance-scale 3.5 --download-onnx-models --build-static-batch --use-cuda-graph --hf-token=\$HF_TOKEN --onnx-dir onnx_fp8 --engine-dir engine_fp8"` |
+<pre>
+version                          needs  score
+bf16 · nvidia only            ~19.94GB   33.1
+fp8 (TensorRT) · nvidia only   ~5.36GB   33.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-large', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=28, guidance_scale=3.5).images[0].save('out.png')"
+# fp8 (TensorRT) · nvidia only
+git clone https://github.com/NVIDIA/TensorRT.git && cd TensorRT && git checkout release/sd35 && docker run --rm --gpus all -e HF_TOKEN -v $PWD:/workspace nvcr.io/nvidia/pytorch:25.01-py3 bash -c "cd /workspace/demo/Diffusion && source setup.sh && python3 demo_txt2img_sd35.py 'a cat holding a sign' --version=3.5-large --fp8 --denoising-steps=30 --guidance-scale 3.5 --download-onnx-models --build-static-batch --use-cuda-graph --hf-token=\$HF_TOKEN --onnx-dir onnx_fp8 --engine-dir engine_fp8"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/sd-3-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

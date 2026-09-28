@@ -6,27 +6,28 @@
 
 Microsoft AI · closed weights
 
-**score 52.9** ±14.2
-
-#22 of 28 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.9** ±14.2 · #22 of 28 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-koedesk-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="koedesk STT Bench v1 (Track A, FLEURS first-200)"> koedesk STT Bench v1 (Track A, FLEURS first-200) ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) | [koedesk FLEURS first-200 · 9-language headline error mean](https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json) | 3.6% | 67.3 | ▇▇▇▇▇ 17% | 2026-07-05 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 83% |  |
-|  | **weighted average** |  | **= 52.9** |  |  |
+<pre>
+source                test                            score  implies  date        weight
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   3.6%    67.3   2026-07-05   17% ▇▇
+prior                 pull toward the middle                   49.9                83% ▇▇▇▇▇▇▇▇▇▇
+                      weighted average                       = 52.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 
 ## How to run it
 
-api (Microsoft Azure) · $0.0060/audio min · [azure.microsoft.com ↗](https://azure.microsoft.com/en-us/pricing/details/speech)
+api (Microsoft Azure) · $0.0060/audio min · [azure.microsoft.com](https://azure.microsoft.com/en-us/pricing/details/speech)
 
-[price source](https://azure.microsoft.com/en-us/pricing/details/speech) · USD per input audio minute: Azure Speech lists MAI Transcribe-1.5 at $0.36 per hour (÷60), US East standard pay-as-you-go (Speech to Text, Standard Transcription). Unlike MAI Transcribe-2, it carries no promotional footnote. Product: Azure AI Speech speech to text. API model: MAI-Transcribe-1.5. Settings: S0 pay-as-you-go, region=us-east. Price basis: published list rate (price embedded in the official page's regional price data), per-hour to per-minute scaling only. Exclusions: add-ons, commitment tiers, US Gov regions ($0.45/hr). Currency: USD. Microsoft Azure official pricing page, observed 2026-09-25.
+<sub>[price source](https://azure.microsoft.com/en-us/pricing/details/speech): USD per input audio minute: Azure Speech lists MAI Transcribe-1.5 at $0.36 per hour (÷60), US East standard pay-as-you-go (Speech to Text, Standard Transcription). Unlike MAI Transcribe-2, it carries no promotional footnote. Product: Azure AI Speech speech to text. API model: MAI-Transcribe-1.5. Settings: S0 pay-as-you-go, region=us-east. Price basis: published list rate (price embedded in the official page's regional price data), per-hour to per-minute scaling only. Exclusions: add-ons, commitment tiers, US Gov regions ($0.45/hr). Currency: USD. Microsoft Azure official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

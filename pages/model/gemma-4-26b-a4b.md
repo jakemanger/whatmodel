@@ -6,115 +6,131 @@
 
 Google · released 2026-04 · 25.2B params (3.8B active) · apache-2.0
 
-**score 55.0** ±0.8
-
-#84 of 205 · from 34 benchmark results across 10 sources
+**score 55.0** ±0.8 · #84 of 205 · from 34 benchmark results across 10 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="gemma4-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Gemma Team — Gemma 4 Technical Report"> Gemma Team — Gemma 4 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 82.3% | 57.0 | ▇▇ 6% | 2026-07-02 |
-|  | [AIME 2026](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 88.3% | 59.2 | ▇▇ 6% | 2026-07-02 |
-|  | [Big Bench Extra Hard micro avg](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 64.8% | 56.4 | ▇▇ 5% | 2026-07-02 |
-|  | [MATH-Vision](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 82.4% | 55.8 | ▇ 5% | 2026-07-02 |
-|  | [IFBench](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 72.0% | 55.1 | ▇ 4% | 2026-07-02 |
-|  | [LiveCodeBench v6 (Feb–May 2025)](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 77.1% | 56.4 | ▇ 4% | 2026-07-02 |
-|  | [MRCR v2 8-needle, 128k](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 44.1% | 52.3 | ▇ 4% | 2026-07-02 |
-|  | [Tau2 – airline](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 76.0% | 56.7 | ▇ 4% | 2026-07-02 |
-|  | [Terminal Bench Hard](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 14.0% | 50.5 | ▇ 4% | 2026-07-02 |
-|  | [MedXPertQA MM](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 58.1% | 57.0 | ▇ 4% | 2026-07-02 |
-|  | [InfographicVQA](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 89.3% | 55.3 | ▇ 4% | 2026-07-02 |
-|  | [MMMU Pro](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 73.8% | 55.6 | ▇ 3% | 2026-07-02 |
-|  | [IFEval](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 98.5% | 56.5 | ▇ 3% | 2026-07-02 |
-|  | [Tau2 – telecom](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 43.0% | 52.4 | ▇ 2% | 2026-07-02 |
-|  | [MMMLU](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 86.3% | 54.8 | ▇ 2% | 2026-07-02 |
-|  | [Tau2 – retail](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 85.5% | 57.6 | ▇ 2% | 2026-07-02 |
-|  | [SciCode](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 40.0% | 54.5 | ▇ 2% | 2026-07-02 |
-|  | [MMLU-Pro](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 82.6% | 55.5 | ▇ 2% | 2026-07-02 |
-|  | [HLE](https://arxiv.org/html/2607.02770v1#S2.T5) lab-reported | 8.7% | 53.8 | ▇ 2% | 2026-07-02 |
-|  | [OmniDocBench 1.5 ↓](https://arxiv.org/html/2607.02770v1#S2.T6) lab-reported | 14.9% | 52.8 | ▇ 1% | 2026-07-02 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1361.9 | 54.2 | ▇ 5% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1437.9 | 59.2 | ▇ 3% | 2026-09-13 |
-|  | [Arena vision (style controlled)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet) | 1241.0 | 58.9 | ▇ 1% | 2026-09-13 |
-| <a name="card2-google-gemma-4-31b-it"></a><img src="../../icons/huggingface.co.png" width="14" alt="google/gemma-4-31B-it model card"> google/gemma-4-31B-it model card | [τ²-bench aggregate](https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md) lab-reported | 68.2% | 54.9 | ▇▇ 6% | 2026-07-20 |
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 73.2% | 51.8 | ▇ 2% | 2026-08-06 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 82.2% | 55.0 | ▇ 2% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 6.0% | 36.4 | ▇ 1% | 2026-08-06 |
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 38.9% | 46.8 | ▇ 3% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 90.9% | 53.7 | ▇ 2% | 2026-09-07 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1272.3 | 56.7 | ▇ 2% | 2026-05-10 |
-| <a name="speakleash-cptub"></a><img src="../../icons/huggingface.co.png" width="14" alt="SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark)"> SpeakLeash CPTUB (Complex Polish Text Understanding Benchmark) | [CPTUB average (SpeakLeash, 0-5 judge scale)](https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json) | 84.3% | 53.8 | ▇ 2% | 2026-08-11 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 67.3% | 54.5 | ▇ 1% | 2026-04-03 |
-| <a name="open-persian-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab)"> Open Persian LLM Leaderboard v2 (Part DP AI and AUT NLP Lab) | [Open Persian LLM Leaderboard v2 average (21 tasks)](https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl) | 70.7% | 49.7 | ▇ 1% | 2026-09-19 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 44.5% | 52.6 | ▇ 1% | 2026-04-08 |
-| prior | pull toward the middle |  | 50.0 | ▇ 0% |  |
-|  | **weighted average** |  | **= 55.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>               82.3%    57.0   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                  88.3%    59.2   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>   64.8%    56.4   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>                82.4%    55.8   2026-07-02    5% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                    72.0%    55.1   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>   77.1%    56.4   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MRCR v2 8-needle, 128k (lab)</a>     44.1%    52.3   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>             76.0%    56.7   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>        14.0%    50.5   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MedXPertQA MM (lab)</a>              58.1%    57.0   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>             89.3%    55.3   2026-07-02    4% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                   73.8%    55.6   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                     98.5%    56.5   2026-07-02    3% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>             43.0%    52.4   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                      86.3%    54.8   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>              85.5%    57.6   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                    40.0%    54.5   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                   82.6%    55.5   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                         8.7%    53.8   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>         14.9%    52.8   2026-07-02    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1361.9    54.2   2026-09-24    5% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1437.9    59.2   2026-09-13    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1241.0    58.9   2026-09-13    1% ▇
+<a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>         68.2%    54.9   2026-07-20    6% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     73.2%    51.8   2026-08-06    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         82.2%    55.0   2026-08-28    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             6.0%    36.4   2026-08-06    1% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   38.9%    46.8   2026-09-07    3% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   90.9%    53.7   2026-09-07    2% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1272.3    56.7   2026-05-10    2% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   84.3%    53.8   2026-08-11    2% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   67.3%    54.5   2026-04-03    1% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   70.7%    49.7   2026-09-19    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   44.5%    52.6   2026-04-08    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 55.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (1)
+<sub>Licences: Gemma Team ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · google/gemma-4-31B-it model card ([Apache-2.0](../../licenses/google--gemma-4-31B-it.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| google/gemma-4-31B-it model card | [Humanity's Last Exam with tools](https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md) | 17.2% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">Humanity's Last Exam with too…</a>  17.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.14/M blended · $0.07 in / $0.34 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/google/gemma-4-26B-A4B-it)
+api (DeepInfra) · $0.14/M blended · $0.07 in / $0.34 out per 1M tokens · [deepinfra.com](https://deepinfra.com/google/gemma-4-26B-A4B-it)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: google/gemma-4-26B-A4B-it. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output.  Product: Serverless text generation. API model: google/gemma-4-26B-A4B-it. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download           size  score
+4-bit q4_k_m   ~15.62GB   55.0
+4-bit QAT qat  ~15.62GB   55.0
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~15.62GB | 55.0 | `ollama run gemma4:26b` |
-| 4-bit QAT qat | ~15.62GB | 55.0 | `ollama run gemma4:26b-a4b-it-qat` |
+```sh
+# 4-bit q4_k_m
+ollama run gemma4:26b
+# 4-bit QAT qat
+ollama run gemma4:26b-a4b-it-qat
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S iGPU; Beelink GTR9 Pro 128GB | UD-Q4\_K\_M | 55.45 tok/s | llama.cpp 0eca4d490 (build\_number 9851 as recorded), Vulkan (RADV) · llama-bench; tg128; 128 generated tokens; context depth 0; n\_prompt=0 row; n\_batch=2048; n\_ubatch=512; flash\_attn=1; type\_k=f16; type\_v=f16; n\_gpu\_layers=999; threads=16; one sequence; file label r5 repetitions · Author's own llama-bench CSV row (avg\_ts mean over repetitions, stddev\_ts retained). GPU string as recorded: Radeon 8060S Graphics (RADV STRIX\_HALO). Unified memory; the guide reports ~124GiB OS-visible. Kernel/Mesa/power profile per the run folder notes. Not prompt processing or multi-request throughput. Curated in the guide's data/benchmarks.csv line 21 (2026-06-30, measured-local): Official llama.cpp b9851 Ubuntu Vulkan release binary with explicit -dev Vulkan0; direct Gemma 4 26B-A4B control. Not a speed headline; Gemma MTP server route remains the stronger Gemma throughput path. | [source ↗](https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-30/latest-llamacpp-b9851-vulkan-sentinel/gemma4-26b-a4b-udq4km-b9851-r5.csv#L3) |
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S iGPU; Beelink GTR9 Pro 128GB | UD-Q4\_K\_M | 54.18 tok/s | llama.cpp 4fc4ec554 (build\_number 9859 as recorded), Vulkan (RADV) · llama-bench; tg128; 128 generated tokens; context depth 0; n\_prompt=0 row; n\_batch=2048; n\_ubatch=512; flash\_attn=1; type\_k=f16; type\_v=f16; n\_gpu\_layers=999; threads=16; one sequence; file label r5 repetitions · Author's own llama-bench CSV row (avg\_ts mean over repetitions, stddev\_ts retained). GPU string as recorded: Radeon 8060S Graphics (RADV STRIX\_HALO). Unified memory; the guide reports ~124GiB OS-visible. Kernel/Mesa/power profile per the run folder notes. Not prompt processing or multi-request throughput. Curated in the guide's data/benchmarks.csv line 24 (2026-07-02, measured-local): Official llama.cpp b9859 Ubuntu Vulkan release binary with explicit -dev Vulkan0 and b9851-matching -fa on -mmp 0 command shape; direct Gemma 4 control remains secondary to the Gemma QAT/MTP server route. | [source ↗](https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-07-02/latest-llamacpp-b9859-vulkan-sentinel/gemma4-26b-a4b-udq4km-b9859-faon-mmp0-r5.csv#L3) |
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S iGPU; Beelink GTR9 Pro 128GB | Gemma QAT GGUF UD-Q4\_K\_XL | 74.8 tok/s | llama.cpp ac4cddeb0 (build\_number 9592 as recorded), Vulkan (RADV) · llama-bench; tg128; 128 generated tokens; context depth 0; n\_prompt=0 row; n\_batch=2048; n\_ubatch=512; flash\_attn=1; type\_k=f16; type\_v=f16; n\_gpu\_layers=999; threads=16; one sequence; file label r5 repetitions · Author's own llama-bench CSV row (avg\_ts mean over repetitions, stddev\_ts retained). GPU string as recorded: Radeon 8060S Graphics (RADV STRIX\_HALO). Unified memory; the guide reports ~124GiB OS-visible. Kernel/Mesa/power profile per the run folder notes. Not prompt processing or multi-request throughput. Curated in the guide's data/benchmarks.csv line 32 (2026-06-11, measured-local): Current Gemma 4 26B-A4B QAT direct route; strong direct baseline for the matched QAT MTP server route, but direct llama-bench remains separate from speculative serving. | [source ↗](https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-11/latest-llamacpp-ac4cddeb-vulkan-clean/gemma-4-26b-a4b-it-qat-udq4kxl-r5.csv#L3) |
+<pre>
+hardware                      precision               speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  UD-Q4_K_M         <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-30/latest-llamacpp-b9851-vulkan-sentinel/gemma4-26b-a4b-udq4km-b9851-r5.csv#L3">55.45 tok/s</a>  llama.cpp 0eca4d490 (build_number…
+AMD Ryzen AI Max+ 395 (Stri…  UD-Q4_K_M         <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-07-02/latest-llamacpp-b9859-vulkan-sentinel/gemma4-26b-a4b-udq4km-b9859-faon-mmp0-r5.csv#L3">54.18 tok/s</a>  llama.cpp 4fc4ec554 (build_number…
+AMD Ryzen AI Max+ 395 (Stri…  Gemma QAT GGUF …   <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-11/latest-llamacpp-ac4cddeb-vulkan-clean/gemma-4-26b-a4b-it-qat-udq4kxl-r5.csv#L3">74.8 tok/s</a>  llama.cpp ac4cddeb0 (build_number…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | AIME 2025 0-shot pass@1, mean of 8 seeds (with thinking) | 0.887 → 0.917 | 103.3% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L253) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | GPQA Diamond 0-shot pass@1 (without thinking) | 0.732 → 0.748 | 102.1% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L192) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | MATH-500 0-shot pass@1 (without thinking) | 0.848 → 0.859 | 101.3% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L180) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | IFEval 0-shot prompt-level strict (with thinking) | 0.944 → 0.951 | 100.7% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L222) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | MATH-500 0-shot pass@1 (with thinking) | 0.859 → 0.859 | 100.1% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L247) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | AIME 2025 0-shot pass@1, mean of 8 seeds (without thinking) | 0.8 → 0.8 | 100.0% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L186) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | MMLU-Pro 0-shot custom-extract (with thinking) | 0.852 → 0.851 | 99.9% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L241) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | MMLU-Pro 0-shot custom-extract (without thinking) | 0.835 → 0.833 | 99.7% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L174) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | IFEval 0-shot prompt-level strict (without thinking) | 0.9 → 0.893 | 99.3% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L155) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | LiveCodeBench v6 0-shot pass@1 (without thinking) | 0.745 → 0.739 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L199) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | GPQA Diamond 0-shot pass@1 (with thinking) | 0.808 → 0.801 | 99.2% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L259) |
-| FP8 dynamic (data-free; FP8 weights per-channel, activations dynamic per-token; llm-compressor model\_free\_ptq FP8\_DYNAMIC) | LiveCodeBench v6 0-shot pass@1 (with thinking) | 0.779 → 0.76 | 97.6% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L266) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | MATH-500 0-shot pass@1 (without thinking) | 0.848 → 0.876 | 103.3% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L194) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | IFEval 0-shot prompt-level strict (with thinking) | 0.944 → 0.942 | 99.7% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L236) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | MATH-500 0-shot pass@1 (with thinking) | 0.859 → 0.851 | 99.1% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L261) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | GPQA Diamond 0-shot pass@1 (without thinking) | 0.732 → 0.724 | 98.9% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L206) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | MMLU-Pro 0-shot custom-extract (without thinking) | 0.835 → 0.817 | 97.8% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L188) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | MMLU-Pro 0-shot custom-extract (with thinking) | 0.852 → 0.833 | 97.8% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L255) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | IFEval 0-shot prompt-level strict (without thinking) | 0.9 → 0.872 | 97.0% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L169) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | GPQA Diamond 0-shot pass@1 (with thinking) | 0.808 → 0.776 | 96.0% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L273) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | LiveCodeBench v6 0-shot pass@1 (with thinking) | 0.779 → 0.728 | 93.4% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L280) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | LiveCodeBench v6 0-shot pass@1 (without thinking) | 0.745 → 0.682 | 91.6% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L213) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | AIME 2025 0-shot pass@1, mean of 8 seeds (with thinking) | 0.887 → 0.813 | 91.5% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L267) |
-| NVFP4 (FP4 weights/activations with per-group scaling; llm-compressor NVFP4) | AIME 2025 0-shot pass@1, mean of 8 seeds (without thinking) | 0.8 → 0.662 | 82.8% | [source ↗](https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L200) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 dynamic (data-free; FP8 w…  AIME 2025 0-shot pass@1, mean of …     0.887 → 0.917  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L253">103.3%</a>
+FP8 dynamic (data-free; FP8 w…  GPQA Diamond 0-shot pass@1 (witho…     0.732 → 0.748  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L192">102.1%</a>
+FP8 dynamic (data-free; FP8 w…  MATH-500 0-shot pass@1 (without t…     0.848 → 0.859  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L180">101.3%</a>
+FP8 dynamic (data-free; FP8 w…  IFEval 0-shot prompt-level strict…     0.944 → 0.951  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L222">100.7%</a>
+FP8 dynamic (data-free; FP8 w…  MATH-500 0-shot pass@1 (with thin…     0.859 → 0.859  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L247">100.1%</a>
+FP8 dynamic (data-free; FP8 w…  AIME 2025 0-shot pass@1, mean of …         0.8 → 0.8  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L186">100.0%</a>
+FP8 dynamic (data-free; FP8 w…  MMLU-Pro 0-shot custom-extract (w…     0.852 → 0.851   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L241">99.9%</a>
+FP8 dynamic (data-free; FP8 w…  MMLU-Pro 0-shot custom-extract (w…     0.835 → 0.833   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L174">99.7%</a>
+FP8 dynamic (data-free; FP8 w…  IFEval 0-shot prompt-level strict…       0.9 → 0.893   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L155">99.3%</a>
+FP8 dynamic (data-free; FP8 w…  LiveCodeBench v6 0-shot pass@1 (w…     0.745 → 0.739   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L199">99.2%</a>
+FP8 dynamic (data-free; FP8 w…  GPQA Diamond 0-shot pass@1 (with …     0.808 → 0.801   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L259">99.2%</a>
+FP8 dynamic (data-free; FP8 w…  LiveCodeBench v6 0-shot pass@1 (w…      0.779 → 0.76   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic/blob/ed35d7abe5d940da41b4ff06eb482feb0be8cb44/README.md#L266">97.6%</a>
+NVFP4 (FP4 weights/activation…  MATH-500 0-shot pass@1 (without t…     0.848 → 0.876  <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L194">103.3%</a>
+NVFP4 (FP4 weights/activation…  IFEval 0-shot prompt-level strict…     0.944 → 0.942   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L236">99.7%</a>
+NVFP4 (FP4 weights/activation…  MATH-500 0-shot pass@1 (with thin…     0.859 → 0.851   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L261">99.1%</a>
+NVFP4 (FP4 weights/activation…  GPQA Diamond 0-shot pass@1 (witho…     0.732 → 0.724   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L206">98.9%</a>
+NVFP4 (FP4 weights/activation…  MMLU-Pro 0-shot custom-extract (w…     0.835 → 0.817   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L188">97.8%</a>
+NVFP4 (FP4 weights/activation…  MMLU-Pro 0-shot custom-extract (w…     0.852 → 0.833   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L255">97.8%</a>
+NVFP4 (FP4 weights/activation…  IFEval 0-shot prompt-level strict…       0.9 → 0.872   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L169">97.0%</a>
+NVFP4 (FP4 weights/activation…  GPQA Diamond 0-shot pass@1 (with …     0.808 → 0.776   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L273">96.0%</a>
+NVFP4 (FP4 weights/activation…  LiveCodeBench v6 0-shot pass@1 (w…     0.779 → 0.728   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L280">93.4%</a>
+NVFP4 (FP4 weights/activation…  LiveCodeBench v6 0-shot pass@1 (w…     0.745 → 0.682   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L213">91.6%</a>
+NVFP4 (FP4 weights/activation…  AIME 2025 0-shot pass@1, mean of …     0.887 → 0.813   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L267">91.5%</a>
+NVFP4 (FP4 weights/activation…  AIME 2025 0-shot pass@1, mean of …       0.8 → 0.662   <a href="https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4/blob/5557756b8dce33ac72f2bd702b11729fdba3b839/README.md#L200">82.8%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gemma-4-26b-a4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

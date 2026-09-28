@@ -6,29 +6,30 @@
 
 Kuaishou · closed weights
 
-**score 63.6** ±2.8
-
-#12 of 54 · from 3 benchmark results across 3 sources
+**score 63.6** ±2.8 · #12 of 54 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1354.0 | 59.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 48% | 2026-09-22 |
-| <a name="visual-rapid-physics"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings"> Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) | [Rapidata physics realism (I2V, with reference)](https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings) | 1123.0 | 67.3 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-09-25 |
-| <a name="visual-rapid-camera"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings"> Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) | [Rapidata camera movement (I2V)](https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard) | 1062.2 | 69.9 | ▇▇▇▇▇ 17% | 2026-09-25 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 63.6** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1354.0    59.8   2026-09-22   48% ▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1123.0    67.3   2026-09-25   32% ▇▇▇▇
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  1062.2    69.9   2026-09-25   17% ▇▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 63.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.11/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video)
+api (fal.ai) · $0.11/sec · [fal.ai](https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video) · USD per second of generated video on fal.ai, audio off. Product: fal Kling 3.0 Pro text-to-video endpoint. API model: fal-ai/kling-video/v3/pro/text-to-video. Settings: generate\_audio=false (endpoint default true costs $0.168/s; with voice control $0.196/s). Price basis: per-second rate printed by fal. Kling's own developer page lists the same $0.112/s for Kling 3.0 at 1080P without audio, but does not label a 'Pro' mode, so the explicitly named fal endpoint is used. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video): USD per second of generated video on fal.ai, audio off. Product: fal Kling 3.0 Pro text-to-video endpoint. API model: fal-ai/kling-video/v3/pro/text-to-video. Settings: generate\_audio=false (endpoint default true costs $0.168/s; with voice control $0.196/s). Price basis: per-second rate printed by fal. Kling's own developer page lists the same $0.112/s for Kling 3.0 at 1080P without audio, but does not label a 'Pro' mode, so the explicitly named fal endpoint is used. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

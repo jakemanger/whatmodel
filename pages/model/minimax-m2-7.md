@@ -6,37 +6,44 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 55.9** ±2.8
-
-#81 of 205 · from 3 benchmark results across 2 sources
+**score 55.9** ±2.8 · #81 of 205 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1397.5 | 56.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 55% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1415.2 | 55.0 | ▇▇▇▇▇▇▇▇▇ 30% | 2026-09-13 |
-| <a name="paper-2605.22535v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks — authors' own Terminus-2 model comparison"> TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks — authors' own Terminus-2 model comparison ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) | [TerminalWorld-Verified (200 tasks) with Terminus-2](https://arxiv.org/html/2605.22535v1) | 49.0% | 57.2 | ▇▇▇ 11% | 2026-05-21 |
-| prior | pull toward the middle |  | 50.0 | ▇ 3% |  |
-|  | **weighted average** |  | **= 55.9** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.5    56.6   2026-09-24   55% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.2    55.0   2026-09-13   30% ▇▇▇▇
+<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    57.2   2026-05-21   11% ▇
+prior                   pull toward the middle                    50.0                 3% ▇
+                        weighted average                        = 55.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/text-generation)
+api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platform.minimax.io](https://platform.minimax.io/docs/guides/text-generation)
 
-[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md) · USD per 1M tokens, MiniMax Open Platform pay-as-you-go, MiniMax-M2.7: input $0.3, output $1.2. Prompt-cache read $0.06 and write $0.375, and MiniMax-M2.7-highspeed ($0.6/$2.4) excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25.
+<sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per 1M tokens, MiniMax Open Platform pay-as-you-go, MiniMax-M2.7: input $0.3, output $1.2. Prompt-cache read $0.06 and write $0.375, and MiniMax-M2.7-highspeed ($0.6/$2.4) excluded. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.7.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/minimax/MiniMax-M2.7.toml)
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~138.5GB   55.9
+2-bit ud-q2_k_xl   ~69.5GB   55.9
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit ud-q4\_k\_xl | ~138.5GB | 55.9 | `llama-server -hf unsloth/MiniMax-M2.7-GGUF:UD-Q4_K_XL` |
-| 2-bit ud-q2\_k\_xl | ~69.5GB | 55.9 | `llama-server -hf unsloth/MiniMax-M2.7-GGUF:UD-Q2_K_XL` |
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/MiniMax-M2.7-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/MiniMax-M2.7-GGUF:UD-Q2_K_XL
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/minimax-m2-7) · [JSON](https://whatmodel.sh/api?format=json&all=1)

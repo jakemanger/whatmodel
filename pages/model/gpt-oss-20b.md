@@ -6,84 +6,95 @@
 
 OpenAI · released 2025-08 · 21B params (3.6B active) · apache-2.0
 
-**score 40.1** ±1.6
-
-#152 of 205 · from 14 benchmark results across 9 sources
+**score 40.1** ±1.6 · #152 of 205 · from 14 benchmark results across 9 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 46.0% | 38.0 | ▇▇▇ 8% | 2026-08-06 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 50.8% | 45.0 | ▇▇ 8% | 2026-08-27 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 0.0% | 29.2 | ▇ 2% | 2026-08-27 |
-| <a name="servicenow-browsergym-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="ServiceNow BrowserGym leaderboard (AgentLab GenericAgent runs)"> ServiceNow BrowserGym leaderboard (AgentLab GenericAgent runs) | [BrowserGym WorkArena-L2 (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json) | 2.6% | 35.4 | ▇▇ 8% | 2025-08-07 |
-|  | [BrowserGym WorkArena-L1 (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json) | 38.5% | 40.9 | ▇▇ 6% | 2025-08-07 |
-|  | [BrowserGym MiniWoB (AgentLab GenericAgent)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/miniwob.json) | 64.0% | 44.6 | ▇ 3% | 2025-08-07 |
-| <a name="roblox-llm-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode"> Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode | [Luau Leetcode fully solved (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 52.4% | 53.5 | ▇▇▇ 10% | 2026-09-07 |
-|  | [RobloxQA v2.0 multiple choice (Torpedo Software)](https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json) | 88.7% | 49.2 | ▇▇ 6% | 2026-09-07 |
-| <a name="paper-2601.11868v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials"> Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces — benchmark authors' own agent-model trials ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) | [Terminal-Bench 2.0 with Terminus 2 agent (benchmark authors' runs)](https://arxiv.org/html/2601.11868v1) | 3.1% | 32.9 | ▇▇▇▇ 14% | 2026-01-17 |
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1317.2 | 36.9 | ▇▇▇ 10% | 2026-09-13 |
-| <a name="paper-2605.01417v1"></a><img src="../../icons/arxiv.org.png" width="14" alt="Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models"> Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks — authors' own runs of 61 models ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) | [Medmarks-V weighted mean win rate (61 models, 71 configurations)](https://arxiv.org/html/2605.01417v1) | 53.6% | 45.2 | ▇▇▇ 9% | 2026-05-02 |
-| <a name="eqbench3-canonical-results"></a><img src="../../icons/github.com.png" width="14" alt="EQ-Bench 3 canonical leaderboard results"> EQ-Bench 3 canonical leaderboard results | [EQ-Bench 3 (emotional intelligence, judge Elo)](https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz) | 1111.5 | 37.3 | ▇▇ 8% | 2026-05-10 |
-| <a name="inception-leaderboards-space"></a><img src="../../icons/huggingface.co.png" width="14" alt="Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval)"> Inception Arabic/Hindi leaderboards (AraGen-v3, HindiGen-v1, Arabic IFEval) | [AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)](https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json) | 30.6% | 33.6 | ▇ 4% | 2026-02-08 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 29.0% | 29.1 | ▇ 3% | 2025-09-04 |
-| prior | pull toward the middle |  | 50.0 | ▇ 1% |  |
-|  | **weighted average** |  | **= 40.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     46.0%    38.0   2026-08-06    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         50.8%    45.0   2026-08-27    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    29.2   2026-08-27    2% ▇
+<a name="servicenow-browsergym-leaderboard"></a>ServiceNow BrowserGym…  <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l2.json">BrowserGym WorkArena-L2 (Agen…</a>    2.6%    35.4   2025-08-07    8% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/workarena-l1.json">BrowserGym WorkArena-L1 (Agen…</a>   38.5%    40.9   2025-08-07    6% ▇
+                        <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard/blob/294ebe1dc36ba83c6916c64c64fb870af3dc8cee/results/GenericAgent-GPT-oss-20b/miniwob.json">BrowserGym MiniWoB (AgentLab …</a>   64.0%    44.6   2025-08-07    3% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>   52.4%    53.5   2026-09-07   10% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   88.7%    49.2   2026-09-07    6% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>    3.1%    32.9   2026-01-17   14% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.2    36.9   2026-09-13   10% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   53.6%    45.2   2026-05-02    9% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1111.5    37.3   2026-05-10    8% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   30.6%    33.6   2026-02-08    4% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   29.0%    29.1   2025-09-04    3% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 40.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (14)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [Aider polyglot (225 exercises, two attempts)](https://arxiv.org/html/2508.10925v1) | 34.2% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [AIME 2024](https://arxiv.org/html/2508.10925v1) | 92.1% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [AIME 2025](https://arxiv.org/html/2508.10925v1) | 91.7% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [GPQA Diamond](https://arxiv.org/html/2508.10925v1) | 71.5% | too few results from this source to calibrate it; another source's number for this test is used |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [HealthBench](https://arxiv.org/html/2508.10925v1) | 42.5% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [HealthBench Hard](https://arxiv.org/html/2508.10925v1) | 10.8% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [Humanity's Last Exam](https://arxiv.org/html/2508.10925v1) | 10.9% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [Humanity's Last Exam with tools](https://arxiv.org/html/2508.10925v1) | 17.3% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [MMLU](https://arxiv.org/html/2508.10925v1) | 85.3% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [MMMLU](https://arxiv.org/html/2508.10925v1) | 75.7% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [SimpleQA](https://arxiv.org/html/2508.10925v1) | 6.7% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [SWE-bench Verified](https://arxiv.org/html/2508.10925v1) | 60.7% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [τ-bench Airline](https://arxiv.org/html/2508.10925v1) | 38.0% | too few models have this result to calibrate it yet |
-| OpenAI — gpt-oss-120b & gpt-oss-20b Model Card | [τ-bench Retail](https://arxiv.org/html/2508.10925v1) | 54.8% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (14)</summary>
+
+<pre>
+source  test                            score  why
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">Aider polyglot (225 exercises…</a>  34.2%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">AIME 2024</a>                       92.1%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">AIME 2025</a>                       91.7%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">GPQA Diamond</a>                    71.5%  another source's result is used
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">HealthBench</a>                     42.5%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard</a>                10.8%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam</a>            10.9%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with too…</a>  17.3%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">MMLU</a>                            85.3%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">MMMLU</a>                           75.7%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">SimpleQA</a>                         6.7%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">SWE-bench Verified</a>              60.7%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline</a>                 38.0%  too few models have it yet
+OpenAI  <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail</a>                  54.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Groq) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [console.groq.com ↗](https://console.groq.com/docs/models)
+api (Groq) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [console.groq.com](https://console.groq.com/docs/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/groq/models/openai/gpt-oss-20b.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/groq/models/openai/gpt-oss-20b.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-oss-20b.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/gpt-oss-20b.toml)
+<pre>
+download        size  score
+MXFP4 mxfp4  ~13.1GB   40.1
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| MXFP4 mxfp4 | ~13.1GB | 40.1 | `ollama run gpt-oss:20b` |
+```sh
+# MXFP4 mxfp4
+ollama run gpt-oss:20b
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA DGX Spark (GB10) | MXFP4 | 83.43 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32; 32 generated tokens; context depth 0; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L61) |
-| NVIDIA DGX Spark (GB10) | MXFP4 | 79.22 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d4096; 32 generated tokens; context depth 4096; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L63) |
-| NVIDIA DGX Spark (GB10) | MXFP4 | 61.65 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d32768; 32 generated tokens; context depth 32768; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L69) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | MXFP4 | 129.97 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32; 32 generated tokens; context depth 0; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L48) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | MXFP4 | 123.38 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d4096; 32 generated tokens; context depth 4096; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L50) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | MXFP4 | 98.25 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d32768; 32 generated tokens; context depth 32768; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L56) |
-| NVIDIA DGX Spark (GB10) | MXFP4 | 75.22 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d8192; 32 generated tokens; context depth 8192; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L65) |
-| NVIDIA DGX Spark (GB10) | MXFP4 | 70.36 tok/s | llama.cpp 11fb327bf (7941), CUDA · llama-bench; tg32 @ d16384; 32 generated tokens; context depth 16384; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L67) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | MXFP4 | 117.39 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d8192; 32 generated tokens; context depth 8192; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L52) |
-| Apple M2 Ultra (GPU core count and RAM not specified) | MXFP4 | 109.75 tok/s | llama.cpp b828e18c7 (7948), Metal/BLAS · llama-bench; tg32 @ d16384; 32 generated tokens; context depth 16384; n\_ubatch=2048; flash attention=1; one sequence · Published token-generation mean; not prompt processing or aggregate batch throughput. Hardware core count and installed RAM are not inferred. | [source ↗](https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L54) |
-| AMD Ryzen AI Max+ 395 (Strix Halo), Radeon 8060S; pre-production Framework Desktop 128GB LPDDR5x-8000 | MXFP4 (summary-table label 'OpenAI gpt-oss 20B MXFP4'; result folder/file named gpt-oss-20b-F16) | 47.36 tok/s | llama.cpp 6c7e9a544 (commit from system\_info.json), backend hip · llama-bench tg128 (128 generated tokens, empty context); backend variant 'llama.cpp-hip'; flags: defaults; mmap disabled per the guide; value = bold best tg128 in this model's Benchmark Results table · Author's own sweep; README value 47.357 rounded to 2 decimals. Kernel 6.16.0-1-mainline; system\_info timestamp 2025-08-08T14:48:13.390941Z; CPU string 'AMD Eng Sample'. Pre-production hardware and BIOS per the README. | [source ↗](https://github.com/lhl/strix-halo-testing/blob/5ee14b5b0ecfbd16b7fd0aa41a91581c32b33b61/llm-bench/gpt-oss-20b-F16/README.md#L4) |
+<pre>
+hardware                      precision                speed  engine and settings
+NVIDIA DGX Spark (GB10)       MXFP4              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L61">83.43 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       MXFP4              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L63">79.22 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       MXFP4              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L69">61.65 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+Apple M2 Ultra (GPU core co…  MXFP4             <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L48">129.97 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  MXFP4             <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L50">123.38 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  MXFP4              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L56">98.25 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+NVIDIA DGX Spark (GB10)       MXFP4              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L65">75.22 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+NVIDIA DGX Spark (GB10)       MXFP4              <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/dgx-spark/dgx-spark.md#L67">70.36 tok/s</a>  llama.cpp 11fb327bf (7941), CUDA …
+Apple M2 Ultra (GPU core co…  MXFP4             <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L52">117.39 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+Apple M2 Ultra (GPU core co…  MXFP4             <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/mac-m2-ultra/mac-m2-ultra.md#L54">109.75 tok/s</a>  llama.cpp b828e18c7 (7948), Metal…
+AMD Ryzen AI Max+ 395 (Stri…  MXFP4 (summary-…   <a href="https://github.com/lhl/strix-halo-testing/blob/5ee14b5b0ecfbd16b7fd0aa41a91581c32b33b61/llm-bench/gpt-oss-20b-F16/README.md#L4">47.36 tok/s</a>  llama.cpp 6c7e9a544 (commit from …
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/gpt-oss-20b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

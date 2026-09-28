@@ -6,27 +6,28 @@
 
 Alibaba Cloud · closed weights
 
-**score 51.6** ±3.8
-
-#26 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.6** ±3.8 · #26 of 36 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-cn-news-tts-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1"> CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [CN-NewsTTS v0.1 · strict pronunciation accuracy](https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv) | 47.2% | 51.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-06-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 51.6** |  |  |
+<pre>
+source                 test                            score  implies  date        weight
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1  <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  47.2%    51.7   2026-06-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                  pull toward the middle                   49.9                 6% ▇
+                       weighted average                       = 51.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $26.00/M chars · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $26.00/M chars · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per 1M characters: Model Studio lists cosyvoice-v3-plus at $0.26 per 10,000 input characters, International (Singapore) deployment; output free (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: cosyvoice-v3-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; China (Beijing) lists $0.286706 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M characters: Model Studio lists cosyvoice-v3-plus at $0.26 per 10,000 input characters, International (Singapore) deployment; output free (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: cosyvoice-v3-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; China (Beijing) lists $0.286706 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

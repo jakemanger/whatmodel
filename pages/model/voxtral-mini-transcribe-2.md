@@ -6,31 +6,32 @@
 
 Mistral · released 2026-02 · proprietary
 
-**score 13.5** ±2.6
-
-#25 of 28 · from 5 benchmark results across 2 sources
+**score 13.5** ±2.6 · #25 of 28 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-voxtral-realtime-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Voxtral Realtime"> Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Voxtral report · English short-form 10-set WER](https://arxiv.org/html/2602.11298v1) lab-reported | 7.3% | 11.1 | ▇▇▇▇▇▇▇ 25% | 2026-02-11 |
-|  | [Voxtral report · English long-form 4-set WER](https://arxiv.org/html/2602.11298v1) lab-reported | 7.1% | 10.8 | ▇▇▇▇▇▇▇ 25% | 2026-02-11 |
-|  | [Voxtral report · Common Voice 12-language error rate](https://arxiv.org/html/2602.11298v1) lab-reported | 8.1% | 14.7 | ▇▇▇▇▇▇▇ 24% | 2026-02-11 |
-|  | [Voxtral report · FLEURS 13-language error rate](https://arxiv.org/html/2602.11298v1) lab-reported | 5.9% | 12.8 | ▇▇▇▇▇▇▇ 24% | 2026-02-11 |
-| <a name="speech-stt-koedesk-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="koedesk STT Bench v1 (Track A, FLEURS first-200)"> koedesk STT Bench v1 (Track A, FLEURS first-200) ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt)) | [koedesk FLEURS first-200 · 9-language headline error mean](https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json) | 5.2% | 36.5 | ▇ 1% | 2026-07-05 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 13.5** |  |  |
+<pre>
+source                test                            score  implies  date        weight
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    11.1   2026-02-11   25% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    10.8   2026-02-11   25% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    14.7   2026-02-11   24% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    12.8   2026-02-11   24% ▇▇▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    36.5   2026-07-05    1% ▇
+prior                 pull toward the middle                   49.9                 3% ▇
+                      weighted average                       = 13.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · koedesk STT Bench v1 ([CC BY 4.0](../../licenses/speech-stt-koedesk-ccby.txt))</sub>
 
 ## How to run it
 
-api (Mistral AI) · $0.0030/audio min · [docs.mistral.ai ↗](https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-26-02)
+api (Mistral AI) · $0.0030/audio min · [docs.mistral.ai](https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-26-02)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per input audio minute. Exact endpoint mistral/voxtral-mini-2602. Product: Audio transcription. API model: voxtral-mini-2602. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: published rate. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per input audio minute. Exact endpoint mistral/voxtral-mini-2602. Product: Audio transcription. API model: voxtral-mini-2602. Settings: endpoint=/v1/audio/transcriptions, streaming=no. Price basis: published rate. Currency: USD.</sub>
 
 no verified local download listed
 

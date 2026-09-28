@@ -6,68 +6,78 @@
 
 Tencent · released 2026-07 · 299B params (21B active) · apache-2.0
 
-**score 62.8** ±2.9
-
-#42 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.8** ±2.9 · #42 of 205 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena WebDev (Code Arena)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet) | 1509.2 | 63.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 62% | 2026-09-24 |
-|  | [LMArena (text)](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet) | 1455.8 | 62.5 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-09-13 |
-| prior | pull toward the middle |  | 50.0 | ▇ 4% |  |
-|  | **weighted average** |  | **= 62.8** |  |  |
+<pre>
+source                  test                        score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1509.2    63.8   2026-09-24   62% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1455.8    62.5   2026-09-13   34% ▇▇▇▇
+prior                   pull toward the middle               50.0                 4% ▇
+                        weighted average                   = 62.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (27)
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| tencent/Hy3 model card | [APEX-Agents (pass@1)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 25.6% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [BrowseComp with context management](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 84.2% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [CL-bench](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 23.8% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [CL-bench life](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 17.0% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [Claw-Eval Pass^3](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 68.5% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [CMT-Benchmark](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 37.8% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [DeepSearchQA](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 91.0% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [FrontierScience-Olympiad](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 74.8% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [FrontierScience-Research](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 21.3% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [GPQA Diamond](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 90.4% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [Humanity's Last Exam](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 37.0% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [Humanity's Last Exam with tools](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 53.2% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [IMO-AnswerBench](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 90.0% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [MathArena Apex (pass@1)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 38.7% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [MCP-Atlas (public set)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 79.1% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [NL2Repo](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 45.6% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [PHYBench](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 77.4% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [SkillsBench 79-task text-only (Claude Code, avg of 3)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 55.3% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [SuperChem](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 54.9% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [SWE-bench Multilingual](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 75.8% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [SWE-bench Pro (split unspecified)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 57.9% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [SWE-bench Verified](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 78.0% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [Terminal-Bench 2.1](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 71.7% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [Toolathlon (Tool Decathlon)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 48.5% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [USAMO 2026](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 72.0% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [WideSearch](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 76.4% | too few models have this result to calibrate it yet |
-| tencent/Hy3 model card | [WildClawBench (35 text-only queries)](https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md) | 53.6% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (27)</summary>
+
+<pre>
+source                  test                            score  why
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">APEX-Agents (pass@1)</a>            25.6%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">BrowseComp with context manag…</a>  84.2%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">CL-bench</a>                        23.8%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">CL-bench life</a>                   17.0%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Claw-Eval Pass^3</a>                68.5%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">CMT-Benchmark</a>                   37.8%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">DeepSearchQA</a>                    91.0%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">FrontierScience-Olympiad</a>        74.8%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">FrontierScience-Research</a>        21.3%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">GPQA Diamond</a>                    90.4%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam</a>            37.0%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam with too…</a>  53.2%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">IMO-AnswerBench</a>                 90.0%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">MathArena Apex (pass@1)</a>         38.7%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">MCP-Atlas (public set)</a>          79.1%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">NL2Repo</a>                         45.6%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">PHYBench</a>                        77.4%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SkillsBench 79-task text-only…</a>  55.3%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SuperChem</a>                       54.9%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Multilingual</a>          75.8%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Pro (split unspecif…</a>  57.9%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Verified</a>              78.0%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Terminal-Bench 2.1</a>              71.7%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Toolathlon (Tool Decathlon)</a>     48.5%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">USAMO 2026</a>                      72.0%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">WideSearch</a>                      76.4%  too few models have it yet
+tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">WildClawBench (35 text-only q…</a>  53.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Deep Infra) · $0.23/M blended · $0.13 in / $0.53 out per 1M tokens · [deepinfra.com ↗](https://deepinfra.com/models)
+api (Deep Infra) · $0.23/M blended · $0.13 in / $0.53 out per 1M tokens · [deepinfra.com](https://deepinfra.com/models)
 
-[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/tencent/Hy3.toml) · Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ.
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepinfra/models/tencent/Hy3.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/tencent/hy3.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/tencent/hy3.toml)
+<pre>
+download          size  score
+4-bit q4_k_m  ~179.9GB   62.8
+2-bit iq2_m    ~90.2GB   62.8
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~179.9GB | 62.8 | `llama-server -hf bartowski/Hy3-GGUF:Q4_K_M` |
-| 2-bit iq2\_m | ~90.2GB | 62.8 | `llama-server -hf bartowski/Hy3-GGUF:IQ2_M` |
+```sh
+# 4-bit q4_k_m
+llama-server -hf bartowski/Hy3-GGUF:Q4_K_M
+# 2-bit iq2_m
+llama-server -hf bartowski/Hy3-GGUF:IQ2_M
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/hy3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

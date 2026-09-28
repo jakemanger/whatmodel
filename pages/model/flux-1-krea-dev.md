@@ -6,9 +6,7 @@
 
 Black Forest Labs / Krea
 
-**score 40.1** ±4.9
-
-#74 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.1** ±4.9 · #74 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-imagenworld"></a><img src="../../icons/arxiv.org.png" width="14" alt="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) | [ImagenWorld text-guided generation (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 82.0% | 39.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 90% | 2026-03-29 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 40.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    39.0   2026-03-29   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 40.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.025/image · [replicate.com ↗](https://replicate.com/black-forest-labs/flux-krea-dev)
+api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-forest-labs/flux-krea-dev)
 
-[price source](https://replicate.com/black-forest-labs/flux-krea-dev) · USD per output image on Replicate's official black-forest-labs/flux-krea-dev model (billing: $0.025 per output image, "or 40 images for $1"; hardware time not added). The current version is served from replicate-pruna/flux-krea-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-krea-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux/krea bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL or Krea direct tariff. Replicate official model page, observed 2026-09-26.
+<sub>[price source](https://replicate.com/black-forest-labs/flux-krea-dev): USD per output image on Replicate's official black-forest-labs/flux-krea-dev model (billing: $0.025 per output image, "or 40 images for $1"; hardware time not added). The current version is served from replicate-pruna/flux-krea-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-krea-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux/krea bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL or Krea direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

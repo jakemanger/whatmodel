@@ -6,9 +6,7 @@
 
 DeepSeek
 
-**score 19.4** ±4.8
-
-#87 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 19.4** ±4.8 · #87 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,26 +14,32 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 26.0% | 16.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 90% | 2026-06-02 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 19.4** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    16.1   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 19.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| DeepSeek-AI — Janus-Pro technical report | [DPG-Bench](https://arxiv.org/html/2501.17811v1) | 82.6% | too few models have this result to calibrate it yet |
-| DeepSeek-AI — Janus-Pro technical report | [GenEval](https://arxiv.org/html/2501.17811v1) | 73.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source       test       score  why
+DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench</a>  82.6%  too few models have it yet
+DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">GenEval</a>    73.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.0005/image · [deepinfra.com ↗](https://deepinfra.com/deepseek-ai/Janus-Pro-1B)
+api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepseek-ai/Janus-Pro-1B)
 
-[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-1B) · USD per generated image on DeepInfra (model page header '$0.0005 / image'; catalogue pricing type image\_units at 0.05 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-1B. Settings: default output size, one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff. DeepInfra official model page, observed 2026-09-26.
+<sub>[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-1B): USD per generated image on DeepInfra (model page header '$0.0005 / image'; catalogue pricing type image\_units at 0.05 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-1B. Settings: default output size, one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff. DeepInfra official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

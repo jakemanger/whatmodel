@@ -6,9 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 53.6** ±4.7
-
-#44 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.6** ±4.7 · #44 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,35 +14,49 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 89.4% | 54.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 91% | 2026-08-25 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 9% |  |
-|  | **weighted average** |  | **= 53.6** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    54.0   2026-08-25   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 53.6
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (5)
+<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| ERNIE-Image model repository evaluation tables | [GenEval](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) | 88.6% | too few models have this result to calibrate it yet |
-| ERNIE-Image model repository evaluation tables | [OneIG-Bench (EN)](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) | 55.4% | too few models have this result to calibrate it yet |
-| ERNIE-Image model repository evaluation tables | [LongText-Bench (CN)](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) | 95.9% | too few models have this result to calibrate it yet |
-| ERNIE-Image model repository evaluation tables | [LongText-Bench (EN)](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) | 96.8% | too few models have this result to calibrate it yet |
-| ERNIE-Image model repository evaluation tables | [OneIG-Bench (CN)](https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md) | 52.1% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (5)</summary>
+
+<pre>
+source                  test                 score  why
+ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval</a>              88.6%  too few models have it yet
+ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN)</a>     55.4%  too few models have it yet
+ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN)</a>  95.9%  too few models have it yet
+ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN)</a>  96.8%  too few models have it yet
+ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN)</a>     52.1%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (fal.ai) · $0.030/image · [fal.ai ↗](https://fal.ai/models/fal-ai/ernie-image)
+api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-image)
 
-[price source](https://fal.ai/models/fal-ai/ernie-image) · USD for one 1-megapixel output: fal bills this endpoint $0.03 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/ernie-image. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/ernie-image): USD for one 1-megapixel output: fal bills this endpoint $0.03 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/ernie-image. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~19.7GB | 53.6 | `uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"` |
-| gguf-q4\_k\_m · nvidia only | ~5.3GB | 53.6 | `sd-cli --diffusion-model ernie-image-UD-Q4_K_M.gguf --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa` |
+<pre>
+version                      needs  score
+bf16 · nvidia only         ~19.7GB   53.6
+gguf-q4_k_m · nvidia only   ~5.3GB   53.6
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"
+# gguf-q4_k_m · nvidia only
+sd-cli --diffusion-model ernie-image-UD-Q4_K_M.gguf --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/ernie-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

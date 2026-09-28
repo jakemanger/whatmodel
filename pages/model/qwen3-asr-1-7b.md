@@ -6,63 +6,75 @@
 
 Alibaba (Qwen) · released 2026-01 · 2.35B params · apache-2.0
 
-**score 55.9** ±1.7
-
-#13 of 28 · from 13 benchmark results across 10 sources
+**score 55.9** ±1.7 · #13 of 28 · from 13 benchmark results across 10 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-gigaspeechbench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark"> GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GigaSpeechBench · 6 English accents WER mean](https://arxiv.org/html/2606.28884v1) | 15.1% | 60.0 | ▇▇ 8% | 2026-06-27 |
-|  | [GigaSpeechBench · 12 English domains entity B-WER mean](https://arxiv.org/html/2606.28884v1) | 13.8% | 58.1 | ▇▇ 8% | 2026-06-27 |
-|  | [GigaSpeechBench · 7 Arabic dialect WER mean](https://arxiv.org/html/2606.28884v1) | 48.3% | 54.4 | ▇▇ 6% | 2026-06-27 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ ASR · 4 real-world English sets, mean WER](https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg) | 7.4% | 58.5 | ▇▇▇▇ 14% | 2026-07-16 |
-| <a name="speech-stt-yoruba-cs-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Switch-aware evaluation of ASR on English-Yoruba code-switched speech (arXiv:2609.11786v1)"> Switch-aware evaluation of ASR on English-Yoruba code-switched speech (arXiv:2609.11786v1) ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt)) | [AfriCodeSwitch English-Yoruba code-switched speech · WER (cap2000)](https://arxiv.org/html/2609.11786v1) | 67.6% | 56.7 | ▇▇▇▇ 12% | 2026-09-10 |
-| <a name="speech-stt-sap-dysarthric-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2)"> Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2) ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) | [Speech Accessibility Project dysarthric speech · zero-shot WER (rated subset, N=11,218)](https://arxiv.org/html/2605.02782v2) | 13.4% | 57.1 | ▇▇▇▇ 12% | 2026-08-18 |
-| <a name="speech-stt-megaasr-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS)"> Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS) ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) | [Mega-ASR adverse-condition suite · mean WER (CHiME-4, VOiCES, NOIZEUS)](https://arxiv.org/html/2605.19833v1) | 7.9% | 58.9 | ▇▇▇▇ 12% | 2026-05-19 |
-| <a name="speech-stt-turkasr-bench-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Turkish ASR Leaderboard (TurkASR-Bench, yagmurtuncer)"> Turkish ASR Leaderboard (TurkASR-Bench, yagmurtuncer) | [TurkASR-Bench (7 Turkish sources, 5,200 utterances) · corpus WER](https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json) | 15.8% | 53.9 | ▇▇▇ 9% | 2026-09-25 |
-| <a name="speech-stt-peste-apache"></a><img src="../../icons/github.com.png" width="14" alt="PESTE · Persian Speech to Text benchmark (fleurs-fa-ir-v1)"> PESTE · Persian Speech to Text benchmark (fleurs-fa-ir-v1) | [PESTE · Persian FLEURS (fa\_ir) corpus CER](https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv) | 8.9% | 52.2 | ▇▇ 8% | 2026-08-12 |
-| <a name="speech-stt-quranic-asr-lb-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Quranic ASR Leaderboard (Quran-Lab, held-out recitation set)"> Quranic ASR Leaderboard (Quran-Lab, held-out recitation set) | [Quranic ASR Leaderboard · held-out recitation (600 clips) overall WER](https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json) | 33.7% | 44.8 | ▇▇ 7% | 2026-08-15 |
-| <a name="speech-stt-arabic-oual-elm-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Universal Arabic ASR Leaderboard (Elm Research Center)"> Open Universal Arabic ASR Leaderboard (Elm Research Center) | [Open Universal Arabic ASR Leaderboard · 6-test-set average WER](https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py) | 33.4% | 56.3 | ▇ 4% | 2026-01-30 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 5.1% | 43.5 | ▇ 1% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 5.8% | 74.1 | ▇ 0% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 55.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-gigaspeechbench-report"></a>GigaSpeechBench: A Re…  <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 6 English a…</a>  15.1%    60.0   2026-06-27    8% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 12 English …</a>  13.8%    58.1   2026-06-27    8% ▇
+                        <a href="https://arxiv.org/html/2606.28884v1">GigaSpeechBench · 7 Arabic di…</a>  48.3%    54.4   2026-06-27    6% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   7.4%    58.5   2026-07-16   14% ▇▇
+<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  67.6%    56.7   2026-09-10   12% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  13.4%    57.1   2026-08-18   12% ▇
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>   7.9%    58.9   2026-05-19   12% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  15.8%    53.9   2026-09-25    9% ▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   8.9%    52.2   2026-08-12    8% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  33.7%    44.8   2026-08-15    7% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  33.4%    56.3   2026-01-30    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        5.1%    43.5   2026-03-26    1% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.8%    74.1   2026-03-26    0% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 55.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (13)
+<sub>Licences: GigaSpeechBench: A Real-World Multilingual Speech-to-Text Benchmark ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Switch-aware evaluation of ASR on English-Yoruba code-switched speech ([CC BY 4.0](../../licenses/speech-stt-yoruba-cs-report.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Qwen/Qwen3-ASR-1.7B model card | [AISHELL-2 test error rate](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 2.7% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [Common Voice English WER (version unspecified)](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 7.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [Common Voice Mandarin error rate (version unspecified)](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 5.3% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [FLEURS English test WER](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 3.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [FLEURS Mandarin test error rate](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 2.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [GigaSpeech test WER](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 8.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [LibriSpeech test-clean WER](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 1.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [LibriSpeech test-other WER](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 3.4% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [Multilingual LibriSpeech English test WER](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 4.6% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [TED-LIUM test WER (short-form)](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 4.5% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [VoxPopuli English test WER](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 9.2% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [WenetSpeech test\_meeting error rate](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 5.9% | too few models have this result to calibrate it yet |
-| Qwen/Qwen3-ASR-1.7B model card | [WenetSpeech test\_net error rate](https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md) | 5.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (13)</summary>
+
+<pre>
+source                  test                            score  why
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">AISHELL-2 test error rate</a>        2.7%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice English WER (ver…</a>   7.4%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Common Voice Mandarin error r…</a>   5.3%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS English test WER</a>          3.4%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">FLEURS Mandarin test error ra…</a>   2.4%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">GigaSpeech test WER</a>              8.5%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-clean WER</a>       1.6%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">LibriSpeech test-other WER</a>       3.4%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">Multilingual LibriSpeech Engl…</a>   4.6%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">TED-LIUM test WER (short-form)</a>   4.5%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">VoxPopuli English test WER</a>       9.2%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_meeting erro…</a>   5.9%  too few models have it yet
+Qwen/Qwen3-ASR-1.7B m…  <a href="https://huggingface.co/Qwen/Qwen3-ASR-1.7B/blob/7278e1e70fe206f11671096ffdd38061171dd6e5/README.md">WenetSpeech test_net error ra…</a>   5.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.0004/audio min · [deepinfra.com ↗](https://deepinfra.com/Qwen/Qwen3-ASR-1.7B)
+api (DeepInfra) · $0.0004/audio min · [deepinfra.com](https://deepinfra.com/Qwen/Qwen3-ASR-1.7B)
 
-[price source](https://deepinfra.com/Qwen/Qwen3-ASR-1.7B) · USD per input audio minute: DeepInfra lists Qwen/Qwen3-ASR-1.7B at $0.00045 / minute (page pricing data: input\_length billing). Product: DeepInfra hosted inference. API model: Qwen/Qwen3-ASR-1.7B. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.
+<sub>[price source](https://deepinfra.com/Qwen/Qwen3-ASR-1.7B): USD per input audio minute: DeepInfra lists Qwen/Qwen3-ASR-1.7B at $0.00045 / minute (page pricing data: input\_length billing). Product: DeepInfra hosted inference. API model: Qwen/Qwen3-ASR-1.7B. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| 8bit · mac only | ~3.32GB | 55.9 | `uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Qwen3-ASR-1.7B-8bit --audio audio.wav --output-path out --language English` |
-| bf16 · nvidia only | ~6.14GB | 55.9 | `uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-1.7B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000` |
+<pre>
+version               needs  score
+8bit · mac only     ~3.32GB   55.9
+bf16 · nvidia only  ~6.14GB   55.9
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# 8bit · mac only
+uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Qwen3-ASR-1.7B-8bit --audio audio.wav --output-path out --language English
+# bf16 · nvidia only
+uvx --from 'qwen-asr[vllm]' qwen-asr-serve Qwen/Qwen3-ASR-1.7B --gpu-memory-utilization 0.8 --host 0.0.0.0 --port 8000
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/qwen3-asr-1-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

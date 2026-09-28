@@ -6,27 +6,28 @@
 
 Kuaishou (Kling AI) · closed weights
 
-**score 44.2** ±3.9
-
-#39 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.2** ±3.9 · #39 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 1228.6 | 43.9 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 94% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 6% |  |
-|  | **weighted average** |  | **= 44.2** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1228.6    43.9   2026-09-22   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 6% ▇
+                        weighted average                = 44.2
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.050/sec · [replicate.com ↗](https://replicate.com/kwaivgi/kling-v2.1)
+api (Replicate) · $0.050/sec · [replicate.com](https://replicate.com/kwaivgi/kling-v2.1)
 
-[price source](https://replicate.com/kwaivgi/kling-v2.1) · USD per second of output video, standard mode (720p): Replicate's official kwaivgi/kling-v2.1 (image-to-video) states 'Standard mode (720p) costs $0.05 per second. Pro (1080p) costs $0.09 per second.' Product: Replicate model API. API model: kwaivgi/kling-v2.1. Settings: mode=standard (default), 720p, 24 fps, image-to-video. Price basis: published per-second-of-output list rate. Flag: fal lists its Kling 2.1 standard endpoint as deprecated and Kling's own developer pricing page no longer prices 2.1; the Replicate model is online. Currency: USD. Not a Kling direct tariff. Replicate official model page, observed 2026-09-26.
+<sub>[price source](https://replicate.com/kwaivgi/kling-v2.1): USD per second of output video, standard mode (720p): Replicate's official kwaivgi/kling-v2.1 (image-to-video) states 'Standard mode (720p) costs $0.05 per second. Pro (1080p) costs $0.09 per second.' Product: Replicate model API. API model: kwaivgi/kling-v2.1. Settings: mode=standard (default), 720p, 24 fps, image-to-video. Price basis: published per-second-of-output list rate. Flag: fal lists its Kling 2.1 standard endpoint as deprecated and Kling's own developer pricing page no longer prices 2.1; the Replicate model is online. Currency: USD. Not a Kling direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

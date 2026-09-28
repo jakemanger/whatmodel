@@ -6,9 +6,7 @@
 
 BAAI
 
-**score 30.3** ±2.8
-
-#84 of 87 · from 5 benchmark results across 4 sources
+**score 30.3** ±2.8 · #84 of 87 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,30 +14,36 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-imagenworld"></a><img src="../../icons/arxiv.org.png" width="14" alt="ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks"> ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) | [ImagenWorld text-guided generation (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 74.0% | 30.5 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-03-29 |
-|  | [ImagenWorld text-guided editing (human overall)](https://arxiv.org/html/2603.27862v1#S5.T3) | 58.0% | 26.7 | ▇▇▇▇▇ 16% | 2026-03-29 |
-| <a name="visual-edit-compass"></a><img src="../../icons/arxiv.org.png" width="14" alt="Edit-Compass &amp; EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling"> Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) | [Edit-Compass (EN, overall)](https://arxiv.org/html/2605.13062v1#S4.T3) | 37.6% | 30.8 | ▇▇▇▇▇▇▇▇ 27% | 2026-05-13 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 888.0 | 31.2 | ▇▇▇▇ 14% | 2026-03-30 |
-| <a name="visual-unicbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits"> UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) | [UnicBench (EN, overall)](https://arxiv.org/html/2512.02790v1#S6.T4) | 61.2% | 27.1 | ▇▇▇▇ 12% | 2025-12-01 |
-| prior | pull toward the middle |  | 49.9 | ▇ 3% |  |
-|  | **weighted average** |  | **= 30.3** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  74.0%    30.5   2026-03-29   29% ▇▇▇
+                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  58.0%    26.7   2026-03-29   16% ▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      37.6%    30.8   2026-05-13   27% ▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     888.0    31.2   2026-03-30   14% ▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         61.2%    27.1   2025-12-01   12% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 30.3
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| BAAI — OmniGen2 technical report | [GEdit-Bench-EN overall (G\_O, GPT-4.1 judge)](https://arxiv.org/html/2506.18871v4) | 72.1% | too few models have this result to calibrate it yet |
-| BAAI — OmniGen2 technical report | [OneIG-Bench (EN)](https://arxiv.org/html/2506.18871v4) | 47.0% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source  test                            score  why
+BAAI    <a href="https://arxiv.org/html/2506.18871v4">GEdit-Bench-EN overall (G_O, …</a>  72.1%  too few models have it yet
+BAAI    <a href="https://arxiv.org/html/2506.18871v4">OneIG-Bench (EN)</a>                47.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (fal.ai) · $0.15/image · [fal.ai ↗](https://fal.ai/models/fal-ai/omnigen-v2)
+api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/omnigen-v2)
 
-[price source](https://fal.ai/models/fal-ai/omnigen-v2) · USD for one 1-megapixel output: fal bills fal-ai/omnigen-v2 (OmniGen V2 / OmniGen2) $0.15 per megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image generation and editing. API model: fal-ai/omnigen-v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not a BAAI direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/omnigen-v2): USD for one 1-megapixel output: fal bills fal-ai/omnigen-v2 (OmniGen V2 / OmniGen2) $0.15 per megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image generation and editing. API model: fal-ai/omnigen-v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not a BAAI direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

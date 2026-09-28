@@ -6,14 +6,17 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| raven.eval · German read/parliament 4-set WER mean (100 utt. each) | 8.2% | [raven.eval · German ASR WER (public datasets)](https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md) · independent · xAI hosted model\_id 'grok-voice-transcribe-2.0' (REST /v1/stt, language=de, format=true), 400/400 utterances returned. Derived mean of per-set flozi-strict WER: avemio-german-mixed-test 6.8715%, fleurs 4.5879%, mls-de 8.3707%, voxpopuli-de 12.989%. |
+<pre>
+test                                result  reported by  source
+raven.eval · German read/parliame…    8.2%  independent  <a href="https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md">raven.eval · German ASR WER</a>
+</pre>
+
+<sub>Licences: raven.eval · German ASR WER ([MIT](../../licenses/speech-stt-raven-mit.txt))</sub>
 
 ## How to run it
 
-api (xAI) · $0.0017/audio min · [docs.x.ai ↗](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text)
+api (xAI) · $0.0017/audio min · [docs.x.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text)
 
-[price source](https://docs.x.ai/developers/models.md) · USD per input audio minute: xAI Voice Pricing lists Speech to Text at $0.10 / hr (REST) (÷60); $0.20/hr streaming. xAI STT docs name grok-voice-transcribe-2.0 as the default model. Product: xAI Speech to Text API. API model: grok-voice-transcribe-2.0. Settings: REST (file). Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: streaming. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.
+<sub>[price source](https://docs.x.ai/developers/models.md): USD per input audio minute: xAI Voice Pricing lists Speech to Text at $0.10 / hr (REST) (÷60); $0.20/hr streaming. xAI STT docs name grok-voice-transcribe-2.0 as the default model. Product: xAI Speech to Text API. API model: grok-voice-transcribe-2.0. Settings: REST (file). Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: streaming. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.</sub>
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/grok-voice-transcribe-2)

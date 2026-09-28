@@ -6,9 +6,7 @@
 
 StepFun · released 2025-07
 
-**score 39.5** ±7.1
-
-comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.5** ±7.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,13 +14,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-unicbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits"> UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) | [UnicBench (EN, overall)](https://arxiv.org/html/2512.02790v1#S6.T4) | 69.2% | 36.7 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 79% | 2025-12-01 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇ 21% |  |
-|  | **weighted average** |  | **= 39.5** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>  69.2%    36.7   2025-12-01   79% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                21% ▇▇▇
+                        weighted average                = 39.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt))</sub>
 
 ## How to run it
 

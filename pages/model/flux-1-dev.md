@@ -6,9 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · flux-dev-nc
 
-**score 35.1** ±1.7
-
-#76 of 87 · from 5 benchmark results across 5 sources
+**score 35.1** ±1.7 · #76 of 87 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,44 +14,70 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 969.4 | 36.4 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 46% | 2026-09-24 |
-| <a name="visual-t2i-reasonbench"></a><img src="../../icons/aclanthology.org.png" width="14" alt="T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026)"> T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation (Findings of ACL 2026) ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) | [T2I-ReasonBench (overall)](https://aclanthology.org/2026.findings-acl.433.pdf#page=6) | 54.9% | 32.4 | ▇▇▇▇▇▇ 21% | 2026-07-01 |
-| <a name="visual-qcbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing)"> QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation (Reliable Ranking, Fine-Grained Diagnosis, and Cost-Aware Routing) ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) | [QC-T2I-Bench (English, HCQ total)](https://arxiv.org/html/2608.24112v1#Sx3.T2) | 76.2% | 35.1 | ▇▇▇ 11% | 2026-08-25 |
-| <a name="visual-wise"></a><img src="../../icons/arxiv.org.png" width="14" alt="WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)"> WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4) ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) | [WISE (WiScore overall, GPT-4o judge)](https://arxiv.org/html/2503.07265v4#S4.T1) | 50.0% | 33.3 | ▇▇▇ 11% | 2026-06-02 |
-| <a name="visual-tiif-bench"></a><img src="../../icons/arxiv.org.png" width="14" alt="TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3)"> TIIF-Bench: How Does Your T2I Model Follow Your Instructions? (arXiv v3) ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) | [TIIF-Bench v3 (short prompts, TIIF-Evaluator)](https://arxiv.org/html/2506.02161v3#S4.T2) | 72.6% | 34.5 | ▇▇▇ 10% | 2026-07-12 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 35.1** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           969.4    36.4   2026-09-24   46% ▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       54.9%    32.4   2026-07-01   21% ▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  76.2%    35.1   2026-08-25   11% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  50.0%    33.3   2026-06-02   11% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  72.6%    34.5   2026-07-12   10% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 35.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt))</sub>
 
 ## How to run it
 
-api (Replicate) · $0.025/image · [replicate.com ↗](https://replicate.com/black-forest-labs/flux-dev)
+api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-forest-labs/flux-dev)
 
-[price source](https://bertrande.com/en/ai/replicate/black-forest-labs--flux-dev) · USD per output image. Text-to-image; one output image, standard FLUX.1 dev endpoint. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/black-forest-labs--flux-dev; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.
+<sub>[price source](https://bertrande.com/en/ai/replicate/black-forest-labs--flux-dev): USD per output image. Text-to-image; one output image, standard FLUX.1 dev endpoint. Replicate output/character billing; hardware-time rates are not added to this tariff. Taxes and separate services excluded. Bertrande, https://bertrande.com/en/ai/replicate/black-forest-labs--flux-dev; observed 2026-09-20T01:44:15Z. CC BY 4.0; units normalized and model identifier mapped.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~29.3GB | 35.1 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` |
-| fp8 (layerwise casting) · nvidia only | ~7.7GB | 35.1 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16); p.transformer.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=torch.bfloat16); p.to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` |
-| bnb-8bit · nvidia only | ~14.9GB | 35.1 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_8bit', quant_kwargs={'load_in_8bit':True}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` |
-| nf4 (bnb-4bit) · nvidia only | ~7.7GB | 35.1 | `uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"` |
-| gguf-q8\_0 | ~14.9GB | 35.1 | `sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu` |
-| gguf-q4\_0 | ~7.7GB | 35.1 | `sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu` |
-| mlx-4bit · mac only | ~7.7GB | 35.1 | `uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20 -q 4` |
-| bf16 · mac only | ~29.3GB | 35.1 | `uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20` |
+<pre>
+version                                  needs  score
+bf16 · nvidia only                     ~29.3GB   35.1
+fp8 (layerwise casting) · nvidia only   ~7.7GB   35.1
+bnb-8bit · nvidia only                 ~14.9GB   35.1
+nf4 (bnb-4bit) · nvidia only            ~7.7GB   35.1
+gguf-q8_0                              ~14.9GB   35.1
+gguf-q4_0                               ~7.7GB   35.1
+mlx-4bit · mac only                     ~7.7GB   35.1
+bf16 · mac only                        ~29.3GB   35.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
+# fp8 (layerwise casting) · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', torch_dtype=torch.bfloat16); p.transformer.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, compute_dtype=torch.bfloat16); p.to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
+# bnb-8bit · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_8bit', quant_kwargs={'load_in_8bit':True}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
+# nf4 (bnb-4bit) · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
+# gguf-q8_0
+sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+# gguf-q4_0
+sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+# mlx-4bit · mac only
+uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20 -q 4
+# bf16 · mac only
+uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| NVIDIA L20 (48GB; single GPU) | bf16 (FluxPipeline dtype=torch.bfloat16, no quantization) | 26.36 s/image | diffusers FluxPipeline (ParaAttention guide baseline; diffusers/torch versions not stated) · black-forest-labs/FLUX.1-dev; 1024x1024; 28 inference steps; prompt 'A cat holding a sign that says hello world'; 1 GPU; no optimizations (line 16-18); wall time from pipe() call · Baseline row of the Benchmarks table; the prose (line 18) states 1024x1024, 28 steps, 26.36 s. Contributed to the diffusers docs by the ParaAttention author (PR #10544, Jan 2025); datacenter GPU, not a consumer card. | [source ↗](https://github.com/huggingface/diffusers/blob/bdc2bea37a36038c44452811610489ea30ede229/docs/source/en/optimization/para_attn.md#L478) |
-| NVIDIA L20 (48GB; single GPU) | FP8 dynamic quantization (torchao float8\_dynamic\_activation\_float8\_weight on transformer; float8\_weight\_only on text encoder per the fp8 section) | 13.4 s/image | diffusers FluxPipeline + torchao FP8 dynamic quantization (ParaAttention guide; versions not stated) · black-forest-labs/FLUX.1-dev; 1024x1024; 28 inference steps; 1 GPU; table row 'FP8 DQ' (no First Block Cache, no context parallelism); whether torch.compile was applied for this specific row is not stated · Table row 'FP8 DQ'. The fp8 code example additionally shows FBCache and torch.compile; only the combined FBCache+FP8 result (7.56 s) is described in prose, so compile use for this row is unknown. Contributed to the diffusers docs by the ParaAttention author (PR #10544, Jan 2025); datacenter GPU, not a consumer card. | [source ↗](https://github.com/huggingface/diffusers/blob/bdc2bea37a36038c44452811610489ea30ede229/docs/source/en/optimization/para_attn.md#L480) |
+<pre>
+hardware                      precision                 speed  engine and settings
+NVIDIA L20 (48GB; single GP…  bf16 (FluxPipel…  <a href="https://github.com/huggingface/diffusers/blob/bdc2bea37a36038c44452811610489ea30ede229/docs/source/en/optimization/para_attn.md#L478">26.36 s/image</a>  diffusers FluxPipeline (ParaAtten…
+NVIDIA L20 (48GB; single GP…  FP8 dynamic qua…   <a href="https://github.com/huggingface/diffusers/blob/bdc2bea37a36038c44452811610489ea30ede229/docs/source/en/optimization/para_attn.md#L480">13.4 s/image</a>  diffusers FluxPipeline + torchao …
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/flux-1-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

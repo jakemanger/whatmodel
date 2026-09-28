@@ -6,29 +6,28 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 42.4** ±3.0
-
-#142 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.4** ±3.0 · #142 of 205 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="massive-agents-paper"></a><img src="../../icons/arxiv.org.png" width="14" alt="MASSIVE-Agents — Kulkarni et al. (2025)"> MASSIVE-Agents — Kulkarni et al. (2025) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [MASSIVE-Agents AST (10k, zero-shot)](https://aclanthology.org/2025.findings-emnlp.1099.pdf) lab-reported | 34.0% | 42.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 96% | 2026-09-25 |
-| prior | pull toward the middle |  | 50.0 | ▇ 4% |  |
-|  | **weighted average** |  | **= 42.4** |  |  |
+<pre>
+source          test                            score  implies  date        weight
+<a name="massive-agents-paper"></a>MASSIVE-Agents  <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    42.1   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior           pull toward the middle                   50.0                 4% ▇
+                weighted average                       = 42.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: MASSIVE-Agents ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Amazon Bedrock) · $5.00/M blended · $2.5 in / $12.5 out per 1M tokens · [aws.amazon.com ↗](https://aws.amazon.com/nova/pricing/)
+api (Amazon Bedrock) · $5.00/M blended · $2.5 in / $12.5 out per 1M tokens · [aws.amazon.com](https://aws.amazon.com/nova/pricing/)
 
-[price source](https://aws.amazon.com/nova/pricing) · USD per 1M tokens, Amazon Bedrock Standard tier, geo cross-Region inference and in-Region, Amazon Nova Premier. Page table values are rendered from AWS's own price data file for the page (b0.p.awsstatic.com meteredUnitMaps, bedrock USD, published 2026-09-25T06:55:02Z); US East (N. Virginia) selected. Priority/Flex/Batch tiers, cached tokens and non-text modalities excluded. Currency: USD. AWS official Amazon Nova pricing page, observed 2026-09-25.
-
-[context specification source](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html) · Amazon Nova user guide model specifications: Nova Premier context window 1M (stated rounded; max output 10K tokens). Observed 2026-09-25.
+<sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Amazon Bedrock Standard tier, geo cross-Region inference and in-Region, Amazon Nova Premier. Page table values are rendered from AWS's own price data file for the page (b0.p.awsstatic.com meteredUnitMaps, bedrock USD, published 2026-09-25T06:55:02Z); US East (N. Virginia) selected. Priority/Flex/Batch tiers, cached tokens and non-text modalities excluded. Currency: USD. AWS official Amazon Nova pricing page, observed 2026-09-25. · [context source](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html): Amazon Nova user guide model specifications: Nova Premier context window 1M (stated rounded; max output 10K tokens). Observed 2026-09-25.</sub>
 
 no verified local download listed
 

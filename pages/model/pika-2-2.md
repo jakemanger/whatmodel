@@ -6,30 +6,31 @@
 
 Pika · released 2025-02 · proprietary
 
-**score 20.7** ±2.3
-
-#54 of 54 · from 4 benchmark results across 3 sources
+**score 20.7** ±2.3 · #54 of 54 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet) | 1009.0 | 22.6 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 56% | 2026-09-22 |
-|  | [Arena image-to-video](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet) | 997.1 | 14.4 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-09-22 |
-| <a name="visual-t2vphysbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation"> T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) | [T2VPhysBench (human physical consistency)](https://arxiv.org/html/2505.00337v1#S4.T2) | 32.0% | 24.9 | ▇▇▇ 9% | 2025-05-01 |
-| <a name="visual-humanscore"></a><img src="../../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos"> HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt)) | [HumanScore (T2V)](https://arxiv.org/html/2604.20157v1#S3.T1) | 81.6% | 25.3 | ▇ 1% | 2026-04-22 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 20.7** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1009.0    22.6   2026-09-22   56% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>             997.1    14.4   2026-09-22   32% ▇▇▇▇
+<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>   32.0%    24.9   2025-05-01    9% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 81.6%    25.3   2026-04-22    1% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 20.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation ([CC-BY-4.0](../../licenses/visual-t2vphysbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.040/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video)
+api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video)
 
-[price source](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video) · USD per second, derived from fal's price of $0.20 for a 5-second 720p video (÷ 5). Product: fal Pika 2.2 text-to-video endpoint. API model: fal-ai/pika/v2.2/text-to-video. Settings: resolution=720p, duration=5 s (endpoint default). 5-s 1080p costs $0.45; other durations are not separately priced on the page. Currency: USD. fal.ai model page, observed 2026-09-25.
+<sub>[price source](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video): USD per second, derived from fal's price of $0.20 for a 5-second 720p video (÷ 5). Product: fal Pika 2.2 text-to-video endpoint. API model: fal-ai/pika/v2.2/text-to-video. Settings: resolution=720p, duration=5 s (endpoint default). 5-s 1080p costs $0.45; other durations are not separately priced on the page. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

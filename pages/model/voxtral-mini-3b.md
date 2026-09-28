@@ -6,64 +6,79 @@
 
 Mistral · released 2025-07 · 4.68B params · apache-2.0
 
-**score 54.5** ±1.7
-
-#19 of 28 · from 10 benchmark results across 7 sources
+**score 54.5** ±1.7 · #19 of 28 · from 10 benchmark results across 7 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-afrispeech-multibench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite"> AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) | [AfriSpeech-MultiBench · Parliament (legal domain) WER](https://arxiv.org/html/2511.14255v1) | 21.1% | 56.4 | ▇▇▇▇▇▇ 19% | 2025-11-18 |
-|  | [AfriSpeech-MultiBench · 7-region African-accent mean WER](https://arxiv.org/html/2511.14255v1) | 22.9% | 55.4 | ▇▇▇▇ 14% | 2025-11-18 |
-| <a name="speech-stt-bavarian-betthupferl-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="German dialect ASR Benchmark (Betthupferl; kamaal-08/bavarian-asr-leaderboard)"> German dialect ASR Benchmark (Betthupferl; kamaal-08/bavarian-asr-leaderboard) | [Betthupferl (German dialect ASR benchmark) · dialect audio → Standard German transcript WER](https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv) | 34.0% | 55.5 | ▇▇▇ 12% | 2026-08-24 |
-|  | [Betthupferl (German dialect ASR benchmark) · Standard German audio → Standard German transcript WER](https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv) | 12.1% | 54.1 | ▇▇▇ 11% | 2026-08-24 |
-| <a name="speech-stt-sap-dysarthric-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2)"> Dysarthric ASR with clinical context on the Speech Accessibility Project (arXiv:2605.02782v2) ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) | [Speech Accessibility Project dysarthric speech · zero-shot WER (rated subset, N=11,218)](https://arxiv.org/html/2605.02782v2) | 15.3% | 55.0 | ▇▇▇▇ 13% | 2026-08-18 |
-| <a name="speech-stt-megaasr-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS)"> Mega-ASR (arXiv:2605.19833v1) · adverse-condition ASR baselines (CHiME-4, VOiCES, NOIZEUS) ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) | [Mega-ASR adverse-condition suite · mean WER (CHiME-4, VOiCES, NOIZEUS)](https://arxiv.org/html/2605.19833v1) | 12.2% | 52.3 | ▇▇▇▇ 13% | 2026-05-19 |
-| <a name="speech-stt-cl-spanish-asr-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard – Chilean Spanish (idsudd / Alonso Astroza)"> Open ASR Leaderboard – Chilean Spanish (idsudd / Alonso Astroza) | [Open ASR Leaderboard – Chilean Spanish · 3-dataset average WER](https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv) | 8.3% | 54.8 | ▇▇▇▇ 12% | 2025-10-27 |
-| <a name="speech-stt-arabic-oual-elm-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Universal Arabic ASR Leaderboard (Elm Research Center)"> Open Universal Arabic ASR Leaderboard (Elm Research Center) | [Open Universal Arabic ASR Leaderboard · 6-test-set average WER](https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py) | 42.6% | 49.7 | ▇ 4% | 2025-09-22 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 5.1% | 43.7 | ▇ 1% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 7.0% | 39.4 | ▇ 0% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 54.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  21.1%    56.4   2025-11-18   19% ▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.9%    55.4   2025-11-18   14% ▇▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  34.0%    55.5   2026-08-24   12% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  12.1%    54.1   2026-08-24   11% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  15.3%    55.0   2026-08-18   13% ▇▇
+<a name="speech-stt-megaasr-report"></a>Mega-ASR                <a href="https://arxiv.org/html/2605.19833v1">Mega-ASR adverse-condition su…</a>  12.2%    52.3   2026-05-19   13% ▇▇
+<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   8.3%    54.8   2025-10-27   12% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  42.6%    49.7   2025-09-22    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        5.1%    43.7   2026-03-26    1% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    39.4   2026-03-26    0% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 54.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (9)
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Mega-ASR ([CC BY 4.0](../../licenses/speech-stt-megaasr-report.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| Mistral AI — Voxtral technical report | [CHiME-4 WER](https://arxiv.org/html/2507.13264v1) | 10.6% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [Earnings-21 10-minute long-form WER](https://arxiv.org/html/2507.13264v1) | 9.6% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [Earnings-22 10-minute long-form WER](https://arxiv.org/html/2507.13264v1) | 11.8% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [GigaSpeech test WER](https://arxiv.org/html/2507.13264v1) | 10.7% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [LibriSpeech test-clean WER](https://arxiv.org/html/2507.13264v1) | 1.9% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [LibriSpeech test-other WER](https://arxiv.org/html/2507.13264v1) | 4.0% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [SPGISpeech test WER](https://arxiv.org/html/2507.13264v1) | 2.2% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [SwitchBoard WER](https://arxiv.org/html/2507.13264v1) | 11.3% | too few models have this result to calibrate it yet |
-| Mistral AI — Voxtral technical report | [VoxPopuli English test WER](https://arxiv.org/html/2507.13264v1) | 6.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source      test                            score  why
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER</a>                     10.6%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  11.8%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER</a>             10.7%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER</a>       1.9%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER</a>       4.0%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER</a>              2.2%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER</a>                 11.3%  too few models have it yet
+Mistral AI  <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER</a>       6.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (DeepInfra) · $0.0010/audio min · [deepinfra.com ↗](https://deepinfra.com/mistralai/Voxtral-Mini-3B-2507)
+api (DeepInfra) · $0.0010/audio min · [deepinfra.com](https://deepinfra.com/mistralai/Voxtral-Mini-3B-2507)
 
-[price source](https://deepinfra.com/mistralai/Voxtral-Mini-3B-2507) · USD per input audio minute: DeepInfra lists mistralai/Voxtral-Mini-3B-2507 at $0.00100 / minute (page pricing data: input\_length billing; not deprecated in DeepInfra's catalogue). Mistral's own API retired voxtral-mini-2507 on 2026-05-31; DeepInfra serves the same open-weights checkpoint. Product: DeepInfra hosted inference (automatic speech recognition). API model: mistralai/Voxtral-Mini-3B-2507. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.
+<sub>[price source](https://deepinfra.com/mistralai/Voxtral-Mini-3B-2507): USD per input audio minute: DeepInfra lists mistralai/Voxtral-Mini-3B-2507 at $0.00100 / minute (page pricing data: input\_length billing; not deprecated in DeepInfra's catalogue). Mistral's own API retired voxtral-mini-2507 on 2026-05-31; DeepInfra serves the same open-weights checkpoint. Product: DeepInfra hosted inference (automatic speech recognition). API model: mistralai/Voxtral-Mini-3B-2507. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| bf16 · nvidia only | ~11.73GB | 54.5 | `vllm serve mistralai/Voxtral-Mini-3B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral` |
-| bf16 · mac only | ~11.73GB | 54.5 | `uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-3B-2507-bf16 --audio audio.wav --output-path out` |
+<pre>
+version                needs  score
+bf16 · nvidia only  ~11.73GB   54.5
+bf16 · mac only     ~11.73GB   54.5
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# bf16 · nvidia only
+vllm serve mistralai/Voxtral-Mini-3B-2507 --tokenizer_mode mistral --config_format mistral --load_format mistral
+# bf16 · mac only
+uvx --from mlx-audio mlx_audio.stt.generate --model mlx-community/Voxtral-Mini-3B-2507-bf16 --audio audio.wav --output-path out
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 W8A8 dynamic (weights symmetric static per-channel, activations symmetric dynamic per-token; llm-compressor FP8\_DYNAMIC) | FLEURS English transcription WER | 0.0389 → 0.0395 | 98.5% | [source ↗](https://huggingface.co/RedHatAI/Voxtral-Mini-3B-2507-FP8-dynamic/blob/b6694dd7dfc0d8c4bff962f04a39ffc98f50b2aa/README.md#L403) |
+<pre>
+precision                       test                              full → quantized   kept
+FP8 W8A8 dynamic (weights sym…  FLEURS English transcription WER   0.0389 → 0.0395  <a href="https://huggingface.co/RedHatAI/Voxtral-Mini-3B-2507-FP8-dynamic/blob/b6694dd7dfc0d8c4bff962f04a39ffc98f50b2aa/README.md#L403">98.5%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/voxtral-mini-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

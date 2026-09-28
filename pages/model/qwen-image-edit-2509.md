@@ -6,9 +6,7 @@
 
 Alibaba
 
-**score 51.4** ±6.7
-
-#51 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.4** ±6.7 · #51 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) | 1014.0 | 51.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 81% | 2026-03-30 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇ 19% |  |
-|  | **weighted average** |  | **= 51.4** |  |  |
+<pre>
+source                  test                          score  implies  date        weight
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1014.0    51.8   2026-03-30   81% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                 49.9                19% ▇▇
+                        weighted average                     = 51.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.030/image · [fal.ai ↗](https://fal.ai/models/fal-ai/qwen-image-edit-2509)
+api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image-edit-2509)
 
-[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2509) · USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2509 (fal describes it as Qwen's Image Editing Plus model also known as Qwen-Image-Edit-2509). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2509): USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2509 (fal describes it as Qwen's Image Editing Plus model also known as Qwen-Image-Edit-2509). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

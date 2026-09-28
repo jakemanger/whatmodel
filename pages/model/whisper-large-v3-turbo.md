@@ -6,72 +6,87 @@
 
 OpenAI · released 2024-10 · 0.81B params · mit
 
-**score 55.5** ±1.7
-
-#16 of 28 · from 11 benchmark results across 8 sources
+**score 55.5** ±1.7 · #16 of 28 · from 11 benchmark results across 8 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-bavarian-betthupferl-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="German dialect ASR Benchmark (Betthupferl; kamaal-08/bavarian-asr-leaderboard)"> German dialect ASR Benchmark (Betthupferl; kamaal-08/bavarian-asr-leaderboard) | [Betthupferl (German dialect ASR benchmark) · dialect audio → Standard German transcript WER](https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv) | 33.1% | 55.8 | ▇▇▇▇ 12% | 2026-08-24 |
-|  | [Betthupferl (German dialect ASR benchmark) · Standard German audio → Standard German transcript WER](https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv) | 10.1% | 56.7 | ▇▇▇ 11% | 2026-08-24 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 8.7% | 56.0 | ▇▇▇▇▇▇ 20% | 2026-03-26 |
-|  | [Open ASR multilingual WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv) | 5.6% | 38.0 | ▇ 1% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 7.8% | 21.2 | ▇ 0% | 2026-03-26 |
-| <a name="speech-stt-cl-spanish-asr-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard – Chilean Spanish (idsudd / Alonso Astroza)"> Open ASR Leaderboard – Chilean Spanish (idsudd / Alonso Astroza) | [Open ASR Leaderboard – Chilean Spanish · 3-dataset average WER](https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv) | 8.3% | 54.8 | ▇▇▇▇ 12% | 2025-10-26 |
-| <a name="speech-stt-openbench-mit"></a><img src="../../icons/github.com.png" width="14" alt="Argmax OpenBench · open reproducible speech benchmarks (BENCHMARKS.md)"> Argmax OpenBench · open reproducible speech benchmarks (BENCHMARKS.md) | [Argmax OpenBench · earnings22-keywords WER (no keyword prompting)](https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md) | 15.4% | 55.5 | ▇▇▇ 10% | 2025-12-12 |
-| <a name="speech-stt-turkasr-bench-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Turkish ASR Leaderboard (TurkASR-Bench, yagmurtuncer)"> Turkish ASR Leaderboard (TurkASR-Bench, yagmurtuncer) | [TurkASR-Bench (7 Turkish sources, 5,200 utterances) · corpus WER](https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json) | 12.9% | 57.0 | ▇▇▇ 10% | 2026-09-25 |
-| <a name="speech-stt-ru-shmyrev-espeech-mit"></a><img src="../../icons/huggingface.co.png" width="14" alt="Russian ASR Leaderboard (ESpeech; benchmark by Nikolay Shmyrev)"> Russian ASR Leaderboard (ESpeech; benchmark by Nikolay Shmyrev) | [Russian ASR Leaderboard (N. Shmyrev test sets) · 11-dataset mean WER](https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html) | 16.2% | 54.5 | ▇▇▇ 9% | 2026-05-07 |
-| <a name="speech-stt-peste-apache"></a><img src="../../icons/github.com.png" width="14" alt="PESTE · Persian Speech to Text benchmark (fleurs-fa-ir-v1)"> PESTE · Persian Speech to Text benchmark (fleurs-fa-ir-v1) | [PESTE · Persian FLEURS (fa\_ir) corpus CER](https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv) | 6.1% | 57.7 | ▇▇▇ 9% | 2026-08-17 |
-| <a name="speech-stt-arabic-oual-elm-apache"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open Universal Arabic ASR Leaderboard (Elm Research Center)"> Open Universal Arabic ASR Leaderboard (Elm Research Center) | [Open Universal Arabic ASR Leaderboard · 6-test-set average WER](https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py) | 40.1% | 51.3 | ▇ 4% | 2025-01-12 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 55.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  33.1%    55.8   2026-08-24   12% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  10.1%    56.7   2026-08-24   11% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.7%    56.0   2026-03-26   20% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        5.6%    38.0   2026-03-26    1% ▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.8%    21.2   2026-03-26    0% ▇
+<a name="speech-stt-cl-spanish-asr-apache"></a>Open ASR Leaderboard …  <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilea…</a>   8.3%    54.8   2025-10-26   12% ▇
+<a name="speech-stt-openbench-mit"></a>Argmax OpenBench · op…  <a href="https://github.com/argmaxinc/OpenBench/blob/e13108070b9693f2646e4a3e22e4b2d0130d779f/BENCHMARKS.md">Argmax OpenBench · earnings22…</a>  15.4%    55.5   2025-12-12   10% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  12.9%    57.0   2026-09-25   10% ▇
+<a name="speech-stt-ru-shmyrev-espeech-mit"></a>Russian ASR Leaderboa…  <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. S…</a>  16.2%    54.5   2026-05-07    9% ▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>   6.1%    57.7   2026-08-17    9% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  40.1%    51.3   2025-01-12    4% ▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 55.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Open ASR Leaderboard – Chilean Spanish ([Apache-2.0](../../licenses/speech-stt-cl-spanish-asr-apache.txt)) · Argmax OpenBench · open reproducible speech benchmarks ([MIT](../../licenses/speech-stt-openbench-mit.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Russian ASR Leaderboard ([MIT](../../licenses/speech-stt-ru-shmyrev-espeech-mit.txt)) · PESTE · Persian Speech to Text benchmark ([Apache-2.0](../../licenses/speech-stt-peste-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
-api (Cloudflare) · $0.0005/audio min · [developers.cloudflare.com ↗](https://developers.cloudflare.com/workers-ai/platform/pricing/)
+api (Cloudflare) · $0.0005/audio min · [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai/platform/pricing/)
 
-[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx) · Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/openai/whisper-large-v3-turbo. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD.
+<sub>[price source](https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx): Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/openai/whisper-large-v3-turbo. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/whisper-large-v3-turbo.toml)</sub>
 
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/openai/whisper-large-v3-turbo.toml)
+<pre>
+version               needs  score
+fp16                ~2.44GB   55.5
+fp16 · mac only     ~2.44GB   55.5
+fp16 · nvidia only  ~2.44GB   55.5
+</pre>
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| fp16 | ~2.44GB | 55.5 | `uvx --from openai-whisper whisper audio.mp3 --model turbo` |
-| fp16 · mac only | ~2.44GB | 55.5 | `uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-turbo` |
-| fp16 · nvidia only | ~2.44GB | 55.5 | `uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3-turbo` |
+```sh
+# fp16
+uvx --from openai-whisper whisper audio.mp3 --model turbo
+# fp16 · mac only
+uvx --from mlx-whisper mlx_whisper audio.mp3 --model mlx-community/whisper-large-v3-turbo
+# fp16 · nvidia only
+uvx insanely-fast-whisper --file-name audio.mp3 --model-name openai/whisper-large-v3-turbo
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 ## Published speed measurements
 
 Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
 
-| hardware | precision | speed | engine and settings | source |
-|---|---|---:|---|---|
-| AMD Ryzen 7 9800X3D | onnx-default (precision not stated in table) | 3.9 x-realtime | ONNX Runtime CPUExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L103) |
-| AMD Ryzen 7 9800X3D | onnx-int8 | 5.4 x-realtime | ONNX Runtime CPUExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L103) |
-| NVIDIA GeForce RTX 5070 Ti | onnx-fp32 | 54.8 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115) |
-| NVIDIA GeForce RTX 5070 Ti | onnx-fp16 | 76 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115) |
-| NVIDIA T4 | onnx-fp32 | 9.2 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115) |
-| NVIDIA T4 | onnx-fp16 | 25.9 x-realtime | ONNX Runtime CUDAExecutionProvider · English suite; VoxPopuli en test; 100 samples used for warmup; per-waveform recognition timing; RTFx = summed audio duration / summed recognition time · Exact published English table cell. Default precision is not silently relabeled fp32. TensorRT fp16 enables that provider setting; it does not assert every operation uses fp16. | [source ↗](https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115) |
+<pre>
+hardware                    precision                   speed  engine and settings
+AMD Ryzen 7 9800X3D         onnx-default (p…   <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L103">3.9 x-realtime</a>  ONNX Runtime CPUExecutionProvider…
+AMD Ryzen 7 9800X3D         onnx-int8          <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L103">5.4 x-realtime</a>  ONNX Runtime CPUExecutionProvider…
+NVIDIA GeForce RTX 5070 Ti  onnx-fp32         <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115">54.8 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+NVIDIA GeForce RTX 5070 Ti  onnx-fp16           <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115">76 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+NVIDIA T4                   onnx-fp32          <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115">9.2 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+NVIDIA T4                   onnx-fp16         <a href="https://github.com/istupakov/onnx-asr/blob/675f0e68c24d846ee1775743e92d9b4ed452380e/docs/benchmarks.md#L115">25.9 x-realtime</a>  ONNX Runtime CUDAExecutionProvide…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
 
 ## Quantization evidence
 
 How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
 
-| precision | test | full → quantized | kept | source |
-|---|---|---:|---:|---|
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC; table column header says "w8a8") | LibriSpeech test-clean WER (lmms-eval \`librispeech\`, vLLM whisper backend, batch 64) | 0.0227 → 0.0226 | 100.3% | [source ↗](https://huggingface.co/RedHatAI/whisper-large-v3-turbo-FP8-dynamic/blob/e72a6dca29d039a5c9ea13e622e496ca61e85c34/README.md#L182) |
-| FP8 dynamic (llm-compressor FP8\_DYNAMIC; table column header says "w8a8") | LibriSpeech test-other WER (lmms-eval \`librispeech\`, vLLM whisper backend, batch 64) | 0.0424 → 0.0432 | 98.0% | [source ↗](https://huggingface.co/RedHatAI/whisper-large-v3-turbo-FP8-dynamic/blob/e72a6dca29d039a5c9ea13e622e496ca61e85c34/README.md#L188) |
-| INT4 W4A16 (GPTQ, weights only, group size 64 per the quantize.py command shown, actorder=weight) | LibriSpeech test-clean WER (lmms-eval \`librispeech\`, vLLM whisper backend, batch 64) | 0.0219 → 0.022 | 99.7% | [source ↗](https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w4a16/blob/2009b1e9931565204da231c92ee9dce46034efc8/README.md#L426) |
-| INT4 W4A16 (GPTQ, weights only, group size 64 per the quantize.py command shown, actorder=weight) | LibriSpeech test-other WER (lmms-eval \`librispeech\`, vLLM whisper backend, batch 64) | 0.039 → 0.0404 | 96.5% | [source ↗](https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w4a16/blob/2009b1e9931565204da231c92ee9dce46034efc8/README.md#L432) |
-| INT8 W8A8 (SmoothQuant + GPTQ via llm-compressor) | LibriSpeech test-clean WER (lmms-eval \`librispeech\`, vLLM whisper backend, batch 64) | 0.0227 → 0.0226 | 100.2% | [source ↗](https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w8a8/blob/95991fd06170e03c8fa55595958972e6cb76c441/README.md#L250) |
-| INT8 W8A8 (SmoothQuant + GPTQ via llm-compressor) | LibriSpeech test-other WER (lmms-eval \`librispeech\`, vLLM whisper backend, batch 64) | 0.0424 → 0.0431 | 98.3% | [source ↗](https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w8a8/blob/95991fd06170e03c8fa55595958972e6cb76c441/README.md#L256) |
+<pre>
+precision                       test                                full → quantized    kept
+FP8 dynamic (llm-compressor F…  LibriSpeech test-clean WER (lmms-…   0.0227 → 0.0226  <a href="https://huggingface.co/RedHatAI/whisper-large-v3-turbo-FP8-dynamic/blob/e72a6dca29d039a5c9ea13e622e496ca61e85c34/README.md#L182">100.3%</a>
+FP8 dynamic (llm-compressor F…  LibriSpeech test-other WER (lmms-…   0.0424 → 0.0432   <a href="https://huggingface.co/RedHatAI/whisper-large-v3-turbo-FP8-dynamic/blob/e72a6dca29d039a5c9ea13e622e496ca61e85c34/README.md#L188">98.0%</a>
+INT4 W4A16 (GPTQ, weights onl…  LibriSpeech test-clean WER (lmms-…    0.0219 → 0.022   <a href="https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w4a16/blob/2009b1e9931565204da231c92ee9dce46034efc8/README.md#L426">99.7%</a>
+INT4 W4A16 (GPTQ, weights onl…  LibriSpeech test-other WER (lmms-…    0.039 → 0.0404   <a href="https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w4a16/blob/2009b1e9931565204da231c92ee9dce46034efc8/README.md#L432">96.5%</a>
+INT8 W8A8 (SmoothQuant + GPTQ…  LibriSpeech test-clean WER (lmms-…   0.0227 → 0.0226  <a href="https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w8a8/blob/95991fd06170e03c8fa55595958972e6cb76c441/README.md#L250">100.2%</a>
+INT8 W8A8 (SmoothQuant + GPTQ…  LibriSpeech test-other WER (lmms-…   0.0424 → 0.0431   <a href="https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w8a8/blob/95991fd06170e03c8fa55595958972e6cb76c441/README.md#L256">98.3%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/whisper-large-v3-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

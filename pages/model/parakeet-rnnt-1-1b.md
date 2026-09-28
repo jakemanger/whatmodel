@@ -6,45 +6,55 @@
 
 NVIDIA · released 2024-01 · 1.07B params · cc-by-4.0
 
-**score 53.1** ±2.3
-
-#21 of 28 · from 4 benchmark results across 2 sources
+**score 53.1** ±2.3 · #21 of 28 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-afrispeech-multibench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite"> AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) | [AfriSpeech-MultiBench · Parliament (legal domain) WER](https://arxiv.org/html/2511.14255v1) | 26.8% | 53.3 | ▇▇▇▇▇▇▇▇▇▇ 35% | 2025-11-18 |
-|  | [AfriSpeech-MultiBench · 7-region African-accent mean WER](https://arxiv.org/html/2511.14255v1) | 25.6% | 53.6 | ▇▇▇▇▇▇▇▇ 26% | 2025-11-18 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 10.7% | 52.9 | ▇▇▇▇▇▇▇▇▇▇▇ 37% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 7.1% | 37.6 | ▇ 0% | 2026-03-26 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 53.1** |  |  |
+<pre>
+source                 test                            score  implies  date        weight
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  26.8%    53.3   2025-11-18   35% ▇▇▇▇
+                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  25.6%    53.6   2025-11-18   26% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.7%    52.9   2026-03-26   37% ▇▇▇▇
+                       <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    37.6   2026-03-26    0% ▇
+prior                  pull toward the middle                   49.9                 2% ▇
+                       weighted average                       = 53.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (9)
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| nvidia/parakeet-rnnt-1.1b model card | [AMI WER (Open ASR / ESB test split)](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 17.1% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [Common Voice 9.0 English test WER](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 5.8% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [Earnings-22 WER (short-form, Open ASR / ESB test split)](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 14.1% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [GigaSpeech test WER](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 10.0% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [LibriSpeech test-clean WER](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 1.5% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [LibriSpeech test-other WER](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 2.5% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [SPGISpeech test WER](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 3.1% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [TED-LIUM test WER (short-form)](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 3.9% | too few models have this result to calibrate it yet |
-| nvidia/parakeet-rnnt-1.1b model card | [VoxPopuli English test WER](https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md) | 5.4% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">AMI WER (Open ASR / ESB test …</a>  17.1%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Common Voice 9.0 English test…</a>   5.8%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">Earnings-22 WER (short-form, …</a>  14.1%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">GigaSpeech test WER</a>             10.0%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-clean WER</a>       1.5%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">LibriSpeech test-other WER</a>       2.5%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">SPGISpeech test WER</a>              3.1%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">TED-LIUM test WER (short-form)</a>   3.9%  too few models have it yet
+nvidia/parakeet-rnnt-…  <a href="https://huggingface.co/nvidia/parakeet-rnnt-1.1b/blob/2acc4c61eede2f52ddefe74935de1930a9064d4a/README.md">VoxPopuli English test WER</a>       5.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| fp32 · nvidia only | ~5.64GB | 53.1 | `uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-1.1b').transcribe(['audio.wav']))"` |
+<pre>
+version               needs  score
+fp32 · nvidia only  ~5.64GB   53.1
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# fp32 · nvidia only
+uvx --with 'nemo_toolkit[asr]' python -c "import nemo.collections.asr as a; print(a.models.ASRModel.from_pretrained('nvidia/parakeet-rnnt-1.1b').transcribe(['audio.wav']))"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/parakeet-rnnt-1-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

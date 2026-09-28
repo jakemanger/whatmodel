@@ -6,25 +6,26 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| SWE-bench Pro | 59.5% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · model card; rechecked exact model column and benchmark row in pinned model card; published score converted from percent. |
-| GPQA Diamond | 88.9% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · model card; rechecked exact model column and benchmark row in pinned model card; published score converted from percent. |
-| BrowseComp | 79.9% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'BrowseComp', section 'General Agent'. |
-| FORTE (AGI-Eval) | 73.2% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'FORTE ↗', section 'General Agent'. |
-| IFEval (aggregation unspecified) | 90.0% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'IFEval', section 'Foundational'. |
-| IMO-AnswerBench | 81.8% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'IMO-AnswerBench', section 'Foundational'. |
-| RWSearch | 78.8% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'RWSearch ↗', section 'General Agent'. |
-| SWE-bench Multilingual | 77.3% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'SWE-bench Multilingual', section 'Code Agent'. |
-| Terminal-Bench 2.1 | 70.8% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'Terminal-Bench 2.1', section 'Code Agent'. |
-| WritingBench | 83.8% | [meituan-longcat/LongCat-2.0 model card](https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md) · lab-reported · Meituan LongCat own evaluation in the pinned LongCat-2.0 model card: all unstarred scores measured in-house under a unified harness (starred cells are other models' official reports and are not used). Column 'LongCat-2.0', row 'Writing Bench', section 'Foundational'. |
+<pre>
+test                              result  reported by  source
+SWE-bench Pro                      59.5%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+GPQA Diamond                       88.9%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+BrowseComp                         79.9%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+FORTE (AGI-Eval)                   73.2%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+IFEval (aggregation unspecified)   90.0%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+IMO-AnswerBench                    81.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+RWSearch                           78.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+SWE-bench Multilingual             77.3%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+Terminal-Bench 2.1                 70.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+WritingBench                       83.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+</pre>
+
+<sub>Licences: meituan-longcat/LongCat-2.0 model card ([mit](../../licenses/meituan-longcat--LongCat-2.0.txt))</sub>
 
 ## How to run it
 
-api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out per 1M tokens · [longcat.chat ↗](https://longcat.chat/platform/docs/pricing/longcat-2.0)
+api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out per 1M tokens · [longcat.chat](https://longcat.chat/platform/docs/pricing/longcat-2.0)
 
-[price source](https://longcat.chat/platform/docs/pricing/longcat-2.0) · USD per 1M tokens, LongCat API Platform pay-as-you-go list price for LongCat-2.0 (uncached input / output). A limited-time discounted price ($0.30 / $1.20) was also shown and is not used; cached input $0.015/1M excluded; CNY price table not used. Currency: USD. Meituan LongCat official pricing page, observed 2026-09-25.
-
-[context specification source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meituan/longcat-2.0.toml)
+<sub>[price source](https://longcat.chat/platform/docs/pricing/longcat-2.0): USD per 1M tokens, LongCat API Platform pay-as-you-go list price for LongCat-2.0 (uncached input / output). A limited-time discounted price ($0.30 / $1.20) was also shown and is not used; cached input $0.015/1M excluded; CNY price table not used. Currency: USD. Meituan LongCat official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meituan/longcat-2.0.toml)</sub>
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/longcat-2-0)

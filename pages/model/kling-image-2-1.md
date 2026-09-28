@@ -6,9 +6,7 @@
 
 Kuaishou · closed weights
 
-**score 48.5** ±8.0
-
-#60 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.5** ±8.0 · #60 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 48.3% | 48.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 73% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇▇ 27% |  |
-|  | **weighted average** |  | **= 48.5** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  48.3%    48.0   2026-05-27   73% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                27% ▇▇▇
+                        weighted average                       = 48.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Kling AI) · $0.014/image · [kling.ai ↗](https://kling.ai/dev/pricing)
+api (Kling AI) · $0.014/image · [kling.ai](https://kling.ai/dev/pricing)
 
-[price source](https://kling.ai/dev/pricing) · USD per generated image, Kling Image 2.1 text-to-image at 1K or 2K: Kling lists 4 Units ($0.014) per image (1 Unit = $0.0035 list price); image-to-image is 8 Units ($0.028) per image. Product: Kling Image Generation API. API model: Kling Image 2.1. Settings: text-to-image, resolution 1K/2K, one image. Price basis: 4 units × $0.0035 per unit; Kling prints $0.014. Prepaid resource packages. Currency: USD. Kling AI developer pricing page (price table embedded in the page's configuration data), observed 2026-09-25.
+<sub>[price source](https://kling.ai/dev/pricing): USD per generated image, Kling Image 2.1 text-to-image at 1K or 2K: Kling lists 4 Units ($0.014) per image (1 Unit = $0.0035 list price); image-to-image is 8 Units ($0.028) per image. Product: Kling Image Generation API. API model: Kling Image 2.1. Settings: text-to-image, resolution 1K/2K, one image. Price basis: 4 units × $0.0035 per unit; Kling prints $0.014. Prepaid resource packages. Currency: USD. Kling AI developer pricing page (price table embedded in the page's configuration data), observed 2026-09-25.</sub>
 
 no verified local download listed
 

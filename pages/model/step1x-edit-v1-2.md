@@ -6,9 +6,7 @@
 
 StepFun · released 2025-11
 
-**score 47.9** ±4.2
-
-comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.9** ±4.2 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,21 +14,27 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-edit-compass"></a><img src="../../icons/arxiv.org.png" width="14" alt="Edit-Compass &amp; EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling"> Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) | [Edit-Compass (EN, overall)](https://arxiv.org/html/2605.13062v1#S4.T3) | 51.6% | 47.1 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 61% | 2026-05-13 |
-| <a name="visual-geditbench-v2"></a><img src="../../icons/arxiv.org.png" width="14" alt="GEditBench v2: A Human-Aligned Benchmark for General Image Editing"> GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) | [GEditBench v2 (overall Elo)](https://arxiv.org/html/2603.28547v1#S5.T3) lab-reported | 996.0 | 48.8 | ▇▇▇▇▇▇▇▇▇▇ 32% | 2026-03-30 |
-| prior | pull toward the middle |  | 49.9 | ▇▇ 7% |  |
-|  | **weighted average** |  | **= 47.9** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      51.6%    47.1   2026-05-13   61% ▇▇▇▇▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (…</a>  996.0    48.8   2026-03-30   32% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 47.9
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (2)
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| stepfun-ai/Step1X-Edit-v1p2 model card | [GEdit-Bench overall (G\_O, language split unspecified)](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md) | 75.8% | too few models have this result to calibrate it yet |
-| stepfun-ai/Step1X-Edit-v1p2 model card | [KRIS-Bench overall](https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md) | 60.9% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">GEdit-Bench overall (G_O, lan…</a>  75.8%  too few models have it yet
+stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md">KRIS-Bench overall</a>              60.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

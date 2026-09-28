@@ -6,27 +6,28 @@
 
 Meituan · released 2025-10
 
-**score 48.8** ±7.5
-
-#28 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.8** ±7.5 · #28 of 54 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 45.4% | 48.5 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 77% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇▇▇▇▇ 23% |  |
-|  | **weighted average** |  | **= 48.8** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    48.5   2026-08-10   77% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                23% ▇▇▇
+                        weighted average                       = 48.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 
-api (fal.ai) · $0.040/sec · [fal.ai ↗](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p)
+api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p)
 
-[price source](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p) · USD per generated second of 720p video on fal.ai: fal states 'Your request will cost $0.04 per generated second of video. Generated seconds are calculated at 30 frames per second.' Product: fal LongCat Video text-to-video (720p/30fps) endpoint. API model: fal-ai/longcat-video/text-to-video/720p (the base model; the distilled endpoints are separate). Settings: resolution=720p, 30 fps. Price basis: per-second rate printed by fal. 480p endpoint $0.025 per generated second (counted at 15 fps). Currency: USD. Not a Meituan direct tariff. fal.ai model page, observed 2026-09-26.
+<sub>[price source](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p): USD per generated second of 720p video on fal.ai: fal states 'Your request will cost $0.04 per generated second of video. Generated seconds are calculated at 30 frames per second.' Product: fal LongCat Video text-to-video (720p/30fps) endpoint. API model: fal-ai/longcat-video/text-to-video/720p (the base model; the distilled endpoints are separate). Settings: resolution=720p, 30 fps. Price basis: per-second rate printed by fal. 480p endpoint $0.025 per generated second (counted at 15 fps). Currency: USD. Not a Meituan direct tariff. fal.ai model page, observed 2026-09-26.</sub>
 
 no verified local download listed
 

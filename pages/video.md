@@ -6,136 +6,143 @@
 
 updated 2026-09-26 03:10 UTC · 54 models · scores combine 18 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
-## For your machine
+Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
-This list shows every model with a way to run it. To see what fits your machine, run the command for your OS, or pick one of the common machines below on the site.
+<details><summary>Linux, Windows and common machines</summary>
 
 ```sh
-curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"   # Mac
 curl "whatmodel.sh/video?ram=$(awk '/MemT/{print $2}' /proc/meminfo)&vram=$(nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits 2>/dev/null || cat /sys/class/drm/card*/device/mem_info_vram_total 2>/dev/null | sort -n | tail -1)"   # Linux
 curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&vram=$(nvidia-smi -i 0 --query-gpu=memory.total --format=csv,noheader,nounits 2>$null)"   # Windows
 ```
 
 [16GB Mac](https://whatmodel.sh/video?ram=16&gpu=apple) · [32GB Mac](https://whatmodel.sh/video?ram=32&gpu=apple) · [64GB Mac](https://whatmodel.sh/video?ram=64&gpu=apple) · [128GB Mac](https://whatmodel.sh/video?ram=128&gpu=apple) · [12GB graphics card](https://whatmodel.sh/video?ram=32&gpu=card&vram=12) · [24GB graphics card](https://whatmodel.sh/video?ram=64&gpu=card&vram=24) · [16GB, no graphics card](https://whatmodel.sh/video?ram=16&gpu=none)
 
-Run `curl whatmodel.sh/video` to get this list in your terminal (add `?format=json` for agents).
-
-## Leaderboard
-
-<details><summary>score vs API price (USD per second of video, log)</summary>
-
-```text
-  score vs API price (USD per second of video, log)   ● open weights  ◆ API only  ─┘ best for the price
-       │
-    80 ┤ ··· · · · · · · · · ··· · · · · · · ◆ Gemini Omni 1.1 Flash · · · · ·
-       │                                     ◆ Wan 3.0  ◇            ◇
-       │  ·                   ·              │     ∘◇       ·        ◇
-       │         Grok Imagine Video 1.5 ◆────┘      ◇
-       │  · Grok Imagine Video·         │◇   ·              ·
-       │          Hailuo 02 ◆─◆─────────┘    ◇ ◇                           ◇
-    60 ┤ ··· · · · · · · · ·│◇·· · · · · · · ◇ ◇ · · · · · ··· · · · · · · · ·
-       │                    │PixVerse V5.6
-       │  ·    ◆─────────∘──◆ ·◇     ◇  ∘    ◇   ◇          ·
-       │  ◆─P-Video         ◇ ◇◇  ◇  ◇ ∘       ◇
-       │  ∘              ∘    ·        ∘     ·              ·      ◇
-    40 ┤ · · · · · · · · ∘ · · · · · · ·∘◇ · · · · · · · · · · ·∘· · · · · · ·
-       │  ·                   ·              ·              ·
-       │                 ∘
-       │  ·                   ·              ·              ·
-       │                 ◇    ◇
-    20 ┤ ··· · · · · · · · · ··· · · · · · · · · · · · · · ··· · · · · · · · ·
-       └──┬───────────────────┬──────────────┬──────────────┬─────────────────
-        $0.02               $0.05          $0.1           $0.2
-```
-
 </details>
 
-<details><summary>score vs memory to run it (GB, log)</summary>
+```text
+  score vs API price
+       │                        Gemini Omni 1.1 Flash ◆             ◇
+    75 ┤ ··P-Video · · Hailuo 02 ◆─◆────────────◆◇───◆┘· ◇ · ∘◇· · · · ··· · · · · ◇ · · · ◇ ·
+    50 ┤ ·◆─────◆────────────∘──◆◇◇◇◇· ·◇· ·◇·∘·∘· · ◇ · ◇◇· · · · · · · · · · · · · · · · · ·
+       │  ·                  ∘     ·          ∘ ∘◇   ·                  ·    ∘   ◇
+    25 ┤ · · · · · · · · · · ◇ · · ◇ · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+       └──┬────────────────────────┬─────────────────┬──────────────────┬─────────────────────
+        $0.02                    $0.05             $0.1               $0.2
+```
+
+<details><summary>Full charts: score vs price and memory</summary>
 
 ```text
-  score vs memory to run it (GB, log)   ─┘ best for the memory
+  score vs API price (USD per second of video, log)
+  ● open weights  ◆ API only  ─┘ best for the price
        │
-       │            ·                    ·                   ● MiniMax H3
-       │                                                     │
-       │            ·                    ·                   │     ·
-       │                                                     │
-       │            ·                    ·                   │     ·
-    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · ·
-       │            ·                    ·                   │     ·
-       │                                                     │
-       │            ·                    ·                   │     ·
-       │  ●─Wan 2.2 TI2V 5B──────────────────────────────────┘
-       │            ·                    ∘                         ·
-    40 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · ∘ · · · · ∘ ·
-       │            ·                    ·              ∘          ·
-       │                    ∘
-       │            ·                    ·            ∘            ·
+    80 ┤ ··· · · · · · · · · · · · · · · · · · · · · ·◆·Gemini Omni 1.1 Flash· · · · · · · · ·
+       │                                     Wan 3.0 ◆◇             ◇              ◇
+       │  ·                        ·                 │       ∘◇         ·          ◇
+       │                 Grok Imagine Video 1.5 ◆────┘        ◇
+       │  ·      Grok Imagine Video·            │◇   ·                  ·
+       │               Hailuo 02 ◆─◆────────────┘    ◇   ◇                                 ◇
+    60 ┤ ··· · · · · · · · · · · │◇· · · · · · · · · ◇ · ◇ · · · · · · ··· · · · · · · · · · ·
+       │         Wan 2.6 Flash   PixVerse V5.6
+       │  ·     ◆────────────∘──◆┘ ·◇       ◇   ∘    ◇    ◇             ·
+       │  ◆─P-Video              ◇ ◇◇   ◇   ◇ ∘          ◇
+       │  ∘                  ∘     ·          ∘      ·                  ·        ◇
+    40 ┤ · · · · · · · · · · ∘ · · · · · · · · ·∘◇ · · · · · · · · · · · · · ∘ · · · · · · · ·
+       │  ·                        ·                 ·                  ·
+       │                     ∘
+       │  ·                        ·                 ·                  ·
+       │                     ◇     ◇
+    20 ┤ ··· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ··· · · · · · · · · · ·
+       └──┬────────────────────────┬─────────────────┬──────────────────┬─────────────────────
+        $0.02                    $0.05             $0.1               $0.2
+```
+
+```text
+  score vs memory to run it (GB, log)
+  ─┘ best for the memory
+       │
+       │               ·                        ·                        ● MiniMax H3
+       │                                                                 │
+       │               ·                        ·                        │       ·
+       │                                                                 │
+       │               ·                        ·                        │       ·
+    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · · ·
+       │               ·                        ·                        │       ·
+       │                                                                 │
+       │               ·                        ·                        │       ·
+       │  ●─Wan 2.2 TI2V 5B──────────────────────────────────────────────┘
+       │               ·                        ∘                                ·
+    40 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·∘· · · · · · ∘ ·
+       │               ·                        ·                  ∘             ·
+       │                         ∘
+       │               ·                        ·                ∘               ·
        │  ∘
-       │            ·                    ·                         ·
-       └────────────┬────────────────────┬─────────────────────────┬──────────
-                  10GB                 20GB                      50GB
+       │               ·                        ·                                ·
+       └───────────────┬────────────────────────┬────────────────────────────────┬────────────
+                     10GB                     20GB                             50GB
 ```
 
 </details>
 
-| # | model | score | where | speed | RAM | get it | sources |
-|---:|---|---:|---|---:|---:|---|---|
-| 1 | [Gemini Omni 1.1 Flash](model/gemini-omni-1-1-flash.md) <sub>Google</sub> | 81 ±2 | api $0.10/sec |  |  | [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing) | <a href="model/gemini-omni-1-1-flash.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 71%"></a> <a href="model/gemini-omni-1-1-flash.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 17%"></a> <a href="model/gemini-omni-1-1-flash.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 9%"></a> |
-| 2 | [Gemini Omni Flash](model/gemini-omni-flash.md) <sub>Google</sub> | 78 ±2 | api $0.10/sec |  |  | [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing) | <a href="model/gemini-omni-flash.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 77%"></a> <a href="model/gemini-omni-flash.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 16%"></a> <a href="model/gemini-omni-flash.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 5%"></a> |
-| 3 | [FLUX 3 Video](model/flux-3-video.md) <sub>Black Forest Labs</sub> | 78 ±3\* | api $0.17/sec |  |  | [docs.bfl.ai ↗](https://docs.bfl.ai/flux_3/flux3_video) | <a href="model/flux-3-video.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 70%"></a> <a href="model/flux-3-video.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 27%"></a> |
-| 4 | [Wan 3.0](model/wan-3-0.md) <sub>Alibaba</sub> | 77 ±2 | api $0.10/sec |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/wan-3-0.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 74%"></a> <a href="model/wan-3-0.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 16%"></a> <a href="model/wan-3-0.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 9%"></a> |
-| 5 | [Dreamina Seedance 2.5](model/seedance-2-5.md) <sub>ByteDance</sub> | 76 ±2 | api $0.30/sec |  |  | [docs.dev.runwayml.com ↗](https://docs.dev.runwayml.com/guides/pricing) | <a href="model/seedance-2-5.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 81%"></a> <a href="model/seedance-2-5.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 17%"></a> |
-| 6 | [HappyHorse 1.1](model/happyhorse-1-1.md) <sub>Alibaba</sub> | 76 ±5\* | api $0.14/sec |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/happyhorse-1-1.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 56%"></a> <a href="model/happyhorse-1-1.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 34%"></a> |
-| 7 | [Dreamina Seedance 2.0](model/seedance-2-0.md) <sub>ByteDance Seed</sub> | 75 ±2 | api $0.30/sec |  |  | [fal.ai ↗](https://fal.ai/models/bytedance/seedance-2.0/text-to-video) | <a href="model/seedance-2-0.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 68%"></a> <a href="model/seedance-2-0.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 14%"></a> <a href="model/seedance-2-0.md#visual-vgi"><img src="../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models 7%"></a> <a href="model/seedance-2-0.md#visual-vwg-bench"><img src="../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) 5%"></a> [+1](model/seedance-2-0.md) |
-| 8 | [MiniMax H3](model/minimax-h3.md) <sub>MiniMax</sub> | 75 ±2 | api $0.13/sec |  |  | [fal.ai ↗](https://fal.ai/models/minimax/h3/text-to-video) | <a href="model/minimax-h3.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 71%"></a> <a href="model/minimax-h3.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 15%"></a> <a href="model/minimax-h3.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 8%"></a> <a href="model/minimax-h3.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 5%"></a> |
-| 9 | [Grok Imagine Video 1.5](model/grok-imagine-video-1-5.md) <sub>xAI</sub> | 70 ±3 | api $0.080/sec |  |  | [docs.x.ai ↗](https://docs.x.ai/developers/models/grok-imagine-video-1.5) | <a href="model/grok-imagine-video-1-5.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 48%"></a> <a href="model/grok-imagine-video-1-5.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 32%"></a> <a href="model/grok-imagine-video-1-5.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 17%"></a> |
-| 10 | [HappyHorse 1.0](model/happyhorse-1-0.md) <sub>Alibaba-ATH</sub> | 69 ±2 | api $0.14/sec |  |  | [replicate.com ↗](https://replicate.com/alibaba/happyhorse-1.0) | <a href="model/happyhorse-1-0.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 81%"></a> <a href="model/happyhorse-1-0.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 17%"></a> |
-| 11 | [Kling 3.0](model/kling-3-0.md) <sub>Kuaishou (Kling AI)</sub> | 66 ±6\* | api $0.084/sec |  |  | [kling.ai ↗](https://kling.ai/dev/pricing) | <a href="model/kling-3-0.md#visual-vgi"><img src="../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models 83%"></a> |
-| 12 | [Kling 3.0 Pro](model/kling-3-0-pro.md) <sub>Kuaishou</sub> | 64 ±3 | api $0.11/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video) | <a href="model/kling-3-0-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 48%"></a> <a href="model/kling-3-0-pro.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 32%"></a> <a href="model/kling-3-0-pro.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 17%"></a> |
-| 13 | [Grok Imagine Video](model/grok-imagine-video.md) <sub>xAI</sub> | 64 ±2 | api $0.050/sec |  |  | [docs.x.ai ↗](https://docs.x.ai/docs/models/grok-imagine-video) | <a href="model/grok-imagine-video.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 79%"></a> <a href="model/grok-imagine-video.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 17%"></a> <a href="model/grok-imagine-video.md#visual-physics-verified"><img src="../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified 3%"></a> |
-| 14 | [Veo 3.1](model/veo-3-1.md) <sub>Google</sub> | 63 ±2 | api $0.40/sec |  |  | [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing) | <a href="model/veo-3-1.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 55%"></a> <a href="model/veo-3-1.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 13%"></a> <a href="model/veo-3-1.md#visual-rapid-camera"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings 7%"></a> <a href="model/veo-3-1.md#visual-v-reasonbench"><img src="../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models 7%"></a> [+3](model/veo-3-1.md) |
-| 15 | [Veo 3.1 Fast](model/veo-3-1-fast.md) <sub>Google</sub> | 63 ±2 | api $0.10/sec |  |  | [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing) | <a href="model/veo-3-1-fast.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 68%"></a> <a href="model/veo-3-1-fast.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 17%"></a> <a href="model/veo-3-1-fast.md#visual-worldjen"><img src="../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models 7%"></a> <a href="model/veo-3-1-fast.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 6%"></a> [+1](model/veo-3-1-fast.md) |
-| 16 | [Wan 2.7](model/wan-2-7.md) <sub>Alibaba</sub> | 63 ±2 | api $0.10/sec |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/wan-2-7.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 72%"></a> <a href="model/wan-2-7.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 17%"></a> <a href="model/wan-2-7.md#visual-vgi"><img src="../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models 9%"></a> |
-| 17 | [Hailuo 02](model/hailuo-02.md) <sub>MiniMax</sub> | 62 ±6\* | api $0.047/sec |  |  | [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/pricing-paygo.md) | <a href="model/hailuo-02.md#visual-v-reasonbench"><img src="../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models 78%"></a> <a href="model/hailuo-02.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 7%"></a> |
-| 18 | [Vidu Q3 Pro](model/vidu-q3-pro.md) <sub>ShengShu (Vidu)</sub> | 59 ±3\* | api $0.10/sec |  |  | [platform.vidu.com ↗](https://platform.vidu.com/docs/pricing) | <a href="model/vidu-q3-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 58%"></a> <a href="model/vidu-q3-pro.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 38%"></a> |
-| 19 | [Seedance 1.0 Pro Fast](model/seedance-1-0-pro-fast.md) <sub>ByteDance</sub> | 59 ±13\* | api $0.049/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video) | <a href="model/seedance-1-0-pro-fast.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 32%"></a> |
-| 20 | [Kling O3 Pro](model/kling-o3-pro.md) <sub>Kuaishou (Kling AI)</sub> | 58 ±6\* | api $0.11/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/o3/pro/text-to-video) | <a href="model/kling-o3-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 86%"></a> |
-| 21 | [Wan 2.6](model/wan-2-6.md) <sub>Alibaba</sub> | 58 ±2 | api $0.10/sec |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/wan-2-6.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 74%"></a> <a href="model/wan-2-6.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 18%"></a> <a href="model/wan-2-6.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 6%"></a> <a href="model/wan-2-6.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 1%"></a> |
-| 22 | [Wan 2.5 Preview](model/wan-2-5-preview.md) <sub>Alibaba</sub> | 52 ±2 | api $0.10/sec |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/wan-2-5-preview.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 74%"></a> <a href="model/wan-2-5-preview.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 18%"></a> <a href="model/wan-2-5-preview.md#visual-vwg-bench"><img src="../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) 6%"></a> |
-| 23 | [PixVerse V5.6](model/pixverse-v5-6.md) <sub>PixVerse</sub> | 51 ±2 | api $0.045/sec |  |  | [docs.platform.pixverse.ai ↗](https://docs.platform.pixverse.ai/model-pricing-796039m0) | <a href="model/pixverse-v5-6.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 79%"></a> <a href="model/pixverse-v5-6.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 19%"></a> |
-| 24 | [Kling 2.6 Pro](model/kling-2-6-pro.md) <sub>Kuaishou (Kling AI)</sub> | 51 ±2 | api $0.070/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video) | <a href="model/kling-2-6-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 73%"></a> <a href="model/kling-2-6-pro.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 18%"></a> <a href="model/kling-2-6-pro.md#visual-worldjen"><img src="../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models 8%"></a> |
-| 25 | [Runway Gen-4.5](model/runway-gen-4-5.md) <sub>Runway</sub> | 50 ±3\* | api $0.12/sec |  |  | [docs.dev.runwayml.com ↗](https://docs.dev.runwayml.com/guides/pricing/) | <a href="model/runway-gen-4-5.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 81%"></a> <a href="model/runway-gen-4-5.md#visual-vgi"><img src="../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models 15%"></a> |
-| 26 | [Wan 2.2 I2V A14B](model/wan-2-2-i2v-a14b.md) <sub>Alibaba</sub> | 49 ±6\* | api $0.080/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video) | <a href="model/wan-2-2-i2v-a14b.md#visual-vgi"><img src="../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models 64%"></a> <a href="model/wan-2-2-i2v-a14b.md#visual-physics-verified"><img src="../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified 22%"></a> |
-| 27 | [Seedance 1.5 Pro](model/seedance-1-5-pro.md) <sub>ByteDance Seed</sub> | 49 ±2 | api $0.052/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/bytedance/seedance/v1.5/pro/text-to-video) | <a href="model/seedance-1-5-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 79%"></a> <a href="model/seedance-1-5-pro.md#visual-rapid-physics"><img src="../icons/huggingface.co.png" width="14" alt="Rapidata/world-model-physics published dataset-card rankings 19%"></a> |
-| 28 | [LongCat-Video](model/longcat-video.md) <sub>Meituan</sub> | 49 ±8\* | api $0.040/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p) | <a href="model/longcat-video.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 77%"></a> |
-| 29 | [Wan 2.6 Flash](model/wan-2-6-flash.md) <sub>Alibaba</sub> | 49 ±8\* | api $0.025/sec |  |  | [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing) | <a href="model/wan-2-6-flash.md#visual-vwg-bench"><img src="../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) 77%"></a> |
-| 30 | [PixVerse 5.5](model/pixverse-v5-5.md) <sub>PixVerse</sub> | 48 ±13\* | api $0.060/sec |  |  | [docs.platform.pixverse.ai ↗](https://docs.platform.pixverse.ai/model-pricing-796039m0) | <a href="model/pixverse-v5-5.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 32%"></a> |
-| 31 | [HunyuanVideo 1.5 (I2V)](model/hunyuanvideo-1-5-i2v.md) <sub>Tencent</sub> | 48 ±6\* | api $0.075/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video) | <a href="model/hunyuanvideo-1-5-i2v.md#visual-vgi"><img src="../icons/arxiv.org.png" width="14" alt="VGI-Bench: Probing Visual Intelligence in Video Generation Models 64%"></a> <a href="model/hunyuanvideo-1-5-i2v.md#visual-physics-verified"><img src="../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified 22%"></a> |
-| 32 | [Kling 2.5 Turbo Pro](model/kling-2-5-turbo-pro.md) <sub>Kuaishou</sub> | 47 ±5 | api $0.070/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video) | <a href="model/kling-2-5-turbo-pro.md#visual-v-reasonbench"><img src="../icons/arxiv.org.png" width="14" alt="V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models 52%"></a> <a href="model/kling-2-5-turbo-pro.md#visual-vwg-bench"><img src="../icons/arxiv.org.png" width="14" alt="From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models (VWG-Bench) (lab) 33%"></a> <a href="model/kling-2-5-turbo-pro.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 5%"></a> |
-| 33 | [Wan 2.2 TI2V 5B](model/wan-2-2-5b.md) <sub>Alibaba</sub> | 47 ±8\* | api price unknown |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video) | <a href="model/wan-2-2-5b.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 77%"></a> |
-| 34 | [Kling O1 Pro](model/kling-o1-pro.md) <sub>Kuaishou (Kling AI)</sub> | 47 ±3\* | api $0.11/sec |  |  | [replicate.com ↗](https://replicate.com/kwaivgi/kling-o1) | <a href="model/kling-o1-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 97%"></a> |
-| 35 | [Hailuo 2.3](model/hailuo-2-3.md) <sub>MiniMax</sub> | 47 ±2\* | api $0.047/sec |  |  | [platform.minimax.io ↗](https://platform.minimax.io/docs/guides/pricing-paygo.md) | <a href="model/hailuo-2-3.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 98%"></a> |
-| 36 | [Seedance 1.0 Pro](model/seedance-1-0-pro.md) <sub>ByteDance Seed</sub> | 46 ±2\* | api $0.052/sec |  |  | [docs.byteplus.com ↗](https://docs.byteplus.com/en/docs/ModelArk/1544106) | <a href="model/seedance-1-0-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 98%"></a> |
-| 37 | [Vidu Q2 Turbo](model/vidu-q2-turbo.md) <sub>ShengShu (Vidu)</sub> | 46 ±4\* | api $0.050/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo) | <a href="model/vidu-q2-turbo.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 94%"></a> |
-| 38 | [P-Video](model/p-video.md) <sub>Pruna</sub> | 46 ±2 | api $0.020/sec |  |  | [replicate.com ↗](https://replicate.com/prunaai/p-video) | <a href="model/p-video.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 94%"></a> <a href="model/p-video.md#visual-physics-verified"><img src="../icons/arxiv.org.png" width="14" alt="Physics-IQ Verified 4%"></a> |
-| 39 | [Kling 2.1 Standard](model/kling-2-1-standard.md) <sub>Kuaishou (Kling AI)</sub> | 44 ±4\* | api $0.050/sec |  |  | [replicate.com ↗](https://replicate.com/kwaivgi/kling-v2.1) | <a href="model/kling-2-1-standard.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 94%"></a> |
-| 40 | [LTX-2 19B Distilled](model/ltx-2-19b-distilled.md) <sub>Lightricks</sub> | 44 ±8\* | api $0.020/sec |  |  | [replicate.com ↗](https://replicate.com/lightricks/ltx-2-distilled) | <a href="model/ltx-2-19b-distilled.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 77%"></a> |
-| 41 | [Kandinsky 5.0 Pro](model/kandinsky-5-0-pro.md) <sub>Sber</sub> | 42 ±3\* | api $0.040/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video) | <a href="model/kandinsky-5-0-pro.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 95%"></a> <a href="model/kandinsky-5-0-pro.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 2%"></a> |
-| 42 | [Kling 2.1 Master](model/kling-2-1-master.md) <sub>Kuaishou (Kling AI)</sub> | 42 ±2\* | api $0.28/sec |  |  | [replicate.com ↗](https://replicate.com/kwaivgi/kling-v2.1-master) | <a href="model/kling-2-1-master.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 98%"></a> |
-| 43 | [HunyuanVideo 1.5](model/hunyuanvideo-1-5.md) <sub>Tencent</sub> | 42 ±2 | api $0.075/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video) | <a href="model/hunyuanvideo-1-5.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 82%"></a> <a href="model/hunyuanvideo-1-5.md#visual-worldjen"><img src="../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models 9%"></a> <a href="model/hunyuanvideo-1-5.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 7%"></a> <a href="model/hunyuanvideo-1-5.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 1%"></a> |
-| 44 | [LTX-2](model/ltx-2.md) <sub>Lightricks</sub> | 38 ±2 | local |  | ~46GB | `uv run mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768` | <a href="model/ltx-2.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 88%"></a> <a href="model/ltx-2.md#visual-worldjen"><img src="../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models 9%"></a> |
-| 45 | [Wan 2.2 A14B](model/wan-2-2-a14b.md) <sub>Alibaba</sub> | 38 ±2 | api $0.080/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video) | <a href="model/wan-2-2-a14b.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 88%"></a> <a href="model/wan-2-2-a14b.md#visual-worldjen"><img src="../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models 9%"></a> |
-| 46 | [LTX-2.3](model/ltx-2-3.md) <sub>Lightricks</sub> | 37 ±8\* | api $0.040/sec |  |  | [docs.ltx.io ↗](https://docs.ltx.io/pricing.md) | <a href="model/ltx-2-3.md#visual-scivbench"><img src="../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains 77%"></a> |
-| 47 | [Wan 2.1 14B](model/wan-2-1-14b.md) <sub>Alibaba</sub> | 37 ±3 | api $0.24/sec |  |  | [replicate.com ↗](https://replicate.com/wavespeedai/wan-2.1-t2v-720p) | <a href="model/wan-2-1-14b.md#visual-skyreels-v2"><img src="../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model 47%"></a> <a href="model/wan-2-1-14b.md#visual-videophy-readme"><img src="../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards 37%"></a> <a href="model/wan-2-1-14b.md#visual-t2vphysbench"><img src="../icons/arxiv.org.png" width="14" alt="T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation 13%"></a> |
-| 48 | [Hailuo 01 (MiniMax video-01 / I2V-01)](model/hailuo-01.md) <sub>MiniMax</sub> | 37 ±4\* | api $0.083/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/minimax/video-01/image-to-video) | <a href="model/hailuo-01.md#visual-skyreels-v2"><img src="../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model 95%"></a> |
-| 49 | [CogVideoX-5B](model/cogvideox-5b.md) <sub>Zhipu AI (THUDM)</sub> | 32 ±4 | api price unknown |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/cogvideox-5b) | <a href="model/cogvideox-5b.md#visual-videophy-readme"><img src="../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards 92%"></a> <a href="model/cogvideox-5b.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 2%"></a> |
-| 50 | [Wan 2.1 T2V 1.3B](model/wan-2-1-1-3b.md) <sub>Alibaba</sub> | 29 ±7\* | api $0.040/sec |  |  | [replicate.com ↗](https://replicate.com/wan-video/wan-2.1-1.3b) | <a href="model/wan-2-1-1-3b.md#visual-worldjen"><img src="../icons/arxiv.org.png" width="14" alt="WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models 81%"></a> |
-| 51 | [HunyuanVideo](model/hunyuanvideo.md) <sub>Tencent</sub> | 29 ±3 | api price unknown |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/hunyuan-video) | <a href="model/hunyuanvideo.md#visual-videophy-readme"><img src="../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards 53%"></a> <a href="model/hunyuanvideo.md#visual-skyreels-v2"><img src="../icons/arxiv.org.png" width="14" alt="SkyReels-V2: Infinite-length Film Generative Model 44%"></a> |
-| 52 | [Mochi 1](model/mochi-1.md) <sub>Genmo</sub> | 24 ±3 | api price unknown |  |  | [replicate.com ↗](https://replicate.com/genmoai/mochi-1) | <a href="model/mochi-1.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 70%"></a> <a href="model/mochi-1.md#visual-videophy-readme"><img src="../icons/github.com.png" width="14" alt="VideoPhy / VideoPhy-2 official repository leaderboards 16%"></a> <a href="model/mochi-1.md#visual-t2vphysbench"><img src="../icons/arxiv.org.png" width="14" alt="T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation 11%"></a> |
-| 53 | [Runway Gen-4 Turbo](model/runway-gen-4-turbo.md) <sub>Runway</sub> | 23 ±4\* | api $0.050/sec |  |  | [docs.dev.runwayml.com ↗](https://docs.dev.runwayml.com/guides/models) | <a href="model/runway-gen-4-turbo.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 94%"></a> |
-| 54 | [Pika 2.2](model/pika-2-2.md) <sub>Pika</sub> | 21 ±2 | api $0.040/sec |  |  | [fal.ai ↗](https://fal.ai/models/fal-ai/pika/v2.2/text-to-video) | <a href="model/pika-2-2.md#lmarena-dataset"><img src="../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset 88%"></a> <a href="model/pika-2-2.md#visual-t2vphysbench"><img src="../icons/arxiv.org.png" width="14" alt="T2VPhysBench: A First-Principles Benchmark for Physical Consistency in Text-to-Video Generation 9%"></a> <a href="model/pika-2-2.md#visual-humanscore"><img src="../icons/arxiv.org.png" width="14" alt="HumanScore: Benchmarking Human Motions in Generated Videos 1%"></a> |
+<pre>
+ #  model                        score  where                RAM  get it
+ 1  <a href="model/gemini-omni-1-1-flash.md">Gemini Omni 1.1 Flash</a>        81±2   api $0.10/sec             <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+ 2  <a href="model/gemini-omni-flash.md">Gemini Omni Flash</a>            78±2   api $0.10/sec             <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+ 3  <a href="model/flux-3-video.md">FLUX 3 Video</a>                 78±3*  api $0.17/sec             <a href="https://docs.bfl.ai/flux_3/flux3_video">docs.bfl.ai</a>
+ 4  <a href="model/wan-3-0.md">Wan 3.0</a>                      77±2   api $0.10/sec             <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+ 5  <a href="model/seedance-2-5.md">Dreamina Seedance 2.5</a>        76±2   api $0.30/sec             <a href="https://docs.dev.runwayml.com/guides/pricing">docs.dev.runwayml.c…</a>
+ 6  <a href="model/happyhorse-1-1.md">HappyHorse 1.1</a>               76±5*  api $0.14/sec             <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+ 7  <a href="model/seedance-2-0.md">Dreamina Seedance 2.0</a>        75±2   api $0.30/sec             <a href="https://fal.ai/models/bytedance/seedance-2.0/text-to-video">fal.ai</a>
+ 8  <a href="model/minimax-h3.md">MiniMax H3</a>                   75±2   api $0.13/sec             <a href="https://fal.ai/models/minimax/h3/text-to-video">fal.ai</a>
+ 9  <a href="model/grok-imagine-video-1-5.md">Grok Imagine Video 1.5</a>       70±3   api $0.080/sec            <a href="https://docs.x.ai/developers/models/grok-imagine-video-1.5">docs.x.ai</a>
+10  <a href="model/happyhorse-1-0.md">HappyHorse 1.0</a>               69±2   api $0.14/sec             <a href="https://replicate.com/alibaba/happyhorse-1.0">replicate.com</a>
+11  <a href="model/kling-3-0.md">Kling 3.0</a>                    66±6*  api $0.084/sec            <a href="https://kling.ai/dev/pricing">kling.ai</a>
+12  <a href="model/kling-3-0-pro.md">Kling 3.0 Pro</a>                64±3   api $0.11/sec             <a href="https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video">fal.ai</a>
+13  <a href="model/grok-imagine-video.md">Grok Imagine Video</a>           64±2   api $0.050/sec            <a href="https://docs.x.ai/docs/models/grok-imagine-video">docs.x.ai</a>
+14  <a href="model/veo-3-1.md">Veo 3.1</a>                      63±2   api $0.40/sec             <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+15  <a href="model/veo-3-1-fast.md">Veo 3.1 Fast</a>                 63±2   api $0.10/sec             <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+16  <a href="model/wan-2-7.md">Wan 2.7</a>                      63±2   api $0.10/sec             <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+17  <a href="model/hailuo-02.md">Hailuo 02</a>                    62±6*  api $0.047/sec            <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+18  <a href="model/vidu-q3-pro.md">Vidu Q3 Pro</a>                  59±3*  api $0.10/sec             <a href="https://platform.vidu.com/docs/pricing">platform.vidu.com</a>
+19  <a href="model/seedance-1-0-pro-fast.md">Seedance 1.0 Pro Fast</a>       59±13*  api $0.049/sec            <a href="https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/text-to-video">fal.ai</a>
+20  <a href="model/kling-o3-pro.md">Kling O3 Pro</a>                 58±6*  api $0.11/sec             <a href="https://fal.ai/models/fal-ai/kling-video/o3/pro/text-to-video">fal.ai</a>
+21  <a href="model/wan-2-6.md">Wan 2.6</a>                      58±2   api $0.10/sec             <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+22  <a href="model/wan-2-5-preview.md">Wan 2.5 Preview</a>              52±2   api $0.10/sec             <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+23  <a href="model/pixverse-v5-6.md">PixVerse V5.6</a>                51±2   api $0.045/sec            <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">docs.platform.pixve…</a>
+24  <a href="model/kling-2-6-pro.md">Kling 2.6 Pro</a>                51±2   api $0.070/sec            <a href="https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video">fal.ai</a>
+25  <a href="model/runway-gen-4-5.md">Runway Gen-4.5</a>               50±3*  api $0.12/sec             <a href="https://docs.dev.runwayml.com/guides/pricing/">docs.dev.runwayml.c…</a>
+26  <a href="model/wan-2-2-i2v-a14b.md">Wan 2.2 I2V A14B</a>             49±6*  api $0.080/sec            <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video">fal.ai</a>
+27  <a href="model/seedance-1-5-pro.md">Seedance 1.5 Pro</a>             49±2   api $0.052/sec            <a href="https://fal.ai/models/fal-ai/bytedance/seedance/v1.5/pro/text-to-video">fal.ai</a>
+28  <a href="model/longcat-video.md">LongCat-Video</a>                49±8*  api $0.040/sec            <a href="https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p">fal.ai</a>
+29  <a href="model/wan-2-6-flash.md">Wan 2.6 Flash</a>                49±8*  api $0.025/sec            <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+30  <a href="model/pixverse-v5-5.md">PixVerse 5.5</a>                48±13*  api $0.060/sec            <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">docs.platform.pixve…</a>
+31  <a href="model/hunyuanvideo-1-5-i2v.md">HunyuanVideo 1.5 (I2V)</a>       48±6*  api $0.075/sec            <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video">fal.ai</a>
+32  <a href="model/kling-2-5-turbo-pro.md">Kling 2.5 Turbo Pro</a>          47±5   api $0.070/sec            <a href="https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/text-to-video">fal.ai</a>
+33  <a href="model/wan-2-2-5b.md">Wan 2.2 TI2V 5B</a>              47±8*  api price unknown         <a href="https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video">fal.ai</a>
+34  <a href="model/kling-o1-pro.md">Kling O1 Pro</a>                 47±3*  api $0.11/sec             <a href="https://replicate.com/kwaivgi/kling-o1">replicate.com</a>
+35  <a href="model/hailuo-2-3.md">Hailuo 2.3</a>                   47±2*  api $0.047/sec            <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+36  <a href="model/seedance-1-0-pro.md">Seedance 1.0 Pro</a>             46±2*  api $0.052/sec            <a href="https://docs.byteplus.com/en/docs/ModelArk/1544106">docs.byteplus.com</a>
+37  <a href="model/vidu-q2-turbo.md">Vidu Q2 Turbo</a>                46±4*  api $0.050/sec            <a href="https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo">fal.ai</a>
+38  <a href="model/p-video.md">P-Video</a>                      46±2   api $0.020/sec            <a href="https://replicate.com/prunaai/p-video">replicate.com</a>
+39  <a href="model/kling-2-1-standard.md">Kling 2.1 Standard</a>           44±4*  api $0.050/sec            <a href="https://replicate.com/kwaivgi/kling-v2.1">replicate.com</a>
+40  <a href="model/ltx-2-19b-distilled.md">LTX-2 19B Distilled</a>          44±8*  api $0.020/sec            <a href="https://replicate.com/lightricks/ltx-2-distilled">replicate.com</a>
+41  <a href="model/kandinsky-5-0-pro.md">Kandinsky 5.0 Pro</a>            42±3*  api $0.040/sec            <a href="https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video">fal.ai</a>
+42  <a href="model/kling-2-1-master.md">Kling 2.1 Master</a>             42±2*  api $0.28/sec             <a href="https://replicate.com/kwaivgi/kling-v2.1-master">replicate.com</a>
+43  <a href="model/hunyuanvideo-1-5.md">HunyuanVideo 1.5</a>             42±2   api $0.075/sec            <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video">fal.ai</a>
+44  <a href="model/ltx-2.md">LTX-2</a>                        38±2   local              ~46GB  uv run mlx_video.lt…
+45  <a href="model/wan-2-2-a14b.md">Wan 2.2 A14B</a>                 38±2   api $0.080/sec            <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video">fal.ai</a>
+46  <a href="model/ltx-2-3.md">LTX-2.3</a>                      37±8*  api $0.040/sec            <a href="https://docs.ltx.io/pricing.md">docs.ltx.io</a>
+47  <a href="model/wan-2-1-14b.md">Wan 2.1 14B</a>                  37±3   api $0.24/sec             <a href="https://replicate.com/wavespeedai/wan-2.1-t2v-720p">replicate.com</a>
+48  <a href="model/hailuo-01.md">Hailuo 01 (MiniMax video-…</a>   37±4*  api $0.083/sec            <a href="https://fal.ai/models/fal-ai/minimax/video-01/image-to-video">fal.ai</a>
+49  <a href="model/cogvideox-5b.md">CogVideoX-5B</a>                 32±4   api price unknown         <a href="https://fal.ai/models/fal-ai/cogvideox-5b">fal.ai</a>
+50  <a href="model/wan-2-1-1-3b.md">Wan 2.1 T2V 1.3B</a>             29±7*  api $0.040/sec            <a href="https://replicate.com/wan-video/wan-2.1-1.3b">replicate.com</a>
+51  <a href="model/hunyuanvideo.md">HunyuanVideo</a>                 29±3   api price unknown         <a href="https://fal.ai/models/fal-ai/hunyuan-video">fal.ai</a>
+52  <a href="model/mochi-1.md">Mochi 1</a>                      24±3   api price unknown         <a href="https://replicate.com/genmoai/mochi-1">replicate.com</a>
+53  <a href="model/runway-gen-4-turbo.md">Runway Gen-4 Turbo</a>           23±4*  api $0.050/sec            <a href="https://docs.dev.runwayml.com/guides/models">docs.dev.runwayml.c…</a>
+54  <a href="model/pika-2-2.md">Pika 2.2</a>                     21±2   api $0.040/sec            <a href="https://fal.ai/models/fal-ai/pika/v2.2/text-to-video">fal.ai</a>
+</pre>
 
-54 of 79 catalogue models ranked here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 54 of 79 catalogue models ranked here · [sources and licences](method.md#sources)
 
 <details><summary>Models outside this leaderboard (25 models)</summary>
 
@@ -144,5 +151,3 @@ No current run option verified: [Veo 3](model/veo-3.md) · [Sora 2](model/sora-2
 No reviewed benchmark results yet: LTX-2.5
 
 </details>
-
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory

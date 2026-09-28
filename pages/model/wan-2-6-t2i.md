@@ -6,9 +6,7 @@
 
 Alibaba · released 2026-01 · proprietary
 
-**score 56.8** ±2.4
-
-#31 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.8** ±2.4 · #31 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1136.7 | 57.0 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98% | 2026-09-24 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 56.8** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1136.7    57.0   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 2% ▇
+                        weighted average                = 56.8
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (DeepInfra) · $0.030/image · [deepinfra.com ↗](https://deepinfra.com/Wan-AI/Wan2.6-T2I)
+api (DeepInfra) · $0.030/image · [deepinfra.com](https://deepinfra.com/Wan-AI/Wan2.6-T2I)
 
-[price source](https://deepinfra.com/Wan-AI/Wan2.6-T2I) · USD per generated image on DeepInfra; single per-image rate listed (default size 1280\*1280, 1-4 images per request billed per image). Product: DeepInfra text-to-image. API model: Wan-AI/Wan2.6-T2I. Settings: num\_images=1. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.
+<sub>[price source](https://deepinfra.com/Wan-AI/Wan2.6-T2I): USD per generated image on DeepInfra; single per-image rate listed (default size 1280\*1280, 1-4 images per request billed per image). Product: DeepInfra text-to-image. API model: Wan-AI/Wan2.6-T2I. Settings: num\_images=1. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

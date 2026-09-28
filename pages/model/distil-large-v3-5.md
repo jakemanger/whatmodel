@@ -6,49 +6,59 @@
 
 Hugging Face (Distil-Whisper) · released 2025-03 · 0.76B params · mit
 
-**score 55.7** ±2.1
-
-#15 of 28 · from 5 benchmark results across 3 sources
+**score 55.7** ±2.1 · #15 of 28 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-stt-afrispeech-multibench-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite"> AfriSpeech-MultiBench (arXiv:2511.14255v1) · African-accented English ASR benchmark suite ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) | [AfriSpeech-MultiBench · Parliament (legal domain) WER](https://arxiv.org/html/2511.14255v1) | 18.0% | 58.4 | ▇▇▇▇▇▇▇▇ 27% | 2025-11-18 |
-|  | [AfriSpeech-MultiBench · 7-region African-accent mean WER](https://arxiv.org/html/2511.14255v1) | 22.3% | 55.8 | ▇▇▇▇▇▇ 20% | 2025-11-18 |
-| <a name="open-asr"></a><img src="../../icons/huggingface.co.png" width="14" alt="Open ASR Leaderboard"> Open ASR Leaderboard | [Open ASR English long-form WER](https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv) | 9.7% | 54.4 | ▇▇▇▇▇▇▇▇▇ 29% | 2026-03-26 |
-|  | [Open ASR English short-form WER (March 2026)](https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv) | 7.2% | 35.5 | ▇ 0% | 2026-03-26 |
-| <a name="speech-rw-voice-eq-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="RW-Voice-EQ Bench (Hume AI)"> RW-Voice-EQ Bench (Hume AI) ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) | [RW-Voice-EQ ASR · 4 real-world English sets, mean WER](https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg) | 9.7% | 54.5 | ▇▇▇▇▇▇▇ 22% | 2026-07-16 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 55.7** |  |  |
+<pre>
+source                 test                            score  implies  date        weight
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench  <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.0%    58.4   2025-11-18   27% ▇▇▇
+                       <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.3%    55.8   2025-11-18   20% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard   <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   9.7%    54.4   2026-03-26   29% ▇▇▇
+                       <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.2%    35.5   2026-03-26    0% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench      <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.7%    54.5   2026-07-16   22% ▇▇▇
+prior                  pull toward the middle                   49.9                 2% ▇
+                       weighted average                       = 55.7
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (12)
+<sub>Licences: AfriSpeech-MultiBench ([CC BY 4.0](../../licenses/speech-stt-afrispeech-multibench-report.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| distil-whisper/distil-large-v3.5 model card | [AMI WER (Open ASR / ESB test split)](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 14.6% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [Earnings-21 long-form WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 10.6% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [Earnings-22 long-form WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 14.2% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [Earnings-22 WER (short-form, Open ASR / ESB test split)](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 11.3% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [GigaSpeech test WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 9.8% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [LibriSpeech test-clean WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 2.4% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [LibriSpeech test-other WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 5.0% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [Meanwhile long-form WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 6.8% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [Rev16 long-form WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 14.0% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [SPGISpeech test WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 2.9% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [TED-LIUM long-form WER](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 4.6% | too few models have this result to calibrate it yet |
-| distil-whisper/distil-large-v3.5 model card | [TED-LIUM test WER (short-form)](https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md) | 3.6% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (12)</summary>
+
+<pre>
+source                  test                            score  why
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">AMI WER (Open ASR / ESB test …</a>  14.6%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-21 long-form WER</a>       10.6%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 long-form WER</a>       14.2%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Earnings-22 WER (short-form, …</a>  11.3%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">GigaSpeech test WER</a>              9.8%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-clean WER</a>       2.4%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">LibriSpeech test-other WER</a>       5.0%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Meanwhile long-form WER</a>          6.8%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">Rev16 long-form WER</a>             14.0%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">SPGISpeech test WER</a>              2.9%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM long-form WER</a>           4.6%  too few models have it yet
+distil-whisper/distil…  <a href="https://huggingface.co/distil-whisper/distil-large-v3.5/blob/728a7691f3ff1d3d971528d3203a6e9559165d41/README.md">TED-LIUM test WER (short-form)</a>   3.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-| local version | needs | score | command |
-|---|---:|---:|---|
-| fp16 · nvidia only | ~2.32GB | 55.7 | `uvx insanely-fast-whisper --file-name audio.mp3 --model-name distil-whisper/distil-large-v3.5` |
+<pre>
+version               needs  score
+fp16 · nvidia only  ~2.32GB   55.7
+</pre>
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+```sh
+# fp16 · nvidia only
+uvx insanely-fast-whisper --file-name audio.mp3 --model-name distil-whisper/distil-large-v3.5
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/distil-large-v3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

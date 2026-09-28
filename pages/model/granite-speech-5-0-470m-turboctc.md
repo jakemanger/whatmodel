@@ -6,9 +6,12 @@
 
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
-| test | result | source and conditions |
-|---|---:|---|
-| Granite 5.0 report · Open ASR public 7-set mean WER | 5.7% | [Design of the IBM Granite 5.0 TurboCTC ASR Model (arXiv:2609.20104v1)](https://arxiv.org/html/2609.20104v1) · lab-reported · Table 3 'Robust fine tuning' (final training stage) AVG WER 5.72% over AMI 8.32, Earnings22 8.54, Gigaspeech 9.93, LS-clean 1.32, LS-other 2.54, SPGI 3.35, VoxPopuli 6.03. Model granite-speech-5.0-470m-turboctc (470M CTC, greedy decoding). Earlier-stage rows (Base 5.83, LLM distillation 5.75) not imported. |
+<pre>
+test                                result  reported by  source
+Granite 5.0 report · Open ASR pub…    5.7%  lab          <a href="https://arxiv.org/html/2609.20104v1">Design of the IBM Granite 5.0…</a>
+</pre>
+
+<sub>Licences: Design of the IBM Granite 5.0 TurboCTC ASR Model ([CC BY-SA 4.0](../../licenses/speech-stt-granite5-report-bysa.txt))</sub>
 
 ## How to run it
 

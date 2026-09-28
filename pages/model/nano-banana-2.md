@@ -6,9 +6,7 @@
 
 Google · released 2026-02 · proprietary
 
-**score 72.0** ±1.9
-
-#8 of 87 · from 5 benchmark results across 4 sources
+**score 72.0** ±1.9 · #8 of 87 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,23 +14,26 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1261.2 | 72.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 61% | 2026-09-24 |
-|  | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1388.2 | 74.0 | ▇▇▇▇▇ 16% | 2026-09-22 |
-| <a name="visual-edit-compass"></a><img src="../../icons/arxiv.org.png" width="14" alt="Edit-Compass &amp; EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling"> Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) | [Edit-Compass (EN, overall)](https://arxiv.org/html/2605.13062v1#S4.T3) | 74.8% | 70.5 | ▇▇▇▇ 12% | 2026-05-13 |
-| <a name="visual-imagetime"></a><img src="../../icons/arxiv.org.png" width="14" alt="Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency"> Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) | [ImageTime (prompt-only, overall)](https://arxiv.org/html/2606.10620v1#S5.T5) | 74.5% | 72.1 | ▇▇ 8% | 2026-06-09 |
-| <a name="visual-tecci"></a><img src="../../icons/arxiv.org.png" width="14" alt="TECCI: Tricky Edits of Collected and Curated Images"> TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt)) | [TECCI human overall success rate (IRCS+GGIS)](https://arxiv.org/html/2606.01213v1#S4.T2) lab-reported | 19.7% | 75.2 | ▇ 1% | 2026-05-31 |
-| prior | pull toward the middle |  | 49.9 | ▇ 1% |  |
-|  | **weighted average** |  | **= 72.0** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1261.2    72.3   2026-09-24   61% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1388.2    74.0   2026-09-22   16% ▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       74.8%    70.5   2026-05-13   12% ▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   74.5%    72.1   2026-06-09    8% ▇
+<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>   19.7%    75.2   2026-05-31    1% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 72.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
 
 ## How to run it
 
-api (Google) · $0.067/image · [ai.google.dev ↗](https://ai.google.dev/gemini-api/docs/pricing)
+api (Google) · $0.067/image · [ai.google.dev](https://ai.google.dev/gemini-api/docs/pricing)
 
-[price source](https://ai.google.dev/gemini-api/docs/pricing) · Google Gemini Developer API Standard paid tier; 1K generated image output only. Input/text/thinking/tool charges additional.  Product: Gemini Developer API. API model: gemini-3.1-flash-image. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published approximate image OUTPUT cost. Additional/excluded charges: Input tokens, text/thinking output tokens and optional tools. Currency: USD.
+<sub>[price source](https://ai.google.dev/gemini-api/docs/pricing): Google Gemini Developer API Standard paid tier; 1K generated image output only. Input/text/thinking/tool charges additional.  Product: Gemini Developer API. API model: gemini-3.1-flash-image. Settings: tier=Standard paid, resolution=1K, batch=no, n=1. Price basis: provider-published approximate image OUTPUT cost. Additional/excluded charges: Input tokens, text/thinking output tokens and optional tools. Currency: USD.</sub>
 
 no verified local download listed
 

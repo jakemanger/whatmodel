@@ -6,28 +6,29 @@
 
 Alibaba · closed weights
 
-**score 75.5** ±5.0
-
-#6 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 75.5** ±5.0 · #6 of 54 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="visual-rapid-camera"></a><img src="../../icons/huggingface.co.png" width="14" alt="Rapidata/camera-movement published dataset-card rankings"> Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) | [Rapidata camera movement (I2V)](https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard) | 1181.1 | 79.2 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 56% | 2026-09-25 |
-| <a name="visual-scivbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains"> Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) | [Sci-VBench testmini (expert human rating)](https://arxiv.org/html/2608.09873v1#S5.T4) | 61.2% | 77.3 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-08-10 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 10% |  |
-|  | **weighted average** |  | **= 75.5** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  1181.1    79.2   2026-09-25   56% ▇▇▇▇▇▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   61.2%    77.3   2026-08-10   34% ▇▇▇▇
+prior                   pull toward the middle                    49.9                10% ▇
+                        weighted average                        = 75.5
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.14/sec · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.14/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio HappyHorse text-to-video. API model: happyhorse-1.1-t2v. Settings: resolution=720P. Price basis: published list price; only output is billed. 480P $0.07/s, 1080P $0.18/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio HappyHorse text-to-video. API model: happyhorse-1.1-t2v. Settings: resolution=720P. Price basis: published list price; only output is billed. 480P $0.07/s, 1080P $0.18/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

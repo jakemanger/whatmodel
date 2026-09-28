@@ -6,9 +6,7 @@
 
 Google · released 2025-06 · proprietary
 
-**score 57.1** ±2.0
-
-#30 of 87 · from 3 benchmark results across 3 sources
+**score 57.1** ±2.0 · #30 of 87 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,21 +14,24 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [LMArena text-to-image](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet) | 1147.7 | 58.3 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 67% | 2026-09-24 |
-| <a name="visual-genexam"></a><img src="../../icons/arxiv.org.png" width="14" alt="GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5)"> GenExam: A Multidisciplinary Text-to-Image Exam (arXiv v5) ([CC-BY-4.0](../../licenses/visual-genexam.txt)) | [GenExam (relaxed overall, GPT-5 judge)](https://arxiv.org/html/2509.14232v5#S3.T2) | 53.0% | 54.9 | ▇▇▇▇▇▇▇▇ 27% | 2026-05-14 |
-| <a name="visual-qwenbench"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation"> Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) | [Qwen-Image-Bench (Q-Judger, v1)](https://arxiv.org/html/2605.28091v1#S4.T2) | 52.0% | 54.5 | ▇ 4% | 2026-05-27 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 57.1** |  |  |
+<pre>
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1147.7    58.3   2026-09-24   67% ▇▇▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   53.0%    54.9   2026-05-14   27% ▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   52.0%    54.5   2026-05-27    4% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 57.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 
-api (Google Cloud) · $0.060/image · [cloud.google.com ↗](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing)
+api (Google Cloud) · $0.060/image · [cloud.google.com](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing)
 
-[price source](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing) · USD per generated image, Imagen 4 Ultra text-to-image on Google Cloud generative AI (Vertex AI / Gemini Enterprise Agent Platform) pricing; upscaling billed separately. Not the Gemini Developer API (its pricing page no longer lists Imagen). Product: Google Cloud generative AI image generation. API model: Imagen 4 Ultra. Settings: text prompt, one image. Price basis: published list rate. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.
+<sub>[price source](https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing): USD per generated image, Imagen 4 Ultra text-to-image on Google Cloud generative AI (Vertex AI / Gemini Enterprise Agent Platform) pricing; upscaling billed separately. Not the Gemini Developer API (its pricing page no longer lists Imagen). Product: Google Cloud generative AI image generation. API model: Imagen 4 Ultra. Settings: text prompt, one image. Price basis: published list rate. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

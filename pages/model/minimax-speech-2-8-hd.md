@@ -6,32 +6,33 @@
 
 MiniMax · released 2026-02 · proprietary
 
-**score 57.0** ±2.0
-
-#11 of 36 · from 6 benchmark results across 3 sources
+**score 57.0** ±2.0 · #11 of 36 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="speech-qwen-audio3-tts-report"></a><img src="../../icons/arxiv.org.png" width="14" alt="Qwen-Audio-3.0-TTS technical report"> Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) | [CV3-Eval multilingual voice clone · 9-language mean error](https://arxiv.org/html/2607.23938v1) | 4.9% | 58.0 | ▇▇▇▇▇▇ 20% | 2026-07-27 |
-|  | [CV3-Eval hard-en · WER](https://arxiv.org/html/2607.23938v1) | 7.4% | 55.8 | ▇▇▇▇▇ 18% | 2026-07-27 |
-|  | [CV3-Eval protocol, 7 added languages · mean WER (Qwen-Audio 3.0 extension)](https://arxiv.org/html/2607.23938v1) | 2.8% | 60.9 | ▇▇▇ 12% | 2026-07-27 |
-|  | [CV3-Eval hard-zh · CER](https://arxiv.org/html/2607.23938v1) | 7.4% | 59.5 | ▇▇▇ 11% | 2026-07-27 |
-| <a name="speech-cn-news-tts-ccby"></a><img src="../../icons/huggingface.co.png" width="14" alt="CN-NewsTTS Bench v0.1"> CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [CN-NewsTTS v0.1 · strict pronunciation accuracy](https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv) | 54.8% | 56.1 | ▇▇▇▇▇▇▇▇ 25% | 2026-06-22 |
-| <a name="speech-voicefirst-indic-ccby"></a><img src="../../icons/arxiv.org.png" width="14" alt="Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages (arXiv:2604.21481v2)"> Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages (arXiv:2604.21481v2) ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) | [Voice-First Nation · 10 Indian languages overall pairwise preference (Bradley–Terry)](https://arxiv.org/html/2604.21481v2) | 993.9 | 53.8 | ▇▇▇▇ 13% | 2026-04-23 |
-| prior | pull toward the middle |  | 49.9 | ▇ 2% |  |
-|  | **weighted average** |  | **= 57.0** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.9%    58.0   2026-07-27   20% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>           7.4%    55.8   2026-07-27   18% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   2.8%    60.9   2026-07-27   12% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>           7.4%    59.5   2026-07-27   11% ▇
+<a name="speech-cn-news-tts-ccby"></a>CN-NewsTTS Bench v0.1   <a href="https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/artifacts/scores/leaderboard.csv">CN-NewsTTS v0.1 · strict pron…</a>  54.8%    56.1   2026-06-22   25% ▇▇▇
+<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>  993.9    53.8   2026-04-23   13% ▇▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 57.0
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · CN-NewsTTS Bench v0.1 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt))</sub>
 
 ## How to run it
 
-api (MiniMax) · $100.00/M chars · [platform.minimax.io ↗](https://platform.minimax.io/docs/pricing/overview)
+api (MiniMax) · $100.00/M chars · [platform.minimax.io](https://platform.minimax.io/docs/pricing/overview)
 
-[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md) · USD per 1M input characters (MiniMax lists $100 / M characters; sync T2A and async T2A same rate). Product: MiniMax pay-as-you-go text-to-audio (T2A). API model: speech-2.8-hd. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: voice design/cloning fees. Currency: USD. MiniMax official pay-as-you-go pricing page, observed 2026-09-25.
+<sub>[price source](https://platform.minimax.io/docs/guides/pricing-paygo.md): USD per 1M input characters (MiniMax lists $100 / M characters; sync T2A and async T2A same rate). Product: MiniMax pay-as-you-go text-to-audio (T2A). API model: speech-2.8-hd. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: voice design/cloning fees. Currency: USD. MiniMax official pay-as-you-go pricing page, observed 2026-09-25.</sub>
 
 no verified local download listed
 

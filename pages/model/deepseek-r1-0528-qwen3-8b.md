@@ -6,48 +6,58 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 25.4** ±3.3
-
-#191 of 205 · from 4 benchmark results across 2 sources
+**score 25.4** ±3.3 · #191 of 205 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="epoch-internal"></a><img src="../../icons/epoch.ai.png" width="14" alt="Epoch AI — internal evaluations"> Epoch AI — internal evaluations ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [GPQA Diamond](https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv) | 9.3% | -1.2 | ▇▇▇▇▇▇▇▇▇▇▇ 37% | 2026-08-28 |
-|  | [OTIS mock AIME 2024–2025](https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv) | 43.9% | 43.2 | ▇▇▇▇▇▇▇▇▇▇ 34% | 2026-08-28 |
-|  | [Chess Puzzles (Epoch)](https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv) | 3.0% | 29.2 | ▇▇▇ 11% | 2026-08-28 |
-| <a name="bridge-medical-leaderboard"></a><img src="../../icons/huggingface.co.png" width="14" alt="BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab)"> BRIDGE Medical Leaderboard (Harvard Medical School / Brigham and Women's YLab) | [BRIDGE clinical text, zero-shot average (87 tasks)](https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json) | 36.9% | 41.6 | ▇▇▇▇ 14% | 2025-07-22 |
-| prior | pull toward the middle |  | 50.0 | ▇ 5% |  |
-|  | **weighted average** |  | **= 25.4** |  |  |
+<pre>
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     9.3%    -1.2   2026-08-28   37% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    43.2   2026-08-28   34% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    29.2   2026-08-28   11% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.9%    41.6   2025-07-22   14% ▇▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 25.4
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
 
-### Not counted (5)
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
-| source | test | score | why |
-|---|---|---:|---|
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card | [AIME 2024](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md) | 86.0% | too few models have this result to calibrate it yet |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card | [AIME 2025](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md) | 76.3% | too few models have this result to calibrate it yet |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card | [HMMT February 2025](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md) | 61.5% | too few models have this result to calibrate it yet |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card | [GPQA Diamond](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md) | 61.1% | too few results from this source to calibrate it; another source's number for this test is used |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B model card | [LiveCodeBench v6 (Aug 2024–May 2025)](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md) | 60.5% | too few models have this result to calibrate it yet |
+<details><summary>Not counted (5)</summary>
+
+<pre>
+source                  test                            score  why
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">AIME 2024</a>                       86.0%  too few models have it yet
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">AIME 2025</a>                       76.3%  too few models have it yet
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025</a>              61.5%  too few models have it yet
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">GPQA Diamond</a>                    61.1%  another source's result is used
+deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">LiveCodeBench v6 (Aug 2024–Ma…</a>  60.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
-api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [novita.ai ↗](https://novita.ai/models)
+api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [novita.ai](https://novita.ai/models)
 
-[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · USD per 1M text tokens, standard uncached input and output. Model endpoint deepseek/deepseek-r1-0528-qwen3-8b.  Product: Serverless chat completions. API model: deepseek/deepseek-r1-0528-qwen3-8b. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD.
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint deepseek/deepseek-r1-0528-qwen3-8b.  Product: Serverless chat completions. API model: deepseek/deepseek-r1-0528-qwen3-8b. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-[context specification source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json) · provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens
+<pre>
+download          size  score
+4-bit q4_k_m   ~5.41GB   25.4
+8-bit q8_0    ~10.33GB   25.4
+</pre>
 
-| local download | size | score | command |
-|---|---:|---:|---|
-| 4-bit q4\_k\_m | ~5.41GB | 25.4 | `ollama run deepseek-r1:8b` |
-| 8-bit q8\_0 | ~10.33GB | 25.4 | `ollama run deepseek-r1:8b-0528-qwen3-q8_0` |
+```sh
+# 4-bit q4_k_m
+ollama run deepseek-r1:8b
+# 8-bit q8_0
+ollama run deepseek-r1:8b-0528-qwen3-q8_0
+```
 
-The score is the published model's; quantized downloads haven't been evaluated separately.
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 data updated 2026-09-26 03:10 UTC · [interactive version](https://whatmodel.sh/model/deepseek-r1-0528-qwen3-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

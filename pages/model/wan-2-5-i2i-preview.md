@@ -6,9 +6,7 @@
 
 Alibaba · closed weights
 
-**score 47.1** ±4.6
-
-#62 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.1** ±4.6 · #62 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
 
@@ -16,19 +14,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-| source | test | score | implies | weight | date |
-|---|---|---:|---:|---|---|
-| <a name="lmarena-dataset"></a><img src="../../icons/arena.ai.png" width="14" alt="LMArena leaderboard dataset"> LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) | [Arena image edit](https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet) | 1181.5 | 46.8 | ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 91% | 2026-09-22 |
-| prior | pull toward the middle |  | 49.9 | ▇▇▇ 9% |  |
-|  | **weighted average** |  | **= 47.1** |  |  |
+<pre>
+source                  test                     score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1181.5    46.8   2026-09-22   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 9% ▇
+                        weighted average                = 47.1
+</pre>
 
-~ averaged with other results for the same test
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · $0.030/image · [www.alibabacloud.com ↗](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
+api (Alibaba Cloud Model Studio) · $0.030/image · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/model-pricing)
 
-[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing) · USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.028671. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.5-i2i-preview. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26.
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.028671. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.5-i2i-preview. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26.</sub>
 
 no verified local download listed
 
