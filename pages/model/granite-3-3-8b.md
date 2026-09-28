@@ -6,7 +6,7 @@
 
 IBM · released 2025-04 · 8.17B params · apache-2.0
 
-**score 48.1** ±1.7 · #227 of 400 · from 9 benchmark results across 1 source
+**score 48.1** ±1.7 · #226 of 404 · from 9 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 

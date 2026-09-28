@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 35.2** ±1.4 · comparison only: no current run option verified · from 6 benchmark results across 1 source
+**score 35.4** ±1.4 · comparison only: no current run option verified · from 6 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.5%    36.3   2024-05-07   46% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                36.0%    32.1   2024-05-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                36.1%    32.0   2024-05-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      42.2%    33.5   2024-05-07   12% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    39.9   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    43.5   2024-05-07    4% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.5%    36.4   2024-05-07   48% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                36.0%    32.2   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                36.1%    32.1   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      42.2%    33.6   2024-05-07   12% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    40.0   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    43.6   2024-05-07    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 35.2
+                        weighted average                       = 35.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

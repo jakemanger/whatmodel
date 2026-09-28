@@ -6,7 +6,7 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 23.8** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
+**score 23.9** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,16 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    25.1   2024-05-07   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    25.9   2024-05-07    9% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    25.0   2024-05-07    9% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    24.7   2024-05-07    7% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    25.1   2024-05-07   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    26.0   2024-05-07    9% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    25.1   2024-05-07    9% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    24.8   2024-05-07    7% ▇
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 21.3%    22.8   2024-02-29   14% ▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    22.6   2024-02-29   12% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      42.6%    23.4   2024-02-29   11% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    18.8   2024-02-29   10% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    22.7   2024-02-29   12% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      42.6%    23.5   2024-02-29   11% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    18.9   2024-02-29   10% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 23.8
+                        weighted average                       = 23.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

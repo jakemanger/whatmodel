@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 45.5** ±5.5 · #242 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.0** ±5.2 · #250 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.1%    44.7   2024-11-12   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                13% ▇▇
-                        weighted average                       = 45.5
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.1%    44.3   2024-11-12   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                12% ▇
+                        weighted average                       = 45.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.36GB   45.5
-8-bit q8_0    ~18.22GB   45.5
+4-bit q4_k_m   ~9.36GB   45.0
+8-bit q8_0    ~18.22GB   45.0
 </pre>
 
 ```sh

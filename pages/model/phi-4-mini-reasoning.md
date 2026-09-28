@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · mit
 
-**score 34.2** ±6.0 · #342 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.2** ±5.8 · #355 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    31.2   2025-04-28   84% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                16% ▇▇
-                        weighted average                       = 34.2
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    30.2   2025-04-28   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                15% ▇▇
+                        weighted average                       = 33.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

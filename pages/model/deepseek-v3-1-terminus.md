@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 64.0** ±2.6 · #100 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.0** ±2.7 · #102 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 

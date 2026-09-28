@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 53.6** ±2.6 · #177 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.6** ±2.7 · #178 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 

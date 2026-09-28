@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
-**score 29.3** ±0.8 · #373 of 400 · from 10 benchmark results across 3 sources
+**score 29.3** ±0.8 · #377 of 404 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,16 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.7%    29.4   2024-03-28   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       29.3%    28.2   2024-03-28   19% ▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  27.8%    28.7   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    30.3   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    29.1   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    28.6   2024-05-07    4% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       28.7%    27.7   2024-02-29    8% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         22.7%    30.1   2024-02-29    7% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            53.1%    29.1   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           39.7%    34.3   2024-02-29    6% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.7%    29.3   2024-03-28   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       29.3%    28.0   2024-03-28   17% ▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  27.8%    28.7   2024-05-07   17% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    30.4   2024-05-07    6% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    29.2   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    28.7   2024-05-07    4% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       28.7%    27.8   2024-02-29    8% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         22.7%    30.2   2024-02-29    7% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            53.1%    29.2   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           39.7%    34.5   2024-02-29    6% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 29.3
 </pre>

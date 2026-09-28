@@ -6,7 +6,7 @@
 
 Amazon · released 2025-04 · closed weights
 
-**score 56.6** ±3.1 · #158 of 400 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.4** ±3.1 · #160 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source          test                            score  implies  date        weight
-<a name="massive-agents-paper"></a>MASSIVE-Agents  <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    56.9   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="massive-agents-paper"></a>MASSIVE-Agents  <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    56.6   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior           pull toward the middle                   50.0                 4% ▇
-                weighted average                       = 56.6
+                weighted average                       = 56.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

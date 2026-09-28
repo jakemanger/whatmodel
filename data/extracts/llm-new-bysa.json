@@ -465,7 +465,10 @@
     "codellama-13b",
     "starcoder2-15b",
     "codellama-34b",
-    "deepseek-coder-33b-base"
+    "deepseek-coder-33b-base",
+    "deepseek-v4-pro-preview",
+    "deepseek-v4-flash-preview",
+    "gpt-5-4-pro"
   ],
   "results": [
     {
@@ -8577,6 +8580,358 @@
         "raw_value": "47.1",
         "scale_divisor": 100
       }
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-arxivmath-2026-01",
+      "score": 0.73913,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath January 2026 outputs dataset (HF revision 306b8e8d1e91c40beb6b2b003adb89e7951bd204); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 23/23 problems, 2 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 815721b680bf committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0126_outputs",
+        "revision": "306b8e8d1e91c40beb6b2b003adb89e7951bd204",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "0749f5ced2cdb6de56ed27177934da4b66e4268d2bf1bdf5ea72d77efc883e70",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 23,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-arxivmath-2026-02",
+      "score": 0.515625,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath February 2026 outputs dataset (HF revision 92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 32/32 problems, 4 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision e5b08c0ea5d2 committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0226_outputs",
+        "revision": "92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "b5a1bbc302aa067bcb4ab1edbfb629042c99671777308c5c4170b3bd1ec6948c",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 32,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-arxivmath-2026-02",
+      "score": 0.4375,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath February 2026 outputs dataset (HF revision 92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 32/32 problems, 4 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision e5b08c0ea5d2 committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0226_outputs",
+        "revision": "92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "b5a1bbc302aa067bcb4ab1edbfb629042c99671777308c5c4170b3bd1ec6948c",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 32,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "gpt-5-4-pro",
+      "bench": "matharena-arxivmath-2026-02",
+      "score": 0.757812,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath February 2026 outputs dataset (HF revision 92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8); published model_name 'GPT-5.4-Pro (xhigh)', model_config 'openai/gpt-54-pro' (gpt-5.4-pro, reasoning effort xhigh, Responses API, per configs/models/openai/gpt-54-pro.yaml at eth-sri/matharena b89f2f0ad64c). 32/32 problems, 4 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0226_outputs",
+        "revision": "92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "b5a1bbc302aa067bcb4ab1edbfb629042c99671777308c5c4170b3bd1ec6948c",
+        "model_config": "openai/gpt-54-pro",
+        "problems": 32,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-arxivmath-2026-03",
+      "score": 0.558333,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath March 2026 outputs dataset (HF revision 69bc5be7b2280c8521854515a981ed074aaa7b40); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 30/30 problems, 4 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 29b46187fc95 committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0326_outputs",
+        "revision": "69bc5be7b2280c8521854515a981ed074aaa7b40",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "31944dded3833868d6d08e902fbec46276201af39f7f0a8b2ecc7084d91d3fcc",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 30,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-arxivmath-2026-03",
+      "score": 0.525,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath March 2026 outputs dataset (HF revision 69bc5be7b2280c8521854515a981ed074aaa7b40); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 30/30 problems, 4 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 29b46187fc95 committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0326_outputs",
+        "revision": "69bc5be7b2280c8521854515a981ed074aaa7b40",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "31944dded3833868d6d08e902fbec46276201af39f7f0a8b2ecc7084d91d3fcc",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 30,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-arxivmath-2026-04",
+      "score": 0.5125,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath April 2026 outputs dataset (HF revision 31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 40/40 problems, 2 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision c1576227de56 committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0426_outputs",
+        "revision": "31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "4a3c1bafae45d20d9983f6cd1a07b909f60bac0aa820bac3d702c25c9f91b02d",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 40,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-arxivmath-2026-04",
+      "score": 0.475,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath April 2026 outputs dataset (HF revision 31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 40/40 problems, 2 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision c1576227de56 committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0426_outputs",
+        "revision": "31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "4a3c1bafae45d20d9983f6cd1a07b909f60bac0aa820bac3d702c25c9f91b02d",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 40,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-arxivmath-2026-05",
+      "score": 0.558333,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath May 2026 outputs dataset (HF revision 85f1009458c2d2e1527d3e592d04cf40ee8b3a90); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 40/40 problems, 3 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 63ca0d2f778a committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0526_outputs",
+        "revision": "85f1009458c2d2e1527d3e592d04cf40ee8b3a90",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "d38c07f6d91ebc4b450cc0b3f5cdd1278b0880b0cb58a37ce4dddb2aaec50dcf",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 40,
+        "attempts_min": 3,
+        "attempts_max": 3
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-brokenarxiv-2026-02",
+      "score": 0.133065,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv February 2026 outputs dataset (HF revision b1346bc6e4bd465b9c163debae81126b1140bfea); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 31/31 problems, 4 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 30cc075f1556 committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0226_outputs",
+        "revision": "b1346bc6e4bd465b9c163debae81126b1140bfea",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "633ef0323516d696da53d817e52d956018af70252185aa6768e0c8280baf02cc",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 31,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-brokenarxiv-2026-02",
+      "score": 0.177419,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv February 2026 outputs dataset (HF revision b1346bc6e4bd465b9c163debae81126b1140bfea); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 31/31 problems, 4 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 30cc075f1556 committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0226_outputs",
+        "revision": "b1346bc6e4bd465b9c163debae81126b1140bfea",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "633ef0323516d696da53d817e52d956018af70252185aa6768e0c8280baf02cc",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 31,
+        "attempts_min": 4,
+        "attempts_max": 4
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-brokenarxiv-2026-03",
+      "score": 0.151786,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv March 2026 outputs dataset (HF revision d719c23340e971fe956a2503bd157bfdcb67d146); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 56/56 problems, 2 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision f580302e137e committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0326_outputs",
+        "revision": "d719c23340e971fe956a2503bd157bfdcb67d146",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "2b8ce3928734687cfc771bd64e5f3cdec9dc41c650c91730590d05b210598a8e",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 56,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-brokenarxiv-2026-03",
+      "score": 0.196429,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv March 2026 outputs dataset (HF revision d719c23340e971fe956a2503bd157bfdcb67d146); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 56/56 problems, 2 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision f580302e137e committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0326_outputs",
+        "revision": "d719c23340e971fe956a2503bd157bfdcb67d146",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "2b8ce3928734687cfc771bd64e5f3cdec9dc41c650c91730590d05b210598a8e",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 56,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-pro-preview",
+      "bench": "matharena-brokenarxiv-2026-04",
+      "score": 0.221311,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv April 2026 outputs dataset (HF revision 34779f2c3c287fda88ea06b4c7885a1d10ae8b36); published model_name 'DeepSeek-v4-Pro (Max)', model_config 'deepseek/deepseek_v4_pro' (deepseek-v4-pro (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Pro, per configs/models/deepseek/deepseek_v4_pro.yaml at eth-sri/matharena b89f2f0ad64c). 61/61 problems, 2 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 27410aa882a2 committed 2026-06-23, before the 0813 GA replaced the April preview under the same API id on 2026-08-13; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0426_outputs",
+        "revision": "34779f2c3c287fda88ea06b4c7885a1d10ae8b36",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "68f10bcf55926258a256f67f3cfb6a557b0844c4745e037bc207f5280d911860",
+        "model_config": "deepseek/deepseek_v4_pro",
+        "problems": 61,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-brokenarxiv-2026-04",
+      "score": 0.237705,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv April 2026 outputs dataset (HF revision 34779f2c3c287fda88ea06b4c7885a1d10ae8b36); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 61/61 problems, 2 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: the same run (identical per-attempt results) is already in dataset revision 27410aa882a2 committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0426_outputs",
+        "revision": "34779f2c3c287fda88ea06b4c7885a1d10ae8b36",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "68f10bcf55926258a256f67f3cfb6a557b0844c4745e037bc207f5280d911860",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 61,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
+    },
+    {
+      "model": "deepseek-v4-flash-preview",
+      "bench": "matharena-brokenarxiv-2026-05",
+      "score": 0.195,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet",
+      "by": "independent",
+      "date": "2026-06-23",
+      "note": "MathArena BrokenArXiv May 2026 outputs dataset (HF revision 7ca7ebc694e921b56eb9b5968374918bf2a2b4e4); published model_name 'DeepSeek-v4-Flash (Max)', model_config 'deepseek/deepseek_v4_flash' (deepseek-v4-flash (DeepSeek API), reasoning_effort max, config date 2026-04-24; HF deepseek-ai/DeepSeek-V4-Flash, per configs/models/deepseek/deepseek_v4_flash.yaml at eth-sri/matharena b89f2f0ad64c). 50/50 problems, 2 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the 'points_judge_1' column. Competition config has no harness opt-in, so the plain API path was used (no tools). Identity: this pinned revision was committed 2026-06-23, before DeepSeek-V4-Flash-0731 replaced the April preview under the same API id on 2026-07-31; config dated 2026-04-24, so this is the April 2026 preview checkpoint. CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0526_outputs",
+        "revision": "7ca7ebc694e921b56eb9b5968374918bf2a2b4e4",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "08ea0c17c25e7ffa06f81fe47abd5d9b50a1515e6bf5ddf6153a75809ba9e59b",
+        "model_config": "deepseek/deepseek_v4_flash",
+        "problems": 50,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "source_id": "matharena-arxiv-outputs-bysa"
     }
   ]
 }

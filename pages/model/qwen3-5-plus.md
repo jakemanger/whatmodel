@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-02 · proprietary
 
-**score 66.1** ±2.3 · #78 of 400 · from 5 benchmark results across 1 source
+**score 66.0** ±2.3 · #78 of 404 · from 5 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                          score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  84.8%    67.0   2026-08-07   35% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    66.8   2026-08-07   31% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             25.4%    62.5   2026-08-27   17% ▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                  84.8%    67.0   2026-08-07   37% ▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>      86.7%    66.9   2026-08-07   25% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>             25.4%    62.7   2026-08-27   21% ▇▇
           <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>  16.0%    67.6   2026-08-05    9% ▇
           <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>         22.0%    71.5   2026-08-07    6% ▇
 prior     pull toward the middle                 50.0                 2% ▇
-          weighted average                     = 66.1
+          weighted average                     = 66.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
