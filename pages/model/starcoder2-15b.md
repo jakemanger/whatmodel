@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    34.1   2024-03-28   20% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    34.0   2024-03-28   16% ▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    34.1   2024-03-28   21% ▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    34.0   2024-03-28   17% ▇▇
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 46.3%    37.2   2024-02-29    8% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    37.5   2024-02-29    7% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    36.6   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    36.5   2024-02-29    6% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    42.5   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    38.8   2024-02-29    3% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    38.7   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    37.9   2024-02-29    2% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    36.8   2024-05-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    39.6   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    39.5   2024-05-07    5% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    36.8   2024-05-07   16% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    39.5   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    39.4   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    39.3   2024-05-07    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 36.7

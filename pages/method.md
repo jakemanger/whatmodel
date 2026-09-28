@@ -31,12 +31,12 @@ API speeds are our own measurements: we stream a fixed prompt to each model thre
 
 ## Benchmarks
 
-8848 results, each with a source link. Download the [raw results](../data/results.json), [benchmark definitions](../data/benchmarks.json), or [rankings as JSON](https://whatmodel.sh/api?format=json&all=1).
+8846 results, each with a source link. Download the [raw results](../data/results.json), [benchmark definitions](../data/benchmarks.json), or [rankings as JSON](https://whatmodel.sh/api?format=json&all=1).
 
 <pre>
 benchmark                                                 results  weight (a)  noise
 <a href="https://epoch.ai/benchmarks/use-this-data">FrontierMath tier 4 v2</a>                                         55        4.58   0.74
-<a href="https://epoch.ai/benchmarks/use-this-data">FrontierMath tiers 1–3 v2</a>                                      74        3.33   0.43
+<a href="https://epoch.ai/benchmarks/use-this-data">FrontierMath tiers 1–3 v2</a>                                      74        3.34   0.43
 <a href="https://epoch.ai/benchmarks/use-this-data">OTIS mock AIME 2024–2025</a>                                      184        3.30   0.99
 <a href="https://epoch.ai/benchmarks/use-this-data">MATH level 5</a>                                                   93        2.90   0.52
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero-shot)</a>                            24        2.82   0.83
@@ -91,7 +91,7 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MATH</a>                                                            6        1.59   0.67
 <a href="https://epoch.ai/benchmarks/use-this-data">SimpleQA Verified</a>                                              70        1.58   0.52
 <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1, 2024–May 1, 2025)</a>               16        1.57   0.34
-<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov 1, 2024)</a>                     33        1.55   0.25
+<a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1–Nov 1, 2024)</a>                     31        1.57   0.26
 <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecified) (card2-deepseek-ai-deep…</a>        3        1.55   0.65
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024</a>                                                       4        1.55   0.37
 <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Inception, Claude Sonnet 4 judge)</a>        48        1.54   0.64
@@ -110,7 +110,7 @@ benchmark                                                 results  weight (a)  n
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (openai-simple-evals-readme)</a>       17        1.41   0.23
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (gap-google-gemma3)</a>                              4        1.41   0.36
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (card-qwen--qwen3.5-2b)</a>               3        1.41   0.45
-<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                                              43        1.41   0.17
+<a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                                              43        1.40   0.17
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">ExploitGym (pass@1) (card2-deepseek-ai-deepseek-v4-1-fl…</a>        3        1.40   0.57
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card2-ibm-granite-granite-3-3-8b-instruct)</a>           6        1.40   0.44
 <a href="https://huggingface.co/datasets/onekq-ai/WebApp1K-Duo-React">WebApp1K-Duo-React pass@1 (onekq-ai)</a>                           43        1.37   0.55
@@ -166,8 +166,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (gap-google-gemma3)</a>                                   4        1.21   0.35
 <a href="https://github.com/wenet-e2e/WenetSpeech">WenetSpeech test_meeting error rate</a>                             4        1.20   0.53
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Arena-Hard v2 aggregate (card2-ibm-granite-granite-4-2-…</a>        3        1.20   0.42
-<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (card2-ibm-granite-granite-4-2-30b)</a>          3        1.20   0.39
 <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--Qwen2.5-7B-Instruct_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tasks, 20240328)</a>                     28        1.20   0.37
+<a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (card2-ibm-granite-granite-4-2-30b)</a>          3        1.20   0.39
 <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126">MathArena ArXivMath January 2026 (23 problems)</a>                 23        1.19   0.28
 <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speaker-similarity MOS (4 Engli…</a>       18        1.19   0.24
 <a href="https://aclanthology.org/2026.findings-acl.433/">T2I-ReasonBench (overall)</a>                                      14        1.19   0.26
@@ -177,13 +177,13 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU</a>                                                           23        1.18   0.23
 <a href="https://arxiv.org/html/2607.02770v1">MedXPertQA MM (gemma4-report)</a>                                   5        1.17   0.32
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">CLIcK Korean (Daekeun Kim)</a>                                     24        1.17   0.26
-<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md">VideoPhy-2 (human, joint SA &amp; PC)</a>                               6        1.17   0.30
 <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                                                4        1.17   0.52
+<a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md">VideoPhy-2 (human, joint SA &amp; PC)</a>                               6        1.17   0.30
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard</a>                                                 23        1.17   0.27
 <a href="https://www.tau-nlp.sites.tau.ac.il/commonsenseqa">CommonsenseQA</a>                                                   4        1.16   0.34
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">SEC-Bench Pro (pass@1) (card2-deepseek-ai-deepseek-v4-1…</a>        3        1.16   0.44
-<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">RULER 128k (card2-ibm-granite-granite-4-2-30b)</a>                  3        1.16   0.38
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (paper-2406.11409v2)</a>                                  5        1.16   0.34
+<a href="https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct/blob/497f1dca95ebdec98e41d517b9f060ee753c902f/README.md">RULER 128k (card2-ibm-granite-granite-4-2-30b)</a>                  3        1.16   0.38
 <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chinese naturalness MOS (N-MOS)</a>         4        1.16   0.43
 <a href="https://arxiv.org/html/2607.02770v1">HLE (gemma4-report)</a>                                             3        1.16   0.50
 <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision making (4 pathologies)</a>              4        1.15   0.33
@@ -200,10 +200,10 @@ benchmark                                                 results  weight (a)  n
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified) (report-2512.13961v2)</a>         3        1.12   0.40
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (paper-2308.12950v3)</a>                                      12        1.12   0.24
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (card-qwen--qwen3-next-80b-a3b-thinkin…</a>        4        1.12   0.37
+<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard">BrowserGym WebArena (AgentLab GenericAgent)</a>                     6        1.12   0.31
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OSWorld-Verified (card-qwen--qwen3.8-27b)</a>                       3        1.12   0.42
-<a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard">BrowserGym WebArena (AgentLab GenericAgent)</a>                     6        1.11   0.31
 <a href="https://huggingface.co/microsoft/Phi-4-reasoning">Arena-Hard (version/judge unspecified) (card-mistralai-…</a>        3        1.11   0.37
-<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (paper-2402.19173v1)</a>                                      13        1.11   0.25
+<a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (paper-2402.19173v1)</a>                                      13        1.11   0.24
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (card-qwen--qwen3-next-80b-a3b-thinking)</a>        4        1.11   0.35
 <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/RESULTS.md">KoBALT-700 (Daekeun Kim)</a>                                        6        1.11   0.32
 <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · Chinese 4-set CER mean (own…</a>        4        1.11   0.34
@@ -223,9 +223,9 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">DeepSWE v1.1 (resolved) (card2-deepseek-ai-deepseek-v4-…</a>        3        1.08   0.37
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AIME 2024 (card-deepseek-ai--deepseek-r1)</a>                       7        1.08   0.47
 <a href="https://arxiv.org/html/2406.14774v3#S5.T2">GeckoNum Task 1: exact number generation (human-annotat…</a>        4        1.08   0.37
+<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspect Evals)</a>                      9        1.07   0.29
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">VitaBench (card-qwen--qwen3.5-9b)</a>                               4        1.07   0.41
 <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canonical token/entity match (CT…</a>        6        1.07   0.36
-<a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, Inspect Evals)</a>                      9        1.07   0.29
 <a href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506">DocVQA (gap-google-gemma3)</a>                                      3        1.06   0.36
 <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (card-qwen--qwen3-next-80b-a3b-instruct)</a>        3        1.06   0.39
 <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5-TTS subset) · UTMOS (pred…</a>        3        1.06   0.46
@@ -259,7 +259,7 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (eleutherai-gpt-j-6b-card)</a>                            8        1.04   0.27
 <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard average (Miðeind, Sept 2026 s…</a>       31        1.04   0.48
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/README.md">HMMT February 2025 (card-qwen--qwen3.5-9b)</a>                      4        1.04   0.42
-<a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card2-ibm-granite-granite-4-2-30b)</a>                   3        1.03   0.36
+<a href="https://artofproblemsolving.com/wiki/index.php/2025_AIME_I">AIME 2025 (card2-ibm-granite-granite-4-2-30b)</a>                   3        1.04   0.36
 <a href="https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md">Terminal-Bench 2.1 (card2-deepseek-ai-deepseek-v4-1-fla…</a>        3        1.03   0.36
 <a href="https://arxiv.org/html/2602.17831v2">The Token Games Elo (10-model puzzle-duel tournament)</a>           8        1.03   0.27
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MathVista (testmini) (gap-google-gemma3)</a>                        3        1.03   0.36
@@ -341,8 +341,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">LVBench (card-qwen--qwen3.5-122b-a10b)</a>                          3        1.00   0.35
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified) (card-qwen--qwen3.5-2…</a>        3        1.00   0.38
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">FullStackBench (Chinese) (card-qwen--qwen3.5-122b-a10b)</a>         3        1.00   0.35
-<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (action completion)</a>               20        1.00   0.48
 <a href="https://huggingface.co/spaces/idsudd/open_asr_leaderboard_cl/blob/7dfb852bee82c9b602548abb33213449c360e31b/results.csv">Open ASR Leaderboard – Chilean Spanish · 3-dataset aver…</a>        5        1.00   0.31
+<a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 (action completion)</a>               20        1.00   0.48
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">PolyMATH (card-qwen--qwen3-next-80b-a3b-thinking)</a>               4        1.00   0.33
 <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech corpus WER</a>                          3        1.00   0.36
 <a href="https://huggingface.co/spaces/ESpeech/russian_asr_leaderboard/blob/cc62862c6f7d12840458f868a17a3058da7e639f/index.html">Russian ASR Leaderboard (N. Shmyrev test sets) · 11-dat…</a>        3        1.00   0.35
@@ -392,8 +392,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">PMC-VQA (card-qwen--qwen3.5-122b-a10b)</a>                          3        0.99   0.35
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (paper-2502.02737v1)</a>                             3        0.99   0.36
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">MMStar (card-qwen--qwen3.5-122b-a10b)</a>                           3        0.99   0.36
-<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR benchmark) · Standard G…</a>        4        0.99   0.36
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">τ²-bench aggregate (card-qwen--qwen3.5-9b)</a>                      4        0.99   0.63
+<a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect ASR benchmark) · Standard G…</a>        4        0.99   0.36
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">OmniDocBench 1.5 overall (higher is better) (card-qwen-…</a>        3        0.99   0.36
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">INCLUDE (card-qwen--qwen3-next-80b-a3b-thinking)</a>                4        0.99   0.33
 <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507/blob/6cbffae6d8e28b986a6b17bd36f42f9fa0f1f0a5/README.md">MMLU-ProX (card-qwen--qwen3-next-80b-a3b-instruct)</a>              3        0.99   0.35
@@ -426,8 +426,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwen-refined (card-qwen--qwen…</a>        4        0.98   0.33
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">GPQA (subset unspecified) (card-qwen--qwen3-next-80b-a3…</a>        3        0.98   0.36
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">NOVA-63 (card-qwen--qwen3.5-9b)</a>                                 4        0.98   0.33
-<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md">IFEval (aggregation unspecified) (card-qwen--qwen3-next…</a>        3        0.98   0.35
 <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (card-qwen--qwen3-next-80b-a3b-thinkin…</a>        4        0.98   0.35
+<a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md">IFEval (aggregation unspecified) (card-qwen--qwen3-next…</a>        3        0.98   0.35
 <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">τ²-bench aggregate (card-qwen--qwen3.5-122b-a10b)</a>               3        0.98   0.36
 <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md">MultiPL-E (card-qwen--qwen3-next-80b-a3b-instruct)</a>              3        0.98   0.36
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">ERQA (card-qwen--qwen3.5-122b-a10b)</a>                             3        0.98   0.36
@@ -472,15 +472,15 @@ benchmark                                                 results  weight (a)  n
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro">MMLU-Pro (gemma4-report)</a>                                        6        0.96   0.30
 <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash">Agents' Last Exam (pass@1, official scaffold) (card2-de…</a>        3        0.96   0.36
 <a href="https://arxiv.org/html/2607.02770v1">MMMU Pro (card-mistralai-mistral-small-4-119b-2603)</a>             3        0.96   0.38
-<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper run)</a>                          15        0.96   0.28
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP</a>                                                           16        0.96   0.26
+<a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, paper run)</a>                          15        0.96   0.28
 <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba code-switched speech · WE…</a>        5        0.96   0.32
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English short-form 10-set WER</a>                  4        0.96   0.33
 <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/README.md">CRUXEval-I (paper-2405.04324v1)</a>                                16        0.96   0.23
-<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/README.md">CRUXEval-I</a>                                                     23        0.95   0.30
 <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper large-v3 WER (speech-f5tts-r…</a>        4        0.95   0.34
 <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (paper-2302.13971v1)</a>                                       4        0.95   0.33
 <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (gap-google-gemma3)</a>                                     3        0.95   0.36
+<a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/README.md">CRUXEval-I</a>                                                     23        0.95   0.30
 <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecified) (card-mistralai-mistr…</a>        3        0.95   0.40
 <a href="https://allenai.org/data/arc">ARC Easy (paper-2309.05463v1)</a>                                   9        0.95   0.27
 <a href="https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md">HumanEval (paper-2502.02737v1)</a>                                  3        0.95   0.37
@@ -488,8 +488,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (FGA-BLIP2 overall alignment)</a>       15        0.95   0.24
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (paper-2502.02737v1)</a>                                       3        0.95   0.37
 <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long-form 4-set WER</a>                    4        0.95   0.34
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (paper-2502.02737v1)</a>                                  3        0.95   0.39
 <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro">MMLU-Pro (card2-ibm-granite-granite-4-2-30b)</a>                    3        0.95   0.36
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">HellaSwag (paper-2502.02737v1)</a>                                  3        0.95   0.39
 <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sources, 5,200 utterances) · c…</a>        3        0.95   0.38
 <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rating)</a>                               5        0.95   0.32
 <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (card-qwen--qwen3-next-80b-a3b-instruct)</a>        3        0.94   0.36
@@ -525,14 +525,14 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md">IFEval (aggregation unspecified) (card-qwen--qwen3-next…</a>        4        0.92   0.35
 <a href="https://arxiv.org/html/2607.02770v1">SciCode (gemma4-report)</a>                                         6        0.92   0.29
 <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive)</a>                                55        0.92   0.43
+<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (openai-simple-evals-readme)</a>           15        0.92   0.81
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-language mean WER</a>                   8        0.92   0.31
-<a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">SimpleQA (simple-evals) (openai-simple-evals-readme)</a>           15        0.91   0.81
 <a href="https://www.openslr.org/94">Multilingual LibriSpeech English test WER</a>                       4        0.91   0.34
 <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · English 3-set WER mean (own…</a>        4        0.91   0.34
 <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o judge)</a>                           20        0.91   0.30
-<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-science tasks, greedy)</a>           10        0.91   0.32
 <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utterance Thai CER (Typhoon Wh…</a>        3        0.91   0.37
 <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s cross-sentence · SIM-o (W…</a>        3        0.91   0.36
+<a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data-science tasks, greedy)</a>           10        0.91   0.32
 <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ total)</a>                              11        0.91   0.25
 <a href="https://www.openslr.org/12">LibriSpeech test-other WER</a>                                      4        0.91   0.35
 <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added languages · mean WER (Qwen-A…</a>        4        0.91   0.38
@@ -541,8 +541,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper large-v3 WER</a>                        10        0.91   0.26
 <a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">VoxPopuli English test WER</a>                                      4        0.90   0.35
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">ARC Challenge (paper-2309.05463v1)</a>                              9        0.90   0.26
-<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive) (card2-ibm-granite-gran…</a>        3        0.90   0.37
 <a href="https://huggingface.co/ibm-granite/granite-4.0-h-small/blob/b8c0982bab7fde4eb48110f5a069527c008fab39/README.md">CRUXEval-O (paper-2405.04324v1)</a>                                16        0.90   0.22
+<a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archive) (card2-ibm-granite-gran…</a>        3        0.90   0.37
 <a href="https://huggingface.co/HuggingFaceTB/SmolLM3-3B/blob/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md">IFEval (aggregation unspecified) (paper-2502.02737v1)</a>           3        0.89   0.40
 <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">BFCL v3 (card-qwen--qwen3-next-80b-a3b-thinking)</a>                4        0.89   0.35
 <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) · 9-language mean WER</a>               8        0.89   0.33
@@ -632,11 +632,11 @@ benchmark                                                 results  weight (a)  n
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (paper-2204.06745v1)</a>                                 6        0.76   0.30
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">PIQA (paper-2310.06825v1)</a>                                       3        0.76   0.38
 <a href="https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/dc4d348443bc740c68e2d77492492c11606384d5/README.md">NOVA-63 (card-qwen--qwen3.5-2b)</a>                                 3        0.76   0.39
-<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh macro mean error</a>                5        0.75   0.33
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot CoT) (openai-simple-evals…</a>       17        0.75   0.25
+<a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-zh macro mean error</a>                5        0.75   0.33
 <a href="https://github.com/verliapp/stt-benchmark/blob/bfb51427ba12380ff1e3620a8333c10f18fa4280/results/results_librispeech.json">verli STT benchmark · LibriSpeech test-clean WER</a>                4        0.75   0.40
-<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (paper-2310.06825v1)</a>                                 3        0.75   0.38
 <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (report-2512.13961v2)</a>                                     3        0.75   0.38
+<a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (paper-2310.06825v1)</a>                                 3        0.75   0.38
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">MMLU (card2-ibm-granite-granite-3-3-8b-instruct)</a>                6        0.75   0.32
 <a href="https://nlp.cs.washington.edu/triviaqa/">TriviaQA (paper-2310.06825v1)</a>                                   3        0.75   0.38
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">BIG-Bench Hard (card2-ibm-granite-granite-3-3-8b-instru…</a>        6        0.75   0.31
@@ -679,8 +679,8 @@ benchmark                                                 results  weight (a)  n
 <a href="https://allenai.org/data/arc">ARC Easy</a>                                                       20        0.68   0.20
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">WinoGrande (paper-2309.05463v1)</a>                                 9        0.68   0.28
 <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>                                    15        0.67   0.26
-<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice cloning · ECAPA speaker s…</a>       11        0.67   0.28
 <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MGSM (simple-evals) (openai-simple-evals-readme)</a>               17        0.67   0.32
+<a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice cloning · ECAPA speaker s…</a>       11        0.67   0.28
 <a href="https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md">TruthfulQA MC2</a>                                                 22        0.66   0.22
 <a href="https://www.openslr.org/12">LibriSpeech test-clean WER</a>                                     39        0.66   0.15
 <a href="https://arxiv.org/html/2609.00654v1">NTCIR SciClaimEval Subtask 1 pair-accuracy (dev, single…</a>        9        0.66   0.30

@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               33.8%    36.5   2024-03-28   31% ▇▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       48.8%    35.3   2024-03-28   25% ▇▇▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  39.4%    34.5   2024-05-07   25% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      49.4%    33.9   2024-01-31   10% ▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      49.4%    33.8   2024-01-31   10% ▇
                         <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 42.7%    34.4   2024-01-31    9% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 35.3

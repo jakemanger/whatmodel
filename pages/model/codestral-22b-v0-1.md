@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 43.1** ±3.5 · #264 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.2** ±3.4 · #264 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Codestral-22B-v0.1_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  72.8%    43.4   2024-10-19   55% ▇▇▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Codestral-22B-v0.1_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  72.8%    43.5   2024-10-19   55% ▇▇▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  71.0%    41.8   2024-07-02   39% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 43.1
+                        weighted average                       = 43.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~13.85GB   43.1
-8-bit q8_0     ~27.2GB   43.1
+4-bit q4_k_m  ~13.85GB   43.2
+8-bit q8_0     ~27.2GB   43.2
 </pre>
 
 ```sh

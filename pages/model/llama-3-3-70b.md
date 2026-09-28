@@ -6,7 +6,7 @@
 
 Meta · released 2024-12 · 70B params · llama-3.3
 
-**score 51.3** ±0.8 · #199 of 404 · from 27 benchmark results across 16 sources
+**score 51.3** ±0.8 · #198 of 404 · from 27 benchmark results across 16 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -18,17 +18,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             85.9%    53.3   2025-10-08    8% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   85.8%    55.3   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            93.6%    55.2   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            93.6%    55.3   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   66.1%    47.2   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   36.5%    44.1   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            48.2%    59.0   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            48.2%    59.0   2025-10-08    2% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        90.8%    60.8   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        71.8%    50.6   2025-10-08    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     41.6%    48.4   2025-01-27   10% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     47.4%    52.8   2025-01-27    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          5.1%    45.1   2025-02-25    3% ▇
 <a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   31.8%    49.4   2024-12-26   12% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.6    52.2   2026-09-13    9% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.6    52.2   2026-09-13   10% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/ifeval_results.jsonl">Arabic IFEval prompt-level (I…</a>   58.2%    49.0   2026-04-06    3% ▇
                         <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   52.1%    56.6   2025-09-29    2% ▇
 <a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   83.9%    54.6   2025-07-04    4% ▇

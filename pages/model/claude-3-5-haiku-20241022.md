@@ -6,7 +6,7 @@
 
 Anthropic · released 2024-10 · proprietary
 
-**score 50.2** ±0.8 · comparison only: no current run option verified · from 15 benchmark results across 8 sources
+**score 50.3** ±0.8 · comparison only: no current run option verified · from 15 benchmark results across 8 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -32,7 +32,7 @@ source                  test                             score  implies  date   
 <a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>   77.6%    60.8   2025-01-31    1% ▇
 <a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   76.5%    42.9   2025-07-02    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 50.2
+                        weighted average                        = 50.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

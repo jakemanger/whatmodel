@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 10.31B params · falcon-llm
 
-**score 45.7** ±4.2 · #242 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.7** ±4.2 · #243 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 

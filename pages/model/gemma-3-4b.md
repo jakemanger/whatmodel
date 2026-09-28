@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 4.3B params · gemma
 
-**score 42.1** ±0.8 · #271 of 404 · from 36 benchmark results across 11 sources
+**score 42.2** ±0.8 · #270 of 404 · from 36 benchmark results across 11 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -50,10 +50,10 @@ source                  test                             score  implies  date   
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   32.1%    35.2   2026-05-02    4% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   67.3%    37.8   2025-04-04    2% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   49.1%    38.8   2026-09-19    2% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   28.6%    41.3   2025-04-28    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   28.6%    41.4   2025-04-28    2% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   19.6%    37.5   2025-12-16    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 42.1
+                        weighted average                        = 42.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -77,9 +77,9 @@ api (DeepInfra) · $0.063/M blended · $0.05 in / $0.1 out per 1M tokens · [dee
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~3.08GB   42.1
-4-bit QAT qat  ~3.08GB   42.1
-8-bit q8_0     ~5.66GB   42.1
+4-bit q4_k_m   ~3.08GB   42.2
+4-bit QAT qat  ~3.08GB   42.2
+8-bit q8_0     ~5.66GB   42.2
 </pre>
 
 ```sh

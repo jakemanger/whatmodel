@@ -20,12 +20,12 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       29.3%    28.0   2024-03-28   17% ▇▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  27.8%    28.7   2024-05-07   17% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    30.4   2024-05-07    6% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    29.2   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    29.1   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    28.7   2024-05-07    4% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       28.7%    27.8   2024-02-29    8% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       28.7%    27.7   2024-02-29    8% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         22.7%    30.2   2024-02-29    7% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            53.1%    29.2   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           39.7%    34.5   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           39.7%    34.4   2024-02-29    6% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 29.3
 </pre>

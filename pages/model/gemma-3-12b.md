@@ -21,7 +21,7 @@ source                  test                             score  implies  date   
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             47.9%    49.3   2026-09-25    4% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMLU-Pro (lab)</a>                   60.6%    51.7   2026-09-25    4% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                      94.4%    49.5   2026-09-25    4% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                  85.4%    50.4   2026-09-25    4% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                  85.4%    50.4   2026-09-25    3% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MATH (subset unspecified) (la…</a>   83.8%    47.9   2026-09-25    3% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                       73.0%    49.4   2026-09-25    3% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     87.1%    51.2   2026-09-25    3% ▇

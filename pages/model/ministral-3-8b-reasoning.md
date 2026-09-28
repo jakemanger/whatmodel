@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  43.1%    46.3   2026-05-02   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  43.1%    46.4   2026-05-02   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
                         weighted average                       = 46.6
 </pre>

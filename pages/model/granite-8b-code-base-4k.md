@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 8.05B params · apache-2.0
 
-**score 35.4** ±1.4 · comparison only: no current run option verified · from 6 benchmark results across 1 source
+**score 35.3** ±1.4 · comparison only: no current run option verified · from 6 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1">MATH (lab)</a>                      21.4%    40.0   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">GSM8K (lab)</a>                     61.9%    43.6   2024-05-07    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 35.4
+                        weighted average                       = 35.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

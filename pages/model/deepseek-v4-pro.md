@@ -6,7 +6,7 @@
 
 DeepSeek · released 2026-08 · 1600B params (49B active) · mit
 
-**score 73.0** ±0.8 · #28 of 404 · from 26 benchmark results across 5 sources
+**score 72.9** ±0.8 · #28 of 404 · from 26 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 
@@ -23,7 +23,7 @@ source                  test                             score  implies  date   
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                52.9%    74.1   2026-08-27    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     43.0%    79.1   2026-08-19    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            47.0%    81.6   2026-08-18    1% ▇
-<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>    62.7%    72.9   2026-09-10    3% ▇
+<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>    62.7%    72.8   2026-09-10    3% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                   83.3%    73.8   2026-09-10    3% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.…</a>   43.2%    72.6   2026-09-10    3% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>         87.9%    74.4   2026-09-10    2% ▇
@@ -43,7 +43,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>   92.6%    66.1   2026-09-07    3% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   51.2%    72.0   2026-09-08    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 73.0
+                        weighted average                        = 72.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -69,7 +69,7 @@ api (Deep Infra) · $1.63/M blended · $1.3 in / $2.6 out per 1M tokens · [deep
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~960.5GB   73.0
+4-bit ud-q4_k_xl  ~960.5GB   72.9
 </pre>
 
 ```sh

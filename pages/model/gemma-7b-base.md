@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               23.0%    30.7   2024-03-28   32% ▇▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       31.7%    29.0   2024-03-28   26% ▇▇▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  34.4%    32.1   2024-05-07   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            24.1%    41.5   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            24.1%    41.4   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           53.3%    40.8   2024-05-07    2% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      44.4%    31.0   2024-06-19    5% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 32.3%    29.1   2024-06-19    5% ▇

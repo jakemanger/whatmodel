@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · 2.03B params · apache-2.0
 
-**score 42.1** ±1.1 · #270 of 404 · from 23 benchmark results across 6 sources
+**score 42.1** ±1.1 · #271 of 404 · from 23 benchmark results across 6 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
 

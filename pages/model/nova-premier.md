@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source          test                            score  implies  date        weight
-<a name="massive-agents-paper"></a>MASSIVE-Agents  <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    56.6   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="massive-agents-paper"></a>MASSIVE-Agents  <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    56.7   2026-09-25   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior           pull toward the middle                   50.0                 4% ▇
                 weighted average                       = 56.4
 </pre>

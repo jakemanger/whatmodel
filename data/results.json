@@ -146827,26 +146827,6 @@
     "note": "LiveCodeBench author-maintained website release; entry 'Yi-Coder-9B-Chat'; model_name=01-ai/Yi-Coder-9B-Chat; link https://huggingface.co/01-ai/Yi-Coder-9B-Chat. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=23.5400516796%; website rounding=23.5%; divided by 100. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
   },
   {
-    "model": "mixtral-8x7b-instruct-v0-1",
-    "bench": "livecodebench-official-20240101-20241101",
-    "score": 0.122,
-    "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
-    "source_id": "livecodebench-website-20241226",
-    "by": "independent",
-    "date": "2024-12-26",
-    "note": "LiveCodeBench author-maintained website release; entry 'Mixtral-8x7B-Ins'; model_name=open-mixtral-8x7b; link https://mistral.ai/news/mixtral-8x7b/. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=12.1705426357%; website rounding=12.2%; divided by 100. Mistral API id open-mixtral-8x7b serves the open-weight Mixtral-8x7B-Instruct-v0.1 checkpoint. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
-  },
-  {
-    "model": "mixtral-8x22b-instruct-v0-1",
-    "bench": "livecodebench-official-20240101-20241101",
-    "score": 0.237,
-    "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
-    "source_id": "livecodebench-website-20241226",
-    "by": "independent",
-    "date": "2024-12-26",
-    "note": "LiveCodeBench author-maintained website release; entry 'Mixtral-8x22B-Ins'; model_name=open-mixtral-8x22b; link https://mistral.ai/news/mixtral-8x22b/. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=23.7467700258%; website rounding=23.7%; divided by 100. Mistral API id open-mixtral-8x22b serves the open-weight Mixtral-8x22B-Instruct-v0.1 checkpoint. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance."
-  },
-  {
     "model": "granite-3-1-2b",
     "bench": "arena-hard-unspecified",
     "score": 0.233,

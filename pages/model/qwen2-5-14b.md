@@ -19,9 +19,9 @@ source                  test                            score  implies  date    
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                            81.1%    48.9   2025-10-08   18% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                  78.4%    48.8   2025-10-08   13% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                           83.9%    43.5   2025-10-08    8% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                  70.8%    52.1   2025-10-08    7% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                  70.8%    52.2   2025-10-08    7% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>  34.6%    43.2   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                           21.1%    36.2   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                           21.1%    36.3   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>       82.4%    48.5   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>       70.6%    49.9   2025-10-08    3% ▇
 <a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  69.6%    48.4   2025-03-01   10% ▇

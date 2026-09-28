@@ -18,9 +18,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  30.4%    30.1   2024-05-07   43% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      29.6%    27.6   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    29.2   2024-05-07   14% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    29.1   2024-05-07   14% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            30.4%    25.6   2024-05-07   11% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    30.6   2024-06-19    9% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    30.5   2024-06-19    9% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 31.1%    28.4   2024-06-19    9% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 29.2

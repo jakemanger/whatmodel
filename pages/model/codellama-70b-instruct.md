@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                47.7%    42.6   2024-03-28   27% ▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        66.5%    41.6   2024-03-28   22% ▇▇▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    43.3   2024-05-07   22% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    40.9   2024-01-31    8% ▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    40.8   2024-01-31    8% ▇
                         <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    46.6   2024-01-31    8% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1118.9    27.9   2026-09-13   12% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
