@@ -1,0 +1,29 @@
+whatmodel.sh notice for quant-redhatai-deepseek-r1-distill-llama-70b-fp8-dynamic
+Source: RedHatAI/DeepSeek-R1-Distill-Llama-70B-FP8-dynamic model card (Red Hat AI / Neural Magic)
+Pinned URL: https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Llama-70B-FP8-dynamic/blob/fb3637a1165cec3832958bd72ebbe04021601489/README.md
+Licence declaration: README YAML metadata line 2: "license: mit" (no LICENSE file in the repository at this revision).
+Licence text below: SPDX standard MIT text, https://raw.githubusercontent.com/spdx/license-list-data/31ba1a50e5397e00a304dbadc76531740e89ee48/text/MIT.txt
+No copyright line is published in the repository; the MIT permission notice is reproduced with the SPDX placeholder line.
+Changes: selected numerical cells transcribed; percentages / 100; retention ratios recomputed; no endorsement.
+Note: Weights derive from Llama 3.x and remain subject to their upstream licence; the MIT declaration is relied on only for Red Hat's own card text and evaluation numbers.
+
+========================================================================
+
+MIT License
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.

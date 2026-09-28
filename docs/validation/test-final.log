@@ -1,0 +1,20 @@
+
+> whatmodel@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ source scopes reject lookalike hosts, sibling repositories, and unreviewed archive members (6.151542ms)
+✔ unknown API prices are visible without a budget and excluded by any finite budget (0.492083ms)
+✔ empty categories render an explicit gap, not a fabricated ranking (0.661709ms)
+✔ self-reported results retain the evaluator identity of their source (1.581209ms)
+✔ disconnected studies stay separate until an evaluated model connects them (0.371125ms)
+✔ sparse unrelated evaluators are not pooled into a calibration series (1.236583ms)
+✔ edit error ratios above 100% retain their magnitude and ordering (0.171167ms)
+✔ all published benchmark and price evidence has an approved licence scope (542.010584ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 677.992666

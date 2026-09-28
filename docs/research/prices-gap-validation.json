@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checks": 1079,
+  "checked_at": "2026-09-25T10:42:05.967064+00:00",
+  "shared_models_sha256": "19aa741023c95a2cdfb6225a6811e39ac9426991821e33462fdef66fe8509c78",
+  "summary": {
+    "api_patches": 29,
+    "price_additions": 12,
+    "url_only_additions": 17,
+    "context_additions": 36,
+    "original_models_touched": 57,
+    "concurrent_conflicts_omitted": 0,
+    "price_by_category": {
+      "llm": 8,
+      "tts": 1,
+      "stt": 0,
+      "image": 2,
+      "video": 1
+    }
+  },
+  "coverage": {
+    "before": {
+      "original_models": 340,
+      "original_priced": 169,
+      "original_with_context": 147,
+      "context_present_in_original_context_subset": 144,
+      "original_context_subset_size": 206,
+      "original_without_api_url": 95
+    },
+    "after": {
+      "original_models": 340,
+      "original_priced": 181,
+      "original_with_context": 183,
+      "context_present_in_original_context_subset": 180,
+      "original_context_subset_size": 206,
+      "original_without_api_url": 74
+    }
+  },
+  "mutations": "Only /tmp/whatmodel-expansion artifacts written; no shared data/app edits, API inference, pushes or workflows."
+}

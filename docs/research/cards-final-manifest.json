@@ -1,0 +1,47 @@
+{
+  "status": "frozen",
+  "rows": 69,
+  "models": 8,
+  "files": {
+    "cards-final-ready.json": {
+      "path": "/tmp/whatmodel-expansion/cards-final-ready.json",
+      "sha256": "ed815e5eb5b43fa360aa940b4007446e23112ce6d28dff5e07e8bdf9acdef121",
+      "bytes": 365165
+    },
+    "cards-final-scope.md": {
+      "path": "/tmp/whatmodel-expansion/cards-final-scope.md",
+      "sha256": "b03f405d035d3a0a9609f7e5d474a80eb5475cae4ffb37ee784cbc31d9a296d9",
+      "bytes": 5645
+    },
+    "cards-final-blockers.json": {
+      "path": "/tmp/whatmodel-expansion/cards-final-blockers.json",
+      "sha256": "dc99f085db2649a9a9bf169b3b9be3e538111216b40c05be826e831e248fa342",
+      "bytes": 2270
+    },
+    "cards-final-validation.json": {
+      "path": "/tmp/whatmodel-expansion/cards-final-validation.json",
+      "sha256": "cfc20cdf37f12f594962e1c09256222923386709010829499df1f7e8c47ec609",
+      "bytes": 8596
+    },
+    "cards-final-NOTICE.txt": {
+      "path": "/tmp/whatmodel-expansion/cards-final-NOTICE.txt",
+      "sha256": "e342a972588cfb8d67b07475d26089736ac7af900e28cb31ab935b9b08c60425",
+      "bytes": 5267
+    },
+    "cards-final-LICENSE-CC-BY-4.0.txt": {
+      "path": "/tmp/whatmodel-expansion/cards-final-LICENSE-CC-BY-4.0.txt",
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657
+    },
+    "cards-final-LICENSE-MIT.txt": {
+      "path": "/tmp/whatmodel-expansion/cards-final-LICENSE-MIT.txt",
+      "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5",
+      "bytes": 1078
+    },
+    "cards-final-LICENSE-Apache-2.0-ERNIE.txt": {
+      "path": "/tmp/whatmodel-expansion/cards-final-LICENSE-Apache-2.0-ERNIE.txt",
+      "sha256": "e8b21073737fa3549e35708e35365424f3b86c521871cabe138429f03b62e424",
+      "bytes": 11438
+    }
+  }
+}

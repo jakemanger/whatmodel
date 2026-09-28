@@ -1,0 +1,240 @@
+
+== llm set 1/1: 177 scored models, 1323 cells across 72 benchmark keys
+  frontiermath-tier-4-v2             n= 45  a= 3.56  noise=0.50
+  epoch-mystery-games                n= 54  a= 2.82  noise=1.17
+  epoch-ebr                          n= 22  a= 2.30  noise=0.54
+  otis-mock-aime                     n=107  a= 2.19  noise=0.73
+  frontiermath                       n= 55  a= 2.16  noise=0.22
+  math-level-5                       n= 26  a= 1.96  noise=0.43
+  aider-polyglot                     n= 14  a= 1.92  noise=0.44
+  kmmlu-hard-kim                     n= 17  a= 1.88  noise=0.59
+  tau2-retail-gemma4@gemma4-report   n=  6  a= 1.83  noise=0.65
+  epoch-furniture                    n= 26  a= 1.72  noise=0.32
+  humaneval-plus                     n=  4  a= 1.72  noise=0.50
+  massive-agents-ast-10k             n=  7  a= 1.69  noise=0.35
+  aime-2026@gemma4-report            n=  6  a= 1.69  noise=0.37
+  tau2-telecom-gemma4@gemma4-report  n=  6  a= 1.64  noise=0.56
+  epoch-mirrorcode                   n=  8  a= 1.63  noise=0.80
+  epoch-chess                        n= 96  a= 1.59  noise=1.14
+  gpqa-diamond                       n=105  a= 1.58  noise=0.65
+  aime-2024                          n=  4  a= 1.49  noise=0.35
+  zebralogic-zeroeval                n=  9  a= 1.43  noise=0.32
+  gpqa-diamond@gemma4-report         n=  6  a= 1.40  noise=0.31
+  gpqa-diamond@card-deepseek-ai--deepseek-r1 n=  7  a= 1.33  noise=0.29
+  lmarena-webdev                     n= 79  a= 1.32  noise=0.32
+  aime-2025                          n=  4  a= 1.32  noise=0.36
+  terminalbench-hard-gemma4@gemma4-report n=  6  a= 1.29  noise=0.39
+  bbeh-micro@gemma4-report           n=  6  a= 1.28  noise=0.31
+  simpleqa-verified                  n= 55  a= 1.27  noise=0.53
+  kmmlu-pro-kim                      n=  6  a= 1.27  noise=0.42
+  livecodebench-unversioned@card-deepseek-ai--deepseek-r1 n=  6  a= 1.22  noise=0.30
+  cruxeval-zeroeval                  n=  6  a= 1.21  noise=0.30
+  gsm8k-zeroeval                     n=  3  a= 1.21  noise=0.38
+  aime-2024@card-deepseek-ai--deepseek-r1 n=  6  a= 1.21  noise=0.30
+  hle-gemma4-report@gemma4-report    n=  3  a= 1.20  noise=0.46
+  livecodebench-official-20240101-20241101 n= 10  a= 1.17  noise=0.26
+  mrcr-v2-8needle-128k@gemma4-report n=  6  a= 1.17  noise=0.34
+  livecodebench-v6@gemma4-report     n=  6  a= 1.16  noise=0.31
+  bbh                                n=  4  a= 1.13  noise=0.34
+  agieval-en@report-2512.13961v2     n=  3  a= 1.12  noise=0.36
+  livecodebench-v3                   n=  4  a= 1.12  noise=0.52
+  ifbench@gemma4-report              n=  6  a= 1.11  noise=0.31
+  tau2-airline-gemma4@gemma4-report  n=  6  a= 1.10  noise=0.34
+  ifbench-unspecified@report-2512.13961v2 n=  3  a= 1.10  noise=0.40
+  evalperf-correctness-20240328      n=  7  a= 1.10  noise=0.32
+  math-vision@gemma4-report          n=  6  a= 1.09  noise=0.29
+  mmlu-redux-zeroeval                n=  6  a= 1.08  noise=0.30
+  zebralogic                         n=  4  a= 1.07  noise=0.43
+  medxpertqa-mm@gemma4-report        n=  5  a= 1.06  noise=0.31
+  ifeval-gemma4-report@gemma4-report n=  6  a= 1.05  noise=0.35
+  infographicvqa@gemma4-report       n=  6  a= 1.04  noise=0.33
+  kobalt-700-kim                     n=  6  a= 1.01  noise=0.33
+  swe-bench-verified                 n= 22  a= 1.01  noise=0.25
+  alpacaeval2-lc@report-2512.13961v2 n=  3  a= 1.00  noise=0.37
+  ifeval-unspecified                 n=  4  a= 0.99  noise=0.35
+  popqa@report-2512.13961v2          n=  3  a= 0.96  noise=0.35
+  math-500@card-deepseek-ai--deepseek-r1 n=  6  a= 0.93  noise=0.30
+  livecodebench-official-20240801-20250501 n=  3  a= 0.92  noise=0.37
+  tau2-verified-gpt51-user           n= 12  a= 0.92  noise=0.46
+  click-korean-kim                   n= 17  a= 0.87  noise=0.31
+  mmmu-pro@gemma4-report             n=  6  a= 0.86  noise=0.31
+  musr-ko-kim                        n=  6  a= 0.85  noise=0.37
+  haerae-korean-kim                  n= 16  a= 0.83  noise=0.28
+  mmlu                               n=  4  a= 0.81  noise=0.34
+  mmmlu@gemma4-report                n=  6  a= 0.79  noise=0.30
+  mmlu-pro@gemma4-report             n=  6  a= 0.78  noise=0.32
+  scicode@gemma4-report              n=  6  a= 0.75  noise=0.30
+  bfcl-v4                            n= 39  a= 0.73  noise=0.42
+  mbpp-plus@report-2512.13961v2      n=  3  a= 0.73  noise=0.38
+  gpqa-unspecified                   n=  4  a= 0.69  noise=0.34
+  omnidocbench-1-5@gemma4-report     n=  6  a= 0.64  noise=0.31
+  lmarena-search                     n= 19  a= 0.47  noise=0.21
+  lmarena-text                       n=135  a= 0.43  noise=0.16
+  lmarena-vision                     n= 60  a= 0.34  noise=0.17
+  lmarena-document                   n= 33  a= 0.31  noise=0.17
+  leave-one-out: r = 0.909 (n=1298)
+    acc: median abs error 4.1, p90 15.5 percentage points (n=984)
+    err: median abs error 2.6, p90 8.5 percentage points (n=6)
+    elo: median abs error 21.7, p90 77.5 Elo (n=308)
+  top 5: claude-opus-5-5 84, gpt-6-astra 81, claude-fable-5-1 77, gpt-6-sol 75, gpt-5-6-sol 74
+
+== image set 1/3: 38 scored models, 50 cells across 2 benchmark keys
+  lmarena-image                      n= 34  a= 0.64  noise=0.14
+  qwen-image-bench-v1                n= 16  a= 0.32  noise=0.21
+  leave-one-out: r = 0.749 (n=24)
+    acc: median abs error 2.6, p90 6.0 percentage points (n=12)
+    elo: median abs error 29.9, p90 93.1 Elo (n=12)
+  top 5: gpt-image-2-5-sunburst 85, gpt-image-2-5-flare 82, gpt-image-2 79, mai-image-2-6 73, grok-imagine-image-2 68
+
+== image set 2/3: 4 scored models, 4 cells across 1 benchmark keys
+  geneval                            n=  4  a= 0.41  noise=0.35
+  top 5: deepfloyd-if-xl 70, sdxl 56, sd-2-1 45, sd-1-5 29
+
+== image set 3/3: 3 scored models, 27 cells across 9 benchmark keys
+  geneval@visual-mage-flow           n=  3  a= 0.52  noise=0.38
+  longtext-en@visual-mage-flow       n=  3  a= 0.43  noise=0.38
+  cvtg-2k-word-accuracy@visual-mage-flow n=  3  a= 0.35  noise=0.39
+  longtext-cn@visual-mage-flow       n=  3  a= 0.31  noise=0.39
+  tiif-testmini-long@visual-mage-flow n=  3  a= 0.28  noise=0.39
+  dpg-bench@visual-mage-flow         n=  3  a= 0.26  noise=0.40
+  oneig-cn@visual-mage-flow          n=  3  a= 0.24  noise=0.40
+  tiif-testmini-short@visual-mage-flow n=  3  a= 0.24  noise=0.40
+  oneig-en@visual-mage-flow          n=  3  a= 0.24  noise=0.40
+  leave-one-out: r = 0.319 (n=27)
+    acc: median abs error 10.5, p90 34.7 percentage points (n=27)
+  top 5: mage-flow 68, mage-flow-turbo 50, mage-flow-base 32
+
+== video set 1/1: 44 scored models, 98 cells across 7 benchmark keys
+  rapidata-physics-i2v-reference     n= 20  a= 1.19  noise=0.29
+  rapidata-camera-i2v                n=  8  a= 1.08  noise=0.50
+  vgi-bench-i2v                      n=  8  a= 0.75  noise=0.37
+  lmarena-video                      n= 23  a= 0.69  noise=0.22
+  physics-iq-verified-i2v-bpp        n=  6  a= 0.68  noise=0.34
+  lmarena-video-i2v                  n= 21  a= 0.67  noise=0.22
+  humanscore-t2v                     n= 12  a= 0.25  noise=0.36
+  leave-one-out: r = 0.749 (n=83)
+    acc: median abs error 10.6, p90 17.6 percentage points (n=18)
+    elo: median abs error 36.5, p90 128.8 Elo (n=65)
+  top 5: gemini-omni-1-1-flash 79, gemini-omni-flash 72, minimax-h3 71, flux-3-video 70, happyhorse-1-1 70
+
+== tts set 1/3: 24 scored models, 50 cells across 9 benchmark keys
+  amharic-addis-primary87-cer        n=  7  a= 1.23  noise=0.28
+  emergent-tts-6cat-stable-preference n= 11  a= 1.14  noise=0.23
+  voxtral-tts-minimax9-speaker       n=  3  a= 1.13  noise=0.37
+  voxtral-tts-seed-reported-speaker  n=  3  a= 1.11  noise=0.37
+  vibevoice-mit-figure-preference-mos n=  3  a= 0.97  noise=0.36
+  vapi-humanness-bt-20260925         n=  6  a= 0.88  noise=0.33
+  voxtral-tts-minimax9-wer           n=  3  a= 0.82  noise=0.39
+  voxtral-tts-seed-reported-wer      n=  3  a= 0.79  noise=0.40
+  emergent-tts-6cat-stable-wer       n= 11  a= 0.27  noise=0.29
+  leave-one-out: r = 0.388 (n=39)
+    acc: median abs error 15.2, p90 24.9 percentage points (n=17)
+    err: median abs error 1.9, p90 17.2 percentage points (n=19)
+    elo: median abs error 70.1, p90 151.0 Elo (n=3)
+  top 5: gemini-3-1-flash-tts-preview 77, azure-ameha-neural 76, azure-mekdes-neural 73, addis-voice-2 72, mms-tts-amh 66
+
+== tts set 2/3: 7 scored models, 7 cells across 1 benchmark keys
+  cn-newstts-v01-strict              n=  7  a= 1.02  noise=0.27
+  top 5: seed-tts-2-0-standard 76, azure-neural-tts-xiaoxiao 63, google-chirp-3-hd 53, minimax-speech-2-8-hd 50, cosyvoice-v3-plus 45
+
+== tts set 3/3: 4 scored models, 4 cells across 1 benchmark keys
+  ttsds-v1-default                   n=  4  a= 0.37  noise=0.35
+  top 5: tortoise-tts-v2 63, xtts-v2 60, openvoice-v2 53, metavoice-1b-v0-1 25
+
+== stt set 1/1: 22 scored models, 78 cells across 13 benchmark keys
+  gigaspeechbench-en-accents6-macro  n=  5  a= 1.08  noise=0.34
+  voxtral-rt-2026-mcv12              n=  3  a= 1.05  noise=0.37
+  voxtral-rt-2026-fleurs13           n=  3  a= 1.01  noise=0.35
+  stt-ru-vakovalskii-rulibrispeech   n=  3  a= 1.00  noise=0.36
+  stt-ru-vakovalskii-fleurs          n=  3  a= 1.00  noise=0.38
+  stt-ru-vakovalskii-podlodka        n=  3  a= 1.00  noise=0.36
+  open-asr-longform-wer              n= 11  a= 1.00  noise=0.24
+  gigaspeechbench-en-domain12-bwer   n=  5  a= 0.99  noise=0.31
+  voxtral-rt-2026-en-short           n=  4  a= 0.98  noise=0.33
+  voxtral-rt-2026-en-long            n=  4  a= 0.97  noise=0.33
+  gigaspeechbench-arabic7-macro      n=  6  a= 0.88  noise=0.32
+  open-asr-multilingual-wer          n= 11  a= 0.25  noise=0.28
+  open-asr-wer                       n= 17  a= 0.11  noise=0.22
+  leave-one-out: r = 0.528 (n=78)
+    err: median abs error 1.3, p90 7.9 percentage points (n=78)
+  top 5: elevenlabs-scribe-v2 61, speechmatics-enhanced 61, qwen3-asr-1-7b 60, cohere-transcribe-03-2026 60, google-chirp-3 59
+
+api without a price: google-chirp-3, speechmatics-enhanced, parakeet-tdt-0-6b-v3, voxtral-small-24b, voxtral-mini-3b, qwen3-asr-1-7b, gemini-omni-flash, wan-3-0, seedance-2-0, wan-2-7, kling-3-0, kling-2-6-pro, hailuo-2-3, vidu-q3-pro, pixverse-v5-6, seedance-1-5-pro, pika-2-2, wan-2-2-a14b, hunyuanvideo-1-5, mochi-1, gpt-image-2-5-sunburst, gpt-image-2-5-flare, muse-image, seedream-5-0-pro, seedream-4-0, qwen-image-3-0-pro, flux-2-max, flux-2-pro, imagen-4-ultra, recraft-v4, wan-2-6-t2i, qwen-image, qwen-image-2512, z-image-turbo, hunyuanimage-3-0, sd-3-5-large, cartesia-sonic-3-6, gemini-3-8-flash-tts, gemini-3-8-flash-lite-tts, qwen-audio-3-0-tts-plus, speechify-simba-3-2, elevenlabs-v3-conversational, elevenlabs-v3, elevenlabs-multilingual-v2, elevenlabs-flash-v2-5, elevenlabs-turbo-v2-5, minimax-speech-2-8-hd, minimax-speech-2-8-turbo, smallest-lightning-v3-1-pro, hume-octave-2, hume-octave, azure-hd-2-5, google-chirp-3-hd, openaudio-s1, kokoro-82m, chatterbox, fish-audio-s2-pro, openaudio-s1-mini, higgs-audio-v3-tts, zonos-v0-1, breeze-tts-2, assemblyai-universal-3-5-pro, mai-transcribe-2, gemini-3-5-transcribe, grok-voice-transcribe-2, gladia-solaria-3, soniox-v5-async, ltx-2-5, wan-2-2-5b, hunyuanvideo, cogvideox-5b, sdxl
+
+retired (fit only, not listed): veo-3, sora-2, sora-2-pro, luma-ray-3, mai-image-2-6, xtts-v2, deepseek-r1-distill-llama-70b, phi-4-mini-reasoning, openvoice-v2, metavoice-1b-v0-1, tortoise-tts-v2, gemini-2-5-flash-preview-tts, gemini-2-5-pro-preview-tts, higgs-audio-v2, gpt-4o-mini-tts, deepgram-aura-2, kyutai-tts-1-6b-en-fr, dots-tts-soar, deepgram-nova-2, seed-tts-2-0-standard, azure-neural-tts-xiaoxiao, cosyvoice-v3-plus, mimo-v2-5-tts, amazon-polly-neural, mage-flow-base, mage-flow, mage-flow-turbo, sd-1-5, sd-2-1, deepfloyd-if-xl, seedance-1-0-pro-fast, kling-2-5-turbo-pro, hailuo-02, pixverse-v5-5, wan-2-6, kandinsky-5-0-pro, gemini-omni-1-1-flash, flux-3-video, seedance-2-5, grok-imagine-video-1-5, kling-3-0-pro, wan-2-5-preview, happyhorse-1-1, vidu-q3, cosmos3-nano, p-video, wan-2-2-i2v-a14b, qwen-image-2-0-pro, seedream-4-5, imagen-4, kling-image-2-1, hunyuanvideo-1-5-i2v, llada-image, llada-image-turbo, ministral-3-14b-reasoning, ministral-3-3b-reasoning, ministral-3-8b-reasoning, addis-voice-2, azure-ameha-neural, azure-mekdes-neural, gemini-3-1-flash-tts-preview, mms-tts-amh, elevenlabs-v3-alpha
+
+74 warning(s):
+  longcat-2-0: no usable results, won't be ranked
+  qwen3-4b-thinking-2507: no usable results, won't be ranked
+  qwen3-5-0-8b: no usable results, won't be ranked
+  phi-4-reasoning: no usable results, won't be ranked
+  mistral-small-4: no usable results, won't be ranked
+  grok-build-0-1: no usable results, won't be ranked
+  qwen3-coder-next: no usable results, won't be ranked
+  command-a-plus: no usable results, won't be ranked
+  ernie-4-5-300b-a47b: no usable results, won't be ranked
+  ling-3-0-flash: no usable results, won't be ranked
+  devstral-small-2: no usable results, won't be ranked
+  ministral-3-3b: no usable results, won't be ranked
+  ministral-3-8b: no usable results, won't be ranked
+  ministral-3-14b: no usable results, won't be ranked
+  qwen3-coder-30b-a3b: no usable results, won't be ranked
+  gemma-3-270m: no usable results, won't be ranked
+  gemma-3n-e2b: no usable results, won't be ranked
+  smollm3-3b: no usable results, won't be ranked
+  exaone-4-0-32b: no usable results, won't be ranked
+  exaone-4-0-1-2b: no usable results, won't be ranked
+  exaone-4-5-33b: no usable results, won't be ranked
+  nemotron-nano-9b-v2: no usable results, won't be ranked
+  nemotron-3-nano-4b: no usable results, won't be ranked
+  nemotron-cascade-2-30b-a3b: no usable results, won't be ranked
+  lfm2-24b-a2b: no usable results, won't be ranked
+  lfm2-5-8b-a1b: no usable results, won't be ranked
+  lfm2-5-1-2b-thinking: no usable results, won't be ranked
+  apriel-1-6-15b-thinker: no usable results, won't be ranked
+  falcon-h1r-7b: no usable results, won't be ranked
+  k2-horizon-7b: no usable results, won't be ranked
+  phi-4-mini-reasoning: no usable results, won't be ranked
+  ministral-3-14b-reasoning: no usable results, won't be ranked
+  ministral-3-3b-reasoning: no usable results, won't be ranked
+  ministral-3-8b-reasoning: no usable results, won't be ranked
+  flux-1-schnell: no usable results, won't be ranked
+  ernie-image: no usable results, won't be ranked
+  ernie-image-turbo: no usable results, won't be ranked
+  llada-image: no usable results, won't be ranked
+  llada-image-turbo: no usable results, won't be ranked
+  ltx-2-5: no usable results, won't be ranked
+  wan-2-2-5b: no usable results, won't be ranked
+  wan-2-1-14b: no usable results, won't be ranked
+  hunyuanvideo: no usable results, won't be ranked
+  cartesia-sonic-3-6: no usable results, won't be ranked
+  gemini-3-8-flash-tts: no usable results, won't be ranked
+  gemini-3-8-flash-lite-tts: no usable results, won't be ranked
+  qwen-audio-3-0-tts-plus: no usable results, won't be ranked
+  elevenlabs-v3-conversational: no usable results, won't be ranked
+  elevenlabs-turbo-v2-5: no usable results, won't be ranked
+  minimax-speech-2-6-hd: no usable results, won't be ranked
+  smallest-lightning-v3-1-pro: no usable results, won't be ranked
+  openai-tts-1-hd: no usable results, won't be ranked
+  openai-tts-1: no usable results, won't be ranked
+  hume-octave-2: no usable results, won't be ranked
+  hume-octave: no usable results, won't be ranked
+  azure-hd-2-5: no usable results, won't be ranked
+  amazon-polly-generative: no usable results, won't be ranked
+  openaudio-s1: no usable results, won't be ranked
+  fish-audio-s2-pro: no usable results, won't be ranked
+  openaudio-s1-mini: no usable results, won't be ranked
+  higgs-audio-v3-tts: no usable results, won't be ranked
+  magpie-tts-multilingual-357m: no usable results, won't be ranked
+  maya1: no usable results, won't be ranked
+  breeze-tts-2: no usable results, won't be ranked
+  dots-tts-soar: no usable results, won't be ranked
+  gpt-transcribe: no usable results, won't be ranked
+  assemblyai-universal-3-5-pro: no usable results, won't be ranked
+  mai-transcribe-2: no usable results, won't be ranked
+  gemini-3-5-transcribe: no usable results, won't be ranked
+  grok-voice-transcribe-2: no usable results, won't be ranked
+  gladia-solaria-3: no usable results, won't be ranked
+  soniox-v5-async: no usable results, won't be ranked
+  granite-speech-4-1-2b: no usable results, won't be ranked
+  granite-speech-5-0-470m-turboctc: no usable results, won't be ranked

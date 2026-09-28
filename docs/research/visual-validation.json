@@ -1,0 +1,52 @@
+{
+  "status": "FROZEN FOR IMPORT",
+  "results": 113,
+  "models_measured": 64,
+  "model_additions": 28,
+  "sources": 11,
+  "benchmarks": 15,
+  "source_groups": 26,
+  "quarantined_results": 210,
+  "added_after_review": 1,
+  "by": {
+    "lab": 42,
+    "independent": 71
+  },
+  "by_source": {
+    "visual-mage-flow": 27,
+    "visual-hidream": 2,
+    "visual-ernie-image": 4,
+    "visual-glm-image": 6,
+    "visual-geneval": 4,
+    "visual-humanscore": 12,
+    "visual-rapid-physics": 20,
+    "visual-rapid-camera": 8,
+    "visual-physics-verified": 6,
+    "visual-vgi": 8,
+    "visual-qwenbench": 16
+  },
+  "by_benchmark": {
+    "geneval": 10,
+    "dpg-bench": 5,
+    "tiif-testmini-short": 3,
+    "tiif-testmini-long": 3,
+    "cvtg-2k-word-accuracy": 4,
+    "oneig-en": 6,
+    "oneig-cn": 4,
+    "longtext-en": 4,
+    "longtext-cn": 4,
+    "humanscore-t2v": 12,
+    "rapidata-physics-i2v-reference": 20,
+    "rapidata-camera-i2v": 8,
+    "physics-iq-verified-i2v-bpp": 6,
+    "vgi-bench-i2v": 8,
+    "qwen-image-bench-v1": 16
+  },
+  "sha256": "915e7352feeab6f1539751518dbde72bb9999855b6d9d2e8812fe1a3a6b660f9",
+  "sharealike_results": 4,
+  "sharealike_model_additions": 2,
+  "total_ready_results": 117,
+  "sharealike_sha256": "1920c9b20bdcc3de1b1cbd63d48ab715a2758de569ce7f4511953f63e3e41c52",
+  "exact_source_matching": "All 117 ready rows match exactly one pinned source",
+  "licence_copies": 12
+}

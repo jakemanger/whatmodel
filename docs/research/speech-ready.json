@@ -1,0 +1,14 @@
+{
+  "status": "ready",
+  "payload": "/tmp/whatmodel-expansion/speech.json",
+  "sha256": "53e680bebc8054af692106a59ec458564f0c349a1d38375bd07d2370218e9828",
+  "sources": 10,
+  "benchmarks": 24,
+  "results": 98,
+  "models": 40,
+  "tts_original_models_recovered": 13,
+  "tts_total_models": 28,
+  "tts_results": 55,
+  "stt_results": 43,
+  "report": "/tmp/whatmodel-expansion/speech-report.md"
+}

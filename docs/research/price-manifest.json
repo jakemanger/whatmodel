@@ -1,0 +1,123 @@
+{
+  "status": "frozen",
+  "frozen_at": "2026-09-25T10:04:27.350850+00:00",
+  "summary": {
+    "original_models": 340,
+    "current_models": 340,
+    "current_models_with_prices": 115,
+    "api_patches": 54,
+    "api_patches_in_current": 54,
+    "api_patches_for_absent_models": 0,
+    "api_patches_by_category": {
+      "llm": 22,
+      "tts": 6,
+      "stt": 9,
+      "image": 12,
+      "video": 5
+    },
+    "current_price_coverage_after_merge": 169,
+    "context_patches": 29,
+    "context_patches_in_current": 29,
+    "native_unit_records": 4,
+    "unresolved_original_price_models": 171
+  },
+  "files": [
+    {
+      "path": "prices.json",
+      "sha256": "350496d7b1cd16d1217f65516716b4205ed392eb96c108e7a37c5635ab98421c",
+      "bytes": 221135
+    },
+    {
+      "path": "cloudflare-patches.json",
+      "sha256": "087486ffa7ad9e9598e6e5e5b0abd38ec40bf1fc8ffbae7577a6d2e561892f81",
+      "bytes": 19666
+    },
+    {
+      "path": "NOTICE-prices.txt",
+      "sha256": "452474fac73511761e5f10fef594a00d8467016d6526b46efd936252c84f565b",
+      "bytes": 62954
+    },
+    {
+      "path": "README-prices.md",
+      "sha256": "7bfe27dd2527c11a56235fb03f3efd352d159369d5a867fa6924ed70279d6203",
+      "bytes": 4118
+    },
+    {
+      "path": "validation.json",
+      "sha256": "66e20e5c481f41a353d0c5fbc76efe403e0982bd9f67a32d4f0c2adfc61ad749",
+      "bytes": 945
+    },
+    {
+      "path": "build_prices.py",
+      "sha256": "85d2ab4bf46d1f447f42ed119ce16f8c2f8353d7f93934c87a3b50ac057c29d5",
+      "bytes": 37284
+    },
+    {
+      "path": "validate_prices.py",
+      "sha256": "5c18856951262fc0005ec533ac1e19c7c8006c85430e6731702a7ede910a5c35",
+      "bytes": 4350
+    },
+    {
+      "path": "freeze_prices.py",
+      "sha256": "f2ef597413cde0ca40b9429b749a23ba554607ee17e53a37321eacd22a3ff9e1",
+      "bytes": 5857
+    },
+    {
+      "path": "bertrande-review.json",
+      "sha256": "49bd898cfa8354d171d5eae1a0e21edc732b0d8f66d88e4ac3a33375bde55fbf",
+      "bytes": 8945
+    },
+    {
+      "path": "evidence/litellm-selected-records.json",
+      "sha256": "929e62bc2487ef49b65a18df471e0ca96887b49347725689a43931756da550f1",
+      "bytes": 19941
+    },
+    {
+      "path": "evidence/integration-models.json",
+      "sha256": "f4020b15f76aba098309cc52d1c9a8888c96d08357b04d947b6fa8b1baee97b0",
+      "bytes": 294178
+    },
+    {
+      "path": "licenses/CC-BY-4.0.txt",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+      "bytes": 18656
+    },
+    {
+      "path": "licenses/CC-BY-SA-4.0.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138
+    },
+    {
+      "path": "licenses/LiteLLM-LICENSE.txt",
+      "sha256": "b170d6bf8e8835dd357e011681db028f4d51e2fb0ea892058f56e01fb39b8273",
+      "bytes": 1419
+    },
+    {
+      "path": "licenses/models.dev-LICENSE.txt",
+      "sha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
+      "bytes": 1067
+    },
+    {
+      "path": "public/NOTICE.txt",
+      "sha256": "1d869894a0abd2a2b8a844fef8199ddba30935418403aacb16ae2bf7a2708f4e",
+      "bytes": 39510
+    },
+    {
+      "path": "public/cloudflare-patches.json",
+      "sha256": "eecfe57ea9eef20476ed63d03472dcce48a1b17f1ed59b8b2cfb7f09ce89860d",
+      "bytes": 14992
+    },
+    {
+      "path": "public/licenses/CC-BY-4.0.txt",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+      "bytes": 18656
+    },
+    {
+      "path": "public/licenses/CC-BY-SA-4.0.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138
+    }
+  ],
+  "shared_workspace_writes": false,
+  "pushes_or_workflows": false
+}

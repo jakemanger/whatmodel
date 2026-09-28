@@ -1,0 +1,37 @@
+{
+  "results": 154,
+  "models_with_results": 61,
+  "benchmarks": 14,
+  "sources": 6,
+  "new_model_stubs": 0,
+  "results_by_source": {
+    "evalplus-published-runs": 7,
+    "aider-polyglot-runs": 14,
+    "bfcl-result-archive-v4": 39,
+    "zeroeval-published-results": 24,
+    "mmlu-pro-author-runs": 2,
+    "korean-personal-benchmark-runs": 68
+  },
+  "results_by_benchmark": {
+    "evalperf-correctness-20240328": 7,
+    "aider-polyglot": 14,
+    "bfcl-v4": 39,
+    "zebralogic-zeroeval": 9,
+    "gsm8k-zeroeval": 3,
+    "mmlu-redux-zeroeval": 6,
+    "cruxeval-zeroeval": 6,
+    "mmlu-pro": 2,
+    "click-korean-kim": 17,
+    "haerae-korean-kim": 16,
+    "kobalt-700-kim": 6,
+    "kmmlu-hard-kim": 17,
+    "kmmlu-pro-kim": 6,
+    "musr-ko-kim": 6
+  },
+  "recovered_original_candidates_with_independent_results": [
+    "nova-2-pro",
+    "phi-4-mini",
+    "qwen2-5-14b",
+    "qwen3-0-6b"
+  ]
+}

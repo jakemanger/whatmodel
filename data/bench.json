@@ -1,0 +1,116 @@
+[
+  {
+    "id": "7ca69d10-3643-4cf9-8d17-adfcca3b03e9-0",
+    "submitted": "2026-09-25",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": 1,
+    "os": "macos 27.0",
+    "engine": "ollama 0.30.8",
+    "model": "qwen3:8b",
+    "model_id": "qwen3-8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "quant": "Q4_K_M",
+    "bytes": 5225388164,
+    "gpu_pct": 100,
+    "ctx": 4096,
+    "prompt_tokens": [
+      168,
+      168,
+      168
+    ],
+    "pp": [
+      228.4,
+      220.4,
+      200.4
+    ],
+    "gen_tokens": [
+      256,
+      256,
+      256
+    ],
+    "tg": [
+      22.56,
+      21.05,
+      18.79
+    ],
+    "tg_median": 21.05,
+    "pp_median": 220.4
+  },
+  {
+    "id": "7ca69d10-3643-4cf9-8d17-adfcca3b03e9-1",
+    "submitted": "2026-09-25",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": 1,
+    "os": "macos 27.0",
+    "engine": "ollama 0.30.8",
+    "model": "qwen2.5:3b",
+    "model_id": null,
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "quant": "Q4_K_M",
+    "bytes": 1929912432,
+    "gpu_pct": 100,
+    "ctx": 4096,
+    "prompt_tokens": [
+      187,
+      187,
+      187
+    ],
+    "pp": [
+      593.8,
+      495.5,
+      600.4
+    ],
+    "gen_tokens": [
+      256,
+      256,
+      256
+    ],
+    "tg": [
+      48.81,
+      47.5,
+      50.34
+    ],
+    "tg_median": 48.81,
+    "pp_median": 593.8
+  },
+  {
+    "id": "7ca69d10-3643-4cf9-8d17-adfcca3b03e9-2",
+    "submitted": "2026-09-25",
+    "hardware": "m2-pro",
+    "hardware_label": "Apple M2 Pro (16-core GPU), 16 GB",
+    "gpus": 1,
+    "os": "macos 27.0",
+    "engine": "ollama 0.30.8",
+    "model": "qwen2.5:1.5b",
+    "model_id": null,
+    "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "quant": "Q4_K_M",
+    "bytes": 986061892,
+    "gpu_pct": 100,
+    "ctx": 4096,
+    "prompt_tokens": [
+      187,
+      187,
+      187
+    ],
+    "pp": [
+      1138.7,
+      1199.7,
+      1143.8
+    ],
+    "gen_tokens": [
+      256,
+      256,
+      256
+    ],
+    "tg": [
+      81.9,
+      82.17,
+      80.55
+    ],
+    "tg_median": 81.9,
+    "pp_median": 1143.8
+  }
+]

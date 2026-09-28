@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Feature ideas
+    url: https://github.com/jakemanger/whatmodel/discussions
+    about: Start a discussion before building a feature, so we can agree on it first.

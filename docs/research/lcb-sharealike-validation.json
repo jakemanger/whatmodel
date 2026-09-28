@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checks": [
+    "13 rows, 13 original models, two exact windows, two pinned releases of one source family.",
+    "Original catalogue model IDs, finite fractional scores, unique model/benchmark pairs.",
+    "Every pinned source and method file is byte-identical to its repository commit and SHA256 manifest.",
+    "Re-extracted every selected source record, metadata label and percentage; exact execution of published website mean/rounding matches all 13 exported scores.",
+    "387 and 454 unique problem IDs respectively; identical problem sets within each window, no duplicate records.",
+    "Only one code-generation window/config per model; no difficulty components, repair aggregates, holistic composite or alternate efforts.",
+    "Explicit vendor-submitted R1-0528/EXAONE and unresolved Nemotron own-run provenance are excluded.",
+    "No selected model has any existing LiveCodeBench window in the current 1837-row shared data snapshot.",
+    "CC BY-SA 4.0 attribution, source, adapter licence, modification notice and disclaimer retained; complete licence copied verbatim into LICENSE and NOTICE.",
+    "Previously integrated independent payload, seed, provenance, reports and notices remain byte-identical to their frozen hashes."
+  ],
+  "sha256": {
+    "lcb-sharealike.json": "8baea3ef80838448675a33eacf4616bf9c367cfaa6aaeac8e78e75f3877617fe",
+    "lcb-sharealike-provenance.json": "49d0a4dab12e9bd8cea10e62ed346eb444f427e75803f4ac5b2eab069bdb9f8d",
+    "lcb-sharealike-NOTICE.txt": "860ca728ebda70112972d60de18d230380f140346d43ceb3184bb8bf7dc32762",
+    "lcb-sharealike-LICENSE.txt": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+  },
+  "limits": [
+    "Actual per-run decoding parameters/sample count/token budgets are not supplied by the website.",
+    "o3/o4-mini source endpoints are not dated API snapshots; literal endpoint and high-effort config retained.",
+    "Execution operator is not documented row-by-row; these are author-maintained releases with known vendor submissions excluded.",
+    "Shared data is being edited concurrently; rerun the duplicate gate when integrating."
+  ]
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "cartesia-sonic-3-6",
+    "name": "Sonic 3.6",
+    "provider": "Cartesia",
+    "category": "tts"
+  },
+  {
+    "id": "gemini-3-8-flash-tts",
+    "name": "Gemini 3.8 Flash TTS",
+    "provider": "Google",
+    "category": "tts"
+  },
+  {
+    "id": "gemini-3-8-flash-lite-tts",
+    "name": "Gemini 3.8 Flash-Lite TTS",
+    "provider": "Google",
+    "category": "tts"
+  },
+  {
+    "id": "qwen-audio-3-0-tts-plus",
+    "name": "Qwen-Audio-3.0-TTS-Plus",
+    "provider": "Alibaba",
+    "category": "tts"
+  },
+  {
+    "id": "inworld-realtime-tts-2",
+    "name": "Inworld Realtime TTS-2",
+    "provider": "Inworld",
+    "category": "tts"
+  },
+  {
+    "id": "speechify-simba-3-2",
+    "name": "Simba 3.2",
+    "provider": "Speechify",
+    "category": "tts"
+  },
+  {
+    "id": "elevenlabs-v3-conversational",
+    "name": "Eleven v3 Conversational",
+    "provider": "ElevenLabs",
+    "category": "tts"
+  },
+  {
+    "id": "elevenlabs-turbo-v2-5",
+    "name": "Eleven Turbo v2.5",
+    "provider": "ElevenLabs",
+    "category": "tts"
+  },
+  {
+    "id": "minimax-speech-2-8-turbo",
+    "name": "MiniMax Speech 2.8 Turbo",
+    "provider": "MiniMax",
+    "category": "tts"
+  },
+  {
+    "id": "minimax-speech-2-6-hd",
+    "name": "MiniMax Speech 2.6 HD",
+    "provider": "MiniMax",
+    "category": "tts"
+  },
+  {
+    "id": "smallest-lightning-v3-1-pro",
+    "name": "Lightning v3.1 Pro",
+    "provider": "Smallest.ai",
+    "category": "tts"
+  },
+  {
+    "id": "openai-tts-1-hd",
+    "name": "TTS-1 HD",
+    "provider": "OpenAI",
+    "category": "tts"
+  },
+  {
+    "id": "openai-tts-1",
+    "name": "TTS-1",
+    "provider": "OpenAI",
+    "category": "tts"
+  },
+  {
+    "id": "hume-octave-2",
+    "name": "Octave 2",
+    "provider": "Hume AI",
+    "category": "tts"
+  },
+  {
+    "id": "hume-octave",
+    "name": "Octave TTS (Octave 1)",
+    "provider": "Hume AI",
+    "category": "tts"
+  },
+  {
+    "id": "azure-hd-2-5",
+    "name": "Azure HD 2.5",
+    "provider": "Microsoft",
+    "category": "tts"
+  },
+  {
+    "id": "amazon-polly-generative",
+    "name": "Polly Generative",
+    "provider": "Amazon",
+    "category": "tts"
+  },
+  {
+    "id": "openaudio-s1-mini",
+    "name": "OpenAudio S1 Mini",
+    "provider": "Fish Audio",
+    "category": "tts"
+  },
+  {
+    "id": "higgs-audio-v3-tts",
+    "name": "Higgs Audio V3 TTS",
+    "provider": "Boson AI",
+    "category": "tts"
+  },
+  {
+    "id": "vibevoice-1-5b",
+    "name": "VibeVoice 1.5B",
+    "provider": "Microsoft",
+    "category": "tts"
+  },
+  {
+    "id": "magpie-tts-multilingual-357m",
+    "name": "Magpie TTS Multilingual 357M",
+    "provider": "NVIDIA",
+    "category": "tts"
+  },
+  {
+    "id": "maya1",
+    "name": "Maya1",
+    "provider": "Maya Research",
+    "category": "tts"
+  },
+  {
+    "id": "breeze-tts-2",
+    "name": "Breeze TTS 2",
+    "provider": "BreezeBlue",
+    "category": "tts"
+  },
+  {
+    "id": "gpt-transcribe",
+    "name": "GPT Transcribe",
+    "provider": "OpenAI",
+    "category": "stt"
+  },
+  {
+    "id": "assemblyai-universal-3-5-pro",
+    "name": "Universal-3.5 Pro",
+    "provider": "AssemblyAI",
+    "category": "stt"
+  },
+  {
+    "id": "mai-transcribe-2",
+    "name": "MAI-Transcribe-2",
+    "provider": "Microsoft AI",
+    "category": "stt"
+  },
+  {
+    "id": "gemini-3-5-transcribe",
+    "name": "Gemini 3.5 Transcribe",
+    "provider": "Google",
+    "category": "stt"
+  },
+  {
+    "id": "grok-voice-transcribe-2",
+    "name": "Grok Voice Transcribe 2.0",
+    "provider": "xAI",
+    "category": "stt"
+  },
+  {
+    "id": "speechmatics-enhanced",
+    "name": "Speechmatics Enhanced",
+    "provider": "Speechmatics",
+    "category": "stt"
+  },
+  {
+    "id": "gladia-solaria-3",
+    "name": "Solaria-3",
+    "provider": "Gladia",
+    "category": "stt"
+  },
+  {
+    "id": "soniox-v5-async",
+    "name": "Soniox v5 Async",
+    "provider": "Soniox",
+    "category": "stt"
+  },
+  {
+    "id": "whisper-large-v3-turbo",
+    "name": "Whisper large-v3-turbo",
+    "provider": "OpenAI",
+    "category": "stt"
+  },
+  {
+    "id": "distil-large-v3-5",
+    "name": "Distil-Whisper distil-large-v3.5",
+    "provider": "Hugging Face (Distil-Whisper)",
+    "category": "stt"
+  },
+  {
+    "id": "parakeet-tdt-0-6b-v2",
+    "name": "Parakeet TDT 0.6B v2",
+    "provider": "NVIDIA",
+    "category": "stt"
+  },
+  {
+    "id": "canary-qwen-2-5b",
+    "name": "Canary-Qwen-2.5B",
+    "provider": "NVIDIA",
+    "category": "stt"
+  },
+  {
+    "id": "canary-1b-v2",
+    "name": "Canary-1B-v2",
+    "provider": "NVIDIA",
+    "category": "stt"
+  },
+  {
+    "id": "parakeet-rnnt-1-1b",
+    "name": "Parakeet RNNT 1.1B",
+    "provider": "NVIDIA",
+    "category": "stt"
+  },
+  {
+    "id": "voxtral-small-24b",
+    "name": "Voxtral Small 24B (2507)",
+    "provider": "Mistral",
+    "category": "stt"
+  },
+  {
+    "id": "voxtral-mini-3b",
+    "name": "Voxtral Mini 3B (2507)",
+    "provider": "Mistral",
+    "category": "stt"
+  },
+  {
+    "id": "granite-speech-4-1-2b",
+    "name": "Granite Speech 4.1 2B",
+    "provider": "IBM",
+    "category": "stt"
+  },
+  {
+    "id": "granite-speech-5-0-470m-turboctc",
+    "name": "Granite Speech 5.0 470M TurboCTC",
+    "provider": "IBM",
+    "category": "stt"
+  },
+  {
+    "id": "cohere-transcribe-03-2026",
+    "name": "Cohere Transcribe (03-2026)",
+    "provider": "Cohere",
+    "category": "stt"
+  }
+]

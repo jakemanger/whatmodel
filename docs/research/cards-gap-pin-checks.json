@@ -1,0 +1,92 @@
+[
+  {
+    "source_id": "card-ifm-k2-horizon-7b",
+    "repo": "IFM/K2-Horizon-7B",
+    "revision": "036114ce8d46c32b24c15423211069abb9c5d25e",
+    "raw_sha256": "3a59b3683f341dbf6fe64176a7f41b2ed0fa46dc613e7e1f13f02cc0b3fda248",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-devstral-small-2-24b-instruct-2512",
+    "repo": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+    "revision": "55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128",
+    "raw_sha256": "e1aa7a24bc4845a11cf8defacd723a67fe5cc551ca9311e0276933d9176f55d7",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-ministral-3-14b-instruct-2512",
+    "repo": "mistralai/Ministral-3-14B-Instruct-2512",
+    "revision": "29439f81c2be264d8d393273f99e7db9c0961120",
+    "raw_sha256": "cc013914f873e709e3f2710e8d1fc8e5ed8ec4cc7a484e7af4445baa8450aeec",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-ministral-3-14b-reasoning-2512",
+    "repo": "mistralai/Ministral-3-14B-Reasoning-2512",
+    "revision": "51f9210f3cd20f3452a80d5819d15dc61cc50630",
+    "raw_sha256": "0abaf444981d9f3ee4a13d63e88a9d53b56a1cb38bd93c80cc6b763267ded673",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-ministral-3-3b-instruct-2512",
+    "repo": "mistralai/Ministral-3-3B-Instruct-2512",
+    "revision": "b35d4dfe56c142746f54dbd64f579faab2744308",
+    "raw_sha256": "57623b9703d4fe40fe752b4a63f920c65ffd30cd7c281c8bccab7ee784460b67",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-ministral-3-3b-reasoning-2512",
+    "repo": "mistralai/Ministral-3-3B-Reasoning-2512",
+    "revision": "4a36357c811bf511a7b625d132e12f22408aac91",
+    "raw_sha256": "f05058e9b5849ab7ff0a5ad92234f6482c7519c471a19d4d4324b66f48a067fa",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-ministral-3-8b-instruct-2512",
+    "repo": "mistralai/Ministral-3-8B-Instruct-2512",
+    "revision": "5b26027e7b19eeb4b7352e1fed3926375dd2cb4d",
+    "raw_sha256": "2f37208c16b180cfcc12f94c1a61dd720c5d8106ec3802d7e20c6818dcde5044",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-ministral-3-8b-reasoning-2512",
+    "repo": "mistralai/Ministral-3-8B-Reasoning-2512",
+    "revision": "81eaece1948f3875421d9a45bc55487d10e2d894",
+    "raw_sha256": "3a057830c4974f11831838772462d87401fc29f17f5ed561cce3229fec8fab25",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-mistralai-mistral-small-4-119b-2603",
+    "repo": "mistralai/Mistral-Small-4-119B-2603",
+    "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+    "raw_sha256": "243f9d4f6cdb5644ca93d34d2e002822cb946803a6a7e3aed39b56d6ceeb1996",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  },
+  {
+    "source_id": "card-qwen-qwen3-coder-next",
+    "repo": "Qwen/Qwen3-Coder-Next",
+    "revision": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+    "raw_sha256": "548db6d595e3bd88d7f6e7f4eae8e66ce8e6f980fd5ce52d7daf222e38559af6",
+    "matches_saved": true,
+    "declared_license": "apache-2.0",
+    "notice_files": []
+  }
+]

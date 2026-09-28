@@ -1,0 +1,284 @@
+{
+  "status": "passed",
+  "rows": 69,
+  "models": 8,
+  "sources": 8,
+  "benchmarks": 57,
+  "per_model": {
+    "gemma-3-270m": 6,
+    "gemma-3n-e2b": 10,
+    "ernie-4-5-300b-a47b": 18,
+    "ling-3-0-flash": 15,
+    "apriel-1-6-15b-thinker": 5,
+    "lfm2-24b-a2b": 11,
+    "exaone-4-0-1-2b": 1,
+    "exaone-4-0-32b": 3
+  },
+  "exact_table_checks": [
+    {
+      "source_id": "google-doc-gemma-3-270m",
+      "model": "gemma-3-270m",
+      "benchmark": "hellaswag",
+      "raw": "37.7",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3-270m",
+      "model": "gemma-3-270m",
+      "benchmark": "piqa",
+      "raw": "66.2",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3-270m",
+      "model": "gemma-3-270m",
+      "benchmark": "arc-challenge",
+      "raw": "28.2",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3-270m",
+      "model": "gemma-3-270m",
+      "benchmark": "winogrande",
+      "raw": "52.3",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3-270m",
+      "model": "gemma-3-270m",
+      "benchmark": "bbh",
+      "raw": "26.7",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3-270m",
+      "model": "gemma-3-270m",
+      "benchmark": "ifeval-unspecified",
+      "raw": "51.2",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "mgsm",
+      "raw": "53.1",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "global-mmlu",
+      "raw": "55.1",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "gpqa-diamond-google-relaxed",
+      "raw": "24.8",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "livecodebench-v5-window-unspecified",
+      "raw": "18.6",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "codegolf-v2-2",
+      "raw": "11.0",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "aime-2025",
+      "raw": "6.7",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "mmlu",
+      "raw": "60.1",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "mbpp",
+      "raw": "56.6",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "humaneval",
+      "raw": "66.5",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "google-doc-gemma-3n-e2b",
+      "model": "gemma-3n-e2b",
+      "benchmark": "mmlu-pro",
+      "raw": "40.5",
+      "verified": "exact table cell"
+    },
+    {
+      "source_id": "card-final-apriel-1-6-15b-thinker",
+      "model": "apriel-1-6-15b-thinker",
+      "benchmark": "tau2-retail",
+      "raw": "66.67",
+      "verified": "exact table cell; AA task exclusion checked"
+    },
+    {
+      "source_id": "card-final-apriel-1-6-15b-thinker",
+      "model": "apriel-1-6-15b-thinker",
+      "benchmark": "tau2-airline",
+      "raw": "58",
+      "verified": "exact table cell; AA task exclusion checked"
+    },
+    {
+      "source_id": "card-final-apriel-1-6-15b-thinker",
+      "model": "apriel-1-6-15b-thinker",
+      "benchmark": "multi-if-unspecified",
+      "raw": "83.34",
+      "verified": "exact table cell; AA task exclusion checked"
+    },
+    {
+      "source_id": "card-final-apriel-1-6-15b-thinker",
+      "model": "apriel-1-6-15b-thinker",
+      "benchmark": "swe-bench-verified",
+      "raw": "23",
+      "verified": "exact table cell; AA task exclusion checked"
+    },
+    {
+      "source_id": "card-final-apriel-1-6-15b-thinker",
+      "model": "apriel-1-6-15b-thinker",
+      "benchmark": "aider-polyglot",
+      "raw": "37.68",
+      "verified": "exact table cell; AA task exclusion checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "mmlu",
+      "raw": "74.9",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "mmlu-pro",
+      "raw": "57.6",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "agieval-marco-unspecified",
+      "raw": "49.0",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "gpqa-diamond",
+      "raw": "39.7",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "gsm8k",
+      "raw": "87.2",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "math-subset-unspecified",
+      "raw": "83.9",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "global-mmlu-marco",
+      "raw": "57.0",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "mmmlu-marco",
+      "raw": "62.3",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "mmlu-prox-lite-marco",
+      "raw": "43.3",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "mgsm-marco",
+      "raw": "67.8",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "report-marco-moe-260425578v1",
+      "model": "lfm2-24b-a2b",
+      "benchmark": "polymath-marco",
+      "raw": "29.3",
+      "verified": "exact table cell; three-row header and baseline identity checked"
+    },
+    {
+      "source_id": "acl-konubench-2026",
+      "model": "exaone-4-0-1-2b",
+      "benchmark": "thunder-konubench-symbol-zero-shot",
+      "raw": "26.5",
+      "verified": "PDF text column and rendered table visually verified"
+    },
+    {
+      "source_id": "acl-konubench-2026",
+      "model": "exaone-4-0-32b",
+      "benchmark": "thunder-konubench-symbol-zero-shot",
+      "raw": "81.5",
+      "verified": "PDF text column and rendered table visually verified"
+    },
+    {
+      "source_id": "acl-kcl-2026",
+      "model": "exaone-4-0-32b",
+      "benchmark": "kcl-mcqa-vanilla",
+      "raw": "36.4",
+      "verified": "PDF text and rendered table visually verified"
+    },
+    {
+      "source_id": "acl-kcl-2026",
+      "model": "exaone-4-0-32b",
+      "benchmark": "kcl-essay-vanilla",
+      "raw": "32.6",
+      "verified": "PDF text and rendered table visually verified"
+    }
+  ],
+  "chart_labels_visually_verified": 33,
+  "pdf_cells_visually_verified": 4,
+  "google_cells_match_pinned_mirror": 16,
+  "overlap_with_integrated176_plus55": 0,
+  "frozen_artifact_hashes": {
+    "cards-verified-seed.json": "8a360145bbd42738d12d191292fb8c237e535a9713daa5abeef5a044a6c95a2d",
+    "cards-gap-ready.json": "0e8083a462d34e241df14fb61d5d48cc4a3d95e54276584a77d627708e262414"
+  },
+  "ready_sha256": "ed815e5eb5b43fa360aa940b4007446e23112ce6d28dff5e07e8bdf9acdef121",
+  "all_source_and_license_hashes_verified": true,
+  "full_licences_navigation_free": true,
+  "shared_files_edited": false,
+  "research_status": "stopped after focused closure pass"
+}

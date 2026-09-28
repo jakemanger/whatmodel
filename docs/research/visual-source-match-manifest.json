@@ -1,0 +1,209 @@
+{
+  "normalization": {
+    "protocol": "https only; reject credentials",
+    "host": "lowercase hostname; strip leading www.",
+    "path": "case-sensitive exact pinned path; no descendants, version wildcards or branch aliases",
+    "fragment": "table/section fragments ignored for matching, retained in result source URLs",
+    "query": "not part of file identity; no query-based artifact licences inferred"
+  },
+  "sources": [
+    {
+      "id": "visual-mage-flow",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://arxiv.org/html/2607.19064v2",
+      "match": [
+        "arxiv.org/html/2607.19064v2"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-mage-flow.txt",
+      "destination": "public/licenses/visual-mage-flow.txt",
+      "public_license_url": "/licenses/visual-mage-flow.txt",
+      "notice_sha256": "e8e7948b3f3e6048fc65b2b7c251eaf5ae591a1ab9f3f43aa18e546a591da352"
+    },
+    {
+      "id": "visual-humanscore",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://arxiv.org/html/2604.20157v1",
+      "match": [
+        "arxiv.org/html/2604.20157v1"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-humanscore.txt",
+      "destination": "public/licenses/visual-humanscore.txt",
+      "public_license_url": "/licenses/visual-humanscore.txt",
+      "notice_sha256": "638c8ba468fce8fc96e5541f991ab29a72f1d1ebcf6694f84c94acf94eb8acc3"
+    },
+    {
+      "id": "visual-physics-verified",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://arxiv.org/html/2606.18943v1",
+      "match": [
+        "arxiv.org/html/2606.18943v1"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-physics-verified.txt",
+      "destination": "public/licenses/visual-physics-verified.txt",
+      "public_license_url": "/licenses/visual-physics-verified.txt",
+      "notice_sha256": "af6f8029fd755e62a1314f8596485b545fe2f6a6b5aa0a4ac1f7bddd7d39be48"
+    },
+    {
+      "id": "visual-vgi",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://arxiv.org/html/2608.19583v3",
+      "match": [
+        "arxiv.org/html/2608.19583v3"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-vgi.txt",
+      "destination": "public/licenses/visual-vgi.txt",
+      "public_license_url": "/licenses/visual-vgi.txt",
+      "notice_sha256": "b859b91fe5ca3a5d60324e0de54247357a42729ff2f961632eac8e74c8b18654"
+    },
+    {
+      "id": "visual-rapid-physics",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md",
+      "match": [
+        "huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md"
+      ],
+      "exact": true,
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-rapid-physics.txt",
+      "destination": "public/licenses/visual-rapid-physics.txt",
+      "public_license_url": "/licenses/visual-rapid-physics.txt",
+      "notice_sha256": "587c3820f6d7619cfd120063365fc6a72a0f0add208a306a2ce973e81c631cb9"
+    },
+    {
+      "id": "visual-rapid-camera",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md",
+      "match": [
+        "huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md"
+      ],
+      "exact": true,
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-rapid-camera.txt",
+      "destination": "public/licenses/visual-rapid-camera.txt",
+      "public_license_url": "/licenses/visual-rapid-camera.txt",
+      "notice_sha256": "c0c168e2e55f712b3563a9dc59c1b4d5eb98397df005b747ef90fbc950b962b2"
+    },
+    {
+      "id": "visual-geneval",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md",
+      "match": [
+        "github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md"
+      ],
+      "exact": true,
+      "kind": "dataset",
+      "license": "MIT",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-geneval.txt",
+      "destination": "public/licenses/visual-geneval.txt",
+      "public_license_url": "/licenses/visual-geneval.txt",
+      "notice_sha256": "88e31ef52b6fcc375e26b72ff4cd7a6a6d137f7ec86fef9b3f51b4f47e8501cf"
+    },
+    {
+      "id": "visual-hidream",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md",
+      "match": [
+        "github.com/HiDream-ai/HiDream-O1-Image/blob/2c2d29ff729e48f33e41f49edfdbd81d5ac103b4/README.md"
+      ],
+      "exact": true,
+      "kind": "first-party",
+      "license": "MIT",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-hidream.txt",
+      "destination": "public/licenses/visual-hidream.txt",
+      "public_license_url": "/licenses/visual-hidream.txt",
+      "notice_sha256": "e4ade07fb179f59fc8d53fb167667387e1234b38a473fb5441b25158102d044c"
+    },
+    {
+      "id": "visual-glm-image",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md",
+      "match": [
+        "github.com/zai-org/GLM-Image/blob/69b87db2874f8b556417c03eedf2b8a1484f62e0/README.md"
+      ],
+      "exact": true,
+      "kind": "first-party",
+      "license": "Apache-2.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-glm-image.txt",
+      "destination": "public/licenses/visual-glm-image.txt",
+      "public_license_url": "/licenses/visual-glm-image.txt",
+      "notice_sha256": "29c69447eada12a3e2d0dd861e56d92717e8182810afea4b3ccb88bb745e9238"
+    },
+    {
+      "id": "visual-ernie-image",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md",
+      "match": [
+        "huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md"
+      ],
+      "exact": true,
+      "kind": "first-party",
+      "license": "Apache-2.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-ernie-image.txt",
+      "destination": "public/licenses/visual-ernie-image.txt",
+      "public_license_url": "/licenses/visual-ernie-image.txt",
+      "notice_sha256": "9a66c74c3a1cf1c7029edf2e51708634c9a6ec09cdd4c33c8994033759ba94c2"
+    },
+    {
+      "id": "visual-qwenbench",
+      "artifact": "visual.json",
+      "canonical_source_url": "https://arxiv.org/html/2605.28091v1",
+      "match": [
+        "arxiv.org/html/2605.28091v1"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-qwenbench.txt",
+      "destination": "public/licenses/visual-qwenbench.txt",
+      "public_license_url": "/licenses/visual-qwenbench.txt",
+      "notice_sha256": "f69ea8c2c1bdc189dcb1e9c65b180ce43c0ff0c28a99c176336e3ca99d9ca46e"
+    },
+    {
+      "id": "visual-llada-image",
+      "artifact": "visual-cc-by-sa.json",
+      "canonical_source_url": "https://arxiv.org/html/2609.03796v1",
+      "match": [
+        "arxiv.org/html/2609.03796v1"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-SA-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-licenses/visual-llada-image.txt",
+      "destination": "public/licenses/visual-llada-image.txt",
+      "public_license_url": "/licenses/visual-llada-image.txt",
+      "notice_sha256": "8ccf3947be6b5a14158dab69846880d918f78b71d92bf1f09662f936b1aa5abb"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/tmp/whatmodel-expansion/visual.json",
+      "sha256": "915e7352feeab6f1539751518dbde72bb9999855b6d9d2e8812fe1a3a6b660f9"
+    },
+    {
+      "path": "/tmp/whatmodel-expansion/visual-cc-by-sa.json",
+      "sha256": "1920c9b20bdcc3de1b1cbd63d48ab715a2758de569ce7f4511953f63e3e41c52"
+    },
+    {
+      "path": "/tmp/whatmodel-expansion/visual-quarantine.json",
+      "sha256": "27180689062e96e21a052fbea1336715938c8ade835066c5265820757668b7b9"
+    },
+    {
+      "path": "/tmp/whatmodel-expansion/visual-source-groups.json",
+      "sha256": "15e5366c0d409e9313becf7548de23001f6e5b0798deaee03f1ea9a0619a6b46"
+    }
+  ]
+}

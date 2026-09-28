@@ -1,0 +1,152 @@
+{
+  "license": "CC BY-SA 4.0",
+  "note": "Results adapted from CC BY-SA 4.0 sources; this subset is distributed under the same licence.",
+  "sources": [
+    {
+      "id": "report-2605.27605v1",
+      "name": "Poolside — Laguna M.1/XS.2 Technical Report",
+      "kind": "first-party",
+      "match": [
+        "arxiv.org/html/2605.27605v1"
+      ],
+      "exact": true,
+      "license": "CC BY-SA 4.0",
+      "license_url": "/licenses/report-2605.27605v1.txt",
+      "terms_url": "https://arxiv.org/abs/2605.27605v1",
+      "quote": "arXiv abstract page for 2605.27605v1 states the article licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Share-alike: adapted extracts must carry the same licence. Only Poolside's own Laguna columns are used; baseline columns (copied from other publishers) are excluded.",
+      "verdict": "allowed",
+      "checked": "2026-09-26",
+      "icon": "arxiv.org",
+      "attribution": "Poolside Team. Laguna M.1/XS.2 Technical Report. arXiv:2605.27605v1. CC BY-SA 4.0. Source: https://arxiv.org/html/2605.27605v1. Changes: selected own-model numerical cells transcribed into JSON; percentages divided by 100; benchmark names and settings clarified. No endorsement."
+    }
+  ],
+  "benchmarks": [],
+  "results": [
+    {
+      "model": "laguna-m-1",
+      "bench": "swe-bench-multilingual",
+      "score": 0.631,
+      "source": "https://arxiv.org/html/2605.27605v1",
+      "source_id": "report-2605.27605v1",
+      "by": "lab",
+      "date": "2026-05-26",
+      "mode": "thinking",
+      "note": "Poolside's own evaluation with its pool agent harness, max 500 steps, temperature 1.0, top_k 20, thinking mode, 256K context; mean pass@1 over four runs (§6.2.1).",
+      "evidence": {
+        "kind": "table",
+        "table_id": "S6.T7",
+        "caption": "Table 7: Agentic coding results for Laguna M.1 against open-weight MoE and dense baselines (Devstral 2, GLM-4.7, DeepSeek-V4-Flash, Qwen3.5-397B-A17B), with Claude Sonnet 4.6 shown as a frontier proprietary reference of comparable model size. “–” indicates a score not reported by the model provider.",
+        "row_label": "SWE-bench Multilingual",
+        "column_label": "Laguna M.1",
+        "column_index": 1,
+        "raw_value": "63.1",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "laguna-m-1",
+      "bench": "swe-bench-verified",
+      "score": 0.746,
+      "source": "https://arxiv.org/html/2605.27605v1",
+      "source_id": "report-2605.27605v1",
+      "by": "lab",
+      "date": "2026-05-26",
+      "mode": "thinking",
+      "note": "Poolside's own evaluation with its pool agent harness, max 500 steps, temperature 1.0, top_k 20, thinking mode, 256K context; mean pass@1 over four runs (§6.2.1).",
+      "evidence": {
+        "kind": "table",
+        "table_id": "S6.T7",
+        "caption": "Table 7: Agentic coding results for Laguna M.1 against open-weight MoE and dense baselines (Devstral 2, GLM-4.7, DeepSeek-V4-Flash, Qwen3.5-397B-A17B), with Claude Sonnet 4.6 shown as a frontier proprietary reference of comparable model size. “–” indicates a score not reported by the model provider.",
+        "row_label": "SWE-bench Verified",
+        "column_label": "Laguna M.1",
+        "column_index": 1,
+        "raw_value": "74.6",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "laguna-m-1",
+      "bench": "terminal-bench-2",
+      "score": 0.458,
+      "source": "https://arxiv.org/html/2605.27605v1",
+      "source_id": "report-2605.27605v1",
+      "by": "lab",
+      "date": "2026-05-26",
+      "mode": "thinking",
+      "note": "Poolside's own evaluation with its pool agent harness, max 500 steps, temperature 1.0, top_k 20, thinking mode, 256K context; mean pass@1 over four runs (§6.2.1). 32 CPUs / 48 GB RAM sandbox; some task images/verifiers patched for infrastructure reliability (Appendix A.3).",
+      "evidence": {
+        "kind": "table",
+        "table_id": "S6.T7",
+        "caption": "Table 7: Agentic coding results for Laguna M.1 against open-weight MoE and dense baselines (Devstral 2, GLM-4.7, DeepSeek-V4-Flash, Qwen3.5-397B-A17B), with Claude Sonnet 4.6 shown as a frontier proprietary reference of comparable model size. “–” indicates a score not reported by the model provider.",
+        "row_label": "Terminal-Bench 2.0",
+        "column_label": "Laguna M.1",
+        "column_index": 1,
+        "raw_value": "45.8",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "laguna-xs-2",
+      "bench": "swe-bench-multilingual",
+      "score": 0.577,
+      "source": "https://arxiv.org/html/2605.27605v1",
+      "source_id": "report-2605.27605v1",
+      "by": "lab",
+      "date": "2026-05-26",
+      "mode": "thinking",
+      "note": "Poolside's own evaluation with its pool agent harness, max 500 steps, temperature 1.0, top_k 20, thinking mode, 256K context; mean pass@1 over four runs (§6.2.1).",
+      "evidence": {
+        "kind": "table",
+        "table_id": "S6.T6",
+        "caption": "Table 6: Agentic coding results for Laguna XS.2 against open-weight baselines of comparable size (Devstral Small 2, Gemma 4, Qwen3.5-35B-A3B, Qwen3.6-35B-A3B), with Claude Haiku 4.5 and GPT-5.4 Nano shown as frontier proprietary references of comparable model size. “–” indicates a score not reported",
+        "row_label": "SWE-bench Multilingual",
+        "column_label": "Laguna XS.2",
+        "column_index": 1,
+        "raw_value": "57.7",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "laguna-xs-2",
+      "bench": "swe-bench-verified",
+      "score": 0.699,
+      "source": "https://arxiv.org/html/2605.27605v1",
+      "source_id": "report-2605.27605v1",
+      "by": "lab",
+      "date": "2026-05-26",
+      "mode": "thinking",
+      "note": "Poolside's own evaluation with its pool agent harness, max 500 steps, temperature 1.0, top_k 20, thinking mode, 256K context; mean pass@1 over four runs (§6.2.1).",
+      "evidence": {
+        "kind": "table",
+        "table_id": "S6.T6",
+        "caption": "Table 6: Agentic coding results for Laguna XS.2 against open-weight baselines of comparable size (Devstral Small 2, Gemma 4, Qwen3.5-35B-A3B, Qwen3.6-35B-A3B), with Claude Haiku 4.5 and GPT-5.4 Nano shown as frontier proprietary references of comparable model size. “–” indicates a score not reported",
+        "row_label": "SWE-bench Verified",
+        "column_label": "Laguna XS.2",
+        "column_index": 1,
+        "raw_value": "69.9",
+        "scale_divisor": 100
+      }
+    },
+    {
+      "model": "laguna-xs-2",
+      "bench": "terminal-bench-2",
+      "score": 0.357,
+      "source": "https://arxiv.org/html/2605.27605v1",
+      "source_id": "report-2605.27605v1",
+      "by": "lab",
+      "date": "2026-05-26",
+      "mode": "thinking",
+      "note": "Poolside's own evaluation with its pool agent harness, max 500 steps, temperature 1.0, top_k 20, thinking mode, 256K context; mean pass@1 over four runs (§6.2.1). 32 CPUs / 48 GB RAM sandbox; some task images/verifiers patched for infrastructure reliability (Appendix A.3).",
+      "evidence": {
+        "kind": "table",
+        "table_id": "S6.T6",
+        "caption": "Table 6: Agentic coding results for Laguna XS.2 against open-weight baselines of comparable size (Devstral Small 2, Gemma 4, Qwen3.5-35B-A3B, Qwen3.6-35B-A3B), with Claude Haiku 4.5 and GPT-5.4 Nano shown as frontier proprietary references of comparable model size. “–” indicates a score not reported",
+        "row_label": "Terminal-Bench 2.0",
+        "column_label": "Laguna XS.2",
+        "column_index": 1,
+        "raw_value": "35.7",
+        "scale_divisor": 100
+      }
+    }
+  ]
+}

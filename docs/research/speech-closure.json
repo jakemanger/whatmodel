@@ -1,0 +1,268 @@
+{
+  "status": "closed",
+  "scope": "Bounded speech audit; these are unverified gaps, not claims that no reusable source exists anywhere.",
+  "checked": "2026-09-25",
+  "counts": {
+    "tts": {
+      "original_count": 36,
+      "covered_after_followup": 18,
+      "remaining": 18
+    },
+    "stt": {
+      "original_count": 30,
+      "covered_after_followup": 22,
+      "remaining": 8
+    }
+  },
+  "current_results_sha256": "526695d5767a4fb0dc4a0c84ad8d036b0bf444ea7e24e914248d5bab0b41ab16",
+  "followup_original_tts_recovered": [
+    "elevenlabs-turbo-v2-5",
+    "inworld-realtime-tts-2",
+    "minimax-speech-2-8-turbo",
+    "speechify-simba-3-2",
+    "vibevoice-1-5b"
+  ],
+  "followup_original_stt_recovered": [
+    "granite-speech-4-1-2b"
+  ],
+  "missing_original_models": [
+    {
+      "id": "cartesia-sonic-3-6",
+      "name": "Sonic 3.6",
+      "provider": "Cartesia",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Vapi has Sonic 3.5/3/2, not 3.6. No exact 3.6 reusable measured result verified."
+    },
+    {
+      "id": "gemini-3-8-flash-tts",
+      "name": "Gemini 3.8 Flash TTS",
+      "provider": "Google",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Licensed evaluations name Gemini 2.5 or 3.1, not 3.8 Flash."
+    },
+    {
+      "id": "gemini-3-8-flash-lite-tts",
+      "name": "Gemini 3.8 Flash-Lite TTS",
+      "provider": "Google",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Licensed evaluations name Gemini 2.5 or 3.1, not 3.8 Flash-Lite."
+    },
+    {
+      "id": "qwen-audio-3-0-tts-plus",
+      "name": "Qwen-Audio-3.0-TTS-Plus",
+      "provider": "Alibaba",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact Qwen-Audio-3.0-TTS-Plus numerical result with verified reuse grant found."
+    },
+    {
+      "id": "elevenlabs-v3-conversational",
+      "name": "Eleven v3 Conversational",
+      "provider": "ElevenLabs",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Production eleven_v3 and Alpha measurements do not establish the Conversational variant."
+    },
+    {
+      "id": "minimax-speech-2-6-hd",
+      "name": "MiniMax Speech 2.6 HD",
+      "provider": "MiniMax",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Speech-02, 2.5 and 2.8 results do not establish 2.6 HD."
+    },
+    {
+      "id": "smallest-lightning-v3-1-pro",
+      "name": "Lightning v3.1 Pro",
+      "provider": "Smallest.ai",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Vapi explicitly identifies lightning_v3.1, without Pro. No evidence equating it to the original Pro variant."
+    },
+    {
+      "id": "openai-tts-1-hd",
+      "name": "TTS-1 HD",
+      "provider": "OpenAI",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No verified licensed measured row for exact tts-1-hd. OpenAI mini-TTS results are a different model."
+    },
+    {
+      "id": "openai-tts-1",
+      "name": "TTS-1",
+      "provider": "OpenAI",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No verified licensed measured row for exact tts-1. OpenAI mini-TTS results are a different model."
+    },
+    {
+      "id": "hume-octave-2",
+      "name": "Octave 2",
+      "provider": "Hume AI",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-ambiguous",
+      "reason": "Emergent names Hume without a version; cannot assign Octave 2. Inworld benchmark adapters supply no qualifying measured Hume result."
+    },
+    {
+      "id": "hume-octave",
+      "name": "Octave TTS (Octave 1)",
+      "provider": "Hume AI",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-ambiguous",
+      "reason": "Emergent names Hume without a version; cannot assign Octave 1. Inworld benchmark adapters supply no qualifying measured Hume result."
+    },
+    {
+      "id": "azure-hd-2-5",
+      "name": "Azure HD 2.5",
+      "provider": "Microsoft",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Verified Azure neural-voice rows are not HD 2.5."
+    },
+    {
+      "id": "amazon-polly-generative",
+      "name": "Polly Generative",
+      "provider": "Amazon",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Verified Polly Neural rows do not establish Generative."
+    },
+    {
+      "id": "openaudio-s1-mini",
+      "name": "OpenAudio S1 Mini",
+      "provider": "Fish Audio",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "S1 measurements do not establish S1-mini; no independent original licensed mini result verified."
+    },
+    {
+      "id": "higgs-audio-v3-tts",
+      "name": "Higgs Audio V3 TTS",
+      "provider": "Boson AI",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Emergent own Higgs Audio v2 measurements do not establish v3."
+    },
+    {
+      "id": "magpie-tts-multilingual-357m",
+      "name": "Magpie TTS Multilingual 357M",
+      "provider": "NVIDIA",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "checkpoint-unverified",
+      "reason": "No qualified exact original base checkpoint result verified. Georgian adaptations/newer Magpie versions do not recover the original checkpoint."
+    },
+    {
+      "id": "maya1",
+      "name": "Maya1",
+      "provider": "Maya Research",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact reusable own-measured numerical result verified; weights licence alone is insufficient."
+    },
+    {
+      "id": "breeze-tts-2",
+      "name": "Breeze TTS 2",
+      "provider": "BreezeBlue",
+      "category": "tts",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact reusable own-measured numerical result verified; weights licence alone is insufficient."
+    },
+    {
+      "id": "gpt-transcribe",
+      "name": "GPT Transcribe",
+      "provider": "OpenAI",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Measured GPT-4o Transcribe/mini versions do not establish later GPT Transcribe."
+    },
+    {
+      "id": "assemblyai-universal-3-5-pro",
+      "name": "Universal-3.5 Pro",
+      "provider": "AssemblyAI",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact Universal-3.5 Pro measured numerical result with verified reuse grant found."
+    },
+    {
+      "id": "mai-transcribe-2",
+      "name": "MAI-Transcribe-2",
+      "provider": "Microsoft AI",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact MAI-Transcribe-2 measured numerical result with verified reuse grant found."
+    },
+    {
+      "id": "gemini-3-5-transcribe",
+      "name": "Gemini 3.5 Transcribe",
+      "provider": "Google",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Licensed Gemini 2.5 transcription evaluations do not establish 3.5 Transcribe."
+    },
+    {
+      "id": "grok-voice-transcribe-2",
+      "name": "Grok Voice Transcribe 2.0",
+      "provider": "xAI",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact Grok Voice Transcribe 2.0 numerical result with verified reuse grant found."
+    },
+    {
+      "id": "gladia-solaria-3",
+      "name": "Solaria-3",
+      "provider": "Gladia",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "no-verified-result",
+      "reason": "No exact Solaria-3 numerical result with verified reuse grant found."
+    },
+    {
+      "id": "soniox-v5-async",
+      "name": "Soniox v5 Async",
+      "provider": "Soniox",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "version-mismatch",
+      "reason": "Earlier Soniox/unversioned gateway results do not establish v5 Async."
+    },
+    {
+      "id": "granite-speech-5-0-470m-turboctc",
+      "name": "Granite Speech 5.0 470M TurboCTC",
+      "provider": "IBM",
+      "category": "stt",
+      "status": "no reusable exact-model measured source verified in this audit",
+      "reason_code": "numeric-provenance-unverified",
+      "reason": "Reviewed card evaluation figures did not yield a verified standalone exact own-result numerical table in this pass; no graph estimation or relicensing third-party Open ASR results."
+    }
+  ],
+  "no_audio_imports": true,
+  "shared_data_or_app_files_edited": false,
+  "pushed": false,
+  "workflows_triggered": false
+}

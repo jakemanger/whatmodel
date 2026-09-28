@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-25",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_file": "licenses/CC-BY-SA-4.0.txt",
+  "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+  "modifications": "Selected rows, model identifiers mapped, explicit fixed-setting output costs calculated; settings and excluded charges preserved in api.price_note.",
+  "source": {
+    "id": "cloudflare-workers-ai-pricing",
+    "name": "Cloudflare Workers AI pricing",
+    "kind": "first-party",
+    "license": "CC-BY-SA-4.0",
+    "revision": "b182511e39518f4b3304edd7bb3e0b0d3017b035",
+    "url": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+    "scope": "Repository README and root LICENSE say CC BY 4.0; repository policy page specifically says Workers documentation CC BY-SA 4.0. Conservative treatment: retain both notices and comply with CC BY-SA 4.0 for this separate tranche. Do not label this MIT or silently remove share-alike.",
+    "checked": "2026-09-25"
+  },
+  "api_patches": [
+    {
+      "model": "llama-3-2-3b",
+      "category": "llm",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price_in": 0.051,
+        "price_out": 0.335,
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Workers AI published marginal USD per 1M tokens after free allocation. Workers plan fees excluded; billed in Neurons. Published USD rates are rounded. Product: Workers AI. API model: @cf/meta/llama-3.2-3b-instruct. Settings: plan=Workers Paid, free allocation=excluded, billing=published marginal USD rates; service bills Neurons. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "1M-tokens",
+        "product": "Workers AI",
+        "api_model": "@cf/meta/llama-3.2-3b-instruct",
+        "settings": {
+          "plan": "Workers Paid",
+          "free_allocation": "excluded",
+          "billing": "published marginal USD rates; service bills Neurons"
+        }
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "qwen2-5-coder-32b",
+      "category": "llm",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price_in": 0.66,
+        "price_out": 1,
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Workers AI published marginal USD per 1M tokens after free allocation. Workers plan fees excluded; billed in Neurons. Published USD rates are rounded. Product: Workers AI. API model: @cf/qwen/qwen2.5-coder-32b-instruct. Settings: plan=Workers Paid, free allocation=excluded, billing=published marginal USD rates; service bills Neurons. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "1M-tokens",
+        "product": "Workers AI",
+        "api_model": "@cf/qwen/qwen2.5-coder-32b-instruct",
+        "settings": {
+          "plan": "Workers Paid",
+          "free_allocation": "excluded",
+          "billing": "published marginal USD rates; service bills Neurons"
+        }
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-32b",
+      "category": "llm",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price_in": 0.497,
+        "price_out": 4.881,
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Workers AI published marginal USD per 1M tokens after free allocation. Workers plan fees excluded; billed in Neurons. Published USD rates are rounded. Product: Workers AI. API model: @cf/deepseek-ai/deepseek-r1-distill-qwen-32b. Settings: plan=Workers Paid, free allocation=excluded, billing=published marginal USD rates; service bills Neurons. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "1M-tokens",
+        "product": "Workers AI",
+        "api_model": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+        "settings": {
+          "plan": "Workers Paid",
+          "free_allocation": "excluded",
+          "billing": "published marginal USD rates; service bills Neurons"
+        }
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "flux-2-dev",
+      "category": "image",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price": 0.04592,
+        "unit": "image",
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Cloudflare Workers AI; 4 output tiles × 28 steps × USD0.00041/output tile/step; zero input-image tiles. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-dev. Settings: width=1024, height=1024, steps=28, input images=0, output tiles=4. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "image",
+        "product": "Workers AI text-to-image",
+        "api_model": "@cf/black-forest-labs/flux-2-dev",
+        "settings": {
+          "width": 1024,
+          "height": 1024,
+          "steps": 28,
+          "input_images": 0,
+          "output_tiles": 4
+        },
+        "price_basis": "derived fixed-setting output cost using published rounded USD rates",
+        "additional_charges": "Workers Paid plan base fee, input images and usage beyond this setting"
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "flux-2-klein-4b",
+      "category": "image",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price": 0.001148,
+        "unit": "image",
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Cloudflare Workers AI; 4 output tiles × USD0.000287/output tile; zero input-image tiles. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-klein-4b. Settings: width=1024, height=1024, input images=0, output tiles=4. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "image",
+        "product": "Workers AI text-to-image",
+        "api_model": "@cf/black-forest-labs/flux-2-klein-4b",
+        "settings": {
+          "width": 1024,
+          "height": 1024,
+          "input_images": 0,
+          "output_tiles": 4
+        },
+        "price_basis": "derived fixed-setting output cost using published rounded USD rates",
+        "additional_charges": "Workers Paid plan base fee, input images and usage beyond this setting"
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "flux-2-klein-9b",
+      "category": "image",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price": 0.015,
+        "unit": "image",
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Cloudflare Workers AI; USD0.015 for first MP (explicitly 1024×1024 in source); no input-image MP. Workers plan fee excluded; published USD equivalent is rounded, service bills Neurons. Product: Workers AI text-to-image. API model: @cf/black-forest-labs/flux-2-klein-9b. Settings: width=1024, height=1024, input images=0. Price basis: derived fixed-setting output cost using published rounded USD rates. Additional/excluded charges: Workers Paid plan base fee, input images and usage beyond this setting. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "image",
+        "product": "Workers AI text-to-image",
+        "api_model": "@cf/black-forest-labs/flux-2-klein-9b",
+        "settings": {
+          "width": 1024,
+          "height": 1024,
+          "input_images": 0
+        },
+        "price_basis": "derived fixed-setting output cost using published rounded USD rates",
+        "additional_charges": "Workers Paid plan base fee, input images and usage beyond this setting"
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "whisper-large-v3-turbo",
+      "category": "stt",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price": 0.0005,
+        "unit": "audio-minute",
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/openai/whisper-large-v3-turbo. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "audio-minute",
+        "product": "Workers AI file transcription",
+        "api_model": "@cf/openai/whisper-large-v3-turbo",
+        "settings": {
+          "streaming": false,
+          "plan": "paid",
+          "free_allocation": "excluded"
+        },
+        "price_basis": "published rounded USD/audio-minute"
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    },
+    {
+      "model": "deepgram-nova-3",
+      "category": "stt",
+      "api": {
+        "provider": "Cloudflare",
+        "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+        "price": 0.0052,
+        "unit": "audio-minute",
+        "price_source": "https://github.com/cloudflare/cloudflare-docs/blob/b182511e39518f4b3304edd7bb3e0b0d3017b035/src/content/docs/workers-ai/platform/pricing.mdx",
+        "price_note": "Cloudflare Workers AI published USD per input audio minute; file transcription, not WebSocket streaming. Plan base fees excluded. USD table is rounded; backend bills Neurons. Product: Workers AI file transcription. API model: @cf/deepgram/nova-3. Settings: streaming=no, plan=paid, free allocation=excluded. Price basis: published rounded USD/audio-minute. Currency: USD."
+      },
+      "billing": {
+        "currency": "USD",
+        "unit": "audio-minute",
+        "product": "Workers AI file transcription",
+        "api_model": "@cf/deepgram/nova-3",
+        "settings": {
+          "streaming": false,
+          "plan": "paid",
+          "free_allocation": "excluded"
+        },
+        "price_basis": "published rounded USD/audio-minute"
+      },
+      "license": "CC-BY-SA-4.0",
+      "attribution": "Cloudflare and contributors, Workers AI pricing. Selected rates, model identifiers mapped; fixed-setting image costs calculated. Cloudflare-derived extracts and patches are distributed under CC BY-SA 4.0. No endorsement; no trademark licence.",
+      "source_id": "cloudflare-workers-ai-pricing"
+    }
+  ]
+}

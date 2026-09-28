@@ -1,0 +1,86 @@
+[
+  {
+    "evaluation_run_group": "visual-gap-amd-mxfp:flux-bf16",
+    "evaluator": "AMD ROCm blog authors",
+    "results": [
+      {
+        "model": "flux-1-schnell",
+        "bench": "geneval",
+        "source_group": "visual-gap-amd-mxfp:geneval",
+        "score": 0.677
+      }
+    ]
+  },
+  {
+    "evaluation_run_group": "visual-gap-amd-mxfp:wan21-bf16",
+    "evaluator": "AMD ROCm blog authors",
+    "results": [
+      {
+        "model": "wan-2-1-14b",
+        "bench": "vbench-t2v-subject-consistency-amd",
+        "source_group": "visual-gap-amd-mxfp:vbench-t2v-subject-consistency-amd",
+        "score": 0.9366
+      },
+      {
+        "model": "wan-2-1-14b",
+        "bench": "vbench-t2v-background-consistency-amd",
+        "source_group": "visual-gap-amd-mxfp:vbench-t2v-background-consistency-amd",
+        "score": 0.9478
+      },
+      {
+        "model": "wan-2-1-14b",
+        "bench": "vbench-t2v-motion-smoothness-amd",
+        "source_group": "visual-gap-amd-mxfp:vbench-t2v-motion-smoothness-amd",
+        "score": 0.9888
+      },
+      {
+        "model": "wan-2-1-14b",
+        "bench": "vbench-t2v-aesthetic-quality-amd",
+        "source_group": "visual-gap-amd-mxfp:vbench-t2v-aesthetic-quality-amd",
+        "score": 0.6271
+      },
+      {
+        "model": "wan-2-1-14b",
+        "bench": "vbench-t2v-imaging-quality-amd",
+        "source_group": "visual-gap-amd-mxfp:vbench-t2v-imaging-quality-amd",
+        "score": 0.6556
+      }
+    ]
+  },
+  {
+    "evaluation_run_group": "visual-gap-jenga:hunyuan-standard",
+    "evaluator": "Jenga authors (CUHK / HKUST / Kuaishou / SmartMore)",
+    "results": [
+      {
+        "model": "hunyuanvideo",
+        "bench": "vbench-t2v-total",
+        "source_group": "visual-gap-jenga:vbench-t2v-total",
+        "score": 0.8274
+      }
+    ]
+  },
+  {
+    "evaluation_run_group": "visual-gap-mobilewan:original-wan22-480p",
+    "evaluator": "MobileWan authors / Qualcomm",
+    "results": [
+      {
+        "model": "wan-2-2-5b",
+        "bench": "vbench-t2v-total-mobilewan-480p",
+        "source_group": "visual-gap-mobilewan:vbench-t2v-total-mobilewan-480p",
+        "score": 0.813
+      }
+    ]
+  },
+  {
+    "evaluation_run_group": "visual-gap-target-bench:wan22-base-vggt",
+    "evaluator": "Target-Bench authors (TUM / Bosch AI Center / ETH / NJU)",
+    "results": [
+      {
+        "model": "wan-2-2-5b",
+        "bench": "target-bench-v2-vggt-wo-i2v",
+        "source_group": "visual-gap-target-bench:target-bench-v2-vggt-wo-i2v",
+        "score": 0.084
+      }
+    ]
+  }
+]

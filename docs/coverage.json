@@ -1,0 +1,290 @@
+{
+  "baseline_commit": "60c5632",
+  "categories": {
+    "llm": {
+      "original_models": 206,
+      "original_results": 1426,
+      "catalogue_models": 211,
+      "results": 1642,
+      "benchmark_definitions": 145,
+      "models_with_results": 208,
+      "original_models_with_results": 203,
+      "models_with_score": 177,
+      "comparison_sets": [
+        {
+          "models": 177,
+          "series": 72
+        }
+      ],
+      "listed_models": 176,
+      "usable_cells": 1323,
+      "calibrated_benchmark_series": 72,
+      "original_models_without_results": [
+        "grok-build-0-1",
+        "command-a-plus",
+        "exaone-4-5-33b"
+      ],
+      "evidence_but_no_score": [
+        "longcat-2-0",
+        "qwen3-4b-thinking-2507",
+        "qwen3-5-0-8b",
+        "phi-4-reasoning",
+        "mistral-small-4",
+        "qwen3-coder-next",
+        "ernie-4-5-300b-a47b",
+        "ling-3-0-flash",
+        "devstral-small-2",
+        "ministral-3-3b",
+        "ministral-3-8b",
+        "ministral-3-14b",
+        "qwen3-coder-30b-a3b",
+        "gemma-3-270m",
+        "gemma-3n-e2b",
+        "smollm3-3b",
+        "exaone-4-0-32b",
+        "exaone-4-0-1-2b",
+        "nemotron-nano-9b-v2",
+        "nemotron-3-nano-4b",
+        "nemotron-cascade-2-30b-a3b",
+        "lfm2-24b-a2b",
+        "lfm2-5-8b-a1b",
+        "lfm2-5-1-2b-thinking",
+        "apriel-1-6-15b-thinker",
+        "falcon-h1r-7b",
+        "k2-horizon-7b",
+        "phi-4-mini-reasoning",
+        "ministral-3-14b-reasoning",
+        "ministral-3-3b-reasoning",
+        "ministral-3-8b-reasoning"
+      ],
+      "new_models": [
+        "deepseek-r1-distill-llama-70b",
+        "phi-4-mini-reasoning",
+        "ministral-3-14b-reasoning",
+        "ministral-3-3b-reasoning",
+        "ministral-3-8b-reasoning"
+      ]
+    },
+    "image": {
+      "original_models": 38,
+      "original_results": 102,
+      "catalogue_models": 50,
+      "results": 98,
+      "benchmark_definitions": 11,
+      "models_with_results": 50,
+      "original_models_with_results": 38,
+      "models_with_score": 45,
+      "comparison_sets": [
+        {
+          "models": 38,
+          "series": 2
+        },
+        {
+          "models": 4,
+          "series": 1
+        },
+        {
+          "models": 3,
+          "series": 9
+        }
+      ],
+      "listed_models": 34,
+      "usable_cells": 81,
+      "calibrated_benchmark_series": 12,
+      "original_models_without_results": [],
+      "evidence_but_no_score": [
+        "flux-1-schnell",
+        "ernie-image",
+        "ernie-image-turbo",
+        "llada-image",
+        "llada-image-turbo"
+      ],
+      "new_models": [
+        "mage-flow-base",
+        "mage-flow",
+        "mage-flow-turbo",
+        "sd-1-5",
+        "sd-2-1",
+        "deepfloyd-if-xl",
+        "qwen-image-2-0-pro",
+        "seedream-4-5",
+        "imagen-4",
+        "kling-image-2-1",
+        "llada-image",
+        "llada-image-turbo"
+      ]
+    },
+    "video": {
+      "original_models": 30,
+      "original_results": 61,
+      "catalogue_models": 48,
+      "results": 106,
+      "benchmark_definitions": 15,
+      "models_with_results": 47,
+      "original_models_with_results": 29,
+      "models_with_score": 44,
+      "comparison_sets": [
+        {
+          "models": 44,
+          "series": 7
+        }
+      ],
+      "listed_models": 22,
+      "usable_cells": 98,
+      "calibrated_benchmark_series": 7,
+      "original_models_without_results": [
+        "ltx-2-5"
+      ],
+      "evidence_but_no_score": [
+        "wan-2-2-5b",
+        "wan-2-1-14b",
+        "hunyuanvideo"
+      ],
+      "new_models": [
+        "seedance-1-0-pro-fast",
+        "kling-2-5-turbo-pro",
+        "hailuo-02",
+        "pixverse-v5-5",
+        "wan-2-6",
+        "kandinsky-5-0-pro",
+        "gemini-omni-1-1-flash",
+        "flux-3-video",
+        "seedance-2-5",
+        "grok-imagine-video-1-5",
+        "kling-3-0-pro",
+        "wan-2-5-preview",
+        "happyhorse-1-1",
+        "vidu-q3",
+        "cosmos3-nano",
+        "p-video",
+        "wan-2-2-i2v-a14b",
+        "hunyuanvideo-1-5-i2v"
+      ]
+    },
+    "tts": {
+      "original_models": 36,
+      "original_results": 52,
+      "catalogue_models": 57,
+      "results": 72,
+      "benchmark_definitions": 16,
+      "models_with_results": 39,
+      "original_models_with_results": 18,
+      "models_with_score": 35,
+      "comparison_sets": [
+        {
+          "models": 24,
+          "series": 9
+        },
+        {
+          "models": 7,
+          "series": 1
+        },
+        {
+          "models": 4,
+          "series": 1
+        }
+      ],
+      "listed_models": 14,
+      "usable_cells": 61,
+      "calibrated_benchmark_series": 11,
+      "original_models_without_results": [
+        "cartesia-sonic-3-6",
+        "gemini-3-8-flash-tts",
+        "gemini-3-8-flash-lite-tts",
+        "qwen-audio-3-0-tts-plus",
+        "elevenlabs-v3-conversational",
+        "minimax-speech-2-6-hd",
+        "smallest-lightning-v3-1-pro",
+        "openai-tts-1-hd",
+        "openai-tts-1",
+        "hume-octave-2",
+        "hume-octave",
+        "azure-hd-2-5",
+        "amazon-polly-generative",
+        "openaudio-s1-mini",
+        "higgs-audio-v3-tts",
+        "magpie-tts-multilingual-357m",
+        "maya1",
+        "breeze-tts-2"
+      ],
+      "evidence_but_no_score": [
+        "elevenlabs-turbo-v2-5",
+        "openaudio-s1",
+        "fish-audio-s2-pro",
+        "dots-tts-soar"
+      ],
+      "new_models": [
+        "openvoice-v2",
+        "metavoice-1b-v0-1",
+        "tortoise-tts-v2",
+        "gemini-2-5-flash-preview-tts",
+        "gemini-2-5-pro-preview-tts",
+        "higgs-audio-v2",
+        "gpt-4o-mini-tts",
+        "deepgram-aura-2",
+        "kyutai-tts-1-6b-en-fr",
+        "dots-tts-soar",
+        "seed-tts-2-0-standard",
+        "azure-neural-tts-xiaoxiao",
+        "cosyvoice-v3-plus",
+        "mimo-v2-5-tts",
+        "amazon-polly-neural",
+        "addis-voice-2",
+        "azure-ameha-neural",
+        "azure-mekdes-neural",
+        "gemini-3-1-flash-tts-preview",
+        "mms-tts-amh",
+        "elevenlabs-v3-alpha"
+      ]
+    },
+    "stt": {
+      "original_models": 30,
+      "original_results": 47,
+      "catalogue_models": 31,
+      "results": 83,
+      "benchmark_definitions": 16,
+      "models_with_results": 23,
+      "original_models_with_results": 22,
+      "models_with_score": 22,
+      "comparison_sets": [
+        {
+          "models": 22,
+          "series": 13
+        }
+      ],
+      "listed_models": 21,
+      "usable_cells": 78,
+      "calibrated_benchmark_series": 13,
+      "original_models_without_results": [
+        "gpt-transcribe",
+        "assemblyai-universal-3-5-pro",
+        "mai-transcribe-2",
+        "gemini-3-5-transcribe",
+        "grok-voice-transcribe-2",
+        "gladia-solaria-3",
+        "soniox-v5-async",
+        "granite-speech-5-0-470m-turboctc"
+      ],
+      "evidence_but_no_score": [
+        "granite-speech-4-1-2b"
+      ],
+      "new_models": [
+        "deepgram-nova-2"
+      ]
+    }
+  },
+  "totals": {
+    "original_models": 340,
+    "original_results": 1688,
+    "catalogue_models": 397,
+    "results": 2001,
+    "priced_models": 181,
+    "original_priced_models": 271,
+    "context_models": 183,
+    "original_context_models": 206,
+    "published_speed_references": 76,
+    "speed_models": 16,
+    "quantization_findings": 25,
+    "memory_findings": 5
+  }
+}

@@ -1,0 +1,985 @@
+{
+  "license": "CC-BY-SA-4.0",
+  "notice": "Adapted rows from CC BY-SA 4.0 sources; redistribute under CC BY-SA 4.0 with attribution. See each source's attribution and /licenses/<source-id>.txt.",
+  "sources": [
+    {
+      "id": "visual-wise",
+      "name": "WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation (arXiv v4)",
+      "match": [
+        "arxiv.org/html/2503.07265v4"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-SA-4.0",
+      "terms_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verdict": "allowed",
+      "checked": "2026-09-26",
+      "license_url": "/licenses/visual-wise.txt",
+      "attribution": "Yuwei Niu, Munan Ning, Mengren Zheng, Weiyang Jin, Bin Lin, Peng Jin, Jiaqi Liao, Chaoran Feng, Fanqing Meng, Kunpeng Ning, Bin Zhu, Li Yuan. WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation, arXiv:2503.07265v4 (2 Jun 2026), CC BY-SA 4.0. Extracted the Table 1 Overall WiScore for selected models; model labels mapped only to the stated checkpoint. No values estimated or rerun. Adapted rows must be shared under CC BY-SA 4.0. No endorsement.",
+      "quote": "arXiv abs page for 2503.07265v4 links \"Rights to this article\" to http://creativecommons.org/licenses/by-sa/4.0/ (v1-v4 all CC BY-SA 4.0). The GitHub repo PKU-YuanGroup/WISE has no licence file and its leadboard.md is NOT used.",
+      "scope": "Only the benchmark authors' own Table 1 evaluation (Sec. 4.1: \"We evaluate 20 T2I models ... we use the official default configurations of each model and fix the random seed\"; judge GPT-4o-2024-05-13). Table 2 (rewritten prompts), appendix judge/weight/seed sensitivity tables and the Table 11 supplementary evaluation (judge not stated) are not used. ShareAlike: publish in the separate CC BY-SA tranche.",
+      "icon": "arxiv.org"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "wise-wiscore-overall",
+      "name": "WISE (WiScore overall, GPT-4o judge)",
+      "category": "image",
+      "kind": "acc",
+      "chance": 0,
+      "url": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "task": "text-to-image",
+      "setup": {
+        "url": "https://github.com/PKU-YuanGroup/WISE",
+        "version": "WISE original 1,000 prompts (25 sub-domains), arXiv v4 Table 1",
+        "metric": "Published Overall WiScore (weighted average across Cultural, Time, Space, Biology, Physics, Chemistry); WiScore = (0.7 consistency + 0.2 realism + 0.1 aesthetics)/2, already on 0-1.",
+        "protocol": "Original (not rewritten) prompts; official default configuration per model with fixed seed; GPT-4o-2024-05-13 judge.",
+        "comparability": "Not the rewritten-prompt Table 2, not the WISE-Verified/Qwen-judge leaderboard in the repo, not the gemini-3.1-flash-lite sensitivity runs."
+      },
+      "reported_scale": "0-1",
+      "benchmark_family": "wise"
+    }
+  ],
+  "models": [
+    {
+      "id": "bagel",
+      "name": "BAGEL",
+      "provider": "ByteDance Seed",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet",
+          "reported_label": "bagel",
+          "organization": "bytedance",
+          "arena_license_column": "Apache 2.0"
+        },
+        {
+          "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
+          "reported_label": "bagel",
+          "organization": "bytedance",
+          "arena_license_column": "Apache 2.0"
+        },
+        {
+          "source": "https://arxiv.org/html/2509.14232v5#S3.T2",
+          "reported_label": "BAGEL (thinking)"
+        },
+        {
+          "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
+          "reported_label": "Bagel (Deng et al., 2025); Table 2 row 'Bagel w/ Thinking'"
+        },
+        {
+          "source": "https://arxiv.org/html/2506.02161v3#S4.T2",
+          "reported_label": "Bagel"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "BAGEL / BAGEL+CoT"
+        },
+        {
+          "source": "https://arxiv.org/html/2605.13062v1#S4.T3",
+          "reported_label": "Bagel (Deng et al. 2025, arXiv 2505.14683; thinking mode off — Bagel-Think is a separate row)"
+        },
+        {
+          "source": "https://arxiv.org/html/2603.28547v1#S5.T3",
+          "reported_label": "Bagel"
+        },
+        {
+          "source": "https://arxiv.org/html/2512.02790v1#S6.T4",
+          "reported_label": "BAGEL"
+        }
+      ],
+      "license": "Apache 2.0"
+    },
+    {
+      "id": "blip3o-8b",
+      "name": "BLIP3-o 8B",
+      "provider": "Salesforce Research",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2509.14232v5#S3.T2",
+          "reported_label": "BLIP3o-8B"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "BLIP3o-8B"
+        }
+      ]
+    },
+    {
+      "id": "emu3",
+      "name": "Emu3",
+      "provider": "BAAI",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2509.14232v5#S3.T2",
+          "reported_label": "Emu3"
+        },
+        {
+          "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
+          "reported_label": "Emu3 (Wang et al., 2024); image generation uses the released Emu3 generation checkpoint, exact checkpoint name not printed"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "Emu3"
+        }
+      ]
+    },
+    {
+      "id": "sd-3-medium",
+      "name": "Stable Diffusion 3 Medium",
+      "provider": "Stability AI",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
+          "reported_label": "SD-3-Medium / Stable-Diffusion-3-Medium"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "SD-3-medium (stable-diffusion-3-medium)"
+        }
+      ]
+    },
+    {
+      "id": "sd-3-5-medium",
+      "name": "Stable Diffusion 3.5 Medium",
+      "provider": "Stability AI",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
+          "reported_label": "SD-3.5-Medium / Stable-Diffusion-3.5-Medium"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "SD-3.5-medium (stable-diffusion-3.5-medium)"
+        }
+      ]
+    },
+    {
+      "id": "playground-v2-5",
+      "name": "Playground v2.5",
+      "provider": "Playground",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
+          "reported_label": "Playground-v2.5"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "playground-v2.5 (playground-v2.5-1024px-aesthetic)"
+        }
+      ]
+    },
+    {
+      "id": "janus-pro-7b",
+      "name": "Janus-Pro-7B",
+      "provider": "DeepSeek",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
+          "reported_label": "Janus-Pro-7B"
+        },
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "Janus-Pro-7B"
+        }
+      ]
+    },
+    {
+      "id": "pixart-alpha",
+      "name": "PixArt-α (PixArt-XL-2-1024-MS)",
+      "provider": "PixArt (Huawei Noah's Ark Lab et al.)",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "PixArt-Alpha (PixArt-XL-2-1024-MS)"
+        }
+      ]
+    },
+    {
+      "id": "janus-pro-1b",
+      "name": "Janus-Pro-1B",
+      "provider": "DeepSeek",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "Janus-Pro-1B"
+        }
+      ]
+    },
+    {
+      "id": "janus-1-3b",
+      "name": "Janus-1.3B",
+      "provider": "DeepSeek",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "Janus-1.3B"
+        }
+      ]
+    },
+    {
+      "id": "vila-u-7b-256",
+      "name": "VILA-U 7B (256px)",
+      "provider": "MIT Han Lab / NVIDIA",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "vila-u-7b-256"
+        }
+      ]
+    },
+    {
+      "id": "uniworld-v1",
+      "name": "UniWorld-V1",
+      "provider": "PKU-YuanGroup",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "UniWorld-V1"
+        }
+      ]
+    },
+    {
+      "id": "metaquery-xl",
+      "name": "MetaQuery-XL",
+      "provider": "Meta / NYU",
+      "category": "image",
+      "open_weights": true,
+      "identity_evidence": [
+        {
+          "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+          "reported_label": "MetaQuery-XL"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "model": "flux-1-dev",
+      "bench": "wise-wiscore-overall",
+      "score": 0.5,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "FLUX.1-dev; Table 1 (S4.T1); Overall 0.50. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "FLUX.1-dev",
+        "table": "S4.T1",
+        "reported_value": "0.50",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "FLUX.1-dev",
+          "0.48",
+          "0.58",
+          "0.62",
+          "0.42",
+          "0.51",
+          "0.35",
+          "0.50"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "flux-1-schnell",
+      "bench": "wise-wiscore-overall",
+      "score": 0.4,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "FLUX.1-schnell; Table 1 (S4.T1); Overall 0.40. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "FLUX.1-schnell",
+        "table": "S4.T1",
+        "reported_value": "0.40",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "FLUX.1-schnell",
+          "0.39",
+          "0.44",
+          "0.50",
+          "0.31",
+          "0.44",
+          "0.26",
+          "0.40"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "pixart-alpha",
+      "bench": "wise-wiscore-overall",
+      "score": 0.47,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "PixArt-Alpha; Table 1 (S4.T1); Overall 0.47. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Checkpoint PixArt-XL-2-1024-MS (Sec. 4.1). Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "PixArt-Alpha",
+        "table": "S4.T1",
+        "reported_value": "0.47",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "PixArt-Alpha",
+          "0.45",
+          "0.50",
+          "0.48",
+          "0.49",
+          "0.56",
+          "0.34",
+          "0.47"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "playground-v2-5",
+      "bench": "wise-wiscore-overall",
+      "score": 0.49,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "playground-v2.5; Table 1 (S4.T1); Overall 0.49. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Checkpoint playground-v2.5-1024px-aesthetic (Sec. 4.1). Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "playground-v2.5",
+        "table": "S4.T1",
+        "reported_value": "0.49",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "playground-v2.5",
+          "0.49",
+          "0.58",
+          "0.55",
+          "0.43",
+          "0.48",
+          "0.33",
+          "0.49"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "sd-1-5",
+      "bench": "wise-wiscore-overall",
+      "score": 0.32,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "SD-v1-5; Table 1 (S4.T1); Overall 0.32. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Checkpoint stable-diffusion-v1-5. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "SD-v1-5",
+        "table": "S4.T1",
+        "reported_value": "0.32",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "SD-v1-5",
+          "0.34",
+          "0.35",
+          "0.32",
+          "0.28",
+          "0.29",
+          "0.21",
+          "0.32"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "sd-2-1",
+      "bench": "wise-wiscore-overall",
+      "score": 0.32,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "SD-2-1; Table 1 (S4.T1); Overall 0.32. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Checkpoint stable-diffusion-2-1. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "SD-2-1",
+        "table": "S4.T1",
+        "reported_value": "0.32",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "SD-2-1",
+          "0.30",
+          "0.38",
+          "0.35",
+          "0.33",
+          "0.34",
+          "0.21",
+          "0.32"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "sd-3-medium",
+      "bench": "wise-wiscore-overall",
+      "score": 0.42,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "SD-3-medium; Table 1 (S4.T1); Overall 0.42. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "SD-3-medium",
+        "table": "S4.T1",
+        "reported_value": "0.42",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "SD-3-medium",
+          "0.42",
+          "0.44",
+          "0.48",
+          "0.39",
+          "0.47",
+          "0.29",
+          "0.42"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "sd-3-5-medium",
+      "bench": "wise-wiscore-overall",
+      "score": 0.45,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "SD-3.5-medium; Table 1 (S4.T1); Overall 0.45. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "SD-3.5-medium",
+        "table": "S4.T1",
+        "reported_value": "0.45",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "SD-3.5-medium",
+          "0.43",
+          "0.50",
+          "0.52",
+          "0.41",
+          "0.53",
+          "0.33",
+          "0.45"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "sd-3-5-large",
+      "bench": "wise-wiscore-overall",
+      "score": 0.46,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "SD-3.5-large; Table 1 (S4.T1); Overall 0.46. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "SD-3.5-large",
+        "table": "S4.T1",
+        "reported_value": "0.46",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "SD-3.5-large",
+          "0.44",
+          "0.50",
+          "0.58",
+          "0.44",
+          "0.52",
+          "0.31",
+          "0.46"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "bagel",
+      "bench": "wise-wiscore-overall",
+      "score": 0.7,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "BAGEL+CoT; Table 1 (S4.T1); Overall 0.70. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Setting: chain-of-thought (thinking) enabled, the model's highest reasoning setting; same table reports BAGEL without CoT at 0.52 (not recorded separately). Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "BAGEL+CoT",
+        "table": "S4.T1",
+        "reported_value": "0.70",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "BAGEL+CoT",
+          "0.76",
+          "0.69",
+          "0.75",
+          "0.65",
+          "0.75",
+          "0.58",
+          "0.70"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "qwen-image",
+      "bench": "wise-wiscore-overall",
+      "score": 0.62,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "Qwen-Image; Table 1 (S4.T1); Overall 0.62. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "Qwen-Image",
+        "table": "S4.T1",
+        "reported_value": "0.62",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "Qwen-Image",
+          "0.62",
+          "0.63",
+          "0.77",
+          "0.57",
+          "0.75",
+          "0.40",
+          "0.62"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "uniworld-v1",
+      "bench": "wise-wiscore-overall",
+      "score": 0.55,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "lab",
+      "date": "2026-06-02",
+      "note": "UniWorld-V1; Table 1 (S4.T1); Overall 0.55. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. UniWorld-V1 (arXiv 2506.03147) shares authors Bin Lin, Yuwei Niu and Li Yuan with WISE, so this row is a lab (own-group) result. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "UniWorld-V1",
+        "table": "S4.T1",
+        "reported_value": "0.55",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "UniWorld-V1",
+          "0.53",
+          "0.55",
+          "0.73",
+          "0.45",
+          "0.59",
+          "0.41",
+          "0.55"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors overlapping with the model authors (PKU-YuanGroup)"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "metaquery-xl",
+      "bench": "wise-wiscore-overall",
+      "score": 0.55,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "MetaQuery-XL; Table 1 (S4.T1); Overall 0.55. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "MetaQuery-XL",
+        "table": "S4.T1",
+        "reported_value": "0.55",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "MetaQuery-XL",
+          "0.56",
+          "0.55",
+          "0.62",
+          "0.49",
+          "0.63",
+          "0.41",
+          "0.55"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "blip3o-8b",
+      "bench": "wise-wiscore-overall",
+      "score": 0.52,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "BLIP3o-8B; Table 1 (S4.T1); Overall 0.52. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "BLIP3o-8B",
+        "table": "S4.T1",
+        "reported_value": "0.52",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "BLIP3o-8B",
+          "0.49",
+          "0.51",
+          "0.63",
+          "0.54",
+          "0.63",
+          "0.37",
+          "0.52"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "emu3",
+      "bench": "wise-wiscore-overall",
+      "score": 0.39,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "Emu3; Table 1 (S4.T1); Overall 0.39. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "Emu3",
+        "table": "S4.T1",
+        "reported_value": "0.39",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "Emu3",
+          "0.34",
+          "0.45",
+          "0.48",
+          "0.41",
+          "0.45",
+          "0.27",
+          "0.39"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "janus-pro-7b",
+      "bench": "wise-wiscore-overall",
+      "score": 0.35,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "Janus-Pro-7B; Table 1 (S4.T1); Overall 0.35. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "Janus-Pro-7B",
+        "table": "S4.T1",
+        "reported_value": "0.35",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "Janus-Pro-7B",
+          "0.30",
+          "0.37",
+          "0.49",
+          "0.36",
+          "0.42",
+          "0.26",
+          "0.35"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "janus-pro-1b",
+      "bench": "wise-wiscore-overall",
+      "score": 0.26,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "Janus-Pro-1B; Table 1 (S4.T1); Overall 0.26. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "Janus-Pro-1B",
+        "table": "S4.T1",
+        "reported_value": "0.26",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "Janus-Pro-1B",
+          "0.20",
+          "0.28",
+          "0.45",
+          "0.24",
+          "0.32",
+          "0.16",
+          "0.26"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "janus-1-3b",
+      "bench": "wise-wiscore-overall",
+      "score": 0.23,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "Janus-1.3B; Table 1 (S4.T1); Overall 0.23. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "Janus-1.3B",
+        "table": "S4.T1",
+        "reported_value": "0.23",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "Janus-1.3B",
+          "0.16",
+          "0.26",
+          "0.35",
+          "0.28",
+          "0.30",
+          "0.14",
+          "0.23"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    },
+    {
+      "model": "vila-u-7b-256",
+      "bench": "wise-wiscore-overall",
+      "score": 0.31,
+      "source": "https://arxiv.org/html/2503.07265v4#S4.T1",
+      "source_id": "visual-wise",
+      "by": "independent",
+      "date": "2026-06-02",
+      "note": "vila-u-7b-256; Table 1 (S4.T1); Overall 0.31. WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge. Adapted row licensed CC-BY-SA-4.0 in visual-lanes2-cc-by-sa.json.",
+      "evidence": {
+        "source_model_label": "vila-u-7b-256",
+        "table": "S4.T1",
+        "reported_value": "0.31",
+        "divisor": 1,
+        "measurement_origin": "explicit original benchmark-author evaluation",
+        "protocol": "WISE v4 Table 1 Overall WiScore; 1,000 original prompts; official default configuration per model with fixed random seed; GPT-4o-2024-05-13 judge.",
+        "source_row": [
+          "vila-u-7b-256",
+          "0.26",
+          "0.33",
+          "0.37",
+          "0.35",
+          "0.39",
+          "0.23",
+          "0.31"
+        ],
+        "date_basis": "arXiv v4 submission date (2 Jun 2026), not a generation date.",
+        "model_identity_scope": "Exact checkpoint named in Sec. 4.1; no seed value, resolution or sampler beyond 'official default configurations' claimed.",
+        "original_measurement_verified": true,
+        "provenance_evidence": "Sec. 4.1: \"We evaluate 20 T2I models, including 10 dedicated T2I models and 10 unified multimodal models ... For image generation, we use the official default configurations of each model and fix the random seed to ensure reproducibility.\"",
+        "evaluator_relationship": "benchmark authors (Peking University Shenzhen Graduate School et al.) evaluating other providers' models"
+      },
+      "evaluator": "WISE authors (Peking University Shenzhen Graduate School et al.)",
+      "source_group": "visual-wise:wise-wiscore-overall",
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/visual-lanes2-cc-by-sa.json"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "sources": [
+    {
+      "id": "speech-amharic-addis-bysa",
+      "name": "Addis AI Amharic TTS benchmark",
+      "kind": "dataset",
+      "license": "CC BY-SA 4.0",
+      "match": [
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json"
+      ],
+      "terms_url": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md#licensing",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verdict": "allowed",
+      "checked": "2026-09-25",
+      "revision": "a60556cd62dd2fbfce83a09c11b088e1e027ce64",
+      "attribution": "Amharic TTS Benchmark by Addis AI (2026-08-12), CC BY-SA 4.0. Source: addisai/amharic-tts-benchmark. Changes: select the 87-prompt primary CER results; map explicit system IDs; independently recompute edit counts; retain original fractional units. This numerical adaptation is CC BY-SA 4.0. No endorsement.",
+      "license_scope": "README Licensing table expressly grants CC BY-SA 4.0 for data/*.jsonl, data/summary.json, scorer, normalization code and dataset card. No audio reused.",
+      "quote": "`data/*.jsonl`, `data/summary.json`, `score.py`, `normalize.py`, this card | Addis AI | CC BY-SA 4.0",
+      "evidence_files": [
+        "amharic-README.md",
+        "amharic-data-summary.json",
+        "amharic-data-judge_rows.jsonl",
+        "amharic-score.py",
+        "amharic-normalize.py"
+      ],
+      "adaptation_license": "CC BY-SA 4.0",
+      "upstream_credits": [
+        "Google FLEURS: CC BY 4.0; 34 of 100 prompts",
+        "Google WaxalNLP: CC BY-SA 4.0; 33 of 100 prompts",
+        "LesanAI Horn-ASR: CC BY-SA 4.0; 33 of 100 prompts"
+      ],
+      "verification": {
+        "raw_rows_recomputed": 800,
+        "checksum_matches": {
+          "README.md": false,
+          "data/summary.json": true,
+          "data/judge_rows.jsonl": true,
+          "data/prompts.jsonl": true,
+          "score.py": true,
+          "normalize.py": true
+        },
+        "readme_checksum_note": "Committed checksum manifest is stale for README only; numeric data and scorer hashes all match. Licence taken from explicitly pinned README content."
+      }
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "amharic-addis-primary87-cer",
+      "name": "Amharic TTS · 87-prompt CER (Chirp 3 judge)",
+      "kind": "err",
+      "category": "tts",
+      "url": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "metric": "character_error_rate",
+      "setup": "2026-08-12. 100 fixed-seed test prompts: FLEURS34, Waxal33, Horn-ASR33; 87 without digits in primary table. Generated audio judged by Google Chirp3 after 16kHz mono conversion. NFC, punctuation removal, lowercasing, Ethiopic homophone folding, whitespace collapse; CER removes spaces. Micro sum of character edits/reference characters (8152). No audio imported.",
+      "sample_count": 87,
+      "score_unit": "error ratio; can exceed 1.0",
+      "caveats": [
+        "Single run; model aliases can change after the run.",
+        "OpenAI and ElevenLabs rows are unsupported-language conditions, not general TTS-quality claims.",
+        "Google Gemini is judged with Google Chirp3; this is not a vendor-independent recognizer for that row.",
+        "WER retained as companion metadata, not another ranked result; full100 aggregate and slices excluded.",
+        "An error ratio above 1.0 is valid with insertions; preserve it. Current app fit clamps 1-error at its probability floor, which should not alter stored raw measurement."
+      ]
+    }
+  ],
+  "results": [
+    {
+      "model": "addis-voice-2",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 0.044406280667320906,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "lab",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/addis: 362/8152 character edits. Model addis-voice-2; voice am-yohanes-calm; language condition supported. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 0.044406280667320906,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "addis-voice-2",
+        "voice": "am-yohanes-calm",
+        "language": "am",
+        "language_condition": "supported"
+      },
+      "counts": {
+        "character_errors": 362,
+        "reference_characters": 8152,
+        "word_errors": 292,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 0.13865147198480532,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    },
+    {
+      "model": "azure-ameha-neural",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 0.030299313052011775,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "independent",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/azure-ameha: 247/8152 character edits. Model am-ET-AmehaNeural; voice am-ET-AmehaNeural; language condition supported. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 0.030299313052011775,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "am-ET-AmehaNeural",
+        "voice": "am-ET-AmehaNeural",
+        "language": "am",
+        "language_condition": "supported"
+      },
+      "counts": {
+        "character_errors": 247,
+        "reference_characters": 8152,
+        "word_errors": 235,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 0.11158594491927826,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    },
+    {
+      "model": "azure-mekdes-neural",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 0.041462217860647695,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "independent",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/azure-mekdes: 338/8152 character edits. Model am-ET-MekdesNeural; voice am-ET-MekdesNeural; language condition supported. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 0.041462217860647695,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "am-ET-MekdesNeural",
+        "voice": "am-ET-MekdesNeural",
+        "language": "am",
+        "language_condition": "supported"
+      },
+      "counts": {
+        "character_errors": 338,
+        "reference_characters": 8152,
+        "word_errors": 274,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 0.13010446343779677,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    },
+    {
+      "model": "gemini-3-1-flash-tts-preview",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 0.028949950932286556,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "independent",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/gemini: 236/8152 character edits. Model gemini-3.1-flash-tts-preview; voice Kore; language condition supported. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 0.028949950932286556,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "voice": "Kore",
+        "language": "am",
+        "language_condition": "supported"
+      },
+      "counts": {
+        "character_errors": 236,
+        "reference_characters": 8152,
+        "word_errors": 232,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 0.11016144349477683,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    },
+    {
+      "model": "gpt-4o-mini-tts",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 0.1874386653581943,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "independent",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/openai: 1528/8152 character edits. Model gpt-4o-mini-tts; voice coral; language condition unsupported. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 0.1874386653581943,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "coral",
+        "language": "am",
+        "language_condition": "unsupported"
+      },
+      "counts": {
+        "character_errors": 1528,
+        "reference_characters": 8152,
+        "word_errors": 660,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 0.31339031339031337,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    },
+    {
+      "model": "elevenlabs-v3",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 1.1165358194308146,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "independent",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/elevenlabs: 9102/8152 character edits. Model eleven_v3; voice 21m00Tcm4TlvDq8ikWAM; language condition unsupported. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 1.1165358194308146,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "eleven_v3",
+        "voice": "21m00Tcm4TlvDq8ikWAM",
+        "language": "am",
+        "language_condition": "unsupported"
+      },
+      "counts": {
+        "character_errors": 9102,
+        "reference_characters": 8152,
+        "word_errors": 3114,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 1.4786324786324787,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    },
+    {
+      "model": "mms-tts-amh",
+      "bench": "amharic-addis-primary87-cer",
+      "score": 0.07863101079489695,
+      "source": "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json",
+      "source_id": "speech-amharic-addis-bysa",
+      "by": "independent",
+      "date": "2026-08-12",
+      "note": "primary_no_numeric/meta-mms: 641/8152 character edits. Model facebook/mms-tts-amh; voice single-speaker; language condition open research model. Micro CER, not STT performance. Recomputed from all corresponding raw transcripts.",
+      "raw_value": 0.07863101079489695,
+      "raw_unit": "character error ratio",
+      "sample_count": 87,
+      "configuration": {
+        "model": "facebook/mms-tts-amh",
+        "voice": "single-speaker",
+        "language": "am",
+        "language_condition": "open research model"
+      },
+      "counts": {
+        "character_errors": 641,
+        "reference_characters": 8152,
+        "word_errors": 482,
+        "reference_words": 2106
+      },
+      "companion_metric": {
+        "word_error_rate": 0.2288698955365622,
+        "ranked": false
+      },
+      "data_license": "CC BY-SA 4.0"
+    }
+  ],
+  "models": [
+    {
+      "id": "addis-voice-2",
+      "name": "Addis Voice 2",
+      "provider": "Addis AI",
+      "category": "tts",
+      "open_weights": false,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model addis-voice-2; voice am-yohanes-calm. Dataset label Addis Voice 2. No API immutable build/weight SHA supplied."
+    },
+    {
+      "id": "azure-ameha-neural",
+      "name": "Azure Ameha Neural",
+      "provider": "Microsoft",
+      "category": "tts",
+      "open_weights": false,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model am-ET-AmehaNeural; voice am-ET-AmehaNeural. Dataset label Azure Ameha Neural. No API immutable build/weight SHA supplied."
+    },
+    {
+      "id": "azure-mekdes-neural",
+      "name": "Azure Mekdes Neural",
+      "provider": "Microsoft",
+      "category": "tts",
+      "open_weights": false,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model am-ET-MekdesNeural; voice am-ET-MekdesNeural. Dataset label Azure Mekdes Neural. No API immutable build/weight SHA supplied."
+    },
+    {
+      "id": "gemini-3-1-flash-tts-preview",
+      "name": "Gemini 3.1 Flash TTS Preview",
+      "provider": "Google",
+      "category": "tts",
+      "open_weights": false,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model gemini-3.1-flash-tts-preview; voice Kore. Dataset label Gemini 3.1 Flash TTS. No API immutable build/weight SHA supplied."
+    },
+    {
+      "id": "gpt-4o-mini-tts",
+      "name": "GPT-4o mini TTS",
+      "provider": "OpenAI",
+      "category": "tts",
+      "open_weights": false,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model gpt-4o-mini-tts; voice coral. Dataset label OpenAI gpt-4o-mini-tts. No API immutable build/weight SHA supplied."
+    },
+    {
+      "id": "elevenlabs-v3",
+      "name": "ElevenLabs v3",
+      "provider": "ElevenLabs",
+      "category": "tts",
+      "open_weights": false,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model eleven_v3; voice 21m00Tcm4TlvDq8ikWAM. Dataset label ElevenLabs v3. No API immutable build/weight SHA supplied."
+    },
+    {
+      "id": "mms-tts-amh",
+      "name": "MMS TTS Amharic",
+      "provider": "Meta",
+      "category": "tts",
+      "open_weights": true,
+      "identity_sources": [
+        "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
+        "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
+      ],
+      "identity_note": "Exact model facebook/mms-tts-amh; voice single-speaker. Dataset label Meta MMS. No API immutable build/weight SHA supplied."
+    }
+  ]
+}

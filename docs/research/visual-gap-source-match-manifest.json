@@ -1,0 +1,85 @@
+{
+  "normalization": {
+    "protocol": "https only; reject credentials and ports",
+    "host": "lowercase hostname; strip leading www.",
+    "path": "case-sensitive exact pinned path; no descendants, branch aliases, or version wildcards",
+    "fragment": "Ignored for source matching; retained as table/section/page locator in result source URL.",
+    "query": "Ignored for pinned file identity only; no query-based artifact permission inferred."
+  },
+  "sources": [
+    {
+      "id": "visual-gap-amd-mxfp",
+      "artifact": "visual-gap-ready.json",
+      "canonical_source_url": "https://github.com/ROCm/rocm-blogs/blob/b3bf907bd73c596c49c77b1d178c7c41bcd2713c/blogs/artificial-intelligence/mxfp-t2i-t2v/README.md",
+      "match": [
+        "github.com/ROCm/rocm-blogs/blob/b3bf907bd73c596c49c77b1d178c7c41bcd2713c/blogs/artificial-intelligence/mxfp-t2i-t2v/README.md"
+      ],
+      "exact": true,
+      "kind": "first-party",
+      "license": "MIT",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-gap-licenses/visual-gap-amd-mxfp.txt",
+      "destination": "public/licenses/visual-gap-amd-mxfp.txt",
+      "public_license_url": "/licenses/visual-gap-amd-mxfp.txt",
+      "notice_sha256": "9313261f0389492d809e5bf5298ba90e82e0d83dbccf28cd26501cc06344f9d2",
+      "source_artifact_sha256": "4263b2beebeec056f11720de17e8a58cb20cd5d7bc94f2f8c0cabc59834a4b94"
+    },
+    {
+      "id": "visual-gap-jenga",
+      "artifact": "visual-gap-ready.json",
+      "canonical_source_url": "https://arxiv.org/pdf/2505.16864v2",
+      "match": [
+        "arxiv.org/pdf/2505.16864v2"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-SA-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-gap-licenses/visual-gap-jenga.txt",
+      "destination": "public/licenses/visual-gap-jenga.txt",
+      "public_license_url": "/licenses/visual-gap-jenga.txt",
+      "notice_sha256": "f621bd40e92c29fe9494cd3c0528f086241a415444fb2de964eecb3ec17e17bc",
+      "source_artifact_sha256": "81e5fc73bd50f88bba235bea55358e82e9b8e1ebf9e1d24710aa3b0c672d33e3"
+    },
+    {
+      "id": "visual-gap-mobilewan",
+      "artifact": "visual-gap-ready.json",
+      "canonical_source_url": "https://arxiv.org/html/2607.06173v1",
+      "match": [
+        "arxiv.org/html/2607.06173v1"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-gap-licenses/visual-gap-mobilewan.txt",
+      "destination": "public/licenses/visual-gap-mobilewan.txt",
+      "public_license_url": "/licenses/visual-gap-mobilewan.txt",
+      "notice_sha256": "9d39669438441762a9c14e03dce3b85ebd1533d8818e5c765fadd1b168bca907",
+      "source_artifact_sha256": "d6ab859805673efde31ffec20fd7db052ed4132ba27df5018b6cf0028f250a50"
+    },
+    {
+      "id": "visual-gap-target-bench",
+      "artifact": "visual-gap-ready.json",
+      "canonical_source_url": "https://arxiv.org/html/2511.17792v2",
+      "match": [
+        "arxiv.org/html/2511.17792v2"
+      ],
+      "exact": true,
+      "kind": "paper",
+      "license": "CC-BY-4.0",
+      "local_notice_copy": "/tmp/whatmodel-expansion/visual-gap-licenses/visual-gap-target-bench.txt",
+      "destination": "public/licenses/visual-gap-target-bench.txt",
+      "public_license_url": "/licenses/visual-gap-target-bench.txt",
+      "notice_sha256": "4d7b3fda1aa01026b3749947d86302f672d4ff08fb7998d00f31431637ffcf42",
+      "source_artifact_sha256": "e29453328df2b07283bc5785608d14d47d59add866badc2c30375c299cd74488"
+    }
+  ],
+  "additional_public_artifacts": [
+    {
+      "local": "/tmp/whatmodel-expansion/visual-gap-cc-by-sa.json",
+      "destination": "public/data/visual-gap-cc-by-sa.json",
+      "public_url": "/data/visual-gap-cc-by-sa.json",
+      "license": "CC-BY-SA-4.0",
+      "sha256": "eb5d6fa7a4062fc9c622f16fc0927d3046490b01c161da06fedff4e4e19d0ded",
+      "integration": "Publish this separate adapted tranche and link its licence/attribution from result API/method as already done for the prior SA extract. Import the Jenga row only once; this file duplicates that row in visual-gap-ready.json."
+    }
+  ]
+}

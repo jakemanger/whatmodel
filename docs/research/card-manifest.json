@@ -1,0 +1,119 @@
+[
+  {
+    "id": "card-deepseek-ai-deepseek-r1",
+    "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/LICENSE",
+    "license": "MIT",
+    "revision": "56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad",
+    "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-deepseek-ai-deepseek-r1-0528-qwen3-8b",
+    "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/blob/6e8885a6ff5c1dc5201574c8fd700323f23c25fa/LICENSE",
+    "license": "MIT",
+    "revision": "6e8885a6ff5c1dc5201574c8fd700323f23c25fa",
+    "sha256": "ee003a09ddabff67a5b0d2394bea65c6ce523e4994f3208d6a58613e27834d8a",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-microsoft-phi-4",
+    "terms_url": "https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/LICENSE",
+    "license": "MIT",
+    "revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+    "sha256": "4cc56faa6a5bcbde6227789b2ef9aedfde481ca660c8a4b686703aae19b00011",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-microsoft-phi-4-mini-instruct",
+    "terms_url": "https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/LICENSE",
+    "license": "MIT",
+    "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "sha256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-microsoft-phi-4-mini-reasoning",
+    "terms_url": "https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/LICENSE",
+    "license": "MIT",
+    "revision": "0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a",
+    "sha256": "9bc87c9d622d4c93572a93397742df200fb769c1ab1b50ce7e950c5218dad776",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-nvidia-nemotron-cascade-2-30b-a3b",
+    "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "license": "NVIDIA Open Model License (2025-10-24)",
+    "revision": "6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7",
+    "sha256": "1f851362773139e33c0e1c04c8a5749c070b4a8d2e3e6245a84a7379ec71942e",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-nvidia-nvidia-nemotron-3-nano-30b-a3b-bf16",
+    "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+    "license": "NVIDIA Nemotron Open Model License (2025-12-15)",
+    "revision": "bf77c3174f68ad409e1c2aa60daeb46e32d1c606",
+    "sha256": "faec6eef185d9993d92a0f03c6ad872381bf252b21699bf5b3ecb52fdeac112b",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-nvidia-nvidia-nemotron-3-nano-4b-bf16",
+    "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+    "license": "NVIDIA Nemotron Open Model License (2025-12-15)",
+    "revision": "dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f",
+    "sha256": "06f349f02b364c5ff6d92562be82ddd190e00b7e161a749c297766d372068c18",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-nvidia-nvidia-nemotron-3-super-120b-a12b-bf16",
+    "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
+    "license": "NVIDIA Nemotron Open Model License (2025-12-15)",
+    "revision": "2dc98e2afe4face0e4ce40972a915c45368bd34a",
+    "sha256": "cade76c064eda90d4f53e12614f45816ae6cfe43dacc8a9410abcc2fc7a17e59",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-nvidia-nvidia-nemotron-nano-9b-v2",
+    "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "license": "NVIDIA Open Model License (2025-10-24)",
+    "revision": "6533e8de2c68e4536bf7c411d7a3ce5734111476",
+    "sha256": "626593b2bdc0f473e2870d0f5e478d63348e53137c4e22f3fca3557234541042",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "card-qwen-qwen3-coder-30b-a3b-instruct",
+    "terms_url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/LICENSE",
+    "license": "Apache-2.0",
+    "revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+    "sha256": "98e8f0e00f2d6c7f1743fc4ef2b6297dcc57bec73d71f36588aed984370ac3f3",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "report-2512.13961v2",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license": "CC BY 4.0",
+    "revision": "2512.13961v2",
+    "sha256": "3f310a9853366a25e699fb022da204c05a2e6c7734fd109139b708e831384488",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  },
+  {
+    "id": "report-2601.02346v1",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license": "CC BY 4.0",
+    "revision": "2601.02346v1",
+    "sha256": "dafcb3d7be9966fe5b7d3f5816c8b6521ee4edc3bb75e226722c4d9e5cc58964",
+    "changes": "Selected numerical evaluation cells transcribed; percentages divided by 100. Exact variant, mode, benchmark version/window and settings retained. No endorsement.",
+    "date_semantics": "Result date is evidence review date; actual evaluation date is not asserted."
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "checks": [
+    "76 source-linked speed rows parsed or PNG cells visually verified",
+    "all source and license SHA-256 checks",
+    "all pinned repository revisions and scoped source URLs",
+    "model identifiers resolve to current/original dataset",
+    "no duplicate complete measurement/settings tuples",
+    "all rows explicitly block automatic selected-download matching and retain specific applicability limits",
+    "25 quant findings use actual FP16/BF16 study baselines; exact ratios",
+    "Gemma memory rows limited to Table 3 and automatic GB mapping disabled",
+    "historical API rows re-aggregated from committed CSV and excluded from current TPS",
+    "no AA or MASSIVE-Agents speed rows",
+    "calibration fit remains disabled where required inputs lack pinned evidence"
+  ],
+  "counts": {
+    "speed_rows": 76,
+    "speed_models": 16,
+    "hardware_labels": 19,
+    "quality_findings": 25,
+    "memory_findings": 5,
+    "calibration_candidates": 10,
+    "historical_api_candidates": 2,
+    "accepted_api_tps_replacements": 0,
+    "backup_speed_rows": 152,
+    "certified_selected_download_matches": 0
+  },
+  "speed_rows_by_source": {
+    "speed-llama-cpp-benches": 30,
+    "speed-onnx-asr": 26,
+    "speed-apple-coreml": 4,
+    "speed-magpie-cpp": 6,
+    "speed-chatterbox-streaming": 1,
+    "speed-glm-image": 3,
+    "speed-wan22": 4,
+    "speed-wan21": 2
+  },
+  "baseline_comparison": {
+    "speeds": {
+      "commit": "60c5632",
+      "git_sha256": "34b5f7f6a6a8a4545e422908daee3a4952ea85dc005a24fb8ca2eac9e008a9fc",
+      "backup_sha256": "34b5f7f6a6a8a4545e422908daee3a4952ea85dc005a24fb8ca2eac9e008a9fc",
+      "equal_json": true
+    },
+    "quant": {
+      "commit": "60c5632",
+      "git_sha256": "9e8c537945886258fc835eb70491bd5562aed36bef85543f5b3dbb41b954221f",
+      "backup_sha256": "9e8c537945886258fc835eb70491bd5562aed36bef85543f5b3dbb41b954221f",
+      "equal_json": true
+    },
+    "speed-calibration": {
+      "commit": "60c5632",
+      "git_sha256": "2a5746ae4073f5582a48a5a6a3f78dd35a650d0761289d96305bfac744c2e1a3",
+      "backup_sha256": "2a5746ae4073f5582a48a5a6a3f78dd35a650d0761289d96305bfac744c2e1a3",
+      "equal_json": true
+    }
+  }
+}

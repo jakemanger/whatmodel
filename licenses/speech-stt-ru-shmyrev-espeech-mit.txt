@@ -1,0 +1,27 @@
+Source: Russian ASR Leaderboard, Hugging Face Space ESpeech/russian_asr_leaderboard at revision cc62862c6f7d12840458f868a17a3058da7e639f. Benchmark author Nikolay Shmyrev; Space authors Nikolay Shmyrev and Denis Petrov (per README). Test date 07.05.2026.
+Pinned file: index.html (static page; results embedded as the committed DATA object). Licence basis: the Space card README.md declares 'license: mit'; no separate LICENSE file, so the canonical MIT text is reproduced below with the Space authors as copyright holders.
+Use by whatmodel.sh: selected models' 11-dataset mean WER ('Среднее'), percent divided by 100; catalogue IDs mapped. No endorsement.
+
+----------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Nikolay Shmyrev, Denis Petrov (ESpeech, Hugging Face Space ESpeech/russian_asr_leaderboard)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

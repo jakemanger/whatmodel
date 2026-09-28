@@ -1,0 +1,25 @@
+/ 200
+/image 200
+/video 200
+/tts 200
+/stt 200
+/method 200
+/privacy 200
+/terms 200
+/model/gpt-oss-20b 200
+/model/gemma-3-270m 200
+/model/flux-1-schnell 200
+/model/elevenlabs-turbo-v2-5 200
+/model/granite-speech-4-1-2b 200
+/model/wan-2-2-5b 200
+/model/vibevoice-1-5b 200
+/sitemap.xml 200
+/icon.svg 200
+CLI + JSON + comparison selectors llm ok
+CLI + JSON + comparison selectors image ok
+CLI + JSON + comparison selectors video ok
+CLI + JSON + comparison selectors tts ok
+CLI + JSON + comparison selectors stt ok
+local-only budget and five sort modes ok
+Public snapshots and 14 manifest hashes ok
+Notices and unknown-model 404 ok

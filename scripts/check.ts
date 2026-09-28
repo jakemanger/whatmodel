@@ -1,0 +1,158 @@
+// npm run check — validates data/*.json and measures how well g predicts held-out results.
+// CI runs this on every PR from the update agent; a non-zero exit blocks the merge.
+
+import { existsSync, readFileSync } from "node:fs";
+import { CATEGORY_IDS, catOf } from "../lib/categories.ts";
+import { fit, fromLatent, toCells } from "../lib/score.ts";
+import { connectedCells, heldOutPrediction } from "../lib/comparisons.ts";
+import { SOURCES, sourceIcon, sourceOf } from "../lib/sources.ts";
+import type { Benchmark, Model, Result, Speed } from "../lib/types.ts";
+
+const load = <T>(f: string): T => JSON.parse(readFileSync(new URL(`../data/${f}`, import.meta.url), "utf8"));
+const models = load<Model[]>("models.json");
+const results = load<Result[]>("results.json");
+const benches = load<Benchmark[]>("benchmarks.json");
+const meta = load<{ updated: string }>("meta.json");
+const speeds = load<Speed[]>("speeds.json");
+const quant = load<{ findings: { source: string }[]; memory?: { source: string }[] }>("quant.json");
+const calibration = load<{ measurements: { source: string }[] }>("speed-calibration.json");
+const UNITS = ["image", "video-second", "1M-chars", "audio-minute"];
+
+const errors: string[] = [];
+const retired: string[] = []; // no API or weights: kept to anchor the fit, not listed
+const noPrice: string[] = []; // API with no published price: never passes a budget filter
+const ids = new Set<string>();
+for (const m of models) {
+  if (!/^[a-z0-9][a-z0-9.-]*$/.test(m.id)) errors.push(`model id not kebab-case: ${m.id}`);
+  if (ids.has(m.id)) errors.push(`duplicate model: ${m.id}`);
+  ids.add(m.id);
+  if (!m.api && !m.local?.variants.length) retired.push(m.id);
+  for (const v of m.local?.variants ?? []) {
+    if (!v.cmd) errors.push(`${m.id}: variant without a command ${JSON.stringify(v)}`);
+    if (!(v.gb > 0) && !m.params_b) errors.push(`${m.id}: variant ${v.quant} needs gb, or params_b on the model to estimate it`);
+  }
+  if (m.api?.tps !== undefined && (!(m.api.tps > 0) || !/^https?:\/\//.test(m.api.tps_source ?? ""))) errors.push(`${m.id}: api.tps needs a positive number and a tps_source url`);
+  if (m.api && (m.api.price_in !== undefined || m.api.price_out !== undefined) &&
+      !(Number.isFinite(m.api.price_in) && Number.isFinite(m.api.price_out) && m.api.price_in! >= 0 && m.api.price_out! >= 0))
+    errors.push(`${m.id}: token prices must be a complete, finite, nonnegative pair`);
+  if (m.api && [m.api.price, m.api.price_in, m.api.price_out].some((p) => p !== undefined) && !m.api.price_source)
+    errors.push(`${m.id}: a price requires price_source (a provider link alone is not provenance)`);
+  if (m.api?.price !== undefined && !(Number.isFinite(m.api.price) && m.api.price >= 0)) errors.push(`${m.id}: invalid price`);
+  if (m.context_k !== undefined && (!m.context_source || !Number.isFinite(m.context_k) || m.context_k <= 0))
+    errors.push(`${m.id}: context needs a positive value and reviewed context_source`);
+  if (m.api && catOf(m) !== "llm" && m.api.price !== undefined && !UNITS.includes(m.api.unit ?? "")) errors.push(`${m.id}: api price needs a unit (${UNITS.join("|")})`);
+  if (m.api && catOf(m) !== "llm" && m.api.price === undefined) noPrice.push(m.id);
+  if (m.category && !CATEGORY_IDS.includes(m.category)) errors.push(`${m.id}: unknown category ${m.category}`);
+}
+for (const x of speeds) {
+  if (!ids.has(x.model)) errors.push(`speed for unknown model ${x.model}`);
+  if (!(x.value > 0) || !/^https?:\/\//.test(x.source ?? "")) errors.push(`speed ${x.model} on ${x.hardware}: needs a value and source url`);
+}
+const bench = new Map(benches.map((b) => [b.id, b]));
+for (const r of results) {
+  const b = bench.get(r.bench);
+  const where = `${r.model}/${r.bench}`;
+  if (!ids.has(r.model)) errors.push(`${where}: unknown model`);
+  if (!b) errors.push(`${where}: unknown benchmark`);
+  if (!/^https?:\/\//.test(r.source ?? "")) errors.push(`${where}: missing source url`);
+  if (r.by !== "independent" && r.by !== "lab") errors.push(`${where}: by must be independent|lab`);
+  if (b?.kind === "acc" && !(r.score >= 0 && r.score <= 1)) errors.push(`${where}: acc score must be 0-1, got ${r.score}`);
+  if (b?.kind === "elo" && !(r.score > 500 && r.score < 3000)) errors.push(`${where}: implausible elo ${r.score}`);
+  if (b?.kind === "err" && !(Number.isFinite(r.score) && r.score >= 0)) errors.push(`${where}: error ratio must be finite and nonnegative, got ${r.score}`);
+  const m = models.find((x) => x.id === r.model);
+  if (b && m && (b.category ?? "llm") !== catOf(m)) errors.push(`${where}: benchmark is for ${b.category ?? "llm"}, model is ${catOf(m)}`);
+}
+
+if (!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ$/.test(meta.updated)) errors.push(`meta.json: updated must be UTC ISO, e.g. 2026-09-25T05:12:00Z`);
+const latest = results.reduce((d, r) => (r.date && r.date > d ? r.date : d), "");
+if (meta.updated.slice(0, 10) < latest) errors.push(`meta.json: updated (${meta.updated}) is older than the newest result (${latest})`);
+for (const icon of new Set(results.flatMap((r) => (/^https?:\/\//.test(r.source ?? "") ? [sourceIcon(r.source)] : []))))
+  if (!existsSync(new URL(`../icons/${icon}.png`, import.meta.url))) errors.push(`no icon for ${icon}: run npm run icons`);
+
+// Reuse gate for benchmark/price/context evidence. Outbound provider and command links
+// are not licences for measurements; review numerical sources separately.
+for (const s of SOURCES) {
+  if (!s.terms_url || !s.license || !s.checked || !s.match.length) errors.push(`sources.json ${s.id}: needs match, license, terms_url, checked`);
+  if (s.license_url?.startsWith("/") && !existsSync(new URL(`..${s.license_url}`, import.meta.url)))
+    errors.push(`sources.json ${s.id}: missing public licence notice ${s.license_url}`);
+}
+const cited: [string, string][] = [
+  ...results.map((r): [string, string] => [r.source, `result ${r.model}/${r.bench}`]),
+  ...speeds.map((x): [string, string] => [x.source, `speed ${x.model} on ${x.hardware}`]),
+  ...quant.findings.map((x): [string, string] => [x.source, "quantization finding"]),
+  ...(quant.memory ?? []).map((x): [string, string] => [x.source, "memory finding"]),
+  ...calibration.measurements.map((x): [string, string] => [x.source, "speed calibration"]),
+  ...models.flatMap((m) => [
+    ...[m.api?.price_source, m.api?.tps_source, m.api?.speed_source, m.context_source].filter(Boolean).map((u): [string, string] => [u!, `metadata ${m.id}`]),
+    ...(m.local?.variants ?? []).filter((v) => !v.gb_estimated).map((v): [string, string] => [v.source ?? "", `measured memory ${m.id}/${v.quant}`]),
+  ]),
+];
+const bad = new Map<string, string[]>();
+const resultKeys = new Set<string>();
+for (const r of results) {
+  const key = `${r.model}|${r.bench}|${r.source}`;
+  if (resultKeys.has(key)) errors.push(`duplicate result: ${key}`);
+  resultKeys.add(key);
+  if (!Number.isFinite(r.score)) errors.push(`non-finite result: ${key}`);
+}
+for (const [url, what] of cited) {
+  const s = /^https?:\/\//.test(url ?? "") ? sourceOf(url) : undefined;
+  const why = !s ? `not in sources.json (${url})` : s.verdict !== "allowed" ? `${s.name} is ${s.verdict}: ${s.quote ?? s.terms_url}` : null;
+  if (why) bad.set(why, [...(bad.get(why) ?? []), what]);
+}
+for (const [why, whats] of bad) errors.push(`${whats.length} item(s) from a source we can't use: ${why}\n      e.g. ${whats.slice(0, 3).join(", ")}`);
+
+const warnings: string[] = [];
+const corr = (xy: [number, number][]) => {
+  const n = xy.length, mx = xy.reduce((s, [x]) => s + x, 0) / n, my = xy.reduce((s, [, y]) => s + y, 0) / n;
+  let sxy = 0, sxx = 0, syy = 0;
+  for (const [x, y] of xy) { sxy += (x - mx) * (y - my); sxx += (x - mx) ** 2; syy += (y - my) ** 2; }
+  return sxy / Math.sqrt(sxx * syy);
+};
+
+// One fit per category, as the site does.
+for (const cat of CATEGORY_IDS) {
+  const ms = models.filter((m) => catOf(m) === cat);
+  if (!ms.length) continue;
+  const inCat = new Set(ms.map((m) => m.id));
+  const groups = connectedCells(toCells(results.filter((r) => inCat.has(r.model)), benches.filter((b) => (b.category ?? "llm") === cat)));
+  const fits = groups.map((cells) => fit(cells));
+  for (const m of ms) if (!fits.some((f) => f.scores.has(m.id))) warnings.push(`${m.id}: no usable results, won't be ranked`);
+  for (const [groupIndex, cells] of groups.entries()) {
+    const f = fits[groupIndex];
+
+    // Leave-one-out: hide each result, refit, predict it back.
+    const errs = { acc: [] as number[], err: [] as number[], elo: [] as number[] };
+    const zs: [number, number][] = [];
+    for (let i = 0; i < cells.length; i++) {
+      const c = cells[i];
+      const b = bench.get(c.bench)!;
+      const rest = cells.filter((_, j) => j !== i);
+      if (rest.filter((x) => x.model === c.model).length === 0) continue;
+      const yhat = heldOutPrediction(rest, c.model, c.key);
+      if (yhat === undefined) continue;
+      const p = f.params.get(c.key)!;
+      zs.push([(c.y - p.d) / p.a, (yhat - p.d) / p.a]);
+      errs[b.kind].push(Math.abs(fromLatent(yhat, b) - fromLatent(c.y, b)) * (b.kind === "elo" ? 1 : 100));
+    }
+
+    console.log(`\n== ${cat} set ${groupIndex + 1}/${groups.length}: ${f.scores.size} scored models, ${cells.length} cells across ${f.params.size} benchmark keys`);
+    for (const [k, p] of [...f.params].sort((x, y) => y[1].a - x[1].a))
+      console.log(`  ${k.padEnd(34)} n=${String(p.n).padStart(3)}  a=${p.a.toFixed(2).padStart(5)}  noise=${p.sigma.toFixed(2)}`);
+    if (zs.length > 2) console.log(`  leave-one-out: r = ${corr(zs).toFixed(3)} (n=${zs.length})`);
+    for (const [kind, values] of Object.entries(errs)) {
+      if (!values.length) continue;
+      values.sort((a, b) => a - b);
+      console.log(`    ${kind}: median abs error ${values[values.length >> 1].toFixed(1)}, p90 ${values[Math.floor(values.length * 0.9)].toFixed(1)} ${kind === "elo" ? "Elo" : "percentage points"} (n=${values.length})`);
+    }
+    console.log("  top 5: " + [...f.scores.values()].sort((a, b) => b.g - a.g).slice(0, 5).map((s) => `${s.id} ${s.g.toFixed(0)}`).join(", "));
+  }
+}
+
+if (noPrice.length) console.log(`\napi without a price: ${noPrice.join(", ")}`);
+if (retired.length) console.log(`\nretired (fit only, not listed): ${retired.join(", ")}`);
+if (warnings.length) console.log(`\n${warnings.length} warning(s):\n  ` + warnings.join("\n  "));
+if (errors.length) {
+  console.error(`\n${errors.length} problem(s):\n  ` + errors.join("\n  "));
+  process.exit(1);
+}

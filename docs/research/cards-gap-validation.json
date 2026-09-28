@@ -1,0 +1,39 @@
+{
+  "artifact": "/tmp/whatmodel-expansion/cards-gap-ready.json",
+  "sha256": "0e8083a462d34e241df14fb61d5d48cc4a3d95e54276584a77d627708e262414",
+  "counts": {
+    "results": 55,
+    "models": 13,
+    "sources": 13,
+    "benchmarks": 29,
+    "table_cells_checked": 49,
+    "visually_reviewed_chart_labels": 6,
+    "liquid_newly_eligible": 15
+  },
+  "per_model": {
+    "devstral-small-2": 3,
+    "k2-horizon-7b": 5,
+    "lfm2-5-1-2b-thinking": 8,
+    "lfm2-5-8b-a1b": 7,
+    "ministral-3-14b": 1,
+    "ministral-3-14b-reasoning": 4,
+    "ministral-3-3b": 1,
+    "ministral-3-3b-reasoning": 4,
+    "ministral-3-8b": 1,
+    "ministral-3-8b-reasoning": 4,
+    "mistral-small-4": 2,
+    "qwen3-coder-next": 4,
+    "smollm3-3b": 11
+  },
+  "fewer_than_three_rows": {
+    "ministral-3-3b": 1,
+    "ministral-3-8b": 1,
+    "ministral-3-14b": 1,
+    "mistral-small-4": 2
+  },
+  "frozen176_unchanged": true,
+  "duplicate_frozen176_rows": 0,
+  "checks_passed": true,
+  "errors": [],
+  "scope": "Read-only evidence-cell/normalization/reference/asset-hash checks, pinned card README and licence downloads, exact variant/mode checks, licence-text/notice preservation, conditional-licence review and future review metadata. No three-benchmark threshold. No app tests or shared data edits."
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "id": "visual-mage-flow:geneval",
+    "source_id": "visual-mage-flow",
+    "benchmark": "geneval",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:dpg-bench",
+    "source_id": "visual-mage-flow",
+    "benchmark": "dpg-bench",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:tiif-testmini-short",
+    "source_id": "visual-mage-flow",
+    "benchmark": "tiif-testmini-short",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:tiif-testmini-long",
+    "source_id": "visual-mage-flow",
+    "benchmark": "tiif-testmini-long",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:cvtg-2k-word-accuracy",
+    "source_id": "visual-mage-flow",
+    "benchmark": "cvtg-2k-word-accuracy",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:oneig-en",
+    "source_id": "visual-mage-flow",
+    "benchmark": "oneig-en",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:oneig-cn",
+    "source_id": "visual-mage-flow",
+    "benchmark": "oneig-cn",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:longtext-en",
+    "source_id": "visual-mage-flow",
+    "benchmark": "longtext-en",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-mage-flow:longtext-cn",
+    "source_id": "visual-mage-flow",
+    "benchmark": "longtext-cn",
+    "evaluator": "Mage-Flow authors / Microsoft",
+    "results": 3,
+    "models": [
+      "mage-flow-base",
+      "mage-flow",
+      "mage-flow-turbo"
+    ],
+    "relationships": {
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-hidream:geneval",
+    "source_id": "visual-hidream",
+    "benchmark": "geneval",
+    "evaluator": "HiDream.ai",
+    "results": 1,
+    "models": [
+      "hidream-o1-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-hidream:dpg-bench",
+    "source_id": "visual-hidream",
+    "benchmark": "dpg-bench",
+    "evaluator": "HiDream.ai",
+    "results": 1,
+    "models": [
+      "hidream-o1-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-ernie-image:geneval",
+    "source_id": "visual-ernie-image",
+    "benchmark": "geneval",
+    "evaluator": "Baidu / ERNIE-Image authors",
+    "results": 2,
+    "models": [
+      "ernie-image",
+      "ernie-image-turbo"
+    ],
+    "relationships": {
+      "lab": 2
+    }
+  },
+  {
+    "id": "visual-ernie-image:oneig-en",
+    "source_id": "visual-ernie-image",
+    "benchmark": "oneig-en",
+    "evaluator": "Baidu / ERNIE-Image authors",
+    "results": 2,
+    "models": [
+      "ernie-image",
+      "ernie-image-turbo"
+    ],
+    "relationships": {
+      "lab": 2
+    }
+  },
+  {
+    "id": "visual-glm-image:cvtg-2k-word-accuracy",
+    "source_id": "visual-glm-image",
+    "benchmark": "cvtg-2k-word-accuracy",
+    "evaluator": "Z.ai / GLM-Image authors",
+    "results": 1,
+    "models": [
+      "glm-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-glm-image:longtext-en",
+    "source_id": "visual-glm-image",
+    "benchmark": "longtext-en",
+    "evaluator": "Z.ai / GLM-Image authors",
+    "results": 1,
+    "models": [
+      "glm-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-glm-image:longtext-cn",
+    "source_id": "visual-glm-image",
+    "benchmark": "longtext-cn",
+    "evaluator": "Z.ai / GLM-Image authors",
+    "results": 1,
+    "models": [
+      "glm-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-glm-image:oneig-en",
+    "source_id": "visual-glm-image",
+    "benchmark": "oneig-en",
+    "evaluator": "Z.ai / GLM-Image authors",
+    "results": 1,
+    "models": [
+      "glm-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-glm-image:oneig-cn",
+    "source_id": "visual-glm-image",
+    "benchmark": "oneig-cn",
+    "evaluator": "Z.ai / GLM-Image authors",
+    "results": 1,
+    "models": [
+      "glm-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-glm-image:dpg-bench",
+    "source_id": "visual-glm-image",
+    "benchmark": "dpg-bench",
+    "evaluator": "Z.ai / GLM-Image authors",
+    "results": 1,
+    "models": [
+      "glm-image"
+    ],
+    "relationships": {
+      "lab": 1
+    }
+  },
+  {
+    "id": "visual-geneval:geneval",
+    "source_id": "visual-geneval",
+    "benchmark": "geneval",
+    "evaluator": "GenEval authors: Dhruba Ghosh, Hanna Hajishirzi, Ludwig Schmidt",
+    "results": 4,
+    "models": [
+      "sd-1-5",
+      "sd-2-1",
+      "sdxl",
+      "deepfloyd-if-xl"
+    ],
+    "relationships": {
+      "independent": 4
+    }
+  },
+  {
+    "id": "visual-humanscore:humanscore-t2v",
+    "source_id": "visual-humanscore",
+    "benchmark": "humanscore-t2v",
+    "evaluator": "HumanScore authors / Stanford and Peking University",
+    "results": 12,
+    "models": [
+      "seedance-1-0-pro-fast",
+      "kling-2-5-turbo-pro",
+      "luma-ray-3",
+      "sora-2",
+      "veo-3-1-fast",
+      "hailuo-02",
+      "pixverse-v5-5",
+      "wan-2-6",
+      "pika-2-2",
+      "hunyuanvideo-1-5",
+      "kandinsky-5-0-pro",
+      "cogvideox-5b"
+    ],
+    "relationships": {
+      "independent": 12
+    }
+  },
+  {
+    "id": "visual-rapid-physics:rapidata-physics-i2v-reference",
+    "source_id": "visual-rapid-physics",
+    "benchmark": "rapidata-physics-i2v-reference",
+    "evaluator": "Rapidata",
+    "results": 20,
+    "models": [
+      "gemini-omni-1-1-flash",
+      "minimax-h3",
+      "gemini-omni-flash",
+      "seedance-2-0",
+      "flux-3-video",
+      "seedance-2-5",
+      "wan-3-0",
+      "grok-imagine-video-1-5",
+      "kling-3-0-pro",
+      "grok-imagine-video",
+      "happyhorse-1-0",
+      "veo-3-1",
+      "veo-3-1-fast",
+      "kling-2-6-pro",
+      "wan-2-6",
+      "wan-2-7",
+      "vidu-q3-pro",
+      "pixverse-v5-6",
+      "wan-2-5-preview",
+      "seedance-1-5-pro"
+    ],
+    "relationships": {
+      "independent": 20
+    }
+  },
+  {
+    "id": "visual-rapid-camera:rapidata-camera-i2v",
+    "source_id": "visual-rapid-camera",
+    "benchmark": "rapidata-camera-i2v",
+    "evaluator": "Rapidata",
+    "results": 8,
+    "models": [
+      "gemini-omni-1-1-flash",
+      "wan-3-0",
+      "happyhorse-1-1",
+      "kling-3-0-pro",
+      "grok-imagine-video-1-5",
+      "minimax-h3",
+      "veo-3-1",
+      "vidu-q3"
+    ],
+    "relationships": {
+      "independent": 8
+    }
+  },
+  {
+    "id": "visual-physics-verified:physics-iq-verified-i2v-bpp",
+    "source_id": "visual-physics-verified",
+    "benchmark": "physics-iq-verified-i2v-bpp",
+    "evaluator": "Physics-IQ Verified authors",
+    "results": 6,
+    "models": [
+      "cosmos3-nano",
+      "grok-imagine-video",
+      "hunyuanvideo-1-5-i2v",
+      "p-video",
+      "sora-2",
+      "wan-2-2-i2v-a14b"
+    ],
+    "relationships": {
+      "independent": 6
+    }
+  },
+  {
+    "id": "visual-vgi:vgi-bench-i2v",
+    "source_id": "visual-vgi",
+    "benchmark": "vgi-bench-i2v",
+    "evaluator": "VGI-Bench authors",
+    "results": 8,
+    "models": [
+      "seedance-2-0",
+      "sora-2",
+      "veo-3-1",
+      "kling-3-0",
+      "wan-2-7",
+      "runway-gen-4-5",
+      "hunyuanvideo-1-5-i2v",
+      "wan-2-2-i2v-a14b"
+    ],
+    "relationships": {
+      "independent": 8
+    }
+  },
+  {
+    "id": "visual-qwenbench:qwen-image-bench-v1",
+    "source_id": "visual-qwenbench",
+    "benchmark": "qwen-image-bench-v1",
+    "evaluator": "Qwen-Image-Bench authors / Alibaba",
+    "results": 16,
+    "models": [
+      "gpt-image-2",
+      "gpt-image-1-5",
+      "nano-banana-pro",
+      "qwen-image-2-0-pro",
+      "seedream-4-5",
+      "seedream-4-0",
+      "flux-2-max",
+      "flux-2-pro",
+      "gpt-image-1",
+      "qwen-image-2512",
+      "imagen-4-ultra",
+      "hunyuanimage-3-0",
+      "imagen-4",
+      "qwen-image",
+      "kling-image-2-1",
+      "glm-image"
+    ],
+    "relationships": {
+      "independent": 13,
+      "lab": 3
+    }
+  },
+  {
+    "id": "visual-llada-image:geneval",
+    "source_id": "visual-llada-image",
+    "benchmark": "geneval",
+    "evaluator": "LLaDA-Image authors",
+    "results": 2,
+    "models": [
+      "llada-image",
+      "llada-image-turbo"
+    ],
+    "relationships": {
+      "lab": 2
+    },
+    "licensed_artifact": "visual-cc-by-sa.json"
+  },
+  {
+    "id": "visual-llada-image:dpg-bench",
+    "source_id": "visual-llada-image",
+    "benchmark": "dpg-bench",
+    "evaluator": "LLaDA-Image authors",
+    "results": 2,
+    "models": [
+      "llada-image-turbo",
+      "llada-image"
+    ],
+    "relationships": {
+      "lab": 2
+    },
+    "licensed_artifact": "visual-cc-by-sa.json"
+  }
+]

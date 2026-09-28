@@ -1,0 +1,26 @@
+name: Wrong number
+description: A score, price, speed, context window or memory figure doesn't match its source.
+labels: [data]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: The model id from its whatmodel.sh page, e.g. qwen3-8b
+    validations: { required: true }
+  - type: input
+    id: field
+    attributes:
+      label: What's wrong
+      description: e.g. "GPQA Diamond is 71.2, we show 72.1" or "price changed to $0.40/M input"
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Where the correct number is published. It has to be an openly licensed source or the vendor's own page.
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

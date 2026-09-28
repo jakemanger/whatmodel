@@ -1,0 +1,33 @@
+[
+  {
+    "model": "command-a-plus",
+    "status": "blocked",
+    "reason": "Pinned Apache-declared BF16 HF README has no numeric quality benchmark rows or embedded result chart. Author blog has own benchmark numbers but no commercial document-content grant established; its model Apache announcement is not an express grant for the whole linked blog. No licensed copy/report for Command A+ found. Command A and Command A Reasoning are different checkpoints and were not substituted.",
+    "evidence_urls": [
+      "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16/blob/5fb6fde5fd12ff89356aae552e11883bc49f069b/README.md",
+      "https://cohere.com/blog/command-a-plus"
+    ],
+    "needed": "Author-licensed copy of Command A+ result table/chart, or explicit blog/report content permission."
+  },
+  {
+    "model": "exaone-4-5-33b",
+    "status": "blocked",
+    "reason": "Direct card/root EXAONE AI Model License1.2-NC restricts commercial use; §2.1b research-findings disclosure does not clearly override §§2.2/3.1 commercial restrictions. The own report2604.08644v1 is CC BY-NC-ND4.0. Neither is a below-revenue conditional grant. No independent CC-BY exact-checkpoint evaluation found in this focused pass. EXAONE4.0 paper scores cannot be assigned to4.5.",
+    "evidence_urls": [
+      "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
+      "https://arxiv.org/abs/2604.08644v1"
+    ],
+    "full_restricted_license_file": "/tmp/whatmodel-expansion/evidence/LGAI-EXAONE__EXAONE-4.5-33B.LICENSE",
+    "needed": "Commercial rights for its own result documentation or an independently licensed evaluator’s exact4.5-33B results."
+  },
+  {
+    "model": "grok-build-0-1",
+    "status": "blocked",
+    "reason": "Own launch/docs inspected did not establish a licensed, precisely defined quality-benchmark result for this model. Historical Grok Code Fast1 scores are not transferable: retirement migration redirects the old slug to the significantly improved Build0.1 model rather than proving identical weights.",
+    "evidence_urls": [
+      "https://x.ai/news/grok-build-0-1",
+      "https://docs.x.ai/developers/migration/may-15-retirement"
+    ],
+    "needed": "Exact Build0.1 evaluator-owned result with commercial publication reuse rights."
+  }
+]

@@ -1,0 +1,888 @@
+{
+  "licensing": {
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "legalcode_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+    "adapter_license": "CC-BY-SA-4.0",
+    "adapter": "whatmodel.sh",
+    "creators": [
+      "Naman Jain",
+      "King Han",
+      "Alex Gu",
+      "Wen-Ding Li",
+      "Fanjia Yan",
+      "Tianjun Zhang",
+      "Sida Wang",
+      "Armando Solar-Lezama",
+      "Koushik Sen",
+      "Ion Stoica"
+    ],
+    "title": "LiveCodeBench official website results — selected whatmodel.sh adaptation",
+    "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+    "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+    "source_releases": [
+      "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json"
+    ],
+    "changes": [
+      "Selected exact catalogue model/config matches and one explicit official slider window per model.",
+      "Reproduced upstream mean and one-decimal rounding, then converted percentages to fractions.",
+      "Mapped identifiers and added settings limitations, source pins and per-problem provenance."
+    ],
+    "sharealike": "This separate adapted numerical tranche, including any adapter copyright/database rights in it, is offered under CC BY-SA 4.0. Do not remove or supersede that licence with a blanket permissive licence.",
+    "publication": "Publish lcb-sharealike.json, its provenance, NOTICE and full licence alongside the API; preserve row licensing/source_id/evidence linkage in displayed and API-derived representations. No additional downstream restrictions or DRM.",
+    "database_scope": "Keep this separately attributable adapted database available. CC BY-SA 4.0 section 4 can also apply to database adaptations; physical separation alone does not waive those obligations."
+  },
+  "sources": [
+    {
+      "id": "livecodebench-website-20241226",
+      "name": "LiveCodeBench official website results (2024-12-26)",
+      "kind": "dataset",
+      "match": [
+        "github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json"
+      ],
+      "exact": true,
+      "license": "CC-BY-SA-4.0",
+      "license_url": "/licenses/lcb-sharealike-NOTICE.txt",
+      "terms_url": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/README.md",
+      "verdict": "allowed",
+      "checked": "2026-09-25",
+      "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+      "quote": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.",
+      "adapter_license": "CC-BY-SA-4.0",
+      "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+      "adapted_data_file": "/data/lcb-sharealike.json",
+      "provenance_file": "/data/lcb-sharealike-provenance.json",
+      "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+      "license_scope": "Numerical website release files in this same repository; not inferred from the MIT harness.",
+      "publication_requirement": "Retain this tranche, attribution, changes, licence and provenance when displaying or serving its rows.",
+      "icon": "huggingface.co"
+    },
+    {
+      "id": "livecodebench-website-20250801",
+      "name": "LiveCodeBench official website results (2025-08-01)",
+      "kind": "dataset",
+      "match": [
+        "github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json"
+      ],
+      "exact": true,
+      "license": "CC-BY-SA-4.0",
+      "license_url": "/licenses/lcb-sharealike-NOTICE.txt",
+      "terms_url": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/README.md",
+      "verdict": "allowed",
+      "checked": "2026-09-25",
+      "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+      "quote": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.",
+      "adapter_license": "CC-BY-SA-4.0",
+      "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+      "adapted_data_file": "/data/lcb-sharealike.json",
+      "provenance_file": "/data/lcb-sharealike-provenance.json",
+      "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+      "license_scope": "Numerical website release files in this same repository; not inferred from the MIT harness.",
+      "publication_requirement": "Retain this tranche, attribution, changes, licence and provenance when displaying or serving its rows.",
+      "icon": "huggingface.co"
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "livecodebench-official-20240101-20241101",
+      "name": "LiveCodeBench official (Jan 1–Nov 1, 2024)",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "family": "livecodebench-codegeneration",
+      "description": "Official website code-generation pass@1. Inclusive UTC filter 2024-01-01 00:00:00 through 2024-11-01 00:00:00; 387 identical problem IDs per selected model. Mean then one-decimal percentage rounding as upstream. No difficulty components or repaired/composite scores.",
+      "window_start": "2024-01-01T00:00:00Z",
+      "window_end": "2024-11-01T00:00:00Z",
+      "window_end_inclusive": true,
+      "problem_count": 387,
+      "release_commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70"
+    },
+    {
+      "id": "livecodebench-official-20240801-20250501",
+      "name": "LiveCodeBench official (Aug 1, 2024–May 1, 2025)",
+      "kind": "acc",
+      "category": "llm",
+      "url": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+      "family": "livecodebench-codegeneration",
+      "description": "Official website code-generation pass@1. Inclusive UTC filter 2024-08-01 00:00:00 through 2025-05-01 00:00:00; 454 identical problem IDs per selected model. Mean then one-decimal percentage rounding as upstream. No difficulty components or repaired/composite scores.",
+      "window_start": "2024-08-01T00:00:00Z",
+      "window_end": "2025-05-01T00:00:00Z",
+      "window_end_inclusive": true,
+      "problem_count": 454,
+      "release_commit": "f186ab5041d6b768733b8ae8145151c867942134"
+    }
+  ],
+  "results": [
+    {
+      "model": "deepseek-v3",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.489,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'DeepSeek-V3'; model_name=deepseek-chat. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=48.9405684755%; website rounding=48.9%; divided by 100. deepseek-chat endpoint explicitly labelled DeepSeek-V3, linked to original DeepSeek-V3, released 2024-12-26 before V3-0324 existed. No later endpoint alias resolution used. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "DeepSeek-V3"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 48.940568475452196,
+        "published_display_percent": 48.9,
+        "scale_divisor": 100,
+        "provenance_id": "deepseek-v3/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "deepseek-chat",
+        "upstream_model_repr": "DeepSeek-V3",
+        "upstream_model_style": "DeepSeekCode",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "llama-3-1-405b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.373,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'LLama3.1-405b-Ins-FP8'; model_name=meta-llama/Meta-Llama-3.1-405B-Instruct-FP8. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=37.2868217054%; website rounding=37.3%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Source checkpoint is specifically FP8, retained in settings and note. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "LLama3.1-405b-Ins-FP8"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 37.286821705426355,
+        "published_display_percent": 37.3,
+        "scale_divisor": 100,
+        "provenance_id": "llama-3-1-405b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "meta-llama/Meta-Llama-3.1-405B-Instruct-FP8",
+        "upstream_model_repr": "LLama3.1-405b-Ins-FP8",
+        "upstream_model_style": "LLaMa3",
+        "reasoning_effort": null,
+        "weight_precision": "FP8",
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "llama-3-1-70b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.263,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'LLama3.1-70b-Ins'; model_name=meta-llama/Meta-Llama-3.1-70B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=26.2532299742%; website rounding=26.3%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "LLama3.1-70b-Ins"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 26.253229974160206,
+        "published_display_percent": 26.3,
+        "scale_divisor": 100,
+        "provenance_id": "llama-3-1-70b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+        "upstream_model_repr": "LLama3.1-70b-Ins",
+        "upstream_model_style": "LLaMa3",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "llama-3-1-8b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.161,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'LLama3.1-8b-Ins'; model_name=meta-llama/Meta-Llama-3.1-8B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=16.149870801%; website rounding=16.1%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "LLama3.1-8b-Ins"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 16.149870801033593,
+        "published_display_percent": 16.1,
+        "scale_divisor": 100,
+        "provenance_id": "llama-3-1-8b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        "upstream_model_repr": "LLama3.1-8b-Ins",
+        "upstream_model_style": "LLaMa3",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "llama-3-3-70b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.318,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'LLama3.3-70b-Ins'; model_name=meta-llama/Llama-3.3-70B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=31.7829457364%; website rounding=31.8%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Upstream link mistakenly points to Llama 3.1; model_name and model_repr both explicitly identify Llama 3.3 and take precedence. Raw metadata retained. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "LLama3.3-70b-Ins"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 31.782945736434108,
+        "published_display_percent": 31.8,
+        "scale_divisor": 100,
+        "provenance_id": "llama-3-3-70b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "meta-llama/Llama-3.3-70B-Instruct",
+        "upstream_model_repr": "LLama3.3-70b-Ins",
+        "upstream_model_style": "LLaMa3",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "qwen2-5-32b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.401,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen2.5-Ins-32B'; model_name=Qwen/Qwen2.5-32B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=40.0775193798%; website rounding=40.1%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "Qwen2.5-Ins-32B"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 40.07751937984496,
+        "published_display_percent": 40.1,
+        "scale_divisor": 100,
+        "provenance_id": "qwen2-5-32b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "Qwen/Qwen2.5-32B-Instruct",
+        "upstream_model_repr": "Qwen2.5-Ins-32B",
+        "upstream_model_style": "CodeQwen15",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "qwen2-5-72b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.41700000000000004,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen2.5-Ins-72B'; model_name=Qwen/Qwen2.5-72B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=41.6795865633%; website rounding=41.7%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "Qwen2.5-Ins-72B"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 41.679586563307495,
+        "published_display_percent": 41.7,
+        "scale_divisor": 100,
+        "provenance_id": "qwen2-5-72b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "Qwen/Qwen2.5-72B-Instruct",
+        "upstream_model_repr": "Qwen2.5-Ins-72B",
+        "upstream_model_style": "CodeQwen15",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "qwen2-5-7b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.253,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen2.5-Ins-7B'; model_name=Qwen/Qwen2.5-7B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=25.322997416%; website rounding=25.3%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "Qwen2.5-Ins-7B"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 25.322997416020673,
+        "published_display_percent": 25.3,
+        "scale_divisor": 100,
+        "provenance_id": "qwen2-5-7b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "Qwen/Qwen2.5-7B-Instruct",
+        "upstream_model_repr": "Qwen2.5-Ins-7B",
+        "upstream_model_style": "CodeQwen15",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "qwen2-5-coder-32b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.41600000000000004,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen2.5-Coder-Ins-32B'; model_name=Qwen/Qwen2.5-Coder-32B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=41.6279069767%; website rounding=41.6%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "Qwen2.5-Coder-Ins-32B"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 41.627906976744185,
+        "published_display_percent": 41.6,
+        "scale_divisor": 100,
+        "provenance_id": "qwen2-5-coder-32b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "Qwen/Qwen2.5-Coder-32B-Instruct",
+        "upstream_model_repr": "Qwen2.5-Coder-Ins-32B",
+        "upstream_model_style": "CodeQwen15",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "qwen2-5-coder-7b",
+      "bench": "livecodebench-official-20240101-20241101",
+      "score": 0.262,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+      "source_id": "livecodebench-website-20241226",
+      "by": "independent",
+      "date": "2024-12-26",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen2.5-Coder-Ins-7B'; model_name=Qwen/Qwen2.5-Coder-7B-Instruct. Code generation, 387 problems; inclusive UTC window 2024-01-01T00:00:00Z to 2024-11-01T00:00:00Z. Mean per-problem pass@1=26.2273901809%; website rounding=26.2%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "aa37a9f8317713b146ff5ada8ab8b2513bb20b70",
+        "file": "src/mocks/performances_generation.json",
+        "model_selector": {
+          "model": "Qwen2.5-Coder-Ins-7B"
+        },
+        "date_filter": {
+          "gte": 1704067200000,
+          "lte": 1730419200000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 387,
+        "raw_mean_percent": 26.227390180878555,
+        "published_display_percent": 26.2,
+        "scale_divisor": 100,
+        "provenance_id": "qwen2-5-coder-7b/livecodebench-official-20240101-20241101",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "Qwen/Qwen2.5-Coder-7B-Instruct",
+        "upstream_model_repr": "Qwen2.5-Coder-Ins-7B",
+        "upstream_model_style": "CodeQwen15",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "o3",
+      "bench": "livecodebench-official-20240801-20250501",
+      "score": 0.758,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+      "source_id": "livecodebench-website-20250801",
+      "by": "independent",
+      "date": "2025-08-01",
+      "note": "LiveCodeBench author-maintained website release; entry 'O3 (High)'; model_name=o3__high. Code generation, 454 problems; inclusive UTC window 2024-08-01T00:00:00Z to 2025-05-01T00:00:00Z. Mean per-problem pass@1=75.7709251101%; website rounding=75.8%; divided by 100. Exact published endpoint/config retained (o3__high); source does not disclose a dated API snapshot. High effort selected a priori, not by maximising the score. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "f186ab5041d6b768733b8ae8145151c867942134",
+        "file": "build/performances_generation.json",
+        "model_selector": {
+          "model": "O3 (High)"
+        },
+        "date_filter": {
+          "gte": 1722470400000,
+          "lte": 1746057600000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 454,
+        "raw_mean_percent": 75.77092511013215,
+        "published_display_percent": 75.8,
+        "scale_divisor": 100,
+        "provenance_id": "o3/livecodebench-official-20240801-20250501",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "o3__high",
+        "upstream_model_repr": "O3 (High)",
+        "upstream_model_style": "OpenAIReason",
+        "reasoning_effort": "high",
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "o4-mini",
+      "bench": "livecodebench-official-20240801-20250501",
+      "score": 0.802,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+      "source_id": "livecodebench-website-20250801",
+      "by": "independent",
+      "date": "2025-08-01",
+      "note": "LiveCodeBench author-maintained website release; entry 'O4-Mini (High)'; model_name=o4-mini__high. Code generation, 454 problems; inclusive UTC window 2024-08-01T00:00:00Z to 2025-05-01T00:00:00Z. Mean per-problem pass@1=80.1762114537%; website rounding=80.2%; divided by 100. Exact published endpoint/config retained (o4-mini__high); source does not disclose a dated API snapshot. High effort selected a priori, not by maximising the score. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "f186ab5041d6b768733b8ae8145151c867942134",
+        "file": "build/performances_generation.json",
+        "model_selector": {
+          "model": "O4-Mini (High)"
+        },
+        "date_filter": {
+          "gte": 1722470400000,
+          "lte": 1746057600000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 454,
+        "raw_mean_percent": 80.1762114537445,
+        "published_display_percent": 80.2,
+        "scale_divisor": 100,
+        "provenance_id": "o4-mini/livecodebench-official-20240801-20250501",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "o4-mini__high",
+        "upstream_model_repr": "O4-Mini (High)",
+        "upstream_model_style": "OpenAIReason",
+        "reasoning_effort": "high",
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    },
+    {
+      "model": "qwen3-235b-a22b",
+      "bench": "livecodebench-official-20240801-20250501",
+      "score": 0.659,
+      "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+      "source_id": "livecodebench-website-20250801",
+      "by": "independent",
+      "date": "2025-08-01",
+      "note": "LiveCodeBench author-maintained website release; entry 'Qwen3-235B-A22B'; model_name=Qwen/Qwen3-235B-A22B. Code generation, 454 problems; inclusive UTC window 2024-08-01T00:00:00Z to 2025-05-01T00:00:00Z. Mean per-problem pass@1=65.859030837%; website rounding=65.9%; divided by 100. Exact upstream model_name matched to original catalogue; instruct/base and parameter size preserved. April 2025 hybrid checkpoint; thinking mode/token budget is not stated by the website JSON. Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings. Date is publication date, not evaluation-run date. CC BY-SA 4.0; attribution and adaptation notice retained in source/licensing/provenance.",
+      "evidence": {
+        "kind": "published-per-problem-json",
+        "commit": "f186ab5041d6b768733b8ae8145151c867942134",
+        "file": "build/performances_generation.json",
+        "model_selector": {
+          "model": "Qwen3-235B-A22B"
+        },
+        "date_filter": {
+          "gte": 1722470400000,
+          "lte": 1746057600000
+        },
+        "field": "pass@1",
+        "aggregation": "Number(mean(values).toFixed(1)) / 100",
+        "problem_count": 454,
+        "raw_mean_percent": 65.85903083700441,
+        "published_display_percent": 65.9,
+        "scale_divisor": 100,
+        "provenance_id": "qwen3-235b-a22b/livecodebench-official-20240801-20250501",
+        "provenance_file": "/data/lcb-sharealike-provenance.json"
+      },
+      "settings": {
+        "metric": "pass@1",
+        "scenario": "codegeneration",
+        "upstream_model_name": "Qwen/Qwen3-235B-A22B",
+        "upstream_model_repr": "Qwen3-235B-A22B",
+        "upstream_model_style": "CodeQwenInstruct",
+        "reasoning_effort": null,
+        "weight_precision": null,
+        "temperature": null,
+        "top_p": null,
+        "samples_per_problem": null,
+        "max_output_tokens": null,
+        "evaluation_run_date": null,
+        "exact_harness_commit": null,
+        "weight_digest": null,
+        "unknown_settings_note": "Per-run decoding, sample counts, token budgets, run date and weight digests are not released in these website records. Harness defaults are not asserted as actual run settings."
+      },
+      "licensing": {
+        "license": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "adapter_license": "CC-BY-SA-4.0",
+        "attribution": "LiveCodeBench website evaluation results by the LiveCodeBench authors (Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Armando Solar-Lezama, Koushik Sen, Ion Stoica). CC BY-SA 4.0. Adapted by whatmodel.sh: selected models and explicit date windows, reproduced the website arithmetic mean and one-decimal percentage rounding, mapped catalogue IDs, converted percentages to fractions, and added provenance. No endorsement.",
+        "source": "https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json",
+        "disclaimer": "Licensed material is provided as-is and as-available, without warranties; see CC BY-SA 4.0 section 5 for the complete disclaimer and liability limitation.",
+        "notice_file": "/licenses/lcb-sharealike-NOTICE.txt",
+        "adapted_data_file": "/data/lcb-sharealike.json"
+      },
+      "data_license": "CC-BY-SA-4.0",
+      "licensed_artifact": "/data/lcb-sharealike.json"
+    }
+  ],
+  "models": []
+}

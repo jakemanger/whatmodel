@@ -1,0 +1,23 @@
+name: Missing model
+description: A model that should be on the leaderboard isn't.
+labels: [data]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model name
+    validations: { required: true }
+  - type: input
+    id: links
+    attributes:
+      label: Official page, weights or API docs
+    validations: { required: true }
+  - type: textarea
+    id: results
+    attributes:
+      label: Published benchmark results
+      description: Links to results under an open licence (CC BY, CC BY-SA, CC0, MIT, Apache), or the vendor's own model card. Leaderboard aggregators can't be used.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

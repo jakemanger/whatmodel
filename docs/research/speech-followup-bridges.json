@@ -1,0 +1,67 @@
+{
+  "scope": "Exact model-ID co-occurrence in selected benchmark rows. Graph connectivity is not a claim that test conditions are interchangeable.",
+  "new_connections": [
+    {
+      "source_id": "speech-vapi-humanness-20260925",
+      "from_existing_source": "speech-emergent-apache",
+      "from_models": [
+        "minimax-speech-02-hd"
+      ],
+      "to_existing_source": "speech-voxtral-tts-report",
+      "to_models": [
+        "elevenlabs-v3",
+        "elevenlabs-flash-v2-5"
+      ],
+      "basis": "One current independent Vapi same-voice evaluation, with exact registry identities."
+    },
+    {
+      "source_id": "speech-amharic-addis-bysa",
+      "from_existing_source": "speech-emergent-apache",
+      "from_models": [
+        "gpt-4o-mini-tts"
+      ],
+      "to_existing_source": "speech-voxtral-tts-report",
+      "to_models": [
+        "elevenlabs-v3"
+      ],
+      "basis": "Same pinned Amharic evaluation; both overlap rows explicitly test unsupported Amharic, limiting generalization."
+    }
+  ],
+  "attachments": [
+    {
+      "source_id": "speech-vibevoice-mit-figure",
+      "existing_model": "gemini-2-5-pro-preview-tts",
+      "new_models": [
+        "vibevoice-1-5b",
+        "elevenlabs-v3-alpha"
+      ]
+    }
+  ],
+  "no_connection_to": [
+    "speech-cn-news-tts-ccby",
+    "TTSDS v1 comparison set",
+    "Fish/dots comparison set"
+  ],
+  "single_model_benchmarks": [
+    "vapi-humanness-export-20260610",
+    "granite41-lscln-punctuation-error"
+  ],
+  "tts_graph_after_followup": {
+    "multi_model_components": 4,
+    "component_sizes": [
+      24,
+      7,
+      4,
+      3
+    ],
+    "singletons": [
+      "elevenlabs-turbo-v2-5"
+    ]
+  },
+  "no_false_aliases": [
+    "Lightning v3.1 is not mapped to v3.1 Pro",
+    "Sonic 3.5 is not mapped to Sonic 3.6",
+    "Eleven v3 Alpha remains distinct from production v3",
+    "Historical Turbo ratings do not share a source group with current BT ratings"
+  ]
+}

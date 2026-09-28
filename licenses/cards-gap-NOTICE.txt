@@ -1,0 +1,87 @@
+whatmodel.sh — cards gap extraction notices
+Preserve the relevant full licences with redistribution. These changes select numerical cells, normalize scales and clarify benchmark/setup labels. No endorsement.
+
+card-ifm-k2-horizon-7b
+IFM/K2-Horizon-7B — IFM/K2-Horizon-7B model card
+Source: https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to IFM. No endorsement.
+
+card-liquidai-lfm2-5-1-2b-thinking
+Liquid AI — LFM2.5-1.2B-Thinking model card. Source: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md
+Licensed under LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/LICENSE
+Modified for whatmodel.sh: selected benchmark cells, normalized percentages to fractions, and clarified metric/setup labels. No endorsement. Commercial reuse remains subject to the licence’s annual-revenue condition and other terms.
+
+card-liquidai-lfm2-5-8b-a1b
+Liquid AI — LFM2.5-8B-A1B model card. Source: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md
+Licensed under LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/LICENSE
+Modified for whatmodel.sh: selected benchmark cells, normalized percentages to fractions, and clarified metric/setup labels. No endorsement. Commercial reuse remains subject to the licence’s annual-revenue condition and other terms.
+
+card-mistralai-devstral-small-2-24b-instruct-2512
+mistralai/Devstral-Small-2-24B-Instruct-2512 — mistralai/Devstral-Small-2-24B-Instruct-2512 model card
+Source: https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-ministral-3-14b-instruct-2512
+mistralai/Ministral-3-14B-Instruct-2512 — mistralai/Ministral-3-14B-Instruct-2512 model card
+Source: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-ministral-3-14b-reasoning-2512
+mistralai/Ministral-3-14B-Reasoning-2512 — mistralai/Ministral-3-14B-Reasoning-2512 model card
+Source: https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-ministral-3-3b-instruct-2512
+mistralai/Ministral-3-3B-Instruct-2512 — mistralai/Ministral-3-3B-Instruct-2512 model card
+Source: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-ministral-3-3b-reasoning-2512
+mistralai/Ministral-3-3B-Reasoning-2512 — mistralai/Ministral-3-3B-Reasoning-2512 model card
+Source: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-ministral-3-8b-instruct-2512
+mistralai/Ministral-3-8B-Instruct-2512 — mistralai/Ministral-3-8B-Instruct-2512 model card
+Source: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512/blob/5b26027e7b19eeb4b7352e1fed3926375dd2cb4d/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-ministral-3-8b-reasoning-2512
+mistralai/Ministral-3-8B-Reasoning-2512 — mistralai/Ministral-3-8B-Reasoning-2512 model card
+Source: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-mistralai-mistral-small-4-119b-2603
+mistralai/Mistral-Small-4-119B-2603 — mistralai/Mistral-Small-4-119B-2603 model card
+Source: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to mistralai. No endorsement.
+
+card-qwen-qwen3-coder-next
+Qwen/Qwen3-Coder-Next — Qwen/Qwen3-Coder-Next model card
+Source: https://huggingface.co/Qwen/Qwen3-Coder-Next/blob/a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb/README.md
+Licence declaration: Apache-2.0 (pinned README metadata).
+Changes: Selected own-model table cells or printed chart labels transcribed into JSON; percentages divided by 100, already-fractional values preserved; benchmark aliases/settings documented. Logos and full chart artwork are not redistributed in the results.
+Attribution to Qwen. No endorsement.
+
+report-2511.23404v1
+Liquid AI (2025). LFM2 Technical Report. arXiv:2511.23404v1. https://arxiv.org/html/2511.23404v1
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Selected Table7 SmolLM3-3B own reevaluation cells and AppendixC methods; percentages normalized to fractions and benchmark names clarified. No endorsement.

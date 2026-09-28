@@ -1,0 +1,53 @@
+{
+  "status": "READY_FINAL",
+  "research_closed": true,
+  "combined_file": "/tmp/whatmodel-expansion/speech-followup.json",
+  "sha256": "420683534d3c9a6d31476e863090d07fcb6e97a0f15e333c2d3b74f94fe7a9d6",
+  "counts": {
+    "sources": 5,
+    "benchmarks": 5,
+    "results": 18,
+    "models": 17
+  },
+  "parts": [
+    {
+      "file": "/tmp/whatmodel-expansion/speech-amharic-bysa.json",
+      "results": 7,
+      "sha256": "732be12dfbea0041b9e1a6e72a4297c6b7db5bdb23efd7637575b785d40c20ef"
+    },
+    {
+      "file": "/tmp/whatmodel-expansion/speech-vibevoice-mos.json",
+      "results": 3,
+      "sha256": "455546c42ad7150dd78cc5fda66a0f090133039799ec50c0e8f4d49ef9b8661a"
+    },
+    {
+      "file": "/tmp/whatmodel-expansion/speech-vapi.json",
+      "results": 7,
+      "sha256": "a8f6a9250bbaf407ecdf9ebc498303401eb2c84ac119a80dd7b0d76985deec46"
+    },
+    {
+      "file": "/tmp/whatmodel-expansion/speech-granite-punctuation.json",
+      "results": 1,
+      "sha256": "3f0cde806c262ebbbf84d8f4b94bc31db245c32e8008badec92240b0e9db52a1"
+    }
+  ],
+  "import_instruction": "Import combined once OR individual parts. If Amharic is already imported, import only VibeVoice, Vapi, Granite parts (11 rows).",
+  "original_coverage_after_followup": {
+    "tts": {
+      "original_count": 36,
+      "covered_after_followup": 18,
+      "remaining": 18
+    },
+    "stt": {
+      "original_count": 30,
+      "covered_after_followup": 22,
+      "remaining": 8
+    }
+  },
+  "report": "/tmp/whatmodel-expansion/speech-followup-report.md",
+  "closure": "/tmp/whatmodel-expansion/speech-closure.json",
+  "notices": "/tmp/whatmodel-expansion/speech-followup-NOTICES.txt",
+  "evidence_manifest": "/tmp/whatmodel-expansion/speech-followup-evidence-manifest.json",
+  "base_98_unchanged": true,
+  "graph_handoff": "/tmp/whatmodel-expansion/speech-followup-bridges.json"
+}

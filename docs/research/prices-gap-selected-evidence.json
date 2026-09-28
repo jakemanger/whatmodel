@@ -1,0 +1,316 @@
+{
+  "checked_at": "2026-09-25T10:41:13.972206+00:00",
+  "records": [
+    {
+      "source_id": "litellm-prices",
+      "record_key": "mistral/ministral-3b-2512",
+      "record": {
+        "input_cost_per_token": 1e-07,
+        "litellm_provider": "mistral",
+        "max_input_tokens": 131072,
+        "max_output_tokens": 131072,
+        "max_tokens": 131072,
+        "mode": "chat",
+        "output_cost_per_token": 1e-07,
+        "source": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+        "supports_assistant_prefill": true,
+        "supports_function_calling": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true,
+        "cache_read_input_token_cost": 1e-08
+      }
+    },
+    {
+      "source_id": "litellm-prices",
+      "record_key": "mistral/ministral-8b-2512",
+      "record": {
+        "cache_read_input_token_cost": 1.5e-08,
+        "input_cost_per_token": 1.5e-07,
+        "litellm_provider": "mistral",
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "max_tokens": 262144,
+        "mode": "chat",
+        "output_cost_per_token": 1.5e-07,
+        "source": "https://mistral.ai/pricing",
+        "supports_assistant_prefill": true,
+        "supports_function_calling": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      }
+    },
+    {
+      "source_id": "litellm-prices",
+      "record_key": "mistral/ministral-14b-2512",
+      "record": {
+        "input_cost_per_token": 2e-07,
+        "litellm_provider": "mistral",
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "max_tokens": 262144,
+        "mode": "chat",
+        "output_cost_per_token": 2e-07,
+        "source": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
+        "supports_assistant_prefill": true,
+        "supports_function_calling": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true,
+        "cache_read_input_token_cost": 2e-08
+      }
+    },
+    {
+      "source_id": "litellm-prices",
+      "record_key": "mistral/mistral-small-2603",
+      "record": {
+        "cache_read_input_token_cost": 1.5e-08,
+        "input_cost_per_token": 1.5e-07,
+        "litellm_provider": "mistral",
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "max_tokens": 262144,
+        "mode": "chat",
+        "output_cost_per_token": 6e-07,
+        "reasoning_effort_levels": [
+          "none",
+          "high"
+        ],
+        "source": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
+        "supports_assistant_prefill": true,
+        "supports_function_calling": true,
+        "supports_reasoning": true,
+        "supports_response_schema": true,
+        "supports_tool_choice": true,
+        "supports_vision": true
+      }
+    },
+    {
+      "source_id": "litellm-prices",
+      "record_key": "deepinfra/inclusionAI/Ling-3.0-flash",
+      "record": {
+        "max_tokens": 131072,
+        "max_input_tokens": 131072,
+        "input_cost_per_token": 6e-08,
+        "output_cost_per_token": 1.8e-07,
+        "cache_read_input_token_cost": 1.2e-08,
+        "supports_prompt_caching": true,
+        "litellm_provider": "deepinfra",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "supports_response_schema": true,
+        "supports_reasoning": true,
+        "supports_vision": false,
+        "source": "https://deepinfra.com/pricing"
+      }
+    },
+    {
+      "source_id": "litellm-prices",
+      "record_key": "nebius/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "record": {
+        "max_tokens": 262144,
+        "max_input_tokens": 262144,
+        "max_output_tokens": 262144,
+        "input_cost_per_token": 1e-07,
+        "output_cost_per_token": 3e-07,
+        "litellm_provider": "nebius",
+        "mode": "chat",
+        "supports_function_calling": true,
+        "source": "https://tokenfactory.nebius.com/models/catalog/text2text/Qwen%2FQwen3-30B-A3B-Instruct-2507"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "deepinfra:ibm-granite--granite-4.2-3b",
+        "service": "ibm-granite/granite-4.2-3b (on DeepInfra)",
+        "provider": "DeepInfra",
+        "parameter_id": "deepinfra:ibm-granite--granite-4.2-3b#context_length",
+        "receipt": "https://bertrande.com/r/171814a67dd6",
+        "parameter": "context_length",
+        "condition": null,
+        "label": "Context window",
+        "unit": "tokens",
+        "content_hash": "edc6ec17377bc0c77faef048378d3e509ba92b5b6d6dcd9564119f765b7ad26b",
+        "value": 131072.0,
+        "observed_at": "2026-09-22T10:15:02Z",
+        "source_level": 1,
+        "source_url": "https://api.deepinfra.com/models/list"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "deepinfra:ibm-granite--granite-4.2-3b",
+        "service": "ibm-granite/granite-4.2-3b (on DeepInfra)",
+        "provider": "DeepInfra",
+        "parameter_id": "deepinfra:ibm-granite--granite-4.2-3b#price_input",
+        "receipt": "https://bertrande.com/r/8b30fca97dc0",
+        "parameter": "price_input",
+        "condition": null,
+        "label": "Input price",
+        "unit": "USD per 1M tokens",
+        "content_hash": "edc6ec17377bc0c77faef048378d3e509ba92b5b6d6dcd9564119f765b7ad26b",
+        "value": 0.03,
+        "observed_at": "2026-09-22T10:15:02Z",
+        "source_level": 1,
+        "source_url": "https://api.deepinfra.com/models/list"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "deepinfra:ibm-granite--granite-4.2-3b",
+        "service": "ibm-granite/granite-4.2-3b (on DeepInfra)",
+        "provider": "DeepInfra",
+        "parameter_id": "deepinfra:ibm-granite--granite-4.2-3b#price_output",
+        "receipt": "https://bertrande.com/r/9baf791c83b1",
+        "parameter": "price_output",
+        "condition": null,
+        "label": "Output price",
+        "unit": "USD per 1M tokens",
+        "content_hash": "edc6ec17377bc0c77faef048378d3e509ba92b5b6d6dcd9564119f765b7ad26b",
+        "value": 0.12,
+        "observed_at": "2026-09-22T10:15:02Z",
+        "source_level": 1,
+        "source_url": "https://api.deepinfra.com/models/list"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "deepinfra:ibm-granite--granite-4.2-30b",
+        "service": "ibm-granite/granite-4.2-30b (on DeepInfra)",
+        "provider": "DeepInfra",
+        "parameter_id": "deepinfra:ibm-granite--granite-4.2-30b#context_length",
+        "receipt": "https://bertrande.com/r/8f7ca1bb5bc6",
+        "parameter": "context_length",
+        "condition": null,
+        "label": "Context window",
+        "unit": "tokens",
+        "content_hash": "edc6ec17377bc0c77faef048378d3e509ba92b5b6d6dcd9564119f765b7ad26b",
+        "value": 131072.0,
+        "observed_at": "2026-09-22T10:15:02Z",
+        "source_level": 1,
+        "source_url": "https://api.deepinfra.com/models/list"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "deepinfra:ibm-granite--granite-4.2-30b",
+        "service": "ibm-granite/granite-4.2-30b (on DeepInfra)",
+        "provider": "DeepInfra",
+        "parameter_id": "deepinfra:ibm-granite--granite-4.2-30b#price_input",
+        "receipt": "https://bertrande.com/r/e9f7d9c459d7",
+        "parameter": "price_input",
+        "condition": null,
+        "label": "Input price",
+        "unit": "USD per 1M tokens",
+        "content_hash": "edc6ec17377bc0c77faef048378d3e509ba92b5b6d6dcd9564119f765b7ad26b",
+        "value": 0.16,
+        "observed_at": "2026-09-22T10:15:02Z",
+        "source_level": 1,
+        "source_url": "https://api.deepinfra.com/models/list"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "deepinfra:ibm-granite--granite-4.2-30b",
+        "service": "ibm-granite/granite-4.2-30b (on DeepInfra)",
+        "provider": "DeepInfra",
+        "parameter_id": "deepinfra:ibm-granite--granite-4.2-30b#price_output",
+        "receipt": "https://bertrande.com/r/084d98dc1bd4",
+        "parameter": "price_output",
+        "condition": null,
+        "label": "Output price",
+        "unit": "USD per 1M tokens",
+        "content_hash": "edc6ec17377bc0c77faef048378d3e509ba92b5b6d6dcd9564119f765b7ad26b",
+        "value": 0.65,
+        "observed_at": "2026-09-22T10:15:02Z",
+        "source_level": 1,
+        "source_url": "https://api.deepinfra.com/models/list"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "replicate:black-forest-labs--flux-dev",
+        "service": "black-forest-labs/flux-dev (on Replicate)",
+        "provider": "Replicate",
+        "parameter_id": "replicate:black-forest-labs--flux-dev#price_per_output_image",
+        "receipt": "https://bertrande.com/r/916eff593cc2",
+        "parameter": "price_per_output_image",
+        "condition": null,
+        "label": "Price per output image",
+        "unit": "per output image",
+        "content_hash": "78ca138b8d8d8e979843e34a71a39f26559857b2d9f4dc63f1a148d24d224f1e",
+        "value": 0.025,
+        "observed_at": "2026-09-20T01:44:15Z",
+        "source_level": 3,
+        "source_url": "https://replicate.com/pricing"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "replicate:black-forest-labs--flux-schnell",
+        "service": "black-forest-labs/flux-schnell (on Replicate)",
+        "provider": "Replicate",
+        "parameter_id": "replicate:black-forest-labs--flux-schnell#price_per_thousand_output_images",
+        "receipt": "https://bertrande.com/r/96467f01683c",
+        "parameter": "price_per_thousand_output_images",
+        "condition": null,
+        "label": "Price per thousand output images",
+        "unit": "per thousand output images",
+        "content_hash": "78ca138b8d8d8e979843e34a71a39f26559857b2d9f4dc63f1a148d24d224f1e",
+        "value": 3.0,
+        "observed_at": "2026-09-20T01:44:15Z",
+        "source_level": 3,
+        "source_url": "https://replicate.com/pricing"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "replicate:inworld--realtime-tts-2",
+        "service": "inworld/realtime-tts-2 (on Replicate)",
+        "provider": "Replicate",
+        "parameter_id": "replicate:inworld--realtime-tts-2#price_per_thousand_input_characters",
+        "receipt": "https://bertrande.com/r/b30a3d6a50b8",
+        "parameter": "price_per_thousand_input_characters",
+        "condition": null,
+        "label": "Price per thousand input characters",
+        "unit": "per thousand input characters",
+        "content_hash": "78ca138b8d8d8e979843e34a71a39f26559857b2d9f4dc63f1a148d24d224f1e",
+        "value": 0.025,
+        "observed_at": "2026-09-20T01:44:15Z",
+        "source_level": 3,
+        "source_url": "https://replicate.com/pricing"
+      }
+    },
+    {
+      "source_id": "bertrande-direct-provider-observations",
+      "observation": {
+        "service_id": "replicate:alibaba--happyhorse-1.0",
+        "service": "alibaba/happyhorse-1.0 (on Replicate)",
+        "provider": "Replicate",
+        "parameter_id": "replicate:alibaba--happyhorse-1.0#price_per_second_of_output_video@target-resolution-720p",
+        "receipt": "https://bertrande.com/r/2d045ba78f57",
+        "parameter": "price_per_second_of_output_video",
+        "condition": "target resolution 720p",
+        "label": "Price per second of output video",
+        "unit": "per second of output video",
+        "content_hash": "78ca138b8d8d8e979843e34a71a39f26559857b2d9f4dc63f1a148d24d224f1e",
+        "value": 0.14,
+        "observed_at": "2026-09-20T01:44:15Z",
+        "source_level": 3,
+        "source_url": "https://replicate.com/pricing"
+      }
+    }
+  ],
+  "note": "Selected licensed catalogue cells only. Raw provider pages are corroboration, not the reusable price source."
+}

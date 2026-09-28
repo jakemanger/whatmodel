@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checks": 910,
+  "summary": {
+    "original_models": 340,
+    "current_models": 340,
+    "current_models_with_prices": 115,
+    "api_patches": 54,
+    "api_patches_in_current": 54,
+    "api_patches_for_absent_models": 0,
+    "api_patches_by_category": {
+      "llm": 22,
+      "tts": 6,
+      "stt": 9,
+      "image": 12,
+      "video": 5
+    },
+    "current_price_coverage_after_merge": 169,
+    "context_patches": 29,
+    "context_patches_in_current": 29,
+    "native_unit_records": 4,
+    "unresolved_original_price_models": 171
+  },
+  "limitations": [
+    "No paid inference was invoked. Verification is catalogue/provider-document comparison, not a billing experiment.",
+    "A provider page does not supply a reuse licence; only named licensed catalogue/table tranches supply published values.",
+    "This validates a saved baseline; recheck missing-field preconditions against live data before any merge."
+  ]
+}

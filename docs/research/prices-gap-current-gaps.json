@@ -1,0 +1,1365 @@
+{
+  "as_of": "2026-09-25T10:42:05.967064+00:00",
+  "before": {
+    "original_models": 340,
+    "original_priced": 169,
+    "original_with_context": 147,
+    "context_present_in_original_context_subset": 144,
+    "original_context_subset_size": 206,
+    "original_without_api_url": 95
+  },
+  "after_conditional_apply": {
+    "original_models": 340,
+    "original_priced": 181,
+    "original_with_context": 183,
+    "context_present_in_original_context_subset": 180,
+    "original_context_subset_size": 206,
+    "original_without_api_url": 74
+  },
+  "remaining_original_price_gaps": [
+    {
+      "model": "muse-spark-1-3",
+      "category": "llm",
+      "api_url": "https://dev.meta.ai/docs/pricing-rate-limits"
+    },
+    {
+      "model": "gemma-4-e2b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gemma-4-e4b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-5-4b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gemma-4-12b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-8-flash-next",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "grok-build-0-1",
+      "category": "llm",
+      "api_url": "https://docs.x.ai/docs/models"
+    },
+    {
+      "model": "nova-2-pro",
+      "category": "llm",
+      "api_url": "https://aws.amazon.com/nova/pricing/"
+    },
+    {
+      "model": "nova-2-omni",
+      "category": "llm",
+      "api_url": "https://aws.amazon.com/nova/pricing/"
+    },
+    {
+      "model": "nova-premier",
+      "category": "llm",
+      "api_url": "https://aws.amazon.com/nova/pricing/"
+    },
+    {
+      "model": "cartesia-sonic-3-6",
+      "category": "tts",
+      "api_url": "https://cartesia.ai/pricing"
+    },
+    {
+      "model": "gemini-3-8-flash-tts",
+      "category": "tts",
+      "api_url": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "model": "gemini-3-8-flash-lite-tts",
+      "category": "tts",
+      "api_url": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "model": "qwen-audio-3-0-tts-plus",
+      "category": "tts",
+      "api_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+    },
+    {
+      "model": "speechify-simba-3-2",
+      "category": "tts",
+      "api_url": "https://speechify.com/text-to-speech-api/"
+    },
+    {
+      "model": "elevenlabs-v3-conversational",
+      "category": "tts",
+      "api_url": "https://elevenlabs.io/pricing/api"
+    },
+    {
+      "model": "elevenlabs-v3",
+      "category": "tts",
+      "api_url": "https://elevenlabs.io/pricing/api"
+    },
+    {
+      "model": "elevenlabs-multilingual-v2",
+      "category": "tts",
+      "api_url": "https://elevenlabs.io/pricing/api"
+    },
+    {
+      "model": "elevenlabs-flash-v2-5",
+      "category": "tts",
+      "api_url": "https://elevenlabs.io/pricing/api"
+    },
+    {
+      "model": "elevenlabs-turbo-v2-5",
+      "category": "tts",
+      "api_url": "https://elevenlabs.io/pricing/api"
+    },
+    {
+      "model": "minimax-speech-2-8-hd",
+      "category": "tts",
+      "api_url": "https://platform.minimax.io/docs/pricing/overview"
+    },
+    {
+      "model": "minimax-speech-2-8-turbo",
+      "category": "tts",
+      "api_url": "https://platform.minimax.io/docs/pricing/overview"
+    },
+    {
+      "model": "smallest-lightning-v3-1-pro",
+      "category": "tts",
+      "api_url": "https://smallest.ai/pricing"
+    },
+    {
+      "model": "hume-octave-2",
+      "category": "tts",
+      "api_url": "https://www.hume.ai/pricing"
+    },
+    {
+      "model": "hume-octave",
+      "category": "tts",
+      "api_url": "https://www.hume.ai/pricing"
+    },
+    {
+      "model": "azure-hd-2-5",
+      "category": "tts",
+      "api_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/"
+    },
+    {
+      "model": "google-chirp-3-hd",
+      "category": "tts",
+      "api_url": "https://cloud.google.com/text-to-speech/pricing"
+    },
+    {
+      "model": "openaudio-s1",
+      "category": "tts",
+      "api_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits"
+    },
+    {
+      "model": "kokoro-82m",
+      "category": "tts",
+      "api_url": "https://deepinfra.com/hexgrad/Kokoro-82M"
+    },
+    {
+      "model": "chatterbox",
+      "category": "tts",
+      "api_url": "https://www.resemble.ai/pricing"
+    },
+    {
+      "model": "fish-audio-s2-pro",
+      "category": "tts",
+      "api_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits"
+    },
+    {
+      "model": "openaudio-s1-mini",
+      "category": "tts",
+      "api_url": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits"
+    },
+    {
+      "model": "higgs-audio-v3-tts",
+      "category": "tts",
+      "api_url": "https://docs.boson.ai"
+    },
+    {
+      "model": "vibevoice-1-5b",
+      "category": "tts",
+      "api_url": null
+    },
+    {
+      "model": "zonos-v0-1",
+      "category": "tts",
+      "api_url": "https://zyphra.com"
+    },
+    {
+      "model": "xtts-v2",
+      "category": "tts",
+      "api_url": null
+    },
+    {
+      "model": "magpie-tts-multilingual-357m",
+      "category": "tts",
+      "api_url": null
+    },
+    {
+      "model": "maya1",
+      "category": "tts",
+      "api_url": null
+    },
+    {
+      "model": "breeze-tts-2",
+      "category": "tts",
+      "api_url": "https://breezeblue.ai"
+    },
+    {
+      "model": "assemblyai-universal-3-5-pro",
+      "category": "stt",
+      "api_url": "https://www.assemblyai.com/pricing"
+    },
+    {
+      "model": "mai-transcribe-2",
+      "category": "stt",
+      "api_url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/"
+    },
+    {
+      "model": "gemini-3-5-transcribe",
+      "category": "stt",
+      "api_url": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "model": "google-chirp-3",
+      "category": "stt",
+      "api_url": "https://cloud.google.com/speech-to-text/pricing"
+    },
+    {
+      "model": "grok-voice-transcribe-2",
+      "category": "stt",
+      "api_url": "https://x.ai/news/grok-voice-transcribe-2"
+    },
+    {
+      "model": "speechmatics-enhanced",
+      "category": "stt",
+      "api_url": "https://www.speechmatics.com/pricing"
+    },
+    {
+      "model": "gladia-solaria-3",
+      "category": "stt",
+      "api_url": "https://www.gladia.io/pricing"
+    },
+    {
+      "model": "soniox-v5-async",
+      "category": "stt",
+      "api_url": "https://soniox.com/pricing"
+    },
+    {
+      "model": "distil-large-v3-5",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "parakeet-tdt-0-6b-v2",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "parakeet-tdt-0-6b-v3",
+      "category": "stt",
+      "api_url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3"
+    },
+    {
+      "model": "canary-qwen-2-5b",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "canary-1b-v2",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "parakeet-rnnt-1-1b",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "voxtral-small-24b",
+      "category": "stt",
+      "api_url": "https://docs.mistral.ai/getting-started/models/models_overview/"
+    },
+    {
+      "model": "voxtral-mini-3b",
+      "category": "stt",
+      "api_url": "https://mistral.ai/news/voxtral"
+    },
+    {
+      "model": "qwen3-asr-1-7b",
+      "category": "stt",
+      "api_url": "https://deepinfra.com/Qwen/Qwen3-ASR-1.7B"
+    },
+    {
+      "model": "granite-speech-4-1-2b",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "granite-speech-5-0-470m-turboctc",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "cohere-transcribe-03-2026",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "kyutai-stt-2-6b-en",
+      "category": "stt",
+      "api_url": null
+    },
+    {
+      "model": "gemini-omni-flash",
+      "category": "video",
+      "api_url": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "model": "wan-3-0",
+      "category": "video",
+      "api_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+    },
+    {
+      "model": "seedance-2-0",
+      "category": "video",
+      "api_url": "https://fal.ai/models/bytedance/seedance-2.0/text-to-video"
+    },
+    {
+      "model": "wan-2-7",
+      "category": "video",
+      "api_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing"
+    },
+    {
+      "model": "kling-3-0",
+      "category": "video",
+      "api_url": "https://kling.ai/dev/pricing"
+    },
+    {
+      "model": "kling-2-6-pro",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/kling-video/v2.6/pro/text-to-video"
+    },
+    {
+      "model": "veo-3",
+      "category": "video",
+      "api_url": null
+    },
+    {
+      "model": "sora-2",
+      "category": "video",
+      "api_url": null
+    },
+    {
+      "model": "sora-2-pro",
+      "category": "video",
+      "api_url": null
+    },
+    {
+      "model": "hailuo-2-3",
+      "category": "video",
+      "api_url": "https://platform.minimax.io/docs/guides/pricing-paygo.md"
+    },
+    {
+      "model": "vidu-q3-pro",
+      "category": "video",
+      "api_url": "https://platform.vidu.com/docs/pricing"
+    },
+    {
+      "model": "pixverse-v5-6",
+      "category": "video",
+      "api_url": "https://docs.platform.pixverse.ai/model-pricing-796039m0"
+    },
+    {
+      "model": "luma-ray-3",
+      "category": "video",
+      "api_url": null
+    },
+    {
+      "model": "seedance-1-5-pro",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/bytedance/seedance/v1.5/pro/text-to-video"
+    },
+    {
+      "model": "pika-2-2",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/pika/v2.2/text-to-video"
+    },
+    {
+      "model": "ltx-2-5",
+      "category": "video",
+      "api_url": "https://docs.ltx.io/pricing.md"
+    },
+    {
+      "model": "ltx-2",
+      "category": "video",
+      "api_url": null
+    },
+    {
+      "model": "wan-2-2-a14b",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video"
+    },
+    {
+      "model": "wan-2-2-5b",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video"
+    },
+    {
+      "model": "wan-2-1-14b",
+      "category": "video",
+      "api_url": null
+    },
+    {
+      "model": "hunyuanvideo-1-5",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video"
+    },
+    {
+      "model": "hunyuanvideo",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/hunyuan-video"
+    },
+    {
+      "model": "mochi-1",
+      "category": "video",
+      "api_url": "https://replicate.com/genmoai/mochi-1"
+    },
+    {
+      "model": "cogvideox-5b",
+      "category": "video",
+      "api_url": "https://fal.ai/models/fal-ai/cogvideox-5b"
+    },
+    {
+      "model": "llama-3-1-405b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "llama-4-maverick",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/meta-llama/llama-4-maverick"
+    },
+    {
+      "model": "qwen3-coder-next",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/qwen/qwen3-coder-next"
+    },
+    {
+      "model": "mistral-large-2",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "command-a",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/cohere/command-a"
+    },
+    {
+      "model": "command-a-plus",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/cohere/command-a-plus"
+    },
+    {
+      "model": "llama-3-1-nemotron-ultra-253b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "ernie-4-5-300b-a47b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "step-3-5-flash",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/stepfun/step-3.5-flash"
+    },
+    {
+      "model": "longcat-2-0",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/meituan/longcat-2.0"
+    },
+    {
+      "model": "devstral-small-2",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen2-5-7b",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/qwen/qwen-2.5-7b-instruct"
+    },
+    {
+      "model": "qwen2-5-14b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen2-5-32b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen2-5-coder-7b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-0-6b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-1-7b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-4b-instruct-2507",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-4b-thinking-2507",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-30b-a3b-thinking-2507",
+      "category": "llm",
+      "api_url": "https://openrouter.ai/qwen/qwen3-30b-a3b-thinking-2507"
+    },
+    {
+      "model": "qwen3-5-0-8b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "qwen3-5-2b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-1-5b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-7b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "deepseek-r1-distill-llama-8b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-14b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gemma-3-270m",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gemma-3-1b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gemma-3n-e2b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gemma-3n-e4b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "phi-4-mini",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "phi-4-reasoning",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "smollm3-3b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "olmo-3-7b-think",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "olmo-3-7b-instruct",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "olmo-3-1-32b-think",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "granite-4-0-micro",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "granite-4-0-h-small",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "exaone-4-0-32b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "exaone-4-0-1-2b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "exaone-4-5-33b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "nemotron-nano-9b-v2",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "nemotron-3-nano-4b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "nemotron-cascade-2-30b-a3b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "lfm2-24b-a2b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "lfm2-5-8b-a1b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "lfm2-5-1-2b-thinking",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "apriel-1-6-15b-thinker",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "falcon-h1r-7b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "seed-oss-36b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "k2-horizon-7b",
+      "category": "llm",
+      "api_url": null
+    },
+    {
+      "model": "gpt-image-2-5-sunburst",
+      "category": "image",
+      "api_url": "https://developers.openai.com/api/docs/guides/image-generation"
+    },
+    {
+      "model": "gpt-image-2-5-flare",
+      "category": "image",
+      "api_url": "https://developers.openai.com/api/docs/guides/image-generation"
+    },
+    {
+      "model": "mai-image-2-6",
+      "category": "image",
+      "api_url": null
+    },
+    {
+      "model": "muse-image",
+      "category": "image",
+      "api_url": "https://dev.meta.ai/docs/pricing-rate-limits"
+    },
+    {
+      "model": "seedream-5-0-pro",
+      "category": "image",
+      "api_url": "https://deepinfra.com/ByteDance/Seedream-5.0-Pro"
+    },
+    {
+      "model": "seedream-4-0",
+      "category": "image",
+      "api_url": "https://deepinfra.com/ByteDance/Seedream-4"
+    },
+    {
+      "model": "qwen-image-3-0-pro",
+      "category": "image",
+      "api_url": "https://www.alibabacloud.com/help/en/model-studio/qwen-image-3-0-pro"
+    },
+    {
+      "model": "flux-2-max",
+      "category": "image",
+      "api_url": "https://docs.bfl.ai/quick_start/pricing"
+    },
+    {
+      "model": "flux-2-pro",
+      "category": "image",
+      "api_url": "https://docs.bfl.ai/quick_start/pricing"
+    },
+    {
+      "model": "imagen-4-ultra",
+      "category": "image",
+      "api_url": "https://developers.googleblog.com/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/"
+    },
+    {
+      "model": "recraft-v4",
+      "category": "image",
+      "api_url": "https://www.recraft.ai/docs/api-reference/pricing"
+    },
+    {
+      "model": "wan-2-6-t2i",
+      "category": "image",
+      "api_url": "https://deepinfra.com/Wan-AI/Wan2.6-T2I"
+    },
+    {
+      "model": "qwen-image",
+      "category": "image",
+      "api_url": "https://replicate.com/qwen/qwen-image"
+    },
+    {
+      "model": "qwen-image-2512",
+      "category": "image",
+      "api_url": "https://replicate.com/qwen/qwen-image-2512"
+    },
+    {
+      "model": "z-image-turbo",
+      "category": "image",
+      "api_url": "https://replicate.com/prunaai/z-image-turbo"
+    },
+    {
+      "model": "hunyuanimage-3-0",
+      "category": "image",
+      "api_url": "https://replicate.com/tencent/hunyuan-image-3"
+    },
+    {
+      "model": "sd-3-5-large",
+      "category": "image",
+      "api_url": "https://replicate.com/stability-ai/stable-diffusion-3.5-large"
+    },
+    {
+      "model": "sdxl",
+      "category": "image",
+      "api_url": "https://replicate.com/stability-ai/sdxl"
+    },
+    {
+      "model": "hidream-o1-image",
+      "category": "image",
+      "api_url": null
+    },
+    {
+      "model": "ideogram-4",
+      "category": "image",
+      "api_url": null
+    },
+    {
+      "model": "cosmos3-super-text2image",
+      "category": "image",
+      "api_url": null
+    },
+    {
+      "model": "ernie-image",
+      "category": "image",
+      "api_url": null
+    },
+    {
+      "model": "ernie-image-turbo",
+      "category": "image",
+      "api_url": null
+    },
+    {
+      "model": "glm-image",
+      "category": "image",
+      "api_url": null
+    }
+  ],
+  "remaining_original_context_gaps": [
+    {
+      "model": "grok-4-20",
+      "name": "Grok 4.20 (0309 reasoning)"
+    },
+    {
+      "model": "nova-2-pro",
+      "name": "Nova 2 Pro (Preview)"
+    },
+    {
+      "model": "nova-2-omni",
+      "name": "Nova 2 Omni (Preview)"
+    },
+    {
+      "model": "nova-premier",
+      "name": "Nova Premier"
+    },
+    {
+      "model": "llama-3-1-405b",
+      "name": "Llama 3.1 405B Instruct"
+    },
+    {
+      "model": "llama-3-3-70b",
+      "name": "Llama 3.3 70B Instruct"
+    },
+    {
+      "model": "llama-4-maverick",
+      "name": "Llama 4 Maverick (402B-A17B)"
+    },
+    {
+      "model": "deepseek-r1-0528",
+      "name": "DeepSeek R1 0528"
+    },
+    {
+      "model": "mistral-large-2",
+      "name": "Mistral Large 2 (2411)"
+    },
+    {
+      "model": "command-a",
+      "name": "Command A (03-2025)"
+    },
+    {
+      "model": "command-a-plus",
+      "name": "Command A+ (05-2026)"
+    },
+    {
+      "model": "ernie-4-5-300b-a47b",
+      "name": "ERNIE 4.5 300B-A47B"
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-1-5b",
+      "name": "DeepSeek R1 Distill Qwen 1.5B"
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-7b",
+      "name": "DeepSeek R1 Distill Qwen 7B"
+    },
+    {
+      "model": "deepseek-r1-distill-llama-8b",
+      "name": "DeepSeek R1 Distill Llama 8B"
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-14b",
+      "name": "DeepSeek R1 Distill Qwen 14B"
+    },
+    {
+      "model": "exaone-4-0-32b",
+      "name": "EXAONE 4.0 32B"
+    },
+    {
+      "model": "exaone-4-0-1-2b",
+      "name": "EXAONE 4.0 1.2B"
+    },
+    {
+      "model": "exaone-4-5-33b",
+      "name": "EXAONE 4.5 33B"
+    },
+    {
+      "model": "nemotron-3-nano-4b",
+      "name": "Nemotron 3 Nano 4B"
+    },
+    {
+      "model": "lfm2-24b-a2b",
+      "name": "LFM2 24B-A2B"
+    },
+    {
+      "model": "lfm2-5-8b-a1b",
+      "name": "LFM2.5 8B-A1B"
+    },
+    {
+      "model": "lfm2-5-1-2b-thinking",
+      "name": "LFM2.5 1.2B Thinking"
+    },
+    {
+      "model": "apriel-1-6-15b-thinker",
+      "name": "Apriel 1.6 15B Thinker"
+    },
+    {
+      "model": "falcon-h1r-7b",
+      "name": "Falcon-H1R 7B"
+    },
+    {
+      "model": "k2-horizon-7b",
+      "name": "K2 Horizon 7B"
+    }
+  ],
+  "remaining_original_url_gaps": [
+    {
+      "model": "gemma-4-e2b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "gemma-4-e4b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-5-4b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "gemma-4-12b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-8-flash-next",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "vibevoice-1-5b",
+      "category": "tts",
+      "has_local_run": true
+    },
+    {
+      "model": "xtts-v2",
+      "category": "tts",
+      "has_local_run": true
+    },
+    {
+      "model": "magpie-tts-multilingual-357m",
+      "category": "tts",
+      "has_local_run": true
+    },
+    {
+      "model": "maya1",
+      "category": "tts",
+      "has_local_run": true
+    },
+    {
+      "model": "distil-large-v3-5",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "parakeet-tdt-0-6b-v2",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "canary-qwen-2-5b",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "canary-1b-v2",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "parakeet-rnnt-1-1b",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "granite-speech-4-1-2b",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "granite-speech-5-0-470m-turboctc",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "cohere-transcribe-03-2026",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "kyutai-stt-2-6b-en",
+      "category": "stt",
+      "has_local_run": true
+    },
+    {
+      "model": "veo-3",
+      "category": "video",
+      "has_local_run": false
+    },
+    {
+      "model": "sora-2",
+      "category": "video",
+      "has_local_run": false
+    },
+    {
+      "model": "sora-2-pro",
+      "category": "video",
+      "has_local_run": false
+    },
+    {
+      "model": "luma-ray-3",
+      "category": "video",
+      "has_local_run": false
+    },
+    {
+      "model": "ltx-2",
+      "category": "video",
+      "has_local_run": true
+    },
+    {
+      "model": "wan-2-1-14b",
+      "category": "video",
+      "has_local_run": true
+    },
+    {
+      "model": "llama-3-1-405b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "mistral-large-2",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "llama-3-1-nemotron-ultra-253b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "ernie-4-5-300b-a47b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "devstral-small-2",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen2-5-14b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen2-5-32b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen2-5-coder-7b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-0-6b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-1-7b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-4b-instruct-2507",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-4b-thinking-2507",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-5-0-8b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "qwen3-5-2b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-1-5b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-7b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "deepseek-r1-distill-llama-8b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-14b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "gemma-3-270m",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "gemma-3-1b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "gemma-3n-e2b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "gemma-3n-e4b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "phi-4-mini",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "phi-4-reasoning",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "smollm3-3b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "olmo-3-7b-think",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "olmo-3-7b-instruct",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "olmo-3-1-32b-think",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "granite-4-0-micro",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "granite-4-0-h-small",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "exaone-4-0-32b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "exaone-4-0-1-2b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "exaone-4-5-33b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "nemotron-nano-9b-v2",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "nemotron-3-nano-4b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "nemotron-cascade-2-30b-a3b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "lfm2-24b-a2b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "lfm2-5-8b-a1b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "lfm2-5-1-2b-thinking",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "apriel-1-6-15b-thinker",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "falcon-h1r-7b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "seed-oss-36b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "k2-horizon-7b",
+      "category": "llm",
+      "has_local_run": true
+    },
+    {
+      "model": "mai-image-2-6",
+      "category": "image",
+      "has_local_run": false
+    },
+    {
+      "model": "hidream-o1-image",
+      "category": "image",
+      "has_local_run": true
+    },
+    {
+      "model": "ideogram-4",
+      "category": "image",
+      "has_local_run": true
+    },
+    {
+      "model": "cosmos3-super-text2image",
+      "category": "image",
+      "has_local_run": true
+    },
+    {
+      "model": "ernie-image",
+      "category": "image",
+      "has_local_run": true
+    },
+    {
+      "model": "ernie-image-turbo",
+      "category": "image",
+      "has_local_run": true
+    },
+    {
+      "model": "glm-image",
+      "category": "image",
+      "has_local_run": true
+    }
+  ],
+  "held_candidates": [
+    {
+      "model": "wan-3-0",
+      "reason": "Replicate current billing component agrees with Bertrande (720p $0.05/output-second), but the same live README says $0.10. Hold price rather than choose between conflicting current provider statements.",
+      "evidence": {
+        "file": "evidence/replicate-wan-3.html",
+        "sha256": "3839645e0249e2f6664564c3844df3a1091bbecfff0e8a7b600fd6730836c5dd",
+        "url": "https://replicate.com/alibaba/wan-3",
+        "locator": "ModelBilling versus README Pricing"
+      }
+    },
+    {
+      "model": "mochi-1",
+      "url": "https://fal.ai/models/fal-ai/mochi-v1",
+      "reason": "fal says endpoint deprecated/no longer supported; recover separate public Replicate run page instead.",
+      "evidence": {
+        "file": "gap-evidence/fal-mochi.html",
+        "sha256": "52f3785d2febc2f36bff46c6dc23a1faae4adf5643e74809936010772f639c81",
+        "url": "https://fal.ai/models/fal-ai/mochi-v1",
+        "locator": "Model identity and public API/run page"
+      }
+    },
+    {
+      "model": "ltx-2",
+      "url": "https://fal.ai/models/fal-ai/ltx-2-19b/text-to-video",
+      "reason": "Provider page states deprecation on 2026-08-15. Do not restore as an active API.",
+      "evidence": {
+        "file": "gap-evidence/fal-ltx2.html",
+        "sha256": "07d9983a4b6308f3bbd05d9f5005f7e04b8c0df4555dddf9adad1b9e1e0c3de9",
+        "url": "https://fal.ai/models/fal-ai/ltx-2-19b/text-to-video",
+        "locator": "Model identity and public API/run page"
+      }
+    },
+    {
+      "model": "wan-2-1-14b",
+      "reason": "Checked fal Wan 2.1 page/API does not specify 14B vs 1.3B. Exact size unverified; URL withheld.",
+      "evidence": {
+        "file": "gap-evidence/fal-wan21.html",
+        "sha256": "934e57f14c539f73a264de11ba66e5f91b5ddd9e3577024783832bac77681cac",
+        "url": "https://fal.ai/models/fal-ai/wan-t2v",
+        "locator": "Model identity and public API/run page"
+      }
+    },
+    {
+      "model": "ministral-3-3b",
+      "reason": "LiteLLM context 131072 conflicts with first-party 256K; use pinned first-party 262144 configuration instead."
+    },
+    {
+      "model": "apriel-1-6-15b-thinker",
+      "reason": "Configured positional capacity alone does not resolve the previously advertised 128K context; MIT README declaration has no retained full upstream copyright notice. Held, not guessed."
+    },
+    {
+      "model": "sora-2",
+      "reason": "Previously verified API retirement on 2026-09-24; no active URL or price restored."
+    },
+    {
+      "model": "sora-2-pro",
+      "reason": "Previously verified API retirement on 2026-09-24; no active URL or price restored."
+    },
+    {
+      "models": [
+        "qwen-image",
+        "qwen-image-2512",
+        "sd-3-5-large",
+        "qwen3-asr-1-7b",
+        "kokoro-82m"
+      ],
+      "reason": "Public provider tariffs may be visible, but an accepted exact licensed rate record was not established in this pass. Restore verified run/API URLs only."
+    }
+  ],
+  "scope_note": "Counts cover all original 340 identities. The available before-compliance file has 214 explicit numeric prices, so the earlier user-reported 271-priced denominator is not reconstructed from this altered research file. Remaining-price list includes every unpriced original model, including local-only models; a gap does not imply a hosted API exists. Context gap list is restricted to the 206 models with context in that file; three additional original media models have current context metadata outside that subset."
+}
