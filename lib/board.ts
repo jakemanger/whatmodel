@@ -18,6 +18,7 @@ export type BoardData = {
   sets: BoardSet[];
   resultModels: string[];
   sources: Record<string, SourceSummary[]>;
+  icons?: Record<string, string>; // model id -> maker logo path under icons/, no extension (lib/icons.ts)
 };
 
 const indexes = new WeakMap<BoardData, ReturnType<typeof indexData>>();

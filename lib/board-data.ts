@@ -1,6 +1,7 @@
 // Build-time adapter from the research data to the small, browser-safe board inputs.
 import { comparisonSets, hardware, modelsIn, results, sourcesFor, speeds, updated, updatedLabel } from "./data.ts";
 import type { BoardData } from "./board.ts";
+import { modelIcon } from "./icons.ts";
 import type { Category } from "./types.ts";
 import type { BenchSpeed } from "./measured.ts";
 
@@ -26,6 +27,7 @@ export function boardData(cat: Category): BoardData {
       })), sets,
     resultModels: [...new Set(results.filter((r) => ids.has(r.model)).map((r) => r.model))],
     sources: Object.fromEntries(models.map((m) => [m.id, sourcesFor(m.id)])),
+    icons: Object.fromEntries(models.flatMap((m) => { const icon = modelIcon(m); return icon ? [[m.id, icon]] : []; })),
   };
   cache.set(cat, data);
   return data;

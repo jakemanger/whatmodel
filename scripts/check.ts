@@ -1,8 +1,9 @@
 // npm run check — validates data/*.json and measures how well g predicts held-out results.
 // CI runs this on every PR from the update agent; a non-zero exit blocks the merge.
 
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { CATEGORY_IDS, catOf } from "../lib/categories.ts";
+import { ICONS, ICON_SIZE, matchesId, pngSize } from "../lib/icons.ts";
 import { fit, fromLatent, toCells } from "../lib/score.ts";
 import { connectedCells, heldOutPrediction } from "../lib/comparisons.ts";
 import { SOURCES, sourceIcon, sourceOf } from "../lib/sources.ts";
@@ -69,6 +70,40 @@ if (meta.updated.slice(0, 10) < latest) errors.push(`meta.json: updated (${meta.
 for (const icon of new Set(results.flatMap((r) => (/^https?:\/\//.test(r.source ?? "") ? [sourceIcon(r.source)] : []))))
   if (!existsSync(new URL(`../icons/${icon}.png`, import.meta.url))) errors.push(`no icon for ${icon}: run npm run icons`);
 
+// Maker logos (data/icons.json, see UPDATING.md). A broken entry or missing file is an error; a
+// provider without a logo is only a warning.
+const iconWarnings: string[] = [];
+const iconIds = new Set<string>();
+const iconFor = new Map<string, string>(); // provider -> icon id
+const AGGREGATORS = /clearbit\.com|google\.com\/s2\/favicons|gstatic\.com\/favicon|icon\.horse|logo\.dev|brandfetch|duckduckgo\.com\/ip3|favicone|faviconkit|flaticon\.com|seeklogo|worldvectorlogo|logos-world|logowik/i;
+for (const e of ICONS) {
+  const where = `icons.json ${e.id}`;
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(e.id ?? "")) errors.push(`${where}: id must be kebab-case`);
+  if (iconIds.has(e.id)) errors.push(`${where}: duplicate id`);
+  iconIds.add(e.id);
+  if (!e.name || !Array.isArray(e.providers)) errors.push(`${where}: needs name and providers`);
+  if (!/^https:\/\//.test(e.url ?? "") || !/^https:\/\//.test(e.page ?? "")) errors.push(`${where}: needs an https url and page`);
+  if (!/^\d{4}-\d\d-\d\d$/.test(e.retrieved ?? "")) errors.push(`${where}: retrieved must be YYYY-MM-DD`);
+  if (AGGREGATORS.test(e.url ?? "")) errors.push(`${where}: ${e.url} is a third-party logo service; use the maker's own site, Hugging Face or GitHub`);
+  if (/wikipedia\.org|wikimedia\.org/.test(e.url ?? "") && !e.note) errors.push(`${where}: a Wikipedia logo needs a note saying the maker has no web presence of its own`);
+  const file = new URL(`../icons/providers/${e.id}.png`, import.meta.url);
+  const size = existsSync(file) ? pngSize(readFileSync(file)) : undefined;
+  if (!existsSync(file)) errors.push(`${where}: missing icons/providers/${e.id}.png, run npm run icons -- ${e.id}`);
+  else if (size?.width !== ICON_SIZE || size.height !== ICON_SIZE) errors.push(`${where}: icons/providers/${e.id}.png must be a ${ICON_SIZE}x${ICON_SIZE} PNG`);
+  for (const p of e.providers ?? []) {
+    if (iconFor.has(p)) errors.push(`${where}: provider "${p}" already uses ${iconFor.get(p)}`);
+    iconFor.set(p, e.id);
+    if (!models.some((m) => m.provider === p)) iconWarnings.push(`${where}: no model has provider "${p}"`);
+  }
+  for (const [p, patterns] of Object.entries(e.models ?? {}))
+    for (const pattern of patterns)
+      if (!models.some((m) => m.provider === p && matchesId(pattern, m.id))) iconWarnings.push(`${where}: models["${p}"] "${pattern}" matches no model`);
+}
+for (const f of readdirSync(new URL("../icons/providers/", import.meta.url)))
+  if (!iconIds.has(f.replace(/\.png$/, ""))) errors.push(`icons/providers/${f}: not in data/icons.json`);
+const noIcon = [...new Set(models.map((m) => m.provider))].filter((p) => !iconFor.has(p)).sort();
+if (noIcon.length) iconWarnings.push(`${noIcon.length} provider(s) without a logo in data/icons.json: ${noIcon.join("; ")}`);
+
 // Reuse gate for benchmark/price/context evidence. Outbound provider and command links
 // are not licences for measurements; review numerical sources separately.
 for (const s of SOURCES) {
@@ -105,15 +140,16 @@ for (const [why, whats] of bad) errors.push(`${whats.length} item(s) from a sour
 // Fast, complete schema/provenance gate for local data work. The default command
 // still performs the exhaustive leave-one-out calibration evaluation below.
 if (process.argv.includes("--validate-only")) {
+  if (iconWarnings.length) console.log(`${iconWarnings.length} icon warning(s):\n  ${iconWarnings.join("\n  ")}`);
   if (errors.length) {
     console.error(`${errors.length} problem(s):\n  ${errors.join("\n  ")}`);
     process.exit(1);
   }
-  console.log(`Validated ${models.length} models, ${results.length} results, ${benches.length} benchmarks and ${SOURCES.length} sources. Calibration evaluation skipped (--validate-only).`);
+  console.log(`Validated ${models.length} models, ${results.length} results, ${benches.length} benchmarks, ${SOURCES.length} sources and ${ICONS.length} maker logos. Calibration evaluation skipped (--validate-only).`);
   process.exit(0);
 }
 
-const warnings: string[] = [];
+const warnings: string[] = [...iconWarnings];
 const corr = (xy: [number, number][]) => {
   const n = xy.length, mx = xy.reduce((s, [x]) => s + x, 0) / n, my = xy.reduce((s, [, y]) => s + y, 0) / n;
   let sxy = 0, sxx = 0, syy = 0;
