@@ -29,6 +29,16 @@ api (Replicate) · $0.020/sec · [replicate.com](https://replicate.com/lightrick
 
 <sub>[price source](https://replicate.com/lightricks/ltx-2-distilled): USD per second of output video on Replicate's official model lightricks/ltx-2-distilled ('LTX-2 Distilled is a 19 billion parameter model'; billing table: $0.02 per second of output video, one flat tier; no hardware-time charge). Product: Replicate model API. API model: lightricks/ltx-2-distilled. Settings: text-to-video, default 1080p (the page says it generates 1080p by default and can render up to 4K; the flat rate applies to all sizes), audio generated. Price basis: published output-based list rate. Note: LTX's own API removed ltx-2-fast/ltx-2-pro (2026-08-16 changelog) and fal's fal-ai/ltx-2-19b/ endpoints carry an 'will be deprecated on August 15, 2026' notice; the Replicate official model shows no deprecation. Currency: USD. Not a Lightricks direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                       needs  score
+Draw Things q6p · mac only  ~40.9GB   45.6
+</pre>
+
+```sh
+# Draw Things q6p · mac only
+brew install draw-things-cli && draw-things-cli generate --model ltx_2_19b_distilled_q6p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ltx-2-19b-distilled) · [JSON](https://whatmodel.sh/api?format=json&all=1)

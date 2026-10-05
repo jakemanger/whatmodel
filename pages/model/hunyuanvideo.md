@@ -41,9 +41,10 @@ Training-Free Efficie…  <a href="https://arxiv.org/pdf/2505.16864v2#page=8">VB
 api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-video)
 
 <pre>
-version               needs  score
-bf16 · nvidia only  ~31.7GB   39.3
-bf16 · nvidia only  ~31.7GB   39.3
+version                       needs  score
+bf16 · nvidia only          ~31.7GB   39.3
+bf16 · nvidia only          ~31.7GB   39.3
+Draw Things q8p · mac only  ~27.6GB   39.3
 </pre>
 
 ```sh
@@ -51,6 +52,8 @@ bf16 · nvidia only  ~31.7GB   39.3
 python3 sample_video.py --video-size 544 960 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
 # bf16 · nvidia only
 python3 sample_video.py --video-size 720 1280 --video-length 129 --infer-steps 50 --prompt "A cat walks on the grass, realistic style." --flow-reverse --use-cpu-offload --save-path ./results
+# Draw Things q8p · mac only
+brew install draw-things-cli && draw-things-cli generate --model hunyuan_video_t2v_720p_q8p.ckpt --prompt "Ocean waves at sunset" --frames 49 --seed 42 --video-format h264 --output clip.mp4
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

@@ -6,7 +6,7 @@
 
 Microsoft
 
-**score 50.2** ±16.6 · comparison only: no current run option verified · from 9 benchmark results across 1 source
+**score 50.2** ±16.6 · #2 of 3 · from 9 benchmark results across 1 source
 
 Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow&score=set) comparison set only.
 
@@ -35,6 +35,19 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)        ~13.8GB   50.2
+int8 convrot + Qwen3-VL 4B q4_k_m (sd.c…   ~8.9GB   50.2
+</pre>
+
+```sh
+# bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/mage_flow_turbo_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 1.0 --steps 4 --diffusion-fa -v --offload-to-cpu
+# int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/mage_flow_turbo_int8_convrot.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p "a lovely cat holding a sign says 'mage.cpp'" --cfg-scale 1.0 --steps 4 --diffusion-fa -v --offload-to-cpu
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mage-flow-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

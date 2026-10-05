@@ -4,7 +4,7 @@
 
 [llm](../README.md) · **image** · [video](video.md) · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-05 06:00 UTC · 118 models · scores combine 27 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
+updated 2026-10-05 06:20 UTC · 121 models · scores combine 27 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -82,7 +82,7 @@ curl.exe "whatmodel.sh/image?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
        │          ∘        ∘            ·                                          ·
        │  ●───────┘    ∘   ∘        ∘ ∘       ∘
        │  ∘ Dreamlike Photoreal 2.0 ∘   ·                                          ·
-       │  ∘                ∘
+       │  ∘
        │                                ·                                          ·
     20 ┤ · · · · ·∘· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
        │                                ·                                          ·
@@ -206,78 +206,78 @@ curl.exe "whatmodel.sh/image?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 110  <a href="model/sd-1-2.md">Stable Diffusion v1.2</a>                     27±3*  local              ~2.1GB  sd-cli -m models/sd…
 111  <a href="model/janus-pro-1b.md">Janus-Pro-1B</a>                              27±5*  api $0.0005/image          <a href="https://deepinfra.com/deepseek-ai/Janus-Pro-1B">deepinfra.com</a>
 112  <a href="model/sd-1-1.md">Stable Diffusion v1.1</a>                     27±3*  local              ~2.1GB  sd-cli -m models/sd…
-113  <a href="model/lcm-dreamshaper-v7.md">LCM Dreamshaper v7</a>                        25±3*  local              ~4.6GB  uv run --with diffu…
+113  <a href="model/lcm-dreamshaper-v7.md">LCM Dreamshaper v7</a>                        25±3*  local              ~1.7GB  pip install hugging…
 114  <a href="model/instructpix2pix.md">InstructPix2Pix</a>                           18±3   local              ~2.6GB  uv run --with diffu…
   —  <a href="model/ernie-image-turbo.md">ERNIE-Image-Turbo</a>                not scored yet  api $0.010/image           <a href="https://fal.ai/models/fal-ai/ernie-image/turbo">fal.ai</a>
   —  <a href="model/kandinsky-2-1.md">Kandinsky 2.1</a>               no reviewed results  local               ~12GB  uv run --with torch…
   —  <a href="model/kandinsky-2-2.md">Kandinsky 2.2</a>               no reviewed results  local               ~12GB  uv run --with torch…
   —  <a href="model/kandinsky-3.md">Kandinsky 3</a>                 no reviewed results  local               ~32GB  uv run --with torch…
+  —  <a href="model/mage-flow.md">Mage-Flow</a>                    not yet calibrated  local              ~8.9GB  sd-cli --diffusion-…
+  —  <a href="model/mage-flow-base.md">Mage-Flow-Base</a>               not yet calibrated  local               ~14GB  sd-cli --diffusion-…
+  —  <a href="model/mage-flow-turbo.md">Mage-Flow-Turbo</a>              not yet calibrated  local              ~8.9GB  sd-cli --diffusion-…
 </pre>
 
-<details><summary>Catalogue-only models (53): no verified run option</summary>
+<details><summary>Catalogue-only models (50): no verified run option</summary>
 
 Scores appear only where comparable reviewed evidence is available.
 
 <pre>
-  #  model                                    score  where
-  4  <a href="model/mai-image-2-6.md">MAI-Image-2.6</a>                            80±2*  catalogue only
- 11  <a href="model/mai-image-2-5.md">MAI-Image-2.5</a>                            73±2*  catalogue only
- 21  <a href="model/mai-image-2.md">MAI-Image-2</a>                              66±2*  catalogue only
- 31  <a href="model/reve-v1-5.md">Reve V1.5</a>                                63±2*  catalogue only
- 39  <a href="model/reve-v1-1.md">Reve V1.1</a>                                61±4*  catalogue only
- 41  <a href="model/emu3-5-image.md">Emu3.5-Image</a>                             61±4*  catalogue only
- 56  <a href="model/reve-v1.md">Reve V1</a>                                  58±4*  catalogue only
- 60  <a href="model/emu3-5.md">Emu3.5</a>                                   57±4*  catalogue only
- 61  <a href="model/mai-image-1.md">MAI-Image-1</a>                              57±2*  catalogue only
- 68  <a href="model/seedream-3-0.md">Seedream 3.0</a>                             56±2*  catalogue only
- 70  <a href="model/reve-v1-1-fast.md">Reve V1.1 Fast</a>                           56±4*  catalogue only
- 74  <a href="model/reve-edit-fast.md">Reve Edit Fast</a>                           55±4*  catalogue only
- 75  <a href="model/step1x-edit-v1-2.md">Step1X-Edit v1.2</a>                         54±3*  catalogue only
- 76  <a href="model/imagen-3.md">Imagen 3 (imagen-3.0-gene…</a>               54±2*  catalogue only
- 86  <a href="model/seededit-3-0.md">SeedEdit 3.0</a>                             51±3*  catalogue only
- 95  <a href="model/step1x-edit-v1-1.md">Step1X-Edit v1.1</a>                         47±5*  catalogue only
- 97  <a href="model/dall-e-3.md">DALL·E 3</a>                                 46±1   catalogue only
- 98  <a href="model/midjourney-v6.md">Midjourney V6</a>                            46±6*  catalogue only
- 99  <a href="model/gemini-2-0-flash-image.md">Gemini 2.0 Flash Image Ge…</a>               45±2*  catalogue only
-100  <a href="model/metaquery-xl.md">MetaQuery-XL</a>                             45±5*  catalogue only
-103  <a href="model/midjourney-v6-1.md">Midjourney V6.1</a>                          43±4*  catalogue only
-107  <a href="model/chronoedit-14b.md">ChronoEdit-14B</a>                           42±3*  catalogue only
-109  <a href="model/blip3o-next-grpo-text-3b.md">BLIP3o-NEXT-GRPO-Text-3B</a>                 41±3*  catalogue only
-110  <a href="model/playground-v2-5.md">Playground v2.5</a>                          41±2   catalogue only
-113  <a href="model/midjourney-v7.md">Midjourney V7</a>                            40±4*  catalogue only
-114  <a href="model/show-o2-7b.md">Show-o2 7B</a>                               40±3*  catalogue only
-119  <a href="model/uniworld-v1.md">UniWorld-V1</a>                              40±3   catalogue only
-120  <a href="model/show-o2-1-5b-hq.md">Show-o2 1.5B-HQ</a>                          39±3*  catalogue only
-122  <a href="model/pixart-alpha.md">PixArt-α (PixArt-XL-2-102…</a>               38±2   catalogue only
-123  <a href="model/blip3o-8b.md">BLIP3-o 8B</a>                               37±3*  catalogue only
-125  <a href="model/emu3.md">Emu3</a>                                     36±2   catalogue only
-126  <a href="model/show-o-demo-512.md">Show-o (show-o-demo-512)</a>                 36±3*  catalogue only
-128  <a href="model/deepfloyd-if-xl.md">IF-XL</a>                                    35±2   catalogue only
-136  <a href="model/versatile-diffusion.md">Versatile Diffusion v1.0</a>                 33±4*  catalogue only
-138  <a href="model/cogview2.md">CogView2</a>                                 33±4*  catalogue only
-139  <a href="model/dall-e-2.md">DALL·E 2</a>                                 32±3*  catalogue only
-140  <a href="model/sd-2-0.md">Stable Diffusion v2.0</a>                    32±3*  catalogue only
-142  <a href="model/fusedream-biggan-512.md">FuseDream (BigGAN 512)</a>                   32±4*  catalogue only
-143  <a href="model/vq-diffusion-ithq.md">VQ-Diffusion (ITHQ)</a>                      32±4*  catalogue only
-144  <a href="model/lafite-hps2023.md">LAFITE (HPS v2 checkpoint)</a>               31±4*  catalogue only
-146  <a href="model/sd-2-1.md">Stable Diffusion v2.1</a>                    30±2   catalogue only
-147  <a href="model/vila-u-7b-256.md">VILA-U 7B (256px)</a>                        30±5*  catalogue only
-148  <a href="model/glide-filtered.md">GLIDE (filtered)</a>                         30±4*  catalogue only
-156  <a href="model/lumina-dimoo.md">Lumina-DiMOO</a>                             26±3*  catalogue only
-158  <a href="model/janus-1-3b.md">Janus-1.3B</a>                               24±5*  catalogue only
-159  <a href="model/onecat-3b.md">OneCAT-3B</a>                                20±3*  catalogue only
-161  <a href="model/x-lxmert.md">X-LXMERT</a>                                 18±4*  catalogue only
-162  <a href="model/attngan-coco.md">AttnGAN (COCO)</a>                           18±4*  catalogue only
-  —  <a href="model/llada-image.md">LLaDA-Image</a>                     not scored yet  catalogue only
-  —  <a href="model/llada-image-turbo.md">LLaDA-Image-Turbo</a>               not scored yet  catalogue only
-  —  <a href="model/mage-flow.md">Mage-Flow</a>                   not yet calibrated  catalogue only
-  —  <a href="model/mage-flow-base.md">Mage-Flow-Base</a>              not yet calibrated  catalogue only
-  —  <a href="model/mage-flow-turbo.md">Mage-Flow-Turbo</a>             not yet calibrated  catalogue only
+  #  model                                score  where
+  4  <a href="model/mai-image-2-6.md">MAI-Image-2.6</a>                        80±2*  catalogue only
+ 11  <a href="model/mai-image-2-5.md">MAI-Image-2.5</a>                        73±2*  catalogue only
+ 21  <a href="model/mai-image-2.md">MAI-Image-2</a>                          66±2*  catalogue only
+ 31  <a href="model/reve-v1-5.md">Reve V1.5</a>                            63±2*  catalogue only
+ 39  <a href="model/reve-v1-1.md">Reve V1.1</a>                            61±4*  catalogue only
+ 41  <a href="model/emu3-5-image.md">Emu3.5-Image</a>                         61±4*  catalogue only
+ 56  <a href="model/reve-v1.md">Reve V1</a>                              58±4*  catalogue only
+ 60  <a href="model/emu3-5.md">Emu3.5</a>                               57±4*  catalogue only
+ 61  <a href="model/mai-image-1.md">MAI-Image-1</a>                          57±2*  catalogue only
+ 68  <a href="model/seedream-3-0.md">Seedream 3.0</a>                         56±2*  catalogue only
+ 70  <a href="model/reve-v1-1-fast.md">Reve V1.1 Fast</a>                       56±4*  catalogue only
+ 74  <a href="model/reve-edit-fast.md">Reve Edit Fast</a>                       55±4*  catalogue only
+ 75  <a href="model/step1x-edit-v1-2.md">Step1X-Edit v1.2</a>                     54±3*  catalogue only
+ 76  <a href="model/imagen-3.md">Imagen 3 (imagen-3.0-gene…</a>           54±2*  catalogue only
+ 86  <a href="model/seededit-3-0.md">SeedEdit 3.0</a>                         51±3*  catalogue only
+ 95  <a href="model/step1x-edit-v1-1.md">Step1X-Edit v1.1</a>                     47±5*  catalogue only
+ 97  <a href="model/dall-e-3.md">DALL·E 3</a>                             46±1   catalogue only
+ 98  <a href="model/midjourney-v6.md">Midjourney V6</a>                        46±6*  catalogue only
+ 99  <a href="model/gemini-2-0-flash-image.md">Gemini 2.0 Flash Image Ge…</a>           45±2*  catalogue only
+100  <a href="model/metaquery-xl.md">MetaQuery-XL</a>                         45±5*  catalogue only
+103  <a href="model/midjourney-v6-1.md">Midjourney V6.1</a>                      43±4*  catalogue only
+107  <a href="model/chronoedit-14b.md">ChronoEdit-14B</a>                       42±3*  catalogue only
+109  <a href="model/blip3o-next-grpo-text-3b.md">BLIP3o-NEXT-GRPO-Text-3B</a>             41±3*  catalogue only
+110  <a href="model/playground-v2-5.md">Playground v2.5</a>                      41±2   catalogue only
+113  <a href="model/midjourney-v7.md">Midjourney V7</a>                        40±4*  catalogue only
+114  <a href="model/show-o2-7b.md">Show-o2 7B</a>                           40±3*  catalogue only
+119  <a href="model/uniworld-v1.md">UniWorld-V1</a>                          40±3   catalogue only
+120  <a href="model/show-o2-1-5b-hq.md">Show-o2 1.5B-HQ</a>                      39±3*  catalogue only
+122  <a href="model/pixart-alpha.md">PixArt-α (PixArt-XL-2-102…</a>           38±2   catalogue only
+123  <a href="model/blip3o-8b.md">BLIP3-o 8B</a>                           37±3*  catalogue only
+125  <a href="model/emu3.md">Emu3</a>                                 36±2   catalogue only
+126  <a href="model/show-o-demo-512.md">Show-o (show-o-demo-512)</a>             36±3*  catalogue only
+128  <a href="model/deepfloyd-if-xl.md">IF-XL</a>                                35±2   catalogue only
+136  <a href="model/versatile-diffusion.md">Versatile Diffusion v1.0</a>             33±4*  catalogue only
+138  <a href="model/cogview2.md">CogView2</a>                             33±4*  catalogue only
+139  <a href="model/dall-e-2.md">DALL·E 2</a>                             32±3*  catalogue only
+140  <a href="model/sd-2-0.md">Stable Diffusion v2.0</a>                32±3*  catalogue only
+142  <a href="model/fusedream-biggan-512.md">FuseDream (BigGAN 512)</a>               32±4*  catalogue only
+143  <a href="model/vq-diffusion-ithq.md">VQ-Diffusion (ITHQ)</a>                  32±4*  catalogue only
+144  <a href="model/lafite-hps2023.md">LAFITE (HPS v2 checkpoint)</a>           31±4*  catalogue only
+146  <a href="model/sd-2-1.md">Stable Diffusion v2.1</a>                30±2   catalogue only
+147  <a href="model/vila-u-7b-256.md">VILA-U 7B (256px)</a>                    30±5*  catalogue only
+148  <a href="model/glide-filtered.md">GLIDE (filtered)</a>                     30±4*  catalogue only
+156  <a href="model/lumina-dimoo.md">Lumina-DiMOO</a>                         26±3*  catalogue only
+158  <a href="model/janus-1-3b.md">Janus-1.3B</a>                           24±5*  catalogue only
+159  <a href="model/onecat-3b.md">OneCAT-3B</a>                            20±3*  catalogue only
+161  <a href="model/x-lxmert.md">X-LXMERT</a>                             18±4*  catalogue only
+162  <a href="model/attngan-coco.md">AttnGAN (COCO)</a>                       18±4*  catalogue only
+  —  <a href="model/llada-image.md">LLaDA-Image</a>                 not scored yet  catalogue only
+  —  <a href="model/llada-image-turbo.md">LLaDA-Image-Turbo</a>           not scored yet  catalogue only
 </pre>
 
 </details>
 
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 118 of 171 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 121 of 171 catalogue models listed here · [sources and licences](method.md#sources)
 
 <details><summary>Models without a score (2)</summary>
 

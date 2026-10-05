@@ -26,13 +26,16 @@ prior        pull toward the middle                    49.9                 4% �
 ## How to run it
 
 <pre>
-version              needs  score
-fp32 · nvidia only  ~9.4GB   38.8
+version                                    needs  score
+fp32 · nvidia only                        ~9.4GB   38.8
+fp32 checkpoints (official Gradio demo,…  ~9.9GB   38.8
 </pre>
 
 ```sh
 # fp32 · nvidia only
 git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-VC2 unet_lora.pt --local-dir t2v-turbo-vc2 && python app.py --unet_dir t2v-turbo-vc2/unet_lora.pt --base_model_dir vc2/model.ckpt --version v1
+# fp32 checkpoints (official Gradio demo, MPS) · mac only
+git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-VC2 unet_lora.pt --local-dir t2v-turbo-vc2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-vc2/unet_lora.pt --base_model_dir vc2/model.ckpt --version v1
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

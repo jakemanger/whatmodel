@@ -30,13 +30,16 @@ api (Replicate) · price unknown · [replicate.com](https://replicate.com/chenxw
 <sub>Price unknown. Run/API page linked from the authors' README; compute-time pricing is not converted to output-unit pricing.</sub>
 
 <pre>
-version              needs  score
-fp32 · nvidia only  ~9.4GB   33.7
+version                                     needs  score
+fp32 · nvidia only                         ~9.4GB   33.7
+fp32 checkpoints (official Gradio demo,…  ~16.2GB   33.7
 </pre>
 
 ```sh
 # fp32 · nvidia only
 git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
+# fp32 checkpoints (official Gradio demo, MPS) · mac only
+git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && sed -i '' 's/^device = "cuda"/device = "mps"/' app.py && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

@@ -28,13 +28,19 @@ prior                   pull toward the middle                   49.9           
 ## How to run it
 
 <pre>
-version              needs  score
-fp32 · nvidia only  ~4.6GB   24.5
+version                          needs  score
+fp32 · nvidia only              ~4.6GB   24.5
+openvino-int8 (OpenVINO GenAI)  ~1.7GB   24.5
+openvino-fp16 (OpenVINO GenAI)    ~3GB   24.5
 </pre>
 
 ```sh
 # fp32 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('SimianLuo/LCM_Dreamshaper_v7').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=4, guidance_scale=8.0).images[0].save('out.png')"
+# openvino-int8 (OpenVINO GenAI)
+pip install huggingface_hub pillow && pip install -U --pre --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly openvino openvino-tokenizers openvino-genai && python -c "import huggingface_hub as hf_hub; import openvino_genai as ov_genai; from PIL import Image; model_id='OpenVINO/LCM_Dreamshaper_v7-int8-ov'; model_path='LCM_Dreamshaper_v7-int8-ov'; hf_hub.snapshot_download(model_id, local_dir=model_path); device='CPU'; pipe=ov_genai.Text2ImagePipeline(model_path, device); prompt='sailing ship in storm by Rembrandt'; image_tensor=pipe.generate(prompt, num_inference_steps=4); image=Image.fromarray(image_tensor.data[0]); image.save('image.png')"
+# openvino-fp16 (OpenVINO GenAI)
+pip install huggingface_hub pillow && pip install -U --pre --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly openvino openvino-tokenizers openvino-genai && python -c "import huggingface_hub as hf_hub; import openvino_genai as ov_genai; from PIL import Image; model_id='OpenVINO/LCM_Dreamshaper_v7-fp16-ov'; model_path='LCM_Dreamshaper_v7-fp16-ov'; hf_hub.snapshot_download(model_id, local_dir=model_path); device='CPU'; pipe=ov_genai.Text2ImagePipeline(model_path, device); prompt='sailing ship in storm by Rembrandt'; image_tensor=pipe.generate(prompt, num_inference_steps=4); image=Image.fromarray(image_tensor.data[0]); image.save('image.png')"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

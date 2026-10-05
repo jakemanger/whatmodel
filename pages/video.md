@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-05 06:00 UTC · 80 models · scores combine 32 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-10-05 06:20 UTC · 80 models · scores combine 32 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
@@ -70,9 +70,9 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
        │  ·                        ·                        ·                         │
        │                                                                     Wan 2.2 I2V A14B
        │  ·                        ·       HunyuanVideo 1.5 ●───────────────●─────────┘    ∘
-       │               ●─Wan 2.2 TI2V 5B────────────────────∘
+       │               ●─Wan 2.2 TI2V 5B────────────────────∘                         ∘
        │  ·            │   ∘       ·         ∘              ·      ∘
-    40 ┤ · · · · · · · ∘ · · · ·∘· · · · · · · · · · · · · · · · · · · · · · ∘ · · · · · · · ·
+    40 ┤ · · · · · · · ∘ · · · ·∘· · · · · · · · · · · · · · · · · · · · ∘ · · · · · · · · · ·
        │  ●─CogVideoX-2B        ∘  ·         ∘              ·      ∘
        │  ∘                     ∘               ∘
        │  ·                ∘    ∘  ·                        ·                   ∘

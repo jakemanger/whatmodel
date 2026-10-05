@@ -26,13 +26,19 @@ prior        pull toward the middle                   49.9                 4% �
 ## How to run it
 
 <pre>
-version              needs  score
-bf16 · nvidia only  ~5.3GB   32.7
+version                                     needs  score
+bf16 · nvidia only                         ~5.3GB   32.7
+openvino-int8 (OpenVINO GenAI, one-time…  ~34.6GB   32.7
+bf16 (official inference.py, MPS) · mac…  ~34.6GB   32.7
 </pre>
 
 ```sh
 # bf16 · nvidia only
 python -c "import torch;from diffusers import AutoencoderKLLTXVideo,LTXPipeline,LTXVideoTransformer3DModel;from diffusers.utils import export_to_video;u='https://huggingface.co/Lightricks/LTX-Video/ltx-video-2b-v0.9.safetensors';t=LTXVideoTransformer3DModel.from_single_file(u,torch_dtype=torch.bfloat16);v=AutoencoderKLLTXVideo.from_single_file(u,torch_dtype=torch.bfloat16);p=LTXPipeline.from_pretrained('Lightricks/LTX-Video',transformer=t,vae=v,torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();export_to_video(p(prompt='A woman with long brown hair walks through a sunlit forest, cinematic',width=704,height=480,num_frames=121,num_inference_steps=50).frames[0],'ltx.mp4',fps=24)"
+# openvino-int8 (OpenVINO GenAI, one-time export)
+git clone --depth 1 --branch 2026.4.1.0 https://github.com/openvinotoolkit/openvino.genai && cd openvino.genai/samples/python/video_generation && pip install --upgrade-strategy eager -r ../../export-requirements.txt && optimum-cli export openvino --model Lightricks/LTX-Video --task text-to-video --weight-format int8 ltx_video_ov/INT8 && pip install --upgrade-strategy eager -r ../../deployment-requirements.txt && python text2video.py ./ltx_video_ov/INT8 "A woman with long brown hair and light skin smiles at another woman with long blonde hair"
+# bf16 (official inference.py, MPS) · mac only
+git clone https://github.com/Lightricks/LTX-Video.git && cd LTX-Video && git checkout 727f5d6c2c73e93e4bd004d62dafa46f8b9ce8d6 && python -m venv env && source env/bin/activate && python -m pip install -e .\[inference-script\] && python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='Lightricks/LTX-Video', filename='ltx-video-2b-v0.9.safetensors', local_dir='models', local_dir_use_symlinks=False, repo_type='model')" && python inference.py --ckpt_path models/ltx-video-2b-v0.9.safetensors --prompt "A clear, turquoise river flows through a rocky canyon, cascading over a small waterfall and forming a pool of water at the bottom." --height 480 --width 704 --num_frames 121 --seed 171198
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

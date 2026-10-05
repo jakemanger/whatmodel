@@ -8737,6 +8737,16 @@
           "source": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
           "cmd": "python3 sample_video.py --video-size 720 1280 --video-length 129 --infer-steps 50 --prompt \"A cat walks on the grass, realistic style.\" --flow-reverse --use-cpu-offload --save-path ./results",
           "gb_estimated": true
+        },
+        {
+          "quant": "Draw Things q8p",
+          "gb": 27.6,
+          "gb_estimated": true,
+          "cmd": "brew install draw-things-cli && draw-things-cli generate --model hunyuan_video_t2v_720p_q8p.ckpt --prompt \"Ocean waves at sunset\" --frames 49 --seed 42 --video-format h264 --output clip.mp4",
+          "platform": "mac",
+          "source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/.agents/skills/use-drawthings-cli/SKILL.md",
+          "gb_source": "https://models.drawthings.ai/models.json",
+          "note": "Draw Things CLI (brew install draw-things-cli; macOS 15+ on Apple Silicon). Its official SKILL.md documents the local video command shape and says to choose a video-capable model id from `draw-things-cli models list`; the id used here is from Draw Things' official model registry (models.drawthings.ai/models.json, observed 2026-10-05: 'Hunyuan Video T2V 720p', linking tencent/HunyuanVideo). Draw Things runs its own quantised .ckpt conversions and downloads the registered text encoder and VAE on first run. Files (byte sizes from the Draw Things model host): hunyuan_video_t2v_720p_q8p.ckpt 13.57 GB (static.libnnc.org); llava_llama_3_8b_v1.1_q8p.ckpt 8.26 GB (static.libnnc.org); clip_vit_l14_f16.ckpt 0.25 GB (static.libnnc.org); hunyuan_video_vae_f16.ckpt 0.49 GB (static.libnnc.org). gb = 1.2 × 22.57 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak."
         }
       ]
     },
@@ -10378,7 +10388,20 @@
         "source": "https://arxiv.org/html/2607.19064v2#S6.T8",
         "reported_label": "Mage-Flow-Base"
       }
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)",
+          "gb": 13.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/mage_flow_base_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p \"a lovely cat holding a sign says 'mage.cpp'\" --cfg-scale 5.0 --steps 30 --diffusion-fa -v --offload-to-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mage_flow_base_bf16.safetensors 8.23 GB (Comfy-Org/Mage-Flow@6ff68fb); Qwen3VL-4B-Instruct-Q4_K_M.gguf 2.50 GB (Qwen/Qwen3-VL-4B-Instruct-GGUF@1cd86af); mage_flow_vae_bf16.safetensors 0.35 GB (Comfy-Org/Mage-Flow@6ff68fb). gb = 1.2 × 11.07 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's text-to-image example with POSIX paths and the Comfy-Org/Mage-Flow file names, using the Base checkpoint with the 30 steps the doc gives for Base models and guidance 5.0 from the official Mage-Flow README (https://github.com/microsoft/Mage/blob/76bec2bb3818863f470de7e867c2dc7f1d0bfd83/mage_flow/README.md)."
+        }
+      ]
+    }
   },
   {
     "id": "mage-flow",
@@ -10395,7 +10418,29 @@
         "source": "https://arxiv.org/html/2607.19064v2#S6.T8",
         "reported_label": "Mage-Flow"
       }
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)",
+          "gb": 13.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/mage_flow_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p \"a lovely cat holding a sign says 'mage.cpp'\" --cfg-scale 5.0 --steps 20 --diffusion-fa -v --offload-to-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mage_flow_bf16.safetensors 8.23 GB (Comfy-Org/Mage-Flow@6ff68fb); Qwen3VL-4B-Instruct-Q4_K_M.gguf 2.50 GB (Qwen/Qwen3-VL-4B-Instruct-GGUF@1cd86af); mage_flow_vae_bf16.safetensors 0.35 GB (Comfy-Org/Mage-Flow@6ff68fb). gb = 1.2 × 11.07 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's text-to-image example with POSIX paths and the Comfy-Org/Mage-Flow file names, using the RL-aligned checkpoint with 20 steps and guidance 5.0 from the official Mage-Flow README (https://github.com/microsoft/Mage/blob/76bec2bb3818863f470de7e867c2dc7f1d0bfd83/mage_flow/README.md)."
+        },
+        {
+          "quant": "int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp)",
+          "gb": 8.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/mage_flow_int8_convrot.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p \"a lovely cat holding a sign says 'mage.cpp'\" --cfg-scale 5.0 --steps 20 --diffusion-fa -v --offload-to-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mage_flow_int8_convrot.safetensors 4.16 GB (Comfy-Org/Mage-Flow@6ff68fb); Qwen3VL-4B-Instruct-Q4_K_M.gguf 2.50 GB (Qwen/Qwen3-VL-4B-Instruct-GGUF@1cd86af); mage_flow_vae_bf16.safetensors 0.35 GB (Comfy-Org/Mage-Flow@6ff68fb). gb = 1.2 × 7.00 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's text-to-image example with POSIX paths and the Comfy-Org/Mage-Flow file names, using the RL-aligned checkpoint with 20 steps and guidance 5.0 from the official Mage-Flow README (https://github.com/microsoft/Mage/blob/76bec2bb3818863f470de7e867c2dc7f1d0bfd83/mage_flow/README.md). INT8 convrot safetensors are a format the stable-diffusion.cpp docs support (docs/int8_convrot.md)."
+        }
+      ]
+    }
   },
   {
     "id": "mage-flow-turbo",
@@ -10412,7 +10457,29 @@
         "source": "https://arxiv.org/html/2607.19064v2#S6.T8",
         "reported_label": "Mage-Flow-Turbo"
       }
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)",
+          "gb": 13.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/mage_flow_turbo_bf16.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p \"a lovely cat holding a sign says 'mage.cpp'\" --cfg-scale 1.0 --steps 4 --diffusion-fa -v --offload-to-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mage_flow_turbo_bf16.safetensors 8.23 GB (Comfy-Org/Mage-Flow@6ff68fb); Qwen3VL-4B-Instruct-Q4_K_M.gguf 2.50 GB (Qwen/Qwen3-VL-4B-Instruct-GGUF@1cd86af); mage_flow_vae_bf16.safetensors 0.35 GB (Comfy-Org/Mage-Flow@6ff68fb). gb = 1.2 × 11.07 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's text-to-image example with POSIX paths and the Comfy-Org/Mage-Flow file names."
+        },
+        {
+          "quant": "int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp)",
+          "gb": 8.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/mage_flow_turbo_int8_convrot.safetensors --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/mage_flow_vae_bf16.safetensors -p \"a lovely cat holding a sign says 'mage.cpp'\" --cfg-scale 1.0 --steps 4 --diffusion-fa -v --offload-to-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mage_flow_turbo_int8_convrot.safetensors 4.16 GB (Comfy-Org/Mage-Flow@6ff68fb); Qwen3VL-4B-Instruct-Q4_K_M.gguf 2.50 GB (Qwen/Qwen3-VL-4B-Instruct-GGUF@1cd86af); mage_flow_vae_bf16.safetensors 0.35 GB (Comfy-Org/Mage-Flow@6ff68fb). gb = 1.2 × 7.00 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's text-to-image example with POSIX paths and the Comfy-Org/Mage-Flow file names. INT8 convrot safetensors are a format the stable-diffusion.cpp docs support (docs/int8_convrot.md)."
+        }
+      ]
+    }
   },
   {
     "id": "sd-1-5",
@@ -14080,6 +14147,20 @@
       "unit": "video-second",
       "price_source": "https://replicate.com/lightricks/ltx-2-distilled",
       "price_note": "USD per second of output video on Replicate's official model lightricks/ltx-2-distilled ('LTX-2 Distilled is a 19 billion parameter model'; billing table: $0.02 per second of output video, one flat tier; no hardware-time charge). Product: Replicate model API. API model: lightricks/ltx-2-distilled. Settings: text-to-video, default 1080p (the page says it generates 1080p by default and can render up to 4K; the flat rate applies to all sizes), audio generated. Price basis: published output-based list rate. Note: LTX's own API removed ltx-2-fast/ltx-2-pro (2026-08-16 changelog) and fal's fal-ai/ltx-2-19b/ endpoints carry an 'will be deprecated on August 15, 2026' notice; the Replicate official model shows no deprecation. Currency: USD. Not a Lightricks direct tariff. Replicate official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "Draw Things q6p",
+          "gb": 40.9,
+          "gb_estimated": true,
+          "cmd": "brew install draw-things-cli && draw-things-cli generate --model ltx_2_19b_distilled_q6p.ckpt --prompt \"Ocean waves at sunset\" --frames 49 --seed 42 --video-format h264 --output clip.mp4",
+          "platform": "mac",
+          "source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/.agents/skills/use-drawthings-cli/SKILL.md",
+          "gb_source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/Libraries/ModelZoo/Sources/ModelZoo.swift",
+          "note": "Draw Things CLI (brew install draw-things-cli; macOS 15+ on Apple Silicon). Its official SKILL.md documents the local video command shape and says to choose a video-capable model id from `draw-things-cli models list`; the id used here is from Draw Things' official model registry (ModelZoo.swift @e51089d: 'LTX-2 19B [distilled] (6-bit)', linking Lightricks/LTX-2; the registry recommends 8 steps and text guidance 1.0). Draw Things runs its own quantised .ckpt conversions and downloads the registered text encoder and VAE on first run. Files (byte sizes from the Draw Things model host): ltx_2_19b_distilled_q6p.ckpt 17.87 GB (static.libnnc.org); gemma_3_12b_it_qat_q8p.ckpt 13.14 GB (static.libnnc.org); ltx_2_audio_video_vae_f16.ckpt 2.67 GB (static.libnnc.org). gb = 1.2 × 33.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak."
+        }
+      ]
     }
   },
   {
@@ -20424,6 +20505,26 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7",
           "gb_estimated": true
+        },
+        {
+          "quant": "openvino-int8 (OpenVINO GenAI)",
+          "gb": 1.7,
+          "gb_estimated": true,
+          "cmd": "pip install huggingface_hub pillow && pip install -U --pre --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly openvino openvino-tokenizers openvino-genai && python -c \"import huggingface_hub as hf_hub; import openvino_genai as ov_genai; from PIL import Image; model_id='OpenVINO/LCM_Dreamshaper_v7-int8-ov'; model_path='LCM_Dreamshaper_v7-int8-ov'; hf_hub.snapshot_download(model_id, local_dir=model_path); device='CPU'; pipe=ov_genai.Text2ImagePipeline(model_path, device); prompt='sailing ship in storm by Rembrandt'; image_tensor=pipe.generate(prompt, num_inference_steps=4); image=Image.fromarray(image_tensor.data[0]); image.save('image.png')\"",
+          "platform": "any",
+          "source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-int8-ov/blob/340a03e5488f36f7f222e6efa29819850ad7e4be/README.md",
+          "gb_source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-int8-ov/tree/340a03e5488f36f7f222e6efa29819850ad7e4be",
+          "note": "Intel's OpenVINO conversion of SimianLuo/LCM_Dreamshaper_v7 (OpenVINO/LCM_Dreamshaper_v7-int8-ov); its model card runs it with OpenVINO GenAI on device='CPU' in 4 steps, and OpenVINO GenAI's supported image-model list names SimianLuo/LCM_Dreamshaper_v7. Files loaded: text_encoder/openvino_model.bin 0.124 GB; unet/openvino_model.bin 0.862 GB; vae_decoder/openvino_model.bin 0.050 GB (plus small tokenizer/XML files), 1.04 GB in total. gb = 1.2 × 1.04 GB + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the card's install and Python steps joined into one line, adding pillow to the install and saving the image. snapshot_download also fetches a safety checker the pipeline does not load. OpenVINO wheels cover x86-64 and ARM64 CPUs."
+        },
+        {
+          "quant": "openvino-fp16 (OpenVINO GenAI)",
+          "gb": 3,
+          "gb_estimated": true,
+          "cmd": "pip install huggingface_hub pillow && pip install -U --pre --extra-index-url https://storage.openvinotoolkit.org/simple/wheels/nightly openvino openvino-tokenizers openvino-genai && python -c \"import huggingface_hub as hf_hub; import openvino_genai as ov_genai; from PIL import Image; model_id='OpenVINO/LCM_Dreamshaper_v7-fp16-ov'; model_path='LCM_Dreamshaper_v7-fp16-ov'; hf_hub.snapshot_download(model_id, local_dir=model_path); device='CPU'; pipe=ov_genai.Text2ImagePipeline(model_path, device); prompt='sailing ship in storm by Rembrandt'; image_tensor=pipe.generate(prompt, num_inference_steps=4); image=Image.fromarray(image_tensor.data[0]); image.save('image.png')\"",
+          "platform": "any",
+          "source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-fp16-ov/blob/dd6f0cf47b09e43f23125dbc3c79c7a3c3416309/README.md",
+          "gb_source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-fp16-ov/tree/dd6f0cf47b09e43f23125dbc3c79c7a3c3416309",
+          "note": "Intel's OpenVINO conversion of SimianLuo/LCM_Dreamshaper_v7 (OpenVINO/LCM_Dreamshaper_v7-fp16-ov); its model card runs it with OpenVINO GenAI on device='CPU' in 4 steps, and OpenVINO GenAI's supported image-model list names SimianLuo/LCM_Dreamshaper_v7. Files loaded: text_encoder/openvino_model.bin 0.246 GB; unet/openvino_model.bin 1.719 GB; vae_decoder/openvino_model.bin 0.099 GB (plus small tokenizer/XML files), 2.07 GB in total. gb = 1.2 × 2.07 GB + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the card's install and Python steps joined into one line, adding pillow to the install and saving the image. snapshot_download also fetches a safety checker the pipeline does not load. OpenVINO wheels cover x86-64 and ARM64 CPUs."
         }
       ]
     },
@@ -20982,6 +21083,26 @@
           "source": "https://github.com/huggingface/diffusers/blob/e68092a4718a775568fae009e50162425eefbb1e/docs/source/en/api/pipelines/ltx_video.md",
           "cmd": "python -c \"import torch;from diffusers import AutoencoderKLLTXVideo,LTXPipeline,LTXVideoTransformer3DModel;from diffusers.utils import export_to_video;u='https://huggingface.co/Lightricks/LTX-Video/ltx-video-2b-v0.9.safetensors';t=LTXVideoTransformer3DModel.from_single_file(u,torch_dtype=torch.bfloat16);v=AutoencoderKLLTXVideo.from_single_file(u,torch_dtype=torch.bfloat16);p=LTXPipeline.from_pretrained('Lightricks/LTX-Video',transformer=t,vae=v,torch_dtype=torch.bfloat16);p.enable_model_cpu_offload();export_to_video(p(prompt='A woman with long brown hair walks through a sunlit forest, cinematic',width=704,height=480,num_frames=121,num_inference_steps=50).frames[0],'ltx.mp4',fps=24)\"",
           "note": "Loads the original 0.9 checkpoint (ltx-video-2b-v0.9.safetensors, RAIL-M licence dated 22 Nov 2024) with diffusers single-file loading as documented at the pinned diffusers commit; later 0.9.x releases are different checkpoints."
+        },
+        {
+          "quant": "openvino-int8 (OpenVINO GenAI, one-time export)",
+          "gb": 34.6,
+          "gb_estimated": true,
+          "cmd": "git clone --depth 1 --branch 2026.4.1.0 https://github.com/openvinotoolkit/openvino.genai && cd openvino.genai/samples/python/video_generation && pip install --upgrade-strategy eager -r ../../export-requirements.txt && optimum-cli export openvino --model Lightricks/LTX-Video --task text-to-video --weight-format int8 ltx_video_ov/INT8 && pip install --upgrade-strategy eager -r ../../deployment-requirements.txt && python text2video.py ./ltx_video_ov/INT8 \"A woman with long brown hair and light skin smiles at another woman with long blonde hair\"",
+          "platform": "any",
+          "source": "https://github.com/openvinotoolkit/openvino.genai/blob/ab01d1771e4adaa0e1e08e9d630def170572506c/samples/python/video_generation/README.md",
+          "gb_source": "https://huggingface.co/Lightricks/LTX-Video/tree/8984fa2",
+          "note": "OpenVINO GenAI 2026.4.1.0 Text2VideoPipeline; its supported video-model table lists only LTX-Video and the sample runs on 'CPU' (GPU optional). The export reads the Lightricks/LTX-Video root diffusers weights, added 2024-12-11 before 0.9.1 and identical in size to ltx-video-2b-v0.9.safetensors, so this is the original 0.9 checkpoint. gb = 1.2 × 28.42 GB + 0.5 GB for the fp32 transformer, T5-XXL text encoder and VAE that the one-time export loads (the catalogue estimation rule; the int8 model used for generation afterwards is roughly a quarter of that). No official RAM figure or CPU generation time is published; expect generation to be very slow on CPU. Command: the sample README's clone, requirements, export and run steps chained, pinned to the release tag, with --weight-format int8 as the README recommends for basic generation."
+        },
+        {
+          "quant": "bf16 (official inference.py, MPS)",
+          "gb": 34.6,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/Lightricks/LTX-Video.git && cd LTX-Video && git checkout 727f5d6c2c73e93e4bd004d62dafa46f8b9ce8d6 && python -m venv env && source env/bin/activate && python -m pip install -e .\\[inference-script\\] && python -c \"from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='Lightricks/LTX-Video', filename='ltx-video-2b-v0.9.safetensors', local_dir='models', local_dir_use_symlinks=False, repo_type='model')\" && python inference.py --ckpt_path models/ltx-video-2b-v0.9.safetensors --prompt \"A clear, turquoise river flows through a rocky canyon, cascading over a small waterfall and forming a pool of water at the bottom.\" --height 480 --width 704 --num_frames 121 --seed 171198",
+          "platform": "mac",
+          "source": "https://github.com/Lightricks/LTX-Video/blob/727f5d6c2c73e93e4bd004d62dafa46f8b9ce8d6/README.md",
+          "gb_source": "https://huggingface.co/Lightricks/LTX-Video/tree/8984fa2",
+          "note": "Official Lightricks/LTX-Video repository at commit 727f5d6c, which added MPS support; its README says 'On macos, MPS was tested with PyTorch 2.3.0, and should support PyTorch == 2.3 or >= 2.6' and downloads the original ltx-video-2b-v0.9.safetensors (the switch to 0.9.1 is not an ancestor of this commit). inference.py picks mps automatically. Files: ltx-video-2b-v0.9.safetensors 9.37 GB (Lightricks/LTX-Video@8984fa2); model-00001-of-00002.safetensors 9.99 GB (PixArt-alpha/PixArt-XL-2-1024-MS@b89adad); model-00002-of-00002.safetensors 9.06 GB (PixArt-alpha/PixArt-XL-2-1024-MS@b89adad). gb = 1.2 × 28.42 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the README install, download snippet and text-to-video command chained, with placeholders filled by a README example prompt and inference.py's default size, frames and seed; README warns PyTorch 2.4/2.5 have an MPS bug."
         }
       ]
     },
@@ -21365,6 +21486,16 @@
           "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
           "cmd": "git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0",
           "note": "Replaces the VideoCrafter2 UNet (5.66 GB unet_mg.pt); memory estimated as for VideoCrafter2 (7.40 GB model.ckpt x 1.2 + 0.5 GB)."
+        },
+        {
+          "quant": "fp32 checkpoints (official Gradio demo, MPS)",
+          "gb": 16.2,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-v2 unet_mg.pt --local-dir t2v-turbo-v2 && sed -i '' 's/^device = \"cuda\"/device = \"mps\"/' app.py && python app.py --unet_dir t2v-turbo-v2/unet_mg.pt --base_model_dir vc2/model.ckpt --version v2 --motion_gs 0.0",
+          "platform": "mac",
+          "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
+          "gb_source": "https://huggingface.co/VideoCrafter/VideoCrafter2/tree/7b40798",
+          "note": "Official T2V-Turbo repository; its README says 'For MacOS users, need to set the device=\"mps\" in app.py', and app.py carries the commented '# device = \"mps\"    # MacOS' line. The command is the catalogue's NVIDIA demo chain plus one sed (macOS syntax) that makes that documented edit. Launches the README's local Gradio demo in the browser. Files: model.ckpt 7.40 GB (VideoCrafter/VideoCrafter2@7b40798); unet_mg.pt 5.66 GB (jiachenli-ucsb/T2V-Turbo-v2@97d99ef). gb = 1.2 × 13.06 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak."
         }
       ]
     },
@@ -21395,6 +21526,16 @@
           "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
           "cmd": "git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-VC2 unet_lora.pt --local-dir t2v-turbo-vc2 && python app.py --unet_dir t2v-turbo-vc2/unet_lora.pt --base_model_dir vc2/model.ckpt --version v1",
           "note": "4-step consistency-distilled LoRA on VideoCrafter2 (local Gradio demo per README). Memory estimated as for VideoCrafter2 (7.40 GB model.ckpt x 1.2 + 0.5 GB) plus a 0.47 GB LoRA. HF card licence cc-by-4.0; the VideoCrafter2 base is Apache-2.0."
+        },
+        {
+          "quant": "fp32 checkpoints (official Gradio demo, MPS)",
+          "gb": 9.9,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/Ji4chenLi/t2v-turbo && cd t2v-turbo && pip install gradio==3.48.0 && hf download VideoCrafter/VideoCrafter2 model.ckpt --local-dir vc2 && hf download jiachenli-ucsb/T2V-Turbo-VC2 unet_lora.pt --local-dir t2v-turbo-vc2 && sed -i '' 's/^device = \"cuda\"/device = \"mps\"/' app.py && python app.py --unet_dir t2v-turbo-vc2/unet_lora.pt --base_model_dir vc2/model.ckpt --version v1",
+          "platform": "mac",
+          "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
+          "gb_source": "https://huggingface.co/VideoCrafter/VideoCrafter2/tree/7b40798",
+          "note": "Official T2V-Turbo repository; its README says 'For MacOS users, need to set the device=\"mps\" in app.py', and app.py carries the commented '# device = \"mps\"    # MacOS' line. The command is the catalogue's NVIDIA demo chain plus one sed (macOS syntax) that makes that documented edit. Launches the README's local Gradio demo in the browser. Files: model.ckpt 7.40 GB (VideoCrafter/VideoCrafter2@7b40798); unet_lora.pt 0.47 GB (jiachenli-ucsb/T2V-Turbo-VC2@2c7a5a9). gb = 1.2 × 7.87 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak."
         }
       ]
     },
