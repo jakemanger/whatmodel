@@ -4,7 +4,7 @@
 
 # Recraft V4.1 Flash
 
-Recraft · closed weights
+Recraft · released 2026-09 · closed weights
 
 **score 57.6** ±1.9 · #51 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

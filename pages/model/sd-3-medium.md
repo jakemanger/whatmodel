@@ -4,7 +4,7 @@
 
 # Stable Diffusion 3 Medium
 
-Stability AI · 2B params
+Stability AI · released 2024-06 · 2B params · stabilityai-community
 
 **score 39.9** ±2.2 · #89 of 114 · from 3 benchmark results across 3 sources
 

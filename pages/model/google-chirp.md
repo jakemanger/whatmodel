@@ -4,7 +4,7 @@
 
 # Chirp
 
-Google · proprietary
+Google · released 2023-05 · proprietary
 
 **score 51.7** ±3.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

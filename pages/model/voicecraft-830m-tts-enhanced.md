@@ -4,7 +4,7 @@
 
 # VoiceCraft 830M TTSEnhanced
 
-Puyuan Peng et al. (UT Austin) · released 2024-04 · coqui-public-model-license
+Puyuan Peng et al. (UT Austin) · released 2024-04 · 0.83B params · coqui-public-model-license
 
 **score 32.0** ±5.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

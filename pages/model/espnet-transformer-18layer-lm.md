@@ -4,7 +4,7 @@
 
 # ESPnet Transformer 18-layer + RNN LM
 
-ESPnet · released 2020-07
+ESPnet · released 2020-07 · cc-by-4.0
 
 **score 36.5** ±22.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

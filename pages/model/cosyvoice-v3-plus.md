@@ -4,7 +4,7 @@
 
 # CosyVoice v3 Plus
 
-Alibaba Cloud · closed weights
+Alibaba Cloud · released 2025-09 · closed weights
 
 **score 57.6** ±3.8 · #34 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

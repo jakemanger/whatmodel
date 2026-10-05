@@ -4,7 +4,7 @@
 
 # Playground v2.5
 
-Playground · released 2024-02
+Playground · released 2024-02 · playground-v2dot5-community
 
 **score 41.3** ±1.6 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
 

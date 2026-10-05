@@ -10814,7 +10814,9 @@
       "unit": "1M-chars",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per 1M characters: Model Studio lists cosyvoice-v3-plus at $0.26 per 10,000 input characters, International (Singapore) deployment; output free (x100). Each Chinese character counts as 2 characters. Product: Alibaba Cloud Model Studio speech synthesis. API model: cosyvoice-v3-plus. Settings: International deployment. Price basis: published list rate. Exclusions: free quota; China (Beijing) lists $0.286706 per 10,000. Currency: USD. Alibaba Cloud official pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2025-09",
+    "released_source": "https://help.aliyun.com/zh/model-studio/newly-released-models"
   },
   {
     "id": "mimo-v2-5-tts",
@@ -10880,7 +10882,9 @@
     "model_repo": "https://github.com/microsoft/Mage",
     "params_b": 4,
     "params_b_source": "https://arxiv.org/html/2607.19064",
-    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included."
+    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included.",
+    "released": "2026-07",
+    "released_source": "https://github.com/microsoft/Mage/blob/76bec2bb3818863f470de7e867c2dc7f1d0bfd83/README.md"
   },
   {
     "id": "mage-flow",
@@ -10923,7 +10927,9 @@
     "model_repo": "https://github.com/microsoft/Mage",
     "params_b": 4,
     "params_b_source": "https://arxiv.org/html/2607.19064",
-    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included."
+    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included.",
+    "released": "2026-07",
+    "released_source": "https://github.com/microsoft/Mage/blob/76bec2bb3818863f470de7e867c2dc7f1d0bfd83/README.md"
   },
   {
     "id": "mage-flow-turbo",
@@ -10966,7 +10972,9 @@
     "model_repo": "https://github.com/microsoft/Mage",
     "params_b": 4,
     "params_b_source": "https://arxiv.org/html/2607.19064",
-    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included."
+    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included.",
+    "released": "2026-07",
+    "released_source": "https://github.com/microsoft/Mage/blob/76bec2bb3818863f470de7e867c2dc7f1d0bfd83/README.md"
   },
   {
     "id": "sd-1-5",
@@ -11025,7 +11033,9 @@
         "source": "https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md",
         "reported_label": "Stable Diffusion v2.1"
       }
-    ]
+    ],
+    "released": "2022-12",
+    "released_source": "https://stability.ai/news/stablediffusion2-1-release7-dec-2022"
   },
   {
     "id": "deepfloyd-if-xl",
@@ -11042,7 +11052,11 @@
     "model_repo": "https://huggingface.co/DeepFloyd/IF-I-XL-v1.0",
     "params_b": 4.3,
     "params_b_source": "https://github.com/deep-floyd/IF/blob/ffc8163891682beaca0c5eb6b9077860a3bc6509/README.md",
-    "params_note": "Stage I (text-to-64x64 base module) only, matching how the catalogue records deepfloyd-if-m (0.4) and -l (0.9). The HF card also says 'Cascade Stage: I Num Parameters: 4.3B'. T5-XXL encoder and the stage II/III upscalers are not included."
+    "params_note": "Stage I (text-to-64x64 base module) only, matching how the catalogue records deepfloyd-if-m (0.4) and -l (0.9). The HF card also says 'Cascade Stage: I Num Parameters: 4.3B'. T5-XXL encoder and the stage II/III upscalers are not included.",
+    "released": "2023-04",
+    "released_source": "https://stability.ai/news/deepfloyd-if-text-to-image-model",
+    "license": "deepfloyd-if-license",
+    "license_source": "https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/tree/c03d510e9b75bce9f9db5bb85148c1402ad7e694"
   },
   {
     "id": "seedance-1-0-pro-fast",
@@ -11205,7 +11219,9 @@
       "unit": "video-second",
       "price_source": "https://ai.google.dev/gemini-api/docs/pricing",
       "price_note": "USD per generated second of 720p video (with audio) on the Gemini Developer API, paid Standard tier. Product: Gemini Developer API. API model: gemini-omni-1.1-flash (GA). Price basis: $17.50 per 1M video output tokens at Google's stated 5,792 tokens per second of 720p video (Google: \"approximately $0.10 per second\"); 5,792 × $17.50/1M = $0.10136. Input tokens ($1.50/1M) and text output ($9.00/1M) are additional. Currency: USD. Google Gemini API pricing page (last updated 2026-09-24), observed 2026-09-25."
-    }
+    },
+    "released": "2026-08",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog"
   },
   {
     "id": "flux-3-video",
@@ -11226,7 +11242,9 @@
       "unit": "video-second",
       "price_source": "https://docs.bfl.ai/quick_start/pricing",
       "price_note": "USD per second of output video, text-to-video full render at the hd resolution class (default; 1280×704 at 16:9), with synchronized audio. Product: BFL API FLUX 3 video. API model: FLUX 3 t2v. Price basis: published per-second rate; 1 credit = $0.01. fhd $0.29/s, qhd $0.40/s, uhd $0.80/s; draft mode $0.06/s. HD dimensions from BFL's FLUX 3 video docs. Currency: USD. Black Forest Labs API pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-08",
+    "released_source": "https://bfl.ai/blog/flux-3-video"
   },
   {
     "id": "seedance-2-5",
@@ -11247,7 +11265,9 @@
       "unit": "video-second",
       "price_source": "https://docs.dev.runwayml.com/guides/pricing",
       "price_note": "USD per second of output video, 720p, on the Runway developer API. Product: Runway API video generation. API model: seedance2_5 (Seedance 2.5). Settings: resolution=720p, no input/reference video. Price basis: 30 credits per output second × $0.01 per credit. Input and reference video add 15 credits/s; 80-credit minimum per generation; 480p 20 credits/s, 1080p 68 credits/s. BytePlus bills Seedance per token and prints no exact per-second rate; fal lists roughly $0.4730/s at 720p. Sales tax excluded. Currency: USD. Runway API pricing documentation, observed 2026-09-25."
-    }
+    },
+    "released": "2026-07",
+    "released_source": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
   },
   {
     "id": "grok-imagine-video-1-5",
@@ -11375,7 +11395,9 @@
     "params_b_source": "https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md",
     "params_note": "Whole Mixture-of-Transformers model (autoregressive tower + diffusion tower) trainable parameters, as stated by NVIDIA.",
     "license": "openmdw-1.1",
-    "license_source": "https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md"
+    "license_source": "https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md",
+    "released": "2026-05",
+    "released_source": "https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md"
   },
   {
     "id": "p-video",
@@ -11725,7 +11747,9 @@
       "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
     ],
     "identity_note": "Exact model am-ET-AmehaNeural; voice am-ET-AmehaNeural. Dataset label Azure Ameha Neural. No API immutable build/weight SHA supplied.",
-    "api": null
+    "api": null,
+    "released": "2021-10",
+    "released_source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/e8d0ac6f7ebd7fd000e287657ab9beda5bccc1fa/articles/ai-services/speech-service/includes/release-notes/release-notes-tts.md"
   },
   {
     "id": "azure-mekdes-neural",
@@ -11738,7 +11762,9 @@
       "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
     ],
     "identity_note": "Exact model am-ET-MekdesNeural; voice am-ET-MekdesNeural. Dataset label Azure Mekdes Neural. No API immutable build/weight SHA supplied.",
-    "api": null
+    "api": null,
+    "released": "2021-10",
+    "released_source": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/e8d0ac6f7ebd7fd000e287657ab9beda5bccc1fa/articles/ai-services/speech-service/includes/release-notes/release-notes-tts.md"
   },
   {
     "id": "gemini-3-1-flash-tts-preview",
@@ -12122,7 +12148,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/sesame/csm-1b"
+    "model_repo": "https://huggingface.co/sesame/csm-1b",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/sesame/csm-1b"
   },
   {
     "id": "orpheus-tts-0-1-finetune-prod",
@@ -12184,7 +12212,9 @@
     "model_repo": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
     "params_b": 3,
     "params_b_source": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
-    "params_note": "Maker's size label (card at sha 4206a56e5a68cf6cf96900a8a78acd3370c02eb6; GitHub README e64661f: 'built on the Llama-3b backbone'). Judgement: HF's safetensors metadata for this repo reports total 3782986752 parameters (≈3.78B, extended Llama-3.2-3B vocab); that is a Hub-computed count, not a maker statement, so the maker's '3B' is given. Excludes the SNAC decoder."
+    "params_note": "Maker's size label (card at sha 4206a56e5a68cf6cf96900a8a78acd3370c02eb6; GitHub README e64661f: 'built on the Llama-3b backbone'). Judgement: HF's safetensors metadata for this repo reports total 3782986752 parameters (≈3.78B, extended Llama-3.2-3B vocab); that is a Hub-computed count, not a maker statement, so the maker's '3B' is given. Excludes the SNAC decoder.",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft"
   },
   {
     "id": "cartesia-sonic-3",
@@ -13038,7 +13068,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "gemini-3.1-flash-lite-image (nano-banana-2-lite)"
       }
-    ]
+    ],
+    "released": "2026-06",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog"
   },
   {
     "id": "qwen-image-2-1",
@@ -14018,7 +14050,9 @@
       "unit": "image",
       "price_source": "https://www.recraft.ai/docs/api-reference/pricing",
       "price_note": "USD per generated raster image, Recraft V4.1 Flash. Billed as 7 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V4.1 Flash. Settings: raster, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-09",
+    "released_source": "https://www.recraft.ai/blog/meet-recraft-v4-1-flash"
   },
   {
     "id": "recraft-v3",
@@ -14741,7 +14775,11 @@
     "model_repo": "https://huggingface.co/stabilityai/stable-diffusion-3-medium",
     "params_b": 2,
     "params_b_source": "https://stability.ai/news-updates/stable-diffusion-3-medium",
-    "params_note": "2B = the SD3 Medium MMDiT as Stability states it; the CLIP-L/CLIP-G/T5-XXL text encoders and VAE are not included."
+    "params_note": "2B = the SD3 Medium MMDiT as Stability states it; the CLIP-L/CLIP-G/T5-XXL text encoders and VAE are not included.",
+    "released": "2024-06",
+    "released_source": "https://stability.ai/news-updates/stable-diffusion-3-medium",
+    "license": "stabilityai-community",
+    "license_source": "https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/19b7f516efea082d257947e057e6f419e26fd497"
   },
   {
     "id": "sd-3-5-medium",
@@ -14772,7 +14810,9 @@
     "params_b_source": "https://stability.ai/news/introducing-stable-diffusion-3-5",
     "params_note": "2.5B = the MMDiT-X diffusion transformer as Stability states it; text encoders (CLIP-L, CLIP-G, T5-XXL) and VAE not included.",
     "released": "2024-10",
-    "released_source": "https://stability.ai/news/introducing-stable-diffusion-3-5"
+    "released_source": "https://stability.ai/news/introducing-stable-diffusion-3-5",
+    "license": "stabilityai-community",
+    "license_source": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/tree/b940f670f0eda2d07fbb75229e779da1ad11eb80"
   },
   {
     "id": "playground-v2-5",
@@ -14792,7 +14832,9 @@
     ],
     "model_repo": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic",
     "released": "2024-02",
-    "released_source": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/blob/1e032f13f2fe6db2dc49947dbdbd196e753de573/LICENSE.md"
+    "released_source": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/blob/1e032f13f2fe6db2dc49947dbdbd196e753de573/LICENSE.md",
+    "license": "playground-v2dot5-community",
+    "license_source": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/blob/1e032f13f2fe6db2dc49947dbdbd196e753de573/LICENSE.md"
   },
   {
     "id": "show-o-demo-512",
@@ -18054,7 +18096,9 @@
     "identity_sources": [
       "https://docs.cloud.google.com/speech-to-text/v2/docs/transcription-model"
     ],
-    "identity_note": "Original Google Cloud Speech-to-Text model 'chirp' (USM-based first generation; leaderboard entry google/chirp). Distinct from chirp_2 and chirp_3. The current STT v2 transcription-model list (observed 2026-09-28) names only chirp_3, chirp_2 and telephony, so api is null."
+    "identity_note": "Original Google Cloud Speech-to-Text model 'chirp' (USM-based first generation; leaderboard entry google/chirp). Distinct from chirp_2 and chirp_3. The current STT v2 transcription-model list (observed 2026-09-28) names only chirp_3, chirp_2 and telephony, so api is null.",
+    "released": "2023-05",
+    "released_source": "https://cloud.google.com/blog/products/ai-machine-learning/bringing-power-large-models-google-clouds-speech-api"
   },
   {
     "id": "gpt-4-0314",
@@ -24824,7 +24868,10 @@
       "https://huggingface.co/suno/bark/tree/70a8a7d34168586dc5d028fa9666aceade177992",
       "https://github.com/suno-ai/bark/blob/f4f32d4cd480dfec1c245d258174bc9bde3c2148/README.md"
     ],
-    "model_repo": "https://huggingface.co/suno/bark"
+    "model_repo": "https://huggingface.co/suno/bark",
+    "params_b": 0.9,
+    "params_b_source": "https://huggingface.co/suno/bark/blob/70a8a7d34168586dc5d028fa9666aceade177992/README.md",
+    "params_note": "Official suno/bark card. Value is OUR SUM of the three full-size transformers (3 x 300M); \"80/300 M\" is read as small/full (the small models are the SUNO_USE_SMALL_MODELS checkpoints, not mapped here). Excludes Meta EnCodec, which Bark uses as its codec. The older GitHub model-card.md lists only 80 M per model."
   },
   {
     "id": "f5-tts-base",
@@ -25038,7 +25085,10 @@
     "identity_sources": [
       "https://huggingface.co/lj1995/GPT-SoVITS/tree/336b2ec4e8d4ac74740798dd40af44e74659ecaf/gsv-v2final-pretrained"
     ],
-    "model_repo": "https://huggingface.co/lj1995/GPT-SoVITS"
+    "model_repo": "https://huggingface.co/lj1995/GPT-SoVITS",
+    "params_b": 0.2,
+    "params_b_source": "https://github.com/RVC-Boss/GPT-SoVITS/wiki/GPT%E2%80%90SoVITS%E2%80%90v2%E2%80%90features-(%E6%96%B0%E7%89%B9%E6%80%A7)/71cbab1a4aa89f98959aec701eeb9e6cb0df56e8",
+    "params_note": "Official GPT-SoVITS repo wiki page \"GPT-SoVITS-v2-features\", linked from the official README V2 Release Notes (\"more details\"); every revision of the page was committed by RVC-Boss (the maker), last on 2024-08-07. v2 parameter count is stated as unchanged from v1 200M; rounded headline figure for the GPT+SoVITS system, the table does not split it by component."
   },
   {
     "id": "speecht5-tts",
@@ -25391,7 +25441,10 @@
       "https://huggingface.co/pyp1/VoiceCraft_giga830M/tree/472414217688325adc0143884bc5c7ce3b6eb427",
       "https://github.com/jasonppy/VoiceCraft"
     ],
-    "model_repo": "https://huggingface.co/pyp1/VoiceCraft_giga830M"
+    "model_repo": "https://huggingface.co/pyp1/VoiceCraft_giga830M",
+    "params_b": 0.83,
+    "params_b_source": "https://arxiv.org/html/2403.16973",
+    "params_note": "VoiceCraft paper by the maker (Puyuan Peng et al.). The catalogue checkpoint giga830M is the paper Main 830M GigaSpeech model (official README: \"03/28/2024: Model weights for giga330M and giga830M are up\"). Covers the VoiceCraft Transformer LM only; the separate Encodec codec is stated in the README as 56M parameters and is not included."
   },
   {
     "id": "voxcpm-0-5b",
@@ -25959,7 +26012,10 @@
       "https://huggingface.co/pyp1/VoiceCraft/tree/52b0f909d652ea016966804767320f13ede39abd",
       "https://github.com/jasonppy/VoiceCraft"
     ],
-    "model_repo": "https://huggingface.co/pyp1/VoiceCraft_830M_TTSEnhanced"
+    "model_repo": "https://huggingface.co/pyp1/VoiceCraft_830M_TTSEnhanced",
+    "params_b": 0.83,
+    "params_b_source": "https://github.com/jasonppy/VoiceCraft/blob/f0a7a971363905883a21c466a3aa4ea2d4c0b690/README.md",
+    "params_note": "Size from the maker official model name (830M_TTSEnhanced, announced in the official README as the 830M TTS Enhanced model); it is the 830M VoiceCraft model fine-tuned with the TTS objective, and the paper states \"Our Main model has 830M parameters\" (https://arxiv.org/html/2403.16973). Transformer LM only; excludes the 56M Encodec codec. No sentence states the fine-tuned checkpoint count separately."
   },
   {
     "id": "vicuna-7b-v1-5",
@@ -26178,7 +26234,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Koala-13B"
       }
-    ]
+    ],
+    "license": "koala-academic-research-only",
+    "license_source": "https://huggingface.co/young-geng/koala/blob/ea9d26214360de4276173a272b58f25e3936fd7f/README.md"
   },
   {
     "id": "oasst-sft-4-pythia-12b",
@@ -35794,7 +35852,9 @@
       "https://alphacephei.com/vosk/models",
       "https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/engine.py"
     ],
-    "model_repo": "https://alphacephei.com/vosk/models"
+    "model_repo": "https://alphacephei.com/vosk/models",
+    "released": "2020-12",
+    "released_source": "https://github.com/alphacep/vosk-space/commit/0c7ed5592fa5e93bffbe17dd4130b7f2ea9e7387"
   },
   {
     "id": "vosk-en-us-0-22",
@@ -35823,7 +35883,9 @@
       "https://alphacephei.com/vosk/models",
       "https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/engine.py"
     ],
-    "model_repo": "https://alphacephei.com/vosk/models"
+    "model_repo": "https://alphacephei.com/vosk/models",
+    "released": "2021-10",
+    "released_source": "https://github.com/alphacep/vosk-space/commit/a0d7b44fdbc2501c8c22271331fcf6da3c7da144"
   },
   {
     "id": "dmospeech-2",
@@ -36089,7 +36151,9 @@
     "local": null,
     "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
     "model_repo": "https://zenodo.org/record/4276519",
-    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 834–853. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model."
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 834–853. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
+    "license": "cc-by-4.0",
+    "license_source": "https://zenodo.org/api/records/4276519"
   },
   {
     "id": "espnet-transformer-18layer-lm",
@@ -36102,7 +36166,9 @@
     "local": null,
     "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
     "model_repo": "https://zenodo.org/record/3966501",
-    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 854–878. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model."
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 854–878. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
+    "license": "cc-by-4.0",
+    "license_source": "https://zenodo.org/api/records/3966501"
   },
   {
     "id": "jasper-10x5-nvidia-dle",

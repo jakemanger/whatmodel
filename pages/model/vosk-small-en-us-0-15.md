@@ -4,7 +4,7 @@
 
 # Vosk small en-us 0.15
 
-Alpha Cephei (Vosk) · apache-2.0
+Alpha Cephei (Vosk) · released 2020-12 · apache-2.0
 
 **score 42.7** ±6.0 · #91 of 112 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

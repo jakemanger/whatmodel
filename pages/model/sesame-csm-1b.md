@@ -4,7 +4,7 @@
 
 # Sesame CSM-1B
 
-Sesame · released 2025-03
+Sesame · released 2025-03 · apache-2.0
 
 **score 32.6** ±4.3 · #77 of 92 · from 8 benchmark results across 4 sources
 

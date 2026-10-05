@@ -4,7 +4,7 @@
 
 # Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)
 
-Google · proprietary
+Google · released 2026-06 · proprietary
 
 **score 70.8** ±1.7 · #12 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

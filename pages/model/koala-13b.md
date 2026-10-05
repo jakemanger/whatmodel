@@ -4,7 +4,7 @@
 
 # Koala 13B
 
-UC Berkeley (BAIR) · released 2023-04 · 13B params
+UC Berkeley (BAIR) · released 2023-04 · 13B params · koala-academic-research-only
 
 **score 22.9** ±2.3 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

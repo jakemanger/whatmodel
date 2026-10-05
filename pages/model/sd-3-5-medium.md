@@ -4,7 +4,7 @@
 
 # Stable Diffusion 3.5 Medium
 
-Stability AI · released 2024-10 · 2.5B params
+Stability AI · released 2024-10 · 2.5B params · stabilityai-community
 
 **score 39.7** ±2.7 · #91 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # FLUX 3 Video
 
-Black Forest Labs · closed weights
+Black Forest Labs · released 2026-08 · closed weights
 
 **score 78.6** ±1.9 · #3 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

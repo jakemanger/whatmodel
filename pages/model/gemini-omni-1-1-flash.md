@@ -4,7 +4,7 @@
 
 # Gemini Omni 1.1 Flash
 
-Google · closed weights
+Google · released 2026-08 · closed weights
 
 **score 80.8** ±1.6 · #1 of 76 · from 4 benchmark results across 3 sources
 

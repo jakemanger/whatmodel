@@ -4,7 +4,7 @@
 
 # Azure Ameha Neural
 
-Microsoft · closed weights
+Microsoft · released 2021-10 · closed weights
 
 **score 50.6** ±15.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

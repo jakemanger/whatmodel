@@ -4,7 +4,7 @@
 
 # GPT-SoVITS v2
 
-RVC-Boss · released 2024-08 · mit
+RVC-Boss · released 2024-08 · 0.2B params · mit
 
 **score 36.0** ±2.8 · #71 of 92 · from 3 benchmark results across 2 sources
 

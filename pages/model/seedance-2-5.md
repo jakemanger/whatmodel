@@ -4,7 +4,7 @@
 
 # Dreamina Seedance 2.5
 
-ByteDance · closed weights
+ByteDance · released 2026-07 · closed weights
 
 **score 77.3** ±1.5 · #6 of 76 · from 4 benchmark results across 2 sources
 

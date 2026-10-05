@@ -4,7 +4,7 @@
 
 # Mage-Flow
 
-Microsoft · 4B params
+Microsoft · released 2026-07 · 4B params
 
 **score 68.3** ±16.6 · #1 of 3 · from 9 benchmark results across 1 source
 

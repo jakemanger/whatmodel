@@ -4,7 +4,7 @@
 
 # Bark
 
-Suno · released 2023-04 · mit
+Suno · released 2023-04 · 0.9B params · mit
 
 **score 20.8** ±2.5 · #88 of 92 · from 7 benchmark results across 5 sources
 

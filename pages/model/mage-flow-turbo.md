@@ -4,7 +4,7 @@
 
 # Mage-Flow-Turbo
 
-Microsoft · 4B params
+Microsoft · released 2026-07 · 4B params
 
 **score 50.2** ±16.6 · #2 of 3 · from 9 benchmark results across 1 source
 

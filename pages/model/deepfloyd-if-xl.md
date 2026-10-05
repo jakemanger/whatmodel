@@ -4,7 +4,7 @@
 
 # IF-XL
 
-DeepFloyd · 4.3B params
+DeepFloyd · released 2023-04 · 4.3B params · deepfloyd-if-license
 
 **score 34.9** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
 

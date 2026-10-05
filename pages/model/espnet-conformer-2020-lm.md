@@ -4,7 +4,7 @@
 
 # ESPnet Conformer 2020 + RNN LM
 
-ESPnet · released 2020-11
+ESPnet · released 2020-11 · cc-by-4.0
 
 **score 41.5** ±22.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

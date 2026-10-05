@@ -4,7 +4,7 @@
 
 # VoiceCraft 830M (giga830M)
 
-Puyuan Peng et al. (UT Austin) · released 2024-03 · coqui-public-model-license
+Puyuan Peng et al. (UT Austin) · released 2024-03 · 0.83B params · coqui-public-model-license
 
 **score 33.7** ±3.5 · #73 of 92 · from 3 benchmark results across 1 source
 

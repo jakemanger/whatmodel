@@ -4,7 +4,7 @@
 
 # Cosmos3-Nano
 
-NVIDIA · 16B params · openmdw-1.1
+NVIDIA · released 2026-05 · 16B params · openmdw-1.1
 
 **score 50.5** ±6.3 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
