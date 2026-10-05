@@ -1,3 +1,4 @@
+import { MODEL_FIELDS, currentValue, editableFields } from '../lib/contribution-fields.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { FORMS, formFor, formYaml, BY, type Kind } from '../scripts/contrib/forms.ts';
@@ -14,8 +15,8 @@ const issue = (kind: Kind, fields: Record<string,string>) => ({ labels: [kind], 
 const paper = () => issue('paper-results', { source: 'https://example.org/results', model:'test-model', benchmark:'test-bench', score:'48.3%', by:BY[0] });
 
 test('all six form types generate explicit review-only proposals', async () => {
-  const inputs = [paper(), issue('update-model',{model:'test-model',what:'Context window (k tokens)',after:'128',source:'https://github.com/maker/model'}),
-    issue('update-model',{model:'test-model',what:'Total parameters (B)',after:'8',source:'https://github.com/maker/model'}),
+  const inputs = [paper(), issue('update-model',{model:'test-model',context:'128',source:'https://github.com/maker/model'}),
+    issue('update-model',{model:'test-model',params:'8',source:'https://github.com/maker/model'}),
     issue('new-provider',{model:'test-model',kind:'Local runtime or download',link:'https://github.com/maker/model',platforms:'- [X] Apple Silicon',command:'do-not-execute',quant:'q4',size:'5GB'}),
     issue('missing-model',{model:'New model',links:'https://github.com/maker/new',category:'Text (LLM)',maker:'Maker',weights:'Yes'}),
     issue('new-benchmark',{proposal:'A new benchmark',name:'New test',link:'https://example.org/new',licence:'CC BY',category:'Text (LLM)',scale:'Accuracy or percentage (higher is better)',measures:'Accuracy on held-out questions'})];
@@ -38,7 +39,7 @@ test('malformed, unknown, duplicate and oversized input produces no partial chan
   for(const body of [p.body.replace('48.3%','48.3'),'x'.repeat(20001)]) {
     const r=await review({...p,body},repo);assert.equal(r.status,'invalid');assert.equal(r.changes.length,0);
   }
-  const r=await review(issue('update-model',{model:'test-model',what:'Total parameters (B)',after:'8\nparams: 9B',source:'https://example.org'}),repo);assert.equal(r.status,'invalid');
+  const r=await review(issue('update-model',{model:'test-model',params:'8\nparams: 9B',source:'https://example.org'}),repo);assert.equal(r.status,'invalid');
 });
 test('error ratios retain values above 100%; raw scales are explicit', () => {
   assert.equal(toScore('1.2',{id:'wer',name:'WER',url:'https://example.org/bench',kind:'err'}).score,1.2);
@@ -105,9 +106,14 @@ test('short reports retain missing facts for review, without guessing', async ()
     const r=await review(input,repo); assert.equal(r.status,'needs-review'); assert.equal(r.changes.length,0); assert.ok(r.submission);
   }
 });
-test('before values reject stale changes; references are required', async () => {
-  const fields={model:'test-model',what:'Name',before:'Stale name',after:'New name',source:'https://example.org'};
-  assert.equal((await review(issue('update-model',fields),repo)).status,'invalid');
-  assert.equal((await review(issue('update-model',{...fields,before:'Test model',source:''}),repo)).status,'invalid');
-  assert.equal((await review(issue('update-model',{...fields,before:'Test model'}),repo)).changes.length,1);
+test('one form proposes multiple fields, keeps blanks, rejects stale snapshots and requires a reference', async () => {
+  const snapshot=editableFields(repo.models[0]).map(k=>MODEL_FIELDS[k]+': '+currentValue(repo.models[0],k)).join('\n');
+  const fields={model:'test-model',before:snapshot,name:'New name',params:'8',context:'128',maker:'',source:'https://example.org'};
+  assert.equal((await review(issue('update-model',{...fields,before:'stale'}),repo)).status,'invalid');
+  assert.equal((await review(issue('update-model',{...fields,source:''}),repo)).status,'invalid');
+  const result=await review(issue('update-model',fields),repo);
+  assert.equal(result.changes.length,1,JSON.stringify(result.problems));
+  const after=result.changes[0].after as Repo['models'][number];
+  assert.equal(after.name,'New name');assert.equal(after.params_b,8);assert.equal(after.context_k,128);assert.equal(after.provider,'Maker');
+  assert.equal((await review(issue('update-model',{model:'test-model',source:'https://example.org'}),repo)).status,'invalid');
 });

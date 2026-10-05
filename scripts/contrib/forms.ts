@@ -34,12 +34,11 @@ const notes: Field = {id:"notes",label:"Notes (optional)",type:"textarea",descri
 const model = input("model","Model",true,"The model id from its page, for example qwen3-8b. Prefilled when opened from the site.");
 const source = input("source","Reference URL",true,"The paper, model card or provider page that supports the proposed value.");
 const changes = [model,
-  input("what","Field to change",true,"Prefilled by the model page. Choose a field there, or use: "+Object.values(MODEL_FIELDS).join("; ")),
-  input("before","Current value",false,"Prefilled by the model page. Leave blank if you do not know it."),
-  input("after","Correct value",true,"Use the units shown in Field to change. Enter only the value."),
+  {id:"before",label:"Current information",type:"textarea",description:"Prefilled by the model page for comparison. Leave unchanged."} as Field,
+  ...Object.entries(MODEL_FIELDS).map(([id,label])=>input(id,"New "+label[0].toLowerCase()+label.slice(1)+" (optional)",false,"Leave blank to keep the current value.")),
   source, notes];
 export const FORMS: Form[] = [
-  {kind:"update-model",name:"Update model information",description:"Correct one fact with a before/after value and reference.",labels:["data","update-model"],intro,fields:changes},
+  {kind:"update-model",name:"Update model information",description:"Update any model facts in one form; leave unchanged fields blank.",labels:["data","update-model"],intro,fields:changes},
   {kind:"wrong-number",name:"Correct a benchmark score",description:"Correct a published test result we already list.",labels:["data","wrong-number"],intro,fields:[
     model,input("benchmark","Benchmark",true,"Exact benchmark id shown on the site."),
     input("before","Current score"),input("score","Correct score",true,"Include % for percentages, e.g. 71.2%. Otherwise use the source's numeric scale."),

@@ -1,5 +1,5 @@
 name: "Update model information"
-description: "Correct one fact with a before/after value and reference."
+description: "Update any model facts in one form; leave unchanged fields blank."
 title: "Update model information"
 labels: ["data", "update-model"]
 body:
@@ -14,25 +14,66 @@ body:
       description: "The model id from its page, for example qwen3-8b. Prefilled when opened from the site."
     validations:
       required: true
-  - type: input
-    id: what
-    attributes:
-      label: "Field to change"
-      description: "Prefilled by the model page. Choose a field there, or use: Name; Maker; Release date (YYYY-MM); Weights licence; Total parameters (B); Active parameters (B); Context window (k tokens); Downloadable weights (yes/no); Input price (USD / 1M tokens); Output price (USD / 1M tokens); Price (USD / category unit)"
-    validations:
-      required: true
-  - type: input
+  - type: textarea
     id: before
     attributes:
-      label: "Current value"
-      description: "Prefilled by the model page. Leave blank if you do not know it."
+      label: "Current information"
+      description: "Prefilled by the model page for comparison. Leave unchanged."
   - type: input
-    id: after
+    id: name
     attributes:
-      label: "Correct value"
-      description: "Use the units shown in Field to change. Enter only the value."
-    validations:
-      required: true
+      label: "New name (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: maker
+    attributes:
+      label: "New maker (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: released
+    attributes:
+      label: "New release date (YYYY-MM) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: licence
+    attributes:
+      label: "New weights licence (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: params
+    attributes:
+      label: "New total parameters (B) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: active
+    attributes:
+      label: "New active parameters (B) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: context
+    attributes:
+      label: "New context window (k tokens) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: open_weights
+    attributes:
+      label: "New downloadable weights (yes/no) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: price_in
+    attributes:
+      label: "New input price (USD / 1M tokens) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: price_out
+    attributes:
+      label: "New output price (USD / 1M tokens) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: price
+    attributes:
+      label: "New price (USD / category unit) (optional)"
+      description: "Leave blank to keep the current value."
   - type: input
     id: source
     attributes:

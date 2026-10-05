@@ -12,6 +12,7 @@
     "check": "node scripts/check.ts",
     "validate-data": "node scripts/check.ts --validate-only",
     "test": "node --test tests/*.test.ts",
+    "test:bench": "python3 -m unittest discover -s tests/bench",
     "typecheck": "tsc --noEmit",
     "board": "node scripts/board.ts",
     "pages": "node scripts/pages.ts",

@@ -2,7 +2,7 @@ whatmodel.sh is open data. Every score, price, memory figure and run command com
 
 ## Benchmark your own machine
 
-Run the [whatmodel bench](/bench) to measure how fast models run on your hardware. It shows exactly what will be shared, then opens a pull request with your results for review. Bench results are released under CC0.
+Run the [whatmodel bench](/bench) to measure how fast models run on your hardware. It shows exactly what will be shared, then offers to open a prefilled GitHub issue for you to review and submit. Bench results are released under CC0.
 
 ## Add results from a research paper
 
@@ -27,7 +27,7 @@ The [sources list](/method#sources) shows every source in use and its licence. L
 
 ## Fix a number or add a model
 
-On a model page, choose **Update model information**, then the fact to change. Its form includes the current value; enter the correct value and a reference link. Use **[correct]** beside a benchmark result to prefill that score's model, test and source. A [missing model](https://github.com/jakemanger/whatmodel/issues/new?template=missing-model.yml) needs only its name and official link. Prices and context windows can come from the provider's own pricing page, with the date you checked it.
+On a model page, choose **Update model information**. One form includes the current information; fill only the fields you want to change and add a reference link. Leave everything else blank. Use **[correct]** beside a benchmark result to prefill that score's model, test and source. A [missing model](https://github.com/jakemanger/whatmodel/issues/new?template=missing-model.yml) needs only its name and official link. Prices and context windows can come from the provider's own pricing page, with the date you checked it.
 
 ## Add or fix a model's icon
 

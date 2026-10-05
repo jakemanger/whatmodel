@@ -4,3 +4,5 @@ dist/
 .DS_Store
 # Unreviewed source material is never published.
 .research/
+
+__pycache__/

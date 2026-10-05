@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { sourceIn } from '../../lib/sources.ts';
 import type { Model, Result, Benchmark, Category, Variant } from '../../lib/types.ts';
 import type { Repo } from './repo.ts';
-import { MODEL_FIELDS, currentValue, type ModelField } from '../../lib/contribution-fields.ts';
+import { MODEL_FIELDS, currentValue, editableFields, type ModelField } from '../../lib/contribution-fields.ts';
 import { CATEGORIES, BY, type Kind } from './forms.ts';
 import { detectKind, readForm, str, keyValues, MAX_BODY, type Problem } from './parse.ts';
 import { parseNumber, parseContext, parseParams, parseSize, normLicence, yesNo, slug, norm, toScore } from './values.ts';
@@ -145,15 +145,18 @@ export async function review(issue: Issue, repo: Repo, net?: Net): Promise<Revie
   } else if (kind === 'update-model') {
     if (!model) problem('Unknown model id.');
     else {
-      const key = (Object.keys(MODEL_FIELDS) as ModelField[]).find(k => MODEL_FIELDS[k] === str(f.what));
-      if (!key) problem('Select a supported field.');
-      else {
-        if (str(f.before) && str(f.before) !== currentValue(model,key)) problem('Current value differs from the catalogue. Refresh the model page before submitting.');
-        const value = str(f.after);
-        if (/[\r\n]/.test(value)) problem('Enter one value, not additional fields.');
-        const typed = (key === 'context' && /^\d+(\.\d+)?$/.test(value)) ? value+'k' : value;
-        propose('models.json', model.id, model, update(model, key+': '+typed), 'Update one fact from the supplied reference');
+      const keys = (Object.keys(MODEL_FIELDS) as ModelField[]).filter(k=>str(f[k]));
+      if (!keys.length) problem('Fill at least one field to update.');
+      const expected = editableFields(model).map(k=>MODEL_FIELDS[k]+': '+currentValue(model,k)).join('\n');
+      if (str(f.before) && str(f.before) !== expected) problem('Current information differs from the catalogue. Reopen the form from the model page.');
+      let changed = structuredClone(model);
+      for (const key of keys) {
+        const value=str(f[key]);
+        if (/[\r\n]/.test(value)) { problem('Enter one value per field.'); continue; }
+        const typed=key==='context' && /^\d+(\.\d+)?$/.test(value) ? value+'k' : value;
+        changed=update(changed,key+': '+typed);
       }
+      propose('models.json',model.id,model,changed,'Update the filled fields from the supplied reference');
     }
   } else if (kind === 'missing-model') {
     const name = str(f.model), id = slug(name);
