@@ -1,0 +1,60 @@
+name: "Add a place to run a model"
+description: "Suggest an API, app or download with an official link."
+title: "Add a place to run a model"
+labels: ["data", "new-provider"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: model
+    attributes:
+      label: "Model"
+      description: "The model id from its page, for example qwen3-8b. Prefilled when opened from the site."
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Official reference URL"
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: "Provider or app (optional)"
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Type (optional)"
+      options:
+        - "API provider"
+        - "Hosted service"
+        - "Local runtime or download"
+  - type: input
+    id: command
+    attributes:
+      label: "Run command (optional)"
+  - type: input
+    id: quant
+    attributes:
+      label: "Precision / quantization (optional)"
+  - type: input
+    id: size
+    attributes:
+      label: "Memory or download size in GB (optional)"
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: "Documented platforms (optional)"
+      options:
+        - label: "Apple Silicon"
+        - label: "NVIDIA"
+        - label: "AMD"
+        - label: "CPU only"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes (optional)"
+      description: "Table/page, evaluation settings, or anything needed to interpret the reference."

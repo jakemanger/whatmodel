@@ -1,23 +1,48 @@
-name: Missing model
-description: A model that should be on the leaderboard isn't.
-labels: [data]
+name: "Add a missing model"
+description: "Suggest a model by name and official reference."
+title: "Add a missing model"
+labels: ["data", "missing-model"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md).
   - type: input
     id: model
     attributes:
-      label: Model name
-    validations: { required: true }
+      label: "Model name"
+    validations:
+      required: true
   - type: input
     id: links
     attributes:
-      label: Official page, weights or API docs
-    validations: { required: true }
-  - type: textarea
-    id: results
+      label: "Official reference URL"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
     attributes:
-      label: Published benchmark results
-      description: Links to results under an open licence (CC BY, CC BY-SA, CC0, MIT, Apache), or the vendor's own model card. Leaderboard aggregators can't be used.
+      label: "Category (optional)"
+      options:
+        - "Text (LLM)"
+        - "Image"
+        - "Video"
+        - "Text-to-speech"
+        - "Speech-to-text"
+  - type: input
+    id: maker
+    attributes:
+      label: "Maker (optional)"
+  - type: dropdown
+    id: weights
+    attributes:
+      label: "Are the weights downloadable? (optional)"
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
   - type: textarea
     id: notes
     attributes:
-      label: Anything else
+      label: "Notes (optional)"
+      description: "Table/page, evaluation settings, or anything needed to interpret the reference."

@@ -1,0 +1,56 @@
+name: "Suggest a benchmark or results source"
+description: "Point us to a test or a source of measurements."
+title: "Suggest a benchmark or results source"
+labels: ["data", "new-benchmark"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: name
+    attributes:
+      label: "Benchmark or source name"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Reference URL"
+    validations:
+      required: true
+  - type: dropdown
+    id: proposal
+    attributes:
+      label: "What is it? (optional)"
+      options:
+        - "A new benchmark"
+        - "Results for existing benchmarks"
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category (optional)"
+      options:
+        - "Text (LLM)"
+        - "Image"
+        - "Video"
+        - "Text-to-speech"
+        - "Speech-to-text"
+  - type: dropdown
+    id: scale
+    attributes:
+      label: "Score type (optional)"
+      options:
+        - "Accuracy or percentage (higher is better)"
+        - "Error rate (lower is better)"
+        - "Elo or arena rating"
+        - "Other"
+  - type: input
+    id: licence_link
+    attributes:
+      label: "Results licence URL (optional)"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes (optional)"
+      description: "Table/page, evaluation settings, or anything needed to interpret the reference."

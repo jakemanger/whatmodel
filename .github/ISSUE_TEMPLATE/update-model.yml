@@ -1,0 +1,88 @@
+name: "Update model information"
+description: "Update any model facts in one form; leave unchanged fields blank."
+title: "Update model information"
+labels: ["data", "update-model"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: model
+    attributes:
+      label: "Model"
+      description: "The model id from its page, for example qwen3-8b. Prefilled when opened from the site."
+    validations:
+      required: true
+  - type: textarea
+    id: before
+    attributes:
+      label: "Current information"
+      description: "Prefilled by the model page for comparison. Leave unchanged."
+  - type: input
+    id: name
+    attributes:
+      label: "New name (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: maker
+    attributes:
+      label: "New maker (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: released
+    attributes:
+      label: "New release date (YYYY-MM) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: licence
+    attributes:
+      label: "New weights licence (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: params
+    attributes:
+      label: "New total parameters (B) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: active
+    attributes:
+      label: "New active parameters (B) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: context
+    attributes:
+      label: "New context window (k tokens) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: open_weights
+    attributes:
+      label: "New downloadable weights (yes/no) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: price_in
+    attributes:
+      label: "New input price (USD / 1M tokens) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: price_out
+    attributes:
+      label: "New output price (USD / 1M tokens) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: price
+    attributes:
+      label: "New price (USD / category unit) (optional)"
+      description: "Leave blank to keep the current value."
+  - type: input
+    id: source
+    attributes:
+      label: "Reference URL"
+      description: "The paper, model card or provider page that supports the proposed value."
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes (optional)"
+      description: "Table/page, evaluation settings, or anything needed to interpret the reference."
