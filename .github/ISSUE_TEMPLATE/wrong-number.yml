@@ -1,39 +1,46 @@
-name: "Wrong number"
-description: "A score, price, context window, size or date doesn't match its source."
+name: "Correct a benchmark score"
+description: "Correct a published test result we already list."
+title: "Correct a benchmark score"
 labels: ["data", "wrong-number"]
 body:
   - type: markdown
     attributes:
       value: |
-        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
-
-        **Format:** `what = correct value`, for example `gpqa-diamond = 71.2%`, `price_in = 0.40` or `context = 256k`.
-
-        - For a test result, `what` is the benchmark id from [data/benchmarks.json](https://github.com/jakemanger/whatmodel/blob/main/data/benchmarks.json).
-        - Otherwise one of `price_in`, `price_out` (USD per 1M tokens), `price` (e.g. `0.04`), `context`, `params`, `active`, `released` or `licence`.
-        - The model id is the end of its whatmodel.sh address, e.g. `qwen3-8b` for whatmodel.sh/model/qwen3-8b ([all ids](https://github.com/jakemanger/whatmodel/blob/main/data/models.json)).
+        Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md).
   - type: input
     id: model
     attributes:
       label: "Model"
-      placeholder: "qwen3-8b"
+      description: "The model id from its page, for example qwen3-8b. Prefilled when opened from the site."
     validations:
       required: true
   - type: input
-    id: field
+    id: benchmark
     attributes:
-      label: "Correct value"
-      placeholder: "gpqa-diamond = 71.2%"
+      label: "Benchmark"
+      description: "Exact benchmark id shown on the site."
+    validations:
+      required: true
+  - type: input
+    id: before
+    attributes:
+      label: "Current score"
+  - type: input
+    id: score
+    attributes:
+      label: "Correct score"
+      description: "Include % for percentages, e.g. 71.2%. Otherwise use the source's numeric scale."
     validations:
       required: true
   - type: input
     id: source
     attributes:
-      label: "Source URL"
-      description: "Where the correct number is published: the source we cite for that result, or the vendor's own page for prices and specs."
+      label: "Reference URL"
+      description: "The paper, model card or provider page that supports the proposed value."
     validations:
       required: true
   - type: textarea
     id: notes
     attributes:
-      label: "Anything else"
+      label: "Notes (optional)"
+      description: "Table/page, evaluation settings, or anything needed to interpret the reference."

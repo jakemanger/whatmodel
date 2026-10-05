@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { FORMS, formFor, formYaml, CONFIRM, BY, type Kind } from '../scripts/contrib/forms.ts';
+import { FORMS, formFor, formYaml, BY, type Kind } from '../scripts/contrib/forms.ts';
 import { review } from '../scripts/contrib/review.ts';
 import { fakeNet, privateAddress, checkUrl, htmlText } from '../scripts/contrib/net.ts';
 import { toScore } from '../scripts/contrib/values.ts';
@@ -11,14 +11,14 @@ import { readFileSync } from 'node:fs';
 
 const repo: Repo = { models: [{ id: 'test-model', name: 'Test model', provider: 'Maker', open_weights: true, category: 'llm', model_repo: 'https://github.com/maker/model' }], results: [], benchmarks: [{ id: 'test-bench', name: 'Test bench', kind: 'acc', url: 'https://example.org/bench' }], icons: [], sources: [{ id: 'study', name: 'Study', match: ['example.org/results'], exact: true, verdict: 'allowed', license: 'CC BY 4.0', kind: 'paper', terms_url: 'https://example.org/terms', checked: '2026-10-05' }] };
 const issue = (kind: Kind, fields: Record<string,string>) => ({ labels: [kind], body: formFor(kind).fields.map((f) => `### ${f.label}\n\n${fields[f.id] ?? '_No response_'}\n`).join('\n') });
-const paper = () => issue('paper-results', { source: 'https://example.org/results', location: 'Table 1', results: 'test-model | test-bench | 48.3%', by: BY[0], confirm: `- [X] ${CONFIRM}` });
+const paper = () => issue('paper-results', { source: 'https://example.org/results', model:'test-model', benchmark:'test-bench', score:'48.3%', by:BY[0] });
 
 test('all six form types generate explicit review-only proposals', async () => {
-  const inputs = [paper(), issue('update-model',{model:'test-model',what:'Context window',change:'context: 128k',source:'https://github.com/maker/model'}),
-    issue('wrong-number',{model:'test-model',field:'params = 8B',source:'https://github.com/maker/model'}),
-    issue('new-provider',{model:'test-model',kind:'Download (official or quantised weights)',link:'https://github.com/maker/model',platforms:'- [X] Apple Silicon',details:'command: do-not-execute\nquant: q4\nsize: 5GB'}),
-    issue('missing-model',{model:'New model',links:'https://github.com/maker/new',category:'Text (LLM)',details:'maker: Maker\nopen_weights: yes'}),
-    issue('new-benchmark',{name:'New test',link:'https://example.org/new',licence:'CC BY',category:'Text (LLM)',scale:'Accuracy or percentage (higher is better)',measures:'Accuracy on held-out questions'})];
+  const inputs = [paper(), issue('update-model',{model:'test-model',what:'Context window (k tokens)',after:'128',source:'https://github.com/maker/model'}),
+    issue('update-model',{model:'test-model',what:'Total parameters (B)',after:'8',source:'https://github.com/maker/model'}),
+    issue('new-provider',{model:'test-model',kind:'Local runtime or download',link:'https://github.com/maker/model',platforms:'- [X] Apple Silicon',command:'do-not-execute',quant:'q4',size:'5GB'}),
+    issue('missing-model',{model:'New model',links:'https://github.com/maker/new',category:'Text (LLM)',maker:'Maker',weights:'Yes'}),
+    issue('new-benchmark',{proposal:'A new benchmark',name:'New test',link:'https://example.org/new',licence:'CC BY',category:'Text (LLM)',scale:'Accuracy or percentage (higher is better)',measures:'Accuracy on held-out questions'})];
   const before = JSON.stringify(repo);
   for (const input of inputs) {
     const r = await review(input, repo); assert.equal(r.status,'needs-review',JSON.stringify(r.problems)); assert.equal(r.changes.length,1);
@@ -35,10 +35,10 @@ test('score proposals require an approved actual-data licence; duplicates and co
 });
 test('malformed, unknown, duplicate and oversized input produces no partial changes', async () => {
   const p=paper();
-  for(const body of [p.body.replace('test-model','unknown'),p.body.replace('48.3%','48.3'),p.body.replace('test-model | test-bench | 48.3%','test-model | test-bench | 48.3%\ntest-model | test-bench | 48.3%'),'x'.repeat(20001)]) {
+  for(const body of [p.body.replace('48.3%','48.3'),'x'.repeat(20001)]) {
     const r=await review({...p,body},repo);assert.equal(r.status,'invalid');assert.equal(r.changes.length,0);
   }
-  const r=await review(issue('update-model',{model:'test-model',what:'Parameters',change:'params: 8B\nparams: 9B',source:'https://example.org'}),repo);assert.equal(r.status,'invalid');
+  const r=await review(issue('update-model',{model:'test-model',what:'Total parameters (B)',after:'8\nparams: 9B',source:'https://example.org'}),repo);assert.equal(r.status,'invalid');
 });
 test('error ratios retain values above 100%; raw scales are explicit', () => {
   assert.equal(toScore('1.2',{id:'wer',name:'WER',url:'https://example.org/bench',kind:'err'}).score,1.2);
@@ -90,7 +90,24 @@ test('duplicate sections and conflicting form labels are rejected', async () => 
 });
 test('benchmark correction retains digits in exact benchmark ids', async () => {
   const r={...repo,benchmarks:[{...repo.benchmarks[0],id:'aime-2025'}],results:[{model:'test-model',bench:'aime-2025',score:0.4,source:'https://example.org/results',by:'lab' as const}]};
-  const result=await review(issue('wrong-number',{model:'test-model',field:'aime-2025 = 50%',source:'https://example.org/results'}),r);
+  const result=await review(issue('wrong-number',{model:'test-model',benchmark:'aime-2025',score:'50%',source:'https://example.org/results'}),r);
   assert.equal(result.status,'needs-review');
   assert.equal((result.changes[0].after as {score:number}).score,0.5);
+});
+
+test('short reports retain missing facts for review, without guessing', async () => {
+  for (const input of [
+    issue('paper-results',{model:'test-model',benchmark:'test-bench',score:'48.3%',source:'https://example.org/results'}),
+    issue('missing-model',{model:'Another model',links:'https://example.org/model'}),
+    issue('new-provider',{model:'test-model',link:'https://example.org/run'}),
+    issue('new-benchmark',{name:'A source',link:'https://example.org/results'}),
+  ]) {
+    const r=await review(input,repo); assert.equal(r.status,'needs-review'); assert.equal(r.changes.length,0); assert.ok(r.submission);
+  }
+});
+test('before values reject stale changes; references are required', async () => {
+  const fields={model:'test-model',what:'Name',before:'Stale name',after:'New name',source:'https://example.org'};
+  assert.equal((await review(issue('update-model',fields),repo)).status,'invalid');
+  assert.equal((await review(issue('update-model',{...fields,before:'Test model',source:''}),repo)).status,'invalid');
+  assert.equal((await review(issue('update-model',{...fields,before:'Test model'}),repo)).changes.length,1);
 });

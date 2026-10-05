@@ -11,7 +11,7 @@ New benchmark numbers usually appear in papers first. We can use a paper's numbe
 - On arXiv, open the paper's abstract page and check the licence link under "Access Paper". **CC BY**, **CC BY-SA** and **CC0** papers can be used. arXiv's default "non-exclusive license to distribute" isn't enough.
 - A model card or code repository under **Apache-2.0** or **MIT** also works, when that licence covers the published results.
 
-Then [open a "Results from a paper" issue](https://github.com/jakemanger/whatmodel/issues/new?template=paper-results.yml) with the link, the table or figure, and the models and scores. Or add the rows to `data/results.json` yourself and open a pull request. [UPDATING.md](https://github.com/jakemanger/whatmodel/blob/main/UPDATING.md) explains each field.
+Then [open an "Add a test result" issue](https://github.com/jakemanger/whatmodel/issues/new?template=paper-results.yml) with the model, benchmark, score and reference link in separate fields. Table/page and evaluation settings are optional notes. Or add the rows to `data/results.json` yourself and open a pull request. [UPDATING.md](https://github.com/jakemanger/whatmodel/blob/main/UPDATING.md) explains each field.
 
 ## Add data from the sources we already use
 
@@ -27,7 +27,7 @@ The [sources list](/method#sources) shows every source in use and its licence. L
 
 ## Fix a number or add a model
 
-Use the [Missing model](https://github.com/jakemanger/whatmodel/issues/new?template=missing-model.yml) or [Wrong number](https://github.com/jakemanger/whatmodel/issues/new?template=wrong-number.yml) form. Include a source link for every number. Prices and context windows can come from the provider's own pricing page, with the date you checked it.
+On a model page, choose **Update model information**, then the fact to change. Its form includes the current value; enter the correct value and a reference link. Use **[correct]** beside a benchmark result to prefill that score's model, test and source. A [missing model](https://github.com/jakemanger/whatmodel/issues/new?template=missing-model.yml) needs only its name and official link. Prices and context windows can come from the provider's own pricing page, with the date you checked it.
 
 ## Add or fix a model's icon
 
@@ -38,3 +38,7 @@ Each model shows its maker's logo, taken from the maker's own website or its Hug
 Press **edit this page on GitHub** on the About, FAQ or Contribute page to suggest a text change. For changes to how scores are calculated, [start a discussion](https://github.com/jakemanger/whatmodel/discussions) first. The [methodology](/method) describes the current calculation and its limits.
 
 By opening a pull request you agree that data changes are licensed under CC BY-SA 4.0 and code changes under the MIT licence.
+
+## Prefer a pull request?
+
+Choose **Edit data on GitHub** on a model page, find its model id in `data/models.json`, and propose your edit through a fork and pull request. For benchmark results, edit `data/results.json`. Include the reference alongside each changed fact; [the contribution guide](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md) covers validation and review.

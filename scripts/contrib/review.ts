@@ -4,8 +4,9 @@ import { createHash } from 'node:crypto';
 import { sourceIn } from '../../lib/sources.ts';
 import type { Model, Result, Benchmark, Category, Variant } from '../../lib/types.ts';
 import type { Repo } from './repo.ts';
+import { MODEL_FIELDS, currentValue, type ModelField } from '../../lib/contribution-fields.ts';
 import { CATEGORIES, BY, type Kind } from './forms.ts';
-import { detectKind, readForm, str, keyValues, resultLines, MAX_BODY, type Problem } from './parse.ts';
+import { detectKind, readForm, str, keyValues, MAX_BODY, type Problem } from './parse.ts';
 import { parseNumber, parseContext, parseParams, parseSize, normLicence, yesNo, slug, norm, toScore } from './values.ts';
 import { aggregator, inScope, modelScopes } from './domains.ts';
 import { checkUrl, type Net, type Fetched } from './net.ts';
@@ -13,7 +14,7 @@ import { checkUrl, type Net, type Fetched } from './net.ts';
 export type Issue = { body: string; labels?: (string | { name: string })[]; number?: number; title?: string };
 export type Change = { file: 'models.json' | 'results.json' | 'benchmarks.json'; id: string; before: unknown; after: unknown; reason: string };
 export type Evidence = { source: string; fetched?: Fetched; sha256?: string; ledger?: string; problem?: string };
-export type Review = { status: 'invalid' | 'needs-review' | 'no-change'; kind?: Kind; problems: Problem[]; warnings: string[]; changes: Change[]; evidence: Evidence[]; sourceProposals: { url: string; claimedLicence: string; licenceUrl: string; verdict: 'unclear' }[] };
+export type Review = { status: 'invalid' | 'needs-review' | 'no-change'; kind?: Kind; submission?: Record<string, unknown>; problems: Problem[]; warnings: string[]; changes: Change[]; evidence: Evidence[]; sourceProposals: { url: string; claimedLicence: string; licenceUrl: string; verdict: 'unclear' }[] };
 const cats: Category[] = ['llm', 'image', 'video', 'tts', 'stt'];
 const digest = (s: string) => createHash('sha256').update(s).digest('hex');
 const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
@@ -28,6 +29,7 @@ export async function review(issue: Issue, repo: Repo, net?: Net): Promise<Revie
   if (!kind) { out.problems.push({ message: 'Cannot identify the form. Supply one supported form label and its headings.' }); return out; }
   const { fields: f, problems } = readForm(kind, issue.body); out.problems.push(...problems);
   if (problems.length) return out;
+  out.submission = f;
   const source = str(f.source) || str(f.link) || str(f.links);
   try { checkUrl(source); } catch { out.problems.push({ field: 'source', message: 'Use one complete public HTTP(S) source URL.' }); return out; }
   if (aggregator(source)) { out.problems.push({ field: 'source', message: 'This source is excluded by the repository source policy.' }); return out; }
@@ -42,6 +44,8 @@ export async function review(issue: Issue, repo: Repo, net?: Net): Promise<Revie
   } else ev.problem = 'Not fetched (offline review).';
   if (ev.problem) out.warnings.push(ev.problem);
   out.warnings.push('All changes require human review of exact checkpoint, source ownership, units, table row, protocol and licence scope. Text matches are not verification.');
+  let manual = false;
+  const defer = (message: string) => { manual = true; out.warnings.push(message); };
   const propose = (file: Change['file'], id: string, before: unknown, after: unknown, reason: string) => {
     if (!same(before, after)) out.changes.push({ file, id, before, after, reason });
   };
@@ -123,79 +127,82 @@ export async function review(issue: Issue, repo: Repo, net?: Net): Promise<Revie
     return m;
   };
 
-  if (kind === 'paper-results') {
-    const lines = resultLines(str(f.results));
-    if (lines.length > 50) problem('Limit one contribution to 50 results.');
-    else for (const { cells } of lines) {
-      if (cells.length < 3 || cells.length > 4) { problem('Result format: model-id | benchmark-id | score | optional note'); continue; }
-      addResult(cells[0], cells[1], cells[2], [str(f.location), cells[3], str(f.setup)].filter(Boolean).join('; '), str(f.by) === BY[1] ? 'lab' : 'independent');
+  if (kind === 'paper-results' || kind === 'wrong-number') {
+    const benchmark = str(f.benchmark), score = str(f.score);
+    if (!model || !repo.benchmarks.some(b => b.id === benchmark)) {
+      defer('Resolve the model/benchmark identity from the submitted fields before preparing a result.');
+    } else if (kind === 'paper-results' && !BY.slice(0,2).includes(str(f.by))) {
+      defer('Confirm whether the evaluator made this model before preparing a result; no attribution is guessed.');
+    } else {
+      if (kind === 'wrong-number' && str(f.before)) {
+        const existing = repo.results.find(r => r.model === model.id && r.bench === benchmark && r.source === source);
+        const bench = repo.benchmarks.find(b => b.id === benchmark)!;
+        const before = toScore(str(f.before), bench);
+        if (existing && (before.score === undefined || Math.abs(before.score - existing.score) > 1e-10)) problem('Current score differs from the catalogue. Refresh the page before correcting it.');
+      }
+      addResult(model.id, benchmark, score, str(f.notes), str(f.by) === BY[1] ? 'lab' : 'independent', kind === 'wrong-number');
     }
-  } else if (kind === 'update-model' || kind === 'wrong-number') {
+  } else if (kind === 'update-model') {
     if (!model) problem('Unknown model id.');
     else {
-      const text = kind === 'wrong-number' ? str(f.field) : str(f.change);
-      const correction = /^([^:=\n]+)\s*[:=]\s*([^\n]+)$/.exec(text.trim());
-      const benchmark = correction && repo.benchmarks.find((b) => b.id === correction[1].trim());
-      if (kind === 'wrong-number' && benchmark && correction) {
-        addResult(model.id, benchmark.id, correction[2].trim(), str(f.notes), 'independent', true);
-      } else propose('models.json', model.id, model, update(model, text), 'Update model facts; verify the source supports this exact model');
+      const key = (Object.keys(MODEL_FIELDS) as ModelField[]).find(k => MODEL_FIELDS[k] === str(f.what));
+      if (!key) problem('Select a supported field.');
+      else {
+        if (str(f.before) && str(f.before) !== currentValue(model,key)) problem('Current value differs from the catalogue. Refresh the model page before submitting.');
+        const value = str(f.after);
+        if (/[\r\n]/.test(value)) problem('Enter one value, not additional fields.');
+        const typed = (key === 'context' && /^\d+(\.\d+)?$/.test(value)) ? value+'k' : value;
+        propose('models.json', model.id, model, update(model, key+': '+typed), 'Update one fact from the supplied reference');
+      }
     }
   } else if (kind === 'missing-model') {
     const name = str(f.model), id = slug(name);
-    if (!id || repo.models.some((m) => m.id === id || norm(m.name) === norm(name))) problem('A model with this id/name already exists, or the id is empty.');
-    const cat = cats[CATEGORIES.indexOf(str(f.category))];
-    const details = pairs(str(f.details));
-    if (!details.some((p) => p.key === 'maker') || !details.some((p) => p.key === 'open_weights')) problem('Details must include maker and open_weights: yes/no.');
-    const m = update({ id, name, provider: '', category: cat, open_weights: false, source }, str(f.details));
-    propose('models.json', id, null, m, 'New model identity requires maker confirmation');
-    if (str(f.results)) out.warnings.push('Add the new model first, then submit its results with the assigned model id. No results for an unknown model are imported.');
+    if (!id || repo.models.some(m => m.id === id || norm(m.name) === norm(name))) problem('This model already exists or its name is empty.');
+    const category = cats[CATEGORIES.indexOf(str(f.category))];
+    const weights = yesNo(str(f.weights));
+    if (!category || !str(f.maker) || weights === undefined) defer('Check category, maker and weight availability from the official reference; missing facts are not guessed.');
+    else propose('models.json',id,null,{id,name,provider:str(f.maker),category,open_weights:weights,source},'Review exact model identity');
   } else if (kind === 'new-provider') {
     if (!model) problem('Unknown model id.');
-    else {
-      const details = Object.fromEntries(pairs(str(f.details)).map((p) => [p.key, p.value]));
-      if (str(f.kind).startsWith('API') || str(f.kind) === 'Hosted service') {
-        out.warnings.push('The catalogue supports one primary API per model. This proposal replaces that slot; a maintainer must choose whether to do so.');
-        if (!details.provider) problem('API details need provider: name.');
-        const m = structuredClone(model); m.api = { url: source, provider: details.provider };
-        const pricing = Object.entries(details).filter(([k]) => k !== 'provider').map(([k, v]) => `${k}: ${v}`).join('\n');
-        const changed = update(m, pricing);
-        if ((model.category ?? 'llm') !== 'llm' && changed.api) changed.api.unit = ({image:'image', video:'video-second',tts:'1M-chars',stt:'audio-minute'} as const)[model.category as Exclude<Category, 'llm'>];
-        propose('models.json', model.id, model, changed, 'Propose a primary API; do not discard a current option without review');
-      } else {
-        const gb = parseSize(details.size ?? '');
-        if (!gb || !details.quant || !details.command || Object.keys(details).some((k) => !['command','quant','size'].includes(k))) problem('Local details need only command, quant and positive size.');
-        const selected = typeof f.platforms === 'object' && !Array.isArray(f.platforms) ? f.platforms : {};
-        const platforms = Object.entries(selected).filter(([, v]) => v).map(([k]) => k);
-        let platform: Variant['platform'];
-        if (platforms.length === 1 && platforms[0] === 'Apple Silicon') platform = 'mac';
-        else if (platforms.length === 1 && platforms[0] === 'NVIDIA') platform = 'nvidia';
-        else if (platforms.length === 3 && ['Apple Silicon','NVIDIA','CPU only'].every((p) => platforms.includes(p))) platform = 'any';
-        else problem('The current schema can represent Mac, NVIDIA, or all Mac/NVIDIA/CPU. Other platform combinations need a schema review.');
-        if (gb && platform && details.quant && details.command) {
-          const m = structuredClone(model); m.local ??= { variants: [] };
-          if (!m.local.variants.some((v) => v.cmd === details.command)) m.local.variants.push({ quant: details.quant, gb, cmd: details.command, platform, source });
-          propose('models.json', m.id, model, m, 'Review runtime, complete loaded memory and each claimed platform; command has NOT been executed');
-        }
+    else if (str(f.kind) !== 'Local runtime or download') {
+      defer('Review this provider reference. Preserve existing run options; do not replace the primary API automatically.');
+    } else {
+      const gb = parseSize(str(f.size));
+      const selected = typeof f.platforms === 'object' && !Array.isArray(f.platforms) ? f.platforms : {};
+      const platforms = Object.entries(selected).filter(([,v])=>v).map(([k])=>k);
+      let platform: Variant['platform'];
+      if (platforms.length === 1 && platforms[0] === 'Apple Silicon') platform = 'mac';
+      if (platforms.length === 1 && platforms[0] === 'NVIDIA') platform = 'nvidia';
+      if (platforms.length === 3 && ['Apple Silicon','NVIDIA','CPU only'].every(p=>platforms.includes(p))) platform='any';
+      if (!gb || !platform || !str(f.quant) || !str(f.command)) defer('Verify the documented command, full memory requirement and supported platforms from this reference.');
+      else {
+        const m = structuredClone(model); m.local ??= {variants:[]};
+        if (!m.local.variants.some(v=>v.cmd === str(f.command))) m.local.variants.push({quant:str(f.quant),gb,cmd:str(f.command),platform,source});
+        propose('models.json',m.id,model,m,'Review documented runtime and memory; command is not executed');
       }
     }
   } else if (kind === 'new-benchmark') {
-    const id = slug(str(f.name));
-    if (!id || repo.benchmarks.some((b) => b.id === id)) problem('Benchmark id is empty or already exists.');
-    const scale = str(f.scale);
-    const b: Benchmark = { id, name: str(f.name), category: cats[CATEGORIES.indexOf(str(f.category))], kind: scale.startsWith('Error') ? 'err' : scale.startsWith('Elo') ? 'elo' : 'acc', url: source };
-    propose('benchmarks.json', id, null, b, 'Review benchmark protocol and raw scale before importing results'); sourceReview();
+    const category = cats[CATEGORIES.indexOf(str(f.category))], scale = str(f.scale);
+    if (str(f.proposal) !== 'A new benchmark' || !category || !scale || scale === 'Other') defer('Review the test definition and result licence. A results source is not itself a new benchmark.');
+    else {
+      const id = slug(str(f.name));
+      if (!id || repo.benchmarks.some(b=>b.id === id)) problem('Benchmark id is empty or already exists.');
+      const b: Benchmark = {id,name:str(f.name),category,kind:scale.startsWith('Error')?'err':scale.startsWith('Elo')?'elo':'acc',url:source};
+      propose('benchmarks.json',id,null,b,'Review benchmark protocol and scale'); sourceReview();
+    }
   }
   // Detect duplicate/conflicting proposed result keys within the same issue.
   const keys = new Set<string>();
   for (const c of out.changes) { const key = `${c.file}|${c.id}`; if (keys.has(key)) problem(`Duplicate proposed change: ${c.id}`); keys.add(key); }
   if (out.problems.length) out.changes = []; // No partial output from malformed forms.
-  out.status = out.problems.length ? 'invalid' : out.changes.length || out.sourceProposals.length ? 'needs-review' : 'no-change';
+  out.status = out.problems.length ? 'invalid' : manual || out.changes.length || out.sourceProposals.length ? 'needs-review' : 'no-change';
   return out;
 }
 
 export function reportText(r: Review): string {
   const safe = (s: string) => s.replace(/[<>]/g, '').replace(/@/g, '＠');
   return [`# Contribution review: ${r.status}`, '', 'Local draft only. No repository files or GitHub state were changed.', '',
+    ...Object.entries(r.submission ?? {}).map(([k,v]) => `- ${safe(k)}: ${safe(typeof v === 'string' ? v : JSON.stringify(v))}`), '',
     ...r.problems.map((p) => `- Fix: ${safe(p.message)}`), ...r.warnings.map((w) => `- Review: ${safe(w)}`), '',
     ...r.changes.map((c) => `- Proposed ${c.file}: ${safe(c.id)} — ${safe(c.reason)}`), '',
     ...r.evidence.map((e) => `- Source: ${safe(e.source)}; ledger: ${e.ledger ?? 'unreviewed'}; ${e.sha256 ? `SHA-256 ${e.sha256}` : 'not fetched'}`), '',

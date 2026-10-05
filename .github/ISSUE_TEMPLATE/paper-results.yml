@@ -1,75 +1,50 @@
-name: "Results from a paper"
-description: "Benchmark results published in an openly licensed paper, model card or repository."
+name: "Add a test result"
+description: "This model scored this value on this benchmark, according to this source."
+title: "Add a test result"
 labels: ["data", "paper-results"]
 body:
   - type: markdown
     attributes:
       value: |
-        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
-
-        **Format:** one result per line, `model-id | benchmark-id | score | optional note`
-
-        ```
-        qwen3-8b | mmlu-pro | 48.3% | 5-shot CoT
-        llama-3-1-8b-instruct | gpqa-diamond | 30.4%
-        ```
-
-        - The model id is the end of its whatmodel.sh address, e.g. `qwen3-8b` for whatmodel.sh/model/qwen3-8b ([all ids](https://github.com/jakemanger/whatmodel/blob/main/data/models.json)). Not listed yet? Use the **Missing model** form first.
-        - Benchmark ids are in [data/benchmarks.json](https://github.com/jakemanger/whatmodel/blob/main/data/benchmarks.json). Not listed? Use **Propose a benchmark**.
-        - Write scores as printed: `48.3%` or `0.483`, Elo ratings as the number, 1–5 ratings as printed.
+        Fill in the fields below; no special text format is needed. A maintainer reviews the reference before updating the site. For several changes, you can also [edit the data and open a pull request](https://github.com/jakemanger/whatmodel/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: model
+    attributes:
+      label: "Model"
+      description: "The model id from its page, for example qwen3-8b. Prefilled when opened from the site."
+    validations:
+      required: true
+  - type: input
+    id: benchmark
+    attributes:
+      label: "Benchmark"
+      description: "Use the benchmark id; the model page can prefill it."
+    validations:
+      required: true
+  - type: input
+    id: score
+    attributes:
+      label: "Score"
+      description: "Include % for percentages, e.g. 71.2%. Otherwise use the source's numeric scale."
+    validations:
+      required: true
   - type: input
     id: source
     attributes:
-      label: "Source link"
-      description: "An arXiv paper, a Hugging Face model card or dataset file, or a GitHub file. Its licence must be CC BY, CC BY-SA, CC0, MIT or Apache-2.0. arXiv's default licence can't be used."
-      placeholder: "https://arxiv.org/abs/2501.12345v2"
-    validations:
-      required: true
-  - type: dropdown
-    id: licence
-    attributes:
-      label: "Licence of the source"
-      description: "Optional: name the licence covering the results, not only the code."
-      options:
-        - "CC BY"
-        - "CC BY-SA"
-        - "CC0"
-        - "Apache-2.0"
-        - "MIT"
-        - "Other or not sure"
-  - type: input
-    id: location
-    attributes:
-      label: "Table or figure"
-      placeholder: "Table 3"
-    validations:
-      required: true
-  - type: textarea
-    id: results
-    attributes:
-      label: "Results"
-      description: "One per line: model-id | benchmark-id | score | optional note"
-      placeholder: "qwen3-8b | mmlu-pro | 48.3% | 5-shot CoT"
+      label: "Reference URL"
+      description: "The paper, model card or provider page that supports the proposed value."
     validations:
       required: true
   - type: dropdown
     id: by
     attributes:
-      label: "Who ran the evaluations?"
+      label: "Who ran the evaluation? (optional)"
       options:
         - "The source's authors, on models they didn't make"
         - "The model's own makers"
-    validations:
-      required: true
+        - "Not sure"
   - type: textarea
-    id: setup
+    id: notes
     attributes:
-      label: "Evaluation setup"
-      description: "Optional: shots, prompting, reasoning setting or judge model. It's added to each result's note."
-  - type: checkboxes
-    id: confirm
-    attributes:
-      label: "Original results"
-      options:
-        - label: "These are the source's own measurements, not numbers copied from another paper or leaderboard"
-          required: true
+      label: "Notes (optional)"
+      description: "Table/page, evaluation settings, or anything needed to interpret the reference."

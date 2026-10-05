@@ -5,8 +5,12 @@ speed. You don't need to write code for any of them.
 
 ## Report something
 
-Open an issue with the **Wrong number** or **Missing model** form. Include a source link for every
-number.
+On a model page, choose **Update model information** and the fact you want to change. The
+form pre-fills the model, field and current value; add the correct value and a reference URL.
+For a measurement, use **Add a test result** (model, benchmark, score, reference) or **[correct]**
+beside an existing result. Other details are optional. A missing model needs just its name and
+an official link. You can also use **Edit data on GitHub** to propose a file edit through a fork
+and pull request. Every proposed value is reviewed against its source before it is published.
 
 ## Edit the website's information pages
 
