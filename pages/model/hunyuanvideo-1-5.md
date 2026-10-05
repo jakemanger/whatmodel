@@ -34,13 +34,19 @@ api (fal.ai) · $0.075/sec · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-vide
 <sub>[price source](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video): USD per second of generated video, 480p (the only resolution offered on this endpoint). Product: fal HunyuanVideo 1.5 text-to-video endpoint. API model: fal-ai/hunyuan-video-v1.5/text-to-video. Price basis: the page's endpoint billing record states billing\_unit=seconds, price=0.075, and the sibling image-to-video page states "$0.075 per second"; the page's prose says "0.075 cents/s", which is taken as a typo for $0.075/s on the strength of the billing record. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
 <pre>
-version                needs  score
-bf16 · nvidia only  ~20.42GB   51.3
+version                                      needs  score
+bf16 · nvidia only                        ~20.42GB   51.3
+fp16 720p T2V (sd.cpp)                     ~43.9GB   51.3
+fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp)   ~33.8GB   51.3
 </pre>
 
 ```sh
 # bf16 · nvidia only
 torchrun --nproc_per_node=1 generate.py --prompt "A cat walks on the grass, realistic style." --resolution 480p --rewrite false --model_path ./ckpts
+# fp16 720p T2V (sd.cpp)
+sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/qwen_2.5_vl_7b.safetensors --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling
+# fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp)
+sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

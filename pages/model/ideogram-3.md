@@ -6,7 +6,7 @@
 
 Ideogram · released 2025-03 · proprietary
 
-**score 52.7** ±1.9 · #66 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.7** ±1.9 · #67 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 55.8** ±1.6 · #57 of 113 · from 4 benchmark results across 4 sources
+**score 55.8** ±1.6 · #58 of 114 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

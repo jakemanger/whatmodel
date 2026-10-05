@@ -6,7 +6,7 @@
 
 Alibaba · qwen-research
 
-**score 70.2** ±1.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 70.2** ±1.7 · #14 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -28,6 +28,19 @@ prior                   pull toward the middle            49.9                 1
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+int8 convrot + Qwen3-VL 8B q4_k_m (sd.c…  ~16.1GB   70.2
+gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)   ~12.4GB   70.2
+</pre>
+
+```sh
+# int8 convrot + Qwen3-VL 8B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/qwen_image_2.1_int8_convrot.safetensors --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png
+# gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/qwen_image_2.1-Q4_K.gguf --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p "a lovely cat holding a sign says 'qwen2.1.cpp'" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen-image-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

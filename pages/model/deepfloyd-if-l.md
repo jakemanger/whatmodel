@@ -6,7 +6,7 @@
 
 DeepFloyd · released 2023-04 · 0.9B params · deepfloyd-if-license
 
-**score 33.8** ±3.4 · #100 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.8** ±3.4 · #101 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

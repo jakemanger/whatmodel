@@ -6,7 +6,7 @@
 
 Stability AI
 
-**score 39.9** ±2.2 · #88 of 113 · from 3 benchmark results across 3 sources
+**score 39.9** ±2.2 · #89 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -33,6 +33,19 @@ api (fal.ai) · $0.035/image · [fal.ai](https://fal.ai/models/fal-ai/stable-dif
 
 <sub>[price source](https://fal.ai/models/fal-ai/stable-diffusion-v3-medium): USD per generated image: fal bills fal-ai/stable-diffusion-v3-medium at $0.035 per image (billing unit images; fal-hosted serverless deployment of Stable Diffusion 3 Medium). Product: fal.ai serverless text-to-image. API model: fal-ai/stable-diffusion-v3-medium (Stable Diffusion 3 Medium; the page's image-to-image sibling hides its pricing and is not used). Settings: text-to-image, default size, one image. Price basis: published per-image list rate. Stability AI's own API no longer serves this checkpoint: its API deprecation notice of April 17, 2025 transitioned sd3-medium to sd3.5-medium. Currency: USD. Not a Stability AI direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                           needs  score
+fp16 incl. CLIPs + T5 (sd.cpp)  ~19.4GB   39.9
+q8_0 (sd.cpp --type)            ~10.5GB   39.9
+</pre>
+
+```sh
+# fp16 incl. CLIPs + T5 (sd.cpp)
+sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
+# q8_0 (sd.cpp --type)
+sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable Diffusion CPP"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sd-3-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

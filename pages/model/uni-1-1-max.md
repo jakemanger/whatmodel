@@ -6,7 +6,7 @@
 
 Luma AI · closed weights
 
-**score 66.6** ±1.7 · #15 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.6** ±1.7 · #16 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

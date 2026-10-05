@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-11 · sai-nc-community
 
-**score 35.0** ±2.1 · #94 of 113 · from 3 benchmark results across 3 sources
+**score 35.0** ±2.1 · #95 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -30,13 +30,19 @@ prior                   pull toward the middle                      49.9        
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~8.9GB   35.0
+version                needs  score
+fp16 · nvidia only    ~8.9GB   35.0
+fp16 (sd.cpp)         ~8.8GB   35.0
+q8_0 (sd.cpp --type)  ~4.9GB   35.0
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('stabilityai/sdxl-turbo', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', num_inference_steps=1, guidance_scale=0.0).images[0].save('out.png')"
+# fp16 (sd.cpp)
+sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v
+# q8_0 (sd.cpp --type)
+sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors --type q8_0 -H 512 -W 512 -p "a lovely cat" --cfg-scale 1 --steps 1 -v
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

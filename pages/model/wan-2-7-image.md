@@ -6,7 +6,7 @@
 
 Alibaba · closed weights
 
-**score 60.1** ±1.5 · #36 of 113 · from 3 benchmark results across 2 sources
+**score 60.1** ±1.5 · #37 of 114 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

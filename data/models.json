@@ -2617,6 +2617,15 @@
           "source": "https://docs.sglang.io/cookbook/diffusion/MiniMax/MiniMax-H3",
           "cmd": "pip install comfy-kitchen && sglang generate --model-path MiniMaxAI/MiniMax-H3 --model-variant fl2va --quantization kitchen_int8 --attention-backend fa --performance-mode memory --layerwise-offload-components dit,text_encoder --dit-offload-prefetch-size 1 --dit-layerwise-resident-layers 0 --enable-torch-compile false --prompt \"A cat walking on a sunny beach, gentle waves.\" --save-output",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q4_k_m fl2va + Qwen3-VL 32B q4_k_m (sd.cpp)",
+          "gb": 51.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/minimax_h3_fl2va-Q4_K_M.gguf --vae models/minimax_h3_video_vae_fp16.safetensors --audio-vae models/minimax_h3_audio_vae_fp32.safetensors --llm models/qwen3vl_32b_minimax_h3-Q4_K_M.gguf -p \"A cute American Shorthair silver tabby kitten surfs on a tropical ocean wave, riding a white surfboard. Cinematic tracking shot, realistic water, bright sunlight, smooth motion. Add upbeat tropical surf-rock background music.\" --cfg-scale 1.0 -v -W 864 -H 480 --diffusion-fa --offload-to-cpu --rng cpu --fps 24 --video-frames 56",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/minimax_h3.md",
+          "gb_source": "https://huggingface.co/leejet/MiniMax-H3-GGUF/tree/d9c4c6312b4728a68a15a35626d84775a6523783",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: minimax_h3_fl2va-Q4_K_M.gguf 18.78 GB (leejet/MiniMax-H3-GGUF@d9c4c63); qwen3vl_32b_minimax_h3-Q4_K_M.gguf 18.22 GB (leejet/MiniMax-H3-GGUF@d9c4c63); minimax_h3_video_vae_fp16.safetensors 5.21 GB (Comfy-Org/MiniMax-H3@e5eb578); minimax_h3_audio_vae_fp32.safetensors 0.61 GB (Comfy-Org/MiniMax-H3@e5eb578). gb = 1.2 × 42.81 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's text-to-audio-video example with POSIX paths and a shortened prompt. Full fl2va transformer (not the pruned variant); joint video and stereo audio."
         }
       ]
     },
@@ -2678,6 +2687,24 @@
           "source": "https://rapidmlx.com/docs/models/families/wan.html",
           "cmd": "rapid-mlx serve wan2.2-t2v-a14b-bf16",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp)",
+          "gb": 45,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/Wan2.2-T2V-A14B-LowNoise-Q8_0.gguf --high-noise-diffusion-model models/Wan2.2-T2V-A14B-HighNoise-Q8_0.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/tree/73eafba53a1a8f29254e4c77f92e74ea27d7cd6f",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Wan2.2-T2V-A14B-LowNoise-Q8_0.gguf 15.40 GB (QuantStack/Wan2.2-T2V-A14B-GGUF@73eafba); Wan2.2-T2V-A14B-HighNoise-Q8_0.gguf 15.40 GB (QuantStack/Wan2.2-T2V-A14B-GGUF@73eafba); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 37.11 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. Both the low-noise and high-noise experts are loaded."
+        },
+        {
+          "quant": "gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.cpp)",
+          "gb": 31.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/Wan2.2-T2V-A14B-LowNoise-Q4_K_M.gguf --high-noise-diffusion-model models/Wan2.2-T2V-A14B-HighNoise-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/tree/73eafba53a1a8f29254e4c77f92e74ea27d7cd6f",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Wan2.2-T2V-A14B-LowNoise-Q4_K_M.gguf 9.65 GB (QuantStack/Wan2.2-T2V-A14B-GGUF@73eafba); Wan2.2-T2V-A14B-HighNoise-Q4_K_M.gguf 9.65 GB (QuantStack/Wan2.2-T2V-A14B-GGUF@73eafba); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 25.60 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the Q4_K_M expert files from the QuantStack/Wan2.2-T2V-A14B-GGUF repo the doc links, instead of Q8_0. Both the low-noise and high-noise experts are loaded."
         }
       ]
     },
@@ -2709,6 +2736,24 @@
           "source": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
           "cmd": "torchrun --nproc_per_node=1 generate.py --prompt \"A cat walks on the grass, realistic style.\" --resolution 480p --rewrite false --model_path ./ckpts",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 720p T2V (sd.cpp)",
+          "gb": 43.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/qwen_2.5_vl_7b.safetensors --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/hunyuan_video.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/tree/1405a2b738c29b890cf6d03fc038d8d3e92eeed7",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: hunyuanvideo1.5_720p_t2v_fp16.safetensors 16.65 GB (Comfy-Org/HunyuanVideo_1.5_repackaged@1405a2b); hunyuanvideo15_vae_fp16.safetensors 2.52 GB (Comfy-Org/HunyuanVideo_1.5_repackaged@1405a2b); qwen_2.5_vl_7b.safetensors 16.58 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17); byt5_small_glyphxl_fp16.safetensors 0.44 GB (Comfy-Org/HunyuanVideo_1.5_repackaged@1405a2b). gb = 1.2 × 36.20 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. Uses the release's 720p text-to-video transformer, as in the doc example."
+        },
+        {
+          "quant": "fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp)",
+          "gb": 33.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/hunyuanvideo1.5_720p_t2v_fp16.safetensors --vae models/hunyuanvideo15_vae_fp16.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --t5xxl models/byt5_small_glyphxl_fp16.safetensors -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -W 1280 -H 720 --offload-to-cpu --diffusion-fa --video-frames 33 --vae-tiling",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/hunyuan_video.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/tree/1405a2b738c29b890cf6d03fc038d8d3e92eeed7",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: hunyuanvideo1.5_720p_t2v_fp16.safetensors 16.65 GB (Comfy-Org/HunyuanVideo_1.5_repackaged@1405a2b); hunyuanvideo15_vae_fp16.safetensors 2.52 GB (Comfy-Org/HunyuanVideo_1.5_repackaged@1405a2b); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); byt5_small_glyphxl_fp16.safetensors 0.44 GB (Comfy-Org/HunyuanVideo_1.5_repackaged@1405a2b). gb = 1.2 × 27.71 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the Q8_0 GGUF of Qwen2.5-VL 7B from the mradermacher repo the doc links, instead of the bf16 safetensors. Uses the release's 720p text-to-video transformer."
         }
       ]
     },
@@ -6641,6 +6686,15 @@
           "platform": "mac",
           "source": "https://github.com/VincentGourbin/flux-2-swift-mlx",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp)",
+          "gb": 41.3,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/flux2-dev-Q4_K_S.gguf --vae models/flux2_ae.safetensors --llm models/Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf -p \"a lovely cat\" --cfg-scale 1.0 --sampling-method euler -v --diffusion-fa --offload-to-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+          "gb_source": "https://huggingface.co/city96/FLUX.2-dev-gguf/tree/ade5d688ddab0d9cf4a5b01bf4321e01c115020d",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux2-dev-Q4_K_S.gguf 19.30 GB (city96/FLUX.2-dev-gguf@ade5d68); Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf 14.33 GB (unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF@b750ec2); ae.safetensors 0.34 GB (black-forest-labs/FLUX.2-dev@26afe3a). gb = 1.2 × 33.97 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's FLUX.2-dev example with POSIX paths and without its -r reference image (text-to-image, as the same doc's klein examples show the command with and without -r). flux2_ae.safetensors is ae.safetensors from the gated black-forest-labs/FLUX.2-dev repo the doc links."
         }
       ]
     },
@@ -6687,6 +6741,15 @@
           "platform": "mac",
           "source": "https://github.com/VincentGourbin/flux-2-swift-mlx",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)",
+          "gb": 13.7,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/flux-2-klein-9b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-8B-Q4_K_M.gguf -p \"a lovely cat\" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+          "gb_source": "https://huggingface.co/leejet/FLUX.2-klein-9B-GGUF/tree/cc588497a95ffc2937ebbd6b9b3916a11ada6e5b",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux-2-klein-9b-Q4_0.gguf 5.62 GB (leejet/FLUX.2-klein-9B-GGUF@cc58849); Qwen3-8B-Q4_K_M.gguf 5.03 GB (unsloth/Qwen3-8B-GGUF@a6adef1); ae.safetensors 0.34 GB (black-forest-labs/FLUX.2-dev@26afe3a). gb = 1.2 × 10.98 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the GGUF files from the leejet/FLUX.2-klein-9B-GGUF and unsloth/Qwen3-8B-GGUF repos it links. FLUX.2 [klein] 9B is gated on Hugging Face (accept the licence)."
         }
       ]
     }
@@ -6733,6 +6796,24 @@
           "platform": "mac",
           "source": "https://github.com/mflux-community/mflux/issues/407",
           "gb_estimated": true
+        },
+        {
+          "quant": "bf16 + Qwen3 4B bf16 (sd.cpp)",
+          "gb": 19.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/flux-2-klein-4b.safetensors --vae models/flux2_ae.safetensors --llm models/qwen_3_4b.safetensors -p \"a lovely cat\" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+          "gb_source": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/tree/e7b7dc27f91deacad38e78976d1f2b499d76a294",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux-2-klein-4b.safetensors 7.75 GB (black-forest-labs/FLUX.2-klein-4B@e7b7dc2); qwen_3_4b.safetensors 8.04 GB (Comfy-Org/flux2-klein-4B@5f52667); ae.safetensors 0.34 GB (black-forest-labs/FLUX.2-dev@26afe3a). gb = 1.2 × 16.13 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths."
+        },
+        {
+          "quant": "gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)",
+          "gb": 6.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/flux-2-klein-4b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-4B-Q4_K_M.gguf -p \"a lovely cat\" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+          "gb_source": "https://huggingface.co/leejet/FLUX.2-klein-4B-GGUF/tree/3b1f5a9dc3abb32238b053aeb3d823c30afdacbd",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux-2-klein-4b-Q4_0.gguf 2.46 GB (leejet/FLUX.2-klein-4B-GGUF@3b1f5a9); Qwen3-4B-Q4_K_M.gguf 2.50 GB (unsloth/Qwen3-4B-GGUF@22c9fc8); ae.safetensors 0.34 GB (black-forest-labs/FLUX.2-dev@26afe3a). gb = 1.2 × 5.29 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the GGUF files from the leejet/FLUX.2-klein-4B-GGUF and unsloth/Qwen3-4B-GGUF repos it links."
         }
       ]
     }
@@ -6871,6 +6952,24 @@
           "platform": "nvidia",
           "source": "https://github.com/modelscope/DiffSynth-Studio/blob/main/docs/en/Model_Details/Qwen-Image.md",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)",
+          "gb": 36.6,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/Qwen_Image-Q8_0.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign that says \"Qwen-Image\"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image.md",
+          "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-GGUF/tree/257f261fa92593bed760aa6fa3f7921a49fea00f",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Qwen_Image-Q8_0.gguf 21.76 GB (QuantStack/Qwen-Image-GGUF@257f261); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 30.11 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths, a short English prompt and the actual file names in the QuantStack and mradermacher repos it links."
+        },
+        {
+          "quant": "gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)",
+          "gb": 22.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/Qwen_Image-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q4_K_M.gguf -p 'a cat holding a sign that says \"Qwen-Image\"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image.md",
+          "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-GGUF/tree/257f261fa92593bed760aa6fa3f7921a49fea00f",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Qwen_Image-Q4_K_M.gguf 13.07 GB (QuantStack/Qwen-Image-GGUF@257f261); Qwen2.5-VL-7B-Instruct.Q4_K_M.gguf 4.68 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 18.00 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths, a short English prompt and the actual file names in the QuantStack and mradermacher repos it links (Q4_K_M files instead of Q8_0)."
         }
       ]
     },
@@ -7013,6 +7112,24 @@
           "platform": "nvidia",
           "source": "https://blogs.nvidia.com/blog/rtx-ai-garage-gtc-paris-tensorrt-rtx-nim-microservices",
           "gb_estimated": true
+        },
+        {
+          "quant": "bf16 + T5 fp16 (sd.cpp)",
+          "gb": 34,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says \"Stable diffusion 3.5 Large\"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd3.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/ceddf0a7fdf2064ea28e2213e3b84e4afa170a0f",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd3.5_large.safetensors 16.46 GB (stabilityai/stable-diffusion-3.5-large@ceddf0a); clip_g.safetensors 1.39 GB (Comfy-Org/stable-diffusion-3.5-fp8@934251d); clip_l.safetensors 0.25 GB (Comfy-Org/stable-diffusion-3.5-fp8@934251d); t5xxl_fp16.safetensors 9.79 GB (Comfy-Org/stable-diffusion-3.5-fp8@934251d). gb = 1.2 × 27.88 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. stabilityai/stable-diffusion-3.5-large is gated (accept the licence)."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 18.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says \"Stable diffusion 3.5 Large\"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd3.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/ceddf0a7fdf2064ea28e2213e3b84e4afa170a0f",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd3.5_large.safetensors 16.46 GB converted at load (q8_0) (stabilityai/stable-diffusion-3.5-large@ceddf0a); clip_g.safetensors 1.39 GB converted at load (q8_0) (Comfy-Org/stable-diffusion-3.5-fp8@934251d); clip_l.safetensors 0.25 GB converted at load (q8_0) (Comfy-Org/stable-diffusion-3.5-fp8@934251d); t5xxl_fp16.safetensors 9.79 GB converted at load (q8_0) (Comfy-Org/stable-diffusion-3.5-fp8@934251d). gb = 1.2 × 14.78 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths plus --type q8_0 (converted while loading, per the quantization doc). q8_0 sizes estimated as 0.53 × the 16-bit files. Gated on Hugging Face."
         }
       ]
     },
@@ -7089,6 +7206,15 @@
           "platform": "mac",
           "source": "https://huggingface.co/mflux-community/ideogram-4-mflux-q4",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)",
+          "gb": 29.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/ideogram4_fp8.safetensors --uncond-diffusion-model models/ideogram4_uncond_fp8.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf --vae models/flux2_ae.safetensors -p \"$(cat caption.json)\" --diffusion-fa -v --offload-to-cpu -H 1024 -W 1024",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ideogram4.md",
+          "gb_source": "https://huggingface.co/ideogram-ai/ideogram-4-fp8/tree/ee79a7237b519f1402ceacf952f30c8a31ec5073",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: diffusion_pytorch_model.safetensors 9.29 GB (ideogram-ai/ideogram-4-fp8@ee79a72); diffusion_pytorch_model.safetensors 9.29 GB (ideogram-ai/ideogram-4-fp8@ee79a72); Qwen3-VL-8B-Instruct-Q4_K_M.gguf 5.03 GB (unsloth/Qwen3-VL-8B-Instruct-GGUF@b93a7ee); ae.safetensors 0.34 GB (black-forest-labs/FLUX.2-dev@26afe3a). gb = 1.2 × 23.94 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths, using the original FP8 transformer and unconditional transformer (saved as ideogram4_fp8.safetensors and ideogram4_uncond_fp8.safetensors, as the doc names them) and reading its JSON caption prompt from caption.json. The doc says FP8 tensors stay at one byte per element in RAM. ideogram-ai/ideogram-4-fp8 is gated (accept the licence)."
         }
       ]
     },
@@ -8454,6 +8580,15 @@
           "source": "https://rapidmlx.com/docs/models/families/ltx.html",
           "cmd": "rapid-mlx serve ltx-2.5-mlx-q8",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q8_0 22B dev + Gemma 4 12B q8_0 (sd.cpp)",
+          "gb": 47.7,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M convert -m models/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --type q8_0 -o models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf && sd-cli -M vid_gen --diffusion-model models/ltx-2.5-22b-dev-transformer-Q8_0.gguf --vae models/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae models/ltx-2.5-audio-vae-bf16.safetensors --llm models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf -p \"A wide aerial shot of a red vintage convertible driving along a coastal cliff road at sunset, waves crashing below\" --cfg-scale 3.0 --sampling-method euler -v -n \"worst quality, low quality, blurry, distorted, artifacts\" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 121 --fps 24 -o t2v.webm",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ltx2.md",
+          "gb_source": "https://huggingface.co/vantagewithai/LTX-2.5-GGUF/tree/9a5c1bed3ff27b5e5d055fc04e3ae884381c2343",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: ltx-2.5-22b-dev-transformer-Q8_0.gguf 23.60 GB (vantagewithai/LTX-2.5-GGUF@9a5c1be); gemma4-12b-with-proj-ltx-2.5-bf16.safetensors 26.26 GB converted at load (q8_0) (Lightricks/LTX-2.5@2356ce7); ltx-2.5-video-vae-conv-bf16.safetensors 1.45 GB (Lightricks/LTX-2.5@2356ce7); ltx-2.5-audio-vae-bf16.safetensors 0.36 GB (Lightricks/LTX-2.5@2356ce7). gb = 1.2 × 39.34 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's one-time text-encoder conversion chained with its LTX-2.5 dev T2V example, with POSIX paths. The text-encoder q8_0 size is estimated at 0.53 × its bf16 file (q8_0 stores 8.5 bits per weight). Lightricks/LTX-2.5 requires accepting its licence on Hugging Face."
         }
       ]
     },
@@ -8501,6 +8636,24 @@
           "source": "https://rapidmlx.com/docs/models/families/wan.html",
           "cmd": "rapid-mlx serve wan2.2-ti2v-5b-bf16",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 + umt5 q8_0 (sd.cpp)",
+          "gb": 21.4,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/wan2.2_ti2v_5B_fp16.safetensors --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/ee6f4a40737a995bf5818954cfce6d59443b0f04",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: wan2.2_ti2v_5B_fp16.safetensors 10.00 GB (Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan2.2_vae.safetensors 1.41 GB (Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4). gb = 1.2 × 17.45 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. Text-to-video example; add -i image.png for image-to-video."
+        },
+        {
+          "quant": "gguf-q4_k_m + umt5 q4_k_m (sd.cpp)",
+          "gb": 10.7,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/Wan2.2-TI2V-5B-Q4_K_M.gguf --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q4_K_M.gguf -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF/tree/57437632ddd08bdcbd1508c866aa22e126ed51d2",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Wan2.2-TI2V-5B-Q4_K_M.gguf 3.43 GB (QuantStack/Wan2.2-TI2V-5B-GGUF@5743763); umt5-xxl-encoder-Q4_K_M.gguf 3.66 GB (city96/umt5-xxl-encoder-gguf@b535255); wan2.2_vae.safetensors 1.41 GB (Comfy-Org/Wan_2.2_ComfyUI_Repackaged@ee6f4a4). gb = 1.2 × 8.50 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths, the Q4_K_M diffusion file from the QuantStack/Wan2.2-TI2V-5B-GGUF repo and the Q4_K_M umt5 encoder from the city96 repo (both linked by the doc) instead of the example fp16/Q8_0 files."
         }
       ]
     },
@@ -8527,6 +8680,24 @@
           "source": "https://github.com/Wan-Video/Wan2.1",
           "cmd": "python generate.py --task t2v-14B --size 1280*720 --ckpt_dir ./Wan2.1-T2V-14B --offload_model True --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage.\"",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q8_0 + umt5 q8_0 (sd.cpp)",
+          "gb": 27.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/wan2.1-t2v-14b-Q8_0.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/city96/Wan2.1-T2V-14B-gguf/tree/511cbce9f475a6ca0269be901d23b125f44f5c0d",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: wan2.1-t2v-14b-Q8_0.gguf 15.88 GB (city96/Wan2.1-T2V-14B-gguf@511cbce); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 22.18 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths."
+        },
+        {
+          "quant": "gguf-q4_k_m + umt5 q8_0 (sd.cpp)",
+          "gb": 20.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/wan2.1-t2v-14b-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/city96/Wan2.1-T2V-14B-gguf/tree/511cbce9f475a6ca0269be901d23b125f44f5c0d",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: wan2.1-t2v-14b-Q4_K_M.gguf 10.12 GB (city96/Wan2.1-T2V-14B-gguf@511cbce); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 16.42 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the Q4_K_M file from the city96/Wan2.1-T2V-14B-gguf repo the doc links, instead of Q8_0."
         }
       ]
     },
@@ -9791,6 +9962,24 @@
           "platform": "nvidia",
           "source": "https://github.com/vladmandic/sdnext/wiki/SD-XL",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 (sd.cpp)",
+          "gb": 8.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd_xl_base_1.0.safetensors --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p \"a lovely cat\" -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/462165984030d82259a11f4367a4eed129e94a7b",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd_xl_base_1.0.safetensors 6.94 GB (stabilityai/stable-diffusion-xl-base-1.0@4621659). gb = 1.2 × 6.94 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 4.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd_xl_base_1.0.safetensors --type q8_0 --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p \"a lovely cat\" -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/462165984030d82259a11f4367a4eed129e94a7b",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd_xl_base_1.0.safetensors 6.94 GB converted at load (q8_0) (stabilityai/stable-diffusion-xl-base-1.0@4621659). gb = 1.2 × 3.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example plus --type q8_0 (converted while loading, per the quantization doc). q8_0 size estimated as 0.53 × the fp16 file (8.5 bits per weight)."
         }
       ]
     }
@@ -9829,6 +10018,15 @@
           "platform": "nvidia",
           "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/ernie_image.md",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory)",
+          "gb": 17.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/ernie-image-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p \"a lovely cat\" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md",
+          "gb_source": "https://huggingface.co/unsloth/ERNIE-Image-GGUF/tree/7b6dfaae7389b463d7fb4669e33c560d36ad108c",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: ernie-image-UD-Q4_K_M.gguf 5.77 GB (unsloth/ERNIE-Image-GGUF@7b6dfaa); ministral-3-3b.safetensors 7.72 GB (Comfy-Org/ERNIE-Image@82fe29a); flux2-vae.safetensors 0.34 GB (Comfy-Org/ERNIE-Image@82fe29a). gb = 1.2 × 13.83 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. The existing NVIDIA entry with the same command counts only the diffusion model in VRAM; on CPU or unified memory the text encoder and VAE are resident too."
         }
       ]
     }
@@ -9867,6 +10065,24 @@
           "platform": "nvidia",
           "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/ernie_image.md",
           "gb_estimated": true
+        },
+        {
+          "quant": "bf16 + Ministral 3B (sd.cpp)",
+          "gb": 29.4,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/ernie-image-turbo.safetensors --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p \"a lovely cat\" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/ERNIE-Image/tree/82fe29a5cd056f8b1deebc50570f125bcd4f4bea",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: ernie-image-turbo.safetensors 16.07 GB (Comfy-Org/ERNIE-Image@82fe29a); ministral-3-3b.safetensors 7.72 GB (Comfy-Org/ERNIE-Image@82fe29a); flux2-vae.safetensors 0.34 GB (Comfy-Org/ERNIE-Image@82fe29a). gb = 1.2 × 24.12 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths."
+        },
+        {
+          "quant": "gguf-ud-q4_k_m + Ministral 3B (sd.cpp)",
+          "gb": 17.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/ernie-image-turbo-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p \"a lovely cat\" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md",
+          "gb_source": "https://huggingface.co/unsloth/ERNIE-Image-Turbo-GGUF/tree/a38270280633a5d318a9f51c18ef95eefb07c423",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: ernie-image-turbo-UD-Q4_K_M.gguf 5.78 GB (unsloth/ERNIE-Image-Turbo-GGUF@a382702); ministral-3-3b.safetensors 7.72 GB (Comfy-Org/ERNIE-Image@82fe29a); flux2-vae.safetensors 0.34 GB (Comfy-Org/ERNIE-Image@82fe29a). gb = 1.2 × 13.83 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's ERNIE-Image-Turbo example with POSIX paths and the UD-Q4_K_M GGUF from the unsloth repo it links."
         }
       ]
     }
@@ -10231,6 +10447,15 @@
           "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('stable-diffusion-v1-5/stable-diffusion-v1-5').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
           "platform": "mac",
           "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/v1-5-pruned-emaonly.safetensors --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: v1-5-pruned-emaonly.safetensors 4.27 GB (stable-diffusion-v1-5/stable-diffusion-v1-5@451f4fe). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading. Same community mirror the doc links."
         }
       ]
     }
@@ -10620,6 +10845,28 @@
       "unit": "video-second",
       "price_source": "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video",
       "price_note": "USD per video second at 720p on fal.ai. Product: fal Wan 2.2 A14B image-to-video endpoint. API model: fal-ai/wan/v2.2-a14b/image-to-video. Settings: resolution=720p. fal counts video seconds at 16 frames per second. 580p $0.06, 480p $0.04 per video second. Currency: USD. fal.ai model page, observed 2026-09-25."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp)",
+          "gb": 45,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/Wan2.2-I2V-A14B-LowNoise-Q8_0.gguf --high-noise-diffusion-model models/Wan2.2-I2V-A14B-HighNoise-Q8_0.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 -i input.png --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/tree/6c6717459277b9cd1f72579d78a0fd62a79e57dc",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Wan2.2-I2V-A14B-LowNoise-Q8_0.gguf 15.41 GB (QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174); Wan2.2-I2V-A14B-HighNoise-Q8_0.gguf 15.41 GB (QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 37.11 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. Image-to-video: put the starting image at input.png (the doc example also repeats --offload-to-cpu, dropped here). Both the low-noise and high-noise experts are loaded."
+        },
+        {
+          "quant": "gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.cpp)",
+          "gb": 31.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf --high-noise-diffusion-model models/Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 3.5 --sampling-method euler --steps 10 --high-noise-cfg-scale 3.5 --high-noise-sampling-method euler --high-noise-steps 8 -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --offload-to-cpu --video-frames 33 -i input.png --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/tree/6c6717459277b9cd1f72579d78a0fd62a79e57dc",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Wan2.2-I2V-A14B-LowNoise-Q4_K_M.gguf 9.65 GB (QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174); Wan2.2-I2V-A14B-HighNoise-Q4_K_M.gguf 9.65 GB (QuantStack/Wan2.2-I2V-A14B-GGUF@6c67174); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 25.60 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the Q4_K_M expert files from the QuantStack/Wan2.2-I2V-A14B-GGUF repo the doc links, instead of Q8_0. Image-to-video: put the starting image at input.png (the doc example also repeats --offload-to-cpu, dropped here). Both the low-noise and high-noise experts are loaded."
+        }
+      ]
     }
   },
   {
@@ -11909,7 +12156,28 @@
     "open_weights": true,
     "license": "qwen-research",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "int8 convrot + Qwen3-VL 8B q4_k_m (sd.cpp)",
+          "gb": 16.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/qwen_image_2.1_int8_convrot.safetensors --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p \"a lovely cat holding a sign says 'qwen2.1.cpp'\" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_2.1.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/cb504a4090723e43f17ad01cec0359490e2de613",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: qwen_image_2.1_int8_convrot.safetensors 7.26 GB (Comfy-Org/Qwen-Image-2.1@cb504a4); Qwen3VL-8B-Instruct-Q4_K_M.gguf 5.03 GB (Qwen/Qwen3-VL-8B-Instruct-GGUF@f982a07); qwen_image_2.1_vae_bf16.safetensors 0.68 GB (Comfy-Org/Qwen-Image-2.1@cb504a4). gb = 1.2 × 12.96 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths."
+        },
+        {
+          "quant": "gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)",
+          "gb": 12.4,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/qwen_image_2.1-Q4_K.gguf --vae models/qwen_image_2.1_vae_bf16.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf -p \"a lovely cat holding a sign says 'qwen2.1.cpp'\" --cfg-scale 6.0 --sampling-method euler -v --offload-to-cpu --fa -o qwen_image_2.1.png",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_2.1.md",
+          "gb_source": "https://huggingface.co/leejet/Qwen-Image-2.1-GGUF/tree/cc11433936a06e9765f7c0c0b1f0436cfd2b9856",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: qwen_image_2.1-Q4_K.gguf 4.20 GB (leejet/Qwen-Image-2.1-GGUF@cc11433); Qwen3VL-8B-Instruct-Q4_K_M.gguf 5.03 GB (Qwen/Qwen3-VL-8B-Instruct-GGUF@f982a07); qwen_image_2.1_vae_bf16.safetensors 0.68 GB (Comfy-Org/Qwen-Image-2.1@cb504a4). gb = 1.2 × 9.90 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the GGUF diffusion file it names (qwen_image_2.1-Q4_K.gguf, leejet/Qwen-Image-2.1-GGUF)."
+        }
+      ]
+    },
     "recovered_original": false,
     "model_repo": "https://huggingface.co/Qwen/Qwen-Image-2.1",
     "identity_note": "Comparison-only. Official repo Qwen/Qwen-Image-2.1 @790c926 (created 2026-09-14), Qwen Research License Agreement; parameter count not stated in the card, so omitted. Arena entry 'qwen-image-2.1' (alibaba, qwen-research), first listed 2026-09-22. Not Qwen-Image 2.0 Pro.",
@@ -12086,6 +12354,28 @@
       "unit": "image",
       "price_source": "https://replicate.com/black-forest-labs/flux-kontext-dev",
       "price_note": "USD per output image on Replicate's official black-forest-labs/flux-kontext-dev model (billing: $0.025 per output image, \"or 40 images for $1\"; hardware time not added). The current version is served from replicate-pruna/flux-kontext-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-kontext-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux-kontext/dev bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL direct tariff. Replicate official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q8_0 (sd.cpp)",
+          "gb": 28.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"change 'flux.cpp' to 'kontext.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/kontext.md",
+          "gb_source": "https://huggingface.co/QuantStack/FLUX.1-Kontext-dev-GGUF/tree/2d083027732f81e5548620b57ac47da22d30aa5a",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux1-kontext-dev-Q8_0.gguf 12.71 GB (QuantStack/FLUX.1-Kontext-dev-GGUF@2d08302); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-dev@3de623f); clip_l.safetensors 0.25 GB (comfyanonymous/flux_text_encoders@6af2a98); t5xxl_fp16.safetensors 9.79 GB (comfyanonymous/flux_text_encoders@6af2a98). gb = 1.2 × 23.08 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the preconverted QuantStack GGUF it links. Image editing: put the reference image at input.png. ae.safetensors is in the gated black-forest-labs/FLUX.1-dev repo the doc links."
+        },
+        {
+          "quant": "gguf-q4_k_m (sd.cpp)",
+          "gb": 21.3,
+          "gb_estimated": true,
+          "cmd": "sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q4_K_M.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"change 'flux.cpp' to 'kontext.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/kontext.md",
+          "gb_source": "https://huggingface.co/QuantStack/FLUX.1-Kontext-dev-GGUF/tree/2d083027732f81e5548620b57ac47da22d30aa5a",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux1-kontext-dev-Q4_K_M.gguf 6.93 GB (QuantStack/FLUX.1-Kontext-dev-GGUF@2d08302); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-dev@3de623f); clip_l.safetensors 0.25 GB (comfyanonymous/flux_text_encoders@6af2a98); t5xxl_fp16.safetensors 9.79 GB (comfyanonymous/flux_text_encoders@6af2a98). gb = 1.2 × 17.30 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the preconverted QuantStack GGUF it links (Q4_K_M instead of Q8_0). Image editing: put the reference image at input.png. ae.safetensors is in the gated black-forest-labs/FLUX.1-dev repo the doc links."
+        }
+      ]
     }
   },
   {
@@ -12118,6 +12408,28 @@
       "unit": "image",
       "price_source": "https://fal.ai/models/fal-ai/qwen-image-edit",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit (fal describes it as the endpoint for Qwen's Image Editing model, published 2025-08-18, separate from the -2509 and -2511 endpoints). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q8_0 + Qwen2.5-VL bf16 (sd.cpp)",
+          "gb": 46.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/Qwen_Image_Edit-Q8_0.gguf --vae models/qwen_image_vae.safetensors --llm models/qwen_2.5_vl_7b.safetensors --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p \"change 'flux.cpp' to 'edit.cpp'\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+          "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-Edit-GGUF/tree/acab6f9f09973bc8a128a1e04e809acb65784e1c",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Qwen_Image_Edit-Q8_0.gguf 21.76 GB (QuantStack/Qwen-Image-Edit-GGUF@acab6f9); qwen_2.5_vl_7b.safetensors 16.58 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 38.60 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Qwen Image Edit example with POSIX paths and input.png as the reference image (seed flag dropped)."
+        },
+        {
+          "quant": "gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)",
+          "gb": 27.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/Qwen_Image_Edit-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p \"change 'flux.cpp' to 'edit.cpp'\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+          "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-Edit-GGUF/tree/acab6f9f09973bc8a128a1e04e809acb65784e1c",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Qwen_Image_Edit-Q4_K_M.gguf 13.07 GB (QuantStack/Qwen-Image-Edit-GGUF@acab6f9); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf 0.85 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 22.27 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Qwen Image Edit example with the Q4_K_M GGUF from the QuantStack repo it links and the GGUF text encoder plus --llm_vision mmproj arrangement shown in its 2509 example; input.png is the reference image."
+        }
+      ]
     }
   },
   {
@@ -12150,6 +12462,19 @@
       "unit": "image",
       "price_source": "https://fal.ai/models/fal-ai/qwen-image-edit-2511",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2511 (fal describes it as the endpoint for Qwen's Image Editing 2511 model). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q4_k_m + Qwen2.5-VL bf16 (sd.cpp)",
+          "gb": 36.6,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/qwen-image-edit-2511-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/qwen_2.5_vl_7b.safetensors --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p \"change 'flux.cpp' to 'edit.cpp'\" --model-args qwen_image_zero_cond_t=true",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+          "gb_source": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/tree/0d33d9692b4b26212297240d87b0d4719aa4fd06",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: qwen-image-edit-2511-Q4_K_M.gguf 13.24 GB (unsloth/Qwen-Image-Edit-2511-GGUF@0d33d96); qwen_2.5_vl_7b.safetensors 16.58 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 30.08 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Qwen Image Edit 2511 example with POSIX paths and input.png as the reference image; --model-args qwen_image_zero_cond_t=true is required for 2511 per the doc."
+        }
+      ]
     }
   },
   {
@@ -13401,6 +13726,28 @@
       "unit": "image",
       "price_source": "https://fal.ai/models/fal-ai/stable-diffusion-v3-medium",
       "price_note": "USD per generated image: fal bills fal-ai/stable-diffusion-v3-medium at $0.035 per image (billing unit images; fal-hosted serverless deployment of Stable Diffusion 3 Medium). Product: fal.ai serverless text-to-image. API model: fal-ai/stable-diffusion-v3-medium (Stable Diffusion 3 Medium; the page's image-to-image sibling hides its pricing and is not used). Settings: text-to-image, default size, one image. Price basis: published per-image list rate. Stability AI's own API no longer serves this checkpoint: its API deprecation notice of April 17, 2025 transitioned sd3-medium to sd3.5-medium. Currency: USD. Not a Stability AI direct tariff. fal.ai official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16 incl. CLIPs + T5 (sd.cpp)",
+          "gb": 19.4,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says \"Stable Diffusion CPP\"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/19b7f516efea082d257947e057e6f419e26fd497",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd3_medium_incl_clips_t5xxlfp16.safetensors 15.76 GB (stabilityai/stable-diffusion-3-medium@19b7f51). gb = 1.2 × 15.76 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SD3 example with POSIX paths. Gated on Hugging Face (accept the licence)."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 10.5,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd3_medium_incl_clips_t5xxlfp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says \"Stable Diffusion CPP\"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/19b7f516efea082d257947e057e6f419e26fd497",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd3_medium_incl_clips_t5xxlfp16.safetensors 15.76 GB converted at load (q8_0) (stabilityai/stable-diffusion-3-medium@19b7f51). gb = 1.2 × 8.35 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SD3 example plus --type q8_0 (converted while loading, per the quantization doc). q8_0 size estimated as 0.53 × the fp16 file. Gated on Hugging Face."
+        }
+      ]
     }
   },
   {
@@ -13696,6 +14043,19 @@
       "unit": "video-second",
       "price_source": "https://docs.ltx.io/pricing.md",
       "price_note": "USD per second of generated video, LTX API text-to-video, LTX-2.3 pro model at 1280x720. Product: LTX API v2/text-to-video. API model: ltx-2-3-pro. Settings: resolution=1280x720, tier=pro (same tier as the ltx-2-5 row). Price basis: published cost per second of output video. ltx-2-3-fast $0.03/s at 720p; pro 1080p $0.08/s, 1440p $0.16/s, 2160p $0.32/s (image-to-video the same; audio-to-video pro 720p $0.06/s). fal's partner endpoint fal-ai/ltx-2.3/text-to-video starts at 1080p ($0.08/s) and is not used. Currency: USD. LTX API pricing documentation, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4 (sd.cpp)",
+          "gb": 34.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/ltx-2.3-22b-dev-UD-Q4_K_M.gguf --vae models/ltx-2.3-22b-dev_video_vae.safetensors --audio-vae models/ltx-2.3-22b-dev_audio_vae.safetensors --llm models/gemma-3-12b-it-qat-UD-Q4_K_XL.gguf --embeddings-connectors models/ltx-2.3-22b-dev_embeddings_connectors.safetensors -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"worst quality, low quality, blurry, distorted, artifacts\" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 33 --fps 24 -o t2v.webm",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ltx2.md",
+          "gb_source": "https://huggingface.co/unsloth/LTX-2.3-GGUF/tree/96e8ed4925ead3db9ff4d0084f165ef6a74f28d0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: ltx-2.3-22b-dev-UD-Q4_K_M.gguf 16.51 GB (unsloth/LTX-2.3-GGUF@96e8ed4); gemma-3-12b-it-qat-UD-Q4_K_XL.gguf 7.43 GB (unsloth/gemma-3-12b-it-qat-GGUF@858acec); ltx-2.3-22b-dev_embeddings_connectors.safetensors 2.31 GB (unsloth/LTX-2.3-GGUF@96e8ed4); ltx-2.3-22b-dev_video_vae.safetensors 1.45 GB (unsloth/LTX-2.3-GGUF@96e8ed4); ltx-2.3-22b-dev_audio_vae.safetensors 0.36 GB (unsloth/LTX-2.3-GGUF@96e8ed4). gb = 1.2 × 28.07 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. The doc links unsloth/gemma-3-12b-it-GGUF; its example file name gemma-3-12b-it-qat-UD-Q4_K_XL.gguf is in unsloth/gemma-3-12b-it-qat-GGUF. LTX-2.3 22B dev checkpoint; generates video with audio."
+        }
+      ]
     }
   },
   {
@@ -13741,6 +14101,19 @@
       "unit": "image",
       "price_source": "https://fal.ai/models/fal-ai/qwen-image-edit-2509",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2509 (fal describes it as Qwen's Image Editing Plus model also known as Qwen-Image-Edit-2509). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)",
+          "gb": 26.2,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/Qwen-Image-Edit-2509-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p \"change 'flux.cpp' to 'Qwen Image Edit 2509'\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+          "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-Edit-2509-GGUF/tree/84a3006979126011422eeeefe0c9485ddf431ef5",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: Qwen-Image-Edit-2509-Q4_K_S.gguf 12.20 GB (QuantStack/Qwen-Image-Edit-2509-GGUF@84a3006); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf 0.85 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 21.41 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Qwen Image Edit 2509 example with POSIX paths, the mradermacher file names and input.png as the reference image."
+        }
+      ]
     }
   },
   {
@@ -13972,6 +14345,28 @@
       "unit": "video-second",
       "price_source": "https://replicate.com/wan-video/wan-2.1-1.3b",
       "price_note": "USD per second of 480p video, derived from Replicate's price of $0.20 per output video for wan-video/wan-2.1-1.3b, whose page says it generates 5s 480p videos (÷ 5 = $0.04). Product: Replicate model API. API model: wan-video/wan-2.1-1.3b. Settings: resolution=480p (only option), frame_num=81 (default; 16 fps playback). Price basis: published per-output-video rate ÷ the 5-second duration Replicate states; shorter frame_num settings cost the same per video. Currency: USD. Not an Alibaba direct tariff. Replicate official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16 + umt5 q8_0 (sd.cpp)",
+          "gb": 11.5,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/wan2.1_t2v_1.3B_fp16.safetensors --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: wan2.1_t2v_1.3B_fp16.safetensors 2.84 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1); umt5-xxl-encoder-Q8_0.gguf 6.04 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 9.14 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths."
+        },
+        {
+          "quant": "fp16 + umt5 q4_k_m (sd.cpp)",
+          "gb": 8.6,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --diffusion-model models/wan2.1_t2v_1.3B_fp16.safetensors --vae models/wan_2.1_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q4_K_M.gguf -p \"a lovely cat\" --cfg-scale 6.0 --sampling-method euler -v -n \"色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走\" -W 832 -H 480 --diffusion-fa --video-frames 33 --flow-shift 3.0",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: wan2.1_t2v_1.3B_fp16.safetensors 2.84 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1); umt5-xxl-encoder-Q4_K_M.gguf 3.66 GB (city96/umt5-xxl-encoder-gguf@b535255); wan_2.1_vae.safetensors 0.25 GB (Comfy-Org/Wan_2.1_ComfyUI_repackaged@123acf1). gb = 1.2 × 6.75 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths and the Q4_K_M umt5 encoder from the city96/umt5-xxl-encoder-gguf repo the doc links, instead of the example Q8_0 file."
+        }
+      ]
     }
   },
   {
@@ -13993,6 +14388,28 @@
       "unit": "image",
       "price_source": "https://fal.ai/models/fal-ai/z-image/base",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.01 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/z-image/base (fal: 'the foundation model of the Z-Image family'; the Turbo endpoints are separate). Settings: 1 MP output, one image, no LoRA. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio sells only z-image-turbo. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 + Qwen3 4B bf16 (sd.cpp)",
+          "gb": 25.3,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/z_image_bf16.safetensors --vae models/ae.safetensors --llm models/qwen_3_4b.safetensors -p \"A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt\" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md",
+          "gb_source": "https://huggingface.co/Comfy-Org/z_image/tree/94d47a468ec820d29a5dc09d4642539d76d49542",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: z_image_bf16.safetensors 12.31 GB (Comfy-Org/z_image@94d47a4); qwen_3_4b.safetensors 8.04 GB (Comfy-Org/z_image@94d47a4); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-schnell@741f7c3). gb = 1.2 × 20.69 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Z-Image-Base example with POSIX paths and a shortened prompt."
+        },
+        {
+          "quant": "gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)",
+          "gb": 10,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/z-image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p \"A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt\" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md",
+          "gb_source": "https://huggingface.co/unsloth/Z-Image-GGUF/tree/c9913e69743c5d9dfa7fdac58a0cc5709a17aa08",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: z-image-Q4_K_M.gguf 5.07 GB (unsloth/Z-Image-GGUF@c9913e6); Qwen3-4B-Instruct-2507-Q4_K_M.gguf 2.50 GB (unsloth/Qwen3-4B-Instruct-2507-GGUF@a06e946); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-schnell@741f7c3). gb = 1.2 × 7.90 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Z-Image-Base example with POSIX paths, a shortened prompt and the GGUF files from the unsloth repos it links (as its Z-Image-Turbo example does)."
+        }
+      ]
     }
   },
   {
@@ -14014,6 +14431,19 @@
       "unit": "image",
       "price_source": "https://fal.ai/models/fal-ai/longcat-image",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.13 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/longcat-image (LongCat Image, 6B). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)",
+          "gb": 15,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/LongCat-Image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p \"a lovely cat holding a sign says 'longcat.cpp'\" --cfg-scale 5.0 --sampling-method euler --flow-shift 3 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/longcat_image.md",
+          "gb_source": "https://huggingface.co/vantagewithai/LongCat-Image-GGUF/tree/22f38d64150ed3a99454e5e3a3bbfcf639969b05",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: LongCat-Image-Q4_K_M.gguf 3.66 GB (vantagewithai/LongCat-Image-GGUF@22f38d6); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-dev@3de623f). gb = 1.2 × 12.10 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths. (mradermacher file name for the Qwen2.5-VL Q8_0 GGUF)."
+        }
+      ]
     }
   },
   {
@@ -19312,6 +19742,15 @@
           "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-1').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
           "platform": "mac",
           "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd-v1-1.ckpt --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-1-original/tree/4af21d8d72447c27b5ba6fa1c86b6df07da3c4e6",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd-v1-1.ckpt 4.27 GB (CompVis/stable-diffusion-v-1-1-original@4af21d8). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading."
         }
       ]
     },
@@ -19354,6 +19793,15 @@
           "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-2').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
           "platform": "mac",
           "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd-v1-2.ckpt --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-2-original/tree/affd5d8c5fda56a6c7cdc10aa18f1e37329ebd96",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd-v1-2.ckpt 4.27 GB (CompVis/stable-diffusion-v-1-2-original@affd5d8). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading."
         }
       ]
     },
@@ -19396,6 +19844,15 @@
           "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
           "platform": "mac",
           "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd-v1-4.ckpt --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/f0bb45b49990512c454cf2c5670b0952ef2f9c71",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd-v1-4.ckpt 4.27 GB (CompVis/stable-diffusion-v-1-4-original@f0bb45b). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading."
         }
       ]
     },
@@ -19520,6 +19977,15 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0",
           "gb_estimated": true
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/dreamlike-photoreal-2.0.safetensors --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0/tree/d9e27ac81cfa72def39d74ca673219c349f0a0d5",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: dreamlike-photoreal-2.0.safetensors 2.13 GB (dreamlike-art/dreamlike-photoreal-2.0@d9e27ac). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading. Stable Diffusion 1.5 fine-tune; the README lists SD1.x checkpoints as supported."
         }
       ]
     },
@@ -19550,6 +20016,15 @@
           "platform": "nvidia",
           "source": "https://stability.ai/news-updates/sdxl-09-stable-diffusion",
           "gb_estimated": true
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 4.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd_xl_base_0.9.safetensors --type q8_0 -H 1024 -W 1024 -p \"a lovely cat\" -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9/tree/ccb3e0a2bfc06b2c27b38c54684074972c365258",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd_xl_base_0.9.safetensors 13.88 GB converted at load (q8_0) (stabilityai/stable-diffusion-xl-base-0.9@ccb3e0a). gb = 1.2 × 3.69 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint plus --type q8_0 (converted while loading, per the quantization doc). SDXL 0.9 base (gated research licence on Hugging Face); fp32 file converted to q8_0 at load. q8_0 size estimated as 0.266 × the fp32 file (8.5 of 32 bits per weight)."
         }
       ]
     },
@@ -19580,6 +20055,15 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/prompthero/openjourney",
           "gb_estimated": true
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/mdjrny-v4.safetensors --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/prompthero/openjourney/tree/f4572661b028c732b2b97c8fbdc32fa5db3afe03",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mdjrny-v4.safetensors 2.13 GB (prompthero/openjourney@f457266). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading. Stable Diffusion 1.5 fine-tune (single-file checkpoint in prompthero/openjourney; its card asks for \"mdjrny-v4 style\" in prompts)."
         }
       ]
     },
@@ -19747,6 +20231,24 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 (sd.cpp)",
+          "gb": 8.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/playground-v2.fp16.safetensors -H 1024 -W 1024 -p \"a lovely cat\" --cfg-scale 3.0 -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic/tree/737a24ebe3ae4e5421110879168be188853d86c8",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: playground-v2.fp16.safetensors 6.94 GB (playgroundai/playground-v2-1024px-aesthetic@737a24e). gb = 1.2 × 6.94 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint. The model card says it follows the SDXL architecture, points ComfyUI/A1111 users to playground-v2.fp16.safetensors, and recommends guidance 3.0."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 4.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/playground-v2.fp16.safetensors --type q8_0 -H 1024 -W 1024 -p \"a lovely cat\" --cfg-scale 3.0 -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic/tree/737a24ebe3ae4e5421110879168be188853d86c8",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: playground-v2.fp16.safetensors 6.94 GB converted at load (q8_0) (playgroundai/playground-v2-1024px-aesthetic@737a24e). gb = 1.2 × 3.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint plus --type q8_0 (converted while loading, per the quantization doc). The model card says it follows the SDXL architecture, points ComfyUI/A1111 users to playground-v2.fp16.safetensors, and recommends guidance 3.0. q8_0 size estimated as 0.53 × the fp16 file (8.5 bits per weight)."
         }
       ]
     },
@@ -19815,6 +20317,24 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/ByteDance/SDXL-Lightning",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 (sd.cpp)",
+          "gb": 8.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sdxl_lightning_4step.safetensors -H 1024 -W 1024 -p \"a lovely cat\" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/ByteDance/SDXL-Lightning/tree/c9a24f48e1c025556787b0c58dd67a091ece2e44",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sdxl_lightning_4step.safetensors 6.94 GB (ByteDance/SDXL-Lightning@c9a24f4). gb = 1.2 × 6.94 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint. All-in-one 4-step checkpoint (the 4-step UNet on SDXL 1.0 base); the model card asks for 4 steps, no guidance, and the Euler sampler with the sgm_uniform scheduler."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 4.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sdxl_lightning_4step.safetensors --type q8_0 -H 1024 -W 1024 -p \"a lovely cat\" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/ByteDance/SDXL-Lightning/tree/c9a24f48e1c025556787b0c58dd67a091ece2e44",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sdxl_lightning_4step.safetensors 6.94 GB converted at load (q8_0) (ByteDance/SDXL-Lightning@c9a24f4). gb = 1.2 × 3.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint plus --type q8_0 (converted while loading, per the quantization doc). All-in-one 4-step checkpoint (the 4-step UNet on SDXL 1.0 base); the model card asks for 4 steps, no guidance, and the Euler sampler with the sgm_uniform scheduler. q8_0 size estimated as 0.53 × the fp16 file (8.5 bits per weight)."
         }
       ]
     },
@@ -19849,6 +20369,24 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/stabilityai/sdxl-turbo",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 (sd.cpp)",
+          "gb": 8.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors -H 512 -W 512 -p \"a lovely cat\" --cfg-scale 1 --steps 1 -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/sdxl-turbo/tree/71153311d3dbb46851df1931d3ca6e939de83304",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd_xl_turbo_1.0_fp16.safetensors 6.94 GB (stabilityai/sdxl-turbo@7115331). gb = 1.2 × 6.94 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint. The README lists SDXL-Turbo among supported models; 1 step without guidance at 512x512 follows the model card (guidance_scale=0.0, num_inference_steps=1)."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 4.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd_xl_turbo_1.0_fp16.safetensors --type q8_0 -H 512 -W 512 -p \"a lovely cat\" --cfg-scale 1 --steps 1 -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/stabilityai/sdxl-turbo/tree/71153311d3dbb46851df1931d3ca6e939de83304",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd_xl_turbo_1.0_fp16.safetensors 6.94 GB converted at load (q8_0) (stabilityai/sdxl-turbo@7115331). gb = 1.2 × 3.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the docs/sd.md SDXL example with this checkpoint plus --type q8_0 (converted while loading, per the quantization doc). The README lists SDXL-Turbo among supported models; 1 step without guidance at 512x512 follows the model card (guidance_scale=0.0, num_inference_steps=1). q8_0 size estimated as 0.53 × the fp16 file (8.5 bits per weight)."
         }
       ]
     },
@@ -19992,6 +20530,24 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/segmind/SSD-1B",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp16 (sd.cpp)",
+          "gb": 5.9,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/SSD-1B-A1111.safetensors -H 1024 -W 1024 -p \"a lovely cat\" -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/distilled_sd.md",
+          "gb_source": "https://huggingface.co/segmind/SSD-1B/tree/60987f37e94cd59c36b1cba832b9f97b57395a10",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: SSD-1B-A1111.safetensors 4.47 GB (segmind/SSD-1B@60987f3). gb = 1.2 × 4.47 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. docs/distilled_sd.md lists this file as usable out of the box; command follows the docs/sd.md SDXL example."
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 3.3,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/SSD-1B-A1111.safetensors --type q8_0 -H 1024 -W 1024 -p \"a lovely cat\" -v",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/distilled_sd.md",
+          "gb_source": "https://huggingface.co/segmind/SSD-1B/tree/60987f37e94cd59c36b1cba832b9f97b57395a10",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: SSD-1B-A1111.safetensors 4.47 GB converted at load (q8_0) (segmind/SSD-1B@60987f3). gb = 1.2 × 2.37 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. docs/distilled_sd.md lists this file as usable out of the box; command follows the docs/sd.md SDXL example plus --type q8_0. q8_0 size estimated as 0.53 × the fp16 file."
         }
       ]
     },
@@ -29563,6 +30119,15 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/ATH-MaaS/Ovis-Image-7B/blob/41be1c5821a92c970d63d7eb595a2fd3fe32b22e/README.md",
           "gb_estimated": true
+        },
+        {
+          "quant": "gguf-q4_0 + Ovis 2.5 (sd.cpp)",
+          "gb": 12.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli --diffusion-model models/ovis_image-Q4_0.gguf --vae models/ae.safetensors --llm models/ovis_2.5.safetensors -p \"a lovely cat\" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ovis_image.md",
+          "gb_source": "https://huggingface.co/leejet/Ovis-Image-7B-GGUF/tree/0e0e56e1d63bf3c57282cf11846211e683f68871",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: ovis_image-Q4_0.gguf 4.20 GB (leejet/Ovis-Image-7B-GGUF@0e0e56e); ovis_2.5.safetensors 5.14 GB (Comfy-Org/Ovis-Image@b7d0cb8); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-schnell@741f7c3). gb = 1.2 × 9.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths instead of its Windows paths."
         }
       ]
     },
@@ -29602,6 +30167,15 @@
           "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-3').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
           "platform": "mac",
           "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        },
+        {
+          "quant": "q8_0 (sd.cpp --type)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "sd-cli -m models/sd-v1-3.ckpt --type q8_0 -p \"a lovely cat\"",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+          "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-3-original/tree/3d1f90b6a4affd6565e502f3b40525cd2ab29ae0",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: sd-v1-3.ckpt 4.27 GB (CompVis/stable-diffusion-v-1-3-original@3d1f90b). gb 2.1 = the ~2.1G that the stable-diffusion.cpp quantization doc gives for Stable Diffusion 1.x q8_0 txt2img at 512x512 (https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/quantization_and_gguf.md); higher than the 1.2 × weights + 0.5 GB rule. Command: the docs/sd.md txt2img example plus --type q8_0, which the quantization doc says converts weights while loading."
         }
       ]
     },
@@ -33896,7 +34470,19 @@
     "released": "2023-09",
     "open_weights": true,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 motion module + SD 1.5 (sd.cpp)",
+          "gb": 7.8,
+          "gb_estimated": true,
+          "cmd": "sd-cli -M vid_gen --model models/v1-5-pruned-emaonly.safetensors --motion-module models/mm_sd_v15_v2.ckpt --offload-to-cpu --diffusion-fa -p \"a red apple on a wooden table\" --cfg-scale 8.0 --sampling-method euler --scheduler discrete -H 384 -W 384 --video-frames 16 --fps 8 --steps 20 -s 42 -o out.avi",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/animatediff.md",
+          "gb_source": "https://huggingface.co/guoyww/animatediff/tree/fdfe36afa161e51b3e9c24022b0e368d59e7345e",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: mm_sd_v15_v2.ckpt 1.82 GB (guoyww/animatediff@fdfe36a); v1-5-pruned-emaonly.safetensors 4.27 GB (stable-diffusion-v1-5/stable-diffusion-v1-5@451f4fe). gb = 1.2 × 6.08 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example (written for the v3 module) with POSIX paths, the original guoyww mm_sd_v15_v2.ckpt that the doc's module table lists, the SD 1.5 base it says any SD 1.5 checkpoint can serve as, and the 384x384 native resolution the table gives for that module. mm_sd_v15_v2.ckpt is the original-format release of the same v2 motion module as guoyww/animatediff-motion-adapter-v1-5-2."
+        }
+      ]
+    },
     "source": "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2/blob/6167b88ffe39b4441fdf2113e77b99a6f56b7906/README.md",
     "model_repo": "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2",
     "identity_note": "Motion adapter requiring a compatible Stable Diffusion 1.5 base; no score borrowed from a complete AnimateDiff pipeline."

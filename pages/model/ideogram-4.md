@@ -6,7 +6,7 @@
 
 Ideogram · released 2026-06 · 9.3B params · ideogram-4-nc
 
-**score 67.5** ±1.9 · #14 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.5** ±1.9 · #15 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -32,9 +32,10 @@ api (Together AI) · $0.060/image · [together.ai](https://www.together.ai/model
 <sub>[price source](https://www.together.ai/models/ideogram-40): USD per generated image on Together AI serverless (endpoint ideogram/ideogram-4.0, released June 2, 2026). Together's pricing overview notes displayed prices refer to the lowest resolution settings, so higher resolutions may cost more. Product: Together AI serverless image generation. API model: ideogram/ideogram-4.0. Settings: default/lowest resolution, n=1. Price basis: published list rate. Currency: USD. Not Ideogram's own API tariff (not shown in its fetched pricing HTML). Together AI official model page, observed 2026-09-25.</sub>
 
 <pre>
-version              needs  score
-nf4 · nvidia only  ~6.08GB   67.5
-mlx-q4 · mac only  ~6.08GB   67.5
+version                              needs  score
+nf4 · nvidia only                  ~6.08GB   67.5
+mlx-q4 · mac only                  ~6.08GB   67.5
+fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)  ~29.2GB   67.5
 </pre>
 
 ```sh
@@ -42,6 +43,8 @@ mlx-q4 · mac only  ~6.08GB   67.5
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with bitsandbytes --with sentencepiece python -c "import torch; from diffusers import Ideogram4Pipeline; p=Ideogram4Pipeline.from_pretrained('ideogram-ai/ideogram-4-nf4', dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', height=1024, width=1024).images[0].save('out.png')"
 # mlx-q4 · mac only
 uvx --from mflux mflux-save --model ideogram-4-fp8 -q 4 --path ideogram-4-mflux-q4 && uvx --from mflux mflux-generate-ideogram4 --model ideogram-4-mflux-q4 --prompt-file caption.json --width 1024 --height 1024 --preset V4_DEFAULT_20
+# fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/ideogram4_fp8.safetensors --uncond-diffusion-model models/ideogram4_uncond_fp8.safetensors --llm models/Qwen3VL-8B-Instruct-Q4_K_M.gguf --vae models/flux2_ae.safetensors -p "$(cat caption.json)" --diffusion-fa -v --offload-to-cpu -H 1024 -W 1024
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

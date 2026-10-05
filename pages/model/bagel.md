@@ -6,7 +6,7 @@
 
 ByteDance Seed · Apache 2.0
 
-**score 41.4** ±1.1 · #85 of 113 · from 12 benchmark results across 10 sources
+**score 41.4** ±1.1 · #86 of 114 · from 12 benchmark results across 10 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

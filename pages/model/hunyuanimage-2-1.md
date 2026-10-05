@@ -6,7 +6,7 @@
 
 Tencent
 
-**score 55.3** ±5.1 · #59 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.3** ±5.1 · #60 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

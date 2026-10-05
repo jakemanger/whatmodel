@@ -6,7 +6,7 @@
 
 Alibaba · Apache 2.0
 
-**score 57.5** ±2.3 · #51 of 113 · from 3 benchmark results across 3 sources
+**score 57.5** ±2.3 · #52 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -33,6 +33,16 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <sub>[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2511): USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2511 (fal describes it as the endpoint for Qwen's Image Editing 2511 model). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+gguf-q4_k_m + Qwen2.5-VL bf16 (sd.cpp)  ~36.6GB   57.5
+</pre>
+
+```sh
+# gguf-q4_k_m + Qwen2.5-VL bf16 (sd.cpp)
+sd-cli --diffusion-model models/qwen-image-edit-2511-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/qwen_2.5_vl_7b.safetensors --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'edit.cpp'" --model-args qwen_image_zero_cond_t=true
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen-image-edit-2511) · [JSON](https://whatmodel.sh/api?format=json&all=1)

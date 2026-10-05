@@ -6,7 +6,7 @@
 
 ByteDance · closed weights
 
-**score 63.0** ±1.3 · #25 of 113 · from 7 benchmark results across 6 sources
+**score 63.0** ±1.3 · #26 of 114 · from 7 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

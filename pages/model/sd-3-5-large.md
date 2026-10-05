@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-10 · 8.1B params · stabilityai-community
 
-**score 42.1** ±1.4 · #84 of 113 · from 4 benchmark results across 4 sources
+**score 42.1** ±1.4 · #85 of 114 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -38,6 +38,8 @@ api (Replicate) · $0.065/image · [replicate.com](https://replicate.com/stabili
 version                          needs  score
 bf16 · nvidia only            ~19.94GB   42.1
 fp8 (TensorRT) · nvidia only   ~5.36GB   42.1
+bf16 + T5 fp16 (sd.cpp)          ~34GB   42.1
+q8_0 (sd.cpp --type)           ~18.2GB   42.1
 </pre>
 
 ```sh
@@ -45,6 +47,10 @@ fp8 (TensorRT) · nvidia only   ~5.36GB   42.1
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-large', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=28, guidance_scale=3.5).images[0].save('out.png')"
 # fp8 (TensorRT) · nvidia only
 git clone https://github.com/NVIDIA/TensorRT.git && cd TensorRT && git checkout release/sd35 && docker run --rm --gpus all -e HF_TOKEN -v $PWD:/workspace nvcr.io/nvidia/pytorch:25.01-py3 bash -c "cd /workspace/demo/Diffusion && source setup.sh && python3 demo_txt2img_sd35.py 'a cat holding a sign' --version=3.5-large --fp8 --denoising-steps=30 --guidance-scale 3.5 --download-onnx-models --build-static-batch --use-cuda-graph --hf-token=\$HF_TOKEN --onnx-dir onnx_fp8 --engine-dir engine_fp8"
+# bf16 + T5 fp16 (sd.cpp)
+sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
+# q8_0 (sd.cpp --type)
+sd-cli -m models/sd3.5_large.safetensors --clip_l models/clip_l.safetensors --clip_g models/clip_g.safetensors --t5xxl models/t5xxl_fp16.safetensors --type q8_0 -H 1024 -W 1024 -p 'a lovely cat holding a sign says "Stable diffusion 3.5 Large"' --cfg-scale 4.5 --sampling-method euler -v --clip-on-cpu
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

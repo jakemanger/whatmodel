@@ -6,7 +6,7 @@
 
 Meituan
 
-**score 55.0** ±2.9 · #60 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.0** ±2.9 · #61 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

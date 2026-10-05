@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI)
 
-**score 56.7** ±4.0 · #52 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.7** ±4.0 · #53 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -48,6 +48,19 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/z-image/ba
 
 <sub>[price source](https://fal.ai/models/fal-ai/z-image/base): USD for one 1-megapixel output: fal bills this endpoint $0.01 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/z-image/base (fal: 'the foundation model of the Z-Image family'; the Turbo endpoints are separate). Settings: 1 MP output, one image, no LoRA. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio sells only z-image-turbo. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+bf16 + Qwen3 4B bf16 (sd.cpp)           ~25.3GB   56.7
+gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)    ~10GB   56.7
+</pre>
+
+```sh
+# bf16 + Qwen3 4B bf16 (sd.cpp)
+sd-cli --diffusion-model models/z_image_bf16.safetensors --vae models/ae.safetensors --llm models/qwen_3_4b.safetensors -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
+# gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/z-image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p "A cinematic photograph of a solitary hooded figure walking through a rain-slicked metropolis at night, neon reflections on wet asphalt" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 512
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/z-image-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

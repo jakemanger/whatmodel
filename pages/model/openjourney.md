@@ -6,7 +6,7 @@
 
 PromptHero · released 2022-11 · creativeml-openrail-m
 
-**score 29.1** ±2.3 · #105 of 113 · from 3 benchmark results across 3 sources
+**score 29.1** ±2.3 · #106 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -30,13 +30,16 @@ prior                   pull toward the middle                   49.9           
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~2.6GB   29.1
+version                needs  score
+fp16 · nvidia only    ~2.6GB   29.1
+q8_0 (sd.cpp --type)  ~2.1GB   29.1
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('prompthero/openjourney', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+# q8_0 (sd.cpp --type)
+sd-cli -m models/mdjrny-v4.safetensors --type q8_0 -p "a lovely cat"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

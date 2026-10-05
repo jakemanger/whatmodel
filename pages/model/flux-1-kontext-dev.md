@@ -6,7 +6,7 @@
 
 Black Forest Labs · flux-1-dev-non-commercial-license
 
-**score 43.7** ±1.4 · #81 of 113 · from 6 benchmark results across 5 sources
+**score 43.7** ±1.4 · #82 of 114 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -36,6 +36,19 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 <sub>[price source](https://replicate.com/black-forest-labs/flux-kontext-dev): USD per output image on Replicate's official black-forest-labs/flux-kontext-dev model (billing: $0.025 per output image, "or 40 images for $1"; hardware time not added). The current version is served from replicate-pruna/flux-kontext-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-kontext-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux-kontext/dev bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                 needs  score
+gguf-q8_0 (sd.cpp)    ~28.2GB   43.7
+gguf-q4_k_m (sd.cpp)  ~21.3GB   43.7
+</pre>
+
+```sh
+# gguf-q8_0 (sd.cpp)
+sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+# gguf-q4_k_m (sd.cpp)
+sd-cli -r input.png --diffusion-model models/flux1-kontext-dev-Q4_K_M.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "change 'flux.cpp' to 'kontext.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-1-kontext-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

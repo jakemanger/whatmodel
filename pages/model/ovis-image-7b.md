@@ -6,7 +6,7 @@
 
 Alibaba (AIDC-AI) · released 2025-11 · 7B params · apache-2.0
 
-**score 48.7** ±5.9 · #77 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.7** ±5.9 · #78 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -28,13 +28,16 @@ prior     pull toward the middle                   49.9                15% ▇�
 ## How to run it
 
 <pre>
-version             needs  score
-bf16 · nvidia only  ~20GB   48.7
+version                          needs  score
+bf16 · nvidia only               ~20GB   48.7
+gguf-q4_0 + Ovis 2.5 (sd.cpp)  ~12.1GB   48.7
 </pre>
 
 ```sh
 # bf16 · nvidia only
 uv run --with 'diffusers>=0.36.0' --with transformers --with accelerate --with torch python -c "import torch; from diffusers import OvisImagePipeline; p=OvisImagePipeline.from_pretrained('ATH-MaaS/Ovis-Image-7B', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', negative_prompt='', num_inference_steps=50, guidance_scale=5.0).images[0].save('out.png')"
+# gguf-q4_0 + Ovis 2.5 (sd.cpp)
+sd-cli --diffusion-model models/ovis_image-Q4_0.gguf --vae models/ae.safetensors --llm models/ovis_2.5.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

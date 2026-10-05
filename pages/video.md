@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-09-29 13:54 UTC · 79 models · scores combine 32 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-10-05 06:00 UTC · 80 models · scores combine 32 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
@@ -61,25 +61,25 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
   score vs memory to run it (GB, log)
   ─┘ best for the memory
     80 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │  ·                     ·                     ·                    ● MiniMax H3
-       │                                                                   │
-       │  ·                     ·                     ·                    │      ·
-       │                                                                   │
-       │  ·                     ·                     ·                    │      ·
-    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · ·
-       │  ·                     ·                     ·                    │      ·
-       │                                                                   │
-       │  ·                     ·                     ●─HunyuanVideo 1.5───┘    ∘ ·        ∘
-       │             ●─Wan 2.2 TI2V 5B────────────────┘               ∘
-       │  ·          │   ∘      ·       ∘             ·    ∘                      ·
-    40 ┤ · · · · · · ∘ · · · ∘ · · · · · · · · · · · · · · · · · · ·∘· · · · · · · · · · · · ·
-       │  ●─CogVideoX-2B     ∘  ·       ∘             ·    ∘                      ·
-       │  ∘                  ∘             ∘
-       │  ·              ∘   ∘  ·                     ·                           ·
-       │  ∘     ∘               ∘                                          ∘
-       │  ·                     ·                     ·                           ·
-       └──┬─────────────────────┬─────────────────────┬───────────────────────────┬───────────
-         5GB                  10GB                  20GB                        50GB
+       │  ·                        ·                        ·              MiniMax H3 ●
+       │                                                                              │
+       │  ·                        ·                        ·                         │
+       │                                                                              │
+       │  ·                        ·                        ·                         │
+    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·│· · · ·
+       │  ·                        ·                        ·                         │
+       │                                                                     Wan 2.2 I2V A14B
+       │  ·                        ·       HunyuanVideo 1.5 ●───────────────●─────────┘    ∘
+       │               ●─Wan 2.2 TI2V 5B────────────────────∘
+       │  ·            │   ∘       ·         ∘              ·      ∘
+    40 ┤ · · · · · · · ∘ · · · ·∘· · · · · · · · · · · · · · · · · · · · · · ∘ · · · · · · · ·
+       │  ●─CogVideoX-2B        ∘  ·         ∘              ·      ∘
+       │  ∘                     ∘               ∘
+       │  ·                ∘    ∘  ·                        ·                   ∘
+       │  ∘      ∘                 ∘                                                 ∘
+       │  ·                        ·                        ·
+       └──┬────────────────────────┬────────────────────────┬─────────────────────────────────
+         5GB                     10GB                     20GB
 ```
 
 </details>
@@ -162,12 +162,13 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 74  <a href="model/open-sora-1-2.md">Open-Sora 1.2</a>                             28±3   local               ~39GB  git clone https://g…
 75  <a href="model/lvdm-t2v.md">LVDM (text-to-video)</a>                      25±3*  local              ~6.1GB  git clone https://g…
 76  <a href="model/modelscope-t2v-1-7b.md">ModelScope T2V 1.7B</a>                       25±2   local              ~4.6GB  python -c "import t…
+ —  <a href="model/animatediff-v1-5-2.md">AnimateDiff SD 1.5 v2 mot…</a>  no reviewed results  local              ~7.8GB  sd-cli -M vid_gen -…
  —  <a href="model/ltx-2-5.md">LTX-2.5</a>                     no reviewed results  api $0.12/sec              <a href="https://docs.ltx.io/pricing.md">docs.ltx.io</a>
  —  <a href="model/stable-video-diffusion.md">Stable Video Diffusion (S…</a>  no reviewed results  local                ~8GB  uv run --with torch…
  —  <a href="model/stable-video-diffusion-xt.md">Stable Video Diffusion XT…</a>  no reviewed results  local                ~8GB  uv run --with torch…
 </pre>
 
-<details><summary>Catalogue-only models (40): no verified run option</summary>
+<details><summary>Catalogue-only models (39): no verified run option</summary>
 
 Scores appear only where comparable reviewed evidence is available.
 
@@ -211,16 +212,15 @@ Scores appear only where comparable reviewed evidence is available.
 110  <a href="model/show-1.md">Show-1</a>                                    26±2   catalogue only
 113  <a href="model/floor33-pictures-2023-08.md">Floor33 Pictures (August …</a>                25±2   catalogue only
 114  <a href="model/zeroscope-v2-xl.md">ZeroScope v2 XL (576w → X…</a>                24±2   catalogue only
-  —  <a href="model/animatediff-v1-5-2.md">AnimateDiff SD 1.5 v2 mot…</a>  no reviewed results  catalogue only
   —  <a href="model/cogvideo-9b.md">CogVideo 9B (original)</a>      no reviewed results  catalogue only
 </pre>
 
 </details>
 
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 79 of 119 catalogue models listed here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 80 of 119 catalogue models listed here · [sources and licences](method.md#sources)
 
-<details><summary>Models without a score (2)</summary>
+<details><summary>Models without a score (1)</summary>
 
-No reviewed benchmark results yet: AnimateDiff SD 1.5 v2 motion adapter · CogVideo 9B (original)
+No reviewed benchmark results yet: CogVideo 9B (original)
 
 </details>

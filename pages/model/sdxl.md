@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-07 · 3.5B params · openrail++
 
-**score 34.6** ±1.5 · #97 of 113 · from 8 benchmark results across 8 sources
+**score 34.6** ±1.5 · #98 of 114 · from 8 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -42,6 +42,8 @@ api (Together AI) · $0.0019/image · [together.ai](https://www.together.ai/mode
 version                                  needs  score
 fp16 · nvidia only                      ~8.9GB   34.6
 fp16 + model CPU offload · nvidia only  ~8.9GB   34.6
+fp16 (sd.cpp)                           ~8.8GB   34.6
+q8_0 (sd.cpp --type)                    ~4.9GB   34.6
 </pre>
 
 ```sh
@@ -49,6 +51,10 @@ fp16 + model CPU offload · nvidia only  ~8.9GB   34.6
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
 # fp16 + model CPU offload · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-1.0', torch_dtype=torch.float16, use_safetensors=True, variant='fp16'); p.enable_model_cpu_offload(); p('a cat holding a sign').images[0].save('out.png')"
+# fp16 (sd.cpp)
+sd-cli -m models/sd_xl_base_1.0.safetensors --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
+# q8_0 (sd.cpp --type)
+sd-cli -m models/sd_xl_base_1.0.safetensors --type q8_0 --vae models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

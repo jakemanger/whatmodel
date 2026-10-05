@@ -6,7 +6,7 @@
 
 ByteDance · released 2024-02 · openrail++
 
-**score 39.6** ±3.4 · #91 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.6** ±3.4 · #92 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -28,13 +28,19 @@ prior                   pull toward the middle                    49.9          
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~8.9GB   39.6
+version                needs  score
+fp16 · nvidia only    ~8.9GB   39.6
+fp16 (sd.cpp)         ~8.8GB   39.6
+q8_0 (sd.cpp --type)  ~4.9GB   39.6
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch --with safetensors python -c "import torch; from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler; from huggingface_hub import hf_hub_download; from safetensors.torch import load_file; b='stabilityai/stable-diffusion-xl-base-1.0'; u=UNet2DConditionModel.from_config(b, subfolder='unet').to('cuda', torch.float16); u.load_state_dict(load_file(hf_hub_download('ByteDance/SDXL-Lightning', 'sdxl_lightning_4step_unet.safetensors'), device='cuda')); p=StableDiffusionXLPipeline.from_pretrained(b, unet=u, torch_dtype=torch.float16, variant='fp16').to('cuda'); p.scheduler=EulerDiscreteScheduler.from_config(p.scheduler.config, timestep_spacing='trailing'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0).images[0].save('out.png')"
+# fp16 (sd.cpp)
+sd-cli -m models/sdxl_lightning_4step.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v
+# q8_0 (sd.cpp --type)
+sd-cli -m models/sdxl_lightning_4step.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 1 --steps 4 --sampling-method euler --scheduler sgm_uniform -v
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

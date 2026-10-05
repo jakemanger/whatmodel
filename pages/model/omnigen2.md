@@ -6,7 +6,7 @@
 
 BAAI
 
-**score 40.6** ±2.1 · #87 of 113 · from 5 benchmark results across 4 sources
+**score 40.6** ±2.1 · #88 of 114 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

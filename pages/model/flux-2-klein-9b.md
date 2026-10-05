@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 55.7** ±1.5 · #58 of 113 · from 4 benchmark results across 3 sources
+**score 55.7** ±1.5 · #59 of 114 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -38,6 +38,7 @@ api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://develope
 version                                   needs  score
 bf16 (cpu offload) · nvidia only        ~22.1GB   55.7
 mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   55.7
+gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   55.7
 </pre>
 
 ```sh
@@ -45,6 +46,8 @@ mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   55.7
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import Flux2KleinPipeline; p=Flux2KleinPipeline.from_pretrained('black-forest-labs/FLUX.2-klein-9B', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=4, guidance_scale=1.0).images[0].save('out.png')"
 # mlx-qint8 (Flux2CLI, Swift) · mac only
 ./Flux2CLI t2i "a cat holding a sign" --model klein-9b --transformer-quant qint8
+# gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/flux-2-klein-9b-Q4_0.gguf --vae models/flux2_ae.safetensors --llm models/Qwen3-8B-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --steps 4 -v --offload-to-cpu --diffusion-fa
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

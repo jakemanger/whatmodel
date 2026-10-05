@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · flux-dev-nc
 
-**score 43.8** ±1.4 · #80 of 113 · from 5 benchmark results across 5 sources
+**score 43.8** ±1.4 · #81 of 114 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

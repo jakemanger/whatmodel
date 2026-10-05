@@ -6,7 +6,7 @@
 
 Stability AI · released 2023-06 · 3.5B params · sdxl-0.9-research
 
-**score 34.9** ±3.1 · #95 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.9** ±3.1 · #96 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -29,13 +29,16 @@ prior                   pull toward the middle                   49.9           
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~8.9GB   34.9
+version                needs  score
+fp16 · nvidia only    ~8.9GB   34.9
+q8_0 (sd.cpp --type)  ~4.9GB   34.9
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('stabilityai/stable-diffusion-xl-base-0.9', torch_dtype=torch.float16, use_safetensors=True).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+# q8_0 (sd.cpp --type)
+sd-cli -m models/sd_xl_base_0.9.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

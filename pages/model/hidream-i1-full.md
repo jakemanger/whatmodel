@@ -6,7 +6,7 @@
 
 HiDream
 
-**score 46.5** ±2.3 · #79 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.5** ±2.3 · #80 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

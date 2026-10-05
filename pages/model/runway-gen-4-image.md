@@ -6,7 +6,7 @@
 
 Runway · closed weights
 
-**score 50.4** ±1.9 · #71 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.4** ±1.9 · #72 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

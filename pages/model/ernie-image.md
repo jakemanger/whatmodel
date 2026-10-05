@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 58.7** ±4.0 · #45 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.7** ±4.0 · #46 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -45,9 +45,10 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 <sub>[price source](https://fal.ai/models/fal-ai/ernie-image): USD for one 1-megapixel output: fal bills this endpoint $0.03 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/ernie-image. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
 <pre>
-version                      needs  score
-bf16 · nvidia only         ~19.7GB   58.7
-gguf-q4_k_m · nvidia only   ~5.3GB   58.7
+version                                     needs  score
+bf16 · nvidia only                        ~19.7GB   58.7
+gguf-q4_k_m · nvidia only                  ~5.3GB   58.7
+gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   58.7
 </pre>
 
 ```sh
@@ -55,6 +56,8 @@ gguf-q4_k_m · nvidia only   ~5.3GB   58.7
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"
 # gguf-q4_k_m · nvidia only
 sd-cli --diffusion-model ernie-image-UD-Q4_K_M.gguf --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
+# gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory)
+sd-cli --diffusion-model models/ernie-image-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

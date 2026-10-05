@@ -38,10 +38,12 @@ MobileWan: Closing th…  <a href="https://arxiv.org/html/2607.06173v1#A1.T10">V
 api  · price unknown · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-5b/text-to-video)
 
 <pre>
-version               needs  score
-bf16 · nvidia only  ~12.5GB   47.9
-q8 · mac only        ~6.5GB   47.9
-bf16 · mac only     ~12.5GB   47.9
+version                               needs  score
+bf16 · nvidia only                  ~12.5GB   47.9
+q8 · mac only                        ~6.5GB   47.9
+bf16 · mac only                     ~12.5GB   47.9
+fp16 + umt5 q8_0 (sd.cpp)           ~21.4GB   47.9
+gguf-q4_k_m + umt5 q4_k_m (sd.cpp)  ~10.7GB   47.9
 </pre>
 
 ```sh
@@ -51,6 +53,10 @@ python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --
 rapid-mlx serve wan2.2-ti2v-5b-q8
 # bf16 · mac only
 rapid-mlx serve wan2.2-ti2v-5b-bf16
+# fp16 + umt5 q8_0 (sd.cpp)
+sd-cli -M vid_gen --diffusion-model models/wan2.2_ti2v_5B_fp16.safetensors --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q8_0.gguf -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0
+# gguf-q4_k_m + umt5 q4_k_m (sd.cpp)
+sd-cli -M vid_gen --diffusion-model models/Wan2.2-TI2V-5B-Q4_K_M.gguf --vae models/wan2.2_vae.safetensors --t5xxl models/umt5-xxl-encoder-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 6.0 --sampling-method euler -v -n "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走" -W 480 -H 832 --diffusion-fa --offload-to-cpu --video-frames 33 --flow-shift 3.0
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

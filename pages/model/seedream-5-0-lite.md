@@ -6,7 +6,7 @@
 
 ByteDance Seed · closed weights
 
-**score 63.4** ±1.5 · #23 of 113 · from 6 benchmark results across 5 sources
+**score 63.4** ±1.5 · #24 of 114 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

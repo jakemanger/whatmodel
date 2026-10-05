@@ -28,6 +28,8 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 ```sh
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=8, guidance_scale=1.0).images[0].save('out.png')"
 sd-cli --diffusion-model ernie-image-turbo.safetensors --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa
+sd-cli --diffusion-model models/ernie-image-turbo.safetensors --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa
+sd-cli --diffusion-model models/ernie-image-turbo-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa
 ```
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ernie-image-turbo)

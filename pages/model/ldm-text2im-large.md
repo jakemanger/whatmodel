@@ -6,7 +6,7 @@
 
 CompVis · released 2022-04 · 1.45B params · apache-2.0
 
-**score 32.1** ±3.9 · #103 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±3.9 · #104 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

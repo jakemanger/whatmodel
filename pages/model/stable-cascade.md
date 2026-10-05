@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-02 · 5.1B params · stable-cascade-nc-community
 
-**score 39.9** ±3.4 · #89 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.9** ±3.4 · #90 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

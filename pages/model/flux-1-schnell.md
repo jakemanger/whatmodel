@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 40.6** ±2.7 · #86 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.6** ±2.7 · #87 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

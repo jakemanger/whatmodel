@@ -6,7 +6,7 @@
 
 UC Berkeley (Brooks, Holynski, Efros) · released 2023-01 · 0.86B params · mit
 
-**score 17.9** ±2.7 · #113 of 113 · from 3 benchmark results across 3 sources
+**score 17.9** ±2.7 · #114 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

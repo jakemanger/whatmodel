@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-04 · proprietary
 
-**score 59.4** ±1.1 · #40 of 113 · from 11 benchmark results across 8 sources
+**score 59.4** ±1.1 · #41 of 114 · from 11 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

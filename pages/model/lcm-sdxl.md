@@ -6,7 +6,7 @@
 
 latent-consistency · released 2023-11 · openrail++
 
-**score 34.7** ±3.6 · #96 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.7** ±3.6 · #97 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

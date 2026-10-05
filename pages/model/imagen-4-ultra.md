@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · proprietary
 
-**score 61.3** ±1.6 · #31 of 113 · from 3 benchmark results across 3 sources
+**score 61.3** ±1.6 · #32 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

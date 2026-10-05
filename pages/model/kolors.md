@@ -6,7 +6,7 @@
 
 Kuaishou (Kolors team) · released 2024-07 · 2.6B params · kolors-model-license
 
-**score 38.9** ±3.2 · #92 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 38.9** ±3.2 · #93 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

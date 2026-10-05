@@ -6,7 +6,7 @@
 
 Stability AI
 
-**score 39.7** ±2.7 · #90 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.7** ±2.7 · #91 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

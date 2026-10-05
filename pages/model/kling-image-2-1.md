@@ -6,7 +6,7 @@
 
 Kuaishou · closed weights
 
-**score 53.4** ±6.4 · #63 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.4** ±6.4 · #64 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Playground · released 2023-12 · playground-v2-community
 
-**score 42.7** ±3.4 · #83 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.7** ±3.4 · #84 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -28,13 +28,19 @@ prior                   pull toward the middle                    49.9          
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~8.9GB   42.7
+version                needs  score
+fp16 · nvidia only    ~8.9GB   42.7
+fp16 (sd.cpp)         ~8.8GB   42.7
+q8_0 (sd.cpp --type)  ~4.9GB   42.7
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2-1024px-aesthetic', torch_dtype=torch.float16, use_safetensors=True, add_watermarker=False, variant='fp16').to('cuda'); p(prompt='a cat holding a sign', guidance_scale=3.0).images[0].save('out.png')"
+# fp16 (sd.cpp)
+sd-cli -m models/playground-v2.fp16.safetensors -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v
+# q8_0 (sd.cpp --type)
+sd-cli -m models/playground-v2.fp16.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" --cfg-scale 3.0 -v
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

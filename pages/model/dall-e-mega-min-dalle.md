@@ -6,7 +6,7 @@
 
 DALL·E Mini / minDALL-E · released 2022-07
 
-**score 30.7** ±2.8 · #104 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 30.7** ±2.8 · #105 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

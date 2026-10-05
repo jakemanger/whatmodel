@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-09 · proprietary
 
-**score 61.0** ±1.4 · #33 of 113 · from 6 benchmark results across 5 sources
+**score 61.0** ±1.4 · #34 of 114 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

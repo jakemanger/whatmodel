@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-11 · 32B params · flux-dev-nc
 
-**score 59.3** ±1.2 · #41 of 113 · from 8 benchmark results across 7 sources
+**score 59.3** ±1.2 · #42 of 114 · from 8 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -43,6 +43,7 @@ version                                     needs  score
 bf16 (cpu offload) · nvidia only          ~77.3GB   59.3
 nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   59.3
 mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   59.3
+gguf-q4_k_s + Mistral Small 3.2 q4_k_m …  ~41.3GB   59.3
 </pre>
 
 ```sh
@@ -52,6 +53,8 @@ uv run --with diffusers --with transformers --with accelerate --with torch --wit
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import Flux2Pipeline; p=Flux2Pipeline.from_pretrained('diffusers/FLUX.2-dev-bnb-4bit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('a cat holding a sign', num_inference_steps=28, guidance_scale=4).images[0].save('out.png')"
 # mlx-int4 (Flux2CLI, Swift) · mac only
 ./Flux2CLI t2i "a cat holding a sign" --model dev --transformer-quant int4
+# gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/flux2-dev-Q4_K_S.gguf --vae models/flux2_ae.safetensors --llm models/Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf -p "a lovely cat" --cfg-scale 1.0 --sampling-method euler -v --diffusion-fa --offload-to-cpu
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

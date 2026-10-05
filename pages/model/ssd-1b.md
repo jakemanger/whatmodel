@@ -6,7 +6,7 @@
 
 Segmind · released 2023-10 · 1.3B params · apache-2.0
 
-**score 37.1** ±3.6 · #93 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.1** ±3.6 · #94 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -28,13 +28,19 @@ prior                   pull toward the middle                      49.9        
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~3.6GB   37.1
+version                needs  score
+fp16 · nvidia only    ~3.6GB   37.1
+fp16 (sd.cpp)         ~5.9GB   37.1
+q8_0 (sd.cpp --type)  ~3.3GB   37.1
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionXLPipeline; p=StableDiffusionXLPipeline.from_pretrained('segmind/SSD-1B', torch_dtype=torch.float16, use_safetensors=True, variant='fp16').to('cuda'); p(prompt='a cat holding a sign').images[0].save('out.png')"
+# fp16 (sd.cpp)
+sd-cli -m models/SSD-1B-A1111.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
+# q8_0 (sd.cpp --type)
+sd-cli -m models/SSD-1B-A1111.safetensors --type q8_0 -H 1024 -W 1024 -p "a lovely cat" -v
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

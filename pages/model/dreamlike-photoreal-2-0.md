@@ -6,7 +6,7 @@
 
 Dreamlike.art · released 2023-01 · 0.86B params · dreamlike-modified-creativeml-openrail-m
 
-**score 33.9** ±3.9 · #99 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.9** ±3.9 · #100 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -28,13 +28,16 @@ prior                   pull toward the middle                   49.9           
 ## How to run it
 
 <pre>
-version              needs  score
-fp16 · nvidia only  ~2.6GB   33.9
+version                needs  score
+fp16 · nvidia only    ~2.6GB   33.9
+q8_0 (sd.cpp --type)  ~2.1GB   33.9
 </pre>
 
 ```sh
 # fp16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('dreamlike-art/dreamlike-photoreal-2.0', torch_dtype=torch.float16).to('cuda'); p('a cat holding a sign').images[0].save('out.png')"
+# q8_0 (sd.cpp --type)
+sd-cli -m models/dreamlike-photoreal-2.0.safetensors --type q8_0 -p "a lovely cat"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

@@ -6,7 +6,7 @@ The open data, scoring code and bench script behind [whatmodel.sh](https://whatm
 
 **llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md)
 
-updated 2026-09-29 13:54 UTC · 477 models · scores combine 271 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-10-05 06:00 UTC · 477 models · scores combine 271 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 

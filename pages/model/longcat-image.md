@@ -6,7 +6,7 @@
 
 Meituan
 
-**score 51.3** ±4.0 · #69 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±4.0 · #70 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -43,6 +43,16 @@ api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <sub>[price source](https://fal.ai/models/fal-ai/longcat-image): USD for one 1-megapixel output: fal bills this endpoint $0.13 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/longcat-image (LongCat Image, 6B). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                 needs  score
+gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   51.3
+</pre>
+
+```sh
+# gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)
+sd-cli --diffusion-model models/LongCat-Image-Q4_K_M.gguf --vae models/ae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p "a lovely cat holding a sign says 'longcat.cpp'" --cfg-scale 5.0 --sampling-method euler --flow-shift 3 -v --offload-to-cpu --diffusion-fa
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-image) · [JSON](https://whatmodel.sh/api?format=json&all=1)

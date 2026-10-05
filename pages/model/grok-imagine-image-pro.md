@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · closed weights
 
-**score 63.7** ±1.8 · #22 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 63.7** ±1.8 · #23 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

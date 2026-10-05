@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-11 · proprietary
 
-**score 62.3** ±1.5 · #28 of 113 · from 5 benchmark results across 4 sources
+**score 62.3** ±1.5 · #29 of 114 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

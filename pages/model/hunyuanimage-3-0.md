@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · 80B params · tencent-hunyuan-community
 
-**score 61.5** ±1.7 · #30 of 113 · from 3 benchmark results across 3 sources
+**score 61.5** ±1.7 · #31 of 114 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 20B params · apache-2.0
 
-**score 53.2** ±1.3 · #64 of 113 · from 7 benchmark results across 7 sources
+**score 53.2** ±1.3 · #65 of 114 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -57,6 +57,8 @@ nf4 + model CPU offload · nvidia only     ~12.5GB   53.2
 fp8_e4m3fn (ComfyUI) · nvidia only        ~12.5GB   53.2
 gguf-q4_k_s · nvidia only                 ~12.5GB   53.2
 fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   53.2
+gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)      ~36.6GB   53.2
+gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)  ~22.1GB   53.2
 </pre>
 
 ```sh
@@ -70,6 +72,10 @@ sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/q
 sd-cli --diffusion-model models/qwen-image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
 # fp8 onload + disk/CPU offload (DiffSynth-Studio VRAM management) · nvidia only
 git clone https://github.com/modelscope/DiffSynth-Studio.git && cd DiffSynth-Studio && pip install -e . && python examples/qwen_image/model_inference_low_vram/Qwen-Image.py
+# gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)
+sd-cli --diffusion-model models/Qwen_Image-Q8_0.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign that says "Qwen-Image"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
+# gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)
+sd-cli --diffusion-model models/Qwen_Image-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q4_K_M.gguf -p 'a cat holding a sign that says "Qwen-Image"' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

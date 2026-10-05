@@ -6,7 +6,7 @@
 
 SimianLuo (LCM authors) · released 2023-10 · mit
 
-**score 24.5** ±3.4 · #112 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.5** ±3.4 · #113 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

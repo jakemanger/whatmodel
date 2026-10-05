@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 16B params · mit
 
-**score 50.1** ±1.6 · #72 of 113 · from 4 benchmark results across 4 sources
+**score 50.1** ±1.6 · #73 of 114 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

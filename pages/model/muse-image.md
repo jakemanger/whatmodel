@@ -6,7 +6,7 @@
 
 Meta · released 2026-07 · proprietary
 
-**score 74.6** ±1.7 · #6 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.6** ±1.7 · #6 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 

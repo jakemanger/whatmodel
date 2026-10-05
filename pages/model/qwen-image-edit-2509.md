@@ -6,7 +6,7 @@
 
 Alibaba
 
-**score 56.3** ±5.5 · #53 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.3** ±5.5 · #54 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -31,6 +31,16 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <sub>[price source](https://fal.ai/models/fal-ai/qwen-image-edit-2509): USD for one 1-megapixel output: fal bills this endpoint $0.03 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/qwen-image-edit-2509 (fal describes it as Qwen's Image Editing Plus model also known as Qwen-Image-Edit-2509). Settings: one input image, 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Alibaba Model Studio's own qwen-image-edit/-plus API models are not used because Alibaba does not state which open checkpoint they correspond to. Currency: USD. Not an Alibaba direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   56.3
+</pre>
+
+```sh
+# gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)
+sd-cli --diffusion-model models/Qwen-Image-Edit-2509-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf --llm_vision models/Qwen2.5-VL-7B-Instruct.mmproj-Q8_0.gguf --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu --diffusion-fa --flow-shift 3 -r input.png -p "change 'flux.cpp' to 'Qwen Image Edit 2509'"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen-image-edit-2509) · [JSON](https://whatmodel.sh/api?format=json&all=1)
