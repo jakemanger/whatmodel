@@ -1,0 +1,2389 @@
+{
+  "reviewed": "2026-10-05",
+  "baseline_commit": "3f99658",
+  "commits": [
+    "247e901",
+    "0d0c5d3",
+    "962039a",
+    "c44448d"
+  ],
+  "runtime_pins": {
+    "stable-diffusion.cpp": "https://github.com/leejet/stable-diffusion.cpp/tree/3f8527a46c54ecf4cb4ed6003da8e8982283c73c",
+    "openvino.genai": "https://github.com/openvinotoolkit/openvino.genai/tree/ab01d1771e4adaa0e1e08e9d630def170572506c",
+    "mlx-audio": "https://github.com/Blaizzy/mlx-audio/tree/feb25a37b07923bae556e59111995071d66afa0d",
+    "draw-things-community": "https://github.com/drawthingsai/draw-things-community/tree/e51089d5229b3147e13a21cfe0c379deff851715",
+    "coqui-tts": "https://github.com/idiap/coqui-ai-TTS/tree/29b391cbd7ebf599e85b5232958daf39987a08e3"
+  },
+  "memory_rule": {
+    "image_video": "gb = 1.2 x bytes of all weight files the command loads + 0.5 GB (lib/data.ts rule applied to the full pipeline); q8_0 load-time conversions estimated at 0.53 x 16-bit size; SD 1.x q8_0 uses the 2.1 GB stated by stable-diffusion.cpp docs",
+    "tts": "gb = sum of checkpoint files the command loads, as in existing TTS entries"
+  },
+  "thin_pages": {
+    "before_under_10_rows": 36,
+    "before_under_5_rows": 25,
+    "after_under_10_rows": 14,
+    "after_under_5_rows": 9,
+    "before": {
+      "/image/for/set-cvtg-2k-word-accuracy-visual-mage-flow": [
+        0,
+        0
+      ],
+      "/video/for/8gb-apple-silicon-local": [
+        0,
+        0
+      ],
+      "/video/for/8gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/16gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/24gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/32gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/48gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/64gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/96gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/128gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/192gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/256gb-ram-local": [
+        0,
+        0
+      ],
+      "/tts/for/set-vits2021-ljspeech-mos": [
+        0,
+        0
+      ],
+      "/image/for/8gb-ram-local": [
+        1,
+        1
+      ],
+      "/video/for/16gb-apple-silicon-local": [
+        1,
+        1
+      ],
+      "/video/for/24gb-apple-silicon-local": [
+        1,
+        1
+      ],
+      "/video/for/32gb-apple-silicon-local": [
+        1,
+        1
+      ],
+      "/image/for/8gb-apple-silicon-local": [
+        2,
+        2
+      ],
+      "/video/for/48gb-apple-silicon-local": [
+        2,
+        1
+      ],
+      "/image/for/16gb-ram-local": [
+        3,
+        3
+      ],
+      "/video/for/64gb-apple-silicon-local": [
+        3,
+        2
+      ],
+      "/video/for/96gb-apple-silicon-local": [
+        4,
+        3
+      ],
+      "/video/for/128gb-apple-silicon-local": [
+        4,
+        3
+      ],
+      "/video/for/192gb-apple-silicon-local": [
+        4,
+        3
+      ],
+      "/video/for/256gb-apple-silicon-local": [
+        4,
+        3
+      ],
+      "/llm/for/set-bbh-paper-2210-11416v5": [
+        5,
+        0
+      ],
+      "/image/for/24gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/32gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/48gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/64gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/96gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/128gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/192gb-ram-local": [
+        5,
+        5
+      ],
+      "/image/for/256gb-ram-local": [
+        5,
+        5
+      ],
+      "/tts/for/8gb-ram-local": [
+        6,
+        5
+      ],
+      "/stt/for/set-librispeech-test-clean-wer-speech-espnet-librispeech-20260929": [
+        6,
+        0
+      ],
+      "/llm/for/set-arc-challenge": [
+        39,
+        0
+      ]
+    },
+    "after_for_before_thin": {
+      "/image/for/set-cvtg-2k-word-accuracy-visual-mage-flow": [
+        3,
+        0
+      ],
+      "/video/for/8gb-apple-silicon-local": [
+        0,
+        0
+      ],
+      "/video/for/8gb-ram-local": [
+        0,
+        0
+      ],
+      "/video/for/16gb-ram-local": [
+        2,
+        1
+      ],
+      "/video/for/24gb-ram-local": [
+        3,
+        2
+      ],
+      "/video/for/32gb-ram-local": [
+        4,
+        3
+      ],
+      "/video/for/48gb-ram-local": [
+        9,
+        8
+      ],
+      "/video/for/64gb-ram-local": [
+        10,
+        8
+      ],
+      "/video/for/96gb-ram-local": [
+        11,
+        9
+      ],
+      "/video/for/128gb-ram-local": [
+        11,
+        9
+      ],
+      "/video/for/192gb-ram-local": [
+        11,
+        9
+      ],
+      "/video/for/256gb-ram-local": [
+        11,
+        9
+      ],
+      "/tts/for/set-vits2021-ljspeech-mos": [
+        0,
+        0
+      ],
+      "/image/for/8gb-ram-local": [
+        9,
+        9
+      ],
+      "/video/for/16gb-apple-silicon-local": [
+        4,
+        3
+      ],
+      "/video/for/24gb-apple-silicon-local": [
+        4,
+        3
+      ],
+      "/video/for/32gb-apple-silicon-local": [
+        6,
+        5
+      ],
+      "/image/for/8gb-apple-silicon-local": [
+        16,
+        16
+      ],
+      "/video/for/48gb-apple-silicon-local": [
+        13,
+        11
+      ],
+      "/image/for/16gb-ram-local": [
+        20,
+        18
+      ],
+      "/video/for/64gb-apple-silicon-local": [
+        15,
+        13
+      ],
+      "/video/for/96gb-apple-silicon-local": [
+        16,
+        14
+      ],
+      "/video/for/128gb-apple-silicon-local": [
+        16,
+        14
+      ],
+      "/video/for/192gb-apple-silicon-local": [
+        16,
+        14
+      ],
+      "/video/for/256gb-apple-silicon-local": [
+        16,
+        14
+      ],
+      "/llm/for/set-bbh-paper-2210-11416v5": [
+        5,
+        0
+      ],
+      "/image/for/24gb-ram-local": [
+        29,
+        26
+      ],
+      "/image/for/32gb-ram-local": [
+        34,
+        30
+      ],
+      "/image/for/48gb-ram-local": [
+        37,
+        33
+      ],
+      "/image/for/64gb-ram-local": [
+        39,
+        35
+      ],
+      "/image/for/96gb-ram-local": [
+        39,
+        35
+      ],
+      "/image/for/128gb-ram-local": [
+        39,
+        35
+      ],
+      "/image/for/192gb-ram-local": [
+        39,
+        35
+      ],
+      "/image/for/256gb-ram-local": [
+        39,
+        35
+      ],
+      "/tts/for/8gb-ram-local": [
+        32,
+        26
+      ],
+      "/stt/for/set-librispeech-test-clean-wer-speech-espnet-librispeech-20260929": [
+        6,
+        0
+      ],
+      "/llm/for/set-arc-challenge": [
+        39,
+        0
+      ]
+    },
+    "new_thin": {}
+  },
+  "coverage": {
+    "before": {
+      "llm": {
+        "models": 659,
+        "results": 6937,
+        "with_local": 368,
+        "cpu_capable": 361,
+        "mac_capable": 361,
+        "local_variants": 674
+      },
+      "image": {
+        "models": 171,
+        "results": 478,
+        "with_local": 43,
+        "cpu_capable": 5,
+        "mac_capable": 14,
+        "local_variants": 76
+      },
+      "video": {
+        "models": 119,
+        "results": 341,
+        "with_local": 30,
+        "cpu_capable": 0,
+        "mac_capable": 4,
+        "local_variants": 36
+      },
+      "tts": {
+        "models": 150,
+        "results": 644,
+        "with_local": 34,
+        "cpu_capable": 21,
+        "mac_capable": 24,
+        "local_variants": 38
+      },
+      "stt": {
+        "models": 143,
+        "results": 678,
+        "with_local": 102,
+        "cpu_capable": 64,
+        "mac_capable": 71,
+        "local_variants": 127
+      }
+    },
+    "after": {
+      "llm": {
+        "models": 659,
+        "results": 6937,
+        "with_local": 368,
+        "cpu_capable": 361,
+        "mac_capable": 361,
+        "local_variants": 674
+      },
+      "image": {
+        "models": 171,
+        "results": 478,
+        "with_local": 54,
+        "cpu_capable": 39,
+        "mac_capable": 39,
+        "local_variants": 127
+      },
+      "video": {
+        "models": 119,
+        "results": 341,
+        "with_local": 35,
+        "cpu_capable": 11,
+        "mac_capable": 16,
+        "local_variants": 58
+      },
+      "tts": {
+        "models": 159,
+        "results": 652,
+        "with_local": 88,
+        "cpu_capable": 70,
+        "mac_capable": 75,
+        "local_variants": 138
+      },
+      "stt": {
+        "models": 143,
+        "results": 678,
+        "with_local": 102,
+        "cpu_capable": 64,
+        "mac_capable": 71,
+        "local_variants": 127
+      }
+    }
+  },
+  "summary": {
+    "video": {
+      "variants": 22,
+      "models_with_new_variants": 15,
+      "new_models": 0,
+      "new_results": 0
+    },
+    "image": {
+      "variants": 51,
+      "models_with_new_variants": 34,
+      "new_models": 0,
+      "new_results": 0
+    },
+    "tts": {
+      "variants": 106,
+      "models_with_new_variants": 64,
+      "new_models": 9,
+      "new_results": 8
+    }
+  },
+  "added_or_corrected_variants": [
+    {
+      "model": "minimax-h3",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q4_k_m fl2va + Qwen3-VL 32B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 51.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/minimax_h3.md",
+      "gb_source": "https://huggingface.co/leejet/MiniMax-H3-GGUF/tree/d9c4c6312b4728a68a15a35626d84775a6523783"
+    },
+    {
+      "model": "wan-2-2-a14b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 45,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/tree/73eafba53a1a8f29254e4c77f92e74ea27d7cd6f"
+    },
+    {
+      "model": "wan-2-2-a14b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 31.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/tree/73eafba53a1a8f29254e4c77f92e74ea27d7cd6f"
+    },
+    {
+      "model": "hunyuanvideo-1-5",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp16 720p T2V (sd.cpp)",
+      "platform": "any",
+      "gb": 43.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/hunyuan_video.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/tree/1405a2b738c29b890cf6d03fc038d8d3e92eeed7"
+    },
+    {
+      "model": "hunyuanvideo-1-5",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp16 720p T2V + Qwen2.5-VL q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 33.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/hunyuan_video.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/tree/1405a2b738c29b890cf6d03fc038d8d3e92eeed7"
+    },
+    {
+      "model": "flux-2-dev",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_s + Mistral Small 3.2 q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 41.3,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+      "gb_source": "https://huggingface.co/city96/FLUX.2-dev-gguf/tree/ade5d688ddab0d9cf4a5b01bf4321e01c115020d"
+    },
+    {
+      "model": "flux-2-klein-9b",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 13.7,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+      "gb_source": "https://huggingface.co/leejet/FLUX.2-klein-9B-GGUF/tree/cc588497a95ffc2937ebbd6b9b3916a11ada6e5b"
+    },
+    {
+      "model": "flux-2-klein-4b",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + Qwen3 4B bf16 (sd.cpp)",
+      "platform": "any",
+      "gb": 19.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+      "gb_source": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/tree/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+    },
+    {
+      "model": "flux-2-klein-4b",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 6.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux2.md",
+      "gb_source": "https://huggingface.co/leejet/FLUX.2-klein-4B-GGUF/tree/3b1f5a9dc3abb32238b053aeb3d823c30afdacbd"
+    },
+    {
+      "model": "qwen-image",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 36.6,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image.md",
+      "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-GGUF/tree/257f261fa92593bed760aa6fa3f7921a49fea00f"
+    },
+    {
+      "model": "qwen-image",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)",
+      "platform": "any",
+      "gb": 22.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image.md",
+      "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-GGUF/tree/257f261fa92593bed760aa6fa3f7921a49fea00f"
+    },
+    {
+      "model": "sd-3-5-large",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + T5 fp16 (sd.cpp)",
+      "platform": "any",
+      "gb": 34,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd3.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/ceddf0a7fdf2064ea28e2213e3b84e4afa170a0f"
+    },
+    {
+      "model": "sd-3-5-large",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 18.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd3.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large/tree/ceddf0a7fdf2064ea28e2213e3b84e4afa170a0f"
+    },
+    {
+      "model": "ideogram-4",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp8 + Qwen3-VL 8B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 29.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ideogram4.md",
+      "gb_source": "https://huggingface.co/ideogram-ai/ideogram-4-fp8/tree/ee79a7237b519f1402ceacf952f30c8a31ec5073"
+    },
+    {
+      "model": "kokoro-82m",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (kokoro package 0.9.4)",
+      "platform": "any",
+      "gb": 0.33,
+      "source": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/__main__.py",
+      "gb_source": "https://huggingface.co/hexgrad/Kokoro-82M/tree/f3ff3571791e39611d31c381e3a41a3af07b4987"
+    },
+    {
+      "model": "chatterbox",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (chatterbox-tts 0.1.7)",
+      "platform": "any",
+      "gb": 3.19,
+      "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+      "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18"
+    },
+    {
+      "model": "fish-audio-s2-pro",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16",
+      "platform": "nvidia",
+      "gb": 11.44,
+      "source": "https://github.com/fishaudio/fish-speech/blob/214da3cd841bda85da2496b96cd3c4d7edb1337e/docs/en/inference.md",
+      "gb_source": null
+    },
+    {
+      "model": "fish-audio-s2-pro",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (fish-speech official repo CLI)",
+      "platform": "any",
+      "gb": 11.01,
+      "source": "https://github.com/fishaudio/fish-speech/blob/214da3cd841bda85da2496b96cd3c4d7edb1337e/docs/en/inference.md",
+      "gb_source": "https://huggingface.co/fishaudio/s2-pro/tree/1de9996b6be38b745688de084d87a5633f714e4e"
+    },
+    {
+      "model": "fish-audio-s2-pro",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (mlx-audio)",
+      "platform": "mac",
+      "gb": 11.01,
+      "source": "https://huggingface.co/mlx-community/fish-audio-s2-pro-bf16/blob/eccd57bf5c1ebc13cb2f993df867f4e49931a36a/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/fish-audio-s2-pro-bf16/tree/eccd57bf5c1ebc13cb2f993df867f4e49931a36a"
+    },
+    {
+      "model": "openaudio-s1-mini",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16",
+      "platform": "nvidia",
+      "gb": 1.7,
+      "source": "https://github.com/fishaudio/fish-speech/blob/d3df50503b36314a964f66cac1af1e19e95bcfa3/docs/en/inference.md",
+      "gb_source": null
+    },
+    {
+      "model": "openaudio-s1-mini",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (fish-speech official repo CLI)",
+      "platform": "any",
+      "gb": 3.61,
+      "source": "https://github.com/fishaudio/fish-speech/blob/d3df50503b36314a964f66cac1af1e19e95bcfa3/docs/en/inference.md",
+      "gb_source": "https://huggingface.co/fishaudio/s1-mini/tree/f4b445029346701e082b60bb63fcc2d1bb17a0e2"
+    },
+    {
+      "model": "vibevoice-1-5b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (transformers >=5.17.0)",
+      "platform": "any",
+      "gb": 5.42,
+      "source": "https://github.com/huggingface/transformers/blob/a906d3c4b65095f2308b6a6a193e934d03b8eb5d/docs/source/en/model_doc/vibevoice.md",
+      "gb_source": "https://huggingface.co/vibevoice/VibeVoice-1.5B-hf/tree/d4cd82eb4371bf3e3d088e1ea7fa4eefb60449bf"
+    },
+    {
+      "model": "xtts-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (coqui-tts 0.27.5)",
+      "platform": "any",
+      "gb": 1.88,
+      "source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/xtts.md",
+      "gb_source": "https://huggingface.co/coqui/XTTS-v2/tree/6c2b0d75eae4b7047358e3b6bd9325f857d43f77"
+    },
+    {
+      "model": "xtts-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (coqui-tts 0.27.5)",
+      "platform": "nvidia",
+      "gb": 1.88,
+      "source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/xtts.md",
+      "gb_source": "https://huggingface.co/coqui/XTTS-v2/tree/6c2b0d75eae4b7047358e3b6bd9325f857d43f77"
+    },
+    {
+      "model": "magpie-tts-multilingual-357m",
+      "category": "tts",
+      "new_model": false,
+      "quant": "f16-gguf (NVIDIA NeMo-Speech.cpp)",
+      "platform": "any",
+      "gb": 0.65,
+      "source": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md",
+      "gb_source": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/tree/19806879b16d3f2ccf28fb112b1bcd16a3c7923e"
+    },
+    {
+      "model": "maya1",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (transformers + snac)",
+      "platform": "any",
+      "gb": 6.71,
+      "source": "https://huggingface.co/maya-research/maya1/blob/21c682a0afef8c13a89b2512733c8bf5f0c52eb7/README.md",
+      "gb_source": "https://huggingface.co/maya-research/maya1/tree/21c682a0afef8c13a89b2512733c8bf5f0c52eb7"
+    },
+    {
+      "model": "breeze-tts-2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-bf16 (mlx-audio 0.5.7)",
+      "platform": "mac",
+      "gb": 7.63,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/breeze-tts.md",
+      "gb_source": "https://huggingface.co/mlx-community/Breeze-TTS-2-mlx/tree/3c8829fb7fd335818f085cd2ef49b4100c0e46c8"
+    },
+    {
+      "model": "breeze-tts-2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-mxfp8 (mlx-audio 0.5.7)",
+      "platform": "mac",
+      "gb": 4.6,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/breeze-tts.md",
+      "gb_source": "https://huggingface.co/mlx-community/Breeze-TTS-2-mlx-8bit/tree/c6e4a2ff6ab9afba68b7853de802273ffe23fb49"
+    },
+    {
+      "model": "breeze-tts-2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-mxfp4 (mlx-audio 0.5.7)",
+      "platform": "mac",
+      "gb": 3.04,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/breeze-tts.md",
+      "gb_source": "https://huggingface.co/mlx-community/Breeze-TTS-2-mlx-4bit/tree/3a06d26b172ea4ae1da2f42d708383e9c79d5526"
+    },
+    {
+      "model": "ltx-2-5",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q8_0 22B dev + Gemma 4 12B q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 47.7,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ltx2.md",
+      "gb_source": "https://huggingface.co/vantagewithai/LTX-2.5-GGUF/tree/9a5c1bed3ff27b5e5d055fc04e3ae884381c2343"
+    },
+    {
+      "model": "wan-2-2-5b",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp16 + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 21.4,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/ee6f4a40737a995bf5818954cfce6d59443b0f04"
+    },
+    {
+      "model": "wan-2-2-5b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + umt5 q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 10.7,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF/tree/57437632ddd08bdcbd1508c866aa22e126ed51d2"
+    },
+    {
+      "model": "wan-2-1-14b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q8_0 + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 27.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/city96/Wan2.1-T2V-14B-gguf/tree/511cbce9f475a6ca0269be901d23b125f44f5c0d"
+    },
+    {
+      "model": "wan-2-1-14b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 20.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/city96/Wan2.1-T2V-14B-gguf/tree/511cbce9f475a6ca0269be901d23b125f44f5c0d"
+    },
+    {
+      "model": "hunyuanvideo",
+      "category": "video",
+      "new_model": false,
+      "quant": "Draw Things q8p",
+      "platform": "mac",
+      "gb": 27.6,
+      "source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/.agents/skills/use-drawthings-cli/SKILL.md",
+      "gb_source": "https://models.drawthings.ai/models.json"
+    },
+    {
+      "model": "sdxl",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp16 (sd.cpp)",
+      "platform": "any",
+      "gb": 8.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/462165984030d82259a11f4367a4eed129e94a7b"
+    },
+    {
+      "model": "sdxl",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 4.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/462165984030d82259a11f4367a4eed129e94a7b"
+    },
+    {
+      "model": "ernie-image",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory)",
+      "platform": "any",
+      "gb": 17.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md",
+      "gb_source": "https://huggingface.co/unsloth/ERNIE-Image-GGUF/tree/7b6dfaae7389b463d7fb4669e33c560d36ad108c"
+    },
+    {
+      "model": "ernie-image-turbo",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + Ministral 3B (sd.cpp)",
+      "platform": "any",
+      "gb": 29.4,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/ERNIE-Image/tree/82fe29a5cd056f8b1deebc50570f125bcd4f4bea"
+    },
+    {
+      "model": "ernie-image-turbo",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-ud-q4_k_m + Ministral 3B (sd.cpp)",
+      "platform": "any",
+      "gb": 17.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ernie_image.md",
+      "gb_source": "https://huggingface.co/unsloth/ERNIE-Image-Turbo-GGUF/tree/a38270280633a5d318a9f51c18ef95eefb07c423"
+    },
+    {
+      "model": "openvoice-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (myshell-ai/OpenVoice)",
+      "platform": "any",
+      "gb": 0.79,
+      "source": "https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part3.ipynb (install: https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/docs/USAGE.md)",
+      "gb_source": "https://huggingface.co/myshell-ai/OpenVoiceV2/tree/f36e7edfe1684461a8343844af60babc2efbb727"
+    },
+    {
+      "model": "metavoice-1b-v0-1",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (metavoiceio/metavoice-src)",
+      "platform": "nvidia",
+      "gb": 9.72,
+      "source": "https://github.com/metavoiceio/metavoice-src/blob/de3fa211ac4621e03a5f990651aeecc64da418f5/README.md",
+      "gb_source": "https://huggingface.co/metavoiceio/metavoice-1B-v0.1/tree/d7237c5cb970da187623738f2957b338f3b0889a"
+    },
+    {
+      "model": "tortoise-tts-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (coqui-tts 0.27.5)",
+      "platform": "any",
+      "gb": 4.53,
+      "source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/tortoise.md",
+      "gb_source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/tortoise.md"
+    },
+    {
+      "model": "tortoise-tts-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp16 (neonbjb/tortoise-tts)",
+      "platform": "mac",
+      "gb": 5.64,
+      "source": "https://github.com/neonbjb/tortoise-tts/blob/8a2563ecabe93c4fb626f876dd0c52c966edef2f/README.md",
+      "gb_source": "https://huggingface.co/Manmay/tortoise-tts/tree/50672670cecf2265aa61edb4eef5d1a293a8a373"
+    },
+    {
+      "model": "tortoise-tts-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp16 (neonbjb/tortoise-tts)",
+      "platform": "nvidia",
+      "gb": 5.64,
+      "source": "https://github.com/neonbjb/tortoise-tts/blob/8a2563ecabe93c4fb626f876dd0c52c966edef2f/README.md",
+      "gb_source": "https://huggingface.co/Manmay/tortoise-tts/tree/50672670cecf2265aa61edb4eef5d1a293a8a373"
+    },
+    {
+      "model": "higgs-audio-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (transformers >=5.3.0)",
+      "platform": "any",
+      "gb": 12.37,
+      "source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/blob/d80c511612b3040ff2877ce3d408747df1739f11/README.md",
+      "gb_source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/tree/d80c511612b3040ff2877ce3d408747df1739f11"
+    },
+    {
+      "model": "higgs-audio-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-8bit (mlx-audio)",
+      "platform": "mac",
+      "gb": 7,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/higgs_audio/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/higgs-audio-v2-3B-mlx-q8/tree/cada83e51fe3f49186b51738599827d6fc7850f6"
+    },
+    {
+      "model": "kyutai-tts-1-6b-en-fr",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (moshi-mlx)",
+      "platform": "mac",
+      "gb": 4.07,
+      "source": "https://github.com/kyutai-labs/delayed-streams-modeling/blob/4c4f65e147df056adf3346290d64c7b9649b18c9/README.md",
+      "gb_source": "https://huggingface.co/kyutai/tts-1.6b-en_fr/tree/f65439609986c392cb12df63938abcc550c3fb15"
+    },
+    {
+      "model": "kyutai-tts-1-6b-en-fr",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (moshi)",
+      "platform": "nvidia",
+      "gb": 4.07,
+      "source": "https://github.com/kyutai-labs/delayed-streams-modeling/blob/4c4f65e147df056adf3346290d64c7b9649b18c9/README.md",
+      "gb_source": "https://huggingface.co/kyutai/tts-1.6b-en_fr/tree/f65439609986c392cb12df63938abcc550c3fb15"
+    },
+    {
+      "model": "dots-tts-soar",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (dots.tts package CLI)",
+      "platform": "any",
+      "gb": 5.16,
+      "source": "https://github.com/studio-dots-ai/dots.tts/blob/3cb6f94a571097b500038f1619959075282c5c98/README.md",
+      "gb_source": "https://huggingface.co/dots-studio/dots.tts-soar/tree/2f9b3e18d70d670d4c701da2dc55ded5755815ce"
+    },
+    {
+      "model": "dots-tts-soar",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (dots.tts package CLI)",
+      "platform": "nvidia",
+      "gb": 5.16,
+      "source": "https://github.com/studio-dots-ai/dots.tts/blob/3cb6f94a571097b500038f1619959075282c5c98/README.md",
+      "gb_source": "https://huggingface.co/dots-studio/dots.tts-soar/tree/2f9b3e18d70d670d4c701da2dc55ded5755815ce"
+    },
+    {
+      "model": "mage-flow-base",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 13.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0"
+    },
+    {
+      "model": "mage-flow",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 13.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0"
+    },
+    {
+      "model": "mage-flow",
+      "category": "image",
+      "new_model": false,
+      "quant": "int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 8.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0"
+    },
+    {
+      "model": "mage-flow-turbo",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + Qwen3-VL 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 13.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0"
+    },
+    {
+      "model": "mage-flow-turbo",
+      "category": "image",
+      "new_model": false,
+      "quant": "int8 convrot + Qwen3-VL 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 8.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/mage_flow.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Mage-Flow/tree/6ff68fbf3c667325e961d551691b246791d5eec0"
+    },
+    {
+      "model": "sd-1-5",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+    },
+    {
+      "model": "wan-2-2-i2v-a14b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 45,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/tree/6c6717459277b9cd1f72579d78a0fd62a79e57dc"
+    },
+    {
+      "model": "wan-2-2-i2v-a14b",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 31.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/tree/6c6717459277b9cd1f72579d78a0fd62a79e57dc"
+    },
+    {
+      "model": "mms-tts-amh",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (transformers VitsModel)",
+      "platform": "any",
+      "gb": 0.15,
+      "source": "https://huggingface.co/facebook/mms-tts-amh/blob/e366aee5e22a72b9a3333e081ddafb234538d9bb/README.md",
+      "gb_source": "https://huggingface.co/facebook/mms-tts-amh/tree/e366aee5e22a72b9a3333e081ddafb234538d9bb"
+    },
+    {
+      "model": "qwen3-tts-12hz-1-7b-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (qwen-tts)",
+      "platform": "any",
+      "gb": 4.54,
+      "source": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md",
+      "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3"
+    },
+    {
+      "model": "qwen3-tts-12hz-1-7b-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-bf16 (mlx-audio)",
+      "platform": "mac",
+      "gb": 4.54,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/qwen3-tts.md",
+      "gb_source": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16/tree/a6eb4f68e4b056f1215157bb696209bc82a6db48"
+    },
+    {
+      "model": "qwen3-tts-12hz-1-7b-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (qwen-tts)",
+      "platform": "nvidia",
+      "gb": 4.54,
+      "source": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md",
+      "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3"
+    },
+    {
+      "model": "voxcpm2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (voxcpm)",
+      "platform": "any",
+      "gb": 4.96,
+      "source": "https://github.com/OpenBMB/VoxCPM/blob/f0c787f0937dc1c9a8f4f64d9a332d9c5da2e629/README.md",
+      "gb_source": "https://huggingface.co/openbmb/VoxCPM2/tree/32279effe8c19989596f05d353d1447f51d9e915"
+    },
+    {
+      "model": "voxcpm2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "q8_0 (llama.cpp-omni)",
+      "platform": "any",
+      "gb": 3.55,
+      "source": "https://github.com/OpenBMB/VoxCPM/blob/f0c787f0937dc1c9a8f4f64d9a332d9c5da2e629/README.md",
+      "gb_source": "https://huggingface.co/DennisHuang648/VoxCPM2-GGUF/tree/169f64d8b98bbaab1761e4ca3a83e6af653456cc"
+    },
+    {
+      "model": "voxcpm2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-bf16 (mlx-audio)",
+      "platform": "mac",
+      "gb": 4.96,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/VoxCPM2-bf16/tree/a7fb80d9056983135a54ca3f71fcc5a637ccddf5"
+    },
+    {
+      "model": "voxcpm2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-8bit (mlx-audio)",
+      "platform": "mac",
+      "gb": 3.23,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/VoxCPM2-8bit/tree/d52725898a0675703f7f9ddc5a4d1a3cdbb99032"
+    },
+    {
+      "model": "voxcpm2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-4bit (mlx-audio)",
+      "platform": "mac",
+      "gb": 2.3,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/VoxCPM2-4bit/tree/dc9e5c187858da5f4a13dc4c247e297339216381"
+    },
+    {
+      "model": "zonos2-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "q4_k (zonos2.cpp)",
+      "platform": "any",
+      "gb": 5.17,
+      "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+      "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57"
+    },
+    {
+      "model": "zonos2-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "q8_0 (zonos2.cpp)",
+      "platform": "any",
+      "gb": 8.8,
+      "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+      "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57"
+    },
+    {
+      "model": "zonos2-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "q4_k (zonos2.cpp)",
+      "platform": "mac",
+      "gb": 5.17,
+      "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+      "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57"
+    },
+    {
+      "model": "zonos2-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "q8_0 (zonos2.cpp)",
+      "platform": "mac",
+      "gb": 8.8,
+      "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+      "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57"
+    },
+    {
+      "model": "zonos2-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-bf16 (mlx-audio)",
+      "platform": "mac",
+      "gb": 15.64,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/zonos2/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/Zyphra-ZONOS2/tree/3ad1bd8b27d420840757b27db9917a9a8d284a2b"
+    },
+    {
+      "model": "zonos2-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (Zyphra ZONOS2 PyTorch server)",
+      "platform": "nvidia",
+      "gb": 15.67,
+      "source": "https://github.com/Zyphra/ZONOS2/blob/a5b2ee802301bd4ed8737a4911882d8ff84681bc/README.md",
+      "gb_source": "https://huggingface.co/Zyphra/ZONOS2/tree/65f1e80f94b599d474bb6af9094a803dc52f60bd"
+    },
+    {
+      "model": "indextts-2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (index-tts repo)",
+      "platform": "any",
+      "gb": 8.86,
+      "source": "https://github.com/index-tts/index-tts/blob/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md",
+      "gb_source": "https://huggingface.co/IndexTeam/IndexTTS-2/tree/740dcaff396282ffb241903d150ac011cd4b1ede"
+    },
+    {
+      "model": "sesame-csm-1b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (mlx-audio)",
+      "platform": "mac",
+      "gb": 6.61,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/csm.md",
+      "gb_source": "https://huggingface.co/mlx-community/csm-1b/tree/5bf5ec118cf45fecc7b51198fd9f1a20a5aab65a"
+    },
+    {
+      "model": "orpheus-tts-0-1-finetune-prod",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (orpheus-speech package)",
+      "platform": "nvidia",
+      "gb": 15.21,
+      "source": "https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/README.md",
+      "gb_source": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft/tree/4206a56e5a68cf6cf96900a8a78acd3370c02eb6"
+    },
+    {
+      "model": "orpheus-tts-0-1-finetune-prod",
+      "category": "tts",
+      "new_model": false,
+      "quant": "gguf Q4_K_M (orpheus-cpp 0.0.3)",
+      "platform": "any",
+      "gb": 2.42,
+      "source": "https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/additional_inference_options/no_gpu/README.md",
+      "gb_source": "https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF/tree/af161b11022b996f8ae2f54d79b8ff71c5a3fb58"
+    },
+    {
+      "model": "orpheus-tts-0-1-finetune-prod",
+      "category": "tts",
+      "new_model": false,
+      "quant": "gguf Q4_K_M (orpheus-cpp 0.0.3)",
+      "platform": "mac",
+      "gb": 2.42,
+      "source": "https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/additional_inference_options/no_gpu/README.md",
+      "gb_source": "https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF/tree/af161b11022b996f8ae2f54d79b8ff71c5a3fb58"
+    },
+    {
+      "model": "qwen-image-2-1",
+      "category": "image",
+      "new_model": false,
+      "quant": "int8 convrot + Qwen3-VL 8B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 16.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_2.1.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/cb504a4090723e43f17ad01cec0359490e2de613"
+    },
+    {
+      "model": "qwen-image-2-1",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 12.4,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_2.1.md",
+      "gb_source": "https://huggingface.co/leejet/Qwen-Image-2.1-GGUF/tree/cc11433936a06e9765f7c0c0b1f0436cfd2b9856"
+    },
+    {
+      "model": "flux-1-kontext-dev",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 28.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/kontext.md",
+      "gb_source": "https://huggingface.co/QuantStack/FLUX.1-Kontext-dev-GGUF/tree/2d083027732f81e5548620b57ac47da22d30aa5a"
+    },
+    {
+      "model": "flux-1-kontext-dev",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 21.3,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/kontext.md",
+      "gb_source": "https://huggingface.co/QuantStack/FLUX.1-Kontext-dev-GGUF/tree/2d083027732f81e5548620b57ac47da22d30aa5a"
+    },
+    {
+      "model": "qwen-image-edit",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q8_0 + Qwen2.5-VL bf16 (sd.cpp)",
+      "platform": "any",
+      "gb": 46.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+      "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-Edit-GGUF/tree/acab6f9f09973bc8a128a1e04e809acb65784e1c"
+    },
+    {
+      "model": "qwen-image-edit",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 27.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+      "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-Edit-GGUF/tree/acab6f9f09973bc8a128a1e04e809acb65784e1c"
+    },
+    {
+      "model": "qwen-image-edit-2511",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + Qwen2.5-VL bf16 (sd.cpp)",
+      "platform": "any",
+      "gb": 36.6,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+      "gb_source": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/tree/0d33d9692b4b26212297240d87b0d4719aa4fd06"
+    },
+    {
+      "model": "sd-3-medium",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp16 incl. CLIPs + T5 (sd.cpp)",
+      "platform": "any",
+      "gb": 19.4,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/19b7f516efea082d257947e057e6f419e26fd497"
+    },
+    {
+      "model": "sd-3-medium",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 10.5,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-3-medium/tree/19b7f516efea082d257947e057e6f419e26fd497"
+    },
+    {
+      "model": "ltx-2-3",
+      "category": "video",
+      "new_model": false,
+      "quant": "gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4 (sd.cpp)",
+      "platform": "any",
+      "gb": 34.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ltx2.md",
+      "gb_source": "https://huggingface.co/unsloth/LTX-2.3-GGUF/tree/96e8ed4925ead3db9ff4d0084f165ef6a74f28d0"
+    },
+    {
+      "model": "ltx-2-19b-distilled",
+      "category": "video",
+      "new_model": false,
+      "quant": "Draw Things q6p",
+      "platform": "mac",
+      "gb": 40.9,
+      "source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/.agents/skills/use-drawthings-cli/SKILL.md",
+      "gb_source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/Libraries/ModelZoo/Sources/ModelZoo.swift"
+    },
+    {
+      "model": "qwen-image-edit-2509",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 26.2,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image_edit.md",
+      "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-Edit-2509-GGUF/tree/84a3006979126011422eeeefe0c9485ddf431ef5"
+    },
+    {
+      "model": "wan-2-1-1-3b",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp16 + umt5 q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 11.5,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d"
+    },
+    {
+      "model": "wan-2-1-1-3b",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp16 + umt5 q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 8.6,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/wan.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d"
+    },
+    {
+      "model": "z-image-base",
+      "category": "image",
+      "new_model": false,
+      "quant": "bf16 + Qwen3 4B bf16 (sd.cpp)",
+      "platform": "any",
+      "gb": 25.3,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md",
+      "gb_source": "https://huggingface.co/Comfy-Org/z_image/tree/94d47a468ec820d29a5dc09d4642539d76d49542"
+    },
+    {
+      "model": "z-image-base",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + Qwen3 4B q4_k_m (sd.cpp)",
+      "platform": "any",
+      "gb": 10,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md",
+      "gb_source": "https://huggingface.co/unsloth/Z-Image-GGUF/tree/c9913e69743c5d9dfa7fdac58a0cc5709a17aa08"
+    },
+    {
+      "model": "longcat-image",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)",
+      "platform": "any",
+      "gb": 15,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/longcat_image.md",
+      "gb_source": "https://huggingface.co/vantagewithai/LongCat-Image-GGUF/tree/22f38d64150ed3a99454e5e3a3bbfcf639969b05"
+    },
+    {
+      "model": "sd-1-1",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-1-original/tree/4af21d8d72447c27b5ba6fa1c86b6df07da3c4e6"
+    },
+    {
+      "model": "sd-1-2",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-2-original/tree/affd5d8c5fda56a6c7cdc10aa18f1e37329ebd96"
+    },
+    {
+      "model": "sd-1-4",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/f0bb45b49990512c454cf2c5670b0952ef2f9c71"
+    },
+    {
+      "model": "dreamlike-photoreal-2-0",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0/tree/d9e27ac81cfa72def39d74ca673219c349f0a0d5"
+    },
+    {
+      "model": "sdxl-0-9",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 4.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9/tree/ccb3e0a2bfc06b2c27b38c54684074972c365258"
+    },
+    {
+      "model": "openjourney",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/prompthero/openjourney/tree/f4572661b028c732b2b97c8fbdc32fa5db3afe03"
+    },
+    {
+      "model": "playground-v2",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp16 (sd.cpp)",
+      "platform": "any",
+      "gb": 8.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic/tree/737a24ebe3ae4e5421110879168be188853d86c8"
+    },
+    {
+      "model": "playground-v2",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 4.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic/tree/737a24ebe3ae4e5421110879168be188853d86c8"
+    },
+    {
+      "model": "sdxl-lightning-4-step",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp16 (sd.cpp)",
+      "platform": "any",
+      "gb": 8.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/ByteDance/SDXL-Lightning/tree/c9a24f48e1c025556787b0c58dd67a091ece2e44"
+    },
+    {
+      "model": "sdxl-lightning-4-step",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 4.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/ByteDance/SDXL-Lightning/tree/c9a24f48e1c025556787b0c58dd67a091ece2e44"
+    },
+    {
+      "model": "sdxl-turbo",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp16 (sd.cpp)",
+      "platform": "any",
+      "gb": 8.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/sdxl-turbo/tree/71153311d3dbb46851df1931d3ca6e939de83304"
+    },
+    {
+      "model": "sdxl-turbo",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 4.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/stabilityai/sdxl-turbo/tree/71153311d3dbb46851df1931d3ca6e939de83304"
+    },
+    {
+      "model": "lcm-dreamshaper-v7",
+      "category": "image",
+      "new_model": false,
+      "quant": "openvino-int8 (OpenVINO GenAI)",
+      "platform": "any",
+      "gb": 1.7,
+      "source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-int8-ov/blob/340a03e5488f36f7f222e6efa29819850ad7e4be/README.md",
+      "gb_source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-int8-ov/tree/340a03e5488f36f7f222e6efa29819850ad7e4be"
+    },
+    {
+      "model": "lcm-dreamshaper-v7",
+      "category": "image",
+      "new_model": false,
+      "quant": "openvino-fp16 (OpenVINO GenAI)",
+      "platform": "any",
+      "gb": 3,
+      "source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-fp16-ov/blob/dd6f0cf47b09e43f23125dbc3c79c7a3c3416309/README.md",
+      "gb_source": "https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-fp16-ov/tree/dd6f0cf47b09e43f23125dbc3c79c7a3c3416309"
+    },
+    {
+      "model": "ssd-1b",
+      "category": "image",
+      "new_model": false,
+      "quant": "fp16 (sd.cpp)",
+      "platform": "any",
+      "gb": 5.9,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/distilled_sd.md",
+      "gb_source": "https://huggingface.co/segmind/SSD-1B/tree/60987f37e94cd59c36b1cba832b9f97b57395a10"
+    },
+    {
+      "model": "ssd-1b",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 3.3,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/distilled_sd.md",
+      "gb_source": "https://huggingface.co/segmind/SSD-1B/tree/60987f37e94cd59c36b1cba832b9f97b57395a10"
+    },
+    {
+      "model": "ltx-video-0-9",
+      "category": "video",
+      "new_model": false,
+      "quant": "openvino-int8 (OpenVINO GenAI, one-time export)",
+      "platform": "any",
+      "gb": 34.6,
+      "source": "https://github.com/openvinotoolkit/openvino.genai/blob/ab01d1771e4adaa0e1e08e9d630def170572506c/samples/python/video_generation/README.md",
+      "gb_source": "https://huggingface.co/Lightricks/LTX-Video/tree/8984fa2"
+    },
+    {
+      "model": "ltx-video-0-9",
+      "category": "video",
+      "new_model": false,
+      "quant": "bf16 (official inference.py, MPS)",
+      "platform": "mac",
+      "gb": 34.6,
+      "source": "https://github.com/Lightricks/LTX-Video/blob/727f5d6c2c73e93e4bd004d62dafa46f8b9ce8d6/README.md",
+      "gb_source": "https://huggingface.co/Lightricks/LTX-Video/tree/8984fa2"
+    },
+    {
+      "model": "t2v-turbo-v2",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp32 checkpoints (official Gradio demo, MPS)",
+      "platform": "mac",
+      "gb": 16.2,
+      "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
+      "gb_source": "https://huggingface.co/VideoCrafter/VideoCrafter2/tree/7b40798"
+    },
+    {
+      "model": "t2v-turbo-vc2",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp32 checkpoints (official Gradio demo, MPS)",
+      "platform": "mac",
+      "gb": 9.9,
+      "source": "https://github.com/Ji4chenLi/t2v-turbo/blob/eaae323f10d136796a33e8f5304ed50e40def570/README.md",
+      "gb_source": "https://huggingface.co/VideoCrafter/VideoCrafter2/tree/7b40798"
+    },
+    {
+      "model": "styletts-2-libritts",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (styletts2 PyPI package 0.1.6)",
+      "platform": "any",
+      "gb": 0.91,
+      "source": "https://github.com/sidharthrajaram/StyleTTS2/blob/350b8889d75a52c2c695dafa7ba4682386be0b96/README.md",
+      "gb_source": "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/tree/3aa7ba7f8f275ec13dce21682a61494c35089e2a"
+    },
+    {
+      "model": "fish-speech-1-2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (fish-speech repo)",
+      "platform": "nvidia",
+      "gb": 1.15,
+      "source": "https://github.com/fishaudio/fish-speech/blob/5dd593fef32546f2c0a7d99babbbb27a9478d759/docs/en/inference.md",
+      "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.2/tree/ef257fd7165af434a0e4dcd483c7c78cce72576f"
+    },
+    {
+      "model": "fish-speech-1-5",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (fish-speech repo)",
+      "platform": "any",
+      "gb": 1.47,
+      "source": "https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md",
+      "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c"
+    },
+    {
+      "model": "fish-speech-1-5",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (fish-speech repo)",
+      "platform": "mac",
+      "gb": 1.47,
+      "source": "https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md",
+      "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c"
+    },
+    {
+      "model": "fish-speech-1-5",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (fish-speech repo)",
+      "platform": "nvidia",
+      "gb": 1.47,
+      "source": "https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md",
+      "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c"
+    },
+    {
+      "model": "amphion-valle-librilight-6k",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (Amphion repo recipe)",
+      "platform": "nvidia",
+      "gb": 1.56,
+      "source": "https://huggingface.co/amphion/valle_librilight_6k/blob/73979654834196d13f4cc78fb5a90043c1868bdc/README.md",
+      "gb_source": "https://huggingface.co/amphion/valle_librilight_6k/tree/73979654834196d13f4cc78fb5a90043c1868bdc"
+    },
+    {
+      "model": "amphion-valle-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (Amphion repo)",
+      "platform": "any",
+      "gb": 2.86,
+      "source": "https://github.com/open-mmlab/Amphion/blob/6b1411c7a415af40a775dc940c3b29fc18d37970/egs/tts/VALLE_V2/demo.ipynb",
+      "gb_source": "https://huggingface.co/amphion/valle/tree/f609fdac0d76f275f2008f01ca98ff02c1fd4b64"
+    },
+    {
+      "model": "amphion-naturalspeech2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (Amphion repo recipe)",
+      "platform": "nvidia",
+      "gb": 1.66,
+      "source": "https://huggingface.co/amphion/naturalspeech2_libritts/blob/12d88cd539fa1829f01febd8f7d4d71d940d6538/README.md",
+      "gb_source": "https://huggingface.co/amphion/naturalspeech2_libritts/tree/12d88cd539fa1829f01febd8f7d4d71d940d6538"
+    },
+    {
+      "model": "openvoice-v1",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (myshell-ai/OpenVoice)",
+      "platform": "any",
+      "gb": 0.3,
+      "source": "https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part1.ipynb (install: https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/docs/USAGE.md)",
+      "gb_source": "https://huggingface.co/myshell-ai/OpenVoice/tree/c70fc8b939bd1d8213994ff7c88e32be39708271"
+    },
+    {
+      "model": "bark",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (transformers)",
+      "platform": "any",
+      "gb": 4.49,
+      "source": "https://huggingface.co/suno/bark/blob/70a8a7d34168586dc5d028fa9666aceade177992/README.md",
+      "gb_source": "https://huggingface.co/suno/bark/tree/70a8a7d34168586dc5d028fa9666aceade177992"
+    },
+    {
+      "model": "amphion-vevo",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (Amphion repo)",
+      "platform": "any",
+      "gb": 6.78,
+      "source": "https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/vc/vevo/README.md",
+      "gb_source": "https://huggingface.co/amphion/Vevo/tree/7edf4640c400c20542aa39c45b63f60e6c7baba0"
+    },
+    {
+      "model": "hierspeechpp-v1-1",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (repo inference.py)",
+      "platform": "nvidia",
+      "gb": 2.1,
+      "source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+      "gb_source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md"
+    },
+    {
+      "model": "gpt-sovits-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (repo api_v2.py)",
+      "platform": "any",
+      "gb": 1.1,
+      "source": "https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/api_v2.py",
+      "gb_source": "https://huggingface.co/lj1995/GPT-SoVITS/tree/336b2ec4e8d4ac74740798dd40af44e74659ecaf"
+    },
+    {
+      "model": "gpt-sovits-v2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp16 (repo api_v2.py)",
+      "platform": "nvidia",
+      "gb": 1.1,
+      "source": "https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/api_v2.py",
+      "gb_source": "https://huggingface.co/lj1995/GPT-SoVITS/tree/336b2ec4e8d4ac74740798dd40af44e74659ecaf"
+    },
+    {
+      "model": "speecht5-tts",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (transformers)",
+      "platform": "any",
+      "gb": 0.65,
+      "source": "https://huggingface.co/microsoft/speecht5_tts/blob/30fcde30f19b87502b8435427b5f5068e401d5f6/README.md",
+      "gb_source": "https://huggingface.co/microsoft/speecht5_tts/tree/30fcde30f19b87502b8435427b5f5068e401d5f6"
+    },
+    {
+      "model": "cosyvoice-300m",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (CosyVoice repo)",
+      "platform": "any",
+      "gb": 2.3,
+      "source": "https://huggingface.co/FunAudioLLM/CosyVoice-300M/blob/24c40509c3c5ea6fe06b5f8790ff99e3714a6bee/README.md",
+      "gb_source": "https://huggingface.co/FunAudioLLM/CosyVoice-300M/tree/24c40509c3c5ea6fe06b5f8790ff99e3714a6bee"
+    },
+    {
+      "model": "cosyvoice2-0-5b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (CosyVoice repo)",
+      "platform": "any",
+      "gb": 4.07,
+      "source": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/blob/eec1ae6c79877dbd9379285cf8789c9e0879293d/README.md",
+      "gb_source": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/tree/eec1ae6c79877dbd9379285cf8789c9e0879293d"
+    },
+    {
+      "model": "fireredtts-1",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (FireRedTTS repo)",
+      "platform": "nvidia",
+      "gb": 3.09,
+      "source": "https://huggingface.co/FireRedTeam/FireRedTTS/blob/2447325dc4dade22b945c22284e8db0223125a07/README.md",
+      "gb_source": "https://huggingface.co/FireRedTeam/FireRedTTS/tree/2447325dc4dade22b945c22284e8db0223125a07"
+    },
+    {
+      "model": "indextts",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 on CPU (index-tts repo CLI `indextts`)",
+      "platform": "any",
+      "gb": 1.22,
+      "source": "https://github.com/index-tts/index-tts/blob/8d2759b2b73b920e58ccc0167fc2a445fb170860/README.md",
+      "gb_source": "https://huggingface.co/IndexTeam/Index-TTS/tree/146f5cbb46b9c98ba1075ecf9d4b6cc4ad6b7f18"
+    },
+    {
+      "model": "spark-tts-0-5b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (Spark-TTS repo CLI)",
+      "platform": "any",
+      "gb": 3.92,
+      "source": "https://github.com/SparkAudio/Spark-TTS/blob/2f1ea9082400547242641f5271b6f941c9f439d1/README.md",
+      "gb_source": "https://huggingface.co/SparkAudio/Spark-TTS-0.5B/tree/642071559bfc6346c2359d19dcb6be3f9dd8a05d"
+    },
+    {
+      "model": "spark-tts-0-5b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-bf16 (mlx-audio 0.5.x)",
+      "platform": "mac",
+      "gb": 2.9,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/Spark-TTS-0.5B-bf16/tree/cac753e3cf9d9d92524eb15fe256efc7db45ce7e"
+    },
+    {
+      "model": "llasa-8b",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (transformers + xcodec2)",
+      "platform": "nvidia",
+      "gb": 20.43,
+      "source": "https://huggingface.co/HKUSTAudio/Llasa-8B/blob/2a8339e387348a5cad5160b978a6f364fa06ad74/README.md",
+      "gb_source": "https://huggingface.co/HKUSTAudio/Llasa-8B/tree/2a8339e387348a5cad5160b978a6f364fa06ad74"
+    },
+    {
+      "model": "hierspeechpp-libritts960",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (repo inference.py)",
+      "platform": "nvidia",
+      "gb": 2.1,
+      "source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+      "gb_source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md"
+    },
+    {
+      "model": "yourtts",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (coqui-tts)",
+      "platform": "any",
+      "gb": 0.42,
+      "source": "https://github.com/Edresson/YourTTS/blob/23904e6b7158d42cacf2a94dba0791ef69f1e2a9/README.md",
+      "gb_source": "https://github.com/Edresson/YourTTS/blob/23904e6b7158d42cacf2a94dba0791ef69f1e2a9/README.md"
+    },
+    {
+      "model": "voicecraft-830m",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (VoiceCraft repo)",
+      "platform": "any",
+      "gb": 4.53,
+      "source": "https://github.com/jasonppy/VoiceCraft/blob/f0a7a971363905883a21c466a3aa4ea2d4c0b690/README.md",
+      "gb_source": "https://huggingface.co/pyp1/VoiceCraft_giga830M/tree/472414217688325adc0143884bc5c7ce3b6eb427"
+    },
+    {
+      "model": "zipvoice",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (ZipVoice repo)",
+      "platform": "any",
+      "gb": 0.55,
+      "source": "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/README.md",
+      "gb_source": "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b"
+    },
+    {
+      "model": "zipvoice",
+      "category": "tts",
+      "new_model": false,
+      "quant": "onnx-fp32 (ZipVoice repo)",
+      "platform": "any",
+      "gb": 0.55,
+      "source": "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/zipvoice/bin/infer_zipvoice_onnx.py",
+      "gb_source": "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b"
+    },
+    {
+      "model": "zipvoice",
+      "category": "tts",
+      "new_model": false,
+      "quant": "onnx-int8 (ZipVoice repo)",
+      "platform": "any",
+      "gb": 0.18,
+      "source": "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/zipvoice/bin/infer_zipvoice_onnx.py",
+      "gb_source": "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b"
+    },
+    {
+      "model": "wayu-paxa-tts-edge",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (wayu-tts package)",
+      "platform": "any",
+      "gb": 0.33,
+      "source": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/blob/8196688df56a8d08ccfa186505343adff412ab6b/README.md",
+      "gb_source": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/tree/8196688df56a8d08ccfa186505343adff412ab6b"
+    },
+    {
+      "model": "fun-cosyvoice3-0-5b-2512",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (CosyVoice repo)",
+      "platform": "any",
+      "gb": 5.42,
+      "source": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512/blob/29e01c4e8d000f4bcd70751be16fa94bf3d85a18/README.md",
+      "gb_source": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512/tree/29e01c4e8d000f4bcd70751be16fa94bf3d85a18"
+    },
+    {
+      "model": "outetts-0-2-500m",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (outetts 0.3.3)",
+      "platform": "any",
+      "gb": 1.35,
+      "source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/blob/71d6994ffa92c066628d83db99f1298516ece592/README.md",
+      "gb_source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/tree/71d6994ffa92c066628d83db99f1298516ece592"
+    },
+    {
+      "model": "outetts-0-2-500m",
+      "category": "tts",
+      "new_model": false,
+      "quant": "q8_0 (outetts 0.3.3 + llama-cpp-python)",
+      "platform": "any",
+      "gb": 0.88,
+      "source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/blob/71d6994ffa92c066628d83db99f1298516ece592/README.md",
+      "gb_source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M-GGUF/tree/e6d78720d2a8edce2bc8f5c5c2d0332e57091930"
+    },
+    {
+      "model": "vall-e-x-plachtaa",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (Plachtaa/VALL-E-X repo)",
+      "platform": "any",
+      "gb": 1.62,
+      "source": "https://github.com/Plachtaa/VALL-E-X/blob/3faaf8ccadb154d63b38070caf518ce9309ea0f4/README.md",
+      "gb_source": "https://huggingface.co/Plachta/VALL-E-X/tree/d7240d71278df7b8ab9960f5b91107de15a2d016"
+    },
+    {
+      "model": "vits-vctk",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (jaywalnut310/vits repo)",
+      "platform": "nvidia",
+      "gb": 0.16,
+      "source": "https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/inference.ipynb",
+      "gb_source": "https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/inference.ipynb"
+    },
+    {
+      "model": "supertonic-3",
+      "category": "tts",
+      "new_model": false,
+      "quant": "onnx-fp32 (supertonic Python SDK 1.3.x)",
+      "platform": "any",
+      "gb": 0.4,
+      "source": "https://github.com/supertone-oss-archive/supertonic-py/blob/df0f9686dac7fbbde391b759e2ee5286a3737622/docs/quickstart.md",
+      "gb_source": "https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323"
+    },
+    {
+      "model": "supertonic-3",
+      "category": "tts",
+      "new_model": false,
+      "quant": "onnx-fp32 (Supertonic sample code)",
+      "platform": "any",
+      "gb": 0.4,
+      "source": "https://github.com/supertone-oss-archive/supertonic/blob/1e9799e964ea4c0dad7cde993b65c3c813a7b373/README.md",
+      "gb_source": "https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323"
+    },
+    {
+      "model": "chatterbox-multilingual-v3",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32",
+      "platform": "nvidia",
+      "gb": 3.2,
+      "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+      "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18"
+    },
+    {
+      "model": "chatterbox-multilingual-v3",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (chatterbox)",
+      "platform": "any",
+      "gb": 3.21,
+      "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+      "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18"
+    },
+    {
+      "model": "chatterbox-multilingual-v3",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (chatterbox)",
+      "platform": "mac",
+      "gb": 3.21,
+      "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+      "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18"
+    },
+    {
+      "model": "qwen3-tts-12hz-0-6b-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (qwen-tts)",
+      "platform": "any",
+      "gb": 2.52,
+      "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/blob/5d83992436eae1d760afd27aff78a71d676296fc/README.md",
+      "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc"
+    },
+    {
+      "model": "qwen3-tts-12hz-0-6b-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "mlx-bf16 (mlx-audio)",
+      "platform": "mac",
+      "gb": 2.52,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/qwen3-tts.md",
+      "gb_source": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16/tree/1eccf1cb2519b5a4e8a95b5f0544f3303568164f"
+    },
+    {
+      "model": "qwen3-tts-12hz-0-6b-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (qwen-tts)",
+      "platform": "nvidia",
+      "gb": 2.52,
+      "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/blob/5d83992436eae1d760afd27aff78a71d676296fc/README.md",
+      "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc"
+    },
+    {
+      "model": "moss-tts-v1-5",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (transformers 5)",
+      "platform": "any",
+      "gb": 24.08,
+      "source": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/blob/cdd3b911b1585e3f2dbc7775ef10f9926f58850a/README.md",
+      "gb_source": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/tree/cdd3b911b1585e3f2dbc7775ef10f9926f58850a"
+    },
+    {
+      "model": "moss-tts-v1-5",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (mlx-audio 0.5.x)",
+      "platform": "mac",
+      "gb": 24.08,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/moss_tts/README.md",
+      "gb_source": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/tree/cdd3b911b1585e3f2dbc7775ef10f9926f58850a"
+    },
+    {
+      "model": "fireredtts3-base",
+      "category": "tts",
+      "new_model": false,
+      "quant": "bf16 (FireRedTTS3 repo)",
+      "platform": "nvidia",
+      "gb": 12.3,
+      "source": "https://huggingface.co/FireRedTeam/FireRedTTS3/blob/dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610/README.md",
+      "gb_source": "https://huggingface.co/FireRedTeam/FireRedTTS3/tree/dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610"
+    },
+    {
+      "model": "ovis-image-7b",
+      "category": "image",
+      "new_model": false,
+      "quant": "gguf-q4_0 + Ovis 2.5 (sd.cpp)",
+      "platform": "any",
+      "gb": 12.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/ovis_image.md",
+      "gb_source": "https://huggingface.co/leejet/Ovis-Image-7B-GGUF/tree/0e0e56e1d63bf3c57282cf11846211e683f68871"
+    },
+    {
+      "model": "sd-1-3",
+      "category": "image",
+      "new_model": false,
+      "quant": "q8_0 (sd.cpp --type)",
+      "platform": "any",
+      "gb": 2.1,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/sd.md",
+      "gb_source": "https://huggingface.co/CompVis/stable-diffusion-v-1-3-original/tree/3d1f90b6a4affd6565e502f3b40525cd2ab29ae0"
+    },
+    {
+      "model": "dmospeech-2",
+      "category": "tts",
+      "new_model": false,
+      "quant": "fp32 (DMOSpeech2 repo)",
+      "platform": "nvidia",
+      "gb": 4.34,
+      "source": "https://github.com/yl4579/DMOSpeech2/blob/10c2255a59b96c311c317536603a18672e69ac84/src/demo.ipynb",
+      "gb_source": "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910"
+    },
+    {
+      "model": "animatediff-v1-5-2",
+      "category": "video",
+      "new_model": false,
+      "quant": "fp32 motion module + SD 1.5 (sd.cpp)",
+      "platform": "any",
+      "gb": 7.8,
+      "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/animatediff.md",
+      "gb_source": "https://huggingface.co/guoyww/animatediff/tree/fdfe36afa161e51b3e9c24022b0e368d59e7345e"
+    },
+    {
+      "model": "melotts-english",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (MeloTTS repo CLI)",
+      "platform": "any",
+      "gb": 0.65,
+      "source": "https://github.com/myshell-ai/MeloTTS/blob/209145371cff8fc3bd60d7be902ea69cbdb7965a/docs/install.md",
+      "gb_source": "https://huggingface.co/myshell-ai/MeloTTS-English/tree/bb4fb7346d566d277ba8c8c7dbfdf6786139b8ef"
+    },
+    {
+      "model": "melotts-english",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (mlx-audio)",
+      "platform": "mac",
+      "gb": 0.65,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/MeloTTS-English-MLX/tree/30a1b9d981b4ed3d80b312a9979f2b39b1aed42a"
+    },
+    {
+      "model": "neutts-air",
+      "category": "tts",
+      "new_model": true,
+      "quant": "q4_0 (neutts 1.4.1)",
+      "platform": "any",
+      "gb": 4.01,
+      "source": "https://huggingface.co/neuphonic/neutts-air/blob/3bf9403646f0ca46a3f2250355d2ce4d1f70559c/README.md",
+      "gb_source": "https://huggingface.co/neuphonic/neutts-air-q4-gguf/tree/0f54a5513ee49708713e49c5122c274df2737047"
+    },
+    {
+      "model": "neutts-air",
+      "category": "tts",
+      "new_model": true,
+      "quant": "bf16 (neutts 1.4.1)",
+      "platform": "any",
+      "gb": 5,
+      "source": "https://github.com/neuphonic/neutts/blob/ac69851f28fc63a487917e7c2e27f0d75c759cba/README.md",
+      "gb_source": "https://huggingface.co/neuphonic/neutts-air/tree/3bf9403646f0ca46a3f2250355d2ce4d1f70559c"
+    },
+    {
+      "model": "neutts-air",
+      "category": "tts",
+      "new_model": true,
+      "quant": "bf16 (neutts 1.4.1)",
+      "platform": "mac",
+      "gb": 4.98,
+      "source": "https://github.com/neuphonic/neutts/blob/ac69851f28fc63a487917e7c2e27f0d75c759cba/examples/basic_example.py",
+      "gb_source": "https://huggingface.co/neuphonic/neutts-air/tree/3bf9403646f0ca46a3f2250355d2ce4d1f70559c"
+    },
+    {
+      "model": "parler-tts-mini-v1",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (parler-tts)",
+      "platform": "any",
+      "gb": 3.51,
+      "source": "https://huggingface.co/parler-tts/parler-tts-mini-v1/blob/0392b9451a601e528fd863bbb0598431fee810d9/README.md",
+      "gb_source": "https://huggingface.co/parler-tts/parler-tts-mini-v1/tree/0392b9451a601e528fd863bbb0598431fee810d9"
+    },
+    {
+      "model": "piper-en-us-lessac-medium",
+      "category": "tts",
+      "new_model": true,
+      "quant": "onnx-fp32 (piper-tts 1.8.0)",
+      "platform": "any",
+      "gb": 0.06,
+      "source": "https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/docs/CLI.md",
+      "gb_source": "https://huggingface.co/rhasspy/piper-voices/tree/c10ece1aade47bb51c153c893d14e5bf8e5b7117"
+    },
+    {
+      "model": "kitten-tts-mini-0-8",
+      "category": "tts",
+      "new_model": true,
+      "quant": "onnx (kittenml 0.9.3)",
+      "platform": "any",
+      "gb": 0.08,
+      "source": "https://github.com/KittenML/KittenTTS/blob/ab5592c28b6f376ea4c3963e84ce6d6688241eca/docs/onnx-models.md",
+      "gb_source": "https://huggingface.co/KittenML/kitten-tts-mini-0.8/tree/c02725660cea441db4c383af69f1f26f5cd00947"
+    },
+    {
+      "model": "kitten-tts-mini-0-8",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (mlx-audio)",
+      "platform": "mac",
+      "gb": 0.29,
+      "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md",
+      "gb_source": "https://huggingface.co/mlx-community/kitten-tts-mini-0.8/tree/a22cce835c4af60bf9a50779124cf8cc34b0c36e"
+    },
+    {
+      "model": "kitten-tts-2",
+      "category": "tts",
+      "new_model": true,
+      "quant": "ternary-packed LM (kittenml 0.9.3)",
+      "platform": "any",
+      "gb": 2.07,
+      "source": "https://github.com/KittenML/KittenTTS/blob/ab5592c28b6f376ea4c3963e84ce6d6688241eca/README.md",
+      "gb_source": "https://huggingface.co/KittenML/kitten-tts-2/tree/baa41e5d2c5f64be0095365672a7858542261271"
+    },
+    {
+      "model": "pocket-tts",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (pocket-tts 3.3.0)",
+      "platform": "any",
+      "gb": 0.23,
+      "source": "https://github.com/kyutai-labs/pocket-tts/blob/41cbc84af539ea78a804ffca5f9c6edc1a22ce44/README.md",
+      "gb_source": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/e7205b6ee50e654a5ea19f0e9df2b0813b05e921"
+    },
+    {
+      "model": "dia-1-6b-0626",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (nari-labs/dia repo)",
+      "platform": "any",
+      "gb": 6.75,
+      "source": "https://github.com/nari-labs/dia/blob/876125e461a03b157ec905b0fe8b57a0f8b9e7a0/example/simple-cpu.py",
+      "gb_source": "https://huggingface.co/nari-labs/Dia-1.6B-0626/tree/ef2795fcc29c5abe6ffc91fd33808588b49bbc66"
+    },
+    {
+      "model": "dia-1-6b-0626",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp16 (nari-labs/dia repo)",
+      "platform": "mac",
+      "gb": 6.75,
+      "source": "https://github.com/nari-labs/dia/blob/876125e461a03b157ec905b0fe8b57a0f8b9e7a0/example/simple-mac.py",
+      "gb_source": "https://huggingface.co/nari-labs/Dia-1.6B-0626/tree/ef2795fcc29c5abe6ffc91fd33808588b49bbc66"
+    },
+    {
+      "model": "chatterbox-turbo",
+      "category": "tts",
+      "new_model": true,
+      "quant": "fp32 (chatterbox-tts 0.1.7)",
+      "platform": "any",
+      "gb": 2.99,
+      "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+      "gb_source": "https://huggingface.co/ResembleAI/chatterbox-turbo/tree/749d1c1a46eb10492095d68fbcf55691ccf137cd"
+    }
+  ],
+  "removed_variants": [
+    {
+      "model": "kokoro-82m",
+      "cmd_prefix": "uv tool install kokoro-tts",
+      "reason": "unofficial wrapper not linked by the official README or card"
+    },
+    {
+      "model": "magpie-tts-multilingual-357m",
+      "cmd_prefix": "git clone --recursive https://github.com/mudler/magpie-tts.cpp",
+      "reason": "community port not linked by the official card; replaced by NVIDIA NeMo-Speech.cpp"
+    },
+    {
+      "model": "vibevoice-1-5b",
+      "cmd_prefix": "git clone https://github.com/vibevoice-community/VibeVoice",
+      "reason": "community fork sourced from a blog; replaced by the official transformers docs path"
+    }
+  ],
+  "corrected_variants": [
+    "chatterbox-multilingual-v3 (nvidia: install from source)",
+    "fish-audio-s2-pro (nvidia: codes and codec paths)",
+    "openaudio-s1-mini (nvidia: pinned to d3df505)",
+    "zonos-v0-1 (platform any)",
+    "bark (platform any)"
+  ],
+  "new_model_ids": [
+    "melotts-english",
+    "neutts-air",
+    "parler-tts-mini-v1",
+    "piper-en-us-lessac-medium",
+    "kitten-tts-mini-0-8",
+    "kitten-tts-2",
+    "pocket-tts",
+    "dia-1-6b-0626",
+    "chatterbox-turbo"
+  ],
+  "new_result_keys": [
+    "melotts-english|versa-librispeech-test-clean-utmos|https://arxiv.org/html/2412.17667v2",
+    "parler-tts-mini-v1|versa-librispeech-test-clean-utmos|https://arxiv.org/html/2412.17667v2",
+    "cosyvoice-300m|versa-librispeech-test-clean-utmos|https://arxiv.org/html/2412.17667v2",
+    "vall-e-x-plachtaa|versa-librispeech-test-clean-utmos|https://arxiv.org/html/2412.17667v2",
+    "amphion-valle-v2|versa-librispeech-test-clean-utmos|https://arxiv.org/html/2412.17667v2",
+    "amphion-naturalspeech2|versa-librispeech-test-clean-utmos|https://arxiv.org/html/2412.17667v2",
+    "neutts-air|codecmos-accent-vctk-clone-nat-mos|https://arxiv.org/html/2603.14328v1",
+    "neutts-air|codecmos-accent-vctk-clone-spk-mos|https://arxiv.org/html/2603.14328v1"
+  ],
+  "new_sources": [
+    "speech-versa-toolkit-ccby"
+  ],
+  "new_benchmarks": [
+    "versa-librispeech-test-clean-utmos"
+  ],
+  "calibration_tts": {
+    "before": {
+      "scored": 111,
+      "loo_r_without_floor": 0.652,
+      "err_p90": 6.7
+    },
+    "with_versa_wer": {
+      "scored": 114,
+      "loo_r_without_floor": 0.629,
+      "err_p90": 9.5
+    },
+    "final": {
+      "scored": 114,
+      "loo_r_without_floor": 0.658,
+      "err_p90": 6.8
+    }
+  },
+  "held_back": [
+    {
+      "item": "VERSA Whisper-WER column",
+      "reason": "poor fit (noise 0.72); Whisper size not stated"
+    },
+    {
+      "item": "sanoTTS Piper amy/kristin and TinyTTS rows (arXiv:2608.21378v1)",
+      "reason": "no catalogued systems; isolated series"
+    },
+    {
+      "item": "5uck1ess/tts-bench scores",
+      "reason": "licence covers code only"
+    },
+    {
+      "item": "SD 2.0/2.1 run options",
+      "reason": "official Stability repositories return 401; only a community mirror is linked"
+    },
+    {
+      "item": "SD 3.5 Medium, FLUX.1 Krea dev, Krea 2 Turbo, HiDream-O1-Image full, PixArt-alpha, Playground v2.5, LLaDA-Image (sd.cpp)",
+      "reason": "no documented command for the exact checkpoint, or file mismatch"
+    },
+    {
+      "item": "LCM-SDXL, LCM-SSD-1B, SDXL-Turbo via FastSD/OpenVINO",
+      "reason": "removed from documented lists or commands assembled from flags"
+    },
+    {
+      "item": "HunyuanVideo 1.5 I2V and LTX-2 19B via sd.cpp",
+      "reason": "not documented by stable-diffusion.cpp"
+    },
+    {
+      "item": "CogVideoX (Rapid-MLX)",
+      "reason": "serves CogVideoX-Fun, identity mismatch"
+    },
+    {
+      "item": "ZeroScope, Wan 2.1 1.3B, SVD-XT OpenVINO notebooks",
+      "reason": "notebook only; ZeroScope needs >=24 GB; others swap weights"
+    },
+    {
+      "item": "mlx-video Wan; Rapid-MLX LTX-2.3 q4",
+      "reason": "stale documented module paths; community quant with unknown dev/distilled identity"
+    },
+    {
+      "item": "2- and 3-bit video quantisations",
+      "reason": "not added just to fill small-machine pages"
+    },
+    {
+      "item": "MetaVoice, MaskGCT, Sesame CSM, Kyutai TTS, Higgs V3, Voxtral CPU paths",
+      "reason": "no documented CPU path"
+    },
+    {
+      "item": "WhisperSpeech v1.95 medium, Vokan, MGM-Omni, Raon-OpenTTS, Simple-TTS, VoiceCraft 830M TTSEnhanced",
+      "reason": "no usable official command"
+    },
+    {
+      "item": "VITS VCTK CPU via kakao-enterprise/vits-vctk",
+      "reason": "unverified org, not linked by official repo"
+    }
+  ],
+  "inputs": [
+    {
+      "file": "sdcpp-variants.json",
+      "sha256": "0a184c24b639b8c3f15e1b39789295a427e59b6fd22448a7b79980c4eb2543b1",
+      "description": "stable-diffusion.cpp image and video variants"
+    },
+    {
+      "file": "sdcpp-variants-2.json",
+      "sha256": "7cd47643b37b399cb63a7fba2e7d8e252cb71e53ed7e97c4cd1467f19b29b100",
+      "description": "stable-diffusion.cpp Mage-Flow variants"
+    },
+    {
+      "file": "openvino-variants.json",
+      "sha256": "b82306a06d5e19edf58edf35665234182872e3d6e1910cb6e24b80b876f4d232",
+      "description": "OpenVINO GenAI variants"
+    },
+    {
+      "file": "video-mac-variants.json",
+      "sha256": "fcbd4f15a0a8ed1f39cf1cf774ac179caf6d1eaae98c36739a22671e7292f34a",
+      "description": "Mac video variants"
+    },
+    {
+      "file": "tts-ac-ops.json",
+      "sha256": "b9c96b6b9763bbc270e59f5c26e77d215979675ad23c799a470942e512c2d6e8",
+      "description": "TTS variant additions and corrections (groups A and C)"
+    },
+    {
+      "file": "tts-b-ops.json",
+      "sha256": "cfa7095e7de6902074d67a2d89413098f6f04d9ff78fceea38c11e25c120a17a",
+      "description": "TTS variant additions (group B)"
+    },
+    {
+      "file": "tts-seed.json",
+      "sha256": "c1be8296e59c2a76f8d8bf37ca9d189f60d1112299af2516be3b58c5c885d603",
+      "description": "new TTS models, VERSA and CodecMOS observations (WER rows later removed)"
+    }
+  ]
+}

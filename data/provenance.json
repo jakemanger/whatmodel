@@ -951,5 +951,20 @@
     "new_models": 55,
     "new_results": 76,
     "new_runnable_models": 25
+  },
+  "thin_pages_20261005": {
+    "report": "docs/research/thin-pages-2026-10-05.md",
+    "manifest": "docs/research/thin-pages-2026-10-05.json",
+    "new_models": 9,
+    "new_results": 8,
+    "new_sources": [
+      "speech-versa-toolkit-ccby"
+    ],
+    "models_with_new_or_corrected_run_options": 113,
+    "run_variants_added_or_corrected": 179,
+    "thin_pages_under_10_rows": {
+      "before": 36,
+      "after": 14
+    }
   }
 }
