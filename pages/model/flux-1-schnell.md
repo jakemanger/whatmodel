@@ -44,7 +44,7 @@ api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-
 <pre>
 version                needs  score
 bf16 · nvidia only   ~29.3GB   40.6
-gguf-q8_0            ~14.9GB   40.6
+gguf-q8_0            ~28.3GB   40.6
 mlx-4bit · mac only   ~7.7GB   40.6
 bf16 · mac only      ~29.3GB   40.6
 </pre>
@@ -53,7 +53,7 @@ bf16 · mac only      ~29.3GB   40.6
 # bf16 · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-schnell', torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=4, guidance_scale=0.0, max_sequence_length=256).images[0].save('out.png')"
 # gguf-q8_0
-sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu
+sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu
 # mlx-4bit · mac only
 uvx --from mflux mflux-generate --model schnell --prompt "a cat holding a sign" --steps 2 -q 4
 # bf16 · mac only

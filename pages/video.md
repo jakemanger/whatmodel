@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · **video** · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-05 06:45 UTC · 80 models · scores combine 32 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
+updated 2026-10-05 08:20 UTC · 80 models · scores combine 32 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/video)
 
 Run `curl "whatmodel.sh/video?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/video` for this list in your terminal.
 
@@ -61,25 +61,25 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
   score vs memory to run it (GB, log)
   ─┘ best for the memory
     80 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
-       │  ·                        ·                        ·              MiniMax H3 ●
-       │                                                                              │
-       │  ·                        ·                        ·                         │
-       │                                                                              │
-       │  ·                        ·                        ·                         │
-    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·│· · · ·
-       │  ·                        ·                        ·                         │
-       │                                                                     Wan 2.2 I2V A14B
-       │  ·                        ·       HunyuanVideo 1.5 ●───────────────●─────────┘    ∘
-       │               ●─Wan 2.2 TI2V 5B────────────────────∘                         ∘
-       │  ·            │   ∘       ·         ∘              ·      ∘
-    40 ┤ · · · · · · · ∘ · · · ·∘· · · · · · · · · · · · · · · · · · · · ∘ · · · · · · · · · ·
-       │  ●─CogVideoX-2B        ∘  ·         ∘              ·      ∘
-       │  ∘                     ∘               ∘
-       │  ·                ∘    ∘  ·                        ·                   ∘
-       │  ∘      ∘                 ∘                                                 ∘
-       │  ·                        ·                        ·
-       └──┬────────────────────────┬────────────────────────┬─────────────────────────────────
-         5GB                     10GB                     20GB
+       │  ·                 ·                ·                 ● MiniMax H3           ·
+       │                                                       │
+       │  ·                 ·                ·                 │     ·                ·
+       │                                                       │
+       │  ·                 ·                ·                 │     ·                ·
+    60 ┤ · · · · · · · · · · · · · · · · · · · · · · · · · · · │ · · · · · · · · · · · · · · ·
+       │  ·                 ·                ·                 │     ·                ·
+       │                                      HunyuanVideo 1.5 │
+       │  ·                 ·                ●──────────●─Wan 2.2 I2V A14B            ·    ∘
+       │           ●─Wan 2.2 TI2V 5B─────────∘                 ∘
+       │  ·        │  ∘     ·      ∘         ·    ∘                  ·                ·
+    40 ┤ · · · · · ∘ · · ∘ · · · · · · · · · · · · · ·∘· · · · · · · · · · · · · · · · · · · ·
+       │  ●─CogVideoX-2B ∘  ·      ∘         ·    ∘                  ·                ·
+       │  ∘              ∘          ∘
+       │  ·           ∘  ∘  ·                ·             ∘         ·                ·
+       │  ∘    ∘            ∘                                 ∘
+       │  ·                 ·                ·                       ·                ·
+       └──┬─────────────────┬────────────────┬───────────────────────┬────────────────┬───────
+         5GB              10GB             20GB                    50GB             100GB
 ```
 
 </details>
@@ -128,7 +128,7 @@ curl.exe "whatmodel.sh/video?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
 40  <a href="model/wan-2-2-i2v-a14b.md">Wan 2.2 I2V A14B</a>                          51±3   api $0.080/sec             <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video">fal.ai</a>
 41  <a href="model/hunyuanvideo-1-5.md">HunyuanVideo 1.5</a>                          51±2   api $0.075/sec             <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/text-to-video">fal.ai</a>
 42  <a href="model/pixverse-v5-5.md">PixVerse 5.5</a>                             51±10*  api $0.060/sec             <a href="https://docs.platform.pixverse.ai/model-pricing-796039m0">docs.platform.pixve…</a>
-43  <a href="model/ltx-2.md">LTX-2</a>                                     49±2   local               ~46GB  uv run mlx_video.lt…
+43  <a href="model/ltx-2.md">LTX-2</a>                                     49±2   local              ~120GB  pip install git+htt…
 44  <a href="model/hunyuanvideo-1-5-i2v.md">HunyuanVideo 1.5 (I2V)</a>                    49±3   api $0.075/sec             <a href="https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video">fal.ai</a>
 45  <a href="model/wan-2-2-a14b.md">Wan 2.2 A14B</a>                              49±2   api $0.080/sec             <a href="https://fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video">fal.ai</a>
 46  <a href="model/longcat-video.md">LongCat-Video</a>                             49±3*  api $0.040/sec             <a href="https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p">fal.ai</a>

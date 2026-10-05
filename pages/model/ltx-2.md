@@ -28,13 +28,13 @@ prior                   pull toward the middle                    49.9          
 ## How to run it
 
 <pre>
-version            needs  score
-bf16 · mac only  ~46.1GB   49.1
+version                                      needs  score
+bf16 MLX, dev two-stage HQ (mlx-video) …  ~119.6GB   49.1
 </pre>
 
 ```sh
-# bf16 · mac only
-uv run mlx_video.ltx_2.generate --prompt "Two dogs wearing sunglasses, cinematic, sunset" -n 97 --width 768
+# bf16 MLX, dev two-stage HQ (mlx-video) · mac only
+pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --pipeline dev-two-stage-hq --prompt "A cinematic scene of ocean waves at golden hour" --model-repo prince-canuma/LTX-2-dev
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

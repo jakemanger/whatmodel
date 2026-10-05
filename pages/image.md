@@ -4,7 +4,7 @@
 
 [llm](../README.md) · **image** · [video](video.md) · [tts](tts.md) · [stt](stt.md)
 
-updated 2026-10-05 06:45 UTC · 121 models · scores combine 27 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
+updated 2026-10-05 08:20 UTC · 121 models · scores combine 27 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/image)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -72,9 +72,9 @@ curl.exe "whatmodel.sh/image?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemo
        │                                ·  ● Qwen-Image-2.1                        ·
        │                       ●─Ideogram 4.0
        │                       │        ·                                          ·       ∘
-    60 ┤ · · · · · · · · · ·ERNIE-Image· · · · · · · ∘ · · · · · · · ∘ · · · · · · · · · · · ·
-       │          ●────────●───┘        ∘ ∘  ∘            ∘     ∘                  ·
-       │          ∘ Z-Image-Turbo            ∘
+    60 ┤ · · · · · · · · · ·HiDream-O1-Image · · · · ∘ · · · · · · · ∘ · · · · · · · · · · · ·
+       │                   ●───┘    ∘   ∘ ∘       ∘    ∘  ∘     ∘                  ·
+       │          ●─FLUX.2 [klein] 4B        ∘
        │          │                     ·  ∘    ∘                ∘                 ·
        │          │
        │          │        ∘        ∘   ·             ∘                            ·

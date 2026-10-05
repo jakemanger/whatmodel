@@ -54,7 +54,7 @@ api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://
 <pre>
 version                                     needs  score
 bf16 · nvidia only                        ~14.9GB   55.8
-gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~3.2GB   55.8
+gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   55.8
 </pre>
 
 ```sh

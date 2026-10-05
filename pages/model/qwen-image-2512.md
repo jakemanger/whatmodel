@@ -36,7 +36,7 @@ api (Replicate) · $0.020/image · [replicate.com](https://replicate.com/qwen/qw
 
 <pre>
 version                                     needs  score
-gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~12.5GB   58.3
+gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K…  ~22.4GB   58.3
 </pre>
 
 ```sh

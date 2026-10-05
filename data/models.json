@@ -2650,12 +2650,14 @@
     "local": {
       "variants": [
         {
-          "quant": "bf16",
+          "quant": "bf16 MLX, dev two-stage HQ (mlx-video)",
+          "gb": 119.6,
+          "gb_estimated": true,
+          "cmd": "pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --pipeline dev-two-stage-hq --prompt \"A cinematic scene of ocean waves at golden hour\" --model-repo prince-canuma/LTX-2-dev",
           "platform": "mac",
-          "source": "https://github.com/Blaizzy/mlx-video",
-          "cmd": "uv run mlx_video.ltx_2.generate --prompt \"Two dogs wearing sunglasses, cinematic, sunset\" -n 97 --width 768",
-          "gb": 46.1,
-          "gb_estimated": true
+          "source": "https://github.com/Blaizzy/mlx-video/blob/87db56a51758fefb748a359b90a5283bb8ba4837/README.md",
+          "gb_source": "https://huggingface.co/prince-canuma/LTX-2-dev/tree/98683cfe012c2f2a6343383674859de516f3d70b",
+          "note": "mlx-video (Apple Silicon only; README: \"macOS with Apple Silicon\"). Command: the README's \"Dev two-stage HQ\" example verbatim (line breaks removed) after its documented pip install, pinned to commit 87db56a. --model-repo prince-canuma/LTX-2-dev is the pre-converted MLX copy of the LTX-2 19B dev checkpoint that the README links (\"Pre-converted weights are available on HuggingFace\"); it downloads the repo's *.safetensors and *.json files, about 101 GB, instead of the 314 GB Lightricks/LTX-2 repo the default --model-repo fetches. The dev transformer matches this entry; the distilled checkpoint is catalogued as ltx-2-19b-distilled. Files: text_encoder/ (Gemma 3 12B, 11 shards) 48.75 GB; text_projections/model.safetensors 2.86 GB; transformer/ (8 shards) 37.75 GB; ltx-2-19b-distilled-lora-384.safetensors 7.67 GB; ltx-2-spatial-upscaler-x2-1.0.safetensors 1.00 GB; vae/decoder/model.safetensors 1.06 GB; audio_vae/decoder/model.safetensors 0.06 GB; vocoder/model.safetensors 0.11 GB (prince-canuma/LTX-2-dev@98683cf). gb = 1.2 × 99.27 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. mlx-video frees the text encoder before loading the transformer, so the real peak is likely lower."
         }
       ]
     }
@@ -6863,17 +6865,21 @@
         },
         {
           "quant": "gguf-q8_0",
-          "gb": 14.9,
-          "cmd": "sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"a lovely cat holding a sign says 'flux.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu",
-          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/flux.md",
-          "gb_estimated": true
+          "gb": 28.4,
+          "cmd": "sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"a lovely cat holding a sign says 'flux.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux.md",
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/leejet/FLUX.1-dev-gguf/tree/5498ec7d5c0ee33bb0aeb04254d518a8e4ff94cd",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux1-dev-q8_0.gguf 12.84 GB (leejet/FLUX.1-dev-gguf@5498ec7); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-dev@3de623f); clip_l.safetensors 0.25 GB (comfyanonymous/flux_text_encoders@6af2a98); t5xxl_fp16.safetensors 9.79 GB (comfyanonymous/flux_text_encoders@6af2a98). gb = 1.2 × 23.21 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths; ae.safetensors is the VAE file the doc links (its example calls it ae.sft). The doc's memory table gives 12068.09 MB for q8_0 with --clip-on-cpu, which covers the diffusion model on the GPU only; on CPU or unified memory the T5 and CLIP text encoders are resident too. ae.safetensors is in the gated black-forest-labs/FLUX.1-dev repo the doc links."
         },
         {
           "quant": "gguf-q4_0",
-          "gb": 7.7,
-          "cmd": "sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"a lovely cat holding a sign says 'flux.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu",
-          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/flux.md",
-          "gb_estimated": true
+          "gb": 21.3,
+          "cmd": "sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"a lovely cat holding a sign says 'flux.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux.md",
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/leejet/FLUX.1-dev-gguf/tree/5498ec7d5c0ee33bb0aeb04254d518a8e4ff94cd",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux1-dev-q4_0.gguf 6.93 GB (leejet/FLUX.1-dev-gguf@5498ec7); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-dev@3de623f); clip_l.safetensors 0.25 GB (comfyanonymous/flux_text_encoders@6af2a98); t5xxl_fp16.safetensors 9.79 GB (comfyanonymous/flux_text_encoders@6af2a98). gb = 1.2 × 17.30 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc example with POSIX paths; ae.safetensors is the VAE file the doc links (its example calls it ae.sft). The doc's memory table gives 6394.53 MB for q4_0 with --clip-on-cpu, which covers the diffusion model on the GPU only; on CPU or unified memory the T5 and CLIP text encoders are resident too. Uses the q4_0 file from the preconverted repo the doc links instead of q8_0. ae.safetensors is in the gated black-forest-labs/FLUX.1-dev repo the doc links."
         },
         {
           "quant": "mlx-4bit",
@@ -6930,20 +6936,24 @@
           "gb_estimated": true
         },
         {
-          "quant": "fp8_e4m3fn (ComfyUI)",
-          "gb": 12.5,
-          "cmd": "sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v -H 1024 -W 1024 --diffusion-fa --flow-shift 3",
+          "quant": "fp8_e4m3fn safetensors (sd.cpp)",
+          "gb": 35.0,
+          "cmd": "sd-cli --diffusion-model models/qwen_image_fp8_e4m3fn.safetensors --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v -H 1024 -W 1024 --diffusion-fa --flow-shift 3",
           "platform": "nvidia",
-          "source": "https://docs.comfy.org/tutorials/image/qwen/qwen-image",
-          "gb_estimated": true
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image.md",
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/tree/1f12b17be14c89b026c51a91d67c32f84bb047bc",
+          "note": "Files: split_files/diffusion_models/qwen_image_fp8_e4m3fn.safetensors 20.43 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 28.78 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. stable-diffusion.cpp sd-cli; docs/qwen_image.md links the Comfy-Org safetensors folder for the diffusion model. Without --offload-to-cpu every file stays in GPU memory. Command: the doc example with POSIX paths, a short English prompt, the fp8 safetensors from that folder and the actual mradermacher file name. Previously sourced to a ComfyUI tutorial that does not use sd-cli."
         },
         {
           "quant": "gguf-q4_k_s",
-          "gb": 12.5,
-          "cmd": "sd-cli --diffusion-model models/qwen-image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3",
+          "gb": 25.1,
+          "cmd": "sd-cli --diffusion-model models/Qwen_Image-Q4_K_S.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct.Q8_0.gguf -p 'a cat holding a sign' --cfg-scale 2.5 --sampling-method euler -v --offload-to-cpu -H 1024 -W 1024 --diffusion-fa --flow-shift 3",
           "platform": "nvidia",
-          "source": "https://comfyui-wiki.com/en/tutorial/advanced/image/qwen/qwen-image",
-          "gb_estimated": true
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/qwen_image.md",
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/QuantStack/Qwen-Image-GGUF/tree/257f261fa92593bed760aa6fa3f7921a49fea00f",
+          "note": "Files: Qwen_Image-Q4_K_S.gguf 12.14 GB (QuantStack/Qwen-Image-GGUF@257f261); Qwen2.5-VL-7B-Instruct.Q8_0.gguf 8.10 GB (mradermacher/Qwen2.5-VL-7B-Instruct-GGUF@cfa2baa); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 20.49 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. stable-diffusion.cpp sd-cli. Command: the docs/qwen_image.md example with POSIX paths, a short English prompt and the actual file names in the repos it links (the QuantStack Q4_K_S file it links instead of Q8_0). Listed for NVIDIA as before. Previously sourced to a community wiki."
         },
         {
           "quant": "fp8 onload + disk/CPU offload (DiffSynth-Studio VRAM management)",
@@ -6995,10 +7005,12 @@
       "variants": [
         {
           "quant": "gguf-q4_k_m (Unsloth) + Qwen2.5-VL Q4_K_XL",
-          "gb": 12.5,
+          "gb": 22.4,
           "cmd": "sd-cli --diffusion-model models/qwen-image-2512-Q4_K_M.gguf --vae models/qwen_image_vae.safetensors --llm models/Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf --cfg-scale 2.5 --sampling-method euler -v --steps 40 -H 1024 -W 1024 --diffusion-fa --flow-shift 3 -p 'a cat holding a sign' --offload-to-cpu -o outputs/out.png",
           "source": "https://unsloth.ai/docs/models/tutorials/qwen-image-2512/stable-diffusion.cpp",
-          "gb_estimated": true
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/tree/1626d7531f84b4d2ea1cd6d2e69f41ec027dd354",
+          "note": "Files: qwen-image-2512-Q4_K_M.gguf 13.24 GB (unsloth/Qwen-Image-2512-GGUF@1626d75); Qwen2.5-VL-7B-Instruct-UD-Q4_K_XL.gguf 4.79 GB (unsloth/Qwen2.5-VL-7B-Instruct-GGUF@68bb8bc); qwen_image_vae.safetensors 0.25 GB (Comfy-Org/Qwen-Image_ComfyUI@1f12b17). gb = 1.2 × 18.28 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. stable-diffusion.cpp sd-cli as shown in Unsloth's Qwen-Image-2512 stable-diffusion.cpp tutorial, which downloads these three files; that page says a CPU with RAM is enough and that combined memory should exceed the GGUF size. stable-diffusion.cpp's own docs cover Qwen-Image but do not name the 2512 checkpoint."
         }
       ]
     },
@@ -7032,10 +7044,12 @@
         },
         {
           "quant": "gguf-q3_k (+ Qwen3-4B Q4_K_M text encoder)",
-          "gb": 3.2,
+          "gb": 7.7,
           "cmd": "sd-cli --diffusion-model models/z_image_turbo-Q3_K.gguf --vae models/ae.safetensors --llm models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf -p 'a cat holding a sign' --cfg-scale 1.0 -v --offload-to-cpu --diffusion-fa -H 1024 -W 1024 --steps 8",
-          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/z_image.md",
-          "gb_estimated": true
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/z_image.md",
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/leejet/Z-Image-Turbo-GGUF/tree/c61c0e422dc8b541b7548cf33a4ef8302b0f8085",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: z_image_turbo-Q3_K.gguf 3.14 GB (leejet/Z-Image-Turbo-GGUF@c61c0e4); Qwen3-4B-Instruct-2507-Q4_K_M.gguf 2.50 GB (unsloth/Qwen3-4B-Instruct-2507-GGUF@a06e946); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-schnell@741f7c3). gb = 1.2 × 5.98 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Z-Image-Turbo example with POSIX paths and a short prompt. The doc says it runs on GPUs with 4 GB of VRAM using --offload-to-cpu; on CPU or unified memory the Qwen3 4B text encoder and VAE are resident too."
         }
       ]
     },
@@ -8289,10 +8303,10 @@
     "name": "Magpie TTS Multilingual 357M",
     "provider": "NVIDIA",
     "category": "tts",
-    "released": "2026-02",
+    "released": "2026-07",
     "open_weights": true,
     "license": "nvidia-open-model-license",
-    "params_b": 0.357,
+    "params_b": 0.364,
     "api": null,
     "local": {
       "variants": [
@@ -8304,11 +8318,12 @@
           "platform": "any",
           "source": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md",
           "gb_source": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/tree/19806879b16d3f2ccf28fb112b1bcd16a3c7923e",
-          "note": "NVIDIA NeMo-Speech.cpp (official native C++/ggml runtime; installer auto-selects CUDA, Metal or CPU). Platform evidence: \"The installer selects CUDA when `nvidia-smi` is available, Metal on Apple Silicon, and CPU otherwise.\" and \"Prebuilt CPU archives require no GPU toolkit.\" (https://github.com/NVIDIA/NeMo-Speech.cpp/b… Command: chained the documented install lines from docs/install.md (installer + PATH export for the current shell) with `&&` in front of the verbatim synthesize example from the HF model card (line break removed). gb is the sum of the weight files the command loads (magpie_tts_multilingual_357m.v2607.f16.gguf 0.57 GB; nemo_nano_codec_22khz_1.89kbps_21.5fps.decoder.f16.gguf 0.08 GB); runtime memory is higher. Identity: loads v2607 (HF main / branch v2607). The catalogue entry says released 2026-02, which matches the older v2602 tag (commit 34d7e40da85cabc97f92198889b65cea27bc7fd1; card: \"Released on March 2026, v2602\"). Loads the checkpoint published as v2607 (July 2026); the catalogue entry was dated from the February 2026 release."
+          "note": "NVIDIA NeMo-Speech.cpp (official native C++/ggml runtime; installer auto-selects CUDA, Metal or CPU). Platform evidence: \"The installer selects CUDA when `nvidia-smi` is available, Metal on Apple Silicon, and CPU otherwise.\" and \"Prebuilt CPU archives require no GPU toolkit.\" (https://github.com/NVIDIA/NeMo-Speech.cpp/b… Command: chained the documented install lines from docs/install.md (installer + PATH export for the current shell) with `&&` in front of the verbatim synthesize example from the HF model card (line break removed). gb is the sum of the weight files the command loads (magpie_tts_multilingual_357m.v2607.f16.gguf 0.57 GB; nemo_nano_codec_22khz_1.89kbps_21.5fps.decoder.f16.gguf 0.08 GB); runtime memory is higher. Loads v2607, the checkpoint this entry describes (card: \"It downloads the v2607 GGUF, tokenizer assets, and companion NanoCodec decoder automatically\")."
         }
       ]
     },
-    "note": "AA tested the Feb 2026 checkpoint; latest HF version is v2607"
+    "model_repo": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m",
+    "identity_note": "MagpieTTS Multilingual v2607, the checkpoint on the main branch of nvidia/magpie_tts_multilingual_357m (card at 1980687: \"July 21, 2026: MagpieTTS v2607 was released\", 12 languages, \"364M parameters\"). Earlier checkpoints are separate releases: v2602 (tag v2602, \"March 3, 2026\", 9 languages) and v2512 (January 2026, 357M parameters). This entry was previously dated 2026-02 after the v2602 label, but nothing in the catalogue is tied to v2602 (no results, no API), and NVIDIA's NeMo-Speech.cpp runtime downloads the v2607 GGUF, so the entry now describes v2607. Source: https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md"
   },
   {
     "id": "maya1",
@@ -10017,10 +10032,12 @@
         },
         {
           "quant": "gguf-q8_0",
-          "gb": 14.9,
-          "cmd": "sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"a lovely cat holding a sign says 'flux.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu",
-          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/flux.md",
-          "gb_estimated": true
+          "gb": 28.3,
+          "cmd": "sd-cli --diffusion-model models/flux1-schnell-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p \"a lovely cat holding a sign says 'flux.cpp'\" --cfg-scale 1.0 --sampling-method euler -v --steps 4 --clip-on-cpu",
+          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/3f8527a46c54ecf4cb4ed6003da8e8982283c73c/docs/flux.md",
+          "gb_estimated": true,
+          "gb_source": "https://huggingface.co/leejet/FLUX.1-schnell-gguf/tree/c7f665ddaf9f197ff493f41fc211f5480f5f19ac",
+          "note": "stable-diffusion.cpp sd-cli, which its README lists with CPU, Metal, CUDA and Vulkan backends (prebuilt binaries on the releases page); download the listed files into models/. Files: flux1-schnell-q8_0.gguf 12.80 GB (leejet/FLUX.1-schnell-gguf@c7f665d); ae.safetensors 0.34 GB (black-forest-labs/FLUX.1-schnell@741f7c3); clip_l.safetensors 0.25 GB (comfyanonymous/flux_text_encoders@6af2a98); t5xxl_fp16.safetensors 9.79 GB (comfyanonymous/flux_text_encoders@6af2a98). gb = 1.2 × 23.17 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. Command: the doc's Flux-schnell example with POSIX paths; ae.safetensors is the VAE file (the example calls it ae.sft), here from the FLUX.1-schnell repo, which carries the same 0.335 GB file under Apache-2.0. On CPU or unified memory the T5 and CLIP text encoders are resident too."
         },
         {
           "quant": "mlx-4bit",
@@ -10125,14 +10142,6 @@
           "gb_estimated": true
         },
         {
-          "quant": "gguf-q4_k_m",
-          "gb": 5.3,
-          "cmd": "sd-cli --diffusion-model ernie-image-UD-Q4_K_M.gguf --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p \"a lovely cat\" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa",
-          "platform": "nvidia",
-          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/ernie_image.md",
-          "gb_estimated": true
-        },
-        {
           "quant": "gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory)",
           "gb": 17.1,
           "gb_estimated": true,
@@ -10169,14 +10178,6 @@
           "cmd": "uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c \"import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=8, guidance_scale=1.0).images[0].save('out.png')\"",
           "platform": "nvidia",
           "source": "https://huggingface.co/baidu/ERNIE-Image-Turbo",
-          "gb_estimated": true
-        },
-        {
-          "quant": "bf16 (cpu offload)",
-          "gb": 19.7,
-          "cmd": "sd-cli --diffusion-model ernie-image-turbo.safetensors --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p \"a lovely cat\" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa",
-          "platform": "nvidia",
-          "source": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/ernie_image.md",
           "gb_estimated": true
         },
         {
@@ -14614,6 +14615,16 @@
           "source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/.agents/skills/use-drawthings-cli/SKILL.md",
           "gb_source": "https://github.com/drawthingsai/draw-things-community/blob/e51089d5229b3147e13a21cfe0c379deff851715/Libraries/ModelZoo/Sources/ModelZoo.swift",
           "note": "Draw Things CLI (brew install draw-things-cli; macOS 15+ on Apple Silicon). Its official SKILL.md documents the local video command shape and says to choose a video-capable model id from `draw-things-cli models list`; the id used here is from Draw Things' official model registry (ModelZoo.swift @e51089d: 'LTX-2 19B [distilled] (6-bit)', linking Lightricks/LTX-2; the registry recommends 8 steps and text guidance 1.0). Draw Things runs its own quantised .ckpt conversions and downloads the registered text encoder and VAE on first run. Files (byte sizes from the Draw Things model host): ltx_2_19b_distilled_q6p.ckpt 17.87 GB (static.libnnc.org); gemma_3_12b_it_qat_q8p.ckpt 13.14 GB (static.libnnc.org); ltx_2_audio_video_vae_f16.ckpt 2.67 GB (static.libnnc.org). gb = 1.2 × 33.68 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak."
+        },
+        {
+          "quant": "bf16 MLX (mlx-video)",
+          "gb": 110.4,
+          "gb_estimated": true,
+          "cmd": "pip install git+https://github.com/Blaizzy/mlx-video.git@87db56a51758fefb748a359b90a5283bb8ba4837 && mlx_video.ltx_2.generate --prompt \"Two dogs wearing sunglasses, cinematic, sunset\" -n 97 --width 768 --model-repo prince-canuma/LTX-2-distilled",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-video/blob/87db56a51758fefb748a359b90a5283bb8ba4837/README.md",
+          "gb_source": "https://huggingface.co/prince-canuma/LTX-2-distilled/tree/60135212a1e96122922a15bf249356a3ff38cde0",
+          "note": "mlx-video (Apple Silicon only). Command: the README's distilled text-to-video example (the default --pipeline distilled) with --model-repo set to the pre-converted prince-canuma/LTX-2-distilled repo the README links, after its documented pip install, pinned to commit 87db56a. Downloads about 109 GB of *.safetensors and *.json. Files: text_encoder/ (Gemma 3 12B, 11 shards) 48.75 GB; text_projections/model.safetensors 2.86 GB; transformer/ (8 shards) 37.75 GB; ltx-2-spatial-upscaler-x2-1.0.safetensors 1.00 GB; vae/decoder/model.safetensors 1.06 GB; audio_vae/decoder/model.safetensors 0.06 GB; vocoder/model.safetensors 0.11 GB (prince-canuma/LTX-2-distilled@6013521). gb = 1.2 × 91.59 GB of weights loaded + 0.5 GB, the catalogue estimation rule; not a measured peak. mlx-video frees the text encoder before loading the transformer, so the real peak is likely lower."
         }
       ]
     }

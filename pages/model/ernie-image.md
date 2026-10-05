@@ -47,15 +47,12 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 <pre>
 version                                     needs  score
 bf16 · nvidia only                        ~19.7GB   58.7
-gguf-q4_k_m · nvidia only                  ~5.3GB   58.7
 gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   58.7
 </pre>
 
 ```sh
 # bf16 · nvidia only
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=50, guidance_scale=4.0).images[0].save('out.png')"
-# gguf-q4_k_m · nvidia only
-sd-cli --diffusion-model ernie-image-UD-Q4_K_M.gguf --vae flux2_ae.safetensors --llm ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
 # gguf-ud-q4_k_m + Ministral 3B (sd.cpp, all files in memory)
 sd-cli --diffusion-model models/ernie-image-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 5.0 -v --offload-to-cpu --diffusion-fa
 ```

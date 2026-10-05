@@ -4,7 +4,11 @@
 
 # Magpie TTS Multilingual 357M
 
-NVIDIA · released 2026-02
+NVIDIA · released 2026-07
+
+MagpieTTS Multilingual v2607, the checkpoint on the main branch of nvidia/magpie\_tts\_multilingual\_357m (card at 1980687: "July 21, 2026: MagpieTTS v2607 was released", 12 languages, "364M parameters"). Earlier checkpoints are separate releases: v2602 (tag v2602, "March 3, 2026", 9 languages) and v2512 (January 2026, 357M parameters). This entry was previously dated 2026-02 after the v2602 label, but nothing in the catalogue is tied to v2602 (no results, no API), and NVIDIA's NeMo-Speech.cpp runtime downloads the v2607 GGUF, so the entry now describes v2607. Source: https://huggingface.co/nvidia/magpie\_tts\_multilingual\_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md
+
+[Model and usage documentation](https://huggingface.co/nvidia/magpie_tts_multilingual_357m)
 
 No reviewed benchmark results yet. This catalogue entry has no score or rank.
 

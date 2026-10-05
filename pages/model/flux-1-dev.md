@@ -41,8 +41,8 @@ bf16 · nvidia only                     ~29.3GB   43.8
 fp8 (layerwise casting) · nvidia only   ~7.7GB   43.8
 bnb-8bit · nvidia only                 ~14.9GB   43.8
 nf4 (bnb-4bit) · nvidia only            ~7.7GB   43.8
-gguf-q8_0                              ~14.9GB   43.8
-gguf-q4_0                               ~7.7GB   43.8
+gguf-q8_0                              ~28.4GB   43.8
+gguf-q4_0                              ~21.3GB   43.8
 mlx-4bit · mac only                     ~7.7GB   43.8
 bf16 · mac only                        ~29.3GB   43.8
 </pre>
@@ -57,9 +57,9 @@ uv run --with diffusers --with transformers --with accelerate --with torch --wit
 # nf4 (bnb-4bit) · nvidia only
 uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece --with bitsandbytes python -c "import torch; from diffusers import FluxPipeline, PipelineQuantizationConfig; q=PipelineQuantizationConfig(quant_backend='bitsandbytes_4bit', quant_kwargs={'load_in_4bit':True,'bnb_4bit_quant_type':'nf4','bnb_4bit_compute_dtype':torch.bfloat16}, components_to_quantize=['transformer','text_encoder_2']); p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-dev', quantization_config=q, torch_dtype=torch.bfloat16).to('cuda'); p('a cat holding a sign', num_inference_steps=50, guidance_scale=3.5).images[0].save('out.png')"
 # gguf-q8_0
-sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+sd-cli --diffusion-model models/flux1-dev-q8_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
 # gguf-q4_0
-sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.sft --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
+sd-cli --diffusion-model models/flux1-dev-q4_0.gguf --vae models/ae.safetensors --clip_l models/clip_l.safetensors --t5xxl models/t5xxl_fp16.safetensors -p "a lovely cat holding a sign says 'flux.cpp'" --cfg-scale 1.0 --sampling-method euler -v --clip-on-cpu
 # mlx-4bit · mac only
 uvx --from mflux mflux-generate --model dev --prompt "a cat holding a sign" --steps 20 -q 4
 # bf16 · mac only
