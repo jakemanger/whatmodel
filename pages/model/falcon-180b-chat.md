@@ -8,7 +8,7 @@ TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
 **score 32.0** ±2.7 · #365 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

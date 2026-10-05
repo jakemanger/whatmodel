@@ -6,9 +6,9 @@
 
 SpaceXAI (xAI) · closed weights
 
-**score 63.3** ±1.9 · #22 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 63.7** ±1.8 · #22 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1162.2    63.3   2026-09-24   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1162.2    63.7   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 <a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>   20.0%    76.1   2026-05-31    2% ▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 63.3
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 63.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,9 +6,9 @@
 
 Black Forest Labs · closed weights
 
-**score 52.8** ±1.7 · #63 of 111 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.5** ±1.7 · #62 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1058.7    53.0   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1176.3    52.0   2026-09-22   21% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1058.7    53.7   2026-09-24   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1176.3    52.7   2026-09-22   21% ▇▇
 prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 52.8
+                        weighted average                = 53.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

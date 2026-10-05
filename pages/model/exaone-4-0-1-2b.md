@@ -4,6 +4,10 @@
 
 # EXAONE 4.0 1.2B
 
+LG AI Research · released 2025-07
+
+[Model and usage documentation](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

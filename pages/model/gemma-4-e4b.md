@@ -8,7 +8,7 @@ Google · released 2026-04 · 8B params (4.5B active) · apache-2.0
 
 **score 54.0** ±0.9 · #175 of 404 · from 23 benchmark results across 5 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

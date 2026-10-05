@@ -6,9 +6,9 @@
 
 BAAI
 
-**score 39.5** ±2.2 · #87 of 111 · from 5 benchmark results across 4 sources
+**score 40.6** ±2.1 · #87 of 113 · from 5 benchmark results across 4 sources
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      37.6%    40.9   2026-05-13   37% ▇▇▇▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  74.0%    39.2   2026-03-29   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  58.0%    32.1   2026-03-29    8% ▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         61.2%    39.2   2025-12-01   15% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     888.0    40.0   2026-03-30   13% ▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      37.6%    41.8   2026-05-13   37% ▇▇▇▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  74.0%    40.3   2026-03-29   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  58.0%    33.3   2026-03-29    8% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         61.2%    40.2   2025-12-01   15% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     888.0    41.0   2026-03-30   13% ▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 39.5
+                        weighted average                       = 40.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

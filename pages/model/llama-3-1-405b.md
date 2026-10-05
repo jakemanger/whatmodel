@@ -8,7 +8,7 @@ Meta · released 2024-07 · 405B params · llama-3.1
 
 **score 51.8** ±0.7 · #191 of 404 · from 22 benchmark results across 14 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

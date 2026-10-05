@@ -4,6 +4,8 @@
 
 # Falcon-H1R 7B
 
+TII · released 2026-01
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

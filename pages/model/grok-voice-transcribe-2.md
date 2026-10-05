@@ -4,6 +4,8 @@
 
 # Grok Voice Transcribe 2.0
 
+xAI · released 2026-09
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

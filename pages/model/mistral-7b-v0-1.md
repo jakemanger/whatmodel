@@ -8,7 +8,7 @@ Mistral AI · released 2023-09 · 7.24B params · apache-2.0
 
 **score 78.3** ±1.9 · #1 of 39 · from 11 benchmark results across 1 source
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

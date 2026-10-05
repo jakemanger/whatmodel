@@ -8,7 +8,7 @@ Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
 **score 44.3** ±2.6 · #256 of 404 · from 3 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

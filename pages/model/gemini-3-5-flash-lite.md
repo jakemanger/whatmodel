@@ -8,7 +8,7 @@ Google · released 2026-07 · closed weights
 
 **score 65.6** ±1.0 · #83 of 404 · from 10 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

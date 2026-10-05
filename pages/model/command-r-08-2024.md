@@ -8,7 +8,7 @@ Cohere · released 2024-08 · 32.3B params · cc-by-nc-4.0
 
 **score 45.0** ±2.2 · #249 of 404 · from 3 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

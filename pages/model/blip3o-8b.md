@@ -6,9 +6,9 @@
 
 Salesforce Research
 
-**score 36.3** ±2.7 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.4** ±2.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   6.7%    33.5   2026-05-14   69% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  52.0%    41.5   2026-06-02   28% ▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   6.7%    34.7   2026-05-14   69% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  52.0%    42.6   2026-06-02   28% ▇▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 36.3
+                        weighted average                       = 37.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -8,7 +8,7 @@ MiniMax · released 2026-02 · 230B params (10B active) · modified-mit
 
 **score 62.6** ±1.5 · #119 of 404 · from 5 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

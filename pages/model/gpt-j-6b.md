@@ -8,7 +8,7 @@ EleutherAI · released 2021-06 · 6.05B params · apache-2.0
 
 **score 60.1** ±1.4 · #6 of 39 · from 13 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

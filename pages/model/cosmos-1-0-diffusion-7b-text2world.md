@@ -6,7 +6,7 @@
 
 NVIDIA
 
-**score 43.2** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.0** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    42.7   2026-01-30   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    44.7   2026-01-30   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 43.2
+                        weighted average                       = 45.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

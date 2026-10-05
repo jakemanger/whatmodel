@@ -8,7 +8,7 @@ Stability AI · released 2024-01 · 2.8B params · stability-ai-community
 
 **score 29.3** ±0.8 · #377 of 404 · from 10 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

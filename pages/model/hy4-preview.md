@@ -8,7 +8,7 @@ Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
 **score 75.8** ±2.3 · #12 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

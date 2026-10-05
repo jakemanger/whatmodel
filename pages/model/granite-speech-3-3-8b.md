@@ -8,6 +8,8 @@ IBM · released 2025-06 · 8.65B params · apache-2.0
 
 **score 62.1** ±4.0 · #14 of 112 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

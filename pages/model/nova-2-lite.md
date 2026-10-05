@@ -8,7 +8,7 @@ Amazon · released 2025-10 · closed weights
 
 **score 54.1** ±1.6 · #173 of 404 · from 6 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

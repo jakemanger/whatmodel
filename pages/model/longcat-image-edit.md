@@ -6,9 +6,9 @@
 
 Meituan
 
-**score 54.4** ±3.0 · #60 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 55.0** ±2.9 · #60 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                          score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.0%    54.5   2026-05-13   71% ▇▇▇▇▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1001.0    54.9   2026-03-30   25% ▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.0%    55.1   2026-05-13   71% ▇▇▇▇▇▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1001.0    55.5   2026-03-30   26% ▇▇▇
 prior                   pull toward the middle                 49.9                 4% ▇
-                        weighted average                     = 54.4
+                        weighted average                     = 55.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

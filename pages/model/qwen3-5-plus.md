@@ -8,7 +8,7 @@ Alibaba · released 2026-02 · proprietary
 
 **score 66.0** ±2.3 · #78 of 404 · from 5 benchmark results across 1 source
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,7 +8,7 @@ Mistral · released 2026-03 · 119B params (6.5B active) · apache-2.0
 
 **score 57.4** ±3.4 · #153 of 404 · from 3 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,6 +8,8 @@ Resemble AI · released 2026-04 · 0.5B params · mit
 
 **score 51.7** ±10.5 · #31 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

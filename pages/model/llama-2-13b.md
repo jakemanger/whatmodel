@@ -8,7 +8,7 @@ Meta · released 2023-07 · 13B params · llama2
 
 **score 71.6** ±1.9 · #2 of 39 · from 11 benchmark results across 1 source
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,7 +8,7 @@ Z.ai · released 2026-06 · 753B params (40B active) · mit
 
 **score 70.0** ±0.7 · #46 of 404 · from 23 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

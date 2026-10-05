@@ -8,7 +8,7 @@ Alibaba · released 2024-04 · 111B params · tongyi-qianwen
 
 **score 43.0** ±2.4 · #265 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

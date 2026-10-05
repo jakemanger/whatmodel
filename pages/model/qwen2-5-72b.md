@@ -8,7 +8,7 @@ Alibaba · released 2024-09 · 72B params · qwen
 
 **score 51.3** ±0.7 · #200 of 404 · from 32 benchmark results across 18 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

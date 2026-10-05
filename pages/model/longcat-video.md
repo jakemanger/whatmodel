@@ -6,7 +6,7 @@
 
 Meituan · released 2025-10
 
-**score 47.7** ±2.9 · #45 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.6** ±2.8 · #46 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    47.3   2026-05-11   85% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    49.7   2026-08-10   11% ▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 47.7
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    48.3   2026-05-11   85% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    50.7   2026-08-10   12% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 48.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

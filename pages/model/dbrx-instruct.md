@@ -8,7 +8,7 @@ Databricks · released 2024-03 · 132B params (36B active) · databricks-open-mo
 
 **score 41.6** ±2.1 · #276 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

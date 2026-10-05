@@ -8,7 +8,7 @@ Cohere For AI · released 2024-05 · 8.03B params · cc-by-nc-4.0
 
 **score 37.7** ±2.8 · #311 of 404 · from 3 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

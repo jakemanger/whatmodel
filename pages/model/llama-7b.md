@@ -8,7 +8,7 @@ Meta · released 2023-02 · 6.7B params · llama-1-noncommercial-research
 
 **score 61.0** ±1.1 · comparison only: no current run option verified · from 29 benchmark results across 3 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

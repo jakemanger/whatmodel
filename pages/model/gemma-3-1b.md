@@ -8,7 +8,7 @@ Google · released 2025-03 · 1B params · gemma
 
 **score 24.8** ±0.8 · #392 of 404 · from 33 benchmark results across 9 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

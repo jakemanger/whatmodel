@@ -6,9 +6,9 @@
 
 DeepFloyd · released 2023-04 · 0.4B params · deepfloyd-if-license
 
-**score 31.0** ±3.5 · #103 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.7** ±3.4 · #102 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                 52.0%    29.9   2023-10-17   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-geneval"></a>GenEval authors' resu…  <a href="https://arxiv.org/html/2310.11513v1#A1.T3">GenEval</a>                 52.0%    31.8   2023-10-17   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           49.9                 5% ▇
-                        weighted average               = 31.0
+                        weighted average               = 32.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle           49.9                 5%
 
 <pre>
 version                                   needs  score
-fp16 + model CPU offload (stages I+II, …  ~14GB   31.0
+fp16 + model CPU offload (stages I+II, …  ~14GB   32.7
 </pre>
 
 ```sh

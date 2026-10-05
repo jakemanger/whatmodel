@@ -8,7 +8,7 @@
 
 **score 41.5** ±0.9 · #279 of 404 · from 10 benchmark results across 6 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

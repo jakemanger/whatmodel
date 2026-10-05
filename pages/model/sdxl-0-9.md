@@ -6,9 +6,9 @@
 
 Stability AI · released 2023-06 · 3.5B params · sdxl-0.9-research
 
-**score 34.3** ±3.5 · #94 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.9** ±3.1 · #95 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    31.7   2024-02-21   49% ▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  43.0%    35.4   2026-06-02   46% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 34.3
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  27.7%    32.7   2024-02-21   58% ▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  43.0%    36.7   2026-06-02   38% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 34.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~8.9GB   34.3
+fp16 · nvidia only  ~8.9GB   34.9
 </pre>
 
 ```sh

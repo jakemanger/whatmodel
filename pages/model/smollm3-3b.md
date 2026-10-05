@@ -8,7 +8,7 @@ Hugging Face · released 2025-07 · 3.08B params · apache-2.0
 
 **score 39.2** ±2.8 · #304 of 404 · from 3 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

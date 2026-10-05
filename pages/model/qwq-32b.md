@@ -8,7 +8,7 @@ Alibaba · released 2025-03 · 32.76B params · apache-2.0
 
 **score 57.6** ±0.9 · #152 of 404 · from 18 benchmark results across 9 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

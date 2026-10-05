@@ -6,9 +6,9 @@
 
 Kuaishou · closed weights
 
-**score 52.8** ±6.6 · #62 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.4** ±6.4 · #63 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  48.3%    53.5   2026-05-27   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                18% ▇▇
-                        weighted average                       = 52.8
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  48.3%    54.2   2026-05-27   83% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                17% ▇▇
+                        weighted average                       = 53.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

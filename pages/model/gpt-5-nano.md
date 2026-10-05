@@ -8,7 +8,7 @@ OpenAI · released 2025-08 · closed weights
 
 **score 59.1** ±0.8 · #139 of 404 · from 20 benchmark results across 8 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

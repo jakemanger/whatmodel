@@ -8,7 +8,7 @@ TinyLlama · released 2023-12 · 1.1B params · apache-2.0
 
 **score 5.2** ±5.2 · #404 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

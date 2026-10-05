@@ -8,7 +8,7 @@ Google · released 2022-10 · 0.248B params · apache-2.0
 
 **score 38.2** ±10.9 · #4 of 5 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [BIG-Bench Hard](https://whatmodel.sh/?set=bbh%40paper-2210.11416v5) comparison set only.
+Score within the [BIG-Bench Hard](https://whatmodel.sh/?set=bbh%40paper-2210.11416v5&score=set) comparison set only.
 
 ## How the score was worked out
 

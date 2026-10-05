@@ -8,7 +8,7 @@ OpenAI · released 2020-06 · proprietary
 
 **score 54.6** ±1.4 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

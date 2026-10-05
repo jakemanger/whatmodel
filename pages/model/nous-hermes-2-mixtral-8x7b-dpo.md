@@ -8,7 +8,7 @@ Nous Research · released 2024-01 · 46.7B params (12.9B active) · apache-2.0
 
 **score 34.7** ±2.4 · #344 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

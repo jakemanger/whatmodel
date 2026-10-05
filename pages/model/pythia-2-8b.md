@@ -8,7 +8,7 @@ EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
 **score 46.7** ±2.5 · #22 of 39 · from 6 benchmark results across 1 source
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

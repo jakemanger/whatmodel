@@ -8,7 +8,7 @@ Ai2 · released 2023-11 · 69B params · ai2-impact-low-risk
 
 **score 36.0** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,7 +8,7 @@ DeepSeek · released 2025-01 · 7.62B params · mit
 
 **score 48.4** ±2.0 · #221 of 404 · from 5 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

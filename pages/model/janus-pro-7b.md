@@ -6,9 +6,9 @@
 
 DeepSeek
 
-**score 33.1** ±2.7 · #98 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.3** ±2.7 · #98 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    33.7   2026-07-01   68% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    29.7   2026-06-02   28% ▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.9   2026-07-01   68% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    31.2   2026-06-02   29% ▇▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 33.1
+                        weighted average                       = 34.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

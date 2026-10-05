@@ -8,7 +8,7 @@ Phind · released 2023-08 · 34B params · llama2
 
 **score 42.0** ±1.2 · #274 of 404 · from 4 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

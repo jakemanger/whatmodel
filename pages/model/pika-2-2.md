@@ -6,7 +6,7 @@
 
 Pika · released 2025-02 · proprietary
 
-**score 34.0** ±1.8 · #64 of 76 · from 4 benchmark results across 3 sources
+**score 36.1** ±1.7 · #63 of 76 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1009.0    35.7   2026-09-22   55% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>             997.1    29.3   2026-09-22   34% ▇▇▇▇
-<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>   32.0%    37.7   2025-05-01    8% ▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 81.6%    39.2   2026-04-22    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1009.0    37.8   2026-09-22   56% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>             997.1    31.7   2026-09-22   34% ▇▇▇▇
+<a name="visual-t2vphysbench"></a>T2VPhysBench: A First…  <a href="https://arxiv.org/html/2505.00337v1#S4.T2">T2VPhysBench (human physical …</a>   32.0%    39.8   2025-05-01    8% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 81.6%    41.1   2026-04-22    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 34.0
+                        weighted average                        = 36.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

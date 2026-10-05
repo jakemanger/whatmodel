@@ -161036,5 +161036,689 @@
     "score": 0.4728,
     "raw_value": 0.4728,
     "note": "ZS-TTS-Evaluation (Edresson Casanova, MIT) Evaluation/StyleTTS2/metrics.csv, English row: CER 0.6789% (Whisper large-v3, punctuation removed), UTMOS 4.426 ± 0.07, SECS 0.4728 (ECAPA2 cosine to the reference). 240 FLORES+ devtest sentences, zero-shot cloning of 20 clean DAPS speakers (3-8 s references). Identity: folder 'StyleTTS2': StyleTTS 2 cloning unseen DAPS speakers, which needs the multi-speaker zero-shot checkpoint yl4579/StyleTTS2-LibriTTS (the LJSpeech checkpoint is single-speaker); checkpoint file not named in the repo. Stored: SECS."
+  },
+  {
+    "model": "espnet-multiblank-transducer-8421",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.027999999999999997,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_multi_blank_transducer_asr_model_valid.loss.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-multiblank-transducer-8421",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.066,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_multi_blank_transducer_asr_model_valid.loss.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-conformer-rnn-transducer",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.027999999999999997,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_lm_weight0.0_asr_model_valid.loss.ave_10best/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-conformer-rnn-transducer",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.066,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_lm_weight0.0_asr_model_valid.loss.ave_10best/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-hubert-large-conformer-lm",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.018000000000000002,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_transformer2_en_bpe5000_valid.loss.ave_asr_model_valid.acc.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-hubert-large-conformer-lm",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.037000000000000005,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_transformer2_en_bpe5000_valid.loss.ave_asr_model_valid.acc.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-wavlm-large-conformer-lm",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.018000000000000002,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_transformer2_en_bpe5000_valid.loss.ave_asr_model_valid.acc.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-wavlm-large-conformer-lm",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.037000000000000005,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_transformer2_en_bpe5000_valid.loss.ave_asr_model_valid.acc.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-wav2vec2-large-conformer-lm",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.021,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_transformer2_en_bpe5000_valid.loss.ave_asr_model_valid.acc.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-wav2vec2-large-conformer-lm",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.051,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_transformer2_en_bpe5000_valid.loss.ave_asr_model_valid.acc.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-multiconvformer",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.022000000000000002,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_asr_asr_model_valid.acc.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-multiconvformer",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.047,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_asr_asr_model_valid.acc.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-e-branchformer",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.022000000000000002,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_asr_asr_model_valid.acc.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-e-branchformer",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.046,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_asr_asr_model_valid.acc.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-branchformer-18layer",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.023,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: till70epoch_beam60_ctc0.3/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-branchformer-18layer",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.053,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: till70epoch_beam60_ctc0.3/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-conformer-s4-decoder",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.023,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: beam60_ctc0.3/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-conformer-s4-decoder",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.05,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: beam60_ctc0.3/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-conformer-2020-lm",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.024,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_adam_bpe_valid.loss.ave_asr_model_valid.acc.ave/test_clean. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-conformer-2020-lm",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.057999999999999996,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_asr_lm_lm_train_lm_adam_bpe_valid.loss.ave_asr_model_valid.acc.ave/test_other. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-transformer-18layer-lm",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.025,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2620 utterances, 52576 words. Exact decoding/checkpoint label: decode_test_clean_decode_asr_beam_size20_lm_train_lm_adam_bpe_valid.loss.best_asr_model_valid.acc.best. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "espnet-transformer-18layer-lm",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.062,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "by": "lab",
+    "note": "ESPnet recipe WER table, 2939 utterances, 52343 words. Exact decoding/checkpoint label: decode_test_other_decode_asr_beam_size20_lm_train_lm_adam_bpe_valid.loss.best_asr_model_valid.acc.best. Err column / 100; no CER/TER or development set duplication. Native recipe text/scoring pipeline, not Open ASR normalisation.",
+    "source_id": "speech-espnet-librispeech-20260929"
+  },
+  {
+    "model": "jasper-10x5-nvidia-dle",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.0341,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
+    "by": "lab",
+    "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
+    "source_id": "speech-nvidia-jasper-dle"
+  },
+  {
+    "model": "jasper-10x5-nvidia-dle",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.0971,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
+    "by": "lab",
+    "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
+    "source_id": "speech-nvidia-jasper-dle"
+  },
+  {
+    "model": "quartznet-15x5-nvidia-dle",
+    "bench": "librispeech-test-clean-wer",
+    "score": 0.0369,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
+    "by": "lab",
+    "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
+    "source_id": "speech-nvidia-quartznet-dle"
+  },
+  {
+    "model": "quartznet-15x5-nvidia-dle",
+    "bench": "librispeech-test-other-wer",
+    "score": 0.1069,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
+    "by": "lab",
+    "note": "NVIDIA DGX A100 training accuracy table, mixed precision, greedy decoding without language model. Exact DLE recipe run; not a generic architecture or Open ASR score.",
+    "source_id": "speech-nvidia-quartznet-dle"
+  },
+  {
+    "model": "vits-ljspeech",
+    "bench": "vits2021-ljspeech-mos",
+    "score": 0.8574999999999999,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "by": "lab",
+    "note": "Table 1: human naturalness MOS 4.43 ± 0.06 (95% CI), 1–5 scale. Authors generated and rated all systems themselves. Store (MOS − 1) / 4. §3.4: public pretrained acoustic models; fine-tuned HiFi-GAN trained up to 100k steps on Tacotron 2 teacher-forced outputs.",
+    "source_id": "speech-vits-icml2021"
+  },
+  {
+    "model": "tacotron2-hifigan-ljspeech",
+    "bench": "vits2021-ljspeech-mos",
+    "score": 0.6925,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "by": "independent",
+    "note": "Table 1: human naturalness MOS 3.77 ± 0.08 (95% CI), 1–5 scale. Authors generated and rated all systems themselves. Store (MOS − 1) / 4. §3.4: public pretrained acoustic models; fine-tuned HiFi-GAN trained up to 100k steps on Tacotron 2 teacher-forced outputs.",
+    "source_id": "speech-vits-icml2021"
+  },
+  {
+    "model": "tacotron2-hifigan-ft-ljspeech",
+    "bench": "vits2021-ljspeech-mos",
+    "score": 0.8125,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "by": "independent",
+    "note": "Table 1: human naturalness MOS 4.25 ± 0.07 (95% CI), 1–5 scale. Authors generated and rated all systems themselves. Store (MOS − 1) / 4. §3.4: public pretrained acoustic models; fine-tuned HiFi-GAN trained up to 100k steps on Tacotron 2 teacher-forced outputs.",
+    "source_id": "speech-vits-icml2021"
+  },
+  {
+    "model": "glow-tts-hifigan-ljspeech",
+    "bench": "vits2021-ljspeech-mos",
+    "score": 0.7849999999999999,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "by": "independent",
+    "note": "Table 1: human naturalness MOS 4.14 ± 0.07 (95% CI), 1–5 scale. Authors generated and rated all systems themselves. Store (MOS − 1) / 4. §3.4: public pretrained acoustic models; fine-tuned HiFi-GAN trained up to 100k steps on Tacotron 2 teacher-forced outputs.",
+    "source_id": "speech-vits-icml2021"
+  },
+  {
+    "model": "glow-tts-hifigan-ft-ljspeech",
+    "bench": "vits2021-ljspeech-mos",
+    "score": 0.8300000000000001,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "by": "independent",
+    "note": "Table 1: human naturalness MOS 4.32 ± 0.07 (95% CI), 1–5 scale. Authors generated and rated all systems themselves. Store (MOS − 1) / 4. §3.4: public pretrained acoustic models; fine-tuned HiFi-GAN trained up to 100k steps on Tacotron 2 teacher-forced outputs.",
+    "source_id": "speech-vits-icml2021"
+  },
+  {
+    "model": "vits-vctk",
+    "bench": "vits2021-vctk-mos",
+    "score": 0.845,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "by": "lab",
+    "note": "Table 3: human naturalness MOS 4.38 ± 0.06 (95% CI), 1–5 scale. Authors generated and rated all systems themselves. Store (MOS − 1) / 4. §3.4: public pretrained acoustic models; fine-tuned HiFi-GAN trained up to 100k steps on Tacotron 2 teacher-forced outputs.",
+    "source_id": "speech-vits-icml2021"
+  },
+  {
+    "model": "attngan-coco",
+    "bench": "tifa-v1",
+    "score": 0.581,
+    "source": "https://arxiv.org/html/2303.11897v3",
+    "by": "independent",
+    "note": "Appendix Table 4, Overall TIFA (mPLUG VQA) column, /100. Benchmark authors generated and evaluated images; 4,081 prompts. TIFA Appendix E AttnGAN row; original COCO text-to-image system.",
+    "source_id": "visual-tifa"
+  },
+  {
+    "model": "x-lxmert",
+    "bench": "tifa-v1",
+    "score": 0.586,
+    "source": "https://arxiv.org/html/2303.11897v3",
+    "by": "independent",
+    "note": "Appendix Table 4, Overall TIFA (mPLUG VQA) column, /100. Benchmark authors generated and evaluated images; 4,081 prompts. TIFA Appendix E X-LXMERT row; visual-token text-to-image generation.",
+    "source_id": "visual-tifa"
+  },
+  {
+    "model": "dall-e-mega-min-dalle",
+    "bench": "tifa-v1",
+    "score": 0.794,
+    "source": "https://arxiv.org/html/2303.11897v3",
+    "by": "independent",
+    "note": "Appendix Table 4, Overall TIFA (mPLUG VQA) column, /100. Benchmark authors generated and evaluated images; 4,081 prompts. TIFA Appendix E explicitly identifies minDALL-E as DALL·E Mini with Mega weights. HPS Appendix D names the same min-dalle implementation, not original OpenAI DALL·E.",
+    "source_id": "visual-tifa"
+  },
+  {
+    "model": "dall-e-mega-min-dalle",
+    "bench": "hpsv2-benchmark",
+    "score": 0.2583,
+    "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "by": "independent",
+    "note": "Committed README v2 benchmark Averaged column /100; not v2.1 and no per-style duplication. HPS v2 Appendix D: kuprel/min-dalle reproduction, default hyperparameters except grid_size=1; README identifies Mega weights.",
+    "source_id": "visual-hpsv2-readme"
+  },
+  {
+    "model": "fusedream-biggan-512",
+    "bench": "hpsv2-benchmark",
+    "score": 0.2528,
+    "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "by": "independent",
+    "note": "Committed README v2 benchmark Averaged column /100; not v2.1 and no per-style duplication. HPS v2 Appendix D: 512×512 output, 1000 initialisation iterations, 1000 optimisation iterations, 5 basis images.",
+    "source_id": "visual-hpsv2-readme"
+  },
+  {
+    "model": "lafite-hps2023",
+    "bench": "hpsv2-benchmark",
+    "score": 0.2481,
+    "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "by": "independent",
+    "note": "Committed README v2 benchmark Averaged column /100; not v2.1 and no per-style duplication. HPS v2 Appendix D: 256×256 default configuration, exact author-linked checkpoint Google Drive file 1tMD6MWydRDMaaM7iTOKsUK-Wv2YNDRRt.",
+    "source_id": "visual-hpsv2-readme"
+  },
+  {
+    "model": "modelscope-t2v-1-7b",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.5309,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "modelscope-t2v-1-7b",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.5446,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "modelscope-t2v-1-7b",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5246999999999999,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "modelscope-t2v-1-7b",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.578,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "zeroscope-v2-xl",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.5341,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "zeroscope-v2-xl",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.5121,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "zeroscope-v2-xl",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5361,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "zeroscope-v2-xl",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.5891,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "floor33-pictures-2023-08",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.5878,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Historical hosted model/API evaluated in EvalCrafter. No current API endpoint verified. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "floor33-pictures-2023-08",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.6132,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Historical hosted model/API evaluated in EvalCrafter. No current API endpoint verified. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "floor33-pictures-2023-08",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.4916,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Historical hosted model/API evaluated in EvalCrafter. No current API endpoint verified. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "floor33-pictures-2023-08",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.5024000000000001,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Historical hosted model/API evaluated in EvalCrafter. No current API endpoint verified. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "pikalab-2023-09",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.6077,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Pre-Pika 1.0 historical service (Table 1); not Pika 1.0 or current Pika. No current run option for this snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "pikalab-2023-09",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.5579999999999999,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Pre-Pika 1.0 historical service (Table 1); not Pika 1.0 or current Pika. No current run option for this snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "pikalab-2023-09",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5577000000000001,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Pre-Pika 1.0 historical service (Table 1); not Pika 1.0 or current Pika. No current run option for this snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "pikalab-2023-09",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.6541,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Pre-Pika 1.0 historical service (Table 1); not Pika 1.0 or current Pika. No current run option for this snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "runway-gen-2",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.6251,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "runway-gen-2",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.6098,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "runway-gen-2",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5643,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "runway-gen-2",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.6441,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "videocrafter1-t2v",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.6085,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. October 2023 VideoCrafter1 text-to-video, 1024×576, 16 frames; distinct from early VideoCrafter/LVDM and VideoCrafter2. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "videocrafter1-t2v",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.6195,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. October 2023 VideoCrafter1 text-to-video, 1024×576, 16 frames; distinct from early VideoCrafter/LVDM and VideoCrafter2. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "videocrafter1-t2v",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5307999999999999,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. October 2023 VideoCrafter1 text-to-video, 1024×576, 16 frames; distinct from early VideoCrafter/LVDM and VideoCrafter2. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "videocrafter1-t2v",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.5589,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. October 2023 VideoCrafter1 text-to-video, 1024×576, 16 frames; distinct from early VideoCrafter/LVDM and VideoCrafter2. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "show-1",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.5219,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "show-1",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.6207,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "show-1",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5374,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "show-1",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.6083,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "hotshot-xl",
+    "bench": "evalcrafter2023-visual",
+    "score": 0.6038,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, visual quality. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "hotshot-xl",
+    "bench": "evalcrafter2023-alignment",
+    "score": 0.6152000000000001,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, text-video alignment. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "hotshot-xl",
+    "bench": "evalcrafter2023-motion",
+    "score": 0.5297999999999999,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, motion quality. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "hotshot-xl",
+    "bench": "evalcrafter2023-temporal",
+    "score": 0.5996,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "by": "independent",
+    "note": "Table 2, temporal consistency. Exact 2023 generation settings in Table 1. Gen2 is the September 2023 service snapshot. Human-preference-aligned automatic composite, not raw human MOS; printed score /100.",
+    "source_id": "visual-evalcrafter-2023"
+  },
+  {
+    "model": "nvidia-tacotron2-waveglow",
+    "bench": "fastpitch2020-ljspeech-mos",
+    "score": 0.7365,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "by": "lab",
+    "note": "Committed README MOS table: 3.946 ± 0.134 (95% CI); grapheme inputs and WaveGlow (FastPitch paper Table 1). Store (MOS−1)/4.",
+    "source_id": "speech-nvidia-fastpitch-readme"
+  },
+  {
+    "model": "fastpitch-1-0-waveglow",
+    "bench": "fastpitch2020-ljspeech-mos",
+    "score": 0.77,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "by": "lab",
+    "note": "Committed README MOS table: 4.080 ± 0.133 (95% CI); grapheme inputs and WaveGlow (FastPitch paper Table 1). Store (MOS−1)/4.",
+    "source_id": "speech-nvidia-fastpitch-readme"
+  },
+  {
+    "model": "fastpitch-1-0-waveglow",
+    "bench": "fastpitch2021-pairwise-preference",
+    "score": 0.435,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "by": "lab",
+    "note": "Committed README Average preference table, ±0.068. Pairwise preference between versions 1.0 and 1.1, not human MOS. Stored unchanged.",
+    "source_id": "speech-nvidia-fastpitch-readme"
+  },
+  {
+    "model": "fastpitch-1-1-waveglow",
+    "bench": "fastpitch2021-pairwise-preference",
+    "score": 0.565,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "by": "lab",
+    "note": "Committed README Average preference table, ±0.068. Pairwise preference between versions 1.0 and 1.1, not human MOS. Stored unchanged.",
+    "source_id": "speech-nvidia-fastpitch-readme"
+  },
+  {
+    "model": "grad-tts-10-hifigan",
+    "bench": "gradtts2021-ljspeech-mos",
+    "score": 0.845,
+    "source": "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf",
+    "by": "lab",
+    "note": "Table 2 MOS 4.38 ± 0.06 (95% CI), 40 sentences × 10 raters; HiFi-GAN vocoder. Store (MOS−1)/4. Other iteration settings and unspecified baseline checkpoints not pooled.",
+    "source_id": "speech-gradtts-icml2021"
+  },
+  {
+    "model": "fastspeech-xcmyz-gradtts-study",
+    "bench": "gradtts2021-ljspeech-mos",
+    "score": 0.67,
+    "source": "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf",
+    "by": "independent",
+    "note": "Table 2 MOS 3.68 ± 0.09 (95% CI), 40 sentences × 10 raters; HiFi-GAN vocoder. Store (MOS−1)/4. Other iteration settings and unspecified baseline checkpoints not pooled.",
+    "source_id": "speech-gradtts-icml2021"
   }
 ]

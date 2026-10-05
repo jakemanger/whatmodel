@@ -8,7 +8,7 @@ EleutherAI · released 2021-03 · 2.7B params · mit
 
 **score 51.8** ±1.4 · #15 of 39 · from 14 benchmark results across 3 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

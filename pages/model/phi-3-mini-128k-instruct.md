@@ -8,7 +8,7 @@ Microsoft · released 2024-04 · 3.82B params · mit
 
 **score 32.5** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

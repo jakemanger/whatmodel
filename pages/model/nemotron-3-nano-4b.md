@@ -4,6 +4,8 @@
 
 # Nemotron 3 Nano 4B
 
+NVIDIA · released 2026-03
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

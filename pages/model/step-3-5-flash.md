@@ -8,7 +8,7 @@ StepFun · released 2026-02 · 196B params (11B active) · apache-2.0
 
 **score 63.5** ±1.1 · #109 of 404 · from 10 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,7 +8,7 @@ Anthropic · released 2024-06 · proprietary
 
 **score 54.4** ±0.7 · comparison only: no current run option verified · from 17 benchmark results across 10 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,7 +8,7 @@ NVIDIA · released 2024-10 · 70.6B params · llama3.1
 
 **score 48.8** ±1.3 · #218 of 404 · from 7 benchmark results across 6 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

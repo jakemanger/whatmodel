@@ -8,6 +8,8 @@ Amphion (CUHK-Shenzhen) · released 2024-10 · cc-by-nc-4.0
 
 **score 49.9** ±1.2 · #32 of 46 · from 30 benchmark results across 9 sources
 
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)

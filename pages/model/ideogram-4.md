@@ -6,9 +6,9 @@
 
 Ideogram · released 2026-06 · 9.3B params · ideogram-4-nc
 
-**score 67.2** ±1.9 · #14 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.5** ±1.9 · #14 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1204.8    67.5   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 67.2
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1204.8    67.8   2026-09-24   99% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 1% ▇
+                        weighted average                = 67.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ api (Together AI) · $0.060/image · [together.ai](https://www.together.ai/model
 
 <pre>
 version              needs  score
-nf4 · nvidia only  ~6.08GB   67.2
-mlx-q4 · mac only  ~6.08GB   67.2
+nf4 · nvidia only  ~6.08GB   67.5
+mlx-q4 · mac only  ~6.08GB   67.5
 </pre>
 
 ```sh

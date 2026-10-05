@@ -6,24 +6,28 @@
 
 Runway · released 2023-06 · proprietary
 
-**score 23.3** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 27.3** ±1.7 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>    7.6%    20.2   2026-01-30   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  29.0%    23.8   2026-01-30   19% ▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  52.4%    28.2   2024-10-01   18% ▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 23.3
+source                  test                                  score  implies  date        weight
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  56.43 / 100    27.6                16% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  62.51 / 100    28.6                16% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  64.41 / 100    28.9                15% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  60.98 / 100    27.1                15% ▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>          7.6%    23.3   2026-01-30   23% ▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>        29.0%    26.8   2026-01-30    8% ▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>        52.4%    30.4   2024-10-01    5% ▇
+prior                   pull toward the middle                         49.9                 1% ▇
+                        weighted average                             = 27.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
+<sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt)) · VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
 
 ## How to run it
 

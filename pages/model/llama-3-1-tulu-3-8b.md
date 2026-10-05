@@ -8,7 +8,7 @@ Ai2 · released 2024-11 · 8.03B params · llama3.1
 
 **score 41.6** ±1.4 · #277 of 404 · from 9 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

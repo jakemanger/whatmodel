@@ -8,7 +8,7 @@ SpaceXAI (xAI) · released 2026-08 · closed weights
 
 **score 73.6** ±0.8 · #23 of 404 · from 15 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

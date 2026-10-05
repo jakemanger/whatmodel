@@ -4,7 +4,15 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md)
 
-updated 2026-09-28 23:34 UTC · 46 models · scores combine 83 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-09-29 13:54 UTC · 73 models · scores combine 83 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+
+<details><summary>Extra: filter models and choose a score scale</summary>
+
+[All sets](https://whatmodel.sh/tts) · [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot · 111 models](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925) · [VITS 2021 LJ Speech human MOS · 5 models](https://whatmodel.sh/tts?set=vits2021-ljspeech-mos)
+
+Filtering keeps overall scores. On the site, choose **within selected set** to use only that set’s evaluations. Models without a shared score scale are marked **not yet calibrated**.
+
+</details>
 
 Run `curl "whatmodel.sh/tts?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/tts` for this list in your terminal.
 
@@ -85,136 +93,175 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
 </details>
 
 <pre>
- #  model                        score  where                   RAM  get it
- 1  <a href="model/voxtral-tts.md">Voxtral TTS (4B)</a>             74±3   api $16.00/M chars           <a href="https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03">docs.mistral.ai</a>
- 2  <a href="model/gemini-3-1-flash-tts-preview.md">Gemini 3.1 Flash TTS Prev…</a>   69±2   api $50.00/M chars           <a href="https://fal.ai/models/fal-ai/gemini-3.1-flash-tts">fal.ai</a>
- 3  <a href="model/speechify-simba-3-2.md">Simba 3.2</a>                    69±3*  api $6.00/M chars            <a href="https://speechify.ai/pricing">speechify.ai</a>
- 4  <a href="model/minimax-speech-2-8-turbo.md">MiniMax Speech 2.8 Turbo</a>     68±3*  api $60.00/M chars           <a href="https://platform.minimax.io/docs/pricing/overview">platform.minimax.io</a>
- 5  <a href="model/xai-grok-tts.md">Grok TTS</a>                     68±3*  api $15.00/M chars           <a href="https://docs.x.ai/developers/model-capabilities/audio/text-to-speech">docs.x.ai</a>
- 6  <a href="model/minimax-speech-02-hd.md">MiniMax Speech-02-HD</a>         66±3   api $100.00/M chars          <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
- 7  <a href="model/elevenlabs-v3.md">Eleven v3</a>                    66±1   api $100.00/M chars          <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
- 8  <a href="model/fish-audio-s2-1-pro.md">Fish Audio S2.1 Pro</a>          66±3*  api $15.00/M chars           <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
- 9  <a href="model/qwen-audio-3-0-tts-plus.md">Qwen-Audio-3.0-TTS-Plus</a>      65±3   api $20.00/M chars           <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
-10  <a href="model/higgs-audio-v3-tts.md">Higgs Audio V3 TTS</a>           65±3   api $15.00/M chars           <a href="https://docs.boson.ai">docs.boson.ai</a>
-11  <a href="model/elevenlabs-flash-v2-5.md">Eleven Flash v2.5</a>            65±2   api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
-12  <a href="model/inworld-tts-1-5-max.md">Inworld TTS-1.5 Max</a>          65±3*  api $10.00/M chars           <a href="https://fal.ai/models/fal-ai/inworld-tts">fal.ai</a>
-13  <a href="model/google-chirp-3-hd.md">Chirp 3: HD</a>                  65±4*  api $30.00/M chars           <a href="https://cloud.google.com/text-to-speech/pricing">cloud.google.com</a>
-14  <a href="model/omnivoice.md">OmniVoice</a>                    65±3   local                ~3.3GB  pip install omnivoi…
-15  <a href="model/elevenlabs-turbo-v2.md">Eleven Turbo v2</a>              64±3*  api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
-16  <a href="model/elevenlabs-flash-v2.md">Eleven Flash v2</a>              64±3*  api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
-17  <a href="model/minimax-speech-2-8-hd.md">MiniMax Speech 2.8 HD</a>        64±2   api $100.00/M chars          <a href="https://platform.minimax.io/docs/pricing/overview">platform.minimax.io</a>
-18  <a href="model/cartesia-sonic-3.md">Sonic 3</a>                      63±2   api $65.00/M chars           <a href="https://www.together.ai/models/cartesia-sonic-3">together.ai</a>
-19  <a href="model/minimax-speech-02-turbo.md">MiniMax Speech-02-Turbo</a>      62±3*  api $60.00/M chars           <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
-20  <a href="model/inworld-realtime-tts-2.md">Inworld Realtime TTS-2</a>       62±2   api $25.00/M chars           <a href="https://replicate.com/inworld/realtime-tts-2">replicate.com</a>
-21  <a href="model/fish-audio-s2-pro.md">Fish Audio S2 Pro</a>            62±2   api $15.00/M chars           <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
-22  <a href="model/deepgram-aura-2.md">Deepgram Aura 2</a>              61±3   api $30.00/M chars           <a href="https://deepgram.com/pricing">deepgram.com</a>
-23  <a href="model/openai-tts-1.md">TTS-1</a>                        60±3   api $15.00/M chars           <a href="https://developers.openai.com/api/docs/pricing">developers.openai.c…</a>
-24  <a href="model/voxcpm-0-5b.md">VoxCPM 0.5B</a>                  59±1   local                  ~5GB  pip install voxcpm …
-25  <a href="model/hume-octave.md">Octave TTS (Octave 1)</a>        58±5   api $50.00/M chars           <a href="https://www.hume.ai/pricing">hume.ai</a>
-26  <a href="model/openai-tts-1-hd.md">TTS-1 HD</a>                     58±6*  api $30.00/M chars           <a href="https://developers.openai.com/api/docs/pricing">developers.openai.c…</a>
-27  <a href="model/cosyvoice-v3-plus.md">CosyVoice v3 Plus</a>            57±4*  api $26.00/M chars           <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
-28  <a href="model/smallest-lightning-v3-1.md">Lightning v3.1</a>               56±3*  api $17.50/M chars           <a href="https://smallest.ai/pricing">smallest.ai</a>
-29  <a href="model/kokoro-82m.md">Kokoro 82M v1.0</a>              55±4   api $0.62/M chars            <a href="https://deepinfra.com/hexgrad/Kokoro-82M">deepinfra.com</a>
-30  <a href="model/gradium-tts.md">Gradium TTS</a>                  53±3*  api $38.00/M chars           <a href="https://docs.gradium.ai/api-reference/endpoint/tts-post">docs.gradium.ai</a>
-31  <a href="model/chatterbox-multilingual-v3.md">Chatterbox Multilingual V3</a>  52±11*  local                ~3.2GB  pip install chatter…
-32  <a href="model/maskgct.md">MaskGCT</a>                      50±1   local                ~6.6GB  git clone https://g…
-33  <a href="model/elevenlabs-multilingual-v2.md">Eleven Multilingual v2</a>       50±6   api $100.00/M chars          <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
-34  <a href="model/openaudio-s1-mini.md">OpenAudio S1 Mini</a>            50±8*  api price unknown            <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
-35  <a href="model/chatterbox.md">Chatterbox</a>                   49±5   api $25.00/M chars           <a href="https://replicate.com/resemble-ai/chatterbox">replicate.com</a>
-36  <a href="model/vibevoice-1-5b.md">VibeVoice 1.5B</a>               49±6*  local                  ~7GB  git clone https://g…
-37  <a href="model/f5-tts-v1-base.md">F5-TTS v1 Base</a>               48±2   local                ~1.4GB  pip install f5-tts …
-38  <a href="model/parler-tts-mini-v0-1.md">Parler-TTS Mini v0.1</a>        48±14*  local                ~2.6GB  pip install git+htt…
-39  <a href="model/orpheus-tts-0-1-finetune-prod.md">Orpheus TTS 3B 0.1 (finet…</a>   46±6   api $15.00/M chars           <a href="https://docs.together.ai/docs/serverless/models">docs.together.ai</a>
-40  <a href="model/e2-tts-base.md">E2 TTS Base (F5-TTS repro…</a>   45±1   local                ~1.3GB  pip install f5-tts …
-41  <a href="model/amazon-polly-neural.md">Amazon Polly Neural</a>          44±4*  api $16.00/M chars           <a href="https://aws.amazon.com/polly/pricing">aws.amazon.com</a>
-42  <a href="model/f5-tts-base.md">F5-TTS Base (v0)</a>             42±2   local                ~1.4GB  pip install f5-tts …
-43  <a href="model/zonos-v0-1.md">Zonos v0.1</a>                   38±5   api price unknown            <a href="https://zyphra.com">zyphra.com</a>
-44  <a href="model/sesame-csm-1b.md">Sesame CSM-1B</a>                32±4   api $7.00/M chars            <a href="https://deepinfra.com/sesame/csm-1b">deepinfra.com</a>
-45  <a href="model/parler-tts-large-v1.md">Parler-TTS Large v1</a>          23±3   local                ~9.3GB  pip install git+htt…
-46  <a href="model/bark.md">Bark</a>                         20±3   local                 ~12GB  pip install git+htt…
+ #  model                                     score  where                   RAM  get it
+ 1  <a href="model/voxtral-tts.md">Voxtral TTS (4B)</a>                          74±3   api $16.00/M chars           <a href="https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03">docs.mistral.ai</a>
+ 2  <a href="model/gemini-3-1-flash-tts-preview.md">Gemini 3.1 Flash TTS Prev…</a>                69±2   api $50.00/M chars           <a href="https://fal.ai/models/fal-ai/gemini-3.1-flash-tts">fal.ai</a>
+ 3  <a href="model/speechify-simba-3-2.md">Simba 3.2</a>                                 69±3*  api $6.00/M chars            <a href="https://speechify.ai/pricing">speechify.ai</a>
+ 4  <a href="model/minimax-speech-2-8-turbo.md">MiniMax Speech 2.8 Turbo</a>                  68±3*  api $60.00/M chars           <a href="https://platform.minimax.io/docs/pricing/overview">platform.minimax.io</a>
+ 5  <a href="model/xai-grok-tts.md">Grok TTS</a>                                  68±3*  api $15.00/M chars           <a href="https://docs.x.ai/developers/model-capabilities/audio/text-to-speech">docs.x.ai</a>
+ 6  <a href="model/minimax-speech-02-hd.md">MiniMax Speech-02-HD</a>                      66±3   api $100.00/M chars          <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+ 7  <a href="model/elevenlabs-v3.md">Eleven v3</a>                                 66±1   api $100.00/M chars          <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+ 8  <a href="model/fish-audio-s2-1-pro.md">Fish Audio S2.1 Pro</a>                       66±3*  api $15.00/M chars           <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+ 9  <a href="model/qwen-audio-3-0-tts-plus.md">Qwen-Audio-3.0-TTS-Plus</a>                   65±3   api $20.00/M chars           <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+10  <a href="model/higgs-audio-v3-tts.md">Higgs Audio V3 TTS</a>                        65±3   api $15.00/M chars           <a href="https://docs.boson.ai">docs.boson.ai</a>
+11  <a href="model/elevenlabs-flash-v2-5.md">Eleven Flash v2.5</a>                         65±2   api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+12  <a href="model/inworld-tts-1-5-max.md">Inworld TTS-1.5 Max</a>                       65±3*  api $10.00/M chars           <a href="https://fal.ai/models/fal-ai/inworld-tts">fal.ai</a>
+13  <a href="model/google-chirp-3-hd.md">Chirp 3: HD</a>                               65±4*  api $30.00/M chars           <a href="https://cloud.google.com/text-to-speech/pricing">cloud.google.com</a>
+14  <a href="model/omnivoice.md">OmniVoice</a>                                 65±3   local                ~3.3GB  pip install omnivoi…
+15  <a href="model/elevenlabs-turbo-v2.md">Eleven Turbo v2</a>                           64±3*  api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+16  <a href="model/elevenlabs-flash-v2.md">Eleven Flash v2</a>                           64±3*  api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+17  <a href="model/minimax-speech-2-8-hd.md">MiniMax Speech 2.8 HD</a>                     64±2   api $100.00/M chars          <a href="https://platform.minimax.io/docs/pricing/overview">platform.minimax.io</a>
+18  <a href="model/cartesia-sonic-3.md">Sonic 3</a>                                   63±2   api $65.00/M chars           <a href="https://www.together.ai/models/cartesia-sonic-3">together.ai</a>
+19  <a href="model/minimax-speech-02-turbo.md">MiniMax Speech-02-Turbo</a>                   62±3*  api $60.00/M chars           <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+20  <a href="model/inworld-realtime-tts-2.md">Inworld Realtime TTS-2</a>                    62±2   api $25.00/M chars           <a href="https://replicate.com/inworld/realtime-tts-2">replicate.com</a>
+21  <a href="model/fish-audio-s2-pro.md">Fish Audio S2 Pro</a>                         62±2   api $15.00/M chars           <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+22  <a href="model/deepgram-aura-2.md">Deepgram Aura 2</a>                           61±3   api $30.00/M chars           <a href="https://deepgram.com/pricing">deepgram.com</a>
+23  <a href="model/openai-tts-1.md">TTS-1</a>                                     60±3   api $15.00/M chars           <a href="https://developers.openai.com/api/docs/pricing">developers.openai.c…</a>
+24  <a href="model/voxcpm-0-5b.md">VoxCPM 0.5B</a>                               59±1   local                  ~5GB  pip install voxcpm …
+25  <a href="model/hume-octave.md">Octave TTS (Octave 1)</a>                     58±5   api $50.00/M chars           <a href="https://www.hume.ai/pricing">hume.ai</a>
+26  <a href="model/openai-tts-1-hd.md">TTS-1 HD</a>                                  58±6*  api $30.00/M chars           <a href="https://developers.openai.com/api/docs/pricing">developers.openai.c…</a>
+27  <a href="model/cosyvoice-v3-plus.md">CosyVoice v3 Plus</a>                         57±4*  api $26.00/M chars           <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
+28  <a href="model/smallest-lightning-v3-1.md">Lightning v3.1</a>                            56±3*  api $17.50/M chars           <a href="https://smallest.ai/pricing">smallest.ai</a>
+29  <a href="model/kokoro-82m.md">Kokoro 82M v1.0</a>                           55±4   api $0.62/M chars            <a href="https://deepinfra.com/hexgrad/Kokoro-82M">deepinfra.com</a>
+30  <a href="model/gradium-tts.md">Gradium TTS</a>                               53±3*  api $38.00/M chars           <a href="https://docs.gradium.ai/api-reference/endpoint/tts-post">docs.gradium.ai</a>
+31  <a href="model/chatterbox-multilingual-v3.md">Chatterbox Multilingual V3</a>               52±11*  local                ~3.2GB  pip install chatter…
+32  <a href="model/maskgct.md">MaskGCT</a>                                   50±1   local                ~6.6GB  git clone https://g…
+33  <a href="model/elevenlabs-multilingual-v2.md">Eleven Multilingual v2</a>                    50±6   api $100.00/M chars          <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+34  <a href="model/openaudio-s1-mini.md">OpenAudio S1 Mini</a>                         50±8*  api price unknown            <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+35  <a href="model/chatterbox.md">Chatterbox</a>                                49±5   api $25.00/M chars           <a href="https://replicate.com/resemble-ai/chatterbox">replicate.com</a>
+36  <a href="model/vibevoice-1-5b.md">VibeVoice 1.5B</a>                            49±6*  local                  ~7GB  git clone https://g…
+37  <a href="model/f5-tts-v1-base.md">F5-TTS v1 Base</a>                            48±2   local                ~1.4GB  pip install f5-tts …
+38  <a href="model/parler-tts-mini-v0-1.md">Parler-TTS Mini v0.1</a>                     48±14*  local                ~2.6GB  pip install git+htt…
+39  <a href="model/orpheus-tts-0-1-finetune-prod.md">Orpheus TTS 3B 0.1 (finet…</a>                46±6   api $15.00/M chars           <a href="https://docs.together.ai/docs/serverless/models">docs.together.ai</a>
+40  <a href="model/e2-tts-base.md">E2 TTS Base (F5-TTS repro…</a>                45±1   local                ~1.3GB  pip install f5-tts …
+41  <a href="model/amazon-polly-neural.md">Amazon Polly Neural</a>                       44±4*  api $16.00/M chars           <a href="https://aws.amazon.com/polly/pricing">aws.amazon.com</a>
+42  <a href="model/f5-tts-base.md">F5-TTS Base (v0)</a>                          42±2   local                ~1.4GB  pip install f5-tts …
+43  <a href="model/zonos-v0-1.md">Zonos v0.1</a>                                38±5   api price unknown            <a href="https://zyphra.com">zyphra.com</a>
+44  <a href="model/sesame-csm-1b.md">Sesame CSM-1B</a>                             32±4   api $7.00/M chars            <a href="https://deepinfra.com/sesame/csm-1b">deepinfra.com</a>
+45  <a href="model/parler-tts-large-v1.md">Parler-TTS Large v1</a>                       23±3   local                ~9.3GB  pip install git+htt…
+46  <a href="model/bark.md">Bark</a>                                      20±3   local                 ~12GB  pip install git+htt…
+ —  <a href="model/azure-hd-2-5.md">Azure HD 2.5</a>                no reviewed results  api $22.00/M chars           <a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/speech-services/">azure.microsoft.com</a>
+ —  <a href="model/breeze-tts-2.md">Breeze TTS 2</a>                no reviewed results  api $28.00/M chars           <a href="https://breezeblue.ai">breezeblue.ai</a>
+ —  <a href="model/elevenlabs-turbo-v2-5.md">Eleven Turbo v2.5</a>                not scored yet  api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+ —  <a href="model/elevenlabs-v3-conversational.md">Eleven v3 Conversational</a>    no reviewed results  api $50.00/M chars           <a href="https://elevenlabs.io/pricing/api">elevenlabs.io</a>
+ —  <a href="model/coqui-en-ljspeech-fast-pitch.md">FastPitch (Coqui LJ Speec…</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/speechbrain-fastspeech2-ljspeech.md">FastSpeech 2 + HiFi-GAN (…</a>  no reviewed results  local                  ~4GB  uv run --with speec…
+ —  <a href="model/gemini-3-8-flash-tts.md">Gemini 3.8 Flash TTS</a>        no reviewed results  api price unknown            <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+ —  <a href="model/gemini-3-8-flash-lite-tts.md">Gemini 3.8 Flash-Lite TTS</a>   no reviewed results  api price unknown            <a href="https://ai.google.dev/gemini-api/docs/pricing">ai.google.dev</a>
+ —  <a href="model/coqui-en-ljspeech-glow-tts.md">Glow-TTS (Coqui LJ Speech)</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-tr-common-voice-glow-tts.md">Glow-TTS Common Voice (Tu…</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-uk-mai-glow-tts.md">Glow-TTS Mai (Ukrainian)</a>    no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/smallest-lightning-v3-1-pro.md">Lightning v3.1 Pro</a>          no reviewed results  api $19.50/M chars           <a href="https://smallest.ai/pricing">smallest.ai</a>
+ —  <a href="model/magpie-tts-multilingual-357m.md">Magpie TTS Multilingual 3…</a>  no reviewed results  local                ~0.9GB  git clone --recursi…
+ —  <a href="model/maya1.md">Maya1</a>                       no reviewed results  local                ~8.4GB  pip install vllm sn…
+ —  <a href="model/minimax-speech-2-6-hd.md">MiniMax Speech 2.6 HD</a>       no reviewed results  api $100.00/M chars          <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
+ —  <a href="model/coqui-en-ljspeech-neural-hmm.md">Neural HMM TTS (Coqui LJ …</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/hume-octave-2.md">Octave 2</a>                    no reviewed results  api $25.00/M chars           <a href="https://www.hume.ai/pricing">hume.ai</a>
+ —  <a href="model/openaudio-s1.md">OpenAudio S1</a>                     not scored yet  api $15.00/M chars           <a href="https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits">docs.fish.audio</a>
+ —  <a href="model/coqui-en-ljspeech-overflow.md">OverFlow (Coqui LJ Speech)</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/amazon-polly-generative.md">Polly Generative</a>            no reviewed results  api $30.00/M chars           <a href="https://aws.amazon.com/polly/pricing/">aws.amazon.com</a>
+ —  <a href="model/cartesia-sonic-3-6.md">Sonic 3.6</a>                   no reviewed results  api $38.00/M chars           <a href="https://cartesia.ai/pricing">cartesia.ai</a>
+ —  <a href="model/coqui-en-ljspeech-speedy-speech.md">SpeedySpeech (Coqui LJ Sp…</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-en-ljspeech-tacotron2-ddc.md">Tacotron 2 DDC (Coqui LJ …</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-pt-cv-vits.md">VITS Common Voice (Portug…</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-fr-css10-vits.md">VITS CSS10 (French)</a>         no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-es-css10-vits.md">VITS CSS10 (Spanish)</a>        no reviewed results  local                  ~4GB  uv run --python 3.1…
+ —  <a href="model/coqui-de-thorsten-vits.md">VITS Thorsten (German)</a>      no reviewed results  local                  ~4GB  uv run --python 3.1…
 </pre>
 
-<details><summary>Retired models (65): no current API or download</summary>
+<details><summary>Catalogue-only models (77): no verified run option</summary>
 
-Ranked on today's scale, so # is where each would place in the list above.
+Scores appear only where comparable reviewed evidence is available.
 
 <pre>
-  #  model                        score  where
-  1  <a href="model/seed-tts-2-0-standard.md">Seed TTS 2.0 Standard</a>        85±4*  retired
-  2  <a href="model/azure-neural-tts-xiaoxiao.md">Azure Neural TTS Xiaoxiao</a>    74±4*  retired
-  4  <a href="model/gemini-2-5-flash-preview-tts.md">Gemini 2.5 Flash Preview …</a>   73±3   retired
-  5  <a href="model/gemini-2-5-pro-preview-tts.md">Gemini 2.5 Pro Preview TTS</a>   71±3   retired
- 22  <a href="model/wayu-paxa-tts-edge.md">Wayu-Paxa-TTS-Edge</a>           63±4*  retired
- 23  <a href="model/cartesia-sonic-3-5.md">Sonic 3.5</a>                    63±2   retired
- 25  <a href="model/raon-opentts-1b.md">Raon-OpenTTS-1B</a>              63±2   retired
- 29  <a href="model/qwen3-tts-12hz-1-7b-base.md">Qwen3-TTS 12Hz 1.7B Base</a>     62±1   retired
- 31  <a href="model/cartesia-sonic-2.md">Sonic 2</a>                      61±3*  retired
- 32  <a href="model/voxcpm2.md">VoxCPM2</a>                      61±2   retired
- 33  <a href="model/qwen3-tts-12hz-0-6b-base.md">Qwen3-TTS 12Hz 0.6B Base</a>     60±3*  retired
- 34  <a href="model/fireredtts3-base.md">FireRedTTS3 (base)</a>           60±3*  retired
- 36  <a href="model/raon-opentts-0-3b.md">Raon-OpenTTS-0.3B</a>            59±2   retired
- 38  <a href="model/fun-cosyvoice3-0-5b-2512.md">Fun-CosyVoice3-0.5B-2512</a>     59±2   retired
- 39  <a href="model/gpt-4o-mini-tts.md">GPT-4o mini TTS</a>              58±2   retired
- 42  <a href="model/moss-tts-v1-5.md">MOSS-TTS v1.5 (8B)</a>           58±2   retired
- 44  <a href="model/indextts-2.md">IndexTTS-2</a>                   56±2   retired
- 45  <a href="model/mgm-omni-tts-2b-0927.md">MGM-Omni-TTS 2B (0927)</a>       56±3   retired
- 47  <a href="model/zonos2-8b.md">ZONOS2 8B</a>                    56±2   retired
- 48  <a href="model/dots-tts-soar.md">dots.tts SOAR 2B</a>             55±3   retired
- 50  <a href="model/neuphonic-neu-hq.md">Neuphonic neu_hq</a>             54±3*  retired
- 51  <a href="model/cosyvoice2-0-5b.md">CosyVoice2-0.5B</a>              54±1   retired
- 52  <a href="model/zipvoice.md">ZipVoice</a>                     54±7*  retired
- 53  <a href="model/dmospeech-2.md">DMOSpeech 2</a>                  54±3   retired
- 55  <a href="model/supertonic-3.md">Supertonic 3</a>                53±11*  retired
- 56  <a href="model/elevenlabs-v3-alpha.md">ElevenLabs v3 Alpha</a>          53±9*  retired
- 57  <a href="model/higgs-audio-v2.md">Higgs Audio V2</a>               53±3   retired
- 59  <a href="model/azure-ameha-neural.md">Azure Ameha Neural</a>          51±16*  retired
- 60  <a href="model/addis-voice-2.md">Addis Voice 2</a>               50±16*  retired
- 61  <a href="model/azure-mekdes-neural.md">Azure Mekdes Neural</a>         50±16*  retired
- 62  <a href="model/openvoice-v1.md">OpenVoice V1</a>                50±14*  retired
- 63  <a href="model/mms-tts-amh.md">MMS TTS Amharic</a>             50±16*  retired
- 71  <a href="model/fish-speech-1-2.md">Fish Speech 1.2</a>             48±14*  retired
- 72  <a href="model/indextts.md">IndexTTS (v1)</a>                48±3   retired
- 73  <a href="model/spark-tts-0-5b.md">Spark-TTS 0.5B</a>               47±3   retired
- 74  <a href="model/kyutai-tts-1-6b-en-fr.md">Kyutai TTS 1.6B en/fr</a>        47±6*  retired
- 76  <a href="model/vokan.md">Vokan</a>                       46±14*  retired
- 77  <a href="model/mimo-v2-5-tts.md">MiMo v2.5 TTS</a>                46±4*  retired
- 78  <a href="model/amphion-valle-librilight-6k.md">Amphion VALL-E (LibriLigh…</a>  45±14*  retired
- 79  <a href="model/llasa-8b.md">Llasa-8B</a>                     45±2   retired
- 82  <a href="model/cartesia-sonic.md">Sonic (1)</a>                    44±3*  retired
- 84  <a href="model/amphion-vevo.md">Vevo (Amphion)</a>               38±2   retired
- 85  <a href="model/cosyvoice-300m.md">CosyVoice-300M</a>               38±2   retired
- 87  <a href="model/hierspeechpp-libritts960.md">HierSpeech++ (LibriTTS-96…</a>   38±5   retired
- 88  <a href="model/gpt-sovits-v2.md">GPT-SoVITS v2</a>                35±3   retired
- 89  <a href="model/voicecraft-830m.md">VoiceCraft 830M (giga830M)</a>   33±4   retired
- 90  <a href="model/fish-speech-1-5.md">Fish Speech 1.5</a>              33±3   retired
- 92  <a href="model/hierspeechpp-v1-1.md">HierSpeech++ v1.1</a>            32±3   retired
- 93  <a href="model/fireredtts-1.md">FireRedTTS (v1)</a>              32±2   retired
- 94  <a href="model/voicecraft-830m-tts-enhanced.md">VoiceCraft 830M TTSEnhanc…</a>   31±6*  retired
- 95  <a href="model/xtts-v2.md">XTTS v2</a>                      31±2   retired
- 96  <a href="model/outetts-0-2-500m.md">OuteTTS 0.2 500M</a>             31±5*  retired
- 97  <a href="model/simple-tts.md">Simple-TTS</a>                   31±5*  retired
- 98  <a href="model/pheme-300m.md">Pheme 300M</a>                   30±3   retired
- 99  <a href="model/vall-e-x-plachtaa.md">VALL-E X (Plachtaa open i…</a>   30±5   retired
-100  <a href="model/amphion-valle-v2.md">Amphion VALL-E v2 recipe …</a>   29±3   retired
-101  <a href="model/vits-vctk.md">VITS (VCTK multi-speaker)</a>    27±6*  retired
-102  <a href="model/styletts-2-libritts.md">StyleTTS 2 (LibriTTS)</a>        26±2   retired
-103  <a href="model/tortoise-tts-v2.md">Tortoise TTS v2</a>              26±2   retired
-105  <a href="model/whisperspeech-v1-95-medium.md">WhisperSpeech v1.95 Mediu…</a>   23±3   retired
-106  <a href="model/openvoice-v2.md">OpenVoice V2</a>                 21±3   retired
-108  <a href="model/speecht5-tts.md">SpeechT5 TTS</a>                 18±3   retired
-109  <a href="model/yourtts.md">YourTTS</a>                      18±2   retired
-110  <a href="model/metavoice-1b-v0-1.md">MetaVoice 1B v0.1</a>            17±2   retired
-111  <a href="model/amphion-naturalspeech2.md">Amphion NaturalSpeech 2 (…</a>   12±3   retired
+  #  model                                     score  where
+  1  <a href="model/seed-tts-2-0-standard.md">Seed TTS 2.0 Standard</a>                     85±4*  catalogue only
+  2  <a href="model/azure-neural-tts-xiaoxiao.md">Azure Neural TTS Xiaoxiao</a>                 74±4*  catalogue only
+  4  <a href="model/gemini-2-5-flash-preview-tts.md">Gemini 2.5 Flash Preview …</a>                73±3   catalogue only
+  5  <a href="model/gemini-2-5-pro-preview-tts.md">Gemini 2.5 Pro Preview TTS</a>                71±3   catalogue only
+ 22  <a href="model/wayu-paxa-tts-edge.md">Wayu-Paxa-TTS-Edge</a>                        63±4*  catalogue only
+ 23  <a href="model/cartesia-sonic-3-5.md">Sonic 3.5</a>                                 63±2   catalogue only
+ 25  <a href="model/raon-opentts-1b.md">Raon-OpenTTS-1B</a>                           63±2   catalogue only
+ 29  <a href="model/qwen3-tts-12hz-1-7b-base.md">Qwen3-TTS 12Hz 1.7B Base</a>                  62±1   catalogue only
+ 31  <a href="model/cartesia-sonic-2.md">Sonic 2</a>                                   61±3*  catalogue only
+ 32  <a href="model/voxcpm2.md">VoxCPM2</a>                                   61±2   catalogue only
+ 33  <a href="model/qwen3-tts-12hz-0-6b-base.md">Qwen3-TTS 12Hz 0.6B Base</a>                  60±3*  catalogue only
+ 34  <a href="model/fireredtts3-base.md">FireRedTTS3 (base)</a>                        60±3*  catalogue only
+ 36  <a href="model/raon-opentts-0-3b.md">Raon-OpenTTS-0.3B</a>                         59±2   catalogue only
+ 38  <a href="model/fun-cosyvoice3-0-5b-2512.md">Fun-CosyVoice3-0.5B-2512</a>                  59±2   catalogue only
+ 39  <a href="model/gpt-4o-mini-tts.md">GPT-4o mini TTS</a>                           58±2   catalogue only
+ 42  <a href="model/moss-tts-v1-5.md">MOSS-TTS v1.5 (8B)</a>                        58±2   catalogue only
+ 44  <a href="model/indextts-2.md">IndexTTS-2</a>                                56±2   catalogue only
+ 45  <a href="model/mgm-omni-tts-2b-0927.md">MGM-Omni-TTS 2B (0927)</a>                    56±3   catalogue only
+ 47  <a href="model/zonos2-8b.md">ZONOS2 8B</a>                                 56±2   catalogue only
+ 48  <a href="model/dots-tts-soar.md">dots.tts SOAR 2B</a>                          55±3   catalogue only
+ 50  <a href="model/neuphonic-neu-hq.md">Neuphonic neu_hq</a>                          54±3*  catalogue only
+ 51  <a href="model/cosyvoice2-0-5b.md">CosyVoice2-0.5B</a>                           54±1   catalogue only
+ 52  <a href="model/zipvoice.md">ZipVoice</a>                                  54±7*  catalogue only
+ 53  <a href="model/dmospeech-2.md">DMOSpeech 2</a>                               54±3   catalogue only
+ 55  <a href="model/supertonic-3.md">Supertonic 3</a>                             53±11*  catalogue only
+ 56  <a href="model/elevenlabs-v3-alpha.md">ElevenLabs v3 Alpha</a>                       53±9*  catalogue only
+ 57  <a href="model/higgs-audio-v2.md">Higgs Audio V2</a>                            53±3   catalogue only
+ 59  <a href="model/azure-ameha-neural.md">Azure Ameha Neural</a>                       51±16*  catalogue only
+ 60  <a href="model/addis-voice-2.md">Addis Voice 2</a>                            50±16*  catalogue only
+ 61  <a href="model/azure-mekdes-neural.md">Azure Mekdes Neural</a>                      50±16*  catalogue only
+ 62  <a href="model/openvoice-v1.md">OpenVoice V1</a>                             50±14*  catalogue only
+ 63  <a href="model/mms-tts-amh.md">MMS TTS Amharic</a>                          50±16*  catalogue only
+ 71  <a href="model/fish-speech-1-2.md">Fish Speech 1.2</a>                          48±14*  catalogue only
+ 72  <a href="model/indextts.md">IndexTTS (v1)</a>                             48±3   catalogue only
+ 73  <a href="model/spark-tts-0-5b.md">Spark-TTS 0.5B</a>                            47±3   catalogue only
+ 74  <a href="model/kyutai-tts-1-6b-en-fr.md">Kyutai TTS 1.6B en/fr</a>                     47±6*  catalogue only
+ 76  <a href="model/vokan.md">Vokan</a>                                    46±14*  catalogue only
+ 77  <a href="model/mimo-v2-5-tts.md">MiMo v2.5 TTS</a>                             46±4*  catalogue only
+ 78  <a href="model/amphion-valle-librilight-6k.md">Amphion VALL-E (LibriLigh…</a>               45±14*  catalogue only
+ 79  <a href="model/llasa-8b.md">Llasa-8B</a>                                  45±2   catalogue only
+ 82  <a href="model/cartesia-sonic.md">Sonic (1)</a>                                 44±3*  catalogue only
+ 84  <a href="model/amphion-vevo.md">Vevo (Amphion)</a>                            38±2   catalogue only
+ 85  <a href="model/cosyvoice-300m.md">CosyVoice-300M</a>                            38±2   catalogue only
+ 87  <a href="model/hierspeechpp-libritts960.md">HierSpeech++ (LibriTTS-96…</a>                38±5   catalogue only
+ 88  <a href="model/gpt-sovits-v2.md">GPT-SoVITS v2</a>                             35±3   catalogue only
+ 89  <a href="model/voicecraft-830m.md">VoiceCraft 830M (giga830M)</a>                33±4   catalogue only
+ 90  <a href="model/fish-speech-1-5.md">Fish Speech 1.5</a>                           33±3   catalogue only
+ 92  <a href="model/hierspeechpp-v1-1.md">HierSpeech++ v1.1</a>                         32±3   catalogue only
+ 93  <a href="model/fireredtts-1.md">FireRedTTS (v1)</a>                           32±2   catalogue only
+ 94  <a href="model/voicecraft-830m-tts-enhanced.md">VoiceCraft 830M TTSEnhanc…</a>                31±6*  catalogue only
+ 95  <a href="model/xtts-v2.md">XTTS v2</a>                                   31±2   catalogue only
+ 96  <a href="model/outetts-0-2-500m.md">OuteTTS 0.2 500M</a>                          31±5*  catalogue only
+ 97  <a href="model/simple-tts.md">Simple-TTS</a>                                31±5*  catalogue only
+ 98  <a href="model/pheme-300m.md">Pheme 300M</a>                                30±3   catalogue only
+ 99  <a href="model/vall-e-x-plachtaa.md">VALL-E X (Plachtaa open i…</a>                30±5   catalogue only
+100  <a href="model/amphion-valle-v2.md">Amphion VALL-E v2 recipe …</a>                29±3   catalogue only
+101  <a href="model/vits-vctk.md">VITS (VCTK multi-speaker)</a>                 27±6*  catalogue only
+102  <a href="model/styletts-2-libritts.md">StyleTTS 2 (LibriTTS)</a>                     26±2   catalogue only
+103  <a href="model/tortoise-tts-v2.md">Tortoise TTS v2</a>                           26±2   catalogue only
+105  <a href="model/whisperspeech-v1-95-medium.md">WhisperSpeech v1.95 Mediu…</a>                23±3   catalogue only
+106  <a href="model/openvoice-v2.md">OpenVoice V2</a>                              21±3   catalogue only
+108  <a href="model/speecht5-tts.md">SpeechT5 TTS</a>                              18±3   catalogue only
+109  <a href="model/yourtts.md">YourTTS</a>                                   18±2   catalogue only
+110  <a href="model/metavoice-1b-v0-1.md">MetaVoice 1B v0.1</a>                         17±2   catalogue only
+111  <a href="model/amphion-naturalspeech2.md">Amphion NaturalSpeech 2 (…</a>                12±3   catalogue only
+  —  <a href="model/fastpitch-1-0-waveglow.md">FastPitch 1.0 + WaveGlow</a>         not scored yet  catalogue only
+  —  <a href="model/fastpitch-1-1-waveglow.md">FastPitch 1.1 + WaveGlow</a>         not scored yet  catalogue only
+  —  <a href="model/fastspeech-xcmyz-gradtts-study.md">FastSpeech + HiFi-GAN (xc…</a>       not scored yet  catalogue only
+  —  <a href="model/glow-tts-hifigan-ft-ljspeech.md">Glow-TTS + fine-tuned HiF…</a>   not yet calibrated  catalogue only
+  —  <a href="model/glow-tts-hifigan-ljspeech.md">Glow-TTS + HiFi-GAN (LJ S…</a>   not yet calibrated  catalogue only
+  —  <a href="model/grad-tts-10-hifigan.md">Grad-TTS + HiFi-GAN (10 s…</a>       not scored yet  catalogue only
+  —  <a href="model/lightspeech.md">LightSpeech + Parallel Wa…</a>  no reviewed results  catalogue only
+  —  <a href="model/priorgrad-acoustic.md">PriorGrad acoustic + HiFi…</a>  no reviewed results  catalogue only
+  —  <a href="model/tacotron2-hifigan-ft-ljspeech.md">Tacotron 2 + fine-tuned H…</a>   not yet calibrated  catalogue only
+  —  <a href="model/tacotron2-hifigan-ljspeech.md">Tacotron 2 + HiFi-GAN (LJ…</a>   not yet calibrated  catalogue only
+  —  <a href="model/nvidia-tacotron2-waveglow.md">Tacotron 2 + WaveGlow (NV…</a>       not scored yet  catalogue only
+  —  <a href="model/vits-ljspeech.md">VITS (LJ Speech)</a>             not yet calibrated  catalogue only
 </pre>
 
 </details>
 
-\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 46 of 125 catalogue models ranked here · [sources and licences](method.md#sources)
+\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · 73 of 150 catalogue models listed here · [sources and licences](method.md#sources)
 
-<details><summary>Models without a score (14)</summary>
+<details><summary>Models without a score (7)</summary>
 
-Raw results, insufficient overlap for an overall score: [Eleven Turbo v2.5](model/elevenlabs-turbo-v2-5.md) · [OpenAudio S1](model/openaudio-s1.md)
+Raw results, insufficient overlap for an overall score: [Tacotron 2 + WaveGlow (NVIDIA)](model/nvidia-tacotron2-waveglow.md) · [FastPitch 1.0 + WaveGlow](model/fastpitch-1-0-waveglow.md) · [FastPitch 1.1 + WaveGlow](model/fastpitch-1-1-waveglow.md) · [Grad-TTS + HiFi-GAN (10 steps)](model/grad-tts-10-hifigan.md) · [FastSpeech + HiFi-GAN (xcmyz, Grad-TTS study)](model/fastspeech-xcmyz-gradtts-study.md)
 
-No reviewed benchmark results yet: Sonic 3.6 · Gemini 3.8 Flash TTS · Gemini 3.8 Flash-Lite TTS · Eleven v3 Conversational · MiniMax Speech 2.6 HD · Lightning v3.1 Pro · Octave 2 · Azure HD 2.5 · Polly Generative · Magpie TTS Multilingual 357M · Maya1 · Breeze TTS 2
+No reviewed benchmark results yet: LightSpeech + Parallel WaveGAN · PriorGrad acoustic + HiFi-GAN
 
 </details>

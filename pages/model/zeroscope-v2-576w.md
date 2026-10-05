@@ -6,7 +6,7 @@
 
 cerspense · released 2023-06 · cc-by-nc-4.0
 
-**score 26.5** ±2.8 · #73 of 76 · from 3 benchmark results across 2 sources
+**score 29.3** ±2.8 · #72 of 76 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>   11.9%    26.1   2026-01-30   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  34.0%    28.9   2026-01-30   19% ▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  45.8%    20.7   2024-10-01   18% ▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>   11.9%    29.0   2026-01-30   61% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>  34.0%    31.6   2026-01-30   22% ▇▇▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  45.8%    22.1   2024-10-01   14% ▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 26.5
+                        weighted average                       = 29.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~7.9GB   26.5
+fp16 · nvidia only  ~7.9GB   29.3
 </pre>
 
 ```sh

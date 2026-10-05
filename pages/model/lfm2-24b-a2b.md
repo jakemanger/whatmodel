@@ -4,6 +4,10 @@
 
 # LFM2 24B-A2B
 
+Liquid AI · released 2026-02
+
+[Model and usage documentation](https://huggingface.co/LiquidAI/LFM2-24B-A2B)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

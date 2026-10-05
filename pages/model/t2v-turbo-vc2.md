@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-05 · cc-by-4.0
 
-**score 37.1** ±3.1 · #58 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.8** ±3.1 · #57 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source       test                             score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1054.7    36.5   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena  <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1054.7    38.3   2025-03-22   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior        pull toward the middle                    49.9                 4% ▇
-             weighted average                        = 37.1
+             weighted average                        = 38.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,7 +27,7 @@ prior        pull toward the middle                    49.9                 4% �
 
 <pre>
 version              needs  score
-fp32 · nvidia only  ~9.4GB   37.1
+fp32 · nvidia only  ~9.4GB   38.8
 </pre>
 
 ```sh

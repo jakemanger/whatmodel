@@ -6,9 +6,9 @@
 
 Midjourney · closed weights
 
-**score 39.4** ±4.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 40.4** ±3.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  67.7%    38.2   2026-07-12   82% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>  75.0%    42.0   2026-07-12   11% ▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 39.4
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  67.7%    39.3   2026-07-12   82% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>  75.0%    43.1   2026-07-12   12% ▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 40.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -1,0 +1,315 @@
+{
+  "reviewed": "2026-09-29",
+  "baseline_at": "2026-09-29T13:31:30.729Z",
+  "new_model_ids": [
+    "espnet-multiblank-transducer-8421",
+    "espnet-conformer-rnn-transducer",
+    "espnet-hubert-large-conformer-lm",
+    "espnet-wavlm-large-conformer-lm",
+    "espnet-wav2vec2-large-conformer-lm",
+    "espnet-multiconvformer",
+    "espnet-e-branchformer",
+    "espnet-branchformer-18layer",
+    "espnet-conformer-s4-decoder",
+    "espnet-conformer-2020-lm",
+    "espnet-transformer-18layer-lm",
+    "jasper-10x5-nvidia-dle",
+    "quartznet-15x5-nvidia-dle",
+    "vits-ljspeech",
+    "tacotron2-hifigan-ljspeech",
+    "tacotron2-hifigan-ft-ljspeech",
+    "glow-tts-hifigan-ljspeech",
+    "glow-tts-hifigan-ft-ljspeech",
+    "attngan-coco",
+    "x-lxmert",
+    "dall-e-mega-min-dalle",
+    "fusedream-biggan-512",
+    "lafite-hps2023",
+    "zeroscope-v2-xl",
+    "floor33-pictures-2023-08",
+    "pikalab-2023-09",
+    "videocrafter1-t2v",
+    "show-1",
+    "kandinsky-2-1",
+    "kandinsky-2-2",
+    "kandinsky-3",
+    "stable-video-diffusion",
+    "stable-video-diffusion-xt",
+    "animatediff-v1-5-2",
+    "cogvideo-9b",
+    "coqui-en-ljspeech-tacotron2-ddc",
+    "coqui-en-ljspeech-glow-tts",
+    "coqui-en-ljspeech-speedy-speech",
+    "coqui-en-ljspeech-fast-pitch",
+    "coqui-en-ljspeech-overflow",
+    "coqui-en-ljspeech-neural-hmm",
+    "coqui-de-thorsten-vits",
+    "coqui-es-css10-vits",
+    "coqui-fr-css10-vits",
+    "coqui-pt-cv-vits",
+    "coqui-uk-mai-glow-tts",
+    "coqui-tr-common-voice-glow-tts",
+    "nvidia-tacotron2-waveglow",
+    "fastpitch-1-0-waveglow",
+    "fastpitch-1-1-waveglow",
+    "grad-tts-10-hifigan",
+    "fastspeech-xcmyz-gradtts-study",
+    "speechbrain-fastspeech2-ljspeech",
+    "lightspeech",
+    "priorgrad-acoustic"
+  ],
+  "new_models": 55,
+  "new_runnable_models": 25,
+  "existing_run_options_enhanced": [
+    "sd-1-1",
+    "sd-1-2",
+    "sd-1-3",
+    "sd-1-4",
+    "sd-1-5"
+  ],
+  "new_sources": [
+    "speech-espnet-librispeech-20260929",
+    "speech-nvidia-jasper-dle",
+    "speech-nvidia-quartznet-dle",
+    "speech-vits-icml2021",
+    "visual-evalcrafter-2023",
+    "speech-nvidia-fastpitch-readme",
+    "speech-gradtts-icml2021"
+  ],
+  "evidence_hashes": [
+    {
+      "file": "FastPitch.txt",
+      "sha256": "e4059701861c7b82ee1a25d2217798ebb759a3ea8082613c4be31f3cab42f17b"
+    },
+    {
+      "file": "Jasper.txt",
+      "sha256": "148f09ac28fabb27e76c20f1c606461c3e5f9ac7d0a04213a1ef1ff26fcff8b6"
+    },
+    {
+      "file": "QuartzNet.txt",
+      "sha256": "e6cd8c30d03f92f6a14ae5135bf99d0037b10c7fea6101d2d7c8f977c13b466c"
+    },
+    {
+      "file": "coqui-current-models.json",
+      "sha256": "8450208530276e7f4de7c41eb7c8330b8049594df8c94f6467ee3535d654ed92"
+    },
+    {
+      "file": "esp-0.txt",
+      "sha256": "a415e625efa3854ef16d7397b960c47f995f592f7baa0ca4141163f98a82f148"
+    },
+    {
+      "file": "esp-license.txt",
+      "sha256": "4696c3c9551da6fef1368be1e4ed2c80cf13e55448c6dcf2aba9462f5ff29ef5"
+    },
+    {
+      "file": "evalcrafter-html.txt",
+      "sha256": "abdc885438ed6bbaa0010a8424c18dc41b45ecff8f900d37a8da868b3ebeb3ea"
+    },
+    {
+      "file": "gradtts.pdf",
+      "sha256": "86a851c0e1e2970015b7ff4417f18c276273c491bedbbfdec50233ae5b1bc9f8"
+    },
+    {
+      "file": "hps-pinned.txt",
+      "sha256": "e57b9518ff21030b354b12857d79530808829d5149afaab24ddc8b4af0ec2e19"
+    },
+    {
+      "file": "ns-license.txt",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "file": "nv-license-0.txt",
+      "sha256": "b5dcfff74fecbe4cbb71b21e3e9d513dfd25bd5986b674603702a3e9bf6e93aa"
+    },
+    {
+      "file": "nv-license-1.txt",
+      "sha256": "b5dcfff74fecbe4cbb71b21e3e9d513dfd25bd5986b674603702a3e9bf6e93aa"
+    },
+    {
+      "file": "nv-license-2.txt",
+      "sha256": "dabaabab8a6ab23255382e4d130a13991c46f6dda86cc2535648b3ac821f8ccf"
+    },
+    {
+      "file": "nv-license-3.txt",
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+    },
+    {
+      "file": "nv-license.txt",
+      "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+    },
+    {
+      "file": "pmlr-license.txt",
+      "sha256": "b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368"
+    },
+    {
+      "file": "tifa-html.txt",
+      "sha256": "a748487a8454888af4eaa19704f2247c1cadae353ef28b14e7ea6514e846e439"
+    },
+    {
+      "file": "vits-pmlr.pdf",
+      "sha256": "e327384e50eb17b1464547348313bbf5c48c4aedfb12ebd725fbcfe8ecfd76e1"
+    }
+  ],
+  "counts": {
+    "llm": {
+      "before": {
+        "models": 659,
+        "results": 6937,
+        "withRun": 477
+      },
+      "models": 659,
+      "results": 6937,
+      "new_models": 0,
+      "new_results": 0,
+      "with_run": 477,
+      "models_with_results": 645,
+      "scored_models": 630,
+      "comparison_sets": 3
+    },
+    "image": {
+      "before": {
+        "models": 163,
+        "results": 472,
+        "withRun": 112
+      },
+      "models": 171,
+      "results": 478,
+      "new_models": 8,
+      "new_results": 6,
+      "with_run": 117,
+      "models_with_results": 168,
+      "scored_models": 165,
+      "comparison_sets": 2
+    },
+    "video": {
+      "before": {
+        "models": 110,
+        "results": 309,
+        "withRun": 77
+      },
+      "models": 119,
+      "results": 341,
+      "new_models": 9,
+      "new_results": 32,
+      "with_run": 79,
+      "models_with_results": 114,
+      "scored_models": 114,
+      "comparison_sets": 1
+    },
+    "tts": {
+      "before": {
+        "models": 125,
+        "results": 632,
+        "withRun": 60
+      },
+      "models": 150,
+      "results": 644,
+      "new_models": 25,
+      "new_results": 12,
+      "with_run": 73,
+      "models_with_results": 123,
+      "scored_models": 116,
+      "comparison_sets": 2
+    },
+    "stt": {
+      "before": {
+        "models": 130,
+        "results": 652,
+        "withRun": 115
+      },
+      "models": 143,
+      "results": 678,
+      "new_models": 13,
+      "new_results": 26,
+      "with_run": 121,
+      "models_with_results": 141,
+      "scored_models": 138,
+      "comparison_sets": 2
+    }
+  },
+  "new_results": 76,
+  "totals": {
+    "models": 1242,
+    "results": 9078,
+    "sources": 583,
+    "benchmarks": 669
+  },
+  "new_result_keys": [
+    "espnet-multiblank-transducer-8421|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-multiblank-transducer-8421|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-conformer-rnn-transducer|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-conformer-rnn-transducer|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-hubert-large-conformer-lm|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-hubert-large-conformer-lm|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-wavlm-large-conformer-lm|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-wavlm-large-conformer-lm|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-wav2vec2-large-conformer-lm|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-wav2vec2-large-conformer-lm|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-multiconvformer|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-multiconvformer|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-e-branchformer|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-e-branchformer|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-branchformer-18layer|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-branchformer-18layer|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-conformer-s4-decoder|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-conformer-s4-decoder|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-conformer-2020-lm|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-conformer-2020-lm|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-transformer-18layer-lm|librispeech-test-clean-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "espnet-transformer-18layer-lm|librispeech-test-other-wer|https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "jasper-10x5-nvidia-dle|librispeech-test-clean-wer|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
+    "jasper-10x5-nvidia-dle|librispeech-test-other-wer|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
+    "quartznet-15x5-nvidia-dle|librispeech-test-clean-wer|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
+    "quartznet-15x5-nvidia-dle|librispeech-test-other-wer|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
+    "vits-ljspeech|vits2021-ljspeech-mos|https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "tacotron2-hifigan-ljspeech|vits2021-ljspeech-mos|https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "tacotron2-hifigan-ft-ljspeech|vits2021-ljspeech-mos|https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "glow-tts-hifigan-ljspeech|vits2021-ljspeech-mos|https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "glow-tts-hifigan-ft-ljspeech|vits2021-ljspeech-mos|https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "vits-vctk|vits2021-vctk-mos|https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "attngan-coco|tifa-v1|https://arxiv.org/html/2303.11897v3",
+    "x-lxmert|tifa-v1|https://arxiv.org/html/2303.11897v3",
+    "dall-e-mega-min-dalle|tifa-v1|https://arxiv.org/html/2303.11897v3",
+    "dall-e-mega-min-dalle|hpsv2-benchmark|https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "fusedream-biggan-512|hpsv2-benchmark|https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "lafite-hps2023|hpsv2-benchmark|https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "modelscope-t2v-1-7b|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "modelscope-t2v-1-7b|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "modelscope-t2v-1-7b|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "modelscope-t2v-1-7b|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "zeroscope-v2-xl|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "zeroscope-v2-xl|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "zeroscope-v2-xl|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "zeroscope-v2-xl|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "floor33-pictures-2023-08|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "floor33-pictures-2023-08|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "floor33-pictures-2023-08|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "floor33-pictures-2023-08|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "pikalab-2023-09|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "pikalab-2023-09|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "pikalab-2023-09|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "pikalab-2023-09|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "runway-gen-2|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "runway-gen-2|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "runway-gen-2|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "runway-gen-2|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "videocrafter1-t2v|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "videocrafter1-t2v|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "videocrafter1-t2v|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "videocrafter1-t2v|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "show-1|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "show-1|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "show-1|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "show-1|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "hotshot-xl|evalcrafter2023-visual|https://arxiv.org/html/2310.11440v3",
+    "hotshot-xl|evalcrafter2023-alignment|https://arxiv.org/html/2310.11440v3",
+    "hotshot-xl|evalcrafter2023-motion|https://arxiv.org/html/2310.11440v3",
+    "hotshot-xl|evalcrafter2023-temporal|https://arxiv.org/html/2310.11440v3",
+    "nvidia-tacotron2-waveglow|fastpitch2020-ljspeech-mos|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "fastpitch-1-0-waveglow|fastpitch2020-ljspeech-mos|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "fastpitch-1-0-waveglow|fastpitch2021-pairwise-preference|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "fastpitch-1-1-waveglow|fastpitch2021-pairwise-preference|https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "grad-tts-10-hifigan|gradtts2021-ljspeech-mos|https://proceedings.mlr.press/v139/popov21a/popov21a.pdf",
+    "fastspeech-xcmyz-gradtts-study|gradtts2021-ljspeech-mos|https://proceedings.mlr.press/v139/popov21a/popov21a.pdf"
+  ]
+}

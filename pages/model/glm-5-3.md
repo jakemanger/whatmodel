@@ -8,7 +8,7 @@ Z.ai · released 2026-08 · 753B params (40B active) · glm-5.3-license
 
 **score 72.4** ±1.0 · #32 of 404 · from 11 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

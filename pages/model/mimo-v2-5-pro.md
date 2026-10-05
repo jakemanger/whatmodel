@@ -8,7 +8,7 @@ Xiaomi · released 2026-04 · 1023B params (42B active) · mit
 
 **score 69.7** ±1.8 · #52 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

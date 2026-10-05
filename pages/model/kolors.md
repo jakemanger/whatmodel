@@ -6,9 +6,9 @@
 
 Kuaishou (Kolors team) · released 2024-07 · 2.6B params · kolors-model-license
 
-**score 37.6** ±3.3 · #92 of 111 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 38.9** ±3.2 · #92 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    34.8   2024-12-25   72% ▇▇▇▇▇▇▇▇▇
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    43.9   2024-11-13   23% ▇▇▇
-prior                   pull toward the middle                      49.9                 5% ▇
-                        weighted average                          = 37.6
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    36.3   2024-12-25   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    45.0   2024-11-13   22% ▇▇▇
+prior                   pull toward the middle                      49.9                 4% ▇
+                        weighted average                          = 38.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~21.6GB   37.6
+fp16 · nvidia only  ~21.6GB   38.9
 </pre>
 
 ```sh

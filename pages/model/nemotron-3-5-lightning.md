@@ -8,7 +8,7 @@ NVIDIA · released 2026-08 · 31.6B params (3.6B active) · openmdw-1.1
 
 **score 58.1** ±2.0 · #148 of 404 · from 3 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

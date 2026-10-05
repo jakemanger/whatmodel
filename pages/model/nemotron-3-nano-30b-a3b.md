@@ -8,7 +8,7 @@ NVIDIA · released 2025-12 · 31.6B params (3.6B active) · nvidia-open-model
 
 **score 48.5** ±1.8 · #220 of 404 · from 4 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

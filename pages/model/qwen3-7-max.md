@@ -8,7 +8,7 @@ Alibaba · released 2026-05 · closed weights
 
 **score 71.6** ±0.9 · #37 of 404 · from 12 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

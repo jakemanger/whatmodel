@@ -8,7 +8,7 @@ Moonshot AI · released 2026-07 · 2800B params (104B active) · kimi-k3-license
 
 **score 73.8** ±0.8 · #21 of 404 · from 18 benchmark results across 5 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

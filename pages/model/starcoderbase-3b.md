@@ -8,7 +8,7 @@ BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
 **score 23.9** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

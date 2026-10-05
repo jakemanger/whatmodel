@@ -10540,5 +10540,130 @@
     "attribution": "ZS-TTS-Evaluation, Copyright (c) 2024 Edresson Casanova, MIT (https://github.com/Edresson/ZS-TTS-Evaluation). English CER (divided by 100) and ECAPA2 SECS transcribed by script from the committed metrics.csv files. No endorsement.",
     "icon": "github.com",
     "quote": "Repository root LICENSE at a9086e4: 'MIT License / Copyright (c) 2024 Edresson Casanova / Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ... to deal in the Software without restriction'; the metrics.csv files are committed repository files produced by the repository's eval_TTS.py over each system's committed generated audio (README: 'This repository gathers our efforts to evaluate/compare the current Zero-shot Multi-speaker TTS (ZS-TTS) systems using objective metrics'). Only the numerical metrics are reused; no audio."
+  },
+  {
+    "id": "speech-espnet-librispeech-20260929",
+    "name": "ESPnet LibriSpeech ASR recipe results (pinned September 2026)",
+    "match": [
+      "github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/speech-espnet-librispeech-20260929.txt",
+    "icon": "github.com",
+    "quote": "Apache-2.0 covers documentation source. Only the ESPnet recipe authors’ own WER tables, not third-party comparison numbers or external model artefacts. Test-clean and test-other WER only; CER/TER and development-set results are omitted. Decoder/LM choices preserved in each model identity and result note.",
+    "scope": "Apache-2.0 covers documentation source. Only the ESPnet recipe authors’ own WER tables, not third-party comparison numbers or external model artefacts. Test-clean and test-other WER only; CER/TER and development-set results are omitted. Decoder/LM choices preserved in each model identity and result note.",
+    "attribution": "ESPnet developers and recipe contributors. Extracted selected test WER cells from the committed LibriSpeech recipe README; percentages divided by 100. No endorsement."
+  },
+  {
+    "id": "speech-nvidia-jasper-dle",
+    "name": "NVIDIA Jasper committed training accuracy",
+    "match": [
+      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/speech-nvidia-jasper-dle.txt",
+    "icon": "github.com",
+    "quote": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
+    "scope": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
+    "attribution": "NVIDIA Corporation. Selected LibriSpeech test-clean/test-other WER cells; percentage / 100. No endorsement."
+  },
+  {
+    "id": "speech-nvidia-quartznet-dle",
+    "name": "NVIDIA QuartzNet committed training accuracy",
+    "match": [
+      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/speech-nvidia-quartznet-dle.txt",
+    "icon": "github.com",
+    "quote": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
+    "scope": "Apache-2.0 covers the documentation source. Only NVIDIA’s own A100 training-accuracy table (greedy decoding); not other seeds, hardware throughput, or third-party paper comparisons.",
+    "attribution": "NVIDIA Corporation. Selected LibriSpeech test-clean/test-other WER cells; percentage / 100. No endorsement."
+  },
+  {
+    "id": "speech-vits-icml2021",
+    "name": "VITS: ICML 2021 original listening studies",
+    "match": [
+      "proceedings.mlr.press/v139/kim21f/kim21f.pdf"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://proceedings.mlr.press/pmlr-license-agreement.html",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/speech-vits-icml2021.txt",
+    "icon": "github.com",
+    "quote": "PMLR publication agreement paragraph 2 grants CC BY 4.0 in the article and paragraph 3 requires the PMLR publication link. Scope is the PMLR published article, not the separately licensed arXiv upload. Tables 1 and 3 are the authors’ own crowd-sourced listening studies (§3.4, §4.1, §4.2).",
+    "scope": "PMLR publication agreement paragraph 2 grants CC BY 4.0 in the article and paragraph 3 requires the PMLR publication link. Scope is the PMLR published article, not the separately licensed arXiv upload. Tables 1 and 3 are the authors’ own crowd-sourced listening studies (§3.4, §4.1, §4.2).",
+    "attribution": "Jaehyeon Kim, Jungil Kong and Juhee Son. Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech. Proceedings of ICML, PMLR 139:5530–5540, 2021. https://proceedings.mlr.press/v139/kim21f.html . Changes: selected MOS means, stored as (MOS − 1) / 4; 95% CIs preserved in result notes. No endorsement."
+  },
+  {
+    "id": "visual-evalcrafter-2023",
+    "name": "EvalCrafter: original 2023 text-to-video evaluations",
+    "match": [
+      "arxiv.org/html/2310.11440v3"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://arxiv.org/abs/2310.11440v3",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/visual-evalcrafter-2023.txt",
+    "icon": "arxiv.org",
+    "quote": "The v3 arXiv abstract links CC BY 4.0. §3–5 and Appendix B describe the authors’ own generations and evaluations. Table 2 reports four human-preference-aligned composite scores; these are not direct human MOS or percentages of tasks passed.",
+    "scope": "Table 2 four aspect composites only; 17 constituent metrics and correlation tables omitted to avoid duplicating the same evidence. Exact 2023 API versions and checkpoint/pipeline identities retained.",
+    "attribution": "Yaofang Liu, Xiaodong Cun, Xuebo Liu, Xintao Wang, Yong Zhang, Haoxin Chen, Yang Liu, Tieyong Zeng, Raymond Chan and Ying Shan. EvalCrafter: Benchmarking and Evaluating Large Video Generation Models, arXiv:2310.11440v3, CC BY 4.0. Selected Table 2 values /100; versioned systems and evaluation settings retained. No endorsement."
+  },
+  {
+    "id": "speech-nvidia-fastpitch-readme",
+    "name": "NVIDIA FastPitch: original listening studies in committed README",
+    "match": [
+      "github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "BSD-3-Clause",
+    "terms_url": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/speech-nvidia-fastpitch-readme.txt",
+    "icon": "github.com",
+    "quote": "BSD 3-Clause permits redistribution with notices. Scope is the committed README’s own NVIDIA research MOS and pairwise preference results; no external service, copied third-party comparison data or model weights are licensed by this entry.",
+    "attribution": "NVIDIA Corporation; Adrian Łańcucki (FastPitch 2020), and NVIDIA FastPitch 1.1 authors. Selected README listening-study means, MOS stored as (MOS−1)/4; preference fractions unchanged. Original papers: arXiv:2006.06873 and arXiv:2108.10447. No endorsement."
+  },
+  {
+    "id": "speech-gradtts-icml2021",
+    "name": "Grad-TTS: original ICML 2021 listening study",
+    "match": [
+      "proceedings.mlr.press/v139/popov21a/popov21a.pdf"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC-BY-4.0",
+    "terms_url": "https://proceedings.mlr.press/pmlr-license-agreement.html",
+    "verdict": "allowed",
+    "checked": "2026-09-29",
+    "license_url": "/licenses/speech-gradtts-icml2021.txt",
+    "icon": "arxiv.org",
+    "quote": "PMLR publication agreement paragraph 2 grants CC BY 4.0 in the published article; paragraph 3 requires its publication link. §4.1 describes original listening evaluations for all systems. Scope: PMLR paper, not the arXiv version.",
+    "scope": "Only Grad-TTS-10 and explicitly identified xcmyz FastSpeech implementation, both using HiFi-GAN, Table 2. No aggregate across different diffusion iteration counts. Glow-TTS/Tacotron2 baselines held back because exact checkpoint/vocoder match to existing entries is uncertain.",
+    "attribution": "Vadim Popov, Ivan Vovk, Vladimir Gogoryan, Tasnima Sadekova and Mikhail Kudinov. Grad-TTS: A Diffusion Probabilistic Model for Text-to-Speech. ICML 2021, PMLR 139. https://proceedings.mlr.press/v139/popov21a.html . Table 2 selected means transformed as (MOS−1)/4. No endorsement."
   }
 ]

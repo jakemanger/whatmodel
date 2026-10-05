@@ -4,6 +4,8 @@
 
 # LFM2.5 8B-A1B
 
+Liquid AI · released 2026-05
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

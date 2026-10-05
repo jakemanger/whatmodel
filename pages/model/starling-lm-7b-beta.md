@@ -8,7 +8,7 @@ Nexusflow · released 2024-03 · 7.24B params · apache-2.0
 
 **score 36.7** ±1.6 · #324 of 404 · from 4 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

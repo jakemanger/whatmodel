@@ -8,7 +8,7 @@ Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
 **score 58.6** ±1.8 · #145 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

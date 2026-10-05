@@ -8,7 +8,7 @@ LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
 **score 34.2** ±3.1 · #347 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

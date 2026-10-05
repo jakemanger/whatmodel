@@ -8,7 +8,7 @@ Mistral · released 2024-11 · 123B params · mistral-research
 
 **score 52.2** ±1.2 · #188 of 404 · from 13 benchmark results across 11 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

@@ -8,7 +8,7 @@ Mistral AI · released 2024-09 · 22.25B params · mistral-research
 
 **score 44.8** ±2.4 · #252 of 404 · from 5 benchmark results across 5 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

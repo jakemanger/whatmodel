@@ -8,7 +8,7 @@ Anthropic · released 2026-05 · closed weights
 
 **score 74.8** ±0.6 · #15 of 404 · from 30 benchmark results across 7 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

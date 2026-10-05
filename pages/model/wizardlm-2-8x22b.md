@@ -8,7 +8,7 @@ Microsoft · released 2024-04 · 141B params (39B active) · apache-2.0
 
 **score 47.9** ±1.7 · #229 of 404 · from 5 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

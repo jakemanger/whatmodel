@@ -8,7 +8,7 @@ OpenAI · released 2019-11 · 1.558B params · mit
 
 **score 49.1** ±1.2 · #21 of 39 · from 21 benchmark results across 4 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

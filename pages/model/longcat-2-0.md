@@ -4,6 +4,8 @@
 
 # LongCat 2.0 (1.6T-A48B)
 
+Meituan · released 2026-06
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

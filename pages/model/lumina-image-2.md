@@ -6,9 +6,9 @@
 
 Alpha-VLLM (Shanghai AI Lab)
 
-**score 41.8** ±4.2 · #82 of 111 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.7** ±4.1 · #82 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  71.2%    41.1   2026-07-12   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 41.8
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  71.2%    42.1   2026-07-12   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 42.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -4,6 +4,10 @@
 
 # Ling 3.0 Flash (124B-A5B)
 
+inclusionAI (Ant Group) · released 2026-08
+
+[Model and usage documentation](https://huggingface.co/inclusionAI/Ling-3.0-flash)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

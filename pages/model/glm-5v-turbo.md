@@ -8,7 +8,7 @@ Z.ai · closed weights
 
 **score 65.6** ±1.5 · #85 of 404 · from 4 benchmark results across 1 source
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

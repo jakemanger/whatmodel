@@ -8,7 +8,7 @@ Microsoft
 
 **score 68.3** ±16.6 · comparison only: no current run option verified · from 9 benchmark results across 1 source
 
-Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow) comparison set only.
+Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-mage-flow&score=set) comparison set only.
 
 ## How the score was worked out
 

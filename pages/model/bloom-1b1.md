@@ -8,7 +8,7 @@ BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
 **score 31.4** ±2.1 · #34 of 39 · from 7 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

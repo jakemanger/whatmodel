@@ -8,7 +8,7 @@ Meta · released 2022-05 · 0.125B params · opt-175b-license-noncommercial
 
 **score 22.3** ±2.5 · #37 of 39 · from 6 benchmark results across 1 source
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

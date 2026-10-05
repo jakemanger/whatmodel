@@ -8,7 +8,7 @@ Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
 **score 69.4** ±1.1 · #54 of 404 · from 7 benchmark results across 2 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

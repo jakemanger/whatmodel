@@ -8,6 +8,8 @@ Kakao Enterprise (Jaehyeon Kim et al.) · released 2021-06 · mit
 
 **score 26.5** ±6.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
@@ -23,6 +25,15 @@ prior                   pull toward the middle                   49.9           
 <sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                         score  why
+VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS</a>  4.38 / 5  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 

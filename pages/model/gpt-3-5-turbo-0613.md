@@ -8,7 +8,7 @@ OpenAI · released 2023-06 · proprietary
 
 **score 40.5** ±1.4 · comparison only: no current run option verified · from 7 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

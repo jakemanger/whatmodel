@@ -4,6 +4,8 @@
 
 # LFM2.5 1.2B Thinking
 
+Liquid AI · released 2026-01
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

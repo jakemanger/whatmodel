@@ -8,7 +8,7 @@ Google · released 2024-09 · proprietary
 
 **score 54.8** ±1.1 · comparison only: no current run option verified · from 9 benchmark results across 6 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

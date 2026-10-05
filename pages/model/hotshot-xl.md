@@ -6,29 +6,33 @@
 
 Hotshot · released 2023-10 · openrail++
 
-**score 29.4** ±2.7 · #71 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.9** ±1.7 · #73 of 76 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  42.7%    28.2   2025-05-17   60% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  47.8%    29.7   2025-05-17   37% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 29.4
+source                  test                                  score  implies  date        weight
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  52.98 / 100    25.4                17% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  60.38 / 100    27.3                17% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  59.96 / 100    26.1                16% ▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.52 / 100    27.5                16% ▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>        42.7%    29.1   2025-05-17   20% ▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>        47.8%    30.7   2025-05-17   12% ▇
+prior                   pull toward the middle                         49.9                 1% ▇
+                        weighted average                             = 27.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
+<sub>Licences: EvalCrafter: original 2023 text-to-video evaluations ([CC-BY-4.0](../../licenses/visual-evalcrafter-2023.txt)) · LOVE: Benchmarking and Evaluating Text-to-Video Generation and Video-to-Text Interpretation ([CC-BY-4.0](../../licenses/video-love-aigve60k.txt))</sub>
 
 ## How to run it
 
 <pre>
 version             needs  score
-fp16 · nvidia only  ~10GB   29.4
+fp16 · nvidia only  ~10GB   27.9
 </pre>
 
 ```sh

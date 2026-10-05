@@ -4,6 +4,8 @@
 
 # OpenAudio S1
 
+Fish Audio · released 2025-06
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

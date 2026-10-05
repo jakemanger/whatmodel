@@ -6,7 +6,7 @@
 
 Runway · released 2025-12 · proprietary
 
-**score 56.3** ±2.2 · #27 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 57.3** ±2.1 · #27 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1224.7    55.2   2026-09-22   86% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.6%    65.8   2026-08-26   12% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1224.7    56.3   2026-09-22   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   36.6%    66.2   2026-08-26   11% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 56.3
+                        weighted average                        = 57.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

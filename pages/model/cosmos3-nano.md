@@ -6,7 +6,7 @@
 
 NVIDIA
 
-**score 49.7** ±6.5 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.5** ±6.3 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.6%    48.0   2026-08-10   58% ▇▇▇▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    53.8   2026-06-17   24% ▇▇▇
-prior                   pull toward the middle                   49.9                18% ▇▇
-                        weighted average                       = 49.7
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.6%    49.0   2026-08-10   59% ▇▇▇▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    54.6   2026-06-17   24% ▇▇▇
+prior                   pull toward the middle                   49.9                17% ▇▇
+                        weighted average                       = 50.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

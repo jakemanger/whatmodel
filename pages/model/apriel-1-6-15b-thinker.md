@@ -4,6 +4,10 @@
 
 # Apriel 1.6 15B Thinker
 
+ServiceNow · released 2025-11
+
+[Model and usage documentation](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

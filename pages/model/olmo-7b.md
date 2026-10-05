@@ -8,7 +8,7 @@ Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
 **score 59.3** ±1.9 · #8 of 39 · from 8 benchmark results across 1 source
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge) comparison set only.
+Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
 
 ## How the score was worked out
 

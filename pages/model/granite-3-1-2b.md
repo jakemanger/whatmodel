@@ -8,7 +8,7 @@ IBM · released 2024-12 · 2.53B params · apache-2.0
 
 **score 33.3** ±1.3 · #354 of 404 · from 11 benchmark results across 3 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

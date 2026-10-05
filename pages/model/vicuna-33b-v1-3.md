@@ -8,7 +8,7 @@ LMSYS · released 2023-06 · 33B params · non-commercial
 
 **score 32.7** ±1.6 · #359 of 404 · from 4 benchmark results across 4 sources
 
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 

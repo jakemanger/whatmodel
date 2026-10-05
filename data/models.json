@@ -10209,7 +10209,31 @@
         "source": "https://github.com/djghosh13/geneval/blob/af4902f24d3ca90ebbb446dd9891a59e0f82725f/README.md",
         "reported_label": "Stable Diffusion v1.5"
       }
-    ]
+    ],
+    "license": "creativeml-openrail-m",
+    "released": "2022-10",
+    "model_repo": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "identity_note": "Stable Diffusion 1.5. The original Runway repository is deprecated; this community mirror is the checkpoint used in the official Diffusers MPS guide. The mirror is unaffiliated with Runway. Memory estimates are planning estimates, not measured device requirements.",
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"import torch; from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('stable-diffusion-v1-5/stable-diffusion-v1-5', torch_dtype=torch.float16).to('cuda'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        },
+        {
+          "quant": "fp32",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('stable-diffusion-v1-5/stable-diffusion-v1-5').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "mac",
+          "source": "https://huggingface.co/docs/diffusers/optimization/mps"
+        }
+      ]
+    }
   },
   {
     "id": "sd-2-1",
@@ -19280,6 +19304,14 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/CompVis/stable-diffusion-v1-1",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-1').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "mac",
+          "source": "https://huggingface.co/docs/diffusers/optimization/mps"
         }
       ]
     },
@@ -19314,6 +19346,14 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/CompVis/stable-diffusion-v1-2",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-2').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "mac",
+          "source": "https://huggingface.co/docs/diffusers/optimization/mps"
         }
       ]
     },
@@ -19348,6 +19388,14 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/CompVis/stable-diffusion-v1-4",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "mac",
+          "source": "https://huggingface.co/docs/diffusers/optimization/mps"
         }
       ]
     },
@@ -29546,6 +29594,14 @@
           "platform": "nvidia",
           "source": "https://huggingface.co/CompVis/stable-diffusion-v1-3",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"from diffusers import StableDiffusionPipeline; p=StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-3').to('mps'); p.enable_attention_slicing(); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "mac",
+          "source": "https://huggingface.co/docs/diffusers/optimization/mps"
         }
       ]
     },
@@ -33261,5 +33317,1043 @@
     "identity_sources": [
       "https://github.com/asappresearch/simple-tts/blob/25eb8be644c3dd5243f88b51dea315da62faf0f6/README.md"
     ]
+  },
+  {
+    "id": "espnet-multiblank-transducer-8421",
+    "name": "ESPnet Multi-blank Transducer 8421",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2023-02",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 8,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c \"import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/librispeech_multiblank_transducer_8421', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])\"",
+          "source": "https://huggingface.co/espnet/librispeech_multiblank_transducer_8421/blob/9b61b744529c1dfc2c190c5ead3b039888965686/README.md"
+        }
+      ]
+    },
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/espnet/librispeech_multiblank_transducer_8421",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 1–41. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement."
+  },
+  {
+    "id": "espnet-conformer-rnn-transducer",
+    "name": "ESPnet Conformer RNN-T (no LM)",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2022-04",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 8,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c \"import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/chai_librispeech_asr_train_conformer-rnn_transducer_raw_en_bpe5000_sp', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])\"",
+          "source": "https://huggingface.co/espnet/chai_librispeech_asr_train_conformer-rnn_transducer_raw_en_bpe5000_sp/blob/1a0ef4acf670473f3e4874863aef042012f0b70f/README.md"
+        }
+      ]
+    },
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/espnet/chai_librispeech_asr_train_conformer-rnn_transducer_raw_en_bpe5000_sp",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 42–94. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-hubert-large-conformer-lm",
+    "name": "ESPnet HuBERT Large + Conformer + Transformer LM",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2022-01",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 8,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa --with s3prl python -c \"import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/simpleoier_librispeech_asr_train_asr_conformer7_hubert_ll60k_large_raw_en_bpe5000_sp', lm_weight=1); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])\"",
+          "source": "https://huggingface.co/espnet/simpleoier_librispeech_asr_train_asr_conformer7_hubert_ll60k_large_raw_en_bpe5000_sp/blob/03fbff3f80433fc6b64071dc9fb3620e68f24641/README.md"
+        }
+      ]
+    },
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/espnet/simpleoier_librispeech_asr_train_asr_conformer7_hubert_ll60k_large_raw_en_bpe5000_sp",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 95–132. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-wavlm-large-conformer-lm",
+    "name": "ESPnet WavLM Large + Conformer + Transformer LM",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2022-01",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 8,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa --with s3prl python -c \"import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/simpleoier_librispeech_asr_train_asr_conformer7_wavlm_large_raw_en_bpe5000_sp', lm_weight=1); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])\"",
+          "source": "https://huggingface.co/espnet/simpleoier_librispeech_asr_train_asr_conformer7_wavlm_large_raw_en_bpe5000_sp/blob/c166dc0b0aa11162d64d0466e235da60e53eda70/README.md"
+        }
+      ]
+    },
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/espnet/simpleoier_librispeech_asr_train_asr_conformer7_wavlm_large_raw_en_bpe5000_sp",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 133–170. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-wav2vec2-large-conformer-lm",
+    "name": "ESPnet wav2vec 2.0 Large + Conformer + Transformer LM",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2021-12",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 8,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa --with s3prl python -c \"import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/simpleoier_librispeech_asr_train_asr_conformer7_wav2vec2_960hr_large_raw_en_bpe5000_sp', lm_weight=1); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])\"",
+          "source": "https://huggingface.co/espnet/simpleoier_librispeech_asr_train_asr_conformer7_wav2vec2_960hr_large_raw_en_bpe5000_sp/blob/a15135915cbb4d1042d5808308447b39aa9f8161/README.md"
+        }
+      ]
+    },
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/espnet/simpleoier_librispeech_asr_train_asr_conformer7_wav2vec2_960hr_large_raw_en_bpe5000_sp",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 171–208. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-multiconvformer",
+    "name": "ESPnet Multiconvformer (no LM)",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2024-03",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/Darshan7575/librispeech_960_multiconvformer_ctcatt_conv_fusion",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 209–263. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-e-branchformer",
+    "name": "ESPnet E-Branchformer (no LM)",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2023-01",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/asapp/e_branchformer_librispeech",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 264–318. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-branchformer-18layer",
+    "name": "ESPnet Branchformer 18-layer (70 epochs, no LM)",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2022-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/pyf98/librispeech_branchformer_e18_linear3072",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 319–399. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-conformer-s4-decoder",
+    "name": "ESPnet Conformer + S4 decoder (no LM)",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2022-12",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 8,
+          "gb_estimated": true,
+          "platform": "any",
+          "cmd": "uv run --python 3.10 --with espnet --with espnet_model_zoo --with librosa python -c \"import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained(model_tag='espnet/kmiyazaki_librispeech_asr_s4_decoder', lm_weight=0); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])\"",
+          "source": "https://huggingface.co/espnet/kmiyazaki_librispeech_asr_s4_decoder/blob/5e2d7b3c8fb84fb2cc835c31c0c965caa474f0ca/README.md"
+        }
+      ]
+    },
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://huggingface.co/espnet/kmiyazaki_librispeech_asr_s4_decoder",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 400–455. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement.",
+    "license": "cc-by-4.0"
+  },
+  {
+    "id": "espnet-conformer-2020-lm",
+    "name": "ESPnet Conformer 2020 + RNN LM",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2020-11",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://zenodo.org/record/4276519",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 834–853. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model."
+  },
+  {
+    "id": "espnet-transformer-18layer-lm",
+    "name": "ESPnet Transformer 18-layer + RNN LM",
+    "provider": "ESPnet",
+    "category": "stt",
+    "released": "2020-07",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
+    "model_repo": "https://zenodo.org/record/3966501",
+    "identity_note": "Exact LibriSpeech 960h recipe run, README lines 854–878. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model."
+  },
+  {
+    "id": "jasper-10x5-nvidia-dle",
+    "name": "Jasper 10x5 (NVIDIA DLE, A100 recipe)",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2020-10",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md",
+    "identity_note": "NVIDIA DeepLearningExamples training recipe; exact reported A100 run. Do not equate this training result with a differently trained NeMo/NGC checkpoint. Public code and training recipe; exact scored checkpoint not verified."
+  },
+  {
+    "id": "quartznet-15x5-nvidia-dle",
+    "name": "QuartzNet 15x5 (NVIDIA DLE, 21.07 recipe)",
+    "provider": "NVIDIA",
+    "category": "stt",
+    "released": "2021-07",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md",
+    "identity_note": "NVIDIA DeepLearningExamples training recipe; exact reported A100 run. Do not equate this training result with a differently trained NeMo/NGC checkpoint. Public code and training recipe; exact scored checkpoint not verified."
+  },
+  {
+    "id": "vits-ljspeech",
+    "name": "VITS (LJ Speech)",
+    "provider": "Kakao / KAIST",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/jaywalnut310/vits",
+    "identity_note": "Exact ljspeech system in VITS Table 1; HiFi-GAN fine-tuning is a distinct vocoder configuration. Published implementation/checkpoint links in §3.4; no generic Tacotron or Glow-TTS score substitution."
+  },
+  {
+    "id": "tacotron2-hifigan-ljspeech",
+    "name": "Tacotron 2 + HiFi-GAN (LJ Speech)",
+    "provider": "VITS study (public implementations)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/NVIDIA/tacotron2",
+    "identity_note": "Exact ljspeech system in VITS Table 1; HiFi-GAN fine-tuning is a distinct vocoder configuration. Published implementation/checkpoint links in §3.4; no generic Tacotron or Glow-TTS score substitution."
+  },
+  {
+    "id": "tacotron2-hifigan-ft-ljspeech",
+    "name": "Tacotron 2 + fine-tuned HiFi-GAN (LJ Speech)",
+    "provider": "VITS study (public implementations)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/jik876/hifi-gan",
+    "identity_note": "Exact ljspeech system in VITS Table 1; HiFi-GAN fine-tuning is a distinct vocoder configuration. Published implementation/checkpoint links in §3.4; no generic Tacotron or Glow-TTS score substitution."
+  },
+  {
+    "id": "glow-tts-hifigan-ljspeech",
+    "name": "Glow-TTS + HiFi-GAN (LJ Speech)",
+    "provider": "VITS study (public implementations)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/jaywalnut310/glow-tts",
+    "identity_note": "Exact ljspeech system in VITS Table 1; HiFi-GAN fine-tuning is a distinct vocoder configuration. Published implementation/checkpoint links in §3.4; no generic Tacotron or Glow-TTS score substitution."
+  },
+  {
+    "id": "glow-tts-hifigan-ft-ljspeech",
+    "name": "Glow-TTS + fine-tuned HiFi-GAN (LJ Speech)",
+    "provider": "VITS study (public implementations)",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/kim21f/kim21f.pdf",
+    "model_repo": "https://github.com/jaywalnut310/glow-tts",
+    "identity_note": "Exact ljspeech system in VITS Table 1; HiFi-GAN fine-tuning is a distinct vocoder configuration. Published implementation/checkpoint links in §3.4; no generic Tacotron or Glow-TTS score substitution."
+  },
+  {
+    "id": "attngan-coco",
+    "name": "AttnGAN (COCO)",
+    "provider": "Microsoft / Rutgers / Duke",
+    "category": "image",
+    "released": "2017-11",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2303.11897v3",
+    "model_repo": "https://github.com/taoxugit/AttnGAN",
+    "identity_note": "TIFA Appendix E AttnGAN row; original COCO text-to-image system."
+  },
+  {
+    "id": "x-lxmert",
+    "name": "X-LXMERT",
+    "provider": "UNC Chapel Hill",
+    "category": "image",
+    "released": "2020-09",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2303.11897v3",
+    "model_repo": "https://github.com/airsplay/X-LXMERT",
+    "identity_note": "TIFA Appendix E X-LXMERT row; visual-token text-to-image generation."
+  },
+  {
+    "id": "dall-e-mega-min-dalle",
+    "name": "DALL·E Mega (minDALL-E)",
+    "provider": "DALL·E Mini / minDALL-E",
+    "category": "image",
+    "released": "2022-07",
+    "open_weights": true,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with min-dalle python -c \"import torch; from min_dalle import MinDalle; m=MinDalle(models_root='./pretrained', dtype=torch.float32, device='cpu', is_mega=True, is_reusable=True); m.generate_image(text='A lighthouse at sunset', seed=1, grid_size=1, is_seamless=False, temperature=1, top_k=256, supercondition_factor=32, is_verbose=False).save('image.png')\"",
+          "platform": "any",
+          "source": "https://github.com/kuprel/min-dalle"
+        }
+      ]
+    },
+    "source": "https://arxiv.org/html/2303.11897v3",
+    "model_repo": "https://github.com/kuprel/min-dalle",
+    "identity_note": "TIFA Appendix E explicitly identifies minDALL-E as DALL·E Mini with Mega weights. HPS Appendix D names the same min-dalle implementation, not original OpenAI DALL·E. Local command uses CPU; 8GB memory is an estimate including runtime headroom, not measured speed or capacity."
+  },
+  {
+    "id": "fusedream-biggan-512",
+    "name": "FuseDream (BigGAN 512)",
+    "provider": "FuseDream authors",
+    "category": "image",
+    "released": "2021-12",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "model_repo": "https://github.com/gnobitab/FuseDream",
+    "identity_note": "HPS v2 Appendix D: 512×512 output, 1000 initialisation iterations, 1000 optimisation iterations, 5 basis images."
+  },
+  {
+    "id": "lafite-hps2023",
+    "name": "LAFITE (HPS v2 checkpoint)",
+    "provider": "LAFITE authors",
+    "category": "image",
+    "released": "2021-11",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md",
+    "model_repo": "https://github.com/drboog/Lafite",
+    "identity_note": "HPS v2 Appendix D: 256×256 default configuration, exact author-linked checkpoint Google Drive file 1tMD6MWydRDMaaM7iTOKsUK-Wv2YNDRRt."
+  },
+  {
+    "id": "zeroscope-v2-xl",
+    "name": "ZeroScope v2 XL (576w → XL pipeline)",
+    "provider": "cerspense",
+    "category": "video",
+    "released": "2023-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "model_repo": "https://huggingface.co/cerspense/zeroscope_v2_XL",
+    "identity_note": "Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w."
+  },
+  {
+    "id": "floor33-pictures-2023-08",
+    "name": "Floor33 Pictures (August 2023)",
+    "provider": "Floor33 Pictures",
+    "category": "video",
+    "released": "2023-08",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "identity_note": "Historical hosted model/API evaluated in EvalCrafter. No current API endpoint verified."
+  },
+  {
+    "id": "pikalab-2023-09",
+    "name": "PikaLab (September 2023)",
+    "provider": "Pika",
+    "category": "video",
+    "released": "2023-09",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "identity_note": "Pre-Pika 1.0 historical service (Table 1); not Pika 1.0 or current Pika. No current run option for this snapshot."
+  },
+  {
+    "id": "videocrafter1-t2v",
+    "name": "VideoCrafter1 T2V",
+    "provider": "Tencent AI Lab / HKUST",
+    "category": "video",
+    "released": "2023-10",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "model_repo": "https://github.com/AILab-CVC/VideoCrafter",
+    "identity_note": "October 2023 VideoCrafter1 text-to-video, 1024×576, 16 frames; distinct from early VideoCrafter/LVDM and VideoCrafter2."
+  },
+  {
+    "id": "show-1",
+    "name": "Show-1",
+    "provider": "Show Lab / NUS",
+    "category": "video",
+    "released": "2023-10",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://arxiv.org/html/2310.11440v3",
+    "model_repo": "https://github.com/showlab/Show-1",
+    "identity_note": "Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint."
+  },
+  {
+    "id": "kandinsky-2-1",
+    "name": "Kandinsky 2.1",
+    "provider": "AI Forever",
+    "category": "image",
+    "released": "2023-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 12,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-1', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md"
+        }
+      ]
+    },
+    "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md",
+    "model_repo": "https://huggingface.co/kandinsky-community/kandinsky-2-1",
+    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement."
+  },
+  {
+    "id": "kandinsky-2-2",
+    "name": "Kandinsky 2.2",
+    "provider": "AI Forever",
+    "category": "image",
+    "released": "2023-07",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 12,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-2-decoder', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder/blob/9ae140d347fed8ce6e8bb3005dcc1f48543bb8e3/README.md"
+        }
+      ]
+    },
+    "source": "https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder/blob/9ae140d347fed8ce6e8bb3005dcc1f48543bb8e3/README.md",
+    "model_repo": "https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder",
+    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement."
+  },
+  {
+    "id": "kandinsky-3",
+    "name": "Kandinsky 3",
+    "provider": "AI Forever",
+    "category": "image",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16",
+          "gb": 32,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c \"import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-3', torch_dtype=torch.float16, variant='fp16').to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md"
+        }
+      ]
+    },
+    "source": "https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md",
+    "model_repo": "https://huggingface.co/kandinsky-community/kandinsky-3",
+    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement."
+  },
+  {
+    "id": "stable-video-diffusion",
+    "name": "Stable Video Diffusion (SVD, 14 frames)",
+    "provider": "Stability AI",
+    "category": "video",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "stable-video-diffusion-community",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16 · CPU offload",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c \"import torch; from diffusers import StableVideoDiffusionPipeline; from diffusers.utils import load_image, export_to_video; p=StableVideoDiffusionPipeline.from_pretrained('stabilityai/stable-video-diffusion-img2vid', torch_dtype=torch.float16, variant='fp16'); p.enable_model_cpu_offload(); p.unet.enable_forward_chunking(); image=load_image('input.png').resize((1024,576)); frames=p(image, num_frames=14, decode_chunk_size=2).frames[0]; export_to_video(frames, 'video.mp4', fps=7)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/docs/diffusers/main/en/using-diffusers/svd"
+        }
+      ]
+    },
+    "source": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/blob/9cf024d5bfa8f56622af86c884f26a52f6676f2e/README.md",
+    "model_repo": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid",
+    "identity_note": "Image-to-video model requiring a starting image; not text-to-video. Original release, distinct from SVD XT 1.1. Place a starting image at input.png. CUDA GPU plus system RAM required for CPU offload. 8GB VRAM is a planning estimate based on the documented chunking/offload setup; not a local measurement."
+  },
+  {
+    "id": "stable-video-diffusion-xt",
+    "name": "Stable Video Diffusion XT (25 frames)",
+    "provider": "Stability AI",
+    "category": "video",
+    "released": "2023-11",
+    "open_weights": true,
+    "license": "stable-video-diffusion-community",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp16 · CPU offload",
+          "gb": 8,
+          "gb_estimated": true,
+          "cmd": "uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c \"import torch; from diffusers import StableVideoDiffusionPipeline; from diffusers.utils import load_image, export_to_video; p=StableVideoDiffusionPipeline.from_pretrained('stabilityai/stable-video-diffusion-img2vid-xt', torch_dtype=torch.float16, variant='fp16'); p.enable_model_cpu_offload(); p.unet.enable_forward_chunking(); image=load_image('input.png').resize((1024,576)); frames=p(image, num_frames=25, decode_chunk_size=2).frames[0]; export_to_video(frames, 'video.mp4', fps=7)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/docs/diffusers/main/en/using-diffusers/svd"
+        }
+      ]
+    },
+    "source": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/9e43909513c6714f1bc78bcb44d96e733cd242aa/README.md",
+    "model_repo": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt",
+    "identity_note": "Image-to-video model requiring a starting image; not text-to-video. Original release, distinct from SVD XT 1.1. Place a starting image at input.png. CUDA GPU plus system RAM required for CPU offload. 8GB VRAM is a planning estimate based on the documented chunking/offload setup; not a local measurement."
+  },
+  {
+    "id": "animatediff-v1-5-2",
+    "name": "AnimateDiff SD 1.5 v2 motion adapter",
+    "provider": "AnimateDiff authors",
+    "category": "video",
+    "released": "2023-09",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2/blob/6167b88ffe39b4441fdf2113e77b99a6f56b7906/README.md",
+    "model_repo": "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2",
+    "identity_note": "Motion adapter requiring a compatible Stable Diffusion 1.5 base; no score borrowed from a complete AnimateDiff pipeline."
+  },
+  {
+    "id": "cogvideo-9b",
+    "name": "CogVideo 9B (original)",
+    "provider": "Tsinghua / Zhipu",
+    "category": "video",
+    "released": "2022-05",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://huggingface.co/THUDM/CogVideo/blob/4a245c359560cadf8c4e8251f37b4cc06a3c4cbd/README.md",
+    "model_repo": "https://huggingface.co/THUDM/CogVideo",
+    "identity_note": "Original 2022 CogVideo, distinct from CogVideoX 2024."
+  },
+  {
+    "id": "coqui-en-ljspeech-tacotron2-ddc",
+    "name": "Tacotron 2 DDC (Coqui LJ Speech)",
+    "provider": "Coqui TTS / Eren Gölge @erogol",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache 2.0",
+    "languages": [
+      "en"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/ljspeech/tacotron2-DDC --text \"Hello world.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/tacotron2-DDC. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-en-ljspeech-glow-tts",
+    "name": "Glow-TTS (Coqui LJ Speech)",
+    "provider": "Coqui TTS / Eren Gölge @erogol",
+    "category": "tts",
+    "open_weights": true,
+    "license": "MPL",
+    "languages": [
+      "en"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/ljspeech/glow-tts --text \"Hello world.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/glow-tts. Default vocoder vocoder_models/en/ljspeech/multiband-melgan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-en-ljspeech-speedy-speech",
+    "name": "SpeedySpeech (Coqui LJ Speech)",
+    "provider": "Coqui TTS / Eren Gölge @erogol",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache 2.0",
+    "languages": [
+      "en"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/ljspeech/speedy-speech --text \"Hello world.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/speedy-speech. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-en-ljspeech-fast-pitch",
+    "name": "FastPitch (Coqui LJ Speech)",
+    "provider": "Coqui TTS / Eren Gölge @erogol",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache 2.0",
+    "languages": [
+      "en"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/ljspeech/fast_pitch --text \"Hello world.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/fast_pitch. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-en-ljspeech-overflow",
+    "name": "OverFlow (Coqui LJ Speech)",
+    "provider": "Coqui TTS / Eren Gölge @erogol",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache 2.0",
+    "languages": [
+      "en"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/ljspeech/overflow --text \"Hello world.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/overflow. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-en-ljspeech-neural-hmm",
+    "name": "Neural HMM TTS (Coqui LJ Speech)",
+    "provider": "Coqui TTS / Shivam Metha @shivammehta25",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache 2.0",
+    "languages": [
+      "en"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/ljspeech/neural_hmm --text \"Hello world.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/neural_hmm. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-de-thorsten-vits",
+    "name": "VITS Thorsten (German)",
+    "provider": "Coqui TTS / @thorstenMueller",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache 2.0",
+    "languages": [
+      "de"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/de/thorsten/vits --text \"Hallo Welt.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/de/thorsten/vits. End-to-end waveform model. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-es-css10-vits",
+    "name": "VITS CSS10 (Spanish)",
+    "provider": "Coqui TTS / @NeonGeckoCom",
+    "category": "tts",
+    "open_weights": true,
+    "license": "bsd-3-clause",
+    "languages": [
+      "es"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/es/css10/vits --text \"Hola mundo.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/es/css10/vits. End-to-end waveform model. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-fr-css10-vits",
+    "name": "VITS CSS10 (French)",
+    "provider": "Coqui TTS / @NeonGeckoCom",
+    "category": "tts",
+    "open_weights": true,
+    "license": "bsd-3-clause",
+    "languages": [
+      "fr"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/fr/css10/vits --text \"Bonjour le monde.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/fr/css10/vits. End-to-end waveform model. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-pt-cv-vits",
+    "name": "VITS Common Voice (Portuguese)",
+    "provider": "Coqui TTS / @NeonGeckoCom",
+    "category": "tts",
+    "open_weights": true,
+    "license": "bsd-3-clause",
+    "languages": [
+      "pt"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/pt/cv/vits --text \"Olá mundo.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/pt/cv/vits. End-to-end waveform model. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-uk-mai-glow-tts",
+    "name": "Glow-TTS Mai (Ukrainian)",
+    "provider": "Coqui TTS / @robinhad",
+    "category": "tts",
+    "open_weights": true,
+    "license": "MIT",
+    "languages": [
+      "uk"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/uk/mai/glow-tts --text \"Привіт, світе.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/uk/mai/glow-tts. Default vocoder vocoder_models/uk/mai/multiband-melgan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "coqui-tr-common-voice-glow-tts",
+    "name": "Glow-TTS Common Voice (Turkish)",
+    "provider": "Coqui TTS / Fatih Akademi",
+    "category": "tts",
+    "open_weights": true,
+    "license": "MIT",
+    "languages": [
+      "tr"
+    ],
+    "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "model_repo": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with 'coqui-tts[languages]' --with torch --with torchaudio --with torchcodec tts --model_name tts_models/tr/common-voice/glow-tts --text \"Merhaba dünya.\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/ca2cf5155bca892ea820ad384400efbfac41b178/TTS/.models.json"
+        }
+      ]
+    },
+    "identity_note": "Exact registry entry tts_models/tr/common-voice/glow-tts. Default vocoder vocoder_models/tr/common-voice/hifigan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+  },
+  {
+    "id": "nvidia-tacotron2-waveglow",
+    "name": "Tacotron 2 + WaveGlow (NVIDIA)",
+    "provider": "NVIDIA",
+    "category": "tts",
+    "released": "2018",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "model_repo": "https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch",
+    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified."
+  },
+  {
+    "id": "fastpitch-1-0-waveglow",
+    "name": "FastPitch 1.0 + WaveGlow",
+    "provider": "NVIDIA",
+    "category": "tts",
+    "released": "2020-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "model_repo": "https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch",
+    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified."
+  },
+  {
+    "id": "fastpitch-1-1-waveglow",
+    "name": "FastPitch 1.1 + WaveGlow",
+    "provider": "NVIDIA",
+    "category": "tts",
+    "released": "2021-08",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
+    "model_repo": "https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch",
+    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified."
+  },
+  {
+    "id": "grad-tts-10-hifigan",
+    "name": "Grad-TTS + HiFi-GAN (10 steps)",
+    "provider": "Grad-TTS authors / Huawei Noah",
+    "category": "tts",
+    "released": "2021-05",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf",
+    "model_repo": "https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS",
+    "identity_note": "Original Grad-TTS acoustic checkpoint with HiFi-GAN; 10 reverse-diffusion steps, temperature 1.5."
+  },
+  {
+    "id": "fastspeech-xcmyz-gradtts-study",
+    "name": "FastSpeech + HiFi-GAN (xcmyz, Grad-TTS study)",
+    "provider": "Grad-TTS authors / Huawei Noah",
+    "category": "tts",
+    "released": "2021-05",
+    "open_weights": false,
+    "api": null,
+    "local": null,
+    "source": "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf",
+    "model_repo": "https://github.com/xcmyz/FastSpeech",
+    "identity_note": "Unofficial xcmyz FastSpeech implementation used by the Grad-TTS authors, coupled with HiFi-GAN; not the original Microsoft FastSpeech checkpoint. Exact trained weights not verified."
+  },
+  {
+    "id": "speechbrain-fastspeech2-ljspeech",
+    "name": "FastSpeech 2 + HiFi-GAN (SpeechBrain LJ Speech)",
+    "provider": "SpeechBrain",
+    "category": "tts",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "languages": [
+      "en"
+    ],
+    "source": "https://huggingface.co/speechbrain/tts-fastspeech2-ljspeech/blob/c50d854a2b3f6be0e08b694c67a92ca56228de18/README.md",
+    "model_repo": "https://huggingface.co/speechbrain/tts-fastspeech2-ljspeech",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 · CPU",
+          "gb": 4,
+          "gb_estimated": true,
+          "platform": "any",
+          "source": "https://huggingface.co/speechbrain/tts-fastspeech2-ljspeech/blob/c50d854a2b3f6be0e08b694c67a92ca56228de18/README.md",
+          "cmd": "uv run --with speechbrain --with soundfile python -c \"import soundfile as sf; from speechbrain.inference.TTS import FastSpeech2; from speechbrain.inference.vocoders import HIFIGAN; t=FastSpeech2.from_hparams(source='speechbrain/tts-fastspeech2-ljspeech', savedir='pretrained/fastspeech2'); v=HIFIGAN.from_hparams(source='speechbrain/tts-hifigan-ljspeech', savedir='pretrained/hifigan'); mel,_,_,_=t.encode_text(['Hello world.']); wav=v.decode_batch(mel); sf.write('speech.wav', wav.squeeze().detach().cpu().numpy(), 22050)\""
+        }
+      ]
+    },
+    "identity_note": "SpeechBrain-trained FastSpeech2 acoustic model plus its LJ Speech HiFi-GAN vocoder. Original-paper MOS is not transferred to this checkpoint. CPU run command adapted from model card; memory is an estimated 4GB runtime budget, not a local measurement."
+  },
+  {
+    "id": "lightspeech",
+    "name": "LightSpeech + Parallel WaveGAN",
+    "provider": "Microsoft NeuralSpeech",
+    "category": "tts",
+    "released": "2021-02",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/LightSpeech/README.md",
+    "model_repo": "https://github.com/microsoft/NeuralSpeech/tree/8cf4fbcbf451c3affc68ecfa6c970327e927062f/LightSpeech",
+    "identity_note": "Original author implementation with linked pretrained acoustic and vocoder weights. Legacy environment requires a multi-step setup. No benchmark score or current one-command run inferred."
+  },
+  {
+    "id": "priorgrad-acoustic",
+    "name": "PriorGrad acoustic + HiFi-GAN",
+    "provider": "Microsoft NeuralSpeech",
+    "category": "tts",
+    "released": "2021-06",
+    "open_weights": true,
+    "api": null,
+    "local": null,
+    "source": "https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic/README.md",
+    "model_repo": "https://github.com/microsoft/NeuralSpeech/tree/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic",
+    "identity_note": "Original author implementation with linked pretrained acoustic and vocoder weights. Legacy environment requires a multi-step setup. No benchmark score or current one-command run inferred."
   }
 ]
