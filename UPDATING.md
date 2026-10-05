@@ -26,6 +26,7 @@ Categories: `llm` (default), `image`, `video`, `tts`, `stt`. Benchmarks and thei
      `params_b` and precision, and must be labelled as an estimate.
    - Speeds: `{ model, quant, hardware, kind, offload, value, unit, engine, settings, source }`. Name the
      hardware as it appears in `data/hardware.json` so it can be matched to users' machines.
+   - A model from a provider that has no logo yet needs one. See [Maker icons](#maker-icons).
 4. Set `data/meta.json` `updated` to the current UTC time. If a result comes from a site not used
    before, run `npm run icons` to fetch its favicon, and add a display name in `lib/sources.ts`.
 5. Run `npm run check`. It must pass. Look at each category's top 5 and leave-one-out error, and say in
@@ -55,6 +56,48 @@ Categories: `llm` (default), `image`, `video`, `tts`, `stt`. Benchmarks and thei
 - Don't edit or delete existing results unless the source page has changed. Say so in the PR if it has.
 - A model whose API and weights are both gone stays (it anchors the fit) with `api: null` and no variants;
   it's no longer listed.
+
+## Maker icons
+
+Each model row shows its maker's logo. `data/icons.json` holds one entry per logo, one line each:
+
+```json
+{"id":"qwen","name":"Qwen","providers":["Alibaba (Qwen)"],"models":{"Alibaba":["qwen*","qwq*"]},"url":"https://cdn-avatars.huggingface.co/…","page":"https://huggingface.co/Qwen","retrieved":"2026-10-05"}
+```
+
+- `id`: the file name. The logo is `icons/providers/<id>.png`, a 64×64 PNG that is committed.
+- `name`: whose mark it is. Used for alt text and credits.
+- `providers`: the exact `provider` values from `data/models.json` that show this logo. A provider can
+  appear in only one entry.
+- `models` (optional): marks for model families, as `{ provider: [model ids] }`. An id ending in `*`
+  is a prefix. A family mark only applies to models from that provider, so a community fine-tune keeps
+  its own maker's logo. Keep these few, and only add one when the family has its own official mark.
+- `url`: the exact image, as published by its owner. This can be from the maker's own site (an
+  apple-touch-icon, web app manifest icon, SVG favicon, favicon or square og:image) or the organisation's
+  own Hugging Face or GitHub avatar.
+- `page`: the official page that links or shows the image, which proves it belongs to the maker.
+- `retrieved`: the date you fetched it, as YYYY-MM-DD.
+- `note` (optional): anything unusual, such as why a fallback source was used.
+
+Pick the largest official mark available. An apple-touch-icon, manifest icon, SVG or organisation
+avatar is better than a 16px favicon.ico. Never use logo aggregators or favicon services, such as
+Clearbit, Google's s2 favicon service, logo.dev, Brandfetch or icon sites. `npm run check` rejects them.
+A Wikipedia or Wikimedia upload is only acceptable when the maker has no web presence of its own, and
+you must say so in `note`. Skip auto-generated avatars (identicons) and personal photos. The logo
+represents the model's maker (its `provider`), not whoever uploaded or quantised the weights.
+
+To add or fix a logo:
+
+1. Add or edit the entry in `data/icons.json`.
+2. Run `npm run icons -- <id>`. This downloads `url` and writes `icons/providers/<id>.png`.
+   `npm run icons -- --refresh` downloads every logo again. Normalising the image needs ImageMagick
+   (`magick`) or macOS `sips`, plus `rsvg-convert` (librsvg) for SVG sources.
+3. Look at the PNG, then run `npm run check`. It fails on a broken entry, a missing or wrongly sized
+   file, or a file with no entry. It only warns about providers without a logo.
+4. Commit both the entry and the PNG.
+
+Logos are trademarks of their owners and are shown only to identify each model's maker.
+`icons/providers/` is not covered by the data licence (see [DATA-LICENSE.md](DATA-LICENSE.md)).
 
 ## Reviewed-source edition
 

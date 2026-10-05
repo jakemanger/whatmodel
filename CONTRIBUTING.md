@@ -34,6 +34,14 @@ Every pull request is reviewed before it's merged. CI runs the same checks. You 
 `README.md` or `pages/`: they're regenerated from the data after each merge (`npm run pages` if you want to
 preview them).
 
+## Add or fix a maker logo
+
+Logos are listed in `data/icons.json`. Each entry records the image URL as the maker publishes it
+(on its own website, or as its Hugging Face or GitHub organisation avatar) and the official page that
+links it. Edit or add the entry, run `npm run icons -- <id>` to regenerate `icons/providers/<id>.png`,
+and commit both. [UPDATING.md](UPDATING.md#maker-icons) lists the fields and which sources are accepted.
+Logos remain the property of their owners and are not covered by the data licence.
+
 ## Which sources are allowed
 
 Numbers must come from a source marked `"allowed"` in `data/sources.json`:
@@ -55,4 +63,5 @@ a discussion first so we can agree on the approach before you build it.
 
 By opening a pull request you agree that your data changes are licensed under
 [CC BY-SA 4.0](DATA-LICENSE.md) and your code changes under the [MIT licence](LICENSE). Bench results are
-released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Logos in `icons/providers/`
+are excluded from both licences: they stay the property of their owners.

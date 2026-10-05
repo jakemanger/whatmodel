@@ -8,4 +8,6 @@ The underlying sources retain their respective licences. `data/sources.json` ide
 
 Changes include selection of model configurations, identifier mapping, transcription, unit conversion, documented aggregation, and calculation of relative scores. Sources do not endorse whatmodel.sh. Data is provided as-is without warranties, subject to rights that cannot lawfully be excluded.
 
+Logos are excluded. The maker logos in `icons/providers/` (sources listed in `data/icons.json`) and the source favicons in `icons/` are trademarks of their respective owners and remain their property. They are shown only to identify each model's maker or each data source, and are not licensed under CC BY-SA 4.0 or the MIT licence.
+
 Share-alike source extracts are also published separately under `data/extracts/`, with their source, licence and transformation notices. No additional restriction in the site's terms limits the rights granted by these data licences.
