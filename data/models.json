@@ -10388,10 +10388,10 @@
           "gb": 12.37,
           "gb_estimated": true,
           "cmd": "uv run --with 'transformers>=5.3.0' --with torch --with accelerate python -c \"from transformers import AutoProcessor, HiggsAudioV2ForConditionalGeneration; model_id = 'bosonai/higgs-audio-v2-generation-3B-base'; processor = AutoProcessor.from_pretrained(model_id, device_map='auto'); model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_map='auto'); conversation = [{'role': 'system', 'content': [{'type': 'text', 'text': 'Generate audio following instruction.'}]}, {'role': 'scene', 'content': [{'type': 'text', 'text': 'Audio is recorded from a quiet room.'}]}, {'role': 'user', 'content': [{'type': 'text', 'text': 'The sun rises in the east and sets in the west. This simple fact has been observed by humans for thousands of years.'}]}]; inputs = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=True, return_dict=True, sampling_rate=24000, return_tensors='pt').to(model.device); outputs = model.generate(**inputs, max_new_tokens=1000, do_sample=False); decoded = processor.batch_decode(outputs); processor.save_audio(decoded, 'output_single_speaker.wav')\"",
-          "platform": "any",
+          "platform": "nvidia",
           "source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/blob/d80c511612b3040ff2877ce3d408747df1739f11/README.md",
           "gb_source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/tree/d80c511612b3040ff2877ce3d408747df1739f11",
-          "note": "transformers >=5.3.0 (native HiggsAudioV2ForConditionalGeneration), as documented on the official HF model card. Platform evidence: Card snippet loads with `device_map=\"auto\"` (\"processor = AutoProcessor.from_pretrained(model_id, device_map=\"auto\")\" / \"model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_m… Command: The card's 'Single-speaker smart voice' Python snippet wrapped as a uv run one-liner (double quotes changed to single quotes inside python -c). The card's install step is `uv pip install \"transformers>=5.3.0\"`; gb is the sum of the weight files the command loads (model.safetensors 11.54 GB; tokenizer.json 0.02 GB; model.safetensors 0.81 GB); runtime memory is higher. Large download (about 12.4 GB). Without a reference clip the model picks a voice ('smart voice'); voice cloning needs a reference clip (see card's other snippets). CPU generation of a 3B+ model will be slow."
+          "note": "transformers >=5.3.0 (native HiggsAudioV2ForConditionalGeneration), as documented on the official HF model card. Platform evidence: Card snippet loads with `device_map=\"auto\"` (\"processor = AutoProcessor.from_pretrained(model_id, device_map=\"auto\")\" / \"model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_m… Command: The card's 'Single-speaker smart voice' Python snippet wrapped as a uv run one-liner (double quotes changed to single quotes inside python -c). The card's install step is `uv pip install \"transformers>=5.3.0\"`; gb is the sum of the weight files the command loads (model.safetensors 11.54 GB; tokenizer.json 0.02 GB; model.safetensors 0.81 GB); runtime memory is higher. Large download (about 12.4 GB). Without a reference clip the model picks a voice ('smart voice'); voice cloning needs a reference clip (see card's other snippets). CPU generation of a 3B+ model will be slow. Listed for NVIDIA only: the card does not state CPU support for this path."
         },
         {
           "quant": "mlx-8bit (mlx-audio)",
@@ -10490,16 +10490,6 @@
     ],
     "local": {
       "variants": [
-        {
-          "quant": "fp32 (dots.tts package CLI)",
-          "gb": 5.16,
-          "gb_estimated": true,
-          "cmd": "pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text \"Hello, this is a zero-shot voice cloning demonstration.\" --prompt-audio /path/to/reference.wav --prompt-text \"The exact transcript of the reference audio.\" --output clone.wav --precision float32",
-          "platform": "any",
-          "source": "https://github.com/studio-dots-ai/dots.tts/blob/3cb6f94a571097b500038f1619959075282c5c98/README.md",
-          "gb_source": "https://huggingface.co/dots-studio/dots.tts-soar/tree/2f9b3e18d70d670d4c701da2dc55ded5755815ce",
-          "note": "official dots.tts package CLI (PyPI dots.tts). Platform evidence: src/dots_tts/runtime.py: `if torch.cuda.is_available(): self.device = torch.device(\"cuda\") else: self.device = torch.device(\"cpu\")`, and the warning/error text \"CUDA is not available; Command: README install step (`pip install dots.tts`) chained with the README's continuation voice-cloning CLI example, joined onto one line; appended `--precision float32` (an existing CLI flag, `--precision`, default bfloat16) because the official runtime refuses half precision on CPU and tells the user to… gb is the sum of the weight files the command loads (model.safetensors 4.40 GB; vocoder.safetensors 0.72 GB; speaker_encoder.safetensors 0.03 GB; tokenizer.json 0.01 GB); runtime memory is higher. Needs a reference clip plus its transcript (README: random-voice sampling without --prompt-audio is 'only meaningful with a fine-tuned single-speaker checkpoint'); --prompt-audio alone gives x-vector-only cloning."
-        },
         {
           "quant": "bf16 (dots.tts package CLI)",
           "gb": 5.16,

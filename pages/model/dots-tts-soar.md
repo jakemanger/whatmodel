@@ -41,13 +41,10 @@ dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS
 
 <pre>
 version                                     needs  score
-fp32 (dots.tts package CLI)               ~5.16GB   55.7
 bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   55.7
 </pre>
 
 ```sh
-# fp32 (dots.tts package CLI)
-pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --output clone.wav --precision float32
 # bf16 (dots.tts package CLI) · nvidia only
 pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --output clone.wav
 ```

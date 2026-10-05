@@ -208,6 +208,8 @@ Effect on the fit: TTS gains three scored models (111 → 114: MeloTTS English, 
    - dots.tts adds `--precision float32`, a documented flag that the runtime's own CPU error message asks for.
 
    Both are labelled; remove them if this is too permissive.
+
+   **Decided 2026-10-05 (owner):** keep every pre-rendered page (item 1); keep the OpenVoice commands (item 2); remove both CPU variants (item 3). The Higgs Audio V2 transformers command is now listed for NVIDIA only, and the dots.tts float32 variant is removed; its default bf16 NVIDIA command remains.
 4. **Existing entries to re-check (not changed here):**
    - **LTX-2 Mac (mlx-video):** the default `--model-repo Lightricks/LTX-2` downloads the whole repository (about 314 GB) and may load a different transformer than intended.
    - **Older stable-diffusion.cpp entries** (FLUX.1, Z-Image-Turbo, Qwen-Image-2512) count only the diffusion model's memory.
