@@ -1,23 +1,55 @@
-name: Missing model
-description: A model that should be on the leaderboard isn't.
-labels: [data]
+name: "Missing model"
+description: "A model that should be on the leaderboard isn't."
+labels: ["data", "missing-model"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
+
+        Give the maker's Hugging Face page if there is one. Add **Details**, one `field: value` per line: `maker`, `released` (YYYY-MM), `licence`, `params`, `active`, `open_weights` (yes or no).
+
+        **Results** are optional, from the official model card above, one per line: `benchmark-id | score | optional note` ([benchmark ids](https://github.com/jakemanger/whatmodel/blob/main/data/benchmarks.json)). For results from a paper, use **Results from a paper** once the model is added.
   - type: input
     id: model
     attributes:
-      label: Model name
-    validations: { required: true }
+      label: "Model name"
+      placeholder: "Qwen3.5 9B"
+    validations:
+      required: true
   - type: input
     id: links
     attributes:
-      label: Official page, weights or API docs
-    validations: { required: true }
+      label: "Official page"
+      description: "The maker's Hugging Face model page, or its own model page or API docs."
+      placeholder: "https://huggingface.co/Qwen/Qwen3.5-9B"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      options:
+        - "Text (LLM)"
+        - "Image"
+        - "Video"
+        - "Text-to-speech"
+        - "Speech-to-text"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Details"
+      description: "Include maker and open_weights (yes/no). One `field: value` per line."
+      placeholder: "maker: Qwen"
   - type: textarea
     id: results
     attributes:
-      label: Published benchmark results
-      description: Links to results under an open licence (CC BY, CC BY-SA, CC0, MIT, Apache), or the vendor's own model card. Leaderboard aggregators can't be used.
+      label: "Results from the model card"
+      description: "Optional. One per line: benchmark-id | score | optional note"
+      placeholder: "mmlu-pro | 71.2%"
   - type: textarea
     id: notes
     attributes:
-      label: Anything else
+      label: "Anything else"

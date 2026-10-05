@@ -1,40 +1,75 @@
-name: Results from a paper
-description: Benchmark results published in an openly licensed paper, model card or repository.
-labels: [data]
+name: "Results from a paper"
+description: "Benchmark results published in an openly licensed paper, model card or repository."
+labels: ["data", "paper-results"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
+
+        **Format:** one result per line, `model-id | benchmark-id | score | optional note`
+
+        ```
+        qwen3-8b | mmlu-pro | 48.3% | 5-shot CoT
+        llama-3-1-8b-instruct | gpqa-diamond | 30.4%
+        ```
+
+        - The model id is the end of its whatmodel.sh address, e.g. `qwen3-8b` for whatmodel.sh/model/qwen3-8b ([all ids](https://github.com/jakemanger/whatmodel/blob/main/data/models.json)). Not listed yet? Use the **Missing model** form first.
+        - Benchmark ids are in [data/benchmarks.json](https://github.com/jakemanger/whatmodel/blob/main/data/benchmarks.json). Not listed? Use **Propose a benchmark**.
+        - Write scores as printed: `48.3%` or `0.483`, Elo ratings as the number, 1–5 ratings as printed.
   - type: input
     id: source
     attributes:
-      label: Paper or source link
-      description: The arXiv abstract page, model card or repository file with the results.
-    validations: { required: true }
+      label: "Source link"
+      description: "An arXiv paper, a Hugging Face model card or dataset file, or a GitHub file. Its licence must be CC BY, CC BY-SA, CC0, MIT or Apache-2.0. arXiv's default licence can't be used."
+      placeholder: "https://arxiv.org/abs/2501.12345v2"
+    validations:
+      required: true
   - type: dropdown
     id: licence
     attributes:
-      label: Licence of the source
-      description: On arXiv, see the licence link under "Access Paper". The default arXiv licence can't be used.
+      label: "Licence of the source"
+      description: "Optional: name the licence covering the results, not only the code."
       options:
-        - CC BY
-        - CC BY-SA
-        - CC0
-        - Apache-2.0
-        - MIT
-        - Other or not sure
-    validations: { required: true }
+        - "CC BY"
+        - "CC BY-SA"
+        - "CC0"
+        - "Apache-2.0"
+        - "MIT"
+        - "Other or not sure"
   - type: input
     id: location
     attributes:
-      label: Table or figure
-      description: For example "Table 3, page 7".
-    validations: { required: true }
+      label: "Table or figure"
+      placeholder: "Table 3"
+    validations:
+      required: true
   - type: textarea
     id: results
     attributes:
-      label: Models and scores
-      description: One line per result, for example "Llama 3.1 8B Instruct · MMLU-Pro · 48.3". Use the exact model versions the paper names.
-    validations: { required: true }
+      label: "Results"
+      description: "One per line: model-id | benchmark-id | score | optional note"
+      placeholder: "qwen3-8b | mmlu-pro | 48.3% | 5-shot CoT"
+    validations:
+      required: true
+  - type: dropdown
+    id: by
+    attributes:
+      label: "Who ran the evaluations?"
+      options:
+        - "The source's authors, on models they didn't make"
+        - "The model's own makers"
+    validations:
+      required: true
   - type: textarea
     id: setup
     attributes:
-      label: Evaluation setup
-      description: Shots, prompting, judge model or anything else needed to compare the numbers fairly.
+      label: "Evaluation setup"
+      description: "Optional: shots, prompting, reasoning setting or judge model. It's added to each result's note."
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: "Original results"
+      options:
+        - label: "These are the source's own measurements, not numbers copied from another paper or leaderboard"
+          required: true

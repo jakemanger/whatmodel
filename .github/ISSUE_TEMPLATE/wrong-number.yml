@@ -1,26 +1,39 @@
-name: Wrong number
-description: A score, price, speed, context window or memory figure doesn't match its source.
-labels: [data]
+name: "Wrong number"
+description: "A score, price, context window, size or date doesn't match its source."
+labels: ["data", "wrong-number"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
+
+        **Format:** `what = correct value`, for example `gpqa-diamond = 71.2%`, `price_in = 0.40` or `context = 256k`.
+
+        - For a test result, `what` is the benchmark id from [data/benchmarks.json](https://github.com/jakemanger/whatmodel/blob/main/data/benchmarks.json).
+        - Otherwise one of `price_in`, `price_out` (USD per 1M tokens), `price` (e.g. `0.04`), `context`, `params`, `active`, `released` or `licence`.
+        - The model id is the end of its whatmodel.sh address, e.g. `qwen3-8b` for whatmodel.sh/model/qwen3-8b ([all ids](https://github.com/jakemanger/whatmodel/blob/main/data/models.json)).
   - type: input
     id: model
     attributes:
-      label: Model
-      description: The model id from its whatmodel.sh page, e.g. qwen3-8b
-    validations: { required: true }
+      label: "Model"
+      placeholder: "qwen3-8b"
+    validations:
+      required: true
   - type: input
     id: field
     attributes:
-      label: What's wrong
-      description: e.g. "GPQA Diamond is 71.2, we show 72.1" or "price changed to $0.40/M input"
-    validations: { required: true }
+      label: "Correct value"
+      placeholder: "gpqa-diamond = 71.2%"
+    validations:
+      required: true
   - type: input
     id: source
     attributes:
-      label: Source URL
-      description: Where the correct number is published. It has to be an openly licensed source or the vendor's own page.
-    validations: { required: true }
+      label: "Source URL"
+      description: "Where the correct number is published: the source we cite for that result, or the vendor's own page for prices and specs."
+    validations:
+      required: true
   - type: textarea
     id: notes
     attributes:
-      label: Anything else
+      label: "Anything else"

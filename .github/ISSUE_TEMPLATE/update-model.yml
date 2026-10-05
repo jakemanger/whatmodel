@@ -1,37 +1,57 @@
-name: Update model information
-description: A model's release date, licence, size, context window, price or description is missing or out of date.
-labels: [data]
+name: "Update model information"
+description: "A model's release date, licence, size, context window, price or name is missing or out of date."
+labels: ["data", "update-model"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
+
+        **Format:** One `field: value` per line.
+
+        ```
+        released: 2026-03
+        context: 256k
+        price_in: 0.40
+        price_out: 1.60
+        ```
+
+        Fields: `released` (YYYY-MM), `licence` (e.g. apache-2.0), `params` and `active` (billions, e.g. 30.5B), `context` (e.g. 256k), `price_in` and `price_out` (USD per 1M tokens), `price` (e.g. `0.04`), `name`, `maker`, `open_weights` (yes or no). The model id is the end of its whatmodel.sh address, e.g. `qwen3-8b` for whatmodel.sh/model/qwen3-8b ([all ids](https://github.com/jakemanger/whatmodel/blob/main/data/models.json)).
   - type: input
     id: model
     attributes:
-      label: Model
-      description: The model id from its whatmodel.sh page, e.g. qwen3-8b
-    validations: { required: true }
+      label: "Model"
+      placeholder: "qwen3-8b"
+    validations:
+      required: true
   - type: dropdown
     id: what
     attributes:
-      label: What should change
+      label: "What should change"
       multiple: true
       options:
-        - Release date
-        - Licence
-        - Parameters
-        - Context window
-        - Price
-        - Name or maker
-        - Description
-        - Something else
-    validations: { required: true }
+        - "Release date"
+        - "Licence"
+        - "Parameters"
+        - "Context window"
+        - "Price"
+        - "Name or maker"
+        - "Description"
+        - "Something else"
+    validations:
+      required: true
   - type: textarea
     id: change
     attributes:
-      label: The correct information
-      description: For example "released 2026-03" or "context window is 256k tokens".
-    validations: { required: true }
+      label: "The correct information"
+      description: "One `field: value` per line."
+      placeholder: "context: 256k"
+    validations:
+      required: true
   - type: input
     id: source
     attributes:
-      label: Source URL
-      description: The maker's own page (model card, docs or pricing page) or an openly licensed source.
-    validations: { required: true }
+      label: "Source URL"
+      description: "The maker's own page (model card, docs or pricing page). A price must come from the provider that serves it."
+    validations:
+      required: true

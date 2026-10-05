@@ -1,44 +1,66 @@
-name: Add a place to run a model
-description: An API provider, download, runtime or app that runs a model we list.
-labels: [data]
+name: "Add a place to run a model"
+description: "An API provider, download, runtime or app that runs a model we list."
+labels: ["data", "new-provider"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        A maintainer can run the local contribution reviewer to prepare a report and proposed data changes. Nothing is merged automatically. Include exact source links so the measurements and licence can be reviewed.
+
+        **Details format:** One `field: value` per line.
+
+        ```
+        command: ollama run qwen3:8b
+        quant: q4_k_m
+        size: 5.2 GB
+        ```
+
+        - Downloads and runtimes: `command` (the exact command from the official docs), `quant` and `size`.
+        - APIs: `provider` (its name) and `price_in`/`price_out` (USD per 1M tokens) or `price` (e.g. `0.04`).
+        - The model id is the end of its whatmodel.sh address, e.g. `qwen3-8b` for whatmodel.sh/model/qwen3-8b ([all ids](https://github.com/jakemanger/whatmodel/blob/main/data/models.json)).
   - type: input
     id: model
     attributes:
-      label: Model
-      description: The model id from its whatmodel.sh page, e.g. qwen3-8b
-    validations: { required: true }
+      label: "Model"
+      placeholder: "qwen3-8b"
+    validations:
+      required: true
   - type: dropdown
     id: kind
     attributes:
-      label: What it is
+      label: "What it is"
       options:
-        - API provider
-        - Download (official or quantised weights)
-        - Runtime or app (llama.cpp, Ollama, MLX, stable-diffusion.cpp…)
-        - Hosted service
-    validations: { required: true }
+        - "API provider"
+        - "Download (official or quantised weights)"
+        - "Runtime or app (llama.cpp, Ollama, MLX, stable-diffusion.cpp…)"
+        - "Hosted service"
+    validations:
+      required: true
   - type: input
     id: link
     attributes:
-      label: Official page
-      description: The provider's own model page, pricing page or the runtime's docs for this model.
-    validations: { required: true }
+      label: "Official page"
+      description: "The provider's own model or pricing page, or the runtime's page for this model."
+    validations:
+      required: true
   - type: checkboxes
     id: platforms
     attributes:
-      label: Where it runs (for downloads and runtimes)
+      label: "Where it runs (for downloads and runtimes)"
       options:
-        - label: Apple Silicon
-        - label: NVIDIA
-        - label: AMD
-        - label: CPU only
+        - label: "Apple Silicon"
+        - label: "NVIDIA"
+        - label: "AMD"
+        - label: "CPU only"
   - type: textarea
     id: details
     attributes:
-      label: Price, size and command
-      description: Price per unit for APIs. For downloads, the file size and the exact command from the official docs.
+      label: "Details"
+      description: "One `field: value` per line."
+      placeholder: "command: ollama run qwen3:8b"
+    validations:
+      required: true
   - type: textarea
     id: notes
     attributes:
-      label: Anything else
+      label: "Anything else"
