@@ -145,18 +145,31 @@ export async function review(issue: Issue, repo: Repo, net?: Net): Promise<Revie
   } else if (kind === 'update-model') {
     if (!model) problem('Unknown model id.');
     else {
-      const keys = (Object.keys(MODEL_FIELDS) as ModelField[]).filter(k=>str(f[k]));
-      if (!keys.length) problem('Fill at least one field to update.');
-      const expected = editableFields(model).map(k=>MODEL_FIELDS[k]+': '+currentValue(model,k)).join('\n');
-      if (str(f.before) && str(f.before) !== expected) problem('Current information differs from the catalogue. Reopen the form from the model page.');
+      const keys = editableFields(model);
+      const readSnapshot = (text: string, field: string) => {
+        const values = new Map<ModelField, string>();
+        for (const line of text.split(/\r?\n/).map(l=>l.trim()).filter(Boolean)) {
+          const colon = line.indexOf(':');
+          const key = keys.find(k=>MODEL_FIELDS[k] === line.slice(0,colon).trim());
+          if (colon < 0 || !key || values.has(key) || !line.slice(colon+1).trim()) {
+            problem('Keep each original field name once, followed by its value.',field); continue;
+          }
+          values.set(key,line.slice(colon+1).trim());
+        }
+        if (keys.some(k=>!values.has(k))) problem('Keep all original lines; edit their values instead of deleting lines.',field);
+        return values;
+      };
+      const before = readSnapshot(str(f.before),'Current information');
+      const after = readSnapshot(str(f.after),'Updated information');
+      if (keys.some(k=>before.get(k) !== currentValue(model,k))) problem('Current information differs from the catalogue. Reopen the form from the model page.');
       let changed = structuredClone(model);
       for (const key of keys) {
-        const value=str(f[key]);
-        if (/[\r\n]/.test(value)) { problem('Enter one value per field.'); continue; }
+        const value=after.get(key);
+        if (value === undefined || value === before.get(key)) continue;
         const typed=key==='context' && /^\d+(\.\d+)?$/.test(value) ? value+'k' : value;
         changed=update(changed,key+': '+typed);
       }
-      propose('models.json',model.id,model,changed,'Update the filled fields from the supplied reference');
+      propose('models.json',model.id,model,changed,'Update the changed values from the supplied reference');
     }
   } else if (kind === 'missing-model') {
     const name = str(f.model), id = slug(name);

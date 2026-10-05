@@ -23,7 +23,6 @@ export type Field = {
 };
 export type Form = { kind: Kind; name: string; description: string; labels: string[]; intro: string; fields: Field[] };
 
-import { MODEL_FIELDS } from "../../lib/contribution-fields.ts";
 export const REPO = "https://github.com/jakemanger/whatmodel";
 export const CATEGORIES = ["Text (LLM)", "Image", "Video", "Text-to-speech", "Speech-to-text"];
 export const BY = ["The source's authors, on models they didn't make", "The model's own makers", "Not sure"];
@@ -33,12 +32,12 @@ const input = (id: string, label: string, required = false, description?: string
 const notes: Field = {id:"notes",label:"Notes (optional)",type:"textarea",description:"Table/page, evaluation settings, or anything needed to interpret the reference."};
 const model = input("model","Model",true,"The model id from its page, for example qwen3-8b. Prefilled when opened from the site.");
 const source = input("source","Reference URL",true,"The paper, model card or provider page that supports the proposed value.");
-const changes = [model,
-  {id:"before",label:"Current information",type:"textarea",description:"Prefilled by the model page for comparison. Leave unchanged."} as Field,
-  ...Object.entries(MODEL_FIELDS).map(([id,label])=>input(id,"New "+label[0].toLowerCase()+label.slice(1)+" (optional)",false,"Leave blank to keep the current value.")),
+const changes: Field[] = [model,
+  {id:"before",label:"Current information",type:"textarea",required:true,description:"Prefilled for comparison. Leave this copy unchanged."},
+  {id:"after",label:"Updated information",type:"textarea",required:true,description:"The same information is prefilled here. Edit the values you want to change; keep the field names and other lines."},
   source, notes];
 export const FORMS: Form[] = [
-  {kind:"update-model",name:"Update model information",description:"Update any model facts in one form; leave unchanged fields blank.",labels:["data","update-model"],intro,fields:changes},
+  {kind:"update-model",name:"Update model information",description:"Edit the prefilled information and add a supporting reference.",labels:["data","update-model"],intro:"Edit the Updated information below and add a reference. The Current information stays as the before copy for comparison.",fields:changes},
   {kind:"wrong-number",name:"Correct a benchmark score",description:"Correct a published test result we already list.",labels:["data","wrong-number"],intro,fields:[
     model,input("benchmark","Benchmark",true,"Exact benchmark id shown on the site."),
     input("before","Current score"),input("score","Correct score",true,"Include % for percentages, e.g. 71.2%. Otherwise use the source's numeric scale."),

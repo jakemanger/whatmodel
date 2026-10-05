@@ -27,7 +27,7 @@ The [sources list](/method#sources) shows every source in use and its licence. L
 
 ## Fix a number or add a model
 
-On a model page, choose **Update model information**. One form includes the current information; fill only the fields you want to change and add a reference link. Leave everything else blank. Use **[correct]** beside a benchmark result to prefill that score's model, test and source. A [missing model](https://github.com/jakemanger/whatmodel/issues/new?template=missing-model.yml) needs only its name and official link. Prices and context windows can come from the provider's own pricing page, with the date you checked it.
+On a model page, choose **Update model information**. Both **Current information** and **Updated information** are prefilled. Edit the values in Updated information and add a reference link; leave the current copy unchanged. Use **[correct]** beside a benchmark result to prefill that score's model, test and source. A [missing model](https://github.com/jakemanger/whatmodel/issues/new?template=missing-model.yml) needs only its name and official link. Prices and context windows can come from the provider's own pricing page, with the date you checked it.
 
 ## Add or fix a model's icon
 

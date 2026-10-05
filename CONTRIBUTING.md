@@ -6,8 +6,8 @@ speed. You don't need to write code for any of them.
 ## Report something
 
 On a model page, choose **Update model information** to open one form. The
-model and current information are prefilled. Fill only the fields you want to change, leave the rest
-blank, and add a reference URL supporting your changes.
+model and both information boxes are prefilled. Leave **Current information** unchanged, edit the
+values in **Updated information**, and add a reference URL supporting your changes.
 For a measurement, use **Add a test result** (model, benchmark, score, reference) or **[correct]**
 beside an existing result. Other details are optional. A missing model needs just its name and
 an official link. You can also use **Edit data on GitHub** to propose a file edit through a fork
