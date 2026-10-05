@@ -6,6 +6,8 @@
 
 BreezeBlue · released 2026-08
 
+[Model and usage documentation](https://huggingface.co/BreezeBlue/Breeze-TTS-2)
+
 No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it

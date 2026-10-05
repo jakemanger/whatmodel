@@ -6,6 +6,8 @@
 
 NVIDIA · released 2026-03
 
+[Model and usage documentation](https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

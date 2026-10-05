@@ -6,6 +6,8 @@
 
 Ant Group
 
+[Model and usage documentation](https://huggingface.co/inclusionAI/LLaDA-Image-Turbo)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

@@ -6,6 +6,8 @@
 
 Institute of Foundation Models (MBZUAI) · released 2026-09
 
+[Model and usage documentation](https://huggingface.co/IFM/K2-Horizon-7B)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

@@ -6,6 +6,8 @@
 
 Mistral · released 2025-12
 
+[Model and usage documentation](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

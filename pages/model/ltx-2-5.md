@@ -6,6 +6,8 @@
 
 Lightricks · released 2026-08
 
+[Model and usage documentation](https://huggingface.co/Lightricks/LTX-2.5)
+
 No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it

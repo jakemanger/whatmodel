@@ -6,6 +6,8 @@
 
 NVIDIA · released 2025-08
 
+[Model and usage documentation](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

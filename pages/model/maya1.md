@@ -6,6 +6,8 @@
 
 Maya Research · released 2025-11
 
+[Model and usage documentation](https://huggingface.co/maya-research/maya1)
+
 No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it

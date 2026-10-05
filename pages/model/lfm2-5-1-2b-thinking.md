@@ -6,6 +6,8 @@
 
 Liquid AI · released 2026-01
 
+[Model and usage documentation](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
+
 Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
 
 <pre>

@@ -6,6 +6,8 @@
 
 Cohere · released 2026-05
 
+[Model and usage documentation](https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16)
+
 No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it

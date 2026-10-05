@@ -6,6 +6,8 @@
 
 LG AI Research · released 2026-04
 
+[Model and usage documentation](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B)
+
 No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
