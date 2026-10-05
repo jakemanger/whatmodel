@@ -1,0 +1,37 @@
+name: Update model information
+description: A model's release date, licence, size, context window, price or description is missing or out of date.
+labels: [data]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: The model id from its whatmodel.sh page, e.g. qwen3-8b
+    validations: { required: true }
+  - type: dropdown
+    id: what
+    attributes:
+      label: What should change
+      multiple: true
+      options:
+        - Release date
+        - Licence
+        - Parameters
+        - Context window
+        - Price
+        - Name or maker
+        - Description
+        - Something else
+    validations: { required: true }
+  - type: textarea
+    id: change
+    attributes:
+      label: The correct information
+      description: For example "released 2026-03" or "context window is 256k tokens".
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: The maker's own page (model card, docs or pricing page) or an openly licensed source.
+    validations: { required: true }

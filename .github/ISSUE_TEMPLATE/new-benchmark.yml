@@ -1,0 +1,36 @@
+name: Propose a benchmark or results source
+description: A benchmark, leaderboard or dataset whose results we could add.
+labels: [data, source]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Benchmark or source name
+    validations: { required: true }
+  - type: input
+    id: link
+    attributes:
+      label: Link to the results
+    validations: { required: true }
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Licence of the results
+      description: The licence has to cover the numbers themselves, not just the code.
+      options:
+        - CC BY
+        - CC BY-SA
+        - CC0
+        - Apache-2.0
+        - MIT
+        - Other or not sure
+    validations: { required: true }
+  - type: input
+    id: licence_link
+    attributes:
+      label: Link to the licence or terms
+  - type: textarea
+    id: measures
+    attributes:
+      label: What it measures and which models it covers
+    validations: { required: true }

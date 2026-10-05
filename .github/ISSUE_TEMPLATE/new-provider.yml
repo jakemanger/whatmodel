@@ -1,0 +1,44 @@
+name: Add a place to run a model
+description: An API provider, download, runtime or app that runs a model we list.
+labels: [data]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: The model id from its whatmodel.sh page, e.g. qwen3-8b
+    validations: { required: true }
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What it is
+      options:
+        - API provider
+        - Download (official or quantised weights)
+        - Runtime or app (llama.cpp, Ollama, MLX, stable-diffusion.cpp…)
+        - Hosted service
+    validations: { required: true }
+  - type: input
+    id: link
+    attributes:
+      label: Official page
+      description: The provider's own model page, pricing page or the runtime's docs for this model.
+    validations: { required: true }
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Where it runs (for downloads and runtimes)
+      options:
+        - label: Apple Silicon
+        - label: NVIDIA
+        - label: AMD
+        - label: CPU only
+  - type: textarea
+    id: details
+    attributes:
+      label: Price, size and command
+      description: Price per unit for APIs. For downloads, the file size and the exact command from the official docs.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
