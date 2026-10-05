@@ -4,7 +4,7 @@
 
 # HunyuanImage 3.0-Instruct
 
-Tencent · tencent-hunyuan-community
+Tencent · released 2026-01 · 80B params · tencent-hunyuan-community
 
 **score 64.9** ±3.5 · #20 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # Mage-Flow
 
-Microsoft
+Microsoft · 4B params
 
 **score 68.3** ±16.6 · #1 of 3 · from 9 benchmark results across 1 source
 

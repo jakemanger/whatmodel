@@ -4,7 +4,7 @@
 
 # BAGEL
 
-ByteDance Seed · Apache 2.0
+ByteDance Seed · released 2025-05 · 14B params · Apache 2.0
 
 **score 41.4** ±1.1 · #86 of 114 · from 12 benchmark results across 10 sources
 

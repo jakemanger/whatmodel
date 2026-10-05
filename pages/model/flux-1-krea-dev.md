@@ -4,7 +4,7 @@
 
 # FLUX.1 Krea \[dev\]
 
-Black Forest Labs / Krea
+Black Forest Labs / Krea · released 2025-07
 
 **score 47.6** ±4.2 · #79 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

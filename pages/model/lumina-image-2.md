@@ -4,7 +4,7 @@
 
 # Lumina-Image 2.0
 
-Alpha-VLLM (Shanghai AI Lab)
+Alpha-VLLM (Shanghai AI Lab) · released 2025-01 · 2.6B params · apache-2.0
 
 **score 42.7** ±4.1 · #83 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

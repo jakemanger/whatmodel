@@ -4,7 +4,7 @@
 
 # Wan 2.5 Image-to-Image Preview
 
-Alibaba · closed weights
+Alibaba · released 2025-09 · closed weights
 
 **score 53.1** ±3.5 · #66 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

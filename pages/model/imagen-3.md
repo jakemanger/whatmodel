@@ -4,7 +4,7 @@
 
 # Imagen 3 (imagen-3.0-generate-002)
 
-Google · closed weights
+Google · released 2025-01 · closed weights
 
 **score 53.6** ±1.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

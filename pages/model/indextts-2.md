@@ -4,7 +4,7 @@
 
 # IndexTTS-2
 
-IndexTeam (bilibili)
+IndexTeam (bilibili) · released 2025-09 · bilibili-model-use-license
 
 **score 57.2** ±1.5 · #35 of 92 · from 17 benchmark results across 7 sources
 

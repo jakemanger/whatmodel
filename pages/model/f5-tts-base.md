@@ -4,7 +4,7 @@
 
 # F5-TTS Base (v0)
 
-SWivid (SJTU X-LANCE) · released 2024-10 · cc-by-nc-4.0
+SWivid (SJTU X-LANCE) · released 2024-10 · 0.3358B params · cc-by-nc-4.0
 
 **score 42.8** ±1.8 · #65 of 92 · from 10 benchmark results across 3 sources
 

@@ -4,7 +4,7 @@
 
 # HiDream-I1-Full
 
-HiDream
+HiDream · released 2025-04 · 17B params · mit
 
 **score 46.5** ±2.3 · #80 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

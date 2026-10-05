@@ -4,7 +4,7 @@
 
 # Show-o2 1.5B-HQ
 
-Show Lab, NUS
+Show Lab, NUS · apache-2.0
 
 **score 39.2** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

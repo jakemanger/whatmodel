@@ -4,7 +4,7 @@
 
 # GPT-4o mini TTS
 
-OpenAI · closed weights
+OpenAI · released 2025-03 · closed weights
 
 **score 58.6** ±1.9 · comparison only: no current run option verified · from 12 benchmark results across 7 sources
 

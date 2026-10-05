@@ -4,7 +4,7 @@
 
 # MAI-Image-2
 
-Microsoft AI · closed weights
+Microsoft AI · released 2026-03 · closed weights
 
 **score 65.5** ±1.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

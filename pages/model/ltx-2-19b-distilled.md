@@ -4,7 +4,7 @@
 
 # LTX-2 19B Distilled
 
-Lightricks · released 2026-01
+Lightricks · released 2026-01 · 19B params · ltx-2-community
 
 **score 45.6** ±7.2 · #50 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

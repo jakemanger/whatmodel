@@ -4,7 +4,7 @@
 
 # Gemini 3.1 Flash TTS Preview
 
-Google · closed weights
+Google · released 2026-04 · closed weights
 
 **score 69.6** ±1.8 · #2 of 92 · from 12 benchmark results across 6 sources
 

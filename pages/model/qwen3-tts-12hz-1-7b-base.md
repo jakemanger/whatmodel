@@ -4,7 +4,7 @@
 
 # Qwen3-TTS 12Hz 1.7B Base
 
-Alibaba (Qwen) · 1.7B params · apache-2.0
+Alibaba (Qwen) · released 2026-01 · 1.7B params · apache-2.0
 
 **score 62.1** ±1.1 · #23 of 92 · from 27 benchmark results across 8 sources
 

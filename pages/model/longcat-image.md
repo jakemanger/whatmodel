@@ -4,7 +4,7 @@
 
 # LongCat-Image
 
-Meituan
+Meituan · released 2025-12 · 6B params · apache-2.0
 
 **score 51.3** ±4.0 · #70 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

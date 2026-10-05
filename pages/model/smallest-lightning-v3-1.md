@@ -4,7 +4,7 @@
 
 # Lightning v3.1
 
-Smallest.ai · proprietary
+Smallest.ai · released 2026-03 · proprietary
 
 **score 56.1** ±2.8 · #36 of 92 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

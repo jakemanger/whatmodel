@@ -4,7 +4,7 @@
 
 # Sonic 3.5
 
-Cartesia · proprietary
+Cartesia · released 2026-05 · proprietary
 
 **score 62.8** ±1.7 · comparison only: no current run option verified · from 8 benchmark results across 3 sources
 

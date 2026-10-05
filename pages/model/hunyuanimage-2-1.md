@@ -4,7 +4,7 @@
 
 # HunyuanImage 2.1
 
-Tencent
+Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
 **score 55.3** ±5.1 · #60 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

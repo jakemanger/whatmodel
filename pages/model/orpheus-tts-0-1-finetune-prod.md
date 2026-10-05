@@ -4,7 +4,7 @@
 
 # Orpheus TTS 3B 0.1 (finetune-prod)
 
-Canopy Labs · released 2025-03
+Canopy Labs · released 2025-03 · 3B params
 
 **score 46.7** ±5.5 · #60 of 92 · from 3 benchmark results across 2 sources
 

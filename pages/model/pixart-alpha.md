@@ -4,7 +4,7 @@
 
 # PixArt-α (PixArt-XL-2-1024-MS)
 
-PixArt (Huawei Noah's Ark Lab et al.)
+PixArt (Huawei Noah's Ark Lab et al.) · released 2023-11 · 0.6B params · openrail++
 
 **score 37.9** ±2.3 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 

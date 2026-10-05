@@ -4,7 +4,7 @@
 
 # Recraft V4.1 Utility Pro
 
-Recraft · closed weights
+Recraft · released 2026-05 · closed weights
 
 **score 64.1** ±1.9 · #22 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # Wan 2.7 Image
 
-Alibaba · closed weights
+Alibaba · released 2026-04 · closed weights
 
 **score 60.1** ±1.5 · #37 of 114 · from 3 benchmark results across 2 sources
 

@@ -4,7 +4,7 @@
 
 # UniWorld-V1
 
-PKU-YuanGroup
+PKU-YuanGroup · released 2025-06
 
 **score 39.5** ±2.5 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 

@@ -4,7 +4,7 @@
 
 # ChatGLM2-6B
 
-Zhipu AI (THUDM) · released 2023-06 · 6B params
+Zhipu AI (THUDM) · released 2023-06 · 6B params · chatglm2-6b-license
 
 **score 17.4** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

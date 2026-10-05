@@ -4,7 +4,7 @@
 
 # Kandinsky 5.0 T2V Lite
 
-Sber · MIT
+Sber · released 2025-09 · 2B params · MIT
 
 **score 46.8** ±2.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # HappyHorse 1.1
 
-Alibaba · closed weights
+Alibaba · released 2026-06 · closed weights
 
 **score 77.0** ±4.8 · #7 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

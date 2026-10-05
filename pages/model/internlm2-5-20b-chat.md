@@ -4,7 +4,7 @@
 
 # InternLM2.5 20B Chat
 
-Shanghai AI Laboratory (InternLM) · 19.9B params
+Shanghai AI Laboratory (InternLM) · released 2024-08 · 19.9B params · other
 
 **score 37.5** ±1.8 · #313 of 404 · from 3 benchmark results across 3 sources
 

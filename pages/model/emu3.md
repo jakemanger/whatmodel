@@ -4,7 +4,7 @@
 
 # Emu3
 
-BAAI
+BAAI · released 2024-09 · 8B params · apache-2.0
 
 **score 35.9** ±2.1 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 

@@ -4,7 +4,7 @@
 
 # Cosmos-1.0-Diffusion-7B-Text2World
 
-NVIDIA
+NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
 **score 45.0** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # ESPnet E-Branchformer (no LM)
 
-ESPnet · released 2023-01 · cc-by-4.0
+ESPnet · released 2023-01 · 0.14892B params · cc-by-4.0
 
 **score 56.8** ±22.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

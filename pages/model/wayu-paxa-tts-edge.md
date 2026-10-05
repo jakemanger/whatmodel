@@ -4,7 +4,7 @@
 
 # Wayu-Paxa-TTS-Edge
 
-Wayu Research / Paxa Labs · released 2026-08 · cc-by-nc-4.0
+Wayu Research / Paxa Labs · released 2026-08 · 0.082B params · cc-by-nc-4.0
 
 **score 63.7** ±3.9 · #18 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

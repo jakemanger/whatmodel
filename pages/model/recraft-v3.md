@@ -4,7 +4,7 @@
 
 # Recraft V3
 
-Recraft · closed weights
+Recraft · released 2024-10 · closed weights
 
 **score 50.1** ±1.9 · #74 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

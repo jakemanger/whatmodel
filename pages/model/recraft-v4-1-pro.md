@@ -4,7 +4,7 @@
 
 # Recraft V4.1 Pro
 
-Recraft · closed weights
+Recraft · released 2026-05 · closed weights
 
 **score 60.7** ±1.9 · #35 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # Show-o (show-o-demo-512)
 
-Show Lab, NUS
+Show Lab, NUS · apache-2.0
 
 **score 35.8** ±3.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

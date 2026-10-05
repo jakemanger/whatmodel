@@ -4,7 +4,7 @@
 
 # Open-Sora 2.0
 
-HPC-AI Tech
+HPC-AI Tech · released 2025-03 · 11B params · apache-2.0
 
 **score 42.6** ±4.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

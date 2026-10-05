@@ -4,7 +4,7 @@
 
 # Reve Edit Fast
 
-Reve · closed weights
+Reve · released 2025-11 · closed weights
 
 **score 54.7** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

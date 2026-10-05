@@ -4,7 +4,7 @@
 
 # E2 TTS Base (F5-TTS reproduction)
 
-SWivid (SJTU X-LANCE) · released 2024-10 · cc-by-nc-4.0
+SWivid (SJTU X-LANCE) · released 2024-10 · 0.3332B params · cc-by-nc-4.0
 
 **score 45.5** ±1.4 · #62 of 92 · from 20 benchmark results across 5 sources
 

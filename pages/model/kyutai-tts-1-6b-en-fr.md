@@ -4,7 +4,7 @@
 
 # Kyutai TTS 1.6B en/fr
 
-Kyutai
+Kyutai · released 2025-07 · 1.8B params · cc-by-4.0
 
 **score 47.3** ±6.4 · #59 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

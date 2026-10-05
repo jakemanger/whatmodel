@@ -4,7 +4,7 @@
 
 # Eleven Turbo v2
 
-ElevenLabs · proprietary
+ElevenLabs · released 2023-11 · proprietary
 
 **score 64.0** ±2.9 · #16 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

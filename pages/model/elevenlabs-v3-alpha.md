@@ -4,7 +4,7 @@
 
 # ElevenLabs v3 Alpha
 
-ElevenLabs · closed weights
+ElevenLabs · released 2025-06 · closed weights
 
 **score 53.1** ±9.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

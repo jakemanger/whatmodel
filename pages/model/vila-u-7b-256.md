@@ -4,7 +4,7 @@
 
 # VILA-U 7B (256px)
 
-MIT Han Lab / NVIDIA
+MIT Han Lab / NVIDIA · released 2024-10 · mit
 
 **score 30.3** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

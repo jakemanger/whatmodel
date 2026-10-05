@@ -4,7 +4,7 @@
 
 # XTTS v2
 
-Coqui · released 2023-11 · coqui-public-model-license
+Coqui · released 2023-11 · 0.482B params · coqui-public-model-license
 
 **score 31.7** ±1.7 · #79 of 92 · from 26 benchmark results across 12 sources
 

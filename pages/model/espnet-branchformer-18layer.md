@@ -4,7 +4,7 @@
 
 # ESPnet Branchformer 18-layer (70 epochs, no LM)
 
-ESPnet · released 2022-06 · cc-by-4.0
+ESPnet · released 2022-06 · 0.11688B params · cc-by-4.0
 
 **score 47.8** ±22.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

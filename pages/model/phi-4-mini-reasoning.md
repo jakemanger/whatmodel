@@ -4,7 +4,7 @@
 
 # Phi-4-mini-reasoning 3.8B
 
-Microsoft · released 2025-04 · mit
+Microsoft · released 2025-04 · 3.8B params · mit
 
 **score 33.2** ±5.8 · #355 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

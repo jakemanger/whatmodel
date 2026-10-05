@@ -4,7 +4,7 @@
 
 # Sonar Pro
 
-Perplexity · closed weights
+Perplexity · released 2025-01 · closed weights
 
 **score 61.2** ±4.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

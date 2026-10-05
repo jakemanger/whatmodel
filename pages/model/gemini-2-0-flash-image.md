@@ -4,7 +4,7 @@
 
 # Gemini 2.0 Flash Image Generation (preview)
 
-Google · closed weights
+Google · released 2025-05 · closed weights
 
 **score 45.2** ±1.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

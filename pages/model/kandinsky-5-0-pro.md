@@ -4,7 +4,7 @@
 
 # Kandinsky 5.0 Pro
 
-Sber
+Sber · released 2025-11 · 19B params · mit
 
 **score 52.1** ±2.2 · #38 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

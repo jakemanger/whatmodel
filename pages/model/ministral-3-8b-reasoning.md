@@ -4,7 +4,7 @@
 
 # Ministral 3 8B Reasoning 2512
 
-Mistral · released 2025-12 · apache-2.0
+Mistral · released 2025-12 · 8.8B params · apache-2.0
 
 **score 46.6** ±3.9 · #236 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

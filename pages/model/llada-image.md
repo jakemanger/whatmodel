@@ -4,7 +4,7 @@
 
 # LLaDA-Image
 
-Ant Group
+Ant Group · released 2026-09
 
 [Model and usage documentation](https://huggingface.co/inclusionAI/LLaDA-Image)
 

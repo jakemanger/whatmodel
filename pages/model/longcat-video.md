@@ -4,7 +4,7 @@
 
 # LongCat-Video
 
-Meituan · released 2025-10
+Meituan · released 2025-10 · 13.6B params · mit
 
 **score 48.6** ±2.8 · #46 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

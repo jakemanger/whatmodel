@@ -4,7 +4,7 @@
 
 # OmniGen2
 
-BAAI
+BAAI · released 2025-06 · 4B params · apache-2.0
 
 **score 40.6** ±2.1 · #88 of 114 · from 5 benchmark results across 4 sources
 

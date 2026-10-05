@@ -4,7 +4,7 @@
 
 # Imagen 4
 
-Google · closed weights
+Google · released 2025-05 · closed weights
 
 **score 60.1** ±1.8 · #36 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

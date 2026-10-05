@@ -4,7 +4,7 @@
 
 # MetaVoice 1B v0.1
 
-MetaVoice
+MetaVoice · 1.2B params · apache-2.0
 
 **score 16.9** ±2.5 · #91 of 92 · from 9 benchmark results across 5 sources
 

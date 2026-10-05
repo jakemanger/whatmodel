@@ -4,7 +4,7 @@
 
 # Guanaco 33B
 
-University of Washington · released 2023-05 · 33B params
+University of Washington · released 2023-05 · 33B params · llama-1-noncommercial-research
 
 **score 29.6** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

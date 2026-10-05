@@ -4,7 +4,7 @@
 
 # Yi-Lightning
 
-01.AI · closed weights
+01.AI · released 2024-10 · closed weights
 
 **score 52.7** ±1.5 · #184 of 404 · from 3 benchmark results across 3 sources
 

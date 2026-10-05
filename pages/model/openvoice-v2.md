@@ -4,7 +4,7 @@
 
 # OpenVoice V2
 
-MyShell
+MyShell · released 2024-04 · mit
 
 **score 21.5** ±2.5 · #87 of 92 · from 6 benchmark results across 4 sources
 

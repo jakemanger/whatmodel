@@ -4,7 +4,7 @@
 
 # FireRedTTS (v1)
 
-FireRedTeam (Xiaohongshu) · released 2024-09 · apache-2.0
+FireRedTeam (Xiaohongshu) · released 2024-09 · 0.4B params · apache-2.0
 
 **score 32.9** ±2.3 · #76 of 92 · from 9 benchmark results across 3 sources
 

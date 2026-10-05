@@ -4,7 +4,7 @@
 
 # Reve 2.0
 
-Reve · proprietary
+Reve · released 2026-06 · proprietary
 
 **score 73.1** ±1.7 · #8 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

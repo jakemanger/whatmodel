@@ -4,7 +4,7 @@
 
 # BLIP3o-NEXT-GRPO-Text-3B
 
-Salesforce Research
+Salesforce Research · 3B params · apache-2.0
 
 **score 41.4** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

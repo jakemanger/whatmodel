@@ -4,7 +4,7 @@
 
 # Higgs Audio V2
 
-Boson AI
+Boson AI · released 2025-07 · 5.8B params · boson-higgs-audio-2-community
 
 **score 53.2** ±3.0 · #44 of 92 · from 6 benchmark results across 3 sources
 

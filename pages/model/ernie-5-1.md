@@ -4,7 +4,7 @@
 
 # ERNIE 5.1
 
-Baidu · closed weights
+Baidu · released 2026-05 · closed weights
 
 **score 69.9** ±2.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

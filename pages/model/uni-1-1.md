@@ -4,7 +4,7 @@
 
 # Uni-1.1
 
-Luma AI · closed weights
+Luma AI · released 2026-05 · closed weights
 
 **score 65.8** ±1.7 · #18 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

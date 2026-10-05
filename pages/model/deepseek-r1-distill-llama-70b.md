@@ -4,7 +4,7 @@
 
 # DeepSeek R1 Distill Llama 70B
 
-DeepSeek · released 2025-01 · MIT; underlying Llama 3.3 licence applies to weights
+DeepSeek · released 2025-01 · 70B params · MIT; underlying Llama 3.3 licence applies to weights
 
 **score 58.4** ±1.4 · #146 of 404 · from 9 benchmark results across 4 sources
 

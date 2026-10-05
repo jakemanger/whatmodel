@@ -4,7 +4,7 @@
 
 # ZONOS2 8B
 
-Zyphra · 8B params (0.9B active) · apache-2.0
+Zyphra · released 2026-06 · 8B params (0.9B active) · apache-2.0
 
 **score 56.0** ±2.3 · #37 of 92 · from 5 benchmark results across 2 sources
 

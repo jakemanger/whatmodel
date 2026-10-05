@@ -4,7 +4,7 @@
 
 # LTX-2.3
 
-Lightricks · released 2026-03
+Lightricks · released 2026-03 · 22B params
 
 **score 31.3** ±2.8 · #70 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

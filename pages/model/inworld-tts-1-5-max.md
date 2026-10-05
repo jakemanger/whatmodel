@@ -4,7 +4,7 @@
 
 # Inworld TTS-1.5 Max
 
-Inworld · proprietary
+Inworld · released 2026-01 · proprietary
 
 **score 64.9** ±2.9 · #12 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

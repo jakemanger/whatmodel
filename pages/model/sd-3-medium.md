@@ -4,7 +4,7 @@
 
 # Stable Diffusion 3 Medium
 
-Stability AI
+Stability AI · 2B params
 
 **score 39.9** ±2.2 · #89 of 114 · from 3 benchmark results across 3 sources
 

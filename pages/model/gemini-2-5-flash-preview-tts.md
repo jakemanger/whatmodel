@@ -4,7 +4,7 @@
 
 # Gemini 2.5 Flash Preview TTS
 
-Google · closed weights
+Google · released 2025-05 · closed weights
 
 **score 73.2** ±2.7 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 

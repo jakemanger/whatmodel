@@ -4,7 +4,7 @@
 
 # Janus-1.3B
 
-DeepSeek
+DeepSeek · deepseek
 
 **score 24.2** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

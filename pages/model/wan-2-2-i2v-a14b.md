@@ -4,7 +4,7 @@
 
 # Wan 2.2 I2V A14B
 
-Alibaba
+Alibaba · released 2025-07 · 27B params · apache-2.0
 
 **score 51.4** ±2.7 · #40 of 76 · from 3 benchmark results across 3 sources
 

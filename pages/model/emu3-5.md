@@ -4,7 +4,7 @@
 
 # Emu3.5
 
-BAAI
+BAAI · released 2025-10 · 34.1B params · apache-2.0
 
 **score 57.0** ±4.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

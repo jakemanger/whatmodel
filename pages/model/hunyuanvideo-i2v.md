@@ -4,7 +4,7 @@
 
 # HunyuanVideo-I2V
 
-Tencent
+Tencent · released 2025-03 · tencent-hunyuan-community
 
 **score 43.7** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # ESPnet Conformer + S4 decoder (no LM)
 
-ESPnet · released 2022-12 · cc-by-4.0
+ESPnet · released 2022-12 · 0.1132B params · cc-by-4.0
 
 **score 50.9** ±22.0 · #4 of 6 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

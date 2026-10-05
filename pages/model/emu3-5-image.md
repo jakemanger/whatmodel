@@ -4,7 +4,7 @@
 
 # Emu3.5-Image
 
-BAAI
+BAAI · apache-2.0
 
 **score 60.6** ±4.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

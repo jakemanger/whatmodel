@@ -8451,7 +8451,10 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/coqui/XTTS-v2"
+    "model_repo": "https://huggingface.co/coqui/XTTS-v2",
+    "params_b": 0.482,
+    "params_b_source": "https://arxiv.org/html/2406.04904v1",
+    "params_note": "XTTS paper by Coqui (Casanova et al.), which states \"XTTS model and checkpoints are publicly available at ... https://huggingface.co/coqui/XTTS-v2/tree/v2.0.2\". Value is OUR SUM of the three maker-stated components (13M + 443M + 26M = 482M). The conditioning encoder (Perceiver) and the H/ASP speaker encoder are not given separate counts. If a single stated figure is preferred, the GPT-2 LM alone is 0.443. The paper links tag v2.0.2; the catalogue main revision is the later v2.0.3-era card, same architecture as far as the card says."
   },
   {
     "id": "magpie-tts-multilingual-357m",
@@ -10412,7 +10415,10 @@
     },
     "context_k": 131.072,
     "context_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json",
-    "context_note": "DeepSeek official configuration for DeepSeek-R1-Distill-Llama-70B (pinned commit): max_position_embeddings 131072 (llama3 rope scaling, factor 8 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length for the distilled models (its table gives 128K only for DeepSeek-R1/R1-Zero), reports a 32,768-token maximum generation length, and its vLLM example uses --max-model-len 32768. Observed 2026-09-25."
+    "context_note": "DeepSeek official configuration for DeepSeek-R1-Distill-Llama-70B (pinned commit): max_position_embeddings 131072 (llama3 rope scaling, factor 8 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length for the distilled models (its table gives 128K only for DeepSeek-R1/R1-Zero), reports a 32,768-token maximum generation length, and its vLLM example uses --max-model-len 32768. Observed 2026-09-25.",
+    "params_b": 70,
+    "params_b_source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/README.md",
+    "params_note": "Maker states '70B' (based on Llama-3.3-70B-Instruct). The official repo's safetensors header total (HF API safetensors.total, sha b1c0b44) is 70,553,706,496 = 70.55B; sibling catalogue entries (e.g. deepseek-r1-distill-llama-8b = 8.03) use the exact header totals, so 70.55 may be preferred for consistency. Dense model: active_b = params_b."
   },
   {
     "name": "Phi-4-mini-reasoning 3.8B",
@@ -10433,7 +10439,10 @@
       "price_out": 0.3,
       "price_source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft",
       "price_note": "USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini-reasoning' (GA), 128K context: input $0.075, output $0.30, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25."
-    }
+    },
+    "params_b": 3.8,
+    "params_b_source": "https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md",
+    "params_note": "Also: \"the 3.8B parameters Phi-4-mini-reasoning model\". Repo safetensors header total 3,836,021,760 (HF API); sibling phi-4-mini entry uses 3.84. Dense: active_b = params_b."
   },
   {
     "id": "openvoice-v2",
@@ -10461,7 +10470,11 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/myshell-ai/OpenVoiceV2"
+    "model_repo": "https://huggingface.co/myshell-ai/OpenVoiceV2",
+    "released": "2024-04",
+    "released_source": "https://huggingface.co/myshell-ai/OpenVoiceV2/blob/f36e7edfe1684461a8343844af60babc2efbb727/README.md",
+    "license": "mit",
+    "license_source": "https://huggingface.co/myshell-ai/OpenVoiceV2/blob/f36e7edfe1684461a8343844af60babc2efbb727/README.md"
   },
   {
     "id": "metavoice-1b-v0-1",
@@ -10489,7 +10502,12 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/metavoiceio/metavoice-1B-v0.1"
+    "model_repo": "https://huggingface.co/metavoiceio/metavoice-1B-v0.1",
+    "params_b": 1.2,
+    "params_b_source": "https://huggingface.co/metavoiceio/metavoice-1B-v0.1/blob/d7237c5cb970da187623738f2957b338f3b0889a/README.md",
+    "params_note": "Maker's figure for the base model; card also mentions a separate ~10Mn non-causal transformer, and uses multi-band diffusion + DeepFilterNet post-processing; whether 1.2B includes those is not stated.",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/metavoiceio/metavoice-1B-v0.1/blob/d7237c5cb970da187623738f2957b338f3b0889a/README.md"
   },
   {
     "id": "tortoise-tts-v2",
@@ -10537,7 +10555,11 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/jbetker/tortoise-tts-v2"
+    "model_repo": "https://huggingface.co/jbetker/tortoise-tts-v2",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/jbetker/tortoise-tts-v2/blob/b20a372926b4d6132bcec0a7087f5dd14c8d9e10/LICENSE",
+    "released": "2022-04",
+    "released_source": "https://nonint.com/2022/04/25/tortoise-architectural-design-doc/"
   },
   {
     "id": "gemini-2-5-flash-preview-tts",
@@ -10550,7 +10572,9 @@
     "identity_sources": [
       "https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md",
       "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-flash-preview-tts"
-    ]
+    ],
+    "released": "2025-05",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog"
   },
   {
     "id": "gemini-2-5-pro-preview-tts",
@@ -10563,7 +10587,9 @@
     "identity_sources": [
       "https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md",
       "https://ai.google.dev/gemini-api/docs/models#gemini-2.5-pro-preview-tts"
-    ]
+    ],
+    "released": "2025-05",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog"
   },
   {
     "id": "higgs-audio-v2",
@@ -10601,7 +10627,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/bosonai/higgs-tts-2-3b-base"
+    "model_repo": "https://huggingface.co/bosonai/higgs-tts-2-3b-base",
+    "released": "2025-07",
+    "released_source": "https://www.boson.ai/blog/higgs-tts-2",
+    "params_b": 5.8,
+    "params_b_source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/blob/d80c511612b3040ff2877ce3d408747df1739f11/README.md",
+    "params_note": "5.8 = the maker's own stated total '3.6B (LLM) + 2.2B (Audio Dual FFN)' (the card writes the sum, not the result). Excludes the separate audio tokenizer (bosonai/higgs-audio-v2-tokenizer). Note the repo name says 3B (the Llama-3.2-3B base).",
+    "license": "boson-higgs-audio-2-community",
+    "license_source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/blob/d80c511612b3040ff2877ce3d408747df1739f11/LICENSE"
   },
   {
     "id": "gpt-4o-mini-tts",
@@ -10614,7 +10647,9 @@
     "identity_sources": [
       "https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md",
       "https://platform.openai.com/docs/models/gpt-4o-mini-tts"
-    ]
+    ],
+    "released": "2025-03",
+    "released_source": "https://developers.openai.com/api/docs/changelog"
   },
   {
     "id": "deepgram-aura-2",
@@ -10673,7 +10708,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/kyutai/tts-1.6b-en_fr"
+    "model_repo": "https://huggingface.co/kyutai/tts-1.6b-en_fr",
+    "released": "2025-07",
+    "released_source": "https://kyutai.org/tts/",
+    "license": "cc-by-4.0",
+    "license_source": "https://huggingface.co/kyutai/tts-1.6b-en_fr/blob/f65439609986c392cb12df63938abcc550c3fb15/README.md",
+    "params_b": 1.8,
+    "params_b_source": "https://huggingface.co/kyutai/tts-1.6b-en_fr/blob/f65439609986c392cb12df63938abcc550c3fb15/README.md",
+    "params_note": "Maker's explicit total for this checkpoint (backbone + depth transformer); excludes the Mimi codec. Name says 1.6B; the card corrects it to 1.8B."
   },
   {
     "id": "dots-tts-soar",
@@ -10700,7 +10742,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/dots-studio/dots.tts-soar"
+    "model_repo": "https://huggingface.co/dots-studio/dots.tts-soar",
+    "released": "2026-06",
+    "released_source": "https://github.com/studio-dots-ai/dots.tts/blob/3cb6f94a571097b500038f1619959075282c5c98/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/dots-studio/dots.tts-soar/blob/2f9b3e18d70d670d4c701da2dc55ded5755815ce/README.md",
+    "params_b": 2,
+    "params_b_source": "https://huggingface.co/dots-studio/dots.tts-soar/blob/2f9b3e18d70d670d4c701da2dc55ded5755815ce/README.md",
+    "params_note": "Maker's rounded system-level figure (semantic encoder + Qwen2.5-1.5B-initialised LLM + AR flow-matching head); not stated whether the frozen AudioVAE is counted."
   },
   {
     "id": "deepgram-nova-2",
@@ -10828,7 +10877,10 @@
         }
       ]
     },
-    "model_repo": "https://github.com/microsoft/Mage"
+    "model_repo": "https://github.com/microsoft/Mage",
+    "params_b": 4,
+    "params_b_source": "https://arxiv.org/html/2607.19064",
+    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included."
   },
   {
     "id": "mage-flow",
@@ -10868,7 +10920,10 @@
         }
       ]
     },
-    "model_repo": "https://github.com/microsoft/Mage"
+    "model_repo": "https://github.com/microsoft/Mage",
+    "params_b": 4,
+    "params_b_source": "https://arxiv.org/html/2607.19064",
+    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included."
   },
   {
     "id": "mage-flow-turbo",
@@ -10908,7 +10963,10 @@
         }
       ]
     },
-    "model_repo": "https://github.com/microsoft/Mage"
+    "model_repo": "https://github.com/microsoft/Mage",
+    "params_b": 4,
+    "params_b_source": "https://arxiv.org/html/2607.19064",
+    "params_note": "Maker's paper (Microsoft, arXiv 2607.19064). 4B = the NR-MMDiT backbone shared by Base, RL-aligned and Turbo text-to-image variants (README names them Mage-Flow-4B-*); Mage-VAE and any text encoder are not included."
   },
   {
     "id": "sd-1-5",
@@ -10981,7 +11039,10 @@
         "reported_label": "IF-XL"
       }
     ],
-    "model_repo": "https://huggingface.co/DeepFloyd/IF-I-XL-v1.0"
+    "model_repo": "https://huggingface.co/DeepFloyd/IF-I-XL-v1.0",
+    "params_b": 4.3,
+    "params_b_source": "https://github.com/deep-floyd/IF/blob/ffc8163891682beaca0c5eb6b9077860a3bc6509/README.md",
+    "params_note": "Stage I (text-to-64x64 base module) only, matching how the catalogue records deepfloyd-if-m (0.4) and -l (0.9). The HF card also says 'Cascade Stage: I Num Parameters: 4.3B'. T5-XXL encoder and the stage II/III upscalers are not included."
   },
   {
     "id": "seedance-1-0-pro-fast",
@@ -11112,7 +11173,14 @@
       "price_source": "https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video",
       "price_note": "USD per video second at 512P (endpoint default) on fal.ai. Product: fal Kandinsky5 Pro text-to-video endpoint. API model: fal-ai/kandinsky5-pro/text-to-video (5-s clips). Price basis: rate printed by fal; 1024P $0.12 per video second. No Sber USD API tariff was used. Currency: USD. fal.ai model page, observed 2026-09-25."
     },
-    "model_repo": "https://github.com/kandinskylab/kandinsky-5"
+    "model_repo": "https://github.com/kandinskylab/kandinsky-5",
+    "released": "2025-11",
+    "released_source": "https://github.com/kandinskylab/kandinsky-5/blob/3a74261b957df0446c1969c5cedf8bbb07969ac2/README.md",
+    "license": "mit",
+    "license_source": "https://huggingface.co/kandinskylab/Kandinsky-5.0-T2V-Pro-sft-5s/blob/02ea4542a6ee3e49170f86da2940781864436f5c/README.md",
+    "params_b": 19,
+    "params_b_source": "https://github.com/kandinskylab/kandinsky-5/blob/3a74261b957df0446c1969c5cedf8bbb07969ac2/README.md",
+    "params_note": "19B as stated for the Video Pro line-up (T2V and I2V variants); README describes the DiT as the main generative module with Qwen2.5-VL + CLIP text encoders and HunyuanVideo VAE, and does not say whether 19B includes the encoders, so read it as the Pro generative model size."
   },
   {
     "id": "gemini-omni-1-1-flash",
@@ -11204,7 +11272,9 @@
       "unit": "video-second",
       "price_source": "https://docs.x.ai/developers/models.md",
       "price_note": "USD per second of output video. Product: xAI Imagine video API. API model: grok-imagine-video-1.5 (aliases grok-imagine-video-1.5-preview, grok-imagine-video-1.5-2026-05-30). Price basis: published flat output rate; no resolution tiers listed. Not grok-imagine-video ($0.050/s). Currency: USD. xAI models and pricing documentation, observed 2026-09-25."
-    }
+    },
+    "released": "2026-06",
+    "released_source": "https://x.ai/news/grok-imagine-video-1-5"
   },
   {
     "id": "kling-3-0-pro",
@@ -11271,7 +11341,9 @@
       "unit": "video-second",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio HappyHorse text-to-video. API model: happyhorse-1.1-t2v. Settings: resolution=720P. Price basis: published list price; only output is billed. 480P $0.07/s, 1080P $0.18/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-06",
+    "released_source": "https://www.alibabacloud.com/blog/happyhorse-gets-stronger-motion-expressiveness-higher-generation-consistency-and-enhanced-visual-quality_603293"
   },
   {
     "id": "vidu-q3",
@@ -11298,7 +11370,12 @@
         "reported_label": "Cosmos3-N"
       }
     ],
-    "model_repo": "https://huggingface.co/nvidia/Cosmos3-Nano"
+    "model_repo": "https://huggingface.co/nvidia/Cosmos3-Nano",
+    "params_b": 16,
+    "params_b_source": "https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md",
+    "params_note": "Whole Mixture-of-Transformers model (autoregressive tower + diffusion tower) trainable parameters, as stated by NVIDIA.",
+    "license": "openmdw-1.1",
+    "license_source": "https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md"
   },
   {
     "id": "p-video",
@@ -11367,7 +11444,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B"
+    "model_repo": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B",
+    "released": "2025-07",
+    "released_source": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B/blob/206a9ee1b7bfaaf8f7e4d81335650533490646a3/README.md",
+    "params_b": 27,
+    "params_b_source": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B/blob/206a9ee1b7bfaaf8f7e4d81335650533490646a3/README.md",
+    "params_note": "27B total across the two MoE experts (high-noise + low-noise), 14B active per step; diffusion model only (T5 encoder and VAE separate). Matches the catalogue convention for wan-2-2-a14b (params_b 27, active_b 14); active_b 14 if wanted.",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B/blob/206a9ee1b7bfaaf8f7e4d81335650533490646a3/README.md"
   },
   {
     "id": "qwen-image-2-0-pro",
@@ -11388,7 +11472,9 @@
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per output image, Singapore (international) deployment; all listed qwen-image-2.0-pro snapshots (2026-03-03, 2026-04-22, 2026-06-22) have the same rate; Beijing lists $0.071676. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: qwen-image-2.0-pro. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-25.",
       "unit": "image"
-    }
+    },
+    "released": "2026-03",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "seedream-4-5",
@@ -11430,7 +11516,9 @@
       "price_source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "price_note": "USD per generated image, Imagen 4 (standard; Imagen 4 Fast $0.02, Ultra $0.06) text-to-image on Google Cloud generative AI (Vertex AI / Gemini Enterprise Agent Platform) pricing. Product: Google Cloud generative AI image generation. API model: Imagen 4. Settings: text prompt, one image. Price basis: published list rate. Currency: USD. Google Cloud official pricing page, observed 2026-09-25.",
       "unit": "image"
-    }
+    },
+    "released": "2025-05",
+    "released_source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes"
   },
   {
     "id": "kling-image-2-1",
@@ -11477,7 +11565,14 @@
       "price_source": "https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video",
       "price_note": "USD per second of generated video, 480p (the only resolution offered on this endpoint). Product: fal HunyuanVideo 1.5 image-to-video endpoint. API model: fal-ai/hunyuan-video-v1.5/image-to-video. Price basis: rate printed by fal (\"$0.075 per second\"), matching the endpoint billing record. Currency: USD. fal.ai model page, observed 2026-09-25."
     },
-    "model_repo": "https://huggingface.co/tencent/HunyuanVideo-1.5"
+    "model_repo": "https://huggingface.co/tencent/HunyuanVideo-1.5",
+    "released": "2025-11",
+    "released_source": "https://huggingface.co/tencent/HunyuanVideo-1.5/blob/9b49404b3f5df2a8f0b31df27a0c7ab872e7b038/README.md",
+    "license": "tencent-hunyuan-community",
+    "license_source": "https://huggingface.co/tencent/HunyuanVideo-1.5/blob/9b49404b3f5df2a8f0b31df27a0c7ab872e7b038/README.md",
+    "params_b": 8.3,
+    "params_b_source": "https://huggingface.co/tencent/HunyuanVideo-1.5/blob/9b49404b3f5df2a8f0b31df27a0c7ab872e7b038/README.md",
+    "params_note": "8.3B = diffusion transformer; the card describes one unified framework for T2V and I2V. Excludes text encoder and VAE."
   },
   {
     "id": "llada-image",
@@ -11495,7 +11590,14 @@
         "reported_label": "LLaDA-Image"
       }
     ],
-    "model_repo": "https://huggingface.co/inclusionAI/LLaDA-Image"
+    "model_repo": "https://huggingface.co/inclusionAI/LLaDA-Image",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/inclusionAI/LLaDA-Image/blob/e4e2703f410f7ddb6ee8d6b09dac6a8ec5093039/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/inclusionAI/LLaDA-Image/blob/e4e2703f410f7ddb6ee8d6b09dac6a8ec5093039/README.md",
+    "params_b": 6,
+    "params_b_source": "https://huggingface.co/inclusionAI/LLaDA-Image/blob/e4e2703f410f7ddb6ee8d6b09dac6a8ec5093039/README.md",
+    "params_note": "6B is stated for the family, covering both Base and Turbo; the card does not break down which components (e.g. VQ tokenizer/decoder) are inside the 6B."
   },
   {
     "id": "llada-image-turbo",
@@ -11513,7 +11615,14 @@
         "reported_label": "LLaDA-Image Turbo"
       }
     ],
-    "model_repo": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo"
+    "model_repo": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo",
+    "released": "2026-09",
+    "released_source": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo/blob/f4afc52d925bbac4e22a1c947111fc1f127e37e5/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo/blob/f4afc52d925bbac4e22a1c947111fc1f127e37e5/README.md",
+    "params_b": 6,
+    "params_b_source": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo/blob/f4afc52d925bbac4e22a1c947111fc1f127e37e5/README.md",
+    "params_note": "6B is stated for the family, covering both Base and Turbo; the card does not break down which components (e.g. VQ tokenizer/decoder) are inside the 6B."
   },
   {
     "name": "Ministral 3 14B Reasoning 2512",
@@ -11536,7 +11645,10 @@
           "source": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512-GGUF/blob/fe3b038f30334729263d860d5dadbaa34e0f2a18/Ministral-3-14B-Reasoning-2512-Q4_K_M.gguf"
         }
       ]
-    }
+    },
+    "params_b": 13.9,
+    "params_b_source": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md",
+    "params_note": "Sum of the two components the card states (13.5B LM + 0.4B vision encoder = 13.9B). The repo's safetensors header gives 13,945,031,680 parameters (HF API); the sibling non-reasoning catalogue entry uses 13.9. Dense model: active_b = params_b."
   },
   {
     "name": "Ministral 3 3B Reasoning 2512",
@@ -11559,7 +11671,10 @@
           "source": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512-GGUF/blob/b432f0a2c144af8a1937b06e2ea7f75ebb4d0b31/Ministral-3-3B-Reasoning-2512-Q4_K_M.gguf"
         }
       ]
-    }
+    },
+    "params_b": 3.8,
+    "params_b_source": "https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/4a36357c811bf511a7b625d132e12f22408aac91/README.md",
+    "params_note": "Sum of the two components the card states (3.4B LM + 0.4B vision encoder = 3.8B). The repo's safetensors header gives 3,849,090,048 BF16 parameters (HF API); the sibling non-reasoning catalogue entry uses 3.85. Dense model: active_b = params_b."
   },
   {
     "name": "Ministral 3 8B Reasoning 2512",
@@ -11582,7 +11697,10 @@
           "source": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF/blob/4413bc9b7b091ddad28101650d1395f5e045a328/Ministral-3-8B-Reasoning-2512-Q4_K_M.gguf"
         }
       ]
-    }
+    },
+    "params_b": 8.8,
+    "params_b_source": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md",
+    "params_note": "Sum of the two components the card states (8.4B LM + 0.4B vision encoder = 8.8B). The repo's safetensors header gives 8,918,026,240 parameters (HF API); the sibling non-reasoning catalogue entry uses 8.92. Dense model: active_b = params_b."
   },
   {
     "id": "addis-voice-2",
@@ -11640,7 +11758,9 @@
       "unit": "1M-chars",
       "price_source": "https://fal.ai/models/fal-ai/gemini-3.1-flash-tts",
       "price_note": "USD per 1M input characters: fal prices its Gemini 3.1 Flash TTS endpoint (fal-ai/gemini-3.1-flash-tts; input schema: 'Input for Gemini 3.1 Flash TTS preview speech generation') at $0.05 per 1000 characters (x1000; endpoint billing record: billing_unit 1000 characters, partner API). Google's own Gemini API prices this model per token only, which is not converted. Product: fal text-to-speech endpoint (Google partner API). API model: fal-ai/gemini-3.1-flash-tts (Gemini 3.1 Flash TTS preview). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Currency: USD. fal.ai model page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-04",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog"
   },
   {
     "id": "mms-tts-amh",
@@ -11667,7 +11787,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/facebook/mms-tts-amh"
+    "model_repo": "https://huggingface.co/facebook/mms-tts-amh",
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/facebook/mms-tts-amh/blob/e366aee5e22a72b9a3333e081ddafb234538d9bb/README.md"
   },
   {
     "id": "elevenlabs-v3-alpha",
@@ -11679,7 +11801,9 @@
       "https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg",
       "https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/docs/vibevoice-tts.md"
     ],
-    "identity_note": "Exact figure legend Eleven-v3 (Alpha). Do not relabel Alpha as production v3."
+    "identity_note": "Exact figure legend Eleven-v3 (Alpha). Do not relabel Alpha as production v3.",
+    "released": "2025-06",
+    "released_source": "https://elevenlabs.io/blog/eleven-v3"
   },
   {
     "recovered_original": false,
@@ -11693,7 +11817,9 @@
       "https://arxiv.org/html/2607.14846v1",
       "https://arxiv.org/html/2606.24320v2"
     ],
-    "identity_note": "Cartesia API model sonic-3.5 (RW-Voice-EQ Appendix Table 4, release 2026-06-16; ZONOS2 cites 'Cartesia Sonic 3.5'). Distinct from Sonic 3.6 (cartesia-sonic-3-6) and earlier Sonic versions."
+    "identity_note": "Cartesia API model sonic-3.5 (RW-Voice-EQ Appendix Table 4, release 2026-06-16; ZONOS2 cites 'Cartesia Sonic 3.5'). Distinct from Sonic 3.6 (cartesia-sonic-3-6) and earlier Sonic versions.",
+    "released": "2026-05",
+    "released_source": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models"
   },
   {
     "recovered_original": false,
@@ -11743,7 +11869,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base"
+    "model_repo": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "released": "2026-01",
+    "released_source": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md"
   },
   {
     "recovered_original": false,
@@ -11812,7 +11940,12 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/openbmb/VoxCPM2"
+    "model_repo": "https://huggingface.co/openbmb/VoxCPM2",
+    "released": "2026-04",
+    "released_source": "https://github.com/OpenBMB/VoxCPM/blob/f0c787f0937dc1c9a8f4f64d9a332d9c5da2e629/README.md",
+    "params_b": 2,
+    "params_b_source": "https://huggingface.co/openbmb/VoxCPM2/blob/32279effe8c19989596f05d353d1447f51d9e915/README.md",
+    "params_note": "Maker's model card; the official GitHub README (f0c787f) also says 'a **2B** parameter model' and lists 'Backbone Parameters | 2B'. Rounded maker figure; whether the AudioVAE is included is not stated."
   },
   {
     "recovered_original": false,
@@ -11893,7 +12026,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Zyphra/ZONOS2"
+    "model_repo": "https://huggingface.co/Zyphra/ZONOS2",
+    "released": "2026-06",
+    "released_source": "https://www.zyphra.com/our-work/zonos2"
   },
   {
     "recovered_original": false,
@@ -11921,7 +12056,11 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/IndexTeam/IndexTTS-2"
+    "model_repo": "https://huggingface.co/IndexTeam/IndexTTS-2",
+    "released": "2025-09",
+    "released_source": "https://github.com/index-tts/index-tts/blob/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md",
+    "license": "bilibili-model-use-license",
+    "license_source": "https://huggingface.co/IndexTeam/IndexTTS-2/blob/740dcaff396282ffb241903d150ac011cd4b1ede/LICENSE.txt"
   },
   {
     "recovered_original": false,
@@ -11942,7 +12081,9 @@
       "unit": "1M-chars",
       "price_source": "https://smallest.ai/pricing/models",
       "price_note": "USD per 1M characters: Smallest.ai lists Lightning v3.1 (not Pro) at approximately $0.175 per 10,000 characters, pay as you go (x100). Product: Lightning text-to-speech API. API model: lightning_v3.1. Settings: pay-as-you-go. Price basis: published (approximate) list rate, per-10K to per-1M scaling only. Exclusions: Lightning v3.1 Pro (~$0.195/10K), enterprise/custom pricing. Currency: USD. Smallest.ai official model pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-03",
+    "released_source": "https://web.archive.org/web/20260327065034/https://smallest.ai/blog/introducing-lightning-v3"
   },
   {
     "id": "sesame-csm-1b",
@@ -12040,7 +12181,10 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft"
+    "model_repo": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
+    "params_b": 3,
+    "params_b_source": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
+    "params_note": "Maker's size label (card at sha 4206a56e5a68cf6cf96900a8a78acd3370c02eb6; GitHub README e64661f: 'built on the Llama-3b backbone'). Judgement: HF's safetensors metadata for this repo reports total 3782986752 parameters (≈3.78B, extended Llama-3.2-3B vocab); that is a Hub-computed count, not a maker statement, so the maker's '3B' is given. Excludes the SNAC decoder."
   },
   {
     "id": "cartesia-sonic-3",
@@ -12115,7 +12259,9 @@
       "unit": "1M-chars",
       "price_source": "https://fal.ai/models/fal-ai/inworld-tts",
       "price_note": "USD per 1M input characters: fal prices its 'Text to Speech Endpoint for Inworld's TTS-1.5 Max' (fal-ai/inworld-tts) at $0.01 per 1000 characters (x1000; endpoint billing record: billing_unit 1000 characters, price 0.01). Inworld's own pricing page lists only TTS-2 models, and Inworld's docs mark inworld-tts-1.5-max as deprecated (not recommended for new projects) but not discontinued. Product: fal text-to-speech endpoint. API model: fal-ai/inworld-tts (Inworld TTS-1.5 Max). Settings: standard. Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: DeepInfra lists inworld-ai/realtime-tts-1.5-max (its replacement id for inworld-tts-1.5-max) at $50.00/1M characters. Currency: USD. fal.ai model page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-01",
+    "released_source": "https://docs.inworld.ai/release-notes/tts"
   },
   {
     "id": "fish-audio-s2-1-pro",
@@ -12183,7 +12329,9 @@
       "unit": "1M-chars",
       "price_source": "https://elevenlabs.io/pricing/api",
       "price_note": "USD per 1M input characters: ElevenLabs lists Flash / Turbo Text to Speech at $0.05 per 1K characters (x1000); the page's tooltip states 'Our Flash/Turbo models include ElevenLabs Flash/Turbo V2 and V2.5'. Product: ElevenAPI text to speech. API model: eleven_turbo_v2. Settings: standard API rate (same per-1K rate on pay-as-you-go and plan tiers shown). Price basis: published list rate, per-1K to per-1M scaling only. Exclusions: subscription fees, taxes. Currency: USD. ElevenLabs official API pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2023-11",
+    "released_source": "https://elevenlabs.io/blog/turbo-v2-is-here"
   },
   {
     "id": "elevenlabs-flash-v2",
@@ -12402,7 +12550,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
         "reported_label": "ernie-5.1"
       }
-    ]
+    ],
+    "released": "2026-05",
+    "released_source": "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/"
   },
   {
     "id": "glm-5v-turbo",
@@ -12753,7 +12903,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "reve-2.0"
       }
-    ]
+    ],
+    "released": "2026-06",
+    "released_source": "https://blog.reve.com/posts/announcing-reve-2.0/"
   },
   {
     "id": "reve-2-1",
@@ -12778,7 +12930,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "reve-2.1"
       }
-    ]
+    ],
+    "released": "2026-07",
+    "released_source": "https://blog.reve.com/posts/launching-reve-2.1/"
   },
   {
     "id": "krea-2-large",
@@ -12918,7 +13072,7 @@
     },
     "recovered_original": false,
     "model_repo": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-    "identity_note": "Comparison-only. Official repo Qwen/Qwen-Image-2.1 @790c926 (created 2026-09-14), Qwen Research License Agreement; parameter count not stated in the card, so omitted. Arena entry 'qwen-image-2.1' (alibaba, qwen-research), first listed 2026-09-22. Not Qwen-Image 2.0 Pro.",
+    "identity_note": "Comparison-only. Official repo Qwen/Qwen-Image-2.1 @790c926 (created 2026-09-14), Qwen Research License Agreement; parameter count was absent from that original card revision; see params_b_source for the newer evidence. Arena entry 'qwen-image-2.1' (alibaba, qwen-research), first listed 2026-09-22. Not Qwen-Image 2.0 Pro.",
     "identity_sources": [
       "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/790c92633540aa0cb11d9abf19eb46d861714758/README.md"
     ],
@@ -12927,7 +13081,12 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "qwen-image-2.1"
       }
-    ]
+    ],
+    "released": "2026-09",
+    "released_source": "https://github.com/QwenLM/Qwen-Image-2.1/blob/6627d87c6433151463ec4b48b8945a24fcf16a35/README.md",
+    "params_b": 7,
+    "params_b_source": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/d26bb61231c349cf6b7896fa83353113880e1ba3/README.md",
+    "params_note": "Covers the visual generation component (32-layer single-stream DiT) only, not the text encoder/VAE. The card at the revision cited in identity_note (790c926) did not state it; the current card (d26bb61) does. The official GitHub README also says: \"Transformer: 32 layers, 7B parameters\"."
   },
   {
     "id": "muse-video",
@@ -13115,7 +13274,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev"
+    "model_repo": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev",
+    "released": "2025-06",
+    "released_source": "https://bfl.ai/blog/flux-1-kontext-dev"
   },
   {
     "id": "qwen-image-edit",
@@ -13170,7 +13331,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-Edit"
+    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+    "released": "2025-08",
+    "released_source": "https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/README.md"
   },
   {
     "id": "qwen-image-edit-2511",
@@ -13216,7 +13379,9 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511"
+    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+    "released": "2025-12",
+    "released_source": "https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/README.md"
   },
   {
     "id": "bagel",
@@ -13275,7 +13440,12 @@
       "price_source": "https://fal.ai/models/fal-ai/bagel",
       "price_note": "USD per generated image: fal bills fal-ai/bagel at $0.10 per image (billing unit images); the fal-ai/bagel/edit endpoint is also $0.10 per image. Product: fal.ai serverless text-to-image. API model: fal-ai/bagel (ByteDance-Seed BAGEL, described by fal as a 7B-parameter multimodal model). Settings: text-to-image, one image. Price basis: published per-image list rate. Not a ByteDance direct tariff. Currency: USD. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT"
+    "model_repo": "https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT",
+    "released": "2025-05",
+    "released_source": "https://github.com/ByteDance-Seed/Bagel/blob/a2fa77dd8caeefc41e6607ae0ec17408d3f4ee9f/README.md",
+    "params_b": 14,
+    "params_b_source": "https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT/blob/5019f57d168e5816e8f3f701b17cc816bb7cf24b/README.md",
+    "params_note": "Mixture-of-Transformers: 14B total, 7B active (active_b 7 if used). Whole unified model; the card says it also uses a SigLIP encoder and FLUX.1-schnell VAE, not clearly included in the 14B."
   },
   {
     "id": "seededit-3-0",
@@ -13315,7 +13485,9 @@
         "organization": "google",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-05",
+    "released_source": "https://ai.google.dev/gemini-api/docs/changelog"
   },
   {
     "id": "hunyuanimage-3-0-instruct",
@@ -13340,7 +13512,12 @@
       "price_source": "https://fal.ai/models/fal-ai/hunyuan-image/v3/instruct/text-to-image",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.09 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v3/instruct/text-to-image ('Instruct version of Hunyuan-Image 3.0'); the edit endpoint fal-ai/hunyuan-image/v3/instruct/edit has the same $0.09/MP rate. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/tencent/HunyuanImage-3.0-Instruct"
+    "model_repo": "https://huggingface.co/tencent/HunyuanImage-3.0-Instruct",
+    "released": "2026-01",
+    "released_source": "https://huggingface.co/tencent/HunyuanImage-3.0-Instruct/blob/2ec2c78bee7d4b94157341fba86c4c2c7b1858b2/README.md",
+    "params_b": 80,
+    "params_b_source": "https://huggingface.co/tencent/HunyuanImage-3.0-Instruct/blob/2ec2c78bee7d4b94157341fba86c4c2c7b1858b2/README.md",
+    "params_note": "MoE: 80B total, 13B activated per token (whole MoE transformer). Same convention as the catalogued hunyuanimage-3-0 (params_b 80); active 13B could go in active_b."
   },
   {
     "id": "reve-v1-1",
@@ -13400,7 +13577,9 @@
         "organization": "reve",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-11",
+    "released_source": "https://blog.reve.com/posts/top-creative-platforms-integrate-reve/"
   },
   {
     "id": "uni-1-1",
@@ -13429,7 +13608,9 @@
       "unit": "image",
       "price_source": "https://docs.agents.lumalabs.ai/guides/pricing",
       "price_note": "USD per generated 2K (2048-pixel) image, text-to-image, Luma Agents API pay-as-you-go. Product: Luma Agents API image generation. API model: uni-1 (Luma's API page labels this price column \"Uni-1.1\"; uni-1-max is the Max variant). Settings: text-to-image, 2048px output, no reference images, one image. Image edit or one reference image $0.0434; each extra reference +$0.003. Price basis: Luma's published per-image figure; Luma notes prices are approximate and based on billing tokens. Currency: USD. Luma official API pricing documentation, observed 2026-09-26."
-    }
+    },
+    "released": "2026-05",
+    "released_source": "https://lumalabs.ai/news/uni-1-1-api"
   },
   {
     "id": "uni-1-1-max",
@@ -13458,7 +13639,9 @@
       "unit": "image",
       "price_source": "https://docs.agents.lumalabs.ai/guides/pricing",
       "price_note": "USD per generated 2K (2048-pixel) image, text-to-image, Luma Agents API pay-as-you-go. Product: Luma Agents API image generation. API model: uni-1-max (Luma's API page labels this price column \"Uni-1.1 Max\"). Settings: text-to-image, 2048px output, no reference images, one image. Image edit or one reference image $0.1030; each extra reference +$0.003. Price basis: Luma's published per-image figure; Luma notes prices are approximate and based on billing tokens. Currency: USD. Luma official API pricing documentation, observed 2026-09-26."
-    }
+    },
+    "released": "2026-05",
+    "released_source": "https://lumalabs.ai/news/uni-1-1-api"
   },
   {
     "id": "grok-imagine-image",
@@ -13553,7 +13736,9 @@
       "unit": "image",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.027504; wan2.7-image-pro $0.075. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.7-image. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-04",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "wan-2-7-image-pro",
@@ -13582,7 +13767,9 @@
       "unit": "image",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.068761; wan2.7-image $0.03. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.7-image-pro. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-04",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "wan-2-6-image",
@@ -13605,7 +13792,9 @@
       "unit": "image",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) and US (Virginia, Global) list $0.028671. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.6-image. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-12",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "wan-2-5-i2i-preview",
@@ -13628,7 +13817,9 @@
       "unit": "image",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.028671. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.5-i2i-preview. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-09",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "kling-image-o1",
@@ -13666,7 +13857,9 @@
         "organization": "microsoft-ai",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2026-03",
+    "released_source": "https://microsoft.ai/news/introducing-mai-image-2/"
   },
   {
     "id": "mai-image-1",
@@ -13681,7 +13874,9 @@
         "organization": "microsoft-ai",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-11",
+    "released_source": "https://microsoft.ai/news/introducing-mai-image-1-debuting-in-the-top-10-on-lmarena/"
   },
   {
     "id": "reve-v1-5",
@@ -13696,7 +13891,9 @@
         "organization": "reve",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2026-02",
+    "released_source": "https://blog.reve.com/posts/reve-1.5-is-here/"
   },
   {
     "id": "grok-imagine-image-pro",
@@ -13746,7 +13943,9 @@
       "unit": "image",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per output image, Singapore (international) deployment; only output is billed; China (Beijing) lists $0.028671. Free quota and promotions excluded. Product: Alibaba Cloud Model Studio image generation. API model: wan2.5-t2i-preview. Settings: region=Singapore (international), n=1. Price basis: published list rate. Currency: USD. Alibaba Cloud official model pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-09",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "recraft-v4-1-pro",
@@ -13769,7 +13968,9 @@
       "unit": "image",
       "price_source": "https://www.recraft.ai/docs/api-reference/pricing",
       "price_note": "USD per generated raster image, Recraft V4.1 Pro (same rate as V4.1 Utility Pro; V4.1 and V4.1 Utility $0.035; vector output priced separately at $0.30). Billed as 210 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V4.1 Pro. Settings: raster, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-05",
+    "released_source": "https://www.recraft.ai/docs/recraft-models/recraft-v4-1.md"
   },
   {
     "id": "recraft-v4-1-utility-pro",
@@ -13792,7 +13993,9 @@
       "unit": "image",
       "price_source": "https://www.recraft.ai/docs/api-reference/pricing",
       "price_note": "USD per generated raster image, Recraft V4.1 Utility Pro (same row and rate as V4.1 Pro; V4.1 Utility $0.035; vector output $0.30). Billed as 210 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V4.1 Utility Pro. Settings: raster, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-05",
+    "released_source": "https://www.recraft.ai/docs/recraft-models/recraft-v4-1.md"
   },
   {
     "id": "recraft-v4-1-flash",
@@ -13838,7 +14041,9 @@
       "unit": "image",
       "price_source": "https://www.recraft.ai/docs/api-reference/pricing",
       "price_note": "USD per generated raster image, Recraft V3 (vector output $0.08; image-to-image, inpainting and outpainting with V3 are also $0.04). Billed as 40 API units per image from pre-purchased unit packages. Product: Recraft API raster image generation. API model: Recraft V3. Settings: raster, text-to-image, n=1. Price basis: published list rate. Currency: USD. Recraft official API pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2024-10",
+    "released_source": "https://www.recraft.ai/docs/recraft-models/recraft-V3.md"
   },
   {
     "id": "seedream-3-0",
@@ -13868,7 +14073,9 @@
         "organization": "google",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-01",
+    "released_source": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/release-notes"
   },
   {
     "id": "luma-photon",
@@ -14127,7 +14334,12 @@
       }
     ],
     "license": "MIT",
-    "model_repo": "https://github.com/kandinskylab/kandinsky-5"
+    "model_repo": "https://github.com/kandinskylab/kandinsky-5",
+    "released": "2025-09",
+    "released_source": "https://github.com/kandinskylab/kandinsky-5/blob/3a74261b957df0446c1969c5cedf8bbb07969ac2/README.md",
+    "params_b": 2,
+    "params_b_source": "https://github.com/kandinskylab/kandinsky-5/blob/3a74261b957df0446c1969c5cedf8bbb07969ac2/README.md",
+    "params_note": "2B as the maker states for the T2V Lite model (the generative DiT line; text encoders Qwen2.5-VL/CLIP and HunyuanVideo VAE are separate components not counted explicitly)."
   },
   {
     "id": "veo-2",
@@ -14369,7 +14581,14 @@
       "price_source": "https://fal.ai/models/fal-ai/hidream-i1-full",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.05 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-i1-full (HiDream I1 Full, 17B; the dev and fast endpoints are separate). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/HiDream-ai/HiDream-I1-Full"
+    "model_repo": "https://huggingface.co/HiDream-ai/HiDream-I1-Full",
+    "released": "2025-04",
+    "released_source": "https://github.com/HiDream-ai/HiDream-I1/blob/5f92bab45f1dfb1e794ee357286a5b837eaf4400/README.md",
+    "params_b": 17,
+    "params_b_source": "https://huggingface.co/HiDream-ai/HiDream-I1-Full/blob/8ccbbfb270ccdae26d6bb0081df67dc81e4033bf/README.md",
+    "params_note": "Stated for HiDream-I1 (sparse diffusion transformer) on the I1-Full card; excludes the Llama-3.1-8B / T5-XXL / CLIP text encoders and VAE.",
+    "license": "mit",
+    "license_source": "https://huggingface.co/HiDream-ai/HiDream-I1-Full/blob/8ccbbfb270ccdae26d6bb0081df67dc81e4033bf/README.md"
   },
   {
     "id": "show-o2-7b",
@@ -14383,7 +14602,11 @@
         "reported_label": "Show-o2-7B"
       }
     ],
-    "model_repo": "https://huggingface.co/showlab/show-o2-7B"
+    "model_repo": "https://huggingface.co/showlab/show-o2-7B",
+    "released": "2025-06",
+    "released_source": "https://github.com/showlab/Show-o/blob/45a5a2de01d1ebd10cd5864d29310a76476cdf23/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/showlab/show-o2-7B/blob/3012b1d6aee8b57829b23d02cba9190ef5cc3361/README.md"
   },
   {
     "id": "show-o2-1-5b-hq",
@@ -14397,7 +14620,9 @@
         "reported_label": "Show-o2-1.5B-HQ"
       }
     ],
-    "model_repo": "https://huggingface.co/showlab/show-o2-1.5B-HQ"
+    "model_repo": "https://huggingface.co/showlab/show-o2-1.5B-HQ",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/showlab/show-o2-1.5B-HQ/blob/d3a220ec55feaacbdfcb053847edee14edd4e69a/README.md"
   },
   {
     "id": "blip3o-next-grpo-text-3b",
@@ -14411,7 +14636,12 @@
         "reported_label": "BLIP3o-NEXT-GRPO-Text-3B"
       }
     ],
-    "model_repo": "https://huggingface.co/BLIP3o/BLIP3o-NEXT-GRPO-TexT-3B"
+    "model_repo": "https://huggingface.co/BLIP3o/BLIP3o-NEXT-GRPO-TexT-3B",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/BLIP3o/BLIP3o-NEXT-GRPO-TexT-3B/blob/042b0a51dd6080f5d9a1917df129d6b721f87c81/README.md",
+    "params_b": 3,
+    "params_b_source": "https://arxiv.org/html/2510.15857v1",
+    "params_note": "Approximate total for BLIP3o-NEXT (AR model + diffusion transformer), per the makers paper; the GitHub README also labels the released weights including GRPO-Text as \"Model Weights (3B)\" and the repo name ends in -3B."
   },
   {
     "id": "blip3o-8b",
@@ -14429,7 +14659,9 @@
         "reported_label": "BLIP3o-8B"
       }
     ],
-    "model_repo": "https://huggingface.co/BLIP3o/BLIP3o-Model-8B"
+    "model_repo": "https://huggingface.co/BLIP3o/BLIP3o-Model-8B",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/BLIP3o/BLIP3o-Model-8B/blob/c2edfc20814d4624c8d73ca3de351ebc3fa86508/README.md"
   },
   {
     "id": "emu3",
@@ -14451,7 +14683,14 @@
         "reported_label": "Emu3"
       }
     ],
-    "model_repo": "https://huggingface.co/BAAI/Emu3-Gen"
+    "model_repo": "https://huggingface.co/BAAI/Emu3-Gen",
+    "released": "2024-09",
+    "released_source": "https://github.com/baaivision/Emu3/blob/dbbf9858194d70b8c58293e219ecffe22df0f9c7/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/BAAI/Emu3-Gen/blob/40b3bb89a9cee99ab0b9deb35dead2e50d6a0d72/README.md",
+    "params_b": 8,
+    "params_b_source": "https://arxiv.org/html/2409.18869",
+    "params_note": "Maker's paper (BAAI). 8B = the Emu3 decoder-only transformer (shared by Emu3-Gen/Emu3-Chat); the separate vision tokenizer is not included."
   },
   {
     "id": "sd-3-medium",
@@ -14499,7 +14738,10 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/stabilityai/stable-diffusion-3-medium"
+    "model_repo": "https://huggingface.co/stabilityai/stable-diffusion-3-medium",
+    "params_b": 2,
+    "params_b_source": "https://stability.ai/news-updates/stable-diffusion-3-medium",
+    "params_note": "2B = the SD3 Medium MMDiT as Stability states it; the CLIP-L/CLIP-G/T5-XXL text encoders and VAE are not included."
   },
   {
     "id": "sd-3-5-medium",
@@ -14525,7 +14767,12 @@
       "price_source": "https://platform.stability.ai/pricing",
       "price_note": "USD per generated image on the Stability AI Developer Platform API: the pricing table lists Stable Diffusion 3.5 Medium at 3.5 credits and states 'API usage is based on credits. 1 credit = $0.01' (3.5 x $0.01 = $0.035). Product: Stability AI REST API (v2beta stable-image/generate/sd3). API model: sd3.5-medium. Settings: text-to-image, one image per request. Price basis: credits x Stability's own USD per credit. The pricing page is client-rendered; the table (column 'Price (credits)') is in the page's own script bundle. SD 3.5 Large 6.5 credits, Large Turbo 4, Flash 2.5. Replicate's official stability-ai/stable-diffusion-3.5-medium lists the same $0.035 per output image. Currency: USD. Stability AI official pricing page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium"
+    "model_repo": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+    "params_b": 2.5,
+    "params_b_source": "https://stability.ai/news/introducing-stable-diffusion-3-5",
+    "params_note": "2.5B = the MMDiT-X diffusion transformer as Stability states it; text encoders (CLIP-L, CLIP-G, T5-XXL) and VAE not included.",
+    "released": "2024-10",
+    "released_source": "https://stability.ai/news/introducing-stable-diffusion-3-5"
   },
   {
     "id": "playground-v2-5",
@@ -14543,7 +14790,9 @@
         "reported_label": "playground-v2.5 (playground-v2.5-1024px-aesthetic)"
       }
     ],
-    "model_repo": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic"
+    "model_repo": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic",
+    "released": "2024-02",
+    "released_source": "https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/blob/1e032f13f2fe6db2dc49947dbdbd196e753de573/LICENSE.md"
   },
   {
     "id": "show-o-demo-512",
@@ -14556,7 +14805,9 @@
         "source": "https://aclanthology.org/2026.findings-acl.433.pdf#page=6",
         "reported_label": "show-o-demo-512"
       }
-    ]
+    ],
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/showlab/show-o-512x512/blob/dbe757d951099968fb102d249d35a764528df2dd/README.md"
   },
   {
     "id": "janus-pro-7b",
@@ -14582,7 +14833,11 @@
       "price_source": "https://deepinfra.com/deepseek-ai/Janus-Pro-7B",
       "price_note": "USD per generated image on DeepInfra (model page header '$0.002 / image'; catalogue pricing type image_units at 0.2 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-7B. Settings: default output size (Janus-Pro generates at its native resolution), one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff (DeepSeek's own API serves no image generation). DeepInfra official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/deepseek-ai/Janus-Pro-7B"
+    "model_repo": "https://huggingface.co/deepseek-ai/Janus-Pro-7B",
+    "released": "2025-01",
+    "released_source": "https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md",
+    "license": "deepseek",
+    "license_source": "https://huggingface.co/deepseek-ai/Janus-Pro-7B/blob/5c3eb3fb2a3b61094328465ba61fcd4272090d67/README.md"
   },
   {
     "id": "lumina-image-2",
@@ -14604,7 +14859,14 @@
       "price_source": "https://fal.ai/models/fal-ai/lumina-image/v2",
       "price_note": "USD for one 1-megapixel output: fal bills fal-ai/lumina-image/v2 (Lumina Image 2.0) $0.075 per output megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/lumina-image/v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not an Alpha-VLLM direct tariff. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0"
+    "model_repo": "https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0",
+    "released": "2025-01",
+    "released_source": "https://github.com/Alpha-VLLM/Lumina-Image-2.0/blob/4a4d6f856115db07e8ae127280ebcc3d9f65004e/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Alpha-VLLM/Lumina-Image-2.0/blob/53504abd8178b30685b6c4c7a4cd181ff78b73e9/README.md",
+    "params_b": 2.6,
+    "params_b_source": "https://github.com/Alpha-VLLM/Lumina-Image-2.0/blob/4a4d6f856115db07e8ae127280ebcc3d9f65004e/README.md",
+    "params_note": "Diffusion transformer (Unified Next-DiT) only; Gemma-2-2B text encoder and VAE listed separately. The makers paper (arXiv 2503.21758) also says \"with only 2.6B parameters\" (Table: Lumina-Image 2.0 2.6B). The HF card rounds it: \"Lumina-Image-2.0 is a 2 billion parameter flow-based diffusion transformer\"."
   },
   {
     "id": "emu3-5",
@@ -14618,7 +14880,14 @@
         "reported_label": "Emu3.5"
       }
     ],
-    "model_repo": "https://huggingface.co/BAAI/Emu3.5"
+    "model_repo": "https://huggingface.co/BAAI/Emu3.5",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/BAAI/Emu3.5/blob/ef6e632f2cbda5269f766b04e443bbf116cd093e/README.md",
+    "params_b": 34.1,
+    "params_b_source": "https://arxiv.org/html/2510.26583v1",
+    "params_note": "Whole Emu3.5 autoregressive model (31.2B transformer layers + 2.9B embeddings), per the makers paper; excludes the separate Emu3.5-VisionTokenizer.",
+    "released": "2025-10",
+    "released_source": "https://arxiv.org/abs/2510.26583"
   },
   {
     "id": "emu3-5-image",
@@ -14632,7 +14901,9 @@
         "reported_label": "Emu3.5-Image"
       }
     ],
-    "model_repo": "https://huggingface.co/BAAI/Emu3.5-Image"
+    "model_repo": "https://huggingface.co/BAAI/Emu3.5-Image",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/BAAI/Emu3.5-Image/blob/b94be7d41ff2b9c971e4e0dd43bcbb5b21c28e6b/README.md"
   },
   {
     "id": "midjourney-v7",
@@ -14663,7 +14934,14 @@
         "reported_label": "PixArt-Alpha (PixArt-XL-2-1024-MS)"
       }
     ],
-    "model_repo": "https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS"
+    "model_repo": "https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS",
+    "released": "2023-11",
+    "released_source": "https://github.com/PixArt-alpha/PixArt-alpha/blob/cac2fd3b4544cf7620d8fbbf8b19d97ffcb85892/README.md",
+    "license": "openrail++",
+    "license_source": "https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS/blob/b89adadeccd9ead2adcb9fa2825d3fabec48d404/README.md",
+    "params_b": 0.6,
+    "params_b_source": "https://github.com/PixArt-alpha/PixArt-alpha/blob/cac2fd3b4544cf7620d8fbbf8b19d97ffcb85892/README.md",
+    "params_note": "Model-zoo row for exactly this checkpoint; the HF card's table also lists 'PixArt-α | Diff | 0.6B'. Covers the diffusion transformer only; T5-XXL text encoder and SD VAE not included."
   },
   {
     "id": "janus-pro-1b",
@@ -14685,7 +14963,11 @@
       "price_source": "https://deepinfra.com/deepseek-ai/Janus-Pro-1B",
       "price_note": "USD per generated image on DeepInfra (model page header '$0.0005 / image'; catalogue pricing type image_units at 0.05 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-1B. Settings: default output size, one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff. DeepInfra official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/deepseek-ai/Janus-Pro-1B"
+    "model_repo": "https://huggingface.co/deepseek-ai/Janus-Pro-1B",
+    "released": "2025-01",
+    "released_source": "https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md",
+    "license": "deepseek",
+    "license_source": "https://huggingface.co/deepseek-ai/Janus-Pro-1B/blob/960ab33191f61342a4c60ae74d8dc356a39fafcb/README.md"
   },
   {
     "id": "janus-1-3b",
@@ -14699,7 +14981,9 @@
         "reported_label": "Janus-1.3B"
       }
     ],
-    "model_repo": "https://huggingface.co/deepseek-ai/Janus-1.3B"
+    "model_repo": "https://huggingface.co/deepseek-ai/Janus-1.3B",
+    "license": "deepseek",
+    "license_source": "https://huggingface.co/deepseek-ai/Janus-1.3B/blob/56c70f4d34ca802c96254aea598b7d8e58e73840/README.md"
   },
   {
     "id": "vila-u-7b-256",
@@ -14713,7 +14997,11 @@
         "reported_label": "vila-u-7b-256"
       }
     ],
-    "model_repo": "https://huggingface.co/mit-han-lab/vila-u-7b-256"
+    "model_repo": "https://huggingface.co/mit-han-lab/vila-u-7b-256",
+    "released": "2024-10",
+    "released_source": "https://github.com/mit-han-lab/vila-u/blob/4ea42ead2ce22b035ee74c7966eed245bca3e927/README.md",
+    "license": "mit",
+    "license_source": "https://huggingface.co/mit-han-lab/vila-u-7b-256/blob/91f97e4b4746e6c2a27a168726ff5a2b9fe0d850/README.md"
   },
   {
     "id": "uniworld-v1",
@@ -14727,7 +15015,9 @@
         "reported_label": "UniWorld-V1"
       }
     ],
-    "model_repo": "https://huggingface.co/LanguageBind/UniWorld-V1"
+    "model_repo": "https://huggingface.co/LanguageBind/UniWorld-V1",
+    "released": "2025-06",
+    "released_source": "https://huggingface.co/LanguageBind/UniWorld-V1/blob/67579496ea73fbfc1a0354ddf792cce14191999e/README.md"
   },
   {
     "id": "metaquery-xl",
@@ -14764,7 +15054,12 @@
       "price_source": "https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p",
       "price_note": "USD per generated second of 720p video on fal.ai: fal states 'Your request will cost $0.04 per generated second of video. Generated seconds are calculated at 30 frames per second.' Product: fal LongCat Video text-to-video (720p/30fps) endpoint. API model: fal-ai/longcat-video/text-to-video/720p (the base model; the distilled endpoints are separate). Settings: resolution=720p, 30 fps. Price basis: per-second rate printed by fal. 480p endpoint $0.025 per generated second (counted at 15 fps). Currency: USD. Not a Meituan direct tariff. fal.ai model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Video"
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Video",
+    "params_b": 13.6,
+    "params_b_source": "https://huggingface.co/meituan-longcat/LongCat-Video/blob/03b55529b1d1d4045f5fbe14d65c8c6e8116b278/README.md",
+    "params_note": "Card table also gives '# Total Params 13.6B / # Activated Params 13.6B' (dense). Covers the video generation model.",
+    "license": "mit",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-Video/blob/03b55529b1d1d4045f5fbe14d65c8c6e8116b278/README.md"
   },
   {
     "id": "cogvideox-1-5-5b",
@@ -14821,7 +15116,10 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Lightricks/LTX-2.3"
+    "model_repo": "https://huggingface.co/Lightricks/LTX-2.3",
+    "params_b": 22,
+    "params_b_source": "https://ltx.io/llm-info",
+    "params_note": "Maker's own site. Consistent with checkpoint names on the official card (https://huggingface.co/Lightricks/LTX-2.3/blob/3c6a4e66e5d0a684231950b9c74dd4ded7b6fadc/README.md): 'ltx-2.3-22b-dev', 'ltx-2.3-22b-distilled'. Covers the audio-video DiT (text encoder separate)."
   },
   {
     "id": "ltx-2-19b-distilled",
@@ -14870,7 +15168,12 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Lightricks/LTX-2"
+    "model_repo": "https://huggingface.co/Lightricks/LTX-2",
+    "params_b": 19,
+    "params_b_source": "https://arxiv.org/abs/2601.03233",
+    "params_note": "Lightricks' LTX-2 paper (maker). Card lists the checkpoint as 'ltx-2-19b-distilled | The distilled version of the full model, 8 steps, CFG=1' and ltx.io/llm-info says 'LTX-2: The original release. Approximately 19 billion parameters.' 19B = video+audio transformer streams; Gemma text encoder and VAEs separate.",
+    "license": "ltx-2-community",
+    "license_source": "https://huggingface.co/Lightricks/LTX-2/blob/dfcc2108383fe1aaa0584bdf55d368a4bdadd90c/README.md"
   },
   {
     "id": "qwen-image-edit-2509",
@@ -14905,7 +15208,11 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-Edit-2509"
+    "model_repo": "https://huggingface.co/Qwen/Qwen-Image-Edit-2509",
+    "released": "2025-09",
+    "released_source": "https://github.com/QwenLM/Qwen-Image/blob/6b5e1f5cec987d404be5ac6657db3b9aacb56a89/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Qwen/Qwen-Image-Edit-2509/blob/d3968ef930e841f4c73640fb8afa3b306a78167e/README.md"
   },
   {
     "id": "longcat-image-edit",
@@ -14931,7 +15238,11 @@
       "price_source": "https://fal.ai/models/fal-ai/longcat-image/edit",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.15 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/longcat-image/edit (LongCat Image Edit). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Image-Edit"
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Image-Edit",
+    "released": "2025-12",
+    "released_source": "https://github.com/meituan-longcat/LongCat-Image/blob/f0e4c43c5ef74b011ff71570fbfc2bdffbc9ab06/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-Image-Edit/blob/7b54ef423aa7854be7861600024be5c56ab7875a/README.md"
   },
   {
     "id": "step1x-edit-v1-1",
@@ -14950,7 +15261,9 @@
         "reported_label": "step1x-edit-v1p1, released Jul 09, 2025"
       }
     ],
-    "model_repo": "https://huggingface.co/stepfun-ai/Step1X-Edit"
+    "model_repo": "https://huggingface.co/stepfun-ai/Step1X-Edit",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/stepfun-ai/Step1X-Edit/blob/752c0bc28a43f56249f588432a5964f1878c01ff/README.md"
   },
   {
     "id": "omnigen2",
@@ -14980,7 +15293,14 @@
       "price_source": "https://fal.ai/models/fal-ai/omnigen-v2",
       "price_note": "USD for one 1-megapixel output: fal bills fal-ai/omnigen-v2 (OmniGen V2 / OmniGen2) $0.15 per megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image generation and editing. API model: fal-ai/omnigen-v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not a BAAI direct tariff. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/OmniGen2/OmniGen2"
+    "model_repo": "https://huggingface.co/OmniGen2/OmniGen2",
+    "released": "2025-06",
+    "released_source": "https://huggingface.co/OmniGen2/OmniGen2/blob/df5dca8a981d74e6c3af214c145f5c735fe72367/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/OmniGen2/OmniGen2/blob/df5dca8a981d74e6c3af214c145f5c735fe72367/README.md",
+    "params_b": 4,
+    "params_b_source": "https://arxiv.org/html/2506.18871v1",
+    "params_note": "Diffusion decoder only (approx. 4B, the trainable part). The makers paper writes the model size as \"3B + 4B\": a frozen Qwen2.5-VL-3B-Instruct MLLM plus the 4B decoder; VAE excluded. Reviewer may prefer recording the 3B MLLM separately; no single total is stated."
   },
   {
     "id": "runway-gen-3-alpha",
@@ -15045,7 +15365,14 @@
         "reported_label": "OpenSora-2.0 [75]"
       }
     ],
-    "model_repo": "https://huggingface.co/hpcai-tech/Open-Sora-v2"
+    "model_repo": "https://huggingface.co/hpcai-tech/Open-Sora-v2",
+    "released": "2025-03",
+    "released_source": "https://github.com/hpcaitech/Open-Sora/blob/7ad6a96a135feb81f755c84fb391818718f6beb2/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/hpcai-tech/Open-Sora-v2/blob/5dd4b85059c49be387828d833060d80036cb160d/README.md",
+    "params_b": 11,
+    "params_b_source": "https://huggingface.co/hpcai-tech/Open-Sora-v2/blob/5dd4b85059c49be387828d833060d80036cb160d/README.md",
+    "params_note": "11B = the Open-Sora 2.0 video diffusion model (text encoders and VAE separate)."
   },
   {
     "id": "hunyuanvideo-i2v",
@@ -15059,7 +15386,11 @@
         "reported_label": "HunyuanVideo-13B [18]"
       }
     ],
-    "model_repo": "https://huggingface.co/tencent/HunyuanVideo-I2V"
+    "model_repo": "https://huggingface.co/tencent/HunyuanVideo-I2V",
+    "released": "2025-03",
+    "released_source": "https://huggingface.co/tencent/HunyuanVideo-I2V/blob/3914f209367854b5e470f062c33159d5ab139e1e/README.md",
+    "license": "tencent-hunyuan-community",
+    "license_source": "https://huggingface.co/tencent/HunyuanVideo-I2V/blob/3914f209367854b5e470f062c33159d5ab139e1e/README.md"
   },
   {
     "id": "kling-1-6-pro",
@@ -15100,7 +15431,14 @@
         "linked_checkpoint": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Text2World"
       }
     ],
-    "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Text2World"
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Text2World",
+    "license": "nvidia-open-model",
+    "license_source": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Text2World",
+    "params_b": 7,
+    "params_b_source": "https://arxiv.org/html/2501.03575v1",
+    "params_note": "NVIDIA's Cosmos technical report (maker paper). 7B = diffusion transformer only; T5 text encoder, CV8x8x8 tokenizer, 12B prompt upsampler and guardrails are separate.",
+    "released": "2025-01",
+    "released_source": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-world-foundation-model-platform-to-accelerate-physical-ai-development"
   },
   {
     "id": "wan-2-6-flash",
@@ -15165,7 +15503,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B"
+    "model_repo": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+    "released": "2025-02",
+    "released_source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/37ec512624d61f7aa208f7ea8140a131f93afc9a/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/37ec512624d61f7aa208f7ea8140a131f93afc9a/README.md",
+    "params_b": 1.3,
+    "params_b_source": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/blob/37ec512624d61f7aa208f7ea8140a131f93afc9a/README.md",
+    "params_note": "1.3B = diffusion transformer size per the card's model-configuration table (Model 1.3B, dim 1536, 30 layers); T5 encoder and VAE separate."
   },
   {
     "id": "z-image-base",
@@ -15209,7 +15554,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/Tongyi-MAI/Z-Image"
+    "model_repo": "https://huggingface.co/Tongyi-MAI/Z-Image",
+    "released": "2026-01",
+    "released_source": "https://github.com/Tongyi-MAI/Z-Image/blob/26f23eda626ffadda020b04ff79488e1d72004cd/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/Tongyi-MAI/Z-Image/blob/04cc4abb7c5069926f75c9bfde9ef43d49423021/README.md",
+    "params_b": 6,
+    "params_b_source": "https://github.com/Tongyi-MAI/Z-Image/blob/26f23eda626ffadda020b04ff79488e1d72004cd/README.md",
+    "params_note": "The maker states 6B for the Z-Image family (S3-DiT), which lists Z-Image as one of the four variants; same figure as catalogued z-image-turbo (6). Covers the diffusion transformer per the family statement; text encoder not separately counted."
   },
   {
     "id": "longcat-image",
@@ -15244,7 +15596,14 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Image"
+    "model_repo": "https://huggingface.co/meituan-longcat/LongCat-Image",
+    "released": "2025-12",
+    "released_source": "https://github.com/meituan-longcat/LongCat-Image/blob/f0e4c43c5ef74b011ff71570fbfc2bdffbc9ab06/README.md",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/meituan-longcat/LongCat-Image/blob/d2ea50b79a930074c37b9b97ce45e3b2ea8cf4d8/README.md",
+    "params_b": 6,
+    "params_b_source": "https://huggingface.co/meituan-longcat/LongCat-Image/blob/d2ea50b79a930074c37b9b97ce45e3b2ea8cf4d8/README.md",
+    "params_note": "The makers technical report (arXiv 2512.07584, CC BY 4.0) clarifies this is the core diffusion model: \"With a core diffusion model of only 6B parameters\"; text encoder/VAE not included."
   },
   {
     "id": "flux-1-krea-dev",
@@ -15266,7 +15625,9 @@
       "price_source": "https://replicate.com/black-forest-labs/flux-krea-dev",
       "price_note": "USD per output image on Replicate's official black-forest-labs/flux-krea-dev model (billing: $0.025 per output image, \"or 40 images for $1\"; hardware time not added). The current version is served from replicate-pruna/flux-krea-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-krea-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux/krea bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL or Krea direct tariff. Replicate official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev"
+    "model_repo": "https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev",
+    "released": "2025-07",
+    "released_source": "https://bfl.ai/announcements/flux-1-krea-dev"
   },
   {
     "id": "hunyuanimage-2-1",
@@ -15288,7 +15649,14 @@
       "price_source": "https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image",
       "price_note": "USD for one 1-megapixel output: fal bills this endpoint $0.1 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v2.1/text-to-image (Hunyuan Image 2.1). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26."
     },
-    "model_repo": "https://huggingface.co/tencent/HunyuanImage-2.1"
+    "model_repo": "https://huggingface.co/tencent/HunyuanImage-2.1",
+    "released": "2025-09",
+    "released_source": "https://huggingface.co/tencent/HunyuanImage-2.1/blob/e435da11d9e8795a25e224c5ba27b099ed45c55b/README.md",
+    "license": "tencent-hunyuan-community",
+    "license_source": "https://huggingface.co/tencent/HunyuanImage-2.1/blob/e435da11d9e8795a25e224c5ba27b099ed45c55b/LICENSE",
+    "params_b": 17,
+    "params_b_source": "https://huggingface.co/tencent/HunyuanImage-2.1/blob/e435da11d9e8795a25e224c5ba27b099ed45c55b/README.md",
+    "params_note": "Base text-to-image diffusion transformer only; excludes the MLLM and character-aware text encoders, the refiner stage and the VAE."
   },
   {
     "id": "step1x-edit-v1-2",
@@ -15311,7 +15679,9 @@
         "reported_label": "Step1X-Edit-v1p2 (referred to as ReasonEdit-S), released Nov 26, 2025"
       }
     ],
-    "model_repo": "https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2"
+    "model_repo": "https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/stepfun-ai/Step1X-Edit-v1p2/blob/ca85b97fd19f2235dc0d6fd3633d1319f169e149/README.md"
   },
   {
     "id": "step-3-7-flash",
@@ -24484,7 +24854,10 @@
     "identity_sources": [
       "https://huggingface.co/SWivid/F5-TTS/tree/84e5a410d9cead4de2f847e7c9369a6440bdfaca/F5TTS_Base"
     ],
-    "model_repo": "https://huggingface.co/SWivid/F5-TTS"
+    "model_repo": "https://huggingface.co/SWivid/F5-TTS",
+    "params_b": 0.3358,
+    "params_b_source": "https://arxiv.org/html/2410.06885v3",
+    "params_note": "Maker paper (SWivid team). Matches the catalogue checkpoint F5TTS_Base/model_1200000 (1.2M updates; F5TTS_Base.yaml dim 1024, depth 22, heads 16). Covers the F5-TTS DiT + ConvNeXt text model only; excludes the separate Vocos vocoder."
   },
   {
     "id": "e2-tts-base",
@@ -24514,7 +24887,10 @@
     "identity_sources": [
       "https://huggingface.co/SWivid/E2-TTS/tree/851141880b5ca38050025e98dfdee27dc553f86e/E2TTS_Base"
     ],
-    "model_repo": "https://huggingface.co/SWivid/E2-TTS"
+    "model_repo": "https://huggingface.co/SWivid/E2-TTS",
+    "params_b": 0.3332,
+    "params_b_source": "https://arxiv.org/html/2410.06885v3",
+    "params_note": "F5-TTS paper by the same SWivid team that released SWivid/E2-TTS E2TTS_Base/model_1200000 (paper: base models trained to 1.2M updates). Covers the E2 TTS transformer only; excludes the Vocos vocoder."
   },
   {
     "id": "maskgct",
@@ -24816,7 +25192,10 @@
       "https://huggingface.co/FireRedTeam/FireRedTTS/tree/2447325dc4dade22b945c22284e8db0223125a07",
       "https://github.com/FireRedTeam/FireRedTTS"
     ],
-    "model_repo": "https://huggingface.co/FireRedTeam/FireRedTTS"
+    "model_repo": "https://huggingface.co/FireRedTeam/FireRedTTS",
+    "params_b": 0.4,
+    "params_b_source": "https://arxiv.org/html/2409.03283",
+    "params_note": "FireRedTTS technical report by the maker (linked from the official FireRedTeam/FireRedTTS card). Covers the text-to-speech language model only; the SAST speech tokenizer and the token-to-waveform module sizes are not stated. The HF repo was later updated (2024-10-17 rich-punctuation model); the report does not say whether that update changed the LM size."
   },
   {
     "id": "indextts",
@@ -25173,7 +25552,10 @@
       "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/tree/8196688df56a8d08ccfa186505343adff412ab6b",
       "https://arxiv.org/abs/2609.03502v1"
     ],
-    "model_repo": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge"
+    "model_repo": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge",
+    "params_b": 0.082,
+    "params_b_source": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/blob/8196688df56a8d08ccfa186505343adff412ab6b/README.md",
+    "params_note": "Official wayu-ai model card for this exact checkpoint; card table also lists \"Wayu-Paxa-TTS-Edge | 82M\". Whole released model as stated by the maker."
   },
   {
     "id": "fun-cosyvoice3-0-5b-2512",
@@ -25881,7 +26263,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Guanaco-33B"
       }
-    ]
+    ],
+    "license": "llama-1-noncommercial-research",
+    "license_source": "https://github.com/artidoro/qlora/blob/7f4e95a68dc076bea9b3a413d2b512eca6d004e5/README.md#L20-L22"
   },
   {
     "id": "rwkv-4-raven-14b",
@@ -26840,7 +27224,11 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "InternLM2.5-20B-chat"
       }
-    ]
+    ],
+    "released": "2024-08",
+    "released_source": "https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/README.md#L53",
+    "license": "other",
+    "license_source": "https://huggingface.co/internlm/internlm2_5-20b-chat/blob/13741228cfb01d3a69c8f83169a105de77286b8a/README.md"
   },
   {
     "id": "chatglm-6b",
@@ -26868,7 +27256,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "ChatGLM-6B"
       }
-    ]
+    ],
+    "license": "chatglm-6b-license",
+    "license_source": "https://huggingface.co/zai-org/chatglm-6b/blob/bf0f5cfb575eebebf9b655c5861177acfee03f16/MODEL_LICENSE"
   },
   {
     "id": "chatglm2-6b",
@@ -26896,7 +27286,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "ChatGLM2-6B"
       }
-    ]
+    ],
+    "license": "chatglm2-6b-license",
+    "license_source": "https://huggingface.co/zai-org/chatglm2-6b/blob/d2e2d91789248536a747d9ce60642a336444186c/MODEL_LICENSE"
   },
   {
     "id": "chatglm3-6b",
@@ -26924,7 +27316,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "ChatGLM3-6B"
       }
-    ]
+    ],
+    "license": "chatglm3-6b-license",
+    "license_source": "https://huggingface.co/zai-org/chatglm3-6b/blob/e9e0406d062cdb887444fe5bd546833920abd4ac/MODEL_LICENSE"
   },
   {
     "id": "cogvlm2-llama3-chat-19b",
@@ -30605,7 +30999,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Yi-Lightning"
       }
-    ]
+    ],
+    "released": "2024-10",
+    "released_source": "https://www.01.ai/about.html"
   },
   {
     "id": "yi-vision",
@@ -30649,7 +31045,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
         "reported_label": "ppl-sonar-pro-high"
       }
-    ]
+    ],
+    "released": "2025-01",
+    "released_source": "https://docs.perplexity.ai/docs/resources/changelog.md"
   },
   {
     "id": "sonar-reasoning-pro",
@@ -35613,7 +36011,10 @@
     "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
     "model_repo": "https://huggingface.co/Darshan7575/librispeech_960_multiconvformer_ctcatt_conv_fusion",
     "identity_note": "Exact LibriSpeech 960h recipe run, README lines 209–263. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
-    "license": "cc-by-4.0"
+    "license": "cc-by-4.0",
+    "params_b": 0.14741,
+    "params_b_source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md#L209-L214",
+    "params_note": "README lines 209-210 (same section the catalogue identity note cites, 209-263); the section's model link is the row's model_repo. 147.41 M = ASR model (encoder+decoder) as stated; the separately listed Transformer LM is not included (this row is the no-LM result)."
   },
   {
     "id": "espnet-e-branchformer",
@@ -35627,7 +36028,10 @@
     "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
     "model_repo": "https://huggingface.co/asapp/e_branchformer_librispeech",
     "identity_note": "Exact LibriSpeech 960h recipe run, README lines 264–318. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
-    "license": "cc-by-4.0"
+    "license": "cc-by-4.0",
+    "params_b": 0.14892,
+    "params_b_source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md#L264-L269",
+    "params_note": "README lines 264-265 (identity note cites 264-318); model link matches the row's model_repo. ASR model only; LM not included."
   },
   {
     "id": "espnet-branchformer-18layer",
@@ -35641,7 +36045,10 @@
     "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
     "model_repo": "https://huggingface.co/pyf98/librispeech_branchformer_e18_linear3072",
     "identity_note": "Exact LibriSpeech 960h recipe run, README lines 319–399. Published checkpoint linked by recipe authors; a compatible local command has not yet been verified. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model.",
-    "license": "cc-by-4.0"
+    "license": "cc-by-4.0",
+    "params_b": 0.11688,
+    "params_b_source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md#L319-L324",
+    "params_note": "README lines 319-320 (identity note cites 319-399); model link matches model_repo. ASR model only; LM not included."
   },
   {
     "id": "espnet-conformer-s4-decoder",
@@ -35666,7 +36073,10 @@
     "source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md",
     "model_repo": "https://huggingface.co/espnet/kmiyazaki_librispeech_asr_s4_decoder",
     "identity_note": "Exact LibriSpeech 960h recipe run, README lines 400–455. Published checkpoint and inference API verified in the model card. Decoder and checkpoint averaging are recorded per result. Architecture names do not denote a generic pretrained model. Local command is the publisher’s CPU inference example for audio.wav; to reproduce the reported WER use the exact recipe decoder settings recorded with each result. Memory is an estimated 8GB runtime budget for short utterances, not a measurement.",
-    "license": "cc-by-4.0"
+    "license": "cc-by-4.0",
+    "params_b": 0.1132,
+    "params_b_source": "https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md#L400-L405",
+    "params_note": "README lines 400-401 (identity note cites 400-455); pretrained-model link matches model_repo. ASR model only; LM not included."
   },
   {
     "id": "espnet-conformer-2020-lm",

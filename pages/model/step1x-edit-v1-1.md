@@ -4,7 +4,7 @@
 
 # Step1X-Edit v1.1
 
-StepFun · released 2025-07
+StepFun · released 2025-07 · apache-2.0
 
 **score 47.2** ±5.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

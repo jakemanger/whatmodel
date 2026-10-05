@@ -4,7 +4,7 @@
 
 # Z-Image (Base)
 
-Alibaba (Tongyi-MAI)
+Alibaba (Tongyi-MAI) · released 2026-01 · 6B params · apache-2.0
 
 **score 56.7** ±4.0 · #53 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

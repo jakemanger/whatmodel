@@ -31,12 +31,16 @@ export type Model = {
   provider: string;
   category?: Category; // default "llm"
   released?: string;
+  released_source?: string;
   source?: string;
   model_repo?: string;
   identity_note?: string;
   open_weights: boolean;
   license?: string;
+  license_source?: string;
   params_b?: number;
+  params_b_source?: string;
+  params_note?: string;
   active_b?: number;
   context_k?: number;
   context_source?: string;
@@ -89,6 +93,7 @@ export type Hardware = {
   memory_gb: number[] | null; // CPU memory bandwidth entries do not specify a RAM capacity.
   bandwidth_gbs: number;
   released?: string;
+  released_source?: string;
   source: string;
 };
 

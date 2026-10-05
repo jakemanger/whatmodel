@@ -4,7 +4,7 @@
 
 # Qwen-Image-Edit
 
-Alibaba · Apache 2.0
+Alibaba · released 2025-08 · Apache 2.0
 
 **score 55.9** ±2.4 · #56 of 114 · from 4 benchmark results across 4 sources
 

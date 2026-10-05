@@ -4,7 +4,7 @@
 
 # Tortoise TTS v2
 
-Tortoise
+Tortoise · released 2022-04 · apache-2.0
 
 **score 26.4** ±2.0 · #85 of 92 · from 14 benchmark results across 8 sources
 

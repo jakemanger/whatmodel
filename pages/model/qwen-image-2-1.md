@@ -4,7 +4,7 @@
 
 # Qwen-Image-2.1
 
-Alibaba · qwen-research
+Alibaba · released 2026-09 · 7B params · qwen-research
 
 **score 70.2** ±1.7 · #14 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

@@ -4,7 +4,7 @@
 
 # Qwen-Image-Edit-2509
 
-Alibaba
+Alibaba · released 2025-09 · apache-2.0
 
 **score 56.3** ±5.5 · #54 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

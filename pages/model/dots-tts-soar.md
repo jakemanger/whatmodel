@@ -4,7 +4,7 @@
 
 # dots.tts SOAR 2B
 
-dots.tts
+dots.tts · released 2026-06 · 2B params · apache-2.0
 
 **score 55.7** ±2.8 · #38 of 92 · from 3 benchmark results across 1 source
 

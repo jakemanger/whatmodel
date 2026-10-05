@@ -4,7 +4,7 @@
 
 # Grok Imagine Video 1.5
 
-xAI · closed weights
+xAI · released 2026-06 · closed weights
 
 **score 72.8** ±2.2 · #10 of 76 · from 3 benchmark results across 3 sources
 

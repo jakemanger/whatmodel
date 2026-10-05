@@ -4,7 +4,7 @@
 
 # VoxCPM2
 
-OpenBMB · apache-2.0
+OpenBMB · released 2026-04 · 2B params · apache-2.0
 
 **score 61.3** ±1.5 · #25 of 92 · from 12 benchmark results across 5 sources
 

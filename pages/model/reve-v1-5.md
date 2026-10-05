@@ -4,7 +4,7 @@
 
 # Reve V1.5
 
-Reve · closed weights
+Reve · released 2026-02 · closed weights
 
 **score 62.8** ±1.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

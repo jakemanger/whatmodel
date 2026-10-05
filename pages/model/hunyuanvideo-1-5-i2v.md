@@ -4,7 +4,7 @@
 
 # HunyuanVideo 1.5 (I2V)
 
-Tencent
+Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
 **score 49.1** ±2.7 · #44 of 76 · from 3 benchmark results across 3 sources
 
