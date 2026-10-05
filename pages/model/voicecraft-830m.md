@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-03 · coqui-public-model-license
 
-**score 33.2** ±3.5 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 33.7** ±3.5 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    34.4   2024-06-14   52% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    32.1   2024-06-14   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    27.2   2024-06-14   21% ▇▇▇
+<a name="speech-voicecraft-report-bysa"></a>VoiceCraft: Zero-Shot…  <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS list…</a>  4.17 / 5    35.0   2024-06-14   52% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>     55.0%    32.7   2024-06-14   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.16973v3">VoiceCraft zero-shot TTS set …</a>      4.5%    27.8   2024-06-14   21% ▇▇▇
 prior                   pull toward the middle                      49.9                 5% ▇
-                        weighted average                          = 33.2
+                        weighted average                          = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

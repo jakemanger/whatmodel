@@ -6,7 +6,7 @@
 
 IndexTeam (bilibili) · released 2025-03 · bilibili-model-use-license
 
-**score 47.7** ±2.5 · comparison only: no current run option verified · from 6 benchmark results across 1 source
+**score 48.6** ±2.5 · #47 of 67 · from 6 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      1.9%    45.8   2025-10-15   20% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.6%    45.9   2025-10-15   19% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.98 / 5    52.8   2025-10-15   17% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     62.0%    43.2   2025-10-15   15% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     61.0%    42.4   2025-10-15   13% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  4.35 / 5    56.0   2025-10-15   13% ▇▇
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      1.9%    46.8   2025-10-15   20% ▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.6%    46.8   2025-10-15   19% ▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.98 / 5    53.8   2025-10-15   17% ▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     62.0%    44.1   2025-10-15   15% ▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     61.0%    43.4   2025-10-15   14% ▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  4.35 / 5    57.0   2025-10-15   13% ▇▇
 prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 47.7
+                        weighted average                          = 48.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,6 +32,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 on CPU (index-tts repo CLI `indext…  ~1.22GB   48.6
+</pre>
+
+```sh
+# fp32 on CPU (index-tts repo CLI `indextts`)
+git clone https://github.com/index-tts/index-tts.git && cd index-tts && git checkout 8d2759b2b73b920e58ccc0167fc2a445fb170860 && pip install -r requirements.txt && huggingface-cli download IndexTeam/Index-TTS bigvgan_discriminator.pth bigvgan_generator.pth bpe.model dvae.pth gpt.pth unigram_12000.vocab --local-dir checkpoints && pip install -e . && indextts "大家好，我现在正在bilibili 体验 ai 科技，说实话，来之前我绝对想不到！AI技术已经发展到这样匪夷所思的地步了！" --voice reference_voice.wav --model_dir checkpoints --config checkpoints/config.yaml --output output.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/indextts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

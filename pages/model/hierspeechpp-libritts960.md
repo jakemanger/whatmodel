@@ -6,7 +6,7 @@
 
 Korea University (Sang-Hoon Lee et al.) · released 2023-11 · 0.097B params · mit
 
-**score 37.5** ±4.6 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 37.9** ±4.6 · comparison only: no current run option verified · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    39.3   2024-09-16   79% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    20.6   2024-09-16    9% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%     9.5   2024-09-16    3% ▇
+<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    39.8   2024-09-16   78% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    21.3   2024-09-16    9% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%    10.7   2024-09-16    4% ▇
 prior                   pull toward the middle                      49.9                 9% ▇
-                        weighted average                          = 37.5
+                        weighted average                          = 37.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

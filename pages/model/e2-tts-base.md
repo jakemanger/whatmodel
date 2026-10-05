@@ -6,7 +6,7 @@
 
 SWivid (SJTU X-LANCE) · released 2024-10 · cc-by-nc-4.0
 
-**score 44.5** ±1.4 · #40 of 46 · from 20 benchmark results across 5 sources
+**score 45.5** ±1.4 · #52 of 67 · from 20 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,28 +16,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      2.2%    44.1   2025-10-15    6% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.7%    45.0   2025-10-15    6% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.20 / 5    39.9   2025-10-15    6% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     70.0%    49.1   2025-10-15    5% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     71.0%    49.9   2025-10-15    4% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  3.47 / 5    39.0   2025-10-15    4% ▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.29 / 5    51.8   2025-10-15    3% ▇
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     71.0%    44.2   2024-10-09    8% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     69.0%    43.0   2024-10-09    7% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      2.2%    41.4   2024-10-09    6% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     73.0%    39.3   2024-10-09    5% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.9%    38.0   2024-10-09    3% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      2.0%    38.4   2024-10-09    2% ▇
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.37 / 5    46.8   2025-05-11   22% ▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.41 / 5    42.3   2025-05-11    3% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.8%    45.5   2025-05-15    3% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.5%    42.5   2025-05-15    2% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>    1116.7    55.2   2026-06-19    3% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     86.3%    45.4   2026-06-19    1% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     30.8%     5.8   2026-06-19    0% ▇
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      2.2%    45.1   2025-10-15    7% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.7%    46.0   2025-10-15    6% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.20 / 5    40.9   2025-10-15    6% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     70.0%    50.1   2025-10-15    5% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     71.0%    50.9   2025-10-15    5% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  3.47 / 5    39.9   2025-10-15    4% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  3.29 / 5    52.7   2025-10-15    3% ▇
+<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     71.0%    45.3   2024-10-09    8% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     69.0%    44.2   2024-10-09    7% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      2.2%    42.6   2024-10-09    6% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     73.0%    40.5   2024-10-09    5% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.9%    39.2   2024-10-09    3% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      2.0%    39.5   2024-10-09    2% ▇
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  4.37 / 5    47.9   2025-05-11   20% ▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.41 / 5    43.2   2025-05-11    3% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.8%    46.4   2025-05-15    3% ▇
+                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     89.5%    43.5   2025-05-15    2% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>    1116.7    56.1   2026-06-19    3% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     86.3%    46.3   2026-06-19    1% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     30.8%     6.2   2026-06-19    0% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 44.5
+                        weighted average                          = 45.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,7 +48,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version    needs  score
-fp32     ~1.33GB   44.5
+fp32     ~1.33GB   45.5
 </pre>
 
 ```sh

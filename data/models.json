@@ -7951,16 +7951,6 @@
     "local": {
       "variants": [
         {
-          "quant": "fp32-onnx",
-          "gb": 0.89,
-          "cmd": "uv tool install kokoro-tts && wget https://github.com/nazdridoy/kokoro-tts/releases/download/v1.0.0/kokoro-v1.0.onnx https://github.com/nazdridoy/kokoro-tts/releases/download/v1.0.0/voices-v1.0.bin && echo 'Hello world' > in.txt && kokoro-tts in.txt out.wav --voice af_heart",
-          "platform": "any",
-          "source": "https://github.com/nazdridoy/kokoro-tts",
-          "gb_source": "https://docs.clore.ai/guides/audio-and-voice/kokoro-tts",
-          "note": "Clore.ai states '< 2 GB VRAM' minimum and that it runs on CPU; Spheron measured 2-3 GB total GPU memory incl. CUDA buffers",
-          "gb_estimated": true
-        },
-        {
           "quant": "bf16",
           "gb": 0.7,
           "cmd": "pip install mlx-audio misaki && mlx_audio.tts.generate --model mlx-community/Kokoro-82M-bf16 --text 'Hello, world!' --voice af_heart",
@@ -7968,6 +7958,16 @@
           "source": "https://github.com/Blaizzy/mlx-audio",
           "gb_source": "https://docs.clore.ai/guides/audio-and-voice/kokoro-tts",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32 (kokoro package 0.9.4)",
+          "gb": 0.33,
+          "gb_estimated": true,
+          "cmd": "pip install \"kokoro>=0.9.4\" soundfile && python3 -m kokoro --text \"The sky above the port was the color of television, tuned to a dead channel.\" -o file.wav",
+          "platform": "any",
+          "source": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/__main__.py",
+          "gb_source": "https://huggingface.co/hexgrad/Kokoro-82M/tree/f3ff3571791e39611d31c381e3a41a3af07b4987",
+          "note": "official kokoro package 0.9.4 (hexgrad/kokoro CLI, PyTorch). Platform evidence: KPipeline docstring: \"device: Override default device selection ('cuda' or 'cpu', or None for auto) If None, will auto-select cuda if available\", code: \"if torch.cuda.is_available(): device = 'cuda' e… Command: chained the README install step (`pip install -q kokoro>=0.9.4 soundfile`, Colab `!` and -q dropped, version spec quoted for the shell) with `&&` in front of the CLI example from the kokoro/__main__.py docstring (`python3 -m kokoro --text \"...\" -o file.wav --debug`), with the optional `--debug` flag… gb is the sum of the weight files the command loads (kokoro-v1_0.pth 0.33 GB); runtime memory is higher. kokoro 0.9.4 pyproject: requires-python \">=3.10, <3.14\" (fails on Python 3.14). README installs espeak-ng (`apt-get -qq -y install espeak-ng`) \"used for English OOD fallback and some non-English languages\";"
         }
       ]
     }
@@ -8010,6 +8010,16 @@
           "gb_source": "https://docs.clore.ai/guides/audio-and-voice/chatterbox-tts",
           "note": "README says device can be 'cuda', 'cpu' or 'mps'",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32 (chatterbox-tts 0.1.7)",
+          "gb": 3.19,
+          "gb_estimated": true,
+          "cmd": "pip install chatterbox-tts && python -c \"import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cpu'); ta.save('out.wav', m.generate('Hello world'), m.sr)\"",
+          "platform": "any",
+          "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+          "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "note": "chatterbox-tts 0.1.7 (PyPI, official package). Platform evidence: device = \"cuda\" # or \"cpu\" / \"mps\" (https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md); Command: README install step chained with && and the README 'Chatterbox and Chatterbox-Multilingual' Python snippet (English part) wrapped as a python -c one-liner with device='cpu' (README: device = \"cuda\" # or \"cpu\" / \"mps\") and placeholder text shortened; gb is the sum of the weight files the command loads (ve.safetensors 0.01 GB; t3_cfg.safetensors 2.13 GB; s3gen.safetensors 1.06 GB); runtime memory is higher. No reference clip needed (built-in conds.pt voice); pass audio_prompt_path='ref.wav' to clone. pyproject pins torch==2.6.0/torchaudio==2.6.0 for Python <3.14 and numpy<2 for Python <3.13;"
         }
       ]
     },
@@ -8037,11 +8047,31 @@
         {
           "quant": "bf16",
           "gb": 11.44,
-          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text 'Hello world' && python fish_speech/models/dac/inference.py -i codes_0.npy",
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text 'Hello world' && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth",
           "platform": "nvidia",
-          "source": "https://speech.fish.audio/inference/",
-          "note": "Fish docs recommend at least 24GB GPU memory for S2. Inference steps are from the docs; the clone+pip install prefix follows the repo's install page and was not run by us.",
+          "source": "https://github.com/fishaudio/fish-speech/blob/214da3cd841bda85da2496b96cd3c4d7edb1337e/docs/en/inference.md",
+          "note": "Corrected 2026-10-05: at fish-speech 214da3c text2semantic writes output/codes_0.npy (--output-dir defaults to \"output\") and dac/inference.py defaults to the S1 codec path, so both are passed explicitly. Docs: \"We recommend using a GPU with at least 24GB for inference.\"",
           "gb_estimated": true
+        },
+        {
+          "quant": "bf16 (fish-speech official repo CLI)",
+          "gb": 11.01,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e \".[cpu]\" && hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro && python fish_speech/models/text2semantic/inference.py --text \"Hello world\" --device cpu && python fish_speech/models/dac/inference.py -i output/codes_0.npy --checkpoint-path checkpoints/s2-pro/codec.pth --device cpu",
+          "platform": "any",
+          "source": "https://github.com/fishaudio/fish-speech/blob/214da3cd841bda85da2496b96cd3c4d7edb1337e/docs/en/inference.md",
+          "gb_source": "https://huggingface.co/fishaudio/s2-pro/tree/1de9996b6be38b745688de084d87a5633f714e4e",
+          "note": "fish-speech official repo CLI (main @ 214da3c, CPU-only install extra). Platform evidence: \"# CPU-only installation\\npip install -e .[cpu]\" and \"# For CPU-only deployment\\nBACKEND=cpu docker compose --profile webui up\" (https://github.com/fishaudio/fish-speech/blob/214da3cd841bda85da2496b96… Command: Documented steps chained with &&: clone (install.md docker section), 'pip install -e .[cpu]' ('# CPU-only installation', quoted for zsh), docs 'hf download fishaudio/s2-pro --local-dir checkpoints/s2-pro', docs step 2 without the optional reference prompt (docs: 'If you plan to let the model randoml… gb is the sum of the weight files the command loads (model-00001-of-00002.safetensors 4.99 GB; model-00002-of-00002.safetensors 4.14 GB; tokenizer.json 0.01 GB; codec.pth 1.87 GB); runtime memory is higher. Docs only state GPU requirements (24 GB); CPU is supported at install level (cpu extra, CPU Docker images, WebUI auto-falls back to CPU) but a 4.5B bf16 model on CPU will be very slow."
+        },
+        {
+          "quant": "bf16 (mlx-audio)",
+          "gb": 11.01,
+          "gb_estimated": true,
+          "cmd": "pip install -U mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/fish-audio-s2-pro-bf16 --text \"Hello, this is a test.\"",
+          "platform": "mac",
+          "source": "https://huggingface.co/mlx-community/fish-audio-s2-pro-bf16/blob/eccd57bf5c1ebc13cb2f993df867f4e49931a36a/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/fish-audio-s2-pro-bf16/tree/eccd57bf5c1ebc13cb2f993df867f4e49931a36a",
+          "note": "mlx-audio (Blaizzy) >= 0.4.0. Platform evidence: mlx-audio (MLX, Apple Silicon) model README: '| `mlx-community/fish-audio-s2-pro` | Fish Audio S2 Pro |' and model = load_model(\"mlx-community/fish-audio-s2-pro\") (https://github.com/Blaizzy/mlx-audio… Command: Verbatim install + CLI example from the mlx-community model card, chained with &&. The mlx-audio README at the pinned commit names the repo as mlx-community/fish-audio-s2-pro, which the HF API now 307-redirects to mlx-community/fish-audio-s2-pro-bf16 (renamed). gb is the sum of the weight files the command loads (model-00001-of-00002.safetensors 4.99 GB; model-00002-of-00002.safetensors 4.14 GB; codec.safetensors 1.87 GB; tokenizer.json 0.01 GB); runtime memory is higher. No reference audio required (random voice); clone with ref_audio + ref_text. mlx-community/fish-audio-s2-pro-8bit (c8d4481b3f7cbfe64d855c8b7cda7739502fc3ff, model.safetensors 4,847,260,185 B + codec 1,870,921,167 B) exis…"
         }
       ]
     },
@@ -8064,11 +8094,21 @@
         {
           "quant": "bf16",
           "gb": 1.7,
-          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s1-mini --local-dir checkpoints/s1-mini && python fish_speech/models/text2semantic/inference.py --text 'Hello world' --checkpoint-path checkpoints/s1-mini && python fish_speech/models/dac/inference.py -i codes_0.npy --checkpoint-path checkpoints/s1-mini/codec.pth",
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e \".[cu129]\" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text \"Hello world\" --compile && python fish_speech/models/dac/inference.py -i temp/codes_0.npy",
           "platform": "nvidia",
-          "source": "https://nexgpu.net/en/models/fish-speech/",
-          "note": "Memory is NexGPU's 'estimated 4GB floor' (bf16 weights ~1GB). Command adapted from the S2 docs at https://speech.fish.audio/inference/ with the S1-mini checkpoint path; not verified against the current fish-speech branch.",
+          "source": "https://github.com/fishaudio/fish-speech/blob/d3df50503b36314a964f66cac1af1e19e95bcfa3/docs/en/inference.md",
+          "note": "Corrected 2026-10-05: fish-speech main now only supports S2, so the command checks out d3df505, the last commit with the OpenAudio S1 docs, and reads codes from temp/ where that version writes them. The Hugging Face repo is gated (accept its terms). Docs: \"12GB is recommended for fluently inference.\"",
           "gb_estimated": true
+        },
+        {
+          "quant": "bf16 (fish-speech official repo CLI)",
+          "gb": 3.61,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e \".[cpu]\" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text \"Hello world\" --device cpu && python fish_speech/models/dac/inference.py -i temp/codes_0.npy --device cpu",
+          "platform": "any",
+          "source": "https://github.com/fishaudio/fish-speech/blob/d3df50503b36314a964f66cac1af1e19e95bcfa3/docs/en/inference.md",
+          "gb_source": "https://huggingface.co/fishaudio/s1-mini/tree/f4b445029346701e082b60bb63fcc2d1bb17a0e2",
+          "note": "fish-speech official repo CLI pinned to the last OpenAudio-S1 commit (d3df505, 2026-01-08), CPU-only install extra. Platform evidence: \"# CPU-only installation\\npip install -e .[cpu]\" (https://github.com/fishaudio/fish-speech/blob/d3df50503b36314a964f66cac1af1e19e95bcfa3/docs/en/install.md); Command: Steps from the S1-era docs (docs/en/inference.md + install.md at d3df505) chained with &&; added 'git checkout <sha>' because main moved to S2 (see notes); 'pip install -e .[cpu]' quoted for zsh; gb is the sum of the weight files the command loads (model.pth 1.74 GB; codec.pth 1.87 GB); runtime memory is higher. HF repo is gated (auto-approve): accept the terms on huggingface.co/fishaudio/s1-mini and 'hf auth login' first, otherwise the download returns 'Access to model fishaudio/s1-mini is restricted'."
         }
       ]
     }
@@ -8170,13 +8210,14 @@
     "local": {
       "variants": [
         {
-          "quant": "bf16",
-          "gb": 6.98,
-          "cmd": "git clone https://github.com/vibevoice-community/VibeVoice && cd VibeVoice && pip install -e . && python demo/inference_from_file.py --model_path vibevoice/VibeVoice-1.5B --txt_path demo/text_examples/1p_abs.txt --speaker_names Alice",
-          "platform": "nvidia",
-          "source": "https://localaimaster.com/blog/vibevoice-local-setup-guide",
-          "note": "Source: '~6GB (8GB card minimum)'. Microsoft removed the TTS code from its repo (Sep 2025); this uses the community fork.",
-          "gb_estimated": true
+          "quant": "bf16 (transformers >=5.17.0)",
+          "gb": 5.42,
+          "gb_estimated": true,
+          "cmd": "pip install \"transformers[torch]>=5.17.0\" diffusers soundfile && python -c \"import os; from transformers import AutoProcessor, AutoModelForTextToWaveform; model_id='vibevoice/VibeVoice-1.5B-hf'; processor=AutoProcessor.from_pretrained(model_id); model=AutoModelForTextToWaveform.from_pretrained(model_id, device_map='auto'); conversation=[{'role':'0','content':[{'type':'text','text':'Hello, nice to meet you. How are you?'}]}]; inputs=processor.apply_chat_template(conversation, return_dict=True, tokenize=True, add_generation_prompt=True).to(model.device, model.dtype); audio=model.generate(**inputs); processor.save_audio(audio, 'VibeVoice-1.5B-hf_tts.wav')\"",
+          "platform": "any",
+          "source": "https://github.com/huggingface/transformers/blob/a906d3c4b65095f2308b6a6a193e934d03b8eb5d/docs/source/en/model_doc/vibevoice.md",
+          "gb_source": "https://huggingface.co/vibevoice/VibeVoice-1.5B-hf/tree/d4cd82eb4371bf3e3d088e1ea7fa4eefb60449bf",
+          "note": "transformers >=5.17.0 (VibeVoiceForConditionalGeneration, AutoModelForTextToWaveform). Platform evidence: Doc snippet: \"model = AutoModelForTextToWaveform.from_pretrained(model_id, device_map=\\\"auto\\\")\" (https://github.com/huggingface/transformers/blob/a906d3c4b65095f2308b6a6a193e934d03b8eb5d/docs/source/… Command: The 'Text-to-speech (TTS)' Python snippet from the transformers VibeVoice docs wrapped as a python -c one-liner (print removed, f-string filename replaced by its literal value). gb is the sum of the weight files the command loads (model-00001-of-00003.safetensors 1.97 GB; model-00002-of-00003.safetensors 1.99 GB; model-00003-of-00003.safetensors 1.44 GB; tokenizer.json 0.01 GB); runtime memory is higher. Requires transformers >=5.17.0 (VibeVoice code is present in the v5.17.0 and v5.18.0 release tags; PyPI latest is 5.18.0)."
         }
       ]
     },
@@ -8200,9 +8241,9 @@
           "quant": "bf16",
           "gb": 4.34,
           "cmd": "git clone https://github.com/Zyphra/Zonos && cd Zonos && uv sync && uv pip install -e . && uv run sample.py",
-          "platform": "nvidia",
+          "platform": "any",
           "source": "https://github.com/Zyphra/Zonos",
-          "note": "README: 6GB+ VRAM; hybrid model needs RTX 3000-series or newer; also needs espeak-ng. Docker alternative: docker compose up",
+          "note": "README: \"Zonos can also run on CPU provided there is enough free RAM. However, this will be a lot slower than running on a dedicated GPU\". The code disables MPS, so Macs run it on the CPU. The hybrid checkpoint still needs an NVIDIA GPU.",
           "gb_estimated": true
         }
       ]
@@ -8219,7 +8260,28 @@
     "license": "coqui-public-model-license",
     "api": null,
     "local": {
-      "variants": []
+      "variants": [
+        {
+          "quant": "fp32 (coqui-tts 0.27.5)",
+          "gb": 1.88,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text \"It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent.\" --speaker_idx \"Ana Florence\" --language_idx en --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/xtts.md",
+          "gb_source": "https://huggingface.co/coqui/XTTS-v2/tree/6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+          "note": "coqui-tts 0.27.5 (idiap/coqui-ai-TTS, maintained Coqui fork) CLI. Platform evidence: \"parser.add_argument(\\\"--device\\\", type=str, help=\\\"Device to run model on.\\\", default=\\\"cpu\\\")\" (https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/TTS/bin/synthesize… Command: Doc command (docs/source/models/xtts.md 'Coqui speakers') with --use_cuda replaced by --device cpu (the CLI's own default device), --out_path speech.wav added (README CLI flag; gb is the sum of the weight files the command loads (model.pth 1.87 GB; speakers_xtts.pth 0.01 GB); runtime memory is higher. First download asks interactively to accept the CPML (non-commercial) licence ('[y/n]'); manage.py also accepts env COQUI_TOS_AGREED=1. torchcodec is needed with PyTorch>=2.9 (README)."
+        },
+        {
+          "quant": "fp32 (coqui-tts 0.27.5)",
+          "gb": 1.88,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --text \"It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent.\" --speaker_idx \"Ana Florence\" --language_idx en --use_cuda --out_path speech.wav",
+          "platform": "nvidia",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/xtts.md",
+          "gb_source": "https://huggingface.co/coqui/XTTS-v2/tree/6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+          "note": "coqui-tts 0.27.5 (idiap/coqui-ai-TTS, maintained Coqui fork) CLI. Platform evidence: \"--use_cuda\" in the doc command; \"parser.add_argument(\\\"--use_cuda\\\", action=\\\"store_true\\\", help=\\\"Run model on CUDA.\\\")\" (https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf399… Command: Doc command verbatim (incl. --use_cuda) plus --out_path speech.wav, with the README install (uv pip install torch torchaudio torchcodec; uv pip install coqui-tts) wrapped as uv run. gb is the sum of the weight files the command loads (model.pth 1.87 GB; speakers_xtts.pth 0.01 GB); runtime memory is higher. Same CPML prompt as the CPU variant. Needs a CUDA build of torch (PyPI torch on Linux x86_64 is CUDA-enabled)."
+        }
+      ]
     }
   },
   {
@@ -8235,13 +8297,14 @@
     "local": {
       "variants": [
         {
-          "quant": "q8_0",
-          "gb": 0.93,
-          "cmd": "git clone --recursive https://github.com/mudler/magpie-tts.cpp && cd magpie-tts.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && ./build/examples/cli/magpie-cli say --model models/magpie-tts-multilingual-357m-q8_0.gguf --text 'Hello world' --lang en --speaker Aria --output hello.wav",
+          "quant": "f16-gguf (NVIDIA NeMo-Speech.cpp)",
+          "gb": 0.65,
+          "gb_estimated": true,
+          "cmd": "curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH=\"$HOME/.local/bin:$PATH\" && nemo-speech synthesize \"Hello from Magpie Multilingual.\" --output speech.wav",
           "platform": "any",
-          "source": "https://github.com/mudler/magpie-tts.cpp",
-          "note": "gb is the q8_0 GGUF file size (624 MB); the repo does not state runtime RAM. f32 1294 MB, q4_k 541 MB. GGUF must be fetched/converted per the repo README.",
-          "gb_estimated": true
+          "source": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md",
+          "gb_source": "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/tree/19806879b16d3f2ccf28fb112b1bcd16a3c7923e",
+          "note": "NVIDIA NeMo-Speech.cpp (official native C++/ggml runtime; installer auto-selects CUDA, Metal or CPU). Platform evidence: \"The installer selects CUDA when `nvidia-smi` is available, Metal on Apple Silicon, and CPU otherwise.\" and \"Prebuilt CPU archives require no GPU toolkit.\" (https://github.com/NVIDIA/NeMo-Speech.cpp/b… Command: chained the documented install lines from docs/install.md (installer + PATH export for the current shell) with `&&` in front of the verbatim synthesize example from the HF model card (line break removed). gb is the sum of the weight files the command loads (magpie_tts_multilingual_357m.v2607.f16.gguf 0.57 GB; nemo_nano_codec_22khz_1.89kbps_21.5fps.decoder.f16.gguf 0.08 GB); runtime memory is higher. Identity: loads v2607 (HF main / branch v2607). The catalogue entry says released 2026-02, which matches the older v2602 tag (commit 34d7e40da85cabc97f92198889b65cea27bc7fd1; card: \"Released on March 2026, v2602\"). Loads the checkpoint published as v2607 (July 2026); the catalogue entry was dated from the February 2026 release."
         }
       ]
     },
@@ -8267,6 +8330,16 @@
           "source": "https://huggingface.co/maya-research/maya1",
           "note": "Card: 'Single GPU with 16GB+ VRAM (A100, H100, or consumer RTX 4090)'. Script is the card's vLLM streaming example (has a __main__); edit the text/description inside it.",
           "gb_estimated": true
+        },
+        {
+          "quant": "bf16 (transformers + snac)",
+          "gb": 6.71,
+          "gb_estimated": true,
+          "cmd": "pip install torch transformers snac soundfile accelerate && python -c \"import torch, soundfile as sf; from transformers import AutoModelForCausalLM, AutoTokenizer; from snac import SNAC; model = AutoModelForCausalLM.from_pretrained('maya-research/maya1', torch_dtype=torch.bfloat16, device_map='auto', trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained('maya-research/maya1', trust_remote_code=True); device = 'cuda' if torch.cuda.is_available() else 'cpu'; snac_model = SNAC.from_pretrained('hubertsiuzdak/snac_24khz').eval().to(device); description = 'Realistic male voice in the 30s age with american accent. Normal pitch, warm timbre, conversational pacing.'; text = 'Hello! This is Maya1 <laugh_harder> the best open source voice AI model with emotions.'; prompt = tokenizer.decode([128259]) + tokenizer.bos_token + f'<description=\\\"{description}\\\"> {text}' + tokenizer.decode([128009]) + tokenizer.decode([128260]) + tokenizer.decode([128261]) + tokenizer.decode([128257]); inputs = {k: v.to(device) for k, v in tokenizer(prompt, return_tensors='pt').items()}; outputs = model.generate(**inputs, max_new_tokens=2048, min_new_tokens=28, temperature=0.4, top_p=0.9, repetition_penalty=1.1, do_sample=True, eos_token_id=128258, pad_token_id=tokenizer.pad_token_id); ids = outputs[0, inputs['input_ids'].shape[1]:].tolist(); ids = ids[:ids.index(128258)] if 128258 in ids else ids; codes = [t for t in ids if 128266 <= t <= 156937]; n = len(codes) // 7; levels = [[(codes[7*i] - 128266) % 4096 for i in range(n)], [(codes[7*i+j] - 128266) % 4096 for i in range(n) for j in (1, 4)], [(codes[7*i+j] - 128266) % 4096 for i in range(n) for j in (2, 3, 5, 6)]]; z_q = snac_model.quantizer.from_codes([torch.tensor(l, dtype=torch.long, device=device).unsqueeze(0) for l in levels]); audio = snac_model.decoder(z_q)[0, 0].detach().cpu().numpy(); audio = audio[2048:] if len(audio) > 2048 else audio; sf.write('output.wav', audio, 24000)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/maya-research/maya1/blob/21c682a0afef8c13a89b2512733c8bf5f0c52eb7/README.md",
+          "gb_source": "https://huggingface.co/maya-research/maya1/tree/21c682a0afef8c13a89b2512733c8bf5f0c52eb7",
+          "note": "transformers + snac (model card Quick Start). Platform evidence: Card Quick Start: \"device_map=\\\"auto\\\",\" for the LLM, \"if torch.cuda.is_available(): snac_model = snac_model.to(\\\"cuda\\\")\" and \"device = \\\"cuda\\\" if torch.cuda.is_available() else \\\"cpu\\\"\" (https://hu… Command: The card's 'Quick Start: Generate Voice with Emotions' script condensed into a python -c one-liner: same model/tokenizer/SNAC loading, same prompt construction (token ids 128259/128000-bos/128009/128260/128261/128257 inlined from build_prompt), same generate() arguments, same SNAC code extraction/7-… gb is the sum of the weight files the command loads (model-00001-of-00002.safetensors 4.99 GB; model-00002-of-00002.safetensors 1.61 GB; tokenizer.json 0.02 GB; tokenizer_config.json 0.01 GB; pytorch_model.bin 0.08 GB); runtime memory is higher. CPU support is implied only by the code's cuda-else-cpu fallback, not stated; a 3.3B bf16 autoregressive model on CPU will be very slow (max_new_tokens=2048)."
         }
       ]
     }
@@ -8298,6 +8371,36 @@
           "source": "https://huggingface.co/BreezeBlue/Breeze-TTS-2",
           "note": "Card: 12 GB GPU minimum (eager uses ~7.7 GiB), 24 GB recommended for --fast-all (~14.4 GiB). The hf download step is ours; the card assumes the weights are at ../breeze-tts-2.",
           "gb_estimated": true
+        },
+        {
+          "quant": "mlx-bf16 (mlx-audio 0.5.7)",
+          "gb": 7.63,
+          "gb_estimated": true,
+          "cmd": "pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx --text \"(sigh) Welcome aboard. Your journey begins now.\" --instruction \"A warm, thoughtful young woman with a clear voice and a calm, reflective delivery.\" --cfg-scale 4 --output_path outputs --file_prefix breeze_design",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/breeze-tts.md",
+          "gb_source": "https://huggingface.co/mlx-community/Breeze-TTS-2-mlx/tree/3c8829fb7fd335818f085cd2ef49b4100c0e46c8",
+          "note": "mlx-audio 0.5.7 (Blaizzy). Platform evidence: \"| `mlx-community/Breeze-TTS-2-mlx` | MLX bfloat16 | ~7.6 GB |\", \"| `mlx-community/Breeze-TTS-2-mlx-8bit` | MLX 8-bit | ~4.6 GB |\", \"| `mlx-community/Breeze-TTS-2-mlx-4bit` | MLX 4-bit | ~3.0 GB |\" an… Command: The doc's 'Install and load' line chained with its 'Voice design' CLI example (multi-line backslash command joined onto one line); otherwise verbatim. gb is the sum of the weight files the command loads (model-00001-of-00002.safetensors 4.90 GB; model-00002-of-00002.safetensors 2.00 GB; model.safetensors 0.68 GB; tokenizer.json 0.03 GB); runtime memory is higher. Mac only (MLX). Weights are under BreezeBlue's research and non-commercial licence (mlx-audio doc: 'Commercial use requires written authorization from RESONIA, INC.'). This voice-design example needs no reference audio;"
+        },
+        {
+          "quant": "mlx-mxfp8 (mlx-audio 0.5.7)",
+          "gb": 4.6,
+          "gb_estimated": true,
+          "cmd": "pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-8bit --text \"(sigh) Welcome aboard. Your journey begins now.\" --instruction \"A warm, thoughtful young woman with a clear voice and a calm, reflective delivery.\" --cfg-scale 4 --output_path outputs --file_prefix breeze_design",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/breeze-tts.md",
+          "gb_source": "https://huggingface.co/mlx-community/Breeze-TTS-2-mlx-8bit/tree/c6e4a2ff6ab9afba68b7853de802273ffe23fb49",
+          "note": "mlx-audio 0.5.7 (Blaizzy). Platform evidence: \"| `mlx-community/Breeze-TTS-2-mlx` | MLX bfloat16 | ~7.6 GB |\", \"| `mlx-community/Breeze-TTS-2-mlx-8bit` | MLX 8-bit | ~4.6 GB |\", \"| `mlx-community/Breeze-TTS-2-mlx-4bit` | MLX 4-bit | ~3.0 GB |\" an… Command: Same as the bf16 variant with the model id swapped for the 8-bit repo listed in the doc's 'Model Variants' table. gb is the sum of the weight files the command loads (model.safetensors 3.89 GB; model.safetensors 0.68 GB; tokenizer.json 0.03 GB); runtime memory is higher. Mac only (MLX). Weights are under BreezeBlue's research and non-commercial licence (mlx-audio doc: 'Commercial use requires written authorization from RESONIA, INC.'). This voice-design example needs no reference audio;"
+        },
+        {
+          "quant": "mlx-mxfp4 (mlx-audio 0.5.7)",
+          "gb": 3.04,
+          "gb_estimated": true,
+          "cmd": "pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-4bit --text \"(sigh) Welcome aboard. Your journey begins now.\" --instruction \"A warm, thoughtful young woman with a clear voice and a calm, reflective delivery.\" --cfg-scale 4 --output_path outputs --file_prefix breeze_design",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/breeze-tts.md",
+          "gb_source": "https://huggingface.co/mlx-community/Breeze-TTS-2-mlx-4bit/tree/3a06d26b172ea4ae1da2f42d708383e9c79d5526",
+          "note": "mlx-audio 0.5.7 (Blaizzy). Platform evidence: \"| `mlx-community/Breeze-TTS-2-mlx` | MLX bfloat16 | ~7.6 GB |\", \"| `mlx-community/Breeze-TTS-2-mlx-8bit` | MLX 8-bit | ~4.6 GB |\", \"| `mlx-community/Breeze-TTS-2-mlx-4bit` | MLX 4-bit | ~3.0 GB |\" an… Command: Same as the bf16 variant with the model id swapped for the 4-bit repo listed in the doc's 'Model Variants' table. gb is the sum of the weight files the command loads (model.safetensors 2.33 GB; model.safetensors 0.68 GB; tokenizer.json 0.03 GB); runtime memory is higher. Mac only (MLX). Weights are under BreezeBlue's research and non-commercial licence (mlx-audio doc: 'Commercial use requires written authorization from RESONIA, INC.'). This voice-design example needs no reference audio;"
         }
       ]
     }
@@ -10150,7 +10253,21 @@
     "identity_sources": [
       "https://huggingface.co/datasets/ttsds/requests/blob/9ca59ff46a60bae35f6d0ca42836546da603f70d/openvoice_v2.json",
       "https://huggingface.co/myshell-ai/OpenVoiceV2"
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (myshell-ai/OpenVoice)",
+          "gb": 0.79,
+          "gb_estimated": true,
+          "cmd": "conda create -n openvoice python=3.9 && conda activate openvoice && git clone https://github.com/myshell-ai/OpenVoice.git && cd OpenVoice && pip install -e . && pip install git+https://github.com/myshell-ai/MeloTTS.git && python -m unidic download && huggingface-cli download myshell-ai/OpenVoiceV2 --revision f36e7edfe1684461a8343844af60babc2efbb727 --local-dir checkpoints_v2 && python -c \"import os, torch\nfrom openvoice import se_extractor\nfrom openvoice.api import ToneColorConverter\nckpt_converter = 'checkpoints_v2/converter'\ndevice = 'cuda:0' if torch.cuda.is_available() else 'cpu'\noutput_dir = 'outputs_v2'\ntone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)\ntone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')\nos.makedirs(output_dir, exist_ok=True)\nreference_speaker = 'resources/example_reference.mp3'\ntarget_se, audio_name = se_extractor.get_se(reference_speaker, tone_color_converter, vad=True)\nfrom melo.api import TTS\nlanguage, text = 'EN_NEWEST', 'Did you ever hear a folk tale about a giant turtle?'\nsrc_path = f'{output_dir}/tmp.wav'\nspeed = 1.0\nmodel = TTS(language=language, device=device)\nspeaker_ids = model.hps.data.spk2id\nfor speaker_key in speaker_ids.keys():\n    speaker_id = speaker_ids[speaker_key]\n    speaker_key = speaker_key.lower().replace('_', '-')\n    source_se = torch.load(f'checkpoints_v2/base_speakers/ses/{speaker_key}.pth', map_location=device)\n    if torch.backends.mps.is_available() and device == 'cpu':\n        torch.backends.mps.is_available = lambda: False\n    model.tts_to_file(text, speaker_id, src_path, speed=speed)\n    save_path = f'{output_dir}/output_v2_{speaker_key}.wav'\n    tone_color_converter.convert(audio_src_path=src_path, src_se=source_se, tgt_se=target_se, output_path=save_path, message='@MyShell')\n\"",
+          "platform": "any",
+          "source": "https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part3.ipynb (install: https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/docs/USAGE.md)",
+          "gb_source": "https://huggingface.co/myshell-ai/OpenVoiceV2/tree/f36e7edfe1684461a8343844af60babc2efbb727",
+          "note": "official myshell-ai/OpenVoice (demo_part3.ipynb) + MeloTTS base speaker. Platform evidence: \"device = \\\"cuda:0\\\" if torch.cuda.is_available() else \\\"cpu\\\"\" (https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part3.ipynb); Command: docs/USAGE.md 'Linux Install' + 'OpenVoice V2' steps (incl. MeloTTS install and 'python -m unidic download') chained with && (git clone via https). The doc's checkpoint step (S3 checkpoints_v2_0417.zip -> checkpoints_v2 folder) is REPLACED by huggingface-cli download of the official myshell-ai/OpenV… gb is the sum of the weight files the command loads (checkpoint.pth 0.13 GB; checkpoint.pth 0.21 GB; model.safetensors 0.44 GB; step59000_snr39.99_pesq4.35_BERP_none0.30_mean1.81_std1.81.model.pkl 0.01 GB); runtime memory is higher. Needs a reference voice clip (resources/example_reference.mp3 in repo). Python 3.9 conda env per doc (setup.py pins numpy==1.22.0). 'python -m unidic download' fetches the large UniDic dictionary. The documented S3 checkpoint zip now returns HTTP 404/403, so the download step fetches the same checkpoint tree from MyShell's official Hugging Face repo instead."
+        }
+      ]
+    }
   },
   {
     "id": "metavoice-1b-v0-1",
@@ -10163,7 +10280,21 @@
     "identity_sources": [
       "https://huggingface.co/datasets/ttsds/requests/blob/9ca59ff46a60bae35f6d0ca42836546da603f70d/metavoice-1b.json",
       "https://huggingface.co/metavoiceio/metavoice-1B-v0.1"
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (metavoiceio/metavoice-src)",
+          "gb": 9.72,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/metavoiceio/metavoice-src.git && cd metavoice-src && pip install -r requirements.txt && pip install torch==2.2.1 torchaudio==2.2.1 && pip install -e . && python -c \"from fam.llm.fast_inference import TTS; tts = TTS(); tts.synthesise(text='This is a demo of text to speech by MetaVoice-1B, an open-source foundational audio model.', spk_ref_path='assets/bria.mp3')\"",
+          "platform": "nvidia",
+          "source": "https://github.com/metavoiceio/metavoice-src/blob/de3fa211ac4621e03a5f990651aeecc64da418f5/README.md",
+          "gb_source": "https://huggingface.co/metavoiceio/metavoice-1B-v0.1/tree/d7237c5cb970da187623738f2957b338f3b0889a",
+          "note": "official metavoiceio/metavoice-src fam/llm/fast_inference.py (torch 2.2.1, torch.compile). Platform evidence: \"Pre-requisites: - GPU VRAM >=12GB - Python >=3.10,<3.12\" (https://github.com/metavoiceio/metavoice-src/blob/de3fa211ac4621e03a5f990651aeecc64da418f5/README.md) Command: README 'Using pip/conda' install chained with && after a git clone of the repo (README assumes you are in the repo). README's 'python -i fam/llm/fast_inference.py' + interactive 'tts.synthesise(...)' is wrapped as python -c with TTS() (the script's __main__ is tyro.cli(TTS) with defaults, model_name… gb is the sum of the weight files the command loads (first_stage.pt 4.97 GB; second_stage.pt 0.06 GB; speaker_encoder.pt 0.02 GB; mbd_comp_8.pt 4.58 GB; model.safetensors 0.09 GB); runtime memory is higher. Prerequisites per README: ffmpeg and Rust installed first; Python >=3.10,<3.12; poetry is the recommended route (pip route is 'NOTE 1: When raising issues, we'll ask you to try with poetry first.')."
+        }
+      ]
+    }
   },
   {
     "id": "tortoise-tts-v2",
@@ -10176,7 +10307,41 @@
     "identity_sources": [
       "https://huggingface.co/datasets/ttsds/requests/blob/9ca59ff46a60bae35f6d0ca42836546da603f70d/tortoise.json",
       "https://huggingface.co/jbetker/tortoise-tts-v2"
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (coqui-tts 0.27.5)",
+          "gb": 4.53,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --model_name tts_models/en/multi-dataset/tortoise-v2 --text \"This is an example.\" --out_path \"output.wav\" --device cpu",
+          "platform": "any",
+          "source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/tortoise.md",
+          "gb_source": "https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/docs/source/models/tortoise.md",
+          "note": "coqui-tts 0.27.5 (idiap/coqui-ai-TTS) CLI, registry tts_models/en/multi-dataset/tortoise-v2. Platform evidence: \"parser.add_argument(\\\"--device\\\", type=str, help=\\\"Device to run model on.\\\", default=\\\"cpu\\\")\" (https://github.com/idiap/coqui-ai-TTS/blob/29b391cbd7ebf599e85b5232958daf39987a08e3/TTS/bin/synthesize… Command: 'Random voice generation' CLI example from docs/source/models/tortoise.md verbatim, plus --device cpu (the CLI default, made explicit) and the README install wrapped as uv run. gb is the sum of the weight files the command loads (autoregressive.pth 1.72 GB; diffusion_decoder.pth 1.17 GB; clvp2.pth 0.98 GB; vocoder.pth 0.39 GB; cvvp.pth 0.15 GB; rlg_diffuser.pth 0.10 GB; rlg_auto.pth 0.03 GB); runtime memory is higher. Not stated as CPU-tested in the tortoise doc page (its Python examples use .to(\"cuda\")); CPU is simply the CLI default."
+        },
+        {
+          "quant": "fp16 (neonbjb/tortoise-tts)",
+          "gb": 5.64,
+          "gb_estimated": true,
+          "cmd": "python3.10 -m venv .venv && source .venv/bin/activate && pip install numba inflect psutil && pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu && pip install transformers && git clone https://github.com/neonbjb/tortoise-tts.git && cd tortoise-tts && pip install . && PYTORCH_ENABLE_MPS_FALLBACK=1 python tortoise/do_tts.py --text \"I'm going to speak this\" --voice random --preset fast",
+          "platform": "mac",
+          "source": "https://github.com/neonbjb/tortoise-tts/blob/8a2563ecabe93c4fb626f876dd0c52c966edef2f/README.md",
+          "gb_source": "https://huggingface.co/Manmay/tortoise-tts/tree/50672670cecf2265aa61edb4eef5d1a293a8a373",
+          "note": "official neonbjb/tortoise-tts (do_tts.py) on PyTorch MPS. Platform evidence: \"On macOS 13+ with M1/M2 chips you need to install the nighly version of PyTorch\" ... \"You may need to prepend `PYTORCH_ENABLE_MPS_FALLBACK=1` to the commands below to make them work since MPS does no… Command: README 'Apple Silicon' non-conda install steps chained with &&, then the README do_tts.py example with the README-suggested PYTORCH_ENABLE_MPS_FALLBACK=1 prefix. gb is the sum of the weight files the command loads (autoregressive.pth 1.72 GB; diffusion_decoder.pth 1.17 GB; clvp2.pth 0.98 GB; vocoder.pth 0.39 GB; rlg_diffuser.pth 0.10 GB; rlg_auto.pth 0.03 GB; pytorch_model.bin 1.26 GB); runtime memory is higher. Uses PyTorch nightly per README. Writes 3 candidates to results/ by default (--candidates 3). DeepSpeed disabled on Apple Silicon. Very slow model."
+        },
+        {
+          "quant": "fp16 (neonbjb/tortoise-tts)",
+          "gb": 5.64,
+          "gb_estimated": true,
+          "cmd": "conda create --name tortoise python=3.9 numba inflect && conda activate tortoise && conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia && conda install transformers=4.29.2 && git clone https://github.com/neonbjb/tortoise-tts.git && cd tortoise-tts && python setup.py install && python tortoise/do_tts.py --text \"I'm going to speak this\" --voice random --preset fast",
+          "platform": "nvidia",
+          "source": "https://github.com/neonbjb/tortoise-tts/blob/8a2563ecabe93c4fb626f876dd0c52c966edef2f/README.md",
+          "gb_source": "https://huggingface.co/Manmay/tortoise-tts/tree/50672670cecf2265aa61edb4eef5d1a293a8a373",
+          "note": "official neonbjb/tortoise-tts (do_tts.py), conda + CUDA 11.7. Platform evidence: \"If you want to use this on your own computer, you must have an NVIDIA GPU.\" (https://github.com/neonbjb/tortoise-tts/blob/8a2563ecabe93c4fb626f876dd0c52c966edef2f/README.md) Command: README 'Local installation' conda steps chained with &&, then the README do_tts.py example verbatim. gb is the sum of the weight files the command loads (autoregressive.pth 1.72 GB; diffusion_decoder.pth 1.17 GB; clvp2.pth 0.98 GB; vocoder.pth 0.39 GB; rlg_diffuser.pth 0.10 GB; rlg_auto.pth 0.03 GB; pytorch_model.bin 1.26 GB); runtime memory is higher. Requires conda with an initialised shell for 'conda activate'. pip alternative documented: 'pip install tortoise-tts' (installs scripts/tortoise_tts.py)."
+        }
+      ]
+    }
   },
   {
     "id": "gemini-2-5-flash-preview-tts",
@@ -10215,7 +10380,31 @@
     "identity_sources": [
       "https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md",
       "https://github.com/boson-ai/higgs-audio"
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (transformers >=5.3.0)",
+          "gb": 12.37,
+          "gb_estimated": true,
+          "cmd": "uv run --with 'transformers>=5.3.0' --with torch --with accelerate python -c \"from transformers import AutoProcessor, HiggsAudioV2ForConditionalGeneration; model_id = 'bosonai/higgs-audio-v2-generation-3B-base'; processor = AutoProcessor.from_pretrained(model_id, device_map='auto'); model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_map='auto'); conversation = [{'role': 'system', 'content': [{'type': 'text', 'text': 'Generate audio following instruction.'}]}, {'role': 'scene', 'content': [{'type': 'text', 'text': 'Audio is recorded from a quiet room.'}]}, {'role': 'user', 'content': [{'type': 'text', 'text': 'The sun rises in the east and sets in the west. This simple fact has been observed by humans for thousands of years.'}]}]; inputs = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=True, return_dict=True, sampling_rate=24000, return_tensors='pt').to(model.device); outputs = model.generate(**inputs, max_new_tokens=1000, do_sample=False); decoded = processor.batch_decode(outputs); processor.save_audio(decoded, 'output_single_speaker.wav')\"",
+          "platform": "any",
+          "source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/blob/d80c511612b3040ff2877ce3d408747df1739f11/README.md",
+          "gb_source": "https://huggingface.co/bosonai/higgs-tts-2-3b-base/tree/d80c511612b3040ff2877ce3d408747df1739f11",
+          "note": "transformers >=5.3.0 (native HiggsAudioV2ForConditionalGeneration), as documented on the official HF model card. Platform evidence: Card snippet loads with `device_map=\"auto\"` (\"processor = AutoProcessor.from_pretrained(model_id, device_map=\"auto\")\" / \"model = HiggsAudioV2ForConditionalGeneration.from_pretrained(model_id, device_m… Command: The card's 'Single-speaker smart voice' Python snippet wrapped as a uv run one-liner (double quotes changed to single quotes inside python -c). The card's install step is `uv pip install \"transformers>=5.3.0\"`; gb is the sum of the weight files the command loads (model.safetensors 11.54 GB; tokenizer.json 0.02 GB; model.safetensors 0.81 GB); runtime memory is higher. Large download (about 12.4 GB). Without a reference clip the model picks a voice ('smart voice'); voice cloning needs a reference clip (see card's other snippets). CPU generation of a 3B+ model will be slow."
+        },
+        {
+          "quant": "mlx-8bit (mlx-audio)",
+          "gb": 7,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/higgs-audio-v2-3B-mlx-q8 --text \"Hello from Higgs Audio on MLX.\" --ref_audio path/to/reference.wav --ref_text \"Transcript of the reference clip.\"",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/higgs_audio/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/higgs-audio-v2-3B-mlx-q8/tree/cada83e51fe3f49186b51738599827d6fc7850f6",
+          "note": "mlx-audio (Blaizzy) @ feb25a37. Platform evidence: \"with real-time voice cloning on Apple Silicon\" and \"Fast inference optimized for Apple Silicon (M series chips)\" (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/ml… Command: Chained the documented `pip install mlx-audio` (mlx-audio README Installation) with the CLI command from the mlx-audio Higgs Audio README, joined onto one line. Command otherwise verbatim; ref_audio/ref_text are the doc's placeholders. gb is the sum of the weight files the command loads (weights.safetensors 6.18 GB; tokenizer.json 0.02 GB; model.safetensors 0.81 GB); runtime memory is higher. 8-bit quantisation of the upstream bf16 weights. The doc recommends a reference clip (5-15 s) plus its transcript; without ref_audio it runs in 'smart voice' mode (less reliable)."
+        }
+      ]
+    }
   },
   {
     "id": "gpt-4o-mini-tts",
@@ -10262,7 +10451,31 @@
     "identity_sources": [
       "https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md",
       "https://huggingface.co/kyutai/tts-1.6b-en_fr"
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (moshi-mlx)",
+          "gb": 4.07,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo \"Hey, how are you?\" | uvx --with moshi-mlx python scripts/tts_mlx.py - audio_output.wav",
+          "platform": "mac",
+          "source": "https://github.com/kyutai-labs/delayed-streams-modeling/blob/4c4f65e147df056adf3346290d64c7b9649b18c9/README.md",
+          "gb_source": "https://huggingface.co/kyutai/tts-1.6b-en_fr/tree/f65439609986c392cb12df63938abcc550c3fb15",
+          "note": "moshi-mlx (official Kyutai MLX implementation) via scripts/tts_mlx.py. Platform evidence: \"MLX: for on-device inference on iPhone and Mac. MLX is Apple's ML framework that allows you to use hardware acceleration on Apple silicon. Command: Chained git clone/cd (the script lives in the repo) with the README's MLX command, prefixed with `uvx --with moshi-mlx` as the README allows; used the README's stdin form but with an output file (audio_output.wav, from the README's file-output form) instead of `-` (play to speakers). gb is the sum of the weight files the command loads (dsm_tts_1e68beda@240.safetensors 3.68 GB; tokenizer-e351c8d8-checkpoint125.safetensors 0.38 GB); runtime memory is higher. Script sets `model.set_dtype(mx.bfloat16)`; optional `--quantize 8` or `--quantize 4` quantises at load time (no separate weights). Script header requires Python >=3.12 and imports sounddevice."
+        },
+        {
+          "quant": "bf16 (moshi)",
+          "gb": 4.07,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo \"Hey, how are you?\" | uvx --with moshi python scripts/tts_pytorch.py - audio_output.wav",
+          "platform": "nvidia",
+          "source": "https://github.com/kyutai-labs/delayed-streams-modeling/blob/4c4f65e147df056adf3346290d64c7b9649b18c9/README.md",
+          "gb_source": "https://huggingface.co/kyutai/tts-1.6b-en_fr/tree/f65439609986c392cb12df63938abcc550c3fb15",
+          "note": "moshi (official Kyutai PyTorch implementation) via scripts/tts_pytorch.py. Platform evidence: scripts/tts_pytorch.py: `\"--device\", ... default=\"cuda\", help=\"Device on which to run, defaults to 'cuda'.\"` (https://github.com/kyutai-labs/delayed-streams-modeling/blob/4c4f65e147df056adf3346290d64c… Command: Chained git clone/cd with the README's PyTorch command, prefixed with `uvx --with moshi` as the README allows; used the stdin form with an output file (audio_output.wav, from the README's file-output form) instead of `-` (play to speakers). gb is the sum of the weight files the command loads (dsm_tts_1e68beda@240.safetensors 3.68 GB; tokenizer-e351c8d8-checkpoint125.safetensors 0.38 GB); runtime memory is higher. CUDA by default. The script has a --device flag, but neither the README nor the script says CPU is supported, so we did not record a CPU command."
+        }
+      ]
+    }
   },
   {
     "id": "dots-tts-soar",
@@ -10274,7 +10487,31 @@
     "identity_note": "dots.tts SOAR 2B, not Pretrain or MeanFlow-distilled checkpoints.",
     "identity_sources": [
       "https://arxiv.org/html/2606.07080v2"
-    ]
+    ],
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (dots.tts package CLI)",
+          "gb": 5.16,
+          "gb_estimated": true,
+          "cmd": "pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text \"Hello, this is a zero-shot voice cloning demonstration.\" --prompt-audio /path/to/reference.wav --prompt-text \"The exact transcript of the reference audio.\" --output clone.wav --precision float32",
+          "platform": "any",
+          "source": "https://github.com/studio-dots-ai/dots.tts/blob/3cb6f94a571097b500038f1619959075282c5c98/README.md",
+          "gb_source": "https://huggingface.co/dots-studio/dots.tts-soar/tree/2f9b3e18d70d670d4c701da2dc55ded5755815ce",
+          "note": "official dots.tts package CLI (PyPI dots.tts). Platform evidence: src/dots_tts/runtime.py: `if torch.cuda.is_available(): self.device = torch.device(\"cuda\") else: self.device = torch.device(\"cpu\")`, and the warning/error text \"CUDA is not available; Command: README install step (`pip install dots.tts`) chained with the README's continuation voice-cloning CLI example, joined onto one line; appended `--precision float32` (an existing CLI flag, `--precision`, default bfloat16) because the official runtime refuses half precision on CPU and tells the user to… gb is the sum of the weight files the command loads (model.safetensors 4.40 GB; vocoder.safetensors 0.72 GB; speaker_encoder.safetensors 0.03 GB; tokenizer.json 0.01 GB); runtime memory is higher. Needs a reference clip plus its transcript (README: random-voice sampling without --prompt-audio is 'only meaningful with a fine-tuned single-speaker checkpoint'); --prompt-audio alone gives x-vector-only cloning."
+        },
+        {
+          "quant": "bf16 (dots.tts package CLI)",
+          "gb": 5.16,
+          "gb_estimated": true,
+          "cmd": "pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text \"Hello, this is a zero-shot voice cloning demonstration.\" --prompt-audio /path/to/reference.wav --prompt-text \"The exact transcript of the reference audio.\" --output clone.wav",
+          "platform": "nvidia",
+          "source": "https://github.com/studio-dots-ai/dots.tts/blob/3cb6f94a571097b500038f1619959075282c5c98/README.md",
+          "gb_source": "https://huggingface.co/dots-studio/dots.tts-soar/tree/2f9b3e18d70d670d4c701da2dc55ded5755815ce",
+          "note": "official dots.tts package CLI (PyPI dots.tts). Platform evidence: Default precision is bfloat16 and the runtime raises an error for half precision without CUDA: \"Half-precision ({precision}) is not reliable on CPU; Command: README install step chained with the README's continuation voice-cloning CLI example, joined onto one line; otherwise verbatim (default --precision bfloat16). gb is the sum of the weight files the command loads (model.safetensors 4.40 GB; vocoder.safetensors 0.72 GB; speaker_encoder.safetensors 0.03 GB; tokenizer.json 0.01 GB); runtime memory is higher. Needs a reference clip plus transcript. README recommends Python 3.10–3.12."
+        }
+      ]
+    }
   },
   {
     "id": "deepgram-nova-2",
@@ -11216,7 +11453,21 @@
       "https://addisassistant.com/benchmarks/addis-voice-2-amharic",
       "https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/README.md"
     ],
-    "identity_note": "Exact model facebook/mms-tts-amh; voice single-speaker. Dataset label Meta MMS. No API immutable build/weight SHA supplied."
+    "identity_note": "Exact model facebook/mms-tts-amh; voice single-speaker. Dataset label Meta MMS. No API immutable build/weight SHA supplied.",
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (transformers VitsModel)",
+          "gb": 0.15,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with transformers --with torch --with scipy --with uroman python -c \"from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-amh'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-amh'); text = 'ሰላም፣ እንዴት ነህ?'; inputs = tokenizer(text, return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('techno.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())\"",
+          "platform": "any",
+          "source": "https://huggingface.co/facebook/mms-tts-amh/blob/e366aee5e22a72b9a3333e081ddafb234538d9bb/README.md",
+          "gb_source": "https://huggingface.co/facebook/mms-tts-amh/tree/e366aee5e22a72b9a3333e081ddafb234538d9bb",
+          "note": "transformers VitsModel (>=4.33), per the official model card. Platform evidence: The card's snippet never moves the model to a GPU (\"model = VitsModel.from_pretrained(\\\"facebook/mms-tts-amh\\\")\" ... Command: Card's two Python snippets (inference + scipy save) wrapped as one uv run one-liner. Changes: placeholder text 'some example text in the Amharic language' replaced with an Amharic sentence; `with torch.no_grad():` written as `torch.set_grad_enabled(False);` so it fits on one line; gb is the sum of the weight files the command loads (model.safetensors 0.15 GB); runtime memory is higher. Licence CC-BY-NC 4.0. Amharic (Ge'ez script) input must be romanised with uroman: the card says 'the input text must be converted to the Latin alphabet first using the [uroman](https://github.com/isi-nlp/uroman) tool';"
+        }
+      ]
+    }
   },
   {
     "id": "elevenlabs-v3-alpha",
@@ -11257,7 +11508,41 @@
       "https://arxiv.org/html/2607.23938v1",
       "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3"
     ],
-    "identity_note": "Reference-audio voice-cloning Base checkpoint Qwen/Qwen3-TTS-12Hz-1.7B-Base. Distinct from the CustomVoice/VoiceDesign and 0.6B checkpoints. ZONOS2 'Qwen 3 TTS 1.7B' and Boson 'Qwen3-TTS-1.7B' are mapped here because they ran reference-audio cloning and this is the only released 1.7B cloning checkpoint."
+    "identity_note": "Reference-audio voice-cloning Base checkpoint Qwen/Qwen3-TTS-12Hz-1.7B-Base. Distinct from the CustomVoice/VoiceDesign and 0.6B checkpoints. ZONOS2 'Qwen 3 TTS 1.7B' and Boson 'Qwen3-TTS-1.7B' are mapped here because they ran reference-audio cloning and this is the only released 1.7B cloning checkpoint.",
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (qwen-tts)",
+          "gb": 4.54,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.12 --with qwen-tts python -c \"import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-1.7B-Base', device_map='cpu', dtype=torch.bfloat16); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)\"",
+          "platform": "any",
+          "source": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md",
+          "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3",
+          "note": "qwen-tts (official QwenLM/Qwen3-TTS Python package, transformers==4.57.3). Platform evidence: \"--device\", default=\"cuda:0\", help=\"Device for device_map, e.g. cpu, cuda, cuda:0 (default: cuda:0).\" (https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/qwen_tts/cli/de… Command: Documented Python voice-clone snippet wrapped as a uv one-liner; device_map changed from 'cuda:0' to 'cpu' (official CLI help lists cpu as a device_map value); attn_implementation='flash_attention_2' dropped (the card marks flash-attn 'Optional: for optimized performance' and it is GPU-only); gb is the sum of the weight files the command loads (model.safetensors 3.86 GB; model.safetensors 0.68 GB); runtime memory is higher. CPU support is evidenced only by the official qwen-tts-demo CLI help text; every README/card example uses device_map=\"cuda:0\" and no CPU speed/memory statement exists."
+        },
+        {
+          "quant": "mlx-bf16 (mlx-audio)",
+          "gb": 4.54,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16 --text 'Hello from Sesame.' --ref_audio sample_audio.wav --ref_text 'This is what my voice sounds like.'",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/qwen3-tts.md",
+          "gb_source": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16/tree/a6eb4f68e4b056f1215157bb696209bc82a6db48",
+          "note": "mlx-audio (Blaizzy) @ feb25a3. Platform evidence: \"Fast inference optimized for Apple Silicon (M series chips)\" (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md); Command: mlx-audio documents Base cloning with the Python API (load_model(\"mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16\"); model.generate(text=..., ref_audio=\"sample_audio.wav\", ref_text=\"This is what my voice sounds like.\")); gb is the sum of the weight files the command loads (model.safetensors 3.86 GB; model.safetensors 0.68 GB); runtime memory is higher. Needs a local reference WAV (sample_audio.wav) plus its transcript; if --ref_text is omitted mlx-audio auto-transcribes with a Whisper STT model (extra download)."
+        },
+        {
+          "quant": "bf16 (qwen-tts)",
+          "gb": 4.54,
+          "gb_estimated": true,
+          "cmd": "pip install -U qwen-tts && pip install -U flash-attn --no-build-isolation && python -c \"import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-1.7B-Base', device_map='cuda:0', dtype=torch.bfloat16, attn_implementation='flash_attention_2'); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)\"",
+          "platform": "nvidia",
+          "source": "https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/README.md",
+          "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3",
+          "note": "qwen-tts (official) + FlashAttention 2. Platform evidence: device_map=\"cuda:0\", ... attn_implementation=\"flash_attention_2\"; \"we recommend using FlashAttention 2 to reduce GPU memory usage.\" (https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940… Command: Documented install lines chained with && and the documented voice-clone Python snippet wrapped as python -c; the long demo target text replaced with 'Hello, world.'. Otherwise verbatim (device_map='cuda:0', bf16, flash_attention_2). gb is the sum of the weight files the command loads (model.safetensors 3.86 GB; model.safetensors 0.68 GB); runtime memory is higher. flash-attn build needs a compatible NVIDIA GPU/toolchain (README: 'MAX_JOBS=4 pip install -U flash-attn --no-build-isolation' if <96GB RAM). Needs ref_audio + ref_text (doc uses a public URL)."
+        }
+      ]
+    }
   },
   {
     "recovered_original": false,
@@ -11271,7 +11556,61 @@
       "https://huggingface.co/openbmb/VoxCPM2/tree/32279effe8c19989596f05d353d1447f51d9e915",
       "https://arxiv.org/html/2607.23938v1"
     ],
-    "identity_note": "openbmb/VoxCPM2 as named by the evaluating reports. Not VoxCPM (v1/1.5)."
+    "identity_note": "openbmb/VoxCPM2 as named by the evaluating reports. Not VoxCPM (v1/1.5).",
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (voxcpm)",
+          "gb": 4.96,
+          "gb_estimated": true,
+          "cmd": "pip install voxcpm && voxcpm design --text \"VoxCPM2 brings studio-quality multilingual speech synthesis.\" --output out.wav",
+          "platform": "any",
+          "source": "https://github.com/OpenBMB/VoxCPM/blob/f0c787f0937dc1c9a8f4f64d9a332d9c5da2e629/README.md",
+          "gb_source": "https://huggingface.co/openbmb/VoxCPM2/tree/32279effe8c19989596f05d353d1447f51d9e915",
+          "note": "voxcpm (official OpenBMB PyPI package, PyTorch). Platform evidence: \"--device\", type=str, default=\"auto\", help=\"Runtime device: auto, cpu, mps, cuda, or cuda:N (default: auto)\" (https://github.com/OpenBMB/VoxCPM/blob/f0c787f0937dc1c9a8f4f64d9a332d9c5da2e629/src/voxcpm… Command: Documented install line chained with && to the README's first CLI example; otherwise verbatim (CLI default --hf-model-id is openbmb/VoxCPM2 and default --device auto). gb is the sum of the weight files the command loads (model.safetensors 4.58 GB; audiovae.pth 0.38 GB); runtime memory is higher. README 'Requirements: Python ≥ 3.10 (<3.13), PyTorch ≥ 2.5.0, CUDA ≥ 12.0' is written for GPU use, but the CLI/device code explicitly supports cpu and mps."
+        },
+        {
+          "quant": "q8_0 (llama.cpp-omni)",
+          "gb": 3.55,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/tc-mb/llama.cpp-omni.git && cd llama.cpp-omni && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build --target voxcpm2-cli -j && huggingface-cli download DennisHuang648/VoxCPM2-GGUF VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf --local-dir . && ./build/bin/voxcpm2-cli -t \"Hello, this is VoxCPM2 running through llama.cpp-omni.\" -o output.wav VoxCPM2-BaseLM-Q8_0.gguf VoxCPM2-Acoustic-F16.gguf",
+          "platform": "any",
+          "source": "https://github.com/OpenBMB/VoxCPM/blob/f0c787f0937dc1c9a8f4f64d9a332d9c5da2e629/README.md",
+          "gb_source": "https://huggingface.co/DennisHuang648/VoxCPM2-GGUF/tree/169f64d8b98bbaab1761e4ca3a83e6af653456cc",
+          "note": "llama.cpp-omni (tc-mb) voxcpm2-cli @ 8730567, linked from the official VoxCPM README. Platform evidence: \"use **[llama.cpp-omni](https://github.com/tc-mb/llama.cpp-omni)** — a high-performance C++ inference engine built on llama.cpp, with native VoxCPM2 GGUF support on **CPU / Metal / CUDA / Vulkan**.\" a… Command: Official VoxCPM README build and run steps chained with &&; the weight download (README step '1. Download GGUF weights from HuggingFace' is a link) is expressed with the huggingface-cli download command from the GGUF card, whose repo id typo ('DennisHuang648/VoxCPM2-') is corrected to DennisHuang648… gb is the sum of the weight files the command loads (VoxCPM2-BaseLM-Q8_0.gguf 1.73 GB; VoxCPM2-Acoustic-F16.gguf 1.83 GB); runtime memory is higher. Third-party GGUF conversion (linked by the official README). Requires git, cmake and a C++ toolchain; build auto-enables Metal on macOS. F16 BaseLM alternative: VoxCPM2-BaseLM-F16.gguf (3247980544 bytes)."
+        },
+        {
+          "quant": "mlx-bf16 (mlx-audio)",
+          "gb": 4.96,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-bf16 --text \"Hello world\" --play",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/VoxCPM2-bf16/tree/a7fb80d9056983135a54ca3f71fcc5a637ccddf5",
+          "note": "mlx-audio (Blaizzy) @ feb25a3. Platform evidence: \"result = next(model.generate('Hello, this is VoxCPM2 on Apple Silicon.'))\" [README Python example; quotes shown as single quotes] (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111… Command: verbatim CLI 'Zero-shot' example from the mlx-audio voxcpm2 README with the README install line chained; model id swapped from mlx-community/VoxCPM2-8bit to mlx-community/VoxCPM2-bf16, which the same README's Available Models table lists. gb is the sum of the weight files the command loads (model-00001.safetensors 4.29 GB; model-00002.safetensors 0.67 GB); runtime memory is higher. README size column (file size, not RAM): bf16 4.96 GB, 8-bit 3.23 GB, 4-bit 2.30 GB. --play plays the audio; mlx_audio.tts.generate also writes an audio file (default prefix 'audio')."
+        },
+        {
+          "quant": "mlx-8bit (mlx-audio)",
+          "gb": 3.23,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-8bit --text \"Hello world\" --play",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/VoxCPM2-8bit/tree/d52725898a0675703f7f9ddc5a4d1a3cdbb99032",
+          "note": "mlx-audio (Blaizzy) @ feb25a3. Platform evidence: \"result = next(model.generate('Hello, this is VoxCPM2 on Apple Silicon.'))\" [README Python example; quotes shown as single quotes] (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111… Command: verbatim CLI 'Zero-shot' example from the mlx-audio voxcpm2 README with the README install line chained. gb is the sum of the weight files the command loads (model.safetensors 3.22 GB); runtime memory is higher. README size column (file size, not RAM): bf16 4.96 GB, 8-bit 3.23 GB, 4-bit 2.30 GB. --play plays the audio; mlx_audio.tts.generate also writes an audio file (default prefix 'audio')."
+        },
+        {
+          "quant": "mlx-4bit (mlx-audio)",
+          "gb": 2.3,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/VoxCPM2-4bit --text \"Hello world\" --play",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/voxcpm2/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/VoxCPM2-4bit/tree/dc9e5c187858da5f4a13dc4c247e297339216381",
+          "note": "mlx-audio (Blaizzy) @ feb25a3. Platform evidence: \"result = next(model.generate('Hello, this is VoxCPM2 on Apple Silicon.'))\" [README Python example; quotes shown as single quotes] (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111… Command: verbatim CLI 'Zero-shot' example from the mlx-audio voxcpm2 README with the README install line chained; model id swapped from mlx-community/VoxCPM2-8bit to mlx-community/VoxCPM2-4bit, which the same README's Available Models table lists. gb is the sum of the weight files the command loads (model.safetensors 2.30 GB); runtime memory is higher. README size column (file size, not RAM): bf16 4.96 GB, 8-bit 3.23 GB, 4-bit 2.30 GB. --play plays the audio; mlx_audio.tts.generate also writes an audio file (default prefix 'audio')."
+        }
+      ]
+    }
   },
   {
     "recovered_original": false,
@@ -11287,7 +11626,71 @@
       "https://arxiv.org/html/2606.24320v2",
       "https://huggingface.co/Zyphra/ZONOS2/tree/65f1e80f94b599d474bb6af9094a803dc52f60bd"
     ],
-    "identity_note": "Zyphra/ZONOS2 (8B total, 900M active MoE). Default mode results; Quality Mode values kept as metadata. Distinct from Zonos v0.1."
+    "identity_note": "Zyphra/ZONOS2 (8B total, 900M active MoE). Default mode results; Quality Mode values kept as metadata. Distinct from Zonos v0.1.",
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_k (zonos2.cpp)",
+          "gb": 5.17,
+          "gb_estimated": true,
+          "cmd": "git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts \"Hello, world.\" out.wav --dac out/dac.gguf --seed 1",
+          "platform": "any",
+          "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+          "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57",
+          "note": "zonos2.cpp (official Zyphra ggml port) @ adce4ff, CPU backend. Platform evidence: \"For cpu inference and cross platform support we provide a ggml implementation for ZONOS2 in this [repo](https://github.com/Zyphra/zonos2.cpp).\" (https://github.com/Zyphra/ZONOS2/blob/a5b2ee802301bd4e… Command: README 'Build from source' (CPU line), 'Download models by hand' and 'CLI (offline inference)' commands chained with &&; the README CLI example's --gpu flag dropped for CPU (README: 'drop `--gpu` for CPU'; main.cpp: bool use_gpu = false); gb is the sum of the weight files the command loads (zonos2-q4_k.gguf 4.92 GB; dac.gguf 0.25 GB); runtime memory is higher. Needs git, cmake, a C++ toolchain and the hf CLI (huggingface_hub). Plain TTS loads backbone + dac.gguf; spk-encoder.gguf (24299552 bytes) is only used for --clone voice cloning, which also needs ffmpeg."
+        },
+        {
+          "quant": "q8_0 (zonos2.cpp)",
+          "gb": 8.8,
+          "gb_estimated": true,
+          "cmd": "git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts \"Hello, world.\" out.wav --dac out/dac.gguf --seed 1",
+          "platform": "any",
+          "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+          "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57",
+          "note": "zonos2.cpp (official Zyphra ggml port) @ adce4ff, CPU backend. Platform evidence: \"For cpu inference and cross platform support we provide a ggml implementation for ZONOS2 in this [repo](https://github.com/Zyphra/zonos2.cpp).\" (https://github.com/Zyphra/ZONOS2/blob/a5b2ee802301bd4e… Command: README 'Build from source' (CPU line), 'Download models by hand' and 'CLI (offline inference)' commands chained with &&; the README CLI example's --gpu flag dropped for CPU (README: 'drop `--gpu` for CPU'; main.cpp: bool use_gpu = false); gb is the sum of the weight files the command loads (zonos2-q8_0.gguf 8.54 GB; dac.gguf 0.25 GB); runtime memory is higher. Needs git, cmake, a C++ toolchain and the hf CLI (huggingface_hub). Plain TTS loads backbone + dac.gguf; spk-encoder.gguf (24299552 bytes) is only used for --clone voice cloning, which also needs ffmpeg."
+        },
+        {
+          "quant": "q4_k (zonos2.cpp)",
+          "gb": 5.17,
+          "gb_estimated": true,
+          "cmd": "git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts \"Hello, world.\" out.wav --dac out/dac.gguf --gpu --seed 1",
+          "platform": "mac",
+          "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+          "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57",
+          "note": "zonos2.cpp (official Zyphra ggml port) @ adce4ff, Metal backend. Platform evidence: \"**Platform Support**: Linux x64 (CPU / Vulkan), macOS arm64 (Metal), and Windows x64 (Vulkan) ship prebuilt.\" and \"Vulkan and Metal build the same way (`-DGGML_VULKAN=ON`; Command: README 'Build from source' (CPU line), 'Download models by hand' and 'CLI (offline inference)' commands chained with &&; README CLI example kept with --gpu (Metal on macOS); backbone q4_k picked from the README's download block; gb is the sum of the weight files the command loads (zonos2-q4_k.gguf 4.92 GB; dac.gguf 0.25 GB); runtime memory is higher. Needs git, cmake, a C++ toolchain and the hf CLI (huggingface_hub). Plain TTS loads backbone + dac.gguf; spk-encoder.gguf (24299552 bytes) is only used for --clone voice cloning, which also needs ffmpeg."
+        },
+        {
+          "quant": "q8_0 (zonos2.cpp)",
+          "gb": 8.8,
+          "gb_estimated": true,
+          "cmd": "git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts \"Hello, world.\" out.wav --dac out/dac.gguf --gpu --seed 1",
+          "platform": "mac",
+          "source": "https://github.com/Zyphra/zonos2.cpp/blob/adce4ffb97e9c9c9e85de798175cb9d8711f3a1c/README.md",
+          "gb_source": "https://huggingface.co/Zyphra/ZONOS2-GGUF/tree/75c877ec8ac86dda42bfc0e9968c87f29e10ef57",
+          "note": "zonos2.cpp (official Zyphra ggml port) @ adce4ff, Metal backend. Platform evidence: \"**Platform Support**: Linux x64 (CPU / Vulkan), macOS arm64 (Metal), and Windows x64 (Vulkan) ship prebuilt.\" and \"Vulkan and Metal build the same way (`-DGGML_VULKAN=ON`; Command: README 'Build from source' (CPU line), 'Download models by hand' and 'CLI (offline inference)' commands chained with &&; README CLI example kept with --gpu (Metal on macOS); backbone q8_0 picked from the README's download block; gb is the sum of the weight files the command loads (zonos2-q8_0.gguf 8.54 GB; dac.gguf 0.25 GB); runtime memory is higher. Needs git, cmake, a C++ toolchain and the hf CLI (huggingface_hub). Plain TTS loads backbone + dac.gguf; spk-encoder.gguf (24299552 bytes) is only used for --clone voice cloning, which also needs ffmpeg."
+        },
+        {
+          "quant": "mlx-bf16 (mlx-audio)",
+          "gb": 15.64,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/Zyphra-ZONOS2 --text \"Hello, this is ZONOS two running with MLX audio.\" --output_path outputs --file_prefix zonos2",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/zonos2/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/Zyphra-ZONOS2/tree/3ad1bd8b27d420840757b27db9917a9a8d284a2b",
+          "note": "mlx-audio (Blaizzy) @ feb25a3. Platform evidence: Supported Models row: \"`mlx-community/Zyphra-ZONOS2` | BF16 | Official MLX conversion with bundled speaker encoder\" (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/… Command: Verbatim CLI 'Text-to-speech' example from the mlx-audio zonos2 README, with the install line ('pip install mlx-audio', from the mlx-community card/README) chained. gb is the sum of the weight files the command loads (model-00001-of-00004.safetensors 4.83 GB; model-00002-of-00004.safetensors 4.83 GB; model-00003-of-00004.safetensors 4.66 GB; model-00004-of-00004.safetensors 1.02 GB; model.safetensors 0.31 GB); runtime memory is higher. BF16 only (~15.3 GB of weights), so needs a high-memory Mac. Voice cloning (--ref_audio) additionally loads the bundled speaker_encoder/model.safetensors (24010028 bytes). English text normalisation only;"
+        },
+        {
+          "quant": "bf16 (Zyphra ZONOS2 PyTorch server)",
+          "gb": 15.67,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/Zyphra/Zonos2.git && cd Zonos2 && uv sync && uv run python -m zonos2 --model-path Zyphra/ZONOS2 --tts-default-voices-dir ./default_voices/",
+          "platform": "nvidia",
+          "source": "https://github.com/Zyphra/ZONOS2/blob/a5b2ee802301bd4ed8737a4911882d8ff84681bc/README.md",
+          "gb_source": "https://huggingface.co/Zyphra/ZONOS2/tree/65f1e80f94b599d474bb6af9094a803dc52f60bd",
+          "note": "official Zyphra ZONOS2 PyTorch server (Mini-SGLang based). Platform evidence: \"**Platform Support**: Linux only (x86_64). Requires NVIDIA GPU with CUDA toolkit matching your driver version (`nvidia-smi` to check).\" (https://github.com/Zyphra/ZONOS2/blob/a5b2ee802301bd4ed8737a49… Command: README Quick Start steps 1 and 2 chained with &&; verbatim. Starts a server on http://localhost:1919 (README step 3 curl/web UI generates speech). gb is the sum of the weight files the command loads (model.pth 15.34 GB; weights.pth (DAC 44khz 8kbps) 0.31 GB; model.safetensors 0.02 GB); runtime memory is higher. Linux x86_64 + CUDA toolkit only; pyproject pins sgl_kernel, flashinfer and torchaudio==2.9.1. The DAC vocoder is hard-coded to .to(\"cuda\")."
+        }
+      ]
+    }
   },
   {
     "recovered_original": false,
@@ -11300,7 +11703,21 @@
       "https://huggingface.co/IndexTeam/IndexTTS-2/tree/740dcaff396282ffb241903d150ac011cd4b1ede",
       "https://arxiv.org/html/2607.14846v1"
     ],
-    "identity_note": "IndexTeam/IndexTTS-2 (RW-Voice-EQ ran it via Replicate lucataco/indextts-2; Boson column 'IndexTTS-2')."
+    "identity_note": "IndexTeam/IndexTTS-2 (RW-Voice-EQ ran it via Replicate lucataco/indextts-2; Boson column 'IndexTTS-2').",
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (index-tts repo)",
+          "gb": 8.86,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/index-tts/index-tts.git && cd index-tts && pip install -U uv && uv sync && uv tool install \"huggingface-hub\" && hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints_2 && uv run python -c \"from indextts.utils.examples_downloader import ensure_examples_available; ensure_examples_available()\" && PYTHONPATH=\"$PYTHONPATH:.\" uv run python -c \"from indextts.infer_v2 import IndexTTS2; tts = IndexTTS2(cfg_path='checkpoints_2/config.yaml', model_dir='checkpoints_2', use_fp16=False, use_cuda_kernel=False, use_deepspeed=False); tts.infer(spk_audio_prompt='examples/voice_01.wav', text='Translate for me, what is a surprise!', output_path='gen.wav', verbose=True)\"",
+          "platform": "any",
+          "source": "https://github.com/index-tts/index-tts/blob/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md",
+          "gb_source": "https://huggingface.co/IndexTeam/IndexTTS-2/tree/740dcaff396282ffb241903d150ac011cd4b1ede",
+          "note": "official index-tts repo (uv project, Python API indextts.infer_v2.IndexTTS2). Platform evidence: \"elif hasattr(torch, \\\"mps\\\") and torch.backends.mps.is_available(): / self.device = \\\"mps\\\" / self.use_fp16 = False # Use float16 on MPS is overhead than float32 / ... Command: Chained the README steps with &&; dropped --all-extras from `uv sync` (README: 'You can remove this flag if you want to customize your installation choices'; --all-extras pulls deepspeed and the pyproject 'accel' extra with flash-attn, which cannot build without CUDA); gb is the sum of the weight files the command loads (gpt.pth 3.48 GB; s2mel.pth 1.20 GB; model.safetensors 1.19 GB; model.safetensors 2.32 GB; model.safetensors 0.18 GB; campplus_cn_common.bin 0.03 GB; bigvgan_generator.pt 0.45 GB); runtime memory is higher. Needs a reference voice clip (README example examples/voice_01.wav, fetched by ensure_examples_available). Requires uv; Python >=3.10,<3.12 (pyproject)."
+        }
+      ]
+    }
   },
   {
     "recovered_original": false,
@@ -11345,6 +11762,20 @@
       "unit": "1M-chars",
       "price_source": "https://deepinfra.com/sesame/csm-1b",
       "price_note": "USD per 1M input characters: DeepInfra lists sesame/csm-1b at $7.00 / 1M characters (page pricing data: input_character_length billing; not deprecated in DeepInfra's catalogue). Product: DeepInfra hosted inference (text to speech). API model: sesame/csm-1b (Sesame CSM 1B checkpoint). Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (mlx-audio)",
+          "gb": 6.61,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/csm-1b --text \"Hello from Sesame.\" --ref_audio ./reference_voice.wav --ref_text \"This is what my voice sounds like.\" --play",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/csm.md",
+          "gb_source": "https://huggingface.co/mlx-community/csm-1b/tree/5bf5ec118cf45fecc7b51198fd9f1a20a5aab65a",
+          "note": "mlx-audio (Blaizzy) @ feb25a37. Platform evidence: \"Fast inference optimized for Apple Silicon (M series chips)\" (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md) Command: Chained the documented `pip install mlx-audio` with the CSM voice-cloning CLI from docs/models/tts/csm.md, joined onto one line; otherwise verbatim (the CLI also writes audio_000.wav when --play is given). gb is the sum of the weight files the command loads (model.safetensors 6.21 GB; tokenizer.json 0.02 GB; tokenizer-e351c8d8-checkpoint125.safetensors 0.38 GB); runtime memory is higher. Without --ref_audio, the default voice prompt (--voice conversational_a) is downloaded from the gated sesame/csm-1b repo (sesame.py default_speaker_prompt uses repo_id \"sesame/csm-1b\"), so that form needs HF access;"
+        }
+      ]
     }
   },
   {
@@ -11369,6 +11800,40 @@
       "unit": "1M-chars",
       "price_source": "https://docs.together.ai/docs/serverless/models.md",
       "price_note": "USD per 1M input characters: Together's serverless model list gives Canopy Labs Orpheus 3B, API model canopylabs/orpheus-3b-0.1-ft, at $15.00 per 1M chars. Identity: the Hugging Face repo canopylabs/orpheus-tts-0.1-finetune-prod redirects to canopylabs/orpheus-3b-0.1-ft (same repo id), so this is the same checkpoint. Product: Together serverless text-to-speech. API model: canopylabs/orpheus-3b-0.1-ft. Settings: standard. Price basis: published list rate. Exclusions: DeepInfra lists the same checkpoint at $7.00/1M characters (smaller host, not used). Currency: USD. Together official docs, observed 2026-09-25."
+    },
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (orpheus-speech package)",
+          "gb": 15.21,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/canopyai/Orpheus-TTS.git && cd Orpheus-TTS && pip install orpheus-speech && pip install vllm==0.7.3 && python -c '\nfrom orpheus_tts import OrpheusModel\nimport wave\nimport time\n\nmodel = OrpheusModel(model_name =\"canopylabs/orpheus-tts-0.1-finetune-prod\", max_model_len=2048)\nprompt = \"\"\"Hello, world.\"\"\"\n\nsyn_tokens = model.generate_speech(\n   prompt=prompt,\n   voice=\"tara\",\n   )\n\nwith wave.open(\"output.wav\", \"wb\") as wf:\n   wf.setnchannels(1)\n   wf.setsampwidth(2)\n   wf.setframerate(24000)\n   for audio_chunk in syn_tokens: # output streaming\n      wf.writeframes(audio_chunk)\n'",
+          "platform": "nvidia",
+          "source": "https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/README.md",
+          "gb_source": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft/tree/4206a56e5a68cf6cf96900a8a78acd3370c02eb6",
+          "note": "official orpheus-speech package (vLLM backend). Platform evidence: \"pip install orpheus-speech # uses vllm under the hood for fast inference\" and, for the alternative, \"For No GPU inference using Llama cpp see implementation [documentation](additional_inference_optio… Command: Chained README clone/install steps with &&; added the README's recommended `pip install vllm==0.7.3` ('reverting to `pip install vllm==0.7.3` after `pip install orpheus-speech`'); wrapped the README's streaming Python example as python -c '...'. gb is the sum of the weight files the command loads (model-00001-of-00004.safetensors 4.95 GB; model-00002-of-00004.safetensors 4.93 GB; model-00003-of-00004.safetensors 3.32 GB; model-00004-of-00004.safetensors 1.93 GB; pytorch_model.bin 0.08 GB); runtime memory is higher. HF repo is gated (gated=auto: accept terms and log in with an HF token). vLLM loads only the 4 safetensors shards;"
+        },
+        {
+          "quant": "gguf Q4_K_M (orpheus-cpp 0.0.3)",
+          "gb": 2.42,
+          "gb_estimated": true,
+          "cmd": "pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu && python -c 'from scipy.io.wavfile import write\nfrom orpheus_cpp import OrpheusCpp\nimport numpy as np\n\norpheus = OrpheusCpp(verbose=False, lang=\"en\")\n\ntext = \"Hello, world.\"\nbuffer = []\nfor i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={\"voice_id\": \"tara\"})):\n   buffer.append(chunk)\n   print(f\"Generated chunk {i}\")\nbuffer = np.concatenate(buffer, axis=1)\nwrite(\"output.wav\", 24_000, np.concatenate(buffer))'",
+          "platform": "any",
+          "source": "https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/additional_inference_options/no_gpu/README.md",
+          "gb_source": "https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF/tree/af161b11022b996f8ae2f54d79b8ff71c5a3fb58",
+          "note": "orpheus-cpp 0.0.3 (llama-cpp-python, CPU wheel) - linked from the official repo's No-GPU docs. Platform evidence: \"You can stream audio without a GPU by using `orpheus-cpp`, which is a llama.cpp-compatible backend of the Orpheus TTS model.\" and \"#### Linux/Windows\\npip install llama-cpp-python --extra-index-url h… Command: Chained the no_gpu README install steps (Linux/Windows CPU wheel) with &&; added scipy to the pip install because the documented snippet imports scipy.io.wavfile and orpheus-cpp does not depend on it; gb is the sum of the weight files the command loads (orpheus-3b-0.1-ft-q4_k_m.gguf 2.36 GB; decoder_model.onnx 0.05 GB); runtime memory is higher. Q4_K_M quantised (not the original bf16 weights); GGUF made by a third party (isaiahbjork) but it is the file the officially linked no-GPU path loads."
+        },
+        {
+          "quant": "gguf Q4_K_M (orpheus-cpp 0.0.3)",
+          "gb": 2.42,
+          "gb_estimated": true,
+          "cmd": "pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal && python -c 'from scipy.io.wavfile import write\nfrom orpheus_cpp import OrpheusCpp\nimport numpy as np\n\norpheus = OrpheusCpp(verbose=False, lang=\"en\")\n\ntext = \"Hello, world.\"\nbuffer = []\nfor i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={\"voice_id\": \"tara\"})):\n   buffer.append(chunk)\n   print(f\"Generated chunk {i}\")\nbuffer = np.concatenate(buffer, axis=1)\nwrite(\"output.wav\", 24_000, np.concatenate(buffer))'",
+          "platform": "mac",
+          "source": "https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c53578c9d64082614861/additional_inference_options/no_gpu/README.md",
+          "gb_source": "https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF/tree/af161b11022b996f8ae2f54d79b8ff71c5a3fb58",
+          "note": "orpheus-cpp 0.0.3 (llama-cpp-python, Metal wheel) - linked from the official repo's No-GPU docs. Platform evidence: \"#### MacOS with Apple Silicon\\npip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal\" (https://github.com/canopyai/Orpheus-TTS/blob/e64661fe6d02c414fc77c… Command: Same as the 'any' variant but with the doc's 'MacOS with Apple Silicon' llama-cpp-python install line. gb is the sum of the weight files the command loads (orpheus-3b-0.1-ft-q4_k_m.gguf 2.36 GB; decoder_model.onnx 0.05 GB); runtime memory is higher. Q4_K_M quantised (not the original bf16 weights); GGUF made by a third party (isaiahbjork) but it is the file the officially linked no-GPU path loads."
+        }
+      ]
     }
   },
   {
@@ -23334,7 +23799,20 @@
     "open_weights": true,
     "license": "styletts2-pretrained-model-terms",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (styletts2 PyPI package 0.1.6)",
+          "gb": 0.91,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.10 --with styletts2 python -c \"from styletts2 import tts; my_tts = tts.StyleTTS2(); out = my_tts.inference('Hello there, I am now a python package.', output_wav_file='test.wav')\"",
+          "platform": "any",
+          "source": "https://github.com/sidharthrajaram/StyleTTS2/blob/350b8889d75a52c2c695dafa7ba4682386be0b96/README.md",
+          "gb_source": "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/tree/3aa7ba7f8f275ec13dce21682a61494c35089e2a",
+          "note": "styletts2 PyPI package 0.1.6 (MIT, gruut phonemizer), linked from the official yl4579/StyleTTS2 README. Platform evidence: \"self.device = 'cuda' if torch.cuda.is_available() else 'cpu'\" (https://github.com/sidharthrajaram/StyleTTS2/blob/350b8889d75a52c2c695dafa7ba4682386be0b96/src/styletts2/tts.py); Command: Wrapped the package README Quick Start (pip install styletts2; from styletts2 import tts; my_tts = tts.StyleTTS2(); out = my_tts.inference(\"Hello there, I am now a python package.\", output_wav_file=\"test.wav\")) as a uv one-liner; gb is the sum of the weight files the command loads (epochs_2nd_00020.pth 0.77 GB; epoch_00080.pth 0.09 GB; bst.t7 0.02 GB; step_1000000.t7 0.03 GB); runtime memory is higher. Same LibriTTS weights but the package phonemizes with gruut instead of the espeak phonemizer the model was trained with; the official README itself says 'lower quality due to mismatch between phonemizer and gruut'."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "yl4579/StyleTTS2-LibriTTS, the multi-speaker zero-shot checkpoint (the LJSpeech checkpoint is a separate single-speaker model). Code MIT; pre-trained models carry a use condition (listeners must be told samples are synthetic unless the voice owner consents).",
     "identity_sources": [
@@ -23351,7 +23829,20 @@
     "open_weights": true,
     "license": "cc-by-nc-sa-4.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (fish-speech repo)",
+          "gb": 1.15,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout 5dd593fef32546f2c0a7d99babbbb27a9478d759 && pip3 install torch torchvision torchaudio && pip3 install -e . && huggingface-cli download fishaudio/fish-speech-1.2 --local-dir checkpoints/fish-speech-1.2 && python tools/llama/generate.py --text \"Hello, world.\" --checkpoint-path \"checkpoints/fish-speech-1.2\" --num-samples 2 --compile && python tools/vqgan/inference.py -i \"codes_0.npy\" --checkpoint-path \"checkpoints/fish-speech-1.2/firefly-gan-vq-fsq-4x1024-42hz-generator.pth\"",
+          "platform": "nvidia",
+          "source": "https://github.com/fishaudio/fish-speech/blob/5dd593fef32546f2c0a7d99babbbb27a9478d759/docs/en/inference.md",
+          "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.2/tree/ef257fd7165af434a0e4dcd483c7c78cce72576f",
+          "note": "official fish-speech repo (commit 5dd593f, July 2024) CLI, PyTorch CUDA. Platform evidence: \"GPU Memory: 4GB (for inference), 8GB (for fine-tuning)\" / \"System: Linux, Windows\" (https://github.com/fishaudio/fish-speech/blob/5dd593fef32546f2c0a7d99babbbb27a9478d759/docs/en/index.md); Command: Chained the documented Linux setup (docs/en/index.md: pip3 install torch torchvision torchaudio; pip3 install -e .), model download and CLI steps 2+3 (docs/en/inference.md) with &&; added git clone + checkout of the commit whose docs name fishaudio/fish-speech-1.2; filled --text; gb is the sum of the weight files the command loads (model.pth 0.98 GB; firefly-gan-vq-fsq-4x1024-42hz-generator.pth 0.17 GB); runtime memory is higher. Writes codes_0.npy then fake.wav (random voice without a reference; cloning needs a ~10 s clip encoded in step 1 plus its transcript)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "fishaudio/fish-speech-1.2 (base 1.2 release, not 1.2-SFT, 1.4 or 1.5).",
     "identity_sources": [
@@ -23367,7 +23858,40 @@
     "open_weights": true,
     "license": "cc-by-nc-sa-4.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (fish-speech repo)",
+          "gb": 1.47,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python -m tools.run_webui --llama-checkpoint-path \"checkpoints/fish-speech-1.5\" --decoder-checkpoint-path \"checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth\" --decoder-config-name firefly_gan_vq",
+          "platform": "any",
+          "source": "https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md",
+          "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c",
+          "note": "official fish-speech repo (tag v1.5.0), Gradio WebUI tools.run_webui. Platform evidence: \"# Check if MPS or CUDA is available / if torch.backends.mps.is_available(): args.device = \\\"mps\\\" ... Command: Chained the documented Linux setup (docs/en/index.md: pip3 install torch==2.4.1 ...; pip3 install -e .[stable]), model download and WebUI launch (docs/en/inference.md) with &&; added git clone + 'git checkout v1.5.0' to pin the code to the 1.5 release (conda env creation step omitted). gb is the sum of the weight files the command loads (model.pth 1.28 GB; firefly-gan-vq-fsq-8x1024-21hz-generator.pth 0.19 GB); runtime memory is higher. Starts a local Gradio WebUI (http://localhost:7860) rather than writing a file; auto-selects MPS on Apple Silicon, CPU when no CUDA. Without a reference clip the model picks a random voice;"
+        },
+        {
+          "quant": "bf16 (fish-speech repo)",
+          "gb": 1.47,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text \"Hello, world.\" --checkpoint-path \"checkpoints/fish-speech-1.5\" --num-samples 2 --device mps && python tools/vqgan/inference.py -i \"codes_0.npy\" --checkpoint-path \"checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth\" --device mps",
+          "platform": "mac",
+          "source": "https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md",
+          "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c",
+          "note": "official fish-speech repo (tag v1.5.0) CLI, PyTorch MPS. Platform evidence: \"If you want to perform inference on MPS, please add the `--device mps` flag.\" (https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/index.md) Command: Chained the documented macOS setup (docs/en/index.md 'macos setup'), model download and CLI steps 2+3 (docs/en/inference.md) with &&; added git clone + 'git checkout v1.5.0'; filled --text; gb is the sum of the weight files the command loads (model.pth 1.28 GB; firefly-gan-vq-fsq-8x1024-21hz-generator.pth 0.19 GB); runtime memory is higher. Writes codes_0.npy then fake.wav in the repo directory (random voice without a reference). At v1.5.0 the macOS setup block omits PortAudio, which pyaudio needs;"
+        },
+        {
+          "quant": "bf16 (fish-speech repo)",
+          "gb": 1.47,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout v1.5.0 && pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 && pip3 install -e .[stable] && huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-speech-1.5 && python tools/llama/generate.py --text \"Hello, world.\" --checkpoint-path \"checkpoints/fish-speech-1.5\" --num-samples 2 --compile && python tools/vqgan/inference.py -i \"codes_0.npy\" --checkpoint-path \"checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth\"",
+          "platform": "nvidia",
+          "source": "https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76be0d533/docs/en/inference.md",
+          "gb_source": "https://huggingface.co/fishaudio/fish-speech-1.5/tree/275a984d33c33659e39eed41ff5bcd6e67517f4c",
+          "note": "official fish-speech repo (tag v1.5.0) CLI, PyTorch CUDA. Platform evidence: \"You may want to use `--compile` to fuse CUDA kernels for faster inference (~30 tokens/second -> ~500 tokens/second).\" (https://github.com/fishaudio/fish-speech/blob/7902e408c85b37193ce3f3c2361ca3c76b… Command: Chained the documented Linux setup, model download and CLI steps 2+3 with &&; added git clone + 'git checkout v1.5.0'; filled --text; skipped optional step 1 and dropped --prompt-text/--prompt-tokens (doc: 'If you plan to let the model randomly choose a voice timbre, you can skip this step'). gb is the sum of the weight files the command loads (model.pth 1.28 GB; firefly-gan-vq-fsq-8x1024-21hz-generator.pth 0.19 GB); runtime memory is higher. Writes codes_0.npy then fake.wav (random voice without a reference; for cloning run step 1 on a ~10 s clip and pass --prompt-text/--prompt-tokens)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "fishaudio/fish-speech-1.5 (model.pth + firefly-gan-vq-fsq-8x1024-21hz decoder). Predecessor of OpenAudio S1; distinct from Fish Speech 1.2/1.4 and from OpenAudio S1/S1-mini.",
     "identity_sources": [
@@ -23432,7 +23956,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (myshell-ai/OpenVoice)",
+          "gb": 0.3,
+          "gb_estimated": true,
+          "cmd": "conda create -n openvoice python=3.9 && conda activate openvoice && git clone https://github.com/myshell-ai/OpenVoice.git && cd OpenVoice && pip install -e . && huggingface-cli download myshell-ai/OpenVoice --revision c70fc8b939bd1d8213994ff7c88e32be39708271 --include 'checkpoints/*' --local-dir . && python -c \"import os, torch\nfrom openvoice import se_extractor\nfrom openvoice.api import BaseSpeakerTTS, ToneColorConverter\nckpt_base = 'checkpoints/base_speakers/EN'\nckpt_converter = 'checkpoints/converter'\ndevice='cuda:0' if torch.cuda.is_available() else 'cpu'\noutput_dir = 'outputs'\nbase_speaker_tts = BaseSpeakerTTS(f'{ckpt_base}/config.json', device=device)\nbase_speaker_tts.load_ckpt(f'{ckpt_base}/checkpoint.pth')\ntone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)\ntone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')\nos.makedirs(output_dir, exist_ok=True)\nsource_se = torch.load(f'{ckpt_base}/en_default_se.pth').to(device)\nreference_speaker = 'resources/example_reference.mp3'\ntarget_se, audio_name = se_extractor.get_se(reference_speaker, tone_color_converter, target_dir='processed', vad=True)\nsave_path = f'{output_dir}/output_en_default.wav'\ntext = 'This audio is generated by OpenVoice.'\nsrc_path = f'{output_dir}/tmp.wav'\nbase_speaker_tts.tts(text, src_path, speaker='default', language='English', speed=1.0)\ntone_color_converter.convert(audio_src_path=src_path, src_se=source_se, tgt_se=target_se, output_path=save_path, message='@MyShell')\n\"",
+          "platform": "any",
+          "source": "https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part1.ipynb (install: https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/docs/USAGE.md)",
+          "gb_source": "https://huggingface.co/myshell-ai/OpenVoice/tree/c70fc8b939bd1d8213994ff7c88e32be39708271",
+          "note": "official myshell-ai/OpenVoice (openvoice.api, demo_part1.ipynb). Platform evidence: \"device=\\\"cuda:0\\\" if torch.cuda.is_available() else \\\"cpu\\\"\" (https://github.com/myshell-ai/OpenVoice/blob/74a1d147b17a8c3092dd5430504bd83ef6c7eb23/demo_part1.ipynb); Command: docs/USAGE.md 'Linux Install' steps chained with && (git clone via https instead of the doc's git@ SSH URL). The doc's checkpoint step ('Download the checkpoint from [S3 checkpoints_1226.zip] and extract it to the checkpoints folder') is REPLACED by a huggingface-cli download of the official myshell… gb is the sum of the weight files the command loads (checkpoint.pth 0.16 GB; checkpoint.pth 0.13 GB; step59000_snr39.99_pesq4.35_BERP_none0.30_mean1.81_std1.81.model.pkl 0.01 GB); runtime memory is higher. Needs a reference voice clip (doc example resources/example_reference.mp3 ships in the repo). setup.py pins numpy==1.22.0 etc., hence the doc's Python 3.9 conda env ('conda activate' needs an initialised conda shell). The documented S3 checkpoint zip now returns HTTP 404/403, so the download step fetches the same checkpoint tree from MyShell's official Hugging Face repo instead."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "myshell-ai/OpenVoice (V1). Distinct from OpenVoice V2 (myshell-ai/OpenVoiceV2, MeloTTS base speakers).",
     "identity_sources": [
@@ -23470,10 +24007,20 @@
           "quant": "fp32",
           "gb": 12,
           "cmd": "pip install git+https://github.com/suno-ai/bark.git && python -m bark --text \"Hello, my name is Suno.\" --output_filename example.wav",
-          "platform": "nvidia",
+          "platform": "any",
           "source": "https://github.com/suno-ai/bark/blob/f4f32d4cd480dfec1c245d258174bc9bde3c2148/README.md",
-          "note": "README: 'The full version of Bark requires around 12GB of VRAM to hold everything on GPU at the same time'; smaller cards work with CPU offload, and SUNO_USE_SMALL_MODELS=True selects the separate small models (not this entry).",
+          "note": "README: \"Bark has been tested and works on both CPU and GPU (pytorch 2.0+, CUDA 11.7 and CUDA 12.0).\" Full-size text, coarse and fine models.",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32 (transformers)",
+          "gb": 4.49,
+          "gb_estimated": true,
+          "cmd": "pip install --upgrade transformers scipy torch && python -c \"import scipy; from transformers import AutoProcessor, AutoModel; processor = AutoProcessor.from_pretrained('suno/bark'); model = AutoModel.from_pretrained('suno/bark'); inputs = processor(text=['Hello, my name is Suno. And, uh — and I like pizza. [laughs] But I also have other interests such as playing tic tac toe.'], return_tensors='pt'); speech_values = model.generate(**inputs, do_sample=True); scipy.io.wavfile.write('bark_out.wav', rate=model.generation_config.sample_rate, data=speech_values.cpu().numpy().squeeze())\"",
+          "platform": "any",
+          "source": "https://huggingface.co/suno/bark/blob/70a8a7d34168586dc5d028fa9666aceade177992/README.md",
+          "gb_source": "https://huggingface.co/suno/bark/tree/70a8a7d34168586dc5d028fa9666aceade177992",
+          "note": "transformers (BarkModel via AutoModel). Platform evidence: The card snippet loads \"model = AutoModel.from_pretrained(\\\"suno/bark\\\")\" with no device argument, so PyTorch keeps it on the CPU (https://huggingface.co/suno/bark/blob/70a8a7d34168586dc5d028fa9666ace… Command: suno/bark model card 'Transformers Usage' steps 1, 3 and 4 wrapped as one pip && python -c line; torch added to the pip install (the card assumes it is present); gb is the sum of the weight files the command loads (pytorch_model.bin 4.49 GB); runtime memory is higher. Materially smaller download than the official .pt files (4.49 GB vs ~13.0 GB) for the same full-size model. Runs on CPU with no GPU flags; nothing in the card covers MPS. Output limited to ~13-14 s per generation."
         }
       ]
     },
@@ -23742,7 +24289,20 @@
     "open_weights": true,
     "license": "bilibili-model-use-license",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 on CPU (index-tts repo CLI `indextts`)",
+          "gb": 1.22,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/index-tts/index-tts.git && cd index-tts && git checkout 8d2759b2b73b920e58ccc0167fc2a445fb170860 && pip install -r requirements.txt && huggingface-cli download IndexTeam/Index-TTS bigvgan_discriminator.pth bigvgan_generator.pth bpe.model dvae.pth gpt.pth unigram_12000.vocab --local-dir checkpoints && pip install -e . && indextts \"大家好，我现在正在bilibili 体验 ai 科技，说实话，来之前我绝对想不到！AI技术已经发展到这样匪夷所思的地步了！\" --voice reference_voice.wav --model_dir checkpoints --config checkpoints/config.yaml --output output.wav",
+          "platform": "any",
+          "source": "https://github.com/index-tts/index-tts/blob/8d2759b2b73b920e58ccc0167fc2a445fb170860/README.md",
+          "gb_source": "https://huggingface.co/IndexTeam/Index-TTS/tree/146f5cbb46b9c98ba1075ecf9d4b6cc4ad6b7f18",
+          "note": "official index-tts repo CLI `indextts` (v1-era commit, before the IndexTTS-1.5 release). Platform evidence: \"parser.add_argument(\\\"-d\\\", \\\"--device\\\", type=str, default=None, help=\\\"Device to run the model on (cpu, cuda, mps).\\\" )\" and \"elif torch.mps.is_available(): / args.device = \\\"mps\\\" / else: / args.d… Command: Chained README steps 1, 2, 3 and 5 with &&; added `git checkout <sha>` so the v1-era code/README is used (current main defaults to IndexTTS-2.5/2); joined the multi-line huggingface-cli and indextts commands onto one line. gb is the sum of the weight files the command loads (gpt.pth 0.70 GB; bigvgan_generator.pth 0.53 GB); runtime memory is higher. Needs a reference voice clip (--voice). README creates a conda env with python=3.10 and runs `apt-get install ffmpeg`;"
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "IndexTeam/Index-TTS, the first release. Distinct from IndexTTS-1.5 and IndexTTS-2 (existing id indextts-2). HF card metadata says apache-2.0, while the index-tts repository is released under the bilibili Model Use License Agreement.",
     "identity_sources": [
@@ -24081,12 +24641,32 @@
         {
           "quant": "fp32",
           "gb": 3.2,
-          "cmd": "pip install chatterbox-tts && python -c \"import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cuda', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)\"",
+          "cmd": "git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c \"import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cuda', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)\"",
           "platform": "nvidia",
-          "source": "https://huggingface.co/ResembleAI/chatterbox/blob/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18/README.md",
+          "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
           "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
-          "note": "Card 'Multilingual Quickstart' with t3_model='v3'. gb is the t3_mtl23ls_v3 (2.14 GB) plus s3gen_v3 (1.06 GB) safetensors size, not a measured peak.",
+          "note": "Corrected 2026-10-05: PyPI chatterbox-tts 0.1.7 (latest) has from_pretrained(cls, device) with no t3_model argument and always loads t3_mtl23ls_v2, so V3 needs the README's install-from-source route. The official loader pairs t3_mtl23ls_v3.safetensors with s3gen.pt.",
           "gb_estimated": true
+        },
+        {
+          "quant": "fp32 (chatterbox)",
+          "gb": 3.21,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c \"import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cpu', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)\"",
+          "platform": "any",
+          "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+          "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "note": "chatterbox (official repo, installed from source; PyPI 0.1.7 lacks t3_model). Platform evidence: device = \"cuda\" # or \"cpu\" / \"mps\" ... multilingual_model = ChatterboxMultilingualTTS.from_pretrained(device=device, t3_model=\"v3\") (https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0… Command: README 'install from source' steps (git clone / cd / pip install -e .) chained with &&, then the README Multilingual V3 snippet wrapped as a python -c one-liner with device='cpu' (README: device = \"cuda\" # or \"cpu\" / \"mps\") and the French text shortened. gb is the sum of the weight files the command loads (ve.pt 0.01 GB; t3_mtl23ls_v3.safetensors 2.14 GB; s3gen.pt 1.06 GB); runtime memory is higher. IMPORTANT: PyPI chatterbox-tts 0.1.7 (latest, 2026-03-26) has ChatterboxMultilingualTTS.from_pretrained(cls, device) with no t3_model argument and hard-codes t3_mtl23ls_v2.safetensors, so 'pip install chatterbox-tts' + t…"
+        },
+        {
+          "quant": "fp32 (chatterbox)",
+          "gb": 3.21,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c \"import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='mps', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)\"",
+          "platform": "mac",
+          "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+          "gb_source": "https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "note": "chatterbox (official repo, PyTorch MPS). Platform evidence: device = \"cuda\" # or \"cpu\" / \"mps\" (https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md); Command: Same as the CPU variant with device='mps' (README: # or \"cpu\" / \"mps\"). gb is the sum of the weight files the command loads (ve.pt 0.01 GB; t3_mtl23ls_v3.safetensors 2.14 GB; s3gen.pt 1.06 GB); runtime memory is higher. Same PyPI 0.1.7 caveat as the CPU variant (must install from source). Falls back to CPU automatically if MPS is unavailable."
         }
       ]
     },
@@ -24106,7 +24686,40 @@
     "license": "apache-2.0",
     "params_b": 0.6,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (qwen-tts)",
+          "gb": 2.52,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.12 --with qwen-tts python -c \"import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cpu', dtype=torch.bfloat16); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/blob/5d83992436eae1d760afd27aff78a71d676296fc/README.md",
+          "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc",
+          "note": "qwen-tts (official QwenLM/Qwen3-TTS Python package, transformers==4.57.3). Platform evidence: \"--device\", default=\"cuda:0\", help=\"Device for device_map, e.g. cpu, cuda, cuda:0 (default: cuda:0).\" (https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940cdf532cd9f488e/qwen_tts/cli/de… Command: Documented Python voice-clone snippet wrapped as a uv one-liner; device_map changed from 'cuda:0' to 'cpu' (official CLI help lists cpu as a device_map value); attn_implementation='flash_attention_2' dropped (the card marks flash-attn 'Optional: for optimized performance' and it is GPU-only); gb is the sum of the weight files the command loads (model.safetensors 1.83 GB; model.safetensors 0.68 GB); runtime memory is higher. CPU support is evidenced only by the official qwen-tts-demo CLI help text; every README/card example uses device_map=\"cuda:0\" and no CPU speed/memory statement exists."
+        },
+        {
+          "quant": "mlx-bf16 (mlx-audio)",
+          "gb": 2.52,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16 --text 'Hello from Sesame.' --ref_audio sample_audio.wav --ref_text 'This is what my voice sounds like.'",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/docs/models/tts/qwen3-tts.md",
+          "gb_source": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16/tree/1eccf1cb2519b5a4e8a95b5f0544f3303568164f",
+          "note": "mlx-audio (Blaizzy) @ feb25a3. Platform evidence: \"Fast inference optimized for Apple Silicon (M series chips)\" (https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md); Command: mlx-audio documents Base cloning with the Python API (load_model(\"mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16\"); model.generate(text=..., ref_audio=\"sample_audio.wav\", ref_text=\"This is what my voice sounds like.\")); gb is the sum of the weight files the command loads (model.safetensors 1.83 GB; model.safetensors 0.68 GB); runtime memory is higher. Needs a local reference WAV (sample_audio.wav) plus its transcript; if --ref_text is omitted mlx-audio auto-transcribes with a Whisper STT model (extra download)."
+        },
+        {
+          "quant": "bf16 (qwen-tts)",
+          "gb": 2.52,
+          "gb_estimated": true,
+          "cmd": "pip install -U qwen-tts && pip install -U flash-attn --no-build-isolation && python -c \"import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cuda:0', dtype=torch.bfloat16, attn_implementation='flash_attention_2'); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/blob/5d83992436eae1d760afd27aff78a71d676296fc/README.md",
+          "gb_source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc",
+          "note": "qwen-tts (official) + FlashAttention 2. Platform evidence: device_map=\"cuda:0\", ... attn_implementation=\"flash_attention_2\"; \"we recommend using FlashAttention 2 to reduce GPU memory usage.\" (https://github.com/QwenLM/Qwen3-TTS/blob/022e286b98fbec7e1e916cb940… Command: Documented install lines chained with && and the documented voice-clone Python snippet wrapped as python -c; the long demo target text replaced with 'Hello, world.'. Otherwise verbatim (device_map='cuda:0', bf16, flash_attention_2). gb is the sum of the weight files the command loads (model.safetensors 1.83 GB; model.safetensors 0.68 GB); runtime memory is higher. flash-attn build needs a compatible NVIDIA GPU/toolchain (README: 'MAX_JOBS=4 pip install -U flash-attn --no-build-isolation' if <96GB RAM). Needs ref_audio + ref_text (doc uses a public URL)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "Qwen/Qwen3-TTS-12Hz-0.6B-Base, the 0.6B reference-audio cloning checkpoint. Distinct from the 1.7B Base (qwen3-tts-12hz-1-7b-base) and the CustomVoice/VoiceDesign checkpoints.",
     "identity_sources": [
@@ -35082,5 +35695,327 @@
     "source": "https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic/README.md",
     "model_repo": "https://github.com/microsoft/NeuralSpeech/tree/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic",
     "identity_note": "Original author implementation with linked pretrained acoustic and vocoder weights. Legacy environment requires a multi-step setup. No benchmark score or current one-command run inferred."
+  },
+  {
+    "id": "melotts-english",
+    "name": "MeloTTS English",
+    "provider": "MyShell",
+    "category": "tts",
+    "released": "2024-02",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (MeloTTS repo CLI)",
+          "gb": 0.65,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/myshell-ai/MeloTTS.git && cd MeloTTS && pip install -e . && python -m unidic download && melo \"Text to read\" output.wav",
+          "platform": "any",
+          "source": "https://github.com/myshell-ai/MeloTTS/blob/209145371cff8fc3bd60d7be902ea69cbdb7965a/docs/install.md",
+          "gb_source": "https://huggingface.co/myshell-ai/MeloTTS-English/tree/bb4fb7346d566d277ba8c8c7dbfdf6786139b8ef",
+          "note": "official MeloTTS repo CLI (melo), PyTorch. Platform evidence: \"# CPU is sufficient for real-time inference.\" / \"# You can set it manually to 'cpu' or 'cuda' or 'cuda:0' or 'mps'\" / \"device = 'auto' # Will automatically use GPU if available\" (https://github.com/m… Command: chained the documented 'Linux and macOS Install' steps with && and appended the documented CLI example 'melo \"Text to read\" output.wav'; otherwise verbatim gb is the sum of the weight files the command loads (checkpoint.pth 0.21 GB; model.safetensors 0.44 GB); runtime memory is higher. Repo says 'developed and tested on `Ubuntu 20.04` and `Python 3.9`' and pins transformers==4.27.4, so a Python 3.9-3.10 env is the safe choice; 'If you encountered issues in macOS install, try the [Docker Install]'."
+        },
+        {
+          "quant": "fp32 (mlx-audio)",
+          "gb": 0.65,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio g2p_en && mlx_audio.tts.generate --model mlx-community/MeloTTS-English-MLX --text 'Hello, world!' --voice EN-US",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/MeloTTS-English-MLX/tree/30a1b9d981b4ed3d80b312a9979f2b39b1aed42a",
+          "note": "mlx-audio (Blaizzy/mlx-audio @ feb25a37). Platform evidence: \"The best audio processing library built on Apple's MLX framework ... on Apple Silicon.\" and Supported Models row \"| **MeloTTS** | Lightweight VITS2-based TTS with streaming | EN (more coming) | [mlx-… Command: mlx-audio README's generic Quick Start CLI ('mlx_audio.tts.generate --model ... --text ... --voice ...') with the MeloTTS repo listed in its Supported Models table substituted; added g2p_en because melotts/text.py raises 'MeloTTS English requires the 'g2p_en' package. gb is the sum of the weight files the command loads (model.safetensors 0.21 GB; bert_weights.npz 0.44 GB); runtime memory is higher. Community MLX conversion (mlx-community), listed in mlx-audio's own README. Text frontend also downloads the bert-base-uncased tokenizer and needs g2p_en (which pulls nltk data on first use)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/myshell-ai/MeloTTS-English",
+    "identity_note": "myshell-ai/MeloTTS-English, the checkpoint MeloTTS loads for language 'EN' (download_utils.py maps EN to this repo; EN_V2 and EN_NEWEST are separate checkpoints). Fixed-voice multi-accent English VITS2-based model. Code and weights MIT.",
+    "identity_sources": [
+      "https://huggingface.co/myshell-ai/MeloTTS-English/tree/bb4fb7346d566d277ba8c8c7dbfdf6786139b8ef",
+      "https://github.com/myshell-ai/MeloTTS/blob/209145371cff8fc3bd60d7be902ea69cbdb7965a/melo/download_utils.py"
+    ]
+  },
+  {
+    "id": "neutts-air",
+    "name": "NeuTTS Air",
+    "provider": "Neuphonic",
+    "category": "tts",
+    "released": "2025-10",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.552,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "q4_0 (neutts 1.4.1)",
+          "gb": 4.01,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install \"neutts[llama]\" && python -m examples.basic_example --input_text \"My name is Dave, and um, I'm from London\" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air-q4-gguf",
+          "platform": "any",
+          "source": "https://huggingface.co/neuphonic/neutts-air/blob/3bf9403646f0ca46a3f2250355d2ce4d1f70559c/README.md",
+          "gb_source": "https://huggingface.co/neuphonic/neutts-air-q4-gguf/tree/0f54a5513ee49708713e49c5122c274df2737047",
+          "note": "neutts 1.4.1 (PyPI, official neuphonic/neutts) via llama-cpp-python (GGUF backbone) + PyTorch NeuCodec, all on CPU. Platform evidence: Card: 'tts = NeuTTS(backbone_repo=\"neuphonic/neutts-air-q4-gguf\", backbone_device=\"cpu\", codec_repo=\"neuphonic/neucodec\", codec_device=\"cpu\")' and 'pip install \"neutts[llama]\" Note that this installs… Command: chained the card's documented steps (clone for the examples, 'pip install \"neutts[llama]\"', Basic Example) with && and added the documented '--backbone' argument set to the card's own Q4 repo (the card's one-code-block uses backbone_repo=\"neuphonic/neutts-air-q4-gguf\", backbone_device=\"cpu\"); gb is the sum of the weight files the command loads (neutts-air-Q4_0.gguf 0.53 GB; pytorch_model.bin 1.16 GB; model.safetensors 2.32 GB); runtime memory is higher. All neuphonic HF repos used here (neutts-air, neutts-air-q4-gguf, neucodec) are gated (HF 'gated: auto'): accept the terms on HF and log in (hf auth login) first."
+        },
+        {
+          "quant": "bf16 (neutts 1.4.1)",
+          "gb": 5,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text \"My name is Dave, and um, I'm from London\" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air",
+          "platform": "any",
+          "source": "https://github.com/neuphonic/neutts/blob/ac69851f28fc63a487917e7c2e27f0d75c759cba/README.md",
+          "gb_source": "https://huggingface.co/neuphonic/neutts-air/tree/3bf9403646f0ca46a3f2250355d2ce4d1f70559c",
+          "note": "neutts 1.4.1 (PyPI) with PyTorch/transformers backbone. Platform evidence: examples/basic_example.py: '--device', type=str, default=\"cpu\", help=\"Device for the backbone, e.g. cpu, mps, cuda\" (https://github.com/neuphonic/neutts/blob/ac69851f28fc63a487917e7c2e27f0d75c759cba/e… Command: chained the documented install + Basic Example with && and added the documented --backbone argument (the example's default backbone is now neuphonic/neutts-nano, so Air must be named); device defaults to cpu gb is the sum of the weight files the command loads (model.safetensors 1.50 GB; tokenizer.json 0.02 GB; pytorch_model.bin 1.16 GB; model.safetensors 2.32 GB); runtime memory is higher. Same gating, reference-clip, Python and watermark caveats as the GGUF variant. Larger download than the Q4 path."
+        },
+        {
+          "quant": "bf16 (neutts 1.4.1)",
+          "gb": 4.98,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/neuphonic/neutts.git && cd neutts && pip install neutts && python -m examples.basic_example --input_text \"My name is Dave, and um, I'm from London\" --ref_audio samples/dave.wav --ref_text samples/dave.txt --backbone neuphonic/neutts-air --device mps --codec_device mps",
+          "platform": "mac",
+          "source": "https://github.com/neuphonic/neutts/blob/ac69851f28fc63a487917e7c2e27f0d75c759cba/examples/basic_example.py",
+          "gb_source": "https://huggingface.co/neuphonic/neutts-air/tree/3bf9403646f0ca46a3f2250355d2ce4d1f70559c",
+          "note": "neutts 1.4.1 (PyPI) with PyTorch MPS. Platform evidence: 'help=\"Device for the backbone, e.g. cpu, mps, cuda\"' and 'help=\"Device for the codec, e.g. cpu, mps, cuda (onnx codecs are cpu only)\"' (https://github.com/neuphonic/neutts/blob/ac69851f28fc63a487917e… Command: as the bf16 CPU variant, plus the example's documented --device/--codec_device options set to mps gb is the sum of the weight files the command loads (model.safetensors 1.50 GB; pytorch_model.bin 1.16 GB; model.safetensors 2.32 GB); runtime memory is higher. MPS is only documented through the example's --device help text; the README's Apple Silicon guidance is the CPU Accelerate build of llama-cpp-python for GGUF ('-DGGML_METAL=OFF -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=Apple')."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/neuphonic/neutts-air",
+    "identity_note": "neuphonic/neutts-air (Qwen 0.5B-based voice-cloning TTS with the NeuCodec decoder); README: '~552m' parameters including embeddings. The Q4 GGUF backbone (neuphonic/neutts-air-q4-gguf) is Neuphonic's own quantisation of the same model. Weights Apache-2.0; the neutts code repository uses the NeuTTS Open License. CodecMOS-Accent cites the neuphonic/neutts repository without naming the backbone file.",
+    "identity_sources": [
+      "https://huggingface.co/neuphonic/neutts-air",
+      "https://github.com/neuphonic/neutts/tree/ac69851f28fc"
+    ]
+  },
+  {
+    "id": "parler-tts-mini-v1",
+    "name": "Parler-TTS Mini v1",
+    "provider": "Hugging Face (Parler-TTS)",
+    "category": "tts",
+    "released": "2024-08",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.88,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (parler-tts)",
+          "gb": 3.51,
+          "gb_estimated": true,
+          "cmd": "pip install git+https://github.com/huggingface/parler-tts.git soundfile && python -c \"import torch, soundfile as sf; from parler_tts import ParlerTTSForConditionalGeneration; from transformers import AutoTokenizer; d = 'cuda:0' if torch.cuda.is_available() else 'cpu'; m = ParlerTTSForConditionalGeneration.from_pretrained('parler-tts/parler-tts-mini-v1').to(d); t = AutoTokenizer.from_pretrained('parler-tts/parler-tts-mini-v1'); desc = 'A female speaker delivers a slightly expressive and animated speech with a moderate speed and pitch. The recording is of very high quality, with the speaker voice sounding clear and very close up.'; g = m.generate(input_ids=t(desc, return_tensors='pt').input_ids.to(d), prompt_input_ids=t('Hey, how are you doing today?', return_tensors='pt').input_ids.to(d)); sf.write('parler_tts_out.wav', g.cpu().numpy().squeeze(), m.config.sampling_rate)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/parler-tts/parler-tts-mini-v1/blob/0392b9451a601e528fd863bbb0598431fee810d9/README.md",
+          "gb_source": "https://huggingface.co/parler-tts/parler-tts-mini-v1/tree/0392b9451a601e528fd863bbb0598431fee810d9",
+          "note": "Model card 'Random voice' snippet as a one-liner; it selects device = \"cuda:0\" if torch.cuda.is_available() else \"cpu\". Install line from the card plus soundfile, which the snippet imports. The description prompt drops the apostrophe in \"speaker's\" so it fits inside the shell quotes. gb is the fp32 model.safetensors size (3.51 GB); runtime memory is higher."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/parler-tts/parler-tts-mini-v1",
+    "identity_note": "parler-tts/parler-tts-mini-v1 (description-prompted TTS; 877,842,290 parameters per HF safetensors metadata). Distinct from Parler-TTS Mini v0.1, Mini v1.1 and Large v1.",
+    "identity_sources": [
+      "https://huggingface.co/parler-tts/parler-tts-mini-v1/tree/0392b9451a601e528fd863bbb0598431fee810d9"
+    ]
+  },
+  {
+    "id": "piper-en-us-lessac-medium",
+    "name": "Piper (en_US lessac medium)",
+    "provider": "Open Home Foundation (Piper)",
+    "category": "tts",
+    "released": "2023-06",
+    "open_weights": true,
+    "license": "mit",
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "onnx-fp32 (piper-tts 1.8.0)",
+          "gb": 0.06,
+          "gb_estimated": true,
+          "cmd": "pip install piper-tts && python3 -m piper.download_voices en_US-lessac-medium && python3 -m piper -m en_US-lessac-medium -f test.wav -- 'This is a test.'",
+          "platform": "any",
+          "source": "https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/docs/CLI.md",
+          "gb_source": "https://huggingface.co/rhasspy/piper-voices/tree/c10ece1aade47bb51c153c893d14e5bf8e5b7117",
+          "note": "piper-tts 1.8.0 (PyPI, OHF-Voice/piper1-gpl) on onnxruntime CPU. Platform evidence: CLI.md lists '`--cuda` - enable GPU acceleration (requires `onnxruntime-gpu` package)' as an opt-in flag (https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/docs/CLI… Command: chained the three documented CLI.md steps (install, download voice, run) with &&; otherwise verbatim gb is the sum of the weight files the command loads (en_US-lessac-medium.onnx 0.06 GB); runtime memory is higher. Downloads from the piper-voices main branch (not pinned), so the files could change; espeak-ng is embedded in the wheel."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/rhasspy/piper-voices",
+    "identity_note": "Piper voice en_US-lessac-medium from rhasspy/piper-voices (en/en_US/lessac/medium/en_US-lessac-medium.onnx, 63,201,294 bytes), run with the maintained piper-tts runtime (OHF-Voice/piper1-gpl, GPL-3.0). Voice files are MIT on Hugging Face; the lessac training data carries the Blizzard 2013 research licence. Other Piper voices are separate checkpoints.",
+    "identity_sources": [
+      "https://huggingface.co/rhasspy/piper-voices/tree/c10ece1a",
+      "https://github.com/OHF-Voice/piper1-gpl/blob/efffbfb226bfb511ebbcf55d0cecd8b35a89743d/src/piper/download_voices.py"
+    ]
+  },
+  {
+    "id": "kitten-tts-mini-0-8",
+    "name": "Kitten TTS Mini 0.8",
+    "provider": "KittenML",
+    "category": "tts",
+    "released": "2026-02",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 0.08,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "onnx (kittenml 0.9.3)",
+          "gb": 0.08,
+          "gb_estimated": true,
+          "cmd": "pip install kittenml && python -c \"from kittenml import KittenTTS; import soundfile as sf; model = KittenTTS('KittenML/kitten-tts-mini-0.8'); audio = model.generate('This high-quality TTS model runs without a GPU.', voice='Jasper'); sf.write('output.wav', audio, 24000)\"",
+          "platform": "any",
+          "source": "https://github.com/KittenML/KittenTTS/blob/ab5592c28b6f376ea4c3963e84ce6d6688241eca/docs/onnx-models.md",
+          "gb_source": "https://huggingface.co/KittenML/kitten-tts-mini-0.8/tree/c02725660cea441db4c383af69f1f26f5cd00947",
+          "note": "kittenml 0.9.3 (PyPI) ONNX backend, onnxruntime CPU. Platform evidence: \"They run efficiently on CPU without a GPU\" and \"Already covered by `pip install kittenml`, which includes the ONNX runtime. Command: docs/onnx-models.md 'Installation' (pip install kittenml) + 'Basic usage' snippet wrapped as a python -c one-liner; code otherwise verbatim gb is the sum of the weight files the command loads (kitten_tts_mini_v0_8.onnx 0.08 GB); runtime memory is higher. The default 'pip install kittenml' also pulls PyTorch (for KittenTTS 2); docs: 'Installing `kittenml` with `--no-deps` alongside `onnxruntime`, `espeakng_loader`, `phonemizer`, `soundfile`, `numpy` and `huggingface_hub`…"
+        },
+        {
+          "quant": "fp32 (mlx-audio)",
+          "gb": 0.29,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio phonemizer-fork && mlx_audio.tts.generate --model mlx-community/kitten-tts-mini-0.8 --text 'Hello, world!' --voice Jasper",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/kitten-tts-mini-0.8/tree/a22cce835c4af60bf9a50779124cf8cc34b0c36e",
+          "note": "mlx-audio (Blaizzy/mlx-audio @ feb25a37). Platform evidence: \"providing fast and efficient text-to-speech (TTS) ... on Apple Silicon\" and Supported Models row \"| **KittenTTS** | Compact KittenTTS 0.8 models for edge-friendly TTS | EN | [nano](https://huggingfac… Command: mlx-audio README's generic Quick Start CLI with the KittenTTS mini repo from its Supported Models table substituted; added phonemizer-fork because kitten_tts.py raises \"KittenTTS requires the optional 'phonemizer-fork' package for text processing. Install it with: pip install phonemizer-fork\"; gb is the sum of the weight files the command loads (model.safetensors 0.29 GB); runtime memory is higher. Card: '`phonemizer` (espeak backend) is required for `generate()`', so the espeak-ng system library is needed (e.g. via Homebrew)."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/KittenML/kitten-tts-mini-0.8",
+    "identity_note": "KittenML/kitten-tts-mini-0.8 (80M-parameter ONNX model, about 79 MB). Distinct from the micro and nano 0.8 checkpoints and from KittenTTS 2.",
+    "identity_sources": [
+      "https://huggingface.co/KittenML/kitten-tts-mini-0.8/tree/c0272566"
+    ]
+  },
+  {
+    "id": "kitten-tts-2",
+    "name": "KittenTTS 2",
+    "provider": "KittenML",
+    "category": "tts",
+    "released": "2026-10",
+    "open_weights": true,
+    "license": "stellon-labs-community-license",
+    "params_b": 1.7,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "ternary-packed LM (kittenml 0.9.3)",
+          "gb": 2.07,
+          "gb_estimated": true,
+          "cmd": "pip install kittenml && python -c \"from kittenml import KittenTTS; import soundfile as sf; m = KittenTTS('KittenML/kitten-tts-2'); audio = m.generate('One day, a little girl named Lily found a needle in her room.', voice='Bruno'); sf.write('output.wav', audio, m.sample_rate)\"",
+          "platform": "any",
+          "source": "https://github.com/KittenML/KittenTTS/blob/ab5592c28b6f376ea4c3963e84ce6d6688241eca/README.md",
+          "gb_source": "https://huggingface.co/KittenML/kitten-tts-2/tree/baa41e5d2c5f64be0095365672a7858542261271",
+          "note": "kittenml 0.9.3 (PyPI, official KittenML/KittenTTS), PyTorch. Platform evidence: \"KittenTTS 2 runs on CPU out of the box — `device` is auto-detected\" and prerequisites \"A CUDA GPU with roughly 8 GB free, or a CPU with about 6 GB of RAM\" (https://github.com/KittenML/KittenTTS/blob/… Command: README 'Installation' + 'Basic usage' Python snippet chained with && and wrapped as a python -c one-liner; code otherwise verbatim gb is the sum of the weight files the command loads (model-ternary.safetensors 0.95 GB; tokenizer.json 0.01 GB; model.safetensors 0.02 GB;  (95 files: .npz embeddings + .wav reference clips + voices.json) 0.03 GB; s3gen_meanflow.safetensors 1.06 GB); runtime memory is higher. Python >= 3.10 (setup.py python_requires='>=3.10'); pulls torch>=2.6. Downloads from HF main (unpinned). The card says 'Everything the model needs is in this repository', but the code also downloads the 1.06 GB s3gen_mea…"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/KittenML/kitten-tts-2",
+    "identity_note": "KittenML/kitten-tts-2 (README: 1.7B parameters, ternary-packed language model of about 506 MiB) with the ResembleAI/chatterbox-turbo s3gen decoder it downloads. Weights under the Stellon Labs Community License (free below USD 1M revenue); code Apache-2.0. Released 2026-10-02.",
+    "identity_sources": [
+      "https://huggingface.co/KittenML/kitten-tts-2/tree/baa41e5d"
+    ]
+  },
+  {
+    "id": "pocket-tts",
+    "name": "Pocket TTS (English)",
+    "provider": "Kyutai",
+    "category": "tts",
+    "released": "2026-01",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": 0.1,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (pocket-tts 3.3.0)",
+          "gb": 0.23,
+          "gb_estimated": true,
+          "cmd": "uvx pocket-tts generate --text \"Hello world, this is a test.\"",
+          "platform": "any",
+          "source": "https://github.com/kyutai-labs/pocket-tts/blob/41cbc84af539ea78a804ffca5f9c6edc1a22ce44/README.md",
+          "gb_source": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/tree/e7205b6ee50e654a5ea19f0e9df2b0813b05e921",
+          "note": "pocket-tts 3.3.0 (PyPI, official kyutai-labs/pocket-tts CLI), PyTorch CPU. Platform evidence: \"A lightweight text-to-speech (TTS) application designed to run efficiently on CPUs.\" / \"Does not require the gpu version of PyTorch.\" / \"Faster than real-time, ~6x real-time on a CPU of MacBook Air M… Command: README's 'uvx pocket-tts generate' with the documented --text flag added ('Modify the voice with `--voice` and the text with `--text`'); writes ./tts_output.wav. Equivalent documented alternative: 'pip install pocket-tts' then 'pocket-tts generate' gb is the sum of the weight files the command loads (model.safetensors 0.22 GB; alba.safetensors 0.01 GB); runtime memory is higher. kyutai/pocket-tts is gated (HF 'gated: auto'; accept terms and 'uvx hf auth login'); without that, the CLI silently falls back to the ungated kyutai/pocket-tts-without-voice-cloning weights (same size, 219,029,196 B, dif…"
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/kyutai/pocket-tts",
+    "identity_note": "kyutai/pocket-tts default English model (100M parameters, CPU-oriented). The default English weights have been updated in place (english.yaml now equals english_2026-09; the launch weights were english_2026-01). The voice-cloning repo is gated; without access the CLI falls back to kyutai/pocket-tts-without-voice-cloning. Weights CC BY 4.0, code MIT.",
+    "identity_sources": [
+      "https://huggingface.co/kyutai/pocket-tts",
+      "https://kyutai.org/blog/2026-01-13-pocket-tts"
+    ]
+  },
+  {
+    "id": "dia-1-6b-0626",
+    "name": "Dia 1.6B (0626)",
+    "provider": "Nari Labs",
+    "category": "tts",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.61,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (nari-labs/dia repo)",
+          "gb": 6.75,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/nari-labs/dia.git && cd dia && pip install -e . && python example/simple-cpu.py",
+          "platform": "any",
+          "source": "https://github.com/nari-labs/dia/blob/876125e461a03b157ec905b0fe8b57a0f8b9e7a0/example/simple-cpu.py",
+          "gb_source": "https://huggingface.co/nari-labs/Dia-1.6B-0626/tree/ef2795fcc29c5abe6ffc91fd33808588b49bbc66",
+          "note": "official nari-labs/dia repo (PyTorch), example/simple-cpu.py. Platform evidence: example/simple-cpu.py: '# Select device: CPU' / 'device = torch.device(\"cpu\")' / 'Dia.from_pretrained(\"nari-labs/Dia-1.6B-0626\", compute_dtype=\"float32\", device=device) # Float32 works better than flo… Command: README 'Install via pip' steps chained with &&; runs the repo's own example/simple-cpu.py instead of the README's example/simple.py (same model, forces device cpu and float32); writes simple.mp3 gb is the sum of the weight files the command loads (pytorch_model.bin 6.44 GB; weights.pth 0.31 GB); runtime memory is higher. README and card still say 'Dia has been tested on only GPUs (pytorch 2.0+, CUDA 12.6). CPU support is to be added soon.', so the CPU example exists in the official repo but is not advertised in the README; The README still says CPU support is to be added, but the repo ships example/simple-cpu.py."
+        },
+        {
+          "quant": "fp16 (nari-labs/dia repo)",
+          "gb": 6.75,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/nari-labs/dia.git && cd dia && pip install -e . && python example/simple-mac.py",
+          "platform": "mac",
+          "source": "https://github.com/nari-labs/dia/blob/876125e461a03b157ec905b0fe8b57a0f8b9e7a0/example/simple-mac.py",
+          "gb_source": "https://huggingface.co/nari-labs/Dia-1.6B-0626/tree/ef2795fcc29c5abe6ffc91fd33808588b49bbc66",
+          "note": "official nari-labs/dia repo (PyTorch MPS), example/simple-mac.py. Platform evidence: example/simple-mac.py: '# It is important to set the `use_torch_compile` argument to `False` when using Dia on MacOS.' (https://github.com/nari-labs/dia/blob/876125e461a03b157ec905b0fe8b57a0f8b9e7a0/e… Command: README 'Install via pip' steps chained with &&; runs the repo's own example/simple-mac.py instead of example/simple.py; writes simple.mp3 gb is the sum of the weight files the command loads (pytorch_model.bin 6.44 GB; weights.pth 0.31 GB); runtime memory is higher. README TODO still lists 'Docker support for ARM architecture and MacOS'; same GPU-only-tested disclaimer as above. On uv: 'uv run example/simple-mac.py' also works per the README's uv instructions."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/nari-labs/Dia-1.6B-0626",
+    "identity_note": "nari-labs/Dia-1.6B-0626 (1,611,160,576 parameters per HF metadata), the June 2025 checkpoint the README and examples load. Distinct from the original nari-labs/Dia-1.6B (April 2025).",
+    "identity_sources": [
+      "https://huggingface.co/nari-labs/Dia-1.6B-0626/tree/ef2795fc"
+    ]
+  },
+  {
+    "id": "chatterbox-turbo",
+    "name": "Chatterbox Turbo",
+    "provider": "Resemble AI",
+    "category": "tts",
+    "released": "2025-12",
+    "open_weights": true,
+    "license": "mit",
+    "params_b": 0.35,
+    "api": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (chatterbox-tts 0.1.7)",
+          "gb": 2.99,
+          "gb_estimated": true,
+          "cmd": "pip install chatterbox-tts && python -c \"import torchaudio as ta; from chatterbox.tts_turbo import ChatterboxTurboTTS; m = ChatterboxTurboTTS.from_pretrained(device='cpu'); ta.save('test-turbo.wav', m.generate('Hi there, Sarah here from MochaFone calling you back [chuckle], have you got one minute to chat about the billing issue?'), m.sr)\"",
+          "platform": "any",
+          "source": "https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2baadb0182dde554908b48b85c2/README.md",
+          "gb_source": "https://huggingface.co/ResembleAI/chatterbox-turbo/tree/749d1c1a46eb10492095d68fbcf55691ccf137cd",
+          "note": "chatterbox-tts 0.1.7 (PyPI, official package). Platform evidence: gradio_tts_turbo_app.py: DEVICE = \"cuda\" if torch.cuda.is_available() else \"cpu\" ... model = ChatterboxTurboTTS.from_pretrained(DEVICE) (https://github.com/resemble-ai/chatterbox/blob/5de7a54aa4e5e2ba… Command: README install step chained with &&; README 'Chatterbox-Turbo' snippet wrapped as a python -c one-liner with device='cpu' and generate() called without audio_prompt_path, as in the repo's example_tts_turbo.py ('wav = model.generate(text)', default conds.pt voice). gb is the sum of the weight files the command loads (ve.safetensors 0.01 GB; t3_turbo_v1.safetensors 1.92 GB; s3gen_meanflow.safetensors 1.06 GB); runtime memory is higher. snapshot_download allow_patterns [\"*.safetensors\", \"*.json\", \"*.txt\", \"*.pt\", \"*.model\"] also downloads the unused s3gen.safetensors (1,056,484,620 B) to disk; it is not loaded."
+        }
+      ]
+    },
+    "model_repo": "https://huggingface.co/ResembleAI/chatterbox-turbo",
+    "identity_note": "ResembleAI/chatterbox-turbo (350M English model with a one-step distilled decoder), loaded by ChatterboxTurboTTS in the official chatterbox-tts package. Distinct from Chatterbox and Chatterbox Multilingual.",
+    "identity_sources": [
+      "https://huggingface.co/ResembleAI/chatterbox-turbo/tree/749d1c1a46eb10492095d68fbcf55691ccf137cd"
+    ]
   }
 ]

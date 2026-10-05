@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2024-07 · 0.3B params · apache-2.0
 
-**score 38.0** ±2.3 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
+**score 39.1** ±2.1 · comparison only: no current run option verified · from 9 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -15,22 +15,23 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>  64.0%    39.5   2024-10-09   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>  66.0%    40.9   2024-10-09   20% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>   3.4%    35.1   2024-10-09   15% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>  75.0%    41.2   2024-10-09   14% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>   3.6%    34.2   2024-10-09    8% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>   3.1%    29.6   2024-10-09    6% ▇
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   4.1%    36.9   2024-10-20    7% ▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-zh · Paraformer…</a>   4.1%    32.7   2024-10-20    6% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 38.0
+source                  test                               score  implies  date        weight
+<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     64.0%    40.6   2024-10-09   17% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     66.0%    42.1   2024-10-09   15% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.4%    36.2   2024-10-09   12% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     75.0%    42.3   2024-10-09   11% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      3.6%    35.5   2024-10-09    6% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      3.1%    30.9   2024-10-09    5% ▇
+<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  4.15 / 5    39.3   2025-03-27   22% ▇▇▇
+<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>      4.1%    37.7   2024-10-20    5% ▇
+                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-zh · Paraformer…</a>      4.1%    33.4   2024-10-20    4% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
+                        weighted average                          = 39.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt))</sub>
+<sub>Licences: F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching ([CC BY 4.0](../../licenses/speech-f5tts-report-ccby.txt)) · VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · Amphion MaskGCT README · zero-shot TTS results table ([MIT](../../licenses/speech-amphion-maskgct-mit.txt))</sub>
 
 ## How to run it
 

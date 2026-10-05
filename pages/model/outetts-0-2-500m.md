@@ -6,7 +6,7 @@
 
 OuteAI · released 2024-11 · 0.5B params · cc-by-nc-4.0
 
-**score 31.1** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 30.9** ±6.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    28.5   2025-04-09   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 31.1
+<a name="speech-cloneval-space-apache"></a>ClonEval · Open Voice…  <a href="https://huggingface.co/spaces/amu-cai/Open_Voice_Cloning_Leaderboard/blob/f715ec805e912f43e79a5b948191ff044df27fec/results.csv">ClonEval · LibriSpeech test-c…</a>  88.4%    27.6   2025-04-09   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                15% ▇▇
+                        weighted average                       = 30.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

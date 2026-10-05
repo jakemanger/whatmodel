@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2026-08 · apache-2.0
 
-**score 60.3** ±2.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.9** ±2.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · Whisper la…</a>   1.8%    60.6   2026-08-22   55% ▇▇▇▇▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · Paraformer…</a>   0.9%    60.6   2026-08-22   42% ▇▇▇▇▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-en · Whisper la…</a>   1.8%    61.3   2026-08-22   55% ▇▇▇▇▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/FireRedTTS3.md">Seed-TTS test-zh · Paraformer…</a>   0.9%    61.3   2026-08-22   42% ▇▇▇▇▇
 prior            pull toward the middle                   49.9                 3% ▇
-                 weighted average                       = 60.3
+                 weighted average                       = 60.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -10665,5 +10665,23 @@
     "quote": "PMLR publication agreement paragraph 2 grants CC BY 4.0 in the published article; paragraph 3 requires its publication link. §4.1 describes original listening evaluations for all systems. Scope: PMLR paper, not the arXiv version.",
     "scope": "Only Grad-TTS-10 and explicitly identified xcmyz FastSpeech implementation, both using HiFi-GAN, Table 2. No aggregate across different diffusion iteration counts. Glow-TTS/Tacotron2 baselines held back because exact checkpoint/vocoder match to existing entries is uncertain.",
     "attribution": "Vadim Popov, Ivan Vovk, Vladimir Gogoryan, Tasnima Sadekova and Mikhail Kudinov. Grad-TTS: A Diffusion Probabilistic Model for Text-to-Speech. ICML 2021, PMLR 139. https://proceedings.mlr.press/v139/popov21a.html . Table 2 selected means transformed as (MOS−1)/4. No endorsement."
+  },
+  {
+    "id": "speech-versa-toolkit-ccby",
+    "name": "VERSA toolkit paper: TTS demonstration (arXiv:2412.17667v2)",
+    "match": [
+      "arxiv.org/html/2412.17667v2"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2412.17667v2",
+    "license_url": "/licenses/speech-versa-toolkit-ccby.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-05",
+    "icon": "arxiv.org",
+    "quote": "The v2 abs page links http://creativecommons.org/licenses/by/4.0/ and the HTML header reads 'License: CC BY 4.0'. Appendix C.2: 'we utilize a range of open-source TTS models for the TTS evaluation ... we use the common LibriSpeech test-clean set for evaluation ... Inference is performed using the open-source pipelines provided by the model developers, with no additional hyperparameter tuning.' Table 6 is the authors' own VERSA evaluation of those generations.",
+    "scope": "Appendix C.2 Table 6 UTMOS column for the six systems whose Table 5 checkpoint links match catalogue entries (MeloTTS-English, Parler-TTS Mini v1, CosyVoice-300M, Plachtaa VALL-E X, Amphion VALL-E (amphion/valle), Amphion NaturalSpeech 2). The Whisper-WER column (Whisper size not stated) was held back on 2026-10-05 because it fitted poorly (series noise 0.72; TTS leave-one-out r without floor-weight series fell from 0.658 to 0.629 and the error-metric p90 rose from 6.8 to 9.5 points). Other columns are not imported, to avoid counting correlated metrics of the same generations several times; ESPnet-TTS, ESPnet-SpeechLM, ChatTTS, EmotiVoice and WhisperSpeech small are not catalogue models.",
+    "attribution": "Jiatong Shi, Hye-jin Shim, Jinchuan Tian, Siddhant Arora, Haibin Wu, Darius Petermann, Jia Qi Yip, You Zhang, Yuxun Tang, Wangyou Zhang, Dareen Safar Alharthi, Yichen Huang, Koichi Saito, Jionghao Han, Yiwen Zhao, Chris Donahue and Shinji Watanabe. VERSA: A Versatile Evaluation Toolkit for Speech, Audio, and Music, arXiv:2412.17667v2, CC BY 4.0. Changes: selected Table 6 UTMOS values stored as (x - 1) / 4. No endorsement."
   }
 ]

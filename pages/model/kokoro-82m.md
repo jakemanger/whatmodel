@@ -6,7 +6,7 @@
 
 hexgrad · released 2025-01 · 0.082B params · apache-2.0
 
-**score 54.7** ±4.2 · #29 of 46 · from 4 benchmark results across 2 sources
+**score 54.9** ±4.2 · #35 of 67 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.50 / 5    59.7   2026-07-16   51% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.54 / 5    55.4   2026-07-16    6% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     25.9%    45.3   2025-08-10   26% ▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.4%    56.6   2025-08-10   10% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Voice Ident…</a>  3.50 / 5    60.0   2026-07-16   50% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.54 / 5    55.9   2026-07-16    6% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     25.9%    45.7   2025-08-10   27% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.4%    57.0   2025-08-10   10% ▇
 prior                   pull toward the middle                      49.9                 7% ▇
-                        weighted average                          = 54.7
+                        weighted average                          = 54.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,16 +35,16 @@ api (DeepInfra) · $0.62/M chars · [deepinfra.com](https://deepinfra.com/hexgra
 <sub>[price source](https://deepinfra.com/hexgrad/Kokoro-82M): USD per 1M input characters: DeepInfra lists hexgrad/Kokoro-82M at $0.62 / 1M characters (page pricing data: input\_character\_length billing). Product: DeepInfra hosted inference. API model: hexgrad/Kokoro-82M. Settings: standard serverless. Price basis: published list rate. Currency: USD. DeepInfra official model page, observed 2026-09-25.</sub>
 
 <pre>
-version            needs  score
-fp32-onnx        ~0.89GB   54.7
-bf16 · mac only   ~0.7GB   54.7
+version                        needs  score
+bf16 · mac only               ~0.7GB   54.9
+fp32 (kokoro package 0.9.4)  ~0.33GB   54.9
 </pre>
 
 ```sh
-# fp32-onnx
-uv tool install kokoro-tts && wget https://github.com/nazdridoy/kokoro-tts/releases/download/v1.0.0/kokoro-v1.0.onnx https://github.com/nazdridoy/kokoro-tts/releases/download/v1.0.0/voices-v1.0.bin && echo 'Hello world' > in.txt && kokoro-tts in.txt out.wav --voice af_heart
 # bf16 · mac only
 pip install mlx-audio misaki && mlx_audio.tts.generate --model mlx-community/Kokoro-82M-bf16 --text 'Hello, world!' --voice af_heart
+# fp32 (kokoro package 0.9.4)
+pip install "kokoro>=0.9.4" soundfile && python3 -m kokoro --text "The sky above the port was the color of television, tuned to a dead channel." -o file.wav
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

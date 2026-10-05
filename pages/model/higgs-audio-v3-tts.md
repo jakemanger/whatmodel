@@ -6,7 +6,7 @@
 
 Boson AI · released 2026-06 · 4B params · boson-higgs-audio-v3-research-nc
 
-**score 65.1** ±3.1 · #10 of 46 · from 5 benchmark results across 3 sources
+**score 65.5** ±3.1 · #10 of 67 · from 5 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.1%    63.9   2026-06-04   35% ▇▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      2.7%    71.5   2026-06-04   17% ▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.4%    68.4   2026-06-04   16% ▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.38 / 5    63.2   2026-07-16   23% ▇▇▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1072.8    61.5   2026-09-24    5% ▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.1%    64.4   2026-06-04   36% ▇▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>      2.7%    72.1   2026-06-04   16% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>      4.4%    69.0   2026-06-04   15% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.38 / 5    63.5   2026-07-16   23% ▇▇▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1072.8    61.8   2026-09-24    5% ▇
 prior                   pull toward the middle                      49.9                 4% ▇
-                        weighted average                          = 65.1
+                        weighted average                          = 65.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +37,8 @@ api (Boson AI) · $15.00/M chars · [docs.boson.ai](https://docs.boson.ai)
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~10.1GB   65.1
-bf16 · mac only     ~10.1GB   65.1
+bf16 · nvidia only  ~10.1GB   65.5
+bf16 · mac only     ~10.1GB   65.5
 </pre>
 
 ```sh

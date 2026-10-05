@@ -6,7 +6,7 @@
 
 Zyphra · 8B params (0.9B active) · apache-2.0
 
-**score 55.6** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 56.0** ±2.3 · #33 of 67 · from 5 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.3   2026-06-25   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    52.8   2026-06-25   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    51.3   2026-06-25   18% ▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    59.8   2026-06-25   17% ▇▇
-<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    61.8   2026-06-22    9% ▇
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.8   2026-06-25   31% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    53.3   2026-06-25   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    51.8   2026-06-25   18% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    60.3   2026-06-25   17% ▇▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    62.3   2026-06-22    9% ▇
 prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 55.6
+                        weighted average                          = 56.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,6 +41,31 @@ ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">Seed-TTS
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                      needs  score
+q4_k (zonos2.cpp)                          ~5.17GB   56.0
+q8_0 (zonos2.cpp)                           ~8.8GB   56.0
+q4_k (zonos2.cpp) · mac only               ~5.17GB   56.0
+q8_0 (zonos2.cpp) · mac only                ~8.8GB   56.0
+mlx-bf16 (mlx-audio) · mac only           ~15.64GB   56.0
+bf16 (Zyphra ZONOS2 PyTorch server) · n…  ~15.67GB   56.0
+</pre>
+
+```sh
+# q4_k (zonos2.cpp)
+git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1
+# q8_0 (zonos2.cpp)
+git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --seed 1
+# q4_k (zonos2.cpp) · mac only
+git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q4_k.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q4_k.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1
+# q8_0 (zonos2.cpp) · mac only
+git clone --recurse-submodules https://github.com/Zyphra/zonos2.cpp.git && cd zonos2.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && hf download Zyphra/ZONOS2-GGUF dac.gguf spk-encoder.gguf --local-dir out && hf download Zyphra/ZONOS2-GGUF zonos2-q8_0.gguf --local-dir out && ./build/zonos2-cli out/zonos2-q8_0.gguf --tts "Hello, world." out.wav --dac out/dac.gguf --gpu --seed 1
+# mlx-bf16 (mlx-audio) · mac only
+pip install mlx-audio && python -m mlx_audio.tts.generate --model mlx-community/Zyphra-ZONOS2 --text "Hello, this is ZONOS two running with MLX audio." --output_path outputs --file_prefix zonos2
+# bf16 (Zyphra ZONOS2 PyTorch server) · nvidia only
+git clone https://github.com/Zyphra/Zonos2.git && cd Zonos2 && uv sync && uv run python -m zonos2 --model-path Zyphra/ZONOS2 --tts-default-voices-dir ./default_voices/
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/zonos2-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

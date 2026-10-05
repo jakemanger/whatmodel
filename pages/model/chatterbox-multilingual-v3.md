@@ -6,7 +6,7 @@
 
 Resemble AI · released 2026-04 · 0.5B params · mit
 
-**score 51.7** ±10.5 · #31 of 46 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.9** ±10.5 · #38 of 67 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                             score  implies  date        weight
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1043.3    53.2   2026-09-24   55% ▇▇▇▇▇▇▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena  <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1043.3    53.6   2026-09-24   55% ▇▇▇▇▇▇▇
 prior             pull toward the middle                    49.9                45% ▇▇▇▇▇
-                  weighted average                        = 51.7
+                  weighted average                        = 51.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,13 +28,19 @@ prior             pull toward the middle                    49.9                
 ## How to run it
 
 <pre>
-version              needs  score
-fp32 · nvidia only  ~3.2GB   51.7
+version                         needs  score
+fp32 · nvidia only             ~3.2GB   51.9
+fp32 (chatterbox)             ~3.21GB   51.9
+fp32 (chatterbox) · mac only  ~3.21GB   51.9
 </pre>
 
 ```sh
 # fp32 · nvidia only
-pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cuda', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
+git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cuda', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
+# fp32 (chatterbox)
+git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='cpu', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
+# fp32 (chatterbox) · mac only
+git clone https://github.com/resemble-ai/chatterbox.git && cd chatterbox && pip install -e . && python -c "import torchaudio as ta; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; m = ChatterboxMultilingualTTS.from_pretrained(device='mps', t3_model='v3'); ta.save('out.wav', m.generate('Bonjour, comment ça va?', language_id='fr'), m.sr)"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

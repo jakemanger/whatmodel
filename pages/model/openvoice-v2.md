@@ -6,7 +6,7 @@
 
 MyShell
 
-**score 21.0** ±2.5 · comparison only: no current run option verified · from 6 benchmark results across 4 sources
+**score 21.5** ±2.5 · #65 of 67 · from 6 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.59 / 5    18.8   2025-05-11   65% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.92 / 5    28.9   2025-05-11    8% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.0%    27.9   2025-05-15    8% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.5%    17.6   2025-05-15    6% ▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     24.0%    16.7   2026-05-24   10% ▇
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.59 / 5    19.2   2025-05-11   64% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.92 / 5    29.6   2025-05-11    8% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.0%    28.6   2025-05-15    8% ▇
+                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.5%    17.9   2025-05-15    6% ▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     24.0%    17.4   2026-05-24   10% ▇
 <a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     86.2%    44.2   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 21.0
+prior                   pull toward the middle                      49.9                 3% ▇
+                        weighted average                          = 21.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,6 +32,42 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                        needs  score
+fp32 (myshell-ai/OpenVoice)  ~0.79GB   21.5
+</pre>
+
+```sh
+# fp32 (myshell-ai/OpenVoice)
+conda create -n openvoice python=3.9 && conda activate openvoice && git clone https://github.com/myshell-ai/OpenVoice.git && cd OpenVoice && pip install -e . && pip install git+https://github.com/myshell-ai/MeloTTS.git && python -m unidic download && huggingface-cli download myshell-ai/OpenVoiceV2 --revision f36e7edfe1684461a8343844af60babc2efbb727 --local-dir checkpoints_v2 && python -c "import os, torch
+from openvoice import se_extractor
+from openvoice.api import ToneColorConverter
+ckpt_converter = 'checkpoints_v2/converter'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+output_dir = 'outputs_v2'
+tone_color_converter = ToneColorConverter(f'{ckpt_converter}/config.json', device=device)
+tone_color_converter.load_ckpt(f'{ckpt_converter}/checkpoint.pth')
+os.makedirs(output_dir, exist_ok=True)
+reference_speaker = 'resources/example_reference.mp3'
+target_se, audio_name = se_extractor.get_se(reference_speaker, tone_color_converter, vad=True)
+from melo.api import TTS
+language, text = 'EN_NEWEST', 'Did you ever hear a folk tale about a giant turtle?'
+src_path = f'{output_dir}/tmp.wav'
+speed = 1.0
+model = TTS(language=language, device=device)
+speaker_ids = model.hps.data.spk2id
+for speaker_key in speaker_ids.keys():
+    speaker_id = speaker_ids[speaker_key]
+    speaker_key = speaker_key.lower().replace('_', '-')
+    source_se = torch.load(f'checkpoints_v2/base_speakers/ses/{speaker_key}.pth', map_location=device)
+    if torch.backends.mps.is_available() and device == 'cpu':
+        torch.backends.mps.is_available = lambda: False
+    model.tts_to_file(text, speaker_id, src_path, speed=speed)
+    save_path = f'{output_dir}/output_v2_{speaker_key}.wav'
+    tone_color_converter.convert(audio_src_path=src_path, src_se=source_se, tgt_se=target_se, output_path=save_path, message='@MyShell')
+"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/openvoice-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

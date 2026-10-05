@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-06 · mit
 
-**score 29.2** ±2.7 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 29.7** ±2.4 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,17 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.43 / 5    30.4   2025-05-11   79% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.90 / 5    28.3   2025-05-11   10% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.1%    16.6   2025-05-15    7% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     70.3%   -38.1   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 29.2
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.43 / 5    31.0   2025-05-11   56% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.90 / 5    28.9   2025-05-11    7% ▇
+<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.65 / 5    29.7   2025-03-27   29% ▇▇▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.1%    16.9   2025-05-15    5% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     70.3%   -36.3   2025-04-25    1% ▇
+prior                   pull toward the middle                      49.9                 2% ▇
+                        weighted average                          = 29.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
+<sub>Licences: TTSDS2 listening test results ([MIT](../../licenses/speech-ttsds2-listening-mit.txt)) · VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · TTSDS2 multilingual benchmark results ([MIT](../../licenses/speech-ttsds2-multilingual-mit.txt)) · TTSDS v1 published results ([MIT](../../licenses/speech-ttsds-v1-mit.txt))</sub>
 
 ## How to run it
 

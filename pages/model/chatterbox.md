@@ -6,7 +6,7 @@
 
 Resemble AI · released 2025-05 · 0.5B params · mit
 
-**score 49.4** ±5.2 · #35 of 46 · from 4 benchmark results across 2 sources
+**score 50.0** ±5.2 · #43 of 67 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    44.0   2025-08-10   39% ▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    57.9   2025-08-10   15% ▇▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    54.3   2026-03-15   20% ▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    47.9   2026-03-15   15% ▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     24.5%    44.4   2025-08-10   40% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       13.1%    58.2   2025-08-10   16% ▇▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.23 / 5    54.2   2026-03-15   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.33 / 5    51.1   2026-03-15   12% ▇
 prior                   pull toward the middle                      49.9                11% ▇
-                        weighted average                          = 49.4
+                        weighted average                          = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,9 +35,10 @@ api (Replicate) · $25.00/M chars · [replicate.com](https://replicate.com/resem
 <sub>[price source](https://replicate.com/resemble-ai/chatterbox): USD per 1M input characters: Replicate's resemble-ai/chatterbox model page bills $0.025 per thousand input characters (x1000). Resemble's own pricing page lists no per-character TTS rate. Product: Replicate hosted model (official resemble-ai account). API model: resemble-ai/chatterbox. Settings: standard. Price basis: published per-unit billing, not hardware time. Exclusions: taxes. Currency: USD. Replicate official model page, observed 2026-09-25.</sub>
 
 <pre>
-version              needs  score
-fp32 · nvidia only  ~2.9GB   49.4
-fp32 · mac only     ~2.9GB   49.4
+version                        needs  score
+fp32 · nvidia only            ~2.9GB   50.0
+fp32 · mac only               ~2.9GB   50.0
+fp32 (chatterbox-tts 0.1.7)  ~3.19GB   50.0
 </pre>
 
 ```sh
@@ -45,6 +46,8 @@ fp32 · mac only     ~2.9GB   49.4
 pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cuda'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
 # fp32 · mac only
 pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='mps'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
+# fp32 (chatterbox-tts 0.1.7)
+pip install chatterbox-tts && python -c "import torchaudio as ta; from chatterbox.tts import ChatterboxTTS; m = ChatterboxTTS.from_pretrained(device='cpu'); ta.save('out.wav', m.generate('Hello world'), m.sr)"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

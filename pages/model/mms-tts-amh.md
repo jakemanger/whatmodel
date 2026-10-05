@@ -6,7 +6,7 @@
 
 Meta
 
-**score 50.0** ±15.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±15.6 · #44 of 67 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    81.3   2026-08-12    0% ▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    81.4   2026-08-12    0% ▇
 prior                   pull toward the middle                   49.9               100% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 50.0
 </pre>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                          needs  score
+fp32 (transformers VitsModel)  ~0.15GB   50.0
+</pre>
+
+```sh
+# fp32 (transformers VitsModel)
+uv run --python 3.11 --with transformers --with torch --with scipy --with uroman python -c "from transformers import VitsModel, AutoTokenizer; import torch, scipy; model = VitsModel.from_pretrained('facebook/mms-tts-amh'); tokenizer = AutoTokenizer.from_pretrained('facebook/mms-tts-amh'); text = 'ሰላም፣ እንዴት ነህ?'; inputs = tokenizer(text, return_tensors='pt'); torch.set_grad_enabled(False); output = model(**inputs).waveform; scipy.io.wavfile.write('techno.wav', rate=model.config.sampling_rate, data=output.squeeze().numpy())"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mms-tts-amh) · [JSON](https://whatmodel.sh/api?format=json&all=1)

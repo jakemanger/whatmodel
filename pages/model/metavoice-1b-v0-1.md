@@ -6,7 +6,7 @@
 
 MetaVoice
 
-**score 16.5** ±2.4 · comparison only: no current run option verified · from 9 benchmark results across 5 sources
+**score 16.9** ±2.5 · #67 of 67 · from 9 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.18 / 5    12.8   2025-05-11   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.49 / 5    17.2   2025-05-11    8% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     795.7    21.2   2026-06-19    9% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     79.2%    17.2   2026-06-19    2% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     43.3%   -14.2   2026-06-19    1% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.07 / 5    13.9   2026-03-15    4% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.06 / 5    34.6   2026-03-15    3% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.3%    30.0   2025-05-15    6% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     80.7%    10.4   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 16.5
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.18 / 5    13.1   2025-05-11   63% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.49 / 5    17.6   2025-05-11    8% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     795.7    21.8   2026-06-19    9% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     79.2%    17.7   2026-06-19    2% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>     43.3%   -14.0   2026-06-19    1% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.07 / 5    13.1   2026-03-15    5% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.06 / 5    37.6   2026-03-15    3% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.3%    30.6   2025-05-15    6% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     80.7%    11.1   2025-04-25    1% ▇
+prior                   pull toward the middle                      49.9                 3% ▇
+                        weighted average                          = 16.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,6 +35,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 (metavoiceio/metavoice-src) · nvid…  ~9.72GB   16.9
+</pre>
+
+```sh
+# bf16 (metavoiceio/metavoice-src) · nvidia only
+git clone https://github.com/metavoiceio/metavoice-src.git && cd metavoice-src && pip install -r requirements.txt && pip install torch==2.2.1 torchaudio==2.2.1 && pip install -e . && python -c "from fam.llm.fast_inference import TTS; tts = TTS(); tts.synthesise(text='This is a demo of text to speech by MetaVoice-1B, an open-source foundational audio model.', spk_ref_path='assets/bria.mp3')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/metavoice-1b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.6B params · apache-2.0
 
-**score 60.4** ±2.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.1** ±2.8 · #25 of 67 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    61.4   2026-02-01   55% ▇▇▇▇▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    59.9   2026-02-01   42% ▇▇▇▇▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    62.1   2026-02-01   55% ▇▇▇▇▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    60.6   2026-02-01   42% ▇▇▇▇▇
 prior            pull toward the middle                   49.9                 3% ▇
-                 weighted average                       = 60.4
+                 weighted average                       = 61.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,22 @@ prior            pull toward the middle                   49.9                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                            needs  score
+bf16 (qwen-tts)                  ~2.52GB   61.1
+mlx-bf16 (mlx-audio) · mac only  ~2.52GB   61.1
+bf16 (qwen-tts) · nvidia only    ~2.52GB   61.1
+</pre>
+
+```sh
+# bf16 (qwen-tts)
+uv run --python 3.12 --with qwen-tts python -c "import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cpu', dtype=torch.bfloat16); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)"
+# mlx-bf16 (mlx-audio) · mac only
+pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16 --text 'Hello from Sesame.' --ref_audio sample_audio.wav --ref_text 'This is what my voice sounds like.'
+# bf16 (qwen-tts) · nvidia only
+pip install -U qwen-tts && pip install -U flash-attn --no-build-isolation && python -c "import torch, soundfile as sf; from qwen_tts import Qwen3TTSModel; model = Qwen3TTSModel.from_pretrained('Qwen/Qwen3-TTS-12Hz-0.6B-Base', device_map='cuda:0', dtype=torch.bfloat16, attn_implementation='flash_attention_2'); wavs, sr = model.generate_voice_clone(text='Hello, world.', language='English', ref_audio='https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/clone.wav', ref_text='Okay. Yeah. I resent you. I love you. I respect you. But you know what? You blew it! And thanks to you.'); sf.write('output_voice_clone.wav', wavs[0], sr)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen3-tts-12hz-0-6b-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

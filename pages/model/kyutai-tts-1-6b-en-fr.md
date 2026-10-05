@@ -6,7 +6,7 @@
 
 Kyutai
 
-**score 47.0** ±6.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.3** ±6.4 · #50 of 67 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  21.9%    41.4   2025-08-10   60% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    12.7%    59.1   2025-08-10   23% ▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>  21.9%    41.8   2025-08-10   60% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    12.7%    59.4   2025-08-10   23% ▇▇▇
 prior                   pull toward the middle                   49.9                17% ▇▇
-                        weighted average                       = 47.0
+                        weighted average                       = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,19 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                        needs  score
+bf16 (moshi-mlx) · mac only  ~4.07GB   47.3
+bf16 (moshi) · nvidia only   ~4.07GB   47.3
+</pre>
+
+```sh
+# bf16 (moshi-mlx) · mac only
+git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi-mlx python scripts/tts_mlx.py - audio_output.wav
+# bf16 (moshi) · nvidia only
+git clone https://github.com/kyutai-labs/delayed-streams-modeling && cd delayed-streams-modeling && echo "Hey, how are you?" | uvx --with moshi python scripts/tts_pytorch.py - audio_output.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kyutai-tts-1-6b-en-fr) · [JSON](https://whatmodel.sh/api?format=json&all=1)

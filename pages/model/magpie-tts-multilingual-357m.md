@@ -11,7 +11,7 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 ## How to run it
 
 ```sh
-git clone --recursive https://github.com/mudler/magpie-tts.cpp && cd magpie-tts.cpp && cmake -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j && ./build/examples/cli/magpie-cli say --model models/magpie-tts-multilingual-357m-q8_0.gguf --text 'Hello world' --lang en --speaker Aria --output hello.wav
+curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && nemo-speech synthesize "Hello from Magpie Multilingual." --output speech.wav
 ```
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/magpie-tts-multilingual-357m)

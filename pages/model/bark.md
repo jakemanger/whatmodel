@@ -6,7 +6,7 @@
 
 Suno · released 2023-04 · mit
 
-**score 20.3** ±2.5 · #46 of 46 · from 7 benchmark results across 5 sources
+**score 20.8** ±2.5 · #66 of 67 · from 7 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.51 / 5    17.7   2025-05-11   65% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.49 / 5    17.1   2025-05-11    8% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      9.0%    22.8   2025-08-10    9% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       20.7%    36.0   2025-08-10    3% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.2%    16.9   2025-05-15    6% ▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.61 / 5    37.9   2025-05-29    5% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     73.1%   -26.5   2025-04-25    1% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 20.3
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.51 / 5    18.1   2025-05-11   64% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  2.49 / 5    17.5   2025-05-11    8% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      9.0%    23.3   2025-08-10    9% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       20.7%    36.4   2025-08-10    4% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     82.2%    17.2   2025-05-15    6% ▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.61 / 5    38.3   2025-05-29    6% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     73.1%   -25.0   2025-04-25    1% ▇
+prior                   pull toward the middle                      49.9                 3% ▇
+                        weighted average                          = 20.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,13 +34,16 @@ prior                   pull toward the middle                      49.9        
 ## How to run it
 
 <pre>
-version             needs  score
-fp32 · nvidia only  ~12GB   20.3
+version                needs  score
+fp32                   ~12GB   20.8
+fp32 (transformers)  ~4.49GB   20.8
 </pre>
 
 ```sh
-# fp32 · nvidia only
+# fp32
 pip install git+https://github.com/suno-ai/bark.git && python -m bark --text "Hello, my name is Suno." --output_filename example.wav
+# fp32 (transformers)
+pip install --upgrade transformers scipy torch && python -c "import scipy; from transformers import AutoProcessor, AutoModel; processor = AutoProcessor.from_pretrained('suno/bark'); model = AutoModel.from_pretrained('suno/bark'); inputs = processor(text=['Hello, my name is Suno. And, uh — and I like pizza. [laughs] But I also have other interests such as playing tic tac toe.'], return_tensors='pt'); speech_values = model.generate(**inputs, do_sample=True); scipy.io.wavfile.write('bark_out.wav', rate=model.generation_config.sample_rate, data=speech_values.cpu().numpy().squeeze())"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

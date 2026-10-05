@@ -6,7 +6,7 @@
 
 Canopy Labs · released 2025-03
 
-**score 46.4** ±5.5 · #39 of 46 · from 3 benchmark results across 2 sources
+**score 46.7** ±5.5 · #51 of 67 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     29.4%    48.5   2025-08-10   44% ▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       17.7%    43.4   2025-08-10   17% ▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.76 / 5    43.1   2025-05-29   26% ▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     29.4%    48.8   2025-08-10   44% ▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       17.7%    43.8   2025-08-10   17% ▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  3.76 / 5    43.4   2025-05-29   26% ▇▇▇
 prior                   pull toward the middle                      49.9                12% ▇
-                        weighted average                          = 46.4
+                        weighted average                          = 46.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,6 +33,65 @@ api (Together AI) · $15.00/M chars · [docs.together.ai](https://docs.together.
 
 <sub>[price source](https://docs.together.ai/docs/serverless/models.md): USD per 1M input characters: Together's serverless model list gives Canopy Labs Orpheus 3B, API model canopylabs/orpheus-3b-0.1-ft, at $15.00 per 1M chars. Identity: the Hugging Face repo canopylabs/orpheus-tts-0.1-finetune-prod redirects to canopylabs/orpheus-3b-0.1-ft (same repo id), so this is the same checkpoint. Product: Together serverless text-to-speech. API model: canopylabs/orpheus-3b-0.1-ft. Settings: standard. Price basis: published list rate. Exclusions: DeepInfra lists the same checkpoint at $7.00/1M characters (smaller host, not used). Currency: USD. Together official docs, observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+version                                      needs  score
+bf16 (orpheus-speech package) · nvidia …  ~15.21GB   46.7
+gguf Q4_K_M (orpheus-cpp 0.0.3)            ~2.42GB   46.7
+gguf Q4_K_M (orpheus-cpp 0.0.3) · mac o…   ~2.42GB   46.7
+</pre>
+
+```sh
+# bf16 (orpheus-speech package) · nvidia only
+git clone https://github.com/canopyai/Orpheus-TTS.git && cd Orpheus-TTS && pip install orpheus-speech && pip install vllm==0.7.3 && python -c '
+from orpheus_tts import OrpheusModel
+import wave
+import time
+
+model = OrpheusModel(model_name ="canopylabs/orpheus-tts-0.1-finetune-prod", max_model_len=2048)
+prompt = """Hello, world."""
+
+syn_tokens = model.generate_speech(
+   prompt=prompt,
+   voice="tara",
+   )
+
+with wave.open("output.wav", "wb") as wf:
+   wf.setnchannels(1)
+   wf.setsampwidth(2)
+   wf.setframerate(24000)
+   for audio_chunk in syn_tokens: # output streaming
+      wf.writeframes(audio_chunk)
+'
+# gguf Q4_K_M (orpheus-cpp 0.0.3)
+pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu && python -c 'from scipy.io.wavfile import write
+from orpheus_cpp import OrpheusCpp
+import numpy as np
+
+orpheus = OrpheusCpp(verbose=False, lang="en")
+
+text = "Hello, world."
+buffer = []
+for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id": "tara"})):
+   buffer.append(chunk)
+   print(f"Generated chunk {i}")
+buffer = np.concatenate(buffer, axis=1)
+write("output.wav", 24_000, np.concatenate(buffer))'
+# gguf Q4_K_M (orpheus-cpp 0.0.3) · mac only
+pip install orpheus-cpp scipy && pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal && python -c 'from scipy.io.wavfile import write
+from orpheus_cpp import OrpheusCpp
+import numpy as np
+
+orpheus = OrpheusCpp(verbose=False, lang="en")
+
+text = "Hello, world."
+buffer = []
+for i, (sr, chunk) in enumerate(orpheus.stream_tts_sync(text, options={"voice_id": "tara"})):
+   buffer.append(chunk)
+   print(f"Generated chunk {i}")
+buffer = np.concatenate(buffer, axis=1)
+write("output.wav", 24_000, np.concatenate(buffer))'
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/orpheus-tts-0-1-finetune-prod) · [JSON](https://whatmodel.sh/api?format=json&all=1)

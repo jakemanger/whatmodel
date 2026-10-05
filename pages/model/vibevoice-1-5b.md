@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 48.7** ±5.9 · #36 of 46 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.2** ±5.9 · #45 of 67 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    44.7   2026-05-24   58% ▇▇▇▇▇▇▇
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    56.0   2026-09-25   28% ▇▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>     48.0%    45.4   2026-05-24   57% ▇▇▇▇▇▇▇
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.43 / 5    56.4   2026-09-25   29% ▇▇▇
 prior                   pull toward the middle                      49.9                14% ▇▇
-                        weighted average                          = 48.7
+                        weighted average                          = 49.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,13 +29,13 @@ prior                   pull toward the middle                      49.9        
 ## How to run it
 
 <pre>
-version               needs  score
-bf16 · nvidia only  ~6.98GB   48.7
+version                         needs  score
+bf16 (transformers &gt;=5.17.0)  ~5.42GB   49.2
 </pre>
 
 ```sh
-# bf16 · nvidia only
-git clone https://github.com/vibevoice-community/VibeVoice && cd VibeVoice && pip install -e . && python demo/inference_from_file.py --model_path vibevoice/VibeVoice-1.5B --txt_path demo/text_examples/1p_abs.txt --speaker_names Alice
+# bf16 (transformers >=5.17.0)
+pip install "transformers[torch]>=5.17.0" diffusers soundfile && python -c "import os; from transformers import AutoProcessor, AutoModelForTextToWaveform; model_id='vibevoice/VibeVoice-1.5B-hf'; processor=AutoProcessor.from_pretrained(model_id); model=AutoModelForTextToWaveform.from_pretrained(model_id, device_map='auto'); conversation=[{'role':'0','content':[{'type':'text','text':'Hello, nice to meet you. How are you?'}]}]; inputs=processor.apply_chat_template(conversation, return_dict=True, tokenize=True, add_generation_prompt=True).to(model.device, model.dtype); audio=model.generate(**inputs); processor.save_audio(audio, 'VibeVoice-1.5B-hf_tts.wav')"
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

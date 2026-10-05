@@ -6,7 +6,7 @@
 
 Wayu Research / Paxa Labs · released 2026-08 · cc-by-nc-4.0
 
-**score 63.4** ±3.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.7** ±3.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>  68.2%    62.1   2026-09-03   52% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>   3.7%    66.8   2026-09-03   42% ▇▇▇▇▇
+<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>  68.2%    62.4   2026-09-03   52% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>   3.7%    67.2   2026-09-03   42% ▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 63.4
+                        weighted average                       = 63.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

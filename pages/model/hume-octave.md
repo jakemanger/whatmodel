@@ -6,7 +6,7 @@
 
 Hume AI · released 2025-02 · proprietary
 
-**score 58.1** ±4.7 · #25 of 46 · from 4 benchmark results across 3 sources
+**score 58.4** ±4.7 · #28 of 67 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     46.8%    61.8   2025-08-10   32% ▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       12.8%    58.6   2025-08-10   13% ▇▇
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     71.1%    54.5   2025-06-19   26% ▇▇▇
-<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  4.18 / 5    60.1   2025-05-29   19% ▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     46.8%    62.1   2025-08-10   33% ▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       12.8%    59.0   2025-08-10   13% ▇▇
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     71.1%    54.9   2025-06-19   26% ▇▇▇
+<a name="speech-emergent-v1-paper-ccby"></a>EmergentTTS-Eval v1 p…  <a href="https://arxiv.org/html/2505.23009v1">EmergentTTS · v1 paper automa…</a>  4.18 / 5    60.3   2025-05-29   19% ▇▇
 prior                   pull toward the middle                      49.9                 9% ▇
-                        weighted average                          = 58.1
+                        weighted average                          = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

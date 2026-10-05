@@ -6,7 +6,7 @@
 
 SparkAudio · released 2025-02 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 47.4** ±2.7 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 48.2** ±2.6 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    52.9   2025-07-20   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    44.9   2025-07-20   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    44.9   2025-07-20   20% ▇▇
-                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    52.6   2025-07-20   17% ▇▇
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    37.3   2026-05-24   12% ▇
+<a name="speech-dmospeech2-report-bysa"></a>DMOSpeech 2: Reinforc…  <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · speaker si…</a>  65.7%    45.8   2025-07-20   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-zh · Paraformer…</a>   1.7%    53.8   2025-07-20   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · speaker si…</a>  57.2%    45.8   2025-07-20   20% ▇▇
+                        <a href="https://arxiv.org/html/2507.14988v1">Seed-TTS test-en · Whisper la…</a>   2.3%    53.5   2025-07-20   17% ▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  41.0%    38.0   2026-05-24   12% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 47.4
+                        weighted average                       = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

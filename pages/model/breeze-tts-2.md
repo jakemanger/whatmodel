@@ -16,6 +16,9 @@ api (BreezeBlue) · $28.00/M chars · [breezeblue.ai](https://breezeblue.ai)
 
 ```sh
 git clone https://github.com/breezeblue-ai/breeze-tts.git && cd breeze-tts && python -m pip install -r requirements.txt && hf download BreezeBlue/Breeze-TTS-2 --local-dir ../breeze-tts-2 && python infer.py ../breeze-tts-2 --ref-audio ref.wav --ref-text 'Transcript of ref.wav' --text 'Hello world' --output out.wav
+pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design
+pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-8bit --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design
+pip install -U mlx-audio && mlx_audio.tts.generate --model mlx-community/Breeze-TTS-2-mlx-4bit --text "(sigh) Welcome aboard. Your journey begins now." --instruction "A warm, thoughtful young woman with a clear voice and a calm, reflective delivery." --cfg-scale 4 --output_path outputs --file_prefix breeze_design
 ```
 
 [Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/breeze-tts-2)

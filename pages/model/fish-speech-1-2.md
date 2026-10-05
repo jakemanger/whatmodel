@@ -6,7 +6,7 @@
 
 Fish Audio · released 2024-07 · cc-by-nc-sa-4.0
 
-**score 47.8** ±14.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.7** ±13.9 · #49 of 67 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.5%    39.4   2025-04-25   21% ▇▇
-prior                   pull toward the middle                   49.9                79% ▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 47.8
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.5%    39.5   2025-04-25   21% ▇▇▇
+prior                   pull toward the middle                   49.9                79% ▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 47.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                  needs  score
+bf16 (fish-speech repo) · nvidia only  ~1.15GB   47.7
+</pre>
+
+```sh
+# bf16 (fish-speech repo) · nvidia only
+git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout 5dd593fef32546f2c0a7d99babbbb27a9478d759 && pip3 install torch torchvision torchaudio && pip3 install -e . && huggingface-cli download fishaudio/fish-speech-1.2 --local-dir checkpoints/fish-speech-1.2 && python tools/llama/generate.py --text "Hello, world." --checkpoint-path "checkpoints/fish-speech-1.2" --num-samples 2 --compile && python tools/vqgan/inference.py -i "codes_0.npy" --checkpoint-path "checkpoints/fish-speech-1.2/firefly-gan-vq-fsq-4x1024-42hz-generator.pth"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fish-speech-1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

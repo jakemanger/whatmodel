@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 49.6** ±7.6 · #34 of 46 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.3** ±7.8 · #39 of 67 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    57.3   2026-03-15   44% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    39.0   2026-03-15   33% ▇▇▇▇
-prior                   pull toward the middle                      49.9                24% ▇▇▇
-                        weighted average                          = 49.6
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    57.3   2026-03-15   48% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    42.1   2026-03-15   27% ▇▇▇
+prior                   pull toward the middle                      49.9                25% ▇▇▇
+                        weighted average                          = 51.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,13 +40,16 @@ LEMAS multilingual au…  <a href="https://arxiv.org/html/2601.04233v1">LEMAS mu
 api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits)
 
 <pre>
-version              needs  score
-bf16 · nvidia only  ~1.7GB   49.6
+version                                 needs  score
+bf16 · nvidia only                     ~1.7GB   51.3
+bf16 (fish-speech official repo CLI)  ~3.61GB   51.3
 </pre>
 
 ```sh
 # bf16 · nvidia only
-git clone https://github.com/fishaudio/fish-speech && cd fish-speech && pip install -e . && hf download fishaudio/s1-mini --local-dir checkpoints/s1-mini && python fish_speech/models/text2semantic/inference.py --text 'Hello world' --checkpoint-path checkpoints/s1-mini && python fish_speech/models/dac/inference.py -i codes_0.npy --checkpoint-path checkpoints/s1-mini/codec.pth
+git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cu129]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --compile && python fish_speech/models/dac/inference.py -i temp/codes_0.npy
+# bf16 (fish-speech official repo CLI)
+git clone https://github.com/fishaudio/fish-speech && cd fish-speech && git checkout d3df50503b36314a964f66cac1af1e19e95bcfa3 && pip install -e ".[cpu]" && hf download fishaudio/openaudio-s1-mini --local-dir checkpoints/openaudio-s1-mini && python fish_speech/models/text2semantic/inference.py --text "Hello world" --device cpu && python fish_speech/models/dac/inference.py -i temp/codes_0.npy --device cpu
 ```
 
 <sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>

@@ -6,7 +6,7 @@
 
 dots.tts
 
-**score 55.2** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 1 source
+**score 55.7** ±2.8 · #34 of 67 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>  10.6%    53.9   2026-07-27   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    55.4   2026-07-27   33% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    58.3   2026-07-27   22% ▇▇▇
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>  10.6%    54.5   2026-07-27   42% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    55.9   2026-07-27   34% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    58.8   2026-07-27   22% ▇▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 55.2
+                        weighted average                       = 55.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,6 +39,19 @@ dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 (dots.tts package CLI)               ~5.16GB   55.7
+bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   55.7
+</pre>
+
+```sh
+# fp32 (dots.tts package CLI)
+pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --output clone.wav --precision float32
+# bf16 (dots.tts package CLI) · nvidia only
+pip install dots.tts && dots.tts --model-name-or-path dots-studio/dots.tts-soar --text "Hello, this is a zero-shot voice cloning demonstration." --prompt-audio /path/to/reference.wav --prompt-text "The exact transcript of the reference audio." --output clone.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dots-tts-soar) · [JSON](https://whatmodel.sh/api?format=json&all=1)

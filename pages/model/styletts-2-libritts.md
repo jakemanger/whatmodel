@@ -6,7 +6,7 @@
 
 Yinghao Aaron Li et al. (Columbia University) · released 2023-11 · styletts2-pretrained-model-terms
 
-**score 26.2** ±1.8 · comparison only: no current run option verified · from 14 benchmark results across 7 sources
+**score 26.9** ±1.8 · #62 of 67 · from 14 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,22 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.93 / 5    23.5   2025-05-11   35% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.01 / 5    31.3   2025-05-11    4% ▇
-<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation · English z…</a>      0.7%    28.4   2024-01-28   13% ▇▇
-                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation · English z…</a>     47.3%    19.9   2024-01-28    9% ▇
-<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.42 / 5    24.0   2024-09-16   12% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.23 / 5    46.5   2024-09-16    1% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      1.6%    64.4   2024-09-16    1% ▇
-<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     37.5%    20.7   2025-02-17    8% ▇
-                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      2.5%    34.9   2025-02-17    6% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     863.1    28.4   2026-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     83.0%    31.1   2026-06-19    1% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>      6.4%    95.8   2026-06-19    0% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     84.7%    24.4   2025-05-15    3% ▇
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     88.0%    58.2   2025-04-25    0% ▇
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.93 / 5    24.0   2025-05-11   33% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.01 / 5    32.0   2025-05-11    4% ▇
+<a name="speech-zstts-eval-casanova-mit"></a>ZS-TTS-Evaluation       <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation · English z…</a>      0.7%    29.0   2024-01-28   14% ▇▇
+                        <a href="https://github.com/Edresson/ZS-TTS-Evaluation/blob/a9086e4192b6ccba9f06c492a5ef68b52ae8ccbe/Evaluation/StyleTTS2/metrics.csv">ZS-TTS-Evaluation · English z…</a>     47.3%    20.6   2024-01-28    9% ▇
+<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.42 / 5    24.6   2024-09-16   12% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.23 / 5    46.8   2024-09-16    1% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      1.6%    63.9   2024-09-16    1% ▇
+<a name="speech-ditto-tts-report-ccby"></a>DiTTo-TTS: Diffusion …  <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>     37.5%    21.3   2025-02-17    8% ▇
+                        <a href="https://arxiv.org/html/2406.11427v2">LibriSpeech test-clean 4-10 s…</a>      2.5%    35.4   2025-02-17    6% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>     863.1    29.0   2026-06-19    5% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     83.0%    31.8   2026-06-19    1% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>      6.4%    97.2   2026-06-19    0% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     84.7%    24.9   2025-05-15    3% ▇
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>     88.0%    57.9   2025-04-25    0% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 26.2
+                        weighted average                          = 26.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,6 +40,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                needs  score
+fp32 (styletts2 PyPI package 0.1.6)  ~0.91GB   26.9
+</pre>
+
+```sh
+# fp32 (styletts2 PyPI package 0.1.6)
+uv run --python 3.10 --with styletts2 python -c "from styletts2 import tts; my_tts = tts.StyleTTS2(); out = my_tts.inference('Hello there, I am now a python package.', output_wav_file='test.wav')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/styletts-2-libritts) · [JSON](https://whatmodel.sh/api?format=json&all=1)
