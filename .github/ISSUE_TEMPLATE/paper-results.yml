@@ -1,0 +1,40 @@
+name: Results from a paper
+description: Benchmark results published in an openly licensed paper, model card or repository.
+labels: [data]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Paper or source link
+      description: The arXiv abstract page, model card or repository file with the results.
+    validations: { required: true }
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Licence of the source
+      description: On arXiv, see the licence link under "Access Paper". The default arXiv licence can't be used.
+      options:
+        - CC BY
+        - CC BY-SA
+        - CC0
+        - Apache-2.0
+        - MIT
+        - Other or not sure
+    validations: { required: true }
+  - type: input
+    id: location
+    attributes:
+      label: Table or figure
+      description: For example "Table 3, page 7".
+    validations: { required: true }
+  - type: textarea
+    id: results
+    attributes:
+      label: Models and scores
+      description: One line per result, for example "Llama 3.1 8B Instruct · MMLU-Pro · 48.3". Use the exact model versions the paper names.
+    validations: { required: true }
+  - type: textarea
+    id: setup
+    attributes:
+      label: Evaluation setup
+      description: Shots, prompting, judge model or anything else needed to compare the numbers fairly.
