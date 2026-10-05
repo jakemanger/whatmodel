@@ -14,7 +14,7 @@ Found a score we don't have? Tell us the model, the score and where it's publish
 - Official model cards from the model's makers
 - Research papers under an open licence (CC BY, CC BY-SA or CC0)
 
-Aggregator sites such as Artificial Analysis or OpenRouter can't be used.
+Aggregator sites such as Artificial Analysis or OpenRouter can't be used. Their terms don't allow their data to be copied and republished openly, and everything here has to be free for anyone to share.
 
 [Add a result →](https://github.com/jakemanger/whatmodel/issues/new?template=paper-results.yml)
 
