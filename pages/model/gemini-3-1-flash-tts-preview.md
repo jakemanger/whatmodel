@@ -6,7 +6,7 @@
 
 Google · closed weights
 
-**score 69.6** ±1.8 · #2 of 67 · from 12 benchmark results across 6 sources
+**score 69.6** ±1.8 · #2 of 92 · from 12 benchmark results across 6 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

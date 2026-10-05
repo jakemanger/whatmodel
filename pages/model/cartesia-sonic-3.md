@@ -6,7 +6,7 @@
 
 Cartesia · released 2025-10 · proprietary
 
-**score 62.8** ±2.1 · #18 of 67 · from 4 benchmark results across 3 sources
+**score 62.8** ±2.1 · #19 of 92 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

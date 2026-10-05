@@ -6,7 +6,7 @@
 
 RVC-Boss · released 2024-08 · mit
 
-**score 36.0** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 36.0** ±2.8 · #71 of 92 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -29,6 +29,19 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                               needs  score
+fp32 (repo api_v2.py)                ~1.1GB   36.0
+fp16 (repo api_v2.py) · nvidia only  ~1.1GB   36.0
+</pre>
+
+```sh
+# fp32 (repo api_v2.py)
+git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CPU --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
+# fp16 (repo api_v2.py) · nvidia only
+git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CU128 --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/gpt-sovits-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

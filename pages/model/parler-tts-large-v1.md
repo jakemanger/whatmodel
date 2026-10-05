@@ -6,7 +6,7 @@
 
 Hugging Face (Parler-TTS) · released 2024-08 · 2.33B params · apache-2.0
 
-**score 23.5** ±2.7 · #64 of 67 · from 5 benchmark results across 4 sources
+**score 23.5** ±2.7 · #86 of 92 · from 5 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

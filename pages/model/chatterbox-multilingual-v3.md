@@ -6,7 +6,7 @@
 
 Resemble AI · released 2026-04 · 0.5B params · mit
 
-**score 51.9** ±10.5 · #38 of 67 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.9** ±10.5 · #46 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

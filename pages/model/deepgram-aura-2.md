@@ -6,7 +6,7 @@
 
 Deepgram · closed weights
 
-**score 61.4** ±2.8 · #23 of 67 · from 6 benchmark results across 4 sources
+**score 61.4** ±2.8 · #24 of 92 · from 6 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

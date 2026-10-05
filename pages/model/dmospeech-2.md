@@ -6,7 +6,7 @@
 
 Columbia University / NewsBreak (Yinghao Aaron Li, Xilin Jiang et al.) · released 2025-07 · 0.3B params · mit
 
-**score 55.1** ±2.8 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 55.1** ±2.8 · #40 of 92 · from 4 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -30,6 +30,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                 needs  score
+fp32 (DMOSpeech2 repo) · nvidia only  ~4.34GB   55.1
+</pre>
+
+```sh
+# fp32 (DMOSpeech2 repo) · nvidia only
+conda create -n dmo2 python=3.10 && conda activate dmo2 && git clone https://github.com/yl4579/DMOSpeech2.git && cd DMOSpeech2 && pip install -r requirements.txt && mkdir ckpts && cd ckpts && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt && cd ../src && python -c "from infer import DMOInference; import soundfile as sf; tts = DMOInference(student_checkpoint_path='../ckpts/model_85000.pt', duration_predictor_path='../ckpts/model_1500.pt', device='cuda', model_type='F5TTS_Base'); generated_audio = tts.generate(gen_text='I don\'t really care what you call me. I\'ve been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring.', audio_path='f5_tts/infer/examples/basic/basic_ref_en.wav', prompt_text='Some call me nature, others call me mother nature.'); sf.write('generated.wav', generated_audio, 24000)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dmospeech-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

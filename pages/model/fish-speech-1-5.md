@@ -6,7 +6,7 @@
 
 Fish Audio · released 2024-12 · cc-by-nc-sa-4.0
 
-**score 33.5** ±2.7 · #59 of 67 · from 4 benchmark results across 2 sources
+**score 33.5** ±2.7 · #75 of 92 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

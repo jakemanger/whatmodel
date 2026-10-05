@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2026-08 · apache-2.0
 
-**score 60.9** ±2.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.9** ±2.8 · #27 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,6 +28,16 @@ prior            pull toward the middle                   49.9                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                  needs  score
+bf16 (FireRedTTS3 repo) · nvidia only  ~12.3GB   60.9
+</pre>
+
+```sh
+# bf16 (FireRedTTS3 repo) · nvidia only
+git clone https://github.com/FireRedTeam/FireRedTTS3.git && cd FireRedTTS3 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && hf download FireRedTeam/FireRedTTS3 --local-dir pretrained_models/ && curl -L -o fireredtts3/utils/llm_tn/models/lid.176.ftz https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz && python -c "import torch; import torchaudio; from fireredtts3.core import FireRedTTS3; tts = FireRedTTS3('pretrained_models', use_wetext=True, use_llm_tn=False); prompt_audio, prompt_audio_sr = torchaudio.load('prompt.wav'); gen_audio, gen_audio_sr = tts.generate(language=None, prompt_text='<prompt audio text>', prompt_audio=prompt_audio, prompt_audio_sr=prompt_audio_sr, text='今天天气很好，我们一起去公园散步吧。', do_tn=True); torchaudio.save('gen.wav', gen_audio.cpu(), gen_audio_sr)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/fireredtts3-base) · [JSON](https://whatmodel.sh/api?format=json&all=1)

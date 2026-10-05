@@ -6,7 +6,7 @@
 
 Sesame · released 2025-03
 
-**score 32.6** ±4.3 · #60 of 67 · from 8 benchmark results across 4 sources
+**score 32.6** ±4.3 · #77 of 92 · from 8 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

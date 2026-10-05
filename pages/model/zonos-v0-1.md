@@ -6,7 +6,7 @@
 
 Zyphra · released 2025-02 · 1.6B params · apache-2.0
 
-**score 37.8** ±4.5 · #55 of 67 · from 7 benchmark results across 3 sources
+**score 37.8** ±4.5 · #69 of 92 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

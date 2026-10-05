@@ -6,7 +6,7 @@
 
 Supertone · released 2026-05 · 0.099B params · openrail-m
 
-**score 53.2** ±10.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.2** ±10.5 · #45 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,6 +27,19 @@ prior             pull toward the middle                    49.9                
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                   needs  score
+onnx-fp32 (supertonic Python SDK 1.3.x)  ~0.4GB   53.2
+onnx-fp32 (Supertonic sample code)       ~0.4GB   53.2
+</pre>
+
+```sh
+# onnx-fp32 (supertonic Python SDK 1.3.x)
+pip install supertonic && supertonic tts 'Supertonic is a lightning fast, on-device TTS system.' -o output.wav --lang en
+# onnx-fp32 (Supertonic sample code)
+git clone https://github.com/supertone-oss-archive/supertonic.git && cd supertonic && python3.11 -m venv .venv && source .venv/bin/activate && python -m pip install huggingface_hub && hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir assets && python -m pip install -r py/requirements.txt && cd py && python example_onnx.py --n-test 1 --text "This speech was generated locally with the archived Supertonic model." --lang en
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/supertonic-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

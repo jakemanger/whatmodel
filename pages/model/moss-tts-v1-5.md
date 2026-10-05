@@ -6,7 +6,7 @@
 
 OpenMOSS · released 2026-05 · 8.49B params · apache-2.0
 
-**score 58.3** ±2.2 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 58.3** ±2.2 · #32 of 92 · from 5 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -31,6 +31,19 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                               needs  score
+fp32 (transformers 5)              ~24.08GB   58.3
+bf16 (mlx-audio 0.5.x) · mac only  ~24.08GB   58.3
+</pre>
+
+```sh
+# fp32 (transformers 5)
+conda create -n moss-tts python=3.12 -y && conda activate moss-tts && git clone https://github.com/OpenMOSS/MOSS-TTS.git && cd MOSS-TTS && pip install --extra-index-url https://download.pytorch.org/whl/cu128 -e . && python -c "import torch, torchaudio; from transformers import AutoModel, AutoProcessor; torch.backends.cuda.enable_cudnn_sdp(False); pretrained_model_name_or_path = 'OpenMOSS-Team/MOSS-TTS-v1.5'; device = 'cuda' if torch.cuda.is_available() else 'cpu'; dtype = torch.bfloat16 if device == 'cuda' else torch.float32; attn_implementation = 'sdpa' if device == 'cuda' else 'eager'; processor = AutoProcessor.from_pretrained(pretrained_model_name_or_path, trust_remote_code=True); processor.audio_tokenizer = processor.audio_tokenizer.to(device); model = AutoModel.from_pretrained(pretrained_model_name_or_path, trust_remote_code=True, attn_implementation=attn_implementation, torch_dtype=dtype).to(device); model.eval(); torch.set_grad_enabled(False); batch = processor([[processor.build_user_message(text='We stand on the threshold of the AI era.')]], mode='generation'); outputs = model.generate(input_ids=batch['input_ids'].to(device), attention_mask=batch['attention_mask'].to(device), max_new_tokens=4096); [torchaudio.save('sample{}.wav'.format(i), m.audio_codes_list[0].unsqueeze(0), processor.model_config.sampling_rate) for i, m in enumerate(processor.decode(outputs))]"
+# bf16 (mlx-audio 0.5.x) · mac only
+pip install mlx-audio && python -m mlx_audio.tts.generate --model OpenMOSS-Team/MOSS-TTS-v1.5 --text "Hello, this is MOSS-TTS running on MLX." --output_path outputs
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/moss-tts-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

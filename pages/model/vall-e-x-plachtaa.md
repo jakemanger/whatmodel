@@ -6,7 +6,7 @@
 
 Plachtaa (community) · released 2023-08 · mit
 
-**score 26.9** ±3.3 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 26.9** ±3.3 · #83 of 92 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -30,6 +30,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                          needs  score
+fp32 (Plachtaa/VALL-E-X repo)  ~1.62GB   26.9
+</pre>
+
+```sh
+# fp32 (Plachtaa/VALL-E-X repo)
+git clone https://github.com/Plachtaa/VALL-E-X.git && cd VALL-E-X && pip install -r requirements.txt && python -c "from utils.generation import SAMPLE_RATE, generate_audio, preload_models; from scipy.io.wavfile import write as write_wav; preload_models(); audio_array = generate_audio('Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.'); write_wav('vallex_generation.wav', SAMPLE_RATE, audio_array)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vall-e-x-plachtaa) · [JSON](https://whatmodel.sh/api?format=json&all=1)

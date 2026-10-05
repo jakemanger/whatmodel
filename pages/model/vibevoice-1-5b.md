@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-08 · 2.7B params · mit
 
-**score 49.2** ±5.9 · #45 of 67 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.2** ±5.9 · #53 of 92 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

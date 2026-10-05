@@ -6,7 +6,7 @@
 
 Hume AI · released 2025-02 · proprietary
 
-**score 58.4** ±4.7 · #28 of 67 · from 4 benchmark results across 3 sources
+**score 58.4** ±4.7 · #31 of 92 · from 4 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

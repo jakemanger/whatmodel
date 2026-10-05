@@ -6,7 +6,7 @@
 
 IndexTeam (bilibili)
 
-**score 57.2** ±1.5 · #31 of 67 · from 17 benchmark results across 7 sources
+**score 57.2** ±1.5 · #35 of 92 · from 17 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 OpenBMB · apache-2.0
 
-**score 61.3** ±1.5 · #24 of 67 · from 12 benchmark results across 5 sources
+**score 61.3** ±1.5 · #25 of 92 · from 12 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

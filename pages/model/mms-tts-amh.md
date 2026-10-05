@@ -6,7 +6,7 @@
 
 Meta
 
-**score 50.0** ±15.6 · #44 of 67 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±15.6 · #52 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

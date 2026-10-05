@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2026-03 · 0.61B params · cc-by-nc-4.0
 
-**score 64.9** ±2.7 · #13 of 67 · from 6 benchmark results across 3 sources
+**score 64.9** ±2.7 · #13 of 92 · from 6 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

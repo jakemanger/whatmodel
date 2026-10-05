@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-01 · mit
 
-**score 45.2** ±13.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.2** ±13.9 · #63 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 (Amphion repo recipe) · nvidia only  ~1.56GB   45.2
+</pre>
+
+```sh
+# fp32 (Amphion repo recipe) · nvidia only
+git lfs install && git clone https://huggingface.co/amphion/valle_librilight_6k && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts/tts && ln -s ../../../valle_librilight_6k ckpts/tts/ && sh egs/tts/VALLE/run.sh --stage 3 --gpu "0" --config "ckpts/tts/valle_librilight_6k/args.json" --infer_expt_dir ckpts/tts/valle_librilight_6k --infer_output_dir ckpts/tts/valle_librilight_6k/result --infer_mode "single" --infer_text "This is a clip of generated speech with the given text from Amphion Vall-E model." --infer_text_prompt "But even the unsuccessful dramatist has his moments." --infer_audio_prompt egs/tts/VALLE/prompt_examples/7176_92135_000004_000000.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/amphion-valle-librilight-6k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

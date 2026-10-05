@@ -6,7 +6,7 @@
 
 Coqui / Edresson Casanova et al. · released 2021-12 · cc-by-nc-nd-4.0
 
-**score 18.1** ±2.3 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
+**score 18.1** ±2.3 · #90 of 92 · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -33,6 +33,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version             needs  score
+fp32 (coqui-tts)  ~0.42GB   18.1
+</pre>
+
+```sh
+# fp32 (coqui-tts)
+uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --text "This is an example!" --model_name tts_models/multilingual/multi-dataset/your_tts --speaker_wav target_speaker_wav.wav --language_idx "en" --out_path speech.wav --device cpu
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/yourtts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-06 · mit
 
-**score 29.7** ±2.4 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
+**score 29.7** ±2.4 · #81 of 92 · from 5 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -31,6 +31,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                needs  score
+fp32 (Amphion repo)  ~2.86GB   29.7
+</pre>
+
+```sh
+# fp32 (Amphion repo)
+git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && git checkout 6b1411c7a415af40a775dc940c3b29fc18d37970 && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && pip install -U transformers==4.41.2 && huggingface-cli download amphion/valle valle_ar_mls_196000.bin valle_nar_mls_164000.bin --local-dir ckpts && mkdir -p ckpts/speechtokenizer_hubert_avg && huggingface-cli download amphion/valle SpeechTokenizer.pt config.json --local-dir ckpts/speechtokenizer_hubert_avg && python -c "import librosa, torch, torchaudio; from models.tts.valle_v2.valle_inference import ValleInference; from models.tts.valle_v2.g2p_processor import G2pProcessor; model = ValleInference(ar_path='ckpts/valle_ar_mls_196000.bin', nar_path='ckpts/valle_nar_mls_164000.bin', speechtokenizer_path='ckpts/speechtokenizer_hubert_avg', device='cpu'); wav, _ = librosa.load('./egs/tts/VALLE_V2/example.wav', sr=16000); wav = torch.tensor(wav, dtype=torch.float32); g2p = G2pProcessor(); prompt_transcript = torch.tensor(g2p('and keeping eternity before the eyes', 'en')[1]).long(); target_transcript = torch.tensor(g2p('Hello, world.', 'en')[1]).long(); batch = {'speech': wav.unsqueeze(0), 'phone_ids': torch.cat([prompt_transcript, target_transcript], dim=-1).unsqueeze(0)}; output_wav = model(batch, [dict(top_p=0.9, top_k=5, temperature=0.95, repeat_penalty=1.0, max_length=2000, num_beams=1)]); torchaudio.save('out.wav', output_wav.squeeze(0), 16000)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/amphion-valle-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

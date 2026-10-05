@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2023-12 · mit
 
-**score 11.0** ±2.4 · comparison only: no current run option verified · from 5 benchmark results across 4 sources
+**score 11.0** ±2.4 · #92 of 92 · from 5 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -31,6 +31,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 (Amphion repo recipe) · nvidia only  ~1.66GB   11.0
+</pre>
+
+```sh
+# fp32 (Amphion repo recipe) · nvidia only
+git lfs install && git clone https://huggingface.co/amphion/naturalspeech2_libritts && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts && ln -s ../../../naturalspeech2_libritts ckpts/tts/ && bash egs/tts/NaturalSpeech2/run_inference.sh --text "Hello, world."
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/amphion-naturalspeech2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Neuphonic · released 2025-10 · 0.552B params · apache-2.0
 
-**score 37.3** ±7.8 · #56 of 67 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.3** ±7.8 · #70 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

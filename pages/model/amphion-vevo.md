@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-12 · cc-by-nc-4.0
 
-**score 38.6** ±2.4 · comparison only: no current run option verified · from 9 benchmark results across 4 sources
+**score 38.6** ±2.4 · #67 of 92 · from 9 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -35,6 +35,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                needs  score
+fp32 (Amphion repo)  ~6.78GB   38.6
+</pre>
+
+```sh
+# fp32 (Amphion repo)
+git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create -n vevo python=3.10 && conda activate vevo && pip install -r models/vc/vevo/requirements.txt && python -m models.vc.vevo.infer_vevotts
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/amphion-vevo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

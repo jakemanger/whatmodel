@@ -6,7 +6,7 @@
 
 Amphion (CUHK-Shenzhen) · released 2024-10 · cc-by-nc-4.0
 
-**score 50.9** ±1.2 · #40 of 67 · from 30 benchmark results across 9 sources
+**score 50.9** ±1.2 · #48 of 92 · from 30 benchmark results across 9 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

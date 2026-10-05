@@ -6,7 +6,7 @@
 
 Alibaba (FunAudioLLM) · released 2024-12 · 0.5B params · apache-2.0
 
-**score 55.2** ±1.2 · comparison only: no current run option verified · from 23 benchmark results across 7 sources
+**score 55.2** ±1.2 · #39 of 92 · from 23 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -49,6 +49,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                  needs  score
+fp32 (CosyVoice repo)  ~4.07GB   55.2
+</pre>
+
+```sh
+# fp32 (CosyVoice repo)
+git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c "from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')" && python -c "import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/CosyVoice2-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', '希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav'))]"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosyvoice2-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

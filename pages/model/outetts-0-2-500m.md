@@ -6,7 +6,7 @@
 
 OuteAI · released 2024-11 · 0.5B params · cc-by-nc-4.0
 
-**score 30.9** ±6.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 30.9** ±6.0 · #80 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,6 +27,19 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                    needs  score
+fp32 (outetts 0.3.3)                     ~1.35GB   30.9
+q8_0 (outetts 0.3.3 + llama-cpp-python)  ~0.88GB   30.9
+</pre>
+
+```sh
+# fp32 (outetts 0.3.3)
+pip install outetts==0.3.3 && python -c "import outetts; model_config = outetts.HFModelConfig_v1(model_path='OuteAI/OuteTTS-0.2-500M', language='en'); interface = outetts.InterfaceHF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')"
+# q8_0 (outetts 0.3.3 + llama-cpp-python)
+pip install outetts==0.3.3 llama-cpp-python && huggingface-cli download OuteAI/OuteTTS-0.2-500M-GGUF OuteTTS-0.2-500M-Q8_0.gguf --local-dir . && python -c "import outetts; model_config = outetts.GGUFModelConfig_v1(model_path='OuteTTS-0.2-500M-Q8_0.gguf', language='en', n_gpu_layers=0); interface = outetts.InterfaceGGUF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/outetts-0-2-500m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

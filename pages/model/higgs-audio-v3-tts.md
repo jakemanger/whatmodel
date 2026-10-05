@@ -6,7 +6,7 @@
 
 Boson AI · released 2026-06 · 4B params · boson-higgs-audio-v3-research-nc
 
-**score 65.5** ±3.1 · #10 of 67 · from 5 benchmark results across 3 sources
+**score 65.5** ±3.1 · #10 of 92 · from 5 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

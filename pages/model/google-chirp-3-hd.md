@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · proprietary
 
-**score 64.7** ±3.8 · #14 of 67 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.7** ±3.8 · #14 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

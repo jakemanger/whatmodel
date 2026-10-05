@@ -6,7 +6,7 @@
 
 Wayu Research / Paxa Labs · released 2026-08 · cc-by-nc-4.0
 
-**score 63.7** ±3.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 63.7** ±3.9 · #18 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -28,6 +28,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                    needs  score
+fp32 (wayu-tts package)  ~0.33GB   63.7
+</pre>
+
+```sh
+# fp32 (wayu-tts package)
+pip install git+https://github.com/wayu-research/wayu-tts-inference && wayu-tts "สวัสดีค่ะ" --voice f_young_clear --out hello.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/wayu-paxa-tts-edge) · [JSON](https://whatmodel.sh/api?format=json&all=1)

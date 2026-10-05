@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2025-06 · 0.123B params · apache-2.0
 
-**score 54.8** ±7.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.8** ±7.0 · #42 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -27,6 +27,22 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                      needs  score
+fp32 (ZipVoice repo)       ~0.55GB   54.8
+onnx-fp32 (ZipVoice repo)  ~0.55GB   54.8
+onnx-int8 (ZipVoice repo)  ~0.18GB   54.8
+</pre>
+
+```sh
+# fp32 (ZipVoice repo)
+git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && python3 -m zipvoice.bin.infer_zipvoice --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
+# onnx-fp32 (ZipVoice repo)
+git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
+# onnx-int8 (ZipVoice repo)
+git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True --model-name zipvoice --prompt-wav prompt.wav --prompt-text "I am the transcription of the prompt wav." --text "I am the text to be synthesized." --res-wav-path result.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/zipvoice) · [JSON](https://whatmodel.sh/api?format=json&all=1)

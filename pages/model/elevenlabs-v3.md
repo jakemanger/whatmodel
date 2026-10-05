@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2026-02 · proprietary
 
-**score 66.3** ±1.3 · #7 of 67 · from 17 benchmark results across 7 sources
+**score 66.3** ±1.3 · #7 of 92 · from 17 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

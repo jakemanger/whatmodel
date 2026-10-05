@@ -6,7 +6,7 @@
 
 dots.tts
 
-**score 55.7** ±2.8 · #34 of 67 · from 3 benchmark results across 1 source
+**score 55.7** ±2.8 · #38 of 92 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

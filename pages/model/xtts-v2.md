@@ -6,7 +6,7 @@
 
 Coqui · released 2023-11 · coqui-public-model-license
 
-**score 31.7** ±1.7 · #61 of 67 · from 26 benchmark results across 12 sources
+**score 31.7** ±1.7 · #79 of 92 · from 26 benchmark results across 12 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

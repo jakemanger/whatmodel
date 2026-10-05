@@ -6,7 +6,7 @@
 
 SparkAudio · released 2025-02 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 48.2** ±2.6 · comparison only: no current run option verified · from 5 benchmark results across 2 sources
+**score 48.2** ±2.6 · #56 of 92 · from 5 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -43,6 +43,19 @@ Spark-TTS: An Efficie…  <a href="https://arxiv.org/html/2503.01710v1">Seed-TTS
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                  needs  score
+fp32 (Spark-TTS repo CLI)              ~3.92GB   48.2
+mlx-bf16 (mlx-audio 0.5.x) · mac only   ~2.9GB   48.2
+</pre>
+
+```sh
+# fp32 (Spark-TTS repo CLI)
+git clone https://github.com/SparkAudio/Spark-TTS.git && cd Spark-TTS && conda create -n sparktts -y python=3.12 && conda activate sparktts && pip install -r requirements.txt && python -c "from huggingface_hub import snapshot_download; snapshot_download('SparkAudio/Spark-TTS-0.5B', local_dir='pretrained_models/Spark-TTS-0.5B')" && cd example && bash infer.sh
+# mlx-bf16 (mlx-audio 0.5.x) · mac only
+pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Spark-TTS-0.5B-bf16 --text 'Hello, world!'
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/spark-tts-0-5b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

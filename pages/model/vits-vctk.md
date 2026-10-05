@@ -6,7 +6,7 @@
 
 Kakao Enterprise (Jaehyeon Kim et al.) · released 2021-06 · mit
 
-**score 26.9** ±6.4 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.9** ±6.4 · #84 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -37,6 +37,16 @@ VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   26.9
+</pre>
+
+```sh
+# fp32 (jaywalnut310/vits repo) · nvidia only
+git clone https://github.com/jaywalnut310/vits && cd vits && pip install -r requirements.txt && apt-get install espeak && cd monotonic_align && python setup.py build_ext --inplace && cd .. && python -c "import torch, commons, utils; from models import SynthesizerTrn; from text.symbols import symbols; from text import text_to_sequence; from scipy.io.wavfile import write; hps = utils.get_hparams_from_file('./configs/vctk_base.json'); net_g = SynthesizerTrn(len(symbols), hps.data.filter_length // 2 + 1, hps.train.segment_size // hps.data.hop_length, n_speakers=hps.data.n_speakers, **hps.model).cuda(); _ = net_g.eval(); _ = utils.load_checkpoint('/path/to/pretrained_vctk.pth', net_g, None); text_norm = text_to_sequence('VITS is Awesome!', hps.data.text_cleaners); text_norm = commons.intersperse(text_norm, 0) if hps.data.add_blank else text_norm; stn_tst = torch.LongTensor(text_norm); torch.set_grad_enabled(False); x_tst = stn_tst.cuda().unsqueeze(0); x_tst_lengths = torch.LongTensor([stn_tst.size(0)]).cuda(); sid = torch.LongTensor([4]).cuda(); audio = net_g.infer(x_tst, x_tst_lengths, sid=sid, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy(); write('vctk.wav', hps.data.sampling_rate, audio)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vits-vctk) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-02 · proprietary
 
-**score 64.0** ±2.0 · #15 of 67 · from 6 benchmark results across 3 sources
+**score 64.0** ±2.0 · #15 of 92 · from 6 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

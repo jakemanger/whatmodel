@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · 1.7B params · apache-2.0
 
-**score 62.1** ±1.1 · #22 of 67 · from 27 benchmark results across 8 sources
+**score 62.1** ±1.1 · #23 of 92 · from 27 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

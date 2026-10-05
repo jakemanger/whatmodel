@@ -6,7 +6,7 @@
 
 Korea University (Sang-Hoon Lee et al.) · released 2023-11 · mit
 
-**score 32.5** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 32.5** ±2.8 · #78 of 92 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -29,6 +29,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                  needs  score
+fp32 (repo inference.py) · nvidia only  ~2.1GB   32.5
+</pre>
+
+```sh
+# fp32 (repo inference.py) · nvidia only
+git clone https://github.com/sh-lee-prml/HierSpeechpp && cd HierSpeechpp && pip install -r requirements.txt && pip install phonemizer && sudo apt-get install espeak-ng && CUDA_VISIBLE_DEVICES=0 python3 inference.py --ckpt "logs/hierspeechpp_eng_kor/hierspeechpp_v1.1_ckpt.pth" --ckpt_text2w2v "logs/ttv_libritts_v1/ttv_lt960_ckpt.pth" --output_dir "tts_results_eng_kor_v2" --noise_scale_vc "0.333" --noise_scale_ttv "0.333" --denoise_ratio "0"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hierspeechpp-v1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

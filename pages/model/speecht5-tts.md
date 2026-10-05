@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-02 · mit
 
-**score 18.8** ±2.8 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 18.8** ±2.8 · #89 of 92 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -29,6 +29,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                needs  score
+fp32 (transformers)  ~0.65GB   18.8
+</pre>
+
+```sh
+# fp32 (transformers)
+uv run --with transformers --with sentencepiece --with 'datasets[audio]<4' --with soundfile --with torch python -c "from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan; from datasets import load_dataset; import torch; import soundfile as sf; processor = SpeechT5Processor.from_pretrained('microsoft/speecht5_tts'); model = SpeechT5ForTextToSpeech.from_pretrained('microsoft/speecht5_tts'); vocoder = SpeechT5HifiGan.from_pretrained('microsoft/speecht5_hifigan'); inputs = processor(text='Hello, my dog is cute.', return_tensors='pt'); embeddings_dataset = load_dataset('Matthijs/cmu-arctic-xvectors', split='validation'); speaker_embeddings = torch.tensor(embeddings_dataset[7306]['xvector']).unsqueeze(0); speech = model.generate_speech(inputs['input_ids'], speaker_embeddings, vocoder=vocoder); sf.write('speech.wav', speech.numpy(), samplerate=16000)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/speecht5-tts) · [JSON](https://whatmodel.sh/api?format=json&all=1)

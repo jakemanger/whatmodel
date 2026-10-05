@@ -23907,7 +23907,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Amphion repo recipe)",
+          "gb": 1.56,
+          "gb_estimated": true,
+          "cmd": "git lfs install && git clone https://huggingface.co/amphion/valle_librilight_6k && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts/tts && ln -s ../../../valle_librilight_6k ckpts/tts/ && sh egs/tts/VALLE/run.sh --stage 3 --gpu \"0\" --config \"ckpts/tts/valle_librilight_6k/args.json\" --infer_expt_dir ckpts/tts/valle_librilight_6k --infer_output_dir ckpts/tts/valle_librilight_6k/result --infer_mode \"single\" --infer_text \"This is a clip of generated speech with the given text from Amphion Vall-E model.\" --infer_text_prompt \"But even the unsuccessful dramatist has his moments.\" --infer_audio_prompt egs/tts/VALLE/prompt_examples/7176_92135_000004_000000.wav",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/amphion/valle_librilight_6k/blob/73979654834196d13f4cc78fb5a90043c1868bdc/README.md",
+          "gb_source": "https://huggingface.co/amphion/valle_librilight_6k/tree/73979654834196d13f4cc78fb5a90043c1868bdc",
+          "note": "official Amphion repo recipe (egs/tts/VALLE/run.sh stage 3, accelerate launch). Platform evidence: run.sh stage 3 runs \"CUDA_VISIBLE_DEVICES=$gpu accelerate launch \"$work_dir\"/bins/tts/inference.py\" (https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/egs/tts/VALLE/r… Command: Chained the HF card's Step1-Step4 commands with && and inserted the Amphion README's documented install steps (conda create/activate + sh env.sh) before Step3; backslash line continuations joined onto one line. Inference command itself verbatim from the card. gb is the sum of the weight files the command loads (pytorch_model.bin 1.47 GB; encodec_24khz-d7cc33bc.th 0.09 GB); runtime memory is higher. Zero-shot: needs an audio prompt plus its transcript (repo example file used). git clone of the HF repo also pulls optimizer.bin (1,709,028,869 bytes) which is not needed for inference."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "amphion/valle_librilight_6k: Amphion's open reproduction of VALL-E (v1 recipe) trained on 6k hours of Libri-Light. Microsoft's original VALL-E was never released.",
     "identity_sources": [
@@ -23923,7 +23936,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Amphion repo)",
+          "gb": 2.86,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && git checkout 6b1411c7a415af40a775dc940c3b29fc18d37970 && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && pip install -U transformers==4.41.2 && huggingface-cli download amphion/valle valle_ar_mls_196000.bin valle_nar_mls_164000.bin --local-dir ckpts && mkdir -p ckpts/speechtokenizer_hubert_avg && huggingface-cli download amphion/valle SpeechTokenizer.pt config.json --local-dir ckpts/speechtokenizer_hubert_avg && python -c \"import librosa, torch, torchaudio; from models.tts.valle_v2.valle_inference import ValleInference; from models.tts.valle_v2.g2p_processor import G2pProcessor; model = ValleInference(ar_path='ckpts/valle_ar_mls_196000.bin', nar_path='ckpts/valle_nar_mls_164000.bin', speechtokenizer_path='ckpts/speechtokenizer_hubert_avg', device='cpu'); wav, _ = librosa.load('./egs/tts/VALLE_V2/example.wav', sr=16000); wav = torch.tensor(wav, dtype=torch.float32); g2p = G2pProcessor(); prompt_transcript = torch.tensor(g2p('and keeping eternity before the eyes', 'en')[1]).long(); target_transcript = torch.tensor(g2p('Hello, world.', 'en')[1]).long(); batch = {'speech': wav.unsqueeze(0), 'phone_ids': torch.cat([prompt_transcript, target_transcript], dim=-1).unsqueeze(0)}; output_wav = model(batch, [dict(top_p=0.9, top_k=5, temperature=0.95, repeat_penalty=1.0, max_length=2000, num_beams=1)]); torchaudio.save('out.wav', output_wav.squeeze(0), 16000)\"",
+          "platform": "any",
+          "source": "https://github.com/open-mmlab/Amphion/blob/6b1411c7a415af40a775dc940c3b29fc18d37970/egs/tts/VALLE_V2/demo.ipynb",
+          "gb_source": "https://huggingface.co/amphion/valle/tree/f609fdac0d76f275f2008f01ca98ff02c1fd4b64",
+          "note": "official Amphion repo (models/tts/valle_v2 ValleInference, demo.ipynb), at the last commit before valle_v2 was removed. Platform evidence: \"For inferencing our pretrained models, you could generate samples even without a GPU.\" (https://github.com/open-mmlab/Amphion/blob/6b1411c7a415af40a775dc940c3b29fc18d37970/egs/tts/VALLE_V2/README.md)… Command: Chained the README's documented steps (clone, Amphion conda setup + sh env.sh, pip install -U transformers==4.41.2, the two huggingface-cli download lines) with &&; added `git checkout 6b1411c...` because valle_v2 was deleted from Amphion main in c532b04 (2025-05-26); gb is the sum of the weight files the command loads (valle_ar_mls_196000.bin 1.08 GB; valle_nar_mls_164000.bin 1.29 GB; SpeechTokenizer.pt 0.48 GB); runtime memory is higher. Code only exists at Amphion commits up to 6b1411c (removed from main in c532b04, 'Remove previous valle_v2 model in favor of new models'). Zero-shot: needs a prompt wav + its transcript (repo example.wav used)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "amphion/valle (valle_ar_mls_196000.bin + valle_nar_mls_164000.bin with SpeechTokenizer): Amphion's VALL-E v2-recipe reproduction. Not Microsoft's VALL-E 2 (unreleased). Card has no licence tag; Amphion repository is MIT.",
     "identity_sources": [
@@ -23940,7 +23966,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Amphion repo recipe)",
+          "gb": 1.66,
+          "gb_estimated": true,
+          "cmd": "git lfs install && git clone https://huggingface.co/amphion/naturalspeech2_libritts && git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create --name amphion python=3.9.15 && conda activate amphion && sh env.sh && mkdir -p ckpts && ln -s ../../../naturalspeech2_libritts ckpts/tts/ && bash egs/tts/NaturalSpeech2/run_inference.sh --text \"Hello, world.\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/amphion/naturalspeech2_libritts/blob/12d88cd539fa1829f01febd8f7d4d71d940d6538/README.md",
+          "gb_source": "https://huggingface.co/amphion/naturalspeech2_libritts/tree/12d88cd539fa1829f01febd8f7d4d71d940d6538",
+          "note": "official Amphion repo recipe (egs/tts/NaturalSpeech2/run_inference.sh). Platform evidence: run_inference.sh: \"export CUDA_VISIBLE_DEVICES=\\\"0\\\"\" and does not pass --device, so ns2_inference.py uses its default: \"\\\"--device\\\", type=str, default=\\\"cuda\\\",\" (https://github.com/open-mmlab/Amphi… Command: Chained the HF card's Step1-Step3 with && and inserted Amphion's documented install (conda + sh env.sh); final step is the recipe README's inference command with the placeholder \"[The text you want to generate]\" filled in. gb is the sum of the weight files the command loads (pytorch_model.bin 1.57 GB; encodec_24khz-d7cc33bc.th 0.09 GB); runtime memory is higher. Uses the bundled reference clip egs/tts/NaturalSpeech2/prompt_example/ref_audio.wav (edit ref_audio in run_inference.sh to change voice). Encodec 24 kHz size from HTTP HEAD (not HF)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "amphion/naturalspeech2_libritts: Amphion's reproduction of NaturalSpeech 2 trained on LibriTTS. Microsoft's original NaturalSpeech 2 was never released.",
     "identity_sources": [
@@ -24127,7 +24166,20 @@
     "open_weights": true,
     "license": "cc-by-nc-4.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Amphion repo)",
+          "gb": 6.78,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/open-mmlab/Amphion.git && cd Amphion && conda create -n vevo python=3.10 && conda activate vevo && pip install -r models/vc/vevo/requirements.txt && python -m models.vc.vevo.infer_vevotts",
+          "platform": "any",
+          "source": "https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/vc/vevo/README.md",
+          "gb_source": "https://huggingface.co/amphion/Vevo/tree/7edf4640c400c20542aa39c45b63f60e6c7baba0",
+          "note": "official Amphion repo (python -m models.vc.vevo.infer_vevotts). Platform evidence: infer_vevotts.py: \"device = torch.device(\\\"cuda\\\") if torch.cuda.is_available() else torch.device(\\\"cpu\\\")\" (https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/… Command: Chained the README's clone, environment and Vevo-TTS inference commands with &&. Text/reference are set inside infer_vevotts.py (defaults: bundled ./models/vc/vevo/wav/arabic_male.wav reference; output ./models/vc/vevo/wav/output_vevotts1.wav and output_vevotts2.wav). gb is the sum of the weight files the command loads (model.safetensors 0.18 GB; model.safetensors 2.97 GB; model.safetensors 1.35 GB; model.safetensors 1.02 GB; hubert_fairseq_large_ll60k.pth 1.26 GB); runtime memory is higher. Needs espeak-ng (README: \"Since we use `phonemizer` to convert text to phoneme, you need to install `espeak-ng` first\"). Zero-shot with a reference clip + its transcript (bundled examples)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "amphion/Vevo (vq8192 tokenizer, PhoneToVq8192 AR model, Vq8192ToMels flow matching, vocoder), the ICLR 2025 Vevo 1.0 release; distinct from Vevo1.5 and Vevo2.",
     "identity_sources": [
@@ -24159,7 +24211,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (repo inference.py)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/sh-lee-prml/HierSpeechpp && cd HierSpeechpp && pip install -r requirements.txt && pip install phonemizer && sudo apt-get install espeak-ng && CUDA_VISIBLE_DEVICES=0 python3 inference.py --ckpt \"logs/hierspeechpp_eng_kor/hierspeechpp_v1.1_ckpt.pth\" --ckpt_text2w2v \"logs/ttv_libritts_v1/ttv_lt960_ckpt.pth\" --output_dir \"tts_results_eng_kor_v2\" --noise_scale_vc \"0.333\" --noise_scale_ttv \"0.333\" --denoise_ratio \"0\"",
+          "platform": "nvidia",
+          "source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+          "gb_source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+          "note": "official repo inference.py. Platform evidence: README command prefix \"CUDA_VISIBLE_DEVICES=0 python3 inference.py\"; inference.py hard-codes CUDA: \"net_g = SynthesizerTrn(...**hps.model).cuda()\" and \"denoiser = MPNet(hps_denoiser).cuda()\"; Command: Chained the README's clone/install steps (pip install -r requirements.txt, phonemizer + espeak-ng) with the README's TTS command (verbatim, backslash continuations joined). gb is the sum of the weight files the command loads (hierspeechpp_v1.1_ckpt.pth 0.39 GB; ttv_lt960_ckpt.pth 0.43 GB; pytorch_model.bin 1.27 GB; g_best 0.01 GB); runtime memory is higher. Checkpoint downloads are manual Google Drive steps (no HF model repo); sizes from Drive range-request / official Space API."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "HierSpeech++ Large v1.1 (hierspeechpp_v1.1_ckpt.pth, English/Korean, epoch 200, released 2023-11-20) with the LibriTTS-960 text-to-vec model. Distinct from Large v1 (paper version) and the LibriTTS-460/960 checkpoints.",
     "identity_sources": [
@@ -24176,7 +24241,30 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (repo api_v2.py)",
+          "gb": 1.1,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CPU --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml",
+          "platform": "any",
+          "source": "https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/api_v2.py",
+          "gb_source": "https://huggingface.co/lj1995/GPT-SoVITS/tree/336b2ec4e8d4ac74740798dd40af44e74659ecaf",
+          "note": "official repo api_v2.py (TTS_infer_pack) with the shipped GPT_SoVITS/configs/tts_infer.yaml. Platform evidence: README install: \"bash install.sh --device <CU126|CU128|ROCM|CPU> --source <HF|HF-Mirror|ModelScope> [--download-uvr5]\" and macOS \"bash install.sh --device <MPS|CPU> ...\" with the tested-environment ro… Command: Chained the README's Linux/macOS install commands (placeholders filled: --device CPU --source HF) with the launch command from api_v2.py's docstring (verbatim). Synthesis is then a documented HTTP GET, e.g. gb is the sum of the weight files the command loads (s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt 0.16 GB; s2G2333k.pth 0.11 GB; pytorch_model.bin 0.65 GB; pytorch_model.bin 0.19 GB); runtime memory is higher. Two steps: start the API server, then request /tts with a reference clip path + its transcript + languages (zero-shot cloning needs a 3-10 s reference wav). The command starts the documented API server; synthesis is a documented HTTP request to /tts with a reference clip."
+        },
+        {
+          "quant": "fp16 (repo api_v2.py)",
+          "gb": 1.1,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/RVC-Boss/GPT-SoVITS && cd GPT-SoVITS && conda create -n GPTSoVits python=3.10 && conda activate GPTSoVits && bash install.sh --device CU128 --source HF && python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/tts_infer.yaml",
+          "platform": "nvidia",
+          "source": "https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/api_v2.py",
+          "gb_source": "https://huggingface.co/lj1995/GPT-SoVITS/tree/336b2ec4e8d4ac74740798dd40af44e74659ecaf",
+          "note": "official repo api_v2.py with the shipped tts_infer.yaml (CUDA, fp16). Platform evidence: tts_infer.yaml custom: \"device: cuda\" / \"is_half: true\" (https://github.com/RVC-Boss/GPT-SoVITS/blob/48b1a0169a28582a8984402f82cf438d3bfa6aca/GPT_SoVITS/configs/tts_infer.yaml); Command: Same as the CPU variant with the README placeholder filled as --device CU128 (CU126 and ROCM also documented). Then GET /tts as in api_v2.py's docstring. gb is the sum of the weight files the command loads (s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt 0.16 GB; s2G2333k.pth 0.11 GB; pytorch_model.bin 0.65 GB; pytorch_model.bin 0.19 GB); runtime memory is higher. Server + HTTP request, reference clip needed (see 'any' variant). The command starts the documented API server; synthesis is a documented HTTP request to /tts with a reference clip."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "lj1995/GPT-SoVITS gsv-v2final-pretrained (s2G2333k.pth + s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt), zero-shot (no fine-tuning). Distinct from v1, v3, v4 and v2Pro.",
     "identity_sources": [
@@ -24192,7 +24280,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (transformers)",
+          "gb": 0.65,
+          "gb_estimated": true,
+          "cmd": "uv run --with transformers --with sentencepiece --with 'datasets[audio]<4' --with soundfile --with torch python -c \"from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan; from datasets import load_dataset; import torch; import soundfile as sf; processor = SpeechT5Processor.from_pretrained('microsoft/speecht5_tts'); model = SpeechT5ForTextToSpeech.from_pretrained('microsoft/speecht5_tts'); vocoder = SpeechT5HifiGan.from_pretrained('microsoft/speecht5_hifigan'); inputs = processor(text='Hello, my dog is cute.', return_tensors='pt'); embeddings_dataset = load_dataset('Matthijs/cmu-arctic-xvectors', split='validation'); speaker_embeddings = torch.tensor(embeddings_dataset[7306]['xvector']).unsqueeze(0); speech = model.generate_speech(inputs['input_ids'], speaker_embeddings, vocoder=vocoder); sf.write('speech.wav', speech.numpy(), samplerate=16000)\"",
+          "platform": "any",
+          "source": "https://huggingface.co/microsoft/speecht5_tts/blob/30fcde30f19b87502b8435427b5f5068e401d5f6/README.md",
+          "gb_source": "https://huggingface.co/microsoft/speecht5_tts/tree/30fcde30f19b87502b8435427b5f5068e401d5f6",
+          "note": "transformers (SpeechT5ForTextToSpeech + SpeechT5HifiGan), PyTorch. Platform evidence: The card snippet places nothing on a GPU and ends with \"sf.write(\\\"speech.wav\\\", speech.numpy(), samplerate=16000)\" (CPU tensor), i.e. Command: Card step 3 ('Run inference via the Transformers modelling code') wrapped as a uv one-liner; install list from card step 1 (transformers sentencepiece datasets[audio]) plus soundfile/torch which the snippet imports; gb is the sum of the weight files the command loads (pytorch_model.bin 0.59 GB; pytorch_model.bin 0.05 GB; spkrec-xvect.zip (x-vector data; loaded via the Parquet export) 0.02 GB); runtime memory is higher. Uses CMU ARCTIC x-vector #7306 as the voice instead of extracting one from a reference clip with speechbrain/spkrec-xvect-voxceleb (the card notes 'You can replace this embedding with your own'). English only."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "microsoft/speecht5_tts with microsoft/speecht5_hifigan, conditioned on a speaker x-vector (speechbrain/spkrec-xvect-voxceleb) from the reference clip.",
     "identity_sources": [
@@ -24238,7 +24339,20 @@
     "license": "apache-2.0",
     "params_b": 0.3,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (CosyVoice repo)",
+          "gb": 2.3,
+          "gb_estimated": true,
+          "cmd": "git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c \"from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/CosyVoice-300M', local_dir='pretrained_models/CosyVoice-300M')\" && python -c \"import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/CosyVoice-300M'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', '希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav'))]\"",
+          "platform": "any",
+          "source": "https://huggingface.co/FunAudioLLM/CosyVoice-300M/blob/24c40509c3c5ea6fe06b5f8790ff99e3714a6bee/README.md",
+          "gb_source": "https://huggingface.co/FunAudioLLM/CosyVoice-300M/tree/24c40509c3c5ea6fe06b5f8790ff99e3714a6bee",
+          "note": "official CosyVoice repo (cosyvoice.cli.cosyvoice.AutoModel), PyTorch + onnxruntime. Platform evidence: cosyvoice/cli/model.py: \"self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\"; cosyvoice/cli/cosyvoice.py: \"logging.warning('no cuda device, set load_jit/load_trt/fp16 to False'… Command: Chained the README/card install steps (clone --recursive, submodule update, conda env, pip install -r requirements.txt with the documented mirror flags) and the card's huggingface_hub snapshot_download line with &&; gb is the sum of the weight files the command loads (llm.pt 1.24 GB; flow.pt 0.42 GB; hift.pt 0.08 GB; campplus.onnx 0.03 GB; speech_tokenizer_v1.onnx 0.52 GB); runtime memory is higher. Zero-shot cloning uses the repo's ./asset/zero_shot_prompt.wav and its Chinese transcript as the prompt. requirements.txt pins torch==2.3.1 and on Linux also pulls deepspeed, onnxruntime-gpu and tensorrt-cu12 wheels even…"
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "FunAudioLLM/CosyVoice-300M (mirrored as model-scope/CosyVoice-300M), the zero-shot base checkpoint; not CosyVoice-300M-SFT/-Instruct or CosyVoice 2/3.",
     "identity_sources": [
@@ -24256,7 +24370,20 @@
     "license": "apache-2.0",
     "params_b": 0.5,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (CosyVoice repo)",
+          "gb": 4.07,
+          "gb_estimated": true,
+          "cmd": "git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c \"from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')\" && python -c \"import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/CosyVoice2-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', '希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav'))]\"",
+          "platform": "any",
+          "source": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/blob/eec1ae6c79877dbd9379285cf8789c9e0879293d/README.md",
+          "gb_source": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B/tree/eec1ae6c79877dbd9379285cf8789c9e0879293d",
+          "note": "official CosyVoice repo (cosyvoice.cli.cosyvoice.AutoModel), PyTorch + onnxruntime. Platform evidence: cosyvoice/cli/model.py: \"self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\"; cosyvoice/cli/cosyvoice.py: \"logging.warning('no cuda device, set load_jit/load_trt/fp16 to False'… Command: Chained the README/card install steps (clone --recursive, submodule update, conda env, pip install -r requirements.txt with the documented mirror flags) and the card's huggingface_hub snapshot_download line with &&; gb is the sum of the weight files the command loads (llm.pt 2.02 GB; model.safetensors 0.99 GB; flow.pt 0.45 GB; hift.pt 0.08 GB; campplus.onnx 0.03 GB; speech_tokenizer_v2.onnx 0.50 GB); runtime memory is higher. Zero-shot cloning uses the repo's ./asset/zero_shot_prompt.wav and its Chinese transcript as the prompt. requirements.txt pins torch==2.3.1 and on Linux also pulls deepspeed, onnxruntime-gpu and tensorrt-cu12 wheels even…"
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "FunAudioLLM/CosyVoice2-0.5B, the only released CosyVoice 2 checkpoint. Distinct from CosyVoice-300M, Fun-CosyVoice3-0.5B and the hosted CosyVoice v3 Plus API (cosyvoice-v3-plus).",
     "identity_sources": [
@@ -24272,7 +24399,20 @@
     "open_weights": true,
     "license": "apache-2.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (FireRedTTS repo)",
+          "gb": 3.09,
+          "gb_estimated": true,
+          "cmd": "git clone -b main https://github.com/FireRedTeam/FireRedTTS.git && cd FireRedTTS && conda create --name redtts python=3.10 && conda activate redtts && conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia && pip install -e . && pip install -r requirements.txt && huggingface-cli download FireRedTeam/FireRedTTS --local-dir pretrained_models && python -c \"import os; import torchaudio; from fireredtts.fireredtts import FireRedTTS; tts = FireRedTTS(config_path='configs/config_24k.json', pretrained_path='pretrained_models'); rec_wavs = tts.synthesize(prompt_wav='examples/prompt_1.wav', text='小红书，是中国大陆的网络购物和社交平台，成立于二零一三年六月。', lang='zh'); rec_wavs = rec_wavs.detach().cpu(); out_wav_path = os.path.join('./example.wav'); torchaudio.save(out_wav_path, rec_wavs, 24000)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/FireRedTeam/FireRedTTS/blob/2447325dc4dade22b945c22284e8db0223125a07/README.md",
+          "gb_source": "https://huggingface.co/FireRedTeam/FireRedTTS/tree/2447325dc4dade22b945c22284e8db0223125a07",
+          "note": "official FireRedTTS repo (main branch, fireredtts.fireredtts.FireRedTTS), PyTorch. Platform evidence: Card: \"# stpe2.install torch （pytorch should match the cuda-version on your machine）\" with only pytorch-cuda=11.8/12.1 installs; Command: Chained the card's install steps (CUDA 12.1 option chosen; CUDA 11.8 also documented); added `-b main` because the GitHub default branch is now fireredtts-1s (main @3c1fb92 still holds the v1 code); gb is the sum of the weight files the command loads (fireredtts_gpt.pt 2.12 GB; fireredtts_token2wav.pt 0.94 GB; fireredtts_speaker.bin 0.03 GB); runtime memory is higher. Zero-shot: needs a 3-10 s reference clip (examples/prompt_1.wav used). Chinese example text; lang='en' is supported by the API. Mixed CUDA kernels (bigvgan alias_free_cuda) ship in the repo."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "FireRedTeam/FireRedTTS (2024 foundation model). Distinct from FireRedTTS-1S and FireRedTTS-2.",
     "identity_sources": [
@@ -24320,7 +24460,30 @@
     "license": "cc-by-nc-sa-4.0",
     "params_b": 0.5,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Spark-TTS repo CLI)",
+          "gb": 3.92,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/SparkAudio/Spark-TTS.git && cd Spark-TTS && conda create -n sparktts -y python=3.12 && conda activate sparktts && pip install -r requirements.txt && python -c \"from huggingface_hub import snapshot_download; snapshot_download('SparkAudio/Spark-TTS-0.5B', local_dir='pretrained_models/Spark-TTS-0.5B')\" && cd example && bash infer.sh",
+          "platform": "any",
+          "source": "https://github.com/SparkAudio/Spark-TTS/blob/2f1ea9082400547242641f5271b6f941c9f439d1/README.md",
+          "gb_source": "https://huggingface.co/SparkAudio/Spark-TTS-0.5B/tree/642071559bfc6346c2359d19dcb6be3f9dd8a05d",
+          "note": "official Spark-TTS repo CLI (python -m cli.inference via example/infer.sh), PyTorch; auto-selects MPS on Apple Silicon, CUDA on NVIDIA, else CPU. Platform evidence: cli/inference.py: \"if platform.system() == \\\"Darwin\\\" and torch.backends.mps.is_available(): # macOS with MPS support (Apple Silicon)\" ... \"elif torch.cuda.is_available():\" ... Command: Chained the README's clone, conda env, pip install, 'Download via python' snapshot_download (wrapped as python -c) and 'Basic Usage' (cd example && bash infer.sh) steps with &&. gb is the sum of the weight files the command loads (model.safetensors 2.03 GB; model.safetensors 0.63 GB; pytorch_model.bin 1.27 GB); runtime memory is higher. Voice cloning example needs a prompt wav + transcript (bundled). For a custom run: python -m cli.inference --text \"text to synthesis.\" --device 0 --save_dir \"path/to/save/audio\" --model_dir pretrained_models/Spark-TTS-0.…"
+        },
+        {
+          "quant": "mlx-bf16 (mlx-audio 0.5.x)",
+          "gb": 2.9,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && mlx_audio.tts.generate --model mlx-community/Spark-TTS-0.5B-bf16 --text 'Hello, world!'",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/README.md",
+          "gb_source": "https://huggingface.co/mlx-community/Spark-TTS-0.5B-bf16/tree/cac753e3cf9d9d92524eb15fe256efc7db45ce7e",
+          "note": "mlx-audio 0.5.x (Blaizzy). Platform evidence: README model table row: \"| **Spark** | SparkTTS model | EN, ZH | [mlx-community/Spark-TTS-0.5B-bf16](https://huggingface.co/mlx-community/Spark-TTS-0.5B-bf16) |\" (MLX = Apple Silicon framework) (https… Command: mlx-audio README's generic CLI form (\"pip install mlx-audio\" + \"mlx_audio.tts.generate --model ... --text 'Hello, world!'\") with the Spark repo named in the README's supported-model table. gb is the sum of the weight files the command loads (model.safetensors 1.01 GB; model.safetensors 0.63 GB; model.safetensors 1.26 GB); runtime memory is higher. Without --ref_audio, mlx-audio's Spark generate uses controllable mode (default gender='male'); pass --ref_audio/--ref_text for cloning."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "SparkAudio/Spark-TTS-0.5B (Qwen2.5-0.5B-based LLM + BiCodec).",
     "identity_sources": [
@@ -24337,7 +24500,20 @@
     "license": "cc-by-nc-4.0",
     "params_b": 8.57,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (transformers + xcodec2)",
+          "gb": 20.43,
+          "gb_estimated": true,
+          "cmd": "pip install xcodec2==0.1.5 && python -c \"from transformers import AutoTokenizer, AutoModelForCausalLM; import torch; import soundfile as sf; from xcodec2.modeling_xcodec2 import XCodec2Model; torch.set_grad_enabled(False); llasa_8b = 'HKUSTAudio/Llasa-8B'; tokenizer = AutoTokenizer.from_pretrained(llasa_8b); model = AutoModelForCausalLM.from_pretrained(llasa_8b); model.eval(); model.to('cuda'); Codec_model = XCodec2Model.from_pretrained('HKUSTAudio/xcodec2'); Codec_model.eval().cuda(); input_text = 'Hello, world.'; formatted_text = f'<|TEXT_UNDERSTANDING_START|>{input_text}<|TEXT_UNDERSTANDING_END|>'; chat = [{'role': 'user', 'content': 'Convert the text to speech:' + formatted_text}, {'role': 'assistant', 'content': '<|SPEECH_GENERATION_START|>'}]; input_ids = tokenizer.apply_chat_template(chat, tokenize=True, return_tensors='pt', continue_final_message=True).to('cuda'); speech_end_id = tokenizer.convert_tokens_to_ids('<|SPEECH_GENERATION_END|>'); outputs = model.generate(input_ids, max_length=2048, eos_token_id=speech_end_id, do_sample=True, top_p=1, temperature=1); speech_tokens = tokenizer.batch_decode(outputs[0][input_ids.shape[1]:-1], skip_special_tokens=True); speech_tokens = torch.tensor([int(t[4:-2]) for t in speech_tokens if t.startswith('<|s_') and t.endswith('|>')]).cuda().unsqueeze(0).unsqueeze(0); gen_wav = Codec_model.decode_code(speech_tokens); sf.write('gen.wav', gen_wav[0, 0, :].cpu().numpy(), 16000)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/HKUSTAudio/Llasa-8B/blob/2a8339e387348a5cad5160b978a6f364fa06ad74/README.md",
+          "gb_source": "https://huggingface.co/HKUSTAudio/Llasa-8B/tree/2a8339e387348a5cad5160b978a6f364fa06ad74",
+          "note": "transformers + xcodec2 (HF card code). Platform evidence: Card code: \"model.to('cuda')\", \"Codec_model.eval().cuda()\", \"input_ids = input_ids.to('cuda')\" (https://huggingface.co/HKUSTAudio/Llasa-8B/blob/2a8339e387348a5cad5160b978a6f364fa06ad74/README.md) Command: Card section '1. Speech synthesis solely from input text' condensed into python -c: `with torch.no_grad():` replaced by torch.set_grad_enabled(False); the helper extract_speech_ids() inlined as an equivalent list comprehension (drops its print of unexpected tokens); gb is the sum of the weight files the command loads (model-00001-of-00004.safetensors 4.96 GB; model-00002-of-00004.safetensors 5.00 GB; model-00003-of-00004.safetensors 4.92 GB; model-00004-of-00004.safetensors 2.26 GB; model.safetensors 3.29 GB); runtime memory is higher. AutoModelForCausalLM.from_pretrained is called without torch_dtype, so the in-memory dtype follows the installed transformers version's default rather than the stored bf16 (config torch_dtype)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "HKUSTAudio/Llasa-8B (8,567,197,696 parameters per HF safetensors metadata) with the XCodec2 decoder. Distinct from Llasa-1B/3B.",
     "identity_sources": [
@@ -24354,7 +24530,20 @@
     "license": "mit",
     "params_b": 0.097,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (repo inference.py)",
+          "gb": 2.1,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/sh-lee-prml/HierSpeechpp && cd HierSpeechpp && pip install -r requirements.txt && pip install phonemizer && sudo apt-get install espeak-ng && CUDA_VISIBLE_DEVICES=0 python3 inference.py --ckpt \"logs/hierspeechpp_libritts960/hierspeechpp_lt960_ckpt.pth\" --ckpt_text2w2v \"logs/ttv_libritts_v1/ttv_lt960_ckpt.pth\" --output_dir \"tts_results_eng_kor_v2\" --noise_scale_vc \"0.333\" --noise_scale_ttv \"0.333\" --denoise_ratio \"0\"",
+          "platform": "nvidia",
+          "source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+          "gb_source": "https://github.com/sh-lee-prml/HierSpeechpp/blob/318c633cdc24cf3239d62c95ea8afae200ed2d13/README.md",
+          "note": "official repo inference.py. Platform evidence: README command prefix \"CUDA_VISIBLE_DEVICES=0 python3 inference.py\"; inference.py: \"net_g = SynthesizerTrn(...**hps.model).cuda()\"; Command: README TTS command with --ckpt swapped to the README's own documented LibriTTS-960 alternative (\"# --ckpt \\\"logs/hierspeechpp_libritts960/hierspeechpp_lt960_ckpt.pth\\\" \\ LibriTTS-960\"); install steps chained with &&. gb is the sum of the weight files the command loads (hierspeechpp_lt960_ckpt.pth 0.39 GB; ttv_lt960_ckpt.pth 0.43 GB; pytorch_model.bin 1.27 GB; g_best 0.01 GB); runtime memory is higher. Manual Google Drive download; checkpoint size from a 1-byte range request (content-range total). The TTV model is the LibriTTS-960 TTV as in the README example. Default prompt example/reference_4.wav. espeak-ng needed."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "HierSpeech++ checkpoint trained on LibriTTS train-960 (README checkpoint table: 97M parameters, 555 h, 2,311 speakers). Distinct from the LibriTTS-460 and the Large v1/v1.1 English-Korean checkpoints (hierspeechpp-v1-1).",
     "identity_sources": [
@@ -24370,7 +24559,20 @@
     "open_weights": true,
     "license": "cc-by-nc-nd-4.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (coqui-tts)",
+          "gb": 0.42,
+          "gb_estimated": true,
+          "cmd": "uv run --python 3.11 --with coqui-tts --with torch --with torchaudio --with torchcodec tts --text \"This is an example!\" --model_name tts_models/multilingual/multi-dataset/your_tts --speaker_wav target_speaker_wav.wav --language_idx \"en\" --out_path speech.wav --device cpu",
+          "platform": "any",
+          "source": "https://github.com/Edresson/YourTTS/blob/23904e6b7158d42cacf2a94dba0791ef69f1e2a9/README.md",
+          "gb_source": "https://github.com/Edresson/YourTTS/blob/23904e6b7158d42cacf2a94dba0791ef69f1e2a9/README.md",
+          "note": "coqui-tts (maintained Coqui TTS fork idiap/coqui-ai-TTS) CLI. Platform evidence: coqui-tts CLI: \"parser.add_argument(\\\"--device\\\", type=str, help=\\\"Device to run model on.\\\", default=\\\"cpu\\\")\" (https://github.com/idiap/coqui-ai-TTS/blob/aeb064d41b5d3377354e0bf7a1a247add738f069/TTS… Command: YourTTS README's Coqui command (verbatim flags: --text, --model_name, --speaker_wav, --language_idx) run through the maintained coqui-tts package with uv (coqui-tts README: \"From `coqui-tts` 0.27.4, PyTorch is not included by default\", so torch/torchaudio/torchcodec added); gb is the sum of the weight files the command loads (model_file.pth 0.38 GB; model_se.pth 0.04 GB); runtime memory is higher. Needs a reference clip (target_speaker_wav.wav placeholder from the README). Languages: en, fr-fr, pt-br (--language_idx). Licence CC BY-NC-ND 4.0 (non-commercial). On CUDA use --device cuda."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "The released YourTTS checkpoint (github.com/Edresson/YourTTS; Coqui TTS model tts_models/multilingual/multi-dataset/your_tts). The repository states: 'All the released checkpoints are licensed under CC BY-NC-ND 4.0'.",
     "identity_sources": [
@@ -24386,7 +24588,20 @@
     "open_weights": true,
     "license": "coqui-public-model-license",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (VoiceCraft repo)",
+          "gb": 4.53,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/jasonppy/VoiceCraft && cd VoiceCraft && conda create -n voicecraft python=3.9.16 && conda activate voicecraft && pip install -e git+https://github.com/facebookresearch/audiocraft.git@c5157b5bf14bf83449c17ea1eeb66c19fb4bc7f0#egg=audiocraft && pip install xformers==0.0.22 && pip install torchaudio==2.0.2 torch==2.0.1 && apt-get install ffmpeg && apt-get install espeak-ng && pip install tensorboard==2.16.2 && pip install phonemizer==3.2.1 && pip install datasets==2.16.0 && pip install torchmetrics==0.11.1 && pip install huggingface_hub==0.22.2 && conda install -c conda-forge montreal-forced-aligner=2.2.17 openfst=1.8.2 kaldi=5.5.1068 && mfa model download dictionary english_us_arpa && mfa model download acoustic english_us_arpa && python3 tts_demo.py -m giga830M",
+          "platform": "any",
+          "source": "https://github.com/jasonppy/VoiceCraft/blob/f0a7a971363905883a21c466a3aa4ea2d4c0b690/README.md",
+          "gb_source": "https://huggingface.co/pyp1/VoiceCraft_giga830M/tree/472414217688325adc0143884bc5c7ce3b6eb427",
+          "note": "official VoiceCraft repo standalone script tts_demo.py, PyTorch. Platform evidence: tts_demo.py: \"device = \\\"cuda\\\" if torch.cuda.is_available() else \\\"cpu\\\"\" (https://github.com/jasonppy/VoiceCraft/blob/f0a7a971363905883a21c466a3aa4ea2d4c0b690/tts_demo.py) Command: Chained the README 'Environment setup' block (verbatim lines, comments dropped, ipykernel line omitted) with the 'QuickStart Command Line' script; `-m giga830M` is the script's default (\"default=\\\"giga830M\\\"\") made explicit. gb is the sum of the weight files the command loads (model.safetensors 3.36 GB; encodec_4cb2048_giga.th 1.17 GB); runtime memory is higher. Needs a reference clip + transcript; MFA forced alignment picks the prompt cut-off (demo/5895_34622_000026_000002.wav used by default)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "pyp1/VoiceCraft giga830M.pth (committed 2024-03-28; mirrored as pyp1/VoiceCraft_giga830M), the original 830M GigaSpeech checkpoint evaluated in the paper. Distinct from 830M_TTSEnhanced (voicecraft-830m-tts-enhanced) and the 330M checkpoints. GitHub README: weights under the Coqui Public Model License 1.0.0; code CC BY-NC-SA 4.0.",
     "identity_sources": [
@@ -24433,7 +24648,40 @@
     "license": "apache-2.0",
     "params_b": 0.123,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (ZipVoice repo)",
+          "gb": 0.55,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && python3 -m zipvoice.bin.infer_zipvoice --model-name zipvoice --prompt-wav prompt.wav --prompt-text \"I am the transcription of the prompt wav.\" --text \"I am the text to be synthesized.\" --res-wav-path result.wav",
+          "platform": "any",
+          "source": "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/README.md",
+          "gb_source": "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b",
+          "note": "official ZipVoice repo, PyTorch (zipvoice.bin.infer_zipvoice); auto-selects CUDA, then MPS, then CPU. Platform evidence: infer_zipvoice.py: \"if torch.cuda.is_available(): params.device = torch.device(\\\"cuda\\\", 0) / elif torch.backends.mps.is_available(): params.device = torch.device(\\\"mps\\\") / else: params.device = torc… Command: Chained README install steps 1 and 3 (clone, pip install -r requirements.txt; the README's `cd` into the clone is implicit) with the README's 'Inference of a single sentence' command (verbatim, backslash continuations joined). gb is the sum of the weight files the command loads (model.pt 0.49 GB; pytorch_model.bin 0.05 GB); runtime memory is higher. Zero-shot: prompt.wav and its transcription are the README's placeholders for the user's reference clip. k2 is optional for inference (README: \"you can still use the inference mode of ZipVoice without installing k2\")."
+        },
+        {
+          "quant": "onnx-fp32 (ZipVoice repo)",
+          "gb": 0.55,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text \"I am the transcription of the prompt wav.\" --text \"I am the text to be synthesized.\" --res-wav-path result.wav",
+          "platform": "any",
+          "source": "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/zipvoice/bin/infer_zipvoice_onnx.py",
+          "gb_source": "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b",
+          "note": "official ZipVoice repo, ONNX Runtime CPU (zipvoice.bin.infer_zipvoice_onnx). Platform evidence: README: \"**CPU speedup with ONNX**: When running on CPU, you can use ONNX models with `zipvoice.bin.infer_zipvoice_onnx` for faster speed ... **Don't use ONNX on GPU**\"; Command: Command from the infer_zipvoice_onnx.py usage docstring (\"python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 False --model-name zipvoice --prompt-wav prompt.wav --prompt-text \\\"I am a prompt.\\\" --text \\\"I am a sentence.\\\" --res-wav-path result.wav\"), with the README example texts; gb is the sum of the weight files the command loads (text_encoder.onnx 0.02 GB; fm_decoder.onnx 0.48 GB; pytorch_model.bin 0.05 GB); runtime memory is higher. Zero-shot: prompt.wav and its transcription are the README's placeholders for the user's reference clip. k2 is optional for inference (README: \"you can still use the inference mode of ZipVoice without installing k2\")."
+        },
+        {
+          "quant": "onnx-int8 (ZipVoice repo)",
+          "gb": 0.18,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/k2-fsa/ZipVoice.git && cd ZipVoice && pip install -r requirements.txt && pip install onnxruntime && python3 -m zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True --model-name zipvoice --prompt-wav prompt.wav --prompt-text \"I am the transcription of the prompt wav.\" --text \"I am the text to be synthesized.\" --res-wav-path result.wav",
+          "platform": "any",
+          "source": "https://github.com/k2-fsa/ZipVoice/blob/2f7326fbfe999a3ad179e3f1af82a424d4a62819/zipvoice/bin/infer_zipvoice_onnx.py",
+          "gb_source": "https://huggingface.co/k2-fsa/ZipVoice/tree/4ed45fb6e7e9527b780bef9e097a04bf13fe4e6b",
+          "note": "official ZipVoice repo, ONNX Runtime CPU INT8 (zipvoice.bin.infer_zipvoice_onnx --onnx-int8 True). Platform evidence: README: \"For even faster speed, you can further set `--onnx-int8 True` to use an INT8-quantized ONNX model. Command: As the onnx-fp32 variant with the documented `--onnx-int8 True` (script docstring: \"Set `--onnx-int8 True` to use int8 quantizated ONNX model.\"). gb is the sum of the weight files the command loads (text_encoder_int8.onnx 0.01 GB; fm_decoder_int8.onnx 0.12 GB; pytorch_model.bin 0.05 GB); runtime memory is higher. Zero-shot: prompt.wav and its transcription are the README's placeholders for the user's reference clip. k2 is optional for inference (README: \"you can still use the inference mode of ZipVoice without installing k2\")."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "k2-fsa/ZipVoice model 'zipvoice' (123M parameters per README), not zipvoice_distill or ZipVoice-Dialog. Licence from the GitHub repository; the HF card states none.",
     "identity_sources": [
@@ -24497,7 +24745,20 @@
     "open_weights": true,
     "license": "cc-by-nc-4.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (wayu-tts package)",
+          "gb": 0.33,
+          "gb_estimated": true,
+          "cmd": "pip install git+https://github.com/wayu-research/wayu-tts-inference && wayu-tts \"สวัสดีค่ะ\" --voice f_young_clear --out hello.wav",
+          "platform": "any",
+          "source": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/blob/8196688df56a8d08ccfa186505343adff412ab6b/README.md",
+          "gb_source": "https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/tree/8196688df56a8d08ccfa186505343adff412ab6b",
+          "note": "official wayu-tts package (wayu-research/wayu-tts-inference, Kokoro-based PyTorch). Platform evidence: Card: \"Fixed-voice Thai–English text-to-speech: 82M parameters, 12 voices, 24 kHz, fast enough to run on CPU.\" (https://huggingface.co/wayu-ai/wayu-paxa-tts-edge/blob/8196688df56a8d08ccfa186505343adff… Command: Card's install line and CLI example chained with && (verbatim). The CLI's default --model is wayu-ai/wayu-paxa-tts-edge. gb is the sum of the weight files the command loads (model.pth 0.33 GB); runtime memory is higher. The CLI snapshot_downloads the whole HF repo (all 12 voice files, ~0.5 MB each). Optional `apt-get install espeak-ng` for English words missing from the dictionary (card)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "wayu-ai/wayu-paxa-tts-edge, fixed-voice Thai TTS described in arXiv:2609.03502v1.",
     "identity_sources": [
@@ -24515,7 +24776,20 @@
     "license": "apache-2.0",
     "params_b": 0.5,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (CosyVoice repo)",
+          "gb": 5.42,
+          "gb_estimated": true,
+          "cmd": "git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git && cd CosyVoice && git submodule update --init --recursive && conda create -n cosyvoice -y python=3.10 && conda activate cosyvoice && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com && python -c \"from huggingface_hub import snapshot_download; snapshot_download('FunAudioLLM/Fun-CosyVoice3-0.5B-2512', local_dir='pretrained_models/Fun-CosyVoice3-0.5B')\" && python -c \"import sys; sys.path.append('third_party/Matcha-TTS'); from cosyvoice.cli.cosyvoice import AutoModel; import torchaudio; cosyvoice = AutoModel(model_dir='pretrained_models/Fun-CosyVoice3-0.5B'); [torchaudio.save('zero_shot_{}.wav'.format(i), j['tts_speech'], cosyvoice.sample_rate) for i, j in enumerate(cosyvoice.inference_zero_shot('CosyVoice is undergoing a comprehensive upgrade, providing more accurate, stable, faster, and better voice generation capabilities.', 'You are a helpful assistant.<|endofprompt|>希望你以后能够做的比我还好呦。', './asset/zero_shot_prompt.wav', stream=False))]\"",
+          "platform": "any",
+          "source": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512/blob/29e01c4e8d000f4bcd70751be16fa94bf3d85a18/README.md",
+          "gb_source": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512/tree/29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+          "note": "official CosyVoice repo (cosyvoice.cli.cosyvoice.AutoModel), PyTorch + onnxruntime. Platform evidence: cosyvoice/cli/model.py: \"self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\"; cosyvoice/cli/cosyvoice.py: \"logging.warning('no cuda device, set load_jit/load_trt/fp16 to False'… Command: Chained the README/card install steps (clone --recursive, submodule update, conda env, pip install -r requirements.txt with the documented mirror flags) and the card's huggingface_hub snapshot_download line with &&; gb is the sum of the weight files the command loads (llm.pt 2.02 GB; model.safetensors 0.99 GB; flow.pt 1.33 GB; hift.pt 0.08 GB; campplus.onnx 0.03 GB; speech_tokenizer_v3.onnx 0.97 GB); runtime memory is higher. Zero-shot cloning uses the repo's ./asset/zero_shot_prompt.wav and its Chinese transcript as the prompt. requirements.txt pins torch==2.3.1 and on Linux also pulls deepspeed, onnxruntime-gpu and tensorrt-cu12 wheels even…"
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512, the only released CosyVoice 3 weights (the 1.5B model is not open). Default llm.pt assumed where a source says 'default settings'; the repo also ships an optional RL-tuned llm.rl.pt. Distinct from CosyVoice2-0.5B and the hosted CosyVoice v3 Plus API.",
     "identity_sources": [
@@ -24568,7 +24842,30 @@
     "license": "cc-by-nc-4.0",
     "params_b": 0.5,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (outetts 0.3.3)",
+          "gb": 1.35,
+          "gb_estimated": true,
+          "cmd": "pip install outetts==0.3.3 && python -c \"import outetts; model_config = outetts.HFModelConfig_v1(model_path='OuteAI/OuteTTS-0.2-500M', language='en'); interface = outetts.InterfaceHF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')\"",
+          "platform": "any",
+          "source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/blob/71d6994ffa92c066628d83db99f1298516ece592/README.md",
+          "gb_source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/tree/71d6994ffa92c066628d83db99f1298516ece592",
+          "note": "outetts 0.3.3 (OuteAI's official package), Hugging Face Transformers backend. Platform evidence: outetts 0.3.3 version/v1/interface.py: \"else \\\"cuda\\\" if torch.cuda.is_available() / else \\\"cpu\\\"\" and wav_tokenizer/audio_codec.py: \"self.device = torch.device(device if device is not None else \\\"cud… Command: Card 'Quick Start: Basic Full Example' wrapped as python -c (print_default_speakers and the commented playback dropped). Pinned outetts==0.3.3: the card says `pip install outetts --upgrade`, but current outetts 0.4.x no longer exports HFModelConfig_v1/InterfaceHF (GitHub edwko/OuteTTS @f5eac6e only… gb is the sum of the weight files the command loads (model.safetensors 1.00 GB; decoder_model.pt 0.26 GB; encoder_model.pt 0.09 GB); runtime memory is higher. Uses the bundled default speaker profile 'male_1' (no reference audio needed). Without a speaker the model picks a random voice. Package pulls many deps (openai-whisper, pytorch-lightning, mecab, pygame, sounddevice)."
+        },
+        {
+          "quant": "q8_0 (outetts 0.3.3 + llama-cpp-python)",
+          "gb": 0.88,
+          "gb_estimated": true,
+          "cmd": "pip install outetts==0.3.3 llama-cpp-python && huggingface-cli download OuteAI/OuteTTS-0.2-500M-GGUF OuteTTS-0.2-500M-Q8_0.gguf --local-dir . && python -c \"import outetts; model_config = outetts.GGUFModelConfig_v1(model_path='OuteTTS-0.2-500M-Q8_0.gguf', language='en', n_gpu_layers=0); interface = outetts.InterfaceGGUF(model_version='0.2', cfg=model_config); speaker = interface.load_default_speaker(name='male_1'); output = interface.generate(text='Speech synthesis is the artificial production of human speech.', temperature=0.1, repetition_penalty=1.1, max_length=4096, speaker=speaker); output.save('output.wav')\"",
+          "platform": "any",
+          "source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M/blob/71d6994ffa92c066628d83db99f1298516ece592/README.md",
+          "gb_source": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M-GGUF/tree/e6d78720d2a8edce2bc8f5c5c2d0332e57091930",
+          "note": "outetts 0.3.3 + llama-cpp-python (GGUF backend, CPU with n_gpu_layers=0). Platform evidence: Card GGUF example sets \"n_gpu_layers=0,\" (all layers on CPU) (https://huggingface.co/OuteAI/OuteTTS-0.2-500M/blob/71d6994ffa92c066628d83db99f1298516ece592/README.md); Command: Card 'GGUF (llama-cpp-python)' config (\"model_path=\\\"local/path/to/model.gguf\\\"\" filled with the Q8_0 file from the card-linked OuteAI/OuteTTS-0.2-500M-GGUF repo, n_gpu_layers=0 as in the card) combined with the Quick Start generate/save lines; gb is the sum of the weight files the command loads (OuteTTS-0.2-500M-Q8_0.gguf 0.54 GB; decoder_model.pt 0.26 GB; encoder_model.pt 0.09 GB); runtime memory is higher. llama-cpp-python builds from source on pip install (CPU by default; Metal/CUDA need build flags per its docs). WavTokenizer decoding still runs in PyTorch (CPU unless CUDA)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "OuteAI/OuteTTS-0.2-500M (499,193,728 parameters per HF safetensors metadata). Distinct from OuteTTS 0.1, 0.3 and Llama-OuteTTS 1.0.",
     "identity_sources": [
@@ -24584,7 +24881,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (Plachtaa/VALL-E-X repo)",
+          "gb": 1.62,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/Plachtaa/VALL-E-X.git && cd VALL-E-X && pip install -r requirements.txt && python -c \"from utils.generation import SAMPLE_RATE, generate_audio, preload_models; from scipy.io.wavfile import write as write_wav; preload_models(); audio_array = generate_audio('Hello, my name is Nose. And uh, and I like hamburger. Hahaha... But I also have other interests such as playing tactic toast.'); write_wav('vallex_generation.wav', SAMPLE_RATE, audio_array)\"",
+          "platform": "any",
+          "source": "https://github.com/Plachtaa/VALL-E-X/blob/3faaf8ccadb154d63b38070caf518ce9309ea0f4/README.md",
+          "gb_source": "https://huggingface.co/Plachta/VALL-E-X/tree/d7240d71278df7b8ab9960f5b91107de15a2d016",
+          "note": "official Plachtaa/VALL-E-X repo Python API (utils.generation), PyTorch; auto-selects CUDA/MPS/CPU. Platform evidence: README: \"VALL-E X works well on both CPU and GPU (`pytorch 2.0+`, CUDA 11.7 and CUDA 12.0).\" (https://github.com/Plachtaa/VALL-E-X/blob/3faaf8ccadb154d63b38070caf518ce9309ea0f4/README.md); Command: README 'Installation' commands chained with the README 'Usage in Python > Basics' snippet wrapped as python -c (the IPython Audio display line dropped; triple-quoted text inlined). gb is the sum of the weight files the command loads (vallex-checkpoint.pt 1.48 GB; pytorch_model.bin 0.04 GB; encodec_24khz-d7cc33bc.th 0.09 GB); runtime memory is higher. No reference voice needed for the basic example (random/default voice); voice cloning uses make_prompt (needs ffmpeg and Whisper medium.pt). On Apple Silicon the code selects MPS automatically."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "Community reimplementation of Microsoft's VALL-E X at github.com/Plachtaa/VALL-E-X (vallex-checkpoint.pt); ClonEval names it as the open-source implementation it ran. Microsoft's VALL-E X was never released.",
     "identity_sources": [
@@ -24601,7 +24911,20 @@
     "open_weights": true,
     "license": "mit",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (jaywalnut310/vits repo)",
+          "gb": 0.16,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/jaywalnut310/vits && cd vits && pip install -r requirements.txt && apt-get install espeak && cd monotonic_align && python setup.py build_ext --inplace && cd .. && python -c \"import torch, commons, utils; from models import SynthesizerTrn; from text.symbols import symbols; from text import text_to_sequence; from scipy.io.wavfile import write; hps = utils.get_hparams_from_file('./configs/vctk_base.json'); net_g = SynthesizerTrn(len(symbols), hps.data.filter_length // 2 + 1, hps.train.segment_size // hps.data.hop_length, n_speakers=hps.data.n_speakers, **hps.model).cuda(); _ = net_g.eval(); _ = utils.load_checkpoint('/path/to/pretrained_vctk.pth', net_g, None); text_norm = text_to_sequence('VITS is Awesome!', hps.data.text_cleaners); text_norm = commons.intersperse(text_norm, 0) if hps.data.add_blank else text_norm; stn_tst = torch.LongTensor(text_norm); torch.set_grad_enabled(False); x_tst = stn_tst.cuda().unsqueeze(0); x_tst_lengths = torch.LongTensor([stn_tst.size(0)]).cuda(); sid = torch.LongTensor([4]).cuda(); audio = net_g.infer(x_tst, x_tst_lengths, sid=sid, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy(); write('vctk.wav', hps.data.sampling_rate, audio)\"",
+          "platform": "nvidia",
+          "source": "https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/inference.ipynb",
+          "gb_source": "https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/inference.ipynb",
+          "note": "official jaywalnut310/vits repo (inference.ipynb VCTK cells), PyTorch. Platform evidence: Notebook: \"n_speakers=hps.data.n_speakers, **hps.model).cuda()\" and \"sid = torch.LongTensor([4]).cuda()\" (https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/inference.i… Command: Chained README pre-requisites (clone, pip install -r requirements.txt, apt-get install espeak, build monotonic_align) with the notebook's VCTK cells wrapped into python -c: get_text() inlined, `with torch.no_grad()` replaced by torch.set_grad_enabled(False), and the notebook's ipd.display(ipd.Audio(… gb is the sum of the weight files the command loads (pretrained_vctk.pth 0.16 GB); runtime memory is higher. requirements.txt pins torch==1.6.0, numpy==1.18.5, scipy==1.5.2, librosa==0.8.0 (needs an old Python, roughly 3.6-3.8); espeak via apt. Manual Google Drive download. Speaker id 4 as in the notebook (109 VCTK speakers)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "jaywalnut310/vits official VCTK multi-speaker checkpoint (pretrained_vctk.pth), the landmark 2021 end-to-end VITS model. Distinct from the LJSpeech checkpoint and from Coqui/Piper VITS derivatives.",
     "identity_sources": [
@@ -24619,7 +24942,30 @@
     "license": "openrail-m",
     "params_b": 0.099,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "onnx-fp32 (supertonic Python SDK 1.3.x)",
+          "gb": 0.4,
+          "gb_estimated": true,
+          "cmd": "pip install supertonic && supertonic tts 'Supertonic is a lightning fast, on-device TTS system.' -o output.wav --lang en",
+          "platform": "any",
+          "source": "https://github.com/supertone-oss-archive/supertonic-py/blob/df0f9686dac7fbbde391b759e2ee5286a3737622/docs/quickstart.md",
+          "gb_source": "https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323",
+          "note": "supertonic Python SDK 1.3.x (ONNX Runtime, CPUExecutionProvider). Platform evidence: Card: \"Supertonic 3 runs fast on CPU ... It does not require a GPU\" (https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/README.md); Command: Card Quick Start install line (\"pip install supertonic\") chained with the SDK quickstart's CLI example (verbatim) plus the documented --lang en (default would be 'na'); --model defaults to supertonic-3 and --voice to M1. gb is the sum of the weight files the command loads (text_encoder.onnx 0.04 GB; vector_estimator.onnx 0.26 GB; vocoder.onnx 0.10 GB); runtime memory is higher. First run downloads the model (quickstart: '~400MB'). GitHub README notes the org moved to supertone-oss-archive and 'Older releases of the supertonic Python package may still use the original Supertone Hugging Face name…"
+        },
+        {
+          "quant": "onnx-fp32 (Supertonic sample code)",
+          "gb": 0.4,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/supertone-oss-archive/supertonic.git && cd supertonic && python3.11 -m venv .venv && source .venv/bin/activate && python -m pip install huggingface_hub && hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir assets && python -m pip install -r py/requirements.txt && cd py && python example_onnx.py --n-test 1 --text \"This speech was generated locally with the archived Supertonic model.\" --lang en",
+          "platform": "any",
+          "source": "https://github.com/supertone-oss-archive/supertonic/blob/1e9799e964ea4c0dad7cde993b65c3c813a7b373/README.md",
+          "gb_source": "https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323",
+          "note": "official Supertonic sample code (py/example_onnx.py, ONNX Runtime 1.23.1 CPU). Platform evidence: py/helper.py: \"if use_gpu: raise NotImplementedError(\\\"GPU mode is not fully tested\\\") / else: providers = [\\\"CPUExecutionProvider\\\"]\" (https://github.com/supertone-oss-archive/supertonic/blob/1e9799e… Command: GitHub README Quick Start steps 1-3 chained with && (verbatim; backslash continuation joined). gb is the sum of the weight files the command loads (text_encoder.onnx 0.04 GB; vector_estimator.onnx 0.26 GB; vocoder.onnx 0.10 GB); runtime memory is higher. README asks for Python 3.11. Default voice ../assets/voice_styles/M1.json. Output in py/results/. CPU-only by design (GPU path raises NotImplementedError)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "Supertone/supertonic-3 (on-device ONNX TTS, 31 languages, 'about 99M parameters across the public ONNX assets' per card). Model OpenRAIL-M; sample code MIT.",
     "identity_sources": [
@@ -24736,7 +25082,30 @@
     "license": "apache-2.0",
     "params_b": 8.49,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (transformers 5)",
+          "gb": 24.08,
+          "gb_estimated": true,
+          "cmd": "conda create -n moss-tts python=3.12 -y && conda activate moss-tts && git clone https://github.com/OpenMOSS/MOSS-TTS.git && cd MOSS-TTS && pip install --extra-index-url https://download.pytorch.org/whl/cu128 -e . && python -c \"import torch, torchaudio; from transformers import AutoModel, AutoProcessor; torch.backends.cuda.enable_cudnn_sdp(False); pretrained_model_name_or_path = 'OpenMOSS-Team/MOSS-TTS-v1.5'; device = 'cuda' if torch.cuda.is_available() else 'cpu'; dtype = torch.bfloat16 if device == 'cuda' else torch.float32; attn_implementation = 'sdpa' if device == 'cuda' else 'eager'; processor = AutoProcessor.from_pretrained(pretrained_model_name_or_path, trust_remote_code=True); processor.audio_tokenizer = processor.audio_tokenizer.to(device); model = AutoModel.from_pretrained(pretrained_model_name_or_path, trust_remote_code=True, attn_implementation=attn_implementation, torch_dtype=dtype).to(device); model.eval(); torch.set_grad_enabled(False); batch = processor([[processor.build_user_message(text='We stand on the threshold of the AI era.')]], mode='generation'); outputs = model.generate(input_ids=batch['input_ids'].to(device), attention_mask=batch['attention_mask'].to(device), max_new_tokens=4096); [torchaudio.save('sample{}.wav'.format(i), m.audio_codes_list[0].unsqueeze(0), processor.model_config.sampling_rate) for i, m in enumerate(processor.decode(outputs))]\"",
+          "platform": "any",
+          "source": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/blob/cdd3b911b1585e3f2dbc7775ef10f9926f58850a/README.md",
+          "gb_source": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/tree/cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+          "note": "transformers 5 (trust_remote_code) via the official MOSS-TTS repo install; fp32 on CPU, bf16 on CUDA. Platform evidence: Card code: \"device = \\\"cuda\\\" if torch.cuda.is_available() else \\\"cpu\\\"\", \"dtype = torch.bfloat16 if device == \\\"cuda\\\" else torch.float32\", \"# CPU fallback. Command: Card 'Environment Setup' commands chained with &&; card 'Basic Usage' snippet condensed into python -c with a single direct-TTS conversation (first sentence of the card's text_2): resolve_attn_implementation() replaced by its non-flash-attn outcome ('sdpa' on CUDA, 'eager' on CPU - flash-attn is an… gb is the sum of the weight files the command loads (model-00001-of-00004.safetensors 4.93 GB; model-00002-of-00004.safetensors 4.92 GB; model-00003-of-00004.safetensors 4.98 GB; model-00004-of-00004.safetensors 2.15 GB; model-00001-of-00002.safetensors 5.00 GB; model-00002-of-00002.safetensors 2.10 GB); runtime memory is higher. pyproject pins torch==2.9.1+cu128 (card: 'currently pins `torch==2.9.1+cu128`'), installed from the cu128 index: works on Linux x86_64 with or without an NVIDIA GPU, but that wheel does not exist for macOS, so on a Mac u…"
+        },
+        {
+          "quant": "bf16 (mlx-audio 0.5.x)",
+          "gb": 24.08,
+          "gb_estimated": true,
+          "cmd": "pip install mlx-audio && python -m mlx_audio.tts.generate --model OpenMOSS-Team/MOSS-TTS-v1.5 --text \"Hello, this is MOSS-TTS running on MLX.\" --output_path outputs",
+          "platform": "mac",
+          "source": "https://github.com/Blaizzy/mlx-audio/blob/feb25a37b07923bae556e59111995071d66afa0d/mlx_audio/tts/models/moss_tts/README.md",
+          "gb_source": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5/tree/cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+          "note": "mlx-audio 0.5.x (Blaizzy). Platform evidence: mlx-audio README table row \"| **MOSS-TTS** | 8B delay-pattern and local-transformer multilingual TTS with voice cloning | 31 languages | [OpenMOSS-Team/MOSS-TTS-v1.5](https://huggingface.co/OpenMOSS-T… Command: mlx-audio MOSS-TTS README CLI example (verbatim, backslash continuations joined) chained after the README's `pip install mlx-audio`. gb is the sum of the weight files the command loads (model-00001-of-00004.safetensors 4.93 GB; model-00002-of-00004.safetensors 4.92 GB; model-00003-of-00004.safetensors 4.98 GB; model-00004-of-00004.safetensors 2.15 GB; model-00001-of-00002.safetensors 5.00 GB; model-00002-of-00002.safetensors 2.10 GB); runtime memory is higher. Loads the full 8B bf16 checkpoint plus the ~7.1 GB audio tokenizer; no pre-quantised MLX repo is named in the docs. Voice cloning via ref_audio (Python API) per the same README."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "OpenMOSS-Team/MOSS-TTS-v1.5 (MossTTSDelay-8B; 8,489,841,664 parameters per HF safetensors metadata). Distinct from MOSS-TTSD dialogue models.",
     "identity_sources": [
@@ -24752,7 +25121,20 @@
     "open_weights": true,
     "license": "apache-2.0",
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "bf16 (FireRedTTS3 repo)",
+          "gb": 12.3,
+          "gb_estimated": true,
+          "cmd": "git clone https://github.com/FireRedTeam/FireRedTTS3.git && cd FireRedTTS3 && pip install -r requirements.txt && pip install \"huggingface_hub[cli]\" && hf download FireRedTeam/FireRedTTS3 --local-dir pretrained_models/ && curl -L -o fireredtts3/utils/llm_tn/models/lid.176.ftz https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.ftz && python -c \"import torch; import torchaudio; from fireredtts3.core import FireRedTTS3; tts = FireRedTTS3('pretrained_models', use_wetext=True, use_llm_tn=False); prompt_audio, prompt_audio_sr = torchaudio.load('prompt.wav'); gen_audio, gen_audio_sr = tts.generate(language=None, prompt_text='<prompt audio text>', prompt_audio=prompt_audio, prompt_audio_sr=prompt_audio_sr, text='今天天气很好，我们一起去公园散步吧。', do_tn=True); torchaudio.save('gen.wav', gen_audio.cpu(), gen_audio_sr)\"",
+          "platform": "nvidia",
+          "source": "https://huggingface.co/FireRedTeam/FireRedTTS3/blob/dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610/README.md",
+          "gb_source": "https://huggingface.co/FireRedTeam/FireRedTTS3/tree/dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610",
+          "note": "official FireRedTTS3 repo (fireredtts3.core.FireRedTTS3), PyTorch + flash-attn, bf16. Platform evidence: fireredtts3_base.py: \"self.device = torch.device('cuda')\" and \"\\\"attn_implementation\\\": \\\"flash_attention_2\\\",\" (https://github.com/FireRedTeam/FireRedTTS3/blob/7a1f3a7282ff184cc1c7f070556baaf5f08b521… Command: Chained the card's Quick Start steps (clone, pip install -r requirements.txt, hf download, optional FastText lid.176 download needed for language=None auto-detection) with &&; Python API snippet wrapped into python -c with the language/prompt_text/text variables inlined. gb is the sum of the weight files the command loads (model.safetensors 8.48 GB; model.safetensors 3.78 GB; campplus_voxceleb.bin 0.03 GB; tokenizer.json 0.01 GB); runtime memory is higher. Needs a reference clip + transcript. hf download pulls the whole repo incl. fireredtts3_instruct/model.safetensors (8,475,259,708 bytes) which this path does not load."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "FireRedTeam/FireRedTTS3 run in its base (zero-shot cloning) mode. Distinct from FireRedTTS (v1), FireRedTTS-1S and FireRedTTS-2.",
     "identity_sources": [
@@ -34621,7 +35003,20 @@
     "license": "mit",
     "params_b": 0.3,
     "api": null,
-    "local": null,
+    "local": {
+      "variants": [
+        {
+          "quant": "fp32 (DMOSpeech2 repo)",
+          "gb": 4.34,
+          "gb_estimated": true,
+          "cmd": "conda create -n dmo2 python=3.10 && conda activate dmo2 && git clone https://github.com/yl4579/DMOSpeech2.git && cd DMOSpeech2 && pip install -r requirements.txt && mkdir ckpts && cd ckpts && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_85000.pt && wget https://huggingface.co/yl4579/DMOSpeech2/resolve/main/model_1500.pt && cd ../src && python -c \"from infer import DMOInference; import soundfile as sf; tts = DMOInference(student_checkpoint_path='../ckpts/model_85000.pt', duration_predictor_path='../ckpts/model_1500.pt', device='cuda', model_type='F5TTS_Base'); generated_audio = tts.generate(gen_text='I don\\'t really care what you call me. I\\'ve been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring.', audio_path='f5_tts/infer/examples/basic/basic_ref_en.wav', prompt_text='Some call me nature, others call me mother nature.'); sf.write('generated.wav', generated_audio, 24000)\"",
+          "platform": "nvidia",
+          "source": "https://github.com/yl4579/DMOSpeech2/blob/10c2255a59b96c311c317536603a18672e69ac84/src/demo.ipynb",
+          "gb_source": "https://huggingface.co/yl4579/DMOSpeech2/tree/b2db04bf6fd5147c487149fe173576eec179f910",
+          "note": "official DMOSpeech2 repo (src/infer.py DMOInference, F5-TTS based), PyTorch. Platform evidence: Notebook: \"device=\\\"cuda\\\",\"; infer.py teacher sampling: \"with torch.autocast(device_type=\\\"cuda\\\", dtype=torch.float16):\" (https://github.com/yl4579/DMOSpeech2/blob/10c2255a59b96c311c317536603a18672e… Command: README pre-requisite and checkpoint-download commands chained with &&; demo.ipynb cells 1-2 ('Basic Inference (teacher-guided, 8 steps)') wrapped as python -c run from src/ (the notebook's working dir): timing/RTF prints and IPython display dropped, output written with soundfile (a listed requiremen… gb is the sum of the weight files the command loads (model_85000.pt 4.02 GB; model_1500.pt 0.27 GB; pytorch_model.bin 0.05 GB); runtime memory is higher. Default (teacher-guided) sampling uses the bundled F5-TTS-architecture teacher inside model_85000.pt; student-only sampling is teacher_steps=0, student_start_step=0 (notebook)."
+        }
+      ]
+    },
     "recovered_original": false,
     "identity_note": "yl4579/DMOSpeech2 release @b2db04b (created 2025-07-21, the day after arXiv:2507.14988v1): model_85000.pt (DMD2-distilled student, bundles the F5-TTS-architecture teacher the authors trained themselves for 2M steps, used only for teacher-guided sampling) and model_1500.pt (GRPO-finetuned duration predictor). params_b is the paper's 0.3B for the student-only configuration. Card licence MIT. Not F5-TTS: the teacher is the authors' own training run, not a SWivid checkpoint. No copy-pasteable CLI (demo notebook only).",
     "identity_sources": [

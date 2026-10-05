@@ -6,7 +6,7 @@
 
 Tortoise
 
-**score 26.4** ±2.0 · #63 of 67 · from 14 benchmark results across 8 sources
+**score 26.4** ±2.0 · #85 of 92 · from 14 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

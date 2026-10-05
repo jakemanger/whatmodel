@@ -6,7 +6,7 @@
 
 SWivid (SJTU X-LANCE) · released 2024-10 · cc-by-nc-4.0
 
-**score 42.8** ±1.8 · #54 of 67 · from 10 benchmark results across 3 sources
+**score 42.8** ±1.8 · #65 of 92 · from 10 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 

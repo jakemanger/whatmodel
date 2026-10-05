@@ -6,7 +6,7 @@
 
 Fish Audio · released 2026-03 · 4.56B params · fish-audio-research-license
 
-**score 62.1** ±1.4 · #21 of 67 · from 15 benchmark results across 6 sources
+**score 62.1** ±1.4 · #22 of 92 · from 15 benchmark results across 6 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
