@@ -102,6 +102,17 @@ for (const [url, what] of cited) {
 }
 for (const [why, whats] of bad) errors.push(`${whats.length} item(s) from a source we can't use: ${why}\n      e.g. ${whats.slice(0, 3).join(", ")}`);
 
+// Fast, complete schema/provenance gate for local data work. The default command
+// still performs the exhaustive leave-one-out calibration evaluation below.
+if (process.argv.includes("--validate-only")) {
+  if (errors.length) {
+    console.error(`${errors.length} problem(s):\n  ${errors.join("\n  ")}`);
+    process.exit(1);
+  }
+  console.log(`Validated ${models.length} models, ${results.length} results, ${benches.length} benchmarks and ${SOURCES.length} sources. Calibration evaluation skipped (--validate-only).`);
+  process.exit(0);
+}
+
 const warnings: string[] = [];
 const corr = (xy: [number, number][]) => {
   const n = xy.length, mx = xy.reduce((s, [x]) => s + x, 0) / n, my = xy.reduce((s, [, y]) => s + y, 0) / n;

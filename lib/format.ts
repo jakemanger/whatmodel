@@ -1,7 +1,7 @@
 // Plain-text leaderboard for curl and agents, plus labels shared with the web page.
 
 import { CATEGORIES } from "./categories.ts";
-import { usable, type Row, type RowSpeed } from "./fit.ts";
+import { hasScore, usable, type Row, type RowSpeed } from "./fit.ts";
 import type { Category, Specs } from "./types.ts";
 
 export const sponsor: { text: string; url: string } | null = null;
@@ -33,7 +33,7 @@ export const detectExact = (host: string, path = "/") => ({
 // The curl command for a set of picks, keeping only params the API understands.
 export function curlFor(host: string, path: string, q: URLSearchParams) {
   const keep = new URLSearchParams();
-  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "set", "chart"]) {
+  for (const k of ["mac", "ram", "gpu", "vram", "hw", "max", "sort", "dir", "all", "retired", "set", "score", "chart"]) {
     const v = q.get(k);
     if (v) keep.set(k, v);
   }
@@ -50,7 +50,7 @@ export function whereLabel(r: Row) {
   if (r.where === "local") return "local";
   if (r.where === "local-slow") return "local (slow)";
   if (r.where === "api") return `api ${r.price === null ? "price unknown" : price(r.price, r.category)}`;
-  if (r.where === "retired") return "retired";
+  if (r.where === "retired") return "catalogue only";
   const why = [r.need_gb !== null && `needs ${r.need_gb}GB`, r.over_budget && (r.price === null ? "price unknown" : price(r.price, r.category))].filter(Boolean);
   return `✗ ${why.join(" or ")}`;
 }
@@ -81,7 +81,7 @@ export function describeSpecs(s: Specs) {
 }
 
 type Opts = { color: boolean; base: string; limit: number; all: boolean; benches: number; updated: string; cat: Category;
-  comparison?: { selected?: string; sets: { id: string; label: string; models: number }[] };
+  comparison?: { selected?: string; scoreMode: "overall" | "set"; sets: { id: string; label: string; models: number }[] };
   retiredCount?: number; // scored models with no API or weights left, listed with ?retired=1
 };
 
@@ -96,7 +96,8 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   out.push(`  ${c("1;32", "whatmodel.sh")}${o.cat === "llm" ? "" : c("1;32", path)} ${c("2", `· find the best ${CATEGORIES[o.cat].title} you can run · updated ${o.updated}`)}`);
   out.push("");
   if (o.comparison) {
-    out.push("  Scores compare models within one connected set only. Available sets:");
+    out.push(o.comparison.scoreMode === "set" ? "  Scores within the selected set only." : "  Overall scores; uncalibrated models have no score or rank.");
+    out.push("  Extra: ?set=<id> filters models; add &score=set for scores within that set.");
     for (const set of o.comparison.sets) out.push(`  ${set.id === o.comparison.selected ? "*" : " "} ${set.label} (${set.models} models): ?set=${set.id}`);
     out.push("");
   }
@@ -125,16 +126,18 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   const fit = (s: string) => (s.length > w ? s.slice(0, w - 1) + "…" : s.padEnd(w));
   out.push(c("2", `  ${"#".padStart(3)}  ${"MODEL".padEnd(w)}  ${"SCORE".padStart(7)}  ${"WHERE".padEnd(18)}  ${"SPEED".padStart(12)}  ${"RAM".padStart(5)}  ${o.cat === "llm" ? `${"CONTEXT".padStart(7)}  ` : ""}GET IT`));
   for (const r of shown) {
-    const g = `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}`;
+    const g = hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}` : "—";
     const run = whereLabel(r).padEnd(18);
     const color = r.where === "local" ? "32" : r.where === "api" ? "36" : r.where === "local-slow" ? "33" : "2";
-    const line = `  ${String(r.rank).padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${r.cmd ?? ""}`;
+    const line = `  ${String(r.rank ?? "—").padStart(3)}  ${fit(displayName(r))}  ${g.padStart(7)}  ${c(color, run)}  ${speedLabel(r.speed).padStart(12)}  ${(r.mem_gb !== null ? `~${Math.round(r.mem_gb)}GB` : "").padStart(5)}  ${o.cat === "llm" ? `${contextLabel(r.context_k).padStart(7)}  ` : ""}${r.cmd ?? ""}`;
     out.push(r.where === "none" || r.where === "retired" ? c("2", line) : line);
   }
   out.push("");
   if (!o.all && hidden > 0) out.push(c("2", `  + ${hidden} more models don't fit your machine or budget (?all=1)`));
-  if (o.retiredCount && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} retired models with no current API or download (?retired=1)`));
+  if (o.retiredCount && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} catalogue models without a verified run option (?retired=1)`));
   if (shown.some((r) => r.thin)) out.push(c("2", `  * new or thinly tested: ranked on too few benchmark results`));
+  if (shown.some((r) => r.score === null && r.evidence !== "none")) out.push(c("2", "  — not yet calibrated on the overall score scale; use ?set=<id>&score=set for set scores where available"));
+  if (shown.some((r) => r.evidence === "none")) out.push(c("2", "  — catalogue entries without reviewed results have no score or rank"));
   if (shown.some((r) => r.speed && r.speed.how !== "measured")) out.push(c("2", `  ~speed: measured on other hardware, or estimated. send your chip/GPU name for exact matches: ${host}/method#speed`));
   out.push(c("2", `  RAM is estimated; listed context is a provider ceiling, not a promise that it fits.`));
   out.push(c("2", `  sources and licences: ${host}/method#sources`));

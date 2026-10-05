@@ -31,6 +31,9 @@ export type Model = {
   provider: string;
   category?: Category; // default "llm"
   released?: string;
+  source?: string;
+  model_repo?: string;
+  identity_note?: string;
   open_weights: boolean;
   license?: string;
   params_b?: number;
@@ -83,7 +86,7 @@ export type Hardware = {
   smi_name?: string;
   kind: "nvidia" | "amd" | "intel" | "apple" | "cpu";
   tier?: "base" | "pro" | "max" | "ultra";
-  memory_gb: number[];
+  memory_gb: number[] | null; // CPU memory bandwidth entries do not specify a RAM capacity.
   bandwidth_gbs: number;
   released?: string;
   source: string;

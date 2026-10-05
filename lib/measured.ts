@@ -3,7 +3,7 @@ import type { Model, Specs, Speed, Variant } from "./types.ts";
 
 // Only speeds measured with the exact download on the visitor's own chip (reviewed /bench runs).
 // Anything else stays blank: bandwidth predictions and cross-hardware scaling remain disabled.
-type BenchSpeed = Speed & { hardware_id?: string; applicability?: { selected_download_eligible?: boolean; artifact_reference_as_reported?: string } };
+export type BenchSpeed = Speed & { hardware_id?: string; applicability?: { selected_download_eligible?: boolean; artifact_reference_as_reported?: string } };
 export function measuredSpeed(speeds: Speed[], m: Model, v: Variant, s: Specs): RowSpeed | null {
   const tag = /^ollama run (\S+)$/.exec(v.cmd)?.[1];
   if (!tag || !s.hw) return null;

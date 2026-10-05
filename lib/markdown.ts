@@ -4,6 +4,7 @@ import { posix } from "node:path";
 import { CATEGORIES, CATEGORY_IDS, catOf, priceOf } from "./categories.ts";
 import { chartsFor, chartToText, scatter, usd } from "./chart.ts";
 import { updatedLabel } from "./data.ts";
+import { hasScore } from "./fit.ts";
 import { contextLabel, curlFor, detect, displayName, price, speedLabel, whereLabel } from "./format.ts";
 import { sourceName, sourceOf } from "./sources.ts";
 import type { Category, Model } from "./types.ts";
@@ -81,9 +82,9 @@ function boardTable(from: string, cat: Category, rows: BoardView["shown"]) {
     [{ head: "#", right: true }, { head: "model", max: 26 }, { head: "score", right: true }, { head: "where", max: 21 }, { head: "speed", right: true },
       { head: "RAM", right: true }, { head: "context", right: true }, { head: "get it", max: 20 }],
     rows.map((r) => [
-      String(r.rank),
+      String(r.rank ?? "—"),
       { text: displayName(r), href: rel(from, files.model(r.id)) },
-      `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}`,
+      hasScore(r) ? `${Math.round(r.score)}±${Math.round(r.pm)}${r.thin ? "*" : " "}` : r.evidence === "none" ? "no reviewed results" : r.evidence === "raw" ? "not scored yet" : "not yet calibrated",
       whereLabel(r),
       speedLabel(r.speed),
       r.mem_gb !== null ? `~${r.mem_gb < 10 ? r.mem_gb : Math.round(r.mem_gb)}GB` : "",
@@ -102,7 +103,7 @@ export function boardMarkdown(v: BoardView, intro = ""): string {
   out.push(`updated ${updatedLabel} · ${pl(v.rows.length, "model")} · scores combine ${v.benches} benchmarks · [how it works](${rel(from, files.method)}) · [benchmark your machine](${SITE}/bench) · [interactive version](${SITE}${path})`);
   if (v.sets.length > 1) {
     const sets = v.sets.map((s) => (s.id === v.comparison?.id ? `**${text(s.label)} · ${s.models.length} models**` : `[${text(s.label)} · ${s.models.length} models](${SITE}${path}?set=${encodeURIComponent(s.id)})`));
-    out.push(`These studies cover separate model sets. Scores compare models within the selected set only: ${sets.join(" · ")}`);
+    out.push(`<details><summary>Extra: filter models and choose a score scale</summary>\n\n[All sets](${SITE}${path}) · ${sets.join(" · ")}\n\nFiltering keeps overall scores. On the site, choose **within selected set** to use only that set’s evaluations. Models without a shared score scale are marked **not yet calibrated**.\n\n</details>`);
   }
 
   const auto = detect("whatmodel.sh", path);
@@ -114,7 +115,7 @@ export function boardMarkdown(v: BoardView, intro = ""): string {
   if (!v.rows.length) out.push(`No verified run options in this comparison set yet.${v.comparison ? ` ${modelLinks(from, v.models.filter((m) => v.comparison!.models.includes(m.id)))}` : ""}`);
   else {
     // A short preview of the price chart, as on the site, with the full charts one click away.
-    const priced = v.shown.flatMap((r) => (r.price ? [{ id: r.id, label: r.name, x: r.price, y: r.score, group: r.open_weights ? "open" as const : "closed" as const }] : []));
+    const priced = v.shown.flatMap((r) => (r.score !== null && r.price ? [{ id: r.id, label: r.name, x: r.price, y: r.score, group: r.open_weights ? "open" as const : "closed" as const }] : []));
     const preview = scatter(priced, { xTick: usd, log: true, better: "low", width: 92, height: 5, labelLimit: 3 });
     if (preview) out.push(chartBlock("score vs API price", preview));
     const charts = chartsFor(v.shown, cat, 92);
@@ -125,15 +126,15 @@ export function boardMarkdown(v: BoardView, intro = ""): string {
     if (v.hidden > 0) out.push(`\\+ ${v.hidden} more don't fit your machine or budget · [show them](${SITE}${path}?all=1)`);
   }
 
-  // Models nobody can run any more, ranked where they'd stand today: the history of the board.
+  // Historical or research entries without a verified current run option.
   if (v.retiredCount) {
     const gone = boardView(cat, new URLSearchParams("retired=1")).shown.filter((r) => r.where === "retired");
-    out.push(`<details><summary>Retired models (${gone.length}): no current API or download</summary>\n\n` +
-      `Ranked on today's scale, so # is where each would place in the list above.\n\n${boardTable(from, cat, gone)}\n\n</details>`);
+    out.push(`<details><summary>Catalogue-only models (${gone.length}): no verified run option</summary>\n\n` +
+      `Scores appear only where comparable reviewed evidence is available.\n\n${boardTable(from, cat, gone)}\n\n</details>`);
   }
 
   const { unscored, withoutResults } = v.outside;
-  out.push(`\\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models ranked here · [sources and licences](${rel(from, files.method)}#sources)`);
+  out.push(`\\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models listed here · [sources and licences](${rel(from, files.method)}#sources)`);
   if (unscored.length || withoutResults.length) {
     const parts = [
       unscored.length && `Raw results, insufficient overlap for an overall score: ${modelLinks(from, unscored)}`,
@@ -181,8 +182,12 @@ export function modelMarkdown(v: ModelView): string {
 
   if (v.kind === "raw") {
     out.push(`# ${text(m.name)}`);
-    out.push(`Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.`);
-    out.push(pre([{ head: "test", max: 34 }, { head: "result", right: true }, { head: "reported by" }, { head: "source", max: 30 }],
+    out.push(`${text(m.provider)}${m.released ? ` · released ${m.released}` : ""}`);
+    if (m.identity_note) out.push(text(m.identity_note));
+    if (m.model_repo) out.push(`[Model and usage documentation](${m.model_repo})`);
+    if (m.source) out.push(`[Catalogue source](${m.source})`);
+    out.push(v.raw.length ? `Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.` : `No reviewed benchmark results yet. This catalogue entry has no score or rank.`);
+    if (v.raw.length) out.push(pre([{ head: "test", max: 34 }, { head: "result", right: true }, { head: "reported by" }, { head: "source", max: 30 }],
       v.raw.map((r) => [benchName(r.bench), resultLabel(r), r.by === "lab" ? "lab" : "independent", { text: shortName(sourceName(r.source)), href: r.source }])));
     out.push(licences(from, v.raw.map((r) => r.source)));
     if (m.api || m.local?.variants.length) {
@@ -201,7 +206,7 @@ export function modelMarkdown(v: ModelView): string {
     m.license ? text(m.license) : !m.open_weights && "closed weights"].filter(Boolean);
   out.push(facts.join(" · "));
   out.push(`**score ${s.g.toFixed(1)}** ±${s.pm.toFixed(1)} · ${v.place ? `#${v.place} of ${v.total}` : "comparison only: no current run option verified"} · from ${pl(s.n, "benchmark result")} across ${pl(v.sources.length, "source")}${s.n < 3 ? " · \\* thinly tested, treat the rank as provisional" : ""}`);
-  if (v.set) out.push(`Score within the [${text(v.set.label)}](${SITE}${CATEGORIES[cat].path}?set=${encodeURIComponent(v.set.id)}) comparison set only.`);
+  if (v.set) out.push(`Score within the [${text(v.set.label)}](${SITE}${CATEGORIES[cat].path}?set=${encodeURIComponent(v.set.id)}&score=set) comparison set only.`);
 
   out.push(`## How the score was worked out`);
   out.push(`Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](${rel(from, files.method)})`);
@@ -268,7 +273,7 @@ export function methodMarkdown(): string {
     "**a** is how well a benchmark separates strong models from weak ones. Saturated benchmarks count for less.",
     "Each source's version of a benchmark gets its own a and d when at least three models were tested. Sparser series remain visible as raw evidence and do not enter the overall score. Lab-reported results are labelled.",
     "Models with few results are pulled toward the middle and get a wider **±**.",
-    "Scores are scaled to mean 50, sd 15 within a connected comparison set. Disconnected studies cannot establish a common ranking, so their sets are selectable separately. It's a relative score, so it shifts as new models arrive.",
+    "All model sets are listed together by default. Overall scores use the largest connected set; models without a shared scale are not yet calibrated. Under Extra, filter to a set without changing scores, or choose scores within that set. Each scale has mean 50, sd 15; scores from different scales are not comparable. Scores shift as new models arrive.",
     "± is uncertainty within this statistical model, not a guarantee of real-world performance or a validated confidence interval.",
     "Related benchmarks can share tasks or biases. A high held-out correlation does not establish independent validation.",
   ].map((l) => `- ${l}`).join("\n"));

@@ -14,7 +14,7 @@ export function findHardware(list: Hardware[], text: string | null | undefined, 
   const t = norm(text);
   if (!t) return null;
   // Exact normalized name first, then the longest name contained in the text ("rtx 4090" in "rtx 4090 d" loses to "rtx 4090 d").
-  const byMem = (hs: Hardware[]) => (memGb && hs.find((h) => h.memory_gb.includes(memGb))) || hs[0] || null;
+  const byMem = (hs: Hardware[]) => (memGb && hs.find((h) => h.memory_gb?.includes(memGb))) || hs[0] || null;
   const exact = list.filter((h) => norm(h.name) === t || (h.smi_name && norm(h.smi_name) === t));
   if (exact.length) return byMem(exact);
   const contained = list

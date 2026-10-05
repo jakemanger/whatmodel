@@ -31,7 +31,8 @@ curl "whatmodel.sh/image?ram=64&gpu=card&vram=24&format=json"
 | `hw` | exact chip or card id from `data/hardware.json` |
 | `max` | highest price in the category's unit (LLMs: $ per 1M tokens, blended 3:1 in:out); `0` = local only |
 | `sort`, `dir` | `score`, `where`, `speed`, `ram` or `context`; `asc` or `desc` |
-| `set` | connected comparison set ID, listed in the page and JSON response; scores across separate sets are not comparable |
+| `set` | optional model-set filter; omitted = all sets, without changing the overall score scale |
+| `score` | `set` uses only the selected set’s evaluations; omitted = overall scores, with uncalibrated scores/ranks reported as null |
 | `all=1`, `n=40`, `format=json`, `color=1`, `chart=1` | show models that don't fit, row limit, JSON, ANSI colour, charts |
 
 The same output runs from this repo, with no server:

@@ -89,7 +89,10 @@ export type SourceSummary = {
 };
 
 // Which sources a model's score came from, and how much each one weighed.
+const sourceSummaries = new Map<string, SourceSummary[]>();
 export function sourcesFor(id: string): SourceSummary[] {
+  const cached = sourceSummaries.get(id);
+  if (cached) return cached;
   const e = fitFor(id).explain(id);
   if (!e) return [];
   const by = new Map<string, SourceSummary>();
@@ -112,5 +115,7 @@ export function sourcesFor(id: string): SourceSummary[] {
       by.set(h, s);
     }
   }
-  return [...by.values()].sort((a, b) => b.share - a.share);
+  const summaries = [...by.values()].sort((a, b) => b.share - a.share);
+  sourceSummaries.set(id, summaries);
+  return summaries;
 }

@@ -17,15 +17,16 @@ export type Where = "local" | "local-slow" | "api" | "none" | "retired";
 export type RowSpeed = { value: number; unit: SpeedUnit; how: "measured" | "scaled" | "elsewhere" | "estimated"; on?: string };
 
 export type Row = {
-  rank: number;
+  rank: number | null;
   id: string;
   name: string;
   provider: string;
   category: Category;
-  score: number; // published-model score; quantization penalties are currently disabled
-  score_full: number; // the model as benchmarked
-  pm: number;
+  score: number | null; // null when not calibrated on the selected scale
+  score_full: number | null; // the model as benchmarked
+  pm: number | null;
   n: number;
+  evidence?: "none" | "raw" | "comparison";
   thin: boolean; // too few results to trust the rank much
   where: Where;
   cmd: string | null; // the one thing to paste
@@ -39,6 +40,9 @@ export type Row = {
   params_b: number | null;
   context_k: number | null; // context window, thousands of tokens (LLMs)
 };
+
+export type ScoredRow = Row & { rank: number; score: number; score_full: number; pm: number };
+export const hasScore = (r: Row): r is ScoredRow => r.score !== null;
 
 // Memory a variant needs. LLM sizes are downloads, so add room for the KV cache at a modest
 // context and the runtime; other categories list the memory needed to run directly.
@@ -67,15 +71,16 @@ type Opts = {
   speedFor?: (m: Model, v: Variant, s: Specs, fastGb: number) => RowSpeed | null;
   thinBelow?: number; // results needed to not be "thin": 3, or fewer in categories with fewer benchmarks
   retired?: boolean; // also list models with no API or weights left, for history
+  includeUnscored?: boolean; // keep models whose score is unavailable on this scale
 };
 
-export function rank(models: Model[], scores: Map<string, Scored>, { specs, max = null, gFor, speedFor, thinBelow = 3, retired = false }: Opts): Row[] {
+export function rank(models: Model[], scores: Map<string, Scored>, { specs, max = null, gFor, speedFor, thinBelow = 3, retired = false, includeUnscored = false }: Opts): Row[] {
   const mem = specs ? usable(specs) : null;
-  const rows = models.flatMap((m) => {
+  const rows: Row[] = models.flatMap((m) => {
     const s = scores.get(m.id);
     // Retired models (no API, no weights) still anchor the fit but can't be run, so they're listed only on request.
     const gone = !m.api && !m.local?.variants.length;
-    if (!s || (gone && !retired)) return [];
+    if ((!s && !includeUnscored) || (gone && !retired)) return [];
     const cat = catOf(m);
     const variants = (m.local?.variants ?? []).filter((v) => runsOn(v, specs)).sort((x, y) => y.gb - x.gb);
     const smallest = variants.at(-1);
@@ -110,22 +115,22 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
         ? { value: m.api.speed >= 10 ? Math.round(m.api.speed) : Math.round(m.api.speed * 10) / 10, unit: m.api.speed_unit, how: "measured" }
       : null;
 
-    const q = chosen && gFor ? gFor(m, chosen) : null;
-    const g = q?.g ?? s.g;
+    const q = s && chosen && gFor ? gFor(m, chosen) : null;
+    const g = q?.g ?? s?.g;
     return [{
       rank: 0,
       id: m.id,
       name: m.name,
       provider: m.provider,
       category: cat,
-      score: Math.round(g * 10) / 10,
-      score_full: Math.round(s.g * 10) / 10,
-      pm: Math.round(s.pm * 10) / 10,
-      n: s.n,
-      thin: s.n < thinBelow,
+      score: g === undefined ? null : Math.round(g * 10) / 10,
+      score_full: s ? Math.round(s.g * 10) / 10 : null,
+      pm: s ? Math.round(s.pm * 10) / 10 : null,
+      n: s?.n ?? 0,
+      thin: !!s && s.n < thinBelow,
       where: run,
       cmd,
-      quant: q?.label ?? null,
+      quant: q?.label ?? chosen?.quant ?? null,
       speed: chosen ? local : apiSpeed,
       need_gb: smallest ? Math.round(needGb(smallest, cat)) : null,
       mem_gb:
@@ -139,8 +144,10 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
       context_k: m.context_k ?? null,
     }];
   });
-  rows.sort((x, y) => y.score - x.score);
-  rows.forEach((r, i) => (r.rank = i + 1));
+  rows.sort((x, y) => x.score === null || y.score === null
+    ? x.score === y.score ? x.name.localeCompare(y.name) : x.score === null ? 1 : -1
+    : y.score - x.score);
+  rows.forEach((r, i) => (r.rank = r.score === null ? null : i + 1));
   return rows;
 }
 
@@ -165,11 +172,12 @@ export function sortRows(rows: Row[], sort: Sort, dir: Dir): Row[] {
     return r.context_k;
   };
   const sign = dir === "asc" ? 1 : -1;
+  const tie = (a: Row, b: Row) => (a.rank ?? Infinity) - (b.rank ?? Infinity) || a.name.localeCompare(b.name);
   // Rows without a value (no speed data, API-only memory, …) always go last.
   return [...rows].sort((a, b) => {
     const x = key(a), y = key(b);
-    if (x === null || y === null) return x === y ? a.rank - b.rank : x === null ? 1 : -1;
-    return x === y ? a.rank - b.rank : sign * (x - y);
+    if (x === null || y === null) return x === y ? tie(a, b) : x === null ? 1 : -1;
+    return x === y ? tie(a, b) : sign * (x - y);
   });
 }
 

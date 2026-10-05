@@ -188,13 +188,13 @@ export const PRICE_AXIS: Record<string, string> = {
   stt: "USD per audio minute",
 };
 
-type RowLike = { id: string; name: string; score: number; price: number | null; need_gb: number | null; open_weights: boolean };
+type RowLike = { id: string; name: string; score: number | null; price: number | null; need_gb: number | null; open_weights: boolean };
 const groupOf = (r: RowLike): Group => (r.open_weights ? "open" : "closed");
 
 // Terminal version (?chart=1): what the score costs, and what it needs to run.
 export function chartsFor(rows: RowLike[], cat: string, width = 76): { title: string; chart: Chart }[] {
-  const priced = rows.flatMap((r) => (r.price ? [{ id: r.id, label: r.name, x: r.price, y: r.score, group: groupOf(r) }] : []));
-  const local = rows.flatMap((r) => (r.need_gb ? [{ id: r.id, label: r.name, x: r.need_gb, y: r.score, group: groupOf(r) }] : []));
+  const priced = rows.flatMap((r) => (r.score !== null && r.price ? [{ id: r.id, label: r.name, x: r.price, y: r.score, group: groupOf(r) }] : []));
+  const local = rows.flatMap((r) => (r.score !== null && r.need_gb ? [{ id: r.id, label: r.name, x: r.need_gb, y: r.score, group: groupOf(r) }] : []));
   return [
     { title: `score vs API price (${PRICE_AXIS[cat] ?? "USD"}, log)   ● open weights  ◆ API only  ─┘ best for the price`, chart: scatter(priced, { xTick: usd, log: true, better: "low", width }) },
     { title: "score vs memory to run it (GB, log)   ─┘ best for the memory", chart: scatter(local, { xTick: gbLabel, log: true, better: "low", width }) },

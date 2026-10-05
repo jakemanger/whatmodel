@@ -8,6 +8,14 @@ speed. You don't need to write code for any of them.
 Open an issue with the **Wrong number** or **Missing model** form. Include a source link for every
 number.
 
+## Edit the website's information pages
+
+The About, FAQ and Contribute pages are Markdown files in `content/site/`. Use the website's
+**edit this page on GitHub** button to open the matching file, make your edit, and propose a pull
+request. You can also edit those files directly here. Use standard Markdown headings, paragraphs,
+lists and links; HTML is not rendered. Keep the page title in the website's page configuration and
+start section headings at `##`. Documentation edits do not require rebuilding the data.
+
 ## Change the data yourself
 
 1. Edit the files in `data/`. [UPDATING.md](UPDATING.md) explains each file and field. It's the same

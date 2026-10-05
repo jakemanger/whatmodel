@@ -1,11 +1,13 @@
 // What each whatmodel.sh page shows, computed in one place. The site renders these as HTML
 // and scripts/pages.ts renders them as markdown, so the two always agree.
 import {
-  benchesUsed, benchmarkById, comparisonFor, comparisonForModel, comparisonSets, fitFor, gFor, hardware,
-  models, modelsIn, quantFindings, results, sourcesFor, speedFor, speeds, type ComparisonSet, type SourceSummary,
+  benchmarkById, comparisonForModel, comparisonSets, fitFor, gFor,
+  models, modelsIn, quantFindings, results, sourcesFor, speeds, type ComparisonSet, type SourceSummary,
 } from "./data.ts";
 import { catOf } from "./categories.ts";
-import { parseMax, parseSort, parseSpecs, rank, sortRows } from "./fit.ts";
+import { rank } from "./fit.ts";
+import { boardFromData } from "./board.ts";
+import { boardData } from "./board-data.ts";
 import type { QuantFinding } from "./quant.ts";
 import type { Explained } from "./score.ts";
 import { SOURCES, sourceId } from "./sources.ts";
@@ -13,29 +15,7 @@ import type { Category, Model, Result, Scored, Speed, Variant } from "./types.ts
 
 // A category's leaderboard for one query (machine, budget, sort, comparison set).
 export function boardView(cat: Category, q: URLSearchParams) {
-  const specs = parseSpecs(q, hardware);
-  const max = parseMax(q);
-  const list = modelsIn(cat);
-  const comparison = comparisonFor(cat, q.get("set"));
-  const retired = q.has("retired");
-  const ranked = rank(list, comparison?.fit.scores ?? new Map(), { specs, max, gFor, speedFor, thinBelow: 3, retired });
-  const { sort, dir } = parseSort(q, ranked);
-  const rows = sortRows(ranked, sort, dir);
-  const all = q.has("all");
-  const shown = all ? rows : rows.filter((r) => r.where !== "none");
-  return {
-    cat, specs, max, models: list, comparison, sets: comparisonSets[cat], ranked, rows, sort, dir, all, shown,
-    hidden: rows.length - shown.length,
-    retired,
-    retiredCount: retiredCount(list, comparison?.fit.scores),
-    benches: benchesUsed(cat, comparison?.id),
-    // Catalogue models the leaderboard can't rank, and why.
-    outside: {
-      comparisonOnly: list.filter((m) => comparison?.models.includes(m.id) && !m.api && !m.local?.variants.length),
-      unscored: list.filter((m) => !fitFor(m.id).scores.has(m.id) && results.some((r) => r.model === m.id)),
-      withoutResults: list.filter((m) => !results.some((r) => r.model === m.id)),
-    },
-  };
+  return boardFromData(boardData(cat), q);
 }
 export type BoardView = ReturnType<typeof boardView>;
 
@@ -43,8 +23,8 @@ export type BoardView = ReturnType<typeof boardView>;
 export const retiredCount = (list: Model[], scores?: Map<string, Scored>) =>
   list.filter((m) => scores?.has(m.id) && !m.api && !m.local?.variants.length).length;
 
-// Models with a page: anything with at least one reviewed result.
-export const pageModels = () => models.filter((m) => results.some((r) => r.model === m.id));
+// Catalogue entries have a page even before comparable measurements are available.
+export const pageModels = () => models;
 
 // A benchmark result as published: Elo as is, raw scales restored, everything else as a percentage.
 export function resultLabel(r: Result) {
@@ -84,7 +64,7 @@ export type ModelView =
       quant: QuantFinding[];
     };
 
-// Everything a model's page shows. null: no such model, or nothing published about it.
+// Everything a model's page shows. null: no such model.
 export function modelView(id: string): ModelView | null {
   const model = models.find((x) => x.id === id);
   if (!model) return null;
@@ -92,7 +72,7 @@ export function modelView(id: string): ModelView | null {
   const explain = fitFor(id).explain(id);
   if (!score || !explain) {
     const raw = results.filter((r) => r.model === id);
-    return raw.length ? { kind: "raw", model, raw } : null;
+    return { kind: "raw", model, raw };
   }
 
   const cat = catOf(model);
@@ -125,7 +105,7 @@ export function modelView(id: string): ModelView | null {
 
   return {
     kind: "scored", model, cat, score, explain,
-    place: all.find((r) => r.id === id)?.rank,
+    place: all.find((r) => r.id === id)?.rank ?? undefined,
     total: all.length,
     sources: sourcesFor(id),
     set: comparisonSets[cat].length > 1 ? comparisonForModel(id) : undefined,
