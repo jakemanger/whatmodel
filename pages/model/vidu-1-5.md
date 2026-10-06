@@ -6,7 +6,7 @@
 
 ShengShu (Vidu) · released 2024-11 · proprietary
 
-**score 38.2** ±3.0 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.5** ±2.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  54.6%    36.7   2025-05-17   61% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  58.3%    39.5   2025-05-17   35% ▇▇▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>  54.6%    37.1   2025-05-17   61% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>  58.3%    39.7   2025-05-17   35% ▇▇▇▇
 prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 38.2
+                        weighted average                       = 38.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

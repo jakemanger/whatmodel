@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 42.4** ±1.6 · #267 of 404 · from 8 benchmark results across 1 source
+**score 42.6** ±1.6 · #273 of 411 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,29 +15,33 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious  <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    40.2   2025-10-08   29% ▇▇▇▇
-                  <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    39.1   2025-10-08   21% ▇▇▇
-                  <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    46.8   2025-10-08   12% ▇
-                  <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            64.3%    45.5   2025-10-08   11% ▇
-                  <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    45.5   2025-10-08   10% ▇
-                  <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    43.8   2025-10-08    6% ▇
-                  <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    48.7   2025-10-08    5% ▇
-                  <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    36.2   2025-10-08    5% ▇
-prior             pull toward the middle                   50.0                 1% ▇
-                  weighted average                       = 42.4
+source                 test                            score  implies  date        weight
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious       <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    40.3   2025-10-08   28% ▇▇▇
+                       <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    39.2   2025-10-08   19% ▇▇
+                       <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    46.8   2025-10-08   12% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            64.3%    45.6   2025-10-08   10% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    45.6   2025-10-08    9% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    43.9   2025-10-08    5% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    48.8   2025-10-08    5% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    36.3   2025-10-08    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    44.0   2026-04-17    3% ▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    44.2   2026-04-17    3% ▇
+prior                  pull toward the middle                   50.0                 1% ▇
+                       weighted average                       = 42.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2501.00656v3): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m   ~8.73GB   42.4
-8-bit q8_0    ~16.96GB   42.4
+4-bit q4_k_m   ~8.73GB   42.6
+8-bit q8_0    ~16.96GB   42.6
 </pre>
 
 ```sh

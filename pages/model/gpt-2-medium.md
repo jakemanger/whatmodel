@@ -33,6 +33,8 @@ prior                   pull toward the middle           49.8                 2%
 
 ## How to run it
 
+<sub>[context source](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+
 <pre>
 download       size  score
 4-bit fp32  ~1.52GB   41.8

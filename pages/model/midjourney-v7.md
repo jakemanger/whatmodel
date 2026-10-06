@@ -4,7 +4,7 @@
 
 # Midjourney V7
 
-Midjourney · closed weights
+Midjourney · released 2025-04 · closed weights
 
 **score 40.4** ±3.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

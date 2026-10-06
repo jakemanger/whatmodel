@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · **tts** · [stt](stt.md)
 
-updated 2026-10-05 09:23 UTC · 125 models · scores combine 84 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
+updated 2026-10-06 01:46 UTC · 125 models · scores combine 84 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/tts)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 
@@ -203,7 +203,7 @@ curl.exe "whatmodel.sh/tts?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory
  —  <a href="model/kitten-tts-2.md">KittenTTS 2</a>                 no reviewed results  local                ~2.1GB  pip install kittenm…
  —  <a href="model/smallest-lightning-v3-1-pro.md">Lightning v3.1 Pro</a>          no reviewed results  api $19.50/M chars           <a href="https://smallest.ai/pricing">smallest.ai</a>
  —  <a href="model/magpie-tts-multilingual-357m.md">Magpie TTS Multilingual 3…</a>  no reviewed results  local                ~0.7GB  curl -fsSL https://…
- —  <a href="model/maya1.md">Maya1</a>                       no reviewed results  local                ~6.7GB  pip install torch t…
+ —  <a href="model/maya1.md">Maya1</a>                            not scored yet  local                ~6.7GB  pip install torch t…
  —  <a href="model/minimax-speech-2-6-hd.md">MiniMax Speech 2.6 HD</a>       no reviewed results  api $100.00/M chars          <a href="https://platform.minimax.io/docs/guides/pricing-paygo.md">platform.minimax.io</a>
  —  <a href="model/coqui-en-ljspeech-neural-hmm.md">Neural HMM TTS (Coqui LJ …</a>  no reviewed results  local                  ~4GB  uv run --python 3.1…
  —  <a href="model/hume-octave-2.md">Octave 2</a>                    no reviewed results  api $25.00/M chars           <a href="https://www.hume.ai/pricing">hume.ai</a>

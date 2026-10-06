@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.8B params · apache-2.0
 
-**score 46.6** ±3.9 · #236 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±4.4 · #239 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  43.1%    46.4   2026-05-02   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 7% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  43.1%    46.3   2026-05-02   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 9% ▇
                         weighted average                       = 46.6
 </pre>
 

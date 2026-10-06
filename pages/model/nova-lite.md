@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 43.4** ±1.9 · #262 of 404 · from 4 benchmark results across 2 sources
+**score 43.5** ±1.9 · #268 of 411 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1260.3    45.2   2026-09-13   51% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1019.0    40.3   2026-09-13   37% ▇▇▇▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   16.0%    38.4   2025-11-18    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1260.3    45.3   2026-09-13   51% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1019.0    40.3   2026-09-13   36% ▇▇▇▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   16.0%    38.5   2025-11-18    7% ▇
                         <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   86.8%    57.1   2025-07-02    4% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 43.4
+                        weighted average                        = 43.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                    50.0          
 
 api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.24 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html)
 
-<sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Standard tier, geo cross-Region inference and in-Region, US East (N. Virginia). Amazon Nova Lite (amazon.nova-lite-v1:0). Observed 2026-09-28 (page price data $0.00006/$0.00024 per 1K tokens).</sub>
+<sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Standard tier, geo cross-Region inference and in-Region, US East (N. Virginia). Amazon Nova Lite (amazon.nova-lite-v1:0). Observed 2026-09-28 (page price data $0.00006/$0.00024 per 1K tokens). · [context source](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

@@ -4,9 +4,9 @@
 
 # PixVerse 5.5
 
-PixVerse · closed weights
+PixVerse · released 2025-12 · closed weights
 
-**score 50.9** ±10.1 · #42 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.0** ±10.1 · #42 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        85.5%    51.6   2026-04-22   56% ▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>        85.5%    51.8   2026-04-22   56% ▇▇▇▇▇▇▇
 prior                   pull toward the middle           49.9                44% ▇▇▇▇▇
-                        weighted average               = 50.9
+                        weighted average               = 51.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

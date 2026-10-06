@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2024-06 · proprietary
 
-**score 36.6** ±6.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.9** ±6.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  54.8%    33.3   2024-10-01   80% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                20% ▇▇
-                        weighted average                       = 36.6
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>  54.8%    33.3   2024-10-01   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                15% ▇▇
+                        weighted average                       = 35.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

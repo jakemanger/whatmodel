@@ -34,6 +34,8 @@ prior                   pull toward the middle           49.8                 2%
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/tiiuae/falcon-rw-1b/blob/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download        size  score
 16-bit bf16  ~2.62GB   52.7

@@ -4,7 +4,7 @@
 
 # OverFlow (Coqui LJ Speech)
 
-Coqui TTS / Eren Gölge @erogol
+Coqui TTS / Eren Gölge @erogol · released 2022-12
 
 Exact registry entry tts\_models/en/ljspeech/overflow. Default vocoder vocoder\_models/en/ljspeech/hifigan\_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
 

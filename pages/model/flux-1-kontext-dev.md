@@ -4,7 +4,7 @@
 
 # FLUX.1 Kontext \[dev\]
 
-Black Forest Labs · released 2025-06 · flux-1-dev-non-commercial-license
+Black Forest Labs · released 2025-06 · 12B params · flux-1-dev-non-commercial-license
 
 **score 43.7** ±1.4 · #82 of 114 · from 6 benchmark results across 5 sources
 

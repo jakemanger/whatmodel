@@ -33,6 +33,8 @@ prior                   pull toward the middle                   49.8           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/bigscience/bloom-1b1/blob/eb3dd7399312f5f94fd13f41d2f318117d3eb1e4/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download       size  score
 4-bit fp16  ~2.13GB   31.4

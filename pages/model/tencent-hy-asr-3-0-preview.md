@@ -17,8 +17,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="speech-stt-qwen-audio3-asr-report"></a>Qwen-Audio-3.0-ASR Te…  <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · C…</a>   2.4%    64.5   2026-09-09   56% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   3.2%    59.7   2026-09-09   38% ▇▇▇▇▇
-prior                   pull toward the middle                   49.6                 5% ▇
+                        <a href="https://arxiv.org/html/2609.07549v2">Qwen-Audio-3.0-ASR report · E…</a>   3.2%    59.8   2026-09-09   38% ▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 5% ▇
                         weighted average                       = 61.9
 </pre>
 

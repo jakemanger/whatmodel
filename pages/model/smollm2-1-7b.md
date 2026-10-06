@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 25.9** ±1.1 · #391 of 404 · from 17 benchmark results across 4 sources
+**score 25.8** ±1.1 · #398 of 411 · from 18 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,36 +17,39 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             34.3%    22.0   2025-10-08   15% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   39.8%    27.0   2025-10-08   11% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            45.3%    22.5   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   45.3%    27.9   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>    5.8%    19.3   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   39.8%    27.0   2025-10-08   10% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            45.3%    22.6   2025-10-08    6% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   45.3%    28.0   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>    5.8%    19.2   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            16.4%    30.6   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        51.6%    24.1   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        20.3%    26.6   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        20.3%    26.5   2025-10-08    2% ▇
 <a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard (lab)</a>             32.2%    27.8   2025-02-04    4% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">GSM8K (lab)</a>                      48.8%    26.9   2025-02-04    4% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                       74.4%    28.3   2025-02-04    4% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified) (la…</a>   21.0%    28.4   2025-02-04    4% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>                  28.1%    25.5   2025-02-04    4% ▇
                         <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                  66.1%    30.9   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    30.2   2025-02-04    3% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    30.3   2025-02-04    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1114.4    27.4   2026-09-13   18% ▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   29.9%    22.4   2026-08-11    6% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   29.9%    22.5   2026-08-11    6% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   50.2%    22.2   2026-04-17    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 25.9
+                        weighted average                        = 25.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2502.02737v1): Context length from the maker's technical report.</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.53GB   25.9
-8-bit q8_0    ~2.55GB   25.9
+4-bit q4_k_m  ~1.53GB   25.8
+8-bit q8_0    ~2.55GB   25.8
 </pre>
 
 ```sh

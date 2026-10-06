@@ -4,7 +4,7 @@
 
 # OneCAT-3B
 
-Meituan (OneCAT team) · released 2025-09 · apache-2.0
+Meituan (OneCAT team) · released 2025-09 · 9B params (3B active) · apache-2.0
 
 **score 19.8** ±3.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

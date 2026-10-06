@@ -4,7 +4,7 @@
 
 # Glow-TTS Common Voice (Turkish)
 
-Coqui TTS / Fatih Akademi
+Coqui TTS / Fatih Akademi · released 2022-03
 
 Exact registry entry tts\_models/tr/common-voice/glow-tts. Default vocoder vocoder\_models/tr/common-voice/hifigan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
 

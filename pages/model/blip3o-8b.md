@@ -4,7 +4,7 @@
 
 # BLIP3-o 8B
 
-Salesforce Research · apache-2.0
+Salesforce Research · released 2025-05 · apache-2.0
 
 **score 37.4** ±2.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 27B params · apache-2.0
 
-**score 51.4** ±2.7 · #40 of 76 · from 3 benchmark results across 3 sources
+**score 51.5** ±2.7 · #41 of 76 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  953.0    51.1   2026-05-11   75% ▇▇▇▇▇▇▇▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  21.6%    50.7   2026-08-26   18% ▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  32.2%    59.9   2026-06-17    4% ▇
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  953.0    51.3   2026-05-11   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  21.6%    50.9   2026-08-26   18% ▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  32.2%    60.0   2026-06-17    4% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 51.4
+                        weighted average                       = 51.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14
 
 <pre>
 version                                     needs  score
-gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   51.4
-gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   51.4
+gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   51.5
+gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   51.5
 </pre>
 
 ```sh

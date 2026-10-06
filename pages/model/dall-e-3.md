@@ -4,7 +4,7 @@
 
 # DALL·E 3
 
-OpenAI · closed weights
+OpenAI · released 2023-10 · closed weights
 
 **score 45.7** ±1.3 · comparison only: no current run option verified · from 8 benchmark results across 7 sources
 

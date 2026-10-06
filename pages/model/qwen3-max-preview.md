@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 66.0** ±2.7 · #79 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 66.0** ±2.6 · #79 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1434.7    66.5   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1434.7    66.6   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
                         weighted average                = 66.0
 </pre>
@@ -28,6 +28,8 @@ prior                   pull toward the middle            50.0                 3
 ## How to run it
 
 api (Alibaba Cloud Model Studio) · price unknown · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
+
+<sub>[context source](https://www.alibabacloud.com/help/en/model-studio/model-qwen3-max): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

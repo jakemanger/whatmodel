@@ -4,7 +4,7 @@
 
 # Janus-Pro-7B
 
-DeepSeek · released 2025-01 · deepseek
+DeepSeek · released 2025-01 · 7B params · deepseek
 
 **score 34.3** ±2.7 · #99 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

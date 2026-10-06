@@ -4,7 +4,7 @@
 
 # GLIDE (filtered)
 
-OpenAI · released 2021-12 · mit
+OpenAI · released 2021-12 · 0.3B params · mit
 
 **score 30.1** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

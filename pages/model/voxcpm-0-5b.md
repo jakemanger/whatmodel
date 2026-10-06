@@ -4,7 +4,7 @@
 
 # VoxCPM 0.5B
 
-OpenBMB · released 2025-09 · apache-2.0
+OpenBMB · released 2025-09 · 0.5B params · apache-2.0
 
 **score 59.5** ±1.4 · #29 of 92 · from 15 benchmark results across 3 sources
 

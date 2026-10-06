@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 8.54B params · gemma
 
-**score 31.2** ±1.0 · #368 of 404 · from 7 benchmark results across 3 sources
+**score 30.8** ±1.0 · #377 of 411 · from 9 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,27 +16,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               23.0%    30.7   2024-03-28   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       31.7%    29.0   2024-03-28   26% ▇▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  34.4%    32.1   2024-05-07   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            24.1%    41.4   2024-05-07    3% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           53.3%    40.8   2024-05-07    2% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      44.4%    31.0   2024-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 32.3%    29.1   2024-06-19    5% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               23.0%    30.5   2024-03-28   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       31.7%    28.8   2024-03-28   27% ▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  34.4%    31.7   2024-05-07   23% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            24.1%    40.9   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           53.3%    40.4   2024-05-07    2% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      44.4%    30.6   2024-06-19    5% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 32.3%    28.7   2024-06-19    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  84.9%    45.7   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.5%    15.1   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 31.2
+                        weighted average                       = 30.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/google/gemma-7b/blob/ff6768d9368919a1f025a54f9f5aa0ee591730bb/README.md): Context length stated on the official model card.</sub>
+
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.5GB   31.2
-8-bit q8_0    ~9.1GB   31.2
+4-bit q4_k_m  ~5.5GB   30.8
+8-bit q8_0    ~9.1GB   30.8
 </pre>
 
 ```sh

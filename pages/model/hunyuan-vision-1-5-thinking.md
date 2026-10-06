@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · closed weights
 
-**score 59.7** ±2.0 · #134 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.7** ±2.0 · #136 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -29,6 +29,8 @@ prior                   pull toward the middle                    50.0          
 ## How to run it
 
 api (Tencent Cloud TokenHub) · price unknown · [cloud.tencent.com](https://cloud.tencent.com/document/product/1823/130051)
+
+<sub>[context source](https://cloud.tencent.com/document/product/1823/130051): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

@@ -4,7 +4,7 @@
 
 # Lucid Origin
 
-Leonardo.Ai · closed weights
+Leonardo.Ai · released 2025-08 · closed weights
 
 **score 49.4** ±1.9 · #76 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

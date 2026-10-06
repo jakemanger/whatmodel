@@ -4,7 +4,7 @@
 
 # Lumina-DiMOO
 
-Alpha-VLLM (Shanghai AI Lab) · released 2025-09 · apache-2.0
+Alpha-VLLM (Shanghai AI Lab) · released 2025-09 · 8B params · apache-2.0
 
 **score 26.4** ±3.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

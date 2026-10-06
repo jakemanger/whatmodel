@@ -4,9 +4,9 @@
 
 # Saarika v2.5
 
-Sarvam AI · closed weights
+Sarvam AI · released 2025-05 · closed weights
 
-**score 71.2** ±4.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 71.4** ±4.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   6.9%    73.2   2026-09-24   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.6                 9% ▇
-                        weighted average                       = 71.2
+<a name="speech-stt-bangla-riverborn-mit"></a>Bangla Speech-to-Text…  <a href="https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/results/leaderboard.csv">Bangla STT benchmark · BanSpe…</a>   6.9%    73.3   2026-09-24   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 8% ▇
+                        weighted average                       = 71.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

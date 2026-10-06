@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 35.1** ±1.2 · #339 of 404 · from 4 benchmark results across 2 sources
+**score 34.9** ±1.2 · #350 of 411 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    35.5   2024-03-28   48% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    35.7   2024-03-28   38% ▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    31.1   2024-01-03    7% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    30.9   2024-01-03    6% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    35.3   2024-03-28   47% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    35.5   2024-03-28   39% ▇▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    30.8   2024-01-03    7% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    30.6   2024-01-03    6% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 35.1
+                        weighted average               = 34.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,10 +30,12 @@ prior                   pull toward the middle           50.0                 1%
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/microsoft/phi-2/blob/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md): Context length stated on the official model card.</sub>
+
 <pre>
 download       size  score
-4-bit q4_0   ~1.6GB   35.1
-4-bit fp16  ~5.56GB   35.1
+4-bit q4_0   ~1.6GB   34.9
+4-bit fp16  ~5.56GB   34.9
 </pre>
 
 ```sh

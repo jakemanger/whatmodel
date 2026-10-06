@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 111B params · tongyi-qianwen
 
-**score 43.0** ±2.4 · #265 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 43.0** ±2.4 · #271 of 411 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,6 +27,8 @@ prior                   pull toward the middle                    50.0          
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
+
+<sub>[context source](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/85f86cec25901f2dbd870a86e06756903c9a876a/README.md): Context length stated on the official model card.</sub>
 
 <pre>
 download          size  score

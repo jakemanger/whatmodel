@@ -6,7 +6,7 @@
 
 IBM · released 2026-03 · 2.31B params · apache-2.0
 
-**score 64.6** ±2.9 · #6 of 112 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 64.3** ±2.9 · #8 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-4.0-1b-speech.json">LibriSpeech test-clean WER</a>       1.4%    64.0   2026-09-15   52% ▇▇▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.5%    66.3   2026-03-26   45% ▇▇▇▇▇
-prior                   pull toward the middle                   49.6                 3% ▇
-                        weighted average                       = 64.6
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/granite-4.0-1b-speech.json">LibriSpeech test-clean WER</a>       1.4%    63.7   2026-09-15   52% ▇▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.5%    66.1   2026-03-26   45% ▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 64.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +30,8 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.04GB   64.6
-bf16 · mac only     ~6.04GB   64.6
+bf16 · nvidia only  ~6.04GB   64.3
+bf16 · mac only     ~6.04GB   64.3
 </pre>
 
 ```sh

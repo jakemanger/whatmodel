@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 0.33B params · apache-2.0
 
-**score 34.2** ±4.4 · #96 of 112 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.1** ±4.4 · #97 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>       14.9%    32.3   2026-03-26   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  46.7%    38.4   2025-11-13   10% ▇
-prior                   pull toward the middle                   49.6                 8% ▇
-                        weighted average                       = 34.2
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>       14.9%    32.2   2026-03-26   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  46.7%    38.3   2025-11-13   10% ▇
+prior                   pull toward the middle                   49.7                 7% ▇
+                        weighted average                       = 34.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version    needs  score
-bf16     ~1.29GB   34.2
+bf16     ~1.29GB   34.1
 </pre>
 
 ```sh

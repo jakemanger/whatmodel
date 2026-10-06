@@ -4,7 +4,7 @@
 
 # Kling Image O1
 
-Kuaishou (Kling AI) · closed weights
+Kuaishou (Kling AI) · released 2025-12 · closed weights
 
 **score 59.9** ±3.5 · #38 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

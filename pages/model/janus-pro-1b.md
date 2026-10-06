@@ -4,7 +4,7 @@
 
 # Janus-Pro-1B
 
-DeepSeek · released 2025-01 · deepseek
+DeepSeek · released 2025-01 · 1.5B params · deepseek
 
 **score 26.6** ±4.7 · #111 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

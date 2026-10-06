@@ -4,7 +4,7 @@
 
 # MAI-Image-2.5
 
-Microsoft AI · proprietary
+Microsoft AI · released 2026-06 · proprietary
 
 **score 72.9** ±1.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

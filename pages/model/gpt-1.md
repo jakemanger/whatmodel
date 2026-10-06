@@ -14,6 +14,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+<sub>[context source](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+
 ```sh
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```

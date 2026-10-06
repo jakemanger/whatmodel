@@ -4,7 +4,7 @@
 
 # SeedEdit 3.0
 
-ByteDance Seed · closed weights
+ByteDance Seed · released 2025-06 · closed weights
 
 **score 51.1** ±3.0 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

@@ -7646,7 +7646,10 @@
       "price_source": "https://aws.amazon.com/nova/pricing",
       "price_note": "USD per 1M tokens: text input and text output, Amazon Bedrock Standard tier, geo cross-Region inference and in-Region, Amazon Nova 2 Omni (Preview). Audio input and image output are priced differently; global cross-Region inference is listed lower. Page table values are rendered from AWS's own price data file for the page (b0.p.awsstatic.com meteredUnitMaps, bedrock USD, published 2026-09-25T06:55:02Z); US East (N. Virginia) selected. Priority/Flex/Batch tiers, cached tokens and non-text modalities excluded. Currency: USD. AWS official Amazon Nova pricing page, observed 2026-09-25."
     },
-    "local": null
+    "local": null,
+    "context_k": 1000,
+    "context_source": "https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-nova-2-omni-preview",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "nova-premier",
@@ -10670,7 +10673,9 @@
       "unit": "1M-chars",
       "price_source": "https://deepgram.com/pricing",
       "price_note": "USD per 1M input characters: Deepgram lists Aura-2 text-to-speech at $0.030 per 1k characters, pay as you go (x1000); Growth plan $0.027 per 1k. Product: Deepgram TTS API. API model: aura-2. Settings: pay-as-you-go. Price basis: published list rate. Exclusions: Growth-plan prepay discount. Currency: USD. Deepgram official pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2025-04",
+    "released_source": "https://deepgram.com/learn/introducing-aura-2-enterprise-text-to-speech"
   },
   {
     "id": "kyutai-tts-1-6b-en-fr",
@@ -10781,7 +10786,9 @@
     "identity_note": "Source product model seed-tts-2.0-standard; voice configured default Chinese voice. June 2026 invocation. Do not map Azure Neural to Azure HD or Polly Neural to Polly Generative.",
     "identity_sources": [
       "https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/configs/public/site_metadata.json"
-    ]
+    ],
+    "released": "2025-09",
+    "released_source": "https://www.volcengine.com/docs/6561/2668039"
   },
   {
     "id": "azure-neural-tts-xiaoxiao",
@@ -10828,7 +10835,9 @@
     "identity_note": "Source product model mimo-v2.5-tts; voice 白桦. June 2026 invocation. Do not map Azure Neural to Azure HD or Polly Neural to Polly Generative.",
     "identity_sources": [
       "https://github.com/Jayden-X-L/cn-news-tts-bench/blob/5cd2dcf0896f2391b877317221892a24066588bb/configs/public/site_metadata.json"
-    ]
+    ],
+    "released": "2026-04",
+    "released_source": "https://mimo.mi.com/docs/en-US/updates/model"
   },
   {
     "id": "amazon-polly-neural",
@@ -11119,7 +11128,9 @@
       "unit": "video-second",
       "price_source": "https://platform.minimax.io/docs/guides/pricing-paygo.md",
       "price_note": "USD per second of output video, 768P, derived from MiniMax's pay-as-you-go price of $0.28 per 768P 6-second video (÷ 6). Product: MiniMax video generation (listed under Legacy Models). API model: MiniMax-Hailuo-02. Settings: resolution=768P, duration=6 s. 10-s 768P $0.56 ($0.056/s); 6-s 1080P $0.49; 6-s 512P $0.10. Currency: USD. MiniMax pay-as-you-go pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2025-06",
+    "released_source": "https://www.minimax.io/news/minimax-hailuo-02"
   },
   {
     "id": "pixverse-v5-5",
@@ -11140,7 +11151,9 @@
       "unit": "video-second",
       "price_source": "https://docs.platform.pixverse.ai/model-pricing-796039m0",
       "price_note": "USD per second of generated video, 720p, 5-second single clip, no audio. Product: PixVerse platform API text-to-video / image-to-video. API model: V5.5. Price basis: 60 credits per 5-s 720p clip × $0.005 per credit (pay-as-you-go credit purchase: $10 = 2,000 credits) ÷ 5 s. With audio: 70 credits per 5-s clip; multi-clip modes, 8-s and 10-s clips and membership credit rates differ. Currency: USD. PixVerse platform model pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2025-12",
+    "released_source": "https://docs.platform.pixverse.ai/changelogs-906383m0"
   },
   {
     "id": "wan-2-6",
@@ -11165,7 +11178,9 @@
       "unit": "video-second",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio Wan text-to-video. API model: wan2.6-t2v. Settings: resolution=720P. Price basis: published list price; only output is billed. 1080P $0.15/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2025-12",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "kandinsky-5-0-pro",
@@ -11340,7 +11355,9 @@
       "unit": "video-second",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per second of output video, 720P, International deployment (Singapore). Product: Model Studio Wan text-to-video. API model: wan2.5-t2v-preview. Settings: resolution=720P. Price basis: published list price; only output is billed. 480P $0.05/s, 1080P $0.15/s. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2025-09",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "happyhorse-1-1",
@@ -11376,7 +11393,9 @@
         "source": "https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard",
         "reported_label": "Vidu Q3"
       }
-    ]
+    ],
+    "released": "2026-01",
+    "released_source": "https://platform.vidu.com/docs/update"
   },
   {
     "id": "cosmos3-nano",
@@ -11418,7 +11437,9 @@
       "unit": "video-second",
       "price_source": "https://replicate.com/prunaai/p-video",
       "price_note": "USD per second of output video, 720p standard (draft mode off). Product: Replicate model prunaai/p-video (Pruna's official model on Replicate). Price basis: Replicate per-output-second tariff (not hardware time). 720p draft $0.005/s; 1080p $0.04/s standard, $0.01/s draft. The page notes paid pricing resumes after an extended free launch period; the listed paid rate is recorded. Currency: USD. Replicate model page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-02",
+    "released_source": "https://www.pruna.ai/blog/p-video-fast-cheap-draft"
   },
   {
     "id": "wan-2-2-i2v-a14b",
@@ -11815,7 +11836,9 @@
     },
     "model_repo": "https://huggingface.co/facebook/mms-tts-amh",
     "license": "cc-by-nc-4.0",
-    "license_source": "https://huggingface.co/facebook/mms-tts-amh/blob/e366aee5e22a72b9a3333e081ddafb234538d9bb/README.md"
+    "license_source": "https://huggingface.co/facebook/mms-tts-amh/blob/e366aee5e22a72b9a3333e081ddafb234538d9bb/README.md",
+    "released": "2023-05",
+    "released_source": "https://ai.meta.com/blog/multilingual-model-speech-recognition/"
   },
   {
     "id": "elevenlabs-v3-alpha",
@@ -12150,7 +12173,8 @@
     },
     "model_repo": "https://huggingface.co/sesame/csm-1b",
     "license": "apache-2.0",
-    "license_source": "https://huggingface.co/sesame/csm-1b"
+    "license_source": "https://huggingface.co/sesame/csm-1b",
+    "params_note": "Maker size label (\"the 1B CSM variant\"). Sesame sizes CSM by backbone + decoder (\"Tiny: 1B backbone, 100M decoder\"), so 1B is the Llama backbone class; the audio decoder and the Mimi codec are not included, and the released checkpoint total is larger."
   },
   {
     "id": "orpheus-tts-0-1-finetune-prod",
@@ -12498,7 +12522,9 @@
       "unit": "audio-minute",
       "price_source": "https://azure.microsoft.com/en-us/pricing/details/speech",
       "price_note": "USD per input audio minute: Azure Speech lists MAI Transcribe-1.5 at $0.36 per hour (÷60), US East standard pay-as-you-go (Speech to Text, Standard Transcription). Unlike MAI Transcribe-2, it carries no promotional footnote. Product: Azure AI Speech speech to text. API model: MAI-Transcribe-1.5. Settings: S0 pay-as-you-go, region=us-east. Price basis: published list rate (price embedded in the official page's regional price data), per-hour to per-minute scaling only. Exclusions: add-ons, commitment tiers, US Gov regions ($0.45/hr). Currency: USD. Microsoft Azure official pricing page, observed 2026-09-25."
-    }
+    },
+    "released": "2026-06",
+    "released_source": "https://microsoft.ai/news/mai-transcribe-1-5more-accurate-context-aware-and-built-for-production/"
   },
   {
     "id": "sarvam-saarika-v2-5",
@@ -12509,7 +12535,9 @@
     "identity_sources": [
       "https://github.com/riverbornai/bangla-speech-to-text-benchmark/blob/cc73eb073b065bc4c7301672a2013c70d446450c/config.yaml"
     ],
-    "identity_note": "Exact Sarvam batch model 'saarika:v2.5' (language_code bn-IN) per benchmark config. Distinct from streaming saaras:v3-realtime."
+    "identity_note": "Exact Sarvam batch model 'saarika:v2.5' (language_code bn-IN) per benchmark config. Distinct from streaming saaras:v3-realtime.",
+    "released": "2025-05",
+    "released_source": "https://docs.sarvam.ai/changelog/2025/5/1"
   },
   {
     "id": "gpt-5-5-instant",
@@ -12613,7 +12641,9 @@
     ],
     "context_k": 200,
     "context_source": "https://docs.z.ai/guides/vlm/glm-5v-turbo.md",
-    "context_note": "Z.ai GLM-5V-Turbo model guide: Context Length 200K (stated rounded), Maximum Output Tokens 128K. Observed 2026-09-25."
+    "context_note": "Z.ai GLM-5V-Turbo model guide: Context Length 200K (stated rounded), Maximum Output Tokens 128K. Observed 2026-09-25.",
+    "released": "2026-04",
+    "released_source": "https://docs.bigmodel.cn/cn/update/new-releases"
   },
   {
     "id": "mimo-v2-omni",
@@ -12637,7 +12667,9 @@
     ],
     "context_k": 262.144,
     "context_source": "https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/xiaomi/mimo-v2-omni.toml",
-    "context_note": "models.dev (MIT, pinned commit a668908) MiMo-V2-Omni limit.context 262,144 tokens (output 131,072). Xiaomi's own docs no longer list the model (deprecated 2026-06-30). Observed 2026-09-25."
+    "context_note": "models.dev (MIT, pinned commit a668908) MiMo-V2-Omni limit.context 262,144 tokens (output 131,072). Xiaomi's own docs no longer list the model (deprecated 2026-06-30). Observed 2026-09-25.",
+    "released": "2026-03",
+    "released_source": "https://mimo.xiaomi.com/mimo-v2-omni"
   },
   {
     "id": "muse-spark",
@@ -12908,7 +12940,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "mai-image-2.5"
       }
-    ]
+    ],
+    "released": "2026-06",
+    "released_source": "https://microsoft.ai/news/introducing-mai-image-2-5/"
   },
   {
     "id": "reve-2-0",
@@ -12987,7 +13021,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "krea-2-large"
       }
-    ]
+    ],
+    "released": "2026-05",
+    "released_source": "https://www.krea.ai/release-notes/krea-2-is-here"
   },
   {
     "id": "krea-2-medium",
@@ -13012,7 +13048,9 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet",
         "reported_label": "krea-2-medium"
       }
-    ]
+    ],
+    "released": "2026-05",
+    "released_source": "https://www.krea.ai/release-notes/krea-2-is-here"
   },
   {
     "id": "krea-2-turbo",
@@ -13183,7 +13221,9 @@
       "unit": "image",
       "price_source": "https://bfl.ai/pricing",
       "price_note": "USD for a text-to-image output of up to 1 megapixel: BFL bills FLUX.2 [flex] at $0.05 per megapixel (first and each additional output megapixel $0.05; input-image megapixels for editing also $0.05 each); price = rate × 1 MP (BFL's rounding for 1024×1024 ≈ 1.05 MP is not stated). Matches the \"from $0.05\" text-to-image and editing figure in the BFL API docs. Product: BFL API. API model: flux-2-flex. Settings: output ≤1 MP, no input images, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-11",
+    "released_source": "https://bfl.ai/blog/flux-2"
   },
   {
     "id": "flux-1-kontext-max",
@@ -13212,7 +13252,9 @@
       "unit": "image",
       "price_source": "https://bfl.ai/pricing",
       "price_note": "USD per generated image, flat: BFL lists FLUX.1 Kontext [max] at $0.08 per image (8 credits at $0.01), for text-to-image and image editing alike. Product: BFL API. API model: flux-kontext-max. Settings: one image. Price basis: published per-image list rate. BFL's docs list FLUX.1 Kontext under \"Legacy Models\" / \"FLUX.1 Models (Previous Generation)\"; it is still sold and no end date is published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-05",
+    "released_source": "https://bfl.ai/blog/flux-1-kontext"
   },
   {
     "id": "flux-1-kontext-pro",
@@ -13241,7 +13283,9 @@
       "unit": "image",
       "price_source": "https://bfl.ai/pricing",
       "price_note": "USD per generated image, flat: BFL lists FLUX.1 Kontext [pro] at $0.04 per image (4 credits at $0.01), for text-to-image and image editing alike. Product: BFL API. API model: flux-kontext-pro. Settings: one image. Price basis: published per-image list rate. BFL's docs list FLUX.1 Kontext under \"Legacy Models\" / \"FLUX.1 Models (Previous Generation)\"; it is still sold and no end date is published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-05",
+    "released_source": "https://bfl.ai/blog/flux-1-kontext"
   },
   {
     "id": "flux-1-kontext-dev",
@@ -13308,7 +13352,10 @@
     },
     "model_repo": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev",
     "released": "2025-06",
-    "released_source": "https://bfl.ai/blog/flux-1-kontext-dev"
+    "released_source": "https://bfl.ai/blog/flux-1-kontext-dev",
+    "params_b": 12,
+    "params_b_source": "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/blob/24e9dedc4ef646698dc8eb4e18ae2cec3c9fea0d/README.md",
+    "params_note": "12B = the rectified flow transformer as Black Forest Labs states it on the card; the text encoders and VAE used by the pipeline are not included (same convention as flux-1-dev)."
   },
   {
     "id": "qwen-image-edit",
@@ -13496,7 +13543,9 @@
         "source": "https://arxiv.org/html/2512.02790v1#S6.T4",
         "reported_label": "SeedEdit 3.0 [35] (closed-source)"
       }
-    ]
+    ],
+    "released": "2025-06",
+    "released_source": "https://seed.bytedance.com/en/blog/bytedance-released-image-editing-model-seededit-3-0-enhanced-image-consistency-and-usability-rate"
   },
   {
     "id": "gemini-2-0-flash-image",
@@ -13735,7 +13784,9 @@
       "unit": "image",
       "price_source": "https://docs.byteplus.com/en/docs/ModelArk/1544106",
       "price_note": "USD per output image on BytePlus ModelArk; input images free; images not output (e.g. content moderation) are not billed; sequential generation billed per generated image. Product: BytePlus ModelArk image generation. API model: seedream-5-0-lite-260128. Settings: n=1. Price basis: published list rate. Currency: USD. BytePlus official pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-02",
+    "released_source": "https://seed.bytedance.com/en/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite"
   },
   {
     "id": "wan-2-7-image",
@@ -13874,7 +13925,9 @@
       "unit": "image",
       "price_source": "https://kling.ai/dev/pricing",
       "price_note": "USD per generated image, Kling Image O1 at 1K or 2K: Kling lists 8 Units ($0.028) per image for text-to-image and image-to-image (1 Unit = $0.0035 list price). Product: Kling Image Generation API. API model: Kling Image O1. Settings: resolution 1K/2K, one image. Price basis: 8 units × $0.0035 per unit; Kling prints $0.028. Prepaid resource packages. Currency: USD. Kling AI developer pricing page (price table embedded in the page's configuration data), observed 2026-09-26."
-    }
+    },
+    "released": "2025-12",
+    "released_source": "https://kling.ai/document-api/updates/api.md"
   },
   {
     "id": "mai-image-2",
@@ -14092,7 +14145,9 @@
         "organization": "bytedance",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-04",
+    "released_source": "https://seed.bytedance.com/en/blog/seedream-3-0-text-to-image-model-technical-report-released"
   },
   {
     "id": "imagen-3",
@@ -14178,7 +14233,9 @@
       "unit": "image",
       "price_source": "https://bfl.ai/pricing",
       "price_note": "USD per generated image, flat: BFL lists FLUX 1.1 [pro] at $0.04 per image (4 credits at $0.01); Ultra and Raw modes are $0.06. Product: BFL API. API model: flux-pro-1.1. Settings: standard mode (not Ultra/Raw), text-to-image, one image. Price basis: published per-image list rate. BFL's docs list FLUX1.1 [pro] under \"Legacy Models\" / \"FLUX.1 Models (Previous Generation)\"; still sold, no end date published. Currency: USD. Black Forest Labs official pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2024-10",
+    "released_source": "https://bfl.ai/blog/24-10-02-flux"
   },
   {
     "id": "ideogram-2",
@@ -14224,7 +14281,9 @@
       "unit": "image",
       "price_source": "https://replicate.com/leonardoai/lucid-origin",
       "price_note": "USD per output image, Standard generation mode, on Replicate's official model leonardoai/lucid-origin (billing table: Standard $0.0167 per output image, Ultra $0.0765 per output image; generation_mode defaults to standard; no hardware-time charge). Product: Replicate model API (Leonardo.Ai's Lucid Origin). API model: leonardoai/lucid-origin. Settings: generation_mode=standard, default aspect ratio 16:9, one image. Price basis: published per-output-image list rate. Leonardo's own API bills from a USD balance but its per-image rates are only in the logged-in pricing calculator (leonardo.ai pricing pages return a Cloudflare challenge). Currency: USD. Not a Leonardo.Ai direct tariff. Replicate official model page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-08",
+    "released_source": "https://leonardo.ai/news/lucid-origin-ai-image-model"
   },
   {
     "id": "dall-e-3",
@@ -14247,7 +14306,9 @@
         "source": "https://arxiv.org/html/2506.02161v3#S4.T3",
         "reported_label": "DALLE-3"
       }
-    ]
+    ],
+    "released": "2023-10",
+    "released_source": "https://openai.com/index/dall-e-3-is-now-available-in-chatgpt-plus-and-enterprise/"
   },
   {
     "id": "veo-3-fast",
@@ -14326,7 +14387,9 @@
       "unit": "video-second",
       "price_source": "https://docs.byteplus.com/en/docs/ModelArk/1544106",
       "price_note": "USD per second of 720p video, derived from BytePlus's own price example for Seedance 1.0 Pro: a 720p 16:9 (1248×704) 24 fps 5-second video (102,960 tokens) costs $0.26 (÷ 5 = $0.052). Product: BytePlus ModelArk video generation (online inference). API model: seedance-1-0-pro-250528. Settings: resolution=720p, ratio=16:9, duration=5 s, no input video. Price basis: provider-printed per-video example; underlying billing is $2.5 per 1M video tokens (offline inference $1.25), and BytePlus labels the examples as estimates (actual tokens per usage.completion_tokens). Other examples: 10-s 720p 16:9 $0.51; 5-s 480p $0.12; 5-s 1080p $0.61. Only successfully generated videos are billed. Currency: USD. BytePlus official pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-06",
+    "released_source": "https://seed.bytedance.com/en/blog/tech-report-of-seedance-1-0-is-now-publicly-available"
   },
   {
     "id": "seedance-1-0-lite",
@@ -14467,7 +14530,9 @@
         "source": "https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-",
         "reported_label": "Luma Ray2"
       }
-    ]
+    ],
+    "released": "2025-01",
+    "released_source": "https://lumalabs.ai/changelog/introducing-ray2"
   },
   {
     "id": "kling-2-1-standard",
@@ -14513,7 +14578,9 @@
       "unit": "video-second",
       "price_source": "https://fal.ai/models/fal-ai/vidu/q2/image-to-video/turbo",
       "price_note": "USD per second of generated video at 720p on fal.ai: fal states 'For 720p each video second will cost $0.05' (1080p: $0.20 per request plus $0.05 per video second). Product: fal Vidu Q2 Turbo image-to-video endpoint. API model: fal-ai/vidu/q2/image-to-video/turbo. Settings: resolution=720p, image-to-video. Price basis: per-second rate printed by fal. Vidu's own API prices Q2-turbo 720P per task (starts at $0.04, $0.05 at 2 s, then +$0.05/s), which has no single per-second figure. Currency: USD. Not a Vidu direct tariff. fal.ai model page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-09",
+    "released_source": "https://platform.vidu.com/docs/update"
   },
   {
     "id": "vidu-q2-pro",
@@ -14528,7 +14595,9 @@
         "organization": "shengshu",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-09",
+    "released_source": "https://platform.vidu.com/docs/update"
   },
   {
     "id": "runway-gen-4-turbo",
@@ -14551,7 +14620,9 @@
       "unit": "video-second",
       "price_source": "https://docs.dev.runwayml.com/guides/pricing",
       "price_note": "USD per second of generated video: Runway lists gen4_turbo at 5 credits per second; credits cost $0.01 each. Runway states one per-second rate for the model (no resolution tiers are listed). Product: Runway developer API video generation (image-to-video; gen4_turbo takes an image input). API model: gen4_turbo. Settings: standard mp4 output. Price basis: 5 credits × $0.01 per credit; sales tax excluded. Currency: USD. Runway official API pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2025-04",
+    "released_source": "https://runwayml.com/changelog"
   },
   {
     "id": "kling-o3-pro",
@@ -14589,7 +14660,9 @@
         "organization": "runway",
         "arena_license_column": "Proprietary"
       }
-    ]
+    ],
+    "released": "2025-07",
+    "released_source": "https://runwayml.com/research/introducing-runway-aleph"
   },
   {
     "id": "hidream-i1-full",
@@ -14640,7 +14713,10 @@
     "released": "2025-06",
     "released_source": "https://github.com/showlab/Show-o/blob/45a5a2de01d1ebd10cd5864d29310a76476cdf23/README.md",
     "license": "apache-2.0",
-    "license_source": "https://huggingface.co/showlab/show-o2-7B/blob/3012b1d6aee8b57829b23d02cba9190ef5cc3361/README.md"
+    "license_source": "https://huggingface.co/showlab/show-o2-7B/blob/3012b1d6aee8b57829b23d02cba9190ef5cc3361/README.md",
+    "params_b": 7,
+    "params_b_source": "https://arxiv.org/abs/2506.15564v3",
+    "params_note": "7B = the language-model backbone (Qwen2.5-7B-Instruct) as the makers state it ('7B LLM parameters'); the flow head, spatial(-temporal) fusion/projector layers and the external Wan2.1 3D causal VAE are not included, and no total is published."
   },
   {
     "id": "show-o2-1-5b-hq",
@@ -14656,7 +14732,12 @@
     ],
     "model_repo": "https://huggingface.co/showlab/show-o2-1.5B-HQ",
     "license": "apache-2.0",
-    "license_source": "https://huggingface.co/showlab/show-o2-1.5B-HQ/blob/d3a220ec55feaacbdfcb053847edee14edd4e69a/README.md"
+    "license_source": "https://huggingface.co/showlab/show-o2-1.5B-HQ/blob/d3a220ec55feaacbdfcb053847edee14edd4e69a/README.md",
+    "released": "2025-06",
+    "released_source": "https://github.com/showlab/Show-o/blob/595770eb85d65addf25f3daca49710cd33513ed4/show-o2/README.md",
+    "params_b": 1.5,
+    "params_b_source": "https://arxiv.org/abs/2506.15564v3",
+    "params_note": "1.5B = the language-model backbone (Qwen2.5-1.5B-Instruct) of the small Show-o2 variant, 'approximately 1.5B LLM parameters' per the makers; the HQ checkpoint is that model further trained at 512/1024 resolution. Flow head, fusion/projector layers and the external Wan2.1 3D causal VAE are not included; no total is published."
   },
   {
     "id": "blip3o-next-grpo-text-3b",
@@ -14695,7 +14776,10 @@
     ],
     "model_repo": "https://huggingface.co/BLIP3o/BLIP3o-Model-8B",
     "license": "apache-2.0",
-    "license_source": "https://huggingface.co/BLIP3o/BLIP3o-Model-8B/blob/c2edfc20814d4624c8d73ca3de351ebc3fa86508/README.md"
+    "license_source": "https://huggingface.co/BLIP3o/BLIP3o-Model-8B/blob/c2edfc20814d4624c8d73ca3de351ebc3fa86508/README.md",
+    "released": "2025-05",
+    "released_source": "https://arxiv.org/abs/2505.09568v1",
+    "params_note": "Maker's rounded size label for the whole BLIP3-o 8B model: a frozen Qwen2.5-VL-7B-Instruct backbone plus diffusion transformers totalling 1.4B trainable parameters (no exact total is published). The released weights are the 8B model retrained on open-source data only."
   },
   {
     "id": "emu3",
@@ -14849,7 +14933,8 @@
       }
     ],
     "license": "apache-2.0",
-    "license_source": "https://huggingface.co/showlab/show-o-512x512/blob/dbe757d951099968fb102d249d35a764528df2dd/README.md"
+    "license_source": "https://huggingface.co/showlab/show-o-512x512/blob/dbe757d951099968fb102d249d35a764528df2dd/README.md",
+    "params_note": "1.3B = the Show-o transformer (Phi-1.5 1.3B base) as the makers state it; the separate MAGVIT-v2 image tokenizer (showlab/magvitv2) is not included. The 512x512 checkpoint is the same network trained further at higher resolution."
   },
   {
     "id": "janus-pro-7b",
@@ -14879,7 +14964,10 @@
     "released": "2025-01",
     "released_source": "https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md",
     "license": "deepseek",
-    "license_source": "https://huggingface.co/deepseek-ai/Janus-Pro-7B/blob/5c3eb3fb2a3b61094328465ba61fcd4272090d67/README.md"
+    "license_source": "https://huggingface.co/deepseek-ai/Janus-Pro-7B/blob/5c3eb3fb2a3b61094328465ba61fcd4272090d67/README.md",
+    "params_b": 7,
+    "params_b_source": "https://arxiv.org/abs/2501.17811v1",
+    "params_note": "7B = LLM parameters (DeepSeek-LLM 7B base) as DeepSeek's Janus-Pro report lists them; the SigLIP-Large understanding encoder, the VQ generation tokenizer and the adaptors/heads are not included."
   },
   {
     "id": "lumina-image-2",
@@ -14962,7 +15050,9 @@
         "source": "https://arxiv.org/html/2506.02161v3#S4.T3",
         "reported_label": "MidJourney v7"
       }
-    ]
+    ],
+    "released": "2025-04",
+    "released_source": "https://updates.midjourney.com/v7-alpha/"
   },
   {
     "id": "pixart-alpha",
@@ -15009,7 +15099,10 @@
     "released": "2025-01",
     "released_source": "https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md",
     "license": "deepseek",
-    "license_source": "https://huggingface.co/deepseek-ai/Janus-Pro-1B/blob/960ab33191f61342a4c60ae74d8dc356a39fafcb/README.md"
+    "license_source": "https://huggingface.co/deepseek-ai/Janus-Pro-1B/blob/960ab33191f61342a4c60ae74d8dc356a39fafcb/README.md",
+    "params_b": 1.5,
+    "params_b_source": "https://arxiv.org/abs/2501.17811v1",
+    "params_note": "1.5B = LLM parameters (DeepSeek-LLM 1.5B base) as DeepSeek's Janus-Pro report lists them for Janus-Pro-1B (the name says 1B); the SigLIP-Large understanding encoder, VQ generation tokenizer and adaptors/heads are not included."
   },
   {
     "id": "janus-1-3b",
@@ -15025,7 +15118,10 @@
     ],
     "model_repo": "https://huggingface.co/deepseek-ai/Janus-1.3B",
     "license": "deepseek",
-    "license_source": "https://huggingface.co/deepseek-ai/Janus-1.3B/blob/56c70f4d34ca802c96254aea598b7d8e58e73840/README.md"
+    "license_source": "https://huggingface.co/deepseek-ai/Janus-1.3B/blob/56c70f4d34ca802c96254aea598b7d8e58e73840/README.md",
+    "released": "2024-10",
+    "released_source": "https://github.com/deepseek-ai/Janus/blob/1daa72fa409002d40931bd7b36a9280362469ead/README.md",
+    "params_note": "1.3B = LLM parameters (DeepSeek-LLM 1.3B base) as the Janus paper and card state them; vision encoder, VQ tokenizer and adaptors are not included. DeepSeek's later Janus-Pro report lists Janus at 1.5B LLM parameters instead."
   },
   {
     "id": "vila-u-7b-256",
@@ -15121,7 +15217,9 @@
         "reported_label": "CogVideoX1.5-5B [17]"
       }
     ],
-    "model_repo": "https://huggingface.co/zai-org/CogVideoX1.5-5B"
+    "model_repo": "https://huggingface.co/zai-org/CogVideoX1.5-5B",
+    "license": "cogvideox",
+    "license_source": "https://huggingface.co/zai-org/CogVideoX1.5-5B/blob/fdc5267c90b5c06492985b966e43aae984e189e0/README.md"
   },
   {
     "id": "ltx-2-3",
@@ -15161,7 +15259,9 @@
     "model_repo": "https://huggingface.co/Lightricks/LTX-2.3",
     "params_b": 22,
     "params_b_source": "https://ltx.io/llm-info",
-    "params_note": "Maker's own site. Consistent with checkpoint names on the official card (https://huggingface.co/Lightricks/LTX-2.3/blob/3c6a4e66e5d0a684231950b9c74dd4ded7b6fadc/README.md): 'ltx-2.3-22b-dev', 'ltx-2.3-22b-distilled'. Covers the audio-video DiT (text encoder separate)."
+    "params_note": "Maker's own site. Consistent with checkpoint names on the official card (https://huggingface.co/Lightricks/LTX-2.3/blob/3c6a4e66e5d0a684231950b9c74dd4ded7b6fadc/README.md): 'ltx-2.3-22b-dev', 'ltx-2.3-22b-distilled'. Covers the audio-video DiT (text encoder separate).",
+    "license": "ltx-2-community",
+    "license_source": "https://huggingface.co/Lightricks/LTX-2.3/blob/3c6a4e66e5d0a684231950b9c74dd4ded7b6fadc/README.md"
   },
   {
     "id": "ltx-2-19b-distilled",
@@ -15501,7 +15601,9 @@
       "unit": "video-second",
       "price_source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "price_note": "USD per second of output video, 720P silent video (audio=false), International deployment (Singapore). Product: Model Studio Wan image-to-video (first frame). API model: wan2.6-i2v-flash (Model Studio's only Wan 2.6 Flash video model). Settings: resolution=720P, audio=false. Price basis: published list price; only output is billed. With audio (audio=true) 720P $0.05/s; 1080P $0.0375/s silent, $0.075/s with audio. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-09-26."
-    }
+    },
+    "released": "2026-01",
+    "released_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
   },
   {
     "id": "wan-2-1-1-3b",
@@ -15669,7 +15771,12 @@
     },
     "model_repo": "https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev",
     "released": "2025-07",
-    "released_source": "https://bfl.ai/announcements/flux-1-krea-dev"
+    "released_source": "https://bfl.ai/announcements/flux-1-krea-dev",
+    "license": "flux-dev-nc",
+    "license_source": "https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev/blob/8162a9c7b05a641be098422bf2fcf335615c2f28/LICENSE.md",
+    "params_b": 12,
+    "params_b_source": "https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev/blob/8162a9c7b05a641be098422bf2fcf335615c2f28/README.md",
+    "params_note": "12B = the rectified flow transformer as Black Forest Labs states it on the card; the text encoders and VAE used by the pipeline are not included (same convention as flux-1-dev)."
   },
   {
     "id": "hunyuanimage-2-1",
@@ -15841,7 +15948,10 @@
         "source": "https://github.com/eth-sri/matharena/blob/b89f2f0ad64ced464d2944f08c3c0aaeaa0df64b/configs/models/xai/grok-41-fast-reasoning.yaml",
         "reported_label": "grok-4-1-fast-reasoning"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "recovered_original": false,
@@ -18311,7 +18421,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "gpt-4o-2024-05-13"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4o",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-4o-2024-08-06",
@@ -18368,7 +18481,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "gpt-4o-2024-11-20"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://developers.openai.com/api/docs/models/gpt-4o",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-4o-mini-2024-07-18",
@@ -19304,7 +19420,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "gemma-2-9b-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2408.00118v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "gemma-2-27b",
@@ -19346,7 +19465,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "gemma-2-27b-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2408.00118v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "llama-2-7b-chat",
@@ -19388,7 +19510,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "llama-2-7b-chat"
       }
-    ]
+    ],
+    "context_k": 4,
+    "context_source": "https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md",
+    "context_note": "Context length from the maker's official repository."
   },
   {
     "id": "llama-2-13b-chat",
@@ -19430,7 +19555,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "Llama-2-13b-chat"
       }
-    ]
+    ],
+    "context_k": 4,
+    "context_source": "https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md",
+    "context_note": "Context length from the maker's official repository."
   },
   {
     "id": "llama-2-70b-chat",
@@ -19472,7 +19600,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "Llama-2-70b-chat-hf"
       }
-    ]
+    ],
+    "context_k": 4,
+    "context_source": "https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md",
+    "context_note": "Context length from the maker's official repository."
   },
   {
     "id": "llama-3-8b",
@@ -19514,7 +19645,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "Meta-Llama-3-8B-Instruct"
       }
-    ]
+    ],
+    "context_k": 8,
+    "context_source": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "llama-3-70b",
@@ -19556,7 +19690,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "Meta-Llama-3-70B-Instruct"
       }
-    ]
+    ],
+    "context_k": 8,
+    "context_source": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct/blob/50fd307e57011801c7833c87efa1984ddf2db42f/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "llama-3-2-90b-vision",
@@ -19598,7 +19735,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "Llama-3.2-90B-Vision-Instruct"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct/blob/e305d2a43a4adc6987308fe7d896fb8ec5f1a5d8/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "hermes-2-theta-llama-3-70b",
@@ -19711,7 +19851,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "Mistral-7B-Instruct-v0.3"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://docs.mistral.ai/models/mistral-7b-0-3",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "mixtral-8x7b-instruct-v0-1",
@@ -19760,7 +19903,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "Mixtral-8x7B-Instruct-v0.1"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "mistral-nemo-instruct-2407",
@@ -19809,7 +19955,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "open-mistral-nemo-2407"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/blob/04d8a90549d23fc6bd7f642064003592df51e9b3/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "mistral-large-2402",
@@ -19873,7 +20022,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "mistral-large-2407"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407/blob/a286006d554cb37a61d13c7ae61bc90cc1d372fc/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "ministral-3b-2410",
@@ -19931,7 +20083,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "ministral-8b-2410"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "mistral-small-3",
@@ -19977,7 +20132,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
         "reported_label": "mistral-small-2501"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501/blob/9527884be6e5616bdd54de542f9ae13384489724/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "mistral-small-3-1",
@@ -20023,7 +20181,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#math_level_5.csv",
         "reported_label": "mistral-small-2503"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/68faf511d618ef198fef186659617cfd2eb8e33a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "mistral-medium-2505",
@@ -20129,7 +20290,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "qwen1.5-72b-chat"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat/blob/a9435b56d61aa68714fd7b83d6cc3e698a42c8ba/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen1-5-32b-chat",
@@ -20171,7 +20335,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "qwen1.5-32b-chat"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-32B-Chat/blob/0997b012af6ddd5465d40465a8415535b2f06cfc/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen2-72b",
@@ -20277,7 +20444,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "qwen-plus-2025-01-25"
       }
-    ]
+    ],
+    "context_k": 131.072,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/qwen-plus",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "qwq-32b",
@@ -20443,7 +20613,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "qwen3-4b"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen3-max-2025-09-23",
@@ -20469,7 +20642,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "qwen3-max-2025-09-23"
       }
-    ]
+    ],
+    "context_k": 262.144,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/model-qwen3-max",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "qwen3-5-plus",
@@ -20690,7 +20866,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "Yi-34B-Chat"
       }
-    ]
+    ],
+    "context_k": 4,
+    "context_source": "https://huggingface.co/01-ai/Yi-34B-Chat/blob/cf02cb50f2a03dead2fe205766a1c5598a90bf80/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "yi-1-5-34b-chat",
@@ -20774,7 +20953,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "deepseek-llm-67b-chat"
       }
-    ]
+    ],
+    "context_k": 4.096,
+    "context_source": "https://github.com/deepseek-ai/DeepSeek-LLM/blob/6712a86bfb7dd25c73383c5ad2eb7a8db540258b/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "dbrx-instruct",
@@ -20899,7 +21081,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
         "reported_label": "Phi-3-medium-128k-instruct"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct/blob/a088b37c71d441ab6d862bb3fcfe6165b3014702/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "eurus-2-7b-prime",
@@ -20970,7 +21155,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "granite-4.0-1b"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/ibm-granite/granite-4.0-1b/blob/6a7381ba1f54d684ff508d991aeb7dc580157103/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "granite-4-0-350m",
@@ -21005,7 +21193,10 @@
         "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
         "reported_label": "granite-4.0-350m"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/ibm-granite/granite-4.0-350m/blob/bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "sd-1-1",
@@ -21496,7 +21687,10 @@
       }
     ],
     "identity_note": "microsoft/vq-diffusion-ithq; released month = Hugging Face release. Comparison-only: VQDiffusionPipeline is deprecated upstream and no memory figure is published.",
-    "model_repo": "https://huggingface.co/microsoft/vq-diffusion-ithq"
+    "model_repo": "https://huggingface.co/microsoft/vq-diffusion-ithq",
+    "params_b": 1.27,
+    "params_b_source": "https://arxiv.org/abs/2205.16007v2",
+    "params_note": "1.27B = the Improved VQ-Diffusion-L backbone that the makers trained on ITHQ-200M (the released ITHQ checkpoint); not stated whether the VQ-VAE and the CLIP text encoder are included."
   },
   {
     "id": "glide-filtered",
@@ -21516,7 +21710,10 @@
       }
     ],
     "identity_note": "openai/glide-text2im small filtered-data model. Comparison-only: the official code runs from notebooks, with no single command or published memory figure.",
-    "model_repo": "https://github.com/openai/glide-text2im"
+    "model_repo": "https://github.com/openai/glide-text2im",
+    "params_b": 0.3,
+    "params_b_source": "https://arxiv.org/abs/2112.10741v3",
+    "params_note": "300M = the GLIDE (filtered) base 64x64 text-conditional diffusion model as OpenAI states it; the separately released small filtered upsampler (no count given) is not included. Not the 3.5B unreleased full GLIDE."
   },
   {
     "id": "playground-v2",
@@ -22667,7 +22864,10 @@
         "note": "VideoGenHub arena infermodels/pyramid_flow.py: rain1011/pyramid-flow-sd3, model_variant diffusion_transformer_768p, 1280x768 (file unchanged since 2024-10-19)"
       }
     ],
-    "model_repo": "https://huggingface.co/rain1011/pyramid-flow-sd3"
+    "model_repo": "https://huggingface.co/rain1011/pyramid-flow-sd3",
+    "params_b": 2,
+    "params_b_source": "https://arxiv.org/abs/2410.05954v1",
+    "params_note": "2B = the SD3-Medium-based MM-DiT (24 layers) as the makers state it; the T5 and CLIP text encoders and the 3D VAE are not included."
   },
   {
     "id": "runway-gen-2",
@@ -22926,7 +23126,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/openai-community/openai-gpt",
-    "identity_note": "The original 12-layer, 512-token-context GPT (Radford et al. 2018), as hosted in openai-community/openai-gpt. Size from OpenAI's GPT-2 paper (117M; same as the smallest GPT-2 configuration)."
+    "identity_note": "The original 12-layer, 512-token-context GPT (Radford et al. 2018), as hosted in openai-community/openai-gpt. Size from OpenAI's GPT-2 paper (117M; same as the smallest GPT-2 configuration).",
+    "context_k": 0.512,
+    "context_source": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-2-small",
@@ -22951,7 +23154,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/openai-community/gpt2",
-    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2 (formerly the root-namespace 'gpt2' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2 (formerly the root-namespace 'gpt2' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README.",
+    "context_k": 1.024,
+    "context_source": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-2-medium",
@@ -22976,7 +23182,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/openai-community/gpt2-medium",
-    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-medium (formerly the root-namespace 'gpt2-medium' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-medium (formerly the root-namespace 'gpt2-medium' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README.",
+    "context_k": 1.024,
+    "context_source": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-2-large",
@@ -23001,7 +23210,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/openai-community/gpt2-large",
-    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-large (formerly the root-namespace 'gpt2-large' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-large (formerly the root-namespace 'gpt2-large' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README.",
+    "context_k": 1.024,
+    "context_source": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-2-xl",
@@ -23026,7 +23238,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/openai-community/gpt2-xl",
-    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-xl (formerly the root-namespace 'gpt2-xl' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README."
+    "identity_note": "OpenAI's released GPT-2 checkpoint as hosted at openai-community/gpt2-xl (formerly the root-namespace 'gpt2-xl' repo). Base (pretrained) model; parameter count as corrected in openai/gpt-2 README.",
+    "context_k": 1.024,
+    "context_source": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "gpt-3-ada",
@@ -23183,7 +23398,10 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/EleutherAI/gpt-j-6b"
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-j-6b",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "gpt-neox-20b",
@@ -23207,7 +23425,10 @@
         }
       ]
     },
-    "model_repo": "https://huggingface.co/EleutherAI/gpt-neox-20b"
+    "model_repo": "https://huggingface.co/EleutherAI/gpt-neox-20b",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/EleutherAI/gpt-neox-20b/blob/c292233c833e336628618a88a648727eb3dff0a7/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-70m",
@@ -23232,7 +23453,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-70m",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-160m",
@@ -23257,7 +23481,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-160m",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-410m",
@@ -23282,7 +23509,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-410m",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-1b",
@@ -23307,7 +23537,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-1b",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-1-4b",
@@ -23332,7 +23565,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-1.4b",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-2-8b",
@@ -23357,7 +23593,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-2.8b",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-6-9b",
@@ -23382,7 +23621,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-6.9b",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "pythia-12b",
@@ -23407,7 +23649,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/EleutherAI/pythia-12b",
-    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card."
+    "identity_note": "Final (step 143000) checkpoint of the standard (non-deduplicated) Pythia model, repo main branch. Total parameter count from the Pythia model card.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2304.01373v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-125m",
@@ -23432,7 +23677,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-125m",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-350m",
@@ -23457,7 +23705,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-350m",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-1-3b",
@@ -23482,7 +23733,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-1.3b",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-2-7b",
@@ -23507,7 +23761,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-2.7b",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-6-7b",
@@ -23532,7 +23789,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-6.7b",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-13b",
@@ -23557,7 +23817,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-13b",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-30b",
@@ -23582,7 +23845,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-30b",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "opt-66b",
@@ -23607,7 +23873,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/facebook/opt-66b",
-    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence)."
+    "identity_note": "Meta's Open Pre-trained Transformer base model as released on Hugging Face (weights under Meta's non-commercial OPT licence).",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2205.01068v4",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "llama-7b",
@@ -23688,7 +23957,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
-    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model."
+    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model.",
+    "context_k": 4,
+    "context_source": "https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md",
+    "context_note": "Context length from the maker's official repository."
   },
   {
     "id": "llama-2-13b",
@@ -23713,7 +23985,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/meta-llama/Llama-2-13b-hf",
-    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model."
+    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model.",
+    "context_k": 4,
+    "context_source": "https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md",
+    "context_note": "Context length from the maker's official repository."
   },
   {
     "id": "llama-2-70b",
@@ -23738,7 +24013,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/meta-llama/Llama-2-70b-hf",
-    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model."
+    "identity_note": "Pretrained (not chat) Llama 2 checkpoint; the chat models are separate identities (llama-2-*-chat). Ollama 'text' tags are the pretrained model.",
+    "context_k": 4,
+    "context_source": "https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md",
+    "context_note": "Context length from the maker's official repository."
   },
   {
     "id": "mistral-7b-v0-1",
@@ -23763,7 +24041,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
-    "identity_note": "Pretrained Mistral-7B-v0.1 base model; not Mistral 7B Instruct and not v0.2/v0.3."
+    "identity_note": "Pretrained Mistral-7B-v0.1 base model; not Mistral 7B Instruct and not v0.2/v0.3.",
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2310.06825v1",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "bloom-560m",
@@ -23788,7 +24069,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/bigscience/bloom-560m",
-    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/bigscience/bloom-560m/blob/ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "bloom-1b1",
@@ -23813,7 +24097,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/bigscience/bloom-1b1",
-    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/bigscience/bloom-1b1/blob/eb3dd7399312f5f94fd13f41d2f318117d3eb1e4/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "bloom-1b7",
@@ -23838,7 +24125,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/bigscience/bloom-1b7",
-    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/bigscience/bloom-1b7/blob/cc72a88036c2fb937d65efeacc57a0c2ef5d6fe5/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "bloom-3b",
@@ -23863,7 +24153,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/bigscience/bloom-3b",
-    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/bigscience/bloom-3b/blob/52bc5b43010b4844513826b8be3f78c7344c37d7/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "bloom-7b1",
@@ -23888,7 +24181,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/bigscience/bloom-7b1",
-    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/bigscience/bloom-7b1/blob/6232703e399354503377bf59dfbb8397fd569e4a/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "bloom",
@@ -23913,7 +24209,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/bigscience/bloom",
-    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ)."
+    "identity_note": "BigScience BLOOM pretrained base model (not BLOOMZ).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/bigscience/bloom/blob/7f10a99ce7c08f03c7719a586cb2cbda1433ac05/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "t5-small",
@@ -24138,7 +24437,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/allenai/OLMo-1B-hf",
-    "identity_note": "OLMo 1B (Feb 2024, 3T tokens), main checkpoint of allenai/OLMo-1B; the -hf repo is AI2's Transformers-format conversion of the same weights."
+    "identity_note": "OLMo 1B (Feb 2024, 3T tokens), main checkpoint of allenai/OLMo-1B; the -hf repo is AI2's Transformers-format conversion of the same weights.",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/allenai/OLMo-1B-hf/blob/aee7752d9c08ee4775e9b0091426d8410e8f6a89/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "olmo-7b",
@@ -24163,7 +24465,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/allenai/OLMo-7B-hf",
-    "identity_note": "OLMo 7B (Feb 2024), main (annealed, ~2.46T-token) checkpoint of allenai/OLMo-7B; the -hf repo is AI2's Transformers-format conversion of the same weights. Not OLMo-7B-0424/0724 or OLMo 2."
+    "identity_note": "OLMo 7B (Feb 2024), main (annealed, ~2.46T-token) checkpoint of allenai/OLMo-7B; the -hf repo is AI2's Transformers-format conversion of the same weights. Not OLMo-7B-0424/0724 or OLMo 2.",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/allenai/OLMo-7B-hf/blob/11fb3186a2e4f681edea621fa8b4345147a9db6a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "olmo-7b-twin-2t",
@@ -24188,7 +24493,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf",
-    "identity_note": "OLMo 7B Twin 2T (trained on LUMI/AMD hardware to 2T tokens); the -hf repo is AI2's Transformers-format conversion."
+    "identity_note": "OLMo 7B Twin 2T (trained on LUMI/AMD hardware to 2T tokens); the -hf repo is AI2's Transformers-format conversion.",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/blob/838af31020e1ebe5d627c9888e090b1fe4d2576e/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "phi-1",
@@ -24213,7 +24521,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/microsoft/phi-1",
-    "identity_note": "Phi-1 1.3B Python code model (Gunasekar et al. 2023), base model."
+    "identity_note": "Phi-1 1.3B Python code model (Gunasekar et al. 2023), base model.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2306.11644v2",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "phi-1-5",
@@ -24238,7 +24549,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/microsoft/phi-1_5",
-    "identity_note": "Phi-1.5 1.3B base model (Li et al. 2023); not instruction-tuned. Not the unreleased phi-1.5-web variants."
+    "identity_note": "Phi-1.5 1.3B base model (Li et al. 2023); not instruction-tuned. Not the unreleased phi-1.5-web variants.",
+    "context_k": 2.048,
+    "context_source": "https://arxiv.org/abs/2309.05463v1",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "phi-2",
@@ -24270,7 +24584,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/microsoft/phi-2",
-    "identity_note": "Phi-2 2.7B base model (December 2023); not Phi-3."
+    "identity_note": "Phi-2 2.7B base model (December 2023); not Phi-3.",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/microsoft/phi-2/blob/810d367871c1d460086d9f82db8696f2e0a0fcd0/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "falcon-7b",
@@ -24302,7 +24619,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/tiiuae/falcon-7b",
-    "identity_note": "Pretrained Falcon-7B (not falcon-7b-instruct)."
+    "identity_note": "Pretrained Falcon-7B (not falcon-7b-instruct).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/tiiuae/falcon-7b/blob/ec89142b67d748a1865ea4451372db8313ada0d8/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "falcon-40b",
@@ -24334,7 +24654,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/tiiuae/falcon-40b",
-    "identity_note": "Pretrained Falcon-40B (not falcon-40b-instruct)."
+    "identity_note": "Pretrained Falcon-40B (not falcon-40b-instruct).",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/tiiuae/falcon-40b/blob/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "falcon-rw-1b",
@@ -24359,7 +24682,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/tiiuae/falcon-rw-1b",
-    "identity_note": "Falcon-RW-1B, 1.3B-parameter model trained on 350B tokens of RefinedWeb only (the phi-1.5 paper labels it 'Falcon-rw-1.3B')."
+    "identity_note": "Falcon-RW-1B, 1.3B-parameter model trained on 350B tokens of RefinedWeb only (the phi-1.5 paper labels it 'Falcon-rw-1.3B').",
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/tiiuae/falcon-rw-1b/blob/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "mpt-7b",
@@ -24398,7 +24724,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/stabilityai/stablelm-base-alpha-3b",
-    "identity_note": "First StableLM alpha base release (April 2023), not the -v2 re-release."
+    "identity_note": "First StableLM alpha base release (April 2023), not the -v2 re-release.",
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-base-alpha-3b/blob/819657db42861818efac86e8ca60f673fa912ef8/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "stablelm-base-alpha-7b",
@@ -24423,7 +24752,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/stabilityai/stablelm-base-alpha-7b",
-    "identity_note": "First StableLM alpha base release (April 2023), not the -v2 re-release."
+    "identity_note": "First StableLM alpha base release (April 2023), not the -v2 re-release.",
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-base-alpha-7b/blob/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "stablelm-3b-4e1t",
@@ -24448,7 +24780,10 @@
       ]
     },
     "model_repo": "https://huggingface.co/stabilityai/stablelm-3b-4e1t",
-    "identity_note": "3B base model trained on 1T tokens for 4 epochs; not StableLM Zephyr or StableLM 2."
+    "identity_note": "3B base model trained on 1T tokens for 4 epochs; not StableLM Zephyr or StableLM 2.",
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/stabilityai/stablelm-3b-4e1t/blob/fa4a6a92fca83c3b4223a3c9bf792887090ebfba/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "redpajama-incite-7b-base",
@@ -24997,7 +25332,8 @@
     "identity_sources": [
       "https://huggingface.co/amphion/Vevo/tree/7edf4640c400c20542aa39c45b63f60e6c7baba0"
     ],
-    "model_repo": "https://huggingface.co/amphion/Vevo"
+    "model_repo": "https://huggingface.co/amphion/Vevo",
+    "params_note": "OUR SUM of the maker-stated components on the official card for the Vevo-TTS path: PhoneToVq8192 AR transformer (740M) + Vq8192ToMels flow-matching transformer (330M) + Vocos-based vocoder (250M) = 1.32B. The vq8192 content-style tokenizer is not sized and is excluded. If a single stated figure is preferred, the AR model alone is 0.74."
   },
   {
     "id": "whisperspeech-v1-95-medium",
@@ -25473,7 +25809,10 @@
     "identity_sources": [
       "https://huggingface.co/openbmb/VoxCPM-0.5B/tree/b2e656f7524303fdaf84591c75bbb87203d7c98d"
     ],
-    "model_repo": "https://huggingface.co/openbmb/VoxCPM-0.5B"
+    "model_repo": "https://huggingface.co/openbmb/VoxCPM-0.5B",
+    "params_b": 0.5,
+    "params_b_source": "https://arxiv.org/abs/2509.24650v1",
+    "params_note": "Makers technical report (arXiv 2509.24650v1): \"a 0.5B-parameter configuration\" of the TSLM (MiniCPM-4-0.5B initialised) + RALM + LocEnc/LocDiT generative model; the official README lists it as Backbone Parameters 0.5B. Rounded maker figure; whether the AudioVAE is included is not stated."
   },
   {
     "id": "zipvoice",
@@ -26264,7 +26603,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "OpenAssistant-Pythia-12B"
       }
-    ]
+    ],
+    "released": "2023-04",
+    "released_source": "https://arxiv.org/abs/2304.07327v1"
   },
   {
     "id": "gpt4all-13b-snoozy",
@@ -26495,7 +26836,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "falcon-180b-chat"
       }
-    ]
+    ],
+    "context_k": 2.048,
+    "context_source": "https://huggingface.co/tiiuae/falcon-180B-chat/blob/6882299beda36df40e683c4478edfcc94f2cde5f/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "dolphin-2-2-1-mistral-7b",
@@ -26679,7 +27023,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "OpenChat-3.5"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "openchat-3-5-0106",
@@ -26725,7 +27072,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "OpenChat-3.5-0106"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/openchat/openchat-3.5-0106/blob/ff058fda49726ecf4ea53dc1635f917cdb8ba36b/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "starling-lm-7b-alpha",
@@ -27076,7 +27426,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "SmolLM2-1.7B-Instruct"
       }
-    ]
+    ],
+    "context_k": 8,
+    "context_source": "https://arxiv.org/abs/2502.02737v1",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "snowflake-arctic-instruct",
@@ -27480,7 +27833,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Qwen1.5-4B-Chat"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-4B-Chat/blob/a7a4d4945d28bac955554c9abd2f74a71ebbf22f/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen1-5-7b-chat",
@@ -27526,7 +27882,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Qwen1.5-7B-Chat"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-7B-Chat/blob/5f4f5e69ac7f1d508f8369e977de208b4803444b/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen1-5-14b-chat",
@@ -27572,7 +27931,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Qwen1.5-14B-Chat"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-14B-Chat/blob/9492b22871f43e975435455f5c616c77fe7a50ec/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen1-5-110b-chat",
@@ -27618,7 +27980,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Qwen1.5-110B-Chat"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/85f86cec25901f2dbd870a86e06756903c9a876a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwq-32b-preview",
@@ -27664,7 +28029,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "QwQ-32B-Preview"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/QwQ-32B-Preview/blob/91906fe41a48b6a89ce2970abfd1269eefee170e/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen2-vl-7b",
@@ -27768,7 +28136,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Qwen2.5-VL-32B-Instruct"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen2-5-vl-72b",
@@ -27814,7 +28185,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Qwen2.5-VL-72B-Instruct"
       }
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct/blob/89c86200743eec961a297729e7990e8f2ddbc4c5/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "llama-3-1-tulu-3-8b",
@@ -28068,7 +28442,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Gemma-2B-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2403.08295v4",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "gemma-7b",
@@ -28114,7 +28491,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Gemma-7B-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2403.08295v4",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "gemma-1-1-2b",
@@ -28160,7 +28540,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Gemma-1.1-2b-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2403.08295v4",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "gemma-1-1-7b",
@@ -28206,7 +28589,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Gemma-1.1-7B-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2403.08295v4",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "gemma-2-2b",
@@ -28252,7 +28638,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Gemma-2-2b-it"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2408.00118v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "granite-3-0-2b",
@@ -28298,7 +28687,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Granite-3.0-2B-Instruct"
       }
-    ]
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.0-2b-instruct/blob/5ad66c190631382717bd92d7b052adb1a7b669e7/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "granite-3-0-8b",
@@ -28344,7 +28736,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Granite-3.0-8B-Instruct"
       }
-    ]
+    ],
+    "context_k": 4.096,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct/blob/5af56291a1c6ca9056df597aab0cff53edabddb0/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "granite-3-1-2b",
@@ -28390,7 +28785,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Granite-3.1-2B-Instruct"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.1-2b-instruct/blob/bbc2aed595bd38bd770263dc3ab831db9794441d/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "granite-3-1-8b",
@@ -28436,7 +28834,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Granite-3.1-8B-Instruct"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct/blob/4009206d5fc95d2e65a7b7633e159d6e97e25d35/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "codellama-34b-instruct",
@@ -28482,7 +28883,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "CodeLlama-34B-instruct"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-70b-instruct",
@@ -28574,7 +28978,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Llama-3.2-11B-Vision-Instruct"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct/blob/9eb2daaa8597bf192a8b0e73f848f3a102794df5/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "phi-3-mini-4k-instruct",
@@ -28736,7 +29143,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Phi-3-Medium-4k-Instruct"
       }
-    ]
+    ],
+    "context_k": 4,
+    "context_source": "https://huggingface.co/microsoft/Phi-3-medium-4k-instruct/blob/48d87cd5e0523b430d77e93becd3655cd6897230/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "phi-3-vision-128k-instruct",
@@ -28927,7 +29337,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Llama-3.1-Nemotron-70B-Instruct"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF/blob/031d4042f36adc1a52cca51b331d25cbe3cf1022/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "llama-3-3-nemotron-super-49b-v1",
@@ -29192,7 +29605,9 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "MiniCPM-v 2_6"
       }
-    ]
+    ],
+    "license": "minicpm-model-license",
+    "license_source": "https://huggingface.co/openbmb/MiniCPM-V-2_6/blob/6c04d9e3022bcff6e6738dfb1fc19a5cfd2a855f/README.md"
   },
   {
     "id": "mistral-7b-instruct-v0-1",
@@ -29231,7 +29646,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Mistral-7B-Instruct-v0.1"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://arxiv.org/abs/2310.06825v1",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "mistral-7b-instruct-v0-2",
@@ -29277,7 +29695,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Mistral-7B-Instruct-v0.2"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2/blob/63a8b081895390a26e140280378bc85ec8bce07a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "mixtral-8x22b-instruct-v0-1",
@@ -29323,7 +29744,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Mixtral-8x22b-Instruct-v0.1"
       }
-    ]
+    ],
+    "context_k": 64,
+    "context_source": "https://docs.mistral.ai/models/mixtral-8x22b-0-1-0-3",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "pixtral-12b",
@@ -29427,7 +29851,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Command R (04-2024)"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/c4ai-command-r-v01/blob/760ddb6c203d87ebdbe3c9785b49570e1bf95585/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "command-r-08-2024",
@@ -29480,7 +29907,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Command R (08-2024)"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/c4ai-command-r-08-2024/blob/dc835b893cd3fb8f14b24970dbc2a0a6d3c22ee3/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "command-r-plus-04-2024",
@@ -29526,7 +29956,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Command R+ (04-2024)"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/c4ai-command-r-plus/blob/3de12c88b4c6c882389a6f424cc2074383aa17d8/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "command-r-plus-08-2024",
@@ -29579,7 +30012,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Command R+ (08-2024)"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024/blob/e808c1a2249354ca211c9f08d1338e5039f633f8/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "aya-expanse-8b",
@@ -29625,7 +30061,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Aya-Expanse-8B"
       }
-    ]
+    ],
+    "context_k": 8,
+    "context_source": "https://huggingface.co/CohereLabs/aya-expanse-8b/blob/5062468bf9bc0c6035fd64e06274333ec127d980/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "aya-expanse-32b",
@@ -29674,7 +30113,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Aya-Expanse-32B"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/aya-expanse-32b/blob/b306ea27e360683b50c005d7fcbad6a242317910/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "aya-vision-32b",
@@ -29706,7 +30148,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Aya-Vision-32B"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/CohereLabs/aya-vision-32b/blob/0554d66834922fc0f2e5f47a12f78464f4a98533/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "chatgpt-4o-latest-20250326",
@@ -30109,7 +30554,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/search_style_control/latest-00000-of-00001.parquet",
         "reported_label": "grok-4.20-multi-agent-beta-0309"
       }
-    ]
+    ],
+    "context_k": 1000,
+    "context_source": "https://docs.x.ai/developers/models.md",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "grok-code-fast-1",
@@ -30167,7 +30615,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Amazon Nova Lite 1.0"
       }
-    ]
+    ],
+    "context_k": 300,
+    "context_source": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "nova-pro",
@@ -30204,7 +30655,10 @@
         "source": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv",
         "reported_label": "Amazon Nova Pro 1.0"
       }
-    ]
+    ],
+    "context_k": 300,
+    "context_source": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "mistral-medium-2312",
@@ -30381,7 +30835,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
         "reported_label": "qwen3-max-preview"
       }
-    ]
+    ],
+    "context_k": 262.144,
+    "context_source": "https://www.alibabacloud.com/help/en/model-studio/model-qwen3-max",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "qwen3-5-max-preview",
@@ -30754,7 +31211,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
         "reported_label": "hunyuan-vision-1.5-thinking"
       }
-    ]
+    ],
+    "context_k": 40,
+    "context_source": "https://cloud.tencent.com/document/product/1823/130051",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "ernie-5-0-0110",
@@ -30910,7 +31370,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
         "reported_label": "KAT-Coder-Pro-V1"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "longcat-flash-chat-2602-exp",
@@ -31225,7 +31688,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
         "reported_label": "qwen3-vl-235b-a22b-instruct"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen3-vl-235b-a22b-thinking",
@@ -31271,7 +31737,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
         "reported_label": "qwen3-vl-235b-a22b-thinking"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "glm-4-5v",
@@ -31307,7 +31776,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
         "reported_label": "glm-4.5v"
       }
-    ]
+    ],
+    "context_k": 64,
+    "context_source": "https://huggingface.co/zai-org/GLM-4.5V/blob/ed47433b37111465ec527affaaddceff371bca04/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "glm-4-6v",
@@ -31342,7 +31814,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
         "reported_label": "glm-4.6v"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/zai-org/GLM-4.6V/blob/4e2d47eb0b41c5280d8294b17cef9e94fdcfff46/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "molmo-2-8b",
@@ -31413,7 +31888,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
         "reported_label": "olmo-3-32b-think"
       }
-    ]
+    ],
+    "context_k": 65.536,
+    "context_source": "https://arxiv.org/abs/2512.13961v2",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "olmo-3-1-32b-instruct",
@@ -31455,7 +31933,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet",
         "reported_label": "olmo-3.1-32b-instruct"
       }
-    ]
+    ],
+    "context_k": 65.536,
+    "context_source": "https://arxiv.org/abs/2512.13961v2",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "intellect-3",
@@ -31865,7 +32346,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
         "reported_label": "devstral-2"
       }
-    ]
+    ],
+    "context_k": 256,
+    "context_source": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/1613bf01adb5e1c6fdc196b46e6b173eae75eb4a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "jamba-1-5-large",
@@ -31982,7 +32466,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
         "reported_label": "trinity-large-thinking"
       }
-    ]
+    ],
+    "context_k": 512,
+    "context_source": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "hy3-preview",
@@ -32040,7 +32527,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
         "reported_label": "hy4-preview"
       }
-    ]
+    ],
+    "context_k": 1000,
+    "context_source": "https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "mimo-v2-6-pro",
@@ -32069,7 +32559,10 @@
         "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
         "reported_label": "mimo-v2.6-pro"
       }
-    ]
+    ],
+    "context_k": 1000,
+    "context_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "instructpix2pix",
@@ -32221,7 +32714,10 @@
       }
     ],
     "identity_note": "Alpha-VLLM/Lumina-DiMOO (single released checkpoint; HF revision f014549, created 2025-09-09, Apache-2.0; technical report arXiv 2510.06308). Unified discrete-diffusion model for generation, editing and understanding. No local command recorded (runs through the authors' repository scripts).",
-    "model_repo": "https://huggingface.co/Alpha-VLLM/Lumina-DiMOO"
+    "model_repo": "https://huggingface.co/Alpha-VLLM/Lumina-DiMOO",
+    "params_b": 8,
+    "params_b_source": "https://arxiv.org/abs/2510.06308v1",
+    "params_note": "8B as the makers' report lists it ('# Params.') for Lumina-DiMOO, a discrete-diffusion model initialised from LLaDA-Base without structural modifications; whether the image tokenizer/decoder is counted is not stated."
   },
   {
     "id": "onecat-3b",
@@ -32240,7 +32736,11 @@
       }
     ],
     "identity_note": "onecat-ai/OneCAT-3B (the only released OneCAT checkpoint; HF revision a67e66a, created 2025-09-06, Apache-2.0; report arXiv 2509.03498; contact address at meituan.com). Decoder-only autoregressive unified understanding/generation/editing model. No local command recorded.",
-    "model_repo": "https://huggingface.co/onecat-ai/OneCAT-3B"
+    "model_repo": "https://huggingface.co/onecat-ai/OneCAT-3B",
+    "params_b": 9,
+    "params_b_source": "https://arxiv.org/abs/2509.03498v3",
+    "active_b": 3,
+    "params_note": "Modality-MoE: 9B total, 3B activated, as the makers' report (Table 2) states for OneCAT-3B (Qwen2.5-3B-instruct base with FFNs replicated per modality); whether the image detokenizer is counted is not stated."
   },
   {
     "id": "chronoedit-14b",
@@ -32598,7 +33098,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "codellama-13b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-13b-instruct",
@@ -32647,7 +33150,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "CodeLlama-13B-Instruct"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-13b-python",
@@ -32696,7 +33202,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "codellama-python-13b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-34b",
@@ -32749,7 +33258,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "codellama-34b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-34b-python",
@@ -32798,7 +33310,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "codellama-python-34b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-70b",
@@ -32843,7 +33358,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "CodeLlama-70B"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/codellama/CodeLlama-70b-hf/blob/cc11b0f79c8a072bd1e1f32ec280e1ff8ec018f6/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "codellama-70b-python",
@@ -32941,7 +33459,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "codellama-7b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-7b-instruct",
@@ -32990,7 +33511,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "CodeLlama-7B-Instruct"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "codellama-7b-python",
@@ -33039,7 +33563,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "codellama-python-7b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://arxiv.org/abs/2308.12950v3",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "deepseek-coder-1-3b-base",
@@ -33088,7 +33615,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "deepseek-base-1.3b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base/blob/c919139c3a9b4070729c8b2cca4847ab29ca8d94/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-coder-1-3b-instruct",
@@ -33133,7 +33663,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "deepseek-instruct-1.3b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct/blob/e063262dac8366fc1f28a4da0ff3c50ea66259ca/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-coder-33b-base",
@@ -33182,7 +33715,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "deepseek-base-33b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/deepseek-ai/deepseek-coder-33b-base/blob/45c85cadf3720ef3e85a492e24fd4b8c5d21d8ac/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-coder-33b-instruct",
@@ -33227,7 +33763,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "deepseek-instruct-33b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct/blob/61dc97b922b13995e7f83b7c8397701dbf9cfd4c/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-coder-6-7b-base",
@@ -33276,7 +33815,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "deepseek-base-6.7b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base/blob/ce2207a8bfef3ee92bd7dd4cc31c52cfa0046912/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-coder-6-7b-instruct",
@@ -33321,7 +33863,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "deepseek-instruct-6.7b"
       }
-    ]
+    ],
+    "context_k": 16,
+    "context_source": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/blob/e5d64addd26a6a1db0f9b863abf6ee3141936807/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-coder-7b-base-v1-5",
@@ -33418,7 +33963,10 @@
         "source": "https://arxiv.org/html/2406.11409v2",
         "reported_label": "Gemma 2B PT"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/google/gemma-2b/blob/9cf48e52b224239de00d483ec8eb84fb8d0f3a3a/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "gemma-7b-base",
@@ -33467,7 +34015,10 @@
         "source": "https://arxiv.org/html/2406.11409v2",
         "reported_label": "Gemma 7B PT"
       }
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/google/gemma-7b/blob/ff6768d9368919a1f025a54f9f5aa0ee591730bb/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "gpt-3-5-turbo-0301",
@@ -33786,7 +34337,10 @@
         "source": "https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip",
         "reported_label": "mixtral-8x7b"
       }
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "phind-codellama-34b-v2",
@@ -33880,7 +34434,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "StableCode-3B"
       }
-    ]
+    ],
+    "context_k": 16.384,
+    "context_source": "https://huggingface.co/stabilityai/stable-code-3b/blob/5cee3fa2905e7a03c4a1b0bc02f39da7ceaa6cb5/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "starcoder",
@@ -33953,7 +34510,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "StarCoder2-15B"
       }
-    ]
+    ],
+    "context_k": 16.384,
+    "context_source": "https://huggingface.co/bigcode/starcoder2-15b/blob/46d44742909c03ac8cee08eb03fdebce02e193ec/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "starcoder2-3b",
@@ -34002,7 +34562,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "StarCoder2-3B"
       }
-    ]
+    ],
+    "context_k": 16.384,
+    "context_source": "https://huggingface.co/bigcode/starcoder2-3b/blob/733247c55e3f73af49ce8e9c7949bf14af205928/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "starcoder2-7b",
@@ -34051,7 +34614,10 @@
         "source": "https://arxiv.org/html/2405.04324v1",
         "reported_label": "StarCoder2-7B"
       }
-    ]
+    ],
+    "context_k": 16.384,
+    "context_source": "https://huggingface.co/bigcode/starcoder2-7b/blob/bb9afde76d7945da5745592525db122d4d729eb1/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "starcoderbase",
@@ -34347,7 +34913,10 @@
     "identity_note": "Maker repo Qwen/Qwen2.5-0.5B-Instruct @7ae5576: licence tag apache-2.0. 494,032,768 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-16). Ollama tags qwen2.5:0.5b-instruct-q4_K_M, qwen2.5:0.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/README.md"
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/7ae557604adf67be50417f59c2c2f167def9a775/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen2-5-1-5b",
@@ -34382,7 +34951,10 @@
     "identity_note": "Maker repo Qwen/Qwen2.5-1.5B-Instruct @989aa79: licence tag apache-2.0. 1,543,714,304 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-17). Ollama tags qwen2.5:1.5b-instruct-q4_K_M, qwen2.5:1.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/README.md"
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen2-5-3b",
@@ -34417,7 +34989,10 @@
     "identity_note": "Maker repo Qwen/Qwen2.5-3B-Instruct @aa8e725: licence tag other (qwen-research). 3,085,938,688 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-17). Ollama tags qwen2.5:3b-instruct-q4_K_M, qwen2.5:3b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/aa8e72537993ba99e69dfaafa59ed015b17504d1/README.md"
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/aa8e72537993ba99e69dfaafa59ed015b17504d1/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "qwen2-0-5b",
@@ -34452,7 +35027,10 @@
     "identity_note": "Maker repo Qwen/Qwen2-0.5B-Instruct @c540970: licence tag apache-2.0. 494,032,768 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-03). Ollama tags qwen2:0.5b-instruct-q4_K_M, qwen2:0.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://arxiv.org/abs/2407.10671v4",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "qwen2-1-5b",
@@ -34487,7 +35065,10 @@
     "identity_note": "Maker repo Qwen/Qwen2-1.5B-Instruct @ba1cf18: licence tag apache-2.0. 1,543,714,304 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-03). Ollama tags qwen2:1.5b-instruct-q4_K_M, qwen2:1.5b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct/blob/ba1cf1846d7df0a0591d6c00649f57e798519da8/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://arxiv.org/abs/2407.10671v4",
+    "context_note": "Context length from the maker's technical report."
   },
   {
     "id": "qwen2-7b",
@@ -34592,7 +35173,10 @@
     "identity_note": "Maker repo microsoft/Phi-3.5-mini-instruct @2fe1924: licence tag mit. 3,821,079,552 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-08: month the maker's Hugging Face repo was created (createdAt 2024-08-16). Ollama tags phi3.5:3.8b-mini-instruct-q4_K_M, phi3.5:3.8b-mini-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/2fe192450127e6a83f7441aef6e3ca586c338b77/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/2fe192450127e6a83f7441aef6e3ca586c338b77/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "phi-3-5-moe-instruct",
@@ -34621,7 +35205,10 @@
     "identity_note": "Maker repo microsoft/Phi-3.5-MoE-instruct @4368845: licence tag mit. 41,873,153,344 parameters from the Hugging Face safetensors metadata. Mixture-of-experts: pinned README: 'Phi-3.5-MoE has 16x3.8B parameters with 6.6B active parameters when using 2 experts'. Released 2024-08: month the maker's Hugging Face repo was created (createdAt 2024-08-17).",
     "identity_sources": [
       "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct/blob/43688451b462a3351d8580625ebe1931adb3986d/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct/blob/43688451b462a3351d8580625ebe1931adb3986d/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "tinyllama-1-1b-chat-v1-0",
@@ -34691,7 +35278,10 @@
     "identity_note": "Maker repo mistralai/Mistral-Small-Instruct-2409 @4600506: licence tag other (mrl). 22,247,282,688 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-09: month the maker's Hugging Face repo was created (createdAt 2024-09-17). Ollama tags mistral-small:22b-instruct-2409-q4_K_M, mistral-small:22b-instruct-2409-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/mistralai/Mistral-Small-Instruct-2409/blob/4600506f6b13c7ef89e61a54263f4c9bf483de30/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/mistralai/Mistral-Small-Instruct-2409/blob/4600506f6b13c7ef89e61a54263f4c9bf483de30/README.md",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "codestral-22b-v0-1",
@@ -34726,7 +35316,10 @@
     "identity_note": "Maker repo mistralai/Codestral-22B-v0.1 @28b1c1a: licence tag other (mnpl). 22,247,282,688 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-29). Ollama tags codestral:22b-v0.1-q4_K_M, codestral:22b-v0.1-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/mistralai/Codestral-22B-v0.1/blob/28b1c1a51dabe9d86ca8c41420ada1984632498f/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://docs.mistral.ai/models/codestral-24-05",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "mathstral-7b-v0-1",
@@ -34761,7 +35354,10 @@
     "identity_note": "Maker repo mistralai/Mathstral-7B-v0.1 @ec3a484: licence tag apache-2.0. 7,248,023,552 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-07: month the maker's Hugging Face repo was created (createdAt 2024-07-16). Ollama tags mathstral:7b-v0.1-q4_K_M, mathstral:7b-v0.1-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://docs.mistral.ai/models/mathstral-7b-0-1",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "yi-1-5-6b-chat",
@@ -34866,7 +35462,10 @@
     "identity_note": "Maker repo 01-ai/Yi-Coder-9B-Chat @356a1f8: licence tag apache-2.0. 8,829,407,232 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-08: month the maker's Hugging Face repo was created (createdAt 2024-08-21). Ollama tags yi-coder:9b-chat-q4_K_M, yi-coder:9b-chat-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/01-ai/Yi-Coder-9B-Chat/blob/356a1f8d4e4a606d0b879e54191ca809918576b8/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/01-ai/Yi-Coder-9B-Chat/blob/356a1f8d4e4a606d0b879e54191ca809918576b8/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "glm-4-9b-chat",
@@ -34901,7 +35500,10 @@
     "identity_note": "Maker repo zai-org/glm-4-9b-chat @bd8234f: licence tag other (glm-4). 9,399,951,392 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-04). The repo was previously published as THUDM/glm-4-9b-chat (the Hugging Face API redirects that id here); leaderboard rows may use the old id. Ollama tags glm4:9b-chat-q4_K_M, glm4:9b-chat-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/zai-org/glm-4-9b-chat/blob/bd8234fe5e0c09c48637a92abb0c797cb5fa0e73/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/zai-org/glm-4-9b-chat/blob/bd8234fe5e0c09c48637a92abb0c797cb5fa0e73/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "internlm2-5-7b-chat",
@@ -35041,7 +35643,10 @@
     "identity_note": "Maker repo CohereLabs/aya-23-8B @89da1a0: licence tag cc-by-nc-4.0. 8,028,033,024 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-19). The repo was previously published as CohereForAI/aya-23-8B (the Hugging Face API redirects that id here); leaderboard rows may use the old id. Ollama tags aya:8b-23-q4_K_M, aya:8b-23-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/CohereLabs/aya-23-8B/blob/89da1a0ed02d6130f93ae0ffdbedb63b760c0471/README.md"
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/CohereLabs/aya-23-8B/blob/89da1a0ed02d6130f93ae0ffdbedb63b760c0471/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "aya-23-35b",
@@ -35076,7 +35681,10 @@
     "identity_note": "Maker repo CohereLabs/aya-23-35B @ce62acc: licence tag cc-by-nc-4.0. 34,980,831,232 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-19). The repo was previously published as CohereForAI/aya-23-35B (the Hugging Face API redirects that id here); leaderboard rows may use the old id. Ollama tags aya:35b-23-q4_K_M, aya:35b-23-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/CohereLabs/aya-23-35B/blob/ce62acc9f088f423460cd42cd799f5cc53cc7c99/README.md"
-    ]
+    ],
+    "context_k": 8.192,
+    "context_source": "https://huggingface.co/CohereLabs/aya-23-35B/blob/ce62acc9f088f423460cd42cd799f5cc53cc7c99/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "falcon3-1b",
@@ -35111,7 +35719,10 @@
     "identity_note": "Maker repo tiiuae/Falcon3-1B-Instruct @28ba225: licence tag other (falcon-llm-license). 1,669,408,768 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-14). Ollama tags falcon3:1b-instruct-q4_K_M, falcon3:1b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/blob/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md"
-    ]
+    ],
+    "context_k": 8,
+    "context_source": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/blob/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "falcon3-3b",
@@ -35146,7 +35757,10 @@
     "identity_note": "Maker repo tiiuae/Falcon3-3B-Instruct @411bb94: licence tag other (falcon-llm-license). 3,227,655,168 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-14). Ollama tags falcon3:3b-instruct-q4_K_M, falcon3:3b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/blob/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/blob/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "falcon3-7b",
@@ -35181,7 +35795,10 @@
     "identity_note": "Maker repo tiiuae/Falcon3-7B-Instruct @1e57a0e: licence tag other (falcon-llm-license). 7,455,550,464 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-11: month the maker's Hugging Face repo was created (createdAt 2024-11-29). Ollama tags falcon3:7b-instruct-q4_K_M, falcon3:7b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/blob/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/blob/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "falcon3-10b",
@@ -35216,7 +35833,10 @@
     "identity_note": "Maker repo tiiuae/Falcon3-10B-Instruct @8799bc6: licence tag other (falcon-llm-license). 10,305,653,760 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-14). Ollama tags falcon3:10b-instruct-q4_K_M, falcon3:10b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/tiiuae/Falcon3-10B-Instruct/blob/8799bc6aec0152757221dc6b272d824642db6202/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/tiiuae/Falcon3-10B-Instruct/blob/8799bc6aec0152757221dc6b272d824642db6202/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "olmo-2-7b",
@@ -35251,7 +35871,10 @@
     "identity_note": "Maker repo allenai/OLMo-2-1124-7B-Instruct @470b1fb: licence tag apache-2.0. 7,298,617,344 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-18). Ollama tags olmo2:7b-1124-instruct-q4_K_M, olmo2:7b-1124-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/README.md"
-    ]
+    ],
+    "context_k": 4.096,
+    "context_source": "https://arxiv.org/abs/2501.00656v3",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "olmo-2-13b",
@@ -35286,7 +35909,10 @@
     "identity_note": "Maker repo allenai/OLMo-2-1124-13B-Instruct @3a5c85b: licence tag apache-2.0. 13,716,198,400 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-18). Ollama tags olmo2:13b-1124-instruct-q4_K_M, olmo2:13b-1124-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct/blob/3a5c85baefbb1896a54d56fe2e76c0395627ddf4/README.md"
-    ]
+    ],
+    "context_k": 4.096,
+    "context_source": "https://arxiv.org/abs/2501.00656v3",
+    "context_note": "Training sequence length stated by the maker; no separate serving limit is published."
   },
   {
     "id": "olmo-2-1b",
@@ -35350,7 +35976,10 @@
     "identity_note": "Maker repo deepcogito/cogito-v1-preview-llama-3B @5a0ad6f: licence tag llama3.2. 3,606,752,256 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-03: month the maker's Hugging Face repo was created (createdAt 2025-03-31). Ollama tags cogito:3b-v1-preview-llama-q4_K_M, cogito:3b-v1-preview-llama-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B/blob/5a0ad6f39500e9af65e727f15d5554352933ed65/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B/blob/5a0ad6f39500e9af65e727f15d5554352933ed65/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "cogito-v1-preview-llama-8b",
@@ -35385,7 +36014,10 @@
     "identity_note": "Maker repo deepcogito/cogito-v1-preview-llama-8B @64c4236: licence tag llama3.1. 8,030,261,248 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-03: month the maker's Hugging Face repo was created (createdAt 2025-03-31). Ollama tags cogito:8b-v1-preview-llama-q4_K_M, cogito:8b-v1-preview-llama-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B/blob/64c42369b3f322fbffb277bfff146551dd2823cc/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/deepcogito/cogito-v1-preview-llama-8B/blob/64c42369b3f322fbffb277bfff146551dd2823cc/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "exaone-3-5-2-4b",
@@ -35420,7 +36052,10 @@
     "identity_note": "Maker repo LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct @ccce25b: licence tag other (exaone). 2,405,327,360 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2024-12: month the maker's Hugging Face repo was created (createdAt 2024-12-01). Ollama tags exaone3.5:2.4b-instruct-q4_K_M, exaone3.5:2.4b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md"
-    ]
+    ],
+    "context_k": 32.768,
+    "context_source": "https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "granite-3-2-8b",
@@ -35455,7 +36090,10 @@
     "identity_note": "Maker repo ibm-granite/granite-3.2-8b-instruct @610d8c6: licence tag apache-2.0. 8,170,848,256 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-02: month the maker's Hugging Face repo was created (createdAt 2025-02-17). Ollama tags granite3.2:8b-instruct-q4_K_M, granite3.2:8b-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/ibm-granite/granite-3.2-8b-instruct/blob/610d8c6ee9c84ce51f6dfd7bc5c0215d95d49695/README.md"
-    ]
+    ],
+    "context_k": 131.072,
+    "context_source": "https://www.ibm.com/docs/SSLSRPV_2.1.x/wsj/analyze-data/fm-models-ibm.html",
+    "context_note": "Context limit from the maker's documentation, observed 2026-10-06."
   },
   {
     "id": "deepseek-coder-v2-lite-instruct",
@@ -35490,7 +36128,10 @@
     "identity_note": "Maker repo deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct @e434a23: licence tag other (deepseek-license). 15,706,484,224 parameters from the Hugging Face safetensors metadata. Mixture-of-experts: pinned README: 'DeepSeek-Coder-V2 with 16B and 236B parameters ... which has actived parameters of only 2.4B and 21B'. Released 2024-06: month the maker's Hugging Face repo was created (createdAt 2024-06-14). Ollama tags deepseek-coder-v2:16b-lite-instruct-q4_K_M, deepseek-coder-v2:16b-lite-instruct-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/blob/e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/blob/e434a23f91ba5b4923cf6c9d9a238eb4a08e3a11/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "deepseek-v2-lite-chat",
@@ -35525,7 +36166,10 @@
     "identity_note": "Maker repo deepseek-ai/DeepSeek-V2-Lite-Chat @8586474: licence tag other (deepseek). 15,706,484,224 parameters from the Hugging Face safetensors metadata. Mixture-of-experts: pinned README: 'DeepSeek-V2-Lite comprises 15.7B total parameters, of which 2.4B are activated for each token'. Released 2024-05: month the maker's Hugging Face repo was created (createdAt 2024-05-15). Ollama tags deepseek-v2:16b-lite-chat-q4_K_M, deepseek-v2:16b-lite-chat-q8_0 are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count.",
     "identity_sources": [
       "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md"
-    ]
+    ],
+    "context_k": 32,
+    "context_source": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "openthinker3-7b",
@@ -35617,7 +36261,10 @@
     "identity_note": "Maker repo ibm-granite/granite-3.3-2b-instruct @707f574: licence tag apache-2.0. 2,533,539,840 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-04: month the maker's Hugging Face repo was created (createdAt 2025-04-09). Ollama tags granite3.3:2b are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count. The granite3.3 tags page lists only 2b (1.5GB) and 8b (4.9GB) builds, sizes consistent with 4-bit Q4_K_M; quant inferred from size.",
     "identity_sources": [
       "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "granite-3-3-8b",
@@ -35645,7 +36292,10 @@
     "identity_note": "Maker repo ibm-granite/granite-3.3-8b-instruct @51dd4bc: licence tag apache-2.0. 8,170,864,640 parameters from the Hugging Face safetensors metadata. Dense, so active = total. Released 2025-04: month the maker's Hugging Face repo was created (createdAt 2025-04-09). Ollama tags granite3.3:8b are the library's instruct/chat builds of this checkpoint (tag names on the pinned tags page); download sizes are estimated from the parameter count. The granite3.3 tags page lists only 2b (1.5GB) and 8b (4.9GB) builds, sizes consistent with 4-bit Q4_K_M; quant inferred from size.",
     "identity_sources": [
       "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md"
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "command-r7b-12-2024",
@@ -35695,7 +36345,10 @@
         "source": "https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl",
         "reported_label": "c4ai-command-r7b-12-2024"
       }
-    ]
+    ],
+    "context_k": 128,
+    "context_source": "https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024/blob/4f3d0aa6856e322f2f4480fe65420d5d53d297b8/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "codeqwen1-5-7b-chat",
@@ -35737,7 +36390,10 @@
         "source": "https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json",
         "reported_label": "Qwen--CodeQwen1.5-7B-Chat"
       }
-    ]
+    ],
+    "context_k": 64,
+    "context_source": "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat/blob/7b0cc3380fe815e6f08fe2f80c03e05a8b1883d8/README.md",
+    "context_note": "Context length stated on the official model card."
   },
   {
     "id": "o3-pro",
@@ -36346,7 +37002,9 @@
     "local": null,
     "source": "https://arxiv.org/html/2310.11440v3",
     "model_repo": "https://huggingface.co/cerspense/zeroscope_v2_XL",
-    "identity_note": "Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w."
+    "identity_note": "Table 1 June 2023 ZeroScope, 1024×576 output. Two-stage generation using 576w base then XL video-to-video upscaler. Separate from zeroscope-v2-576w.",
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/cerspense/zeroscope_v2_XL/blob/6934ce594c2a8b39eec8bfece9d630a7ec93f642/README.md"
   },
   {
     "id": "floor33-pictures-2023-08",
@@ -36396,7 +37054,12 @@
     "local": null,
     "source": "https://arxiv.org/html/2310.11440v3",
     "model_repo": "https://github.com/showlab/Show-1",
-    "identity_note": "Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint."
+    "identity_note": "Original Show-1 multi-stage text-to-video pipeline, 576×320, 8 FPS; not a single component checkpoint.",
+    "license": "cc-by-nc-4.0",
+    "license_source": "https://huggingface.co/showlab/show-1-base/blob/02c7cbcec48f841e4b4bdbc972077c8420b1ae11/README.md",
+    "params_b": 6,
+    "params_b_source": "https://arxiv.org/abs/2309.15818v3",
+    "params_note": "6B = total over the four Show-1 stages as the makers tabulate them (keyframes 1.7B, temporal interpolation 1.7B, first super-resolution 0.8B, final super-resolution 1.8B; paper Table 5). Not stated whether the T5 text encoder or the DeepFloyd IF-II-L first-frame upscaler used by show-1-sr1 are included."
   },
   {
     "id": "kandinsky-2-1",
@@ -36421,7 +37084,10 @@
     },
     "source": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md",
     "model_repo": "https://huggingface.co/kandinsky-community/kandinsky-2-1",
-    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement."
+    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement.",
+    "params_b": 1.22,
+    "params_b_source": "https://github.com/ai-forever/Kandinsky-2/blob/aeefc1ce3a989eefe7c99d6a02cce44318c4d210/README.md",
+    "params_note": "1.22B = the latent diffusion U-Net only. Other stated components: text encoder 560M, diffusion image prior 1B, CLIP ViT-L/14 image encoder 427M, MoVQ 67M (whole pipeline OUR SUM = 3.27B)."
   },
   {
     "id": "kandinsky-2-2",
@@ -36446,7 +37112,10 @@
     },
     "source": "https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder/blob/9ae140d347fed8ce6e8bb3005dcc1f48543bb8e3/README.md",
     "model_repo": "https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder",
-    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement."
+    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement.",
+    "params_b": 1.22,
+    "params_b_source": "https://github.com/ai-forever/Kandinsky-2/blob/aeefc1ce3a989eefe7c99d6a02cce44318c4d210/README.md",
+    "params_note": "1.22B = the latent diffusion U-Net (decoder) only. Other stated components: text encoder 560M, diffusion image prior 1B, CLIP ViT-bigG image encoder 1.8B, MoVQ 67M (whole pipeline OUR SUM = 4.65B)."
   },
   {
     "id": "kandinsky-3",
@@ -36471,7 +37140,10 @@
     },
     "source": "https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md",
     "model_repo": "https://huggingface.co/kandinsky-community/kandinsky-3",
-    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement."
+    "identity_note": "Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement.",
+    "params_b": 3,
+    "params_b_source": "https://github.com/ai-forever/Kandinsky-3/blob/a4c9e92e4d9b2a57081b7e33a2e82373c99ddbfc/README.md",
+    "params_note": "3B = the latent diffusion U-Net only. The maker also lists the Flan-UL2 text encoder (encoder part) 8.6B and MoVQ encoder/decoder 267M; whole pipeline OUR SUM = 11.87B."
   },
   {
     "id": "stable-video-diffusion",
@@ -36546,7 +37218,12 @@
     },
     "source": "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2/blob/6167b88ffe39b4441fdf2113e77b99a6f56b7906/README.md",
     "model_repo": "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2",
-    "identity_note": "Motion adapter requiring a compatible Stable Diffusion 1.5 base; no score borrowed from a complete AnimateDiff pipeline."
+    "identity_note": "Motion adapter requiring a compatible Stable Diffusion 1.5 base; no score borrowed from a complete AnimateDiff pipeline.",
+    "license": "apache-2.0",
+    "license_source": "https://huggingface.co/guoyww/animatediff/blob/fdfe36afa161e51b3e9c24022b0e368d59e7345e/README.md",
+    "params_b": 0.453,
+    "params_b_source": "https://github.com/guoyww/AnimateDiff/blob/e92bd5671ba62c0d774a32951453e328018b7c5b/README.md",
+    "params_note": "453M = the AnimateDiff v2 SD 1.5 motion module (mm_sd_v15_v2) only, per the makers' model-zoo table; the Stable Diffusion 1.5 base (UNet, CLIP text encoder, VAE) it plugs into is not included."
   },
   {
     "id": "cogvideo-9b",
@@ -36559,7 +37236,12 @@
     "local": null,
     "source": "https://huggingface.co/THUDM/CogVideo/blob/4a245c359560cadf8c4e8251f37b4cc06a3c4cbd/README.md",
     "model_repo": "https://huggingface.co/THUDM/CogVideo",
-    "identity_note": "Original 2022 CogVideo, distinct from CogVideoX 2024."
+    "identity_note": "Original 2022 CogVideo, distinct from CogVideoX 2024.",
+    "license": "cogvideo-license",
+    "license_source": "https://github.com/zai-org/CogVideo/blob/5f914b772b7e220ee6ae84deb562fb9a1f54c5f8/Model_License",
+    "params_b": 9.4,
+    "params_b_source": "https://arxiv.org/abs/2205.15868v1",
+    "params_note": "9.4B = distinct parameters of the two CogVideo stage transformers (7.7B each, sharing 6B frozen CogView2 weights), per the makers' paper; the abstract rounds to 9B. The separately downloaded CogView2 super-resolution model and the icetk tokenizer are not included."
   },
   {
     "id": "coqui-en-ljspeech-tacotron2-ddc",
@@ -36586,7 +37268,9 @@
         }
       ]
     },
-    "identity_note": "Exact registry entry tts_models/en/ljspeech/tacotron2-DDC. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/tacotron2-DDC. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.",
+    "released": "2021-04",
+    "released_source": "https://github.com/coqui-ai/TTS/releases/tag/v0.0.12"
   },
   {
     "id": "coqui-en-ljspeech-glow-tts",
@@ -36640,7 +37324,9 @@
         }
       ]
     },
-    "identity_note": "Exact registry entry tts_models/en/ljspeech/speedy-speech. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/speedy-speech. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.",
+    "released": "2021-09",
+    "released_source": "https://github.com/coqui-ai/TTS/releases/tag/v0.3.0"
   },
   {
     "id": "coqui-en-ljspeech-fast-pitch",
@@ -36667,7 +37353,9 @@
         }
       ]
     },
-    "identity_note": "Exact registry entry tts_models/en/ljspeech/fast_pitch. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/fast_pitch. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.",
+    "released": "2021-09",
+    "released_source": "https://github.com/coqui-ai/TTS/releases/tag/v0.2.2"
   },
   {
     "id": "coqui-en-ljspeech-overflow",
@@ -36694,7 +37382,9 @@
         }
       ]
     },
-    "identity_note": "Exact registry entry tts_models/en/ljspeech/overflow. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+    "identity_note": "Exact registry entry tts_models/en/ljspeech/overflow. Default vocoder vocoder_models/en/ljspeech/hifigan_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.",
+    "released": "2022-12",
+    "released_source": "https://github.com/coqui-ai/TTS/releases/tag/v0.10.0_models"
   },
   {
     "id": "coqui-en-ljspeech-neural-hmm",
@@ -36856,7 +37546,9 @@
         }
       ]
     },
-    "identity_note": "Exact registry entry tts_models/uk/mai/glow-tts. Default vocoder vocoder_models/uk/mai/multiband-melgan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+    "identity_note": "Exact registry entry tts_models/uk/mai/glow-tts. Default vocoder vocoder_models/uk/mai/multiband-melgan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.",
+    "released": "2021-10",
+    "released_source": "https://github.com/coqui-ai/TTS/releases/tag/v0.4.0"
   },
   {
     "id": "coqui-tr-common-voice-glow-tts",
@@ -36883,7 +37575,9 @@
         }
       ]
     },
-    "identity_note": "Exact registry entry tts_models/tr/common-voice/glow-tts. Default vocoder vocoder_models/tr/common-voice/hifigan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint."
+    "identity_note": "Exact registry entry tts_models/tr/common-voice/glow-tts. Default vocoder vocoder_models/tr/common-voice/hifigan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.",
+    "released": "2022-03",
+    "released_source": "https://github.com/coqui-ai/TTS/releases/tag/v0.6.0"
   },
   {
     "id": "nvidia-tacotron2-waveglow",
@@ -36896,7 +37590,9 @@
     "local": null,
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
     "model_repo": "https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch",
-    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified."
+    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified.",
+    "license": "bsd-3-clause",
+    "license_source": "https://api.ngc.nvidia.com/v2/models/nvidia/tacotron2_pyt_ckpt_amp"
   },
   {
     "id": "fastpitch-1-0-waveglow",
@@ -36909,7 +37605,9 @@
     "local": null,
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
     "model_repo": "https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch",
-    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified."
+    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified.",
+    "license": "bsd-3-clause",
+    "license_source": "https://api.ngc.nvidia.com/v2/models/nvidia/fastpitch_pyt_fp32_ckpt_v1"
   },
   {
     "id": "fastpitch-1-1-waveglow",
@@ -36922,7 +37620,9 @@
     "local": null,
     "source": "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md",
     "model_repo": "https://github.com/NVIDIA/DeepLearningExamples/tree/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch",
-    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified."
+    "identity_note": "Exact NVIDIA implementation with WaveGlow vocoder. Do not transfer these listening-study values to Coqui, SpeechBrain, HiFi-GAN or a differently trained checkpoint. Historical run dependencies documented upstream; no current one-command run verified.",
+    "license": "bsd-3-clause",
+    "license_source": "https://api.ngc.nvidia.com/v2/models/nvidia/fastpitch_pyt_fp32_ckpt_v1_1"
   },
   {
     "id": "grad-tts-10-hifigan",
@@ -36935,7 +37635,8 @@
     "local": null,
     "source": "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf",
     "model_repo": "https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS",
-    "identity_note": "Original Grad-TTS acoustic checkpoint with HiFi-GAN; 10 reverse-diffusion steps, temperature 1.5."
+    "identity_note": "Original Grad-TTS acoustic checkpoint with HiFi-GAN; 10 reverse-diffusion steps, temperature 1.5.",
+    "params_note": "Grad-TTS acoustic model only: OUR SUM of the makers paper Table 2 figures (encoder + duration predictor 7.2M, diffusion decoder 7.6M). The HiFi-GAN vocoder of this two-stage system is not included."
   },
   {
     "id": "fastspeech-xcmyz-gradtts-study",
@@ -36988,7 +37689,10 @@
     "local": null,
     "source": "https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/LightSpeech/README.md",
     "model_repo": "https://github.com/microsoft/NeuralSpeech/tree/8cf4fbcbf451c3affc68ecfa6c970327e927062f/LightSpeech",
-    "identity_note": "Original author implementation with linked pretrained acoustic and vocoder weights. Legacy environment requires a multi-step setup. No benchmark score or current one-command run inferred."
+    "identity_note": "Original author implementation with linked pretrained acoustic and vocoder weights. Legacy environment requires a multi-step setup. No benchmark score or current one-command run inferred.",
+    "params_b": 0.0018,
+    "params_b_source": "https://arxiv.org/abs/2102.04040v1",
+    "params_note": "LightSpeech acoustic model only (makers paper: 1.8M vs. 27M for FastSpeech 2). The Parallel WaveGAN vocoder of this two-stage system is not included."
   },
   {
     "id": "priorgrad-acoustic",

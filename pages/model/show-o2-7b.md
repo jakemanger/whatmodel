@@ -4,7 +4,7 @@
 
 # Show-o2 7B
 
-Show Lab, NUS · released 2025-06 · apache-2.0
+Show Lab, NUS · released 2025-06 · 7B params · apache-2.0
 
 **score 40.2** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

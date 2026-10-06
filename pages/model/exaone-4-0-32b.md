@@ -4,28 +4,56 @@
 
 # EXAONE 4.0 32B
 
-LG AI Research · released 2025-07
+LG AI Research · released 2025-07 · 32B params · exaone
 
-[Model and usage documentation](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B)
+**score 56.4** ±3.5 · #164 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                             result  reported by  source
-Thunder-KoNUBench symbol 0-shot   81.5%  independent  <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench: A Corpus-A…</a>
-KCL-MCQA vanilla                  36.4%  independent  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchm…</a>
-KCL-Essay vanilla                 32.6%  independent  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">Korean Canonical Legal Benchm…</a>
+source                 test                            score  implies  date        weight
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.7%    59.7   2026-04-17   58% ▇▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.6%    52.1   2026-04-17   37% ▇▇▇▇
+prior                  pull toward the middle                   50.0                 5% ▇
+                       weighted average                       = 56.4
 </pre>
 
-<sub>Licences: Thunder-KoNUBench: A Corpus-Aligned Benchmark for Korean Negation Understanding ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Korean Canonical Legal Benchmark: Toward Knowledge-Independent Evaluation of LLMs’ Legal Reasoning Capabilities ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test                            score  why
+Thunder-KoNUBench: A …  <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench symbol 0-sh…</a>  81.5%  too few models have it yet
+Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-MCQA vanilla</a>                36.4%  too few models have it yet
+Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.pdf">KCL-Essay vanilla</a>               32.6%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md): LG AI Research official model card: EXAONE 4.0 32B context length 131,072 tokens. Fact only; the card's model licence (non-commercial) governs weights, not this number. Observed 2026-09-25.</sub>
 
+<pre>
+download              size  score
+4-bit gguf-q4_k_m  ~19.7GB   56.4
+8-bit gguf-q8_0    ~38.9GB   56.4
+</pre>
+
 ```sh
+# 4-bit gguf-q4_k_m
 llama-server -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
 llama-server -hf LGAI-EXAONE/EXAONE-4.0-32B-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/exaone-4-0-32b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/exaone-4-0-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

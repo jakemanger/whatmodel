@@ -6,7 +6,7 @@
 
 TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
-**score 32.0** ±2.7 · #365 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±2.6 · #369 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                     score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1147.7    31.5   2026-09-13   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 32.0
+                        weighted average                = 32.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,9 +27,11 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/tiiuae/falcon-180B-chat/blob/6882299beda36df40e683c4478edfcc94f2cde5f/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download        size  score
-4-bit q4_0  ~108.5GB   32.0
+4-bit q4_0  ~108.5GB   32.1
 </pre>
 
 ```sh

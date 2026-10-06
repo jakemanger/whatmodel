@@ -6,7 +6,7 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 30.9** ±2.7 · #370 of 404 · from 3 benchmark results across 1 source
+**score 31.1** ±2.8 · #374 of 411 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              24.0%    24.4   2026-08-28   53% ▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.8%    36.1   2026-08-30   36% ▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    41.8   2026-08-30    8% ▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              24.0%    24.1   2026-08-28   50% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.8%    36.1   2026-08-30   37% ▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    41.7   2026-08-30    9% ▇
 prior     pull toward the middle             50.0                 3% ▇
-          weighted average                 = 30.9
+          weighted average                 = 31.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,9 +29,11 @@ prior     pull toward the middle             50.0                 3% ▇
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/ibm-granite/granite-4.0-1b/blob/6a7381ba1f54d684ff508d991aeb7dc580157103/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download        size  score
-16-bit bf16  ~4.41GB   30.9
+16-bit bf16  ~4.41GB   31.1
 </pre>
 
 ```sh

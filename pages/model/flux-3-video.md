@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-08 · closed weights
 
-**score 78.6** ±1.9 · #3 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 78.7** ±1.9 · #3 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1493.1    79.2   2026-09-22   73% ▇▇▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1265.0    78.7   2026-09-25   25% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1493.1    79.3   2026-09-22   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1265.0    78.8   2026-09-25   25% ▇▇▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 78.6
+                        weighted average                        = 78.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

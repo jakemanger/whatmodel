@@ -4,7 +4,7 @@
 
 # Krea 2 Medium
 
-Krea · proprietary
+Krea · released 2026-05 · proprietary
 
 **score 59.8** ±1.9 · #39 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

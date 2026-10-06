@@ -4,27 +4,43 @@
 
 # LongCat 2.0 (1.6T-A48B)
 
-Meituan · released 2026-06
+Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-[Model and usage documentation](https://huggingface.co/meituan-longcat/LongCat-2.0)
+**score 71.1** ±2.4 · #40 of 411 · from 5 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                              result  reported by  source
-SWE-bench Pro                      59.5%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-GPQA Diamond                       88.9%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-BrowseComp                         79.9%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-FORTE (AGI-Eval)                   73.2%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-IFEval (aggregation unspecified)   90.0%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-IMO-AnswerBench                    81.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-RWSearch                           78.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-SWE-bench Multilingual             77.3%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-Terminal-Bench 2.1                 70.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
-WritingBench                       83.8%  lab          <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">meituan-longcat/LongCat-2.0 m…</a>
+source                  test                            score  implies  date        weight
+<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    71.8   2026-09-25   27% ▇▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    72.2   2026-09-25   26% ▇▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    72.5   2026-09-25   23% ▇▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    69.5   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    70.8   2026-09-25   11% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 71.1
 </pre>
 
+<sub>~ averaged with other results for the same test</sub>
+
 <sub>Licences: meituan-longcat/LongCat-2.0 model card ([mit](../../licenses/meituan-longcat--LongCat-2.0.txt))</sub>
+
+<details><summary>Not counted (5)</summary>
+
+<pre>
+source                  test                    score  why
+meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Pro</a>           59.5%  too few models have it yet
+meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond</a>            88.9%  too few models have it yet
+meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">BrowseComp</a>              79.9%  too few models have it yet
+meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">SWE-bench Multilingual</a>  77.3%  too few models have it yet
+meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">Terminal-Bench 2.1</a>      70.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -32,4 +48,6 @@ api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out 
 
 <sub>[price source](https://longcat.chat/platform/docs/pricing/longcat-2.0): USD per 1M tokens, LongCat API Platform pay-as-you-go list price for LongCat-2.0 (uncached input / output). A limited-time discounted price ($0.30 / $1.20) was also shown and is not used; cached input $0.015/1M excluded; CNY price table not used. Currency: USD. Meituan LongCat official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meituan/longcat-2.0.toml)</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/longcat-2-0)
+no verified local download listed
+
+[interactive version](https://whatmodel.sh/model/longcat-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

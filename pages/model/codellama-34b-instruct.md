@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.7B params · llama2
 
-**score 35.3** ±0.9 · #337 of 404 · from 6 benchmark results across 4 sources
+**score 35.1** ±1.0 · #346 of 411 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                33.3%    36.2   2024-03-28   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        51.8%    36.3   2024-03-28   22% ▇▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   41.3%    35.4   2024-05-07   22% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       57.0%    37.9   2024-01-31    8% ▇
-                        <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  41.5%    33.8   2024-01-31    8% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1136.6    30.1   2026-09-13   12% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                33.3%    36.1   2024-03-28   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        51.8%    36.2   2024-03-28   23% ▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   41.3%    35.0   2024-05-07   20% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       57.0%    37.7   2024-01-31    9% ▇
+                        <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  41.5%    33.5   2024-01-31    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1136.6    30.1   2026-09-13   13% ▇▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 35.3
+                        weighted average                        = 35.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,10 +32,12 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2308.12950v3): Context length from the maker's technical report.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m  ~20.72GB   35.3
-8-bit q8_0    ~40.94GB   35.3
+4-bit q4_k_m  ~20.72GB   35.1
+8-bit q8_0    ~40.94GB   35.1
 </pre>
 
 ```sh

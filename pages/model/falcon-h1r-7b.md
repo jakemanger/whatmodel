@@ -4,25 +4,33 @@
 
 # Falcon-H1R 7B
 
-TII · released 2026-01
+TII · released 2026-01 · 7.59B params · falcon-llm
 
-[Model and usage documentation](https://huggingface.co/tiiuae/Falcon-H1R-7B)
+**score 54.7** ±2.0 · #174 of 411 · from 10 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-AIME 2024                            88.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-AIME 2025                            83.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-HMMT 2025 (edition unspecified)      64.9%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-MATH-500                             97.4%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-LiveCodeBench v6 (window unspecif…   68.6%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-GPQA Diamond                         61.3%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-MMLU-Pro                             72.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-Humanity's Last Exam                 11.1%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-IFBench (aggregation unspecified)    53.4%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
-SciCode main problems                 3.9%  lab          <a href="https://arxiv.org/html/2601.02346v1">Falcon-H1R: Pushing the Reaso…</a>
+source                  test                            score  implies  date        weight
+<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    57.9   2026-09-25   14% ▇▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  72.1%    52.4   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    55.7   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.3%    50.4   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      3.9%    47.1   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 88.1%    59.3   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    58.3   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 83.1%    58.2   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  53.4%    56.6   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  97.4%    55.9   2026-09-25    7% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 54.7
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt))</sub>
 
@@ -30,9 +38,19 @@ SciCode main problems                 3.9%  lab          <a href="https://arxiv.
 
 <sub>[context source](https://huggingface.co/tiiuae/Falcon-H1R-7B/blob/a6f74bf181389908efd6970878d7ee2b42f5d417/config.json): TII official configuration: max\_position\_embeddings 262144; the official card's vLLM notes state the default --max-model-len is 262144. Configured maximum, not a benchmarked long-context claim. Observed 2026-09-25.</sub>
 
+<pre>
+download              size  score
+4-bit gguf-q4_k_m  ~5.05GB   54.7
+8-bit gguf-q8_0    ~9.61GB   54.7
+</pre>
+
 ```sh
+# 4-bit gguf-q4_k_m
 llama-server -hf tiiuae/Falcon-H1R-7B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
 llama-server -hf tiiuae/Falcon-H1R-7B-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/falcon-h1r-7b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/falcon-h1r-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

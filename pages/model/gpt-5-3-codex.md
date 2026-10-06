@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 69.0** ±2.8 · #58 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.0** ±2.8 · #58 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

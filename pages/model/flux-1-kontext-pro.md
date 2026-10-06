@@ -4,7 +4,7 @@
 
 # FLUX.1 Kontext \[pro\]
 
-Black Forest Labs · closed weights
+Black Forest Labs · released 2025-05 · closed weights
 
 **score 53.5** ±1.7 · #63 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

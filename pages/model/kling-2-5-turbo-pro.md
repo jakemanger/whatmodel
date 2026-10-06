@@ -6,7 +6,7 @@
 
 Kuaishou · closed weights
 
-**score 55.7** ±5.1 · #29 of 76 · from 3 benchmark results across 3 sources
+**score 55.8** ±5.1 · #29 of 76 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  59.4%    58.9   2026-09-10   49% ▇▇▇▇▇▇
-<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>  11.3%    43.7   2025-11-20   26% ▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                90.8%    70.8   2026-04-22   14% ▇▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  59.4%    59.0   2026-09-10   49% ▇▇▇▇▇▇
+<a name="visual-v-reasonbench"></a>V-ReasonBench: Toward…  <a href="https://arxiv.org/html/2511.16668v1#S3.T2">V-ReasonBench (average pass@5)</a>  11.3%    43.8   2025-11-20   26% ▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                90.8%    70.9   2026-04-22   14% ▇▇
 prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 55.7
+                        weighted average                       = 55.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

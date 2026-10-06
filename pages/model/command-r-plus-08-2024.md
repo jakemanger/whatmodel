@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 48.0** ±2.4 · #228 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 48.0** ±2.4 · #230 of 411 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.1    47.2   2026-09-13   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    51.9   2026-09-19   16% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.1    47.2   2026-09-13   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    51.7   2026-09-19   17% ▇▇
 prior                   pull toward the middle                    50.0                 3% ▇
                         weighted average                        = 48.0
 </pre>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                    50.0          
 
 api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohere.com](https://docs.cohere.com/docs/models)
 
-<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard input and output (LiteLLM @c19ce71 row 'command-r-plus-08-2024', litellm\_provider cohere\_chat). Product: Cohere Chat API. API model: command-r-plus-08-2024 (Cohere models page: Live). Currency: USD.</sub>
+<sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard input and output (LiteLLM @c19ce71 row 'command-r-plus-08-2024', litellm\_provider cohere\_chat). Product: Cohere Chat API. API model: command-r-plus-08-2024 (Cohere models page: Live). Currency: USD. · [context source](https://huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024/blob/e808c1a2249354ca211c9f08d1338e5039f633f8/README.md): Context length stated on the official model card.</sub>
 
 <pre>
 download          size  score

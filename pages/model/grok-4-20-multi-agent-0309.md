@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2026-03 · closed weights
 
-**score 70.0** ±1.9 · #47 of 404 · from 3 benchmark results across 1 source
+**score 70.0** ±1.9 · #48 of 411 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -31,7 +31,7 @@ prior                   pull toward the middle                    50.0          
 
 api (xAI) · $1.56/M blended · $1.25 in / $2.5 out per 1M tokens · [docs.x.ai](https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309.md)
 
-<sub>[price source](https://docs.x.ai/developers/models.md): USD per 1M tokens, xAI API text pricing table, grok-4.20-multi-agent-0309 (\< 200k prompt tokens): input $1.25, output $2.50; cached input $0.20 and the ≥200k long-context tier ($2.50/$5.00) excluded. Currency: USD. xAI official models and pricing page, observed 2026-09-28.</sub>
+<sub>[price source](https://docs.x.ai/developers/models.md): USD per 1M tokens, xAI API text pricing table, grok-4.20-multi-agent-0309 (\< 200k prompt tokens): input $1.25, output $2.50; cached input $0.20 and the ≥200k long-context tier ($2.50/$5.00) excluded. Currency: USD. xAI official models and pricing page, observed 2026-09-28. · [context source](https://docs.x.ai/developers/models.md): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

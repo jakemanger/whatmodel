@@ -4,7 +4,7 @@
 
 # FLUX.2 \[flex\]
 
-Black Forest Labs · closed weights
+Black Forest Labs · released 2025-11 · closed weights
 
 **score 61.9** ±1.7 · #30 of 114 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 

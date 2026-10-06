@@ -4,7 +4,7 @@
 
 # MiMo v2.5 TTS
 
-Xiaomi MiMo · closed weights
+Xiaomi MiMo · released 2026-04 · closed weights
 
 **score 46.2** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

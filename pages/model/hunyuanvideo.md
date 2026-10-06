@@ -6,7 +6,7 @@
 
 Tencent · released 2024-12 · 13B params · tencent-hunyuan-community
 
-**score 39.3** ±2.3 · #56 of 76 · from 5 benchmark results across 3 sources
+**score 39.5** ±2.3 · #56 of 76 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                    score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>          17.2%    39.1   2026-01-30   35% ▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>          35.0%    32.5   2026-01-30   16% ▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>          56.4%    42.5   2025-04-21   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          82.7%    41.9   2025-04-21   12% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  898.07 / 1608    38.3   2026-05-15   14% ▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>          17.2%    39.4   2026-01-30   35% ▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>          35.0%    32.8   2026-01-30   16% ▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>          56.4%    42.6   2025-04-21   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2504.13074v3#S5.T6">VBench T2V total (long-prompt…</a>          82.7%    42.1   2025-04-21   12% ▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  898.07 / 1608    38.5   2026-05-15   14% ▇▇
 prior                   pull toward the middle                           49.9                 2% ▇
-                        weighted average                               = 39.3
+                        weighted average                               = 39.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,9 +42,9 @@ api (fal) · price unknown · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-vide
 
 <pre>
 version                       needs  score
-bf16 · nvidia only          ~31.7GB   39.3
-bf16 · nvidia only          ~31.7GB   39.3
-Draw Things q8p · mac only  ~27.6GB   39.3
+bf16 · nvidia only          ~31.7GB   39.5
+bf16 · nvidia only          ~31.7GB   39.5
+Draw Things q8p · mac only  ~27.6GB   39.5
 </pre>
 
 ```sh

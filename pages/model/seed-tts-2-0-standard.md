@@ -4,7 +4,7 @@
 
 # Seed TTS 2.0 Standard
 
-ByteDance Volcengine · closed weights
+ByteDance Volcengine · released 2025-09 · closed weights
 
 **score 85.5** ±3.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

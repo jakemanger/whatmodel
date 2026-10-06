@@ -39,6 +39,8 @@ prior                   pull toward the middle                   49.8           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md): Context length stated on the official model card.</sub>
+
 <pre>
 download        size  score
 4-bit fp16  ~12.11GB   60.1

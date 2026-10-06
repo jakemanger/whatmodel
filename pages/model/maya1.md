@@ -8,7 +8,14 @@ Maya Research · released 2025-11
 
 [Model and usage documentation](https://huggingface.co/maya-research/maya1)
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+
+<pre>
+test                                result  reported by  source
+DailyDialog TTS · Whisper-large W…   11.2%  independent  <a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in t…</a>
+</pre>
+
+<sub>Licences: Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

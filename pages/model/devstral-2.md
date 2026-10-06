@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 56.9** ±2.3 · #158 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.8** ±2.3 · #159 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                        score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1194.1    57.0   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 56.9
+                        weighted average                   = 56.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,10 +27,12 @@ prior                   pull toward the middle               50.0               
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512/blob/1613bf01adb5e1c6fdc196b46e6b173eae75eb4a/README.md): Context length stated on the official model card.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m   ~74.3GB   56.9
-8-bit q8_0    ~148.1GB   56.9
+4-bit q4_k_m   ~74.3GB   56.8
+8-bit q8_0    ~148.1GB   56.8
 </pre>
 
 ```sh

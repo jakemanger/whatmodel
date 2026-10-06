@@ -4,16 +4,35 @@
 
 # Grok Voice Transcribe 2.0
 
-xAI · released 2026-09
+xAI · released 2026-09 · proprietary
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+**score 67.8** ±4.5 · #2 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-raven.eval · German read/parliame…    8.2%  independent  <a href="https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md">raven.eval · German ASR WER</a>
+source                  test                            score  implies  date        weight
+<a name="speech-stt-pipecat-bsd2"></a>Pipecat STT Benchmark…  <a href="https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/README.md">Pipecat STT Benchmark · poole…</a>   0.8%    69.4   2026-10-01   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 8% ▇
+                        weighted average                       = 67.8
 </pre>
 
-<sub>Licences: raven.eval · German ASR WER ([MIT](../../licenses/speech-stt-raven-mit.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Pipecat STT Benchmark · semantic WER results table ([BSD-2-Clause](https://github.com/pipecat-ai/stt-benchmark/blob/94f567299a21f8d617039bc69f137a131f5dedd5/LICENSE))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+raven.eval · German A…  <a href="https://github.com/PhilflowIO/raven.eval/blob/f9f621e23b0e83e29aa18e8ffcd4656805c68145/BENCHMARKS.md">raven.eval · German read/parl…</a>   8.2%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -21,4 +40,6 @@ api (xAI) · $0.0017/audio min · [docs.x.ai](https://docs.x.ai/developers/model
 
 <sub>[price source](https://docs.x.ai/developers/models.md): USD per input audio minute: xAI Voice Pricing lists Speech to Text at $0.10 / hr (REST) (÷60); $0.20/hr streaming. xAI STT docs name grok-voice-transcribe-2.0 as the default model. Product: xAI Speech to Text API. API model: grok-voice-transcribe-2.0. Settings: REST (file). Price basis: published list rate, per-hour to per-minute scaling only. Exclusions: streaming. Currency: USD. xAI official models/pricing docs, observed 2026-09-25.</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/grok-voice-transcribe-2)
+no verified local download listed
+
+[interactive version](https://whatmodel.sh/model/grok-voice-transcribe-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

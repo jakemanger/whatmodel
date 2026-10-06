@@ -6,7 +6,7 @@
 
 Amazon · released 2025-11 · closed weights
 
-**score 59.1** ±2.5 · #140 of 404 · from 3 benchmark results across 2 sources
+**score 59.0** ±2.5 · #144 of 411 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset/blob/106ed712b5b88f0e531d5fa503bfed76ac31396e/docs/PREVIOUS_RESULTS.md">KMMLU-HARD (Daekeun Kim, zero…</a>  54.1%    65.3                32% ▇▇▇▇
 <a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>  78.5%    70.4   2026-09-25    7% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 59.1
+                        weighted average                       = 59.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

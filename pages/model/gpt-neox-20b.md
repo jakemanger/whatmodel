@@ -35,6 +35,8 @@ prior                   pull toward the middle                   49.8           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/EleutherAI/gpt-neox-20b/blob/c292233c833e336628618a88a648727eb3dff0a7/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download        size  score
 4-bit fp16  ~41.29GB   63.6

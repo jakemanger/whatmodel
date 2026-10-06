@@ -4,26 +4,34 @@
 
 # LFM2 24B-A2B
 
-Liquid AI · released 2026-02
+Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-[Model and usage documentation](https://huggingface.co/LiquidAI/LFM2-24B-A2B)
+**score 48.0** ±1.4 · #228 of 411 · from 11 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                               result  reported by  source
-MMLU                                74.9%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-MMLU-Pro                            57.6%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-AGIEval (Marco suite unspecified)   49.0%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-GPQA Diamond                        39.7%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-GSM8K                               87.2%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-MATH (subset unspecified)           83.9%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-GlobalMMLU (Marco evaluation)       57.0%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-MMMLU (Marco evaluation)            62.3%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-MMLU-ProX-Lite (Marco)              43.3%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-MGSM (Marco evaluation)             67.8%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
-PolyMath (Marco evaluation)         29.3%  independent  <a href="https://arxiv.org/html/2604.25578v1">Marco-MoE: Open Multilingual …</a>
+source                  test                            score  implies  date        weight
+<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    47.4   2026-09-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    39.7%    50.3   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   57.0%    46.6   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        62.3%    48.6   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       83.9%    48.7   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    48.8   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     29.3%    47.5   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    49.2   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            74.9%    47.3   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         67.8%    44.9   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  49.0%    49.2   2026-09-25    5% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 48.0
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>
 
@@ -31,9 +39,19 @@ PolyMath (Marco evaluation)         29.3%  independent  <a href="https://arxiv.o
 
 <sub>[context source](https://huggingface.co/LiquidAI/LFM2-24B-A2B/blob/a3bbacd91a678b97712f0e323e52f8c24ba29542/README.md): Liquid AI official model card: LFM2-24B-A2B context length 32,768 tokens. Observed 2026-09-25.</sub>
 
+<pre>
+download          size  score
+4-bit q4_k_m  ~14.78GB   48.0
+8-bit q8_0    ~29.06GB   48.0
+</pre>
+
 ```sh
+# 4-bit q4_k_m
 ollama run lfm2:24b
+# 8-bit q8_0
 ollama run lfm2:24b-q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/lfm2-24b-a2b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/lfm2-24b-a2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Amazon · released 2024-12 · closed weights
 
-**score 45.9** ±1.9 · #240 of 404 · from 5 benchmark results across 3 sources
+**score 45.9** ±1.9 · #243 of 411 · from 5 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1290.0    48.9   2026-09-13   47% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1290.0    48.9   2026-09-13   48% ▇▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1019.1    40.3   2026-09-13   34% ▇▇▇▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   29.0%    49.8   2025-11-18    7% ▇
-                        <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   86.8%    57.1   2025-07-02    3% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   25.0%    42.6   2025-12-16    7% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   29.0%    49.9   2025-11-18    7% ▇
+                        <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   86.8%    57.1   2025-07-02    4% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   25.0%    42.5   2025-12-16    7% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
                         weighted average                        = 45.9
 </pre>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                    50.0          
 
 api (Amazon Bedrock) · $1.40/M blended · $0.8 in / $3.2 out per 1M tokens · [docs.aws.amazon.com](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html)
 
-<sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Standard tier, geo cross-Region inference and in-Region, US East (N. Virginia). Amazon Nova Pro (amazon.nova-pro-v1:0). Observed 2026-09-28 (page price data $0.0008/$0.0032 per 1K tokens).</sub>
+<sub>[price source](https://aws.amazon.com/nova/pricing): USD per 1M tokens, Standard tier, geo cross-Region inference and in-Region, US East (N. Virginia). Amazon Nova Pro (amazon.nova-pro-v1:0). Observed 2026-09-28 (page price data $0.0008/$0.0032 per 1K tokens). · [context source](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

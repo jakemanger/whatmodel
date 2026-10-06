@@ -4,7 +4,7 @@
 
 # MMS TTS Amharic
 
-Meta · cc-by-nc-4.0
+Meta · released 2023-05 · cc-by-nc-4.0
 
 **score 50.0** ±15.6 · #52 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

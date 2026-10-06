@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 38.4** ±3.1 · #308 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.5** ±3.1 · #314 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    37.9   2026-09-13   96% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 4% ▇
-                        weighted average                        = 38.4
+                        weighted average                        = 38.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,8 @@ prior                   pull toward the middle                    50.0          
 ## How to run it
 
 api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/models)
+
+<sub>[context source](https://huggingface.co/CohereLabs/aya-vision-32b/blob/0554d66834922fc0f2e5f47a12f78464f4a98533/README.md): Context length stated on the official model card.</sub>
 
 no verified local download listed
 

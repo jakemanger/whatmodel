@@ -32,6 +32,8 @@ prior                   pull toward the middle                   49.8           
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2205.01068v4): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download       size  score
 4-bit fp16  ~0.25GB   22.3

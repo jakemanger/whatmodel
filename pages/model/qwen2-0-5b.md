@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-06 · 0.49B params · apache-2.0
 
-**score 20.2** ±4.0 · #399 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 20.4** ±3.9 · #406 of 411 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    15.6   2024-06-07   52% ▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    20.8   2026-09-19   41% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    15.7   2024-06-07   49% ▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    21.2   2026-09-19   44% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 20.2
+                        weighted average                       = 20.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,10 +28,12 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2407.10671v4): Context length from the maker's technical report.</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~0.79GB   20.2
-8-bit q8_0    ~1.09GB   20.2
+4-bit q4_k_m  ~0.79GB   20.4
+8-bit q8_0    ~1.09GB   20.4
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Runway · closed weights
 
-**score 39.9** ±2.4 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
+**score 40.1** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   59.2%    39.7   2025-05-17   38% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   55.7%    37.3   2025-05-17   22% ▇▇▇
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>   50.6%    37.7   2025-04-21   22% ▇▇▇
-<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1000.0    45.6   2025-05-05   16% ▇▇
+<a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   59.2%    40.0   2025-05-17   39% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   55.7%    37.7   2025-05-17   23% ▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>   50.6%    37.8   2025-04-21   21% ▇▇
+<a name="video-seaweed-7b"></a>Seaweed-7B: Cost-Effe…  <a href="https://arxiv.org/html/2504.08685v2#S4.T3">MagicArena image-to-video Elo…</a>  1000.0    45.8   2025-05-05   15% ▇▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 39.9
+                        weighted average                        = 40.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

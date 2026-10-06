@@ -6,7 +6,7 @@
 
 IBM · released 2025-06 · 8.65B params · apache-2.0
 
-**score 62.1** ±4.0 · #14 of 112 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 61.8** ±4.0 · #15 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.7%    64.9   2026-03-26   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  23.7%    37.5   2026-08-18    7% ▇
-prior                   pull toward the middle                   49.6                 6% ▇
-                        weighted average                       = 62.1
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.7%    64.6   2026-03-26   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  23.7%    37.4   2026-08-18    7% ▇
+prior                   pull toward the middle                   49.7                 6% ▇
+                        weighted average                       = 61.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.6           
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~21.26GB   62.1
+bf16 · nvidia only  ~21.26GB   61.8
 </pre>
 
 ```sh

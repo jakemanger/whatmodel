@@ -34,6 +34,8 @@ prior                   pull toward the middle           49.8                 2%
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2309.05463v1): Context length from the maker's technical report.</sub>
+
 <pre>
 download       size  score
 4-bit fp16  ~2.84GB   62.6

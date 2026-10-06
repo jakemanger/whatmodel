@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 61.3** ±2.0 · #126 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.3** ±2.0 · #127 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -27,6 +27,8 @@ prior                   pull toward the middle                    50.0          
 <sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
+
+<sub>[context source](https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md): Context length stated on the official model card.</sub>
 
 <pre>
 download          size  score

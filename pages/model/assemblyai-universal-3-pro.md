@@ -6,7 +6,7 @@
 
 AssemblyAI · released 2026-02 · proprietary
 
-**score 63.1** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 62.9** ±2.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.2%    62.0   2026-03-26   22% ▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.8%    65.0   2026-03-26   17% ▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.2%    66.8   2026-03-26   17% ▇▇
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  84.5%    57.8   2026-05-15   13% ▇▇
-                      <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   4.3%    68.8   2026-05-15   12% ▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.2%    61.8   2026-03-26   22% ▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   6.8%    64.8   2026-03-26   18% ▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.2%    66.5   2026-03-26   18% ▇▇
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench        <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  84.5%    57.9   2026-05-15   14% ▇▇
+                      <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   4.3%    68.9   2026-05-15   12% ▇
 <a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench     <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.4%    60.0   2026-07-16   16% ▇▇
-prior                 pull toward the middle                   49.6                 2% ▇
-                      weighted average                       = 63.1
+prior                 pull toward the middle                   49.7                 2% ▇
+                      weighted average                       = 62.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

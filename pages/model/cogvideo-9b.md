@@ -4,14 +4,27 @@
 
 # CogVideo 9B (original)
 
-Tsinghua / Zhipu · released 2022-05
+Tsinghua / Zhipu · released 2022-05 · 9.4B params · cogvideo-license
 
-Original 2022 CogVideo, distinct from CogVideoX 2024.
+**score 24.6** ±5.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/THUDM/CogVideo)
+## How the score was worked out
 
-[Catalogue source](https://huggingface.co/THUDM/CogVideo/blob/4a245c359560cadf8c4e8251f37b4cc06a3c4cbd/README.md)
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+<pre>
+source                  test                               score  implies  date        weight
+<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.27 / 5    20.5   2023-12-26   86% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                14% ▇▇
+                        weighted average                          = 24.6
+</pre>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/cogvideo-9b)
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+
+## How to run it
+
+no current API or local download verified
+
+[interactive version](https://whatmodel.sh/model/cogvideo-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -4,7 +4,7 @@
 
 # Deepgram Aura 2
 
-Deepgram · closed weights
+Deepgram · released 2025-04 · closed weights
 
 **score 61.4** ±2.8 · #24 of 92 · from 6 benchmark results across 4 sources
 

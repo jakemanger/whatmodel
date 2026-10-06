@@ -4,9 +4,9 @@
 
 # GLM-5V-Turbo
 
-Z.ai · closed weights
+Z.ai · released 2026-04 · closed weights
 
-**score 65.6** ±1.5 · #85 of 404 · from 4 benchmark results across 1 source
+**score 65.6** ±1.5 · #85 of 411 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

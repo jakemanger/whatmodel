@@ -6,7 +6,7 @@
 
 MiniMax · closed weights
 
-**score 46.0** ±3.5 · #49 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.2** ±3.5 · #49 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  61.0%    46.3   2025-04-21   49% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  60.0%    45.4   2025-04-21   46% ▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  61.0%    46.4   2025-04-21   49% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  60.0%    45.5   2025-04-21   46% ▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 5% ▇
-                        weighted average                       = 46.0
+                        weighted average                       = 46.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

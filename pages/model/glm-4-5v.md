@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-08 · 106B params (12B active) · mit
 
-**score 56.6** ±2.0 · #159 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.6** ±2.0 · #162 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,7 +17,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1352.6    56.5   2026-09-13   57% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1153.5    56.9   2026-09-13   41% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1153.5    57.0   2026-09-13   41% ▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
                         weighted average                        = 56.6
 </pre>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                    50.0          
 
 api (Z.ai) · $0.90/M blended · $0.6 in / $1.8 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/vlm/glm-4.5v.md)
 
-<sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.5V: input $0.6, output $1.8; cached input $0.11 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28.</sub>
+<sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.5V: input $0.6, output $1.8; cached input $0.11 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28. · [context source](https://huggingface.co/zai-org/GLM-4.5V/blob/ed47433b37111465ec527affaaddceff371bca04/README.md): Context length stated on the official model card.</sub>
 
 no verified local download listed
 

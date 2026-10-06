@@ -6,7 +6,7 @@
 
 Deepgram · closed weights
 
-**score 60.4** ±3.3 · #24 of 112 · from 3 benchmark results across 1 source
+**score 60.6** ±3.4 · #22 of 113 · from 3 benchmark results across 1 source
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.2%    59.8   2026-08-07   34% ▇▇▇▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    58.9   2026-08-07   33% ▇▇▇▇
-                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   4.0%    64.4   2026-08-07   29% ▇▇▇
-prior                   pull toward the middle                   49.6                 4% ▇
-                        weighted average                       = 60.4
+<a name="speech-stt-ru-mit"></a>Russian STT benchmark…  <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · rulibrispeech c…</a>  10.2%    60.1   2026-08-07   34% ▇▇▇▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · podlodka corpus…</a>   9.3%    59.2   2026-08-07   34% ▇▇▇▇
+                        <a href="https://github.com/vakovalskii/stt-ru-benchmark/blob/387548b8d9fdf51791a837b0c42059d2c2ebcaa9/README.md">Russian STT · fleurs corpus W…</a>   4.0%    64.7   2026-08-07   28% ▇▇▇
+prior                   pull toward the middle                   49.7                 4% ▇
+                        weighted average                       = 60.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

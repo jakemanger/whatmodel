@@ -4,7 +4,7 @@
 
 # FLUX1.1 \[pro\]
 
-Black Forest Labs · closed weights
+Black Forest Labs · released 2024-10 · closed weights
 
 **score 48.7** ±1.7 · #77 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 

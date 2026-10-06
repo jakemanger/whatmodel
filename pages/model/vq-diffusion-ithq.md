@@ -4,7 +4,7 @@
 
 # VQ-Diffusion (ITHQ)
 
-Microsoft · released 2022-11 · mit
+Microsoft · released 2022-11 · 1.27B params · mit
 
 **score 31.5** ±3.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

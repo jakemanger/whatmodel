@@ -34,6 +34,8 @@ prior                   pull toward the middle           49.8                 2%
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/allenai/OLMo-1B-hf/blob/aee7752d9c08ee4775e9b0091426d8410e8f6a89/README.md): Context length stated on the official model card.</sub>
+
 <pre>
 download       size  score
 4-bit fp32  ~4.71GB   49.3

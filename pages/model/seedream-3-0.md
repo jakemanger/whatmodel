@@ -4,7 +4,7 @@
 
 # Seedream 3.0
 
-ByteDance Seed · closed weights
+ByteDance Seed · released 2025-04 · closed weights
 
 **score 55.8** ±1.9 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

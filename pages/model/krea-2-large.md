@@ -4,7 +4,7 @@
 
 # Krea 2 Large
 
-Krea · proprietary
+Krea · released 2026-05 · proprietary
 
 **score 58.5** ±1.9 · #47 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

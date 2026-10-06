@@ -6,7 +6,7 @@
 
 NVIDIA · released 2023-06 · 0.114B params · cc-by-4.0
 
-**score 46.3** ±3.2 · #81 of 112 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.2** ±3.2 · #81 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   9.1%    47.8   2026-03-26   54% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  16.3%    44.1   2026-03-26   43% ▇▇▇▇▇
-prior                 pull toward the middle                   49.6                 4% ▇
-                      weighted average                       = 46.3
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   9.1%    47.7   2026-03-26   53% ▇▇▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  16.3%    44.0   2026-03-26   43% ▇▇▇▇▇
+prior                 pull toward the middle                   49.7                 4% ▇
+                      weighted average                       = 46.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                 pull toward the middle                   49.6             
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~1.05GB   46.3
+fp32 · nvidia only  ~1.05GB   46.2
 </pre>
 
 ```sh

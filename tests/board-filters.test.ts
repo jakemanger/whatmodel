@@ -59,7 +59,7 @@ test('historical entries without results are visible without inventing a score',
   if (detail?.kind === 'raw') assert.deepEqual(detail.raw, []);
   assert.equal(modelView('does-not-exist'), null);
   const catalogue = boardView('video', new URLSearchParams('retired=1'));
-  assert.equal(catalogue.rows.find((r) => r.id === 'cogvideo-9b')?.score, null);
+  assert.equal(catalogue.rows.find((r) => r.id === 'stable-video-diffusion')?.score, null);
   assert.deepEqual(catalogue.outside, { comparisonOnly: [], unscored: [], withoutResults: [] });
 });
 

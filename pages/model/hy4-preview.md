@@ -6,7 +6,7 @@
 
 Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
-**score 75.8** ±2.3 · #12 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 75.8** ±2.3 · #12 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -28,6 +28,8 @@ prior                   pull toward the middle               50.0               
 ## How to run it
 
 api (Tencent Cloud TokenHub) · price unknown · [cloud.tencent.com](https://cloud.tencent.com/document/product/1823/130051)
+
+<sub>[context source](https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md): Context length stated on the official model card.</sub>
 
 no verified local download listed
 

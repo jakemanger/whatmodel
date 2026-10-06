@@ -6,7 +6,7 @@
 
 Sber · released 2025-11 · 19B params · mit
 
-**score 52.1** ±2.2 · #38 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 52.2** ±2.2 · #39 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    52.0   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    54.7   2026-04-22    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    52.2   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    54.9   2026-04-22    3% ▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 52.1
+                        weighted average                = 52.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

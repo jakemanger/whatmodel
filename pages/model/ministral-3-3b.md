@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 3.85B params · apache-2.0
 
-**score 41.4** ±3.1 · #280 of 404 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.6** ±1.3 · #304 of 411 · from 15 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,34 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  39.3%    42.6   2026-05-02   57% ▇▇▇▇▇▇▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  30.5%    38.7   2026-09-25   39% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 41.4
+<a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          26.7%    37.7   2026-04-28   10% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    31.6%    41.2   2026-04-28    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   38.4%    36.3   2026-04-28    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        39.4%    35.8   2026-04-28    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       70.2%    39.0   2026-04-28    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        49.5%    43.7   2026-04-28    8% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     16.3%    36.8   2026-04-28    7% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           79.0%    40.0   2026-04-28    7% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            69.8%    43.1   2026-04-28    7% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         47.0%    34.3   2026-04-28    7% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  44.7%    45.6   2026-04-28    4% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  39.3%    42.3   2026-05-02    7% ▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  30.5%    39.0   2026-09-25    5% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  81.5%    42.7   2026-04-17    2% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.8%    45.0   2026-04-17    2% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 39.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
+<sub>Licences: Marco-MoE: Open Multilingual Mixture-of-Expert Language Models with Efficient Upcycling ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 <details><summary>Not counted (1)</summary>
 
 <pre>
 source                  test                       score  why
-mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md">MATH (subset unspecified)</a>  83.0%  too few models have it yet
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512/blob/b35d4dfe56c142746f54dbd64f579faab2744308/README.md">MATH (subset unspecified)</a>  83.0%  another source's result is used
 </pre>
 
 </details>
@@ -43,8 +56,8 @@ api (Mistral) · $0.10/M blended · $0.1 in / $0.1 out per 1M tokens · [docs.mi
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.81GB   41.4
-8-bit q8_0    ~5.12GB   41.4
+4-bit q4_k_m  ~2.81GB   39.6
+8-bit q8_0    ~5.12GB   39.6
 </pre>
 
 ```sh

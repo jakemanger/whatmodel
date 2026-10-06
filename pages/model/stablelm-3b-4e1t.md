@@ -14,6 +14,8 @@ No reviewed benchmark results yet. This catalogue entry has no score or rank.
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/stabilityai/stablelm-3b-4e1t/blob/fa4a6a92fca83c3b4223a3c9bf792887090ebfba/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 ```sh
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-3b-4e1t')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```

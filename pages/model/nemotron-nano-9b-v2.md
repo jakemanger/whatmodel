@@ -4,24 +4,44 @@
 
 # Nemotron Nano 9B v2
 
-NVIDIA · released 2025-08
+NVIDIA · released 2025-08 · 8.89B params · nvidia-open-model
 
-[Model and usage documentation](https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2)
+**score 47.9** ±5.7 · #231 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-AIME 2025                            72.1%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
-MATH-500                             97.8%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
-GPQA (subset unspecified)            64.0%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
-LiveCodeBench (version unspecifie…   71.1%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
-BFCL v3                              66.9%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
-IFEval instruction-level strict      90.3%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
-Humanity's Last Exam                  6.5%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">nvidia/NVIDIA-Nemotron-Nano-9…</a>
+source                 test                            score  implies  date        weight
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.1%    54.3   2026-04-17   45% ▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  62.4%    40.1   2026-04-17   41% ▇▇▇▇▇
+prior                  pull toward the middle                   50.0                15% ▇▇
+                       weighted average                       = 47.9
 </pre>
 
-<sub>Licences: nvidia/NVIDIA-Nemotron-Nano-9B-v2 model card ([NVIDIA Open Model License (2025-10-24)](../../licenses/card-nvidia-nvidia-nemotron-nano-9b-v2.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+
+<details><summary>Not counted (9)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">AIME 2025</a>                       72.1%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">MATH-500</a>                        97.8%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">GPQA (subset unspecified)</a>       64.0%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">LiveCodeBench (version unspec…</a>  71.1%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">BFCL v3</a>                         66.9%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">IFEval instruction-level stri…</a>  90.3%  too few models have it yet
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md">Humanity's Last Exam</a>             6.5%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  59.3%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2512.13607v2">LiveCodeBench Pro 2025Q2 (Med…</a>   4.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -29,9 +49,37 @@ api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.23 out per 1M tokens ·
 
 <sub>[price source](https://aws.amazon.com/bedrock/pricing): USD per 1M tokens, Amazon Bedrock on-demand 'NVIDIA Nemotron Nano 2' (Bedrock model ID nvidia.nemotron-nano-9b-v2; the separate 'Nano 2 VL' row is the 12B VL model), US East (N. Virginia)/Ohio and US West (Oregon). GovCloud rates excluded. Currency: USD. Amazon Bedrock official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-nano-9b-v2.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
+<pre>
+download               size  score
+4-bit gguf-q4_k_m   ~5.83GB   47.9
+8-bit gguf-q8_0    ~11.17GB   47.9
+</pre>
+
 ```sh
+# 4-bit gguf-q4_k_m
 llama-server -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
 llama-server -hf bartowski/nvidia_NVIDIA-Nemotron-Nano-9B-v2-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/nemotron-nano-9b-v2)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+## Quantization evidence
+
+How much of the full-precision result a quantized version kept, measured within one study. Rows from the same study share a table and aren't independent. They don't describe every download of that precision.
+
+<pre>
+precision                       test                                full → quantized    kept
+NVFP4 PTQ (post-training, W4A…  IFEval (instruction-level) accura…     0.903 → 0.898   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">99.4%</a>
+NVFP4 PTQ (post-training, W4A…  MATH-500 accuracy (NVIDIA evaluat…     0.978 → 0.972   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">99.4%</a>
+NVFP4 PTQ (post-training, W4A…  AIME 2025 accuracy (NVIDIA evalua…     0.711 → 0.698   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">98.2%</a>
+NVFP4 PTQ (post-training, W4A…  GPQA-Diamond accuracy (NVIDIA eva…       0.64 → 0.59   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">92.2%</a>
+NVFP4 QAD (quantization-aware…  AIME 2025 accuracy (NVIDIA evalua…     0.711 → 0.715  <a href="https://arxiv.org/html/2601.20088v3#S3.T2">100.6%</a>
+NVFP4 QAD (quantization-aware…  MATH-500 accuracy (NVIDIA evaluat…     0.978 → 0.972   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">99.4%</a>
+NVFP4 QAD (quantization-aware…  IFEval (instruction-level) accura…     0.903 → 0.893   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">98.9%</a>
+NVFP4 QAD (quantization-aware…  GPQA-Diamond accuracy (NVIDIA eva…      0.64 → 0.627   <a href="https://arxiv.org/html/2601.20088v3#S3.T2">98.0%</a>
+</pre>
+
+<sub>Each kept value links to its source.</sub>
+
+[interactive version](https://whatmodel.sh/model/nemotron-nano-9b-v2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

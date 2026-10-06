@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 58.8** ±2.0 · #142 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.8** ±2.0 · #145 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -30,7 +30,7 @@ prior                   pull toward the middle                    50.0          
 
 api (Z.ai) · $0.45/M blended · $0.3 in / $0.9 out per 1M tokens · [docs.z.ai](https://docs.z.ai/guides/vlm/glm-4.6v.md)
 
-<sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.6V: input $0.3, output $0.9; cached input $0.05 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28.</sub>
+<sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.6V: input $0.3, output $0.9; cached input $0.05 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28. · [context source](https://huggingface.co/zai-org/GLM-4.6V/blob/4e2d47eb0b41c5280d8294b17cef9e94fdcfff46/README.md): Context length stated on the official model card.</sub>
 
 no verified local download listed
 

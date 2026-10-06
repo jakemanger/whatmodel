@@ -53,6 +53,8 @@ prior                   pull toward the middle           49.8                 1%
 
 ## How to run it
 
+<sub>[context source](https://github.com/meta-llama/llama-models/blob/0e0b8c519242d5833d8c11bffc1232b77ad7f301/models/llama2/MODEL_CARD.md): Context length from the maker's official repository.</sub>
+
 <pre>
 download      size  score
 4-bit q4_0  ~3.8GB   62.8

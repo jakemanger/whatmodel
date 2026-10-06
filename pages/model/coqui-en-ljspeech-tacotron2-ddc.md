@@ -4,7 +4,7 @@
 
 # Tacotron 2 DDC (Coqui LJ Speech)
 
-Coqui TTS / Eren Gölge @erogol
+Coqui TTS / Eren Gölge @erogol · released 2021-04
 
 Exact registry entry tts\_models/en/ljspeech/tacotron2-DDC. Default vocoder vocoder\_models/en/ljspeech/hifigan\_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
 

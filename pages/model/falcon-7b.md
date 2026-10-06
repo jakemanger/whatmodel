@@ -42,6 +42,8 @@ prior                   pull toward the middle           49.8                 1%
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/tiiuae/falcon-7b/blob/ec89142b67d748a1865ea4451372db8313ada0d8/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download         size  score
 4-bit q4_0     ~4.2GB   59.7

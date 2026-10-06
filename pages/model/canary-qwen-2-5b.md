@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-07 · 2.56B params · cc-by-4.0
 
-**score 62.3** ±1.6 · #12 of 112 · from 7 benchmark results across 5 sources
+**score 62.1** ±1.6 · #13 of 113 · from 7 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.2%    64.2   2025-11-18   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.4%    62.0   2025-11-18   19% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.6%    65.6   2026-03-26   14% ▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.6%    59.7   2026-03-26   11% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">LibriSpeech test-clean WER</a>       1.6%    61.1   2026-09-15   16% ▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.2%    60.5   2026-07-16   10% ▇
-<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  70.0%    62.2   2026-09-10    9% ▇
-prior                   pull toward the middle                   49.6                 1% ▇
-                        weighted average                       = 62.3
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  18.2%    64.0   2025-11-18   21% ▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  22.4%    61.8   2025-11-18   19% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   5.6%    65.4   2026-03-26   14% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>   8.6%    59.5   2026-03-26   11% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-qwen-2.5b.json">LibriSpeech test-clean WER</a>       1.6%    60.8   2026-09-15   16% ▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/avg_wer_bar_top10.svg">RW-Voice-EQ ASR · 4 real-worl…</a>   9.2%    60.4   2026-07-16   10% ▇
+<a name="speech-stt-yoruba-cs-report"></a>Switch-aware evaluati…  <a href="https://arxiv.org/html/2609.11786v1">AfriCodeSwitch English-Yoruba…</a>  70.0%    61.9   2026-09-10    9% ▇
+prior                   pull toward the middle                   49.7                 1% ▇
+                        weighted average                       = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -51,7 +51,7 @@ nvidia/canary-qwen-2.…  <a href="https://huggingface.co/nvidia/canary-qwen-2.5
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.64GB   62.3
+bf16 · nvidia only  ~6.64GB   62.1
 </pre>
 
 ```sh

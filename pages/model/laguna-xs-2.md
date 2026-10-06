@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 33B params (3B active) · apache-2.0
 
-**score 61.5** ±2.3 · #124 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.5** ±2.3 · #125 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

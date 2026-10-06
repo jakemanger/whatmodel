@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 18.1** ±3.3 · #401 of 404 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 17.5** ±3.4 · #409 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              13.1%    13.5   2024-01-03   49% ▇▇▇▇▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              21.7%    19.6   2024-01-03   46% ▇▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              13.1%    12.7   2024-01-03   49% ▇▇▇▇▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              21.7%    19.1   2024-01-03   46% ▇▇▇▇▇
 prior                   pull toward the middle           50.0                 5% ▇
-                        weighted average               = 18.1
+                        weighted average               = 17.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,9 +38,11 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2306.11644v2): Training sequence length stated by the maker; no separate serving limit is published.</sub>
+
 <pre>
 download       size  score
-4-bit fp16  ~2.84GB   18.1
+4-bit fp16  ~2.84GB   17.5
 </pre>
 
 ```sh

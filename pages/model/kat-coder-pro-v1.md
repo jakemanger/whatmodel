@@ -6,7 +6,7 @@
 
 Kuaishou (Kwaipilot) · released 2025-10 · closed weights
 
-**score 59.5** ±2.3 · #137 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.4** ±2.3 · #141 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                        score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1254.5    59.7   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 59.5
+                        weighted average                   = 59.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,8 @@ prior                   pull toward the middle               50.0               
 ## How to run it
 
 api (StreamLake) · price unknown · [streamlake.ai](https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv)
+
+<sub>[context source](https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
-**score 48.7** ±1.6 · #45 of 76 · from 4 benchmark results across 3 sources
+**score 48.9** ±1.6 · #45 of 76 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.3   2026-09-22   52% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    47.9   2026-09-22   32% ▇▇▇▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    54.1   2026-05-06    8% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.7   2026-05-15    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.5   2026-09-22   52% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    48.1   2026-09-22   32% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    54.3   2026-05-06    8% ▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.9   2026-05-15    7% ▇
 prior                   pull toward the middle                            49.9                 1% ▇
-                        weighted average                                = 48.7
+                        weighted average                                = 48.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,10 +34,10 @@ api (fal.ai) · $0.080/sec · [fal.ai](https://fal.ai/models/fal-ai/wan/v2.2-a14
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~65.3GB   48.7
-bf16 · mac only                           ~65.3GB   48.7
-gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   48.7
-gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   48.7
+bf16 · nvidia only                        ~65.3GB   48.9
+bf16 · mac only                           ~65.3GB   48.9
+gguf-q8_0 ×2 experts + umt5 q8_0 (sd.cp…    ~45GB   48.9
+gguf-q4_k_m ×2 experts + umt5 q8_0 (sd.…  ~31.2GB   48.9
 </pre>
 
 ```sh

@@ -4,43 +4,87 @@
 
 # Nemotron Cascade 2 30B-A3B
 
-NVIDIA · released 2026-03
+NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-[Model and usage documentation](https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B)
+**score 60.4** ±2.1 · #132 of 411 · from 7 benchmark results across 2 sources
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-AIME 2025                            92.4%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-AIME 2026                            90.9%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-HMMT February 2025                   94.6%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-LiveCodeBench v6 (Aug 2024–May 20…   87.2%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-MMLU-Redux                           86.3%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-MMLU-Pro                             79.8%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-GPQA Diamond                         76.1%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-Humanity's Last Exam                 17.7%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-Arena-Hard v2 aggregate              83.5%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-IFBench prompt-level                 82.9%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-LongBench v2                         40.3%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-BFCL V4 (December 2025 archive)      52.9%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-τ²-bench aggregate                   58.9%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-Terminal-Bench 2.0                   21.1%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-SWE-bench Verified                   50.2%  lab          <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">nvidia/Nemotron-Cascade-2-30B…</a>
-IMO-AnswerBench                      79.3%  lab          <a href="https://arxiv.org/html/2603.19220v2">NVIDIA</a>
-MMLU-ProX                            72.5%  lab          <a href="https://arxiv.org/html/2603.19220v2">NVIDIA</a>
-MultiChallenge                       45.3%  lab          <a href="https://arxiv.org/html/2603.19220v2">NVIDIA</a>
-SciCode (level unspecified)          36.4%  lab          <a href="https://arxiv.org/html/2603.19220v2">NVIDIA</a>
+source                 test                            score  implies  date        weight
+<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    65.4   2026-03-22   20% ▇▇
+                       <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    65.6   2026-03-22   18% ▇▇
+                       <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    61.6   2026-03-22   11% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    58.9   2026-03-22    8% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    55.5   2026-03-22    8% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.8   2026-04-17   21% ▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    62.1   2026-04-17   13% ▇▇
+prior                  pull toward the middle                   50.0                 2% ▇
+                       weighted average                       = 60.4
 </pre>
 
-<sub>Licences: nvidia/Nemotron-Cascade-2-30B-A3B model card ([NVIDIA Open Model License (2025-10-24)](../../licenses/card-nvidia-nemotron-cascade-2-30b-a3b.txt)) · NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: NVIDIA ([CC BY 4.0](../../licenses/report-2603.19220v2.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+
+<details><summary>Not counted (21)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">AIME 2025</a>                       92.4%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">AIME 2026</a>                       90.9%  another source's result is used
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">HMMT February 2025</a>              94.6%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LiveCodeBench v6 (Aug 2024–Ma…</a>  87.2%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Redux</a>                      86.3%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">MMLU-Pro</a>                        79.8%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">GPQA Diamond</a>                    76.1%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Humanity's Last Exam</a>            17.7%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Arena-Hard v2 aggregate</a>         83.5%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">IFBench prompt-level</a>            82.9%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">LongBench v2</a>                    40.3%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">BFCL V4 (December 2025 archiv…</a>  52.9%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">τ²-bench aggregate</a>              58.9%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">Terminal-Bench 2.0</a>              21.1%  too few models have it yet
+nvidia/Nemotron-Casca…  <a href="https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B/blob/6327cdbcf907e1c7cec9cb29fb6e6cebdf8feaf7/README.md">SWE-bench Verified</a>              50.2%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">MMLU-ProX</a>                       72.5%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">MultiChallenge</a>                  45.3%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">SciCode (level unspecified)</a>     36.4%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">AIME 2025</a>                       92.4%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025</a>              94.6%  too few models have it yet
+NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate</a>         83.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/nvidia/nemotron-cascade-2-30b-a3b.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
+<pre>
+download          size  score
+4-bit q4_k_m  ~19.46GB   60.4
+</pre>
+
 ```sh
+# 4-bit q4_k_m
 ollama run nemotron-cascade-2:30b
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/nemotron-cascade-2-30b-a3b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision        speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  IQ4_XS     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-07-16/nemotron-cascade2-iq4xs/llama-bench.csv#L3">78.95 tok/s</a>  llama.cpp 505b1ed15 (build_number…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
+[interactive version](https://whatmodel.sh/model/nemotron-cascade-2-30b-a3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

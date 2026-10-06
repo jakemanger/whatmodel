@@ -4,7 +4,7 @@
 
 # Glow-TTS Mai (Ukrainian)
 
-Coqui TTS / @robinhad
+Coqui TTS / @robinhad · released 2021-10
 
 Exact registry entry tts\_models/uk/mai/glow-tts. Default vocoder vocoder\_models/uk/mai/multiband-melgan. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
 

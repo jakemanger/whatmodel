@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 27.2** ±4.5 · #384 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.2** ±4.4 · #392 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    24.9   2026-08-11   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   50.0                 9% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    25.1   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior             pull toward the middle                   50.0                 8% ▇
                   weighted average                       = 27.2
 </pre>
 
@@ -26,6 +26,8 @@ prior             pull toward the middle                   50.0                 
 <sub>Licences: SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt))</sub>
 
 ## How to run it
+
+<sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md): Context length stated on the official model card.</sub>
 
 <pre>
 download         size  score

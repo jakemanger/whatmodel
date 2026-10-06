@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 44.8** ±4.4 · #253 of 404 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.8** ±4.4 · #257 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -26,6 +26,8 @@ prior                   pull toward the middle                   50.0           
 <sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt))</sub>
 
 ## How to run it
+
+<sub>[context source](https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat/blob/7b0cc3380fe815e6f08fe2f80c03e05a8b1883d8/README.md): Context length stated on the official model card.</sub>
 
 <pre>
 download         size  score
