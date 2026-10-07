@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-12 · proprietary
 
-**score 74.8** ±1.3 · #19 of 462 · from 4 benchmark results across 2 sources
+**score 75.0** ±1.4 · #19 of 462 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       74.0%    74.8   2026-06-13   50% ▇▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          46.0%    74.4   2026-06-13   34% ▇▇▇▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-pro-2025-12-11-high/results.json">ARC-AGI-1 public evaluation s…</a>  94.6%    77.5   2026-06-04   12% ▇
-                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC-AGI-2 public evaluation s…</a>  37.9%    75.3   2026-06-04    4% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       74.0%    74.9   2026-06-13   51% ▇▇▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          46.0%    74.6   2026-06-13   30% ▇▇▇▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/gpt-5-2-pro-2025-12-11-high/results.json">ARC-AGI-1 public evaluation s…</a>  94.6%    77.5   2026-06-04   13% ▇▇
+                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-2-pro-2025-12-11-medium/results.json">ARC-AGI-2 public evaluation s…</a>  37.9%    75.4   2026-06-04    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 74.8
+                        weighted average                       = 75.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

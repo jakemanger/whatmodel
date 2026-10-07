@@ -6,7 +6,7 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 46.7** ±1.2 · #258 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.7** ±1.3 · #258 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

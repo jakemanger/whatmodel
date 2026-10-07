@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            49.1%    35.9   2023-11-20   37% ▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  52.6%    41.7   2023-11-20   23% ▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            49.1%    35.9   2023-11-20   36% ▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  52.6%    41.8   2023-11-20   23% ▇▇▇
         <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      43.7%    32.2   2023-11-20   18% ▇▇
         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  68.9%    41.6   2023-11-20   12% ▇
         <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     33.0%    35.0   2023-11-20    8% ▇

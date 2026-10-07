@@ -20,8 +20,8 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        51.8%    38.4   2024-03-28   20% ▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  41.5%    36.3   2024-01-31   14% ▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       57.0%    40.1   2024-01-31    7% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   59.2%    40.9   2023-11-20    5% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>   55.1%    43.2   2023-11-20    3% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   59.2%    41.0   2023-11-20    5% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>   55.1%    43.3   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                             50.9%    37.1   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>        76.5%    45.6   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                            38.0%    37.2   2023-11-20    1% ▇

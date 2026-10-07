@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 36.4** ±1.0 · #370 of 462 · from 6 benchmark results across 3 sources
+**score 36.5** ±1.0 · #369 of 462 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ source                  test                    score  implies  date        weig
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        39.7%    39.4   2024-01-03    4% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        39.8%    38.6   2024-01-03    4% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 36.4
+                        weighted average               = 36.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,8 +36,8 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~7.9GB   36.4
-8-bit q8_0     ~14GB   36.4
+4-bit q4_k_m  ~7.9GB   36.5
+8-bit q8_0     ~14GB   36.5
 </pre>
 
 ```sh

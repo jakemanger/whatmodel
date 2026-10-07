@@ -18,12 +18,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               20.7%    31.7   2024-03-28   24% ▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       29.3%    30.4   2024-03-28   19% ▇▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       28.7%    31.2   2024-02-29   17% ▇▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       28.7%    31.3   2024-02-29   17% ▇▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         22.7%    32.6   2024-02-29    6% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            53.1%    31.4   2024-02-29    6% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           39.7%    37.8   2024-02-29    2% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  27.8%    30.7   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    31.2   2024-05-07    6% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    31.3   2024-05-07    6% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    32.5   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    30.8   2024-05-07    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

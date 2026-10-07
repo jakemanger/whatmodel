@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · proprietary
 
-**score 62.7** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
+**score 62.6** ±1.7 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -22,7 +22,7 @@ source                  test                            score  implies  date    
 <a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>  63.4%    62.4   2025-05-21    9% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/hindigen_v1_results.json">HindiGen-v1 3C3H score (Incep…</a>  73.7%    63.6   2026-04-06    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 62.7
+                        weighted average                       = 62.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

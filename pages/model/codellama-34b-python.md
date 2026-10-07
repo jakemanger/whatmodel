@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 39.0** ±1.0 · #340 of 462 · from 6 benchmark results across 3 sources
+**score 39.0** ±1.0 · #339 of 462 · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ source                  test                    score  implies  date        weig
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         53.7%    40.7   2024-01-31   20% ▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              56.2%    39.5   2024-01-31    9% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        43.9%    42.0   2024-01-03    4% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        41.4%    39.7   2024-01-03    4% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>        41.4%    39.8   2024-01-03    4% ▇
 prior                   pull toward the middle           50.0                 0% ▇
                         weighted average               = 39.0
 </pre>

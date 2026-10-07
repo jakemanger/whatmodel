@@ -25,7 +25,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                77.2%    45.0   2026-09-25    6% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>           64.4%    35.9   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  32.3%    39.1   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  85.6%    43.3   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  85.6%    43.2   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                32.9%    28.0   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     14.1%    36.7   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          29.5%    23.1   2026-09-25    3% ▇

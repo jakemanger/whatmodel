@@ -19,9 +19,9 @@ source                  test                            score  implies  date    
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.1%    44.4   2023-11-20   19% ▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.9%    41.1   2023-11-20   12% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            67.9%    46.8   2023-11-20    9% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       88.4%    54.1   2023-11-20    6% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           76.0%    53.4   2023-11-20    4% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  18.1%    37.5   2024-11-14   33% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       88.4%    54.2   2023-11-20    6% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           76.0%    53.5   2023-11-20    4% ▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  18.1%    37.4   2024-11-14   33% ▇▇▇▇
 <a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  47.6%    41.0   2024-01-03   14% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 42.5

@@ -16,18 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   56.5%    44.3   2024-01-08   17% ▇▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      80.4%    46.8   2024-01-08   11% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       29.3%    45.2   2024-01-08    8% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        73.0%    46.4   2024-01-08    8% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       85.4%    45.8   2024-01-08    7% ▇
+<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   56.5%    44.4   2024-01-08   17% ▇▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      80.4%    46.9   2024-01-08   11% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       29.3%    45.3   2024-01-08    8% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        73.0%    46.5   2024-01-08    8% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       85.4%    45.9   2024-01-08    7% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            69.9%    49.3   2024-01-08    5% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.9%    44.4   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  25.4%    45.0   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                            13.8%    46.1   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            49.8%    46.5   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.6%    44.4   2024-01-08    3% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           69.6%    53.4   2024-01-08    2% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.9%    44.5   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  25.4%    45.1   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                            13.8%    46.2   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            49.8%    46.6   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.6%    44.5   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           69.6%    53.5   2024-01-08    2% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.0%    44.3   2023-11-20    6% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  62.6%    47.7   2023-11-20    4% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.7   2023-11-20    3% ▇

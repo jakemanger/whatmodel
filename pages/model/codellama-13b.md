@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 13.02B params · llama2
 
-**score 35.3** ±0.8 · #379 of 462 · from 17 benchmark results across 5 sources
+**score 35.4** ±0.8 · #379 of 462 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       37.8%    34.7   2024-02-29   17% ▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         25.1%    34.0   2024-02-29    7% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         25.1%    34.1   2024-02-29    7% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            62.4%    36.5   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           38.1%    36.8   2024-02-29    3% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           38.1%    36.8   2024-02-29    2% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.8%    35.9   2024-05-07   11% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            30.6%    28.3   2024-05-07    6% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      42.2%    38.4   2024-05-07    6% ▇
@@ -29,12 +29,12 @@ source                  test                            score  implies  date    
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  49.5%    36.2   2023-11-20    5% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  52.1%    41.5   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            37.5%    26.9   2023-11-20    2% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       69.8%    42.1   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       69.8%    42.2   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           22.0%    29.5   2023-11-20    1% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                42.5%    41.3   2024-01-03    3% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                39.7%    38.6   2024-01-03    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 35.3
+                        weighted average                       = 35.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,8 +47,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~7.9GB   35.3
-8-bit q8_0     ~14GB   35.3
+4-bit q4_k_m  ~7.9GB   35.4
+8-bit q8_0     ~14GB   35.4
 </pre>
 
 ```sh

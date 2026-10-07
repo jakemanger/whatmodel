@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   55.4%    47.1   2026-04-28    4% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MMMLU (Marco evaluation)</a>        56.4%    46.5   2026-04-28    4% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MGSM (Marco evaluation)</a>         68.7%    46.3   2026-04-28    4% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  52.4%    53.5   2026-04-28    3% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">AGIEval (Marco suite unspecif…</a>  52.4%    53.4   2026-04-28    3% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  73.1%    56.0   2026-04-17    5% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  89.7%    57.6   2026-04-17    4% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  44.4%    49.3   2026-05-02    6% ▇

@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 30.5%    32.1   2024-02-29   25% ▇▇▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 30.5%    32.1   2024-02-29   26% ▇▇▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   19.1%    29.7   2024-02-29   10% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      47.4%    28.3   2024-02-29    9% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     14.9%    24.1   2024-02-29    4% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  26.7%    30.1   2024-05-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    31.3   2024-05-07    9% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    31.4   2024-05-07    9% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      29.8%    29.7   2024-05-07    8% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    30.9   2024-05-07    7% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                             2.4%    18.5   2024-05-07    2% ▇

@@ -6,7 +6,7 @@
 
 Meta · released 2023-02 · 13B params · llama-1-noncommercial-research
 
-**score 40.9** ±1.2 · comparison only: no current run option verified · from 13 benchmark results across 1 source
+**score 41.0** ±1.2 · comparison only: no current run option verified · from 13 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     52.7%    42.3   2023-02-27   16% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        73.0%    41.8   2023-02-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         15.8%    41.5   2023-02-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>               3.9%    38.6   2023-02-27    9% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        56.4%    41.6   2023-02-27    9% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         79.2%    41.2   2023-02-27    8% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>             78.1%    39.2   2023-02-27    7% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          74.8%    40.6   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              22.0%    38.7   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              46.9%    40.7   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             17.8%    36.5   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        50.4%    42.6   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              80.1%    40.4   2023-02-27    3% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     52.7%    42.4   2023-02-27   16% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        73.0%    41.9   2023-02-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         15.8%    41.6   2023-02-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        56.4%    41.7   2023-02-27    9% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>               3.9%    38.7   2023-02-27    9% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         79.2%    41.3   2023-02-27    8% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>             78.1%    39.3   2023-02-27    7% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          74.8%    40.7   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              22.0%    38.8   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              46.9%    40.8   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             17.8%    36.6   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        50.4%    42.7   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              80.1%    40.5   2023-02-27    3% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 40.9
+                        weighted average               = 41.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

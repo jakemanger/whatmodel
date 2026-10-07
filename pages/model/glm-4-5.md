@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 63.5** ±1.4 · #121 of 462 · from 18 benchmark results across 4 sources
+**score 63.5** ±1.3 · #121 of 462 · from 18 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,19 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  91.0%    61.8   2025-08-08    8% ▇
+<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  91.0%    61.8   2025-08-08    7% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   79.1%    62.8   2025-08-08    6% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       90.0%    63.0   2025-08-08    6% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         64.2%    63.1   2025-08-08    6% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   84.6%    62.9   2025-08-08    5% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       14.4%    64.9   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.2%    61.0   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 26.4%    64.3   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   84.6%    62.8   2025-08-08    5% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 26.4%    63.8   2025-08-08    4% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       14.4%    64.7   2025-08-08    4% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.2%    60.9   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             79.7%    61.8   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   41.7%    62.9   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             52.8%    66.6   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   26.4%    70.6   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             52.8%    66.5   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.4%    60.0   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   26.4%    71.9   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.1%    59.9   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    77.8%    61.7   2025-08-08    2% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1411.3    64.9   2026-10-02   23% ▇▇▇

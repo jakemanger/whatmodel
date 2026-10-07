@@ -6,7 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 32.8** ±1.7 · #401 of 462 · from 7 benchmark results across 3 sources
+**score 32.8** ±1.7 · #403 of 462 · from 7 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   44.9%    34.0   2023-11-20   20% ▇▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                   44.9%    34.0   2023-11-20   19% ▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>   23.7%    22.7   2023-11-20   12% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                             58.6%    41.8   2023-11-20   10% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                             58.6%    41.9   2023-11-20   10% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>        54.3%    35.4   2023-11-20    6% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                            28.0%    32.8   2023-11-20    5% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1130.8    31.1   2026-10-02   37% ▇▇▇▇

@@ -20,12 +20,12 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       34.8%    32.5   2024-03-28   18% ▇▇
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 35.4%    33.8   2024-02-29   16% ▇▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   27.8%    36.1   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      54.4%    31.9   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      54.4%    32.0   2024-02-29    6% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     40.4%    37.9   2024-02-29    2% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                34.6%    31.6   2024-02-29    1% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                36.0%    31.8   2024-02-29    1% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                36.0%    31.9   2024-02-29    1% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.4%    35.8   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            45.4%    37.2   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            45.4%    37.3   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      34.2%    32.8   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      35.8%    33.8   2024-05-07    4% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            10.4%    34.1   2024-05-07    1% ▇

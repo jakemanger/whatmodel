@@ -6,7 +6,7 @@
 
 Upstage · released 2026-08 · closed weights
 
-**score 62.8** ±1.3 · #125 of 462 · from 3 benchmark results across 1 source
+**score 62.8** ±1.3 · #124 of 462 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

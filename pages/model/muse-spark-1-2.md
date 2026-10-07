@@ -6,7 +6,7 @@
 
 Meta · released 2026-08 · closed weights
 
-**score 72.8** ±1.2 · #35 of 462 · from 5 benchmark results across 2 sources
+**score 72.8** ±1.2 · #36 of 462 · from 5 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

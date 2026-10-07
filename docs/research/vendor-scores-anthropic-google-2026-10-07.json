@@ -1,0 +1,2668 @@
+{
+  "results": [
+    {
+      "model": "claude-opus-5-5",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.899,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Pro', column 'Claude Opus 5.5' = 89.9 (§8.2: 89.9%, average over five trials). Public/commercial split not stated. Standard configuration: adaptive thinking at max effort, default sampling, averaged over five trials. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "swe-bench-multilingual",
+      "score": 0.939,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A, row 'SWE-bench Multilingual', column 'Claude Opus 5.5' = 93.9 (§8.2: 300 problems, nine languages, average over five trials). Adaptive thinking at max effort, default sampling. Scaffold not stated. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "terminal-bench-4",
+      "score": 0.664,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A, row 'Terminal-Bench 4.0', column 'Claude Opus 5.5' = 66.4 (§8.5, p.178: 66.36%). xhigh effort (the card says max effort scored 64.8%, within noise). Claude Code in --bare mode, five trials per task (330 trials), SE ±2.6 pts. Safeguards on: flagged requests answered by a fallback model (2.5% of requests, 10% of trials). Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "hle",
+      "score": 0.644,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A, row 'Humanity's Last Exam', sub-row 'No tools', column 'Claude Opus 5.5' = 64.4. §8.11.1 (p.184): full 2,500-question multimodal set, reasoning-only with no tools, thinking set to auto, 1M total-token cap, no compaction, graded by Claude Opus 4.6. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "hle-with-tools",
+      "score": 0.677,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A, row 'Humanity's Last Exam', sub-row 'With tools', column 'Claude Opus 5.5' = 67.7. §8.11.1 (p.184): full 2,500-question set with web search, web fetch, programmatic tool calling and code execution. Thinking auto, 1M total-token cap, no compaction, Claude Opus 4.6 grader. Sources that discuss HLE are blocklisted and flagged transcripts are re-graded. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "hle-with-tools",
+      "score": 0.656,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.1.A, row 'Humanity's Last Exam', sub-row 'With tools', column 'Claude Fable 5.1' = 65.6. Comparison column for an earlier Anthropic model. This differs from the 65.0% on the Fable 5.1 announcement page. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "deepswe-v1-1",
+      "score": 0.742,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=175",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.3 'DeepSWE v1.1' prose: 'scored an average of 74.2% over five trials' on 113 tasks. Harness not stated. Standard configuration: adaptive thinking at max effort. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "toolathlon-verified",
+      "score": 0.778,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=211",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, Table 8.14.5.A 'Toolathlon scores (internal harness)', row 'Claude Opus 5.5', column 'Pass@1' = 77.8. Toolathlon-Verified (June 2026 release), 108 tasks, Pass@1 averaged over three trials. Adaptive thinking, max effort, safety classifiers on. One classifier stop and six sandbox-monitor halts are counted as failures. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "healthbench",
+      "score": 0.681,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=213",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.15.1 'HealthBench results' prose: raw score 68.1%. The length-adjusted 60.6% is not used. Adaptive thinking, max effort, Claude Opus 4.8 grader, five trials, no tools or custom system prompt. Safety classifiers on with refusal fallback to Claude Opus 5. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "global-mmlu",
+      "score": 0.943,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=215",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.16.1 'GMMLU results' prose: average accuracy 94.3% across 42 languages (Global MMLU, full). Adaptive thinking, max effort, single trial, no tools or custom system prompt. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "global-mmlu",
+      "score": 0.892,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=215",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.16.1 'GMMLU results' prose: Claude Sonnet 5 89.2% average across 42 languages. Adaptive thinking, max effort, single trial, no tools. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "chartography-with-tools",
+      "score": 0.89,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.13.1 'Chartography' prose: 'Claude Opus 5.5 achieved a score of 64.4% without tools and 89.0% with tools'. The with-tools figure is used: a container with the image file, standard libraries and an image-cropping tool. Adaptive thinking, max effort, five runs. Anthropic's internal grading implementation, with Gemini 3.5 Flash as grader (following the Surge AI leaderboard). Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "chartography-with-tools",
+      "score": 0.884,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.13.1 'Chartography' prose: 'Claude Fable 5.1 scored 44.8% and 88.4%' (without and with tools). With-tools figure. Container plus crop tool, adaptive thinking, max effort, five runs, Gemini 3.5 Flash grader. The card says earlier cards used a Claude Sonnet 4.6 judge and showed slightly lower scores. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "chartography-with-tools",
+      "score": 0.834,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-22",
+      "note": "Anthropic, Claude Opus 5.5 System Card, §8.13.1 'Chartography' prose: 'Claude Opus 5 achieved scores of 29.8% and 83.4%' (without and with tools). With-tools figure. Container plus crop tool, adaptive thinking, max effort, five runs, Gemini 3.5 Flash grader. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "terminal-bench-4",
+      "score": 0.103,
+      "source": "https://www.anthropic.com/claude-sonnet-5-5",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic announcement 'Claude Sonnet 5.5', benchmark table, row 'Agentic coding Terminal-Bench 4.0', column 'Sonnet 5' = 10.3%. Also stated in the text: 'compared to Sonnet 5's 10.3%'. Effort not stated. Vendor-reported (rule b)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.812,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Pro', column 'Claude Fable 5.1/Mythos 5.1' = 81.2 (§8.2: 'Fable 5.1 achieved 81.2%', average over five trials). Public/commercial split not stated. Standard configuration: adaptive thinking at max effort, default sampling, averaged over five trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "swe-bench-multilingual",
+      "score": 0.891,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'SWE-bench Multilingual', column 'Claude Fable 5.1/Mythos 5.1' = 89.1 (§8.2: 300 problems, nine languages, average over five trials). Adaptive thinking at max effort; scaffold not stated; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "deepswe-v1-1",
+      "score": 0.674,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=168",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.3 'DeepSWE v1.1' (113 tasks): 'Fable 5.1 scored an average of 67.4% over five trials'. Harness not stated; standard configuration adaptive thinking at max effort; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "terminal-bench-4",
+      "score": 0.558,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=171",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.6 'Terminal-Bench 4.0' (66 tasks): 'Claude Fable 5.1 scored 55.8%' (Table 8.1.A rounds to 56%). 15 trials per task (990 trials), standard error ±1.6-2 pts; Claude Code in --bare mode, maximum thinking effort; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "terminal-bench-4",
+      "score": 0.42,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=171",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.6 'Terminal-Bench 4.0': 'Claude Fable 5 42.0%' (Table 8.1.A: 42%). 15 trials per task (990 trials); Claude Code --bare mode, maximum thinking effort; public leaderboard reports Fable 5 at 44.5% (five trials); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "terminal-bench-4",
+      "score": 0.523,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=171",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.6 'Terminal-Bench 4.0': 'Claude Opus 5 scored 52.3%' (Table 8.1.A: 52%). 15 trials per task (990 trials); Claude Code --bare mode, maximum thinking effort; public leaderboard reports Opus 5 at 51.8%; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "hle",
+      "score": 0.609,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'No tools', column 'Claude Fable 5.1/Mythos 5.1' = 60.9%. §8.12.1: full 2,500-question multimodal set, reasoning-only, thinking auto, 1M total-token cap, no compaction, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "hle",
+      "score": 0.578,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'No tools', column 'Claude Fable 5/Mythos 5' = 57.8%. Full 2,500-question set; configuration in §8.12.1 is described for Fable 5.1; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "hle",
+      "score": 0.566,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'No tools', column 'Claude Opus 5' = 56.6%. Full 2,500-question set; configuration in §8.12.1 is described for Fable 5.1; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "hle-with-tools",
+      "score": 0.65,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'With tools', column 'Claude Fable 5.1/Mythos 5.1' = 65.0%. §8.12.1: full 2,500-question set; web search, restricted web fetch, programmatic tool calling, code execution; thinking auto; 1M total-token cap; no compaction; HLE sources blocklisted; Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "hle-with-tools",
+      "score": 0.638,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'With tools', column 'Claude Fable 5/Mythos 5' = 63.8%. Full 2,500-question set; tool configuration in §8.12.1 is described for Fable 5.1; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "hle-with-tools",
+      "score": 0.636,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'With tools', column 'Claude Opus 5' = 63.6%. Full 2,500-question set; tool configuration in §8.12.1 is described for Fable 5.1; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "chartography-with-tools",
+      "score": 0.862,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=184",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.14.1 'Chartography' (Surge AI, 100 tasks): 'Claude Fable 5.1 achieved ... 86.2% with tools'. Container with the image and standard libraries plus an image-cropping tool; adaptive thinking, max effort; averaged over five runs; Anthropic's internal grading implementation (grader not named here; the Opus 5.5 card says earlier cards used Claude Sonnet 4.6 as judge for Claude models); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "chartography-with-tools",
+      "score": 0.842,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=184",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.14.1 'Chartography': 'Claude Fable 5 scored 36.6% and 84.2%' (no tools / with tools). With-tools figure; container + image-cropping tool; adaptive thinking, max effort; five runs; internal grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "toolathlon-verified",
+      "score": 0.778,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=194",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, Table 8.15.5.A 'Toolathlon scores (internal harness)', row 'Claude Fable 5.1', column 'Pass@1' = 77.8. Toolathlon-Verified (authors' June 2026 final release), 108 tasks, Pass@1 averaged over three trials; adaptive thinking, max effort; production configuration with safety classifiers and Claude Opus 4.8 refusal fallback (11 of 324 trials used the fallback; 4 terminated trials counted as failures); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "healthbench",
+      "score": 0.667,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=198",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.17.1 'HealthBench results': 'Claude Fable 5.1 achieved a raw score of 66.7%' (raw score, not the 60% length-adjusted figure). Full HealthBench (5,000 conversations); adaptive thinking, max effort; Claude Opus 4.8 grader; five trials; no tools or custom system prompt; safety classifiers active with refusal fallback to Claude Opus 5; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "healthbench",
+      "score": 0.612,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=198",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.17.1 'HealthBench results': raw score 'Claude Fable 5 at 61.2%'. Adaptive thinking, max effort; Claude Opus 4.8 grader; five trials; no tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "global-mmlu",
+      "score": 0.94,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.18.1 'GMMLU results': 'Claude Fable 5.1 achieved an average accuracy of 94.0% across 42 languages'. Adaptive thinking, max effort; single trial; no tools or custom system prompt; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "global-mmlu",
+      "score": 0.936,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.18.1 'GMMLU results': 'Claude Fable 5 at 93.6%' (average across 42 languages). Adaptive thinking, max effort; single trial; no tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "global-mmlu",
+      "score": 0.925,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.18.1 'GMMLU results': 'Claude Opus 5 at 92.5%' (average across 42 languages). Adaptive thinking, max effort; single trial; no tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "global-mmlu",
+      "score": 0.89,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200",
+      "by": "lab",
+      "date": "2026-09-01",
+      "note": "Anthropic Claude Fable 5.1 & Mythos 5.1 System Card, §8.18.1 'GMMLU results': 'Claude Sonnet 5 at 89.0%' (average across 42 languages; the later Opus 5.5 card gives Sonnet 5 89.2%). Adaptive thinking, max effort; single trial; no tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.8,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card (June 9, 2026; revised June 25, 2026), Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Pro', column 'Fable 5' = 80 (§8.2: 'Claude Fable 5 achieved 80%', average over 5 trials). Split not stated; adaptive thinking, max effort; Fable scores reflect production safeguards incl. fallback to Opus 4.8; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.692,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'SWE-bench Pro', column 'Opus 4.8' = 69.2. Split not stated; settings for Opus 4.8 not restated in this card; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "swe-bench-verified",
+      "score": 0.95,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'SWE-bench Verified', column 'Fable 5' = 95 (§8.2: 500-problem subset, 'Fable 5 achieved 95%', average over 5 trials). Standard configuration, thinking blocks included; production safeguards incl. fallback to Opus 4.8; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "swe-bench-verified",
+      "score": 0.886,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'SWE-bench Verified', column 'Opus 4.8' = 88.6; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "terminal-bench-2.1",
+      "score": 0.843,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=254",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, §8.3 'Terminal-Bench 2.1' (Table 8.1.A also 84.3): 'Claude Fable 5: achieved 84.3% mean reward'. mini-SWE-agent harness on GKE, 1x timeout, 3x memory ceiling; high effort; 20.9% of trials hit a safety refusal and fell back to Claude Opus 4.8 for the rest of the trajectory; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "terminal-bench-2.1",
+      "score": 0.827,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=255",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, §8.3 'Terminal-Bench 2.1' (Table 8.1.A also 82.7): 'Claude Opus 4.8: achieved 82.7% mean reward, averaged over 5 attempts for each one of the 89 unique tasks (445 trials), at high effort'. mini-SWE-agent harness on GKE; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "hle",
+      "score": 0.498,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'No tools', column 'Opus 4.8' = 49.8. §8.14.1 describes the full 2,500-question set, reasoning-only, thinking auto, 1M token cap, Opus 4.6 grader (stated for Mythos 5); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "hle-with-tools",
+      "score": 0.579,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'Humanity's Last Exam' / 'With tools', column 'Opus 4.8' = 57.9. §8.14.1: web search, web fetch, programmatic tool calling, code execution; HLE sources blocklisted (stated for Mythos 5); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "charxiv-rq",
+      "score": 0.805,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'CharXiv Reasoning' / 'No tools', column 'Opus 4.8' = 80.5. §8.16.8: 1,000 validation questions, reference prompts but Claude Sonnet 4.6 as grader instead of GPT-4o, adaptive thinking max effort, five runs (stated for Mythos 5); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "osworld-verified",
+      "score": 0.85,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'OSWorld-Verified', column 'Fable 5' = 85.0. §8.16.3 / Figure 8.16.3.A: 361 tasks, 1080p, 100 steps, auto-thinking at max effort, pass@1 averaged over five runs; zoom-tool fix and 128K per-turn token limit; Fable scores reflect production safeguards; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "osworld-verified",
+      "score": 0.834,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.1.A, row 'OSWorld-Verified', column 'Opus 4.8' = 83.4. 361 tasks, 100 steps, auto-thinking at max effort, pass@1 averaged over five runs (Figure 8.16.3.A); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "usamo-2026",
+      "score": 0.967,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=260",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, §8.10 'USAMO 2026': 'Under similar settings, Opus 4.8 scored 96.7%'. MathArena grading methodology: proofs rewritten by Gemini 3.1 Pro and judged by a 3-model panel (Gemini 3.1 Pro, Claude Opus 4.6, Claude Mythos Preview), minimum score taken; 10 attempts per problem (as stated for Mythos 5); Opus 4.8 effort not stated; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-7",
+      "bench": "usamo-2026",
+      "score": 0.693,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=260",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, §8.10 'USAMO 2026': 'Under similar settings ... Opus 4.7 scored 69.3%'. MathArena grading methodology, 3-judge panel, minimum score; 10 attempts per problem (as stated for Mythos 5); effort not stated; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "toolathlon",
+      "score": 0.617,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=295",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.17.8.A 'Toolathlon scores (internal harness)', row 'Claude Fable 5', column 'Pass@1' = 61.7. Original Toolathlon (upstream tasks, 108 tasks; not the later Verified release), Pass@1 averaged over 3 trials; adaptive thinking at max effort; pinned data feeds/containers; card says its scores run ~3 points above a strictly upstream-equivalent harness; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "toolathlon",
+      "score": 0.599,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=295",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.17.8.A, row 'Claude Opus 4.8', column 'Pass@1' = 59.9. Internal harness, 108 tasks, 3 trials, adaptive thinking at max effort; ~3 points above upstream-equivalent harness per card; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-7",
+      "bench": "toolathlon",
+      "score": 0.593,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=295",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.17.8.A, row 'Claude Opus 4.7', column 'Pass@1' = 59.3. Internal harness, 108 tasks, 3 trials, adaptive thinking at max effort; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-6",
+      "bench": "toolathlon",
+      "score": 0.568,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=295",
+      "by": "lab",
+      "date": "2026-06-09",
+      "note": "Anthropic Claude Fable 5 & Mythos 5 System Card, Table 8.17.8.A, row 'Claude Opus 4.6', column 'Pass@1' = 56.8. Internal harness, 108 tasks, 3 trials, adaptive thinking at max effort; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.813,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-Bench Pro', column 'Claude Sonnet 5.5' = 81.3 (also §8.2: 'Sonnet 5.5 achieved 81.3%'); standard configuration per caption: adaptive thinking at max effort, default sampling settings (temperature, top_p), averaged over 5 trials, context ≤1M; public/commercial split not stated (§8.2: 'draws problems from actively-maintained repositories with large, multi-file diffs'); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "swe-bench-multilingual",
+      "score": 0.903,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-Bench Multilingual', column 'Claude Sonnet 5.5' = 90.3 (§8.2: 300 problems across 9 languages); adaptive thinking at max effort, default sampling, averaged over 5 trials; scaffold not named; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "hle",
+      "score": 0.569,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / No tools', column 'Claude Sonnet 5.5' = 56.9; §8.11.1: full 2,500-question multimodal set, reasoning-only, thinking set to auto, 980k-token task budget per attempt, no context compaction, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "hle",
+      "score": 0.431,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / No tools', column 'Claude Sonnet 5' = 43.1 (the Sonnet 5 System Card prints 43.2); full 2,500-question set, no tools, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "hle-with-tools",
+      "score": 0.645,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / With tools', column 'Claude Sonnet 5.5' = 64.5; §8.11.1: full 2,500-question set with web search, web fetch, programmatic tool calling and code execution, thinking auto, 980k-token task budget, no compaction, HLE-source blocklist, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "hle-with-tools",
+      "score": 0.549,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / With tools', column 'Claude Sonnet 5' = 54.9 (the Sonnet 5 System Card prints 57.4); full 2,500-question set with search/fetch/code tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "deepswe-v1-1",
+      "score": 0.71,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=110",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, §8.3 'DeepSWE v1.1' prose: 'Sonnet 5.5 scored an average of 71.0% over five trials' (113 tasks); harness not named; standard configuration adaptive thinking at max effort per Table 8.1.A caption; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "terminal-bench-4",
+      "score": 0.706,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=113",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, §8.5 'Terminal-Bench 4.0' prose: 'Claude Sonnet 5.5 scored 70.6% on Terminal-Bench 4.0'; 66 tasks; Claude Code in --bare mode at max thinking effort; 5 trials per task (330 trials), SE ±2.5 pts; safeguards enabled with default server-side fallback (1.2% of requests, 1.5% of trials); no internet egress (resources pre-cached); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "chartography-with-tools",
+      "score": 0.902,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=125",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, §8.13.1 'Chartography' prose: 'Claude Sonnet 5.5 achieved a score of 61.6% without tools and 90.2% with tools'; with-tools figure recorded; adaptive thinking at max effort; tools = container with image file and standard libraries plus an image cropping tool; internal grading implementation, Gemini 3.5 Flash grader (as on the Surge AI leaderboard); averaged over five runs; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "toolathlon-verified",
+      "score": 0.778,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=135",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, Table 8.14.5.A 'Toolathlon scores (internal harness)', row 'Claude Sonnet 5.5', column 'Pass@1' = 77.8; Toolathlon-Verified (authors' final release, June 2026), 108 tasks; adaptive thinking at max effort with safety classifiers (2 of 324 trials stopped, counted as failures); Pass@1 averaged over three trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "healthbench",
+      "score": 0.694,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=138",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, §8.15.1 'HealthBench' prose: 'Before length adjustment ... slightly ahead at max (69.4% against 68.1%)'; raw (not length-adjusted) score at max effort; safety classifiers enabled; graded by Claude Opus 4.8; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "global-mmlu",
+      "score": 0.921,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=140",
+      "by": "lab",
+      "date": "2026-09-28",
+      "note": "Anthropic Claude Sonnet 5.5 System Card, §8.16.1 'GMMLU results' prose: 'average accuracy of 92.1% across 42 languages'; adaptive thinking at max effort, single trial, no tools or custom system prompt (Figure 8.16.1.A caption); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.632,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Pro', column 'Claude Sonnet 5' = 63.2; standard configuration per caption: adaptive thinking at max effort, default sampling (temperature, top_p), averaged over 5 trials, 1M-token context; public/commercial split not stated (§8.2 'a harder variant ... reduced public ground-truth leakage'); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.581,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Pro', column 'Claude Sonnet 4.6' = 58.1; Sonnet 4.6 settings not restated in this card; split not stated; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "terminal-bench-2.1",
+      "score": 0.804,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Terminal-Bench 2.1', column 'Claude Sonnet 5' = 80.4; §8.3: mini-SWE-agent harness (not Terminus-2) on a GKE cluster with 1× timeout and 3× memory ceiling, xhigh effort, mean reward averaged over 5 attempts on each of 89 tasks (445 trials); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "terminal-bench-2.1",
+      "score": 0.67,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Terminal-Bench 2.1', column 'Claude Sonnet 4.6' = 67.0; §8.3: 'Sonnet 4.6 achieved a 67% score on the same evaluation and same infrastructure, at high effort' (mini-SWE-agent, GKE); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "browsecomp-context-managed",
+      "score": 0.847,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'BrowseComp', column 'Claude Sonnet 5' = 84.7 (single agent); caption and §8.9.2: web search, web fetch, programmatic tool calling and code execution, adaptive thinking at max effort, 10M-token limit with context compaction triggered at 200k, evaluation blocklist; multi-agent 86.6 not recorded; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "hle",
+      "score": 0.432,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / No tools', column 'Claude Sonnet 5' = 43.2 (the later Sonnet 5.5 card prints 43.1); §8.9.1: full 2,500-question multimodal set, reasoning only, thinking auto, 1M total-token cap, no compaction, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "hle",
+      "score": 0.346,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / No tools', column 'Claude Sonnet 4.6' = 34.6 (re-graded with updated grader per the Sonnet 5 announcement); no tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "hle-with-tools",
+      "score": 0.574,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / With tools', column 'Claude Sonnet 5' = 57.4 (the later Sonnet 5.5 card prints 54.9); §8.9.1: web search, web fetch, programmatic tool calling, code execution, thinking auto, 1M total-token cap, no compaction, HLE-source blocklist, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "hle-with-tools",
+      "score": 0.468,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / With tools', column 'Claude Sonnet 4.6' = 46.8; with search/fetch/code tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "osworld-verified",
+      "score": 0.812,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'OSWorld-Verified', column 'Claude Sonnet 5' = 81.2; §8.10.2 / Fig. 8.10.2.A: 361 tasks, 1080p, max 100 action steps, adaptive thinking at max effort, first-attempt success (pass@1) averaged over five runs; zoom-tool batched-action bug fix and 128K per-turn token limit (footnote 14); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "osworld-verified",
+      "score": 0.785,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=115",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'OSWorld-Verified', column 'Claude Sonnet 4.6' = 78.5; re-evaluated with the zoom-tool fix and 128K per-turn token limit (footnote 14, §8.10.2); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "swe-bench-verified",
+      "score": 0.852,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=116",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, §8.2 prose: 'SWE-bench Verified is a 500-problem subset ... Claude Sonnet 5 achieved 85.2%'; standard configuration (adaptive thinking at max effort), average over five trials, thinking blocks included; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "swe-bench-multilingual",
+      "score": 0.783,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=116",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, §8.2 prose: 'SWE-bench Multilingual extends the format to 300 problems across 9 programming languages. Sonnet 5 achieved 78.3%'; standard configuration (adaptive thinking at max effort), average over five trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "usamo-2026",
+      "score": 0.795,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=120",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, §8.6 'USAMO 2026' prose: 'Claude Sonnet 5 scored 79.5%, averaging over 10 attempts per problem'; high effort with a 300k-token limit; MathArena-style grading: proofs rewritten by Gemini 3.1 Pro and judged by a panel (Gemini 3.1 Pro, Claude Opus 4.6, Claude Mythos Preview), final score = minimum judge score; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "usamo-2026",
+      "score": 0.55,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=120",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, §8.6 'USAMO 2026' prose: 'Under similar settings, Sonnet 4.6 scored 55.0%'; same panel grading (minimum judge score); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "charxiv-rq",
+      "score": 0.77,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=129",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, §8.10.5 'CharXiv Reasoning' prose: 'Claude Sonnet 5 achieved 77.0% without tools and 88.3% with tools'; no-tools figure recorded; 1,000 validation-split questions, reference prompts, Claude Sonnet 4.6 grader instead of GPT-4o, adaptive thinking at max effort, averaged over five runs; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "charxiv-rq",
+      "score": 0.716,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=129",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, §8.10.5 'CharXiv Reasoning' prose: 'Claude Sonnet 4.6 (71.6% and 85.3%)' (without/with tools); no-tools figure recorded; 1,000 validation questions, Claude Sonnet 4.6 grader, adaptive thinking max effort, five runs; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "toolathlon",
+      "score": 0.543,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=135",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.11.5.A 'Toolathlon scores using an internal harness', row 'Claude Sonnet 5', column 'Pass@1' = 54.3; original Toolathlon release (108 tasks; card notes roughly a quarter of tasks unsatisfiable as published), not Toolathlon-Verified; adaptive thinking at max effort; Pass@1 averaged over 3 trials; pinned data feeds/containers, scores run ~3 points above a strictly upstream-equivalent harness; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "bench": "toolathlon",
+      "score": 0.494,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=135",
+      "by": "lab",
+      "date": "2026-06-30",
+      "note": "Anthropic Claude Sonnet 5 System Card, Table 8.11.5.A 'Toolathlon scores using an internal harness', row 'Claude Sonnet 4.6', column 'Pass@1' = 49.4; original Toolathlon (not Verified); adaptive thinking max effort; Pass@1 over 3 trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.792,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Pro', column 'Opus 5' = 79.2 (also §8.2); standard configuration per caption: adaptive thinking at max effort, default sampling (temperature, top_p), averaged over 5 trials, context ≤1M; split not stated; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "swe-bench-multilingual",
+      "score": 0.895,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Multilingual', column 'Opus 5' = 89.5 (also §8.2); adaptive thinking at max effort, averaged over 5 trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "swe-bench-multilingual",
+      "score": 0.844,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Multilingual', column 'Opus 4.8' = 84.4; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "swe-bench-multilingual",
+      "score": 0.866,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'SWE-bench Multilingual', column 'Fable 5' = 86.6; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "deepswe-v1-1",
+      "score": 0.688,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'DeepSWE v1.1', column 'Opus 5' = 68.8 (§8.3: 'an average of 68.8% over five trials', 113 tasks); harness not named; adaptive thinking at max effort; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "deepswe-v1-1",
+      "score": 0.59,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'DeepSWE v1.1', column 'Opus 4.8' = 59.0; harness not named; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "deepswe-v1-1",
+      "score": 0.697,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'DeepSWE v1.1', column 'Fable 5' = 69.7; harness not named; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "browsecomp-context-managed",
+      "score": 0.908,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'BrowseComp', column 'Opus 5' = 90.8; §8.10.2: web search, web fetch, programmatic tool calling and code execution, context compaction triggered at 200k tokens to extend beyond the 1M window (token budgets up to 10M in Fig. 8.10.2.A), Claude Opus 4.7 grader; Fig. 8.10.2.A says Opus 5 used an unreleased effort configuration; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "browsecomp-context-managed",
+      "score": 0.843,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'BrowseComp', column 'Opus 4.8' = 84.3; Fig. 8.10.2.A: comparison models run at max effort with token budgets scaled 1M→10M (context compaction); detailed settings deferred to the Fable 5 System Card; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "browsecomp-context-managed",
+      "score": 0.874,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'BrowseComp', column 'Fable 5' = 87.4; Fig. 8.10.2.A: comparison models run at max effort with token budgets scaled 1M→10M (context compaction); detailed settings deferred to the Fable 5 System Card; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "hle",
+      "score": 0.563,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / No tools', column 'Opus 5' = 56.3 (later Anthropic pages print 56.6 for Opus 5); §8.10.1: full 2,500-question multimodal set, reasoning only, thinking auto, 1M total-token cap, no compaction, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "hle",
+      "score": 0.565,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / No tools', column 'Fable 5' = 56.5; no tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "hle-with-tools",
+      "score": 0.647,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / With tools', column 'Opus 5' = 64.7 (later Anthropic pages print 63.6 for Opus 5); §8.10.1: web search, web fetch, programmatic tool calling and code execution, thinking auto, 1M total-token cap, no compaction, HLE-source blocklist, Claude Opus 4.6 grader; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-fable-5",
+      "bench": "hle-with-tools",
+      "score": 0.639,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.1.A 'Capability evaluation summary', row 'Humanity’s Last Exam / With tools', column 'Fable 5' = 63.9; with search/fetch/code tools; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "swe-bench-verified",
+      "score": 0.96,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=153",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, §8.2 prose: 'SWE-bench Verified is a 500-problem subset ... Claude Opus 5 achieved 96.0%'; average over five trials, standard configuration (adaptive thinking at max effort); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "chartography-with-tools",
+      "score": 0.83,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, §8.12.1 'Chartography' prose: 'Claude Opus 5 achieved a score of 29.6% without tools and 83.0% with tools'; with-tools figure recorded; adaptive thinking at max effort, container with image file and standard libraries plus image cropping tool, internal grading implementation, averaged over five runs; grader not named here (the Opus 5.5 card says earlier cards used a Claude Sonnet 4.6 judge for Claude models and re-reports Opus 5 at 83.4%); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "chartography-with-tools",
+      "score": 0.75,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=174",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, §8.12.1 'Chartography' prose: 'Claude Opus 4.8 scored 17.0% and 75.0%' (without/with tools); with-tools figure recorded; adaptive thinking max effort, container + image cropping tool, five runs; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "toolathlon-verified",
+      "score": 0.806,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=183",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.13.6.A 'Toolathlon scores (internal harness)', row 'Claude Opus 5', column 'Pass@1' = 80.6; Toolathlon-Verified (authors' final release, June 2026), 108 tasks; internal harness mirroring task definitions/checkers, adaptive thinking at max effort, no safety classifiers or fallback; Pass@1 averaged over three trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "toolathlon-verified",
+      "score": 0.799,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=183",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.13.6.A 'Toolathlon scores (internal harness)', row 'Claude Opus 4.8', column 'Pass@1' = 79.9; Toolathlon-Verified, internal harness, adaptive thinking max effort; Pass@1 over three trials (published leaderboard 76.2%, null attempts counted as failures); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "toolathlon-verified",
+      "score": 0.747,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=183",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, Table 8.13.6.A 'Toolathlon scores (internal harness)', row 'Claude Sonnet 5', column 'Pass@1' = 74.7; Toolathlon-Verified, internal harness, adaptive thinking max effort; Pass@1 over three trials (published leaderboard 71.6%); vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "bench": "healthbench",
+      "score": 0.671,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=188",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, §8.15.1 'HealthBench results' prose: 'Claude Opus 5 achieved a raw score of 67.1%' (length-adjusted 57.8% not recorded); full set of 5,000 conversations; adaptive thinking at max effort, Claude Opus 4.8 grader, averaged over 5 trials, no tools or custom system prompt; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "bench": "healthbench",
+      "score": 0.588,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=188",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, §8.15.1 'HealthBench results' prose: 'Claude Opus 4.8 at 58.8%' (raw score); adaptive thinking max effort, Claude Opus 4.8 grader, 5 trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-sonnet-5",
+      "bench": "healthbench",
+      "score": 0.592,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=188",
+      "by": "lab",
+      "date": "2026-07-24",
+      "note": "Anthropic Claude Opus 5 System Card, §8.15.1 'HealthBench results' prose: 'Claude Sonnet 5 at 59.2%' (raw score); adaptive thinking max effort, Claude Opus 4.8 grader, 5 trials; vendor-reported (rule b)"
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.908,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.8 Flash', table 'What's new in Gemini 3.8 Flash?', row 'Terminal-bench 2.1', column '3.8 Flash' = 90.8%; harness, thinking level and trials not stated on this page (the 3.8 Flash model card gives 89.4% for the same label, self-computed with Terminus 2); page 'Last updated 2026-10-06 UTC'; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.816,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.8 Flash', table 'What's new in Gemini 3.8 Flash?', row 'Terminal-bench 2.1', column '3.7 Flash' = 81.6%; settings not stated. Conflicts with the 3.7 Flash guide (85.1%) and both model cards (85.8%) for the same model and label; page 'Last updated 2026-10-06 UTC'; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.616,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.8 Flash', table 'What's new in Gemini 3.8 Flash?', row 'SWE-Bench Pro', column '3.8 Flash' = 61.6%; public/commercial split, harness and thinking level not stated; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "swe-bench-pro-split-unspecified",
+      "score": 0.604,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.8 Flash', table 'What's new in Gemini 3.8 Flash?', row 'SWE-Bench Pro', column '3.7 Flash' = 60.4%; split, harness and thinking level not stated; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "tau3-banking",
+      "score": 0.381,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.8 Flash', table 'What's new in Gemini 3.8 Flash?', row 'τ³-bench Banking', column '3.8 Flash' = 38.1%; user simulator, harness and thinking level not stated; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "tau3-banking",
+      "score": 0.309,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.8 Flash', table 'What's new in Gemini 3.8 Flash?', row 'τ³-bench Banking', column '3.7 Flash' = 30.9%; user simulator, harness and thinking level not stated; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.851,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.7 Flash', table 'What's new in Gemini 3.7 Flash?', row 'Terminal-bench 2.1', column '3.7 Flash' = 85.1%; settings not stated. Conflicts with the 3.8 Flash guide (81.6%) and both model cards (85.8%); this is the model's own guide; page 'Last updated 2026-10-06 UTC'; CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.73,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new",
+      "by": "lab",
+      "date": "2026-10-06",
+      "note": "Google Cloud 'Developer's guide to Gemini 3.7 Flash', table 'What's new in Gemini 3.7 Flash?', row 'Terminal-bench 2.1', column '3.6 Flash' = 73.0%; settings not stated. Conflicts with the 3.7 Flash model card (78.0%, self-computed, Terminus 2); CC BY 4.0 page (rule a)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "bench": "deepswe-v1-1",
+      "score": 0.779,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "by": "lab",
+      "note": "Google DeepMind Gemini model page, 'Frontier performance in complex workflows' table, row 'DeepSWE v1.1 (Agentic coding)', column 'Gemini 4 Argon' = 77.9%; per the Gemini 4 Argon evaluation PDF (storage.googleapis.com/deepmind-media/gemini/gemini_4_argon_model_evaluation.pdf, p.2) self-computed with a mini-swe agent harness, Gemini API at highest thinking setting, pass@1, averaged over trials for smaller benchmarks; same figure in the 2026-09-30 blog.google Argon post text. Page undated (Argon announced 2026-09-30); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "bench": "terminal-bench-4",
+      "score": 0.574,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "by": "lab",
+      "note": "Google DeepMind Gemini model page, 'Frontier performance in complex workflows' table, row 'Terminal-bench 4.0 (Agentic coding)', column 'Gemini 4 Argon' = 57.4%; per the Argon evaluation PDF (p.2) the Argon result is self-computed (other models from the public leaderboard), Gemini API at highest thinking setting, pass@1; harness not stated. Page undated; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "bench": "lvbench",
+      "score": 0.917,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "by": "lab",
+      "note": "Google DeepMind Gemini model page, 'Frontier performance in complex workflows' table, row 'LVBench (Multimodal understanding)', column 'Gemini 4 Argon' = 91.7%; per the Argon evaluation PDF (p.4) self-computed without tools at 1 FPS, highest thinking setting, pass@1; same figure in the blog.google Argon post. Page undated; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "deepswe-v1-1",
+      "score": 0.737,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-09-02",
+      "note": "Gemini 3.8 Flash model card (HTML), Evaluation 'Results as of September, 2026' table, row 'DeepSWE v1.1 (Long-horizon software engineering)', column 'Gemini 3.8 Flash' = 73.7%; per the 3.8 Flash evaluation PDF (storage.googleapis.com/deepmind-media/gemini/gemini_3-8_flash_model_evaluation.pdf, p.2) self-computed with a mini-swe agent harness and high thinking, pass@1, default sampling. The PDF model card shows this table only as an image; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.894,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-09-02",
+      "note": "Gemini 3.8 Flash model card (HTML), Evaluation results table, row 'Terminal-bench 2.1 (Agentic terminal coding)', column 'Gemini 3.8 Flash' = 89.4%; per the 3.8 Flash evaluation PDF (p.2) self-computed for Gemini models with the default Terminus 2 harness, pass@1, default sampling. Differs from the Cloud guide's 90.8% for the same label; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "charxiv-rq",
+      "score": 0.862,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-09-02",
+      "note": "Gemini 3.8 Flash model card (HTML), Evaluation results table, row 'CharXiv Reasoning (Information synthesis from complex charts)', notes 'No tools', column 'Gemini 3.8 Flash' = 86.2%; per the evaluation PDF (p.2) self-computed, pass@1, default sampling; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "bench": "lvbench",
+      "score": 0.871,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-09-02",
+      "note": "Gemini 3.8 Flash model card (HTML), Evaluation results table, row 'LVBench (Long video understanding)', column 'Gemini 3.8 Flash', second value '87.1%(static)' (the cell also shows 87.8% (agentic), listed as unmatched); per the evaluation PDF (p.2) self-computed without tools, 1024 frames for Gemini; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "deepswe-v1-1",
+      "score": 0.653,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation 'Results as of August 2026' table, row 'DeepSWE v1.1 (Long-horizon software engineering)', column 'Gemini 3.7 Flash' = 65.3%; per the 3.7 Flash evaluation PDF (storage.googleapis.com/deepmind-media/gemini/gemini_3-7_flash_model_evaluation.pdf, p.2) self-computed with a mini swe agent harness, LiteLLM 1.96, high thinking, pass@1. The PDF model card shows this table only as an image; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.858,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'Terminal-bench 2.1 (Agentic terminal coding)', column 'Gemini 3.7 Flash' = 85.8%; per the evaluation PDF (p.2) self-computed for Gemini models with the default Terminus 2 harness, pass@1, default sampling. Same value in the 3.8 Flash card; Cloud guides print 85.1% (3.7 guide) and 81.6% (3.8 guide); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "bench": "terminal-bench-2.1",
+      "score": 0.78,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'Terminal-bench 2.1', column 'Gemini 3.6 Flash' = 78.0%; self-computed for Gemini models with the default Terminus 2 harness (evaluation PDF p.2). The 3.7 Cloud guide prints 73.0% for 3.6 Flash; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "terminal-bench-3",
+      "score": 0.149,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'Terminal-bench 3.0 (General agent capabilities)', column 'Gemini 3.7 Flash' = 14.9%; per the evaluation PDF (p.2) Gemini results self-computed with a mini swe agent harness (LiteLLM 1.96), with minor compatibility modifications to the cli-2ph-simplex and vpp-loss-divergence tasks; pass@1; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "bench": "terminal-bench-3",
+      "score": 0.054,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'Terminal-bench 3.0', column 'Gemini 3.6 Flash' = 5.4%; Gemini results self-computed with a mini swe agent harness (LiteLLM 1.96), minor modifications to two tasks (evaluation PDF p.2); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "charxiv-rq",
+      "score": 0.845,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'CharXiv Reasoning (Information synthesis from complex charts)', notes 'No tools', column 'Gemini 3.7 Flash' = 84.5%; self-computed (evaluation PDF p.2); same value in the 3.8 Flash card; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "bench": "charxiv-rq",
+      "score": 0.852,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'CharXiv Reasoning', notes 'No tools', column 'Gemini 3.6 Flash' = 85.2%; self-computed (evaluation PDF p.2); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "lvbench",
+      "score": 0.854,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'LVBench (Long video understanding)', column 'Gemini 3.7 Flash' = 85.4%; per the evaluation PDF (p.3) self-computed, 1024 frames for Gemini, no tool used; same value in the 3.8 Flash card; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "bench": "lvbench",
+      "score": 0.842,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'LVBench', column 'Gemini 3.6 Flash' = 84.2%; self-computed, 1024 frames, no tool used (evaluation PDF p.3); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "bench": "mrcr-v2-8needle-128k",
+      "score": 0.97,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'GDM-MRCR v2 (8-needle) (Long context performance)', notes '128k (average)', column 'Gemini 3.7 Flash' = 97.0%; per the evaluation PDF (p.3) self-computed, 128k reported as a cumulative score. Mapped to mrcr-v2-8needle-128k assuming the catalogue's Gemma-report entry uses the same Google 128k average (flagged); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "bench": "mrcr-v2-8needle-128k",
+      "score": 0.918,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "by": "lab",
+      "date": "2026-08-13",
+      "note": "Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'GDM-MRCR v2 (8-needle)', notes '128k (average)', column 'Gemini 3.6 Flash' = 91.8%; self-computed, cumulative 128k score (evaluation PDF p.3); same mapping caveat as the 3.7 Flash row; vendor-reported (rule b)."
+    }
+  ],
+  "ledger": [
+    {
+      "id": "first-party-anthropic-scores",
+      "name": "Anthropic system cards and model announcements (lab-reported scores)",
+      "match": [
+        "www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf",
+        "www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf",
+        "www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf",
+        "www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf",
+        "www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf",
+        "www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf",
+        "anthropic.com/claude-sonnet-5-5"
+      ],
+      "kind": "first-party",
+      "license": "Factual vendor-reported score (not licensed content)",
+      "terms_url": "https://www.anthropic.com/legal/consumer-terms",
+      "verdict": "allowed",
+      "checked": "2026-10-07",
+      "exact": true,
+      "attribution": "Anthropic PBC, benchmark results it published for its own Claude models in system cards (PDF) and announcement pages, observed 2026-10-07. Individual figures were recorded by hand and converted to fractions, with printed settings in each row's note. Lab-reported, not independent. Not licensed or endorsed by Anthropic.",
+      "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). A vendor's own published score for its own model may be recorded from its announcement page, system or model card, or docs. Each figure is recorded by hand from a single fetch. Only own-model, vendor-computed cells are used, never other labs' rows or cells credited to a third party. No tables, charts or prose are reproduced, and no automated extraction is used. Governing terms: Anthropic Consumer Terms forbid 'crawl, scrape, or otherwise harvest' and bot or script access, but contain no clause against quoting an individual figure. The pages show '© 2026 Anthropic PBC', the system cards carry no licence or copyright statement, and neither grants a licence."
+    },
+    {
+      "id": "first-party-google-scores",
+      "name": "Google DeepMind Gemini model page and model cards (lab-reported scores)",
+      "match": [
+        "deepmind.google/models/gemini",
+        "deepmind.google/models/model-cards/gemini-3-8-flash",
+        "deepmind.google/models/model-cards/gemini-3-7-flash"
+      ],
+      "kind": "first-party",
+      "license": "Factual vendor-reported score (not licensed content)",
+      "terms_url": "https://policies.google.com/terms",
+      "verdict": "allowed",
+      "checked": "2026-10-07",
+      "exact": false,
+      "attribution": "Google DeepMind, benchmark results it published for its own Gemini models on deepmind.google (Gemini model page, Gemini 3.8 Flash and 3.7 Flash model cards), observed 2026-10-07. Provenance and settings were checked against Google's evaluation-methodology PDFs. Individual figures were recorded by hand and converted to fractions. Lab-reported, not independent. Not licensed or endorsed by Google.",
+      "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). These are Google's own scores for its own models, recorded by hand one figure at a time from a single fetch. Only Google-computed cells are used: cells the methodology PDFs credit to Vals AI, Zapier, Artificial Analysis, leaderboards or other labs are excluded. Google Terms of Service: 'You may use Google's content as allowed by these terms ... but we retain any intellectual property rights that we have in our content.' Automated access is restricted only through robots.txt, and deepmind.google has 'Allow: /'. There is no anti-quoting clause. The page footers link only Privacy and Terms, with no licence. 'exact' is false only because lib/sources.ts sourceIn() never matches an exact entry against a URL whose path ends in '/' (these canonical URLs do). The paths are page-specific."
+    },
+    {
+      "id": "google-cloud-gemini-guides",
+      "name": "Google Cloud developer's guides to Gemini 3.8 Flash and 3.7 Flash",
+      "match": [
+        "docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash",
+        "docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash"
+      ],
+      "kind": "first-party",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "terms_url": "https://developers.google.com/site-policies",
+      "verdict": "allowed",
+      "checked": "2026-10-07",
+      "exact": true,
+      "attribution": "Google Cloud, 'Developer's guide to Gemini 3.8 Flash' and 'Developer's guide to Gemini 3.7 Flash' (docs.cloud.google.com, last updated 2026-10-06), CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Changes: selected cells from the 'What's new' text tables were transcribed into JSON, percentages divided by 100 and benchmark labels mapped to our ids. Lab-reported. No endorsement.",
+      "quote": "Page footer (both guides, rule a): 'Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies.' The benchmark tables are text, not images, so the grant covers them."
+    }
+  ],
+  "unmatched": [
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "SWE-bench Multimodal",
+      "score": 0.614,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "proposed_definition": "swe-bench-multimodal: SWE-bench Multimodal (Yang et al. 2024, arXiv:2410.03859). Resolved fraction on issues with visual context (screenshots, design mockups). Split and scaffold per note."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "Terminal-Bench-Science 0.1",
+      "score": 0.587,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "proposed_definition": "terminal-bench-science-0-1: Terminal-Bench-Science v0.1 (Stanford-led, 70 scientific-workflow tasks graded by hidden task-specific tests). Pass rate averaged over trials. Harness per note (Anthropic: Claude Code --bare, max effort, 10–12 trials per task)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "Terminal-Bench-Science 0.1",
+      "score": 0.29,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=174",
+      "proposed_definition": "terminal-bench-science-0-1 (as above). The card says the public leaderboard has 30.0% (three trials, Claude Code harness)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "Terminal-Bench-Science 0.1",
+      "score": 0.247,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=178",
+      "proposed_definition": "terminal-bench-science-0-1 (as above). Prose §8.6: Fable 5 24.7% over 10 trials per task. The public leaderboard has 21.4%."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "OSWorld 2.0 (partial), Sept 10 2026 task files; labelled 'OSWorld 2.1' on the announcement page",
+      "score": 0.818,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+      "proposed_definition": "osworld-2-partial-<task-release>: OSWorld 2.0 (arXiv:2606.29537), 108 long-horizon Ubuntu computer-use tasks. Partial score = mean per-task checkpoint credit, pass@1 averaged over runs. Task-file release and harness are part of the id, because releases are not comparable."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OSWorld 2.0 (partial), Sept 10 2026 task files",
+      "score": 0.74,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+      "proposed_definition": "osworld-2-partial-<task-release> (as above)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "OSWorld 2.0 (partial), Sept 10 2026 task files",
+      "score": 0.807,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+      "proposed_definition": "osworld-2-partial-<task-release> (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "OSWorld 2.0 (strict pass rate), Sept 10 2026 task files",
+      "score": 0.487,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+      "proposed_definition": "osworld-2-strict-<task-release>: OSWorld 2.0, the fraction of tasks with every checkpoint satisfied. Pass@1 averaged over runs. Kept separate from the partial score."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OSWorld 2.0 (strict pass rate), Sept 10 2026 task files",
+      "score": 0.372,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+      "proposed_definition": "osworld-2-strict-<task-release> (as above)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "OSWorld 2.0 (strict pass rate), Sept 10 2026 task files",
+      "score": 0.428,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=206",
+      "proposed_definition": "osworld-2-strict-<task-release> (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "HealthBench Professional (raw)",
+      "score": 0.771,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=213",
+      "proposed_definition": "healthbench-professional: HealthBench Professional (arXiv:2604.27470), 525 physician-authored conversations. Raw rubric score from an LLM judge (not length-adjusted). Grader per note. Table 8.1.A prints 65.6, which is the length-adjusted score."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "HealthBench Professional (raw)",
+      "score": 0.624,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=213",
+      "proposed_definition": "healthbench-professional (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "ArXivMath (August 2026, 57 problems), without tools",
+      "score": 0.912,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=181",
+      "proposed_definition": "arxivmath-2026-08-no-tools-vendor: MathArena ArXivMath August 2026 problem set. Final-answer accuracy with no tools in the vendor's own harness and grader, mean over attempts (Anthropic: four). Kept separate from matharena-arxivmath-2026-08, which uses MathArena's tool harness and judge."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "ArXivMath (August 2026), without tools",
+      "score": 0.829,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=181",
+      "proposed_definition": "arxivmath-2026-08-no-tools-vendor (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "ArXivMath (August 2026), without tools",
+      "score": 0.781,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=181",
+      "proposed_definition": "arxivmath-2026-08-no-tools-vendor (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "ArXivMath (August 2026), with tools (code execution sandbox, no internet)",
+      "score": 0.969,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=181",
+      "proposed_definition": "Close to matharena-arxivmath-2026-08: the same 57-problem set, with tools and no internet. But this is the vendor's harness with four attempts, not MathArena's agent harness (Python + SageMath, best-guess prompt, two attempts, LLM judge). The card says the two are 'not directly comparable'. Either widen matharena-arxivmath-2026-08 to 'harness per note' or add arxivmath-2026-08-tools-vendor."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "ArXivMath (August 2026), with tools",
+      "score": 0.921,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=181",
+      "proposed_definition": "As above (vendor-harness ArXivMath August 2026 with tools)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "ArXivMath (August 2026), with tools",
+      "score": 0.904,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=181",
+      "proposed_definition": "As above (vendor-harness ArXivMath August 2026 with tools)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "ProgramBench (166 tasks, mini-swe-agent)",
+      "score": 0.912,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=183",
+      "proposed_definition": "programbench-golden: ProgramBench (arXiv:2605.03546) hidden-test pass rate on tasks whose reference binary scores ≥0.9, using the upstream mini-swe-agent harness. Task count and time limit per note (Anthropic: 166 tasks, no six-hour limit)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "ProgramBench (166 tasks)",
+      "score": 0.854,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=183",
+      "proposed_definition": "programbench-golden (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "Chartography, without tools",
+      "score": 0.644,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200",
+      "proposed_definition": "chartography-no-tools: Surge AI Chartography (100 specialised chart-reading tasks). Answer within the expert-set acceptable range. Gemini 3.5 Flash grader as on the Surge leaderboard. No tools."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "Chartography, without tools",
+      "score": 0.448,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200",
+      "proposed_definition": "chartography-no-tools (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "Chartography, without tools",
+      "score": 0.298,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=200",
+      "proposed_definition": "chartography-no-tools (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code (1,000-file subset), voxel IoU, without tools",
+      "score": 0.73,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=203",
+      "proposed_definition": "benchcad-vision2code-subset1000-no-tools: BenchCAD (arXiv:2605.10865) Vision2Code task, mean voxel IoU (0–1) over a random 1,000-file subset rendered at 256x256 px per view. No tools. The card's earlier 128 px figures are not comparable."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "BenchCAD Vision2Code (1,000-file subset), without tools",
+      "score": 0.606,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=203",
+      "proposed_definition": "As above (re-run at 256 px; this supersedes the earlier 0.437)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code (1,000-file subset), without tools",
+      "score": 0.497,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=203",
+      "proposed_definition": "As above (re-run at 256 px; this supersedes the earlier 0.366)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code (1,000-file subset), with tools",
+      "score": 0.962,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=203",
+      "proposed_definition": "benchcad-vision2code-subset1000-tools: as above, with a container and an image-cropping tool."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "BenchCAD Vision2Code (1,000-file subset), with tools",
+      "score": 0.926,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=203",
+      "proposed_definition": "As above (with tools; this supersedes the earlier 0.843)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code (1,000-file subset), with tools",
+      "score": 0.899,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=203",
+      "proposed_definition": "As above (with tools; this supersedes the earlier 0.821)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "OfficeQA",
+      "score": 0.789,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=208",
+      "proposed_definition": "officeqa: Databricks OfficeQA, grounded numerical reasoning over the U.S. Treasury Bulletin corpus. Accuracy, run agentically with extracted text and code execution. Mean of runs."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "OfficeQA Pro",
+      "score": 0.677,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=208",
+      "proposed_definition": "officeqa-pro: the harder 133-question OfficeQA Pro subset. Same protocol as officeqa."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OfficeQA Pro",
+      "score": 0.669,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=208",
+      "proposed_definition": "officeqa-pro (as above)."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark_as_printed": "MILU (11 languages)",
+      "score": 0.931,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=215",
+      "proposed_definition": "milu: MILU (arXiv:2411.02538), Multi-task Indic Language Understanding. Average accuracy across 11 languages (10 Indic plus English). No tools."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "MILU (11 languages)",
+      "score": 0.921,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=215",
+      "proposed_definition": "milu (as above)."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "MILU (11 languages)",
+      "score": 0.893,
+      "source": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf#page=215",
+      "proposed_definition": "milu (as above)."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "OSWorld 2.1 (partial)",
+      "score": 0.57,
+      "source": "https://www.anthropic.com/claude-sonnet-5-5",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "Chartography, no tools",
+      "score": 0.156,
+      "source": "https://www.anthropic.com/claude-sonnet-5-5",
+      "proposed_definition": "chartography-no-tools (as above)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "OSWorld 2.0 (partial), Aug 2026 task release",
+      "score": 0.729,
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OSWorld 2.0 (partial), Aug 2026 task release",
+      "score": 0.754,
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "OSWorld 2.0 (strict), Aug 2026 task release",
+      "score": 0.361,
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OSWorld 2.0 (strict), Aug 2026 task release",
+      "score": 0.396,
+      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "SWE-bench Multimodal",
+      "score": 0.547,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "proposed_definition": "swe-bench-multimodal: SWE-bench Multimodal (Yang et al. 2024, arXiv:2410.03859) resolved fraction; issues include screenshots/mockups; harness per note (Anthropic internal harness), average over five trials."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "SWE-bench Multimodal",
+      "score": 0.541,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "proposed_definition": "swe-bench-multimodal (as above)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "Terminal-Bench-Science 0.1",
+      "score": 0.526,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "proposed_definition": "terminal-bench-science-0-1: Terminal-Bench-Science v0.1 (Stanford-led, 70 scientific-workflow tasks graded by hidden tests), mean pass rate over trials; harness per note (here Claude Code --bare, max effort, 10 trials/task)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "OSWorld 2.0 (partial)",
+      "score": 0.779,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "proposed_definition": "osworld-2-partial-2026-08: OSWorld 2.0 (arXiv:2606.29537, 108 long-horizon tasks) mean per-task checkpoint credit, pass@1 over five runs, authors' August 2026 task release, 1080p, 500 steps. Task release must be part of the id: the Opus 5.5 card re-ran on the September 10, 2026 release and says these figures are superseded."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "OSWorld 2.0 (strict)",
+      "score": 0.417,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=167",
+      "proposed_definition": "osworld-2-strict-2026-08: OSWorld 2.0 strict pass rate (fraction of tasks with every checkpoint satisfied), pass@1 over five runs, August 2026 task release."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "HealthBench Professional (raw score)",
+      "score": 0.742,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=199",
+      "proposed_definition": "healthbench-professional: HealthBench Professional (arXiv:2604.27470, 525 physician-authored conversations), raw rubric score, not length-adjusted; grader per note. Note Table 8.1.A shows the length-adjusted value (62.1%) under the bare label 'HealthBench Professional'."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "HealthBench Professional (raw score)",
+      "score": 0.689,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=199",
+      "proposed_definition": "healthbench-professional (as above; Table 8.1.A shows 63.3%, presumably length-adjusted)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "ProgramBench (166 golden tasks, hidden test pass rate)",
+      "score": 0.876,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=176",
+      "proposed_definition": "programbench-golden166-pass-rate: ProgramBench (arXiv:2605.03546) restricted to the 166 tasks whose reference binary scores >=0.9, hidden-test pass rate counted only on tests the reference passes, mini-swe-agent harness without the 6-hour limit. Not programbench-almost1 (different metric)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "ProgramBench (166 golden tasks, hidden test pass rate)",
+      "score": 0.863,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=176",
+      "proposed_definition": "programbench-golden166-pass-rate (as above)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "Chartography (without tools)",
+      "score": 0.426,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=184",
+      "proposed_definition": "chartography-no-tools: Surge AI Chartography (100 specialised-chart tasks, expert answer ranges) without tools; counterpart of the existing chartography-with-tools id."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "Chartography (without tools)",
+      "score": 0.366,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=184",
+      "proposed_definition": "chartography-no-tools (as above)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 1,000-file subset, without tools (voxel IoU)",
+      "score": 0.437,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=187",
+      "proposed_definition": "benchcad-vision2code-iou: BenchCAD (arXiv:2605.10865) Vision2Code mean voxel IoU, tools and render resolution per note. Caution: the later Opus 5.5 card says these runs used 128x128 renders instead of the reference 256x256 and re-reports Fable 5.1 at 0.606/0.926."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 1,000-file subset, with tools (voxel IoU)",
+      "score": 0.843,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=187",
+      "proposed_definition": "benchcad-vision2code-iou-with-tools (as above, with container + image-cropping tool)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 1,000-file subset, without tools (voxel IoU)",
+      "score": 0.376,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=187",
+      "proposed_definition": "benchcad-vision2code-iou (as above)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 1,000-file subset, with tools (voxel IoU)",
+      "score": 0.675,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=187",
+      "proposed_definition": "benchcad-vision2code-iou-with-tools (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 1,000-file subset, with tools (voxel IoU)",
+      "score": 0.821,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=187",
+      "proposed_definition": "benchcad-vision2code-iou-with-tools (as above; Opus 5.5 card re-reports 0.899)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "GDP.pdf mean criteria pass rate, without tools (internal harness)",
+      "score": 0.854,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=191",
+      "proposed_definition": "gdp-pdf-criteria-no-tools: Surge AI GDP.pdf (100 prompts) mean rubric-criteria pass rate without tools (PDFs as base64), vendor harness/judge per note. Distinct from Surge's strict pass rate."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "GDP.pdf mean criteria pass rate, with tools (internal harness)",
+      "score": 0.851,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=191",
+      "proposed_definition": "gdp-pdf-criteria-with-tools: as above with container + image-cropping tool."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "GDP.pdf mean criteria pass rate, without tools (internal harness)",
+      "score": 0.827,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=191",
+      "proposed_definition": "gdp-pdf-criteria-no-tools (as above)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "GDP.pdf mean criteria pass rate, with tools (internal harness)",
+      "score": 0.871,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=191",
+      "proposed_definition": "gdp-pdf-criteria-with-tools (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "GDP.pdf mean criteria pass rate, without tools (internal harness)",
+      "score": 0.834,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=191",
+      "proposed_definition": "gdp-pdf-criteria-no-tools (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "GDP.pdf mean criteria pass rate, with tools (internal harness)",
+      "score": 0.855,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=191",
+      "proposed_definition": "gdp-pdf-criteria-with-tools (as above)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "OfficeQA",
+      "score": 0.802,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=192",
+      "proposed_definition": "officeqa-extracted-text: Databricks OfficeQA full set, agentic with documents as extracted text and code execution (vendor harness); distinct from Databricks' image-based evaluation."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "OfficeQA Pro",
+      "score": 0.69,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=192",
+      "proposed_definition": "officeqa-pro-extracted-text: OfficeQA Pro 133-question subset, extracted-text agentic setting as above."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "Legal Agent Benchmark (public, 1,235 problems) all-pass rate",
+      "score": 0.1909,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=192",
+      "proposed_definition": "harvey-lab-public-allpass: Harvey Legal Agent Benchmark public set, fraction of tasks with all rubric criteria met; harness per note (here an internal reimplementation with bash + Python only, Claude Sonnet 4.6 judge, n=5)."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "Legal Agent Benchmark (public, 1,235 problems) mean criterion-pass rate",
+      "score": 0.9081,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=192",
+      "proposed_definition": "harvey-lab-public-criteria: as above, mean per-criterion pass rate."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "benchmark_as_printed": "MILU",
+      "score": 0.93,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200",
+      "proposed_definition": "milu: AI4Bharat MILU (arXiv:2411.02538), average accuracy over 11 languages (10 Indic + English)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "MILU",
+      "score": 0.929,
+      "source": "https://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf#page=200",
+      "proposed_definition": "milu (as above)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "BrowseComp (single-agent)",
+      "score": 0.843,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "proposed_definition": "Probably browsecomp-context-managed (Anthropic's agentic-search BrowseComp uses compaction and a 10M-token budget), but this card states that setup only for Mythos 5; confirm in the Opus 4.8 System Card before mapping."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "BrowseComp (multi-agent)",
+      "score": 0.885,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "proposed_definition": "browsecomp-multi-agent: BrowseComp with a multi-agent harness (orchestrator + subagents); separate from single-agent BrowseComp."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "CharXiv Reasoning (with tools)",
+      "score": 0.899,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "proposed_definition": "charxiv-rq-with-tools: CharXiv reasoning questions (1,000 validation questions) with Python container + image-cropping tool; separate from charxiv-rq."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "ArxivMath (March and April 2026, 71 problems)",
+      "score": 0.718,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=251",
+      "proposed_definition": "Pooled MathArena ArXivMath March+April 2026 releases (30+41 problems), no tools, max effort, vendor run. Catalogue has separate monthly ids (matharena-arxivmath-2026-03/-04); the pooled figure cannot be split."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "RiemannBench",
+      "score": 0.34,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=252",
+      "proposed_definition": "riemannbench: Surge AI private Riemann-Bench (arXiv:2604.06802, 25 research-math problems, closed-form answers), max effort, no tools, mean over 4 attempts. Caution: private Surge benchmark; card does not say who ran it."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "GraphWalks BFS 256K subset (F1)",
+      "score": 0.859,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=262",
+      "proposed_definition": "graphwalks-bfs-256k: OpenAI GraphWalks BFS, 256K-token subset, F1 (Anthropic's corrected F1 and exact-depth prompt), mean of 5 trials."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "GraphWalks BFS 1M subset (F1)",
+      "score": 0.681,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=262",
+      "proposed_definition": "graphwalks-bfs-1m (as above, 1M subset; not reproducible via the public API per card)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "GraphWalks Parents 256K subset (F1)",
+      "score": 0.993,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=262",
+      "proposed_definition": "graphwalks-parents-256k: GraphWalks parents task, 256K subset, F1."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "GraphWalks Parents 1M subset (F1)",
+      "score": 0.833,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=262",
+      "proposed_definition": "graphwalks-parents-1m: GraphWalks parents task, 1M subset, F1."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "DeepSearchQA (F1)",
+      "score": 0.931,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=267",
+      "proposed_definition": "Catalogue deepsearchqa says 'accuracy' without naming F1 vs fully-correct; card gives F1 93.1% and Fully Correct 84.8% (Table 8.14.3.B; web search/fetch, programmatic tools, max effort, 1M budget, no compaction). Map once the deepsearchqa metric is fixed, or add deepsearchqa-f1 / deepsearchqa-fully-correct."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 17,874 files, without tools (voxel IoU)",
+      "score": 0.273,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=282",
+      "proposed_definition": "benchcad-vision2code-iou-full: full Vision2Code set (17,874 of 17,900 files), no tools, mean voxel IoU over five runs (resolution caveat as in later cards)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "OfficeQA (internal agentic harness)",
+      "score": 0.776,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=289",
+      "proposed_definition": "officeqa-extracted-text (pre-selected documents as extracted text, exact-match grading, mean of five trials)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "OfficeQA Pro (internal agentic harness)",
+      "score": 0.662,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=289",
+      "proposed_definition": "officeqa-pro-extracted-text (as above)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "Vending-Bench 2 (final balance, USD)",
+      "score": 5680.26,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=293",
+      "proposed_definition": "vending-bench-2: Andon Labs Vending-Bench 2 simulated one-year vending business, final bank balance in USD from a $500 start (kind linear, raw units). Fable 5 best result at high effort (corrected from 'max' in the June 11 changelog)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "Vending-Bench 2 (final balance, USD)",
+      "score": 5787.43,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=293",
+      "proposed_definition": "vending-bench-2 (as above)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "Legal Agent Benchmark Full Public Set (all-pass)",
+      "score": 0.096,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=252",
+      "proposed_definition": "harvey-lab-public-allpass (as above)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "HealthBench (length-adjusted)",
+      "score": 0.593,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=252",
+      "proposed_definition": "healthbench-length-adjusted: HealthBench full set with the GPT-5.5 System Card length adjustment. The Table 8.1.A 'HealthBench' row matches Figure 8.18.1.A, which is captioned 'length-adjusted scores', so it is not the raw score used by healthbench."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "HealthBench Professional (length-adjusted)",
+      "score": 0.569,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=252",
+      "proposed_definition": "healthbench-professional-length-adjusted (Figure 8.18.2.A caption)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "SWE-Bench Multimodal (Table 8.1.A)",
+      "score": 0.543,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "proposed_definition": "swe-bench-multimodal: SWE-bench Multimodal (Yang et al. 2024, arXiv:2410.03859), resolved fraction; issues with screenshots/design mockups; scaffold per note."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "SWE-Bench Multimodal (Sonnet 5.5 card Table 8.1.A; Sonnet 5 card §8.2 prints 28.1% with internal harness)",
+      "score": 0.281,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=109",
+      "proposed_definition": "swe-bench-multimodal (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "SWE-bench Multimodal (Table 8.1.A)",
+      "score": 0.594,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "proposed_definition": "swe-bench-multimodal (as above)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "SWE-bench Multimodal (Table 8.1.A)",
+      "score": 0.384,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "proposed_definition": "swe-bench-multimodal (as above)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "OSWorld 2.1, partial score (Table 8.1.A 80.1; §8.13.3 strict pass rate 43.5%)",
+      "score": 0.801,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=130",
+      "proposed_definition": "osworld-2-1-partial: OSWorld 2.0 benchmark (Yuan et al. 2026, arXiv:2606.29537) with the September 10, 2026 (v2.1) task files; 108 long-horizon Ubuntu tasks, 1080p, ≤500 steps; mean per-task checkpoint credit, pass@1 averaged over runs. Separate ids for the strict pass rate and for the earlier OSWorld 2.0 task release."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OSWorld 2.0 (Table 8.1.A 70.6; §8.12.3 '70.57%', first-attempt success averaged over five runs, ≤500 steps, Opus 4.8 grader)",
+      "score": 0.7057,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=177",
+      "proposed_definition": "osworld-2-0: OSWorld 2.0 (arXiv:2606.29537), original 2026 task release, 108 tasks, 1080p, ≤500 steps, first-attempt success rate averaged over runs; metric (partial vs strict) as labelled. Later Anthropic cards supersede these figures with a different harness."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "OSWorld 2.0 (Table 8.1.A)",
+      "score": 0.557,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "proposed_definition": "osworld-2-0 (as above)."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "OSWorld 2.0 (Table 8.1.A)",
+      "score": 0.661,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=152",
+      "proposed_definition": "osworld-2-0 (as above)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "Terminal-Bench-Science 0.1",
+      "score": 0.599,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=114",
+      "proposed_definition": "terminal-bench-science-0-1: Stanford-led Terminal-Bench-Science v0.1, 70 scientific-workflow tasks graded by hidden task tests; pass@1 mean over trials; harness per note (Anthropic: Claude Code --bare, max effort, no internet egress)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "ArXivMath (August 2026, 57 problems), without tools, Anthropic internal run",
+      "score": 0.868,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=116",
+      "proposed_definition": "arxivmath-2026-08-no-tools-vendor: MathArena ArXivMath August 2026 problem set (57) answered without tools, vendor harness, mean accuracy over 4 attempts. Not matharena-arxivmath-2026-08 (MathArena agent harness with SageMath + LLM judge)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "ArXivMath (August 2026, 57 problems), with tools (code execution sandbox, no internet), Anthropic internal run",
+      "score": 0.952,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=116",
+      "proposed_definition": "arxivmath-2026-08-tools-vendor: same set with a code-execution sandbox (no internet), vendor harness and grader, mean over 4 attempts; card says 'closest to' but 'not directly comparable' with MathArena's leaderboard (matharena-arxivmath-2026-08)."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "ArxivMath April + May 2026 releases combined (81 problems), without tools, internal",
+      "score": 0.657,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=120",
+      "proposed_definition": "arxivmath-2026-04-05-combined-vendor: pooled April+May 2026 ArXivMath sets (41+40 problems), no tools, extended thinking, mean over four attempts; not one of the per-month matharena ids."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "ArxivMath April + May 2026 releases combined (81 problems), with tools, internal",
+      "score": 0.722,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=120",
+      "proposed_definition": "arxivmath-2026-04-05-combined-tools-vendor (as above, with tools)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "ArxivMath June 2026 release (49 problems), without tools, internal, max effort, four runs",
+      "score": 0.908,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=159",
+      "proposed_definition": "Near matharena-arxivmath-2026-06, but the card says 49 problems (catalogue id: 48) and it is an internal Anthropic run (card footnote: its internal evaluation scores higher than MathArena for Opus 4.8). Propose arxivmath-2026-06-vendor or owner review before merging."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "ArxivMath June 2026 release (49 problems), with tools, internal",
+      "score": 0.913,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=159",
+      "proposed_definition": "arxivmath-2026-06-tools-vendor: June 2026 ArXivMath set with tools, vendor harness, mean over 4 runs."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "ProgramBench (166 tasks with reference binary ≥0.9), hidden-test pass rate, mini-swe-agent harness, no 6-hour limit",
+      "score": 0.797,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=118",
+      "proposed_definition": "programbench-golden166-pass-rate: ProgramBench (arXiv:2605.03546) on the 166 'golden' tasks, mean hidden-test pass rate (only tests the reference binary passes), single agent; not programbench-almost1 (different metric)."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "ProgramBench (166 tasks), hidden-test pass rate (Sonnet 5.5 card)",
+      "score": 0.773,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=118",
+      "proposed_definition": "programbench-golden166-pass-rate (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "Programbench (166 tasks), hidden-test pass rate after first episode (83%; 93% after five episodes)",
+      "score": 0.83,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=160",
+      "proposed_definition": "programbench-golden166-pass-rate (first-episode value; card's protocol continues over 5 episodes with fresh 1M contexts)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "Programbench (166 tasks), first episode (80%; 90% after five)",
+      "score": 0.8,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=160",
+      "proposed_definition": "programbench-golden166-pass-rate (as above)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "Chartography, without tools (internal grading, Gemini 3.5 Flash grader)",
+      "score": 0.616,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=125",
+      "proposed_definition": "chartography: Surge AI Chartography (100 specialised-chart tasks, expert answer ranges), no tools, pass@1; counterpart of chartography-with-tools."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "Chartography, without tools",
+      "score": 0.296,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=174",
+      "proposed_definition": "chartography (as above)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "Chartography, without tools",
+      "score": 0.17,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=174",
+      "proposed_definition": "chartography (as above)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code, 1,000-file subset, voxel IoU, without tools (with tools 0.963)",
+      "score": 0.747,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=128",
+      "proposed_definition": "benchcad-vision2code-iou: BenchCAD (arXiv:2605.10865) Vision2Code task, mean voxel IoU (0–1, linear), no tools; separate id with tools. Note Anthropic changed render resolution between cards (Opus 5.5 card), so earlier figures differ."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code 1,000-file subset, voxel IoU, without tools (with tools 0.373)",
+      "score": 0.266,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=127",
+      "proposed_definition": "benchcad-vision2code-iou (as above; pre-resolution-fix run)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "BenchCAD Vision2Code 1,000-file subset, voxel IoU, without tools (with tools 0.821)",
+      "score": 0.366,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=176",
+      "proposed_definition": "benchcad-vision2code-iou (as above; the Opus 5.5 card re-ran Opus 5 at higher resolution: 0.497 / 0.899)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "OfficeQA (agentic, extracted text, code tools), max effort (OfficeQA Pro 65.6%)",
+      "score": 0.769,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=132",
+      "proposed_definition": "officeqa: Databricks OfficeQA (U.S. Treasury Bulletin corpus), exact-match accuracy, agentic with code tools; separate officeqa-pro (133-question subset). Harness-sensitive per the card."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "OfficeQA (Sonnet 5 card: 73.3%, Pro 59.4%; Sonnet 5.5 card re-run: 75.1%, Pro 62.1%)",
+      "score": 0.733,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=131",
+      "proposed_definition": "officeqa (as above)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "OfficeQA (OfficeQA Pro 66.9%)",
+      "score": 0.781,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=180",
+      "proposed_definition": "officeqa (as above)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "HealthBench Professional, raw score at max effort (length-adjusted 69.2%, as in Table 8.1.A)",
+      "score": 0.771,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=138",
+      "proposed_definition": "healthbench-professional: HealthBench Professional (arXiv:2604.27470), 525 physician-authored conversations, rubric score; raw and length-adjusted as separate ids."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "HealthBench Professional, raw (length-adjusted 59.8% in Table 8.1.A)",
+      "score": 0.734,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=189",
+      "proposed_definition": "healthbench-professional (as above)."
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "HealthBench Professional, raw (Table 8.1.A length-adjusted 57.4)",
+      "score": 0.603,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=189",
+      "proposed_definition": "healthbench-professional (as above)."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "PhysicianBench (100 EHR tasks), pass rate at max effort",
+      "score": 0.632,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=138",
+      "proposed_definition": "physicianbench: public benchmark of 100 physician tasks in an EHR environment, fraction of attempts passed; grader per note (Anthropic: Claude Opus 5). Other Claude values on p138–139: Sonnet 5 37.4%, Fable 5.1 61.0%, Opus 5 57.6%, Opus 5.5 68.4%."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "benchmark_as_printed": "MILU (11 languages) average accuracy, max effort, 5 trials",
+      "score": 0.916,
+      "source": "https://www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf#page=140",
+      "proposed_definition": "milu: Multi-task Indic Language Understanding (arXiv:2411.02538), 10 Indic languages + English, average accuracy. Sonnet 5 on same page: 89.3%."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "GDP.pdf (Surge AI), mean criteria pass rate, without tools, internal harness, Opus 4.7 judge (with tools 81.6%)",
+      "score": 0.675,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=125",
+      "proposed_definition": "gdp-pdf-criteria: Surge AI GDP.pdf, 100 professional PDF prompts, mean rubric-criteria pass rate, no tools; separate with-tools id. Sonnet 4.6: 66.9% / 78.6%."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "GDP.pdf, mean criteria pass rate, without tools (with tools 85.5%)",
+      "score": 0.834,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=179",
+      "proposed_definition": "gdp-pdf-criteria (as above; harness bug fix noted). Opus 4.8: 77.5% / 84.8%."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "ChartMuseum (test split), without tools, Claude Sonnet 4.6 grader (with tools 86.7%)",
+      "score": 0.701,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=128",
+      "proposed_definition": "chartmuseum: ChartMuseum chart QA (1,162 questions, test split), accuracy, no tools; grader per note. Sonnet 4.6 59.3%/80.9%; Opus 4.8 75.8%/89.7%."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "CharXiv Reasoning with Python tools (container + crop tool)",
+      "score": 0.883,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=129",
+      "proposed_definition": "charxiv-rq-with-tools: CharXiv reasoning questions (1,000 val) with code/crop tools; separate from no-tool charxiv-rq. Sonnet 4.6 85.3%; Opus 4.8 89.9%."
+    },
+    {
+      "model": "claude-sonnet-5",
+      "benchmark_as_printed": "Legal Agent Benchmark, full public set (1,235 of 1,251 problems), all-pass rate, Anthropic internal reimplementation (bash + Python tools only)",
+      "score": 0.0892,
+      "source": "https://www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf#page=133",
+      "proposed_definition": "harvey-lab-public-allpass: Harvey Legal Agent Benchmark public tasks, fraction of tasks meeting all rubric criteria (Claude Sonnet 4.6 judge); harness per note. Sonnet 4.6: 8.00%."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "Legal Agent Benchmark, public set (1,235 problems), all-pass rate, internal reimplementation, with production safeguards",
+      "score": 0.2358,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=181",
+      "proposed_definition": "harvey-lab-public-allpass (as above; grading-pipeline fixes add an estimated 0.5–1 pt vs the Sonnet 5 card)."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "FrontierBench v0.1 (74 tasks), Anthropic's own mini-SWE-agent / GKE run, xhigh effort, mean reward over 5 attempts (table value 43.3 is Harbor's run, skipped)",
+      "score": 0.444,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=156",
+      "proposed_definition": "frontierbench-v0-1: FrontierBench v0.1 (successor to Terminal-Bench 2.1 by the same team), 74 terminal tasks, mean reward; harness per note. Same-run values: Fable 5 33.7% (max), Opus 4.8 18.7%, Sonnet 5 17%."
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "IMO 2026, 42/42 (four solutions per problem all judged correct by a 3-model panel; human graders 7/7 on one per problem)",
+      "score": 1.0,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=157",
+      "proposed_definition": "imo-2026: IMO 2026 six proof problems, score as fraction of 42 points; grading per note (model panel + rubric). Probably too coarse/saturated to be useful."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "SWE-Atlas",
+      "score": 0.519,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "proposed_definition": "SWE-Atlas software-engineering benchmark, score as reported by the source (version, harness and metric not stated on the Cloud guide)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "SWE-Atlas",
+      "score": 0.48,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "proposed_definition": "As above (SWE-Atlas, as reported)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "CharXiv (Multimodal)",
+      "score": 0.862,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "proposed_definition": "Label does not say reasoning vs descriptive or tool setting. Values (86.2 / 84.5) equal the 3.8 Flash model card's 'CharXiv Reasoning, No tools' cells, so the owner may merge into charxiv-rq; recorded there from the model card."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "CharXiv (Multimodal)",
+      "score": 0.845,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "proposed_definition": "As above; equals the cards' 'CharXiv Reasoning, No tools' 84.5%."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "Humanity's Last Exam (HLE)",
+      "score": 0.454,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "proposed_definition": "HLE with tool setting and subset not stated on the page, so it cannot be placed in hle (no tools) or hle-with-tools. Not the model card's HLE-Verified figure (54.9%)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "Humanity's Last Exam (HLE)",
+      "score": 0.457,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash#whats-new",
+      "proposed_definition": "As above (HLE, tool setting unstated). Same 45.7% printed in the 3.7 Flash guide."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "Humanity's Last Exam (HLE)",
+      "score": 0.374,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new",
+      "proposed_definition": "HLE, tool setting and subset unstated (3.7 Flash guide)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "DeepSWE",
+      "score": 0.637,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new",
+      "proposed_definition": "DeepSWE with version unstated. Values differ from the model card's DeepSWE v1.1 (65.3% / 48.6%), so they cannot be assumed to be v1.1."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "DeepSWE",
+      "score": 0.49,
+      "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash#whats-new",
+      "proposed_definition": "DeepSWE, version unstated (see above)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "PostTrainBench (ML engineering)",
+      "score": 0.453,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "PostTrainBench v1.1: OpenCode harness, 10-hour budget on one H100, weighted aggregate over four base models and seven benchmarks (self-computed per the Argon evaluation PDF)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "Terminal-Bench Science 0.1",
+      "score": 0.576,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "Terminal-Bench-Science 0.1 (70 science tasks), pass@1. Argon self-computed with a 6x verifier timeout (evaluation PDF)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "LABBench 2",
+      "score": 0.888,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "LAB-Bench 2 biology research tasks, macro-average over 11 sub-tasks; Linux terminal with bioinfo tools, Python, R and internet (self-computed)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "GraphWalks, Up to 128k, BFS (F1)",
+      "score": 0.997,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "GraphWalks BFS F1 on the 650 items with context up to 128k tokens (self-computed)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "GraphWalks, 256k to 1M, BFS (F1)",
+      "score": 0.842,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "GraphWalks BFS F1 on the 200 problems with 256k–1M token contexts (self-computed)."
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "OSWorld-2.0, Offline subset, Partial score",
+      "score": 0.692,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "OSWorld 2.0 offline subset, partial score, max over 3 runs (single attempt each); Gemini CUA harness, batched tool calls, compaction, official 08.08 patch (self-computed)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "LVBench, 87.8% (agentic)",
+      "score": 0.878,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "LVBench in an agentic setting (Google label 'agentic'); kept apart from lvbench (static, no tools)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "GDP.PDF (All pass rate)",
+      "score": 0.35,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "GDP.PDF expert PDF document comprehension, all-pass rate (self-computed)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "HLE-Verified",
+      "score": 0.549,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "HLE-Verified full 1,811-item set (arXiv:2602.13964; 668 verified plus 1,143 revised items, 689 uncertain excluded), accuracy, self-computed. Not hle-verified-text-full, which is text-only Qwen Team runs."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "OSWorld-2.0, Partial score, batch tool enabled",
+      "score": 0.59,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "OSWorld 2.0 full set, partial score, max over 3 runs, batched tool calls, pre-08.08 patch (self-computed)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "OSWorld-2.0, Partial score, batch tool enabled (3.8 card)",
+      "score": 0.506,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "As above. Differs from the 3.7 Flash card's 47.9%, which was run without batched tool calls."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "BioMysteryBench, Human Solvable",
+      "score": 0.888,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "BioMysteryBench Human Solvable subset; Linux terminal with bioinfo tools, Python, R and allow-listed internet (self-computed)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "BioMysteryBench, Human Difficult",
+      "score": 0.565,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "BioMysteryBench Human Difficult subset (self-computed)."
+    },
+    {
+      "model": "gemini-3-8-flash",
+      "benchmark_as_printed": "LABBench2",
+      "score": 0.862,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/#evaluation",
+      "proposed_definition": "LAB-Bench 2, macro-average over 11 sub-tasks (self-computed)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "CharXiv Reasoning, With tools",
+      "score": 0.887,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "CharXiv reasoning questions with search and code execution (self-computed)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "CharXiv Reasoning, With tools",
+      "score": 0.894,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "GDP.pdf",
+      "score": 0.34,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "GDP.PDF all-pass rate (self-computed for Gemini)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "GDP.pdf",
+      "score": 0.22,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "OSWorld-2.0",
+      "score": 0.479,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "OSWorld 2.0 partial score, max over 3 runs, pre-08.08 patch, no batched tool calls (self-computed)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "OSWorld-2.0",
+      "score": 0.338,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "HLE-Verified",
+      "score": 0.536,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "HLE-Verified full 1,811-item set (self-computed); same value in the 3.8 card."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "HLE-Verified",
+      "score": 0.512,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "BioMysteryBench, Human solvable",
+      "score": 0.871,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "BioMysteryBench Human Solvable (self-computed)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "BioMysteryBench, Human solvable",
+      "score": 0.806,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "BioMysteryBench, Human difficult",
+      "score": 0.435,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "BioMysteryBench Human Difficult (self-computed)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "BioMysteryBench, Human difficult",
+      "score": 0.412,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "LABBench2",
+      "score": 0.821,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "LAB-Bench 2 (self-computed)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "LABBench2",
+      "score": 0.761,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "As above."
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark_as_printed": "MCP Atlas (pass rate; task set and runner not stated)",
+      "score": 0.833,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=293",
+      "proposed_definition": "mcp-atlas (public set) if Anthropic ran it on the public tasks. If Scale AI computed it, it is third-party and should be skipped. The card states neither. Original note: Anthropic Claude Fable 5 & Mythos 5 System Card, §8.17.5 'MCP Atlas': 'Claude Fable 5 achieved an 83.3% pass rate'. Task set (public 500 vs full), harness and judge not stated; card standard configuration is adaptive thinking at max effort; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "benchmark_as_printed": "MCP Atlas (pass rate; task set and runner not stated)",
+      "score": 0.822,
+      "source": "https://www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf#page=293",
+      "proposed_definition": "mcp-atlas (public set) if Anthropic ran it on the public tasks. If Scale AI computed it, it is third-party and should be skipped. The card states neither. Original note: Anthropic Claude Fable 5 & Mythos 5 System Card, §8.17.5 'MCP Atlas': 'up from 82.2% for Claude Opus 4.8' (pass rate). Task set, harness and judge not stated; vendor-reported (rule b)"
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark_as_printed": "MCP Atlas (pass rate; task set and runner not stated)",
+      "score": 0.858,
+      "source": "https://www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf#page=181",
+      "proposed_definition": "mcp-atlas (public set) if Anthropic ran it on the public tasks. If Scale AI computed it, it is third-party and should be skipped. The card states neither. Original note: Anthropic Claude Opus 5 System Card, §8.13.2 'MCP Atlas' prose: 'Claude Opus 5 achieved an 85.8% pass rate' (mean claim coverage 89.1%); task set (public vs private) and harness not stated; card warns effort settings may since have changed so scores may not be precisely reproducible; vendor-reported (rule b)"
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark_as_printed": "Agent's Last Exam (pass rate, default ALE-Claw harness)",
+      "score": 0.395,
+      "source": "https://deepmind.google/models/gemini/#performance",
+      "proposed_definition": "Close to agents-last-exam (pass@1, official scaffold), but Google names its harness 'ALE-Claw'. It is unclear whether that is ALE's official scaffold or the fixed OpenClaw harness of ale-openclaw-overall-pass. Map to whichever id ALE-Claw corresponds to once that is confirmed. Original note: Google DeepMind Gemini model page, 'Frontier performance in complex workflows' table, row 'Agent's Last Exam (Computer use)', notes 'Pass rate', column 'Gemini 4 Argon' = 39.5%; per the Argon evaluation PDF (p.3) self-computed with the default ALE-Claw harness, 5-hour window, safety filters enabled (flagged responses returned empty), binary pass rate, highest thinking setting. Mapped to agents-last-exam reading 'default ALE-Claw harness' as the official scaffold (flagged for review). Page undated; vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-7-flash",
+      "benchmark_as_printed": "Agent's Last Exam (pass rate, default ALE-Claw harness)",
+      "score": 0.263,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "Close to agents-last-exam (pass@1, official scaffold), but Google names its harness 'ALE-Claw'. It is unclear whether that is ALE's official scaffold or the fixed OpenClaw harness of ale-openclaw-overall-pass. Map to whichever id ALE-Claw corresponds to once that is confirmed. Original note: Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'Agent's Last Exam (Multimodal desktop and OS agent tasks)', notes 'Pass rate', column 'Gemini 3.7 Flash' = 26.3%; per the evaluation PDF (p.3) self-computed with the default ALE-Claw harness; mapped reading ALE-Claw as the official scaffold (flagged); vendor-reported (rule b)."
+    },
+    {
+      "model": "gemini-3-6-flash",
+      "benchmark_as_printed": "Agent's Last Exam (pass rate, default ALE-Claw harness)",
+      "score": 0.242,
+      "source": "https://deepmind.google/models/model-cards/gemini-3-7-flash/#evaluation",
+      "proposed_definition": "Close to agents-last-exam (pass@1, official scaffold), but Google names its harness 'ALE-Claw'. It is unclear whether that is ALE's official scaffold or the fixed OpenClaw harness of ale-openclaw-overall-pass. Map to whichever id ALE-Claw corresponds to once that is confirmed. Original note: Gemini 3.7 Flash model card (HTML), Evaluation results table, row 'Agent's Last Exam', notes 'Pass rate', column 'Gemini 3.6 Flash' = 24.2%; self-computed with the default ALE-Claw harness (evaluation PDF p.3); same mapping caveat; vendor-reported (rule b)."
+    }
+  ],
+  "skipped": [
+    {
+      "what": "Opus 5.5 announcement (anthropic.com/claude-opus-5-5): Terminal-Bench 4.0 (66.4/55.8/52.3) and HLE with tools (67.7/65.6/63.6) for Opus 5.5, Fable 5.1 and Opus 5",
+      "why": "The same figures appear in Table 8.1.A of the Opus 5.5 System Card, which gives the settings in full. Recorded once, from the card."
+    },
+    {
+      "what": "Sonnet 5.5 announcement: Opus 5.5 cells (Terminal-Bench 4.0 66.4% at xhigh; HLE with tools 67.7%)",
+      "why": "These duplicate the Opus 5.5 System Card rows."
+    },
+    {
+      "what": "GPT-6 Astra, GPT-5.6 Sol and GPT-6 Sol cells on the Opus 5.5, Fable 5.1 and Sonnet 5.5 announcements and in the Opus 5.5 System Card",
+      "why": "Other labs' models ('as reported by OpenAI'). Rule (b) covers only the vendor's own models."
+    },
+    {
+      "what": "Claude Mythos 5.1 and Mythos 5 cells (e.g. Terminal-Bench 4.0 60.9%, Toolathlon 79.3%, life-science evals)",
+      "why": "data/models.json has no Mythos model id."
+    },
+    {
+      "what": "FrontierCode v1.1 Main/Extended (Opus 5.5 card §8.4 and all three announcements)",
+      "why": "Third party: 'Cognition ran the evaluation for every model shown and reported the results.'"
+    },
+    {
+      "what": "CursorBench 4.0 (Opus 5.5 card §8.8, Opus 5.5 and Sonnet 5.5 announcements) and CursorBench 3.2.0 (Fable 5.1 announcement)",
+      "why": "Third party: 'All scores were measured and reported independently by Cursor'. The 3.2 figure is also quoted from Cursor on the Fable 5.1 page."
+    },
+    {
+      "what": "FrontierSWE v2 (Opus 5.5 card §8.7)",
+      "why": "Third party: 'Every model runs ... in Proximal's own agent harness ... the models Proximal evaluated.'"
+    },
+    {
+      "what": "GDPval-AA v2/v2.1 and AA-Briefcase v1.1 (cards and announcements), and the Harvey Legal Agent Benchmark held-out set (Opus 5.5 card §8.14.2)",
+      "why": "Third party: 'Evaluations were run independently by Artificial Analysis.' artificialanalysis.ai is also never used, under UPDATING.md."
+    },
+    {
+      "what": "AutomationBench (Opus 5.5 card §8.14.6; Opus 5.5 and Fable 5.1 announcements)",
+      "why": "Third party: 'AutomationBench results were run and reported by Zapier.'"
+    },
+    {
+      "what": "Chart- and figure-only values: Opus 5 announcement charts (Frontier-Bench v0.1, CursorBench, AA Coding Agent Index, ARC-AGI 3, GDPval-AA, OSWorld 2.0, HLE, AutomationBench, DeepSearchQA); effort-scaling and cost plots in the Opus 5.5 card (HLE, DRACO, WANDR, multi-agent, large agent teams)",
+      "why": "Chart or image data, not text. Rule (b) forbids reproducing charts."
+    },
+    {
+      "what": "Benchmark tables on the Sonnet 5 announcement (img alt 'Claude Sonnet 5 benchmark table') and the Fable 5 / Mythos 5 announcement (img alt 'Benchmark table showing Claude Fable and Mythos compared to other leading models')",
+      "why": "The tables are images, not text. The same models' figures were taken from their system cards instead."
+    },
+    {
+      "what": "Opus 5.5 card §8.17 life-science evaluations (BioMysteryBench, LatchBio SpatialBench Verified/SingleCellBench, morphology-to-molecule, medicinal chemistry, protein design, binder design, biomedical image analysis, protocols)",
+      "why": "These are internal or partner evaluations with no public benchmark definition, and none is in the catalogue. They were not proposed as new benchmarks."
+    },
+    {
+      "what": "Opus 5.5 card: HealthBench length-adjusted (60.6%), HealthBench Professional length-adjusted (Table 8.1.A, 65.6/59.8/62.1)",
+      "why": "The catalogue's healthbench is the raw score. Only raw figures were recorded or proposed."
+    },
+    {
+      "what": "Public-leaderboard figures quoted in the cards (Terminal-Bench 4.0 Opus 5 51.8%; Terminal-Bench-Science Opus 5 30.0% and Fable 5 21.4%; Toolathlon leaderboard Sonnet 5 71.6% and Opus 4.8 76.2%)",
+      "why": "These are third-party leaderboard numbers quoted for reference, not Anthropic's own runs."
+    },
+    {
+      "what": "Opus 5 announcement (anthropic.com/news/claude-opus-5)",
+      "why": "It has no text benchmark table. Its numbers are in charts or customer quotes (e.g. Box '8%', Hebbia), so nothing was recorded."
+    },
+    {
+      "what": "Customer quotes with figures on all announcements (e.g. Hebbia 86.6%, FrontierFinance 55.9%, Deloitte 72% of bugs)",
+      "why": "These are third-party internal evaluations, not catalogue benchmarks."
+    },
+    {
+      "what": "Other labs' cells in both cards: GPT-5.6 Sol (Fable 5.1 card Table 8.1.A and prose); GPT-5.5, Gemini 3.1 Pro and Gemini 3.5 Flash (Fable 5 card Table 8.1.A, §8.3, §8.11, GraphWalks, life-science sections).",
+      "why": "Rule (b) covers only the vendor's own models; the cards say competitor figures come from developers' system cards or leaderboards."
+    },
+    {
+      "what": "Claude Mythos 5.1, Mythos 5 and Mythos Preview cells (e.g. Terminal-Bench 4.0 Mythos 5.1 60.9%, GPQA Diamond Mythos 5 94.1%, BrowseComp, ChartQAPro, ChartMuseum, LAB-Bench FigQA, ScreenSpot-Pro, GraphWalks, DeepSearchQA, DRACO 86.4%, ArXivMath, OfficeQA, GMMLU/MILU/INCLUDE Mythos values).",
+      "why": "No Mythos model ids exist in data/models.json. Where a Fable/Mythos column is combined, only the non-parenthesised Fable value was used."
+    },
+    {
+      "what": "Third-party-run cells. Fable 5.1 card: FrontierCode v1.1 (Cognition), FrontierSWE v2 (Proximal), CursorBench 3.2.0 (Cursor), GDPval-AA v2 and AA-Briefcase (Artificial Analysis), Harvey LAB held-out set (Artificial Analysis), AutomationBench (Zapier leaderboard), ARC-AGI-1/2 (ARC Prize Foundation verified). Fable 5 card: FrontierSWE (Proximal), CursorBench (Cursor), CritPt (Artificial Analysis), GDPval-AA (Artificial Analysis), GDP.pdf strict pass rate (Surge), Blueprint-Bench 2 (Andon Labs), OfficeQA Pro 57.9% (Databricks' own evaluation), Finance Agent v2 (Vals AI), Harvey LAB held-out set (Harvey), AutomationBench (Zapier).",
+      "why": "The card credits the run to a third party; take from that party under its own licence or not at all."
+    },
+    {
+      "what": "FrontierCode (Diamond / Main) figures in the Fable 5 card (e.g. Fable 5 29.3%, Opus 4.8 13.4%).",
+      "why": "Benchmark created by Cognition; this card does not say who ran it, and the later Opus 5.5 card states Cognition ran FrontierCode for every model. No catalogue id either."
+    },
+    {
+      "what": "Toolathlon-Verified rows for Claude Opus 5 (80.6), Opus 4.8 (79.9) and Sonnet 5 (74.7) in the Fable 5.1 card, Table 8.15.5.A.",
+      "why": "The card says these comparison figures are reproduced from the Claude Opus 5 System Card; record them from that card instead of duplicating the same run."
+    },
+    {
+      "what": "Chart- or figure-only values: CritPT-Corrected (Fable 5.1 card Figure 8.9.A), DRACO (both cards), HLE effort-scaling figures, ArXivMath June 2026 bars for Opus 5 / Opus 4.8, Fable 5 card GMMLU / MILU / INCLUDE / HealthBench / HealthAdminBench figures (captions give Mythos values only), FrontierCode/CursorBench effort plots, ProgramBench multi-agent curves.",
+      "why": "No charts reproduced; values are not printed as text for in-scope models."
+    },
+    {
+      "what": "Internal or non-public evaluations: life-science suites (BioMysteryBench, LatchBio SpatialBench Verified / SingleCellBench, ProteinGym Hard subset, protein design, organic chemistry V2, protocols, LABBench2), Real-World Finance v1/v2 (incl. Elo), alignment, welfare, cyber and RSP evaluations.",
+      "why": "Internal or partner benchmarks without a public definition; not catalogue candidates."
+    },
+    {
+      "what": "Fable 5 card ProgramBench: Opus 4.8 '79–88%' (reproduced from the Claude Opus 4.8 System Card); Fable 5 not reported (blocked by cyber classifiers).",
+      "why": "A range, not a single figure, and reproduced from another card."
+    },
+    {
+      "what": "Fable 5 card Toolathlon row for Claude Sonnet 4.5 (Pass@1 41.0).",
+      "why": "Claude Sonnet 4.5 is a 2025 model, outside this task's 2026 scope."
+    },
+    {
+      "what": "Pass@3, Pass³ and average-turn columns of the Toolathlon tables; length-adjusted HealthBench figures; FrontierCode medium-effort sub-scores.",
+      "why": "Only the primary metric matching the catalogue definition was recorded."
+    },
+    {
+      "what": "Sonnet 5.5 card: FrontierCode v1.1 (Cognition), FrontierSWE v2 (Proximal), CursorBench 4.0 (Cursor), GDPval-AA v2.1 and AA-Briefcase v1.1 and Harvey LAB held-out set (Artificial Analysis), AutomationBench (Zapier private set)",
+      "why": "Card says each was run and reported by the third party; third-party cells excluded under rule (b). (Note: this card prints Opus 5.5 AutomationBench 42.5 vs 40.0 in the Opus 5.5 card.)"
+    },
+    {
+      "what": "Sonnet 5 card: FrontierCode v1 (Cognition), CursorBench (Cursor), GDPval-AA v2 and AA-Briefcase (Artificial Analysis), AutomationBench (Zapier leaderboard), Legal Agent Benchmark Harvey held-out set (Harvey's evaluation)",
+      "why": "Third-party-run results."
+    },
+    {
+      "what": "Opus 5 card: FrontierCode 1.1 (Cognition), FrontierBench v0.1 table values (Harbor's evaluations), GDPval-AA v2 and AA-Briefcase (Artificial Analysis), AutomationBench (Zapier), ARC-AGI-1/2/3 (ARC Prize Foundation verified scores), Legal Agent Benchmark Harvey held-out set",
+      "why": "Third-party-run results."
+    },
+    {
+      "what": "All three cards: GPT-6 Sol, GPT-6 Astra, GPT-5.6 Sol, GPT-5.5, Gemini 3.5 Flash, Gemini 3.1 Pro, Muse Spark and Grok cells",
+      "why": "Other labs' models (rule b covers only Anthropic's own models on Anthropic documents)."
+    },
+    {
+      "what": "All three cards: Claude Mythos 5, Mythos 5.1 and Mythos Preview cells (incl. the Opus 5 card's HealthBench Professional '66.0' in the Fable 5 column, footnoted as Mythos 5)",
+      "why": "No Mythos model id in data/models.json."
+    },
+    {
+      "what": "Sonnet 5 card Table 8.1.A BrowseComp, Claude Sonnet 4.6 = 76.2 (and multi-agent Sonnet 5 = 86.6)",
+      "why": "Sonnet 4.6's BrowseComp configuration is not stated in this card, so plain vs context-managed cannot be chosen; multi-agent BrowseComp has no catalogue id."
+    },
+    {
+      "what": "Sonnet 5 card ProgramBench ranges (Sonnet 5 76–86%, Sonnet 4.6 52–74%, Opus 4.8 80–90%)",
+      "why": "Printed as ranges, not single values."
+    },
+    {
+      "what": "Figure/chart-only values: DRACO, WANDR, DeepSearchQA, RiemannBench, multi-agent ProgramBench/BrowseComp (incl. Opus 5 multi-agent 93.6% on a pre-release configuration), effort-scaling plots, HealthBench length-adjusted figures, GMMLU/MILU/INCLUDE in the Sonnet 5 and Opus 5 cards, DeepSWE/FrontierCode plots",
+      "why": "Values shown only in figures, or not a released configuration; charts are not transcribed."
+    },
+    {
+      "what": "Internal non-public evaluations: life-science suites (BioMysteryBench, LatchBio SpatialBench/SingleCellBench, morphology-to-molecule, medicinal chemistry, protein design/library ranking, de novo binder design, biomedical image analysis, protocols, ProteinGym Hard subset, organic chemistry V2), Real-World Finance v2 Elo, large-agent-team tasks, and all safety/alignment/cyber sections",
+      "why": "Internal or non-public evaluations, not catalogue benchmarks."
+    },
+    {
+      "what": "Sonnet 5.5 card comparison cells for unmatched benchmarks that repeat the Opus 5.5 card (Opus 5.5/Fable 5.1 on OSWorld 2.1, Terminal-Bench-Science, ArXivMath, ProgramBench, BenchCAD, OfficeQA, MILU, HealthBench Professional)",
+      "why": "Same measurements as the Opus 5.5 System Card (handled by the parent); not repeated in unmatched."
+    },
+    {
+      "what": "Gemini 3.7 Flash guide, row 'LMArena WebDev' (3.7 Flash 1592, 3.6 Flash 1532)",
+      "why": "Third-party LMArena Elo at an unstated snapshot, even though the page is CC BY. Recording it as by:'lab' would mislabel it, and the independent lmarena-webdev rows already come from the pinned LMArena dataset on a different Elo snapshot. Owner may override."
+    },
+    {
+      "what": "deepmind.google/models/gemini/ table: GPT-6 Astra, Claude Fable 5.1 and Claude Opus 5.5 columns",
+      "why": "Other labs' models. The Argon evaluation PDF says non-Gemini results are providers' self-reported or leaderboard numbers."
+    },
+    {
+      "what": "deepmind.google/models/gemini/ Argon cells: Vals Index 68.9%, Vals Finance Agent v2 65.4%, Harvey's Legal Agent Benchmark 19.6%, Vibe Code Bench 91.9%",
+      "why": "Argon evaluation PDF: sourced from Vals AI (third party)."
+    },
+    {
+      "what": "deepmind.google/models/gemini/ Argon cells: AutomationBench 51.3% (Zapier private-set leaderboard), FrontierSWE v2 55.0% (Proximal leaderboard), RiemannBench 76.0% (Surge leaderboard), Chartography 71.6% (Surge leaderboard, no tools), CWE-bench v1 68.0% (official public leaderboard)",
+      "why": "Third-party-run per the Argon evaluation PDF. The blog.google Argon post repeats AutomationBench 51.3% and CWE-bench '68%' in text; skipped there for the same reason."
+    },
+    {
+      "what": "Gemini 4 Argon evaluation PDF, p.5 results table; Gemini 3.8/3.7 Flash evaluation PDFs, p.4 results tables; 3.8/3.7 Flash model-card PDFs, p.5 results tables",
+      "why": "Images, not text. Values were taken from the HTML text tables instead; the PDFs were used only for provenance and settings text."
+    },
+    {
+      "what": "blog.google Gemini 4 Argon post (2026-09-30): DeepSWE v1.1 77.9%, LVBench 91.7%",
+      "why": "Same figures as the deepmind.google Argon table, so recorded once from the table. All other blog figures are chart images."
+    },
+    {
+      "what": "blog.google 'See what 4 builders are making with Gemini 3.8 Flash' (2026-09-28)",
+      "why": "No benchmark figures."
+    },
+    {
+      "what": "Gemini 3.8 Flash model card: Claude Opus 5, Claude Sonnet 5, GPT-5.6 Sol, GPT-5.6 Terra columns; price rows",
+      "why": "Other labs' models or prices."
+    },
+    {
+      "what": "Gemini 3.8 Flash model card, Gemini cells: Terminal-bench 4.0 (3.8 Flash 19.1%, 3.7 Flash 11.2%), GDPVal-AA v2 (1545/1482), Vals Finance Agent v2 (61.4%/59.0%), Harvey's Legal Agent Benchmark (10.0%/8.8%), DeepSWE v1.1 for 3.7 Flash (65.3%)",
+      "why": "3.8 Flash evaluation PDF: Terminal-Bench 4.0 from the official public leaderboard, GDPVal-AA from Artificial Analysis, Vals Finance and Harvey LAB from Vals.AI, and DeepSWE for non-3.8 models from the Datacurve leaderboard."
+    },
+    {
+      "what": "Gemini 3.8 Flash model card, 3.7 Flash cells identical to the 3.7 Flash card (Terminal-bench 2.1 85.8%, CharXiv Reasoning 84.5%, LVBench 85.4%, GDP.PDF 34.0%, HLE-Verified 53.6%, BioMysteryBench 87.1%/43.5%, LABBench2 82.1%)",
+      "why": "Same values as the model's own card, which is recorded. Not duplicated within the same rule (b) source group. The 3.7 Flash OSWorld 50.6% differs and is listed as unmatched."
+    },
+    {
+      "what": "Gemini 3.7 Flash model card: Claude Sonnet 5, GPT-5.6 Terra, Muse Spark 1.2 columns; price rows",
+      "why": "Other labs' models or prices."
+    },
+    {
+      "what": "Gemini 3.7 Flash model card, Gemini cells: Artificial Analysis Intelligence Index (56/52), FrontierCode 1.1 Main (43.6%/34.4%), Code Arena Elo (1588/1538), AutomationBench private set (30.4%/17.0%), GDPVal-AA v2 (1525/1422), Harvey LAB-AA (90.7%/85.1%), DeepSWE v1.1 for 3.6 Flash (48.6%)",
+      "why": "3.7 Flash evaluation PDF: sourced from Artificial Analysis, the FrontierCode/Code Arena/AutomationBench public leaderboards, or Datacurve (3.6 Flash DeepSWE). AA is also barred by policy."
+    },
+    {
+      "what": "Gemini 3.8 Flash model card, 'Training and Development Evaluation Results' (safety deltas) and Frontier Safety text",
+      "why": "Internal safety metrics, not capability benchmarks."
+    },
+    {
+      "what": "70 cross-page repeats of an identical figure (same model, benchmark and value printed on more than one Anthropic or Google page), e.g. claude-opus-5-5 swe-bench-pro-split-unspecified 0.899 on Claude%20Sonnet%205.5%20System%20Card.pdf (kept Claude%20Opus%205.5%20System%20Card.pdf); claude-opus-5 swe-bench-pro-split-unspecified 0.792 on Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf (kept Claude%20Opus%205%20System%20Card.pdf); claude-opus-5 swe-bench-pro-split-unspecified 0.792 on Claude%20Opus%205.5%20System%20Card.pdf (kept Claude%20Opus%205%20System%20Card.pdf); claude-fable-5-1 swe-bench-pro-split-unspecified 0.812 on Claude%20Opus%205.5%20System%20Card.pdf (kept Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf); claude-opus-5-5 swe-bench-multilingual 0.939 on Claude%20Sonnet%205.5%20System%20Card.pdf (kept Claude%20Opus%205.5%20System%20Card.pdf); claude-opus-5 swe-bench-multilingual 0.895 on Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf (kept Claude%20Opus%205%20System%20Card.pdf)",
+      "why": "The same measurement is recorded once. The copy kept is from the model's own system card or model card, or for Google the CC BY 4.0 Cloud guide (UPDATING.md: prefer an openly licensed copy). Repeats that print a different value are kept as separate rows, with the difference noted."
+    },
+    {
+      "what": "agents-last-exam rows moved from results to unmatched",
+      "why": "The mapping or provenance is not exact; see the unmatched entries."
+    },
+    {
+      "what": "mcp-atlas rows moved from results to unmatched",
+      "why": "The mapping or provenance is not exact; see the unmatched entries."
+    },
+    {
+      "what": "claude-sonnet-4-5 toolathlon 0.41 (comparison cell in Claude%20Sonnet%205%20System%20Card.pdf)",
+      "why": "Outside this task's target list (Claude Sonnet 4.5 was released 2025-09). It is an own-model, vendor-computed cell, so it is admissible under rule (b) if wanted."
+    }
+  ]
+}

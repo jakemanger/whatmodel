@@ -11438,5 +11438,121 @@
     "attribution": "Zapier, Inc., AutomationBench (github.com/zapier/AutomationBench), MIT. Selected pass rates from the README's public 600-task table; model IDs mapped; percentages converted to fractions. No endorsement.",
     "quote": "LICENSE at the pinned commit: MIT License, Copyright (c) 2026 Zapier, Inc. Its scope note: 'All benchmark code, test frameworks, simulation logic, mock data generators, configuration files, documentation, and other materials authored by Zapier are original works of authorship and are licensed to you under the MIT License.'",
     "icon": "github.com"
+  },
+  {
+    "id": "first-party-anthropic-scores",
+    "name": "Anthropic system cards and model announcements (lab-reported scores)",
+    "match": [
+      "www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf",
+      "www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20&%20Claude%20Mythos%205.1%20System%20Card.pdf",
+      "www-cdn.anthropic.com/870c8f525702625d2c62fc6dd04c857e3250bec1/Claude%20Sonnet%205.5%20System%20Card.pdf",
+      "www-cdn.anthropic.com/ceaf5c7ff2783855203fde8208ec311252dced5b/Claude%20Opus%205%20System%20Card.pdf",
+      "www-cdn.anthropic.com/283ef97c476cf442c91d9a37d5b214242a55bb92/Claude%20Sonnet%205%20System%20Card.pdf",
+      "www-cdn.anthropic.com/57a52ea7d8f0e54e8a542e908266086df425cdf5/Claude%20Fable%205%20&%20Claude%20Mythos%205%20System%20Card.pdf",
+      "anthropic.com/claude-sonnet-5-5"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://www.anthropic.com/legal/consumer-terms",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "attribution": "Anthropic PBC, benchmark results it published for its own Claude models in system cards (PDF) and announcement pages, observed 2026-10-07. Individual figures were recorded by hand and converted to fractions, with printed settings in each row's note. Lab-reported, not independent. Not licensed or endorsed by Anthropic.",
+    "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). A vendor's own published score for its own model may be recorded from its announcement page, system or model card, or docs. Each figure is recorded by hand from a single fetch. Only own-model, vendor-computed cells are used, never other labs' rows or cells credited to a third party. No tables, charts or prose are reproduced, and no automated extraction is used. Governing terms: Anthropic Consumer Terms forbid 'crawl, scrape, or otherwise harvest' and bot or script access, but contain no clause against quoting an individual figure. The pages show '© 2026 Anthropic PBC', the system cards carry no licence or copyright statement, and neither grants a licence.",
+    "icon": "anthropic.com"
+  },
+  {
+    "id": "first-party-google-scores",
+    "name": "Google DeepMind Gemini model page and model cards (lab-reported scores)",
+    "match": [
+      "deepmind.google/models/gemini",
+      "deepmind.google/models/model-cards/gemini-3-8-flash",
+      "deepmind.google/models/model-cards/gemini-3-7-flash"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://policies.google.com/terms",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": false,
+    "attribution": "Google DeepMind, benchmark results it published for its own Gemini models on deepmind.google (Gemini model page, Gemini 3.8 Flash and 3.7 Flash model cards), observed 2026-10-07. Provenance and settings were checked against Google's evaluation-methodology PDFs. Individual figures were recorded by hand and converted to fractions. Lab-reported, not independent. Not licensed or endorsed by Google.",
+    "quote": "Owner rule (b), 2026-10-07 (docs/research/vendor-terms-2026-10-07.md). These are Google's own scores for its own models, recorded by hand one figure at a time from a single fetch. Only Google-computed cells are used: cells the methodology PDFs credit to Vals AI, Zapier, Artificial Analysis, leaderboards or other labs are excluded. Google Terms of Service: 'You may use Google's content as allowed by these terms ... but we retain any intellectual property rights that we have in our content.' Automated access is restricted only through robots.txt, and deepmind.google has 'Allow: /'. There is no anti-quoting clause. The page footers link only Privacy and Terms, with no licence. 'exact' is false only because lib/sources.ts sourceIn() never matches an exact entry against a URL whose path ends in '/' (these canonical URLs do). The paths are page-specific.",
+    "icon": "deepmind.google"
+  },
+  {
+    "id": "google-cloud-gemini-guides",
+    "name": "Google Cloud developer's guides to Gemini 3.8 Flash and 3.7 Flash",
+    "match": [
+      "docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash",
+      "docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash"
+    ],
+    "kind": "first-party",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://developers.google.com/site-policies",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "attribution": "Google Cloud, 'Developer's guide to Gemini 3.8 Flash' and 'Developer's guide to Gemini 3.7 Flash' (docs.cloud.google.com, last updated 2026-10-06), CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Changes: selected cells from the 'What's new' text tables were transcribed into JSON, percentages divided by 100 and benchmark labels mapped to our ids. Lab-reported. No endorsement.",
+    "quote": "Page footer (both guides, rule a): 'Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies.' The benchmark tables are text, not images, so the grant covers them.",
+    "icon": "ai.google.dev"
+  },
+  {
+    "id": "first-party-openai-scores",
+    "name": "OpenAI vendor-reported benchmark scores for its own models (openai.com announcement posts and Deployment Safety Hub system cards)",
+    "match": [
+      "openai.com/index/gpt-6-astra",
+      "openai.com/index/introducing-gpt-6-sol-and-luna",
+      "openai.com/index/introducing-gpt-6-1-sol",
+      "openai.com/index/gpt-5-6",
+      "openai.com/index/introducing-gpt-5-5",
+      "openai.com/index/introducing-gpt-5-4",
+      "openai.com/index/introducing-gpt-5-4-mini-and-nano",
+      "openai.com/index/introducing-gpt-5-3-codex",
+      "deploymentsafety.openai.com/gpt-6-astra",
+      "deploymentsafety.openai.com/gpt-6-1-sol",
+      "deploymentsafety.openai.com/gpt-5-6"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://openai.com/policies/terms-of-use/",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "openai.com",
+    "attribution": "OpenAI, vendor-reported results for OpenAI's own models from openai.com announcement posts and Deployment Safety Hub system cards; individual figures hand-recorded 2026-10-07 (openai.com posts read from Internet Archive captures because openai.com returns HTTP 403 to direct fetches); percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07, extending the 2026-09-25 first-party-facts exception: a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; no crawling, scripts or programmatic extraction of vendor pages; no tables, charts or prose reproduced; other labs' cells and cells credited to a third party excluded; rows labelled by: 'lab'; removed if the vendor objects. OpenAI Terms of Use (Effective January 1, 2026), as quoted in docs/research/vendor-terms-2026-10-07.md, forbid users to 'Automatically or programmatically extract data or Output' and to 'Modify, copy, lease, sell or distribute any of our Services'; no clause forbids quoting an individual figure with attribution. The source URLs omit openai.com's trailing slash so that exact matching works."
+  },
+  {
+    "id": "paper-2601.03267v2",
+    "name": "OpenAI — GPT-5 System Card (arXiv:2601.03267v2)",
+    "match": [
+      "arxiv.org/html/2601.03267v2"
+    ],
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "arxiv.org",
+    "attribution": "OpenAI (2025). GPT-5 System Card. arXiv:2601.03267v2. https://arxiv.org/abs/2601.03267v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells and in-text figures transcribed into JSON; percentages divided by 100; MMMLU value derived as the unweighted mean of the 14 printed per-language accuracies; model names mapped to catalogue IDs (gpt-5-thinking -> gpt-5, gpt-5-thinking-mini -> gpt-5-mini, gpt-5-thinking-nano -> gpt-5-nano). No endorsement.",
+    "quote": "The arXiv abstract page https://arxiv.org/abs/2601.03267 (submission history v1 19 Dec 2025, v2 1 May 2026; latest = v2) shows 'view license' linking http://creativecommons.org/licenses/by/4.0/, and the v2 HTML header reads 'License: CC BY 4.0'. Checked 2026-10-07. Rule (a): openly licensed copy, usable in full including comparison-model cells."
+  },
+  {
+    "id": "paper-2412.16720v2",
+    "name": "OpenAI — OpenAI o1 System Card (arXiv:2412.16720v2)",
+    "match": [
+      "arxiv.org/html/2412.16720v2"
+    ],
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "arxiv.org",
+    "attribution": "OpenAI (2024). OpenAI o1 System Card. arXiv:2412.16720v2. https://arxiv.org/abs/2412.16720v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells and in-text figures transcribed into JSON; percentages divided by 100; MMMLU values derived as the unweighted mean of the 14 printed per-language accuracies (English row excluded); 'GPT-4o-mini' mapped to gpt-4o-mini-2024-07-18. No endorsement.",
+    "quote": "The arXiv abstract page https://arxiv.org/abs/2412.16720 (submission history v1 21 Dec 2024, v2 30 Apr 2026; latest = v2) shows 'view license' linking http://creativecommons.org/licenses/by/4.0/, and the v2 HTML header reads 'License: CC BY 4.0'. Checked 2026-10-07. Rule (a): openly licensed copy, usable in full including comparison-model cells."
   }
 ]

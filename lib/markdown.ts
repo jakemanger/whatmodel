@@ -306,7 +306,7 @@ export function methodMarkdown(): string {
       ])));
   }
   out.push(`<a name="sources"></a>\n\n## Sources`);
-  out.push(`Benchmark results and API prices use the licensed datasets listed below. Missing coverage is withheld. Sources do not endorse this site. Scores and rankings are our calculations, not the sources' own figures.`);
+  out.push(`Benchmark results and API prices use the licensed datasets listed below, plus scores and prices that model makers publish for their own models, recorded by hand as facts and labelled lab-reported. Missing coverage is withheld. Sources do not endorse this site. Scores and rankings are our calculations, not the sources' own figures.`);
   out.push(`Our contributions to the numerical data compilation, adaptations and derived scores are [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Source-specific licences and notices remain in force. Changes include model-name mapping, unit conversion, selection of settings and the calculation of relative scores. The [source register](${rel(from, "data/sources.json")}) includes attribution and licence notices. Share-alike extracts in [data/extracts](${rel(from, "data/extracts")}) retain those terms.`);
   out.push(sources.map((x) => `- **${text(x.name)}** · ${text(x.kind)} · ${x.license_url ? `[${text(x.license)}](${href(from, x.license_url)})` : text(x.license)} · [terms](${x.terms_url})${x.checked ? ` · checked ${x.checked}` : ""}${x.attribution ? `  \n  <sub>${text(x.attribution)}</sub>` : ""}`).join("\n"));
   out.push(`[interactive version](${SITE}/method)`);

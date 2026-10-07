@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 22.4** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 3 sources
+**score 22.6** ±1.0 · comparison only: no current run option verified · from 15 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      52.8%    21.0   2022-04-14   14% ▇▇
-                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       35.9%    24.6   2022-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                         5.0%    20.4   2022-04-14    8% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   22.5%    14.1   2022-04-14    7% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        51.4%    24.3   2022-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                            84.3%    26.3   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  51.5%    25.7   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      17.2%    18.7   2022-04-14    3% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            69.0%    25.9   2022-04-14    3% ▇
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      52.9%    20.6   2021-08-06   15% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       43.4%    22.2   2021-08-06   11% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  51.6%    25.4   2021-08-06    5% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            70.5%    26.6   2021-08-06    4% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA</a>                        52.8%    24.2   2021-04-12    3% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>                          24.3%    29.1   2021-04-12    2% ▇
+<a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      52.8%    21.1   2022-04-14   14% ▇▇
+                        <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       35.9%    24.7   2022-04-14    9% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                         5.0%    20.5   2022-04-14    8% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   22.5%    14.2   2022-04-14    7% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        51.4%    24.5   2022-04-14    6% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                            84.3%    26.4   2022-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  51.5%    25.8   2022-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      17.2%    18.8   2022-04-14    3% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            69.0%    26.0   2022-04-14    3% ▇
+<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      52.9%    20.7   2021-08-06   15% ▇▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       43.4%    22.4   2021-08-06   11% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  51.6%    25.6   2021-08-06    5% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            70.5%    26.8   2021-08-06    4% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA</a>                        52.8%    24.3   2021-04-12    3% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA</a>                          24.3%    29.3   2021-04-12    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 22.4
+                        weighted average                       = 22.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

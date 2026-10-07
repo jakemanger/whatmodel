@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 66.0** ±1.6 · #91 of 462 · from 3 benchmark results across 2 sources
+**score 66.0** ±1.6 · #90 of 462 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

@@ -6,7 +6,7 @@
 
 Together · released 2023-05 · 2.8B params · apache-2.0
 
-**score 35.0** ±2.4 · #382 of 462 · from 4 benchmark results across 1 source
+**score 35.1** ±2.4 · #380 of 462 · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source     test                            score  implies  date        weight
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    35.6   2024-11-19   46% ▇▇▇▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    34.5   2024-11-19   27% ▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    32.5   2024-11-19   14% ▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    33.6   2024-11-19   10% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    35.7   2024-11-19   46% ▇▇▇▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    34.6   2024-11-19   27% ▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    32.7   2024-11-19   14% ▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    33.7   2024-11-19   10% ▇
 prior      pull toward the middle                   50.0                 3% ▇
-           weighted average                       = 35.0
+           weighted average                       = 35.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior      pull toward the middle                   50.0                 3% ▇
 
 <pre>
 download       size  score
-4-bit fp16  ~5.69GB   35.0
+4-bit fp16  ~5.69GB   35.1
 </pre>
 
 ```sh

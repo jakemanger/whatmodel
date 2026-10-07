@@ -6,7 +6,7 @@
 
 TII · released 2023-09 · 180B params · falcon-180b-tii-license
 
-**score 33.8** ±2.7 · #394 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.7** ±2.7 · #396 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                     score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1148.1    33.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 33.8
+                        weighted average                = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download        size  score
-4-bit q4_0  ~108.5GB   33.8
+4-bit q4_0  ~108.5GB   33.7
 </pre>
 
 ```sh

@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            65.4%    60.5   2025-04-11   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            65.4%    60.4   2025-04-11   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior     pull toward the middle           50.0                 7% ▇
           weighted average               = 59.7
 </pre>

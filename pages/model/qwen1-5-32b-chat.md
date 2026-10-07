@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 32.51B params · tongyi-qianwen
 
-**score 43.0** ±1.9 · #294 of 462 · from 4 benchmark results across 4 sources
+**score 42.9** ±1.9 · #296 of 462 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ source                  test                             score  implies  date   
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     30.7%    43.5   2025-01-27   21% ▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.8%    47.8   2024-04-08   12% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 43.0
+                        weighted average                        = 42.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download        size  score
-4-bit q4_0  ~20.01GB   43.0
-8-bit q8_0  ~39.51GB   43.0
+4-bit q4_0  ~20.01GB   42.9
+8-bit q8_0  ~39.51GB   42.9
 </pre>
 
 ```sh

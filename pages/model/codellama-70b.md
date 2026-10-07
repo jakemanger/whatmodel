@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    40.2   2024-01-31   44% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    42.9   2024-01-31   21% ▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    42.8   2024-05-07   34% ▇▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    42.9   2024-05-07   34% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 41.7
 </pre>

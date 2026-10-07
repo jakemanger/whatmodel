@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 64.7** ±1.9 · #107 of 462 · from 4 benchmark results across 2 sources
+**score 64.7** ±1.8 · #107 of 462 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.7   2026-10-01   76% ▇▇▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    64.6   2026-05-26   11% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    65.3   2026-05-26    6% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    68.2   2026-05-26    5% ▇
-prior                   pull toward the middle                  50.0                 2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.7   2026-10-01   72% ▇▇▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    64.6   2026-05-26   10% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    66.8   2026-05-26    9% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.9   2026-05-26    8% ▇
+prior                   pull toward the middle                  50.0                 1% ▇
                         weighted average                      = 64.7
 </pre>
 

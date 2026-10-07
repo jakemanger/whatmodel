@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 44.7** ±1.5 · #278 of 462 · from 10 benchmark results across 2 sources
+**score 44.6** ±1.5 · #278 of 462 · from 10 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious       <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    42.9   2025-10-08   23% ▇▇▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious       <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    42.8   2025-10-08   23% ▇▇▇
                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    40.9   2025-10-08   21% ▇▇▇
                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    47.9   2025-10-08   15% ▇▇
                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    47.2   2025-10-08   10% ▇
@@ -25,9 +25,9 @@ source                 test                            score  implies  date     
                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    50.4   2025-10-08    5% ▇
                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    37.5   2025-10-08    4% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    46.0   2026-04-17    3% ▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    46.3   2026-04-17    3% ▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    46.2   2026-04-17    3% ▇
 prior                  pull toward the middle                   50.0                 1% ▇
-                       weighted average                       = 44.7
+                       weighted average                       = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,8 +40,8 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~8.73GB   44.7
-8-bit q8_0    ~16.96GB   44.7
+4-bit q4_k_m   ~8.73GB   44.6
+8-bit q8_0    ~16.96GB   44.6
 </pre>
 
 ```sh

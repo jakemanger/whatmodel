@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-05 · 22.25B params · mnpl
 
-**score 44.7** ±3.4 · #277 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.7** ±3.4 · #276 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 

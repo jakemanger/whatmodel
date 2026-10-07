@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 57.4** ±3.6 · #167 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.3** ±3.6 · #167 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -19,7 +19,7 @@ source                 test                            score  implies  date     
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.7%    61.0   2026-04-17   56% ▇▇▇▇▇▇▇
                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.6%    53.2   2026-04-17   39% ▇▇▇▇▇
 prior                  pull toward the middle                   50.0                 6% ▇
-                       weighted average                       = 57.4
+                       weighted average                       = 57.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.p
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~19.7GB   57.4
-8-bit gguf-q8_0    ~38.9GB   57.4
+4-bit gguf-q4_k_m  ~19.7GB   57.3
+8-bit gguf-q8_0    ~38.9GB   57.3
 </pre>
 
 ```sh

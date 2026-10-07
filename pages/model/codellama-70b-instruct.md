@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 43.0** ±0.9 · #296 of 462 · from 6 benchmark results across 4 sources
+**score 43.0** ±0.9 · #295 of 462 · from 6 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,10 +18,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                47.7%    44.5   2024-03-28   29% ▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        66.5%    43.6   2024-03-28   23% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    45.8   2024-01-31   16% ▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    45.8   2024-01-31   17% ▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    42.7   2024-01-31    8% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    45.7   2024-05-07   13% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    29.7   2026-10-02   11% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    29.6   2026-10-02   11% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 43.0
 </pre>

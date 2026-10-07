@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-11 · proprietary
 
-**score 51.2** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
+**score 51.1** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    56.2%    52.8   2025-04-07   48% ▇▇▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    56.2%    52.7   2025-04-07   47% ▇▇▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    41.8%    51.5   2025-04-07   20% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         6.1%    47.6   2025-04-07   19% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  76.5%    49.9   2025-04-03   11% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 51.2
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         6.1%    47.6   2025-04-07   20% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  76.5%    49.8   2025-04-03   12% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 51.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

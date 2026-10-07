@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 43.8** ±1.4 · #285 of 462 · from 10 benchmark results across 3 sources
+**score 43.7** ±1.4 · #285 of 462 · from 10 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,13 +21,13 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    48.1   2025-10-08   12% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   34.0%    44.6   2025-10-08    8% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             55.0%    38.2   2025-10-08    7% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      29.1%    45.9   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      29.1%    45.8   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>   82.4%    50.2   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   43.7%    39.7   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   43.7%    39.6   2025-10-08    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1220.5    41.9   2026-10-02   24% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.9%    46.8   2026-04-17    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.9%    46.7   2026-04-17    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 43.8
+                        weighted average                        = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.32GB   43.8
-8-bit q8_0    ~10.14GB   43.8
+4-bit q4_k_m   ~5.32GB   43.7
+8-bit q8_0    ~10.14GB   43.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 38.9** ±1.3 · #343 of 462 · from 8 benchmark results across 2 sources
+**score 38.9** ±1.3 · #344 of 462 · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      42.6%    38.4   2024-05-07   14% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      43.9%    40.1   2024-05-07   11% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            21.8%    42.4   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           49.0%    43.8   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           49.0%    43.9   2024-05-07    2% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 44.5%    36.3   2024-06-19   18% ▇▇
                         <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      56.2%    40.0   2024-06-19    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

@@ -6,7 +6,7 @@
 
 Together · released 2023-06 · 6.9B params · apache-2.0
 
-**score 37.3** ±0.8 · #360 of 462 · from 19 benchmark results across 2 sources
+**score 37.4** ±0.8 · #359 of 462 · from 19 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,27 +16,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">ARC Challenge</a>                   39.4%    37.3   2024-04-08   21% ▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">HellaSwag</a>                       70.3%    37.8   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">ARC Easy</a>                        69.2%    39.2   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">SciQ</a>                            92.7%    38.2   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">BoolQ</a>                           70.8%    37.5   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">PIQA</a>                            77.1%    37.6   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">LAMBADA (OpenAI version), las…</a>  71.3%    38.4   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">WinoGrande</a>                      64.3%    36.8   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">Social IQA</a>                      42.6%    36.3   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">OpenBookQA</a>                      29.0%    40.6   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">TruthfulQA MC2</a>                  33.0%    19.3   2024-04-08    0% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   42.8%    36.1   2024-06-07   11% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      64.7%    36.6   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      49.4%    37.1   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       70.3%    36.5   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        68.4%    39.0   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            92.9%    37.3   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            76.0%    36.3   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           68.6%    35.0   2024-06-07    3% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">ARC Challenge</a>                   39.4%    37.5   2024-04-08   21% ▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">HellaSwag</a>                       70.3%    37.9   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">ARC Easy</a>                        69.2%    39.3   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">SciQ</a>                            92.7%    38.3   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">BoolQ</a>                           70.8%    37.6   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">PIQA</a>                            77.1%    37.7   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">LAMBADA (OpenAI version), las…</a>  71.3%    38.6   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">WinoGrande</a>                      64.3%    36.9   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">Social IQA</a>                      42.6%    36.4   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">OpenBookQA</a>                      29.0%    40.7   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json">TruthfulQA MC2</a>                  33.0%    19.4   2024-04-08    0% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   42.8%    36.2   2024-06-07   11% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      64.7%    36.8   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      49.4%    37.3   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       70.3%    36.6   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        68.4%    39.1   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            92.9%    37.4   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            76.0%    36.5   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           68.6%    35.1   2024-06-07    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 37.3
+                        weighted average                       = 37.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -47,7 +47,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~13.85GB   37.3
+4-bit fp16  ~13.85GB   37.4
 </pre>
 
 ```sh

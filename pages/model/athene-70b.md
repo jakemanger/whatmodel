@@ -6,7 +6,7 @@
 
 Nexusflow · released 2024-07 · 70.6B params · nexusflow-research
 
-**score 47.7** ±1.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
+**score 47.6** ±1.0 · comparison only: no current run option verified · from 6 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -23,7 +23,7 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1306.6    52.3   2026-10-02   13% ▇▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   77.6%    55.1   2024-11-14   12% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 47.7
+                        weighted average                        = 47.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · **stt**
 
-updated 2026-10-07 04:40 UTC · 136 models · scores combine 64 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
+updated 2026-10-07 06:21 UTC · 136 models · scores combine 64 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
 
 <details><summary>Extra: filter models and choose a score scale</summary>
 

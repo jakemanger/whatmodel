@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 34B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 44.0** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 1 source
+**score 44.1** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            64.3%    43.4   2023-11-20   37% ▇▇▇▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            64.3%    43.4   2023-11-20   36% ▇▇▇▇
         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  60.6%    46.4   2023-11-20   23% ▇▇▇
         <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      53.6%    38.5   2023-11-20   18% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  82.5%    49.1   2023-11-20   12% ▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     54.0%    43.4   2023-11-20    8% ▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  82.5%    49.2   2023-11-20   12% ▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     54.0%    43.5   2023-11-20    8% ▇
 prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 44.0
+        weighted average                       = 44.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

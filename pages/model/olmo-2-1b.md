@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      40.0%    25.3   2025-10-08   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    27.3   2025-10-08   20% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            35.0%    27.2   2025-10-08   20% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     68.3%    36.8   2025-10-08   15% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   9.1%    27.1   2025-10-08   10% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   9.1%    27.0   2025-10-08   10% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            48.7%    32.9   2025-10-08    9% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     12.9%    27.8   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  70.1%    39.5   2025-10-08    5% ▇

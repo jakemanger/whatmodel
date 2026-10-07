@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 69.8** ±2.7 · #61 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 71.2** ±1.6 · #45 of 462 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,10 +15,15 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      74.8%    70.4   2026-02-25   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                 3% ▇
-          weighted average               = 69.8
+source                  test                            score  implies  date        weight
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                77.3%    67.8   2026-03-05   18% ▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>  51.9%    74.7   2026-03-05   16% ▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    72.0   2026-02-05   11% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    77.1   2026-02-05   10% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>             56.8%    71.3   2026-02-05    6% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    70.3   2026-02-25   38% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 71.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

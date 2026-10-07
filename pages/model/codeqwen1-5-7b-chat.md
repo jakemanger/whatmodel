@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    45.9   2024-10-27   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    45.8   2024-10-27   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
                         weighted average                       = 46.2
 </pre>

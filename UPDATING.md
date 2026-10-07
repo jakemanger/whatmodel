@@ -52,6 +52,13 @@ fabricated accuracy or Elo conversion. Lower-is-better distances keep their raw 
   propose a ledger entry in the PR with the exact clause quoted. If the terms are missing or unclear,
   don't use it: say so in the PR so the owner can ask for permission. `npm run check` fails on any number
   from an unlisted or disallowed source.
+- **Vendor-reported scores** (owner rule, 2026-10-07; review in `docs/research/vendor-terms-2026-10-07.md`):
+  a score a model's own maker publishes for its own model, in its announcement, system or model card or
+  docs, may be recorded without an open licence. Record it by hand, one figure at a time, with the exact
+  page URL, date and printed settings. Only use benchmarks already in `data/benchmarks.json`. Never take other
+  labs' rows or cells the vendor credits to a third party, and never script it or copy tables, charts or text.
+  Mark rows `by: "lab"`, use a `first-party` ledger entry with licence "Factual vendor-reported score (not licensed
+  content)", prefer an openly licensed copy when one exists, and remove the rows if the vendor objects.
 - **Never** use artificialanalysis.ai (personal, non-commercial use only), and never scrape a site whose
   terms forbid it. Prefer official datasets and APIs, and credit sources as their licence asks.
 

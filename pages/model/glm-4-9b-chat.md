@@ -6,7 +6,7 @@
 
 Zhipu AI (Z.ai) · released 2024-06 · 9.4B params · glm-4
 
-**score 45.8** ±2.6 · #267 of 462 · from 3 benchmark results across 3 sources
+**score 45.7** ±2.6 · #269 of 462 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  59.0%    43.4   2026-08-11   34% ▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  75.0%    48.1   2024-06-05   23% ▇▇▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 45.8
+                        weighted average                       = 45.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~6.14GB   45.8
-8-bit q8_0    ~11.78GB   45.8
+4-bit q4_k_m   ~6.14GB   45.7
+8-bit q8_0    ~11.78GB   45.7
 </pre>
 
 ```sh

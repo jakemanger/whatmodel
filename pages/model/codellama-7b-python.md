@@ -17,7 +17,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       25.6%    34.5   2024-03-28   35% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               39.6%    34.2   2024-03-28   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               39.6%    34.3   2024-03-28   28% ▇▇▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         38.4%    35.4   2024-01-31   20% ▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              47.6%    35.0   2024-01-31    9% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>        37.3%    37.8   2024-01-03    4% ▇

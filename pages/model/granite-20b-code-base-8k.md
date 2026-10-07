@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 37.2** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 37.3** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -17,11 +17,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    39.0   2024-05-07   40% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.1   2024-05-07   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    36.1   2024-05-07   21% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.2   2024-05-07   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    36.1   2024-05-07   21% ▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    35.0   2024-05-07   17% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 37.2
+                        weighted average                       = 37.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

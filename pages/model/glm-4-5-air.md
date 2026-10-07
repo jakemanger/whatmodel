@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 106B params (12B active) · mit
 
-**score 60.2** ±1.4 · #144 of 462 · from 20 benchmark results across 5 sources
+**score 60.2** ±1.4 · #143 of 462 · from 20 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -21,21 +21,21 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       87.4%    60.7   2025-08-08    6% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         57.6%    60.6   2025-08-08    6% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   81.4%    60.9   2025-08-08    5% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    58.8   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    59.9   2025-08-08    4% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    59.0   2025-08-08    4% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.1%    62.8   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    59.5   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             77.9%    61.9   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   37.3%    60.8   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    53.1   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             42.5%    57.2   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    63.8   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    51.8   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    63.8   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.3%    63.8   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    62.1   2025-08-08    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.3   2026-10-02   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    62.0   2025-08-08    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.3   2026-10-02   23% ▇▇▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    58.3   2026-05-02   10% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   95.8%    63.8   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    55.0   2026-04-17    2% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.6   2025-11-18    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    54.9   2026-04-17    2% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.5   2025-11-18    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 60.2
 </pre>

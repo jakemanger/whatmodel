@@ -6,7 +6,7 @@
 
 Tencent · released 2026-08 · 770B params (49B active) · apache-2.0
 
-**score 76.0** ±1.5 · #15 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 76.1** ±1.5 · #15 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1633.2    76.5   2026-10-01   51% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0395 IPS    76.1   2026-10-02   48% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1633.2    76.6   2026-10-01   51% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0395 IPS    76.2   2026-10-02   48% ▇▇▇▇▇▇
 prior                   pull toward the middle                        50.0                 1% ▇
-                        weighted average                            = 76.0
+                        weighted average                            = 76.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

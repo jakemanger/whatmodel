@@ -6,7 +6,7 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 29.2** ±4.2 · #427 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.1** ±4.2 · #428 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source            test                            score  implies  date        weight
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    27.3   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior             pull toward the middle                   50.0                 8% ▇
-                  weighted average                       = 29.2
+                  weighted average                       = 29.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior             pull toward the middle                   50.0                 
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.95GB   29.2
-8-bit q8_0    ~3.39GB   29.2
+4-bit q4_k_m  ~1.95GB   29.1
+8-bit q8_0    ~3.39GB   29.1
 </pre>
 
 ```sh

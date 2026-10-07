@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                66.5%    49.4   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     23.7%    49.1   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          75.2%    53.2   2026-09-25    3% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     64.7%    47.0   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     64.7%    46.9   2026-09-25    2% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  41.3%    46.4   2026-05-02   10% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  85.7%    48.4   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  60.4%    40.7   2026-04-17    2% ▇
