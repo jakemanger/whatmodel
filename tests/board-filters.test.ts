@@ -33,7 +33,19 @@ test('announced previews appear on default and task boards without implying publ
   for (const query of ['max=0', 'ram=16&gpu=apple&max=0', 'max=10', 'max=0&retired=1']) {
     assert.ok(!view(query).shown.some((r) => r.id === 'gemini-4-argon'), 'A preview with no run route cannot satisfy a local or price filter');
   }
-  assert.ok(!view().shown.some((r) => r.id === 'gpt-4-0314'), 'Historical catalogue visibility stays opt-in');
+});
+
+test('scored comparison-only models are listed by default, labelled, and never fit a budget or a machine', () => {
+  const old = view().shown.find((r) => r.id === 'gpt-4-0314');
+  assert.ok(old && old.score !== null, 'A scored historical model is listed by default');
+  assert.equal(old.where, 'retired');
+  assert.equal(whereLabel(old), 'comparison only');
+  assert.ok(!view('retired=0').shown.some((r) => r.id === 'gpt-4-0314'), '?retired=0 hides historical models');
+  for (const query of ['max=0', 'max=10', 'ram=16&gpu=apple', 'ram=16&gpu=apple&max=0'])
+    assert.ok(!view(query).shown.some((r) => r.id === 'gpt-4-0314'), `A retired model cannot satisfy ${query}`);
+  assert.ok(!view().shown.some((r) => r.where === 'retired' && r.score === null), 'Unscored retired models stay outside the default table');
+  const retiredRows = (q: string) => view(q).shown.filter((r) => r.where === 'retired').length;
+  assert.ok(retiredRows('retired=1') >= retiredRows(''), '?retired=1 lists every retired model the default lists');
 });
 
 test('task rankings use their own evidence, survive serialization and combine with hardware', async () => {

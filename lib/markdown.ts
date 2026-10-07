@@ -126,13 +126,7 @@ export function boardMarkdown(v: BoardView, intro = ""): string {
     if (v.hidden > 0) out.push(`\\+ ${v.hidden} more don't fit your machine or budget · [show them](${SITE}${path}?all=1)`);
   }
 
-  // Historical or research entries without a verified current run option.
-  if (v.retiredCount) {
-    const gone = boardView(cat, new URLSearchParams("retired=1")).shown.filter((r) => r.where === "retired");
-    out.push(`<details><summary>Catalogue-only models (${gone.length}): no verified run option</summary>\n\n` +
-      `Scores appear only where comparable reviewed evidence is available.\n\n${boardTable(from, cat, gone)}\n\n</details>`);
-  }
-
+  // Comparison-only models with a score are in the table above; the rest are listed below.
   const { unscored, withoutResults } = v.outside;
   out.push(`\\* new or thinly tested: ranked on too few benchmark results · ~RAM is estimated; full context may need more memory · ${v.rows.length} of ${v.models.length} catalogue models listed here · [sources and licences](${rel(from, files.method)}#sources)`);
   if (unscored.length || withoutResults.length) {

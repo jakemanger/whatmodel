@@ -81,7 +81,7 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
   const mem = specs ? usable(specs) : null;
   const rows: Row[] = models.flatMap((m) => {
     const s = scores.get(m.id);
-    // Historical/comparison-only models are opt-in; announced previews remain discoverable.
+    // Callers choose whether historical models are listed; announced previews remain discoverable.
     const gone = !m.api && !m.local?.variants.length;
     if ((!s && !includeUnscored) || (catalogueOnly(m) && !retired)) return [];
     const cat = catOf(m);
@@ -109,7 +109,8 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     else if (api) [run, cmd] = ["api", api.url];
     else if (pick) [run, cmd, chosen] = ["local-slow", pick.cmd, pick];
     else if (!mem && smallest) [run, cmd] = ["local", smallest.cmd]; // no specs: show the model as benchmarked
-    if (gone) run = m.availability === "preview" ? (max === null ? "preview" : "none") : "retired";
+    // Nothing to run: listed for comparison, but never as fitting a budget or a machine.
+    if (gone) run = max !== null || (m.availability !== "preview" && specs) ? "none" : m.availability === "preview" ? "preview" : "retired";
 
     const apiSpeed: RowSpeed | null =
       run !== "api" || !m.api ? null

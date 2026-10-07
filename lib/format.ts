@@ -50,7 +50,7 @@ export function whereLabel(r: Row) {
   if (r.where === "local") return "local";
   if (r.where === "local-slow") return "local (slow)";
   if (r.where === "api") return `api ${r.price === null ? "price unknown" : price(r.price, r.category)}`;
-  if (r.where === "retired") return "catalogue only";
+  if (r.where === "retired") return "comparison only";
   if (r.where === "preview") return "limited preview";
   const why = [r.need_gb !== null && `needs ${r.need_gb}GB`, r.over_budget && (r.price === null ? "price unknown" : price(r.price, r.category))].filter(Boolean);
   return `✗ ${why.join(" or ")}`;
@@ -83,7 +83,7 @@ export function describeSpecs(s: Specs) {
 
 type Opts = { color: boolean; base: string; limit: number; all: boolean; benches: number; updated: string; cat: Category;
   comparison?: { selected?: string; scoreMode: "overall" | "set"; sets: { id: string; label: string; models: number }[] };
-  retiredCount?: number; // scored models with no API or weights left, listed with ?retired=1
+  retiredCount?: number; // scored models with no verified API or download, listed unless ?retired=0
 };
 
 export function toText(rows: Row[], specs: Specs | null, max: number | null, o: Opts) {
@@ -135,7 +135,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   }
   out.push("");
   if (!o.all && hidden > 0) out.push(c("2", `  + ${hidden} more models don't fit your machine or budget (?all=1)`));
-  if (o.retiredCount && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} catalogue models without a verified run option (?retired=1)`));
+  if (o.retiredCount && max === null && !specs && !shown.some((r) => r.where === "retired")) out.push(c("2", `  + ${o.retiredCount} comparison-only models hidden (drop ?retired=0 to list them)`));
   if (shown.some((r) => r.thin)) out.push(c("2", `  * new or thinly tested: ranked on too few benchmark results`));
   if (shown.some((r) => r.score === null && r.evidence !== "none")) out.push(c("2", "  — not yet calibrated on the overall score scale; use ?set=<id>&score=set for set scores where available"));
   if (shown.some((r) => r.evidence === "none")) out.push(c("2", "  — catalogue entries without reviewed results have no score or rank"));
@@ -144,7 +144,7 @@ export function toText(rows: Row[], specs: Specs | null, max: number | null, o: 
   out.push(c("2", `  sources and licences: ${host}/method#sources`));
   out.push(c("2", `  score = one number combining ${o.benches} benchmarks (50 = average model, ± = uncertainty) · ${host}/method`));
   out.push(c("2", `  other lists: ${["/", "/image", "/video", "/tts", "/stt"].filter((p) => p !== path).map((p) => host + p).join("  ")}`));
-  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1  ?retired=1`));
+  out.push(c("2", `  ?max=${o.cat === "llm" ? "1" : "0.05"} (max $/${CATEGORIES[o.cat].priceUnit}, 0 = local only)  ?sort=score|where|speed|ram|context  ?format=json  ?all=1  ?retired=0`));
   if (sponsor) out.push(`  ${c("35", "sponsor:")} ${sponsor.text} — ${sponsor.url}`);
   out.push(c("2", `  estimates from public sources; may be wrong or out of date. review commands before running. ${host}/terms`));
   out.push("");
