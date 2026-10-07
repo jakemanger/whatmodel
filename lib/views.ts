@@ -4,7 +4,7 @@ import {
   benchmarkById, comparisonForModel, comparisonSets, fitFor, gFor,
   models, modelsIn, quantFindings, results, sourcesFor, speeds, type ComparisonSet, type SourceSummary,
 } from "./data.ts";
-import { catOf } from "./categories.ts";
+import { CATEGORIES, CATEGORY_IDS, catOf } from "./categories.ts";
 import { catalogueOnly, rank } from "./fit.ts";
 import { boardFromData } from "./board.ts";
 import { boardData } from "./board-data.ts";
@@ -117,15 +117,70 @@ export function modelView(id: string): ModelView | null {
   };
 }
 
-// The method page's tables: every calibrated benchmark series, strongest separators first, and the sources.
+// A benchmark run's place in the score: how sharply it separates models (a), its noise (σ),
+// the weight one result carries (a² / σ²), and its share of all the evidence behind the
+// category's scores (each model's explained shares, averaged over the scored models).
+export type InfluenceRow = {
+  key: string; id: string; evaluator?: string; benchmark?: ReturnType<typeof benchmarkById.get>;
+  n: number; a: number; sigma: number; info: number; influence: number;
+};
+// One model's score split by benchmark, for the method page's colour bars.
+export type ScoreSplit = { id: string; name: string; why: string; g: number; pm: number; n: number; prior: number; parts: { bench: string; share: number }[] };
+
+const byBenchmark = (e: Explained) => {
+  const m = new Map<string, number>();
+  for (const p of e.parts) m.set(p.cell.bench, (m.get(p.cell.bench) ?? 0) + p.share);
+  return [...m].map(([bench, share]) => ({ bench, share })).sort((a, b) => b.share - a.share);
+};
+
+// The method page: every benchmark run's weight per category, example score breakdowns and the sources.
 export function methodView() {
-  // Benchmark keys are unique across categories (each benchmark belongs to one).
-  const params = Object.values(comparisonSets)
-    .flatMap((sets) => sets.flatMap((set) => [...set.fit.params]))
-    .sort((a, b) => b[1].a - a[1].a)
-    .map(([key, p]) => {
+  const categories = CATEGORY_IDS.flatMap((cat) => {
+    const set = comparisonSets[cat][0];
+    if (!set) return [];
+    const f = set.fit, ids = [...f.scores.keys()];
+    const share = new Map<string, number>();
+    let prior = 0;
+    for (const id of ids) {
+      const e = f.explain(id)!;
+      prior += e.prior.share;
+      for (const p of e.parts) share.set(p.cell.key, (share.get(p.cell.key) ?? 0) + p.share);
+    }
+    const rows: InfluenceRow[] = [...f.params].map(([key, p]) => {
       const [id, ev] = key.split("@");
-      return { key, id, evaluator: ev, benchmark: benchmarkById.get(id), ...p };
-    });
-  return { params, results: results.length, sources: SOURCES.filter((x) => x.verdict === "allowed") };
+      return { key, id, evaluator: ev, benchmark: benchmarkById.get(id), n: p.n, a: p.a, sigma: p.sigma, info: (p.a * p.a) / (p.sigma * p.sigma), influence: (share.get(key) ?? 0) / ids.length };
+    }).sort((a, b) => b.influence - a.influence);
+    return [{ cat, title: CATEGORIES[cat].title, models: ids.length, prior: prior / ids.length, rows }];
+  });
+
+  // Example text models: the leader, the best open-weights model, a mid-table model, a 2023 model,
+  // the best thinly tested model and the best model with no verified way to run it.
+  const llm = comparisonSets.llm[0].fit;
+  const scored = [...llm.scores.values()].sort((a, b) => b.g - a.g);
+  const meta = (id: string) => models.find((m) => m.id === id)!;
+  const picks: [Scored | undefined, string][] = [
+    [scored[0], "highest score"],
+    [scored.find((s) => meta(s.id).open_weights), "best open weights"],
+    [scored[Math.floor(scored.length / 2)], "middle of the table"],
+    [scored.find((s) => (meta(s.id).released ?? "") < "2024" && meta(s.id).released && s.n >= 5), "best from 2023"],
+    [scored.find((s) => s.n < 3), "fewest results near the top (*)"],
+    [scored.find((s) => catalogueOnly(meta(s.id))), "best comparison-only model"],
+  ];
+  const seen = new Set<string>();
+  const examples: ScoreSplit[] = picks.flatMap(([s, why]) => {
+    if (!s || seen.has(s.id)) return [];
+    seen.add(s.id);
+    const e = llm.explain(s.id)!;
+    return [{ id: s.id, name: meta(s.id).name, why, g: s.g, pm: s.pm, n: s.n, prior: e.prior.share, parts: byBenchmark(e) }];
+  });
+
+  // How much of the top 20 text models' evidence comes from FrontierMath, and from its single biggest test.
+  const top = scored.slice(0, 20).map((s) => byBenchmark(llm.explain(s.id)!));
+  const fm = top.reduce((t, parts) => t + parts.filter((p) => p.bench.startsWith("frontiermath")).reduce((u, p) => u + p.share, 0), 0) / top.length;
+  const allFm = scored.reduce((t, s) => t + byBenchmark(llm.explain(s.id)!).filter((p) => p.bench.startsWith("frontiermath")).reduce((u, p) => u + p.share, 0), 0) / scored.length;
+
+  return {
+    categories, examples, frontiermath: { top20: fm, all: allFm },
+    results: results.length, sources: SOURCES.filter((x) => x.verdict === "allowed"),
+  };
 }

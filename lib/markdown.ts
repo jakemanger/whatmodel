@@ -257,21 +257,37 @@ export function modelMarkdown(v: ModelView): string {
 
 export function methodMarkdown(): string {
   const from = files.method;
-  const { params, results, sources } = methodView();
+  const { categories, examples, frontiermath, results, sources } = methodView();
+  const llm = categories.find((c) => c.cat === "llm")!;
+  const pct = (x: number) => `${x >= 0.095 ? Math.round(x * 100) : (x * 100).toFixed(1)}%`;
+  const name = (id: string) => categories.flatMap((c) => c.rows).find((r) => r.id === id)?.benchmark?.name ?? id;
   const out: string[] = [`[whatmodel.sh](${rel(from, files.board("llm"))}) / method`, `# How the score is calculated`];
-  out.push(`Every model with enough reviewed data gets one number, its **score**. It is fit across every benchmark result we have, the way psychometrics fits one general ability from many tests:`);
+  out.push(`Every benchmark is a different ruler. A model can score 90% on an easy quiz and 30% on research-level maths, so averaging percentages says little. Instead we line every test up on one shared scale and read off where each model sits. This is **item response theory**, the method exam boards use to put different exam papers on the same scale:`);
   out.push("```text\nresult[model, run] ≈ a[test] · score[model] + d[run]\n```");
   out.push([
-    "Bounded scores use a logit scale after removing any stated chance rate. Error ratios use −log(error + 0.005), preserving errors above 100% caused by insertions. Ratings use a linear transformation. Stored raw values are unchanged.",
-    "**d** is a run's level: how hard the benchmark is as one evaluator ran it. This adjustment is approximate and depends on overlap between models.",
-    "**a** is how well a benchmark separates strong models from weak ones. Saturated benchmarks count for less.",
-    "Each evaluator's run of a benchmark keeps its own level, so an evaluator whose setup runs hot or cold can't move anyone's score. All runs of the same benchmark share its **a**. Each result is read against the other models in its run, so a run needs at least two models and a benchmark at least three across its runs. Sparser results remain visible as raw evidence. Lab-reported results are labelled.",
-    "Models with few results are pulled toward the middle and get a wider **±**.",
+    "**a** is a test's sharpness: how many points of result one step of ability is worth. Every run of the same test shares it, learned from all of them together. Saturated tests get a small a and count for less.",
+    "**d** is the level of one evaluator's run of a test. Each run keeps its own, so an evaluator whose setup runs hot or cold can't move anyone's score. A result is read against the other models in its run, so a run needs at least two models and a test at least three across its runs. Sparser results stay visible as raw evidence. Lab-reported results are labelled.",
+    "Bounded scores use a logit scale after removing the guessing rate (25% on four-option multiple choice). Error ratios use −log(error + 0.005), preserving errors above 100% caused by insertions. Ratings use a linear transformation. Stored raw values are unchanged.",
+    "Models with few results are pulled toward the middle and get a wider **±**; \\* marks scores from fewer than three results.",
     "Task filters recalculate scores using only that task’s reviewed evaluations. Models need task evidence to appear. Compare within the same task and connected set, not against overall scores. Agent measurements depend on the evaluated harness, tools and reasoning effort.",
     "Arena Agent’s signed IPS effects retain their raw units and are divided by a fixed 0.1 for the latent fit. They are not Elo or success rates. The aggregate is counted once, without duplicate component signals.",
     "All model sets are listed together by default. Overall scores use the largest connected set; models without a shared scale are not yet calibrated. Under Extra, filter to a set without changing scores, or choose scores within that set. Each scale has mean 50, sd 15; scores from different scales are not comparable. Scores shift as new models arrive.",
     "± is uncertainty within this statistical model, not a guarantee of real-world performance or a validated confidence interval.",
-    "Related benchmarks can share tasks or biases. A high held-out correlation does not establish independent validation.",
+  ].map((l) => `- ${l}`).join("\n"));
+  out.push(`## Where each score comes from`);
+  out.push(`A score is a weighted average of what each result says on its own. A result's weight is **a² ÷ σ²**: how sharply its test separates models, divided by how noisy the test is. The rest is the prior, a pull toward the middle that matters only for models with few results. Each line splits one text model's score by test:`);
+  out.push(examples.map((e) => {
+    const parts = e.parts.slice(0, 5).map((p) => `${text(name(p.bench))} ${pct(p.share)}`);
+    const rest = e.parts.slice(5).reduce((t, p) => t + p.share, 0);
+    return `- [${text(e.name)}](${rel(from, files.model(e.id))}) (${e.why}, ${Math.round(e.g)} ±${Math.round(e.pm)}${e.n < 3 ? "\\*" : ""} from ${e.n} result${e.n === 1 ? "" : "s"}): ${[...parts, ...(rest > 0.005 ? [`other tests ${pct(rest)}`] : []), `prior ${pct(e.prior)}`].join(" · ")}`;
+  }).join("\n"));
+  out.push(`**Can one hard test dominate?** For the models at the very top, partly. FrontierMath supplies ${pct(frontiermath.top20)} of the evidence behind the top 20 text models' scores, because it is one of the few tests that still separates them, and with little noise. Across all ${llm.models} text models it supplies ${pct(frontiermath.all)}. Overlapping tests count separately: thirteen monthly MathArena sets are thirteen results. We tested a model that learns which tests overlap and discounts them; it ranked models worse on tests it hadn't seen, so we don't use it.`);
+  out.push(`## Prior art`);
+  out.push([
+    "Epoch AI's Capabilities Index fits the same kind of model to AI benchmarks: each benchmark has a difficulty and a slope, and each model one capability ([“A Rosetta Stone for AI Benchmarks”](https://arxiv.org/abs/2512.00193)). We differ in giving each evaluator's run its own level and in reading every result against the other models in its run.",
+    "LMArena ranks models from head-to-head human votes with a Bradley–Terry model ([Chatbot Arena paper](https://arxiv.org/abs/2403.04132)). We use its ratings as tests among many.",
+    "HELM reports head-to-head win rates: the share of comparisons, across all scenarios, where a model beats another ([HELM paper](https://arxiv.org/abs/2211.09110)).",
+    "How we chose (7 October 2026): we hid whole tests and checked whether each method put models in the same order as the hidden test. This method got about 85% of text-model pairs right; an average win rate got about 77%, and a Bayesian model with extra hidden skills about 82%.",
   ].map((l) => `- ${l}`).join("\n"));
   out.push(`## Running models locally`);
   out.push(`RAM is a rough estimate from parameter count, precision and runtime headroom, not a measured peak. Actual use depends on the engine, batch size, context and KV cache. A listed context window is the provider ceiling; the RAM estimate does not promise that the full window fits on your machine.`);
@@ -280,11 +296,15 @@ export function methodMarkdown(): string {
   out.push(`API speeds are our own measurements: we stream a fixed prompt to each model three times, pinned to the provider whose price we list, and publish the raw runs in [api-speed.json](${rel(from, "data/api-speed.json")}). You can add local speeds for your own machine with the [bench script](${rel(from, "bench.sh")}); submissions are checked and reviewed before they appear.`);
   out.push(`## Benchmarks`);
   out.push(`${results} results, each with a source link. Download the [raw results](${rel(from, "data/results.json")}), [benchmark definitions](${rel(from, "data/benchmarks.json")}), or [rankings as JSON](${SITE}/api?format=json&all=1).`);
-  out.push(pre([{ head: "benchmark", max: 56 }, { head: "results", right: true }, { head: "weight (a)", right: true }, { head: "noise", right: true }],
-    params.map((p) => [
-      { text: `${p.benchmark?.name ?? p.id}${p.evaluator ? ` (${p.evaluator === "lab" ? "lab-reported" : p.evaluator})` : ""}`, href: p.benchmark?.url ?? "" },
-      String(p.n), p.a.toFixed(2), p.sigma.toFixed(2),
-    ])));
+  out.push(`**Share of evidence** is how much of all the weight behind a category's scores comes from that run, averaged over its scored models.`);
+  for (const c of categories) {
+    out.push(`### ${c.title[0].toUpperCase()}${c.title.slice(1)} (${c.models} scored models, prior ${pct(c.prior)})`);
+    out.push(pre([{ head: "test (evaluator)", max: 56 }, { head: "models", right: true }, { head: "a", right: true }, { head: "σ", right: true }, { head: "weight", right: true }, { head: "share", right: true }],
+      c.rows.map((r) => [
+        { text: `${r.benchmark?.name ?? r.id}${r.evaluator ? ` (${r.evaluator})` : ""}`, href: r.benchmark?.url ?? "" },
+        String(r.n), r.a.toFixed(2), r.sigma.toFixed(2), r.info.toFixed(1), pct(r.influence),
+      ])));
+  }
   out.push(`<a name="sources"></a>\n\n## Sources`);
   out.push(`Benchmark results and API prices use the licensed datasets listed below. Missing coverage is withheld. Sources do not endorse this site. Scores and rankings are our calculations, not the sources' own figures.`);
   out.push(`Our contributions to the numerical data compilation, adaptations and derived scores are [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Source-specific licences and notices remain in force. Changes include model-name mapping, unit conversion, selection of settings and the calculation of relative scores. The [source register](${rel(from, "data/sources.json")}) includes attribution and licence notices. Share-alike extracts in [data/extracts](${rel(from, "data/extracts")}) retain those terms.`);

@@ -1,0 +1,209 @@
+[
+  {
+    "vendor": "anthropic",
+    "location_type": "announcement",
+    "url": "https://www.anthropic.com/claude-opus-5-5",
+    "terms_url": "https://www.anthropic.com/legal/consumer-terms",
+    "quote": "These Terms of Service (“Terms”) govern your use of Claude.ai, Claude Pro, and other products and services that we may offer for individuals, along with any associated apps, software, and websites (together, our “Services”). … To crawl, scrape, or otherwise harvest data or information from our Services other than as permitted under these Terms. … Except when you are accessing our Services via an Anthropic API Key or where we otherwise explicitly permit it, to access the Services through automated or non-human means, whether through a bot, script, or otherwise.",
+    "assessment": "b",
+    "note": "Text benchmark table (e.g. Terminal-Bench 4.0 66.4%). Footer: '© 2026 Anthropic PBC' and links to the Commercial and Consumer terms only; there are no separate website terms and no licence. Automated collection is expressly banned. Hand-quoting is not addressed. Table also contains GPT-6 Astra figures 'as reported by OpenAI': exclude those. Consumer Terms effective October 8, 2025. Fetched directly 2026-10-07."
+  },
+  {
+    "vendor": "anthropic",
+    "location_type": "system_card",
+    "url": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf",
+    "terms_url": "https://www.anthropic.com/legal/consumer-terms",
+    "quote": "We and our Providers retain all of our respective rights, title, and interest, including intellectual property rights, in and to the Services. Other than the rights of access and use expressly granted in our Terms, our Terms do not grant you any right, title, or interest in or to our Services.",
+    "assessment": "b",
+    "note": "230-page PDF dated September 22, 2026. A full-text search found no copyright, licence or reproduction statement. Capability tables are in §8 (e.g. SWE-bench Pro 89.9 for Opus 5.5). Index: https://www.anthropic.com/system-cards. All rights reserved by default. No anti-quoting clause."
+  },
+  {
+    "vendor": "anthropic",
+    "location_type": "docs_model_page",
+    "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+    "terms_url": "https://www.anthropic.com/legal/commercial-terms",
+    "quote": "They govern Customer’s use of Anthropic API keys and any other Anthropic offerings that references these Terms, as well as all related Anthropic tools, documentation and services (the “Services”). … D.4. Use Restrictions. Customer may not and must not attempt to (a) access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic; (b) reverse engineer or duplicate the Services; or (c) support any third party’s attempt at any of the conduct restricted in this sentence.",
+    "assessment": "b",
+    "note": "No benchmark numbers on this page or on /whats-new-opus-5-5; only IDs, context, prices and latency. Nothing to record. Commercial Terms (effective June 17, 2025) bind us as an API customer and cover documentation. Footer has no licence."
+  },
+  {
+    "vendor": "anthropic",
+    "location_type": "github_repo",
+    "url": "https://github.com/anthropics/political-neutrality-eval",
+    "terms_url": "https://github.com/anthropics/political-neutrality-eval/blob/main/LICENSE",
+    "quote": "© 2025 Anthropic PBC. Licensed under CC BY 4.0.",
+    "assessment": "a",
+    "note": "Open-licensed, but holds the eval set, grader prompts and grader-agreement statistics, not frontier capability scores. The only other Anthropic repo with model-card material, anthropics/model-cards, has no licence and holds τ²-bench prompt/policy files for Opus 4.5, with no results. Anthropic publishes no GitHub repo of benchmark results."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "announcement",
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "terms_url": "https://openai.com/policies/terms-of-use/",
+    "quote": "These Terms of Use apply to your use of ChatGPT, DALL·E, and OpenAI’s other services for individuals, along with any associated software applications and websites (all together, “Services”). … What you cannot do. You may not use our Services for any illegal, harmful, or abusive activity. For example, you may not: … Modify, copy, lease, sell or distribute any of our Services. … Automatically or programmatically extract data or Output (defined below).",
+    "assessment": "b",
+    "note": "Charts and text (e.g. Terminal-Bench 4.0 57.9%, GPQA Diamond 96.0%). Footer 'OpenAI © 2015–2026'. This is the most restrictive wording of the three vendors. Programmatic extraction is expressly banned. 'copy … or distribute any of our Services' read literally reaches the website, though it most naturally targets cloning the service. Hand-recording isolated figures is not expressly addressed. Terms of Use effective January 1, 2026. openai.com returns 403 to direct fetches, so this was read from Wayback captures (terms 2026-10-05, page 2026-10-04)."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "system_card",
+    "url": "https://deploymentsafety.openai.com/gpt-6-astra",
+    "terms_url": "https://openai.com/policies/terms-of-use/",
+    "quote": "Modify, copy, lease, sell or distribute any of our Services. … Automatically or programmatically extract data or Output (defined below).",
+    "assessment": "b",
+    "note": "HTML system card. Mostly safety and preparedness evals, with some capability figures (e.g. MLE-Bench Revised). Footer 'OpenAI © 2015–2026' links 'Terms of Use' to openai.com/policies/terms-of-use/. Summary page: https://openai.com/index/safety-overview-gpt-6-astra/. No licence. Fetched directly 2026-10-07."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "docs_model_page",
+    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "terms_url": "https://openai.com/policies/services-agreement/",
+    "quote": "“Services” means OpenAI’s services for businesses, enterprises, or developers made available for purchase or use in Customer’s Account, along with any of OpenAI’s associated software, tools, developer services, documentation, and websites, but excluding any Third-Party Service. … 3.3. Restrictions. Customer will not, and will not permit End Users to: … (f) extract data from the Services other than as permitted through the Services;",
+    "assessment": "b",
+    "note": "No benchmark numbers on this page, only 'Reasoning: Highest', 'Speed: Fast', prices and limits. Nothing to record. The Services Agreement (effective January 1, 2026; read from the Wayback capture of /policies/business-terms/ dated 2026-09-12) binds us as an API customer, covers documentation and websites, and bars data extraction 'other than as permitted'. That is a reason to keep collection strictly manual."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "github_repo",
+    "url": "https://github.com/openai/simple-evals",
+    "terms_url": "https://github.com/openai/simple-evals/blob/main/LICENSE",
+    "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software",
+    "assessment": "a",
+    "note": "MIT. README results table covers o1/o3/o4-mini/GPT-4.x only. README: 'July 2025: simple-evals will no longer be updated for new models or benchmark results.' Already in our data as source openai-simple-evals-readme. Its 'Other Models (Reported)' rows are other labs' numbers: exclude them."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "system_card_arxiv",
+    "url": "https://arxiv.org/abs/2601.03267",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "quote": "view license",
+    "assessment": "a",
+    "note": "OpenAI GPT-5 System Card on arXiv (v2). On the abs page, the link titled 'Rights to this article' ('view license') points to CC BY 4.0. Includes capability results such as SWE-bench Verified and HealthBench. Not yet in our sources. Use the arXiv version, not the cdn.openai.com copy."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "system_card_arxiv",
+    "url": "https://arxiv.org/abs/2412.16720",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "quote": "view license",
+    "assessment": "a",
+    "note": "OpenAI o1 System Card on arXiv. On the abs page, the link titled 'Rights to this article' points to CC BY 4.0. Not yet in our sources."
+  },
+  {
+    "vendor": "openai",
+    "location_type": "system_card_arxiv",
+    "url": "https://arxiv.org/abs/2410.21276",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "quote": "view license",
+    "assessment": "a",
+    "note": "GPT-4o System Card on arXiv. On the abs page, the link titled 'Rights to this article' points to CC BY 4.0. Not yet in our sources. The gpt-oss card (arXiv 2508.10925, also CC BY 4.0) is already used as report-2508.10925v1."
+  },
+  {
+    "vendor": "google",
+    "location_type": "announcement",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+    "terms_url": "https://policies.google.com/terms",
+    "quote": "Some of our services include content that belongs to Google — for example, many of the visual illustrations you see in Google Maps. You may use Google’s content as allowed by these terms and any service-specific additional terms, but we retain any intellectual property rights that we have in our content. Don’t remove, obscure, or alter any of our branding, logos, or legal notices.",
+    "assessment": "b",
+    "note": "Published Sep 30, 2026. A few figures appear in the text (e.g. 'DeepSWE v1.1 (77.9%)', 'a top score of 68%'); most are chart images (alt text 'DeepSwe evaluation chart' and others). Footer 'Terms' links to policies.google.com/terms; there are no blog-specific content terms and no licence. Google ToS effective July 30, 2026 (Australia country version served)."
+  },
+  {
+    "vendor": "google",
+    "location_type": "model_page",
+    "url": "https://deepmind.google/models/gemini/",
+    "terms_url": "https://policies.google.com/terms",
+    "quote": "using automated means to access content from any of our services in violation of the machine-readable instructions on our web pages (for example, robots.txt files that disallow crawling, training, or other activities)",
+    "assessment": "b",
+    "note": "Text table of Gemini 4 Argon against GPT-6 Astra, Claude Fable 5.1 and Claude Opus 5.5 (e.g. 'Terminal-bench 4.0' 57.4% for Argon). Footer 'Terms' links to policies.google.com/terms. No licence. deepmind.google/robots.txt has 'Allow: /'. Several cells come from third parties or other labs, per the methodology PDF: record only Google-computed Argon cells."
+  },
+  {
+    "vendor": "google",
+    "location_type": "eval_methodology_pdf",
+    "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_4_argon_model_evaluation.pdf",
+    "terms_url": "https://policies.google.com/terms",
+    "quote": "You may not copy, modify, distribute, sell, or lease any part of our services or software.",
+    "assessment": "b",
+    "note": "Redirect target of deepmind.google/models/evals-methodology/gemini-4-argon. Five pages with no licence statement. The quoted ToS clause sits in the 'Software in Google services' section. The PDF states 'All the results for non-Gemini models are sourced from providers' self reported numbers' and 'Vals Index results are sourced from Vals AI.' Exclude third-party-sourced cells."
+  },
+  {
+    "vendor": "google",
+    "location_type": "model_card",
+    "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+    "terms_url": "https://policies.google.com/terms",
+    "quote": "The Google services that are subject to these terms are the products and services listed at https://policies.google.com/terms/service-specific, including: apps and sites (like Search and Maps)",
+    "assessment": "b",
+    "note": "HTML model card (published 2 September 2026) with an evaluation table. No licence. The card's only terms sentence is about API use: 'Our models are available to downstream providers via an application program interface (API) and subject to relevant terms of use.' No Gemini 4 Argon model card exists yet on the index https://deepmind.google/models/model-cards/."
+  },
+  {
+    "vendor": "google",
+    "location_type": "model_card_pdf",
+    "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+    "terms_url": "https://policies.google.com/terms",
+    "quote": "You may use Google’s content as allowed by these terms and any service-specific additional terms, but we retain any intellectual property rights that we have in our content.",
+    "assessment": "b",
+    "note": "Eight-page PDF. A full-text search found no licence or copyright statement; the only 'terms' mention points to the Gemini API and Google Cloud terms of service for model use."
+  },
+  {
+    "vendor": "google",
+    "location_type": "docs_developer_guide",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-8-flash",
+    "terms_url": "https://developers.google.com/site-policies",
+    "quote": "Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies.",
+    "assessment": "a",
+    "note": "Text table 'What's new in Gemini 3.8 Flash?' comparing 3.8 Flash and 3.7 Flash (e.g. Terminal-bench 2.1 90.8%, SWE-Bench Pro 61.6%). Last updated 2026-10-06 UTC. Site Policies exclude images, audio and video 'unless specifically noted', but this table is text. This guide gives 3.7 Flash Terminal-bench 2.1 as 81.6%, while the 3.7 Flash guide gives 85.1%: record from the model's own page."
+  },
+  {
+    "vendor": "google",
+    "location_type": "docs_developer_guide",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-3-7-flash",
+    "terms_url": "https://developers.google.com/site-policies",
+    "quote": "Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies.",
+    "assessment": "a",
+    "note": "Text table comparing 3.7 Flash and 3.6 Flash (e.g. Terminal-bench 2.1 85.1%, DeepSWE 63.7%). The 3.6 and 3.5 Flash guides have no table. No Gemini 4 Argon guide exists yet."
+  },
+  {
+    "vendor": "google",
+    "location_type": "docs_model_page",
+    "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+    "terms_url": "https://developers.google.com/site-policies",
+    "quote": "When you see a page with this notice you are free to use nearly everything on the page in your own creations.",
+    "assessment": "a",
+    "note": "CC BY 4.0 footer, but no benchmark numbers, so there is nothing to record. The same holds for https://ai.google.dev/gemini-api/docs/models. Already used for context and prices (gap-google-gemini31, google-gemini-pricing)."
+  },
+  {
+    "vendor": "google",
+    "location_type": "docs_model_card",
+    "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+    "terms_url": "https://developers.google.com/site-policies",
+    "quote": "Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies.",
+    "assessment": "a",
+    "note": "Gemma 4 (an open-weights model) model card with a 'Benchmark Results' text table (e.g. MMLU Pro 85.2%). Last updated 2026-07-30 UTC. This is a Google-owned model, but not a frontier Gemini. Earlier Gemma cards are already used (gap-google-gemma3, gap-google-gemma3n)."
+  },
+  {
+    "vendor": "google",
+    "location_type": "github_repo",
+    "url": "https://github.com/google-deepmind/eval_hub",
+    "terms_url": "https://github.com/google-deepmind/eval_hub/blob/master/LICENSE",
+    "quote": "Apache License Version 2.0, January 2004",
+    "assessment": "a",
+    "note": "Repo description: 'Gemini evaluations'. Holds eval sets (live_math, mrcr_v2, putnam_like) and per-sample grades for older models (Gemini 2.5, o3-mini, o4-mini, r1). There are no headline scores for current models."
+  },
+  {
+    "vendor": "google",
+    "location_type": "tech_report_arxiv",
+    "url": "https://arxiv.org/abs/2507.06261",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "quote": "view license",
+    "assessment": "a",
+    "note": "Gemini 2.5 technical report. On the abs page, the link titled 'Rights to this article' points to CC BY 4.0. There is no arXiv report for Gemini 3.x or 4."
+  },
+  {
+    "vendor": "google",
+    "location_type": "tech_report_arxiv",
+    "url": "https://arxiv.org/abs/2403.05530",
+    "terms_url": "http://creativecommons.org/licenses/by/4.0/",
+    "quote": "view license",
+    "assessment": "a",
+    "note": "Gemini 1.5 technical report. On the abs page, the link titled 'Rights to this article' points to CC BY 4.0."
+  }
+]
