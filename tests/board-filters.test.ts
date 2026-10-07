@@ -35,6 +35,16 @@ test('announced previews appear on default and task boards without implying publ
   }
 });
 
+test('models listed by their API also say when a download runs locally', () => {
+  const glm = (q: string) => view(q).rows.find((r) => r.id === 'glm-5-3')!;
+  assert.equal(glm('').where, 'api');
+  assert.equal(glm('').also_local, true, 'no machine given: any download counts');
+  assert.match(whereLabel(glm('')), /\+local$/);
+  assert.equal(glm('ram=64&gpu=apple').also_local, false, 'a download too big for this machine does not count');
+  assert.equal(glm('max=0').where, 'local');
+  assert.ok(!view().rows.some((r) => r.also_local && r.where !== 'api'));
+});
+
 test('scored comparison-only models are listed by default, labelled, and never fit a budget or a machine', () => {
   const old = view().shown.find((r) => r.id === 'gpt-4-0314');
   assert.ok(old && old.score !== null, 'A scored historical model is listed by default');

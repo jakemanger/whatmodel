@@ -39,6 +39,7 @@ export type Row = {
   mem_gb: number | null; // memory the variant shown needs (null when it runs in the cloud)
   price: number | null; // USD per the category's unit (LLMs: per 1M tokens, 3:1 input:output)
   over_budget: boolean; // has an API, but it costs more than the max price
+  also_local: boolean; // listed by its API, but a download also runs locally (on these specs, if given)
   open_weights: boolean;
   params_b: number | null;
   context_k: number | null; // context window, thousands of tokens (LLMs)
@@ -143,6 +144,7 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
         : null,
       price: price === null ? null : Math.round(price * 10000) / 10000,
       over_budget: !!m.api && !api,
+      also_local: run === "api" && (mem ? !!pick : !!smallest),
       open_weights: m.open_weights,
       params_b: m.params_b ?? null,
       context_k: m.context_k ?? null,
