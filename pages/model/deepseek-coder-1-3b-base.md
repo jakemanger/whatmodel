@@ -6,7 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.3B params · deepseek
 
-**score 27.6** ±1.0 · #389 of 411 · from 8 benchmark results across 3 sources
+**score 30.7** ±0.9 · #414 of 462 · from 8 benchmark results across 3 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,16 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       20.3%    28.8   2024-03-28   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               29.9%    28.1   2024-03-28   24% ▇▇▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>               28.7%    27.3   2024-02-29   11% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                 16.2%    24.3   2024-02-29   10% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                    55.4%    30.0   2024-02-29    9% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                   12.6%    22.3   2024-02-29    8% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              27.8%    27.8   2024-01-03    4% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              31.0%    28.3   2024-01-03    4% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       20.3%    31.4   2024-03-28   30% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               29.9%    30.7   2024-03-28   24% ▇▇▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>               28.7%    31.3   2024-02-29   21% ▇▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                 16.2%    26.9   2024-02-29    8% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                    55.4%    32.8   2024-02-29    7% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                   12.6%    22.0   2024-02-29    3% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              27.8%    30.9   2024-01-03    4% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              31.0%    31.5   2024-01-03    3% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 27.6
+                        weighted average               = 30.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior                   pull toward the middle           50.0                 0%
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~0.874GB   27.6
-8-bit q8_0      ~1.4GB   27.6
+4-bit q4_k_m  ~0.874GB   30.7
+8-bit q8_0      ~1.4GB   30.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-08 · 8.89B params · nvidia-open-model
 
-**score 47.9** ±5.7 · #231 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±5.9 · #227 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.1%    54.3   2026-04-17   45% ▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  62.4%    40.1   2026-04-17   41% ▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.1%    56.1   2026-04-17   48% ▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  62.4%    42.1   2026-04-17   36% ▇▇▇▇
 prior                  pull toward the middle                   50.0                15% ▇▇
-                       weighted average                       = 47.9
+                       weighted average                       = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -51,8 +51,8 @@ api (Amazon Bedrock) · $0.10/M blended · $0.06 in / $0.23 out per 1M tokens ·
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m   ~5.83GB   47.9
-8-bit gguf-q8_0    ~11.17GB   47.9
+4-bit gguf-q4_k_m   ~5.83GB   50.0
+8-bit gguf-q8_0    ~11.17GB   50.0
 </pre>
 
 ```sh

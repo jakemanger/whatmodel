@@ -4,16 +4,41 @@
 
 # GPT-Neo 125M
 
-EleutherAI · released 2021-03
+EleutherAI · released 2021-03 · 0.125B params · mit
 
-[Model and usage documentation](https://huggingface.co/EleutherAI/gpt-neo-125m)
+**score 24.5** ±3.6 · #445 of 462 · from 3 benchmark results across 1 source
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source  test                            score  implies  date        weight
+<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%    23.4   2022-12-07   59% ▇▇▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%    22.4   2022-12-07   36% ▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%  -160.3   2022-12-07    0% ▇
+prior   pull toward the middle                   50.0                 6% ▇
+        weighted average                       = 24.5
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
+<pre>
+download       size  score
+4-bit fp32  ~0.53GB   24.5
+</pre>
+
 ```sh
+# 4-bit fp32
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='EleutherAI/gpt-neo-125m')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/gpt-neo-125m)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/gpt-neo-125m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

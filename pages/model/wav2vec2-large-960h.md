@@ -6,7 +6,7 @@
 
 Meta · released 2020-06 · 0.32B params · apache-2.0
 
-**score 9.4** ±3.8 · #110 of 113 · from 4 benchmark results across 4 sources
+**score 9.2** ±3.9 · #110 of 113 · from 4 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  26.8%     5.9   2026-03-26   77% ▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  71.7%    11.8   2023-09-30    8% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  39.3%     9.8   2026-08-18    6% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  16.5%    14.7   2024-12-09    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  26.8%     5.7   2026-03-26   78% ▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  71.7%    12.4   2023-09-30    7% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  39.3%     9.9   2026-08-18    6% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  16.5%    14.9   2024-12-09    3% ▇
 prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                        = 9.4
+                        weighted average                        = 9.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp32     ~2.04GB    9.4
+fp32     ~2.04GB    9.2
 </pre>
 
 ```sh

@@ -4,21 +4,29 @@
 
 # FastSpeech + HiFi-GAN (xcmyz, Grad-TTS study)
 
-Grad-TTS authors / Huawei Noah · released 2021-05
+Grad-TTS authors / Huawei Noah · released 2021-05 · closed weights
 
-Unofficial xcmyz FastSpeech implementation used by the Grad-TTS authors, coupled with HiFi-GAN; not the original Microsoft FastSpeech checkpoint. Exact trained weights not verified.
+**score 26.5** ±21.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://github.com/xcmyz/FastSpeech)
+Score within the [Grad-TTS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos&score=set) comparison set only.
 
-[Catalogue source](https://proceedings.mlr.press/v139/popov21a/popov21a.pdf)
+## How the score was worked out
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                 result  reported by  source
-Grad-TTS 2021 LJ Speech human MOS  3.68 / 5  independent  <a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS: original ICML 2021 …</a>
+source                  test                               score  implies  weight
+<a name="speech-gradtts-icml2021"></a>Grad-TTS: original IC…  <a href="https://proceedings.mlr.press/v139/popov21a/popov21a.pdf">Grad-TTS 2021 LJ Speech human…</a>  3.68 / 5    12.4    63% ▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      50.0    37% ▇▇▇▇
+                        weighted average                          = 26.5
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Grad-TTS: original ICML 2021 listening study ([CC-BY-4.0](../../licenses/speech-gradtts-icml2021.txt))</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/fastspeech-xcmyz-gradtts-study)
+## How to run it
+
+no current API or local download verified
+
+[interactive version](https://whatmodel.sh/model/fastspeech-xcmyz-gradtts-study) · [JSON](https://whatmodel.sh/api?format=json&all=1)

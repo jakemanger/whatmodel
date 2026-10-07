@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 20B params · apache-2.0
 
-**score 53.2** ±1.3 · #65 of 114 · from 7 benchmark results across 7 sources
+**score 53.0** ±1.3 · #66 of 116 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    53.6   2026-09-24   46% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    48.1   2026-07-01   16% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    56.6   2026-08-25   10% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    59.2   2026-07-12    9% ▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    53.2   2026-03-29    9% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    49.2   2026-06-02    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    53.4   2026-09-24   48% ▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    47.5   2026-07-01   15% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    56.8   2026-08-25    9% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    59.6   2026-07-12    9% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    53.1   2026-03-29    8% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    48.6   2026-06-02    7% ▇
 <a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   49.2%    55.5   2026-05-27    3% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 53.2
+                        weighted average                        = 53.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -52,13 +52,13 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/qwen/qw
 
 <pre>
 version                                     needs  score
-nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   53.2
-nf4 + model CPU offload · nvidia only     ~12.5GB   53.2
-fp8_e4m3fn safetensors (sd.cpp) · nvidi…    ~35GB   53.2
-gguf-q4_k_s · nvidia only                 ~25.1GB   53.2
-fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   53.2
-gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)      ~36.6GB   53.2
-gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)  ~22.1GB   53.2
+nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   53.0
+nf4 + model CPU offload · nvidia only     ~12.5GB   53.0
+fp8_e4m3fn safetensors (sd.cpp) · nvidi…    ~35GB   53.0
+gguf-q4_k_s · nvidia only                 ~25.1GB   53.0
+fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   53.0
+gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)      ~36.6GB   53.0
+gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)  ~22.1GB   53.0
 </pre>
 
 ```sh

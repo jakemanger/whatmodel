@@ -6,7 +6,7 @@
 
 Smallest.ai · released 2026-03 · proprietary
 
-**score 56.1** ±2.8 · #36 of 92 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 56.7** ±2.9 · #37 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1111.5    55.5   2026-09-25   88% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.30 / 5    63.8   2026-07-16    8% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1111.5    56.1   2026-09-25   89% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.30 / 5    66.1   2026-07-16    8% ▇
 prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 56.1
+                        weighted average                          = 56.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

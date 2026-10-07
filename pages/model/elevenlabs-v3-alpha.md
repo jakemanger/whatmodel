@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2025-06 · closed weights
 
-**score 53.1** ±9.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.5** ±10.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.37 / 5    54.6   2026-09-25   67% ▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                33% ▇▇▇▇
-                        weighted average                          = 53.1
+<a name="speech-vibevoice-mit-figure"></a>Microsoft VibeVoice o…  <a href="https://github.com/microsoft/VibeVoice/blob/1541f590c7099820f10ea012f48d2399282df69f/Figures/VibeVoice-TTS-results.jpg">VibeVoice podcast · preferenc…</a>  3.37 / 5    54.6   2026-09-25   55% ▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                45% ▇▇▇▇▇
+                        weighted average                          = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

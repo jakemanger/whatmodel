@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-04 · 7.25B params · tongyi-qianwen
 
-**score 44.8** ±4.4 · #257 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.2** ±4.3 · #263 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    44.3   2024-10-27   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 9% ▇
-                        weighted average                       = 44.8
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    45.9   2024-10-27   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 8% ▇
+                        weighted average                       = 46.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   44.8
-8-bit q8_0     ~9.2GB   44.8
+4-bit q4_k_m  ~4.85GB   46.2
+8-bit q8_0     ~9.2GB   46.2
 </pre>
 
 ```sh

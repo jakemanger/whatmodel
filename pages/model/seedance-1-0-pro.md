@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-06 · closed weights
 
-**score 55.1** ±1.8 · #32 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.0** ±1.8 · #32 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1190.9    53.5   2026-09-22   61% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1273.0    57.7   2026-09-22   37% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1190.9    53.4   2026-09-22   61% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1273.0    57.8   2026-09-22   37% ▇▇▇▇
 prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 55.1
+                        weighted average                = 55.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

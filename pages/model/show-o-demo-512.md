@@ -6,7 +6,7 @@
 
 Show Lab, NUS · apache-2.0
 
-**score 35.8** ±3.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.4** ±3.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>  42.8%    35.2   2026-07-01   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle              49.9                 4% ▇
-                        weighted average                  = 35.8
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>  42.8%    34.7   2026-07-01   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle              49.9                 5% ▇
+                        weighted average                  = 35.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Fish Audio · released 2024-12 · cc-by-nc-sa-4.0
 
-**score 33.5** ±2.7 · #75 of 92 · from 4 benchmark results across 2 sources
+**score 33.4** ±2.8 · #76 of 94 · from 4 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.58 / 5    33.2   2025-05-11   72% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.24 / 5    38.4   2025-05-11    9% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     80.6%    26.1   2025-05-15    9% ▇
-                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.8%    32.4   2025-05-15    7% ▇
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.58 / 5    33.1   2025-05-11   73% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.24 / 5    38.7   2025-05-11    9% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/zh_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     80.6%    24.7   2025-05-15    8% ▇
+                        <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.8%    32.3   2025-05-15    7% ▇
 prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 33.5
+                        weighted average                          = 33.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,9 +32,9 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                                  needs  score
-bf16 (fish-speech repo)                ~1.47GB   33.5
-bf16 (fish-speech repo) · mac only     ~1.47GB   33.5
-bf16 (fish-speech repo) · nvidia only  ~1.47GB   33.5
+bf16 (fish-speech repo)                ~1.47GB   33.4
+bf16 (fish-speech repo) · mac only     ~1.47GB   33.4
+bf16 (fish-speech repo) · nvidia only  ~1.47GB   33.4
 </pre>
 
 ```sh

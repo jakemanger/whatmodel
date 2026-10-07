@@ -6,7 +6,7 @@
 
 HPC-AI Tech · released 2024-06 · 1.1B params · apache-2.0
 
-**score 28.3** ±2.4 · #74 of 76 · from 3 benchmark results across 3 sources
+**score 28.3** ±2.5 · #74 of 76 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,8 +14,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                score  implies  date        weight
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>      871.5    26.1   2025-03-22   60% ▇▇▇▇▇▇▇
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.11 / 10    31.5   2025-02-28   24% ▇▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>      871.5    25.9   2025-03-22   59% ▇▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.11 / 10    31.9   2025-02-28   24% ▇▇▇
 <a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>      50.0%    28.2   2024-10-01   14% ▇▇
 prior                   pull toward the middle                       49.9                 3% ▇
                         weighted average                           = 28.3

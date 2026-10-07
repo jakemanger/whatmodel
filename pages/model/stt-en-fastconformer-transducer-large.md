@@ -17,7 +17,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   9.1%    47.7   2026-03-26   53% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  16.3%    44.0   2026-03-26   43% ▇▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  16.3%    44.1   2026-03-26   43% ▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 4% ▇
                       weighted average                       = 46.2
 </pre>

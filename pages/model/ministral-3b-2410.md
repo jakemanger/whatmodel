@@ -6,7 +6,7 @@
 
 Mistral · released 2024-10 · proprietary
 
-**score 35.8** ±2.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.0** ±2.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            14.4%    41.0   2025-01-27   66% ▇▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            25.3%    24.1   2025-01-27   32% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>            14.4%    42.7   2025-01-27   69% ▇▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            25.3%    25.5   2025-01-27   28% ▇▇▇
 prior     pull toward the middle           50.0                 2% ▇
-          weighted average               = 35.8
+          weighted average               = 38.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

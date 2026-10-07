@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 48.0** ±2.4 · #230 of 411 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 49.5** ±2.5 · #236 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.1    47.2   2026-09-13   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    51.7   2026-09-19   17% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.3    48.6   2026-10-02   78% ▇▇▇▇▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    53.0   2026-09-19   19% ▇▇
 prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 48.0
+                        weighted average                        = 49.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~62.9GB   48.0
-8-bit q8_0    ~125.3GB   48.0
+4-bit q4_k_m   ~62.9GB   49.5
+8-bit q8_0    ~125.3GB   49.5
 </pre>
 
 ```sh

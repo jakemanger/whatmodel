@@ -6,7 +6,7 @@
 
 Tencent · released 2026-07 · 299B params (21B active) · apache-2.0
 
-**score 69.9** ±1.8 · #49 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 70.0** ±1.3 · #59 of 462 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,11 +15,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1509.2    71.0   2026-09-24   55% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1455.8    69.1   2026-09-13   43% ▇▇▇▇▇
-prior                   pull toward the middle               50.0                 1% ▇
-                        weighted average                   = 69.9
+source                  test                                  score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1507.4    71.3   2026-10-01   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0538 IPS    68.9   2026-10-02   37% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1456.0    70.2   2026-10-02   23% ▇▇▇
+prior                   pull toward the middle                         50.0                 1% ▇
+                        weighted average                             = 70.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -69,8 +70,8 @@ api (Deep Infra) · $0.23/M blended · $0.13 in / $0.53 out per 1M tokens · [de
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~179.9GB   69.9
-2-bit iq2_m    ~90.2GB   69.9
+4-bit q4_k_m  ~179.9GB   70.0
+2-bit iq2_m    ~90.2GB   70.0
 </pre>
 
 ```sh

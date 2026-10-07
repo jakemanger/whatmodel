@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · apache-2.0
 
-**score 56.3** ±5.5 · #54 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.2** ±5.7 · #55 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                          score  implies  date        weight
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1014.0    57.2   2026-03-30   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                 49.9                13% ▇▇
-                        weighted average                     = 56.3
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1014.0    57.2   2026-03-30   86% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                 49.9                14% ▇▇
+                        weighted average                     = 56.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <pre>
 version                                   needs  score
-gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   56.3
+gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   56.2
 </pre>
 
 ```sh

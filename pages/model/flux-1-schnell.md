@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-08 · 12B params · apache-2.0
 
-**score 40.6** ±2.7 · #87 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.2** ±2.8 · #89 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    42.7   2026-07-01   68% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    34.6   2026-06-02   29% ▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       57.6%    42.6   2026-07-01   66% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  40.0%    34.2   2026-06-02   31% ▇▇▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 40.6
+                        weighted average                       = 40.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,10 +43,10 @@ api (Replicate) · $0.0030/image · [replicate.com](https://replicate.com/black-
 
 <pre>
 version                needs  score
-bf16 · nvidia only   ~29.3GB   40.6
-gguf-q8_0            ~28.3GB   40.6
-mlx-4bit · mac only   ~7.7GB   40.6
-bf16 · mac only      ~29.3GB   40.6
+bf16 · nvidia only   ~29.3GB   40.2
+gguf-q8_0            ~28.3GB   40.2
+mlx-4bit · mac only   ~7.7GB   40.2
+bf16 · mac only      ~29.3GB   40.2
 </pre>
 
 ```sh

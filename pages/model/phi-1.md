@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 17.5** ±3.4 · #409 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 21.0** ±3.4 · #453 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              13.1%    12.7   2024-01-03   49% ▇▇▇▇▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              21.7%    19.1   2024-01-03   46% ▇▇▇▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              13.1%    16.2   2024-01-03   48% ▇▇▇▇▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              21.7%    22.7   2024-01-03   47% ▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                 5% ▇
-                        weighted average               = 17.5
+                        weighted average               = 21.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,7 +42,7 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
 
 <pre>
 download       size  score
-4-bit fp16  ~2.84GB   17.5
+4-bit fp16  ~2.84GB   21.0
 </pre>
 
 ```sh

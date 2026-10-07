@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.55B params · llama3.1
 
-**score 48.8** ±2.0 · #223 of 411 · from 3 benchmark results across 1 source
+**score 50.0** ±1.9 · #228 of 462 · from 3 benchmark results across 1 source
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              42.7%    48.6   2025-01-27   53% ▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              46.3%    52.3   2025-01-27   26% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   4.4%    44.3   2025-03-07   19% ▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              42.7%    50.0   2025-01-27   54% ▇▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              46.3%    53.6   2025-01-27   22% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   4.4%    46.2   2025-03-07   22% ▇▇▇
 prior     pull toward the middle             50.0                 2% ▇
-          weighted average                 = 48.8
+          weighted average                 = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior     pull toward the middle             50.0                 2% ▇
 
 <pre>
 download                        size  score
-16-bit bf16 · nvidia only  ~169.82GB   48.8
+16-bit bf16 · nvidia only  ~169.82GB   50.0
 </pre>
 
 ```sh

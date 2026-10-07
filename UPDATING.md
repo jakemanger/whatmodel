@@ -10,6 +10,13 @@ scores or rankings. The score is computed from `data/results.json` by `lib/score
 Categories: `llm` (default), `image`, `video`, `tts`, `stt`. Benchmarks and their category are in
 `data/benchmarks.json`.
 
+Task membership is explicitly reviewed in `data/tasks.json`. Assign a new benchmark only to tasks
+its actual input/output protocol measures; do not infer task capability from model names. Task
+rankings fit only those measurements and retain disconnected comparison sets. Signed linear
+metrics retain raw units (`kind: "linear"` with a documented fixed `latent_scale`), never a
+fabricated accuracy or Elo conversion. Lower-is-better distances keep their raw units with
+`direction: "lower"`; do not store FID as a percentage or relabel it as a word-error rate. Run `npm run score-coverage` to audit every model's status.
+
 1. Read `data/models.json`, `data/results.json`, `data/benchmarks.json` and `data/speeds.json`.
 2. Search for anything new since the latest `date` in results.json:
    - Independent evals, ONLY from sources marked "allowed" in `data/sources.json` (the licence ledger),
@@ -22,7 +29,10 @@ Categories: `llm` (default), `image`, `video`, `tts`, `stt`. Benchmarks and thei
    anything pointing at unknown models or benchmarks, and says so.
    - New models need `category` (unless llm) and exact identity evidence. Add a verified API link or local
      command when available; comparison-only models may have neither. Never invent a run option to make
-     a model appear on the board. Prices may be unknown. Omitted variant `gb` can be estimated from
+     a model appear on the board. An announced limited preview may use `availability: "preview"`
+     with a reviewed `availability_source` URL: it appears on the default board as "limited preview",
+     but cannot satisfy a local-only or price filter without a verified run route. Remove the preview
+     designation when broad access is verified. Prices may be unknown. Omitted variant `gb` can be estimated from
      `params_b` and precision, and must be labelled as an estimate.
    - Speeds: `{ model, quant, hardware, kind, offload, value, unit, engine, settings, source }`. Name the
      hardware as it appears in `data/hardware.json` so it can be matched to users' machines.
@@ -51,7 +61,8 @@ Categories: `llm` (default), `image`, `video`, `tts`, `stt`. Benchmarks and thei
 - Use the model's highest reasoning setting available through its API, and put the setting in `note`.
 - When independent and lab numbers both exist, record both.
 - A verified result is useful even if it is the model's only measurement. Add its precisely defined benchmark;
-  the scoring code withholds series with fewer than three models. Do not discard genuine evidence to meet
+  the scoring code reads each result against the other models in the same evaluator's run, so it withholds
+  runs with one model and benchmarks with fewer than three models across runs. Do not discard genuine evidence to meet
   a coverage target, or manufacture extra independent tests from correlated subtasks.
 - Don't edit or delete existing results unless the source page has changed. Say so in the PR if it has.
 - A model whose API and weights are both gone stays (it anchors the fit) with `api: null` and no variants;

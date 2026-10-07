@@ -8,6 +8,8 @@ import { fit, fromLatent, toCells } from "../lib/score.ts";
 import { connectedCells, heldOutPrediction } from "../lib/comparisons.ts";
 import { SOURCES, sourceIcon, sourceOf } from "../lib/sources.ts";
 import type { Benchmark, Model, Result, Speed } from "../lib/types.ts";
+import { TASKS } from "../lib/tasks.ts";
+import { catalogueOnly } from "../lib/fit.ts";
 
 const load = <T>(f: string): T => JSON.parse(readFileSync(new URL(`../data/${f}`, import.meta.url), "utf8"));
 const models = load<Model[]>("models.json");
@@ -27,7 +29,9 @@ for (const m of models) {
   if (!/^[a-z0-9][a-z0-9.-]*$/.test(m.id)) errors.push(`model id not kebab-case: ${m.id}`);
   if (ids.has(m.id)) errors.push(`duplicate model: ${m.id}`);
   ids.add(m.id);
-  if (!m.api && !m.local?.variants.length) retired.push(m.id);
+  if (catalogueOnly(m)) retired.push(m.id);
+  if (m.availability !== undefined && (m.availability !== "preview" || !/^https?:\/\//.test(m.availability_source ?? "")))
+    errors.push(`${m.id}: preview availability needs a reviewed announcement URL`);
   for (const v of m.local?.variants ?? []) {
     if (!v.cmd) errors.push(`${m.id}: variant without a command ${JSON.stringify(v)}`);
     if (!(v.gb > 0) && !m.params_b) errors.push(`${m.id}: variant ${v.quant} needs gb, or params_b on the model to estimate it`);
@@ -50,6 +54,15 @@ for (const x of speeds) {
   if (!(x.value > 0) || !/^https?:\/\//.test(x.source ?? "")) errors.push(`speed ${x.model} on ${x.hardware}: needs a value and source url`);
 }
 const bench = new Map(benches.map((b) => [b.id, b]));
+for (const b of benches) if (b.kind === 'linear' && !(Number.isFinite(b.latent_scale) && b.latent_scale! > 0)) errors.push(`${b.id}: linear metric needs a positive latent_scale`);
+for (const b of benches) if (b.direction !== undefined && (b.kind !== 'linear' || !['higher', 'lower'].includes(b.direction))) errors.push(`${b.id}: direction must be higher/lower on a linear metric`);
+const taskIds = new Set<string>();
+for (const task of TASKS) {
+  if (taskIds.has(task.id)) errors.push(`Duplicate task: ${task.id}`);
+  taskIds.add(task.id);
+  if (!task.benchmarks.length || new Set(task.benchmarks).size !== task.benchmarks.length) errors.push(`${task.id}: empty or duplicate benchmarks`);
+  for (const id of task.benchmarks) if (!bench.has(id) || (bench.get(id)?.category ?? 'llm') !== task.category) errors.push(`${task.id}: unknown or wrong-category benchmark ${id}`);
+}
 for (const r of results) {
   const b = bench.get(r.bench);
   const where = `${r.model}/${r.bench}`;
@@ -60,6 +73,7 @@ for (const r of results) {
   if (b?.kind === "acc" && !(r.score >= 0 && r.score <= 1)) errors.push(`${where}: acc score must be 0-1, got ${r.score}`);
   if (b?.kind === "elo" && !(r.score > 500 && r.score < 3000)) errors.push(`${where}: implausible elo ${r.score}`);
   if (b?.kind === "err" && !(Number.isFinite(r.score) && r.score >= 0)) errors.push(`${where}: error ratio must be finite and nonnegative, got ${r.score}`);
+  if (b?.kind === "linear" && !Number.isFinite(r.score)) errors.push(`${where}: linear score must be finite`);
   const m = models.find((x) => x.id === r.model);
   if (b && m && (b.category ?? "llm") !== catOf(m)) errors.push(`${where}: benchmark is for ${b.category ?? "llm"}, model is ${catOf(m)}`);
 }
@@ -169,7 +183,7 @@ for (const cat of CATEGORY_IDS) {
     const f = fits[groupIndex];
 
     // Leave-one-out: hide each result, refit, predict it back.
-    const errs = { acc: [] as number[], err: [] as number[], elo: [] as number[] };
+    const errs = { acc: [] as number[], err: [] as number[], elo: [] as number[], linear: [] as number[] };
     const zs: [number, number][] = [];
     const zsWeighted: [number, number][] = []; // without series whose fitted a sits at the 0.05 floor
     for (let i = 0; i < cells.length; i++) {
@@ -182,7 +196,7 @@ for (const cat of CATEGORY_IDS) {
       const p = f.params.get(c.key)!;
       zs.push([(c.y - p.d) / p.a, (yhat - p.d) / p.a]);
       if (p.a > 0.05 + 1e-9) zsWeighted.push(zs[zs.length - 1]);
-      errs[b.kind].push(Math.abs(fromLatent(yhat, b) - fromLatent(c.y, b)) * (b.kind === "elo" ? 1 : 100));
+      errs[b.kind].push(Math.abs(fromLatent(yhat, b) - fromLatent(c.y, b)) * (b.kind === "elo" || b.kind === "linear" ? 1 : 100));
     }
 
     console.log(`\n== ${cat} set ${groupIndex + 1}/${groups.length}: ${f.scores.size} scored models, ${cells.length} cells across ${f.params.size} benchmark keys`);
@@ -195,7 +209,8 @@ for (const cat of CATEGORY_IDS) {
     for (const [kind, values] of Object.entries(errs)) {
       if (!values.length) continue;
       values.sort((a, b) => a - b);
-      console.log(`    ${kind}: median abs error ${values[values.length >> 1].toFixed(1)}, p90 ${values[Math.floor(values.length * 0.9)].toFixed(1)} ${kind === "elo" ? "Elo" : "percentage points"} (n=${values.length})`);
+      const digits = kind === 'linear' ? 4 : 1;
+      console.log(`    ${kind}: median abs error ${values[values.length >> 1].toFixed(digits)}, p90 ${values[Math.floor(values.length * 0.9)].toFixed(digits)} ${kind === "elo" ? "Elo" : kind === "linear" ? "raw units" : "percentage points"} (n=${values.length})`);
     }
     console.log("  top 5: " + [...f.scores.values()].sort((a, b) => b.g - a.g).slice(0, 5).map((s) => `${s.id} ${s.g.toFixed(0)}`).join(", "));
   }

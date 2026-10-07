@@ -6,7 +6,7 @@
 
 Alibaba (Tongyi-MAI) · released 2025-11 · 6B params · apache-2.0
 
-**score 55.8** ±1.6 · #58 of 114 · from 4 benchmark results across 4 sources
+**score 55.5** ±1.4 · #60 of 116 · from 13 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,34 +16,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1083.9    56.2   2026-09-24   70% ▇▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    53.6   2026-08-25   15% ▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   54.1%    58.7   2026-06-09    9% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    53.6   2026-06-05    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1083.9    56.0   2026-09-24   54% ▇▇▇▇▇▇
+<a name="report-2511.22699v5"></a>Tongyi-MAI              <a href="https://arxiv.org/html/2511.22699v5">GenEval (lab)</a>                    82.0%    55.5   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN) (lab)</a>        91.7%    53.6   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>   80.0%    54.5   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>   77.7%    55.3   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN) (lab)</a>           50.7%    55.9   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy (lab)</a>      85.9%    56.5   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN) (lab)</a>           52.8%    56.5   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN) (lab)</a>        92.6%    55.2   2026-07-06    3% ▇
+                        <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench (lab)</a>                  84.9%    53.1   2026-07-06    3% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   85.7%    53.3   2026-08-25   10% ▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   54.1%    59.1   2026-06-09    6% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   39.0%    53.2   2026-06-05    4% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 55.8
+                        weighted average                        = 55.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
-
-<details><summary>Not counted (9)</summary>
-
-<pre>
-source      test                            score  why
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">CVTG-2K word accuracy</a>           85.9%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">DPG-Bench</a>                       84.9%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">GenEval</a>                         82.0%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (CN)</a>             92.6%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">LongText-Bench (EN)</a>             91.7%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (CN)</a>                50.7%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">OneIG-Bench (EN)</a>                52.8%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (long pro…</a>  80.0%  too few models have it yet
-Tongyi-MAI  <a href="https://arxiv.org/html/2511.22699v5">TIIF-Bench testmini (short pr…</a>  77.7%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Tongyi-MAI ([CC BY 4.0](../../licenses/report-2511.22699v5.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
 
 ## How to run it
 
@@ -53,8 +45,8 @@ api (Replicate (PrunaAI optimized)) · $0.0050/image · [replicate.com](https://
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~14.9GB   55.8
-gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   55.8
+bf16 · nvidia only                        ~14.9GB   55.5
+gguf-q3_k (+ Qwen3-4B Q4_K_M text encod…   ~7.7GB   55.5
 </pre>
 
 ```sh

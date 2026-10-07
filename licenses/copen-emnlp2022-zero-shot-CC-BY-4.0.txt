@@ -1,0 +1,8 @@
+COPEN: Probing Conceptual Knowledge in Pre-trained Language Models.
+Hao Peng, Xiaozhi Wang, Shengding Hu, Hailong Jin, Lei Hou, Juanzi Li, Zhiyuan Liu and Qun Liu. EMNLP 2022, pp. 5015–5035.
+Source: https://aclanthology.org/2022.emnlp-main.335.pdf
+Copyright 2022 Association for Computational Linguistics.
+ACL materials published in or after 2016 are licensed under Creative Commons Attribution 4.0 International.
+Policy: https://aclanthology.org/faq/#what-is-the-copyright-for-materials-in-the-acl-anthology
+License and legal code: https://creativecommons.org/licenses/by/4.0/ ; https://creativecommons.org/licenses/by/4.0/legalcode
+Changes: selected Table 11 zero-shot All-column percentages divided by 100 and model names normalized. No endorsement.

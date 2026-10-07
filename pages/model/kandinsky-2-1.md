@@ -12,7 +12,14 @@ Full text-to-image pipeline including prior/decoder dependencies. No scores copi
 
 [Catalogue source](https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md)
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+
+<pre>
+test                                    result  reported by  source
+COCO-30k zero-shot FID ↓ (Kandins…  8.2100 FID  lab          <a href="https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md">Kandinsky 2.1 card</a>
+</pre>
+
+<sub>Licences: Kandinsky 2.1 card ([Apache-2.0](../../licenses/kandinsky21-card-original-fid-Apache-2.0.txt))</sub>
 
 ## How to run it
 

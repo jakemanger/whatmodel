@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 62.6** ±10.9 · #2 of 5 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 62.4** ±5.7 · #2 of 5 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [BIG-Bench Hard](https://whatmodel.sh/?set=bbh%40paper-2210.11416v5&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              52.4%    67.8   2022-12-06   52% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    41.0%    61.8   2022-12-06   28% ▇▇▇
-prior                   pull toward the middle           50.0                20% ▇▇
-                        weighted average               = 62.6
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              52.4%    64.7   2022-12-06   79% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    41.0%    57.3   2022-12-06   11% ▇
+prior                   pull toward the middle           50.0                10% ▇
+                        weighted average               = 62.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle           50.0                20%
 
 <pre>
 download       size  score
-4-bit fp32  ~11.4GB   62.6
+4-bit fp32  ~11.4GB   62.4
 </pre>
 
 ```sh

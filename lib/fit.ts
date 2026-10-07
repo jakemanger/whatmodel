@@ -9,7 +9,10 @@ import type { Category, Hardware, Model, Scored, Specs, SpeedUnit, Variant } fro
 // CUDA-only commands need an NVIDIA card (or one whose make we don't know).
 const isNvidia = (s: Specs) => s.gpu === "card" && (!s.hw || s.hw.kind === "nvidia");
 
-export type Where = "local" | "local-slow" | "api" | "none" | "retired";
+export type Where = "local" | "local-slow" | "api" | "preview" | "none" | "retired";
+
+// Limited previews belong on the current leaderboard even before a public run route exists.
+export const catalogueOnly = (m: Model) => !m.api && !m.local?.variants.length && m.availability !== "preview";
 
 // measured: on this exact hardware (or an API's measured speed). scaled: measured on other
 // hardware of the same kind, scaled by memory bandwidth. estimated: from the calibrated formula.
@@ -78,9 +81,9 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
   const mem = specs ? usable(specs) : null;
   const rows: Row[] = models.flatMap((m) => {
     const s = scores.get(m.id);
-    // Retired models (no API, no weights) still anchor the fit but can't be run, so they're listed only on request.
+    // Historical/comparison-only models are opt-in; announced previews remain discoverable.
     const gone = !m.api && !m.local?.variants.length;
-    if ((!s && !includeUnscored) || (gone && !retired)) return [];
+    if ((!s && !includeUnscored) || (catalogueOnly(m) && !retired)) return [];
     const cat = catOf(m);
     const variants = (m.local?.variants ?? []).filter((v) => runsOn(v, specs)).sort((x, y) => y.gb - x.gb);
     const smallest = variants.at(-1);
@@ -106,7 +109,7 @@ export function rank(models: Model[], scores: Map<string, Scored>, { specs, max 
     else if (api) [run, cmd] = ["api", api.url];
     else if (pick) [run, cmd, chosen] = ["local-slow", pick.cmd, pick];
     else if (!mem && smallest) [run, cmd] = ["local", smallest.cmd]; // no specs: show the model as benchmarked
-    if (gone) run = "retired";
+    if (gone) run = m.availability === "preview" ? (max === null ? "preview" : "none") : "retired";
 
     const apiSpeed: RowSpeed | null =
       run !== "api" || !m.api ? null

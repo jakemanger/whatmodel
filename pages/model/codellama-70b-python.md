@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 39.9** ±1.2 · #302 of 411 · from 4 benchmark results across 2 sources
+**score 41.8** ±1.0 · #311 of 462 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    39.2   2024-03-28   40% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    39.2   2024-03-28   34% ▇▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    42.6   2024-01-31   13% ▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    41.0   2024-01-31   13% ▇▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 39.9
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    41.3   2024-03-28   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    41.3   2024-03-28   30% ▇▇▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    41.7   2024-01-31   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    44.9   2024-01-31   10% ▇
+prior                   pull toward the middle           50.0                 0% ▇
+                        weighted average               = 41.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~41GB   39.9
-8-bit q8_0    ~73GB   39.9
+4-bit q4_k_m  ~41GB   41.8
+8-bit q8_0    ~73GB   41.8
 </pre>
 
 ```sh

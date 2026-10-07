@@ -6,7 +6,7 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 23.4** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
+**score 26.8** ±1.1 · comparison only: no current run option verified · from 8 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    24.5   2024-05-07   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    25.5   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    24.6   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    24.3   2024-05-07    7% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 21.3%    22.4   2024-02-29   14% ▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    22.3   2024-02-29   12% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      42.6%    23.1   2024-02-29   11% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    18.4   2024-02-29   10% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 21.3%    28.0   2024-02-29   29% ▇▇▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    25.1   2024-02-29   11% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      42.6%    25.8   2024-02-29   10% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    17.0   2024-02-29    4% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    27.1   2024-05-07   18% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    28.1   2024-05-07   10% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    28.1   2024-05-07    9% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    26.3   2024-05-07    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 23.4
+                        weighted average                       = 26.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt))</sub>
+<sub>Licences: StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

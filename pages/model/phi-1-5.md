@@ -6,31 +6,41 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 62.6** ±1.9 · #5 of 39 · from 8 benchmark results across 1 source
+**score 40.4** ±0.9 · #323 of 462 · from 18 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Easy (lab)</a>          75.6%    63.8   2023-09-11   19% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge (lab)</a>     44.4%    64.2   2023-09-11   18% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ (lab)</a>             75.8%    63.0   2023-09-11   14% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA (lab)</a>        52.6%    64.5   2023-09-11   11% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag (lab)</a>         47.6%    54.9   2023-09-11   10% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA (lab)</a>        37.2%    65.8   2023-09-11    9% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande (lab)</a>        73.4%    65.7   2023-09-11    9% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA (lab)</a>              76.6%    57.7   2023-09-11    9% ▇
-prior                   pull toward the middle           49.8                 2% ▇
-                        weighted average               = 62.6
+source                  test                            score  implies  date        weight
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Challenge</a>                   48.0%    41.8   2024-04-08   26% ▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                       62.6%    32.8   2024-04-08    8% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                        73.1%    42.1   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">SciQ</a>                            93.2%    39.1   2024-04-08    7% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                           74.5%    40.9   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">PIQA</a>                            76.3%    36.1   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">LAMBADA (OpenAI version), las…</a>  52.7%    25.8   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">WinoGrande</a>                      72.5%    42.9   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Social IQA</a>                      55.4%    55.4   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">OpenBookQA</a>                      37.6%    52.3   2024-04-08    1% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande (lab)</a>                73.4%    41.9   2023-09-11    9% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag (lab)</a>                 47.6%    33.5   2023-09-11    6% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy (lab)</a>                  75.6%    41.2   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ (lab)</a>                     75.8%    42.7   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA (lab)</a>                      76.6%    36.4   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">Social IQA (lab)</a>                52.6%    49.2   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge (lab)</a>             44.4%    46.9   2023-09-11    2% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA (lab)</a>                37.2%    54.1   2023-09-11    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 40.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -38,7 +48,7 @@ prior                   pull toward the middle           49.8                 2%
 
 <pre>
 download       size  score
-4-bit fp16  ~2.84GB   62.6
+4-bit fp16  ~2.84GB   40.4
 </pre>
 
 ```sh

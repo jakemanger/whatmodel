@@ -4,28 +4,46 @@
 
 # Apriel 1.6 15B Thinker
 
-ServiceNow · released 2025-11
+ServiceNow · released 2025-11 · 14.9B params · mit
 
-[Model and usage documentation](https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker)
+**score 60.0** ±1.6 · #147 of 462 · from 5 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-τ²-bench Retail                      66.7%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
-τ²-bench Airline                     58.0%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
-Multi-IF (aggregation unspecified)   83.3%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
-SWE-bench Verified                   23.0%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
-Aider polyglot (225 exercises, tw…   37.7%  lab          <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">ServiceNow-AI/Apriel-1.6-15b-…</a>
+source                  test                            score  implies  date        weight
+<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises…</a>  37.7%    58.9   2026-09-25   67% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>           66.7%    63.7   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>          58.0%    66.3   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>        23.0%    55.9   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspeci…</a>  83.3%    64.5   2026-09-25    6% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 60.0
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt))</sub>
 
 ## How to run it
 
+<pre>
+download               size  score
+4-bit gguf-q4_k_m   ~9.44GB   60.0
+8-bit gguf-q8_0    ~18.38GB   60.0
+</pre>
+
 ```sh
+# 4-bit gguf-q4_k_m
 llama-server -hf bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
 llama-server -hf bartowski/ServiceNow-AI_Apriel-1.6-15b-Thinker-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/apriel-1-6-15b-thinker)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/apriel-1-6-15b-thinker) · [JSON](https://whatmodel.sh/api?format=json&all=1)

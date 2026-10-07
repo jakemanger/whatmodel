@@ -6,7 +6,7 @@
 
 Mistral · released 2026-02 · proprietary
 
-**score 59.9** ±2.7 · #26 of 113 · from 5 benchmark results across 2 sources
+**score 59.6** ±3.1 · #29 of 113 · from 5 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    62.7   2026-02-11   22% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    59.0   2026-02-11   22% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    60.7   2026-02-11   21% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    58.8   2026-02-11   20% ▇▇
-<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    59.0   2026-07-05   12% ▇
-prior                 pull toward the middle                   49.7                 3% ▇
-                      weighted average                       = 59.9
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   7.3%    58.5   2026-02-11   22% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.1%    58.1   2026-02-11   21% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · Common Voice…</a>   8.1%    63.7   2026-02-11   20% ▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · FLEURS 13-la…</a>   5.9%    60.7   2026-02-11   19% ▇▇
+<a name="speech-stt-koedesk-ccby"></a>koedesk STT Bench v1  <a href="https://huggingface.co/datasets/koedesk/stt-bench/blob/c97de119c0511900d559bde5024c2fdc31be0b2c/scores.json">koedesk FLEURS first-200 · 9-…</a>   5.2%    58.6   2026-07-05   13% ▇▇
+prior                 pull toward the middle                   49.7                 4% ▇
+                      weighted average                       = 59.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

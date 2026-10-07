@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 63.5** ±2.3 · #108 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 64.7** ±1.9 · #107 of 462 · from 4 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,24 +15,24 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1347.3    63.8   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 63.5
+source                  test                           score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.7   2026-10-01   76% ▇▇▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    64.6   2026-05-26   11% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    65.3   2026-05-26    6% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    68.2   2026-05-26    5% ▇
+prior                   pull toward the middle                  50.0                 2% ▇
+                        weighted average                      = 64.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Poolside ([CC BY-SA 4.0](../../licenses/report-2605.27605v1.txt))</sub>
 
-<details><summary>Not counted (4)</summary>
+<details><summary>Not counted (1)</summary>
 
 <pre>
-source                  test                    score  why
-poolside/Laguna-M.1 m…  <a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro</a>           49.2%  too few models have it yet
-Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual</a>  63.1%  too few models have it yet
-Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified</a>      74.6%  too few models have it yet
-Poolside                <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0</a>      45.8%  too few models have it yet
+source                  test           score  why
+poolside/Laguna-M.1 m…  <a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#benchmark-results">SWE-bench Pro</a>  49.2%  too few models have it yet
 </pre>
 
 </details>

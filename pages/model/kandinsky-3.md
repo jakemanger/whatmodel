@@ -12,7 +12,19 @@ Full text-to-image pipeline including prior/decoder dependencies. No scores copi
 
 [Catalogue source](https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md)
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+
+<pre>
+test                                result  reported by  source
+Kandinsky 3.0 · text alignment wi…   52.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+Kandinsky 3.0 · visual quality wi…   50.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+Kandinsky 3.0 · text alignment wi…   36.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+Kandinsky 3.0 · visual quality wi…   42.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+Kandinsky 3.0 · text alignment wi…   53.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+Kandinsky 3.0 · visual quality wi…   57.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+</pre>
+
+<sub>Licences: Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

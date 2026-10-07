@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
-**score 55.3** ±5.1 · #60 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 55.2** ±5.5 · #61 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    55.9   2026-06-09   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                11% ▇
-                        weighted average                       = 55.3
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    56.0   2026-06-09   87% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                13% ▇▇
+                        weighted average                       = 55.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

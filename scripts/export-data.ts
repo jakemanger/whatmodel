@@ -8,7 +8,7 @@ import { pathToFileURL } from "node:url";
 import { sourceOf } from "../lib/sources.ts";
 import { csvTables } from "../lib/csv.ts";
 
-const files = ["models", "results", "benchmarks", "sources", "speeds", "quant", "provenance", "meta", "api-speed", "bench"];
+const files = ["models", "results", "benchmarks", "tasks", "sources", "speeds", "quant", "provenance", "meta", "api-speed", "bench"];
 const load = (name: string) => JSON.parse(readFileSync(new URL(`../data/${name}.json`, import.meta.url), "utf8"));
 const data = Object.fromEntries(files.map((name) => [name, load(name)]));
 const requireSource = (url: string | undefined) => {

@@ -6,7 +6,7 @@
 
 Useful Sensors (Moonshine AI) · released 2024-10 · 0.027B params · mit
 
-**score 36.3** ±2.9 · #95 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.3** ±3.0 · #95 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-tiny.json">LibriSpeech test-clean WER</a>       4.6%    36.6   2026-09-15   52% ▇▇▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  12.7%    35.0   2026-03-26   45% ▇▇▇▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-tiny.json">LibriSpeech test-clean WER</a>       4.6%    36.6   2026-09-15   51% ▇▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  12.7%    34.9   2026-03-26   45% ▇▇▇▇▇
 prior                   pull toward the middle                   49.7                 3% ▇
                         weighted average                       = 36.3
 </pre>

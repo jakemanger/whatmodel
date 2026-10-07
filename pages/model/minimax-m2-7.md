@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 65.0** ±1.7 · #90 of 411 · from 3 benchmark results across 2 sources
+**score 66.0** ±1.6 · #91 of 462 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.5    66.0   2026-09-24   52% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.2    64.2   2026-09-13   40% ▇▇▇▇▇
-<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    65.4   2026-05-21    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    66.7   2026-10-01   59% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    65.3   2026-10-02   34% ▇▇▇▇
+<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    66.1   2026-05-21    6% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 65.0
+                        weighted average                        = 66.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platfor
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~138.5GB   65.0
-2-bit ud-q2_k_xl   ~69.5GB   65.0
+4-bit ud-q4_k_xl  ~138.5GB   66.0
+2-bit ud-q2_k_xl   ~69.5GB   66.0
 </pre>
 
 ```sh

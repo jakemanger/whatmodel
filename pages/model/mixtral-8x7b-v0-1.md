@@ -6,7 +6,7 @@
 
 Mistral AI · released 2023-12 · 46.7B params (12.9B active) · apache-2.0
 
-**score 36.7** ±1.8 · #331 of 411 · from 4 benchmark results across 3 sources
+**score 45.6** ±0.9 · #270 of 462 · from 16 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,17 +16,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    35.9   2024-05-07   68% ▇▇▇▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      39.3%    36.2   2024-01-03   13% ▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      40.5%    36.3   2024-01-03   13% ▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.2%    47.9   2026-04-17    4% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 36.7
+<a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge (lab)</a>             59.7%    45.7   2024-01-08   18% ▇▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande (lab)</a>                77.2%    44.1   2024-01-08   12% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval (lab)</a>                 40.2%    50.0   2024-01-08    8% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA (lab)</a>                  71.5%    45.4   2024-01-08    8% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (lab)</a>                 84.4%    44.6   2024-01-08    7% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU (lab)</a>                      70.6%    49.6   2024-01-08    5% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                  83.1%    48.0   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  30.6%    49.1   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH (lab)</a>                      28.4%    55.6   2024-01-08    4% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                      60.7%    53.3   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (lab)</a>                      83.6%    46.2   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>                     74.4%    56.0   2024-01-08    2% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    38.3   2024-05-07   13% ▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      39.3%    38.7   2024-01-03    4% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      40.5%    38.7   2024-01-03    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.2%    49.9   2026-04-17    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 45.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Mixtral of Experts ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -34,8 +46,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~28GB   36.7
-8-bit q8_0    ~50GB   36.7
+4-bit q4_k_m  ~28GB   45.6
+8-bit q8_0    ~50GB   45.6
 </pre>
 
 ```sh

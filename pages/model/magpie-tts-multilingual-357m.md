@@ -10,7 +10,39 @@ MagpieTTS Multilingual v2607, the checkpoint on the main branch of nvidia/magpie
 
 [Model and usage documentation](https://huggingface.co/nvidia/magpie_tts_multilingual_357m)
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+
+<pre>
+test                                result  reported by  source
+Magpie held-out Arabic (ar) CER       1.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Arabic (ar) speak…   80.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Chinese (zh) CER      3.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Chinese (zh) spea…   83.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out English (en) CER      0.4%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out English (en) spea…   82.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out English (en) acce…    0.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out English (en) acce…   74.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out French (fr) CER       1.5%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out French (fr) speak…   74.7%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out German (de) CER       0.8%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out German (de) speak…   74.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Hindi (hi) CER        1.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Hindi (hi) speake…   78.8%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Italian (it) CER      2.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Italian (it) spea…   77.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Japanese (ja) CER     1.4%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Japanese (ja) spe…   77.5%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Korean (ko) CER       2.7%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Korean (ko) speak…   80.7%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Portuguese (pt) C…    2.9%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Portuguese (pt) s…   75.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Spanish (es) CER      0.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Spanish (es) spea…   79.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Vietnamese (vi) C…    0.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+Magpie held-out Vietnamese (vi) s…   72.5%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+</pre>
+
+<sub>Licences: NVIDIA MagpieTTS v2607 ([NVIDIA Open Model License](../../licenses/magpie-v2607-card-evaluations-NVIDIA.txt))</sub>
 
 ## How to run it
 

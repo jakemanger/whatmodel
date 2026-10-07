@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 28.6** ±1.3 · #386 of 411 · from 6 benchmark results across 2 sources
+**score 31.3** ±1.4 · #413 of 462 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  30.4%    29.6   2024-05-07   39% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      29.6%    27.1   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    28.6   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            30.4%    25.1   2024-05-07   11% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    30.2   2024-06-19    9% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 31.1%    28.0   2024-06-19    9% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  30.4%    32.2   2024-05-07   29% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            30.4%    28.5   2024-05-07   16% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      29.6%    29.5   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    30.8   2024-05-07   12% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 31.1%    32.2   2024-06-19   19% ▇▇
+                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    33.6   2024-06-19    9% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 28.6
+                        weighted average                       = 31.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +34,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.6GB   28.6
-8-bit q8_0    ~2.7GB   28.6
+4-bit q4_k_m  ~1.6GB   31.3
+8-bit q8_0    ~2.7GB   31.3
 </pre>
 
 ```sh

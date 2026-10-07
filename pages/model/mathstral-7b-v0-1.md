@@ -6,7 +6,7 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 40.5** ±3.1 · #295 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.0** ±3.0 · #308 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    40.1    96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    41.7    96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0     4% ▇
-                        weighted average                       = 40.5
+                        weighted average                       = 42.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0     4% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   40.5
-8-bit q8_0     ~9.2GB   40.5
+4-bit q4_k_m  ~4.85GB   42.0
+8-bit q8_0     ~9.2GB   42.0
 </pre>
 
 ```sh

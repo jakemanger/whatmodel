@@ -8,7 +8,16 @@ LG AI Research · released 2026-04
 
 [Model and usage documentation](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B)
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+
+<pre>
+test                                result  reported by  source
+MMLU-Pro                             72.0%  independent  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">SqueezeBits</a>
+MMMU-Pro standard (SqueezeBits lm…   17.6%  independent  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">SqueezeBits</a>
+MMMU-Pro vision (SqueezeBits lmms…   21.5%  independent  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">SqueezeBits</a>
+</pre>
+
+<sub>Licences: SqueezeBits ([MIT](../../licenses/squeezebits-exaone45-bf16-MIT.txt))</sub>
 
 ## How to run it
 

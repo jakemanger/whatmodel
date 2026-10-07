@@ -1,0 +1,435 @@
+{
+  "date": "2026-10-06",
+  "arena_revision": "46919c467f7f93d9609b668a283bcd20d87c28bc",
+  "summary": {
+    "added": [
+      "gemini-4-argon",
+      "gpt-6-1-sol",
+      "claude-sonnet-5-5",
+      "step-5-preview",
+      "dola-seed-2-0-pro",
+      "gpt-5-3-chat-latest-20261002",
+      "gpt-5-chat-20261002",
+      "mercury",
+      "mercury-2",
+      "glm-4-plus-0111",
+      "hunyuan-turbo-0110",
+      "step-2-16k-exp-202412",
+      "step-1o-turbo-202506",
+      "step-1o-vision-32k-highres",
+      "hunyuan-standard-256k",
+      "amazon-nova-experimental-chat-26-02-10",
+      "amazon-nova-experimental-chat-26-01-10",
+      "amazon-nova-experimental-chat-12-10",
+      "amazon-nova-experimental-chat-11-10",
+      "amazon-nova-experimental-chat-10-20",
+      "amazon-nova-experimental-chat-10-09",
+      "ideogram-4-5",
+      "tulu-2-7b",
+      "tulu-2-dpo-7b",
+      "tulu-2-13b",
+      "tulu-2-dpo-13b",
+      "tulu-2-70b",
+      "code-tulu-2-7b",
+      "code-tulu-2-13b",
+      "code-tulu-2-34b",
+      "xwin-lm-70b-v0-1"
+    ],
+    "refreshed": 872,
+    "net_results": 290,
+    "models": 1282,
+    "results": 9726
+  },
+  "followup_observations": 56,
+  "batches": [
+    {
+      "proposal": "arena-proposal.json",
+      "models": [
+        "gemini-4-argon",
+        "gpt-6-1-sol",
+        "claude-sonnet-5-5",
+        "step-5-preview",
+        "dola-seed-2-0-pro",
+        "gpt-5-3-chat-latest-20261002",
+        "gpt-5-chat-20261002",
+        "mercury",
+        "mercury-2",
+        "glm-4-plus-0111",
+        "hunyuan-turbo-0110",
+        "step-2-16k-exp-202412",
+        "step-1o-turbo-202506",
+        "step-1o-vision-32k-highres",
+        "hunyuan-standard-256k",
+        "amazon-nova-experimental-chat-26-02-10",
+        "amazon-nova-experimental-chat-26-01-10",
+        "amazon-nova-experimental-chat-12-10",
+        "amazon-nova-experimental-chat-11-10",
+        "amazon-nova-experimental-chat-10-20",
+        "amazon-nova-experimental-chat-10-09",
+        "ideogram-4-5"
+      ],
+      "observations": 905,
+      "benchmarks": [],
+      "sources": []
+    },
+    {
+      "proposal": "mixtral-proposal.json",
+      "models": [],
+      "observations": 72,
+      "benchmarks": [
+        {
+          "id": "natural-questions",
+          "name": "Natural Questions (closed book)",
+          "kind": "acc",
+          "url": "https://ai.google.com/research/NaturalQuestions"
+        }
+      ],
+      "sources": [
+        {
+          "id": "paper-mixtral-2401.04088v1",
+          "name": "Mixtral of Experts — base-model evaluations",
+          "kind": "paper",
+          "license": "CC BY 4.0",
+          "terms_url": "https://arxiv.org/abs/2401.04088v1",
+          "license_url": "/licenses/CC-BY-4.0.txt",
+          "verdict": "allowed",
+          "checked": "2026-10-06",
+          "match": [
+            "arxiv.org/html/2401.04088v1"
+          ],
+          "exact": true,
+          "icon": "arxiv.org",
+          "attribution": "Jiang et al., Mixtral of Experts (2024), arXiv:2401.04088v1, Table 2. CC BY 4.0. Percentages converted to fractions; derived scores are our transformation. No endorsement.",
+          "quote": "Version v1 links to CC BY 4.0. Table 2 reports the authors’ own reruns of all six base models; copied leaderboard screenshots and differently configured Table 3 excluded."
+        }
+      ]
+    },
+    {
+      "proposal": "more-bridges.json",
+      "models": [],
+      "observations": 55,
+      "benchmarks": [
+        {
+          "id": "natural-questions",
+          "name": "Natural Questions (closed book)",
+          "kind": "acc",
+          "url": "https://ai.google.com/research/NaturalQuestions"
+        },
+        {
+          "id": "agieval-gemma-en",
+          "name": "AGIEval English (Gemma report)",
+          "kind": "acc",
+          "url": "https://arxiv.org/html/2403.08295v4#S3.T6"
+        }
+      ],
+      "sources": [
+        {
+          "id": "paper-gemma-2403.08295v4",
+          "name": "Gemma report — original evaluations",
+          "kind": "paper",
+          "license": "CC BY 4.0",
+          "terms_url": "https://arxiv.org/abs/2403.08295v4",
+          "license_url": "/licenses/CC-BY-4.0.txt",
+          "verdict": "allowed",
+          "checked": "2026-10-06",
+          "match": [
+            "arxiv.org/html/2403.08295v4"
+          ],
+          "exact": true,
+          "icon": "arxiv.org",
+          "attribution": "Gemma Team et al., Gemma: Open Models Based on Gemini Research and Technology (2024), arXiv:2403.08295v4, Table 6. CC BY 4.0. Selected original evaluations converted from percentages to fractions; no endorsement.",
+          "quote": "CC BY 4.0 on exact arXiv v4. Table 6 marks author reruns with an asterisk. Only both Gemma base checkpoints and the starred Mistral 7B cells are used; copied baselines excluded."
+        }
+      ]
+    },
+    {
+      "proposal": "tulu-proposal.json",
+      "models": [
+        "tulu-2-7b",
+        "tulu-2-dpo-7b",
+        "tulu-2-13b",
+        "tulu-2-dpo-13b",
+        "tulu-2-70b",
+        "code-tulu-2-7b",
+        "code-tulu-2-13b",
+        "code-tulu-2-34b",
+        "xwin-lm-70b-v0-1"
+      ],
+      "observations": 130,
+      "benchmarks": [
+        {
+          "id": "tulu2-tydiqa-goldp-1shot-f1",
+          "name": "Tulu 2: TyDiQA gold passage, 1-shot F1",
+          "kind": "acc",
+          "url": "https://arxiv.org/html/2311.10702v2"
+        },
+        {
+          "id": "tulu2-codexeval-pass10",
+          "name": "Tulu 2: CodexEval pass@10",
+          "kind": "acc",
+          "url": "https://arxiv.org/html/2311.10702v2"
+        }
+      ],
+      "sources": [
+        {
+          "id": "paper-tulu2-2311.10702v2",
+          "name": "Tulu 2 — base and instruction-tuned evaluations",
+          "kind": "paper",
+          "license": "CC BY 4.0",
+          "terms_url": "https://arxiv.org/abs/2311.10702v2",
+          "license_url": "/licenses/CC-BY-4.0.txt",
+          "verdict": "allowed",
+          "checked": "2026-10-06",
+          "match": [
+            "arxiv.org/html/2311.10702v2"
+          ],
+          "exact": true,
+          "icon": "arxiv.org",
+          "attribution": "Ivison et al., Camels in a Changing Climate: Enhancing LM Adaptation with Tulu 2 (2023), arXiv:2311.10702v2. CC BY 4.0. Selected core capability results from Tables 1, 5 and 6; percentages converted to fractions and repeated cells deduplicated. No endorsement.",
+          "quote": "Exact arXiv v2 is CC BY 4.0. Section 3.1 describes the authors evaluation framework, including dated GPT snapshots; Tables 1, 5 and 6 compare their own base and instruction-tuned runs. Imported MMLU, GSM8K, BBH, TyDiQA GP and CodexEval only. QLoRA, safety metrics and external leaderboards excluded."
+        }
+      ]
+    },
+    {
+      "proposal": "arena-followup.json",
+      "models": [],
+      "observations": 56,
+      "benchmarks": [
+        {
+          "id": "arena-agent-ips-202610",
+          "name": "Arena Agent (October 2026 aggregate IPS)",
+          "kind": "linear",
+          "latent_scale": 0.1,
+          "unit": "IPS",
+          "category": "llm",
+          "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+          "metric": "inverse-propensity-weighted treatment effect",
+          "description": "Signed net improvement in the evaluated orchestrator/harness. Not Elo, accuracy or a win rate. Store raw IPS; divide by fixed 0.1 (ten percentage points of effect) for the latent fit. Overall aggregate only; component signals are not imported again. October 1 methodology version; highest available published reasoning effort per model in this task. Published intervals and counts retained per observation.",
+          "methodology": "https://arena.ai/blog/agent-arena-methodology"
+        }
+      ],
+      "sources": []
+    }
+  ],
+  "evidence_files": [
+    {
+      "file": "Xwin-LM--Xwin-LM-70B-V0.1.md",
+      "sha256": "e63c25924a9fa5b27359010b87419c83824946fbbcf4cbdbd79e5f0753e8cae8",
+      "bytes": 9850
+    },
+    {
+      "file": "agent-latest.parquet",
+      "sha256": "f4162eee424c42bf2a1ef15a1da423a04ca140051cc6b8c4a534b8af3e116e3f",
+      "bytes": 8052
+    },
+    {
+      "file": "allenai--codetulu-2-13b.md",
+      "sha256": "ecbc42e3a01ac9caec2fd172dcbf55469a9273155429aa936a58c87f0a222caf",
+      "bytes": 5487
+    },
+    {
+      "file": "allenai--codetulu-2-34b.md",
+      "sha256": "025c4552646e3ff547817e59fd0bcc169f66f20b6c95f53f9a48f430687d55b4",
+      "bytes": 5487
+    },
+    {
+      "file": "allenai--codetulu-2-7b.md",
+      "sha256": "8230a441cb73e89fe04e7fd0f93e41b77201f967b7674582b8b769c7e4758849",
+      "bytes": 5481
+    },
+    {
+      "file": "allenai--tulu-2-13b.md",
+      "sha256": "569d8a81a8d9e9a42ad956b7658c141568683b7b6de1ae82a4390ede4124afb5",
+      "bytes": 6031
+    },
+    {
+      "file": "allenai--tulu-2-70b.md",
+      "sha256": "85e82210d29dade9b44fff390f54da151b48cbde0dfdb1a26dbabd1651953656",
+      "bytes": 6006
+    },
+    {
+      "file": "allenai--tulu-2-7b.md",
+      "sha256": "9b6614df739e4d0bb4ced15aaed597619e65e38d5a0b8992720babd4571be5f4",
+      "bytes": 5999
+    },
+    {
+      "file": "allenai--tulu-2-dpo-13b.md",
+      "sha256": "0a1e6fec5cf8723ff9727f5191dfc0012a026b6b202b4a46d8e2c86473182a8e",
+      "bytes": 6454
+    },
+    {
+      "file": "allenai--tulu-2-dpo-7b.md",
+      "sha256": "c568a79e369ddd2945c068b7887deea2374fb246151845bc04ae32bec1b8a4c4",
+      "bytes": 6462
+    },
+    {
+      "file": "arena-card.txt",
+      "sha256": "d8dd456a30a2c27494204350ad5177f26d01dd2f435e78ec3bd9a99e9c82cfbc",
+      "bytes": 21765
+    },
+    {
+      "file": "critpt-abs.html",
+      "sha256": "f90195a6c404d835eb1019788ae2b2137cf0706b858c246a2c5e85a1a700ae26",
+      "bytes": 54714
+    },
+    {
+      "file": "document_style_control.parquet",
+      "sha256": "c3e72313c0436cb60e3619ad805805f55b333fab36047355a81d6e3e624502c1",
+      "bytes": 7490
+    },
+    {
+      "file": "gemini-page.html",
+      "sha256": "0b7c1286fbbcf4cd21907bd7de8aea225a0b35ecb84085bc542ec14d845b5a8f",
+      "bytes": 181612
+    },
+    {
+      "file": "gemma-abs.html",
+      "sha256": "06176d86b0969723c713e4e70064ae27bcae888f53fed970a0ea7cbfff366514",
+      "bytes": 59453
+    },
+    {
+      "file": "hle.html",
+      "sha256": "4952d5edf2ac52bcf9d820bcec616545474ee8fe17bba5c1c29f306a6962d283",
+      "bytes": 647411
+    },
+    {
+      "file": "image_edit.parquet",
+      "sha256": "8f67f3be2831c0b36db3cf4ba4fd868dcc322c6248b8c3f1a925b695031e3dc3",
+      "bytes": 10526
+    },
+    {
+      "file": "image_to_video.parquet",
+      "sha256": "55fd7438208d72ff4838978c4dc626060750918edda5c2a6f91fce193241090d",
+      "bytes": 7877
+    },
+    {
+      "file": "inception.html",
+      "sha256": "3167767fda86987cd3dcc38c871a8a7de7df072298e0f539089483f3f0ae3e48",
+      "bytes": 466623
+    },
+    {
+      "file": "mixtral-abs.html",
+      "sha256": "41bc7d00a8a118a99ea9a04ff96610e93408ae00cbd3b616456783b2314411ac",
+      "bytes": 45615
+    },
+    {
+      "file": "mixtral.html",
+      "sha256": "9f3a55b554c6216cb9fbdce3f9b3e7b3ddad44b97ce1326e8c23f753e74fba02",
+      "bytes": 192258
+    },
+    {
+      "file": "scicode.html",
+      "sha256": "05562590f5fd2fe568b725281cc4c31787b5c8b11a43610d7c0dfe2897316a9e",
+      "bytes": 268275
+    },
+    {
+      "file": "search_style_control.parquet",
+      "sha256": "5118cea1324decc62c5e89beaad54b2b21012410b750414c098fb8c9b646c19d",
+      "bytes": 6919
+    },
+    {
+      "file": "text-full.parquet",
+      "sha256": "efead156ccf7a2dca363dbbd4ada6ccda76ab25755692c6192b0daa13c72d032",
+      "bytes": 58262115
+    },
+    {
+      "file": "text_style_control-full.parquet",
+      "sha256": "aedab586542b978719f89662bff1b4e78e0f025be8c1ea06681ed29d7584b7bc",
+      "bytes": 51709201
+    },
+    {
+      "file": "text_style_control.parquet",
+      "sha256": "11149e9035241fabaa1158873e43c398f98ed81ff747c24328ec87913e6091a5",
+      "bytes": 606130
+    },
+    {
+      "file": "text_to_image.parquet",
+      "sha256": "49d5f40e3ee4ffd0be028435d2c348dab4edb853c20b39e017eabd0dc7c6ad11",
+      "bytes": 36565
+    },
+    {
+      "file": "text_to_video.parquet",
+      "sha256": "4cbc25e6f3099699723dfb739bb7561978335d2cbf2cc8038d7c091259bb5fc4",
+      "bytes": 7889
+    },
+    {
+      "file": "tulu2-abs.html",
+      "sha256": "3fc108396b613299298caf72224a7f93695c2ac8324dc0e8500b0c930d91acfc",
+      "bytes": 42856
+    },
+    {
+      "file": "tulu2-html.html",
+      "sha256": "92b758b92a6fec503e14bb54b1dc1b218516853e4aa51991142a468e48d86378",
+      "bytes": 282824
+    },
+    {
+      "file": "video_edit.parquet",
+      "sha256": "bb11fb01061cbb81214ac0e82182aa88b8764381f332eb133ebea780fdc5eb1c",
+      "bytes": 5583
+    },
+    {
+      "file": "vision_style_control.parquet",
+      "sha256": "649d63e14f35dd449e2696058747c626dc21e247732d9b87c114a19be2e87572",
+      "bytes": 59380
+    },
+    {
+      "file": "webdev.parquet",
+      "sha256": "86e74b13b99a3ca15963f9a920f46b8e107fbef8b51c248b06e04af4b7c6c894",
+      "bytes": 27971
+    },
+    {
+      "file": "xwin.html",
+      "sha256": "4d88d2d6bd3c1f91446bc31e8e0fac99bdf4afe1bbe229389c4bdb73ea8c2a08",
+      "bytes": 130257
+    }
+  ],
+  "agent_identity_mapping": {
+    "Claude Fable 5.1 (Max)": "claude-fable-5-1",
+    "Claude Opus 5.5 (High)": "claude-opus-5-5",
+    "Claude Sonnet 5.5 (Max)": "claude-sonnet-5-5",
+    "GPT 6 Astra (Max)": "gpt-6-astra",
+    "GPT 6.1 Sol (Max)": "gpt-6-1-sol",
+    "GPT 6 Sol (Max)": "gpt-6-sol",
+    "Claude Fable 5 (High)": "claude-fable-5",
+    "Claude Opus 5 (Max)": "claude-opus-5",
+    "Gemini 4 Argon (High)": "gemini-4-argon",
+    "Claude Opus 4.8 (High)": "claude-opus-4-8",
+    "GPT 5.6 Sol (xHigh)": "gpt-5-6-sol",
+    "Claude Sonnet 5 (High)": "claude-sonnet-5",
+    "Kimi K3 (Max)": "kimi-k3",
+    "GPT 5.5 (xHigh)": "gpt-5-5",
+    "Grok 4.7 (xHigh)": "grok-4-7",
+    "Deepseek V4.1 Flash (Max)": "deepseek-v4-1-flash",
+    "Muse Spark 1.3 (Max)": "muse-spark-1-3",
+    "Hy4 preview": "hy4-preview",
+    "GLM 5.2 (Max)": "glm-5-2",
+    "Gemini 3.8 Flash (High)": "gemini-3-8-flash",
+    "Qwen3.8 Max": "qwen3-8-2-4t-a95b",
+    "GLM 5.3 (Max)": "glm-5-3",
+    "GPT 6 Luna (Max)": "gpt-6-luna",
+    "Grok 4.6 (xHigh)": "grok-4-6",
+    "Grok 4.5": "grok-4-5",
+    "DeepSeek V4 Pro (High) (0813)": "deepseek-v4-pro",
+    "GPT 5.4 (High)": "gpt-5-4",
+    "Step 5 Preview": "step-5-preview",
+    "GPT 5.6 Terra (xHigh)": "gpt-5-6-terra",
+    "GLM 5.3 Flash": "glm-5-3-flash",
+    "Qwen3.8 Flash Next": "qwen3-8-flash-next",
+    "GPT 5.6 Luna (xHigh)": "gpt-5-6-luna",
+    "Gemini 3.7 Flash (High)": "gemini-3-7-flash",
+    "Qwen 3.8 27B": "qwen3-8-27b",
+    "Muse Spark 1.2 (xHigh)": "muse-spark-1-2",
+    "Muse Spark 1.1": "muse-spark-1-1",
+    "Qwen3.7 Max": "qwen3-7-max",
+    "Hy3": "hy3",
+    "Minimax M3": "minimax-m3",
+    "Qwen3.7 Plus": "qwen3-7-plus",
+    "Mimo V2.5 Pro": "mimo-v2-5-pro",
+    "Gemini 3.6 Flash (High)": "gemini-3-6-flash",
+    "Gemini 3.1 Pro Preview": "gemini-3-1-pro",
+    "Inkling Small": "inkling-small",
+    "Inkling": "inkling",
+    "Mistral Medium 3.5": "mistral-medium-3-5",
+    "Solar Pro 4": "solar-pro-4"
+  }
+}

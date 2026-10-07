@@ -4,20 +4,28 @@
 
 # ERNIE-Image-Turbo
 
-Baidu · released 2026-04
+Baidu · released 2026-04 · 8B params · apache-2.0
 
-[Model and usage documentation](https://huggingface.co/baidu/ERNIE-Image-Turbo)
+**score 57.0** ±3.6 · #54 of 116 · from 5 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                 result  reported by  source
-GenEval               86.7%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
-OneIG-Bench (EN)      53.4%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
-LongText-Bench (CN)   96.8%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
-LongText-Bench (EN)   96.0%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
-OneIG-Bench (CN)      50.6%  lab          <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">ERNIE-Image model repository …</a>
+source                  test                       score  implies  date        weight
+<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>              86.7%    55.9   2026-09-25   21% ▇▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>  96.0%    55.0   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>     50.6%    57.5   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>     53.4%    57.2   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>  96.8%    62.0   2026-09-25   17% ▇▇
+prior                   pull toward the middle              49.9                 6% ▇
+                        weighted average                  = 57.0
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: ERNIE-Image model repository evaluation tables ([Apache-2.0](../../licenses/visual-ernie-image.txt))</sub>
 
@@ -27,10 +35,22 @@ api (fal.ai) · $0.010/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 <sub>[price source](https://fal.ai/models/fal-ai/ernie-image/turbo): USD for one 1-megapixel output: fal bills this endpoint $0.01 per output megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image (Turbo, 8 steps default). API model: fal-ai/ernie-image/turbo. Settings: 1 MP output, num\_images=1. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Baidu direct tariff. fal.ai official model page, observed 2026-09-25.</sub>
 
+<pre>
+version                                   needs  score
+bf16 · nvidia only                      ~19.7GB   57.0
+bf16 + Ministral 3B (sd.cpp)            ~29.4GB   57.0
+gguf-ud-q4_k_m + Ministral 3B (sd.cpp)  ~17.1GB   57.0
+</pre>
+
 ```sh
+# bf16 · nvidia only
 uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import ErnieImagePipeline; p=ErnieImagePipeline.from_pretrained('baidu/ERNIE-Image-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p(prompt='a cat holding a sign', height=1024, width=1024, num_inference_steps=8, guidance_scale=1.0).images[0].save('out.png')"
+# bf16 + Ministral 3B (sd.cpp)
 sd-cli --diffusion-model models/ernie-image-turbo.safetensors --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa
+# gguf-ud-q4_k_m + Ministral 3B (sd.cpp)
 sd-cli --diffusion-model models/ernie-image-turbo-UD-Q4_K_M.gguf --vae models/flux2_ae.safetensors --llm models/ministral-3-3b.safetensors -p "a lovely cat" --cfg-scale 1.0 --steps 8 -v --offload-to-cpu --diffusion-fa
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ernie-image-turbo)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/ernie-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

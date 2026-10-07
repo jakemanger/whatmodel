@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 6.74B params · llama2
 
-**score 32.8** ±1.0 · #364 of 411 · from 5 benchmark results across 3 sources
+**score 34.8** ±0.9 · #387 of 462 · from 10 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               27.9%    33.3   2024-03-28   31% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       43.3%    33.2   2024-03-28   26% ▇▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.9%    33.4   2024-05-07   23% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      44.4%    30.9   2024-01-31   10% ▇
-                        <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 34.8%    30.1   2024-01-31   10% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               27.9%    35.7   2024-03-28   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       43.3%    35.6   2024-03-28   22% ▇▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 34.8%    33.9   2024-01-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      44.4%    33.1   2024-01-31    7% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  38.4%    30.6   2023-11-20    5% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  41.6%    35.1   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.5%    30.5   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       64.1%    39.5   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           17.0%    26.3   2023-11-20    1% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.9%    36.0   2024-05-07   12% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.8
+                        weighted average                       = 34.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -35,8 +40,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.1GB   32.8
-8-bit q8_0    ~7.2GB   32.8
+4-bit q4_k_m  ~4.1GB   34.8
+8-bit q8_0    ~7.2GB   34.8
 </pre>
 
 ```sh

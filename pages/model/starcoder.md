@@ -6,7 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 30.6** ±1.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.1** ±1.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       23.5%    30.8   2024-03-28   54% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               34.8%    30.0   2024-03-28   45% ▇▇▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       23.5%    33.3   2024-03-28   55% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               34.8%    32.5   2024-03-28   44% ▇▇▇▇▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 30.6
+                        weighted average               = 33.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-10 · 2.5B params · stabilityai-community
 
-**score 39.7** ±2.7 · #91 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 39.4** ±2.8 · #93 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       52.2%    40.0   2026-07-01   68% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  45.0%    38.0   2026-06-02   29% ▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       52.2%    39.6   2026-07-01   66% ▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  45.0%    37.7   2026-06-02   31% ▇▇▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 39.7
+                        weighted average                       = 39.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

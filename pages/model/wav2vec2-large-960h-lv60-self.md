@@ -6,7 +6,7 @@
 
 Meta · released 2020-10 · 0.32B params · apache-2.0
 
-**score 18.0** ±3.9 · #103 of 113 · from 3 benchmark results across 3 sources
+**score 17.8** ±4.0 · #103 of 113 · from 3 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  21.3%    14.9   2026-03-26   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200        <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  61.1%    19.6   2023-09-30    8% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.5%    30.6   2024-12-09    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  21.3%    14.7   2026-03-26   83% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200        <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  61.1%    20.1   2023-09-30    8% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  13.5%    31.9   2024-12-09    4% ▇
 prior                 pull toward the middle                   49.7                 6% ▇
-                      weighted average                       = 18.0
+                      weighted average                       = 17.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   18.0
+fp32     ~2.04GB   17.8
 </pre>
 
 ```sh

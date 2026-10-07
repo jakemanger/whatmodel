@@ -6,7 +6,7 @@
 
 ElevenLabs · released 2026-02 · proprietary
 
-**score 66.3** ±1.3 · #7 of 92 · from 17 benchmark results across 7 sources
+**score 66.5** ±1.4 · #8 of 94 · from 17 benchmark results across 7 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,30 +16,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  3.39 / 5    70.6   2026-06-25    9% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.4%    66.8   2026-06-25    7% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      3.8%    65.6   2026-06-25    6% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.35 / 5    64.4   2026-06-25    5% ▇
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      5.1%    64.9   2026-07-27    9% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              5.8%    66.6   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>             10.7%    60.5   2026-07-27    4% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      5.1%    60.1   2026-07-27    4% ▇
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1281.1    70.1   2026-09-25   19% ▇▇
-<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>     39.2%    64.2   2026-04-06    6% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>     49.7%    63.4   2026-04-06    6% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>      2.2%    67.0   2026-04-06    3% ▇
-                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      1.3%    67.3   2026-04-06    2% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.33 / 5    62.6   2026-07-16    4% ▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.59 / 5    66.3   2026-07-16    4% ▇
-<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>    1056.3    67.4   2026-04-23    6% ▇
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>    111.7%  -731.1   2026-08-12    0% ▇
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      5.1%    64.7   2026-07-27   11% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              5.8%    66.4   2026-07-27   10% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>             10.7%    60.0   2026-07-27    5% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      5.1%    58.2   2026-07-27    4% ▇
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  3.39 / 5    71.8   2026-06-25    9% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      2.4%    67.4   2026-06-25    7% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      3.8%    66.0   2026-06-25    6% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.35 / 5    64.6   2026-06-25    5% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>    1281.1    71.1   2026-09-25   20% ▇▇
+<a name="speech-voxtral-tts-report"></a>Voxtral TTS             <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>     39.2%    63.1   2026-04-06    4% ▇
+                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language spea…</a>     49.7%    62.0   2026-04-06    4% ▇
+                        <a href="https://arxiv.org/html/2603.25551v2">MiniMax TTS · 9-language WER …</a>      2.2%    67.4   2026-04-06    2% ▇
+                        <a href="https://arxiv.org/html/2603.25551v2">Seed-TTS · report split unspe…</a>      1.3%    67.9   2026-04-06    2% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.59 / 5    66.5   2026-07-16    4% ▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Language Co…</a>  3.33 / 5    61.7   2026-07-16    3% ▇
+<a name="speech-voicefirst-indic-ccby"></a>Preferences of a Voic…  <a href="https://arxiv.org/html/2604.21481v2">Voice-First Nation · 10 India…</a>    1056.3    68.0   2026-04-23    5% ▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>    111.7%  -870.6   2026-08-12    0% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 66.3
+                        weighted average                          = 66.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) · Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
+<sub>Licences: Qwen-Audio-3.0-TTS technical report ([CC BY 4.0](../../licenses/speech-qwen-audio3-tts-report.txt)) · ZONOS2 Technical Report ([CC BY-SA 4.0](../../licenses/speech-zonos2-report-bysa.txt)) · The Humanness Index by Vapi · September 2026 public standings ([CC BY 4.0](../../licenses/speech-followup-NOTICES.txt)) · Voxtral TTS ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt)) · Preferences of a Voice-First Nation: pairwise human evaluation of TTS in 10 Indian languages ([CC BY 4.0](../../licenses/speech-voicefirst-indic-ccby.txt)) · Addis AI Amharic TTS benchmark ([CC BY-SA 4.0](../../licenses/speech-followup-NOTICES.txt))</sub>
 
 ## How to run it
 

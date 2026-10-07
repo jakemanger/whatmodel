@@ -4,20 +4,51 @@
 
 # StableLM-Base-Alpha 3B
 
-Stability AI · released 2023-04
+Stability AI · released 2023-04 · 3.6B params · cc-by-sa-4.0
 
-First StableLM alpha base release (April 2023), not the -v2 re-release.
+**score 17.1** ±1.0 · #458 of 462 · from 11 benchmark results across 1 source
 
-[Model and usage documentation](https://huggingface.co/stabilityai/stablelm-base-alpha-3b)
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source        test                            score  implies  date        weight
+<a name="stablelm-original-eval-json"></a>Stability AI  <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Challenge (lab)</a>             25.8%    15.4   2024-04-08   39% ▇▇▇▇▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">HellaSwag (lab)</a>                 38.3%    16.8   2024-04-08   12% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">ARC Easy (lab)</a>                  42.0%    18.2   2024-04-08   10% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">SciQ (lab)</a>                      71.7%    14.1   2024-04-08   10% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">BoolQ (lab)</a>                     57.6%    22.2   2024-04-08    7% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">PIQA (lab)</a>                      63.8%    17.6   2024-04-08    7% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">LAMBADA (OpenAI version), las…</a>  41.7%    20.4   2024-04-08    4% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">WinoGrande (lab)</a>                52.6%    20.9   2024-04-08    3% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">Social IQA (lab)</a>                35.6%    11.6   2024-04-08    3% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">OpenBookQA (lab)</a>                17.0%    19.5   2024-04-08    2% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json">TruthfulQA MC2 (lab)</a>            40.5%    35.8   2024-04-08    1% ▇
+prior         pull toward the middle                   50.0                 0% ▇
+              weighted average                       = 17.1
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Stability AI ([Apache-2.0](../../licenses/stablelm-original-eval-json-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/stabilityai/stablelm-base-alpha-3b/blob/819657db42861818efac86e8ca60f673fa912ef8/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
+<pre>
+download        size  score
+4-bit fp32  ~14.82GB   17.1
+</pre>
+
 ```sh
+# 4-bit fp32
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-base-alpha-3b')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/stablelm-base-alpha-3b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/stablelm-base-alpha-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

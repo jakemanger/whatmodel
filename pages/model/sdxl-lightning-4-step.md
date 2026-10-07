@@ -6,7 +6,7 @@
 
 ByteDance · released 2024-02 · openrail++
 
-**score 39.6** ±3.4 · #92 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.6** ±3.7 · #92 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1053.0    39.1   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 5% ▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1053.0    39.0   2024-06-04   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 6% ▇
                         weighted average                        = 39.6
 </pre>
 

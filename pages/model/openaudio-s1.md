@@ -4,19 +4,37 @@
 
 # OpenAudio S1
 
-Fish Audio · released 2025-06
+Fish Audio · released 2025-06 · proprietary
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+**score 58.7** ±8.7 · #32 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-Seed-TTS test-en · Whisper large-…    1.1%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
-Seed-TTS test-zh · Paraformer CER     0.5%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
-Long-TTS-Eval · Fish truncated En…    6.3%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
-Long-TTS-Eval · Fish truncated Ch…    6.4%  lab          <a href="https://arxiv.org/html/2603.08823v2">Fish Audio S2 Technical Report</a>
+source                  test                            score  implies  date        weight
+<a name="speech-fish-s2-report"></a>Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-en · Whisper la…</a>   1.1%    61.9   2026-03-11   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.08823v2">Seed-TTS test-zh · Paraformer…</a>   0.5%    63.3   2026-03-11   31% ▇▇▇▇
+prior                   pull toward the middle                   49.9                30% ▇▇▇▇
+                        weighted average                       = 58.7
 </pre>
 
+<sub>~ averaged with other results for the same test</sub>
+
 <sub>Licences: Fish Audio S2 Technical Report ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncate…</a>   6.3%  too few models have it yet
+Fish Audio S2 Technic…  <a href="https://arxiv.org/html/2603.08823v2">Long-TTS-Eval · Fish truncate…</a>   6.4%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -24,4 +42,6 @@ api (Fish Audio) · $15.00/M chars · [docs.fish.audio](https://docs.fish.audio/
 
 <sub>[price source](https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits): Fish Audio lists s1 at $15.00 per 1M UTF-8 bytes of input text. Stored as per 1M characters, which equals bytes only for ASCII (e.g. English) text; non-ASCII characters take 2-4 bytes, so per-character cost is higher for those scripts. Product: Fish Audio TTS API. API model: s1. Settings: pay-as-you-go. Price basis: published list rate (byte-billed). Exclusions: none stated. Currency: USD. Fish Audio official pricing docs, observed 2026-09-25.</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/openaudio-s1)
+no verified local download listed
+
+[interactive version](https://whatmodel.sh/model/openaudio-s1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -24,6 +24,10 @@ export function toScore(given: string, b: Benchmark): Score {
   const n = parseNumber(given);
   if (!n) return { error: `"${given}" isn't a number.`, candidates: [] };
   const x = n.value;
+  if (b.kind === "linear") {
+    if (n.percent) return { error: `${b.name} uses ${b.unit ?? "raw units"}; write the published value without %.`, candidates: [] };
+    return { score: x, candidates: [x] };
+  }
   if (b.kind === "elo") {
     if (n.percent) return { error: `${b.name} is an Elo rating: write the rating itself, without %.`, candidates: [] };
     if (!(x > 500 && x < 3000)) return { error: `${x} isn't a plausible Elo rating (500–3000).`, candidates: [] };

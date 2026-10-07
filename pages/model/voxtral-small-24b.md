@@ -6,7 +6,7 @@
 
 Mistral · released 2025-07 · 24.3B params · apache-2.0
 
-**score 61.4** ±1.4 · #19 of 113 · from 15 benchmark results across 5 sources
+**score 61.4** ±1.6 · #18 of 113 · from 15 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>       10.3%    61.7   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (l…</a>   3.1%    62.5   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>           11.1%    62.1   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER (l…</a>   1.5%    61.6   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                9.6%    61.1   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>        1.9%    64.5   2025-07-17    7% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    60.0   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.6%    61.6   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.5%    59.6   2025-07-17    6% ▇
-                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER (lab)</a>    3.4%    60.6   2025-07-17    6% ▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.6%    59.4   2026-03-26   11% ▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.7%    63.7   2026-03-26    8% ▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json">LibriSpeech test-clean WER</a>       1.6%    61.8   2026-09-15   12% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  34.5%    56.8   2025-09-22    1% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  13.9%    66.0   2026-08-18    1% ▇
+<a name="report-2507.13264v1"></a>Mistral AI              <a href="https://arxiv.org/html/2507.13264v1">GigaSpeech test WER (lab)</a>       10.3%    61.3   2025-07-17    8% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">SwitchBoard WER (lab)</a>           11.1%    62.0   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">SPGISpeech test WER (lab)</a>        1.9%    65.3   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">CHiME-4 WER (lab)</a>                9.6%    60.8   2025-07-17    7% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-21 10-minute long-fo…</a>   9.6%    59.3   2025-07-17    6% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">Earnings-22 10-minute long-fo…</a>  12.5%    58.7   2025-07-17    6% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-other WER (l…</a>   3.1%    62.9   2025-07-17    6% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">VoxPopuli English test WER (l…</a>   6.6%    61.7   2025-07-17    5% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">FLEURS English test WER (lab)</a>    3.4%    60.2   2025-07-17    4% ▇
+                        <a href="https://arxiv.org/html/2507.13264v1">LibriSpeech test-clean WER (l…</a>   1.5%    63.2   2025-07-17    2% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.6%    59.5   2026-03-26   13% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        3.7%    63.7   2026-03-26   11% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/voxtral-small-24b-2507.json">LibriSpeech test-clean WER</a>       1.6%    61.9   2026-09-15   15% ▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  34.5%    56.6   2025-09-22    1% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  13.9%    66.6   2026-08-18    1% ▇
 prior                   pull toward the middle                   49.7                 1% ▇
                         weighted average                       = 61.4
 </pre>

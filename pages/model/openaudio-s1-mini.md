@@ -6,7 +6,7 @@
 
 Fish Audio · released 2025-06 · 0.5B params · cc-by-nc-sa-4.0
 
-**score 51.3** ±7.8 · #47 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.0** ±8.0 · #49 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    57.3   2026-03-15   48% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    42.1   2026-03-15   27% ▇▇▇
-prior                   pull toward the middle                      49.9                25% ▇▇▇
-                        weighted average                          = 51.3
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.29 / 5    57.1   2026-03-15   48% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.16 / 5    40.9   2026-03-15   26% ▇▇▇
+prior                   pull toward the middle                      49.9                26% ▇▇▇
+                        weighted average                          = 51.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,8 +41,8 @@ api  · price unknown · [docs.fish.audio](https://docs.fish.audio/developer-gui
 
 <pre>
 version                                 needs  score
-bf16 · nvidia only                     ~1.7GB   51.3
-bf16 (fish-speech official repo CLI)  ~3.61GB   51.3
+bf16 · nvidia only                     ~1.7GB   51.0
+bf16 (fish-speech official repo CLI)  ~3.61GB   51.0
 </pre>
 
 ```sh

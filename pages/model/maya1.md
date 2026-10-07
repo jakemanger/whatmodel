@@ -4,24 +4,42 @@
 
 # Maya1
 
-Maya Research · released 2025-11
+Maya Research · released 2025-11 · 3.3B params · apache-2.0
 
-[Model and usage documentation](https://huggingface.co/maya-research/maya1)
+**score 32.1** ±6.3 · #81 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-DailyDialog TTS · Whisper-large W…   11.2%  independent  <a href="https://arxiv.org/html/2601.20510v1">Audio Deepfake Detection in t…</a>
+source                  test                            score  implies  date        weight
+<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>  11.2%    28.7   2026-01-28   84% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                16% ▇▇
+                        weighted average                       = 32.1
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
+<pre>
+version                       needs  score
+bf16 · nvidia only          ~8.42GB   32.1
+bf16 (transformers + snac)  ~6.71GB   32.1
+</pre>
+
 ```sh
+# bf16 · nvidia only
 pip install vllm snac soundfile && wget https://huggingface.co/maya-research/maya1/resolve/main/vllm_streaming_inference.py && python vllm_streaming_inference.py
+# bf16 (transformers + snac)
 pip install torch transformers snac soundfile accelerate && python -c "import torch, soundfile as sf; from transformers import AutoModelForCausalLM, AutoTokenizer; from snac import SNAC; model = AutoModelForCausalLM.from_pretrained('maya-research/maya1', torch_dtype=torch.bfloat16, device_map='auto', trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained('maya-research/maya1', trust_remote_code=True); device = 'cuda' if torch.cuda.is_available() else 'cpu'; snac_model = SNAC.from_pretrained('hubertsiuzdak/snac_24khz').eval().to(device); description = 'Realistic male voice in the 30s age with american accent. Normal pitch, warm timbre, conversational pacing.'; text = 'Hello! This is Maya1 <laugh_harder> the best open source voice AI model with emotions.'; prompt = tokenizer.decode([128259]) + tokenizer.bos_token + f'<description=\"{description}\"> {text}' + tokenizer.decode([128009]) + tokenizer.decode([128260]) + tokenizer.decode([128261]) + tokenizer.decode([128257]); inputs = {k: v.to(device) for k, v in tokenizer(prompt, return_tensors='pt').items()}; outputs = model.generate(**inputs, max_new_tokens=2048, min_new_tokens=28, temperature=0.4, top_p=0.9, repetition_penalty=1.1, do_sample=True, eos_token_id=128258, pad_token_id=tokenizer.pad_token_id); ids = outputs[0, inputs['input_ids'].shape[1]:].tolist(); ids = ids[:ids.index(128258)] if 128258 in ids else ids; codes = [t for t in ids if 128266 <= t <= 156937]; n = len(codes) // 7; levels = [[(codes[7*i] - 128266) % 4096 for i in range(n)], [(codes[7*i+j] - 128266) % 4096 for i in range(n) for j in (1, 4)], [(codes[7*i+j] - 128266) % 4096 for i in range(n) for j in (2, 3, 5, 6)]]; z_q = snac_model.quantizer.from_codes([torch.tensor(l, dtype=torch.long, device=device).unsqueeze(0) for l in levels]); audio = snac_model.decoder(z_q)[0, 0].detach().cpu().numpy(); audio = audio[2048:] if len(audio) > 2048 else audio; sf.write('output.wav', audio, 24000)"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/maya1)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/maya1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

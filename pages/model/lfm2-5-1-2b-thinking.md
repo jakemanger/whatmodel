@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 33.3** ±5.7 · #357 of 411 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 35.7** ±5.9 · #375 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.2%    38.0   2026-04-17   45% ▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  38.9%    22.1   2026-04-17   41% ▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.2%    40.3   2026-04-17   48% ▇▇▇▇▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  38.9%    23.8   2026-04-17   36% ▇▇▇▇
 prior                  pull toward the middle                   50.0                15% ▇▇
-                       weighted average                       = 33.3
+                       weighted average                       = 35.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,8 +48,8 @@ LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-T
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.2GB   33.3
-8-bit q8_0    ~1.9GB   33.3
+4-bit q4_k_m  ~1.2GB   35.7
+8-bit q8_0    ~1.9GB   35.7
 </pre>
 
 ```sh

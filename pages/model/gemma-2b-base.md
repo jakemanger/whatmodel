@@ -6,7 +6,7 @@
 
 Google · released 2024-02 · 2.51B params · gemma
 
-**score 22.9** ±1.1 · #404 of 411 · from 5 benchmark results across 3 sources
+**score 26.9** ±0.8 · #436 of 462 · from 23 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,18 +16,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    22.9   2024-03-28   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    24.4   2024-03-28   29% ▇▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    21.2   2024-05-07   25% ▇▇▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    21.3   2024-06-19    6% ▇
-                        <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    21.9   2024-06-19    6% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 22.9
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    25.7   2024-03-28   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    27.2   2024-03-28   20% ▇▇
+<a name="paper-gemma-2403.08295v4"></a>Gemma report            <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Challenge (lab)</a>             42.1%    28.9   2024-04-19    5% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">WinoGrande (lab)</a>                65.4%    29.0   2024-04-19    3% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HumanEval (lab)</a>                 22.0%    29.4   2024-04-19    3% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MATH (lab)</a>                      11.8%    26.1   2024-04-19    3% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">OpenBookQA (lab)</a>                47.8%    31.2   2024-04-19    3% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">TriviaQA (lab)</a>                  53.2%    29.6   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                 71.4%    27.3   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                     69.4%    25.6   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BIG-Bench Hard (lab)</a>            35.2%    28.5   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                      42.3%    20.6   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">GSM8K (lab)</a>                     17.7%    27.3   2024-04-19    2% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP (lab)</a>                      29.2%    31.0   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                  73.2%    26.8   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed boo…</a>  12.5%    23.9   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report…</a>  24.2%    25.0   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">PIQA (lab)</a>                      77.3%    28.2   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Social IQA (lab)</a>                49.7%    39.0   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">CommonsenseQA (lab)</a>             65.3%    34.7   2024-04-19    1% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    23.7   2024-05-07   11% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    28.4   2024-06-19    7% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    24.5   2024-06-19    3% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 26.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Gemma report ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -35,8 +53,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.8GB   22.9
-8-bit q8_0    ~2.7GB   22.9
+4-bit q4_k_m  ~1.8GB   26.9
+8-bit q8_0    ~2.7GB   26.9
 </pre>
 
 ```sh

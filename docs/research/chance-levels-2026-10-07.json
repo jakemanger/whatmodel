@@ -1,0 +1,380 @@
+[
+  {
+    "id": "mmlu",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "4-option multiple choice, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2009.03300",
+    "evidence": "MMLU paper: \"We find that the three smaller GPT-3 models have near random accuracy (around 25%).\" Table 1 lists \"Random Baseline 25.0\". HF dataset viewer cais/mmlu (all/test): `choices` length min=max=4 for all 14,042 items."
+  },
+  {
+    "id": "simple-evals-mmlu",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "MMLU 4-option MC, zero-shot CoT, answer letter scored as accuracy",
+    "evidence_url": "https://arxiv.org/abs/2009.03300",
+    "evidence": "MMLU paper: \"We find that the three smaller GPT-3 models have near random accuracy (around 25%).\" Table 1 lists \"Random Baseline 25.0\". HF dataset viewer cais/mmlu (all/test): `choices` length min=max=4 for all 14,042 items."
+  },
+  {
+    "id": "mmlu-redux",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "re-annotated MMLU subset, 4-option MC, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2406.04127",
+    "evidence": "MMLU-Redux paper abstract: \"MMLU-Redux, which is a subset of 5,700 manually re-annotated questions across all 57 MMLU subjects.\" HF viewer edinburgh-dawg/mmlu-redux-2.0: `choices` length min=max=4."
+  },
+  {
+    "id": "mmmlu",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "MMLU test set professionally translated (14 languages), 4-option MC",
+    "evidence_url": "https://huggingface.co/datasets/openai/MMMLU",
+    "evidence": "Dataset card: \"We translated the MMLU's test set into 14 languages using professional human translators.\" `Answer` column takes only A/B/C/D (dataset viewer)."
+  },
+  {
+    "id": "mmmlu-marco",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "OpenAI MMMLU, 4-option MC, accuracy",
+    "evidence_url": "https://huggingface.co/datasets/openai/MMMLU",
+    "evidence": "Dataset card: \"We translated the MMLU's test set into 14 languages using professional human translators.\" `Answer` column takes only A/B/C/D (dataset viewer)."
+  },
+  {
+    "id": "mmmlu-liquid-seven-language",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "OpenAI MMMLU (7 languages), constrained option logits, 4-option MC",
+    "evidence_url": "https://huggingface.co/datasets/openai/MMMLU",
+    "evidence": "Dataset card: \"We translated the MMLU's test set into 14 languages using professional human translators.\" `Answer` column takes only A/B/C/D (dataset viewer)."
+  },
+  {
+    "id": "global-mmlu",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "translated/edited MMLU (42 languages), 4-option MC",
+    "evidence_url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU",
+    "evidence": "Dataset card fields: \"option_a ... option_d: one of the possible option choices\"; \"answer: the correct answer (A/B/C/D)\". Paper (arXiv 2412.03304): \"an improved MMLU with evaluation coverage across 42 languages\"."
+  },
+  {
+    "id": "global-mmlu-marco",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "Global-MMLU, 4-option MC, accuracy",
+    "evidence_url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU",
+    "evidence": "Dataset card fields: \"option_a ... option_d: one of the possible option choices\"; \"answer: the correct answer (A/B/C/D)\". Paper (arXiv 2412.03304): \"an improved MMLU with evaluation coverage across 42 languages\"."
+  },
+  {
+    "id": "global-mmlu-lite",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "Global-MMLU-Lite subset, 4-option MC",
+    "evidence_url": "https://huggingface.co/datasets/CohereLabs/Global-MMLU-Lite",
+    "evidence": "Dataset card: \"Lite version of Global-MMLU with human translated samples in 23 languages\"; fields \"option_a\"...\"option_d\" and \"answer: the correct answer (A/B/C/D)\"."
+  },
+  {
+    "id": "arc-challenge",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "multiple choice, typically 4 options (range 3-5, mean 4.0); paper's guess-all baseline = 25.02%",
+    "evidence_url": "https://arxiv.org/abs/1803.05457",
+    "evidence": "ARC paper: \"all non-diagram, multiple choice (typically 4-way multiple choice)\"; Table 3 \"# answer options 3 / 4.0 / 5\"; \"Guess-all ('random') ... scoring 1/k for each question with k answer choices\"; Test Scores table: Guess-all 25.02 (Challenge) and 25.02 (Easy). Near-uniform exception: a few items have 3 or 5 options, but the measured random score is 25.0%, matching existing arc-easy chance 0.25."
+  },
+  {
+    "id": "hellaswag",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "4 candidate endings, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1905.07830",
+    "evidence": "HellaSwag paper Table (BERT/GPT results): row \"Chance 25.0\"; appendix: \"is now a four-way softmax over endings\". HF viewer Rowan/hellaswag validation: `endings` length min=max=4."
+  },
+  {
+    "id": "openbookqa",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "4-option MC science questions, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1809.02789",
+    "evidence": "OpenBookQA paper: \"Each question has exactly four answer choices and one associated fact\"; \"close to the random guessing baseline of 25%\"."
+  },
+  {
+    "id": "piqa",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "goal + two candidate solutions, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1911.11641",
+    "evidence": "PIQA paper: \"given a question q and two possible solutions s1, s2, a model or a human must choose the most appropriate solution, of which exactly one is correct.\""
+  },
+  {
+    "id": "winogrande",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "fill-in-the-blank with two options, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1907.10641",
+    "evidence": "WinoGrande paper: \"WINOGRANDE is formatted as a fill-in-the-blank problem where the blank corresponds to the mention of one of the two names in the context\". HF viewer allenai/winogrande: `answer` takes only 1/2."
+  },
+  {
+    "id": "boolq",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "yes/no questions over a passage, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1905.10044",
+    "evidence": "BoolQ paper abstract: \"In this paper we study yes/no questions\"; also \"(and 62% majority-baseline)\". Random guessing = 0.5; always-'yes' scores ~0.62."
+  },
+  {
+    "id": "social-iqa",
+    "decision": "set",
+    "chance": 0.3333,
+    "k": 3,
+    "format": "3-option MC, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1904.09728",
+    "evidence": "Social IQa paper: \"SOCIAL IQA contains 37,588 multiple choice questions with three answer choices per question.\""
+  },
+  {
+    "id": "gpqa-unspecified",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "GPQA (subset unstated), 4-option MC",
+    "evidence_url": "https://arxiv.org/abs/2311.12022",
+    "evidence": "GPQA paper: \"GPT-4 with few-shot chain-of-thought prompting achieves 39%, where 25% accuracy is random chance.\" All GPQA subsets (extended/main/diamond) use the same 4-option format."
+  },
+  {
+    "id": "gpqa-main",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "GPQA main set, 4-option MC",
+    "evidence_url": "https://arxiv.org/abs/2311.12022",
+    "evidence": "GPQA paper: \"GPT-4 with few-shot chain-of-thought prompting achieves 39%, where 25% accuracy is random chance.\" All GPQA subsets (extended/main/diamond) use the same 4-option format."
+  },
+  {
+    "id": "gpqa-diamond-google-relaxed",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "GPQA Diamond, 4-option MC (Google RelaxedAccuracy answer matching)",
+    "evidence_url": "https://arxiv.org/abs/2311.12022",
+    "evidence": "GPQA paper: \"GPT-4 with few-shot chain-of-thought prompting achieves 39%, where 25% accuracy is random chance.\" All GPQA subsets (extended/main/diamond) use the same 4-option format."
+  },
+  {
+    "id": "gpqa-unspecified-with-tools",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "GPQA (subset unstated) with tools, 4-option MC",
+    "evidence_url": "https://arxiv.org/abs/2311.12022",
+    "evidence": "GPQA paper: \"GPT-4 with few-shot chain-of-thought prompting achieves 39%, where 25% accuracy is random chance.\" All GPQA subsets (extended/main/diamond) use the same 4-option format."
+  },
+  {
+    "id": "simple-evals-gpqa-diamond",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "GPQA Diamond, 4-option MC, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2311.12022",
+    "evidence": "GPQA paper: \"GPT-4 with few-shot chain-of-thought prompting achieves 39%, where 25% accuracy is random chance.\" All GPQA subsets (extended/main/diamond) use the same 4-option format."
+  },
+  {
+    "id": "longbench-v2",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "long-context 4-option MC, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2412.15204",
+    "evidence": "LongBench v2 paper: \"in a multiple-choice question format, containing a long text, a question, four choices, a groundtruth answer\"; abstract: \"compared to 25% accuracy with random guessing\"."
+  },
+  {
+    "id": "c-eval",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "4-option MC (Chinese exams), accuracy",
+    "evidence_url": "https://arxiv.org/abs/2305.08322",
+    "evidence": "C-Eval paper: \"Each question has four choices and only one choice is the correct answer.\""
+  },
+  {
+    "id": "cmmlu",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "4-option MC (Chinese), accuracy",
+    "evidence_url": "https://arxiv.org/abs/2306.09212",
+    "evidence": "CMMLU paper: \"Each question in the dataset is a multiple-choice question with 4 choices, only one of which is correct\"; \"relative to random accuracy of 25%\"."
+  },
+  {
+    "id": "cluewsc",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "binary co-reference judgement (true/false), exact match on label",
+    "evidence_url": "https://arxiv.org/abs/2004.05986",
+    "evidence": "CLUE paper: \"CLUEWSC2020 ... the model is asked to decide whether a pronoun and a noun (phrase) in a sentence co-refer (binary classification)\". DeepSeek reports EM on this binary label."
+  },
+  {
+    "id": "include",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "INCLUDE-base/lite regional exam MC, 4 options, accuracy",
+    "evidence_url": "https://huggingface.co/datasets/CohereLabs/include-base-44",
+    "evidence": "Dataset card: \"It contains 22,637 4-option multiple-choice-questions (MCQ)\". Paper (arXiv 2411.19799): \"INCLUDE-BASE and INCLUDE-LITE contain only multiple-choice questions with four answer options. Questions from INCLUDE with fewer than four options were omitted ... more than four options were pruned\"."
+  },
+  {
+    "id": "global-piqa",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "prompt + two candidate solutions (cloze or A/B), accuracy",
+    "evidence_url": "https://huggingface.co/datasets/mrlbenchmarks/global-piqa-nonparallel",
+    "evidence": "Dataset card: \"each example consists of a prompt and two candidate solutions, one correct and one incorrect.\" Generation format asks the model \"to select option A or B\"."
+  },
+  {
+    "id": "medxpertqa-mm",
+    "decision": "set",
+    "chance": 0.2,
+    "k": 5,
+    "format": "multimodal medical MC, 5 options, accuracy",
+    "evidence_url": "https://huggingface.co/datasets/TsinghuaC3I/MedXpertQA",
+    "evidence": "Dataset card: \"`options`: Answer choices (5 for MM, 10 for Text).\" Checked via HF dataset viewer: all 2,000 MM test items have options A-E."
+  },
+  {
+    "id": "mmstar",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "vision MC, 4 options (1,499 of 1,500 items; one item has A-C)",
+    "evidence_url": "https://huggingface.co/datasets/Lin-Chen/MMStar",
+    "evidence": "HF dataset viewer, Lin-Chen/MMStar val split (1,500 items): every `question` lists \"Options: A: ..., B: ..., C: ..., D: ...\" or \"Choices: (A)...(D)\" except one MathVista item with (A)-(C); expected guess rate 0.25006. Paper (arXiv 2403.20330) Table 'Random Choice' 24.6 (empirical). Near-uniform exception."
+  },
+  {
+    "id": "ai2d-test",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "diagram MC, 4 options, accuracy",
+    "evidence_url": "https://arxiv.org/abs/1603.07396",
+    "evidence": "AI2D paper: \"A diagram question consists of a diagram d in raster graphics, a question sentence q, and multiple choices {c1 . . . c4}.\" HF viewer lmms-lab-encoder/ai2d test: `options` length min=max=4 for all 3,088 items."
+  },
+  {
+    "id": "videomme-with-sub",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "video MC, 4 options, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2405.21075",
+    "evidence": "Video-MME paper: \"each annotator is tasked with ... creating three relevant questions, each accompanied by four candidate options, contributing to a total of 2,700 QA pairs.\""
+  },
+  {
+    "id": "videomme-without-sub",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "video MC, 4 options, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2405.21075",
+    "evidence": "Video-MME paper: \"each annotator is tasked with ... creating three relevant questions, each accompanied by four candidate options, contributing to a total of 2,700 QA pairs.\""
+  },
+  {
+    "id": "lvbench",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "long-video MC, 4 options, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2406.08035",
+    "evidence": "LVBench paper: \"For each question, annotators create four answer choices - one correct answer and three distractors.\""
+  },
+  {
+    "id": "hr-bench-4k",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "high-res image MC, 4 options; accuracy averaged over cyclic option rotations",
+    "evidence_url": "https://arxiv.org/abs/2408.15556",
+    "evidence": "HR-Bench paper: \"each question is presented to an MLLM N times, with N being the number of choices ... we calculate and report the average accuracy\"; Table 1 (HR-Bench 8K) row \"Random Guess\" Avg 25.0; per the dataset card the 4K split is the 8K questions on cropped images."
+  },
+  {
+    "id": "dailyomni",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "audio-visual MC, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2505.17862",
+    "evidence": "Daily-Omni paper Table 2 caption: \"Random guess accuracy is 25%.\" Abstract: \"a multiple-choice Audio-Visual QA benchmark featuring 684 real-world videos and 1,197 questions\"."
+  },
+  {
+    "id": "videoholmes",
+    "decision": "set",
+    "chance": 0.1667,
+    "k": 6,
+    "format": "video reasoning MC, 6 options (A-F), accuracy",
+    "evidence_url": "https://huggingface.co/datasets/TencentARC/Video-Holmes",
+    "evidence": "Paper (arXiv 2505.21374) appendix question-generation prompt: \"The 3rd-8th lines: A-F options\". Checked test_Video-Holmes.json in the dataset repo: all 1,837 questions have exactly 6 options."
+  },
+  {
+    "id": "flenqa-3k",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "True/False questions over padded inputs, accuracy",
+    "evidence_url": "https://arxiv.org/abs/2402.14848",
+    "evidence": "FLenQA paper: \"For each sample, composed of a True/False question over two pieces of information required to answer it\". Dataset card (alonj/FLenQA): \"label: A boolean value that represents the target variable (True/False).\""
+  },
+  {
+    "id": "kcl-mcqa-vanilla",
+    "decision": "set",
+    "chance": 0.2,
+    "k": 5,
+    "format": "Korean bar-exam MC, 5 options, accuracy",
+    "evidence_url": "https://aclanthology.org/2026.eacl-short.17.pdf",
+    "evidence": "KCL paper: \"The resulting benchmark, KCL-MCQA, consists of 283 five-choice questions\"."
+  },
+  {
+    "id": "thunder-konubench-symbol-zero-shot",
+    "decision": "set",
+    "chance": 0.25,
+    "k": 4,
+    "format": "4-option MC, A/B/C/D symbol log-likelihood, accuracy",
+    "evidence_url": "https://aclanthology.org/2026.findings-acl.324.pdf",
+    "evidence": "Thunder-KoNUBench paper: \"Each original sentence is paired with four options: standard negation, local negation, contradiction, and paraphrase.\""
+  },
+  {
+    "id": "copen-csj-zero-shot-full-prompt",
+    "decision": "set",
+    "chance": 0.0476,
+    "k": 21,
+    "format": "choose 1 of 21 candidate entities, accuracy (existing chance 0 is wrong)",
+    "evidence_url": "https://aclanthology.org/2022.emnlp-main.335.pdf",
+    "evidence": "COPEN paper: \"We finally get 9,487 instances, each including a query entity and 21 candidate entities.\" Table 2 'Random' row: CSJ 4.8."
+  },
+  {
+    "id": "copen-cpj-zero-shot-full-prompt",
+    "decision": "set",
+    "chance": 0.5,
+    "k": 2,
+    "format": "binary true/false property judgement, instance-level accuracy (existing chance 0 is wrong)",
+    "evidence_url": "https://aclanthology.org/2022.emnlp-main.335.pdf",
+    "evidence": "COPEN paper: \"The conceptual property judgment (CPJ) task is a binary sentence classification task\"; Table 2 'Random' row: CPJ instance-level 50.0. Table 11 CPJ zero-shot values (47-53%) are instance-level."
+  },
+  {
+    "id": "kobalt-700-kim",
+    "decision": "set",
+    "chance": 0.1,
+    "k": 10,
+    "format": "10-option MC (A-J), accuracy (existing chance 0 is wrong)",
+    "evidence_url": "https://arxiv.org/abs/2505.16125",
+    "evidence": "KoBALT paper: \"KoBALT utilizes a 10-choice format, which provides a broader range of distracting options\". Checked HF snunlp/KoBALT-700: all 700 questions list options A-J."
+  }
+]

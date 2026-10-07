@@ -6,7 +6,7 @@
 
 FireRedTeam (Xiaohongshu) · released 2024-09 · 0.4B params · apache-2.0
 
-**score 32.9** ±2.3 · #76 of 92 · from 9 benchmark results across 3 sources
+**score 32.3** ±3.1 · #80 of 94 · from 9 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     46.0%    29.8   2024-10-09   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     47.0%    30.0   2024-10-09   19% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.8%    34.4   2024-10-09   15% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     63.0%    32.3   2024-10-09   14% ▇▇
-                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.7%    40.9   2024-10-09    8% ▇
-                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.5%    44.2   2024-10-09    6% ▇
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  2.36 / 5    32.6   2025-10-15    8% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.61 / 5    29.8   2026-03-15    4% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.42 / 5    14.1   2026-03-15    2% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 32.9
+<a name="speech-f5tts-report-ccby"></a>F5-TTS: A Fairytaler …  <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>     47.0%    28.6   2024-10-09   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · speaker si…</a>     63.0%    32.1   2024-10-09   16% ▇▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · speaker si…</a>     46.0%    21.5   2024-10-09   10% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-en · Whisper la…</a>      3.8%    32.6   2024-10-09   10% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">LibriSpeech-PC test-clean (F5…</a>      2.7%    44.6   2024-10-09    9% ▇
+                        <a href="https://arxiv.org/html/2410.06885v1">Seed-TTS test-zh · Paraformer…</a>      1.5%    50.3   2024-10-09    6% ▇
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · human spea…</a>  2.36 / 5    33.3   2025-10-15   12% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.61 / 5    29.6   2026-03-15    8% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.42 / 5    12.6   2026-03-15    4% ▇
+prior                   pull toward the middle                      49.9                 4% ▇
+                        weighted average                          = 32.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,7 +37,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                                 needs  score
-fp32 (FireRedTTS repo) · nvidia only  ~3.09GB   32.9
+fp32 (FireRedTTS repo) · nvidia only  ~3.09GB   32.3
 </pre>
 
 ```sh

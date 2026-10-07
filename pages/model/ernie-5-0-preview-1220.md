@@ -6,7 +6,7 @@
 
 Baidu · released 2026-01 · closed weights
 
-**score 64.4** ±3.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.3** ±3.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1218.8    65.1   2026-09-13   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 4% ▇
-                        weighted average                        = 64.4
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1218.9    66.0   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 5% ▇
+                        weighted average                        = 65.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

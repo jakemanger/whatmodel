@@ -6,7 +6,7 @@
 
 Meta · released 2023-08 · 33.74B params · llama2
 
-**score 37.2** ±0.9 · #322 of 411 · from 12 benchmark results across 4 sources
+**score 39.4** ±0.8 · #331 of 462 · from 17 benchmark results across 5 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,25 +16,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    35.9   2024-05-07   19% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.8%    39.2   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      42.5%    36.0   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            48.6%    37.1   2024-05-07    6% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       48.2%    37.8   2024-02-29   11% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         34.3%    37.4   2024-02-29    9% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            65.4%    35.7   2024-02-29    8% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           54.2%    38.6   2024-02-29    8% ▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      55.0%    36.6   2024-01-31    9% ▇
-                        <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 48.8%    37.0   2024-01-31    8% ▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                47.2%    41.4   2024-01-03    4% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                42.4%    37.8   2024-01-03    4% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>                       48.2%    38.2   2024-02-29   17% ▇▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                         34.3%    39.8   2024-02-29    7% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                            65.4%    38.0   2024-02-29    6% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                           54.2%    43.2   2024-02-29    3% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    38.5   2024-05-07   11% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            48.6%    38.7   2024-05-07    6% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.8%    41.8   2024-05-07    6% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      42.5%    38.9   2024-05-07    5% ▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 48.8%    38.8   2024-01-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      55.0%    38.8   2024-01-31    7% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  57.0%    39.8   2023-11-20    5% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  57.1%    44.4   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            47.4%    34.7   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       77.6%    46.1   2023-11-20    2% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           35.0%    35.8   2023-11-20    1% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                47.2%    44.2   2024-01-03    3% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O (lab)</a>                42.4%    40.5   2024-01-03    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 37.2
+                        weighted average                       = 39.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
 ## How to run it
 
@@ -42,8 +47,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~20GB   37.2
-8-bit q8_0    ~36GB   37.2
+4-bit q4_k_m  ~20GB   39.4
+8-bit q8_0    ~36GB   39.4
 </pre>
 
 ```sh

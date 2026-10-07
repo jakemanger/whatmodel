@@ -6,7 +6,7 @@
 
 DALL·E Mini / minDALL-E · released 2022-07
 
-**score 30.7** ±2.8 · #105 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 30.8** ±3.0 · #107 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,21 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  79.4%    29.2    48% ▇▇▇▇▇▇
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  25.8%    30.9    48% ▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9     3% ▇
-                        weighted average                       = 30.7
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  25.8%    31.0    51% ▇▇▇▇▇▇
+<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  79.4%    29.0    45% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9     4% ▇
+                        weighted average                       = 30.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+<sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt)) · TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt))</sub>
 
 ## How to run it
 
 <pre>
 version  needs  score
-fp32      ~8GB   30.7
+fp32      ~8GB   30.8
 </pre>
 
 ```sh

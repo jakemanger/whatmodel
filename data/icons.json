@@ -196,5 +196,8 @@
   {"id":"xiaomi-mimo","name":"Xiaomi MiMo","providers":["Xiaomi MiMo"],"url":"https://cdn-avatars.huggingface.co/v1/production/uploads/680cb7d1233834890a64acee/5w_4aLfF-7MAyaIPOV498.jpeg","page":"https://huggingface.co/XiaomiMiMo","retrieved":"2026-10-05"},
   {"id":"zai","name":"Z.ai","providers":["Z.ai","Zhipu AI (Z.ai)"],"url":"https://z-cdn.chatglm.cn/z-ai/static/logo.svg","page":"https://z.ai/","retrieved":"2026-10-05"},
   {"id":"zoom","name":"Zoom","providers":["Zoom"],"url":"https://www.zoom.com/apple-touch-icon.png","page":"https://www.zoom.com/","retrieved":"2026-10-05"},
-  {"id":"zyphra","name":"Zyphra","providers":["Zyphra"],"url":"https://framerusercontent.com/images/Pjn508YTXpG7PZsGTrXXnHiYzM.png","page":"https://www.zyphra.com/","retrieved":"2026-10-05"}
+  {"id":"zyphra","name":"Zyphra","providers":["Zyphra"],"url":"https://framerusercontent.com/images/Pjn508YTXpG7PZsGTrXXnHiYzM.png","page":"https://www.zyphra.com/","retrieved":"2026-10-05"},
+  {"id":"inception","name":"Inception","providers":["Inception"],"url":"https://framerusercontent.com/images/y5L2OctMTnQDhiVDBUBArywmSY.png","page":"https://www.inceptionlabs.ai/","retrieved":"2026-10-06"},
+  {"id":"xwin-lm","name":"Xwin-LM","providers":["Xwin-LM"],"url":"https://cdn-avatars.huggingface.co/v1/production/uploads/625026b7d2d191ac43320c5e/eASiWh7gSW1Y6ZiUe8Ekb.png","page":"https://huggingface.co/Xwin-LM","retrieved":"2026-10-06"},
+{"id":"nari-labs","name":"Nari Labs","providers":["Nari Labs"],"url":"https://avatars.githubusercontent.com/u/208232306?v=4","page":"https://github.com/nari-labs","retrieved":"2026-10-06"}
 ]

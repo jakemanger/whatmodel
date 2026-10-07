@@ -266,13 +266,15 @@ export function methodMarkdown(): string {
   const { params, results, sources } = methodView();
   const out: string[] = [`[whatmodel.sh](${rel(from, files.board("llm"))}) / method`, `# How the score is calculated`];
   out.push(`Every model with enough reviewed data gets one number, its **score**. It is fit across every benchmark result we have, the way psychometrics fits one general ability from many tests:`);
-  out.push("```text\nresult[model, test] ≈ a[test] · score[model] + d[test]\n```");
+  out.push("```text\nresult[model, run] ≈ a[test] · score[model] + d[run]\n```");
   out.push([
     "Bounded scores use a logit scale after removing any stated chance rate. Error ratios use −log(error + 0.005), preserving errors above 100% caused by insertions. Ratings use a linear transformation. Stored raw values are unchanged.",
-    "**d** is how hard a benchmark is. This adjustment is approximate and depends on overlap between models.",
+    "**d** is a run's level: how hard the benchmark is as one evaluator ran it. This adjustment is approximate and depends on overlap between models.",
     "**a** is how well a benchmark separates strong models from weak ones. Saturated benchmarks count for less.",
-    "Each source's version of a benchmark gets its own a and d when at least three models were tested. Sparser series remain visible as raw evidence and do not enter the overall score. Lab-reported results are labelled.",
+    "Each evaluator's run of a benchmark keeps its own level, so an evaluator whose setup runs hot or cold can't move anyone's score. All runs of the same benchmark share its **a**. Each result is read against the other models in its run, so a run needs at least two models and a benchmark at least three across its runs. Sparser results remain visible as raw evidence. Lab-reported results are labelled.",
     "Models with few results are pulled toward the middle and get a wider **±**.",
+    "Task filters recalculate scores using only that task’s reviewed evaluations. Models need task evidence to appear. Compare within the same task and connected set, not against overall scores. Agent measurements depend on the evaluated harness, tools and reasoning effort.",
+    "Arena Agent’s signed IPS effects retain their raw units and are divided by a fixed 0.1 for the latent fit. They are not Elo or success rates. The aggregate is counted once, without duplicate component signals.",
     "All model sets are listed together by default. Overall scores use the largest connected set; models without a shared scale are not yet calibrated. Under Extra, filter to a set without changing scores, or choose scores within that set. Each scale has mean 50, sd 15; scores from different scales are not comparable. Scores shift as new models arrive.",
     "± is uncertainty within this statistical model, not a guarantee of real-world performance or a validated confidence interval.",
     "Related benchmarks can share tasks or biases. A high held-out correlation does not establish independent validation.",

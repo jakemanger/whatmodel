@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-10 · 14B params · nvidia-open-model
 
-**score 41.6** ±3.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.4** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  37.0%    41.2   2026-05-13   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  37.0%    41.0   2026-05-13   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle               49.9                 5% ▇
-                        weighted average                   = 41.6
+                        weighted average                   = 41.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

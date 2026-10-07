@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 53.1** ±3.5 · #66 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 52.8** ±3.6 · #67 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1181.5    53.3   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1180.6    53.0   2026-09-30   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 5% ▇
-                        weighted average                = 53.1
+                        weighted average                = 52.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

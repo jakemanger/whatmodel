@@ -6,7 +6,7 @@
 
 CompVis · released 2022-04 · 1.45B params · apache-2.0
 
-**score 32.1** ±3.9 · #104 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.1** ±4.0 · #106 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.8%    30.9   2024-02-21   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.8%    30.8   2024-02-21   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
                         weighted average                       = 32.1
 </pre>

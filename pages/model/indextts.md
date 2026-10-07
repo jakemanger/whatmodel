@@ -6,7 +6,7 @@
 
 IndexTeam (bilibili) · released 2025-03 · bilibili-model-use-license
 
-**score 48.6** ±2.5 · #55 of 92 · from 6 benchmark results across 1 source
+**score 51.8** ±3.5 · #48 of 94 · from 6 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      1.9%    46.8   2025-10-15   20% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.6%    46.8   2025-10-15   19% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.98 / 5    53.8   2025-10-15   17% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     62.0%    44.1   2025-10-15   15% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     61.0%    43.4   2025-10-15   14% ▇▇
-                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  4.35 / 5    57.0   2025-10-15   13% ▇▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 48.6
+<a name="speech-distar-report-ccby"></a>DiSTAR: Diffusion ove…  <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · UTMOS (pre…</a>  3.98 / 5    57.5   2025-10-15   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>  4.35 / 5    61.9   2025-10-15   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>     62.0%    43.0   2025-10-15   17% ▇▇
+                        <a href="https://arxiv.org/html/2510.12210v2">LibriSpeech-PC test-clean (F5…</a>      2.6%    46.6   2025-10-15   11% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · Whisper la…</a>      1.9%    46.3   2025-10-15    9% ▇
+                        <a href="https://arxiv.org/html/2510.12210v2">Seed-TTS test-en · speaker si…</a>     61.0%    39.3   2025-10-15    9% ▇
+prior                   pull toward the middle                      49.9                 5% ▇
+                        weighted average                          = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                                     needs  score
-fp32 on CPU (index-tts repo CLI `indext…  ~1.22GB   48.6
+fp32 on CPU (index-tts repo CLI `indext…  ~1.22GB   51.8
 </pre>
 
 ```sh

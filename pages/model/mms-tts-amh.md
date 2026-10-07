@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · cc-by-nc-4.0
 
-**score 50.0** ±15.6 · #52 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.0** ±15.7 · #55 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    81.4   2026-08-12    0% ▇
+<a name="speech-amharic-addis-bysa"></a>Addis AI Amharic TTS …  <a href="https://huggingface.co/datasets/addisai/amharic-tts-benchmark/blob/a60556cd62dd2fbfce83a09c11b088e1e027ce64/data/summary.json">Amharic TTS · 87-prompt CER (…</a>   7.9%    87.0   2026-08-12    0% ▇
 prior                   pull toward the middle                   49.9               100% ▇▇▇▇▇▇▇▇▇▇▇▇
                         weighted average                       = 50.0
 </pre>

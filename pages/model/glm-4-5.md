@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 63.2** ±2.0 · #114 of 411 · from 3 benchmark results across 3 sources
+**score 63.5** ±1.4 · #121 of 462 · from 18 benchmark results across 4 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,38 +16,38 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1411.3    63.7   2026-09-13   55% ▇▇▇▇▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1229.2    62.8   2026-05-10   24% ▇▇▇
-<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   25.7%    63.7   2026-06-17   20% ▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 63.2
+<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  91.0%    61.8   2025-08-08    8% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   79.1%    62.8   2025-08-08    6% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       90.0%    63.0   2025-08-08    6% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         64.2%    63.1   2025-08-08    6% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   84.6%    62.9   2025-08-08    5% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       14.4%    64.9   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.2%    61.0   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 26.4%    64.3   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             79.7%    61.8   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   41.7%    62.9   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             52.8%    66.6   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.4%    60.0   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   26.4%    71.9   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.1%    59.9   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    77.8%    61.7   2025-08-08    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1411.3    64.9   2026-10-02   23% ▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1229.2    63.6   2026-05-10   12% ▇
+<a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   25.7%    64.5   2026-06-17    8% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 63.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · RPC-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: GLM-4.5 Team ([CC BY 4.0](../../licenses/report-2508.06471v1.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · RPC-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
-<details><summary>Not counted (21)</summary>
+<details><summary>Not counted (6)</summary>
 
 <pre>
 source                  test                            score  why
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024</a>                       91.0%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">BFCL v3</a>                         77.8%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">BrowseComp</a>                      26.4%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified)</a>       79.1%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam</a>            14.4%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict</a>      86.1%  too few models have it yet
 GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">LiveCodeBench 2024-07 to 2025…</a>  72.9%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">MATH-500</a>                        98.2%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">MMLU</a>                            90.0%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro</a>                        84.6%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge</a>                  52.8%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified)</a>     41.7%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">SimpleQA</a>                        26.4%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified</a>              64.2%  too few models have it yet
 GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">SysBench (ISR)</a>                  81.0%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline</a>                 60.4%  too few models have it yet
-GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail</a>                  79.7%  too few models have it yet
 GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>  37.5%  too few models have it yet
 zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">AIME 2025</a>                       85.4%  too few models have it yet
 zai-org/GLM-4.6 model…  <a href="https://huggingface.co/zai-org/GLM-4.6/blob/be72194883d968d7923a07e2f61681ea9a2826d1/README.md">LiveCodeBench v6 (window unsp…</a>  63.3%  too few models have it yet
@@ -64,9 +64,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~213.5GB   63.2
-2-bit ud-q2_k_xl    ~107GB   63.2
-1-bit ud-iq1_s    ~53.75GB   63.2
+4-bit ud-q4_k_xl  ~213.5GB   63.5
+2-bit ud-q2_k_xl    ~107GB   63.5
+1-bit ud-iq1_s    ~53.75GB   63.5
 </pre>
 
 ```sh

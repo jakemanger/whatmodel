@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.074B params · apache-2.0
 
-**score 40.6** ±2.5 · #93 of 113 · from 4 benchmark results across 3 sources
+**score 40.6** ±2.6 · #93 of 113 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">LibriSpeech test-clean WER</a>       4.3%    38.2   2026-09-15   38% ▇▇▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    42.7   2026-03-26   34% ▇▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  19.8%    39.8   2026-03-19   15% ▇▇
-                        <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   9.5%    41.3   2026-03-19   11% ▇
-prior                   pull toward the middle                   49.7                 2% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">LibriSpeech test-clean WER</a>       4.3%    38.1   2026-09-15   40% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    42.8   2026-03-26   35% ▇▇▇▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  19.8%    39.9   2026-03-19   14% ▇▇
+                        <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   9.5%    41.7   2026-03-19    9% ▇
+prior                   pull toward the middle                   49.7                 3% ▇
                         weighted average                       = 40.6
 </pre>
 

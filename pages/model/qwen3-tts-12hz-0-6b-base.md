@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.6B params · apache-2.0
 
-**score 61.1** ±2.8 · #26 of 92 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.2** ±4.7 · #26 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    62.1   2026-02-01   55% ▇▇▇▇▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    60.6   2026-02-01   42% ▇▇▇▇▇
-prior            pull toward the middle                   49.9                 3% ▇
-                 weighted average                       = 61.1
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    63.5   2026-02-01   49% ▇▇▇▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    60.8   2026-02-01   42% ▇▇▇▇▇
+prior            pull toward the middle                   49.9                 9% ▇
+                 weighted average                       = 61.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,9 +30,9 @@ prior            pull toward the middle                   49.9                 3
 
 <pre>
 version                            needs  score
-bf16 (qwen-tts)                  ~2.52GB   61.1
-mlx-bf16 (mlx-audio) · mac only  ~2.52GB   61.1
-bf16 (qwen-tts) · nvidia only    ~2.52GB   61.1
+bf16 (qwen-tts)                  ~2.52GB   61.2
+mlx-bf16 (mlx-audio) · mac only  ~2.52GB   61.2
+bf16 (qwen-tts) · nvidia only    ~2.52GB   61.2
 </pre>
 
 ```sh

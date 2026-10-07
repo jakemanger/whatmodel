@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 0.64B params · openmdw-1.1
 
-**score 47.4** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.5** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -17,9 +17,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>       3.0%    46.7   2026-09-15   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    54.4   2026-07-09    7% ▇
-prior                   pull toward the middle                   49.7                 5% ▇
-                        weighted average                       = 47.4
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    54.8   2026-07-09    8% ▇
+prior                   pull toward the middle                   49.7                 6% ▇
+                        weighted average                       = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -1,0 +1,7 @@
+RedPajama — original zero-shot 3B comparison
+Maurice Weber, Daniel Y. Fu, Quentin Anthony et al. RedPajama: an Open Dataset for Training Large Language Models. arXiv:2411.12372v1, 2024. CC BY 4.0. Selected full-prompt lm-evaluation-harness columns retained as fractions, no average or HELM duplicate.
+Source: https://arxiv.org/html/2411.12372v1
+License declaration: https://arxiv.org/abs/2411.12372v1
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+No endorsement.

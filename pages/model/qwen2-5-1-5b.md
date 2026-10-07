@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 1.54B params · apache-2.0
 
-**score 30.6** ±1.1 · #378 of 411 · from 23 benchmark results across 9 sources
+**score 32.3** ±1.1 · #407 of 462 · from 23 benchmark results across 9 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,36 +16,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                            59.7%    35.4   2025-10-08   14% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                  45.8%    30.1   2025-10-08    9% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                           66.2%    32.4   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                  46.5%    29.1   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   7.4%    22.1   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                           15.5%    29.4   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>       44.2%    19.2   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>       40.6%    36.9   2025-10-08    2% ▇
-<a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard</a>                  35.3%    29.9   2025-02-04    4% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">GSM8K</a>                           63.3%    34.9   2025-02-04    4% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                            73.2%    27.3   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified)</a>       19.6%    27.0   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                       30.5%    27.3   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                       60.9%    27.3   2025-02-04    3% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>  47.4%    23.9   2025-02-04    3% ▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  27.8%    28.3   2025-03-01    7% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  35.2%    26.3   2026-08-11    6% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  65.6%    36.0   2024-12-03    4% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  22.2%    31.6   2025-04-28    4% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.8%    27.4   2026-09-19    4% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  13.2%    37.5   2025-10-01    3% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.0%    38.5   2026-04-17    2% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.6%    41.6   2026-04-17    1% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 30.6
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                            59.7%    38.4   2025-10-08   11% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                  45.8%    32.7   2025-10-08   10% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                           66.2%    35.7   2025-10-08    7% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   7.4%    24.4   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                  46.5%    30.6   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                           15.5%    31.6   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>       44.2%    21.5   2025-10-08    2% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>       40.6%    38.8   2025-10-08    2% ▇
+<a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">HumanEval</a>                       30.5%    28.0   2025-02-04    7% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">GSM8K</a>                           63.3%    36.0   2025-02-04    5% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified)</a>       19.6%    27.6   2025-02-04    4% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard</a>                  35.3%    31.0   2025-02-04    4% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">HellaSwag</a>                       60.9%    28.0   2025-02-04    4% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>  47.4%    23.2   2025-02-04    2% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">PIQA</a>                            73.2%    27.8   2025-02-04    2% ▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>  27.8%    30.3   2025-03-01    7% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  35.2%    28.5   2026-08-11    6% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  65.6%    37.9   2024-12-03    4% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  36.8%    29.7   2026-09-19    4% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  22.2%    33.8   2025-04-28    3% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>  13.2%    39.4   2025-10-01    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  76.0%    40.8   2026-04-17    2% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.6%    43.8   2026-04-17    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 32.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · SmolLM2 paper ([CC BY 4.0](../../licenses/paper-2502.02737v1-CC-BY-4.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -53,8 +53,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.42GB   30.6
-8-bit q8_0    ~2.35GB   30.6
+4-bit q4_k_m  ~1.42GB   32.3
+8-bit q8_0    ~2.35GB   32.3
 </pre>
 
 ```sh

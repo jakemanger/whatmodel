@@ -6,30 +6,33 @@
 
 OpenAI · released 2019-05 · 0.355B params · mit
 
-**score 41.8** ±2.1 · #28 of 39 · from 7 benchmark results across 1 source
+**score 27.9** ±1.6 · #434 of 462 · from 10 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>           30.9%    41.8   2021-11-01   21% ▇▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                49.4%    41.6   2021-11-01   16% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>        63.0%    40.6   2021-11-01   16% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                    67.0%    43.0   2021-11-01   15% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>               32.2%    41.2   2021-11-01   11% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>              18.6%    41.6   2021-11-01   10% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>           22.8%    42.3   2021-11-01    9% ▇
-prior                   pull toward the middle           49.8                 2% ▇
-                        weighted average               = 41.8
+source                  test                            score  implies  date        weight
+<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   22.8%    27.7   2021-11-01   26% ▇▇▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      18.6%    27.7   2021-11-01   19% ▇▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       32.2%    26.5   2021-11-01    9% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        49.4%    27.0   2021-11-01    9% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            67.0%    28.5   2021-11-01    8% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                63.0%    25.8   2021-11-01    8% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   30.9%    26.8   2021-11-01    2% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  10.5%    31.6   2022-12-07   12% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  32.0%    25.1   2022-12-07    7% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%  -160.8   2022-12-07    0% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 27.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt))</sub>
+<sub>Licences: Surface Form Competition ([CC BY 4.0](../../licenses/acl-2021-emnlp-main-564-CC-BY-4.0.txt)) · COPEN ([CC BY 4.0](../../licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -37,7 +40,7 @@ prior                   pull toward the middle           49.8                 2%
 
 <pre>
 download       size  score
-4-bit fp32  ~1.52GB   41.8
+4-bit fp32  ~1.52GB   27.9
 </pre>
 
 ```sh

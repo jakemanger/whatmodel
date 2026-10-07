@@ -4,20 +4,40 @@
 
 # Kandinsky 2.2
 
-AI Forever · released 2023-07
+AI Forever · released 2023-07 · 1.22B params · apache-2.0
 
-Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement.
+**score 37.3** ±4.7 · #95 of 116 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder)
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-[Catalogue source](https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder/blob/9ae140d347fed8ce6e8bb3005dcc1f48543bb8e3/README.md)
+## How the score was worked out
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source         test                            score  implies  date        weight
+<a name="kandinsky3-original-human-comparison"></a>Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Human text alignment · wins a…</a>  32.0%    32.9   2023-12-11   46% ▇▇▇▇▇▇
+               <a href="https://arxiv.org/html/2312.03511v2">Human visual quality · wins a…</a>  48.0%    39.4   2023-12-11   44% ▇▇▇▇▇
+prior          pull toward the middle                   49.9                 9% ▇
+               weighted average                       = 37.3
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
+<pre>
+version             needs  score
+fp16 · nvidia only  ~12GB   37.3
+</pre>
+
 ```sh
+# fp16 · nvidia only
 uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-2-2-decoder', torch_dtype=torch.float16).to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kandinsky-2-2)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/kandinsky-2-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

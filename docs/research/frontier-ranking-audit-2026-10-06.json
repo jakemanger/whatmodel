@@ -1,0 +1,946 @@
+{
+  "updated": "2026-10-06T06:09:50Z",
+  "overall": {
+    "claude-opus-5-5": {
+      "id": "claude-opus-5-5",
+      "g": 83.18622973185452,
+      "pm": 1.0894866183457363,
+      "n": 6
+    },
+    "claude-fable-5-1": {
+      "id": "claude-fable-5-1",
+      "g": 81.15843387708027,
+      "pm": 0.6834746068488665,
+      "n": 21
+    },
+    "gemini-4-argon": {
+      "id": "gemini-4-argon",
+      "g": 78.27990776815254,
+      "pm": 1.3017823798685895,
+      "n": 3
+    },
+    "gpt-6-1-sol": {
+      "id": "gpt-6-1-sol",
+      "g": 78.67996070757414,
+      "pm": 1.2008921292032722,
+      "n": 4
+    },
+    "claude-sonnet-5-5": {
+      "id": "claude-sonnet-5-5",
+      "g": 78.66731070752223,
+      "pm": 1.2008921292032722,
+      "n": 4
+    }
+  },
+  "sources": {
+    "claude-opus-5-5": [
+      {
+        "id": "lmarena-dataset",
+        "icon": "arena.ai",
+        "name": "LMArena leaderboard dataset",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.6951424640218387,
+        "tests": [
+          "Arena WebDev (Code Arena)",
+          "Arena Agent (October 2026 aggregate IPS)",
+          "LMArena (text)"
+        ]
+      },
+      {
+        "id": "epoch-internal",
+        "icon": "epoch.ai",
+        "name": "Epoch AI \u2014 internal evaluations",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.2717867184135748,
+        "tests": [
+          "Furniture Assembly (Epoch)",
+          "EBR-bench (Epoch)"
+        ]
+      },
+      {
+        "id": "mideind-icelandic-llm-leaderboard",
+        "icon": "huggingface.co",
+        "name": "Mi\u00f0eind Icelandic LLM Leaderboard",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.02777959801826001,
+        "tests": [
+          "Icelandic LLM Leaderboard average (Mi\u00f0eind, Sept 2026 suite)"
+        ]
+      }
+    ],
+    "claude-fable-5-1": [
+      {
+        "id": "epoch-internal",
+        "icon": "epoch.ai",
+        "name": "Epoch AI \u2014 internal evaluations",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.3783858558007248,
+        "tests": [
+          "FrontierMath tiers 1\u20133 v2",
+          "FrontierMath tier 4 v2",
+          "Furniture Assembly (Epoch)",
+          "EBR-bench (Epoch)",
+          "OTIS mock AIME 2024\u20132025",
+          "SimpleQA Verified",
+          "Mystery Game Puzzles (Epoch)",
+          "MirrorCode (Epoch)",
+          "Chess Puzzles (Epoch)"
+        ]
+      },
+      {
+        "id": "lmarena-dataset",
+        "icon": "arena.ai",
+        "name": "LMArena leaderboard dataset",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.34154858943451305,
+        "tests": [
+          "Arena WebDev (Code Arena)",
+          "Arena Agent (October 2026 aggregate IPS)",
+          "LMArena (text)",
+          "Arena vision (style controlled)",
+          "Arena document (style controlled)"
+        ]
+      },
+      {
+        "id": "matharena-arxiv-outputs-bysa",
+        "icon": "huggingface.co",
+        "name": "MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets",
+        "license": "CC BY-SA 4.0",
+        "lab": false,
+        "share": 0.21629731221246698,
+        "tests": [
+          "MathArena ArXivMath April 2026 (40 problems)",
+          "MathArena ArXivMath June 2026 (48 problems)",
+          "MathArena ArXivMath May 2026 (40 problems)",
+          "MathArena BrokenArXiv April 2026 (61 problems)"
+        ]
+      },
+      {
+        "id": "roblox-llm-leaderboard",
+        "icon": "huggingface.co",
+        "name": "Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode",
+        "license": "MIT",
+        "lab": false,
+        "share": 0.05075319082692195,
+        "tests": [
+          "Luau Leetcode fully solved (Torpedo Software)",
+          "RobloxQA v2.0 multiple choice (Torpedo Software)"
+        ]
+      },
+      {
+        "id": "mideind-icelandic-llm-leaderboard",
+        "icon": "huggingface.co",
+        "name": "Mi\u00f0eind Icelandic LLM Leaderboard",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.010932687237369442,
+        "tests": [
+          "Icelandic LLM Leaderboard average (Mi\u00f0eind, Sept 2026 suite)"
+        ]
+      }
+    ],
+    "gemini-4-argon": [
+      {
+        "id": "lmarena-dataset",
+        "icon": "arena.ai",
+        "name": "LMArena leaderboard dataset",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.9924457951259971,
+        "tests": [
+          "Arena WebDev (Code Arena)",
+          "Arena Agent (October 2026 aggregate IPS)",
+          "LMArena (text)"
+        ]
+      }
+    ],
+    "gpt-6-1-sol": [
+      {
+        "id": "lmarena-dataset",
+        "icon": "arena.ai",
+        "name": "LMArena leaderboard dataset",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.9935713470957507,
+        "tests": [
+          "Arena WebDev (Code Arena)",
+          "Arena Agent (October 2026 aggregate IPS)",
+          "LMArena (text)",
+          "Arena vision (style controlled)"
+        ]
+      }
+    ],
+    "claude-sonnet-5-5": [
+      {
+        "id": "lmarena-dataset",
+        "icon": "arena.ai",
+        "name": "LMArena leaderboard dataset",
+        "license": "CC BY 4.0",
+        "lab": false,
+        "share": 0.9935713470957507,
+        "tests": [
+          "Arena WebDev (Code Arena)",
+          "Arena Agent (October 2026 aggregate IPS)",
+          "LMArena (text)",
+          "Arena vision (style controlled)"
+        ]
+      }
+    ]
+  },
+  "tasks": {
+    "agents": {
+      "claude-fable-5-1": {
+        "score": 82.3,
+        "uncertainty": 1.8,
+        "benchmarks": 1
+      },
+      "claude-opus-5-5": {
+        "score": 81.6,
+        "uncertainty": 1.8,
+        "benchmarks": 1
+      },
+      "claude-sonnet-5-5": {
+        "score": 79.7,
+        "uncertainty": 1.8,
+        "benchmarks": 1
+      },
+      "gpt-6-1-sol": {
+        "score": 77.9,
+        "uncertainty": 1.8,
+        "benchmarks": 1
+      },
+      "gemini-4-argon": {
+        "score": 72.8,
+        "uncertainty": 1.8,
+        "benchmarks": 1
+      }
+    },
+    "coding": {
+      "claude-opus-5-5": {
+        "score": 85.9,
+        "uncertainty": 0.9,
+        "benchmarks": 1
+      },
+      "claude-sonnet-5-5": {
+        "score": 83.9,
+        "uncertainty": 0.9,
+        "benchmarks": 1
+      },
+      "gpt-6-1-sol": {
+        "score": 82,
+        "uncertainty": 0.9,
+        "benchmarks": 1
+      },
+      "claude-fable-5-1": {
+        "score": 81.5,
+        "uncertainty": 0.9,
+        "benchmarks": 1
+      },
+      "gemini-4-argon": {
+        "score": 76.8,
+        "uncertainty": 0.9,
+        "benchmarks": 1
+      }
+    },
+    "chat": {
+      "gemini-4-argon": {
+        "score": 75.2,
+        "uncertainty": 1,
+        "benchmarks": 1
+      },
+      "claude-opus-5-5": {
+        "score": 72.5,
+        "uncertainty": 1,
+        "benchmarks": 1
+      },
+      "claude-fable-5-1": {
+        "score": 72.1,
+        "uncertainty": 1,
+        "benchmarks": 1
+      },
+      "gpt-6-1-sol": {
+        "score": 69.9,
+        "uncertainty": 1,
+        "benchmarks": 1
+      },
+      "claude-sonnet-5-5": {
+        "score": 68.4,
+        "uncertainty": 1,
+        "benchmarks": 1
+      }
+    },
+    "math": {
+      "claude-fable-5-1": {
+        "score": 81.7,
+        "uncertainty": 1,
+        "benchmarks": 7
+      }
+    },
+    "vision": {
+      "claude-fable-5-1": {
+        "score": 66.8,
+        "uncertainty": 1.5,
+        "benchmarks": 2
+      },
+      "gpt-6-1-sol": {
+        "score": 66.8,
+        "uncertainty": 1.9,
+        "benchmarks": 1
+      },
+      "claude-sonnet-5-5": {
+        "score": 63.4,
+        "uncertainty": 1.9,
+        "benchmarks": 1
+      }
+    },
+    "search": {}
+  },
+  "leaveOneSourceOut": {
+    "epoch-internal": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 80.72460294372547,
+        "pm": 1.0817633361000591,
+        "n": 4
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 79.55401971838684,
+        "pm": 0.8061178613049294,
+        "n": 12
+      },
+      "gemini-4-argon": {
+        "id": "gemini-4-argon",
+        "g": 77.4184970881067,
+        "pm": 1.0990572340971967,
+        "n": 3
+      },
+      "gpt-6-1-sol": {
+        "id": "gpt-6-1-sol",
+        "g": 78.03016453858123,
+        "pm": 1.01949335939009,
+        "n": 4
+      },
+      "claude-sonnet-5-5": {
+        "id": "claude-sonnet-5-5",
+        "g": 78.10964626199494,
+        "pm": 1.01949335939009,
+        "n": 4
+      }
+    },
+    "lmarena-dataset": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 92.81365357756479,
+        "pm": 2.022023237657293,
+        "n": 3
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 85.92230974524632,
+        "pm": 0.8473110633319083,
+        "n": 16
+      },
+      "gemini-4-argon": null,
+      "gpt-6-1-sol": null,
+      "claude-sonnet-5-5": null
+    },
+    "matharena-arxiv-outputs-bysa": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 82.26244719707739,
+        "pm": 0.989266858480412,
+        "n": 6
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 80.20148246984871,
+        "pm": 0.734274107956193,
+        "n": 17
+      },
+      "gemini-4-argon": {
+        "id": "gemini-4-argon",
+        "g": 77.80866766381818,
+        "pm": 1.1155753583680348,
+        "n": 3
+      },
+      "gpt-6-1-sol": {
+        "id": "gpt-6-1-sol",
+        "g": 78.52998232614074,
+        "pm": 1.0416550851002848,
+        "n": 4
+      },
+      "claude-sonnet-5-5": {
+        "id": "claude-sonnet-5-5",
+        "g": 78.65161460941127,
+        "pm": 1.0416550851002848,
+        "n": 4
+      }
+    },
+    "mideind-icelandic-llm-leaderboard": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 83.13829701092544,
+        "pm": 1.098214227280533,
+        "n": 5
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 81.12651499575843,
+        "pm": 0.6847505995762342,
+        "n": 20
+      },
+      "gemini-4-argon": {
+        "id": "gemini-4-argon",
+        "g": 78.26628132645365,
+        "pm": 1.291286636265933,
+        "n": 3
+      },
+      "gpt-6-1-sol": {
+        "id": "gpt-6-1-sol",
+        "g": 78.69787377139477,
+        "pm": 1.1927086226157688,
+        "n": 4
+      },
+      "claude-sonnet-5-5": {
+        "id": "claude-sonnet-5-5",
+        "g": 78.69798313941922,
+        "pm": 1.1927086226157688,
+        "n": 4
+      }
+    }
+  },
+  "linearUnitSensitivity": {
+    "0.05": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 83.46530601144613,
+        "pm": 1.0989615593069404,
+        "n": 6
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 81.3105106101771,
+        "pm": 0.6866863515962572,
+        "n": 21
+      },
+      "gemini-4-argon": {
+        "id": "gemini-4-argon",
+        "g": 78.45240815532203,
+        "pm": 1.3192596132043366,
+        "n": 3
+      },
+      "gpt-6-1-sol": {
+        "id": "gpt-6-1-sol",
+        "g": 78.87545904453981,
+        "pm": 1.2160376083365096,
+        "n": 4
+      },
+      "claude-sonnet-5-5": {
+        "id": "claude-sonnet-5-5",
+        "g": 78.87529373797054,
+        "pm": 1.2160376083365096,
+        "n": 4
+      }
+    },
+    "0.1": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 83.18622973185452,
+        "pm": 1.0894866183457363,
+        "n": 6
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 81.15843387708027,
+        "pm": 0.6834746068488665,
+        "n": 21
+      },
+      "gemini-4-argon": {
+        "id": "gemini-4-argon",
+        "g": 78.27990776815254,
+        "pm": 1.3017823798685895,
+        "n": 3
+      },
+      "gpt-6-1-sol": {
+        "id": "gpt-6-1-sol",
+        "g": 78.67996070757414,
+        "pm": 1.2008921292032722,
+        "n": 4
+      },
+      "claude-sonnet-5-5": {
+        "id": "claude-sonnet-5-5",
+        "g": 78.66731070752223,
+        "pm": 1.2008921292032722,
+        "n": 4
+      }
+    },
+    "0.2": {
+      "claude-opus-5-5": {
+        "id": "claude-opus-5-5",
+        "g": 82.72815042963381,
+        "pm": 1.1124962488605763,
+        "n": 6
+      },
+      "claude-fable-5-1": {
+        "id": "claude-fable-5-1",
+        "g": 80.84413639033144,
+        "pm": 0.686078656049988,
+        "n": 21
+      },
+      "gemini-4-argon": {
+        "id": "gemini-4-argon",
+        "g": 77.9715969668595,
+        "pm": 1.3409596832527353,
+        "n": 3
+      },
+      "gpt-6-1-sol": {
+        "id": "gpt-6-1-sol",
+        "g": 78.1143180194744,
+        "pm": 1.2280491102516593,
+        "n": 4
+      },
+      "claude-sonnet-5-5": {
+        "id": "claude-sonnet-5-5",
+        "g": 77.9872640123003,
+        "pm": 1.2280491102516593,
+        "n": 4
+      }
+    }
+  },
+  "sharedEvidence": [
+    {
+      "model": "claude-fable-5-1",
+      "bench": "otis-mock-aime",
+      "score": 1,
+      "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+      "by": "independent",
+      "date": "2026-09-01",
+      "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id mRAASXsUuoJmc2oR5G89zR; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "frontiermath",
+      "score": 0.9017543859649123,
+      "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+      "by": "independent",
+      "date": "2026-09-01",
+      "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id g7dXwZH2tWvqLg3X5idGs2; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.017662067789031757.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "simpleqa-verified",
+      "score": 0.708,
+      "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+      "by": "independent",
+      "date": "2026-09-01",
+      "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id ExyL3GN8s34tizrXV3VmS3; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014385511563477433.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "epoch-chess",
+      "score": 0.47,
+      "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+      "by": "independent",
+      "date": "2026-09-01",
+      "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id EEGf5SDiF8jXB6NX7eR6Sa; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05016135580465918.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "epoch-ebr",
+      "score": 0.7142857142857142,
+      "source": "https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv",
+      "by": "independent",
+      "date": "2026-09-22",
+      "note": "Epoch AI internal evaluation; file ebr_bench.csv; snapshot 2026-09-25; exact model version 'claude-opus-5-5_max'; run id iKWWUmcuzRjqisoshKVEpL; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07063046178186345.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "epoch-ebr",
+      "score": 0.5714285714285714,
+      "source": "https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv",
+      "by": "independent",
+      "date": "2026-09-08",
+      "note": "Epoch AI internal evaluation; file ebr_bench.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id 8JukffGviNAYHXSdTJvswB; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06023386019368341.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "frontiermath-tier-4-v2",
+      "score": 0.8780487804878049,
+      "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+      "by": "independent",
+      "date": "2026-09-01",
+      "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id T56N3X4KLA3xz7tf5aCMGb; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.051739520574625435.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "epoch-mirrorcode",
+      "score": 0.733,
+      "source": "https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv",
+      "by": "independent",
+      "date": "2026-09-10",
+      "note": "Epoch AI internal evaluation; file mirrorcode.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_high'; run id mirrorcode-ml-2l-claude-fable-5-1; effort high; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "epoch-mystery-games",
+      "score": 0.58,
+      "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+      "by": "independent",
+      "date": "2026-09-01",
+      "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id dBHxnnTzLGz3nHis5LET6t; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04960449637488583.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "epoch-furniture",
+      "score": 0.8333333333333334,
+      "source": "https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv",
+      "by": "independent",
+      "date": "2026-09-22",
+      "note": "Epoch AI internal evaluation; file furniture_assembly.csv; snapshot 2026-09-25; exact model version 'claude-opus-5-5_max'; run id 4QrkRM7KEDCQvg4wvfhz7N; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.047040472216649226.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "epoch-furniture",
+      "score": 0.7,
+      "source": "https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv",
+      "by": "independent",
+      "date": "2026-09-10",
+      "note": "Epoch AI internal evaluation; file furniture_assembly.csv; snapshot 2026-09-25; exact model version 'claude-fable-5-1_max'; run id 9LZMBmKxeBgnf5mvgNvBjW; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05724365605193373.",
+      "source_id": "epoch-internal"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "lmarena-text",
+      "score": 1501.1,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "text_style_control, category overall, split latest; exact entry 'claude-fable-5.1-max'; 11,800 votes; published 95% interval 1494.7\u20131507.5. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "lmarena-webdev",
+      "score": 1815.4,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-01",
+      "note": "webdev, category overall, split latest; exact entry 'claude-opus-5.5-max'; 2,062 votes; published 95% interval 1799.3\u20131831.4. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "lmarena-webdev",
+      "score": 1749.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-01",
+      "note": "webdev, category overall, split latest; exact entry 'claude-fable-5.1-max'; 6,318 votes; published 95% interval 1739.7\u20131758.8. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "lmarena-vision",
+      "score": 1287.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "vision_style_control, category overall, split latest; exact entry 'claude-fable-5.1-max'; 4,312 votes; published 95% interval 1277.7\u20131297.6. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "lmarena-document",
+      "score": 1492.8,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-09-13",
+      "note": "document_style_control, category overall, split latest; exact entry 'claude-fable-5.1-max'; 1,403 votes; published 95% interval 1477.5\u20131508.1. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "matharena-arxivmath-2026-04",
+      "score": 0.775,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet",
+      "source_id": "matharena-arxiv-outputs-bysa",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath April 2026 outputs dataset (HF revision 31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf); published model_name 'Claude-Fable-5.1 (max)', model_config 'anthropic/fable_51_max' (claude-fable-5-1, adaptive thinking, effort max, per configs/models/anthropic/fable_51_max.yaml at eth-sri/matharena b89f2f0ad64c). 40/40 problems, 3 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0426_outputs",
+        "revision": "31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "4a3c1bafae45d20d9983f6cd1a07b909f60bac0aa820bac3d702c25c9f91b02d",
+        "model_config": "anthropic/fable_51_max",
+        "problems": 40,
+        "attempts_min": 3,
+        "attempts_max": 3
+      },
+      "data_license": "CC-BY-SA-4.0"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "matharena-arxivmath-2026-05",
+      "score": 0.875,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet",
+      "source_id": "matharena-arxiv-outputs-bysa",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena ArXivMath May 2026 outputs dataset (HF revision 85f1009458c2d2e1527d3e592d04cf40ee8b3a90); published model_name 'Claude-Fable-5.1 (max)', model_config 'anthropic/fable_51_max' (claude-fable-5-1, adaptive thinking, effort max, per configs/models/anthropic/fable_51_max.yaml at eth-sri/matharena b89f2f0ad64c). 40/40 problems, 3 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0526_outputs",
+        "revision": "85f1009458c2d2e1527d3e592d04cf40ee8b3a90",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "d38c07f6d91ebc4b450cc0b3f5cdd1278b0880b0cb58a37ce4dddb2aaec50dcf",
+        "model_config": "anthropic/fable_51_max",
+        "problems": 40,
+        "attempts_min": 3,
+        "attempts_max": 3
+      },
+      "data_license": "CC-BY-SA-4.0"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "matharena-arxivmath-2026-06",
+      "score": 0.909722,
+      "source": "https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet",
+      "source_id": "matharena-arxiv-outputs-bysa",
+      "by": "independent",
+      "date": "2026-09-07",
+      "note": "MathArena ArXivMath June 2026 outputs dataset (HF revision f782eef32107837304e2ecd4e78b4cb60ee1e122); published model_name 'Claude-Fable-5.1 (max)', model_config 'anthropic/fable_51_max' (claude-fable-5-1, adaptive thinking, effort max, per configs/models/anthropic/fable_51_max.yaml at eth-sri/matharena b89f2f0ad64c). 48/48 problems, 3 attempts per problem; score = mean final-answer correctness (parsed \\boxed{} answer vs gold), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/arxivmath-0626_outputs",
+        "revision": "f782eef32107837304e2ecd4e78b4cb60ee1e122",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "5bfdd998c20c223ed272092564afa84a3a4f526f125b2366915632772d4534c6",
+        "model_config": "anthropic/fable_51_max",
+        "problems": 48,
+        "attempts_min": 3,
+        "attempts_max": 3
+      },
+      "data_license": "CC-BY-SA-4.0"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "matharena-brokenarxiv-2026-04",
+      "score": 0.803279,
+      "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet",
+      "source_id": "matharena-arxiv-outputs-bysa",
+      "by": "independent",
+      "date": "2026-09-11",
+      "note": "MathArena BrokenArXiv April 2026 outputs dataset (HF revision 34779f2c3c287fda88ea06b4c7885a1d10ae8b36); published model_name 'Claude-Fable-5.1 (max)', model_config 'anthropic/fable_51_max' (claude-fable-5-1, adaptive thinking, effort max, per configs/models/anthropic/fable_51_max.yaml at eth-sri/matharena b89f2f0ad64c). 61/61 problems, 2 attempts per problem; score = mean normalized judge score (points_judge_1/2; 2 = explicitly recognises the statement is false), averaged per problem then over problems, computed by whatmodel.sh from the per-attempt 'correct' column. Competition config has no harness opt-in, so the plain API path was used (no tools). CC BY-SA 4.0 (share-alike tranche).",
+      "evidence": {
+        "kind": "per-attempt parquet aggregated",
+        "dataset": "MathArena/brokenarxiv-0426_outputs",
+        "revision": "34779f2c3c287fda88ea06b4c7885a1d10ae8b36",
+        "file": "data/train-00000-of-00001.parquet",
+        "file_sha256": "68f10bcf55926258a256f67f3cfb6a557b0844c4745e037bc207f5280d911860",
+        "model_config": "anthropic/fable_51_max",
+        "problems": 61,
+        "attempts_min": 2,
+        "attempts_max": 2
+      },
+      "data_license": "CC-BY-SA-4.0"
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "robloxqa-v2-mc",
+      "score": 0.979333,
+      "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json",
+      "source_id": "roblox-llm-leaderboard",
+      "by": "independent",
+      "date": "2026-09-07",
+      "note": "2938/3000 correct (noAnswer=4). Roblox LLM Leaderboard entry 'Claude Fable 5.1 (Medium)' (https://www.anthropic.com/claude/fable); effort/setting as labelled 'Medium' (the only setting listed for this model); run files claude-fable-5-1_mc_effort-medium.json5 / claude-fable-5-1_effort-medium.json5. Date = leaderboard generatedAt 2026-09-07. Space revision 3fcd29933bf7276ce5470d9de8c235fe5684fc43."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "luau-leetcode-full-pass",
+      "score": 0.831731,
+      "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json",
+      "source_id": "roblox-llm-leaderboard",
+      "by": "independent",
+      "date": "2026-09-07",
+      "note": "fullPass 44+80+49=173/208. Roblox LLM Leaderboard entry 'Claude Fable 5.1 (Medium)' (https://www.anthropic.com/claude/fable); effort/setting as labelled 'Medium' (the only setting listed for this model); run files claude-fable-5-1_mc_effort-medium.json5 / claude-fable-5-1_effort-medium.json5. Date = leaderboard generatedAt 2026-09-07. Space revision 3fcd29933bf7276ce5470d9de8c235fe5684fc43."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "mideind-icelandic-average",
+      "score": 0.708666,
+      "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json",
+      "source_id": "mideind-icelandic-llm-leaderboard",
+      "by": "independent",
+      "date": "2026-09-22",
+      "note": "Mi\u00f0eind Icelandic LLM Leaderboard entry 'Claude Opus 5.5' (anthropic/claude-opus-5-5), thinking='high', gen_kwargs={\"max_tokens\": 32000, \"reasoning_effort\": \"high\"}; highest of the listed settings ['high']. Published 'average' (Knowledge 0.54585, Language Proficiency 0.830779). Date = latest benchmark_evaluated_at. Board generated 2026-09-25T11:19:38Z; Space revision f8e42e15da1b985242bbb29eff139ec62405b53b."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "mideind-icelandic-average",
+      "score": 0.694172,
+      "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json",
+      "source_id": "mideind-icelandic-llm-leaderboard",
+      "by": "independent",
+      "date": "2026-09-07",
+      "note": "Mi\u00f0eind Icelandic LLM Leaderboard entry 'Claude Fable 5.1' (anthropic/claude-fable-5-1), thinking='high', gen_kwargs={\"max_tokens\": 32000, \"reasoning_effort\": \"high\"}; highest of the listed settings ['high']. Published 'average' (Knowledge 0.525292, Language Proficiency 0.820831). Date = latest benchmark_evaluated_at. Board generated 2026-09-25T11:19:38Z; Space revision f8e42e15da1b985242bbb29eff139ec62405b53b."
+    },
+    {
+      "model": "gemini-4-argon",
+      "bench": "lmarena-text",
+      "score": 1525.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "text_style_control, category overall, split latest; exact entry 'gemini-4-argon-high'; 4,932 votes; published 95% interval 1516.4\u20131534.0. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "gemini-4-argon",
+      "bench": "lmarena-webdev",
+      "score": 1679.5,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-01",
+      "note": "webdev, category overall, split latest; exact entry 'gemini-4-argon-high'; 2,422 votes; published 95% interval 1666.2\u20131692.8. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "bench": "lmarena-text",
+      "score": 1483.2,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "text_style_control, category overall, split latest; exact entry 'gpt-6.1-sol-max'; 3,071 votes; published 95% interval 1472.6\u20131493.8. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "bench": "lmarena-vision",
+      "score": 1290.6,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "vision_style_control, category overall, split latest; exact entry 'gpt-6.1-sol-max'; 1,408 votes; published 95% interval 1274.6\u20131306.6. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "bench": "lmarena-webdev",
+      "score": 1757.8,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-01",
+      "note": "webdev, category overall, split latest; exact entry 'gpt-6.1-sol-max'; 1,620 votes; published 95% interval 1741.0\u20131774.6. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "lmarena-text",
+      "score": 1471,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "text_style_control, category overall, split latest; exact entry 'claude-sonnet-5.5-xhigh'; 3,145 votes; published 95% interval 1460.6\u20131481.4. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "lmarena-vision",
+      "score": 1268.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "vision_style_control, category overall, split latest; exact entry 'claude-sonnet-5.5-xhigh'; 1,608 votes; published 95% interval 1253.2\u20131283.5. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "lmarena-webdev",
+      "score": 1786.3,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-01",
+      "note": "webdev, category overall, split latest; exact entry 'claude-sonnet-5.5-xhigh'; 1,531 votes; published 95% interval 1768.1\u20131804.4. Refreshed from pinned October dataset; replaces the older snapshot for this model/task."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "lmarena-text",
+      "score": 1503.7,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "text_style_control, category overall; exact entry 'claude-opus-5.5-high'; 4,552 votes; published 95% interval 1494.6\u20131512.8. Newly available task measurement; highest reviewed reasoning setting in this task. No lower-setting duplication."
+    },
+    {
+      "model": "claude-fable-5-1",
+      "bench": "arena-agent-ips-202610",
+      "score": 0.14310371476177605,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "agent latest overall; exact entry 'Claude Fable 5.1 (Max)'; highest available reasoning effort for this model in this task. Aggregate IPS net improvement, not Elo; 95% CI [0.12415154304102166, 0.16205588648253044]; 15,130 sessions, 1,683,381 observations. October 1, 2026 signal definitions. Lower effort and the five constituent signals are not duplicated."
+    },
+    {
+      "model": "claude-opus-5-5",
+      "bench": "arena-agent-ips-202610",
+      "score": 0.13817012143011934,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "agent latest overall; exact entry 'Claude Opus 5.5 (High)'; highest available reasoning effort for this model in this task. Aggregate IPS net improvement, not Elo; 95% CI [0.11645483256257871, 0.15988541029765996]; 5,359 sessions, 754,031 observations. October 1, 2026 signal definitions. Lower effort and the five constituent signals are not duplicated."
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "bench": "arena-agent-ips-202610",
+      "score": 0.12520807893993158,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "agent latest overall; exact entry 'Claude Sonnet 5.5 (Max)'; highest available reasoning effort for this model in this task. Aggregate IPS net improvement, not Elo; 95% CI [0.09428887464329698, 0.15612728323656616]; 5,219 sessions, 483,211 observations. October 1, 2026 signal definitions. Lower effort and the five constituent signals are not duplicated."
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "bench": "arena-agent-ips-202610",
+      "score": 0.11228181892445037,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "agent latest overall; exact entry 'GPT 6.1 Sol (Max)'; highest available reasoning effort for this model in this task. Aggregate IPS net improvement, not Elo; 95% CI [0.08464406868737293, 0.1399195691615278]; 6,278 sessions, 379,372 observations. October 1, 2026 signal definitions. Lower effort and the five constituent signals are not duplicated."
+    },
+    {
+      "model": "gemini-4-argon",
+      "bench": "arena-agent-ips-202610",
+      "score": 0.07566193515418262,
+      "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+      "source_id": "lmarena-dataset",
+      "by": "independent",
+      "date": "2026-10-02",
+      "note": "agent latest overall; exact entry 'Gemini 4 Argon (High)'; highest available reasoning effort for this model in this task. Aggregate IPS net improvement, not Elo; 95% CI [0.056347909468084184, 0.09497596084028107]; 10,030 sessions, 587,353 observations. October 1, 2026 signal definitions. Lower effort and the five constituent signals are not duplicated."
+    }
+  ]
+}

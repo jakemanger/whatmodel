@@ -4,18 +4,42 @@
 
 # RedPajama-INCITE Base 3B v1
 
-Together · released 2023-05
+Together · released 2023-05 · 2.8B params · apache-2.0
 
-Base model (not -Chat/-Instruct).
+**score 35.0** ±2.4 · #382 of 462 · from 4 benchmark results across 1 source
 
-[Model and usage documentation](https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1)
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source     test                            score  implies  date        weight
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    35.6   2024-11-19   46% ▇▇▇▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    34.5   2024-11-19   27% ▇▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    32.5   2024-11-19   14% ▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    33.6   2024-11-19   10% ▇
+prior      pull toward the middle                   50.0                 3% ▇
+           weighted average                       = 35.0
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
+<pre>
+download       size  score
+4-bit fp16  ~5.69GB   35.0
+</pre>
+
 ```sh
+# 4-bit fp16
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='togethercomputer/RedPajama-INCITE-Base-3B-v1')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/redpajama-incite-base-3b-v1)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/redpajama-incite-base-3b-v1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

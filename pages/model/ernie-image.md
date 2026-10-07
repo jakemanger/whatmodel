@@ -6,7 +6,7 @@
 
 Baidu · released 2026-04 · 8B params · apache-2.0
 
-**score 58.7** ±4.0 · #46 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.3** ±2.8 · #48 of 116 · from 6 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,27 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    59.4   2026-08-25   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 58.7
+<a name="visual-ernie-image"></a>ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval (lab)</a>                   88.6%    59.5   2026-09-25   12% ▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN) (lab)</a>       96.8%    60.4   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN) (lab)</a>          52.1%    57.9   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN) (lab)</a>          55.4%    58.2   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN) (lab)</a>       95.9%    53.4   2026-09-25   10% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  89.4%    59.4   2026-08-25   41% ▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 58.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
-
-<details><summary>Not counted (5)</summary>
-
-<pre>
-source                  test                 score  why
-ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">GenEval</a>              88.6%  too few models have it yet
-ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (EN)</a>     55.4%  too few models have it yet
-ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (CN)</a>  95.9%  too few models have it yet
-ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">LongText-Bench (EN)</a>  96.8%  too few models have it yet
-ERNIE-Image model rep…  <a href="https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md">OneIG-Bench (CN)</a>     52.1%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: ERNIE-Image model repository evaluation tables ([Apache-2.0](../../licenses/visual-ernie-image.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
 
 ## How to run it
 
@@ -46,8 +38,8 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/ernie-imag
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~19.7GB   58.7
-gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   58.7
+bf16 · nvidia only                        ~19.7GB   58.3
+gguf-ud-q4_k_m + Ministral 3B (sd.cpp, …  ~17.1GB   58.3
 </pre>
 
 ```sh

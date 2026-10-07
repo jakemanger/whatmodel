@@ -6,7 +6,7 @@
 
 ESPnet (CMU WAVLab) · released 2024-02 · 1.01B params · cc-by-4.0
 
-**score 51.6** ±4.2 · #66 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 51.7** ±4.2 · #66 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                test                            score  implies  date        weight
 <a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.1%    51.8   2026-03-26   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 51.6
+                      weighted average                       = 51.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.35GB   51.6
+fp32 · nvidia only  ~5.35GB   51.7
 </pre>
 
 ```sh

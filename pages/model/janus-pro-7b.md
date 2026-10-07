@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7B params · deepseek
 
-**score 34.3** ±2.7 · #99 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 33.4** ±2.5 · #103 of 116 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,25 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.9   2026-07-01   68% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    31.2   2026-06-02   29% ▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.6   2026-07-01   54% ▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    30.9   2026-06-02   25% ▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   80.0%    32.5   2025-01-29   10% ▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 84.2%    28.6   2025-01-29    8% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 34.3
+                        weighted average                       = 33.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
-
-<details><summary>Not counted (2)</summary>
-
-<pre>
-source       test       score  why
-DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench</a>  84.2%  too few models have it yet
-DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">GenEval</a>    80.0%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt))</sub>
 
 ## How to run it
 

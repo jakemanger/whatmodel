@@ -11,16 +11,27 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/video_edit/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/vision_style_control/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement.",
+    "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",
     "quote": "Dataset card front matter: license: cc-by-4.0 (not gated)",
     "exact": true
@@ -63,12 +74,13 @@
     "terms_url": "https://epoch.ai/benchmarks/use-this-data",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "attribution": "Epoch AI, Capabilities & Benchmarking (2026), accessed 25 September 2026. Only internal run CSVs; selected settings, rounded results and derived relative scores. External runs excluded.",
     "icon": "epoch.ai",
     "fragments": [
       "chess_puzzles.csv",
       "ebr_bench.csv",
+      "frontiermath_erdos.csv",
       "frontiermath_tier_4_v2.csv",
       "frontiermath_tiers_1_3_v2.csv",
       "furniture_assembly.csv",
@@ -2888,14 +2900,14 @@
     ],
     "license": "MIT",
     "terms_url": "https://raw.githubusercontent.com/spdx/license-list-data/31ba1a50e5397e00a304dbadc76531740e89ee48/text/MIT.txt",
-    "checked": "2026-09-25",
-    "attribution": "ServiceNow-AI. ServiceNow-AI/Apriel-1.6-15b-Thinker model card.\nSource: https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md\nLicence: MIT — https://raw.githubusercontent.com/spdx/license-list-data/31ba1a50e5397e00a304dbadc76531740e89ee48/text/MIT.txt\nChanges: Selected numerical cells transcribed into JSON; percentages divided by100; benchmark names and settings clarified. No model weights, test questions, full chart artwork or model-generated answers redistributed.\nNo endorsement.",
+    "checked": "2026-10-06",
+    "attribution": "ServiceNow-AI. ServiceNow-AI/Apriel-1.6-15b-Thinker model card.\nSource: https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md\nLicence: MIT — https://raw.githubusercontent.com/spdx/license-list-data/31ba1a50e5397e00a304dbadc76531740e89ee48/text/MIT.txt\nChanges: Selected numerical cells transcribed into JSON; percentages divided by100; benchmark names and settings clarified. No model weights, test questions, full chart artwork or model-generated answers redistributed.\nNo endorsement. Added internally evaluated comparison columns from the same five rows; source statement and effort labels preserved.",
     "verdict": "allowed",
     "exact": true,
     "kind": "first-party",
     "icon": "huggingface.co",
     "license_url": "/licenses/cards-final-NOTICE.txt",
-    "quote": "Pinned publisher repository README explicitly declares license: mit. The standard MIT grant expressly covers associated documentation and permits commercial copying/publication/distribution subject to retention of the permission and copyright notices. No different documentation licence or exception was found. No separate root licence file is required to recognize this explicit declaration. Only author-evaluated model results embedded in the README are selected; linked blogs and competitor results are not presumed licensed."
+    "quote": "Pinned publisher repository README explicitly declares license: mit. The standard MIT grant expressly covers associated documentation and permits commercial copying/publication/distribution subject to retention of the permission and copyright notices. No different documentation licence or exception was found. No separate root licence file is required to recognize this explicit declaration. Only author-evaluated model results embedded in the README are selected; linked blogs and competitor results are not presumed licensed. Scope clarification 2026-10-06: the card explicitly states that all benchmarks outside the AA Index v3.0 were evaluated internally. The five already-approved internal benchmark rows also contain original comparison-model runs; those exact columns are now included. This does not approve any copied AA benchmark, index, projected score, or external blog."
   },
   {
     "id": "report-marco-moe-260425578v1",
@@ -7164,16 +7176,17 @@
       "developers.openai.com/api/docs/models/gpt-5.2-pro",
       "developers.openai.com/api/docs/models/gpt-5.4-pro",
       "cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
-      "cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+      "cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+      "developers.openai.com/api/docs/models/gpt-6.1-sol"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-06",
     "exact": true,
     "icon": "openai.com",
-    "attribution": "OpenAI official pricing/docs, observed 2026-09-25",
+    "attribution": "OpenAI official pricing/docs, observed 2026-09-25 GPT-6.1 Sol facts observed 2026-10-06.",
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
   },
   {
@@ -7210,17 +7223,20 @@
       "huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet",
       "huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet",
       "huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet",
-      "huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet"
+      "huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+      "huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet"
     ],
     "exact": true,
     "license": "CC BY-SA 4.0",
     "terms_url": "https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/README.md",
     "license_url": "/licenses/matharena-sharealike-NOTICE.txt",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-07",
     "attribution": "MathArena (Jasper Dekoninck, Nikola Jovanović, Tim Gehrunger, Kári Rögnvaldsson, Ivo Petrov, Chenhao Sun, Martin Vechev; SRI Lab, ETH Zurich), model-output datasets on Hugging Face (huggingface.co/MathArena), CC BY-SA 4.0. Adapted by whatmodel.sh: per-attempt correctness aggregated to per-model mean scores (mean over problems of the per-problem mean over attempts), only complete non-harness runs, highest configured reasoning effort per model, catalogue IDs mapped. No problem statements, model answers or transcripts redistributed. No endorsement.",
     "quote": "Each pinned dataset card declares YAML 'license: cc-by-sa-4.0' and states under 'Licensing Information': 'This dataset is licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Please abide by the license when using the provided data.'",
-    "scope": "Only the *_outputs datasets listed in match (ArXivMath Dec 2025-Jun 2026, BrokenArXiv Feb-Jun 2026, ArXivLean Mar 2026), each CC BY-SA 4.0 on its own card. MathArena's competition datasets (AIME, HMMT, USAMO, BRUMO, SMT, CMIMC, Kangaroo, Putnam, IMO/IMC, Apex, Project Euler and their _outputs) are CC BY-NC-SA 4.0 and are excluded. The MIT licence of the eth-sri/matharena GitHub harness is not relied on for the data; configs there are cited only for run settings.",
+    "scope": "Only the *_outputs datasets listed in match (ArXivMath Dec 2025-Aug 2026, BrokenArXiv Feb-Aug 2026, ArXivLean Mar and Jun 2026), each CC BY-SA 4.0 on its own card. MathArena's competition datasets (AIME, HMMT, USAMO, BRUMO, SMT, CMIMC, Kangaroo, Putnam, IMO/IMC, Apex, Project Euler and their _outputs) are CC BY-NC-SA 4.0 and are excluded. The MIT licence of the eth-sri/matharena GitHub harness is not relied on for the data; configs there are cited only for run settings.",
     "adapter_license": "CC-BY-SA-4.0",
     "adapter_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "notice_file": "/licenses/matharena-sharealike-NOTICE.txt",
@@ -7414,14 +7430,15 @@
     "name": "Roblox LLM Leaderboard (Torpedo Software): RobloxQA v2.0 and Luau Leetcode",
     "kind": "leaderboard",
     "match": [
-      "huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json"
+      "huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json",
+      "huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json"
     ],
     "exact": true,
     "license": "MIT",
     "terms_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/README.md",
     "license_url": "/licenses/roblox-llm-leaderboard-MIT.txt",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-07",
     "attribution": "Torpedo Software (boatbomber), Roblox LLM Leaderboard. MIT (Space card). Selected published raw counts converted to fractions; model IDs mapped; no endorsement.",
     "quote": "Space card YAML at the pinned revision: `license: mit`. README: 'Every number on the board is transcribed from a run file's own summary; nothing is typed by hand. The build cross-checks each run against the harness cache ... every model must have been asked the same questions.'",
     "icon": "huggingface.co"
@@ -7449,14 +7466,15 @@
     "name": "Miðeind Icelandic LLM Leaderboard",
     "kind": "leaderboard",
     "match": [
-      "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json"
+      "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json",
+      "huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json"
     ],
     "exact": true,
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/README.md",
     "license_url": "/licenses/mideind-icelandic-llm-leaderboard-CC-BY-4.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-26",
+    "checked": "2026-10-07",
     "attribution": "Miðeind ehf., Icelandic LLM Leaderboard (huggingface.co/spaces/mideind/icelandic-llm-leaderboard), CC BY 4.0. Adapted by whatmodel.sh: selected the published 'average' per model at its highest listed reasoning setting and mapped model IDs. No endorsement.",
     "quote": "README at the pinned revision: 'Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reuse freely with attribution.' Space card YAML: `license: cc-by-4.0`. Built and maintained by Miðeind.",
     "icon": "huggingface.co"
@@ -9993,10 +10011,10 @@
     "terms_url": "https://arxiv.org/abs/2310.06825v1",
     "license_url": "/licenses/paper-2310.06825v1-CC-BY-4.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-28",
+    "checked": "2026-10-06",
     "attribution": "Albert Q. Jiang, Alexandre Sablayrolles, Arthur Mensch et al. (2023). Mistral 7B. arXiv:2310.06825v1. https://arxiv.org/abs/2310.06825v1\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.",
     "quote": "The arXiv abstract page for 2310.06825v1 links the licence 'http://creativecommons.org/licenses/by/4.0/' in its licence field, and the HTML version header states 'License: CC BY 4.0'.",
-    "scope": "Table 2 rows 'LLaMA 2 7B' (pretrained), 'LLaMA 2 13B' (pretrained) and 'Mistral 7B' (pretrained); the paper says 'All models were re-evaluated on all metrics with our evaluation pipeline'. Columns MMLU (5-shot), HellaSwag, WinoGrande, PIQA, ARC-e, ARC-c (0-shot), TriviaQA (5-shot), HumanEval (0-shot), MBPP (3-shot), MATH (4-shot, maj@4), GSM8K (8-shot, maj@8). Code-Llama 7B row (fine-tuned, outside this batch), NaturalQuestions column, Table 3 (chat models) and figures not imported.",
+    "scope": "Table 2: authors' own evaluations of LLaMA 2 7B/13B, Mistral 7B and the code-pretrained Code Llama 7B base checkpoint (not Instruct/Python). Columns MMLU, HellaSwag, WinoGrande, PIQA, ARC-e/c, Natural Questions, TriviaQA, HumanEval, MBPP, MATH and GSM8K; benchmark settings remain as reported. Chat-model Table 3 and figures excluded. Code Llama and Natural Questions scope reviewed 2026-10-06.",
     "icon": "arxiv.org"
   },
   {
@@ -10731,12 +10749,12 @@
     "license": "CC-BY-4.0",
     "terms_url": "https://proceedings.mlr.press/pmlr-license-agreement.html",
     "verdict": "allowed",
-    "checked": "2026-09-29",
+    "checked": "2026-10-06",
     "license_url": "/licenses/speech-gradtts-icml2021.txt",
     "icon": "arxiv.org",
     "quote": "PMLR publication agreement paragraph 2 grants CC BY 4.0 in the published article; paragraph 3 requires its publication link. §4.1 describes original listening evaluations for all systems. Scope: PMLR paper, not the arXiv version.",
-    "scope": "Only Grad-TTS-10 and explicitly identified xcmyz FastSpeech implementation, both using HiFi-GAN, Table 2. No aggregate across different diffusion iteration counts. Glow-TTS/Tacotron2 baselines held back because exact checkpoint/vocoder match to existing entries is uncertain.",
-    "attribution": "Vadim Popov, Ivan Vovk, Vladimir Gogoryan, Tasnima Sadekova and Mikhail Kudinov. Grad-TTS: A Diffusion Probabilistic Model for Text-to-Speech. ICML 2021, PMLR 139. https://proceedings.mlr.press/v139/popov21a.html . Table 2 selected means transformed as (MOS−1)/4. No endorsement."
+    "scope": "Original Table 2 listening-study systems with HiFi-GAN. Grad-TTS-10, xcmyz FastSpeech, and the study-specific Glow-TTS and Tacotron2 + HiFi-GAN systems are separate identities. No score assigned to Coqui or NVIDIA WaveGlow distributions. No extra Grad-TTS iteration settings or human ground truth counted as additional models.",
+    "attribution": "Vadim Popov, Ivan Vovk, Vladimir Gogoryan, Tasnima Sadekova and Mikhail Kudinov. Grad-TTS: A Diffusion Probabilistic Model for Text-to-Speech. ICML 2021, PMLR 139. https://proceedings.mlr.press/v139/popov21a.html . Table 2 selected means transformed as (MOS−1)/4. No endorsement. Added the two original baseline systems as explicitly study-specific comparison entries, without claiming exact downloadable checkpoint equivalence."
   },
   {
     "id": "speech-versa-toolkit-ccby",
@@ -11166,7 +11184,7 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "terms_url": "https://arxiv.org/abs/2601.20510v1",
     "quote": "arXiv abs page for 2601.20510v1 links http://creativecommons.org/licenses/by/4.0/; HTML header reads 'License: CC BY 4.0 arXiv:2601.20510v1 [cs.SD] 28 Jan 2026'.",
-    "attribution": "Robin Singh, Aditya Yogesh Nair, Fabio Palumbo, Florian Barbaro, Anna Dyka, Lohith Rachakonda (UncovAI); 'Audio Deepfake Detection in the Age of Advanced Text-to-Speech models'; arXiv:2601.20510v1, CC BY 4.0. Changes: Table 2 WER values for the catalogued Maya1 and MeloTTS rows transcribed as printed (already fractions). No audio used. No endorsement.",
+    "attribution": "Robin Singh, Aditya Yogesh Nair, Fabio Palumbo, Florian Barbaro, Anna Dyka, Lohith Rachakonda (UncovAI); 'Audio Deepfake Detection in the Age of Advanced Text-to-Speech models'; arXiv:2601.20510v1, CC BY 4.0. Changes: Table 2 WER values for the catalogued Maya1 and MeloTTS rows transcribed as printed (already fractions). No audio used. No endorsement. Added the previously uncatalogued Dia2 2B row from the same original Table 2. Exact 2B identity confirmed in section 3.1; randomized multi-speaker generation, so its SIM is intentionally absent.",
     "verdict": "allowed",
     "checked": "2026-10-06"
   },
@@ -11186,5 +11204,239 @@
     "scope": "Only the authors' own manual evaluation (Sec. 4: three ratings per video from graduate students in the authors' laboratory, 619 prompts) as printed in the Figure 20 caption (A6.F20). Radar/leaderboard figures (no printed numbers), automatic metrics (FID/FVD/CLIPScore/UMT) and fine-grained alignment are not imported.",
     "verdict": "allowed",
     "checked": "2026-10-06"
+  },
+  {
+    "id": "paper-mixtral-2401.04088v1",
+    "name": "Mixtral of Experts — base-model evaluations",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2401.04088v1",
+    "license_url": "/licenses/CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "match": [
+      "arxiv.org/html/2401.04088v1"
+    ],
+    "exact": true,
+    "icon": "arxiv.org",
+    "attribution": "Jiang et al., Mixtral of Experts (2024), arXiv:2401.04088v1, Table 2. CC BY 4.0. Percentages converted to fractions; derived scores are our transformation. No endorsement.",
+    "quote": "Version v1 links to CC BY 4.0. Table 2 reports the authors’ own reruns of all six base models; copied leaderboard screenshots and differently configured Table 3 excluded."
+  },
+  {
+    "id": "paper-gemma-2403.08295v4",
+    "name": "Gemma report — original evaluations",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2403.08295v4",
+    "license_url": "/licenses/CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "match": [
+      "arxiv.org/html/2403.08295v4"
+    ],
+    "exact": true,
+    "icon": "arxiv.org",
+    "attribution": "Gemma Team et al., Gemma: Open Models Based on Gemini Research and Technology (2024), arXiv:2403.08295v4, Table 6. CC BY 4.0. Selected original evaluations converted from percentages to fractions; no endorsement.",
+    "quote": "CC BY 4.0 on exact arXiv v4. Table 6 marks author reruns with an asterisk. Only both Gemma base checkpoints and the starred Mistral 7B cells are used; copied baselines excluded."
+  },
+  {
+    "id": "paper-tulu2-2311.10702v2",
+    "name": "Tulu 2 — base and instruction-tuned evaluations",
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://arxiv.org/abs/2311.10702v2",
+    "license_url": "/licenses/CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "match": [
+      "arxiv.org/html/2311.10702v2"
+    ],
+    "exact": true,
+    "icon": "arxiv.org",
+    "attribution": "Ivison et al., Camels in a Changing Climate: Enhancing LM Adaptation with Tulu 2 (2023), arXiv:2311.10702v2. CC BY 4.0. Selected core capability results from Tables 1, 5 and 6; percentages converted to fractions and repeated cells deduplicated. No endorsement.",
+    "quote": "Exact arXiv v2 is CC BY 4.0. Section 3.1 describes the authors evaluation framework, including dated GPT snapshots; Tables 1, 5 and 6 compare their own base and instruction-tuned runs. Imported MMLU, GSM8K, BBH, TyDiQA GP and CodexEval only. QLoRA, safety metrics and external leaderboards excluded."
+  },
+  {
+    "id": "first-party-anthropic-models",
+    "name": "Anthropic official model documentation",
+    "kind": "first-party",
+    "license": "Factual list price and context specification (not licensed content)",
+    "terms_url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "match": [
+      "platform.claude.com/docs/en/models/sonnet-5-5/overview"
+    ],
+    "exact": true,
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "icon": "anthropic.com",
+    "attribution": "Anthropic official model documentation, observed 2026-10-06.",
+    "quote": "Owner policy 2026-09-25: manually record the vendor’s own price and context limits as facts with observation date; benchmark numbers are excluded."
+  },
+  {
+    "id": "stablelm-original-eval-json",
+    "name": "Stability AI — original StableLM zero-shot evaluation outputs",
+    "match": [
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-12b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-6.7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/tiiuae_falcon-7b.json",
+      "github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/LICENSE",
+    "license_url": "/licenses/stablelm-original-eval-json-Apache-2.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "quote": "Repository root Apache License 2.0 grants reproduction, derivative works and distribution. Scope is the committed evals/*.json output data, not the separately licensed model weights or a hosted leaderboard. README states these evaluations were performed with lm-evaluation-harness and links these full run outputs.",
+    "attribution": "Stability AI and the StableLM contributors. Original zero-shot evaluation JSONs, revision 93eea082c49c61e64da1a0e1092fe82cc74b46d3. Selected accuracy/mc2 fields retained as fractions; exact model config and task version recorded. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "copen-emnlp2022-zero-shot",
+    "name": "COPEN — EMNLP 2022 original zero-shot evaluations",
+    "match": [
+      "aclanthology.org/2022.emnlp-main.335.pdf"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "terms_url": "https://aclanthology.org/faq/#what-is-the-copyright-for-materials-in-the-acl-anthology",
+    "license_url": "/licenses/copen-emnlp2022-zero-shot-CC-BY-4.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "quote": "ACL publication policy: Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License. This is the ACL-owned 2022 paper; Tables 7 and 11 identify original evaluated checkpoints and original zero-shot measurements.",
+    "attribution": "Hao Peng et al. COPEN: Probing Conceptual Knowledge in Pre-trained Language Models. EMNLP 2022, pp. 5015–5035, doi:10.18653/v1/2022.emnlp-main.335. CC BY 4.0. Selected Table 11 full-prompt (All) zero-shot measurements divided by 100; no probe-trained/fine-tuned rows or best-prompt selection. No endorsement.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "squeezebits-exaone45-bf16",
+    "name": "SqueezeBits — original EXAONE 4.5 BF16 evaluations",
+    "match": [
+      "github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md"
+    ],
+    "exact": true,
+    "kind": "dataset",
+    "license": "MIT",
+    "terms_url": "https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/LICENSE",
+    "license_url": "/licenses/squeezebits-exaone45-bf16-MIT.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "quote": "MIT permission to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the Software and associated documentation. README is committed documentation with original evaluation commands and results. Only SqueezeBits own BF16 runs are selected; no LG report values, no weight redistribution.",
+    "attribution": "SqueezeBits and FlatQuant contributors, revision 5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46. Selected original full-precision quality measurements; percentages divided by 100. Quantized variants are not counted as independent models to force calibration. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "magpie-v2607-card-evaluations",
+    "name": "NVIDIA MagpieTTS v2607 — original multilingual evaluation",
+    "match": [
+      "huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "NVIDIA Open Model License",
+    "license_url": "/licenses/magpie-v2607-card-evaluations-NVIDIA.txt",
+    "terms_url": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "icon": "huggingface.co",
+    "quote": "Section 1.3 includes documentation in Model; section 2.2 grants public display, reproduction, use, derivative works, sale and distribution. Section 3.1 requires the full agreement and NVIDIA attribution. Card explicitly declares this agreement. Only own-model numerical findings from the v2607 column; no separate dataset/audio material or v2602 checkpoint values.",
+    "attribution": "NVIDIA Corporation. MagpieTTS Multilingual v2607 model card at 19806879b16d3f2ccf28fb112b1bcd16a3c7923e. Licensed by NVIDIA Corporation under the NVIDIA Open Model License. CER percentages converted to fractions; pred-context speaker similarity retained. One original multilingual study, not 26 independent studies. No endorsement."
+  },
+  {
+    "id": "redpajama-2024-original-zero-shot",
+    "name": "RedPajama — original zero-shot 3B comparison",
+    "match": [
+      "arxiv.org/html/2411.12372v1"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2411.12372v1",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "icon": "arxiv.org",
+    "quote": "The exact arXiv version explicitly declares CC BY 4.0. Selected original numerical evaluations only; no benchmark input material or external copied scores.",
+    "attribution": "Maurice Weber, Daniel Y. Fu, Quentin Anthony et al. RedPajama: an Open Dataset for Training Large Language Models. arXiv:2411.12372v1, 2024. CC BY 4.0. Selected full-prompt lm-evaluation-harness columns retained as fractions, no average or HELM duplicate. No endorsement."
+  },
+  {
+    "id": "kandinsky3-original-human-comparison",
+    "name": "Kandinsky 3.0 — original human comparisons",
+    "match": [
+      "arxiv.org/html/2312.03511v2"
+    ],
+    "exact": true,
+    "kind": "paper",
+    "license": "CC BY 4.0",
+    "license_url": "/licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt",
+    "terms_url": "https://arxiv.org/abs/2312.03511v2",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "icon": "arxiv.org",
+    "quote": "The exact arXiv version explicitly declares CC BY 4.0. Selected original numerical evaluations only; no benchmark input material or external copied scores.",
+    "attribution": "Vladimir Arkhipkin, Andrei Filatov, Viacheslav Vasilev, Anastasia Maltseva, Said Azizov, Igor Pavlov, Julia Agafonova, Andrey Kuznetsov and Denis Dimitrov. Kandinsky 3.0 Technical Report. arXiv:2312.03511v2 (2023), CC BY 4.0. Figures 10, 13 and 16: printed outright-win fractions transcribed unchanged; tied/both/neither votes remain excluded from wins. No chart digitization or fabricated reference-model self-comparison. No endorsement."
+  },
+  {
+    "id": "kandinsky21-card-original-fid",
+    "name": "Kandinsky 2.1 card — original COCO-30k FID",
+    "match": [
+      "huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md"
+    ],
+    "exact": true,
+    "kind": "first-party",
+    "license": "Apache-2.0",
+    "license_url": "/licenses/kandinsky21-card-original-fid-Apache-2.0.txt",
+    "terms_url": "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-06",
+    "icon": "huggingface.co",
+    "quote": "Pinned README explicitly declares license: apache-2.0 and says We quantitatively measure the performance of Kandinsky 2.1 on the COCO_30k dataset, in zero-shot mode. Only its own 8.21 FID retained; competitor and older-version comparison cells not presumed to be new measurements.",
+    "attribution": "Kandinsky-community / AI Forever. Original Kandinsky 2.1 zero-shot COCO-30k FID, Apache-2.0 model-card documentation. Value retained as 8.21 FID; lower is better, no percentage conversion. No endorsement."
+  },
+  {
+    "id": "terminal-bench-leaderboard-submissions",
+    "name": "Terminal-Bench 4.0 official leaderboard submissions",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions"
+    ],
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+    "license_url": "/licenses/terminal-bench-leaderboard-submissions-Apache-2.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "attribution": "Terminal-Bench maintainers (harbor-framework/terminal-bench), official Terminal-Bench 4.0 leaderboard submission files, Apache-2.0. Selected published accuracy per submission; model IDs mapped; percentages converted to fractions. No endorsement.",
+    "quote": "Root LICENSE at the pinned commit is the Apache License, Version 2.0; the leaderboard/submissions files are in the same repository with no nested licence override.",
+    "icon": "github.com"
+  },
+  {
+    "id": "zapier-automationbench-readme",
+    "name": "Zapier AutomationBench README: public-set pass rates",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "terms_url": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/LICENSE",
+    "license_url": "/licenses/zapier-automationbench-readme-MIT.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "attribution": "Zapier, Inc., AutomationBench (github.com/zapier/AutomationBench), MIT. Selected pass rates from the README's public 600-task table; model IDs mapped; percentages converted to fractions. No endorsement.",
+    "quote": "LICENSE at the pinned commit: MIT License, Copyright (c) 2026 Zapier, Inc. Its scope note: 'All benchmark code, test frameworks, simulation logic, mock data generators, configuration files, documentation, and other materials authored by Zapier are original works of authorship and are licensed to you under the MIT License.'",
+    "icon": "github.com"
   }
 ]

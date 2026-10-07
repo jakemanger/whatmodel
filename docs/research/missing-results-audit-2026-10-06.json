@@ -1,0 +1,1250 @@
+{
+  "date": "2026-10-06",
+  "scope": "Follow-up on all 76 models unscored at the start of this pass; bounded source review, not an assertion that all possible publications have been exhausted.",
+  "before": {
+    "models": 1282,
+    "results": 9782,
+    "unscored": 76,
+    "status_counts": {
+      "no-results": 55,
+      "raw-only": 21
+    }
+  },
+  "after": {
+    "models": 1285,
+    "results": 10058,
+    "unscored": 63,
+    "status_counts": {
+      "main": 1194,
+      "no-results": 42,
+      "raw-only": 21,
+      "separate-comparison": 28
+    }
+  },
+  "added_measurements": 276,
+  "added_models": [
+    "dia2-2b",
+    "glow-tts-hifigan-gradtts-study",
+    "tacotron2-hifigan-gradtts-study"
+  ],
+  "seed_sha256": {
+    "batch1": "0899b35a7ac20789a80e77b5acee5c17d7bdd05bcf2ef89696c7717a4d75dbca",
+    "batch2": "66fffc3c47d232a3d36c95440821ef57387a838e4ee0122dbe54b100b116fd0b",
+    "batch3": "952ac24e201901e9567a6d7c55f1747a008e108c0ec85c4709bf8f1dda569f55",
+    "batch4": "83847661d473b64d57406cdba42bdcbc9ad8d3eebf1f72f2cdf5c3d0e9cedda5"
+  },
+  "stablelm_input_files": [
+    {
+      "path": "evals/stablelm-base-alpha-3b.json",
+      "sha256": "79293e7e7b7351ad4d16eb4ed12f6b94b653d4dffe32a57ca251fa589a03c881",
+      "model": "stablelm-base-alpha-3b"
+    },
+    {
+      "path": "evals/stablelm-base-alpha-7b.json",
+      "sha256": "dac82b4480f8ce4d6945f8961c92a0de7da56193ce43675425512d30b6433f92",
+      "model": "stablelm-base-alpha-7b"
+    },
+    {
+      "path": "evals/stablelm-3b-4e1t.json",
+      "sha256": "5250b9bdf19ebdef642a862bb857079d0206ee6fdee4daa829c076df8c194c75",
+      "model": "stablelm-3b-4e1t"
+    },
+    {
+      "path": "evals/external/EleutherAI_gpt-j-6B.json",
+      "sha256": "383453c60c9c6ec91818db7c77f947b76b260c073ac93a4cd9eb3f51eb084538",
+      "model": "gpt-j-6b"
+    },
+    {
+      "path": "evals/external/EleutherAI_gpt-neox-20B.json",
+      "sha256": "370e968b82793c94f079e567192520d88fe1cfdd98a3388dab949e9019c48401",
+      "model": "gpt-neox-20b"
+    },
+    {
+      "path": "evals/external/EleutherAI_pythia-12b.json",
+      "sha256": "d4223308924a1166c56f762c712aff8a85826db3496931b8641ef6593044f733",
+      "model": "pythia-12b"
+    },
+    {
+      "path": "evals/external/EleutherAI_pythia-6.9b.json",
+      "sha256": "6f206d1a7fc0a560d2be6acb240a920301fa7c208eba1db37b1c79a94f459e48",
+      "model": "pythia-6-9b"
+    },
+    {
+      "path": "evals/external/bigscience-bloom-3b.json",
+      "sha256": "417728861c4c84d51b645a82266908292a4e8b76ce68870484924e56ad99318c",
+      "model": "bloom-3b"
+    },
+    {
+      "path": "evals/external/bigscience-bloom-7b1.json",
+      "sha256": "bae36b4385ed883b0afb880c28c7aa884ac163fbd831d6ffefd545580201aef9",
+      "model": "bloom-7b1"
+    },
+    {
+      "path": "evals/external/facebook-opt-2.7b.json",
+      "sha256": "5e66686763edc9a39e8ec1912a2f81008781609fa5228d56328bf19f67fb3ace",
+      "model": "opt-2-7b"
+    },
+    {
+      "path": "evals/external/facebook-opt-6.7b.json",
+      "sha256": "18458c67fb89203e2eba950f1724e8387b0774ba988dd8e64b1e5ca61b0e728c",
+      "model": "opt-6-7b"
+    },
+    {
+      "path": "evals/external/meta-llama-Llama-2-13b-hf.json",
+      "sha256": "095facecc5d54e3d44372420b0ea448d5611b112aa5fd56540160b08bfc34d8a",
+      "model": "llama-2-13b"
+    },
+    {
+      "path": "evals/external/meta-llama-Llama-2-7b.json",
+      "sha256": "cda7d05fb96d766cfdf4176128169c7ac52c60a1e9f06b4b255d29e8983e6705",
+      "model": "llama-2-7b"
+    },
+    {
+      "path": "evals/external/microsoft-phi-1_5.json",
+      "sha256": "8d3bfaa44215b09007de1188e2d3741d40968f7707af22c978ae9aa42aa03aa2",
+      "model": "phi-1-5"
+    },
+    {
+      "path": "evals/external/tiiuae_falcon-7b.json",
+      "sha256": "d7c84837c4c65776e5d204b5da746ce968665a709d14b3bd3ad5e95be922f1ca",
+      "model": "falcon-7b"
+    },
+    {
+      "path": "evals/external/togethercomputer-RedPajama-INCITE-7B-Base2.json",
+      "sha256": "b1a10c86ff333d9b1bc619b7db25fb3063265c3282d80b7f7b244e810ea6a88b",
+      "model": "redpajama-incite-7b-base"
+    }
+  ],
+  "entries": [
+    {
+      "id": "grok-build-0-1",
+      "category": "llm",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact Grok Build 0.1 measurement established. Current Arena/evaluator aliases cannot be assumed to name this model.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "cartesia-sonic-3-6",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "gemini-3-8-flash-tts",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "gemini-3-8-flash-lite-tts",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "elevenlabs-v3-conversational",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "elevenlabs-turbo-v2-5",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://github.com/VapiAI/humanness-index/blob/e2b8f8653ed491a9f6038de98d6ef999c2729743/src/server/seed-standings.json"
+      ],
+      "finding": "Historical Vapi June export is licensed, but the exact retained Turbo v2.5 row lacks three matched models in its original evaluator series. Newer Bradley–Terry ratings are a different protocol; do not pool them or count repeated snapshots as independent tests.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "minimax-speech-2-6-hd",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "smallest-lightning-v3-1-pro",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "hume-octave-2",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://benchmarks.speko.ai/tts/"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate Speko leaderboard lists the exact recent model, but no explicit commercial numerical reuse licence was established. Its values were not copied. Earlier product generations are not equivalent.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "azure-hd-2-5",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "amazon-polly-generative",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "openaudio-s1",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 4,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2603.08823v2"
+      ],
+      "finding": "Original Fish S2 paper results cover S1 and S2, but no third exact original run was established for these series. Other comparison cells require checking whether they were rerun or copied.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "magpie-tts-multilingual-357m",
+      "category": "tts",
+      "before": "no-results",
+      "after": "raw-only",
+      "observations": 26,
+      "added_measurements": 26,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md"
+      ],
+      "finding": "Added all 26 v2607 own-model CER and speaker-similarity cells in the current licensed card. Earlier v2602 values describe a different checkpoint. Each language/metric series still has only the current model.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "maya1",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "main",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/maya-research/maya1/blob/21c682a0afef8c13a89b2512733c8bf5f0c52eb7/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2601.20510v1"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "breeze-tts-2",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/BreezeBlue/Breeze-TTS-2/blob/3e28c5151381a722f1d8661b4118c298caa77aa4/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "mai-transcribe-2",
+      "category": "stt",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://research.withdavid.ai/blog/dai-asr-i18n",
+        "https://github.com/withdavid-ai/dai-asr-i18n"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "DAI-ASR-I18N reports this exact model, but the MIT repository grants its code, not the separate live article/results. No licensed committed result artifact established.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "gladia-solaria-3",
+      "category": "stt",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [],
+      "finding": "Reviewed provider/source material did not establish an open reusable exact Solaria 3 measurement. Earlier Solaria generations are not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "ltx-2-5",
+      "category": "video",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/Lightricks/LTX-2.5/blob/2356ce76915d6c48d313d7e8b25900e1dd3abaa8/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed cards and visual-gap source reports. Common alternatives evaluate newer SVD-XT 1.1, fine-tuned or modified pipelines, or lack a numerical reuse grant.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "command-a-plus",
+      "category": "llm",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16/blob/5fb6fde5fd12ff89356aae552e11883bc49f069b/README.md",
+        "https://github.com/tinybirdco/llm-benchmark"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Official card has no numeric table. The candidate Tinybird SQL repository has no verified licence for its hosted result data; no numbers copied from that leaderboard.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "ernie-4-5-300b-a47b",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 18,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT/blob/47bbaf1c9e356313c3cb2ded9078a494fb152f0e/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md"
+      ],
+      "finding": "Own post-trained ERNIE chart results retained. PT denotes the PyTorch distribution here; existing identity review resolves the contradictory Pretraining cell using prose and the GitHub matrix. Do not relabel it as a base checkpoint. No third exact rerun established.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "ling-3-0-flash",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 15,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/ef06d91fe382109ae82647da88ff99b0f11745b0/README.md"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "devstral-small-2",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 3,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "exaone-4-0-1-2b",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B/blob/3abf2810673c7c0778df64a73c2d52eab32d91c4/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://aclanthology.org/2026.findings-acl.324.pdf"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "exaone-4-5-33b",
+      "category": "llm",
+      "before": "no-results",
+      "after": "raw-only",
+      "observations": 3,
+      "added_measurements": 3,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md"
+      ],
+      "finding": "Three original independent SqueezeBits BF16 measurements were added under MIT. One full-precision model cannot calibrate the source. Quantized variants are not extra independent models. The separate LG report/model licence does not permit the same reuse.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "nemotron-3-nano-4b",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 6,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "lfm2-5-8b-a1b",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 7,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "apriel-1-6-15b-thinker",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "main",
+      "observations": 5,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "k2-horizon-7b",
+      "category": "llm",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 7,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/IFM/K2-Horizon-7B/blob/3b6ae394c1b863c27a306d168b25555837955192/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/IFM/K2-Horizon-7B/blob/036114ce8d46c32b24c15423211069abb9c5d25e/README.md"
+      ],
+      "finding": "Current card adds an anti-doom-loop FTPO release and a before/after table. The catalogue and earlier seven results describe the September release; equivalence of the current FTPO checkpoint and existing GGUF downloads was not established. The new numbers were held instead of averaging different checkpoints.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "ernie-image-turbo",
+      "category": "image",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 5,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/baidu/ERNIE-Image-Turbo/blob/bc68c81e2a1730a394d5fc9fae70713dee940140/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/baidu/ERNIE-Image/blob/5346b31d68c9c23758ba56ef8be5e9dc174c7f99/README.md"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "llada-image",
+      "category": "image",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 2,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/inclusionAI/LLaDA-Image/blob/e4e2703f410f7ddb6ee8d6b09dac6a8ec5093039/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2609.03796v1#S5.T7",
+        "https://arxiv.org/html/2609.03796v1#S5.T8"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "llada-image-turbo",
+      "category": "image",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 2,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo/blob/f4afc52d925bbac4e22a1c947111fc1f127e37e5/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2609.03796v1#S5.T7",
+        "https://arxiv.org/html/2609.03796v1#S5.T8"
+      ],
+      "finding": "Existing own-model measurements retained. Reviewed card/paper comparison columns do not establish at least three exact, original, licensed runs for this evaluator and protocol; competitor figures copied from other evaluators were excluded.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "gpt-1",
+      "category": "llm",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/openai-community/openai-gpt/blob/1e0d4f3028acbffb47fe933cea64619c5ec1a002/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Original GPT paper/task tables primarily describe task-specific fine-tuned systems. They do not automatically measure the un-fine-tuned original GPT checkpoint; no reusable exact base-checkpoint series established.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "gpt-neo-125m",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 3,
+      "added_measurements": 3,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/EleutherAI/gpt-neo-125m/blob/21def0189f5705e2521767faed922f1f15e7d7db/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://aclanthology.org/2022.emnlp-main.335.pdf"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "t5-small",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 3,
+      "added_measurements": 3,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/google-t5/t5-small/blob/df1b051c49625cf57a3d0d8d3863ed4d13564fe4/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://aclanthology.org/2022.emnlp-main.335.pdf"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "t5-base",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 3,
+      "added_measurements": 3,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/google-t5/t5-base/blob/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://aclanthology.org/2022.emnlp-main.335.pdf"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "t5-large",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 3,
+      "added_measurements": 3,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/google-t5/t5-large/blob/150ebc2c4b72291e770f58e6057481c8d2ed331a/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://aclanthology.org/2022.emnlp-main.335.pdf"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "olmo-7b-twin-2t",
+      "category": "llm",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/blob/838af31020e1ebe5d627c9888e090b1fe4d2576e/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The card carries OLMo family evaluations that do not identify the Twin-2T weights as the tested checkpoint. No equivalent-checkpoint assumption used.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "falcon-40b",
+      "category": "llm",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/tiiuae/falcon-40b/blob/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/README.md",
+        "https://arxiv.org/abs/2311.16867v2",
+        "https://arxiv.org/abs/2306.01116v1"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Official card points to the Falcon/RefinedWeb reports; the checked arXiv report grants non-exclusive distribution, not open commercial reuse of its tables. HF leaderboard results need their own data licence.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "stablelm-base-alpha-3b",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 11,
+      "added_measurements": 11,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/stabilityai/stablelm-base-alpha-3b/blob/819657db42861818efac86e8ca60f673fa912ef8/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-3b.json"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "stablelm-base-alpha-7b",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 11,
+      "added_measurements": 11,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/stabilityai/stablelm-base-alpha-7b/blob/1d43a3b40d7d708d8084d07dfae0c4e9fd95c04f/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-base-alpha-7b.json"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "stablelm-3b-4e1t",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 10,
+      "added_measurements": 10,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/stabilityai/stablelm-3b-4e1t/blob/fa4a6a92fca83c3b4223a3c9bf792887090ebfba/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "redpajama-incite-base-3b-v1",
+      "category": "llm",
+      "before": "no-results",
+      "after": "main",
+      "observations": 4,
+      "added_measurements": 4,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/blob/094fbdd0c911feb485ce55de1952ab2e75277e1e/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2411.12372v1"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "jasper-10x5-nvidia-dle",
+      "category": "stt",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 2,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/Jasper/README.md"
+      ],
+      "finding": "NVIDIA original greedy-decoding LibriSpeech WERs retained. Other training recipes or language-model-decoded Jasper checkpoints are not extra runs of this exact DLE model.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "quartznet-15x5-nvidia-dle",
+      "category": "stt",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 2,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechRecognition/QuartzNet/README.md"
+      ],
+      "finding": "NVIDIA original DLE greedy-decoding WERs retained. No third original matching model/protocol or exact independent checkpoint bridge established.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "kandinsky-2-1",
+      "category": "image",
+      "before": "no-results",
+      "after": "raw-only",
+      "observations": 1,
+      "added_measurements": 1,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://huggingface.co/kandinsky-community/kandinsky-2-1/blob/04b366659663bf60deacb96fd3e38f1cb39a3be4/README.md"
+      ],
+      "finding": "Added own zero-shot COCO-30k FID, in original distance units. The comparison table does not establish all other rows as newly run original measurements, so they were not imported as calibration anchors.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "kandinsky-2-2",
+      "category": "image",
+      "before": "no-results",
+      "after": "main",
+      "observations": 2,
+      "added_measurements": 2,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/kandinsky-community/kandinsky-2-2-decoder/blob/9ae140d347fed8ce6e8bb3005dcc1f48543bb8e3/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2312.03511v2"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored in the main category comparison.",
+      "next_step": null
+    },
+    {
+      "id": "kandinsky-3",
+      "category": "image",
+      "before": "no-results",
+      "after": "raw-only",
+      "observations": 6,
+      "added_measurements": 6,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md"
+      ],
+      "existing_evidence_sources": [
+        "https://arxiv.org/html/2312.03511v2"
+      ],
+      "finding": "Added six original pairwise overall win fractions. Competitors can be compared against their common Kandinsky 3 reference, but Kandinsky 3 has no measured self-win result. No 50% reference score was invented.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "stable-video-diffusion",
+      "category": "video",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/blob/9cf024d5bfa8f56622af86c884f26a52f6676f2e/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed cards and visual-gap source reports. Common alternatives evaluate newer SVD-XT 1.1, fine-tuned or modified pipelines, or lack a numerical reuse grant.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "stable-video-diffusion-xt",
+      "category": "video",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/blob/9e43909513c6714f1bc78bcb44d96e733cd242aa/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed cards and visual-gap source reports. Common alternatives evaluate newer SVD-XT 1.1, fine-tuned or modified pipelines, or lack a numerical reuse grant.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "animatediff-v1-5-2",
+      "category": "video",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-2/blob/6167b88ffe39b4441fdf2113e77b99a6f56b7906/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed cards and visual-gap source reports. Common alternatives evaluate newer SVD-XT 1.1, fine-tuned or modified pipelines, or lack a numerical reuse grant.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-en-ljspeech-tacotron2-ddc",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-en-ljspeech-glow-tts",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-en-ljspeech-speedy-speech",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-en-ljspeech-fast-pitch",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-en-ljspeech-overflow",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-en-ljspeech-neural-hmm",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-de-thorsten-vits",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-es-css10-vits",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-fr-css10-vits",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-pt-cv-vits",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-uk-mai-glow-tts",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "coqui-tr-common-voice-glow-tts",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://github.com/coqui-ai/TTS",
+        "https://github.com/shivammehta25/OverFlow"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The specific Coqui distribution has no verified numerical quality table in the reviewed model-zoo documentation. Architecture papers and Grad-TTS/Overflow studies evaluate other trained weights or vocoders; those scores were not assigned to this download.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "nvidia-tacotron2-waveglow",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md"
+      ],
+      "finding": "Original NVIDIA listening-study MOS retained. Ground-truth human speech cannot serve as a third model; HiFi-GAN systems in other studies are a different full TTS pipeline.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "fastpitch-1-0-waveglow",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 2,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md"
+      ],
+      "finding": "Original NVIDIA WaveGlow study results retained. No third measured synthesis model in the same source series; ground truth is not a model and newer FastPitch/HiFi-GAN systems differ.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "fastpitch-1-1-waveglow",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "raw-only",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://github.com/NVIDIA/DeepLearningExamples/blob/729963dd47e7c8bd462ad10bfac7a7b0b604e6dd/PyTorch/SpeechSynthesis/FastPitch/README.md"
+      ],
+      "finding": "Original NVIDIA WaveGlow study result retained. Version 1.0 and alternative vocoders cannot be substituted for this exact trained system.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "grad-tts-10-hifigan",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "separate-comparison",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored within a separate connected study, not on the main category scale.",
+      "next_step": null
+    },
+    {
+      "id": "fastspeech-xcmyz-gradtts-study",
+      "category": "tts",
+      "before": "raw-only",
+      "after": "separate-comparison",
+      "observations": 1,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [],
+      "existing_evidence_sources": [
+        "https://proceedings.mlr.press/v139/popov21a/popov21a.pdf"
+      ],
+      "finding": "Added verified original measurements/comparison models; now scored within a separate connected study, not on the main category scale.",
+      "next_step": null
+    },
+    {
+      "id": "speechbrain-fastspeech2-ljspeech",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/speechbrain/tts-fastspeech2-ljspeech/blob/c50d854a2b3f6be0e08b694c67a92ca56228de18/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "lightspeech",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://arxiv.org/abs/2102.04040v1",
+        "https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/LightSpeech/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The official MIT implementation README provides runtime measurements, not a quality table. The ICASSP arXiv paper is under a non-exclusive distribution licence; the separate demo page has no verified numerical reuse grant.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "priorgrad-acoustic",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://arxiv.org/abs/2106.06406v2",
+        "https://openreview.net/forum?id=_BNiN4IjC5",
+        "https://github.com/microsoft/NeuralSpeech/blob/8cf4fbcbf451c3affc68ecfa6c970327e927062f/PriorGrad-acoustic/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The exact HiFi-GAN/1M-step checkpoint and T=12 recipe are documented. arXiv is non-exclusive; OpenReview publication access was blocked and the exact numerical licence could not be verified there. Parallel WaveGAN results cover a different system.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "piper-en-us-lessac-medium",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/rhasspy/piper-voices/blob/c10ece1aade47bb51c153c893d14e5bf8e5b7117/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "kitten-tts-mini-0-8",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/KittenML/kitten-tts-mini-0.8/blob/c02725660cea441db4c383af69f1f26f5cd00947/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "kitten-tts-2",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/KittenML/kitten-tts-2/blob/d820e8476c35e637dc5c89a1e66c345f620bd0c0/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "pocket-tts",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/kyutai/pocket-tts/blob/3e82814a68665eec246ff649b14c71331f955c06/README.md",
+        "https://github.com/5uck1ess/tts-bench"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "The January launch evaluation does not automatically apply to the newer checkpoint represented by the catalogue. The candidate community bench licence explicitly covers code only; no reuse grant for its score CSV established.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "dia-1-6b-0626",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/nari-labs/Dia-1.6B-0626/blob/ef2795fcc29c5abe6ffc91fd33808588b49bbc66/README.md"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "No reusable exact-checkpoint quality measurement established in the reviewed official card and speech source reports. The candidate community tts-bench licence explicitly scopes its code, not the score CSV; generic architecture results or adjacent releases were not substituted.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    },
+    {
+      "id": "chatterbox-turbo",
+      "category": "tts",
+      "before": "no-results",
+      "after": "no-results",
+      "observations": 0,
+      "added_measurements": 0,
+      "reviewed_card_and_candidates": [
+        "https://huggingface.co/ResembleAI/chatterbox-turbo/blob/749d1c1a46eb10492095d68fbcf55691ccf137cd/README.md",
+        "https://openreview.net/forum?id=MFrJ3NzA5H",
+        "https://github.com/5uck1ess/tts-bench"
+      ],
+      "existing_evidence_sources": [],
+      "finding": "Candidate ICLR/OpenReview paper could not be accessed; no verified reusable exact Turbo result imported. The original Chatterbox checkpoint is distinct.",
+      "next_step": "Obtain a reusable exact-model original evaluation, or run a documented matched evaluation with enough real comparison models. Permission alone does not establish checkpoint/protocol equivalence."
+    }
+  ]
+}

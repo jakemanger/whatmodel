@@ -6,9 +6,9 @@
 
 EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
-**score 46.7** ±2.5 · #22 of 39 · from 6 benchmark results across 1 source
+**score 32.9** ±1.2 · #399 of 462 · from 10 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,19 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    47.7   2023-05-31   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    47.5   2023-05-31   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    45.6   2023-05-31   20% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    45.7   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    46.7   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    40.5   2023-05-31    4% ▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 46.7
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    32.9   2023-05-31   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    31.6   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    32.9   2023-05-31   13% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    33.8   2023-05-31   12% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    36.3   2023-05-31    6% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    31.8   2023-05-31    5% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    32.2   2024-11-19   12% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    32.3   2024-11-19    7% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    32.9   2024-11-19    4% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    33.1   2024-11-19    3% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 32.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · RedPajama ([CC BY 4.0](../../licenses/redpajama-2024-original-zero-shot-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -36,7 +40,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 download       size  score
-4-bit fp16  ~5.68GB   46.7
+4-bit fp16  ~5.68GB   32.9
 </pre>
 
 ```sh

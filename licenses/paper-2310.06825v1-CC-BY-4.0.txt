@@ -8,7 +8,7 @@ CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 Changes: selected numerical cells transcribed into JSON; percentages divided by 100; benchmark names, model identities and settings clarified. No questions, tasks, model outputs or figures redistributed. No endorsement.
 
 SCOPE OF REUSE
-Table 2 rows 'LLaMA 2 7B' (pretrained), 'LLaMA 2 13B' (pretrained) and 'Mistral 7B' (pretrained); the paper says 'All models were re-evaluated on all metrics with our evaluation pipeline'. Columns MMLU (5-shot), HellaSwag, WinoGrande, PIQA, ARC-e, ARC-c (0-shot), TriviaQA (5-shot), HumanEval (0-shot), MBPP (3-shot), MATH (4-shot, maj@4), GSM8K (8-shot, maj@8). Code-Llama 7B row (fine-tuned, outside this batch), NaturalQuestions column, Table 3 (chat models) and figures not imported.
+Table 2 rows 'LLaMA 2 7B' (pretrained), 'LLaMA 2 13B' (pretrained) and 'Mistral 7B' (pretrained); the paper says 'All models were re-evaluated on all metrics with our evaluation pipeline'. Columns MMLU (5-shot), HellaSwag, WinoGrande, PIQA, ARC-e, ARC-c (0-shot), TriviaQA (5-shot), HumanEval (0-shot), MBPP (3-shot), MATH (4-shot, maj@4), GSM8K (8-shot, maj@8). Scope extended 2026-10-06: also the Code-Llama 7B base row (code-pretrained, not Instruct/Python) and the Natural Questions column for that row. Table 3 (chat models) and figures remain excluded.
 
 Licensed material is provided as-is and as-available, without warranties; see the licence below.
 

@@ -6,7 +6,7 @@
 
 HiDream · released 2025-04 · 17B params · mit
 
-**score 46.5** ±2.3 · #80 of 114 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.3** ±2.4 · #81 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  21.2%    46.6   2026-05-14   50% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       64.2%    46.2   2026-07-01   48% ▇▇▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  21.2%    46.4   2026-05-14   51% ▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       64.2%    46.0   2026-07-01   47% ▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 46.5
+                        weighted average                       = 46.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

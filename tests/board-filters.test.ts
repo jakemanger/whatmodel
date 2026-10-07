@@ -8,12 +8,61 @@ import { boardFromData } from '../lib/board.ts';
 import { CATEGORY_IDS } from '../lib/categories.ts';
 import { parseSpecs } from '../lib/fit.ts';
 import { measuredSpeed } from '../lib/measured.ts';
-import { curlFor, toText } from '../lib/format.ts';
+import { curlFor, toText, whereLabel } from '../lib/format.ts';
 import { boardView, modelView, pageModels } from '../lib/views.ts';
+import { TASKS } from '../lib/tasks.ts';
 
 const view = (query = '') => boardView('llm', new URLSearchParams(query));
 const secondary = comparisonSets.llm[1];
 const setQuery = `set=${encodeURIComponent(secondary.id)}`;
+
+test('announced previews appear on default and task boards without implying public access', async () => {
+  for (const query of ['', 'task=agents', 'retired=1']) {
+    const board = view(query);
+    const argon = board.shown.find((r) => r.id === 'gemini-4-argon');
+    assert.ok(argon, 'Argon must appear without opting into historical models');
+    assert.equal(argon.where, 'preview');
+    assert.equal(whereLabel(argon), 'limited preview');
+    assert.ok(argon.score !== null);
+    assert.equal(argon.cmd, null);
+    assert.equal(argon.price, null);
+    assert.ok(!board.outside.comparisonOnly.some((m) => m.id === argon.id));
+    const body = await (await leaderboard(new Request(`https://whatmodel.sh/api?${query}&format=json&n=10000`), 'llm')).json();
+    assert.equal(body.models.find((r: {id: string}) => r.id === argon.id)?.where, 'preview');
+  }
+  for (const query of ['max=0', 'ram=16&gpu=apple&max=0', 'max=10', 'max=0&retired=1']) {
+    assert.ok(!view(query).shown.some((r) => r.id === 'gemini-4-argon'), 'A preview with no run route cannot satisfy a local or price filter');
+  }
+  assert.ok(!view().shown.some((r) => r.id === 'gpt-4-0314'), 'Historical catalogue visibility stays opt-in');
+});
+
+test('task rankings use their own evidence, survive serialization and combine with hardware', async () => {
+  const image = boardData('image');
+  const generation = image.tasks!.find((t) => t.id === 'text-to-image')!;
+  const editing = image.tasks!.find((t) => t.id === 'image-to-image')!;
+  assert.ok(generation.benchmarks.includes('lmarena-image'));
+  assert.ok(!generation.benchmarks.includes('lmarena-image-edit'));
+  assert.ok(editing.benchmarks.includes('lmarena-image-edit'));
+  assert.ok(!editing.benchmarks.includes('lmarena-image'));
+  const q = new URLSearchParams('task=text-to-image&ram=16&gpu=apple&max=0');
+  const v = boardFromData(image, q);
+  assert.ok(v.shown.length > 0);
+  assert.ok(v.shown.every((r) => r.where === 'local' || r.where === 'local-slow'));
+  assert.ok(v.shown.every((r) => generation.resultModels.includes(r.id)));
+  assert.deepEqual(boardFromData(JSON.parse(JSON.stringify(image)), q).rows, v.rows);
+  const overall = boardFromData(image, new URLSearchParams());
+  assert.ok(v.ranked.some((r) => r.score !== null && r.score !== overall.ranked.find((s) => s.id === r.id)?.score));
+  assert.deepEqual(v.sources, generation.sources);
+  const agents = boardView('llm', new URLSearchParams('task=agents&retired=1'));
+  assert.ok(agents.models.some((m) => m.id === 'gemini-4-argon'));
+  assert.ok(TASKS.find((t) => t.id === 'agents')!.benchmarks.includes('arena-agent-ips-202610'));
+  assert.ok(!TASKS.find((t) => t.id === 'agents')!.benchmarks.includes('lmarena-text'));
+  const req = new Request('https://whatmodel.sh/api/image?' + q + '&format=json');
+  const body = await (await leaderboard(req, 'image')).json();
+  assert.equal(body.task, 'text-to-image');
+  assert.deepEqual(body.models.map((r: {id: string}) => r.id), v.shown.slice(0, 40).map((r) => r.id));
+  assert.match(body.task_note, /within this task/);
+});
 
 test('serialized board inputs preserve scores and measured speeds across categories', () => {
   for (const cat of CATEGORY_IDS) {

@@ -6,9 +6,9 @@
 
 Meta · released 2023-02 · 65.2B params · llama-1-noncommercial-research
 
-**score 78.1** ±1.7 · comparison only: no current run option verified · from 13 benchmark results across 1 source
+**score 45.7** ±1.2 · comparison only: no current run option verified · from 13 benchmark results across 1 source
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,21 +16,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             50.9%    83.6   2023-02-27   16% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>              10.6%    81.7   2023-02-27   13% ▇▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              63.4%    79.3   2023-02-27   12% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              37.7%    80.0   2023-02-27   10% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         23.7%    77.9   2023-02-27   10% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>             85.3%    77.3   2023-02-27    7% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         84.2%    76.1   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          78.9%    74.2   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     56.0%    73.4   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        77.0%    74.7   2023-02-27    5% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              82.8%    73.7   2023-02-27    4% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        60.2%    73.4   2023-02-27    3% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        52.3%    73.1   2023-02-27    3% ▇
-prior                   pull toward the middle           49.8                 1% ▇
-                        weighted average               = 78.1
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>     56.0%    42.5   2023-02-27   16% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>        77.0%    43.7   2023-02-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>         23.7%    45.6   2023-02-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>              10.6%    49.6   2023-02-27    9% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>        60.2%    42.4   2023-02-27    9% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>         84.2%    44.8   2023-02-27    8% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>             85.3%    47.1   2023-02-27    7% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>          78.9%    43.6   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MBPP (lab)</a>              37.7%    50.4   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>              63.4%    51.8   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>             50.9%    55.0   2023-02-27    4% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>        52.3%    44.1   2023-02-27    3% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>              82.8%    44.3   2023-02-27    3% ▇
+prior                   pull toward the middle           50.0                 1% ▇
+                        weighted average               = 45.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

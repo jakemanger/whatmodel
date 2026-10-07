@@ -32,6 +32,8 @@ export type Model = {
   category?: Category; // default "llm"
   released?: string;
   released_source?: string;
+  availability?: "preview"; // announced limited access; visible without claiming a public run route
+  availability_source?: string;
   source?: string;
   model_repo?: string;
   identity_note?: string;
@@ -63,7 +65,10 @@ export type Result = {
 // kind "acc": score is a 0-1 fraction, `chance` is the guessing rate.
 // kind "elo": score is an arena rating.
 // kind "err": nonnegative error ratio (may exceed 1 with insertions), lower is better.
-export type Benchmark = { id: string; name: string; kind: "acc" | "elo" | "err"; chance?: number; url: string; category?: Category; metric?: string; raw_scale_min?: number; raw_scale_max?: number };
+// Linear measurements (e.g. signed treatment effects) retain their raw units.
+// latent_scale is a fixed unit conversion, never fitted to a desired ranking.
+// Linear distances retain their published units with direction "lower".
+export type Benchmark = { id: string; name: string; kind: "acc" | "elo" | "err" | "linear"; chance?: number; url: string; category?: Category; metric?: string; raw_scale_min?: number; raw_scale_max?: number; latent_scale?: number; direction?: "higher" | "lower"; unit?: string };
 
 export type Scored = { id: string; g: number; pm: number; n: number };
 

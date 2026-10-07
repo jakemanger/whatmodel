@@ -6,7 +6,7 @@
 
 Black Forest Labs / Krea · released 2025-07 · 12B params · flux-dev-nc
 
-**score 47.6** ±4.2 · #79 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.5** ±4.6 · #80 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.4   2026-03-29   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 47.6
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.3   2026-03-29   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 TinyLlama · released 2023-12 · 1.1B params · apache-2.0
 
-**score 5.3** ±5.2 · #411 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 8.0** ±5.1 · #462 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%    -0.8   2024-02-22   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  28.2%     2.5   2024-02-22   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   50.0                12% ▇
-                        weighted average                        = 5.3
+                        weighted average                        = 8.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.16GB    5.3
-8-bit q8_0    ~1.82GB    5.3
+4-bit q4_k_m  ~1.16GB    8.0
+8-bit q8_0    ~1.82GB    8.0
 </pre>
 
 ```sh

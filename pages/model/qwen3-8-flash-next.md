@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 180B params (6B active) · qwen-community-1.0
 
-**score 74.3** ±2.2 · #19 of 411 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 73.8** ±1.5 · #27 of 462 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -15,11 +15,12 @@ Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=s
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1636.3    76.7   2026-09-24   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   46.9%    63.6   2026-09-22   14% ▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 74.3
+source                  test                                  score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1637.5    76.7   2026-10-01   47% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0073 IPS    72.5   2026-10-02   45% ▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.9%    64.5   2026-09-22    6% ▇
+prior                   pull toward the middle                         50.0                 1% ▇
+                        weighted average                             = 73.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +33,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~108.5GB   74.3
-2-bit ud-q2_k_xl   ~54.5GB   74.3
+4-bit q4_k_m      ~108.5GB   73.8
+2-bit ud-q2_k_xl   ~54.5GB   73.8
 </pre>
 
 ```sh

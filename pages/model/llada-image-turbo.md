@@ -4,18 +4,30 @@
 
 # LLaDA-Image-Turbo
 
-Ant Group · released 2026-09
+Ant Group · released 2026-09 · 6B params · apache-2.0
 
-[Model and usage documentation](https://huggingface.co/inclusionAI/LLaDA-Image-Turbo)
+**score 65.0** ±38.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Score within the [DPG-Bench](https://whatmodel.sh/image?set=dpg-bench%40visual-llada-image&score=set) comparison set only.
+
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test       result  reported by  source
-GenEval     82.0%  lab          <a href="https://arxiv.org/html/2609.03796v1#S5.T7">LLaDA-Image: Building Strong …</a>
-DPG-Bench   88.5%  lab          <a href="https://arxiv.org/html/2609.03796v1#S5.T8">LLaDA-Image: Building Strong …</a>
+source                  test                    score  implies  date        weight
+<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>           82.0%   -25.9   2026-09-03   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>         88.5%    17.4   2026-09-03   13% ▇▇
+prior                   pull toward the middle           50.0                60% ▇▇▇▇▇▇▇
+                        weighted average               = 65.0
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt))</sub>
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/llada-image-turbo)
+## How to run it
+
+no current API or local download verified
+
+[interactive version](https://whatmodel.sh/model/llada-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -42,15 +42,19 @@ export const comparisonSets = Object.fromEntries(
   CATEGORY_IDS.map((c) => {
     const rs = results.filter((r) => catOf(modelById.get(r.model) ?? ({} as Model)) === c);
     const cells = toCells(rs, benchmarks.filter((b) => benchCat(b) === c));
-    return [c, connectedCells(cells).map((group) => {
+    return [c, setsForCells(cells)];
+  })
+) as Record<Category, ComparisonSet[]>;
+
+export function setsForCells(cells: import("./score.ts").Cell[]): ComparisonSet[] {
+  return connectedCells(cells).map((group) => {
       const counts = new Map<string, number>();
       for (const cell of group) counts.set(cell.key, (counts.get(cell.key) ?? 0) + 1);
       const representative = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0];
       return { id: representative, label: benchmarkById.get(representative.split("@")[0])?.name ?? representative,
         models: [...new Set(group.map((x) => x.model))], fit: fit(group) };
-    })];
-  })
-) as Record<Category, ComparisonSet[]>;
+  });
+}
 
 export const comparisonFor = (c: Category, id?: string | null) =>
   comparisonSets[c].find((set) => set.id === id) ?? comparisonSets[c][0];
@@ -93,7 +97,13 @@ const sourceSummaries = new Map<string, SourceSummary[]>();
 export function sourcesFor(id: string): SourceSummary[] {
   const cached = sourceSummaries.get(id);
   if (cached) return cached;
-  const e = fitFor(id).explain(id);
+  const summaries = sourcesForFit(id, fitFor(id));
+  sourceSummaries.set(id, summaries);
+  return summaries;
+}
+
+export function sourcesForFit(id: string, fitted: Fit): SourceSummary[] {
+  const e = fitted.explain(id);
   if (!e) return [];
   const by = new Map<string, SourceSummary>();
   for (const p of e.parts) {
@@ -116,6 +126,5 @@ export function sourcesFor(id: string): SourceSummary[] {
     }
   }
   const summaries = [...by.values()].sort((a, b) => b.share - a.share);
-  sourceSummaries.set(id, summaries);
   return summaries;
 }

@@ -6,7 +6,7 @@
 
 ESPnet · released 2022-04 · cc-by-4.0
 
-**score 29.0** ±22.0 · #6 of 6 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 29.0** ±24.7 · #6 of 6 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-espnet-librispeech-20260929&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   6.6%    15.8    39% ▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.8%    16.7    23% ▇▇▇
-prior                   pull toward the middle                   50.0    38% ▇▇▇▇▇
+<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   6.6%    14.5    38% ▇▇▇▇▇
+                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.8%    15.5    22% ▇▇▇
+prior                   pull toward the middle                   50.0    40% ▇▇▇▇▇
                         weighted average                       = 29.0
 </pre>
 

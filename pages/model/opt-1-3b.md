@@ -6,9 +6,9 @@
 
 Meta · released 2022-05 · 1.3B params · opt-175b-license-noncommercial
 
-**score 44.9** ±1.6 · #24 of 39 · from 13 benchmark results across 2 sources
+**score 28.0** ±1.1 · #432 of 462 · from 13 benchmark results across 2 sources
 
-Score within the [ARC Challenge](https://whatmodel.sh/?set=arc-challenge&score=set) comparison set only.
+Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
 ## How the score was worked out
 
@@ -16,26 +16,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        57.0%    46.8   2023-09-11   13% ▇▇
-                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   23.2%    47.2   2023-09-11   12% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           59.6%    48.5   2023-09-11   10% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    49.5   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      24.0%    51.5   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      61.0%    52.5   2023-09-11    6% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    48.4   2023-09-11    6% ▇
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        57.0%    38.5   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  57.9%    41.4   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            84.5%    37.5   2023-05-31    8% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            71.7%    40.5   2023-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.1%    31.5   2023-05-31    3% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      59.7%    41.2   2023-05-31    2% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 44.9
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        57.0%    27.6   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            84.5%    27.0   2023-05-31   11% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            71.7%    29.9   2023-05-31    9% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  57.9%    29.7   2023-05-31    8% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   23.1%    17.9   2023-05-31    5% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      59.7%    32.4   2023-05-31    4% ▇
+<a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      61.0%    32.9   2023-09-11   14% ▇▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    30.0   2023-09-11    9% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        57.0%    27.5   2023-09-11    8% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           59.6%    25.1   2023-09-11    7% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    25.7   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   23.2%    15.2   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      24.0%    19.8   2023-09-11    2% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 28.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt)) · Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt))</sub>
+<sub>Licences: Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ([CC BY-SA 4.0](../../licenses/paper-2304.01373v2-CC-BY-SA-4.0.txt)) · Textbooks Are All You Need II: phi-1.5 technical report ([CC BY 4.0](../../licenses/paper-2309.05463v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -43,7 +43,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 download       size  score
-4-bit fp16  ~2.63GB   44.9
+4-bit fp16  ~2.63GB   28.0
 </pre>
 
 ```sh

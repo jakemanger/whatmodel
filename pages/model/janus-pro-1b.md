@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.5B params · deepseek
 
-**score 26.6** ±4.7 · #111 of 114 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 27.5** ±3.7 · #111 of 116 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,24 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    24.2   2026-06-02   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 26.6
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    24.0   2026-06-02   55% ▇▇▇▇▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    27.2   2025-01-29   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    31.1   2025-01-29   17% ▇▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 27.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
-
-<details><summary>Not counted (2)</summary>
-
-<pre>
-source       test       score  why
-DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench</a>  82.6%  too few models have it yet
-DeepSeek-AI  <a href="https://arxiv.org/html/2501.17811v1">GenEval</a>    73.0%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · DeepSeek-AI ([CC BY 4.0](../../licenses/report-2501.17811v1.txt))</sub>
 
 ## How to run it
 

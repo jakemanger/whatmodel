@@ -6,7 +6,7 @@
 
 NVIDIA · released 2021-09 · 0.014B params · ngc-terms-of-use
 
-**score 45.4** ±3.2 · #87 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.5** ±3.2 · #87 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    43.0   2026-03-26   53% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  13.7%    48.2   2026-03-26   43% ▇▇▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    42.9   2026-03-26   53% ▇▇▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  13.7%    48.4   2026-03-26   43% ▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 45.4
+                      weighted average                       = 45.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~0.57GB   45.4
+fp32 · nvidia only  ~0.57GB   45.5
 </pre>
 
 ```sh

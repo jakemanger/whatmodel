@@ -6,7 +6,7 @@
 
 Meta · released 2021-04 · 0.32B params · apache-2.0
 
-**score 15.1** ±3.9 · #106 of 113 · from 3 benchmark results across 3 sources
+**score 15.0** ±4.0 · #106 of 113 · from 3 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.9%    12.0   2026-03-26   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  32.6%    19.9   2026-08-18    7% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  15.2%    21.2   2024-12-09    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.9%    11.7   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  32.6%    20.5   2026-08-18    6% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  15.2%    21.7   2024-12-09    4% ▇
 prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 15.1
+                        weighted average                       = 15.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   15.1
+fp32     ~2.04GB   15.0
 </pre>
 
 ```sh

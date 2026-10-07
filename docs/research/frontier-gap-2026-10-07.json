@@ -1,0 +1,1997 @@
+{
+ "generated": "2026-10-07",
+ "scope": "Target models: LLMs released since 2026-06 in the current top 40, plus claude-opus-5-5, claude-fable-5-1, claude-sonnet-5-5, gpt-6-astra, gpt-6-sol, gpt-6-1-sol, gemini-4-argon, gpt-5-5-pro (30 models). Extra candidate fields: date (same meaning as results.json), replaces_existing_score (refreshes of an existing row), evidence (MathArena aggregation provenance).",
+ "candidates": [
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "gpqa-diamond",
+   "bench_is_new": false,
+   "score": 0.9539141414141414,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id LspviLnbeZ82WCngWp6rwR; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.013780748450364692.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "gpqa-diamond",
+   "bench_is_new": false,
+   "score": 0.9558080808080808,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id QPk8jbJvo4986sbWtdte6J; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.013710320714521202.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "gpqa-diamond",
+   "bench_is_new": false,
+   "score": 0.9046717171717171,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id 7F3QFMAkwnCV62HcvxP96q; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.018537378631915503.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "gpqa-diamond",
+   "bench_is_new": false,
+   "score": 0.92739898989899,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id hxAhYJfXdPNanxatXpG5hC; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015505824295534454.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "gpqa-diamond",
+   "bench_is_new": false,
+   "score": 0.9431818181818182,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-sol_max'; run id aJD7ZfFftu2cZoToJhhzF7; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014938512008159717.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "gpqa-diamond",
+   "bench_is_new": false,
+   "score": 0.9059343434343434,
+   "source": "https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file gpqa_diamond.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id 6gmbahPSxHf9xVhAYqpnhi; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.019434397190192135.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "otis-mock-aime",
+   "bench_is_new": false,
+   "score": 1.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id Di7y6sES4PGQbXNkXYhdqM; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "otis-mock-aime",
+   "bench_is_new": false,
+   "score": 1.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id bSEaZLPehiNVDQL7HP9EJS; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "otis-mock-aime",
+   "bench_is_new": false,
+   "score": 0.9888888888888889,
+   "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id 4uDz9b6SosxDSZf7swMD9D; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.006674027922425511.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "otis-mock-aime",
+   "bench_is_new": false,
+   "score": 0.9805555555555555,
+   "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id Jhgwm7QpspGcvm7DUVqUDg; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014299486306926387.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "otis-mock-aime",
+   "bench_is_new": false,
+   "score": 1.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-sol_max'; run id VZAUcNkzeMSMm9paxBhj6B; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "otis-mock-aime",
+   "bench_is_new": false,
+   "score": 1.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file otis_mock_aime_2024_2025.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id LSfona7P3jCAnZFXJ2YA7F; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "frontiermath",
+   "bench_is_new": false,
+   "score": 0.9368421052631579,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id aBoQLaqnXsLPrsbN8wYgUp; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014434038295343787.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "frontiermath",
+   "bench_is_new": false,
+   "score": 0.887719298245614,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id 4tZWwV9tqEgsCaKeSuSoG4; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.018734030360524248.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "frontiermath",
+   "bench_is_new": false,
+   "score": 0.7894736842105263,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id iBQxysYR7zPxB6hxvJyTLc; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.024191503146153773.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "frontiermath",
+   "bench_is_new": false,
+   "score": 0.5298245614035088,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id F4unBbW5M4VJogzCq4vGAb; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.029616712041900365.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "frontiermath",
+   "bench_is_new": false,
+   "score": 0.8982456140350877,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-sol_max'; run id RHjHEPHEsWZqFuMjBTeC6r; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.01793969072128637.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "frontiermath",
+   "bench_is_new": false,
+   "score": 0.9122807017543859,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tiers_1_3_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id LPxhvBNEn7S3xkRZUgcvc9; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.016786209858442095.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "simpleqa-verified",
+   "bench_is_new": false,
+   "score": 0.739,
+   "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id dfT5VD7cQug8XW6GQHyJUF; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.013895037677965185.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "simpleqa-verified",
+   "bench_is_new": false,
+   "score": 0.465,
+   "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id GtJ5yd3ZPQ7HVcm6Q9ssQz; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015780495050030086.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "simpleqa-verified",
+   "bench_is_new": false,
+   "score": 0.414,
+   "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id HX9sRVWJtZiNvneALnVzs8; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015583544104177553.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "simpleqa-verified",
+   "bench_is_new": false,
+   "score": 0.56,
+   "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id 6izDCw5ygCLZJEKPS8jV5T; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015704987954361718.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "simpleqa-verified",
+   "bench_is_new": false,
+   "score": 0.607,
+   "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-sol_max'; run id donMeEKBZZdqpQsojKWJEm; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.015452824654081525.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "simpleqa-verified",
+   "bench_is_new": false,
+   "score": 0.722,
+   "source": "https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file simpleqa_verified.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id CgLfiGcNwMPVzxr8GdNUAK; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.014174516461485273.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "epoch-chess",
+   "bench_is_new": false,
+   "score": 0.61,
+   "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id d9TWVVwaH6vgp36FM7qGJ5; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04902071300001973.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "epoch-chess",
+   "bench_is_new": false,
+   "score": 0.31,
+   "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id YwzVUtcUukgH4VxszaKNsi; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04648231987117317.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "epoch-chess",
+   "bench_is_new": false,
+   "score": 0.38,
+   "source": "https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file chess_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id MpkdmmouJFUbKycL72HmSE; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.048783173121456344.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "epoch-ebr",
+   "bench_is_new": false,
+   "score": 0.5428571428571429,
+   "source": "https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file ebr_bench.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id LRUWNzFDcScwkTYuZYdeiV; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05753831415997416.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "frontiermath-tier-4-v2",
+   "bench_is_new": false,
+   "score": 1.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id HgAUm5zxrWbkfYUdeJMGzL; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "frontiermath-tier-4-v2",
+   "bench_is_new": false,
+   "score": 0.8048780487804879,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id Xo7ecFEMqPJ4HicvJTvWZZ; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06265967111543964.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "frontiermath-tier-4-v2",
+   "bench_is_new": false,
+   "score": 0.5609756097560976,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id 7n3HBUK684GmdT6Tkycu6m; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.07846686801046543.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "frontiermath-tier-4-v2",
+   "bench_is_new": false,
+   "score": 0.17073170731707318,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id Ymgj5VeEceBbzsLq6xEZRi; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05949419959829495.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "frontiermath-tier-4-v2",
+   "bench_is_new": false,
+   "score": 0.9,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-sol_max'; run id jwS3LYLCPbZpHDzzkX6LyV; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.051739520574625435.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "frontiermath-tier-4-v2",
+   "bench_is_new": false,
+   "score": 0.95,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_tier_4_v2.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id 9qKrTxPhpfW985gieKU56x; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.041175470771058854.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "epoch-mirrorcode",
+   "bench_is_new": false,
+   "score": 0.774,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mirrorcode.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id mirrorcode-ml-2l-claude-opus-5-5; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0831.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "epoch-mystery-games",
+   "bench_is_new": false,
+   "score": 0.8,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id fQzkNRV69sKaJX7o9KKneQ; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04020151261036849.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "epoch-mystery-games",
+   "bench_is_new": false,
+   "score": 0.71,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-opus-5-5_max'; run id fREi6AAmnfqUWkDqUhLLtw; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04560480215720687.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "epoch-mystery-games",
+   "bench_is_new": false,
+   "score": 0.65,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id 3PVdaSEYFJKgYUgHnF4DBu; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04793724854411022.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "epoch-mystery-games",
+   "bench_is_new": false,
+   "score": 0.07,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id bAERV8wdmoHMLz2K4bZCSK; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.02564323999762428.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "grok-4-7",
+   "bench": "epoch-mystery-games",
+   "bench_is_new": false,
+   "score": 0.29,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'grok-4.7_xhigh'; run id Hk8bjr4u6KGqVE8SrPFKLq; effort xhigh; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.045604802157206865.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "epoch-mystery-games",
+   "bench_is_new": false,
+   "score": 0.56,
+   "source": "https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file mystery_game_puzzles.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-sol_max'; run id DnFTaE9qNsmBdYNqohhynY; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.049888765156985884.",
+   "date": "2026-09-22"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "epoch-furniture",
+   "bench_is_new": false,
+   "score": 0.8,
+   "source": "https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file furniture_assembly.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6.1-sol_max'; run id R4vjsSfDrDo6ECQWGTUdWe; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.04928872620664329.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "epoch-furniture",
+   "bench_is_new": false,
+   "score": 0.75,
+   "source": "https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file furniture_assembly.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-sonnet-5-5_max'; run id 5xgoV6NXxdDqscnFNpP2vv; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.05510647116121488.",
+   "date": "2026-09-29"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "epoch-furniture",
+   "bench_is_new": false,
+   "score": 0.44166666666666665,
+   "source": "https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file furniture_assembly.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-luna_max'; run id GVtcaKADdbkuPoydqpKm3E; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.06410142328406845. UPDATE: replaces existing epoch-internal row (score 0.2833333333333333, older run) - the earlier run is no longer in the file; newer run started 2026-09-28.",
+   "date": "2026-09-28",
+   "replaces_existing_score": 0.2833333333333333
+  },
+  {
+   "model": "claude-fable-5-1",
+   "bench": "frontiermath-erdos",
+   "bench_is_new": true,
+   "score": 0.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_erdos.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-fable-5-1_max'; run id bloom68-fable51-8t9up8nw9358oyrl; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0. NEW internal file frontiermath_erdos.csv (benchmark_metadata.csv: 'FrontierMath-Erdos', in_eci False, released 2026-09-03); only 5 models in the file, mostly 0; needs the fragment added to the epoch-internal ledger entry and a new benchmark entry.",
+   "date": "2026-09-01"
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "frontiermath-erdos",
+   "bench_is_new": true,
+   "score": 0.029411764705882353,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_erdos.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-6-astra_max'; run id bloom68-ultima-e1dhs43ykrmakree; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0206414713705158. NEW internal file frontiermath_erdos.csv (benchmark_metadata.csv: 'FrontierMath-Erdos', in_eci False, released 2026-09-03); only 5 models in the file, mostly 0; needs the fragment added to the epoch-internal ledger entry and a new benchmark entry.",
+   "date": "2026-08-28"
+  },
+  {
+   "model": "claude-fable-5",
+   "bench": "frontiermath-erdos",
+   "bench_is_new": true,
+   "score": 0.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_erdos.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'claude-fable-5_max'; run id bloom68-fable-vn2l2xoe9902k9rt; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0. NEW internal file frontiermath_erdos.csv (benchmark_metadata.csv: 'FrontierMath-Erdos', in_eci False, released 2026-09-03); only 5 models in the file, mostly 0; needs the fragment added to the epoch-internal ledger entry and a new benchmark entry.",
+   "date": "2026-08-28"
+  },
+  {
+   "model": "gpt-5-6-sol",
+   "bench": "frontiermath-erdos",
+   "bench_is_new": true,
+   "score": 0.0,
+   "source": "https://epoch.ai/data/benchmark_data.zip#frontiermath_erdos.csv",
+   "source_id": "epoch-internal",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://epoch.ai/benchmarks/use-this-data",
+   "by": "independent",
+   "note": "Epoch AI internal evaluation; file frontiermath_erdos.csv; snapshot 2026-10-07 (zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4, ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"); exact model version 'gpt-5.6-sol_max'; run id bloom68-sol-jx4yy8n4naukwwge; effort max; highest published effort, latest run breaks ties; published 'Best score (across scorers)' column. Reported standard error 0.0. NEW internal file frontiermath_erdos.csv (benchmark_metadata.csv: 'FrontierMath-Erdos', in_eci False, released 2026-09-03); only 5 models in the file, mostly 0; needs the fragment added to the epoch-internal ledger entry and a new benchmark entry.",
+   "date": "2026-08-28"
+  },
+  {
+   "model": "claude-fable-5",
+   "bench": "lmarena-text",
+   "bench_is_new": false,
+   "score": 1504.3,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/README.md",
+   "by": "independent",
+   "note": "text_style_control, category overall, split latest; exact entry 'claude-fable-5-high'; 38,387 votes; published 95% interval 1499.9–1508.7. REFRESH: existing row (1505.7) cites older revision 6931a5ef entry 'claude-fable-5'; that entry no longer exists in the latest split and the model now appears as 'claude-fable-5-high' (webdev and agent rows already use the High entry). File is byte-identical (same LFS oid) at the newest revision be06b33784531833af86ad96817e12ba2a965b30.",
+   "date": "2026-10-02",
+   "replaces_existing_score": 1505.7
+  },
+  {
+   "model": "claude-fable-5",
+   "bench": "lmarena-vision",
+   "bench_is_new": false,
+   "score": 1308.8,
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet",
+   "source_id": "lmarena-dataset",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/README.md",
+   "by": "independent",
+   "note": "vision_style_control, category overall, split latest; exact entry 'claude-fable-5-high'; 13,709 votes; published 95% interval 1301.5–1316.0. REFRESH: existing row (1309.5) cites older revision 6931a5ef entry 'claude-fable-5'; that entry no longer exists in the latest split and the model now appears as 'claude-fable-5-high' (webdev and agent rows already use the High entry). File is byte-identical (same LFS oid) at the newest revision be06b33784531833af86ad96817e12ba2a965b30.",
+   "date": "2026-10-02",
+   "replaces_existing_score": 1309.5
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "matharena-arxivmath-2026-08",
+   "bench_is_new": true,
+   "score": 0.885965,
+   "source": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivMath August 2026 outputs dataset (HF revision 64731d80cf7dd2a83d842c4deb9739c81d129efa); published model_name 'GPT-6 Astra (max)', model_config 'openai/gpt-6-astra' (codex harness (configs/models/openai/gpt-6-astra.yaml: model gpt-6-astra, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 57/57 problems, 2-2 attempts per problem; score = mean final-answer correctness as published in the 'correct' column (graded by MathArena answer_judge), averaged per problem then over problems. August protocol differs from earlier months: open-problem prompt, allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt), LLM answer judge (configs/competitions/arxiv/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivmath-0826_outputs",
+    "revision": "64731d80cf7dd2a83d842c4deb9739c81d129efa",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "b0115590ee8853da3151a94c7f576c2d895b55a4c238d25fc7653331ab59588d",
+    "model_config": "openai/gpt-6-astra",
+    "problems": 57,
+    "attempts_min": 2,
+    "attempts_max": 2
+   }
+  },
+  {
+   "model": "claude-fable-5-1",
+   "bench": "matharena-arxivmath-2026-08",
+   "bench_is_new": true,
+   "score": 0.877193,
+   "source": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivMath August 2026 outputs dataset (HF revision 64731d80cf7dd2a83d842c4deb9739c81d129efa); published model_name 'Claude-Fable-5.1 (high)', model_config 'anthropic/fable_51_high' (Claude Code harness (configs/models/anthropic/fable_51_high.yaml: model claude-fable-5-1, adaptive thinking; the max config was not run on this set), eth-sri/matharena b89f2f0ad64c). 57/57 problems, 2-2 attempts per problem; score = mean final-answer correctness as published in the 'correct' column (graded by MathArena answer_judge), averaged per problem then over problems. August protocol differs from earlier months: open-problem prompt, allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt), LLM answer judge (configs/competitions/arxiv/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivmath-0826_outputs",
+    "revision": "64731d80cf7dd2a83d842c4deb9739c81d129efa",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "b0115590ee8853da3151a94c7f576c2d895b55a4c238d25fc7653331ab59588d",
+    "model_config": "anthropic/fable_51_high",
+    "problems": 57,
+    "attempts_min": 2,
+    "attempts_max": 2
+   }
+  },
+  {
+   "model": "qwen3-8-2-4t-a95b",
+   "bench": "matharena-arxivmath-2026-08",
+   "bench_is_new": true,
+   "score": 0.578947,
+   "source": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivMath August 2026 outputs dataset (HF revision 64731d80cf7dd2a83d842c4deb9739c81d129efa); published model_name 'Qwen3.8-Max', model_config 'qwen/qwen3.8_max' (Qwen Code harness via OpenRouter (configs/models/qwen/qwen3.8_max.yaml: qwen/qwen3.8-max, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 57/57 problems, 1-1 attempts per problem; score = mean final-answer correctness as published in the 'correct' column (graded by MathArena answer_judge), averaged per problem then over problems. August protocol differs from earlier months: open-problem prompt, allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt), LLM answer judge (configs/competitions/arxiv/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivmath-0826_outputs",
+    "revision": "64731d80cf7dd2a83d842c4deb9739c81d129efa",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "b0115590ee8853da3151a94c7f576c2d895b55a4c238d25fc7653331ab59588d",
+    "model_config": "qwen/qwen3.8_max",
+    "problems": 57,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "muse-spark-1-3",
+   "bench": "matharena-arxivmath-2026-08",
+   "bench_is_new": true,
+   "score": 0.45614,
+   "source": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivMath August 2026 outputs dataset (HF revision 64731d80cf7dd2a83d842c4deb9739c81d129efa); published model_name 'Muse Spark 1.3', model_config 'meta/muse_spark_13' (Muse harness (configs/models/meta/muse_spark_13.yaml: muse-spark-1.3, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 57/57 problems, 1-2 attempts per problem; score = mean final-answer correctness as published in the 'correct' column (graded by MathArena answer_judge), averaged per problem then over problems. August protocol differs from earlier months: open-problem prompt, allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt), LLM answer judge (configs/competitions/arxiv/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivmath-0826_outputs",
+    "revision": "64731d80cf7dd2a83d842c4deb9739c81d129efa",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "b0115590ee8853da3151a94c7f576c2d895b55a4c238d25fc7653331ab59588d",
+    "model_config": "meta/muse_spark_13",
+    "problems": 57,
+    "attempts_min": 1,
+    "attempts_max": 2
+   }
+  },
+  {
+   "model": "gemini-3-8-flash",
+   "bench": "matharena-arxivmath-2026-08",
+   "bench_is_new": true,
+   "score": 0.403509,
+   "source": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivMath August 2026 outputs dataset (HF revision 64731d80cf7dd2a83d842c4deb9739c81d129efa); published model_name 'Gemini 3.8 Flash', model_config 'gemini/gemini-38-flash' (Antigravity CLI harness (configs/models/gemini/gemini-38-flash.yaml: gemini-3.8-flash, reasoning_effort high), eth-sri/matharena b89f2f0ad64c). 57/57 problems, 1-2 attempts per problem; score = mean final-answer correctness as published in the 'correct' column (graded by MathArena answer_judge), averaged per problem then over problems. August protocol differs from earlier months: open-problem prompt, allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt), LLM answer judge (configs/competitions/arxiv/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivmath-0826_outputs",
+    "revision": "64731d80cf7dd2a83d842c4deb9739c81d129efa",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "b0115590ee8853da3151a94c7f576c2d895b55a4c238d25fc7653331ab59588d",
+    "model_config": "gemini/gemini-38-flash",
+    "problems": 57,
+    "attempts_min": 1,
+    "attempts_max": 2
+   }
+  },
+  {
+   "model": "kimi-k3",
+   "bench": "matharena-arxivmath-2026-08",
+   "bench_is_new": true,
+   "score": 0.385965,
+   "source": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivmath-0826_outputs/blob/64731d80cf7dd2a83d842c4deb9739c81d129efa/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivMath August 2026 outputs dataset (HF revision 64731d80cf7dd2a83d842c4deb9739c81d129efa); published model_name 'Kimi K3 (Think)', model_config 'moonshot/k3' (Kimi CLI harness via OpenRouter (configs/models/moonshot/k3.yaml: moonshotai/kimi-k3, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 57/57 problems, 1-1 attempts per problem; score = mean final-answer correctness as published in the 'correct' column (graded by MathArena answer_judge), averaged per problem then over problems. August protocol differs from earlier months: open-problem prompt, allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt), LLM answer judge (configs/competitions/arxiv/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivmath-0826_outputs",
+    "revision": "64731d80cf7dd2a83d842c4deb9739c81d129efa",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "b0115590ee8853da3151a94c7f576c2d895b55a4c238d25fc7653331ab59588d",
+    "model_config": "moonshot/k3",
+    "problems": 57,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "matharena-brokenarxiv-2026-08",
+   "bench_is_new": true,
+   "score": 0.819444,
+   "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/README.md",
+   "by": "independent",
+   "note": "MathArena BrokenArXiv August 2026 outputs dataset (HF revision 7da551be2a80d7721bd6ee77ef14c8894fdef686); published model_name 'GPT-6 Astra (max)', model_config 'openai/gpt-6-astra' (codex harness (configs/models/openai/gpt-6-astra.yaml: model gpt-6-astra, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 56/56 problems, 3-3 attempts per problem; score = mean normalized judge score from the 'correct' column (judge: arxiv_judge_gemini_38_flash; 1 = explicitly recognises the statement is false), averaged per problem then over problems. August protocol differs from earlier months: allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt); judge changed to Gemini 3.8 Flash (configs/competitions/arxiv_false/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/brokenarxiv-0826_outputs",
+    "revision": "7da551be2a80d7721bd6ee77ef14c8894fdef686",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "e76483d092f57a9f0595e48dbb8150473b5a8e8600f1c1b5b0bc67aa4ce2c040",
+    "model_config": "openai/gpt-6-astra",
+    "problems": 56,
+    "attempts_min": 3,
+    "attempts_max": 3
+   }
+  },
+  {
+   "model": "claude-fable-5-1",
+   "bench": "matharena-brokenarxiv-2026-08",
+   "bench_is_new": true,
+   "score": 0.797619,
+   "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/README.md",
+   "by": "independent",
+   "note": "MathArena BrokenArXiv August 2026 outputs dataset (HF revision 7da551be2a80d7721bd6ee77ef14c8894fdef686); published model_name 'Claude-Fable-5.1 (high)', model_config 'anthropic/fable_51_high' (Claude Code harness (configs/models/anthropic/fable_51_high.yaml: model claude-fable-5-1, adaptive thinking; the max config was not run on this set), eth-sri/matharena b89f2f0ad64c). 56/56 problems, 1-1 attempts per problem; score = mean normalized judge score from the 'correct' column (judge: arxiv_judge_gemini_38_flash; 1 = explicitly recognises the statement is false), averaged per problem then over problems. August protocol differs from earlier months: allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt); judge changed to Gemini 3.8 Flash (configs/competitions/arxiv_false/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/brokenarxiv-0826_outputs",
+    "revision": "7da551be2a80d7721bd6ee77ef14c8894fdef686",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "e76483d092f57a9f0595e48dbb8150473b5a8e8600f1c1b5b0bc67aa4ce2c040",
+    "model_config": "anthropic/fable_51_high",
+    "problems": 56,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "qwen3-8-2-4t-a95b",
+   "bench": "matharena-brokenarxiv-2026-08",
+   "bench_is_new": true,
+   "score": 0.696429,
+   "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/README.md",
+   "by": "independent",
+   "note": "MathArena BrokenArXiv August 2026 outputs dataset (HF revision 7da551be2a80d7721bd6ee77ef14c8894fdef686); published model_name 'Qwen3.8-Max', model_config 'qwen/qwen3.8_max' (Qwen Code harness via OpenRouter (configs/models/qwen/qwen3.8_max.yaml: qwen/qwen3.8-max, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 56/56 problems, 1-1 attempts per problem; score = mean normalized judge score from the 'correct' column (judge: arxiv_judge_gemini_38_flash; 1 = explicitly recognises the statement is false), averaged per problem then over problems. August protocol differs from earlier months: allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt); judge changed to Gemini 3.8 Flash (configs/competitions/arxiv_false/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/brokenarxiv-0826_outputs",
+    "revision": "7da551be2a80d7721bd6ee77ef14c8894fdef686",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "e76483d092f57a9f0595e48dbb8150473b5a8e8600f1c1b5b0bc67aa4ce2c040",
+    "model_config": "qwen/qwen3.8_max",
+    "problems": 56,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "kimi-k3",
+   "bench": "matharena-brokenarxiv-2026-08",
+   "bench_is_new": true,
+   "score": 0.619048,
+   "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/README.md",
+   "by": "independent",
+   "note": "MathArena BrokenArXiv August 2026 outputs dataset (HF revision 7da551be2a80d7721bd6ee77ef14c8894fdef686); published model_name 'Kimi K3 (Think)', model_config 'moonshot/k3' (Kimi CLI harness via OpenRouter (configs/models/moonshot/k3.yaml: moonshotai/kimi-k3, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 56/56 problems, 1-1 attempts per problem; score = mean normalized judge score from the 'correct' column (judge: arxiv_judge_gemini_38_flash; 1 = explicitly recognises the statement is false), averaged per problem then over problems. August protocol differs from earlier months: allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt); judge changed to Gemini 3.8 Flash (configs/competitions/arxiv_false/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/brokenarxiv-0826_outputs",
+    "revision": "7da551be2a80d7721bd6ee77ef14c8894fdef686",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "e76483d092f57a9f0595e48dbb8150473b5a8e8600f1c1b5b0bc67aa4ce2c040",
+    "model_config": "moonshot/k3",
+    "problems": 56,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "gemini-3-8-flash",
+   "bench": "matharena-brokenarxiv-2026-08",
+   "bench_is_new": true,
+   "score": 0.27381,
+   "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/README.md",
+   "by": "independent",
+   "note": "MathArena BrokenArXiv August 2026 outputs dataset (HF revision 7da551be2a80d7721bd6ee77ef14c8894fdef686); published model_name 'Gemini 3.8 Flash', model_config 'gemini/gemini-38-flash' (Antigravity CLI harness (configs/models/gemini/gemini-38-flash.yaml: gemini-3.8-flash, reasoning_effort high), eth-sri/matharena b89f2f0ad64c). 56/56 problems, 3-3 attempts per problem; score = mean normalized judge score from the 'correct' column (judge: arxiv_judge_gemini_38_flash; 1 = explicitly recognises the statement is false), averaged per problem then over problems. August protocol differs from earlier months: allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt); judge changed to Gemini 3.8 Flash (configs/competitions/arxiv_false/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/brokenarxiv-0826_outputs",
+    "revision": "7da551be2a80d7721bd6ee77ef14c8894fdef686",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "e76483d092f57a9f0595e48dbb8150473b5a8e8600f1c1b5b0bc67aa4ce2c040",
+    "model_config": "gemini/gemini-38-flash",
+    "problems": 56,
+    "attempts_min": 3,
+    "attempts_max": 3
+   }
+  },
+  {
+   "model": "muse-spark-1-3",
+   "bench": "matharena-brokenarxiv-2026-08",
+   "bench_is_new": true,
+   "score": 0.202381,
+   "source": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/brokenarxiv-0826_outputs/blob/7da551be2a80d7721bd6ee77ef14c8894fdef686/README.md",
+   "by": "independent",
+   "note": "MathArena BrokenArXiv August 2026 outputs dataset (HF revision 7da551be2a80d7721bd6ee77ef14c8894fdef686); published model_name 'Muse Spark 1.3', model_config 'meta/muse_spark_13' (Muse harness (configs/models/meta/muse_spark_13.yaml: muse-spark-1.3, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 56/56 problems, 1-1 attempts per problem; score = mean normalized judge score from the 'correct' column (judge: arxiv_judge_gemini_38_flash; 1 = explicitly recognises the statement is false), averaged per problem then over problems. August protocol differs from earlier months: allow_harness: true (shell, Python, SageMath, no internet; 12 h / $100 per attempt); judge changed to Gemini 3.8 Flash (configs/competitions/arxiv_false/august.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-15",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/brokenarxiv-0826_outputs",
+    "revision": "7da551be2a80d7721bd6ee77ef14c8894fdef686",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "e76483d092f57a9f0595e48dbb8150473b5a8e8600f1c1b5b0bc67aa4ce2c040",
+    "model_config": "meta/muse_spark_13",
+    "problems": 56,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "matharena-arxivlean-2026-06",
+   "bench_is_new": true,
+   "score": 0.652174,
+   "source": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivLean June 2026 outputs dataset (HF revision 4221f7241f21cf4d39a80b934b7ea76d53ba29ed); published model_name 'GPT-6 Astra (max)', model_config 'openai/gpt-6-astra' (codex harness (configs/models/openai/gpt-6-astra.yaml: model gpt-6-astra, reasoning_effort max), eth-sri/matharena b89f2f0ad64c). 46/46 problems, 1-1 attempts per problem; score = mean Lean-verified proof success from the 'correct' column, averaged per problem then over problems. Lean v4.31.0 + mathlib; competition allows harness opt-in per model config (default_harness: false); max 200 tool calls (configs/competitions/arxivlean/june.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-11",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivlean-0626_outputs",
+    "revision": "4221f7241f21cf4d39a80b934b7ea76d53ba29ed",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "0868e8bc66c4462c8c7a2a63c031b85b6ca1e577520545b73be6a007b789d70f",
+    "model_config": "openai/gpt-6-astra",
+    "problems": 46,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "bench": "matharena-arxivlean-2026-06",
+   "bench_is_new": true,
+   "score": 0.326087,
+   "source": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivLean June 2026 outputs dataset (HF revision 4221f7241f21cf4d39a80b934b7ea76d53ba29ed); published model_name 'Claude-Opus-5 (max)', model_config 'anthropic/opus_5_max_128' (config file not present in eth-sri/matharena at b89f2f0ad64c; identity from published model_name only, eth-sri/matharena b89f2f0ad64c). 46/46 problems, 1-1 attempts per problem; score = mean Lean-verified proof success from the 'correct' column, averaged per problem then over problems. Lean v4.31.0 + mathlib; competition allows harness opt-in per model config (default_harness: false); max 200 tool calls (configs/competitions/arxivlean/june.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-11",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivlean-0626_outputs",
+    "revision": "4221f7241f21cf4d39a80b934b7ea76d53ba29ed",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "0868e8bc66c4462c8c7a2a63c031b85b6ca1e577520545b73be6a007b789d70f",
+    "model_config": "anthropic/opus_5_max_128",
+    "problems": 46,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "gemini-3-7-flash",
+   "bench": "matharena-arxivlean-2026-06",
+   "bench_is_new": true,
+   "score": 0.217391,
+   "source": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivLean June 2026 outputs dataset (HF revision 4221f7241f21cf4d39a80b934b7ea76d53ba29ed); published model_name 'Gemini 3.7 Flash', model_config 'gemini/gemini-37-flash' (plain API with MathArena Lean tools (configs/models/gemini/gemini-37-flash.yaml: gemini-3.7-flash, reasoning_effort high, no harness), eth-sri/matharena b89f2f0ad64c). 46/46 problems, 1-1 attempts per problem; score = mean Lean-verified proof success from the 'correct' column, averaged per problem then over problems. Lean v4.31.0 + mathlib; competition allows harness opt-in per model config (default_harness: false); max 200 tool calls (configs/competitions/arxivlean/june.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-11",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivlean-0626_outputs",
+    "revision": "4221f7241f21cf4d39a80b934b7ea76d53ba29ed",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "0868e8bc66c4462c8c7a2a63c031b85b6ca1e577520545b73be6a007b789d70f",
+    "model_config": "gemini/gemini-37-flash",
+    "problems": 46,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "gemini-3-8-flash",
+   "bench": "matharena-arxivlean-2026-06",
+   "bench_is_new": true,
+   "score": 0.195652,
+   "source": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivLean June 2026 outputs dataset (HF revision 4221f7241f21cf4d39a80b934b7ea76d53ba29ed); published model_name 'Gemini 3.8 Flash', model_config 'gemini/gemini-38-flash' (Antigravity CLI harness (configs/models/gemini/gemini-38-flash.yaml: gemini-3.8-flash, reasoning_effort high), eth-sri/matharena b89f2f0ad64c). 46/46 problems, 1-1 attempts per problem; score = mean Lean-verified proof success from the 'correct' column, averaged per problem then over problems. Lean v4.31.0 + mathlib; competition allows harness opt-in per model config (default_harness: false); max 200 tool calls (configs/competitions/arxivlean/june.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-11",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivlean-0626_outputs",
+    "revision": "4221f7241f21cf4d39a80b934b7ea76d53ba29ed",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "0868e8bc66c4462c8c7a2a63c031b85b6ca1e577520545b73be6a007b789d70f",
+    "model_config": "gemini/gemini-38-flash",
+    "problems": 46,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "claude-fable-5",
+   "bench": "matharena-arxivlean-2026-06",
+   "bench_is_new": true,
+   "score": 0.152174,
+   "source": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/data/train-00000-of-00001.parquet",
+   "source_id": "matharena-arxiv-outputs-bysa",
+   "license": "CC BY-SA 4.0",
+   "license_evidence_url": "https://huggingface.co/datasets/MathArena/arxivlean-0626_outputs/blob/4221f7241f21cf4d39a80b934b7ea76d53ba29ed/README.md",
+   "by": "independent",
+   "note": "MathArena ArXivLean June 2026 outputs dataset (HF revision 4221f7241f21cf4d39a80b934b7ea76d53ba29ed); published model_name 'Claude-Fable-5 (max)', model_config 'anthropic/fable_5_max_128' (config file not present in eth-sri/matharena at b89f2f0ad64c; identity from published model_name only, eth-sri/matharena b89f2f0ad64c). 46/46 problems, 1-1 attempts per problem; score = mean Lean-verified proof success from the 'correct' column, averaged per problem then over problems. Lean v4.31.0 + mathlib; competition allows harness opt-in per model config (default_harness: false); max 200 tool calls (configs/competitions/arxivlean/june.yaml). Separate benchmark from earlier months. CC BY-SA 4.0.",
+   "date": "2026-09-11",
+   "evidence": {
+    "kind": "per-attempt parquet aggregated",
+    "dataset": "MathArena/arxivlean-0626_outputs",
+    "revision": "4221f7241f21cf4d39a80b934b7ea76d53ba29ed",
+    "file": "data/train-00000-of-00001.parquet",
+    "file_sha256": "0868e8bc66c4462c8c7a2a63c031b85b6ca1e577520545b73be6a007b789d70f",
+    "model_config": "anthropic/fable_5_max_128",
+    "problems": 46,
+    "attempts_min": 1,
+    "attempts_max": 1
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "robloxqa-v2-mc",
+   "bench_is_new": false,
+   "score": 0.985667,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "2957/3000 correct (noAnswer=6). Roblox LLM Leaderboard entry 'Claude Opus 5.5 (Medium)' (https://www.anthropic.com/claude/opus); effort/setting as labelled 'Medium' (the only setting listed for this model); run files claude-opus-5-5_mc_effort-medium.json5 / claude-opus-5-5_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "luau-leetcode-full-pass",
+   "bench_is_new": false,
+   "score": 0.870192,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "fullPass 44+84+53=181/208. Roblox LLM Leaderboard entry 'Claude Opus 5.5 (Medium)' (https://www.anthropic.com/claude/opus); effort/setting as labelled 'Medium' (the only setting listed for this model); run files claude-opus-5-5_mc_effort-medium.json5 / claude-opus-5-5_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "robloxqa-v2-mc",
+   "bench_is_new": false,
+   "score": 0.966333,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "2899/3000 correct (noAnswer=2). Roblox LLM Leaderboard entry 'Claude Sonnet 5.5 (Medium)' (https://www.anthropic.com/claude/sonnet); effort/setting as labelled 'Medium' (the only setting listed for this model); run files claude-sonnet-5-5_mc_effort-medium.json5 / claude-sonnet-5-5_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "luau-leetcode-full-pass",
+   "bench_is_new": false,
+   "score": 0.807692,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "fullPass 44+80+44=168/208. Roblox LLM Leaderboard entry 'Claude Sonnet 5.5 (Medium)' (https://www.anthropic.com/claude/sonnet); effort/setting as labelled 'Medium' (the only setting listed for this model); run files claude-sonnet-5-5_mc_effort-medium.json5 / claude-sonnet-5-5_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "robloxqa-v2-mc",
+   "bench_is_new": false,
+   "score": 0.985,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "2955/3000 correct (noAnswer=0). Roblox LLM Leaderboard entry 'GPT 6 Astra (Medium)' (https://developers.openai.com/api/docs/models/gpt-6-astra); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6-astra_mc_effort-medium.json5 / gpt-6-astra_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "luau-leetcode-full-pass",
+   "bench_is_new": false,
+   "score": 0.870192,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "fullPass 45+83+53=181/208. Roblox LLM Leaderboard entry 'GPT 6 Astra (Medium)' (https://developers.openai.com/api/docs/models/gpt-6-astra); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6-astra_mc_effort-medium.json5 / gpt-6-astra_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "robloxqa-v2-mc",
+   "bench_is_new": false,
+   "score": 0.956333,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "2869/3000 correct (noAnswer=0). Roblox LLM Leaderboard entry 'GPT 6 Luna (Medium)' (https://developers.openai.com/api/docs/models/gpt-6-luna); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6-luna_mc_effort-medium.json5 / gpt-6-luna_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "luau-leetcode-full-pass",
+   "bench_is_new": false,
+   "score": 0.807692,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "fullPass 44+81+43=168/208. Roblox LLM Leaderboard entry 'GPT 6 Luna (Medium)' (https://developers.openai.com/api/docs/models/gpt-6-luna); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6-luna_mc_effort-medium.json5 / gpt-6-luna_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "robloxqa-v2-mc",
+   "bench_is_new": false,
+   "score": 0.978333,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "2935/3000 correct (noAnswer=0). Roblox LLM Leaderboard entry 'GPT 6 Sol (Medium)' (https://developers.openai.com/api/docs/models/gpt-6-sol); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6-sol_mc_effort-medium.json5 / gpt-6-sol_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "luau-leetcode-full-pass",
+   "bench_is_new": false,
+   "score": 0.826923,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "fullPass 42+80+50=172/208. Roblox LLM Leaderboard entry 'GPT 6 Sol (Medium)' (https://developers.openai.com/api/docs/models/gpt-6-sol); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6-sol_mc_effort-medium.json5 / gpt-6-sol_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "robloxqa-v2-mc",
+   "bench_is_new": false,
+   "score": 0.985667,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "2957/3000 correct (noAnswer=0). Roblox LLM Leaderboard entry 'GPT 6.1 Sol (Medium)' (https://developers.openai.com/api/docs/models/gpt-6.1-sol); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6.1-sol_mc_effort-medium.json5 / gpt-6.1-sol_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "luau-leetcode-full-pass",
+   "bench_is_new": false,
+   "score": 0.870192,
+   "source": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json",
+   "source_id": "roblox-llm-leaderboard",
+   "license": "MIT",
+   "license_evidence_url": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/README.md",
+   "by": "independent",
+   "note": "fullPass 45+84+52=181/208. Roblox LLM Leaderboard entry 'GPT 6.1 Sol (Medium)' (https://developers.openai.com/api/docs/models/gpt-6.1-sol); effort/setting as labelled 'Medium' (the only setting listed for this model); run files gpt-6.1-sol_mc_effort-medium.json5 / gpt-6.1-sol_effort-medium.json5. Date = leaderboard generatedAt 2026-09-30. Space revision 676755cd82ed2886048e282f1a6106ddf6e5fea5. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "mideind-icelandic-average",
+   "bench_is_new": false,
+   "score": 0.681688,
+   "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json",
+   "source_id": "mideind-icelandic-llm-leaderboard",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/README.md",
+   "by": "independent",
+   "note": "Miðeind Icelandic LLM Leaderboard entry 'GPT-6.1 Sol' (openai/gpt-6.1-sol), thinking='high', gen_kwargs={\"max_completion_tokens\": 32000, \"reasoning_effort\": \"high\", \"allowed_openai_params\": [\"reasoning_effort\"]}; highest of the listed settings ['high', 'low']. Published 'average' (Knowledge 0.502082, Language Proficiency 0.816392). Date = latest benchmark_evaluated_at. Board generated 2026-09-30T09:19:24Z; Space revision 7b12ee6799a4735154be85170c53d7266b2de4e6. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "mideind-icelandic-average",
+   "bench_is_new": false,
+   "score": 0.621202,
+   "source": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/leaderboard.json",
+   "source_id": "mideind-icelandic-llm-leaderboard",
+   "license": "CC BY 4.0",
+   "license_evidence_url": "https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/7b12ee6799a4735154be85170c53d7266b2de4e6/README.md",
+   "by": "independent",
+   "note": "Miðeind Icelandic LLM Leaderboard entry 'Claude Sonnet 5.5' (anthropic/claude-sonnet-5-5), thinking='high', gen_kwargs={\"max_tokens\": 32000, \"reasoning_effort\": \"high\"}; highest of the listed settings ['high', 'off']. Published 'average' (Knowledge 0.425866, Language Proficiency 0.767705). Date = latest benchmark_evaluated_at. Board generated 2026-09-30T09:19:24Z; Space revision 7b12ee6799a4735154be85170c53d7266b2de4e6. Ledger: source_id exists but its match list pins the older revision; add this revision URL to the match list before import.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "claude-fable-5",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.4455,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-anthropic-claude-fable-5-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'anthropic/claude-fable-5' (display 'Fable 5'), agent Claude Code (claude-code 2.1.231), reasoning_effort max. metrics.accuracy 44.55% ± 3.85 (95% CI half-width); 147/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-06-09 is the model release date. file sha256 487f60477db9c36bd5cdb3d50c80634233bfa53de3368cf33337a771f17aa07e.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "claude-opus-5",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.5182,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-anthropic-claude-opus-5-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'anthropic/claude-opus-5' (display 'Opus 5'), agent Claude Code (claude-code 2.1.231), reasoning_effort max. metrics.accuracy 51.82% ± 3.39 (95% CI half-width); 171/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-07-24 is the model release date. file sha256 06fbebf9bf42c430c49b020f86b9365f5ae772c6063bab4fce98f54e349ed80c.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "glm-5-3",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.4182,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-anthropic-glm-5-3-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'anthropic/glm-5.3' (display 'GLM-5.3'), agent Claude Code (claude-code 2.1.207), reasoning_effort max. metrics.accuracy 41.82% ± 3.23 (95% CI half-width); 138/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-08-14 is the model release date. file sha256 f8c5a8ef9dab054e78444f6e2e4b756dda2cf193839a3a357ce2a4d32a0c24c9.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "gpt-5-6-luna",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.1727,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-openai-gpt-5-6-luna-max-codex.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'openai/gpt-5.6-luna' (display 'GPT-5.6 Luna'), agent Codex (codex 0.149.1), reasoning_effort max. metrics.accuracy 17.27% ± 2.85 (95% CI half-width); 57/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-06-26 is the model release date. file sha256 59ae3614eca2b0c1f087b7a50d65e3fc40dd2ef0188c2fab40d32c5a50f823a7.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "gpt-5-6-sol",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.3727,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-openai-gpt-5-6-sol-max-codex.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'openai/gpt-5.6-sol' (display 'GPT-5.6 Sol'), agent Codex (codex 0.149.1), reasoning_effort max. metrics.accuracy 37.27% ± 3.78 (95% CI half-width); 123/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-06-26 is the model release date. file sha256 b41e5f5f15aeb7657f9d32b33a868aecab6dd6db2d48b7480638455664102c5b.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "gpt-5-6-terra",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.2152,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-openai-gpt-5-6-terra-max-codex.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'openai/gpt-5.6-terra' (display 'GPT-5.6 Terra'), agent Codex (codex 0.149.1), reasoning_effort max. metrics.accuracy 21.52% ± 3.25 (95% CI half-width); 71/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-06-26 is the model release date. file sha256 1c7ca98885e40ed4dc31d23391982848b2c1dd87b0595743fa242ad848f1b670.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "grok-4-5",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.1242,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-xai-grok-4-5-none-grok-build.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'xai/grok-4.5' (display 'Grok 4.5'), agent Grok Build (grok-build 1.0.5), reasoning_effort None. metrics.accuracy 12.42% ± 2.62 (95% CI half-width); 41/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-07-16 is the model release date. file sha256 fa618ecb274776479019af6d62c538197cbb563a44d8b8a45752dde51d603b93.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "grok-4-6",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.203,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-08-26-xai-grok-4-6-none-grok-build.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'xai/grok-4.6' (display 'Grok 4.6'), agent Grok Build (grok-build 1.0.5), reasoning_effort None. metrics.accuracy 20.3% ± 3.09 (95% CI half-width); 67/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-08-12 is the model release date. file sha256 31526e5dff0e06680085bb5029700b0fddc607962e7c6aea9a911600c6b2df1a.",
+   "date": "2026-08-26"
+  },
+  {
+   "model": "gemini-3-8-flash",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.1909,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-01-gemini-gemini-3-8-flash-high-mini-swe-agent.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'gemini/gemini-3.8-flash' (display 'Gemini 3.8 Flash'), agent mini-SWE-agent (mini-swe-agent 2.4.6), reasoning_effort high. metrics.accuracy 19.09% ± 3.36 (95% CI half-width); 63/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-02 is the model release date. file sha256 835f2090e7d40d9e5c6c5483da49c5f3147a0304e615df49c71aafa859a62c50.",
+   "date": "2026-09-01"
+  },
+  {
+   "model": "claude-fable-5-1",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.5788,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-anthropic-claude-fable-5-1-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'anthropic/claude-fable-5-1' (display 'Fable 5.1'), agent Claude Code (claude-code 2.1.257), reasoning_effort max. metrics.accuracy 57.88% ± 3.76 (95% CI half-width); 191/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-01 is the model release date. file sha256 cccdb936c1266db66ce922db48144ed0716c1294eec3dcc1bdcf976711c92813.",
+   "date": "2026-09-02"
+  },
+  {
+   "model": "gemini-3-7-flash",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.1121,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-02-gemini-gemini-3-7-flash-high-mini-swe-agent.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'gemini/gemini-3.7-flash' (display 'Gemini 3.7 Flash'), agent mini-SWE-agent (mini-swe-agent 2.4.6), reasoning_effort high. metrics.accuracy 11.21% ± 2.45 (95% CI half-width); 37/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-08-13 is the model release date. file sha256 013ace9d0c06b97aed4227b624aff0724257b2ca44a113553a03707545efc0cc.",
+   "date": "2026-09-02"
+  },
+  {
+   "model": "claude-opus-5-5",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.6485,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-anthropic-claude-opus-5-5-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'anthropic/claude-opus-5-5' (display 'Opus 5.5'), agent Claude Code (claude-code 2.1.284), reasoning_effort max. metrics.accuracy 64.85% ± 3.11 (95% CI half-width); 214/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-22 is the model release date. file sha256 782d7a4b5e832873b660fad00da9a8d2eb2f37b6bf3a7e65e4f6ffa7cd82a53c.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.6182,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-anthropic-claude-sonnet-5-5-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'anthropic/claude-sonnet-5-5' (display 'Sonnet 5.5'), agent Claude Code (claude-code 2.1.284), reasoning_effort max. metrics.accuracy 61.82% ± 2.94 (95% CI half-width); 204/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-28 is the model release date. file sha256 723a52bf4c657d3bde65ce61a4dd5caffbae3aa2359f9944181bb5c1eb81455b.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "muse-spark-1-3",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.1455,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-meta-muse-spark-1-3-xhigh-muse-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'meta/muse-spark-1.3' (display 'Muse Spark 1.3'), agent Muse Code (muse-code 1.4.1), reasoning_effort xhigh. metrics.accuracy 14.55% ± 2.94 (95% CI half-width); 48/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-02 is the model release date. file sha256 0f63ac5aafcaf947308057eb937a5a1901331948a83cf84645f99117bb1542ff.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-1-sol",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.5818,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-1-sol-max-codex.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'openai/gpt-6.1-sol' (display 'GPT-6.1 Sol'), agent Codex (codex 0.159.0), reasoning_effort max. metrics.accuracy 58.18% ± 3.11 (95% CI half-width); 192/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-29 is the model release date. file sha256 2bb4407be33d9ea12c9d1173ee749b1296bba0b5fb8442c87c9cc7be3c2d8bf7.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-luna",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.1636,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-luna-max-codex.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'openai/gpt-6-luna' (display 'GPT-6 Luna'), agent Codex (codex 0.159.0), reasoning_effort max. metrics.accuracy 16.36% ± 2.72 (95% CI half-width); 54/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-22 is the model release date. file sha256 f063aee31d6599b95ebe37341071bc625bf042362b45590db4cc50efbb5cb8a8.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.4939,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-sol-max-codex.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'openai/gpt-6-sol' (display 'GPT-6 Sol'), agent Codex (codex 0.159.0), reasoning_effort max. metrics.accuracy 49.39% ± 3.23 (95% CI half-width); 163/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-22 is the model release date. file sha256 c516de23e47a1d39f10844f10c8d387a38febb9d93f0ab6b069507edcb84c0cd.",
+   "date": "2026-09-30"
+  },
+  {
+   "model": "qwen3-8-max-0902",
+   "bench": "terminal-bench-4",
+   "bench_is_new": false,
+   "score": 0.2697,
+   "source": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-10-06-qwen-qwen3-8-max-0902-max-claude-code.json",
+   "source_id": "NEW:terminal-bench-leaderboard-submissions",
+   "license": "Apache-2.0",
+   "license_evidence_url": "https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/LICENSE",
+   "by": "independent",
+   "note": "Official Terminal-Bench 4.0 leaderboard submission file (dataset terminal-bench/terminal-bench ref v4.0.0, maintainer-run; community submissions closed). model_name 'qwen/qwen3.8-max-0902' (display 'Qwen3.8-Max-0902'), agent Claude Code (claude-code 2.1.285), reasoning_effort max. metrics.accuracy 26.97% ± 3.78 (95% CI half-width); 89/330 trials (5 trials per task), 0 disqualified. Harness differs by vendor (agent per note), as the existing terminal-bench-4 description allows. Date = submission file date; metadata.date 2026-09-02 is the model release date. file sha256 96e243adaf488b3c8414821579eff6a54b664e673d5fcc532dbe0a48afb03acf.",
+   "date": "2026-10-06"
+  },
+  {
+   "model": "claude-opus-5",
+   "bench": "automationbench-public-zapier",
+   "bench_is_new": true,
+   "score": 0.503,
+   "source": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md",
+   "source_id": "NEW:zapier-automationbench-readme",
+   "license": "MIT",
+   "license_evidence_url": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/LICENSE",
+   "by": "independent",
+   "note": "Zapier AutomationBench README table 'Pass rates on the 600-task public benchmark' (benchmark maintainer's runs, not the official private-set leaderboard at zapier.com/benchmarks); row 'Claude Opus 5', reasoning effort max, 50.3%. README notes Fable 5 score is after the July 2026 stricter classifier; package version for each row not stated (v1.0.6 released in the commit before), so kept separate from automationbench / automationbench-public / automationbench-v1-0-6. Date = README commit date.",
+   "date": "2026-08-04"
+  },
+  {
+   "model": "kimi-k3",
+   "bench": "automationbench-public-zapier",
+   "bench_is_new": true,
+   "score": 0.4667,
+   "source": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md",
+   "source_id": "NEW:zapier-automationbench-readme",
+   "license": "MIT",
+   "license_evidence_url": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/LICENSE",
+   "by": "independent",
+   "note": "Zapier AutomationBench README table 'Pass rates on the 600-task public benchmark' (benchmark maintainer's runs, not the official private-set leaderboard at zapier.com/benchmarks); row 'Kimi K3', reasoning effort max, 46.67%. README notes Fable 5 score is after the July 2026 stricter classifier; package version for each row not stated (v1.0.6 released in the commit before), so kept separate from automationbench / automationbench-public / automationbench-v1-0-6. Date = README commit date.",
+   "date": "2026-08-04"
+  },
+  {
+   "model": "claude-fable-5",
+   "bench": "automationbench-public-zapier",
+   "bench_is_new": true,
+   "score": 0.4617,
+   "source": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md",
+   "source_id": "NEW:zapier-automationbench-readme",
+   "license": "MIT",
+   "license_evidence_url": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/LICENSE",
+   "by": "independent",
+   "note": "Zapier AutomationBench README table 'Pass rates on the 600-task public benchmark' (benchmark maintainer's runs, not the official private-set leaderboard at zapier.com/benchmarks); row 'Claude Fable 5', reasoning effort max, 46.17%. README notes Fable 5 score is after the July 2026 stricter classifier; package version for each row not stated (v1.0.6 released in the commit before), so kept separate from automationbench / automationbench-public / automationbench-v1-0-6. Date = README commit date.",
+   "date": "2026-08-04"
+  },
+  {
+   "model": "gpt-5-6-sol",
+   "bench": "automationbench-public-zapier",
+   "bench_is_new": true,
+   "score": 0.4583,
+   "source": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md",
+   "source_id": "NEW:zapier-automationbench-readme",
+   "license": "MIT",
+   "license_evidence_url": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/LICENSE",
+   "by": "independent",
+   "note": "Zapier AutomationBench README table 'Pass rates on the 600-task public benchmark' (benchmark maintainer's runs, not the official private-set leaderboard at zapier.com/benchmarks); row 'GPT-5.6 Sol', reasoning effort max, 45.83%. README notes Fable 5 score is after the July 2026 stricter classifier; package version for each row not stated (v1.0.6 released in the commit before), so kept separate from automationbench / automationbench-public / automationbench-v1-0-6. Date = README commit date.",
+   "date": "2026-08-04"
+  },
+  {
+   "model": "gpt-5-6-terra",
+   "bench": "automationbench-public-zapier",
+   "bench_is_new": true,
+   "score": 0.3717,
+   "source": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/README.md",
+   "source_id": "NEW:zapier-automationbench-readme",
+   "license": "MIT",
+   "license_evidence_url": "https://github.com/zapier/AutomationBench/blob/4a8e1061254004d9dac807054eed33fad7d1ff14/LICENSE",
+   "by": "independent",
+   "note": "Zapier AutomationBench README table 'Pass rates on the 600-task public benchmark' (benchmark maintainer's runs, not the official private-set leaderboard at zapier.com/benchmarks); row 'GPT-5.6 Terra', reasoning effort max, 37.17%. README notes Fable 5 score is after the July 2026 stricter classifier; package version for each row not stated (v1.0.6 released in the commit before), so kept separate from automationbench / automationbench-public / automationbench-v1-0-6. Date = README commit date.",
+   "date": "2026-08-04"
+  }
+ ],
+ "not_usable": [
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "Epoch external CSVs: APEX-Agents, ARC-AGI / ARC-AGI-2, CritPt, SciCode (sourced from artificialanalysis.ai), Blueprint-Bench 2, DTBench, LMCA, FrontierCode, FrontierSWE, GDP.pdf, ProofBench (vals.ai), Vending-Bench 2, WeirdML v3, WebDev Arena (arena.ai), CursorBench (Opus only), ALE-Bench",
+   "where": "https://epoch.ai/data/benchmark_data.zip (*_external.csv)",
+   "why": "External runs keep upstream restrictions; the epoch-internal ledger entry covers internal CSVs only. Primary sources must be checked separately (several are the vendors' own or closed leaderboards; SciCode/WebDev rows come from AA/arena.ai)."
+  },
+  {
+   "model": "gpt-6-astra",
+   "benchmark": "Epoch external: HLE, RLI, DeepSWE, GSO, BALROG, BTF-3, WeirdML (incl. promax)",
+   "where": "https://epoch.ai/data/benchmark_data.zip (*_external.csv)",
+   "why": "External runs, same reason; Opus 5.5 is not in these files anyway."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra and other targets",
+   "benchmark": "MathArena AIME 2026, HMMT Feb 2026, USAMO 2026, Kangaroo, APEX, Putnam 2025 etc.",
+   "where": "https://huggingface.co/datasets/MathArena/aime_2026_outputs (and siblings)",
+   "why": "Dataset cards say cc-by-nc-sa-4.0 (non-commercial). Opus 5.5 is not in them either."
+  },
+  {
+   "model": "gpt-6-astra, claude-fable-5-1, kimi-k3, qwen3-8-2-4t-a95b, gemini-3-8-flash",
+   "benchmark": "LMArena text_factuality / agent signal subsets",
+   "where": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+   "why": "Licence fine (CC BY 4.0), but these re-score the same battles/sessions as text and agent; adding them would manufacture correlated tests (UPDATING.md rule)."
+  },
+  {
+   "model": "glm-5-3",
+   "benchmark": "MathArena ArXivMath April 2026",
+   "where": "https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet",
+   "why": "Only 26 of 40 problems run; incomplete, not comparable."
+  },
+  {
+   "model": "qwen3-8-flash-next",
+   "benchmark": "robloxqa-v2-mc / luau-leetcode-full-pass",
+   "where": "https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json (entries 'Qwen 3.8 Flash Next (Medium, NVFP4)' and '(XHigh, NVFP4)')",
+   "why": "Licence is fine (MIT), but these are local NVFP4-quantised runs, not the reference checkpoint; the previous import skipped every quantised (Q4_K_M/Q8_0/NVFP4) Roblox entry, so not proposed. XHigh NVFP4 would be mc 2721/3000=0.907, fullPass 42+76+41=159/208=0.764423 if the owner decides quantised runs are acceptable."
+  },
+  {
+   "model": "qwen3-8-flash-next",
+   "benchmark": "bridge-clinical-zeroshot-avg (Non-Thinking row)",
+   "where": "https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/4701984de19780186fba13f0c61823a361ac57c1/leaderboards/Zero-Shot_leaderboard.json",
+   "why": "Already have the -Thinking row (highest setting); the -Non-Thinking row is a lower setting of the same model and is deliberately not imported."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "AA Intelligence Index components and AA-run evals: AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, AA-Omniscience, AA-LCR v1.1, Harvey LAB-AA, EnterpriseOps-Gym-AA, AA-AnalystAgent, ITBench-AA, MLCR-AA, and AA runs of Terminal-Bench 4.0, SciCode, HLE, GDP.pdf, CritPt, MMMU-Pro, Terminal-Bench-Science 0.1",
+   "where": "https://artificialanalysis.ai/models/claude-opus-5-5 ; https://artificialanalysis.ai/models/gpt-6-astra",
+   "why": "Artificial Analysis terms: personal, non-commercial use only (ledger id artificial-analysis, not-allowed). Pages read only to list evaluation names; no numbers recorded."
+  },
+  {
+   "model": "claude-opus-5-5",
+   "benchmark": "Terminal-Bench 4.0, FrontierCode v1.1 (Main), CursorBench 4.0, GDPval-AA v2.1, AutomationBench, Humanity's Last Exam, Terminal-Bench-Science 0.1, OSWorld 2.1, Chartography, WANDR (comparison columns: Claude Fable 5.1, Claude Opus 5, GPT-6 Astra, GPT-5.6 Sol); system card https://anthropic.com/claude-opus-5-5-system-card",
+   "where": "https://www.anthropic.com/news/claude-opus-5-5",
+   "why": "Vendor announcement/system card: not open-licensed. Numbers not recorded."
+  },
+  {
+   "model": "gpt-6-astra",
+   "benchmark": "FrontierMath Tier 4, GPQA Diamond, Terminal-Bench Science, Terminal-Bench 4.0, OSWorld 2.0, ScreenSpot-Pro, DeepSWE v1.1, ExploitBench, plus Preparedness/system-card safety evals (list via secondary coverage; openai.com returned HTTP 403 to the fetcher)",
+   "where": "https://openai.com/index/introducing-gpt-6-astra/ and the GPT-6 Astra system card",
+   "why": "Vendor launch post/system card: not open-licensed. Numbers not recorded."
+  },
+  {
+   "model": "gpt-6-astra",
+   "benchmark": "Terminal-Bench 4.0 (official leaderboard)",
+   "where": "https://github.com/harbor-framework/terminal-bench/tree/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions",
+   "why": "No GPT-6 Astra submission exists in the official leaderboard repo (21 submissions; no PR mentioning Astra). Only vendor-reported TB 4.0 numbers exist for Astra, which are not usable. Opus 5.5, GPT-6 Sol, GPT-6.1 Sol and GPT-6 Luna are on it."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "Terminal-Bench-Science 0.1",
+   "where": "https://terminal-bench-science.ai (Harbor Hub); repo https://github.com/harbor-framework/terminal-bench-science",
+   "why": "Repo (Apache-2.0) holds tasks only, no leaderboard result files; leaderboard is served from the website/Harbor Hub with no licence statement for results."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "Humanity's Last Exam",
+   "where": "https://lastexam.ai ; Scale SEAL leaderboards ; https://dashboard.safe.ai",
+   "why": "lastexam.ai leaderboard is stale (no Opus 5.5/Astra) and carries no licence for results; Scale leaderboards are under Scale terms; CAIS dashboard has no HLE results/licence. centerforaisafety/hle repo (MIT) has no results table. Epoch has no internal HLE file."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "CritPt",
+   "where": "https://critpt.com ; https://github.com/CritPt-Benchmark/CritPt ; https://github.com/CritPt-Benchmark/CritPt-Benchmark.github.io",
+   "why": "Neither the benchmark repo nor the website repo has a licence (GitHub reports none); leaderboard figures are AA-run. Not usable."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "GDP.pdf",
+   "where": "https://surgehq.ai (Surge AI leaderboard); Epoch gdp_pdf_external.csv",
+   "why": "Surge AI leaderboard has no open licence; Epoch file is an *_external.csv (excluded by the epoch-internal ledger entry). surgeai HF datasets (GDP.xlsx Apache-2.0, DAYJOB MIT) are task sets without model results."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "FrontierCode v1.1",
+   "where": "https://cognition.com/blog/frontier-code-1.1 ; Epoch frontiercode_external.csv",
+   "why": "Cognition (vendor) site, no open licence; Epoch copy is external (excluded)."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "CursorBench 4.0",
+   "where": "Cursor (vendor) ; Epoch cursorbench_external.csv",
+   "why": "Vendor benchmark without open licence; Epoch copy is external (excluded)."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "GDPval",
+   "where": "OpenAI GDPval (evals.openai.com) ; GDPval-AA",
+   "why": "OpenAI vendor publication (not open-licensed) and AA run (not allowed). Epoch gdpval_external.csv is external."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "EnterpriseOps-Gym",
+   "where": "https://huggingface.co/spaces/ServiceNow-AI/NowAI-Bench (rev e0db8f23a7ebc1e87a41094f8e06c83f55a6f1ad)",
+   "why": "Space has no licence field and was last updated 2026-07-23 (predates both models); other leaderboard is AA-run."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "Harvey LAB",
+   "where": "https://github.com/harveyai/harvey-labs (MIT)",
+   "why": "Repo is MIT but contains tasks only; no results/leaderboard files. Only AA runs exist (not allowed)."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "ITBench",
+   "where": "https://github.com/itbench-hub/ITBench (Apache-2.0)",
+   "why": "LEADERBOARD_SRE.md / LEADERBOARD_CISO.md last updated 2025-02-05; no current models. Only ITBench-AA (not allowed)."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "MMMU-Pro",
+   "where": "https://mmmu-benchmark.github.io (repo MMMU-Benchmark/mmmu-benchmark.github.io)",
+   "why": "Website repo has no licence and was last pushed 2026-07-03 (predates both models); MMMU code repo (Apache-2.0) has no results table."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "OSWorld 2.x",
+   "where": "https://huggingface.co/datasets/xlangai/osworld2.0-trajectory (rev 01cb84fcd5fb8ee415e7e065d7aaf3ec8f95fe1f)",
+   "why": "Trajectory dataset has no licence tag and no Opus 5.5/Astra runs listed; no open-licensed OSWorld 2.x leaderboard file found."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "SWE-bench Pro / SWE-bench Multilingual / Verified",
+   "where": "https://scale.com/leaderboard/swe_bench_pro_public ; https://github.com/SWE-bench/experiments ; https://github.com/SWE-bench/swe-bench.github.io",
+   "why": "SWE-bench Pro leaderboard is on scale.com (Scale terms); SWE-bench/experiments has no licence; swe-bench.github.io licence NOASSERTION and last pushed 2026-09-01 (predates both models)."
+  },
+  {
+   "model": "claude-opus-5-5, gpt-6-astra",
+   "benchmark": "third-party comparison pages",
+   "where": "vellum.ai, gradually.ai, benchlm.ai, aiidelist.com, cometapi.com, mindstudio.ai, metricnexus.ai and similar",
+   "why": "Aggregators/blogs repeating vendor or AA figures; no open licence and not primary sources."
+  }
+ ],
+ "checked": [
+  {
+   "source": "https://epoch.ai/data/benchmark_data.zip (epoch-internal)",
+   "revision": "fetched 2026-10-07T02:51Z; ETag \"7f1ab9da8b81b22fd925f10eacc6a7fb\"; zip sha256 8802ec0803986ce0131006b78f4e6658257c8975828ef96ec32633bc360642d4; members dated 2026-10-07 02:30",
+   "found": "Compared every internal-CSV row for the 30 target models (same selection rule as existing rows: highest effort incl. promax > max > xhigh > high, latest run breaks ties, 'Best score (across scorers)'). 193 target rows: 145 identical to results.json, 43 new rows in approved files (7 for claude-opus-5-5: GPQA Diamond, FrontierMath T1-3 v2, FrontierMath T4 v2, OTIS Mock AIME, SimpleQA Verified, MirrorCode, Mystery Game Puzzles; plus gpt-6-1-sol, claude-sonnet-5-5, gpt-6-sol, gpt-6-luna, grok-4-7), 1 updated score (gpt-6-luna Furniture Assembly 0.2833 -> 0.4417, new run 2026-09-28 replaced the old one), and a new internal file frontiermath_erdos.csv (FrontierMath-Erdos, 5 models, 4 targets, all ~0). Epoch names Opus 5.5 'claude-opus-5-5_max' and Astra 'gpt-6-astra_max' (MirrorCode only 'gpt-6-astra_high'). The Opus 5.5 runs started 2026-09-22/29, so they missed the 2026-09-25 snapshot used by the current data; they were already in a 2026-10-05 copy. Epoch has NOT run Opus 5.5 on Chess Puzzles or FrontierMath-Erdos (nor SWE-bench Verified / MATH L5, which Astra also lacks). gemini-4-argon, deepseek-v4-1-flash, hy4-preview, mimo-v2-6-pro and qwen3-8-flash-next have no internal runs at all. External CSVs (*_external.csv) were not used per the ledger."
+  },
+  {
+   "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset (lmarena-dataset)",
+   "revision": "latest be06b33784531833af86ad96817e12ba2a965b30 (2026-10-06); every LLM latest-*.parquet has the same LFS oid as 46919c467f7f93d9609b668a283bcd20d87c28bc (only text_to_image and image_edit changed since)",
+   "found": "Checked all 17 LLM configs (text, text_style_control, text_factuality, webdev, vision, vision_style_control, document, document_style_control, search, search_style_control, search_factuality, agent and its 5 signal subsets), category overall. Every existing target-model row re-matched its exact entry and value. Only gap: claude-fable-5 lmarena-text and lmarena-vision still cite revision 6931a5ef entry 'claude-fable-5', which no longer exists; the model is now 'claude-fable-5-high' (2 refresh candidates). Opus 5.5 appears only in text/text_style_control/text_factuality ('claude-opus-5.5-high'), webdev ('claude-opus-5.5-max') and agent ('Claude Opus 5.5 (High)'), all already imported. It is absent from vision (published 2026-10-02), document (last published 2026-09-13) and search (last published 2026-08-24). Search split predates all Sept models, so no target model added there. text_factuality and the agent signal subsets reuse the same battles/sessions as text and agent, so they are not proposed as separate tests."
+  },
+  {
+   "source": "MathArena HF datasets (matharena-arxiv-outputs-bysa) - 102 MathArena datasets listed via https://huggingface.co/api/datasets?author=MathArena",
+   "revision": "arxivmath-0826_outputs 64731d80cf7dd2a83d842c4deb9739c81d129efa; brokenarxiv-0826_outputs 7da551be2a80d7721bd6ee77ef14c8894fdef686; arxivlean-0626_outputs 4221f7241f21cf4d39a80b934b7ea76d53ba29ed; all 13 previously imported *_outputs datasets are still at the revisions already cited",
+   "found": "Licences from dataset cards: arxivmath/brokenarxiv/arxivlean outputs = cc-by-sa-4.0 (usable); aime_2026, hmmt_feb_2026, usamo_2026, kangaroo, apex, putnam, imo, etc. outputs = cc-by-nc-sa-4.0 (non-commercial, not usable). Competitions after 2026-06: ArXivMath August 2026 (57 problems), BrokenArXiv August 2026 (56), ArXivLean June 2026 (46); no July sets. August sets use a new tool-assisted protocol (allow_harness: true; shell/Python/Sage; LLM answer judge), so they are proposed as new benchmarks. Target models present: gpt-6-astra, claude-fable-5-1 (high config only), qwen3-8-2-4t-a95b, muse-spark-1-3, gemini-3-8-flash, kimi-k3 (August); gpt-6-astra, claude-opus-5, claude-fable-5, gemini-3-7-flash, gemini-3-8-flash (ArXivLean June). Opus 5.5 is in none of them: latest MathArena data is dated 2026-09-15 and eth-sri/matharena b89f2f0ad64c (2026-09-15) has no Opus 5.5 config. Re-check of older sets found no missing target rows except glm-5-3 on ArXivMath April 2026 (26/40 problems only - incomplete, correctly skipped). Aggregation verified against existing rows (Astra ArXivMath June 0.944444; BrokenArXiv June values for 15 models) and file sha256s."
+  },
+  {
+   "source": "https://github.com/eth-sri/matharena (identity evidence only)",
+   "revision": "b89f2f0ad64ced464d2944f08c3c0aaeaa0df64b (2026-09-15)",
+   "found": "Model configs confirm fable_51_high -> claude-fable-5-1, muse_spark_13 -> muse-spark-1.3 (effort max), gemini-38-flash -> gemini-3.8-flash (Antigravity harness, effort high), gpt-6-astra -> gpt-6-astra (Codex harness, effort max), qwen3.8_max -> qwen/qwen3.8-max, k3 -> moonshotai/kimi-k3. opus_5_max_128 and fable_5_max_128 (used on ArXivLean June) are not in the repo at this or the two previous commits; identity rests on the published model_name. No Opus 5.5 / Sonnet 5.5 / GPT-6 Sol configs. MIT licence."
+  },
+  {
+   "source": "mideind-icelandic-llm-leaderboard (https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard)",
+   "revision": "7b12ee6799a4735154be85170c53d7266b2de4e6 (2026-09-30; ledger pins f8e42e15)",
+   "found": "Board regenerated 2026-09-30T09:19:24Z, 64 entries (was 55). New target entries: GPT-6.1 Sol (high 0.681688, low 0.668679) and Claude Sonnet 5.5 (high 0.621202, off 0.551035) -> 2 candidates (highest setting). All 14 existing target rows unchanged (Opus 5.5 0.708666, Astra high 0.702515). Other new entries are non-target Mistral models (Large 3, Small 4, Medium 3.5). README still 'license: cc-by-4.0' + CC BY 4.0 statement."
+  },
+  {
+   "source": "roblox-llm-leaderboard (https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard)",
+   "revision": "676755cd82ed2886048e282f1a6106ddf6e5fea5 (2026-09-30; ledger pins 3fcd2993)",
+   "found": "generatedAt 2026-09-30, 55 entries (was 49). New: Claude Opus 5.5, Claude Sonnet 5.5, GPT 6 Astra, GPT 6 Luna, GPT 6 Sol, GPT 6.1 Sol (all 'Medium') -> 12 candidates (robloxqa-v2-mc + luau-leetcode-full-pass). All 39 existing models unchanged. Opus 5.5 vs Astra: RobloxQA MC 2957 vs 2955/3000 (Opus +2), Luau Leetcode fullPass 181 vs 181/208 (tie). README 'license: mit'. Quantised Qwen 3.8 Flash Next NVFP4 entries not proposed (see not_usable)."
+  },
+  {
+   "source": "bridge-medical-leaderboard (https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard)",
+   "revision": "4701984de19780186fba13f0c61823a361ac57c1 (2026-09-26; ledger pins 579abc27)",
+   "found": "Zero-Shot leaderboard 112 models (was 111); only addition is medgemma-1.5-4b-it (non-target). No value changes. Only target present is Qwen3.8-Flash-Next (already imported). Nothing new for targets. README 'license: mit'."
+  },
+  {
+   "source": "open-persian-llm-leaderboard (https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard)",
+   "revision": "0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365 (unchanged since ledger pin, 2026-09-19)",
+   "found": "83 models; no target models (newest relevant: Qwen3.8-27B, gemma-4, gpt-oss). Nothing new."
+  },
+  {
+   "source": "galileo-agent-leaderboard (https://huggingface.co/spaces/galileo-ai/agent-leaderboard)",
+   "revision": "8158b75ae542c2e847ff6d517a0b66caa704b19a (unchanged; last commit 2026-06-11)",
+   "found": "results_v1/v2.csv newest frontier entries are claude-sonnet-4 / grok-4-0709; no target models. Nothing new."
+  },
+  {
+   "source": "vector-inspect-evals-leaderboard (https://huggingface.co/spaces/vector-institute/eval-leaderboard)",
+   "revision": "f348507a79f56dae8624b525574cb326359a20c8 (unchanged; 2026-07-17)",
+   "found": "data/results.json has no target models. Nothing new."
+  },
+  {
+   "source": "webapp1k-leaderboard (https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard)",
+   "revision": "f05bc19c75983e09e6c3198ff13e28c8c9362ff0 (unchanged; 2025-12-08)",
+   "found": "Stale since Dec 2025 (newest: claude-opus-4-5, gpt-5.1). Nothing new."
+  },
+  {
+   "source": "inception-leaderboards-space (https://huggingface.co/spaces/inception42/Leaderboards)",
+   "revision": "bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc (unchanged; 2026-04-06)",
+   "found": "aragen_v3/hindigen_v1/ifeval files: newest frontier entries claude-opus-4-5, gemini-3-pro-preview, gpt-5; no targets. Nothing new."
+  },
+  {
+   "source": "speakleash-polish-eq-bench (https://huggingface.co/spaces/speakleash/polish_eq-bench)",
+   "revision": "ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765 (unchanged; 2026-03-26)",
+   "found": "No target models. Nothing new."
+  },
+  {
+   "source": "speakleash-cptub (https://huggingface.co/spaces/speakleash/cptu_bench)",
+   "revision": "7f981eb09374a686f238138b61e8ba8744251991 (unchanged; 2026-08-11)",
+   "found": "102 entries, open-weight/Polish models only; no targets. Nothing new."
+  },
+  {
+   "source": "servicenow-browsergym-leaderboard (https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard)",
+   "revision": "294ebe1dc36ba83c6916c64c64fb870af3dc8cee (unchanged; 2026-04-14)",
+   "found": "results/ folders: newest GenericAgent is GPT-5 family; no targets. Nothing new."
+  },
+  {
+   "source": "open-pt-llm-leaderboard (https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard)",
+   "revision": "788e0e7aa84b7dee80fc3aa3960beafb9e508ec9 (unchanged; 2026-09-01 was a UI fix)",
+   "found": "data/leaderboard.csv.gz newest frontier API entries are GPT 5 / Claude 3.7; no targets. Nothing new."
+  },
+  {
+   "source": "mimic-cdm-leaderboard (https://huggingface.co/spaces/MIMIC-CDM/leaderboard)",
+   "revision": "43e1ef313f61a726cfa30655284333ce7cfa641c (unchanged; 2026-07-28)",
+   "found": "Open-weight clinical models only (Llama 3.x, Gemma, MedGemma); no targets. Nothing new."
+  },
+  {
+   "source": "libra-leaderboard (https://huggingface.co/spaces/ai-forever/LIBRA-Leaderboard)",
+   "revision": "f5b4b2a59131f86a74af400036ff31b0aae74794 (unchanged; 2026-06-08)",
+   "found": "results/ has Qwen3.5, Yi, Llama, Phi, LFM only; no targets. Nothing new."
+  },
+  {
+   "source": "zai-rpc-bench-leaderboard (https://huggingface.co/spaces/zai-org/RPC-Bench)",
+   "revision": "e9313f371c1646c5c711581490e01fcf165ebfab (unchanged; 2026-06-18)",
+   "found": "Newest frontier entries GPT-5.2, Gemini-3-Pro, Claude-Sonnet-4.5; no targets. Nothing new."
+  },
+  {
+   "source": "arcprize-model-baseline-outputs (https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval, arc_agi_v2_public_eval)",
+   "revision": "v1 3e9c9d1a8402aff82356815c106cecaea65cb7d9, v2 026789c1c12a4c34580a32e84dcaf5630d7e8f31 (both unchanged; 2026-06-04)",
+   "found": "Model folders end at claude-opus-4-8, gpt-5-4(-pro), gemini-3-1-pro, glm-5; no target models (no gpt-5-5-pro). No arc_agi_v3 dataset is public. Nothing new."
+  },
+  {
+   "source": "Other non-card source_ids with result dates >= 2026-08 (grep of results.json)",
+   "revision": "n/a",
+   "found": "Only lmarena-dataset, epoch-internal, matharena-arxiv-outputs-bysa (other forks), amazon-tau2-verified (GitHub, other fork), massive-agents-paper (paper), a pipecat STT GitHub source (STT category) and the Spaces above. No further HF Space/dataset sources to check."
+  },
+  {
+   "source": "aider-polyglot-runs",
+   "revision": "Aider-AI/aider@5dc9490bb35f9729ef2c95d00a19ccd30c26339c (HEAD 2026-05-22 = pinned); polyglot_leaderboard.yml last changed cb6a152e 2025-10-04",
+   "found": "nothing new: HEAD equals the ledger pin; file predates every target model (no gpt-5.5-pro either). LICENSE.txt Apache-2.0 unchanged."
+  },
+  {
+   "source": "bfcl-result-archive-v4",
+   "revision": "HuanzhiMao/BFCL-Result@cadd76a8dc62984e7bf15ecaf358f070bae745cc (HEAD 2026-09-07 = pinned; latest data folder 2025-12-16)",
+   "found": "nothing new: no data folder after 2025-12-16; no target models. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "amazon-agi tau2-bench-verified (amazon-tau2-verified)",
+   "revision": "amazon-agi/tau2-bench-verified@864350a8971a8f8ee9e7b8472e2edc380a806b0c (HEAD 2026-04-02 = pinned; README last changed 2025-12-15)",
+   "found": "nothing new: README table tops out at GPT-5.2 / Claude Opus 4.5; no target models. LICENSE MIT unchanged."
+  },
+  {
+   "source": "eqbench3-canonical-results",
+   "revision": "EQ-bench/eqbench3@affc5a000bbdb965b807e09ca7875f8530fa8f56 (HEAD 2026-05-31 = pinned; file __metadata__.last_updated 2026-05-10)",
+   "found": "nothing new: 75 entries, none a target (has openai/gpt-5.5 and the April deepseek-v4-pro/-flash previews, not gpt-5.5-pro or V4 Pro 0813). LICENSE MIT unchanged."
+  },
+  {
+   "source": "judgemark-v2-results",
+   "revision": "EQ-bench/Judgemark-v2@2388448a0401c4d6ed5502ff18953adba944a255 (HEAD 2025-11-13 = pinned; scores.csv unchanged since 2025-01-31)",
+   "found": "nothing new; no target models. LICENSE MIT unchanged."
+  },
+  {
+   "source": "scicode-readme-leaderboard",
+   "revision": "scicode-bench/SciCode@e3158ea011d4235245a547460d3688d7ccbf9900 (main HEAD 2025-10-07 = pinned; repo pushed 2026-10-05 only on branch pre-commit-ci-update-config, .pre-commit-config.yaml only)",
+   "found": "nothing new; README leaderboard has no target models. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "arena-hard-auto-readme-v2",
+   "revision": "lmarena/arena-hard-auto@196f6b826783b3da7310e361a805fa36f0be83f3 (HEAD 2025-06-21 = pinned)",
+   "found": "nothing new; no target models. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "openai-simple-evals-readme",
+   "revision": "openai/simple-evals@652c89d0ca9df547706735883097e9537d40dc47 (HEAD 2026-04-22 = pinned; README results deprecated since July 2025)",
+   "found": "nothing new; no GPT-6 / GPT-5.6 / GPT-5.5 Pro rows. LICENSE MIT unchanged."
+  },
+  {
+   "source": "evalplus-published-runs",
+   "revision": "evalplus/evalplus.github.io@87418456d3a8c2bc6265f24ff91d2dd0e7993f4b (HEAD 2024-12-26 = pinned)",
+   "found": "nothing new; repo inactive since 2024. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "zeroeval-published-results",
+   "revision": "WildEval/ZeroEval@8c1485edf12c6efb5f69135a562927c5ad484059 (HEAD 2025-04-14 = pinned)",
+   "found": "nothing new; repo inactive since 2025-04. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "mmlu-pro-author-runs",
+   "revision": "TIGER-AI-Lab/MMLU-Pro@f418b116db00b065c2aea046518d8fcf74d39872 (HEAD 2026-03-18 = pinned; eval_results last added 2026-02-20)",
+   "found": "nothing new; newest frontier file is gemini-3.1-pro; no target models. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "livecodebench-website-20250801 / livecodebench-website-20241226",
+   "revision": "LiveCodeBench/livecodebench.github.io@f186ab5041d6b768733b8ae8145151c867942134 (HEAD 2025-08-01 = newest pin)",
+   "found": "nothing new; website data frozen since 2025-08-01; no target models. README CC BY-SA 4.0 'Website License' statement unchanged (no root LICENSE file)."
+  },
+  {
+   "source": "multi-swe-bench-experiments",
+   "revision": "multi-swe-bench/experiments@6a7d5566f62fa76f4192302cf763051b98e4facc (HEAD 2026-07-21 = pinned)",
+   "found": "nothing new: 85 evaluation/<lang>/verified runs, newest 20260714_CodeArts-Agent_CodeArts-GLM-5.1; no target models. LICENSE Apache-2.0 unchanged."
+  },
+  {
+   "source": "cruxeval-published-results",
+   "revision": "facebookresearch/cruxeval@190faf16d175b5847b0af05d937872b1fb395942 (HEAD = pinned; repo archived)",
+   "found": "nothing new; archived 2024. LICENSE MIT unchanged."
+  },
+  {
+   "source": "korean-personal-benchmark-runs",
+   "revision": "daekeun-ml/evaluate-llm-on-korean-dataset@106ed712b5b88f0e531d5fa503bfed76ac31396e (HEAD 2026-08-06 = pinned)",
+   "found": "nothing new: current round covers Claude Opus 5, Claude Sonnet 5, GPT-5.6 Sol/Terra/Luna (all medium effort) and DeepSeek-V4-Flash-0731 (not a target id). All 24 existing target rows (claude-opus-5, gpt-5-6-sol/terra/luna x CLIcK, HAERAE, KoBALT, KMMLU-HARD, KMMLU-Pro, MuSR-Ko) re-checked against docs/RESULTS.md Overall rows: identical. No Opus 5.5 / Astra. LICENSE MIT unchanged."
+  },
+  {
+   "source": "euroeval-leaderboards",
+   "revision": "EuroEval/leaderboards@1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0 (HEAD 2026-04-20 = pinned; repo archived; english_all.csv last updated 2026-04-17)",
+   "found": "nothing new; frozen before every target model; no target rows. LICENSE MIT unchanged. Side note: the 186 existing EuroEval rows in results.json carry no source_id field."
+  },
+  {
+   "source": "https://artificialanalysis.ai/models/claude-opus-5-5 and /models/gpt-6-astra (discovery only)",
+   "revision": "fetched 2026-10-07",
+   "found": "Both pages list the same evaluations: AA-Briefcase v1.1, GDPval-AA v2.1, AutomationBench-AA, Terminal-Bench 4.0, SciCode, Humanity's Last Exam, GDP.pdf, CritPt, AA-Omniscience, AA-LCR v1.1, Harvey LAB-AA, EnterpriseOps-Gym-AA, Terminal-Bench-Science 0.1, AA-AnalystAgent, ITBench-AA, MMMU-Pro, MLCR-AA. No numbers taken."
+  },
+  {
+   "source": "https://github.com/harbor-framework/terminal-bench leaderboard/submissions (Apache-2.0)",
+   "revision": "8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1",
+   "found": "Terminal-Bench 4.0 official leaderboard: 21 submission files. 18 target-model candidates incl. Opus 5.5 (Claude Code, max). No GPT-6 Astra submission. Non-target rows: anthropic/claude-opus-4-8 (23.64%); anthropic/claude-sonnet-5 (12.42%); z-ai/glm-5.3-flash (35.76%)"
+  },
+  {
+   "source": "https://github.com/harbor-framework/terminal-bench-science (Apache-2.0)",
+   "revision": "8ef49c8a64cf57f9913755b41ed6a0fe1a667192",
+   "found": "Tasks only; leaderboard not in repo. Nothing usable."
+  },
+  {
+   "source": "https://github.com/zapier/AutomationBench README (MIT)",
+   "revision": "4a8e1061254004d9dac807054eed33fad7d1ff14",
+   "found": "Public-set pass-rate table (last README change 2026-08-04): no Opus 5.5 or Astra. Target candidates: Opus 5, Kimi K3, Fable 5, GPT-5.6 Sol, GPT-5.6 Terra. Non-target: Gemini 3.6 Flash (45.0%); Claude Opus 4.8 (41.0%); Gemini 3.5 Flash (38.33%); Claude Sonnet 5 (34.67%); GLM 5.2 (26.17%)"
+  },
+  {
+   "source": "https://github.com/scicode-bench/SciCode README (ledger scicode-readme-leaderboard)",
+   "revision": "e3158ea011d4235245a547460d3688d7ccbf9900 (main HEAD, unchanged since 2025-10-07)",
+   "found": "Nothing new; no Opus 5.5/Astra. Website repo scicode-bench.github.io has no licence."
+  },
+  {
+   "source": "https://github.com/centerforaisafety/hle (MIT) + lastexam.ai + dashboard.safe.ai",
+   "revision": "22ed3074b1e7b134bcbc09028d0ba320839b0655",
+   "found": "No usable HLE results for Opus 5.5/Astra."
+  },
+  {
+   "source": "CritPt repos (CritPt-Benchmark/CritPt 17c2545c, CritPt-Benchmark.github.io)",
+   "revision": "17c2545c302762d2f2d644d923ea4c301605cb08",
+   "found": "No licence; not usable."
+  },
+  {
+   "source": "https://github.com/itbench-hub/ITBench (Apache-2.0)",
+   "revision": "fc23990ef70a9eb51e30273fff9694d4b85b7e96",
+   "found": "Leaderboards stale (2025-02-05). Nothing new."
+  },
+  {
+   "source": "https://github.com/harveyai/harvey-labs (MIT)",
+   "revision": "main @ 2026-10-06",
+   "found": "No result files. Nothing usable."
+  },
+  {
+   "source": "https://huggingface.co/spaces/ServiceNow-AI/NowAI-Bench",
+   "revision": "e0db8f23a7ebc1e87a41094f8e06c83f55a6f1ad",
+   "found": "No licence; predates both models."
+  },
+  {
+   "source": "MMMU-Benchmark/MMMU (Apache-2.0) and mmmu-benchmark.github.io",
+   "revision": "268471d0d488258990025331c7528359c324aa25",
+   "found": "No results in licensed repo; site repo unlicensed and stale."
+  },
+  {
+   "source": "HF hub search (datasets/spaces: opus-5-5, gpt-6-astra, astra, leaderboard; modified since 2026-09-15)",
+   "revision": "queried 2026-10-07",
+   "found": "No open-licensed result set with Opus 5.5 or Astra. grafanalabs/o11y-bench-leaderboard (Apache-2.0, rev 46d5c5a404e51655821d4d4d2cf927801b9b14ee) has raw per-trial submissions for gpt-6-sol, gpt-6-luna, claude-opus-5, gpt-5.6-* but no Opus 5.5/Astra and no summary file (not aggregated). zai-org/Vision2Web-Leaderboard (Apache-2.0, rev dd464e60) has agent outputs only, no Opus 5.5/Astra. xlangai/osworld2.0-trajectory unlicensed."
+  },
+  {
+   "source": "Web search for independent Opus 5.5 vs Astra evaluations",
+   "revision": "2026-10-07",
+   "found": "Only vendor posts and aggregator/blog comparisons (vellum, gradually, benchlm, etc.); none open-licensed or primary."
+  },
+  {
+   "source": "SWE-bench Pro (scaleapi/SWE-bench_Pro-os MIT code; leaderboard on scale.com), SWE-bench/experiments, swe-bench.github.io",
+   "revision": "HEADs 2026-09-01..2026-09-22",
+   "found": "No usable leaderboard data for Opus 5.5/Astra."
+  }
+ ],
+ "aa_evaluations_listed": {
+  "claude-opus-5-5": [
+   "AA-Briefcase v1.1",
+   "GDPval-AA v2.1",
+   "AutomationBench-AA",
+   "Terminal-Bench 4.0",
+   "SciCode",
+   "Humanity's Last Exam",
+   "GDP.pdf",
+   "CritPt",
+   "AA-Omniscience",
+   "AA-LCR v1.1",
+   "Harvey LAB-AA",
+   "EnterpriseOps-Gym-AA",
+   "Terminal-Bench-Science 0.1",
+   "AA-AnalystAgent",
+   "ITBench-AA",
+   "MMMU-Pro",
+   "MLCR-AA"
+  ],
+  "gpt-6-astra": [
+   "AA-Briefcase v1.1",
+   "GDPval-AA v2.1",
+   "AutomationBench-AA",
+   "Terminal-Bench 4.0",
+   "SciCode",
+   "Humanity's Last Exam",
+   "GDP.pdf",
+   "CritPt",
+   "AA-Omniscience",
+   "AA-LCR v1.1",
+   "Harvey LAB-AA",
+   "EnterpriseOps-Gym-AA",
+   "Terminal-Bench-Science 0.1",
+   "AA-AnalystAgent",
+   "ITBench-AA",
+   "MMMU-Pro",
+   "MLCR-AA"
+  ]
+ }
+}

@@ -6,7 +6,7 @@
 
 Puyuan Peng et al. (UT Austin) · released 2024-04 · 0.83B params · coqui-public-model-license
 
-**score 32.0** ±5.8 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.3** ±6.9 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    25.3   2024-10-20   43% ▇▇▇▇▇
-                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    32.9   2024-10-20   43% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                14% ▇▇
-                        weighted average                       = 32.0
+<a name="speech-amphion-maskgct-mit"></a>Amphion MaskGCT READM…  <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">LibriSpeech test-clean zero-s…</a>   4.7%    34.1   2024-10-20   44% ▇▇▇▇▇
+                        <a href="https://github.com/open-mmlab/Amphion/blob/26f6883110181f1dbfe95c70a7c7dbaf4de5f42a/models/tts/maskgct/README.md">Seed-TTS test-en · Whisper la…</a>   7.6%    20.9   2024-10-20   36% ▇▇▇▇
+prior                   pull toward the middle                   49.9                19% ▇▇
+                        weighted average                       = 32.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

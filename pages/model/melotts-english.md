@@ -6,7 +6,7 @@
 
 MyShell · released 2024-02 · mit
 
-**score 33.6** ±4.3 · #74 of 92 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.0** ±4.0 · #73 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,21 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.80 / 5    32.3   2025-03-27   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 7% ▇
-                        weighted average                          = 33.6
+<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.80 / 5    32.8   2025-03-27   60% ▇▇▇▇▇▇▇
+<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>      6.4%    39.0   2026-01-28   34% ▇▇▇▇
+prior                   pull toward the middle                      49.9                 6% ▇
+                        weighted average                          = 36.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt))</sub>
+<sub>Licences: VERSA toolkit paper: TTS demonstration ([CC BY 4.0](../../licenses/speech-versa-toolkit-ccby.txt)) · Audio Deepfake Detection in the Age of Advanced Text-to-Speech models ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                        needs  score
-fp32 (MeloTTS repo CLI)      ~0.65GB   33.6
-fp32 (mlx-audio) · mac only  ~0.65GB   33.6
+fp32 (MeloTTS repo CLI)      ~0.65GB   36.0
+fp32 (mlx-audio) · mac only  ~0.65GB   36.0
 </pre>
 
 ```sh

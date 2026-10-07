@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 69.0** ±2.8 · #58 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.8** ±2.7 · #61 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      74.8%    69.7   2026-02-25   96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                 4% ▇
-          weighted average               = 69.0
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>      74.8%    70.4   2026-02-25   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior     pull toward the middle           50.0                 3% ▇
+          weighted average               = 69.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

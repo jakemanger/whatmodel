@@ -1,0 +1,7 @@
+Kandinsky 3.0 — original human comparisons
+Vladimir Arkhipkin, Andrei Filatov, Viacheslav Vasilev, Anastasia Maltseva, Said Azizov, Igor Pavlov, Julia Agafonova, Andrey Kuznetsov and Denis Dimitrov. Kandinsky 3.0 Technical Report. arXiv:2312.03511v2 (2023), CC BY 4.0. Figures 10, 13 and 16: printed outright-win fractions transcribed unchanged; tied/both/neither votes remain excluded from wins. No chart digitization or fabricated reference-model self-comparison.
+Source: https://arxiv.org/html/2312.03511v2
+License declaration: https://arxiv.org/abs/2312.03511v2
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+No endorsement.

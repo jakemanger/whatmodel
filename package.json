@@ -21,6 +21,7 @@
     "import": "node scripts/import.ts",
     "provenance": "node scripts/provenance.ts",
     "quality": "node scripts/quality.ts",
+    "score-coverage": "node scripts/score-coverage.ts",
     "calibrate": "node scripts/calibrate.ts",
     "icons": "node scripts/icons.ts",
     "measure-api": "node --env-file=.env.local scripts/measure-api.ts"

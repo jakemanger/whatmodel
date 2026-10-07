@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 9B params · flux-dev-nc
 
-**score 55.7** ±1.5 · #59 of 114 · from 4 benchmark results across 3 sources
+**score 55.6** ±1.5 · #59 of 116 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1070.2    54.8   2026-09-24   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/6931a5ef0714c8d4edf09d79998fef6674ed4e09/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.5    57.7   2026-09-22   17% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.1%    55.6   2026-08-25   13% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1039.0    60.4   2026-03-30    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1070.2    54.7   2026-09-24   63% ▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.7    57.6   2026-09-30   17% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.1%    55.5   2026-08-25   12% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1039.0    60.7   2026-03-30    6% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 55.7
+                        weighted average                        = 55.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,9 +36,9 @@ api (Cloudflare) · $0.015/image · [developers.cloudflare.com](https://develope
 
 <pre>
 version                                   needs  score
-bf16 (cpu offload) · nvidia only        ~22.1GB   55.7
-mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   55.7
-gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   55.7
+bf16 (cpu offload) · nvidia only        ~22.1GB   55.6
+mlx-qint8 (Flux2CLI, Swift) · mac only  ~11.3GB   55.6
+gguf-q4_0 + Qwen3 8B q4_k_m (sd.cpp)    ~13.7GB   55.6
 </pre>
 
 ```sh

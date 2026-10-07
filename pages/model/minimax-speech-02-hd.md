@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-03 · proprietary
 
-**score 66.4** ±2.7 · #6 of 92 · from 3 benchmark results across 2 sources
+**score 67.1** ±2.8 · #6 of 94 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    68.3   2026-09-25   82% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    54.8   2025-08-10   11% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    70.3   2025-08-10    4% ▇
+<a name="speech-vapi-humanness-20260925"></a>The Humanness Index b…  <a href="https://humannessindex.vapi.ai/api/models">Vapi Humanness · Bradley–Terr…</a>  1260.7    69.2   2026-09-25   82% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   36.8%    54.1   2025-08-10   10% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>     10.1%    70.8   2025-08-10    4% ▇
 prior                   pull toward the middle                    49.9                 3% ▇
-                        weighted average                        = 66.4
+                        weighted average                        = 67.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

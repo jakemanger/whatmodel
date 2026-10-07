@@ -5,7 +5,7 @@ import {
   models, modelsIn, quantFindings, results, sourcesFor, speeds, type ComparisonSet, type SourceSummary,
 } from "./data.ts";
 import { catOf } from "./categories.ts";
-import { rank } from "./fit.ts";
+import { catalogueOnly, rank } from "./fit.ts";
 import { boardFromData } from "./board.ts";
 import { boardData } from "./board-data.ts";
 import type { QuantFinding } from "./quant.ts";
@@ -21,7 +21,7 @@ export type BoardView = ReturnType<typeof boardView>;
 
 // Scored models that can no longer be run: no API and no weights. They anchor the fit and are listed on request.
 export const retiredCount = (list: Model[], scores?: Map<string, Scored>) =>
-  list.filter((m) => scores?.has(m.id) && !m.api && !m.local?.variants.length).length;
+  list.filter((m) => scores?.has(m.id) && catalogueOnly(m)).length;
 
 // Catalogue entries have a page even before comparable measurements are available.
 export const pageModels = () => models;
@@ -29,6 +29,7 @@ export const pageModels = () => models;
 // A benchmark result as published: Elo as is, raw scales restored, everything else as a percentage.
 export function resultLabel(r: Result) {
   const b = benchmarkById.get(r.bench);
+  if (b?.kind === "linear") return `${r.score.toFixed(4)}${b.unit ? ` ${b.unit}` : ""}`;
   if (b?.kind === "elo") return r.score.toFixed(1);
   if (b?.raw_scale_min !== undefined && b.raw_scale_max !== undefined)
     return `${(b.raw_scale_min + r.score * (b.raw_scale_max - b.raw_scale_min)).toFixed(2)} / ${b.raw_scale_max}`;

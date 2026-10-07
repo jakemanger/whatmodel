@@ -10,13 +10,16 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
   const url = new URL(req.url);
   const q = url.searchParams;
   const { cat, updated, updatedLabel, models } = data;
-  const { specs, max, comparison, scoreMode, scoreSet, sets, rows, all, benches, retiredCount } = boardFromData(data, q);
+  const { task, specs, max, comparison, scoreMode, scoreSet, sets, rows, all, benches, retiredCount } = boardFromData(data, q);
   const alternatives = sets.map(({ id, label, models }) => ({ id, label, models: models.length }));
   const limit = Number(q.get("n")) || 40;
 
   if (q.get("format") === "json" || req.headers.get("accept")?.includes("application/json")) {
     return Response.json({
       category: cat,
+      task: task?.id ?? null,
+      tasks: data.tasks?.map(({ id, label, description }) => ({ id, label, description })) ?? [],
+      task_note: task ? "Scores use only reviewed evaluations for this task. Compare within this task and comparison set; missing task evidence is not a capability claim." : null,
       comparison_set: comparison?.id ?? null,
       score_mode: scoreMode,
       score_set: scoreSet?.id ?? null,
@@ -63,6 +66,7 @@ export function leaderboardResponse(req: Request, data: BoardData, attributions:
   });
   // ?chart=1 draws the plots under the title line.
   const lines = text.split("\n");
+  if (task) lines.splice(2, 0, `Task: ${task.label}. Scores compare within this task only.`, '');
   if (q.has("chart")) lines.splice(3, 0, ...chartsFor(rows.filter((r) => all || r.where !== "none"), cat).flatMap(({ title, chart }) => [...chartToText(title, chart, q.get("color") === "1"), ""]));
   return new Response(lines.join("\n"), { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

@@ -6,7 +6,7 @@
 
 cerspense · released 2023-06 · cc-by-nc-4.0
 
-**score 28.9** ±2.5 · #73 of 76 · from 4 benchmark results across 3 sources
+**score 29.0** ±2.7 · #73 of 76 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>      11.9%    29.2   2026-01-30   47% ▇▇▇▇▇▇
-                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>     34.0%    31.9   2026-01-30   18% ▇▇
-<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.62 / 5    26.2   2023-12-26   17% ▇▇
-<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>     45.8%    23.4   2024-10-01   15% ▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#human-leaderboard-">VideoPhy (human, SA=1 &amp; PC=1)</a>      11.9%    29.3   2026-01-30   48% ▇▇▇▇▇▇
+                        <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/README.md#automatic-leaderboard-">VideoPhy (auto-evaluator aver…</a>     34.0%    32.3   2026-01-30   19% ▇▇
+<a name="video-chronomagic-bench"></a>ChronoMagic-Bench: A …  <a href="https://arxiv.org/html/2406.18522v2#S5.T4">ChronoMagic-Bench-150 GPT4o-M…</a>     45.8%    23.0   2024-10-01   16% ▇▇
+<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.62 / 5    25.2   2023-12-26   13% ▇▇
 prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 28.9
+                        weighted average                          = 29.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt))</sub>
+<sub>Licences: VideoPhy / VideoPhy-2 official repository leaderboards ([MIT](../../licenses/visual-videophy-readme.txt)) · ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation ([CC-BY-4.0](../../licenses/video-chronomagic-bench.txt)) · FETV: A Benchmark for Fine-Grained Evaluation of Open-Domain Text-to-Video Generation ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~7.9GB   28.9
+fp16 · nvidia only  ~7.9GB   29.0
 </pre>
 
 ```sh

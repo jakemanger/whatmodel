@@ -6,7 +6,7 @@
 
 TII · released 2024-12 · 10.31B params · falcon-llm
 
-**score 45.8** ±4.2 · #244 of 411 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.1** ±4.1 · #252 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.6%    46.1   2025-01-29   57% ▇▇▇▇▇▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  27.0%    44.2   2025-12-16   35% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 45.8
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  74.6%    47.6   2025-01-29   57% ▇▇▇▇▇▇▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>  27.0%    45.7   2025-12-16   36% ▇▇▇▇
+prior                   pull toward the middle                   50.0                 7% ▇
+                        weighted average                       = 47.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~6.69GB   45.8
-8-bit q8_0    ~12.87GB   45.8
+4-bit q4_k_m   ~6.69GB   47.1
+8-bit q8_0    ~12.87GB   47.1
 </pre>
 
 ```sh

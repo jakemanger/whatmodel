@@ -6,7 +6,7 @@
 
 Nous Research · released 2024-12 · 3.21B params · llama3
 
-**score 35.0** ±4.4 · #349 of 411 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.7** ±4.2 · #367 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.1%    33.6   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.1%    35.5   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior             pull toward the middle                   50.0                 8% ▇
-                  weighted average                       = 35.0
+                  weighted average                       = 36.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior             pull toward the middle                   50.0                 
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.43GB   35.0
-8-bit q8_0    ~4.35GB   35.0
+4-bit q4_k_m  ~2.43GB   36.7
+8-bit q8_0    ~4.35GB   36.7
 </pre>
 
 ```sh
