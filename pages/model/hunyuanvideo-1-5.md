@@ -6,7 +6,7 @@
 
 Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
-**score 51.4** ±1.7 · #41 of 76 · from 5 benchmark results across 4 sources
+**score 51.4** ±1.7 · #43 of 87 · from 6 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1168.8    51.6   2026-09-22   54% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1197.8    50.6   2026-09-22   33% ▇▇▇▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1462.0    47.7   2026-05-06    7% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   46.8%    53.8   2026-08-10    4% ▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 91.1%    74.3   2026-04-22    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1168.8    51.3   2026-09-22   51% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1197.8    50.3   2026-09-22   32% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1462.0    47.6   2026-05-06    7% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   46.8%    53.7   2026-08-10    4% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>   85.4%    57.7   2026-08-06    4% ▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>                 91.1%    74.4   2026-04-22    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
                         weighted average                        = 51.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · HumanScore: Benchmarking Human Motions in Generated Videos ([CC-BY-4.0](../../licenses/visual-humanscore.txt))</sub>
 
 ## How to run it
 

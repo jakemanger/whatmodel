@@ -6,7 +6,7 @@
 
 ESPnet · released 2020-07 · cc-by-4.0
 
-**score 36.5** ±24.7 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.5** ±24.7 · #9 of 11 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-espnet-librispeech-20260929&score=set) comparison set only.
 
@@ -28,6 +28,16 @@ prior                   pull toward the middle                   50.0    40% ▇
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 (espnet 202610.post2 + espnet_mode…  ~1.02GB   36.5
+</pre>
+
+```sh
+# fp32 (espnet 202610.post2 + espnet_model_zoo 0.1.11)
+uv run --python 3.12 --with espnet==202610.post2 --with espnet_model_zoo==0.1.11 --with librosa python -c "import librosa; from espnet2.bin.asr_inference import Speech2Text; asr=Speech2Text.from_pretrained('Shinji Watanabe/librispeech_asr_train_asr_transformer_e18_raw_bpe_sp_valid.acc.best', beam_size=20, ctc_weight=0.4, lm_weight=0.6); speech,_=librosa.load('audio.wav', sr=16000, mono=True); print(asr(speech)[0][0])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/espnet-transformer-18layer-lm) · [JSON](https://whatmodel.sh/api?format=json&all=1)

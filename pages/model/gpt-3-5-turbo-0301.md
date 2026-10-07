@@ -6,9 +6,7 @@
 
 OpenAI · released 2023-03 · proprietary
 
-**score 42.5** ±1.7 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 45.5** ±1.3 · comparison only: no current run option verified · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,20 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.1%    44.4   2023-11-20   19% ▇▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.9%    41.1   2023-11-20   12% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            67.9%    46.8   2023-11-20    9% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       88.4%    54.2   2023-11-20    6% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           76.0%    53.5   2023-11-20    4% ▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  18.1%    37.4   2024-11-14   33% ▇▇▇▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  47.6%    41.0   2024-01-03   14% ▇▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.1%    44.5   2023-11-20   17% ▇▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            67.9%    46.4   2023-11-20    8% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       88.4%    52.5   2023-11-20    7% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.9%    41.7   2023-11-20    6% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           76.0%    51.7   2023-11-20    5% ▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  57.9%    50.3   2023-11-06   25% ▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>  18.1%    39.0   2024-11-14   23% ▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>  47.6%    43.0   2024-01-03    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 42.5
+                        weighted average                       = 45.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: Tulu 2 ([CC BY 4.0](../../licenses/CC-BY-4.0.txt)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 

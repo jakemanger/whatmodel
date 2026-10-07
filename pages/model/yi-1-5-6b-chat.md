@@ -6,32 +6,33 @@
 
 01.AI · released 2024-05 · 6.06B params · apache-2.0
 
-**score 19.8** ±3.2 · #454 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 31.8** ±2.1 · #484 of 548 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   5.2%     8.8   2024-06-19   61% ▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  62.6%    35.1   2024-05-16   35% ▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 19.8
+source                  test                                       score  implies  date        weight
+<a name="wildbench-leaderboard-data"></a>WildBench v2 leaderbo…  <a href="https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json">WildBench v2 WB-Score (task m…</a>  23.3181 WB-Score    36.3   2024-08-01   57% ▇▇▇▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>              5.2%    11.8   2024-06-19   20% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             62.6%    37.6   2024-05-16   20% ▇▇
+prior                   pull toward the middle                              50.0                 2% ▇
+                        weighted average                                  = 31.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: WildBench v2 leaderboard data ([Apache-2.0](https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/01-ai/Yi-1.5-6B-Chat/blob/771924d1c83d67527d665913415d7086f11ea9c0/config.json): 01.AI official configuration for Yi-1.5-6B-Chat (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length for this checkpoint (it lists the Yi-1.5 family at 4K, 16K and 32K, with separate -16K chat repos). Observed 2026-10-07.</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.14GB   19.8
-8-bit q8_0    ~7.77GB   19.8
+4-bit q4_k_m  ~4.14GB   31.8
+8-bit q8_0    ~7.77GB   31.8
 </pre>
 
 ```sh

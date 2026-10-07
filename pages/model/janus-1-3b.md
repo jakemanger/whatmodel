@@ -4,9 +4,9 @@
 
 # Janus-1.3B
 
-DeepSeek · released 2024-10 · deepseek
+DeepSeek · released 2024-10 · 1.3B params · deepseek
 
-**score 24.2** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.5** ±5.2 · #132 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  23.0%    21.5   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 24.2
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  23.0%    21.2   2026-06-02   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                12% ▇
+                        weighted average                       = 24.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,6 +36,16 @@ DeepSeek-AI  <a href="https://arxiv.org/html/2410.13848v1">GenEval</a>  61.0%  t
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version              needs  score
+bf16 · nvidia only  ~5.5GB   24.5
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && python generation_inference.py
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/janus-1-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

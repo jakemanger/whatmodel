@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 0.64B params · openmdw-1.1
 
-**score 47.5** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 45.0** ±3.9 · #90 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>       3.0%    46.7   2026-09-15   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    54.8   2026-07-09    8% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">LibriSpeech test-clean WER</a>       3.0%    43.8   2026-09-15   57% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/nemotron-3.5-asr-streaming-0.6b.json">FLEURS English test WER</a>          7.9%    41.6   2026-09-15   25% ▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  35.9%    55.7   2026-07-09   11% ▇
 prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 47.5
+                        weighted average                       = 45.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +29,19 @@ prior                   pull toward the middle                   49.7           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                               needs  score
+q8_0-gguf (NVIDIA NeMo-Speech.cpp)  ~0.74GB   45.0
+fp32 (transformers &gt;=5.13.0)        ~2.55GB   45.0
+</pre>
+
+```sh
+# q8_0-gguf (NVIDIA NeMo-Speech.cpp)
+curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && hf download nvidia/nemotron-3.5-asr-streaming-0.6b nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --local-dir models && nemo-speech transcribe audio.wav --model models/nemotron-3.5-asr-streaming-0.6b.q8_0.gguf --language en-US
+# fp32 (transformers >=5.13.0)
+uv run --with 'transformers>=5.13.0' --with torch --with librosa python -c "from transformers import pipeline; pipe = pipeline('automatic-speech-recognition', model='nvidia/nemotron-3.5-asr-streaming-0.6b'); print(pipe('audio.wav'))"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/nemotron-3-5-asr-streaming-0-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

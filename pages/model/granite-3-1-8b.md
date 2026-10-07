@@ -6,9 +6,7 @@
 
 IBM · released 2024-12 · 8.17B params · apache-2.0
 
-**score 43.0** ±1.2 · #294 of 462 · from 12 benchmark results across 4 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 44.2** ±1.2 · #332 of 548 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-ibm-granite-granite-3-3-8b-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                      79.1%    43.3   2025-05-12   15% ▇▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                       66.8%    44.2   2025-05-12   11% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>             69.9%    43.0   2025-05-12    8% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge uns…</a>   37.6%    41.1   2025-05-12    8% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                   2.0%    39.6   2025-05-12    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                       58.6%    48.7   2025-05-12    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>   73.2%    44.4   2025-05-12    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                   48.7%    40.0   2025-05-12    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                      28.7%    46.4   2025-05-12    4% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1208.5    40.4   2026-10-02   20% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   72.3%    45.0   2025-08-29    5% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   27.1%    45.8   2025-12-16    3% ▇
+<a name="card2-ibm-granite-granite-3-3-8b-instruct"></a>ibm-granite/granite-3…  <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">GSM8K (lab)</a>                      79.1%    44.4   2025-05-12   16% ▇▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MMLU (lab)</a>                       66.8%    45.4   2025-05-12   11% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">BIG-Bench Hard (lab)</a>             69.9%    44.4   2025-05-12    8% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">Arena-Hard (version/judge uns…</a>   37.6%    42.6   2025-05-12    8% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">MATH-500 (lab)</a>                   48.7%    41.6   2025-05-12    8% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">AIME 2024 (lab)</a>                   2.0%    41.2   2025-05-12    7% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">DROP (lab)</a>                       58.6%    50.3   2025-05-12    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">IFEval (aggregation unspecifi…</a>   73.2%    46.3   2025-05-12    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-3.3-8b-instruct/blob/51dd4bc2ade4059a6bd87649d68aa11e4fb2529b/README.md">PopQA (lab)</a>                      28.7%    47.6   2025-05-12    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1208.5    41.9   2026-10-02   19% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   72.3%    46.1   2025-08-29    6% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   27.1%    46.7   2025-12-16    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 43.0
+                        weighted average                        = 44.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,8 +40,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~5.4GB   43.0
-8-bit q8_0    ~10.3GB   43.0
+4-bit q4_k_m   ~5.4GB   44.2
+8-bit q8_0    ~10.3GB   44.2
 </pre>
 
 ```sh

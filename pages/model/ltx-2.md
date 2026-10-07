@@ -6,7 +6,7 @@
 
 Lightricks · released 2025-10 · 19B params · ltx-2-community
 
-**score 49.2** ±1.7 · #43 of 76 · from 3 benchmark results across 2 sources
+**score 48.7** ±1.8 · #47 of 87 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,22 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1154.1    50.3   2026-09-22   57% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1159.4    46.9   2026-09-22   34% ▇▇▇▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1479.0    50.3   2026-05-06    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1154.1    50.1   2026-09-22   55% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1159.4    46.5   2026-09-22   34% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>  1479.0    50.3   2026-05-06    8% ▇
+<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>   51.2%    38.8   2026-05-11    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 49.2
+                        weighted average                        = 48.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                                      needs  score
-bf16 MLX, dev two-stage HQ (mlx-video) …  ~119.6GB   49.2
+bf16 MLX, dev two-stage HQ (mlx-video) …  ~119.6GB   48.7
 </pre>
 
 ```sh

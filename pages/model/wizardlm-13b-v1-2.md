@@ -6,9 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 33.9** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 33.1** ±1.5 · #468 of 548 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,17 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1149.5    33.3   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 33.9
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>            50.4%    29.5   2023-11-21   18% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                     42.8%    30.1   2023-11-21   13% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>           38.5%    34.6   2023-11-21   11% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                    48.6%    36.3   2023-11-21   11% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>          38.3%    33.4   2023-11-21    9% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                 69.0%    27.3   2023-11-21    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1149.5    35.4   2026-10-02   31% ▇▇▇▇
+prior                   pull toward the middle            50.0                 1% ▇
+                        weighted average                = 33.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit fp16  ~26.03GB   33.1
+</pre>
+
+```sh
+# 4-bit fp16
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='WizardLMTeam/WizardLM-13B-V1.2', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/wizardlm-13b-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

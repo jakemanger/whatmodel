@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-11 · proprietary
 
-**score 62.2** ±1.5 · #29 of 116 · from 5 benchmark results across 4 sources
+**score 62.1** ±1.6 · #28 of 136 · from 6 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1153.9    62.8   2026-09-24   64% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1245.4    59.7   2026-09-30   17% ▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   61.0%    63.3   2026-06-09    7% ▇
-<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   51.2%    63.1   2026-02-10    6% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   54.6%    62.7   2026-05-27    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1153.9    62.5   2026-09-24   60% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1245.4    59.0   2026-09-30   14% ▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   61.0%    63.1   2026-06-09    7% ▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   51.2%    62.7   2026-02-10    7% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  1003.4    64.8   2026-10-01    7% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   54.6%    62.4   2026-05-27    4% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 62.2
+                        weighted average                        = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 

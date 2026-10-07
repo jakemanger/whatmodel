@@ -6,9 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 41.8** ±1.0 · #311 of 462 · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 42.8** ±0.9 · #349 of 548 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    41.3   2024-03-28   38% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    41.3   2024-03-28   30% ▇▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    41.8   2024-01-31   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    44.9   2024-01-31   10% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               60.4%    42.5   2024-03-28   45% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.1%    42.7   2024-03-28   24% ▇▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>         57.3%    42.2   2024-01-31   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>              65.6%    45.4   2024-01-31    9% ▇
 prior                   pull toward the middle           50.0                 0% ▇
-                        weighted average               = 41.8
+                        weighted average               = 42.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,10 +28,12 @@ prior                   pull toward the middle           50.0                 0%
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/codellama/CodeLlama-70b-Python-hf/blob/e037619532ec8449a01ecd5b253d065ac81637b6/README.md): Meta official model card: "It was fine-tuned with up to 16k tokens. This variant does not support long context of up to 100k tokens." Stated rounded 16k, as for codellama-70b. The repo's config.json sets max\_position\_embeddings 4096, which the card does not explain. Observed 2026-10-07.</sub>
+
 <pre>
 download       size  score
-4-bit q4_k_m  ~41GB   41.8
-8-bit q8_0    ~73GB   41.8
+4-bit q4_k_m  ~41GB   42.8
+8-bit q8_0    ~73GB   42.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Meituan · released 2025-10 · 13.6B params · mit
 
-**score 48.8** ±3.0 · #46 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 50.1** ±2.5 · #45 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    48.4   2026-05-11   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    51.0   2026-08-10   12% ▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 48.8
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  904.0    50.3   2026-05-11   69% ▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  22.2%    49.5   2026-09-30   12% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  45.4%    50.8   2026-08-10    9% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>  81.1%    48.5   2026-08-06    8% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 50.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
+<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -30,6 +32,16 @@ api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/longcat-vide
 
 <sub>[price source](https://fal.ai/models/fal-ai/longcat-video/text-to-video/720p): USD per generated second of 720p video on fal.ai: fal states 'Your request will cost $0.04 per generated second of video. Generated seconds are calculated at 30 frames per second.' Product: fal LongCat Video text-to-video (720p/30fps) endpoint. API model: fal-ai/longcat-video/text-to-video/720p (the base model; the distilled endpoints are separate). Settings: resolution=720p, 30 fps. Price basis: per-second rate printed by fal. 480p endpoint $0.025 per generated second (counted at 15 fps). Currency: USD. Not a Meituan direct tariff. fal.ai model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                needs  score
+bf16 · nvidia only  ~100.4GB   50.1
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone https://github.com/meituan-longcat/LongCat-Video && cd LongCat-Video && pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 && pip install ninja psutil packaging && pip install flash_attn==2.7.4.post1 && pip install -r requirements.txt && pip install "huggingface_hub[cli]" && huggingface-cli download meituan-longcat/LongCat-Video --local-dir ./weights/LongCat-Video && torchrun run_demo_text_to_video.py --checkpoint_dir=./weights/LongCat-Video --enable_compile
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-video) · [JSON](https://whatmodel.sh/api?format=json&all=1)

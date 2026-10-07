@@ -6,7 +6,7 @@
 
 MyShell · released 2024-02 · mit
 
-**score 36.0** ±4.0 · #73 of 94 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.4** ±4.0 · #74 of 98 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.80 / 5    32.8   2025-03-27   60% ▇▇▇▇▇▇▇
-<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>      6.4%    39.0   2026-01-28   34% ▇▇▇▇
-prior                   pull toward the middle                      49.9                 6% ▇
-                        weighted average                          = 36.0
+<a name="speech-versa-toolkit-ccby"></a>VERSA toolkit paper: …  <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>  3.80 / 5    32.7   2025-03-27   57% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2412.17667v2">VERSA TTS demo · LibriSpeech …</a>      4.6%    56.6   2025-03-27    1% ▇
+<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>      6.4%    39.0   2026-01-28   35% ▇▇▇▇
+prior                   pull toward the middle                      49.8                 7% ▇
+                        weighted average                          = 36.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +31,8 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                        needs  score
-fp32 (MeloTTS repo CLI)      ~0.65GB   36.0
-fp32 (mlx-audio) · mac only  ~0.65GB   36.0
+fp32 (MeloTTS repo CLI)      ~0.65GB   36.4
+fp32 (mlx-audio) · mac only  ~0.65GB   36.4
 </pre>
 
 ```sh

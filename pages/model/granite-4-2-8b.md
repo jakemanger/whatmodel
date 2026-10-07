@@ -6,9 +6,7 @@
 
 IBM · released 2026-08 · 8.79B params · apache-2.0
 
-**score 52.5** ±1.2 · #209 of 462 · from 19 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 53.1** ±1.2 · #224 of 548 · from 19 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card2-ibm-granite-granite-4-2-30b"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">AIME 2025 (lab)</a>                  86.7%    53.6   2026-09-04    8% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">GPQA (subset unspecified) (la…</a>   64.1%    53.8   2026-09-04    7% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-Pro (lab)</a>                   74.0%    52.5   2026-09-04    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">HMMT February 2025 (lab)</a>         78.3%    50.6   2026-09-04    6% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Arena-Hard v2 aggregate (lab)</a>    65.2%    57.9   2026-09-04    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Verified (lab)</a>         47.7%    52.9   2026-09-04    5% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 128k (lab)</a>                 71.4%    52.8   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 64k (lab)</a>                  81.0%    51.7   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Pro (split unspecif…</a>   19.1%    48.5   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Multilingual (lab)</a>     30.8%    51.1   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Terminal-Bench 2.1 (lab)</a>         20.6%    51.3   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SciCode (level unspecified) (…</a>   36.1%    55.3   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">τ³-bench (lab)</a>                   58.1%    54.4   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-ProX-Lite (lab)</a>             61.1%    58.7   2026-09-04    4% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">ProfBench (lab)</a>                  41.2%    54.4   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">LiveCodeBench v6 (window unsp…</a>   73.2%    52.2   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">BFCL V4 (December 2025 archiv…</a>   52.4%    49.0   2026-09-04    3% ▇
-                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">IFBench prompt-level (lab)</a>       79.3%    55.4   2026-09-04    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1288.1    50.0   2026-10-02   20% ▇▇
+<a name="card2-ibm-granite-granite-4-2-30b"></a>ibm-granite/granite-4…  <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">AIME 2025 (lab)</a>                  86.7%    54.0   2026-09-04   10% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">GPQA (subset unspecified) (la…</a>   64.1%    54.2   2026-09-04    8% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-Pro (lab)</a>                   74.0%    53.1   2026-09-04    6% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">HMMT February 2025 (lab)</a>         78.3%    51.3   2026-09-04    6% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Verified (lab)</a>         47.7%    53.4   2026-09-04    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Arena-Hard v2 aggregate (lab)</a>    65.2%    58.6   2026-09-04    5% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 128k (lab)</a>                 71.4%    53.4   2026-09-04    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">Terminal-Bench 2.1 (lab)</a>         20.6%    51.8   2026-09-04    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">RULER 64k (lab)</a>                  81.0%    52.4   2026-09-04    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Pro (split unspecif…</a>   19.1%    48.8   2026-09-04    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SWE-bench Multilingual (lab)</a>     30.8%    51.5   2026-09-04    4% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">SciCode (level unspecified) (…</a>   36.1%    55.9   2026-09-04    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">τ³-bench (lab)</a>                   58.1%    55.0   2026-09-04    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">BFCL V4 (December 2025 archiv…</a>   52.4%    49.8   2026-09-04    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">MMLU-ProX-Lite (lab)</a>             61.1%    59.3   2026-09-04    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">ProfBench (lab)</a>                  41.2%    55.0   2026-09-04    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">LiveCodeBench v6 (window unsp…</a>   73.2%    52.8   2026-09-04    3% ▇
+                        <a href="https://huggingface.co/ibm-granite/granite-4.2-30b/blob/9e668ce1c538387ef24d3644e9b0606647762636/README.md">IFBench prompt-level (lab)</a>       79.3%    56.0   2026-09-04    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1288.1    50.8   2026-10-02   20% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 52.5
+                        weighted average                        = 53.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -60,7 +58,7 @@ api (Weights & Biases) · $0.11/M blended · $0.1 in / $0.15 out per 1M tokens �
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.77GB   52.5
+4-bit q4_k_m  ~5.77GB   53.1
 </pre>
 
 ```sh

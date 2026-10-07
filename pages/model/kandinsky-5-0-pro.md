@@ -6,7 +6,7 @@
 
 Sber · released 2025-11 · 19B params · mit
 
-**score 52.2** ±2.3 · #38 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.9** ±2.3 · #41 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    52.1   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    55.1   2026-04-22    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1175.2    51.9   2026-09-22   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-humanscore"></a>HumanScore: Benchmark…  <a href="https://arxiv.org/html/2604.20157v1#S3.T1">HumanScore (T2V)</a>         86.5%    55.0   2026-04-22    3% ▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 52.2
+                        weighted average                = 51.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,6 +30,16 @@ api (fal.ai) · $0.040/sec · [fal.ai](https://fal.ai/models/fal-ai/kandinsky5-p
 
 <sub>[price source](https://fal.ai/models/fal-ai/kandinsky5-pro/text-to-video): USD per video second at 512P (endpoint default) on fal.ai. Product: fal Kandinsky5 Pro text-to-video endpoint. API model: fal-ai/kandinsky5-pro/text-to-video (5-s clips). Price basis: rate printed by fal; 1024P $0.12 per video second. No Sber USD API tariff was used. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+bf16 + model CPU offload · nvidia only  ~75.7GB   51.9
+</pre>
+
+```sh
+# bf16 + model CPU offload · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import Kandinsky5T2VPipeline; from diffusers.utils import export_to_video; p=Kandinsky5T2VPipeline.from_pretrained('kandinskylab/Kandinsky-5.0-T2V-Pro-sft-5s-Diffusers', torch_dtype=torch.bfloat16); p.transformer.set_attention_backend('flex'); p.enable_model_cpu_offload(); export_to_video(p(prompt='A cat and a dog baking a cake together in a kitchen.', negative_prompt='Static, 2D cartoon, cartoon, 2d animation, paintings, images, worst quality, low quality, ugly, deformed, walking backwards', height=768, width=1024, num_frames=121, num_inference_steps=50, guidance_scale=5.0).frames[0], 'output.mp4', fps=24, quality=9)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kandinsky-5-0-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

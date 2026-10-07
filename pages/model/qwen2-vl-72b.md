@@ -6,9 +6,7 @@
 
 Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
-**score 49.3** ±3.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 51.1** ±2.1 · #246 of 548 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,17 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1084.8    49.3   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 49.3
+<a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                   46.2%    51.3   2025-03-21   12% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                     96.5%    56.8   2025-03-21    9% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                     68.3%    52.0   2025-03-21    9% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>   77.8%    52.9   2025-03-21    9% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>   71.2%    53.0   2025-03-21    8% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                     68.7%    45.3   2025-03-21    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1084.8    50.0   2026-10-02   44% ▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 51.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Qwen2.5-VL-32B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download          size  score
+4-bit q4_k_m  ~48.82GB   51.1
+2-bit q2_k    ~31.21GB   51.1
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf bartowski/Qwen2-VL-72B-Instruct-GGUF:Q4_K_M
+# 2-bit q2_k
+llama-server -hf bartowski/Qwen2-VL-72B-Instruct-GGUF:Q2_K
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen2-vl-72b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

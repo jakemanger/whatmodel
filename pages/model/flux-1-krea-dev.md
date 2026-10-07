@@ -6,7 +6,7 @@
 
 Black Forest Labs / Krea · released 2025-07 · 12B params · flux-dev-nc
 
-**score 47.5** ±4.6 · #80 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.2** ±4.5 · #87 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.3   2026-03-29   91% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  82.0%    47.1   2026-03-29   80% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  18.2%    29.4   2026-04-24   12% ▇
 prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 47.5
+                        weighted average                       = 45.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt))</sub>
+<sub>Licences: ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -31,6 +32,16 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 <sub>[price source](https://replicate.com/black-forest-labs/flux-krea-dev): USD per output image on Replicate's official black-forest-labs/flux-krea-dev model (billing: $0.025 per output image, "or 40 images for $1"; hardware time not added). The current version is served from replicate-pruna/flux-krea-dev (Pruna-optimized deployment). Product: Replicate model API. API model: black-forest-labs/flux-krea-dev. Settings: one output image. Price basis: published list rate. fal's fal-ai/flux/krea bills $0.025 per megapixel, rounded up to the nearest megapixel. Currency: USD. Not a BFL or Krea direct tariff. Replicate official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                 needs  score
+bf16 + model CPU offload · nvidia only  ~41GB   45.2
+</pre>
+
+```sh
+# bf16 + model CPU offload · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch --with sentencepiece python -c "import torch; from diffusers import FluxPipeline; p=FluxPipeline.from_pretrained('black-forest-labs/FLUX.1-Krea-dev', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A frog holding a sign that says hello world', height=1024, width=1024, guidance_scale=4.5).images[0].save('flux-krea-dev.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/flux-1-krea-dev) · [JSON](https://whatmodel.sh/api?format=json&all=1)

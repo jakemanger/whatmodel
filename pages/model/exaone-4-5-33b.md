@@ -4,28 +4,56 @@
 
 # EXAONE 4.5 33B
 
-LG AI Research · released 2026-04
+LG AI Research · released 2026-04 · 34.4B params · exaone
 
-[Model and usage documentation](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B)
+**score 56.9** ±2.3 · #177 of 548 · from 4 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-MMLU-Pro                             72.0%  independent  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">SqueezeBits</a>
-MMMU-Pro standard (SqueezeBits lm…   17.6%  independent  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">SqueezeBits</a>
-MMMU-Pro vision (SqueezeBits lmms…   21.5%  independent  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">SqueezeBits</a>
+source                  test                            score  implies  date        weight
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    53.6   2026-04-04   37% ▇▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.9%    62.6   2026-04-04   27% ▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    54.9   2026-04-04   25% ▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    60.3   2026-04-04    9% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 56.9
 </pre>
 
-<sub>Licences: SqueezeBits ([MIT](../../licenses/squeezebits-exaone45-bf16-MIT.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+
+
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source       test                            score  why
+SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMLU-Pro</a>                        72.0%  another source's result is used
+SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro standard (SqueezeBit…</a>  17.6%  too few models have it yet
+SqueezeBits  <a href="https://github.com/SqueezeBits/FlatQuant-EXAONE4.5/blob/5f1ea65605d1f9301cd7d243b1e8a2c6590d2b46/README.md">MMMU-Pro vision (SqueezeBits …</a>  21.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md): LG AI Research official model card: EXAONE 4.5 33B context length 262,144 tokens. Observed 2026-09-25.</sub>
 
+<pre>
+download               size  score
+4-bit gguf-q4_k_m  ~21.14GB   56.9
+8-bit gguf-q8_0    ~41.78GB   56.9
+</pre>
+
 ```sh
+# 4-bit gguf-q4_k_m
 llama-server -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
 llama-server -hf LGAI-EXAONE/EXAONE-4.5-33B-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/exaone-4-5-33b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/exaone-4-5-33b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

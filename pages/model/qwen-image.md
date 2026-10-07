@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-08 · 20B params · apache-2.0
 
-**score 53.0** ±1.3 · #66 of 116 · from 7 benchmark results across 7 sources
+**score 53.6** ±1.3 · #63 of 136 · from 10 benchmark results across 10 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,20 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    53.4   2026-09-24   48% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    47.5   2026-07-01   15% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    56.8   2026-08-25    9% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    59.6   2026-07-12    9% ▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    53.1   2026-03-29    8% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    48.6   2026-06-02    7% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   49.2%    55.5   2026-05-27    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1056.8    53.0   2026-09-24   40% ▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        67.5%    47.7   2026-07-01   15% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   87.7%    56.1   2026-08-25    9% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.0%    59.7   2026-07-12    8% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   87.0%    52.6   2026-03-29    7% ▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>  1110.5    57.7   2025-09-03    6% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   62.0%    49.6   2026-06-02    5% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   991.7    63.7   2026-10-01    5% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   49.2%    54.9   2026-05-27    3% ▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>   25.7%    45.7   2026-04-24    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 53.0
+                        weighted average                        = 53.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (5)</summary>
 
@@ -52,13 +55,13 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/qwen/qw
 
 <pre>
 version                                     needs  score
-nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   53.0
-nf4 + model CPU offload · nvidia only     ~12.5GB   53.0
-fp8_e4m3fn safetensors (sd.cpp) · nvidi…    ~35GB   53.0
-gguf-q4_k_s · nvidia only                 ~25.1GB   53.0
-fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   53.0
-gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)      ~36.6GB   53.0
-gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)  ~22.1GB   53.0
+nf4 (bitsandbytes 4-bit transformer + t…  ~12.5GB   53.6
+nf4 + model CPU offload · nvidia only     ~12.5GB   53.6
+fp8_e4m3fn safetensors (sd.cpp) · nvidi…    ~35GB   53.6
+gguf-q4_k_s · nvidia only                 ~25.1GB   53.6
+fp8 onload + disk/CPU offload (DiffSynt…  ~12.5GB   53.6
+gguf-q8_0 + Qwen2.5-VL Q8_0 (sd.cpp)      ~36.6GB   53.6
+gguf-q4_k_m + Qwen2.5-VL Q4_K_M (sd.cpp)  ~22.1GB   53.6
 </pre>
 
 ```sh

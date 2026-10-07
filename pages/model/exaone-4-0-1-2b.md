@@ -4,26 +4,59 @@
 
 # EXAONE 4.0 1.2B
 
-LG AI Research · released 2025-07
+LG AI Research · released 2025-07 · 1.28B params · exaone
 
-[Model and usage documentation](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B)
+**score 40.6** ±1.9 · #373 of 548 · from 9 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                             result  reported by  source
-Thunder-KoNUBench symbol 0-shot   26.5%  independent  <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench: A Corpus-A…</a>
+source                  test                            score  implies  date        weight
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>              52.0%    47.1   2025-07-11   25% ▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>                 45.2%    36.2   2025-07-11   18% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  59.3%    43.2   2025-07-11   17% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        34.0%    38.1   2025-07-11   11% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>            28.1%    35.9   2025-07-11    6% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                71.5%    33.6   2025-07-11    6% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecifi…</a>  67.8%    33.8   2025-07-11    6% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>           20.5%    35.7   2025-07-11    6% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>                   52.9%    46.8   2025-07-11    3% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 40.6
 </pre>
 
-<sub>Licences: Thunder-KoNUBench: A Corpus-Aligned Benchmark for Korean Negation Understanding ([CC BY 4.0](../../licenses/cards-final-NOTICE.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                            score  why
+Thunder-KoNUBench: A …  <a href="https://aclanthology.org/2026.findings-acl.324.pdf">Thunder-KoNUBench symbol 0-sh…</a>  26.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B/blob/3abf2810673c7c0778df64a73c2d52eab32d91c4/README.md): LG AI Research official model card: EXAONE 4.0 1.2B context length 65,536 tokens. Observed 2026-09-25.</sub>
 
+<pre>
+download              size  score
+4-bit gguf-q4_k_m  ~1.27GB   40.6
+8-bit gguf-q8_0    ~2.04GB   40.6
+</pre>
+
 ```sh
+# 4-bit gguf-q4_k_m
 llama-server -hf LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF:Q4_K_M
+# 8-bit gguf-q8_0
 llama-server -hf LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF:Q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/exaone-4-0-1-2b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/exaone-4-0-1-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

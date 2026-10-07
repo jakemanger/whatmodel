@@ -6,7 +6,7 @@
 
 SHI Labs · released 2022-11 · mit
 
-**score 32.8** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.5** ±7.0 · #106 of 136 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,18 +15,30 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  26.6%    31.6   2024-02-21   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 32.8
+source                  test                                    score  implies  date        weight
+<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  340.0000 wins    38.8   2023-12-28   50% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>    18.4000 FID    25.5   2023-12-28   28% ▇▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>          26.6%    40.8   2024-02-21    2% ▇
+prior                   pull toward the middle                           49.9                21% ▇▇▇
+                        weighted average                               = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+<sub>Licences: ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version              needs  score
+fp16 · nvidia only  ~7.2GB   37.5
+</pre>
+
+```sh
+# fp16 · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import VersatileDiffusionTextToImagePipeline; p=VersatileDiffusionTextToImagePipeline.from_pretrained('shi-labs/versatile-diffusion', torch_dtype=torch.float16); p.remove_unused_weights(); p=p.to('cuda'); p('an astronaut riding on a horse on mars', generator=torch.Generator(device='cuda').manual_seed(0)).images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/versatile-diffusion) · [JSON](https://whatmodel.sh/api?format=json&all=1)

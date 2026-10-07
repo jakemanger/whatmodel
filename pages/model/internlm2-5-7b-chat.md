@@ -6,9 +6,7 @@
 
 Shanghai AI Laboratory (InternLM) · released 2024-06 · 7.74B params · other
 
-**score 42.6** ±5.1 · #302 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 46.9** ±1.8 · #291 of 548 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,21 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  69.2%    41.6   2024-07-05   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 42.6
+<a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                     86.0%    45.4   2024-07-03   26% ▇▇▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                      72.8%    44.7   2024-07-03   22% ▇▇▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (la…</a>  60.1%    51.0   2024-07-03   16% ▇▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>            71.6%    48.1   2024-07-03   12% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (la…</a>  38.4%    52.6   2024-07-03    5% ▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">CMMLU (lab)</a>                     78.0%    53.0   2024-07-03    4% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  69.2%    43.2   2024-07-05   14% ▇▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 46.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: InternLM GitHub repository model cards ([Apache-2.0](https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.14GB   42.6
-8-bit q8_0    ~9.79GB   42.6
+4-bit q4_k_m  ~5.14GB   46.9
+8-bit q8_0    ~9.79GB   46.9
 </pre>
 
 ```sh

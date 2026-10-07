@@ -4,9 +4,9 @@
 
 # Dia2 2B
 
-Nari Labs · apache-2.0
+Nari Labs · released 2025-11 · 1.92B params · apache-2.0
 
-**score 39.1** ±6.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.2** ±6.3 · #69 of 98 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>   6.5%    37.0   2026-01-28   84% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                16% ▇▇
-                        weighted average                       = 39.1
+<a name="speech-tts-deepfake-age-ccby"></a>Audio Deepfake Detect…  <a href="https://arxiv.org/html/2601.20510v1">DailyDialog TTS · Whisper-lar…</a>   6.5%    37.2   2026-01-28   84% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.8                16% ▇▇
+                        weighted average                       = 39.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 (nari-labs/dia2 repo CLI) · nvidia…  ~8.07GB   39.2
+</pre>
+
+```sh
+# bf16 (nari-labs/dia2 repo CLI) · nvidia only
+git clone https://github.com/nari-labs/dia2.git && cd dia2 && uv sync && uv run -m dia2.cli --hf nari-labs/Dia2-2B --input input.txt --cfg 6.0 --temperature 0.8 --cuda-graph --verbose output.wav
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/dia2-2b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

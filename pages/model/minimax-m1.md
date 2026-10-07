@@ -6,9 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 58.8** ±2.7 · #157 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 59.0** ±2.6 · #161 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1363.9    59.1   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1363.9    59.3   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 58.8
+                        weighted average                = 59.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -53,6 +51,16 @@ api (Novita AI) · $0.96/M blended · $0.55 in / $2.2 out per 1M tokens · [novi
 
 <sub>[price source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): USD per 1M text tokens, standard uncached input and output. Model endpoint minimaxai/minimax-m1-80k.  Product: Serverless chat completions. API model: minimaxai/minimax-m1-80k. Settings: service tier=standard, batch=no, cache=uncached input. Additional/excluded charges: Tools, cache storage, priority service and other modalities excluded.. Currency: USD. · [context source](https://github.com/BerriAI/litellm/blob/c19ce71bcdad234ca87a7af10cee45375ce811a8/model_prices_and_context_window.json): provider maximum input tokens; not an intrinsic model maximum or legacy max\_tokens</sub>
 
-no verified local download listed
+<pre>
+download          size  score
+16-bit bf16  ~912.21GB   59.0
+</pre>
+
+```sh
+# 16-bit bf16
+pip install transformers torch accelerate && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig; p='MiniMaxAI/MiniMax-M1-80k'; m=AutoModelForCausalLM.from_pretrained(p, device_map='auto', trust_remote_code=True); t=AutoTokenizer.from_pretrained(p, trust_remote_code=True); x=t(t.apply_chat_template([{'role': 'user', 'content': [{'type': 'text', 'text': 'Do you have mayonnaise recipes?'}]}], tokenize=False, add_generation_prompt=True), return_tensors='pt').to(m.device); o=m.generate(**x, generation_config=GenerationConfig(max_new_tokens=20, eos_token_id=t.eos_token_id, use_cache=True)); print(t.batch_decode([o[0][x.input_ids.shape[1]:]], skip_special_tokens=True)[0])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/minimax-m1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

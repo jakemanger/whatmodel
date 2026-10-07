@@ -6,7 +6,7 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 65.0** ±38.2 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.0** ±38.2 · #1 of 2 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [DPG-Bench](https://whatmodel.sh/image?set=dpg-bench%40visual-llada-image&score=set) comparison set only.
 
@@ -28,6 +28,22 @@ prior                   pull toward the middle           50.0                60%
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 · nvidia only                        ~59.6GB   65.0
+f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   65.0
+gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   65.0
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone https://github.com/inclusionAI/LLaDA-Image && cd LLaDA-Image && pip install -r requirements.txt && python -c "import torch; from src import LLaDAImagePipeline; p=LLaDAImagePipeline.from_pretrained('inclusionAI/LLaDA-Image-Turbo', torch_dtype=torch.bfloat16, device='cuda'); p(prompt='A quiet observatory above a sea of clouds at sunrise, golden light, wide-angle photograph', generation_mode='text', height=1024, width=1024, num_inference_steps=4, guidance_scale=1.0, generator=torch.Generator('cuda').manual_seed(42)).images[0].save('out.png')"
+# f16 + LLaDA2 text encoder q8_0 (sd.cpp)
+sd-cli --diffusion-model models/llada-image-turbo-f16.gguf --llm models/llada-image-turbo-text_encoder-q8_0.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-turbo-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 4 --cfg-scale 1.0 --seed 42 --output output.png
+# gguf-q8_0 + LLaDA2 text encoder q4_k (sd.cpp)
+sd-cli --diffusion-model models/llada-image-turbo-q8_0.gguf --llm models/llada-image-turbo-text_encoder-q4_K.gguf --tokenizer models/tokenizer.json --vae models/llada_vae.safetensors --embeddings-connectors models/llada-image-turbo-connectors.safetensors --prompt "a lovely cat holding a sign says 'llada.cpp'" --width 1024 --height 1024 --steps 4 --cfg-scale 1.0 --seed 42 --output output.png
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/llada-image-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

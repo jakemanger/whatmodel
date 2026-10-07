@@ -6,9 +6,7 @@
 
 Xiaomi · released 2026-09 · 1020B params (42B active) · mit
 
-**score 73.5** ±1.5 · #31 of 462 · from 3 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 72.6** ±1.4 · #31 of 548 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1618.4    76.0   2026-10-01   49% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1480.1    73.1   2026-10-02   29% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1245.2    69.3   2026-10-02   21% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1618.4    75.0   2026-10-01   50% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1480.1    72.2   2026-10-02   28% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1245.2    68.7   2026-10-02   21% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 73.5
+                        weighted average                        = 72.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,10 +27,23 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
-api (Xiaomi MiMo) · price unknown · [mimo.mi.com](https://mimo.mi.com/docs/en-US/quick-start/summary/model)
+api (Xiaomi MiMo) · $0.54/M blended · $0.435 in / $0.87 out per 1M tokens · [mimo.mi.com](https://mimo.mi.com/docs/en-US/quick-start/summary/model)
 
-<sub>[context source](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md): Context length stated on the official model card.</sub>
+<sub>[price source](https://github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/xiaomi/models/mimo-v2.6-pro.toml): Standard base token rate from models.dev (revision 6b32416, observed 2026-10-07). Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/73875d00b30a89ef8cc353a0b60b0e9f9561952d/README.md): Context length stated on the official model card.</sub>
 
-no verified local download listed
+<pre>
+download          size  score
+2-bit q2_k   ~420.38GB   72.6
+MXFP4 mxfp4  ~557.05GB   72.6
+</pre>
+
+```sh
+# 2-bit q2_k
+llama-server -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:Q2_K
+# MXFP4 mxfp4
+llama-server -hf ggml-org/MiMo-V2.6-Pro-RL-GGUF:MXFP4
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/mimo-v2-6-pro) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Meta · released 2023-11 · 2.31B params · cc-by-nc-4.0
 
-**score 46.1** ±6.3 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 46.4** ±6.2 · #86 of 117 · from 3 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,19 +16,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  21.6%    43.3   2026-09-25   43% ▇▇▇▇▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  25.9%    44.5   2026-08-15   21% ▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  38.2%    50.9   2025-01-12   20% ▇▇
-prior                   pull toward the middle                   49.7                15% ▇▇
-                        weighted average                       = 46.1
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  21.6%    41.1   2026-09-25   38% ▇▇▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  38.2%    52.3   2025-01-12   29% ▇▇▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  25.9%    45.6   2026-08-15   18% ▇▇
+prior                   pull toward the middle                   49.7                14% ▇▇
+                        weighted average                       = 46.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
+<sub>Licences: Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 on CPU, fp16 on CUDA (seamless_com…  ~9.24GB   46.4
+</pre>
+
+```sh
+# fp32 on CPU, fp16 on CUDA (seamless_communication m4t_predict)
+git clone https://github.com/facebookresearch/seamless_communication && cd seamless_communication && pip install . && m4t_predict audio.wav --task asr --tgt_lang eng --model_name seamlessM4T_v2_large
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/seamless-m4t-v2-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

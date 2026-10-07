@@ -6,9 +6,7 @@
 
 Hugging Face · released 2023-10 · 7.24B params · mit
 
-**score 32.8** ±2.4 · #402 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 35.1** ±2.3 · #453 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1126.9    30.6   2026-10-02   77% ▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   66.2%    38.5   2024-04-14   21% ▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 32.8
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1126.9    32.9   2026-10-02   74% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   66.2%    40.6   2024-04-14   23% ▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 35.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,8 +28,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.84GB   32.8
-8-bit q8_0    ~9.19GB   32.8
+4-bit q4_k_m  ~4.84GB   35.1
+8-bit q8_0    ~9.19GB   35.1
 </pre>
 
 ```sh

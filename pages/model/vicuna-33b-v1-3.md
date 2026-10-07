@@ -6,9 +6,7 @@
 
 LMSYS · released 2023-06 · 33B params · non-commercial
 
-**score 34.7** ±1.7 · #388 of 462 · from 4 benchmark results across 4 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 36.7** ±1.7 · #429 of 548 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1172.9    36.1   2026-10-02   38% ▇▇▇▇▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>    8.6%    32.1   2024-11-14   35% ▇▇▇▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   36.5%    33.7   2024-01-03   15% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   65.3%    37.6   2024-03-05   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1172.9    38.0   2026-10-02   39% ▇▇▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>    8.6%    34.0   2024-11-14   35% ▇▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   36.5%    36.0   2024-01-03   13% ▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   65.3%    39.8   2024-03-05   12% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 34.7
+                        weighted average                        = 36.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,10 +28,12 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/lmsys/vicuna-33b-v1.3/blob/ef8d6becf883fb3ce52e3706885f761819477ab4/config.json): LMSYS official configuration for vicuna-33b-v1.3 (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~20.3GB   34.7
-8-bit q8_0    ~40.1GB   34.7
+4-bit q4_k_m  ~20.3GB   36.7
+8-bit q8_0    ~40.1GB   36.7
 </pre>
 
 ```sh

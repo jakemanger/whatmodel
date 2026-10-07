@@ -6,7 +6,7 @@
 
 SpeechBrain · released 2025-02 · 0.48B params · apache-2.0
 
-**score 50.2** ±4.2 · #72 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 49.7** ±4.6 · #78 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    50.2   2026-03-26   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 50.2
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    49.7   2026-03-26   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.7                 8% ▇
+                      weighted average                       = 49.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version   needs  score
-fp32     ~2.8GB   50.2
+fp32     ~2.8GB   49.7
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Kuaishou (Kolors team) · released 2024-07 · 2.6B params · kolors-model-license
 
-**score 38.7** ±3.3 · #94 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 38.6** ±3.5 · #103 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    36.1   2024-12-25   77% ▇▇▇▇▇▇▇▇▇
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    47.0   2024-11-13   18% ▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.93 / 5    35.6   2024-12-25   75% ▇▇▇▇▇▇▇▇▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.59 / 5    46.9   2024-11-13   20% ▇▇
 prior                   pull toward the middle                      49.9                 5% ▇
-                        weighted average                          = 38.7
+                        weighted average                          = 38.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~21.6GB   38.7
+fp16 · nvidia only  ~21.6GB   38.6
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 35.1** ±2.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 33.6** ±2.5 · #464 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,10 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  39.6%    36.8   2024-05-07   89% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  35.5%    12.0   2026-04-17    8% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  39.6%    37.4   2024-05-07   77% ▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  35.5%    16.9   2026-04-17   11% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  28.5%    16.1   2026-04-17    9% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 35.1
+                        weighted average                       = 33.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +27,16 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.13GB   33.6
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf ibm-granite/granite-3b-code-instruct-2k-GGUF:Q4_K_M
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-3b-code-instruct-2k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

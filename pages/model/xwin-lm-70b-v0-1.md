@@ -4,11 +4,9 @@
 
 # Xwin-LM 70B v0.1
 
-Xwin-LM · 70B params · llama2
+Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 41.7** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 42.8** ±2.0 · #350 of 548 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  65.6%    44.2   2023-11-20   36% ▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  38.2%    32.8   2023-11-20   23% ▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    45.1   2023-11-20   18% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       66.1%    40.1   2023-11-20   12% ▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           65.5%    48.4   2023-11-20    8% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  65.6%    44.4   2023-11-20   40% ▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            65.0%    45.0   2023-11-20   19% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       66.1%    40.3   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  38.2%    32.8   2023-11-20   13% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           65.5%    47.4   2023-11-20   11% ▇
 prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 41.7
+        weighted average                       = 42.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,6 +29,16 @@ prior   pull toward the middle                   50.0                 2% ▇
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit q4_0  ~38.87GB   42.8
+</pre>
+
+```sh
+# 4-bit q4_0
+ollama run xwinlm:70b-v0.1
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/xwin-lm-70b-v0-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

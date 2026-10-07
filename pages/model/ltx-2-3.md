@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-03 · 22B params · ltx-2-community
 
-**score 31.4** ±3.0 · #70 of 76 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 34.9** ±2.6 · #73 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,15 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  587.0    30.0   2026-05-11   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.4%    35.6   2026-08-10   12% ▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 31.4
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  587.0    33.0   2026-05-11   71% ▇▇▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  11.9%    37.4   2026-09-30   12% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  38.4%    35.5   2026-08-10    9% ▇
+<a name="visual-phyground"></a>PhyGround: Benchmarki…  <a href="https://arxiv.org/html/2605.10806v1#S4.T2">PhyGround physics human evalu…</a>  53.8%    47.4   2026-05-11    4% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 34.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
+<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · PhyGround: Benchmarking Physical Reasoning in Generative World Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -32,7 +34,7 @@ api (Lightricks (LTX API)) · $0.040/sec · [docs.ltx.io](https://docs.ltx.io/pr
 
 <pre>
 version                                     needs  score
-gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4…  ~34.2GB   31.4
+gguf-ud-q4_k_m 22B dev + Gemma 3 12B q4…  ~34.2GB   34.9
 </pre>
 
 ```sh

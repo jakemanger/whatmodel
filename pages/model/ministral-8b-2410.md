@@ -6,9 +6,7 @@
 
 Mistral · released 2024-10 · 8.02B params · mistral-research
 
-**score 41.8** ±1.1 · #310 of 462 · from 17 benchmark results across 9 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 43.6** ±0.9 · #341 of 548 · from 22 benchmark results across 10 sources
 
 ## How the score was worked out
 
@@ -16,30 +14,35 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             68.5%    43.0   2025-10-08   11% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   70.8%    45.4   2025-10-08   10% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            80.0%    42.5   2025-10-08    7% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   31.4%    43.4   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   55.5%    38.8   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            20.2%    37.0   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        56.4%    29.1   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        40.0%    38.0   2025-10-08    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     14.9%    42.8   2025-01-27   16% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     27.1%    36.8   2025-01-27    7% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1237.6    43.9   2026-10-02   15% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.3%    43.9   2024-12-03    4% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   30.4%    45.4   2025-04-28    3% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   17.6%    42.4   2025-09-26    3% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   11.1%    28.3   2025-12-16    3% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   82.5%    45.6   2026-04-17    2% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   68.9%    36.7   2025-07-02    1% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 41.8
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             68.5%    44.2   2025-10-08   10% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   70.8%    46.5   2025-10-08    8% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            80.0%    43.8   2025-10-08    7% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   31.4%    44.6   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   55.5%    40.2   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            20.2%    38.7   2025-10-08    2% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        56.4%    31.0   2025-10-08    2% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        40.0%    39.6   2025-10-08    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     14.9%    44.0   2025-01-27   13% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     27.1%    38.3   2025-01-27    6% ▇
+<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">HumanEval (lab)</a>                  76.8%    44.6   2024-10-15    5% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">Arena-Hard (version/judge uns…</a>   70.9%    45.9   2024-10-15    4% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MBPP (lab)</a>                       70.0%    44.3   2024-10-15    3% ▇
+                        <a href="https://huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks">MATH (subset unspecified) (la…</a>   54.5%    46.9   2024-10-15    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1237.6    45.2   2026-10-02   12% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          51.5%    48.8   2025-06-14    2% ▇
+                        <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   11.1%    30.5   2025-12-16    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.3%    45.2   2024-12-03    4% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   30.4%    46.7   2025-04-28    3% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   17.6%    43.6   2025-09-26    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   82.5%    47.0   2026-04-17    1% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v1.csv">Galileo Agent Leaderboard v1 …</a>   68.9%    38.6   2025-07-02    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 43.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
+<sub>Licences: 2 OLMo 2 Furious ([CC BY 4.0](../../licenses/paper-2501.00656v3-CC-BY-4.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -47,7 +50,7 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~19.75GB   41.8
+16-bit bf16 · nvidia only  ~19.75GB   43.6
 </pre>
 
 ```sh

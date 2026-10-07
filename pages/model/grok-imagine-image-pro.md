@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · closed weights
 
-**score 63.7** ±1.9 · #23 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 63.6** ±1.9 · #20 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1162.2    63.6   2026-09-24   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>   20.0%    79.3   2026-05-31    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1162.2    63.3   2026-09-24   87% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  1009.7    65.5   2026-10-01   10% ▇
+<a name="visual-tecci"></a>TECCI: Tricky Edits o…  <a href="https://arxiv.org/html/2606.01213v1#S4.T2">TECCI human overall success r…</a>   20.0%    79.7   2026-05-31    2% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 63.7
+                        weighted average                        = 63.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TECCI: Tricky Edits of Collected and Curated Images ([CC-BY-4.0](../../licenses/visual-tecci.txt))</sub>
 
 ## How to run it
 

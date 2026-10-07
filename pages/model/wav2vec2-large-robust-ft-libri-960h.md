@@ -6,7 +6,7 @@
 
 Meta · released 2021-04 · 0.32B params · apache-2.0
 
-**score 15.0** ±4.0 · #106 of 113 · from 3 benchmark results across 3 sources
+**score 16.1** ±4.2 · #110 of 117 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,22 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.9%    11.7   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  32.6%    20.5   2026-08-18    6% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  15.2%    21.7   2024-12-09    4% ▇
-prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 15.0
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.9%    11.2   2026-03-26   78% ▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  15.2%    20.7   2024-12-09    5% ▇
+                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.6%    40.6   2024-12-09    4% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  32.6%    21.6   2026-08-18    7% ▇
+prior                   pull toward the middle                   49.7                 7% ▇
+                        weighted average                       = 16.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   15.0
+fp32     ~2.04GB   16.1
 </pre>
 
 ```sh

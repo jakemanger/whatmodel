@@ -6,7 +6,7 @@
 
 HiDream · released 2025-04 · 17B params · mit
 
-**score 46.3** ±2.4 · #81 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 46.2** ±1.9 · #86 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  21.2%    46.4   2026-05-14   51% ▇▇▇▇▇▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       64.2%    46.0   2026-07-01   47% ▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 46.3
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  21.2%    46.3   2026-05-14   42% ▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       64.2%    46.3   2026-07-01   31% ▇▇▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   4.2%    45.5   2026-09-28   26% ▇▇▇
+prior                   pull toward the middle                   49.9                 1% ▇
+                        weighted average                       = 46.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt))</sub>
+<sub>Licences: GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -32,6 +33,16 @@ api (fal.ai) · $0.050/image · [fal.ai](https://fal.ai/models/fal-ai/hidream-i1
 
 <sub>[price source](https://fal.ai/models/fal-ai/hidream-i1-full): USD for one 1-megapixel output: fal bills this endpoint $0.05 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hidream-i1-full (HiDream I1 Full, 17B; the dev and fast endpoints are separate). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a HiDream direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version               needs  score
+bf16 · nvidia only  ~76.4GB   46.2
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone https://github.com/HiDream-ai/HiDream-I1 && cd HiDream-I1 && pip install -r requirements.txt && python ./inference.py --model_type full
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hidream-i1-full) · [JSON](https://whatmodel.sh/api?format=json&all=1)

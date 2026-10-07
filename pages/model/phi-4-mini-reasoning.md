@@ -6,9 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 31.6** ±4.2 · #411 of 462 · from 3 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 34.5** ±3.9 · #456 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    32.4   2025-04-28   49% ▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    28.3   2026-04-17   24% ▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    26.1   2026-04-17   19% ▇▇
-prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 31.6
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    31.5   2026-04-17   26% ▇▇▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    32.8   2026-04-17   21% ▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    34.7   2025-04-28   47% ▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 7% ▇
+                        weighted average                       = 34.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 <details><summary>Not counted (3)</summary>
 
@@ -44,6 +42,22 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
 
 <sub>[price source](https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft): USD per 1M tokens, Azure AI Foundry Models pay-as-you-go (Microsoft models table), 'Phi-4-mini-reasoning' (GA), 128K context: input $0.075, output $0.30, region US East. Currency: USD. Microsoft Azure official pricing page (price cells carry the amounts in the page's own data), observed 2026-09-25. · [context source](https://huggingface.co/microsoft/Phi-4-mini-reasoning/blob/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a/README.md): Microsoft official model card: Phi-4-mini-reasoning context length 128K tokens (stated rounded). Observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.49GB   34.5
+8-bit q8_0    ~4.08GB   34.5
+4-bit q4_k_m  ~3.15GB   34.5
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf unsloth/Phi-4-mini-reasoning-GGUF:Q4_K_M
+# 8-bit q8_0
+llama-server -hf unsloth/Phi-4-mini-reasoning-GGUF:Q8_0
+# 4-bit q4_k_m
+ollama run phi4-mini-reasoning:3.8b
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/phi-4-mini-reasoning) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,9 +6,7 @@
 
 BigCode · released 2024-02 · 7.17B params · bigcode-openrail-m
 
-**score 34.1** ±0.8 · #392 of 462 · from 14 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 34.5** ±0.6 · #457 of 548 · from 16 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,27 +14,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               25.0%    34.2   2024-03-28   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       34.8%    32.5   2024-03-28   18% ▇▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 35.4%    33.8   2024-02-29   16% ▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   27.8%    36.1   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      54.4%    32.0   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     40.4%    37.9   2024-02-29    2% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      29.9%    33.9   2024-12-26   20% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       35.4%    33.9   2024-12-26   19% ▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       34.8%    34.6   2024-03-28   19% ▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               25.0%    35.6   2024-03-28   10% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 35.4%    34.3   2024-02-29    9% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      54.4%    32.5   2024-02-29    4% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   27.8%    36.5   2024-02-29    3% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     40.4%    37.8   2024-02-29    2% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                34.6%    31.6   2024-02-29    1% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                36.0%    31.9   2024-02-29    1% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.4%    35.8   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            45.4%    37.3   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      34.2%    32.8   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      35.8%    33.8   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            10.4%    34.1   2024-05-07    1% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           27.2%    33.9   2024-05-07    1% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                36.0%    31.7   2024-02-29    0% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  37.4%    36.4   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            45.4%    37.4   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      34.2%    33.0   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      35.8%    34.0   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            10.4%    34.3   2024-05-07    1% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           27.2%    34.1   2024-05-07    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 34.1
+                        weighted average                       = 34.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -44,8 +44,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.4GB   34.1
-8-bit q8_0    ~7.6GB   34.1
+4-bit q4_k_m  ~4.4GB   34.5
+8-bit q8_0    ~7.6GB   34.5
 </pre>
 
 ```sh

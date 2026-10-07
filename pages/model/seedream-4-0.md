@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-09 · proprietary
 
-**score 60.9** ±1.4 · #34 of 116 · from 6 benchmark results across 5 sources
+**score 60.7** ±1.4 · #32 of 136 · from 9 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1140.0    61.5   2026-09-24   53% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1270.1    62.4   2026-09-30   14% ▇▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   53.2%    59.4   2026-05-14   18% ▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          80.4%    57.8   2025-12-01    6% ▇
-<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   46.5%    59.1   2026-02-10    5% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   56.2%    65.2   2026-05-27    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1140.0    61.1   2026-09-24   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1270.1    61.7   2026-09-30   11% ▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   53.2%    59.2   2026-05-14   23% ▇▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          80.4%    57.4   2025-12-01    6% ▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   46.5%    58.7   2026-02-10    5% ▇
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>   59.8%    67.2   2026-03-17    4% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   56.2%    65.0   2026-05-27    3% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   41.5%    58.4   2026-03-26    1% ▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>   39.6%    69.6   2026-04-24    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 60.9
+                        weighted average                        = 60.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

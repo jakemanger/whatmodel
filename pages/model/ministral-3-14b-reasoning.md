@@ -6,9 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 60.0** ±2.7 · #145 of 462 · from 3 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 55.7** ±1.4 · #189 of 548 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,25 +14,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  86.9%    68.2   2026-04-17   33% ▇▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.2%    63.1   2026-04-17   23% ▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    52.5   2026-05-02   41% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 60.0
+<a name="card-mistralai-ministral-3-8b-reasoning-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">GPQA Diamond (lab)</a>              71.2%    53.7   2026-09-25   28% ▇▇▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                 89.8%    55.5   2026-09-25   16% ▇▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                 85.0%    55.2   2026-09-25   15% ▇▇
+                        <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>  64.6%    52.6   2026-09-25   11% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  48.1%    53.4   2026-05-02   15% ▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  86.9%    68.0   2026-04-17    7% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.2%    62.7   2026-04-17    7% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 55.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: mistralai/Ministral-3-8B-Reasoning-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 <details><summary>Not counted (4)</summary>
 
 <pre>
 source                  test                            score  why
-mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">AIME 2025</a>                       85.0%  too few models have it yet
-mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">AIME 2024</a>                       89.8%  too few models have it yet
-mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">GPQA Diamond</a>                    71.2%  too few models have it yet
-mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">LiveCodeBench (version unspec…</a>  64.6%  too few models have it yet
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">AIME 2025</a>                       85.0%  another source's result is used
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">AIME 2024</a>                       89.8%  another source's result is used
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">GPQA Diamond</a>                    71.2%  another source's result is used
+mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512/blob/51f9210f3cd20f3452a80d5819d15dc61cc50630/README.md">LiveCodeBench (version unspec…</a>  64.6%  another source's result is used
 </pre>
 
 </details>
@@ -45,7 +47,7 @@ mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-
 
 <pre>
 download        size  score
-4-bit q4_k_m  8.24GB   60.0
+4-bit q4_k_m  8.24GB   55.7
 </pre>
 
 ```sh

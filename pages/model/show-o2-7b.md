@@ -6,7 +6,7 @@
 
 Show Lab, NUS · released 2025-06 · 7B params · apache-2.0
 
-**score 40.0** ±3.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 39.8** ±2.8 · #99 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    39.5   2026-05-14   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 40.0
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>  11.2%    39.5   2026-05-14   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 39.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+official scripts (checkpoint as stored)…  ~22.5GB   39.8
+</pre>
+
+```sh
+# official scripts (checkpoint as stored) · nvidia only
+git clone https://github.com/showlab/Show-o && cd Show-o/show-o2 && bash build_env.sh && wandb login && wget https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/resolve/main/Wan2.1_VAE.pth && python3 inference_t2i.py config=configs/showo2_7b_demo_432x432.yaml batch_size=4 guidance_scale=7.5 num_inference_steps=50
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/show-o2-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

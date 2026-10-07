@@ -6,23 +6,24 @@
 
 MiniMax · released 2025-10 · proprietary
 
-**score 55.4** ±1.8 · #30 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.1** ±1.8 · #36 of 87 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1206.0    54.8   2026-09-22   61% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1262.0    56.7   2026-09-22   37% ▇▇▇▇
-prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 55.4
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1206.0    54.5   2026-09-22   57% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1262.0    56.6   2026-09-22   35% ▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>   13.0%    37.1   2026-09-30    6% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 54.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

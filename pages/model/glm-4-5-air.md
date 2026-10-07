@@ -6,9 +6,7 @@
 
 Z.ai · released 2025-07 · 106B params (12B active) · mit
 
-**score 60.2** ±1.4 · #143 of 462 · from 20 benchmark results across 5 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 60.2** ±1.2 · #149 of 548 · from 21 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -16,26 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  89.4%    61.9   2025-08-08    8% ▇
+<a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  89.4%    61.7   2025-08-08    7% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   75.0%    60.9   2025-08-08    6% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       87.4%    60.7   2025-08-08    6% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         57.6%    60.6   2025-08-08    6% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   81.4%    60.9   2025-08-08    5% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    59.9   2025-08-08    4% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    59.0   2025-08-08    4% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.1%    62.8   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             77.9%    61.9   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   37.3%    60.8   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    53.1   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             42.5%    57.2   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    63.8   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.3%    63.8   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    62.0   2025-08-08    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.3   2026-10-02   23% ▇▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    58.3   2026-05-02   10% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   95.8%    63.8   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    54.9   2026-04-17    2% ▇
-<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.5   2025-11-18    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       87.4%    60.6   2025-08-08    6% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         57.6%    60.5   2025-08-08    5% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   81.4%    60.8   2025-08-08    5% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.1%    62.6   2025-08-08    4% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    58.9   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    59.6   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             77.9%    61.8   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    63.4   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   37.3%    60.5   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    53.0   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>   30.0%    58.2   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             42.5%    56.8   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.3%    63.5   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    61.8   2025-08-08    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.3   2026-10-02   22% ▇▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    58.4   2026-05-02   11% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   95.8%    63.3   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    55.4   2026-04-17    2% ▇
+<a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.6   2025-11-18    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 60.2
 </pre>
@@ -44,13 +43,12 @@ prior                   pull toward the middle                    50.0          
 
 <sub>Licences: GLM-4.5 Team ([CC BY 4.0](../../licenses/report-2508.06471v1.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt))</sub>
 
-<details><summary>Not counted (3)</summary>
+<details><summary>Not counted (2)</summary>
 
 <pre>
 source        test                            score  why
 GLM-4.5 Team  <a href="https://arxiv.org/html/2508.06471v1">LiveCodeBench 2024-07 to 2025…</a>  70.7%  too few models have it yet
 GLM-4.5 Team  <a href="https://arxiv.org/html/2508.06471v1">SysBench (ISR)</a>                  77.4%  too few models have it yet
-GLM-4.5 Team  <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>  30.0%  too few models have it yet
 </pre>
 
 </details>

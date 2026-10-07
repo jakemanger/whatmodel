@@ -6,7 +6,7 @@
 
 Tencent · released 2025-09 · 17B params · tencent-hunyuan-community
 
-**score 55.2** ±5.5 · #61 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.4** ±3.0 · #49 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    56.0   2026-06-09   87% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                13% ▇▇
-                        weighted average                       = 55.2
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>  18.8%    58.7   2026-09-28   69% ▇▇▇▇▇▇▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>  49.8%    55.2   2026-06-09   27% ▇▇▇
+prior                   pull toward the middle                   49.9                 4% ▇
+                        weighted average                       = 57.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
+<sub>Licences: Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt))</sub>
 
 ## How to run it
 
@@ -31,6 +32,16 @@ api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-ima
 
 <sub>[price source](https://fal.ai/models/fal-ai/hunyuan-image/v2.1/text-to-image): USD for one 1-megapixel output: fal bills this endpoint $0.1 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v2.1/text-to-image (Hunyuan Image 2.1). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version               needs  score
+bf16 · nvidia only  ~64.2GB   57.4
+</pre>
+
+```sh
+# bf16 · nvidia only
+uv run --with diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import HunyuanImagePipeline; p=HunyuanImagePipeline.from_pretrained('hunyuanvideo-community/HunyuanImage-2.1-Diffusers', torch_dtype=torch.bfloat16).to('cuda:0'); p('a cute cartoon penguin plush toy painting the Mona Lisa in a studio', num_inference_steps=50, height=2048, width=2048, generator=torch.Generator(device='cuda:0').manual_seed(649151)).images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-2-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

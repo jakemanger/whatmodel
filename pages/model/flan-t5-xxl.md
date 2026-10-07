@@ -6,9 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 65.5** ±5.7 · #1 of 5 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [BIG-Bench Hard](https://whatmodel.sh/?set=bbh%40paper-2210.11416v5&score=set) comparison set only.
+**score 44.9** ±2.4 · #316 of 548 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,21 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              55.1%    67.4   2022-12-06   79% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    45.3%    66.9   2022-12-06   11% ▇
-prior                   pull toward the middle           50.0                10% ▇
-                        weighted average               = 65.5
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              55.1%    45.9   2022-12-06   32% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    45.3%    40.1   2022-12-06   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               4.9%    55.7   2022-12-06   17% ▇▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          43.9%    36.5   2024-03-10   13% ▇▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    54.5%    45.5   2024-03-10   11% ▇
+prior                   pull toward the middle           50.0                 3% ▇
+                        weighted average               = 44.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt))</sub>
+<sub>Licences: Scaling Instruction-Finetuned Language Models ([CC BY 4.0](../../licenses/paper-2210.11416v5-CC-BY-4.0.txt)) · InstructEval ([MIT / Apache-2.0](https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit fp32  ~45.07GB   65.5
+4-bit fp32  ~45.07GB   44.9
 </pre>
 
 ```sh

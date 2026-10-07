@@ -6,9 +6,7 @@
 
 Prime Intellect · released 2025-11 · 106B params (12B active) · mit
 
-**score 57.9** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 58.1** ±2.6 · #166 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1355.8    58.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1355.8    58.4   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 57.9
+                        weighted average                = 58.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,19 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download          size  score
+4-bit q4_k_m  ~71.36GB   58.1
+2-bit q2_k    ~44.71GB   58.1
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q4_K_M
+# 2-bit q2_k
+llama-server -hf bartowski/PrimeIntellect_INTELLECT-3-GGUF:Q2_K
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/intellect-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

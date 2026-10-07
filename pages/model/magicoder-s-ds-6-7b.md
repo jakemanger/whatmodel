@@ -6,9 +6,7 @@
 
 UIUC (ise-uiuc) · released 2023-12 · 6.74B params · deepseek
 
-**score 45.9** ±1.2 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 47.5** ±0.7 · #286 of 548 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,20 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>  50.0%    45.4   2024-03-28   49% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval (lab)</a>          76.8%    47.9   2024-03-28   39% ▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>               41.7%    40.3   2024-01-03    6% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>               44.4%    41.8   2024-01-03    6% ▇
-prior                   pull toward the middle            50.0                 1% ▇
-                        weighted average                = 45.9
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>               71.3%    47.4   2024-12-26   27% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                76.8%    47.4   2024-12-26   26% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                    69.0%    49.8   2024-12-26    4% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval (lab)</a>          76.8%    48.3   2024-03-28   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall) (lab)</a>  50.0%    46.7   2024-03-28   14% ▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>               41.7%    41.3   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>               44.4%    43.1   2024-01-03    1% ▇
+prior                   pull toward the middle            50.0                 0% ▇
+                        weighted average                = 47.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit fp32  ~26.96GB   47.5
+</pre>
+
+```sh
+# 4-bit fp32
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='ise-uiuc/Magicoder-S-DS-6.7B', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/magicoder-s-ds-6-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

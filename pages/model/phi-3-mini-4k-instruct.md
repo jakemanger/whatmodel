@@ -6,9 +6,7 @@
 
 Microsoft · released 2024-04 · 3.82B params · mit
 
-**score 34.7** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 4 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 37.6** ±1.6 · #417 of 548 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,20 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1128.1    30.7   2026-10-02   40% ▇▇▇▇▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Phi-3-mini-4k-instruct_5shots.zip">MMLU-Pro</a>                         41.5%    40.6                29% ▇▇▇▇
-<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   28.1%    30.4   2024-06-19   19% ▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   66.4%    38.7   2024-04-23   11% ▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Phi-3-mini-4k-instruct_5shots.zip">MMLU-Pro</a>                         41.5%    42.1                39% ▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1128.1    33.0   2026-10-02   37% ▇▇▇▇
+<a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   28.1%    32.5   2024-06-19   12% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   66.4%    40.8   2024-04-23   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 34.7
+                        weighted average                        = 37.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · SpeakLeash Polish EQ-Bench leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.39GB   37.6
+4-bit fp16    ~7.64GB   37.6
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf microsoft/Phi-3-mini-4k-instruct-gguf -hff Phi-3-mini-4k-instruct-q4.gguf
+# 4-bit fp16
+llama-server -hf microsoft/Phi-3-mini-4k-instruct-gguf -hff Phi-3-mini-4k-instruct-fp16.gguf
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/phi-3-mini-4k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

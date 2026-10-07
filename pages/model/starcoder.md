@@ -6,9 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 33.1** ±1.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 34.2** ±0.7 · #461 of 548 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       23.5%    33.4   2024-03-28   55% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               34.8%    32.5   2024-03-28   44% ▇▇▇▇▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 33.1
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              29.3%    33.6   2024-12-26   28% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               34.1%    33.5   2024-12-26   27% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   46.1%    36.1   2024-12-26    4% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               34.8%    34.6   2024-03-28   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       23.5%    34.8   2024-03-28   14% ▇▇
+prior                   pull toward the middle           50.0                 0% ▇
+                        weighted average               = 34.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit fp32  ~63.28GB   34.2
+</pre>
+
+```sh
+# 4-bit fp32
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='bigcode/starcoder', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/starcoder) · [JSON](https://whatmodel.sh/api?format=json&all=1)

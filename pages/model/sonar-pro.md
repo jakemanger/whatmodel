@@ -6,9 +6,7 @@
 
 Perplexity · released 2025-01 · closed weights
 
-**score 62.1** ±4.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 61.9** ±4.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1142.9    63.2   2026-08-24   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1142.9    62.9   2026-08-24   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 8% ▇
-                        weighted average                        = 62.1
+                        weighted average                        = 61.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

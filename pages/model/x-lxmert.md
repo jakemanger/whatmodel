@@ -6,7 +6,7 @@
 
 UNC Chapel Hill · released 2020-09
 
-**score 18.1** ±4.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 17.3** ±4.1 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  58.6%    15.5    92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9     8% ▇
-                        weighted average                       = 18.1
+<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  58.6%    14.7    93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9     7% ▇
+                        weighted average                       = 17.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

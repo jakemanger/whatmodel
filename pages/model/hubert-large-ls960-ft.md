@@ -6,7 +6,7 @@
 
 Meta · released 2021-06 · 0.32B params · apache-2.0
 
-**score 15.1** ±4.2 · #105 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 16.4** ±4.4 · #109 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    12.2   2026-03-26   90% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    24.6   2024-12-09    4% ▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.7%    11.7   2026-03-26   84% ▇▇▇▇▇▇▇▇▇▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench   <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.7%    23.5   2024-12-09    5% ▇
+                      <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       2.1%    46.9   2024-12-09    4% ▇
 prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 15.1
+                      weighted average                       = 16.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +31,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version    needs  score
-fp32     ~2.04GB   15.1
+fp32     ~2.04GB   16.4
 </pre>
 
 ```sh

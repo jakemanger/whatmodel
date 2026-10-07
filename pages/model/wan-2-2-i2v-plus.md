@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · proprietary
 
-**score 69.7** ±4.7 · #12 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 69.9** ±4.8 · #12 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>  29.0%    71.7   2026-04-15   91% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 69.7
+<a name="visual-gap-target-bench"></a>Target-Bench: Can Vid…  <a href="https://arxiv.org/html/2511.17792v2#S4.T3">Target-Bench v2 (VGGT plannin…</a>  29.0%    72.0   2026-04-15   90% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                10% ▇
+                        weighted average                       = 69.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -25,7 +25,9 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · price unknown · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference)
+api (Alibaba Cloud Model Studio) · $0.10/sec · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/image-to-video-api-reference)
+
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per second of output video, 1080P silent video, International deployment (Singapore); wan2.2-i2v-plus offers no 720P tier (the 720P convention of other Wan rows cannot be followed), 480P is $0.02/s. Product: Model Studio Wan image-to-video (first frame). API model: wan2.2-i2v-plus. Settings: resolution=1080P. Price basis: published list price; only output is billed. Free quota and other regions excluded. Currency: USD. Alibaba Cloud Model Studio pricing page, observed 2026-10-07.</sub>
 
 no verified local download listed
 

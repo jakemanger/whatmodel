@@ -6,7 +6,7 @@
 
 THUDM · released 2022-04 · apache-2.0
 
-**score 32.7** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 3.1** ±3.2 · #136 of 136 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,18 +15,34 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  26.5%    31.5   2024-02-21   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 32.7
+source                  test                                   score  implies  date        weight
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>          7.4%     1.1   2023-11-07   79% ▇▇▇▇▇▇▇▇▇
+<a name="visual-imagereward"></a>ImageReward: Learning…  <a href="https://arxiv.org/html/2304.05977v4#S2.T1">ImageReward human ranking of …</a>  74.0000 wins    -7.5   2023-12-28   11% ▇
+                        <a href="https://arxiv.org/html/2304.05977v4#S2.T1">MS-COCO 2014 zero-shot FID-30…</a>   26.2000 FID     9.7   2023-12-28    6% ▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>         26.5%    41.7   2024-02-21    0% ▇
+prior                   pull toward the middle                          49.9                 4% ▇
+                        weighted average                               = 3.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
+<sub>Licences: HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp16 (--fp16), 3 stages · nvidia only     ~43.7GB    3.1
+fp16 (--fp16), first stage only · nvidi…  ~13.5GB    3.1
+</pre>
+
+```sh
+# fp16 (--fp16), 3 stages · nvidia only
+git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && git clone https://github.com/Sleepychord/Image-Local-Attention && (cd Image-Local-Attention && python setup.py install) && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8
+# fp16 (--fp16), first stage only · nvidia only
+git clone https://github.com/zai-org/CogView2 && cd CogView2 && pip install -r requirements.txt && SAT_HOME=./sat_models python cogview2_text2image.py --mode inference --fp16 --input-source input.txt --output-path samples_sat_v0.2 --batch-size 16 --max-inference-batch-size 8 --only-first-stage
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogview2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

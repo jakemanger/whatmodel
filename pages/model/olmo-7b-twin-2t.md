@@ -4,20 +4,39 @@
 
 # OLMo 7B Twin 2T
 
-Allen Institute for AI · released 2024-02
+Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-OLMo 7B Twin 2T (trained on LUMI/AMD hardware to 2T tokens); the -hf repo is AI2's Transformers-format conversion.
+**score 26.1** ±4.5 · #517 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf)
+## How the score was worked out
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                            score  implies  date        weight
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  45.0%    23.7   2024-02-17   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 9% ▇
+                        weighted average                       = 26.1
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/allenai/OLMo-7B-Twin-2T-hf/blob/838af31020e1ebe5d627c9888e090b1fe4d2576e/README.md): Context length stated on the official model card.</sub>
 
+<pre>
+download        size  score
+4-bit fp32  ~27.55GB   26.1
+</pre>
+
 ```sh
+# 4-bit fp32
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/OLMo-7B-Twin-2T-hf', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/olmo-7b-twin-2t)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/olmo-7b-twin-2t) · [JSON](https://whatmodel.sh/api?format=json&all=1)

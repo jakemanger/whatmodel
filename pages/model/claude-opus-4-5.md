@@ -6,9 +6,7 @@
 
 Anthropic · released 2025-11 · closed weights
 
-**score 70.1** ±0.7 · #57 of 462 · from 25 benchmark results across 11 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 69.4** ±0.7 · #60 of 548 · from 25 benchmark results across 11 sources
 
 ## How the score was worked out
 
@@ -16,33 +14,33 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        34.4%    67.4   2026-06-11   14% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            4.9%    65.9   2026-06-11    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               76.7%    71.4   2026-02-05    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       28.3%    71.4   2026-09-10    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                14.3%    71.7   2026-06-25    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     86.0%    68.9   2025-11-24    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.1%    67.3   2025-11-24    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                45.7%    72.1   2026-08-27    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     22.0%    72.2   2026-07-25    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    64.3   2025-12-08    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1493.3    70.7   2026-10-01   12% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1473.6    72.4   2026-10-02    7% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1187.2    69.6   2026-08-24    3% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1464.6    72.9   2026-09-13    2% ▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-opus-4-5-20251101-thinking-32k/results.json">ARC-AGI-1 public evaluation s…</a>   86.6%    71.5   2026-06-04    4% ▇
-                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-opus-4-5-20251101-thinking-64k/results.json">ARC-AGI-2 public evaluation s…</a>   40.3%    76.4   2026-06-04    1% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   57.8%    74.6   2026-01-17    4% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1308.4    70.2   2026-05-10    4% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   76.3%    68.8   2025-11-30    2% ▇
-<a name="paper-2602.13964v4"></a>HLE-Verified: A Syste…  <a href="https://arxiv.org/html/2602.13964v4">HLE-Verified full set, text-o…</a>   38.8%    67.6   2026-08-17    2% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   80.3%    70.1   2025-11-28    2% ▇
-<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   10.4%    63.2   2026-05-19    1% ▇
-                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   51.4%    58.3   2026-05-19    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   77.5%    81.0   2025-12-16    1% ▇
-<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   82.0%    75.3   2026-09-25    1% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        34.4%    66.9   2026-06-11   14% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>            4.9%    65.3   2026-06-11    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               76.7%    70.7   2026-02-05    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       28.3%    70.5   2026-09-10    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                14.3%    70.9   2026-06-25    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         86.1%    66.8   2025-11-24    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     86.0%    68.4   2025-11-24    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                45.7%    71.4   2026-08-27    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     22.0%    71.4   2026-07-25    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            12.0%    64.0   2025-12-08    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1493.3    70.0   2026-10-01   13% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1473.6    71.5   2026-10-02    7% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>  1187.2    68.9   2026-08-24    3% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>  1464.6    72.0   2026-09-13    2% ▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/blob/3e9c9d1a8402aff82356815c106cecaea65cb7d9/claude-opus-4-5-20251101-thinking-32k/results.json">ARC-AGI-1 public evaluation s…</a>   86.6%    70.8   2026-06-04    4% ▇
+                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/blob/026789c1c12a4c34580a32e84dcaf5630d7e8f31/claude-opus-4-5-20251101-thinking-64k/results.json">ARC-AGI-2 public evaluation s…</a>   40.3%    75.5   2026-06-04    1% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   57.8%    74.1   2026-01-17    4% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1308.4    69.6   2026-05-10    4% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   76.3%    68.2   2025-11-30    2% ▇
+<a name="paper-2602.13964v4"></a>HLE-Verified: A Syste…  <a href="https://arxiv.org/html/2602.13964v4">HLE-Verified full set, text-o…</a>   38.8%    67.0   2026-08-17    2% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   80.3%    69.6   2025-11-28    1% ▇
+<a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   10.4%    62.8   2026-05-19    1% ▇
+                        <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   51.4%    58.1   2026-05-19    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   77.5%    79.5   2025-12-16    1% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   82.0%    74.5   2026-09-25    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 70.1
+                        weighted average                        = 69.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

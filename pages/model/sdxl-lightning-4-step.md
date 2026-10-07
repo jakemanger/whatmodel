@@ -4,9 +4,9 @@
 
 # SDXL-Lightning (4-step UNet)
 
-ByteDance · released 2024-02 · openrail++
+ByteDance · released 2024-02 · 2.57B params · openrail++
 
-**score 39.6** ±3.7 · #92 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 37.4** ±3.1 · #107 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,23 +15,24 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1053.0    39.0   2024-06-04   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 6% ▇
-                        weighted average                        = 39.6
+source                  test                                  score  implies  date        weight
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>       1053.0    38.1   2024-06-04   76% ▇▇▇▇▇▇▇▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  22.3000 FID    31.9   2024-03-02   20% ▇▇
+prior                   pull toward the middle                         49.9                 4% ▇
+                        weighted average                             = 37.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   39.6
-fp16 (sd.cpp)         ~8.8GB   39.6
-q8_0 (sd.cpp --type)  ~4.9GB   39.6
+fp16 · nvidia only    ~8.9GB   37.4
+fp16 (sd.cpp)         ~8.8GB   37.4
+q8_0 (sd.cpp --type)  ~4.9GB   37.4
 </pre>
 
 ```sh

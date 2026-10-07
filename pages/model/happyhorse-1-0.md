@@ -6,7 +6,7 @@
 
 Alibaba-ATH · released 2026-04 · proprietary
 
-**score 72.3** ±1.6 · #11 of 76 · from 4 benchmark results across 2 sources
+**score 72.0** ±1.6 · #11 of 87 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1427.2    73.8   2026-09-22   46% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1441.7    73.7   2026-09-22   28% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1427.2    73.6   2026-09-22   44% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1441.7    73.9   2026-09-22   27% ▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1306.7    69.4   2026-08-27    9% ▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1085.0    68.5   2026-09-25   15% ▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1085.0    68.6   2026-09-25   17% ▇▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>   75.6%    62.8   2026-05-14    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 72.3
+                        weighted average                        = 72.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

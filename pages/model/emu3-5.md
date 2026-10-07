@@ -6,7 +6,7 @@
 
 BAAI · released 2025-10 · 34.1B params · apache-2.0
 
-**score 56.9** ±4.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 57.0** ±4.3 · #52 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  85.9%    57.5   2026-07-12   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  85.9%    57.6   2026-07-12   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 56.9
+                        weighted average                       = 57.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 (official repo, Transformers backe…  ~84.5GB   57.0
+</pre>
+
+```sh
+# bf16 (official repo, Transformers backend) · nvidia only
+git clone https://github.com/baaivision/Emu3.5 && cd Emu3.5 && pip install -r requirements/transformers.txt && pip install flash_attn==2.8.3 --no-build-isolation && CUDA_VISIBLE_DEVICES=0,1 python inference.py --cfg configs/example_config_visual_guidance.py && python src/utils/vis_proto.py --input outputs/emu3p5
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/emu3-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

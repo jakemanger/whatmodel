@@ -4,9 +4,9 @@
 
 # LongCat-Image-Edit
 
-Meituan · released 2025-12 · apache-2.0
+Meituan · released 2025-12 · 6.27B params · apache-2.0
 
-**score 54.9** ±3.1 · #62 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.8** ±2.7 · #69 of 136 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,16 +15,19 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                          score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.0%    55.0   2026-05-13   71% ▇▇▇▇▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1001.0    55.5   2026-03-30   25% ▇▇▇
-prior                   pull toward the middle                 49.9                 4% ▇
-                        weighted average                     = 54.9
+source                  test                             score  implies  date        weight
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.0%    54.3   2026-05-13   50% ▇▇▇▇▇▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   47.3%    47.7   2026-07-11   17% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1001.0    54.6   2026-03-30   15% ▇▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.6%    45.7   2026-05-29   11% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    45.9   2026-03-26    4% ▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -42,6 +45,16 @@ api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <sub>[price source](https://fal.ai/models/fal-ai/longcat-image/edit): USD for one 1-megapixel output: fal bills this endpoint $0.15 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image editing. API model: fal-ai/longcat-image/edit (LongCat Image Edit). Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Meituan direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+bf16 + model CPU offload · nvidia only  ~35.7GB   51.8
+</pre>
+
+```sh
+# bf16 + model CPU offload · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from PIL import Image; from diffusers import LongCatImageEditPipeline; p=LongCatImageEditPipeline.from_pretrained('meituan-longcat/LongCat-Image-Edit', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p(Image.open('input.png').convert('RGB'), 'turn the cat into a dog', negative_prompt='', guidance_scale=4.5, num_inference_steps=50, num_images_per_prompt=1, generator=torch.Generator('cpu').manual_seed(43)).images[0].save('edit_example.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-image-edit) · [JSON](https://whatmodel.sh/api?format=json&all=1)

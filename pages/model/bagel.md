@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2025-05 · 14B params · Apache 2.0
 
-**score 41.1** ±1.1 · #87 of 116 · from 12 benchmark results across 10 sources
+**score 40.9** ±1.1 · #95 of 136 · from 17 benchmark results across 15 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,25 +16,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            897.8    37.9   2026-09-24   33% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1026.6    36.9   2026-09-30    9% ▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   12.9%    41.0   2026-05-14   11% ▇
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        55.6%    41.4   2026-07-01   10% ▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       41.6%    45.9   2026-05-13    9% ▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   76.0%    42.0   2026-03-29    5% ▇
-                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>   67.0%    41.8   2026-03-29    2% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   71.0%    41.7   2026-07-12    6% ▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   70.0%    55.3   2026-06-02    5% ▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          69.8%    47.8   2025-12-01    4% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      851.0    35.6   2026-03-30    3% ▇
-<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   28.0%    44.4   2026-02-10    3% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 41.1
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            897.8    37.5   2026-09-24   28% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1026.6    35.5   2026-09-30    7% ▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   12.9%    40.9   2026-05-14   14% ▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>        55.6%    41.9   2026-07-01   10% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       41.6%    44.9   2026-05-13    8% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>   76.0%    41.1   2026-03-29    5% ▇
+                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>   67.0%    41.1   2026-03-29    1% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   71.0%    41.8   2026-07-12    6% ▇
+<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   71.8%    43.6   2026-04-21    4% ▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   70.0%    56.6   2026-06-02    4% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          69.8%    47.1   2025-12-01    3% ▇
+<a name="visual-gebench"></a>GEBench: Benchmarking…  <a href="https://arxiv.org/html/2602.09007v2#S3.T1">GEBench GUI state generation …</a>   28.0%    43.6   2026-02-10    3% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      851.0    33.4   2026-03-30    2% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    5.0%    54.1   2026-05-29    2% ▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>   44.6%    30.5   2025-11-14    2% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   23.1%    31.8   2026-03-26    1% ▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>   22.2%    39.6   2026-04-24    1% ▇
+prior                   pull toward the middle                    49.9                 0% ▇
+                        weighted average                        = 40.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEBench: Benchmarking Image Generation Models as GUI Environments ([CC-BY-4.0](../../licenses/visual-gebench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (3)</summary>
 
@@ -53,6 +58,19 @@ api (fal.ai) · $0.10/image · [fal.ai](https://fal.ai/models/fal-ai/bagel)
 
 <sub>[price source](https://fal.ai/models/fal-ai/bagel): USD per generated image: fal bills fal-ai/bagel at $0.10 per image (billing unit images); the fal-ai/bagel/edit endpoint is also $0.10 per image. Product: fal.ai serverless text-to-image. API model: fal-ai/bagel (ByteDance-Seed BAGEL, described by fal as a 7B-parameter multimodal model). Settings: text-to-image, one image. Price basis: published per-image list rate. Not a ByteDance direct tariff. Currency: USD. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+bf16 (app.py mode 1) · nvidia only        ~32GB   40.9
+nf4 (app.py --mode 2, bitsandbytes) · n…  ~12GB   40.9
+</pre>
+
+```sh
+# bf16 (app.py mode 1) · nvidia only
+git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py
+# nf4 (app.py --mode 2, bitsandbytes) · nvidia only
+git clone https://github.com/bytedance-seed/BAGEL.git && cd BAGEL && conda create -n bagel python=3.10 -y && conda activate bagel && pip install -r requirements.txt && pip install flash_attn==2.5.8 --no-build-isolation && python -c "from huggingface_hub import snapshot_download; snapshot_download(cache_dir='models/BAGEL-7B-MoT/cache', local_dir='models/BAGEL-7B-MoT', repo_id='ByteDance-Seed/BAGEL-7B-MoT', local_dir_use_symlinks=False, resume_download=True, allow_patterns=['*.json', '*.safetensors', '*.bin', '*.py', '*.md', '*.txt'])" && python app.py --mode 2
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/bagel) · [JSON](https://whatmodel.sh/api?format=json&all=1)

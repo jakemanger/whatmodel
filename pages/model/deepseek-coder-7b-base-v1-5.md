@@ -6,9 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 36.9** ±1.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 37.9** ±1.1 · #413 of 548 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       33.0%    38.2   2024-03-28   55% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.1%    35.1   2024-03-28   44% ▇▇▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.1%    36.9   2024-03-28   65% ▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       33.0%    39.6   2024-03-28   35% ▇▇▇▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 36.9
+                        weighted average               = 37.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +26,16 @@ prior                   pull toward the middle           50.0                 1%
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+16-bit bf16  ~13.82GB   37.9
+</pre>
+
+```sh
+# 16-bit bf16
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/deepseek-coder-7b-base-v1.5', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-7b-base-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

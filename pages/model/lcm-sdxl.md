@@ -4,9 +4,9 @@
 
 # LCM-SDXL
 
-latent-consistency · released 2023-11 · openrail++
+latent-consistency · released 2023-11 · 2.57B params · openrail++
 
-**score 34.7** ±3.7 · #100 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 34.6** ±3.1 · #114 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,21 +15,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.77 / 5    33.7   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 6% ▇
-                        weighted average                          = 34.7
+source                  test                                                        score  implies  date        weight
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>                           2.77 / 5    33.1   2024-12-25   58% ▇▇▇▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1800 mean human alignment score    36.7   2024-10-10   19% ▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>                        21.8500 FID    33.9   2024-03-02   19% ▇▇
+prior                   pull toward the middle                                               49.9                 4% ▇
+                        weighted average                                                   = 34.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt))</sub>
+<sub>Licences: EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~8.9GB   34.7
+fp16 · nvidia only  ~8.9GB   34.6
 </pre>
 
 ```sh

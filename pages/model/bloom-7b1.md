@@ -6,9 +6,7 @@
 
 BigScience · released 2022-07 · 7.07B params · bigscience-bloom-rail-1.0
 
-**score 32.5** ±1.0 · #405 of 462 · from 11 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 28.6** ±1.1 · #501 of 548 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Challenge</a>                   33.5%    33.2   2024-04-08   35% ▇▇▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">HellaSwag</a>                       62.3%    33.3   2024-04-08   11% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Easy</a>                        57.4%    30.6   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                            90.1%    33.6   2024-04-08    9% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                           62.8%    29.2   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                            72.7%    31.4   2024-04-08    7% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), las…</a>  57.6%    29.4   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">WinoGrande</a>                      64.6%    37.5   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                      42.1%    35.7   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                      25.2%    18.6   2024-04-08    2% ▇
-<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  7.7%    33.6   2023-06-27   10% ▇
-prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 32.5
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Challenge</a>                   33.5%    29.4   2024-04-08   25% ▇▇▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">HellaSwag</a>                       62.3%    29.5   2024-04-08   12% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">ARC Easy</a>                        57.4%    26.6   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">SciQ</a>                            90.1%    29.8   2024-04-08    9% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">PIQA</a>                            72.7%    27.4   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">BoolQ</a>                           62.8%    24.9   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">WinoGrande</a>                      64.6%    34.1   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">LAMBADA (OpenAI version), las…</a>  57.6%    25.3   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">Social IQA</a>                      42.1%    32.2   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-7b1.json">OpenBookQA</a>                      25.2%    12.7   2024-04-08    2% ▇
+<a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  7.7%    28.7   2023-06-27   19% ▇▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 28.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +39,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~14.14GB   32.5
+4-bit fp16  ~14.14GB   28.6
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 Allen Institute for AI · released 2023-11 · 7B params · AI2 ImpACT Low-risk; Llama 2 base terms
 
-**score 35.3** ±2.3 · comparison only: no current run option verified · from 5 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 35.6** ±2.0 · #449 of 548 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            45.5%    34.2   2023-11-20   36% ▇▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  44.5%    36.9   2023-11-20   23% ▇▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      50.7%    37.1   2023-11-20   18% ▇▇
-        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  40.0%    29.3   2023-11-20   12% ▇
-        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     34.5%    35.8   2023-11-20    8% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            45.5%    34.9   2023-11-20   40% ▇▇▇▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      50.7%    37.7   2023-11-20   19% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  40.0%    31.0   2023-11-20   15% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  44.5%    37.3   2023-11-20   13% ▇▇
+        <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     34.5%    36.6   2023-11-20   11% ▇
 prior   pull toward the middle                   50.0                 2% ▇
-        weighted average                       = 35.3
+        weighted average                       = 35.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,6 +29,16 @@ prior   pull toward the middle                   50.0                 2% ▇
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+16-bit bf16  ~13.48GB   35.6
+</pre>
+
+```sh
+# 16-bit bf16
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='allenai/tulu-2-dpo-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/tulu-2-dpo-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

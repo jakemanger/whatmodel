@@ -6,7 +6,7 @@
 
 Efficient-Speech (LiteASR) · released 2025-02 · 1.28B params · apache-2.0
 
-**score 52.6** ±3.4 · #60 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 52.9** ±2.9 · #64 of 117 · from 4 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,21 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.2%    51.6   2026-03-26   59% ▇▇▇▇▇▇▇
-<a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  11.3%    54.5   2025-02-27   37% ▇▇▇▇
-prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 52.6
+<a name="speech-stt-liteasr-report-ccby"></a>LiteASR               <a href="https://arxiv.org/html/2502.20583v2">LiteASR paper · ESB 8-set ave…</a>  11.3%    53.8   2025-02-27   23% ▇▇▇
+                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Fren…</a>   9.1%    53.1   2025-02-27   22% ▇▇▇
+                      <a href="https://arxiv.org/html/2502.20583v2">Multilingual LibriSpeech Germ…</a>  10.1%    56.1   2025-02-27   15% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.2%    51.2   2026-03-26   37% ▇▇▇▇
+prior                 pull toward the middle                   49.7                 3% ▇
+                      weighted average                       = 52.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · LiteASR ([CC BY 4.0](../../licenses/speech-stt-liteasr-report-ccby.txt))</sub>
+<sub>Licences: LiteASR ([CC BY 4.0](../../licenses/speech-stt-liteasr-report-ccby.txt)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~3.57GB   52.6
+fp16 · nvidia only  ~3.57GB   52.9
 </pre>
 
 ```sh

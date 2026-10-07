@@ -6,9 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 71.2** ±1.6 · #45 of 462 · from 6 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 70.5** ±1.6 · #44 of 548 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                77.3%    67.8   2026-03-05   18% ▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>  51.9%    74.7   2026-03-05   16% ▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    72.0   2026-02-05   11% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    77.1   2026-02-05   10% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>             56.8%    71.3   2026-02-05    6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    70.3   2026-02-25   38% ▇▇▇▇▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                77.3%    66.9   2026-03-05   17% ▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>  51.9%    73.7   2026-03-05   16% ▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    71.3   2026-02-05   10% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    76.3   2026-02-05   10% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>             56.8%    70.5   2026-02-05    6% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    69.7   2026-02-25   40% ▇▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 71.2
+                        weighted average                       = 70.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

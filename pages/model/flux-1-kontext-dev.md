@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-06 · 12B params · flux-1-dev-non-commercial-license
 
-**score 43.5** ±1.4 · #83 of 116 · from 6 benchmark results across 5 sources
+**score 43.3** ±1.4 · #89 of 136 · from 11 benchmark results across 10 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,19 +16,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            941.1    42.1   2026-09-24   55% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1149.1    49.8   2026-09-30   15% ▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       38.6%    42.6   2026-05-13   15% ▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          68.0%    45.9   2025-12-01    6% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      869.0    38.0   2026-03-30    5% ▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>   70.0%    45.0   2026-03-29    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>            941.1    41.7   2026-09-24   46% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1149.1    48.8   2026-09-30   11% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       38.6%    41.6   2026-05-13   13% ▇▇
+<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   66.9%    38.8   2026-04-21    7% ▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>          68.0%    45.1   2025-12-01    6% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      869.0    35.9   2026-03-30    4% ▇
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>   38.7%    46.7   2026-03-17    4% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    3.9%    48.4   2026-05-29    3% ▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>   68.9%    53.8   2025-11-14    3% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>   70.0%    44.6   2026-03-29    2% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   38.9%    56.3   2026-03-26    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 43.5
+                        weighted average                        = 43.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -38,8 +43,8 @@ api (Replicate) · $0.025/image · [replicate.com](https://replicate.com/black-f
 
 <pre>
 version                 needs  score
-gguf-q8_0 (sd.cpp)    ~28.2GB   43.5
-gguf-q4_k_m (sd.cpp)  ~21.3GB   43.5
+gguf-q8_0 (sd.cpp)    ~28.2GB   43.3
+gguf-q4_k_m (sd.cpp)  ~21.3GB   43.3
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2025-05 · closed weights
 
-**score 73.0** ±3.0 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
+**score 72.5** ±3.0 · comparison only: no current run option verified · from 7 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.66 / 5    66.6   2026-07-16   18% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.64 / 5    68.6   2026-07-16   18% ▇▇
-                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.44 / 5    66.5   2026-07-16    9% ▇
-<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>     85.4%    76.3   2025-06-19   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     88.7%    86.2   2025-06-19    9% ▇
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     75.6%    85.8   2025-08-10   12% ▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       10.4%    68.8   2025-08-10    5% ▇
-prior                   pull toward the middle                      49.9                 4% ▇
-                        weighted average                          = 73.0
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Reliability…</a>  3.66 / 5    66.0   2026-07-16   18% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Acting / Ro…</a>  3.64 / 5    67.9   2026-07-16   17% ▇▇
+                        <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Expressiven…</a>  3.44 / 5    65.8   2026-07-16    9% ▇
+<a name="speech-instructttseval-ccby"></a>InstructTTSEval: inst…  <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval ZH · mean ins…</a>     85.4%    75.6   2025-06-19   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2506.16381v1">InstructTTSEval EN · mean ins…</a>     88.7%    85.4   2025-06-19    9% ▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>     75.6%    85.2   2025-08-10   12% ▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       10.4%    68.2   2025-08-10    5% ▇
+prior                   pull toward the middle                      49.8                 4% ▇
+                        weighted average                          = 72.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -4,7 +4,7 @@
 
 # VITS Common Voice (Portuguese)
 
-Coqui TTS / @NeonGeckoCom
+Coqui TTS / @NeonGeckoCom · released 2022-08
 
 Exact registry entry tts\_models/pt/cv/vits. End-to-end waveform model. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
 

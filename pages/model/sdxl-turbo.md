@@ -4,9 +4,9 @@
 
 # SDXL-Turbo
 
-Stability AI · released 2023-11 · sai-nc-community
+Stability AI · released 2023-11 · 2.57B params · sai-nc-community
 
-**score 35.0** ±2.2 · #97 of 116 · from 3 benchmark results across 3 sources
+**score 33.7** ±2.2 · #116 of 136 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,25 +15,26 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>     935.0    30.7   2024-06-04   36% ▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.15 / 5    40.0   2024-12-25   35% ▇▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     35.0%    33.3   2024-08-26   28% ▇▇▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 35.0
+source                  test                                  score  implies  date        weight
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>        935.0    29.6   2024-06-04   36% ▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>     3.15 / 5    39.7   2024-12-25   29% ▇▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>        35.0%    32.7   2024-08-26   24% ▇▇▇
+<a name="visual-sdxl-lightning"></a>SDXL-Lightning: Progr…  <a href="https://arxiv.org/html/2402.13929v3#S4.T2">MS-COCO 10K FID (whole image)…</a>  23.7100 FID    30.1   2024-03-02    9% ▇
+prior                   pull toward the middle                         49.9                 2% ▇
+                        weighted average                             = 33.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · SDXL-Lightning: Progressive Adversarial Diffusion Distillation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   35.0
-fp16 (sd.cpp)         ~8.8GB   35.0
-q8_0 (sd.cpp --type)  ~4.9GB   35.0
+fp16 · nvidia only    ~8.9GB   33.7
+fp16 (sd.cpp)         ~8.8GB   33.7
+q8_0 (sd.cpp --type)  ~4.9GB   33.7
 </pre>
 
 ```sh

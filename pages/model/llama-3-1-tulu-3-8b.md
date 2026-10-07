@@ -6,9 +6,7 @@
 
 Ai2 · released 2024-11 · 8.03B params · llama3.1
 
-**score 43.7** ±1.4 · #285 of 462 · from 10 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 44.9** ±1.3 · #317 of 548 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       68.2%    42.7   2025-10-08   18% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             69.0%    44.3   2025-10-08   16% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    48.1   2025-10-08   12% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   34.0%    44.6   2025-10-08    8% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             55.0%    38.2   2025-10-08    7% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      29.1%    45.8   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>   82.4%    50.2   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   43.7%    39.6   2025-10-08    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1220.5    41.9   2026-10-02   24% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.9%    46.7   2026-04-17    3% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       68.2%    44.0   2025-10-08   19% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             69.0%    45.4   2025-10-08   15% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    48.7   2025-10-08   13% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   34.0%    45.7   2025-10-08    8% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             55.0%    39.6   2025-10-08    7% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      29.1%    46.9   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>   82.4%    51.1   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   43.7%    41.1   2025-10-08    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1220.5    43.3   2026-10-02   23% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   83.9%    48.0   2026-04-17    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 43.7
+                        weighted average                        = 44.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -36,10 +34,12 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B/blob/666943798adbde0b1aff34626007e26986a3c107/config.json): Ai2 official configuration for Llama-3.1-Tulu-3-8B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 8.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length; its vLLM note suggests --max\_model\_len=8192 because of the long chat template. Observed 2026-10-07.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.32GB   43.7
-8-bit q8_0    ~10.14GB   43.7
+4-bit q4_k_m   ~5.32GB   44.9
+8-bit q8_0    ~10.14GB   44.9
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 Nous Research · released 2024-06 · 70.55B params · llama3
 
-**score 45.9** ±2.0 · #265 of 462 · from 3 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 46.8** ±1.9 · #292 of 548 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              22.7%    45.4   2025-01-27   53% ▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    49.1   2025-01-27   23% ▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    43.5   2025-04-01   22% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>              22.7%    46.4   2025-01-27   54% ▇▇▇▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   2.5%    44.6   2025-04-01   22% ▇▇▇
+          <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              37.5%    49.9   2025-01-27   22% ▇▇▇
 prior     pull toward the middle             50.0                 2% ▇
-          weighted average                 = 45.9
+          weighted average                 = 46.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,9 +27,11 @@ prior     pull toward the middle             50.0                 2% ▇
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B/blob/8948247fa83f3f970ad24b3394d5656507642922/config.json): Nous Research official configuration for Hermes-2-Theta-Llama-3-70B (pinned commit): max\_position\_embeddings 8192. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download               size  score
-4-bit gguf-q4_k_m  ~42.83GB   45.9
+4-bit gguf-q4_k_m  ~42.83GB   46.8
 </pre>
 
 ```sh

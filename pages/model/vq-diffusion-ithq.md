@@ -6,7 +6,7 @@
 
 Microsoft · released 2022-11 · 1.27B params · mit
 
-**score 31.5** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.8** ±14.7 · #83 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.1%    30.2   2024-02-21   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 31.5
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md#the-hps-benchmark">HPS v2 benchmark (4-style ave…</a>  25.1%    19.7   2024-02-21    7% ▇
+prior                   pull toward the middle                   49.9                93% ▇▇▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version              needs  score
+fp16 · nvidia only  ~4.1GB   47.8
+</pre>
+
+```sh
+# fp16 · nvidia only
+uv run --with torch --with diffusers --with transformers python -c "import torch; from diffusers import VQDiffusionPipeline; p=VQDiffusionPipeline.from_pretrained('microsoft/vq-diffusion-ithq', torch_dtype=torch.float16).to('cuda'); p('teddy bear playing in the pool', truncation_rate=1.0).images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vq-diffusion-ithq) · [JSON](https://whatmodel.sh/api?format=json&all=1)

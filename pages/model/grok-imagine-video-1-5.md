@@ -6,7 +6,7 @@
 
 xAI · released 2026-06 · closed weights
 
-**score 73.0** ±2.2 · #10 of 76 · from 3 benchmark results across 3 sources
+**score 74.2** ±1.9 · #8 of 87 · from 6 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1456.0    75.0   2026-09-22   56% ▇▇▇▇▇▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1143.0    72.0   2026-09-25   31% ▇▇▇▇
-<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  1039.3    69.9   2026-09-25   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1456.0    75.3   2026-09-22   40% ▇▇▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1143.0    71.8   2026-09-25   26% ▇▇▇
+<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>   980.3    69.9   2026-09-28   12% ▇
+<a name="visual-rapid-i2v-realism"></a>Rapidata/image-to-vid…  <a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video reali…</a>  1315.7    80.5   2026-10-01   10% ▇
+<a name="visual-rapid-relative-camera"></a>Rapidata/relative-cam…  <a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera move…</a>  1226.0    78.8   2026-09-29    8% ▇
+<a name="visual-rapid-camera"></a>Rapidata/camera-movem…  <a href="https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md#overall-ranking-elo-on-the-movement-leaderboard">Rapidata camera movement (I2V)</a>  1039.3    74.7   2026-09-25    1% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 73.0
+                        weighted average                        = 74.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/image-to-video-realism published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/relative-camera-movement-human-preference-900k published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/camera-movement published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-camera.txt))</sub>
 
 ## How to run it
 

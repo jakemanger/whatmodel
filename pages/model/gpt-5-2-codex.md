@@ -6,9 +6,7 @@
 
 OpenAI · released 2026-01 · closed weights
 
-**score 64.7** ±1.8 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 64.2** ±1.7 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1338.9    64.3   2026-10-01   68% ▇▇▇▇▇▇▇▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>      38.2%    59.2   2026-02-05   12% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>    64.0%    69.9   2026-02-05   12% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>         56.4%    72.0   2026-02-05    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1338.9    63.9   2026-10-01   70% ▇▇▇▇▇▇▇▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>      38.2%    58.6   2026-02-05   11% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>    64.0%    69.2   2026-02-05   11% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>         56.4%    71.2   2026-02-05    7% ▇
 prior                   pull toward the middle               50.0                 1% ▇
-                        weighted average                   = 64.7
+                        weighted average                   = 64.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

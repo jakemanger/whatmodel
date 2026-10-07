@@ -6,7 +6,7 @@
 
 OpenBMB · released 2026-04 · 2B params · apache-2.0
 
-**score 61.9** ±1.7 · #25 of 94 · from 12 benchmark results across 5 sources
+**score 62.4** ±1.5 · #22 of 98 · from 14 benchmark results across 5 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,20 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      6.2%    62.8   2026-07-27   17% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              7.5%    63.6   2026-07-27   14% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              8.1%    66.5   2026-07-27    7% ▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      4.2%    63.5   2026-07-27    5% ▇
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.4   2026-06-25   14% ▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      3.6%    61.7   2026-06-25   10% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      5.1%    61.8   2026-06-25    8% ▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.07 / 5    59.2   2026-06-25    7% ▇
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-en · Whisper la…</a>      1.6%    64.1   2026-07-27    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-zh · Paraformer…</a>      0.9%    62.6   2026-07-27    5% ▇
-<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     88.6%    66.0   2026-06-22    4% ▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1064.0    59.6   2026-09-24    1% ▇
-prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 61.9
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>      6.2%    63.2   2026-07-27   14% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>              7.5%    63.9   2026-07-27   13% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>              8.1%    66.7   2026-07-27    6% ▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>      4.2%    63.6   2026-07-27    5% ▇
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.0   2026-06-25   11% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      3.6%    61.3   2026-06-25    9% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      5.1%    61.4   2026-06-25    8% ▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.07 / 5    58.9   2026-06-25    7% ▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-zh · speaker si…</a>     79.4%    64.7   2026-07-27    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-zh · Paraformer…</a>      0.9%    63.6   2026-07-27    5% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-en · Whisper la…</a>      1.6%    65.4   2026-07-27    5% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM2.md">Seed-TTS test-en · speaker si…</a>     75.3%    67.2   2026-07-27    5% ▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     88.6%    65.5   2026-06-22    3% ▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>    1064.0    58.8   2026-09-24    1% ▇
+prior                   pull toward the middle                      49.8                 1% ▇
+                        weighted average                          = 62.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,11 +42,11 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                            needs  score
-bf16 (voxcpm)                    ~4.96GB   61.9
-q8_0 (llama.cpp-omni)            ~3.55GB   61.9
-mlx-bf16 (mlx-audio) · mac only  ~4.96GB   61.9
-mlx-8bit (mlx-audio) · mac only  ~3.23GB   61.9
-mlx-4bit (mlx-audio) · mac only   ~2.3GB   61.9
+bf16 (voxcpm)                    ~4.96GB   62.4
+q8_0 (llama.cpp-omni)            ~3.55GB   62.4
+mlx-bf16 (mlx-audio) · mac only  ~4.96GB   62.4
+mlx-8bit (mlx-audio) · mac only  ~3.23GB   62.4
+mlx-4bit (mlx-audio) · mac only   ~2.3GB   62.4
 </pre>
 
 ```sh

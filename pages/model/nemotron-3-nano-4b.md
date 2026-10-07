@@ -4,31 +4,75 @@
 
 # Nemotron 3 Nano 4B
 
-NVIDIA · released 2026-03
+NVIDIA · released 2026-03 · 3.97B params · nvidia-open-model
 
-[Model and usage documentation](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16)
+**score 46.3** ±2.6 · #299 of 548 · from 5 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-AIME 2025                            78.5%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
-MATH-500                             95.4%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
-GPQA (subset unspecified)            53.2%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
-LiveCodeBench (version unspecifie…   51.8%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
-BFCL v3                              61.1%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
-IFEval prompt-level (strictness u…   87.9%  lab          <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">nvidia/NVIDIA-Nemotron-3-Nano…</a>
+source                  test                            score  implies  date        weight
+<a name="first-party-nvidia-scores"></a>NVIDIA vendor-reporte…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">GPQA (subset unspecified) (la…</a>  53.2%    45.5   2026-03-16   28% ▇▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  51.8%    43.0   2026-03-16   24% ▇▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">AIME 2025 (lab)</a>                 78.5%    53.6   2026-03-16   21% ▇▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    42.6   2026-03-16   18% ▇▇
+                        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    46.2   2026-03-16    7% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 46.3
 </pre>
 
-<sub>Licences: nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 model card ([NVIDIA Nemotron Open Model License (2025-12-15)](../../licenses/card-nvidia-nvidia-nemotron-3-nano-4b-bf16.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+
+
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source                  test                            score  why
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">AIME 2025</a>                       78.5%  another source's result is used
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">MATH-500</a>                        95.4%  another source's result is used
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">GPQA (subset unspecified)</a>       53.2%  another source's result is used
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">LiveCodeBench (version unspec…</a>  51.8%  another source's result is used
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">BFCL v3</a>                         61.1%  another source's result is used
+nvidia/NVIDIA-Nemotro…  <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md">IFEval prompt-level (strictne…</a>  87.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md): NVIDIA official model card: "Context length up to 262K"; the card's serving example uses --max-model-len 262144, which gives the exact token count. Observed 2026-09-25.</sub>
 
+<pre>
+download         size  score
+4-bit q4_k_m  ~2.88GB   46.3
+8-bit q8_0    ~5.26GB   46.3
+</pre>
+
 ```sh
+# 4-bit q4_k_m
 ollama run nemotron-3-nano:4b
+# 8-bit q8_0
 ollama run nemotron-3-nano:4b-q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/nemotron-3-nano-4b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                 precision        speed  engine and settings
+NVIDIA DGX Spark (GB10)  Q8_0       <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/nemotron/nemotron-dgx-spark.md#L107">52.85 tok/s</a>  llama.cpp 1bbec6a75 (8382), CUDA …
+NVIDIA DGX Spark (GB10)  Q8_0       <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/nemotron/nemotron-dgx-spark.md#L109">52.32 tok/s</a>  llama.cpp 1bbec6a75 (8382), CUDA …
+NVIDIA DGX Spark (GB10)  Q8_0       <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/nemotron/nemotron-dgx-spark.md#L111">51.27 tok/s</a>  llama.cpp 1bbec6a75 (8382), CUDA …
+NVIDIA DGX Spark (GB10)  Q8_0       <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/nemotron/nemotron-dgx-spark.md#L113">49.71 tok/s</a>  llama.cpp 1bbec6a75 (8382), CUDA …
+NVIDIA DGX Spark (GB10)  Q8_0       <a href="https://github.com/ggml-org/llama.cpp/blob/27b20ba8b1b85fc800b0a04caa8f1003ca64a2a3/benches/nemotron/nemotron-dgx-spark.md#L115">46.71 tok/s</a>  llama.cpp 1bbec6a75 (8382), CUDA …
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
+[interactive version](https://whatmodel.sh/model/nemotron-3-nano-4b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Meta · released 2023-05 · 0.96B params · cc-by-nc-4.0
 
-**score 21.7** ±3.2 · #102 of 113 · from 6 benchmark results across 5 sources
+**score 21.6** ±3.4 · #105 of 117 · from 6 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.5%    12.4   2026-03-26   54% ▇▇▇▇▇▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  29.8%    32.5   2026-08-24   13% ▇▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  68.0%    30.6   2026-08-24    7% ▇
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  31.5%    32.7   2026-09-25   11% ▇
-<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  45.5%    26.2   2026-08-15    6% ▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  54.5%    29.5   2025-01-12    5% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  22.5%    11.9   2026-03-26   51% ▇▇▇▇▇▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  29.8%    30.0   2026-08-24   12% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  68.0%    27.1   2026-08-24    6% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  31.5%    29.8   2026-09-25   12% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  54.5%    34.2   2025-01-12    9% ▇
+<a name="speech-stt-quranic-asr-lb-apache"></a>Quranic ASR Leaderboa…  <a href="https://huggingface.co/spaces/Quran-Lab/quranic-asr-leaderboard/blob/47d9dd9840ed6897c2c305e4319d16f13360dea0/results.json">Quranic ASR Leaderboard · hel…</a>  45.5%    27.0   2026-08-15    6% ▇
 prior                   pull toward the middle                   49.7                 4% ▇
-                        weighted average                       = 21.7
+                        weighted average                       = 21.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · German dialect ASR Benchmark ([MIT](../../licenses/speech-stt-bavarian-betthupferl-mit.txt)) · Turkish ASR Leaderboard ([MIT](../../licenses/speech-stt-turkasr-bench-mit.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt)) · Quranic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-quranic-asr-lb-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~5.11GB   21.7
+fp32     ~5.11GB   21.6
 </pre>
 
 ```sh

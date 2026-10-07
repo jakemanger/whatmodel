@@ -6,9 +6,7 @@
 
 Alibaba · released 2026-05 · closed weights
 
-**score 71.6** ±0.9 · #43 of 462 · from 12 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 70.9** ±0.8 · #43 of 548 · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             64.6%    73.0   2026-06-13   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>                34.1%    73.1   2026-06-13   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                    77.3%    71.8   2026-06-18   10% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                      9.5%    69.2   2026-06-25    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                          90.9%    72.1   2026-08-07    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              95.6%    72.6   2026-08-07    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                     55.8%    76.0   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          32.0%    76.1   2026-07-28    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 19.0%    70.1   2026-08-07    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1514.9    71.6   2026-10-01   16% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0513 IPS    69.1   2026-10-02   16% ▇▇
-<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>        11.8%    71.5   2026-06-11    5% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             64.6%    72.1   2026-06-13   19% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>                34.1%    72.2   2026-06-13   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                    77.3%    71.0   2026-06-18   11% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                      9.5%    68.4   2026-06-25    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              95.6%    71.8   2026-08-07    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                          90.9%    71.4   2026-08-07    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                     55.8%    75.0   2026-08-27    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          32.0%    75.0   2026-07-28    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 19.0%    69.5   2026-08-07    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1514.9    70.9   2026-10-01   17% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0513 IPS    68.4   2026-10-02   15% ▇▇
+<a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>        11.8%    70.7   2026-06-11    5% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 71.6
+                        weighted average                             = 70.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

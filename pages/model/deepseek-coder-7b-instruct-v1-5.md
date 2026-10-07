@@ -6,9 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 44.8** ±1.3 · comparison only: no current run option verified · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 46.5** ±0.7 · #297 of 548 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       48.8%    44.9   2024-03-28   55% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               68.9%    44.5   2024-03-28   44% ▇▇▇▇▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 44.8
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              71.3%    47.4   2024-12-26   28% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               75.6%    46.9   2024-12-26   27% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   62.2%    45.4   2024-12-26    4% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               68.9%    45.3   2024-03-28   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       48.8%    46.3   2024-03-28   14% ▇▇
+prior                   pull toward the middle           50.0                 0% ▇
+                        weighted average               = 46.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+16-bit bf16  ~13.82GB   46.5
+</pre>
+
+```sh
+# 16-bit bf16
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='deepseek-ai/deepseek-coder-7b-instruct-v1.5', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/deepseek-coder-7b-instruct-v1-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

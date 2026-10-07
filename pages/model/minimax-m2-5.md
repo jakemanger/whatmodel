@@ -6,9 +6,7 @@
 
 MiniMax · released 2026-02 · 230B params (10B active) · modified-mit
 
-**score 63.9** ±1.5 · #118 of 462 · from 5 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 63.5** ±1.4 · #124 of 548 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1386.2    66.3   2026-10-01   47% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1390.8    62.4   2026-10-02   27% ▇▇▇
-<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5">ARC-AGI-1 public evaluation s…</a>   59.1%    62.3   2026-06-04   14% ▇▇
-                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/minimax-m2.5">ARC-AGI-2 public evaluation s…</a>    5.4%    61.7   2026-06-04    4% ▇
-<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   42.8%    59.6   2026-08-31    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1386.2    65.8   2026-10-01   45% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1390.8    62.3   2026-10-02   26% ▇▇▇
+<a name="arcprize-model-baseline-outputs"></a>ARC Prize Foundation …  <a href="https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/3e9c9d1a8402aff82356815c106cecaea65cb7d9/minimax-m2.5">ARC-AGI-1 public evaluation s…</a>   59.1%    62.0   2026-06-04   13% ▇▇
+                        <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/minimax-m2.5">ARC-AGI-2 public evaluation s…</a>    5.4%    61.4   2026-06-04    4% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   42.8%    60.8   2026-08-31   11% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 63.9
+                        weighted average                        = 63.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,8 +35,8 @@ api (MiniMax) · $0.52/M blended · $0.3 in / $1.2 out per 1M tokens · [platfor
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~138.5GB   63.9
-2-bit ud-q2_k_xl   ~69.5GB   63.9
+4-bit ud-q4_k_xl  ~138.5GB   63.5
+2-bit ud-q2_k_xl   ~69.5GB   63.5
 </pre>
 
 ```sh

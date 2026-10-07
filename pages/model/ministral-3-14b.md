@@ -6,9 +6,7 @@
 
 Mistral · released 2025-12 · 13.9B params · apache-2.0
 
-**score 56.5** ±2.4 · #173 of 462 · from 4 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 56.2** ±2.3 · #182 of 548 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.3%    60.7   2026-04-17   25% ▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.7%    62.2   2026-04-17   18% ▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  47.6%    52.2   2026-05-02   32% ▇▇▇▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  55.1%    54.0   2026-09-25   23% ▇▇▇
-prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 56.5
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  47.6%    53.0   2026-05-02   37% ▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.3%    60.4   2026-04-17   18% ▇▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  92.7%    61.6   2026-04-17   18% ▇▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  55.1%    54.8   2026-09-25   25% ▇▇▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 56.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
+<sub>Licences: Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · mistralai/Ministral-3-14B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 
 <details><summary>Not counted (1)</summary>
 
@@ -45,8 +43,8 @@ api (Mistral) · $0.20/M blended · $0.2 in / $0.2 out per 1M tokens · [docs.mi
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~8.84GB   56.5
-8-bit q8_0    ~17.18GB   56.5
+4-bit q4_k_m   ~8.84GB   56.2
+8-bit q8_0    ~17.18GB   56.2
 </pre>
 
 ```sh

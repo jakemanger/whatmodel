@@ -6,9 +6,7 @@
 
 BigCode · released 2024-02 · 15.96B params · bigcode-openrail-m
 
-**score 38.3** ±0.8 · #352 of 462 · from 12 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 38.1** ±0.6 · #410 of 548 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,25 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    36.2   2024-03-28   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    36.1   2024-03-28   19% ▇▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 46.3%    37.6   2024-02-29   16% ▇▇
-                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    39.6   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    38.6   2024-02-29    6% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    48.1   2024-02-29    2% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    42.6   2024-02-29    1% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    42.3   2024-02-29    1% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    39.0   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    40.2   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    41.6   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    42.3   2024-05-07    4% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      37.8%    36.6   2024-12-26   20% ▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       46.3%    37.3   2024-12-26   20% ▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       45.1%    37.8   2024-03-28   19% ▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               29.0%    37.7   2024-03-28   10% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 46.3%    37.7   2024-02-29   10% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      66.2%    38.8   2024-02-29    4% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   33.8%    40.0   2024-02-29    3% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                     65.1%    46.6   2024-02-29    2% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-I (lab)</a>                48.1%    44.2   2024-02-29    1% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">CRUXEval-O (lab)</a>                47.1%    44.2   2024-02-29    0% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.4%    39.5   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            51.2%    40.1   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      47.4%    42.8   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      46.7%    43.8   2024-05-07    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 38.3
+                        weighted average                       = 38.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · StarCoder 2 and The Stack v2: The Next Generation ([CC BY-SA 4.0](../../licenses/paper-2402.19173v1-CC-BY-SA-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -42,8 +42,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~9.9GB   38.3
-8-bit q8_0     ~17GB   38.3
+4-bit q4_k_m  ~9.9GB   38.1
+8-bit q8_0     ~17GB   38.1
 </pre>
 
 ```sh

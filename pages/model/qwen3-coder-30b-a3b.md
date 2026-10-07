@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-07 · 30.5B params (3.3B active) · apache-2.0
 
-**score 57.2** ±2.9 · #169 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 56.2** ±1.6 · #183 of 548 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  38.5%    58.2   2026-09-07   51% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    56.7   2026-09-07   46% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 57.2
+<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a>Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises…</a>  33.3%    56.1   2026-09-25   36% ▇▇▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>        51.6%    55.6   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>    34.7%    52.5   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>            68.7%    56.1   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>           48.0%    55.4   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                   62.2%    56.8   2026-09-25    3% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">Luau Leetcode fully solved (T…</a>  38.5%    58.2   2026-09-07   18% ▇▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/3fcd29933bf7276ce5470d9de8c235fe5684fc43/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>  85.0%    56.8   2026-09-07   16% ▇▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 56.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt))</sub>
+<sub>Licences: Qwen/Qwen3-Coder-30B-A3B-Instruct model card ([Apache-2.0](../../licenses/card-qwen-qwen3-coder-30b-a3b-instruct.txt)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt))</sub>
 
-<details><summary>Not counted (7)</summary>
+<details><summary>Not counted (1)</summary>
 
 <pre>
-source                  test                            score  why
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified</a>              51.6%  too few models have it yet
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live</a>                  20.7%  too few models have it yet
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual</a>          34.7%  too few models have it yet
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises…</a>  33.3%  too few models have it yet
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3</a>                         62.2%  too few models have it yet
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail</a>                  68.7%  too few models have it yet
-Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline</a>                 48.0%  too few models have it yet
+source                  test            score  why
+Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live</a>  20.7%  too few models have it yet
 </pre>
 
 </details>
@@ -49,8 +47,8 @@ api (Novita AI) · $0.12/M blended · $0.07 in / $0.27 out per 1M tokens · [nov
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~18.8GB   57.2
-8-bit q8_0    ~37.1GB   57.2
+4-bit q4_k_m  ~18.8GB   56.2
+8-bit q8_0    ~37.1GB   56.2
 </pre>
 
 ```sh

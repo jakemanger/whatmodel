@@ -6,9 +6,7 @@
 
 Microsoft · released 2023-08 · 70B params · llama2
 
-**score 39.1** ±2.4 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 40.3** ±1.4 · #380 of 548 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,37 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1184.7    37.6   2026-10-02   77% ▇▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.1%    43.6   2024-05-22   21% ▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 39.1
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    71.9%    39.7   2023-11-21   17% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             55.0%    37.2   2023-11-21   12% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   51.1%    40.0   2023-11-21   10% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            73.2%    45.7   2023-11-21   10% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  48.7%    38.2   2023-11-21    8% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         80.7%    38.7   2023-11-21    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1184.7    39.3   2026-10-02   28% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   71.1%    45.0   2024-05-22    9% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 40.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download          size  score
+4-bit q4_k_m  ~41.42GB   40.3
+4-bit q4_0    ~38.87GB   40.3
+</pre>
+
+```sh
+# 4-bit q4_k_m
+ollama run wizardlm:70b-llama2-q4_K_M
+# 4-bit q4_0
+ollama run wizardlm:70b-llama2-q4_0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/wizardlm-70b-v1-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

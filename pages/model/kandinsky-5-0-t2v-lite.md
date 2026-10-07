@@ -6,7 +6,7 @@
 
 Sber · released 2025-09 · 2B params · MIT
 
-**score 46.8** ±2.3 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.6** ±2.4 · #51 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1112.6    46.7   2026-09-22   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>           1112.6    46.5   2026-09-22   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 46.8
+                        weighted average                = 46.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -25,6 +25,16 @@ prior                   pull toward the middle            49.9                 2
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version               needs  score
+bf16 · nvidia only  ~29.1GB   46.6
+</pre>
+
+```sh
+# bf16 · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import Kandinsky5T2VPipeline; from diffusers.utils import export_to_video; p=Kandinsky5T2VPipeline.from_pretrained('kandinskylab/Kandinsky-5.0-T2V-Lite-sft-5s-Diffusers', torch_dtype=torch.bfloat16).to('cuda'); export_to_video(p(prompt='A cat and a dog baking a cake together in a kitchen.', negative_prompt='Static, 2D cartoon, cartoon, 2d animation, paintings, images, worst quality, low quality, ugly, deformed, walking backwards', height=512, width=768, num_frames=121, num_inference_steps=50, guidance_scale=5.0).frames[0], 'output.mp4', fps=24, quality=9)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kandinsky-5-0-t2v-lite) · [JSON](https://whatmodel.sh/api?format=json&all=1)

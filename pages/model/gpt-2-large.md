@@ -6,9 +6,7 @@
 
 OpenAI · released 2019-08 · 0.774B params · mit
 
-**score 29.7** ±1.6 · #421 of 462 · from 10 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 26.9** ±1.7 · #513 of 548 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   23.1%    27.3   2021-11-01   26% ▇▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      19.4%    27.3   2021-11-01   18% ▇▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       35.0%    31.3   2021-11-01    9% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        52.7%    30.0   2021-11-01    9% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            69.8%    32.5   2021-11-01    8% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                66.1%    31.1   2021-11-01    8% ▇
-                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   33.3%    32.8   2021-11-01    2% ▇
-<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  11.3%    33.4   2022-12-07   12% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  33.8%    26.7   2022-12-07    7% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%  -160.9   2022-12-07    0% ▇
+<a name="acl-2021-emnlp-main-564"></a>Surface Form Competit…  <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Challenge</a>                   23.1%    24.2   2021-11-01   24% ▇▇▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">OpenBookQA</a>                      19.4%    24.2   2021-11-01   17% ▇▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            69.8%    29.4   2021-11-01   10% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">Story Cloze Test</a>                66.1%    28.0   2021-11-01    9% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">ARC Easy</a>                        52.7%    27.2   2021-11-01    8% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">HellaSwag</a>                       35.0%    28.7   2021-11-01    8% ▇
+                        <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">CommonsenseQA</a>                   33.3%    28.9   2021-11-01    4% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  11.3%    31.1   2022-12-07   10% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  33.8%    24.3   2022-12-07    9% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%  -163.1   2022-12-07    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 29.7
+                        weighted average                       = 26.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +38,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~3.25GB   29.7
+4-bit fp32  ~3.25GB   26.9
 </pre>
 
 ```sh

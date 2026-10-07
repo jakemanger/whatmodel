@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · proprietary
 
-**score 82.8** ±1.5 · #3 of 116 · from 5 benchmark results across 4 sources
+**score 82.6** ±1.2 · #3 of 136 · from 11 benchmark results across 9 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1383.0    85.1   2026-09-24   65% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1461.3    82.3   2026-09-30   18% ▇▇
-<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   78.6%    75.9   2026-06-09    7% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   66.4%    77.1   2026-06-05    5% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   64.7%    76.9   2026-05-27    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1383.0    84.8   2026-09-24   35% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1461.3    82.2   2026-09-30    9% ▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   86.9%    85.2   2026-09-28   11% ▇
+                        <a href="https://arxiv.org/html/2609.35641v1#S3.F2.fig2">VVRBench-Challenge accuracy (…</a>   10.3%    82.4   2026-09-28   10% ▇
+<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>   62.0%    83.6   2026-09-27   15% ▇▇
+<a name="visual-imagetime"></a>Can Image Models Imag…  <a href="https://arxiv.org/html/2606.10620v1#S5.T5">ImageTime (prompt-only, overa…</a>   78.6%    76.0   2026-06-09    4% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  1167.3    83.4   2026-10-01    4% ▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   81.8%    73.7   2026-07-11    4% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   66.4%    76.9   2026-06-05    3% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   64.7%    77.0   2026-05-27    3% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   16.3%    76.6   2026-05-29    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 82.8
+                        weighted average                        = 82.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency ([CC-BY-4.0](../../licenses/visual-imagetime.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

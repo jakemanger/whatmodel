@@ -6,9 +6,7 @@
 
 EleutherAI · released 2023-02 · 2.78B params · apache-2.0
 
-**score 33.1** ±1.2 · #399 of 462 · from 10 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 30.0** ±1.4 · #496 of 548 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    33.0   2023-05-31   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    31.7   2023-05-31   16% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    33.0   2023-05-31   13% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    34.0   2023-05-31   12% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    36.4   2023-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    32.0   2023-05-31    5% ▇
-<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    32.3   2024-11-19   12% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    32.4   2024-11-19    7% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    33.0   2024-11-19    4% ▇
-                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    33.2   2024-11-19    3% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  64.4%    29.8   2023-05-31   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      88.2%    28.4   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      73.9%    29.9   2023-05-31   13% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  64.7%    30.9   2023-05-31   11% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             29.5%    33.9   2023-05-31    6% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                59.4%    28.5   2023-05-31    6% ▇
+<a name="redpajama-2024-original-zero-shot"></a>RedPajama               <a href="https://arxiv.org/html/2411.12372v1">WinoGrande</a>                      60.1%    29.2   2024-11-19   13% ▇▇
+                        <a href="https://arxiv.org/html/2411.12372v1">HellaSwag</a>                       59.3%    29.3   2024-11-19    7% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  64.7%    29.9   2024-11-19    4% ▇
+                        <a href="https://arxiv.org/html/2411.12372v1">PIQA</a>                            74.0%    30.2   2024-11-19    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 33.1
+                        weighted average                       = 30.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -40,7 +38,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~5.68GB   33.1
+4-bit fp16  ~5.68GB   30.0
 </pre>
 
 ```sh

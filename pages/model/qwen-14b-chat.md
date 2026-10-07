@@ -6,9 +6,7 @@
 
 Alibaba · released 2023-09 · 14.2B params · tongyi-qianwen
 
-**score 36.6** ±1.1 · comparison only: no current run option verified · from 4 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 38.1** ±1.0 · #407 of 548 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    37.8   2024-03-28   43% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    36.6   2024-03-28   35% ▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    32.1   2026-10-02   16% ▇▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    38.7   2024-01-03    6% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 36.6
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        46.3%    38.2   2024-03-28   53% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                32.1%    39.2   2024-03-28   28% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1139.3    34.2   2026-10-02   14% ▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   43.8%    40.9   2024-01-03    5% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 38.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,6 +28,16 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+16-bit bf16  ~28.33GB   38.1
+</pre>
+
+```sh
+# 16-bit bf16
+pip install torch transformers==4.32.0 accelerate tiktoken einops scipy transformers_stream_generator==0.0.4 && python -c "from transformers import AutoModelForCausalLM, AutoTokenizer; t=AutoTokenizer.from_pretrained('Qwen/Qwen-14B-Chat', trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained('Qwen/Qwen-14B-Chat', device_map='auto', trust_remote_code=True).eval(); print(m.chat(t, '你好', history=None)[0])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/qwen-14b-chat) · [JSON](https://whatmodel.sh/api?format=json&all=1)

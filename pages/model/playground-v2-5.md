@@ -4,9 +4,9 @@
 
 # Playground v2.5
 
-Playground · released 2024-02 · playground-v2dot5-community
+Playground · released 2024-02 · 2.57B params · playground-v2dot5-community
 
-**score 41.1** ±1.7 · comparison only: no current run option verified · from 6 benchmark results across 6 sources
+**score 41.0** ±1.7 · #94 of 136 · from 6 benchmark results across 6 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,14 +16,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          50.5%    38.6   2026-07-01   25% ▇▇▇
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>    1150.0    46.2   2024-06-04   21% ▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.20 / 5    40.4   2024-12-25   20% ▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     46.0%    39.5   2024-08-26   16% ▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     49.0%    40.3   2026-06-02   12% ▇
-<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.37 / 5    40.5   2024-11-13    5% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>          50.5%    39.1   2026-07-01   27% ▇▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>    1150.0    44.9   2024-06-04   23% ▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.20 / 5    40.0   2024-12-25   19% ▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>     46.0%    38.9   2024-08-26   15% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>     49.0%    40.9   2026-06-02   10% ▇
+<a name="visual-kolors-readme"></a>Kwai-Kolors/Kolors re…  <a href="https://github.com/Kwai-Kolors/Kolors/blob/038818d244ed103056abd10f429729a26af4d239/README.md#human-assessment">KolorsPrompts human overall s…</a>  3.37 / 5    40.4   2024-11-13    5% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 41.1
+                        weighted average                          = 41.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,6 +32,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version              needs  score
+fp16 · nvidia only  ~8.8GB   41.0
+</pre>
+
+```sh
+# fp16 · nvidia only
+uv run --with torch --with 'diffusers>=0.27.0' --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import DiffusionPipeline; p=DiffusionPipeline.from_pretrained('playgroundai/playground-v2.5-1024px-aesthetic', torch_dtype=torch.float16, variant='fp16').to('cuda'); p(prompt='Astronaut in a jungle, cold color palette, muted colors, detailed, 8k', num_inference_steps=50, guidance_scale=3).images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/playground-v2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

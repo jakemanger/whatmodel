@@ -4,21 +4,49 @@
 
 # Falcon 40B (base)
 
-TII · released 2023-05
+TII · released 2023-05 · 41.8B params · apache-2.0
 
-Pretrained Falcon-40B (not falcon-40b-instruct).
+**score 38.2** ±1.6 · #404 of 548 · from 8 benchmark results across 2 sources
 
-[Model and usage documentation](https://huggingface.co/tiiuae/falcon-40b)
+## How the score was worked out
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                            score  implies  date        weight
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            53.5%    39.2   2024-06-03   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   57.7%    37.9   2024-06-03   17% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  36.2%    37.8   2024-06-03   16% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       24.4%    39.2   2024-06-03   14% ▇▇
+                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           22.4%    36.2   2024-06-03    9% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            36.5%    37.5   2024-06-03    9% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          40.3%    52.7   2024-06-03    1% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  60.3%    35.6   2024-02-05   11% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 38.2
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/tiiuae/falcon-40b/blob/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/README.md): Training sequence length stated by the maker; no separate serving limit is published.</sub>
 
+<pre>
+download         size  score
+4-bit q4_0      ~24GB   38.2
+16-bit bf16  ~83.67GB   38.2
+</pre>
+
 ```sh
+# 4-bit q4_0
 ollama run falcon:40b-text
+# 16-bit bf16
 uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='tiiuae/falcon-40b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/falcon-40b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/falcon-40b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

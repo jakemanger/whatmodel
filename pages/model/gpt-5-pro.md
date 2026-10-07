@@ -6,20 +6,21 @@
 
 OpenAI · released 2025-10 · proprietary
 
-**score 70.9** ±1.6 · #52 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 70.4** ±1.2 · #47 of 548 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                       score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>  55.8%    71.3   2026-06-12   62% ▇▇▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>     19.5%    70.7   2026-06-12   37% ▇▇▇▇
-prior     pull toward the middle              50.0                 1% ▇
-          weighted average                  = 70.9
+source                  test                            score  implies  date        weight
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       55.8%    70.6   2026-06-12   37% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          19.5%    70.0   2026-06-12   21% ▇▇▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>              88.4%    71.5   2025-08-07   25% ▇▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>      30.7%    70.2   2025-08-07   10% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with too…</a>  42.0%    68.9   2025-08-07    6% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 70.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

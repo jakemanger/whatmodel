@@ -6,9 +6,7 @@
 
 DeepSeek · released 2026-09 · 552B params (16B active) · mit
 
-**score 76.5** ±1.0 · #14 of 462 · from 17 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 75.4** ±0.9 · #14 of 548 · from 17 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,25 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1619.9    76.0   2026-10-01   21% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0402 IPS    76.2   2026-10-02   20% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1474.4    72.4   2026-10-02   12% ▇
-<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>             31.2%    80.8   2026-09-10   10% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">GPQA Diamond (lab)</a>                   90.9%    71.9   2026-09-10    9% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>             90.6%    78.0   2026-09-10    4% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam (lab)</a>           39.1%    71.6   2026-09-10    3% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                       88.1%    80.2   2026-09-10    3% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.…</a>       54.8%    80.4   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                        64.0%    76.0   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, of…</a>       31.8%    76.9   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">MathArena Apex (pass@1) (lab)</a>        65.6%    74.6   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>             30.0%    88.5   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>         62.8%    82.5   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam with too…</a>       63.9%    77.8   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>        74.2%    83.5   2026-09-10    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ExploitGym (pass@1) (lab)</a>            15.3%    91.5   2026-09-10    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1619.9    75.0   2026-10-01   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0402 IPS    75.2   2026-10-02   20% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1474.4    71.6   2026-10-02   13% ▇▇
+<a name="card2-deepseek-ai-deepseek-v4-1-flash"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">GPQA Diamond (lab)</a>                   90.9%    71.2   2026-09-10    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 4.0 (lab)</a>             31.2%    79.9   2026-09-10    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 2.1 (lab)</a>             90.6%    76.9   2026-09-10    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">MathArena Apex (pass@1) (lab)</a>        65.6%    73.3   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam (lab)</a>           39.1%    70.8   2026-09-10    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">CyberGym (lab)</a>                       88.1%    79.4   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">NL2Repo (lab)</a>                        64.0%    75.1   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">AutomationBench (DeepSeek V4.…</a>       54.8%    79.6   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Agents' Last Exam (pass@1, of…</a>       31.8%    76.1   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Humanity's Last Exam with too…</a>       63.9%    76.7   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">Terminal-Bench 3.0 (lab)</a>             30.0%    87.9   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">SEC-Bench Pro (pass@1) (lab)</a>         62.8%    81.7   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">DeepSWE v1.1 (resolved) (lab)</a>        74.2%    82.5   2026-09-10    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/README.md">ExploitGym (pass@1) (lab)</a>            15.3%    91.0   2026-09-10    1% ▇
 prior                   pull toward the middle                        50.0                 0% ▇
-                        weighted average                            = 76.5
+                        weighted average                            = 75.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -59,6 +57,16 @@ api (DeepSeek) · $0.26/M blended · $0.15 in / $0.6 out per 1M tokens · [api-d
 
 <sub>[price source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/deepseek/models/deepseek-v4-flash-vision-exp.toml): Standard base token rate from models.dev. Provider-specific tiers, long-context surcharges, caching and promotions may differ. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/deepseek/deepseek-v4.1-flash.toml)</sub>
 
-no verified local download listed
+<pre>
+download                                   size  score
+4-bit fp8 + fp4 experts · nvidia only  ~510.3GB   75.4
+</pre>
+
+```sh
+# 4-bit fp8 + fp4 experts · nvidia only
+hf download deepseek-ai/DeepSeek-V4.1-Flash --local-dir DeepSeek-V4.1-Flash-HF && cd DeepSeek-V4.1-Flash-HF/inference && python -m pip install -r requirements.txt && python convert.py --hf-ckpt-path .. --save-path ../../DeepSeek-V4.1-Flash-TP8 --model-parallel 8 --expert-dtype fp4 --tokenizer-path .. && torchrun --nproc-per-node 8 generate.py --ckpt-path ../../DeepSeek-V4.1-Flash-TP8 --config config.json --interactive --temperature 0.6
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/deepseek-v4-1-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

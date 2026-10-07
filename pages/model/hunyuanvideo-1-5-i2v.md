@@ -6,7 +6,7 @@
 
 Tencent · released 2025-11 · 8.3B params · tencent-hunyuan-community
 
-**score 49.2** ±2.8 · #44 of 76 · from 3 benchmark results across 3 sources
+**score 51.8** ±2.4 · #42 of 87 · from 6 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  911.0    48.8   2026-05-11   75% ▇▇▇▇▇▇▇▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    47.4   2026-08-26   18% ▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    64.6   2026-06-17    4% ▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 49.2
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  911.0    50.4   2026-05-11   61% ▇▇▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  19.1%    48.3   2026-08-26   12% ▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  23.0%    50.2   2026-09-30   11% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>  81.1%    58.5   2026-08-06    6% ▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  75.6%    67.0   2026-05-14    5% ▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  33.4%    64.0   2026-06-17    3% ▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 51.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
+<sub>Licences: WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
 ## How to run it
 
@@ -31,6 +34,16 @@ api (fal.ai) · $0.075/sec · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-vide
 
 <sub>[price source](https://fal.ai/models/fal-ai/hunyuan-video-v1.5/image-to-video): USD per second of generated video, 480p (the only resolution offered on this endpoint). Product: fal HunyuanVideo 1.5 image-to-video endpoint. API model: fal-ai/hunyuan-video-v1.5/image-to-video. Price basis: rate printed by fal ("$0.075 per second"), matching the endpoint billing record. Currency: USD. fal.ai model page, observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+version                                     needs  score
+bf16 480p I2V + model CPU offload · nvi…  ~65.6GB   51.8
+</pre>
+
+```sh
+# bf16 480p I2V + model CPU offload · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg python -c "import torch; from diffusers import HunyuanVideo15ImageToVideoPipeline; from diffusers.utils import export_to_video, load_image; p=HunyuanVideo15ImageToVideoPipeline.from_pretrained('hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p.vae.enable_tiling(); image=load_image('https://huggingface.co/datasets/YiYiXu/testing-images/resolve/main/wan_i2v_input.JPG'); export_to_video(p(prompt='Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.', image=image, generator=torch.Generator(device='cuda:0').manual_seed(1), num_frames=121, num_inference_steps=50).frames[0], 'output.mp4', fps=24)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-1-5-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -4,9 +4,9 @@
 
 # BLIP3-o 8B
 
-Salesforce Research · released 2025-05 · apache-2.0
+Salesforce Research · released 2025-05 · 8B params · apache-2.0
 
-**score 37.2** ±2.7 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 36.6** ±2.5 · #110 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   6.7%    34.3   2026-05-14   67% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  52.0%    42.6   2026-06-02   29% ▇▇▇▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   6.7%    34.3   2026-05-14   77% ▇▇▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  52.0%    43.3   2026-06-02   21% ▇▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 37.2
+                        weighted average                       = 36.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 (official inference.py) · nvidia o…  ~41.3GB   36.6
+</pre>
+
+```sh
+# bf16 (official inference.py) · nvidia only
+git clone -b main https://github.com/JiuhaiChen/BLIP3o.git && cd BLIP3o && conda create -n blip3o python=3.11 -y && conda activate blip3o && pip install --upgrade pip setuptools && pip install -r requirements.txt && python inference.py $(python -c "from huggingface_hub import snapshot_download; print(snapshot_download(repo_id='BLIP3o/BLIP3o-Model-8B', repo_type='model'))")
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/blip3o-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2025-11 · 32B params · flux-dev-nc
 
-**score 59.1** ±1.2 · #42 of 116 · from 8 benchmark results across 7 sources
+**score 58.4** ±1.1 · #45 of 136 · from 14 benchmark results across 13 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,21 +16,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1145.6    62.0   2026-09-24   41% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.7    57.6   2026-09-30   11% ▇
-<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   42.3%    55.3   2026-05-14   14% ▇▇
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       52.2%    54.0   2026-05-13   11% ▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   89.5%    59.4   2026-08-25    8% ▇
-<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.2%    59.4   2026-07-12    7% ▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1006.0    55.8   2026-03-30    4% ▇
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   53.1%    66.6   2026-06-05    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1145.6    61.7   2026-09-24   31% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1224.7    56.8   2026-09-30    7% ▇
+<a name="visual-genexam"></a>GenExam: A Multidisci…  <a href="https://arxiv.org/html/2509.14232v5#S3.T2">GenExam (relaxed overall, GPT…</a>   42.3%    55.2   2026-05-14   15% ▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   19.1%    58.8   2026-09-28    9% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       52.2%    53.2   2026-05-13    9% ▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   89.5%    58.7   2026-08-25    7% ▇
+<a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>   87.2%    59.6   2026-07-12    6% ▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   945.7    58.2   2026-10-01    3% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1006.0    54.8   2026-03-30    3% ▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>   53.1%    66.2   2026-06-05    3% ▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   87.6%    63.7   2026-06-23    2% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    4.6%    50.3   2026-05-29    2% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   29.9%    41.8   2026-03-26    1% ▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>   36.9%    65.4   2026-04-24    1% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 59.1
+                        weighted average                        = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam: A Multidisciplinary Text-to-Image Exam ([CC-BY-4.0](../../licenses/visual-genexam.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · TIIF-Bench: How Does Your T2I Model Follow Your Instructions? ([CC-BY-4.0](../../licenses/visual-tiif-bench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Cosmos 3: Omnimodal World Models for Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -40,10 +46,10 @@ api (Cloudflare) · $0.046/image · [developers.cloudflare.com](https://develope
 
 <pre>
 version                                     needs  score
-bf16 (cpu offload) · nvidia only          ~77.3GB   59.1
-nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   59.1
-mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   59.1
-gguf-q4_k_s + Mistral Small 3.2 q4_k_m …  ~41.3GB   59.1
+bf16 (cpu offload) · nvidia only          ~77.3GB   58.4
+nf4 (bnb-4bit DiT + text encoder) · nvi…  ~19.7GB   58.4
+mlx-int4 (Flux2CLI, Swift) · mac only     ~19.7GB   58.4
+gguf-q4_k_s + Mistral Small 3.2 q4_k_m …  ~41.3GB   58.4
 </pre>
 
 ```sh

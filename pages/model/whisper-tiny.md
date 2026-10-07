@@ -6,7 +6,7 @@
 
 OpenAI · released 2022-09 · 0.039B params · apache-2.0
 
-**score 23.1** ±2.9 · #101 of 113 · from 6 benchmark results across 5 sources
+**score 18.5** ±3.0 · #107 of 117 · from 8 benchmark results across 5 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,14 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json">LibriSpeech test-clean WER</a>       7.5%    23.9   2026-09-15   49% ▇▇▇▇▇▇
-<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  97.2%    20.6   2026-08-17   20% ▇▇
-<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  44.4%    19.6   2026-08-24   10% ▇
-                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  73.8%    26.6   2026-08-24    6% ▇
-<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  49.8%    16.1   2026-09-25    9% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.4%    25.8   2024-12-09    2% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json">LibriSpeech test-clean WER</a>       7.5%    16.5   2026-09-15   35% ▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-tiny.json">FLEURS English test WER</a>         13.8%    23.5   2026-09-15   15% ▇▇
+<a name="speech-stt-peste-apache"></a>PESTE · Persian Speec…  <a href="https://github.com/ArmanJR/PESTE-Benchmark/blob/4ca05cd34f90342d76d12d9e8074e7a26de97e96/generated/leaderboard.csv">PESTE · Persian FLEURS (fa_ir…</a>  97.2%    15.4   2026-08-17   18% ▇▇
+<a name="speech-stt-bavarian-betthupferl-mit"></a>German dialect ASR Be…  <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  44.4%    16.5   2026-08-24    9% ▇
+                        <a href="https://huggingface.co/spaces/kamaal-08/bavarian-asr-leaderboard/blob/1a8d0ac6d092ce3d5fc46d41e9cbc2cd74240bed/data/leaderboard.csv">Betthupferl (German dialect A…</a>  73.8%    23.1   2026-08-24    5% ▇
+<a name="speech-stt-turkasr-bench-mit"></a>Turkish ASR Leaderboa…  <a href="https://huggingface.co/spaces/yagmurtuncer/turkish-asr-leaderboard/blob/c27251669fb421135aa8dc2c138b802051775bc8/turkasr_bench.json">TurkASR-Bench (7 Turkish sour…</a>  49.8%    12.8   2026-09-25    9% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  14.4%    25.0   2024-12-09    2% ▇
+                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       8.2%     3.6   2024-12-09    2% ▇
 prior                   pull toward the middle                   49.7                 3% ▇
-                        weighted average                       = 23.1
+                        weighted average                       = 18.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +36,8 @@ prior                   pull toward the middle                   49.7           
 
 <pre>
 version   needs  score
-fp16     ~0.6GB   23.1
-fp32     ~0.7GB   23.1
+fp16     ~0.6GB   18.5
+fp32     ~0.7GB   18.5
 </pre>
 
 ```sh

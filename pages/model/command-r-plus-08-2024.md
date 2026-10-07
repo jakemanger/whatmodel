@@ -6,9 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 49.5** ±2.5 · #235 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 46.8** ±1.8 · #293 of 548 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.3    48.6   2026-10-02   78% ▇▇▇▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    53.0   2026-09-19   19% ▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 49.5
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.3    49.5   2026-10-02   44% ▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    42.3   2024-09-11   44% ▇▇▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    53.5   2026-09-19   11% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 46.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -34,8 +33,8 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~62.9GB   49.5
-8-bit q8_0    ~125.3GB   49.5
+4-bit q4_k_m   ~62.9GB   46.8
+8-bit q8_0    ~125.3GB   46.8
 </pre>
 
 ```sh

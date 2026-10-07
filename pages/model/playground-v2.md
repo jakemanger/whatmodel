@@ -4,9 +4,9 @@
 
 # Playground v2 (1024px aesthetic)
 
-Playground · released 2023-12 · playground-v2-community
+Playground · released 2023-12 · 2.57B params · playground-v2-community
 
-**score 42.7** ±3.7 · #84 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.6** ±3.5 · #92 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1101.0    42.3   2024-06-04   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    49.9                 6% ▇
-                        weighted average                        = 42.7
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1101.0    41.1   2024-06-04   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    49.9                 5% ▇
+                        weighted average                        = 41.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,9 +29,9 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version                needs  score
-fp16 · nvidia only    ~8.9GB   42.7
-fp16 (sd.cpp)         ~8.8GB   42.7
-q8_0 (sd.cpp --type)  ~4.9GB   42.7
+fp16 · nvidia only    ~8.9GB   41.6
+fp16 (sd.cpp)         ~8.8GB   41.6
+q8_0 (sd.cpp --type)  ~4.9GB   41.6
 </pre>
 
 ```sh

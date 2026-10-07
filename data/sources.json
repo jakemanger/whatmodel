@@ -360,14 +360,16 @@
       "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.2.toml",
       "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.3-flash.toml",
       "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.3.toml",
-      "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.toml"
+      "github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/providers/zai/models/glm-5.toml",
+      "github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/openai/models/gpt-4o-2024-11-20.toml",
+      "github.com/anomalyco/models.dev/blob/6b32416340759c52202fef2b0e69cd89adb74bbe/providers/xiaomi/models/mimo-v2.6-pro.toml"
     ],
     "kind": "dataset",
     "license": "MIT",
     "terms_url": "https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/LICENSE",
     "license_url": "/licenses/models-dev-MIT.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "attribution": "Copyright (c) 2025 models.dev. Selected TOML pricing and context fields, identifiers mapped, token prices blended 3:1. OpenRouter ingested data and benchmark fields excluded.",
     "icon": "huggingface.co",
     "exact": true
@@ -1122,14 +1124,15 @@
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Mistral-Nemo-Instruct-2407_vllm_temp_1.0_evalperf_results.brief.json",
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/mistralai--Mistral-Small-Instruct-2409_vllm_temp_1.0_evalperf_results.brief.json",
       "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/nvidia--Llama-3.1-Nemotron-70B-Instruct-HF_vllm_temp_1.0_evalperf_results.brief.json",
-      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/o1-mini-2024-09-12_openai_temp_1.0_evalperf_results.brief.json"
+      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/o1-mini-2024-09-12_openai_temp_1.0_evalperf_results.brief.json",
+      "github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/LICENSE",
     "license_url": "/licenses/evalplus-published-runs-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "attribution": "EvalPlus authors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as these published result files; no nested override found in their paths.",
     "icon": "huggingface.co"
@@ -1156,14 +1159,15 @@
     "name": "Berkeley Function Calling Leaderboard result archive",
     "kind": "dataset",
     "match": [
-      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv"
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv",
+      "github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/LICENSE",
     "license_url": "/licenses/bfcl-result-archive-v4-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "attribution": "Huanzhi Mao and the BFCL authors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as the imported result files; no nested licence override found. BFCL README additionally explicitly includes evaluation scores.",
     "icon": "huggingface.co"
@@ -1215,14 +1219,15 @@
       "github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gpt-4o-2024-08-06_5shots.zip",
       "github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gpt-4o-mini_5shots.zip",
       "github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_gpt4o(2024-05-13)_5shots.zip",
-      "github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip"
+      "github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip",
+      "github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip"
     ],
     "exact": true,
     "license": "Apache-2.0",
     "terms_url": "https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/LICENSE",
     "license_url": "/licenses/mmlu-pro-author-runs-Apache-2.0.txt",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "attribution": "TIGER-AI-Lab / MMLU-Pro authors. Selected published numerical results; model IDs mapped and percentages converted to fractions. No endorsement. Full licence and change notice supplied in independent-NOTICE.txt.",
     "quote": "Root licence in the same pinned repository as these published result files; no nested override found in their paths.",
     "icon": "huggingface.co"
@@ -1781,14 +1786,15 @@
     "id": "visual-rapid-camera",
     "name": "Rapidata/camera-movement published dataset-card rankings",
     "match": [
-      "huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md"
+      "huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md",
+      "huggingface.co/datasets/Rapidata/camera-movement-human-preference-324k/blob/6206acfab997d39eaf63012d127c917de7995cc9/README.md"
     ],
     "exact": true,
     "kind": "dataset",
     "license": "CC-BY-4.0",
     "terms_url": "https://creativecommons.org/licenses/by/4.0/",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "license_url": "/licenses/visual-rapid-camera.txt",
     "attribution": "Rapidata. Extracted selected measured table values; percentages divided by 100 where specified; model labels mapped only to the stated model version. No values estimated or rerun. Source: https://huggingface.co/datasets/Rapidata/camera-movement/blob/7e12622bf6a39b07bfead20e2cede1ae056459ea/README.md. No endorsement; provided as-is.",
     "quote": "Only the retained original measurements and accompanying documentation inside this licensed artifact. No permission inferred for copied third-party comparison rows, external websites, model weights, generated media or dataset inputs.",
@@ -2975,13 +2981,15 @@
       "huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct/blob/9eb2daaa8597bf192a8b0e73f848f3a102794df5/README.md",
       "huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct/blob/e305d2a43a4adc6987308fe7d896fb8ec5f1a5d8/README.md",
       "huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct/blob/50fd307e57011801c7833c87efa1984ddf2db42f/README.md",
-      "huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/README.md"
+      "huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/README.md",
+      "huggingface.co/codellama/CodeLlama-70b-Instruct-hf/blob/397cae981dffaf5d5c9c90e89a0a75a850528b70/README.md",
+      "huggingface.co/codellama/CodeLlama-70b-Python-hf/blob/e037619532ec8449a01ecd5b253d065ac81637b6/README.md"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://dev.meta.ai/docs/pricing-rate-limits",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "meta.ai",
     "attribution": "Meta official pricing/docs, observed 2026-09-25",
@@ -3037,13 +3045,14 @@
       "huggingface.co/CohereLabs/c4ai-command-r-plus-08-2024/blob/e808c1a2249354ca211c9f08d1338e5039f633f8/README.md",
       "huggingface.co/CohereLabs/c4ai-command-r-plus/blob/3de12c88b4c6c882389a6f424cc2074383aa17d8/README.md",
       "huggingface.co/CohereLabs/c4ai-command-r-v01/blob/760ddb6c203d87ebdbe3c9785b49570e1bf95585/README.md",
-      "huggingface.co/CohereLabs/c4ai-command-r7b-12-2024/blob/4f3d0aa6856e322f2f4480fe65420d5d53d297b8/README.md"
+      "huggingface.co/CohereLabs/c4ai-command-r7b-12-2024/blob/4f3d0aa6856e322f2f4480fe65420d5d53d297b8/README.md",
+      "cohere.com/pricing"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://docs.cohere.com/docs/models",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "cohere.com",
     "attribution": "Cohere official pricing/docs, observed 2026-09-25",
@@ -3076,13 +3085,15 @@
       "docs.together.ai/docs/serverless/models.md",
       "together.ai/models/ideogram-40",
       "together.ai/models/sd-xl",
-      "together.ai/pricing"
+      "together.ai/pricing",
+      "huggingface.co/togethercomputer/RedPajama-INCITE-7B-Base/blob/78f7e482443971f4873ba3239f0ac810a367833b/config.json",
+      "huggingface.co/togethercomputer/RedPajama-INCITE-Base-3B-v1/blob/094fbdd0c911feb485ce55de1952ab2e75277e1e/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://www.together.ai/pricing",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "together.ai",
     "attribution": "Together AI official pricing/docs, observed 2026-09-25",
@@ -3168,13 +3179,15 @@
       "replicate.com/stability-ai/stable-diffusion-3.5-large",
       "replicate.com/tencent/hunyuan-image-3",
       "replicate.com/wan-video/wan-2.1-1.3b",
-      "replicate.com/wavespeedai/wan-2.1-t2v-720p"
+      "replicate.com/wavespeedai/wan-2.1-t2v-720p",
+      "replicate.com/prunaai/p-image",
+      "replicate.com/prunaai/p-image-edit"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://replicate.com/ibm-granite/granite-4.0-h-small",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "replicate.com",
     "attribution": "Replicate official pricing/docs, observed 2026-09-25",
@@ -7058,13 +7071,17 @@
       "huggingface.co/deepseek-ai/deepseek-coder-33b-base/blob/45c85cadf3720ef3e85a492e24fd4b8c5d21d8ac/README.md",
       "huggingface.co/deepseek-ai/deepseek-coder-33b-instruct/blob/61dc97b922b13995e7f83b7c8397701dbf9cfd4c/README.md",
       "huggingface.co/deepseek-ai/deepseek-coder-6.7b-base/blob/ce2207a8bfef3ee92bd7dd4cc31c52cfa0046912/README.md",
-      "huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/blob/e5d64addd26a6a1db0f9b863abf6ee3141936807/README.md"
+      "huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/blob/e5d64addd26a6a1db0f9b863abf6ee3141936807/README.md",
+      "huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/blob/ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562/config.json",
+      "huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/blob/916b56a44061fd5cd7d6a8fb632557ed4f724f60/config.json",
+      "huggingface.co/deepseek-ai/DeepSeek-V2.5/blob/c85b5ede86f2a598af339624cac5723861e557ed/config.json",
+      "huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/blob/b1c0b44b4369b597ad119a196caf79a9c40e141e/config.json",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "deepseek.com",
     "attribution": "DeepSeek official pricing/docs, observed 2026-09-25",
@@ -7098,13 +7115,14 @@
       "huggingface.co/ibm-granite/granite-3.3-2b-instruct/blob/707f574c62054322f6b5b04b6d075f0a8f05e0f0/README.md",
       "huggingface.co/ibm-granite/granite-4.0-1b/blob/6a7381ba1f54d684ff508d991aeb7dc580157103/README.md",
       "huggingface.co/ibm-granite/granite-4.0-350m/blob/bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2/README.md",
-      "ibm.com/docs/SSLSRPV_2.1.x/wsj/analyze-data/fm-models-ibm.html"
+      "ibm.com/docs/SSLSRPV_2.1.x/wsj/analyze-data/fm-models-ibm.html",
+      "huggingface.co/ibm-granite/granite-3.2-2b-instruct/blob/641593c3b25bec0b1efe9f0f7d7a67f7243f86a3/config.json"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md",
     "verdict": "allowed",
-    "checked": "2026-09-25",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "ibm.com",
     "attribution": "IBM official pricing/docs, observed 2026-09-25",
@@ -7177,13 +7195,14 @@
       "developers.openai.com/api/docs/models/gpt-5.4-pro",
       "cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
       "cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
-      "developers.openai.com/api/docs/models/gpt-6.1-sol"
+      "developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "developers.openai.com/api/docs/pricing"
     ],
     "kind": "first-party",
     "license": "Factual list price (not licensed content)",
     "terms_url": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
     "verdict": "allowed",
-    "checked": "2026-10-06",
+    "checked": "2026-10-07",
     "exact": true,
     "icon": "openai.com",
     "attribution": "OpenAI official pricing/docs, observed 2026-09-25 GPT-6.1 Sol facts observed 2026-10-06.",
@@ -10797,7 +10816,10 @@
     "match": [
       "huggingface.co/01-ai/Yi-34B-Chat/blob/cf02cb50f2a03dead2fe205766a1c5598a90bf80/README.md",
       "huggingface.co/01-ai/Yi-Coder-9B-Chat/blob/356a1f8d4e4a606d0b879e54191ca809918576b8/README.md",
-      "platform.lingyiwanwu.com/docs"
+      "platform.lingyiwanwu.com/docs",
+      "huggingface.co/01-ai/Yi-1.5-34B-Chat/blob/fa4ffba162f20948bf77c2a30eca952bf0812b7f/config.json",
+      "huggingface.co/01-ai/Yi-1.5-6B-Chat/blob/771924d1c83d67527d665913415d7086f11ea9c0/config.json",
+      "huggingface.co/01-ai/Yi-1.5-9B-Chat/blob/1a0fc698cf883c4f5c325f026ca79f0ebd9955a5/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10805,7 +10827,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "01.AI official model cards and API documentation, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-ai2",
@@ -10816,7 +10838,11 @@
       "arxiv.org/abs/2512.13961v2",
       "huggingface.co/allenai/OLMo-1B-hf/blob/aee7752d9c08ee4775e9b0091426d8410e8f6a89/README.md",
       "huggingface.co/allenai/OLMo-7B-Twin-2T-hf/blob/838af31020e1ebe5d627c9888e090b1fe4d2576e/README.md",
-      "huggingface.co/allenai/OLMo-7B-hf/blob/11fb3186a2e4f681edea621fa8b4345147a9db6a/README.md"
+      "huggingface.co/allenai/OLMo-7B-hf/blob/11fb3186a2e4f681edea621fa8b4345147a9db6a/README.md",
+      "huggingface.co/allenai/Llama-3.1-Tulu-3-70B-DPO/blob/2dab5183da9252bedf6039a0b09c86b9ca4d0ba9/config.json",
+      "huggingface.co/allenai/Llama-3.1-Tulu-3-8B/blob/666943798adbde0b1aff34626007e26986a3c107/config.json",
+      "huggingface.co/allenai/Llama-3.1-Tulu-3-70B/blob/cfc1d855e534a0b9b82a9cea6bf9e8dda30b10d7/config.json",
+      "huggingface.co/allenai/OLMo-2-0425-1B-Instruct/blob/48d788eca847d4d7548f375ad03d3c9312f6139e/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10824,14 +10850,15 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Ai2 (Allen Institute for AI) official technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-arcee",
     "name": "Arcee AI official model cards",
     "kind": "first-party",
     "match": [
-      "huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md"
+      "huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md",
+      "docs.arcee.ai/get-started/pricing.md"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10839,7 +10866,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Arcee AI official model cards, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-bigcode",
@@ -10915,7 +10942,10 @@
     "kind": "first-party",
     "match": [
       "arxiv.org/abs/2304.01373v2",
-      "huggingface.co/EleutherAI/gpt-neox-20b/blob/c292233c833e336628618a88a648727eb3dff0a7/README.md"
+      "huggingface.co/EleutherAI/gpt-neox-20b/blob/c292233c833e336628618a88a648727eb3dff0a7/README.md",
+      "huggingface.co/EleutherAI/gpt-neo-125m/blob/21def0189f5705e2521767faed922f1f15e7d7db/config.json",
+      "huggingface.co/EleutherAI/gpt-neo-1.3B/blob/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8/config.json",
+      "huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10923,7 +10953,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "EleutherAI official model cards and technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-google-models",
@@ -10949,7 +10979,8 @@
     "name": "Hugging Face (SmolLM) official technical report",
     "kind": "first-party",
     "match": [
-      "arxiv.org/abs/2502.02737v1"
+      "arxiv.org/abs/2502.02737v1",
+      "huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10957,14 +10988,15 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Hugging Face (SmolLM) official technical report, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-lmsys",
     "name": "LMSYS official FastChat repository documentation",
     "kind": "first-party",
     "match": [
-      "github.com/lm-sys/FastChat/blob/587d5cfa1609a43d192cedb8441cac3c17db105d/README.md"
+      "github.com/lm-sys/FastChat/blob/587d5cfa1609a43d192cedb8441cac3c17db105d/README.md",
+      "huggingface.co/lmsys/vicuna-33b-v1.3/blob/ef8d6becf883fb3ce52e3706885f761819477ab4/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -10972,7 +11004,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "LMSYS official FastChat repository documentation, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-microsoft",
@@ -11000,7 +11032,10 @@
     "name": "Nous Research official technical reports",
     "kind": "first-party",
     "match": [
-      "arxiv.org/abs/2408.11857v1"
+      "arxiv.org/abs/2408.11857v1",
+      "huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B/blob/7f1a6bec8cdce6551014fd5bbeb4cd8c0f1fbeab/config.json",
+      "huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B/blob/8948247fa83f3f970ad24b3394d5656507642922/config.json",
+      "huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO/blob/286ae6737d048ad1d965c2e830864df02db50f2f/config.json"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11008,7 +11043,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Nous Research official technical reports, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-nvidia",
@@ -11098,7 +11133,8 @@
     "kind": "first-party",
     "match": [
       "cloud.tencent.com/document/product/1823/130051",
-      "huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md"
+      "huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md",
+      "tencentcloud.com/document/product/1300/78937"
     ],
     "exact": true,
     "license": "Factual first-party specification (not licensed content)",
@@ -11106,7 +11142,7 @@
     "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
     "attribution": "Tencent official model cards and Tencent Cloud documentation, observed 2026-10-06",
     "verdict": "allowed",
-    "checked": "2026-10-06"
+    "checked": "2026-10-07"
   },
   {
     "id": "first-party-tinyllama",
@@ -11511,7 +11547,9 @@
       "openai.com/index/introducing-gpt-5-3-codex",
       "deploymentsafety.openai.com/gpt-6-astra",
       "deploymentsafety.openai.com/gpt-6-1-sol",
-      "deploymentsafety.openai.com/gpt-5-6"
+      "deploymentsafety.openai.com/gpt-5-6",
+      "openai.com/index/introducing-gpt-5",
+      "help.openai.com/en/articles/9624314-model-release-notes"
     ],
     "kind": "first-party",
     "license": "Factual vendor-reported score (not licensed content)",
@@ -11554,5 +11592,1188 @@
     "icon": "arxiv.org",
     "attribution": "OpenAI (2024). OpenAI o1 System Card. arXiv:2412.16720v2. https://arxiv.org/abs/2412.16720v2\nCC BY 4.0: https://creativecommons.org/licenses/by/4.0/\nChanges: selected numerical cells and in-text figures transcribed into JSON; percentages divided by 100; MMMLU values derived as the unweighted mean of the 14 printed per-language accuracies (English row excluded); 'GPT-4o-mini' mapped to gpt-4o-mini-2024-07-18. No endorsement.",
     "quote": "The arXiv abstract page https://arxiv.org/abs/2412.16720 (submission history v1 21 Dec 2024, v2 30 Apr 2026; latest = v2) shows 'view license' linking http://creativecommons.org/licenses/by/4.0/, and the v2 HTML header reads 'License: CC BY 4.0'. Checked 2026-10-07. Rule (a): openly licensed copy, usable in full including comparison-model cells."
+  },
+  {
+    "action": "new",
+    "id": "speech-nemo-asr-scores-apache",
+    "name": "NVIDIA NeMo docs: ASR scores tables (English Conformer / FastConformer)",
+    "kind": "first-party",
+    "match": [
+      "github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv",
+      "github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/fastconformer_en.csv"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/LICENSE",
+    "terms_url": "https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/LICENSE",
+    "quote": "Apache License 2.0, §1: '\"Source\" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.' §2 grants a perpetual, worldwide, royalty-free copyright license to reproduce, prepare Derivative Works of, publicly display and distribute the Work. The score CSVs are documentation source in the repository; no data carve-out.",
+    "attribution": "NVIDIA Corporation, NeMo (Apache-2.0), docs/source/asr/data/scores/en at 6f20e61. Selected LibriSpeech test-clean/test-other WERs, converted to fractions. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/scores.rst",
+    "icon": "github.com"
+  },
+  {
+    "action": "new",
+    "id": "speech-omniasr-paper-bysa",
+    "name": "Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages (arXiv:2511.09690v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2511.09690v1"
+    ],
+    "exact": true,
+    "license": "CC BY-SA 4.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://arxiv.org/abs/2511.09690v1",
+    "quote": "arXiv abstract page for 2511.09690v1 links the licence 'http://creativecommons.org/licenses/by-sa/4.0/'. ShareAlike applies to the adapted numerical material.",
+    "attribution": "Omnilingual ASR team (Meta), Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages, arXiv:2511.09690v1. CC BY-SA 4.0. Changes: selected FLEURS-81 and CV22-76 test mean CERs from Table 5, percent/100. This numerical adaptation is licensed CC BY-SA 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2511.09690v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "action": "new",
+    "id": "speech-distil-whisper-readme-mit",
+    "name": "huggingface/distil-whisper README (Distil-Whisper headline WER table)",
+    "kind": "dataset",
+    "match": [
+      "github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/LICENSE",
+    "terms_url": "https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/LICENSE",
+    "quote": "Repository LICENSE (MIT): 'Copyright 2023 The OpenAI Authors and The HuggingFace Inc. team. All rights reserved. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies...' The README is a documentation file in the repository; no data carve-out.",
+    "attribution": "The HuggingFace Inc. team, Distil-Whisper (MIT), README.md at a66f5c8. Short-form WER column, percent/100. Retain the MIT notice. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/html/2311.00430v1",
+    "icon": "github.com"
+  },
+  {
+    "action": "new",
+    "id": "first-party-alphacephei-vosk-models",
+    "name": "Alpha Cephei Vosk models page (vendor-reported WER for its own Vosk models)",
+    "kind": "first-party",
+    "match": [
+      "github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "license_url": null,
+    "terms_url": "https://github.com/alphacep/vosk-space",
+    "quote": "Owner rule (b), 2026-10-07: a vendor's own published score for its own model, from its docs, recorded by hand one figure at a time. The alphacep/vosk-space repository (source of alphacephei.com/vosk) has no LICENSE file, so no open licence; only Alpha Cephei's own vosk-model-* figures are used (not the third-party daanzu/zamia/aspire rows).",
+    "attribution": "Alpha Cephei, Vosk models page (alphacephei.com/vosk/models; source alphacep/vosk-space models.md at f10f63b). Individual WER figures for Alpha Cephei's own Vosk models recorded by hand, percent/100. Lab-reported. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://alphacephei.com/vosk/models",
+    "icon": "github.com"
+  },
+  {
+    "action": "new",
+    "id": "first-party-espnet-owsm-v4-report",
+    "name": "OWSM v4 technical report (ESPnet / CMU WAVLab, arXiv:2506.00338v1): own OWSM-CTC scores",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/html/2506.00338v1"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "license_url": null,
+    "terms_url": "https://arxiv.org/abs/2506.00338v1",
+    "quote": "Owner rule (b), 2026-10-07: a maker's own published score for its own model (tech report) may be recorded by hand. The arXiv page carries the default non-exclusive distribution licence (http://arxiv.org/licenses/nonexclusive-distrib/1.0/), not an open licence, so only the OWSM-CTC rows (the authors' own models) are used; Whisper, Canary, Parakeet and MMS rows are excluded.",
+    "attribution": "Yifan Peng et al. (ESPnet / CMU WAVLab), OWSM v4, arXiv:2506.00338v1. Individual LibriSpeech WERs for the authors' own OWSM-CTC models recorded by hand, percent/100. Lab-reported. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2506.00338v1",
+    "icon": "arxiv.org"
+  },
+  {
+    "action": "new",
+    "id": "speech-glm-asr-readme-apache",
+    "name": "zai-org/GLM-ASR README benchmark table (GLM-ASR-Nano vs open/closed ASR)",
+    "kind": "dataset",
+    "match": [
+      "github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/resources/bench.png"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/LICENSE",
+    "terms_url": "https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/LICENSE",
+    "quote": "Repository LICENSE: 'Apache License Version 2.0, January 2004'. §1: 'Work' covers the work of authorship made available under the License; 'Object' form includes ... documentation; the README benchmark image resources/bench.png is a repository file with no separate data licence.",
+    "attribution": "Z.ai (zai-org), GLM-ASR, Apache-2.0, README benchmark table resources/bench.png at a324aa5. Selected CER/WER cells for GLM-ASR-Nano and Whisper V3, percent/100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://github.com/zai-org/GLM-ASR/blob/a324aa59a30952c54e8097c85efea592b7fafd81/README.md",
+    "icon": "github.com"
+  },
+  {
+    "action": "new",
+    "id": "speech-omnivoice-report-ccby",
+    "name": "OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models (arXiv:2604.00688v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.00688v3"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "http://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2604.00688v3",
+    "quote": "arXiv abstract page for 2604.00688v3 links the licence 'http://creativecommons.org/licenses/by/4.0/'.",
+    "attribution": "k2-fsa OmniVoice team, OmniVoice, arXiv:2604.00688v3, CC BY 4.0. Selected Seed-TTS test-en/test-zh SIM-o and WER/CER cells from Table 1; percentages divided by 100. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2604.00688v3",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "aider-code-editing-runs",
+    "name": "Aider code editing benchmark runs (old edit leaderboard)",
+    "kind": "dataset",
+    "match": [
+      "github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "terms_url": "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/LICENSE.txt",
+    "license_url": "/licenses/aider-polyglot-runs-Apache-2.0.txt",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "attribution": "Paul Gauthier and Aider contributors. Selected published numerical results from the code editing leaderboard data file; model IDs mapped and percentages converted to fractions. No endorsement.",
+    "quote": "Root LICENSE.txt in the same pinned repository (Apache License, Version 2.0) as this published result file; no nested override in its path. Same repository and commit as the existing aider-polyglot-runs entry.",
+    "icon": "github.com"
+  },
+  {
+    "id": "card-deepseek-ai-deepseek-v3-1-terminus",
+    "name": "DeepSeek-V3.1-Terminus model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md"
+    ],
+    "exact": true,
+    "license": "MIT",
+    "license_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/LICENSE",
+    "terms_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: mit' and card text: 'This repository and the model weights are licensed under the MIT License.' The comparison table is DeepSeek's own evaluation of its two models.",
+    "attribution": "DeepSeek-AI, DeepSeek-V3.1-Terminus model card (MIT). Selected published scores for DeepSeek-V3.1 and DeepSeek-V3.1-Terminus; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2411.15124v5",
+    "name": "Tülu 3: Pushing Frontiers in Open Language Model Post-Training (Lambert et al., Ai2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2411.15124v5"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2411.15124v5",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "The arXiv abstract page for 2411.15124v5 links the licence 'http://creativecommons.org/licenses/by/4.0/'.",
+    "attribution": "Nathan Lambert, Jacob Morrison, Valentina Pyatkin et al. (2024-2025). Tülu 3: Pushing Frontiers in Open Language Model Post-Training. arXiv:2411.15124v5. CC BY 4.0. Changes: selected numerical cells transcribed; percentages divided by 100. No endorsement.",
+    "icon": "arxiv.org",
+    "scope": "Table 5 (70B models, Ai2's Tülu 3 Eval suite): Tülu 3 70B, Tülu 3 70B DPO and Nemotron Llama 3.1 70B columns."
+  },
+  {
+    "id": "wildbench-leaderboard-data",
+    "name": "WildBench v2 leaderboard data (Ai2)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/leaderboard/data_dir/all_stat_wildbench.-1.json"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE",
+    "terms_url": "https://github.com/allenai/WildBench/blob/d6b8dcaf377d173d031980f97c16e1a82618c03d/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Root LICENSE in the same pinned repository (Apache License, Version 2.0) as the leaderboard data file; no nested licence override in leaderboard/data_dir. GitHub reports the repository licence as apache-2.0.",
+    "attribution": "Bill Yuchen Lin et al. (Ai2), WildBench. Apache-2.0. Selected published WB-Score values; model names mapped. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1",
+    "name": "HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository that holds the README; the Performance table states all rows were evaluated by H4 with LightEval.",
+    "attribution": "Hugging Face H4, Zephyr 141B-A39B model card (Apache-2.0). Selected scores; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "internlm-github-model-cards",
+    "name": "InternLM GitHub repository model cards (Shanghai AI Laboratory)",
+    "kind": "first-party",
+    "match": [
+      "github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE",
+    "terms_url": "https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Root LICENSE of the same pinned repository is the Apache License 2.0 (GitHub reports apache-2.0); the model card markdown is a repository file with no nested licence override.",
+    "attribution": "Shanghai AI Laboratory / InternLM team, InternLM GitHub model card (Apache-2.0). Selected OpenCompass scores; percentages converted to fractions. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "instruct-eval-readme",
+    "name": "InstructEval (DeCLaRe Lab) README results table",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md"
+    ],
+    "exact": true,
+    "license": "MIT / Apache-2.0",
+    "license_url": "https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENSE",
+    "terms_url": "https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/LICENCE",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Root of the same pinned repository holds LICENSE ('MIT License, Copyright (c) 2023 Deep Cognition and Language Research (DeCLaRe) Lab') and LICENCE (Apache License 2.0); GitHub reports apache-2.0. Both permit reuse of the README's results table.",
+    "attribution": "Yew Ken Chia, Pengfei Hong, Lidong Bing, Soujanya Poria (DeCLaRe Lab), InstructEval. Selected results; percentages converted to fractions; model paths mapped. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "card2-tencent-hy4-preview",
+    "name": "Tencent Hy4 preview model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md#benchmark-appendix"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/LICENSE",
+    "terms_url": "https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository; the benchmark appendix image is a committed file (assets/benchmark-appendix.jpg) of that repository. Match URL carries the card's evaluation-section fragment so these score rows stay separate from the existing first-party price/context entry that matches the bare README URL.",
+    "attribution": "Tencent Hy team, Hy4 preview model card (Apache-2.0). Selected scores visually read from the benchmark appendix image; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card2-qwen-qwen2-5-vl-32b-instruct",
+    "name": "Qwen2.5-VL-32B-Instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository that holds the README. Match URL carries the card's evaluation-section fragment so these score rows stay separate from the existing first-party price/context entry that matches the bare README URL.",
+    "attribution": "Qwen team (Alibaba), Qwen2.5-VL-32B-Instruct model card (Apache-2.0). Selected scores; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "glm-v-github-bench-image",
+    "name": "Z.ai GLM-V GitHub repository benchmark image (GLM-4.6V)",
+    "kind": "first-party",
+    "match": [
+      "github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE",
+    "terms_url": "https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Root LICENSE of the same pinned repository is the Apache License 2.0 (GitHub reports apache-2.0); the benchmark image is a committed repository file (resources/bench_46v.jpeg).",
+    "attribution": "Z.ai (Zhipu AI) GLM-V team, GLM-4.6V benchmark table image (Apache-2.0 repository). Selected own-model scores visually read; percentages converted to fractions. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "card2-qwen-qwen3-vl-235b-a22b-instruct",
+    "name": "Qwen3-VL-235B-A22B-Instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md#model-performance"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/blob/710c13861be6c466e66de3f484069440b8f31389/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository that holds the README with the embedded benchmark tables. Match URL carries the card's evaluation-section fragment so these score rows stay separate from the existing first-party price/context entry that matches the bare README URL.",
+    "attribution": "Qwen team (Alibaba), Qwen3-VL-235B-A22B-Instruct model card (Apache-2.0). Selected own-model scores visually read from the embedded table; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card2-qwen-qwen3-vl-235b-a22b-thinking",
+    "name": "Qwen3-VL-235B-A22B-Thinking model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository that holds the README with the embedded benchmark tables. Match URL carries the card's evaluation-section fragment so these score rows stay separate from the existing first-party price/context entry that matches the bare README URL.",
+    "attribution": "Qwen team (Alibaba), Qwen3-VL-235B-A22B-Thinking model card (Apache-2.0). Selected own-model scores visually read from the embedded table; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "granite-3-0-paper-github",
+    "name": "IBM Granite 3.0 Language Models technical report (GitHub)",
+    "kind": "paper",
+    "match": [
+      "github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/LICENSE",
+    "terms_url": "https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Root LICENSE of the same pinned repository that holds paper.pdf is the Apache License 2.0 (GitHub reports Apache-2.0); no nested licence notice for the paper.",
+    "attribution": "IBM Granite Team, Granite 3.0 Language Models (paper.pdf, Apache-2.0 repository). Selected Table 10 scores; percentages converted to fractions. No endorsement.",
+    "icon": "github.com"
+  },
+  {
+    "id": "first-party-lgai-scores",
+    "name": "LG AI Research vendor-reported benchmark scores for its own EXAONE models (Hugging Face model cards)",
+    "match": [
+      "huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance",
+      "huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results",
+      "huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/LICENSE",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "huggingface.co",
+    "attribution": "LG AI Research, vendor-reported results for LG's own EXAONE models from its pinned Hugging Face model cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. Match URLs carry the cards' evaluation-section fragments so these score rows stay separate from the existing first-party-lg-ai-research price/context entry that matches the bare README URLs."
+  },
+  {
+    "id": "first-party-amazon-scores",
+    "name": "Amazon vendor-reported benchmark scores for its own Nova models (Amazon Science technical reports)",
+    "match": [
+      "cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=508088",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "amazon.science",
+    "attribution": "Amazon AGI, vendor-reported results for Amazon's own Nova models; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported, not independent measurements. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model, from its announcement, system/model card or docs, may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'; removed if the vendor objects. The Nova Premier report carries no open licence. Terms: Amazon Conditions of Use, linked from the amazon.science footer."
+  },
+  {
+    "id": "first-party-arcee-scores",
+    "name": "Arcee AI vendor-reported benchmark scores for its own Trinity models (Hugging Face model cards)",
+    "match": [
+      "huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks",
+      "huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "huggingface.co",
+    "attribution": "Arcee AI, vendor-reported results for Arcee's own Trinity models from its pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. Cards are tagged openmdw-1.1; recorded under rule (b) rather than as licensed copies. Match URLs carry the '#benchmarks' fragment so the score rows stay separate from the existing first-party-arcee price/context entry."
+  },
+  {
+    "id": "first-party-mistral-scores",
+    "name": "Mistral AI vendor-reported benchmark scores for its own models (Hugging Face model cards)",
+    "match": [
+      "huggingface.co/mistralai/Ministral-8B-Instruct-2410/blob/2f494a194c5b980dfb9772cb92d26cbb671fce5a/README.md#benchmarks",
+      "huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://mistral.ai/terms/",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "huggingface.co",
+    "attribution": "Mistral AI, vendor-reported results for Mistral's own models from its pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time with exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. Match URLs carry section fragments so the score rows stay separate from the existing first-party-mistral price/context entry."
+  },
+  {
+    "id": "first-party-nvidia-scores",
+    "name": "NVIDIA vendor-reported benchmark scores for its own Nemotron models (Hugging Face model cards)",
+    "match": [
+      "huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results",
+      "huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2/blob/6533e8de2c68e4536bf7c411d7a3ce5734111476/README.md#evaluation-results"
+    ],
+    "kind": "first-party",
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "huggingface.co",
+    "attribution": "NVIDIA, vendor-reported results for NVIDIA's own Nemotron models from pinned Hugging Face cards; individual figures hand-recorded 2026-10-07; percentages converted to fractions. Lab-reported. No endorsement.",
+    "quote": "Owner rule (b), approved 2026-10-07: a vendor's own published score for its own model may be recorded by hand one figure at a time; one vendor entry groups that vendor's pages into one evaluator. Match URLs carry the '#evaluation-results' fragment so these rows stay separate from the existing per-card entries (card-nvidia-nvidia-nemotron-3-nano-4b-bf16, card-nvidia-nvidia-nemotron-nano-9b-v2) that match the bare README URLs."
+  },
+  {
+    "id": "card2-qwen-qwen2-0-5b-instruct",
+    "name": "Qwen2-0.5B-Instruct model card",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository that holds the README. Match URL carries the '#evaluation' fragment to keep these rows separate from any price/context entry on the bare README URL.",
+    "attribution": "Qwen team (Alibaba), Qwen2-0.5B-Instruct model card (Apache-2.0). Selected scores; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "card2-openchat-openchat-3-5",
+    "name": "OpenChat 3.5 model card (openchat/openchat_3.5)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "Card YAML 'license: apache-2.0' in the same pinned repository that holds the README; the Benchmarks section states all models were evaluated by the OpenChat team except rows marked as taken from reports.",
+    "attribution": "OpenChat team (Guan Wang et al.), OpenChat 3.5 model card (Apache-2.0). Selected scores; percentages converted to fractions. No endorsement.",
+    "icon": "huggingface.co"
+  },
+  {
+    "id": "paper-2404.06395v3",
+    "name": "MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies (Hu et al.)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2404.06395v3"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2404.06395v3",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "The arXiv abstract page for 2404.06395v3 links the licence 'http://creativecommons.org/licenses/by/4.0/'.",
+    "attribution": "Shengding Hu et al. (2024). MiniCPM. arXiv:2404.06395v3. CC BY 4.0. Selected Table 3 cells transcribed; percentages divided by 100. No endorsement.",
+    "icon": "arxiv.org"
+  },
+  {
+    "id": "paper-2311.11045v2",
+    "name": "Orca 2: Teaching Small Language Models How to Reason (Mitra et al., Microsoft)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2311.11045v2"
+    ],
+    "exact": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2311.11045v2",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "quote": "The arXiv abstract page for 2311.11045 links the licence 'http://creativecommons.org/licenses/by/4.0/'.",
+    "attribution": "Arindam Mitra et al. (2023). Orca 2. arXiv:2311.11045v2. CC BY 4.0. Selected Table 1/2 cells transcribed; percentages divided by 100. No endorsement.",
+    "icon": "arxiv.org"
+  },
+  {
+    "action": "new",
+    "id": "visual-rapid-i2v-realism",
+    "name": "Rapidata/image-to-video-realism published dataset-card rankings",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "Dataset card front matter at the pinned revision: license: 'cc-by-4.0' (not gated).",
+    "attribution": "Rapidata. Rapidata image-to-video realism & visual quality Benchmark, Hugging Face dataset Rapidata/image-to-video-realism @ d7abf89e71cb45fff0b08d70df389026cb78024f (2026-10-01), CC BY 4.0. Extracted the published Overall ranking Elo values; model slugs mapped only to the exact named model. No values estimated or rerun. No endorsement; provided as-is.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md",
+    "icon": "huggingface.co",
+    "scope": "Rapidata's own human pairwise study (2,981 head-to-head rows, 522,210 votes, 19 participants, 25 image prompts); only the 'Overall ranking' ELO table is imported. The Photorealism and Visual integrity rankings are sub-leaderboards of the same comparisons and are not imported separately. Withheld: ground_truth_baseline (not a model), hidream-o1-video (no Elo printed, '—'), minimax-h3-max, cosmos-3-super (video), alaya-world, yume-1-5, sana-wm (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-rapid-relative-camera",
+    "name": "Rapidata/relative-camera-movement-human-preference-900k published dataset-card rankings",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "Dataset card front matter: license: 'cc-by-4.0'; Licensing & attribution section: \"Prompts. Written by the dataset creators, released under CC-BY-4.0.\" ... \"Human annotations. Collected via Rapidata, released under CC-BY-4.0.\"",
+    "attribution": "Rapidata. Rapidata Relative Camera Movement Benchmark, Hugging Face dataset Rapidata/relative-camera-movement-human-preference-900k @ e03ac787593bada12ac6b088d3d35da4716517c7 (2026-09-29), CC BY 4.0. Extracted the published Alignment-leaderboard Elo values; model labels mapped only to the exact named model. No values estimated or rerun. No endorsement; provided as-is.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md",
+    "icon": "huggingface.co",
+    "scope": "Rapidata's own human pairwise study (22,691 comparisons, 900,318 votes, 15 models, 220 hand-written prompts on 50 stills). Only the 'Overall ranking (ELO on the Alignment leaderboard)' table is imported; the win-share breakdown table is derived from the same votes. Withheld: MiniMax H3 Max, Cosmos Predict 2.5, Yume 1.5 (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-heim",
+    "name": "HEIM: Holistic Evaluation of Text-to-Image Models (arXiv 2311.04287v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2311.04287v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2311.04287v1 links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads \"License: CC BY 4.0 arXiv:2311.04287v1 [cs.CV] 07 Nov 2023\". Datasheet Q49: \"We own the metadata and release as CC-BY-4.0.\"",
+    "attribution": "Tony Lee, Michihiro Yasunaga, Chenlin Meng, Yifan Mai, Joon Sung Park, Agrim Gupta, Yunzhi Zhang, Deepak Narayanan, Hannah Benita Teufel, Marco Bellagente, Minguk Kang, Taesung Park, Jure Leskovec, Jun-Yan Zhu, Li Fei-Fei, Jiajun Wu, Stefano Ermon, Percy Liang. Holistic Evaluation of Text-to-Image Models, arXiv:2311.04287v1 (7 Nov 2023), CC BY 4.0. Extracted Table 5 Alignment win rates for catalog models; No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2311.04287v1",
+    "icon": "arxiv.org",
+    "scope": "HEIM authors' own evaluation of 26 models (Sec. 6-7, Table 5 'Result summary', aspect win rates). Only the Alignment column is imported (one benchmark per table; HEIM gives no overall score, and Quality/Aesthetics/Reasoning/Knowledge etc. are other aspect columns of the same summary). Withheld rows: 'Stable Diffusion v2 base' and 'v2.1 base' (512px stabilityai/stable-diffusion-2-base and 2-1-base checkpoints per Appendix D, not the 768-v sd-2-0/sd-2-1 catalog entries), 'Openjourney v2' (= Openjourney v4 repo, not in catalog), minDALL-E (Kakao Brain; not in catalog), DALL-E mini, Dreamlike Diffusion 1.0, Redshift, Vintedois, Safe SD x4, Promptist, Lexica, MultiFusion, GigaGAN (not in catalog). The crfm.stanford.edu website data are not used."
+  },
+  {
+    "action": "new",
+    "id": "visual-imagereward",
+    "name": "ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation (arXiv 2304.05977v4)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2304.05977v4"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2304.05977v4 links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads \"License: CC BY 4.0 arXiv:2304.05977v4 [cs.CV] 28 Dec 2023\".",
+    "attribution": "Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong. ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation, arXiv:2304.05977v4 (28 Dec 2023), CC BY 4.0. Extracted Table 1 human-evaluation win counts and author-computed zero-shot COCO FID for catalog models; No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2304.05977v4",
+    "icon": "arxiv.org",
+    "scope": "Authors' own Table 1 (Sec. 2.3) model comparison. Imported: Real-User-Prompts 'Human Eval. #Win' (researcher annotation) and MS-COCO 2014 'Zero-shot FID' computed by the authors (two separate experiments in one table). Not imported: ImageReward/CLIP score columns (automatic metrics, correlated with the human run / same images). Withheld rows: DALL-E 2 FID (caption: 'taken from [42]', copied), 'Stable Diffusion 2.1-base' (512px base checkpoint, not the 768-v sd-2-1 catalog entry), Openjourney (footnote points to the website openjourney.art, checkpoint/version (v1 vs v4) not established). CogView 2 rows marked lab (co-authors Ming Ding, Jie Tang are CogView2 authors)."
+  },
+  {
+    "action": "new",
+    "id": "visual-vvrbench",
+    "name": "Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts (VVRBench), arXiv:2609.35641v1",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.35641v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2609.35641v1 (v1, 28 Sep 2026, only version) links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2609.35641v1 [cs.AI] 28 Sep 2026'.",
+    "attribution": "Shuyue Stella Li, Xiaochuang Han, Yulia Tsvetkov, Luke Zettlemoyer. Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts, arXiv:2609.35641v1 (28 Sep 2026), CC BY 4.0. Extracted Table 3 (VVRBench) and Table 4 (VVRBench-Challenge) overall accuracies, divided by 100; model labels mapped to exact catalogue models via Table 9. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2609.35641v1",
+    "icon": "arxiv.org",
+    "scope": "The authors' own generations and verifier scoring. Imported: Table 3 overall accuracy (VVRBench, 10,000 tasks) and Table 4 overall accuracy (VVRBench-Challenge, 720 tasks). Not imported: complexity-bucket columns (sub-scores of the same run), Table 10 VVRBench-Fast (an 820-task subset of the main split; would double-count GPT-Image-2 / GPT-Image-1-mini), per-constraint Tables 11-12, and the authors' own RLVVR post-trained SD3.5 checkpoints (Tables 5, 14-16). Withheld row: Sana 1.6B (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-chartsync",
+    "name": "ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing (arXiv:2607.10301v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2607.10301v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2607.10301v1 (v1, 11 Jul 2026) links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2607.10301v1 [cs.CV] 11 Jul 2026'.",
+    "attribution": "Jiakang Yu, Yixuan Chai, Tianci Wang, Rihui Jin, Guangkai Xu, Hongtao Deng, Xun Zhu, Wang Gao, Xinrun Guo, Haipang Wu et al. ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing, arXiv:2607.10301v1 (11 Jul 2026), CC BY 4.0. Extracted Table 2 Overall scores, divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2607.10301v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own edits (open models run locally at Table 7 settings, proprietary models via API) and scoring. Only Table 2 'Overall' imported; per-metric columns and VLM Avg are components of it. Withheld: Code-Mediated Pipeline (not a model), DeepGen-1.0, Intern-VL-U, FireRed-Image-Edit-1.0/1.1 (not in catalogue), FLUX.2-Klein-Base-9B (base checkpoint, not the distilled flux-2-klein-9b catalogue entry)."
+  },
+  {
+    "action": "new",
+    "id": "visual-infoedit",
+    "name": "InfoEdit: Probing Global Layout Reasoning in Infographic Editing (arXiv:2609.33286v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.33286v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2609.33286v1 (v1, 27 Sep 2026) links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2609.33286v1 [cs.CV] 27 Sep 2026'.",
+    "attribution": "Cheng Yang, Chufan Shi, Huijuan Wang, Bo Shui, Yaokang Wu, Muzi Tao, Yibo Yan, Xuezhe Ma, Taylor Berg-Kirkpatrick. InfoEdit: Probing Global Layout Reasoning in Infographic Editing, arXiv:2609.33286v1 (27 Sep 2026), CC BY 4.0. Extracted Table 2 'Avg.' success rates, divided by 100; model identities from Table 17. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2609.33286v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own edits and judging. Only Table 2 'Avg.' (mean SR) imported; per-task EC/CP/SR are components. Code-level editing (Table 3) and hint experiments (Table 4) not imported. Withheld: FLUX.2-klein-base-9B (base checkpoint, not the distilled catalogue entry)."
+  },
+  {
+    "action": "new",
+    "id": "visual-paintbench",
+    "name": "PaintBench: Deterministic Evaluation of Precise Visual Editing (arXiv:2606.00188v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.00188v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2606.00188v1 (v1, 29 May 2026) links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2606.00188v1 [cs.GR] 29 May 2026'.",
+    "attribution": "Kai Xu, Ellis Brown, Shrikar Madhu, Rob Fergus, He He, Saining Xie (New York University). PaintBench: Deterministic Evaluation of Precise Visual Editing, arXiv:2606.00188v1 (29 May 2026), CC BY 4.0. Extracted Table 1 'Benchmark Avg.' mIoU, divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2606.00188v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own edits and deterministic pixel scoring. Only Table 1 'Benchmark Avg.' imported (per-task and category rows are components). TinyGrafixBench (Table 3), a companion data-visualisation suite built to correlate with PaintBench, and the visual-condition study (Table 2) are not imported. Withheld: HunyuanImage-3.0 (run with 8-step distilled sampling for editing; base vs -Instruct / distilled checkpoint not established)."
+  },
+  {
+    "action": "new",
+    "id": "visual-mechverse",
+    "name": "MechVerse: Evaluating Physical Motion Consistency in Video Generation Models (arXiv:2605.14843v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.14843v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2605.14843v1 (v1, 14 May 2026) links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2605.14843v1 [cs.CV] 14 May 2026'.",
+    "attribution": "Rahul Jain, Mayank Patel, Asim Unmesh, Karthik Ramani (Purdue University). MechVerse: Evaluating Physical Motion Consistency in Video Generation Models, arXiv:2605.14843v1 (14 May 2026), CC BY 4.0. Extracted Table 1 WorldModelBench 'Sum' scores, divided by 10. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2605.14843v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations on the MechVerse test split, scored with the WorldModelBench judge. Only Table 1 'Sum' imported; VBench-I2V columns and the WorldModelBench sub-scores are not. Withheld: CogVideoX-1.5 (5B) (I2V checkpoint not in catalogue), LTX-2 (22B) (LTX-2 is 19B; 22B matches LTX-2.3, so identity unclear), LTX-Video (13B) (0.9.7/0.9.8 13B not in catalogue), VideoCrafter (version unstated), DynamiCrafter, ConsistI2V (not in catalogue), and the authors' MechVerse fine-tunes."
+  },
+  {
+    "action": "new",
+    "id": "visual-rapid-benchai-image",
+    "name": "Rapidata/text-to-image-human-preference-6M (Benchmark.ai Image Benchmark) published dataset-card rankings",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "Dataset card front matter at revision 2f602f465ad418ac886f2fde92ba42b85e1369db: 'license: cc-by-4.0'. Licensing & attribution section: 'Human annotations. Collected via Rapidata, released under CC-BY-4.0.' (Rapidata-original and community prompts also CC-BY-4.0; generated images governed by each provider's terms and not used.)",
+    "attribution": "Rapidata. Benchmark.ai Image Benchmark, Hugging Face dataset Rapidata/text-to-image-human-preference-6M @ 2f602f465ad418ac886f2fde92ba42b85e1369db (2026-10-01), CC BY 4.0. Extracted the published Overall ranking ELO values; model labels mapped only to exact catalogue models. No values estimated or rerun. No endorsement; provided as-is.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md",
+    "icon": "huggingface.co",
+    "scope": "Rapidata's own human pairwise study (43 T2I models). Only the 'Overall ranking' ELO column is imported; the Alignment/Preference/Coherence/Text coherence columns and the by-output-type/capability tables are slices of the same votes. The benchmark.ai website is not used. Withheld: Grok Image Imagine 2.0 (Medium); Qwen-Image-3.0; Grok Image Imagine 2.0 (Thinking); Imagen 3; Imagen 4 Fast; Pruna-P-Ideogram (High); Pruna-P-Ideogram (Low); Pruna-P-Ideogram (Medium); Pruna-P-Ideogram (Very Low) (setting variants without a separate catalogue entry, models not in the catalogue, or identity unclear: 'Qwen-Image-3.0' lacks the 'Pro' that the card uses for other Pro tiers, so it is not mapped to qwen-image-3-0-pro; 'Imagen 3' does not say imagen-3.0-generate-001 vs -002)."
+  },
+  {
+    "action": "new",
+    "id": "visual-rapid-face",
+    "name": "Rapidata/Face_Generation_Benchmark (Human Face Generation Alignment) published dataset-card leaderboard",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md"
+    ],
+    "exact": true,
+    "license": "CDLA-Permissive-2.0",
+    "license_url": "/licenses/visual-rapid-face-CDLA-Permissive-2.0.txt",
+    "terms_url": "https://cdla.dev/permissive-2-0/",
+    "quote": "Dataset card front matter at revision c6ed7eab14620db5daa77aec0feda5992091f5b3: 'license: cdla-permissive-2.0'. CDLA-Permissive-2.0 s.1.1: 'A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.' s.2.1: 'A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.' s.3.1: 'This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.' Keep the agreement text in licenses/.",
+    "attribution": "Rapidata. Rapidata Human Face Generation Alignment, Hugging Face dataset Rapidata/Face_Generation_Benchmark @ c6ed7eab14620db5daa77aec0feda5992091f5b3, CDLA-Permissive-2.0. Extracted the published leaderboard scores; Replicate model ids mapped only to exact catalogue models. No values estimated or rerun. No endorsement; provided as-is.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md",
+    "icon": "huggingface.co",
+    "scope": "Rapidata's own human pairwise study (12 T2I models). Only the card's leaderboard 'score' column imported. The app.rapidata.ai live leaderboard is not used. Withheld (not in catalogue): minimax/image-01; google/imagen-4-fast; prunaai/wan-2.2-image; bria/image-3.2; luma/photon-flash."
+  },
+  {
+    "action": "new",
+    "id": "visual-videoargus",
+    "name": "VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing (arXiv:2608.05485v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2608.05485v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2608.05485v1 (v1, 6 Aug 2026) links the licence http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2608.05485v1 [cs.CV] 06 Aug 2026'.",
+    "attribution": "Ziyun Zeng, Zixuan Wang, Yongsheng Yu, Hang Hua, Jiebo Luo (University of Rochester). VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing, arXiv:2608.05485v1 (6 Aug 2026), CC BY 4.0. Extracted Table 2 T2V and TI2V VideoArgus scores, divided by 10. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2608.05485v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations and VideoArgus scoring on VideoArgus-Bench. Imported: Table 2 T2V and TI2V leaderboards (two tasks with different inputs). Not imported: TS2V, TV2V, TSV2V leaderboards (subject/video-conditioned generation and editing; few catalogue models). Withheld: Kling v3 Omni (Kling 3.0 Omni / O3 tier not stated), OmniWeaving, Step-Video, SANA-Video (not in catalogue), CogVideoX1.5 in TI2V (I2V checkpoint not in catalogue), LTX-Video 2B (0.9.x version not stated)."
+  },
+  {
+    "action": "new",
+    "id": "visual-datapoint-image-bench",
+    "name": "Datapoint Image Bench leaderboard (datapointai/text-2-image-human-preferences-2m dataset card)",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/datapointai/text-2-image-human-preferences-2m/blob/e1d8719a2d521eac6c62ee84f329afc2c03ec928/README.md"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "Card front matter at revision e1d8719a2d521eac6c62ee84f329afc2c03ec928: 'license: cc-by-4.0'. Card 'License' section: 'Votes, prompts, and all metadata are released under CC-BY-4.0. The images are outputs of the listed third-party models...' Access-gate prompt: 'You agree to use this dataset under the CC-BY-4.0 license with attribution to Datapoint AI, and you agree not to attempt to re-identify annotators.' Only the public card (and its leaderboard chart) is used; the gated files were not accessed.",
+    "attribution": "Datapoint AI. Text-to-Image Human Preferences 2M: the Datapoint Image Bench voting record, Hugging Face dataset datapointai/text-2-image-human-preferences-2m @ e1d8719a2d521eac6c62ee84f329afc2c03ec928, CC BY 4.0. Overall Elo values transcribed from the card's leaderboard chart (board of 2026-08-19); labels mapped only to exact catalogue models. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://huggingface.co/datasets/datapointai/text-2-image-human-preferences-2m/blob/e1d8719a2d521eac6c62ee84f329afc2c03ec928/README.md",
+    "icon": "huggingface.co",
+    "scope": "Datapoint's own blind human pairwise study (30 T2I models). Only the overall Elo board in the card chart is imported; the trydatapoint.com live leaderboard is not used. The chart's x-axis rank numbers skip 21 and repeat 23, but the 30 printed values are in bar order. Withheld: Grok Imagine (quality; Recraft V4.1 Utility; Vidu Q2; Bria FIBO; Luma UNI 1 Max; ImagineArt 2.0; Cosmos 3 Super; Image-01; Kolors 2.1 (truncated or ambiguous labels - 'Grok Imagine (quality', 'Recraft V4.1 Utility' vs catalogue Utility Pro, 'Luma UNI 1 Max' vs Uni-1.1 Max, 'Cosmos 3 Super' vs Cosmos3-Super-Text2Image, 'Kolors 2.1' vs catalogue Kolors 1.0 - or not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-datapoint-video-bench",
+    "name": "Datapoint Video Bench leaderboard (datapointai/text-to-video-human-preferences-326k dataset card)",
+    "kind": "dataset",
+    "match": [
+      "huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "Card front matter at revision 49295b5d625c04480c92c33a2b4c502bf571110b: 'license: cc-by-4.0'. Card 'License' section: 'Votes, prompts, and all metadata are released under CC-BY-4.0. The videos are outputs of the listed third-party models...' Access-gate prompt: 'You agree to use this dataset under the CC-BY-4.0 license with attribution to Datapoint AI, and you agree not to attempt to re-identify annotators.' Only the public card's leaderboard table is used; gated files not accessed.",
+    "attribution": "Datapoint AI. Text-to-Video Human Preferences 326K: the Datapoint Video Bench voting record, Hugging Face dataset datapointai/text-to-video-human-preferences-326k @ 49295b5d625c04480c92c33a2b4c502bf571110b, CC BY 4.0. Extracted the card's Overall Elo table; labels mapped only to exact catalogue models. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md",
+    "icon": "huggingface.co",
+    "scope": "Datapoint's own blind human pairwise study (15 T2V models). Only the card's 'Leaderboard' Elo table imported; the trydatapoint.com live board is not used. Withheld (not in catalogue): MiniMax H3 Max; P-Video-2-Pro; PixVerse V6; Ray 3.2; Pika 2.5."
+  },
+  {
+    "action": "new",
+    "id": "visual-evalalign",
+    "name": "EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models (arXiv:2406.16562v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2406.16562v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2406.16562v3 (latest version v3, 10 Oct 2024) links http://creativecommons.org/licenses/by/4.0/; the v3 HTML header reads 'License: CC BY 4.0 arXiv:2406.16562v3 [cs.CV] 10 Oct 2024'.",
+    "attribution": "Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Mengping Yang, Cheng Zhang, Hao Li (Shanghai Academy of AI for Science / CMU / Fudan). EvalAlign, arXiv:2406.16562v3 (10 Oct 2024), CC BY 4.0. Extracted Table 3 'Human' text-image alignment scores. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2406.16562v3",
+    "icon": "arxiv.org",
+    "scope": "Authors' own human annotation of images generated by 24 models on 100 prompts. Only Table 3 'Human' (text-image alignment) imported; Table 2 (image faithfulness, same images) and automatic metric columns not imported. Withheld: SDXL Refiner v1.0, LCM LoRA SDXL, Wuerstchen (version unstated), Safe SD variants, Openjourney v2 (ilkerc/openjourney-v2), Redshift, Dreamlike Diffusion v1.0, Vintedois, MultiFusion (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-sdxl-lightning",
+    "name": "SDXL-Lightning: Progressive Adversarial Diffusion Distillation (arXiv:2402.13929v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2402.13929v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2402.13929v3 (latest version v3, 2 Mar 2024) links http://creativecommons.org/licenses/by/4.0/; the v3 HTML header reads 'License: CC BY 4.0'.",
+    "attribution": "Shanchuan Lin, Anran Wang, Xiao Yang (ByteDance). SDXL-Lightning: Progressive Adversarial Diffusion Distillation, arXiv:2402.13929v3 (2 Mar 2024), CC BY 4.0. Extracted Table 2 FID (Whole) for one step setting per catalogue model. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2402.13929v3",
+    "icon": "arxiv.org",
+    "scope": "Authors' own COCO-10K FID evaluation (ByteDance; SDXL-Lightning rows are lab-reported). Only FID (Whole) imported, one row per catalogue model at its default step count: SDXL 32 steps, LCM 4 steps, SDXL-Turbo 1 step, SDXL-Lightning 4-step UNet. Not imported: LCM 1-step, LCM-LoRA, Turbo 4-step, Lightning 1/2/8-step and LoRA rows (other checkpoints or settings), FID-Patch, CLIP."
+  },
+  {
+    "action": "new",
+    "id": "visual-cosmos3-report",
+    "name": "Cosmos 3: Omnimodal World Models for Physical AI (arXiv:2606.02800v4)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2606.02800v4"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2606.02800v4 (latest version v4, 23 Jun 2026) links http://creativecommons.org/licenses/by/4.0/; the v4 HTML header reads 'License: CC BY 4.0'.",
+    "attribution": "NVIDIA. Cosmos 3: Omnimodal World Models for Physical AI, arXiv:2606.02800v4 (23 Jun 2026), CC BY 4.0. Extracted Table 11 UniGenBench 'All (1170)' scores, divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2606.02800v4",
+    "icon": "arxiv.org",
+    "scope": "NVIDIA's own evaluation (Cosmos rows lab-reported). Only Table 11 UniGenBench 'All' imported; Orig/Phys splits are components, CVTG and image-level metrics (Aesv2, HPSv3) not imported, and the video tables (PAIBench-G, RBench) and Artificial Analysis leaderboard mentions are not used. Withheld: Cosmos3-Super (omnimodel checkpoint, not in catalogue), Cosmos3-Nano (catalogued as a video model; its image row is not mapped)."
+  },
+  {
+    "action": "new",
+    "id": "visual-mindworldbench",
+    "name": "MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation (arXiv:2609.39147v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.39147v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2609.39147v1 (v1, 30 Sep 2026) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2609.39147v1 [cs.CV] 30 Sep 2026'.",
+    "attribution": "Ruiqi Li, Xuanyi Liu et al. (Peking University / USTB). MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation, arXiv:2609.39147v1 (30 Sep 2026), CC BY 4.0. Extracted Table 1 Intention Accuracy, divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2609.39147v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations (11 I2V systems) and Gemini 3.1 Pro judging. Only Table 1 Intention Accuracy (the benchmark's target capability) imported; Visual Quality, Commonsense Plausibility and World-State Maintenance columns not imported (same videos). Withheld: Kling (table 'Kling', text 'KlingV3', reference the Kling-Omni report, so Kling 3.0 vs Kling 3.0 Omni is unclear)."
+  },
+  {
+    "action": "new",
+    "id": "visual-vigor-bench",
+    "name": "ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? (arXiv:2603.25823v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2603.25823v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2603.25823v1 (v1, 26 Mar 2026, only version) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2603.25823v1 [cs.CV] 26 Mar 2026'.",
+    "attribution": "Haonan Han et al. (Tsinghua University / Meituan M17 / HKU / SIAT). ViGoR-Bench, arXiv:2603.25823v1 (26 Mar 2026), CC BY 4.0. Extracted Table 3 Result Metric Avg, divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2603.25823v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations and Gemini-2.5-Pro judging. Imported: Table 3 Result Metric Avg, split into an image-model run (without CoT) and a video-generator run. Not imported: Process metrics, CoT rows, SFT/RL ablations (Table 4). Meituan co-authors the report, so LongCat-Image-Edit is lab. Withheld: Step1X-Edit (version unstated), HiDream-E1.1, ICEdit, UniPic2-M-9B, Ovis-U1-3B (not in catalogue), Wan 2.2 (variant unstated), Kling 1.6 (tier unstated)."
+  },
+  {
+    "action": "new",
+    "id": "visual-phyground",
+    "name": "PhyGround: Benchmarking Physical Reasoning in Generative World Models (arXiv:2605.10806v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.10806v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2605.10806v1 (v1, 11 May 2026) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2605.10806v1 [cs.CV] 11 May 2026'.",
+    "attribution": "Juyi Lin et al. (Northeastern University / Tulane / University of Washington). PhyGround, arXiv:2605.10806v1 (11 May 2026), CC BY 4.0. Extracted Table 2 human Overall scores (1-5), divided by 5. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2605.10806v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations and human annotation (352 annotators after QC). Only Table 2 'Overall' imported. Withheld: OmniWeaving, Cosmos-Predict2.5-14B and -2B (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-edival",
+    "name": "EdiVal-Agent: An Object-Centric Framework for Automated, Fine-Grained Evaluation of Multi-Turn Editing (arXiv:2509.13399v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2509.13399v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2509.13399v3 (latest version v3, 17 Mar 2026) links http://creativecommons.org/licenses/by/4.0/; the v3 HTML header reads 'License: CC BY 4.0 arXiv:2509.13399v3 [cs.CV] 17 Mar 2026'.",
+    "attribution": "Tianyu Chen, Yasi Zhang et al. (EdiVal-Agent authors). EdiVal-Agent, arXiv:2509.13399v3 (17 Mar 2026), CC BY 4.0. Extracted Table 3 EdiVal-O at turn 3, divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2509.13399v3",
+    "icon": "arxiv.org",
+    "scope": "Authors' own multi-turn edits with default settings (Appendix M.5) and automatic scoring. Only Table 3 EdiVal-O at T3 imported (the ranking column). Withheld: Gemini 2.0 Flash (API model id not stated; experimental vs preview image generation unclear), Step1X-Edit (stepfun-ai/Step1X-Edit v1.0 repo, not in catalogue), OmniGen (v1), AnyEdit, UltraEdit, MagicBrush (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-weavebench",
+    "name": "WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation (arXiv:2511.11434v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2511.11434v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2511.11434v1 (v1, 14 Nov 2025, only version) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0'.",
+    "attribution": "Wei Chow, Jiachun Pan et al. (WEAVE authors). WEAVE, arXiv:2511.11434v1 (14 Nov 2025), CC BY 4.0. Extracted Table 2 WEAVEBench Avg for selected editors. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2511.11434v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own runs and GPT-4.1 judging. Only Table 2 'Avg' imported for image editors. Withheld: understanding-only VLM rows (Intern3.5-VL, Qwen3-VL, GPT-4o, GPT-4.1), Seedream 4.0 and Nano Banana (two rows each, settings not resolvable from the parsed table), AnyEdit, UltraEdit, VAREdit, OmniGen v1, Ovis-U1, UniPic, UniPic2, NextStep-1, Bagel-Zebra and the authors' WEAVE-100k fine-tune (not in catalogue or not a catalogue checkpoint)."
+  },
+  {
+    "action": "new",
+    "id": "visual-knowledge-visualization",
+    "name": "Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation (arXiv:2604.22302v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.22302v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2604.22302v1 (v1, 24 Apr 2026, only version) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2604.22302v1 [cs.CV] 24 Apr 2026'.",
+    "attribution": "Ran Zhao, Sheng Jin, Size Wu, Kang Liao et al. (HUST / HKU / NTU S-Lab). Knowledge Visualization, arXiv:2604.22302v1 (24 Apr 2026), CC BY 4.0. Extracted Table 2 Brief Caption Overall (English), divided by 100. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2604.22302v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations and MLLM scoring. Only Table 2 'Overall' English column imported. Withheld: 'GPT-Image' (version unstated; cited reference is the DALL-E 3 report), Janus-Pro and show-o2 (sizes unstated), Z-Image (base vs turbo unstated), and the authors' Qwen-Image + KE-Check method."
+  },
+  {
+    "action": "new",
+    "id": "visual-hp-edit",
+    "name": "HP-Edit: A Human-Preference Post-Training Framework for Image Editing (arXiv:2604.19406v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.19406v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2604.19406v1 (v1, 21 Apr 2026, only version) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2604.19406v1 [cs.CV] 21 Apr 2026'.",
+    "attribution": "Fan Li, Chonghuinan Wang, Lina Lei et al. (Huawei Noah's Ark Lab / HIT / Nankai). HP-Edit, arXiv:2604.19406v1 (21 Apr 2026), CC BY 4.0. Extracted Table 1 RealPref-Bench 'Human' user-study scores, divided by 5. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2604.19406v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own edits and five-annotator user study. Only Table 1 'Human' imported; HP-score columns (VLM scorer), GEdit-Bench tables (values match other papers' published numbers) and the authors' HP-Edit model are not imported. Withheld: Step1X-Edit (version unstated), X2Edit (not in catalogue)."
+  },
+  {
+    "action": "new",
+    "id": "visual-switch-bench",
+    "name": "SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios (arXiv:2511.17649v5)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2511.17649v5"
+    ],
+    "exact": true,
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2511.17649v5 (latest version v5, 7 Jul 2026) links http://creativecommons.org/licenses/by-sa/4.0/; the v5 HTML header reads 'License: CC BY-SA 4.0'. ShareAlike applies to the adapted numerical material.",
+    "attribution": "Juntao Cheng, Wanyue Zhang et al. (BAAI, SWITCH authors). SWITCH, arXiv:2511.17649v5 (7 Jul 2026), CC BY-SA 4.0. Extracted Table 3 single-image-to-video VLM-as-Judge Overall scores, divided by 5. This adaptation is licensed CC BY-SA 4.0. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2511.17649v5",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations and Gemini 3.1 Pro judging (generative track only; the MCQ/OpenQA tables evaluate understanding models and are not used). Only the I2V VLM Overall column imported. Withheld: Wan 2.2 (variant not stated). The HF Space leaderboard is not used."
+  },
+  {
+    "action": "new",
+    "id": "visual-wrop-object-permanence",
+    "name": "Training Object Permanence in World Models (WROP exam; arXiv:2609.28654v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2609.28654v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+    "quote": "arXiv abs page https://arxiv.org/abs/2609.28654v1 (v1, 23 Sep 2026, only version) links http://creativecommons.org/licenses/by/4.0/; the HTML header reads 'License: CC BY 4.0 arXiv:2609.28654v1 [cs.AI] 23 Sep 2026'.",
+    "attribution": "Haotian Zhang, Fengyuan Yu et al. (USC / CMU / UMich / JHU / UCSD). Training Object Permanence in World Models, arXiv:2609.28654v1 (23 Sep 2026), CC BY 4.0. Extracted Table 2 human Elo. No values estimated or rerun. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "evidence_url": "https://arxiv.org/abs/2609.28654v1",
+    "icon": "arxiv.org",
+    "scope": "Authors' own generations and blind human pairwise study. Only Table 2 overall Elo imported; per-family Elo (Table 6) and automatic metrics (Table 3) not imported. Withheld: PWM-WROP (authors' model), Wan 3.0 Prime (tier not in catalogue), Runway Aleph 2 (not catalogued; catalogue has Aleph), Grok Imagine (video extend) (version unstated), LTX-2.3 Extend and LTX-2.3 Dev (two interface variants of one model), Cosmos3 Super, MAGI-1, Wan-VACE, HY-OmniWeaving (not in catalogue)."
+  },
+  {
+    "id": "first-party-rev",
+    "name": "Rev AI official pricing and documentation",
+    "match": [
+      "rev.ai/pricing"
+    ],
+    "kind": "first-party",
+    "license": "Factual list price (not licensed content)",
+    "terms_url": "https://www.rev.ai/pricing",
+    "verdict": "allowed",
+    "checked": "2026-10-07",
+    "exact": true,
+    "icon": "rev.ai",
+    "attribution": "Rev AI official pricing page, observed 2026-10-07",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped."
+  },
+  {
+    "id": "first-party-prime-rl",
+    "name": "PRIME-RL official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "PRIME-RL official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-berkeley-nest",
+    "name": "Berkeley NEST official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/berkeley-nest/Starling-LM-7B-alpha/blob/1dddf3b95bc1391f6307299eb1c162c194bde9bd/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/berkeley-nest/Starling-LM-7B-alpha/blob/1dddf3b95bc1391f6307299eb1c162c194bde9bd/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "Berkeley NEST official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-nexusflow",
+    "name": "Nexusflow official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Nexusflow/Athene-V2-Chat/blob/493f1bbd561a5a7e3d27c4081d4ee47508bf6831/config.json",
+      "huggingface.co/Nexusflow/Starling-LM-7B-beta/blob/39a4d501472dfede947ca5f4c5af0c1896d0361b/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/Nexusflow/Athene-V2-Chat/blob/493f1bbd561a5a7e3d27c4081d4ee47508bf6831/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "Nexusflow official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-upstage",
+    "name": "Upstage official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0/blob/090d405e6fe7b4c7b0b999a67f5c6dee0514a7ad/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0/blob/090d405e6fe7b4c7b0b999a67f5c6dee0514a7ad/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "Upstage official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-internlm",
+    "name": "InternLM (Shanghai AI Lab) official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/internlm/internlm2_5-20b-chat/blob/13741228cfb01d3a69c8f83169a105de77286b8a/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/internlm/internlm2_5-20b-chat/blob/13741228cfb01d3a69c8f83169a105de77286b8a/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "InternLM (Shanghai AI Lab) official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-llava",
+    "name": "LLaVA official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/liuhaotian/llava-v1.6-34b/blob/6754aa86582435ae12ef47db2de51180f0968aa7/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/liuhaotian/llava-v1.6-34b/blob/6754aa86582435ae12ef47db2de51180f0968aa7/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "LLaVA official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-phind",
+    "name": "Phind official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/Phind/Phind-CodeLlama-34B-v2/blob/949f61e203f91b412efe8f679c798f09f0ff4b0c/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/Phind/Phind-CodeLlama-34B-v2/blob/949f61e203f91b412efe8f679c798f09f0ff4b0c/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "Phind official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-wizardlm",
+    "name": "WizardLM official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/WizardLM/WizardCoder-33B-V1.1/blob/22d03e16bd052cec88228e17e832f851391e3565/config.json",
+      "huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/config.json",
+      "huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0/blob/897fc6d9e12136c68c441b2350d015902c144b20/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/WizardLM/WizardCoder-33B-V1.1/blob/22d03e16bd052cec88228e17e832f851391e3565/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "WizardLM official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
+  },
+  {
+    "id": "first-party-open-thoughts",
+    "name": "Open Thoughts official model cards and configuration",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/open-thoughts/OpenThinker3-7B/blob/864fb9aefbb91f257c4911e4b9f85a6986f8eab2/config.json"
+    ],
+    "exact": true,
+    "license": "Factual first-party specification (not licensed content)",
+    "terms_url": "https://huggingface.co/open-thoughts/OpenThinker3-7B/blob/864fb9aefbb91f257c4911e4b9f85a6986f8eab2/config.json",
+    "quote": "Owner policy 2026-09-25: the vendor's own published list price/context limit for its own service, recorded manually as a fact with link and observation date; no page text or compilation reproduced; not scraped. Extended 2026-10-06 (llm-context lane) to the maker's own pinned model card / official technical report / official docs stating the context window of its own model; never used for benchmark scores.",
+    "attribution": "Open Thoughts official model cards and configuration, observed 2026-10-07",
+    "verdict": "allowed",
+    "checked": "2026-10-07"
   }
 ]

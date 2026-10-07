@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 16B params · openmdw-1.1
 
-**score 50.6** ±6.6 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.7** ±3.7 · #56 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.6%    49.1   2026-08-10   60% ▇▇▇▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    55.6   2026-06-17   22% ▇▇▇
-prior                   pull toward the middle                   49.9                19% ▇▇
-                        weighted average                       = 50.6
+<a name="visual-rapid-i2v-realism"></a>Rapidata/image-to-vid…  <a href="https://huggingface.co/datasets/Rapidata/image-to-video-realism/blob/d7abf89e71cb45fff0b08d70df389026cb78024f/README.md#overall-ranking">Rapidata image-to-video reali…</a>  717.1    36.2   2026-10-01   38% ▇▇▇▇▇
+<a name="visual-rapid-relative-camera"></a>Rapidata/relative-cam…  <a href="https://huggingface.co/datasets/Rapidata/relative-camera-movement-human-preference-900k/blob/e03ac787593bada12ac6b088d3d35da4716517c7/README.md#overall-ranking-elo-on-the-alignment-leaderboard">Rapidata relative camera move…</a>  717.5    49.1   2026-09-29   31% ▇▇▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  44.6%    49.5   2026-08-10   18% ▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>  29.1%    56.4   2026-06-17    6% ▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 44.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
+<sub>Licences: Rapidata/image-to-video-realism published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/relative-camera-movement-human-preference-900k published dataset-card rankings ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt)) · Physics-IQ Verified ([CC-BY-4.0](../../licenses/visual-physics-verified.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version               needs  score
+bf16 · nvidia only  ~42.4GB   44.7
+</pre>
+
+```sh
+# bf16 · nvidia only
+uvx --from huggingface_hub hf download nvidia/Cosmos3-Nano assets/ --local-dir Cosmos3-Nano && cd Cosmos3-Nano && uv run --python 3.13 --with git+https://github.com/huggingface/diffusers --with accelerate --with av --with cosmos_guardrail --with huggingface_hub --with imageio --with imageio-ffmpeg --with torch --with torchvision --with transformers python -c "import json, torch; from diffusers import Cosmos3OmniPipeline; from diffusers.schedulers.scheduling_unipc_multistep import UniPCMultistepScheduler; from diffusers.utils import export_to_video; p=Cosmos3OmniPipeline.from_pretrained('nvidia/Cosmos3-Nano', torch_dtype=torch.bfloat16, device_map='cuda', enable_safety_checker=True); p.scheduler=UniPCMultistepScheduler.from_config(p.scheduler.config, flow_shift=10.0); r=p(prompt=json.dumps(json.load(open('assets/example_t2v_prompt.json'))), negative_prompt=json.dumps(json.load(open('assets/negative_prompt.json'))), num_frames=189, height=720, width=1280, num_inference_steps=35, guidance_scale=6.0, generator=torch.Generator(device='cuda').manual_seed(123)); export_to_video(r.video, 'cosmos3_nano_t2v.mp4', fps=24)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosmos3-nano) · [JSON](https://whatmodel.sh/api?format=json&all=1)

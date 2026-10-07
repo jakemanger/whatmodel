@@ -6,9 +6,7 @@
 
 Microsoft · released 2024-05 · 7.39B params · mit
 
-**score 39.4** ±1.9 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 41.0** ±1.8 · #367 of 548 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1171.0    35.9   2026-10-02   45% ▇▇▇▇▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   29.8%    41.7   2024-11-14   42% ▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.8%    43.3   2024-05-21   12% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 39.4
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1171.0    37.8   2026-10-02   44% ▇▇▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   29.8%    43.0   2024-11-14   40% ▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.8%    44.7   2024-05-21   14% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 41.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,6 +27,16 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                       size  score
+16-bit bf16 · nvidia only  ~14.78GB   41.0
+</pre>
+
+```sh
+# 16-bit bf16 · nvidia only
+pip install tiktoken==0.6.0 triton==2.3.0 transformers==4.40.2 torch && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline; r='microsoft/Phi-3-small-8k-instruct'; d=torch.cuda.current_device(); m=AutoModelForCausalLM.from_pretrained(r, torch_dtype='auto', trust_remote_code=True).to(d); t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); print(pipeline('text-generation', model=m, tokenizer=t, device=d)([{'role': 'user', 'content': 'What about solving an 2x + 3 = 7 equation?'}], max_new_tokens=500, return_full_text=False, do_sample=False)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/phi-3-small-8k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

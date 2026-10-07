@@ -6,7 +6,7 @@
 
 NVIDIA · released 2022-09 · 0.12B params · cc-by-4.0
 
-**score 45.9** ±4.7 · #85 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.3** ±3.6 · #83 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,21 +15,23 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.4%    45.5   2026-03-26   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 8% ▇
-                      weighted average                       = 45.9
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  15.4%    44.7   2026-03-26   49% ▇▇▇▇▇▇
+<a name="speech-nemo-asr-scores-apache"></a>NVIDIA NeMo docs: ASR…  <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-other WER (l…</a>   3.7%    49.0   2023-07-22   38% ▇▇▇▇▇
+                        <a href="https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/docs/source/asr/data/scores/en/conformer_en.csv">LibriSpeech test-clean WER (l…</a>   1.7%    53.2   2023-07-22    9% ▇
+prior                   pull toward the middle                   49.7                 5% ▇
+                        weighted average                       = 47.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · NVIDIA NeMo docs: ASR scores tables ([Apache-2.0](https://github.com/NVIDIA/NeMo/blob/6f20e61e4d11ce4dafc0f037c3bad535e1ac3ea9/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~1.08GB   45.9
+fp32 · nvidia only  ~1.08GB   47.3
 </pre>
 
 ```sh

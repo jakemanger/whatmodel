@@ -6,9 +6,7 @@
 
 EleutherAI · released 2021-03 · 0.125B params · mit
 
-**score 24.6** ±3.6 · #445 of 462 · from 3 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 22.3** ±3.8 · #530 of 548 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source  test                            score  implies  date        weight
-<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%    23.5   2022-12-07   59% ▇▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%    22.5   2022-12-07   35% ▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%  -160.2   2022-12-07    0% ▇
+<a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%    20.7   2022-12-07   51% ▇▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  28.8%    20.1   2022-12-07   43% ▇▇▇▇▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.6%  -162.5   2022-12-07    0% ▇
 prior   pull toward the middle                   50.0                 6% ▇
-        weighted average                       = 24.6
+        weighted average                       = 22.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,9 +27,11 @@ prior   pull toward the middle                   50.0                 6% ▇
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/EleutherAI/gpt-neo-125m/blob/21def0189f5705e2521767faed922f1f15e7d7db/config.json): EleutherAI official configuration for gpt-neo-125m (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download       size  score
-4-bit fp32  ~0.53GB   24.6
+4-bit fp32  ~0.53GB   22.3
 </pre>
 
 ```sh

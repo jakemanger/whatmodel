@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 67.4** ±1.6 · #17 of 76 · from 4 benchmark results across 3 sources
+**score 66.8** ±1.6 · #19 of 87 · from 6 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1337.2    66.0   2026-09-22   48% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1428.2    72.5   2026-09-22   29% ▇▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1009.0    64.3   2026-09-25   16% ▇▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   35.7%    65.3   2026-08-26    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1337.2    65.8   2026-09-22   43% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1428.2    72.7   2026-09-22   26% ▇▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1009.0    64.4   2026-09-25   17% ▇▇
+<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>   34.4%    59.5   2026-07-07    5% ▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   35.7%    65.9   2026-08-26    5% ▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>   75.9%    64.4   2026-05-14    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 67.4
+                        weighted average                        = 66.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

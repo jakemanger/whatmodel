@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-01 · 7B params · nvidia-open-model
 
-**score 45.2** ±4.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.8** ±4.2 · #55 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    44.8   2026-01-30   93% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-videophy-readme"></a>VideoPhy / VideoPhy-2…  <a href="https://github.com/Hritikbansal/videophy/blob/01d366c979e4a82875852adbf427ccc036e7373a/VIDEOPHY2/README.md#human-leaderboard-">VideoPhy-2 (human, joint SA &amp;…</a>  24.1%    44.4   2026-01-30   93% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 45.2
+                        weighted average                       = 44.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -25,6 +25,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version               needs  score
+bf16 · nvidia only  ~29.8GB   44.8
+</pre>
+
+```sh
+# bf16 · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate --with imageio-ffmpeg --with cosmos_guardrail python -c "import torch; from diffusers import CosmosTextToWorldPipeline; from diffusers.utils import export_to_video; p=CosmosTextToWorldPipeline.from_pretrained('nvidia/Cosmos-1.0-Diffusion-7B-Text2World', torch_dtype=torch.bfloat16); p.to('cuda'); export_to_video(p(prompt='A sleek, humanoid robot stands in a vast warehouse filled with neatly stacked cardboard boxes on industrial shelves.').frames[0], 'output.mp4', fps=30)"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cosmos-1-0-diffusion-7b-text2world) · [JSON](https://whatmodel.sh/api?format=json&all=1)

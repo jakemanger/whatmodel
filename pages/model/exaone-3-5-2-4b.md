@@ -6,19 +6,18 @@
 
 LG AI Research · released 2024-12 · 2.41B params · exaone
 
-**score 29.1** ±4.2 · #428 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 33.5** ±3.7 · #466 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    27.3   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior             pull toward the middle                   50.0                 8% ▇
-                  weighted average                       = 29.1
+source                  test                            score  implies  date        weight
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  33.4%    29.2   2026-08-11   71% ▇▇▇▇▇▇▇▇▇
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/blob/ccce25bd39c141fe053e0bc75818a8f5fe962802/README.md#evaluation">IFEval (aggregation unspecifi…</a>  73.6%    42.5   2024-12-01   23% ▇▇▇
+prior                   pull toward the middle                   50.0                 6% ▇
+                        weighted average                       = 33.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +30,8 @@ prior             pull toward the middle                   50.0                 
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.95GB   29.1
-8-bit q8_0    ~3.39GB   29.1
+4-bit q4_k_m  ~1.95GB   33.5
+8-bit q8_0    ~3.39GB   33.5
 </pre>
 
 ```sh

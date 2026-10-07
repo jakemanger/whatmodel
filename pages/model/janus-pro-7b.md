@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 7B params · deepseek
 
-**score 33.4** ±2.5 · #103 of 116 · from 4 benchmark results across 3 sources
+**score 34.1** ±2.5 · #115 of 136 · from 4 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    34.6   2026-07-01   54% ▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    30.9   2026-06-02   25% ▇▇▇
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   80.0%    32.5   2025-01-29   10% ▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 84.2%    28.6   2025-01-29    8% ▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       42.3%    35.2   2026-07-01   57% ▇▇▇▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  35.0%    31.1   2026-06-02   21% ▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   80.0%    33.2   2025-01-29   11% ▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 84.2%    29.5   2025-01-29    8% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 33.4
+                        weighted average                       = 34.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,6 +34,16 @@ api (DeepInfra) · $0.0020/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <sub>[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-7B): USD per generated image on DeepInfra (model page header '$0.002 / image'; catalogue pricing type image\_units at 0.2 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-7B. Settings: default output size (Janus-Pro generates at its native resolution), one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff (DeepSeek's own API serves no image generation). DeepInfra official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version               needs  score
+bf16 · nvidia only  ~18.3GB   34.1
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-7B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/janus-pro-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

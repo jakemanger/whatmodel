@@ -6,7 +6,7 @@
 
 Stability AI · released 2024-10 · 2.5B params · stabilityai-community
 
-**score 39.4** ±2.8 · #93 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.8** ±2.2 · #96 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       52.2%    39.6   2026-07-01   66% ▇▇▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  45.0%    37.7   2026-06-02   31% ▇▇▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 39.4
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>       52.2%    40.1   2026-07-01   44% ▇▇▇▇▇
+<a name="visual-vvrbench"></a>Verifiable Visual Rew…  <a href="https://arxiv.org/html/2609.35641v1#S3.T3">VVRBench accuracy (10,000 ver…</a>   2.8%    42.4   2026-09-28   37% ▇▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  45.0%    38.1   2026-06-02   16% ▇▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 40.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
+<sub>Licences: T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image Generation ([CC-BY-4.0](../../licenses/visual-t2i-reasonbench.txt)) · Verifiable Visual Rewards Transfer from Synthetic Scenes to Natural Prompts ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
 
 ## How to run it
 
@@ -32,6 +33,16 @@ api (Stability AI) · $0.035/image · [platform.stability.ai](https://platform.s
 
 <sub>[price source](https://platform.stability.ai/pricing): USD per generated image on the Stability AI Developer Platform API: the pricing table lists Stable Diffusion 3.5 Medium at 3.5 credits and states 'API usage is based on credits. 1 credit = $0.01' (3.5 x $0.01 = $0.035). Product: Stability AI REST API (v2beta stable-image/generate/sd3). API model: sd3.5-medium. Settings: text-to-image, one image per request. Price basis: credits x Stability's own USD per credit. The pricing page is client-rendered; the table (column 'Price (credits)') is in the page's own script bundle. SD 3.5 Large 6.5 credits, Large Turbo 4, Flash 2.5. Replicate's official stability-ai/stable-diffusion-3.5-medium lists the same $0.035 per output image. Currency: USD. Stability AI official pricing page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version             needs  score
+bf16 · nvidia only  ~20GB   40.8
+</pre>
+
+```sh
+# bf16 · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate --with sentencepiece --with protobuf python -c "import torch; from diffusers import StableDiffusion3Pipeline; p=StableDiffusion3Pipeline.from_pretrained('stabilityai/stable-diffusion-3.5-medium', torch_dtype=torch.bfloat16).to('cuda'); p('A capybara holding a sign that reads Hello World', num_inference_steps=40, guidance_scale=4.5).images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/sd-3-5-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

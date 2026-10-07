@@ -6,9 +6,7 @@
 
 IBM · released 2024-10 · 2.63B params · apache-2.0
 
-**score 35.0** ±2.6 · #382 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 38.8** ±0.9 · #399 of 548 · from 17 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1156.6    34.2   2026-10-02   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   71.3%    37.7   2026-04-17   10% ▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 35.0
+<a name="granite-3-0-paper-github"></a>IBM Granite 3.0 Langu…  <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HumanEval (lab)</a>                  50.6%    39.8   2024-11-09   13% ▇▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">WinoGrande (lab)</a>                 71.9%    39.4   2024-11-09   10% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU (lab)</a>                       56.0%    37.3   2024-11-09    8% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GPQA (subset unspecified) (la…</a>   28.6%    36.1   2024-11-09    8% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MMLU-Pro (lab)</a>                   27.9%    37.9   2024-11-09    7% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MATH (subset unspecified) (la…</a>   23.7%    37.8   2024-11-09    6% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">GSM8K (lab)</a>                      59.7%    41.9   2024-11-09    6% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BIG-Bench Hard (lab)</a>             43.7%    39.0   2024-11-09    5% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">HellaSwag (lab)</a>                  76.8%    40.4   2024-11-09    5% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">MBPP (lab)</a>                       41.0%    39.2   2024-11-09    5% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">OpenBookQA (lab)</a>                 43.2%    41.5   2024-11-09    4% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">BoolQ (lab)</a>                      84.9%    40.1   2024-11-09    4% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">IFEval (aggregation unspecifi…</a>   46.1%    36.7   2024-11-09    2% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">ARC Challenge (lab)</a>              54.4%    42.8   2024-11-09    2% ▇
+                        <a href="https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/paper.pdf">Social IQA (lab)</a>                 66.4%    43.6   2024-11-09    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1156.6    36.2   2026-10-02   12% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   71.3%    39.9   2026-04-17    2% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 38.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: IBM Granite 3.0 Language Models technical report ([Apache-2.0](https://github.com/ibm-granite/granite-3.0-language-models/blob/5960b7fb3308588bf5f86348278ec9d6015ab647/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -32,8 +45,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.08GB   35.0
-8-bit q8_0    ~3.66GB   35.0
+4-bit q4_k_m  ~2.08GB   38.8
+8-bit q8_0    ~3.66GB   38.8
 </pre>
 
 ```sh

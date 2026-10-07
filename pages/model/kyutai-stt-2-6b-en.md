@@ -6,7 +6,7 @@
 
 Kyutai · released 2025-06 · 2.6B params · cc-by-4.0
 
-**score 58.5** ±3.2 · #33 of 113 · from 3 benchmark results across 2 sources
+**score 57.9** ±3.3 · #37 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,23 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    60.8   2026-03-26   52% ▇▇▇▇▇▇
-<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    56.5   2026-02-11   23% ▇▇▇
-                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    56.7   2026-02-11   22% ▇▇▇
+<a name="speech-voxtral-realtime-report"></a>Voxtral Realtime      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English shor…</a>   8.1%    56.2   2026-02-11   25% ▇▇▇
+                      <a href="https://arxiv.org/html/2602.11298v1">Voxtral report · English long…</a>   7.7%    56.4   2026-02-11   24% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.4%    60.3   2026-03-26   47% ▇▇▇▇▇▇
 prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 58.5
+                      weighted average                       = 57.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Voxtral Realtime ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~6.74GB   58.5
-bf16 · mac only     ~6.74GB   58.5
+bf16 · nvidia only  ~6.74GB   57.9
+bf16 · mac only     ~6.74GB   57.9
 </pre>
 
 ```sh

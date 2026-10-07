@@ -6,7 +6,7 @@
 
 Applied Brain Research · released 2025-11 · 0.019B params · applied-brain-research-open-license
 
-**score 42.2** ±4.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.9** ±4.6 · #94 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.6%    41.7   2026-03-26   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 42.2
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.6%    41.2   2026-03-26   92% ▇▇▇▇▇▇▇▇▇▇▇
+prior                 pull toward the middle                   49.7                 8% ▇
+                      weighted average                       = 41.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                 pull toward the middle                   49.7             
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 TorchScript (transformers remote c…  ~0.08GB   41.9
+</pre>
+
+```sh
+# fp32 TorchScript (transformers remote code @ dab6545)
+uvx --from huggingface_hub hf download abr-ai/niagara-19m-batch.en --revision dab6545337495482f2fc05455432a7a05c88d3cc --local-dir asr-19m-v2-en && uv run --with torch --with transformers --with sentencepiece --with soundfile python -c "import soundfile as sf; from transformers import AutoFeatureExtractor, AutoModel, AutoTokenizer; p = './asr-19m-v2-en'; feature_extractor = AutoFeatureExtractor.from_pretrained(p, trust_remote_code=True); model = AutoModel.from_pretrained(p, trust_remote_code=True); tokenizer = AutoTokenizer.from_pretrained(p, trust_remote_code=True); audio, _ = sf.read('audio.wav', dtype='float32'); print(tokenizer.decode_from_logits(model(feature_extractor(audio)))[0])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/abr-asr-19m-v2-en) · [JSON](https://whatmodel.sh/api?format=json&all=1)

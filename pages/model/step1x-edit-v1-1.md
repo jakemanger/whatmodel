@@ -4,9 +4,9 @@
 
 # Step1X-Edit v1.1
 
-StepFun · released 2025-07 · apache-2.0
+StepFun · released 2025-07 · 12.43B params · apache-2.0
 
-**score 47.0** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 47.6** ±4.5 · #85 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,18 +15,29 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>  69.2%    46.6   2025-12-01   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                12% ▇
-                        weighted average                = 47.0
+source                  test                            score  implies  date        weight
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         69.2%    45.8   2025-12-01   62% ▇▇▇▇▇▇▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  66.9%    50.8   2025-11-14   29% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 9% ▇
+                        weighted average                       = 47.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt))</sub>
+<sub>Licences: UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version               needs  score
+bf16 · nvidia only  ~50.6GB   47.6
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone -b step1xedit https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipeline; from diffusers.utils import load_image; p=Step1XEditPipeline.from_pretrained('stepfun-ai/Step1X-Edit-v1p1-diffusers', torch_dtype=torch.bfloat16); p.to('cuda'); p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant to the neck of the girl', num_inference_steps=28, true_cfg_scale=6.0, generator=torch.Generator().manual_seed(42)).images[0].save('0000.jpg')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2026-03 · 0.61B params · cc-by-nc-4.0
 
-**score 65.3** ±3.1 · #13 of 94 · from 6 benchmark results across 3 sources
+**score 63.4** ±2.7 · #18 of 98 · from 10 benchmark results across 4 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,25 +16,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>    1.2%    63.3   2026-06-04   27% ▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>    3.0%    72.2   2026-06-04   17% ▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>    4.9%    71.2   2026-06-04    8% ▇
-<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>   72.8%    66.4   2026-09-03   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>    4.6%    63.6   2026-09-03   18% ▇▇
-<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1049.4    54.6   2026-09-24    4% ▇
-prior                   pull toward the middle                    49.9                 4% ▇
-                        weighted average                        = 65.3
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>    1.2%    63.1   2026-06-04   24% ▇▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>    3.0%    73.7   2026-06-04    8% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>    4.9%    71.5   2026-06-04    5% ▇
+<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>   77.7%    57.6   2026-04-01    8% ▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>   74.1%    60.1   2026-04-01    8% ▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>    1.6%    62.9   2026-04-01    7% ▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>    0.8%    66.9   2026-04-01    7% ▇
+<a name="speech-wayu-thai-tts-ccby"></a>Building and Evaluati…  <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 1,531-it…</a>   72.8%    65.3   2026-09-03   16% ▇▇
+                        <a href="https://arxiv.org/html/2609.03502v1">Wayu Thai TTS eval · 500-utte…</a>    4.6%    62.5   2026-09-03   13% ▇▇
+<a name="speech-arabic-tts-arena-apache"></a>Arabic TTS Arena        <a href="https://huggingface.co/spaces/Navid-AI/Arabic-TTS-Arena/blob/6e003a592d4b5e64ce315fb635da22ec57f2fa82/leaderboard.json">Arabic TTS Arena · community …</a>  1049.4    54.2   2026-09-24    3% ▇
+prior                   pull toward the middle                    49.8                 3% ▇
+                        weighted average                        = 63.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech ([CC BY 4.0](../../licenses/speech-wayu-thai-tts-ccby.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
+<sub>Licences: Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech ([CC BY 4.0](../../licenses/speech-wayu-thai-tts-ccby.txt)) · Arabic TTS Arena ([Apache-2.0](../../licenses/speech-arabic-tts-arena-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~3.26GB   65.3
+fp32     ~3.26GB   63.4
 </pre>
 
 ```sh

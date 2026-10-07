@@ -6,9 +6,7 @@
 
 DeepSeek · released 2025-01 · 685B params (37B active) · mit
 
-**score 62.7** ±0.7 · #126 of 462 · from 34 benchmark results across 15 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 62.6** ±0.7 · #130 of 548 · from 35 benchmark results across 15 sources
 
 ## How the score was worked out
 
@@ -16,49 +14,50 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>               71.5%    58.8   2026-09-25    8% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>   65.9%    60.7   2026-09-25    5% ▇
+<a name="card-deepseek-ai--deepseek-r1"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">GPQA Diamond (lab)</a>               71.5%    59.1   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">LiveCodeBench (version unspec…</a>   65.9%    61.1   2026-09-25    4% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   92.3%    61.3   2026-09-25    4% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                   97.3%    67.8   2026-09-25    2% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>         49.2%    59.8   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU (lab)</a>                       90.8%    59.4   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Pro (lab)</a>                   84.0%    62.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">DROP (lab)</a>                       92.2%    57.6   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AlpacaEval 2 length-controlle…</a>   87.6%    68.6   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">C-Eval (lab)</a>                     91.8%    64.3   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">IFEval prompt-level strict (l…</a>   83.3%    53.1   2026-09-25    0% ▇
-<a name="vector-inspect-evals-leaderboard"></a>Vector Institute Eval…  <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>   92.7%    62.5   2025-02-11    6% ▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institut…</a>   70.5%    64.2   2025-02-11    6% ▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, I…</a>   83.8%    65.9   2025-02-12    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MATH-500 (lab)</a>                   97.3%    65.4   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU (lab)</a>                       90.8%    59.5   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">SWE-bench Verified (lab)</a>         49.2%    59.9   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">MMLU-Pro (lab)</a>                   84.0%    62.5   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">AlpacaEval 2 length-controlle…</a>   87.6%    68.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">DROP (lab)</a>                       92.2%    58.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">C-Eval (lab)</a>                     91.8%    64.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA (lab)</a>            63.7%    54.0   2026-09-25    0% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">IFEval prompt-level strict (l…</a>   83.3%    53.6   2026-09-25    0% ▇
+<a name="vector-inspect-evals-leaderboard"></a>Vector Institute Eval…  <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institut…</a>   70.5%    64.2   2025-02-11    5% ▇
+                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>   92.7%    62.6   2025-02-11    5% ▇
+                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, I…</a>   83.8%    65.8   2025-02-12    3% ▇
                         <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, …</a>   95.7%    64.3   2025-02-03    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     93.1%    64.4   2025-01-31    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     71.7%    62.7   2025-05-26    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     93.1%    64.2   2025-01-31    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         53.3%    60.0   2025-02-26    3% ▇
-<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   58.0%    63.1   2025-05-01    8% ▇
-                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   77.0%    70.1   2025-05-01    1% ▇
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   56.9%    62.7   2025-01-20    8% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1398.1    63.3   2026-10-02    6% ▇
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   78.7%    68.0                 5% ▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   92.7%    63.1   2025-01-22    2% ▇
-                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   68.7%    64.9   2025-01-22    2% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1224.7    63.2   2026-05-10    3% ▇
-<a name="card-deepseek-ai--deepseek-r1-0528"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">AIME 2025 (lab)</a>                  70.0%    53.7   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">SimpleQA (lab)</a>                   30.1%    66.3   2026-09-25    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     71.7%    62.5   2025-05-26    3% ▇
+<a name="arena-hard-auto-readme-v2"></a>Arena-Hard-Auto v2.0-…  <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 hard prompts …</a>   58.0%    63.0   2025-05-01    7% ▇
+                        <a href="https://github.com/lmarena/arena-hard-auto/blob/196f6b826783b3da7310e361a805fa36f0be83f3/README.md">Arena-Hard v2.0 creative writ…</a>   77.0%    70.0   2025-05-01    1% ▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   56.9%    62.6   2025-01-20    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1398.1    63.1   2026-10-02    6% ▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   78.7%    67.9                 5% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   92.7%    63.2   2025-01-22    2% ▇
+                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   68.7%    64.6   2025-01-22    2% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1224.7    63.0   2026-05-10    3% ▇
+<a name="card-deepseek-ai--deepseek-r1-0528"></a>deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">AIME 2025 (lab)</a>                  70.0%    55.3   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">SimpleQA (lab)</a>                   30.1%    66.0   2026-09-25    1% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">Humanity's Last Exam (lab)</a>        8.5%    54.1   2026-09-25    1% ▇
+<a name="scicode-readme-leaderboard"></a>SciCode leaderboard     <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (offici…</a>    4.6%    62.1   2025-02-01    2% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   82.8%    61.7   2026-08-11    2% ▇
-<a name="scicode-readme-leaderboard"></a>SciCode leaderboard     <a href="https://github.com/scicode-bench/SciCode/blob/e3158ea011d4235245a547460d3688d7ccbf9900/README.md">SciCode main problems (offici…</a>    4.6%    62.0   2025-02-01    2% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   44.3%    61.6   2025-04-28    1% ▇
-<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>   77.0%    60.3   2025-01-31    1% ▇
-<a name="multi-swe-bench-experiments"></a>Multi-SWE-bench exper…  <a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages …</a>    5.9%    64.8   2025-03-29    1% ▇
+<a name="judgemark-v2-results"></a>Judgemark v2 results    <a href="https://github.com/EQ-bench/Judgemark-v2/blob/2388448a0401c4d6ed5502ff18953adba944a255/results/scores.csv">Judgemark v2 (LLM-as-judge fo…</a>   77.0%    60.5   2025-01-31    1% ▇
+<a name="multi-swe-bench-experiments"></a>Multi-SWE-bench exper…  <a href="https://github.com/multi-swe-bench/experiments/tree/6a7d5566f62fa76f4192302cf763051b98e4facc/evaluation">Multi-SWE-bench, 7 languages …</a>    5.9%    64.7   2025-03-29    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 62.7
+                        weighted average                        = 62.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Vector Institute Evaluation Leaderboard ([Apache-2.0](../../licenses/vector-inspect-evals-leaderboard-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · deepseek-ai/DeepSeek-R1-0528 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1-0528.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · Multi-SWE-bench experiments ([Apache-2.0](../../licenses/multi-swe-bench-experiments-Apache-2.0.txt))</sub>
+<sub>Licences: deepseek-ai/DeepSeek-R1 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1.txt)) · Vector Institute Evaluation Leaderboard ([Apache-2.0](../../licenses/vector-inspect-evals-leaderboard-Apache-2.0.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Arena-Hard-Auto v2.0-Preview leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-Apache-2.0.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · deepseek-ai/DeepSeek-R1-0528 model card ([mit](../../licenses/deepseek-ai--DeepSeek-R1-0528.txt)) · SciCode leaderboard ([Apache-2.0](../../licenses/scicode-Apache-2.0.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Judgemark v2 results ([MIT](../../licenses/judgemark-v2-MIT.txt)) · Multi-SWE-bench experiments ([Apache-2.0](../../licenses/multi-swe-bench-experiments-Apache-2.0.txt))</sub>
 
-<details><summary>Not counted (9)</summary>
+<details><summary>Not counted (8)</summary>
 
 <pre>
 source                  test                            score  why
@@ -69,7 +68,6 @@ deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R
 deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">HMMT 2025 (edition unspecifie…</a>  41.7%  too few models have it yet
 deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">LiveCodeBench 2024-08–2025-05…</a>  63.5%  too few models have it yet
 deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528/blob/4236a6af538feda4548eca9ab308586007567f52/README.md">MMLU-Redux</a>                      92.9%  too few models have it yet
-deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">ChineseSimpleQA</a>                 63.7%  too few models have it yet
 deepseek-ai/DeepSeek-…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md">CLUEWSC</a>                         92.8%  too few models have it yet
 </pre>
 
@@ -83,9 +81,9 @@ api (Together AI) · $4.00/M blended · $3 in / $7 out per 1M tokens · [docs.to
 
 <pre>
 download               size  score
-4-bit q4_k_m       ~411.5GB   62.7
-2-bit ud-q2_k_xl     ~206GB   62.7
-1-bit ud-iq1_s    ~103.25GB   62.7
+4-bit q4_k_m       ~411.5GB   62.6
+2-bit ud-q2_k_xl     ~206GB   62.6
+1-bit ud-iq1_s    ~103.25GB   62.6
 </pre>
 
 ```sh

@@ -6,28 +6,31 @@
 
 Zhipu AI (THUDM) · released 2024-09 · 5B params · cogvideox
 
-**score 37.8** ±4.9 · #59 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.9** ±3.9 · #54 of 87 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                               score  implies  date        weight
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.75 / 10    36.4   2025-02-28   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                10% ▇
-                        weighted average                          = 37.8
+source                  test                                score  implies  date        weight
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>   6.75 / 10    37.2   2025-02-28   35% ▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>      27.7%    55.6   2026-09-30   29% ▇▇▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>      72.9%    44.3   2026-08-06   15% ▇▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>      57.9%    40.6   2026-05-14   14% ▇▇
+prior                   pull toward the middle                       49.9                 7% ▇
+                        weighted average                           = 44.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>
+<sub>Licences: WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version               needs  score
-bf16 · nvidia only  ~12.5GB   37.8
+bf16 · nvidia only  ~12.5GB   44.9
 </pre>
 
 ```sh

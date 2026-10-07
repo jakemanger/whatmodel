@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-07 · 27B params (14B active) · apache-2.0
 
-**score 48.8** ±1.7 · #45 of 76 · from 4 benchmark results across 3 sources
+**score 48.8** ±1.7 · #46 of 87 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,17 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.4   2026-09-22   53% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    48.0   2026-09-22   32% ▇▇▇▇
-<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    55.3   2026-05-06    7% ▇
-<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.9   2026-05-15    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                           1131.6    48.1   2026-09-22   51% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>                    1170.2    47.6   2026-09-22   31% ▇▇▇▇
+<a name="visual-worldjen"></a>WorldJen: An End-to-E…  <a href="https://arxiv.org/html/2605.03475v2#S5.T1">WorldJen human preference (Br…</a>          1518.0    55.2   2026-05-06    7% ▇
+<a name="video-videoverse"></a>VideoVerse: Does Your…  <a href="https://arxiv.org/html/2510.08398v4#S3.T1">VideoVerse overall (Gemini 2.…</a>  1085.08 / 1608    48.8   2026-05-15    6% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>           84.1%    55.1   2026-08-06    3% ▇
 prior                   pull toward the middle                            49.9                 1% ▇
                         weighted average                                = 48.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models ([CC-BY-4.0](../../licenses/visual-worldjen.txt)) · VideoVerse: Does Your T2V Generator Have World Model Capability to Synthesize Videos? ([CC-BY-4.0](../../licenses/video-videoverse.txt)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

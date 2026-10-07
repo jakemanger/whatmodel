@@ -6,9 +6,7 @@
 
 Meta · released 2024-01 · 68.98B params · llama2
 
-**score 41.7** ±1.5 · #312 of 462 · from 3 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 42.1** ±1.4 · #355 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    40.2   2024-01-31   44% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    42.9   2024-01-31   21% ▇▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    42.9   2024-05-07   34% ▇▇▇▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 53.0%    40.9   2024-01-31   53% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      62.4%    43.6   2024-01-31   22% ▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  52.8%    43.2   2024-05-07   25% ▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 41.7
+                        weighted average                       = 42.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit q4_k_m  ~41GB   41.7
-8-bit q8_0    ~73GB   41.7
+4-bit q4_k_m  ~41GB   42.1
+8-bit q8_0    ~73GB   42.1
 </pre>
 
 ```sh

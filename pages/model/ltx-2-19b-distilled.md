@@ -6,7 +6,7 @@
 
 Lightricks · released 2026-01 · 19B params · ltx-2-community
 
-**score 45.7** ±7.5 · #50 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.8** ±7.5 · #52 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    44.4   2026-08-10   76% ▇▇▇▇▇▇▇▇▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>  42.4%    44.5   2026-08-10   76% ▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                24% ▇▇▇
-                        weighted average                       = 45.7
+                        weighted average                       = 45.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ api (Replicate) · $0.020/sec · [replicate.com](https://replicate.com/lightrick
 
 <pre>
 version                             needs  score
-Draw Things q6p · mac only        ~40.9GB   45.7
-bf16 MLX (mlx-video) · mac only  ~110.4GB   45.7
+Draw Things q6p · mac only        ~40.9GB   45.8
+bf16 MLX (mlx-video) · mac only  ~110.4GB   45.8
 </pre>
 
 ```sh

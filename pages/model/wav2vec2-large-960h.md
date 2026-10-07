@@ -6,7 +6,7 @@
 
 Meta · released 2020-06 · 0.32B params · apache-2.0
 
-**score 9.2** ±3.9 · #110 of 113 · from 4 benchmark results across 4 sources
+**score 10.5** ±4.0 · #114 of 117 · from 5 benchmark results across 4 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,23 +16,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  26.8%     5.7   2026-03-26   78% ▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  71.7%    12.4   2023-09-30    7% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  39.3%     9.9   2026-08-18    6% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  16.5%    14.9   2024-12-09    3% ▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  26.8%     5.2   2026-03-26   71% ▇▇▇▇▇▇▇▇
+<a name="speech-stt-afrispeech200-report-ccby"></a>AfriSpeech-200          <a href="https://arxiv.org/html/2310.00274v1">AfriSpeech-200 test (108 Afri…</a>  71.7%    13.4   2023-09-30    9% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">TED-LIUM test WER (short-form)</a>  16.5%    14.5   2024-12-09    4% ▇
+                        <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       3.0%    36.7   2024-12-09    3% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  39.3%    11.4   2026-08-18    7% ▇
 prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                        = 9.2
+                        weighted average                       = 10.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · AfriSpeech-200 ([CC BY 4.0](../../licenses/speech-stt-afrispeech200-report-ccby.txt)) · Speech Robust Bench ([CC BY 4.0](../../licenses/speech-stt-srb-report.txt)) · Dysarthric ASR with clinical context on the Speech Accessibility Project ([CC BY 4.0](../../licenses/speech-stt-sap-dysarthric-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp32     ~2.04GB    9.2
+fp32     ~2.04GB   10.5
 </pre>
 
 ```sh

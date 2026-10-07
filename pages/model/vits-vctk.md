@@ -6,7 +6,7 @@
 
 Kakao Enterprise (Jaehyeon Kim et al.) · released 2021-06 · mit
 
-**score 26.8** ±6.7 · #86 of 94 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 26.4** ±6.6 · #89 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   8.5%    21.4   2025-08-10   58% ▇▇▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    27.5%    22.6   2025-08-10   24% ▇▇▇
-prior                   pull toward the middle                   49.9                18% ▇▇
-                        weighted average                       = 26.8
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   8.5%    21.0   2025-08-10   59% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    27.5%    22.1   2025-08-10   24% ▇▇▇
+prior                   pull toward the middle                   49.8                18% ▇▇
+                        weighted average                       = 26.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim
 
 <pre>
 version                                     needs  score
-fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   26.8
+fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   26.4
 </pre>
 
 ```sh

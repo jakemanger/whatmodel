@@ -13,7 +13,10 @@ import { boardView, modelView, pageModels } from '../lib/views.ts';
 import { TASKS } from '../lib/tasks.ts';
 
 const view = (query = '') => boardView('llm', new URLSearchParams(query));
-const secondary = comparisonSets.llm[1];
+// Text models now share one scale; set behaviour is tested on the first category that still has several.
+const SET_CAT = (['llm', 'image', 'tts', 'stt', 'video'] as const).find((c) => comparisonSets[c].length > 1)!;
+const setView = (query = '') => boardView(SET_CAT, new URLSearchParams(query));
+const secondary = comparisonSets[SET_CAT][1];
 const setQuery = `set=${encodeURIComponent(secondary.id)}`;
 
 test('announced previews appear on default and task boards without implying public access', async () => {
@@ -103,10 +106,10 @@ test('serialized board inputs preserve scores and measured speeds across categor
 });
 
 test('all comparison sets appear together without mixing their score scales', () => {
-  const board = view('retired=1');
+  const board = setView('retired=1');
   assert.equal(board.comparison, undefined);
   assert.equal(board.scoreMode, 'overall');
-  assert.deepEqual(new Set(board.rows.map((r) => r.id)), new Set(modelsIn('llm').map((m) => m.id)));
+  assert.deepEqual(new Set(board.rows.map((r) => r.id)), new Set(modelsIn(SET_CAT).map((m) => m.id)));
   for (const id of secondary.models) {
     const row = board.rows.find((r) => r.id === id)!;
     assert.equal(row.score, null);
@@ -118,14 +121,15 @@ test('all comparison sets appear together without mixing their score scales', ()
 });
 
 test('historical entries without results are visible without inventing a score', () => {
-  const row = view().shown.find((r) => r.id === 'gpt-1');
-  assert.ok(row, 'GPT-1 should be discoverable on the default board');
+  // Any listed model with no reviewed results yet (the examples change as results are added).
+  const row = (['llm', 'image', 'video', 'stt', 'tts'] as const).map((c) => boardView(c, new URLSearchParams()).shown.find((r) => r.evidence === 'none')).find(Boolean);
+  assert.ok(row, 'a model without results should be discoverable on a default board');
   assert.equal(row.evidence, 'none');
   assert.equal(row.score, null);
   assert.equal(row.rank, null);
   assert.equal(row.pm, null);
-  assert.ok(pageModels().some((m) => m.id === 'gpt-1'));
-  const detail = modelView('gpt-1');
+  assert.ok(pageModels().some((m) => m.id === row.id));
+  const detail = modelView(row.id);
   assert.equal(detail?.kind, 'raw');
   if (detail?.kind === 'raw') assert.deepEqual(detail.raw, []);
   assert.equal(modelView('does-not-exist'), null);
@@ -135,13 +139,13 @@ test('historical entries without results are visible without inventing a score',
 });
 
 test('a set filter preserves overall scores until set scoring is explicitly selected', () => {
-  const overall = view('retired=1');
-  for (const set of comparisonSets.llm) {
+  const overall = setView('retired=1');
+  for (const set of comparisonSets[SET_CAT]) {
     const query = `set=${encodeURIComponent(set.id)}&retired=1`;
-    const filtered = view(query);
+    const filtered = setView(query);
     assert.deepEqual(new Set(filtered.rows.map((r) => r.id)), new Set(set.models));
     for (const row of filtered.rows) assert.equal(row.score, overall.rows.find((r) => r.id === row.id)!.score);
-    const recalculated = view(`${query}&score=set`);
+    const recalculated = setView(`${query}&score=set`);
     assert.equal(recalculated.scoreMode, 'set');
     for (const row of recalculated.rows) {
       assert.equal(row.score, Math.round(set.fit.scores.get(row.id)!.g * 10) / 10);
@@ -174,15 +178,15 @@ test('hardware filtering and score sorting never create scores for uncalibrated 
 test('API, terminal output, charts and copied commands use the selected score mode', async () => {
   for (const score of ['', '&score=set']) {
     const query = `${setQuery}${score}&all=1&retired=1&n=10000`;
-    const board = view(query);
-    const response = await leaderboard(new Request(`https://whatmodel.sh/api?${query}&format=json`), 'llm').json();
+    const board = setView(query);
+    const response = await leaderboard(new Request(`https://whatmodel.sh/api?${query}&format=json`), SET_CAT).json();
     assert.equal(response.score_mode, board.scoreMode);
     assert.equal(response.comparison_set, secondary.id);
     assert.deepEqual(response.models.map((r: { id: string; score: number | null }) => [r.id, r.score]), board.shown.map((r) => [r.id, r.score]));
   }
-  const uncalibrated = view(setQuery);
-  assert.deepEqual(chartsFor(uncalibrated.rows, 'llm'), []);
-  const output = toText(uncalibrated.rows, null, null, { cat: 'llm', color: false, base: 'https://whatmodel.sh', limit: 1000, all: true, benches: uncalibrated.benches, updated: '' });
+  const uncalibrated = setView(setQuery);
+  assert.deepEqual(chartsFor(uncalibrated.rows, SET_CAT), []);
+  const output = toText(uncalibrated.rows, null, null, { cat: SET_CAT, color: false, base: 'https://whatmodel.sh', limit: 1000, all: true, benches: uncalibrated.benches, updated: '' });
   assert.match(output, /not yet calibrated/);
   assert.doesNotMatch(output, /NaN|Infinity|0±0/);
   assert.match(curlFor('whatmodel.sh', '/', new URLSearchParams(`${setQuery}&score=set`)), /score=set/);

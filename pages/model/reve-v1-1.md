@@ -6,7 +6,7 @@
 
 Reve · closed weights
 
-**score 60.8** ±3.6 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 60.1** ±4.0 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1261.8    61.5   2026-09-30   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 5% ▇
-                        weighted average                = 60.8
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1261.8    60.8   2026-09-30   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle            49.9                 7% ▇
+                        weighted average                = 60.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

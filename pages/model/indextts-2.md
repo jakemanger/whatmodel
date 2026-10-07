@@ -6,7 +6,7 @@
 
 IndexTeam (bilibili) · released 2025-09 · bilibili-model-use-license
 
-**score 56.0** ±2.0 · #39 of 94 · from 17 benchmark results across 7 sources
+**score 58.1** ±1.7 · #32 of 98 · from 23 benchmark results across 8 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,36 +16,42 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.05 / 5    56.4   2025-09-29   10% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.03 / 5    54.5   2025-09-29    9% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.16 / 5    57.2   2025-09-29    9% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.25 / 5    66.3   2025-09-29    8% ▇
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.6%    59.8   2026-06-04   10% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>    112.9%    40.7   2026-06-04    7% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>    129.3%    23.9   2026-06-04    3% ▇
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md">Seed-TTS test-en · Whisper la…</a>      2.1%    59.5   2025-12-08    9% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md">Seed-TTS test-zh · Paraformer…</a>      1.0%    60.7   2025-12-08    7% ▇
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.2%    57.3   2026-06-15    7% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     70.9%    58.5   2026-06-15    7% ▇
-<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>    1167.3    61.8   2026-06-19    5% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     86.1%    43.4   2026-06-19    1% ▇
-                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>      9.9%    74.7   2026-06-19    0% ▇
-<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.98 / 5    41.6   2026-03-15    3% ▇
-                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.53 / 5    63.8   2026-03-15    2% ▇
-<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.52 / 5    54.5   2026-07-16    1% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 56.0
+<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.05 / 5    58.2   2025-09-29    7% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.25 / 5    68.0   2025-09-29    7% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.03 / 5    56.2   2025-09-29    7% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.16 / 5    59.0   2025-09-29    6% ▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md">Seed-TTS test-zh · speaker si…</a>     76.0%    60.2   2025-12-08    8% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md">Seed-TTS test-zh · Paraformer…</a>      1.0%    61.7   2025-12-08    7% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md">Seed-TTS test-en · Whisper la…</a>      2.1%    60.5   2025-12-08    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/IndexTTS2.md">Seed-TTS test-en · speaker si…</a>     70.4%    61.0   2025-12-08    6% ▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>      1.6%    59.4   2026-06-04   10% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>    112.9%    37.4   2026-06-04    3% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>    129.3%    22.5   2026-06-04    2% ▇
+<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>     76.4%    57.2   2026-04-01    3% ▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>     70.6%    56.3   2026-04-01    3% ▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>      2.3%    54.4   2026-04-01    3% ▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>      1.1%    63.6   2026-04-01    3% ▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     70.9%    59.9   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.2%    58.7   2026-06-15    5% ▇
+<a name="speech-sap-voicerecon-ccby"></a>An Evaluation Framewo…  <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · hu…</a>    1167.3    63.8   2026-06-19    3% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · TT…</a>     86.1%    44.5   2026-06-19    1% ▇
+                        <a href="https://arxiv.org/html/2606.21343v1">SAP voice reconstruction · WE…</a>      9.9%    78.7   2026-06-19    0% ▇
+<a name="speech-codecmos-accent-ccby"></a>CodecMOS-Accent: list…  <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  3.98 / 5    42.1   2026-03-15    2% ▇
+                        <a href="https://arxiv.org/html/2603.14328v1">CodecMOS-Accent VCTK voice cl…</a>  4.53 / 5    65.4   2026-03-15    1% ▇
+<a name="speech-rw-voice-eq-report"></a>RW-Voice-EQ Bench       <a href="https://arxiv.org/html/2607.14846v1/TTS_Top5_Membership_Matrix.svg">RW-Voice-EQ TTS · Long-Form S…</a>  3.52 / 5    53.8   2026-07-16    1% ▇
+prior                   pull toward the middle                      49.8                 1% ▇
+                        weighted average                          = 58.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning ([CC BY 4.0](../../licenses/speech-voxcpm-report-ccby.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
+<sub>Licences: VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning ([CC BY 4.0](../../licenses/speech-voxcpm-report-ccby.txt)) · UltraEval-Audio ([Apache-2.0](../../licenses/speech-ultraeval-audio-apache.txt)) · Higgs Audio v3 comparison tables in SGLang-Omni cookbook ([Apache-2.0](../../licenses/speech-higgs3-sglang-apache.txt)) · OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · Raon-OpenTTS: Open Models and Data for Robust Text-to-Speech ([CC BY 4.0](../../licenses/speech-raon-opentts-report-ccby.txt)) · An Evaluation Framework for TTS Voice Reconstruction ([CC BY 4.0](../../licenses/speech-sap-voicerecon-ccby.txt)) · CodecMOS-Accent: listening-test MOS of zero-shot TTS across English accents ([CC BY 4.0](../../licenses/speech-codecmos-accent-ccby.txt)) · RW-Voice-EQ Bench ([CC BY 4.0](../../licenses/speech-rw-voice-eq-report.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                  needs  score
-fp32 (index-tts repo)  ~8.86GB   56.0
+fp32 (index-tts repo)  ~8.86GB   58.1
 </pre>
 
 ```sh

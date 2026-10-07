@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-07 · 480B params (35B active) · apache-2.0
 
-**score 61.9** ±1.5 · #133 of 462 · from 4 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 62.0** ±1.2 · #136 of 548 · from 10 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,29 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1274.2    61.6   2026-10-01   48% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1387.3    62.0   2026-10-02   28% ▇▇▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   23.9%    63.5   2026-01-17   16% ▇▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   61.2%    61.4   2025-11-02    7% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1274.2    61.4   2026-10-01   33% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1387.3    61.9   2026-10-02   19% ▇▇
+<a name="card-qwen-qwen3-coder-30b-a3b-instruct"></a>Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">Aider polyglot (225 exercises…</a>   61.8%    62.1   2026-09-25   18% ▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Verified (lab)</a>         67.0%    62.5   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Multilingual (lab)</a>     54.7%    65.6   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Retail (lab)</a>             77.5%    62.0   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">τ-bench Airline (lab)</a>            60.0%    62.8   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">BFCL v3 (lab)</a>                    68.7%    61.3   2026-09-25    1% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   23.9%    63.2   2026-01-17   10% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   61.2%    61.4   2025-11-02    5% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 61.9
+                        weighted average                        = 62.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Qwen/Qwen3-Coder-30B-A3B-Instruct model card ([Apache-2.0](../../licenses/card-qwen-qwen3-coder-30b-a3b-instruct.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt))</sub>
 
-<details><summary>Not counted (7)</summary>
+<details><summary>Not counted (8)</summary>
 
 <pre>
 source                  test                            score  why
-Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">Aider polyglot (225 exercises…</a>  61.8%  too few models have it yet
-Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">BFCL v3</a>                         68.7%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">Aider polyglot (225 exercises…</a>  61.8%  another source's result is used
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">BFCL v3</a>                         68.7%  another source's result is used
 Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Live</a>                  26.3%  too few models have it yet
-Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Multilingual</a>          54.7%  too few models have it yet
-Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Verified</a>              69.6%  too few models have it yet
-Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">τ-bench Airline</a>                 60.0%  too few models have it yet
-Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">τ-bench Retail</a>                  77.5%  too few models have it yet
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Multilingual</a>          54.7%  another source's result is used
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">SWE-bench Verified</a>              69.6%  another source's result is used
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">τ-bench Airline</a>                 60.0%  another source's result is used
+Qwen/Qwen3-Coder-480B…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/blob/9d90cf8fca1bf7b7acca42d3fc9ae694a2194069/README.md">τ-bench Retail</a>                  77.5%  another source's result is used
+Qwen/Qwen3-Coder-30B-…  <a href="https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/README.md">SWE-bench Live</a>                  26.3%  too few models have it yet
 </pre>
 
 </details>
@@ -51,9 +56,9 @@ api (Novita AI) · $0.67/M blended · $0.38 in / $1.55 out per 1M tokens · [nov
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~288.5GB   61.9
-2-bit ud-q2_k_xl  ~144.5GB   61.9
-1-bit ud-iq1_m     ~72.5GB   61.9
+4-bit q4_k_m      ~288.5GB   62.0
+2-bit ud-q2_k_xl  ~144.5GB   62.0
+1-bit ud-iq1_m     ~72.5GB   62.0
 </pre>
 
 ```sh

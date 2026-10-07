@@ -6,9 +6,7 @@
 
 StepFun · released 2026-05 · 198B params (11B active) · apache-2.0
 
-**score 64.9** ±1.2 · #103 of 462 · from 10 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 64.3** ±1.1 · #108 of 548 · from 10 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>  35.8%    66.3   2026-09-11   28% ▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>  30.6%    62.3   2026-09-07   21% ▇▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>  45.0%    64.8   2026-09-11   13% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    63.1   2026-09-11   11% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  46.7%    66.5   2026-09-11    7% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>  18.9%    69.2   2026-09-11    6% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>   8.5%    63.4   2026-06-23    6% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>  10.7%    67.1   2026-09-11    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>  15.7%    65.2   2026-08-25    3% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>  12.1%    69.7   2026-09-11    2% ▇
+<a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0426_outputs/blob/31b49f173ea747a53fb613b8c8f24b6b4bdf6fcf/data/train-00000-of-00001.parquet">MathArena ArXivMath April 202…</a>  35.8%    65.8   2026-09-11   27% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0626_outputs/blob/f782eef32107837304e2ecd4e78b4cb60ee1e122/data/train-00000-of-00001.parquet">MathArena ArXivMath June 2026…</a>  30.6%    62.0   2026-09-07   22% ▇▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>  45.0%    64.1   2026-09-11   12% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  32.0%    62.7   2026-09-11   12% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>  46.7%    66.0   2026-09-11    7% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>  18.9%    68.4   2026-09-11    6% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>   8.5%    62.6   2026-06-23    5% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>  15.7%    64.8   2026-08-25    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>  10.7%    66.4   2026-09-11    3% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>  12.1%    69.0   2026-09-11    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 64.9
+                        weighted average                       = 64.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -54,6 +52,19 @@ api (StepFun) · $0.44/M blended · $0.2 in / $1.15 out per 1M tokens · [platfo
 
 <sub>[price source](https://platform.stepfun.ai/docs/en/guides/pricing/details.md): USD per 1M tokens, StepFun Open Platform (international), step-3.7-flash (Multimodal Reasoning Models table): input on cache miss $0.20, output $1.15 (output includes reasoning). Cache-hit input ($0.04/1M) excluded. Currency: USD. StepFun official pricing page, observed 2026-09-26. · [context source](https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md): StepFun official model page, step-3.7-flash: 'Context length 256K tokens' (a rounded figure; models.dev @a668908 gives 256,000). Observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+download           size  score
+4-bit q4_k_s  ~115.47GB   64.3
+3-bit q3_k_m   ~97.77GB   64.3
+</pre>
+
+```sh
+# 4-bit q4_k_s
+llama-server -hf stepfun-ai/Step-3.7-Flash-GGUF:Q4_K_S
+# 3-bit q3_k_m
+llama-server -hf stepfun-ai/Step-3.7-Flash-GGUF:Q3_K_M
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/step-3-7-flash) · [JSON](https://whatmodel.sh/api?format=json&all=1)

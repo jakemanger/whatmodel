@@ -6,9 +6,7 @@
 
 IBM · released 2026-04 · 8.79B params · apache-2.0
 
-**score 55.8** ±1.7 · #177 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 56.1** ±1.6 · #184 of 548 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -17,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                        score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1190.3    58.1   2026-10-01   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1304.1    51.9   2026-10-02   36% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1304.1    52.6   2026-10-02   36% ▇▇▇▇
 prior                   pull toward the middle               50.0                 1% ▇
-                        weighted average                   = 55.8
+                        weighted average                   = 56.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -61,6 +59,22 @@ api (Replicate) · $0.11/M blended · $0.06 in / $0.25 out per 1M tokens · [rep
 
 <sub>[price source](https://replicate.com/ibm-granite/granite-4.1-8b): USD per 1M tokens, Replicate official model ibm-granite/granite-4.1-8b, billed per input/output token (billing table on the model page: $0.06 per million input tokens, $0.25 per million output tokens; A100 80GB backing hardware not billed separately for this official model). IBM watsonx lists granite-4-1-8b as not available for pay-per-token. Currency: USD. Replicate official model page, observed 2026-09-25. · [context source](https://huggingface.co/ibm-granite/granite-4.1-8b/blob/1504002f650e656a0a3789d99574df12e3e94ed0/README.md): IBM official model card (ibm-granite/granite-4.1-8b, pinned): architecture table 'Sequence length 131072' for the 8B Dense model; the card calls it a long-context instruct model. Observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+download         size  score
+4-bit q4_k_m  ~5.35GB   56.1
+8-bit q8_0    ~9.35GB   56.1
+4-bit q4_k_m  ~5.35GB   56.1
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf ibm-granite/granite-4.1-8b-GGUF:Q4_K_M
+# 8-bit q8_0
+llama-server -hf ibm-granite/granite-4.1-8b-GGUF:Q8_0
+# 4-bit q4_k_m
+ollama run granite4.1:8b
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-4-1-8b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

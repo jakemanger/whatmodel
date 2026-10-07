@@ -6,7 +6,7 @@
 
 Meituan (OneCAT team) · released 2025-09 · 9B params (3B active) · apache-2.0
 
-**score 19.5** ±3.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 18.3** ±3.7 · #134 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  24.2%    17.8   2026-05-13   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               49.9                 5% ▇
-                        weighted average                   = 19.5
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>  24.2%    16.4   2026-05-13   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle               49.9                 6% ▇
+                        weighted average                   = 18.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle               49.9               
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 (official generate_txt2img.py) · n…  ~25.1GB   18.3
+</pre>
+
+```sh
+# bf16 (official generate_txt2img.py) · nvidia only
+git clone https://github.com/onecat-ai/OneCAT && cd OneCAT && pip3 install -r requirements.txt && hf download onecat-ai/OneCAT-3B --local-dir OneCAT-3B && wget -O infinity_vae_d32reg.pth "https://huggingface.co/FoundationVision/Infinity/resolve/main/infinity_vae_d32reg.pth?download=true" && accelerate launch --num_processes=1 generate_txt2img.py --model_name_or_path="OneCAT-3B" --vae_path="infinity_vae_d32reg.pth" --prompt="Fashion model with iridescent makeup, prismatic light reflections, high-fashion studio setting." --output_dir="output/txt2img"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/onecat-3b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

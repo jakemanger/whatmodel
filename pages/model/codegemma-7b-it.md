@@ -6,9 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 39.2** ±1.8 · #335 of 462 · from 3 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 41.0** ±0.8 · #368 of 548 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,23 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.6%    37.7   2024-05-07   50% ▇▇▇▇▇▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    41.2   2024-06-19   33% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    38.6   2024-06-19   15% ▇▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 39.2
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      51.8%    41.0   2024-12-26   38% ▇▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       60.4%    41.6   2024-12-26   37% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           56.9%    42.3   2024-12-26    5% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 56.1%    40.8   2024-06-19    9% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      54.2%    38.8   2024-06-19    3% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.6%    38.1   2024-05-07    8% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 41.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~5.3GB   39.2
-8-bit q8_0    ~9.1GB   39.2
+4-bit q4_k_m  ~5.3GB   41.0
+8-bit q8_0    ~9.1GB   41.0
 </pre>
 
 ```sh

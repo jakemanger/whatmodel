@@ -6,24 +6,24 @@
 
 Mistral AI · released 2024-07 · 7.25B params · apache-2.0
 
-**score 42.0** ±3.0 · #307 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 43.2** ±1.8 · #348 of 548 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  weight
-<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    41.7    96% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0     4% ▇
-                        weighted average                       = 42.0
+source                  test                            score  implies  date        weight
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_mathstral-7B_5shots.zip">MMLU-Pro</a>                        42.0%    42.2                51% ▇▇▇▇▇▇
+<a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   9.0%    43.1                38% ▇▇▇▇▇
+<a name="first-party-mistral-scores"></a>Mistral AI vendor-rep…  <a href="https://huggingface.co/mistralai/Mathstral-7B-v0.1/blob/ec3a48484ef241dfe03282edcb0f25e564923823/README.md#evaluation">MATH (subset unspecified) (la…</a>  56.6%    48.2   2024-07-16    9% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 43.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt))</sub>
+<sub>Licences: MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · WildEval ZeroEval published results ([Apache-2.0](../../licenses/zeroeval-published-results-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0     4% ▇
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.85GB   42.0
-8-bit q8_0     ~9.2GB   42.0
+4-bit q4_k_m  ~4.85GB   43.2
+8-bit q8_0     ~9.2GB   43.2
 </pre>
 
 ```sh

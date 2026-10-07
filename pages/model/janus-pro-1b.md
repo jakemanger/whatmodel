@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 1.5B params · deepseek
 
-**score 27.5** ±3.7 · #111 of 116 · from 3 benchmark results across 2 sources
+**score 28.2** ±3.9 · #125 of 136 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    24.0   2026-06-02   55% ▇▇▇▇▇▇▇
-<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    27.2   2025-01-29   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    31.1   2025-01-29   17% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  26.0%    23.9   2026-06-02   49% ▇▇▇▇▇▇
+<a name="report-2501.17811v1"></a>DeepSeek-AI             <a href="https://arxiv.org/html/2501.17811v1">GenEval (lab)</a>                   73.0%    28.2   2025-01-29   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2501.17811v1">DPG-Bench (lab)</a>                 82.6%    31.9   2025-01-29   19% ▇▇
 prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 27.5
+                        weighted average                       = 28.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,6 +33,16 @@ api (DeepInfra) · $0.0005/image · [deepinfra.com](https://deepinfra.com/deepse
 
 <sub>[price source](https://deepinfra.com/deepseek-ai/Janus-Pro-1B): USD per generated image on DeepInfra (model page header '$0.0005 / image'; catalogue pricing type image\_units at 0.05 cents, not deprecated). Product: DeepInfra inference API, text-to-image. API model: deepseek-ai/Janus-Pro-1B. Settings: default output size, one image. Price basis: published per-image list rate. Currency: USD. Not a DeepSeek direct tariff. DeepInfra official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version              needs  score
+bf16 · nvidia only  ~5.5GB   28.2
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone https://github.com/deepseek-ai/Janus && cd Janus && pip install -e . && sed -i.bak 's#deepseek-ai/Janus-1.3B#deepseek-ai/Janus-Pro-1B#; s#"role": "User"#"role": "<|User|>"#; s#"role": "Assistant"#"role": "<|Assistant|>"#' generation_inference.py && python generation_inference.py
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/janus-pro-1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

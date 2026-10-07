@@ -6,7 +6,7 @@
 
 ByteDance Seed · released 2026-03 · proprietary
 
-**score 77.9** ±1.4 · #4 of 76 · from 8 benchmark results across 6 sources
+**score 78.0** ±1.3 · #3 of 87 · from 11 benchmark results across 8 sources
 
 ## How the score was worked out
 
@@ -14,21 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1479.2    78.3   2026-09-22   34% ▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1474.6    76.7   2026-09-22   21% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1479.2    78.1   2026-09-22   30% ▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1474.6    77.0   2026-09-22   18% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet">Arena video edit</a>                1364.6    75.7   2026-08-27    6% ▇
-<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  1471.0    81.6   2026-05-11   17% ▇▇
-<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1268.0    79.2   2026-09-25   11% ▇
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   51.0%    78.8   2026-08-26    4% ▇
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3">VWG-Bench think-with-video re…</a>   70.4%    69.8   2026-09-10    3% ▇
-<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   58.8%    75.3   2026-08-10    2% ▇
+<a name="video-worldreasonbench"></a>WorldReasonBench: Hum…  <a href="https://arxiv.org/html/2605.10434v1#S4.T4">WorldReasonBench human Elo (i…</a>  1471.0    81.0   2026-05-11   18% ▇▇
+<a name="visual-rapid-physics"></a>Rapidata/world-model-…  <a href="https://huggingface.co/datasets/Rapidata/world-model-physics/blob/cf0e0724866405b3b7fb8faae3e59b9f7569138b/README.md#rankings">Rapidata physics realism (I2V…</a>  1268.0    79.0   2026-09-25   12% ▇
+<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>   52.8%    80.9   2026-07-07    4% ▇
+<a name="visual-videoargus"></a>VideoArgus: Agentic R…  <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench T2V (rubric-…</a>   93.4%    80.0   2026-08-06    2% ▇
+                        <a href="https://arxiv.org/html/2608.05485v1#S3.T2">VideoArgus-Bench TI2V (rubric…</a>   89.7%    75.9   2026-08-06    2% ▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>   51.0%    78.7   2026-08-26    4% ▇
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#as1_Pt0.A1.T3">VWG-Bench think-with-video re…</a>   70.4%    70.0   2026-09-10    3% ▇
+<a name="visual-scivbench"></a>Sci-VBench: Evaluatin…  <a href="https://arxiv.org/html/2608.09873v1#S5.T4">Sci-VBench testmini (expert h…</a>   58.8%    74.9   2026-08-10    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 77.9
+                        weighted average                        = 78.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · WorldReasonBench: Human-Aligned Stress Testing of Video Generators as Future World-State Predictors ([CC-BY-4.0](../../licenses/video-worldreasonbench.txt)) · Rapidata/world-model-physics published dataset-card rankings ([CC-BY-4.0](../../licenses/visual-rapid-physics.txt)) · SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models ([CC-BY-4.0](../../licenses/visual-vwg-bench.txt)) · Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains ([CC-BY-4.0](../../licenses/visual-scivbench.txt))</sub>
 
 ## How to run it
 

@@ -6,31 +6,41 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 65.0** ±2.7 · #102 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 65.9** ±1.3 · #91 of 548 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1417.2    65.6   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 65.0
+source                  test                             score  implies  date        weight
+<a name="card-deepseek-ai-deepseek-v3-1-terminus"></a>DeepSeek-V3.1-Terminu…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Aider polyglot (225 exercises…</a>   76.1%    65.6   2025-09-22   23% ▇▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">GPQA Diamond (lab)</a>               80.7%    65.9   2025-09-22   16% ▇▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">LiveCodeBench (version unspec…</a>   74.9%    65.7   2025-09-22    7% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Verified (lab)</a>         68.4%    66.7   2025-09-22    6% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">MMLU-Pro (lab)</a>                   85.0%    65.8   2025-09-22    5% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">SWE-bench Multilingual (lab)</a>     57.8%    67.1   2025-09-22    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Humanity's Last Exam (lab)</a>       21.7%    70.3   2025-09-22    4% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp (lab)</a>                 38.5%    70.4   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">Terminal-Bench (pre-2.0 relea…</a>   36.7%    69.2   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/README.md">BrowseComp-ZH (lab)</a>              45.0%    63.1   2025-09-22    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1417.2    65.2   2026-10-02   25% ▇▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 65.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: DeepSeek-V3.1-Terminus model card ([MIT](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/LICENSE)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus/blob/19510d6dc61f79dbd925bd51ee8a9081c509a4b6/config.json): DeepSeek official configuration for DeepSeek-V3.1-Terminus (pinned commit): max\_position\_embeddings 163840 (yarn rope scaling, factor 40 over original 4096). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m  ~403.1GB   65.0
-8-bit q8_0    ~805.7GB   65.0
+4-bit q4_k_m  ~403.1GB   65.9
+8-bit q8_0    ~805.7GB   65.9
 </pre>
 
 ```sh

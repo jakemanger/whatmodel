@@ -6,9 +6,7 @@
 
 Google · released 2026-03 · closed weights
 
-**score 65.0** ±1.1 · #99 of 462 · from 8 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 64.6** ±1.0 · #103 of 548 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1255.7    60.8   2026-10-01   26% ▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1432.7    67.4   2026-10-02   15% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1234.6    68.0   2026-10-02   11% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        27.7%    66.0   2026-08-30   30% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     81.8%    66.8   2026-08-06    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         80.0%    65.4   2026-08-06    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    70.8   2026-08-06    2% ▇
-<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   24.9%    61.5   2026-05-08    3% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 65.0
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1255.7    60.6   2026-10-01   26% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1432.7    66.9   2026-10-02   15% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1234.6    67.5   2026-10-02   11% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        27.7%    65.6   2026-08-30   29% ▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         80.0%    65.1   2026-08-06    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     81.8%    66.4   2026-08-06    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    70.1   2026-08-06    2% ▇
+<a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   24.9%    61.2   2026-05-08    3% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 64.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

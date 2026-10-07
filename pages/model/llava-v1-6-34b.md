@@ -6,9 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 35.0** ±3.2 · #383 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 36.5** ±3.0 · #431 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  964.4    34.3   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 35.0
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  964.4    35.9   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 36.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,10 +25,12 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/liuhaotian/llava-v1.6-34b/blob/6754aa86582435ae12ef47db2de51180f0968aa7/config.json): LLaVA official configuration for llava-v1.6-34b (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   35.0
-8-bit q8_0    ~42.26GB   35.0
+4-bit q4_k_m  ~21.38GB   36.5
+8-bit q8_0    ~42.26GB   36.5
 </pre>
 
 ```sh

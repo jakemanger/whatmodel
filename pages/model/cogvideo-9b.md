@@ -6,7 +6,7 @@
 
 Tsinghua / Zhipu · released 2022-05 · 9.4B params · cogvideo-license
 
-**score 24.9** ±6.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 24.4** ±6.8 · #87 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.27 / 5    18.9   2023-12-26   81% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                19% ▇▇
-                        weighted average                          = 24.9
+<a name="visual-fetv-ccby"></a>FETV: A Benchmark for…  <a href="https://arxiv.org/html/2311.01813v3#A6.F20">FETV manual video quality (me…</a>  3.27 / 5    18.1   2023-12-26   80% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                20% ▇▇
+                        weighted average                          = 24.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -25,6 +25,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp16 (--fp16), both stages · nvidia only  ~51.7GB   24.4
+</pre>
+
+```sh
+# fp16 (--fp16), both stages · nvidia only
+git clone -b CogVideo https://github.com/zai-org/CogVideo && cd CogVideo && pip install -r requirements.txt && pip install git+https://github.com/Sleepychord/Image-Local-Attention && MASTER_PORT=$(shuf -n 1 -i 10000-65535) SAT_HOME=./sat_models python cogvideo_pipeline.py --input-source interactive --output-path ./output --parallel-size 1 --both-stages --use-guidance-stage1 --guidance-alpha 3.0 --generate-frame-num 5 --tokenizer-type fake --mode inference --distributed-backend nccl --fp16 --model-parallel-size 1 --temperature 1.05 --coglm-temperature2 0.89 --top_k 12 --sandwich-ln --seed 1234 --num-workers 0 --batch-size 4 --max-inference-batch-size 8
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cogvideo-9b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

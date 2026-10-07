@@ -6,27 +6,36 @@
 
 Zhipu AI (THUDM) · released 2023-10 · 6.24B params · chatglm3-6b-license
 
-**score 23.1** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 27.3** ±2.3 · #510 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1056.5    22.1   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 23.1
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1056.5    25.0   2026-10-02   74% ▇▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   56.0%    32.3   2024-02-19   23% ▇▇▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 27.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                      size  score
+4-bit fp16 · nvidia only  ~12.49GB   27.3
+</pre>
+
+```sh
+# 4-bit fp16 · nvidia only
+vllm serve zai-org/chatglm3-6b --trust-remote-code
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/chatglm3-6b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

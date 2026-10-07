@@ -6,9 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 39.3** ±3.2 · #333 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 40.5** ±3.0 · #375 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    38.7   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 5% ▇
-                        weighted average                        = 39.3
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    40.1   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 4% ▇
+                        weighted average                        = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,6 +29,16 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <sub>[context source](https://huggingface.co/CohereLabs/aya-vision-32b/blob/0554d66834922fc0f2e5f47a12f78464f4a98533/README.md): Context length stated on the official model card.</sub>
 
-no verified local download listed
+<pre>
+download        size  score
+4-bit fp16  ~66.28GB   40.5
+</pre>
+
+```sh
+# 4-bit fp16
+pip install 'git+https://github.com/huggingface/transformers.git@v4.49.0-AyaVision' torch accelerate && python -c "import torch; from transformers import AutoProcessor, AutoModelForImageTextToText; r='CohereLabs/aya-vision-32b'; p=AutoProcessor.from_pretrained(r); m=AutoModelForImageTextToText.from_pretrained(r, device_map='auto', torch_dtype=torch.float16); i=p.apply_chat_template([{'role': 'user', 'content': [{'type': 'image', 'url': 'https://pbs.twimg.com/media/Fx7YvfQWYAIp6rZ?format=jpg&name=medium'}, {'type': 'text', 'text': 'What does the text in the image say?'}]}], padding=True, add_generation_prompt=True, tokenize=True, return_dict=True, return_tensors='pt').to(m.device); g=m.generate(**i, max_new_tokens=300, do_sample=True, temperature=0.3); print(p.tokenizer.decode(g[0][i['input_ids'].shape[-1]:], skip_special_tokens=True))"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/aya-vision-32b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

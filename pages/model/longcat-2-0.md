@@ -6,9 +6,7 @@
 
 Meituan · released 2026-06 · 1600B params (48B active) · mit
 
-**score 71.8** ±2.2 · #42 of 462 · from 6 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 71.0** ±2.1 · #42 of 548 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (lab)</a>              88.9%    72.4   2026-09-25   37% ▇▇▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    72.3   2026-09-25   18% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    72.8   2026-09-25   17% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    73.2   2026-09-25   14% ▇▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    69.3   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    70.6   2026-09-25    5% ▇
+<a name="card-meituan-longcat--longcat-2.0"></a>meituan-longcat/LongC…  <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">GPQA Diamond (lab)</a>              88.9%    71.6   2026-09-25   40% ▇▇▇▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">FORTE (AGI-Eval) (lab)</a>          73.2%    71.4   2026-09-25   17% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    71.9   2026-09-25   17% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    72.2   2026-09-25   13% ▇▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    69.9   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    68.0   2026-09-25    5% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = 71.8
+                        weighted average                       = 71.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -48,6 +46,16 @@ api (LongCat API Platform (Meituan)) · $1.30/M blended · $0.75 in / $2.95 out 
 
 <sub>[price source](https://longcat.chat/platform/docs/pricing/longcat-2.0): USD per 1M tokens, LongCat API Platform pay-as-you-go list price for LongCat-2.0 (uncached input / output). A limited-time discounted price ($0.30 / $1.20) was also shown and is not used; cached input $0.015/1M excluded; CNY price table not used. Currency: USD. Meituan LongCat official pricing page, observed 2026-09-25. · [context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/meituan/longcat-2.0.toml)</sub>
 
-no verified local download listed
+<pre>
+download                       size  score
+4-bit fp8 · nvidia only  ~2051.18GB   71.0
+</pre>
+
+```sh
+# 4-bit fp8 · nvidia only
+sglang serve --trust-remote-code --model-path meituan-longcat/LongCat-2.0-FP8 --tp 8 --ep 8 --max-running-requests 64 --mem-fraction-static 0.92 --chunked-prefill-size 2048 --dsa-prefill-backend fa3 --kv-cache-dtype bfloat16 --model-loader-extra-config '{"enable_multithread_load":true,"num_threads":12}' --host 0.0.0.0 --port 30000
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/longcat-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

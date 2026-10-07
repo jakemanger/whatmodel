@@ -4,11 +4,24 @@
 
 # LTX-2.5
 
-Lightricks · released 2026-08
+Lightricks · released 2026-08 · 22B params · ltx-2.x-community
 
-[Model and usage documentation](https://huggingface.co/Lightricks/LTX-2.5)
+**score 68.0** ±5.2 · #16 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                            score  implies  date        weight
+<a name="visual-datapoint-video-bench"></a>Datapoint Video Bench…  <a href="https://huggingface.co/datasets/datapointai/text-to-video-human-preferences-326k/blob/49295b5d625c04480c92c33a2b4c502bf571110b/README.md#leaderboard">Datapoint Video Bench (overal…</a>  978.4    70.3   2026-09-28   89% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                11% ▇
+                        weighted average                       = 68.0
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Datapoint Video Bench leaderboard ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -16,10 +29,22 @@ api (Lightricks (LTX API)) · $0.12/sec · [docs.ltx.io](https://docs.ltx.io/pri
 
 <sub>[price source](https://docs.ltx.io/pricing.md): USD per second of generated video, LTX API text-to-video, pro model at 1280x720. Product: LTX API v2/text-to-video. API model: ltx-2-5-pro. Settings: resolution=1280x720, tier=pro. Price basis: published cost per second. ltx-2-5-fast $0.09/s at 720p; pro 1080p $0.17/s, 1440p $0.25/s, 2160p $0.39/s. Currency: USD. LTX API pricing documentation, observed 2026-09-25.</sub>
 
+<pre>
+version                                     needs  score
+fp8 · nvidia only                         ~13.7GB   68.0
+q8 · mac only                             ~26.9GB   68.0
+gguf-q8_0 22B dev + Gemma 4 12B q8_0 (s…  ~47.7GB   68.0
+</pre>
+
 ```sh
+# fp8 · nvidia only
 uv run python -m ltx_pipelines.distilled --transformer-path models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors --text-encoder-path models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --video-vae-path models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors --audio-vae-path models/ltx-2.5/vae/ltx-2.5-audio-vae-bf16.safetensors --duration-head-path models/ltx-2.5/model_patches/ltx-2.5-duration-head-bf16.safetensors --spatial-upsampler-path models/ltx-2.5/latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors --prompt "A golden retriever running through a sunny meadow, cinematic lighting" --seed 42 --output-path output_distilled.mp4 --quantization fp8-cast --offload cpu
+# q8 · mac only
 rapid-mlx serve ltx-2.5-mlx-q8
+# gguf-q8_0 22B dev + Gemma 4 12B q8_0 (sd.cpp)
 sd-cli -M convert -m models/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors --type q8_0 -o models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf && sd-cli -M vid_gen --diffusion-model models/ltx-2.5-22b-dev-transformer-Q8_0.gguf --vae models/ltx-2.5-video-vae-conv-bf16.safetensors --audio-vae models/ltx-2.5-audio-vae-bf16.safetensors --llm models/gemma4-12b-with-proj-ltx-2.5-Q8_0.gguf -p "A wide aerial shot of a red vintage convertible driving along a coastal cliff road at sunset, waves crashing below" --cfg-scale 3.0 --sampling-method euler -v -n "worst quality, low quality, blurry, distorted, artifacts" -W 1280 -H 720 --diffusion-fa --offload-to-cpu --video-frames 121 --fps 24 -o t2v.webm
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ltx-2-5)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/ltx-2-5) · [JSON](https://whatmodel.sh/api?format=json&all=1)

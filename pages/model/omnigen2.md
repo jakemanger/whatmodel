@@ -6,7 +6,7 @@
 
 BAAI · released 2025-06 · 4B params · apache-2.0
 
-**score 40.4** ±2.3 · #88 of 116 · from 5 benchmark results across 4 sources
+**score 39.6** ±2.0 · #100 of 136 · from 9 benchmark results across 8 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,18 +16,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      37.6%    41.7   2026-05-13   39% ▇▇▇▇▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  74.0%    40.2   2026-03-29   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  58.0%    31.3   2026-03-29    7% ▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         61.2%    39.9   2025-12-01   15% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     888.0    40.8   2026-03-30   14% ▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      37.6%    40.7   2026-05-13   29% ▇▇▇▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided gener…</a>  74.0%    39.4   2026-03-29   17% ▇▇
+                        <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  58.0%    30.2   2026-03-29    5% ▇
+<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>  68.7%    41.1   2026-04-21   14% ▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         61.2%    39.1   2025-12-01   13% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     888.0    38.9   2026-03-30    9% ▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  60.9%    46.3   2025-11-14    6% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>  22.4%    30.6   2026-03-26    2% ▇
+<a name="visual-knowledge-visualization"></a>Knowledge Visualizati…  <a href="https://arxiv.org/html/2604.22302v1#S4.T2">Knowledge Visualization T2I (…</a>  18.5%    30.8   2026-04-24    2% ▇
 prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 40.4
+                        weighted average                       = 39.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Knowledge Visualization: A Benchmark and Method for Knowledge-Intensive Text-to-Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -45,6 +49,16 @@ api (fal.ai) · $0.15/image · [fal.ai](https://fal.ai/models/fal-ai/omnigen-v2)
 
 <sub>[price source](https://fal.ai/models/fal-ai/omnigen-v2): USD for one 1-megapixel output: fal bills fal-ai/omnigen-v2 (OmniGen V2 / OmniGen2) $0.15 per megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless image generation and editing. API model: fal-ai/omnigen-v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not a BAAI direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                             needs  score
+bf16 (official repo) · nvidia only  ~17GB   39.6
+</pre>
+
+```sh
+# bf16 (official repo) · nvidia only
+git clone https://github.com/VectorSpaceLab/OmniGen2.git && cd OmniGen2 && pip install torch==2.6.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu124 && pip install -r requirements.txt && bash example_t2i.sh
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/omnigen2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

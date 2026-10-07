@@ -4,9 +4,9 @@
 
 # Show-o (show-o-demo-512)
 
-Show Lab, NUS · apache-2.0
+Show Lab, NUS · released 2024-10 · 1.3B params · apache-2.0
 
-**score 35.4** ±3.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.0** ±3.3 · #113 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>  42.8%    34.7   2026-07-01   95% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-t2i-reasonbench"></a>T2I-ReasonBench: Benc…  <a href="https://aclanthology.org/2026.findings-acl.433.pdf#page=6">T2I-ReasonBench (overall)</a>  42.8%    35.4   2026-07-01   95% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle              49.9                 5% ▇
-                        weighted average                  = 35.4
+                        weighted average                  = 36.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle              49.9                
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version              needs  score
+fp32 · nvidia only  ~7.9GB   36.0
+</pre>
+
+```sh
+# fp32 · nvidia only
+git clone https://github.com/showlab/Show-o && cd Show-o && pip3 install -r requirements.txt && wandb login && python3 inference_t2i.py config=configs/showo_demo_512x512.yaml batch_size=1 validation_prompts_file=validation_prompts/showoprompts.txt guidance_scale=5 generation_timesteps=50 mode='t2i'
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/show-o-demo-512) · [JSON](https://whatmodel.sh/api?format=json&all=1)

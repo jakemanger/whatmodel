@@ -6,7 +6,7 @@
 
 Luma AI · closed weights
 
-**score 51.3** ±1.9 · #70 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.2** ±1.9 · #76 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,15 +15,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1035.7    51.3   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 51.3
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1035.7    51.0   2026-09-24   86% ▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>   955.5    44.7   2025-09-03   13% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 50.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>
 
 ## How to run it
 

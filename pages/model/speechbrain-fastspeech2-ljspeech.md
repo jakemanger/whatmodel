@@ -4,7 +4,7 @@
 
 # FastSpeech 2 + HiFi-GAN (SpeechBrain LJ Speech)
 
-SpeechBrain
+SpeechBrain · released 2022-11
 
 SpeechBrain-trained FastSpeech2 acoustic model plus its LJ Speech HiFi-GAN vocoder. Original-paper MOS is not transferred to this checkpoint. CPU run command adapted from model card; memory is an estimated 4GB runtime budget, not a local measurement.
 

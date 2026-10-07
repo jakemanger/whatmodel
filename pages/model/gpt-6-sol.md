@@ -6,9 +6,7 @@
 
 OpenAI · released 2026-09 · closed weights
 
-**score 79.0** ±0.7 · #7 of 462 · from 19 benchmark results across 6 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 77.9** ±0.7 · #7 of 548 · from 19 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -16,27 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                 score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            89.8%    79.9   2026-09-22   14% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               90.0%    81.9   2026-09-22    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           58.3%    79.5   2026-09-23    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    53.3%    81.7   2026-09-22    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.3%    75.5   2026-09-22    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            100.0%    82.2   2026-09-22    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    60.7%    77.9   2026-09-22    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         56.0%    82.2   2026-09-22    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1689.0    78.9   2026-10-01   12% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0971 IPS    80.6   2026-10-02   12% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1457.2    70.4   2026-10-02    7% ▇
-<a name="terminal-bench-leaderboard-submissions"></a>Terminal-Bench 4.0 of…  <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-sol-max-codex.json">Terminal-Bench 4.0</a>                   49.4%    81.0   2026-09-30    8% ▇
-<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (T…</a>       82.7%    77.5   2026-09-30    3% ▇
-                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>       97.8%    82.6   2026-09-30    3% ▇
-<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        68.8%    76.3   2026-09-22    2% ▇
-                        <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">Agents' Last Exam (metric/har…</a>       56.4%    80.4   2026-09-22    2% ▇
-                        <a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Hard (lab)</a>               22.1%    67.4   2026-09-22    1% ▇
-                        <a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench (lab)</a>                    47.1%    69.7   2026-09-22    1% ▇
-<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>       65.6%    80.9   2026-09-22    1% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            89.8%    78.7   2026-09-22   14% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               90.0%    80.7   2026-09-22    8% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           58.3%    78.4   2026-09-23    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    53.3%    80.6   2026-09-22    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>            100.0%    80.8   2026-09-22    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         94.3%    74.5   2026-09-22    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    60.7%    76.8   2026-09-22    2% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         56.0%    80.8   2026-09-22    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1689.0    77.7   2026-10-01   13% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0971 IPS    79.5   2026-10-02   12% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1457.2    69.6   2026-10-02    7% ▇
+<a name="terminal-bench-leaderboard-submissions"></a>Terminal-Bench 4.0 of…  <a href="https://github.com/harbor-framework/terminal-bench/blob/8d0eb80ae63971cdcc89b37a672a3bfe2a6184a1/leaderboard/submissions/2026-09-30-openai-gpt-6-sol-max-codex.json">Terminal-Bench 4.0</a>                   49.4%    79.9   2026-09-30    7% ▇
+<a name="roblox-llm-leaderboard"></a>Roblox LLM Leaderboard  <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">Luau Leetcode fully solved (T…</a>       82.7%    76.5   2026-09-30    3% ▇
+                        <a href="https://huggingface.co/spaces/TorpedoSoftware/Roblox-LLM-Leaderboard/blob/676755cd82ed2886048e282f1a6106ddf6e5fea5/data/leaderboard.json">RobloxQA v2.0 multiple choice…</a>       97.8%    81.2   2026-09-30    3% ▇
+<a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">DeepSWE v1.1 (resolved) (lab)</a>        68.8%    75.2   2026-09-22    2% ▇
+                        <a href="https://openai.com/index/introducing-gpt-6-sol-and-luna">Agents' Last Exam (metric/har…</a>       56.4%    79.2   2026-09-22    2% ▇
+                        <a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench Hard (lab)</a>               22.1%    66.5   2026-09-22    1% ▇
+                        <a href="https://deploymentsafety.openai.com/gpt-6-astra">HealthBench (lab)</a>                    47.1%    68.8   2026-09-22    1% ▇
+<a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>       65.6%    79.6   2026-09-22    1% ▇
 prior                   pull toward the middle                        50.0                 0% ▇
-                        weighted average                            = 79.0
+                        weighted average                            = 77.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

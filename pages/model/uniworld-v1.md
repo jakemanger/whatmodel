@@ -4,9 +4,9 @@
 
 # UniWorld-V1
 
-PKU-YuanGroup · released 2025-06
+PKU-YuanGroup · released 2025-06 · 20.37B params
 
-**score 39.4** ±2.6 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 38.7** ±2.4 · comparison only: no current run option verified · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,16 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      34.2%    37.6   2026-05-13   50% ▇▇▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  55.0%    44.5   2026-06-02   27% ▇▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         56.0%    35.5   2025-12-01   20% ▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 39.4
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      34.2%    36.5   2026-05-13   40% ▇▇▇▇▇
+<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>  65.3%    38.4   2026-04-21   19% ▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  55.0%    45.3   2026-06-02   18% ▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         56.0%    34.6   2025-12-01   17% ▇▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>  29.0%    42.1   2026-03-26    3% ▇
+prior                   pull toward the middle                   49.9                 2% ▇
+                        weighted average                       = 38.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt))</sub>
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · HP-Edit: A Human-Preference Post-Training Framework for Image Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (3)</summary>
 

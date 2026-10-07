@@ -4,9 +4,9 @@
 
 # Hailuo 01 (MiniMax video-01 / I2V-01)
 
-MiniMax · closed weights
+MiniMax · released 2024-08 · closed weights
 
-**score 46.2** ±3.9 · #49 of 76 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.1** ±3.9 · #53 of 87 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  60.0%    45.4   2025-04-21   47% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  61.0%    46.5   2025-04-21   47% ▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                 7% ▇
-                        weighted average                       = 46.2
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S5.T5">SkyReels-Bench T2V (human rat…</a>  60.0%    44.9   2025-04-21   47% ▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  61.0%    44.6   2025-04-21   46% ▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                 6% ▇
+                        weighted average                       = 45.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

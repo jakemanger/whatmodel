@@ -6,7 +6,7 @@
 
 Tencent · released 2026-01 · 80B params · tencent-hunyuan-community
 
-**score 64.9** ±3.6 · #20 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 61.5** ±2.4 · #30 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,15 +15,16 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1302.7    65.7   2026-09-30   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 5% ▇
-                        weighted average                = 64.9
+source                  test                             score  implies  date        weight
+<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    3.2%    59.9   2026-09-27   62% ▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1302.7    65.3   2026-09-30   35% ▇▇▇▇
+prior                   pull toward the middle                    49.9                 3% ▇
+                        weighted average                        = 61.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -31,6 +32,16 @@ api (fal.ai) · $0.090/image · [fal.ai](https://fal.ai/models/fal-ai/hunyuan-im
 
 <sub>[price source](https://fal.ai/models/fal-ai/hunyuan-image/v3/instruct/text-to-image): USD for one 1-megapixel output: fal bills this endpoint $0.09 per megapixel (price = rate × 1 MP; fal's rounding for 1024×1024 ≈ 1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/hunyuan-image/v3/instruct/text-to-image ('Instruct version of Hunyuan-Image 3.0'); the edit endpoint fal-ai/hunyuan-image/v3/instruct/edit has the same $0.09/MP rate. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate × 1 MP. Currency: USD. Not a Tencent direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                      needs  score
+bf16 (official, multi-GPU) · nvidia only  ~202.7GB   61.5
+</pre>
+
+```sh
+# bf16 (official, multi-GPU) · nvidia only
+git clone https://github.com/Tencent-Hunyuan/HunyuanImage-3.0.git && cd HunyuanImage-3.0 && pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt && hf download tencent/HunyuanImage-3.0-Instruct --local-dir ./HunyuanImage-3-Instruct && python3 -c "from transformers import AutoModelForCausalLM; m=AutoModelForCausalLM.from_pretrained('./HunyuanImage-3-Instruct', attn_implementation='sdpa', trust_remote_code=True, torch_dtype='auto', device_map='auto', moe_impl='eager', moe_drop_tokens=True); m.load_tokenizer('./HunyuanImage-3-Instruct'); cot,s=m.generate_image(prompt='Make a new fridge magnet from the logo in image 1 using the fridge-magnet material in image 2', image=['./assets/demo_instruct_imgs/input_1_0.png','./assets/demo_instruct_imgs/input_1_1.png'], seed=42, image_size='auto', use_system_prompt='en_unified', bot_task='think_recaption', infer_align_image_size=True, diff_infer_steps=50, verbose=2); s[0].save('image_edit.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanimage-3-0-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

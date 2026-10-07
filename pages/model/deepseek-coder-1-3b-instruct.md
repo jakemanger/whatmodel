@@ -6,9 +6,7 @@
 
 DeepSeek · released 2023-10 · 1.35B params · deepseek
 
-**score 38.2** ±1.1 · #353 of 462 · from 5 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 42.0** ±0.7 · #356 of 548 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,18 +14,21 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               34.9%    39.1   2024-03-28   40% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       63.4%    42.5   2024-03-28   32% ▇▇▇▇
-<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   6.5%    33.2   2024-12-26   19% ▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      27.2%    30.1   2024-01-03    5% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      28.7%    29.1   2024-01-03    5% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 38.2
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      60.4%    43.7   2024-12-26   25% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       65.9%    43.4   2024-12-26   24% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           54.8%    41.0   2024-12-26    4% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       63.4%    43.5   2024-03-28   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               34.9%    40.4   2024-03-28   13% ▇▇
+<a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   6.5%    35.4   2024-12-26    8% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      27.2%    29.9   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      28.7%    28.4   2024-01-03    1% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 42.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · LiveCodeBench official website results ([CC-BY-SA-4.0](../../licenses/lcb-sharealike-NOTICE.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
 ## How to run it
 
@@ -35,8 +36,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~0.874GB   38.2
-8-bit q8_0      ~1.4GB   38.2
+4-bit q4_k_m  ~0.874GB   42.0
+8-bit q8_0      ~1.4GB   42.0
 </pre>
 
 ```sh

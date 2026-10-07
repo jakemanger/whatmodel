@@ -6,7 +6,7 @@
 
 ESPnet (CMU WAVLab) · released 2025-01 · 1.01B params · cc-by-4.0
 
-**score 54.9** ±4.2 · #50 of 113 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 53.5** ±3.7 · #62 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,10 +15,12 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    55.2   2026-03-26   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 7% ▇
-                      weighted average                       = 54.9
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.4%    54.8   2026-03-26   61% ▇▇▇▇▇▇▇
+<a name="first-party-espnet-owsm-v4-report"></a>OWSM v4 technical rep…  <a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-other WER (l…</a>   4.9%    52.1   2025-05-31   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2506.00338v1">LibriSpeech test-clean WER (l…</a>   2.6%    50.2   2025-05-31    6% ▇
+prior                   pull toward the middle                   49.7                 5% ▇
+                        weighted average                       = 53.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +31,7 @@ prior                 pull toward the middle                   49.7             
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.35GB   54.9
+fp32 · nvidia only  ~5.35GB   53.5
 </pre>
 
 ```sh

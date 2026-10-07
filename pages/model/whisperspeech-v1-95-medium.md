@@ -6,7 +6,7 @@
 
 Collabora · released 2024-05 · mit
 
-**score 23.5** ±2.9 · comparison only: no current run option verified · from 3 benchmark results across 2 sources
+**score 23.3** ±3.0 · #92 of 98 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.68 / 5    20.2   2025-05-11   79% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.12 / 5    35.5   2025-05-11   10% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.2%    30.4   2025-05-15    7% ▇
-prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 23.5
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  2.68 / 5    19.8   2025-05-11   79% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.12 / 5    36.0   2025-05-11   10% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.2%    30.5   2025-05-15    7% ▇
+prior                   pull toward the middle                      49.8                 4% ▇
+                        weighted average                          = 23.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,6 +29,16 @@ prior                   pull toward the middle                      49.9        
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp16 (whisperspeech 0.8.9) · nvidia only  ~3.18GB   23.3
+</pre>
+
+```sh
+# fp16 (whisperspeech 0.8.9) · nvidia only
+uv run --python 3.12 --with whisperspeech==0.8.9 --with webdataset --with torchcodec python -c "from whisperspeech.pipeline import Pipeline; pipe = Pipeline(t2s_ref='WhisperSpeech/WhisperSpeech:t2s-v1.95-medium-7lang.model', s2a_ref='WhisperSpeech/WhisperSpeech:s2a-v1.95-medium-7lang.model'); pipe.generate_to_file('output.wav', 'This is a test')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/whisperspeech-v1-95-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

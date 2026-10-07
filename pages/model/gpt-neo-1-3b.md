@@ -6,9 +6,7 @@
 
 EleutherAI · released 2021-03 · 1.3B params · mit
 
-**score 26.6** ±1.6 · #437 of 462 · from 6 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 23.1** ±1.7 · #525 of 548 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                55.0%    25.7   2021-08-06   38% ▇▇▇▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 48.9%    26.2   2021-08-06   27% ▇▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  57.2%    28.7   2021-08-06   13% ▇▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      71.1%    27.2   2021-08-06    9% ▇
-<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  54.4%    25.3   2021-04-12    7% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.1%    26.5   2021-04-12    5% ▇
+<a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande (lab)</a>                55.0%    22.2   2021-08-06   40% ▇▇▇▇▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag (lab)</a>                 48.9%    22.4   2021-08-06   25% ▇▇▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  57.2%    25.3   2021-08-06   12% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA (lab)</a>                      71.1%    23.5   2021-08-06    9% ▇
+<a name="eleutherai-gpt-neo-2-7b-card"></a>EleutherAI GPT-Neo 2.…  <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">PubMedQA (lab)</a>                  54.4%    21.8   2021-04-12    8% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-neo-2.7B/blob/e24fa291132763e59f4a5422741b424fb5d59056/README.md">MathQA (lab)</a>                    24.1%    23.0   2021-04-12    6% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 26.6
+                        weighted average                       = 23.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,9 +30,11 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/EleutherAI/gpt-neo-1.3B/blob/dbe59a7f4a88d01d1ba9798d78dbe3fe038792c8/config.json): EleutherAI official configuration for gpt-neo-1.3B (pinned commit): max\_position\_embeddings 2048. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download       size  score
-4-bit fp32  ~5.31GB   26.6
+4-bit fp32  ~5.31GB   23.1
 </pre>
 
 ```sh

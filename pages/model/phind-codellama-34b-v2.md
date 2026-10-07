@@ -6,9 +6,7 @@
 
 Phind · released 2023-08 · 34B params · llama2
 
-**score 44.0** ±1.2 · #284 of 462 · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 45.5** ±0.7 · #308 of 548 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,24 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       45.6%    43.6   2024-03-28   49% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               70.7%    45.2   2024-03-28   39% ▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              47.2%    44.0   2024-01-03    6% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              39.7%    38.2   2024-01-03    6% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 44.0
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              67.1%    45.9   2024-12-26   28% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               71.3%    45.2   2024-12-26   27% ▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               70.7%    45.9   2024-03-28   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       45.6%    44.9   2024-03-28   14% ▇▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              47.2%    45.4   2024-01-03    2% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              39.7%    39.0   2024-01-03    1% ▇
+prior                   pull toward the middle           50.0                 0% ▇
+                        weighted average               = 45.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2/blob/949f61e203f91b412efe8f679c798f09f0ff4b0c/config.json): Phind official configuration for Phind-CodeLlama-34B-v2 (pinned commit): max\_position\_embeddings 16384. Configured maximum, not a benchmarked long-context claim: the official card states no context length; it says fine-tuning used a sequence length of 4096 tokens. Observed 2026-10-07.</sub>
+
 <pre>
 download       size  score
-4-bit q4_k_m  ~20GB   44.0
-8-bit q8_0    ~36GB   44.0
+4-bit q4_k_m  ~20GB   45.5
+8-bit q8_0    ~36GB   45.5
 </pre>
 
 ```sh

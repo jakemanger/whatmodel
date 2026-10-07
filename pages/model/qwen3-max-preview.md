@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-09 · closed weights
 
-**score 67.0** ±2.7 · #78 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 66.6** ±2.6 · #79 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1434.4    67.6   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1434.4    67.1   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 67.0
+                        weighted average                = 66.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,9 +25,9 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
-api (Alibaba Cloud Model Studio) · price unknown · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
+api (Alibaba Cloud Model Studio) · $2.40/M blended · $1.2 in / $6 out per 1M tokens · [alibabacloud.com](https://www.alibabacloud.com/help/en/model-studio/text-generation-model)
 
-<sub>[context source](https://www.alibabacloud.com/help/en/model-studio/model-qwen3-max): Context limit from the maker's documentation, observed 2026-10-06.</sub>
+<sub>[price source](https://www.alibabacloud.com/help/en/model-studio/model-pricing): USD per 1M tokens, Singapore (International), qwen3-max-preview (Non-Thinking and Thinking modes), 0\<Token\<=32K input tier: input $1.2, output $6 (32K-128K $2.4/$12, 128K-256K $3/$15). Context-cache discount, free quota and other deployments (US/Global $0.861/$3.441 up to 32K) excluded, following the International convention of other Alibaba rows. Observed 2026-10-07. · [context source](https://www.alibabacloud.com/help/en/model-studio/model-qwen3-max): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
 no verified local download listed
 

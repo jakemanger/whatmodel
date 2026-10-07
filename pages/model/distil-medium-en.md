@@ -6,7 +6,7 @@
 
 Hugging Face (Distil-Whisper) · released 2023-10 · 0.39B params · mit
 
-**score 45.3** ±3.2 · #88 of 113 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 45.6** ±3.1 · #89 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -15,22 +15,23 @@ Score within the [Open ASR English short-form WER (March 2026)](https://whatmode
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.8%    49.0   2026-03-26   53% ▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  19.0%    40.3   2026-03-26   43% ▇▇▇▇▇
-prior                 pull toward the middle                   49.7                 4% ▇
-                      weighted average                       = 45.3
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.8%    48.5   2026-03-26   42% ▇▇▇▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  19.0%    39.3   2026-03-26   36% ▇▇▇▇
+<a name="speech-distil-whisper-readme-mit"></a>huggingface/distil-wh…  <a href="https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/README.md">Distil-Whisper · 4-set out-of…</a>  11.1%    50.6   2024-03-21   18% ▇▇
+prior                   pull toward the middle                   49.7                 4% ▇
+                        weighted average                       = 45.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · huggingface/distil-whisper README ([MIT](https://github.com/huggingface/distil-whisper/blob/a66f5c85be1e32c504e8ed68df7802d2b96db4c0/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-fp16     ~1.44GB   45.3
+fp16     ~1.44GB   45.6
 </pre>
 
 ```sh

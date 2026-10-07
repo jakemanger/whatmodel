@@ -6,7 +6,7 @@
 
 Tencent AI Lab / HKUST · released 2023-10
 
-**score 27.8** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 27.1** ±2.3 · #82 of 87 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.08 / 100    26.6    26% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  60.85 / 100    29.1    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  55.89 / 100    24.5    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.95 / 100    29.2    23% ▇▇▇
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.08 / 100    25.8    26% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  60.85 / 100    28.3    25% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  55.89 / 100    23.7    24% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  61.95 / 100    28.5    23% ▇▇▇
 prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 27.8
+                        weighted average                             = 27.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,16 @@ prior                   pull toward the middle                         49.9     
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                    needs  score
+official script (checkpoint as stored) …  ~8.1GB   27.1
+</pre>
+
+```sh
+# official script (checkpoint as stored) · nvidia only
+git clone https://github.com/AILab-CVC/VideoCrafter && cd VideoCrafter && git checkout a11f5ae2b18db91d2c1b191153ebc0c3a5dd87e8 && conda create -n videocrafter python=3.8.5 -y && conda activate videocrafter && pip install -r requirements.txt && mkdir -p checkpoints/base_1024_v1 && wget -O checkpoints/base_1024_v1/model.ckpt https://huggingface.co/VideoCrafter/Text2Video-1024/resolve/main/model.ckpt && sh scripts/run_text2video.sh
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/videocrafter1-t2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

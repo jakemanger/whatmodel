@@ -4,9 +4,9 @@
 
 # Runway Gen-4
 
-Runway · closed weights
+Runway · released 2025-03 · closed weights
 
-**score 51.5** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.6** ±4.3 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,14 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  67.8%    51.7   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 51.5
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  67.8%    50.3   2025-04-21   57% ▇▇▇▇▇▇▇
+<a name="visual-mindworldbench"></a>MindWorldBench: Evalu…  <a href="https://arxiv.org/html/2609.39147v1#S3.T1">MindWorldBench intention accu…</a>  18.6%    45.6   2026-09-30   35% ▇▇▇▇
+prior                   pull toward the middle                   49.9                 8% ▇
+                        weighted average                       = 48.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · MindWorldBench: Evaluating Mental-State-to-Behavior Reasoning in Image-to-Video Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

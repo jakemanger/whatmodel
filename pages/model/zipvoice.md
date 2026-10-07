@@ -6,7 +6,7 @@
 
 k2-fsa (Xiaomi) · released 2025-06 · 0.123B params · apache-2.0
 
-**score 54.1** ±6.7 · #44 of 94 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 56.9** ±4.0 · #38 of 98 · from 6 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,22 +16,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    55.0   2026-05-24   82% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                18% ▇▇
-                        weighted average                       = 54.1
+<a name="speech-omnivoice-report-ccby"></a>OmniVoice: Towards Om…  <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · speaker si…</a>  75.1%    55.5   2026-04-01   18% ▇▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · speaker si…</a>  69.7%    55.3   2026-04-01   17% ▇▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-en · Whisper la…</a>   1.7%    63.6   2026-04-01   16% ▇▇
+                        <a href="https://arxiv.org/html/2604.00688v3">Seed-TTS test-zh · Paraformer…</a>   1.4%    56.9   2026-04-01   15% ▇▇
+<a name="speech-rvcbench-ccby"></a>RVCBench: Benchmarkin…  <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>  58.0%    56.0   2026-05-24   27% ▇▇▇
+                        <a href="https://arxiv.org/html/2602.00443v2">RVCBench LibriTTS clean voice…</a>   5.0%   177.0   2026-05-24    0% ▇
+prior                   pull toward the middle                   49.8                 6% ▇
+                        weighted average                       = 56.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
+<sub>Licences: OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · RVCBench: Benchmarking Robustness of Voice Cloning Across Modern Audio Generation Models ([CC BY 4.0](../../licenses/speech-rvcbench-ccby.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                      needs  score
-fp32 (ZipVoice repo)       ~0.55GB   54.1
-onnx-fp32 (ZipVoice repo)  ~0.55GB   54.1
-onnx-int8 (ZipVoice repo)  ~0.18GB   54.1
+fp32 (ZipVoice repo)       ~0.55GB   56.9
+onnx-fp32 (ZipVoice repo)  ~0.55GB   56.9
+onnx-int8 (ZipVoice repo)  ~0.18GB   56.9
 </pre>
 
 ```sh

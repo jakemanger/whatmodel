@@ -6,9 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 43.0** ±0.9 · #295 of 462 · from 6 benchmark results across 4 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 44.6** ±0.6 · #324 of 548 · from 8 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -16,26 +14,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                47.7%    44.5   2024-03-28   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        66.5%    43.6   2024-03-28   23% ▇▇▇
-<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    45.8   2024-01-31   17% ▇▇
-                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    42.7   2024-01-31    8% ▇
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    45.7   2024-05-07   13% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    29.6   2026-10-02   11% ▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                       65.9%    45.5   2024-12-26   22% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                        72.0%    45.5   2024-12-26   21% ▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        66.5%    44.5   2024-03-28   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                47.7%    45.8   2024-03-28   11% ▇
+<a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    45.8   2024-01-31   10% ▇
+                        <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    43.2   2024-01-31    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    32.0   2026-10-02    5% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>   58.9%    45.9   2024-05-07    5% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 43.0
+                        weighted average                        = 44.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · Code Llama: Open Foundation Models for Code ([CC BY 4.0](../../licenses/paper-2308.12950v3-CC-BY-4.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/codellama/CodeLlama-70b-Instruct-hf/blob/397cae981dffaf5d5c9c90e89a0a75a850528b70/README.md): Meta official model card: "It was fine-tuned with up to 16k tokens. This variant does not support long context of up to 100k tokens." Stated rounded 16k, as for codellama-70b. The repo's config.json sets max\_position\_embeddings 4096, which the card does not explain. Observed 2026-10-07.</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~41.9GB   43.0
-8-bit q8_0    ~83.3GB   43.0
+4-bit q4_k_m  ~41.9GB   44.6
+8-bit q8_0    ~83.3GB   44.6
 </pre>
 
 ```sh

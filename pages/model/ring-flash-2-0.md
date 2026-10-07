@@ -6,9 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 54.0** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 54.5** ±2.6 · #206 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1322.6    54.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1322.6    54.7   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 54.0
+                        weighted average                = 54.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,16 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                        size  score
+16-bit bf16 · nvidia only  ~205.78GB   54.5
+</pre>
+
+```sh
+# 16-bit bf16 · nvidia only
+vllm serve inclusionAI/Ring-flash-2.0
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ring-flash-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

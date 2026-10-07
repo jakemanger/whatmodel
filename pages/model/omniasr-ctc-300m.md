@@ -6,7 +6,7 @@
 
 Meta · released 2025-11 · 0.33B params · apache-2.0
 
-**score 34.5** ±4.4 · #97 of 113 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 44.3** ±2.7 · #91 of 117 · from 4 benchmark results across 3 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,21 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>       14.9%    32.6   2026-03-26   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  46.7%    38.8   2025-11-13   10% ▇
-prior                   pull toward the middle                   49.7                 7% ▇
-                        weighted average                       = 34.5
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>       14.9%    41.4   2026-03-26   69% ▇▇▇▇▇▇▇▇
+<a name="speech-omniasr-paper-bysa"></a>Omnilingual ASR: Open…  <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · FLEUR…</a>  11.8%    52.9   2025-11-12   14% ▇▇
+                        <a href="https://arxiv.org/html/2511.09690v1">Omnilingual ASR paper · Commo…</a>  17.6%    53.1   2025-11-12   10% ▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  46.7%    41.5   2025-11-13    5% ▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 44.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages ([CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)) · Open Universal Arabic ASR Leaderboard ([Apache-2.0](../../licenses/speech-stt-arabic-oual-elm-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version    needs  score
-bf16     ~1.29GB   34.5
+bf16     ~1.29GB   44.3
 </pre>
 
 ```sh

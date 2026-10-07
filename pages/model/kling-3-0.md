@@ -6,7 +6,7 @@
 
 Kuaishou (Kling AI) · released 2026-02 · proprietary
 
-**score 69.5** ±6.1 · #13 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 67.1** ±4.2 · #18 of 87 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    73.2   2026-08-26   84% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                16% ▇▇
-                        weighted average                       = 69.5
+<a name="visual-switch-bench"></a>SWITCH: Benchmarking …  <a href="https://arxiv.org/html/2511.17649v5#S4.T3">SWITCH interactive-interface …</a>  37.4%    64.4   2026-07-07   39% ▇▇▇▇▇
+<a name="visual-vgi"></a>VGI-Bench: Probing Vi…  <a href="https://arxiv.org/html/2608.19583v3#S3.T2">VGI-Bench visual reasoning (I…</a>  44.0%    73.7   2026-08-26   38% ▇▇▇▇▇
+<a name="visual-mechverse"></a>MechVerse: Evaluating…  <a href="https://arxiv.org/html/2605.14843v1#S4.T1">MechVerse mechanical-motion I…</a>  76.6%    65.7   2026-05-14   15% ▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 67.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt))</sub>
+<sub>Licences: SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios ([CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)) · VGI-Bench: Probing Visual Intelligence in Video Generation Models ([CC-BY-4.0](../../licenses/visual-vgi.txt)) · MechVerse: Evaluating Physical Motion Consistency in Video Generation Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 

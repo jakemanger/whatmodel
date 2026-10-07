@@ -4,9 +4,9 @@
 
 # Grad-TTS + HiFi-GAN (10 steps)
 
-Grad-TTS authors / Huawei Noah · released 2021-05
+Grad-TTS authors / Huawei Noah · released 2021-05 · 0.0148B params
 
-**score 65.1** ±21.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 65.1** ±21.7 · #1 of 1 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Grad-TTS 2021 LJ Speech human MOS](https://whatmodel.sh/tts?set=gradtts2021-ljspeech-mos&score=set) comparison set only.
 
@@ -27,6 +27,16 @@ prior                   pull toward the middle                      50.0    37% 
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp32 (huawei-noah/Speech-Backbones Grad…  ~0.12GB   65.1
+</pre>
+
+```sh
+# fp32 (huawei-noah/Speech-Backbones Grad-TTS repo) · nvidia only
+git clone https://github.com/huawei-noah/Speech-Backbones && cd Speech-Backbones/Grad-TTS && pip install -r requirements.txt && cd model/monotonic_align && python setup.py build_ext --inplace && cd ../.. && sed -i 's/^pe_scale = 1000/pe_scale = 1/' params.py && python inference.py -f resources/filelists/synthesis.txt -c checkpts/grad-tts-old.pt -t 10
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/grad-tts-10-hifigan) · [JSON](https://whatmodel.sh/api?format=json&all=1)

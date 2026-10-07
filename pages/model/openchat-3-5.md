@@ -6,9 +6,7 @@
 
 OpenChat · released 2023-10 · 7B params · apache-2.0
 
-**score 36.7** ±2.3 · #366 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 41.1** ±1.7 · #365 of 548 · from 6 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1183.0    37.4   2026-10-02   70% ▇▇▇▇▇▇▇▇
-<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   37.1%    33.9   2024-01-03   28% ▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 36.7
+<a name="card2-openchat-openchat-3-5"></a>OpenChat 3.5 model ca…  <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">HumanEval (lab)</a>                  55.5%    42.7   2023-10-30   26% ▇▇▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">MMLU (lab)</a>                       64.3%    43.2   2023-10-30   13% ▇▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">BIG-Bench Hard (lab)</a>             63.5%    49.5   2023-10-30    4% ▇
+                        <a href="https://huggingface.co/openchat/openchat_3.5/blob/0fc98e324280bc4bf5d2c30ecf7b97b84fb8a19b/README.md#benchmarks">GSM8K (lab)</a>                      77.3%    54.2   2023-10-30    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1183.0    39.1   2026-10-02   40% ▇▇▇▇▇
+<a name="paper-2312.06281v2"></a>EQ-Bench: An Emotiona…  <a href="https://arxiv.org/html/2312.06281v2">EQ-Bench v1 (60 questions, pa…</a>   37.1%    36.1   2024-01-03   13% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 41.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: OpenChat 3.5 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench: An Emotional Intelligence Benchmark for Large Language Models ([CC BY 4.0](../../licenses/paper-2312.06281v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -32,8 +34,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~4.7GB   36.7
-8-bit q8_0    ~8.9GB   36.7
+4-bit q4_k_m  ~4.7GB   41.1
+8-bit q8_0    ~8.9GB   41.1
 </pre>
 
 ```sh

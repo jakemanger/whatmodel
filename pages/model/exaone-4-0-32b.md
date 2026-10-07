@@ -6,20 +6,27 @@
 
 LG AI Research · released 2025-07 · 32B params · exaone
 
-**score 57.3** ±3.6 · #167 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 54.9** ±1.7 · #201 of 548 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.7%    61.0   2026-04-17   56% ▇▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.6%    53.2   2026-04-17   39% ▇▇▇▇▇
-prior                  pull toward the middle                   50.0                 6% ▇
-                       weighted average                       = 57.3
+source                  test                            score  implies  date        weight
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>              75.4%    51.6   2025-07-11   20% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>                 85.3%    53.5   2025-07-11   15% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  81.8%    54.3   2025-07-11   13% ▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        72.9%    57.3   2025-07-11    9% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>            62.8%    59.5   2025-07-11    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                92.3%    61.9   2025-07-11    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecifi…</a>  83.7%    49.2   2025-07-11    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>           51.5%    59.7   2025-07-11    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>                   63.9%    48.6   2025-07-11    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  79.7%    60.8   2026-04-17   10% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.6%    53.3   2026-04-17   10% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 54.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +50,8 @@ Korean Canonical Lega…  <a href="https://aclanthology.org/2026.eacl-short.17.p
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~19.7GB   57.3
-8-bit gguf-q8_0    ~38.9GB   57.3
+4-bit gguf-q4_k_m  ~19.7GB   54.9
+8-bit gguf-q8_0    ~38.9GB   54.9
 </pre>
 
 ```sh

@@ -4,9 +4,9 @@
 
 # VILA-U 7B (256px)
 
-MIT Han Lab / NVIDIA · released 2024-10 · mit
+MIT Han Lab / NVIDIA · released 2024-10 · 8.12B params · mit
 
-**score 30.2** ±4.8 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 30.6** ±5.2 · #120 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    28.1   2026-06-02   90% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 30.2
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>  31.0%    28.1   2026-06-02   88% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                12% ▇
+                        weighted average                       = 30.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +27,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                   needs  score
+bf16 (official inference.py) · nvidia o…  ~20GB   30.6
+</pre>
+
+```sh
+# bf16 (official inference.py) · nvidia only
+git clone https://github.com/mit-han-lab/vila-u && cd vila-u && ./environment_setup.sh vila-u && conda activate vila-u && git lfs install && git clone https://huggingface.co/mit-han-lab/vila-u-7b-256 && CUDA_VISIBLE_DEVICES=0 python inference.py --model_path vila-u-7b-256 --prompt "A snowy mountain." --save_path generated_images --generation_nums 8
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/vila-u-7b-256) · [JSON](https://whatmodel.sh/api?format=json&all=1)

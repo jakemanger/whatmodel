@@ -6,7 +6,7 @@
 
 Pruna · released 2026-02 · closed weights
 
-**score 54.7** ±1.8 · #33 of 76 · from 3 benchmark results across 2 sources
+**score 54.5** ±1.9 · #35 of 87 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1207.3    54.9   2026-09-22   60% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1243.6    54.9   2026-09-22   37% ▇▇▇▇
-<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>   25.3%    46.4   2026-06-17    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet">LMArena video</a>                   1207.3    54.6   2026-09-22   60% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>            1243.6    54.7   2026-09-22   37% ▇▇▇▇
+<a name="visual-physics-verified"></a>Physics-IQ Verified     <a href="https://arxiv.org/html/2606.18943v1#A5.T4">Physics-IQ Verified (I2V, bes…</a>   25.3%    45.7   2026-06-17    2% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 54.7
+                        weighted average                        = 54.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

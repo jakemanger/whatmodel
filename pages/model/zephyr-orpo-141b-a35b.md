@@ -6,31 +6,33 @@
 
 Hugging Face · released 2024-04 · 141B params (39B active) · apache-2.0
 
-**score 41.3** ±2.7 · #316 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 44.2** ±2.3 · #330 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1213.0    41.0   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 41.3
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1213.0    42.5   2026-10-02   73% ▇▇▇▇▇▇▇▇▇
+<a name="card-huggingfaceh4-zephyr-orpo-141b-a35b-v0-1"></a>HuggingFaceH4 zephyr-…  <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">BIG-Bench Hard (lab)</a>             59.0%    47.9   2024-04-10   18% ▇▇
+                        <a href="https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/README.md">IFEval (aggregation unspecifi…</a>   65.1%    50.5   2024-04-10    7% ▇
+prior                   pull toward the middle                    50.0                 2% ▇
+                        weighted average                        = 44.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · HuggingFaceH4 zephyr-orpo-141b-A35b-v0.1 model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/HuggingFaceH4/zephyr-orpo-141b-A35b-v0.1/blob/a3be084543d278e61b64cd600f28157afc79ffd3/config.json): Hugging Face H4 official configuration for zephyr-orpo-141b-A35b-v0.1 (pinned commit): max\_position\_embeddings 65536. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download        size  score
-4-bit q4_0   ~85.1GB   41.3
-8-bit q8_0  ~169.7GB   41.3
+4-bit q4_0   ~85.1GB   44.2
+8-bit q8_0  ~169.7GB   44.2
 </pre>
 
 ```sh

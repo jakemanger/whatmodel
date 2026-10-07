@@ -6,24 +6,36 @@
 
 Ai2 · released 2025-11 · 32.2B params · apache-2.0
 
-**score 52.1** ±2.7 · #213 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 53.9** ±1.0 · #214 of 548 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1306.4    52.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 52.1
+source                  test                             score  implies  date        weight
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  72.5%    53.2   2026-09-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  76.8%    52.7   2026-09-25   11% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   58.1%    53.8   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       85.4%    51.4   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             89.8%    55.7   2026-09-25    8% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 91.4%    52.9   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            88.2%    55.9   2026-09-25    6% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   74.2%    59.3   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                      68.0%    50.7   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>           83.5%    55.9   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                 76.0%    58.2   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      31.9%    58.2   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   47.6%    53.1   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   89.0%    55.5   2026-09-25    1% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1306.4    52.9   2026-10-02   16% ▇▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 53.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -31,8 +43,8 @@ prior                   pull toward the middle            50.0                 3
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~19.82GB   52.1
-8-bit q8_0    ~39.14GB   52.1
+4-bit q4_k_m  ~19.82GB   53.9
+8-bit q8_0    ~39.14GB   53.9
 </pre>
 
 ```sh

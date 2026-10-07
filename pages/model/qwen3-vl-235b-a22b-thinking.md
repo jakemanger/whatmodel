@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-09 · 235B params (22B active) · apache-2.0
 
-**score 62.3** ±2.1 · #130 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 62.1** ±1.4 · #135 of 548 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1395.0    62.9   2026-10-02   57% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1188.0    62.2   2026-10-02   41% ▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 62.3
+<a name="card2-qwen-qwen3-vl-235b-a22b-thinking"></a>Qwen3-VL-235B-A22B-Th…  <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">AIME 2025 (lab)</a>                  89.7%    61.0   2025-09-22    9% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">MMLU-Pro (lab)</a>                   83.8%    63.2   2025-09-22    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">LiveCodeBench v6 (Feb–May 202…</a>   70.1%    61.5   2025-09-22    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">HMMT 2025 (edition unspecifie…</a>   77.4%    59.1   2025-09-22    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">Humanity's Last Exam (lab)</a>       13.6%    59.4   2025-09-22    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">MMLU-Redux (lab)</a>                 93.7%    63.4   2025-09-22    4% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">INCLUDE (lab)</a>                    80.0%    62.7   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">SuperGPQA (lab)</a>                  64.3%    63.2   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">MMLU-ProX (lab)</a>                  80.6%    63.2   2025-09-22    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">Creative Writing v3 (lab)</a>        85.7%    63.1   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">WritingBench (lab)</a>               86.7%    61.3   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">LiveBench 2024-11-25 (lab)</a>       79.6%    64.9   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">IFEval (aggregation unspecifi…</a>   88.2%    64.3   2025-09-22    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking/blob/6664affde68449468deb7527186455c7450c13c0/README.md#model-performance">Multi-IF (aggregation unspeci…</a>   79.1%    62.0   2025-09-22    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1395.0    62.7   2026-10-02   27% ▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1188.0    62.0   2026-10-02   19% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 62.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Qwen3-VL-235B-A22B-Thinking model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -32,8 +44,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~141.5GB   62.3
-8-bit q8_0    ~282.5GB   62.3
+4-bit q4_k_m  ~141.5GB   62.1
+8-bit q8_0    ~282.5GB   62.1
 </pre>
 
 ```sh

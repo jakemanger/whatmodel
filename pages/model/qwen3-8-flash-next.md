@@ -6,9 +6,7 @@
 
 Alibaba · released 2026-08 · 180B params (6B active) · qwen-community-1.0
 
-**score 73.8** ±1.5 · #28 of 462 · from 3 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 73.0** ±1.4 · #27 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1637.5    76.8   2026-10-01   48% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0073 IPS    72.5   2026-10-02   45% ▇▇▇▇▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.9%    64.5   2026-09-22    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1637.5    75.7   2026-10-01   49% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0073 IPS    71.7   2026-10-02   44% ▇▇▇▇▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>        46.9%    64.2   2026-09-22    6% ▇
 prior                   pull toward the middle                         50.0                 1% ▇
-                        weighted average                             = 73.8
+                        weighted average                             = 73.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +31,8 @@ prior                   pull toward the middle                         50.0     
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~108.5GB   73.8
-2-bit ud-q2_k_xl   ~54.5GB   73.8
+4-bit q4_k_m      ~108.5GB   73.0
+2-bit ud-q2_k_xl   ~54.5GB   73.0
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 WizardLM · released 2024-01 · 33.34B params · msft-research
 
-**score 46.7** ±1.3 · #258 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 48.0** ±0.7 · #281 of 548 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,22 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    46.8   2024-03-28   55% ▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    46.5   2024-03-28   44% ▇▇▇▇▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 46.7
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              73.2%    48.1   2024-12-26   29% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               79.9%    48.8   2024-12-26   28% ▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               73.8%    47.1   2024-03-28   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       53.3%    48.1   2024-03-28   15% ▇▇
+prior                   pull toward the middle           50.0                 0% ▇
+                        weighted average               = 48.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/WizardLM/WizardCoder-33B-V1.1/blob/22d03e16bd052cec88228e17e832f851391e3565/config.json): WizardLM official configuration for WizardCoder-33B-V1.1 (pinned commit): max\_position\_embeddings 16384 (linear rope scaling, factor 4.0). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download       size  score
-4-bit q4_k_m  ~20GB   46.7
-8-bit q8_0    ~35GB   46.7
+4-bit q4_k_m  ~20GB   48.0
+8-bit q8_0    ~35GB   48.0
 </pre>
 
 ```sh

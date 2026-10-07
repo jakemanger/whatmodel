@@ -6,9 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 64.7** ±1.8 · #107 of 462 · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 64.3** ±1.7 · #107 of 548 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                           score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.7   2026-10-01   72% ▇▇▇▇▇▇▇▇▇
-<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    64.6   2026-05-26   10% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    66.8   2026-05-26    9% ▇
-                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.9   2026-05-26    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1348.1    64.3   2026-10-01   73% ▇▇▇▇▇▇▇▇▇
+<a name="report-2605.27605v1"></a>Poolside                <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Verified (lab)</a>       74.6%    64.3   2026-05-26   10% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">Terminal-Bench 2.0 (lab)</a>       45.8%    66.5   2026-05-26    8% ▇
+                        <a href="https://arxiv.org/html/2605.27605v1">SWE-bench Multilingual (lab)</a>   63.1%    64.6   2026-05-26    7% ▇
 prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 64.7
+                        weighted average                      = 64.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,6 +41,22 @@ api (Poolside) · price unknown · [huggingface.co](https://huggingface.co/pools
 
 <sub>[context source](https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md): Poolside official model card (poolside/Laguna-M.1, pinned): 'Context window: 262,144 tokens'. Observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+download                        size  score
+16-bit bf16 · nvidia only   ~451.6GB   64.3
+4-bit fp8 · nvidia only    ~229.08GB   64.3
+4-bit nvfp4 · nvidia only  ~139.29GB   64.3
+</pre>
+
+```sh
+# 16-bit bf16 · nvidia only
+pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+# 4-bit fp8 · nvidia only
+pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-FP8 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+# 4-bit nvfp4 · nvidia only
+pip install 'vllm>=0.21.0' && vllm serve --model poolside/Laguna-M.1-NVFP4 --tool-call-parser poolside_v1 --reasoning-parser poolside_v1 --enable-auto-tool-choice --served-model-name laguna --default-chat-template-kwargs '{"enable_thinking": true}'
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/laguna-m-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

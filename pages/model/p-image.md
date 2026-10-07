@@ -6,7 +6,7 @@
 
 Pruna · released 2025-12 · proprietary
 
-**score 51.1** ±1.9 · #72 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.8** ±1.9 · #74 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,19 +15,22 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1033.1    51.1   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 51.1
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1033.1    50.7   2026-09-24   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   890.2    51.9   2026-10-01   10% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 50.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-api (Replicate) · price unknown · [replicate.com](https://replicate.com/prunaai/p-image)
+api (Replicate) · $0.0050/image · [replicate.com](https://replicate.com/prunaai/p-image)
+
+<sub>[price source](https://replicate.com/prunaai/p-image): USD per output image on Replicate: the model's billing config lists '$5 per thousand output images' ('or 200 images for $1'). Product: Replicate model API (Pruna's official model). API model: prunaai/p-image. Settings: one output image. Price basis: per-output tariff (not hardware time). Currency: USD. Replicate model page, observed 2026-10-07.</sub>
 
 no verified local download listed
 

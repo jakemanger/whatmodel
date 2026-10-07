@@ -6,9 +6,7 @@
 
 EleutherAI · released 2023-02 · 6.86B params · apache-2.0
 
-**score 34.4** ±0.7 · #389 of 462 · from 24 benchmark results across 3 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 30.9** ±0.8 · #491 of 548 · from 24 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,32 +14,32 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Challenge</a>                   35.3%    34.7   2024-04-08   16% ▇▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                       63.9%    34.1   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                        61.1%    33.3   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                            89.8%    32.9   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">BoolQ</a>                           64.0%    30.5   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                            75.1%    34.8   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), las…</a>  67.0%    35.6   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                      60.6%    33.7   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                      40.7%    32.2   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                      25.8%    25.5   2024-04-08    1% ▇
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.1%    37.3   2024-06-07    8% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      62.0%    34.6   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      45.0%    34.9   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       63.8%    32.8   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        61.9%    34.3   2024-06-07    4% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            91.1%    33.8   2024-06-07    3% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            75.1%    35.4   2024-06-07    2% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.1%    26.2   2024-06-07    2% ▇
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  67.3%    35.1   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      89.7%    33.9   2023-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      75.2%    34.9   2023-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.3%    35.7   2023-05-31    4% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             31.3%    39.0   2023-05-31    2% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                60.9%    33.5   2023-05-31    2% ▇
+<a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Challenge</a>                   35.3%    31.1   2024-04-08   12% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">HellaSwag</a>                       63.9%    30.4   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">ARC Easy</a>                        61.1%    29.5   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">SciQ</a>                            89.8%    29.1   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">PIQA</a>                            75.1%    31.2   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">BoolQ</a>                           64.0%    26.4   2024-04-08    3% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">WinoGrande</a>                      60.6%    29.9   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">LAMBADA (OpenAI version), las…</a>  67.0%    32.0   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">Social IQA</a>                      40.7%    28.2   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_pythia-6.9b.json">OpenBookQA</a>                      25.8%    20.7   2024-04-08    1% ▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   44.1%    34.2   2024-06-07    9% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      62.0%    31.2   2024-06-07    8% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      45.0%    31.4   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       63.8%    29.1   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        61.9%    30.8   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            91.1%    30.3   2024-06-07    3% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            75.1%    32.0   2024-06-07    2% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.1%    21.7   2024-06-07    2% ▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  67.3%    32.2   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      89.7%    30.9   2023-05-31    5% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      75.2%    32.0   2023-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  67.3%    32.8   2023-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             31.3%    36.9   2023-05-31    2% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                60.9%    30.1   2023-05-31    2% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 34.4
+                        weighted average                       = 30.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -54,7 +52,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~13.85GB   34.4
+4-bit fp16  ~13.85GB   30.9
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 25.1** ±3.2 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 27.2** ±3.0 · #511 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    23.9   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 5% ▇
-                        weighted average                       = 25.1
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    26.2   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 27.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,16 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                      size  score
+16-bit bf16 · nvidia only  ~8.29GB   27.2
+</pre>
+
+```sh
+# 16-bit bf16 · nvidia only
+vllm serve microsoft/Phi-3-vision-128k-instruct --trust-remote-code
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/phi-3-vision-128k-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

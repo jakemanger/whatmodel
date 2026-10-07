@@ -6,7 +6,7 @@
 
 PixArt (Huawei Noah's Ark Lab et al.) · released 2023-11 · 0.6B params · openrail++
 
-**score 37.8** ±2.4 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 37.1** ±2.3 · #108 of 136 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,20 +15,31 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                             score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>  1052.0    39.2   2024-06-04   42% ▇▇▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>   37.0%    34.2   2024-08-26   32% ▇▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>   47.0%    39.1   2026-06-02   23% ▇▇▇
-prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 37.8
+source                  test                                                        score  implies  date        weight
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                             1052.0    38.0   2024-06-04   42% ▇▇▇▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              37.0%    33.6   2024-08-26   27% ▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>                              47.0%    39.7   2026-06-02   18% ▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1100 mean human alignment score    34.9   2024-10-10   11% ▇
+prior                   pull toward the middle                                               49.9                 2% ▇
+                        weighted average                                                   = 37.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt))</sub>
+<sub>Licences: GenAI Arena: An Open Evaluation Platform for Generative Models ([CC-BY-4.0](../../licenses/visual-genai-arena.txt)) · ConceptMix: A Compositional Image Generation Benchmark with Controllable Difficulty ([CC-BY-4.0](../../licenses/visual-conceptmix.txt)) · WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image Generation ([CC-BY-SA-4.0](../../licenses/visual-wise.txt)) · EvalAlign: Supervised Fine-Tuning Multimodal LLMs with Human-Aligned Data for Evaluating Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version               needs  score
+fp16 · nvidia only  ~13.6GB   37.1
+</pre>
+
+```sh
+# fp16 · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors --with sentencepiece python -c "import torch; from diffusers import PixArtAlphaPipeline; p=PixArtAlphaPipeline.from_pretrained('PixArt-alpha/PixArt-XL-2-1024-MS', torch_dtype=torch.float16).to('cuda'); p(prompt='An astronaut riding a green horse').images[0].save('out.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/pixart-alpha) · [JSON](https://whatmodel.sh/api?format=json&all=1)

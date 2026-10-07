@@ -6,9 +6,7 @@
 
 AI21 Labs · released 2024-08 · 398B params (94B active) · jamba-open-model-license
 
-**score 47.8** ±2.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 48.3** ±1.8 · #275 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,18 +14,28 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1289.4    50.2   2026-10-02   57% ▇▇▇▇▇▇▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                 49.5%    44.5                42% ▇▇▇▇▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                 49.5%    45.7                51% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1289.4    51.0   2026-10-02   47% ▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 2% ▇
-                        weighted average                = 47.8
+                        weighted average                = 48.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt))</sub>
+<sub>Licences: MMLU-Pro author-released evaluation runs ([Apache-2.0](../../licenses/mmlu-pro-author-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                                       size  score
+16-bit bf16 weights, experts_int8 at lo…  ~797.11GB   48.3
+</pre>
+
+```sh
+# 16-bit bf16 weights, experts_int8 at load · nvidia only
+pip install 'vllm>=0.5.5' && vllm serve ai21labs/AI21-Jamba-Large-1.5 --tensor-parallel-size 8 --max-model-len 225280 --quantization experts_int8
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-large) · [JSON](https://whatmodel.sh/api?format=json&all=1)

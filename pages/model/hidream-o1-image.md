@@ -6,7 +6,7 @@
 
 HiDream · released 2026-05 · 8B params · mit
 
-**score 58.3** ±1.7 · #47 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 58.3** ±1.7 · #47 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1115.8    59.1   2026-09-24   83% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   86.8%    54.8   2026-08-25   16% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1115.8    58.8   2026-09-24   73% ▇▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   86.8%    54.2   2026-08-25   17% ▇▇
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>   988.2    63.2   2026-10-01    8% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
                         weighted average                        = 58.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (2)</summary>
 

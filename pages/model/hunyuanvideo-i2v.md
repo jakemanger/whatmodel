@@ -6,7 +6,7 @@
 
 Tencent · released 2025-03 · tencent-hunyuan-community
 
-**score 43.9** ±5.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.4** ±5.4 · #60 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    43.0   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    41.3   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 43.9
+                        weighted average                       = 42.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -25,6 +25,16 @@ prior                   pull toward the middle                   49.9           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+bf16 720p + CPU offload (official scrip…  ~57.3GB   42.4
+</pre>
+
+```sh
+# bf16 720p + CPU offload (official script) · nvidia only
+git clone https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V && cd HunyuanVideo-I2V && conda create -y -n HunyuanVideo-I2V python==3.11.9 && conda install -y -n HunyuanVideo-I2V pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia && conda run -n HunyuanVideo-I2V python -m pip install -r requirements.txt "huggingface_hub[cli]" && conda run -n HunyuanVideo-I2V huggingface-cli download tencent/HunyuanVideo-I2V --local-dir ./ckpts && conda run -n HunyuanVideo-I2V huggingface-cli download xtuner/llava-llama-3-8b-v1_1-transformers --local-dir ./ckpts/text_encoder_i2v && conda run -n HunyuanVideo-I2V huggingface-cli download openai/clip-vit-large-patch14 --local-dir ./ckpts/text_encoder_2 && conda run -n HunyuanVideo-I2V python3 sample_image2video.py --model HYVideo-T/2 --prompt "An Asian man with short hair in black tactical uniform and white clothes waves a firework stick." --i2v-mode --i2v-image-path ./assets/demo/i2v/imgs/0.jpg --i2v-resolution 720p --i2v-stability --infer-steps 50 --video-length 129 --flow-reverse --flow-shift 7.0 --seed 0 --embedded-cfg-scale 6.0 --use-cpu-offload --save-path ./results
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/hunyuanvideo-i2v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

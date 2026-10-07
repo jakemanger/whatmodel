@@ -6,24 +6,26 @@
 
 Mistral · released 2025-12 · 123B params · modified-mit
 
-**score 58.2** ±2.1 · #161 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 58.7** ±1.6 · #162 of 548 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1196.1    58.3   2026-10-01   98% ▇▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle               50.0                 2% ▇
-                        weighted average                   = 58.2
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1196.1    58.3   2026-10-01   62% ▇▇▇▇▇▇▇
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>         72.2%    57.1   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>         32.6%    60.6   2026-09-25    7% ▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>     61.3%    57.8   2026-09-25    6% ▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>   43.0%    61.2   2026-08-31   15% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 58.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
@@ -31,8 +33,8 @@ prior                   pull toward the middle               50.0               
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~74.3GB   58.2
-8-bit q8_0    ~148.1GB   58.2
+4-bit q4_k_m   ~74.3GB   58.7
+8-bit q8_0    ~148.1GB   58.7
 </pre>
 
 ```sh

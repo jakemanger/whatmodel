@@ -4,7 +4,7 @@
 
 # Neural HMM TTS (Coqui LJ Speech)
 
-Coqui TTS / Shivam Metha @shivammehta25
+Coqui TTS / Shivam Metha @shivammehta25 · released 2023-01
 
 Exact registry entry tts\_models/en/ljspeech/neural\_hmm. Default vocoder vocoder\_models/en/ljspeech/hifigan\_v2. Model archive responded HTTP 200 to a HEAD request on 2026-09-29. CPU command documented by maintained Coqui TTS; phoneme models may require the espeak-ng system package. Memory is an estimated 4GB runtime budget, not measured usage. No original-paper MOS transferred to this separately trained checkpoint.
 

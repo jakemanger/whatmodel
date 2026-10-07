@@ -6,9 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 44.4** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 45.6** ±2.6 · #306 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1239.7    44.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1239.7    45.4   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 44.4
+                        weighted average                = 45.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,16 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                        size  score
+16-bit bf16 · nvidia only  ~103.14GB   45.6
+</pre>
+
+```sh
+# 16-bit bf16 · nvidia only
+vllm serve ai21labs/AI21-Jamba-Mini-1.5
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/jamba-1-5-mini) · [JSON](https://whatmodel.sh/api?format=json&all=1)

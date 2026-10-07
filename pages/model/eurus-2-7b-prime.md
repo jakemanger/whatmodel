@@ -6,9 +6,7 @@
 
 PRIME-RL · released 2024-12 · 7.62B params · apache-2.0
 
-**score 46.8** ±4.0 · #256 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 47.6** ±3.8 · #283 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                    score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    46.6   2025-01-27   93% ▇▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle           50.0                 7% ▇
-          weighted average               = 46.8
+<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>            33.9%    47.5   2025-01-27   94% ▇▇▇▇▇▇▇▇▇▇▇
+prior     pull toward the middle           50.0                 6% ▇
+          weighted average               = 47.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,9 +25,11 @@ prior     pull toward the middle           50.0                 7% ▇
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/config.json): PRIME-RL official configuration for Eurus-2-7B-PRIME (pinned commit): max\_position\_embeddings 4096. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download                      size  score
-4-bit fp32 · nvidia only  ~37.08GB   46.8
+4-bit fp32 · nvidia only  ~37.08GB   47.6
 </pre>
 
 ```sh

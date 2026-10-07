@@ -4,7 +4,7 @@
 
 # Tacotron2 + HiFi-GAN (Grad-TTS study)
 
-Grad-TTS authors / Huawei Noah · closed weights
+Grad-TTS authors / Huawei Noah · released 2021-05 · closed weights
 
 **score 60.8** ±21.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 

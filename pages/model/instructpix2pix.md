@@ -6,7 +6,7 @@
 
 UC Berkeley (Brooks, Holynski, Efros) · released 2023-01 · 0.86B params · mit
 
-**score 17.6** ±2.8 · #116 of 116 · from 3 benchmark results across 3 sources
+**score 15.0** ±2.6 · #135 of 136 · from 5 benchmark results across 5 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,22 +16,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      23.8%    16.2   2026-05-13   61% ▇▇▇▇▇▇▇
-<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         29.2%    14.2   2025-12-01   24% ▇▇▇
-<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  45.0%    22.7   2026-03-29   12% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      23.8%    15.0   2026-05-13   46% ▇▇▇▇▇▇
+<a name="visual-unicbench"></a>UnicEdit-10M: A Datas…  <a href="https://arxiv.org/html/2512.02790v1#S6.T4">UnicBench (EN, overall)</a>         29.2%    12.9   2025-12-01   20% ▇▇
+<a name="visual-edival"></a>EdiVal-Agent: An Obje…  <a href="https://arxiv.org/html/2509.13399v3#S3.T3">EdiVal multi-turn editing ove…</a>  13.0%    12.1   2026-03-17   13% ▇▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>   0.3%     8.2   2026-05-29   10% ▇
+<a name="visual-imagenworld"></a>ImagenWorld: Stress-T…  <a href="https://arxiv.org/html/2603.27862v1#S5.T3">ImagenWorld text-guided editi…</a>  45.0%    21.1   2026-03-29    8% ▇
 prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 17.6
+                        weighted average                       = 15.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt))</sub>
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · UnicEdit-10M: A Dataset and Benchmark Breaking the Scale-Quality Barrier via Unified Verification for Reasoning-Enriched Edits ([CC-BY-4.0](../../licenses/visual-unicbench.txt)) · EdiVal-Agent: An Object-Centric Framework for Automated ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks ([CC-BY-4.0](../../licenses/visual-imagenworld.txt))</sub>
 
 ## How to run it
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~2.6GB   17.6
+fp16 · nvidia only  ~2.6GB   15.0
 </pre>
 
 ```sh

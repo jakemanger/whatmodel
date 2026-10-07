@@ -4,18 +4,24 @@
 
 # Devstral Small 2 24B
 
-Mistral · released 2025-12
+Mistral · released 2025-12 · 24B params · apache-2.0
 
-[Model and usage documentation](https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512)
+**score 55.1** ±3.3 · #198 of 548 · from 3 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                    result  reported by  source
-SWE-bench Verified       68.0%  lab          <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24…</a>
-SWE-bench Multilingual   55.7%  lab          <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24…</a>
-Terminal-Bench 2.0       22.5%  lab          <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">mistralai/Devstral-Small-2-24…</a>
+source                  test                          score  implies  date        weight
+<a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>      68.0%    56.7   2026-09-25   37% ▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>      22.5%    53.2   2026-09-25   30% ▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    56.0   2026-09-25   28% ▇▇▇
+prior                   pull toward the middle                 50.0                 5% ▇
+                        weighted average                     = 55.1
 </pre>
+
+<sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: mistralai/Devstral-Small-2-24B-Instruct-2512 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
 
@@ -23,9 +29,19 @@ Terminal-Bench 2.0       22.5%  lab          <a href="https://huggingface.co/mis
 
 <sub>[context source](https://github.com/anomalyco/models.dev/blob/a668908cfe7073faa0363699486fc41a3ff52412/models/mistral/devstral-small-2.toml): model catalogue context ceiling (not a promise by a hosted API)</sub>
 
+<pre>
+download         size  score
+4-bit q4_k_m  ~14.9GB   55.1
+8-bit q8_0    ~29.3GB   55.1
+</pre>
+
 ```sh
+# 4-bit q4_k_m
 ollama run devstral-small-2:24b
+# 8-bit q8_0
 ollama run devstral-small-2:24b-instruct-2512-q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/devstral-small-2)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/devstral-small-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

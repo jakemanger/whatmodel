@@ -6,9 +6,7 @@
 
 Alibaba · released 2024-11 · 14.77B params · apache-2.0
 
-**score 46.3** ±5.1 · #261 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 53.6** ±2.0 · #221 of 548 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,21 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.1%    45.9   2024-11-12   89% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                11% ▇
-                        weighted average                       = 46.3
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  69.2%    55.1   2024-10-29   56% ▇▇▇▇▇▇▇
+<a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  32.8%    55.4   2026-08-31   25% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  73.1%    46.9   2024-11-12   18% ▇▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 53.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct/blob/aedcc2d42b622764e023cf882b6652e646b95671/README.md): Qwen official model card: "Context Length: Full 131,072 tokens". Full supported model-card context requires the documented YaRN configuration beyond the default 32,768 tokens. This does not promise the same limit on every hosted API. Observed 2026-10-07.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m   ~9.36GB   46.3
-8-bit q8_0    ~18.22GB   46.3
+4-bit q4_k_m   ~9.36GB   53.6
+8-bit q8_0    ~18.22GB   53.6
 </pre>
 
 ```sh

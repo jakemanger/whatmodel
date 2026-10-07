@@ -6,26 +6,32 @@
 
 IBM · released 2025-10 · 1.63B params · apache-2.0
 
-**score 33.6** ±2.7 · #397 of 462 · from 3 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 36.1** ±1.6 · #437 of 548 · from 11 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source    test                      score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI  <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>              24.0%    25.5   2026-08-28   44% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>   0.8%    38.4   2026-08-30   43% ▇▇▇▇▇
-          <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>      0.0%    43.7   2026-08-30   10% ▇
-prior     pull toward the middle             50.0                 3% ▇
-          weighted average                 = 33.6
+source                  test                            score  implies  date        weight
+<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                           73.4%    40.5   2026-09-25   19% ▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                    24.2%    26.9   2026-09-25   12% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  21.0%    34.3   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        44.8%    30.0   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                        33.5%    40.7   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>    79.6%    44.5   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                        3.3%    33.2   2026-09-25    3% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                         52.4%    50.3   2026-09-25    3% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         0.8%    39.8   2026-08-30   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    24.0%    27.7   2026-08-28   16% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    44.8   2026-08-30    4% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 36.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LiquidAI/LFM2.5-1.2B-Thinking model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -33,7 +39,7 @@ prior     pull toward the middle             50.0                 3% ▇
 
 <pre>
 download        size  score
-16-bit bf16  ~4.41GB   33.6
+16-bit bf16  ~4.41GB   36.1
 </pre>
 
 ```sh

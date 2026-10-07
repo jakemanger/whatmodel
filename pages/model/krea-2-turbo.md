@@ -6,7 +6,7 @@
 
 Krea · released 2026-06 · 12B params · krea-2-community-license
 
-**score 58.7** ±1.9 · #45 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 58.4** ±2.0 · #46 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1112.9    58.8   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1112.9    58.5   2026-09-24   98% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 2% ▇
-                        weighted average                = 58.7
+                        weighted average                = 58.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,6 +31,19 @@ api (Krea) · $0.015/image · [krea.ai](https://www.krea.ai/docs/api-reference/k
 
 <sub>[price source](https://www.krea.ai/docs/api-reference/krea/krea-2-turbo.md): USD per generated image, Krea 2 Turbo text-to-image on the Krea API: fixed price $0.015 (style references $0.0175, moodboards $0.02). Product: Krea API. API model: Krea 2 Turbo (POST /generate/image/krea/krea-2/medium-turbo). Settings: resolution=1K (the only option), no references, one image. Price basis: published fixed list price. Identity: the open-weights card (krea/Krea-2-Turbo) describes Turbo as the post-trained, distilled release checkpoint with 'Open-weight release and Krea-hosted product integrations'; fal also serves the open weights (fal-ai/krea-2/turbo) at $0.008 per megapixel. Currency: USD. Krea official API documentation, observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+version                                    needs  score
+bf16 · nvidia only                       ~43.3GB   58.4
+gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp)  ~20.2GB   58.4
+</pre>
+
+```sh
+# bf16 · nvidia only
+uv run --with git+https://github.com/huggingface/diffusers --with transformers --with accelerate --with torch python -c "import torch; from diffusers import Krea2Pipeline; p=Krea2Pipeline.from_pretrained('krea/Krea-2-Turbo', torch_dtype=torch.bfloat16).to('cuda'); p('a fox in the snow', num_inference_steps=8, guidance_scale=0.0).images[0].save('krea2.png')"
+# gguf-q8_0 + Qwen3-VL 4B q4_k_m (sd.cpp)
+sd-cli --diffusion-model models/Krea-2-Turbo-Q8_0.gguf --llm models/Qwen3VL-4B-Instruct-Q4_K_M.gguf --vae models/wan_2.1_vae.safetensors -p "a lovely cat holding a sign says 'krea2.cpp'" --steps 8 --cfg-scale 1.0 --diffusion-fa -v --offload-to-cpu
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/krea-2-turbo) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,9 +6,7 @@
 
 Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
-**score 37.4** ±2.0 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 39.0** ±1.9 · #396 of 548 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1180.0    37.0   2026-10-02   51% ▇▇▇▇▇▇
-<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   17.6%    37.3   2024-11-14   47% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1180.0    38.8   2026-10-02   51% ▇▇▇▇▇▇
+<a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   17.6%    38.9   2024-11-14   47% ▇▇▇▇▇▇
 prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 37.4
+                        weighted average                        = 39.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +26,16 @@ prior                   pull toward the middle                    50.0          
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download                                       size  score
+16-bit bf16 weights, DeepSpeed fp8 at l…  ~957.17GB   39.0
+</pre>
+
+```sh
+# 16-bit bf16 weights, DeepSpeed fp8 at load · nvidia only
+pip install 'transformers>=4.39.0' 'deepspeed>=0.14.2' accelerate && python -c "import torch; from transformers import AutoModelForCausalLM, AutoTokenizer; from deepspeed.linear.config import QuantizationConfig; r='Snowflake/snowflake-arctic-instruct'; t=AutoTokenizer.from_pretrained(r, trust_remote_code=True); m=AutoModelForCausalLM.from_pretrained(r, trust_remote_code=True, low_cpu_mem_usage=True, device_map='auto', ds_quantization_config=QuantizationConfig(q_bits=8), max_memory={i: '150GiB' for i in range(8)}, torch_dtype=torch.bfloat16); x=t.apply_chat_template([{'role': 'user', 'content': '5x + 35 = 7x - 60 + 10. Solve for x'}], add_generation_prompt=True, return_tensors='pt').to('cuda'); print(t.decode(m.generate(input_ids=x, max_new_tokens=256)[0]))"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/snowflake-arctic-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

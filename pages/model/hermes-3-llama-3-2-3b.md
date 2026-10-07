@@ -6,9 +6,7 @@
 
 Nous Research · released 2024-12 · 3.21B params · llama3
 
-**score 36.6** ±4.2 · #367 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 38.0** ±4.2 · #411 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source            test                            score  implies  date        weight
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.1%    35.5   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB  <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>  46.1%    37.0   2026-08-11   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior             pull toward the middle                   50.0                 8% ▇
-                  weighted average                       = 36.6
+                  weighted average                       = 38.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,10 +25,12 @@ prior             pull toward the middle                   50.0                 
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/NousResearch/Hermes-3-Llama-3.2-3B/blob/7f1a6bec8cdce6551014fd5bbeb4cd8c0f1fbeab/config.json): Nous Research official configuration for Hermes-3-Llama-3.2-3B (pinned commit): max\_position\_embeddings 131072 (llama3 rope scaling, factor 32.0 over original 8192). Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.43GB   36.6
-8-bit q8_0    ~4.35GB   36.6
+4-bit q4_k_m  ~2.43GB   38.0
+8-bit q8_0    ~4.35GB   38.0
 </pre>
 
 ```sh

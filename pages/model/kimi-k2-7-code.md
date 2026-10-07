@@ -6,9 +6,7 @@
 
 Moonshot AI · released 2026-06 · 1000B params (32B active) · modified-mit
 
-**score 70.1** ±1.1 · #58 of 462 · from 7 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 69.5** ±1.1 · #59 of 548 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   54.0%    71.0   2026-06-13   32% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%    69.0   2026-06-13   19% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                87.9%    70.0   2026-08-07    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%    72.6   2026-08-07    7% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           36.5%    68.5   2026-08-27    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    71.3   2026-08-07    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9    69.9   2026-10-01   28% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>   54.0%    70.3   2026-06-13   31% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>      12.2%    68.3   2026-06-13   18% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    95.6%    71.9   2026-08-07    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                87.9%    69.4   2026-08-07    7% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>           36.5%    67.9   2026-08-27    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>       21.0%    70.6   2026-08-07    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1472.9    69.2   2026-10-01   28% ▇▇▇
 prior                   pull toward the middle               50.0                 1% ▇
-                        weighted average                   = 70.1
+                        weighted average                   = 69.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -37,6 +35,19 @@ api (Moonshot AI) · $1.71/M blended · $0.95 in / $4 out per 1M tokens · [plat
 
 <sub>[price source](https://platform.kimi.ai/docs/pricing/chat.md): USD per 1M tokens, Kimi API (Moonshot AI) pay-as-you-go, kimi-k2.7-code: input (cache miss) $0.95, output $4.00; cache-hit input $0.19 and kimi-k2.7-code-highspeed ($1.90/$8.00) excluded; taxes excluded. Currency: USD. Moonshot AI Kimi official pricing page, observed 2026-09-25. · [context source](https://platform.kimi.ai/docs/pricing/chat.md): Moonshot AI Kimi API pricing page: kimi-k2.7-code context window 262,144 tokens (the model card at @74797c9 states 'Context Length 256K'). API serving limit of the maker's own service. Observed 2026-09-25.</sub>
 
-no verified local download listed
+<pre>
+download               size  score
+4-bit ud-q4_k_xl  ~584.66GB   69.5
+2-bit ud-q2_k_xl  ~340.42GB   69.5
+</pre>
+
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/Kimi-K2.7-Code-GGUF:UD-Q2_K_XL
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/kimi-k2-7-code) · [JSON](https://whatmodel.sh/api?format=json&all=1)

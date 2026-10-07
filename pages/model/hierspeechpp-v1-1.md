@@ -4,9 +4,9 @@
 
 # HierSpeech++ v1.1
 
-Korea University (Sang-Hoon Lee et al.) · released 2023-11 · mit
+Korea University (Sang-Hoon Lee et al.) · released 2023-11 · 0.204B params · mit
 
-**score 32.4** ±2.9 · #79 of 94 · from 3 benchmark results across 2 sources
+**score 32.6** ±3.0 · #78 of 98 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.48 / 5    31.6   2025-05-11   79% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.08 / 5    33.8   2025-05-11   10% ▇
-<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.3%    30.4   2025-05-15    7% ▇
-prior                   pull toward the middle                      49.9                 3% ▇
-                        weighted average                          = 32.4
+<a name="speech-ttsds2-listening-mit"></a>TTSDS2 listening test…  <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · speak…</a>  3.48 / 5    31.8   2025-05-11   79% ▇▇▇▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/ttsds/listening_test/blob/4d4d98f452b17155d8bf9b44a62754407e21dd96/subjective_results.csv">TTSDS2 listening test · natur…</a>  3.08 / 5    34.2   2025-05-11   10% ▇
+<a name="speech-ttsds2-multilingual-mit"></a>TTSDS2 multilingual b…  <a href="https://huggingface.co/datasets/ttsds/leaderboard_data/blob/09ee7f1fb4cb32bb1ae187dfb4f6b7606e0ede69/ttsds/en_aggregated_multilingual.csv">TTSDS2 multilingual benchmark…</a>     86.3%    30.6   2025-05-15    7% ▇
+prior                   pull toward the middle                      49.8                 4% ▇
+                        weighted average                          = 32.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                                  needs  score
-fp32 (repo inference.py) · nvidia only  ~2.1GB   32.4
+fp32 (repo inference.py) · nvidia only  ~2.1GB   32.6
 </pre>
 
 ```sh

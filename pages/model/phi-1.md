@@ -6,25 +6,24 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 21.0** ±3.4 · #453 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 15.5** ±3.1 · #538 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                    score  implies  date        weight
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              13.1%    16.2   2024-01-03   48% ▇▇▇▇▇▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              21.7%    22.7   2024-01-03   47% ▇▇▇▇▇▇
-prior                   pull toward the middle           50.0                 5% ▇
-                        weighted average               = 21.0
+source                  test                            score  implies  date        weight
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      13.1%    14.9   2024-01-03   29% ▇▇▇▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      21.7%    21.6   2024-01-03   25% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  27.5%     8.8   2024-02-05   41% ▇▇▇▇▇
+prior                   pull toward the middle                   50.0                 4% ▇
+                        weighted average                       = 15.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -42,7 +41,7 @@ Textbooks Are All You…  <a href="https://arxiv.org/html/2306.11644v2">MBPP</a>
 
 <pre>
 download       size  score
-4-bit fp16  ~2.84GB   21.0
+4-bit fp16  ~2.84GB   15.5
 </pre>
 
 ```sh

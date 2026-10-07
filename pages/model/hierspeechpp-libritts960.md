@@ -6,7 +6,7 @@
 
 Korea University (Sang-Hoon Lee et al.) · released 2023-11 · 0.097B params · mit
 
-**score 39.1** ±5.6 · #68 of 94 · from 3 benchmark results across 1 source
+**score 38.8** ±5.6 · #70 of 98 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    41.7   2024-09-16   77% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    12.3   2024-09-16    8% ▇
-                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%    -6.8   2024-09-16    3% ▇
-prior                   pull toward the middle                      49.9                13% ▇▇
-                        weighted average                          = 39.1
+<a name="speech-stylettszs-report-bysa"></a>StyleTTS-ZS: Efficien…  <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  4.27 / 5    41.4   2024-09-16   76% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 li…</a>  3.54 / 5    12.2   2024-09-16    8% ▇
+                        <a href="https://arxiv.org/html/2409.10058v1">StyleTTS-ZS LibriSpeech-40 · …</a>      7.8%    -6.6   2024-09-16    3% ▇
+prior                   pull toward the middle                      49.8                13% ▇▇
+                        weighted average                          = 38.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version                                  needs  score
-fp32 (repo inference.py) · nvidia only  ~2.1GB   39.1
+fp32 (repo inference.py) · nvidia only  ~2.1GB   38.8
 </pre>
 
 ```sh

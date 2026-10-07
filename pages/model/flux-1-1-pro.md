@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2024-10 · closed weights
 
-**score 48.4** ±1.7 · #79 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 47.9** ±1.7 · #82 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1015.6    49.4   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.47 / 5    44.4   2024-12-25   20% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>             1015.6    49.0   2026-09-24   70% ▇▇▇▇▇▇▇▇
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  3.47 / 5    44.3   2024-12-25   18% ▇▇
+<a name="visual-rapid-face"></a>Rapidata/Face_Generat…  <a href="https://huggingface.co/datasets/Rapidata/Face_Generation_Benchmark/blob/c6ed7eab14620db5daa77aec0feda5992091f5b3/README.md#the-resulting-leaderboard">Rapidata human-face generatio…</a>     969.6    46.3   2025-09-03   11% ▇
 prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 48.4
+                        weighted average                          = 47.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EvalMuse-40K: A Reliable and Fine-Grained Benchmark with Comprehensive Human Annotations for Text-to-Image Generation Model Evaluation ([CC-BY-4.0](../../licenses/visual-evalmuse.txt)) · Rapidata/Face\_Generation\_Benchmark ([CDLA-Permissive-2.0](../../licenses/visual-rapid-face-CDLA-Permissive-2.0.txt))</sub>
 
 ## How to run it
 

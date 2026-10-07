@@ -6,7 +6,7 @@
 
 DALL·E Mini / minDALL-E · released 2022-07
 
-**score 30.8** ±3.0 · #107 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 28.8** ±2.7 · #123 of 136 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,22 +15,23 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  weight
-<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  25.8%    31.0    51% ▇▇▇▇▇▇
-<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  79.4%    29.0    45% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9     4% ▇
-                        weighted average                       = 30.8
+source                  test                            score  implies  date        weight
+<a name="visual-heim"></a>HEIM: Holistic Evalua…  <a href="https://arxiv.org/html/2311.04287v1#S7.T5">HEIM text-image alignment (as…</a>  58.9%    28.1   2023-11-07   56% ▇▇▇▇▇▇▇
+<a name="visual-tifa"></a>TIFA: Accurate and In…  <a href="https://arxiv.org/html/2303.11897v3">TIFA v1.0 (overall, mPLUG VQA)</a>  79.4%    28.1                40% ▇▇▇▇▇
+<a name="visual-hpsv2-readme"></a>tgxs002/HPSv2 reposit…  <a href="https://github.com/tgxs002/HPSv2/blob/866735ecaae999fa714bd9edfa05aa2672669ee3/README.md">HPS v2 benchmark (4-style ave…</a>  25.8%    31.1                 0% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 28.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt)) · TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt))</sub>
+<sub>Licences: HEIM: Holistic Evaluation of Text-to-Image Models ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering ([CC-BY-4.0](../../licenses/visual-tifa.txt)) · tgxs002/HPSv2 repository README ([Apache-2.0](../../licenses/visual-hpsv2-readme.txt))</sub>
 
 ## How to run it
 
 <pre>
 version  needs  score
-fp32      ~8GB   30.8
+fp32      ~8GB   28.8
 </pre>
 
 ```sh

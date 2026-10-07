@@ -4,9 +4,9 @@
 
 # Step1X-Edit v1.2
 
-StepFun · released 2025-11 · apache-2.0
+StepFun · released 2025-11 · 12.44B params · apache-2.0
 
-**score 54.0** ±3.1 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 51.0** ±2.7 · #72 of 136 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      51.6%    53.9   2026-05-13   71% ▇▇▇▇▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (…</a>  996.0    54.8   2026-03-30   25% ▇▇▇
-prior                   pull toward the middle                   49.9                 4% ▇
-                        weighted average                       = 54.0
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      51.6%    53.2   2026-05-13   52% ▇▇▇▇▇▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>  45.9%    46.8   2026-07-11   18% ▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo) (…</a>  996.0    53.9   2026-03-30   16% ▇▇
+<a name="visual-weavebench"></a>WEAVE: Unleashing and…  <a href="https://arxiv.org/html/2511.11434v1#S4.T2">WEAVEBench in-context multi-t…</a>  60.5%    43.6   2025-11-14   11% ▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 51.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
+<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · WEAVE: Unleashing and Benchmarking the In-context Interleaved Comprehension and Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 <details><summary>Not counted (2)</summary>
 
@@ -38,6 +40,16 @@ stepfun-ai/Step1X-Edi…  <a href="https://huggingface.co/stepfun-ai/Step1X-Edit
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version               needs  score
+bf16 · nvidia only  ~50.7GB   51.0
+</pre>
+
+```sh
+# bf16 · nvidia only
+git clone -b step1xedit_v1p2 https://github.com/Peyton-Chen/diffusers.git && cd diffusers && pip install -e . && pip install transformers==4.55.0 && python -c "import torch; from diffusers import Step1XEditPipelineV1P2; from diffusers.utils import load_image; p=Step1XEditPipelineV1P2.from_pretrained('stepfun-ai/Step1X-Edit-v1p2', torch_dtype=torch.bfloat16); p.to('cuda'); o=p(image=load_image('input.png').convert('RGB'), prompt='add a ruby pendant on the neck of the girl.', num_inference_steps=50, true_cfg_scale=6, generator=torch.Generator().manual_seed(42), enable_thinking_mode=True, enable_reflection_mode=True); o.final_images[0].save('0001-final.jpg')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/step1x-edit-v1-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

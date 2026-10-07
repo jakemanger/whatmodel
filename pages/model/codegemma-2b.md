@@ -6,9 +6,7 @@
 
 Google · released 2024-03 · 2.51B params · gemma
 
-**score 31.3** ±1.4 · #413 of 462 · from 6 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 31.2** ±0.8 · #490 of 548 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,26 +14,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  30.4%    32.2   2024-05-07   29% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            30.4%    28.5   2024-05-07   16% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      29.6%    29.5   2024-05-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    30.8   2024-05-07   12% ▇
-<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 31.1%    32.2   2024-06-19   19% ▇▇
-                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    33.6   2024-06-19    9% ▇
-prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 31.3
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      20.7%    30.1   2024-12-26   33% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       26.8%    30.9   2024-12-26   32% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           46.6%    36.5   2024-12-26    5% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  30.4%    32.9   2024-05-07    7% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            30.4%    29.2   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      29.6%    29.3   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    30.6   2024-05-07    3% ▇
+<a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 31.1%    33.5   2024-06-19    8% ▇
+                        <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      43.6%    34.8   2024-06-19    3% ▇
+prior                   pull toward the middle                   50.0                 0% ▇
+                        weighted average                       = 31.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · CodeGemma: Open Code Models Based on Gemma ([CC BY 4.0](../../licenses/paper-2406.11409v2-CC-BY-4.0.txt))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.6GB   31.3
-8-bit q8_0    ~2.7GB   31.3
+4-bit q4_k_m  ~1.6GB   31.2
+8-bit q8_0    ~2.7GB   31.2
 </pre>
 
 ```sh

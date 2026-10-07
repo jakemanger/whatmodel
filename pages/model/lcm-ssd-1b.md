@@ -4,9 +4,9 @@
 
 # LCM-SSD-1B
 
-latent-consistency · released 2023-11 · openrail++
+latent-consistency · released 2023-11 · 1.33B params · openrail++
 
-**score 33.0** ±3.7 · #104 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 32.5** ±3.9 · #119 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.66 / 5    32.0   2024-12-25   94% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                      49.9                 6% ▇
-                        weighted average                          = 33.0
+<a name="visual-evalmuse"></a>EvalMuse-40K: A Relia…  <a href="https://arxiv.org/html/2412.18150v2#S9.T10">EvalMuse-40K model ranking (F…</a>  2.66 / 5    31.3   2024-12-25   93% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                      49.9                 7% ▇
+                        weighted average                          = 32.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                      49.9        
 
 <pre>
 version              needs  score
-fp16 · nvidia only  ~3.6GB   33.0
+fp16 · nvidia only  ~3.6GB   32.5
 </pre>
 
 ```sh

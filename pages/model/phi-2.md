@@ -6,9 +6,7 @@
 
 Microsoft · released 2023-12 · 2.78B params · mit
 
-**score 37.3** ±1.2 · #360 of 462 · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 39.5** ±0.6 · #391 of 548 · from 14 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,17 +14,27 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    37.6   2024-03-28   49% ▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    37.8   2024-03-28   39% ▇▇▇▇▇
-<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    33.6   2024-01-03    6% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    33.4   2024-01-03    6% ▇
-prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 37.3
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              45.1%    38.9   2024-12-26   23% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               49.4%    38.2   2024-12-26   23% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   54.2%    40.8   2024-12-26    3% ▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               50.0%    39.3   2024-03-28   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       31.8%    39.0   2024-03-28   12% ▇
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                    52.7%    38.2   2024-06-03    3% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>           71.3%    44.9   2024-06-03    3% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>          43.4%    41.7   2024-06-03    3% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>               47.6%    48.6   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                   57.2%    51.7   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                    55.0%    48.7   2024-06-03    1% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                  23.4%    -5.8   2024-06-03    0% ▇
+<a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              31.6%    33.8   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>              33.5%    33.5   2024-01-03    1% ▇
+prior                   pull toward the middle           50.0                 0% ▇
+                        weighted average               = 39.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
+<sub>Licences: EvalPlus / EvalPerf published evaluation runs ([Apache-2.0](../../licenses/evalplus-published-runs-Apache-2.0.txt)) · Top Leaderboard Ranking = Top Coding Proficiency ([CC BY 4.0](../../licenses/paper-2403.19114v1-CC-BY-4.0.txt)) · MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CRUXEval published evaluation results ([MIT](../../licenses/cruxeval-published-results-MIT.txt))</sub>
 
 ## How to run it
 
@@ -34,8 +42,8 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit q4_0   ~1.6GB   37.3
-4-bit fp16  ~5.56GB   37.3
+4-bit q4_0   ~1.6GB   39.5
+4-bit fp16  ~5.56GB   39.5
 </pre>
 
 ```sh

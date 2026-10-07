@@ -6,9 +6,7 @@
 
 Stability AI · released 2023-04 · 7B params · cc-by-nc-sa-4.0
 
-**score 11.0** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 14.6** ±2.6 · #539 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          953.1     9.7   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          953.1    13.5   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle           50.0                 3% ▇
-                        weighted average               = 11.0
+                        weighted average               = 14.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,16 @@ prior                   pull toward the middle           50.0                 3%
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download        size  score
+4-bit fp32  ~31.74GB   14.6
+</pre>
+
+```sh
+# 4-bit fp32
+uv run --with torch --with 'transformers<5' --with accelerate python -c "from transformers import pipeline; print(pipeline('text-generation', model='stabilityai/stablelm-tuned-alpha-7b', torch_dtype='auto', device_map='auto')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/stablelm-tuned-alpha-7b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

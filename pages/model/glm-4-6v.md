@@ -6,9 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 59.9** ±2.1 · #148 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 59.7** ±1.7 · #156 of 548 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.7    60.9   2026-10-02   57% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1161.5    58.8   2026-10-02   41% ▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 59.9
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.7    60.9   2026-10-02   40% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1161.5    58.9   2026-10-02   30% ▇▇▇▇
+<a name="glm-v-github-bench-image"></a>Z.ai GLM-V GitHub rep…  <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU Pro (lab)</a>                   66.0%    58.4   2025-12-08    5% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">LVBench (lab)</a>                    59.5%    62.4   2025-12-08    4% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>               57.0%    57.9   2025-12-08    4% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                 76.0%    58.4   2025-12-08    4% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   63.2%    61.1   2025-12-08    4% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMStar (lab)</a>                     75.9%    58.5   2025-12-08    4% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                   86.5%    57.9   2025-12-08    4% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 59.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Z.ai GLM-V GitHub repository benchmark image ([Apache-2.0](https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/LICENSE))</sub>
 
 ## How to run it
 
@@ -32,6 +37,19 @@ api (Z.ai) · $0.45/M blended · $0.3 in / $0.9 out per 1M tokens · [docs.z.ai]
 
 <sub>[price source](https://docs.z.ai/guides/overview/pricing): USD per 1M tokens, Z.ai API pricing page, Vision Models table, GLM-4.6V: input $0.3, output $0.9; cached input $0.05 excluded. Currency: USD. Z.ai official pricing page, observed 2026-09-28. · [context source](https://huggingface.co/zai-org/GLM-4.6V/blob/4e2d47eb0b41c5280d8294b17cef9e94fdcfff46/README.md): Context length stated on the official model card.</sub>
 
-no verified local download listed
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~67.22GB   59.7
+2-bit ud-q2_k_xl  ~47.55GB   59.7
+</pre>
+
+```sh
+# 4-bit ud-q4_k_xl
+llama-server -hf unsloth/GLM-4.6V-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
+llama-server -hf unsloth/GLM-4.6V-GGUF:UD-Q2_K_XL
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/glm-4-6v) · [JSON](https://whatmodel.sh/api?format=json&all=1)

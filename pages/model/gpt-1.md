@@ -4,20 +4,39 @@
 
 # GPT-1 (openai-gpt)
 
-OpenAI · released 2018-06
+OpenAI · released 2018-06 · 0.117B params · mit
 
-The original 12-layer, 512-token-context GPT (Radford et al. 2018), as hosted in openai-community/openai-gpt. Size from OpenAI's GPT-2 paper (117M; same as the smallest GPT-2 configuration).
+**score -39.1** ±4.5 · #548 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/openai-community/openai-gpt)
+## How the score was worked out
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                            score   implies  date        weight
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   2.0%    -48.1   2024-02-05   91% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 9% ▇
+                        weighted average                       = -39.1
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
 <sub>[context source](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf): Context limit from the maker's documentation, observed 2026-10-06.</sub>
 
+<pre>
+download       size  score
+4-bit fp32  ~0.48GB  -39.1
+</pre>
+
 ```sh
+# 4-bit fp32
 uv run --with torch --with 'transformers<5' python -c "from transformers import pipeline; print(pipeline('text-generation', model='openai-community/openai-gpt')('Once upon a time', max_new_tokens=40)[0]['generated_text'])"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/gpt-1)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/gpt-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

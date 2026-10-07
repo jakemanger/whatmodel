@@ -6,9 +6,7 @@
 
 Z.ai · released 2025-09 · 357B params (32B active) · mit
 
-**score 64.4** ±1.3 · #111 of 462 · from 9 benchmark results across 5 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 64.1** ±1.2 · #113 of 548 · from 9 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -16,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1339.4    64.3   2026-10-01   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.1    66.4   2026-10-02   22% ▇▇▇
-<a name="card2-zai-org-glm-4-7"></a>zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025 (lab)</a>                  93.9%    62.6   2026-01-29    6% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro (lab)</a>                   83.2%    65.3   2026-01-29    5% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025 (lab)</a>         89.2%    51.1   2026-01-29    2% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>   82.8%    63.8   2026-01-29    2% ▇
-<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    63.6   2026-01-17   13% ▇▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    59.9   2025-11-19    6% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    76.7   2025-12-16    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1339.4    64.0   2026-10-01   39% ▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.1    66.0   2026-10-02   22% ▇▇▇
+<a name="card2-zai-org-glm-4-7"></a>zai-org/GLM-4.7 model…  <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">AIME 2025 (lab)</a>                  93.9%    62.8   2026-01-29    7% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">MMLU-Pro (lab)</a>                   83.2%    65.0   2026-01-29    5% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">HMMT February 2025 (lab)</a>         89.2%    51.6   2026-01-29    3% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/README.md">LiveCodeBench v6 (window unsp…</a>   82.8%    63.4   2026-01-29    2% ▇
+<a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>   24.5%    63.3   2026-01-17   12% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   57.8%    60.0   2025-11-19    6% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   72.4%    75.5   2025-12-16    4% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.4
+                        weighted average                        = 64.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -66,9 +64,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~214.7GB   64.4
-2-bit ud-q2_k_xl  ~107.6GB   64.4
-1-bit ud-iq1_s    ~54.05GB   64.4
+4-bit ud-q4_k_xl  ~214.7GB   64.1
+2-bit ud-q2_k_xl  ~107.6GB   64.1
+1-bit ud-iq1_s    ~54.05GB   64.1
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 Ai2 · released 2024-02 · 6.89B params · apache-2.0
 
-**score 25.0** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 27.6** ±2.6 · #508 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1073.6    24.2   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1073.6    26.9   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 25.0
+                        weighted average                = 27.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,16 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download         size  score
+16-bit bf16  ~13.78GB   27.6
+</pre>
+
+```sh
+# 16-bit bf16
+pip install ai2-olmo && python -c "from hf_olmo import OLMoForCausalLM, OLMoTokenizerFast; o=OLMoForCausalLM.from_pretrained('allenai/OLMo-7B-Instruct'); t=OLMoTokenizerFast.from_pretrained('allenai/OLMo-7B-Instruct'); p=t.apply_chat_template([{'role': 'user', 'content': 'What is language modeling?'}], tokenize=False, add_generation_prompt=True); i=t.encode(p, add_special_tokens=False, return_tensors='pt'); print(t.batch_decode(o.generate(input_ids=i.to(o.device), max_new_tokens=100, do_sample=True, top_k=50, top_p=0.95), skip_special_tokens=True)[0])"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/olmo-7b-instruct) · [JSON](https://whatmodel.sh/api?format=json&all=1)

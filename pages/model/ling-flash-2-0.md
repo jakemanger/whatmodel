@@ -6,9 +6,7 @@
 
 inclusionAI (Ant Group) · released 2025-09 · 100B params (6.1B active) · mit
 
-**score 56.5** ±2.7 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 56.8** ±2.6 · #178 of 548 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1343.8    56.7   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1343.8    57.0   2026-10-02   97% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            50.0                 3% ▇
-                        weighted average                = 56.5
+                        weighted average                = 56.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -27,6 +25,19 @@ prior                   pull toward the middle            50.0                 3
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download          size  score
+4-bit q4_k_m  ~62.62GB   56.8
+2-bit q2_k    ~36.25GB   56.8
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q4_K_M
+# 2-bit q2_k
+llama-server -hf bartowski/inclusionAI_Ling-flash-2.0-GGUF:Q2_K
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/ling-flash-2-0) · [JSON](https://whatmodel.sh/api?format=json&all=1)

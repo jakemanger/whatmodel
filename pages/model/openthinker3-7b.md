@@ -6,9 +6,7 @@
 
 Open Thoughts · released 2025-05 · 7.62B params · apache-2.0
 
-**score 32.6** ±5.5 · #404 of 462 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 45.4** ±1.1 · #311 of 548 · from 15 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,20 +14,36 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  19.8%    29.8   2025-07-22   86% ▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                14% ▇▇
-                        weighted average                       = 32.6
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">AIME 2025</a>                       57.2%    48.0   2026-09-25   15% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2024</a>                       67.7%    49.7   2026-09-25   13% ▇▇
+                        <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified)</a>       47.6%    49.0   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MMLU</a>                            77.4%    46.5   2026-09-25   10% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard</a>                  77.1%    44.3   2026-09-25    9% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+</a>                      87.4%    50.5   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English</a>                 78.6%    46.8   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlled</a>  24.0%    34.9   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">MBPP+</a>                           61.4%    47.4   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3</a>                68.0%    46.8   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic</a>                      34.9%    35.1   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">PopQA</a>                           18.0%    45.0   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  23.0%    35.8   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  51.7%    16.9   2026-09-25    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  19.8%    32.1   2025-07-22    4% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 45.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
+<sub>Licences: Olmo 3 ([CC BY 4.0](../../licenses/report-2512.13961v2.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://huggingface.co/open-thoughts/OpenThinker3-7B/blob/864fb9aefbb91f257c4911e4b9f85a6986f8eab2/config.json): Open Thoughts official configuration for OpenThinker3-7B (pinned commit): max\_position\_embeddings 32768. Configured maximum, not a benchmarked long-context claim: the official card states no context length. Observed 2026-10-07.</sub>
+
 <pre>
 download                       size  score
-16-bit bf16 · nvidia only  ~18.79GB   32.6
+16-bit bf16 · nvidia only  ~18.79GB   45.4
 </pre>
 
 ```sh

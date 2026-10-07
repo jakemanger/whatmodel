@@ -6,9 +6,7 @@
 
 Google · released 2023-12 · proprietary
 
-**score 42.8** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 44.0** ±1.5 · comparison only: no current run option verified · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                       score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.2%    41.2   2025-01-27   36% ▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               34.0%    46.7   2025-01-27   15% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.1%    39.7   2025-02-25   15% ▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1236.8    43.8   2026-10-02   33% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>               11.2%    42.5   2025-01-27   36% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>    1.1%    41.1   2025-02-25   15% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>               34.0%    47.5   2025-01-27   15% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>            1236.8    45.1   2026-10-02   33% ▇▇▇▇
 prior                   pull toward the middle              50.0                 1% ▇
-                        weighted average                  = 42.8
+                        weighted average                  = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

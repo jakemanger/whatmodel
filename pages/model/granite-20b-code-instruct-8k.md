@@ -6,9 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 42.0** ±2.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 39.0** ±2.5 · #397 of 548 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,17 +14,29 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  50.5%    41.8   2024-05-07   97% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  50.5%    42.2   2024-05-07   77% ▇▇▇▇▇▇▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.4%    25.2   2026-04-17   11% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.1%    24.8   2026-04-17    9% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 42.0
+                        weighted average                       = 39.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Granite Code Models: A Family of Open Foundation Models for Code Intelligence ([CC BY 4.0](../../licenses/paper-2405.04324v1-CC-BY-4.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download          size  score
+4-bit q4_k_m  ~12.82GB   39.0
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf ibm-granite/granite-20b-code-instruct-8k-GGUF:Q4_K_M
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-20b-code-instruct-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

@@ -6,9 +6,7 @@
 
 Arcee AI · released 2026-04 · 398B params (13B active) · openmdw-1.1
 
-**score 59.8** ±1.7 · #151 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 60.7** ±1.4 · #144 of 548 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,10 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                        score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6    60.1   2026-10-01   63% ▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1367.3    59.6   2026-10-02   36% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>  1237.6    60.0   2026-10-01   48% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>             1367.3    59.6   2026-10-02   27% ▇▇▇
+<a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">GPQA Diamond (lab)</a>          76.3%    62.4   2026-04-01   17% ▇▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">MMLU-Pro (lab)</a>              83.4%    63.4   2026-04-01    6% ▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md#benchmarks">AIME 2025 (lab)</a>             96.3%    94.8   2026-04-01    1% ▇
 prior                   pull toward the middle               50.0                 1% ▇
-                        weighted average                   = 59.8
+                        weighted average                   = 60.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,10 +29,23 @@ prior                   pull toward the middle               50.0               
 
 ## How to run it
 
-api (Arcee AI) · price unknown · [docs.arcee.ai](https://docs.arcee.ai/arcee-language-models/trinity-large-thinking.md)
+api (Arcee AI) · $0.39/M blended · $0.25 in / $0.8 out per 1M tokens · [docs.arcee.ai](https://docs.arcee.ai/arcee-language-models/trinity-large-thinking.md)
 
-<sub>[context source](https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md): Context length stated on the official model card.</sub>
+<sub>[price source](https://docs.arcee.ai/get-started/pricing.md): USD per 1M tokens, Arcee Platform text-model pricing table, model trinity-large-thinking: input $0.25, output $0.80; cached input $0.06 excluded. Currency: USD. Arcee official pricing docs, observed 2026-10-07. · [context source](https://huggingface.co/arcee-ai/Trinity-Large-Thinking/blob/dc6a99b6b74202880e31491a445a94884c97890c/README.md): Context length stated on the official model card.</sub>
 
-no verified local download listed
+<pre>
+download           size  score
+4-bit q4_k_m  ~241.85GB   60.7
+2-bit iq2_m   ~133.01GB   60.7
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf arcee-ai/Trinity-Large-Thinking-GGUF:Q4_K_M
+# 2-bit iq2_m
+llama-server -hf arcee-ai/Trinity-Large-Thinking-GGUF:IQ2_M
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/trinity-large-thinking) · [JSON](https://whatmodel.sh/api?format=json&all=1)

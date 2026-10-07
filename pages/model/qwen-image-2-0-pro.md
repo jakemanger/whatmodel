@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-03 · closed weights
 
-**score 64.3** ±4.8 · #21 of 116 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 62.7** ±3.3 · #26 of 136 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,15 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  51.5%    64.4   2026-06-05   48% ▇▇▇▇▇▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  57.8%    67.5   2026-05-27   43% ▇▇▇▇▇
-prior                   pull toward the middle                   49.9                10% ▇
-                        weighted average                       = 64.3
+<a name="visual-rapid-benchai-image"></a>Rapidata/text-to-imag…  <a href="https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M/blob/2f602f465ad418ac886f2fde92ba42b85e1369db/README.md#overall-ranking-elo-aggregated-across-all-four-leaderboards">Rapidata Benchmark.ai image b…</a>  986.3    62.8   2026-10-01   29% ▇▇▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>  65.5%    60.3   2026-07-11   26% ▇▇▇
+<a name="visual-fepbench"></a>Faithful                <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  51.5%    64.0   2026-06-05   22% ▇▇▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>  57.8%    67.4   2026-05-27   19% ▇▇
+prior                   pull toward the middle                   49.9                 5% ▇
+                        weighted average                       = 62.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
+<sub>Licences: Rapidata/text-to-image-human-preference-6M ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Faithful ([CC0-1.0](../../licenses/visual-fepbench.txt)) · Qwen-Image-Bench: From Generation to Creation in Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qwenbench.txt))</sub>
 
 ## How to run it
 

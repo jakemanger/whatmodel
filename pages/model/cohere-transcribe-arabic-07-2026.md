@@ -6,7 +6,7 @@
 
 Cohere · released 2026-07 · 2.07B params · apache-2.0
 
-**score 65.0** ±3.8 · comparison only: no current run option verified · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 63.5** ±3.9 · #7 of 117 · from 3 benchmark results across 2 sources
 
 Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
 
@@ -16,10 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">LibriSpeech test-clean WER</a>       1.3%    65.2   2026-09-15   87% ▇▇▇▇▇▇▇▇▇▇
-<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  25.9%    74.4   2026-07-07    8% ▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">LibriSpeech test-clean WER</a>       1.3%    66.0   2026-09-15   57% ▇▇▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/cohere-transcribe-arabic-07-2026.json">FLEURS English test WER</a>          4.9%    56.8   2026-09-15   25% ▇▇▇
+<a name="speech-stt-arabic-oual-elm-apache"></a>Open Universal Arabic…  <a href="https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard/blob/667db1e1e40c38f1c5667f7dca1a90eac113231d/app.py">Open Universal Arabic ASR Lea…</a>  25.9%    72.4   2026-07-07   11% ▇
 prior                   pull toward the middle                   49.7                 6% ▇
-                        weighted average                       = 65.0
+                        weighted average                       = 63.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +29,16 @@ prior                   pull toward the middle                   49.7           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                        needs  score
+bf16 (transformers &gt;=5.4.0)  ~4.13GB   63.5
+</pre>
+
+```sh
+# bf16 (transformers >=5.4.0)
+uv run --with 'transformers>=5.4.0' --with torch --with huggingface_hub --with soundfile --with librosa --with sentencepiece --with protobuf --with accelerate python -c "from transformers import AutoProcessor, CohereAsrForConditionalGeneration; from transformers.audio_utils import load_audio; processor = AutoProcessor.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026'); model = CohereAsrForConditionalGeneration.from_pretrained('CohereLabs/cohere-transcribe-arabic-07-2026', device_map='auto'); audio = load_audio('audio.wav', sampling_rate=16000); inputs = processor(audio, sampling_rate=16000, return_tensors='pt', language='ar'); inputs.to(model.device, dtype=model.dtype); outputs = model.generate(**inputs, max_new_tokens=256); print(processor.decode(outputs, skip_special_tokens=True))"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/cohere-transcribe-arabic-07-2026) · [JSON](https://whatmodel.sh/api?format=json&all=1)

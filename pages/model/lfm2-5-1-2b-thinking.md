@@ -6,41 +6,31 @@
 
 Liquid AI · released 2026-01 · 1.17B params · lfm1.0
 
-**score 35.7** ±5.8 · #375 of 462 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 48.7** ±1.9 · #272 of 548 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                 test                            score  implies  date        weight
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.2%    40.2   2026-04-17   48% ▇▇▇▇▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  38.9%    23.8   2026-04-17   37% ▇▇▇▇
-prior                  pull toward the middle                   50.0                15% ▇▇
-                       weighted average                       = 35.7
+source                  test                            score  implies  date        weight
+<a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K (lab)</a>                     85.6%    45.4   2026-09-25   27% ▇▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond (lab)</a>              37.9%    51.7   2026-09-25   16% ▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  44.9%    51.1   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500 (lab)</a>                  88.0%    56.2   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro (lab)</a>                  49.6%    47.8   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures …</a>  88.4%    53.2   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025 (lab)</a>                 31.7%    57.2   2026-09-25    5% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3 (lab)</a>                   57.0%    51.3   2026-09-25    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.2%    42.1   2026-04-17    6% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  38.9%    30.9   2026-04-17    5% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 48.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
-
-<details><summary>Not counted (8)</summary>
-
-<pre>
-source                  test                            score  why
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GPQA Diamond</a>                    37.9%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                        49.6%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>    88.4%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  44.9%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                           85.6%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        88.0%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">AIME 2025</a>                       31.7%  too few models have it yet
-LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                         57.0%  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: LiquidAI/LFM2.5-1.2B-Thinking model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
 
 ## How to run it
 
@@ -48,8 +38,8 @@ LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-T
 
 <pre>
 download        size  score
-4-bit q4_k_m  ~1.2GB   35.7
-8-bit q8_0    ~1.9GB   35.7
+4-bit q4_k_m  ~1.2GB   48.7
+8-bit q8_0    ~1.9GB   48.7
 </pre>
 
 ```sh

@@ -17,7 +17,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  67.7%    38.9   2026-07-12   83% ▇▇▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>  75.0%    43.8   2026-07-12   10% ▇
+                        <a href="https://arxiv.org/html/2506.02161v3#S4.T3">GenAI-Bench (VQAScore overall)</a>  75.0%    43.9   2026-07-12   10% ▇
 prior                   pull toward the middle                   49.9                 7% ▇
                         weighted average                       = 40.2
 </pre>

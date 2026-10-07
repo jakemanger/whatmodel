@@ -6,7 +6,7 @@
 
 Show Lab / NUS · released 2023-10 · 6B params · cc-by-nc-4.0
 
-**score 27.4** ±2.3 · comparison only: no current run option verified · from 4 benchmark results across 1 source
+**score 26.6** ±2.3 · #83 of 87 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.74 / 100    27.2    26% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  52.19 / 100    23.0    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  60.83 / 100    28.1    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  62.07 / 100    29.4    23% ▇▇▇
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.74 / 100    26.4    26% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  52.19 / 100    22.2    25% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  60.83 / 100    27.3    24% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  62.07 / 100    28.6    23% ▇▇▇
 prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 27.4
+                        weighted average                             = 26.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,6 +28,16 @@ prior                   pull toward the middle                         49.9     
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+version                                     needs  score
+fp16 + model CPU offload (official run_…  ~83.2GB   26.6
+</pre>
+
+```sh
+# fp16 + model CPU offload (official run_inference.py) · nvidia only
+git clone https://github.com/showlab/Show-1 && cd Show-1 && pip install -r requirements.txt && python run_inference.py
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/show-1) · [JSON](https://whatmodel.sh/api?format=json&all=1)

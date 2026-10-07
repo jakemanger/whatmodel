@@ -6,7 +6,7 @@
 
 ESPnet · released 2022-01 · cc-by-4.0
 
-**score 74.9** ±24.7 · #1 of 6 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 74.9** ±24.7 · #1 of 11 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-espnet-librispeech-20260929&score=set) comparison set only.
 

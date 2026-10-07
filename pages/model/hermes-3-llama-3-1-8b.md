@@ -6,9 +6,7 @@
 
 Nous Research · released 2024-07 · 8.03B params · llama3
 
-**score 41.9** ±3.8 · #309 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 40.5** ±2.1 · #376 of 548 · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,22 +14,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.7%    41.0   2024-08-30   49% ▇▇▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    41.8   2026-09-19   45% ▇▇▇▇▇
-prior                   pull toward the middle                   50.0                 6% ▇
-                        weighted average                       = 41.9
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>  30.1%    38.8   2024-09-30   63% ▇▇▇▇▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  68.7%    42.7   2024-08-30   20% ▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  50.4%    42.9   2026-09-19   16% ▇▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 40.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
+<sub>[context source](https://arxiv.org/abs/2408.11857v1): Nous Research Hermes 3 technical report: Hermes 3 leverages "the 128K token context window provided by Llama 3.1" (base models with "a context length of 131,072 (128K) tokens"). Stated rounded 128K. Observed 2026-10-07.</sub>
+
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.32GB   41.9
-8-bit q8_0    ~10.14GB   41.9
+4-bit q4_k_m   ~5.32GB   40.5
+8-bit q8_0    ~10.14GB   40.5
 </pre>
 
 ```sh

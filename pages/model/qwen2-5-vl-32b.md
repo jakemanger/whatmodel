@@ -6,9 +6,7 @@
 
 Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
-**score 54.0** ±2.8 · #192 of 462 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 52.9** ±1.7 · #228 of 548 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,24 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1118.6    53.5   2026-10-02   71% ▇▇▇▇▇▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   80.9%    55.7   2025-04-03   26% ▇▇▇
-prior                   pull toward the middle                    50.0                 3% ▇
-                        weighted average                        = 54.0
+<a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                   49.5%    53.2   2025-03-21    8% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                     94.8%    47.1   2025-03-21    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                     69.5%    52.7   2025-03-21    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>   77.9%    52.2   2025-03-21    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>   70.5%    51.1   2025-03-21    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>             39.4%    52.0   2025-03-21    6% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                     77.1%    54.9   2025-03-21    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                    49.0%    55.9   2025-03-21    5% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>               22.0%    44.4   2025-03-21    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1118.6    53.9   2026-10-02   32% ▇▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   80.9%    55.4   2025-04-03   13% ▇▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 52.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Qwen2.5-VL-32B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 
@@ -32,8 +39,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~20.6GB   54.0
-8-bit q8_0    ~40.7GB   54.0
+4-bit q4_k_m  ~20.6GB   52.9
+8-bit q8_0    ~40.7GB   52.9
 </pre>
 
 ```sh

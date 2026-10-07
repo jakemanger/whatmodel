@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-01 · closed weights
 
-**score 54.3** ±7.1 · #35 of 76 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 54.6** ±7.0 · #34 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  56.0%    55.5   2026-09-10   78% ▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                22% ▇▇▇
-                        weighted average                       = 54.3
+<a name="visual-vwg-bench"></a>From Evaluation to En…  <a href="https://arxiv.org/html/2609.11242v1#S4.T2">VWG-Bench think-with-video re…</a>  56.0%    55.9   2026-09-10   79% ▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                21% ▇▇▇
+                        weighted average                       = 54.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

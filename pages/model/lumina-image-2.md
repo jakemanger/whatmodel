@@ -6,7 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-01 · 2.6B params · apache-2.0
 
-**score 42.4** ±4.3 · #85 of 116 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 42.5** ±4.3 · #90 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -18,7 +18,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="visual-tiif-bench"></a>TIIF-Bench: How Does …  <a href="https://arxiv.org/html/2506.02161v3#S4.T2">TIIF-Bench v3 (short prompts,…</a>  71.2%    41.8   2026-07-12   92% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 8% ▇
-                        weighted average                       = 42.4
+                        weighted average                       = 42.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,6 +31,16 @@ api (fal.ai) · $0.075/image · [fal.ai](https://fal.ai/models/fal-ai/lumina-ima
 
 <sub>[price source](https://fal.ai/models/fal-ai/lumina-image/v2): USD for one 1-megapixel output: fal bills fal-ai/lumina-image/v2 (Lumina Image 2.0) $0.075 per output megapixel (price = rate x 1 MP; fal's rounding for 1024x1024 ~1.05 MP is not stated; larger outputs cost proportionally more). Product: fal.ai serverless text-to-image. API model: fal-ai/lumina-image/v2. Settings: 1 MP output, one image. Price basis: published per-megapixel list rate x 1 MP. Currency: USD. Not an Alpha-VLLM direct tariff. fal.ai official model page, observed 2026-09-26.</sub>
 
-no verified local download listed
+<pre>
+version                                   needs  score
+bf16 + model CPU offload · nvidia only  ~13.2GB   42.5
+</pre>
+
+```sh
+# bf16 + model CPU offload · nvidia only
+uv run --with torch --with diffusers --with transformers --with accelerate python -c "import torch; from diffusers import Lumina2Pipeline; p=Lumina2Pipeline.from_pretrained('Alpha-VLLM/Lumina-Image-2.0', torch_dtype=torch.bfloat16); p.enable_model_cpu_offload(); p('A serene photograph of golden sunlight reflecting on a vast expanse of water', height=1024, width=1024, guidance_scale=4.0, num_inference_steps=50, cfg_trunc_ratio=0.25, cfg_normalization=True, generator=torch.Generator('cpu').manual_seed(0)).images[0].save('lumina_demo.png')"
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/lumina-image-2) · [JSON](https://whatmodel.sh/api?format=json&all=1)

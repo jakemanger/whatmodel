@@ -6,9 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 37.3** ±1.6 · comparison only: no current run option verified · from 4 benchmark results across 1 source
-
-Score within the [LMArena (text)](https://whatmodel.sh/?set=lmarena-text&score=set) comparison set only.
+**score 37.6** ±1.8 · #419 of 548 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    39.0   2024-05-07   40% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.2   2024-05-07   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    36.1   2024-05-07   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    35.0   2024-05-07   17% ▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    39.5   2024-05-07   37% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.3   2024-05-07   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    36.6   2024-05-07   19% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    35.5   2024-05-07   14% ▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 37.3
+                        weighted average                       = 37.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,6 +28,16 @@ prior                   pull toward the middle                   50.0           
 
 ## How to run it
 
-no current API or local download verified
+<pre>
+download          size  score
+4-bit q4_k_m  ~12.82GB   37.6
+</pre>
+
+```sh
+# 4-bit q4_k_m
+llama-server -hf ibm-granite/granite-20b-code-base-8k-GGUF:Q4_K_M
+```
+
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
 
 [interactive version](https://whatmodel.sh/model/granite-20b-code-base-8k) · [JSON](https://whatmodel.sh/api?format=json&all=1)

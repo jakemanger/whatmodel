@@ -4,9 +4,9 @@
 
 # Qwen-Image-Edit-2511
 
-Alibaba · released 2025-12 · Apache 2.0
+Alibaba · released 2025-12 · 20.43B params · Apache 2.0
 
-**score 57.3** ±2.4 · #53 of 116 · from 3 benchmark results across 3 sources
+**score 53.4** ±1.8 · #64 of 136 · from 7 benchmark results across 7 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,17 +15,21 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                          score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>    53.8%    55.4   2026-05-13   42% ▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>             1234.0    58.6   2026-09-30   41% ▇▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>  1038.0    60.4   2026-03-30   15% ▇▇
-prior                   pull toward the middle                 49.9                 2% ▇
-                        weighted average                     = 57.3
+source                  test                             score  implies  date        weight
+<a name="visual-infoedit"></a>InfoEdit: Probing Glo…  <a href="https://arxiv.org/html/2609.33286v1#S3.T2">InfoEdit infographic editing …</a>    0.4%    48.1   2026-09-27   34% ▇▇▇▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>       53.8%    54.8   2026-05-13   23% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1234.0    57.9   2026-09-30   19% ▇▇
+<a name="visual-chartsync"></a>ChartSync: A Benchmar…  <a href="https://arxiv.org/html/2607.10301v1#S4.T2">ChartSync chart editing (Over…</a>   60.3%    57.3   2026-07-11    8% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1038.0    59.9   2026-03-30    7% ▇
+<a name="visual-paintbench"></a>PaintBench: Determini…  <a href="https://arxiv.org/html/2606.00188v1#S4.T1">PaintBench precise editing (m…</a>    6.7%    59.1   2026-05-29    5% ▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   25.8%    35.5   2026-03-26    2% ▇
+prior                   pull toward the middle                    49.9                 1% ▇
+                        weighted average                        = 53.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
+<sub>Licences: InfoEdit: Probing Global Layout Reasoning in Infographic Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling ([CC-BY-4.0](../../licenses/visual-edit-compass.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt)) · PaintBench: Deterministic Evaluation of Precise Visual Editing ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners? ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
@@ -35,7 +39,7 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <pre>
 version                                   needs  score
-gguf-q4_k_m + Qwen2.5-VL bf16 (sd.cpp)  ~36.6GB   57.3
+gguf-q4_k_m + Qwen2.5-VL bf16 (sd.cpp)  ~36.6GB   53.4
 </pre>
 
 ```sh
