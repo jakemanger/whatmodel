@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 7B params · llama2
 
-**score 32.7** ±1.8 · #477 of 551 · from 4 benchmark results across 4 sources
+**score 32.7** ±1.8 · #478 of 551 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                                   score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                        1115.2    32.2   2026-10-02   44% ▇▇▇▇▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>                          7.6%    30.7   2025-08-09   23% ▇▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  6.1700 MT-Bench score (1-10)    34.1   2023-08-02   19% ▇▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  6.1700 MT-Bench score (1-10)    34.1   2023-08-02   20% ▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                         57.0%    33.5   2024-02-27   13% ▇▇
 prior                   pull toward the middle                                          50.0                 2% ▇
                         weighted average                                              = 32.7

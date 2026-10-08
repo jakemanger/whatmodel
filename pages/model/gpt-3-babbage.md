@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
 <a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       54.5%    21.8   2021-08-06   12% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      59.0%    23.4   2021-08-06    9% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  62.4%    24.2   2021-08-06    7% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            75.5%    27.0   2021-08-06    4% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            75.5%    26.9   2021-08-06    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 22.9
 </pre>

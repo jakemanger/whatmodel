@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 675B params (41B active) · apache-2.0
 
-**score 59.8** ±1.3 · #156 of 551 · from 8 benchmark results across 2 sources
+**score 59.8** ±1.3 · #156 of 551 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -22,13 +22,14 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">Arena-Hard (version/judge uns…</a>   66.7%    56.7   2026-09-25    6% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">MMMU Pro (lab)</a>                   54.0%    54.9   2026-09-25    5% ▇
                         <a href="https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md">IFBench (aggregation unspecif…</a>   37.8%    51.7   2026-09-25    5% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.5%   -87.2   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 59.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · mistralai/Mistral-Small-4-119B-2603 model card ([Apache-2.0](../../licenses/cards-gap-NOTICE.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

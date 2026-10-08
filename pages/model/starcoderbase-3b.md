@@ -6,7 +6,7 @@
 
 BigCode · released 2023-06 · 3B params · bigcode-openrail-m
 
-**score 28.1** ±0.8 · #510 of 551 · from 12 benchmark results across 3 sources
+**score 28.1** ±0.8 · #509 of 551 · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       17.7%    27.7   2024-12-26   29% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      15.9%    28.4   2024-12-26   23% ▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       17.7%    27.6   2024-12-26   29% ▇▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      15.9%    28.3   2024-12-26   23% ▇▇▇
 <a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval (lab)</a>                 21.3%    29.7   2024-02-29   12% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">MBPP (lab)</a>                      42.6%    27.9   2024-02-29    7% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    26.1   2024-02-29    4% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    22.5   2024-02-29    3% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    28.7   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    29.7   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    29.6   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  11.9%    29.7   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    28.0   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    26.3   2024-05-07    2% ▇

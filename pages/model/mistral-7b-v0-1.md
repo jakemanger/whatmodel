@@ -26,14 +26,14 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  23.2%    38.8   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                  80.5%    41.2   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (lab)</a>                      82.2%    39.8   2024-01-08    1% ▇
-<a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge (lab)</a>             55.5%    39.9   2023-10-10    6% ▇
+<a name="paper-2310.06825v1"></a>Mistral 7B              <a href="https://arxiv.org/html/2310.06825v1">ARC Challenge (lab)</a>             55.5%    39.8   2023-10-10    6% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MATH (lab)</a>                      13.1%    41.8   2023-10-10    4% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K (lab)</a>                     52.2%    42.7   2023-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">GSM8K (lab)</a>                     52.2%    42.6   2023-10-10    3% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">HumanEval (lab)</a>                 30.5%    37.4   2023-10-10    3% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MMLU (lab)</a>                      60.1%    41.9   2023-10-10    2% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">WinoGrande (lab)</a>                75.3%    40.0   2023-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">HellaSwag (lab)</a>                 81.3%    41.2   2023-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA (lab)</a>                  69.9%    41.9   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">HellaSwag (lab)</a>                 81.3%    41.1   2023-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2310.06825v1">TriviaQA (lab)</a>                  69.9%    41.8   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">MBPP (lab)</a>                      47.5%    38.5   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">ARC Easy (lab)</a>                  80.0%    42.9   2023-10-10    1% ▇
                         <a href="https://arxiv.org/html/2310.06825v1">PIQA (lab)</a>                      83.0%    42.6   2023-10-10    1% ▇

@@ -50,14 +50,14 @@ source                  test                            score  implies  date    
 <a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   58.2%    36.6   2024-06-03    4% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  37.9%    36.4   2024-06-03    3% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            54.7%    37.9   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       17.1%    32.5   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       17.1%    32.4   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           21.1%    31.9   2024-06-03    1% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            32.6%    32.4   2024-06-03    1% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          37.3%    32.4   2024-06-03    1% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  48.9%    36.7   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           25.0%    32.6   2023-11-20    1% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       32.5%    28.6   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           25.0%    32.6   2023-11-20    2% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            52.0%    37.8   2023-11-20    1% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       32.5%    28.6   2023-11-20    1% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  56.5%    45.4   2023-11-20    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 36.4

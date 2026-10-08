@@ -6,7 +6,7 @@
 
 Meta · released 2024-01 · 69B params · llama2
 
-**score 45.3** ±0.6 · #321 of 551 · from 10 benchmark results across 5 sources
+**score 45.3** ±0.6 · #320 of 551 · from 10 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   53.0%    48.8   2024-05-07    4% ▇
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                  67.8%    45.9   2024-01-31    8% ▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                       62.2%    43.3   2024-01-31    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    32.5   2026-10-02    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1119.1    32.6   2026-10-02    4% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 45.3
 </pre>

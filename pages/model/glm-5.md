@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-02 · 744B params (40B active) · mit
 
-**score 66.4** ±0.7 · #79 of 551 · from 36 benchmark results across 10 sources
+**score 66.4** ±0.7 · #79 of 551 · from 37 benchmark results across 11 sources
 
 ## How the score was worked out
 
@@ -23,14 +23,14 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   54.3%    64.4   2026-09-11    5% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   38.2%    61.9   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   12.1%    66.3   2026-09-11    2% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   11.7%    66.6   2026-09-11    1% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   11.7%    66.5   2026-09-11    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1434.0    67.3   2026-10-01    9% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1457.6    69.4   2026-10-02    6% ▇
 <a name="report-2602.15763v2"></a>GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">GPQA Diamond (lab)</a>               86.0%    66.1   2026-02-24    5% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>       30.5%    70.8   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (lab)</a>               64.5%    69.1   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Toolathlon (Tool Decathlon) (…</a>   39.2%    69.2   2026-02-24    1% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>         96.9%    79.6   2026-02-24    1% ▇
+                        <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>         96.9%    79.5   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with too…</a>   50.4%    71.8   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">IMO-AnswerBench (lab)</a>            82.5%    66.4   2026-02-24    1% ▇
 <a name="card2-zai-org-glm-5"></a>zai-org/GLM-5 model c…  <a href="https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/README.md">τ²-bench aggregate (lab)</a>         89.7%    69.5   2026-08-11    3% ▇
@@ -50,13 +50,14 @@ source                  test                             score  implies  date   
 <a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>    9.6%    61.3   2026-05-19    1% ▇
                         <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   63.1%    68.3   2026-05-19    1% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   46.0%    53.2   2026-03-16    2% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   89.9%    59.0   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 66.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GLM-5 Team ([CC BY 4.0](../../licenses/report-2602.15763v2.txt)) · zai-org/GLM-5 model card ([MIT](../../licenses/zai-org--GLM-5.txt)) · zai-org/GLM-5.1 model card ([mit](../../licenses/zai-org--GLM-5.1.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GLM-5 Team ([CC BY 4.0](../../licenses/report-2602.15763v2.txt)) · zai-org/GLM-5 model card ([MIT](../../licenses/zai-org--GLM-5.txt)) · zai-org/GLM-5.1 model card ([mit](../../licenses/zai-org--GLM-5.1.txt)) · ARC Prize Foundation model\_baseline outputs on ARC-AGI-1/2 public evaluation sets ([MIT](../../licenses/arcprize-model-baseline-outputs-MIT.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 <details><summary>Not counted (8)</summary>
 

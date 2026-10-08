@@ -6,7 +6,7 @@
 
 Mistral · released 2026-04 · 128B params · modified-mit
 
-**score 62.6** ±1.3 · #133 of 551 · from 4 benchmark results across 1 source
+**score 62.6** ±1.3 · #131 of 551 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 

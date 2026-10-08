@@ -16,8 +16,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard (lab)</a>            49.4%    36.9   2023-11-20   34% ▇▇▇▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K (lab)</a>                     49.5%    41.1   2023-11-20   12% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      55.3%    39.6   2023-11-20   12% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  48.9%    34.4   2023-11-20   12% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU (lab)</a>                      55.3%    39.7   2023-11-20   12% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10 (la…</a>  48.9%    34.4   2023-11-20   11% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  39.7%    33.4   2023-11-20    5% ▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  11.6%    35.0   2025-08-09   20% ▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  88.1%    40.9   2025-08-09    4% ▇

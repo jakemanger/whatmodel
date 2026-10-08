@@ -26,7 +26,7 @@ source                  test                    score  implies  date        weig
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>              68.0%    32.1   2023-09-11    8% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                   73.9%    33.8   2023-09-11    5% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              31.4%    34.4   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               57.1%    33.3   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               57.1%    33.2   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                74.9%    34.5   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              45.1%    29.9   2023-09-11    3% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    78.9%    34.0   2023-09-11    2% ▇

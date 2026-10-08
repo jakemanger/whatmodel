@@ -6,7 +6,7 @@
 
 Xwin-LM · released 2023-09 · 70B params · llama2
 
-**score 43.3** ±1.4 · #353 of 551 · from 7 benchmark results across 2 sources
+**score 43.4** ±1.4 · #352 of 551 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                            score  implies  date    
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>  24.6%    43.2   2025-08-09   27% ▇▇▇
                         <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>  95.6%    47.9   2025-08-09    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 43.3
+                        weighted average                       = 43.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,7 +33,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit q4_0  ~38.87GB   43.3
+4-bit q4_0  ~38.87GB   43.4
 </pre>
 
 ```sh

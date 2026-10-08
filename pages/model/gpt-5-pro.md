@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       55.8%    69.9   2026-06-12   49% ▇▇▇▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          19.5%    68.9   2026-06-12   30% ▇▇▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          19.5%    68.8   2026-06-12   30% ▇▇▇▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5">GPQA Diamond (lab)</a>              88.4%    70.8   2025-08-07   12% ▇
                         <a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam (lab)</a>      30.7%    70.2   2025-08-07    5% ▇
                         <a href="https://openai.com/index/introducing-gpt-5">Humanity's Last Exam with too…</a>  42.0%    68.5   2025-08-07    3% ▇

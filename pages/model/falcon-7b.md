@@ -34,7 +34,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            78.5%    34.4   2024-06-07    1% ▇
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   36.3%    31.6   2023-09-11    9% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande</a>                      66.2%    30.3   2023-09-11    4% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           68.5%    28.1   2023-09-11    3% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           68.5%    28.0   2023-09-11    3% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      32.0%    35.5   2023-09-11    3% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       54.2%    31.1   2023-09-11    2% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        71.9%    31.6   2023-09-11    2% ▇

@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                   score  implies  date        weight
-<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    34.8   2023-02-27    9% ▇
+<a name="paper-2302.13971v1"></a>LLaMA: Open and Effic…  <a href="https://arxiv.org/html/2302.13971v1">HumanEval (lab)</a>                                        15.8%    34.7   2023-02-27    9% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Challenge (lab)</a>                                    52.7%    37.0   2023-02-27    9% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    31.7   2023-02-27    7% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    31.6   2023-02-27    7% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                                       73.0%    36.0   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                                            17.8%    29.7   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    39.1   2023-02-27    5% ▇
@@ -27,10 +27,10 @@ source                  test                                                   s
                         <a href="https://arxiv.org/html/2302.13971v1">ARC Easy (lab)</a>                                         74.8%    34.6   2023-02-27    3% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">Social IQA (lab)</a>                                       50.4%    36.6   2023-02-27    2% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">PIQA (lab)</a>                                             80.1%    35.2   2023-02-27    2% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         37.1%    33.0   2024-03-10   12% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         37.1%    32.9   2024-03-10   12% ▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                              13.4%    30.3   2024-03-10    9% ▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   46.2%    35.0   2024-03-10    6% ▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    13.0   2023-06-19    5% ▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   46.2%    34.9   2024-03-10    6% ▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  2.6100 MT-Bench score (1-10)    13.1   2023-06-19    5% ▇
 prior                   pull toward the middle                                          50.0                 0% ▇
                         weighted average                                              = 32.9
 </pre>

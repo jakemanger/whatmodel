@@ -6,7 +6,7 @@
 
 OpenChat · released 2024-01 · 7.24B params · apache-2.0
 
-**score 45.3** ±0.6 · #319 of 551 · from 9 benchmark results across 6 sources
+**score 45.3** ±0.6 · #318 of 551 · from 9 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -20,9 +20,9 @@ source                  test                             score  implies  date   
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                        71.3%    46.5   2024-03-28   20% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                42.1%    43.8   2024-03-28   12% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1182.7    39.5   2026-10-02    5% ▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   52.6%    41.0   2026-08-11    2% ▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   52.6%    40.9   2026-08-11    2% ▇
 <a name="speakleash-polish-eq-bench"></a>SpeakLeash Polish EQ-…  <a href="https://huggingface.co/spaces/speakleash/polish_eq-bench/blob/ec5fcb7c7b9b9ee2fdc3e56651e59e2eb12c5765/benchmark_results.csv">Polish EQ-Bench v2 (SpeakLeas…</a>   43.8%    39.6   2024-06-19    2% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.5%    45.3   2024-02-05    2% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   70.5%    45.4   2024-02-05    2% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 45.3
 </pre>

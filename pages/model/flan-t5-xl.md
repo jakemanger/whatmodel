@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 2.85B params · apache-2.0
 
-**score 34.6** ±1.4 · #460 of 551 · from 5 benchmark results across 2 sources
+**score 34.5** ±1.4 · #464 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    41.0%    33.9   2022-12-06   30% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              52.4%    36.2   2022-12-06   20% ▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               1.9%    28.3   2022-12-06   11% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          40.2%    35.4   2024-03-10   27% ▇▇▇
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    41.0%    33.7   2022-12-06   29% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              52.4%    36.0   2022-12-06   20% ▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               1.9%    28.1   2022-12-06   11% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          40.2%    35.3   2024-03-10   27% ▇▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    49.2%    36.8   2024-03-10   12% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 34.6
+                        weighted average               = 34.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download       size  score
-4-bit fp32  ~11.4GB   34.6
+4-bit fp32  ~11.4GB   34.5
 </pre>
 
 ```sh

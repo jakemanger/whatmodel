@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · proprietary
 
-**score 76.3** ±0.8 · #12 of 551 · from 10 benchmark results across 3 sources
+**score 76.3** ±0.8 · #12 of 551 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -20,17 +20,18 @@ source                  test                            score  implies  date    
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    94.6%    74.5   2026-03-20    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>               46.3%    70.7   2026-08-27    3% ▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>      42.7%    76.9   2026-03-05    5% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    79.9   2026-03-05    5% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    79.8   2026-03-05    3% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                89.3%    79.8   2026-03-05    5% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>  58.7%    79.7   2026-03-05    3% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">FrontierScience-Research (lab)</a>  36.7%    77.7   2026-03-05    1% ▇
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>  75.8%    81.7   2026-09-11    8% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  91.7%   121.1   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 76.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

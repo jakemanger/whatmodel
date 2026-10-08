@@ -6,7 +6,7 @@
 
 Snowflake · released 2024-04 · 480B params (17B active) · apache-2.0
 
-**score 39.8** ±1.8 · #397 of 551 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 40.2** ±1.8 · #394 of 551 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,20 +15,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>   17.6%    39.9   2024-11-14   55% ▇▇▇▇▇▇▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1180.0    39.2   2026-10-02   43% ▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 39.8
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1180.0    39.2   2026-10-02   41% ▇▇▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.0%    55.7   2025-10-16    2% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   95.7%   242.2   2026-09-22    0% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 40.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Arena-Hard-Auto v0.1 leaderboard ([Apache-2.0](../../licenses/arena-hard-auto-v0-1-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
 download                                       size  score
-16-bit bf16 weights, DeepSpeed fp8 at l…  ~957.17GB   39.8
+16-bit bf16 weights, DeepSpeed fp8 at l…  ~957.17GB   40.2
 </pre>
 
 ```sh

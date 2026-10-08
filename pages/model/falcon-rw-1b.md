@@ -21,7 +21,7 @@ source                  test                    score  implies  date        weig
                         <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>               46.6%    25.9   2023-09-11   12% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                    74.7%    27.6   2023-09-11    7% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">Social IQA</a>              40.5%    20.6   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%    15.2   2023-09-11    6% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>              24.4%    15.1   2023-09-11    6% ▇
 prior                   pull toward the middle           50.0                 1% ▇
                         weighted average               = 23.9
 </pre>

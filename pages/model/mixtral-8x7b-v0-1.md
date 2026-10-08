@@ -23,12 +23,12 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K (lab)</a>                     74.4%    47.5   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag (lab)</a>                 84.4%    41.2   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP (lab)</a>                      60.7%    46.9   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  30.6%    44.7   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  30.6%    44.7   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy (lab)</a>                  83.1%    44.0   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA (lab)</a>                      83.6%    42.2   2024-01-08    2% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  43.3%    39.7   2024-05-07   12% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  20.7%    36.7   2024-05-07    8% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  14.3%    35.5   2024-05-07    7% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  14.3%    35.4   2024-05-07    7% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      39.3%    39.7   2024-01-03    2% ▇
                         <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      40.5%    40.1   2024-01-03    2% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  87.2%    51.5   2026-04-17    1% ▇

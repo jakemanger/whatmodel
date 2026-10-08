@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      78.7%    50.8   2024-12-26   45% ▇▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      78.7%    50.8   2024-12-26   46% ▇▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       83.5%    51.0   2024-12-26   42% ▇▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           69.0%    50.2   2024-12-26    6% ▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    47.6   2024-10-27    6% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           69.0%    50.2   2024-12-26    7% ▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results/evalperf/Qwen--CodeQwen1.5-7B-Chat_vllm_temp_1.0_evalperf_results.brief.json">EvalPerf correctness (118 tas…</a>  74.1%    47.6   2024-10-27    5% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 50.7
 </pre>

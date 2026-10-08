@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 34.6** ±1.2 · #461 of 551 · from 9 benchmark results across 3 sources
+**score 34.6** ±1.2 · #460 of 551 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   38.5%    34.3   2023-11-21   15% ▇▇
                         <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            48.6%    36.6   2023-11-21   11% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             42.8%    31.0   2023-11-21    9% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.0   2023-11-21    7% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.1   2023-11-21    7% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         69.0%    28.5   2023-11-21    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1149.5    35.9   2026-10-02   20% ▇▇
 <a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   14.5%    37.5   2025-08-09   12% ▇

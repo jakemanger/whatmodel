@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               28.7%    32.3   2024-12-26   27% ▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              25.6%    32.9   2024-12-26   22% ▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               28.7%    32.2   2024-12-26   27% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              25.6%    32.8   2024-12-26   22% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   47.9%    37.9   2024-12-26    3% ▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               29.9%    33.5   2024-03-28   18% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       20.3%    33.3   2024-03-28    7% ▇
-<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>               28.7%    32.5   2024-02-29   11% ▇
-                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                    55.4%    34.1   2024-02-29    5% ▇
+<a name="paper-2402.19173v1"></a>StarCoder 2 and The S…  <a href="https://arxiv.org/html/2402.19173v1">HumanEval</a>               28.7%    32.4   2024-02-29   11% ▇
+                        <a href="https://arxiv.org/html/2402.19173v1">MBPP</a>                    55.4%    34.0   2024-02-29    5% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000</a>                 16.2%    28.2   2024-02-29    3% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K</a>                   12.6%    26.1   2024-02-29    3% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              27.8%    30.5   2024-01-03    1% ▇

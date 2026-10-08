@@ -18,10 +18,10 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">WinoGrande</a>                      58.5%    23.4   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">SciQ</a>                            89.1%    26.4   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">HellaSwag</a>                       54.5%    22.0   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">ARC Easy</a>                        53.3%    20.9   2024-04-08    5% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">BoolQ</a>                           61.7%    22.0   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">ARC Easy</a>                        53.3%    20.8   2024-04-08    5% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">BoolQ</a>                           61.7%    21.9   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">PIQA</a>                            70.6%    21.6   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">LAMBADA (OpenAI version), las…</a>  51.7%    19.0   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">LAMBADA (OpenAI version), las…</a>  51.7%    18.9   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">OpenBookQA</a>                      21.8%    15.2   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/bigscience-bloom-3b.json">Social IQA</a>                      40.2%    23.8   2024-04-08    1% ▇
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        59.4%    23.6   2023-05-31    9% ▇
@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            89.1%    27.0   2023-05-31    6% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      58.6%    24.3   2023-05-31    6% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            70.8%    22.5   2023-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.8%    19.5   2023-05-31    4% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.8%    19.4   2023-05-31    4% ▇
 <a name="paper-2211.05100v4"></a>BLOOM: A 176B-Paramet…  <a href="https://arxiv.org/html/2211.05100v4">HumanEval (lab)</a>                  6.5%    24.7   2023-06-27   12% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 23.7

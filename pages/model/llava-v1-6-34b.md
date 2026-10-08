@@ -6,7 +6,7 @@
 
 LLaVA · released 2024-01 · 34.8B params · apache-2.0
 
-**score 36.8** ±2.5 · #436 of 551 · from 4 benchmark results across 3 sources
+**score 36.9** ±2.5 · #435 of 551 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                               score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>     964.4    37.1   2026-10-02   61% ▇▇▇▇▇▇▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -67.5000    32.2   2025-03-16   25% ▇▇▇
-<a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                   51.1%    43.7   2024-01-30   10% ▇
-                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                      69.5%    35.3   2024-01-30    1% ▇
+<a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>                   51.1%    43.8   2024-01-30   10% ▇
+                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>                      69.5%    35.4   2024-01-30    1% ▇
 prior                   pull toward the middle                      50.0                 3% ▇
-                        weighted average                          = 36.8
+                        weighted average                          = 36.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,8 +32,8 @@ prior                   pull toward the middle                      50.0        
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~21.38GB   36.8
-8-bit q8_0    ~42.26GB   36.8
+4-bit q4_k_m  ~21.38GB   36.9
+8-bit q8_0    ~42.26GB   36.9
 </pre>
 
 ```sh

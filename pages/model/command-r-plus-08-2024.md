@@ -6,7 +6,7 @@
 
 Cohere · released 2024-08 · 104B params · cc-by-nc-4.0
 
-**score 47.0** ±1.8 · #302 of 551 · from 3 benchmark results across 3 sources
+**score 47.1** ±1.8 · #301 of 551 · from 5 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -15,15 +15,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1276.3    49.7   2026-10-02   43% ▇▇▇▇▇
-<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    42.4   2024-09-11   43% ▇▇▇▇▇
+<a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   38.3%    42.4   2024-09-11   42% ▇▇▇▇▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   63.0%    53.6   2026-09-19   12% ▇
-prior                   pull toward the middle                    50.0                 2% ▇
-                        weighted average                        = 47.0
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   94.6%    51.3   2025-10-16    2% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.1%   162.0   2026-09-22    0% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 47.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Aider code editing benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -33,8 +35,8 @@ api (Cohere) · $4.38/M blended · $2.5 in / $10 out per 1M tokens · [docs.cohe
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~62.9GB   47.0
-8-bit q8_0    ~125.3GB   47.0
+4-bit q4_k_m   ~62.9GB   47.1
+8-bit q8_0    ~125.3GB   47.1
 </pre>
 
 ```sh

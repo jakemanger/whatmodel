@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       35.1%    66.1   2026-08-28   26% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       35.1%    66.0   2026-08-28   26% ▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    85.9%    67.6   2026-08-07    8% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        91.1%    68.1   2026-08-07    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     7.0%    60.7   2026-08-27    3% ▇
@@ -27,10 +27,10 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">NL2Repo (lab)</a>                   36.2%    67.2   2026-04-22    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">HMMT February 2026 (lab)</a>        84.3%    63.4   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SWE-bench Pro public set, Qwe…</a>  53.5%    66.2   2026-04-22    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">C-Eval (lab)</a>                    91.4%    65.8   2026-04-22    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">C-Eval (lab)</a>                    91.4%    65.7   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">QwenClawBench (Qwen internal)…</a>  53.4%    65.4   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MMLU-Redux (lab)</a>                93.5%    64.3   2026-04-22    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval average score (lab)</a>   72.4%    67.9   2026-04-22    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval average score (lab)</a>   72.4%    67.8   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Claw-Eval Pass^3 (lab)</a>          60.6%    70.9   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MMMU Pro (lab)</a>                  75.8%    66.0   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">HMMT November 2025 (lab)</a>        90.7%    69.2   2026-04-22    1% ▇
@@ -41,21 +41,21 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MMStar (lab)</a>                    81.4%    63.1   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">VLMs Are Blind (lab)</a>            97.0%    69.8   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MMBench-EN dev v1.1 (lab)</a>       92.3%    63.1   2026-04-22    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Video-MME (with subtitles) (l…</a>  87.7%    65.8   2026-04-22    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">Video-MME (with subtitles) (l…</a>  87.7%    65.9   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">RefSpatial-Bench (lab)</a>          70.0%    68.3   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">IMO-AnswerBench (lab)</a>           80.8%    64.9   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">CC-OCR (lab)</a>                    81.2%    60.9   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MLVU (lab)</a>                      86.6%    63.1   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">CountBench (lab)</a>                97.8%    69.9   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">EmbSpatial-Bench (lab)</a>          84.6%    62.1   2026-04-22    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MVBench (lab)</a>                   75.5%    61.3   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MMMU (val) (lab)</a>                82.9%    70.9   2026-04-22    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MVBench (lab)</a>                   75.5%    61.3   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">OCRBench (lab)</a>                  89.4%    60.5   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">ERQA (lab)</a>                      62.5%    63.8   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">SimpleVQA (lab)</a>                 56.1%    61.9   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">RealWorldQA (lab)</a>               84.1%    62.2   2026-04-22    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">CharXiv (reasoning questions)…</a>  78.4%    70.0   2026-04-22    0% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MathVista (testmini) (lab)</a>      87.4%    82.0   2026-04-22    0% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/README.md">MathVista (testmini) (lab)</a>      87.4%    81.9   2026-04-22    0% ▇
 <a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>        63.4%    65.1   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>          63.9%    63.0   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">IFBench (aggregation unspecif…</a>  69.1%    63.2   2026-08-14    2% ▇

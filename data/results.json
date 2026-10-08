@@ -195775,5 +195775,2215 @@
     "date": "2026-09-22",
     "note": "image_to_video, category overall, split latest; exact entry 'kling-2.5-turbo-1080p'; 3,795 votes; published 95% interval 1263.0–1288.1. Kling 2.5 Turbo is sold in Standard (720p) and Pro (1080p) modes, so the 1080p entry is the Pro tier this catalogue model names.",
     "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "gpt-5-4-nano",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.969,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.4-nano-2026-03-17': factual consistency rate 96.9% (hallucination rate 3.1%), answer rate 100.0%, average summary length 144.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-flash-lite",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.967,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemini-2.5-flash-lite': factual consistency rate 96.7% (hallucination rate 3.3%), answer rate 99.5%, average summary length 95.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-4",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'microsoft/Phi-4': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 80.7%, average summary length 120.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "snowflake-arctic-instruct",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.957,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'snowflake/snowflake-arctic-instruct': factual consistency rate 95.7% (hallucination rate 4.3%), answer rate 62.7%, average summary length 81.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-12b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.956,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemma-3-12b-it': factual consistency rate 95.6% (hallucination rate 4.4%), answer rate 97.4%, average summary length 89.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-8b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.952,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3-8b': factual consistency rate 95.2% (hallucination rate 4.8%), answer rate 99.9%, average summary length 83.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-pro",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.949,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'amazon/nova-pro-v1:0': factual consistency rate 94.9% (hallucination rate 5.1%), answer rate 99.3%, average summary length 66.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-2-lite",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.949,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'amazon/nova-2-lite-v1:0': factual consistency rate 94.9% (hallucination rate 5.1%), answer rate 99.6%, average summary length 94.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.949,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/mistral-small-2501': factual consistency rate 94.9% (hallucination rate 5.1%), answer rate 97.9%, average summary length 98.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-4-0-h-small",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.948,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'ibm-granite/granite-4.0-h-small': factual consistency rate 94.8% (hallucination rate 5.2%), answer rate 100.0%, average summary length 107.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-4-26b-a4b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.948,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemma-4-26b-a4b-it': factual consistency rate 94.8% (hallucination rate 5.2%), answer rate 99.8%, average summary length 67.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3-2-exp",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.947,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'deepseek-ai/DeepSeek-V3.2-Exp': factual consistency rate 94.7% (hallucination rate 5.3%), answer rate 96.6%, average summary length 64.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-14b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.946,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3-14b': factual consistency rate 94.6% (hallucination rate 5.4%), answer rate 99.9%, average summary length 111.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-micro",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.945,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'amazon/nova-micro-v1:0': factual consistency rate 94.5% (hallucination rate 5.5%), answer rate 100.0%, average summary length 100.0 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3-1",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.945,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'deepseek-ai/DeepSeek-V3.1': factual consistency rate 94.5% (hallucination rate 5.5%), answer rate 94.5%, average summary length 63.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-4-mini",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.945,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.4-mini-2026-03-17': factual consistency rate 94.5% (hallucination rate 5.5%), answer rate 100.0%, average summary length 54.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.944,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-4.1-2025-04-14': factual consistency rate 94.4% (hallucination rate 5.6%), answer rate 99.9%, average summary length 91.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-4b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.943,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3-4b': factual consistency rate 94.3% (hallucination rate 5.7%), answer rate 99.9%, average summary length 104.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-32b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.941,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3-32b': factual consistency rate 94.1% (hallucination rate 5.9%), answer rate 99.9%, average summary length 115.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-lite",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.939,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'amazon/nova-lite-v1:0': factual consistency rate 93.9% (hallucination rate 6.1%), answer rate 99.9%, average summary length 91.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.939,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'deepseek-ai/DeepSeek-V3': factual consistency rate 93.9% (hallucination rate 6.1%), answer rate 97.5%, average summary length 81.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3-2",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.937,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'deepseek-ai/DeepSeek-V3.2': factual consistency rate 93.7% (hallucination rate 6.3%), answer rate 92.6%, average summary length 62.0 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-4b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.936,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemma-3-4b-it': factual consistency rate 93.6% (hallucination rate 6.4%), answer rate 67.3%, average summary length 77.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "command-r-plus-08-2024",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.931,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'CohereLabs/command-r-plus-08-2024': factual consistency rate 93.1% (hallucination rate 6.9%), answer rate 95.0%, average summary length 91.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-6-sol",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.935,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-6-sol': factual consistency rate 93.5% (hallucination rate 6.5%), answer rate 100.0%, average summary length 71.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "trinity-large-preview",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.931,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'arcee-ai/trinity-large-preview': factual consistency rate 93.1% (hallucination rate 6.9%), answer rate 99.0%, average summary length 117.3 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-4",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.93,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.4-2026-03-05': factual consistency rate 93.0% (hallucination rate 7.0%), answer rate 99.9%, average summary length 81.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.93,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemini-2.5-pro': factual consistency rate 93.0% (hallucination rate 7.0%), answer rate 99.1%, average summary length 106.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-3b-2410",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.927,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/ministral-3b-2410': factual consistency rate 92.7% (hallucination rate 7.3%), answer rate 99.9%, average summary length 167.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-27b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.926,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemma-3-27b-it': factual consistency rate 92.6% (hallucination rate 7.4%), answer rate 98.8%, average summary length 96.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-4-31b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.926,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemma-4-31b-it': factual consistency rate 92.6% (hallucination rate 7.4%), answer rate 100.0%, average summary length 75.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-6-astra",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.913,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-6-astra': factual consistency rate 91.3% (hallucination rate 8.7%), answer rate 100.0%, average summary length 148.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-8b-2410",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.926,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/ministral-8b-2410': factual consistency rate 92.6% (hallucination rate 7.4%), answer rate 99.9%, average summary length 196.0 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-4-scout",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.923,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'meta-llama/Llama-4-Scout-17B-16E-Instruct': factual consistency rate 92.3% (hallucination rate 7.7%), answer rate 99.0%, average summary length 137.3 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-flash",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.922,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemini-2.5-flash': factual consistency rate 92.2% (hallucination rate 7.8%), answer rate 99.0%, average summary length 101.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-4-maverick",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.918,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8': factual consistency rate 91.8% (hallucination rate 8.2%), answer rate 100.0%, average summary length 106.0 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Served via Together AI as Meta's own official FP8 release of this checkpoint.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-4-pro",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.917,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.4-pro-2026-03-05': factual consistency rate 91.7% (hallucination rate 8.3%), answer rate 100.0%, average summary length 148.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "minimax-m2-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.909,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'MiniMaxAI/minimax-m2p5': factual consistency rate 90.9% (hallucination rate 9.1%), answer rate 98.2%, average summary length 137.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "command-a",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.907,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'CohereLabs/command-a-03-2025': factual consistency rate 90.7% (hallucination rate 9.3%), answer rate 97.6%, average summary length 101.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.907,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.5': factual consistency rate 90.7% (hallucination rate 9.3%), answer rate 100.0%, average summary length 129.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-5-air",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.907,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'zai-org/GLM-4.5-AIR-FP8': factual consistency rate 90.7% (hallucination rate 9.3%), answer rate 98.1%, average summary length 70.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Served via Together AI as Z.ai's own official FP8 release of this checkpoint.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-235b-a22b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.907,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3-235b-a22b': factual consistency rate 90.7% (hallucination rate 9.3%), answer rate 94.9%, average summary length 105.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-next-80b-a3b-thinking",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.907,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3-next-80b-a3b-thinking': factual consistency rate 90.7% (hallucination rate 9.3%), answer rate 94.4%, average summary length 70.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-7-flash",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.907,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'zai-org/GLM-4.7-flash': factual consistency rate 90.7% (hallucination rate 9.3%), answer rate 91.6%, average summary length 71.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "aya-expanse-8b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.905,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'CohereLabs/c4ai-aya-expanse-8b': factual consistency rate 90.5% (hallucination rate 9.5%), answer rate 77.5%, average summary length 88.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-6",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.905,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'zai-org/GLM-4.6': factual consistency rate 90.5% (hallucination rate 9.5%), answer rate 94.5%, average summary length 77.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nemotron-3-nano-30b-a3b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.904,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'nvidia/Nemotron-3-Nano-30B-A3B': factual consistency rate 90.4% (hallucination rate 9.6%), answer rate 99.6%, average summary length 104.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4o-2024-08-06",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.904,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-4o-2024-08-06': factual consistency rate 90.4% (hallucination rate 9.6%), answer rate 93.8%, average summary length 86.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-haiku-4-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.902,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-haiku-4-5-20251001': factual consistency rate 90.2% (hallucination rate 9.8%), answer rate 99.5%, average summary length 115.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.899,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'zai-org/glm-5': factual consistency rate 89.9% (hallucination rate 10.1%), answer rate 99.7%, average summary length 74.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.897,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-sonnet-4-20250514': factual consistency rate 89.7% (hallucination rate 10.3%), answer rate 98.6%, average summary length 145.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-3-1-pro",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.896,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemini-3.1-pro-preview': factual consistency rate 89.6% (hallucination rate 10.4%), answer rate 99.4%, average summary length 107.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-5-flash",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.895,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3.5-flash-2026-02-23': factual consistency rate 89.5% (hallucination rate 10.5%), answer rate 99.8%, average summary length 95.0 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-5-35b-a3b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.895,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3.5-35b-a3b': factual consistency rate 89.5% (hallucination rate 10.5%), answer rate 99.8%, average summary length 94.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-nano",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.895,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5-nano-2025-08-07': factual consistency rate 89.5% (hallucination rate 10.5%), answer rate 100.0%, average summary length 105.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-sonnet-4-6",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.894,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-sonnet-4-6': factual consistency rate 89.4% (hallucination rate 10.6%), answer rate 99.9%, average summary length 114.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-3-8b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.894,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'ibm-granite/granite-3.3-8b-instruct': factual consistency rate 89.4% (hallucination rate 10.6%), answer rate 100.0%, average summary length 131.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-5-plus",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.893,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3.5-plus-2026-02-15': factual consistency rate 89.3% (hallucination rate 10.7%), answer rate 99.8%, average summary length 92.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.892,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.2-high-2025-12-11': factual consistency rate 89.2% (hallucination rate 10.8%), answer rate 100.0%, average summary length 186.3 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Highest reasoning effort listed (high; a low-effort row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "kimi-k2-6",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.892,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'moonshotai/kimi-k2.6': factual consistency rate 89.2% (hallucination rate 10.8%), answer rate 99.7%, average summary length 116.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.891,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-opus-4-5-20251101': factual consistency rate 89.1% (hallucination rate 10.9%), answer rate 98.7%, average summary length 114.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "aya-expanse-32b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.891,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'CohereLabs/c4ai-aya-expanse-32b': factual consistency rate 89.1% (hallucination rate 10.9%), answer rate 99.8%, average summary length 112.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-5-122b-a10b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.888,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3.5-122b-a10b': factual consistency rate 88.8% (hallucination rate 11.2%), answer rate 99.8%, average summary length 86.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-r1",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.887,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'deepseek-ai/DeepSeek-R1': factual consistency rate 88.7% (hallucination rate 11.3%), answer rate 97.0%, average summary length 93.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-7",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.883,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'zai-org/glm-4p7': factual consistency rate 88.3% (hallucination rate 11.7%), answer rate 99.8%, average summary length 70.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.882,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-opus-4-1-20250805': factual consistency rate 88.2% (hallucination rate 11.8%), answer rate 92.4%, average summary length 129.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.88,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-opus-4-20250514': factual consistency rate 88.0% (hallucination rate 12.0%), answer rate 91.0%, average summary length 123.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.88,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-sonnet-4-5-20250929': factual consistency rate 88.0% (hallucination rate 12.0%), answer rate 95.6%, average summary length 127.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-7",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.88,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-opus-4-7': factual consistency rate 88.0% (hallucination rate 12.0%), answer rate 98.0%, average summary length 149.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-5-27b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.879,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'qwen/qwen3.5-27b': factual consistency rate 87.9% (hallucination rate 12.1%), answer rate 99.8%, average summary length 94.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-6-sol",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.876,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.6-sol': factual consistency rate 87.6% (hallucination rate 12.4%), answer rate 99.1%, average summary length 131.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-1",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.879,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5.1-high-2025-11-13': factual consistency rate 87.9% (hallucination rate 12.1%), answer rate 100.0%, average summary length 254.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Highest reasoning effort listed (high; a low-effort row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.878,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'anthropic/claude-opus-4-6': factual consistency rate 87.8% (hallucination rate 12.2%), answer rate 99.8%, average summary length 137.6 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mercury-2",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.877,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'inceptionlabs/mercury-2': factual consistency rate 87.7% (hallucination rate 12.3%), answer rate 100.0%, average summary length 149.1 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "minimax-m2-7",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.871,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'MiniMaxAI/minimax-m2p7': factual consistency rate 87.1% (hallucination rate 12.9%), answer rate 99.4%, average summary length 131.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-mini",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.871,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5-mini-2025-08-07': factual consistency rate 87.1% (hallucination rate 12.9%), answer rate 99.9%, average summary length 169.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.865,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemini-3-flash-preview': factual consistency rate 86.5% (hallucination rate 13.5%), answer rate 99.8%, average summary length 90.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.864,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'google/gemini-3-pro-preview': factual consistency rate 86.4% (hallucination rate 13.6%), answer rate 99.4%, average summary length 101.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "kimi-k2-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.858,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'moonshotai/Kimi-K2.5': factual consistency rate 85.8% (hallucination rate 14.2%), answer rate 92.2%, average summary length 112.0 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-oss-120b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.858,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-oss-120b': factual consistency rate 85.8% (hallucination rate 14.2%), answer rate 99.9%, average summary length 135.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-large-3",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.855,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/mistral-3-large-2512': factual consistency rate 85.5% (hallucination rate 14.5%), answer rate 98.8%, average summary length 112.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.849,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/gpt-5-high-2025-08-07': factual consistency rate 84.9% (hallucination rate 15.1%), answer rate 99.9%, average summary length 162.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Highest reasoning effort listed (high; a minimal-effort row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "kimi-k2-0905",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.821,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'moonshotai/Kimi-K2-Instruct-0905': factual consistency rate 82.1% (hallucination rate 17.9%), answer rate 98.6%, average summary length 59.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o4-mini",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.814,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/o4-mini-high-2025-04-16': factual consistency rate 81.4% (hallucination rate 18.6%), answer rate 99.2%, average summary length 127.7 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Highest reasoning effort listed (high; a low-effort row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.808,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'xai-org/grok-4-1-fast-reasoning': factual consistency rate 80.8% (hallucination rate 19.2%), answer rate 99.7%, average summary length 99.5 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-3-14b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.806,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/ministral-3-14b-2512': factual consistency rate 80.6% (hallucination rate 19.4%), answer rate 99.6%, average summary length 135.8 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.798,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'xai-org/grok-4-fast-reasoning': factual consistency rate 79.8% (hallucination rate 20.2%), answer rate 99.5%, average summary length 173.9 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents. Reasoning mode (a non-reasoning row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-3-8b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.783,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/ministral-3-8b-2512': factual consistency rate 78.3% (hallucination rate 21.7%), answer rate 99.1%, average summary length 139.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o3-pro",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.767,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'openai/o3-pro': factual consistency rate 76.7% (hallucination rate 23.3%), answer rate 100.0%, average summary length 127.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-4-mini",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.765,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'microsoft/Phi-4-mini-instruct': factual consistency rate 76.5% (hallucination rate 23.5%), answer rate 92.5%, average summary length 420.2 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-3-3b",
+    "bench": "vectara-hhem-factual-consistency",
+    "score": 0.758,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "Vectara hallucination leaderboard README @af0e320 (Apache-2.0, last updated 22 September 2026), row 'mistralai/ministral-3-3b-2512': factual consistency rate 75.8% (hallucination rate 24.2%), answer rate 74.3%, average summary length 119.4 words. HHEM-2.3 judge on Vectara's current summarisation set; rates are over answered documents.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-0-flash-001",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.993,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.0-Flash-001': factual consistency rate 99.3% (hallucination rate 0.7%), answer rate 100.0%, average summary length 65.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-0-pro-exp-02-05",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.992,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.0-Pro-Exp': factual consistency rate 99.2% (hallucination rate 0.8%), answer rate 99.7%, average summary length 61.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o3-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.992,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI o3-mini-high': factual consistency rate 99.2% (hallucination rate 0.8%), answer rate 100.0%, average summary length 79.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Highest reasoning effort listed.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "kimi-k2",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.989,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Moonshot AI Kimi-K2-Instruct': factual consistency rate 98.9% (hallucination rate 1.1%), answer rate 89.5%, average summary length 73.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-pro-exp-03-25",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.989,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.5-Pro-Exp-0325': factual consistency rate 98.9% (hallucination rate 1.1%), answer rate 95.1%, average summary length 72.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-0-flash-lite-preview-02-05",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.988,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.0-Flash-Lite-Preview': factual consistency rate 98.8% (hallucination rate 1.2%), answer rate 99.5%, average summary length 60.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-5-preview-2025-02-27",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.988,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4.5-Preview': factual consistency rate 98.8% (hallucination rate 1.2%), answer rate 100.0%, average summary length 77.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-9b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.987,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Zhipu AI GLM-4-9B-Chat': factual consistency rate 98.7% (hallucination rate 1.3%), answer rate 100.0%, average summary length 58.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-flash-preview-04-17",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.987,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.5-Flash-Preview': factual consistency rate 98.7% (hallucination rate 1.3%), answer rate 91.2%, average summary length 71.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.986,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-5-high': factual consistency rate 98.6% (hallucination rate 1.4%), answer rate 99.3%, average summary length 96.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Highest reasoning effort listed (a minimal-effort row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o1-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.986,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI-o1-mini': factual consistency rate 98.6% (hallucination rate 1.4%), answer rate 100.0%, average summary length 78.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-micro",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.984,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Amazon Nova-Micro-V1': factual consistency rate 98.4% (hallucination rate 1.6%), answer rate 100.0%, average summary length 90.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Called through OpenRouter, whose only provider for Nova is Amazon Bedrock.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.983,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4o-mini': factual consistency rate 98.3% (hallucination rate 1.7%), answer rate 100.0%, average summary length 76.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.983,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4-Turbo': factual consistency rate 98.3% (hallucination rate 1.7%), answer rate 100.0%, average summary length 86.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-lite",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.982,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Amazon Nova-Lite-V1': factual consistency rate 98.2% (hallucination rate 1.8%), answer rate 99.9%, average summary length 80.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Called through OpenRouter, whose only provider for Nova is Amazon Bedrock.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.982,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4': factual consistency rate 98.2% (hallucination rate 1.8%), answer rate 100.0%, average summary length 81.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Called as the gpt-4 alias, which points to gpt-4-0613.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "nova-pro",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.982,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Amazon Nova-Pro-V1': factual consistency rate 98.2% (hallucination rate 1.8%), answer rate 100.0%, average summary length 85.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Called through OpenRouter, whose only provider for Nova is Amazon Bedrock.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-5-air",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.981,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'ZhipuAI GLM-4.5-Air-FP8': factual consistency rate 98.1% (hallucination rate 1.9%), answer rate 99.1%, average summary length 74.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Z.ai's own official FP8 release, served via Together AI.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-1-nano-2025-04-14",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.98,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4.1-nano': factual consistency rate 98.0% (hallucination rate 2.0%), answer rate 100.0%, average summary length 70.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.98,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4.1': factual consistency rate 98.0% (hallucination rate 2.0%), answer rate 100.0%, average summary length 71.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-1-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.978,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-4.1-mini': factual consistency rate 97.8% (hallucination rate 2.2%), answer rate 100.0%, average summary length 79.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-14b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.978,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-14B': factual consistency rate 97.8% (hallucination rate 2.2%), answer rate 100.0%, average summary length 82.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-oss-120b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.976,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI gpt-oss-120b': factual consistency rate 97.6% (hallucination rate 2.4%), answer rate 100.0%, average summary length 82.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o1-2024-12-17",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.976,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI o1': factual consistency rate 97.6% (hallucination rate 2.4%), answer rate 99.9%, average summary length 73.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-3-5-moe-instruct",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.975,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft Phi-3.5-MoE-instruct': factual consistency rate 97.5% (hallucination rate 2.5%), answer rate 96.3%, average summary length 69.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-pro-preview-06-05",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.974,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.5-Pro-Preview-06-05': factual consistency rate 97.4% (hallucination rate 2.6%), answer rate 99.6%, average summary length 73.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-4b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.973,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-4B': factual consistency rate 97.3% (hallucination rate 2.7%), answer rate 100.0%, average summary length 87.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-12b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.972,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-3-12B-Instruct': factual consistency rate 97.2% (hallucination rate 2.8%), answer rate 100.0%, average summary length 69.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-7b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.972,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-7B-Instruct': factual consistency rate 97.2% (hallucination rate 2.8%), answer rate 100.0%, average summary length 71.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-32b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.972,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-32B': factual consistency rate 97.2% (hallucination rate 2.8%), answer rate 100.0%, average summary length 82.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-2-5-flash-lite",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.971,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-2.5-Flash-Lite': factual consistency rate 97.1% (hallucination rate 2.9%), answer rate 99.7%, average summary length 78.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "jamba-1-5-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.971,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'AI21 Jamba-1.5-Mini': factual consistency rate 97.1% (hallucination rate 2.9%), answer rate 95.6%, average summary length 74.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-27b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.97,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-3-27B-Instruct': factual consistency rate 97.0% (hallucination rate 3.0%), answer rate 100.0%, average summary length 62.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-32b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.97,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-32B-Instruct': factual consistency rate 97.0% (hallucination rate 3.0%), answer rate 100.0%, average summary length 67.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "snowflake-arctic-instruct",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.97,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Snowflake-Arctic-Instruct': factual consistency rate 97.0% (hallucination rate 3.0%), answer rate 100.0%, average summary length 68.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.97,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-8B': factual consistency rate 97.0% (hallucination rate 3.0%), answer rate 100.0%, average summary length 78.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-3-mini-128k-instruct",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.969,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft Phi-3-mini-128k-instruct': factual consistency rate 96.9% (hallucination rate 3.1%), answer rate 100.0%, average summary length 60.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-small-3",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.969,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mistral Small3': factual consistency rate 96.9% (hallucination rate 3.1%), answer rate 100.0%, average summary length 74.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.968,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-5-mini': factual consistency rate 96.8% (hallucination rate 3.2%), answer rate 99.6%, average summary length 87.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o1-preview",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.967,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI o1-preview': factual consistency rate 96.7% (hallucination rate 3.3%), answer rate 100.0%, average summary length 119.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-1-5-flash-002",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.966,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-1.5-Flash-002': factual consistency rate 96.6% (hallucination rate 3.4%), answer rate 99.9%, average summary length 59.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-4-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.966,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft Phi-4-mini-instruct': factual consistency rate 96.6% (hallucination rate 3.4%), answer rate 100.0%, average summary length 69.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-oss-20b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI gpt-oss-20b': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 99.4%, average summary length 90.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-next-80b-a3b-thinking",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-next-80b-a3b-thinking': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 99.7%, average summary length 64.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-5",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'ZhipuAI GLM-4.5': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 99.1%, average summary length 81.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-4b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-3-4B-Instruct': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 100.0%, average summary length 63.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-0-6b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-0.6B': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 100.0%, average summary length 65.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "yi-1-5-34b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.963,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row '01-AI Yi-1.5-34B-Chat': factual consistency rate 96.3% (hallucination rate 3.7%), answer rate 100.0%, average summary length 83.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-max-preview",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.962,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-Max-Preview': factual consistency rate 96.2% (hallucination rate 3.8%), answer rate 97.0%, average summary length 80.8 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.961,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'DeepSeek-V3': factual consistency rate 96.1% (hallucination rate 3.9%), answer rate 100.0%, average summary length 88.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-3-70b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.96,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-3.3-70B-Instruct': factual consistency rate 96.0% (hallucination rate 4.0%), answer rate 100.0%, average summary length 85.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-3-5-mini-instruct",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.959,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft Phi-3.5-mini-instruct': factual consistency rate 95.9% (hallucination rate 4.1%), answer rate 100.0%, average summary length 75.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-70b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.959,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-3-70B-Chat-hf': factual consistency rate 95.9% (hallucination rate 4.1%), answer rate 99.2%, average summary length 68.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.958,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-Opus-4.1': factual consistency rate 95.8% (hallucination rate 4.2%), answer rate 98.2%, average summary length 107.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-vl-7b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.958,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2-VL-7B-Instruct': factual consistency rate 95.8% (hallucination rate 4.2%), answer rate 100.0%, average summary length 73.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-14b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.958,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-14B-Instruct': factual consistency rate 95.8% (hallucination rate 4.2%), answer rate 100.0%, average summary length 74.8 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-72b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.957,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-72B-Instruct': factual consistency rate 95.7% (hallucination rate 4.3%), answer rate 100.0%, average summary length 80.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "glm-4-6",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.957,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'ZhipuAI GLM-4.6': factual consistency rate 95.7% (hallucination rate 4.3%), answer rate 98.3%, average summary length 64.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-1-7b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.956,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-1.7B': factual consistency rate 95.6% (hallucination rate 4.4%), answer rate 100.0%, average summary length 69.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-haiku-4-5",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.955,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Claude-Haiku-4-5': factual consistency rate 95.5% (hallucination rate 4.5%), answer rate 99.7%, average summary length 83.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.955,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Claude-4-Sonnet': factual consistency rate 95.5% (hallucination rate 4.5%), answer rate 100.0%, average summary length 116.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.955,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Claude-3.7-Sonnet-Think': factual consistency rate 95.5% (hallucination rate 4.5%), answer rate 99.8%, average summary length 99.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details. Extended-thinking row (a non-thinking row is also published).",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "command-a",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.955,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Cohere Command-A': factual consistency rate 95.5% (hallucination rate 4.5%), answer rate 100.0%, average summary length 77.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3-2-exp",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.954,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'DeepSeek-AI DeepSeek-V3.2-Exp': factual consistency rate 95.4% (hallucination rate 4.6%), answer rate 99.3%, average summary length 61.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o4-mini",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.954,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI o4-mini': factual consistency rate 95.4% (hallucination rate 4.6%), answer rate 100.0%, average summary length 82.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.954,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-3-5-sonnet': factual consistency rate 95.4% (hallucination rate 4.6%), answer rate 100.0%, average summary length 95.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gpt-5-nano",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.953,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI GPT-5-nano': factual consistency rate 95.3% (hallucination rate 4.7%), answer rate 99.9%, average summary length 72.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-72b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.953,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2-72B-Instruct': factual consistency rate 95.3% (hallucination rate 4.7%), answer rate 100.0%, average summary length 100.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-4",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.953,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft Phi-4': factual consistency rate 95.3% (hallucination rate 4.7%), answer rate 100.0%, average summary length 100.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mixtral-8x22b-instruct-v0-1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.953,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mixtral-8x22B-Instruct-v0.1': factual consistency rate 95.3% (hallucination rate 4.7%), answer rate 99.9%, average summary length 92.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.952,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Claude-4-Opus': factual consistency rate 95.2% (hallucination rate 4.8%), answer rate 100.0%, average summary length 110.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen3-30b-a3b-thinking-2507",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.952,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen3-30b-a3b-thinking-2507': factual consistency rate 95.2% (hallucination rate 4.8%), answer rate 98.2%, average summary length 68.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "grok-4-0709",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.952,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'XAI Grok-4-0709': factual consistency rate 95.2% (hallucination rate 4.8%), answer rate 99.8%, average summary length 100.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-5-haiku-20241022",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.951,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-3-5-haiku': factual consistency rate 95.1% (hallucination rate 4.9%), answer rate 100.0%, average summary length 92.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "yi-1-5-9b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.951,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row '01-AI Yi-1.5-9B-Chat': factual consistency rate 95.1% (hallucination rate 4.9%), answer rate 100.0%, average summary length 85.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "command-r-08-2024",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.951,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Cohere Command-R': factual consistency rate 95.1% (hallucination rate 4.9%), answer rate 100.0%, average summary length 68.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-1-70b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.95,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-3.1-70B-Instruct': factual consistency rate 95.0% (hallucination rate 5.0%), answer rate 100.0%, average summary length 79.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-3-1b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.947,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-3-1B-Instruct': factual consistency rate 94.7% (hallucination rate 5.3%), answer rate 99.9%, average summary length 57.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-1-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.946,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-3.1-8B-Instruct': factual consistency rate 94.6% (hallucination rate 5.4%), answer rate 100.0%, average summary length 71.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "command-r-plus-08-2024",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.946,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Cohere Command-R-Plus': factual consistency rate 94.6% (hallucination rate 5.4%), answer rate 100.0%, average summary length 68.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.945,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-Sonnet-4-5-20250929': factual consistency rate 94.5% (hallucination rate 5.5%), answer rate 99.4%, average summary length 87.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3-1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.945,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'DeepSeek-AI DeepSeek-V3.1': factual consistency rate 94.5% (hallucination rate 5.5%), answer rate 98.7%, average summary length 78.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-small-3-1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.944,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mistral-Small-3.1-24B-Instruct': factual consistency rate 94.4% (hallucination rate 5.6%), answer rate 100.0%, average summary length 73.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.941,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-2-70B-Chat-hf': factual consistency rate 94.1% (hallucination rate 5.9%), answer rate 99.9%, average summary length 84.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "kimi-k2-0905",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.938,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'MoonshotAI Kimi-K2-Instruct-0905': factual consistency rate 93.8% (hallucination rate 6.2%), answer rate 99.6%, average summary length 61.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-0-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.935,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-3.0-8B-Instruct': factual consistency rate 93.5% (hallucination rate 6.5%), answer rate 100.0%, average summary length 74.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-4-0-micro",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.935,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-4.0-micro': factual consistency rate 93.5% (hallucination rate 6.5%), answer rate 100.0%, average summary length 59.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-1-5-pro-002",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.937,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-1.5-Pro-002': factual consistency rate 93.7% (hallucination rate 6.6%), answer rate 99.9%, average summary length 62.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.934,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-1.5-Flash': factual consistency rate 93.4% (hallucination rate 6.6%), answer rate 99.9%, average summary length 63.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "phi-2",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.933,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft phi-2': factual consistency rate 93.3% (hallucination rate 6.7%), answer rate 91.5%, average summary length 80.8 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "o3",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.932,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'OpenAI o3': factual consistency rate 93.2% (hallucination rate 6.8%), answer rate 100.0%, average summary length 77.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-2-2b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.93,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-2-2B-it': factual consistency rate 93.0% (hallucination rate 7.0%), answer rate 100.0%, average summary length 62.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-3b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.93,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-3B-Instruct': factual consistency rate 93.0% (hallucination rate 7.0%), answer rate 100.0%, average summary length 70.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.926,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-3-8B-Chat-hf': factual consistency rate 92.6% (hallucination rate 7.4%), answer rate 99.8%, average summary length 79.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-8b-2410",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.925,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mistral-Ministral-8B': factual consistency rate 92.5% (hallucination rate 7.5%), answer rate 100.0%, average summary length 62.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-r1-0528",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.923,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'DeepSeek-R1-0528': factual consistency rate 92.3% (hallucination rate 7.7%), answer rate 100.0%, average summary length 138.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "yi-1-5-6b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.921,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row '01-AI Yi-1.5-6B-Chat': factual consistency rate 92.1% (hallucination rate 7.9%), answer rate 100.0%, average summary length 98.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-v3-0324",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.92,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'DeepSeek-V3-0324': factual consistency rate 92.0% (hallucination rate 8.0%), answer rate 100.0%, average summary length 78.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "ministral-3b-2410",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.917,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mistral-Ministral-3B': factual consistency rate 91.7% (hallucination rate 8.3%), answer rate 100.0%, average summary length 73.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "dbrx-instruct",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.917,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'databricks dbrx-instruct': factual consistency rate 91.7% (hallucination rate 8.3%), answer rate 100.0%, average summary length 85.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "aya-expanse-32b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.915,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Cohere Aya Expanse 32B': factual consistency rate 91.5% (hallucination rate 8.5%), answer rate 99.9%, average summary length 81.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-1-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.914,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-3.1-8B-Instruct': factual consistency rate 91.4% (hallucination rate 8.6%), answer rate 100.0%, average summary length 107.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-2-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.913,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-3.2-8B-Instruct': factual consistency rate 91.3% (hallucination rate 8.7%), answer rate 100.0%, average summary length 120.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-0-2b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.912,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-3.0-2B-Instruct': factual consistency rate 91.2% (hallucination rate 8.8%), answer rate 100.0%, average summary length 81.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-3",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.905,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mistral-7B-Instruct-v0.3': factual consistency rate 90.5% (hallucination rate 9.5%), answer rate 100.0%, average summary length 98.4 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.909,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemini-1.5-Pro': factual consistency rate 90.9% (hallucination rate 9.1%), answer rate 99.8%, average summary length 61.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.899,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-3-opus': factual consistency rate 89.9% (hallucination rate 10.1%), answer rate 95.5%, average summary length 92.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-2-9b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.899,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-2-9B-it': factual consistency rate 89.9% (hallucination rate 10.1%), answer rate 100.0%, average summary length 70.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-13b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.895,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-2-13B-Chat-hf': factual consistency rate 89.5% (hallucination rate 10.5%), answer rate 99.8%, average summary length 82.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "olmo-2-13b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.892,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'AllenAI-OLMo-2-13B-Instruct': factual consistency rate 89.2% (hallucination rate 10.8%), answer rate 100.0%, average summary length 82.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "olmo-2-7b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.889,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'AllenAI-OLMo-2-7B-Instruct': factual consistency rate 88.9% (hallucination rate 11.1%), answer rate 100.0%, average summary length 112.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-nemo-instruct-2407",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.888,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mistral-Nemo-Instruct': factual consistency rate 88.8% (hallucination rate 11.2%), answer rate 100.0%, average summary length 69.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-7b-chat",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.887,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-2-7B-Chat-hf': factual consistency rate 88.7% (hallucination rate 11.3%), answer rate 99.6%, average summary length 119.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mistral-medium-3-1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.886,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'MistralAI Mistral-Medium-2508': factual consistency rate 88.6% (hallucination rate 11.4%), answer rate 98.3%, average summary length 99.2 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "wizardlm-2-8x22b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.883,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Microsoft WizardLM-2-8x22B': factual consistency rate 88.3% (hallucination rate 11.7%), answer rate 99.9%, average summary length 140.8 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "aya-expanse-8b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.878,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Cohere Aya Expanse 8B': factual consistency rate 87.8% (hallucination rate 12.2%), answer rate 99.9%, average summary length 83.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-r1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.857,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'DeepSeek-R1': factual consistency rate 85.7% (hallucination rate 14.3%), answer rate 100.0%, average summary length 77.1 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-7b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.852,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-7B-it': factual consistency rate 85.2% (hallucination rate 14.8%), answer rate 100.0%, average summary length 113.0 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-1-2b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.843,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-3.1-2B-Instruct': factual consistency rate 84.3% (hallucination rate 15.7%), answer rate 100.0%, average summary length 107.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-1-5b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.842,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-1.5B-Instruct': factual consistency rate 84.2% (hallucination rate 15.8%), answer rate 100.0%, average summary length 70.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwq-32b-preview",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.839,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen-QwQ-32B-Preview': factual consistency rate 83.9% (hallucination rate 16.1%), answer rate 100.0%, average summary length 201.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.837,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-3-sonnet': factual consistency rate 83.7% (hallucination rate 16.3%), answer rate 100.0%, average summary length 108.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "granite-3-2-2b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.835,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'IBM Granite-3.2-2B-Instruct': factual consistency rate 83.5% (hallucination rate 16.5%), answer rate 100.0%, average summary length 117.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-1-1-7b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.83,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-1.1-7B-it': factual consistency rate 83.0% (hallucination rate 17.0%), answer rate 100.0%, average summary length 64.3 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-2-0",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.826,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Anthropic Claude-2': factual consistency rate 82.6% (hallucination rate 17.4%), answer rate 99.3%, average summary length 87.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "flan-t5-large",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.817,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Flan-T5-large': factual consistency rate 81.7% (hallucination rate 18.3%), answer rate 99.3%, average summary length 20.9 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.799,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Mixtral-8x7B-Instruct-v0.1': factual consistency rate 79.9% (hallucination rate 20.1%), answer rate 99.9%, average summary length 90.7 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-2-1b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.793,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Llama-3.2-1B-Instruct': factual consistency rate 79.3% (hallucination rate 20.7%), answer rate 100.0%, average summary length 71.5 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-5-0-5b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.748,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Qwen2.5-0.5B-Instruct': factual consistency rate 74.8% (hallucination rate 25.2%), answer rate 100.0%, average summary length 72.6 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "gemma-1-1-2b",
+    "bench": "vectara-hhem-factual-consistency-2025",
+    "score": 0.722,
+    "source": "https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md",
+    "by": "independent",
+    "date": "2025-10-16",
+    "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-1.1-2B-it': factual consistency rate 72.2% (hallucination rate 27.8%), answer rate 100.0%, average summary length 66.8 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
+    "source_id": "vectara-hallucination-leaderboard-apache"
   }
 ]

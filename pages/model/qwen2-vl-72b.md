@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-09 · 73.4B params · tongyi-qianwen
 
-**score 51.5** ±1.6 · #254 of 551 · from 14 benchmark results across 5 sources
+**score 51.5** ±1.6 · #255 of 551 · from 14 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -17,17 +17,17 @@ source                  test                                                    
 <a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                                            46.2%    49.9   2025-03-21   10% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                                              68.3%    51.0   2025-03-21    7% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>                            77.8%    53.1   2025-03-21    7% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>                            71.2%    52.7   2025-03-21    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>                            71.2%    52.7   2025-03-21    6% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                                              68.7%    47.5   2025-03-21    6% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                                              96.5%    59.8   2025-03-21    6% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1084.8    50.5   2026-10-02   27% ▇▇▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  6.5900 MM-MT-Bench score (1-10)    54.7   2024-10-10    9% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               81.6%    58.3   2024-10-10    4% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                60.3%    54.9   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                60.3%    55.0   2024-10-10    3% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      68.2%    61.6   2024-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   66.6%  -143.6   2024-10-10    0% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   66.6%  -143.5   2024-10-10    0% ▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                          -9.0000    45.8   2025-03-16   11% ▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1037.0    47.9   2024-09-25    2% ▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1037.0    48.0   2024-09-25    3% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
                         weighted average                                                 = 51.5
 </pre>

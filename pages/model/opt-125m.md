@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 0.125B params · opt-175b-license-noncommercial
 
-**score 9.8** ±1.6 · #544 of 551 · from 6 benchmark results across 1 source
+**score 9.7** ±1.6 · #545 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,13 +15,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            75.1%    11.3   2023-05-31   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        43.5%     9.5   2023-05-31   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  37.9%    10.6   2023-05-31   16% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        43.5%     9.4   2023-05-31   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  37.9%    10.5   2023-05-31   16% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            63.0%     8.5   2023-05-31   15% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      50.3%     0.6   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   18.9%     3.5   2023-05-31    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                        = 9.8
+                        weighted average                        = 9.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~0.25GB    9.8
+4-bit fp16  ~0.25GB    9.7
 </pre>
 
 ```sh

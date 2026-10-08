@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 13B params · opt-175b-license-noncommercial
 
-**score 31.7** ±1.2 · #488 of 551 · from 6 benchmark results across 1 source
+**score 31.6** ±1.2 · #488 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            90.8%    29.8   2023-05-31    9% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  68.6%    31.3   2023-05-31    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 31.7
+                        weighted average                       = 31.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download        size  score
-4-bit fp16  ~25.71GB   31.7
+4-bit fp16  ~25.71GB   31.6
 </pre>
 
 ```sh

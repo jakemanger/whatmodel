@@ -1240,6 +1240,56 @@
    "by": "lab",
    "date": "2025-09-22",
    "note": "Show-o2 paper (Show Lab, NUS; arXiv 2506.15564v3, 22 Sep 2025) Table 6 (DPG-Bench), row 'Show-o2 (Ours)' 1.5B, column 'Overall' = 85.02 (stored /100). Maker's own figure for its own model (vendor-reported); 66M image-text training pairs, default sampling (CFG and steps as in the paper's ablation). Other methods' rows in the table are other labs' and are not recorded."
+  },
+  {
+   "model": "oasst-sft-4-pythia-12b",
+   "bench": "llm-blender-mixinstruct-gpt-rank",
+   "score": 3.9,
+   "source": "https://arxiv.org/html/2306.02561v3",
+   "source_id": "paper-2306.02561v3-llmblender",
+   "by": "independent",
+   "date": "2023-06-30",
+   "note": "LLM-Blender paper (arXiv 2306.02561v3) Table 2 'Empirical results on MixInstruct', row 'Open Assistant', column GPT-Rank (lower is better) = 3.9: mean rank of the model's answer among the 11 candidate LLMs' answers per example, ranked by ChatGPT pairwise comparisons (MaxWins), 4,771 test examples. Table 2 caption: 'GPT-Rank are the most important metric'. Checkpoint identity from the MixInstruct dataset card (huggingface.co/datasets/llm-blender/mix-instruct, licence mit): OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5. Rank is relative to this 11-model pool. Other candidates (Vicuna 13B v1.1, Alpaca native 7B, Koala 7B, Baize 7B, MOSS, MPT-7B-Instruct) are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "chatglm-6b",
+   "bench": "llm-blender-mixinstruct-gpt-rank",
+   "score": 5.63,
+   "source": "https://arxiv.org/html/2306.02561v3",
+   "source_id": "paper-2306.02561v3-llmblender",
+   "by": "independent",
+   "date": "2023-06-30",
+   "note": "LLM-Blender paper (arXiv 2306.02561v3) Table 2 'Empirical results on MixInstruct', row 'ChatGLM', column GPT-Rank (lower is better) = 5.63: mean rank of the model's answer among the 11 candidate LLMs' answers per example, ranked by ChatGPT pairwise comparisons (MaxWins), 4,771 test examples. Table 2 caption: 'GPT-Rank are the most important metric'. Checkpoint identity from the MixInstruct dataset card (huggingface.co/datasets/llm-blender/mix-instruct, licence mit): THUDM/chatglm-6b. Rank is relative to this 11-model pool. Other candidates (Vicuna 13B v1.1, Alpaca native 7B, Koala 7B, Baize 7B, MOSS, MPT-7B-Instruct) are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "dolly-v2-12b",
+   "bench": "llm-blender-mixinstruct-gpt-rank",
+   "score": 6.9,
+   "source": "https://arxiv.org/html/2306.02561v3",
+   "source_id": "paper-2306.02561v3-llmblender",
+   "by": "independent",
+   "date": "2023-06-30",
+   "note": "LLM-Blender paper (arXiv 2306.02561v3) Table 2 'Empirical results on MixInstruct', row 'Dolly V2', column GPT-Rank (lower is better) = 6.9: mean rank of the model's answer among the 11 candidate LLMs' answers per example, ranked by ChatGPT pairwise comparisons (MaxWins), 4,771 test examples. Table 2 caption: 'GPT-Rank are the most important metric'. Checkpoint identity from the MixInstruct dataset card (huggingface.co/datasets/llm-blender/mix-instruct, licence mit): databricks/dolly-v2-12b. Rank is relative to this 11-model pool. Other candidates (Vicuna 13B v1.1, Alpaca native 7B, Koala 7B, Baize 7B, MOSS, MPT-7B-Instruct) are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "stablelm-tuned-alpha-7b",
+   "bench": "llm-blender-mixinstruct-gpt-rank",
+   "score": 8.71,
+   "source": "https://arxiv.org/html/2306.02561v3",
+   "source_id": "paper-2306.02561v3-llmblender",
+   "by": "independent",
+   "date": "2023-06-30",
+   "note": "LLM-Blender paper (arXiv 2306.02561v3) Table 2 'Empirical results on MixInstruct', row 'StableLM', column GPT-Rank (lower is better) = 8.71: mean rank of the model's answer among the 11 candidate LLMs' answers per example, ranked by ChatGPT pairwise comparisons (MaxWins), 4,771 test examples. Table 2 caption: 'GPT-Rank are the most important metric'. Checkpoint identity from the MixInstruct dataset card (huggingface.co/datasets/llm-blender/mix-instruct, licence mit): stabilityai/stablelm-tuned-alpha-7b. Rank is relative to this 11-model pool. Other candidates (Vicuna 13B v1.1, Alpaca native 7B, Koala 7B, Baize 7B, MOSS, MPT-7B-Instruct) are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "flan-t5-xxl",
+   "bench": "llm-blender-mixinstruct-gpt-rank",
+   "score": 8.81,
+   "source": "https://arxiv.org/html/2306.02561v3",
+   "source_id": "paper-2306.02561v3-llmblender",
+   "by": "independent",
+   "date": "2023-06-30",
+   "note": "LLM-Blender paper (arXiv 2306.02561v3) Table 2 'Empirical results on MixInstruct', row 'Flan-T5', column GPT-Rank (lower is better) = 8.81: mean rank of the model's answer among the 11 candidate LLMs' answers per example, ranked by ChatGPT pairwise comparisons (MaxWins), 4,771 test examples. Table 2 caption: 'GPT-Rank are the most important metric'. Checkpoint identity from the MixInstruct dataset card (huggingface.co/datasets/llm-blender/mix-instruct, licence mit): google/flan-t5-xxl. Rank is relative to this 11-model pool. Other candidates (Vicuna 13B v1.1, Alpaca native 7B, Koala 7B, Baize 7B, MOSS, MPT-7B-Instruct) are not catalogue checkpoints and are not recorded."
   }
  ],
  "benchmarks": [
@@ -1326,6 +1376,28 @@
    ],
    "chance": 0,
    "benchmark_family": "xtc-bench"
+  },
+  {
+   "id": "llm-blender-mixinstruct-gpt-rank",
+   "name": "MixInstruct GPT-Rank (LLM-Blender, mean rank among 11 instruction-tuned LLMs, ChatGPT pairwise judge)",
+   "category": "llm",
+   "kind": "linear",
+   "direction": "lower",
+   "latent_scale": 1,
+   "unit": "mean rank (1-11)",
+   "url": "https://arxiv.org/html/2306.02561v3#S5.T2",
+   "task": "chat",
+   "setup": {
+    "url": "https://arxiv.org/html/2306.02561v3",
+    "version": "MixInstruct test split, 4,771 examples (arXiv 2306.02561v3, Table 2)",
+    "metric": "GPT-Rank: each example's 11 candidate answers are ranked via ChatGPT pairwise comparisons (MaxWins aggregation); a model's score is its mean rank over examples (1 = best, 11 = worst).",
+    "protocol": "Eleven open instruction-following LLMs answer 100K MixInstruct prompts (Alpaca-GPT4, Dolly-15K, GPT4All-LAION, ShareGPT); ChatGPT compares all candidate pairs on the 4,771 test examples; checkpoints listed on the dataset card.",
+    "limitations": "Rank is pool-relative (11 models, mostly 2023 open models) and judged by ChatGPT; scale 1 = one rank position."
+   },
+   "reported_scale": "rank",
+   "suggested_tasks": [
+    "chat"
+   ]
   }
  ],
  "ledger": [
@@ -1446,6 +1518,26 @@
    "checked": "2026-10-08",
    "icon": "arxiv.org",
    "scope": "Table 5 GenEval Overall and Table 6 DPG-Bench Overall for Show-o2 1.5B and 7B only. The paper itself carries arXiv's default non-exclusive licence (no open licence claimed); only the makers' own figures for their own models are recorded by hand. Not used: all other methods' rows, Show-o (checkpoint/resolution unstated), OneIG table (no overall printed), VBench tables."
+  },
+  {
+   "action": "new",
+   "id": "paper-2306.02561v3-llmblender",
+   "name": "LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion (arXiv:2306.02561v3)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2306.02561v3"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2306.02561v3",
+   "quote": "arXiv abstract page for 2306.02561v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Dongfu Jiang, Xiang Ren, Bill Yuchen Lin, LLM-Blender, ACL 2023, arXiv:2306.02561v3, CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2306.02561v3",
+   "icon": "arxiv.org",
+   "scope": "Table 2 GPT-Rank column for the five LLMs that match catalogue checkpoints (Open Assistant SFT-4 Pythia 12B, ChatGLM-6B, Dolly V2 12B, StableLM-Tuned-Alpha 7B, Flan-T5-XXL). Not used: other candidates, oracle/ranker/ensemble rows, BERTScore/BARTScore/BLEURT/threshold columns."
   }
  ],
  "models": [
@@ -1548,6 +1640,10 @@
   {
    "source": "https://arxiv.org/abs/2506.15564v3 (Show-o2 paper; arXiv non-exclusive licence, vendor-reported)",
    "outcome": "4 vendor rows (GenEval, DPG-Bench for Show-o2 7B and proposed comparison-only Show-o2 1.5B). show-o2-7b 1 -> 3. Depends on the owner accepting maker papers as vendor documents."
+  },
+  {
+   "source": "https://arxiv.org/abs/2306.02561v3 (LLM-Blender, CC BY 4.0)",
+   "outcome": "5 rows of new benchmark llm-blender-mixinstruct-gpt-rank (GPT-Rank), identities from the MixInstruct dataset card. Thin gain: stablelm-tuned-alpha-7b (2 -> 3)."
   }
  ]
 }

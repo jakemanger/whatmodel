@@ -4,7 +4,7 @@
 
 [llm](../README.md) · [image](image.md) · [video](video.md) · [tts](tts.md) · **stt**
 
-updated 2026-10-08 12:33 UTC · 142 models · scores combine 69 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
+updated 2026-10-08 12:41 UTC · 142 models · scores combine 69 benchmarks · [how it works](method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/stt)
 
 Run `curl "whatmodel.sh/stt?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh/stt` for this list in your terminal.
 

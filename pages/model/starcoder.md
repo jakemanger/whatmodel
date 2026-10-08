@@ -6,7 +6,7 @@
 
 BigCode · released 2023-04 · 15.82B params · bigcode-openrail-m
 
-**score 34.6** ±0.7 · #462 of 551 · from 5 benchmark results across 2 sources
+**score 34.6** ±0.7 · #461 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               34.1%    34.1   2024-12-26   34% ▇▇▇▇
-                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              29.3%    34.3   2024-12-26   29% ▇▇▇
+                        <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              29.3%    34.2   2024-12-26   29% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   46.1%    36.7   2024-12-26    4% ▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               34.8%    35.1   2024-03-28   23% ▇▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       23.5%    35.2   2024-03-28   10% ▇

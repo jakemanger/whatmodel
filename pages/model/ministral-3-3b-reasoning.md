@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2024 (lab)</a>                 77.5%    53.6   2026-09-25   21% ▇▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">AIME 2025 (lab)</a>                 72.1%    54.5   2026-09-25   21% ▇▇
                         <a href="https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/81eaece1948f3875421d9a45bc55487d10e2d894/README.md">LiveCodeBench (version unspec…</a>  54.8%    55.7   2026-09-25   12% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  37.4%    45.3   2026-05-02   14% ▇▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  37.4%    45.4   2026-05-02   14% ▇▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  75.6%    53.9   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  78.1%    43.8   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

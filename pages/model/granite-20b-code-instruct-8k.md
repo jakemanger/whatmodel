@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 43.1** ±1.5 · #358 of 551 · from 5 benchmark results across 2 sources
+**score 43.1** ±1.5 · #357 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,8 +17,8 @@ source                  test                            score  implies  date    
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  50.5%    43.0   2024-05-07   41% ▇▇▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  38.2%    44.9   2024-05-07   28% ▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  41.1%    45.1   2024-05-07   25% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.4%    21.8   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.1%    26.6   2026-04-17    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  45.4%    21.9   2026-04-17    3% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  33.1%    26.5   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 43.1
 </pre>

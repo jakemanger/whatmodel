@@ -6,7 +6,7 @@
 
 Thinking Machines · released 2026-07 · 266B params (12B active) · apache-2.0
 
-**score 66.7** ±0.6 · #76 of 551 · from 31 benchmark results across 4 sources
+**score 66.6** ±0.6 · #77 of 551 · from 31 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             46.3%    68.2   2026-08-14   26% ▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             46.3%    68.2   2026-08-14   25% ▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>                17.1%    68.6   2026-08-14   10% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                          88.5%    69.0   2026-08-14    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              90.0%    68.0   2026-08-14    4% ▇
@@ -26,7 +26,7 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1405.2    63.7   2026-10-02    5% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1206.3    64.0   2026-10-02    4% ▇
 <a name="card2-thinkingmachines-inkling-small"></a>thinkingmachines/Inkl…  <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">GPQA Diamond (lab)</a>                    89.5%    67.9   2026-07-31    4% ▇
-                        <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>              80.2%    69.0   2026-07-31    2% ▇
+                        <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Verified (lab)</a>              80.2%    68.9   2026-07-31    2% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Terminal-Bench 2.1 (lab)</a>              64.7%    65.2   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Global-MMLU-Lite (lab)</a>                86.7%    64.0   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam (lab)</a>            31.6%    70.3   2026-07-31    1% ▇
@@ -41,12 +41,12 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Humanity's Last Exam with too…</a>        47.8%    69.6   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CritPt (lab)</a>                           8.3%    68.6   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">τ³-bench Banking (lab)</a>                15.5%    58.3   2026-07-31    1% ▇
-                        <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                   55.9%    69.0   2026-07-31    1% ▇
+                        <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">SWE-bench Pro (lab)</a>                   55.9%    68.9   2026-07-31    1% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">Toolathlon-Verified (lab)</a>             54.4%    60.9   2026-07-31    0% ▇
                         <a href="https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md">CharXiv (reasoning questions)…</a>        77.4%    69.0   2026-07-31    0% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>        29.5%    59.3   2026-09-22    1% ▇
 prior                   pull toward the middle                         50.0                 0% ▇
-                        weighted average                             = 66.7
+                        weighted average                             = 66.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -70,8 +70,8 @@ api (Deep Infra) · $0.64/M blended · $0.45 in / $1.2 out per 1M tokens · [dee
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~160.1GB   66.7
-2-bit ud-q2_k_xl   ~80.3GB   66.7
+4-bit ud-q4_k_xl  ~160.1GB   66.6
+2-bit ud-q2_k_xl   ~80.3GB   66.6
 </pre>
 
 ```sh

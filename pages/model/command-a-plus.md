@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 70.5** ±3.4 · #44 of 551 · from 3 benchmark results across 1 source
+**score 70.5** ±3.4 · #43 of 551 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 

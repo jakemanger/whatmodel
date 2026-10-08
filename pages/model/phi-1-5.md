@@ -6,7 +6,7 @@
 
 Microsoft · released 2023-09 · 1.42B params · mit
 
-**score 35.9** ±0.7 · #447 of 551 · from 18 benchmark results across 2 sources
+**score 35.9** ±0.7 · #446 of 551 · from 18 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,12 +18,12 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">WinoGrande</a>                      72.5%    37.5   2024-04-08    7% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">OpenBookQA</a>                      37.6%    43.9   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">BoolQ</a>                           74.5%    35.3   2024-04-08    4% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                       62.6%    26.3   2024-04-08    4% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">HellaSwag</a>                       62.6%    26.2   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">ARC Easy</a>                        73.1%    37.2   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">PIQA</a>                            76.3%    30.5   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">SciQ</a>                            93.2%    34.1   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">Social IQA</a>                      55.4%    51.6   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">LAMBADA (OpenAI version), las…</a>  52.7%    15.9   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/microsoft-phi-1_5.json">LAMBADA (OpenAI version), las…</a>  52.7%    15.8   2024-04-08    1% ▇
 <a name="paper-2309.05463v1"></a>Textbooks Are All You…  <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge (lab)</a>             44.4%    36.2   2023-09-11   13% ▇▇
                         <a href="https://arxiv.org/html/2309.05463v1">WinoGrande (lab)</a>                73.4%    36.9   2023-09-11    6% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA (lab)</a>                37.2%    42.4   2023-09-11    4% ▇

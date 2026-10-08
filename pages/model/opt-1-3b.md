@@ -24,8 +24,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Easy</a>                        57.0%    19.6   2023-09-11    7% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">BoolQ</a>                           59.6%    18.0   2023-09-11    7% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">ARC Challenge</a>                   23.2%    14.3   2023-09-11    7% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    21.3   2023-09-11    5% ▇
-                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    17.8   2023-09-11    4% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">HellaSwag</a>                       41.5%    21.2   2023-09-11    5% ▇
+                        <a href="https://arxiv.org/html/2309.05463v1">PIQA</a>                            69.0%    17.7   2023-09-11    4% ▇
                         <a href="https://arxiv.org/html/2309.05463v1">OpenBookQA</a>                      24.0%    12.6   2023-09-11    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 21.1

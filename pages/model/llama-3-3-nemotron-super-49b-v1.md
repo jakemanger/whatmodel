@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               66.7%    56.4   2025-09-09   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  60.0%    53.8   2025-09-09   14% ▇▇
+<a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               66.7%    56.3   2025-09-09   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  60.0%    53.9   2025-09-09   14% ▇▇
                         <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  67.5%    53.7   2025-09-09   13% ▇▇
-                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   96.6%    61.3   2025-09-09    9% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   96.6%    61.2   2025-09-09    9% ▇
                         <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   88.3%    63.1   2025-09-09    9% ▇
                         <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   89.2%    61.7   2025-09-09    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1327.8    55.3   2026-10-02   29% ▇▇▇

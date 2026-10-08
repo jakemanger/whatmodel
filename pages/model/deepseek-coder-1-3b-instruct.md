@@ -18,10 +18,10 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      60.4%    44.1   2024-12-26   28% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           54.8%    41.5   2024-12-26    3% ▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       63.4%    43.8   2024-03-28   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               34.9%    40.8   2024-03-28   11% ▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               34.9%    40.7   2024-03-28   11% ▇
 <a name="livecodebench-website-20241226"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/aa37a9f8317713b146ff5ada8ab8b2513bb20b70/src/mocks/performances_generation.json">LiveCodeBench official (Jan 1…</a>   6.5%    37.5   2024-12-26    5% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>                      27.2%    30.5   2024-01-03    1% ▇
-                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      28.7%    29.8   2024-01-03    1% ▇
+                        <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-O</a>                      28.7%    29.7   2024-01-03    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 42.9
 </pre>

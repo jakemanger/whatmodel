@@ -6,7 +6,7 @@
 
 EleutherAI · released 2022-02 · 20.55B params · apache-2.0
 
-**score 32.4** ±0.7 · #483 of 551 · from 19 benchmark results across 2 sources
+**score 32.4** ±0.7 · #484 of 551 · from 19 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,12 +22,12 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">OpenBookQA</a>                      29.8%    32.5   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">SciQ</a>                            93.1%    34.0   2024-04-08    3% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">PIQA</a>                            77.4%    32.7   2024-04-08    3% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                      42.0%    28.3   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">Social IQA</a>                      42.0%    28.2   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), las…</a>  72.0%    33.6   2024-04-08    1% ▇
 <a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             38.0%    33.6   2022-04-14   13% ▇▇
                         <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                66.1%    32.1   2022-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    31.0   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  25.9%    31.4   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    30.9   2022-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  25.9%    31.3   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 53.5%    30.5   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  72.3%    33.3   2022-04-14    3% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  72.0%    31.9   2022-04-14    2% ▇

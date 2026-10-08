@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-04 · closed weights
 
-**score 78.1** ±1.1 · #7 of 551 · from 5 benchmark results across 2 sources
+**score 78.0** ±1.1 · #7 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                90.1%    80.9   2026-04-23    7% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with too…</a>  57.2%    78.5   2026-04-23    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 78.1
+                        weighted average                       = 78.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

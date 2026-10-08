@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 68.8** ±1.7 · #60 of 551 · from 3 benchmark results across 2 sources
+**score 68.7** ±1.6 · #61 of 551 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -17,13 +17,14 @@ source                  test                            score  implies  date    
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://help.openai.com/en/articles/9624314-model-release-notes">GPQA Diamond (lab)</a>              84.0%    67.9   2025-06-10   46% ▇▇▇▇▇
                         <a href="https://help.openai.com/en/articles/9624314-model-release-notes">AIME 2024 (lab)</a>                 93.0%    70.2   2025-06-10   16% ▇▇
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    69.9   2025-06-28   37% ▇▇▇▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.7%  -390.6   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 68.8
+                        weighted average                       = 68.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt))</sub>
+<sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

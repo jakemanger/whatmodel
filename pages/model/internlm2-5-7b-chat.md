@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">BIG-Bench Hard (lab)</a>            71.6%    47.7   2024-07-03   23% ▇▇▇
-                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                     86.0%    46.6   2024-07-03   22% ▇▇▇
+                        <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K (lab)</a>                     86.0%    46.6   2024-07-03   21% ▇▇▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU (lab)</a>                      72.8%    45.4   2024-07-03   18% ▇▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified) (la…</a>  60.1%    50.6   2024-07-03   12% ▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GPQA (subset unspecified) (la…</a>  38.4%    47.9   2024-07-03   10% ▇

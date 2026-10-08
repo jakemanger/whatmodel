@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
-**score 43.7** ±1.7 · #346 of 551 · from 11 benchmark results across 4 sources
+**score 44.0** ±1.7 · #343 of 551 · from 12 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,31 +14,32 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score  implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    44.2   2024-10-10   22% ▇▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4500 MM-MT-Bench score (1-10)    46.9   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    46.4   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    37.2   2024-10-10    8% ▇
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%    44.3   2024-10-10   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  5.4500 MM-MT-Bench score (1-10)    47.0   2024-10-10    9% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    46.5   2024-10-10    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    37.3   2024-10-10    8% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.9%    51.3   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    43.5   2024-10-10    3% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    43.2   2024-10-10    1% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   41.2%  -575.9   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1030.8    44.5   2026-10-02   28% ▇▇▇
-<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -49.0000    36.3   2025-03-16   12% ▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1025.0    46.5   2024-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    43.6   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    43.4   2024-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   41.2%  -576.1   2024-10-10    0% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1030.8    44.5   2026-10-02   27% ▇▇▇
+<a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -49.0000    36.3   2025-03-16   11% ▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1025.0    46.6   2024-09-25    3% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>                            95.8%    54.2   2025-10-16    2% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
-                        weighted average                                                 = 43.7
+                        weighted average                                                 = 44.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md))</sub>
+<sub>Licences: Pixtral 12B ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · CapArena: Benchmarking and Analyzing Detailed Image Captioning in the LLM Era ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · Ai2 Molmo-72B-0924 model card: Human Preference Elo Rating column ([Apache-2.0](https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
 download         size  score
-4-bit q4_k_m   ~5.4GB   43.7
-8-bit q8_0    ~8.82GB   43.7
+4-bit q4_k_m   ~5.4GB   44.0
+8-bit q8_0    ~8.82GB   44.0
 </pre>
 
 ```sh

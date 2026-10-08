@@ -14,17 +14,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                      score   implies  date        weight
-<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%     44.5   2024-10-10   21% ▇▇▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  4.7900 MM-MT-Bench score (1-10)     42.1   2024-10-10    9% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.8%     46.8   2024-10-10    8% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 48.3%     48.4   2024-10-10    7% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               67.1%     41.7   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                23.0%     16.8   2024-10-10    3% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      24.3%      4.8   2024-10-10    1% ▇
+<a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MMLU</a>                                                      68.5%     44.6   2024-10-10   21% ▇▇▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  4.7900 MM-MT-Bench score (1-10)     42.2   2024-10-10    9% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.8%     46.9   2024-10-10    8% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 48.3%     48.5   2024-10-10    7% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               67.1%     41.8   2024-10-10    5% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                23.0%     16.9   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      24.3%      5.1   2024-10-10    1% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   14.8%  -1026.1   2024-10-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            992.7     40.2   2026-10-02   26% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            992.7     40.3   2026-10-02   27% ▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>                            71.0%     45.7   2024-12-05   11% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            24.4%     46.4   2025-09-29    7% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>                            24.4%     46.3   2025-09-29    7% ▇
 prior                   pull toward the middle                                              50.0                 1% ▇
                         weighted average                                                  = 42.7
 </pre>

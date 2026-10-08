@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 117B params (5.1B active) · apache-2.0
 
-**score 60.4** ±0.6 · #152 of 551 · from 45 benchmark results across 16 sources
+**score 60.4** ±0.6 · #152 of 551 · from 47 benchmark results across 17 sources
 
 ## How the score was worked out
 
@@ -20,24 +20,24 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                         67.1%    55.7   2025-11-27    2% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>             10.6%    57.3   2025-11-27    2% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   69.9%    65.5   2025-11-27    1% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         96.0%    63.4   2025-11-27    0% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         96.0%    63.4   2025-11-27    1% ▇
 <a name="report-2508.10925v1"></a>OpenAI                  <a href="https://arxiv.org/html/2508.10925v1">Aider polyglot (225 exercises…</a>   44.4%    58.5   2025-08-08    4% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">GPQA Diamond (lab)</a>               80.1%    60.6   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">AIME 2024 (lab)</a>                  95.8%    65.6   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">AIME 2024 (lab)</a>                  95.8%    65.5   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">AIME 2025 (lab)</a>                  92.5%    62.5   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">MMLU (lab)</a>                       90.0%    60.1   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">MMLU (lab)</a>                       90.0%    60.1   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">SWE-bench Verified (lab)</a>         62.4%    59.2   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                   16.8%    60.8   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam (lab)</a>       14.9%    59.9   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">MMMLU (lab)</a>                      81.3%    60.9   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>             67.8%    61.5   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>             67.8%    61.6   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>            49.2%    61.2   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with too…</a>   19.0%    51.4   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench (lab)</a>                57.6%    73.4   2025-08-08    0% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (lab)</a>           30.0%    72.9   2025-08-08    0% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     75.8%    63.0   2025-12-11    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.9%    65.8   2025-12-11    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    71.7   2025-12-11    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         88.9%    65.7   2025-12-11    6% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            20.0%    71.6   2025-12-11    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      0.0%    55.5   2026-08-27    1% ▇
 <a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises…</a>   42.0%    59.1   2026-10-06    6% ▇
                         <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail</a>                  61.4%    60.0   2026-10-06    2% ▇
@@ -59,13 +59,15 @@ source                  test                             score  implies  date   
 <a name="paper-2605.09063v3"></a>Soohak: A Mathematici…  <a href="https://arxiv.org/html/2605.09063v3">SOOHAK-Mini (702 problems, Av…</a>   61.0%    67.4   2026-05-19    1% ▇
                         <a href="https://arxiv.org/html/2605.09063v3">SOOHAK Challenge (340 problem…</a>   11.3%    64.4   2026-05-19    1% ▇
 <a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   39.5%    70.2   2026-05-08    1% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   97.6%    67.7   2025-10-16    0% ▇
+                        <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   85.8%   -77.5   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 60.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · OpenAI ([CC BY 4.0](../../licenses/report-2508.10925v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: Prime Intellect INTELLECT-3 model card: Evaluation table ([MIT](https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md)) · OpenAI ([CC BY 4.0](../../licenses/report-2508.10925v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · ServiceNow-AI/Apriel-1.6-15b-Thinker model card ([MIT](../../licenses/cards-final-NOTICE.txt)) · Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · SpeakLeash CPTUB ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · WebApp1K models leaderboard ([MIT](../../licenses/webapp1k-leaderboard-MIT.txt)) · Soohak: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs ([CC BY-SA 4.0](../../licenses/paper-2605.09063v3-CC-BY-SA-4.0.txt)) · MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs ([CC BY 4.0](../../licenses/paper-2605.08498v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

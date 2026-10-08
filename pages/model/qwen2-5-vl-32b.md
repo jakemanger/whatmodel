@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-03 · 33.5B params · apache-2.0
 
-**score 52.1** ±1.7 · #243 of 551 · from 11 benchmark results across 3 sources
+**score 52.2** ±1.7 · #243 of 551 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,17 +16,17 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="card2-qwen-qwen2-5-vl-32b-instruct"></a>Qwen2.5-VL-32B-Instru…  <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMMU Pro (lab)</a>                   49.5%    52.3   2025-03-21   10% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">MMStar (lab)</a>                     69.5%    52.1   2025-03-21    7% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>             39.4%    49.6   2025-03-21    7% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>   77.9%    53.0   2025-03-21    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">ScreenSpot-Pro (lab)</a>             39.4%    49.7   2025-03-21    7% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (with subtitles) (l…</a>   77.9%    53.1   2025-03-21    7% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">Video-MME (without subtitles)…</a>   70.5%    51.7   2025-03-21    7% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">LVBench (lab)</a>                    49.0%    48.5   2025-03-21    6% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">CC-OCR (lab)</a>                     77.1%    56.1   2025-03-21    6% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">DocVQA (lab)</a>                     94.8%    52.4   2025-03-21    6% ▇
                         <a href="https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct/blob/7cfb30d71a1f4f49a57592323337a4a4727301da/README.md#evaluation">AndroidWorld (lab)</a>               22.0%    38.2   2025-03-21    5% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1118.6    54.2   2026-10-02   27% ▇▇▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   80.9%    54.9   2025-04-03   10% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1118.6    54.3   2026-10-02   28% ▇▇▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   80.9%    55.0   2025-04-03   10% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 52.1
+                        weighted average                        = 52.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,8 +39,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~20.6GB   52.1
-8-bit q8_0    ~40.7GB   52.1
+4-bit q4_k_m  ~20.6GB   52.2
+8-bit q8_0    ~40.7GB   52.2
 </pre>
 
 ```sh

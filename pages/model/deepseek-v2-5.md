@@ -23,7 +23,7 @@ source                  test                             score  implies  date   
 <a name="aider-code-editing-runs"></a>Aider code editing be…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/edit_leaderboard.yml">Aider code editing (133 Exerc…</a>   72.2%    56.2   2024-09-05    8% ▇
 <a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   83.4%    58.8   2024-09-14    3% ▇
                         <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   49.0%    55.9   2024-09-17    3% ▇
-<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                   74.8%    43.9   2024-12-10    3% ▇
+<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2.5-1210/blob/6f134cbe88cb9284a8ce696e8ac8eefd0bc24ede/README.md#1-introduction">MATH-500 (lab)</a>                   74.8%    44.0   2024-12-10    3% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
                         weighted average                        = 52.1
 </pre>

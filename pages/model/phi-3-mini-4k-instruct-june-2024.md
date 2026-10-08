@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-06 · 3.82B params · mit
 
-**score 42.4** ±0.9 · #363 of 551 · from 5 benchmark results across 2 sources
+**score 42.5** ±0.9 · #363 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                             score  implies  date   
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   11.6%    46.1                 6% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1143.1    35.2   2026-10-02   10% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 42.4
+                        weighted average                        = 42.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.39GB   42.4
-8-bit q8_0    ~4.06GB   42.4
+4-bit q4_k_m  ~2.39GB   42.5
+8-bit q8_0    ~4.06GB   42.5
 </pre>
 
 ```sh

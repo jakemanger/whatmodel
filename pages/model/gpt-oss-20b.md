@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-08 · 21B params (3.6B active) · apache-2.0
 
-**score 56.2** ±0.6 · #194 of 551 · from 41 benchmark results across 13 sources
+**score 56.3** ±0.6 · #194 of 551 · from 42 benchmark results across 14 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>               61.2%    56.0   2026-01-05    7% ▇
+<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>               61.2%    56.1   2026-01-05    7% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                  83.3%    57.6   2026-01-05    5% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                  84.4%    61.3   2026-01-05    3% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                   75.6%    59.3   2026-01-05    3% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                   94.8%    52.0   2026-01-05    2% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>   64.8%    61.8   2026-01-05    2% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>        9.8%    58.7   2026-01-05    2% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>        9.8%    58.8   2026-01-05    2% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>   72.0%    62.3   2026-01-05    1% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>   69.4%    69.2   2026-01-05    1% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>       6.2%    58.3   2026-01-05    1% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>       6.2%    58.4   2026-01-05    1% ▇
 <a name="report-2508.10925v1"></a>OpenAI                  <a href="https://arxiv.org/html/2508.10925v1">Aider polyglot (225 exercises…</a>   34.2%    57.7   2025-08-08    5% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">GPQA Diamond (lab)</a>               71.5%    58.0   2025-08-08    4% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">AIME 2024 (lab)</a>                  92.1%    61.4   2025-08-08    3% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">AIME 2024 (lab)</a>                  92.1%    61.3   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">AIME 2025 (lab)</a>                  91.7%    63.3   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">MMLU (lab)</a>                       85.3%    55.6   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">SWE-bench Verified (lab)</a>         60.7%    60.3   2025-08-08    2% ▇
@@ -34,7 +34,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2508.10925v1">τ-bench Retail (lab)</a>             54.8%    53.3   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">SimpleQA (lab)</a>                    6.7%    48.2   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam (lab)</a>       10.9%    55.2   2025-08-08    1% ▇
-                        <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>            38.0%    54.3   2025-08-08    1% ▇
+                        <a href="https://arxiv.org/html/2508.10925v1">τ-bench Airline (lab)</a>            38.0%    54.4   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">Humanity's Last Exam with too…</a>   17.3%    50.1   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench (lab)</a>                42.5%    58.6   2025-08-08    0% ▇
                         <a href="https://arxiv.org/html/2508.10925v1">HealthBench Hard (lab)</a>           10.8%    45.0   2025-08-08    0% ▇
@@ -51,17 +51,18 @@ source                  test                             score  implies  date   
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   53.6%    58.9   2026-05-02    3% ▇
 <a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   30.6%    49.2   2026-02-08    2% ▇
 <a name="paper-2601.11868v1"></a>Terminal-Bench: Bench…  <a href="https://arxiv.org/html/2601.11868v1">Terminal-Bench 2.0 with Termi…</a>    3.1%    48.0   2026-01-17    2% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   29.0%    45.6   2025-09-04    2% ▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   45.5%    38.0   2026-09-19    1% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   29.0%    45.7   2025-09-04    2% ▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   45.5%    37.9   2026-09-19    1% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   67.7%    47.6   2026-04-17    0% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   72.7%    34.3   2026-04-17    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.3%    59.7   2025-10-16    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 56.2
+                        weighted average                        = 56.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · OpenAI ([CC BY 4.0](../../licenses/report-2508.10925v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE))</sub>
+<sub>Licences: Falcon-H1R: Pushing the Reasoning Frontiers with a Hybrid Model for Efficient Test-Time Scaling ([CC BY 4.0](../../licenses/report-2601.02346v1.txt)) · OpenAI ([CC BY 4.0](../../licenses/report-2508.10925v1.txt)) · Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Roblox LLM Leaderboard ([MIT](../../licenses/roblox-llm-leaderboard-MIT.txt)) · ServiceNow BrowserGym leaderboard ([MIT](../../licenses/hf-leaderboard-spaces-MIT.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks ([CC BY 4.0](../../licenses/paper-2605.01417v1-CC-BY-4.0.txt)) · Inception Arabic/Hindi leaderboards ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Terminal-Bench: Benchmarking Agents on Hard ([CC BY 4.0](../../licenses/paper-2601.11868v1-CC-BY-4.0.txt)) · BRIDGE Medical Leaderboard ([MIT](../../licenses/bridge-medical-leaderboard-MIT.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · EuroEval leaderboards ([MIT](https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/LICENSE)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
@@ -71,7 +72,7 @@ api (Groq) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens · [console.
 
 <pre>
 download        size  score
-MXFP4 mxfp4  ~13.1GB   56.2
+MXFP4 mxfp4  ~13.1GB   56.3
 </pre>
 
 ```sh

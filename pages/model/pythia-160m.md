@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 0.162B params · apache-2.0
 
-**score 9.7** ±1.6 · #545 of 551 · from 6 benchmark results across 1 source
+**score 9.7** ±1.6 · #544 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      74.1%    10.4   2023-05-31   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  43.5%     9.5   2023-05-31   24% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  43.5%     9.4   2023-05-31   24% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  32.8%     6.8   2023-05-31   16% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      62.7%     7.9   2023-05-31   15% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.1%    13.2   2023-05-31    7% ▇

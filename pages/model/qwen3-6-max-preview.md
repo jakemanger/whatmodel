@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-04 · proprietary
 
-**score 69.1** ±1.1 · #59 of 551 · from 8 benchmark results across 2 sources
+**score 69.0** ±1.1 · #59 of 551 · from 8 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                           score  implies  date     
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>     1481.5    69.2   2026-10-01   20% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1460.3    69.7   2026-10-02   15% ▇▇
 prior                   pull toward the middle                  50.0                 1% ▇
-                        weighted average                      = 69.1
+                        weighted average                      = 69.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -6,7 +6,7 @@
 
 Google · released 2026-04 · 5.1B params (2.3B active) · apache-2.0
 
-**score 48.0** ±0.9 · #286 of 551 · from 24 benchmark results across 5 sources
+**score 48.0** ±0.9 · #287 of 551 · from 24 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>              43.4%    50.1   2026-07-02   12% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                  60.0%    50.9   2026-07-02    7% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                     67.4%    49.0   2026-07-02    6% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            63.9%    46.9   2026-07-02    6% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>            63.9%    47.0   2026-07-02    6% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>            31.0%    45.0   2026-07-02    5% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>               52.4%    49.7   2026-07-02    5% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                  44.2%    47.6   2026-07-02    5% ▇
@@ -28,11 +28,11 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Big Bench Extra Hard micro av…</a>  21.9%    46.9   2026-07-02    3% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    94.6%    53.0   2026-07-02    3% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">SciCode (lab)</a>                   21.0%    50.8   2026-07-02    3% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             34.6%    48.9   2026-07-02    2% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             34.6%    49.0   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>            19.7%    52.7   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>        29.0%    51.8   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Terminal Bench Hard (lab)</a>        3.0%    45.4   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 37.5%    36.5   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 37.5%    36.4   2026-07-02    1% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  69.7%    43.1   2026-04-17    7% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  53.6%    44.4   2026-04-17    5% ▇
 <a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        24.5%    47.6   2026-07-20    5% ▇

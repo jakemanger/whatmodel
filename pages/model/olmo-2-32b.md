@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-03 · 32.2B params · apache-2.0
 
-**score 49.1** ±1.2 · #272 of 551 · from 12 benchmark results across 4 sources
+**score 49.1** ±1.2 · #273 of 551 · from 12 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             70.6%    47.0   2025-10-08   21% ▇▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       77.3%    49.2   2025-10-08   17% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   42.8%    49.3   2025-10-08   10% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   42.8%    49.4   2025-10-08   10% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    48.2   2025-10-08    8% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             73.2%    57.2   2025-10-08    6% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   49.7%    44.6   2025-10-08    4% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>   49.7%    44.6   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                      37.5%    53.3   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>   85.6%    55.1   2025-10-08    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1251.6    47.0   2026-10-02   18% ▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   74.8%    49.1   2025-05-01    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.6%    57.0   2026-04-17    2% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.6%    57.1   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   90.8%    56.3   2026-04-17    1% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 49.1

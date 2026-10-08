@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    66.4   2026-03-22   19% ▇▇
+<a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    66.3   2026-03-22   19% ▇▇
                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    69.2   2026-03-22   10% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    71.0   2026-03-22   10% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    69.0   2026-03-22   10% ▇

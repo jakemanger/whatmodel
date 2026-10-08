@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="vector-inspect-evals-leaderboard"></a>Vector Institute Eval…  <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">GPQA Diamond (Vector Institut…</a>  75.6%    66.2   2026-07-16   36% ▇▇▇▇
-                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>  97.8%    70.4   2026-07-16   18% ▇▇
+                        <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MATH (Vector Institute, Inspe…</a>  97.8%    70.3   2026-07-16   18% ▇▇
                         <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">MMLU-Pro (Vector Institute, I…</a>  82.5%    63.4   2026-07-16   15% ▇▇
                         <a href="https://huggingface.co/spaces/vector-institute/eval-leaderboard/blob/f348507a79f56dae8624b525574cb326359a20c8/data/results.json">HumanEval (Vector Institute, …</a>  91.5%    55.3   2026-07-16    8% ▇
 <a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>  50.5%    64.5   2026-08-31   21% ▇▇▇

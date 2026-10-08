@@ -6,7 +6,7 @@
 
 Google · released 2024-03 · 8.54B params · gemma
 
-**score 38.0** ±0.6 · #422 of 551 · from 13 benchmark results across 3 sources
+**score 38.0** ±0.6 · #424 of 551 · from 13 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,16 +14,16 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       44.5%    37.4   2024-12-26   33% ▇▇▇▇
+<a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>                       44.5%    37.3   2024-12-26   33% ▇▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      41.5%    38.3   2024-12-26   29% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           52.4%    40.3   2024-12-26    3% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  41.5%    39.0   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  12.4%    31.6   2024-05-07    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  12.4%    31.5   2024-05-07    4% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            53.0%    41.5   2024-05-07    4% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  10.1%    32.6   2024-05-07    3% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  10.1%    32.5   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">MATH</a>                            21.8%    40.9   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      42.6%    40.1   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      43.9%    42.1   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      43.9%    42.0   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">GSM8K</a>                           49.0%    39.3   2024-05-07    2% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 44.5%    38.2   2024-06-19    6% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      56.2%    41.5   2024-06-19    2% ▇

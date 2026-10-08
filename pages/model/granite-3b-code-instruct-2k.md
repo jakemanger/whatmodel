@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 3.48B params · apache-2.0
 
-**score 37.8** ±1.6 · #426 of 551 · from 5 benchmark results across 2 sources
+**score 37.8** ±1.6 · #428 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  39.6%    38.1   2024-05-07   45% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  26.0%    39.3   2024-05-07   26% ▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  27.3%    40.5   2024-05-07   21% ▇▇▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  35.5%    17.3   2026-04-17    4% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  26.0%    39.2   2024-05-07   26% ▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  27.3%    40.4   2024-05-07   21% ▇▇▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  35.5%    17.4   2026-04-17    4% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  28.5%    22.2   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 37.8

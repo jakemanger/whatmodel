@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-06 · closed weights
 
-**score 67.7** ±0.7 · #68 of 551 · from 21 benchmark results across 3 sources
+**score 67.7** ±0.7 · #67 of 551 · from 21 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                  score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>             34.4%    65.9   2026-08-29   35% ▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                          87.9%    68.8   2026-08-07    8% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          17.0%    66.6   2026-08-28    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>          17.0%    66.5   2026-08-28    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>              93.3%    69.5   2026-08-07    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                 24.0%    68.9   2026-08-07    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0715 IPS    66.3   2026-10-02    9% ▇
@@ -32,7 +32,7 @@ source                  test                                  score  implies  da
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>               55.3%    66.9   2026-08-14    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo (lab)</a>                         41.1%    67.5   2026-08-14    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">AndroidWorld (lab)</a>                    81.0%    74.7   2026-08-14    1% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>        57.6%    68.0   2026-08-14    1% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>        57.6%    67.9   2026-08-14    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">ERQA (lab)</a>                            69.8%    70.5   2026-08-14    1% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">RealWorldQA (lab)</a>                     86.9%    68.0   2026-08-14    1% ▇
 prior                   pull toward the middle                         50.0                 0% ▇

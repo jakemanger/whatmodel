@@ -15,11 +15,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                77.3%    68.5   2026-03-05   24% ▇▇▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>  51.9%    73.9   2026-03-05   17% ▇▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>  51.9%    73.8   2026-03-05   17% ▇▇
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    70.8   2026-02-05   10% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    76.8   2026-02-05   10% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>             56.8%    70.3   2026-02-05    6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    69.2   2026-02-25   32% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    69.1   2026-02-25   31% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 70.5
 </pre>

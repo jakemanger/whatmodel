@@ -6,7 +6,7 @@
 
 MiniMax · released 2026-03 · 230B params (10B active) · minimax-non-commercial
 
-**score 65.1** ±1.7 · #95 of 551 · from 3 benchmark results across 2 sources
+**score 65.1** ±1.7 · #95 of 551 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,14 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    65.8   2026-10-01   53% ▇▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    64.8   2026-10-02   39% ▇▇▇▇▇
-<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    64.8   2026-05-21    6% ▇
+<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    64.7   2026-05-21    6% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -35.4   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 65.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks ([CC BY 4.0](../../licenses/paper-2605.22535v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

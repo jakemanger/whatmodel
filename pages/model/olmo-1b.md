@@ -21,7 +21,7 @@ source                  test                    score  implies  date        weig
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>          58.1%    24.3   2024-06-07   11% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>         62.5%    25.8   2024-06-07   10% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>             60.7%    19.7   2024-06-07    7% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>              73.7%    26.8   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>              73.7%    26.7   2024-06-07    6% ▇
 prior                   pull toward the middle           50.0                 1% ▇
                         weighted average               = 25.6
 </pre>
