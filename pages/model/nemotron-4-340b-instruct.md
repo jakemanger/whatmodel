@@ -6,7 +6,7 @@
 
 NVIDIA · released 2024-06 · 340B params · nvidia-open-model-license
 
-**score 50.1** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 50.0** ±1.8 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                                       score  implie
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                            1277.1    49.8   2026-10-02   40% ▇▇▇▇▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>             77.8%    51.9   2024-06-30   12% ▇
 prior                   pull toward the middle                              50.0                 1% ▇
-                        weighted average                                  = 50.1
+                        weighted average                                  = 50.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

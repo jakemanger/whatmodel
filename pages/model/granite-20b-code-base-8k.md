@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    40.4   2024-05-07   31% ▇▇▇▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    40.3   2024-05-07   31% ▇▇▇▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  18.8%    35.1   2024-05-07   18% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.9   2024-05-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  17.7%    36.0   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.8   2024-05-07   17% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  17.7%    35.9   2024-05-07   15% ▇▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    37.3   2024-05-07   10% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    36.2   2024-05-07    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

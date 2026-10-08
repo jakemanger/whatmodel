@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 24B params · apache-2.0
 
-**score 57.6** ±2.9 · #180 of 551 · from 3 benchmark results across 1 source
+**score 57.5** ±2.9 · #181 of 551 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                          score  implies  date      
                         <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    59.2   2026-09-25   29% ▇▇▇▇
                         <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>      22.5%    52.6   2026-09-25   28% ▇▇▇
 prior                   pull toward the middle                 50.0                 4% ▇
-                        weighted average                     = 57.6
+                        weighted average                     = 57.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                 50.0             
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~14.9GB   57.6
-8-bit q8_0    ~29.3GB   57.6
+4-bit q4_k_m  ~14.9GB   57.5
+8-bit q8_0    ~29.3GB   57.5
 </pre>
 
 ```sh

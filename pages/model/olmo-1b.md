@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge (lab)</a>     34.5%    25.6   2024-06-07   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>        46.4%    32.1   2024-06-07   15% ▇▇
-                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>        58.9%    23.5   2024-06-07   13% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA (lab)</a>        46.4%    32.0   2024-06-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2402.00838v4">WinoGrande (lab)</a>        58.9%    23.4   2024-06-07   13% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>              88.1%    22.3   2024-06-07   12% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>          58.1%    24.3   2024-06-07   11% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>         62.5%    25.8   2024-06-07   10% ▇

@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 69B params · llama2
 
-**score 41.7** ±0.8 · #374 of 551 · from 20 benchmark results across 4 sources
+**score 41.7** ±0.8 · #375 of 551 · from 20 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,23 +16,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   56.5%    39.7   2024-01-08   14% ▇▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       29.3%    39.7   2024-01-08   11% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            69.9%    44.2   2024-01-08    6% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            69.9%    44.1   2024-01-08    6% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      80.4%    43.2   2024-01-08    6% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                            13.8%    39.5   2024-01-08    5% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        73.0%    42.5   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           69.6%    45.6   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       85.4%    42.4   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       85.4%    42.4   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            49.8%    40.9   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  25.4%    40.3   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        79.9%    40.2   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">PIQA</a>                            82.6%    40.2   2024-01-08    2% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  66.0%    44.3   2023-11-20   11% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.3   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           55.5%    42.8   2023-11-20    4% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       60.1%    38.0   2023-11-20    3% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            64.5%    44.2   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           55.5%    42.7   2023-11-20    4% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       60.1%    37.9   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  62.6%    49.4   2023-11-20    2% ▇
-<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                        36.3%    39.6                11% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.0%    50.7   2026-04-17    1% ▇
+<a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_Llama-2-70b-hf_5shots.zip">MMLU-Pro</a>                        36.3%    39.5                12% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  86.0%    50.6   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  59.0%    43.2   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 41.7

@@ -13525,5 +13525,23 @@
     "icon": "github.com",
     "attribution": "Moonshot AI's own τ²-bench submission in the sierra-research/tau2-bench leaderboard (@4ce7c03), MIT. Vendor-run.",
     "scope": "pass^1 per domain from the committed submission.json files listed in match; each submitting organisation is a separate evaluator."
+  },
+  {
+    "id": "charxiv-readme-apache",
+    "name": "CharXiv leaderboard (princeton-nlp/CharXiv README)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/LICENSE",
+    "quote": "The repository is licensed under the Apache License, Version 2.0 (GitHub licence metadata and LICENSE file at the pinned commit), and the results table is part of the committed README. The underlying dataset is separately CC BY-SA 4.0. The README states these are the authors' own evaluations: 'We release full results on the validation set ... for all models we tested'.",
+    "attribution": "Wang et al., CharXiv (princeton-nlp/CharXiv @7ebe88f), Apache-2.0. Reasoning and descriptive overall accuracy from the README table.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "github.com",
+    "scope": "Validation-set overall accuracies from the README table, for catalogue models whose snapshot the paper or the release timing pins."
   }
 ]

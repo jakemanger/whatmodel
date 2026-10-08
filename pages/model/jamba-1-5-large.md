@@ -15,14 +15,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="paper-2408.12570v1-jamba15"></a>Jamba-1.5: Hybrid Tra…  <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BIG-Bench Hard (lab)</a>             65.5%    49.4   2024-08-22   11% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      87.0%    50.6   2024-08-22   10% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  71.3%    47.7   2024-08-22    8% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       80.0%    51.1   2024-08-22    7% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GSM8K (lab)</a>                      87.0%    50.5   2024-08-22   10% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  71.3%    47.6   2024-08-22    8% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       80.0%    51.0   2024-08-22    7% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   48.3%    48.4   2024-08-22    7% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   36.9%    47.8   2024-08-22    7% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   65.4%    53.5   2024-08-22    5% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   81.5%    50.4   2024-08-22    2% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              93.0%    55.7   2024-08-22    2% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   65.4%    53.4   2024-08-22    5% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   81.5%    50.3   2024-08-22    2% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              93.0%    55.6   2024-08-22    2% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (la…</a>   85.5%    54.0   2024-08-22    2% ▇
 <a name="mmlu-pro-author-runs"></a>MMLU-Pro author-relea…  <a href="https://github.com/TIGER-AI-Lab/MMLU-Pro/blob/f418b116db00b065c2aea046518d8fcf74d39872/eval_results/model_outputs_jamba-1.5-large_5shots.zip">MMLU-Pro</a>                         49.5%    45.7                23% ▇▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1289.4    51.1   2026-10-02   15% ▇▇

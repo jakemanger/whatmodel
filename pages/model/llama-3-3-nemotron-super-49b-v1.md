@@ -6,7 +6,7 @@
 
 NVIDIA · released 2025-03 · 49.9B params · nvidia-open-model-license
 
-**score 56.6** ±1.5 · #191 of 551 · from 7 benchmark results across 2 sources
+**score 56.5** ±1.5 · #192 of 551 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   89.2%    61.7   2025-09-09    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1327.8    55.3   2026-10-02   29% ▇▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 56.6
+                        weighted average                        = 56.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,8 +43,8 @@ NVIDIA  <a href="https://arxiv.org/html/2505.00949v5">LiveCodeBench 2024-08 to 2
 
 <pre>
 download              size  score
-4-bit q4_k_m      ~30.22GB   56.6
-2-bit ud-q2_k_xl  ~19.31GB   56.6
+4-bit q4_k_m      ~30.22GB   56.5
+2-bit ud-q2_k_xl  ~19.31GB   56.5
 </pre>
 
 ```sh

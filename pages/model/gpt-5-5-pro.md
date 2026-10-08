@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>          78.0%    78.4   2026-06-12   47% ▇▇▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>       87.7%    77.7   2026-06-12   31% ▇▇▇▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam (lab)</a>      43.1%    76.9   2026-04-23    9% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                90.1%    80.9   2026-04-23    7% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-5">BrowseComp (lab)</a>                90.1%    81.0   2026-04-23    7% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-5">Humanity's Last Exam with too…</a>  57.2%    78.5   2026-04-23    5% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 78.1

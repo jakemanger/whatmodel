@@ -18,7 +18,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            79.8%    52.5   2026-04-28    9% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        63.9%    53.7   2026-04-28    9% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           89.5%    51.9   2026-04-28    8% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    49.8   2026-04-28    6% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    49.7   2026-04-28    6% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       86.2%    54.2   2026-04-28    5% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     26.4%    47.4   2026-04-28    4% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">GlobalMMLU (Marco evaluation)</a>   55.4%    48.3   2026-04-28    4% ▇

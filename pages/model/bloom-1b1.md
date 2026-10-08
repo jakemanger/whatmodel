@@ -6,7 +6,7 @@
 
 BigScience · released 2022-07 · 1.07B params · bigscience-bloom-rail-1.0
 
-**score 16.9** ±1.4 · #534 of 551 · from 7 benchmark results across 2 sources
+**score 16.9** ±1.4 · #535 of 551 · from 7 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        51.5%    17.1   2023-05-31   21% ▇▇▇
+<a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        51.5%    17.0   2023-05-31   21% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            83.3%    19.4   2023-05-31   21% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  42.6%    13.5   2023-05-31   12% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            67.2%    16.4   2023-05-31   12% ▇

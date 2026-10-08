@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source     test                            score  implies  date        weight
 <a name="redpajama-2024-original-zero-shot"></a>RedPajama  <a href="https://arxiv.org/html/2411.12372v1">WinoGrande (lab)</a>                63.2%    29.7   2024-11-19   43% ▇▇▇▇▇
            <a href="https://arxiv.org/html/2411.12372v1">HellaSwag (lab)</a>                 63.2%    29.0   2024-11-19   27% ▇▇▇
-           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    26.9   2024-11-19   15% ▇▇
+           <a href="https://arxiv.org/html/2411.12372v1">LAMBADA (OpenAI version), las…</a>  65.4%    26.8   2024-11-19   15% ▇▇
            <a href="https://arxiv.org/html/2411.12372v1">PIQA (lab)</a>                      74.7%    27.6   2024-11-19   12% ▇
 prior      pull toward the middle                   50.0                 3% ▇
            weighted average                       = 29.5

@@ -28,7 +28,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   75.0%    63.6   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.1%    66.9   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             77.9%    64.5   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    53.0   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 21.3%    53.1   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   14.5%    55.5   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       10.6%    56.4   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.8%    65.6   2025-08-08    2% ▇
@@ -37,8 +37,8 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>   30.0%    59.5   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.3%    63.4   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    76.4%    64.9   2025-08-08    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.3   2026-10-02    9% ▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    59.2   2026-05-02    5% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1373.3    60.2   2026-10-02    9% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   54.1%    59.1   2026-05-02    5% ▇
 <a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   44.0%    60.2   2025-11-18    1% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   80.4%    57.2   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   95.8%    66.7   2026-04-17    0% ▇

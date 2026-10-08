@@ -6,7 +6,7 @@
 
 LMSYS · released 2023-08 · 13B params · llama2
 
-**score 35.7** ±1.8 · #451 of 551 · from 4 benchmark results across 4 sources
+**score 35.7** ±1.8 · #450 of 551 · from 4 benchmark results across 4 sources
 
 ## How the score was worked out
 

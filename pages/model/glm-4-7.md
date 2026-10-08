@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 357B params (32B active) · mit
 
-**score 65.9** ±0.8 · #86 of 551 · from 27 benchmark results across 9 sources
+**score 65.8** ±0.8 · #86 of 551 · from 27 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -21,8 +21,8 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1434.5    67.3   2026-10-01   12% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1441.5    67.7   2026-10-02    9% ▇
 <a name="report-2602.15763v2"></a>GLM-5 Team              <a href="https://arxiv.org/html/2602.15763v2">GPQA Diamond (lab)</a>               85.7%    65.9   2026-02-24    7% ▇
-                        <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>       24.8%    65.6   2026-02-24    2% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">LongBench v2 (lab)</a>               59.1%    63.9   2026-02-24    2% ▇
+                        <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam (lab)</a>       24.8%    65.6   2026-02-24    2% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">HMMT November 2025 (lab)</a>         93.5%    71.1   2026-02-24    2% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Toolathlon (Tool Decathlon) (…</a>   23.8%    57.0   2026-02-24    1% ▇
                         <a href="https://arxiv.org/html/2602.15763v2">Humanity's Last Exam with too…</a>   42.8%    65.4   2026-02-24    1% ▇
@@ -42,7 +42,7 @@ source                  test                             score  implies  date   
 <a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   28.8%    65.7   2026-06-17    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   88.3%     4.9   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 65.9
+                        weighted average                        = 65.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -69,9 +69,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~214.7GB   65.9
-2-bit ud-q2_k_xl  ~107.6GB   65.9
-1-bit ud-iq1_s    ~54.05GB   65.9
+4-bit ud-q4_k_xl  ~214.7GB   65.8
+2-bit ud-q2_k_xl  ~107.6GB   65.8
+1-bit ud-iq1_s    ~54.05GB   65.8
 </pre>
 
 ```sh

@@ -20,8 +20,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>  46.2%    49.0   2026-09-25    9% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                      77.8%    48.1   2026-09-25    8% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>  52.1%    51.1   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>           81.5%    52.2   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                89.9%    54.4   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>           81.5%    52.1   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                89.9%    54.3   2026-09-25    5% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     64.7%    50.4   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          75.2%    53.3   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                66.5%    54.6   2026-09-25    3% ▇
@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  41.6%    51.4   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  88.2%    59.4   2026-09-25    1% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  41.3%    48.7   2026-05-02    6% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  60.4%    43.5   2026-04-17    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  60.4%    43.4   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  85.7%    51.9   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 51.7

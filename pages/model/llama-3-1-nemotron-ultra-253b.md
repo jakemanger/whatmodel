@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="report-2505.00949v5"></a>NVIDIA                  <a href="https://arxiv.org/html/2505.00949v5">GPQA Diamond (lab)</a>               76.0%    60.4   2025-09-09   18% ▇▇
                         <a href="https://arxiv.org/html/2505.00949v5">AIME 2025 (lab)</a>                  72.5%    59.9   2025-09-09   11% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  80.8%    61.5   2025-09-09   10% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">AIME 2024 (lab)</a>                  80.8%    61.4   2025-09-09   10% ▇
                         <a href="https://arxiv.org/html/2505.00949v5">MATH-500 (lab)</a>                   97.0%    62.1   2025-09-09    7% ▇
-                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   87.0%    60.8   2025-09-09    7% ▇
+                        <a href="https://arxiv.org/html/2505.00949v5">Arena-Hard (version/judge uns…</a>   87.0%    60.7   2025-09-09    7% ▇
                         <a href="https://arxiv.org/html/2505.00949v5">IFEval (aggregation unspecifi…</a>   88.9%    60.7   2025-09-09    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    57.5   2026-10-02   24% ▇▇▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    56.4   2026-05-10   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1347.6    57.4   2026-10-02   24% ▇▇▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1139.8    56.3   2026-05-10   13% ▇▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          56.7%    52.1   2025-06-14    5% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 58.8

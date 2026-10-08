@@ -6,7 +6,7 @@
 
 Meta · released 2026-09 · closed weights
 
-**score 73.1** ±0.7 · #21 of 551 · from 13 benchmark results across 4 sources
+**score 73.1** ±0.7 · #22 of 551 · from 13 benchmark results across 4 sources
 
 ## How the score was worked out
 

@@ -6,7 +6,7 @@
 
 Liquid AI · released 2026-02 · 23.8B params (2.3B active) · lfm1.0
 
-**score 50.6** ±1.1 · #263 of 551 · from 11 benchmark results across 1 source
+**score 50.6** ±1.1 · #262 of 551 · from 11 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="report-marco-moe-260425578v1"></a>Marco-MoE: Open Multi…  <a href="https://arxiv.org/html/2604.25578v1">GPQA Diamond</a>                    39.7%    51.4   2026-09-25   25% ▇▇▇
                         <a href="https://arxiv.org/html/2604.25578v1">MMLU</a>                            74.9%    49.4   2026-09-25   13% ▇▇
                         <a href="https://arxiv.org/html/2604.25578v1">GSM8K</a>                           87.2%    50.2   2026-09-25   12% ▇
-                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    50.8   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2604.25578v1">MMLU-Pro</a>                        57.6%    50.7   2026-09-25   12% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MMLU-ProX-Lite (Marco)</a>          43.3%    50.0   2026-09-25    7% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">MATH (subset unspecified)</a>       83.9%    52.3   2026-09-25    7% ▇
                         <a href="https://arxiv.org/html/2604.25578v1">PolyMath (Marco evaluation)</a>     29.3%    49.6   2026-09-25    5% ▇

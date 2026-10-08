@@ -6,7 +6,7 @@
 
 OpenAI · released 2025-06 · proprietary
 
-**score 68.7** ±1.6 · #61 of 551 · from 4 benchmark results across 3 sources
+**score 68.8** ±1.7 · #60 of 551 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>  84.9%    69.9   2025-06-28   37% ▇▇▇▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  76.7%  -390.7   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 68.7
+                        weighted average                       = 68.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

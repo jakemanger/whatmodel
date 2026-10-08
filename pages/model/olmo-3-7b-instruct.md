@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 43.8** ±0.9 · #344 of 551 · from 17 benchmark results across 3 sources
+**score 43.7** ±0.9 · #346 of 551 · from 17 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -24,15 +24,15 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>  40.9%    47.7   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     60.2%    48.6   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          29.5%    31.0   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                32.9%    37.4   2026-09-25    3% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                32.9%    37.3   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     14.1%    40.0   2026-09-25    2% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  32.3%    46.7   2026-09-25    2% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  32.3%    46.6   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>  85.6%    54.9   2026-09-25    1% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  35.0%    43.3   2026-05-02    5% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  75.1%    43.1   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  61.3%    44.6   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 43.8
+                        weighted average                       = 43.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -56,8 +56,8 @@ allenai/Olmo-3-7B-Ins…  <a href="https://huggingface.co/allenai/Olmo-3-7B-Inst
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~4.88GB   43.8
-8-bit q8_0    ~9.26GB   43.8
+4-bit q4_k_m  ~4.88GB   43.7
+8-bit q8_0    ~9.26GB   43.7
 </pre>
 
 ```sh

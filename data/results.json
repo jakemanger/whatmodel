@@ -198755,5 +198755,275 @@
     "date": "2026-10-07",
     "note": "Picovoice README 'English > Streaming Engines Word Error Rate', row 'Nemotron 3.5 ASR Streaming' (linked checkpoint nvidia/nemotron-3.5-asr-streaming-0.6b), column 'Average' = 7.8% (mean of LibriSpeech test-clean 3.4%, test-other 7.8%, TED-LIUM 4.9%, CommonVoice 15.0%); stored 0.078. Same table and normalisation as the existing streaming rows; the open-model rows in that table are unchanged at this revision.",
     "source_id": "speech-stt-picovoice-apache"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "charxiv-rq",
+    "score": 0.602,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3.5 Sonnet', Reasoning 'Overall' = 60.20%; stored /100. Identity: July 2024 addition; claude-3-5-sonnet-20240620 was the only Claude 3.5 Sonnet snapshot then.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "charxiv-dq",
+    "score": 0.843,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3.5 Sonnet', Descriptive 'Overall' = 84.30%; stored /100. Identity: July 2024 addition; claude-3-5-sonnet-20240620 was the only Claude 3.5 Sonnet snapshot then.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "charxiv-rq",
+    "score": 0.471,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'GPT-4o', Reasoning 'Overall' = 47.10%; stored /100. Identity: paper v1 names gpt-4o-2024-05-13.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "charxiv-dq",
+    "score": 0.8445,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'GPT-4o', Descriptive 'Overall' = 84.45%; stored /100. Identity: paper v1 names gpt-4o-2024-05-13.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "charxiv-rq",
+    "score": 0.433,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Gemini 1.5 Pro', Reasoning 'Overall' = 43.30%; stored /100. Identity: July 2024 addition; gemini-1.5-pro-001 was the only Gemini 1.5 Pro GA version then.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gemini-1-5-pro-001",
+    "bench": "charxiv-dq",
+    "score": 0.7197,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Gemini 1.5 Pro', Descriptive 'Overall' = 71.97%; stored /100. Identity: July 2024 addition; gemini-1.5-pro-001 was the only Gemini 1.5 Pro GA version then.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "charxiv-rq",
+    "score": 0.371,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'GPT-4V', Reasoning 'Overall' = 37.10%; stored /100. Identity: paper v1 names gpt-4-turbo-2024-04-09 (results file GPT-4V-Turbo).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "charxiv-dq",
+    "score": 0.7992,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'GPT-4V', Descriptive 'Overall' = 79.92%; stored /100. Identity: paper v1 names gpt-4-turbo-2024-04-09 (results file GPT-4V-Turbo).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "charxiv-rq",
+    "score": 0.341,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'GPT-4o Mini', Reasoning 'Overall' = 34.10%; stored /100. Identity: July 2024 addition; gpt-4o-mini-2024-07-18 was its only snapshot.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "charxiv-dq",
+    "score": 0.7492,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'GPT-4o Mini', Descriptive 'Overall' = 74.92%; stored /100. Identity: July 2024 addition; gpt-4o-mini-2024-07-18 was its only snapshot.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "gemini-1-5-flash-001",
+    "bench": "charxiv-rq",
+    "score": 0.339,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Gemini 1.5 Flash', Reasoning 'Overall' = 33.90%; stored /100. Identity: July 2024 addition; gemini-1.5-flash-001 was the only Gemini 1.5 Flash GA version then.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "internvl2-26b",
+    "bench": "charxiv-rq",
+    "score": 0.334,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'InternVL Chat V2.0 26B', Reasoning 'Overall' = 33.40%; stored /100. Identity: OpenGVLab/InternVL2-26B (README news 07/14/2024).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "internvl2-26b",
+    "bench": "charxiv-dq",
+    "score": 0.624,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'InternVL Chat V2.0 26B', Descriptive 'Overall' = 62.40%; stored /100. Identity: OpenGVLab/InternVL2-26B (README news 07/14/2024).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "charxiv-rq",
+    "score": 0.322,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3 Sonnet', Reasoning 'Overall' = 32.20%; stored /100. Identity: paper v1 names claude-3-sonnet-20240229.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "charxiv-dq",
+    "score": 0.7365,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3 Sonnet', Descriptive 'Overall' = 73.65%; stored /100. Identity: paper v1 names claude-3-sonnet-20240229.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "charxiv-rq",
+    "score": 0.318,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3 Haiku', Reasoning 'Overall' = 31.80%; stored /100. Identity: paper v1 names claude-3-haiku-20240307.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-haiku-20240307",
+    "bench": "charxiv-dq",
+    "score": 0.6508,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3 Haiku', Descriptive 'Overall' = 65.08%; stored /100. Identity: paper v1 names claude-3-haiku-20240307.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "phi-3-vision-128k-instruct",
+    "bench": "charxiv-rq",
+    "score": 0.316,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Phi-3 Vision', Reasoning 'Overall' = 31.60%; stored /100. Identity: microsoft/Phi-3-vision-128k-instruct, the only Phi-3 Vision release.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "phi-3-vision-128k-instruct",
+    "bench": "charxiv-dq",
+    "score": 0.6048,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Phi-3 Vision', Descriptive 'Overall' = 60.48%; stored /100. Identity: microsoft/Phi-3-vision-128k-instruct, the only Phi-3 Vision release.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "minicpm-v-2-6",
+    "bench": "charxiv-rq",
+    "score": 0.31,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'MiniCPM-V2.6 (Upsize+CoT)', Reasoning 'Overall' = 31.00%; stored /100. Identity: the authors' 'Upsize+CoT' configuration (a second row without CoT is also published).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "minicpm-v-2-6",
+    "bench": "charxiv-dq",
+    "score": 0.5705,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'MiniCPM-V2.6 (Upsize+CoT)', Descriptive 'Overall' = 57.05%; stored /100. Identity: the authors' 'Upsize+CoT' configuration (a second row without CoT is also published).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "charxiv-rq",
+    "score": 0.302,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3 Opus', Reasoning 'Overall' = 30.20%; stored /100. Identity: paper v1 names claude-3-opus-20240229.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "charxiv-dq",
+    "score": 0.7155,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Claude 3 Opus', Descriptive 'Overall' = 71.55%; stored /100. Identity: paper v1 names claude-3-opus-20240229.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "reka-flash-21b-20240226",
+    "bench": "charxiv-rq",
+    "score": 0.266,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Reka Flash', Reasoning 'Overall' = 26.60%; stored /100. Identity: paper v1 names reka-flash-20240226.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "reka-flash-21b-20240226",
+    "bench": "charxiv-dq",
+    "score": 0.5645,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'Reka Flash', Descriptive 'Overall' = 56.45%; stored /100. Identity: paper v1 names reka-flash-20240226.",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "llava-v1-6-34b",
+    "bench": "charxiv-rq",
+    "score": 0.225,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'LLaVA 1.6 Yi 34B', Reasoning 'Overall' = 22.50%; stored /100. Identity: liuhaotian/llava-v1.6-34b (Yi-34B base).",
+    "source_id": "charxiv-readme-apache"
+  },
+  {
+    "model": "llava-v1-6-34b",
+    "bench": "charxiv-dq",
+    "score": 0.5105,
+    "source": "https://github.com/princeton-nlp/CharXiv/blob/7ebe88f78dee387691551f071abcb2b9e1a8025b/README.md",
+    "by": "independent",
+    "date": "2024-07-23",
+    "note": "CharXiv README leaderboard (princeton-nlp/CharXiv @7ebe88f, Apache-2.0): the benchmark authors' own evaluation on the validation set, row 'LLaVA 1.6 Yi 34B', Descriptive 'Overall' = 51.05%; stored /100. Identity: liuhaotian/llava-v1.6-34b (Yi-34B base).",
+    "source_id": "charxiv-readme-apache"
   }
 ]

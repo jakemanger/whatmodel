@@ -6,7 +6,7 @@
 
 DeepSeek · released 2024-01 · 6.91B params · deepseek
 
-**score 38.3** ±1.1 · #417 of 551 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 38.2** ±1.1 · #418 of 551 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.1%    37.4   2024-03-28   69% ▇▇▇▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       33.0%    40.0   2024-03-28   31% ▇▇▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               42.1%    37.3   2024-03-28   69% ▇▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       33.0%    39.9   2024-03-28   31% ▇▇▇▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 38.3
+                        weighted average               = 38.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -28,7 +28,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download         size  score
-16-bit bf16  ~13.82GB   38.3
+16-bit bf16  ~13.82GB   38.2
 </pre>
 
 ```sh

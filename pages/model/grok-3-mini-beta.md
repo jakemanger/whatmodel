@@ -6,7 +6,7 @@
 
 SpaceXAI (xAI) · released 2025-04 · proprietary
 
-**score 61.9** ±1.0 · comparison only: no current run option verified · from 7 benchmark results across 5 sources
+**score 61.8** ±1.0 · comparison only: no current run option verified · from 7 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                             score  implies  date   
 <a name="livecodebench-website-20250801"></a>LiveCodeBench officia…  <a href="https://github.com/LiveCodeBench/livecodebench.github.io/blob/f186ab5041d6b768733b8ae8145151c867942134/build/performances_generation.json">LiveCodeBench official (Aug 1…</a>   66.7%    64.9   2025-08-01   10% ▇
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1146.8    56.8   2026-05-10    6% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 61.9
+                        weighted average                        = 61.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

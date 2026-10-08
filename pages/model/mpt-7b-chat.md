@@ -6,7 +6,7 @@
 
 MosaicML · released 2023-05 · 7B params · cc-by-nc-sa-4.0
 
-**score 27.8** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
+**score 27.7** ±2.2 · comparison only: no current run option verified · from 3 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -18,7 +18,7 @@ source                  test                                                   s
 <a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  5.4200 MT-Bench score (1-10)    29.8   2023-06-19   27% ▇▇▇
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#S4.T4">MMLU</a>                                                   33.8%    25.3   2024-06-07   10% ▇
 prior                   pull toward the middle                                          50.0                 2% ▇
-                        weighted average                                              = 27.8
+                        weighted average                                              = 27.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

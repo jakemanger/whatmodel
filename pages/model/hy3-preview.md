@@ -6,7 +6,7 @@
 
 Tencent · released 2026-04 · 295B params (21B active) · tencent-hy-community
 
-**score 63.6** ±1.1 · #118 of 551 · from 23 benchmark results across 2 sources
+**score 63.6** ±1.1 · #119 of 551 · from 23 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="card2-tencent-hy3"></a>tencent/Hy3 model card  <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">GPQA Diamond (lab)</a>               87.2%    67.4   2026-07-20    9% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Verified (lab)</a>         74.4%    67.4   2026-07-20    5% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Terminal-Bench 2.1 (lab)</a>         58.0%    61.7   2026-07-20    4% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Terminal-Bench 2.1 (lab)</a>         58.0%    61.8   2026-07-20    4% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Multilingual (lab)</a>     68.3%    66.6   2026-07-20    4% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">SWE-bench Pro (split unspecif…</a>   46.0%    64.7   2026-07-20    4% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">USAMO 2026 (lab)</a>                 37.3%    55.2   2026-07-20    3% ▇
-                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam (lab)</a>       30.0%    69.3   2026-07-20    3% ▇
+                        <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Humanity's Last Exam (lab)</a>       30.0%    69.2   2026-07-20    3% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">MCP-Atlas (public set) (lab)</a>     66.1%    62.4   2026-07-20    3% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">Toolathlon (Tool Decathlon) (…</a>   32.1%    61.7   2026-07-20    3% ▇
                         <a href="https://huggingface.co/tencent/Hy3/blob/a960ebc3da325ba167f069f76c41eb62c9280d22/README.md">NL2Repo (lab)</a>                    35.3%    63.4   2026-07-20    3% ▇

@@ -6,7 +6,7 @@
 
 Zhipu AI (THUDM) · released 2023-03 · 6.2B params · chatglm-6b-license
 
-**score 23.0** ±1.8 · #525 of 551 · from 5 benchmark results across 3 sources
+**score 22.9** ±1.8 · #525 of 551 · from 5 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -17,10 +17,10 @@ source                  test                                                   s
 <a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>                                         31.3%    27.7   2024-03-10   17% ▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">HumanEval</a>                                               3.1%    19.6   2024-03-10   14% ▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                                                   36.1%    27.9   2024-03-10   10% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                         995.8    19.2   2026-10-02   40% ▇▇▇▇▇
-<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  4.5000 MT-Bench score (1-10)    24.6   2023-06-19   18% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                                         995.8    19.1   2026-10-02   40% ▇▇▇▇▇
+<a name="lmsys-arena-space-mtbench"></a>LMSYS Chatbot Arena l…  <a href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard/blob/6f2eeeba09bf42144dbc118fe1a8e12e4c533f9d/leaderboard_table_20250804.csv">MT-Bench (GPT-4 single-answer…</a>  4.5000 MT-Bench score (1-10)    24.5   2023-06-19   18% ▇▇
 prior                   pull toward the middle                                          50.0                 1% ▇
-                        weighted average                                              = 23.0
+                        weighted average                                              = 22.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 download                      size  score
-4-bit fp16 · nvidia only  ~13.42GB   23.0
+4-bit fp16 · nvidia only  ~13.42GB   22.9
 </pre>
 
 ```sh

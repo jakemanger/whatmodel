@@ -6,7 +6,7 @@
 
 Cohere · released 2025-03 · 33.1B params · cc-by-nc-4.0
 
-**score 41.5** ±3.1 · #378 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 41.8** ±3.2 · #373 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    41.1   2026-10-02   96% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                    50.0                 4% ▇
-                        weighted average                        = 41.5
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1000.2    41.4   2026-10-02   95% ▇▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                    50.0                 5% ▇
+                        weighted average                        = 41.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <pre>
 download        size  score
-4-bit fp16  ~66.28GB   41.5
+4-bit fp16  ~66.28GB   41.8
 </pre>
 
 ```sh

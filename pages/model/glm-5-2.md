@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-06 · 753B params (40B active) · mit
 
-**score 69.8** ±0.5 · #51 of 551 · from 36 benchmark results across 7 sources
+**score 69.9** ±0.5 · #48 of 551 · from 36 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                 score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            59.2%    70.5   2026-06-19   17% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               29.3%    70.8   2026-06-19   11% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                     9.5%    67.0   2026-06-29    4% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                     9.5%    67.1   2026-06-29    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         91.9%    71.6   2026-06-24    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   78.7%    71.3   2026-06-25    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         15.0%    66.3   2026-08-27    3% ▇
@@ -29,7 +29,7 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0326_outputs/blob/69bc5be7b2280c8521854515a981ed074aaa7b40/data/train-00000-of-00001.parquet">MathArena ArXivMath March 202…</a>       61.7%    71.4   2026-09-11    3% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivmath-0526_outputs/blob/85f1009458c2d2e1527d3e592d04cf40ee8b3a90/data/train-00000-of-00001.parquet">MathArena ArXivMath May 2026 …</a>       56.7%    69.9   2026-09-11    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0426_outputs/blob/34779f2c3c287fda88ea06b4c7885a1d10ae8b36/data/train-00000-of-00001.parquet">MathArena BrokenArXiv April 2…</a>       18.4%    67.3   2026-09-11    2% ▇
-                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>       14.2%    64.9   2026-08-25    2% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0626_outputs/blob/c4fac0ea2939a252ea72e9712fa49c639becb252/data/train-00000-of-00001.parquet">MathArena BrokenArXiv June 20…</a>       14.2%    65.0   2026-08-25    2% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0526_outputs/blob/7ca7ebc694e921b56eb9b5968374918bf2a2b4e4/data/train-00000-of-00001.parquet">MathArena BrokenArXiv May 202…</a>       10.5%    64.5   2026-06-23    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>       12.1%    66.6   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>       10.5%    66.2   2026-09-11    1% ▇
@@ -40,7 +40,7 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Toolathlon (Tool Decathlon) (…</a>       48.2%    71.4   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">MCP-Atlas (public set) (lab)</a>         76.8%    70.7   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">NL2Repo (lab)</a>                        48.9%    71.2   2026-09-25    1% ▇
-                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT November 2025 (lab)</a>             94.4%    75.0   2026-09-25    1% ▇
+                        <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT November 2025 (lab)</a>             94.4%    74.9   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">Humanity's Last Exam with too…</a>       54.7%    73.1   2026-09-25    1% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">HMMT February 2026 (lab)</a>             92.5%    76.7   2026-09-25    0% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/README.md">IMO-AnswerBench (lab)</a>                91.0%    79.1   2026-09-25    0% ▇
@@ -51,7 +51,7 @@ source                  test                                 score  implies  dat
 <a name="card2-zai-org-glm-5-3-flash"></a>zai-org/GLM-5.3-Flash…  <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">Agents' Last Exam (metric/har…</a>       20.4%    59.0   2026-09-07    0% ▇
                         <a href="https://huggingface.co/zai-org/GLM-5.3-Flash/blob/eb9eb208eb0d988989d07a6a12d0fdeb5f52574a/README.md">DeepSWE v1.1 (resolved) (lab)</a>        46.2%    60.1   2026-09-07    0% ▇
 prior                   pull toward the middle                        50.0                 0% ▇
-                        weighted average                            = 69.8
+                        weighted average                            = 69.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -79,9 +79,9 @@ api (Z.AI) · $2.15/M blended · $1.4 in / $4.4 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download               size  score
-4-bit ud-q4_k_xl   ~452.3GB   69.8
-2-bit ud-q2_k_xl   ~226.4GB   69.8
-1-bit ud-iq1_s    ~113.45GB   69.8
+4-bit ud-q4_k_xl   ~452.3GB   69.9
+2-bit ud-q2_k_xl   ~226.4GB   69.9
+1-bit ud-iq1_s    ~113.45GB   69.9
 </pre>
 
 ```sh

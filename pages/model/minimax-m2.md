@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-10 · 230B params (10B active) · modified-mit
 
-**score 60.6** ±1.5 · #149 of 551 · from 4 benchmark results across 3 sources
+**score 60.6** ±1.5 · #148 of 551 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 

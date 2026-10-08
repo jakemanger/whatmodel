@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-02 · 6.89B params · apache-2.0
 
-**score 31.5** ±1.1 · #489 of 551 · from 13 benchmark results across 1 source
+**score 31.5** ±1.1 · #490 of 551 · from 13 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -20,9 +20,9 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      8.5%    24.7   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy (lab)</a>                  65.4%    30.1   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag (lab)</a>                 76.4%    35.6   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    26.2   2024-06-07    6% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>            31.7%    26.1   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ (lab)</a>                      93.8%    33.9   2024-06-07    6% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    26.5   2024-06-07    5% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>  21.4%    26.4   2024-06-07    5% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ (lab)</a>                     73.4%    33.4   2024-06-07    5% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">PIQA (lab)</a>                      78.4%    34.4   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                      28.3%    19.9   2024-06-07    3% ▇

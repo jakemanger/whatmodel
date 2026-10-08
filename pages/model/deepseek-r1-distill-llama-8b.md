@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-01 · 8.03B params · mit
 
-**score 50.9** ±1.4 · #260 of 551 · from 7 benchmark results across 3 sources
+**score 50.8** ±1.4 · #260 of 551 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                            score  implies  date    
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  53.7%    39.1   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  78.3%    44.7   2026-04-17    2% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 50.9
+                        weighted average                       = 50.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.32GB   50.9
-8-bit q8_0    ~10.14GB   50.9
+4-bit q4_k_m   ~5.32GB   50.8
+8-bit q8_0    ~10.14GB   50.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2026-07 · closed weights
 
-**score 65.6** ±0.8 · #88 of 551 · from 10 benchmark results across 3 sources
+**score 65.5** ±0.8 · #88 of 551 · from 10 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -25,7 +25,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1264.4    70.5   2026-10-02    6% ▇
 <a name="mideind-icelandic-llm-leaderboard"></a>Miðeind Icelandic LLM…  <a href="https://huggingface.co/spaces/mideind/icelandic-llm-leaderboard/blob/f8e42e15da1b985242bbb29eff139ec62405b53b/leaderboard.json">Icelandic LLM Leaderboard ave…</a>   49.6%    71.2   2026-09-07    2% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 65.6
+                        weighted average                        = 65.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

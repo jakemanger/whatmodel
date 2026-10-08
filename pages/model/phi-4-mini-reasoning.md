@@ -6,7 +6,7 @@
 
 Microsoft · released 2025-04 · 3.8B params · mit
 
-**score 34.1** ±4.3 · #465 of 551 · from 3 benchmark results across 2 sources
+**score 34.0** ±4.3 · #466 of 551 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  21.3%    34.6   2025-04-28   47% ▇▇▇▇▇▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  55.7%    30.6   2026-04-17   26% ▇▇▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    30.4   2026-04-17   18% ▇▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  41.0%    30.3   2026-04-17   18% ▇▇
 prior                   pull toward the middle                   50.0                 8% ▇
-                        weighted average                       = 34.1
+                        weighted average                       = 34.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -44,9 +44,9 @@ api (Microsoft Azure) · $0.13/M blended · $0.075 in / $0.3 out per 1M tokens �
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~2.49GB   34.1
-8-bit q8_0    ~4.08GB   34.1
-4-bit q4_k_m  ~3.15GB   34.1
+4-bit q4_k_m  ~2.49GB   34.0
+8-bit q8_0    ~4.08GB   34.0
+4-bit q4_k_m  ~3.15GB   34.0
 </pre>
 
 ```sh

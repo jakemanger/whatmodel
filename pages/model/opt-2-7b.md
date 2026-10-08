@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 2.7B params · opt-175b-license-noncommercial
 
-**score 24.8** ±0.9 · #516 of 551 · from 16 benchmark results across 2 sources
+**score 24.8** ±0.9 · #515 of 551 · from 16 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">ARC Challenge</a>                   31.3%    25.5   2024-04-08   18% ▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">WinoGrande</a>                      61.0%    26.8   2024-04-08    7% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">SciQ</a>                            85.8%    21.1   2024-04-08    6% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">HellaSwag</a>                       60.6%    26.3   2024-04-08    6% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">HellaSwag</a>                       60.6%    26.2   2024-04-08    6% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">ARC Easy</a>                        54.3%    21.7   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">BoolQ</a>                           60.3%    20.3   2024-04-08    5% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/facebook-opt-2.7b.json">PIQA</a>                            73.8%    27.1   2024-04-08    4% ▇
@@ -28,8 +28,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   26.8%    22.9   2023-05-31    8% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      61.0%    27.7   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            85.8%    22.1   2023-05-31    6% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            73.9%    27.7   2023-05-31    5% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  63.6%    27.8   2023-05-31    5% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            73.9%    27.6   2023-05-31    5% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  63.6%    27.7   2023-05-31    5% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 24.8
 </pre>

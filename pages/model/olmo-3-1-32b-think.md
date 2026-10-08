@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             88.6%    54.8   2026-09-25   12% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  78.1%    58.3   2026-09-25   11% ▇
+<a name="report-2512.13961v2"></a>Olmo 3                  <a href="https://arxiv.org/html/2512.13961v2">BIG-Bench Hard (lab)</a>             88.6%    54.7   2026-09-25   12% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AIME 2025 (lab)</a>                  78.1%    58.2   2026-09-25   11% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>   56.7%    55.3   2026-09-25   10% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AIME 2024 (lab)</a>                  80.6%    57.0   2026-09-25   10% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MMLU (lab)</a>                       86.4%    54.6   2026-09-25    6% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   69.1%    58.1   2026-09-25    5% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            88.8%    59.5   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>   69.1%    58.0   2026-09-25    5% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">AGIEval English (lab)</a>            88.8%    59.4   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                      68.3%    52.3   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                      30.9%    56.3   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">HumanEval+ (lab)</a>                 91.5%    55.8   2026-09-25    3% ▇

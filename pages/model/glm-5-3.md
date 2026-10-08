@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-08 · 753B params (40B active) · glm-5.3-license
 
-**score 72.0** ±0.7 · #31 of 551 · from 13 benchmark results across 4 sources
+**score 72.0** ±0.7 · #32 of 551 · from 13 benchmark results across 4 sources
 
 ## How the score was worked out
 

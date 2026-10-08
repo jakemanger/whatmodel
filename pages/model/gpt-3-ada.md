@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      52.8%    11.7   2022-04-14    7% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   22.5%     8.8   2022-04-14    5% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                         5.0%    11.4   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            69.0%    18.3   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            69.0%    18.2   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      17.2%     7.1   2022-04-14    3% ▇
 <a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       43.4%    13.3   2021-08-06   12% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  51.6%    17.0   2021-08-06    9% ▇

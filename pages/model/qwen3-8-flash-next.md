@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 180B params (6B active) · qwen-community-1.0
 
-**score 72.3** ±1.6 · #28 of 551 · from 3 benchmark results across 2 sources
+**score 72.3** ±1.6 · #29 of 551 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 

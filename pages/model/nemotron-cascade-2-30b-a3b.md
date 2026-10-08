@@ -17,13 +17,13 @@ source                 test                            score  implies  date     
 <a name="report-2603.19220v2"></a>NVIDIA                 <a href="https://arxiv.org/html/2603.19220v2">AIME 2025 (lab)</a>                 92.4%    66.3   2026-03-22   19% ▇▇
                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>  87.0%    69.2   2026-03-22   10% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>  27.6%    71.0   2026-03-22   10% ▇
-                       <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    69.0   2026-03-22   10% ▇
+                       <a href="https://arxiv.org/html/2603.19220v2">HMMT February 2025 (lab)</a>        94.6%    68.9   2026-03-22   10% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                 90.9%    60.5   2026-03-22    8% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    70.5   2026-03-22    8% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.6   2026-03-22    6% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    55.6   2026-03-22    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.6   2026-04-17   13% ▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    63.1   2026-04-17    9% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.7   2026-04-17   13% ▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    63.1   2026-04-17   10% ▇
 prior                  pull toward the middle                   50.0                 1% ▇
                        weighted average                       = 64.2
 </pre>

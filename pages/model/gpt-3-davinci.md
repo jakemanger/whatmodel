@@ -6,7 +6,7 @@
 
 OpenAI · released 2020-06 · proprietary
 
-**score 36.5** ±1.0 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
+**score 36.4** ±1.0 · comparison only: no current run option verified · from 13 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,8 +15,8 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge</a>                   43.5%    36.1   2022-04-14   28% ▇▇▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      33.6%    38.8   2022-04-14   12% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      69.9%    35.3   2022-04-14   11% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA</a>                      33.6%    38.8   2022-04-14   11% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">WinoGrande</a>                      69.9%    35.2   2022-04-14   11% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                        40.9%    39.7   2022-04-14    8% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">HellaSwag</a>                       59.2%    34.3   2022-04-14    7% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        76.2%    36.6   2022-04-14    4% ▇
@@ -28,7 +28,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  75.0%    33.3   2021-08-06    3% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            80.0%    33.4   2021-08-06    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 36.5
+                        weighted average                       = 36.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -21,12 +21,12 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2204.06745v1">TriviaQA</a>                        19.6%    27.3   2022-04-14    8% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Easy</a>                        68.2%    29.7   2022-04-14    5% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">SciQ</a>                            91.8%    29.8   2022-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  69.3%    29.8   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">LAMBADA (OpenAI version), las…</a>  69.3%    29.7   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">PIQA</a>                            76.7%    30.3   2022-04-14    3% ▇
 <a name="eleutherai-gpt-j-6b-card"></a>EleutherAI GPT-J-6B m…  <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">WinoGrande</a>                      65.6%    30.7   2021-08-06   10% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">HellaSwag</a>                       68.5%    31.4   2021-08-06    9% ▇
                         <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">LAMBADA (OpenAI version), las…</a>  69.3%    28.9   2021-08-06    5% ▇
-                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            77.9%    30.4   2021-08-06    3% ▇
+                        <a href="https://huggingface.co/EleutherAI/gpt-j-6b/blob/47e169305d2e8376be1d31e765533382721b2cc1/README.md">PIQA</a>                            77.9%    30.3   2021-08-06    3% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 30.1
 </pre>

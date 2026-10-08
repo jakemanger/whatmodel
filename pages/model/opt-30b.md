@@ -6,7 +6,7 @@
 
 Meta · released 2022-05 · 30B params · opt-175b-license-noncommercial
 
-**score 33.6** ±1.2 · #467 of 551 · from 6 benchmark results across 1 source
+**score 33.6** ±1.2 · #468 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -15,11 +15,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   34.6%    34.3   2023-05-31   42% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      68.2%    34.6   2023-05-31   18% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        70.0%    32.0   2023-05-31   15% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            77.6%    33.4   2023-05-31    9% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      68.2%    34.5   2023-05-31   18% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        70.0%    31.9   2023-05-31   15% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            77.6%    33.3   2023-05-31    9% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            91.1%    30.1   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  71.5%    33.6   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  71.5%    33.5   2023-05-31    7% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 33.6
 </pre>
