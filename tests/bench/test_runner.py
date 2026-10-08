@@ -5,7 +5,8 @@ import io
 import json
 import os
 from pathlib import Path
-import re
+import stat
+import tempfile
 import threading
 import unittest
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -29,7 +30,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == '/api/generate':
             self.wfile.write(json.dumps(dict(done=True, response='PRIVATE OUTPUT', eval_count=40,
                 eval_duration=2_000_000_000, prompt_eval_count=30, prompt_eval_duration=1_000_000_000,
-                load_duration=500_000_000)).encode())
+                load_duration=500_000_000, total_duration=3_600_000_000)).encode())
         else:
             for chunk in [
                 {'choices':[{'delta':{'content':'PRIVATE OUTPUT'}}]},
@@ -38,6 +39,26 @@ class Handler(BaseHTTPRequestHandler):
             ]:
                 self.wfile.write(('data: '+json.dumps(chunk)+'\n\n').encode())
             self.wfile.write(b'data: [DONE]\n\n')
+
+
+@contextlib.contextmanager
+def fake_tool(name, script):
+    """Put an executable stand-in for an agent CLI first on PATH."""
+    with tempfile.TemporaryDirectory() as d:
+        path = Path(d) / name
+        path.write_text('#!/bin/sh\n' + script)
+        path.chmod(path.stat().st_mode | stat.S_IEXEC)
+        with patch.dict(os.environ, {'PATH': d + os.pathsep + os.environ['PATH']}):
+            yield
+
+
+class Probe:
+    def __init__(self, targets=(), **extra):
+        self.targets, self.extra, self.state = list(targets), extra, 'found'
+
+
+def found(targets):
+    return {'hardware': Probe(hardware={}), 'ollama': Probe(targets, installed=True), 'llamacpp': Probe(installed=True)}
 
 
 class RunnerTests(unittest.TestCase):
@@ -54,31 +75,111 @@ class RunnerTests(unittest.TestCase):
         cls.thread.join()
 
     def test_ollama_decode_metrics_and_prompt(self):
-        r=bench.run_one(dict(kind='ollama',base=self.base,model='m'),32,1)
-        self.assertEqual(r['generation_tok_s'],20)
+        r=bench.run_ollama(dict(kind='ollama',base=self.base,model='m'),32,1)
+        self.assertEqual(r['gen_tok_s'],20)
         self.assertEqual(r['prompt_tok_s'],30)
         self.assertEqual(r['load_s'],0.5)
         self.assertNotIn('PRIVATE',json.dumps(r))
         self.assertEqual(Handler.requests[-1][1]['options']['num_predict'],32)
 
-    def test_stream_metrics_are_e2e_not_decode(self):
-        r=bench.run_one(dict(kind='chat',base=self.base,model='m',key=''),32,2)
+    def test_stream_metrics_separate_first_token_from_generation(self):
+        r=bench.run_openai(dict(kind='openai',base=self.base,model='m',key=''),32,2)
         self.assertEqual(r['output_tokens'],8)
-        self.assertGreater(r['end_to_end_tok_s'],0)
-        self.assertNotIn('generation_tok_s',r)
+        self.assertIsNotNone(r['ttft_s'])
         self.assertNotIn('PRIVATE',json.dumps(r))
 
-    def test_public_report_is_allowlisted_and_distinguishes_protocols(self):
-        raw=[dict(public_id='public-model',kind='llama-bench',path='/private/user',
-                  key='SECRET',samples=[dict(elapsed_s=1,generation_tok_s=12,output='SECRET',ttft_s=float('nan'))])]
-        r=bench.public_report(raw,32,dict(os='username',arch='/private/path',ram_gb=16,hostname='SECRET'))
-        self.assertNotIn('SECRET',json.dumps(r))
-        self.assertNotIn('/private',json.dumps(r))
-        self.assertEqual(r['hardware']['os'],'Other')
-        self.assertEqual(r['results'][0]['protocol'],'synthetic-pp512-tg')
+    def test_claude_runs_without_tools_or_settings_and_is_capped(self):
+        args=bench.claude_args(bench.AGENT_PROMPT)
+        self.assertEqual(args[args.index('--tools')+1],'')
+        self.assertIn('--strict-mcp-config',args)
+        self.assertIn('--no-session-persistence',args)
+        self.assertEqual(float(args[args.index('--max-budget-usd')+1]),bench.CLAUDE_USD_PER_CALL)
+        payload=dict(type='result',is_error=False,duration_ms=4000,duration_api_ms=3500,ttft_ms=1500,total_cost_usd=0.02,
+                     usage=dict(output_tokens=200),modelUsage={'claude-opus-5-5':{}},result='PRIVATE OUTPUT')
+        with fake_tool('claude',"echo '"+json.dumps(payload)+"'\n"):
+            r=bench.run_claude({},32,1)
+        self.assertEqual(r['gen_tok_s'],100.0)
+        self.assertEqual(r['ttft_s'],1.5)
+        self.assertEqual(r['_model'],'claude-opus-5-5')
+        self.assertNotIn('PRIVATE',json.dumps(r))
+
+    def test_codex_reads_usage_from_its_event_stream(self):
+        lines=[{'type':'thread.started','thread_id':'x'},{'type':'item.completed','item':{'text':'PRIVATE'}},
+               {'type':'turn.completed','usage':{'input_tokens':9000,'output_tokens':150,'reasoning_output_tokens':50}}]
+        with fake_tool('codex',''.join("echo '"+json.dumps(l)+"'\n" for l in lines)):
+            r=bench.run_codex({},32,1)
+        self.assertEqual((r['output_tokens'],r['reasoning_tokens']),(150,50))
+        self.assertGreater(r['e2e_tok_s'],0)
+        self.assertNotIn('PRIVATE',json.dumps(r))
+
+    def test_failed_tools_raise_without_their_output(self):
+        with fake_tool('claude','echo SECRET >&2; echo \'{"type":"result","is_error":true,"result":"SECRET"}\'; exit 1\n'):
+            with self.assertRaises(RuntimeError) as e:
+                bench.run_claude({},32,1)
+        self.assertNotIn('SECRET',str(e.exception))
+        with fake_tool('codex','echo \'{"type":"turn.failed","error":"SECRET"}\'\n'):
+            with self.assertRaises(RuntimeError) as e:
+                bench.run_codex({},32,1)
+        self.assertNotIn('SECRET',str(e.exception))
+
+    def test_other_agents_report_the_largest_cumulative_token_count(self):
+        text='\n'.join(json.dumps(x) for x in [{'usage':{'output_tokens':40}},{'stats':{'tokens':{'output_tokens':120}}}])
+        self.assertEqual(bench.most_tokens(text),120)
+        self.assertIsNone(bench.most_tokens('not json'))
+
+    def test_schedule_warms_up_first_then_shuffles_each_round(self):
+        ts=[dict(label=str(i)) for i in range(4)]
+        order=bench.schedule(ts,3,1,seed=7)
+        self.assertEqual([n for _,n in order[:4]],[0,0,0,0])
+        for r in range(3):
+            chunk=order[4+4*r:8+4*r]
+            self.assertEqual(sorted(t['label'] for t,_ in chunk),['0','1','2','3'])
+            self.assertTrue(all(n==r+1 for _,n in chunk))
+        self.assertEqual(order,bench.schedule(ts,3,1,seed=7))
+
+    def test_subscription_tools_stop_at_the_token_cap(self):
+        t=dict(kind='fake',group='subscription',label='agent')
+        calls=[]
+        def runner(target,tokens,n):
+            calls.append(n); return {'output_tokens':bench.AGENT_TOKEN_CAP}
+        with patch.dict(bench.RUNNERS,{'fake':runner}), contextlib.redirect_stdout(io.StringIO()):
+            jobs=bench.run_all([t],3,1,32,seed=1)
+        self.assertEqual(calls,[0])
+        self.assertEqual(jobs[0].state,'skipped')
+
+    def test_ctrl_c_keeps_finished_results(self):
+        t=dict(kind='fake',group='local',label='model')
+        n_calls=[]
+        def runner(target,tokens,n):
+            n_calls.append(n)
+            if len(n_calls)==3: raise KeyboardInterrupt
+            return {'gen_tok_s':10}
+        with patch.dict(bench.RUNNERS,{'fake':runner}), contextlib.redirect_stdout(io.StringIO()):
+            jobs=bench.run_all([t],3,1,32,seed=1)
+        self.assertEqual(len(jobs[0].samples),1)
+        self.assertEqual(jobs[0].note,'stopped early')
+
+    def test_public_report_is_allowlisted(self):
+        t=dict(kind='llama-bench',group='local',label='private alias',path='/Users/SECRET/models/Qwen3-8B-Q4_K_M.gguf',key='SECRET')
+        job=bench.Run(t,1,1); job.samples=[dict(gen_tok_s=12,output='SECRET',ttft_s=float('nan'),prompt_tok_s=300)]
+        r=bench.public_report([job],32,1,1,5,dict(os='Darwin',arch='arm64',ram_gb=16,hostname='SECRET',user='SECRET'),{id(t):'qwen3-8b'})
+        text=json.dumps(r)
+        self.assertNotIn('SECRET',text)
+        self.assertNotIn('private alias',text)
+        self.assertEqual(r['results'][0]['file'],'Qwen3-8B-Q4_K_M.gguf')
         self.assertNotIn('ttft_s',r['results'][0]['samples'][0])
-        raw[0]['public_id']='https://private.example'
-        with self.assertRaises(ValueError): bench.public_report(raw,32,{})
+        self.assertEqual(r['schema'],'whatmodel-bench-v3')
+        with self.assertRaises(ValueError):
+            bench.public_report([job],32,1,1,5,{},{id(t):'https://private.example'})
+
+    def test_catalogue_ids_come_from_recorded_commands_and_model_names(self):
+        catalogue=[{'id':'qwen-2-5-3b','local':{'variants':[{'cmd':'ollama run qwen2.5:3b'}]}},
+                   {'id':'glm-5-3','local':{'variants':[{'cmd':'llama-server -hf unsloth/GLM-5.3-GGUF:UD-Q4_K_XL'}]}},
+                   {'id':'claude-opus-5-5'}]
+        self.assertEqual(bench.suggest_id(dict(kind='ollama',model='qwen2.5:3b'),catalogue),'qwen-2-5-3b')
+        self.assertEqual(bench.suggest_id(dict(kind='llama-bench',path='/x/unsloth_GLM-5.3-GGUF_UD-Q4_K_XL-00001-of-00009.gguf'),catalogue),'glm-5-3')
+        self.assertEqual(bench.suggest_id(dict(kind='claude'),catalogue,'claude-opus-5-5'),'claude-opus-5-5')
+        self.assertIsNone(bench.suggest_id(dict(kind='ollama',model='unknown:1b'),catalogue))
 
     def test_urls_and_launcher_hash(self):
         for url in ['http://remote.example/v1','https://user:secret@example.com','file:///tmp/file','https://example.org?key=secret']:
@@ -88,58 +189,34 @@ class RunnerTests(unittest.TestCase):
         digest=hashlib.sha256((ROOT/'bench.py').read_bytes()).hexdigest()
         self.assertIn("expected = '"+digest+"'",(ROOT/'bench.sh').read_text())
 
-    def test_issue_size_and_agent_restrictions(self):
-        self.assertIsNotNone(bench.issue_url({'results':[]}))
-        self.assertIsNone(bench.issue_url({'results':['x'*8000]}))
-        args=bench.agent_args('claude',bench.PROMPT)
-        self.assertEqual(args[args.index('--tools')+1],'')
-        self.assertIn('--strict-mcp-config',args)
-        self.assertIn('--ignore-user-config',bench.agent_args('codex',bench.PROMPT))
-
-    def test_declining_plan_runs_nothing(self):
-        target=dict(kind='ollama',label='model',model='m',base=self.base)
+    def test_declining_the_plan_runs_nothing(self):
+        target=dict(kind='ollama',group='local',label='model',model='m',base=self.base)
         with patch.object(bench.sys,'argv',['bench']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
-             patch.object(bench,'discover',return_value=([target],[])), patch.object(bench,'choose',return_value=[target]), \
-             patch.object(bench,'ask',side_effect=['','1','32']), patch.object(bench,'yes',return_value=False), \
-             patch.object(bench,'timed') as run, patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(io.StringIO()):
+             patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
+             patch.object(bench,'yes',return_value=False), patch.object(bench,'run_all') as run, \
+             patch.object(bench.webbrowser,'open') as browser, contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(bench.main(),0)
             run.assert_not_called()
             browser.assert_not_called()
 
-    def test_cancel_stops_remaining_targets(self):
-        target=dict(kind='ollama',label='model',model='m',base=self.base)
-        with patch.object(bench.sys,'argv',['bench']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
-             patch.object(bench,'discover',return_value=([target,target],[])), patch.object(bench,'choose',return_value=[target,target]), \
-             patch.object(bench,'ask',side_effect=['','3','32']), patch.object(bench,'yes',return_value=True), \
-             patch.object(bench,'timed',side_effect=KeyboardInterrupt) as run, contextlib.redirect_stdout(io.StringIO()):
-            self.assertEqual(bench.main(),0)
-            self.assertEqual(run.call_count,1)
-
     def test_reviewed_report_can_stay_local_without_opening_browser(self):
-        import tempfile
-        target=dict(kind='ollama',label='private alias',model='m',base=self.base)
-        measured=dict(kind='ollama',label='private alias',samples=[dict(elapsed_s=1)])
+        target=dict(kind='ollama',group='local',label='private alias',model='m',base=self.base)
         with tempfile.TemporaryDirectory() as directory:
             destination=Path(directory)/'report.json'
             def create(**kwargs):
                 return os.open(destination,os.O_CREAT|os.O_WRONLY,0o600),str(destination)
-            with patch.object(bench.sys,'argv',['bench']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
-                 patch.object(bench,'discover',return_value=([target],[])), patch.object(bench,'choose',side_effect=[[target],[measured]]), \
-                 patch.object(bench,'ask',side_effect=['','1','32','public-model']), patch.object(bench,'yes',side_effect=[True,False]), \
-                 patch.object(bench,'timed',return_value={'elapsed_s':1}), patch.object(bench,'hardware',return_value={}), \
+            with patch.object(bench.sys,'argv',['bench','--runs','1']), patch.object(bench.sys.stdin,'isatty',return_value=True), \
+                 patch.object(bench,'discover',return_value=found([target])), patch.object(bench,'choose',return_value=[target]), \
+                 patch.object(bench,'ask',return_value='public-model'), patch.object(bench,'yes',side_effect=[True,True,False]), \
+                 patch.object(bench,'load_catalogue',return_value=[]), \
                  patch.object(bench.tempfile,'mkstemp',side_effect=create), patch.object(bench.webbrowser,'open') as browser, \
                  contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(bench.main(),0)
                 browser.assert_not_called()
-            self.assertNotIn('private alias',destination.read_text())
+            report=destination.read_text()
+            self.assertNotIn('private alias',report)
+            self.assertIn('public-model',report)
             self.assertEqual(destination.stat().st_mode & 0o777,0o600)
-
-    def test_subprocess_failure_does_not_disclose_stderr(self):
-        import sys, tempfile
-        with tempfile.TemporaryDirectory() as directory:
-            with self.assertRaises(RuntimeError) as e:
-                bench.run_process([sys.executable,'-c','import sys;sys.stderr.write("SECRET");sys.exit(1)'],directory)
-            self.assertNotIn('SECRET',str(e.exception))
 
 
 if __name__=='__main__':
