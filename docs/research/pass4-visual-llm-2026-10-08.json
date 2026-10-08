@@ -1,5 +1,5 @@
 {
- "about": "",
+ "about": "Pass 4 research (2026-10-08) for the 115 runnable image, video and LLM models with fewer than 3 counted results in pass4-visual-llm-input.json. Candidate rows only; data/ was not edited. Merge: ledger entries first (strip action/evidence_url/scope; add_match entries extend existing entries), then models, benchmarks (drop suggested_tasks, add each id to its task in data/tasks.json), then results via npm run import. Simulated with lib/score.ts toCells on a scratch copy (import + ledger + tasks merged, scripts/check.ts --validate-only passes): 15 thin models reach 3+ counted results: cosmos3-super-text2image, k2-horizon-7b, show-o2-7b, blip3o-8b, cosmos-1-0-diffusion-7b-text2world, wan-2-1-1-3b, qwq-plus, eurus-2-7b-prime, t2v-turbo-vc2, stablelm-tuned-alpha-7b, falcon-180b-chat, llama-3-1-nemotron-51b, aya-vision-32b, qwen3-max-preview, exaone-3-5-2-4b. held_for_owner is NOT part of results/benchmarks/ledger.",
  "results": [
   {
    "model": "llama-3-1-nemotron-51b",
@@ -2029,7 +2029,7 @@
    "source_id": "paper-2504.07072v2-kaleidoscope",
    "by": "independent",
    "date": "2025-04-29",
-   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Aya-Vision-32B', column Overall Acc. = 39.27 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+   "note": "Kaleidoscope paper (arXiv 2504.07072v2) main results table, row 'Aya-Vision-32B', column Overall Acc. = 39.27 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
   },
   {
    "model": "qwen2-5-vl-72b",
@@ -2039,7 +2039,7 @@
    "source_id": "paper-2504.07072v2-kaleidoscope",
    "by": "independent",
    "date": "2025-04-29",
-   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Qwen2.5-VL-72B', column Overall Acc. = 52.94 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+   "note": "Kaleidoscope paper (arXiv 2504.07072v2) main results table, row 'Qwen2.5-VL-72B', column Overall Acc. = 52.94 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
   },
   {
    "model": "qwen2-5-vl-32b",
@@ -2049,7 +2049,7 @@
    "source_id": "paper-2504.07072v2-kaleidoscope",
    "by": "independent",
    "date": "2025-04-29",
-   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Qwen2.5-VL-32B', column Overall Acc. = 48.21 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+   "note": "Kaleidoscope paper (arXiv 2504.07072v2) main results table, row 'Qwen2.5-VL-32B', column Overall Acc. = 48.21 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
   },
   {
    "model": "molmo-7b-d",
@@ -2059,7 +2059,7 @@
    "source_id": "paper-2504.07072v2-kaleidoscope",
    "by": "independent",
    "date": "2025-04-29",
-   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Molmo-7B-D', column Overall Acc. = 32.87 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+   "note": "Kaleidoscope paper (arXiv 2504.07072v2) main results table, row 'Molmo-7B-D', column Overall Acc. = 32.87 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
   },
   {
    "model": "gpt-4o-2024-08-06",
@@ -2069,7 +2069,7 @@
    "source_id": "paper-2504.07072v2-kaleidoscope",
    "by": "independent",
    "date": "2025-04-29",
-   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'GPT-4o', column Overall Acc. = 58.32 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+   "note": "Kaleidoscope paper (arXiv 2504.07072v2) main results table, row 'GPT-4o', column Overall Acc. = 58.32 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
   },
   {
    "model": "claude-3-5-sonnet-20241022",
@@ -2079,7 +2079,7 @@
    "source_id": "paper-2504.07072v2-kaleidoscope",
    "by": "independent",
    "date": "2025-04-29",
-   "note": "Kaleidoscope paper (Cohere Labs; arXiv 2504.07072v2) main results table, row 'Claude 3.5 Sonnet', column Overall Acc. = 62.91 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
+   "note": "Kaleidoscope paper (arXiv 2504.07072v2) main results table, row 'Claude 3.5 Sonnet', column Overall Acc. = 62.91 (percent over all 20,911 questions, stored /100). Authors' own evaluation (Sec. 3.2): open-weight models run locally with temperature 0.7, 1024 max tokens, image size 512x512; closed models with chain-of-thought prompts; Sec. 3.1 names GPT-4o as 2024/08/06 and Claude 3.5 Sonnet as 2024/10/22. Overall Acc. is over all responses (format errors counted wrong), not the 'valid responses' column. Gemini 1.5 Pro (snapshot unstated), Aya-Vision-8B, Qwen2.5-VL-7B/3B and Pangea-7B are not recorded (not catalogue checkpoints or unstated)."
   },
   {
    "model": "bloom-7b1",
@@ -3032,6 +3032,476 @@
    "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Llama-3.2-3B-Instruct', column Overall = 78.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
   },
   {
+   "model": "llama-3-2-1b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.761,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Llama-3.2-1B-Instruct', column Overall = 76.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-3b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.688,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-3B-Instruct', column Overall = 68.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-1-5b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.782,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-1.5B-Instruct', column Overall = 78.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-1-3b-instruct",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.019,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'deepseek-coder-1.3b-instruct', column Overall = 1.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-1.5B', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-3b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.52,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Falcon3-3B-Instruct', column Overall = 52.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-1b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.558,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Falcon3-1B-Instruct', column Overall = 55.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-mini-128k-instruct",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.769,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Phi-3-mini-128k-instruct', column Overall = 76.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-2b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.69,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'granite-3.0-2b-instruct', column Overall = 69.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "exaone-3-5-2-4b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.653,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'EXAONE-3.5-2.4B-Instruct', column Overall = 65.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.718,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Llama-3.1-8B-Instruct', column Overall = 71.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-9b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.741,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'gemma-2-9b-it', column Overall = 74.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-7b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.786,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-Coder-7B-Instruct', column Overall = 78.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-7b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.759,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-7B-Instruct', column Overall = 75.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-7b-instruct-v1-5",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.581,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'deepseek-coder-7b-instruct-v1.5', column Overall = 58.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-7b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.01,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-7B', column Overall = 1.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-8b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.004,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Llama-8B', column Overall = 0.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-7b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.732,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Falcon3-7B-Instruct', column Overall = 73.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-coder-9b-chat",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.521,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Yi-Coder-9B-Chat', column Overall = 52.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-9b-chat",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.786,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Yi-1.5-9B-Chat', column Overall = 78.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-8b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.559,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'granite-3.0-8b-instruct', column Overall = 55.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-14b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.739,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-Coder-14B-Instruct', column Overall = 73.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-14b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.733,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-14B-Instruct', column Overall = 73.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-v2-lite-instruct",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.757,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-Coder-V2-Lite-Instruct', column Overall = 75.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-v2-lite-chat",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.768,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-V2-Lite-Chat', column Overall = 76.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-14b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.727,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-14B', column Overall = 72.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-10b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.447,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Falcon3-10B-Instruct', column Overall = 44.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-13b-v1-2",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.651,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'WizardLM-13B-V1.2', column Overall = 65.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-medium-128k-instruct",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.767,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Phi-3-medium-128k-instruct', column Overall = 76.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-4",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.766,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'phi-4', column Overall = 76.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-nemo-instruct-2407",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.758,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Mistral-Nemo-Instruct-2407', column Overall = 75.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-27b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.74,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'gemma-2-27b-it', column Overall = 74.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-32b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.791,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-Coder-32B-Instruct', column Overall = 79.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-32b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.71,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-32B-Instruct', column Overall = 71.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwq-32b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.609,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'QwQ-32B', column Overall = 60.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-33b-instruct",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.698,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'deepseek-coder-33b-instruct', column Overall = 69.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-32b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.732,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-32B', column Overall = 73.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-34b-chat",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.661,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Yi-1.5-34B-Chat', column Overall = 66.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-small-2409",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.767,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Mistral-Small-Instruct-2409', column Overall = 76.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-34b-code-instruct-8k",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.723,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'granite-34b-code-instruct-8k', column Overall = 72.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "internlm2-5-20b-chat",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.757,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'internlm2_5-20b-chat', column Overall = 75.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.684,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Llama-3.1-70B-Instruct', column Overall = 68.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-3-70b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.66,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Llama-3.3-70B-Instruct', column Overall = 66.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-72b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.798,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'Qwen2.5-72B-Instruct', column Overall = 79.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-llm-67b-chat",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.791,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'deepseek-llm-67b-chat', column Overall = 79.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-70b",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.612,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Llama-70B', column Overall = 61.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-70b-v1-0",
+   "bench": "codereviewqa-ctr-invariant-accuracy",
+   "score": 0.786,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 9 'Change Type Recognition - Proportion of Plurality Agreement and Invariant Accuracy (%)', row 'WizardLM-70B-V1.0', column Overall = 78.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
    "model": "llama-3-2-3b",
    "bench": "codereviewqa-clh-invariant-accuracy",
    "score": 0.004,
@@ -3042,6 +3512,476 @@
    "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.2-3B-Instruct', column Overall = 0.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
   },
   {
+   "model": "llama-3-2-1b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.2-1B-Instruct', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-3b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.35,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-3B-Instruct', column Overall = 35.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-1-5b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.012,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-1.5B-Instruct', column Overall = 1.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-1-3b-instruct",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'deepseek-coder-1.3b-instruct', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-1.5B', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-3b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.017,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-3B-Instruct', column Overall = 1.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-1b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-1B-Instruct', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-mini-128k-instruct",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.307,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Phi-3-mini-128k-instruct', column Overall = 30.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-2b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.01,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'granite-3.0-2b-instruct', column Overall = 1.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "exaone-3-5-2-4b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.008,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'EXAONE-3.5-2.4B-Instruct', column Overall = 0.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.298,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.1-8B-Instruct', column Overall = 29.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-9b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.52,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'gemma-2-9b-it', column Overall = 52.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-7b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.107,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-Coder-7B-Instruct', column Overall = 10.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-7b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.342,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-7B-Instruct', column Overall = 34.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-7b-instruct-v1-5",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.046,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'deepseek-coder-7b-instruct-v1.5', column Overall = 4.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-7b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.002,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-7B', column Overall = 0.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-8b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.006,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Llama-8B', column Overall = 0.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-7b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.226,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-7B-Instruct', column Overall = 22.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-coder-9b-chat",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.039,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Yi-Coder-9B-Chat', column Overall = 3.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-9b-chat",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.432,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Yi-1.5-9B-Chat', column Overall = 43.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-8b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.227,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'granite-3.0-8b-instruct', column Overall = 22.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-14b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.373,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-Coder-14B-Instruct', column Overall = 37.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-14b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.571,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-14B-Instruct', column Overall = 57.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-v2-lite-instruct",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.062,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-Coder-V2-Lite-Instruct', column Overall = 6.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-v2-lite-chat",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.069,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-V2-Lite-Chat', column Overall = 6.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-14b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.532,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-14B', column Overall = 53.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-10b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.12,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-10B-Instruct', column Overall = 12.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-13b-v1-2",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.001,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'WizardLM-13B-V1.2', column Overall = 0.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-medium-128k-instruct",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.43,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Phi-3-medium-128k-instruct', column Overall = 43.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-4",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.448,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'phi-4', column Overall = 44.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-nemo-instruct-2407",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.29,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Mistral-Nemo-Instruct-2407', column Overall = 29.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-27b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.587,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'gemma-2-27b-it', column Overall = 58.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-32b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.643,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-Coder-32B-Instruct', column Overall = 64.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-32b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.676,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-32B-Instruct', column Overall = 67.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwq-32b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.638,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'QwQ-32B', column Overall = 63.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-33b-instruct",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.032,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'deepseek-coder-33b-instruct', column Overall = 3.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-32b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.646,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-32B', column Overall = 64.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-34b-chat",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.246,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Yi-1.5-34B-Chat', column Overall = 24.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-small-2409",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.316,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Mistral-Small-Instruct-2409', column Overall = 31.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-34b-code-instruct-8k",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.207,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'granite-34b-code-instruct-8k', column Overall = 20.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "internlm2-5-20b-chat",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.553,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'internlm2_5-20b-chat', column Overall = 55.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.69,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.1-70B-Instruct', column Overall = 69.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-3-70b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.666,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.3-70B-Instruct', column Overall = 66.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-72b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.583,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-72B-Instruct', column Overall = 58.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-llm-67b-chat",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.378,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'deepseek-llm-67b-chat', column Overall = 37.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-70b",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.473,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Llama-70B', column Overall = 47.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-70b-v1-0",
+   "bench": "codereviewqa-clh-invariant-accuracy",
+   "score": 0.192,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 11 'Change Localisation (Hard) - ... Invariant Accuracy (%)', row 'WizardLM-70B-V1.0', column Overall = 19.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
    "model": "llama-3-2-3b",
    "bench": "codereviewqa-sih-invariant-accuracy",
    "score": 0.076,
@@ -3050,6 +3990,726 @@
    "by": "independent",
    "date": "2025-05-31",
    "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.2-3B-Instruct', column Overall = 7.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-2-1b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.008,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.2-1B-Instruct', column Overall = 0.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-3b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.452,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-3B-Instruct', column Overall = 45.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-1-5b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.378,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-1.5B-Instruct', column Overall = 37.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-1-3b-instruct",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'deepseek-coder-1.3b-instruct', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-1.5B', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-3b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.195,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-3B-Instruct', column Overall = 19.5 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-1b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.0,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-1B-Instruct', column Overall = 0.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-mini-128k-instruct",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.459,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Phi-3-mini-128k-instruct', column Overall = 45.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-2b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.142,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'granite-3.0-2b-instruct', column Overall = 14.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "exaone-3-5-2-4b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.267,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'EXAONE-3.5-2.4B-Instruct', column Overall = 26.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.543,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.1-8B-Instruct', column Overall = 54.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-9b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.496,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'gemma-2-9b-it', column Overall = 49.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-7b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.552,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-Coder-7B-Instruct', column Overall = 55.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-7b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.516,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-7B-Instruct', column Overall = 51.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-7b-instruct-v1-5",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.114,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'deepseek-coder-7b-instruct-v1.5', column Overall = 11.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-7b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.001,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-7B', column Overall = 0.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-8b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.068,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Llama-8B', column Overall = 6.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-7b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.353,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-7B-Instruct', column Overall = 35.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-coder-9b-chat",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.33,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Yi-Coder-9B-Chat', column Overall = 33.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-9b-chat",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.589,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Yi-1.5-9B-Chat', column Overall = 58.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-3-0-8b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.253,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'granite-3.0-8b-instruct', column Overall = 25.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-14b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.562,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-Coder-14B-Instruct', column Overall = 56.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-14b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.819,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-14B-Instruct', column Overall = 81.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-v2-lite-instruct",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.128,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-Coder-V2-Lite-Instruct', column Overall = 12.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-v2-lite-chat",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.205,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-V2-Lite-Chat', column Overall = 20.5 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-14b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.668,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-14B', column Overall = 66.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "falcon3-10b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.18,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Falcon3-10B-Instruct', column Overall = 18.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-13b-v1-2",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.046,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'WizardLM-13B-V1.2', column Overall = 4.6 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-3-medium-128k-instruct",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.508,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Phi-3-medium-128k-instruct', column Overall = 50.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "phi-4",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.775,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'phi-4', column Overall = 77.5 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-nemo-instruct-2407",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.528,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Mistral-Nemo-Instruct-2407', column Overall = 52.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "gemma-2-27b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.657,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'gemma-2-27b-it', column Overall = 65.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-coder-32b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.857,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-Coder-32B-Instruct', column Overall = 85.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-32b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.895,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-32B-Instruct', column Overall = 89.5 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwq-32b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.772,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'QwQ-32B', column Overall = 77.2 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-coder-33b-instruct",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.09,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'deepseek-coder-33b-instruct', column Overall = 9.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-32b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.764,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Qwen-32B', column Overall = 76.4 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "yi-1-5-34b-chat",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.57,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Yi-1.5-34B-Chat', column Overall = 57.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "mistral-small-2409",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.601,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Mistral-Small-Instruct-2409', column Overall = 60.1 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "granite-34b-code-instruct-8k",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.193,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'granite-34b-code-instruct-8k', column Overall = 19.3 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "internlm2-5-20b-chat",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.707,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'internlm2_5-20b-chat', column Overall = 70.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.767,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.1-70B-Instruct', column Overall = 76.7 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "llama-3-3-70b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.78,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Llama-3.3-70B-Instruct', column Overall = 78.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "qwen2-5-72b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.909,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'Qwen2.5-72B-Instruct', column Overall = 90.9 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-llm-67b-chat",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.47,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'deepseek-llm-67b-chat', column Overall = 47.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "deepseek-r1-distill-llama-70b",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.688,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'DeepSeek-R1-Distill-Llama-70B', column Overall = 68.8 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "wizardlm-70b-v1-0",
+   "bench": "codereviewqa-sih-invariant-accuracy",
+   "score": 0.49,
+   "source": "https://arxiv.org/html/2503.16167v2",
+   "source_id": "paper-2503.16167v2-codereviewqa",
+   "by": "independent",
+   "date": "2025-05-31",
+   "note": "CodeReviewQA paper (arXiv 2503.16167v2, 31 May 2025) appendix Table 13 'Solution Identification (Hard) - ... Invariant Accuracy (%)', row 'WizardLM-70B-V1.0', column Overall = 49.0 (percent, stored /100). Authors' own zero-shot, greedy (temperature 0) run of 72 Hugging Face models with default vLLM (Appendix E-F); the Hugging Face repo is given in the paper's Table 7 and matches the catalogue repo exactly."
+  },
+  {
+   "model": "claude-3-7-sonnet-20250219",
+   "bench": "think-bench-accuracy",
+   "score": 0.9425,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Claude-3-7-sonnet', column Accuracy = 94.25% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "claude-3-7-sonnet-20250219",
+   "bench": "think-bench-efficiency",
+   "score": 0.4961,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Claude-3-7-sonnet', column Efficiency = 49.61% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "think-bench-accuracy",
+   "score": 0.6291,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-1.5b', column Accuracy = 62.91% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-1-5b",
+   "bench": "think-bench-efficiency",
+   "score": 0.3714,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-1.5b', column Efficiency = 37.14% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-7b",
+   "bench": "think-bench-accuracy",
+   "score": 0.6851,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-7b', column Accuracy = 68.51% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-7b",
+   "bench": "think-bench-efficiency",
+   "score": 0.4953,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-7b', column Efficiency = 49.53% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-14b",
+   "bench": "think-bench-accuracy",
+   "score": 0.7018,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-14b', column Accuracy = 70.18% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-14b",
+   "bench": "think-bench-efficiency",
+   "score": 0.507,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-14b', column Efficiency = 50.7% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-32b",
+   "bench": "think-bench-accuracy",
+   "score": 0.7593,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-32b', column Accuracy = 75.93% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "deepseek-r1-distill-qwen-32b",
+   "bench": "think-bench-efficiency",
+   "score": 0.5262,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Deepseek-r1-distill-qwen-32b', column Efficiency = 52.62% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "qwen3-235b-a22b",
+   "bench": "think-bench-accuracy",
+   "score": 0.9491,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Qwen3-235b-a22b', column Accuracy = 94.91% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "qwen3-235b-a22b",
+   "bench": "think-bench-efficiency",
+   "score": 0.4614,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Qwen3-235b-a22b', column Efficiency = 46.14% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "qwq-plus",
+   "bench": "think-bench-accuracy",
+   "score": 0.896,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Qwq-plus', column Accuracy = 89.6% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "qwq-plus",
+   "bench": "think-bench-efficiency",
+   "score": 0.4458,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Qwq-plus', column Efficiency = 44.58% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "grok-3-mini-beta",
+   "bench": "think-bench-accuracy",
+   "score": 0.9185,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Grok-3-mini-beta', column Accuracy = 91.85% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "grok-3-mini-beta",
+   "bench": "think-bench-efficiency",
+   "score": 0.6169,
+   "source": "https://arxiv.org/html/2505.22113v1",
+   "source_id": "paper-2505.22113v1-thinkbench",
+   "by": "independent",
+   "date": "2025-05-28",
+   "note": "THINK-Bench paper (arXiv 2505.22113v1, 28 May 2025) Table 2 'Evaluation of Nine Metrics on CoT and Efficiency in Think-Bench', row 'Grok-3-mini-beta', column Efficiency = 61.69% (stored /100). Authors' own evaluation of eleven reasoning models (Sec. 4.1); judge Claude 3.7 Sonnet. The paper notes the DeepSeek distilled models and ERNIE-X1-Turbo sometimes emit reasoning without a final answer, which lowers their accuracy. Rows for DeepSeek-R1 (revision unstated), GLM-Z1-Air and ERNIE-X1-Turbo-32K (not catalogued) are not recorded."
+  },
+  {
+   "model": "bloom-7b1",
+   "bench": "copa",
+   "score": 0.532,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'bloom-7b', Accuracy = 0.532. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "bloom",
+   "bench": "copa",
+   "score": 0.576,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'bloom-176b', Accuracy = 0.576. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "falcon-7b",
+   "bench": "copa",
+   "score": 0.538,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'falcon-7b', Accuracy = 0.538. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "falcon-40b",
+   "bench": "copa",
+   "score": 0.844,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'falcon-40b', Accuracy = 0.844. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "llama-2-7b",
+   "bench": "copa",
+   "score": 0.826,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'llama2-7b', Accuracy = 0.826. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "llama-2-13b",
+   "bench": "copa",
+   "score": 0.85,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'llama2-13b', Accuracy = 0.85. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "llama-2-70b",
+   "bench": "copa",
+   "score": 0.976,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'llama2-70b', Accuracy = 0.976. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "mpt-7b",
+   "bench": "copa",
+   "score": 0.656,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'mpt-7b', Accuracy = 0.656. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "phi-2",
+   "bench": "copa",
+   "score": 0.902,
+   "source": "https://arxiv.org/html/2410.14897v1",
+   "source_id": "paper-2410.14897v1-gencopa",
+   "by": "independent",
+   "date": "2024-10-18",
+   "note": "'From Test-Taking to Test-Making' (arXiv 2410.14897v1) Table 3 'Answering accuracy on COPA test set', row 'phi-2', Accuracy = 0.902. Authors' own run (Sec. 5): 4-shot prompt (Table 2 template, four items from the COPA development set), greedy decoding, Hugging Face inference endpoints; checkpoints named in the Sec. 4 footnotes (bigscience/bloom and bloom-7b1, tiiuae/falcon-7b and 40b, meta-llama/Llama-2-7b/13b/70b, mosaicml/mpt-7b, microsoft/phi-2). COPA test set (500 items). Mistral-7B (v0.3 base), MPT-30B are not catalogue checkpoints and are not recorded."
   }
  ],
  "benchmarks": [
@@ -3452,6 +5112,48 @@
    ],
    "chance": 0,
    "benchmark_family": "codereviewqa"
+  },
+  {
+   "id": "think-bench-accuracy",
+   "name": "THINK-Bench final-answer accuracy (reasoning models)",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2505.22113v1#S4.T2",
+   "task": "math",
+   "setup": {
+    "url": "https://arxiv.org/html/2505.22113v1",
+    "version": "arXiv:2505.22113v1",
+    "metric": "Accuracy column of Table 2: share of questions answered correctly (judge-checked) by the reasoning model, stored as a fraction.",
+    "protocol": "THINK-Bench: multidisciplinary reasoning questions with annotated key reasoning steps; eleven reasoning models queried once per question; Claude 3.7 Sonnet as step-matching and answer judge.",
+    "limitations": "Empty or answer-less outputs (common for DeepSeek distilled models) count as wrong; single judge model."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "math"
+   ],
+   "chance": 0,
+   "benchmark_family": "think-bench"
+  },
+  {
+   "id": "think-bench-efficiency",
+   "name": "THINK-Bench reasoning efficiency (first-correct tokens / total reasoning tokens)",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2505.22113v1#S4.T2",
+   "task": "math",
+   "setup": {
+    "url": "https://arxiv.org/html/2505.22113v1",
+    "version": "arXiv:2505.22113v1",
+    "metric": "Efficiency column of Table 2: ratio of tokens up to the first correct reasoning to all reasoning tokens, stored as a fraction (higher = less overthinking).",
+    "protocol": "As THINK-Bench accuracy; efficiency is computed on the CoT trace, so it is only comparable among reasoning models.",
+    "limitations": "Depends on the judge's identification of the first correct step."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "math"
+   ],
+   "chance": 0,
+   "benchmark_family": "think-bench"
   }
  ],
  "ledger": [
@@ -3468,7 +5170,7 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "terms_url": "https://arxiv.org/abs/2411.19146v5",
    "quote": "arXiv abstract page for 2411.19146v5 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML version prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
-   "attribution": "Akhiad Bercovich et al. (NVIDIA), Puzzle: Distillation-Based NAS for Inference-Optimized LLMs, arXiv:2411.19146v5, CC BY 4.0. Table 2 non-chat rows. No endorsement.",
+   "attribution": "Akhiad Bercovich et al., Puzzle: Distillation-Based NAS for Inference-Optimized LLMs, arXiv:2411.19146v5, CC BY 4.0. Table 2 non-chat rows. No endorsement.",
    "verdict": "allowed",
    "checked": "2026-10-08",
    "evidence_url": "https://arxiv.org/abs/2411.19146v5",
@@ -3528,7 +5230,7 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "terms_url": "https://arxiv.org/abs/2405.18750v2",
    "quote": "arXiv abstract page for 2405.18750v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
-   "attribution": "Jiachen Li, Weixi Feng, Tsu-Jui Fu, Xinyi Wang, Sugato Basu, Wenhu Chen, William Yang Wang (UC Santa Barbara / Google), T2V-Turbo, arXiv:2405.18750v2, CC BY 4.0. No endorsement.",
+   "attribution": "Jiachen Li, Weixi Feng, Tsu-Jui Fu, Xinyi Wang et al., T2V-Turbo, arXiv:2405.18750v2, CC BY 4.0. No endorsement.",
    "verdict": "allowed",
    "checked": "2026-10-08",
    "evidence_url": "https://arxiv.org/abs/2405.18750v2",
@@ -3586,7 +5288,7 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "terms_url": "https://arxiv.org/abs/2306.02561v3",
    "quote": "arXiv abstract page for 2306.02561v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
-   "attribution": "Dongfu Jiang, Xiang Ren, Bill Yuchen Lin, LLM-Blender, ACL 2023, arXiv:2306.02561v3, CC BY 4.0. No endorsement.",
+   "attribution": "Dongfu Jiang, Xiang Ren, Bill Yuchen Lin, LLM-Blender, arXiv:2306.02561v3, CC BY 4.0. No endorsement.",
    "verdict": "allowed",
    "checked": "2026-10-08",
    "evidence_url": "https://arxiv.org/abs/2306.02561v3",
@@ -3702,7 +5404,7 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "terms_url": "https://arxiv.org/abs/2504.07072v2",
    "quote": "arXiv abstract page for 2504.07072v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
-   "attribution": "Cohere Labs and collaborators, Kaleidoscope, arXiv:2504.07072v2, CC BY 4.0. No endorsement.",
+   "attribution": "Israfel Salazar et al., Kaleidoscope, arXiv:2504.07072v2, CC BY 4.0. No endorsement.",
    "verdict": "allowed",
    "checked": "2026-10-08",
    "evidence_url": "https://arxiv.org/abs/2504.07072v2",
@@ -3722,7 +5424,7 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "terms_url": "https://arxiv.org/abs/2404.16164v1",
    "quote": "arXiv abstract page for 2404.16164v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
-   "attribution": "Authors of arXiv:2404.16164 (Amazon / UCLA / CMU), CC BY 4.0. No endorsement.",
+   "attribution": "Authors of arXiv:2404.16164, CC BY 4.0. No endorsement.",
    "verdict": "allowed",
    "checked": "2026-10-08",
    "evidence_url": "https://arxiv.org/abs/2404.16164v1",
@@ -3753,6 +5455,46 @@
    "evidence_url": "https://arxiv.org/abs/2503.16167v2",
    "icon": "arxiv.org",
    "scope": "Overall columns of the ACR exact-match table (Table 8) and the CTR, CL-hard and SI-hard invariant-accuracy tables (Tables 9, 11, 13) for the 48 evaluated models whose Hugging Face repo equals a catalogue repo. Not used: easy CL/SI variants, per-language columns, PPA, advanced-prompting experiments, unmatched models."
+  },
+  {
+   "action": "new",
+   "id": "paper-2505.22113v1-thinkbench",
+   "name": "THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models (arXiv:2505.22113v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2505.22113v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2505.22113v1",
+   "quote": "arXiv abstract page for 2505.22113v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Authors of arXiv:2505.22113 (THINK-Bench), CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2505.22113v1",
+   "icon": "arxiv.org",
+   "scope": "Table 2 Accuracy and Efficiency columns for eight reasoning models matching catalogue entries. Not used: DeepSeek-R1 (revision unstated), uncatalogued models, recall/precision/reflection/token columns."
+  },
+  {
+   "action": "new",
+   "id": "paper-2410.14897v1-gencopa",
+   "name": "From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items (arXiv:2410.14897v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2410.14897v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2410.14897v1",
+   "quote": "arXiv abstract page for 2410.14897v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Melissa Roemmele and Andrew S. Gordon, arXiv:2410.14897v1, CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2410.14897v1",
+   "icon": "arxiv.org",
+   "scope": "Table 3 COPA test accuracy for nine models matching catalogue checkpoints. Not used: Mistral-7B-v0.3 and MPT-30B (not catalogued), Gen-COPA tables."
   }
  ],
  "models": [
@@ -3927,7 +5669,813 @@
    ]
   }
  ],
- "gaps": [],
+ "gaps": [
+  {
+   "model": "recraft-v4",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor benchmark tables found (no Recraft score table found). LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "wan-2-6-t2i",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No Alibaba score table found for Wan 2.6 images. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "ideogram-4",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Already has LMArena and Rapidata; no vendor table. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "cosmos3-super-text2image",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 5,
+   "why": "Reached 5: three extra columns of the Cosmos 3 report's Table 11 (CVTG-500L PNED, CVTG-102ch PNED, HPSv3) added beside the imported UniGenBench column."
+  },
+  {
+   "model": "grok-build-0-1",
+   "category": "llm",
+   "counted_before": 0,
+   "counted_after": 0,
+   "why": "x.ai/news/grok-build-0-1 (already a dead end) carries no score table; no third-party CC BY paper names it yet."
+  },
+  {
+   "model": "nova-2-omni",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The Nova 2 technical report is still unreachable (404, no capture); AWS pages carry no score tables; arXiv search found no CC BY paper naming Nova 2 Omni."
+  },
+  {
+   "model": "ltx-2-5",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "LTX-2 paper (CC BY) holds only a speed table; Lightricks cards carry no scores; PAWBench (CC BY) averages are over each model's own passing scenes (not comparable). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "ling-3-0-flash",
+   "category": "llm",
+   "counted_before": 0,
+   "counted_after": 0,
+   "why": "15 own rows exist but its card's only own sibling is Ring-2.6-1T, which would form an unanchored island (as in pass 3). No CC BY paper evaluates Ling 3.0 yet."
+  },
+  {
+   "model": "k2-horizon-7b",
+   "category": "llm",
+   "counted_before": 0,
+   "counted_after": 12,
+   "why": "Reached 12: the card's anti-doom-loop table gives K2-Horizon 3.7B and 7B 'after' columns (proposed comparison-only k2-horizon-3-7b). NOTE the existing @036114c rows are the earlier pre-FTPO checkpoint ('7B before'); IFM promoted the FTPO checkpoint to main on 2026-10-01."
+  },
+  {
+   "model": "mage-flow-base",
+   "category": "image",
+   "counted_before": 9,
+   "counted_after": 9,
+   "why": "Input listing artefact: toCells already counts 9 results (3-model Microsoft runs on 9 benchmarks); no pass-4 work needed."
+  },
+  {
+   "model": "mage-flow",
+   "category": "image",
+   "counted_before": 9,
+   "counted_after": 9,
+   "why": "Input listing artefact: toCells already counts 9 results; no pass-4 work needed."
+  },
+  {
+   "model": "mage-flow-turbo",
+   "category": "image",
+   "counted_before": 9,
+   "counted_after": 9,
+   "why": "Input listing artefact: toCells already counts 9 results; no pass-4 work needed."
+  },
+  {
+   "model": "seedance-1-0-pro-fast",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only HumanScore (CC BY) names the Fast tier; ByteDance reports show Seedance 1.0 charts without Fast. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "pixverse-v5-5",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only HumanScore names v5.5 (AdSpark and others say v5/v6). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kandinsky-5-0-pro",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Kandinsky 5.0 report (CC BY) gives human side-by-side results as figures only; the GitHub README (MIT) has timing tables only. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kling-image-2-1",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No Kuaishou score table found. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "reve-2-0",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Reve: no vendor score table found. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "krea-2-large",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Krea 2 technical report (krea.ai/blog/krea-2-technical-report) and the Hugging Face card contain no benchmark numbers. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "krea-2-medium",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Krea 2 technical report and card contain no benchmark numbers. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "krea-2-turbo",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Krea 2 technical report and card contain no benchmark numbers. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "hunyuanimage-3-0-instruct",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Tencent card shows SSAE/GSB as images; MultiBind (2603.21937, CC BY) runs it but prints per-dimension success rates only (no overall), so no single score was taken."
+  },
+  {
+   "model": "uni-1-1",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Luma's launch RISEBench numbers are for Uni-1, not 1.1, and exclude siblings. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "wan-2-6-image",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "wan-2-5-i2i-preview",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "kling-image-o1",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "wan-2-5-t2i-preview",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "recraft-v4-1-pro",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "recraft-v4-1-utility-pro",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Already has LMArena and Rapidata; no vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "recraft-v4-1-flash",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No vendor scores. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "runway-gen-4-image",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Runway: no vendor score table found. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "lucid-origin",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Leonardo: no vendor score table found. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "kling-o1-pro",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "No vendor tables. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kandinsky-5-0-t2v-lite",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "See Kandinsky 5.0 Pro: figures only. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kling-2-1-master",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "No vendor tables; Kling 2.1 appears in papers as 'Kling 2.1' with no tier. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kling-2-1-standard",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "As Kling 2.1 Master. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "vidu-q2-turbo",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Papers name 'Vidu Q2' without the Turbo/Pro tier. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "runway-gen-4-turbo",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "No Runway score table found; Skyra and CoCoVideo (CC BY) are AI-video detection data sets, not quality scores. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kling-o3-pro",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Already has two runs; no further multi-model table naming O3 Pro. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "show-o2-7b",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 4,
+   "why": "Reached 4 (XTC-Bench, plus the Show-o2 paper's GenEval and DPG-Bench rows as vendor-reported figures)."
+  },
+  {
+   "model": "show-o2-1-5b-hq",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The Show-o2 paper's 1.5B rows are the base 1.5B model (proposed comparison-only show-o2-1-5b), not the later HQ checkpoint; the HQ card has no scores."
+  },
+  {
+   "model": "blip3o-8b",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 3,
+   "why": "Reached 3 through XTC-Bench (Overall Gen.)."
+  },
+  {
+   "model": "show-o-demo-512",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "XTC-Bench and the Show-o2 paper print plain 'Show-o' with no resolution/checkpoint, so it cannot be tied to the 512 demo checkpoint. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "lumina-image-2",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Lumina-Image 2.0 paper has default arXiv licence and no catalogued own sibling; Lumina-DiMOO's tables omit it. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "emu3-5",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The Emu3.5 report (default arXiv licence) prints only 'Emu3.5 (Ours)' without separating Emu3.5 from Emu3.5-Image, and the GitHub README has no tables. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "emu3-5-image",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "As Emu3.5. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "vila-u-7b-256",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "VILA-U rows in other papers are copies of its own paper. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "ltx-2-19b-distilled",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "LTX-2 card/paper carry no scores for the distilled variant. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "hailuo-01",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "No MiniMax score table found; Omni-Video 2 lists 'MiniMax-Video-01' with copied VBench values. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "open-sora-2-0",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Open-Sora 2.0 report/repo show VBench as charts only; VC-Bench (CC BY) runs it only after adapting every model with the authors' video-connection framework; VideoASMR-Bench measures detector fooling, not quality. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "cosmos-1-0-diffusion-7b-text2world",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 3,
+   "why": "Reached 3: Cosmos platform paper (CC BY) Table 19 with three proposed comparison-only NVIDIA siblings."
+  },
+  {
+   "model": "wan-2-6-flash",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "VWG-Bench (already used) also prints MME-CoF and V-ReasonBench rows for it, but the Wan2.2/2.5 rows beside it do not name a checkpoint, so they cannot form a run. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "wan-2-1-1-3b",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 3,
+   "why": "Reached 3: Wan technical report VBench rows for 1.3B and 14B as vendor-reported figures."
+  },
+  {
+   "model": "longcat-image",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The LongCat report's competitor rows are not stated to be the authors' runs (several equal other papers' values). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "hunyuanimage-2-1",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Tencent card gives SSAE/GSB as images. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "qwq-plus",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 3,
+   "why": "Reached 3 through THINK-Bench accuracy and efficiency (CC BY)."
+  },
+  {
+   "model": "eurus-2-7b-prime",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 4,
+   "why": "Reached 4 through the PRIME card table (proposed comparison-only Eurus-2-7B-SFT)."
+  },
+  {
+   "model": "sd-1-2",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Only the GenEval/EvalMuse runs exist; the HPSv2 and HEIM data are already used and omit SD 1.2. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "sdxl-0-9",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "GPT-ImgEval and other papers copy WISE values for SDXL 0.9. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "ldm-text2im-large",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only HPSv2 lists it. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "vq-diffusion-ithq",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Other papers label it plain 'VQ-Diffusion' without a checkpoint. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "playground-v2",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The Playground v2 card gives MJHQ-30K FID beside SDXL (another lab) only, leaving at most two own catalogue models; GenAI-Arena is already used. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "stable-cascade",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "F-Bench (CC BY) has per-model MOS only in figures; GenAI-Arena already used. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "sdxl-lightning-4-step",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Its COCO FID is already used from the ByteDance paper. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "lcm-dreamshaper-v7",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "LCM and LCM-LoRA papers carry arXiv default licence and report only against other labs' models. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "ssd-1b",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "EvalMuse (used) is its only table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "lcm-ssd-1b",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "EvalMuse (used) is its only table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "ltx-video-0-9",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "LTX-Video paper (CC BY) human-survey win rates cover LTX-Video 0.9, CogVideoX-2B, PyramidFlow and Open-Sora Plan, but the PyramidFlow checkpoint (SD3 or miniFLUX) and the Open-Sora Plan version are not stated, leaving only two catalogue models. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "open-sora-1-1",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Open-Sora repo docs carry VBench for v1.0 and v1.2 only. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "open-sora-plan-1-3",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Open-Sora Plan docs (MIT) carry VBench for v1.5.0 only. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "open-sora-plan-1-3-i2v",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "As Open-Sora Plan 1.3 T2V. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "pyramid-flow-sd3",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Pyramid Flow paper (CC BY) rows copy the VBench leaderboard; third-party papers do not state SD3 or miniFLUX. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "t2v-turbo-v2",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "The T2V-Turbo paper (v1 model) adds only t2v-turbo-vc2; T2V-Turbo-v2 has its own paper (already used). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "t2v-turbo-vc2",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 3,
+   "why": "Reached 3 (T2V-Turbo paper VBench rows with proposed comparison-only T2V-Turbo (MS))."
+  },
+  {
+   "model": "gpt-1",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only the Portuguese leaderboard and PROST list it; the original paper is not on arXiv. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "bloom",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 2,
+   "why": "Reached 2 (Gen-COPA paper, COPA 4-shot) beside the BLOOM paper's HumanEval; Dr.Academy (CC BY) runs 'BLOOM-176B' but its other rows lack checkpoints and BLOOM-7B is not tied to bloom-7b1. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "olmo-7b-twin-2t",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Appears in no table of the OLMo paper or card. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "fastchat-t5-3b",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Polyrating (a re-fit of the same Arena votes) would add a third result but is held for the owner (see held_for_owner). Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "gpt4all-13b-snoozy",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "As FastChat-T5: only the held Polyrating re-fit adds a third result. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "stablelm-tuned-alpha-7b",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 3,
+   "why": "Reached 3 through LLM-Blender MixInstruct GPT-Rank (checkpoint identity from the MixInstruct card)."
+  },
+  {
+   "model": "falcon-180b-chat",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 3,
+   "why": "Reached 3 through the Premium2k factual-recall paper (EM zero-shot and 10-shot)."
+  },
+  {
+   "model": "dolphin-2-2-1-mistral-7b",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Only the held Polyrating re-fit (same Arena votes) would add a third result. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "snowflake-arctic-instruct",
+   "category": "llm",
+   "counted_before": 4,
+   "counted_after": 7,
+   "why": "Reached 7 through the Vectara HHEM leaderboard (three README snapshots)."
+  },
+  {
+   "model": "llama-3-1-nemotron-51b",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 6,
+   "why": "Reached 6 through the Puzzle paper (CC BY): Table 2 rows beside Llama-3.1-70B-Instruct."
+  },
+  {
+   "model": "aya-vision-32b",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 3,
+   "why": "Reached 3 through VMMU (CC BY) and Kaleidoscope (CC BY)."
+  },
+  {
+   "model": "qwen3-max-preview",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 3,
+   "why": "Reached 3 with the Vectara HHEM old-dataset snapshot; Alibaba's Qwen3-Max blog table is for the final Instruct, not the preview."
+  },
+  {
+   "model": "qwen-image-2-0-pro-2026-06-22",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "The Qwen-Image-2.0 report (CC BY) has no benchmark table in text form (VAE metrics only). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "hunyuan-vision-1-5-thinking",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "No Tencent score table found for it. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "kat-coder-pro-v1",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Kwaipilot's blog states 73.4% SWE-bench Verified for 'KAT-Coder' (not tied to the Pro V1 snapshot) and KAT-Dev cards one figure each, so no run with two catalogue models exists. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "p-image",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Pruna: no vendor score table found. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "p-image-edit",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Pruna: no vendor score table found. LMArena (used) is its main run; Rapidata Benchmark.ai (used earlier) has four sub-leaderboards that stay unimported because they are the same votes (benchmark definition says so); datapoint cards re-checked, unchanged."
+  },
+  {
+   "model": "ling-flash-2-0",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 2,
+   "why": "Reached 2 (Medmarks-V win rate, CC BY); the Ling/Ring-flash cards show their benchmark charts as images only."
+  },
+  {
+   "model": "ring-flash-2-0",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Card charts are images; Medmarks does not include Ring-flash. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "step-3",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Step-3 card/report have no score table beside a catalogued StepFun sibling. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "ovis-image-7b",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The Ovis-Image card tables are other labs' rows (competitors) beside a single own model; paper has default licence. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "sd-1-3",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only GenEval lists it. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "lumina-dimoo",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "UniG2U-Bench (CC BY) lists it in an architecture table; Dynin-Omni's tables were not usable for generation scores. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "onecat-3b",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only Edit-Compass (used) names it. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "chronoedit-14b",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Only Edit-Compass (used) names it. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "nova-0-6b-t2v",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "AIGV-Assessor (CC BY) lists it as a data source without per-model scores. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "lvdm-t2v",
+   "category": "video",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "AIGV-Assessor (CC BY) lists it as a data source without per-model scores. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "wan-2-2-i2v-plus",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Target-Bench (used) is its only table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "wan-2-2-i2v-flash",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Target-Bench (used) is its only table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "wan-2-1-i2v-plus",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Target-Bench (used) is its only table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "wan-2-1-i2v-turbo",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Target-Bench (used) is its only table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "deepseek-coder-7b-base-v1-5",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "Only EvoEval/HumanEval (used) name the v1.5 base; the DeepSeek card has one row. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "tinyllama-1-1b-chat-v1-0",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "The frame/symbol-grounding paper (CC BY) lists v1.0 among 13 models on a small hand-scored set whose scale was not verified; Can-AI-Code has junior-v2 results for it but no 3-model aggregate in the repo. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "hermes-3-llama-3-2-3b",
+   "category": "llm",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Card prints lm-eval tables for the 3B only; the 8B/70B cards use images. Pass 4 scan: exact-name table matching over about 4,500 CC BY/BY-SA cs.CL papers (2024-03 to 2026-10-07); nothing usable for this checkpoint beyond what was imported."
+  },
+  {
+   "model": "exaone-3-5-2-4b",
+   "category": "llm",
+   "counted_before": 2,
+   "counted_after": 6,
+   "why": "Reached 6 through CodeReviewQA (CC BY); the Korean HRMCR appendix scores are zero (below the FLOPs threshold)."
+  },
+  {
+   "model": "kandinsky-2-1",
+   "category": "image",
+   "counted_before": 0,
+   "counted_after": 0,
+   "why": "Kandinsky 2.1 card/paper print FID for 2.1 only (single run). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kandinsky-2-2",
+   "category": "image",
+   "counted_before": 2,
+   "counted_after": 2,
+   "why": "No further multi-model table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "kandinsky-3",
+   "category": "image",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "Kandinsky 3 is only compared against other labs' models in its report (already used). Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "stable-video-diffusion",
+   "category": "video",
+   "counted_before": 0,
+   "counted_after": 0,
+   "why": "The SVD paper is a dead end (pass 2); other papers call it SVD without frames, or use it as an I2V baseline in detection data. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "stable-video-diffusion-xt",
+   "category": "video",
+   "counted_before": 0,
+   "counted_after": 0,
+   "why": "As SVD. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "animatediff-v1-5-2",
+   "category": "video",
+   "counted_before": 0,
+   "counted_after": 0,
+   "why": "AnimateDiff paper has default licence and no per-model score table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  },
+  {
+   "model": "cogvideo-9b",
+   "category": "video",
+   "counted_before": 1,
+   "counted_after": 1,
+   "why": "CogVideo (2022) appears in FETV (used) and AIGV-Assessor lists; no further table. Pass 4 scan: exact-name table matching over about 2,400 CC BY/BY-SA cs.CV arXiv papers (2025-09 to 2026-10-07) and about 1,700 from 2023-06 to 2025-08, plus 1,800 recent cs.CL papers; no table holds an authors' run of this checkpoint beside two other catalogue models."
+  }
+ ],
  "checked": [
   {
    "source": "https://arxiv.org/abs/2411.19146v5 (Puzzle, CC BY 4.0)",
@@ -3991,7 +6539,87 @@
   },
   {
    "source": "https://arxiv.org/abs/2503.16167v2 (CodeReviewQA, CC BY 4.0)",
-   "outcome": "51 rows of four new benchmarks across 48 catalogue models, identities from the paper's Hugging Face column. exaone-3-5-2-4b 2 -> 6."
+   "outcome": "192 rows of four new benchmarks across 48 catalogue models, identities from the paper's Hugging Face column. exaone-3-5-2-4b 2 -> 6."
+  },
+  {
+   "source": "https://arxiv.org/abs/2505.22113v1 (THINK-Bench, CC BY 4.0)",
+   "outcome": "16 rows of two new benchmarks (accuracy, efficiency) for eight reasoning models. qwq-plus 1 -> 3."
+  },
+  {
+   "source": "https://arxiv.org/abs/2410.14897v1 (Gen-COPA, CC BY 4.0)",
+   "outcome": "9 rows on the existing COPA benchmark (4-shot, test set). bloom 1 -> 2."
+  },
+  {
+   "source": "https://www.krea.ai/blog/krea-2-technical-report and huggingface.co/krea/Krea-2-Turbo",
+   "outcome": "Technical report and card read: architecture, data and infrastructure only; no benchmark numbers."
+  },
+  {
+   "source": "https://github.com/kandinskylab/kandinsky-5 README (MIT)",
+   "outcome": "Tables are inference-time grids only; quality results are figures. arXiv 2511.14993 (CC BY) prints Kandinsky 5.0 side-by-side human results as stacked-bar figures only."
+  },
+  {
+   "source": "arXiv 2601.03233 (LTX-2, CC BY) and 2501.00103 (LTX-Video, CC BY)",
+   "outcome": "LTX-2: speed table only. LTX-Video Table 2: human-survey win rates for LTX-Video, CogVideoX-2B, PyramidFlow and Open-Sora Plan, but the PyramidFlow checkpoint and the Open-Sora Plan version are not stated, so only two catalogue models are certain (benchmark needs three)."
+  },
+  {
+   "source": "arXiv 2601.19236 (VC-Bench, CC BY)",
+   "outcome": "Not used: all six models are run through the authors' video-connection adaptation of the DiT framework, not as the released checkpoints."
+  },
+  {
+   "source": "arXiv 2512.13281 (VideoASMR-Bench, CC BY)",
+   "outcome": "Not used: a detector-fooling benchmark (VLMs judging whether ASMR clips are real); Open-Sora v2 is run at 256px."
+  },
+  {
+   "source": "arXiv 2603.21937 (MultiBind, CC BY)",
+   "outcome": "Runs HunyuanImage-3.0-Instruct and five catalogue editors but prints success rates per attribute dimension (face, appearance, pose, expression), no overall score. Not used."
+  },
+  {
+   "source": "arXiv 2605.10730 (Qwen-Image-2.0 report, CC BY)",
+   "outcome": "Only VAE reconstruction tables in text form; benchmark results are figures. Not used."
+  },
+  {
+   "source": "arXiv 2501.05712 (HRMCR, CC BY-SA)",
+   "outcome": "EXAONE 3.5 2.4B scores 0 on the final step of both subsets (below the paper's FLOPs threshold), a near-floor row; not used."
+  },
+  {
+   "source": "https://github.com/the-crypt-keeper/can-ai-code (MIT)",
+   "outcome": "Raw per-model ndjson files; TinyLlama-1.1B-Chat-v1.0 fp16 appears, but no aggregate table. Not used."
+  },
+  {
+   "source": "arXiv 2406.11811 (RepLiQA, CC BY), 2408.10947 (Dr.Academy), 2503.20786 (Mobile-MMLU), 2412.15524 (HREF), 2505.16591",
+   "outcome": "Read. RepLiQA/Mobile-MMLU model versions mostly unstated or no thin gain; Dr.Academy's BLOOM-7B and LLaMA2 rows lack checkpoints; HREF and 2505.16591 add no thin model with an exact checkpoint."
+  },
+  {
+   "source": "https://huggingface.co/datasets/Rapidata/text-to-image-human-preference-6M (new revision dde5a48) and image-to-video-realism (70ae7df)",
+   "outcome": "Cards identical to the revisions already imported; no new entries. Component leaderboards remain unimported per the existing benchmark definition."
+  },
+  {
+   "source": "datapointai image-2-video / text-2-video motion / dpo cards",
+   "outcome": "Tables cover Pika vs CogVideoX, Veo 3 Fast, Grok Imagine, Kling 1.5 Pro, Luma Ray 2 only; no thin model."
+  },
+  {
+   "source": "arXiv 2412.13155 (F-Bench), 2609.10787 (Shedding Light), 2406.04485 (GenAI-Arena T5b)",
+   "outcome": "F-Bench and Shedding Light show per-model results as figures; GenAI-Arena video leaderboard repeats the arena data already used."
+  },
+  {
+   "source": "Wan2.1/Wan2.2/Open-Sora/Open-Sora-Plan/Emu3.5/Show-o/Lumina-Image-2.0 GitHub READMEs and docs",
+   "outcome": "No VBench or benchmark tables for thin models (Open-Sora docs: v1.0 and v1.2 only; Open-Sora Plan docs: v1.5 only)."
+  },
+  {
+   "source": "arXiv 2503.21721 (cFreD)",
+   "outcome": "Human rates are the HPDv2 data already used via the HPSv2 README; metric values were computed on those images. Not used."
+  },
+  {
+   "source": "Semantic Scholar snippet search, GitHub code search for thin-model names",
+   "outcome": "Semantic Scholar was rate-limited; GitHub code search returned only copies of Chatbot Arena tables."
+  },
+  {
+   "source": "Kwaipilot KAT-Coder blog and KAT-Dev cards",
+   "outcome": "Blog gives 73.4% for 'KAT-Coder' (not tied to the Pro V1 snapshot) and KAT-Dev cards one figure each; no usable two-model run."
+  },
+  {
+   "source": "Amazon Nova 2 technical report / amazon.science pages",
+   "outcome": "Still HTTP 404; no CC BY paper names Nova 2 Omni."
   }
  ],
  "held_for_owner": {

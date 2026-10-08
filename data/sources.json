@@ -13543,5 +13543,284 @@
     "checked": "2026-10-08",
     "icon": "github.com",
     "scope": "Validation-set overall accuracies from the README table, for catalogue models whose snapshot the paper or the release timing pins."
+  },
+  {
+    "id": "paper-2411.19146v5-puzzle",
+    "name": "Puzzle: Distillation-Based NAS for Inference-Optimized LLMs (arXiv:2411.19146v5)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2411.19146v5"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2411.19146v5",
+    "quote": "arXiv abstract page for 2411.19146v5 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML version prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+    "attribution": "Akhiad Bercovich et al., Puzzle: Distillation-Based NAS for Inference-Optimized LLMs, arXiv:2411.19146v5, CC BY 4.0. Table 2 non-chat rows. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2411.19146v5",
+    "icon": "arxiv.org",
+    "scope": "Table 2 Winogrande, ARC Challenge, MMLU, HellaSwag and GSM8K rows for Llama-3.1-Nemotron-51B-Instruct and Llama-3.1-70B-Instruct. Not used: TruthfulQA (variant not stated), XLSum, chat-prompt rows, Instruct HumanEval (CodeParrot variant), MT-Bench (judge not stated), RULER subset (partial subset of tasks), Nemotron-49B-Base tables (base model not catalogued)."
+  },
+  {
+    "id": "first-party-prime-rl-scores",
+    "name": "PRIME-RL Eurus-2-7B-PRIME model card, Evaluation table (own models)",
+    "kind": "first-party",
+    "match": [
+      "huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md",
+    "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The card's own licence is apache-2.0.",
+    "attribution": "PRIME-RL (Tsinghua/UIUC et al.), Eurus-2-7B-PRIME model card @2f47d19. Own-model rows only.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "huggingface.co",
+    "scope": "Eurus-2-7B-PRIME and Eurus-2-7B-SFT columns for AIME 2024, MATH-500 and Minerva Math. Not used: AMC and OlympiadBench (no benchmark id), Qwen/Llama/GPT-4o columns (other labs)."
+  },
+  {
+    "id": "paper-2405.18750v2-t2vturbo",
+    "name": "T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback (arXiv:2405.18750v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2405.18750v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2405.18750v2",
+    "quote": "arXiv abstract page for 2405.18750v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Jiachen Li, Weixi Feng, Tsu-Jui Fu, Xinyi Wang et al., T2V-Turbo, arXiv:2405.18750v2, CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2405.18750v2",
+    "icon": "arxiv.org",
+    "scope": "Table 1 VBench Total for T2V-Turbo (VC2) and T2V-Turbo (MS) only (authors' own models). Not used: baseline rows (copied leaderboard values), sub-dimension scores."
+  },
+  {
+    "id": "paper-2604.25072v1-xtcbench",
+    "name": "Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models (XTC-Bench, arXiv:2604.25072v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2604.25072v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2604.25072v1",
+    "quote": "arXiv abstract page for 2604.25072v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2604.25072 (XTC-Bench), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2604.25072v1",
+    "icon": "arxiv.org",
+    "scope": "Table 2 'Overall Gen.' for BAGEL-7B, BLIP3-o-8B, Janus-Pro-7B, OmniGen-2 and Show-o2-7B. Not used: Show-o (checkpoint unstated), MMaDA-8B and Tar-7B (not catalogued), GPT/Gemini pipeline rows, understanding and CCTA columns."
+  },
+  {
+    "id": "first-party-showlab-show-o2-paper",
+    "name": "Show Lab Show-o2 paper (arXiv:2506.15564v3), GenEval and DPG-Bench tables (own models)",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/html/2506.15564v3"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://arxiv.org/abs/2506.15564v3",
+    "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The document is a maker-authored technical report (default arXiv licence), recorded under the vendor-reported rule as maker documentation; see report for the open decision.",
+    "attribution": "Show Lab, National University of Singapore, Show-o2: Improved Native Unified Multimodal Models, arXiv:2506.15564v3. Own-model figures only.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "arxiv.org",
+    "scope": "Table 5 GenEval Overall and Table 6 DPG-Bench Overall for Show-o2 1.5B and 7B only. The paper itself carries arXiv's default non-exclusive licence (no open licence claimed); only the makers' own figures for their own models are recorded by hand. Not used: all other methods' rows, Show-o (checkpoint/resolution unstated), OneIG table (no overall printed), VBench tables."
+  },
+  {
+    "id": "paper-2306.02561v3-llmblender",
+    "name": "LLM-Blender: Ensembling Large Language Models with Pairwise Ranking and Generative Fusion (arXiv:2306.02561v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2306.02561v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2306.02561v3",
+    "quote": "arXiv abstract page for 2306.02561v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Dongfu Jiang, Xiang Ren, Bill Yuchen Lin, LLM-Blender, arXiv:2306.02561v3, CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2306.02561v3",
+    "icon": "arxiv.org",
+    "scope": "Table 2 GPT-Rank column for the five LLMs that match catalogue checkpoints (Open Assistant SFT-4 Pythia 12B, ChatGLM-6B, Dolly V2 12B, StableLM-Tuned-Alpha 7B, Flan-T5-XXL). Not used: other candidates, oracle/ranker/ensemble rows, BERTScore/BARTScore/BLEURT/threshold columns."
+  },
+  {
+    "id": "paper-2508.13680v5-vmmu",
+    "name": "VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark (arXiv:2508.13680v5)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2508.13680v5"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2508.13680v5",
+    "quote": "arXiv abstract page for 2508.13680v5 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2508.13680 (VMMU), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2508.13680v5",
+    "icon": "arxiv.org",
+    "scope": "Table 2 Mean for eight open-weight VLMs that match catalogue checkpoints. Not used: closed-source rows (snapshots unstated), Aya-Vision-8B, Mistral-Medium-3 and other uncatalogued models, per-task columns, OCR-ablation tables."
+  },
+  {
+    "id": "paper-2605.01417v1-medmarks",
+    "name": "Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks (arXiv:2605.01417v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2605.01417v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2605.01417v1",
+    "quote": "arXiv abstract page for 2605.01417v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2605.01417 (Medmarks), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2605.01417v1",
+    "icon": "arxiv.org",
+    "scope": "Table 4 (all models by mean win rate on Medmarks-V) for 30 configurations that match catalogue models by exact name. Not used: quantised variants, non-default reasoning efforts, rows with ambiguous revisions (Qwen3 Thinking/Instruct without 2507, Magistral Small), uncatalogued models, Medmarks-OE and per-benchmark scores."
+  },
+  {
+    "id": "first-party-alibaba-wan-paper",
+    "name": "Alibaba Wan technical report (arXiv:2503.20314v2), VBench table (own models)",
+    "kind": "first-party",
+    "match": [
+      "arxiv.org/html/2503.20314v2"
+    ],
+    "exact": true,
+    "license": "Factual vendor-reported score (not licensed content)",
+    "terms_url": "https://arxiv.org/abs/2503.20314v2",
+    "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The document is a maker-authored technical report (default arXiv licence), recorded under the vendor-reported rule as maker documentation; see report for the open decision.",
+    "attribution": "Alibaba Wan team, Wan: Open and Advanced Large-Scale Video Generative Models, arXiv:2503.20314v2. Own-model figures only.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "arxiv.org",
+    "scope": "VBench Total Score for Wan 1.3B and Wan 14B (2025-02-24) only. The report carries arXiv's default non-exclusive licence (no open licence claimed); only the makers' own figures for their own models are recorded by hand. Not used: competitor rows, Wan-Bench (no catalogue benchmark id; competitors anonymised)."
+  },
+  {
+    "id": "paper-2501.03575v3-cosmos",
+    "name": "Cosmos World Foundation Model Platform for Physical AI (arXiv:2501.03575v3)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2501.03575v3"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2501.03575v3",
+    "quote": "arXiv abstract page for 2501.03575v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "NVIDIA, Cosmos World Foundation Model Platform for Physical AI, arXiv:2501.03575v3, CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2501.03575v3",
+    "icon": "arxiv.org",
+    "scope": "Table 19 rows for Cosmos-Predict1-7B-Text2World, 7B-Video2World, 4B and 5B-Video2World (Sampson error and pose-estimation success rate). Not used: VideoLDM row, real-video reference, PSNR/SSIM/LPIPS columns, post-trained variants, physics-alignment table (Video2World only)."
+  },
+  {
+    "id": "paper-2504.07072v2-kaleidoscope",
+    "name": "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation (arXiv:2504.07072v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2504.07072v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2504.07072v2",
+    "quote": "arXiv abstract page for 2504.07072v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Israfel Salazar et al., Kaleidoscope, arXiv:2504.07072v2, CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2504.07072v2",
+    "icon": "arxiv.org",
+    "scope": "Overall Acc. column for six models matching catalogue checkpoints (Aya-Vision-32B, Qwen2.5-VL-72B/32B, Molmo-7B-D, GPT-4o 2024-08-06, Claude 3.5 Sonnet 2024-10-22). Not used: Gemini 1.5 Pro (snapshot unstated), other uncatalogued models, multimodal/text-only/valid-response columns."
+  },
+  {
+    "id": "paper-2404.16164v1-factrecall",
+    "name": "Towards a Holistic Evaluation of LLMs on Factual Knowledge Recall (arXiv:2404.16164v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2404.16164v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2404.16164v1",
+    "quote": "arXiv abstract page for 2404.16164v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2404.16164, CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2404.16164v1",
+    "icon": "arxiv.org",
+    "scope": "Table 1 EM columns (zero-shot, 10-shot) for fourteen open models matching catalogue checkpoints. Not used: closed GPT rows, uncatalogued variants, 'Contains' columns, 1-/6-shot columns, full 15k results (Table 4), counterfactual experiments."
+  },
+  {
+    "id": "paper-2503.16167v2-codereviewqa",
+    "name": "CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models (arXiv:2503.16167v2)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2503.16167v2"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2503.16167v2",
+    "quote": "arXiv abstract page for 2503.16167v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2503.16167 (CodeReviewQA), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2503.16167v2",
+    "icon": "arxiv.org",
+    "scope": "Overall columns of the ACR exact-match table (Table 8) and the CTR, CL-hard and SI-hard invariant-accuracy tables (Tables 9, 11, 13) for the 48 evaluated models whose Hugging Face repo equals a catalogue repo. Not used: easy CL/SI variants, per-language columns, PPA, advanced-prompting experiments, unmatched models."
+  },
+  {
+    "id": "paper-2505.22113v1-thinkbench",
+    "name": "THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models (arXiv:2505.22113v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2505.22113v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2505.22113v1",
+    "quote": "arXiv abstract page for 2505.22113v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Authors of arXiv:2505.22113 (THINK-Bench), CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2505.22113v1",
+    "icon": "arxiv.org",
+    "scope": "Table 2 Accuracy and Efficiency columns for eight reasoning models matching catalogue entries. Not used: DeepSeek-R1 (revision unstated), uncatalogued models, recall/precision/reflection/token columns."
+  },
+  {
+    "id": "paper-2410.14897v1-gencopa",
+    "name": "From Test-Taking to Test-Making: Examining LLM Authoring of Commonsense Assessment Items (arXiv:2410.14897v1)",
+    "kind": "paper",
+    "match": [
+      "arxiv.org/html/2410.14897v1"
+    ],
+    "exact": true,
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://arxiv.org/abs/2410.14897v1",
+    "quote": "arXiv abstract page for 2410.14897v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+    "attribution": "Melissa Roemmele and Andrew S. Gordon, arXiv:2410.14897v1, CC BY 4.0. No endorsement.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "evidence_url": "https://arxiv.org/abs/2410.14897v1",
+    "icon": "arxiv.org",
+    "scope": "Table 3 COPA test accuracy for nine models matching catalogue checkpoints. Not used: Mistral-7B-v0.3 and MPT-30B (not catalogued), Gen-COPA tables."
   }
 ]

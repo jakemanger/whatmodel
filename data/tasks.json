@@ -62,7 +62,18 @@
       "tau3-airline",
       "tau3-retail",
       "tau3-telecom",
-      "tau3-banking-v101"
+      "tau3-banking-v101",
+      "browsecomp",
+      "browsecomp-context-managed",
+      "browsecomp-zh",
+      "mcp-atlas",
+      "mcpmark",
+      "ale-openclaw-overall-pass",
+      "hle-with-tools",
+      "chartography-with-tools",
+      "widesearch",
+      "rwsearch",
+      "deepsearchqa"
     ]
   },
   {
@@ -120,7 +131,20 @@
       "scicode-subtask",
       "scicode-unspecified",
       "humanevalexplain",
-      "humanevalfix"
+      "humanevalfix",
+      "aider-code-editing",
+      "cruxeval-o",
+      "cruxeval-i",
+      "cruxeval-zeroeval",
+      "ds-1000",
+      "multipl-e",
+      "bigcodebench",
+      "bird-sql-dev",
+      "luau-leetcode-full-pass",
+      "codereviewqa-acr-exact-match",
+      "codereviewqa-ctr-invariant-accuracy",
+      "codereviewqa-clh-invariant-accuracy",
+      "codereviewqa-sih-invariant-accuracy"
     ]
   },
   {
@@ -148,7 +172,8 @@
       "ifeval-prompt-loose",
       "mt-bench-gpt4-single",
       "alpacaeval2-lc",
-      "alpacaeval1-winrate"
+      "alpacaeval1-winrate",
+      "llm-blender-mixinstruct-gpt-rank"
     ]
   },
   {
@@ -194,7 +219,30 @@
       "aime-2026-i",
       "mathvista-mini",
       "aime-2025-with-tools",
-      "mathqa"
+      "mathqa",
+      "hmmt-feb-2025",
+      "hmmt-2025-edition-unspecified",
+      "polymath",
+      "hmmt-nov-2025",
+      "simple-evals-mgsm",
+      "hmmt-feb-2026",
+      "mgsm",
+      "mgsm-marco",
+      "polymath-marco",
+      "usamo-2026",
+      "simple-evals-math",
+      "matharena-arxivmath-2026-08",
+      "matharena-brokenarxiv-2026-08",
+      "gsm-symbolic",
+      "deepmind-math",
+      "mgsm-5lang",
+      "minerva-math",
+      "matharena-arxivlean-2026-06",
+      "frontiermath-erdos",
+      "omega",
+      "dynamath",
+      "we-math",
+      "think-bench-accuracy"
     ]
   },
   {
@@ -239,7 +287,9 @@
       "pmc-vqa",
       "omnidocbench-1-5",
       "mmmu-pro-standard-lmms-exaone45",
-      "mmmu-pro-vision-lmms-exaone45"
+      "mmmu-pro-vision-lmms-exaone45",
+      "vmmu-mean",
+      "kaleidoscope-overall"
     ]
   },
   {
@@ -249,7 +299,15 @@
     "title": "models for web search",
     "description": "Published comparisons of search-enabled model systems. Results describe the evaluated search setup, not the base model in isolation.",
     "benchmarks": [
-      "lmarena-search"
+      "lmarena-search",
+      "browsecomp",
+      "browsecomp-context-managed",
+      "browsecomp-zh",
+      "widesearch",
+      "rwsearch",
+      "seal-0",
+      "deepsearchqa",
+      "hle-with-tools"
     ]
   },
   {
@@ -302,7 +360,11 @@
       "hpsv3-benchmark",
       "mmmg-image-avg",
       "mmmg-kg-score-avg",
-      "real-realism-avg"
+      "real-realism-avg",
+      "xtc-bench-gen-overall",
+      "cvtg-500l-pned-cosmos3",
+      "cvtg-102ch-pned-cosmos3",
+      "hpsv3-cosmos3"
     ]
   },
   {
@@ -360,7 +422,9 @@
       "evalcrafter2023-alignment",
       "evalcrafter2023-motion",
       "evalcrafter2023-temporal",
-      "fetv-human-video-quality"
+      "fetv-human-video-quality",
+      "cosmos-3d-pose-success",
+      "cosmos-3d-sampson-error"
     ]
   },
   {

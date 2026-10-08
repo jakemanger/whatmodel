@@ -41559,5 +41559,150 @@
         "reported_label": "deepseek-ai/deepseek-llm-7b-chat"
       }
     ]
+  },
+  {
+    "id": "eurus-2-7b-sft",
+    "name": "Eurus-2-7B-SFT",
+    "provider": "PRIME-RL",
+    "category": "llm",
+    "released": "2024-12",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 7.62,
+    "active_b": 7.62,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT",
+    "identity_note": "Comparison-only, proposed so the Eurus-2-7B-PRIME card table counts. The PRIME card compares Eurus-2-7B-PRIME with 'Eurus-2-7B-SFT', the PRIME team's own SFT starting checkpoint. Weights: https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT (sha 2f38b9435f3a99d8899d4f00df8b6ebf0b3f502e, created 2024-12-30, apache-2.0, 7,615,616,512 parameters in safetensors metadata).",
+    "identity_evidence": [
+      {
+        "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+        "reported_label": "Eurus-2-7B-SFT"
+      },
+      {
+        "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT",
+        "reported_label": "PRIME-RL/Eurus-2-7B-SFT"
+      }
+    ]
+  },
+  {
+    "id": "t2v-turbo-ms",
+    "name": "T2V-Turbo (MS)",
+    "provider": "UC Santa Barbara",
+    "category": "video",
+    "released": "2024-05",
+    "open_weights": true,
+    "license": "cc-by-4.0",
+    "params_b": null,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS",
+    "identity_note": "Comparison-only, proposed so the T2V-Turbo paper's VBench run counts. T2V-Turbo (MS) is the ModelScopeT2V-based sibling of catalogued T2V-Turbo (VC2); the paper (Table 1) reports both. Weights: https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS (sha 2c7a54678e803377949a3147db5d6b843b67a4fa, created 2024-05-29, cc-by-4.0).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2405.18750v2",
+        "reported_label": "Our T2V-Turbo (MS)"
+      },
+      {
+        "source": "https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS",
+        "reported_label": "jiachenli-ucsb/T2V-Turbo-MS"
+      }
+    ]
+  },
+  {
+    "id": "show-o2-1-5b",
+    "name": "Show-o2 1.5B",
+    "provider": "Show Lab, NUS",
+    "category": "image",
+    "released": "2025-06",
+    "open_weights": true,
+    "license": "apache-2.0",
+    "params_b": 1.5,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/showlab/show-o2-1.5B",
+    "identity_note": "Comparison-only, proposed so the Show-o2 paper's GenEval and DPG-Bench runs hold two own models. The paper's 'Show-o2 (Ours) 1.5B' rows are the base 1.5B model (66M training pairs); the catalogued Show-o2 1.5B-HQ is the later higher-resolution checkpoint and is not the paper row. Weights: https://huggingface.co/showlab/show-o2-1.5B (sha 07ec16589d4fc5422a74dddbbc4b2cd11e551039, created 2025-06-05, apache-2.0); listed on the official README among the released Show-o2 models.",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2506.15564v3",
+        "reported_label": "Show-o2 (Ours) 1.5B"
+      },
+      {
+        "source": "https://huggingface.co/showlab/show-o2-1.5B",
+        "reported_label": "showlab/show-o2-1.5B"
+      }
+    ]
+  },
+  {
+    "id": "cosmos-1-0-diffusion-7b-video2world",
+    "name": "Cosmos-1.0-Diffusion-7B-Video2World",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-01",
+    "open_weights": true,
+    "license": "nvidia-open-model",
+    "params_b": 7,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Video2World",
+    "identity_note": "Comparison-only, proposed so the Cosmos paper's 3D-consistency table counts. The paper's 'Cosmos-Predict1-7B-Video2World' is the Video2World derivative of the catalogued 7B Text2World; NVIDIA's weights are nvidia/Cosmos-1.0-Diffusion-7B-Video2World (sha 6b3b7c6314ef62ae9ee1bd0fc6bb3370adc5fb15, created 2025-01-07).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2501.03575v3#S4.T10",
+        "reported_label": "s 3D-consistency table counts. The paper"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Video2World",
+        "reported_label": "nvidia/Cosmos-1.0-Diffusion-7B-Video2World"
+      }
+    ]
+  },
+  {
+    "id": "cosmos-1-0-autoregressive-4b",
+    "name": "Cosmos-1.0-Autoregressive-4B",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-01",
+    "open_weights": true,
+    "license": "nvidia-open-model",
+    "params_b": 4,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-4B",
+    "identity_note": "Comparison-only, proposed so the Cosmos paper's 3D-consistency table counts. The paper's 'Cosmos-Predict1-4B' is the 4B autoregressive base model (Table 10); weights nvidia/Cosmos-1.0-Autoregressive-4B (sha 0b168630ad2400affefe460f2743c071de1fb257, created 2025-01-07).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2501.03575v3#S4.T10",
+        "reported_label": "s 3D-consistency table counts. The paper"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-4B",
+        "reported_label": "nvidia/Cosmos-1.0-Autoregressive-4B"
+      }
+    ]
+  },
+  {
+    "id": "cosmos-1-0-autoregressive-5b-video2world",
+    "name": "Cosmos-1.0-Autoregressive-5B-Video2World",
+    "provider": "NVIDIA",
+    "category": "video",
+    "released": "2025-01",
+    "open_weights": true,
+    "license": "nvidia-open-model",
+    "params_b": 5,
+    "api": null,
+    "local": null,
+    "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-5B-Video2World",
+    "identity_note": "Comparison-only, proposed so the Cosmos paper's 3D-consistency table counts. The paper's 'Cosmos-Predict1-5B-Video2World' is the Video2World derivative of the 4B autoregressive base (Table 10); weights nvidia/Cosmos-1.0-Autoregressive-5B-Video2World (sha f01be8aaaa18704d1fec4e917992aec1074c94a3, created 2025-01-07).",
+    "identity_evidence": [
+      {
+        "source": "https://arxiv.org/html/2501.03575v3#S4.T10",
+        "reported_label": "s 3D-consistency table counts. The paper"
+      },
+      {
+        "source": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-5B-Video2World",
+        "reported_label": "nvidia/Cosmos-1.0-Autoregressive-5B-Video2World"
+      }
+    ]
   }
 ]
