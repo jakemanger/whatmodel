@@ -6,7 +6,7 @@
 
 Tencent · released 2025-03 · tencent-hunyuan-community
 
-**score 42.3** ±5.3 · #60 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.8** ±4.0 · #56 of 87 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,22 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    41.2   2025-04-21   88% ▇▇▇▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   49.9                12% ▇
-                        weighted average                       = 42.3
+<a name="visual-skyreels-v2"></a>SkyReels-V2: Infinite…  <a href="https://arxiv.org/html/2504.13074v3#S6.T7">SkyReels-Bench I2V (human rat…</a>  56.8%    42.1   2025-04-21   50% ▇▇▇▇▇▇
+<a name="paper-2512.01989v1-paibench"></a>PAI-Bench: A Comprehe…  <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G human preference …</a>  964.3    45.6   2025-12-01   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2512.01989v1">PAI-Bench-G physical-AI video…</a>  77.6%    49.3   2025-12-01   18% ▇▇
+prior                   pull toward the middle                   49.9                 7% ▇
+                        weighted average                       = 44.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt))</sub>
+<sub>Licences: SkyReels-V2: Infinite-length Film Generative Model ([CC-BY-4.0](../../licenses/visual-skyreels-v2.txt)) · PAI-Bench: A Comprehensive Benchmark For Physical AI ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-bf16 720p + CPU offload (official scrip…  ~57.3GB   42.3
+bf16 720p + CPU offload (official scrip…  ~57.3GB   44.8
 </pre>
 
 ```sh

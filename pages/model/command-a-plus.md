@@ -6,7 +6,7 @@
 
 Cohere · released 2026-05 · 218B params (25B active) · apache-2.0
 
-**score 77.7** ±4.0 · #12 of 549 · from 3 benchmark results across 1 source
+**score 70.5** ±3.4 · #44 of 551 · from 3 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          85.0%    81.9   2026-05-20   44% ▇▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>       25.0%    81.2   2026-05-20   34% ▇▇▇▇
-                        <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    70.1   2026-05-20   15% ▇▇
-prior                   pull toward the middle                   50.0                 7% ▇
-                        weighted average                       = 77.7
+<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">Terminal Bench Hard (lab)</a>       25.0%    71.5   2026-05-20   45% ▇▇▇▇▇
+                        <a href="https://cohere.com/blog/command-a-plus">τ²-bench Telecom (lab)</a>          85.0%    76.2   2026-05-20   44% ▇▇▇▇▇
+                        <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  52.7%    37.4   2026-05-20    6% ▇
+prior                   pull toward the middle                   50.0                 5% ▇
+                        weighted average                       = 70.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -33,8 +33,8 @@ api (Cohere) · price unknown · [docs.cohere.com](https://docs.cohere.com/docs/
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~131.3GB   77.7
-2-bit iq2_m    ~65.9GB   77.7
+4-bit q4_k_m  ~131.3GB   70.5
+2-bit iq2_m    ~65.9GB   70.5
 </pre>
 
 ```sh

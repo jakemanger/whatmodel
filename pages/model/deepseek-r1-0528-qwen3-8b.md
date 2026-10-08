@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-05 · 8.19B params · mit
 
-**score 55.5** ±1.1 · #198 of 549 · from 15 benchmark results across 4 sources
+**score 55.8** ±1.1 · #198 of 551 · from 15 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,23 +14,23 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.4%    55.8   2026-01-05   20% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 83.3%    56.9   2026-01-05   13% ▇▇
-                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 75.8%    56.1   2026-01-05   10% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  69.1%    55.2   2026-01-05    9% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  54.3%    56.0   2026-01-05    6% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  96.8%    56.9   2026-01-05    6% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>       5.6%    51.3   2026-01-05    4% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  57.2%    52.0   2026-01-05    3% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      2.6%    44.8   2026-01-05    2% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  29.2%    45.0   2026-01-05    2% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    58.8   2026-08-28   18% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    49.2   2026-08-28    2% ▇
-<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.9%    54.1   2025-07-22    4% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.0%    48.3   2026-04-17    1% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    47.4   2026-04-17    1% ▇
+<a name="report-2601.02346v1"></a>Falcon-H1R: Pushing t…  <a href="https://arxiv.org/html/2601.02346v1">GPQA Diamond (lab)</a>              61.4%    56.2   2026-01-05   20% ▇▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2024 (lab)</a>                 83.3%    57.6   2026-01-05   13% ▇▇
+                        <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                 75.8%    56.9   2026-01-05    9% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  69.1%    55.4   2026-01-05    9% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  96.8%    58.7   2026-01-05    6% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  54.3%    56.4   2026-01-05    5% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>       5.6%    50.5   2026-01-05    4% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  57.2%    50.7   2026-01-05    3% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  29.2%    45.4   2026-01-05    2% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      2.6%    45.2   2026-01-05    2% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>        43.9%    58.7   2026-08-28   18% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            3.0%    49.8   2026-08-28    2% ▇
+<a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  36.9%    54.2   2025-07-22    4% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  69.0%    48.7   2026-04-17    1% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    48.0   2026-04-17    1% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 55.5
+                        weighted average                       = 55.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -59,8 +59,8 @@ api (Novita AI) · $0.068/M blended · $0.06 in / $0.09 out per 1M tokens · [no
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~5.41GB   55.5
-8-bit q8_0    ~10.33GB   55.5
+4-bit q4_k_m   ~5.41GB   55.8
+8-bit q8_0    ~10.33GB   55.8
 </pre>
 
 ```sh

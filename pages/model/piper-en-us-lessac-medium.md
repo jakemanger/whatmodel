@@ -4,18 +4,40 @@
 
 # Piper (en\_US lessac medium)
 
-Open Home Foundation (Piper) · released 2023-06
+Open Home Foundation (Piper) · released 2023-06 · mit
 
-Piper voice en\_US-lessac-medium from rhasspy/piper-voices (en/en\_US/lessac/medium/en\_US-lessac-medium.onnx, 63,201,294 bytes), run with the maintained piper-tts runtime (OHF-Voice/piper1-gpl, GPL-3.0). Voice files are MIT on Hugging Face; the lessac training data carries the Blizzard 2013 research licence. Other Piper voices are separate checkpoints.
+**score 49.0** ±5.1 · #58 of 100 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/rhasspy/piper-voices)
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-No reviewed benchmark results yet. This catalogue entry has no score or rank.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
+
+<pre>
+source                  test                               score  implies  date        weight
+<a name="speech-paradee-report-ccby"></a>Paradee: Distilling K…  <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>  4.36 / 5    52.5   2026-10-05   56% ▇▇▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2610.06817v1">Paradee small-TTS comparison …</a>      8.8%    42.9   2026-10-05   34% ▇▇▇▇
+prior                   pull toward the middle                      49.7                10% ▇
+                        weighted average                          = 49.0
+</pre>
+
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice TTS Model ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
+<pre>
+version                        needs  score
+onnx-fp32 (piper-tts 1.8.0)  ~0.06GB   49.0
+</pre>
+
 ```sh
+# onnx-fp32 (piper-tts 1.8.0)
 pip install piper-tts && python3 -m piper.download_voices en_US-lessac-medium && python3 -m piper -m en_US-lessac-medium -f test.wav -- 'This is a test.'
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/piper-en-us-lessac-medium)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/piper-en-us-lessac-medium) · [JSON](https://whatmodel.sh/api?format=json&all=1)

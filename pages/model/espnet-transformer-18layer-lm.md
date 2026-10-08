@@ -6,9 +6,7 @@
 
 ESPnet · released 2020-07 · cc-by-4.0
 
-**score 36.5** ±24.7 · #9 of 11 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-espnet-librispeech-20260929&score=set) comparison set only.
+**score 42.5** ±3.8 · #102 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   6.2%    22.7    38% ▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.5%    35.4    22% ▇▇▇
-prior                   pull toward the middle                   50.0    40% ▇▇▇▇▇
-                        weighted average                       = 36.5
+<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   6.2%    41.9    73% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   2.5%    42.7    22% ▇▇▇
+prior                   pull toward the middle                   49.7     5% ▇
+                        weighted average                       = 42.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +28,7 @@ prior                   pull toward the middle                   50.0    40% ▇
 
 <pre>
 version                                     needs  score
-fp32 (espnet 202610.post2 + espnet_mode…  ~1.02GB   36.5
+fp32 (espnet 202610.post2 + espnet_mode…  ~1.02GB   42.5
 </pre>
 
 ```sh

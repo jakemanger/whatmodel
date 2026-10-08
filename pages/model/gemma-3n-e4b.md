@@ -6,7 +6,7 @@
 
 Google · released 2025-06 · 7.85B params (4B active) · gemma
 
-**score 49.8** ±1.6 · #261 of 549 · from 11 benchmark results across 4 sources
+**score 48.2** ±1.4 · #285 of 551 · from 11 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,19 +14,19 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="gap-google-gemma3n"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                  75.0%    47.5   2026-09-25   13% ▇▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>                  11.6%    49.3   2026-09-25   11% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>                       60.7%    47.4   2026-09-25    8% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                       64.9%    46.9   2026-09-25    8% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                   50.6%    49.2   2026-09-25    8% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                       63.6%    48.1   2026-09-25    5% ▇
-                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                60.3%    48.7   2026-09-25    3% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.4    54.0   2026-10-02   30% ▇▇▇▇
-<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   55.0%    46.5   2026-09-19    8% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   71.3%    50.6   2026-04-17    3% ▇
-                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   80.2%    45.9   2026-04-17    2% ▇
+<a name="gap-google-gemma3n"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">AIME 2025 (lab)</a>                  11.6%    41.7   2026-09-25   13% ▇▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">HumanEval (lab)</a>                  75.0%    46.9   2026-09-25   13% ▇▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU (lab)</a>                       64.9%    44.2   2026-09-25    9% ▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MMLU-Pro (lab)</a>                   50.6%    47.0   2026-09-25    9% ▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MGSM (lab)</a>                       60.7%    52.4   2026-09-25    7% ▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">MBPP (lab)</a>                       63.6%    45.9   2026-09-25    6% ▇
+                        <a href="https://ai.google.dev/gemma/docs/gemma-3n/model_card">Global-MMLU (lab)</a>                60.3%    44.5   2026-09-25    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1317.4    54.2   2026-10-02   25% ▇▇▇
+<a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   55.0%    47.1   2026-09-19    7% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   71.3%    50.9   2026-04-17    2% ▇
+                        <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   80.2%    46.9   2026-04-17    2% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 49.8
+                        weighted average                        = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -50,8 +50,8 @@ Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/gemma-3n/mod
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.21GB   49.8
-8-bit q8_0    ~9.92GB   49.8
+4-bit q4_k_m  ~5.21GB   48.2
+8-bit q8_0    ~9.92GB   48.2
 </pre>
 
 ```sh

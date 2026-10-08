@@ -6,7 +6,7 @@
 
 dots.tts · released 2026-06 · 2B params · apache-2.0
 
-**score 57.5** ±2.6 · #37 of 98 · from 3 benchmark results across 1 source
+**score 57.4** ±2.7 · #39 of 100 · from 3 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>  10.6%    56.1   2026-07-27   41% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    58.2   2026-07-27   38% ▇▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    60.2   2026-07-27   18% ▇▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 57.5
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>  10.6%    56.2   2026-07-27   40% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER</a>          11.7%    57.9   2026-07-27   38% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER</a>          11.8%    60.1   2026-07-27   19% ▇▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 57.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -41,7 +41,7 @@ dots.tts Technical Re…  <a href="https://arxiv.org/html/2606.07080v2">Seed-TTS
 
 <pre>
 version                                     needs  score
-bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   57.5
+bf16 (dots.tts package CLI) · nvidia on…  ~5.16GB   57.4
 </pre>
 
 ```sh

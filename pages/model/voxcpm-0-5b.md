@@ -6,7 +6,7 @@
 
 OpenBMB · released 2025-09 · 0.5B params · apache-2.0
 
-**score 60.8** ±1.6 · #27 of 98 · from 17 benchmark results across 3 sources
+**score 60.1** ±1.5 · #28 of 100 · from 17 benchmark results across 3 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,25 +16,25 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      5.2%    60.0   2026-06-15   10% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>              6.4%    66.6   2026-06-15    8% ▇
+<a name="speech-raon-opentts-report-ccby"></a>Raon-OpenTTS: Open Mo…  <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval EN (zero-shot Englis…</a>      5.2%    59.8   2026-06-15   10% ▇
                         <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · speaker si…</a>     67.0%    56.5   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.78 / 5    59.0   2026-06-15    6% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     64.2%    60.3   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     73.0%    62.5   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.0%    60.9   2026-06-15    5% ▇
-                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.54 / 5    58.6   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · WER</a>              6.4%    66.0   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · speaker si…</a>     73.0%    61.9   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">CV3-Eval hard-en · DNSMOS (pr…</a>  3.78 / 5    58.9   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall s…</a>     64.2%    60.1   2026-06-15    6% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · human spe…</a>  3.54 / 5    58.5   2026-06-15    5% ▇
+                        <a href="https://arxiv.org/html/2605.20830v2">Seed-TTS test-en · Whisper la…</a>      2.0%    59.3   2026-06-15    5% ▇
                         <a href="https://arxiv.org/html/2605.20830v2">Raon-OpenTTS-Eval · overall W…</a>      9.5%    53.8   2026-06-15    3% ▇
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-zh · speaker si…</a>     77.1%    61.5   2025-12-08    7% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-en · speaker si…</a>     73.2%    64.5   2025-12-08    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-zh · Paraformer…</a>      1.0%    61.5   2025-12-08    6% ▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-en · Whisper la…</a>      1.8%    63.5   2025-12-08    6% ▇
-<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.11 / 5    59.5   2025-09-29    6% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.10 / 5    64.0   2025-09-29    6% ▇
-                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.11 / 5    58.2   2025-09-29    5% ▇
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-zh · speaker si…</a>     77.1%    59.1   2025-12-08    7% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-en · speaker si…</a>     73.2%    62.2   2025-12-08    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-en · Whisper la…</a>      1.8%    61.2   2025-12-08    6% ▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/VoxCPM.md">Seed-TTS test-zh · Paraformer…</a>      1.0%    61.8   2025-12-08    5% ▇
+<a name="speech-voxcpm-report-ccby"></a>VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.11 / 5    59.6   2025-09-29    6% ▇
                         <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.18 / 5    59.2   2025-09-29    5% ▇
-prior                   pull toward the middle                      49.9                 1% ▇
-                        weighted average                          = 60.8
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Engli…</a>  4.11 / 5    58.4   2025-09-29    5% ▇
+                        <a href="https://arxiv.org/html/2509.24650v1">VoxCPM listening test · Chine…</a>  4.10 / 5    64.1   2025-09-29    5% ▇
+prior                   pull toward the middle                      49.7                 1% ▇
+                        weighted average                          = 60.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -57,7 +57,7 @@ VoxCPM: Tokenizer-Fre…  <a href="https://arxiv.org/html/2509.24650v1">Seed-TTS
 
 <pre>
 version             needs  score
-bf16 · nvidia only   ~5GB   60.8
+bf16 · nvidia only   ~5GB   60.1
 </pre>
 
 ```sh

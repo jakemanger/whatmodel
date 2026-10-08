@@ -6,7 +6,7 @@
 
 Rhymes AI · released 2024-10 · 2.8B params · apache-2.0
 
-**score 35.4** ±2.2 · #72 of 87 · from 3 benchmark results across 2 sources
+**score 35.3** ±2.2 · #73 of 87 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -15,10 +15,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="video-love-aigve60k"></a>LOVE: Benchmarking an…  <a href="https://arxiv.org/html/2505.12098v1#A6.T8">AIGVE-60K human perception MO…</a>   56.1%    37.6   2025-05-17   33% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   50.7%    32.9   2025-05-17   19% ▇▇
-<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1001.9    34.2   2025-03-22   45% ▇▇▇▇▇
+                        <a href="https://arxiv.org/html/2505.12098v1#A6.T9">AIGVE-60K human text-video co…</a>   50.7%    32.8   2025-05-17   19% ▇▇
+<a name="video-genai-arena-space"></a>GenAI-Arena             <a href="https://huggingface.co/spaces/TIGER-Lab/GenAI-Arena/blob/4197b3a6b50aca8fae6c01d5968f08c3537024d1/arena_elo/results/20250322/video_generation_leaderboard.csv">GenAI-Arena text-to-video (an…</a>  1001.9    34.0   2025-03-22   45% ▇▇▇▇▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 35.4
+                        weighted average                        = 35.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version              needs  score
-bf16 · nvidia only  ~9.3GB   35.4
+bf16 · nvidia only  ~9.3GB   35.3
 </pre>
 
 ```sh

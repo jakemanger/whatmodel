@@ -6,9 +6,7 @@
 
 OpenAI · released 2022-09 · 0.074B params · apache-2.0
 
-**score 39.8** ±2.5 · #98 of 117 · from 6 benchmark results across 4 sources
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 39.0** ±2.8 · #109 of 128 · from 6 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">LibriSpeech test-clean WER</a>       4.3%    35.6   2026-09-15   30% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">FLEURS English test WER</a>          7.6%    44.4   2026-09-15   14% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    42.5   2026-03-26   29% ▇▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  19.8%    37.7   2026-03-19   14% ▇▇
-                        <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   9.5%    41.2   2026-03-19    9% ▇
-<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       5.1%    19.5   2024-12-09    1% ▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 39.8
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">LibriSpeech test-clean WER</a>       4.3%    34.0   2026-09-15   28% ▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/whisper-base.en.json">FLEURS English test WER</a>          7.6%    43.7   2026-09-15   13% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>  10.3%    42.7   2026-03-26   31% ▇▇▇▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  19.8%    35.9   2026-03-19   14% ▇▇
+                        <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>   9.5%    40.5   2026-03-19    9% ▇
+<a name="speech-stt-srb-report"></a>Speech Robust Bench     <a href="https://arxiv.org/html/2403.07937v3">LibriSpeech test-clean WER</a>       5.1%    18.1   2024-12-09    1% ▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 39.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,8 +32,8 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version    needs  score
-fp16     ~0.68GB   39.8
-fp32     ~0.86GB   39.8
+fp16     ~0.68GB   39.0
+fp32     ~0.86GB   39.0
 </pre>
 
 ```sh

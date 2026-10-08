@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-05 · 4.15B params · mit
 
-**score 31.4** ±3.0 · #489 of 549 · from 6 benchmark results across 2 sources
+**score 30.0** ±2.8 · #499 of 551 · from 7 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -14,25 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    26.5   2026-10-02   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    42.6   2024-05-23    9% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    58.7   2024-05-23    4% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    61.1   2024-05-23    2% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    69.5   2024-05-23    2% ▇
-                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%   212.1   2024-05-23    0% ▇
-prior                   pull toward the middle                   50.0                 4% ▇
-                        weighted average                       = 31.4
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  881.1    27.8   2026-10-02   76% ▇▇▇▇▇▇▇▇▇
+<a name="paper-2404.14219v3-phi3"></a>Phi-3 Technical Report  <a href="https://arxiv.org/html/2404.14219v3#S7">MMMU (val) (lab)</a>                40.4%    35.5   2024-05-23    9% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">MathVista (testmini) (lab)</a>      44.5%    30.2   2024-05-23    4% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">TextVQA (lab)</a>                   70.9%    40.4   2024-05-23    2% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">AI2D test (lab)</a>                 76.7%    25.8   2024-05-23    1% ▇
+                        <a href="https://arxiv.org/html/2404.14219v3#S7">ChartQA (lab)</a>                   81.4%   112.9   2024-05-23    0% ▇
+<a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  38.4%    38.8   2025-01-29    4% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
+                        weighted average                       = 30.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · Phi-3 Technical Report ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   31.4
+16-bit bf16 · nvidia only  ~8.29GB   30.0
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Google · released 2022-10 · 11.3B params · apache-2.0
 
-**score 43.3** ±1.5 · #343 of 549 · from 5 benchmark results across 2 sources
+**score 37.5** ±1.3 · #430 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                    score  implies  date        weight
-<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    45.3%    42.1   2022-12-06   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              55.1%    42.9   2022-12-06   20% ▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               4.9%    52.9   2022-12-06   11% ▇
-<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          43.9%    40.7   2024-03-10   22% ▇▇▇
-                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    54.5%    42.7   2024-03-10   13% ▇▇
+<a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    45.3%    36.2   2022-12-06   29% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              55.1%    37.2   2022-12-06   19% ▇▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               4.9%    38.4   2022-12-06   11% ▇
+<a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          43.9%    37.5   2024-03-10   28% ▇▇▇
+                        <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    54.5%    39.7   2024-03-10   12% ▇
 prior                   pull toward the middle           50.0                 1% ▇
-                        weighted average               = 43.3
+                        weighted average               = 37.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +31,7 @@ prior                   pull toward the middle           50.0                 1%
 
 <pre>
 download        size  score
-4-bit fp32  ~45.07GB   43.3
+4-bit fp32  ~45.07GB   37.5
 </pre>
 
 ```sh

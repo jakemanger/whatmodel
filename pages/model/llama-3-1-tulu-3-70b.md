@@ -6,7 +6,7 @@
 
 Ai2 · released 2024-11 · 70.6B params · llama3.1
 
-**score 51.7** ±1.5 · #241 of 549 · from 10 benchmark results across 2 sources
+**score 52.4** ±1.4 · #241 of 551 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>             85.0%    52.8   2025-04-14   15% ▇▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                       83.1%    50.2   2025-04-14   11% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                      93.5%    55.2   2025-04-14   10% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                       74.3%    52.2   2025-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>   63.0%    52.6   2025-04-14    9% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>   49.8%    47.0   2025-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>   83.2%    52.7   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                      46.5%    54.1   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>             67.6%    53.0   2025-04-14    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1286.1    50.4   2026-10-02   27% ▇▇▇
+<a name="paper-2411.15124v5"></a>Tülu 3: Pushing Front…  <a href="https://arxiv.org/html/2411.15124v5">BIG-Bench Hard (lab)</a>             85.0%    53.6   2025-04-14   16% ▇▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MMLU (lab)</a>                       83.1%    51.6   2025-04-14   12% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">GSM8K (lab)</a>                      93.5%    55.6   2025-04-14   11% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">MATH (subset unspecified) (la…</a>   63.0%    51.8   2025-04-14    9% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">DROP (lab)</a>                       74.3%    52.3   2025-04-14    8% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>   49.8%    49.1   2025-04-14    8% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>   83.2%    53.1   2025-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                      46.5%    57.7   2025-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>             67.6%    52.2   2025-04-14    3% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1286.1    50.8   2026-10-02   24% ▇▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 51.7
+                        weighted average                        = 52.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~42.86GB   51.7
-8-bit q8_0    ~85.22GB   51.7
+4-bit q4_k_m  ~42.86GB   52.4
+8-bit q8_0    ~85.22GB   52.4
 </pre>
 
 ```sh

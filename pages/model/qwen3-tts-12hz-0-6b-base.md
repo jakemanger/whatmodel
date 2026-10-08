@@ -6,7 +6,7 @@
 
 Alibaba (Qwen) · released 2026-01 · 0.6B params · apache-2.0
 
-**score 61.5** ±3.2 · #26 of 98 · from 4 benchmark results across 1 source
+**score 60.0** ±3.0 · #29 of 100 · from 4 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source           test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker si…</a>  76.5%    60.6   2026-02-01   28% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    62.0   2026-02-01   23% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · speaker si…</a>  70.5%    61.1   2026-02-01   23% ▇▇▇
-                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    64.9   2026-02-01   22% ▇▇▇
-prior            pull toward the middle                   49.9                 4% ▇
-                 weighted average                       = 61.5
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio  <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · speaker si…</a>  76.5%    58.3   2026-02-01   28% ▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · speaker si…</a>  70.5%    59.2   2026-02-01   25% ▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-en · Whisper la…</a>   1.7%    62.6   2026-02-01   22% ▇▇▇
+                 <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/qwen3_tts.md">Seed-TTS test-zh · Paraformer…</a>   1.0%    62.4   2026-02-01   21% ▇▇▇
+prior            pull toward the middle                   49.7                 4% ▇
+                 weighted average                       = 60.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,9 +32,9 @@ prior            pull toward the middle                   49.9                 4
 
 <pre>
 version                            needs  score
-bf16 (qwen-tts)                  ~2.52GB   61.5
-mlx-bf16 (mlx-audio) · mac only  ~2.52GB   61.5
-bf16 (qwen-tts) · nvidia only    ~2.52GB   61.5
+bf16 (qwen-tts)                  ~2.52GB   60.0
+mlx-bf16 (mlx-audio) · mac only  ~2.52GB   60.0
+bf16 (qwen-tts) · nvidia only    ~2.52GB   60.0
 </pre>
 
 ```sh

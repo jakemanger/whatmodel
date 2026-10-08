@@ -6,7 +6,7 @@
 
 Kakao Enterprise (Jaehyeon Kim et al.) · released 2021-06 · mit
 
-**score 30.0** ±7.6 · #86 of 98 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 33.9** ±5.0 · #83 of 100 · from 3 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -15,31 +15,23 @@ Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot]
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                            score  implies  date        weight
-<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>   8.5%    24.5   2025-08-10   45% ▇▇▇▇▇
-                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>    27.5%    23.0   2025-08-10   31% ▇▇▇▇
-prior                   pull toward the middle                   49.9                23% ▇▇▇
-                        weighted average                       = 30.0
+source                  test                               score  implies  date        weight
+<a name="speech-vits-icml2021"></a>VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS (lab)</a>  4.38 / 5    37.2                55% ▇▇▇▇▇▇▇
+<a name="speech-emergent-apache"></a>EmergentTTS-Eval six-…  <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category pref…</a>      8.5%    25.1   2025-08-10   22% ▇▇▇
+                        <a href="https://github.com/boson-ai/EmergentTTS-Eval-public/blob/fe02c5d27f2d87751a66e32631aaa73a92d9cbbb/README.md">EmergentTTS · 6-category WER</a>       27.5%    22.6   2025-08-10   13% ▇▇
+prior                   pull toward the middle                      49.7                10% ▇
+                        weighted average                          = 33.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
-
-<details><summary>Not counted (1)</summary>
-
-<pre>
-source                  test                         score  why
-VITS: ICML 2021 origi…  <a href="https://proceedings.mlr.press/v139/kim21f/kim21f.pdf">VITS 2021 VCTK human MOS</a>  4.38 / 5  too few models have it yet
-</pre>
-
-</details>
+<sub>Licences: VITS: ICML 2021 original listening studies ([CC-BY-4.0](../../licenses/speech-vits-icml2021.txt)) · EmergentTTS-Eval six-category leaderboard ([Apache-2.0](../../licenses/speech-emergent-apache.txt))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   30.0
+fp32 (jaywalnut310/vits repo) · nvidia …  ~0.16GB   33.9
 </pre>
 
 ```sh

@@ -6,30 +6,38 @@
 
 SpeechBrain · released 2025-02 · 0.48B params · apache-2.0
 
-**score 49.8** ±4.5 · #78 of 117 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 47.8** ±4.3 · #85 of 128 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    49.8   2026-03-26   92% ▇▇▇▇▇▇▇▇▇▇▇
-prior                 pull toward the middle                   49.8                 8% ▇
-                      weighted average                       = 49.8
+source                  test                            score  implies  date        weight
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.5%    50.3   2026-03-26   74% ▇▇▇▇▇▇▇▇▇
+<a name="first-party-speechbrain-asr-cards"></a>SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">LibriSpeech test-other WER (l…</a>   4.6%    37.7   2025-02-06   19% ▇▇
+prior                   pull toward the middle                   49.7                 7% ▇
+                        weighted average                       = 47.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt))</sub>
+<sub>Licences: Open ASR Leaderboard ([Apache-2.0](../../licenses/open-asr-Apache-2.0.txt)) · SpeechBrain Hugging Face ASR model cards: published LibriSpeech/VoxPopuli WER for its own checkpoints ([Apache-2.0](https://huggingface.co/speechbrain/asr-wav2vec2-librispeech/blob/356e347b73885161e8996d9a79b6588dc8bf9f9b/README.md))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test                        score  why
+SpeechBrain Hugging F…  <a href="https://huggingface.co/speechbrain/asr-conformer-loquacious/blob/42106e67e454ae361ca2d8311a7a807d5f95a3b9/README.md">VoxPopuli English test WER</a>   6.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <pre>
 version   needs  score
-fp32     ~2.8GB   49.8
+fp32     ~2.8GB   47.8
 </pre>
 
 ```sh

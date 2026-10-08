@@ -6,7 +6,7 @@
 
 Z.ai · released 2026-01 · 16B params · mit
 
-**score 49.6** ±1.7 · #78 of 136 · from 4 benchmark results across 4 sources
+**score 49.1** ±1.9 · #79 of 139 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1012.0    48.7   2026-09-24   68% ▇▇▇▇▇▇▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   83.9%    51.0   2026-08-25   19% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      979.0    52.0   2026-03-30    7% ▇
-<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   48.2%    53.6   2026-05-27    5% ▇
-prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 49.6
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1012.0    47.8   2026-09-24   61% ▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   83.9%    50.7   2026-08-25   24% ▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>      979.0    51.4   2026-03-30    7% ▇
+<a name="visual-qwenbench"></a>Qwen-Image-Bench: Fro…  <a href="https://arxiv.org/html/2605.28091v1#S4.T2">Qwen-Image-Bench (Q-Judger, v…</a>   48.2%    53.1   2026-05-27    6% ▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 49.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -50,8 +50,8 @@ api (Z.ai) · $0.015/image · [docs.z.ai](https://docs.z.ai/guides/image/glm-ima
 
 <pre>
 version                                   needs  score
-bf16 · nvidia only                      ~38.9GB   49.6
-bf16 (model cpu offload) · nvidia only  ~38.9GB   49.6
+bf16 · nvidia only                      ~38.9GB   49.1
+bf16 (model cpu offload) · nvidia only  ~38.9GB   49.1
 </pre>
 
 ```sh

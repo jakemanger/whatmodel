@@ -6,9 +6,7 @@
 
 NVIDIA · released 2024-01 · 1.1B params · cc-by-4.0
 
-**score 59.2** ±1.8 · #28 of 117 · from 7 benchmark results across 4 sources
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 60.1** ±1.9 · #28 of 128 · from 7 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -16,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  27.1%    58.6   2025-11-18   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  23.4%    60.6   2025-11-18   23% ▇▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    56.9   2026-03-26   15% ▇▇
-                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.2%    55.0   2026-03-26   15% ▇▇
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">LibriSpeech test-clean WER</a>       1.4%    64.2   2026-09-15   15% ▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">FLEURS English test WER</a>          4.2%    60.7   2026-09-15    7% ▇
-<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  15.8%    58.1   2026-08-18    1% ▇
-prior                   pull toward the middle                   49.8                 1% ▇
-                        weighted average                       = 59.2
+<a name="speech-stt-afrispeech-multibench-report"></a>AfriSpeech-MultiBench   <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · Parli…</a>  27.1%    59.7   2025-11-18   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2511.14255v1">AfriSpeech-MultiBench · 7-reg…</a>  23.4%    61.7   2025-11-18   24% ▇▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.0%    57.6   2026-03-26   15% ▇▇
+                        <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/en_longform.csv">Open ASR English long-form WER</a>  10.2%    55.7   2026-03-26   14% ▇▇
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">LibriSpeech test-clean WER</a>       1.4%    65.8   2026-09-15   13% ▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/parakeet-tdt-1.1b.json">FLEURS English test WER</a>          4.2%    62.0   2026-09-15    6% ▇
+<a name="speech-stt-sap-dysarthric-report"></a>Dysarthric ASR with c…  <a href="https://arxiv.org/html/2605.02782v2">Speech Accessibility Project …</a>  15.8%    59.1   2026-08-18    1% ▇
+prior                   pull toward the middle                   49.7                 1% ▇
+                        weighted average                       = 60.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +33,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~5.78GB   59.2
+fp32 · nvidia only  ~5.78GB   60.1
 </pre>
 
 ```sh

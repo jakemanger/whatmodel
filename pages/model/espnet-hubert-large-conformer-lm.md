@@ -6,9 +6,7 @@
 
 ESPnet · released 2022-01 · cc-by-4.0
 
-**score 74.9** ±24.7 · #1 of 11 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [LibriSpeech test-clean WER](https://whatmodel.sh/stt?set=librispeech-test-clean-wer%40speech-espnet-librispeech-20260929&score=set) comparison set only.
+**score 50.7** ±3.8 · #75 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  weight
-<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   3.7%    94.8    38% ▇▇▇▇▇
-                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   1.8%    86.4    22% ▇▇▇
-prior                   pull toward the middle                   50.0    40% ▇▇▇▇▇
-                        weighted average                       = 74.9
+<a name="speech-espnet-librispeech-20260929"></a>ESPnet LibriSpeech AS…  <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-other WER (l…</a>   3.7%    50.5    73% ▇▇▇▇▇▇▇▇▇
+                        <a href="https://github.com/espnet/espnet/blob/b90237261607e61f5e80b4bb8c362f80b209da3c/egs2/librispeech/asr1/README.md">LibriSpeech test-clean WER (l…</a>   1.8%    51.7    22% ▇▇▇
+prior                   pull toward the middle                   49.7     5% ▇
+                        weighted average                       = 50.7
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +28,7 @@ prior                   pull toward the middle                   50.0    40% ▇
 
 <pre>
 version     needs  score
-fp32 · CPU   ~8GB   74.9
+fp32 · CPU   ~8GB   50.7
 </pre>
 
 ```sh

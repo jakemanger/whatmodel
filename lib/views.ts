@@ -151,7 +151,7 @@ export function methodView() {
       const [id, ev] = key.split("@");
       return { key, id, evaluator: ev, benchmark: benchmarkById.get(id), n: p.n, a: p.a, sigma: p.sigma, info: (p.a * p.a) / (p.sigma * p.sigma), influence: (share.get(key) ?? 0) / ids.length };
     }).sort((a, b) => b.influence - a.influence);
-    return [{ cat, title: CATEGORIES[cat].title, models: ids.length, prior: prior / ids.length, rows }];
+    return [{ cat, title: CATEGORIES[cat].title, models: ids.length, prior: prior / ids.length, spread: f.levelSpread, rows }];
   });
 
   // Example text models: the leader, the best open-weights model, a mid-table model, a 2023 model,

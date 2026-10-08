@@ -6,7 +6,7 @@
 
 Show Lab / NUS · released 2023-10 · 6B params · cc-by-nc-4.0
 
-**score 26.8** ±2.3 · #83 of 87 · from 4 benchmark results across 1 source
+**score 26.6** ±2.3 · #83 of 87 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  weight
-<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.74 / 100    26.6    26% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  52.19 / 100    22.5    25% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  60.83 / 100    27.5    24% ▇▇▇
-                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  62.07 / 100    28.9    23% ▇▇▇
+<a name="visual-evalcrafter-2023"></a>EvalCrafter: original…  <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 motion quali…</a>  53.74 / 100    26.4    26% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 visual quali…</a>  52.19 / 100    22.2    25% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 temporal con…</a>  60.83 / 100    27.3    24% ▇▇▇
+                        <a href="https://arxiv.org/html/2310.11440v3">EvalCrafter 2023 text-video a…</a>  62.07 / 100    28.6    23% ▇▇▇
 prior                   pull toward the middle                         49.9     2% ▇
-                        weighted average                             = 26.8
+                        weighted average                             = 26.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                         49.9     
 
 <pre>
 version                                     needs  score
-fp16 + model CPU offload (official run_…  ~83.2GB   26.8
+fp16 + model CPU offload (official run_…  ~83.2GB   26.6
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Runway · released 2025-04 · closed weights
 
-**score 36.5** ±3.0 · #69 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 36.3** ±3.0 · #69 of 87 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1052.3    36.0   2026-09-22   96% ▇▇▇▇▇▇▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet">Arena image-to-video</a>    1052.3    35.8   2026-09-22   96% ▇▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle            49.9                 4% ▇
-                        weighted average                = 36.5
+                        weighted average                = 36.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

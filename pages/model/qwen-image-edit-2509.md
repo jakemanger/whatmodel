@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-09 · 20.43B params · apache-2.0
 
-**score 55.7** ±4.1 · #57 of 136 · from 3 benchmark results across 3 sources
+**score 55.3** ±4.2 · #58 of 139 · from 3 benchmark results across 3 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,11 +16,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   86.7%    58.6   2026-04-21   41% ▇▇▇▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1014.0    56.5   2026-03-30   38% ▇▇▇▇▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    47.1   2026-03-26   13% ▇▇
+<a name="visual-hp-edit"></a>HP-Edit: A Human-Pref…  <a href="https://arxiv.org/html/2604.19406v1#S5.T1">RealPref-Bench image editing …</a>   86.7%    58.1   2026-04-21   43% ▇▇▇▇▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1014.0    56.2   2026-03-30   36% ▇▇▇▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>   32.2%    46.7   2026-03-26   13% ▇▇
 prior                   pull toward the middle                    49.9                 7% ▇
-                        weighted average                        = 55.7
+                        weighted average                        = 55.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,7 +35,7 @@ api (fal.ai) · $0.030/image · [fal.ai](https://fal.ai/models/fal-ai/qwen-image
 
 <pre>
 version                                   needs  score
-gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   55.7
+gguf-q4_k_s + Qwen2.5-VL q8_0 (sd.cpp)  ~26.2GB   55.3
 </pre>
 
 ```sh

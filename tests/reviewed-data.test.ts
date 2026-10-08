@@ -85,6 +85,17 @@ test('runs of the same test share its sharpness, and a result alone in its run c
   assert.ok(g.get('m5')!.g > g.get('m4')!.g);
 });
 
+test('a small run leans on its test\'s other runs, as far as the fitted spread between evaluators allows', () => {
+  const offset = (shift: number) => {
+    const f = fit([...base, ...run('t1@lab', 2, 0, ['m4', 'm5'], shift)]);
+    return { level: f.params.get('t1@lab')!.d - f.params.get('t1')!.d, spread: f.levelSpread };
+  };
+  const mild = offset(0.5), hot = offset(5);
+  assert.ok(mild.level > 0 && mild.level < 0.5, `a mildly hot run is pulled toward the test (${mild.level})`);
+  assert.ok(hot.level > 4.5, `a run far off the others keeps its own level (${hot.level})`);
+  assert.ok(hot.spread > mild.spread);
+});
+
 test('edit error ratios above 100% retain their magnitude and ordering', () => {
   const b = { id: 'cer', name: 'CER', kind: 'err' as const, url: 'https://example.com' };
   assert.ok(toLatent(1.1, b) > toLatent(1.5, b));

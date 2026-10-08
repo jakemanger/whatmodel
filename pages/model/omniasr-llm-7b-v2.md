@@ -6,9 +6,7 @@
 
 Meta · released 2025-12 · 7.8B params · apache-2.0
 
-**score 57.7** ±2.4 · #39 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 58.8** ±2.5 · #36 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                test                            score  implies  date        weight
-<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.4%    60.4   2026-03-26   71% ▇▇▇▇▇▇▇▇
-                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.1%    51.3   2026-03-26   27% ▇▇▇
-prior                 pull toward the middle                   49.8                 2% ▇
-                      weighted average                       = 57.7
+<a name="open-asr"></a>Open ASR Leaderboard  <a href="https://github.com/huggingface/open_asr_leaderboard/blob/090df1224774bb3c152b57ed3f99898e679222e5/scripts/data/multilingual.csv">Open ASR multilingual WER</a>        4.4%    61.7   2026-03-26   72% ▇▇▇▇▇▇▇▇▇
+                      <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   8.1%    51.8   2026-03-26   26% ▇▇▇
+prior                 pull toward the middle                   49.7                 2% ▇
+                      weighted average                       = 58.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +28,7 @@ prior                 pull toward the middle                   49.8             
 
 <pre>
 version     needs  score
-bf16     ~19.22GB   57.7
+bf16     ~19.22GB   58.8
 </pre>
 
 ```sh

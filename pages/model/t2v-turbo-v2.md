@@ -6,7 +6,7 @@
 
 UC Santa Barbara · released 2024-10 · apache-2.0
 
-**score 37.6** ±5.2 · #67 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 37.6** ±5.0 · #67 of 87 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,15 +14,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10    32.6   2025-02-28   51% ▇▇▇▇▇▇
-<a name="paper-2410.05677v3-t2vturbo2"></a>T2V-Turbo-v2: Enhanci…  <a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>           83.5%    40.7   2025-09-16   37% ▇▇▇▇
-prior                   pull toward the middle                      49.9                12% ▇
+<a name="paper-2410.05677v3-t2vturbo2"></a>T2V-Turbo-v2: Enhanci…  <a href="https://arxiv.org/html/2410.05677v3#S4.T1">VBench (T2V total) (lab)</a>           83.5%    39.6   2025-09-16   47% ▇▇▇▇▇▇
+<a name="video-worldmodelbench"></a>WorldModelBench: Judg…  <a href="https://arxiv.org/html/2502.20694v1#S3.T3">WorldModelBench (human total)</a>  6.22 / 10    32.5   2025-02-28   43% ▇▇▇▇▇
+prior                   pull toward the middle                      49.9                11% ▇
                         weighted average                          = 37.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt)) · T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)) · WorldModelBench: Judging Video Generation Models As World Models ([CC-BY-4.0](../../licenses/video-worldmodelbench.txt))</sub>
 
 ## How to run it
 

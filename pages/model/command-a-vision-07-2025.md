@@ -6,7 +6,7 @@
 
 Cohere
 
-**score 66.2** ±8.4 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 44.1** ±9.5 · comparison only: no current run option verified · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  46.9%    73.6   2026-05-20   68% ▇▇▇▇▇▇▇▇
-prior                   pull toward the middle                   50.0                32% ▇▇▇▇
-                        weighted average                       = 66.2
+<a name="first-party-cohere-scores"></a>Cohere vendor-reporte…  <a href="https://cohere.com/blog/command-a-plus">CharXiv (reasoning questions)…</a>  46.9%    40.2   2026-05-20   60% ▇▇▇▇▇▇▇
+prior                   pull toward the middle                   50.0                40% ▇▇▇▇▇
+                        weighted average                       = 44.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

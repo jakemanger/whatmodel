@@ -6,36 +6,37 @@
 
 Ant Group · released 2026-09 · 6B params · apache-2.0
 
-**score 35.0** ±14.7 · #2 of 2 · from 5 benchmark results across 1 source
+**score 51.5** ±2.7 · #72 of 139 · from 6 benchmark results across 2 sources
 
-Score within the [CVTG-2K word accuracy](https://whatmodel.sh/image?set=cvtg-2k-word-accuracy%40visual-llada-image&score=set) comparison set only.
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                         score  implies  date        weight
-<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>              88.5%    60.2   2026-09-03   17% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>    91.9%    57.1   2026-09-03   16% ▇▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                82.0%    29.3   2026-09-03    7% ▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>  84.0%    16.9   2026-09-03    6% ▇
-                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>    89.9%    11.8   2026-09-03    5% ▇
-prior                   pull toward the middle                50.0                49% ▇▇▇▇▇▇
-                        weighted average                    = 35.0
+source                  test                            score  implies  date        weight
+<a name="visual-llada-image"></a>LLaDA-Image: Building…  <a href="https://arxiv.org/html/2609.03796v1#S5.T7">GenEval (lab)</a>                   82.0%    52.3   2026-09-03   17% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (EN) (lab)</a>       89.9%    47.3   2026-09-03   15% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T5">LongText-Bench (CN) (lab)</a>       91.9%    51.7   2026-09-03   14% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T8">DPG-Bench (lab)</a>                 88.5%    51.9   2026-09-03   14% ▇▇
+                        <a href="https://arxiv.org/html/2609.03796v1#S5.T6">CVTG-2K word accuracy (lab)</a>     84.0%    50.5   2026-09-03   14% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>  41.3%    54.3   2026-10-07   22% ▇▇▇
+prior                   pull toward the middle                   49.9                 3% ▇
+                        weighted average                       = 51.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt))</sub>
+<sub>Licences: LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes ([CC-BY-SA-4.0](../../licenses/visual-llada-image.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-bf16 · nvidia only                        ~59.6GB   35.0
-f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   35.0
-gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   35.0
+bf16 · nvidia only                        ~59.6GB   51.5
+f16 + LLaDA2 text encoder q8_0 (sd.cpp)   ~38.5GB   51.5
+gguf-q8_0 + LLaDA2 text encoder q4_k (s…  ~21.6GB   51.5
 </pre>
 
 ```sh

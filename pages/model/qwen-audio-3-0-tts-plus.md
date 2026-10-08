@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · proprietary
 
-**score 65.9** ±2.5 · #7 of 98 · from 4 benchmark results across 1 source
+**score 66.2** ±2.5 · #7 of 100 · from 4 benchmark results across 1 source
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.7%    66.6   2026-07-27   36% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>     6.7%    64.6   2026-07-27   34% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>     7.4%    67.4   2026-07-27   16% ▇▇
-                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   3.1%    68.4   2026-07-27   12% ▇
-prior                   pull toward the middle                   49.9                 2% ▇
-                        weighted average                       = 65.9
+<a name="speech-qwen-audio3-tts-report"></a>Qwen-Audio-3.0-TTS te…  <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval multilingual voice c…</a>   4.7%    67.1   2026-07-27   35% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-en · WER (lab)</a>     6.7%    64.9   2026-07-27   34% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval hard-zh · CER (lab)</a>     7.4%    67.5   2026-07-27   16% ▇▇
+                        <a href="https://arxiv.org/html/2607.23938v1">CV3-Eval protocol, 7 added la…</a>   3.1%    68.6   2026-07-27   13% ▇▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 66.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

@@ -4,43 +4,67 @@
 
 # ERNIE 4.5 300B-A47B
 
-Baidu · released 2025-06
+Baidu · released 2025-06 · 300B params (47B active) · apache-2.0
 
-[Model and usage documentation](https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT)
+**score 58.8** ±1.3 · #167 of 551 · from 16 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-MMLU                                 86.5%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-MMLU-Pro                             78.4%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-C-Eval                               90.6%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-CMMLU                                90.2%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-ChineseSimpleQA                      77.1%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-SimpleQA                             45.9%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-IFEval (aggregation unspecified)     88.0%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-Multi-IF (aggregation unspecified)   76.6%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-SysBench (aggregation unspecified)   69.8%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-MATH-500                             96.4%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-GSM8K                                96.6%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-AIME 2024                            54.8%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-AIME 2025                            35.1%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-BIG-Bench Hard                       94.3%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-MuSR                                 69.9%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-LiveCodeBench (version unspecifie…   38.8%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-HumanEval+                           92.1%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
-MBPP+                                81.0%  lab          <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ERNIE 4.5 post-trained 300B-A…</a>
+source                  test                            score  implies  date        weight
+<a name="card-ernie-45-posttrained-final"></a>ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2025 (lab)</a>                 35.1%    52.4   2026-09-25   11% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">AIME 2024 (lab)</a>                 54.8%    56.3   2026-09-25   10% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">BIG-Bench Hard (lab)</a>            94.3%    62.0   2026-09-25    9% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">GSM8K (lab)</a>                     96.6%    58.8   2026-09-25    8% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">HumanEval+ (lab)</a>                92.1%    54.8   2026-09-25    8% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspec…</a>  38.8%    54.1   2026-09-25    7% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                      86.5%    57.6   2026-09-25    7% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                  78.4%    58.9   2026-09-25    7% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  45.9%    71.2   2026-09-25    6% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                    90.6%    61.4   2026-09-25    5% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>                  96.4%    64.3   2026-09-25    5% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                     90.2%    61.9   2026-09-25    4% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">Multi-IF (aggregation unspeci…</a>  76.6%    60.8   2026-09-25    4% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MBPP+ (lab)</a>                     81.0%    58.1   2026-09-25    3% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">ChineseSimpleQA (lab)</a>           77.1%    65.1   2026-09-25    3% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">IFEval (aggregation unspecifi…</a>  88.0%    61.1   2026-09-25    3% ▇
+prior                   pull toward the middle                   50.0                 1% ▇
+                        weighted average                       = 58.8
 </pre>
 
+<sub>~ averaged with other results for the same test</sub>
+
 <sub>Licences: ERNIE 4.5 post-trained 300B-A47B benchmark chart ([Apache-2.0](../../licenses/cards-final-NOTICE.txt))</sub>
+
+<details><summary>Not counted (2)</summary>
+
+<pre>
+source                  test                            score  why
+ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SysBench (aggregation unspeci…</a>  69.8%  too few models have it yet
+ERNIE 4.5 post-traine…  <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MuSR</a>                            69.9%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/baidu/ERNIE-4.5-300B-A47B-PT/blob/47bbaf1c9e356313c3cb2ded9078a494fb152f0e/README.md): Baidu official model card (ERNIE-4.5-300B-A47B-PT): configuration table Context Length 131072. Observed 2026-09-25.</sub>
 
+<pre>
+download              size  score
+4-bit ud-q4_k_xl  ~180.5GB   58.8
+2-bit ud-q2_k_xl   ~90.5GB   58.8
+</pre>
+
 ```sh
+# 4-bit ud-q4_k_xl
 llama-server -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q4_K_XL
+# 2-bit ud-q2_k_xl
 llama-server -hf unsloth/ERNIE-4.5-300B-A47B-PT-GGUF:UD-Q2_K_XL
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/ernie-4-5-300b-a47b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/ernie-4-5-300b-a47b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

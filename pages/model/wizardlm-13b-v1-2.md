@@ -6,34 +6,36 @@
 
 Microsoft · released 2023-07 · 13B params · llama2
 
-**score 32.7** ±1.4 · #474 of 549 · from 7 benchmark results across 2 sources
+**score 34.6** ±1.2 · #461 of 551 · from 9 benchmark results across 3 sources
 
 ## How the score was worked out
 
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>            50.4%    30.5   2023-11-21   24% ▇▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>           38.5%    33.5   2023-11-21   15% ▇▇
-                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                    48.6%    36.0   2023-11-21   10% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                     42.8%    29.4   2023-11-21   10% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>          38.3%    33.1   2023-11-21    9% ▇
-                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                 69.0%    27.0   2023-11-21    6% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>          1149.5    35.0   2026-10-02   25% ▇▇▇
-prior                   pull toward the middle            50.0                 1% ▇
-                        weighted average                = 32.7
+source                  test                             score  implies  date        weight
+<a name="paper-2311.11045v2"></a>Orca 2: Teaching Smal…  <a href="https://arxiv.org/html/2311.11045v2">ARC Challenge</a>                    50.4%    32.3   2023-11-21   17% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">BIG-Bench Hard</a>                   38.5%    34.3   2023-11-21   15% ▇▇
+                        <a href="https://arxiv.org/html/2311.11045v2">GSM8K</a>                            48.6%    36.6   2023-11-21   11% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                             42.8%    31.0   2023-11-21    9% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                  38.3%    33.0   2023-11-21    7% ▇
+                        <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                         69.0%    28.5   2023-11-21    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1149.5    35.9   2026-10-02   20% ▇▇
+<a name="alpaca-eval-leaderboard-apache"></a>AlpacaEval 1.0 and 2.…  <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv">AlpacaEval 2 length-controlled</a>   14.5%    37.5   2025-08-09   12% ▇
+                        <a href="https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv">AlpacaEval 1.0 win rate (vs t…</a>   89.2%    40.6   2025-08-09    3% ▇
+prior                   pull toward the middle                    50.0                 1% ▇
+                        weighted average                        = 34.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: Orca 2: Teaching Small Language Models How to Reason ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · AlpacaEval 1.0 and 2.0 leaderboards ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 
 <pre>
 download        size  score
-4-bit fp16  ~26.03GB   32.7
+4-bit fp16  ~26.03GB   34.6
 </pre>
 
 ```sh

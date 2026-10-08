@@ -1,0 +1,1553 @@
+{
+ "about": "",
+ "results": [
+  {
+   "model": "llama-3-1-nemotron-51b",
+   "bench": "winogrande",
+   "score": 0.8453,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'Winogrande', column 'Nemotron-51B' = 84.53. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "winogrande",
+   "score": 0.8508,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'Winogrande', column 'Llama-3.1-70B-Instruct' = 85.08. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-nemotron-51b",
+   "bench": "arc-challenge",
+   "score": 0.692,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'ARC Challenge', column 'Nemotron-51B' = 69.2. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "arc-challenge",
+   "score": 0.7039,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'ARC Challenge', column 'Llama-3.1-70B-Instruct' = 70.39. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-nemotron-51b",
+   "bench": "mmlu",
+   "score": 0.802,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'MMLU', column 'Nemotron-51B' = 80.2. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "mmlu",
+   "score": 0.8166,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'MMLU', column 'Llama-3.1-70B-Instruct' = 81.66. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-nemotron-51b",
+   "bench": "hellaswag",
+   "score": 0.8558,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'HellaSwag', column 'Nemotron-51B' = 85.58. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "hellaswag",
+   "score": 0.8644,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'HellaSwag', column 'Llama-3.1-70B-Instruct' = 86.44. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-nemotron-51b",
+   "bench": "gsm8k",
+   "score": 0.9143,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'GSM8K', column 'Nemotron-51B' = 91.43. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "gsm8k",
+   "score": 0.9204,
+   "source": "https://arxiv.org/html/2411.19146v5",
+   "source_id": "paper-2411.19146v5-puzzle",
+   "by": "lab",
+   "date": "2025-06-03",
+   "note": "Puzzle paper (NVIDIA, arXiv 2411.19146v5) Table 2 'Accuracy comparison of Nemotron-51B with Llama-3.1-70B-Instruct across several benchmarks', row 'GSM8K', column 'Llama-3.1-70B-Instruct' = 92.04. Both models appear in the one table with the authors' own evaluation (NVIDIA authors; the paper compares child and parent models it evaluated itself); shots/harness are not printed in the paper, so the note keeps the generic benchmark id. Non-chat prompt row (not the '* Chat' rows). Nemotron-51B = Llama-3.1-Nemotron-51B-Instruct (Sec. 'We showcase ... Llama-3.1-Nemotron-51B-Instruct (Nemotron-51B)')."
+  },
+  {
+   "model": "eurus-2-7b-prime",
+   "bench": "aime-2024",
+   "score": 0.267,
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "source_id": "first-party-prime-rl-scores",
+   "by": "lab",
+   "date": "2024-12-31",
+   "note": "PRIME-RL Eurus-2-7B-PRIME model card (@2f47d19) '## Evaluation' table, row 'AIME 2024', column 'Eurus-2-7B-PRIME' = 26.7 (percent, stored /100; the '(+x)' delta in the PRIME column ignored). Vendor's own two models (Eurus-2-7B-PRIME and its SFT initial model). Decoding settings and sample counts are not printed on the card. Other columns (Qwen2.5-Math-7B-Instruct, Llama-3.1-70B-Instruct, GPT-4o) are other labs' cells and are not recorded."
+  },
+  {
+   "model": "eurus-2-7b-sft",
+   "bench": "aime-2024",
+   "score": 0.033,
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "source_id": "first-party-prime-rl-scores",
+   "by": "lab",
+   "date": "2024-12-31",
+   "note": "PRIME-RL Eurus-2-7B-PRIME model card (@2f47d19) '## Evaluation' table, row 'AIME 2024', column 'Eurus-2-7B-SFT' = 3.3 (percent, stored /100; the '(+x)' delta in the PRIME column ignored). Vendor's own two models (Eurus-2-7B-PRIME and its SFT initial model). Decoding settings and sample counts are not printed on the card. Other columns (Qwen2.5-Math-7B-Instruct, Llama-3.1-70B-Instruct, GPT-4o) are other labs' cells and are not recorded."
+  },
+  {
+   "model": "eurus-2-7b-prime",
+   "bench": "math-500",
+   "score": 0.792,
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "source_id": "first-party-prime-rl-scores",
+   "by": "lab",
+   "date": "2024-12-31",
+   "note": "PRIME-RL Eurus-2-7B-PRIME model card (@2f47d19) '## Evaluation' table, row 'MATH-500', column 'Eurus-2-7B-PRIME' = 79.2 (percent, stored /100; the '(+x)' delta in the PRIME column ignored). Vendor's own two models (Eurus-2-7B-PRIME and its SFT initial model). Decoding settings and sample counts are not printed on the card. Other columns (Qwen2.5-Math-7B-Instruct, Llama-3.1-70B-Instruct, GPT-4o) are other labs' cells and are not recorded."
+  },
+  {
+   "model": "eurus-2-7b-sft",
+   "bench": "math-500",
+   "score": 0.651,
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "source_id": "first-party-prime-rl-scores",
+   "by": "lab",
+   "date": "2024-12-31",
+   "note": "PRIME-RL Eurus-2-7B-PRIME model card (@2f47d19) '## Evaluation' table, row 'MATH-500', column 'Eurus-2-7B-SFT' = 65.1 (percent, stored /100; the '(+x)' delta in the PRIME column ignored). Vendor's own two models (Eurus-2-7B-PRIME and its SFT initial model). Decoding settings and sample counts are not printed on the card. Other columns (Qwen2.5-Math-7B-Instruct, Llama-3.1-70B-Instruct, GPT-4o) are other labs' cells and are not recorded."
+  },
+  {
+   "model": "eurus-2-7b-prime",
+   "bench": "minerva-math",
+   "score": 0.386,
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "source_id": "first-party-prime-rl-scores",
+   "by": "lab",
+   "date": "2024-12-31",
+   "note": "PRIME-RL Eurus-2-7B-PRIME model card (@2f47d19) '## Evaluation' table, row 'Minerva Math', column 'Eurus-2-7B-PRIME' = 38.6 (percent, stored /100; the '(+x)' delta in the PRIME column ignored). Vendor's own two models (Eurus-2-7B-PRIME and its SFT initial model). Decoding settings and sample counts are not printed on the card. Other columns (Qwen2.5-Math-7B-Instruct, Llama-3.1-70B-Instruct, GPT-4o) are other labs' cells and are not recorded."
+  },
+  {
+   "model": "eurus-2-7b-sft",
+   "bench": "minerva-math",
+   "score": 0.327,
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "source_id": "first-party-prime-rl-scores",
+   "by": "lab",
+   "date": "2024-12-31",
+   "note": "PRIME-RL Eurus-2-7B-PRIME model card (@2f47d19) '## Evaluation' table, row 'Minerva Math', column 'Eurus-2-7B-SFT' = 32.7 (percent, stored /100; the '(+x)' delta in the PRIME column ignored). Vendor's own two models (Eurus-2-7B-PRIME and its SFT initial model). Decoding settings and sample counts are not printed on the card. Other columns (Qwen2.5-Math-7B-Instruct, Llama-3.1-70B-Instruct, GPT-4o) are other labs' cells and are not recorded."
+  },
+  {
+   "model": "gemini-2-5-flash-lite",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.967,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemini-2.5-flash-lite': Factual Consistency Rate = 96.7% (Hallucination Rate 3.3%, Answer Rate 99.5%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "phi-4",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.963,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'microsoft/Phi-4': Factual Consistency Rate = 96.3% (Hallucination Rate 3.7%, Answer Rate 80.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "snowflake-arctic-instruct",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.957,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'snowflake/snowflake-arctic-instruct': Factual Consistency Rate = 95.7% (Hallucination Rate 4.3%, Answer Rate 62.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemma-3-12b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.956,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemma-3-12b-it': Factual Consistency Rate = 95.6% (Hallucination Rate 4.4%, Answer Rate 97.4%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-8b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.952,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3-8b': Factual Consistency Rate = 95.2% (Hallucination Rate 4.8%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "granite-4-0-h-small",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.948,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'ibm-granite/granite-4.0-h-small': Factual Consistency Rate = 94.8% (Hallucination Rate 5.2%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemma-4-26b-a4b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.948,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemma-4-26b-a4b-it': Factual Consistency Rate = 94.8% (Hallucination Rate 5.2%, Answer Rate 99.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-v3-2-exp",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.947,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'deepseek-ai/DeepSeek-V3.2-Exp': Factual Consistency Rate = 94.7% (Hallucination Rate 5.3%, Answer Rate 96.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-14b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.946,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3-14b': Factual Consistency Rate = 94.6% (Hallucination Rate 5.4%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-v3-1",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.945,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'deepseek-ai/DeepSeek-V3.1': Factual Consistency Rate = 94.5% (Hallucination Rate 5.5%, Answer Rate 94.5%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-4b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.943,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3-4b': Factual Consistency Rate = 94.3% (Hallucination Rate 5.7%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-32b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.941,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3-32b': Factual Consistency Rate = 94.1% (Hallucination Rate 5.9%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-v3",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.939,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'deepseek-ai/DeepSeek-V3': Factual Consistency Rate = 93.9% (Hallucination Rate 6.1%, Answer Rate 97.5%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-v3-2",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.937,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'deepseek-ai/DeepSeek-V3.2': Factual Consistency Rate = 93.7% (Hallucination Rate 6.3%, Answer Rate 92.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemma-3-4b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.936,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemma-3-4b-it': Factual Consistency Rate = 93.6% (Hallucination Rate 6.4%, Answer Rate 67.3%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "command-r-plus-08-2024",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.931,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'CohereLabs/command-r-plus-08-2024': Factual Consistency Rate = 93.1% (Hallucination Rate 6.9%, Answer Rate 95.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gpt-6-sol",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.935,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/gpt-6-sol': Factual Consistency Rate = 93.5% (Hallucination Rate 6.5%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "trinity-large-preview",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.931,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'arcee-ai/trinity-large-preview': Factual Consistency Rate = 93.1% (Hallucination Rate 6.9%, Answer Rate 99.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemini-2-5-pro",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.93,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemini-2.5-pro': Factual Consistency Rate = 93.0% (Hallucination Rate 7.0%, Answer Rate 99.1%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "ministral-3b-2410",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.927,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'mistralai/ministral-3b-2410': Factual Consistency Rate = 92.7% (Hallucination Rate 7.3%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemma-3-27b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.926,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemma-3-27b-it': Factual Consistency Rate = 92.6% (Hallucination Rate 7.4%, Answer Rate 98.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemma-4-31b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.926,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemma-4-31b-it': Factual Consistency Rate = 92.6% (Hallucination Rate 7.4%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gpt-6-astra",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.913,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/gpt-6-astra': Factual Consistency Rate = 91.3% (Hallucination Rate 8.7%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "ministral-8b-2410",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.926,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'mistralai/ministral-8b-2410': Factual Consistency Rate = 92.6% (Hallucination Rate 7.4%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-4-scout",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.923,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'meta-llama/Llama-4-Scout-17B-16E-Instruct': Factual Consistency Rate = 92.3% (Hallucination Rate 7.7%, Answer Rate 99.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemini-2-5-flash",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.922,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemini-2.5-flash': Factual Consistency Rate = 92.2% (Hallucination Rate 7.8%, Answer Rate 99.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "command-a",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.907,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'CohereLabs/command-a-03-2025': Factual Consistency Rate = 90.7% (Hallucination Rate 9.3%, Answer Rate 97.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gpt-5-5",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.907,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/gpt-5.5': Factual Consistency Rate = 90.7% (Hallucination Rate 9.3%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-235b-a22b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.907,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3-235b-a22b': Factual Consistency Rate = 90.7% (Hallucination Rate 9.3%, Answer Rate 94.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-next-80b-a3b-thinking",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.907,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3-next-80b-a3b-thinking': Factual Consistency Rate = 90.7% (Hallucination Rate 9.3%, Answer Rate 94.4%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "glm-4-7-flash",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.907,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'zai-org/GLM-4.7-flash': Factual Consistency Rate = 90.7% (Hallucination Rate 9.3%, Answer Rate 91.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "glm-4-6",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.905,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'zai-org/GLM-4.6': Factual Consistency Rate = 90.5% (Hallucination Rate 9.5%, Answer Rate 94.5%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "nemotron-3-nano-30b-a3b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.904,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'nvidia/Nemotron-3-Nano-30B-A3B': Factual Consistency Rate = 90.4% (Hallucination Rate 9.6%, Answer Rate 99.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gpt-4o-2024-08-06",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.904,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/gpt-4o-2024-08-06': Factual Consistency Rate = 90.4% (Hallucination Rate 9.6%, Answer Rate 93.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "glm-5",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.899,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'zai-org/glm-5': Factual Consistency Rate = 89.9% (Hallucination Rate 10.1%, Answer Rate 99.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemini-3-1-pro",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.896,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemini-3.1-pro-preview': Factual Consistency Rate = 89.6% (Hallucination Rate 10.4%, Answer Rate 99.4%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-5-35b-a3b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.895,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3.5-35b-a3b': Factual Consistency Rate = 89.5% (Hallucination Rate 10.5%, Answer Rate 99.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "claude-sonnet-4-6",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.894,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'anthropic/claude-sonnet-4-6': Factual Consistency Rate = 89.4% (Hallucination Rate 10.6%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "granite-3-3-8b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.894,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'ibm-granite/granite-3.3-8b-instruct': Factual Consistency Rate = 89.4% (Hallucination Rate 10.6%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "kimi-k2-6",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.892,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'moonshotai/kimi-k2.6': Factual Consistency Rate = 89.2% (Hallucination Rate 10.8%, Answer Rate 99.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-5-122b-a10b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.888,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3.5-122b-a10b': Factual Consistency Rate = 88.8% (Hallucination Rate 11.2%, Answer Rate 99.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-r1",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.887,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'deepseek-ai/DeepSeek-R1': Factual Consistency Rate = 88.7% (Hallucination Rate 11.3%, Answer Rate 97.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "claude-opus-4-7",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.88,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'anthropic/claude-opus-4-7': Factual Consistency Rate = 88.0% (Hallucination Rate 12.0%, Answer Rate 98.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-5-27b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.879,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'qwen/qwen3.5-27b': Factual Consistency Rate = 87.9% (Hallucination Rate 12.1%, Answer Rate 99.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gpt-5-6-sol",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.876,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/gpt-5.6-sol': Factual Consistency Rate = 87.6% (Hallucination Rate 12.4%, Answer Rate 99.1%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "claude-opus-4-6",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.878,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'anthropic/claude-opus-4-6': Factual Consistency Rate = 87.8% (Hallucination Rate 12.2%, Answer Rate 99.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "mercury-2",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.877,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'inceptionlabs/mercury-2': Factual Consistency Rate = 87.7% (Hallucination Rate 12.3%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemini-3-flash-preview",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.865,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemini-3-flash-preview': Factual Consistency Rate = 86.5% (Hallucination Rate 13.5%, Answer Rate 99.8%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gemini-3-pro-preview",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.864,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'google/gemini-3-pro-preview': Factual Consistency Rate = 86.4% (Hallucination Rate 13.6%, Answer Rate 99.4%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "kimi-k2-5",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.858,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'moonshotai/Kimi-K2.5': Factual Consistency Rate = 85.8% (Hallucination Rate 14.2%, Answer Rate 92.2%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "gpt-oss-120b",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.858,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/gpt-oss-120b': Factual Consistency Rate = 85.8% (Hallucination Rate 14.2%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "kimi-k2-0905",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.821,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'moonshotai/Kimi-K2-Instruct-0905': Factual Consistency Rate = 82.1% (Hallucination Rate 17.9%, Answer Rate 98.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "grok-4-1-fast-reasoning",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.808,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'xai-org/grok-4-1-fast-reasoning': Factual Consistency Rate = 80.8% (Hallucination Rate 19.2%, Answer Rate 99.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "o3-pro",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.767,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'openai/o3-pro': Factual Consistency Rate = 76.7% (Hallucination Rate 23.3%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "phi-4-mini",
+   "bench": "vectara-hhem-2-3-current",
+   "score": 0.765,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2026-09-22",
+   "note": "Vectara hallucination-leaderboard README @e435b6b (HHEM-2.3, current dataset (README last updated September 22, 2026)), leaderboard table row 'microsoft/Phi-4-mini-instruct': Factual Consistency Rate = 76.5% (Hallucination Rate 23.5%, Answer Rate 92.5%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-14b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.978,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-14B': Factual Consistency Rate = 97.8% (Hallucination Rate 2.2%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-v2-5",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.976,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'DeepSeek-V2.5': Factual Consistency Rate = 97.6% (Hallucination Rate 2.4%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-4b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.973,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-4B': Factual Consistency Rate = 97.3% (Hallucination Rate 2.7%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-7b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.972,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-7B-Instruct': Factual Consistency Rate = 97.2% (Hallucination Rate 2.8%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-32b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.972,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-32B': Factual Consistency Rate = 97.2% (Hallucination Rate 2.8%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-32b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.97,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-32B-Instruct': Factual Consistency Rate = 97.0% (Hallucination Rate 3.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "snowflake-arctic-instruct",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.97,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Snowflake-Arctic-Instruct': Factual Consistency Rate = 97.0% (Hallucination Rate 3.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-8b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.97,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-8B': Factual Consistency Rate = 97.0% (Hallucination Rate 3.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-next-80b-a3b-thinking",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.963,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-next-80b-a3b-thinking': Factual Consistency Rate = 96.3% (Hallucination Rate 3.7%, Answer Rate 99.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-0-6b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.963,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-0.6B': Factual Consistency Rate = 96.3% (Hallucination Rate 3.7%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-max-preview",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.962,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-Max-Preview': Factual Consistency Rate = 96.2% (Hallucination Rate 3.8%, Answer Rate 97.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-1-405b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.961,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.1-405B-Instruct': Factual Consistency Rate = 96.1% (Hallucination Rate 3.9%, Answer Rate 99.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-3-70b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.96,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.3-70B-Instruct': Factual Consistency Rate = 96.0% (Hallucination Rate 4.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-vl-7b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.958,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2-VL-7B-Instruct': Factual Consistency Rate = 95.8% (Hallucination Rate 4.2%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-14b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.958,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-14B-Instruct': Factual Consistency Rate = 95.8% (Hallucination Rate 4.2%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-72b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.957,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-72B-Instruct': Factual Consistency Rate = 95.7% (Hallucination Rate 4.3%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-2-90b-vision",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.957,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.2-90B-Vision-Instruct': Factual Consistency Rate = 95.7% (Hallucination Rate 4.3%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-1-7b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.956,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-1.7B': Factual Consistency Rate = 95.6% (Hallucination Rate 4.4%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "claude-3-7-sonnet-20250219",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.956,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Claude-3.7-Sonnet': Factual Consistency Rate = 95.6% (Hallucination Rate 4.4%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "claude-haiku-4-5",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.955,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Claude-Haiku-4-5': Factual Consistency Rate = 95.5% (Hallucination Rate 4.5%, Answer Rate 99.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-72b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.953,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2-72B-Instruct': Factual Consistency Rate = 95.3% (Hallucination Rate 4.7%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "mixtral-8x22b-instruct-v0-1",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.953,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Mixtral-8x22B-Instruct-v0.1': Factual Consistency Rate = 95.3% (Hallucination Rate 4.7%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen3-30b-a3b-thinking-2507",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.952,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen3-30b-a3b-thinking-2507': Factual Consistency Rate = 95.2% (Hallucination Rate 4.8%, Answer Rate 98.2%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.95,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.1-70B-Instruct': Factual Consistency Rate = 95.0% (Hallucination Rate 5.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.946,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.1-8B-Instruct': Factual Consistency Rate = 94.6% (Hallucination Rate 5.4%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-2-11b-vision",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.945,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.2-11B-Vision-Instruct': Factual Consistency Rate = 94.5% (Hallucination Rate 5.5%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-3b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.93,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-3B-Instruct': Factual Consistency Rate = 93.0% (Hallucination Rate 7.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-r1-0528",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.923,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'DeepSeek-R1-0528': Factual Consistency Rate = 92.3% (Hallucination Rate 7.7%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-2-3b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.921,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.2-3B-Instruct': Factual Consistency Rate = 92.1% (Hallucination Rate 7.9%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "deepseek-v3-0324",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.92,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'DeepSeek-V3-0324': Factual Consistency Rate = 92.0% (Hallucination Rate 8.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "mistral-7b-instruct-v0-3",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.905,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Mistral-7B-Instruct-v0.3': Factual Consistency Rate = 90.5% (Hallucination Rate 9.5%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-1-5b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.842,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-1.5B-Instruct': Factual Consistency Rate = 84.2% (Hallucination Rate 15.8%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "mixtral-8x7b-instruct-v0-1",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.799,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Mixtral-8x7B-Instruct-v0.1': Factual Consistency Rate = 79.9% (Hallucination Rate 20.1%, Answer Rate 99.9%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-2-1b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.793,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Llama-3.2-1B-Instruct': Factual Consistency Rate = 79.3% (Hallucination Rate 20.7%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-5-0-5b",
+   "bench": "vectara-hhem-2-1-old-dataset",
+   "score": 0.748,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2025-10-16",
+   "note": "Vectara hallucination-leaderboard README @37fc0e9 (HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)), leaderboard table row 'Qwen2.5-0.5B-Instruct': Factual Consistency Rate = 74.8% (Hallucination Rate 25.2%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "snowflake-arctic-instruct",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.974,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Snowflake Arctic': Factual Consistency Rate = 97.4% (Hallucination Rate 2.6%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "qwen2-72b",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.965,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Qwen2-72B-Instruct': Factual Consistency Rate = 96.5% (Hallucination Rate 3.5%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "mistral-7b-instruct-v0-2",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.955,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Mistral 7B Instruct-v0.2': Factual Consistency Rate = 95.5% (Hallucination Rate 4.5%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-1-405b",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.955,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Llama-3.1-405B-Instruct': Factual Consistency Rate = 95.5% (Hallucination Rate 4.5%, Answer Rate 99.6%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-1-70b",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.95,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Llama-3.1-70B-Instruct': Factual Consistency Rate = 95.0% (Hallucination Rate 5.0%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.945,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Llama-3.1-8B-Instruct': Factual Consistency Rate = 94.5% (Hallucination Rate 5.5%, Answer Rate 100.0%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "mistral-7b-instruct-v0-1",
+   "bench": "vectara-hhem-1-0",
+   "score": 0.906,
+   "source": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "source_id": "vectara-hhem-readme-apache",
+   "by": "independent",
+   "date": "2024-07-25",
+   "note": "Vectara hallucination-leaderboard README @dd8eedf (HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)), leaderboard table row 'Mistral 7B Instruct-v0.1': Factual Consistency Rate = 90.6% (Hallucination Rate 9.4%, Answer Rate 98.7%). Vectara fed each model the same summarisation prompt over its document set and scored summaries with HHEM. Stored as the fraction of summaries judged factually consistent (higher is better)."
+  },
+  {
+   "model": "t2v-turbo-vc2",
+   "bench": "vbench-t2v-total",
+   "score": 0.8101,
+   "source": "https://arxiv.org/html/2405.18750v2",
+   "source_id": "paper-2405.18750v2-t2vturbo",
+   "by": "lab",
+   "date": "2024-10-11",
+   "note": "T2V-Turbo paper (arXiv 2405.18750v2) Table 1 'Automatic Evaluation on VBench', row 'Our T2V-Turbo (VC2)', column Total score = 81.01 (stored /100; VBench 1.0 T2V, 16 dimensions, 4-step inference per Sec. 4.1). The authors' own two distilled models (VC2 = distilled from VideoCrafter2, MS = from ModelScopeT2V). Baseline rows (ModelScopeT2V, VideoCrafter2, proprietary models) are copied leaderboard values, not authors' runs, and are not recorded."
+  },
+  {
+   "model": "t2v-turbo-ms",
+   "bench": "vbench-t2v-total",
+   "score": 0.8062,
+   "source": "https://arxiv.org/html/2405.18750v2",
+   "source_id": "paper-2405.18750v2-t2vturbo",
+   "by": "lab",
+   "date": "2024-10-11",
+   "note": "T2V-Turbo paper (arXiv 2405.18750v2) Table 1 'Automatic Evaluation on VBench', row 'Our T2V-Turbo (MS)', column Total score = 80.62 (stored /100; VBench 1.0 T2V, 16 dimensions, 4-step inference per Sec. 4.1). The authors' own two distilled models (VC2 = distilled from VideoCrafter2, MS = from ModelScopeT2V). Baseline rows (ModelScopeT2V, VideoCrafter2, proprietary models) are copied leaderboard values, not authors' runs, and are not recorded."
+  },
+  {
+   "model": "bagel",
+   "bench": "xtc-bench-gen-overall",
+   "score": 0.725,
+   "source": "https://arxiv.org/html/2604.25072v1",
+   "source_id": "paper-2604.25072v1-xtcbench",
+   "by": "independent",
+   "date": "2026-04-27",
+   "note": "XTC-Bench paper (arXiv 2604.25072v1, 27 Apr 2026) Table 2 'Generation performance (GG) evaluated on scene graph nodes', row 'BAGEL-7B', column 'Overall Gen.' = 0.725 (continuous 0-1 scene-graph agreement over all nodes). Authors' own run: Sec. 4.1 'We evaluate eight open-sourced uMMs with XTC-Bench, including BAGEL 7B, BLIP3-o-8B, Janus-Pro-7B, MMaDA-8B, OmniGen-2, Show-o, Show-o2-7B, and Tar-7B'. Show-o (no resolution/checkpoint stated), MMaDA-8B, Tar-7B and the commercial GPT/Gemini rows are not recorded."
+  },
+  {
+   "model": "blip3o-8b",
+   "bench": "xtc-bench-gen-overall",
+   "score": 0.545,
+   "source": "https://arxiv.org/html/2604.25072v1",
+   "source_id": "paper-2604.25072v1-xtcbench",
+   "by": "independent",
+   "date": "2026-04-27",
+   "note": "XTC-Bench paper (arXiv 2604.25072v1, 27 Apr 2026) Table 2 'Generation performance (GG) evaluated on scene graph nodes', row 'BLIP3-o-8B', column 'Overall Gen.' = 0.545 (continuous 0-1 scene-graph agreement over all nodes). Authors' own run: Sec. 4.1 'We evaluate eight open-sourced uMMs with XTC-Bench, including BAGEL 7B, BLIP3-o-8B, Janus-Pro-7B, MMaDA-8B, OmniGen-2, Show-o, Show-o2-7B, and Tar-7B'. Show-o (no resolution/checkpoint stated), MMaDA-8B, Tar-7B and the commercial GPT/Gemini rows are not recorded."
+  },
+  {
+   "model": "janus-pro-7b",
+   "bench": "xtc-bench-gen-overall",
+   "score": 0.499,
+   "source": "https://arxiv.org/html/2604.25072v1",
+   "source_id": "paper-2604.25072v1-xtcbench",
+   "by": "independent",
+   "date": "2026-04-27",
+   "note": "XTC-Bench paper (arXiv 2604.25072v1, 27 Apr 2026) Table 2 'Generation performance (GG) evaluated on scene graph nodes', row 'Janus-Pro-7B', column 'Overall Gen.' = 0.499 (continuous 0-1 scene-graph agreement over all nodes). Authors' own run: Sec. 4.1 'We evaluate eight open-sourced uMMs with XTC-Bench, including BAGEL 7B, BLIP3-o-8B, Janus-Pro-7B, MMaDA-8B, OmniGen-2, Show-o, Show-o2-7B, and Tar-7B'. Show-o (no resolution/checkpoint stated), MMaDA-8B, Tar-7B and the commercial GPT/Gemini rows are not recorded."
+  },
+  {
+   "model": "omnigen2",
+   "bench": "xtc-bench-gen-overall",
+   "score": 0.499,
+   "source": "https://arxiv.org/html/2604.25072v1",
+   "source_id": "paper-2604.25072v1-xtcbench",
+   "by": "independent",
+   "date": "2026-04-27",
+   "note": "XTC-Bench paper (arXiv 2604.25072v1, 27 Apr 2026) Table 2 'Generation performance (GG) evaluated on scene graph nodes', row 'OmniGen-2', column 'Overall Gen.' = 0.499 (continuous 0-1 scene-graph agreement over all nodes). Authors' own run: Sec. 4.1 'We evaluate eight open-sourced uMMs with XTC-Bench, including BAGEL 7B, BLIP3-o-8B, Janus-Pro-7B, MMaDA-8B, OmniGen-2, Show-o, Show-o2-7B, and Tar-7B'. Show-o (no resolution/checkpoint stated), MMaDA-8B, Tar-7B and the commercial GPT/Gemini rows are not recorded."
+  },
+  {
+   "model": "show-o2-7b",
+   "bench": "xtc-bench-gen-overall",
+   "score": 0.465,
+   "source": "https://arxiv.org/html/2604.25072v1",
+   "source_id": "paper-2604.25072v1-xtcbench",
+   "by": "independent",
+   "date": "2026-04-27",
+   "note": "XTC-Bench paper (arXiv 2604.25072v1, 27 Apr 2026) Table 2 'Generation performance (GG) evaluated on scene graph nodes', row 'Show-o-2-7B', column 'Overall Gen.' = 0.465 (continuous 0-1 scene-graph agreement over all nodes). Authors' own run: Sec. 4.1 'We evaluate eight open-sourced uMMs with XTC-Bench, including BAGEL 7B, BLIP3-o-8B, Janus-Pro-7B, MMaDA-8B, OmniGen-2, Show-o, Show-o2-7B, and Tar-7B'. Show-o (no resolution/checkpoint stated), MMaDA-8B, Tar-7B and the commercial GPT/Gemini rows are not recorded."
+  },
+  {
+   "model": "show-o2-7b",
+   "bench": "geneval",
+   "score": 0.76,
+   "source": "https://arxiv.org/html/2506.15564v3#S4.T5",
+   "source_id": "first-party-showlab-show-o2-paper",
+   "by": "lab",
+   "date": "2025-09-22",
+   "note": "Show-o2 paper (Show Lab, NUS; arXiv 2506.15564v3, 22 Sep 2025) Table 5 (GenEval), row 'Show-o2 (Ours)' 7B, column 'Overall' = 0.76. Maker's own figure for its own model (vendor-reported); 66M image-text training pairs, default sampling (CFG and steps as in the paper's ablation). Other methods' rows in the table are other labs' and are not recorded."
+  },
+  {
+   "model": "show-o2-1-5b",
+   "bench": "geneval",
+   "score": 0.73,
+   "source": "https://arxiv.org/html/2506.15564v3#S4.T5",
+   "source_id": "first-party-showlab-show-o2-paper",
+   "by": "lab",
+   "date": "2025-09-22",
+   "note": "Show-o2 paper (Show Lab, NUS; arXiv 2506.15564v3, 22 Sep 2025) Table 5 (GenEval), row 'Show-o2 (Ours)' 1.5B, column 'Overall' = 0.73. Maker's own figure for its own model (vendor-reported); 66M image-text training pairs, default sampling (CFG and steps as in the paper's ablation). Other methods' rows in the table are other labs' and are not recorded."
+  },
+  {
+   "model": "show-o2-7b",
+   "bench": "dpg-bench",
+   "score": 0.8614,
+   "source": "https://arxiv.org/html/2506.15564v3#S4.T6",
+   "source_id": "first-party-showlab-show-o2-paper",
+   "by": "lab",
+   "date": "2025-09-22",
+   "note": "Show-o2 paper (Show Lab, NUS; arXiv 2506.15564v3, 22 Sep 2025) Table 6 (DPG-Bench), row 'Show-o2 (Ours)' 7B, column 'Overall' = 86.14 (stored /100). Maker's own figure for its own model (vendor-reported); 66M image-text training pairs, default sampling (CFG and steps as in the paper's ablation). Other methods' rows in the table are other labs' and are not recorded."
+  },
+  {
+   "model": "show-o2-1-5b",
+   "bench": "dpg-bench",
+   "score": 0.8502,
+   "source": "https://arxiv.org/html/2506.15564v3#S4.T6",
+   "source_id": "first-party-showlab-show-o2-paper",
+   "by": "lab",
+   "date": "2025-09-22",
+   "note": "Show-o2 paper (Show Lab, NUS; arXiv 2506.15564v3, 22 Sep 2025) Table 6 (DPG-Bench), row 'Show-o2 (Ours)' 1.5B, column 'Overall' = 85.02 (stored /100). Maker's own figure for its own model (vendor-reported); 66M image-text training pairs, default sampling (CFG and steps as in the paper's ablation). Other methods' rows in the table are other labs' and are not recorded."
+  }
+ ],
+ "benchmarks": [
+  {
+   "id": "vectara-hhem-2-3-current",
+   "name": "Vectara hallucination leaderboard, factual consistency rate (HHEM-2.3, current dataset)",
+   "category": "llm",
+   "kind": "acc",
+   "chance": 0,
+   "url": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+   "task": "chat",
+   "setup": {
+    "url": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+    "version": "HHEM-2.3, current dataset (README last updated September 22, 2026)",
+    "metric": "Factual Consistency Rate = 100% minus Hallucination Rate: share of model-written summaries that Vectara's HHEM scores as consistent with the source passage (higher is better); stored as a fraction.",
+    "protocol": "Each model summarises each document with Vectara's fixed prompt ('provide a concise and factual summary ... using only the information in the given passage'); the model's own refusals are reported separately as the Answer Rate. API/provider per model is listed in the README's 'API Integration Details'.",
+    "limitations": "Answer rate and summary length differ by model and are not folded into the score; provider endpoints and snapshots are as listed in the README; HHEM model version and document set differ between the three README snapshots, so they are separate benchmarks."
+   },
+   "reported_scale": "fraction",
+   "benchmark_family": "vectara-hhem",
+   "suggested_tasks": [
+    "chat"
+   ]
+  },
+  {
+   "id": "vectara-hhem-2-1-old-dataset",
+   "name": "Vectara hallucination leaderboard, factual consistency rate (HHEM-2.1, previous dataset)",
+   "category": "llm",
+   "kind": "acc",
+   "chance": 0,
+   "url": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+   "task": "chat",
+   "setup": {
+    "url": "https://github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+    "version": "HHEM-2.1, previous dataset (branch hhem-2.3-old-dataset, README last updated October 16, 2025)",
+    "metric": "Factual Consistency Rate = 100% minus Hallucination Rate: share of model-written summaries that Vectara's HHEM scores as consistent with the source passage (higher is better); stored as a fraction.",
+    "protocol": "Each model summarises each document with Vectara's fixed prompt ('provide a concise and factual summary ... using only the information in the given passage'); the model's own refusals are reported separately as the Answer Rate. API/provider per model is listed in the README's 'API Integration Details'.",
+    "limitations": "Answer rate and summary length differ by model and are not folded into the score; provider endpoints and snapshots are as listed in the README; HHEM model version and document set differ between the three README snapshots, so they are separate benchmarks."
+   },
+   "reported_scale": "fraction",
+   "benchmark_family": "vectara-hhem",
+   "suggested_tasks": [
+    "chat"
+   ]
+  },
+  {
+   "id": "vectara-hhem-1-0",
+   "name": "Vectara hallucination leaderboard, factual consistency rate (HHEM-1.0)",
+   "category": "llm",
+   "kind": "acc",
+   "chance": 0,
+   "url": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+   "task": "chat",
+   "setup": {
+    "url": "https://github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md",
+    "version": "HHEM-1.0 (branch hhem-1.0-final, README last updated July 25th, 2024)",
+    "metric": "Factual Consistency Rate = 100% minus Hallucination Rate: share of model-written summaries that Vectara's HHEM scores as consistent with the source passage (higher is better); stored as a fraction.",
+    "protocol": "Each model summarises each document with Vectara's fixed prompt ('provide a concise and factual summary ... using only the information in the given passage'); the model's own refusals are reported separately as the Answer Rate. API/provider per model is listed in the README's 'API Integration Details'.",
+    "limitations": "Answer rate and summary length differ by model and are not folded into the score; provider endpoints and snapshots are as listed in the README; HHEM model version and document set differ between the three README snapshots, so they are separate benchmarks."
+   },
+   "reported_scale": "fraction",
+   "benchmark_family": "vectara-hhem",
+   "suggested_tasks": [
+    "chat"
+   ]
+  },
+  {
+   "id": "xtc-bench-gen-overall",
+   "name": "XTC-Bench generation (Overall Gen., scene-graph node agreement)",
+   "category": "image",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2604.25072v1#S4.T2",
+   "task": "text-to-image",
+   "setup": {
+    "url": "https://arxiv.org/html/2604.25072v1",
+    "version": "arXiv:2604.25072v1",
+    "metric": "Overall Gen.: how well the image generated from a scene-graph-derived prompt recovers the scene-graph nodes (objects, attributes, relations) over all nodes, continuous 0-1.",
+    "protocol": "XTC-Bench derives generation prompts and understanding queries from the same structured scene graphs (COCO-based); generated images are parsed into scene graphs and matched to the reference with an LLM judge; Table 2 reports node-level generation quality. Eight open-source unified multimodal models run by the authors.",
+    "limitations": "Single LLM-judge pipeline; model checkpoints/resolutions not detailed in the main text; CCTA and understanding columns not recorded."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "text-to-image"
+   ],
+   "chance": 0,
+   "benchmark_family": "xtc-bench"
+  }
+ ],
+ "ledger": [
+  {
+   "action": "new",
+   "id": "paper-2411.19146v5-puzzle",
+   "name": "Puzzle: Distillation-Based NAS for Inference-Optimized LLMs (arXiv:2411.19146v5)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2411.19146v5"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2411.19146v5",
+   "quote": "arXiv abstract page for 2411.19146v5 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; the HTML version prints 'License: CC BY 4.0'. CC BY 4.0 s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including commercially, subject to attribution.",
+   "attribution": "Akhiad Bercovich et al. (NVIDIA), Puzzle: Distillation-Based NAS for Inference-Optimized LLMs, arXiv:2411.19146v5, CC BY 4.0. Table 2 non-chat rows. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2411.19146v5",
+   "icon": "arxiv.org",
+   "scope": "Table 2 Winogrande, ARC Challenge, MMLU, HellaSwag and GSM8K rows for Llama-3.1-Nemotron-51B-Instruct and Llama-3.1-70B-Instruct. Not used: TruthfulQA (variant not stated), XLSum, chat-prompt rows, Instruct HumanEval (CodeParrot variant), MT-Bench (judge not stated), RULER subset (partial subset of tasks), Nemotron-49B-Base tables (base model not catalogued)."
+  },
+  {
+   "action": "new",
+   "id": "first-party-prime-rl-scores",
+   "name": "PRIME-RL Eurus-2-7B-PRIME model card, Evaluation table (own models)",
+   "kind": "first-party",
+   "match": [
+    "huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation"
+   ],
+   "exact": true,
+   "license": "Factual vendor-reported score (not licensed content)",
+   "terms_url": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md",
+   "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The card's own licence is apache-2.0.",
+   "attribution": "PRIME-RL (Tsinghua/UIUC et al.), Eurus-2-7B-PRIME model card @2f47d19. Own-model rows only.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "huggingface.co",
+   "scope": "Eurus-2-7B-PRIME and Eurus-2-7B-SFT columns for AIME 2024, MATH-500 and Minerva Math. Not used: AMC and OlympiadBench (no benchmark id), Qwen/Llama/GPT-4o columns (other labs)."
+  },
+  {
+   "action": "new",
+   "id": "vectara-hhem-readme-apache",
+   "name": "Vectara hallucination-leaderboard README tables (vectara/hallucination-leaderboard)",
+   "kind": "leaderboard",
+   "match": [
+    "github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/README.md",
+    "github.com/vectara/hallucination-leaderboard/blob/37fc0e9a757a3b42cee659a3e1914539b6b5de06/README.md",
+    "github.com/vectara/hallucination-leaderboard/blob/dd8eedfd61466a2caaa1fd629fb50914bc13b382/README.md"
+   ],
+   "exact": true,
+   "license": "Apache-2.0",
+   "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+   "terms_url": "https://github.com/vectara/hallucination-leaderboard/blob/e435b6bfb15d1ade353136dd0f8b0b2ee631e9ed/LICENSE",
+   "quote": "GitHub repository vectara/hallucination-leaderboard is licensed Apache-2.0 (LICENSE file begins 'Apache License Version 2.0, January 2004'; GitHub licence API reports spdx_id Apache-2.0). The README tables are committed files of that repository. Apache-2.0 s.2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work and Derivative Works.",
+   "attribution": "Vectara, hallucination-leaderboard (github.com/vectara/hallucination-leaderboard), README tables at the pinned commits (main e435b6b, hhem-2.3-old-dataset 37fc0e9, hhem-1.0-final dd8eedf), Apache-2.0. Factual Consistency Rate column only.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://github.com/vectara/hallucination-leaderboard",
+   "icon": "github.com",
+   "scope": "Leaderboard tables of the three README snapshots; rows only for models whose label matches one catalogue model exactly (HF repo path or exact API id). Not used: the interactive HF Space (separate terms), vectara/leaderboard_results summaries."
+  },
+  {
+   "action": "new",
+   "id": "paper-2405.18750v2-t2vturbo",
+   "name": "T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback (arXiv:2405.18750v2)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2405.18750v2"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2405.18750v2",
+   "quote": "arXiv abstract page for 2405.18750v2 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Jiachen Li, Weixi Feng, Tsu-Jui Fu, Xinyi Wang, Sugato Basu, Wenhu Chen, William Yang Wang (UC Santa Barbara / Google), T2V-Turbo, arXiv:2405.18750v2, CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2405.18750v2",
+   "icon": "arxiv.org",
+   "scope": "Table 1 VBench Total for T2V-Turbo (VC2) and T2V-Turbo (MS) only (authors' own models). Not used: baseline rows (copied leaderboard values), sub-dimension scores."
+  },
+  {
+   "action": "new",
+   "id": "paper-2604.25072v1-xtcbench",
+   "name": "Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models (XTC-Bench, arXiv:2604.25072v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2604.25072v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2604.25072v1",
+   "quote": "arXiv abstract page for 2604.25072v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Authors of arXiv:2604.25072 (XTC-Bench), CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2604.25072v1",
+   "icon": "arxiv.org",
+   "scope": "Table 2 'Overall Gen.' for BAGEL-7B, BLIP3-o-8B, Janus-Pro-7B, OmniGen-2 and Show-o2-7B. Not used: Show-o (checkpoint unstated), MMaDA-8B and Tar-7B (not catalogued), GPT/Gemini pipeline rows, understanding and CCTA columns."
+  },
+  {
+   "action": "new",
+   "id": "first-party-showlab-show-o2-paper",
+   "name": "Show Lab Show-o2 paper (arXiv:2506.15564v3), GenEval and DPG-Bench tables (own models)",
+   "kind": "first-party",
+   "match": [
+    "arxiv.org/html/2506.15564v3"
+   ],
+   "exact": true,
+   "license": "Factual vendor-reported score (not licensed content)",
+   "terms_url": "https://arxiv.org/abs/2506.15564v3",
+   "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The document is a maker-authored technical report (default arXiv licence), recorded under the vendor-reported rule as maker documentation; see report for the open decision.",
+   "attribution": "Show Lab, National University of Singapore, Show-o2: Improved Native Unified Multimodal Models, arXiv:2506.15564v3. Own-model figures only.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "arxiv.org",
+   "scope": "Table 5 GenEval Overall and Table 6 DPG-Bench Overall for Show-o2 1.5B and 7B only. The paper itself carries arXiv's default non-exclusive licence (no open licence claimed); only the makers' own figures for their own models are recorded by hand. Not used: all other methods' rows, Show-o (checkpoint/resolution unstated), OneIG table (no overall printed), VBench tables."
+  }
+ ],
+ "models": [
+  {
+   "id": "eurus-2-7b-sft",
+   "name": "Eurus-2-7B-SFT",
+   "provider": "PRIME-RL",
+   "category": "llm",
+   "released": "2024-12",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "params_b": 7.62,
+   "active_b": 7.62,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT",
+   "identity_note": "Comparison-only, proposed so the Eurus-2-7B-PRIME card table counts. The PRIME card compares Eurus-2-7B-PRIME with 'Eurus-2-7B-SFT', the PRIME team's own SFT starting checkpoint. Weights: https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT (sha 2f38b9435f3a99d8899d4f00df8b6ebf0b3f502e, created 2024-12-30, apache-2.0, 7,615,616,512 parameters in safetensors metadata).",
+   "identity_evidence": [
+    {
+     "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+     "reported_label": "Eurus-2-7B-SFT"
+    },
+    {
+     "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-SFT",
+     "reported_label": "PRIME-RL/Eurus-2-7B-SFT"
+    }
+   ]
+  },
+  {
+   "id": "t2v-turbo-ms",
+   "name": "T2V-Turbo (MS)",
+   "provider": "UC Santa Barbara",
+   "category": "video",
+   "released": "2024-05",
+   "open_weights": true,
+   "license": "cc-by-4.0",
+   "params_b": null,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS",
+   "identity_note": "Comparison-only, proposed so the T2V-Turbo paper's VBench run counts. T2V-Turbo (MS) is the ModelScopeT2V-based sibling of catalogued T2V-Turbo (VC2); the paper (Table 1) reports both. Weights: https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS (sha 2c7a54678e803377949a3147db5d6b843b67a4fa, created 2024-05-29, cc-by-4.0).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2405.18750v2",
+     "reported_label": "Our T2V-Turbo (MS)"
+    },
+    {
+     "source": "https://huggingface.co/jiachenli-ucsb/T2V-Turbo-MS",
+     "reported_label": "jiachenli-ucsb/T2V-Turbo-MS"
+    }
+   ]
+  },
+  {
+   "id": "show-o2-1-5b",
+   "name": "Show-o2 1.5B",
+   "provider": "Show Lab, NUS",
+   "category": "image",
+   "released": "2025-06",
+   "open_weights": true,
+   "license": "apache-2.0",
+   "params_b": 1.5,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/showlab/show-o2-1.5B",
+   "identity_note": "Comparison-only, proposed so the Show-o2 paper's GenEval and DPG-Bench runs hold two own models. The paper's 'Show-o2 (Ours) 1.5B' rows are the base 1.5B model (66M training pairs); the catalogued Show-o2 1.5B-HQ is the later higher-resolution checkpoint and is not the paper row. Weights: https://huggingface.co/showlab/show-o2-1.5B (sha 07ec16589d4fc5422a74dddbbc4b2cd11e551039, created 2025-06-05, apache-2.0); listed on the official README among the released Show-o2 models.",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2506.15564v3",
+     "reported_label": "Show-o2 (Ours) 1.5B"
+    },
+    {
+     "source": "https://huggingface.co/showlab/show-o2-1.5B",
+     "reported_label": "showlab/show-o2-1.5B"
+    }
+   ]
+  }
+ ],
+ "gaps": [],
+ "checked": [
+  {
+   "source": "https://arxiv.org/abs/2411.19146v5 (Puzzle, CC BY 4.0)",
+   "outcome": "10 rows: Nemotron-51B and Llama-3.1-70B-Instruct on 5 existing benchmarks from Table 2, one two-model run per benchmark. llama-3-1-nemotron-51b 1 -> 6 counted."
+  },
+  {
+   "source": "https://huggingface.co/PRIME-RL/Eurus-2-7B-PRIME/blob/2f47d199012a5d37d0dcedbeff1e2802a0ea443c/README.md#evaluation",
+   "outcome": "6 own-model rows (PRIME and SFT on AIME 2024, MATH-500, Minerva Math); needs comparison-only model eurus-2-7b-sft. eurus-2-7b-prime 1 -> 4 counted."
+  },
+  {
+   "source": "https://github.com/vectara/hallucination-leaderboard (Apache-2.0; main e435b6b, hhem-2.3-old-dataset 37fc0e9, hhem-1.0-final dd8eedf)",
+   "outcome": "97 rows of three new factual-consistency benchmarks; thin gains: snowflake-arctic-instruct (3 snapshots), qwen3-max-preview (1 snapshot)."
+  },
+  {
+   "source": "https://arxiv.org/abs/2405.18750v2 (T2V-Turbo, CC BY 4.0)",
+   "outcome": "2 rows: T2V-Turbo (VC2) and proposed comparison-only T2V-Turbo (MS) on vbench-t2v-total (own models only). t2v-turbo-vc2 2 -> 3."
+  },
+  {
+   "source": "https://arxiv.org/abs/2604.25072v1 (XTC-Bench, CC BY 4.0)",
+   "outcome": "5 rows of new benchmark xtc-bench-gen-overall (authors ran 8 unified models). Thin gains: blip3o-8b (2 -> 3), show-o2-7b (1 -> 2)."
+  },
+  {
+   "source": "https://arxiv.org/abs/2506.15564v3 (Show-o2 paper; arXiv non-exclusive licence, vendor-reported)",
+   "outcome": "4 vendor rows (GenEval, DPG-Bench for Show-o2 7B and proposed comparison-only Show-o2 1.5B). show-o2-7b 1 -> 3. Depends on the owner accepting maker papers as vendor documents."
+  }
+ ]
+}

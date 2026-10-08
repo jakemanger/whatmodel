@@ -6,7 +6,7 @@
 
 Black Forest Labs · released 2026-01 · 4B params · apache-2.0
 
-**score 51.6** ±1.6 · #71 of 136 · from 4 benchmark results across 3 sources
+**score 50.5** ±1.7 · #74 of 139 · from 5 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,17 +16,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1030.0    50.5   2026-09-24   61% ▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1187.5    53.1   2026-09-30   15% ▇▇
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   84.3%    51.3   2026-08-25   16% ▇▇
-<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1031.0    59.3   2026-03-30    6% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1030.0    49.7   2026-09-24   50% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1187.5    52.5   2026-09-30   14% ▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>   84.3%    51.1   2026-08-25   19% ▇▇
+<a name="paper-2610.09823v1-ultratext"></a>UltraText Bench: A Co…  <a href="https://arxiv.org/html/2610.09823v1">UltraText Bench (Composite, b…</a>   19.6%    45.1   2026-10-07    9% ▇
+<a name="visual-geditbench-v2"></a>GEditBench v2: A Huma…  <a href="https://arxiv.org/html/2603.28547v1#S5.T3">GEditBench v2 (overall Elo)</a>     1031.0    59.1   2026-03-30    6% ▇
 prior                   pull toward the middle                    49.9                 1% ▇
-                        weighted average                        = 51.6
+                        weighted average                        = 50.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · QC-T2I-Bench: Scalable Question-Centric Text-to-Image Evaluation ([CC-BY-4.0](../../licenses/visual-qcbench.txt)) · UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) · GEditBench v2: A Human-Aligned Benchmark for General Image Editing ([CC-BY-4.0](../../licenses/visual-geditbench-v2.txt))</sub>
 
 ## How to run it
 
@@ -36,11 +37,11 @@ api (Cloudflare) · $0.0011/image · [developers.cloudflare.com](https://develop
 
 <pre>
 version                                 needs  score
-bf16 (cpu offload) · nvidia only      ~10.1GB   51.6
-bf16 · nvidia only                    ~10.1GB   51.6
-mlx-4bit · mac only                    ~2.9GB   51.6
-bf16 + Qwen3 4B bf16 (sd.cpp)         ~19.9GB   51.6
-gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)   ~6.9GB   51.6
+bf16 (cpu offload) · nvidia only      ~10.1GB   50.5
+bf16 · nvidia only                    ~10.1GB   50.5
+mlx-4bit · mac only                    ~2.9GB   50.5
+bf16 + Qwen3 4B bf16 (sd.cpp)         ~19.9GB   50.5
+gguf-q4_0 + Qwen3 4B q4_k_m (sd.cpp)   ~6.9GB   50.5
 </pre>
 
 ```sh

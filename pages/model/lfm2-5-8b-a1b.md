@@ -4,32 +4,72 @@
 
 # LFM2.5 8B-A1B
 
-Liquid AI · released 2026-05
+Liquid AI · released 2026-05 · 8.47B params (1.5B active) · lfm1.0
 
-[Model and usage documentation](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B)
+**score 57.8** ±2.0 · #177 of 551 · from 9 benchmark results across 1 source
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                               result  reported by  source
-IFEval (aggregation unspecified)    91.8%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
-IFBench (aggregation unspecified)   56.5%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
-MATH-500                            88.8%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
-AIME 2025                           42.5%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
-τ²-bench Telecom                    88.1%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
-τ²-bench Retail                     39.8%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
-AIME 2026                           50.0%  lab          <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">LiquidAI/LFM2.5-8B-A1B model …</a>
+source                  test                            score  implies  date        weight
+<a name="card-liquidai-lfm2-5-8b-a1b"></a>LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2025 (lab)</a>                 42.5%    51.6   2026-09-25   25% ▇▇▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">MATH-500 (lab)</a>                  88.8%    54.0   2026-09-25   12% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Retail (lab)</a>           39.8%    56.2   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFBench (aggregation unspecif…</a>  56.5%    59.9   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL V4 (December 2025 archiv…</a>  48.5%    57.0   2026-09-25   10% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">Multi-IF (aggregation unspeci…</a>  79.9%    62.2   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">τ²-bench Telecom (lab)</a>          88.1%    75.6   2026-09-25    8% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">BFCL v3 (lab)</a>                   64.4%    56.5   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">IFEval (aggregation unspecifi…</a>  91.8%    66.1   2026-09-25    6% ▇
+prior                   pull toward the middle                   50.0                 2% ▇
+                        weighted average                       = 57.8
 </pre>
 
+<sub>~ averaged with other results for the same test</sub>
+
 <sub>Licences: LiquidAI/LFM2.5-8B-A1B model card ([LFM Open License v1.0](../../licenses/cards-gap-NOTICE.txt))</sub>
+
+<details><summary>Not counted (1)</summary>
+
+<pre>
+source                  test       score  why
+LiquidAI/LFM2.5-8B-A1…  <a href="https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md">AIME 2026</a>  50.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
 <sub>[context source](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/README.md): Liquid AI official model card: LFM2.5-8B-A1B context length 128,000 (as stated; not 131,072). Observed 2026-09-25.</sub>
 
+<pre>
+download          size  score
+4-bit q4_k_m   ~5.58GB   57.8
+8-bit q8_0    ~10.66GB   57.8
+</pre>
+
 ```sh
+# 4-bit q4_k_m
 ollama run lfm2.5:8b
+# 8-bit q8_0
 ollama run lfm2.5:8b-a1b-q8_0
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/lfm2-5-8b-a1b)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision         speed  engine and settings
+AMD Ryzen AI Max+ 395 (Stri…  Q4_K_M     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-11/latest-llamacpp-ac4cddeb-vulkan-clean/lfm25-8b-a1b-q4km-r10.csv#L3">171.17 tok/s</a>  llama.cpp ac4cddeb0 (build_number…
+AMD Ryzen AI Max+ 395 (Stri…  Q4_K_M     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-05/latest-llamacpp-intdot-regression/lfm25-8b-a1b-q4km-b2016bf2-r5.csv#L3">168.96 tok/s</a>  llama.cpp 2016bf2 (build_number 1…
+AMD Ryzen AI Max+ 395 (Stri…  Q4_K_M     <a href="https://github.com/hogeheer499-commits/strix-halo-guide/blob/dac7bb99938d9c4248a79532bfc89c29b9e59795/data/raw/2026-06-07/latest-llamacpp-b9544-regression/lfm25-8b-a1b-q4km-b9544-vulkan-r10.csv#L3">176.48 tok/s</a>  llama.cpp 98d5e8ba8 (build_number…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
+[interactive version](https://whatmodel.sh/model/lfm2-5-8b-a1b) · [JSON](https://whatmodel.sh/api?format=json&all=1)

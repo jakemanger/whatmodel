@@ -6,7 +6,7 @@
 
 OpenMOSS · released 2026-05 · 8.49B params · apache-2.0
 
-**score 58.8** ±2.6 · #32 of 98 · from 7 benchmark results across 2 sources
+**score 57.5** ±2.5 · #38 of 100 · from 7 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,15 +16,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · speaker si…</a>  76.1%    60.4   2026-08-03   19% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · speaker si…</a>  68.0%    58.2   2026-08-03   15% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer…</a>   1.5%    54.3   2026-08-03   15% ▇▇
-                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper la…</a>   2.7%    54.6   2026-08-03   14% ▇▇
-<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   1.7%    58.5   2026-06-04   23% ▇▇▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>   3.8%    72.5   2026-06-04    7% ▇
-                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>   6.1%    69.3   2026-06-04    4% ▇
-prior                   pull toward the middle                   49.9                 3% ▇
-                        weighted average                       = 58.8
+<a name="speech-ultraeval-audio-apache"></a>UltraEval-Audio         <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · speaker si…</a>  76.1%    58.1   2026-08-03   20% ▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · speaker si…</a>  68.0%    56.5   2026-08-03   18% ▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-en · Whisper la…</a>   2.7%    52.9   2026-08-03   15% ▇▇
+                        <a href="https://github.com/OpenBMB/UltraEval-Audio/blob/bead726925d43f526bed48a4a6a827595169429d/replication/moss-tts-v1.5.md">Seed-TTS test-zh · Paraformer…</a>   1.5%    54.7   2026-08-03   14% ▇▇
+<a name="speech-higgs3-sglang-apache"></a>Higgs Audio v3 compar…  <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">Seed-TTS-Eval · test-en/test-…</a>   1.7%    58.2   2026-06-04   20% ▇▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">MiniMax multilingual test set…</a>   3.8%    72.7   2026-06-04    6% ▇
+                        <a href="https://github.com/sgl-project/sglang-omni/blob/0aafd76b4ef488f1c01987cc856cea77af129d61/docs/cookbook/higgs_tts.md">CV3-Eval multilingual voice c…</a>   6.1%    63.9   2026-06-04    4% ▇
+prior                   pull toward the middle                   49.7                 2% ▇
+                        weighted average                       = 57.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -35,8 +35,8 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                               needs  score
-fp32 (transformers 5)              ~24.08GB   58.8
-bf16 (mlx-audio 0.5.x) · mac only  ~24.08GB   58.8
+fp32 (transformers 5)              ~24.08GB   57.5
+bf16 (mlx-audio 0.5.x) · mac only  ~24.08GB   57.5
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 OpenAI · released 2026-07 · proprietary
 
-**score 62.3** ±4.3 · #10 of 117 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 63.4** ±4.4 · #10 of 128 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 
@@ -16,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source          test                            score  implies  date        weight
-<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench  <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.1%    62.3   2026-09-01   47% ▇▇▇▇▇▇
-                <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  89.3%    64.3   2026-09-01   45% ▇▇▇▇▇
-prior           pull toward the middle                   49.8                 7% ▇
-                weighted average                       = 62.3
+<a name="speech-stt-voicecodebench-report"></a>VoiceCodeBench  <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch WER (3…</a>   6.1%    63.6   2026-09-01   47% ▇▇▇▇▇▇
+                <a href="https://arxiv.org/html/2608.28916v2">VoiceCodeBench · batch canoni…</a>  89.3%    65.6   2026-09-01   46% ▇▇▇▇▇
+prior           pull toward the middle                   49.7                 8% ▇
+                weighted average                       = 63.4
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

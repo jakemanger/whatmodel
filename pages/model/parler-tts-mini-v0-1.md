@@ -6,7 +6,7 @@
 
 Hugging Face (Parler-TTS) · released 2024-04 · 0.647B params · apache-2.0
 
-**score 48.5** ±14.4 · #56 of 98 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 48.8** ±14.8 · #60 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.6%    41.6   2025-04-25   16% ▇▇
-prior                   pull toward the middle                   49.9                84% ▇▇▇▇▇▇▇▇▇▇
-                        weighted average                       = 48.5
+<a name="speech-ttsds-v1-mit"></a>TTSDS v1 published re…  <a href="https://huggingface.co/datasets/ttsds/results/blob/111ccecaa50aec4ca1247c5f5d95c2058f6f2946/results.csv">TTSDS v1 · default four-facto…</a>  85.6%    42.9   2025-04-25   14% ▇▇
+prior                   pull toward the middle                   49.7                86% ▇▇▇▇▇▇▇▇▇▇
+                        weighted average                       = 48.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,7 +29,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version    needs  score
-fp32     ~2.59GB   48.5
+fp32     ~2.59GB   48.8
 </pre>
 
 ```sh

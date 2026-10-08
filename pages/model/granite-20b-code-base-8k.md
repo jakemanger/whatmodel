@@ -6,7 +6,7 @@
 
 IBM · released 2024-04 · 20.07B params · apache-2.0
 
-**score 36.6** ±1.4 · #434 of 549 · from 6 benchmark results across 1 source
+**score 37.6** ±1.3 · #429 of 551 · from 6 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,14 +14,14 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    39.4   2024-05-07   32% ▇▇▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  18.8%    33.9   2024-05-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    35.8   2024-05-07   17% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  17.7%    34.8   2024-05-07   14% ▇▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    36.1   2024-05-07   10% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    34.9   2024-05-07    8% ▇
+<a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  44.3%    40.4   2024-05-07   31% ▇▇▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  18.8%    35.1   2024-05-07   18% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP (lab)</a>                      43.8%    36.9   2024-05-07   17% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  17.7%    36.0   2024-05-07   15% ▇▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                39.1%    37.4   2024-05-07   10% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                37.5%    36.2   2024-05-07    8% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 36.6
+                        weighted average                       = 37.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~12.82GB   36.6
+4-bit q4_k_m  ~12.82GB   37.6
 </pre>
 
 ```sh

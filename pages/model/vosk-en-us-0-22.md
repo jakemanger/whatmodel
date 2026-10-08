@@ -6,9 +6,7 @@
 
 Alpha Cephei (Vosk) · released 2021-10 · apache-2.0
 
-**score 50.6** ±5.8 · #75 of 117 · from 3 benchmark results across 2 sources
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 48.2** ±6.1 · #84 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  11.5%    49.4   2026-03-19   73% ▇▇▇▇▇▇▇▇▇
-<a name="first-party-alphacephei-vosk-models"></a>Alpha Cephei Vosk mod…  <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (l…</a>   5.7%    54.8   2026-05-04   12% ▇
-                        <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form…</a>   6.0%    80.6   2026-05-04    2% ▇
-prior                   pull toward the middle                   49.8                14% ▇▇
-                        weighted average                       = 50.6
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  11.5%    48.7   2026-03-19   69% ▇▇▇▇▇▇▇▇
+<a name="first-party-alphacephei-vosk-models"></a>Alpha Cephei Vosk mod…  <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">LibriSpeech test-clean WER (l…</a>   5.7%    37.9   2026-05-04   13% ▇▇
+                        <a href="https://github.com/alphacep/vosk-space/blob/f10f63bc6d751cf5c4198a7dc88515f40f2d7020/models.md">TED-LIUM test WER (short-form…</a>   6.0%    77.6   2026-05-04    3% ▇
+prior                   pull toward the middle                   49.7                14% ▇▇
+                        weighted average                       = 48.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +29,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version  needs  score
-kaldi    ~16GB   50.6
+kaldi    ~16GB   48.2
 </pre>
 
 ```sh

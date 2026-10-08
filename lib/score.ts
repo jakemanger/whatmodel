@@ -8,9 +8,11 @@
 // counts for less than one in the middle, where a test measures most precisely. θ is each model's
 // ability; a is how well a test separates strong from weak models (saturated
 // ones get a small a); d is a run's level. A run is one evaluator's run of a test.
-// Every run of the same test shares its a, learned from all of them together, but
-// keeps its own level, so an evaluator whose setup runs hot or cold can't move
-// anyone's score. Each result is read against the other models in its run. Because
+// Every run of the same test shares its a, learned from all of them together. Each run
+// has its own level, drawn around the test's common level with a spread fitted from the
+// data (a random effect), so an evaluator whose setup runs hot or cold can't move anyone's
+// score, while a small run with thinly measured models leans on the test's other runs.
+// Each result is read against the other models in its run and those other runs. Because
 // a and d are fit jointly with θ, a model tested only on easy benchmarks doesn't get
 // an inflated score, and models with few results are shrunk toward the middle with
 // a wider ± interval.
@@ -104,6 +106,7 @@ export type Fit = {
   predict: (model: string, key: string) => number | undefined;
   explain: (model: string) => Explained | undefined;
   toG: (rawTheta: number) => number;
+  levelSpread: number; // how far runs of the same test sit from its common level, in score points (1 sd)
 };
 
 // g is exactly a weighted average of the g each result implies on its own plus the prior
@@ -144,6 +147,8 @@ export function fit(cells: Cell[], iters = 500): Fit {
   const LAMBDA_A = 1; // prior a ~ N(1, 1)
   const NU0 = 3; // prior noise: σ² ~ 0.25 worth 3 observations
   const S0 = 0.25;
+  const NU_T = 3; // prior spread of run levels: τ ~ 0.25 (θ units, ≈ 4 points) worth 3 degrees of freedom
+  const T0 = 0.25;
 
   // Accuracy results are proportions: near 0% or 100% they say little about how far beyond the
   // edge a model is, so each gets a working value and a weight from its fitted chance of
@@ -159,13 +164,18 @@ export function fit(cells: Cell[], iters = 500): Fit {
     for (const o of os) w[idx.get(o)!] /= total / os.length;
   });
 
-  // A result's run level, estimated from the other models in that run, and that estimate's
-  // variance. Alone in its run, a result says nothing about its model (infinite variance).
-  const resid = keys.map(() => 0), wsum = keys.map(() => 0);
+  // A result's run level, read from the other models in its run and from the test's other runs,
+  // and that estimate's variance. Alone in its run, a result says nothing about its model: the
+  // other runs place the level, but nothing in the run checks this evaluator's own setup.
+  const resid = keys.map(() => 0), wsum = keys.map(() => 0), wvar = keys.map(() => 0);
+  const priorMean = keys.map(() => 0), priorVar = keys.map(() => Infinity);
+  let tau2 = 0;
   const runLevel = (o: { m: number; k: number }) => {
-    const i = idx.get(o as never)!, others = wsum[o.k] - w[i];
-    if (byKey[o.k].length < 2 || others <= 1e-9) return { d: d[o.k], vd: Infinity };
-    return { d: (resid[o.k] - w[i] * (z[i] - a[o.k] * theta[o.m])) / others, vd: s2[o.k] / others };
+    const i = idx.get(o as never)!, others = wsum[o.k] - w[i], pv = priorVar[o.k];
+    if (others <= 1e-9) return { d: d[o.k], vd: Infinity };
+    let prec = others / s2[o.k], num = (resid[o.k] - w[i] * (z[i] - a[o.k] * theta[o.m])) / s2[o.k];
+    if (Number.isFinite(pv)) { prec += 1 / pv; num += priorMean[o.k] / pv; }
+    return { d: num / prec, vd: 1 / prec };
   };
 
   for (let it = 0; it < iters; it++) {
@@ -189,14 +199,38 @@ export function fit(cells: Cell[], iters = 500): Fit {
     byKey.forEach((os, k) => {
       a[k] = aT[testOf[k]];
       d[k] = mean[k][1] - a[k] * mean[k][0];
-      let ssr = 0, r = 0, sw = 0;
+      let ssr = 0, r = 0, sw = 0, wv = 0;
       for (const o of os) {
         const i = idx.get(o)!, e = z[i] - a[k] * theta[o.m];
-        ssr += w[i] * (e - d[k]) ** 2; r += w[i] * e; sw += w[i];
+        ssr += w[i] * (e - d[k]) ** 2; r += w[i] * e; sw += w[i]; wv += w[i] * w[i] * v[o.m];
       }
       s2[k] = (ssr + NU0 * S0) / (os.length + NU0);
-      resid[k] = r; wsum[k] = sw;
+      resid[k] = r; wsum[k] = sw; wvar[k] = wv;
     });
+    // Runs of a test scatter around its common level by τ (in θ units), estimated from every test
+    // with two or more multi-model runs (DerSimonian–Laird, with the prior above so a category with
+    // few such tests doesn't conclude evaluators agree exactly). A run's own level is only as sure as
+    // its results and its models' scores, so a small run of thinly measured models leans on the
+    // test's other runs, and a test with one run keeps its level.
+    const own = d.slice(), vOwn = keys.map((_, k) => s2[k] / wsum[k] + (a[k] * a[k] * wvar[k]) / (wsum[k] * wsum[k]));
+    let Q = 0, df = 0, C = 0;
+    for (const ks of keysOf) {
+      const multi = ks.filter((k) => byKey[k].length >= 2);
+      if (multi.length < 2) continue;
+      const at = a[multi[0]], x = multi.map((k) => own[k] / at), wt = multi.map((k) => (at * at) / vOwn[k]);
+      const sw = wt.reduce((p, q) => p + q, 0), m = x.reduce((p, q, j) => p + wt[j] * q, 0) / sw;
+      Q += x.reduce((p, q, j) => p + wt[j] * (q - m) ** 2, 0); df += multi.length - 1; C += sw - wt.reduce((p, q) => p + q * q, 0) / sw;
+    }
+    const perDf = df > 0 ? C / df : 1;
+    tau2 = Math.max(0, (Q - df + NU_T * perDf * T0 * T0) / (C + NU_T * perDf));
+    for (const ks of keysOf) for (const k of ks) {
+      const rest = ks.filter((j) => j !== k);
+      if (!rest.length) { priorVar[k] = Infinity; continue; }
+      const om = rest.map((j) => 1 / (a[k] * a[k] * tau2 + vOwn[j])), so = om.reduce((p, q) => p + q, 0);
+      priorMean[k] = rest.reduce((p, j, n) => p + om[n] * own[j], 0) / so;
+      priorVar[k] = a[k] * a[k] * tau2 + 1 / so;
+      d[k] = (own[k] / vOwn[k] + priorMean[k] / priorVar[k]) / (1 / vOwn[k] + 1 / priorVar[k]);
+    }
     // Models: posterior mean of θ under a N(0, 1) prior.
     const next = byModel.map((os, m) => {
       let prec = 1, num = 0;
@@ -242,7 +276,7 @@ export function fit(cells: Cell[], iters = 500): Fit {
       parts: parts.map((p) => ({ cell: p.cell, g: Number.isFinite(p.g) ? p.g : toG(0), share: p.w / total, d: p.d })).sort((x, y) => y.share - x.share),
     };
   };
-  return { scores, params, predict, explain, toG };
+  return { scores, params, predict, explain, toG, levelSpread: G_SD * Math.sqrt(tau2) };
 }
 
 // g for a degraded copy of a model that keeps `kept` of its accuracy on every test (e.g. a

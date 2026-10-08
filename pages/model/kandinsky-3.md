@@ -4,32 +4,53 @@
 
 # Kandinsky 3
 
-AI Forever · released 2023-11
+AI Forever · released 2023-11 · 3B params · apache-2.0
 
-Full text-to-image pipeline including prior/decoder dependencies. No scores copied from third-party model comparisons. Memory is a conservative planning estimate including pipeline components and activation headroom; no local runtime measurement.
+**score 48.1** ±10.2 · #82 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/kandinsky-community/kandinsky-3)
+Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
-[Catalogue source](https://huggingface.co/kandinsky-community/kandinsky-3/blob/bf79e6c219da8a94abb50235fdc4567eb8fb4632/README.md)
+## How the score was worked out
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-Kandinsky 3.0 · text alignment wi…   52.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
-Kandinsky 3.0 · visual quality wi…   50.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
-Kandinsky 3.0 · text alignment wi…   36.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
-Kandinsky 3.0 · visual quality wi…   42.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
-Kandinsky 3.0 · text alignment wi…   53.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
-Kandinsky 3.0 · visual quality wi…   57.0%  lab          <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0</a>
+source                  test                            score  implies  date        weight
+<a name="paper-2502.10663v1-real"></a>REAL: Realism Evaluat…  <a href="https://arxiv.org/html/2502.10663v1">REAL realism benchmark for T2…</a>  63.2%    46.7   2025-02-15   55% ▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.9                45% ▇▇▇▇▇
+                        weighted average                       = 48.1
 </pre>
 
-<sub>Licences: Kandinsky 3.0 ([CC BY 4.0](../../licenses/kandinsky3-original-human-comparison-CC-BY-4.0.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: REAL: Realism Evaluation of Text-to-Image Generation Models for Effective Data Augmentation ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+
+<details><summary>Not counted (6)</summary>
+
+<pre>
+source         test                            score  why
+Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignmen…</a>  52.0%  too few models have it yet
+Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · visual qualit…</a>  50.0%  too few models have it yet
+Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignmen…</a>  36.0%  too few models have it yet
+Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · visual qualit…</a>  42.0%  too few models have it yet
+Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · text alignmen…</a>  53.0%  too few models have it yet
+Kandinsky 3.0  <a href="https://arxiv.org/html/2312.03511v2">Kandinsky 3.0 · visual qualit…</a>  57.0%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
+<pre>
+version             needs  score
+fp16 · nvidia only  ~32GB   48.1
+</pre>
+
 ```sh
+# fp16 · nvidia only
 uv run --with torch --with diffusers --with transformers --with accelerate --with safetensors python -c "import torch; from diffusers import AutoPipelineForText2Image; p=AutoPipelineForText2Image.from_pretrained('kandinsky-community/kandinsky-3', torch_dtype=torch.float16, variant='fp16').to('cuda'); p('A lighthouse at sunset', height=512, width=512).images[0].save('image.png')"
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/kandinsky-3)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+[interactive version](https://whatmodel.sh/model/kandinsky-3) · [JSON](https://whatmodel.sh/api?format=json&all=1)

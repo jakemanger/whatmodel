@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-09 · 7B params · qwen-research
 
-**score 70.1** ±1.8 · #14 of 136 · from 2 benchmark results across 1 source · \* thinly tested, treat the rank as provisional
+**score 68.5** ±1.9 · #14 of 139 · from 3 benchmark results across 2 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -15,23 +15,24 @@ Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-
 Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-source                  test                     score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>   1227.6    69.9   2026-09-24   79% ▇▇▇▇▇▇▇▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>        1366.4    72.3   2026-09-30   20% ▇▇
-prior                   pull toward the middle            49.9                 1% ▇
-                        weighted average                = 70.1
+source                  test                             score  implies  date        weight
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1227.6    70.5   2026-09-24   62% ▇▇▇▇▇▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_edit/latest-00000-of-00001.parquet">Arena image edit</a>                1366.4    73.1   2026-09-30   18% ▇▇
+<a name="genexam-readme-mit"></a>GenExam leaderboard     <a href="https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/README.md">GenExam (relaxed overall, GPT…</a>   47.1%    59.0   2026-09-26   18% ▇▇
+prior                   pull toward the middle                    49.9                 2% ▇
+                        weighted average                        = 68.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))</sub>
+<sub>Licences: LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · GenExam leaderboard ([MIT](https://github.com/OpenGVLab/GenExam/blob/1f820dbdb3fa802c2ea893acbf5ce5ada9d766d1/LICENSE))</sub>
 
 ## How to run it
 
 <pre>
 version                                     needs  score
-int8 convrot + Qwen3-VL 8B q4_k_m (sd.c…  ~16.1GB   70.1
-gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)   ~12.4GB   70.1
+int8 convrot + Qwen3-VL 8B q4_k_m (sd.c…  ~16.1GB   68.5
+gguf-q4_k + Qwen3-VL 8B q4_k_m (sd.cpp)   ~12.4GB   68.5
 </pre>
 
 ```sh

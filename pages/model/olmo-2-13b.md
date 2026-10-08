@@ -6,7 +6,7 @@
 
 Allen Institute for AI · released 2024-12 · 13.72B params · apache-2.0
 
-**score 45.1** ±1.4 · #313 of 549 · from 10 benchmark results across 2 sources
+**score 45.8** ±1.3 · #315 of 551 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                 test                            score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious       <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    43.0   2025-10-08   28% ▇▇▇
-                       <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    43.5   2025-10-08   23% ▇▇▇
-                       <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    47.6   2025-10-08   13% ▇▇
-                       <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    47.9   2025-10-08    9% ▇
-                       <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            64.3%    48.2   2025-10-08    8% ▇
-                       <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    39.3   2025-10-08    6% ▇
-                       <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    45.9   2025-10-08    4% ▇
-                       <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    51.5   2025-10-08    3% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    48.7   2026-04-17    2% ▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    48.6   2026-04-17    2% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious       <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>            63.0%    43.8   2025-10-08   28% ▇▇▇
+                       <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                      68.5%    44.3   2025-10-08   23% ▇▇▇
+                       <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                     87.4%    48.0   2025-10-08   13% ▇▇
+                       <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>  39.5%    48.3   2025-10-08   11% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            64.3%    48.7   2025-10-08    8% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  39.2%    40.2   2025-10-08    6% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     28.8%    46.7   2025-10-08    4% ▇
+                       <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  82.6%    51.7   2025-10-08    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  68.5%    49.2   2026-04-17    2% ▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  83.0%    49.2   2026-04-17    2% ▇
 prior                  pull toward the middle                   50.0                 1% ▇
-                       weighted average                       = 45.1
+                       weighted average                       = 45.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -38,8 +38,8 @@ prior                  pull toward the middle                   50.0            
 
 <pre>
 download          size  score
-4-bit q4_k_m   ~8.73GB   45.1
-8-bit q8_0    ~16.96GB   45.1
+4-bit q4_k_m   ~8.73GB   45.8
+8-bit q8_0    ~16.96GB   45.8
 </pre>
 
 ```sh

@@ -6,7 +6,7 @@
 
 Alibaba (AIDC-AI) · released 2025-11 · 7B params · apache-2.0
 
-**score 47.6** ±6.5 · #85 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 46.9** ±6.7 · #86 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source    test                            score  implies  date        weight
-<a name="visual-fepbench"></a>Faithful  <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  33.4%    47.1   2026-06-05   82% ▇▇▇▇▇▇▇▇▇▇
-prior     pull toward the middle                   49.9                18% ▇▇
-          weighted average                       = 47.6
+<a name="visual-fepbench"></a>Faithful  <a href="https://arxiv.org/html/2606.05949v2#S4.T2">FEPBench instruction faithful…</a>  33.4%    46.1   2026-06-05   81% ▇▇▇▇▇▇▇▇▇▇
+prior     pull toward the middle                   49.9                19% ▇▇
+          weighted average                       = 46.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -29,8 +29,8 @@ prior     pull toward the middle                   49.9                18% ▇�
 
 <pre>
 version                          needs  score
-bf16 · nvidia only               ~20GB   47.6
-gguf-q4_0 + Ovis 2.5 (sd.cpp)  ~12.1GB   47.6
+bf16 · nvidia only               ~20GB   46.9
+gguf-q4_0 + Ovis 2.5 (sd.cpp)  ~12.1GB   46.9
 </pre>
 
 ```sh

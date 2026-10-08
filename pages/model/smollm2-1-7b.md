@@ -6,7 +6,7 @@
 
 Hugging Face · released 2024-10 · 1.71B params · apache-2.0
 
-**score 29.5** ±1.1 · #498 of 549 · from 18 benchmark results across 5 sources
+**score 30.9** ±1.0 · #493 of 551 · from 18 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -14,26 +14,26 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            45.3%    29.2   2025-10-08   13% ▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             34.3%    22.2   2025-10-08   11% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   39.8%    30.6   2025-10-08   10% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   45.3%    30.6   2025-10-08    5% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        51.6%    27.3   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>    5.8%    23.8   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        20.3%    29.2   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            16.4%    34.0   2025-10-08    2% ▇
-<a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">GSM8K (lab)</a>                      48.8%    30.5   2025-02-04    8% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>                  28.1%    29.8   2025-02-04    6% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard (lab)</a>             32.2%    32.8   2025-02-04    5% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified) (la…</a>   21.0%    32.4   2025-02-04    4% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                  66.1%    35.7   2025-02-04    4% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                       74.4%    33.6   2025-02-04    2% ▇
-                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    36.0   2025-02-04    1% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1114.6    31.1   2026-10-02   14% ▇▇
-<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   29.9%    26.0   2026-08-11    6% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   50.2%    25.5   2026-04-17    2% ▇
-prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 29.5
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            45.3%    31.5   2025-10-08   13% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             34.3%    24.6   2025-10-08   11% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   39.8%    32.7   2025-10-08    9% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   45.3%    32.3   2025-10-08    5% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>        51.6%    29.2   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>    5.8%    27.2   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        20.3%    30.5   2025-10-08    2% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            16.4%    35.5   2025-10-08    2% ▇
+<a name="paper-2502.02737v1"></a>SmolLM2 paper           <a href="https://arxiv.org/html/2502.02737v1">GSM8K (lab)</a>                      48.8%    32.8   2025-02-04    9% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">BIG-Bench Hard (lab)</a>             32.2%    31.9   2025-02-04    6% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">HumanEval (lab)</a>                  28.1%    32.0   2025-02-04    6% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">MATH (subset unspecified) (la…</a>   21.0%    32.1   2025-02-04    4% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">HellaSwag (lab)</a>                  66.1%    34.9   2025-02-04    3% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">IFEval (aggregation unspecifi…</a>   56.7%    33.0   2025-02-04    2% ▇
+                        <a href="https://arxiv.org/html/2502.02737v1">PIQA (lab)</a>                       74.4%    30.1   2025-02-04    2% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1114.6    32.1   2026-10-02   13% ▇▇
+<a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   29.9%    27.6   2026-08-11    6% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   50.2%    27.0   2026-04-17    1% ▇
+prior                   pull toward the middle                    50.0                 0% ▇
+                        weighted average                        = 30.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,8 +46,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~1.53GB   29.5
-8-bit q8_0    ~2.55GB   29.5
+4-bit q4_k_m  ~1.53GB   30.9
+8-bit q8_0    ~2.55GB   30.9
 </pre>
 
 ```sh

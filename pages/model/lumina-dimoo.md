@@ -6,7 +6,7 @@
 
 Alpha-VLLM (Shanghai AI Lab) · released 2025-09 · 8B params · apache-2.0
 
-**score 30.9** ±4.5 · #120 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 30.1** ±4.7 · #127 of 139 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      26.6%    25.5   2026-05-13   80% ▇▇▇▇▇▇▇▇▇▇
-<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>  34.0%    55.0   2026-03-26   11% ▇
+<a name="visual-edit-compass"></a>Edit-Compass &amp; EditRe…  <a href="https://arxiv.org/html/2605.13062v1#S4.T3">Edit-Compass (EN, overall)</a>      26.6%    24.1   2026-05-13   79% ▇▇▇▇▇▇▇▇▇
+<a name="visual-vigor-bench"></a>ViGoR-Bench: How Far …  <a href="https://arxiv.org/html/2603.25823v1#S3.T3">ViGoR-Bench zero-shot visual …</a>  34.0%    54.8   2026-03-26   12% ▇
 prior                   pull toward the middle                   49.9                 9% ▇
-                        weighted average                       = 30.9
+                        weighted average                       = 30.1
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                   49.9           
 
 <pre>
 version                                     needs  score
-official inference_t2i.py (checkpoint a…  ~38.9GB   30.9
+official inference_t2i.py (checkpoint a…  ~38.9GB   30.1
 </pre>
 
 ```sh

@@ -6,9 +6,7 @@
 
 NVIDIA · released 2025-03 · 0.182B params · cc-by-4.0
 
-**score 55.1** ±2.9 · #54 of 117 · from 3 benchmark results across 2 sources
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 55.8** ±3.2 · #53 of 128 · from 3 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -16,11 +14,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">LibriSpeech test-clean WER</a>       1.9%    56.3   2026-09-15   39% ▇▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">FLEURS English test WER</a>          6.0%    51.0   2026-09-15   19% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    56.4   2026-03-26   39% ▇▇▇▇▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 55.1
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">LibriSpeech test-clean WER</a>       1.9%    57.0   2026-09-15   38% ▇▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/canary-180m-flash.json">FLEURS English test WER</a>          6.0%    51.1   2026-09-15   17% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   7.1%    57.1   2026-03-26   41% ▇▇▇▇▇
+prior                   pull toward the middle                   49.7                 4% ▇
+                        weighted average                       = 55.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,7 +29,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version               needs  score
-fp32 · nvidia only  ~1.37GB   55.1
+fp32 · nvidia only  ~1.37GB   55.8
 </pre>
 
 ```sh

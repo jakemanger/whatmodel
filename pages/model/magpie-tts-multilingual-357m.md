@@ -4,50 +4,89 @@
 
 # Magpie TTS Multilingual 357M
 
-NVIDIA · released 2026-07
+NVIDIA · released 2026-07 · 0.364B params · nvidia-open-model-license
 
-MagpieTTS Multilingual v2607, the checkpoint on the main branch of nvidia/magpie\_tts\_multilingual\_357m (card at 1980687: "July 21, 2026: MagpieTTS v2607 was released", 12 languages, "364M parameters"). Earlier checkpoints are separate releases: v2602 (tag v2602, "March 3, 2026", 9 languages) and v2512 (January 2026, 357M parameters). This entry was previously dated 2026-02 after the v2602 label, but nothing in the catalogue is tied to v2602 (no results, no API), and NVIDIA's NeMo-Speech.cpp runtime downloads the v2607 GGUF, so the entry now describes v2607. Source: https://huggingface.co/nvidia/magpie\_tts\_multilingual\_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md
+**score 41.1** ±6.2 · #71 of 100 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
-[Model and usage documentation](https://huggingface.co/nvidia/magpie_tts_multilingual_357m)
+Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
-Published measurements are available, but there is not enough shared evaluation data to calculate a comparable overall score yet.
+## How the score was worked out
+
+Each result below implies a score on its own, after adjusting for how hard that test is and who ran it. The model's score is their weighted average. Tests that separate models cleanly and agree with the other tests weigh more. A small pull toward the middle keeps thinly tested models from swinging too far. [Method](../method.md)
 
 <pre>
-test                                result  reported by  source
-Magpie held-out Arabic (ar) CER       1.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Arabic (ar) speak…   80.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Chinese (zh) CER      3.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Chinese (zh) spea…   83.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out English (en) CER      0.4%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out English (en) spea…   82.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out English (en) acce…    0.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out English (en) acce…   74.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out French (fr) CER       1.5%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out French (fr) speak…   74.7%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out German (de) CER       0.8%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out German (de) speak…   74.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Hindi (hi) CER        1.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Hindi (hi) speake…   78.8%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Italian (it) CER      2.2%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Italian (it) spea…   77.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Japanese (ja) CER     1.4%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Japanese (ja) spe…   77.5%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Korean (ko) CER       2.7%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Korean (ko) speak…   80.7%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Portuguese (pt) C…    2.9%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Portuguese (pt) s…   75.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Spanish (es) CER      0.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Spanish (es) spea…   79.3%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Vietnamese (vi) C…    0.6%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
-Magpie held-out Vietnamese (vi) s…   72.5%  lab          <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">NVIDIA MagpieTTS v2607</a>
+source                  test                            score  implies  date        weight
+<a name="speech-carun-tts-bench-apache"></a>carun/tts-bench: inte…  <a href="https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/data/REPORT_DATA.md">carun tts-bench · 56-sentence…</a>   7.0%    39.6   2026-09-10   85% ▇▇▇▇▇▇▇▇▇▇
+prior                   pull toward the middle                   49.7                15% ▇▇
+                        weighted average                       = 41.1
 </pre>
 
-<sub>Licences: NVIDIA MagpieTTS v2607 ([NVIDIA Open Model License](../../licenses/magpie-v2607-card-evaluations-NVIDIA.txt))</sub>
+<sub>~ averaged with other results for the same test</sub>
+
+<sub>Licences: carun/tts-bench: intelligibility benchmark of four open TTS engines ([Apache-2.0](https://github.com/carun/tts-bench/blob/27727b24abbc688f718992eb5bfc5c7121facfcb/LICENSE.txt))</sub>
+
+<details><summary>Not counted (26)</summary>
+
+<pre>
+source                  test                            score  why
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Arabic (ar) C…</a>   1.6%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Arabic (ar) s…</a>  80.6%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Chinese (zh) …</a>   3.2%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Chinese (zh) …</a>  83.3%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out English (en) …</a>   0.4%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out English (en) …</a>  82.2%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out English (en) …</a>   0.3%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out English (en) …</a>  74.6%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out French (fr) C…</a>   1.5%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out French (fr) s…</a>  74.7%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out German (de) C…</a>   0.8%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out German (de) s…</a>  74.2%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Hindi (hi) CER</a>   1.2%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Hindi (hi) sp…</a>  78.8%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Italian (it) …</a>   2.2%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Italian (it) …</a>  77.3%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Japanese (ja)…</a>   1.4%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Japanese (ja)…</a>  77.5%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Korean (ko) C…</a>   2.7%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Korean (ko) s…</a>  80.7%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Portuguese (p…</a>   2.9%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Portuguese (p…</a>  75.3%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Spanish (es) …</a>   0.6%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Spanish (es) …</a>  79.3%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Vietnamese (v…</a>   0.6%  too few models have it yet
+NVIDIA MagpieTTS v2607  <a href="https://huggingface.co/nvidia/magpie_tts_multilingual_357m/blob/19806879b16d3f2ccf28fb112b1bcd16a3c7923e/README.md">Magpie held-out Vietnamese (v…</a>  72.5%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
+<pre>
+version                              needs  score
+f16-gguf (NVIDIA NeMo-Speech.cpp)  ~0.65GB   41.1
+</pre>
+
 ```sh
+# f16-gguf (NVIDIA NeMo-Speech.cpp)
 curl -fsSL https://github.com/NVIDIA/NeMo-Speech.cpp/raw/main/scripts/install.sh | sh && export PATH="$HOME/.local/bin:$PATH" && nemo-speech synthesize "Hello from Magpie Multilingual." --output speech.wav
 ```
 
-[Sources and licences](../method.md#sources) · [raw data](../../data/results.json) · [interactive version](https://whatmodel.sh/model/magpie-tts-multilingual-357m)
+<sub>The score is the published model's; quantized downloads haven't been evaluated separately.</sub>
+
+## Published speed measurements
+
+Reference results for the hardware, engine and settings below. These are not verified speeds of the downloads above or predictions for your machine.
+
+<pre>
+hardware                      precision                speed  engine and settings
+AMD Ryzen 9 9950X3D (16C/32…  f32        <a href="https://github.com/mudler/magpie-tts.cpp/blob/3008ff73fc2d2da9e4d743b09350aa7023e8980c/benchmarks/BENCHMARK.md#L14">0.328947 x-realtime</a>  magpie-tts.cpp f32 · median of 3 …
+AMD Ryzen 9 9950X3D (16C/32…  q8_0       <a href="https://github.com/mudler/magpie-tts.cpp/blob/3008ff73fc2d2da9e4d743b09350aa7023e8980c/benchmarks/BENCHMARK.md#L15">0.384615 x-realtime</a>  magpie-tts.cpp q8_0 · median of 3…
+NVIDIA DGX Spark (GB10 GPU)   f32             <a href="https://github.com/mudler/magpie-tts.cpp/blob/3008ff73fc2d2da9e4d743b09350aa7023e8980c/benchmarks/BENCHMARK.md#L66">6.7 x-realtime</a>  magpie-tts.cpp f32 GPU · median o…
+NVIDIA DGX Spark (GB10 GPU)   q8_0           <a href="https://github.com/mudler/magpie-tts.cpp/blob/3008ff73fc2d2da9e4d743b09350aa7023e8980c/benchmarks/BENCHMARK.md#L67">10.6 x-realtime</a>  magpie-tts.cpp q8_0 GPU · median …
+NVIDIA DGX Spark (Grace CPU)  f32            <a href="https://github.com/mudler/magpie-tts.cpp/blob/3008ff73fc2d2da9e4d743b09350aa7023e8980c/benchmarks/BENCHMARK.md#L68">0.99 x-realtime</a>  magpie-tts.cpp f32 CPU (Grace aar…
+NVIDIA DGX Spark (Grace CPU)  q8_0           <a href="https://github.com/mudler/magpie-tts.cpp/blob/3008ff73fc2d2da9e4d743b09350aa7023e8980c/benchmarks/BENCHMARK.md#L69">1.09 x-realtime</a>  magpie-tts.cpp q8_0 CPU (Grace aa…
+</pre>
+
+<sub>Each speed links to its source, which has the full settings.</sub>
+
+[interactive version](https://whatmodel.sh/model/magpie-tts-multilingual-357m) · [JSON](https://whatmodel.sh/api?format=json&all=1)

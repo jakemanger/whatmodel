@@ -6,7 +6,7 @@
 
 Meituan · released 2025-12 · 6B params · apache-2.0
 
-**score 50.8** ±3.9 · #74 of 136 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 50.5** ±3.8 · #75 of 139 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    50.8   2026-08-25   94% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-qcbench"></a>QC-T2I-Bench: Scalabl…  <a href="https://arxiv.org/html/2608.24112v1#Sx3.T2">QC-T2I-Bench (English, HCQ to…</a>  83.9%    50.5   2026-08-25   94% ▇▇▇▇▇▇▇▇▇▇▇
 prior                   pull toward the middle                   49.9                 6% ▇
-                        weighted average                       = 50.8
+                        weighted average                       = 50.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -45,7 +45,7 @@ api (fal.ai) · $0.13/image · [fal.ai](https://fal.ai/models/fal-ai/longcat-ima
 
 <pre>
 version                                 needs  score
-gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   50.8
+gguf-q4_k_m + Qwen2.5-VL q8_0 (sd.cpp)  ~15GB   50.5
 </pre>
 
 ```sh

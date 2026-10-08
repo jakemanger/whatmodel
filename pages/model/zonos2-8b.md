@@ -6,7 +6,7 @@
 
 Zyphra · released 2026-06 · 8B params (0.9B active) · apache-2.0
 
-**score 56.3** ±2.5 · #41 of 98 · from 5 benchmark results across 2 sources
+**score 56.0** ±2.5 · #42 of 100 · from 5 benchmark results across 2 sources
 
 Score within the [Vapi Humanness · Bradley–Terry rating, 2026-09-25 snapshot](https://whatmodel.sh/tts?set=vapi-humanness-bt-20260925&score=set) comparison set only.
 
@@ -16,13 +16,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                               score  implies  date        weight
-<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.9   2026-06-25   27% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    53.2   2026-06-25   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    51.6   2026-06-25   20% ▇▇
-                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    61.1   2026-06-25   18% ▇▇
-<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    63.5   2026-06-22   10% ▇
-prior                   pull toward the middle                      49.9                 2% ▇
-                        weighted average                          = 56.3
+<a name="speech-zonos2-report-bysa"></a>ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>  2.40 / 5    56.7   2026-06-25   28% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval in-the-wild · 10-l…</a>      6.1%    52.8   2026-06-25   22% ▇▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>      9.3%    51.2   2026-06-25   19% ▇▇
+                        <a href="https://arxiv.org/html/2606.24320v2">ZTTS1-Eval Clean (FLEURS-R) ·…</a>  3.13 / 5    60.9   2026-06-25   18% ▇▇
+<a name="speech-ztts1-eval-apache"></a>ZTTS1-Eval results sn…  <a href="https://github.com/Zyphra/ZTTS1-Eval/blob/93660731c7b8d5e70935975fe7a6c7ed48451a7b/RESULTS_CURRENT.md">ZTTS1-Eval · FLEURS-R English…</a>     87.5%    63.3   2026-06-22   10% ▇
+prior                   pull toward the middle                      49.7                 3% ▇
+                        weighted average                          = 56.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -43,12 +43,12 @@ ZONOS2 Technical Repo…  <a href="https://arxiv.org/html/2606.24320v2">Seed-TTS
 
 <pre>
 version                                      needs  score
-q4_k (zonos2.cpp)                          ~5.17GB   56.3
-q8_0 (zonos2.cpp)                           ~8.8GB   56.3
-q4_k (zonos2.cpp) · mac only               ~5.17GB   56.3
-q8_0 (zonos2.cpp) · mac only                ~8.8GB   56.3
-mlx-bf16 (mlx-audio) · mac only           ~15.64GB   56.3
-bf16 (Zyphra ZONOS2 PyTorch server) · n…  ~15.67GB   56.3
+q4_k (zonos2.cpp)                          ~5.17GB   56.0
+q8_0 (zonos2.cpp)                           ~8.8GB   56.0
+q4_k (zonos2.cpp) · mac only               ~5.17GB   56.0
+q8_0 (zonos2.cpp) · mac only                ~8.8GB   56.0
+mlx-bf16 (mlx-audio) · mac only           ~15.64GB   56.0
+bf16 (Zyphra ZONOS2 PyTorch server) · n…  ~15.67GB   56.0
 </pre>
 
 ```sh

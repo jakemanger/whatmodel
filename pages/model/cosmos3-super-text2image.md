@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-05 · 64B params · openmdw-1.1
 
-**score 62.8** ±2.0 · #25 of 136 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
+**score 62.9** ±2.3 · #26 of 139 · from 2 benchmark results across 2 sources · \* thinly tested, treat the rank as provisional
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,10 +16,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1151.8    62.4   2026-09-24   91% ▇▇▇▇▇▇▇▇▇▇▇
-<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   91.4%    69.7   2026-06-23    8% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_image/latest-00000-of-00001.parquet">LMArena text-to-image</a>           1151.8    62.5   2026-09-24   88% ▇▇▇▇▇▇▇▇▇▇▇
+<a name="visual-cosmos3-report"></a>Cosmos 3: Omnimodal W…  <a href="https://arxiv.org/html/2606.02800v4#S6.T11">UniGenBench + Physical-AI pro…</a>   91.4%    69.5   2026-06-23   10% ▇
 prior                   pull toward the middle                    49.9                 2% ▇
-                        weighted average                        = 62.8
+                        weighted average                        = 62.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -30,7 +30,7 @@ prior                   pull toward the middle                    49.9          
 
 <pre>
 version                needs  score
-bf16 · nvidia only  ~154.1GB   62.8
+bf16 · nvidia only  ~154.1GB   62.9
 </pre>
 
 ```sh

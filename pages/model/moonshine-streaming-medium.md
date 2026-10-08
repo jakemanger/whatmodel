@@ -6,9 +6,7 @@
 
 Useful Sensors (Moonshine AI) · released 2026-01 · 0.27B params · mit
 
-**score 53.2** ±2.7 · #63 of 117 · from 4 benchmark results across 3 sources
-
-Score within the [Open ASR English short-form WER (March 2026)](https://whatmodel.sh/stt?set=open-asr-wer&score=set) comparison set only.
+**score 53.5** ±2.9 · #64 of 128 · from 4 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -16,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">LibriSpeech test-clean WER</a>       2.2%    53.7   2026-09-15   33% ▇▇▇▇
-                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">FLEURS English test WER</a>          7.9%    43.0   2026-09-15   16% ▇▇
-<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    58.9   2026-03-26   33% ▇▇▇▇
-<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  10.6%    51.0   2026-03-19   15% ▇▇
-prior                   pull toward the middle                   49.8                 3% ▇
-                        weighted average                       = 53.2
+<a name="speech-stt-transcribecpp-mit"></a>transcribe.cpp model …  <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">LibriSpeech test-clean WER</a>       2.2%    54.1   2026-09-15   32% ▇▇▇▇
+                        <a href="https://github.com/handy-computer/transcribe.cpp/blob/c1fee503219ea82dc2e42917150198a31b2ecc2a/catalog/moonshine-streaming-medium.json">FLEURS English test WER</a>          7.9%    42.1   2026-09-15   14% ▇▇
+<a name="open-asr"></a>Open ASR Leaderboard    <a href="https://github.com/huggingface/open_asr_leaderboard/blob/16743c6dabc69abcb8fd5bf529a95e3c6c16ac3c/scripts/data/en_shortform.csv">Open ASR English short-form W…</a>   6.7%    59.7   2026-03-26   35% ▇▇▇▇
+<a name="speech-stt-picovoice-apache"></a>Picovoice speech-to-t…  <a href="https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md">Picovoice STT benchmark · Eng…</a>  10.6%    49.9   2026-03-19   16% ▇▇
+prior                   pull toward the middle                   49.7                 3% ▇
+                        weighted average                       = 53.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +30,7 @@ prior                   pull toward the middle                   49.8           
 
 <pre>
 version   needs  score
-fp32     ~1.8GB   53.2
+fp32     ~1.8GB   53.5
 </pre>
 
 ```sh

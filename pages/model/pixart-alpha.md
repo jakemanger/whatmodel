@@ -6,7 +6,7 @@
 
 PixArt (Huawei Noah's Ark Lab et al.) · released 2023-11 · 0.6B params · openrail++
 
-**score 36.4** ±2.0 · #109 of 136 · from 4 benchmark results across 4 sources
+**score 36.0** ±2.1 · #113 of 139 · from 4 benchmark results across 4 sources
 
 Score within the [LMArena text-to-image](https://whatmodel.sh/image?set=lmarena-image&score=set) comparison set only.
 
@@ -16,12 +16,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                                        score  implies  date        weight
-<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                             1052.0    38.2   2024-06-04   31% ▇▇▇▇
-<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1100 mean human alignment score    33.7   2024-10-10   27% ▇▇▇
-<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              37.0%    33.9   2024-08-26   24% ▇▇▇
-<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>                              47.0%    39.5   2026-06-02   16% ▇▇
+<a name="visual-genai-arena"></a>GenAI Arena: An Open …  <a href="https://arxiv.org/html/2406.04485v3#S3.T5">GenAI-Arena text-to-image (El…</a>                             1052.0    37.9   2024-06-04   33% ▇▇▇▇
+<a name="visual-evalalign"></a>EvalAlign: Supervised…  <a href="https://arxiv.org/html/2406.16562v3#S5.T3">EvalAlign human text-image al…</a>  5.1100 mean human alignment score    33.3   2024-10-10   28% ▇▇▇
+<a name="visual-conceptmix"></a>ConceptMix: A Composi…  <a href="https://arxiv.org/html/2408.14339v1#S4.T4">ConceptMix (k=2 full-mark sco…</a>                              37.0%    33.4   2024-08-26   25% ▇▇▇
+<a name="visual-wise"></a>WISE: A World Knowled…  <a href="https://arxiv.org/html/2503.07265v4#S4.T1">WISE (WiScore overall, GPT-4o…</a>                              47.0%    40.6   2026-06-02   12% ▇
 prior                   pull toward the middle                                               49.9                 2% ▇
-                        weighted average                                                   = 36.4
+                        weighted average                                                   = 36.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -32,7 +32,7 @@ prior                   pull toward the middle                                  
 
 <pre>
 version               needs  score
-fp16 · nvidia only  ~13.6GB   36.4
+fp16 · nvidia only  ~13.6GB   36.0
 </pre>
 
 ```sh
