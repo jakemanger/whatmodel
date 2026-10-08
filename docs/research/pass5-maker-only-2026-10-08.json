@@ -1,0 +1,438 @@
+{
+ "about": "Pass 5 (2026-10-08): search for independent results for 79 maker-only models. Outcome: no new rows. data/ not edited. Search tooling was limited to web search, arXiv API (abstract-level) and HF API; no full-text paper search was available, so coverage below rank ~10 is shallow.",
+ "results": [],
+ "benchmarks": [],
+ "ledger": [],
+ "models": [],
+ "gaps": [
+  {
+   "model": "voxtral-tts",
+   "rank": 3,
+   "why": "Only Mistral's arXiv:2603.25551 reports it. Papers citing it (Voxtral ASR/ALM papers, TontaubeV1 2609.08703, Fish S2 report) do not run Voxtral TTS; TontaubeV1 compares Fish S2 Pro, ElevenLabs, Gradium, Cartesia only and has the default arXiv licence."
+  },
+  {
+   "model": "openaudio-s1",
+   "rank": 10,
+   "why": "Only Fish Audio's own blog/model card numbers. Independent arXiv papers found (Beyond Prompt Adherence 2608.00545, CC BY) audit Fish-Speech-S2, CosyVoice3 and VoxCPM2, not S1. TTS-Arena-V2 and Arabic arena already used or unlicensed."
+  },
+  {
+   "model": "qwen-audio-3-0-tts-plus",
+   "rank": 12,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "qwen-audio-3-0-asr",
+   "rank": 16,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "raon-opentts-1b",
+   "rank": 20,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "wayu-paxa-tts-edge",
+   "rank": 24,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "fun-asr-flash",
+   "rank": 33,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "raon-opentts-0-3b",
+   "rank": 35,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "dmospeech-2",
+   "rank": 46,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "ernie-image-turbo",
+   "rank": 48,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "zipformer-transducer-xl-290m",
+   "rank": 50,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "command-a-plus",
+   "rank": 51,
+   "why": "Only Cohere's launch post. arXiv title/abstract search for Command A+ returns nothing relevant; no open leaderboard repo with a data licence includes it (checked also: LMArena, Epoch, BFCL, AlpacaEval, Vectara, tau2, MathArena, LiveBench, Open LLM LB). Artificial Analysis, benchlm and benchlist rows exist but are banned aggregators."
+  },
+  {
+   "model": "zonos2-8b",
+   "rank": 51,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "seaweed-7b",
+   "rank": 59,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "longcat-2-0",
+   "rank": 62,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "cosmos-1-0-diffusion-7b-video2world",
+   "rank": 63,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "addis-voice-2",
+   "rank": 70,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "llada-image",
+   "rank": 76,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "llada-image-turbo",
+   "rank": 84,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-hubert-large-conformer-lm",
+   "rank": 85,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-wavlm-large-conformer-lm",
+   "rank": 86,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "t2v-turbo-ms",
+   "rank": 88,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "t2v-turbo-vc2",
+   "rank": 91,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "step1x-edit-v1-2-preview",
+   "rank": 96,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-e-branchformer",
+   "rank": 100,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "cosmos-1-0-autoregressive-4b",
+   "rank": 101,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-multiconvformer",
+   "rank": 102,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "voicecraft-830m",
+   "rank": 105,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "cosmos-1-0-autoregressive-5b-video2world",
+   "rank": 106,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-wav2vec2-large-conformer-lm",
+   "rank": 106,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-conformer-s4-decoder",
+   "rank": 107,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-branchformer-18layer",
+   "rank": 108,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "show-o2-1-5b",
+   "rank": 112,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-conformer-2020-lm",
+   "rank": 112,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-transformer-18layer-lm",
+   "rank": 113,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-multiblank-transducer-8421",
+   "rank": 116,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "espnet-conformer-rnn-transducer",
+   "rank": 117,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "speechbrain-asr-transformer-transformerlm-librispeech",
+   "rank": 120,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "kandinsky-2-2",
+   "rank": 137,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "nova-2-omni",
+   "rank": 147,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "gemma-4-12b",
+   "rank": 162,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "exaone-4-5-33b",
+   "rank": 190,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "apriel-1-6-15b-thinker",
+   "rank": 210,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "minimax-m1-40k",
+   "rank": 214,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "ernie-4-5-300b-a47b",
+   "rank": 224,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "lfm2-5-8b-a1b",
+   "rank": 230,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "falcon-h1r-7b",
+   "rank": 233,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "devstral-small-2",
+   "rank": 239,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "granite-4-1-30b",
+   "rank": 283,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "nemotron-3-nano-4b",
+   "rank": 288,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "nova-premier",
+   "rank": 333,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "cogvlm2-llama3-chinese-chat-19b",
+   "rank": 369,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "granite-4-1-3b",
+   "rank": 387,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "command-a-vision-07-2025",
+   "rank": 398,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "tulu-2-70b",
+   "rank": 428,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "exaone-4-0-1-2b",
+   "rank": 447,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "code-tulu-2-34b",
+   "rank": 463,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "granite-34b-code-base-8k",
+   "rank": 504,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "code-tulu-2-13b",
+   "rank": 532,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "tulu-2-13b",
+   "rank": 550,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "granite-3-3-2b",
+   "rank": 553,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "granite-20b-code-base-8k",
+   "rank": 554,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "code-tulu-2-7b",
+   "rank": 558,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "tulu-2-7b",
+   "rank": 576,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "deepseek-llm-7b-chat",
+   "rank": 589,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "stablelm-3b-4e1t",
+   "rank": 607,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "llava-v1-6-vicuna-13b",
+   "rank": 626,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "olmo-7b",
+   "rank": 627,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "redpajama-incite-base-3b-v1",
+   "rank": 640,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "eurus-2-7b-sft",
+   "rank": 654,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "olmo-1b",
+   "rank": 657,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "pythia-1-4b",
+   "rank": 666,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "flan-t5-base",
+   "rank": 671,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "gpt-neo-1-3b",
+   "rank": 677,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "pythia-410m",
+   "rank": 680,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "flan-t5-small",
+   "rank": 682,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "stablelm-base-alpha-3b",
+   "rank": 691,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "pythia-160m",
+   "rank": 693,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  },
+  {
+   "model": "pythia-70m",
+   "rank": 698,
+   "why": "No independent licensed result found in pass 5 (arXiv title/abstract search, HF dataset licence scan). Remains maker-only."
+  }
+ ],
+ "checked": [
+  {
+   "source": "arXiv API: Voxtral TTS / Fish Audio / Fish-Speech (20 newest hits)",
+   "outcome": "Hits are Voxtral ASR papers, Fish S2 report (maker), TontaubeV1 2609.08703 (Fish S2 Pro only; arXiv default licence), Beyond Prompt Adherence 2608.00545 (CC BY, Fish-Speech-S2/CosyVoice3/VoxCPM2 only). None runs Voxtral TTS or OpenAudio S1."
+  },
+  {
+   "source": "arXiv API: \"Command A+\"",
+   "outcome": "No relevant papers."
+  },
+  {
+   "source": "arXiv API: ERNIE-Image, LLaDA-Image, Step1X-Edit, Show-o2",
+   "outcome": "Only the makers' reports (2605.25347, 2609.03796, 2504.17761, 2506.15564). Later editing papers that list baselines were not verified as author-run; not used."
+  },
+  {
+   "source": "huggingface.co/datasets/nebius/SWE-rebench-leaderboard (34d5a58, cc-by-4.0)",
+   "outcome": "Contains the task set (monthly parquet), not model results. No rows usable."
+  },
+  {
+   "source": "arXiv 2304.03208 Cerebras-GPT",
+   "outcome": "Non-exclusive arXiv licence; rejected (Pythia/GPT-Neo baselines)."
+  },
+  {
+   "source": "HF leaderboard dataset listing (CC BY/Apache/MIT, modified Oct 2026)",
+   "outcome": "No relevant LLM/TTS/image leaderboard dataset naming these models found: danish-asr-leaderboard, open-asr results (no licence), AmigaMeow/llm-leaderboard and gemmozero (unvetted, not opened)."
+  },
+  {
+   "source": "TTS-Arena-V2 Space",
+   "outcome": "No licence in card; earlier pass 2026-10-07 already rejected. Arabic TTS Arena already used."
+  },
+  {
+   "source": "Web search for Gemma 4 12B / LongCat / EXAONE / Granite and Qwen-Audio-3.0",
+   "outcome": "Only banned aggregators (benchlm.ai, Artificial Analysis) and the makers' own reports."
+  }
+ ]
+}
