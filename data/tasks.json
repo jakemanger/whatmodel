@@ -142,7 +142,9 @@
       "arena-hard-unspecified",
       "ifeval-strict-mean",
       "ifeval-prompt-loose",
-      "mt-bench-gpt4-single"
+      "mt-bench-gpt4-single",
+      "alpacaeval2-lc",
+      "alpacaeval1-winrate"
     ]
   },
   {

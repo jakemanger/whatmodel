@@ -194915,5 +194915,845 @@
     "date": "2025-02-15",
     "note": "REAL (arXiv 2502.10663v1) Table 5 'Realism benchmark for four popular T2I models', row 'Kandinsky 3', column 'Average Score' = 0.6324 (0-1): mean of the attribute, relationship and style realism scores computed by REAL's VQA-based schema on generated images for iNaturalist and CUB-Birds classes (attributes, style) and UnRel relationships. Authors' own run (Sec. 4.2 'we utilize four T2I models'; Sec. 4.5 'we propose using its output score to benchmark current T2I models'). Kandinsky 3 (Arkhipkin et al. 2024), not 3.1.",
     "source_id": "paper-2502.10663v1-real"
+  },
+  {
+    "model": "gemma-2-9b-simpo",
+    "bench": "alpacaeval2-lc",
+    "score": 0.7235,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gemma-2-9b-it-SimPO' (mode 'community'), length_controlled_winrate = 72.35 (LC standard error 0.52); stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 65.86; average length 1833.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4o-2024-05-13",
+    "bench": "alpacaeval2-lc",
+    "score": 0.5746,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt-4o-2024-05-13' (mode 'minimal'), length_controlled_winrate = 57.46; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 51.33; average length 1873.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-turbo-2024-04-09",
+    "bench": "alpacaeval2-lc",
+    "score": 0.5502,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt-4-turbo-2024-04-09' (mode 'minimal'), length_controlled_winrate = 55.02; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 46.12; average length 1802.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-5-sonnet-20240620",
+    "bench": "alpacaeval2-lc",
+    "score": 0.5237,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'claude-3-5-sonnet-20240620' (mode 'community'), length_controlled_winrate = 52.37; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 40.56; average length 1488.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4o-mini-2024-07-18",
+    "bench": "alpacaeval2-lc",
+    "score": 0.5073,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt-4o-mini-2024-07-18' (mode 'minimal'), length_controlled_winrate = 50.73 (LC standard error 0.83); stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 44.65; average length 1861.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-1106-preview",
+    "bench": "alpacaeval2-lc",
+    "score": 0.5,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt4_1106_preview' (mode 'minimal'), length_controlled_winrate = 50.00; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 50.00; average length 2049.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "qwen1-5-110b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.4391,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Qwen1.5-110B-Chat' (mode 'community'), length_controlled_winrate = 43.91; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 33.78; average length 1631.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-opus-20240229",
+    "bench": "alpacaeval2-lc",
+    "score": 0.4051,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'claude-3-opus-20240229' (mode 'minimal'), length_controlled_winrate = 40.51; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 29.11; average length 1388.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "qwen2-72b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3807,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Qwen2-72B-Instruct' (mode 'verified'), length_controlled_winrate = 38.07 (LC standard error 0.90); stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 29.85; average length 1626.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "qwen1-5-72b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3657,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Qwen1.5-72B-Chat' (mode 'verified'), length_controlled_winrate = 36.57; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 26.50; average length 1549.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-0314",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3531,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt4_0314' (mode 'verified'), length_controlled_winrate = 35.31; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 22.07; average length 1371.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-3-sonnet-20240229",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3487,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'claude-3-sonnet-20240229' (mode 'minimal'), length_controlled_winrate = 34.87; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 25.56; average length 1420.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-70b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3442,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Meta-Llama-3-70B-Instruct' (mode 'minimal'), length_controlled_winrate = 34.42; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 33.18; average length 1919.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mistral-large-2402",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3265,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'mistral-large-2402' (mode 'verified'), length_controlled_winrate = 32.65; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 21.44; average length 1362.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mixtral-8x22b-instruct-v0-1",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3088,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Mixtral-8x22B-Instruct-v0.1' (mode 'verified'), length_controlled_winrate = 30.88; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 22.21; average length 1445.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "alpacaeval2-lc",
+    "score": 0.3018,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt4_0613' (mode 'verified'), length_controlled_winrate = 30.18; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 15.76; average length 1140.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mistral-medium-2312",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2861,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'mistral-medium' (mode 'verified'), length_controlled_winrate = 28.61; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 21.86; average length 1500. Entry config model_name: mistral-medium (the API alias of mistral-medium-2312 at the time).",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-2-0",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2816,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'claude-2' (mode 'verified'), length_controlled_winrate = 28.16; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 17.19; average length 1069. Entry config model_name: claude-2 (the API alias of Claude 2.0).",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "yi-34b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2719,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Yi-34B-Chat' (mode 'verified'), length_controlled_winrate = 27.19; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 29.66; average length 2123.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "dbrx-instruct",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2538,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'dbrx-instruct' (mode 'verified'), length_controlled_winrate = 25.38; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 18.45; average length 1450.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-2-1",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2525,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'claude-2.1' (mode 'verified'), length_controlled_winrate = 25.25; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 15.73; average length 1096.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "xwin-lm-70b-v0-1",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2465,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'xwinlm-70b-v0.1' (mode 'community'), length_controlled_winrate = 24.65; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 21.81; average length 1775.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "qwen1-5-14b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.239,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Qwen1.5-14B-Chat' (mode 'verified'), length_controlled_winrate = 23.90; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 18.65; average length 1607.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2369,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Mixtral-8x7B-Instruct-v0.1' (mode 'minimal'), length_controlled_winrate = 23.69; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 18.26; average length 1465.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-3-8b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2292,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Meta-Llama-3-8B-Instruct' (mode 'minimal'), length_controlled_winrate = 22.92 (LC standard error 0.85); stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 22.57; average length 1899.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-3-5-turbo-0613",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2235,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt-3.5-turbo-0613' (mode 'community'), length_controlled_winrate = 22.35; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 14.10; average length 1331.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "tulu-2-dpo-70b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2124,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'tulu-2-dpo-70b' (mode 'verified'), length_controlled_winrate = 21.24; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 15.98; average length 1418.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-3",
+    "bench": "alpacaeval2-lc",
+    "score": 0.2061,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Mistral-7B-Instruct-v0.3' (mode 'verified'), length_controlled_winrate = 20.61 (LC standard error 0.78); stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 16.69; average length 1581.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-3-5-turbo-1106",
+    "bench": "alpacaeval2-lc",
+    "score": 0.193,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt-3.5-turbo-1106' (mode 'verified'), length_controlled_winrate = 19.30; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 9.18; average length 796.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-3-5-turbo-0301",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1809,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gpt-3.5-turbo-0301' (mode 'verified'), length_controlled_winrate = 18.09; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 9.62; average length 827.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "deepseek-llm-67b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1784,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'deepseek-llm-67b-chat' (mode 'community'), length_controlled_winrate = 17.84; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 12.09; average length 1151.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "wizardlm-70b-v1-0",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1758,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'wizardlm-70b' (mode 'community'), length_controlled_winrate = 17.58; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 14.38; average length 1545. Entry config model_name: WizardLM/WizardLM-70B-V1.0.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "vicuna-33b-v1-3",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1757,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'vicuna-33b-v1.3' (mode 'verified'), length_controlled_winrate = 17.57; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 12.71; average length 1479.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-2",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1711,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Mistral-7B-Instruct-v0.2' (mode 'minimal'), length_controlled_winrate = 17.11; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 14.72; average length 1676.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "openhermes-2-5-mistral-7b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1625,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'OpenHermes-2.5-Mistral-7B' (mode 'verified'), length_controlled_winrate = 16.25; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 10.34; average length 1107.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "qwen1-5-7b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1475,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Qwen1.5-7B-Chat' (mode 'verified'), length_controlled_winrate = 14.75; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 11.77; average length 1594.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "starling-lm-7b-alpha",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1469,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Starling-LM-7B-alpha' (mode 'community'), length_controlled_winrate = 14.69; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 14.25; average length 1895.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1469,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'llama-2-70b-chat-hf' (mode 'verified'), length_controlled_winrate = 14.69; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 13.89; average length 1790.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "wizardlm-13b-v1-2",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1446,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'wizardlm-13b-v1.2' (mode 'community'), length_controlled_winrate = 14.46; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 12.03; average length 1635.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "zephyr-7b-beta",
+    "bench": "alpacaeval2-lc",
+    "score": 0.132,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'zephyr-7b-beta' (mode 'community'), length_controlled_winrate = 13.20; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 10.99; average length 1444.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "dolphin-2-2-1-mistral-7b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1312,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'dolphin-2.2.1-mistral-7b' (mode 'community'), length_controlled_winrate = 13.12; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 9.04; average length 1130.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "qwen-14b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1238,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'Qwen-14B-Chat' (mode 'community'), length_controlled_winrate = 12.38; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 7.50; average length 1013.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "tulu-2-dpo-13b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1155,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'tulu-2-dpo-13b' (mode 'community'), length_controlled_winrate = 11.55; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 10.12; average length 1614.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "vicuna-13b-v1-5",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1048,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'vicuna-13b-v1.5' (mode 'community'), length_controlled_winrate = 10.48; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 6.72; average length 1061.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gemma-7b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1043,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gemma-7b-it' (mode 'verified'), length_controlled_winrate = 10.43; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 6.94; average length 1115.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "zephyr-7b-alpha",
+    "bench": "alpacaeval2-lc",
+    "score": 0.1029,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'zephyr-7b-alpha' (mode 'community'), length_controlled_winrate = 10.29; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 8.35; average length 1302.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "tulu-2-dpo-7b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.092,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'tulu-2-dpo-7b' (mode 'community'), length_controlled_winrate = 9.20; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 8.20; average length 1663.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "text-davinci-001",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0903,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'text_davinci_001' (mode 'verified'), length_controlled_winrate = 9.03; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 2.76; average length 296.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-13b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0844,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'llama-2-13b-chat-hf' (mode 'verified'), length_controlled_winrate = 8.44; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 7.70; average length 1513.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "vicuna-7b-v1-5",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0762,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'vicuna-7b-v1.5' (mode 'community'), length_controlled_winrate = 7.62; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 4.80; average length 1083.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "guanaco-33b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0569,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'guanaco-33b' (mode 'verified'), length_controlled_winrate = 5.69; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 5.00; average length 1311.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gemma-2b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0544,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'gemma-2b-it' (mode 'verified'), length_controlled_winrate = 5.44; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 3.40; average length 1041.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-7b-chat",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0535,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'llama-2-7b-chat-hf' (mode 'verified'), length_controlled_winrate = 5.35; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 4.96; average length 1479.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "phi-2",
+    "bench": "alpacaeval2-lc",
+    "score": 0.044,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'phi-2' (mode 'community'), length_controlled_winrate = 4.40; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 2.35; average length 626.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "chatglm2-6b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0436,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'chatglm2-6b' (mode 'community'), length_controlled_winrate = 4.36; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 2.76; average length 1027.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "oasst-sft-4-pythia-12b",
+    "bench": "alpacaeval2-lc",
+    "score": 0.0327,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 2.0 official leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), weighted_alpaca_eval_gpt4_turbo_leaderboard.csv, row 'oasst-sft-pythia-12b' (mode 'verified'), length_controlled_winrate = 3.27; stored /100. 805 AlpacaEval instructions judged by weighted_alpaca_eval_gpt4_turbo against gpt4_1106_preview (the reference, LC 50.00 by definition). Raw win rate 1.79; average length 726. Entry config model_name: OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-1106-preview",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.977,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'gpt4_1106_preview' (mode 'minimal'), win_rate = 97.70 (standard error 0.51); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 2049.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mistral-medium-2312",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9683,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'mistral-medium' (mode 'minimal'), win_rate = 96.83 (standard error 0.61); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1500. Entry config model_name: mistral-medium (the API alias of mistral-medium-2312 at the time).",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "xwin-lm-70b-v0-1",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9557,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'xwinlm-70b-v0.1' (mode 'community'), win_rate = 95.57 (standard error 0.72); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1775.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "tulu-2-dpo-70b",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9503,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'tulu-2-dpo-70b' (mode 'community'), win_rate = 95.03 (standard error 0.76); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1418.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mixtral-8x7b-instruct-v0-1",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9478,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'Mixtral-8x7B-Instruct-v0.1' (mode 'minimal'), win_rate = 94.78 (standard error 0.78); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1465.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-0314",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9478,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'gpt4_0314' (mode 'verified'), win_rate = 94.78 (standard error 0.75); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1371.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "yi-34b-chat",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9408,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'Yi-34B-Chat' (mode 'verified'), win_rate = 94.08 (standard error 0.83); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 2123.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-4-0613",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9378,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'gpt4_0613' (mode 'verified'), win_rate = 93.78 (standard error 0.83); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1140.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "mistral-7b-instruct-v0-2",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9278,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'Mistral-7B-Instruct-v0.2' (mode 'minimal'), win_rate = 92.78 (standard error 0.91); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1676.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-70b-chat",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9266,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'llama-2-70b-chat-hf' (mode 'minimal'), win_rate = 92.66 (standard error 0.91); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1790.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-2-0",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.9136,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'claude-2' (mode 'minimal'), win_rate = 91.36 (standard error 0.99); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1069. Entry config model_name: claude-2 (the API alias of Claude 2.0).",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "zephyr-7b-beta",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.906,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'zephyr-7b-beta' (mode 'community'), win_rate = 90.60 (standard error 1.03); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1444.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-3-5-turbo-0301",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8937,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'gpt-3.5-turbo-0301' (mode 'verified'), win_rate = 89.37 (standard error 1.08); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 827.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "wizardlm-13b-v1-2",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8917,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'wizardlm-13b-v1.2' (mode 'community'), win_rate = 89.17 (standard error 1.09); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1635.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "vicuna-33b-v1-3",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8899,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'vicuna-33b-v1.3' (mode 'verified'), win_rate = 88.99 (standard error 1.10); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1479.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "tulu-2-dpo-13b",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8812,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'tulu-2-dpo-13b' (mode 'community'), win_rate = 88.12 (standard error 1.14); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1614.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "claude-2-1",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8708,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'claude-2.1' (mode 'minimal'), win_rate = 87.08 (standard error 1.18); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1096.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "gpt-3-5-turbo-1106",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8626,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'gpt-3.5-turbo-1106' (mode 'verified'), win_rate = 86.26 (standard error 1.21); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 796.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "zephyr-7b-alpha",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8576,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'zephyr-7b-alpha' (mode 'community'), win_rate = 85.76 (standard error 1.23); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1302.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "tulu-2-dpo-7b",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8422,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'tulu-2-dpo-7b' (mode 'community'), win_rate = 84.22 (standard error 1.29); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1663.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-13b-chat",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.8109,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'llama-2-13b-chat-hf' (mode 'minimal'), win_rate = 81.09 (standard error 1.38); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1513.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "llama-2-7b-chat",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.7137,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'llama-2-7b-chat-hf' (mode 'minimal'), win_rate = 71.37 (standard error 1.59); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1479.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "guanaco-33b",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.6596,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'guanaco-33b' (mode 'verified'), win_rate = 65.96 (standard error 1.67); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1311.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "text-davinci-003",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.5,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'text_davinci_003' (mode 'minimal'), win_rate = 50.00 (standard error 0.00); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 307.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "chatglm2-6b",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.4713,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'chatglm2-6b' (mode 'community'), win_rate = 47.13 (standard error 1.76); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 1027.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "phi-2",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.3066,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'phi-2' (mode 'community'), win_rate = 30.66 (standard error 1.61); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 626.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "oasst-sft-4-pythia-12b",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.2596,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'oasst-sft-pythia-12b' (mode 'verified'), win_rate = 25.96 (standard error 1.53); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 726. Entry config model_name: OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5.",
+    "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "text-davinci-001",
+    "bench": "alpacaeval1-winrate",
+    "score": 0.1517,
+    "source": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'text_davinci_001' (mode 'minimal'), win_rate = 15.17 (standard error 1.24); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 296.",
+    "source_id": "alpaca-eval-leaderboard-apache"
   }
 ]

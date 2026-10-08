@@ -13398,5 +13398,24 @@
     "evidence_url": "https://arxiv.org/abs/2502.10663v1",
     "icon": "arxiv.org",
     "scope": "Table 5 Average Score for DALL-E 3, Stable Diffusion 1.1 and Kandinsky 3. SD 3.5 Turbo not mapped."
+  },
+  {
+    "id": "alpaca-eval-leaderboard-apache",
+    "name": "AlpacaEval 1.0 and 2.0 leaderboards (tatsu-lab/alpaca_eval repository)",
+    "kind": "leaderboard",
+    "match": [
+      "github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval_2/weighted_alpaca_eval_gpt4_turbo_leaderboard.csv",
+      "github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/src/alpaca_eval/leaderboards/data_AlpacaEval/alpaca_eval_gpt4_leaderboard.csv"
+    ],
+    "exact": true,
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "terms_url": "https://github.com/tatsu-lab/alpaca_eval/blob/cd543a149df89434d8a54582c0151c0b945c3d20/LICENSE",
+    "quote": "The repository LICENSE at the pinned commit is the Apache License, Version 2.0, and the leaderboard CSV is a committed file of that repository. Apache-2.0 section 2 grants a perpetual, worldwide, royalty-free copyright licence to reproduce and distribute the Work and Derivative Works.",
+    "attribution": "Dubois, Li, Taori et al., AlpacaEval (tatsu-lab/alpaca_eval), AlpacaEval 1.0 and 2.0 leaderboard CSVs @cd543a1, Apache-2.0. AlpacaEval 2.0 length-controlled and AlpacaEval 1.0 win rates only; dev (verbose/concise) entries and non-catalogue systems not used.",
+    "verdict": "allowed",
+    "checked": "2026-10-08",
+    "icon": "github.com",
+    "scope": "AlpacaEval 2.0 length-controlled and AlpacaEval 1.0 win rates for catalogue models whose exact checkpoint the entry's model config names."
   }
 ]
