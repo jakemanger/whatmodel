@@ -9696,7 +9696,8 @@
   {
     "id": "speech-stt-picovoice-apache",
     "match": [
-      "github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md"
+      "github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/README.md",
+      "github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md"
     ],
     "exact": true,
     "name": "Picovoice speech-to-text-benchmark · English batch-engine WER (README)",
@@ -9704,7 +9705,7 @@
     "license": "Apache-2.0",
     "terms_url": "https://github.com/Picovoice/speech-to-text-benchmark/blob/43e7689f013694e9ba9910695643af9c579ca8d2/LICENSE",
     "verdict": "allowed",
-    "checked": "2026-09-28",
+    "checked": "2026-10-08",
     "license_url": "/licenses/speech-stt-picovoice-apache.txt",
     "attribution": "Picovoice speech-to-text-benchmark (https://github.com/Picovoice/speech-to-text-benchmark), Apache License 2.0. English batch-engine 'Average' WER for the Whisper rows transcribed by script from README.md at 43e7689, percent divided by 100; retain the Apache-2.0 notice. No endorsement.",
     "icon": "github.com",

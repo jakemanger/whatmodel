@@ -198745,5 +198745,15 @@
     "date": "2026-09-26",
     "note": "Miðeind Icelandic LLM Leaderboard entry 'Mistral Medium 3.5' (mistral/mistral-medium-2604), thinking='high', gen_kwargs={\"max_tokens\": 32000, \"extra_body\": {\"reasoning_effort\": \"high\"}}; highest of the listed settings ['high', 'off']. Published 'average' (Knowledge 0.12421, Language Proficiency 0.167334). Board generated 2026-09-30T09:19:24Z; Space revision 7b12ee6799a4735154be85170c53d7266b2de4e6. Date = latest benchmark_evaluated_at.",
     "source_id": "mideind-icelandic-llm-leaderboard"
+  },
+  {
+    "model": "nemotron-3-5-asr-streaming-0-6b",
+    "bench": "picovoice-en4-streaming-avg-wer",
+    "score": 0.078,
+    "source": "https://github.com/Picovoice/speech-to-text-benchmark/blob/aea7914706d44d3163c1c0283e05700900abe7af/README.md",
+    "by": "independent",
+    "date": "2026-10-07",
+    "note": "Picovoice README 'English > Streaming Engines Word Error Rate', row 'Nemotron 3.5 ASR Streaming' (linked checkpoint nvidia/nemotron-3.5-asr-streaming-0.6b), column 'Average' = 7.8% (mean of LibriSpeech test-clean 3.4%, test-other 7.8%, TED-LIUM 4.9%, CommonVoice 15.0%); stored 0.078. Same table and normalisation as the existing streaming rows; the open-model rows in that table are unchanged at this revision.",
+    "source_id": "speech-stt-picovoice-apache"
   }
 ]
