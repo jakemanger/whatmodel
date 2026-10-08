@@ -6,7 +6,7 @@
 
 MiniMax · released 2025-06 · 456B params (45.9B active) · apache-2.0
 
-**score 60.3** ±1.2 · #155 of 551 · from 13 benchmark results across 2 sources
+**score 60.2** ±1.2 · #155 of 551 · from 13 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (lab)</a>                  86.0%    61.9   2026-09-25    9% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>         56.0%    59.2   2026-09-25    7% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (lab)</a>                   81.1%    60.6   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (lab)</a>                   96.8%    63.5   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (lab)</a>                   96.8%    63.6   2026-09-25    6% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (lab)</a>                   18.5%    59.3   2026-09-25    5% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>        8.4%    55.1   2026-09-25    5% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (lab)</a>               61.5%    64.2   2026-09-25    4% ▇
@@ -28,7 +28,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (lab)</a>             44.7%    57.6   2026-09-25    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1363.9    59.2   2026-10-02   20% ▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 60.3
+                        weighted average                        = 60.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -53,7 +53,7 @@ api (Novita AI) · $0.96/M blended · $0.55 in / $2.2 out per 1M tokens · [novi
 
 <pre>
 download          size  score
-16-bit bf16  ~912.21GB   60.3
+16-bit bf16  ~912.21GB   60.2
 </pre>
 
 ```sh

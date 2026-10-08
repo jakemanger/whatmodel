@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>  80.2%    41.2   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   1.9%    24.2   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GPQA Diamond (lab)</a>              19.2%    24.0   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   2.2%    35.8   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   2.2%    35.9   2026-09-25    1% ▇
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                           35.0%    28.0   2025-10-08    7% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                            38.9%    27.7   2025-10-08    6% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                  39.4%    32.5   2025-10-08    5% ▇
@@ -36,7 +36,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>       40.3%    44.0   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            9.6%    25.6   2025-10-08    1% ▇
 <a name="card-liquidai-lfm2-5-1-2b-thinking"></a>LiquidAI/LFM2.5-1.2B-…  <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">GSM8K</a>                           42.1%    29.3   2026-09-25    7% ▇
-                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        45.2%    31.1   2026-09-25    2% ▇
+                        <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MATH-500</a>                        45.2%    31.0   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">MMLU-Pro</a>                        14.0%    21.6   2026-09-25    2% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFBench (aggregation unspecif…</a>  20.5%    36.6   2026-09-25    1% ▇
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">IFEval mean of four measures</a>    63.2%    32.2   2026-09-25    1% ▇
@@ -45,17 +45,17 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/README.md">BFCL v3</a>                         16.6%    16.4   2026-09-25    1% ▇
 <a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>  21.9%    25.4   2025-07-04    3% ▇
                         <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>  21.4%    27.7   2025-07-04    2% ▇
-<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                      38.8%    31.3   2025-03-25    3% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro av…</a>   7.2%    40.7   2025-03-25    1% ▇
+<a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                      38.8%    31.2   2025-03-25    3% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro av…</a>   7.2%    40.6   2025-03-25    1% ▇
                         <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>            35.9%    36.7   2025-03-25    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         16.3%    19.6   2025-06-14    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                         16.3%    19.5   2025-06-14    1% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   7.2%    25.0   2025-12-16    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  54.2%    30.8   2025-04-04    2% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  37.5%    32.9   2026-09-19    2% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>  15.7%    25.5   2025-04-28    1% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  43.7%    22.7   2026-04-17    1% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  43.7%    22.8   2026-04-17    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    19.9%    24.2   2026-08-28    1% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         1.1%    81.2   2026-08-28    0% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         1.1%    80.8   2026-08-28    0% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    24.7   2026-08-28    0% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>  94.7%    45.5   2025-10-16    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇

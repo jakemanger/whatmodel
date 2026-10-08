@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                 57.3%    40.4   2024-06-25   14% ▇▇
+<a name="first-party-deepseek-scores"></a>DeepSeek vendor-repor…  <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">HumanEval (lab)</a>                 57.3%    40.5   2024-06-25   14% ▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">BIG-Bench Hard (lab)</a>            48.1%    38.1   2024-06-25   13% ▇▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">GSM8K (lab)</a>                     72.0%    40.5   2024-06-25   12% ▇
                         <a href="https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat/blob/85864749cd611b4353ce1decdb286193298f64c7/README.md#chat-model">MATH (lab)</a>                      27.9%    43.7   2024-06-25   11% ▇

@@ -6,7 +6,7 @@
 
 Google · released 2025-03 · 4.3B params · gemma
 
-**score 44.3** ±0.7 · #335 of 551 · from 42 benchmark results across 13 sources
+**score 44.3** ±0.7 · #334 of 551 · from 42 benchmark results across 13 sources
 
 ## How the score was worked out
 
@@ -27,20 +27,20 @@ source                  test                             score  implies  date   
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                    4.0%    41.7   2026-09-25    2% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>            70.1%    48.5   2026-09-25    2% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">InfographicVQA (lab)</a>             50.0%    40.1   2026-09-25    2% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     75.8%    28.6   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     75.8%    28.5   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                 48.8%    39.9   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">IFEval (aggregation unspecifi…</a>   90.2%    53.9   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>       50.0%    32.6   2026-09-25    0% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    57.8%     5.1   2026-09-25    0% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    57.8%     5.0   2026-09-25    0% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                    68.8%  -112.2   2026-09-25    0% ▇
 <a name="report-2503.19786v1"></a>Gemma Team              <a href="https://arxiv.org/html/2503.19786v1">MMLU (lab)</a>                       58.1%    42.4   2025-03-25    5% ▇
                         <a href="https://arxiv.org/html/2503.19786v1">RULER 128k (lab)</a>                 46.8%    43.7   2025-03-25    2% ▇
                         <a href="https://arxiv.org/html/2503.19786v1">Big Bench Extra Hard micro av…</a>   11.0%    42.0   2025-03-25    2% ▇
                         <a href="https://arxiv.org/html/2503.19786v1">VQAv2 (val) (lab)</a>                62.4%    37.1   2025-03-25    1% ▇
                         <a href="https://arxiv.org/html/2503.19786v1">WMT24++ (chrF) (lab)</a>             46.8%    44.7   2025-03-25    1% ▇
-                        <a href="https://arxiv.org/html/2503.19786v1">AI2D test (lab)</a>                  74.8%    14.7   2025-03-25    0% ▇
+                        <a href="https://arxiv.org/html/2503.19786v1">AI2D test (lab)</a>                  74.8%    14.6   2025-03-25    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1303.2    52.7   2026-10-02    7% ▇
-<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   69.4%    48.5   2025-07-04    3% ▇
+<a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   69.4%    48.4   2025-07-04    3% ▇
                         <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>   50.8%    43.8   2025-07-04    3% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     23.2%    37.3   2026-08-28    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          7.5%    53.5   2026-08-28    1% ▇

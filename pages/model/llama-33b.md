@@ -15,11 +15,11 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   54.4%    39.5   2024-01-08   11% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       25.0%    38.4   2024-01-08    8% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       25.0%    38.5   2024-01-08    8% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">WinoGrande</a>                      76.2%    39.8   2024-01-08    5% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            56.8%    37.0   2024-01-08    5% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        68.5%    40.3   2024-01-08    4% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           44.1%    36.7   2024-01-08    3% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           44.1%    36.7   2024-01-08    4% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       83.7%    40.9   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MATH</a>                             8.4%    35.3   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            40.9%    36.6   2024-01-08    3% ▇

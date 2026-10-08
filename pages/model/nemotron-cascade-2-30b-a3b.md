@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 31.6B params (3B active) · nvidia-open-model
 
-**score 64.2** ±1.8 · #108 of 551 · from 10 benchmark results across 2 sources
+**score 64.2** ±1.8 · #107 of 551 · from 10 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,8 +22,8 @@ source                 test                            score  implies  date     
                        <a href="https://arxiv.org/html/2603.19220v2">Arena-Hard v2 aggregate (lab)</a>   83.5%    70.5   2026-03-22    8% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>           79.3%    63.6   2026-03-22    6% ▇
                        <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                  12.2%    55.6   2026-03-22    5% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.7   2026-04-17   13% ▇▇
-                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    63.2   2026-04-17    9% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards  <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  70.8%    52.6   2026-04-17   13% ▇▇
+                       <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  93.3%    63.1   2026-04-17    9% ▇
 prior                  pull toward the middle                   50.0                 1% ▇
                        weighted average                       = 64.2
 </pre>

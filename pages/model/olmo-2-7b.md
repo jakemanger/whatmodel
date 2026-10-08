@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>            56.5%    41.7   2025-10-08    7% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified) (la…</a>  32.5%    37.3   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose (la…</a>  72.3%    43.1   2025-10-08    4% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     23.2%    41.9   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">PopQA (lab)</a>                     23.2%    42.0   2025-10-08    3% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  63.7%    39.5   2025-05-01    6% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  79.3%    46.0   2026-04-17    2% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  64.1%    46.5   2026-04-17    2% ▇

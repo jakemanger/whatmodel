@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-neox-20B.json">LAMBADA (OpenAI version), las…</a>  72.0%    33.6   2024-04-08    1% ▇
 <a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             38.0%    33.6   2022-04-14   13% ▇▇
                         <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                66.1%    32.1   2022-04-14    6% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    30.9   2022-04-14    5% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                29.0%    31.0   2022-04-14    5% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  25.9%    31.3   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 53.5%    30.5   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  72.3%    33.3   2022-04-14    3% ▇

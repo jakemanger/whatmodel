@@ -26,7 +26,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/EleutherAI_gpt-j-6B.json">Social IQA</a>                      41.1%    26.2   2024-04-08    1% ▇
 <a name="paper-2204.06745v1"></a>GPT-NeoX-20B: An Open…  <a href="https://arxiv.org/html/2204.06745v1">ARC Challenge (lab)</a>             34.0%    30.7   2022-04-14   10% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">WinoGrande (lab)</a>                64.0%    30.3   2022-04-14    5% ▇
-                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                28.8%    30.9   2022-04-14    4% ▇
+                        <a href="https://arxiv.org/html/2204.06745v1">OpenBookQA (lab)</a>                28.8%    31.0   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">HellaSwag (lab)</a>                 51.8%    29.6   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">TriviaQA (lab)</a>                  17.0%    25.4   2022-04-14    4% ▇
                         <a href="https://arxiv.org/html/2204.06745v1">ARC Easy (lab)</a>                  67.0%    28.7   2022-04-14    3% ▇

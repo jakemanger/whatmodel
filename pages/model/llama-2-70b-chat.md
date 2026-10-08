@@ -20,7 +20,7 @@ source                  test                                                   s
                         <a href="https://arxiv.org/html/2311.11045v2">MMLU</a>                                                   58.5%    41.2   2023-11-21    4% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">AGIEval English</a>                                        46.7%    37.6   2023-11-21    3% ▇
                         <a href="https://arxiv.org/html/2311.11045v2">ARC Easy</a>                                               82.2%    42.5   2023-11-21    2% ▇
-<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                         49.0%    36.7   2023-11-20   10% ▇
+<a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                                         49.0%    36.8   2023-11-20   10% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                                                  59.0%    44.2   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                                                   60.9%    42.7   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>                              52.1%    35.5   2023-11-20    3% ▇

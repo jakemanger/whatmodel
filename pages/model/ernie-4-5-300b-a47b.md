@@ -22,7 +22,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">LiveCodeBench (version unspec…</a>  38.8%    54.1   2026-09-25    7% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU (lab)</a>                      86.5%    57.6   2026-09-25    7% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MMLU-Pro (lab)</a>                  78.4%    58.9   2026-09-25    7% ▇
-                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  45.9%    71.2   2026-09-25    6% ▇
+                        <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">SimpleQA (lab)</a>                  45.9%    71.1   2026-09-25    6% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">C-Eval (lab)</a>                    90.6%    61.4   2026-09-25    5% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">MATH-500 (lab)</a>                  96.4%    64.3   2026-09-25    5% ▇
                         <a href="https://github.com/PaddlePaddle/ERNIE/blob/790a50b045d1aca2753d5395d8bec0806b2e6925/README.md">CMMLU (lab)</a>                     90.2%    61.9   2026-09-25    4% ▇

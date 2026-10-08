@@ -6,7 +6,7 @@
 
 AI21 Labs · released 2024-08 · 52B params (12B active) · jamba-open-model-license
 
-**score 45.0** ±1.2 · #328 of 551 · from 12 benchmark results across 3 sources
+**score 45.0** ±1.2 · #327 of 551 · from 12 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -20,7 +20,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       69.7%    44.7   2024-08-22   10% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   39.8%    44.5   2024-08-22    8% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   32.3%    42.3   2024-08-22    7% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   46.1%    44.0   2024-08-22    6% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   46.1%    43.9   2024-08-22    6% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              85.7%    51.8   2024-08-22    3% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   75.8%    44.0   2024-08-22    3% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">BFCL (version not stated) (la…</a>   80.7%    47.7   2024-08-22    3% ▇

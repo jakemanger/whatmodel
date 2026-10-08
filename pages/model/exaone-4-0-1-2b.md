@@ -6,7 +6,7 @@
 
 LG AI Research · released 2025-07 · 1.28B params · exaone
 
-**score 45.0** ±1.6 · #327 of 551 · from 9 benchmark results across 1 source
+**score 44.8** ±1.6 · #331 of 551 · from 9 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -17,14 +17,14 @@ source                  test                            score  implies  date    
 <a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">AIME 2025 (lab)</a>                 45.2%    43.9   2025-07-11   24% ▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">GPQA Diamond (lab)</a>              52.0%    52.5   2025-07-11   18% ▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Pro (lab)</a>                  59.3%    48.7   2025-07-11   17% ▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        34.0%    39.3   2025-07-11   11% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">HMMT February 2025 (lab)</a>        34.0%    39.2   2025-07-11   11% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">MMLU-Redux (lab)</a>                71.5%    40.6   2025-07-11    8% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>            28.1%    39.6   2025-07-11    7% ▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>           20.5%    41.9   2025-07-11    6% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Retail (lab)</a>            28.1%    38.9   2025-07-11    7% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">τ-bench Airline (lab)</a>           20.5%    41.6   2025-07-11    6% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">IFEval (aggregation unspecifi…</a>  67.8%    36.8   2025-07-11    5% ▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B/blob/a1d54d1c148c30881ed27e035b650da489b51b92/README.md#performance">BFCL v3 (lab)</a>                   52.9%    47.4   2025-07-11    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 45.0
+                        weighted average                       = 44.8
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -46,8 +46,8 @@ Thunder-KoNUBench: A …  <a href="https://aclanthology.org/2026.findings-acl.32
 
 <pre>
 download              size  score
-4-bit gguf-q4_k_m  ~1.27GB   45.0
-8-bit gguf-q8_0    ~2.04GB   45.0
+4-bit gguf-q4_k_m  ~1.27GB   44.8
+8-bit gguf-q8_0    ~2.04GB   44.8
 </pre>
 
 ```sh

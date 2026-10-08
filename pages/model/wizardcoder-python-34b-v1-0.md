@@ -6,7 +6,7 @@
 
 WizardLM · released 2023-08 · 34B params · llama2
 
-**score 45.0** ±0.6 · #329 of 551 · from 8 benchmark results across 4 sources
+**score 45.0** ±0.6 · #328 of 551 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                    score  implies  date        weig
 <a name="evalplus-published-runs"></a>EvalPlus / EvalPerf p…  <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval</a>               73.2%    46.4   2024-12-26   29% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>              64.6%    45.5   2024-12-26   28% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                   63.2%    46.6   2024-12-26    3% ▇
-<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               61.6%    43.1   2024-03-28   21% ▇▇
+<a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>               61.6%    43.2   2024-03-28   21% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>       40.8%    43.2   2024-03-28   12% ▇
 <a name="first-party-wizardlm-scores"></a>WizardLM team vendor-…  <a href="https://huggingface.co/WizardLMTeam/WizardCoder-Python-13B-V1.0/blob/5ac6748b1f5a4c282107ddc7d3b69fdc4a686d75/README.md#wizardcoder-empowering-code-large-language-models-with-evol-instruct">HumanEval (lab)</a>         73.2%    45.8   2024-01-19    4% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I</a>              42.7%    42.2   2024-01-03    1% ▇

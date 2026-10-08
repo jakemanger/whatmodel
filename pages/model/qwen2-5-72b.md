@@ -17,10 +17,10 @@ source                  test                             score  implies  date   
 <a name="zeroeval-published-results"></a>WildEval ZeroEval pub…  <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/mmlu-redux.summary.json">MMLU-Redux (ZeroEval, 2,778 q…</a>   85.6%    54.7                 8% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/zebra-grid.summary.json">ZebraLogic (ZeroEval, 1,000 p…</a>   26.6%    52.0                 7% ▇
                         <a href="https://github.com/WildEval/ZeroEval/blob/8c1485edf12c6efb5f69135a562927c5ad484059/result_dirs/crux.summary.json">CRUXEval (ZeroEval, 800 probl…</a>   73.9%    53.1                 6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     63.2%    55.0   2025-01-27   10% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     63.2%    55.0   2025-01-27    9% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     49.1%    53.7   2025-01-27    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>          8.1%    50.7   2025-02-25    4% ▇
-<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   80.4%    51.7   2025-10-08    4% ▇
+<a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   80.4%    51.8   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             85.5%    54.8   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   47.7%    51.0   2025-10-08    2% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   69.9%    54.0   2025-10-08    1% ▇

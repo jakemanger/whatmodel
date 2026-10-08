@@ -6,7 +6,7 @@ An open-source AI leaderboard database, including the scoring engine and benchma
 
 **llm** · [image](pages/image.md) · [video](pages/video.md) · [tts](pages/tts.md) · [stt](pages/stt.md)
 
-updated 2026-10-08 12:41 UTC · 701 models · scores combine 360 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
+updated 2026-10-08 12:49 UTC · 701 models · scores combine 364 benchmarks · [how it works](pages/method.md) · [benchmark your machine](https://whatmodel.sh/bench) · [interactive version](https://whatmodel.sh/)
 
 Run `curl "whatmodel.sh/?mac=$(sysctl -n hw.memsize)"` to see what your Mac can run, or `curl whatmodel.sh` for this list in your terminal.
 
@@ -42,7 +42,7 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
     80 ┤ · · · · · · · · · · · · · · DeepSeek V4.1 Flash · · · ◆─GPT-6.1 Sol · ◇ · · · · · · ·
        │                  ·         ●──────────────∘───────────◇      ◇ ◇◇     ◇           ◇
        │              GPT-6 Luna ◆──┘    ◇ ∘         ◇∘ ◇∘  ◇   ◇ ◇∘    ◇                ◇
-       │                  ·●─────┘ ∘         ◇   ·◇ ∘◇◇ ◇∘  ◇◇◇◇ ◇      ◇           ◇ ◇
+       │                  ·●─────┘ ∘         ◇   ·◇ ∘◇◇  ∘  ◇◇◇◇ ◇      ◇           ◇ ◇
        │            ◆──────┘     ∘∘ ◇∘   ◇∘◇∘∘ ∘◇∘∘∘∘∘∘◇ ∘◇  ◇     ◇             ◇
        │            │     ·  ∘∘ ◇∘  ∘ ∘∘∘∘ ◇ ∘ ◇∘∘ ∘   ◇◇ ◇ ∘ ◇∘        ·
     60 ┤ · · · · · ·│· · ∘ ∘ ∘∘· · ·∘∘ ·∘∘ ∘∘◇∘∘∘∘ ◇ · · · · ◇ ·∘· · · · · · · · · · · · · · ·
@@ -65,7 +65,7 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
        │
     75 ┤ · · · · · · · · · · · Qwen3.8-Flash-Next· · · DeepSeek V4.1 Flash ● · ·∘··· · · · · ·
        │                Qwen3.8 27B ●────────────●─∘──∘∘∘─∘──────∘───∘─●∘──┘    ∘∘∘        ∘
-       │            Gemma 4 26B-A4B ●∘∘ ∘        ∘∘ ∘∘∘∘∘∘ ∘∘∘        ∘ ∘     ∘   ·
+       │            Gemma 4 26B-A4B ●∘∘∘∘        ∘∘ ∘∘∘∘∘∘ ∘∘∘        ∘ ∘     ∘   ·
        │       Qwen3.5 9B ●──●∘─────┘∘∘∘∘  ∘ ∘ ∘∘∘  ∘∘ ∘∘ ∘∘∘       ∘       ∘    ∘
        │  Qwen3.5 4B ●───∘∘  ·∘   ∘∘ ∘∘   ∘ ∘∘ ∘  ∘∘ ∘ ·∘   ∘   ∘     ∘ ∘         ·
     50 ┤ · · · ●──●──∘ · ∘∘· ∘∘· ·∘∘∘∘∘∘ ∘ ∘∘·∘∘ ∘ · ∘∘· · ·∘·∘· ·∘· · · · · · ·∘· · · · · · ·
@@ -109,51 +109,51 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
  19  <a href="pages/model/gpt-5-4.md">GPT-5.4</a>                                   74±1   api $5.63/M                        1.1M  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
  20  <a href="pages/model/gpt-5-2-pro.md">GPT-5.2 Pro</a>                               73±1   api $57.75/M                       400k  <a href="https://developers.openai.com/api/docs/models/gpt-5.2-pro">developers.openai.c…</a>
  21  <a href="pages/model/muse-spark-1-3.md">Muse Spark 1.3</a>                            73±1   api $2.00/M                          1M  <a href="https://dev.meta.ai/docs/pricing-rate-limits">dev.meta.ai</a>
- 22  <a href="pages/model/gemini-3-8-flash.md">Gemini 3.8 Flash</a>                          73±1   api $1.50/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
- 23  <a href="pages/model/kimi-k3.md">Kimi K3</a>                                   73±1   api $6.00/M +local      ~884GB       1M  <a href="https://platform.moonshot.ai/docs/api/chat">platform.moonshot.ai</a>
+ 22  <a href="pages/model/kimi-k3.md">Kimi K3</a>                                   73±1   api $6.00/M +local      ~884GB       1M  <a href="https://platform.moonshot.ai/docs/api/chat">platform.moonshot.ai</a>
+ 23  <a href="pages/model/gemini-3-8-flash.md">Gemini 3.8 Flash</a>                          73±1   api $1.50/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
  24  <a href="pages/model/gpt-5-6-luna.md">GPT-5.6 Luna</a>                              73±1   api $0.45/M                        1.1M  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
  25  <a href="pages/model/gpt-6-luna.md">GPT-6 Luna</a>                                73±1   api $0.20/M                        1.1M  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
  26  <a href="pages/model/gemini-3-7-flash.md">Gemini 3.7 Flash</a>                          72±1   api $1.50/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
  27  <a href="pages/model/grok-4-6.md">Grok 4.6</a>                                  72±1   api $3.00/M                        500k  <a href="https://docs.x.ai/docs/models">docs.x.ai</a>
  28  <a href="pages/model/qwen3-8-flash-next.md">Qwen3.8-Flash-Next</a>                        72±2   local                    ~59GB     262k  llama-server -hf un…
  29  <a href="pages/model/deepseek-v4-pro.md">DeepSeek V4 Pro (0813)</a>                    72±1   api $1.63/M +local     ~1010GB       1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
- 30  <a href="pages/model/glm-5-3.md">GLM-5.3</a>                                   72±1   api $2.15/M +local      ~239GB       1M  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
- 31  <a href="pages/model/qwen3-8-max-0902.md">Qwen3.8 Max (0902)</a>                        72±1   api $3.00/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+ 30  <a href="pages/model/qwen3-8-max-0902.md">Qwen3.8 Max (0902)</a>                        72±1   api $3.00/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+ 31  <a href="pages/model/glm-5-3.md">GLM-5.3</a>                                   72±1   api $2.15/M +local      ~239GB       1M  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
  32  <a href="pages/model/mimo-v2-6-pro.md">MiMo-V2.6-Pro</a>                             72±2   api $0.54/M +local      ~443GB       1M  <a href="https://mimo.mi.com/docs/en-US/quick-start/summary/model">mimo.mi.com</a>
  33  <a href="pages/model/muse-spark-1-2.md">Muse Spark 1.2</a>                            72±1   api $2.00/M                          1M  <a href="https://dev.meta.ai/docs">dev.meta.ai</a>
- 34  <a href="pages/model/gemini-3-1-pro.md">Gemini 3.1 Pro (Preview)</a>                  72±1   api $4.50/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
- 35  <a href="pages/model/muse-spark.md">Muse Spark</a>                                71±2   comparison only
- 36  <a href="pages/model/gpt-5-2-chat-latest-20260210.md">GPT-5.2 Chat (2026-02-10)</a>                 71±2*  comparison only
- 37  <a href="pages/model/claude-opus-4-6.md">Claude Opus 4.6</a>                           71±1   api $10.00/M                         1M  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
- 38  <a href="pages/model/muse-spark-1-1.md">Muse Spark 1.1</a>                            71±1   api $2.00/M                          1M  <a href="https://dev.meta.ai/docs">dev.meta.ai</a>
- 39  <a href="pages/model/step-5-preview.md">Step 5 Preview</a>                            71±1   comparison only
+ 34  <a href="pages/model/muse-spark-1-1.md">Muse Spark 1.1</a>                            72±1   api $2.00/M                          1M  <a href="https://dev.meta.ai/docs">dev.meta.ai</a>
+ 35  <a href="pages/model/gemini-3-1-pro.md">Gemini 3.1 Pro (Preview)</a>                  71±1   api $4.50/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
+ 36  <a href="pages/model/muse-spark.md">Muse Spark</a>                                71±2   comparison only
+ 37  <a href="pages/model/gpt-5-2-chat-latest-20260210.md">GPT-5.2 Chat (2026-02-10)</a>                 71±2*  comparison only
+ 38  <a href="pages/model/step-5-preview.md">Step 5 Preview</a>                            71±1   comparison only
+ 39  <a href="pages/model/grok-4-5.md">Grok 4.5</a>                                  71±1   api $3.00/M                        500k  <a href="https://docs.x.ai/docs/models">docs.x.ai</a>
  40  <a href="pages/model/claude-opus-4-7.md">Claude Opus 4.7</a>                           71±1   api $10.00/M                         1M  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
- 41  <a href="pages/model/grok-4-5.md">Grok 4.5</a>                                  71±1   api $3.00/M                        500k  <a href="https://docs.x.ai/docs/models">docs.x.ai</a>
+ 41  <a href="pages/model/claude-opus-4-6.md">Claude Opus 4.6</a>                           71±1   api $10.00/M                         1M  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
  42  <a href="pages/model/claude-sonnet-5.md">Claude Sonnet 5</a>                           71±1   api $4.00/M                          1M  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
  43  <a href="pages/model/grok-4-7.md">Grok 4.7</a>                                  71±1   api $3.00/M                        500k  <a href="https://docs.x.ai/docs/models">docs.x.ai</a>
  44  <a href="pages/model/qwen3-7-max.md">Qwen3.7 Max</a>                               71±1   api $3.75/M                          1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
  45  <a href="pages/model/qwen3-7-max-preview.md">Qwen3.7 Max Preview</a>                       71±3*  comparison only
  46  <a href="pages/model/gpt-5-3-codex.md">GPT-5.3-Codex</a>                             71±2   api $4.81/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
- 47  <a href="pages/model/command-a-plus.md">Command A+ (05-2026)</a>                      71±3   api price unknown +l…    ~71GB     128k  <a href="https://docs.cohere.com/docs/command-a-plus">docs.cohere.com</a>
- 48  <a href="pages/model/gpt-5-2.md">GPT-5.2</a>                                   70±1   api $4.81/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
- 49  <a href="pages/model/deepseek-v4-flash.md">DeepSeek V4 Flash (0731)</a>                  70±1   api $0.11/M +local       ~92GB       1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
- 50  <a href="pages/model/gemini-3-5-flash.md">Gemini 3.5 Flash</a>                          70±1   api $3.38/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
+ 47  <a href="pages/model/gpt-5-2.md">GPT-5.2</a>                                   70±1   api $4.81/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+ 48  <a href="pages/model/deepseek-v4-flash.md">DeepSeek V4 Flash (0731)</a>                  70±1   api $0.11/M +local       ~92GB       1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
+ 49  <a href="pages/model/gemini-3-5-flash.md">Gemini 3.5 Flash</a>                          70±1   api $3.38/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
+ 50  <a href="pages/model/command-a-plus.md">Command A+ (05-2026)</a>                      70±3   api price unknown +l…    ~71GB     128k  <a href="https://docs.cohere.com/docs/command-a-plus">docs.cohere.com</a>
  51  <a href="pages/model/gemini-3-6-flash.md">Gemini 3.6 Flash</a>                          70±1   api $1.50/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
  52  <a href="pages/model/seed-2-1-pro-preview.md">Seed 2.1 Pro (Preview)</a>                    70±2*  comparison only
  53  <a href="pages/model/hy3.md">Hunyuan Hy3 (295B-A21B)</a>                   70±1   api $0.23/M +local       ~96GB     256k  <a href="https://deepinfra.com/models">deepinfra.com</a>
- 54  <a href="pages/model/qwen3-8-27b.md">Qwen3.8 27B</a>                               70±1   api $1.60/M +local       ~19GB     262k  <a href="https://console.groq.com/docs/models">console.groq.com</a>
- 55  <a href="pages/model/grok-4-20-multi-agent-0309.md">Grok 4.20 Multi-Agent (03…</a>                70±2   api $1.56/M                          1M  <a href="https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309.md">docs.x.ai</a>
+ 54  <a href="pages/model/grok-4-20-multi-agent-0309.md">Grok 4.20 Multi-Agent (03…</a>                70±2   api $1.56/M                          1M  <a href="https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309.md">docs.x.ai</a>
+ 55  <a href="pages/model/qwen3-8-27b.md">Qwen3.8 27B</a>                               70±1   api $1.60/M +local       ~19GB     262k  <a href="https://console.groq.com/docs/models">console.groq.com</a>
  56  <a href="pages/model/glm-5-2.md">GLM-5.2</a>                                   70±1   api $2.15/M +local      ~121GB       1M  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
  57  <a href="pages/model/ernie-5-1.md">ERNIE 5.1</a>                                 70±2*  comparison only
  58  <a href="pages/model/glm-5-3-flash.md">GLM-5.3-Flash</a>                             70±1   api $0.24/M +local      ~103GB       1M  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
- 59  <a href="pages/model/gpt-5-pro.md">GPT-5 Pro</a>                                 70±1   api $41.25/M                       400k  <a href="https://developers.openai.com/api/docs/models/gpt-5-pro">developers.openai.c…</a>
- 60  <a href="pages/model/deepseek-v4-pro-preview.md">DeepSeek V4 Pro (Preview,…</a>                70±1   local                   ~910GB           vllm serve deepseek…
- 61  <a href="pages/model/gpt-5.md">GPT-5</a>                                     70±1   api $3.44/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+ 59  <a href="pages/model/gpt-5.md">GPT-5</a>                                     70±1   api $3.44/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+ 60  <a href="pages/model/gpt-5-pro.md">GPT-5 Pro</a>                                 70±1   api $41.25/M                       400k  <a href="https://developers.openai.com/api/docs/models/gpt-5-pro">developers.openai.c…</a>
+ 61  <a href="pages/model/deepseek-v4-pro-preview.md">DeepSeek V4 Pro (Preview,…</a>                70±1   local                   ~910GB           vllm serve deepseek…
  62  <a href="pages/model/longcat-2-0.md">LongCat 2.0 (1.6T-A48B)</a>                   70±2   api $1.30/M +local     ~2155GB       1M  <a href="https://longcat.chat/platform/docs/pricing/longcat-2.0">longcat.chat</a>
- 63  <a href="pages/model/gemini-3-pro-preview.md">Gemini 3 Pro (Preview)</a>                    70±1   comparison only                      1M
- 64  <a href="pages/model/qwen3-5-max-preview.md">Qwen3.5-Max-Preview</a>                       70±3*  comparison only
- 65  <a href="pages/model/kimi-k2-6.md">Kimi K2.6</a>                                 69±1   api $1.71/M +local      ~317GB     262k  <a href="https://platform.moonshot.ai/docs/api/chat">platform.moonshot.ai</a>
- 66  <a href="pages/model/gemini-3-flash-preview.md">Gemini 3 Flash (Preview)</a>                  69±1   api $1.13/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview">ai.google.dev</a>
+ 63  <a href="pages/model/qwen3-5-max-preview.md">Qwen3.5-Max-Preview</a>                       70±3*  comparison only
+ 64  <a href="pages/model/kimi-k2-6.md">Kimi K2.6</a>                                 69±1   api $1.71/M +local      ~317GB     262k  <a href="https://platform.moonshot.ai/docs/api/chat">platform.moonshot.ai</a>
+ 65  <a href="pages/model/gemini-3-flash-preview.md">Gemini 3 Flash (Preview)</a>                  69±1   api $1.13/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models/gemini-3-flash-preview">ai.google.dev</a>
+ 66  <a href="pages/model/gemini-3-pro-preview.md">Gemini 3 Pro (Preview)</a>                    69±1   comparison only                      1M
  67  <a href="pages/model/qwen3-6-max-preview.md">Qwen3.6 Max Preview</a>                       69±1   api $2.92/M                        256k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
  68  <a href="pages/model/dola-seed-2-0-pro.md">Dola Seed 2.0 Pro</a>                         69±2*  comparison only
  69  <a href="pages/model/kimi-k2-7-code.md">Kimi K2.7 Code</a>                            69±1   api $1.71/M +local      ~359GB     262k  <a href="https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart">platform.kimi.ai</a>
@@ -161,13 +161,13 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
  71  <a href="pages/model/gpt-5-1.md">GPT-5.1</a>                                   68±1   api $3.44/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
  72  <a href="pages/model/claude-opus-4-5.md">Claude Opus 4.5</a>                           68±1   api $10.00/M                       200k  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
  73  <a href="pages/model/mimo-v2-5-pro.md">MiMo-V2.5-Pro (1T-A42B)</a>                   68±1   api $0.65/M +local      ~163GB       1M  <a href="https://novita.ai/models/llm/xiaomimimo-mimo-v2.5-pro">novita.ai</a>
- 74  <a href="pages/model/grok-4-20.md">Grok 4.20 (0309 reasoning)</a>                68±1   api $1.56/M                          1M  <a href="https://docs.x.ai/docs/models">docs.x.ai</a>
- 75  <a href="pages/model/gpt-5-3-chat-latest-20261002.md">GPT-5.3 Chat (Arena 2026-…</a>                68±3*  comparison only
+ 74  <a href="pages/model/gpt-5-3-chat-latest-20261002.md">GPT-5.3 Chat (Arena 2026-…</a>                68±3*  comparison only
+ 75  <a href="pages/model/grok-4-20.md">Grok 4.20 (0309 reasoning)</a>                68±1   api $1.56/M                          1M  <a href="https://docs.x.ai/docs/models">docs.x.ai</a>
  76  <a href="pages/model/gemini-2-5-pro-preview-06-05.md">Gemini 2.5 Pro Preview (0…</a>                68±1   comparison only
  77  <a href="pages/model/gpt-5-4-mini.md">GPT-5.4 mini</a>                              68±1   api $1.69/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
  78  <a href="pages/model/ernie-5-0-preview-1203.md">ERNIE 5.0 Preview (1203)</a>                  68±3*  comparison only
- 79  <a href="pages/model/qwen3-7-plus.md">Qwen3.7 Plus</a>                              68±1   api $0.70/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
- 80  <a href="pages/model/deepseek-v4-flash-preview.md">DeepSeek V4 Flash (Previe…</a>                68±1   local                   ~103GB           llama-server -hf un…
+ 79  <a href="pages/model/deepseek-v4-flash-preview.md">DeepSeek V4 Flash (Previe…</a>                68±1   local                   ~103GB           llama-server -hf un…
+ 80  <a href="pages/model/qwen3-7-plus.md">Qwen3.7 Plus</a>                              68±1   api $0.70/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
  81  <a href="pages/model/ernie-5-0-0110.md">ERNIE 5.0 (0110)</a>                          68±3*  comparison only
  82  <a href="pages/model/claude-sonnet-4-6.md">Claude Sonnet 4.6</a>                         68±1   api $6.00/M                          1M  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
  83  <a href="pages/model/o3.md">o3</a>                                        67±1   api $3.50/M                        200k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
@@ -182,71 +182,71 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
  92  <a href="pages/model/inkling-small.md">Inkling Small (266B-A12B)</a>                 67±1   api $0.64/M +local       ~86GB       1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
  93  <a href="pages/model/longcat-flash-chat-2602-exp.md">LongCat-Flash-Chat-2602-E…</a>                67±3*  comparison only
  94  <a href="pages/model/gemma-4-31b.md">Gemma 4 31B</a>                               67±1   api $0.19/M +local       ~21GB     262k  <a href="https://deepinfra.com/google/gemma-4-31B-it">deepinfra.com</a>
- 95  <a href="pages/model/glm-5.md">GLM-5</a>                                     66±1   api $1.55/M +local      ~119GB     205k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
- 96  <a href="pages/model/nemotron-3-ultra-550b-a55b.md">Nemotron 3 Ultra 550B-A55B</a>                66±1   api $1.35/M +local       ~89GB       1M  <a href="https://docs.together.ai/docs/serverless-models">docs.together.ai</a>
+ 95  <a href="pages/model/nemotron-3-ultra-550b-a55b.md">Nemotron 3 Ultra 550B-A55B</a>                66±1   api $1.35/M +local       ~89GB       1M  <a href="https://docs.together.ai/docs/serverless-models">docs.together.ai</a>
+ 96  <a href="pages/model/inkling.md">Inkling (975B-A41B)</a>                       66±1   api $1.73/M +local      ~156GB       1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
  97  <a href="pages/model/qwen3-5-plus.md">Qwen3.5 Plus</a>                              66±2   api $0.90/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
- 98  <a href="pages/model/inkling.md">Inkling (975B-A41B)</a>                       66±1   api $1.73/M +local      ~156GB       1M  <a href="https://deepinfra.com/models">deepinfra.com</a>
- 99  <a href="pages/model/gemini-2-5-pro-exp-03-25.md">Gemini 2.5 Pro Experiment…</a>                66±2   comparison only
-100  <a href="pages/model/qwen3-max-preview.md">Qwen3-Max-Preview</a>                         66±3*  api $2.40/M                        262k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+ 98  <a href="pages/model/gemini-2-5-pro-exp-03-25.md">Gemini 2.5 Pro Experiment…</a>                66±2   comparison only
+ 99  <a href="pages/model/qwen3-max-preview.md">Qwen3-Max-Preview</a>                         66±3*  api $2.40/M                        262k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+100  <a href="pages/model/glm-5.md">GLM-5</a>                                     66±1   api $1.55/M +local      ~119GB     205k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
 101  <a href="pages/model/qwen3-6-27b.md">Qwen3.6 27B</a>                               66±1   api $1.20/M +local       ~20GB     262k  <a href="https://console.groq.com/docs/models">console.groq.com</a>
-102  <a href="pages/model/glm-4-7.md">GLM-4.7</a>                                   66±1   api $1.00/M +local       ~58GB     205k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
-103  <a href="pages/model/qwen3-5-397b-a17b.md">Qwen3.5 397B-A17B</a>                         66±1   api $1.09/M +local       ~65GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
+102  <a href="pages/model/qwen3-5-397b-a17b.md">Qwen3.5 397B-A17B</a>                         66±1   api $1.09/M +local       ~65GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
+103  <a href="pages/model/glm-4-7.md">GLM-4.7</a>                                   66±1   api $1.00/M +local       ~58GB     205k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
 104  <a href="pages/model/gpt-5-chat-20261002.md">GPT-5 Chat (Arena 2026-10…</a>                66±2*  comparison only
-105  <a href="pages/model/o4-mini.md">o4-mini</a>                                   66±1   api $1.93/M                        200k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
-106  <a href="pages/model/glm-5v-turbo.md">GLM-5V-Turbo</a>                              66±2   api $1.90/M                        200k  <a href="https://www.siliconflow.com/models/glm-5v-turbo">siliconflow.com</a>
-107  <a href="pages/model/mimo-v2-omni.md">MiMo-V2-Omni</a>                              66±2*  comparison only                    262k
-108  <a href="pages/model/gemini-3-5-flash-lite.md">Gemini 3.5 Flash-Lite</a>                     66±1   api $0.85/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
-109  <a href="pages/model/qwen3-5-122b-a10b.md">Qwen3.5 122B-A10B</a>                         66±1   api $1.10/M +local       ~81GB     262k  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
+105  <a href="pages/model/glm-5v-turbo.md">GLM-5V-Turbo</a>                              66±2   api $1.90/M                        200k  <a href="https://www.siliconflow.com/models/glm-5v-turbo">siliconflow.com</a>
+106  <a href="pages/model/mimo-v2-omni.md">MiMo-V2-Omni</a>                              66±2*  comparison only                    262k
+107  <a href="pages/model/gemini-3-5-flash-lite.md">Gemini 3.5 Flash-Lite</a>                     66±1   api $0.85/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
+108  <a href="pages/model/qwen3-5-122b-a10b.md">Qwen3.5 122B-A10B</a>                         66±1   api $1.10/M +local       ~81GB     262k  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
+109  <a href="pages/model/o4-mini.md">o4-mini</a>                                   66±1   api $1.93/M                        200k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
 110  <a href="pages/model/kimi-k2-thinking.md">Kimi K2 Thinking</a>                          66±1   api $1.07/M +local      ~160GB     262k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
 111  <a href="pages/model/amazon-nova-experimental-chat-26-02-10.md">Amazon Nova Experimental …</a>                66±3*  comparison only
-112  <a href="pages/model/gpt-5-4-nano.md">GPT-5.4 nano</a>                              65±1   api $0.46/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
-113  <a href="pages/model/gpt-5-mini.md">GPT-5 mini</a>                                65±1   api $0.69/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
-114  <a href="pages/model/claude-sonnet-4-5.md">Claude Sonnet 4.5</a>                         65±1   api $6.00/M                        200k  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
-115  <a href="pages/model/gpt-5-5-instant.md">GPT-5.5 Instant</a>                           65±1   comparison only
+112  <a href="pages/model/gpt-5-mini.md">GPT-5 mini</a>                                65±1   api $0.69/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+113  <a href="pages/model/gpt-5-5-instant.md">GPT-5.5 Instant</a>                           65±1   comparison only
+114  <a href="pages/model/gpt-5-4-nano.md">GPT-5.4 nano</a>                              65±1   api $0.46/M                        400k  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+115  <a href="pages/model/claude-sonnet-4-5.md">Claude Sonnet 4.5</a>                         65±1   api $6.00/M                        200k  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
 116  <a href="pages/model/minimax-m2-7.md">MiniMax-M2.7</a>                              65±2   api $0.53/M +local       ~75GB     205k  <a href="https://platform.minimax.io/docs/guides/text-generation">platform.minimax.io</a>
 117  <a href="pages/model/qwen3-coder-next.md">Qwen3-Coder-Next (80B-A3B)</a>                65±2   api $0.60/M +local       ~27GB     262k  <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing">alibabacloud.com</a>
 118  <a href="pages/model/deepseek-v3-2.md">DeepSeek V3.2</a>                             65±1   api $0.29/M +local      ~110GB     128k  <a href="https://deepinfra.com/models">deepinfra.com</a>
 119  <a href="pages/model/muse-glimmer-30b.md">Muse Glimmer 30B</a>                          65±2   api $0.64/M +local       ~21GB     131k  <a href="https://fireworks.ai/docs/">fireworks.ai</a>
-120  <a href="pages/model/glm-4-6.md">GLM-4.6</a>                                   65±1   api $1.00/M +local       ~58GB     205k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
-121  <a href="pages/model/qwen3-5-27b.md">Qwen3.5 27B</a>                               65±1   api $0.84/M +local       ~20GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-122  <a href="pages/model/ernie-5-0-preview-1022.md">ERNIE 5.0 Preview (1022)</a>                  65±3*  comparison only
-123  <a href="pages/model/ernie-5-0-preview-1220.md">ERNIE 5.0 Preview (1220)</a>                  65±3*  comparison only
+120  <a href="pages/model/qwen3-5-27b.md">Qwen3.5 27B</a>                               65±1   api $0.84/M +local       ~20GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
+121  <a href="pages/model/ernie-5-0-preview-1022.md">ERNIE 5.0 Preview (1022)</a>                  65±3*  comparison only
+122  <a href="pages/model/ernie-5-0-preview-1220.md">ERNIE 5.0 Preview (1220)</a>                  65±3*  comparison only
+123  <a href="pages/model/glm-4-6.md">GLM-4.6</a>                                   65±1   api $1.00/M +local       ~58GB     205k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
 124  <a href="pages/model/grok-4-0709.md">Grok 4 (0709)</a>                             65±1   comparison only
-125  <a href="pages/model/deepseek-v3-2-exp.md">DeepSeek V3.2 Exp</a>                         65±1   local                   ~726GB           vllm serve deepseek…
-126  <a href="pages/model/gemini-3-1-flash-lite.md">Gemini 3.1 Flash-Lite</a>                     65±1   api $0.56/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
-127  <a href="pages/model/grok-4-1-fast-reasoning.md">Grok 4.1 Fast (Reasoning)</a>                 65±1   api $0.28/M                        128k  <a href="https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok">azure.microsoft.com</a>
-128  <a href="pages/model/o1-2024-12-17.md">o1 (2024-12-17)</a>                           65±1   api $26.25/M                       200k  <a href="https://developers.openai.com/api/docs/models/o1">developers.openai.c…</a>
+125  <a href="pages/model/gemini-3-1-flash-lite.md">Gemini 3.1 Flash-Lite</a>                     65±1   api $0.56/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
+126  <a href="pages/model/o1-2024-12-17.md">o1 (2024-12-17)</a>                           65±1   api $26.25/M                       200k  <a href="https://developers.openai.com/api/docs/models/o1">developers.openai.c…</a>
+127  <a href="pages/model/deepseek-v3-2-exp.md">DeepSeek V3.2 Exp</a>                         65±1   local                   ~726GB           vllm serve deepseek…
+128  <a href="pages/model/qwen3-235b-a22b-thinking-2507.md">Qwen3 235B-A22B Thinking …</a>                64±1   api $0.97/M +local       ~76GB     131k  <a href="https://novita.ai/models">novita.ai</a>
 129  <a href="pages/model/gemini-2-5-pro.md">Gemini 2.5 Pro</a>                            64±1   api $3.44/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
-130  <a href="pages/model/qwen3-235b-a22b-thinking-2507.md">Qwen3 235B-A22B Thinking …</a>                64±1   api $0.97/M +local       ~76GB     131k  <a href="https://novita.ai/models">novita.ai</a>
-131  <a href="pages/model/kimi-k2.md">Kimi K2 Instruct (0711)</a>                   64±1   api $1.00/M +local      ~160GB     131k  <a href="https://novita.ai/models">novita.ai</a>
-132  <a href="pages/model/nemotron-cascade-2-30b-a3b.md">Nemotron Cascade 2 30B-A3B</a>                64±2   local                    ~22GB     256k  ollama run nemotron…
-133  <a href="pages/model/qwen3-7-flash.md">Qwen3.7 Flash</a>                             64±1   api $0.055/M                         1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
-134  <a href="pages/model/deepseek-v3-1-terminus.md">DeepSeek V3.1 Terminus</a>                    64±1   local                   ~425GB     164k  ollama run deepseek…
-135  <a href="pages/model/gemma-4-26b-a4b.md">Gemma 4 26B-A4B</a>                           64±1   api $0.14/M +local       ~18GB     262k  <a href="https://deepinfra.com/google/gemma-4-26B-A4B-it">deepinfra.com</a>
-136  <a href="pages/model/claude-opus-4-20250514.md">Claude Opus 4</a>                             64±1   comparison only
-137  <a href="pages/model/gemini-2-5-pro-preview-05-06.md">Gemini 2.5 Pro Preview (0…</a>                64±1   comparison only
-138  <a href="pages/model/amazon-nova-experimental-chat-26-01-10.md">Amazon Nova Experimental …</a>                64±3*  comparison only
-139  <a href="pages/model/nova-2-omni.md">Nova 2 Omni (Preview)</a>                     64±7*  api $0.93/M                          1M  <a href="https://aws.amazon.com/nova/pricing/">aws.amazon.com</a>
-140  <a href="pages/model/laguna-m-1.md">Laguna M.1</a>                                64±2   api price unknown +l…   ~148GB     262k  <a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#pool">huggingface.co</a>
-141  <a href="pages/model/gpt-5-2-codex.md">GPT-5.2-Codex</a>                             64±2   comparison only
+130  <a href="pages/model/kimi-k2.md">Kimi K2 Instruct (0711)</a>                   64±1   api $1.00/M +local      ~160GB     131k  <a href="https://novita.ai/models">novita.ai</a>
+131  <a href="pages/model/nemotron-cascade-2-30b-a3b.md">Nemotron Cascade 2 30B-A3B</a>                64±2   local                    ~22GB     256k  ollama run nemotron…
+132  <a href="pages/model/qwen3-7-flash.md">Qwen3.7 Flash</a>                             64±1   api $0.055/M                         1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+133  <a href="pages/model/grok-4-1-fast-reasoning.md">Grok 4.1 Fast (Reasoning)</a>                 64±1   api $0.28/M                        128k  <a href="https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok">azure.microsoft.com</a>
+134  <a href="pages/model/claude-opus-4-20250514.md">Claude Opus 4</a>                             64±1   comparison only
+135  <a href="pages/model/gemini-2-5-pro-preview-05-06.md">Gemini 2.5 Pro Preview (0…</a>                64±1   comparison only
+136  <a href="pages/model/deepseek-v3-1-terminus.md">DeepSeek V3.1 Terminus</a>                    64±1   local                   ~425GB     164k  ollama run deepseek…
+137  <a href="pages/model/amazon-nova-experimental-chat-26-01-10.md">Amazon Nova Experimental …</a>                64±3*  comparison only
+138  <a href="pages/model/gemma-4-26b-a4b.md">Gemma 4 26B-A4B</a>                           64±1   api $0.14/M +local       ~18GB     262k  <a href="https://deepinfra.com/google/gemma-4-26B-A4B-it">deepinfra.com</a>
+139  <a href="pages/model/laguna-m-1.md">Laguna M.1</a>                                64±2   api price unknown +l…   ~148GB     262k  <a href="https://huggingface.co/poolside/Laguna-M.1/blob/2bf8a4ab6d2e8e1e0d92a41318532a0fee1640d6/README.md#pool">huggingface.co</a>
+140  <a href="pages/model/gpt-5-2-codex.md">GPT-5.2-Codex</a>                             64±2   comparison only
+141  <a href="pages/model/qwen3-6-35b-a3b.md">Qwen3.6 35B-A3B</a>                           64±1   api $0.31/M +local       ~24GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
 142  <a href="pages/model/deepseek-v3-1.md">DeepSeek V3.1</a>                             64±1   api $0.42/M +local      ~110GB     131k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-143  <a href="pages/model/o3-mini.md">o3-mini</a>                                   64±1   api $1.93/M                        200k  <a href="https://developers.openai.com/api/docs/models/o3-mini">developers.openai.c…</a>
-144  <a href="pages/model/grok-3-preview-02-24.md">Grok 3 Preview (02-24)</a>                    64±3*  comparison only
-145  <a href="pages/model/qwen3-6-35b-a3b.md">Qwen3.6 35B-A3B</a>                           64±1   api $0.31/M +local       ~24GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-146  <a href="pages/model/step-3-7-flash.md">Step 3.7 Flash (198B-A11B)</a>                64±1   api $0.44/M +local      ~104GB     256k  <a href="https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md">platform.stepfun.ai</a>
-147  <a href="pages/model/claude-sonnet-4-20250514.md">Claude Sonnet 4</a>                           64±1   comparison only
-148  <a href="pages/model/claude-opus-4-1-20250805.md">Claude Opus 4.1</a>                           64±1   comparison only
-149  <a href="pages/model/step-3-5-flash.md">Step 3.5 Flash (196B-A11B)</a>                64±1   api $0.15/M +local      ~126GB     256k  <a href="https://platform.stepfun.ai/docs/en/guides/models/step-3.5-flash.md">platform.stepfun.ai</a>
-150  <a href="pages/model/gpt-5-1-codex.md">GPT-5.1-Codex</a>                             64±2*  comparison only
-151  <a href="pages/model/hy3-preview.md">Hy3 preview (295B-A21B)</a>                   64±1   local                   ~629GB           vllm serve tencent/…
+143  <a href="pages/model/nova-2-omni.md">Nova 2 Omni (Preview)</a>                     64±7*  api $0.93/M                          1M  <a href="https://aws.amazon.com/nova/pricing/">aws.amazon.com</a>
+144  <a href="pages/model/step-3-7-flash.md">Step 3.7 Flash (198B-A11B)</a>                64±1   api $0.44/M +local      ~104GB     256k  <a href="https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash.md">platform.stepfun.ai</a>
+145  <a href="pages/model/claude-sonnet-4-20250514.md">Claude Sonnet 4</a>                           64±1   comparison only
+146  <a href="pages/model/claude-opus-4-1-20250805.md">Claude Opus 4.1</a>                           64±1   comparison only
+147  <a href="pages/model/grok-3-preview-02-24.md">Grok 3 Preview (02-24)</a>                    64±3*  comparison only
+148  <a href="pages/model/o3-mini.md">o3-mini</a>                                   64±1   api $1.93/M                        200k  <a href="https://developers.openai.com/api/docs/models/o3-mini">developers.openai.c…</a>
+149  <a href="pages/model/gpt-5-1-codex.md">GPT-5.1-Codex</a>                             64±2*  comparison only
+150  <a href="pages/model/hy3-preview.md">Hy3 preview (295B-A21B)</a>                   64±1   local                   ~629GB           vllm serve tencent/…
+151  <a href="pages/model/step-3-5-flash.md">Step 3.5 Flash (196B-A11B)</a>                64±1   api $0.15/M +local      ~126GB     256k  <a href="https://platform.stepfun.ai/docs/en/guides/models/step-3.5-flash.md">platform.stepfun.ai</a>
 152  <a href="pages/model/qwen3-6-flash.md">Qwen3.6 Flash</a>                             64±1   api $0.56/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
 153  <a href="pages/model/glm-4-5.md">GLM-4.5</a>                                   63±1   api $1.00/M +local       ~58GB     131k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
 154  <a href="pages/model/qwen3-5-35b-a3b.md">Qwen3.5 35B-A3B</a>                           63±1   api $0.35/M +local       ~25GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
 155  <a href="pages/model/qwen3-vl-235b-a22b-instruct.md">Qwen3-VL 235B-A22B Instru…</a>                63±1   local                   ~150GB     256k  ollama run qwen3-vl…
-156  <a href="pages/model/grok-4-1.md">Grok 4.1</a>                                  63±2*  comparison only
-157  <a href="pages/model/qwen3-235b-a22b-instruct-2507.md">Qwen3 235B-A22B Instruct …</a>                63±1   api $0.20/M +local       ~76GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-158  <a href="pages/model/claude-3-7-sonnet-20250219.md">Claude 3.7 Sonnet</a>                         63±1   comparison only
-159  <a href="pages/model/qwen3-max-2025-09-23.md">Qwen3-Max (2025-09-23)</a>                    63±1   api $2.40/M                        262k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+156  <a href="pages/model/qwen3-235b-a22b-instruct-2507.md">Qwen3 235B-A22B Instruct …</a>                63±1   api $0.20/M +local       ~76GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
+157  <a href="pages/model/claude-3-7-sonnet-20250219.md">Claude 3.7 Sonnet</a>                         63±1   comparison only
+158  <a href="pages/model/qwen3-max-2025-09-23.md">Qwen3-Max (2025-09-23)</a>                    63±1   api $2.40/M                        262k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+159  <a href="pages/model/grok-4-1.md">Grok 4.1</a>                                  63±2*  comparison only
 160  <a href="pages/model/qwen3-vl-235b-a22b-thinking.md">Qwen3-VL 235B-A22B Thinki…</a>                63±1   local                   ~150GB     256k  ollama run qwen3-vl…
 161  <a href="pages/model/intellect-3.md">INTELLECT-3</a>                               63±1   local                    ~48GB           llama-server -hf ba…
 162  <a href="pages/model/minimax-m2-5.md">MiniMax-M2.5</a>                              63±1   api $0.53/M +local       ~75GB     205k  <a href="https://platform.minimax.io/docs/guides/text-generation">platform.minimax.io</a>
@@ -254,9 +254,9 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 164  <a href="pages/model/claude-haiku-4-5.md">Claude Haiku 4.5</a>                          63±1   api $2.00/M                        200k  <a href="https://docs.anthropic.com/en/docs/about-claude/models">docs.anthropic.com</a>
 165  <a href="pages/model/mistral-medium-3-5.md">Mistral Medium 3.5 (128B)</a>                 63±1   api $3.00/M +local       ~42GB     262k  <a href="https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04">docs.mistral.ai</a>
 166  <a href="pages/model/deepseek-r1-0528.md">DeepSeek R1 0528</a>                          63±1   api $0.91/M +local      ~110GB     164k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-167  <a href="pages/model/kimi-k2-0905.md">Kimi K2 Instruct (0905)</a>                   63±2   local                   ~298GB           llama-server -hf un…
-168  <a href="pages/model/gemini-2-5-flash-preview-05-20.md">Gemini 2.5 Flash Preview …</a>                62±1   comparison only
-169  <a href="pages/model/qwen3-5-flash.md">Qwen3.5 Flash</a>                             62±1   api $0.17/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+167  <a href="pages/model/gemini-2-5-flash-preview-05-20.md">Gemini 2.5 Flash Preview …</a>                62±1   comparison only
+168  <a href="pages/model/qwen3-5-flash.md">Qwen3.5 Flash</a>                             62±1   api $0.17/M                          1M  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+169  <a href="pages/model/kimi-k2-0905.md">Kimi K2 Instruct (0905)</a>                   62±2   local                   ~298GB           llama-server -hf un…
 170  <a href="pages/model/deepseek-r1.md">DeepSeek R1 (Jan '25)</a>                     62±1   api $4.00/M +local      ~110GB     128k  <a href="https://docs.together.ai/docs/serverless-models">docs.together.ai</a>
 171  <a href="pages/model/gemini-2-5-flash.md">Gemini 2.5 Flash</a>                          62±1   api $0.85/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
 172  <a href="pages/model/amazon-nova-experimental-chat-12-10.md">Amazon Nova Experimental …</a>                62±3*  comparison only
@@ -265,13 +265,13 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 175  <a href="pages/model/qwen3-coder-480b-a35b.md">Qwen3-Coder 480B-A35B Ins…</a>                62±1   api $0.67/M +local       ~78GB     262k  <a href="https://novita.ai/models">novita.ai</a>
 176  <a href="pages/model/seed-oss-36b.md">Seed-OSS 36B Instruct</a>                     62±2   local                    ~25GB     524k  llama-server -hf un…
 177  <a href="pages/model/laguna-xs-2.md">Laguna XS.2</a>                               62±2   local                    ~72GB     262k  vllm serve poolside…
-178  <a href="pages/model/gemini-2-5-flash-preview-09-2025.md">Gemini 2.5 Flash Preview …</a>                62±1   comparison only
-179  <a href="pages/model/mistral-medium-3-1.md">Mistral Medium 3.1 (2508)</a>                 62±2   comparison only
-180  <a href="pages/model/nova-2-pro.md">Nova 2 Pro (Preview)</a>                      62±2   api $3.78/M                          1M  <a href="https://aws.amazon.com/nova/pricing/">aws.amazon.com</a>
-181  <a href="pages/model/exaone-4-5-33b.md">EXAONE 4.5 33B</a>                            62±2   local                    ~24GB     262k  llama-server -hf LG…
-182  <a href="pages/model/gemini-2-5-flash-preview-04-17.md">Gemini 2.5 Flash Preview …</a>                62±1   comparison only
-183  <a href="pages/model/grok-3-beta.md">Grok 3 Beta</a>                               62±1   comparison only
-184  <a href="pages/model/qwen3-next-80b-a3b-thinking.md">Qwen3-Next 80B-A3B Thinki…</a>                61±1   api $0.41/M +local       ~27GB     131k  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
+178  <a href="pages/model/mistral-medium-3-1.md">Mistral Medium 3.1 (2508)</a>                 62±2   comparison only
+179  <a href="pages/model/exaone-4-5-33b.md">EXAONE 4.5 33B</a>                            62±2   local                    ~24GB     262k  llama-server -hf LG…
+180  <a href="pages/model/gemini-2-5-flash-preview-04-17.md">Gemini 2.5 Flash Preview …</a>                62±1   comparison only
+181  <a href="pages/model/grok-3-beta.md">Grok 3 Beta</a>                               62±1   comparison only
+182  <a href="pages/model/gemini-2-5-flash-preview-09-2025.md">Gemini 2.5 Flash Preview …</a>                62±1   comparison only
+183  <a href="pages/model/qwen3-next-80b-a3b-thinking.md">Qwen3-Next 80B-A3B Thinki…</a>                61±1   api $0.41/M +local       ~27GB     131k  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
+184  <a href="pages/model/nova-2-pro.md">Nova 2 Pro (Preview)</a>                      61±2   api $3.78/M                          1M  <a href="https://aws.amazon.com/nova/pricing/">aws.amazon.com</a>
 185  <a href="pages/model/hunyuan-t1-20250711.md">Hunyuan-T1 (20250711)</a>                     61±3*  comparison only
 186  <a href="pages/model/nemotron-3-super-120b-a12b.md">Nemotron 3 Super 120B-A12B</a>                61±1   api $0.28/M +local       ~78GB     262k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
 187  <a href="pages/model/sonar-pro.md">Sonar Pro</a>                                 61±4*  comparison only
@@ -281,12 +281,12 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 191  <a href="pages/model/hunyuan-turbos-20250416.md">Hunyuan-TurboS (20250416)</a>                 61±3*  comparison only
 192  <a href="pages/model/gemini-2-5-flash-lite-preview-06-17.md">Gemini 2.5 Flash-Lite Pre…</a>                61±2*  comparison only
 193  <a href="pages/model/qwen3-235b-a22b.md">Qwen3 235B-A22B (Apr 2025…</a>                61±1   api $1.23/M +local       ~76GB     131k  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
-194  <a href="pages/model/qwen3-next-80b-a3b-instruct.md">Qwen3-Next 80B-A3B Instru…</a>                61±1   api $0.34/M +local       ~27GB     131k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-195  <a href="pages/model/o1-preview.md">o1-preview</a>                                61±1   comparison only
-196  <a href="pages/model/minimax-m2.md">MiniMax-M2</a>                                61±2   api $0.53/M +local       ~75GB     205k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
-197  <a href="pages/model/hunyuan-vision-1-5-thinking.md">Hunyuan-Vision-1.5-Thinki…</a>                61±2*  api price unknown                   40k  <a href="https://cloud.tencent.com/document/product/1823/130051">cloud.tencent.com</a>
-198  <a href="pages/model/sonar-reasoning-pro.md">Sonar Reasoning Pro</a>                       61±4*  comparison only
-199  <a href="pages/model/gpt-4-1.md">GPT-4.1</a>                                   61±1   api $3.50/M                          1M  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+194  <a href="pages/model/o1-preview.md">o1-preview</a>                                61±1   comparison only
+195  <a href="pages/model/qwen3-next-80b-a3b-instruct.md">Qwen3-Next 80B-A3B Instru…</a>                61±1   api $0.34/M +local       ~27GB     131k  <a href="https://deepinfra.com/models">deepinfra.com</a>
+196  <a href="pages/model/gpt-4-1.md">GPT-4.1</a>                                   61±1   api $3.50/M                          1M  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
+197  <a href="pages/model/minimax-m2.md">MiniMax-M2</a>                                61±2   api $0.53/M +local       ~75GB     205k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
+198  <a href="pages/model/hunyuan-vision-1-5-thinking.md">Hunyuan-Vision-1.5-Thinki…</a>                61±2*  api price unknown                   40k  <a href="https://cloud.tencent.com/document/product/1823/130051">cloud.tencent.com</a>
+199  <a href="pages/model/sonar-reasoning-pro.md">Sonar Reasoning Pro</a>                       61±4*  comparison only
 200  <a href="pages/model/gemini-2-5-flash-lite-preview-09-2025.md">Gemini 2.5 Flash-Lite Pre…</a>                61±2*  comparison only
 201  <a href="pages/model/qwen3-5-9b.md">Qwen3.5 9B</a>                                60±1   api $0.11/M +local      ~8.1GB     262k  <a href="https://deepinfra.com/models">deepinfra.com</a>
 202  <a href="pages/model/gpt-oss-120b.md">gpt-oss-120b</a>                              60±1   api $0.26/M +local       ~76GB     131k  <a href="https://console.groq.com/docs/models">console.groq.com</a>
@@ -295,15 +295,15 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 205  <a href="pages/model/minimax-m1.md">MiniMax-M1 (80k)</a>                          60±1   api $0.96/M +local      ~959GB       1M  <a href="https://novita.ai/models">novita.ai</a>
 206  <a href="pages/model/grok-4-fast.md">Grok 4 Fast</a>                               60±2   comparison only
 207  <a href="pages/model/mistral-large-3.md">Mistral Large 3 (675B-A41…</a>                60±1   api $0.75/M +local      ~108GB     262k  <a href="https://docs.mistral.ai/models/mistral-large-3-25-12">docs.mistral.ai</a>
-208  <a href="pages/model/apriel-1-6-15b-thinker.md">Apriel 1.6 15B Thinker</a>                    60±2   local                    ~11GB           llama-server -hf ba…
+208  <a href="pages/model/kat-coder-pro-v1.md">KAT-Coder-Pro V1</a>                          60±2*  api price unknown                  256k  <a href="https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv">streamlake.ai</a>
 209  <a href="pages/model/ministral-3-14b-reasoning.md">Ministral 3 14B Reasoning…</a>                60±1   local                    ~10GB     262k  llama-server -hf mi…
-210  <a href="pages/model/kat-coder-pro-v1.md">KAT-Coder-Pro V1</a>                          60±2*  api price unknown                  256k  <a href="https://www.streamlake.ai/document/DOC/mh1gbfvrdn6hpbzxixv">streamlake.ai</a>
+210  <a href="pages/model/apriel-1-6-15b-thinker.md">Apriel 1.6 15B Thinker</a>                    60±2   local                    ~11GB           llama-server -hf ba…
 211  <a href="pages/model/nemotron-3-5-lightning.md">Nemotron 3.5 Lightning 30…</a>                60±2   api $0.087/M +local      ~22GB     262k  <a href="https://fireworks.ai/docs/">fireworks.ai</a>
-212  <a href="pages/model/devstral-2.md">Devstral 2 (2512)</a>                         59±2   local                    ~80GB     256k  ollama run devstral…
-213  <a href="pages/model/minimax-m1-40k.md">MiniMax-M1 (40k)</a>                          59±1   comparison only
-214  <a href="pages/model/qwq-plus.md">QwQ-Plus</a>                                  59±2*  api $1.20/M                        128k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
-215  <a href="pages/model/gpt-5-1-codex-mini.md">GPT-5.1-Codex-Mini</a>                        59±2*  comparison only
-216  <a href="pages/model/glm-4-6v.md">GLM-4.6V</a>                                  59±2   api $0.45/M +local       ~51GB     128k  <a href="https://docs.z.ai/guides/vlm/glm-4.6v.md">docs.z.ai</a>
+212  <a href="pages/model/minimax-m1-40k.md">MiniMax-M1 (40k)</a>                          59±1   comparison only
+213  <a href="pages/model/qwq-plus.md">QwQ-Plus</a>                                  59±2*  api $1.20/M                        128k  <a href="https://www.alibabacloud.com/help/en/model-studio/text-generation-model">alibabacloud.com</a>
+214  <a href="pages/model/gpt-5-1-codex-mini.md">GPT-5.1-Codex-Mini</a>                        59±2*  comparison only
+215  <a href="pages/model/glm-4-6v.md">GLM-4.6V</a>                                  59±2   api $0.45/M +local       ~51GB     128k  <a href="https://docs.z.ai/guides/vlm/glm-4.6v.md">docs.z.ai</a>
+216  <a href="pages/model/devstral-2.md">Devstral 2 (2512)</a>                         59±2   local                    ~80GB     256k  ollama run devstral…
 217  <a href="pages/model/o1-mini.md">o1-mini</a>                                   59±1   comparison only
 218  <a href="pages/model/gemini-2-0-pro-exp-02-05.md">Gemini 2.0 Pro Experiment…</a>                59±1   comparison only
 219  <a href="pages/model/amazon-nova-experimental-chat-11-10.md">Amazon Nova Experimental …</a>                59±3*  comparison only
@@ -311,9 +311,9 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 221  <a href="pages/model/gpt-4-1-mini.md">GPT-4.1 mini</a>                              59±1   api $0.70/M                          1M  <a href="https://platform.openai.com/docs/models">platform.openai.com</a>
 222  <a href="pages/model/llama-3-1-nemotron-ultra-253b.md">Llama 3.1 Nemotron Ultra …</a>                59±1   local                    ~82GB     128k  llama-server -hf un…
 223  <a href="pages/model/ernie-4-5-300b-a47b.md">ERNIE 4.5 300B-A47B</a>                       59±1   local                    ~97GB     131k  llama-server -hf un…
-224  <a href="pages/model/exaone-4-0-32b.md">EXAONE 4.0 32B</a>                            59±2   local                    ~22GB     131k  llama-server -hf LG…
-225  <a href="pages/model/gemini-2-0-flash-001.md">Gemini 2.0 Flash (001)</a>                    59±1   comparison only
-226  <a href="pages/model/granite-4-2-30b.md">Granite 4.2 30B</a>                           59±1   api $0.28/M +local       ~21GB     131k  <a href="https://deepinfra.com/ibm-granite/granite-4.2-30b">deepinfra.com</a>
+224  <a href="pages/model/gemini-2-0-flash-001.md">Gemini 2.0 Flash (001)</a>                    59±1   comparison only
+225  <a href="pages/model/granite-4-2-30b.md">Granite 4.2 30B</a>                           59±1   api $0.28/M +local       ~21GB     131k  <a href="https://deepinfra.com/ibm-granite/granite-4.2-30b">deepinfra.com</a>
+226  <a href="pages/model/exaone-4-0-32b.md">EXAONE 4.0 32B</a>                            59±2   local                    ~22GB     131k  llama-server -hf LG…
 227  <a href="pages/model/qwq-32b.md">QwQ-32B</a>                                   59±1   local                    ~23GB     131k  ollama run qwq:32b
 228  <a href="pages/model/deepseek-v3-0324.md">DeepSeek V3 0324</a>                          59±1   local                   ~108GB     164k  llama-server -hf un…
 229  <a href="pages/model/qwen3-5-4b.md">Qwen3.5 4B</a>                                59±1   local                     ~5GB     262k  ollama run qwen3.5:…
@@ -321,16 +321,16 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 231  <a href="pages/model/command-a.md">Command A (03-2025)</a>                       58±2   api $4.38/M +local       ~37GB     256k  <a href="https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/cohere">azure.microsoft.com</a>
 232  <a href="pages/model/deepseek-r1-distill-llama-70b.md">DeepSeek R1 Distill Llama…</a>                58±1   api $0.80/M +local       ~30GB     131k  <a href="https://novita.ai/models/llm/deepseek-deepseek-r1-distill-llama-70b">novita.ai</a>
 233  <a href="pages/model/mistral-medium-2505.md">Mistral Medium 3 (2505)</a>                   58±1   comparison only
-234  <a href="pages/model/qwen3-30b-a3b-instruct-2507.md">Qwen3 30B-A3B Instruct 25…</a>                58±1   api $0.15/M +local       ~21GB     262k  <a href="https://tokenfactory.nebius.com/models/catalog/text2text/Qwen%2FQwen3-30B-A3B-Instruct-2507">tokenfactory.nebius…</a>
-235  <a href="pages/model/lfm2-5-8b-a1b.md">LFM2.5 8B-A1B</a>                             58±2   local                   ~7.4GB     128k  ollama run lfm2.5:8b
+234  <a href="pages/model/lfm2-5-8b-a1b.md">LFM2.5 8B-A1B</a>                             58±2   local                   ~7.4GB     128k  ollama run lfm2.5:8b
+235  <a href="pages/model/qwen3-30b-a3b-instruct-2507.md">Qwen3 30B-A3B Instruct 25…</a>                58±1   api $0.15/M +local       ~21GB     262k  <a href="https://tokenfactory.nebius.com/models/catalog/text2text/Qwen%2FQwen3-30B-A3B-Instruct-2507">tokenfactory.nebius…</a>
 236  <a href="pages/model/qwen3-14b.md">Qwen3 14B</a>                                 58±1   api $0.61/M +local       ~11GB      33k  <a href="https://www.alibabacloud.com/help/en/model-studio/models">alibabacloud.com</a>
 237  <a href="pages/model/glm-4-7-flash.md">GLM-4.7-Flash</a>                             58±1   api $0.0000/M +local     ~22GB     200k  <a href="https://docs.z.ai/guides/overview/pricing">docs.z.ai</a>
 238  <a href="pages/model/devstral-small-2.md">Devstral Small 2 24B</a>                      58±3   local                    ~17GB     262k  ollama run devstral…
 239  <a href="pages/model/glm-4-5v.md">GLM-4.5V</a>                                  58±2   api $0.90/M +local       ~69GB      64k  <a href="https://docs.z.ai/guides/vlm/glm-4.5v.md">docs.z.ai</a>
 240  <a href="pages/model/trinity-large-preview.md">Trinity-Large-Preview</a>                     58±2   local                   ~155GB           llama-server -hf un…
-241  <a href="pages/model/qwen3-32b.md">Qwen3 32B</a>                                 57±1   api $0.13/M +local       ~23GB     131k  <a href="https://deepinfra.com/models">deepinfra.com</a>
-242  <a href="pages/model/claude-3-5-sonnet-20241022.md">Claude 3.5 Sonnet (2024-1…</a>                57±1   comparison only
-243  <a href="pages/model/gemini-2-0-flash-lite-preview-02-05.md">Gemini 2.0 Flash-Lite Pre…</a>                57±2   comparison only
+241  <a href="pages/model/claude-3-5-sonnet-20241022.md">Claude 3.5 Sonnet (2024-1…</a>                57±1   comparison only
+242  <a href="pages/model/gemini-2-0-flash-lite-preview-02-05.md">Gemini 2.0 Flash-Lite Pre…</a>                57±2   comparison only
+243  <a href="pages/model/qwen3-32b.md">Qwen3 32B</a>                                 57±1   api $0.13/M +local       ~23GB     131k  <a href="https://deepinfra.com/models">deepinfra.com</a>
 244  <a href="pages/model/mistral-small-4.md">Mistral Small 4 (119B-A6.…</a>                57±2   api $0.26/M +local       ~40GB     262k  <a href="https://docs.mistral.ai/models/mistral-small-4-0-26-03">docs.mistral.ai</a>
 245  <a href="pages/model/hunyuan-turbos-20250226.md">Hunyuan-TurboS (20250226)</a>                 57±3*  comparison only
 246  <a href="pages/model/step-3.md">Step 3</a>                                    57±2*  local                   ~346GB           uv pip install -U v…
@@ -349,10 +349,10 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 259  <a href="pages/model/ministral-3-8b-reasoning.md">Ministral 3 8B Reasoning …</a>                57±2   local                     ~7GB     262k  llama-server -hf mi…
 260  <a href="pages/model/hunyuan-turbo-0110.md">Hunyuan Turbo (0110)</a>                      57±3*  comparison only
 261  <a href="pages/model/deepseek-r1-distill-qwen-14b.md">DeepSeek R1 Distill Qwen …</a>                56±1   local                    ~11GB     131k  ollama run deepseek…
-262  <a href="pages/model/gpt-oss-20b.md">gpt-oss-20b</a>                               56±1   api $0.13/M +local       ~15GB     131k  <a href="https://console.groq.com/docs/models">console.groq.com</a>
-263  <a href="pages/model/qwen3-coder-30b-a3b.md">Qwen3 Coder 30B-A3B Instr…</a>                56±2   api $0.12/M +local       ~21GB     160k  <a href="https://novita.ai/models">novita.ai</a>
-264  <a href="pages/model/grok-code-fast-1.md">Grok Code Fast 1</a>                          56±2*  comparison only
-265  <a href="pages/model/olmo-3-1-32b-think.md">Olmo 3.1 32B Think</a>                        56±1   local                    ~22GB      66k  ollama run olmo-3.1…
+262  <a href="pages/model/grok-code-fast-1.md">Grok Code Fast 1</a>                          56±2*  comparison only
+263  <a href="pages/model/gpt-oss-20b.md">gpt-oss-20b</a>                               56±1   api $0.13/M +local       ~15GB     131k  <a href="https://console.groq.com/docs/models">console.groq.com</a>
+264  <a href="pages/model/olmo-3-1-32b-think.md">Olmo 3.1 32B Think</a>                        56±1   local                    ~22GB      66k  ollama run olmo-3.1…
+265  <a href="pages/model/qwen3-coder-30b-a3b.md">Qwen3 Coder 30B-A3B Instr…</a>                56±2   api $0.12/M +local       ~21GB     160k  <a href="https://novita.ai/models">novita.ai</a>
 266  <a href="pages/model/gemini-2-5-flash-lite.md">Gemini 2.5 Flash-Lite</a>                     56±3   api $0.17/M                          1M  <a href="https://ai.google.dev/gemini-api/docs/models">ai.google.dev</a>
 267  <a href="pages/model/gemini-1-5-pro-002.md">Gemini 1.5 Pro (002)</a>                      56±1   comparison only
 268  <a href="pages/model/step-1o-turbo-202506.md">Step 1o Turbo (2025-06)</a>                   56±2*  comparison only
@@ -382,8 +382,8 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 292  <a href="pages/model/step-1o-vision-32k-highres.md">Step 1o Vision 32K High R…</a>                55±3*  comparison only
 293  <a href="pages/model/nemotron-3-nano-4b.md">Nemotron 3 Nano 4B</a>                        55±2   local                   ~4.5GB     262k  ollama run nemotron…
 294  <a href="pages/model/ring-flash-2-0.md">Ring-flash-2.0</a>                            55±3*  local                   ~218GB           vllm serve inclusio…
-295  <a href="pages/model/qwen3-4b-thinking-2507.md">Qwen3 4B Thinking 2507</a>                    55±2   local                   ~4.6GB     262k  ollama run qwen3:4b
-296  <a href="pages/model/phi-4-reasoning.md">Phi-4-reasoning 14B</a>                       55±2   api $0.22/M +local       ~11GB      33k  <a href="https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft">azure.microsoft.com</a>
+295  <a href="pages/model/phi-4-reasoning.md">Phi-4-reasoning 14B</a>                       55±2   api $0.22/M +local       ~11GB      33k  <a href="https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft">azure.microsoft.com</a>
+296  <a href="pages/model/qwen3-4b-thinking-2507.md">Qwen3 4B Thinking 2507</a>                    54±2   local                   ~4.6GB     262k  ollama run qwen3:4b
 297  <a href="pages/model/athene-v2-chat.md">Athene-V2-Chat 72B</a>                        54±1   local                    ~48GB      33k  ollama run athene-v…
 298  <a href="pages/model/magistral-small-2509.md">Magistral Small 1.2</a>                       54±1   api $0.75/M +local       ~17GB     131k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
 299  <a href="pages/model/grok-2-1212.md">Grok 2 (1212)</a>                             54±1   comparison only
@@ -413,8 +413,8 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 323  <a href="pages/model/mercury.md">Mercury</a>                                   53±3*  comparison only
 324  <a href="pages/model/magistral-medium-2506.md">Magistral Medium 1.0 (250…</a>                53±3*  comparison only
 325  <a href="pages/model/llama-3-3-70b.md">Llama 3.3 70B Instruct</a>                    53±1   api $0.72/M +local       ~24GB     128k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
-326  <a href="pages/model/ministral-3-8b.md">Ministral 3 8B</a>                            53±1   api $0.15/M +local      ~7.6GB     262k  <a href="https://docs.mistral.ai/models/ministral-3-8b-25-12">docs.mistral.ai</a>
-327  <a href="pages/model/devstral-medium-2507.md">Devstral Medium 1.0 (2507)</a>                53±2*  comparison only
+326  <a href="pages/model/devstral-medium-2507.md">Devstral Medium 1.0 (2507)</a>                53±2*  comparison only
+327  <a href="pages/model/ministral-3-8b.md">Ministral 3 8B</a>                            53±1   api $0.15/M +local      ~7.6GB     262k  <a href="https://docs.mistral.ai/models/ministral-3-8b-25-12">docs.mistral.ai</a>
 328  <a href="pages/model/ministral-3-3b-reasoning.md">Ministral 3 3B Reasoning …</a>                53±2   local                   ~3.8GB     262k  llama-server -hf mi…
 329  <a href="pages/model/mistral-small-3-1.md">Mistral Small 3.1 24B (25…</a>                53±1   local                    ~17GB     128k  ollama run mistral-…
 330  <a href="pages/model/llama-3-1-tulu-3-70b.md">Llama 3.1 Tulu 3 70B</a>                      52±1   local                    ~47GB     131k  ollama run tulu3:70…
@@ -428,10 +428,10 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 338  <a href="pages/model/gpt-4-1-nano-2025-04-14.md">GPT-4.1 nano</a>                              52±1   api $0.17/M                          1M  <a href="https://developers.openai.com/api/docs/models/gpt-4.1-nano">developers.openai.c…</a>
 339  <a href="pages/model/gemini-1-5-pro-001.md">Gemini 1.5 Pro (001)</a>                      52±1   comparison only
 340  <a href="pages/model/qwen3-4b.md">Qwen3 4B</a>                                  52±1   local                   ~4.6GB      33k  ollama run qwen3:4b…
-341  <a href="pages/model/llama-3-1-tulu-3-70b-dpo.md">Llama 3.1 Tulu 3 70B DPO</a>                  52±1   local                   ~180GB     131k  vllm serve allenai/…
-342  <a href="pages/model/qwen-turbo-2024-11-01.md">Qwen Turbo (2024-11-01)</a>                   52±1   comparison only
-343  <a href="pages/model/phi-4.md">Phi-4 14B</a>                                 52±1   api $0.087/M +local      ~11GB      16k  <a href="https://deepinfra.com/microsoft/phi-4">deepinfra.com</a>
-344  <a href="pages/model/gpt-4-1106-preview.md">GPT-4 Turbo Preview (1106)</a>                52±1   comparison only
+341  <a href="pages/model/gpt-4-1106-preview.md">GPT-4 Turbo Preview (1106)</a>                52±1   comparison only
+342  <a href="pages/model/llama-3-1-tulu-3-70b-dpo.md">Llama 3.1 Tulu 3 70B DPO</a>                  52±1   local                   ~180GB     131k  vllm serve allenai/…
+343  <a href="pages/model/qwen-turbo-2024-11-01.md">Qwen Turbo (2024-11-01)</a>                   52±1   comparison only
+344  <a href="pages/model/phi-4.md">Phi-4 14B</a>                                 52±1   api $0.087/M +local      ~11GB      16k  <a href="https://deepinfra.com/microsoft/phi-4">deepinfra.com</a>
 345  <a href="pages/model/olmo-3-7b-think.md">Olmo 3 7B Think</a>                           52±1   local                   ~6.6GB      66k  ollama run olmo-3:7…
 346  <a href="pages/model/mistral-small-3.md">Mistral Small 3 24B (2501)</a>                52±1   local                    ~17GB      32k  ollama run mistral-…
 347  <a href="pages/model/deepseek-coder-v2.md">DeepSeek-Coder-V2 Instruc…</a>                52±1   local                    ~92GB           llama-server -hf ba…
@@ -516,7 +516,7 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 426  <a href="pages/model/internvl2-26b.md">InternVL2-26B</a>                             46±2   local                    ~55GB           vllm serve OpenGVLa…
 427  <a href="pages/model/olmo-2-13b.md">OLMo 2 13B Instruct (1124)</a>                46±1   local                    ~11GB       4k  ollama run olmo2:13…
 428  <a href="pages/model/nova-micro.md">Nova Micro</a>                                46±2   api $0.061/M                       128k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
-429  <a href="pages/model/dbrx-instruct.md">DBRX Instruct</a>                             45±1   local                    ~85GB      32k  ollama run dbrx:132b
+429  <a href="pages/model/dbrx-instruct.md">DBRX Instruct</a>                             46±1   local                    ~85GB      32k  ollama run dbrx:132b
 430  <a href="pages/model/openchat-3-5-0106.md">OpenChat 3.5 0106</a>                         45±1   local                   ~6.6GB       8k  ollama run openchat…
 431  <a href="pages/model/llama-3-1-tulu-3-8b.md">Llama 3.1 Tulu 3 8B</a>                       45±1   local                   ~7.1GB     131k  ollama run tulu3:8b…
 432  <a href="pages/model/codellama-70b-instruct.md">Code Llama 70B Instruct</a>                   45±1   local                    ~46GB      16k  ollama run codellam…
@@ -527,33 +527,33 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 437  <a href="pages/model/hunyuan-standard-256k.md">Hunyuan Standard 256K</a>                     45±3*  comparison only
 438  <a href="pages/model/gpt-3-5-turbo-0125.md">GPT-3.5 Turbo (0125)</a>                      45±1   api $0.75/M                         16k  <a href="https://developers.openai.com/api/docs/models/gpt-3.5-turbo">developers.openai.c…</a>
 439  <a href="pages/model/granite-4-0-micro.md">Granite 4.0 Micro 3B</a>                      45±1   local                   ~4.2GB     131k  ollama run granite4…
-440  <a href="pages/model/exaone-4-0-1-2b.md">EXAONE 4.0 1.2B</a>                           45±2   local                   ~2.8GB      66k  llama-server -hf LG…
-441  <a href="pages/model/jamba-1-5-mini.md">Jamba 1.5 Mini</a>                            45±1   local                   ~110GB           vllm serve ai21labs…
-442  <a href="pages/model/wizardcoder-python-34b-v1-0.md">WizardCoder Python 34B V1…</a>                45±1   local                    ~23GB      16k  ollama run wizardco…
-443  <a href="pages/model/falcon3-7b.md">Falcon3 7B Instruct</a>                       45±3   local                   ~6.7GB      32k  ollama run falcon3:…
-444  <a href="pages/model/qwq-32b-preview.md">QwQ-32B-Preview</a>                           45±2   local                    ~23GB      33k  ollama run qwq:32b-…
+440  <a href="pages/model/jamba-1-5-mini.md">Jamba 1.5 Mini</a>                            45±1   local                   ~110GB           vllm serve ai21labs…
+441  <a href="pages/model/wizardcoder-python-34b-v1-0.md">WizardCoder Python 34B V1…</a>                45±1   local                    ~23GB      16k  ollama run wizardco…
+442  <a href="pages/model/falcon3-7b.md">Falcon3 7B Instruct</a>                       45±3   local                   ~6.7GB      32k  ollama run falcon3:…
+443  <a href="pages/model/qwq-32b-preview.md">QwQ-32B-Preview</a>                           45±2   local                    ~23GB      33k  ollama run qwq:32b-…
+444  <a href="pages/model/exaone-4-0-1-2b.md">EXAONE 4.0 1.2B</a>                           45±2   local                   ~2.8GB      66k  llama-server -hf LG…
 445  <a href="pages/model/gpt-3-5-turbo-0613.md">GPT-3.5 Turbo (0613)</a>                      45±1   comparison only
 446  <a href="pages/model/qwen1-5-72b-chat.md">Qwen1.5 72B Chat</a>                          45±1   local                    ~48GB      32k  ollama run qwen:72b…
 447  <a href="pages/model/ministral-8b-2410.md">Ministral 8B (2410)</a>                       45±1   local                    ~22GB     128k  vllm serve mistrala…
 448  <a href="pages/model/mistral-medium-2312.md">Mistral Medium (2312)</a>                     45±1   comparison only
-449  <a href="pages/model/ministral-3-3b.md">Ministral 3 3B</a>                            44±1   api $0.10/M +local      ~4.5GB     262k  <a href="https://docs.mistral.ai/models/ministral-3-3b-25-12">docs.mistral.ai</a>
-450  <a href="pages/model/gemini-1-0-pro-001.md">Gemini 1.0 Pro (001)</a>                      44±2   comparison only
-451  <a href="pages/model/gemma-3-4b.md">Gemma 3 4B</a>                                44±1   api $0.063/M +local     ~4.7GB     131k  <a href="https://deepinfra.com/google/gemma-3-4b-it">deepinfra.com</a>
+449  <a href="pages/model/gemini-1-0-pro-001.md">Gemini 1.0 Pro (001)</a>                      44±2   comparison only
+450  <a href="pages/model/gemma-3-4b.md">Gemma 3 4B</a>                                44±1   api $0.063/M +local     ~4.7GB     131k  <a href="https://deepinfra.com/google/gemma-3-4b-it">deepinfra.com</a>
+451  <a href="pages/model/ministral-3-3b.md">Ministral 3 3B</a>                            44±1   api $0.10/M +local      ~4.5GB     262k  <a href="https://docs.mistral.ai/models/ministral-3-3b-25-12">docs.mistral.ai</a>
 452  <a href="pages/model/claude-2-1.md">Claude 2.1</a>                                44±1   comparison only
 453  <a href="pages/model/granite-3-3-8b.md">Granite 3.3 8B Instruct</a>                   44±1   local                   ~7.2GB     128k  ollama run granite3…
 454  <a href="pages/model/mistral-nemo-instruct-2407.md">Mistral NeMo Instruct (24…</a>                44±1   local                   ~9.7GB     128k  ollama run mistral-…
 455  <a href="pages/model/zephyr-orpo-141b-a35b.md">Zephyr ORPO 141B-A35B v0.1</a>                44±2   local                    ~91GB      66k  ollama run zephyr:1…
 456  <a href="pages/model/phi-3-medium-4k-instruct.md">Phi-3-medium-4k-instruct</a>                  44±1   local                    ~11GB       4k  ollama run phi3:14b…
-457  <a href="pages/model/qwen1-5-32b-chat.md">Qwen1.5 32B Chat</a>                          44±2   local                    ~23GB      32k  ollama run qwen:32b…
-458  <a href="pages/model/gpt-3-5-turbo-0301.md">GPT-3.5 Turbo (0301)</a>                      44±1   comparison only
-459  <a href="pages/model/command-a-vision-07-2025.md">Command A Vision (07-2025)</a>               44±10*  comparison only
+457  <a href="pages/model/command-a-vision-07-2025.md">Command A Vision (07-2025)</a>                44±9*  comparison only
+458  <a href="pages/model/qwen1-5-32b-chat.md">Qwen1.5 32B Chat</a>                          44±2   local                    ~23GB      32k  ollama run qwen:32b…
+459  <a href="pages/model/gpt-3-5-turbo-0301.md">GPT-3.5 Turbo (0301)</a>                      44±1   comparison only
 460  <a href="pages/model/llama-3-1-8b.md">Llama 3.1 8B Instruct</a>                     44±0   api $0.22/M +local      ~7.1GB     128k  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">docs.aws.amazon.com</a>
-461  <a href="pages/model/qwen3-1-7b.md">Qwen3 1.7B</a>                                44±1   local                   ~3.3GB      33k  ollama run qwen3:1.…
-462  <a href="pages/model/ministral-3b-2410.md">Ministral 3B (2410)</a>                       44±2   comparison only
-463  <a href="pages/model/qwen2-vl-7b.md">Qwen2-VL 7B Instruct</a>                      44±2   local                   ~7.2GB           llama-server -hf gg…
-464  <a href="pages/model/deepseek-r1-distill-qwen-1-5b.md">DeepSeek R1 Distill Qwen …</a>                44±1   local                   ~3.1GB     131k  ollama run deepseek…
-465  <a href="pages/model/olmo-3-7b-instruct.md">Olmo 3 7B Instruct</a>                        44±1   local                   ~6.6GB      66k  ollama run olmo-3:7…
-466  <a href="pages/model/phi-3-medium-128k-instruct.md">Phi-3 Medium 128K Instruct</a>                44±2   local                    ~11GB     128k  ollama run phi3:med…
+461  <a href="pages/model/ministral-3b-2410.md">Ministral 3B (2410)</a>                       44±2   comparison only
+462  <a href="pages/model/qwen2-vl-7b.md">Qwen2-VL 7B Instruct</a>                      44±2   local                   ~7.2GB           llama-server -hf gg…
+463  <a href="pages/model/qwen3-1-7b.md">Qwen3 1.7B</a>                                44±1   local                   ~3.3GB      33k  ollama run qwen3:1.…
+464  <a href="pages/model/olmo-3-7b-instruct.md">Olmo 3 7B Instruct</a>                        44±1   local                   ~6.6GB      66k  ollama run olmo-3:7…
+465  <a href="pages/model/phi-3-medium-128k-instruct.md">Phi-3 Medium 128K Instruct</a>                44±2   local                    ~11GB     128k  ollama run phi3:med…
+466  <a href="pages/model/deepseek-r1-distill-qwen-1-5b.md">DeepSeek R1 Distill Qwen …</a>                44±1   local                   ~3.1GB     131k  ollama run deepseek…
 467  <a href="pages/model/qwen2-7b.md">Qwen2 7B Instruct</a>                         44±1   local                   ~6.8GB     131k  ollama run qwen2:7b…
 468  <a href="pages/model/granite-8b-code-instruct-4k.md">Granite 8B Code Instruct …</a>                44±2   local                   ~6.6GB           llama-server -hf ib…
 469  <a href="pages/model/claude-2-0.md">Claude 2.0</a>                                44±1   comparison only
@@ -573,10 +573,10 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 483  <a href="pages/model/llama-3-2-11b-vision.md">Llama 3.2 11B Vision Inst…</a>                43±2   local                   ~8.8GB     128k  ollama run llama3.2…
 484  <a href="pages/model/phi-3-mini-4k-instruct-june-2024.md">Phi-3-mini-4k-instruct (J…</a>                43±1   local                     ~4GB           llama-server -hf ba…
 485  <a href="pages/model/phi-3-5-mini-instruct.md">Phi-3.5-mini-instruct</a>                     42±1   local                   ~4.4GB     128k  ollama run phi3.5:3…
-486  <a href="pages/model/yi-1-5-9b-chat.md">Yi 1.5 9B Chat</a>                            42±1   local                   ~7.6GB       4k  ollama run yi:9b-ch…
-487  <a href="pages/model/yi-34b-chat.md">Yi 34B Chat</a>                               42±1   local                    ~24GB       4k  ollama run yi:34b-c…
-488  <a href="pages/model/phi-3-small-8k-instruct.md">Phi-3-small-8k-instruct</a>                   42±2   local                    ~17GB           pip install tiktoke…
-489  <a href="pages/model/codellama-70b.md">Code Llama 70B (base)</a>                     42±1   local                    ~45GB      16k  ollama run codellam…
+486  <a href="pages/model/codellama-70b.md">Code Llama 70B (base)</a>                     42±1   local                    ~45GB      16k  ollama run codellam…
+487  <a href="pages/model/yi-1-5-9b-chat.md">Yi 1.5 9B Chat</a>                            42±1   local                   ~7.6GB       4k  ollama run yi:9b-ch…
+488  <a href="pages/model/yi-34b-chat.md">Yi 34B Chat</a>                               42±1   local                    ~24GB       4k  ollama run yi:34b-c…
+489  <a href="pages/model/phi-3-small-8k-instruct.md">Phi-3-small-8k-instruct</a>                   42±2   local                    ~17GB           pip install tiktoke…
 490  <a href="pages/model/llava-onevision-qwen2-72b-ov.md">LLaVA-OneVision Qwen2 72B…</a>                42±3   local                   ~155GB           vllm serve llava-hf…
 491  <a href="pages/model/granite-3-1-8b.md">Granite 3.1 8B Instruct</a>                   42±1   local                   ~7.2GB     128k  ollama run granite3…
 492  <a href="pages/model/codegemma-7b-it.md">CodeGemma 7B IT (v1.0)</a>                    42±1   local                   ~7.1GB           ollama run codegemm…
@@ -679,18 +679,18 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 589  <a href="pages/model/qwen2-5-1-5b.md">Qwen2.5 1.5B Instruct</a>                     35±1   local                     ~3GB      33k  ollama run qwen2.5:…
 590  <a href="pages/model/tulu-2-dpo-7b.md">Tulu 2 DPO 7B</a>                             35±2   local                    ~16GB           uv run --with torch…
 591  <a href="pages/model/starcoder2-7b.md">StarCoder2 7B</a>                             35±1   local                   ~6.1GB      16k  ollama run starcode…
-592  <a href="pages/model/phi-3-5-vision-instruct.md">Phi-3.5-vision-instruct</a>                   35±3   local                    ~10GB           vllm serve microsof…
-593  <a href="pages/model/wizardlm-13b-v1-2.md">WizardLM 13B V1.2</a>                         35±1   local                    ~29GB           uv run --with torch…
-594  <a href="pages/model/starcoder.md">StarCoder 15.5B</a>                           35±1   local                    ~68GB           uv run --with torch…
-595  <a href="pages/model/yi-1-5-6b-chat.md">Yi 1.5 6B Chat</a>                            35±2   local                   ~5.8GB       4k  ollama run yi:6b-ch…
-596  <a href="pages/model/exaone-3-5-2-4b.md">EXAONE 3.5 2.4B Instruct</a>                  35±4*  local                   ~3.5GB      33k  ollama run exaone3.…
-597  <a href="pages/model/flan-t5-xl.md">Flan-T5 XL</a>                                35±1   local                    ~14GB           uv run --with torch…
+592  <a href="pages/model/wizardlm-13b-v1-2.md">WizardLM 13B V1.2</a>                         35±1   local                    ~29GB           uv run --with torch…
+593  <a href="pages/model/starcoder.md">StarCoder 15.5B</a>                           35±1   local                    ~68GB           uv run --with torch…
+594  <a href="pages/model/yi-1-5-6b-chat.md">Yi 1.5 6B Chat</a>                            35±2   local                   ~5.8GB       4k  ollama run yi:6b-ch…
+595  <a href="pages/model/exaone-3-5-2-4b.md">EXAONE 3.5 2.4B Instruct</a>                  35±4*  local                   ~3.5GB      33k  ollama run exaone3.…
+596  <a href="pages/model/phi-3-5-vision-instruct.md">Phi-3.5-vision-instruct</a>                   35±3   local                    ~10GB           vllm serve microsof…
+597  <a href="pages/model/flan-t5-xl.md">Flan-T5 XL</a>                                34±1   local                    ~14GB           uv run --with torch…
 598  <a href="pages/model/phi-4-mini-reasoning.md">Phi-4-mini-reasoning 3.8B</a>                 34±4   api $0.13/M +local      ~4.1GB     128k  <a href="https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft">azure.microsoft.com</a>
 599  <a href="pages/model/granite-3b-code-base-2k.md">Granite 3B Code Base (2K)</a>                 34±1   local                   ~3.7GB           llama-server -hf ib…
 600  <a href="pages/model/opt-30b.md">OPT-30B</a>                                   34±1   local                    ~64GB       2k  uv run --with torch…
 601  <a href="pages/model/starcoder2-3b.md">StarCoder2 3B</a>                             34±1   local                   ~3.4GB      16k  ollama run starcode…
-602  <a href="pages/model/stripedhyena-nous-7b.md">StripedHyena-Nous-7B</a>                      34±3*  comparison only
-603  <a href="pages/model/llama-2-7b.md">Llama 2 7B (base)</a>                         33±1   local                   ~5.5GB       4k  ollama run llama2:7…
+602  <a href="pages/model/llama-2-7b.md">Llama 2 7B (base)</a>                         34±1   local                   ~5.5GB       4k  ollama run llama2:7…
+603  <a href="pages/model/stripedhyena-nous-7b.md">StripedHyena-Nous-7B</a>                      34±3*  comparison only
 604  <a href="pages/model/falcon-7b.md">Falcon 7B (base)</a>                          33±1   local                   ~5.9GB       2k  ollama run falcon:7…
 605  <a href="pages/model/mpt-7b.md">MPT-7B (base)</a>                             33±1   comparison only
 606  <a href="pages/model/stablelm-3b-4e1t.md">StableLM-3B-4E1T</a>                          33±1   local                   ~7.4GB       4k  uv run --with torch…
@@ -711,8 +711,8 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 621  <a href="pages/model/gemma-7b.md">Gemma 7B IT</a>                               32±1   local                   ~7.4GB       8k  ollama run gemma:7b…
 622  <a href="pages/model/bloom.md">BLOOM 176B</a>                                32±2*  local                   ~372GB       2k  uv run --with torch…
 623  <a href="pages/model/codegemma-2b.md">CodeGemma 2B (v1.0)</a>                       32±1   local                   ~3.2GB           ollama run codegemm…
-624  <a href="pages/model/llama-7b.md">LLaMA 7B</a>                                  32±1   comparison only
-625  <a href="pages/model/opt-13b.md">OPT-13B (13 billion param…</a>                32±1   local                    ~29GB       2k  uv run --with torch…
+624  <a href="pages/model/opt-13b.md">OPT-13B (13 billion param…</a>                32±1   local                    ~29GB       2k  uv run --with torch…
+625  <a href="pages/model/llama-7b.md">LLaMA 7B</a>                                  32±1   comparison only
 626  <a href="pages/model/olmo-7b.md">OLMo 7B</a>                                   32±1   local                    ~30GB       2k  uv run --with torch…
 627  <a href="pages/model/redpajama-incite-7b-base.md">RedPajama-INCITE 7B Base</a>                  31±1   local                    ~16GB       2k  uv run --with torch…
 628  <a href="pages/model/starcoderbase-7b.md">StarCoderBase 7B</a>                          31±1   local                    ~33GB           uv run --with torch…
@@ -720,8 +720,8 @@ curl.exe "whatmodel.sh/?ram=$((gcim Win32_ComputerSystem).TotalPhysicalMemory)&v
 630  <a href="pages/model/smollm2-1-7b.md">SmolLM2 1.7B Instruct</a>                     31±1   local                   ~3.1GB       8k  ollama run smollm2:…
 631  <a href="pages/model/llava-v1-6-vicuna-13b.md">LLaVA-v1.6-Vicuna-13B</a>                     31±7*  comparison only
 632  <a href="pages/model/gemma-3-1b.md">Gemma 3 1B</a>                                30±1   local                   ~2.7GB      32k  ollama run gemma3:1…
-633  <a href="pages/model/phi-3-vision-128k-instruct.md">Phi-3-vision-128k-instruct</a>                30±3   local                    ~10GB           vllm serve microsof…
-634  <a href="pages/model/gpt-3-curie.md">GPT-3 curie (API base mod…</a>                30±1   comparison only
+633  <a href="pages/model/gpt-3-curie.md">GPT-3 curie (API base mod…</a>                30±1   comparison only
+634  <a href="pages/model/phi-3-vision-128k-instruct.md">Phi-3-vision-128k-instruct</a>                30±3   local                    ~10GB           vllm serve microsof…
 635  <a href="pages/model/gemma-2b-base.md">Gemma 2B (base)</a>                           30±1   local                   ~3.4GB       8k  ollama run gemma:2b…
 636  <a href="pages/model/pythia-12b.md">Pythia 12B</a>                                30±1   local                    ~27GB       2k  uv run --with torch…
 637  <a href="pages/model/flan-t5-large.md">Flan-T5 Large</a>                             30±2   local                   ~4.8GB           uv run --with torch…

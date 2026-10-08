@@ -24,7 +24,7 @@ source                  test                            score  implies  date    
 <a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  26.4%     5.6   2021-08-01   13% ▇▇
 <a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  33.8%    20.7   2022-12-07    1% ▇
                         <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  11.3%    64.8   2022-12-07    0% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%   -48.1   2022-12-07    0% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  47.2%   -48.2   2022-12-07    0% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                        = 6.7
 </pre>

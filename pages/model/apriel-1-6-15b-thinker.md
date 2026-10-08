@@ -6,7 +6,7 @@
 
 ServiceNow · released 2025-11 · 14.9B params · mit
 
-**score 59.8** ±1.6 · #157 of 551 · from 5 benchmark results across 1 source
+**score 59.6** ±1.7 · #159 of 551 · from 5 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,13 +14,13 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises…</a>  37.7%    58.1   2026-09-25   51% ▇▇▇▇▇▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>           66.7%    63.0   2026-09-25   18% ▇▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspeci…</a>  83.3%    63.9   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>          58.0%    65.1   2026-09-25   10% ▇
-                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>        23.0%    53.5   2026-09-25    9% ▇
+<a name="card-final-apriel-1-6-15b-thinker"></a>ServiceNow-AI/Apriel-…  <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Aider polyglot (225 exercises…</a>  37.7%    58.0   2026-09-25   53% ▇▇▇▇▇▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Retail (lab)</a>           66.7%    62.9   2026-09-25   17% ▇▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">Multi-IF (aggregation unspeci…</a>  83.3%    63.9   2026-09-25   11% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">SWE-bench Verified (lab)</a>        23.0%    53.4   2026-09-25    9% ▇
+                        <a href="https://huggingface.co/ServiceNow-AI/Apriel-1.6-15b-Thinker/blob/5810d5f1723032300131e677450d7f95a15a05e7/README.md">τ²-bench Airline (lab)</a>          58.0%    65.2   2026-09-25    9% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
-                        weighted average                       = 59.8
+                        weighted average                       = 59.6
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -31,8 +31,8 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download               size  score
-4-bit gguf-q4_k_m   ~9.44GB   59.8
-8-bit gguf-q8_0    ~18.38GB   59.8
+4-bit gguf-q4_k_m   ~9.44GB   59.6
+8-bit gguf-q8_0    ~18.38GB   59.6
 </pre>
 
 ```sh

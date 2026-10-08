@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 65.3** ±0.7 · #92 of 551 · from 21 benchmark results across 6 sources
+**score 65.2** ±0.7 · #93 of 551 · from 21 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -18,8 +18,8 @@ source                  test                             score  implies  date   
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     78.5%    64.2   2026-04-14    9% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           12.2%    67.2   2026-06-12    8% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         87.8%    66.9   2026-04-14    6% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      5.0%    60.1   2026-08-27    3% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            30.0%    73.2   2026-04-14    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>      5.0%    60.0   2026-08-27    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            30.0%    73.3   2026-04-14    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                11.7%    56.3   2026-08-27    2% ▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">MMMU Pro (lab)</a>                   66.1%    63.4   2026-03-17    4% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4-mini-and-nano">Humanity's Last Exam (lab)</a>       24.3%    66.1   2026-03-17    3% ▇
@@ -36,7 +36,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/026789c1c12a4c34580a32e84dcaf5630d7e8f31/gpt-5-4-nano-medium">ARC-AGI-2 public evaluation s…</a>    3.5%    59.5   2026-06-04    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   96.9%   295.2   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 65.3
+                        weighted average                        = 65.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>

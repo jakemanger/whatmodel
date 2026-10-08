@@ -33,7 +33,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>             77.6%    64.7   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">HLE (lab)</a>                        5.2%    53.0   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                    97.2%    60.3   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 77.5%    59.5   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                 77.5%    59.4   2026-07-02    1% ▇
 <a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>        69.0%    64.7   2026-07-20    6% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 62.9

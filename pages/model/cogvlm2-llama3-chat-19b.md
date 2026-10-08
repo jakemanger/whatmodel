@@ -17,7 +17,7 @@ source                  test                              score  implies  date  
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>    963.7    37.0   2026-10-02   60% ▇▇▇▇▇▇▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>  -8.5000    46.8   2025-03-16   25% ▇▇▇
 <a name="first-party-zai-cogvlm2-scores"></a>Zhipu AI                <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">OCRBench (lab)</a>                    75.6%    44.4   2024-09-03   11% ▇
-                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    74.2   2024-09-03    1% ▇
+                        <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">TextVQA (lab)</a>                     84.2%    74.3   2024-09-03    1% ▇
                         <a href="https://huggingface.co/zai-org/cogvlm2-llama3-chat-19B/blob/f592f291cf528389b2e4776b1e84ecdf6d71fbe3/README.md#benchmark">ChartQA (lab)</a>                     81.0%   108.6   2024-09-03    0% ▇
 prior                   pull toward the middle                     50.0                 3% ▇
                         weighted average                         = 41.2

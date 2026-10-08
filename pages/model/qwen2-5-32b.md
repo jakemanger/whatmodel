@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                    56.1%    53.6   2025-01-30   13% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                    46.1%    52.5   2025-01-30    9% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         7.4%    50.2   2025-02-25    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    47.0   2026-08-30    0% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>            0.0%    46.9   2026-08-30    0% ▇
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                  82.3%    53.0   2025-10-08    5% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                            84.7%    54.1   2025-10-08    4% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>  39.1%    47.7   2025-10-08    3% ▇

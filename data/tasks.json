@@ -58,7 +58,11 @@
       "tau3-bench",
       "tau2-bench-weighted",
       "agents-last-exam-unspecified",
-      "arena-agent-ips-202610"
+      "arena-agent-ips-202610",
+      "tau3-airline",
+      "tau3-retail",
+      "tau3-telecom",
+      "tau3-banking-v101"
     ]
   },
   {

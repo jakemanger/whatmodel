@@ -15,9 +15,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>        57.2%    70.1   2026-06-10   23% ▇▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           25.6%    70.1   2026-06-10   13% ▇▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>           25.6%    70.2   2026-06-10   13% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                 2.4%    63.5   2026-06-25    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       21.7%    67.5   2026-09-11    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>       21.7%    67.6   2026-09-11    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     90.8%    70.8   2026-05-01    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>               76.7%    70.2   2026-05-08    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>     18.0%    67.4   2026-07-17    4% ▇
@@ -34,7 +34,7 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0326_outputs/blob/d719c23340e971fe956a2503bd157bfdcb67d146/data/train-00000-of-00001.parquet">MathArena BrokenArXiv March 2…</a>   15.6%    68.3   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>   11.7%    66.7   2026-09-11    1% ▇
 <a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>    9.2%    66.5   2026-06-11    2% ▇
-<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1319.2    70.2   2026-05-10    2% ▇
+<a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1319.2    70.1   2026-05-10    2% ▇
 <a name="paper-2605.08498v1"></a>MathConstraint: Autom…  <a href="https://arxiv.org/html/2605.08498v1">MathConstraint full release, …</a>   35.9%    66.0   2026-05-08    1% ▇
 <a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   57.5%    71.6   2026-05-21    1% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   89.2%    35.0   2026-09-22    0% ▇

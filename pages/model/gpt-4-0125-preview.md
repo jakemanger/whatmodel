@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                       score  implies  date        weight
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                                  83.5%    51.8   2024-03-28   15% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>                          65.1%    53.3   2024-03-28   14% ▇▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               35.4%    49.6   2025-01-27   15% ▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               35.4%    49.7   2025-01-27   15% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               42.3%    50.8   2025-01-27    9% ▇
 <a name="openai-simple-evals-readme"></a>OpenAI simple-evals R…  <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">GPQA Diamond (simple-evals) (…</a>             41.4%    49.1   2024-05-13    8% ▇
                         <a href="https://github.com/openai/simple-evals/blob/652c89d0ca9df547706735883097e9537d40dc47/README.md">MMLU (simple-evals, zero-shot…</a>             85.4%    54.4   2024-05-13    3% ▇

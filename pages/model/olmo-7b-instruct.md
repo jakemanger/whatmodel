@@ -14,7 +14,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      11.0%    27.8   2024-06-07   18% ▇▇
+<a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4#A5.T8">GSM8K (lab)</a>                      11.0%    27.7   2024-06-07   19% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">BIG-Bench Hard (lab)</a>             35.8%    33.3   2024-06-07   15% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">Tulu 2: CodexEval pass@10 (la…</a>   27.8%    32.2   2024-06-07   14% ▇▇
                         <a href="https://arxiv.org/html/2402.00838v4#A5.T8">MMLU (lab)</a>                       46.1%    38.3   2024-06-07    7% ▇

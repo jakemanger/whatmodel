@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">MATH-500 (lab)</a>                  95.4%    56.0   2026-03-16   19% ▇▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">LiveCodeBench (version unspec…</a>  51.8%    52.3   2026-03-16   17% ▇▇
                         <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md#evaluation-results">BFCL v3 (lab)</a>                   61.1%    51.7   2026-03-16    8% ▇
-prior                   pull toward the middle                   50.0                 2% ▇
+prior                   pull toward the middle                   50.0                 3% ▇
                         weighted average                       = 54.6
 </pre>
 

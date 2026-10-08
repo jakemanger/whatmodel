@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-06 · 550B params (55B active) · openmdw
 
-**score 66.4** ±1.4 · #80 of 551 · from 5 benchmark results across 2 sources
+**score 66.4** ±1.4 · #79 of 551 · from 5 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -17,7 +17,7 @@ source                  test                           score  implies  date     
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                   85.4%    67.4   2026-08-10   32% ▇▇▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>       86.7%    66.8   2026-08-10   18% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>   20.0%    68.5   2026-08-27   13% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          12.0%    63.1   2026-08-10   12% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>          12.0%    63.0   2026-08-10   12% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                1426.2    66.0   2026-10-02   24% ▇▇▇
 prior                   pull toward the middle                  50.0                 1% ▇
                         weighted average                      = 66.4

@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-11 · 7.3B params · apache-2.0
 
-**score 43.8** ±0.9 · #345 of 551 · from 17 benchmark results across 3 sources
+**score 43.8** ±0.9 · #344 of 551 · from 17 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2512.13961v2">GPQA (subset unspecified) (la…</a>  40.4%    45.4   2026-09-25    6% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">AlpacaEval 2 length-controlle…</a>  40.9%    47.7   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">MBPP+ (lab)</a>                     60.2%    48.6   2026-09-25    4% ▇
-                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          29.5%    31.1   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2512.13961v2">LiveCodeBench v3 (lab)</a>          29.5%    31.0   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">ZebraLogic (lab)</a>                32.9%    37.4   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">PopQA (lab)</a>                     14.1%    40.0   2026-09-25    2% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>  32.3%    46.7   2026-09-25    2% ▇

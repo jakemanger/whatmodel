@@ -6,7 +6,7 @@
 
 Alibaba · released 2025-04 · proprietary
 
-**score 59.3** ±2.0 · #162 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
+**score 59.3** ±2.0 · #161 of 551 · from 1 benchmark result across 1 source · \* thinly tested, treat the rank as provisional
 
 ## How the score was worked out
 

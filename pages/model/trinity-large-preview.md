@@ -16,9 +16,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                             score  implies  date        weight
 <a name="first-party-arcee-scores"></a>Arcee AI vendor-repor…  <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">GPQA Diamond (lab)</a>               63.3%    56.2   2026-01-27   33% ▇▇▇▇
                         <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">MMLU-Pro (lab)</a>                   75.2%    56.7   2026-01-27   16% ▇▇
-                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>                  24.0%    38.9   2026-01-27    4% ▇
+                        <a href="https://huggingface.co/arcee-ai/Trinity-Large-Preview/blob/d8e126719c8bf2b3ac5a3551bd1f07fcee767a90/README.md#benchmarks">AIME 2025 (lab)</a>                  24.0%    38.8   2026-01-27    4% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1378.6    60.8   2026-10-02   45% ▇▇▇▇▇
-<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.1%   165.0   2026-09-22    0% ▇
+<a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   93.1%   164.9   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 2% ▇
                         weighted average                        = 57.5
 </pre>

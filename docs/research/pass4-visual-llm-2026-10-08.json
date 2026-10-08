@@ -1290,6 +1290,496 @@
    "by": "independent",
    "date": "2023-06-30",
    "note": "LLM-Blender paper (arXiv 2306.02561v3) Table 2 'Empirical results on MixInstruct', row 'Flan-T5', column GPT-Rank (lower is better) = 8.81: mean rank of the model's answer among the 11 candidate LLMs' answers per example, ranked by ChatGPT pairwise comparisons (MaxWins), 4,771 test examples. Table 2 caption: 'GPT-Rank are the most important metric'. Checkpoint identity from the MixInstruct dataset card (huggingface.co/datasets/llm-blender/mix-instruct, licence mit): google/flan-t5-xxl. Rank is relative to this 11-model pool. Other candidates (Vicuna 13B v1.1, Alpaca native 7B, Koala 7B, Baize 7B, MOSS, MPT-7B-Instruct) are not catalogue checkpoints and are not recorded."
+  },
+  {
+   "model": "aya-vision-32b",
+   "bench": "vmmu-mean",
+   "score": 0.2246,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Aya-Vision-32B', column Mean = 22.46 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "gemma-3-4b",
+   "bench": "vmmu-mean",
+   "score": 0.2545,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Gemma-3-4B', column Mean = 25.45 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "gemma-3-27b",
+   "bench": "vmmu-mean",
+   "score": 0.3909,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Gemma-3-27B', column Mean = 39.09 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "qwen2-5-vl-32b",
+   "bench": "vmmu-mean",
+   "score": 0.5213,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Qwen-2.5-VL-32B', column Mean = 52.13 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "qwen2-5-vl-72b",
+   "bench": "vmmu-mean",
+   "score": 0.5175,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Qwen-2.5-VL-72B', column Mean = 51.75 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "llama-4-scout",
+   "bench": "vmmu-mean",
+   "score": 0.4906,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Llama-4-Scout', column Mean = 49.06 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "llama-4-maverick",
+   "bench": "vmmu-mean",
+   "score": 0.3837,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Llama-4-Maverick', column Mean = 38.37 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "mistral-small-3-2",
+   "bench": "vmmu-mean",
+   "score": 0.3188,
+   "source": "https://arxiv.org/html/2508.13680v5",
+   "source_id": "paper-2508.13680v5-vmmu",
+   "by": "independent",
+   "date": "2026-09-23",
+   "note": "VMMU paper (arXiv 2508.13680v5, 23 Sep 2026) Table 2 'Open-source VLMs', row 'Mistral-Small-3.2-24B', column Mean = 31.88 (percent, stored /100): mean accuracy over the seven VMMU task columns (Math, Phys, Chem, Bio, Geo, Drv, IQ), 2.5k Vietnamese multimodal multiple-choice questions. Authors' own run: Sec. 4 'We evaluate 3 groups of models on the full VMMU benchmark ... (1) 10 open-source VLMs'. Open-weight rows only; closed-source rows (API snapshots unstated) and models without a catalogue entry are not recorded."
+  },
+  {
+   "model": "ling-flash-2-0",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5174,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ling Flash 2.0' = 0.5174 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "intellect-3",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.566,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Intellect 3' = 0.566 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "olmo-3-32b-think",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5021,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Olmo 3 32B Think' = 0.5021 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "olmo-3-1-32b-think",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5067,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Olmo 3.1 32B Think' = 0.5067 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "olmo-3-1-32b-instruct",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.456,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Olmo 3.1 32B Instruct' = 0.456 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "olmo-3-7b-think",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.413,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Olmo 3 7B Think' = 0.413 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "olmo-3-7b-instruct",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.3503,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Olmo 3 7B Instruct' = 0.3503 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "llama-3-3-70b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5364,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Llama 3.3 70B Instruct' = 0.5364 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "llama-3-1-8b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.3967,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Llama 3.1 8B Instruct' = 0.3967 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "gemma-3-27b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.461,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Gemma 3 27B' = 0.461 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "gemma-3-12b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.4379,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Gemma 3 12B' = 0.4379 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "gemma-3-4b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.3214,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Gemma 3 4B' = 0.3214 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "qwen3-next-80b-a3b-thinking",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5888,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Qwen3 Next 80B-A3B Thinking' = 0.5888 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "qwen3-next-80b-a3b-instruct",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5687,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Qwen3 Next 80B-A3B Instruct' = 0.5687 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "minimax-m2",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5708,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'MiniMax M2' = 0.5708 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "glm-4-5-air",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.541,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'GLM 4.5 Air' = 0.541 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "nemotron-3-nano-30b-a3b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5114,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Nemotron Nano V3 30B-A3B' = 0.5114 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "phi-4-reasoning",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.4815,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Phi 4 Reasoning' = 0.4815 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "qwen2-5-32b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5003,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Qwen2.5 32B Instruct' = 0.5003 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "granite-4-0-h-small",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.4452,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Granite 4.0H Small' = 0.4452 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "smollm3-3b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.3548,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'SmolLM3 3B' = 0.3548 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "ministral-3-14b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.476,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ministral 3 14B Instruct' = 0.476 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "ministral-3-8b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.4442,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ministral 3 8B Instruct' = 0.4442 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "ministral-3-3b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.3927,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ministral 3 3B Instruct' = 0.3927 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "ministral-3-14b-reasoning",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.4807,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ministral 3 14B Reasoning' = 0.4807 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "ministral-3-8b-reasoning",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.4312,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ministral 3 8B Reasoning' = 0.4312 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "ministral-3-3b-reasoning",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.3741,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Ministral 3 3B Reasoning' = 0.3741 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "gpt-oss-120b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5771,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'gpt-oss 120b (med)' = 0.5771 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "gpt-oss-20b",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.5198,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'gpt-oss 20b (med)' = 0.5198 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "claude-sonnet-4-5",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.6258,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Claude Sonnet 4.5' = 0.6258 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "gemini-3-pro-preview",
+   "bench": "medmarks-v-mean-win-rate",
+   "score": 0.6628,
+   "source": "https://arxiv.org/html/2605.01417v1",
+   "source_id": "paper-2605.01417v1-medmarks",
+   "by": "independent",
+   "date": "2026-05-02",
+   "note": "Medmarks paper (arXiv 2605.01417v1, 2 May 2026) Table 4 'All models by mean win rate on Medmarks-V', row 'Gemini 3 Pro Preview' = 0.6628 (weighted mean win rate over 19 verifiable medical benchmarks, against the other 70 configurations). Authors' own evaluation of 61 models / 71 configurations (open-weight models served with vLLM, API models via the Prime Intellect gateway, officially recommended sampling parameters; Sec. 2). Quantised (FP8/4-bit/8-bit) rows and reasoning-effort variants other than the default 'med' are not recorded; Qwen3 rows whose 2507 revision is not stated are not recorded."
+  },
+  {
+   "model": "wan-2-1-1-3b",
+   "bench": "vbench-t2v-total",
+   "score": 0.8396,
+   "source": "https://arxiv.org/html/2503.20314v2#S4.T7",
+   "source_id": "first-party-alibaba-wan-paper",
+   "by": "lab",
+   "date": "2025-04-19",
+   "note": "Wan technical report (Alibaba Wan team; arXiv 2503.20314v2, 19 Apr 2025) VBench comparison table, row 'Wan 1.3B', column Total Score = 83.96%. Maker's own figure for its own model (vendor-reported; VBench 1.0 T2V total). Rows for other models in the table are other labs' leaderboard values and are not recorded."
+  },
+  {
+   "model": "wan-2-1-14b",
+   "bench": "vbench-t2v-total",
+   "score": 0.8622,
+   "source": "https://arxiv.org/html/2503.20314v2#S4.T7",
+   "source_id": "first-party-alibaba-wan-paper",
+   "by": "lab",
+   "date": "2025-04-19",
+   "note": "Wan technical report (Alibaba Wan team; arXiv 2503.20314v2, 19 Apr 2025) VBench comparison table, row 'Wan 14B (2025-02-24)', column Total Score = 86.22%. Maker's own figure for its own model (vendor-reported; VBench 1.0 T2V total). Rows for other models in the table are other labs' leaderboard values and are not recorded."
+  },
+  {
+   "model": "cosmos-1-0-diffusion-7b-text2world",
+   "bench": "cosmos-3d-sampson-error",
+   "score": 0.355,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-7B-Text2World', column 'Sampson error' = 0.355. NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-diffusion-7b-text2world",
+   "bench": "cosmos-3d-pose-success",
+   "score": 0.626,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-7B-Text2World', column 'Pose estimation success rate (%)' = 62.6% (stored /100). NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-diffusion-7b-video2world",
+   "bench": "cosmos-3d-sampson-error",
+   "score": 0.473,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-7B-Video2World', column 'Sampson error' = 0.473. NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-diffusion-7b-video2world",
+   "bench": "cosmos-3d-pose-success",
+   "score": 0.684,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-7B-Video2World', column 'Pose estimation success rate (%)' = 68.4% (stored /100). NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-autoregressive-4b",
+   "bench": "cosmos-3d-sampson-error",
+   "score": 0.433,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-4B', column 'Sampson error' = 0.433. NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-autoregressive-4b",
+   "bench": "cosmos-3d-pose-success",
+   "score": 0.356,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-4B', column 'Pose estimation success rate (%)' = 35.6% (stored /100). NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-autoregressive-5b-video2world",
+   "bench": "cosmos-3d-sampson-error",
+   "score": 0.392,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-5B-Video2World', column 'Sampson error' = 0.392. NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
+  },
+  {
+   "model": "cosmos-1-0-autoregressive-5b-video2world",
+   "bench": "cosmos-3d-pose-success",
+   "score": 0.27,
+   "source": "https://arxiv.org/html/2501.03575v3",
+   "source_id": "paper-2501.03575v3-cosmos",
+   "by": "lab",
+   "date": "2025-07-09",
+   "note": "Cosmos World Foundation Model Platform paper (NVIDIA; arXiv 2501.03575v3) Table 19 'Evaluation of 3D consistency on base Cosmos models', row 'Cosmos-Predict1-5B-Video2World', column 'Pose estimation success rate (%)' = 27.0% (stored /100). NVIDIA's own models; the table also carries VideoLDM (another lab, not recorded) and a real-video reference row (not a model). Table 10 maps Cosmos-Predict1 names to the diffusion (7B/14B Text2World, Video2World) and autoregressive (4B/12B, 5B/13B Video2World) families."
   }
  ],
  "benchmarks": [
@@ -1398,6 +1888,90 @@
    "suggested_tasks": [
     "chat"
    ]
+  },
+  {
+   "id": "vmmu-mean",
+   "name": "VMMU (Vietnamese multimodal understanding and reasoning, mean accuracy over 7 tasks)",
+   "category": "llm",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2508.13680v5#S4.T2",
+   "task": "vision",
+   "setup": {
+    "url": "https://arxiv.org/html/2508.13680v5",
+    "version": "arXiv:2508.13680v5",
+    "metric": "Mean accuracy over the seven task columns of Table 2 (Math, Physics, Chemistry, Biology, Geography, Driving-license, IQ), stored as a fraction.",
+    "protocol": "2.5k Vietnamese multimodal questions in 7 tasks; each question requires combining the image and text (no OCR/text-only shortcuts); models prompted with the paper's fixed prompt (Figs. 9-10); the paper prints a random-answer baseline row (mean 25.92%).",
+    "limitations": "Single prompt, API/open-weight inference settings not detailed; random baseline is 25.92% over the seven tasks (stored chance 0.2592)."
+   },
+   "reported_scale": "0-1",
+   "suggested_tasks": [
+    "vision"
+   ],
+   "chance": 0.2592,
+   "benchmark_family": "vmmu"
+  },
+  {
+   "id": "medmarks-v-mean-win-rate",
+   "name": "Medmarks-V mean win rate (19 verifiable medical benchmarks, 71 configurations)",
+   "category": "llm",
+   "kind": "linear",
+   "latent_scale": 0.08,
+   "url": "https://arxiv.org/html/2605.01417v1#A2.T4",
+   "task": "chat",
+   "setup": {
+    "url": "https://arxiv.org/html/2605.01417v1",
+    "version": "Medmarks-V as run in arXiv 2605.01417v1 (61 models, 71 configurations)",
+    "metric": "Weighted mean win rate: for each of the 19 verifiable benchmarks a model's win rate is its share of pairwise wins against the other configurations; benchmarks are combined with log-size weights (appendix H).",
+    "protocol": "Open-source evaluation suite built on the verifiers library; open-weight models run on vLLM, API models through a gateway; each model evaluated with its officially recommended sampling parameters.",
+    "limitations": "Pool-relative (win rate against the 71-configuration pool), so scores shift if the pool changes; latent_scale 0.08 is the standard deviation (0.081) of the 71 published win rates (mean 0.50)."
+   },
+   "reported_scale": "win rate (0-1)",
+   "suggested_tasks": [
+    "chat"
+   ]
+  },
+  {
+   "id": "cosmos-3d-pose-success",
+   "name": "Cosmos 3D consistency: camera-pose estimation success rate on generated videos",
+   "category": "video",
+   "kind": "acc",
+   "url": "https://arxiv.org/html/2501.03575v3#S5.T19",
+   "task": "text-to-video",
+   "setup": {
+    "url": "https://arxiv.org/html/2501.03575v3",
+    "version": "arXiv:2501.03575v3",
+    "metric": "Share of generated videos on which a structure-from-motion/pose estimator succeeds (higher = more geometrically consistent), stored as a fraction.",
+    "protocol": "NVIDIA's evaluation of base Cosmos models on 3D consistency (Sec. 5.2): videos generated from DAVIS-style prompts are reconstructed with a pose estimator; success rate and epipolar (Sampson) error are reported alongside view-synthesis metrics.",
+    "limitations": "Maker-run, four NVIDIA models only (plus VideoLDM and real-video reference rows not recorded); estimator and prompt set as in the paper."
+   },
+   "reported_scale": "fraction",
+   "suggested_tasks": [
+    "text-to-video"
+   ],
+   "chance": 0,
+   "benchmark_family": "cosmos-3d-consistency"
+  },
+  {
+   "id": "cosmos-3d-sampson-error",
+   "name": "Cosmos 3D consistency: Sampson epipolar error on generated videos (lower is better)",
+   "category": "video",
+   "kind": "linear",
+   "url": "https://arxiv.org/html/2501.03575v3#S5.T19",
+   "task": "text-to-video",
+   "setup": {
+    "url": "https://arxiv.org/html/2501.03575v3",
+    "version": "arXiv:2501.03575v3",
+    "metric": "Mean Sampson (epipolar) error of correspondences between frames of the generated video; lower means more geometrically consistent.",
+    "protocol": "As cosmos-3d-pose-success: same videos, same table (Table 19).",
+    "limitations": "Raw error units; linear scale 0.1; four NVIDIA models only."
+   },
+   "reported_scale": "Sampson error",
+   "suggested_tasks": [
+    "text-to-video"
+   ],
+   "benchmark_family": "cosmos-3d-consistency",
+   "direction": "lower",
+   "latent_scale": 0.1
   }
  ],
  "ledger": [
@@ -1538,6 +2112,84 @@
    "evidence_url": "https://arxiv.org/abs/2306.02561v3",
    "icon": "arxiv.org",
    "scope": "Table 2 GPT-Rank column for the five LLMs that match catalogue checkpoints (Open Assistant SFT-4 Pythia 12B, ChatGLM-6B, Dolly V2 12B, StableLM-Tuned-Alpha 7B, Flan-T5-XXL). Not used: other candidates, oracle/ranker/ensemble rows, BERTScore/BARTScore/BLEURT/threshold columns."
+  },
+  {
+   "action": "new",
+   "id": "paper-2508.13680v5-vmmu",
+   "name": "VMMU: A Vietnamese Multitask Multimodal Understanding and Reasoning Benchmark (arXiv:2508.13680v5)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2508.13680v5"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2508.13680v5",
+   "quote": "arXiv abstract page for 2508.13680v5 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Authors of arXiv:2508.13680 (VMMU), CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2508.13680v5",
+   "icon": "arxiv.org",
+   "scope": "Table 2 Mean for eight open-weight VLMs that match catalogue checkpoints. Not used: closed-source rows (snapshots unstated), Aya-Vision-8B, Mistral-Medium-3 and other uncatalogued models, per-task columns, OCR-ablation tables."
+  },
+  {
+   "action": "new",
+   "id": "paper-2605.01417v1-medmarks",
+   "name": "Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks (arXiv:2605.01417v1)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2605.01417v1"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2605.01417v1",
+   "quote": "arXiv abstract page for 2605.01417v1 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "Authors of arXiv:2605.01417 (Medmarks), CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2605.01417v1",
+   "icon": "arxiv.org",
+   "scope": "Table 4 (all models by mean win rate on Medmarks-V) for 30 configurations that match catalogue models by exact name. Not used: quantised variants, non-default reasoning efforts, rows with ambiguous revisions (Qwen3 Thinking/Instruct without 2507, Magistral Small), uncatalogued models, Medmarks-OE and per-benchmark scores."
+  },
+  {
+   "action": "new",
+   "id": "first-party-alibaba-wan-paper",
+   "name": "Alibaba Wan technical report (arXiv:2503.20314v2), VBench table (own models)",
+   "kind": "first-party",
+   "match": [
+    "arxiv.org/html/2503.20314v2"
+   ],
+   "exact": true,
+   "license": "Factual vendor-reported score (not licensed content)",
+   "terms_url": "https://arxiv.org/abs/2503.20314v2",
+   "quote": "Owner rule (vendor-reported scores, approved 2026-10-07): a vendor's own published score for its own model may be recorded by hand one figure at a time with the exact URL, date and printed settings; other labs' cells excluded; rows labelled by: 'lab'. The document is a maker-authored technical report (default arXiv licence), recorded under the vendor-reported rule as maker documentation; see report for the open decision.",
+   "attribution": "Alibaba Wan team, Wan: Open and Advanced Large-Scale Video Generative Models, arXiv:2503.20314v2. Own-model figures only.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "icon": "arxiv.org",
+   "scope": "VBench Total Score for Wan 1.3B and Wan 14B (2025-02-24) only. The report carries arXiv's default non-exclusive licence (no open licence claimed); only the makers' own figures for their own models are recorded by hand. Not used: competitor rows, Wan-Bench (no catalogue benchmark id; competitors anonymised)."
+  },
+  {
+   "action": "new",
+   "id": "paper-2501.03575v3-cosmos",
+   "name": "Cosmos World Foundation Model Platform for Physical AI (arXiv:2501.03575v3)",
+   "kind": "paper",
+   "match": [
+    "arxiv.org/html/2501.03575v3"
+   ],
+   "exact": true,
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "terms_url": "https://arxiv.org/abs/2501.03575v3",
+   "quote": "arXiv abstract page for 2501.03575v3 links 'http://creativecommons.org/licenses/by/4.0/' as the article licence; CC BY s.2(a)(1) grants a worldwide, royalty-free licence to reproduce and Share the Licensed Material, including for commercial purposes, subject to attribution.",
+   "attribution": "NVIDIA, Cosmos World Foundation Model Platform for Physical AI, arXiv:2501.03575v3, CC BY 4.0. No endorsement.",
+   "verdict": "allowed",
+   "checked": "2026-10-08",
+   "evidence_url": "https://arxiv.org/abs/2501.03575v3",
+   "icon": "arxiv.org",
+   "scope": "Table 19 rows for Cosmos-Predict1-7B-Text2World, 7B-Video2World, 4B and 5B-Video2World (Sampson error and pose-estimation success rate). Not used: VideoLDM row, real-video reference, PSNR/SSIM/LPIPS columns, post-trained variants, physics-alignment table (Video2World only)."
   }
  ],
  "models": [
@@ -1613,6 +2265,78 @@
      "reported_label": "showlab/show-o2-1.5B"
     }
    ]
+  },
+  {
+   "id": "cosmos-1-0-diffusion-7b-video2world",
+   "name": "Cosmos-1.0-Diffusion-7B-Video2World",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-01",
+   "open_weights": true,
+   "license": "nvidia-open-model",
+   "params_b": 7,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Video2World",
+   "identity_note": "Comparison-only, proposed so the Cosmos paper's 3D-consistency table counts. The paper's 'Cosmos-Predict1-7B-Video2World' is the Video2World derivative of the catalogued 7B Text2World; NVIDIA's weights are nvidia/Cosmos-1.0-Diffusion-7B-Video2World (sha 6b3b7c6314ef62ae9ee1bd0fc6bb3370adc5fb15, created 2025-01-07).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2501.03575v3#S4.T10",
+     "reported_label": "s 3D-consistency table counts. The paper"
+    },
+    {
+     "source": "https://huggingface.co/nvidia/Cosmos-1.0-Diffusion-7B-Video2World",
+     "reported_label": "nvidia/Cosmos-1.0-Diffusion-7B-Video2World"
+    }
+   ]
+  },
+  {
+   "id": "cosmos-1-0-autoregressive-4b",
+   "name": "Cosmos-1.0-Autoregressive-4B",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-01",
+   "open_weights": true,
+   "license": "nvidia-open-model",
+   "params_b": 4,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-4B",
+   "identity_note": "Comparison-only, proposed so the Cosmos paper's 3D-consistency table counts. The paper's 'Cosmos-Predict1-4B' is the 4B autoregressive base model (Table 10); weights nvidia/Cosmos-1.0-Autoregressive-4B (sha 0b168630ad2400affefe460f2743c071de1fb257, created 2025-01-07).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2501.03575v3#S4.T10",
+     "reported_label": "s 3D-consistency table counts. The paper"
+    },
+    {
+     "source": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-4B",
+     "reported_label": "nvidia/Cosmos-1.0-Autoregressive-4B"
+    }
+   ]
+  },
+  {
+   "id": "cosmos-1-0-autoregressive-5b-video2world",
+   "name": "Cosmos-1.0-Autoregressive-5B-Video2World",
+   "provider": "NVIDIA",
+   "category": "video",
+   "released": "2025-01",
+   "open_weights": true,
+   "license": "nvidia-open-model",
+   "params_b": 5,
+   "api": null,
+   "local": null,
+   "model_repo": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-5B-Video2World",
+   "identity_note": "Comparison-only, proposed so the Cosmos paper's 3D-consistency table counts. The paper's 'Cosmos-Predict1-5B-Video2World' is the Video2World derivative of the 4B autoregressive base (Table 10); weights nvidia/Cosmos-1.0-Autoregressive-5B-Video2World (sha f01be8aaaa18704d1fec4e917992aec1074c94a3, created 2025-01-07).",
+   "identity_evidence": [
+    {
+     "source": "https://arxiv.org/html/2501.03575v3#S4.T10",
+     "reported_label": "s 3D-consistency table counts. The paper"
+    },
+    {
+     "source": "https://huggingface.co/nvidia/Cosmos-1.0-Autoregressive-5B-Video2World",
+     "reported_label": "nvidia/Cosmos-1.0-Autoregressive-5B-Video2World"
+    }
+   ]
   }
  ],
  "gaps": [],
@@ -1644,6 +2368,22 @@
   {
    "source": "https://arxiv.org/abs/2306.02561v3 (LLM-Blender, CC BY 4.0)",
    "outcome": "5 rows of new benchmark llm-blender-mixinstruct-gpt-rank (GPT-Rank), identities from the MixInstruct dataset card. Thin gain: stablelm-tuned-alpha-7b (2 -> 3)."
+  },
+  {
+   "source": "https://arxiv.org/abs/2508.13680v5 (VMMU, CC BY 4.0)",
+   "outcome": "8 rows of new benchmark vmmu-mean. aya-vision-32b 1 -> 2."
+  },
+  {
+   "source": "https://arxiv.org/abs/2605.01417v1 (Medmarks, CC BY 4.0)",
+   "outcome": "31 rows of new benchmark medmarks-v-mean-win-rate. ling-flash-2-0 1 -> 2."
+  },
+  {
+   "source": "https://arxiv.org/abs/2503.20314v2 (Wan report; arXiv non-exclusive licence, vendor-reported)",
+   "outcome": "2 vendor rows (VBench total for Wan 1.3B and 14B). wan-2-1-1-3b 2 -> 3. Depends on the owner accepting maker reports as vendor documents."
+  },
+  {
+   "source": "https://arxiv.org/abs/2501.03575v3 (Cosmos platform paper, CC BY 4.0)",
+   "outcome": "8 rows of two new benchmarks (3D-consistency pose success and Sampson error) for the catalogued Cosmos-1.0-Diffusion-7B-Text2World and three proposed comparison-only NVIDIA siblings. cosmos-1-0-diffusion-7b-text2world 1 -> 3."
   }
  ]
 }

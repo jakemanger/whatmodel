@@ -17,7 +17,7 @@ source                  test                            score  implies  date    
 <a name="stablelm-original-eval-json"></a>Stability AI            <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Challenge</a>                   49.2%    36.2   2024-04-08   18% ▇▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">WinoGrande</a>                      72.2%    37.2   2024-04-08    4% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">OpenBookQA</a>                      35.4%    40.5   2024-04-08    2% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">BoolQ</a>                           80.5%    41.2   2024-04-08    2% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">BoolQ</a>                           80.5%    41.3   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">HellaSwag</a>                       79.4%    39.4   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">ARC Easy</a>                        77.6%    41.2   2024-04-08    2% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-13b-hf.json">PIQA</a>                            79.1%    35.2   2024-04-08    1% ▇
@@ -50,7 +50,7 @@ source                  test                            score  implies  date    
 <a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   58.2%    36.6   2024-06-03    4% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  37.9%    36.4   2024-06-03    3% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            54.7%    37.9   2024-06-03    2% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       17.1%    32.4   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       17.1%    32.5   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           21.1%    31.9   2024-06-03    1% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            32.6%    32.4   2024-06-03    1% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">C-Eval</a>                          37.3%    32.4   2024-06-03    1% ▇

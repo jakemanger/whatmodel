@@ -6,7 +6,7 @@
 
 Google · released 2026-03 · closed weights
 
-**score 64.5** ±0.9 · #102 of 551 · from 8 benchmark results across 3 sources
+**score 64.5** ±0.9 · #101 of 551 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 

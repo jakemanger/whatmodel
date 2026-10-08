@@ -14,20 +14,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     40.1%    27.5   2024-06-03   24% ▇▇▇
+<a name="card2-qwen-qwen2-0-5b-instruct"></a>Qwen2-0.5B-Instruct m…  <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">GSM8K (lab)</a>                     40.1%    27.6   2024-06-03   24% ▇▇▇
                         <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">HumanEval (lab)</a>                 17.1%    24.9   2024-06-03   23% ▇▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      37.9%    24.0   2024-06-03   15% ▇▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    45.2%    25.4   2024-06-03   10% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    14.7   2024-06-03    6% ▇
-<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    19.8   2024-06-07   11% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">MMLU (lab)</a>                      37.9%    24.1   2024-06-03   15% ▇▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">C-Eval (lab)</a>                    45.2%    25.5   2024-06-03   10% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen2-0.5B-Instruct/blob/c540970f9e29518b1d8f06ab8b24cba66ad77b6d/README.md#evaluation">IFEval prompt-level strict (l…</a>  20.0%    14.6   2024-06-03    6% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>  30.6%    26.8   2026-09-19   11% ▇
+<a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>  44.4%    19.8   2024-06-07   11% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 24.9
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
+<sub>Licences: Qwen2-0.5B-Instruct model card ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)) · Open Persian LLM Leaderboard v2 ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt))</sub>
 
 ## How to run it
 

@@ -26,7 +26,7 @@ source                  test                                       score  implie
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>                  35.1%    38.0   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                                      33.9%    50.6   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>                  63.2%    33.5   2025-10-08    1% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               27.9%    48.0   2025-01-27   10% ▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               27.9%    48.0   2025-01-27    9% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               36.5%    47.7   2025-01-27    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                    1.4%    45.2   2025-03-07    2% ▇
 <a name="arena-hard-auto-readme-v0-1"></a>Arena-Hard-Auto v0.1 …  <a href="https://github.com/lmarena/arena-hard-auto/blob/3071ef95d913bb5cd632641db336a3b6c7fe4bdd/README.md">Arena-Hard (v0.1, GPT-4-1106 …</a>             57.5%    50.1   2024-11-14   10% ▇

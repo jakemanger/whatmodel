@@ -28,7 +28,7 @@ source                  test                                       score  implie
                         <a href="https://arxiv.org/html/2501.00656v3">IFEval prompt-level loose</a>                  69.9%    40.7   2025-10-08    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                               21.0%    46.2   2025-01-27    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                               27.5%    40.6   2025-01-27    4% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                    0.6%    42.3   2025-03-07    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>                    0.6%    42.2   2025-03-07    1% ▇
 <a name="internlm-github-model-cards"></a>InternLM GitHub repos…  <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">GSM8K</a>                                      88.9%    49.1   2024-07-03    3% ▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MMLU</a>                                       70.9%    44.5   2024-07-03    3% ▇
                         <a href="https://github.com/InternLM/InternLM/blob/68fdc71330059255fd647abf28219ad11e8e4865/model_cards/internlm2.5_7b.md">MATH (subset unspecified)</a>                  46.9%    43.9   2024-07-03    2% ▇

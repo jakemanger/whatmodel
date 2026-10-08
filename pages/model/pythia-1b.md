@@ -6,7 +6,7 @@
 
 EleutherAI · released 2023-02 · 1.01B params · apache-2.0
 
-**score 19.9** ±1.0 · #528 of 551 · from 14 benchmark results across 2 sources
+**score 20.0** ±1.0 · #528 of 551 · from 14 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -18,10 +18,10 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      84.0%    20.2   2023-05-31   11% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      70.7%    22.5   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%    15.5   2023-05-31    7% ▇
-                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  56.2%    22.7   2023-05-31    7% ▇
+                        <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  56.2%    22.8   2023-05-31    7% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge (lab)</a>             24.4%    13.4   2023-05-31    6% ▇
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            86.0%    20.0   2024-06-07    9% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   33.1%    26.1   2024-06-07    7% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   33.1%    26.2   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        50.2%    17.7   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       44.7%    12.9   2024-06-07    6% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      53.3%    13.9   2024-06-07    6% ▇
@@ -29,7 +29,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.00838v4">PIQA</a>                            69.1%    19.1   2024-06-07    4% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           61.8%    21.1   2024-06-07    4% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 19.9
+                        weighted average                       = 20.0
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -42,7 +42,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp16  ~2.09GB   19.9
+4-bit fp16  ~2.09GB   20.0
 </pre>
 
 ```sh

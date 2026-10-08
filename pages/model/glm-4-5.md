@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-07 · 355B params (32B active) · mit
 
-**score 63.4** ±0.9 · #121 of 551 · from 26 benchmark results across 6 sources
+**score 63.3** ±0.9 · #121 of 551 · from 26 benchmark results across 6 sources
 
 ## How the score was worked out
 
@@ -21,18 +21,18 @@ source                  test                             score  implies  date   
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   64.5%    60.5   2025-11-27    3% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         97.0%    66.4   2025-11-27    1% ▇
 <a name="report-2508.06471v1"></a>GLM-4.5 Team            <a href="https://arxiv.org/html/2508.06471v1">AIME 2024 (lab)</a>                  91.0%    64.5   2025-08-08    5% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       90.0%    61.8   2025-08-08    4% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MMLU (lab)</a>                       90.0%    61.7   2025-08-08    4% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SWE-bench Verified (lab)</a>         64.2%    63.1   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">GPQA (subset unspecified) (la…</a>   79.1%    66.2   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MMLU-Pro (lab)</a>                   84.6%    63.7   2025-08-08    3% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">MATH-500 (lab)</a>                   98.2%    66.9   2025-08-08    3% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 26.4%    56.5   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SimpleQA (lab)</a>                   26.4%    66.3   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">BrowseComp (lab)</a>                 26.4%    56.4   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">Humanity's Last Exam (lab)</a>       14.4%    61.2   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             79.7%    66.1   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.4%    64.6   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Retail (lab)</a>             79.7%    65.5   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">τ-bench Airline (lab)</a>            60.4%    64.4   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">SciCode (level unspecified) (…</a>   41.7%    62.6   2025-08-08    2% ▇
-                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             52.8%    63.5   2025-08-08    2% ▇
+                        <a href="https://arxiv.org/html/2508.06471v1">MultiChallenge (lab)</a>             52.8%    63.4   2025-08-08    2% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">Terminal-Bench (pre-2.0 relea…</a>   37.5%    66.1   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">IFEval prompt-level strict (l…</a>   86.1%    62.2   2025-08-08    1% ▇
                         <a href="https://arxiv.org/html/2508.06471v1">BFCL v3 (lab)</a>                    77.8%    66.2   2025-08-08    1% ▇
@@ -41,7 +41,7 @@ source                  test                             score  implies  date   
 <a name="zai-rpc-bench-leaderboard"></a>RPC-Bench leaderboard   <a href="https://huggingface.co/spaces/zai-org/RPC-Bench/blob/e9313f371c1646c5c711581490e01fcf165ebfab/data/leaderboard.json">RPC-Bench overall, text input…</a>   25.7%    63.4   2026-06-17    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   96.3%    59.6   2025-10-16    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 63.4
+                        weighted average                        = 63.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -69,9 +69,9 @@ api (Z.AI) · $1.00/M blended · $0.6 in / $2.2 out per 1M tokens · [docs.z.ai]
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~213.5GB   63.4
-2-bit ud-q2_k_xl    ~107GB   63.4
-1-bit ud-iq1_s    ~53.75GB   63.4
+4-bit ud-q4_k_xl  ~213.5GB   63.3
+2-bit ud-q2_k_xl    ~107GB   63.3
+1-bit ud-iq1_s    ~53.75GB   63.3
 </pre>
 
 ```sh

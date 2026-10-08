@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                    score  implies  date        weight
 <a name="paper-2210.11416v5"></a>Scaling Instruction-F…  <a href="https://arxiv.org/html/2210.11416v5">BIG-Bench Hard (lab)</a>    45.3%    36.0   2022-12-06   29% ▇▇▇
                         <a href="https://arxiv.org/html/2210.11416v5">MMLU (lab)</a>              55.1%    36.9   2022-12-06   19% ▇▇
-                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               4.9%    38.3   2022-12-06   12% ▇
+                        <a href="https://arxiv.org/html/2210.11416v5">MGSM (lab)</a>               4.9%    38.2   2022-12-06   12% ▇
 <a name="instruct-eval-readme"></a>InstructEval            <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">BIG-Bench Hard</a>          43.9%    37.4   2024-03-10   28% ▇▇▇
                         <a href="https://github.com/declare-lab/instruct-eval/blob/49bbd2ce7e3a5bdc4024ba62a5c9c68c107ee966/README.md">MMLU</a>                    54.5%    39.7   2024-03-10   12% ▇
 prior                   pull toward the middle           50.0                 1% ▇

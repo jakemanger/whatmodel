@@ -6,7 +6,7 @@
 
 Ai2 · released 2025-12 · 32.2B params · apache-2.0
 
-**score 56.1** ±1.0 · #196 of 551 · from 18 benchmark results across 4 sources
+**score 56.1** ±1.0 · #195 of 551 · from 18 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -29,7 +29,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2512.13961v2">IFBench (aggregation unspecif…</a>   68.1%    66.6   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2512.13961v2">IFEval (aggregation unspecifi…</a>   93.8%    68.4   2026-09-25    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1286.4    50.8   2026-10-02   13% ▇▇
-<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.7%    56.5   2026-05-02    6% ▇
+<a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.7%    56.4   2026-05-02    6% ▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   74.3%    52.8   2026-04-17    1% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   89.9%    56.7   2026-04-17    1% ▇
 prior                   pull toward the middle                    50.0                 0% ▇

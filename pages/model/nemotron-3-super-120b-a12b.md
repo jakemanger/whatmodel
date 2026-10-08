@@ -6,7 +6,7 @@
 
 NVIDIA · released 2026-03 · 120.6B params (12.7B active) · nvidia-open-model
 
-**score 61.3** ±1.4 · #144 of 551 · from 8 benchmark results across 3 sources
+**score 61.2** ±1.4 · #144 of 551 · from 8 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -15,15 +15,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="matharena-arxiv-outputs-bysa"></a>MathArena ArXivMath /…  <a href="https://huggingface.co/datasets/MathArena/arxivmath-0226_outputs/blob/92e08f2fb94f5fd7fdbf02b335f5ce6ff9a589a8/data/train-00000-of-00001.parquet">MathArena ArXivMath February …</a>   30.5%    62.4   2026-09-11   20% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    62.1   2026-09-11   19% ▇▇
-                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    59.3   2026-09-11   12% ▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-0126_outputs/blob/306b8e8d1e91c40beb6b2b003adb89e7951bd204/data/train-00000-of-00001.parquet">MathArena ArXivMath January 2…</a>   48.9%    62.0   2026-09-11   19% ▇▇
+                        <a href="https://huggingface.co/datasets/MathArena/arxivmath-1225_outputs/blob/6e427c4860254adc93ee95ebd37dc2b6c6028b4a/data/train-00000-of-00001.parquet">MathArena ArXivMath December …</a>   33.8%    59.2   2026-09-11   12% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1360.5    58.9   2026-10-02   25% ▇▇▇
-<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   81.7%    64.9   2026-03-22    7% ▇
+<a name="report-2603.19220v2"></a>NVIDIA                  <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Eas…</a>   81.7%    64.8   2026-03-22    7% ▇
                         <a href="https://arxiv.org/html/2603.19220v2">AIME 2026 (lab)</a>                  89.8%    59.4   2026-03-22    6% ▇
-                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>   23.2%    68.2   2026-03-22    5% ▇
+                        <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>   23.2%    68.3   2026-03-22    5% ▇
                         <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            77.2%    61.5   2026-03-22    4% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 61.3
+                        weighted average                        = 61.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -61,7 +61,7 @@ api (Amazon Bedrock) · $0.28/M blended · $0.15 in / $0.65 out per 1M tokens ·
 
 <pre>
 download          size  score
-4-bit q4_k_m  ~72.86GB   61.3
+4-bit q4_k_m  ~72.86GB   61.2
 </pre>
 
 ```sh

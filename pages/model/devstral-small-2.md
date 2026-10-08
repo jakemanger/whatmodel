@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                          score  implies  date        weight
 <a name="card-mistralai-devstral-small-2-24b-instruct-2512"></a>mistralai/Devstral-Sm…  <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Verified (lab)</a>      68.0%    60.6   2026-09-25   39% ▇▇▇▇▇
-                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    59.2   2026-09-25   30% ▇▇▇▇
+                        <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">SWE-bench Multilingual (lab)</a>  55.7%    59.2   2026-09-25   29% ▇▇▇▇
                         <a href="https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512/blob/55c5b41e98c2dbd21b0c8afffc540dcfc9eb5128/README.md">Terminal-Bench 2.0 (lab)</a>      22.5%    52.6   2026-09-25   28% ▇▇▇
 prior                   pull toward the middle                 50.0                 4% ▇
                         weighted average                     = 57.6

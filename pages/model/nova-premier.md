@@ -15,12 +15,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="first-party-amazon-scores"></a>Amazon vendor-reporte…  <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">GPQA Diamond (lab)</a>              57.1%    52.1   2025-04-30   26% ▇▇▇
-                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>                 16.0%    47.0   2025-04-30   17% ▇▇
+                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">AIME 2025 (lab)</a>                 16.0%    46.9   2025-04-30   17% ▇▇
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MMLU (lab)</a>                      87.4%    53.0   2025-04-30   12% ▇
-                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>                  82.0%    48.4   2025-04-30   10% ▇
+                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">MATH-500 (lab)</a>                  82.0%    48.3   2025-04-30   10% ▇
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BigCodeBench (lab)</a>              28.1%    47.3   2025-04-30    5% ▇
                         <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">BFCL v3 (lab)</a>                   63.7%    53.7   2025-04-30    4% ▇
-                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions)…</a>  48.8%    41.3   2025-04-30    3% ▇
+                        <a href="https://cdn.amazon.science/e5/e6/ccc5378c42dca467d1abe1628ec9/amazon-nova-premier-technical-report-and-model-card.pdf">CharXiv (reasoning questions)…</a>  48.8%    41.5   2025-04-30    3% ▇
 <a name="massive-agents-paper"></a>MASSIVE-Agents          <a href="https://aclanthology.org/2025.findings-emnlp.1099.pdf">MASSIVE-Agents AST (10k, zero…</a>  34.0%    59.6   2026-09-25   21% ▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 52.0

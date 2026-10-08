@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source  test                            score  implies  date        weight
 <a name="copen-emnlp2022-zero-shot"></a>COPEN   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  42.6%    47.4   2022-12-07   67% ▇▇▇▇▇▇▇▇
-        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  14.0%   109.5   2022-12-07    3% ▇
+        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>  14.0%   109.6   2022-12-07    3% ▇
         <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  49.8%   -14.3   2022-12-07    1% ▇
 prior   pull toward the middle                   50.0                29% ▇▇▇
         weighted average                       = 48.9

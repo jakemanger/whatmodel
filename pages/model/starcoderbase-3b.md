@@ -21,7 +21,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2402.19173v1">DS-1000 (lab)</a>                   14.2%    26.1   2024-02-29    4% ▇
                         <a href="https://arxiv.org/html/2402.19173v1">GSM8K (lab)</a>                      8.0%    22.5   2024-02-29    3% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  21.8%    28.7   2024-05-07    7% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    29.6   2024-05-07    5% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            29.4%    29.7   2024-05-07    5% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  11.9%    29.7   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      27.5%    28.0   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      27.0%    26.3   2024-05-07    2% ▇

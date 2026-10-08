@@ -6,7 +6,7 @@
 
 OpenAI · released 2019-02 · 0.124B params · mit
 
-**score -3.2** ±2.3 · #551 of 551 · from 11 benchmark results across 3 sources
+**score -3.3** ±2.3 · #551 of 551 · from 11 benchmark results across 3 sources
 
 ## How the score was worked out
 
@@ -23,10 +23,10 @@ source                  test                            score  implies  date    
                         <a href="https://aclanthology.org/2021.emnlp-main.564.pdf">COPA</a>                            61.0%    -4.5   2021-11-01    7% ▇
 <a name="acl-2021-findings-acl-404-prost"></a>PROST                   <a href="https://aclanthology.org/2021.findings-acl.404.pdf">PROST physical reasoning (zer…</a>  23.6%   -13.7   2021-08-01    9% ▇
 <a name="copen-emnlp2022-zero-shot"></a>COPEN                   <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN concept identification …</a>  31.1%    -0.1   2022-12-07    2% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -35.3   2022-12-07    0% ▇
-                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  51.5%   189.1   2022-12-07    0% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual similarity j…</a>   7.9%   -35.4   2022-12-07    0% ▇
+                        <a href="https://aclanthology.org/2022.emnlp-main.335.pdf">COPEN conceptual property jud…</a>  51.5%   189.2   2022-12-07    0% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
-                        weighted average                       = -3.2
+                        weighted average                       = -3.3
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,7 +39,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download       size  score
-4-bit fp32  ~0.55GB   -3.2
+4-bit fp32  ~0.55GB   -3.3
 </pre>
 
 ```sh

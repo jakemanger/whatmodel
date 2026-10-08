@@ -19,20 +19,20 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2601.02346v1">AIME 2025 (lab)</a>                  65.8%    52.2   2026-01-05    6% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                   63.5%    52.4   2026-01-05    5% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                   97.4%    60.5   2026-01-05    4% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>   41.0%    49.8   2026-01-05    3% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>   41.0%    49.7   2026-01-05    3% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>        4.2%    47.5   2026-01-05    2% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>   53.0%    47.7   2026-01-05    2% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>   35.3%    49.1   2026-01-05    1% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>       6.7%    60.9   2026-01-05    1% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     56.8%    56.6   2026-08-27   16% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         56.1%    61.9   2026-08-27   10% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             5.0%    48.9   2026-08-27    1% ▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   42.6%    56.0   2025-12-16    3% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         56.1%    61.9   2026-08-27    9% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             5.0%    48.8   2026-08-27    1% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   42.6%    55.9   2025-12-16    3% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          66.3%    60.0   2025-06-14    2% ▇
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1083.3    52.0   2026-05-10    5% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   50.2%    56.1   2026-05-02    4% ▇
 <a name="speakleash-cptub"></a>SpeakLeash CPTUB        <a href="https://huggingface.co/spaces/speakleash/cptu_bench/blob/7f981eb09374a686f238138b61e8ba8744251991/data.json">CPTUB average (SpeakLeash, 0-…</a>   61.2%    44.9   2026-08-11    3% ▇
-<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   26.6%    47.5   2025-10-02    3% ▇
+<a name="inception-leaderboards-space"></a>Inception Arabic/Hind…  <a href="https://huggingface.co/spaces/inception42/Leaderboards/blob/bef41ddf1f6c39bb3a20ad13e518e28e4f2654fc/assets/results/aragen_v3_results.json">AraGen-v3 3C3H score (Incepti…</a>   26.6%    47.6   2025-10-02    3% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   40.0%    57.6   2025-06-03    2% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   78.3%    52.4   2025-05-01    2% ▇
 <a name="open-persian-llm-leaderboard"></a>Open Persian LLM Lead…  <a href="https://huggingface.co/spaces/opll-org/Open-Persian-LLM-Leaderboard/blob/0167a4aa7f90054c5d24c3ec8fd2ea89f0a60365/leaderboard_data.jsonl">Open Persian LLM Leaderboard …</a>   55.0%    46.7   2026-09-19    2% ▇

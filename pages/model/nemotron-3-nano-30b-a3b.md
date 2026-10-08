@@ -20,7 +20,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2603.19220v2">IMO-AnswerBench (lab)</a>            70.4%    55.3   2026-03-22    4% ▇
                         <a href="https://arxiv.org/html/2603.19220v2">LiveCodeBench Pro 2025Q2 (Med…</a>    3.5%    44.1   2026-03-22    3% ▇
                         <a href="https://arxiv.org/html/2603.19220v2">CL-bench (lab)</a>                   12.0%    58.1   2026-03-22    2% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1313.5    53.7   2026-10-02   22% ▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1313.5    53.8   2026-10-02   21% ▇▇▇
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>   93.0%    61.0   2026-04-17   11% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>   69.2%    54.1   2026-04-17   10% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>   51.1%    56.9   2026-05-02   11% ▇

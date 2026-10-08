@@ -28,7 +28,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MMLU (lab)</a>                      42.3%    27.2   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">BoolQ (lab)</a>                     69.4%    25.8   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">MBPP (lab)</a>                      29.2%    29.9   2024-04-19    1% ▇
-                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                 71.4%    32.5   2024-04-19    1% ▇
+                        <a href="https://arxiv.org/html/2403.08295v4#S3.T6">HellaSwag (lab)</a>                 71.4%    32.6   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">ARC Easy (lab)</a>                  73.2%    32.1   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">AGIEval English (Gemma report…</a>  24.2%    26.3   2024-04-19    1% ▇
                         <a href="https://arxiv.org/html/2403.08295v4#S3.T6">Natural Questions (closed boo…</a>  12.5%    27.0   2024-04-19    1% ▇
@@ -38,7 +38,7 @@ source                  test                            score  implies  date    
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       22.0%    30.4   2024-03-28   14% ▇▇
                         <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               12.8%    27.9   2024-03-28    6% ▇
 <a name="paper-2405.04324v1"></a>Granite Code Models: …  <a href="https://arxiv.org/html/2405.04324v1">HumanEvalSynthesize (HumanEva…</a>  17.2%    25.9   2024-05-07    5% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  10.9%    28.6   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  10.9%    28.7   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>   1.9%    23.4   2024-05-07    1% ▇
 <a name="paper-2406.11409v2"></a>CodeGemma: Open Code …  <a href="https://arxiv.org/html/2406.11409v2">HumanEval (lab)</a>                 22.0%    30.5   2024-06-19    4% ▇
                         <a href="https://arxiv.org/html/2406.11409v2">MBPP (lab)</a>                      29.2%    27.2   2024-06-19    2% ▇

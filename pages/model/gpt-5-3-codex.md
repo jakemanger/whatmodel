@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-02 · closed weights
 
-**score 70.5** ±1.7 · #42 of 551 · from 6 benchmark results across 2 sources
+**score 70.5** ±1.6 · #42 of 551 · from 6 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">OSWorld-Verified (lab)</a>          64.7%    70.8   2026-02-05   10% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">Terminal-Bench 2.0 (lab)</a>        77.3%    76.8   2026-02-05   10% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-3-codex">SWE-bench Pro (lab)</a>             56.8%    70.3   2026-02-05    6% ▇
-<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    69.1   2026-02-25   31% ▇▇▇▇
+<a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>              74.8%    69.1   2026-02-25   32% ▇▇▇▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 70.5
 </pre>

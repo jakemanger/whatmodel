@@ -6,7 +6,7 @@
 
 DeepSeek · released 2025-09 · 671B params (37B active) · mit
 
-**score 64.6** ±1.0 · #101 of 551 · from 13 benchmark results across 5 sources
+**score 64.5** ±1.0 · #103 of 551 · from 13 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -15,20 +15,20 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="primeintellect-intellect3-card-eval"></a>Prime Intellect INTEL…  <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">GPQA Diamond</a>                     81.4%    64.8   2025-11-27   19% ▇▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                        88.1%    64.8   2025-11-27    8% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2024</a>                        88.1%    64.7   2025-11-27    8% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">AIME 2025</a>                        84.7%    64.1   2025-11-27    8% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>             17.9%    65.4   2025-11-27    6% ▇
-                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                         84.6%    67.3   2025-11-27    5% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">Humanity's Last Exam</a>             17.9%    65.3   2025-11-27    6% ▇
+                        <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MMLU-Pro</a>                         84.6%    67.2   2025-11-27    5% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">LiveCodeBench v6 (Aug 2024–Ma…</a>   71.6%    66.3   2025-11-27    3% ▇
                         <a href="https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/README.md#evaluation">MATH-500</a>                         96.8%    65.9   2025-11-27    1% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1271.8    60.6   2026-10-01   16% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1424.9    65.9   2026-10-02   12% ▇
 <a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   74.2%    66.4   2025-10-03   18% ▇▇
-<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   64.1%    62.2   2025-10-14    3% ▇
+<a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   64.1%    62.1   2025-10-14    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   95.4%    52.9   2025-10-16    0% ▇
                         <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   94.7%   220.7   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 0% ▇
-                        weighted average                        = 64.6
+                        weighted average                        = 64.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -39,8 +39,8 @@ prior                   pull toward the middle                    50.0          
 
 <pre>
 download                      size  score
-4-bit fp8 · nvidia only  ~689.48GB   64.6
-4-bit fp8 · nvidia only  ~689.48GB   64.6
+4-bit fp8 · nvidia only  ~689.48GB   64.5
+4-bit fp8 · nvidia only  ~689.48GB   64.5
 </pre>
 
 ```sh

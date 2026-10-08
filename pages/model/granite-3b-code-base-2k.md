@@ -20,7 +20,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  19.3%    37.1   2024-05-07   12% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I (lab)</a>                30.6%    30.6   2024-05-07   10% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O (lab)</a>                31.4%    30.6   2024-05-07    9% ▇
-<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  33.4%    16.4   2026-04-17    3% ▇
+<a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  33.4%    16.5   2026-04-17    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇
                         weighted average                       = 34.0
 </pre>

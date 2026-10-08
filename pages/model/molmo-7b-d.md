@@ -20,7 +20,7 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 10.2%    27.5   2024-10-10    5% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               57.1%    31.8   2024-10-10    4% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                24.3%    17.0   2024-10-10    2% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      12.3%    -3.9   2024-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      12.3%    -4.0   2024-10-10    1% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   27.0%  -812.9   2024-10-10    0% ▇
 <a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>                                      72.6%    47.8   2026-04-02    7% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                                          88.5%    42.9   2026-04-02    7% ▇
@@ -29,8 +29,8 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         70.7%    46.6   2026-04-02    4% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         85.6%    56.6   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>                                51.6%    36.7   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           93.2%    73.2   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             81.7%    66.5   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           93.2%    73.3   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             81.7%    66.6   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             84.1%   165.7   2026-04-02    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                            993.8    40.4   2026-10-02   21% ▇▇▇
 <a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1056.0    53.1   2024-09-25    2% ▇

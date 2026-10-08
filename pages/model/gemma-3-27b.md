@@ -14,12 +14,12 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>               42.4%    49.0   2026-07-02    4% ▇
+<a name="gemma4-report"></a>Gemma Team              <a href="https://arxiv.org/html/2607.02770v1#S2.T5">GPQA Diamond (lab)</a>               42.4%    48.9   2026-07-02    4% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMLU-Pro (lab)</a>                   67.6%    54.3   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">MMMLU (lab)</a>                      70.7%    50.9   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – airline (lab)</a>             39.0%    48.7   2026-07-02    2% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">InfographicVQA (lab)</a>             70.6%    50.7   2026-07-02    2% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                   49.7%    50.9   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MMMU Pro (lab)</a>                   49.7%    50.8   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T6">MATH-Vision (lab)</a>                46.0%    45.0   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFBench (lab)</a>                    32.0%    45.8   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">LiveCodeBench v6 (Feb–May 202…</a>   29.1%    43.2   2026-07-02    1% ▇
@@ -30,12 +30,12 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – telecom (lab)</a>              3.1%    40.9   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">IFEval (lab)</a>                     90.4%    38.4   2026-07-02    1% ▇
                         <a href="https://arxiv.org/html/2607.02770v1#S2.T5">Tau2 – retail (lab)</a>               6.6%    36.3   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>         36.5%    46.1   2026-07-02    1% ▇
-                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                  20.8%    24.4   2026-07-02    0% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T6">OmniDocBench 1.5 ↓ (lab)</a>         36.5%    46.0   2026-07-02    1% ▇
+                        <a href="https://arxiv.org/html/2607.02770v1#S2.T5">AIME 2026 (lab)</a>                  20.8%    24.3   2026-07-02    0% ▇
 <a name="gap-google-gemma3"></a>Google DeepMind Gemma…  <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIG-Bench Hard (lab)</a>             87.6%    53.8   2026-09-25    3% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">LiveCodeBench (version unspec…</a>   29.7%    52.9   2026-09-25    2% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">HumanEval (lab)</a>                  87.8%    51.1   2026-09-25    1% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   10.0%    53.9   2026-09-25    1% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">SimpleQA (lab)</a>                   10.0%    53.8   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">Global-MMLU-Lite (lab)</a>           75.1%    56.1   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">GSM8K (lab)</a>                      95.9%    52.8   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">BIRD-SQL (dev) (lab)</a>             54.4%    54.5   2026-09-25    1% ▇
@@ -43,18 +43,18 @@ source                  test                             score  implies  date   
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MBPP (lab)</a>                       74.4%    51.1   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">FACTS Grounding (lab)</a>            74.9%    50.3   2026-09-25    1% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MMMU (val) (lab)</a>                 64.9%    55.8   2026-09-25    0% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     86.6%    45.1   2026-09-25    0% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">DocVQA (lab)</a>                     86.6%    45.0   2026-09-25    0% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">MathVista (testmini) (lab)</a>       67.6%    56.2   2026-09-25    0% ▇
-                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    65.1%    23.5   2026-09-25    0% ▇
+                        <a href="https://ai.google.dev/gemma/docs/core/model_card_3">TextVQA (lab)</a>                    65.1%    23.4   2026-09-25    0% ▇
                         <a href="https://ai.google.dev/gemma/docs/core/model_card_3">ChartQA (lab)</a>                    78.0%    54.5   2026-09-25    0% ▇
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#math_level_5.csv">MATH level 5</a>                     74.0%    57.1   2025-03-13    7% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                     47.7%    53.2   2026-08-27    5% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>         22.5%    55.0   2026-08-27    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>             0.0%    46.1   2026-08-27    0% ▇
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard</a>                   83.7%    53.8   2025-10-08    3% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             81.8%    52.0   2025-10-08    3% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MMLU</a>                             81.8%    52.1   2025-10-08    3% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlled</a>   63.4%    57.2   2025-10-08    2% ▇
-                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   63.9%    47.9   2025-10-08    1% ▇
+                        <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2</a>                   63.9%    48.0   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K</a>                            91.1%    51.1   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">MATH (subset unspecified)</a>        76.2%    57.0   2025-10-08    1% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">PopQA</a>                            30.9%    48.2   2025-10-08    1% ▇
@@ -74,7 +74,7 @@ source                  test                             score  implies  date   
 <a name="mimic-cdm-leaderboard"></a>MIMIC Clinical Decisi…  <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM full information (4…</a>   75.5%    50.5   2025-07-04    1% ▇
                         <a href="https://huggingface.co/spaces/MIMIC-CDM/leaderboard/blob/43e1ef313f61a726cfa30655284333ce7cfa641c/data/leaderboards.json">MIMIC-CDM clinical decision m…</a>   70.5%    54.5   2025-07-04    1% ▇
 <a name="webapp1k-leaderboard"></a>WebApp1K models leade…  <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results.csv">WebApp1K-React pass@1 (onekq-…</a>   65.5%    54.4   2025-03-16    1% ▇
-                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   19.8%    42.8   2025-03-14    1% ▇
+                        <a href="https://huggingface.co/spaces/onekq-ai/WebApp1K-models-leaderboard/blob/f05bc19c75983e09e6c3198ff13e28c8c9362ff0/results_duo.csv">WebApp1K-Duo-React pass@1 (on…</a>   19.8%    42.9   2025-03-14    1% ▇
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   29.5%    47.9   2025-12-16    1% ▇
                         <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-06-14/score/data_overall.csv">BFCL v3</a>                          59.1%    54.4   2025-06-14    1% ▇
 <a name="card2-google-gemma-4-31b-it"></a>google/gemma-4-31B-it…  <a href="https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md">τ²-bench aggregate (lab)</a>         16.2%    43.5   2026-07-20    2% ▇

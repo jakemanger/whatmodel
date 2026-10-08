@@ -17,17 +17,17 @@ source                  test                             score  implies  date   
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1321.8    54.7   2026-10-02   34% ▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>  1111.7    53.5   2026-10-02   26% ▇▇▇
 <a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T6">InfographicVQA (lab)</a>             80.1%    49.7   2026-04-02    6% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                 53.0%    45.3   2026-04-02    5% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MMMU (val) (lab)</a>                 53.0%    45.2   2026-04-02    5% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">CountBench (lab)</a>                 93.7%    51.4   2026-04-02    5% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                77.6%    52.1   2026-04-02    4% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">DocVQA (lab)</a>                     93.2%    48.0   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                87.0%    58.6   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.5%    70.2   2026-04-02    3% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>       58.9%    44.6   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   35.5%    70.3   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1057.0    65.1   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   43.2%    67.0   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                  95.8%    89.0   2026-04-02    1% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                    85.7%    80.7   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1057.0    65.0   2026-04-02    3% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   43.2%    66.9   2026-04-02    2% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                  95.8%    89.2   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                    85.7%    80.8   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                    86.0%   203.1   2026-04-02    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 54.3

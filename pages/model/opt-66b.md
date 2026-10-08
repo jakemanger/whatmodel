@@ -16,7 +16,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Challenge</a>                   37.2%    36.2   2023-05-31   46% ▇▇▇▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande</a>                      68.7%    34.9   2023-05-31   18% ▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        71.7%    33.3   2023-05-31   14% ▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">ARC Easy</a>                        71.7%    33.4   2023-05-31   14% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA</a>                            78.8%    35.3   2023-05-31    9% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  73.9%    35.5   2023-05-31    6% ▇
                         <a href="https://arxiv.org/html/2304.01373v2">SciQ</a>                            92.6%    33.4   2023-05-31    6% ▇

@@ -19,7 +19,7 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">RWSearch (lab)</a>                  78.8%    71.4   2026-09-25   16% ▇▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">WritingBench (lab)</a>              83.8%    68.7   2026-09-25   13% ▇▇
                         <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IMO-AnswerBench (lab)</a>           81.8%    67.3   2026-09-25    6% ▇
-                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    66.6   2026-09-25    6% ▇
+                        <a href="https://huggingface.co/meituan-longcat/LongCat-2.0/blob/834bf5ffe3047aa9f6cc7a64a9bc068b146b8274/README.md">IFEval (aggregation unspecifi…</a>  90.0%    66.5   2026-09-25    6% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 69.5
 </pre>

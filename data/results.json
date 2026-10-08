@@ -197985,5 +197985,735 @@
     "date": "2025-10-16",
     "note": "Vectara hallucination leaderboard, previous dataset (branch hhem-2.3-old-dataset @9ceb782, Apache-2.0, last updated 16 October 2025), row 'Google Gemma-1.1-2B-it': factual consistency rate 72.2% (hallucination rate 27.8%), answer rate 100.0%, average summary length 66.8 words. HHEM-2.3 judge; the model identity follows the README's API integration details.",
     "source_id": "vectara-hallucination-leaderboard-apache"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "tau3-airline",
+    "score": 0.84,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.5', domain airline, pass^1 = 84.00% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "tau3-retail",
+    "score": 0.7961,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.5', domain retail, pass^1 = 79.61% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "tau3-telecom",
+    "score": 0.9232,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.5', domain telecom, pass^1 = 92.32% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.2474,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.5', domain banking_knowledge, pass^1 = 24.74% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau3-airline",
+    "score": 0.72,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-02-24",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Sonnet 4.5', domain airline, pass^1 = 72.00% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-24. Notes: Evaluated using Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) with extended thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking domain evaluated with terminal-based agentic search retrieval. banking_knowledge re-graded under tau2-bench v1.0.1 grading f",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau3-retail",
+    "score": 0.7237,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-02-24",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Sonnet 4.5', domain retail, pass^1 = 72.37% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-24. Notes: Evaluated using Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) with extended thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking domain evaluated with terminal-based agentic search retrieval. banking_knowledge re-graded under tau2-bench v1.0.1 grading f",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau3-telecom",
+    "score": 0.8487,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-02-24",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Sonnet 4.5', domain telecom, pass^1 = 84.87% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-24. Notes: Evaluated using Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) with extended thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking domain evaluated with terminal-based agentic search retrieval. banking_knowledge re-graded under tau2-bench v1.0.1 grading f",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.2526,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-02-24",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Sonnet 4.5', domain banking_knowledge, pass^1 = 25.26% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-24. Notes: Evaluated using Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) with extended thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking domain evaluated with terminal-based agentic search retrieval. banking_knowledge re-graded under tau2-bench v1.0.1 grading f",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "tau3-airline",
+    "score": 0.825,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-flash_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Flash', domain airline, pass^1 = 82.50% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-flash-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 123. Telecom domain had 20 simulations terminated due to too_many_errors (all scored as 0). Banking domain had 52 simulations terminated due to max_steps ",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "tau3-retail",
+    "score": 0.7675,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-flash_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Flash', domain retail, pass^1 = 76.75% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-flash-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 123. Telecom domain had 20 simulations terminated due to too_many_errors (all scored as 0). Banking domain had 52 simulations terminated due to max_steps ",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "tau3-telecom",
+    "score": 0.9123,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-flash_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Flash', domain telecom, pass^1 = 91.23% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-flash-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 123. Telecom domain had 20 simulations terminated due to too_many_errors (all scored as 0). Banking domain had 52 simulations terminated due to max_steps ",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-flash-preview",
+    "bench": "tau3-banking-v101",
+    "score": 0.2732,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-flash_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-flash_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Flash', domain banking_knowledge, pass^1 = 27.32% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-flash-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 123. Telecom domain had 20 simulations terminated due to too_many_errors (all scored as 0). Banking domain had 52 simulations terminated due to max_steps ",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "tau3-airline",
+    "score": 0.805,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-pro_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Pro', domain airline, pass^1 = 80.50% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-pro-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Infrastructure errors treated as failures (reward 0): 3 in airline, 20 in retail, 2 in telecom. Banking domain had 42 simulations terminated due to max_steps (all",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "tau3-retail",
+    "score": 0.7588,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-pro_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Pro', domain retail, pass^1 = 75.88% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-pro-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Infrastructure errors treated as failures (reward 0): 3 in airline, 20 in retail, 2 in telecom. Banking domain had 42 simulations terminated due to max_steps (all",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "tau3-telecom",
+    "score": 0.9101,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-pro_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Pro', domain telecom, pass^1 = 91.01% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-pro-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Infrastructure errors treated as failures (reward 0): 3 in airline, 20 in retail, 2 in telecom. Banking domain had 42 simulations terminated due to max_steps (all",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-pro-preview",
+    "bench": "tau3-banking-v101",
+    "score": 0.1804,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-pro_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-03-02",
+    "note": "τ²-bench leaderboard submission 'gemini-3-pro_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3 Pro', domain banking_knowledge, pass^1 = 18.04% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-03-02. Notes: Evaluated using vertex_ai/gemini-3-pro-preview with reasoning_effort: high. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Infrastructure errors treated as failures (reward 0): 3 in airline, 20 in retail, 2 in telecom. Banking domain had 42 simulations terminated due to max_steps (all",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "glm-5",
+    "bench": "tau3-airline",
+    "score": 0.825,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'glm-5-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GLM-5', domain airline, pass^1 = 82.50% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using GLM-5 with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Infrastructure errors treated as failures. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, nu",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "glm-5",
+    "bench": "tau3-retail",
+    "score": 0.7368,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'glm-5-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GLM-5', domain retail, pass^1 = 73.68% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using GLM-5 with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Infrastructure errors treated as failures. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, nu",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "glm-5",
+    "bench": "tau3-telecom",
+    "score": 0.8684,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'glm-5-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GLM-5', domain telecom, pass^1 = 86.84% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using GLM-5 with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Infrastructure errors treated as failures. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, nu",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "glm-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.0979,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'glm-5-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GLM-5', domain banking_knowledge, pass^1 = 9.79% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using GLM-5 with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Infrastructure errors treated as failures. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, nu",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "tau3-airline",
+    "score": 0.83,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'gpt-5-2_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.2', domain airline, pass^1 = 83.00% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "tau3-retail",
+    "score": 0.8158,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'gpt-5-2_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.2', domain retail, pass^1 = 81.58% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "tau3-telecom",
+    "score": 0.8969,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'gpt-5-2_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.2', domain telecom, pass^1 = 89.69% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-2",
+    "bench": "tau3-banking-v101",
+    "score": 0.3222,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-2_sierra_2026-02-26/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'gpt-5-2_sierra_2026-02-26' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.2', domain banking_knowledge, pass^1 = 32.22% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "tau3-airline",
+    "score": 0.815,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'qwen3.5-397b-a17b-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Qwen3.5-397B-A17B', domain airline, pass^1 = 81.50% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using Qwen3.5-397B-A17B with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Self-hosted via vLLM. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-arg",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "tau3-retail",
+    "score": 0.8443,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'qwen3.5-397b-a17b-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Qwen3.5-397B-A17B', domain retail, pass^1 = 84.43% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using Qwen3.5-397B-A17B with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Self-hosted via vLLM. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-arg",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "tau3-telecom",
+    "score": 0.9781,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'qwen3.5-397b-a17b-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Qwen3.5-397B-A17B', domain telecom, pass^1 = 97.81% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using Qwen3.5-397B-A17B with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Self-hosted via vLLM. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-arg",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "qwen3-5-397b-a17b",
+    "bench": "tau3-banking-v101",
+    "score": 0.0979,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/qwen3.5-397b-a17b-think_sierra_2026-03-02/submission.json",
+    "by": "independent",
+    "date": "2026-02-27",
+    "note": "τ²-bench leaderboard submission 'qwen3.5-397b-a17b-think_sierra_2026-03-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Qwen3.5-397B-A17B', domain banking_knowledge, pass^1 = 9.79% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort enabled, evaluated 2026-02-27. Notes: Evaluated using Qwen3.5-397B-A17B with thinking enabled. User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Temperature: 1.0, top_p: 0.95. Self-hosted via vLLM. banking_knowledge re-graded under tau2-bench v1.0.1 grading fixes on 2026-07-15 (extra-read logging #329, numeric-arg",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-fable-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.3969,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-fable-5_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "τ²-bench leaderboard submission 'claude-fable-5_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Fable 5', domain banking_knowledge, pass^1 = 39.69% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-07-23. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-6",
+    "bench": "tau3-banking-v101",
+    "score": 0.2732,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-6_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-05-06",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-6_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.6', domain banking_knowledge, pass^1 = 27.32% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-05-06. Notes: Evaluated with reasoning_effort 'max' (the highest effort level this model supports). Retrieval: AllTools (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentional",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-7",
+    "bench": "tau3-banking-v101",
+    "score": 0.4021,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-7_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-7_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.7', domain banking_knowledge, pass^1 = 40.21% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-07-23. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-8",
+    "bench": "tau3-banking-v101",
+    "score": 0.3969,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-8_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-8_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 4.8', domain banking_knowledge, pass^1 = 39.69% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-07-23. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.4871,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-5_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-08-03",
+    "note": "τ²-bench leaderboard submission 'claude-opus-5_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude Opus 5', domain banking_knowledge, pass^1 = 48.71% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-08-03. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-2-5-pro",
+    "bench": "tau3-banking-v101",
+    "score": 0.1366,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-2-5-pro_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'gemini-2-5-pro_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 2.5 Pro', domain banking_knowledge, pass^1 = 13.66% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gemini-3-1-pro",
+    "bench": "tau3-banking-v101",
+    "score": 0.2603,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gemini-3-1-pro-preview_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'gemini-3-1-pro-preview_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Gemini 3.1 Pro Preview', domain banking_knowledge, pass^1 = 26.03% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "glm-5-2",
+    "bench": "tau3-banking-v101",
+    "score": 0.3711,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/glm-5-2_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-24",
+    "note": "τ²-bench leaderboard submission 'glm-5-2_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GLM-5.2', domain banking_knowledge, pass^1 = 37.11% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort xhigh, evaluated 2026-07-24. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-4",
+    "bench": "tau3-banking-v101",
+    "score": 0.3943,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-4_sierra_2026-03-25/submission.json",
+    "by": "independent",
+    "date": "2026-05-06",
+    "note": "τ²-bench leaderboard submission 'gpt-5-4_sierra_2026-03-25' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.4', domain banking_knowledge, pass^1 = 39.43% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort xhigh, evaluated 2026-05-06. Notes: Evaluated with reasoning_effort 'xhigh' (the highest effort level this model supports). Retrieval: AllTools (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intention",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.4459,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-5_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-07-22",
+    "note": "τ²-bench leaderboard submission 'gpt-5-5_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.5', domain banking_knowledge, pass^1 = 44.59% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort xhigh, evaluated 2026-07-22. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5-6-sol",
+    "bench": "tau3-banking-v101",
+    "score": 0.4691,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-6-sol_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-22",
+    "note": "τ²-bench leaderboard submission 'gpt-5-6-sol_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5.6-sol', domain banking_knowledge, pass^1 = 46.91% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort xhigh, evaluated 2026-07-22. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "bench": "tau3-banking-v101",
+    "score": 0.1314,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-1-fast_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'grok-4-1-fast_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Grok 4.1 fast', domain banking_knowledge, pass^1 = 13.14% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "grok-4-20",
+    "bench": "tau3-banking-v101",
+    "score": 0.1804,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-2_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'grok-4-2_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Grok 4.2', domain banking_knowledge, pass^1 = 18.04% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "grok-4-5",
+    "bench": "tau3-banking-v101",
+    "score": 0.4794,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-5_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-24",
+    "note": "τ²-bench leaderboard submission 'grok-4-5_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Grok 4.5', domain banking_knowledge, pass^1 = 47.94% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-07-24. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "grok-4-fast",
+    "bench": "tau3-banking-v101",
+    "score": 0.1572,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/grok-4-fast_sierra_2026-05-05/submission.json",
+    "by": "independent",
+    "date": "2026-05-05",
+    "note": "τ²-bench leaderboard submission 'grok-4-fast_sierra_2026-05-05' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Grok 4 fast', domain banking_knowledge, pass^1 = 15.72% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort high, evaluated 2026-05-05. Notes: Evaluated using AllTools retrieval (BM25 + dense OpenAI text-embedding-3-large + sandboxed shell). User simulator: gpt-5.2 with reasoning_effort: low. 4 trials. Seed: 300. Banking_knowledge domain only — other domains intentionally excluded from this comparison; the AllTools setting standardizes ret",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "inkling",
+    "bench": "tau3-banking-v101",
+    "score": 0.25,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/inkling_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-24",
+    "note": "τ²-bench leaderboard submission 'inkling_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Inkling', domain banking_knowledge, pass^1 = 25.00% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-07-24. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "kimi-k3",
+    "bench": "tau3-banking-v101",
+    "score": 0.3711,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k3_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-24",
+    "note": "τ²-bench leaderboard submission 'kimi-k3_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Kimi K3', domain banking_knowledge, pass^1 = 37.11% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort max, evaluated 2026-07-24. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "muse-spark-1-1",
+    "bench": "tau3-banking-v101",
+    "score": 0.4046,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/muse-spark-1-1_sierra_2026-08-04/submission.json",
+    "by": "independent",
+    "date": "2026-07-23",
+    "note": "τ²-bench leaderboard submission 'muse-spark-1-1_sierra_2026-08-04' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Muse Spark 1.1', domain banking_knowledge, pass^1 = 40.46% (stored /100). tau2-bench version 1.0.1, user simulator gpt-5.2, reasoning effort xhigh, evaluated 2026-07-23. Notes: Banking_knowledge evaluation with AllTools retrieval, GPT-5.2 low-reasoning user simulation, four trials, and seed 300.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "tau2-retail",
+    "score": 0.721,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'claude-3-7-sonnet_anthropic_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude-3.7-Sonnet', domain retail, pass^1 = 72.10% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "tau2-airline",
+    "score": 0.642,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'claude-3-7-sonnet_anthropic_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude-3.7-Sonnet', domain airline, pass^1 = 64.20% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-3-7-sonnet-20250219",
+    "bench": "tau2-telecom",
+    "score": 0.49,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-3-7-sonnet_anthropic_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'claude-3-7-sonnet_anthropic_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'Claude-3.7-Sonnet', domain telecom, pass^1 = 49.00% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "tau2-retail",
+    "score": 0.74,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'gpt-4-1_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-4.1', domain retail, pass^1 = 74.00% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "tau2-airline",
+    "score": 0.56,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'gpt-4-1_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-4.1', domain airline, pass^1 = 56.00% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-4-1",
+    "bench": "tau2-telecom",
+    "score": 0.34,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'gpt-4-1_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-4.1', domain telecom, pass^1 = 34.00% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-4-1-mini",
+    "bench": "tau2-retail",
+    "score": 0.614,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'gpt-4-1-mini_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-4.1-mini', domain retail, pass^1 = 61.40% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-4-1-mini",
+    "bench": "tau2-airline",
+    "score": 0.487,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'gpt-4-1-mini_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-4.1-mini', domain airline, pass^1 = 48.70% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-4-1-mini",
+    "bench": "tau2-telecom",
+    "score": 0.489,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-4-1-mini_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'gpt-4-1-mini_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-4.1-mini', domain telecom, pass^1 = 48.90% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "tau2-retail",
+    "score": 0.8158,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "τ²-bench leaderboard submission 'gpt-5_sierra_2025-08-09' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5', domain retail, pass^1 = 81.58% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-08-09.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "tau2-airline",
+    "score": 0.625,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "τ²-bench leaderboard submission 'gpt-5_sierra_2025-08-09' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5', domain airline, pass^1 = 62.50% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-08-09.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "gpt-5",
+    "bench": "tau2-telecom",
+    "score": 0.9583,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5_sierra_2025-08-09/submission.json",
+    "by": "independent",
+    "date": "2025-08-09",
+    "note": "τ²-bench leaderboard submission 'gpt-5_sierra_2025-08-09' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'GPT-5', domain telecom, pass^1 = 95.83% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-08-09.",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "o4-mini",
+    "bench": "tau2-retail",
+    "score": 0.683,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'o4-mini_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'o4-mini', domain retail, pass^1 = 68.30% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "o4-mini",
+    "bench": "tau2-airline",
+    "score": 0.521,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'o4-mini_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'o4-mini', domain airline, pass^1 = 52.10% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "o4-mini",
+    "bench": "tau2-telecom",
+    "score": 0.502,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/o4-mini_openai_2024-06-20/submission.json",
+    "by": "independent",
+    "date": "2025-06-09",
+    "note": "τ²-bench leaderboard submission 'o4-mini_openai_2024-06-20' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Sierra: model 'o4-mini', domain telecom, pass^1 = 50.20% (stored /100). tau2-bench version 0.1.3, user simulator gpt-4.1-2025-04-14, reasoning effort None, evaluated 2025-06-09. Notes: Original evaluation from tau2-bench paper",
+    "source_id": "tau2-bench-leaderboard-sierra"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "tau-bench-retail",
+    "score": 0.824,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+    "by": "lab",
+    "date": "2025-08-05",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-1_anthropic_2025-01-15' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude Opus 4.1', domain retail, pass^1 = 82.40% (stored /100). tau2-bench version original tau-bench, user simulator None, reasoning effort None, evaluated 2025-08-05. Notes: Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual think",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-opus-4-1-20250805",
+    "bench": "tau-bench-airline",
+    "score": 0.56,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4-1_anthropic_2025-01-15/submission.json",
+    "by": "lab",
+    "date": "2025-08-05",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4-1_anthropic_2025-01-15' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude Opus 4.1', domain airline, pass^1 = 56.00% (stored /100). tau2-bench version original tau-bench, user simulator None, reasoning effort None, evaluated 2025-08-05. Notes: Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual think",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "tau-bench-retail",
+    "score": 0.814,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+    "by": "lab",
+    "date": "2025-05-22",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4_anthropic_2025-05-22' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude Opus 4', domain retail, pass^1 = 81.40% (stored /100). tau2-bench version original tau-bench, user simulator None, reasoning effort None, evaluated 2025-05-22. Notes: Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual think",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-opus-4-20250514",
+    "bench": "tau-bench-airline",
+    "score": 0.596,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-opus-4_anthropic_2025-05-22/submission.json",
+    "by": "lab",
+    "date": "2025-05-22",
+    "note": "τ²-bench leaderboard submission 'claude-opus-4_anthropic_2025-05-22' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude Opus 4', domain airline, pass^1 = 59.60% (stored /100). tau2-bench version original tau-bench, user simulator None, reasoning effort None, evaluated 2025-05-22. Notes: Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual think",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "tau-bench-retail",
+    "score": 0.805,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+    "by": "lab",
+    "date": "2025-05-22",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4_anthropic_2025-05-22' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude Sonnet 4', domain retail, pass^1 = 80.50% (stored /100). tau2-bench version original tau-bench, user simulator None, reasoning effort None, evaluated 2025-05-22. Notes: Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual think",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-20250514",
+    "bench": "tau-bench-airline",
+    "score": 0.6,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4_anthropic_2025-05-22/submission.json",
+    "by": "lab",
+    "date": "2025-05-22",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4_anthropic_2025-05-22' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude Sonnet 4', domain airline, pass^1 = 60.00% (stored /100). tau2-bench version original tau-bench, user simulator None, reasoning effort None, evaluated 2025-05-22. Notes: Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual think",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau2-retail",
+    "score": 0.862,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "by": "lab",
+    "date": "2025-09-29",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_anthropic_2025-10-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude-Sonnet-4.5', domain retail, pass^1 = 86.20% (stored /100). tau2-bench version 0.1.3, user simulator None, reasoning effort None, evaluated 2025-09-29. Notes: Scores were achieved using extended thinking with tool use and a prompt addendum to the Airline and Telecom Agent Policy instructing Claude to better target its known failure modes when using the vanilla prompt. A prompt addendum was also added to the Telecom User prompt to avoid failure modes from ",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau2-airline",
+    "score": 0.7,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "by": "lab",
+    "date": "2025-09-29",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_anthropic_2025-10-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude-Sonnet-4.5', domain airline, pass^1 = 70.00% (stored /100). tau2-bench version 0.1.3, user simulator None, reasoning effort None, evaluated 2025-09-29. Notes: Scores were achieved using extended thinking with tool use and a prompt addendum to the Airline and Telecom Agent Policy instructing Claude to better target its known failure modes when using the vanilla prompt. A prompt addendum was also added to the Telecom User prompt to avoid failure modes from ",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "claude-sonnet-4-5",
+    "bench": "tau2-telecom",
+    "score": 0.98,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/claude-sonnet-4-5_anthropic_2025-10-02/submission.json",
+    "by": "lab",
+    "date": "2025-09-29",
+    "note": "τ²-bench leaderboard submission 'claude-sonnet-4-5_anthropic_2025-10-02' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Anthropic: model 'Claude-Sonnet-4.5', domain telecom, pass^1 = 98.00% (stored /100). tau2-bench version 0.1.3, user simulator None, reasoning effort None, evaluated 2025-09-29. Notes: Scores were achieved using extended thinking with tool use and a prompt addendum to the Airline and Telecom Agent Policy instructing Claude to better target its known failure modes when using the vanilla prompt. A prompt addendum was also added to the Telecom User prompt to avoid failure modes from ",
+    "source_id": "tau2-bench-leaderboard-anthropic"
+  },
+  {
+    "model": "kimi-k2",
+    "bench": "tau2-retail",
+    "score": 0.706,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "by": "lab",
+    "date": "2025-07-28",
+    "note": "τ²-bench leaderboard submission 'kimi-k2_moonshot-ai_2025-07-11' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Moonshot AI: model 'Kimi-k2', domain retail, pass^1 = 70.60% (stored /100). tau2-bench version 0.1.3, user simulator None, reasoning effort None, evaluated 2025-07-28. Notes: Evaluation limited to Pass^1 scores only",
+    "source_id": "tau2-bench-leaderboard-moonshot"
+  },
+  {
+    "model": "kimi-k2",
+    "bench": "tau2-airline",
+    "score": 0.565,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "by": "lab",
+    "date": "2025-07-28",
+    "note": "τ²-bench leaderboard submission 'kimi-k2_moonshot-ai_2025-07-11' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Moonshot AI: model 'Kimi-k2', domain airline, pass^1 = 56.50% (stored /100). tau2-bench version 0.1.3, user simulator None, reasoning effort None, evaluated 2025-07-28. Notes: Evaluation limited to Pass^1 scores only",
+    "source_id": "tau2-bench-leaderboard-moonshot"
+  },
+  {
+    "model": "kimi-k2",
+    "bench": "tau2-telecom",
+    "score": 0.658,
+    "source": "https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json",
+    "by": "lab",
+    "date": "2025-07-28",
+    "note": "τ²-bench leaderboard submission 'kimi-k2_moonshot-ai_2025-07-11' (sierra-research/tau2-bench @4ce7c03, MIT), submitted by Moonshot AI: model 'Kimi-k2', domain telecom, pass^1 = 65.80% (stored /100). tau2-bench version 0.1.3, user simulator None, reasoning effort None, evaluated 2025-07-28. Notes: Evaluation limited to Pass^1 scores only",
+    "source_id": "tau2-bench-leaderboard-moonshot"
   }
 ]

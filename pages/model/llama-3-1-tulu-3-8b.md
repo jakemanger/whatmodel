@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                             score  implies  date        weight
 <a name="paper-2501.00656v3"></a>2 OLMo 2 Furious        <a href="https://arxiv.org/html/2501.00656v3">BIG-Bench Hard (lab)</a>             69.0%    46.6   2025-10-08   23% ▇▇▇
-                        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       68.2%    44.2   2025-10-08   19% ▇▇
+                        <a href="https://arxiv.org/html/2501.00656v3">MMLU (lab)</a>                       68.2%    44.2   2025-10-08   20% ▇▇
                         <a href="https://arxiv.org/html/2501.00656v3">GSM8K (lab)</a>                      87.6%    48.0   2025-10-08   11% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">AlpacaEval 2 length-controlle…</a>   34.0%    45.9   2025-10-08    9% ▇
                         <a href="https://arxiv.org/html/2501.00656v3">TruthfulQA MC2 (lab)</a>             55.0%    40.1   2025-10-08    7% ▇

@@ -6,7 +6,7 @@
 
 Z.ai · released 2025-12 · 106B params · mit
 
-**score 59.3** ±1.6 · #163 of 551 · from 9 benchmark results across 2 sources
+**score 59.3** ±1.7 · #162 of 551 · from 9 benchmark results across 2 sources
 
 ## How the score was worked out
 
@@ -22,7 +22,7 @@ source                  test                             score  implies  date   
                         <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">AndroidWorld (lab)</a>               57.0%    58.5   2025-12-08    5% ▇
                         <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">MMMU (val) (lab)</a>                 76.0%    63.3   2025-12-08    5% ▇
                         <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">OCRBench (lab)</a>                   86.5%    56.0   2025-12-08    5% ▇
-                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   63.2%    54.4   2025-12-08    3% ▇
+                        <a href="https://github.com/zai-org/GLM-V/blob/9013a771cfe578d8a0c7dfc4548156f3a23e4890/resources/bench_46v.jpeg">CharXiv (reasoning questions)…</a>   63.2%    54.5   2025-12-08    3% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 59.3
 </pre>

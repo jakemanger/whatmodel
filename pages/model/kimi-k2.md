@@ -6,7 +6,7 @@
 
 Moonshot AI · released 2025-07 · 1000B params (32B active) · modified-mit
 
-**score 64.3** ±1.4 · #107 of 551 · from 7 benchmark results across 7 sources
+**score 64.2** ±1.4 · #106 of 551 · from 7 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -14,20 +14,31 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   59.1%    62.7   2025-07-17   40% ▇▇▇▇▇
+<a name="aider-polyglot-runs"></a>Aider polyglot benchm…  <a href="https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/_data/polyglot_leaderboard.yml">Aider polyglot (225 exercises…</a>   59.1%    62.7   2025-07-17   41% ▇▇▇▇▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1418.2    65.1   2026-10-02   26% ▇▇▇
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>  1311.0    69.6   2026-05-10   14% ▇▇
-<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   59.1%    65.4   2025-12-16   10% ▇
+<a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   59.1%    65.3   2025-12-16   10% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   81.8%    54.6   2025-09-01    5% ▇
 <a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   53.0%    65.8   2025-11-18    4% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/9ceb7826f56f6cdafbbf92c85b3980a7718e66f0/README.md">Vectara hallucination leaderb…</a>   98.9%    77.9   2025-10-16    1% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
-                        weighted average                        = 64.3
+                        weighted average                        = 64.2
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
 
 <sub>Licences: Aider polyglot benchmark runs ([Apache-2.0](../../licenses/aider-polyglot-runs-Apache-2.0.txt)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · Berkeley Function Calling Leaderboard result archive ([Apache-2.0](../../licenses/bfcl-result-archive-v4-Apache-2.0.txt)) · Open Portuguese LLM Leaderboard ([Apache-2.0](../../licenses/hf-leaderboard-spaces-Apache-2.0.txt)) · Galileo Agent Leaderboard ([Apache-2.0](../../licenses/galileo-agent-leaderboard-Apache-2.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+
+<details><summary>Not counted (3)</summary>
+
+<pre>
+source                  test              score  why
+τ²-bench leaderboard:…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json">τ²-bench Retail</a>   70.6%  too few models have it yet
+τ²-bench leaderboard:…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json">τ²-bench Airline</a>  56.5%  too few models have it yet
+τ²-bench leaderboard:…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/kimi-k2_moonshot-ai_2025-07-11/submission.json">τ²-bench Telecom</a>  65.8%  too few models have it yet
+</pre>
+
+</details>
 
 ## How to run it
 
@@ -37,9 +48,9 @@ api (Novita AI) · $1.00/M blended · $0.57 in / $2.3 out per 1M tokens · [novi
 
 <pre>
 download              size  score
-4-bit ud-q4_k_xl  ~600.5GB   64.3
-2-bit ud-q2_k_xl  ~300.5GB   64.3
-1-bit ud-iq1_s    ~150.5GB   64.3
+4-bit ud-q4_k_xl  ~600.5GB   64.2
+2-bit ud-q2_k_xl  ~300.5GB   64.2
+1-bit ud-iq1_s    ~150.5GB   64.2
 </pre>
 
 ```sh

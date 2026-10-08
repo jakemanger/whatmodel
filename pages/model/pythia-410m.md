@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="paper-2304.01373v2"></a>Pythia: A Suite for A…  <a href="https://arxiv.org/html/2304.01373v2">ARC Easy (lab)</a>                  52.1%    17.6   2023-05-31   25% ▇▇▇
-                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      81.1%    16.9   2023-05-31   25% ▇▇▇
+                        <a href="https://arxiv.org/html/2304.01373v2">SciQ (lab)</a>                      81.1%    17.0   2023-05-31   25% ▇▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">LAMBADA (OpenAI version), las…</a>  51.6%    19.7   2023-05-31   15% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">PIQA (lab)</a>                      66.8%    15.7   2023-05-31   14% ▇▇
                         <a href="https://arxiv.org/html/2304.01373v2">WinoGrande (lab)</a>                53.7%    14.8   2023-05-31   12% ▇

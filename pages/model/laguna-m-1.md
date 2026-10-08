@@ -6,7 +6,7 @@
 
 Poolside · released 2026-04 · 225B params (23B active) · apache-2.0
 
-**score 64.0** ±1.8 · #113 of 551 · from 4 benchmark results across 2 sources
+**score 64.0** ±1.8 · #112 of 551 · from 4 benchmark results across 2 sources
 
 ## How the score was worked out
 

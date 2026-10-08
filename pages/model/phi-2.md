@@ -18,10 +18,10 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">HumanEval+</a>                      45.1%    39.4   2024-12-26   23% ▇▇▇
                         <a href="https://github.com/evalplus/evalplus.github.io/blob/87418456d3a8c2bc6265f24ff91d2dd0e7993f4b/results.json">MBPP+</a>                           54.2%    41.3   2024-12-26    3% ▇
 <a name="paper-2403.19114v1"></a>Top Leaderboard Ranki…  <a href="https://arxiv.org/html/2403.19114v1">HumanEval</a>                       50.0%    39.8   2024-03-28   18% ▇▇
-                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               31.8%    39.3   2024-03-28    8% ▇
-<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  43.4%    40.2   2024-06-03    5% ▇
+                        <a href="https://arxiv.org/html/2403.19114v1">EvoEval (overall)</a>               31.8%    39.4   2024-03-28    8% ▇
+<a name="paper-2404.06395v3"></a>MiniCPM: Unveiling th…  <a href="https://arxiv.org/html/2404.06395v3">BIG-Bench Hard</a>                  43.4%    40.3   2024-06-03    5% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">ARC Challenge</a>                   71.3%    41.6   2024-06-03    4% ▇
-                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            52.7%    36.0   2024-06-03    2% ▇
+                        <a href="https://arxiv.org/html/2404.06395v3">MMLU</a>                            52.7%    36.0   2024-06-03    3% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">HumanEval</a>                       47.6%    45.1   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">GSM8K</a>                           57.2%    46.2   2024-06-03    2% ▇
                         <a href="https://arxiv.org/html/2404.06395v3">MBPP</a>                            55.0%    44.8   2024-06-03    1% ▇

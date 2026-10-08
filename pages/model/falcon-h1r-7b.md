@@ -20,8 +20,8 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2601.02346v1">MMLU-Pro (lab)</a>                  72.1%    56.7   2026-09-25   12% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">MATH-500 (lab)</a>                  97.4%    60.9   2026-09-25    8% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">HMMT 2025 (edition unspecifie…</a>  64.9%    61.5   2026-09-25    8% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    60.5   2026-09-25    7% ▇
-                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    59.3   2026-09-25    4% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">Humanity's Last Exam (lab)</a>      11.1%    60.4   2026-09-25    7% ▇
+                        <a href="https://arxiv.org/html/2601.02346v1">LiveCodeBench v6 (window unsp…</a>  68.6%    59.2   2026-09-25    4% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">IFBench (aggregation unspecif…</a>  53.4%    59.4   2026-09-25    3% ▇
                         <a href="https://arxiv.org/html/2601.02346v1">SciCode main problems (lab)</a>      3.9%    50.1   2026-09-25    3% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

@@ -6,7 +6,7 @@
 
 Mistral · released 2025-12 · 8.92B params · apache-2.0
 
-**score 52.6** ±0.9 · #238 of 551 · from 16 benchmark results across 5 sources
+**score 52.5** ±0.9 · #238 of 551 · from 16 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -28,10 +28,10 @@ source                  test                            score  implies  date    
 <a name="euroeval-leaderboards"></a>EuroEval leaderboards   <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval Life in the UK (Engl…</a>  89.7%    57.9   2026-04-17    6% ▇
                         <a href="https://github.com/EuroEval/leaderboards/blob/1a77f1d2f8ba1ba05ab73287fb090d76bf41b2e0/leaderboards/english_all.csv">EuroEval HellaSwag (English),…</a>  73.1%    56.8   2026-04-17    5% ▇
 <a name="paper-2605.01417v1"></a>Medmarks: A Comprehen…  <a href="https://arxiv.org/html/2605.01417v1">Medmarks-V weighted mean win …</a>  44.4%    51.3   2026-05-02    6% ▇
-<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  50.9%    51.5   2026-09-25    5% ▇
+<a name="card-mistralai-ministral-3-14b-instruct-2512"></a>mistralai/Ministral-3…  <a href="https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512/blob/29439f81c2be264d8d393273f99e7db9c0961120/README.md">Arena-Hard (version/judge uns…</a>  50.9%    51.4   2026-09-25    5% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>  78.3%  -319.4   2026-09-22    0% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 52.6
+                        weighted average                       = 52.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -55,8 +55,8 @@ api (Mistral) · $0.15/M blended · $0.15 in / $0.15 out per 1M tokens · [docs.
 
 <pre>
 download         size  score
-4-bit q4_k_m  ~5.85GB   52.6
-8-bit q8_0    ~11.2GB   52.6
+4-bit q4_k_m  ~5.85GB   52.5
+8-bit q8_0    ~11.2GB   52.5
 </pre>
 
 ```sh

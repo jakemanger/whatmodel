@@ -28,7 +28,7 @@ source                  test                            score  implies  date    
 <a name="paper-2402.00838v4"></a>OLMo: Accelerating th…  <a href="https://arxiv.org/html/2402.00838v4">ARC Challenge</a>                   42.8%    30.5   2024-06-07   12% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">OpenBookQA</a>                      49.4%    32.3   2024-06-07    7% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">WinoGrande</a>                      64.7%    29.9   2024-06-07    5% ▇
-                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        68.4%    32.8   2024-06-07    4% ▇
+                        <a href="https://arxiv.org/html/2402.00838v4">ARC Easy</a>                        68.4%    32.8   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">HellaSwag</a>                       70.3%    30.9   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">SciQ</a>                            92.9%    31.7   2024-06-07    3% ▇
                         <a href="https://arxiv.org/html/2402.00838v4">BoolQ</a>                           68.6%    28.3   2024-06-07    3% ▇

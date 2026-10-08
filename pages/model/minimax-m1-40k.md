@@ -15,15 +15,15 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                            score  implies  date        weight
 <a name="card-minimaxai--minimax-m1-80k"></a>MiniMaxAI/MiniMax-M1-…  <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">GPQA Diamond (lab)</a>              69.2%    59.7   2025-06-16   18% ▇▇
-                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (lab)</a>                 74.6%    59.1   2025-06-16   12% ▇
+                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2025 (lab)</a>                 74.6%    59.0   2025-06-16   12% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">AIME 2024 (lab)</a>                 83.3%    59.9   2025-06-16   12% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SWE-bench Verified (lab)</a>        55.6%    59.4   2025-06-16    9% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MMLU-Pro (lab)</a>                  80.6%    60.5   2025-06-16    9% ▇
-                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (lab)</a>                  96.0%    60.7   2025-06-16    8% ▇
+                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MATH-500 (lab)</a>                  96.0%    60.8   2025-06-16    8% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">SimpleQA (lab)</a>                  17.9%    59.0   2025-06-16    6% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LongBench v2 (lab)</a>              61.0%    64.1   2025-06-16    5% ▇
-                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>       7.2%    53.1   2025-06-16    5% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">ZebraLogic (lab)</a>                80.1%    58.2   2025-06-16    5% ▇
+                        <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">Humanity's Last Exam (lab)</a>       7.2%    53.0   2025-06-16    5% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">LiveCodeBench 2024-08–2025-05…</a>  62.3%    59.5   2025-06-16    5% ▇
                         <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k/blob/8d1494b1a260e22040d5b9b2eb332eb44500b34d/README.md">MultiChallenge (lab)</a>            44.7%    58.0   2025-06-16    4% ▇
 prior                   pull toward the middle                   50.0                 1% ▇

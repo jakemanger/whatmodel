@@ -15,7 +15,7 @@ Each result below implies a score on its own, after adjusting for how hard that 
 <pre>
 source                  test                    score  implies  date        weight
 <a name="llava-model-zoo-apache"></a>LLaVA repository mode…  <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">MMMU (val) (lab)</a>        36.2%    24.6   2024-01-30   67% ▇▇▇▇▇▇▇▇
-                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>           67.1%    29.7   2024-01-30   11% ▇
+                        <a href="https://github.com/haotian-liu/LLaVA/blob/c121f0432da27facab705978f83c4ada465e46fd/docs/MODEL_ZOO.md">TextVQA (lab)</a>           67.1%    29.6   2024-01-30   11% ▇
 prior                   pull toward the middle           50.0                22% ▇▇▇
                         weighted average               = 30.7
 </pre>

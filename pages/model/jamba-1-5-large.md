@@ -19,7 +19,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">HumanEval (lab)</a>                  71.3%    47.7   2024-08-22    8% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU (lab)</a>                       80.0%    51.1   2024-08-22    7% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">MMLU-Pro (lab)</a>                   48.3%    48.4   2024-08-22    7% ▇
-                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   36.9%    47.9   2024-08-22    7% ▇
+                        <a href="https://arxiv.org/html/2408.12570v1#S6.T2">GPQA (subset unspecified) (la…</a>   36.9%    47.8   2024-08-22    7% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T3">Arena-Hard (version/judge uns…</a>   65.4%    53.5   2024-08-22    5% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">IFEval (aggregation unspecifi…</a>   81.5%    50.4   2024-08-22    2% ▇
                         <a href="https://arxiv.org/html/2408.12570v1#S6.T2">ARC Challenge (lab)</a>              93.0%    55.7   2024-08-22    2% ▇

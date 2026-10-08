@@ -6,7 +6,7 @@
 
 OpenAI · released 2026-03 · closed weights
 
-**score 73.6** ±0.5 · #19 of 551 · from 41 benchmark results across 8 sources
+**score 73.6** ±0.5 · #19 of 551 · from 42 benchmark results across 9 sources
 
 ## How the score was worked out
 
@@ -16,30 +16,30 @@ Each result below implies a score on its own, after adjusting for how hard that 
 source                  test                                 score  implies  date        weight
 <a name="epoch-internal"></a>Epoch AI                <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tier_4_v2.csv">FrontierMath tier 4 v2</a>               49.0%    73.7   2026-06-11   14% ▇▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#frontiermath_tiers_1_3_v2.csv">FrontierMath tiers 1–3 v2</a>            78.6%    74.6   2026-06-11   13% ▇▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    25.4%    73.1   2026-06-25    5% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%    73.8   2026-07-24    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#ebr_bench.csv">EBR-bench (Epoch)</a>                    25.4%    73.2   2026-06-25    5% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#mystery_game_puzzles.csv">Mystery Game Puzzles (Epoch)</a>         37.0%    73.8   2026-07-24    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#furniture_assembly.csv">Furniture Assembly (Epoch)</a>           37.5%    72.6   2026-09-10    4% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#chess_puzzles.csv">Chess Puzzles (Epoch)</a>                44.0%    74.8   2026-03-11    3% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#swe_bench_verified.csv">SWE-bench Verified</a>                   76.9%    69.9   2026-03-06    2% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#gpqa_diamond.csv">GPQA Diamond</a>                         93.3%    73.2   2026-03-06    2% ▇
-                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    45.1%    70.4   2026-08-27    1% ▇
+                        <a href="https://epoch.ai/data/benchmark_data.zip#simpleqa_verified.csv">SimpleQA Verified</a>                    45.1%    70.5   2026-08-27    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#otis_mock_aime_2024_2025.csv">OTIS mock AIME 2024–2025</a>             95.3%    70.8   2026-03-06    1% ▇
                         <a href="https://epoch.ai/data/benchmark_data.zip#mirrorcode.csv">MirrorCode (Epoch)</a>                   15.6%    67.2   2026-08-10    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0105 IPS    72.6   2026-10-02    4% ▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1464.9    68.5   2026-10-01    4% ▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>           1464.9    68.5   2026-10-01    4% ▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  0.0105 IPS    72.7   2026-10-02    4% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                      1475.2    71.3   2026-10-02    3% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>      1283.8    72.6   2026-10-02    2% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/search_style_control/latest-00000-of-00001.parquet">Arena search systems (style c…</a>      1194.5    69.4   2026-08-24    1% ▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/document_style_control/latest-00000-of-00001.parquet">Arena document (style control…</a>      1470.1    72.5   2026-09-13    1% ▇
 <a name="first-party-openai-scores"></a>OpenAI vendor-reporte…  <a href="https://openai.com/index/introducing-gpt-5-4">BrowseComp (lab)</a>                     82.7%    72.9   2026-03-05    2% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           39.8%    75.5   2026-03-05    2% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam (lab)</a>           39.8%    75.6   2026-03-05    2% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">MMMU Pro (lab)</a>                       81.2%    74.4   2026-03-05    2% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Toolathlon (Tool Decathlon) (…</a>       54.6%    75.1   2026-03-05    2% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">τ²-bench Telecom (lab)</a>               92.8%    76.4   2026-04-23    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-5">τ²-bench Telecom (lab)</a>               92.8%    74.5   2026-04-23    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Humanity's Last Exam with too…</a>       52.1%    75.3   2026-03-05    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">OSWorld-Verified (lab)</a>               75.0%    76.5   2026-03-05    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">Terminal-Bench 2.0 (lab)</a>             75.1%    75.5   2026-03-05    1% ▇
-                        <a href="https://openai.com/index/introducing-gpt-5-5">CyberGym (lab)</a>                       79.0%    76.7   2026-04-23    1% ▇
+                        <a href="https://openai.com/index/introducing-gpt-5-5">CyberGym (lab)</a>                       79.0%    76.6   2026-04-23    1% ▇
                         <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench Hard (lab)</a>               30.3%    75.0   2026-07-09    1% ▇
                         <a href="https://openai.com/index/introducing-gpt-5-4">SWE-bench Pro (lab)</a>                  57.7%    70.7   2026-03-05    1% ▇
                         <a href="https://deploymentsafety.openai.com/gpt-5-6#healthbench">HealthBench (lab)</a>                    55.7%    76.0   2026-07-09    1% ▇
@@ -52,6 +52,7 @@ source                  test                                 score  implies  dat
                         <a href="https://huggingface.co/datasets/MathArena/brokenarxiv-0226_outputs/blob/b1346bc6e4bd465b9c163debae81126b1140bfea/data/train-00000-of-00001.parquet">MathArena BrokenArXiv Februar…</a>       37.9%    78.1   2026-09-11    1% ▇
                         <a href="https://huggingface.co/datasets/MathArena/arxivlean-0326_outputs/blob/47c34bc76c06596e0010c5c15a93c23ca9f082ed/data/train-00000-of-00001.parquet">MathArena ArXivLean March 202…</a>       17.1%    77.1   2026-09-11    1% ▇
 <a name="paper-2606.05405v2"></a>Agents' Last Exam       <a href="https://arxiv.org/html/2606.05405v2">Agents' Last Exam overall ful…</a>       20.5%    77.8   2026-06-11    2% ▇
+<a name="tau2-bench-leaderboard-sierra"></a>τ²/τ³-bench leaderboa…  <a href="https://github.com/sierra-research/tau2-bench/blob/4ce7c0397c1eb65c9bbe59aeacfe1ca44a1cd699/web/leaderboard/public/submissions/gpt-5-4_sierra_2026-03-25/submission.json">τ³-bench banking_knowledge (v…</a>       39.4%    74.6   2026-05-06    2% ▇
 <a name="eqbench3-canonical-results"></a>EQ-Bench 3 canonical …  <a href="https://github.com/EQ-bench/eqbench3/blob/affc5a000bbdb965b807e09ca7875f8530fa8f56/data/canonical_leaderboard_elo_results.json.gz">EQ-Bench 3 (emotional intelli…</a>      1328.0    70.8   2026-05-10    2% ▇
 <a name="paper-2608.30248v1"></a>DSEffi-Bench: Demysti…  <a href="https://arxiv.org/html/2608.30248v1">DSEffi-Bench Pass (1,000 data…</a>       66.9%    73.4   2026-08-31    2% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>       93.0%   165.6   2026-09-22    0% ▇
@@ -61,7 +62,7 @@ prior                   pull toward the middle                        50.0      
 
 <sub>~ averaged with other results for the same test</sub>
 
-<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
+<sub>Licences: Epoch AI ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · LMArena leaderboard dataset ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) · MathArena ArXivMath / BrokenArXiv / ArXivLean model-output datasets ([CC BY-SA 4.0](../../licenses/matharena-sharealike-NOTICE.txt)) · Agents' Last Exam ([CC BY 4.0](../../licenses/paper-2606.05405v2-CC-BY-4.0.txt)) · τ²/τ³-bench leaderboard: Sierra's own evaluation runs ([MIT](https://opensource.org/license/mit)) · EQ-Bench 3 canonical leaderboard results ([MIT](../../licenses/eqbench3-MIT.txt)) · DSEffi-Bench: Demystifying Large Language Models' Capability in Efficient Data Science Code Generation ([CC BY 4.0](../../licenses/paper-2608.30248v1-CC-BY-4.0.txt)) · Vectara hallucination leaderboard ([Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0))</sub>
 
 ## How to run it
 

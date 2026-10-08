@@ -6,7 +6,7 @@
 
 LG AI Research · released 2026-04 · 34.4B params · exaone
 
-**score 61.5** ±2.3 · #142 of 551 · from 4 benchmark results across 1 source
+**score 61.5** ±2.3 · #141 of 551 · from 4 benchmark results across 1 source
 
 ## How the score was worked out
 
@@ -14,10 +14,10 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                            score  implies  date        weight
-<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    59.3   2026-04-04   37% ▇▇▇▇
+<a name="first-party-lgai-scores"></a>LG AI Research vendor…  <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">GPQA Diamond (lab)</a>              80.5%    59.2   2026-04-04   37% ▇▇▇▇
                         <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">AIME 2025 (lab)</a>                 92.9%    66.3   2026-04-04   30% ▇▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    59.8   2026-04-04   24% ▇▇▇
-                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    63.3   2026-04-04    5% ▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">MMLU-Pro (lab)</a>                  83.3%    59.7   2026-04-04   24% ▇▇▇
+                        <a href="https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/570aa4b15a4f45ba1133072b45f50198f6e3b4fd/README.md#evaluation-results">IFEval (aggregation unspecifi…</a>  89.6%    63.3   2026-04-04    6% ▇
 prior                   pull toward the middle                   50.0                 2% ▇
                         weighted average                       = 61.5
 </pre>

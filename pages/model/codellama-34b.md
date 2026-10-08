@@ -27,8 +27,8 @@ source                  test                            score  implies  date    
 <a name="paper-2308.12950v3"></a>Code Llama: Open Foun…  <a href="https://arxiv.org/html/2308.12950v3">HumanEval (lab)</a>                 48.8%    40.1   2024-01-31   13% ▇▇
                         <a href="https://arxiv.org/html/2308.12950v3">MBPP (lab)</a>                      55.0%    40.1   2024-01-31    6% ▇
 <a name="paper-tulu2-2311.10702v2"></a>Tulu 2                  <a href="https://arxiv.org/html/2311.10702v2">BIG-Bench Hard</a>                  57.0%    40.4   2023-11-20    9% ▇
+                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           35.0%    36.2   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            47.4%    35.2   2023-11-20    3% ▇
-                        <a href="https://arxiv.org/html/2311.10702v2">GSM8K</a>                           35.0%    36.1   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: CodexEval pass@10</a>       77.6%    44.9   2023-11-20    3% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  57.1%    45.6   2023-11-20    1% ▇
 <a name="cruxeval-published-results"></a>CRUXEval published ev…  <a href="https://github.com/facebookresearch/cruxeval/blob/190faf16d175b5847b0af05d937872b1fb395942/samples/evaluation_results.zip">CRUXEval-I (lab)</a>                47.2%    46.0   2024-01-03    1% ▇

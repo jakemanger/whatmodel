@@ -20,12 +20,12 @@ source                  test                             score  implies  date   
 <a name="bfcl-result-archive-v4"></a>Berkeley Function Cal…  <a href="https://github.com/HuanzhiMao/BFCL-Result/blob/cadd76a8dc62984e7bf15ecaf358f070bae745cc/2025-12-16/score/data_overall.csv">BFCL V4 (December 2025 archiv…</a>   56.2%    63.7   2025-12-16   10% ▇
 <a name="paper-2604.18584v2"></a>MathNet: a Global Mul…  <a href="https://arxiv.org/html/2604.18584v2">MathNet-Solve-Test micro-aver…</a>   41.1%    62.9   2026-07-29    8% ▇
 <a name="bridge-medical-leaderboard"></a>BRIDGE Medical Leader…  <a href="https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard/blob/579abc27d8659fce3ca357ee9108d4e279fbeb38/leaderboards/Zero-Shot_leaderboard.json">BRIDGE clinical text, zero-sh…</a>   44.8%    62.6   2025-07-22    8% ▇
-<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   31.9%    63.0   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1084.0    68.6   2026-04-02    2% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   46.0%    68.7   2026-04-02    1% ▇
+<a name="paper-2601.10611v4-molmo2"></a>Molmo2: Open Weights …  <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-VideoCount accuracy (v…</a>   31.9%    62.9   2026-04-02    2% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Ai2 Molmo2 human preference E…</a>  1084.0    68.5   2026-04-02    2% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T2">Molmo2-CapTest dense video ca…</a>   46.0%    68.5   2026-04-02    1% ▇
 <a name="open-pt-llm-leaderboard"></a>Open Portuguese LLM L…  <a href="https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard/blob/788e0e7aa84b7dee80fc3aa3960beafb9e508ec9/data/leaderboard.csv.gz">Open PT-LLM Leaderboard avera…</a>   85.6%    60.4   2025-09-01    5% ▇
 <a name="galileo-agent-leaderboard"></a>Galileo Agent Leaderb…  <a href="https://huggingface.co/spaces/galileo-ai/agent-leaderboard/blob/8158b75ae542c2e847ff6d517a0b66caa704b19a/results_v2.csv">Galileo Agent Leaderboard v2 …</a>   38.0%    56.3   2025-11-18    4% ▇
-<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   41.6%    42.1   2026-09-25    3% ▇
+<a name="amazon-tau2-verified"></a>Amazon AGI              <a href="https://github.com/amazon-agi/tau2-bench-verified/blob/864350a8971a8f8ee9e7b8472e2edc380a806b0c/README.md">τ²-Bench-Verified (GPT-5.1 us…</a>   41.6%    41.9   2026-09-25    3% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   92.2%   136.1   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 62.2

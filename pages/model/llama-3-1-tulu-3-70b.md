@@ -22,7 +22,7 @@ source                  test                             score  implies  date   
                         <a href="https://arxiv.org/html/2411.15124v5">AlpacaEval 2 length-controlle…</a>   49.8%    49.1   2025-04-14    8% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">IFEval prompt-level loose (la…</a>   83.2%    53.2   2025-04-14    5% ▇
                         <a href="https://arxiv.org/html/2411.15124v5">PopQA (lab)</a>                      46.5%    57.8   2025-04-14    4% ▇
-                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>             67.6%    52.2   2025-04-14    3% ▇
+                        <a href="https://arxiv.org/html/2411.15124v5">TruthfulQA MC2 (lab)</a>             67.6%    52.3   2025-04-14    3% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1286.1    50.8   2026-10-02   24% ▇▇▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 52.4

@@ -18,7 +18,7 @@ source        test                            score  implies  date        weight
               <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">WinoGrande (lab)</a>                66.5%    32.2   2024-04-08   12% ▇
               <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">HellaSwag (lab)</a>                 73.9%    35.2   2024-04-08    6% ▇
               <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">BoolQ (lab)</a>                     75.6%    36.6   2024-04-08    6% ▇
-              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">ARC Easy (lab)</a>                  67.7%    32.5   2024-04-08    6% ▇
+              <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">ARC Easy (lab)</a>                  67.7%    32.6   2024-04-08    6% ▇
               <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">OpenBookQA (lab)</a>                31.4%    35.4   2024-04-08    6% ▇
               <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">SciQ (lab)</a>                      94.8%    38.1   2024-04-08    5% ▇
               <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/stablelm-3b-4e1t.json">PIQA (lab)</a>                      79.2%    35.7   2024-04-08    5% ▇

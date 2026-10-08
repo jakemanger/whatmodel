@@ -21,16 +21,16 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">RealWorldQA (lab)</a>                                         75.2%    50.3   2026-04-02    5% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">VQAv2 (val) (lab)</a>                                         86.5%    57.9   2026-04-02    4% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">MathVista (testmini) (lab)</a>                                58.6%    45.4   2026-04-02    3% ▇
-                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           96.3%    88.4   2026-04-02    1% ▇
+                        <a href="https://arxiv.org/html/2601.10611v4#S4.T6">AI2D test (lab)</a>                                           96.3%    88.6   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">TextVQA (lab)</a>                                             83.1%    71.6   2026-04-02    1% ▇
                         <a href="https://arxiv.org/html/2601.10611v4#S4.T6">ChartQA (lab)</a>                                             87.3%   225.9   2026-04-02    0% ▇
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1044.9    46.1   2026-10-02   32% ▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1044.9    46.1   2026-10-02   31% ▇▇▇▇
 <a name="paper-2410.07073v2-pixtral"></a>Pixtral 12B             <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MM-MT-Bench (Mistral, GPT-4o …</a>  3.5100 MM-MT-Bench score (1-10)    32.1   2024-10-10   10% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.2%    50.5   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                52.7%    48.0   2024-10-10    3% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      52.2%    41.3   2024-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                52.7%    47.9   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      52.2%    41.2   2024-10-10    1% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   75.6%    13.1   2024-10-10    0% ▇
-<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1077.0    56.2   2024-09-25    3% ▇
+<a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>                           1077.0    56.3   2024-09-25    3% ▇
 prior                   pull toward the middle                                             50.0                 1% ▇
                         weighted average                                                 = 47.7
 </pre>

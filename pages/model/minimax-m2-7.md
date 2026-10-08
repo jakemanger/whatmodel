@@ -14,9 +14,9 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                             score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    65.8   2026-10-01   53% ▇▇▇▇▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>       1397.0    65.8   2026-10-01   54% ▇▇▇▇▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                  1415.0    64.8   2026-10-02   39% ▇▇▇▇▇
-<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    64.7   2026-05-21    6% ▇
+<a name="paper-2605.22535v1"></a>TerminalWorld: Benchm…  <a href="https://arxiv.org/html/2605.22535v1">TerminalWorld-Verified (200 t…</a>   49.0%    64.8   2026-05-21    6% ▇
 <a name="vectara-hallucination-leaderboard-apache"></a>Vectara hallucination…  <a href="https://github.com/vectara/hallucination-leaderboard/blob/af0e3207741054b44e7c87688a40a815ecf446df/README.md">Vectara hallucination leaderb…</a>   87.1%   -35.4   2026-09-22    0% ▇
 prior                   pull toward the middle                    50.0                 1% ▇
                         weighted average                        = 65.1

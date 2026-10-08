@@ -6,7 +6,7 @@
 
 Meta · released 2023-07 · 6.74B params · llama2
 
-**score 33.4** ±0.5 · #469 of 551 · from 62 benchmark results across 7 sources
+**score 33.5** ±0.5 · #469 of 551 · from 62 benchmark results across 7 sources
 
 ## How the score was worked out
 
@@ -23,7 +23,7 @@ source                  test                            score  implies  date    
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">SciQ</a>                            93.6%    35.2   2024-04-08    1% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">PIQA</a>                            77.7%    33.2   2024-04-08    1% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">Social IQA</a>                      43.5%    31.2   2024-04-08    1% ▇
-                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">LAMBADA (OpenAI version), las…</a>  73.5%    34.8   2024-04-08    1% ▇
+                        <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">LAMBADA (OpenAI version), las…</a>  73.5%    34.9   2024-04-08    1% ▇
                         <a href="https://github.com/Stability-AI/StableLM/blob/93eea082c49c61e64da1a0e1092fe82cc74b46d3/evals/external/meta-llama-Llama-2-7b.json">TruthfulQA MC2</a>                  39.0%    24.9   2024-04-08    0% ▇
 <a name="paper-mixtral-2401.04088v1"></a>Mixtral of Experts      <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Challenge</a>                   43.2%    35.0   2024-01-08    3% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HumanEval</a>                       11.6%    31.5   2024-01-08    2% ▇
@@ -31,7 +31,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MMLU</a>                            44.4%    30.0   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">TriviaQA</a>                        56.6%    34.7   2024-01-08    2% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">HellaSwag</a>                       77.1%    35.2   2024-01-08    2% ▇
-                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           16.0%    26.3   2024-01-08    1% ▇
+                        <a href="https://arxiv.org/html/2401.04088v1#S3.T2">GSM8K</a>                           16.0%    26.4   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">MBPP</a>                            26.1%    28.6   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">ARC Easy</a>                        68.7%    29.8   2024-01-08    1% ▇
                         <a href="https://arxiv.org/html/2401.04088v1#S3.T2">Natural Questions (closed boo…</a>  17.5%    34.1   2024-01-08    1% ▇
@@ -77,7 +77,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2311.10702v2">MMLU</a>                            41.8%    31.6   2023-11-20    1% ▇
                         <a href="https://arxiv.org/html/2311.10702v2">Tulu 2: TyDiQA gold passage, …</a>  51.2%    41.9   2023-11-20    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
-                        weighted average                       = 33.4
+                        weighted average                       = 33.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -90,7 +90,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download      size  score
-4-bit q4_0  ~3.8GB   33.4
+4-bit q4_0  ~3.8GB   33.5
 </pre>
 
 ```sh

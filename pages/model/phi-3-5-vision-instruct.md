@@ -6,7 +6,7 @@
 
 Microsoft · released 2024-08 · 4.15B params · mit
 
-**score 34.6** ±2.6 · #459 of 551 · from 8 benchmark results across 4 sources
+**score 34.5** ±2.6 · #463 of 551 · from 8 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -19,11 +19,11 @@ source                  test                            score  implies  date    
                         <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">MathVista (testmini) (lab)</a>      43.9%    30.4   2024-08-20    5% ▇
                         <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">TextVQA (lab)</a>                   72.0%    43.9   2024-08-20    2% ▇
                         <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">AI2D test (lab)</a>                 78.1%    31.1   2024-08-20    2% ▇
-                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA (lab)</a>                   81.8%   120.3   2024-08-20    0% ▇
+                        <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct/blob/12b77fb40b63a2c73c68243d3f767aab688a1b2a/README.md#benchmarks">ChartQA (lab)</a>                   81.8%   120.2   2024-08-20    0% ▇
 <a name="molmo-card-human-elo"></a>Ai2 Molmo-72B-0924 mo…  <a href="https://huggingface.co/allenai/Molmo-72B-0924/blob/ab586dd9640de059566975b8e5bcd0c6fdc73956/README.md#evaluations">Ai2 Molmo human preference El…</a>  982.0    39.3   2024-09-25    6% ▇
 <a name="paper-2501.16411v2-physbench"></a>PhysBench: Benchmarki…  <a href="https://arxiv.org/html/2501.16411v2">PhysBench physical-world unde…</a>  39.8%    42.2   2025-01-29    4% ▇
 prior                   pull toward the middle                   50.0                 3% ▇
-                        weighted average                       = 34.6
+                        weighted average                       = 34.5
 </pre>
 
 <sub>~ averaged with other results for the same test</sub>
@@ -34,7 +34,7 @@ prior                   pull toward the middle                   50.0           
 
 <pre>
 download                      size  score
-16-bit bf16 · nvidia only  ~8.29GB   34.6
+16-bit bf16 · nvidia only  ~8.29GB   34.5
 </pre>
 
 ```sh

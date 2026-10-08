@@ -19,7 +19,7 @@ source                  test                                                   s
                         <a href="https://arxiv.org/html/2302.13971v1">MATH (lab)</a>                                              3.9%    31.6   2023-02-27    7% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">WinoGrande (lab)</a>                                       73.0%    36.0   2023-02-27    6% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">GSM8K (lab)</a>                                            17.8%    29.7   2023-02-27    6% ▇
-                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    39.1   2023-02-27    5% ▇
+                        <a href="https://arxiv.org/html/2302.13971v1">OpenBookQA (lab)</a>                                       56.4%    39.2   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">BoolQ (lab)</a>                                            78.1%    33.8   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">HellaSwag (lab)</a>                                        79.2%    36.4   2023-02-27    5% ▇
                         <a href="https://arxiv.org/html/2302.13971v1">MMLU (lab)</a>                                             46.9%    33.8   2023-02-27    4% ▇

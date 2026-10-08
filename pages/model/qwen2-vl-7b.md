@@ -6,7 +6,7 @@
 
 Alibaba · released 2024-08 · 8.29B params · apache-2.0
 
-**score 44.0** ±1.7 · #343 of 551 · from 12 benchmark results across 5 sources
+**score 44.0** ±1.7 · #342 of 551 · from 12 benchmark results across 5 sources
 
 ## How the score was worked out
 
@@ -19,8 +19,8 @@ source                  test                                                    
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">HumanEval</a>                                                 62.2%    46.5   2024-10-10    8% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T3">MATH (subset unspecified)</a>                                 27.9%    37.3   2024-10-10    8% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">VQAv2 (val)</a>                                               75.9%    51.3   2024-10-10    5% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    43.6   2024-10-10    3% ▇
-                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    43.4   2024-10-10    1% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MMMU (val)</a>                                                48.1%    43.5   2024-10-10    3% ▇
+                        <a href="https://arxiv.org/html/2410.07073v2#S3.T2">MathVista (testmini)</a>                                      53.7%    43.3   2024-10-10    1% ▇
                         <a href="https://arxiv.org/html/2410.07073v2#S3.T2">ChartQA</a>                                                   41.2%  -576.1   2024-10-10    0% ▇
 <a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>                           1030.8    44.5   2026-10-02   27% ▇▇▇
 <a name="paper-2503.12329v1-caparena"></a>CapArena: Benchmarkin…  <a href="https://arxiv.org/html/2503.12329v1">CapArena-Auto detailed image …</a>                         -49.0000    36.3   2025-03-16   11% ▇

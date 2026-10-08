@@ -27,7 +27,7 @@ source                  test                            score  implies  date    
                         <a href="https://arxiv.org/html/2405.04324v1">MBPP</a>                            34.8%    32.4   2024-05-07    3% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T10">HumanEvalExplain (HumanEvalPa…</a>  12.3%    30.2   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1#S6.T11">HumanEvalFix (HumanEvalPack, …</a>  10.5%    31.4   2024-05-07    2% ▇
-                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    33.0   2024-05-07    2% ▇
+                        <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-I</a>                      33.5%    33.1   2024-05-07    2% ▇
                         <a href="https://arxiv.org/html/2405.04324v1">CRUXEval-O</a>                      32.1%    31.3   2024-05-07    1% ▇
 prior                   pull toward the middle                   50.0                 0% ▇
                         weighted average                       = 32.9

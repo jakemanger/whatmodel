@@ -6,7 +6,7 @@
 
 Alibaba · released 2026-08 · 27.3B params · apache-2.0
 
-**score 69.8** ±1.0 · #49 of 551 · from 18 benchmark results across 4 sources
+**score 69.8** ±1.0 · #50 of 551 · from 18 benchmark results across 4 sources
 
 ## How the score was worked out
 
@@ -14,18 +14,18 @@ Each result below implies a score on its own, after adjusting for how hard that 
 
 <pre>
 source                  test                                  score  implies  date        weight
-<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0166 IPS    70.6   2026-10-02   18% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1591.2    73.7   2026-10-01   17% ▇▇
-                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1437.7    67.2   2026-10-02   13% ▇▇
+<a name="lmarena-dataset"></a>LMArena leaderboard d…  <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/webdev/latest-00000-of-00001.parquet">Arena WebDev (Code Arena)</a>            1591.2    73.7   2026-10-01   18% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet">Arena Agent (October 2026 agg…</a>  -0.0166 IPS    70.6   2026-10-02   18% ▇▇
+                        <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_style_control/latest-00000-of-00001.parquet">LMArena (text)</a>                       1437.7    67.3   2026-10-02   13% ▇▇
                         <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/vision_style_control/latest-00000-of-00001.parquet">Arena vision (style controlle…</a>       1242.8    68.0   2026-10-02   10% ▇
-<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">GPQA Diamond (lab)</a>                    89.2%    67.1   2026-08-14    8% ▇
+<a name="card-qwen--qwen3.8-27b"></a>Qwen/Qwen3.8-27B mode…  <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">GPQA Diamond (lab)</a>                    89.2%    67.2   2026-08-14    8% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Terminal-Bench 2.1 (lab)</a>              73.0%    70.5   2026-08-14    4% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OSWorld-Verified (lab)</a>                84.3%    77.0   2026-08-14    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">IFBench (aggregation unspecif…</a>        79.5%    71.4   2026-08-14    3% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Humanity's Last Exam (lab)</a>            30.8%    69.1   2026-08-14    3% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">Humanity's Last Exam (lab)</a>            30.8%    69.2   2026-08-14    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">OmniDocBench 1.5 overall (hig…</a>        91.1%    67.0   2026-08-14    3% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">WebArena-Verified (lab)</a>               64.8%    74.2   2026-08-14    2% ▇
-                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo (lab)</a>                         42.3%    67.6   2026-08-14    2% ▇
+                        <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">NL2Repo (lab)</a>                         42.3%    67.7   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">AndroidWorld (lab)</a>                    81.9%    75.2   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">SWE-bench Pro public set, Qwe…</a>        61.7%    70.7   2026-08-14    2% ▇
                         <a href="https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md">ERQA (lab)</a>                            65.5%    65.2   2026-08-14    2% ▇
