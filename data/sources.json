@@ -22,14 +22,16 @@
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/text_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/image_to_video/latest-00000-of-00001.parquet",
       "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/video_edit/latest-00000-of-00001.parquet",
-      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet"
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/46919c467f7f93d9609b668a283bcd20d87c28bc/agent/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet",
+      "huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet"
     ],
     "name": "LMArena leaderboard dataset",
     "kind": "dataset",
     "license": "CC BY 4.0",
     "terms_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
     "verdict": "allowed",
-    "checked": "2026-10-07",
+    "checked": "2026-10-08",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Arena Leaderboard Dataset by LMArena (lmarena-ai), CC BY 4.0. Selected snapshots; ratings rounded to one decimal and transformed into relative scores. No endorsement. Refreshed exact model/task rows from revision 46919c467f7f93d9609b668a283bcd20d87c28bc, observed 2026-10-06. Earlier rows are retained only when their exact entry is absent from the new snapshot. Agent aggregate IPS values from the October 2 snapshot retained in their original signed units; one highest available effort per model, with no component-signal duplication. Latent fit uses a fixed 0.1 IPS unit conversion.",
     "icon": "arena.ai",

@@ -195755,5 +195755,25 @@
     "date": "2025-08-09",
     "note": "AlpacaEval 1.0 leaderboard (tatsu-lab/alpaca_eval @cd543a1, Apache-2.0), alpaca_eval_gpt4_leaderboard.csv, row 'text_davinci_001' (mode 'minimal'), win_rate = 15.17 (standard error 1.24); stored /100. 805 AlpacaEval instructions judged by alpaca_eval_gpt4 against text_davinci_003 (the reference, 50.00 by definition); average length 296.",
     "source_id": "alpaca-eval-leaderboard-apache"
+  },
+  {
+    "model": "kling-2-5-turbo-pro",
+    "bench": "lmarena-video",
+    "score": 1219.8,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/text_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "text_to_video, category overall, split latest; exact entry 'kling-2.5-turbo-1080p'; 2,111 votes; published 95% interval 1202.4–1237.2. Kling 2.5 Turbo is sold in Standard (720p) and Pro (1080p) modes, so the 1080p entry is the Pro tier this catalogue model names.",
+    "source_id": "lmarena-dataset"
+  },
+  {
+    "model": "kling-2-5-turbo-pro",
+    "bench": "lmarena-video-i2v",
+    "score": 1275.6,
+    "source": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/blob/ff77a170d5ec578fe4eb8c91e0084a6b1a20beac/image_to_video/latest-00000-of-00001.parquet",
+    "by": "independent",
+    "date": "2026-09-22",
+    "note": "image_to_video, category overall, split latest; exact entry 'kling-2.5-turbo-1080p'; 3,795 votes; published 95% interval 1263.0–1288.1. Kling 2.5 Turbo is sold in Standard (720p) and Pro (1080p) modes, so the 1080p entry is the Pro tier this catalogue model names.",
+    "source_id": "lmarena-dataset"
   }
 ]
